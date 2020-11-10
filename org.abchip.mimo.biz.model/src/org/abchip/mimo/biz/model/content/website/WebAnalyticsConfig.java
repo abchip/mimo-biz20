@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig#getWebAnalyticsTypeId <em>Web Analytics Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig#getWebSiteId <em>Web Site Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig#getWebAnalyticsType <em>Web Analytics Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig#getWebSite <em>Web Site</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig#getWebAnalyticsCode <em>Web Analytics Code</em>}</li>
  * </ul>
  *
@@ -30,6 +30,52 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface WebAnalyticsConfig extends EntityTyped<WebAnalyticsType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Web Analytics Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Web Analytics Type</em>' reference.
+	 * @see #setWebAnalyticsType(WebAnalyticsType)
+	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebAnalyticsConfig_WebAnalyticsType()
+	 * @model keys="webAnalyticsTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	WebAnalyticsType getWebAnalyticsType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig#getWebAnalyticsType <em>Web Analytics Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Web Analytics Type</em>' reference.
+	 * @see #getWebAnalyticsType()
+	 * @generated
+	 */
+	void setWebAnalyticsType(WebAnalyticsType value);
+
+	/**
+	 * Returns the value of the '<em><b>Web Site</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Web Site</em>' reference.
+	 * @see #setWebSite(WebSite)
+	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebAnalyticsConfig_WebSite()
+	 * @model keys="webSiteId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	WebSite getWebSite();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig#getWebSite <em>Web Site</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Web Site</em>' reference.
+	 * @see #getWebSite()
+	 * @generated
+	 */
+	void setWebSite(WebSite value);
+
 	/**
 	 * Returns the value of the '<em><b>Web Analytics Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -55,59 +101,5 @@ public interface WebAnalyticsConfig extends EntityTyped<WebAnalyticsType>, Entit
 	 * @generated
 	 */
 	void setWebAnalyticsCode(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Web Analytics Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Web Analytics Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Web Analytics Type Id</em>' reference.
-	 * @see #setWebAnalyticsTypeId(WebAnalyticsType)
-	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebAnalyticsConfig_WebAnalyticsTypeId()
-	 * @model keys="webAnalyticsTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	WebAnalyticsType getWebAnalyticsTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig#getWebAnalyticsTypeId <em>Web Analytics Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Web Analytics Type Id</em>' reference.
-	 * @see #getWebAnalyticsTypeId()
-	 * @generated
-	 */
-	void setWebAnalyticsTypeId(WebAnalyticsType value);
-
-	/**
-	 * Returns the value of the '<em><b>Web Site Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Web Site Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Web Site Id</em>' reference.
-	 * @see #setWebSiteId(WebSite)
-	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebAnalyticsConfig_WebSiteId()
-	 * @model keys="webSiteId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	WebSite getWebSiteId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig#getWebSiteId <em>Web Site Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Web Site Id</em>' reference.
-	 * @see #getWebSiteId()
-	 * @generated
-	 */
-	void setWebSiteId(WebSite value);
 
 } // WebAnalyticsConfig

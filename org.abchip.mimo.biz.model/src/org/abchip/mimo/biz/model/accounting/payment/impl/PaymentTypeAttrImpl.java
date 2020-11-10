@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentTypeAttrImpl#getPaymentTypeId <em>Payment Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentTypeAttrImpl#getPaymentType <em>Payment Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -151,6 +151,26 @@ public class PaymentTypeAttrImpl extends EntityIdentifiableImpl implements Payme
 	 * @generated
 	 */
 	@Override
+	public PaymentType getPaymentType() {
+		return (PaymentType)eGet(PaymentPackage.Literals.PAYMENT_TYPE_ATTR__PAYMENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPaymentType(PaymentType newPaymentType) {
+		eSet(PaymentPackage.Literals.PAYMENT_TYPE_ATTR__PAYMENT_TYPE, newPaymentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(PaymentPackage.Literals.PAYMENT_TYPE_ATTR__DESCRIPTION, true);
 	}
@@ -221,26 +241,6 @@ public class PaymentTypeAttrImpl extends EntityIdentifiableImpl implements Payme
 	@Override
 	public void setAttrName(String newAttrName) {
 		eSet(PaymentPackage.Literals.PAYMENT_TYPE_ATTR__ATTR_NAME, newAttrName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PaymentType getPaymentTypeId() {
-		return (PaymentType)eGet(PaymentPackage.Literals.PAYMENT_TYPE_ATTR__PAYMENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaymentTypeId(PaymentType newPaymentTypeId) {
-		eSet(PaymentPackage.Literals.PAYMENT_TYPE_ATTR__PAYMENT_TYPE_ID, newPaymentTypeId);
 	}
 
 } //PaymentTypeAttrImpl

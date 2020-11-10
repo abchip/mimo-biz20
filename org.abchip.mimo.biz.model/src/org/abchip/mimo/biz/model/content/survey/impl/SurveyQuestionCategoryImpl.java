@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionCategoryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionCategoryImpl#getSurveyQuestionCategoryId <em>Survey Question Category Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionCategoryImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionCategoryImpl#getParentCategoryId <em>Parent Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionCategoryImpl#getParentCategory <em>Parent Category</em>}</li>
  * </ul>
  *
  * @generated
@@ -171,8 +171,8 @@ public class SurveyQuestionCategoryImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public SurveyQuestionCategory getParentCategoryId() {
-		return (SurveyQuestionCategory)eGet(SurveyPackage.Literals.SURVEY_QUESTION_CATEGORY__PARENT_CATEGORY_ID, true);
+	public SurveyQuestionCategory getParentCategory() {
+		return (SurveyQuestionCategory)eGet(SurveyPackage.Literals.SURVEY_QUESTION_CATEGORY__PARENT_CATEGORY, true);
 	}
 
 	/**
@@ -181,8 +181,8 @@ public class SurveyQuestionCategoryImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setParentCategoryId(SurveyQuestionCategory newParentCategoryId) {
-		eSet(SurveyPackage.Literals.SURVEY_QUESTION_CATEGORY__PARENT_CATEGORY_ID, newParentCategoryId);
+	public void setParentCategory(SurveyQuestionCategory newParentCategory) {
+		eSet(SurveyPackage.Literals.SURVEY_QUESTION_CATEGORY__PARENT_CATEGORY, newParentCategory);
 	}
 
 	/**

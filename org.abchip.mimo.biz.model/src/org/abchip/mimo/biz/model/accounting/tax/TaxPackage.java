@@ -108,13 +108,13 @@ public interface TaxPackage extends EPackage {
 	int PARTY_TAX_AUTH_INFO__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TAX_AUTH_INFO__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PARTY_TAX_AUTH_INFO__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -235,22 +235,22 @@ public interface TaxPackage extends EPackage {
 	int TAX_AUTHORITY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Tax Auth Geo Id</b></em>' reference.
+	 * The feature id for the '<em><b>Tax Auth Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY__TAX_AUTH_GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int TAX_AUTHORITY__TAX_AUTH_GEO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Tax Auth Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Tax Auth Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY__TAX_AUTH_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int TAX_AUTHORITY__TAX_AUTH_PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Include Tax In Price</b></em>' attribute.
@@ -380,13 +380,13 @@ public interface TaxPackage extends EPackage {
 	int TAX_AUTHORITY_ASSOC__TO_TAX_AUTH_PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Tax Authority Assoc Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Tax Authority Assoc Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC__TAX_AUTHORITY_ASSOC_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int TAX_AUTHORITY_ASSOC__TAX_AUTHORITY_ASSOC_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -535,13 +535,13 @@ public interface TaxPackage extends EPackage {
 	int TAX_AUTHORITY_CATEGORY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_CATEGORY__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int TAX_AUTHORITY_CATEGORY__PRODUCT_CATEGORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Geo Id</b></em>' attribute.
@@ -617,13 +617,13 @@ public interface TaxPackage extends EPackage {
 	int TAX_AUTHORITY_GL_ACCOUNT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Organization Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Organization Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_GL_ACCOUNT__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int TAX_AUTHORITY_GL_ACCOUNT__ORGANIZATION_PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Geo Id</b></em>' attribute.
@@ -644,13 +644,13 @@ public interface TaxPackage extends EPackage {
 	int TAX_AUTHORITY_GL_ACCOUNT__TAX_AUTH_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Gl Account Id</b></em>' reference.
+	 * The feature id for the '<em><b>Gl Account</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_GL_ACCOUNT__GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int TAX_AUTHORITY_GL_ACCOUNT__GL_ACCOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Authority Gl Account</em>' class.
@@ -762,22 +762,22 @@ public interface TaxPackage extends EPackage {
 	int TAX_AUTHORITY_RATE_PRODUCT__MIN_PURCHASE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_CATEGORY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Store</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_STORE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
+	int TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_STORE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Geo Id</b></em>' attribute.
@@ -798,13 +798,13 @@ public interface TaxPackage extends EPackage {
 	int TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTH_PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
-	 * The feature id for the '<em><b>Tax Authority Rate Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Tax Authority Rate Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTHORITY_RATE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
+	int TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTHORITY_RATE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Tax Percentage</b></em>' attribute.
@@ -1325,15 +1325,15 @@ public interface TaxPackage extends EPackage {
 	EClass getPartyTaxAuthInfo();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.PartyTaxAuthInfo#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.PartyTaxAuthInfo#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.tax.PartyTaxAuthInfo#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.tax.PartyTaxAuthInfo#getParty()
 	 * @see #getPartyTaxAuthInfo()
 	 * @generated
 	 */
-	EReference getPartyTaxAuthInfo_PartyId();
+	EReference getPartyTaxAuthInfo_Party();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.tax.PartyTaxAuthInfo#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}'.
@@ -1423,26 +1423,26 @@ public interface TaxPackage extends EPackage {
 	EClass getTaxAuthority();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#getTaxAuthGeo <em>Tax Auth Geo</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Tax Auth Geo Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#getTaxAuthGeoId()
+	 * @return the meta object for the reference '<em>Tax Auth Geo</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#getTaxAuthGeo()
 	 * @see #getTaxAuthority()
 	 * @generated
 	 */
-	EReference getTaxAuthority_TaxAuthGeoId();
+	EReference getTaxAuthority_TaxAuthGeo();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#getTaxAuthPartyId <em>Tax Auth Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#getTaxAuthParty <em>Tax Auth Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Tax Auth Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#getTaxAuthPartyId()
+	 * @return the meta object for the reference '<em>Tax Auth Party</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#getTaxAuthParty()
 	 * @see #getTaxAuthority()
 	 * @generated
 	 */
-	EReference getTaxAuthority_TaxAuthPartyId();
+	EReference getTaxAuthority_TaxAuthParty();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#isIncludeTaxInPrice <em>Include Tax In Price</em>}'.
@@ -1532,6 +1532,17 @@ public interface TaxPackage extends EPackage {
 	EAttribute getTaxAuthorityAssoc_ToTaxAuthPartyId();
 
 	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityAssoc#getTaxAuthorityAssocType <em>Tax Authority Assoc Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Tax Authority Assoc Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityAssoc#getTaxAuthorityAssocType()
+	 * @see #getTaxAuthorityAssoc()
+	 * @generated
+	 */
+	EReference getTaxAuthorityAssoc_TaxAuthorityAssocType();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityAssoc#getFromDate <em>From Date</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1541,17 +1552,6 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getTaxAuthorityAssoc_FromDate();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityAssoc#getTaxAuthorityAssocTypeId <em>Tax Authority Assoc Type Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Tax Authority Assoc Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityAssoc#getTaxAuthorityAssocTypeId()
-	 * @see #getTaxAuthorityAssoc()
-	 * @generated
-	 */
-	EReference getTaxAuthorityAssoc_TaxAuthorityAssocTypeId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityAssoc#getThruDate <em>Thru Date</em>}'.
@@ -1607,6 +1607,17 @@ public interface TaxPackage extends EPackage {
 	EClass getTaxAuthorityCategory();
 
 	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityCategory#getProductCategory <em>Product Category</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Product Category</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityCategory#getProductCategory()
+	 * @see #getTaxAuthorityCategory()
+	 * @generated
+	 */
+	EReference getTaxAuthorityCategory_ProductCategory();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityCategory#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1629,17 +1640,6 @@ public interface TaxPackage extends EPackage {
 	EAttribute getTaxAuthorityCategory_TaxAuthPartyId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityCategory#getProductCategoryId <em>Product Category Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityCategory#getProductCategoryId()
-	 * @see #getTaxAuthorityCategory()
-	 * @generated
-	 */
-	EReference getTaxAuthorityCategory_ProductCategoryId();
-
-	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount <em>Authority Gl Account</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1648,6 +1648,17 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getTaxAuthorityGlAccount();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount#getOrganizationParty <em>Organization Party</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Organization Party</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount#getOrganizationParty()
+	 * @see #getTaxAuthorityGlAccount()
+	 * @generated
+	 */
+	EReference getTaxAuthorityGlAccount_OrganizationParty();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}'.
@@ -1672,26 +1683,15 @@ public interface TaxPackage extends EPackage {
 	EAttribute getTaxAuthorityGlAccount_TaxAuthPartyId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount#getOrganizationPartyId <em>Organization Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount#getGlAccount <em>Gl Account</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Organization Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount#getOrganizationPartyId()
+	 * @return the meta object for the reference '<em>Gl Account</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount#getGlAccount()
 	 * @see #getTaxAuthorityGlAccount()
 	 * @generated
 	 */
-	EReference getTaxAuthorityGlAccount_OrganizationPartyId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount#getGlAccountId <em>Gl Account Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Gl Account Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount#getGlAccountId()
-	 * @see #getTaxAuthorityGlAccount()
-	 * @generated
-	 */
-	EReference getTaxAuthorityGlAccount_GlAccountId();
+	EReference getTaxAuthorityGlAccount_GlAccount();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct <em>Authority Rate Product</em>}'.
@@ -1770,26 +1770,26 @@ public interface TaxPackage extends EPackage {
 	EAttribute getTaxAuthorityRateProduct_MinPurchase();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getProductCategoryId <em>Product Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getProductCategory <em>Product Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getProductCategoryId()
+	 * @return the meta object for the reference '<em>Product Category</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getProductCategory()
 	 * @see #getTaxAuthorityRateProduct()
 	 * @generated
 	 */
-	EReference getTaxAuthorityRateProduct_ProductCategoryId();
+	EReference getTaxAuthorityRateProduct_ProductCategory();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getProductStoreId <em>Product Store Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getProductStore <em>Product Store</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Store Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getProductStoreId()
+	 * @return the meta object for the reference '<em>Product Store</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getProductStore()
 	 * @see #getTaxAuthorityRateProduct()
 	 * @generated
 	 */
-	EReference getTaxAuthorityRateProduct_ProductStoreId();
+	EReference getTaxAuthorityRateProduct_ProductStore();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}'.
@@ -1814,15 +1814,15 @@ public interface TaxPackage extends EPackage {
 	EAttribute getTaxAuthorityRateProduct_TaxAuthPartyId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getTaxAuthorityRateTypeId <em>Tax Authority Rate Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getTaxAuthorityRateType <em>Tax Authority Rate Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Tax Authority Rate Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getTaxAuthorityRateTypeId()
+	 * @return the meta object for the reference '<em>Tax Authority Rate Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getTaxAuthorityRateType()
 	 * @see #getTaxAuthorityRateProduct()
 	 * @generated
 	 */
-	EReference getTaxAuthorityRateProduct_TaxAuthorityRateTypeId();
+	EReference getTaxAuthorityRateProduct_TaxAuthorityRateType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getTaxPercentage <em>Tax Percentage</em>}'.
@@ -2283,12 +2283,12 @@ public interface TaxPackage extends EPackage {
 		EClass PARTY_TAX_AUTH_INFO = eINSTANCE.getPartyTaxAuthInfo();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PARTY_TAX_AUTH_INFO__PARTY_ID = eINSTANCE.getPartyTaxAuthInfo_PartyId();
+		EReference PARTY_TAX_AUTH_INFO__PARTY = eINSTANCE.getPartyTaxAuthInfo_Party();
 
 		/**
 		 * The meta object literal for the '<em><b>Tax Auth Geo Id</b></em>' attribute feature.
@@ -2357,20 +2357,20 @@ public interface TaxPackage extends EPackage {
 		EClass TAX_AUTHORITY = eINSTANCE.getTaxAuthority();
 
 		/**
-		 * The meta object literal for the '<em><b>Tax Auth Geo Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Tax Auth Geo</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TAX_AUTHORITY__TAX_AUTH_GEO_ID = eINSTANCE.getTaxAuthority_TaxAuthGeoId();
+		EReference TAX_AUTHORITY__TAX_AUTH_GEO = eINSTANCE.getTaxAuthority_TaxAuthGeo();
 
 		/**
-		 * The meta object literal for the '<em><b>Tax Auth Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Tax Auth Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TAX_AUTHORITY__TAX_AUTH_PARTY_ID = eINSTANCE.getTaxAuthority_TaxAuthPartyId();
+		EReference TAX_AUTHORITY__TAX_AUTH_PARTY = eINSTANCE.getTaxAuthority_TaxAuthParty();
 
 		/**
 		 * The meta object literal for the '<em><b>Include Tax In Price</b></em>' attribute feature.
@@ -2439,20 +2439,20 @@ public interface TaxPackage extends EPackage {
 		EAttribute TAX_AUTHORITY_ASSOC__TO_TAX_AUTH_PARTY_ID = eINSTANCE.getTaxAuthorityAssoc_ToTaxAuthPartyId();
 
 		/**
+		 * The meta object literal for the '<em><b>Tax Authority Assoc Type</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TAX_AUTHORITY_ASSOC__TAX_AUTHORITY_ASSOC_TYPE = eINSTANCE.getTaxAuthorityAssoc_TaxAuthorityAssocType();
+
+		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute TAX_AUTHORITY_ASSOC__FROM_DATE = eINSTANCE.getTaxAuthorityAssoc_FromDate();
-
-		/**
-		 * The meta object literal for the '<em><b>Tax Authority Assoc Type Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TAX_AUTHORITY_ASSOC__TAX_AUTHORITY_ASSOC_TYPE_ID = eINSTANCE.getTaxAuthorityAssoc_TaxAuthorityAssocTypeId();
 
 		/**
 		 * The meta object literal for the '<em><b>Thru Date</b></em>' attribute feature.
@@ -2499,6 +2499,14 @@ public interface TaxPackage extends EPackage {
 		EClass TAX_AUTHORITY_CATEGORY = eINSTANCE.getTaxAuthorityCategory();
 
 		/**
+		 * The meta object literal for the '<em><b>Product Category</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TAX_AUTHORITY_CATEGORY__PRODUCT_CATEGORY = eINSTANCE.getTaxAuthorityCategory_ProductCategory();
+
+		/**
 		 * The meta object literal for the '<em><b>Tax Auth Geo Id</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2515,14 +2523,6 @@ public interface TaxPackage extends EPackage {
 		EAttribute TAX_AUTHORITY_CATEGORY__TAX_AUTH_PARTY_ID = eINSTANCE.getTaxAuthorityCategory_TaxAuthPartyId();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Category Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TAX_AUTHORITY_CATEGORY__PRODUCT_CATEGORY_ID = eINSTANCE.getTaxAuthorityCategory_ProductCategoryId();
-
-		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityGlAccountImpl <em>Authority Gl Account</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2531,6 +2531,14 @@ public interface TaxPackage extends EPackage {
 		 * @generated
 		 */
 		EClass TAX_AUTHORITY_GL_ACCOUNT = eINSTANCE.getTaxAuthorityGlAccount();
+
+		/**
+		 * The meta object literal for the '<em><b>Organization Party</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TAX_AUTHORITY_GL_ACCOUNT__ORGANIZATION_PARTY = eINSTANCE.getTaxAuthorityGlAccount_OrganizationParty();
 
 		/**
 		 * The meta object literal for the '<em><b>Tax Auth Geo Id</b></em>' attribute feature.
@@ -2549,20 +2557,12 @@ public interface TaxPackage extends EPackage {
 		EAttribute TAX_AUTHORITY_GL_ACCOUNT__TAX_AUTH_PARTY_ID = eINSTANCE.getTaxAuthorityGlAccount_TaxAuthPartyId();
 
 		/**
-		 * The meta object literal for the '<em><b>Organization Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Gl Account</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TAX_AUTHORITY_GL_ACCOUNT__ORGANIZATION_PARTY_ID = eINSTANCE.getTaxAuthorityGlAccount_OrganizationPartyId();
-
-		/**
-		 * The meta object literal for the '<em><b>Gl Account Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TAX_AUTHORITY_GL_ACCOUNT__GL_ACCOUNT_ID = eINSTANCE.getTaxAuthorityGlAccount_GlAccountId();
+		EReference TAX_AUTHORITY_GL_ACCOUNT__GL_ACCOUNT = eINSTANCE.getTaxAuthorityGlAccount_GlAccount();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityRateProductImpl <em>Authority Rate Product</em>}' class.
@@ -2623,20 +2623,20 @@ public interface TaxPackage extends EPackage {
 		EAttribute TAX_AUTHORITY_RATE_PRODUCT__MIN_PURCHASE = eINSTANCE.getTaxAuthorityRateProduct_MinPurchase();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_CATEGORY_ID = eINSTANCE.getTaxAuthorityRateProduct_ProductCategoryId();
+		EReference TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_CATEGORY = eINSTANCE.getTaxAuthorityRateProduct_ProductCategory();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Store Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Store</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_STORE_ID = eINSTANCE.getTaxAuthorityRateProduct_ProductStoreId();
+		EReference TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_STORE = eINSTANCE.getTaxAuthorityRateProduct_ProductStore();
 
 		/**
 		 * The meta object literal for the '<em><b>Tax Auth Geo Id</b></em>' attribute feature.
@@ -2655,12 +2655,12 @@ public interface TaxPackage extends EPackage {
 		EAttribute TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTH_PARTY_ID = eINSTANCE.getTaxAuthorityRateProduct_TaxAuthPartyId();
 
 		/**
-		 * The meta object literal for the '<em><b>Tax Authority Rate Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Tax Authority Rate Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTHORITY_RATE_TYPE_ID = eINSTANCE.getTaxAuthorityRateProduct_TaxAuthorityRateTypeId();
+		EReference TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTHORITY_RATE_TYPE = eINSTANCE.getTaxAuthorityRateProduct_TaxAuthorityRateType();
 
 		/**
 		 * The meta object literal for the '<em><b>Tax Percentage</b></em>' attribute feature.

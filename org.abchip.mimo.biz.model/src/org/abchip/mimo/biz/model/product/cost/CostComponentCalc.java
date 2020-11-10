@@ -24,12 +24,12 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCostComponentCalcId <em>Cost Component Calc Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCostCustomMethodId <em>Cost Custom Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCostGlAccountTypeId <em>Cost Gl Account Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCostCustomMethod <em>Cost Custom Method</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCostGlAccountType <em>Cost Gl Account Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getFixedCost <em>Fixed Cost</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getOffsettingGlAccountTypeId <em>Offsetting Gl Account Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getOffsettingGlAccountType <em>Offsetting Gl Account Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getPerMilliSecond <em>Per Milli Second</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getVariableCost <em>Variable Cost</em>}</li>
  * </ul>
@@ -39,84 +39,6 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface CostComponentCalc extends EntityIdentifiable, EntityInfo {
-	/**
-	 * Returns the value of the '<em><b>Cost Custom Method Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cost Custom Method Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cost Custom Method Id</em>' reference.
-	 * @see #setCostCustomMethodId(CustomMethod)
-	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponentCalc_CostCustomMethodId()
-	 * @model keys="customMethodId"
-	 * @generated
-	 */
-	CustomMethod getCostCustomMethodId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCostCustomMethodId <em>Cost Custom Method Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cost Custom Method Id</em>' reference.
-	 * @see #getCostCustomMethodId()
-	 * @generated
-	 */
-	void setCostCustomMethodId(CustomMethod value);
-
-	/**
-	 * Returns the value of the '<em><b>Cost Gl Account Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cost Gl Account Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cost Gl Account Type Id</em>' reference.
-	 * @see #setCostGlAccountTypeId(GlAccountType)
-	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponentCalc_CostGlAccountTypeId()
-	 * @model keys="glAccountTypeId"
-	 * @generated
-	 */
-	GlAccountType getCostGlAccountTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCostGlAccountTypeId <em>Cost Gl Account Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cost Gl Account Type Id</em>' reference.
-	 * @see #getCostGlAccountTypeId()
-	 * @generated
-	 */
-	void setCostGlAccountTypeId(GlAccountType value);
-
-	/**
-	 * Returns the value of the '<em><b>Currency Uom Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Currency Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Currency Uom Id</em>' reference.
-	 * @see #setCurrencyUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponentCalc_CurrencyUomId()
-	 * @model keys="uomId"
-	 * @generated
-	 */
-	Uom getCurrencyUomId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCurrencyUomId <em>Currency Uom Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Currency Uom Id</em>' reference.
-	 * @see #getCurrencyUomId()
-	 * @generated
-	 */
-	void setCurrencyUomId(Uom value);
-
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -170,30 +92,26 @@ public interface CostComponentCalc extends EntityIdentifiable, EntityInfo {
 	void setFixedCost(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Offsetting Gl Account Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Offsetting Gl Account Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Offsetting Gl Account Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Offsetting Gl Account Type Id</em>' reference.
-	 * @see #setOffsettingGlAccountTypeId(GlAccountType)
-	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponentCalc_OffsettingGlAccountTypeId()
+	 * @return the value of the '<em>Offsetting Gl Account Type</em>' reference.
+	 * @see #setOffsettingGlAccountType(GlAccountType)
+	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponentCalc_OffsettingGlAccountType()
 	 * @model keys="glAccountTypeId"
 	 * @generated
 	 */
-	GlAccountType getOffsettingGlAccountTypeId();
+	GlAccountType getOffsettingGlAccountType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getOffsettingGlAccountTypeId <em>Offsetting Gl Account Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getOffsettingGlAccountType <em>Offsetting Gl Account Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Offsetting Gl Account Type Id</em>' reference.
-	 * @see #getOffsettingGlAccountTypeId()
+	 * @param value the new value of the '<em>Offsetting Gl Account Type</em>' reference.
+	 * @see #getOffsettingGlAccountType()
 	 * @generated
 	 */
-	void setOffsettingGlAccountTypeId(GlAccountType value);
+	void setOffsettingGlAccountType(GlAccountType value);
 
 	/**
 	 * Returns the value of the '<em><b>Per Milli Second</b></em>' attribute.
@@ -273,5 +191,71 @@ public interface CostComponentCalc extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setCostComponentCalcId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Cost Custom Method</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Cost Custom Method</em>' reference.
+	 * @see #setCostCustomMethod(CustomMethod)
+	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponentCalc_CostCustomMethod()
+	 * @model keys="customMethodId"
+	 * @generated
+	 */
+	CustomMethod getCostCustomMethod();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCostCustomMethod <em>Cost Custom Method</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Cost Custom Method</em>' reference.
+	 * @see #getCostCustomMethod()
+	 * @generated
+	 */
+	void setCostCustomMethod(CustomMethod value);
+
+	/**
+	 * Returns the value of the '<em><b>Cost Gl Account Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Cost Gl Account Type</em>' reference.
+	 * @see #setCostGlAccountType(GlAccountType)
+	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponentCalc_CostGlAccountType()
+	 * @model keys="glAccountTypeId"
+	 * @generated
+	 */
+	GlAccountType getCostGlAccountType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCostGlAccountType <em>Cost Gl Account Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Cost Gl Account Type</em>' reference.
+	 * @see #getCostGlAccountType()
+	 * @generated
+	 */
+	void setCostGlAccountType(GlAccountType value);
+
+	/**
+	 * Returns the value of the '<em><b>Currency Uom</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Currency Uom</em>' reference.
+	 * @see #setCurrencyUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponentCalc_CurrencyUom()
+	 * @model keys="uomId"
+	 * @generated
+	 */
+	Uom getCurrencyUom();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCurrencyUom <em>Currency Uom</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Currency Uom</em>' reference.
+	 * @see #getCurrencyUom()
+	 * @generated
+	 */
+	void setCurrencyUom(Uom value);
 
 } // CostComponentCalc

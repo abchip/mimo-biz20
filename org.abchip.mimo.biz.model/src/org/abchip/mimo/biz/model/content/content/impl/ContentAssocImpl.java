@@ -32,14 +32,14 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentAssocImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentAssocImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentAssocImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentAssocImpl#getContentId <em>Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentAssocImpl#getContent <em>Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentAssocImpl#getContentIdTo <em>Content Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentAssocImpl#getContentAssocTypeId <em>Content Assoc Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentAssocImpl#getContentAssocType <em>Content Assoc Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentAssocImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentAssocImpl#getContentAssocPredicateId <em>Content Assoc Predicate Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentAssocImpl#getContentAssocPredicate <em>Content Assoc Predicate</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentAssocImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentAssocImpl#getCreatedDate <em>Created Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentAssocImpl#getDataSourceId <em>Data Source Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentAssocImpl#getDataSource <em>Data Source</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentAssocImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentAssocImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentAssocImpl#getLeftCoordinate <em>Left Coordinate</em>}</li>
@@ -168,8 +168,8 @@ public class ContentAssocImpl extends EntityTypedImpl<ContentAssocType> implemen
 	 * @generated
 	 */
 	@Override
-	public ContentAssocPredicate getContentAssocPredicateId() {
-		return (ContentAssocPredicate)eGet(ContentPackage.Literals.CONTENT_ASSOC__CONTENT_ASSOC_PREDICATE_ID, true);
+	public Content getContent() {
+		return (Content)eGet(ContentPackage.Literals.CONTENT_ASSOC__CONTENT, true);
 	}
 
 	/**
@@ -178,48 +178,8 @@ public class ContentAssocImpl extends EntityTypedImpl<ContentAssocType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setContentAssocPredicateId(ContentAssocPredicate newContentAssocPredicateId) {
-		eSet(ContentPackage.Literals.CONTENT_ASSOC__CONTENT_ASSOC_PREDICATE_ID, newContentAssocPredicateId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ContentAssocType getContentAssocTypeId() {
-		return (ContentAssocType)eGet(ContentPackage.Literals.CONTENT_ASSOC__CONTENT_ASSOC_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContentAssocTypeId(ContentAssocType newContentAssocTypeId) {
-		eSet(ContentPackage.Literals.CONTENT_ASSOC__CONTENT_ASSOC_TYPE_ID, newContentAssocTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Content getContentId() {
-		return (Content)eGet(ContentPackage.Literals.CONTENT_ASSOC__CONTENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContentId(Content newContentId) {
-		eSet(ContentPackage.Literals.CONTENT_ASSOC__CONTENT_ID, newContentId);
+	public void setContent(Content newContent) {
+		eSet(ContentPackage.Literals.CONTENT_ASSOC__CONTENT, newContent);
 	}
 
 	/**
@@ -240,6 +200,26 @@ public class ContentAssocImpl extends EntityTypedImpl<ContentAssocType> implemen
 	@Override
 	public void setContentIdTo(Content newContentIdTo) {
 		eSet(ContentPackage.Literals.CONTENT_ASSOC__CONTENT_ID_TO, newContentIdTo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContentAssocType getContentAssocType() {
+		return (ContentAssocType)eGet(ContentPackage.Literals.CONTENT_ASSOC__CONTENT_ASSOC_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContentAssocType(ContentAssocType newContentAssocType) {
+		eSet(ContentPackage.Literals.CONTENT_ASSOC__CONTENT_ASSOC_TYPE, newContentAssocType);
 	}
 
 	/**
@@ -288,8 +268,8 @@ public class ContentAssocImpl extends EntityTypedImpl<ContentAssocType> implemen
 	 * @generated
 	 */
 	@Override
-	public DataSource getDataSourceId() {
-		return (DataSource)eGet(ContentPackage.Literals.CONTENT_ASSOC__DATA_SOURCE_ID, true);
+	public DataSource getDataSource() {
+		return (DataSource)eGet(ContentPackage.Literals.CONTENT_ASSOC__DATA_SOURCE, true);
 	}
 
 	/**
@@ -298,8 +278,8 @@ public class ContentAssocImpl extends EntityTypedImpl<ContentAssocType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setDataSourceId(DataSource newDataSourceId) {
-		eSet(ContentPackage.Literals.CONTENT_ASSOC__DATA_SOURCE_ID, newDataSourceId);
+	public void setDataSource(DataSource newDataSource) {
+		eSet(ContentPackage.Literals.CONTENT_ASSOC__DATA_SOURCE, newDataSource);
 	}
 
 	/**
@@ -320,6 +300,26 @@ public class ContentAssocImpl extends EntityTypedImpl<ContentAssocType> implemen
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(ContentPackage.Literals.CONTENT_ASSOC__FROM_DATE, newFromDate);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContentAssocPredicate getContentAssocPredicate() {
+		return (ContentAssocPredicate)eGet(ContentPackage.Literals.CONTENT_ASSOC__CONTENT_ASSOC_PREDICATE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContentAssocPredicate(ContentAssocPredicate newContentAssocPredicate) {
+		eSet(ContentPackage.Literals.CONTENT_ASSOC__CONTENT_ASSOC_PREDICATE, newContentAssocPredicate);
 	}
 
 	/**

@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContactMechImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContactMechImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContactMechImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContactMechImpl#getInvoiceId <em>Invoice Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContactMechImpl#getContactMechId <em>Contact Mech Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContactMechImpl#getContactMechPurposeTypeId <em>Contact Mech Purpose Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContactMechImpl#getInvoice <em>Invoice</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContactMechImpl#getContactMech <em>Contact Mech</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContactMechImpl#getContactMechPurposeType <em>Contact Mech Purpose Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -153,8 +153,8 @@ public class InvoiceContactMechImpl extends EntityIdentifiableImpl implements In
 	 * @generated
 	 */
 	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(InvoicePackage.Literals.INVOICE_CONTACT_MECH__CONTACT_MECH_ID, true);
+	public Invoice getInvoice() {
+		return (Invoice)eGet(InvoicePackage.Literals.INVOICE_CONTACT_MECH__INVOICE, true);
 	}
 
 	/**
@@ -163,8 +163,8 @@ public class InvoiceContactMechImpl extends EntityIdentifiableImpl implements In
 	 * @generated
 	 */
 	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(InvoicePackage.Literals.INVOICE_CONTACT_MECH__CONTACT_MECH_ID, newContactMechId);
+	public void setInvoice(Invoice newInvoice) {
+		eSet(InvoicePackage.Literals.INVOICE_CONTACT_MECH__INVOICE, newInvoice);
 	}
 
 	/**
@@ -173,8 +173,8 @@ public class InvoiceContactMechImpl extends EntityIdentifiableImpl implements In
 	 * @generated
 	 */
 	@Override
-	public ContactMechPurposeType getContactMechPurposeTypeId() {
-		return (ContactMechPurposeType)eGet(InvoicePackage.Literals.INVOICE_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE_ID, true);
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(InvoicePackage.Literals.INVOICE_CONTACT_MECH__CONTACT_MECH, true);
 	}
 
 	/**
@@ -183,8 +183,28 @@ public class InvoiceContactMechImpl extends EntityIdentifiableImpl implements In
 	 * @generated
 	 */
 	@Override
-	public void setContactMechPurposeTypeId(ContactMechPurposeType newContactMechPurposeTypeId) {
-		eSet(InvoicePackage.Literals.INVOICE_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE_ID, newContactMechPurposeTypeId);
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(InvoicePackage.Literals.INVOICE_CONTACT_MECH__CONTACT_MECH, newContactMech);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContactMechPurposeType getContactMechPurposeType() {
+		return (ContactMechPurposeType)eGet(InvoicePackage.Literals.INVOICE_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContactMechPurposeType(ContactMechPurposeType newContactMechPurposeType) {
+		eSet(InvoicePackage.Literals.INVOICE_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE, newContactMechPurposeType);
 	}
 
 	/**
@@ -223,26 +243,6 @@ public class InvoiceContactMechImpl extends EntityIdentifiableImpl implements In
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Invoice getInvoiceId() {
-		return (Invoice)eGet(InvoicePackage.Literals.INVOICE_CONTACT_MECH__INVOICE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInvoiceId(Invoice newInvoiceId) {
-		eSet(InvoicePackage.Literals.INVOICE_CONTACT_MECH__INVOICE_ID, newInvoiceId);
 	}
 
 } //InvoiceContactMechImpl

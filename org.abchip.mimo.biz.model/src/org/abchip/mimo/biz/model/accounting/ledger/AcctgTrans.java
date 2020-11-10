@@ -36,33 +36,33 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getAcctgTransId <em>Acctg Trans Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getAcctgTransAttributes <em>Acctg Trans Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getAcctgTransEntries <em>Acctg Trans Entries</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getAcctgTransTypeId <em>Acctg Trans Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getAcctgTransType <em>Acctg Trans Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getCreatedDate <em>Created Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getFinAccountTransId <em>Fin Account Trans Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getFixedAssetId <em>Fixed Asset Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getGlFiscalTypeId <em>Gl Fiscal Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getGlJournalId <em>Gl Journal Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getGroupStatusId <em>Group Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getInventoryItemId <em>Inventory Item Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getInvoiceId <em>Invoice Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getFinAccountTrans <em>Fin Account Trans</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getFixedAsset <em>Fixed Asset</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getGlFiscalType <em>Gl Fiscal Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getGlJournal <em>Gl Journal</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getGroupStatus <em>Group Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getInventoryItem <em>Inventory Item</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getInvoice <em>Invoice</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#isIsPosted <em>Is Posted</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getLastModifiedDate <em>Last Modified Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getPaymentId <em>Payment Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getPhysicalInventoryId <em>Physical Inventory Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getPayment <em>Payment</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getPhysicalInventory <em>Physical Inventory</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getPostedDate <em>Posted Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getReceiptId <em>Receipt Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getReceipt <em>Receipt</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getRoleType <em>Role Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getScheduledPostingDate <em>Scheduled Posting Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getShipmentId <em>Shipment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getShipment <em>Shipment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getTheirAcctgTransId <em>Their Acctg Trans Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getTransactionDate <em>Transaction Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getVoucherDate <em>Voucher Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getVoucherRef <em>Voucher Ref</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getWorkEffortId <em>Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getWorkEffort <em>Work Effort</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans()
@@ -149,6 +149,160 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	void setDescription(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Fin Account Trans</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fin Account Trans</em>' reference.
+	 * @see #setFinAccountTrans(FinAccountTrans)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_FinAccountTrans()
+	 * @model keys="finAccountTransId"
+	 * @generated
+	 */
+	FinAccountTrans getFinAccountTrans();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getFinAccountTrans <em>Fin Account Trans</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Fin Account Trans</em>' reference.
+	 * @see #getFinAccountTrans()
+	 * @generated
+	 */
+	void setFinAccountTrans(FinAccountTrans value);
+
+	/**
+	 * Returns the value of the '<em><b>Fixed Asset</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fixed Asset</em>' reference.
+	 * @see #setFixedAsset(FixedAsset)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_FixedAsset()
+	 * @model keys="fixedAssetId"
+	 * @generated
+	 */
+	FixedAsset getFixedAsset();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getFixedAsset <em>Fixed Asset</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Fixed Asset</em>' reference.
+	 * @see #getFixedAsset()
+	 * @generated
+	 */
+	void setFixedAsset(FixedAsset value);
+
+	/**
+	 * Returns the value of the '<em><b>Gl Fiscal Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Gl Fiscal Type</em>' reference.
+	 * @see #setGlFiscalType(GlFiscalType)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_GlFiscalType()
+	 * @model keys="glFiscalTypeId"
+	 * @generated
+	 */
+	GlFiscalType getGlFiscalType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getGlFiscalType <em>Gl Fiscal Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Gl Fiscal Type</em>' reference.
+	 * @see #getGlFiscalType()
+	 * @generated
+	 */
+	void setGlFiscalType(GlFiscalType value);
+
+	/**
+	 * Returns the value of the '<em><b>Gl Journal</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Gl Journal</em>' reference.
+	 * @see #setGlJournal(GlJournal)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_GlJournal()
+	 * @model keys="glJournalId"
+	 * @generated
+	 */
+	GlJournal getGlJournal();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getGlJournal <em>Gl Journal</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Gl Journal</em>' reference.
+	 * @see #getGlJournal()
+	 * @generated
+	 */
+	void setGlJournal(GlJournal value);
+
+	/**
+	 * Returns the value of the '<em><b>Group Status</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Group Status</em>' reference.
+	 * @see #setGroupStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_GroupStatus()
+	 * @model keys="statusId"
+	 * @generated
+	 */
+	StatusItem getGroupStatus();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getGroupStatus <em>Group Status</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Group Status</em>' reference.
+	 * @see #getGroupStatus()
+	 * @generated
+	 */
+	void setGroupStatus(StatusItem value);
+
+	/**
+	 * Returns the value of the '<em><b>Inventory Item</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Inventory Item</em>' reference.
+	 * @see #setInventoryItem(InventoryItem)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_InventoryItem()
+	 * @model keys="inventoryItemId"
+	 * @generated
+	 */
+	InventoryItem getInventoryItem();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getInventoryItem <em>Inventory Item</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Inventory Item</em>' reference.
+	 * @see #getInventoryItem()
+	 * @generated
+	 */
+	void setInventoryItem(InventoryItem value);
+
+	/**
+	 * Returns the value of the '<em><b>Invoice</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Invoice</em>' reference.
+	 * @see #setInvoice(Invoice)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_Invoice()
+	 * @model keys="invoiceId"
+	 * @generated
+	 */
+	Invoice getInvoice();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getInvoice <em>Invoice</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Invoice</em>' reference.
+	 * @see #getInvoice()
+	 * @generated
+	 */
+	void setInvoice(Invoice value);
+
+	/**
 	 * Returns the value of the '<em><b>Is Posted</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -173,58 +327,6 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	 * @generated
 	 */
 	void setIsPosted(boolean value);
-
-	/**
-	 * Returns the value of the '<em><b>Group Status Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Group Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Group Status Id</em>' reference.
-	 * @see #setGroupStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_GroupStatusId()
-	 * @model keys="statusId"
-	 * @generated
-	 */
-	StatusItem getGroupStatusId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getGroupStatusId <em>Group Status Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Group Status Id</em>' reference.
-	 * @see #getGroupStatusId()
-	 * @generated
-	 */
-	void setGroupStatusId(StatusItem value);
-
-	/**
-	 * Returns the value of the '<em><b>Inventory Item Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Inventory Item Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Inventory Item Id</em>' reference.
-	 * @see #setInventoryItemId(InventoryItem)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_InventoryItemId()
-	 * @model keys="inventoryItemId"
-	 * @generated
-	 */
-	InventoryItem getInventoryItemId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getInventoryItemId <em>Inventory Item Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Inventory Item Id</em>' reference.
-	 * @see #getInventoryItemId()
-	 * @generated
-	 */
-	void setInventoryItemId(InventoryItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Last Modified By User Login</b></em>' attribute.
@@ -279,82 +381,70 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	void setLastModifiedDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_PartyId()
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_Party()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getPartyId();
+	Party getParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getParty <em>Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setParty(Party value);
 
 	/**
-	 * Returns the value of the '<em><b>Payment Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Payment</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Payment Id</em>' reference.
-	 * @see #setPaymentId(Payment)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_PaymentId()
+	 * @return the value of the '<em>Payment</em>' reference.
+	 * @see #setPayment(Payment)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_Payment()
 	 * @model keys="paymentId"
 	 * @generated
 	 */
-	Payment getPaymentId();
+	Payment getPayment();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getPaymentId <em>Payment Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getPayment <em>Payment</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Payment Id</em>' reference.
-	 * @see #getPaymentId()
+	 * @param value the new value of the '<em>Payment</em>' reference.
+	 * @see #getPayment()
 	 * @generated
 	 */
-	void setPaymentId(Payment value);
+	void setPayment(Payment value);
 
 	/**
-	 * Returns the value of the '<em><b>Physical Inventory Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Physical Inventory</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Physical Inventory Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Physical Inventory Id</em>' reference.
-	 * @see #setPhysicalInventoryId(PhysicalInventory)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_PhysicalInventoryId()
+	 * @return the value of the '<em>Physical Inventory</em>' reference.
+	 * @see #setPhysicalInventory(PhysicalInventory)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_PhysicalInventory()
 	 * @model keys="physicalInventoryId"
 	 * @generated
 	 */
-	PhysicalInventory getPhysicalInventoryId();
+	PhysicalInventory getPhysicalInventory();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getPhysicalInventoryId <em>Physical Inventory Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getPhysicalInventory <em>Physical Inventory</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Physical Inventory Id</em>' reference.
-	 * @see #getPhysicalInventoryId()
+	 * @param value the new value of the '<em>Physical Inventory</em>' reference.
+	 * @see #getPhysicalInventory()
 	 * @generated
 	 */
-	void setPhysicalInventoryId(PhysicalInventory value);
+	void setPhysicalInventory(PhysicalInventory value);
 
 	/**
 	 * Returns the value of the '<em><b>Posted Date</b></em>' attribute.
@@ -383,56 +473,48 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	void setPostedDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Receipt Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Receipt</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Receipt Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Receipt Id</em>' reference.
-	 * @see #setReceiptId(ShipmentReceipt)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_ReceiptId()
+	 * @return the value of the '<em>Receipt</em>' reference.
+	 * @see #setReceipt(ShipmentReceipt)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_Receipt()
 	 * @model keys="receiptId"
 	 * @generated
 	 */
-	ShipmentReceipt getReceiptId();
+	ShipmentReceipt getReceipt();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getReceiptId <em>Receipt Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getReceipt <em>Receipt</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Receipt Id</em>' reference.
-	 * @see #getReceiptId()
+	 * @param value the new value of the '<em>Receipt</em>' reference.
+	 * @see #getReceipt()
 	 * @generated
 	 */
-	void setReceiptId(ShipmentReceipt value);
+	void setReceipt(ShipmentReceipt value);
 
 	/**
-	 * Returns the value of the '<em><b>Role Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Role Type Id</em>' reference.
-	 * @see #setRoleTypeId(RoleType)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_RoleTypeId()
+	 * @return the value of the '<em>Role Type</em>' reference.
+	 * @see #setRoleType(RoleType)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_RoleType()
 	 * @model keys="roleTypeId"
 	 * @generated
 	 */
-	RoleType getRoleTypeId();
+	RoleType getRoleType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getRoleTypeId <em>Role Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getRoleType <em>Role Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Role Type Id</em>' reference.
-	 * @see #getRoleTypeId()
+	 * @param value the new value of the '<em>Role Type</em>' reference.
+	 * @see #getRoleType()
 	 * @generated
 	 */
-	void setRoleTypeId(RoleType value);
+	void setRoleType(RoleType value);
 
 	/**
 	 * Returns the value of the '<em><b>Scheduled Posting Date</b></em>' attribute.
@@ -461,30 +543,26 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	void setScheduledPostingDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Shipment Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Shipment</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shipment Id</em>' reference.
-	 * @see #setShipmentId(Shipment)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_ShipmentId()
+	 * @return the value of the '<em>Shipment</em>' reference.
+	 * @see #setShipment(Shipment)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_Shipment()
 	 * @model keys="shipmentId"
 	 * @generated
 	 */
-	Shipment getShipmentId();
+	Shipment getShipment();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getShipmentId <em>Shipment Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getShipment <em>Shipment</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shipment Id</em>' reference.
-	 * @see #getShipmentId()
+	 * @param value the new value of the '<em>Shipment</em>' reference.
+	 * @see #getShipment()
 	 * @generated
 	 */
-	void setShipmentId(Shipment value);
+	void setShipment(Shipment value);
 
 	/**
 	 * Returns the value of the '<em><b>Their Acctg Trans Id</b></em>' attribute.
@@ -591,186 +669,26 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	void setVoucherRef(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Work Effort Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Work Effort Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Work Effort Id</em>' reference.
-	 * @see #setWorkEffortId(WorkEffort)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_WorkEffortId()
+	 * @return the value of the '<em>Work Effort</em>' reference.
+	 * @see #setWorkEffort(WorkEffort)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_WorkEffort()
 	 * @model keys="workEffortId"
 	 * @generated
 	 */
-	WorkEffort getWorkEffortId();
+	WorkEffort getWorkEffort();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getWorkEffortId <em>Work Effort Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getWorkEffort <em>Work Effort</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Work Effort Id</em>' reference.
-	 * @see #getWorkEffortId()
+	 * @param value the new value of the '<em>Work Effort</em>' reference.
+	 * @see #getWorkEffort()
 	 * @generated
 	 */
-	void setWorkEffortId(WorkEffort value);
-
-	/**
-	 * Returns the value of the '<em><b>Gl Journal Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gl Journal Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Journal Id</em>' reference.
-	 * @see #setGlJournalId(GlJournal)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_GlJournalId()
-	 * @model keys="glJournalId"
-	 * @generated
-	 */
-	GlJournal getGlJournalId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getGlJournalId <em>Gl Journal Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Gl Journal Id</em>' reference.
-	 * @see #getGlJournalId()
-	 * @generated
-	 */
-	void setGlJournalId(GlJournal value);
-
-	/**
-	 * Returns the value of the '<em><b>Gl Fiscal Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gl Fiscal Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Fiscal Type Id</em>' reference.
-	 * @see #setGlFiscalTypeId(GlFiscalType)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_GlFiscalTypeId()
-	 * @model keys="glFiscalTypeId"
-	 * @generated
-	 */
-	GlFiscalType getGlFiscalTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getGlFiscalTypeId <em>Gl Fiscal Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Gl Fiscal Type Id</em>' reference.
-	 * @see #getGlFiscalTypeId()
-	 * @generated
-	 */
-	void setGlFiscalTypeId(GlFiscalType value);
-
-	/**
-	 * Returns the value of the '<em><b>Fixed Asset Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fixed Asset Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fixed Asset Id</em>' reference.
-	 * @see #setFixedAssetId(FixedAsset)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_FixedAssetId()
-	 * @model keys="fixedAssetId"
-	 * @generated
-	 */
-	FixedAsset getFixedAssetId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getFixedAssetId <em>Fixed Asset Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fixed Asset Id</em>' reference.
-	 * @see #getFixedAssetId()
-	 * @generated
-	 */
-	void setFixedAssetId(FixedAsset value);
-
-	/**
-	 * Returns the value of the '<em><b>Invoice Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Invoice Id</em>' reference.
-	 * @see #setInvoiceId(Invoice)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_InvoiceId()
-	 * @model keys="invoiceId"
-	 * @generated
-	 */
-	Invoice getInvoiceId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getInvoiceId <em>Invoice Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Invoice Id</em>' reference.
-	 * @see #getInvoiceId()
-	 * @generated
-	 */
-	void setInvoiceId(Invoice value);
-
-	/**
-	 * Returns the value of the '<em><b>Fin Account Trans Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fin Account Trans Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fin Account Trans Id</em>' reference.
-	 * @see #setFinAccountTransId(FinAccountTrans)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_FinAccountTransId()
-	 * @model keys="finAccountTransId"
-	 * @generated
-	 */
-	FinAccountTrans getFinAccountTransId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getFinAccountTransId <em>Fin Account Trans Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fin Account Trans Id</em>' reference.
-	 * @see #getFinAccountTransId()
-	 * @generated
-	 */
-	void setFinAccountTransId(FinAccountTrans value);
-
-	/**
-	 * Returns the value of the '<em><b>Acctg Trans Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Acctg Trans Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Acctg Trans Type Id</em>' reference.
-	 * @see #setAcctgTransTypeId(AcctgTransType)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_AcctgTransTypeId()
-	 * @model keys="acctgTransTypeId"
-	 * @generated
-	 */
-	AcctgTransType getAcctgTransTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getAcctgTransTypeId <em>Acctg Trans Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Acctg Trans Type Id</em>' reference.
-	 * @see #getAcctgTransTypeId()
-	 * @generated
-	 */
-	void setAcctgTransTypeId(AcctgTransType value);
+	void setWorkEffort(WorkEffort value);
 
 	/**
 	 * Returns the value of the '<em><b>Acctg Trans Id</b></em>' attribute.
@@ -830,5 +748,27 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	 * @generated
 	 */
 	List<AcctgTransEntry> getAcctgTransEntries();
+
+	/**
+	 * Returns the value of the '<em><b>Acctg Trans Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Acctg Trans Type</em>' reference.
+	 * @see #setAcctgTransType(AcctgTransType)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_AcctgTransType()
+	 * @model keys="acctgTransTypeId"
+	 * @generated
+	 */
+	AcctgTransType getAcctgTransType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans#getAcctgTransType <em>Acctg Trans Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Acctg Trans Type</em>' reference.
+	 * @see #getAcctgTransType()
+	 * @generated
+	 */
+	void setAcctgTransType(AcctgTransType value);
 
 } // AcctgTrans

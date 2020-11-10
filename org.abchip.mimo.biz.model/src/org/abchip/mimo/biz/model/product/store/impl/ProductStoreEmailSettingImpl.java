@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreEmailSettingImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreEmailSettingImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreEmailSettingImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreEmailSettingImpl#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreEmailSettingImpl#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreEmailSettingImpl#getEmailType <em>Email Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreEmailSettingImpl#getBccAddress <em>Bcc Address</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreEmailSettingImpl#getBodyScreenLocation <em>Body Screen Location</em>}</li>
@@ -151,6 +151,26 @@ public class ProductStoreEmailSettingImpl extends EntityIdentifiableImpl impleme
 	@Override
 	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
 		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(StorePackage.Literals.PRODUCT_STORE_EMAIL_SETTING__PRODUCT_STORE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_EMAIL_SETTING__PRODUCT_STORE, newProductStore);
 	}
 
 	/**
@@ -349,26 +369,6 @@ public class ProductStoreEmailSettingImpl extends EntityIdentifiableImpl impleme
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(StorePackage.Literals.PRODUCT_STORE_EMAIL_SETTING__PRODUCT_STORE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_EMAIL_SETTING__PRODUCT_STORE_ID, newProductStoreId);
 	}
 
 } //ProductStoreEmailSettingImpl

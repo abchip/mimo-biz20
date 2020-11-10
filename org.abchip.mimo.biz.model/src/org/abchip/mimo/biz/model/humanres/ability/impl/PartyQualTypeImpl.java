@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualTypeImpl#getPartyQualTypeId <em>Party Qual Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,8 +200,8 @@ public class PartyQualTypeImpl extends EntityTypeImpl<PartyQual> implements Part
 	 * @generated
 	 */
 	@Override
-	public PartyQualType getParentTypeId() {
-		return (PartyQualType)eGet(AbilityPackage.Literals.PARTY_QUAL_TYPE__PARENT_TYPE_ID, true);
+	public PartyQualType getParentType() {
+		return (PartyQualType)eGet(AbilityPackage.Literals.PARTY_QUAL_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -210,8 +210,8 @@ public class PartyQualTypeImpl extends EntityTypeImpl<PartyQual> implements Part
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(PartyQualType newParentTypeId) {
-		eSet(AbilityPackage.Literals.PARTY_QUAL_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(PartyQualType newParentType) {
+		eSet(AbilityPackage.Literals.PARTY_QUAL_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

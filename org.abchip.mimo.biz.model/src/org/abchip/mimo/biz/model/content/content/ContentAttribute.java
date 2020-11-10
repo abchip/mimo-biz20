@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAttribute#getContentId <em>Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAttribute#getContent <em>Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAttribute#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAttribute#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAttribute#getAttrValue <em>Attr Value</em>}</li>
@@ -30,6 +30,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ContentAttribute extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Content</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Content</em>' reference.
+	 * @see #setContent(Content)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentAttribute_Content()
+	 * @model keys="contentId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Content getContent();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentAttribute#getContent <em>Content</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Content</em>' reference.
+	 * @see #getContent()
+	 * @generated
+	 */
+	void setContent(Content value);
+
 	/**
 	 * Returns the value of the '<em><b>Attr Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -109,32 +132,5 @@ public interface ContentAttribute extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setAttrValue(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Id</em>' reference.
-	 * @see #setContentId(Content)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentAttribute_ContentId()
-	 * @model keys="contentId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Content getContentId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentAttribute#getContentId <em>Content Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Id</em>' reference.
-	 * @see #getContentId()
-	 * @generated
-	 */
-	void setContentId(Content value);
 
 } // ContentAttribute

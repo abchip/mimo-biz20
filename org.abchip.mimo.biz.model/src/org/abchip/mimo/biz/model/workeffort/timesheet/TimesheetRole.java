@@ -21,9 +21,9 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetRole#getTimesheetId <em>Timesheet Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetRole#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetRole#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetRole#getTimesheet <em>Timesheet</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetRole#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetRole#getRoleType <em>Role Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheetRole()
@@ -32,84 +32,72 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface TimesheetRole extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheetRole_PartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetRole#getPartyId <em>Party Id</em>}' reference.
+	 * Returns the value of the '<em><b>Timesheet</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
-	 * @generated
-	 */
-	void setPartyId(Party value);
-
-	/**
-	 * Returns the value of the '<em><b>Role Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Role Type Id</em>' reference.
-	 * @see #setRoleTypeId(RoleType)
-	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheetRole_RoleTypeId()
-	 * @model keys="roleTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	RoleType getRoleTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetRole#getRoleTypeId <em>Role Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Role Type Id</em>' reference.
-	 * @see #getRoleTypeId()
-	 * @generated
-	 */
-	void setRoleTypeId(RoleType value);
-
-	/**
-	 * Returns the value of the '<em><b>Timesheet Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Timesheet Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Timesheet Id</em>' reference.
-	 * @see #setTimesheetId(Timesheet)
-	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheetRole_TimesheetId()
+	 * @return the value of the '<em>Timesheet</em>' reference.
+	 * @see #setTimesheet(Timesheet)
+	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheetRole_Timesheet()
 	 * @model keys="timesheetId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Timesheet getTimesheetId();
+	Timesheet getTimesheet();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetRole#getTimesheetId <em>Timesheet Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetRole#getTimesheet <em>Timesheet</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Timesheet Id</em>' reference.
-	 * @see #getTimesheetId()
+	 * @param value the new value of the '<em>Timesheet</em>' reference.
+	 * @see #getTimesheet()
 	 * @generated
 	 */
-	void setTimesheetId(Timesheet value);
+	void setTimesheet(Timesheet value);
+
+	/**
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheetRole_Party()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetRole#getParty <em>Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
+	 * @generated
+	 */
+	void setParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Role Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Role Type</em>' reference.
+	 * @see #setRoleType(RoleType)
+	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheetRole_RoleType()
+	 * @model keys="roleTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	RoleType getRoleType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetRole#getRoleType <em>Role Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Role Type</em>' reference.
+	 * @see #getRoleType()
+	 * @generated
+	 */
+	void setRoleType(RoleType value);
 
 } // TimesheetRole

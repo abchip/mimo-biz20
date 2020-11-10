@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageContentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageContentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageContentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageContentImpl#getShipmentId <em>Shipment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageContentImpl#getShipment <em>Shipment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageContentImpl#getShipmentItemSeqId <em>Shipment Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageContentImpl#getShipmentPackageSeqId <em>Shipment Package Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageContentImpl#getQuantity <em>Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageContentImpl#getSubProductId <em>Sub Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageContentImpl#getSubProduct <em>Sub Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageContentImpl#getSubProductQuantity <em>Sub Product Quantity</em>}</li>
  * </ul>
  *
@@ -157,6 +157,26 @@ public class ShipmentPackageContentImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
+	public Shipment getShipment() {
+		return (Shipment)eGet(Shipment_Package.Literals.SHIPMENT_PACKAGE_CONTENT__SHIPMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setShipment(Shipment newShipment) {
+		eSet(Shipment_Package.Literals.SHIPMENT_PACKAGE_CONTENT__SHIPMENT, newShipment);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getQuantity() {
 		return (BigDecimal)eGet(Shipment_Package.Literals.SHIPMENT_PACKAGE_CONTENT__QUANTITY, true);
 	}
@@ -177,8 +197,8 @@ public class ShipmentPackageContentImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public Shipment getShipmentId() {
-		return (Shipment)eGet(Shipment_Package.Literals.SHIPMENT_PACKAGE_CONTENT__SHIPMENT_ID, true);
+	public Product getSubProduct() {
+		return (Product)eGet(Shipment_Package.Literals.SHIPMENT_PACKAGE_CONTENT__SUB_PRODUCT, true);
 	}
 
 	/**
@@ -187,8 +207,8 @@ public class ShipmentPackageContentImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setShipmentId(Shipment newShipmentId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_PACKAGE_CONTENT__SHIPMENT_ID, newShipmentId);
+	public void setSubProduct(Product newSubProduct) {
+		eSet(Shipment_Package.Literals.SHIPMENT_PACKAGE_CONTENT__SUB_PRODUCT, newSubProduct);
 	}
 
 	/**
@@ -229,26 +249,6 @@ public class ShipmentPackageContentImpl extends EntityIdentifiableImpl implement
 	@Override
 	public void setShipmentPackageSeqId(String newShipmentPackageSeqId) {
 		eSet(Shipment_Package.Literals.SHIPMENT_PACKAGE_CONTENT__SHIPMENT_PACKAGE_SEQ_ID, newShipmentPackageSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getSubProductId() {
-		return (Product)eGet(Shipment_Package.Literals.SHIPMENT_PACKAGE_CONTENT__SUB_PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSubProductId(Product newSubProductId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_PACKAGE_CONTENT__SUB_PRODUCT_ID, newSubProductId);
 	}
 
 	/**

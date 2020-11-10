@@ -31,25 +31,25 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getSubscriptionResourceId <em>Subscription Resource Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getSubscriptionResource <em>Subscription Resource</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#isAutomaticExtend <em>Automatic Extend</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getAvailableTime <em>Available Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getAvailableTimeUomId <em>Available Time Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getAvailableTimeUom <em>Available Time Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getCanclAutmExtTime <em>Cancl Autm Ext Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getCanclAutmExtTimeUomId <em>Cancl Autm Ext Time Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getCanclAutmExtTimeUom <em>Cancl Autm Ext Time Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getGracePeriodOnExpiry <em>Grace Period On Expiry</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getGracePeriodOnExpiryUomId <em>Grace Period On Expiry Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getGracePeriodOnExpiryUom <em>Grace Period On Expiry Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getMaxLifeTime <em>Max Life Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getMaxLifeTimeUomId <em>Max Life Time Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getMaxLifeTimeUom <em>Max Life Time Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getPurchaseFromDate <em>Purchase From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getPurchaseThruDate <em>Purchase Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getUseCountLimit <em>Use Count Limit</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getUseRoleTypeId <em>Use Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getUseRoleType <em>Use Role Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getUseTime <em>Use Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getUseTimeUomId <em>Use Time Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.ProductSubscriptionResourceImpl#getUseTimeUom <em>Use Time Uom</em>}</li>
  * </ul>
  *
  * @generated
@@ -171,6 +171,46 @@ public class ProductSubscriptionResourceImpl extends EntityIdentifiableImpl impl
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SubscriptionResource getSubscriptionResource() {
+		return (SubscriptionResource)eGet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__SUBSCRIPTION_RESOURCE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSubscriptionResource(SubscriptionResource newSubscriptionResource) {
+		eSet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__SUBSCRIPTION_RESOURCE, newSubscriptionResource);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public long getAvailableTime() {
 		return (Long)eGet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__AVAILABLE_TIME, true);
 	}
@@ -191,8 +231,8 @@ public class ProductSubscriptionResourceImpl extends EntityIdentifiableImpl impl
 	 * @generated
 	 */
 	@Override
-	public Uom getAvailableTimeUomId() {
-		return (Uom)eGet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__AVAILABLE_TIME_UOM_ID, true);
+	public Uom getAvailableTimeUom() {
+		return (Uom)eGet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__AVAILABLE_TIME_UOM, true);
 	}
 
 	/**
@@ -201,8 +241,8 @@ public class ProductSubscriptionResourceImpl extends EntityIdentifiableImpl impl
 	 * @generated
 	 */
 	@Override
-	public void setAvailableTimeUomId(Uom newAvailableTimeUomId) {
-		eSet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__AVAILABLE_TIME_UOM_ID, newAvailableTimeUomId);
+	public void setAvailableTimeUom(Uom newAvailableTimeUom) {
+		eSet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__AVAILABLE_TIME_UOM, newAvailableTimeUom);
 	}
 
 	/**
@@ -231,8 +271,8 @@ public class ProductSubscriptionResourceImpl extends EntityIdentifiableImpl impl
 	 * @generated
 	 */
 	@Override
-	public Uom getCanclAutmExtTimeUomId() {
-		return (Uom)eGet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__CANCL_AUTM_EXT_TIME_UOM_ID, true);
+	public Uom getCanclAutmExtTimeUom() {
+		return (Uom)eGet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__CANCL_AUTM_EXT_TIME_UOM, true);
 	}
 
 	/**
@@ -241,8 +281,8 @@ public class ProductSubscriptionResourceImpl extends EntityIdentifiableImpl impl
 	 * @generated
 	 */
 	@Override
-	public void setCanclAutmExtTimeUomId(Uom newCanclAutmExtTimeUomId) {
-		eSet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__CANCL_AUTM_EXT_TIME_UOM_ID, newCanclAutmExtTimeUomId);
+	public void setCanclAutmExtTimeUom(Uom newCanclAutmExtTimeUom) {
+		eSet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__CANCL_AUTM_EXT_TIME_UOM, newCanclAutmExtTimeUom);
 	}
 
 	/**
@@ -311,8 +351,8 @@ public class ProductSubscriptionResourceImpl extends EntityIdentifiableImpl impl
 	 * @generated
 	 */
 	@Override
-	public Uom getGracePeriodOnExpiryUomId() {
-		return (Uom)eGet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__GRACE_PERIOD_ON_EXPIRY_UOM_ID, true);
+	public Uom getGracePeriodOnExpiryUom() {
+		return (Uom)eGet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__GRACE_PERIOD_ON_EXPIRY_UOM, true);
 	}
 
 	/**
@@ -321,8 +361,8 @@ public class ProductSubscriptionResourceImpl extends EntityIdentifiableImpl impl
 	 * @generated
 	 */
 	@Override
-	public void setGracePeriodOnExpiryUomId(Uom newGracePeriodOnExpiryUomId) {
-		eSet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__GRACE_PERIOD_ON_EXPIRY_UOM_ID, newGracePeriodOnExpiryUomId);
+	public void setGracePeriodOnExpiryUom(Uom newGracePeriodOnExpiryUom) {
+		eSet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__GRACE_PERIOD_ON_EXPIRY_UOM, newGracePeriodOnExpiryUom);
 	}
 
 	/**
@@ -351,8 +391,8 @@ public class ProductSubscriptionResourceImpl extends EntityIdentifiableImpl impl
 	 * @generated
 	 */
 	@Override
-	public Uom getMaxLifeTimeUomId() {
-		return (Uom)eGet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__MAX_LIFE_TIME_UOM_ID, true);
+	public Uom getMaxLifeTimeUom() {
+		return (Uom)eGet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__MAX_LIFE_TIME_UOM, true);
 	}
 
 	/**
@@ -361,8 +401,8 @@ public class ProductSubscriptionResourceImpl extends EntityIdentifiableImpl impl
 	 * @generated
 	 */
 	@Override
-	public void setMaxLifeTimeUomId(Uom newMaxLifeTimeUomId) {
-		eSet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__MAX_LIFE_TIME_UOM_ID, newMaxLifeTimeUomId);
+	public void setMaxLifeTimeUom(Uom newMaxLifeTimeUom) {
+		eSet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__MAX_LIFE_TIME_UOM, newMaxLifeTimeUom);
 	}
 
 	/**
@@ -451,8 +491,8 @@ public class ProductSubscriptionResourceImpl extends EntityIdentifiableImpl impl
 	 * @generated
 	 */
 	@Override
-	public RoleType getUseRoleTypeId() {
-		return (RoleType)eGet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__USE_ROLE_TYPE_ID, true);
+	public RoleType getUseRoleType() {
+		return (RoleType)eGet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__USE_ROLE_TYPE, true);
 	}
 
 	/**
@@ -461,8 +501,8 @@ public class ProductSubscriptionResourceImpl extends EntityIdentifiableImpl impl
 	 * @generated
 	 */
 	@Override
-	public void setUseRoleTypeId(RoleType newUseRoleTypeId) {
-		eSet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__USE_ROLE_TYPE_ID, newUseRoleTypeId);
+	public void setUseRoleType(RoleType newUseRoleType) {
+		eSet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__USE_ROLE_TYPE, newUseRoleType);
 	}
 
 	/**
@@ -491,8 +531,8 @@ public class ProductSubscriptionResourceImpl extends EntityIdentifiableImpl impl
 	 * @generated
 	 */
 	@Override
-	public Uom getUseTimeUomId() {
-		return (Uom)eGet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__USE_TIME_UOM_ID, true);
+	public Uom getUseTimeUom() {
+		return (Uom)eGet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__USE_TIME_UOM, true);
 	}
 
 	/**
@@ -501,8 +541,8 @@ public class ProductSubscriptionResourceImpl extends EntityIdentifiableImpl impl
 	 * @generated
 	 */
 	@Override
-	public void setUseTimeUomId(Uom newUseTimeUomId) {
-		eSet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__USE_TIME_UOM_ID, newUseTimeUomId);
+	public void setUseTimeUom(Uom newUseTimeUom) {
+		eSet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__USE_TIME_UOM, newUseTimeUom);
 	}
 
 	/**
@@ -541,46 +581,6 @@ public class ProductSubscriptionResourceImpl extends EntityIdentifiableImpl impl
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__PRODUCT_ID, newProductId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SubscriptionResource getSubscriptionResourceId() {
-		return (SubscriptionResource)eGet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__SUBSCRIPTION_RESOURCE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSubscriptionResourceId(SubscriptionResource newSubscriptionResourceId) {
-		eSet(SubscriptionPackage.Literals.PRODUCT_SUBSCRIPTION_RESOURCE__SUBSCRIPTION_RESOURCE_ID, newSubscriptionResourceId);
 	}
 
 } //ProductSubscriptionResourceImpl

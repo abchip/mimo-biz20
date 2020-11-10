@@ -23,7 +23,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemAssoc#getInvoiceItemAssocTypeId <em>Invoice Item Assoc Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemAssoc#getInvoiceItemAssocType <em>Invoice Item Assoc Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemAssoc#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemAssoc#getInvoiceIdFrom <em>Invoice Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemAssoc#getInvoiceIdTo <em>Invoice Id To</em>}</li>
@@ -41,6 +41,29 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface InvoiceItemAssoc extends EntityTyped<InvoiceItemAssocType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Invoice Item Assoc Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Invoice Item Assoc Type</em>' reference.
+	 * @see #setInvoiceItemAssocType(InvoiceItemAssocType)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemAssoc_InvoiceItemAssocType()
+	 * @model keys="invoiceItemAssocTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	InvoiceItemAssocType getInvoiceItemAssocType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemAssoc#getInvoiceItemAssocType <em>Invoice Item Assoc Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Invoice Item Assoc Type</em>' reference.
+	 * @see #getInvoiceItemAssocType()
+	 * @generated
+	 */
+	void setInvoiceItemAssocType(InvoiceItemAssocType value);
+
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -309,32 +332,5 @@ public interface InvoiceItemAssoc extends EntityTyped<InvoiceItemAssocType>, Ent
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Invoice Item Assoc Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Item Assoc Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Invoice Item Assoc Type Id</em>' reference.
-	 * @see #setInvoiceItemAssocTypeId(InvoiceItemAssocType)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemAssoc_InvoiceItemAssocTypeId()
-	 * @model keys="invoiceItemAssocTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	InvoiceItemAssocType getInvoiceItemAssocTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemAssoc#getInvoiceItemAssocTypeId <em>Invoice Item Assoc Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Invoice Item Assoc Type Id</em>' reference.
-	 * @see #getInvoiceItemAssocTypeId()
-	 * @generated
-	 */
-	void setInvoiceItemAssocTypeId(InvoiceItemAssocType value);
 
 } // InvoiceItemAssoc

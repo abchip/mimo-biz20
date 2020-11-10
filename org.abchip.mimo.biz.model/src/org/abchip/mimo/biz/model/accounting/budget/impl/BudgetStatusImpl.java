@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetStatusImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetStatusImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetStatusImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetStatusImpl#getBudgetId <em>Budget Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetStatusImpl#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetStatusImpl#getChangeByUserLoginId <em>Change By User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetStatusImpl#getBudget <em>Budget</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetStatusImpl#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetStatusImpl#getChangeByUserLogin <em>Change By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetStatusImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetStatusImpl#getStatusDate <em>Status Date</em>}</li>
  * </ul>
@@ -155,8 +155,8 @@ public class BudgetStatusImpl extends EntityIdentifiableImpl implements BudgetSt
 	 * @generated
 	 */
 	@Override
-	public UserLogin getChangeByUserLoginId() {
-		return (UserLogin)eGet(BudgetPackage.Literals.BUDGET_STATUS__CHANGE_BY_USER_LOGIN_ID, true);
+	public Budget getBudget() {
+		return (Budget)eGet(BudgetPackage.Literals.BUDGET_STATUS__BUDGET, true);
 	}
 
 	/**
@@ -165,8 +165,48 @@ public class BudgetStatusImpl extends EntityIdentifiableImpl implements BudgetSt
 	 * @generated
 	 */
 	@Override
-	public void setChangeByUserLoginId(UserLogin newChangeByUserLoginId) {
-		eSet(BudgetPackage.Literals.BUDGET_STATUS__CHANGE_BY_USER_LOGIN_ID, newChangeByUserLoginId);
+	public void setBudget(Budget newBudget) {
+		eSet(BudgetPackage.Literals.BUDGET_STATUS__BUDGET, newBudget);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(BudgetPackage.Literals.BUDGET_STATUS__STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(StatusItem newStatus) {
+		eSet(BudgetPackage.Literals.BUDGET_STATUS__STATUS, newStatus);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UserLogin getChangeByUserLogin() {
+		return (UserLogin)eGet(BudgetPackage.Literals.BUDGET_STATUS__CHANGE_BY_USER_LOGIN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setChangeByUserLogin(UserLogin newChangeByUserLogin) {
+		eSet(BudgetPackage.Literals.BUDGET_STATUS__CHANGE_BY_USER_LOGIN, newChangeByUserLogin);
 	}
 
 	/**
@@ -245,46 +285,6 @@ public class BudgetStatusImpl extends EntityIdentifiableImpl implements BudgetSt
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(BudgetPackage.Literals.BUDGET_STATUS__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(BudgetPackage.Literals.BUDGET_STATUS__STATUS_ID, newStatusId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Budget getBudgetId() {
-		return (Budget)eGet(BudgetPackage.Literals.BUDGET_STATUS__BUDGET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBudgetId(Budget newBudgetId) {
-		eSet(BudgetPackage.Literals.BUDGET_STATUS__BUDGET_ID, newBudgetId);
 	}
 
 } //BudgetStatusImpl

@@ -21,9 +21,9 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.VendorProduct#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.VendorProduct#getVendorPartyId <em>Vendor Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.VendorProduct#getProductStoreGroupId <em>Product Store Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.VendorProduct#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.VendorProduct#getVendorParty <em>Vendor Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.VendorProduct#getProductStoreGroup <em>Product Store Group</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getVendorProduct()
@@ -32,84 +32,72 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface VendorProduct extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Product Store Group Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Group Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store Group Id</em>' reference.
-	 * @see #setProductStoreGroupId(ProductStoreGroup)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getVendorProduct_ProductStoreGroupId()
-	 * @model keys="productStoreGroupId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductStoreGroup getProductStoreGroupId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.VendorProduct#getProductStoreGroupId <em>Product Store Group Id</em>}' reference.
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store Group Id</em>' reference.
-	 * @see #getProductStoreGroupId()
-	 * @generated
-	 */
-	void setProductStoreGroupId(ProductStoreGroup value);
-
-	/**
-	 * Returns the value of the '<em><b>Vendor Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Vendor Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Vendor Party Id</em>' reference.
-	 * @see #setVendorPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getVendorProduct_VendorPartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getVendorPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.VendorProduct#getVendorPartyId <em>Vendor Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Vendor Party Id</em>' reference.
-	 * @see #getVendorPartyId()
-	 * @generated
-	 */
-	void setVendorPartyId(Party value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getVendorProduct_ProductId()
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getVendorProduct_Product()
 	 * @model keys="productId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Product getProductId();
+	Product getProduct();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.VendorProduct#getProductId <em>Product Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.VendorProduct#getProduct <em>Product</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
 	 * @generated
 	 */
-	void setProductId(Product value);
+	void setProduct(Product value);
+
+	/**
+	 * Returns the value of the '<em><b>Vendor Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Vendor Party</em>' reference.
+	 * @see #setVendorParty(Party)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getVendorProduct_VendorParty()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getVendorParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.VendorProduct#getVendorParty <em>Vendor Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Vendor Party</em>' reference.
+	 * @see #getVendorParty()
+	 * @generated
+	 */
+	void setVendorParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Store Group</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Store Group</em>' reference.
+	 * @see #setProductStoreGroup(ProductStoreGroup)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getVendorProduct_ProductStoreGroup()
+	 * @model keys="productStoreGroupId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductStoreGroup getProductStoreGroup();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.VendorProduct#getProductStoreGroup <em>Product Store Group</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Store Group</em>' reference.
+	 * @see #getProductStoreGroup()
+	 * @generated
+	 */
+	void setProductStoreGroup(ProductStoreGroup value);
 
 } // VendorProduct

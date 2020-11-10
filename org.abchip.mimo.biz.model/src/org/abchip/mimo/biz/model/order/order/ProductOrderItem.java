@@ -20,11 +20,11 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getEngagementId <em>Engagement Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getEngagement <em>Engagement</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getEngagementItemSeqId <em>Engagement Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getProduct <em>Product</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getProductOrderItem()
@@ -33,31 +33,50 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface ProductOrderItem extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Engagement Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Engagement Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Engagement Id</em>' reference.
-	 * @see #setEngagementId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getProductOrderItem_EngagementId()
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getProductOrderItem_Order()
 	 * @model keys="orderId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	OrderHeader getEngagementId();
+	OrderHeader getOrder();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getEngagementId <em>Engagement Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getOrder <em>Order</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Engagement Id</em>' reference.
-	 * @see #getEngagementId()
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
 	 * @generated
 	 */
-	void setEngagementId(OrderHeader value);
+	void setOrder(OrderHeader value);
+
+	/**
+	 * Returns the value of the '<em><b>Engagement</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Engagement</em>' reference.
+	 * @see #setEngagement(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getProductOrderItem_Engagement()
+	 * @model keys="orderId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	OrderHeader getEngagement();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getEngagement <em>Engagement</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Engagement</em>' reference.
+	 * @see #getEngagement()
+	 * @generated
+	 */
+	void setEngagement(OrderHeader value);
 
 	/**
 	 * Returns the value of the '<em><b>Engagement Item Seq Id</b></em>' attribute.
@@ -88,33 +107,6 @@ public interface ProductOrderItem extends EntityIdentifiable, EntityInfo {
 	void setEngagementItemSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getProductOrderItem_OrderId()
-	 * @model keys="orderId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	OrderHeader getOrderId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getOrderId <em>Order Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
-	 * @generated
-	 */
-	void setOrderId(OrderHeader value);
-
-	/**
 	 * Returns the value of the '<em><b>Order Item Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -143,29 +135,25 @@ public interface ProductOrderItem extends EntityIdentifiable, EntityInfo {
 	void setOrderItemSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getProductOrderItem_ProductId()
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getProductOrderItem_Product()
 	 * @model keys="productId"
 	 * @generated
 	 */
-	Product getProductId();
+	Product getProduct();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getProductId <em>Product Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getProduct <em>Product</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
 	 * @generated
 	 */
-	void setProductId(Product value);
+	void setProduct(Product value);
 
 } // ProductOrderItem

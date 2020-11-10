@@ -21,9 +21,9 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProdCatalogId <em>Prod Catalog Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProductCategoryId <em>Product Category Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProdCatalogCategoryTypeId <em>Prod Catalog Category Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProdCatalog <em>Prod Catalog</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProductCategory <em>Product Category</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProdCatalogCategoryType <em>Prod Catalog Category Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getThruDate <em>Thru Date</em>}</li>
@@ -34,6 +34,75 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface ProdCatalogCategory extends EntityTyped<ProdCatalogCategoryType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Prod Catalog</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Prod Catalog</em>' reference.
+	 * @see #setProdCatalog(ProdCatalog)
+	 * @see org.abchip.mimo.biz.model.product.catalog.CatalogPackage#getProdCatalogCategory_ProdCatalog()
+	 * @model keys="prodCatalogId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProdCatalog getProdCatalog();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProdCatalog <em>Prod Catalog</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Prod Catalog</em>' reference.
+	 * @see #getProdCatalog()
+	 * @generated
+	 */
+	void setProdCatalog(ProdCatalog value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Category</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Category</em>' reference.
+	 * @see #setProductCategory(ProductCategory)
+	 * @see org.abchip.mimo.biz.model.product.catalog.CatalogPackage#getProdCatalogCategory_ProductCategory()
+	 * @model keys="productCategoryId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductCategory getProductCategory();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProductCategory <em>Product Category</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Category</em>' reference.
+	 * @see #getProductCategory()
+	 * @generated
+	 */
+	void setProductCategory(ProductCategory value);
+
+	/**
+	 * Returns the value of the '<em><b>Prod Catalog Category Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Prod Catalog Category Type</em>' reference.
+	 * @see #setProdCatalogCategoryType(ProdCatalogCategoryType)
+	 * @see org.abchip.mimo.biz.model.product.catalog.CatalogPackage#getProdCatalogCategory_ProdCatalogCategoryType()
+	 * @model keys="prodCatalogCategoryTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProdCatalogCategoryType getProdCatalogCategoryType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProdCatalogCategoryType <em>Prod Catalog Category Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Prod Catalog Category Type</em>' reference.
+	 * @see #getProdCatalogCategoryType()
+	 * @generated
+	 */
+	void setProdCatalogCategoryType(ProdCatalogCategoryType value);
+
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -60,33 +129,6 @@ public interface ProdCatalogCategory extends EntityTyped<ProdCatalogCategoryType
 	 * @generated
 	 */
 	void setFromDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Category Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Category Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Category Id</em>' reference.
-	 * @see #setProductCategoryId(ProductCategory)
-	 * @see org.abchip.mimo.biz.model.product.catalog.CatalogPackage#getProdCatalogCategory_ProductCategoryId()
-	 * @model keys="productCategoryId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductCategory getProductCategoryId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProductCategoryId <em>Product Category Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Category Id</em>' reference.
-	 * @see #getProductCategoryId()
-	 * @generated
-	 */
-	void setProductCategoryId(ProductCategory value);
 
 	/**
 	 * Returns the value of the '<em><b>Sequence Num</b></em>' attribute.
@@ -139,59 +181,5 @@ public interface ProdCatalogCategory extends EntityTyped<ProdCatalogCategoryType
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Prod Catalog Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Prod Catalog Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Prod Catalog Id</em>' reference.
-	 * @see #setProdCatalogId(ProdCatalog)
-	 * @see org.abchip.mimo.biz.model.product.catalog.CatalogPackage#getProdCatalogCategory_ProdCatalogId()
-	 * @model keys="prodCatalogId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProdCatalog getProdCatalogId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProdCatalogId <em>Prod Catalog Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Prod Catalog Id</em>' reference.
-	 * @see #getProdCatalogId()
-	 * @generated
-	 */
-	void setProdCatalogId(ProdCatalog value);
-
-	/**
-	 * Returns the value of the '<em><b>Prod Catalog Category Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Prod Catalog Category Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Prod Catalog Category Type Id</em>' reference.
-	 * @see #setProdCatalogCategoryTypeId(ProdCatalogCategoryType)
-	 * @see org.abchip.mimo.biz.model.product.catalog.CatalogPackage#getProdCatalogCategory_ProdCatalogCategoryTypeId()
-	 * @model keys="prodCatalogCategoryTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProdCatalogCategoryType getProdCatalogCategoryTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProdCatalogCategoryTypeId <em>Prod Catalog Category Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Prod Catalog Category Type Id</em>' reference.
-	 * @see #getProdCatalogCategoryTypeId()
-	 * @generated
-	 */
-	void setProdCatalogCategoryTypeId(ProdCatalogCategoryType value);
 
 } // ProdCatalogCategory

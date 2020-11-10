@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemRoleImpl#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemRoleImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemRoleImpl#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemRoleImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemRoleImpl#getRoleType <em>Role Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemRoleImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  * </ul>
  *
@@ -155,8 +155,8 @@ public class OrderItemRoleImpl extends EntityIdentifiableImpl implements OrderIt
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ITEM_ROLE__ORDER_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ITEM_ROLE__ORDER, true);
 	}
 
 	/**
@@ -165,8 +165,48 @@ public class OrderItemRoleImpl extends EntityIdentifiableImpl implements OrderIt
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_ROLE__ORDER_ID, newOrderId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_ROLE__ORDER, newOrder);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(OrderPackage.Literals.ORDER_ITEM_ROLE__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_ROLE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RoleType getRoleType() {
+		return (RoleType)eGet(OrderPackage.Literals.ORDER_ITEM_ROLE__ROLE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRoleType(RoleType newRoleType) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_ROLE__ROLE_TYPE, newRoleType);
 	}
 
 	/**
@@ -225,46 +265,6 @@ public class OrderItemRoleImpl extends EntityIdentifiableImpl implements OrderIt
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(OrderPackage.Literals.ORDER_ITEM_ROLE__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_ROLE__PARTY_ID, newPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(OrderPackage.Literals.ORDER_ITEM_ROLE__ROLE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_ROLE__ROLE_TYPE_ID, newRoleTypeId);
 	}
 
 } //OrderItemRoleImpl

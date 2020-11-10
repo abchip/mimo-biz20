@@ -126,13 +126,13 @@ public interface KeywordPackage extends EPackage {
 	int KEYWORD_THESAURUS__ENTERED_KEYWORD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Relationship Enum Id</b></em>' reference.
+	 * The feature id for the '<em><b>Relationship Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int KEYWORD_THESAURUS__RELATIONSHIP_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int KEYWORD_THESAURUS__RELATIONSHIP_ENUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Thesaurus</em>' class.
@@ -166,6 +166,17 @@ public interface KeywordPackage extends EPackage {
 	EAttribute getKeywordThesaurus_EnteredKeyword();
 
 	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.keyword.KeywordThesaurus#getRelationshipEnum <em>Relationship Enum</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Relationship Enum</em>'.
+	 * @see org.abchip.mimo.biz.model.common.keyword.KeywordThesaurus#getRelationshipEnum()
+	 * @see #getKeywordThesaurus()
+	 * @generated
+	 */
+	EReference getKeywordThesaurus_RelationshipEnum();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.keyword.KeywordThesaurus#getAlternateKeyword <em>Alternate Keyword</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -175,17 +186,6 @@ public interface KeywordPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getKeywordThesaurus_AlternateKeyword();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.keyword.KeywordThesaurus#getRelationshipEnumId <em>Relationship Enum Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Relationship Enum Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.keyword.KeywordThesaurus#getRelationshipEnumId()
-	 * @see #getKeywordThesaurus()
-	 * @generated
-	 */
-	EReference getKeywordThesaurus_RelationshipEnumId();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -228,20 +228,20 @@ public interface KeywordPackage extends EPackage {
 		EAttribute KEYWORD_THESAURUS__ENTERED_KEYWORD = eINSTANCE.getKeywordThesaurus_EnteredKeyword();
 
 		/**
+		 * The meta object literal for the '<em><b>Relationship Enum</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference KEYWORD_THESAURUS__RELATIONSHIP_ENUM = eINSTANCE.getKeywordThesaurus_RelationshipEnum();
+
+		/**
 		 * The meta object literal for the '<em><b>Alternate Keyword</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute KEYWORD_THESAURUS__ALTERNATE_KEYWORD = eINSTANCE.getKeywordThesaurus_AlternateKeyword();
-
-		/**
-		 * The meta object literal for the '<em><b>Relationship Enum Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference KEYWORD_THESAURUS__RELATIONSHIP_ENUM_ID = eINSTANCE.getKeywordThesaurus_RelationshipEnumId();
 
 	}
 

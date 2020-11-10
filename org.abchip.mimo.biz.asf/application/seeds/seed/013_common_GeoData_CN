@@ -1,275 +1,275 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-geo="http://www.abchip.org/mimo/biz/model/common/geo" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/common/geo http://www.abchip.org/mimo/biz/model/common#//geo http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="013_common_GeoData_CN">
   <contents xsi:type="biz-geo:Geo" geoId="CN-BJ" abbreviation="京" geoCode="BJ" geoName="北京" wellKnownText="Beijing">
-    <geoTypeId href="GeoType#MUNICIPALITY"/>
+    <geoType href="GeoType#MUNICIPALITY"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-CQ" abbreviation="渝" geoCode="CQ" geoName="重庆" wellKnownText="Chongqing">
-    <geoTypeId href="GeoType#MUNICIPALITY"/>
+    <geoType href="GeoType#MUNICIPALITY"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-SH" abbreviation="沪" geoCode="SH" geoName="上海" wellKnownText="Shanghai">
-    <geoTypeId href="GeoType#MUNICIPALITY"/>
+    <geoType href="GeoType#MUNICIPALITY"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-TJ" abbreviation="津" geoCode="TJ" geoName="天津" wellKnownText="Tianjin">
-    <geoTypeId href="GeoType#MUNICIPALITY"/>
+    <geoType href="GeoType#MUNICIPALITY"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-HL" abbreviation="黑" geoCode="HL" geoName="黑龙江" wellKnownText="Heilongjiang">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-JL" abbreviation="吉" geoCode="JL" geoName="吉林" wellKnownText="Jilin">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-LN" abbreviation="辽" geoCode="LN" geoName="辽宁" wellKnownText="Liaoning">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-QH" abbreviation="青" geoCode="QH" geoName="青海" wellKnownText="Qinghai">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-GS" abbreviation="甘" geoCode="GS" geoName="甘肃" wellKnownText="Gansu">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-SN" abbreviation="陕" geoCode="SN" geoName="陕西" wellKnownText="Shaanxi">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-SX" abbreviation="晋" geoCode="SX" geoName="山西" wellKnownText="Shanxi">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-HE" abbreviation="冀" geoCode="HE" geoName="河北" wellKnownText="Hebei">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-SC" abbreviation="川" geoCode="SC" geoName="四川" wellKnownText="Sichuan">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-HB" abbreviation="鄂" geoCode="HB" geoName="湖北" wellKnownText="Hubei">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-HA" abbreviation="豫" geoCode="HA" geoName="河南" wellKnownText="Henan">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-SD" abbreviation="鲁" geoCode="SD" geoName="山东" wellKnownText="Shandong">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-AH" abbreviation="皖" geoCode="AH" geoName="安徽" wellKnownText="Anhui">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-JS" abbreviation="苏" geoCode="JS" geoName="江苏" wellKnownText="Jiangsu">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-YN" abbreviation="滇" geoCode="YN" geoName="云南" wellKnownText="Yunnan">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-GZ" abbreviation="黔" geoCode="GZ" geoName="贵州" wellKnownText="Guizhou">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-HN" abbreviation="湘" geoCode="HN" geoName="湖南" wellKnownText="Hunan">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-JX" abbreviation="赣" geoCode="JX" geoName="江西" wellKnownText="Jiangxi">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-ZJ" abbreviation="浙" geoCode="ZJ" geoName="浙江" wellKnownText="Zhejiang">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-HI" abbreviation="琼" geoCode="HI" geoName="海南" wellKnownText="Hainan">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-GD" abbreviation="粤" geoCode="GD" geoName="广东" wellKnownText="Guangdong">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-FJ" abbreviation="闽" geoCode="FJ" geoName="福建" wellKnownText="Fujian">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-TW" abbreviation="台" geoCode="TW" geoName="台湾" wellKnownText="Taiwan">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-GX" abbreviation="桂" geoCode="GX" geoName="广西" wellKnownText="Guangxi">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-NM" abbreviation="内蒙古" geoCode="NM" geoName="内蒙古" wellKnownText="Inner Mongolia">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-NX" abbreviation="宁" geoCode="NX" geoName="宁夏" wellKnownText="Ningxia">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-XJ" abbreviation="新" geoCode="XJ" geoName="新疆" wellKnownText="Xinjiang">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-XZ" abbreviation="藏" geoCode="XZ" geoName="西藏" wellKnownText="Tibet">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-HK" abbreviation="香港" geoCode="HK" geoName="香港" wellKnownText="Hong Kong">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="CN-MO" abbreviation="澳门" geoCode="MO" geoName="澳门" wellKnownText="Macau">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-BJ"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-CQ"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-SH"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-TJ"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-HL"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-JL"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-LN"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-QH"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-GS"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-SN"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-SX"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-HE"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-SC"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-HB"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-HA"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-SD"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-AH"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-JS"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-YN"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-GZ"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-HN"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-JX"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-ZJ"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-HI"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-GD"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-FJ"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-TW"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-GX"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-NM"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-NX"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-XJ"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-XZ"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-HK"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#CHN"/>
+    <geo href="Geo#CHN"/>
     <geoIdTo href="Geo#CN-MO"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
 </mimo-ent:EntityContainer>

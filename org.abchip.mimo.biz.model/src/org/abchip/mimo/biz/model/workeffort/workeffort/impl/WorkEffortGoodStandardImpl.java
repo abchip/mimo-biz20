@@ -33,13 +33,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardImpl#getWorkEffortGoodStdTypeId <em>Work Effort Good Std Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardImpl#getWorkEffort <em>Work Effort</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardImpl#getWorkEffortGoodStdType <em>Work Effort Good Std Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardImpl#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardImpl#getEstimatedCost <em>Estimated Cost</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardImpl#getEstimatedQuantity <em>Estimated Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -162,6 +162,66 @@ public class WorkEffortGoodStandardImpl extends EntityTypedImpl<WorkEffortGoodSt
 	 * @generated
 	 */
 	@Override
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT, newWorkEffort);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public WorkEffortGoodStandardType getWorkEffortGoodStdType() {
+		return (WorkEffortGoodStandardType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT_GOOD_STD_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWorkEffortGoodStdType(WorkEffortGoodStandardType newWorkEffortGoodStdType) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT_GOOD_STD_TYPE, newWorkEffortGoodStdType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Product getProduct() {
+		return (Product)eGet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getEstimatedCost() {
 		return (BigDecimal)eGet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD__ESTIMATED_COST, true);
 	}
@@ -202,6 +262,26 @@ public class WorkEffortGoodStandardImpl extends EntityTypedImpl<WorkEffortGoodSt
 	 * @generated
 	 */
 	@Override
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD__STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(StatusItem newStatus) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD__STATUS, newStatus);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD__FROM_DATE, true);
 	}
@@ -214,46 +294,6 @@ public class WorkEffortGoodStandardImpl extends EntityTypedImpl<WorkEffortGoodSt
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD__PRODUCT_ID, newProductId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD__STATUS_ID, newStatusId);
 	}
 
 	/**
@@ -312,46 +352,6 @@ public class WorkEffortGoodStandardImpl extends EntityTypedImpl<WorkEffortGoodSt
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffortGoodStandardType getWorkEffortGoodStdTypeId() {
-		return (WorkEffortGoodStandardType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT_GOOD_STD_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortGoodStdTypeId(WorkEffortGoodStandardType newWorkEffortGoodStdTypeId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT_GOOD_STD_TYPE_ID, newWorkEffortGoodStdTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT_ID, newWorkEffortId);
 	}
 
 } //WorkEffortGoodStandardImpl

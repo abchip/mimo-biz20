@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPagePortletImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPagePortletImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPagePortletImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPagePortletImpl#getPortalPageId <em>Portal Page Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPagePortletImpl#getPortalPortletId <em>Portal Portlet Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPagePortletImpl#getPortalPage <em>Portal Page</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPagePortletImpl#getPortalPortlet <em>Portal Portlet</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPagePortletImpl#getPortletSeqId <em>Portlet Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPagePortletImpl#getColumnSeqId <em>Column Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPagePortletImpl#getSequenceNum <em>Sequence Num</em>}</li>
@@ -154,6 +154,46 @@ public class PortalPagePortletImpl extends EntityIdentifiableImpl implements Por
 	 * @generated
 	 */
 	@Override
+	public PortalPage getPortalPage() {
+		return (PortalPage)eGet(PortalPackage.Literals.PORTAL_PAGE_PORTLET__PORTAL_PAGE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPortalPage(PortalPage newPortalPage) {
+		eSet(PortalPackage.Literals.PORTAL_PAGE_PORTLET__PORTAL_PAGE, newPortalPage);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PortalPortlet getPortalPortlet() {
+		return (PortalPortlet)eGet(PortalPackage.Literals.PORTAL_PAGE_PORTLET__PORTAL_PORTLET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPortalPortlet(PortalPortlet newPortalPortlet) {
+		eSet(PortalPackage.Literals.PORTAL_PAGE_PORTLET__PORTAL_PORTLET, newPortalPortlet);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getColumnSeqId() {
 		return (String)eGet(PortalPackage.Literals.PORTAL_PAGE_PORTLET__COLUMN_SEQ_ID, true);
 	}
@@ -244,46 +284,6 @@ public class PortalPagePortletImpl extends EntityIdentifiableImpl implements Por
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PortalPage getPortalPageId() {
-		return (PortalPage)eGet(PortalPackage.Literals.PORTAL_PAGE_PORTLET__PORTAL_PAGE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPortalPageId(PortalPage newPortalPageId) {
-		eSet(PortalPackage.Literals.PORTAL_PAGE_PORTLET__PORTAL_PAGE_ID, newPortalPageId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PortalPortlet getPortalPortletId() {
-		return (PortalPortlet)eGet(PortalPackage.Literals.PORTAL_PAGE_PORTLET__PORTAL_PORTLET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPortalPortletId(PortalPortlet newPortalPortletId) {
-		eSet(PortalPackage.Literals.PORTAL_PAGE_PORTLET__PORTAL_PORTLET_ID, newPortalPortletId);
 	}
 
 } //PortalPagePortletImpl

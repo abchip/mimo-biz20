@@ -21,7 +21,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationClass#getAccommodationClassId <em>Accommodation Class Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationClass#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationClass#getParentClassId <em>Parent Class Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationClass#getParentClass <em>Parent Class</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getAccommodationClass()
@@ -56,30 +56,26 @@ public interface AccommodationClass extends EntityIdentifiable, EntityInfo {
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Class Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Class</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Class Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Class Id</em>' reference.
-	 * @see #setParentClassId(AccommodationClass)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getAccommodationClass_ParentClassId()
+	 * @return the value of the '<em>Parent Class</em>' reference.
+	 * @see #setParentClass(AccommodationClass)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getAccommodationClass_ParentClass()
 	 * @model keys="accommodationClassId"
 	 * @generated
 	 */
-	AccommodationClass getParentClassId();
+	AccommodationClass getParentClass();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationClass#getParentClassId <em>Parent Class Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationClass#getParentClass <em>Parent Class</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Class Id</em>' reference.
-	 * @see #getParentClassId()
+	 * @param value the new value of the '<em>Parent Class</em>' reference.
+	 * @see #getParentClass()
 	 * @generated
 	 */
-	void setParentClassId(AccommodationClass value);
+	void setParentClass(AccommodationClass value);
 
 	/**
 	 * Returns the value of the '<em><b>Accommodation Class Id</b></em>' attribute.

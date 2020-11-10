@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.CommunicationEventOrderImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.CommunicationEventOrderImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.CommunicationEventOrderImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.CommunicationEventOrderImpl#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.CommunicationEventOrderImpl#getCommunicationEventId <em>Communication Event Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.CommunicationEventOrderImpl#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.CommunicationEventOrderImpl#getCommunicationEvent <em>Communication Event</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class CommunicationEventOrderImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public CommunicationEvent getCommunicationEventId() {
-		return (CommunicationEvent)eGet(OrderPackage.Literals.COMMUNICATION_EVENT_ORDER__COMMUNICATION_EVENT_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.COMMUNICATION_EVENT_ORDER__ORDER, true);
 	}
 
 	/**
@@ -162,8 +162,28 @@ public class CommunicationEventOrderImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setCommunicationEventId(CommunicationEvent newCommunicationEventId) {
-		eSet(OrderPackage.Literals.COMMUNICATION_EVENT_ORDER__COMMUNICATION_EVENT_ID, newCommunicationEventId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.COMMUNICATION_EVENT_ORDER__ORDER, newOrder);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CommunicationEvent getCommunicationEvent() {
+		return (CommunicationEvent)eGet(OrderPackage.Literals.COMMUNICATION_EVENT_ORDER__COMMUNICATION_EVENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCommunicationEvent(CommunicationEvent newCommunicationEvent) {
+		eSet(OrderPackage.Literals.COMMUNICATION_EVENT_ORDER__COMMUNICATION_EVENT, newCommunicationEvent);
 	}
 
 	/**
@@ -202,26 +222,6 @@ public class CommunicationEventOrderImpl extends EntityIdentifiableImpl implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.COMMUNICATION_EVENT_ORDER__ORDER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.COMMUNICATION_EVENT_ORDER__ORDER_ID, newOrderId);
 	}
 
 } //CommunicationEventOrderImpl

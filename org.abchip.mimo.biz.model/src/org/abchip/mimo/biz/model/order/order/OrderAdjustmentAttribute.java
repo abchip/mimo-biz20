@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentAttribute#getOrderAdjustmentId <em>Order Adjustment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentAttribute#getOrderAdjustment <em>Order Adjustment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentAttribute#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentAttribute#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentAttribute#getAttrValue <em>Attr Value</em>}</li>
@@ -30,6 +30,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface OrderAdjustmentAttribute extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Order Adjustment</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Order Adjustment</em>' reference.
+	 * @see #setOrderAdjustment(OrderAdjustment)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustmentAttribute_OrderAdjustment()
+	 * @model keys="orderAdjustmentId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	OrderAdjustment getOrderAdjustment();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentAttribute#getOrderAdjustment <em>Order Adjustment</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Order Adjustment</em>' reference.
+	 * @see #getOrderAdjustment()
+	 * @generated
+	 */
+	void setOrderAdjustment(OrderAdjustment value);
+
 	/**
 	 * Returns the value of the '<em><b>Attr Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -109,32 +132,5 @@ public interface OrderAdjustmentAttribute extends EntityIdentifiable, EntityInfo
 	 * @generated
 	 */
 	void setAttrValue(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Order Adjustment Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Adjustment Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Adjustment Id</em>' reference.
-	 * @see #setOrderAdjustmentId(OrderAdjustment)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustmentAttribute_OrderAdjustmentId()
-	 * @model keys="orderAdjustmentId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	OrderAdjustment getOrderAdjustmentId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentAttribute#getOrderAdjustmentId <em>Order Adjustment Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Adjustment Id</em>' reference.
-	 * @see #getOrderAdjustmentId()
-	 * @generated
-	 */
-	void setOrderAdjustmentId(OrderAdjustment value);
 
 } // OrderAdjustmentAttribute

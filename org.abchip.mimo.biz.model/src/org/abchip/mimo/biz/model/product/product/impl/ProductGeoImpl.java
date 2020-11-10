@@ -30,10 +30,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGeoImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGeoImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGeoImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGeoImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGeoImpl#getGeoId <em>Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGeoImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGeoImpl#getGeo <em>Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGeoImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGeoImpl#getProductGeoEnumId <em>Product Geo Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGeoImpl#getProductGeoEnum <em>Product Geo Enum</em>}</li>
  * </ul>
  *
  * @generated
@@ -155,6 +155,46 @@ public class ProductGeoImpl extends EntityIdentifiableImpl implements ProductGeo
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(ProductPackage.Literals.PRODUCT_GEO__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(ProductPackage.Literals.PRODUCT_GEO__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Geo getGeo() {
+		return (Geo)eGet(ProductPackage.Literals.PRODUCT_GEO__GEO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGeo(Geo newGeo) {
+		eSet(ProductPackage.Literals.PRODUCT_GEO__GEO, newGeo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(ProductPackage.Literals.PRODUCT_GEO__DESCRIPTION, true);
 	}
@@ -175,8 +215,8 @@ public class ProductGeoImpl extends EntityIdentifiableImpl implements ProductGeo
 	 * @generated
 	 */
 	@Override
-	public Geo getGeoId() {
-		return (Geo)eGet(ProductPackage.Literals.PRODUCT_GEO__GEO_ID, true);
+	public Enumeration getProductGeoEnum() {
+		return (Enumeration)eGet(ProductPackage.Literals.PRODUCT_GEO__PRODUCT_GEO_ENUM, true);
 	}
 
 	/**
@@ -185,28 +225,8 @@ public class ProductGeoImpl extends EntityIdentifiableImpl implements ProductGeo
 	 * @generated
 	 */
 	@Override
-	public void setGeoId(Geo newGeoId) {
-		eSet(ProductPackage.Literals.PRODUCT_GEO__GEO_ID, newGeoId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Enumeration getProductGeoEnumId() {
-		return (Enumeration)eGet(ProductPackage.Literals.PRODUCT_GEO__PRODUCT_GEO_ENUM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductGeoEnumId(Enumeration newProductGeoEnumId) {
-		eSet(ProductPackage.Literals.PRODUCT_GEO__PRODUCT_GEO_ENUM_ID, newProductGeoEnumId);
+	public void setProductGeoEnum(Enumeration newProductGeoEnum) {
+		eSet(ProductPackage.Literals.PRODUCT_GEO__PRODUCT_GEO_ENUM, newProductGeoEnum);
 	}
 
 	/**
@@ -245,26 +265,6 @@ public class ProductGeoImpl extends EntityIdentifiableImpl implements ProductGeo
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(ProductPackage.Literals.PRODUCT_GEO__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(ProductPackage.Literals.PRODUCT_GEO__PRODUCT_ID, newProductId);
 	}
 
 } //ProductGeoImpl

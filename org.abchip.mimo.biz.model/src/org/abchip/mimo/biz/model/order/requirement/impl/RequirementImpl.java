@@ -41,23 +41,23 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getRequirementId <em>Requirement Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getCreatedDate <em>Created Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getDeliverableId <em>Deliverable Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getDeliverable <em>Deliverable</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getEstimatedBudget <em>Estimated Budget</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getFacilityIdTo <em>Facility Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getFixedAsset <em>Fixed Asset</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getReason <em>Reason</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getRequiredByDate <em>Required By Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getRequirementAttributes <em>Requirement Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getRequirementStartDate <em>Requirement Start Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getRequirementStatuss <em>Requirement Statuss</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getRequirementTypeId <em>Requirement Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getRequirementType <em>Requirement Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getUseCase <em>Use Case</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getWorkRequirementFulfillments <em>Work Requirement Fulfillments</em>}</li>
  * </ul>
@@ -221,8 +221,8 @@ public class RequirementImpl extends EntityTypedImpl<RequirementType> implements
 	 * @generated
 	 */
 	@Override
-	public Deliverable getDeliverableId() {
-		return (Deliverable)eGet(RequirementPackage.Literals.REQUIREMENT__DELIVERABLE_ID, true);
+	public Deliverable getDeliverable() {
+		return (Deliverable)eGet(RequirementPackage.Literals.REQUIREMENT__DELIVERABLE, true);
 	}
 
 	/**
@@ -231,8 +231,8 @@ public class RequirementImpl extends EntityTypedImpl<RequirementType> implements
 	 * @generated
 	 */
 	@Override
-	public void setDeliverableId(Deliverable newDeliverableId) {
-		eSet(RequirementPackage.Literals.REQUIREMENT__DELIVERABLE_ID, newDeliverableId);
+	public void setDeliverable(Deliverable newDeliverable) {
+		eSet(RequirementPackage.Literals.REQUIREMENT__DELIVERABLE, newDeliverable);
 	}
 
 	/**
@@ -281,8 +281,8 @@ public class RequirementImpl extends EntityTypedImpl<RequirementType> implements
 	 * @generated
 	 */
 	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(RequirementPackage.Literals.REQUIREMENT__FACILITY_ID, true);
+	public Facility getFacility() {
+		return (Facility)eGet(RequirementPackage.Literals.REQUIREMENT__FACILITY, true);
 	}
 
 	/**
@@ -291,8 +291,8 @@ public class RequirementImpl extends EntityTypedImpl<RequirementType> implements
 	 * @generated
 	 */
 	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(RequirementPackage.Literals.REQUIREMENT__FACILITY_ID, newFacilityId);
+	public void setFacility(Facility newFacility) {
+		eSet(RequirementPackage.Literals.REQUIREMENT__FACILITY, newFacility);
 	}
 
 	/**
@@ -321,8 +321,8 @@ public class RequirementImpl extends EntityTypedImpl<RequirementType> implements
 	 * @generated
 	 */
 	@Override
-	public FixedAsset getFixedAssetId() {
-		return (FixedAsset)eGet(RequirementPackage.Literals.REQUIREMENT__FIXED_ASSET_ID, true);
+	public FixedAsset getFixedAsset() {
+		return (FixedAsset)eGet(RequirementPackage.Literals.REQUIREMENT__FIXED_ASSET, true);
 	}
 
 	/**
@@ -331,8 +331,8 @@ public class RequirementImpl extends EntityTypedImpl<RequirementType> implements
 	 * @generated
 	 */
 	@Override
-	public void setFixedAssetId(FixedAsset newFixedAssetId) {
-		eSet(RequirementPackage.Literals.REQUIREMENT__FIXED_ASSET_ID, newFixedAssetId);
+	public void setFixedAsset(FixedAsset newFixedAsset) {
+		eSet(RequirementPackage.Literals.REQUIREMENT__FIXED_ASSET, newFixedAsset);
 	}
 
 	/**
@@ -381,8 +381,8 @@ public class RequirementImpl extends EntityTypedImpl<RequirementType> implements
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(RequirementPackage.Literals.REQUIREMENT__PRODUCT_ID, true);
+	public Product getProduct() {
+		return (Product)eGet(RequirementPackage.Literals.REQUIREMENT__PRODUCT, true);
 	}
 
 	/**
@@ -391,8 +391,8 @@ public class RequirementImpl extends EntityTypedImpl<RequirementType> implements
 	 * @generated
 	 */
 	@Override
-	public void setProductId(Product newProductId) {
-		eSet(RequirementPackage.Literals.REQUIREMENT__PRODUCT_ID, newProductId);
+	public void setProduct(Product newProduct) {
+		eSet(RequirementPackage.Literals.REQUIREMENT__PRODUCT, newProduct);
 	}
 
 	/**
@@ -523,8 +523,8 @@ public class RequirementImpl extends EntityTypedImpl<RequirementType> implements
 	 * @generated
 	 */
 	@Override
-	public RequirementType getRequirementTypeId() {
-		return (RequirementType)eGet(RequirementPackage.Literals.REQUIREMENT__REQUIREMENT_TYPE_ID, true);
+	public RequirementType getRequirementType() {
+		return (RequirementType)eGet(RequirementPackage.Literals.REQUIREMENT__REQUIREMENT_TYPE, true);
 	}
 
 	/**
@@ -533,8 +533,8 @@ public class RequirementImpl extends EntityTypedImpl<RequirementType> implements
 	 * @generated
 	 */
 	@Override
-	public void setRequirementTypeId(RequirementType newRequirementTypeId) {
-		eSet(RequirementPackage.Literals.REQUIREMENT__REQUIREMENT_TYPE_ID, newRequirementTypeId);
+	public void setRequirementType(RequirementType newRequirementType) {
+		eSet(RequirementPackage.Literals.REQUIREMENT__REQUIREMENT_TYPE, newRequirementType);
 	}
 
 	/**
@@ -543,8 +543,8 @@ public class RequirementImpl extends EntityTypedImpl<RequirementType> implements
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(RequirementPackage.Literals.REQUIREMENT__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(RequirementPackage.Literals.REQUIREMENT__STATUS, true);
 	}
 
 	/**
@@ -553,8 +553,8 @@ public class RequirementImpl extends EntityTypedImpl<RequirementType> implements
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(RequirementPackage.Literals.REQUIREMENT__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(RequirementPackage.Literals.REQUIREMENT__STATUS, newStatus);
 	}
 
 	/**

@@ -19,8 +19,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.common.portal.PortletPortletCategory#getPortalPortletId <em>Portal Portlet Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.portal.PortletPortletCategory#getPortletCategoryId <em>Portlet Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.portal.PortletPortletCategory#getPortalPortlet <em>Portal Portlet</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.portal.PortletPortletCategory#getPortletCategory <em>Portlet Category</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortletPortletCategory()
@@ -29,57 +29,49 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface PortletPortletCategory extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Portal Portlet Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Portal Portlet</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Portal Portlet Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Portal Portlet Id</em>' reference.
-	 * @see #setPortalPortletId(PortalPortlet)
-	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortletPortletCategory_PortalPortletId()
+	 * @return the value of the '<em>Portal Portlet</em>' reference.
+	 * @see #setPortalPortlet(PortalPortlet)
+	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortletPortletCategory_PortalPortlet()
 	 * @model keys="portalPortletId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	PortalPortlet getPortalPortletId();
+	PortalPortlet getPortalPortlet();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.portal.PortletPortletCategory#getPortalPortletId <em>Portal Portlet Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.portal.PortletPortletCategory#getPortalPortlet <em>Portal Portlet</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Portal Portlet Id</em>' reference.
-	 * @see #getPortalPortletId()
+	 * @param value the new value of the '<em>Portal Portlet</em>' reference.
+	 * @see #getPortalPortlet()
 	 * @generated
 	 */
-	void setPortalPortletId(PortalPortlet value);
+	void setPortalPortlet(PortalPortlet value);
 
 	/**
-	 * Returns the value of the '<em><b>Portlet Category Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Portlet Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Portlet Category Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Portlet Category Id</em>' reference.
-	 * @see #setPortletCategoryId(PortletCategory)
-	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortletPortletCategory_PortletCategoryId()
+	 * @return the value of the '<em>Portlet Category</em>' reference.
+	 * @see #setPortletCategory(PortletCategory)
+	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortletPortletCategory_PortletCategory()
 	 * @model keys="portletCategoryId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	PortletCategory getPortletCategoryId();
+	PortletCategory getPortletCategory();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.portal.PortletPortletCategory#getPortletCategoryId <em>Portlet Category Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.portal.PortletPortletCategory#getPortletCategory <em>Portlet Category</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Portlet Category Id</em>' reference.
-	 * @see #getPortletCategoryId()
+	 * @param value the new value of the '<em>Portlet Category</em>' reference.
+	 * @see #getPortletCategory()
 	 * @generated
 	 */
-	void setPortletCategoryId(PortletCategory value);
+	void setPortletCategory(PortletCategory value);
 
 } // PortletPortletCategory

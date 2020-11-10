@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentContentType#getPaymentContentTypeId <em>Payment Content Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentContentType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentContentType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentContentType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentContentType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentContentType()
@@ -83,30 +83,26 @@ public interface PaymentContentType extends EntityType<PaymentContent>, EntityIn
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(PaymentContentType)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentContentType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(PaymentContentType)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentContentType_ParentType()
 	 * @model keys="paymentContentTypeId"
 	 * @generated
 	 */
-	PaymentContentType getParentTypeId();
+	PaymentContentType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentContentType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentContentType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(PaymentContentType value);
+	void setParentType(PaymentContentType value);
 
 	/**
 	 * Returns the value of the '<em><b>Payment Content Type Id</b></em>' attribute.

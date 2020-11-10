@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestResolutionImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestResolutionImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestResolutionImpl#getCustRequestResolutionId <em>Cust Request Resolution Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestResolutionImpl#getCustRequestTypeId <em>Cust Request Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestResolutionImpl#getCustRequestType <em>Cust Request Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestResolutionImpl#getDescription <em>Description</em>}</li>
  * </ul>
  *
@@ -172,8 +172,8 @@ public class CustRequestResolutionImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public CustRequestType getCustRequestTypeId() {
-		return (CustRequestType)eGet(RequestPackage.Literals.CUST_REQUEST_RESOLUTION__CUST_REQUEST_TYPE_ID, true);
+	public CustRequestType getCustRequestType() {
+		return (CustRequestType)eGet(RequestPackage.Literals.CUST_REQUEST_RESOLUTION__CUST_REQUEST_TYPE, true);
 	}
 
 	/**
@@ -182,8 +182,8 @@ public class CustRequestResolutionImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setCustRequestTypeId(CustRequestType newCustRequestTypeId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_RESOLUTION__CUST_REQUEST_TYPE_ID, newCustRequestTypeId);
+	public void setCustRequestType(CustRequestType newCustRequestType) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_RESOLUTION__CUST_REQUEST_TYPE, newCustRequestType);
 	}
 
 	/**

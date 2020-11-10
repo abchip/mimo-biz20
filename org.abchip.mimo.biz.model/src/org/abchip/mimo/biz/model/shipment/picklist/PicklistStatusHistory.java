@@ -22,10 +22,10 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistStatusHistory#getPicklistId <em>Picklist Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistStatusHistory#getPicklist <em>Picklist</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistStatusHistory#getChangeDate <em>Change Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistStatusHistory#getChangeUserLoginId <em>Change User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistStatusHistory#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistStatusHistory#getChangeUserLogin <em>Change User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistStatusHistory#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistStatusHistory#getStatusIdTo <em>Status Id To</em>}</li>
  * </ul>
  *
@@ -34,6 +34,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface PicklistStatusHistory extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Picklist</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Picklist</em>' reference.
+	 * @see #setPicklist(Picklist)
+	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistStatusHistory_Picklist()
+	 * @model keys="picklistId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Picklist getPicklist();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistStatusHistory#getPicklist <em>Picklist</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Picklist</em>' reference.
+	 * @see #getPicklist()
+	 * @generated
+	 */
+	void setPicklist(Picklist value);
+
 	/**
 	 * Returns the value of the '<em><b>Change Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -62,83 +85,48 @@ public interface PicklistStatusHistory extends EntityIdentifiable, EntityInfo {
 	void setChangeDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Change User Login Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Change User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Change User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Change User Login Id</em>' reference.
-	 * @see #setChangeUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistStatusHistory_ChangeUserLoginId()
+	 * @return the value of the '<em>Change User Login</em>' reference.
+	 * @see #setChangeUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistStatusHistory_ChangeUserLogin()
 	 * @model keys="userLoginId"
 	 * @generated
 	 */
-	UserLogin getChangeUserLoginId();
+	UserLogin getChangeUserLogin();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistStatusHistory#getChangeUserLoginId <em>Change User Login Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistStatusHistory#getChangeUserLogin <em>Change User Login</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Change User Login Id</em>' reference.
-	 * @see #getChangeUserLoginId()
+	 * @param value the new value of the '<em>Change User Login</em>' reference.
+	 * @see #getChangeUserLogin()
 	 * @generated
 	 */
-	void setChangeUserLoginId(UserLogin value);
+	void setChangeUserLogin(UserLogin value);
 
 	/**
-	 * Returns the value of the '<em><b>Picklist Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Picklist Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Picklist Id</em>' reference.
-	 * @see #setPicklistId(Picklist)
-	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistStatusHistory_PicklistId()
-	 * @model keys="picklistId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Picklist getPicklistId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistStatusHistory#getPicklistId <em>Picklist Id</em>}' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Picklist Id</em>' reference.
-	 * @see #getPicklistId()
-	 * @generated
-	 */
-	void setPicklistId(Picklist value);
-
-	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistStatusHistory_StatusId()
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistStatusHistory_Status()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getStatusId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistStatusHistory#getStatusId <em>Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistStatusHistory#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setStatusId(StatusItem value);
+	void setStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Status Id To</b></em>' reference.

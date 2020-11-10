@@ -691,7 +691,7 @@ public class RatePackageImpl extends EPackageImpl implements RatePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPartyRate_PartyId() {
+	public EReference getPartyRate_Party() {
 		return (EReference)partyRateEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -701,7 +701,7 @@ public class RatePackageImpl extends EPackageImpl implements RatePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPartyRate_RateTypeId() {
+	public EReference getPartyRate_RateType() {
 		return (EReference)partyRateEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -761,7 +761,7 @@ public class RatePackageImpl extends EPackageImpl implements RatePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getRateAmount_RateTypeId() {
+	public EReference getRateAmount_RateType() {
 		return (EReference)rateAmountEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -771,7 +771,7 @@ public class RatePackageImpl extends EPackageImpl implements RatePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getRateAmount_RateCurrencyUomId() {
+	public EReference getRateAmount_RateCurrencyUom() {
 		return (EReference)rateAmountEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -781,27 +781,7 @@ public class RatePackageImpl extends EPackageImpl implements RatePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getRateAmount_PeriodTypeId() {
-		return (EReference)rateAmountEClass.getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getRateAmount_PartyId() {
-		return (EReference)rateAmountEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getRateAmount_WorkEffortId() {
+	public EReference getRateAmount_WorkEffort() {
 		return (EReference)rateAmountEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -811,8 +791,28 @@ public class RatePackageImpl extends EPackageImpl implements RatePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getRateAmount_EmplPositionTypeId() {
+	public EReference getRateAmount_Party() {
+		return (EReference)rateAmountEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getRateAmount_EmplPositionType() {
 		return (EReference)rateAmountEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getRateAmount_PeriodType() {
+		return (EReference)rateAmountEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -905,20 +905,20 @@ public class RatePackageImpl extends EPackageImpl implements RatePackage {
 
 		// Create classes and their features
 		partyRateEClass = createEClass(PARTY_RATE);
-		createEReference(partyRateEClass, PARTY_RATE__PARTY_ID);
-		createEReference(partyRateEClass, PARTY_RATE__RATE_TYPE_ID);
+		createEReference(partyRateEClass, PARTY_RATE__PARTY);
+		createEReference(partyRateEClass, PARTY_RATE__RATE_TYPE);
 		createEAttribute(partyRateEClass, PARTY_RATE__FROM_DATE);
 		createEAttribute(partyRateEClass, PARTY_RATE__DEFAULT_RATE);
 		createEAttribute(partyRateEClass, PARTY_RATE__PERCENTAGE_USED);
 		createEAttribute(partyRateEClass, PARTY_RATE__THRU_DATE);
 
 		rateAmountEClass = createEClass(RATE_AMOUNT);
-		createEReference(rateAmountEClass, RATE_AMOUNT__RATE_TYPE_ID);
-		createEReference(rateAmountEClass, RATE_AMOUNT__RATE_CURRENCY_UOM_ID);
-		createEReference(rateAmountEClass, RATE_AMOUNT__WORK_EFFORT_ID);
-		createEReference(rateAmountEClass, RATE_AMOUNT__PARTY_ID);
-		createEReference(rateAmountEClass, RATE_AMOUNT__EMPL_POSITION_TYPE_ID);
-		createEReference(rateAmountEClass, RATE_AMOUNT__PERIOD_TYPE_ID);
+		createEReference(rateAmountEClass, RATE_AMOUNT__RATE_TYPE);
+		createEReference(rateAmountEClass, RATE_AMOUNT__RATE_CURRENCY_UOM);
+		createEReference(rateAmountEClass, RATE_AMOUNT__WORK_EFFORT);
+		createEReference(rateAmountEClass, RATE_AMOUNT__PARTY);
+		createEReference(rateAmountEClass, RATE_AMOUNT__EMPL_POSITION_TYPE);
+		createEReference(rateAmountEClass, RATE_AMOUNT__PERIOD_TYPE);
 		createEAttribute(rateAmountEClass, RATE_AMOUNT__FROM_DATE);
 		createEAttribute(rateAmountEClass, RATE_AMOUNT__RATE_AMOUNT);
 		createEAttribute(rateAmountEClass, RATE_AMOUNT__THRU_DATE);
@@ -981,28 +981,28 @@ public class RatePackageImpl extends EPackageImpl implements RatePackage {
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(partyRateEClass, PartyRate.class, "PartyRate", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getPartyRate_PartyId(), thePartyPackage_1.getParty(), null, "partyId", null, 1, 1, PartyRate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyRate_PartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
-		initEReference(getPartyRate_RateTypeId(), this.getRateType(), null, "rateTypeId", null, 1, 1, PartyRate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyRate_RateTypeId().getEKeys().add(this.getRateType_RateTypeId());
+		initEReference(getPartyRate_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, PartyRate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPartyRate_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getPartyRate_RateType(), this.getRateType(), null, "rateType", null, 1, 1, PartyRate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPartyRate_RateType().getEKeys().add(this.getRateType_RateTypeId());
 		initEAttribute(getPartyRate_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, PartyRate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyRate_DefaultRate(), ecorePackage.getEBoolean(), "defaultRate", null, 1, 1, PartyRate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyRate_PercentageUsed(), ecorePackage.getEDouble(), "percentageUsed", null, 0, 1, PartyRate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyRate_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, PartyRate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(rateAmountEClass, RateAmount.class, "RateAmount", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getRateAmount_RateTypeId(), this.getRateType(), null, "rateTypeId", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRateAmount_RateTypeId().getEKeys().add(this.getRateType_RateTypeId());
-		initEReference(getRateAmount_RateCurrencyUomId(), theUomPackage.getUom(), null, "rateCurrencyUomId", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRateAmount_RateCurrencyUomId().getEKeys().add(theUomPackage.getUom_UomId());
-		initEReference(getRateAmount_WorkEffortId(), theWorkeffortPackage.getWorkEffort(), null, "workEffortId", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRateAmount_WorkEffortId().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
-		initEReference(getRateAmount_PartyId(), thePartyPackage_1.getParty(), null, "partyId", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRateAmount_PartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
-		initEReference(getRateAmount_EmplPositionTypeId(), thePositionPackage.getEmplPositionType(), null, "emplPositionTypeId", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRateAmount_EmplPositionTypeId().getEKeys().add(thePositionPackage.getEmplPositionType_EmplPositionTypeId());
-		initEReference(getRateAmount_PeriodTypeId(), thePeriodPackage.getPeriodType(), null, "periodTypeId", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRateAmount_PeriodTypeId().getEKeys().add(thePeriodPackage.getPeriodType_PeriodTypeId());
+		initEReference(getRateAmount_RateType(), this.getRateType(), null, "rateType", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getRateAmount_RateType().getEKeys().add(this.getRateType_RateTypeId());
+		initEReference(getRateAmount_RateCurrencyUom(), theUomPackage.getUom(), null, "rateCurrencyUom", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getRateAmount_RateCurrencyUom().getEKeys().add(theUomPackage.getUom_UomId());
+		initEReference(getRateAmount_WorkEffort(), theWorkeffortPackage.getWorkEffort(), null, "workEffort", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getRateAmount_WorkEffort().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
+		initEReference(getRateAmount_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getRateAmount_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getRateAmount_EmplPositionType(), thePositionPackage.getEmplPositionType(), null, "emplPositionType", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getRateAmount_EmplPositionType().getEKeys().add(thePositionPackage.getEmplPositionType_EmplPositionTypeId());
+		initEReference(getRateAmount_PeriodType(), thePeriodPackage.getPeriodType(), null, "periodType", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getRateAmount_PeriodType().getEKeys().add(thePeriodPackage.getPeriodType_PeriodTypeId());
 		initEAttribute(getRateAmount_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRateAmount_RateAmount(), ecorePackage.getEBigDecimal(), "rateAmount", null, 0, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRateAmount_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1059,13 +1059,13 @@ public class RatePackageImpl extends EPackageImpl implements RatePackage {
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
 		addAnnotation
-		  (getPartyRate_PartyId(),
+		  (getPartyRate_Party(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getPartyRate_RateTypeId(),
+		  (getPartyRate_RateType(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -1083,37 +1083,37 @@ public class RatePackageImpl extends EPackageImpl implements RatePackage {
 			   "help", "The percentage of the actual hours registered in timeEntries, used for the task and invoice actuals, if the field is null 100% will be used"
 		   });
 		addAnnotation
-		  (getRateAmount_RateTypeId(),
+		  (getRateAmount_RateType(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getRateAmount_RateCurrencyUomId(),
+		  (getRateAmount_RateCurrencyUom(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getRateAmount_WorkEffortId(),
+		  (getRateAmount_WorkEffort(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getRateAmount_PartyId(),
+		  (getRateAmount_Party(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getRateAmount_EmplPositionTypeId(),
+		  (getRateAmount_EmplPositionType(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getRateAmount_PeriodTypeId(),
+		  (getRateAmount_PeriodType(),
 		   source,
 		   new String[] {
 			   "key", "true"

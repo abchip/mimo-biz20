@@ -23,13 +23,13 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getSalesForecastId <em>Sales Forecast Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getSalesForecast <em>Sales Forecast</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getSalesForecastDetailId <em>Sales Forecast Detail Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getAmount <em>Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getProductCategoryId <em>Product Category Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getProductCategory <em>Product Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getQuantity <em>Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getQuantityUomId <em>Quantity Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getQuantityUom <em>Quantity Uom</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecastDetail()
@@ -37,6 +37,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface SalesForecastDetail extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Sales Forecast</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Sales Forecast</em>' reference.
+	 * @see #setSalesForecast(SalesForecast)
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecastDetail_SalesForecast()
+	 * @model keys="salesForecastId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	SalesForecast getSalesForecast();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getSalesForecast <em>Sales Forecast</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Sales Forecast</em>' reference.
+	 * @see #getSalesForecast()
+	 * @generated
+	 */
+	void setSalesForecast(SalesForecast value);
+
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -64,56 +87,48 @@ public interface SalesForecastDetail extends EntityIdentifiable, EntityInfo {
 	void setAmount(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Category Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Category Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Category Id</em>' reference.
-	 * @see #setProductCategoryId(ProductCategory)
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecastDetail_ProductCategoryId()
-	 * @model keys="productCategoryId"
-	 * @generated
-	 */
-	ProductCategory getProductCategoryId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getProductCategoryId <em>Product Category Id</em>}' reference.
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Category Id</em>' reference.
-	 * @see #getProductCategoryId()
-	 * @generated
-	 */
-	void setProductCategoryId(ProductCategory value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecastDetail_ProductId()
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecastDetail_Product()
 	 * @model keys="productId"
 	 * @generated
 	 */
-	Product getProductId();
+	Product getProduct();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getProductId <em>Product Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getProduct <em>Product</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
 	 * @generated
 	 */
-	void setProductId(Product value);
+	void setProduct(Product value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Category</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Category</em>' reference.
+	 * @see #setProductCategory(ProductCategory)
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecastDetail_ProductCategory()
+	 * @model keys="productCategoryId"
+	 * @generated
+	 */
+	ProductCategory getProductCategory();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getProductCategory <em>Product Category</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Category</em>' reference.
+	 * @see #getProductCategory()
+	 * @generated
+	 */
+	void setProductCategory(ProductCategory value);
 
 	/**
 	 * Returns the value of the '<em><b>Quantity</b></em>' attribute.
@@ -142,30 +157,26 @@ public interface SalesForecastDetail extends EntityIdentifiable, EntityInfo {
 	void setQuantity(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Quantity Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Quantity Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Quantity Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Quantity Uom Id</em>' reference.
-	 * @see #setQuantityUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecastDetail_QuantityUomId()
+	 * @return the value of the '<em>Quantity Uom</em>' reference.
+	 * @see #setQuantityUom(Uom)
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecastDetail_QuantityUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getQuantityUomId();
+	Uom getQuantityUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getQuantityUomId <em>Quantity Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getQuantityUom <em>Quantity Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Quantity Uom Id</em>' reference.
-	 * @see #getQuantityUomId()
+	 * @param value the new value of the '<em>Quantity Uom</em>' reference.
+	 * @see #getQuantityUom()
 	 * @generated
 	 */
-	void setQuantityUomId(Uom value);
+	void setQuantityUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Sales Forecast Detail Id</b></em>' attribute.
@@ -194,32 +205,5 @@ public interface SalesForecastDetail extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setSalesForecastDetailId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Sales Forecast Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sales Forecast Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Sales Forecast Id</em>' reference.
-	 * @see #setSalesForecastId(SalesForecast)
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecastDetail_SalesForecastId()
-	 * @model keys="salesForecastId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	SalesForecast getSalesForecastId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getSalesForecastId <em>Sales Forecast Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Sales Forecast Id</em>' reference.
-	 * @see #getSalesForecastId()
-	 * @generated
-	 */
-	void setSalesForecastId(SalesForecast value);
 
 } // SalesForecastDetail

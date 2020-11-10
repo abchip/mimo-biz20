@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCategoryApplImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCategoryApplImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCategoryApplImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCategoryApplImpl#getProductCategoryId <em>Product Category Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCategoryApplImpl#getProductFeatureCategoryId <em>Product Feature Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCategoryApplImpl#getProductCategory <em>Product Category</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCategoryApplImpl#getProductFeatureCategory <em>Product Feature Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCategoryApplImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCategoryApplImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -154,6 +154,46 @@ public class ProductFeatureCategoryApplImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
+	public ProductCategory getProductCategory() {
+		return (ProductCategory)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_CATEGORY_APPL__PRODUCT_CATEGORY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductCategory(ProductCategory newProductCategory) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_CATEGORY_APPL__PRODUCT_CATEGORY, newProductCategory);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductFeatureCategory getProductFeatureCategory() {
+		return (ProductFeatureCategory)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_CATEGORY_APPL__PRODUCT_FEATURE_CATEGORY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductFeatureCategory(ProductFeatureCategory newProductFeatureCategory) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_CATEGORY_APPL__PRODUCT_FEATURE_CATEGORY, newProductFeatureCategory);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_CATEGORY_APPL__FROM_DATE, true);
 	}
@@ -224,46 +264,6 @@ public class ProductFeatureCategoryApplImpl extends EntityIdentifiableImpl imple
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductCategory getProductCategoryId() {
-		return (ProductCategory)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_CATEGORY_APPL__PRODUCT_CATEGORY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductCategoryId(ProductCategory newProductCategoryId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_CATEGORY_APPL__PRODUCT_CATEGORY_ID, newProductCategoryId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductFeatureCategory getProductFeatureCategoryId() {
-		return (ProductFeatureCategory)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_CATEGORY_APPL__PRODUCT_FEATURE_CATEGORY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductFeatureCategoryId(ProductFeatureCategory newProductFeatureCategoryId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_CATEGORY_APPL__PRODUCT_FEATURE_CATEGORY_ID, newProductFeatureCategoryId);
 	}
 
 } //ProductFeatureCategoryApplImpl

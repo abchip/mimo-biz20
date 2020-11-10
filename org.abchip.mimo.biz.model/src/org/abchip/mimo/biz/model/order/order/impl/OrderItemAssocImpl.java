@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocImpl#getOrderItemAssocTypeId <em>Order Item Assoc Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocImpl#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocImpl#getToOrderId <em>To Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocImpl#getOrderItemAssocType <em>Order Item Assoc Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocImpl#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocImpl#getToOrder <em>To Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocImpl#getShipGroupSeqId <em>Ship Group Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocImpl#getToOrderItemSeqId <em>To Order Item Seq Id</em>}</li>
@@ -159,8 +159,8 @@ public class OrderItemAssocImpl extends EntityTypedImpl<OrderItemAssocType> impl
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ITEM_ASSOC__ORDER_ID, true);
+	public OrderItemAssocType getOrderItemAssocType() {
+		return (OrderItemAssocType)eGet(OrderPackage.Literals.ORDER_ITEM_ASSOC__ORDER_ITEM_ASSOC_TYPE, true);
 	}
 
 	/**
@@ -169,8 +169,8 @@ public class OrderItemAssocImpl extends EntityTypedImpl<OrderItemAssocType> impl
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_ASSOC__ORDER_ID, newOrderId);
+	public void setOrderItemAssocType(OrderItemAssocType newOrderItemAssocType) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_ASSOC__ORDER_ITEM_ASSOC_TYPE, newOrderItemAssocType);
 	}
 
 	/**
@@ -179,8 +179,8 @@ public class OrderItemAssocImpl extends EntityTypedImpl<OrderItemAssocType> impl
 	 * @generated
 	 */
 	@Override
-	public OrderItemAssocType getOrderItemAssocTypeId() {
-		return (OrderItemAssocType)eGet(OrderPackage.Literals.ORDER_ITEM_ASSOC__ORDER_ITEM_ASSOC_TYPE_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ITEM_ASSOC__ORDER, true);
 	}
 
 	/**
@@ -189,8 +189,28 @@ public class OrderItemAssocImpl extends EntityTypedImpl<OrderItemAssocType> impl
 	 * @generated
 	 */
 	@Override
-	public void setOrderItemAssocTypeId(OrderItemAssocType newOrderItemAssocTypeId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_ASSOC__ORDER_ITEM_ASSOC_TYPE_ID, newOrderItemAssocTypeId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_ASSOC__ORDER, newOrder);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OrderHeader getToOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ITEM_ASSOC__TO_ORDER, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setToOrder(OrderHeader newToOrder) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_ASSOC__TO_ORDER, newToOrder);
 	}
 
 	/**
@@ -289,26 +309,6 @@ public class OrderItemAssocImpl extends EntityTypedImpl<OrderItemAssocType> impl
 	@Override
 	public void setShipGroupSeqId(String newShipGroupSeqId) {
 		eSet(OrderPackage.Literals.ORDER_ITEM_ASSOC__SHIP_GROUP_SEQ_ID, newShipGroupSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderHeader getToOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ITEM_ASSOC__TO_ORDER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setToOrderId(OrderHeader newToOrderId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_ASSOC__TO_ORDER_ID, newToOrderId);
 	}
 
 	/**

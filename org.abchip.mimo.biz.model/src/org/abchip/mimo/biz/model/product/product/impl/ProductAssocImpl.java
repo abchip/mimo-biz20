@@ -34,16 +34,16 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getProductAssocTypeId <em>Product Assoc Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getProductAssocType <em>Product Assoc Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getProductIdTo <em>Product Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getEstimateCalcMethod <em>Estimate Calc Method</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getInstruction <em>Instruction</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getReason <em>Reason</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getRecurrenceInfoId <em>Recurrence Info Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getRoutingWorkEffortId <em>Routing Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getRecurrenceInfo <em>Recurrence Info</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getRoutingWorkEffort <em>Routing Work Effort</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getScrapFactor <em>Scrap Factor</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl#getThruDate <em>Thru Date</em>}</li>
@@ -168,6 +168,46 @@ public class ProductAssocImpl extends EntityTypedImpl<ProductAssocType> implemen
 	 * @generated
 	 */
 	@Override
+	public ProductAssocType getProductAssocType() {
+		return (ProductAssocType)eGet(ProductPackage.Literals.PRODUCT_ASSOC__PRODUCT_ASSOC_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductAssocType(ProductAssocType newProductAssocType) {
+		eSet(ProductPackage.Literals.PRODUCT_ASSOC__PRODUCT_ASSOC_TYPE, newProductAssocType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Product getProduct() {
+		return (Product)eGet(ProductPackage.Literals.PRODUCT_ASSOC__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(ProductPackage.Literals.PRODUCT_ASSOC__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public CustomMethod getEstimateCalcMethod() {
 		return (CustomMethod)eGet(ProductPackage.Literals.PRODUCT_ASSOC__ESTIMATE_CALC_METHOD, true);
 	}
@@ -268,8 +308,8 @@ public class ProductAssocImpl extends EntityTypedImpl<ProductAssocType> implemen
 	 * @generated
 	 */
 	@Override
-	public RecurrenceInfo getRecurrenceInfoId() {
-		return (RecurrenceInfo)eGet(ProductPackage.Literals.PRODUCT_ASSOC__RECURRENCE_INFO_ID, true);
+	public RecurrenceInfo getRecurrenceInfo() {
+		return (RecurrenceInfo)eGet(ProductPackage.Literals.PRODUCT_ASSOC__RECURRENCE_INFO, true);
 	}
 
 	/**
@@ -278,8 +318,8 @@ public class ProductAssocImpl extends EntityTypedImpl<ProductAssocType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setRecurrenceInfoId(RecurrenceInfo newRecurrenceInfoId) {
-		eSet(ProductPackage.Literals.PRODUCT_ASSOC__RECURRENCE_INFO_ID, newRecurrenceInfoId);
+	public void setRecurrenceInfo(RecurrenceInfo newRecurrenceInfo) {
+		eSet(ProductPackage.Literals.PRODUCT_ASSOC__RECURRENCE_INFO, newRecurrenceInfo);
 	}
 
 	/**
@@ -288,8 +328,8 @@ public class ProductAssocImpl extends EntityTypedImpl<ProductAssocType> implemen
 	 * @generated
 	 */
 	@Override
-	public WorkEffort getRoutingWorkEffortId() {
-		return (WorkEffort)eGet(ProductPackage.Literals.PRODUCT_ASSOC__ROUTING_WORK_EFFORT_ID, true);
+	public WorkEffort getRoutingWorkEffort() {
+		return (WorkEffort)eGet(ProductPackage.Literals.PRODUCT_ASSOC__ROUTING_WORK_EFFORT, true);
 	}
 
 	/**
@@ -298,8 +338,8 @@ public class ProductAssocImpl extends EntityTypedImpl<ProductAssocType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setRoutingWorkEffortId(WorkEffort newRoutingWorkEffortId) {
-		eSet(ProductPackage.Literals.PRODUCT_ASSOC__ROUTING_WORK_EFFORT_ID, newRoutingWorkEffortId);
+	public void setRoutingWorkEffort(WorkEffort newRoutingWorkEffort) {
+		eSet(ProductPackage.Literals.PRODUCT_ASSOC__ROUTING_WORK_EFFORT, newRoutingWorkEffort);
 	}
 
 	/**
@@ -398,46 +438,6 @@ public class ProductAssocImpl extends EntityTypedImpl<ProductAssocType> implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductAssocType getProductAssocTypeId() {
-		return (ProductAssocType)eGet(ProductPackage.Literals.PRODUCT_ASSOC__PRODUCT_ASSOC_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductAssocTypeId(ProductAssocType newProductAssocTypeId) {
-		eSet(ProductPackage.Literals.PRODUCT_ASSOC__PRODUCT_ASSOC_TYPE_ID, newProductAssocTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(ProductPackage.Literals.PRODUCT_ASSOC__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(ProductPackage.Literals.PRODUCT_ASSOC__PRODUCT_ID, newProductId);
 	}
 
 	/**

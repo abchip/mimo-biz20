@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressBoundaryImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressBoundaryImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressBoundaryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressBoundaryImpl#getContactMechId <em>Contact Mech Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressBoundaryImpl#getGeoId <em>Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressBoundaryImpl#getContactMech <em>Contact Mech</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressBoundaryImpl#getGeo <em>Geo</em>}</li>
  * </ul>
  *
  * @generated
@@ -151,8 +151,8 @@ public class PostalAddressBoundaryImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public Geo getGeoId() {
-		return (Geo)eGet(ContactPackage.Literals.POSTAL_ADDRESS_BOUNDARY__GEO_ID, true);
+	public PostalAddress getContactMech() {
+		return (PostalAddress)eGet(ContactPackage.Literals.POSTAL_ADDRESS_BOUNDARY__CONTACT_MECH, true);
 	}
 
 	/**
@@ -161,8 +161,28 @@ public class PostalAddressBoundaryImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setGeoId(Geo newGeoId) {
-		eSet(ContactPackage.Literals.POSTAL_ADDRESS_BOUNDARY__GEO_ID, newGeoId);
+	public void setContactMech(PostalAddress newContactMech) {
+		eSet(ContactPackage.Literals.POSTAL_ADDRESS_BOUNDARY__CONTACT_MECH, newContactMech);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Geo getGeo() {
+		return (Geo)eGet(ContactPackage.Literals.POSTAL_ADDRESS_BOUNDARY__GEO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGeo(Geo newGeo) {
+		eSet(ContactPackage.Literals.POSTAL_ADDRESS_BOUNDARY__GEO, newGeo);
 	}
 
 	/**
@@ -201,26 +221,6 @@ public class PostalAddressBoundaryImpl extends EntityIdentifiableImpl implements
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PostalAddress getContactMechId() {
-		return (PostalAddress)eGet(ContactPackage.Literals.POSTAL_ADDRESS_BOUNDARY__CONTACT_MECH_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContactMechId(PostalAddress newContactMechId) {
-		eSet(ContactPackage.Literals.POSTAL_ADDRESS_BOUNDARY__CONTACT_MECH_ID, newContactMechId);
 	}
 
 } //PostalAddressBoundaryImpl

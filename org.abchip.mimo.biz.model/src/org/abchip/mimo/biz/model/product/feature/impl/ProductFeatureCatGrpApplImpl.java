@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCatGrpApplImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCatGrpApplImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCatGrpApplImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCatGrpApplImpl#getProductCategoryId <em>Product Category Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCatGrpApplImpl#getProductFeatureGroupId <em>Product Feature Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCatGrpApplImpl#getProductCategory <em>Product Category</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCatGrpApplImpl#getProductFeatureGroup <em>Product Feature Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCatGrpApplImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCatGrpApplImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -154,6 +154,46 @@ public class ProductFeatureCatGrpApplImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
+	public ProductCategory getProductCategory() {
+		return (ProductCategory)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_CAT_GRP_APPL__PRODUCT_CATEGORY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductCategory(ProductCategory newProductCategory) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_CAT_GRP_APPL__PRODUCT_CATEGORY, newProductCategory);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductFeatureGroup getProductFeatureGroup() {
+		return (ProductFeatureGroup)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_CAT_GRP_APPL__PRODUCT_FEATURE_GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductFeatureGroup(ProductFeatureGroup newProductFeatureGroup) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_CAT_GRP_APPL__PRODUCT_FEATURE_GROUP, newProductFeatureGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_CAT_GRP_APPL__FROM_DATE, true);
 	}
@@ -224,46 +264,6 @@ public class ProductFeatureCatGrpApplImpl extends EntityIdentifiableImpl impleme
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductCategory getProductCategoryId() {
-		return (ProductCategory)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_CAT_GRP_APPL__PRODUCT_CATEGORY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductCategoryId(ProductCategory newProductCategoryId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_CAT_GRP_APPL__PRODUCT_CATEGORY_ID, newProductCategoryId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductFeatureGroup getProductFeatureGroupId() {
-		return (ProductFeatureGroup)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_CAT_GRP_APPL__PRODUCT_FEATURE_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductFeatureGroupId(ProductFeatureGroup newProductFeatureGroupId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_CAT_GRP_APPL__PRODUCT_FEATURE_GROUP_ID, newProductFeatureGroupId);
 	}
 
 } //ProductFeatureCatGrpApplImpl

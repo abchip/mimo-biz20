@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityTypeImpl#getFacilityTypeAttrs <em>Facility Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -214,8 +214,8 @@ public class FacilityTypeImpl extends EntityTypeImpl<Facility> implements Facili
 	 * @generated
 	 */
 	@Override
-	public FacilityType getParentTypeId() {
-		return (FacilityType)eGet(FacilityPackage.Literals.FACILITY_TYPE__PARENT_TYPE_ID, true);
+	public FacilityType getParentType() {
+		return (FacilityType)eGet(FacilityPackage.Literals.FACILITY_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -224,8 +224,8 @@ public class FacilityTypeImpl extends EntityTypeImpl<Facility> implements Facili
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(FacilityType newParentTypeId) {
-		eSet(FacilityPackage.Literals.FACILITY_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(FacilityType newParentType) {
+		eSet(FacilityPackage.Literals.FACILITY_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

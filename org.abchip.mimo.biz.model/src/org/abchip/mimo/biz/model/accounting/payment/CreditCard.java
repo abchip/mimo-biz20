@@ -25,7 +25,7 @@ import org.abchip.mimo.biz.model.party.contact.ContactMech;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.CreditCard#getCompanyNameOnCard <em>Company Name On Card</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.CreditCard#getConsecutiveFailedAuths <em>Consecutive Failed Auths</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.CreditCard#getConsecutiveFailedNsf <em>Consecutive Failed Nsf</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.CreditCard#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.CreditCard#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.CreditCard#getExpireDate <em>Expire Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.CreditCard#getFirstNameOnCard <em>First Name On Card</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.CreditCard#getIssueNumber <em>Issue Number</em>}</li>
@@ -175,31 +175,27 @@ public interface CreditCard extends PaymentMethod {
 	void setConsecutiveFailedNsf(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Contact Mech Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Contact Mech</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #setContactMechId(ContactMech)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getCreditCard_ContactMechId()
+	 * @return the value of the '<em>Contact Mech</em>' reference.
+	 * @see #setContactMech(ContactMech)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getCreditCard_ContactMech()
 	 * @model keys="contactMechId"
 	 *        annotation="mimo-ent-slot help='The Billing PostalAddress'"
 	 * @generated
 	 */
-	ContactMech getContactMechId();
+	ContactMech getContactMech();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.CreditCard#getContactMechId <em>Contact Mech Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.CreditCard#getContactMech <em>Contact Mech</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #getContactMechId()
+	 * @param value the new value of the '<em>Contact Mech</em>' reference.
+	 * @see #getContactMech()
 	 * @generated
 	 */
-	void setContactMechId(ContactMech value);
+	void setContactMech(ContactMech value);
 
 	/**
 	 * Returns the value of the '<em><b>Expire Date</b></em>' attribute.

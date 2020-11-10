@@ -34,11 +34,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.ReorderGuidelineImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.ReorderGuidelineImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.ReorderGuidelineImpl#getReorderGuidelineId <em>Reorder Guideline Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.ReorderGuidelineImpl#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.ReorderGuidelineImpl#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.ReorderGuidelineImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.ReorderGuidelineImpl#getGeoId <em>Geo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.ReorderGuidelineImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.ReorderGuidelineImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.ReorderGuidelineImpl#getGeo <em>Geo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.ReorderGuidelineImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.ReorderGuidelineImpl#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.ReorderGuidelineImpl#getReorderLevel <em>Reorder Level</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.ReorderGuidelineImpl#getReorderQuantity <em>Reorder Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.ReorderGuidelineImpl#getRoleTypeId <em>Role Type Id</em>}</li>
@@ -184,8 +184,8 @@ public class ReorderGuidelineImpl extends EntityIdentifiableImpl implements Reor
 	 * @generated
 	 */
 	@Override
-	public Geo getGeoId() {
-		return (Geo)eGet(SupplierPackage.Literals.REORDER_GUIDELINE__GEO_ID, true);
+	public Geo getGeo() {
+		return (Geo)eGet(SupplierPackage.Literals.REORDER_GUIDELINE__GEO, true);
 	}
 
 	/**
@@ -194,8 +194,8 @@ public class ReorderGuidelineImpl extends EntityIdentifiableImpl implements Reor
 	 * @generated
 	 */
 	@Override
-	public void setGeoId(Geo newGeoId) {
-		eSet(SupplierPackage.Literals.REORDER_GUIDELINE__GEO_ID, newGeoId);
+	public void setGeo(Geo newGeo) {
+		eSet(SupplierPackage.Literals.REORDER_GUIDELINE__GEO, newGeo);
 	}
 
 	/**
@@ -204,8 +204,8 @@ public class ReorderGuidelineImpl extends EntityIdentifiableImpl implements Reor
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(SupplierPackage.Literals.REORDER_GUIDELINE__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(SupplierPackage.Literals.REORDER_GUIDELINE__PARTY, true);
 	}
 
 	/**
@@ -214,8 +214,28 @@ public class ReorderGuidelineImpl extends EntityIdentifiableImpl implements Reor
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(SupplierPackage.Literals.REORDER_GUIDELINE__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(SupplierPackage.Literals.REORDER_GUIDELINE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Product getProduct() {
+		return (Product)eGet(SupplierPackage.Literals.REORDER_GUIDELINE__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(SupplierPackage.Literals.REORDER_GUIDELINE__PRODUCT, newProduct);
 	}
 
 	/**
@@ -236,6 +256,26 @@ public class ReorderGuidelineImpl extends EntityIdentifiableImpl implements Reor
 	@Override
 	public void setReorderGuidelineId(String newReorderGuidelineId) {
 		eSet(SupplierPackage.Literals.REORDER_GUIDELINE__REORDER_GUIDELINE_ID, newReorderGuidelineId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Facility getFacility() {
+		return (Facility)eGet(SupplierPackage.Literals.REORDER_GUIDELINE__FACILITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacility(Facility newFacility) {
+		eSet(SupplierPackage.Literals.REORDER_GUIDELINE__FACILITY, newFacility);
 	}
 
 	/**
@@ -354,46 +394,6 @@ public class ReorderGuidelineImpl extends EntityIdentifiableImpl implements Reor
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(SupplierPackage.Literals.REORDER_GUIDELINE__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(SupplierPackage.Literals.REORDER_GUIDELINE__PRODUCT_ID, newProductId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(SupplierPackage.Literals.REORDER_GUIDELINE__FACILITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(SupplierPackage.Literals.REORDER_GUIDELINE__FACILITY_ID, newFacilityId);
 	}
 
 } //ReorderGuidelineImpl

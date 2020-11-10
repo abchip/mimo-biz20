@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentBoxType#getShipmentBoxTypeId <em>Shipment Box Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentBoxType#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentBoxType#getShipmentBoxType <em>Shipment Box Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentBoxType#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentBoxType#getOversizeCode <em>Oversize Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentBoxType#getPackagingTypeCode <em>Packaging Type Code</em>}</li>
  * </ul>
@@ -31,6 +31,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface CarrierShipmentBoxType extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Shipment Box Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Shipment Box Type</em>' reference.
+	 * @see #setShipmentBoxType(ShipmentBoxType)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getCarrierShipmentBoxType_ShipmentBoxType()
+	 * @model keys="shipmentBoxTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ShipmentBoxType getShipmentBoxType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentBoxType#getShipmentBoxType <em>Shipment Box Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Shipment Box Type</em>' reference.
+	 * @see #getShipmentBoxType()
+	 * @generated
+	 */
+	void setShipmentBoxType(ShipmentBoxType value);
+
+	/**
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getCarrierShipmentBoxType_Party()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentBoxType#getParty <em>Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
+	 * @generated
+	 */
+	void setParty(Party value);
+
 	/**
 	 * Returns the value of the '<em><b>Oversize Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,59 +128,5 @@ public interface CarrierShipmentBoxType extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setPackagingTypeCode(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getCarrierShipmentBoxType_PartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentBoxType#getPartyId <em>Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
-	 * @generated
-	 */
-	void setPartyId(Party value);
-
-	/**
-	 * Returns the value of the '<em><b>Shipment Box Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Box Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shipment Box Type Id</em>' reference.
-	 * @see #setShipmentBoxTypeId(ShipmentBoxType)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getCarrierShipmentBoxType_ShipmentBoxTypeId()
-	 * @model keys="shipmentBoxTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ShipmentBoxType getShipmentBoxTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentBoxType#getShipmentBoxTypeId <em>Shipment Box Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shipment Box Type Id</em>' reference.
-	 * @see #getShipmentBoxTypeId()
-	 * @generated
-	 */
-	void setShipmentBoxTypeId(ShipmentBoxType value);
 
 } // CarrierShipmentBoxType

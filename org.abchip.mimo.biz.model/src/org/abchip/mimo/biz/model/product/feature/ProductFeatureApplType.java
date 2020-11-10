@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureApplType#getProductFeatureApplTypeId <em>Product Feature Appl Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureApplType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureApplType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureApplType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureApplType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureApplType()
@@ -83,30 +83,26 @@ public interface ProductFeatureApplType extends EntityType<ProductFeatureAppl>, 
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(ProductFeatureApplType)
-	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureApplType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(ProductFeatureApplType)
+	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureApplType_ParentType()
 	 * @model keys="productFeatureApplTypeId"
 	 * @generated
 	 */
-	ProductFeatureApplType getParentTypeId();
+	ProductFeatureApplType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureApplType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureApplType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(ProductFeatureApplType value);
+	void setParentType(ProductFeatureApplType value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Feature Appl Type Id</b></em>' attribute.

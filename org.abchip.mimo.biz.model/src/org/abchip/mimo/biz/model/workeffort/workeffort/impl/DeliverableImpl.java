@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.DeliverableImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.DeliverableImpl#getDeliverableId <em>Deliverable Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.DeliverableImpl#getDeliverableName <em>Deliverable Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.DeliverableImpl#getDeliverableTypeId <em>Deliverable Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.DeliverableImpl#getDeliverableType <em>Deliverable Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.DeliverableImpl#getDescription <em>Description</em>}</li>
  * </ul>
  *
@@ -193,8 +193,8 @@ public class DeliverableImpl extends EntityTypedImpl<DeliverableType> implements
 	 * @generated
 	 */
 	@Override
-	public DeliverableType getDeliverableTypeId() {
-		return (DeliverableType)eGet(WorkeffortPackage.Literals.DELIVERABLE__DELIVERABLE_TYPE_ID, true);
+	public DeliverableType getDeliverableType() {
+		return (DeliverableType)eGet(WorkeffortPackage.Literals.DELIVERABLE__DELIVERABLE_TYPE, true);
 	}
 
 	/**
@@ -203,8 +203,8 @@ public class DeliverableImpl extends EntityTypedImpl<DeliverableType> implements
 	 * @generated
 	 */
 	@Override
-	public void setDeliverableTypeId(DeliverableType newDeliverableTypeId) {
-		eSet(WorkeffortPackage.Literals.DELIVERABLE__DELIVERABLE_TYPE_ID, newDeliverableTypeId);
+	public void setDeliverableType(DeliverableType newDeliverableType) {
+		eSet(WorkeffortPackage.Literals.DELIVERABLE__DELIVERABLE_TYPE, newDeliverableType);
 	}
 
 	/**

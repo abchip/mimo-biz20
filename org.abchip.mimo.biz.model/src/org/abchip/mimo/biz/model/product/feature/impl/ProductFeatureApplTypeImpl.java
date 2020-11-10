@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplTypeImpl#getProductFeatureApplTypeId <em>Product Feature Appl Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,8 +200,8 @@ public class ProductFeatureApplTypeImpl extends EntityTypeImpl<ProductFeatureApp
 	 * @generated
 	 */
 	@Override
-	public ProductFeatureApplType getParentTypeId() {
-		return (ProductFeatureApplType)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL_TYPE__PARENT_TYPE_ID, true);
+	public ProductFeatureApplType getParentType() {
+		return (ProductFeatureApplType)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -210,8 +210,8 @@ public class ProductFeatureApplTypeImpl extends EntityTypeImpl<ProductFeatureApp
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(ProductFeatureApplType newParentTypeId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(ProductFeatureApplType newParentType) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

@@ -31,8 +31,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGrpInvResImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGrpInvResImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGrpInvResImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGrpInvResImpl#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGrpInvResImpl#getInventoryItemId <em>Inventory Item Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGrpInvResImpl#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGrpInvResImpl#getInventoryItem <em>Inventory Item</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGrpInvResImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGrpInvResImpl#getShipGroupSeqId <em>Ship Group Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGrpInvResImpl#getCreatedDatetime <em>Created Datetime</em>}</li>
@@ -166,6 +166,46 @@ public class OrderItemShipGrpInvResImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GRP_INV_RES__ORDER, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GRP_INV_RES__ORDER, newOrder);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InventoryItem getInventoryItem() {
+		return (InventoryItem)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GRP_INV_RES__INVENTORY_ITEM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInventoryItem(InventoryItem newInventoryItem) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GRP_INV_RES__INVENTORY_ITEM, newInventoryItem);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getCreatedDatetime() {
 		return (Date)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GRP_INV_RES__CREATED_DATETIME, true);
 	}
@@ -206,26 +246,6 @@ public class OrderItemShipGrpInvResImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public InventoryItem getInventoryItemId() {
-		return (InventoryItem)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GRP_INV_RES__INVENTORY_ITEM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInventoryItemId(InventoryItem newInventoryItemId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GRP_INV_RES__INVENTORY_ITEM_ID, newInventoryItemId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Date getOldPickStartDate() {
 		return (Date)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GRP_INV_RES__OLD_PICK_START_DATE, true);
 	}
@@ -258,26 +278,6 @@ public class OrderItemShipGrpInvResImpl extends EntityIdentifiableImpl implement
 	@Override
 	public void setPriority(String newPriority) {
 		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GRP_INV_RES__PRIORITY, newPriority);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GRP_INV_RES__ORDER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GRP_INV_RES__ORDER_ID, newOrderId);
 	}
 
 	/**

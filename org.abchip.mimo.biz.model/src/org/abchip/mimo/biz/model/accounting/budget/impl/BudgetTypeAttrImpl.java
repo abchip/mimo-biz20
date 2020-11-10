@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetTypeAttrImpl#getBudgetTypeId <em>Budget Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetTypeAttrImpl#getBudgetType <em>Budget Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -151,6 +151,26 @@ public class BudgetTypeAttrImpl extends EntityIdentifiableImpl implements Budget
 	 * @generated
 	 */
 	@Override
+	public BudgetType getBudgetType() {
+		return (BudgetType)eGet(BudgetPackage.Literals.BUDGET_TYPE_ATTR__BUDGET_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBudgetType(BudgetType newBudgetType) {
+		eSet(BudgetPackage.Literals.BUDGET_TYPE_ATTR__BUDGET_TYPE, newBudgetType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(BudgetPackage.Literals.BUDGET_TYPE_ATTR__DESCRIPTION, true);
 	}
@@ -221,26 +241,6 @@ public class BudgetTypeAttrImpl extends EntityIdentifiableImpl implements Budget
 	@Override
 	public void setAttrName(String newAttrName) {
 		eSet(BudgetPackage.Literals.BUDGET_TYPE_ATTR__ATTR_NAME, newAttrName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public BudgetType getBudgetTypeId() {
-		return (BudgetType)eGet(BudgetPackage.Literals.BUDGET_TYPE_ATTR__BUDGET_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBudgetTypeId(BudgetType newBudgetTypeId) {
-		eSet(BudgetPackage.Literals.BUDGET_TYPE_ATTR__BUDGET_TYPE_ID, newBudgetTypeId);
 	}
 
 } //BudgetTypeAttrImpl

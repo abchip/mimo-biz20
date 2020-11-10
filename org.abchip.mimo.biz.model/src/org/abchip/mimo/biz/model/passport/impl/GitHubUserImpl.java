@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.GitHubUserImpl#getGitHubUserId <em>Git Hub User Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.GitHubUserImpl#getAccessToken <em>Access Token</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.GitHubUserImpl#getEnvPrefix <em>Env Prefix</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.passport.impl.GitHubUserImpl#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.passport.impl.GitHubUserImpl#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.GitHubUserImpl#getTokenType <em>Token Type</em>}</li>
  * </ul>
  *
@@ -214,8 +214,8 @@ public class GitHubUserImpl extends EntityIdentifiableImpl implements GitHubUser
 	 * @generated
 	 */
 	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(PassportPackage.Literals.GIT_HUB_USER__PRODUCT_STORE_ID, true);
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(PassportPackage.Literals.GIT_HUB_USER__PRODUCT_STORE, true);
 	}
 
 	/**
@@ -224,8 +224,8 @@ public class GitHubUserImpl extends EntityIdentifiableImpl implements GitHubUser
 	 * @generated
 	 */
 	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(PassportPackage.Literals.GIT_HUB_USER__PRODUCT_STORE_ID, newProductStoreId);
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(PassportPackage.Literals.GIT_HUB_USER__PRODUCT_STORE, newProductStore);
 	}
 
 	/**

@@ -30,10 +30,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventTypeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventTypeImpl#getCommunicationEventTypeId <em>Communication Event Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventTypeImpl#getContactMechTypeId <em>Contact Mech Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventTypeImpl#getContactMechType <em>Contact Mech Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -162,26 +162,6 @@ public class CommunicationEventTypeImpl extends EntityTypeImpl<CommunicationEven
 	 * @generated
 	 */
 	@Override
-	public ContactMechType getContactMechTypeId() {
-		return (ContactMechType)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_TYPE__CONTACT_MECH_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContactMechTypeId(ContactMechType newContactMechTypeId) {
-		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_TYPE__CONTACT_MECH_TYPE_ID, newContactMechTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getDescription() {
 		return (String)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_TYPE__DESCRIPTION, true);
 	}
@@ -222,8 +202,8 @@ public class CommunicationEventTypeImpl extends EntityTypeImpl<CommunicationEven
 	 * @generated
 	 */
 	@Override
-	public CommunicationEventType getParentTypeId() {
-		return (CommunicationEventType)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_TYPE__PARENT_TYPE_ID, true);
+	public CommunicationEventType getParentType() {
+		return (CommunicationEventType)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -232,8 +212,8 @@ public class CommunicationEventTypeImpl extends EntityTypeImpl<CommunicationEven
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(CommunicationEventType newParentTypeId) {
-		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(CommunicationEventType newParentType) {
+		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**
@@ -292,6 +272,26 @@ public class CommunicationEventTypeImpl extends EntityTypeImpl<CommunicationEven
 	@Override
 	public void setCommunicationEventTypeId(String newCommunicationEventTypeId) {
 		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_TYPE__COMMUNICATION_EVENT_TYPE_ID, newCommunicationEventTypeId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContactMechType getContactMechType() {
+		return (ContactMechType)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_TYPE__CONTACT_MECH_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContactMechType(ContactMechType newContactMechType) {
+		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_TYPE__CONTACT_MECH_TYPE, newContactMechType);
 	}
 
 } //CommunicationEventTypeImpl

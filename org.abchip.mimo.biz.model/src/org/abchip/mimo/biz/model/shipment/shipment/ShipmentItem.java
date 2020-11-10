@@ -21,9 +21,9 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItem#getShipmentId <em>Shipment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItem#getShipment <em>Shipment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItem#getShipmentItemSeqId <em>Shipment Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItem#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItem#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItem#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItem#getShipmentContentDescription <em>Shipment Content Description</em>}</li>
  * </ul>
@@ -34,30 +34,27 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface ShipmentItem extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Shipment</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentItem_ProductId()
-	 * @model keys="productId"
+	 * @return the value of the '<em>Shipment</em>' reference.
+	 * @see #setShipment(Shipment)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentItem_Shipment()
+	 * @model keys="shipmentId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Product getProductId();
+	Shipment getShipment();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItem#getProductId <em>Product Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItem#getShipment <em>Shipment</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
+	 * @param value the new value of the '<em>Shipment</em>' reference.
+	 * @see #getShipment()
 	 * @generated
 	 */
-	void setProductId(Product value);
+	void setShipment(Shipment value);
 
 	/**
 	 * Returns the value of the '<em><b>Quantity</b></em>' attribute.
@@ -112,33 +109,6 @@ public interface ShipmentItem extends EntityIdentifiable, EntityInfo {
 	void setShipmentContentDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Shipment Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shipment Id</em>' reference.
-	 * @see #setShipmentId(Shipment)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentItem_ShipmentId()
-	 * @model keys="shipmentId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Shipment getShipmentId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItem#getShipmentId <em>Shipment Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shipment Id</em>' reference.
-	 * @see #getShipmentId()
-	 * @generated
-	 */
-	void setShipmentId(Shipment value);
-
-	/**
 	 * Returns the value of the '<em><b>Shipment Item Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -165,5 +135,27 @@ public interface ShipmentItem extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setShipmentItemSeqId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentItem_Product()
+	 * @model keys="productId"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItem#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
 
 } // ShipmentItem

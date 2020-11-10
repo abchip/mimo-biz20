@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeImpl#isHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeImpl#getOrderTypeAttrs <em>Order Type Attrs</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -214,6 +214,26 @@ public class OrderTypeImpl extends EntityTypeImpl<OrderHeader> implements OrderT
 	 * @generated
 	 */
 	@Override
+	public OrderType getParentType() {
+		return (OrderType)eGet(OrderPackage.Literals.ORDER_TYPE__PARENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParentType(OrderType newParentType) {
+		eSet(OrderPackage.Literals.ORDER_TYPE__PARENT_TYPE, newParentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getOrderTypeId() {
 		return (String)eGet(OrderPackage.Literals.ORDER_TYPE__ORDER_TYPE_ID, true);
 	}
@@ -226,26 +246,6 @@ public class OrderTypeImpl extends EntityTypeImpl<OrderHeader> implements OrderT
 	@Override
 	public void setOrderTypeId(String newOrderTypeId) {
 		eSet(OrderPackage.Literals.ORDER_TYPE__ORDER_TYPE_ID, newOrderTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderType getParentTypeId() {
-		return (OrderType)eGet(OrderPackage.Literals.ORDER_TYPE__PARENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentTypeId(OrderType newParentTypeId) {
-		eSet(OrderPackage.Literals.ORDER_TYPE__PARENT_TYPE_ID, newParentTypeId);
 	}
 
 	/**

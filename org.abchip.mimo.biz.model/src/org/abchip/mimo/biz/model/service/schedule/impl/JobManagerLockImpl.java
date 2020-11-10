@@ -35,7 +35,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobManagerLockImpl#getCreatedDate <em>Created Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobManagerLockImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobManagerLockImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobManagerLockImpl#getReasonEnumId <em>Reason Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobManagerLockImpl#getReasonEnum <em>Reason Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobManagerLockImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -298,8 +298,8 @@ public class JobManagerLockImpl extends EntityIdentifiableImpl implements JobMan
 	 * @generated
 	 */
 	@Override
-	public Enumeration getReasonEnumId() {
-		return (Enumeration)eGet(SchedulePackage.Literals.JOB_MANAGER_LOCK__REASON_ENUM_ID, true);
+	public Enumeration getReasonEnum() {
+		return (Enumeration)eGet(SchedulePackage.Literals.JOB_MANAGER_LOCK__REASON_ENUM, true);
 	}
 
 	/**
@@ -308,8 +308,8 @@ public class JobManagerLockImpl extends EntityIdentifiableImpl implements JobMan
 	 * @generated
 	 */
 	@Override
-	public void setReasonEnumId(Enumeration newReasonEnumId) {
-		eSet(SchedulePackage.Literals.JOB_MANAGER_LOCK__REASON_ENUM_ID, newReasonEnumId);
+	public void setReasonEnum(Enumeration newReasonEnum) {
+		eSet(SchedulePackage.Literals.JOB_MANAGER_LOCK__REASON_ENUM, newReasonEnum);
 	}
 
 	/**

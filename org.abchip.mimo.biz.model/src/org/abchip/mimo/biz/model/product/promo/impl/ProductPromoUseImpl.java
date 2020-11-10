@@ -32,11 +32,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoUseImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoUseImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoUseImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoUseImpl#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoUseImpl#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoUseImpl#getPromoSequenceId <em>Promo Sequence Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoUseImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoUseImpl#getProductPromoCodeId <em>Product Promo Code Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoUseImpl#getProductPromoId <em>Product Promo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoUseImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoUseImpl#getProductPromo <em>Product Promo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoUseImpl#getProductPromoCode <em>Product Promo Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoUseImpl#getQuantityLeftInActions <em>Quantity Left In Actions</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoUseImpl#getTotalDiscountAmount <em>Total Discount Amount</em>}</li>
  * </ul>
@@ -160,8 +160,8 @@ public class ProductPromoUseImpl extends EntityIdentifiableImpl implements Produ
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(PromoPackage.Literals.PRODUCT_PROMO_USE__ORDER_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(PromoPackage.Literals.PRODUCT_PROMO_USE__ORDER, true);
 	}
 
 	/**
@@ -170,28 +170,8 @@ public class ProductPromoUseImpl extends EntityIdentifiableImpl implements Produ
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_USE__ORDER_ID, newOrderId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(PromoPackage.Literals.PRODUCT_PROMO_USE__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_USE__PARTY_ID, newPartyId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_USE__ORDER, newOrder);
 	}
 
 	/**
@@ -212,6 +192,66 @@ public class ProductPromoUseImpl extends EntityIdentifiableImpl implements Produ
 	@Override
 	public void setPromoSequenceId(String newPromoSequenceId) {
 		eSet(PromoPackage.Literals.PRODUCT_PROMO_USE__PROMO_SEQUENCE_ID, newPromoSequenceId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(PromoPackage.Literals.PRODUCT_PROMO_USE__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_USE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductPromo getProductPromo() {
+		return (ProductPromo)eGet(PromoPackage.Literals.PRODUCT_PROMO_USE__PRODUCT_PROMO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPromo(ProductPromo newProductPromo) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_USE__PRODUCT_PROMO, newProductPromo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductPromoCode getProductPromoCode() {
+		return (ProductPromoCode)eGet(PromoPackage.Literals.PRODUCT_PROMO_USE__PRODUCT_PROMO_CODE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPromoCode(ProductPromoCode newProductPromoCode) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_USE__PRODUCT_PROMO_CODE, newProductPromoCode);
 	}
 
 	/**
@@ -290,46 +330,6 @@ public class ProductPromoUseImpl extends EntityIdentifiableImpl implements Produ
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductPromo getProductPromoId() {
-		return (ProductPromo)eGet(PromoPackage.Literals.PRODUCT_PROMO_USE__PRODUCT_PROMO_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPromoId(ProductPromo newProductPromoId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_USE__PRODUCT_PROMO_ID, newProductPromoId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductPromoCode getProductPromoCodeId() {
-		return (ProductPromoCode)eGet(PromoPackage.Literals.PRODUCT_PROMO_USE__PRODUCT_PROMO_CODE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPromoCodeId(ProductPromoCode newProductPromoCodeId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_USE__PRODUCT_PROMO_CODE_ID, newProductPromoCodeId);
 	}
 
 } //ProductPromoUseImpl

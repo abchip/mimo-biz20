@@ -23,8 +23,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getProductCategoryId <em>Product Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getProductCategory <em>Product Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getQuantity <em>Quantity</em>}</li>
@@ -37,6 +37,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductCategoryMember extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryMember_Product()
+	 * @model keys="productId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Category</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Category</em>' reference.
+	 * @see #setProductCategory(ProductCategory)
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryMember_ProductCategory()
+	 * @model keys="productCategoryId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductCategory getProductCategory();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getProductCategory <em>Product Category</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Category</em>' reference.
+	 * @see #getProductCategory()
+	 * @generated
+	 */
+	void setProductCategory(ProductCategory value);
+
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -89,33 +135,6 @@ public interface ProductCategoryMember extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setFromDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryMember_ProductId()
-	 * @model keys="productId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Product getProductId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getProductId <em>Product Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
-	 * @generated
-	 */
-	void setProductId(Product value);
 
 	/**
 	 * Returns the value of the '<em><b>Quantity</b></em>' attribute.
@@ -194,32 +213,5 @@ public interface ProductCategoryMember extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Category Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Category Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Category Id</em>' reference.
-	 * @see #setProductCategoryId(ProductCategory)
-	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryMember_ProductCategoryId()
-	 * @model keys="productCategoryId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductCategory getProductCategoryId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getProductCategoryId <em>Product Category Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Category Id</em>' reference.
-	 * @see #getProductCategoryId()
-	 * @generated
-	 */
-	void setProductCategoryId(ProductCategory value);
 
 } // ProductCategoryMember

@@ -38,12 +38,12 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementImpl#getAgreementAttributes <em>Agreement Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementImpl#getAgreementDate <em>Agreement Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementImpl#getAgreementItems <em>Agreement Items</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementImpl#getAgreementTypeId <em>Agreement Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementImpl#getAgreementType <em>Agreement Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementImpl#getPartyIdFrom <em>Party Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementImpl#getPartyIdTo <em>Party Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementImpl#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementImpl#getRoleTypeIdFrom <em>Role Type Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementImpl#getRoleTypeIdTo <em>Role Type Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementImpl#getTextData <em>Text Data</em>}</li>
@@ -199,6 +199,26 @@ public class AgreementImpl extends EntityTypedImpl<AgreementType> implements Agr
 	 * @generated
 	 */
 	@Override
+	public AgreementType getAgreementType() {
+		return (AgreementType)eGet(AgreementPackage.Literals.AGREEMENT__AGREEMENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAgreementType(AgreementType newAgreementType) {
+		eSet(AgreementPackage.Literals.AGREEMENT__AGREEMENT_TYPE, newAgreementType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(AgreementPackage.Literals.AGREEMENT__DESCRIPTION, true);
 	}
@@ -279,8 +299,8 @@ public class AgreementImpl extends EntityTypedImpl<AgreementType> implements Agr
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(AgreementPackage.Literals.AGREEMENT__PRODUCT_ID, true);
+	public Product getProduct() {
+		return (Product)eGet(AgreementPackage.Literals.AGREEMENT__PRODUCT, true);
 	}
 
 	/**
@@ -289,8 +309,8 @@ public class AgreementImpl extends EntityTypedImpl<AgreementType> implements Agr
 	 * @generated
 	 */
 	@Override
-	public void setProductId(Product newProductId) {
-		eSet(AgreementPackage.Literals.AGREEMENT__PRODUCT_ID, newProductId);
+	public void setProduct(Product newProduct) {
+		eSet(AgreementPackage.Literals.AGREEMENT__PRODUCT, newProduct);
 	}
 
 	/**
@@ -409,26 +429,6 @@ public class AgreementImpl extends EntityTypedImpl<AgreementType> implements Agr
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public AgreementType getAgreementTypeId() {
-		return (AgreementType)eGet(AgreementPackage.Literals.AGREEMENT__AGREEMENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAgreementTypeId(AgreementType newAgreementTypeId) {
-		eSet(AgreementPackage.Literals.AGREEMENT__AGREEMENT_TYPE_ID, newAgreementTypeId);
 	}
 
 	/**

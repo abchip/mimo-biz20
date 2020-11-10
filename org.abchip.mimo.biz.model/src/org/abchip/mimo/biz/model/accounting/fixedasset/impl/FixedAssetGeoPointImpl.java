@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetGeoPointImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetGeoPointImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetGeoPointImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetGeoPointImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetGeoPointImpl#getGeoPointId <em>Geo Point Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetGeoPointImpl#getFixedAsset <em>Fixed Asset</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetGeoPointImpl#getGeoPoint <em>Geo Point</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetGeoPointImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetGeoPointImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -153,6 +153,46 @@ public class FixedAssetGeoPointImpl extends EntityIdentifiableImpl implements Fi
 	 * @generated
 	 */
 	@Override
+	public FixedAsset getFixedAsset() {
+		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET_GEO_POINT__FIXED_ASSET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFixedAsset(FixedAsset newFixedAsset) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_GEO_POINT__FIXED_ASSET, newFixedAsset);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GeoPoint getGeoPoint() {
+		return (GeoPoint)eGet(FixedassetPackage.Literals.FIXED_ASSET_GEO_POINT__GEO_POINT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGeoPoint(GeoPoint newGeoPoint) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_GEO_POINT__GEO_POINT, newGeoPoint);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(FixedassetPackage.Literals.FIXED_ASSET_GEO_POINT__FROM_DATE, true);
 	}
@@ -165,26 +205,6 @@ public class FixedAssetGeoPointImpl extends EntityIdentifiableImpl implements Fi
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(FixedassetPackage.Literals.FIXED_ASSET_GEO_POINT__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GeoPoint getGeoPointId() {
-		return (GeoPoint)eGet(FixedassetPackage.Literals.FIXED_ASSET_GEO_POINT__GEO_POINT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGeoPointId(GeoPoint newGeoPointId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_GEO_POINT__GEO_POINT_ID, newGeoPointId);
 	}
 
 	/**
@@ -243,26 +263,6 @@ public class FixedAssetGeoPointImpl extends EntityIdentifiableImpl implements Fi
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FixedAsset getFixedAssetId() {
-		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET_GEO_POINT__FIXED_ASSET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFixedAssetId(FixedAsset newFixedAssetId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_GEO_POINT__FIXED_ASSET_ID, newFixedAssetId);
 	}
 
 } //FixedAssetGeoPointImpl

@@ -24,12 +24,12 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTerm#getBillingAccountTermId <em>Billing Account Term Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTerm#getBillingAccountId <em>Billing Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTerm#getBillingAccount <em>Billing Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTerm#getBillingAccountTermAttrs <em>Billing Account Term Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTerm#getTermDays <em>Term Days</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTerm#getTermTypeId <em>Term Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTerm#getTermType <em>Term Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTerm#getTermValue <em>Term Value</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTerm#getUomId <em>Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTerm#getUom <em>Uom</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccountTerm()
@@ -64,30 +64,26 @@ public interface BillingAccountTerm extends EntityIdentifiable, EntityInfo {
 	void setTermDays(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Term Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Term Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Term Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Term Type Id</em>' reference.
-	 * @see #setTermTypeId(TermType)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccountTerm_TermTypeId()
+	 * @return the value of the '<em>Term Type</em>' reference.
+	 * @see #setTermType(TermType)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccountTerm_TermType()
 	 * @model keys="termTypeId"
 	 * @generated
 	 */
-	TermType getTermTypeId();
+	TermType getTermType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTerm#getTermTypeId <em>Term Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTerm#getTermType <em>Term Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Term Type Id</em>' reference.
-	 * @see #getTermTypeId()
+	 * @param value the new value of the '<em>Term Type</em>' reference.
+	 * @see #getTermType()
 	 * @generated
 	 */
-	void setTermTypeId(TermType value);
+	void setTermType(TermType value);
 
 	/**
 	 * Returns the value of the '<em><b>Term Value</b></em>' attribute.
@@ -116,56 +112,26 @@ public interface BillingAccountTerm extends EntityIdentifiable, EntityInfo {
 	void setTermValue(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Uom Id</em>' reference.
-	 * @see #setUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccountTerm_UomId()
+	 * @return the value of the '<em>Uom</em>' reference.
+	 * @see #setUom(Uom)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccountTerm_Uom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getUomId();
+	Uom getUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTerm#getUomId <em>Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTerm#getUom <em>Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Uom Id</em>' reference.
-	 * @see #getUomId()
+	 * @param value the new value of the '<em>Uom</em>' reference.
+	 * @see #getUom()
 	 * @generated
 	 */
-	void setUomId(Uom value);
-
-	/**
-	 * Returns the value of the '<em><b>Billing Account Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Billing Account Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Billing Account Id</em>' reference.
-	 * @see #setBillingAccountId(BillingAccount)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccountTerm_BillingAccountId()
-	 * @model keys="billingAccountId"
-	 * @generated
-	 */
-	BillingAccount getBillingAccountId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTerm#getBillingAccountId <em>Billing Account Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Billing Account Id</em>' reference.
-	 * @see #getBillingAccountId()
-	 * @generated
-	 */
-	void setBillingAccountId(BillingAccount value);
+	void setUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Billing Account Term Attrs</b></em>' reference list.
@@ -209,5 +175,27 @@ public interface BillingAccountTerm extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setBillingAccountTermId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Billing Account</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Billing Account</em>' reference.
+	 * @see #setBillingAccount(BillingAccount)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccountTerm_BillingAccount()
+	 * @model keys="billingAccountId"
+	 * @generated
+	 */
+	BillingAccount getBillingAccount();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTerm#getBillingAccount <em>Billing Account</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Billing Account</em>' reference.
+	 * @see #getBillingAccount()
+	 * @generated
+	 */
+	void setBillingAccount(BillingAccount value);
 
 } // BillingAccountTerm

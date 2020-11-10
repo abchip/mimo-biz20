@@ -22,13 +22,13 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getUomId <em>Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getUom <em>Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getUomIdTo <em>Uom Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getConversionFactor <em>Conversion Factor</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getCustomMethodId <em>Custom Method Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getCustomMethod <em>Custom Method</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getDecimalScale <em>Decimal Scale</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getPurposeEnumId <em>Purpose Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getPurposeEnum <em>Purpose Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getRoundingMode <em>Rounding Mode</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -38,6 +38,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface UomConversionDated extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Uom</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Uom</em>' reference.
+	 * @see #setUom(Uom)
+	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUomConversionDated_Uom()
+	 * @model keys="uomId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Uom getUom();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getUom <em>Uom</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Uom</em>' reference.
+	 * @see #getUom()
+	 * @generated
+	 */
+	void setUom(Uom value);
+
 	/**
 	 * Returns the value of the '<em><b>Conversion Factor</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -65,6 +88,28 @@ public interface UomConversionDated extends EntityIdentifiable, EntityInfo {
 	void setConversionFactor(double value);
 
 	/**
+	 * Returns the value of the '<em><b>Custom Method</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Custom Method</em>' reference.
+	 * @see #setCustomMethod(CustomMethod)
+	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUomConversionDated_CustomMethod()
+	 * @model keys="customMethodId"
+	 * @generated
+	 */
+	CustomMethod getCustomMethod();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getCustomMethod <em>Custom Method</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Custom Method</em>' reference.
+	 * @see #getCustomMethod()
+	 * @generated
+	 */
+	void setCustomMethod(CustomMethod value);
+
+	/**
 	 * Returns the value of the '<em><b>Decimal Scale</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -89,6 +134,28 @@ public interface UomConversionDated extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setDecimalScale(long value);
+
+	/**
+	 * Returns the value of the '<em><b>Purpose Enum</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Purpose Enum</em>' reference.
+	 * @see #setPurposeEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUomConversionDated_PurposeEnum()
+	 * @model keys="enumId"
+	 * @generated
+	 */
+	Enumeration getPurposeEnum();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getPurposeEnum <em>Purpose Enum</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Purpose Enum</em>' reference.
+	 * @see #getPurposeEnum()
+	 * @generated
+	 */
+	void setPurposeEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -170,33 +237,6 @@ public interface UomConversionDated extends EntityIdentifiable, EntityInfo {
 	void setThruDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Uom Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uom Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Uom Id</em>' reference.
-	 * @see #setUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUomConversionDated_UomId()
-	 * @model keys="uomId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Uom getUomId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getUomId <em>Uom Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Uom Id</em>' reference.
-	 * @see #getUomId()
-	 * @generated
-	 */
-	void setUomId(Uom value);
-
-	/**
 	 * Returns the value of the '<em><b>Uom Id To</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -222,57 +262,5 @@ public interface UomConversionDated extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setUomIdTo(Uom value);
-
-	/**
-	 * Returns the value of the '<em><b>Custom Method Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Custom Method Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Custom Method Id</em>' reference.
-	 * @see #setCustomMethodId(CustomMethod)
-	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUomConversionDated_CustomMethodId()
-	 * @model keys="customMethodId"
-	 * @generated
-	 */
-	CustomMethod getCustomMethodId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getCustomMethodId <em>Custom Method Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Custom Method Id</em>' reference.
-	 * @see #getCustomMethodId()
-	 * @generated
-	 */
-	void setCustomMethodId(CustomMethod value);
-
-	/**
-	 * Returns the value of the '<em><b>Purpose Enum Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Purpose Enum Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Purpose Enum Id</em>' reference.
-	 * @see #setPurposeEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUomConversionDated_PurposeEnumId()
-	 * @model keys="enumId"
-	 * @generated
-	 */
-	Enumeration getPurposeEnumId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getPurposeEnumId <em>Purpose Enum Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Purpose Enum Id</em>' reference.
-	 * @see #getPurposeEnumId()
-	 * @generated
-	 */
-	void setPurposeEnumId(Enumeration value);
 
 } // UomConversionDated

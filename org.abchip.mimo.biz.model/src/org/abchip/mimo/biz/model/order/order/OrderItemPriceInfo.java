@@ -24,10 +24,10 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getOrderItemPriceInfoId <em>Order Item Price Info Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getModifyAmount <em>Modify Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getProductPriceActionSeqId <em>Product Price Action Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getProductPriceRuleId <em>Product Price Rule Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getProductPriceRule <em>Product Price Rule</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getRateCode <em>Rate Code</em>}</li>
  * </ul>
  *
@@ -89,30 +89,26 @@ public interface OrderItemPriceInfo extends EntityIdentifiable, EntityInfo {
 	void setModifyAmount(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemPriceInfo_OrderId()
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemPriceInfo_Order()
 	 * @model keys="orderId"
 	 * @generated
 	 */
-	OrderHeader getOrderId();
+	OrderHeader getOrder();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getOrderId <em>Order Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getOrder <em>Order</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
 	 * @generated
 	 */
-	void setOrderId(OrderHeader value);
+	void setOrder(OrderHeader value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Item Price Info Id</b></em>' attribute.
@@ -194,30 +190,26 @@ public interface OrderItemPriceInfo extends EntityIdentifiable, EntityInfo {
 	void setProductPriceActionSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Price Rule Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Price Rule</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Price Rule Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Price Rule Id</em>' reference.
-	 * @see #setProductPriceRuleId(ProductPriceRule)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemPriceInfo_ProductPriceRuleId()
+	 * @return the value of the '<em>Product Price Rule</em>' reference.
+	 * @see #setProductPriceRule(ProductPriceRule)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemPriceInfo_ProductPriceRule()
 	 * @model keys="productPriceRuleId"
 	 * @generated
 	 */
-	ProductPriceRule getProductPriceRuleId();
+	ProductPriceRule getProductPriceRule();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getProductPriceRuleId <em>Product Price Rule Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getProductPriceRule <em>Product Price Rule</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Price Rule Id</em>' reference.
-	 * @see #getProductPriceRuleId()
+	 * @param value the new value of the '<em>Product Price Rule</em>' reference.
+	 * @see #getProductPriceRule()
 	 * @generated
 	 */
-	void setProductPriceRuleId(ProductPriceRule value);
+	void setProductPriceRule(ProductPriceRule value);
 
 	/**
 	 * Returns the value of the '<em><b>Rate Code</b></em>' attribute.

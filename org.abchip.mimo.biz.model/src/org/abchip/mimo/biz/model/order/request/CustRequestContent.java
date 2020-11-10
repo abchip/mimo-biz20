@@ -21,8 +21,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestContent#getCustRequestId <em>Cust Request Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestContent#getContentId <em>Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestContent#getCustRequest <em>Cust Request</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestContent#getContent <em>Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestContent#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestContent#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -33,58 +33,50 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface CustRequestContent extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Id</em>' reference.
-	 * @see #setContentId(Content)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestContent_ContentId()
-	 * @model keys="contentId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Content getContentId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestContent#getContentId <em>Content Id</em>}' reference.
+	 * Returns the value of the '<em><b>Cust Request</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Id</em>' reference.
-	 * @see #getContentId()
-	 * @generated
-	 */
-	void setContentId(Content value);
-
-	/**
-	 * Returns the value of the '<em><b>Cust Request Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cust Request Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cust Request Id</em>' reference.
-	 * @see #setCustRequestId(CustRequest)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestContent_CustRequestId()
+	 * @return the value of the '<em>Cust Request</em>' reference.
+	 * @see #setCustRequest(CustRequest)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestContent_CustRequest()
 	 * @model keys="custRequestId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	CustRequest getCustRequestId();
+	CustRequest getCustRequest();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestContent#getCustRequestId <em>Cust Request Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestContent#getCustRequest <em>Cust Request</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cust Request Id</em>' reference.
-	 * @see #getCustRequestId()
+	 * @param value the new value of the '<em>Cust Request</em>' reference.
+	 * @see #getCustRequest()
 	 * @generated
 	 */
-	void setCustRequestId(CustRequest value);
+	void setCustRequest(CustRequest value);
+
+	/**
+	 * Returns the value of the '<em><b>Content</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Content</em>' reference.
+	 * @see #setContent(Content)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestContent_Content()
+	 * @model keys="contentId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Content getContent();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestContent#getContent <em>Content</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Content</em>' reference.
+	 * @see #getContent()
+	 * @generated
+	 */
+	void setContent(Content value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.

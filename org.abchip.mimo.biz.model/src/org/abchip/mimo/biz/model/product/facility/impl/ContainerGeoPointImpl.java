@@ -28,8 +28,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerGeoPointImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerGeoPointImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerGeoPointImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerGeoPointImpl#getContainerId <em>Container Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerGeoPointImpl#getGeoPointId <em>Geo Point Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerGeoPointImpl#getContainer <em>Container</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerGeoPointImpl#getGeoPoint <em>Geo Point</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerGeoPointImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerGeoPointImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -153,6 +153,46 @@ public class ContainerGeoPointImpl extends EntityIdentifiableImpl implements Con
 	 * @generated
 	 */
 	@Override
+	public org.abchip.mimo.biz.model.product.facility.Container getContainer() {
+		return (org.abchip.mimo.biz.model.product.facility.Container)eGet(FacilityPackage.Literals.CONTAINER_GEO_POINT__CONTAINER, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContainer(org.abchip.mimo.biz.model.product.facility.Container newContainer) {
+		eSet(FacilityPackage.Literals.CONTAINER_GEO_POINT__CONTAINER, newContainer);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GeoPoint getGeoPoint() {
+		return (GeoPoint)eGet(FacilityPackage.Literals.CONTAINER_GEO_POINT__GEO_POINT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGeoPoint(GeoPoint newGeoPoint) {
+		eSet(FacilityPackage.Literals.CONTAINER_GEO_POINT__GEO_POINT, newGeoPoint);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(FacilityPackage.Literals.CONTAINER_GEO_POINT__FROM_DATE, true);
 	}
@@ -165,26 +205,6 @@ public class ContainerGeoPointImpl extends EntityIdentifiableImpl implements Con
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(FacilityPackage.Literals.CONTAINER_GEO_POINT__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GeoPoint getGeoPointId() {
-		return (GeoPoint)eGet(FacilityPackage.Literals.CONTAINER_GEO_POINT__GEO_POINT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGeoPointId(GeoPoint newGeoPointId) {
-		eSet(FacilityPackage.Literals.CONTAINER_GEO_POINT__GEO_POINT_ID, newGeoPointId);
 	}
 
 	/**
@@ -243,26 +263,6 @@ public class ContainerGeoPointImpl extends EntityIdentifiableImpl implements Con
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public org.abchip.mimo.biz.model.product.facility.Container getContainerId() {
-		return (org.abchip.mimo.biz.model.product.facility.Container)eGet(FacilityPackage.Literals.CONTAINER_GEO_POINT__CONTAINER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContainerId(org.abchip.mimo.biz.model.product.facility.Container newContainerId) {
-		eSet(FacilityPackage.Literals.CONTAINER_GEO_POINT__CONTAINER_ID, newContainerId);
 	}
 
 } //ContainerGeoPointImpl

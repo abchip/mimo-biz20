@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.CheckAccountImpl#getBankName <em>Bank Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.CheckAccountImpl#getBranchCode <em>Branch Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.CheckAccountImpl#getCompanyNameOnAccount <em>Company Name On Account</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.CheckAccountImpl#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.CheckAccountImpl#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.CheckAccountImpl#getNameOnAccount <em>Name On Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.CheckAccountImpl#getRoutingNumber <em>Routing Number</em>}</li>
  * </ul>
@@ -257,8 +257,8 @@ public class CheckAccountImpl extends EntityIdentifiableImpl implements CheckAcc
 	 * @generated
 	 */
 	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(PaymentPackage.Literals.CHECK_ACCOUNT__CONTACT_MECH_ID, true);
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(PaymentPackage.Literals.CHECK_ACCOUNT__CONTACT_MECH, true);
 	}
 
 	/**
@@ -267,8 +267,8 @@ public class CheckAccountImpl extends EntityIdentifiableImpl implements CheckAcc
 	 * @generated
 	 */
 	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(PaymentPackage.Literals.CHECK_ACCOUNT__CONTACT_MECH_ID, newContactMechId);
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(PaymentPackage.Literals.CHECK_ACCOUNT__CONTACT_MECH, newContactMech);
 	}
 
 	/**

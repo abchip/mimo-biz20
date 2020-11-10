@@ -22,10 +22,10 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreVendorPayment#getProductStoreId <em>Product Store Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreVendorPayment#getVendorPartyId <em>Vendor Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreVendorPayment#getPaymentMethodTypeId <em>Payment Method Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreVendorPayment#getCreditCardEnumId <em>Credit Card Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreVendorPayment#getProductStore <em>Product Store</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreVendorPayment#getVendorParty <em>Vendor Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreVendorPayment#getPaymentMethodType <em>Payment Method Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreVendorPayment#getCreditCardEnum <em>Credit Card Enum</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreVendorPayment()
@@ -34,111 +34,95 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface ProductStoreVendorPayment extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Credit Card Enum Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Credit Card Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Credit Card Enum Id</em>' reference.
-	 * @see #setCreditCardEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreVendorPayment_CreditCardEnumId()
-	 * @model keys="enumId" required="true"
-	 *        annotation="mimo-ent-slot key='true' help='If not applicable for the paymentMethodTypeId, use \"_NA_\"'"
-	 * @generated
-	 */
-	Enumeration getCreditCardEnumId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreVendorPayment#getCreditCardEnumId <em>Credit Card Enum Id</em>}' reference.
+	 * Returns the value of the '<em><b>Product Store</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Credit Card Enum Id</em>' reference.
-	 * @see #getCreditCardEnumId()
-	 * @generated
-	 */
-	void setCreditCardEnumId(Enumeration value);
-
-	/**
-	 * Returns the value of the '<em><b>Payment Method Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Method Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Payment Method Type Id</em>' reference.
-	 * @see #setPaymentMethodTypeId(PaymentMethodType)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreVendorPayment_PaymentMethodTypeId()
-	 * @model keys="paymentMethodTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	PaymentMethodType getPaymentMethodTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreVendorPayment#getPaymentMethodTypeId <em>Payment Method Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Payment Method Type Id</em>' reference.
-	 * @see #getPaymentMethodTypeId()
-	 * @generated
-	 */
-	void setPaymentMethodTypeId(PaymentMethodType value);
-
-	/**
-	 * Returns the value of the '<em><b>Vendor Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Vendor Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Vendor Party Id</em>' reference.
-	 * @see #setVendorPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreVendorPayment_VendorPartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getVendorPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreVendorPayment#getVendorPartyId <em>Vendor Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Vendor Party Id</em>' reference.
-	 * @see #getVendorPartyId()
-	 * @generated
-	 */
-	void setVendorPartyId(Party value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Store Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store Id</em>' reference.
-	 * @see #setProductStoreId(ProductStore)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreVendorPayment_ProductStoreId()
+	 * @return the value of the '<em>Product Store</em>' reference.
+	 * @see #setProductStore(ProductStore)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreVendorPayment_ProductStore()
 	 * @model keys="productStoreId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ProductStore getProductStoreId();
+	ProductStore getProductStore();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreVendorPayment#getProductStoreId <em>Product Store Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreVendorPayment#getProductStore <em>Product Store</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store Id</em>' reference.
-	 * @see #getProductStoreId()
+	 * @param value the new value of the '<em>Product Store</em>' reference.
+	 * @see #getProductStore()
 	 * @generated
 	 */
-	void setProductStoreId(ProductStore value);
+	void setProductStore(ProductStore value);
+
+	/**
+	 * Returns the value of the '<em><b>Vendor Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Vendor Party</em>' reference.
+	 * @see #setVendorParty(Party)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreVendorPayment_VendorParty()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getVendorParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreVendorPayment#getVendorParty <em>Vendor Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Vendor Party</em>' reference.
+	 * @see #getVendorParty()
+	 * @generated
+	 */
+	void setVendorParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Payment Method Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Payment Method Type</em>' reference.
+	 * @see #setPaymentMethodType(PaymentMethodType)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreVendorPayment_PaymentMethodType()
+	 * @model keys="paymentMethodTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	PaymentMethodType getPaymentMethodType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreVendorPayment#getPaymentMethodType <em>Payment Method Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Payment Method Type</em>' reference.
+	 * @see #getPaymentMethodType()
+	 * @generated
+	 */
+	void setPaymentMethodType(PaymentMethodType value);
+
+	/**
+	 * Returns the value of the '<em><b>Credit Card Enum</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Credit Card Enum</em>' reference.
+	 * @see #setCreditCardEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreVendorPayment_CreditCardEnum()
+	 * @model keys="enumId" required="true"
+	 *        annotation="mimo-ent-slot key='true' help='If not applicable for the paymentMethodTypeId, use \"_NA_\"'"
+	 * @generated
+	 */
+	Enumeration getCreditCardEnum();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreVendorPayment#getCreditCardEnum <em>Credit Card Enum</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Credit Card Enum</em>' reference.
+	 * @see #getCreditCardEnum()
+	 * @generated
+	 */
+	void setCreditCardEnum(Enumeration value);
 
 } // ProductStoreVendorPayment

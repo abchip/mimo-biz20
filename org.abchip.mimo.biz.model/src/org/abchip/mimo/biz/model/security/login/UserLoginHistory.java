@@ -21,10 +21,10 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getUserLoginId <em>User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getUserLogin <em>User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getOriginUserLoginId <em>Origin User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getOriginUserLogin <em>Origin User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getPasswordUsed <em>Password Used</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getSuccessfulLogin <em>Successful Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getThruDate <em>Thru Date</em>}</li>
@@ -36,6 +36,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface UserLoginHistory extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>User Login</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>User Login</em>' reference.
+	 * @see #setUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLoginHistory_UserLogin()
+	 * @model keys="userLoginId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	UserLogin getUserLogin();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getUserLogin <em>User Login</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>User Login</em>' reference.
+	 * @see #getUserLogin()
+	 * @generated
+	 */
+	void setUserLogin(UserLogin value);
+
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -64,56 +87,48 @@ public interface UserLoginHistory extends EntityIdentifiable, EntityInfo {
 	void setFromDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Origin User Login Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Origin User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Origin User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Origin User Login Id</em>' reference.
-	 * @see #setOriginUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLoginHistory_OriginUserLoginId()
+	 * @return the value of the '<em>Origin User Login</em>' reference.
+	 * @see #setOriginUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLoginHistory_OriginUserLogin()
 	 * @model keys="userLoginId"
 	 * @generated
 	 */
-	UserLogin getOriginUserLoginId();
+	UserLogin getOriginUserLogin();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getOriginUserLoginId <em>Origin User Login Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getOriginUserLogin <em>Origin User Login</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Origin User Login Id</em>' reference.
-	 * @see #getOriginUserLoginId()
+	 * @param value the new value of the '<em>Origin User Login</em>' reference.
+	 * @see #getOriginUserLogin()
 	 * @generated
 	 */
-	void setOriginUserLoginId(UserLogin value);
+	void setOriginUserLogin(UserLogin value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLoginHistory_PartyId()
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLoginHistory_Party()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getPartyId();
+	Party getParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getParty <em>Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setParty(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Password Used</b></em>' attribute.
@@ -189,33 +204,6 @@ public interface UserLoginHistory extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>User Login Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>User Login Id</em>' reference.
-	 * @see #setUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLoginHistory_UserLoginId()
-	 * @model keys="userLoginId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	UserLogin getUserLoginId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getUserLoginId <em>User Login Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>User Login Id</em>' reference.
-	 * @see #getUserLoginId()
-	 * @generated
-	 */
-	void setUserLoginId(UserLogin value);
 
 	/**
 	 * Returns the value of the '<em><b>Visit Id</b></em>' attribute.

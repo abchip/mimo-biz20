@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.impl.PartyRateImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.impl.PartyRateImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.impl.PartyRateImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.impl.PartyRateImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.impl.PartyRateImpl#getRateTypeId <em>Rate Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.impl.PartyRateImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.impl.PartyRateImpl#getRateType <em>Rate Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.impl.PartyRateImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.impl.PartyRateImpl#isDefaultRate <em>Default Rate</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.impl.PartyRateImpl#getPercentageUsed <em>Percentage Used</em>}</li>
@@ -155,6 +155,46 @@ public class PartyRateImpl extends EntityTypedImpl<RateType> implements PartyRat
 	 * @generated
 	 */
 	@Override
+	public Party getParty() {
+		return (Party)eGet(RatePackage.Literals.PARTY_RATE__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(RatePackage.Literals.PARTY_RATE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RateType getRateType() {
+		return (RateType)eGet(RatePackage.Literals.PARTY_RATE__RATE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRateType(RateType newRateType) {
+		eSet(RatePackage.Literals.PARTY_RATE__RATE_TYPE, newRateType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(RatePackage.Literals.PARTY_RATE__FROM_DATE, true);
 	}
@@ -187,26 +227,6 @@ public class PartyRateImpl extends EntityTypedImpl<RateType> implements PartyRat
 	@Override
 	public void setDefaultRate(boolean newDefaultRate) {
 		eSet(RatePackage.Literals.PARTY_RATE__DEFAULT_RATE, newDefaultRate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(RatePackage.Literals.PARTY_RATE__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(RatePackage.Literals.PARTY_RATE__PARTY_ID, newPartyId);
 	}
 
 	/**
@@ -285,26 +305,6 @@ public class PartyRateImpl extends EntityTypedImpl<RateType> implements PartyRat
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public RateType getRateTypeId() {
-		return (RateType)eGet(RatePackage.Literals.PARTY_RATE__RATE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRateTypeId(RateType newRateTypeId) {
-		eSet(RatePackage.Literals.PARTY_RATE__RATE_TYPE_ID, newRateTypeId);
 	}
 
 } //PartyRateImpl

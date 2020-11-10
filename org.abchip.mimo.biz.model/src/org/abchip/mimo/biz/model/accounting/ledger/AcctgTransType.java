@@ -24,7 +24,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransType#getAcctgTransTypeAttrs <em>Acctg Trans Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransType()
@@ -85,30 +85,26 @@ public interface AcctgTransType extends EntityType<AcctgTrans>, EntityInfo {
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(AcctgTransType)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(AcctgTransType)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransType_ParentType()
 	 * @model keys="acctgTransTypeId"
 	 * @generated
 	 */
-	AcctgTransType getParentTypeId();
+	AcctgTransType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(AcctgTransType value);
+	void setParentType(AcctgTransType value);
 
 	/**
 	 * Returns the value of the '<em><b>Acctg Trans Type Id</b></em>' attribute.

@@ -135,13 +135,13 @@ public interface ShoppinglistPackage extends EPackage {
 	int SHOPPING_LIST__CARRIER_ROLE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Contact Mech Id</b></em>' reference.
+	 * The feature id for the '<em><b>Contact Mech</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_LIST__CONTACT_MECH_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int SHOPPING_LIST__CONTACT_MECH = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom</b></em>' attribute.
@@ -207,58 +207,58 @@ public interface ShoppinglistPackage extends EPackage {
 	int SHOPPING_LIST__LIST_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
-	 * The feature id for the '<em><b>Parent Shopping List Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Shopping List</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_LIST__PARENT_SHOPPING_LIST_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
+	int SHOPPING_LIST__PARENT_SHOPPING_LIST = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_LIST__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
+	int SHOPPING_LIST__PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
-	 * The feature id for the '<em><b>Payment Method Id</b></em>' reference.
+	 * The feature id for the '<em><b>Payment Method</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_LIST__PAYMENT_METHOD_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
+	int SHOPPING_LIST__PAYMENT_METHOD = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
-	 * The feature id for the '<em><b>Product Promo Code Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Promo Code</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_LIST__PRODUCT_PROMO_CODE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
+	int SHOPPING_LIST__PRODUCT_PROMO_CODE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
-	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Store</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_LIST__PRODUCT_STORE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
+	int SHOPPING_LIST__PRODUCT_STORE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
-	 * The feature id for the '<em><b>Recurrence Info Id</b></em>' reference.
+	 * The feature id for the '<em><b>Recurrence Info</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_LIST__RECURRENCE_INFO_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
+	int SHOPPING_LIST__RECURRENCE_INFO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Method Type Id</b></em>' attribute.
@@ -279,13 +279,13 @@ public interface ShoppinglistPackage extends EPackage {
 	int SHOPPING_LIST__SHOPPING_LIST_ITEMS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
-	 * The feature id for the '<em><b>Shopping List Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Shopping List Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_LIST__SHOPPING_LIST_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
+	int SHOPPING_LIST__SHOPPING_LIST_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Shopping List Work Efforts</b></em>' reference list.
@@ -361,13 +361,13 @@ public interface ShoppinglistPackage extends EPackage {
 	int SHOPPING_LIST_ITEM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Shopping List Id</b></em>' reference.
+	 * The feature id for the '<em><b>Shopping List</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_LIST_ITEM__SHOPPING_LIST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SHOPPING_LIST_ITEM__SHOPPING_LIST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Shopping List Item Seq Id</b></em>' attribute.
@@ -397,13 +397,13 @@ public interface ShoppinglistPackage extends EPackage {
 	int SHOPPING_LIST_ITEM__MODIFIED_PRICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_LIST_ITEM__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int SHOPPING_LIST_ITEM__PRODUCT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -506,22 +506,22 @@ public interface ShoppinglistPackage extends EPackage {
 	int SHOPPING_LIST_ITEM_SURVEY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Shopping List Id</b></em>' reference.
+	 * The feature id for the '<em><b>Shopping List</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_LIST_ITEM_SURVEY__SHOPPING_LIST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SHOPPING_LIST_ITEM_SURVEY__SHOPPING_LIST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Survey Response Id</b></em>' reference.
+	 * The feature id for the '<em><b>Survey Response</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_LIST_ITEM_SURVEY__SURVEY_RESPONSE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int SHOPPING_LIST_ITEM_SURVEY__SURVEY_RESPONSE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Shopping List Item Seq Id</b></em>' attribute.
@@ -670,22 +670,22 @@ public interface ShoppinglistPackage extends EPackage {
 	int SHOPPING_LIST_WORK_EFFORT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Shopping List Id</b></em>' reference.
+	 * The feature id for the '<em><b>Shopping List</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_LIST_WORK_EFFORT__SHOPPING_LIST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SHOPPING_LIST_WORK_EFFORT__SHOPPING_LIST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_LIST_WORK_EFFORT__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int SHOPPING_LIST_WORK_EFFORT__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Shopping List Work Effort</em>' class.
@@ -741,15 +741,15 @@ public interface ShoppinglistPackage extends EPackage {
 	EAttribute getShoppingList_CarrierRoleTypeId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getContactMechId <em>Contact Mech Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getContactMech <em>Contact Mech</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Contact Mech Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getContactMechId()
+	 * @return the meta object for the reference '<em>Contact Mech</em>'.
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getContactMech()
 	 * @see #getShoppingList()
 	 * @generated
 	 */
-	EReference getShoppingList_ContactMechId();
+	EReference getShoppingList_ContactMech();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getCurrencyUom <em>Currency Uom</em>}'.
@@ -829,70 +829,70 @@ public interface ShoppinglistPackage extends EPackage {
 	EAttribute getShoppingList_ListName();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getParentShoppingListId <em>Parent Shopping List Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getParentShoppingList <em>Parent Shopping List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Shopping List Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getParentShoppingListId()
+	 * @return the meta object for the reference '<em>Parent Shopping List</em>'.
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getParentShoppingList()
 	 * @see #getShoppingList()
 	 * @generated
 	 */
-	EReference getShoppingList_ParentShoppingListId();
+	EReference getShoppingList_ParentShoppingList();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getParty()
 	 * @see #getShoppingList()
 	 * @generated
 	 */
-	EReference getShoppingList_PartyId();
+	EReference getShoppingList_Party();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getPaymentMethodId <em>Payment Method Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getPaymentMethod <em>Payment Method</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Payment Method Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getPaymentMethodId()
+	 * @return the meta object for the reference '<em>Payment Method</em>'.
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getPaymentMethod()
 	 * @see #getShoppingList()
 	 * @generated
 	 */
-	EReference getShoppingList_PaymentMethodId();
+	EReference getShoppingList_PaymentMethod();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getProductPromoCodeId <em>Product Promo Code Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getProductPromoCode <em>Product Promo Code</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Promo Code Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getProductPromoCodeId()
+	 * @return the meta object for the reference '<em>Product Promo Code</em>'.
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getProductPromoCode()
 	 * @see #getShoppingList()
 	 * @generated
 	 */
-	EReference getShoppingList_ProductPromoCodeId();
+	EReference getShoppingList_ProductPromoCode();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getProductStoreId <em>Product Store Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getProductStore <em>Product Store</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Store Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getProductStoreId()
+	 * @return the meta object for the reference '<em>Product Store</em>'.
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getProductStore()
 	 * @see #getShoppingList()
 	 * @generated
 	 */
-	EReference getShoppingList_ProductStoreId();
+	EReference getShoppingList_ProductStore();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getRecurrenceInfoId <em>Recurrence Info Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getRecurrenceInfo <em>Recurrence Info</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Recurrence Info Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getRecurrenceInfoId()
+	 * @return the meta object for the reference '<em>Recurrence Info</em>'.
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getRecurrenceInfo()
 	 * @see #getShoppingList()
 	 * @generated
 	 */
-	EReference getShoppingList_RecurrenceInfoId();
+	EReference getShoppingList_RecurrenceInfo();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}'.
@@ -917,15 +917,15 @@ public interface ShoppinglistPackage extends EPackage {
 	EReference getShoppingList_ShoppingListItems();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getShoppingListTypeId <em>Shopping List Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getShoppingListType <em>Shopping List Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Shopping List Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getShoppingListTypeId()
+	 * @return the meta object for the reference '<em>Shopping List Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getShoppingListType()
 	 * @see #getShoppingList()
 	 * @generated
 	 */
-	EReference getShoppingList_ShoppingListTypeId();
+	EReference getShoppingList_ShoppingListType();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getShoppingListWorkEfforts <em>Shopping List Work Efforts</em>}'.
@@ -960,15 +960,15 @@ public interface ShoppinglistPackage extends EPackage {
 	EClass getShoppingListItem();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getShoppingListId <em>Shopping List Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getShoppingList <em>Shopping List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Shopping List Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getShoppingListId()
+	 * @return the meta object for the reference '<em>Shopping List</em>'.
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getShoppingList()
 	 * @see #getShoppingListItem()
 	 * @generated
 	 */
-	EReference getShoppingListItem_ShoppingListId();
+	EReference getShoppingListItem_ShoppingList();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getShoppingListItemSeqId <em>Shopping List Item Seq Id</em>}'.
@@ -1004,15 +1004,15 @@ public interface ShoppinglistPackage extends EPackage {
 	EAttribute getShoppingListItem_ModifiedPrice();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getProductId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getProduct()
 	 * @see #getShoppingListItem()
 	 * @generated
 	 */
-	EReference getShoppingListItem_ProductId();
+	EReference getShoppingListItem_Product();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getQuantity <em>Quantity</em>}'.
@@ -1080,15 +1080,26 @@ public interface ShoppinglistPackage extends EPackage {
 	EClass getShoppingListItemSurvey();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItemSurvey#getShoppingListId <em>Shopping List Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItemSurvey#getShoppingList <em>Shopping List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Shopping List Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItemSurvey#getShoppingListId()
+	 * @return the meta object for the reference '<em>Shopping List</em>'.
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItemSurvey#getShoppingList()
 	 * @see #getShoppingListItemSurvey()
 	 * @generated
 	 */
-	EReference getShoppingListItemSurvey_ShoppingListId();
+	EReference getShoppingListItemSurvey_ShoppingList();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItemSurvey#getSurveyResponse <em>Survey Response</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Survey Response</em>'.
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItemSurvey#getSurveyResponse()
+	 * @see #getShoppingListItemSurvey()
+	 * @generated
+	 */
+	EReference getShoppingListItemSurvey_SurveyResponse();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItemSurvey#getShoppingListItemSeqId <em>Shopping List Item Seq Id</em>}'.
@@ -1100,17 +1111,6 @@ public interface ShoppinglistPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getShoppingListItemSurvey_ShoppingListItemSeqId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItemSurvey#getSurveyResponseId <em>Survey Response Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Survey Response Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItemSurvey#getSurveyResponseId()
-	 * @see #getShoppingListItemSurvey()
-	 * @generated
-	 */
-	EReference getShoppingListItemSurvey_SurveyResponseId();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListType <em>Shopping List Type</em>}'.
@@ -1155,26 +1155,26 @@ public interface ShoppinglistPackage extends EPackage {
 	EClass getShoppingListWorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListWorkEffort#getShoppingListId <em>Shopping List Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListWorkEffort#getShoppingList <em>Shopping List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Shopping List Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListWorkEffort#getShoppingListId()
+	 * @return the meta object for the reference '<em>Shopping List</em>'.
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListWorkEffort#getShoppingList()
 	 * @see #getShoppingListWorkEffort()
 	 * @generated
 	 */
-	EReference getShoppingListWorkEffort_ShoppingListId();
+	EReference getShoppingListWorkEffort_ShoppingList();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListWorkEffort#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListWorkEffort#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListWorkEffort#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListWorkEffort#getWorkEffort()
 	 * @see #getShoppingListWorkEffort()
 	 * @generated
 	 */
-	EReference getShoppingListWorkEffort_WorkEffortId();
+	EReference getShoppingListWorkEffort_WorkEffort();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -1233,12 +1233,12 @@ public interface ShoppinglistPackage extends EPackage {
 		EAttribute SHOPPING_LIST__CARRIER_ROLE_TYPE_ID = eINSTANCE.getShoppingList_CarrierRoleTypeId();
 
 		/**
-		 * The meta object literal for the '<em><b>Contact Mech Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Contact Mech</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHOPPING_LIST__CONTACT_MECH_ID = eINSTANCE.getShoppingList_ContactMechId();
+		EReference SHOPPING_LIST__CONTACT_MECH = eINSTANCE.getShoppingList_ContactMech();
 
 		/**
 		 * The meta object literal for the '<em><b>Currency Uom</b></em>' attribute feature.
@@ -1297,52 +1297,52 @@ public interface ShoppinglistPackage extends EPackage {
 		EAttribute SHOPPING_LIST__LIST_NAME = eINSTANCE.getShoppingList_ListName();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Shopping List Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Shopping List</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHOPPING_LIST__PARENT_SHOPPING_LIST_ID = eINSTANCE.getShoppingList_ParentShoppingListId();
+		EReference SHOPPING_LIST__PARENT_SHOPPING_LIST = eINSTANCE.getShoppingList_ParentShoppingList();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHOPPING_LIST__PARTY_ID = eINSTANCE.getShoppingList_PartyId();
+		EReference SHOPPING_LIST__PARTY = eINSTANCE.getShoppingList_Party();
 
 		/**
-		 * The meta object literal for the '<em><b>Payment Method Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Payment Method</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHOPPING_LIST__PAYMENT_METHOD_ID = eINSTANCE.getShoppingList_PaymentMethodId();
+		EReference SHOPPING_LIST__PAYMENT_METHOD = eINSTANCE.getShoppingList_PaymentMethod();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Promo Code Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Promo Code</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHOPPING_LIST__PRODUCT_PROMO_CODE_ID = eINSTANCE.getShoppingList_ProductPromoCodeId();
+		EReference SHOPPING_LIST__PRODUCT_PROMO_CODE = eINSTANCE.getShoppingList_ProductPromoCode();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Store Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Store</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHOPPING_LIST__PRODUCT_STORE_ID = eINSTANCE.getShoppingList_ProductStoreId();
+		EReference SHOPPING_LIST__PRODUCT_STORE = eINSTANCE.getShoppingList_ProductStore();
 
 		/**
-		 * The meta object literal for the '<em><b>Recurrence Info Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Recurrence Info</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHOPPING_LIST__RECURRENCE_INFO_ID = eINSTANCE.getShoppingList_RecurrenceInfoId();
+		EReference SHOPPING_LIST__RECURRENCE_INFO = eINSTANCE.getShoppingList_RecurrenceInfo();
 
 		/**
 		 * The meta object literal for the '<em><b>Shipment Method Type Id</b></em>' attribute feature.
@@ -1361,12 +1361,12 @@ public interface ShoppinglistPackage extends EPackage {
 		EReference SHOPPING_LIST__SHOPPING_LIST_ITEMS = eINSTANCE.getShoppingList_ShoppingListItems();
 
 		/**
-		 * The meta object literal for the '<em><b>Shopping List Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Shopping List Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHOPPING_LIST__SHOPPING_LIST_TYPE_ID = eINSTANCE.getShoppingList_ShoppingListTypeId();
+		EReference SHOPPING_LIST__SHOPPING_LIST_TYPE = eINSTANCE.getShoppingList_ShoppingListType();
 
 		/**
 		 * The meta object literal for the '<em><b>Shopping List Work Efforts</b></em>' reference list feature.
@@ -1395,12 +1395,12 @@ public interface ShoppinglistPackage extends EPackage {
 		EClass SHOPPING_LIST_ITEM = eINSTANCE.getShoppingListItem();
 
 		/**
-		 * The meta object literal for the '<em><b>Shopping List Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Shopping List</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHOPPING_LIST_ITEM__SHOPPING_LIST_ID = eINSTANCE.getShoppingListItem_ShoppingListId();
+		EReference SHOPPING_LIST_ITEM__SHOPPING_LIST = eINSTANCE.getShoppingListItem_ShoppingList();
 
 		/**
 		 * The meta object literal for the '<em><b>Shopping List Item Seq Id</b></em>' attribute feature.
@@ -1427,12 +1427,12 @@ public interface ShoppinglistPackage extends EPackage {
 		EAttribute SHOPPING_LIST_ITEM__MODIFIED_PRICE = eINSTANCE.getShoppingListItem_ModifiedPrice();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHOPPING_LIST_ITEM__PRODUCT_ID = eINSTANCE.getShoppingListItem_ProductId();
+		EReference SHOPPING_LIST_ITEM__PRODUCT = eINSTANCE.getShoppingListItem_Product();
 
 		/**
 		 * The meta object literal for the '<em><b>Quantity</b></em>' attribute feature.
@@ -1485,12 +1485,20 @@ public interface ShoppinglistPackage extends EPackage {
 		EClass SHOPPING_LIST_ITEM_SURVEY = eINSTANCE.getShoppingListItemSurvey();
 
 		/**
-		 * The meta object literal for the '<em><b>Shopping List Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Shopping List</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHOPPING_LIST_ITEM_SURVEY__SHOPPING_LIST_ID = eINSTANCE.getShoppingListItemSurvey_ShoppingListId();
+		EReference SHOPPING_LIST_ITEM_SURVEY__SHOPPING_LIST = eINSTANCE.getShoppingListItemSurvey_ShoppingList();
+
+		/**
+		 * The meta object literal for the '<em><b>Survey Response</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SHOPPING_LIST_ITEM_SURVEY__SURVEY_RESPONSE = eINSTANCE.getShoppingListItemSurvey_SurveyResponse();
 
 		/**
 		 * The meta object literal for the '<em><b>Shopping List Item Seq Id</b></em>' attribute feature.
@@ -1499,14 +1507,6 @@ public interface ShoppinglistPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute SHOPPING_LIST_ITEM_SURVEY__SHOPPING_LIST_ITEM_SEQ_ID = eINSTANCE.getShoppingListItemSurvey_ShoppingListItemSeqId();
-
-		/**
-		 * The meta object literal for the '<em><b>Survey Response Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SHOPPING_LIST_ITEM_SURVEY__SURVEY_RESPONSE_ID = eINSTANCE.getShoppingListItemSurvey_SurveyResponseId();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListTypeImpl <em>Shopping List Type</em>}' class.
@@ -1545,20 +1545,20 @@ public interface ShoppinglistPackage extends EPackage {
 		EClass SHOPPING_LIST_WORK_EFFORT = eINSTANCE.getShoppingListWorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>Shopping List Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Shopping List</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHOPPING_LIST_WORK_EFFORT__SHOPPING_LIST_ID = eINSTANCE.getShoppingListWorkEffort_ShoppingListId();
+		EReference SHOPPING_LIST_WORK_EFFORT__SHOPPING_LIST = eINSTANCE.getShoppingListWorkEffort_ShoppingList();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHOPPING_LIST_WORK_EFFORT__WORK_EFFORT_ID = eINSTANCE.getShoppingListWorkEffort_WorkEffortId();
+		EReference SHOPPING_LIST_WORK_EFFORT__WORK_EFFORT = eINSTANCE.getShoppingListWorkEffort_WorkEffort();
 
 	}
 

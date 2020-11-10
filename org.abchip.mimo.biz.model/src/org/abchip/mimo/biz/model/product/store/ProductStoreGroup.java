@@ -23,9 +23,9 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getProductStoreGroupId <em>Product Store Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getCurrentProductStoreGroupRollups <em>Current Product Store Group Rollups</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getPrimaryParentGroupId <em>Primary Parent Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getPrimaryParentGroup <em>Primary Parent Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getProductStoreGroupName <em>Product Store Group Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getProductStoreGroupTypeId <em>Product Store Group Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getProductStoreGroupType <em>Product Store Group Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreGroup()
@@ -60,6 +60,28 @@ public interface ProductStoreGroup extends EntityTyped<ProductStoreGroupType>, E
 	void setDescription(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Primary Parent Group</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Primary Parent Group</em>' reference.
+	 * @see #setPrimaryParentGroup(ProductStoreGroup)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreGroup_PrimaryParentGroup()
+	 * @model keys="productStoreGroupId"
+	 * @generated
+	 */
+	ProductStoreGroup getPrimaryParentGroup();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getPrimaryParentGroup <em>Primary Parent Group</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Primary Parent Group</em>' reference.
+	 * @see #getPrimaryParentGroup()
+	 * @generated
+	 */
+	void setPrimaryParentGroup(ProductStoreGroup value);
+
+	/**
 	 * Returns the value of the '<em><b>Product Store Group Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -86,56 +108,26 @@ public interface ProductStoreGroup extends EntityTyped<ProductStoreGroupType>, E
 	void setProductStoreGroupName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Store Group Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Store Group Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Group Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store Group Type Id</em>' reference.
-	 * @see #setProductStoreGroupTypeId(ProductStoreGroupType)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreGroup_ProductStoreGroupTypeId()
+	 * @return the value of the '<em>Product Store Group Type</em>' reference.
+	 * @see #setProductStoreGroupType(ProductStoreGroupType)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreGroup_ProductStoreGroupType()
 	 * @model keys="productStoreGroupTypeId"
 	 * @generated
 	 */
-	ProductStoreGroupType getProductStoreGroupTypeId();
+	ProductStoreGroupType getProductStoreGroupType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getProductStoreGroupTypeId <em>Product Store Group Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getProductStoreGroupType <em>Product Store Group Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store Group Type Id</em>' reference.
-	 * @see #getProductStoreGroupTypeId()
+	 * @param value the new value of the '<em>Product Store Group Type</em>' reference.
+	 * @see #getProductStoreGroupType()
 	 * @generated
 	 */
-	void setProductStoreGroupTypeId(ProductStoreGroupType value);
-
-	/**
-	 * Returns the value of the '<em><b>Primary Parent Group Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Primary Parent Group Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Primary Parent Group Id</em>' reference.
-	 * @see #setPrimaryParentGroupId(ProductStoreGroup)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreGroup_PrimaryParentGroupId()
-	 * @model keys="productStoreGroupId"
-	 * @generated
-	 */
-	ProductStoreGroup getPrimaryParentGroupId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getPrimaryParentGroupId <em>Primary Parent Group Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Primary Parent Group Id</em>' reference.
-	 * @see #getPrimaryParentGroupId()
-	 * @generated
-	 */
-	void setPrimaryParentGroupId(ProductStoreGroup value);
+	void setProductStoreGroupType(ProductStoreGroupType value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Store Group Id</b></em>' attribute.

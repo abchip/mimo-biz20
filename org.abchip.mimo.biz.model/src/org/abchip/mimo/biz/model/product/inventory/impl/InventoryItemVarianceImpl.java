@@ -31,12 +31,12 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemVarianceImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemVarianceImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemVarianceImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemVarianceImpl#getPhysicalInventoryId <em>Physical Inventory Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemVarianceImpl#getInventoryItemId <em>Inventory Item Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemVarianceImpl#getPhysicalInventory <em>Physical Inventory</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemVarianceImpl#getInventoryItem <em>Inventory Item</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemVarianceImpl#getAvailableToPromiseVar <em>Available To Promise Var</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemVarianceImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemVarianceImpl#getQuantityOnHandVar <em>Quantity On Hand Var</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemVarianceImpl#getVarianceReasonId <em>Variance Reason Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemVarianceImpl#getVarianceReason <em>Variance Reason</em>}</li>
  * </ul>
  *
  * @generated
@@ -158,6 +158,46 @@ public class InventoryItemVarianceImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
+	public PhysicalInventory getPhysicalInventory() {
+		return (PhysicalInventory)eGet(InventoryPackage.Literals.INVENTORY_ITEM_VARIANCE__PHYSICAL_INVENTORY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPhysicalInventory(PhysicalInventory newPhysicalInventory) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM_VARIANCE__PHYSICAL_INVENTORY, newPhysicalInventory);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InventoryItem getInventoryItem() {
+		return (InventoryItem)eGet(InventoryPackage.Literals.INVENTORY_ITEM_VARIANCE__INVENTORY_ITEM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInventoryItem(InventoryItem newInventoryItem) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM_VARIANCE__INVENTORY_ITEM, newInventoryItem);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAvailableToPromiseVar() {
 		return (BigDecimal)eGet(InventoryPackage.Literals.INVENTORY_ITEM_VARIANCE__AVAILABLE_TO_PROMISE_VAR, true);
 	}
@@ -218,8 +258,8 @@ public class InventoryItemVarianceImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public PhysicalInventory getPhysicalInventoryId() {
-		return (PhysicalInventory)eGet(InventoryPackage.Literals.INVENTORY_ITEM_VARIANCE__PHYSICAL_INVENTORY_ID, true);
+	public VarianceReason getVarianceReason() {
+		return (VarianceReason)eGet(InventoryPackage.Literals.INVENTORY_ITEM_VARIANCE__VARIANCE_REASON, true);
 	}
 
 	/**
@@ -228,28 +268,8 @@ public class InventoryItemVarianceImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setPhysicalInventoryId(PhysicalInventory newPhysicalInventoryId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM_VARIANCE__PHYSICAL_INVENTORY_ID, newPhysicalInventoryId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public VarianceReason getVarianceReasonId() {
-		return (VarianceReason)eGet(InventoryPackage.Literals.INVENTORY_ITEM_VARIANCE__VARIANCE_REASON_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setVarianceReasonId(VarianceReason newVarianceReasonId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM_VARIANCE__VARIANCE_REASON_ID, newVarianceReasonId);
+	public void setVarianceReason(VarianceReason newVarianceReason) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM_VARIANCE__VARIANCE_REASON, newVarianceReason);
 	}
 
 	/**
@@ -288,26 +308,6 @@ public class InventoryItemVarianceImpl extends EntityIdentifiableImpl implements
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InventoryItem getInventoryItemId() {
-		return (InventoryItem)eGet(InventoryPackage.Literals.INVENTORY_ITEM_VARIANCE__INVENTORY_ITEM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInventoryItemId(InventoryItem newInventoryItemId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM_VARIANCE__INVENTORY_ITEM_ID, newInventoryItemId);
 	}
 
 } //InventoryItemVarianceImpl

@@ -23,7 +23,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocType#getWorkEffortAssocTypeId <em>Work Effort Assoc Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocType#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocType#getWorkEffortAssocTypeAttrs <em>Work Effort Assoc Type Attrs</em>}</li>
  * </ul>
  *
@@ -85,30 +85,26 @@ public interface WorkEffortAssocType extends EntityType<WorkEffortAssoc>, Entity
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(WorkEffortAssocType)
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortAssocType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(WorkEffortAssocType)
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortAssocType_ParentType()
 	 * @model keys="workEffortAssocTypeId"
 	 * @generated
 	 */
-	WorkEffortAssocType getParentTypeId();
+	WorkEffortAssocType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(WorkEffortAssocType value);
+	void setParentType(WorkEffortAssocType value);
 
 	/**
 	 * Returns the value of the '<em><b>Work Effort Assoc Type Attrs</b></em>' reference list.

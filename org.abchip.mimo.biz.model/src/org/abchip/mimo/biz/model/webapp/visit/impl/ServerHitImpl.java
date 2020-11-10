@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitImpl#getHitTypeId <em>Hit Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitImpl#getVisitId <em>Visit Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitImpl#getHitType <em>Hit Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitImpl#getVisit <em>Visit</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitImpl#getContentId <em>Content Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitImpl#getHitStartDateTime <em>Hit Start Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitImpl#getIdByIpContactMechId <em>Id By Ip Contact Mech Id</em>}</li>
@@ -166,8 +166,8 @@ public class ServerHitImpl extends EntityTypedImpl<ServerHitType> implements Ser
 	 * @generated
 	 */
 	@Override
-	public Visit getVisitId() {
-		return (Visit)eGet(VisitPackage.Literals.SERVER_HIT__VISIT_ID, true);
+	public ServerHitType getHitType() {
+		return (ServerHitType)eGet(VisitPackage.Literals.SERVER_HIT__HIT_TYPE, true);
 	}
 
 	/**
@@ -176,8 +176,28 @@ public class ServerHitImpl extends EntityTypedImpl<ServerHitType> implements Ser
 	 * @generated
 	 */
 	@Override
-	public void setVisitId(Visit newVisitId) {
-		eSet(VisitPackage.Literals.SERVER_HIT__VISIT_ID, newVisitId);
+	public void setHitType(ServerHitType newHitType) {
+		eSet(VisitPackage.Literals.SERVER_HIT__HIT_TYPE, newHitType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Visit getVisit() {
+		return (Visit)eGet(VisitPackage.Literals.SERVER_HIT__VISIT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setVisit(Visit newVisit) {
+		eSet(VisitPackage.Literals.SERVER_HIT__VISIT, newVisit);
 	}
 
 	/**
@@ -218,26 +238,6 @@ public class ServerHitImpl extends EntityTypedImpl<ServerHitType> implements Ser
 	@Override
 	public void setHitStartDateTime(Date newHitStartDateTime) {
 		eSet(VisitPackage.Literals.SERVER_HIT__HIT_START_DATE_TIME, newHitStartDateTime);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ServerHitType getHitTypeId() {
-		return (ServerHitType)eGet(VisitPackage.Literals.SERVER_HIT__HIT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setHitTypeId(ServerHitType newHitTypeId) {
-		eSet(VisitPackage.Literals.SERVER_HIT__HIT_TYPE_ID, newHitTypeId);
 	}
 
 	/**

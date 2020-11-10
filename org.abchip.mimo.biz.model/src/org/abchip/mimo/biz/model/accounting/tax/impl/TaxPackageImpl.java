@@ -747,7 +747,7 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPartyTaxAuthInfo_PartyId() {
+	public EReference getPartyTaxAuthInfo_Party() {
 		return (EReference)partyTaxAuthInfoEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -837,7 +837,7 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTaxAuthority_TaxAuthGeoId() {
+	public EReference getTaxAuthority_TaxAuthGeo() {
 		return (EReference)taxAuthorityEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -847,7 +847,7 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTaxAuthority_TaxAuthPartyId() {
+	public EReference getTaxAuthority_TaxAuthParty() {
 		return (EReference)taxAuthorityEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -937,8 +937,8 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getTaxAuthorityAssoc_FromDate() {
-		return (EAttribute)taxAuthorityAssocEClass.getEStructuralFeatures().get(0);
+	public EReference getTaxAuthorityAssoc_TaxAuthorityAssocType() {
+		return (EReference)taxAuthorityAssocEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -947,8 +947,8 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTaxAuthorityAssoc_TaxAuthorityAssocTypeId() {
-		return (EReference)taxAuthorityAssocEClass.getEStructuralFeatures().get(5);
+	public EAttribute getTaxAuthorityAssoc_FromDate() {
+		return (EAttribute)taxAuthorityAssocEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1007,6 +1007,16 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getTaxAuthorityCategory_ProductCategory() {
+		return (EReference)taxAuthorityCategoryEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getTaxAuthorityCategory_TaxAuthGeoId() {
 		return (EAttribute)taxAuthorityCategoryEClass.getEStructuralFeatures().get(1);
 	}
@@ -1027,8 +1037,8 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTaxAuthorityCategory_ProductCategoryId() {
-		return (EReference)taxAuthorityCategoryEClass.getEStructuralFeatures().get(0);
+	public EClass getTaxAuthorityGlAccount() {
+		return taxAuthorityGlAccountEClass;
 	}
 
 	/**
@@ -1037,8 +1047,8 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getTaxAuthorityGlAccount() {
-		return taxAuthorityGlAccountEClass;
+	public EReference getTaxAuthorityGlAccount_OrganizationParty() {
+		return (EReference)taxAuthorityGlAccountEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1067,17 +1077,7 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTaxAuthorityGlAccount_OrganizationPartyId() {
-		return (EReference)taxAuthorityGlAccountEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getTaxAuthorityGlAccount_GlAccountId() {
+	public EReference getTaxAuthorityGlAccount_GlAccount() {
 		return (EReference)taxAuthorityGlAccountEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1157,7 +1157,7 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTaxAuthorityRateProduct_ProductCategoryId() {
+	public EReference getTaxAuthorityRateProduct_ProductCategory() {
 		return (EReference)taxAuthorityRateProductEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -1167,7 +1167,7 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTaxAuthorityRateProduct_ProductStoreId() {
+	public EReference getTaxAuthorityRateProduct_ProductStore() {
 		return (EReference)taxAuthorityRateProductEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -1197,7 +1197,7 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getTaxAuthorityRateProduct_TaxAuthorityRateTypeId() {
+	public EReference getTaxAuthorityRateProduct_TaxAuthorityRateType() {
 		return (EReference)taxAuthorityRateProductEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -1621,7 +1621,7 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 
 		// Create classes and their features
 		partyTaxAuthInfoEClass = createEClass(PARTY_TAX_AUTH_INFO);
-		createEReference(partyTaxAuthInfoEClass, PARTY_TAX_AUTH_INFO__PARTY_ID);
+		createEReference(partyTaxAuthInfoEClass, PARTY_TAX_AUTH_INFO__PARTY);
 		createEAttribute(partyTaxAuthInfoEClass, PARTY_TAX_AUTH_INFO__FROM_DATE);
 		createEAttribute(partyTaxAuthInfoEClass, PARTY_TAX_AUTH_INFO__TAX_AUTH_GEO_ID);
 		createEAttribute(partyTaxAuthInfoEClass, PARTY_TAX_AUTH_INFO__TAX_AUTH_PARTY_ID);
@@ -1631,8 +1631,8 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 		createEAttribute(partyTaxAuthInfoEClass, PARTY_TAX_AUTH_INFO__THRU_DATE);
 
 		taxAuthorityEClass = createEClass(TAX_AUTHORITY);
-		createEReference(taxAuthorityEClass, TAX_AUTHORITY__TAX_AUTH_GEO_ID);
-		createEReference(taxAuthorityEClass, TAX_AUTHORITY__TAX_AUTH_PARTY_ID);
+		createEReference(taxAuthorityEClass, TAX_AUTHORITY__TAX_AUTH_GEO);
+		createEReference(taxAuthorityEClass, TAX_AUTHORITY__TAX_AUTH_PARTY);
 		createEAttribute(taxAuthorityEClass, TAX_AUTHORITY__INCLUDE_TAX_IN_PRICE);
 		createEAttribute(taxAuthorityEClass, TAX_AUTHORITY__REQUIRE_TAX_ID_FOR_EXEMPTION);
 		createEAttribute(taxAuthorityEClass, TAX_AUTHORITY__TAX_ID_FORMAT_PATTERN);
@@ -1643,7 +1643,7 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 		createEAttribute(taxAuthorityAssocEClass, TAX_AUTHORITY_ASSOC__TAX_AUTH_PARTY_ID);
 		createEAttribute(taxAuthorityAssocEClass, TAX_AUTHORITY_ASSOC__TO_TAX_AUTH_GEO_ID);
 		createEAttribute(taxAuthorityAssocEClass, TAX_AUTHORITY_ASSOC__TO_TAX_AUTH_PARTY_ID);
-		createEReference(taxAuthorityAssocEClass, TAX_AUTHORITY_ASSOC__TAX_AUTHORITY_ASSOC_TYPE_ID);
+		createEReference(taxAuthorityAssocEClass, TAX_AUTHORITY_ASSOC__TAX_AUTHORITY_ASSOC_TYPE);
 		createEAttribute(taxAuthorityAssocEClass, TAX_AUTHORITY_ASSOC__THRU_DATE);
 
 		taxAuthorityAssocTypeEClass = createEClass(TAX_AUTHORITY_ASSOC_TYPE);
@@ -1651,15 +1651,15 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 		createEAttribute(taxAuthorityAssocTypeEClass, TAX_AUTHORITY_ASSOC_TYPE__DESCRIPTION);
 
 		taxAuthorityCategoryEClass = createEClass(TAX_AUTHORITY_CATEGORY);
-		createEReference(taxAuthorityCategoryEClass, TAX_AUTHORITY_CATEGORY__PRODUCT_CATEGORY_ID);
+		createEReference(taxAuthorityCategoryEClass, TAX_AUTHORITY_CATEGORY__PRODUCT_CATEGORY);
 		createEAttribute(taxAuthorityCategoryEClass, TAX_AUTHORITY_CATEGORY__TAX_AUTH_GEO_ID);
 		createEAttribute(taxAuthorityCategoryEClass, TAX_AUTHORITY_CATEGORY__TAX_AUTH_PARTY_ID);
 
 		taxAuthorityGlAccountEClass = createEClass(TAX_AUTHORITY_GL_ACCOUNT);
-		createEReference(taxAuthorityGlAccountEClass, TAX_AUTHORITY_GL_ACCOUNT__ORGANIZATION_PARTY_ID);
+		createEReference(taxAuthorityGlAccountEClass, TAX_AUTHORITY_GL_ACCOUNT__ORGANIZATION_PARTY);
 		createEAttribute(taxAuthorityGlAccountEClass, TAX_AUTHORITY_GL_ACCOUNT__TAX_AUTH_GEO_ID);
 		createEAttribute(taxAuthorityGlAccountEClass, TAX_AUTHORITY_GL_ACCOUNT__TAX_AUTH_PARTY_ID);
-		createEReference(taxAuthorityGlAccountEClass, TAX_AUTHORITY_GL_ACCOUNT__GL_ACCOUNT_ID);
+		createEReference(taxAuthorityGlAccountEClass, TAX_AUTHORITY_GL_ACCOUNT__GL_ACCOUNT);
 
 		taxAuthorityRateProductEClass = createEClass(TAX_AUTHORITY_RATE_PRODUCT);
 		createEAttribute(taxAuthorityRateProductEClass, TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTHORITY_RATE_SEQ_ID);
@@ -1668,11 +1668,11 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 		createEAttribute(taxAuthorityRateProductEClass, TAX_AUTHORITY_RATE_PRODUCT__IS_TAX_IN_SHIPPING_PRICE);
 		createEAttribute(taxAuthorityRateProductEClass, TAX_AUTHORITY_RATE_PRODUCT__MIN_ITEM_PRICE);
 		createEAttribute(taxAuthorityRateProductEClass, TAX_AUTHORITY_RATE_PRODUCT__MIN_PURCHASE);
-		createEReference(taxAuthorityRateProductEClass, TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_CATEGORY_ID);
-		createEReference(taxAuthorityRateProductEClass, TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_STORE_ID);
+		createEReference(taxAuthorityRateProductEClass, TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_CATEGORY);
+		createEReference(taxAuthorityRateProductEClass, TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_STORE);
 		createEAttribute(taxAuthorityRateProductEClass, TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTH_GEO_ID);
 		createEAttribute(taxAuthorityRateProductEClass, TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTH_PARTY_ID);
-		createEReference(taxAuthorityRateProductEClass, TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTHORITY_RATE_TYPE_ID);
+		createEReference(taxAuthorityRateProductEClass, TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTHORITY_RATE_TYPE);
 		createEAttribute(taxAuthorityRateProductEClass, TAX_AUTHORITY_RATE_PRODUCT__TAX_PERCENTAGE);
 		createEAttribute(taxAuthorityRateProductEClass, TAX_AUTHORITY_RATE_PRODUCT__TAX_PROMOTIONS);
 		createEAttribute(taxAuthorityRateProductEClass, TAX_AUTHORITY_RATE_PRODUCT__TAX_SHIPPING);
@@ -1792,8 +1792,8 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(partyTaxAuthInfoEClass, PartyTaxAuthInfo.class, "PartyTaxAuthInfo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getPartyTaxAuthInfo_PartyId(), thePartyPackage_1.getParty(), null, "partyId", null, 1, 1, PartyTaxAuthInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyTaxAuthInfo_PartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getPartyTaxAuthInfo_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, PartyTaxAuthInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPartyTaxAuthInfo_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getPartyTaxAuthInfo_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, PartyTaxAuthInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyTaxAuthInfo_TaxAuthGeoId(), ecorePackage.getEString(), "taxAuthGeoId", null, 1, 1, PartyTaxAuthInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyTaxAuthInfo_TaxAuthPartyId(), ecorePackage.getEString(), "taxAuthPartyId", null, 1, 1, PartyTaxAuthInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1803,10 +1803,10 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 		initEAttribute(getPartyTaxAuthInfo_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, PartyTaxAuthInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(taxAuthorityEClass, TaxAuthority.class, "TaxAuthority", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTaxAuthority_TaxAuthGeoId(), theGeoPackage.getGeo(), null, "taxAuthGeoId", null, 1, 1, TaxAuthority.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getTaxAuthority_TaxAuthGeoId().getEKeys().add(theGeoPackage.getGeo_GeoId());
-		initEReference(getTaxAuthority_TaxAuthPartyId(), thePartyPackage_1.getParty(), null, "taxAuthPartyId", null, 1, 1, TaxAuthority.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getTaxAuthority_TaxAuthPartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getTaxAuthority_TaxAuthGeo(), theGeoPackage.getGeo(), null, "taxAuthGeo", null, 1, 1, TaxAuthority.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getTaxAuthority_TaxAuthGeo().getEKeys().add(theGeoPackage.getGeo_GeoId());
+		initEReference(getTaxAuthority_TaxAuthParty(), thePartyPackage_1.getParty(), null, "taxAuthParty", null, 1, 1, TaxAuthority.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getTaxAuthority_TaxAuthParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getTaxAuthority_IncludeTaxInPrice(), ecorePackage.getEBoolean(), "includeTaxInPrice", null, 1, 1, TaxAuthority.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTaxAuthority_RequireTaxIdForExemption(), ecorePackage.getEBoolean(), "requireTaxIdForExemption", "true", 1, 1, TaxAuthority.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTaxAuthority_TaxIdFormatPattern(), ecorePackage.getEString(), "taxIdFormatPattern", null, 0, 1, TaxAuthority.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1817,8 +1817,8 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 		initEAttribute(getTaxAuthorityAssoc_TaxAuthPartyId(), ecorePackage.getEString(), "taxAuthPartyId", null, 1, 1, TaxAuthorityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTaxAuthorityAssoc_ToTaxAuthGeoId(), ecorePackage.getEString(), "toTaxAuthGeoId", null, 1, 1, TaxAuthorityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTaxAuthorityAssoc_ToTaxAuthPartyId(), ecorePackage.getEString(), "toTaxAuthPartyId", null, 1, 1, TaxAuthorityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getTaxAuthorityAssoc_TaxAuthorityAssocTypeId(), this.getTaxAuthorityAssocType(), null, "taxAuthorityAssocTypeId", null, 0, 1, TaxAuthorityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getTaxAuthorityAssoc_TaxAuthorityAssocTypeId().getEKeys().add(this.getTaxAuthorityAssocType_TaxAuthorityAssocTypeId());
+		initEReference(getTaxAuthorityAssoc_TaxAuthorityAssocType(), this.getTaxAuthorityAssocType(), null, "taxAuthorityAssocType", null, 0, 1, TaxAuthorityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getTaxAuthorityAssoc_TaxAuthorityAssocType().getEKeys().add(this.getTaxAuthorityAssocType_TaxAuthorityAssocTypeId());
 		initEAttribute(getTaxAuthorityAssoc_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, TaxAuthorityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(taxAuthorityAssocTypeEClass, TaxAuthorityAssocType.class, "TaxAuthorityAssocType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1826,18 +1826,18 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 		initEAttribute(getTaxAuthorityAssocType_Description(), ecorePackage.getEString(), "description", null, 0, 1, TaxAuthorityAssocType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(taxAuthorityCategoryEClass, TaxAuthorityCategory.class, "TaxAuthorityCategory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTaxAuthorityCategory_ProductCategoryId(), theCategoryPackage.getProductCategory(), null, "productCategoryId", null, 1, 1, TaxAuthorityCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getTaxAuthorityCategory_ProductCategoryId().getEKeys().add(theCategoryPackage.getProductCategory_ProductCategoryId());
+		initEReference(getTaxAuthorityCategory_ProductCategory(), theCategoryPackage.getProductCategory(), null, "productCategory", null, 1, 1, TaxAuthorityCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getTaxAuthorityCategory_ProductCategory().getEKeys().add(theCategoryPackage.getProductCategory_ProductCategoryId());
 		initEAttribute(getTaxAuthorityCategory_TaxAuthGeoId(), ecorePackage.getEString(), "taxAuthGeoId", null, 1, 1, TaxAuthorityCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTaxAuthorityCategory_TaxAuthPartyId(), ecorePackage.getEString(), "taxAuthPartyId", null, 1, 1, TaxAuthorityCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(taxAuthorityGlAccountEClass, TaxAuthorityGlAccount.class, "TaxAuthorityGlAccount", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTaxAuthorityGlAccount_OrganizationPartyId(), thePartyPackage_1.getParty(), null, "organizationPartyId", null, 1, 1, TaxAuthorityGlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getTaxAuthorityGlAccount_OrganizationPartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getTaxAuthorityGlAccount_OrganizationParty(), thePartyPackage_1.getParty(), null, "organizationParty", null, 1, 1, TaxAuthorityGlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getTaxAuthorityGlAccount_OrganizationParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getTaxAuthorityGlAccount_TaxAuthGeoId(), ecorePackage.getEString(), "taxAuthGeoId", null, 1, 1, TaxAuthorityGlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTaxAuthorityGlAccount_TaxAuthPartyId(), ecorePackage.getEString(), "taxAuthPartyId", null, 1, 1, TaxAuthorityGlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getTaxAuthorityGlAccount_GlAccountId(), theLedgerPackage.getGlAccount(), null, "glAccountId", null, 0, 1, TaxAuthorityGlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getTaxAuthorityGlAccount_GlAccountId().getEKeys().add(theLedgerPackage.getGlAccount_GlAccountId());
+		initEReference(getTaxAuthorityGlAccount_GlAccount(), theLedgerPackage.getGlAccount(), null, "glAccount", null, 0, 1, TaxAuthorityGlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getTaxAuthorityGlAccount_GlAccount().getEKeys().add(theLedgerPackage.getGlAccount_GlAccountId());
 
 		initEClass(taxAuthorityRateProductEClass, TaxAuthorityRateProduct.class, "TaxAuthorityRateProduct", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getTaxAuthorityRateProduct_TaxAuthorityRateSeqId(), ecorePackage.getEString(), "taxAuthorityRateSeqId", null, 1, 1, TaxAuthorityRateProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1846,14 +1846,14 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 		initEAttribute(getTaxAuthorityRateProduct_IsTaxInShippingPrice(), ecorePackage.getEBoolean(), "isTaxInShippingPrice", null, 1, 1, TaxAuthorityRateProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTaxAuthorityRateProduct_MinItemPrice(), ecorePackage.getEBigDecimal(), "minItemPrice", null, 0, 1, TaxAuthorityRateProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTaxAuthorityRateProduct_MinPurchase(), ecorePackage.getEBigDecimal(), "minPurchase", null, 0, 1, TaxAuthorityRateProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getTaxAuthorityRateProduct_ProductCategoryId(), theCategoryPackage.getProductCategory(), null, "productCategoryId", null, 0, 1, TaxAuthorityRateProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getTaxAuthorityRateProduct_ProductCategoryId().getEKeys().add(theCategoryPackage.getProductCategory_ProductCategoryId());
-		initEReference(getTaxAuthorityRateProduct_ProductStoreId(), theStorePackage.getProductStore(), null, "productStoreId", null, 0, 1, TaxAuthorityRateProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getTaxAuthorityRateProduct_ProductStoreId().getEKeys().add(theStorePackage.getProductStore_ProductStoreId());
+		initEReference(getTaxAuthorityRateProduct_ProductCategory(), theCategoryPackage.getProductCategory(), null, "productCategory", null, 0, 1, TaxAuthorityRateProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getTaxAuthorityRateProduct_ProductCategory().getEKeys().add(theCategoryPackage.getProductCategory_ProductCategoryId());
+		initEReference(getTaxAuthorityRateProduct_ProductStore(), theStorePackage.getProductStore(), null, "productStore", null, 0, 1, TaxAuthorityRateProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getTaxAuthorityRateProduct_ProductStore().getEKeys().add(theStorePackage.getProductStore_ProductStoreId());
 		initEAttribute(getTaxAuthorityRateProduct_TaxAuthGeoId(), ecorePackage.getEString(), "taxAuthGeoId", null, 0, 1, TaxAuthorityRateProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTaxAuthorityRateProduct_TaxAuthPartyId(), ecorePackage.getEString(), "taxAuthPartyId", null, 0, 1, TaxAuthorityRateProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getTaxAuthorityRateProduct_TaxAuthorityRateTypeId(), this.getTaxAuthorityRateType(), null, "taxAuthorityRateTypeId", null, 0, 1, TaxAuthorityRateProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getTaxAuthorityRateProduct_TaxAuthorityRateTypeId().getEKeys().add(this.getTaxAuthorityRateType_TaxAuthorityRateTypeId());
+		initEReference(getTaxAuthorityRateProduct_TaxAuthorityRateType(), this.getTaxAuthorityRateType(), null, "taxAuthorityRateType", null, 0, 1, TaxAuthorityRateProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getTaxAuthorityRateProduct_TaxAuthorityRateType().getEKeys().add(this.getTaxAuthorityRateType_TaxAuthorityRateTypeId());
 		initEAttribute(getTaxAuthorityRateProduct_TaxPercentage(), ecorePackage.getEBigDecimal(), "taxPercentage", null, 0, 1, TaxAuthorityRateProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTaxAuthorityRateProduct_TaxPromotions(), ecorePackage.getEBoolean(), "taxPromotions", null, 1, 1, TaxAuthorityRateProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTaxAuthorityRateProduct_TaxShipping(), ecorePackage.getEBoolean(), "taxShipping", "true", 1, 1, TaxAuthorityRateProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2243,7 +2243,7 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
 		addAnnotation
-		  (getPartyTaxAuthInfo_PartyId(),
+		  (getPartyTaxAuthInfo_Party(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2267,13 +2267,13 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getTaxAuthority_TaxAuthGeoId(),
+		  (getTaxAuthority_TaxAuthGeo(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getTaxAuthority_TaxAuthPartyId(),
+		  (getTaxAuthority_TaxAuthParty(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2309,7 +2309,7 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getTaxAuthorityCategory_ProductCategoryId(),
+		  (getTaxAuthorityCategory_ProductCategory(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2327,7 +2327,7 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getTaxAuthorityGlAccount_OrganizationPartyId(),
+		  (getTaxAuthorityGlAccount_OrganizationParty(),
 		   source,
 		   new String[] {
 			   "key", "true"

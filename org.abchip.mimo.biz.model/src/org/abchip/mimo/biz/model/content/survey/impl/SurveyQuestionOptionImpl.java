@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionOptionImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionOptionImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionOptionImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionOptionImpl#getSurveyQuestionId <em>Survey Question Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionOptionImpl#getSurveyQuestion <em>Survey Question</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionOptionImpl#getSurveyOptionSeqId <em>Survey Option Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionOptionImpl#getAmountBase <em>Amount Base</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionOptionImpl#getAmountBaseUomId <em>Amount Base Uom Id</em>}</li>
@@ -152,6 +152,26 @@ public class SurveyQuestionOptionImpl extends EntityIdentifiableImpl implements 
 	@Override
 	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
 		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SurveyQuestion getSurveyQuestion() {
+		return (SurveyQuestion)eGet(SurveyPackage.Literals.SURVEY_QUESTION_OPTION__SURVEY_QUESTION, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSurveyQuestion(SurveyQuestion newSurveyQuestion) {
+		eSet(SurveyPackage.Literals.SURVEY_QUESTION_OPTION__SURVEY_QUESTION, newSurveyQuestion);
 	}
 
 	/**
@@ -292,26 +312,6 @@ public class SurveyQuestionOptionImpl extends EntityIdentifiableImpl implements 
 	@Override
 	public void setSurveyOptionSeqId(String newSurveyOptionSeqId) {
 		eSet(SurveyPackage.Literals.SURVEY_QUESTION_OPTION__SURVEY_OPTION_SEQ_ID, newSurveyOptionSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SurveyQuestion getSurveyQuestionId() {
-		return (SurveyQuestion)eGet(SurveyPackage.Literals.SURVEY_QUESTION_OPTION__SURVEY_QUESTION_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSurveyQuestionId(SurveyQuestion newSurveyQuestionId) {
-		eSet(SurveyPackage.Literals.SURVEY_QUESTION_OPTION__SURVEY_QUESTION_ID, newSurveyQuestionId);
 	}
 
 	/**

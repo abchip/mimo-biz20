@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.ValidResponsibilityImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.ValidResponsibilityImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.ValidResponsibilityImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.ValidResponsibilityImpl#getEmplPositionTypeId <em>Empl Position Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.ValidResponsibilityImpl#getResponsibilityTypeId <em>Responsibility Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.ValidResponsibilityImpl#getEmplPositionType <em>Empl Position Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.ValidResponsibilityImpl#getResponsibilityType <em>Responsibility Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.ValidResponsibilityImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.ValidResponsibilityImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.ValidResponsibilityImpl#getThruDate <em>Thru Date</em>}</li>
@@ -155,6 +155,46 @@ public class ValidResponsibilityImpl extends EntityIdentifiableImpl implements V
 	 * @generated
 	 */
 	@Override
+	public EmplPositionType getEmplPositionType() {
+		return (EmplPositionType)eGet(PositionPackage.Literals.VALID_RESPONSIBILITY__EMPL_POSITION_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEmplPositionType(EmplPositionType newEmplPositionType) {
+		eSet(PositionPackage.Literals.VALID_RESPONSIBILITY__EMPL_POSITION_TYPE, newEmplPositionType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ResponsibilityType getResponsibilityType() {
+		return (ResponsibilityType)eGet(PositionPackage.Literals.VALID_RESPONSIBILITY__RESPONSIBILITY_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setResponsibilityType(ResponsibilityType newResponsibilityType) {
+		eSet(PositionPackage.Literals.VALID_RESPONSIBILITY__RESPONSIBILITY_TYPE, newResponsibilityType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getComments() {
 		return (String)eGet(PositionPackage.Literals.VALID_RESPONSIBILITY__COMMENTS, true);
 	}
@@ -175,26 +215,6 @@ public class ValidResponsibilityImpl extends EntityIdentifiableImpl implements V
 	 * @generated
 	 */
 	@Override
-	public EmplPositionType getEmplPositionTypeId() {
-		return (EmplPositionType)eGet(PositionPackage.Literals.VALID_RESPONSIBILITY__EMPL_POSITION_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setEmplPositionTypeId(EmplPositionType newEmplPositionTypeId) {
-		eSet(PositionPackage.Literals.VALID_RESPONSIBILITY__EMPL_POSITION_TYPE_ID, newEmplPositionTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Date getFromDate() {
 		return (Date)eGet(PositionPackage.Literals.VALID_RESPONSIBILITY__FROM_DATE, true);
 	}
@@ -207,26 +227,6 @@ public class ValidResponsibilityImpl extends EntityIdentifiableImpl implements V
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(PositionPackage.Literals.VALID_RESPONSIBILITY__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ResponsibilityType getResponsibilityTypeId() {
-		return (ResponsibilityType)eGet(PositionPackage.Literals.VALID_RESPONSIBILITY__RESPONSIBILITY_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setResponsibilityTypeId(ResponsibilityType newResponsibilityTypeId) {
-		eSet(PositionPackage.Literals.VALID_RESPONSIBILITY__RESPONSIBILITY_TYPE_ID, newResponsibilityTypeId);
 	}
 
 	/**

@@ -20,7 +20,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreEmailSetting#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreEmailSetting#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreEmailSetting#getEmailType <em>Email Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreEmailSetting#getBccAddress <em>Bcc Address</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreEmailSetting#getBodyScreenLocation <em>Body Screen Location</em>}</li>
@@ -36,6 +36,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductStoreEmailSetting extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product Store</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Store</em>' reference.
+	 * @see #setProductStore(ProductStore)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreEmailSetting_ProductStore()
+	 * @model keys="productStoreId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductStore getProductStore();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreEmailSetting#getProductStore <em>Product Store</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Store</em>' reference.
+	 * @see #getProductStore()
+	 * @generated
+	 */
+	void setProductStore(ProductStore value);
+
 	/**
 	 * Returns the value of the '<em><b>Bcc Address</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -246,32 +269,5 @@ public interface ProductStoreEmailSetting extends EntityIdentifiable, EntityInfo
 	 * @generated
 	 */
 	void setXslfoAttachScreenLocation(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Store Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store Id</em>' reference.
-	 * @see #setProductStoreId(ProductStore)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreEmailSetting_ProductStoreId()
-	 * @model keys="productStoreId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductStore getProductStoreId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreEmailSetting#getProductStoreId <em>Product Store Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store Id</em>' reference.
-	 * @see #getProductStoreId()
-	 * @generated
-	 */
-	void setProductStoreId(ProductStore value);
 
 } // ProductStoreEmailSetting

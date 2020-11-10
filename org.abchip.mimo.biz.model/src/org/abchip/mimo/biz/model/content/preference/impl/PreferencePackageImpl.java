@@ -713,7 +713,17 @@ public class PreferencePackageImpl extends EPackageImpl implements PreferencePac
 	 * @generated
 	 */
 	@Override
-	public EReference getWebUserPreference_UserLoginId() {
+	public EReference getWebUserPreference_WebPreferenceType() {
+		return (EReference)webUserPreferenceEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getWebUserPreference_UserLogin() {
 		return (EReference)webUserPreferenceEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -723,7 +733,7 @@ public class PreferencePackageImpl extends EPackageImpl implements PreferencePac
 	 * @generated
 	 */
 	@Override
-	public EReference getWebUserPreference_PartyId() {
+	public EReference getWebUserPreference_Party() {
 		return (EReference)webUserPreferenceEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -735,16 +745,6 @@ public class PreferencePackageImpl extends EPackageImpl implements PreferencePac
 	@Override
 	public EAttribute getWebUserPreference_VisitId() {
 		return (EAttribute)webUserPreferenceEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getWebUserPreference_WebPreferenceTypeId() {
-		return (EReference)webUserPreferenceEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -791,9 +791,9 @@ public class PreferencePackageImpl extends EPackageImpl implements PreferencePac
 		createEAttribute(webPreferenceTypeEClass, WEB_PREFERENCE_TYPE__DESCRIPTION);
 
 		webUserPreferenceEClass = createEClass(WEB_USER_PREFERENCE);
-		createEReference(webUserPreferenceEClass, WEB_USER_PREFERENCE__WEB_PREFERENCE_TYPE_ID);
-		createEReference(webUserPreferenceEClass, WEB_USER_PREFERENCE__USER_LOGIN_ID);
-		createEReference(webUserPreferenceEClass, WEB_USER_PREFERENCE__PARTY_ID);
+		createEReference(webUserPreferenceEClass, WEB_USER_PREFERENCE__WEB_PREFERENCE_TYPE);
+		createEReference(webUserPreferenceEClass, WEB_USER_PREFERENCE__USER_LOGIN);
+		createEReference(webUserPreferenceEClass, WEB_USER_PREFERENCE__PARTY);
 		createEAttribute(webUserPreferenceEClass, WEB_USER_PREFERENCE__VISIT_ID);
 		createEAttribute(webUserPreferenceEClass, WEB_USER_PREFERENCE__WEB_PREFERENCE_VALUE);
 	}
@@ -850,12 +850,12 @@ public class PreferencePackageImpl extends EPackageImpl implements PreferencePac
 		initEAttribute(getWebPreferenceType_Description(), ecorePackage.getEString(), "description", null, 0, 1, WebPreferenceType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(webUserPreferenceEClass, WebUserPreference.class, "WebUserPreference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getWebUserPreference_WebPreferenceTypeId(), this.getWebPreferenceType(), null, "webPreferenceTypeId", null, 1, 1, WebUserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWebUserPreference_WebPreferenceTypeId().getEKeys().add(this.getWebPreferenceType_WebPreferenceTypeId());
-		initEReference(getWebUserPreference_UserLoginId(), theLoginPackage.getUserLogin(), null, "userLoginId", null, 1, 1, WebUserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWebUserPreference_UserLoginId().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
-		initEReference(getWebUserPreference_PartyId(), thePartyPackage_1.getParty(), null, "partyId", null, 1, 1, WebUserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWebUserPreference_PartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getWebUserPreference_WebPreferenceType(), this.getWebPreferenceType(), null, "webPreferenceType", null, 1, 1, WebUserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getWebUserPreference_WebPreferenceType().getEKeys().add(this.getWebPreferenceType_WebPreferenceTypeId());
+		initEReference(getWebUserPreference_UserLogin(), theLoginPackage.getUserLogin(), null, "userLogin", null, 1, 1, WebUserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getWebUserPreference_UserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
+		initEReference(getWebUserPreference_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, WebUserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getWebUserPreference_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getWebUserPreference_VisitId(), ecorePackage.getEString(), "visitId", null, 1, 1, WebUserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getWebUserPreference_WebPreferenceValue(), ecorePackage.getEString(), "webPreferenceValue", null, 0, 1, WebUserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -930,19 +930,19 @@ public class PreferencePackageImpl extends EPackageImpl implements PreferencePac
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
 		addAnnotation
-		  (getWebUserPreference_WebPreferenceTypeId(),
+		  (getWebUserPreference_WebPreferenceType(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getWebUserPreference_UserLoginId(),
+		  (getWebUserPreference_UserLogin(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getWebUserPreference_PartyId(),
+		  (getWebUserPreference_Party(),
 		   source,
 		   new String[] {
 			   "key", "true"

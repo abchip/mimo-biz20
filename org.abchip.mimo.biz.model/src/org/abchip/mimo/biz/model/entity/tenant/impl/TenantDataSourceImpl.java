@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantDataSourceImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantDataSourceImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantDataSourceImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantDataSourceImpl#getTenantId <em>Tenant Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantDataSourceImpl#getTenant <em>Tenant</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantDataSourceImpl#getEntityGroupName <em>Entity Group Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantDataSourceImpl#getJdbcPassword <em>Jdbc Password</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantDataSourceImpl#getJdbcUri <em>Jdbc Uri</em>}</li>
@@ -153,6 +153,26 @@ public class TenantDataSourceImpl extends EntityIdentifiableImpl implements Tena
 	 * @generated
 	 */
 	@Override
+	public Tenant getTenant() {
+		return (Tenant)eGet(TenantPackage.Literals.TENANT_DATA_SOURCE__TENANT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTenant(Tenant newTenant) {
+		eSet(TenantPackage.Literals.TENANT_DATA_SOURCE__TENANT, newTenant);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEntityGroupName() {
 		return (String)eGet(TenantPackage.Literals.TENANT_DATA_SOURCE__ENTITY_GROUP_NAME, true);
 	}
@@ -263,26 +283,6 @@ public class TenantDataSourceImpl extends EntityIdentifiableImpl implements Tena
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Tenant getTenantId() {
-		return (Tenant)eGet(TenantPackage.Literals.TENANT_DATA_SOURCE__TENANT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTenantId(Tenant newTenantId) {
-		eSet(TenantPackage.Literals.TENANT_DATA_SOURCE__TENANT_ID, newTenantId);
 	}
 
 } //TenantDataSourceImpl

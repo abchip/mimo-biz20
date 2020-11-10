@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeImpl#getFixedAssetTypeAttrs <em>Fixed Asset Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -213,8 +213,8 @@ public class FixedAssetTypeImpl extends EntityTypeImpl<FixedAsset> implements Fi
 	 * @generated
 	 */
 	@Override
-	public FixedAssetType getParentTypeId() {
-		return (FixedAssetType)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE__PARENT_TYPE_ID, true);
+	public FixedAssetType getParentType() {
+		return (FixedAssetType)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -223,8 +223,8 @@ public class FixedAssetTypeImpl extends EntityTypeImpl<FixedAsset> implements Fi
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(FixedAssetType newParentTypeId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(FixedAssetType newParentType) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

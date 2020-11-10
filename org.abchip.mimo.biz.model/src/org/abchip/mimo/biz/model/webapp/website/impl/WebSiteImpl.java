@@ -44,11 +44,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getHttpsHost <em>Https Host</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getHttpsPort <em>Https Port</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#isIsDefault <em>Is Default</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getSecureContentPrefix <em>Secure Content Prefix</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getSiteName <em>Site Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getStandardContentPrefix <em>Standard Content Prefix</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getVisualThemeSetId <em>Visual Theme Set Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getVisualThemeSet <em>Visual Theme Set</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getWebAnalyticsConfigs <em>Web Analytics Configs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getWebSiteContactLists <em>Web Site Contact Lists</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getWebSitePathAliass <em>Web Site Path Aliass</em>}</li>
@@ -394,8 +394,8 @@ public class WebSiteImpl extends EntityIdentifiableImpl implements WebSite {
 	 * @generated
 	 */
 	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(WebsitePackage.Literals.WEB_SITE__PRODUCT_STORE_ID, true);
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(WebsitePackage.Literals.WEB_SITE__PRODUCT_STORE, true);
 	}
 
 	/**
@@ -404,8 +404,8 @@ public class WebSiteImpl extends EntityIdentifiableImpl implements WebSite {
 	 * @generated
 	 */
 	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(WebsitePackage.Literals.WEB_SITE__PRODUCT_STORE_ID, newProductStoreId);
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(WebsitePackage.Literals.WEB_SITE__PRODUCT_STORE, newProductStore);
 	}
 
 	/**
@@ -474,8 +474,8 @@ public class WebSiteImpl extends EntityIdentifiableImpl implements WebSite {
 	 * @generated
 	 */
 	@Override
-	public VisualThemeSet getVisualThemeSetId() {
-		return (VisualThemeSet)eGet(WebsitePackage.Literals.WEB_SITE__VISUAL_THEME_SET_ID, true);
+	public VisualThemeSet getVisualThemeSet() {
+		return (VisualThemeSet)eGet(WebsitePackage.Literals.WEB_SITE__VISUAL_THEME_SET, true);
 	}
 
 	/**
@@ -484,8 +484,8 @@ public class WebSiteImpl extends EntityIdentifiableImpl implements WebSite {
 	 * @generated
 	 */
 	@Override
-	public void setVisualThemeSetId(VisualThemeSet newVisualThemeSetId) {
-		eSet(WebsitePackage.Literals.WEB_SITE__VISUAL_THEME_SET_ID, newVisualThemeSetId);
+	public void setVisualThemeSet(VisualThemeSet newVisualThemeSet) {
+		eSet(WebsitePackage.Literals.WEB_SITE__VISUAL_THEME_SET, newVisualThemeSet);
 	}
 
 	/**

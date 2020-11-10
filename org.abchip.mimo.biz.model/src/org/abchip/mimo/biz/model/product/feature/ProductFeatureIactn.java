@@ -19,9 +19,9 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductFeatureId <em>Product Feature Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductFeature <em>Product Feature</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductFeatureIdTo <em>Product Feature Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductFeatureIactnTypeId <em>Product Feature Iactn Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductFeatureIactnType <em>Product Feature Iactn Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductId <em>Product Id</em>}</li>
  * </ul>
  *
@@ -30,6 +30,29 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface ProductFeatureIactn extends EntityTyped<ProductFeatureIactnType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product Feature</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Feature</em>' reference.
+	 * @see #setProductFeature(ProductFeature)
+	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureIactn_ProductFeature()
+	 * @model keys="productFeatureId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductFeature getProductFeature();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductFeature <em>Product Feature</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Feature</em>' reference.
+	 * @see #getProductFeature()
+	 * @generated
+	 */
+	void setProductFeature(ProductFeature value);
+
 	/**
 	 * Returns the value of the '<em><b>Product Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -57,59 +80,6 @@ public interface ProductFeatureIactn extends EntityTyped<ProductFeatureIactnType
 	void setProductId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Feature Iactn Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Feature Iactn Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Feature Iactn Type Id</em>' reference.
-	 * @see #setProductFeatureIactnTypeId(ProductFeatureIactnType)
-	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureIactn_ProductFeatureIactnTypeId()
-	 * @model keys="productFeatureIactnTypeId"
-	 * @generated
-	 */
-	ProductFeatureIactnType getProductFeatureIactnTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductFeatureIactnTypeId <em>Product Feature Iactn Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Feature Iactn Type Id</em>' reference.
-	 * @see #getProductFeatureIactnTypeId()
-	 * @generated
-	 */
-	void setProductFeatureIactnTypeId(ProductFeatureIactnType value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Feature Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Feature Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Feature Id</em>' reference.
-	 * @see #setProductFeatureId(ProductFeature)
-	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureIactn_ProductFeatureId()
-	 * @model keys="productFeatureId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductFeature getProductFeatureId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductFeatureId <em>Product Feature Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Feature Id</em>' reference.
-	 * @see #getProductFeatureId()
-	 * @generated
-	 */
-	void setProductFeatureId(ProductFeature value);
-
-	/**
 	 * Returns the value of the '<em><b>Product Feature Id To</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -135,5 +105,27 @@ public interface ProductFeatureIactn extends EntityTyped<ProductFeatureIactnType
 	 * @generated
 	 */
 	void setProductFeatureIdTo(ProductFeature value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Feature Iactn Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Feature Iactn Type</em>' reference.
+	 * @see #setProductFeatureIactnType(ProductFeatureIactnType)
+	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureIactn_ProductFeatureIactnType()
+	 * @model keys="productFeatureIactnTypeId"
+	 * @generated
+	 */
+	ProductFeatureIactnType getProductFeatureIactnType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductFeatureIactnType <em>Product Feature Iactn Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Feature Iactn Type</em>' reference.
+	 * @see #getProductFeatureIactnType()
+	 * @generated
+	 */
+	void setProductFeatureIactnType(ProductFeatureIactnType value);
 
 } // ProductFeatureIactn

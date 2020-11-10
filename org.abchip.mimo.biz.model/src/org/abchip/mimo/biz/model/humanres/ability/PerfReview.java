@@ -23,15 +23,15 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getEmployeePartyId <em>Employee Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getEmployeeParty <em>Employee Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getEmployeeRoleTypeId <em>Employee Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getPerfReviewId <em>Perf Review Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getEmplPositionId <em>Empl Position Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getEmplPosition <em>Empl Position</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getManagerPartyId <em>Manager Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getManagerParty <em>Manager Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getManagerRoleTypeId <em>Manager Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getPaymentId <em>Payment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getPayment <em>Payment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -40,6 +40,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface PerfReview extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Employee Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Employee Party</em>' reference.
+	 * @see #setEmployeeParty(Party)
+	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReview_EmployeeParty()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getEmployeeParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getEmployeeParty <em>Employee Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Employee Party</em>' reference.
+	 * @see #getEmployeeParty()
+	 * @generated
+	 */
+	void setEmployeeParty(Party value);
+
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -67,57 +90,26 @@ public interface PerfReview extends EntityIdentifiable, EntityInfo {
 	void setComments(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Empl Position Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Empl Position</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Empl Position Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Empl Position Id</em>' reference.
-	 * @see #setEmplPositionId(EmplPosition)
-	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReview_EmplPositionId()
+	 * @return the value of the '<em>Empl Position</em>' reference.
+	 * @see #setEmplPosition(EmplPosition)
+	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReview_EmplPosition()
 	 * @model keys="emplPositionId"
 	 * @generated
 	 */
-	EmplPosition getEmplPositionId();
+	EmplPosition getEmplPosition();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getEmplPositionId <em>Empl Position Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getEmplPosition <em>Empl Position</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Empl Position Id</em>' reference.
-	 * @see #getEmplPositionId()
+	 * @param value the new value of the '<em>Empl Position</em>' reference.
+	 * @see #getEmplPosition()
 	 * @generated
 	 */
-	void setEmplPositionId(EmplPosition value);
-
-	/**
-	 * Returns the value of the '<em><b>Employee Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Employee Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Employee Party Id</em>' reference.
-	 * @see #setEmployeePartyId(Party)
-	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReview_EmployeePartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getEmployeePartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getEmployeePartyId <em>Employee Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Employee Party Id</em>' reference.
-	 * @see #getEmployeePartyId()
-	 * @generated
-	 */
-	void setEmployeePartyId(Party value);
+	void setEmplPosition(EmplPosition value);
 
 	/**
 	 * Returns the value of the '<em><b>Employee Role Type Id</b></em>' attribute.
@@ -174,30 +166,26 @@ public interface PerfReview extends EntityIdentifiable, EntityInfo {
 	void setFromDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Manager Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Manager Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Manager Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Manager Party Id</em>' reference.
-	 * @see #setManagerPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReview_ManagerPartyId()
+	 * @return the value of the '<em>Manager Party</em>' reference.
+	 * @see #setManagerParty(Party)
+	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReview_ManagerParty()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getManagerPartyId();
+	Party getManagerParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getManagerPartyId <em>Manager Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getManagerParty <em>Manager Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Manager Party Id</em>' reference.
-	 * @see #getManagerPartyId()
+	 * @param value the new value of the '<em>Manager Party</em>' reference.
+	 * @see #getManagerParty()
 	 * @generated
 	 */
-	void setManagerPartyId(Party value);
+	void setManagerParty(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Manager Role Type Id</b></em>' attribute.
@@ -226,30 +214,26 @@ public interface PerfReview extends EntityIdentifiable, EntityInfo {
 	void setManagerRoleTypeId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Payment Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Payment</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Payment Id</em>' reference.
-	 * @see #setPaymentId(Payment)
-	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReview_PaymentId()
+	 * @return the value of the '<em>Payment</em>' reference.
+	 * @see #setPayment(Payment)
+	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReview_Payment()
 	 * @model keys="paymentId"
 	 * @generated
 	 */
-	Payment getPaymentId();
+	Payment getPayment();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getPaymentId <em>Payment Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PerfReview#getPayment <em>Payment</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Payment Id</em>' reference.
-	 * @see #getPaymentId()
+	 * @param value the new value of the '<em>Payment</em>' reference.
+	 * @see #getPayment()
 	 * @generated
 	 */
-	void setPaymentId(Payment value);
+	void setPayment(Payment value);
 
 	/**
 	 * Returns the value of the '<em><b>Perf Review Id</b></em>' attribute.

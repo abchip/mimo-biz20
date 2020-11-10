@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCarrierShipmentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCarrierShipmentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCarrierShipmentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCarrierShipmentImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCarrierShipmentImpl#getFacilityId <em>Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCarrierShipmentImpl#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCarrierShipmentImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCarrierShipmentImpl#getFacility <em>Facility</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCarrierShipmentImpl#getShipmentMethodType <em>Shipment Method Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCarrierShipmentImpl#getRoleTypeId <em>Role Type Id</em>}</li>
  * </ul>
  *
@@ -155,8 +155,8 @@ public class FacilityCarrierShipmentImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(FacilityPackage.Literals.FACILITY_CARRIER_SHIPMENT__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(FacilityPackage.Literals.FACILITY_CARRIER_SHIPMENT__PARTY, true);
 	}
 
 	/**
@@ -165,8 +165,48 @@ public class FacilityCarrierShipmentImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(FacilityPackage.Literals.FACILITY_CARRIER_SHIPMENT__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(FacilityPackage.Literals.FACILITY_CARRIER_SHIPMENT__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Facility getFacility() {
+		return (Facility)eGet(FacilityPackage.Literals.FACILITY_CARRIER_SHIPMENT__FACILITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacility(Facility newFacility) {
+		eSet(FacilityPackage.Literals.FACILITY_CARRIER_SHIPMENT__FACILITY, newFacility);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ShipmentMethodType getShipmentMethodType() {
+		return (ShipmentMethodType)eGet(FacilityPackage.Literals.FACILITY_CARRIER_SHIPMENT__SHIPMENT_METHOD_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setShipmentMethodType(ShipmentMethodType newShipmentMethodType) {
+		eSet(FacilityPackage.Literals.FACILITY_CARRIER_SHIPMENT__SHIPMENT_METHOD_TYPE, newShipmentMethodType);
 	}
 
 	/**
@@ -225,46 +265,6 @@ public class FacilityCarrierShipmentImpl extends EntityIdentifiableImpl implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ShipmentMethodType getShipmentMethodTypeId() {
-		return (ShipmentMethodType)eGet(FacilityPackage.Literals.FACILITY_CARRIER_SHIPMENT__SHIPMENT_METHOD_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setShipmentMethodTypeId(ShipmentMethodType newShipmentMethodTypeId) {
-		eSet(FacilityPackage.Literals.FACILITY_CARRIER_SHIPMENT__SHIPMENT_METHOD_TYPE_ID, newShipmentMethodTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(FacilityPackage.Literals.FACILITY_CARRIER_SHIPMENT__FACILITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(FacilityPackage.Literals.FACILITY_CARRIER_SHIPMENT__FACILITY_ID, newFacilityId);
 	}
 
 } //FacilityCarrierShipmentImpl

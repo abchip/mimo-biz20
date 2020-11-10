@@ -24,13 +24,13 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getWorkEffortId <em>Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getFixedAssetId <em>Fixed Asset Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getWorkEffort <em>Work Effort</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getFixedAsset <em>Fixed Asset</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getAllocatedCost <em>Allocated Cost</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getAvailabilityStatusId <em>Availability Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getAvailabilityStatus <em>Availability Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -39,6 +39,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface WorkEffortFixedAssetAssign extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Work Effort</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Work Effort</em>' reference.
+	 * @see #setWorkEffort(WorkEffort)
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortFixedAssetAssign_WorkEffort()
+	 * @model keys="workEffortId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	WorkEffort getWorkEffort();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getWorkEffort <em>Work Effort</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Work Effort</em>' reference.
+	 * @see #getWorkEffort()
+	 * @generated
+	 */
+	void setWorkEffort(WorkEffort value);
+
+	/**
+	 * Returns the value of the '<em><b>Fixed Asset</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fixed Asset</em>' reference.
+	 * @see #setFixedAsset(FixedAsset)
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortFixedAssetAssign_FixedAsset()
+	 * @model keys="fixedAssetId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	FixedAsset getFixedAsset();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getFixedAsset <em>Fixed Asset</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Fixed Asset</em>' reference.
+	 * @see #getFixedAsset()
+	 * @generated
+	 */
+	void setFixedAsset(FixedAsset value);
+
 	/**
 	 * Returns the value of the '<em><b>Allocated Cost</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -66,31 +112,27 @@ public interface WorkEffortFixedAssetAssign extends EntityIdentifiable, EntityIn
 	void setAllocatedCost(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Availability Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Availability Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Availability Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Availability Status Id</em>' reference.
-	 * @see #setAvailabilityStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortFixedAssetAssign_AvailabilityStatusId()
+	 * @return the value of the '<em>Availability Status</em>' reference.
+	 * @see #setAvailabilityStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortFixedAssetAssign_AvailabilityStatus()
 	 * @model keys="statusId"
 	 *        annotation="mimo-ent-slot help='Points to StatusItem value with statusTypeId=\"WEFA_AVAILABILITY\"'"
 	 * @generated
 	 */
-	StatusItem getAvailabilityStatusId();
+	StatusItem getAvailabilityStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getAvailabilityStatusId <em>Availability Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getAvailabilityStatus <em>Availability Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Availability Status Id</em>' reference.
-	 * @see #getAvailabilityStatusId()
+	 * @param value the new value of the '<em>Availability Status</em>' reference.
+	 * @see #getAvailabilityStatus()
 	 * @generated
 	 */
-	void setAvailabilityStatusId(StatusItem value);
+	void setAvailabilityStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
@@ -119,31 +161,26 @@ public interface WorkEffortFixedAssetAssign extends EntityIdentifiable, EntityIn
 	void setComments(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Fixed Asset Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fixed Asset Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fixed Asset Id</em>' reference.
-	 * @see #setFixedAssetId(FixedAsset)
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortFixedAssetAssign_FixedAssetId()
-	 * @model keys="fixedAssetId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortFixedAssetAssign_Status()
+	 * @model keys="statusId"
 	 * @generated
 	 */
-	FixedAsset getFixedAssetId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getFixedAssetId <em>Fixed Asset Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fixed Asset Id</em>' reference.
-	 * @see #getFixedAssetId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setFixedAssetId(FixedAsset value);
+	void setStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -173,32 +210,6 @@ public interface WorkEffortFixedAssetAssign extends EntityIdentifiable, EntityIn
 	void setFromDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortFixedAssetAssign_StatusId()
-	 * @model keys="statusId"
-	 * @generated
-	 */
-	StatusItem getStatusId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getStatusId <em>Status Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
-	 * @generated
-	 */
-	void setStatusId(StatusItem value);
-
-	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -223,32 +234,5 @@ public interface WorkEffortFixedAssetAssign extends EntityIdentifiable, EntityIn
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Work Effort Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Work Effort Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Work Effort Id</em>' reference.
-	 * @see #setWorkEffortId(WorkEffort)
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortFixedAssetAssign_WorkEffortId()
-	 * @model keys="workEffortId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	WorkEffort getWorkEffortId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getWorkEffortId <em>Work Effort Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Work Effort Id</em>' reference.
-	 * @see #getWorkEffortId()
-	 * @generated
-	 */
-	void setWorkEffortId(WorkEffort value);
 
 } // WorkEffortFixedAssetAssign

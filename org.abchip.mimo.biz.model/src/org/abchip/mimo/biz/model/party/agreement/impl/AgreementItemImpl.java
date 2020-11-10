@@ -29,10 +29,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementItemImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementItemImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementItemImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementItemImpl#getAgreementId <em>Agreement Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementItemImpl#getAgreement <em>Agreement</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementItemImpl#getAgreementItemSeqId <em>Agreement Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementItemImpl#getAgreementImage <em>Agreement Image</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementItemImpl#getAgreementItemTypeId <em>Agreement Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementItemImpl#getAgreementItemType <em>Agreement Item Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementItemImpl#getAgreementText <em>Agreement Text</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementItemImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
  * </ul>
@@ -155,6 +155,26 @@ public class AgreementItemImpl extends EntityTypedImpl<AgreementItemType> implem
 	 * @generated
 	 */
 	@Override
+	public Agreement getAgreement() {
+		return (Agreement)eGet(AgreementPackage.Literals.AGREEMENT_ITEM__AGREEMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAgreement(Agreement newAgreement) {
+		eSet(AgreementPackage.Literals.AGREEMENT_ITEM__AGREEMENT, newAgreement);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object getAgreementImage() {
 		return (Object)eGet(AgreementPackage.Literals.AGREEMENT_ITEM__AGREEMENT_IMAGE, true);
 	}
@@ -167,6 +187,26 @@ public class AgreementItemImpl extends EntityTypedImpl<AgreementItemType> implem
 	@Override
 	public void setAgreementImage(Object newAgreementImage) {
 		eSet(AgreementPackage.Literals.AGREEMENT_ITEM__AGREEMENT_IMAGE, newAgreementImage);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AgreementItemType getAgreementItemType() {
+		return (AgreementItemType)eGet(AgreementPackage.Literals.AGREEMENT_ITEM__AGREEMENT_ITEM_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAgreementItemType(AgreementItemType newAgreementItemType) {
+		eSet(AgreementPackage.Literals.AGREEMENT_ITEM__AGREEMENT_ITEM_TYPE, newAgreementItemType);
 	}
 
 	/**
@@ -265,46 +305,6 @@ public class AgreementItemImpl extends EntityTypedImpl<AgreementItemType> implem
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Agreement getAgreementId() {
-		return (Agreement)eGet(AgreementPackage.Literals.AGREEMENT_ITEM__AGREEMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAgreementId(Agreement newAgreementId) {
-		eSet(AgreementPackage.Literals.AGREEMENT_ITEM__AGREEMENT_ID, newAgreementId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public AgreementItemType getAgreementItemTypeId() {
-		return (AgreementItemType)eGet(AgreementPackage.Literals.AGREEMENT_ITEM__AGREEMENT_ITEM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAgreementItemTypeId(AgreementItemType newAgreementItemTypeId) {
-		eSet(AgreementPackage.Literals.AGREEMENT_ITEM__AGREEMENT_ITEM_TYPE_ID, newAgreementItemTypeId);
 	}
 
 } //AgreementItemImpl

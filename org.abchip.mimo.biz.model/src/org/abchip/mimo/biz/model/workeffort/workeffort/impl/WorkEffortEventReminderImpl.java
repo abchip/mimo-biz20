@@ -30,12 +30,12 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortEventReminderImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortEventReminderImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortEventReminderImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortEventReminderImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortEventReminderImpl#getWorkEffort <em>Work Effort</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortEventReminderImpl#getSequenceId <em>Sequence Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortEventReminderImpl#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortEventReminderImpl#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortEventReminderImpl#getCurrentCount <em>Current Count</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortEventReminderImpl#getLocaleId <em>Locale Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortEventReminderImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortEventReminderImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortEventReminderImpl#getReminderDateTime <em>Reminder Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortEventReminderImpl#getReminderOffset <em>Reminder Offset</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortEventReminderImpl#getRepeatCount <em>Repeat Count</em>}</li>
@@ -162,8 +162,8 @@ public class WorkEffortEventReminderImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(WorkeffortPackage.Literals.WORK_EFFORT_EVENT_REMINDER__CONTACT_MECH_ID, true);
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_EVENT_REMINDER__WORK_EFFORT, true);
 	}
 
 	/**
@@ -172,8 +172,8 @@ public class WorkEffortEventReminderImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_EVENT_REMINDER__CONTACT_MECH_ID, newContactMechId);
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_EVENT_REMINDER__WORK_EFFORT, newWorkEffort);
 	}
 
 	/**
@@ -222,8 +222,8 @@ public class WorkEffortEventReminderImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(WorkeffortPackage.Literals.WORK_EFFORT_EVENT_REMINDER__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(WorkeffortPackage.Literals.WORK_EFFORT_EVENT_REMINDER__PARTY, true);
 	}
 
 	/**
@@ -232,8 +232,8 @@ public class WorkEffortEventReminderImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_EVENT_REMINDER__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_EVENT_REMINDER__PARTY, newParty);
 	}
 
 	/**
@@ -342,6 +342,26 @@ public class WorkEffortEventReminderImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(WorkeffortPackage.Literals.WORK_EFFORT_EVENT_REMINDER__CONTACT_MECH, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_EVENT_REMINDER__CONTACT_MECH, newContactMech);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getTimeZoneId() {
 		return (String)eGet(WorkeffortPackage.Literals.WORK_EFFORT_EVENT_REMINDER__TIME_ZONE_ID, true);
 	}
@@ -392,26 +412,6 @@ public class WorkEffortEventReminderImpl extends EntityIdentifiableImpl implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_EVENT_REMINDER__WORK_EFFORT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_EVENT_REMINDER__WORK_EFFORT_ID, newWorkEffortId);
 	}
 
 } //WorkEffortEventReminderImpl

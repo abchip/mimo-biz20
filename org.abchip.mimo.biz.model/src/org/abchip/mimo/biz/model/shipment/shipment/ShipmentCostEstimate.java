@@ -38,22 +38,22 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getOrderPricePercent <em>Order Price Percent</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getOversizePrice <em>Oversize Price</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getOversizeUnit <em>Oversize Unit</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getPriceBreakId <em>Price Break Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getPriceBreak <em>Price Break</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getPriceUnitPrice <em>Price Unit Price</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getPriceUomId <em>Price Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getPriceUom <em>Price Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getProductFeatureGroupId <em>Product Feature Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getProductStoreId <em>Product Store Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getProductStoreShipMethId <em>Product Store Ship Meth Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getQuantityBreakId <em>Quantity Break Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getProductStoreShipMeth <em>Product Store Ship Meth</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getQuantityBreak <em>Quantity Break</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getQuantityUnitPrice <em>Quantity Unit Price</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getQuantityUomId <em>Quantity Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getQuantityUom <em>Quantity Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getRoleType <em>Role Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getShippingPricePercent <em>Shipping Price Percent</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getWeightBreakId <em>Weight Break Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getWeightBreak <em>Weight Break</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getWeightUnitPrice <em>Weight Unit Price</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getWeightUomId <em>Weight Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getWeightUom <em>Weight Uom</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate()
@@ -348,56 +348,48 @@ public interface ShipmentCostEstimate extends EntityIdentifiable, EntityInfo {
 	void setOversizeUnit(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_PartyId()
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_Party()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getPartyId();
+	Party getParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getParty <em>Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setParty(Party value);
 
 	/**
-	 * Returns the value of the '<em><b>Price Break Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Price Break</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Price Break Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Price Break Id</em>' reference.
-	 * @see #setPriceBreakId(QuantityBreak)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_PriceBreakId()
+	 * @return the value of the '<em>Price Break</em>' reference.
+	 * @see #setPriceBreak(QuantityBreak)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_PriceBreak()
 	 * @model keys="quantityBreakId"
 	 * @generated
 	 */
-	QuantityBreak getPriceBreakId();
+	QuantityBreak getPriceBreak();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getPriceBreakId <em>Price Break Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getPriceBreak <em>Price Break</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Price Break Id</em>' reference.
-	 * @see #getPriceBreakId()
+	 * @param value the new value of the '<em>Price Break</em>' reference.
+	 * @see #getPriceBreak()
 	 * @generated
 	 */
-	void setPriceBreakId(QuantityBreak value);
+	void setPriceBreak(QuantityBreak value);
 
 	/**
 	 * Returns the value of the '<em><b>Price Unit Price</b></em>' attribute.
@@ -426,30 +418,26 @@ public interface ShipmentCostEstimate extends EntityIdentifiable, EntityInfo {
 	void setPriceUnitPrice(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Price Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Price Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Price Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Price Uom Id</em>' reference.
-	 * @see #setPriceUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_PriceUomId()
+	 * @return the value of the '<em>Price Uom</em>' reference.
+	 * @see #setPriceUom(Uom)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_PriceUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getPriceUomId();
+	Uom getPriceUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getPriceUomId <em>Price Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getPriceUom <em>Price Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Price Uom Id</em>' reference.
-	 * @see #getPriceUomId()
+	 * @param value the new value of the '<em>Price Uom</em>' reference.
+	 * @see #getPriceUom()
 	 * @generated
 	 */
-	void setPriceUomId(Uom value);
+	void setPriceUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Feature Group Id</b></em>' attribute.
@@ -504,56 +492,48 @@ public interface ShipmentCostEstimate extends EntityIdentifiable, EntityInfo {
 	void setProductStoreId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Store Ship Meth Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Store Ship Meth</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Ship Meth Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store Ship Meth Id</em>' reference.
-	 * @see #setProductStoreShipMethId(ProductStoreShipmentMeth)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_ProductStoreShipMethId()
+	 * @return the value of the '<em>Product Store Ship Meth</em>' reference.
+	 * @see #setProductStoreShipMeth(ProductStoreShipmentMeth)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_ProductStoreShipMeth()
 	 * @model keys="productStoreShipMethId"
 	 * @generated
 	 */
-	ProductStoreShipmentMeth getProductStoreShipMethId();
+	ProductStoreShipmentMeth getProductStoreShipMeth();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getProductStoreShipMethId <em>Product Store Ship Meth Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getProductStoreShipMeth <em>Product Store Ship Meth</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store Ship Meth Id</em>' reference.
-	 * @see #getProductStoreShipMethId()
+	 * @param value the new value of the '<em>Product Store Ship Meth</em>' reference.
+	 * @see #getProductStoreShipMeth()
 	 * @generated
 	 */
-	void setProductStoreShipMethId(ProductStoreShipmentMeth value);
+	void setProductStoreShipMeth(ProductStoreShipmentMeth value);
 
 	/**
-	 * Returns the value of the '<em><b>Quantity Break Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Quantity Break</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Quantity Break Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Quantity Break Id</em>' reference.
-	 * @see #setQuantityBreakId(QuantityBreak)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_QuantityBreakId()
+	 * @return the value of the '<em>Quantity Break</em>' reference.
+	 * @see #setQuantityBreak(QuantityBreak)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_QuantityBreak()
 	 * @model keys="quantityBreakId"
 	 * @generated
 	 */
-	QuantityBreak getQuantityBreakId();
+	QuantityBreak getQuantityBreak();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getQuantityBreakId <em>Quantity Break Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getQuantityBreak <em>Quantity Break</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Quantity Break Id</em>' reference.
-	 * @see #getQuantityBreakId()
+	 * @param value the new value of the '<em>Quantity Break</em>' reference.
+	 * @see #getQuantityBreak()
 	 * @generated
 	 */
-	void setQuantityBreakId(QuantityBreak value);
+	void setQuantityBreak(QuantityBreak value);
 
 	/**
 	 * Returns the value of the '<em><b>Quantity Unit Price</b></em>' attribute.
@@ -582,56 +562,48 @@ public interface ShipmentCostEstimate extends EntityIdentifiable, EntityInfo {
 	void setQuantityUnitPrice(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Quantity Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Quantity Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Quantity Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Quantity Uom Id</em>' reference.
-	 * @see #setQuantityUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_QuantityUomId()
+	 * @return the value of the '<em>Quantity Uom</em>' reference.
+	 * @see #setQuantityUom(Uom)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_QuantityUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getQuantityUomId();
+	Uom getQuantityUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getQuantityUomId <em>Quantity Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getQuantityUom <em>Quantity Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Quantity Uom Id</em>' reference.
-	 * @see #getQuantityUomId()
+	 * @param value the new value of the '<em>Quantity Uom</em>' reference.
+	 * @see #getQuantityUom()
 	 * @generated
 	 */
-	void setQuantityUomId(Uom value);
+	void setQuantityUom(Uom value);
 
 	/**
-	 * Returns the value of the '<em><b>Role Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Role Type Id</em>' reference.
-	 * @see #setRoleTypeId(RoleType)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_RoleTypeId()
+	 * @return the value of the '<em>Role Type</em>' reference.
+	 * @see #setRoleType(RoleType)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_RoleType()
 	 * @model keys="roleTypeId"
 	 * @generated
 	 */
-	RoleType getRoleTypeId();
+	RoleType getRoleType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getRoleTypeId <em>Role Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getRoleType <em>Role Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Role Type Id</em>' reference.
-	 * @see #getRoleTypeId()
+	 * @param value the new value of the '<em>Role Type</em>' reference.
+	 * @see #getRoleType()
 	 * @generated
 	 */
-	void setRoleTypeId(RoleType value);
+	void setRoleType(RoleType value);
 
 	/**
 	 * Returns the value of the '<em><b>Shipment Cost Estimate Id</b></em>' attribute.
@@ -713,30 +685,26 @@ public interface ShipmentCostEstimate extends EntityIdentifiable, EntityInfo {
 	void setShippingPricePercent(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Weight Break Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Weight Break</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Weight Break Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Weight Break Id</em>' reference.
-	 * @see #setWeightBreakId(QuantityBreak)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_WeightBreakId()
+	 * @return the value of the '<em>Weight Break</em>' reference.
+	 * @see #setWeightBreak(QuantityBreak)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_WeightBreak()
 	 * @model keys="quantityBreakId"
 	 * @generated
 	 */
-	QuantityBreak getWeightBreakId();
+	QuantityBreak getWeightBreak();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getWeightBreakId <em>Weight Break Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getWeightBreak <em>Weight Break</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Weight Break Id</em>' reference.
-	 * @see #getWeightBreakId()
+	 * @param value the new value of the '<em>Weight Break</em>' reference.
+	 * @see #getWeightBreak()
 	 * @generated
 	 */
-	void setWeightBreakId(QuantityBreak value);
+	void setWeightBreak(QuantityBreak value);
 
 	/**
 	 * Returns the value of the '<em><b>Weight Unit Price</b></em>' attribute.
@@ -765,29 +733,25 @@ public interface ShipmentCostEstimate extends EntityIdentifiable, EntityInfo {
 	void setWeightUnitPrice(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Weight Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Weight Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Weight Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Weight Uom Id</em>' reference.
-	 * @see #setWeightUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_WeightUomId()
+	 * @return the value of the '<em>Weight Uom</em>' reference.
+	 * @see #setWeightUom(Uom)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_WeightUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getWeightUomId();
+	Uom getWeightUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getWeightUomId <em>Weight Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentCostEstimate#getWeightUom <em>Weight Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Weight Uom Id</em>' reference.
-	 * @see #getWeightUomId()
+	 * @param value the new value of the '<em>Weight Uom</em>' reference.
+	 * @see #getWeightUom()
 	 * @generated
 	 */
-	void setWeightUomId(Uom value);
+	void setWeightUom(Uom value);
 
 } // ShipmentCostEstimate

@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.VendorProductImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.VendorProductImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.VendorProductImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.VendorProductImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.VendorProductImpl#getVendorPartyId <em>Vendor Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.VendorProductImpl#getProductStoreGroupId <em>Product Store Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.VendorProductImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.VendorProductImpl#getVendorParty <em>Vendor Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.VendorProductImpl#getProductStoreGroup <em>Product Store Group</em>}</li>
  * </ul>
  *
  * @generated
@@ -154,8 +154,8 @@ public class VendorProductImpl extends EntityIdentifiableImpl implements VendorP
 	 * @generated
 	 */
 	@Override
-	public ProductStoreGroup getProductStoreGroupId() {
-		return (ProductStoreGroup)eGet(ProductPackage.Literals.VENDOR_PRODUCT__PRODUCT_STORE_GROUP_ID, true);
+	public Product getProduct() {
+		return (Product)eGet(ProductPackage.Literals.VENDOR_PRODUCT__PRODUCT, true);
 	}
 
 	/**
@@ -164,8 +164,48 @@ public class VendorProductImpl extends EntityIdentifiableImpl implements VendorP
 	 * @generated
 	 */
 	@Override
-	public void setProductStoreGroupId(ProductStoreGroup newProductStoreGroupId) {
-		eSet(ProductPackage.Literals.VENDOR_PRODUCT__PRODUCT_STORE_GROUP_ID, newProductStoreGroupId);
+	public void setProduct(Product newProduct) {
+		eSet(ProductPackage.Literals.VENDOR_PRODUCT__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getVendorParty() {
+		return (Party)eGet(ProductPackage.Literals.VENDOR_PRODUCT__VENDOR_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setVendorParty(Party newVendorParty) {
+		eSet(ProductPackage.Literals.VENDOR_PRODUCT__VENDOR_PARTY, newVendorParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductStoreGroup getProductStoreGroup() {
+		return (ProductStoreGroup)eGet(ProductPackage.Literals.VENDOR_PRODUCT__PRODUCT_STORE_GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductStoreGroup(ProductStoreGroup newProductStoreGroup) {
+		eSet(ProductPackage.Literals.VENDOR_PRODUCT__PRODUCT_STORE_GROUP, newProductStoreGroup);
 	}
 
 	/**
@@ -204,46 +244,6 @@ public class VendorProductImpl extends EntityIdentifiableImpl implements VendorP
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getVendorPartyId() {
-		return (Party)eGet(ProductPackage.Literals.VENDOR_PRODUCT__VENDOR_PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setVendorPartyId(Party newVendorPartyId) {
-		eSet(ProductPackage.Literals.VENDOR_PRODUCT__VENDOR_PARTY_ID, newVendorPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(ProductPackage.Literals.VENDOR_PRODUCT__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(ProductPackage.Literals.VENDOR_PRODUCT__PRODUCT_ID, newProductId);
 	}
 
 } //VendorProductImpl

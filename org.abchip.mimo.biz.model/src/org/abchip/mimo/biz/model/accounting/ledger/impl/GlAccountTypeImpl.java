@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeImpl#getGlAccountTypeDefaults <em>Gl Account Type Defaults</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -213,8 +213,8 @@ public class GlAccountTypeImpl extends EntityTypeImpl<GlAccount> implements GlAc
 	 * @generated
 	 */
 	@Override
-	public GlAccountType getParentTypeId() {
-		return (GlAccountType)eGet(LedgerPackage.Literals.GL_ACCOUNT_TYPE__PARENT_TYPE_ID, true);
+	public GlAccountType getParentType() {
+		return (GlAccountType)eGet(LedgerPackage.Literals.GL_ACCOUNT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -223,8 +223,8 @@ public class GlAccountTypeImpl extends EntityTypeImpl<GlAccount> implements GlAc
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(GlAccountType newParentTypeId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(GlAccountType newParentType) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

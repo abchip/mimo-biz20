@@ -71,24 +71,6 @@ public interface OrderPackage extends EPackage {
 	int CHANGE_ORDER_STATUS = 0;
 
 	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHANGE_ORDER_STATUS__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHANGE_ORDER_STATUS__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -98,13 +80,13 @@ public interface OrderPackage extends EPackage {
 	int CHANGE_ORDER_STATUS__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
+	int CHANGE_ORDER_STATUS__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Change Reason</b></em>' attribute.
@@ -245,24 +227,6 @@ public interface OrderPackage extends EPackage {
 	int RESERVE_STORE_INVENTORY = 2;
 
 	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESERVE_STORE_INVENTORY__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESERVE_STORE_INVENTORY__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -272,13 +236,13 @@ public interface OrderPackage extends EPackage {
 	int RESERVE_STORE_INVENTORY__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESERVE_STORE_INVENTORY__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
+	int RESERVE_STORE_INVENTORY__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Facility Id</b></em>' attribute.
@@ -410,24 +374,6 @@ public interface OrderPackage extends EPackage {
 	int RESET_GRAND_TOTAL = 4;
 
 	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESET_GRAND_TOTAL__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESET_GRAND_TOTAL__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -437,13 +383,13 @@ public interface OrderPackage extends EPackage {
 	int RESET_GRAND_TOTAL__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESET_GRAND_TOTAL__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
+	int RESET_GRAND_TOTAL__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Order Id</b></em>' attribute.
@@ -522,24 +468,6 @@ public interface OrderPackage extends EPackage {
 	int RECALC_TAX_TOTAL = 6;
 
 	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RECALC_TAX_TOTAL__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RECALC_TAX_TOTAL__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -549,13 +477,13 @@ public interface OrderPackage extends EPackage {
 	int RECALC_TAX_TOTAL__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RECALC_TAX_TOTAL__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
+	int RECALC_TAX_TOTAL__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Order Id</b></em>' attribute.

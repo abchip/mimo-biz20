@@ -20,10 +20,10 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.common.user.UserPreference#getUserLoginId <em>User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.user.UserPreference#getUserLogin <em>User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.user.UserPreference#getUserPrefTypeId <em>User Pref Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.user.UserPreference#getUserPrefDataType <em>User Pref Data Type</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.user.UserPreference#getUserPrefGroupTypeId <em>User Pref Group Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.user.UserPreference#getUserPrefGroupType <em>User Pref Group Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.user.UserPreference#getUserPrefValue <em>User Pref Value</em>}</li>
  * </ul>
  *
@@ -33,31 +33,27 @@ import org.abchip.mimo.entity.EntityTyped;
  */
 public interface UserPreference extends EntityTyped<UserPrefGroupType>, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>User Login Id</b></em>' reference.
+	 * Returns the value of the '<em><b>User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>User Login Id</em>' reference.
-	 * @see #setUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.common.user.UserPackage#getUserPreference_UserLoginId()
+	 * @return the value of the '<em>User Login</em>' reference.
+	 * @see #setUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.common.user.UserPackage#getUserPreference_UserLogin()
 	 * @model keys="userLoginId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	UserLogin getUserLoginId();
+	UserLogin getUserLogin();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.user.UserPreference#getUserLoginId <em>User Login Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.user.UserPreference#getUserLogin <em>User Login</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>User Login Id</em>' reference.
-	 * @see #getUserLoginId()
+	 * @param value the new value of the '<em>User Login</em>' reference.
+	 * @see #getUserLogin()
 	 * @generated
 	 */
-	void setUserLoginId(UserLogin value);
+	void setUserLogin(UserLogin value);
 
 	/**
 	 * Returns the value of the '<em><b>User Pref Data Type</b></em>' attribute.
@@ -87,31 +83,27 @@ public interface UserPreference extends EntityTyped<UserPrefGroupType>, EntityIn
 	void setUserPrefDataType(String value);
 
 	/**
-	 * Returns the value of the '<em><b>User Pref Group Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>User Pref Group Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>User Pref Group Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>User Pref Group Type Id</em>' reference.
-	 * @see #setUserPrefGroupTypeId(UserPrefGroupType)
-	 * @see org.abchip.mimo.biz.model.common.user.UserPackage#getUserPreference_UserPrefGroupTypeId()
+	 * @return the value of the '<em>User Pref Group Type</em>' reference.
+	 * @see #setUserPrefGroupType(UserPrefGroupType)
+	 * @see org.abchip.mimo.biz.model.common.user.UserPackage#getUserPreference_UserPrefGroupType()
 	 * @model keys="userPrefGroupTypeId"
 	 *        annotation="mimo-ent-slot help='Used to assemble groups of preferences'"
 	 * @generated
 	 */
-	UserPrefGroupType getUserPrefGroupTypeId();
+	UserPrefGroupType getUserPrefGroupType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.user.UserPreference#getUserPrefGroupTypeId <em>User Pref Group Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.user.UserPreference#getUserPrefGroupType <em>User Pref Group Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>User Pref Group Type Id</em>' reference.
-	 * @see #getUserPrefGroupTypeId()
+	 * @param value the new value of the '<em>User Pref Group Type</em>' reference.
+	 * @see #getUserPrefGroupType()
 	 * @generated
 	 */
-	void setUserPrefGroupTypeId(UserPrefGroupType value);
+	void setUserPrefGroupType(UserPrefGroupType value);
 
 	/**
 	 * Returns the value of the '<em><b>User Pref Type Id</b></em>' attribute.

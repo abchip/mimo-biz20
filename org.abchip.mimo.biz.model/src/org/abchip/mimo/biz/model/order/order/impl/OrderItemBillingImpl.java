@@ -33,14 +33,14 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemBillingImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemBillingImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemBillingImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemBillingImpl#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemBillingImpl#getInvoiceId <em>Invoice Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemBillingImpl#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemBillingImpl#getInvoice <em>Invoice</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemBillingImpl#getInvoiceItemSeqId <em>Invoice Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemBillingImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemBillingImpl#getAmount <em>Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemBillingImpl#getItemIssuanceId <em>Item Issuance Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemBillingImpl#getItemIssuance <em>Item Issuance</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemBillingImpl#getQuantity <em>Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemBillingImpl#getShipmentReceiptId <em>Shipment Receipt Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemBillingImpl#getShipmentReceipt <em>Shipment Receipt</em>}</li>
  * </ul>
  *
  * @generated
@@ -162,6 +162,46 @@ public class OrderItemBillingImpl extends EntityIdentifiableImpl implements Orde
 	 * @generated
 	 */
 	@Override
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ITEM_BILLING__ORDER, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_BILLING__ORDER, newOrder);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Invoice getInvoice() {
+		return (Invoice)eGet(OrderPackage.Literals.ORDER_ITEM_BILLING__INVOICE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInvoice(Invoice newInvoice) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_BILLING__INVOICE, newInvoice);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAmount() {
 		return (BigDecimal)eGet(OrderPackage.Literals.ORDER_ITEM_BILLING__AMOUNT, true);
 	}
@@ -182,8 +222,8 @@ public class OrderItemBillingImpl extends EntityIdentifiableImpl implements Orde
 	 * @generated
 	 */
 	@Override
-	public Invoice getInvoiceId() {
-		return (Invoice)eGet(OrderPackage.Literals.ORDER_ITEM_BILLING__INVOICE_ID, true);
+	public ItemIssuance getItemIssuance() {
+		return (ItemIssuance)eGet(OrderPackage.Literals.ORDER_ITEM_BILLING__ITEM_ISSUANCE, true);
 	}
 
 	/**
@@ -192,8 +232,8 @@ public class OrderItemBillingImpl extends EntityIdentifiableImpl implements Orde
 	 * @generated
 	 */
 	@Override
-	public void setInvoiceId(Invoice newInvoiceId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_BILLING__INVOICE_ID, newInvoiceId);
+	public void setItemIssuance(ItemIssuance newItemIssuance) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_BILLING__ITEM_ISSUANCE, newItemIssuance);
 	}
 
 	/**
@@ -214,46 +254,6 @@ public class OrderItemBillingImpl extends EntityIdentifiableImpl implements Orde
 	@Override
 	public void setInvoiceItemSeqId(String newInvoiceItemSeqId) {
 		eSet(OrderPackage.Literals.ORDER_ITEM_BILLING__INVOICE_ITEM_SEQ_ID, newInvoiceItemSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ItemIssuance getItemIssuanceId() {
-		return (ItemIssuance)eGet(OrderPackage.Literals.ORDER_ITEM_BILLING__ITEM_ISSUANCE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setItemIssuanceId(ItemIssuance newItemIssuanceId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_BILLING__ITEM_ISSUANCE_ID, newItemIssuanceId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ITEM_BILLING__ORDER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_BILLING__ORDER_ID, newOrderId);
 	}
 
 	/**
@@ -302,8 +302,8 @@ public class OrderItemBillingImpl extends EntityIdentifiableImpl implements Orde
 	 * @generated
 	 */
 	@Override
-	public ShipmentReceipt getShipmentReceiptId() {
-		return (ShipmentReceipt)eGet(OrderPackage.Literals.ORDER_ITEM_BILLING__SHIPMENT_RECEIPT_ID, true);
+	public ShipmentReceipt getShipmentReceipt() {
+		return (ShipmentReceipt)eGet(OrderPackage.Literals.ORDER_ITEM_BILLING__SHIPMENT_RECEIPT, true);
 	}
 
 	/**
@@ -312,8 +312,8 @@ public class OrderItemBillingImpl extends EntityIdentifiableImpl implements Orde
 	 * @generated
 	 */
 	@Override
-	public void setShipmentReceiptId(ShipmentReceipt newShipmentReceiptId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_BILLING__SHIPMENT_RECEIPT_ID, newShipmentReceiptId);
+	public void setShipmentReceipt(ShipmentReceipt newShipmentReceipt) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_BILLING__SHIPMENT_RECEIPT, newShipmentReceipt);
 	}
 
 	/**

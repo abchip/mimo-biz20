@@ -693,7 +693,7 @@ public class DatasourcePackageImpl extends EPackageImpl implements DatasourcePac
 	 * @generated
 	 */
 	@Override
-	public EReference getDataSource_DataSourceTypeId() {
+	public EReference getDataSource_DataSourceType() {
 		return (EReference)dataSourceEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -768,7 +768,7 @@ public class DatasourcePackageImpl extends EPackageImpl implements DatasourcePac
 		// Create classes and their features
 		dataSourceEClass = createEClass(DATA_SOURCE);
 		createEAttribute(dataSourceEClass, DATA_SOURCE__DATA_SOURCE_ID);
-		createEReference(dataSourceEClass, DATA_SOURCE__DATA_SOURCE_TYPE_ID);
+		createEReference(dataSourceEClass, DATA_SOURCE__DATA_SOURCE_TYPE);
 		createEAttribute(dataSourceEClass, DATA_SOURCE__DESCRIPTION);
 
 		dataSourceTypeEClass = createEClass(DATA_SOURCE_TYPE);
@@ -823,8 +823,8 @@ public class DatasourcePackageImpl extends EPackageImpl implements DatasourcePac
 		// Initialize classes and features; add operations and parameters
 		initEClass(dataSourceEClass, DataSource.class, "DataSource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDataSource_DataSourceId(), ecorePackage.getEString(), "dataSourceId", null, 1, 1, DataSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDataSource_DataSourceTypeId(), this.getDataSourceType(), null, "dataSourceTypeId", null, 0, 1, DataSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getDataSource_DataSourceTypeId().getEKeys().add(this.getDataSourceType_DataSourceTypeId());
+		initEReference(getDataSource_DataSourceType(), this.getDataSourceType(), null, "dataSourceType", null, 0, 1, DataSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getDataSource_DataSourceType().getEKeys().add(this.getDataSourceType_DataSourceTypeId());
 		initEAttribute(getDataSource_Description(), ecorePackage.getEString(), "description", null, 0, 1, DataSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(dataSourceTypeEClass, DataSourceType.class, "DataSourceType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

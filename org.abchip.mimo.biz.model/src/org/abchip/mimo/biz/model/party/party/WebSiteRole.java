@@ -21,9 +21,9 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.WebSiteRole#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.WebSiteRole#getRoleTypeId <em>Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.WebSiteRole#getWebSiteId <em>Web Site Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.WebSiteRole#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.WebSiteRole#getRoleType <em>Role Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.WebSiteRole#getWebSite <em>Web Site</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.WebSiteRole#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.WebSiteRole#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.WebSiteRole#getThruDate <em>Thru Date</em>}</li>
@@ -34,6 +34,75 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface WebSiteRole extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getWebSiteRole_Party()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.WebSiteRole#getParty <em>Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
+	 * @generated
+	 */
+	void setParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Role Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Role Type</em>' reference.
+	 * @see #setRoleType(RoleType)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getWebSiteRole_RoleType()
+	 * @model keys="roleTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	RoleType getRoleType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.WebSiteRole#getRoleType <em>Role Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Role Type</em>' reference.
+	 * @see #getRoleType()
+	 * @generated
+	 */
+	void setRoleType(RoleType value);
+
+	/**
+	 * Returns the value of the '<em><b>Web Site</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Web Site</em>' reference.
+	 * @see #setWebSite(WebSite)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getWebSiteRole_WebSite()
+	 * @model keys="webSiteId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	WebSite getWebSite();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.WebSiteRole#getWebSite <em>Web Site</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Web Site</em>' reference.
+	 * @see #getWebSite()
+	 * @generated
+	 */
+	void setWebSite(WebSite value);
+
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -112,86 +181,5 @@ public interface WebSiteRole extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Web Site Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Web Site Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Web Site Id</em>' reference.
-	 * @see #setWebSiteId(WebSite)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getWebSiteRole_WebSiteId()
-	 * @model keys="webSiteId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	WebSite getWebSiteId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.WebSiteRole#getWebSiteId <em>Web Site Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Web Site Id</em>' reference.
-	 * @see #getWebSiteId()
-	 * @generated
-	 */
-	void setWebSiteId(WebSite value);
-
-	/**
-	 * Returns the value of the '<em><b>Role Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Role Type Id</em>' reference.
-	 * @see #setRoleTypeId(RoleType)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getWebSiteRole_RoleTypeId()
-	 * @model keys="roleTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	RoleType getRoleTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.WebSiteRole#getRoleTypeId <em>Role Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Role Type Id</em>' reference.
-	 * @see #getRoleTypeId()
-	 * @generated
-	 */
-	void setRoleTypeId(RoleType value);
-
-	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getWebSiteRole_PartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.WebSiteRole#getPartyId <em>Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
-	 * @generated
-	 */
-	void setPartyId(Party value);
 
 } // WebSiteRole

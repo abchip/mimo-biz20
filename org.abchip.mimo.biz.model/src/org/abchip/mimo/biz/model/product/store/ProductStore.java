@@ -50,10 +50,10 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isCheckInventory <em>Check Inventory</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getCompanyName <em>Company Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getDaysToCancelNonPay <em>Days To Cancel Non Pay</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getDefaultCurrencyUomId <em>Default Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getDefaultCurrencyUom <em>Default Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getDefaultLocaleString <em>Default Locale String</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getDefaultPassword <em>Default Password</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getDefaultSalesChannelEnumId <em>Default Sales Channel Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getDefaultSalesChannelEnum <em>Default Sales Channel Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getDefaultTimeZoneString <em>Default Time Zone String</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getDigProdUploadCategoryId <em>Dig Prod Upload Category Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getDigitalItemApprovedStatus <em>Digital Item Approved Status</em>}</li>
@@ -63,7 +63,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getHeaderApprovedStatus <em>Header Approved Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getHeaderCancelStatus <em>Header Cancel Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getHeaderDeclinedStatus <em>Header Declined Status</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getInventoryFacilityId <em>Inventory Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getInventoryFacility <em>Inventory Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isIsDemoStore <em>Is Demo Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isIsImmediatelyFulfilled <em>Is Immediately Fulfilled</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getItemApprovedStatus <em>Item Approved Status</em>}</li>
@@ -81,8 +81,8 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getOneInventoryFacility <em>One Inventory Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getOrderDecimalQuantity <em>Order Decimal Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getOrderNumberPrefix <em>Order Number Prefix</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getPayToPartyId <em>Pay To Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getPrimaryStoreGroupId <em>Primary Store Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getPayToParty <em>Pay To Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getPrimaryStoreGroup <em>Primary Store Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isProdSearchExcludeVariants <em>Prod Search Exclude Variants</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getProductStoreCatalogs <em>Product Store Catalogs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getProductStoreEmailSettings <em>Product Store Email Settings</em>}</li>
@@ -97,9 +97,9 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isReqShipAddrForDigItems <em>Req Ship Addr For Dig Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isRequireCustomerRole <em>Require Customer Role</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isRequireInventory <em>Require Inventory</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getRequirementMethodEnumId <em>Requirement Method Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getRequirementMethodEnum <em>Requirement Method Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isReserveInventory <em>Reserve Inventory</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getReserveOrderEnumId <em>Reserve Order Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getReserveOrderEnum <em>Reserve Order Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isRetryFailedAuths <em>Retry Failed Auths</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isSelectPaymentTypePerItem <em>Select Payment Type Per Item</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getSetOwnerUponIssuance <em>Set Owner Upon Issuance</em>}</li>
@@ -109,7 +109,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isShowPricesWithVatTax <em>Show Prices With Vat Tax</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isShowTaxIsExempt <em>Show Tax Is Exempt</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isSplitPayPrefPerShpGrp <em>Split Pay Pref Per Shp Grp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getStoreCreditAccountEnumId <em>Store Credit Account Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getStoreCreditAccountEnum <em>Store Credit Account Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getStoreCreditValidDays <em>Store Credit Valid Days</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getStoreName <em>Store Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getSubtitle <em>Subtitle</em>}</li>
@@ -584,30 +584,26 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	void setDaysToCancelNonPay(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Default Currency Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Default Currency Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Default Currency Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Default Currency Uom Id</em>' reference.
-	 * @see #setDefaultCurrencyUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_DefaultCurrencyUomId()
+	 * @return the value of the '<em>Default Currency Uom</em>' reference.
+	 * @see #setDefaultCurrencyUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_DefaultCurrencyUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getDefaultCurrencyUomId();
+	Uom getDefaultCurrencyUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getDefaultCurrencyUomId <em>Default Currency Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getDefaultCurrencyUom <em>Default Currency Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Default Currency Uom Id</em>' reference.
-	 * @see #getDefaultCurrencyUomId()
+	 * @param value the new value of the '<em>Default Currency Uom</em>' reference.
+	 * @see #getDefaultCurrencyUom()
 	 * @generated
 	 */
-	void setDefaultCurrencyUomId(Uom value);
+	void setDefaultCurrencyUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Default Locale String</b></em>' attribute.
@@ -662,30 +658,26 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	void setDefaultPassword(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Default Sales Channel Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Default Sales Channel Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Default Sales Channel Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Default Sales Channel Enum Id</em>' reference.
-	 * @see #setDefaultSalesChannelEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_DefaultSalesChannelEnumId()
+	 * @return the value of the '<em>Default Sales Channel Enum</em>' reference.
+	 * @see #setDefaultSalesChannelEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_DefaultSalesChannelEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getDefaultSalesChannelEnumId();
+	Enumeration getDefaultSalesChannelEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getDefaultSalesChannelEnumId <em>Default Sales Channel Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getDefaultSalesChannelEnum <em>Default Sales Channel Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Default Sales Channel Enum Id</em>' reference.
-	 * @see #getDefaultSalesChannelEnumId()
+	 * @param value the new value of the '<em>Default Sales Channel Enum</em>' reference.
+	 * @see #getDefaultSalesChannelEnum()
 	 * @generated
 	 */
-	void setDefaultSalesChannelEnumId(Enumeration value);
+	void setDefaultSalesChannelEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Default Time Zone String</b></em>' attribute.
@@ -1078,6 +1070,28 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	void setHeaderDeclinedStatus(StatusItem value);
 
 	/**
+	 * Returns the value of the '<em><b>Inventory Facility</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Inventory Facility</em>' reference.
+	 * @see #setInventoryFacility(Facility)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_InventoryFacility()
+	 * @model keys="facilityId"
+	 * @generated
+	 */
+	Facility getInventoryFacility();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getInventoryFacility <em>Inventory Facility</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Inventory Facility</em>' reference.
+	 * @see #getInventoryFacility()
+	 * @generated
+	 */
+	void setInventoryFacility(Facility value);
+
+	/**
 	 * Returns the value of the '<em><b>Item Approved Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -1331,6 +1345,51 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	void setOrderNumberPrefix(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Pay To Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Pay To Party</em>' reference.
+	 * @see #setPayToParty(Party)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_PayToParty()
+	 * @model keys="partyId"
+	 *        annotation="mimo-ent-slot help='Note that this corresponds with the organizationPartyId that GL transactions will be posted to.'"
+	 * @generated
+	 */
+	Party getPayToParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getPayToParty <em>Pay To Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Pay To Party</em>' reference.
+	 * @see #getPayToParty()
+	 * @generated
+	 */
+	void setPayToParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Primary Store Group</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Primary Store Group</em>' reference.
+	 * @see #setPrimaryStoreGroup(ProductStoreGroup)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_PrimaryStoreGroup()
+	 * @model keys="productStoreGroupId"
+	 * @generated
+	 */
+	ProductStoreGroup getPrimaryStoreGroup();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getPrimaryStoreGroup <em>Primary Store Group</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Primary Store Group</em>' reference.
+	 * @see #getPrimaryStoreGroup()
+	 * @generated
+	 */
+	void setPrimaryStoreGroup(ProductStoreGroup value);
+
+	/**
 	 * Returns the value of the '<em><b>Req Ship Addr For Dig Items</b></em>' attribute.
 	 * The default value is <code>"true"</code>.
 	 * <!-- begin-user-doc -->
@@ -1411,6 +1470,28 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	void setRequireInventory(boolean value);
 
 	/**
+	 * Returns the value of the '<em><b>Requirement Method Enum</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Requirement Method Enum</em>' reference.
+	 * @see #setRequirementMethodEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_RequirementMethodEnum()
+	 * @model keys="enumId"
+	 * @generated
+	 */
+	Enumeration getRequirementMethodEnum();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getRequirementMethodEnum <em>Requirement Method Enum</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Requirement Method Enum</em>' reference.
+	 * @see #getRequirementMethodEnum()
+	 * @generated
+	 */
+	void setRequirementMethodEnum(Enumeration value);
+
+	/**
 	 * Returns the value of the '<em><b>Reserve Inventory</b></em>' attribute.
 	 * The default value is <code>"true"</code>.
 	 * <!-- begin-user-doc -->
@@ -1436,6 +1517,28 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setReserveInventory(boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Reserve Order Enum</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Reserve Order Enum</em>' reference.
+	 * @see #setReserveOrderEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ReserveOrderEnum()
+	 * @model keys="enumId"
+	 * @generated
+	 */
+	Enumeration getReserveOrderEnum();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getReserveOrderEnum <em>Reserve Order Enum</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Reserve Order Enum</em>' reference.
+	 * @see #getReserveOrderEnum()
+	 * @generated
+	 */
+	void setReserveOrderEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Retry Failed Auths</b></em>' attribute.
@@ -1676,110 +1779,27 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	void setSplitPayPrefPerShpGrp(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Pay To Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pay To Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Pay To Party Id</em>' reference.
-	 * @see #setPayToPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_PayToPartyId()
-	 * @model keys="partyId"
-	 *        annotation="mimo-ent-slot help='Note that this corresponds with the organizationPartyId that GL transactions will be posted to.'"
-	 * @generated
-	 */
-	Party getPayToPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getPayToPartyId <em>Pay To Party Id</em>}' reference.
+	 * Returns the value of the '<em><b>Store Credit Account Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Pay To Party Id</em>' reference.
-	 * @see #getPayToPartyId()
-	 * @generated
-	 */
-	void setPayToPartyId(Party value);
-
-	/**
-	 * Returns the value of the '<em><b>Requirement Method Enum Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Requirement Method Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Requirement Method Enum Id</em>' reference.
-	 * @see #setRequirementMethodEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_RequirementMethodEnumId()
-	 * @model keys="enumId"
-	 * @generated
-	 */
-	Enumeration getRequirementMethodEnumId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getRequirementMethodEnumId <em>Requirement Method Enum Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Requirement Method Enum Id</em>' reference.
-	 * @see #getRequirementMethodEnumId()
-	 * @generated
-	 */
-	void setRequirementMethodEnumId(Enumeration value);
-
-	/**
-	 * Returns the value of the '<em><b>Reserve Order Enum Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Reserve Order Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Reserve Order Enum Id</em>' reference.
-	 * @see #setReserveOrderEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ReserveOrderEnumId()
-	 * @model keys="enumId"
-	 * @generated
-	 */
-	Enumeration getReserveOrderEnumId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getReserveOrderEnumId <em>Reserve Order Enum Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Reserve Order Enum Id</em>' reference.
-	 * @see #getReserveOrderEnumId()
-	 * @generated
-	 */
-	void setReserveOrderEnumId(Enumeration value);
-
-	/**
-	 * Returns the value of the '<em><b>Store Credit Account Enum Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Store Credit Account Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Store Credit Account Enum Id</em>' reference.
-	 * @see #setStoreCreditAccountEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_StoreCreditAccountEnumId()
+	 * @return the value of the '<em>Store Credit Account Enum</em>' reference.
+	 * @see #setStoreCreditAccountEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_StoreCreditAccountEnum()
 	 * @model keys="enumId"
 	 *        annotation="mimo-ent-slot help='Specify the type (Billing Account or Financial Account) of Store Credit Account used for refund return. Default to Financial Account. \n              This field is override by ReturnHeader.billingAccountId or ReturnHeader.finAccountId, whichever is specified but if only finAccountId is specified explicitly then system will first\n              try to locate any billing account with -ve amount. If found, then amount is credit to this billing account else the amount will be credit to the financial account of the user.'"
 	 * @generated
 	 */
-	Enumeration getStoreCreditAccountEnumId();
+	Enumeration getStoreCreditAccountEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getStoreCreditAccountEnumId <em>Store Credit Account Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getStoreCreditAccountEnum <em>Store Credit Account Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Store Credit Account Enum Id</em>' reference.
-	 * @see #getStoreCreditAccountEnumId()
+	 * @param value the new value of the '<em>Store Credit Account Enum</em>' reference.
+	 * @see #getStoreCreditAccountEnum()
 	 * @generated
 	 */
-	void setStoreCreditAccountEnumId(Enumeration value);
+	void setStoreCreditAccountEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Store Credit Valid Days</b></em>' attribute.
@@ -2093,32 +2113,6 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	void setReqReturnInventoryReceive(Boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Primary Store Group Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Primary Store Group Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Primary Store Group Id</em>' reference.
-	 * @see #setPrimaryStoreGroupId(ProductStoreGroup)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_PrimaryStoreGroupId()
-	 * @model keys="productStoreGroupId"
-	 * @generated
-	 */
-	ProductStoreGroup getPrimaryStoreGroupId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getPrimaryStoreGroupId <em>Primary Store Group Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Primary Store Group Id</em>' reference.
-	 * @see #getPrimaryStoreGroupId()
-	 * @generated
-	 */
-	void setPrimaryStoreGroupId(ProductStoreGroup value);
-
-	/**
 	 * Returns the value of the '<em><b>Prod Search Exclude Variants</b></em>' attribute.
 	 * The default value is <code>"true"</code>.
 	 * <!-- begin-user-doc -->
@@ -2242,32 +2236,6 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	List<ProductStorePromoAppl> getProductStorePromoAppls();
-
-	/**
-	 * Returns the value of the '<em><b>Inventory Facility Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Inventory Facility Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Inventory Facility Id</em>' reference.
-	 * @see #setInventoryFacilityId(Facility)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_InventoryFacilityId()
-	 * @model keys="facilityId"
-	 * @generated
-	 */
-	Facility getInventoryFacilityId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getInventoryFacilityId <em>Inventory Facility Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Inventory Facility Id</em>' reference.
-	 * @see #getInventoryFacilityId()
-	 * @generated
-	 */
-	void setInventoryFacilityId(Facility value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Store Id</b></em>' attribute.

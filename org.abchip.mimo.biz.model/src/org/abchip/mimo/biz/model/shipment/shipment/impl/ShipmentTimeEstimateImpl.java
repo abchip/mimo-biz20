@@ -38,7 +38,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTimeEstimateImpl#getRoleTypeId <em>Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTimeEstimateImpl#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTimeEstimateImpl#getLeadTime <em>Lead Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTimeEstimateImpl#getLeadTimeUomId <em>Lead Time Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTimeEstimateImpl#getLeadTimeUom <em>Lead Time Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTimeEstimateImpl#getSequenceNumber <em>Sequence Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTimeEstimateImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -242,8 +242,8 @@ public class ShipmentTimeEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Uom getLeadTimeUomId() {
-		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT_TIME_ESTIMATE__LEAD_TIME_UOM_ID, true);
+	public Uom getLeadTimeUom() {
+		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT_TIME_ESTIMATE__LEAD_TIME_UOM, true);
 	}
 
 	/**
@@ -252,8 +252,8 @@ public class ShipmentTimeEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setLeadTimeUomId(Uom newLeadTimeUomId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_TIME_ESTIMATE__LEAD_TIME_UOM_ID, newLeadTimeUomId);
+	public void setLeadTimeUom(Uom newLeadTimeUom) {
+		eSet(Shipment_Package.Literals.SHIPMENT_TIME_ESTIMATE__LEAD_TIME_UOM, newLeadTimeUom);
 	}
 
 	/**

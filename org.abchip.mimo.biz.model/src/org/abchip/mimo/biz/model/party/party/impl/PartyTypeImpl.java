@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeImpl#getPartyTypeId <em>Party Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeImpl#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeImpl#getPartyTypeAttrs <em>Party Type Attrs</em>}</li>
  * </ul>
  *
@@ -202,8 +202,8 @@ public class PartyTypeImpl extends EntityTypeImpl<Party> implements PartyType {
 	 * @generated
 	 */
 	@Override
-	public PartyType getParentTypeId() {
-		return (PartyType)eGet(PartyPackage.Literals.PARTY_TYPE__PARENT_TYPE_ID, true);
+	public PartyType getParentType() {
+		return (PartyType)eGet(PartyPackage.Literals.PARTY_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -212,8 +212,8 @@ public class PartyTypeImpl extends EntityTypeImpl<Party> implements PartyType {
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(PartyType newParentTypeId) {
-		eSet(PartyPackage.Literals.PARTY_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(PartyType newParentType) {
+		eSet(PartyPackage.Literals.PARTY_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

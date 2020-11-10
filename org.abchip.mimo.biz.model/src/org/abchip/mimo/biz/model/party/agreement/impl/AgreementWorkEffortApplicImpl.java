@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementWorkEffortApplicImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementWorkEffortApplicImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementWorkEffortApplicImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementWorkEffortApplicImpl#getAgreementId <em>Agreement Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementWorkEffortApplicImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementWorkEffortApplicImpl#getAgreement <em>Agreement</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementWorkEffortApplicImpl#getWorkEffort <em>Work Effort</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementWorkEffortApplicImpl#getAgreementItemSeqId <em>Agreement Item Seq Id</em>}</li>
  * </ul>
  *
@@ -152,6 +152,46 @@ public class AgreementWorkEffortApplicImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
+	public Agreement getAgreement() {
+		return (Agreement)eGet(AgreementPackage.Literals.AGREEMENT_WORK_EFFORT_APPLIC__AGREEMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAgreement(Agreement newAgreement) {
+		eSet(AgreementPackage.Literals.AGREEMENT_WORK_EFFORT_APPLIC__AGREEMENT, newAgreement);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(AgreementPackage.Literals.AGREEMENT_WORK_EFFORT_APPLIC__WORK_EFFORT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(AgreementPackage.Literals.AGREEMENT_WORK_EFFORT_APPLIC__WORK_EFFORT, newWorkEffort);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAgreementItemSeqId() {
 		return (String)eGet(AgreementPackage.Literals.AGREEMENT_WORK_EFFORT_APPLIC__AGREEMENT_ITEM_SEQ_ID, true);
 	}
@@ -202,46 +242,6 @@ public class AgreementWorkEffortApplicImpl extends EntityIdentifiableImpl implem
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(AgreementPackage.Literals.AGREEMENT_WORK_EFFORT_APPLIC__WORK_EFFORT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(AgreementPackage.Literals.AGREEMENT_WORK_EFFORT_APPLIC__WORK_EFFORT_ID, newWorkEffortId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Agreement getAgreementId() {
-		return (Agreement)eGet(AgreementPackage.Literals.AGREEMENT_WORK_EFFORT_APPLIC__AGREEMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAgreementId(Agreement newAgreementId) {
-		eSet(AgreementPackage.Literals.AGREEMENT_WORK_EFFORT_APPLIC__AGREEMENT_ID, newAgreementId);
 	}
 
 } //AgreementWorkEffortApplicImpl

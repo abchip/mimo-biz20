@@ -713,7 +713,7 @@ public class PeriodPackageImpl extends EPackageImpl implements PeriodPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCustomTimePeriod_OrganizationPartyId() {
+	public EReference getCustomTimePeriod_OrganizationParty() {
 		return (EReference)customTimePeriodEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -723,7 +723,7 @@ public class PeriodPackageImpl extends EPackageImpl implements PeriodPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCustomTimePeriod_ParentPeriodId() {
+	public EReference getCustomTimePeriod_ParentPeriod() {
 		return (EReference)customTimePeriodEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -753,7 +753,7 @@ public class PeriodPackageImpl extends EPackageImpl implements PeriodPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCustomTimePeriod_PeriodTypeId() {
+	public EReference getCustomTimePeriod_PeriodType() {
 		return (EReference)customTimePeriodEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -813,7 +813,7 @@ public class PeriodPackageImpl extends EPackageImpl implements PeriodPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPeriodType_UomId() {
+	public EReference getPeriodType_Uom() {
 		return (EReference)periodTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -850,18 +850,18 @@ public class PeriodPackageImpl extends EPackageImpl implements PeriodPackage {
 		createEAttribute(customTimePeriodEClass, CUSTOM_TIME_PERIOD__CUSTOM_TIME_PERIOD_ID);
 		createEAttribute(customTimePeriodEClass, CUSTOM_TIME_PERIOD__FROM_DATE);
 		createEAttribute(customTimePeriodEClass, CUSTOM_TIME_PERIOD__IS_CLOSED);
-		createEReference(customTimePeriodEClass, CUSTOM_TIME_PERIOD__ORGANIZATION_PARTY_ID);
-		createEReference(customTimePeriodEClass, CUSTOM_TIME_PERIOD__PARENT_PERIOD_ID);
+		createEReference(customTimePeriodEClass, CUSTOM_TIME_PERIOD__ORGANIZATION_PARTY);
+		createEReference(customTimePeriodEClass, CUSTOM_TIME_PERIOD__PARENT_PERIOD);
 		createEAttribute(customTimePeriodEClass, CUSTOM_TIME_PERIOD__PERIOD_NAME);
 		createEAttribute(customTimePeriodEClass, CUSTOM_TIME_PERIOD__PERIOD_NUM);
-		createEReference(customTimePeriodEClass, CUSTOM_TIME_PERIOD__PERIOD_TYPE_ID);
+		createEReference(customTimePeriodEClass, CUSTOM_TIME_PERIOD__PERIOD_TYPE);
 		createEAttribute(customTimePeriodEClass, CUSTOM_TIME_PERIOD__THRU_DATE);
 
 		periodTypeEClass = createEClass(PERIOD_TYPE);
 		createEAttribute(periodTypeEClass, PERIOD_TYPE__PERIOD_TYPE_ID);
 		createEAttribute(periodTypeEClass, PERIOD_TYPE__DESCRIPTION);
 		createEAttribute(periodTypeEClass, PERIOD_TYPE__PERIOD_LENGTH);
-		createEReference(periodTypeEClass, PERIOD_TYPE__UOM_ID);
+		createEReference(periodTypeEClass, PERIOD_TYPE__UOM);
 	}
 
 	/**
@@ -915,22 +915,22 @@ public class PeriodPackageImpl extends EPackageImpl implements PeriodPackage {
 		initEAttribute(getCustomTimePeriod_CustomTimePeriodId(), ecorePackage.getEString(), "customTimePeriodId", null, 1, 1, CustomTimePeriod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustomTimePeriod_FromDate(), ecorePackage.getEDate(), "fromDate", null, 0, 1, CustomTimePeriod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustomTimePeriod_IsClosed(), ecorePackage.getEBooleanObject(), "isClosed", null, 0, 1, CustomTimePeriod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCustomTimePeriod_OrganizationPartyId(), thePartyPackage_1.getParty(), null, "organizationPartyId", null, 0, 1, CustomTimePeriod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustomTimePeriod_OrganizationPartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
-		initEReference(getCustomTimePeriod_ParentPeriodId(), this.getCustomTimePeriod(), null, "parentPeriodId", null, 0, 1, CustomTimePeriod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustomTimePeriod_ParentPeriodId().getEKeys().add(this.getCustomTimePeriod_CustomTimePeriodId());
+		initEReference(getCustomTimePeriod_OrganizationParty(), thePartyPackage_1.getParty(), null, "organizationParty", null, 0, 1, CustomTimePeriod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCustomTimePeriod_OrganizationParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getCustomTimePeriod_ParentPeriod(), this.getCustomTimePeriod(), null, "parentPeriod", null, 0, 1, CustomTimePeriod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCustomTimePeriod_ParentPeriod().getEKeys().add(this.getCustomTimePeriod_CustomTimePeriodId());
 		initEAttribute(getCustomTimePeriod_PeriodName(), ecorePackage.getEString(), "periodName", null, 0, 1, CustomTimePeriod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustomTimePeriod_PeriodNum(), ecorePackage.getELong(), "periodNum", null, 0, 1, CustomTimePeriod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCustomTimePeriod_PeriodTypeId(), this.getPeriodType(), null, "periodTypeId", null, 0, 1, CustomTimePeriod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustomTimePeriod_PeriodTypeId().getEKeys().add(this.getPeriodType_PeriodTypeId());
+		initEReference(getCustomTimePeriod_PeriodType(), this.getPeriodType(), null, "periodType", null, 0, 1, CustomTimePeriod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCustomTimePeriod_PeriodType().getEKeys().add(this.getPeriodType_PeriodTypeId());
 		initEAttribute(getCustomTimePeriod_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, CustomTimePeriod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(periodTypeEClass, PeriodType.class, "PeriodType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPeriodType_PeriodTypeId(), ecorePackage.getEString(), "periodTypeId", null, 1, 1, PeriodType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPeriodType_Description(), ecorePackage.getEString(), "description", null, 0, 1, PeriodType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPeriodType_PeriodLength(), ecorePackage.getELong(), "periodLength", null, 0, 1, PeriodType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPeriodType_UomId(), theUomPackage.getUom(), null, "uomId", null, 0, 1, PeriodType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPeriodType_UomId().getEKeys().add(theUomPackage.getUom_UomId());
+		initEReference(getPeriodType_Uom(), theUomPackage.getUom(), null, "uom", null, 0, 1, PeriodType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPeriodType_Uom().getEKeys().add(theUomPackage.getUom_UomId());
 
 		// Create annotations
 		// mimo-ent-format

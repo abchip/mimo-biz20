@@ -31,8 +31,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRevisionItemImpl#getContentId <em>Content Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRevisionItemImpl#getContentRevisionSeqId <em>Content Revision Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRevisionItemImpl#getItemContentId <em>Item Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRevisionItemImpl#getNewDataResourceId <em>New Data Resource Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRevisionItemImpl#getOldDataResourceId <em>Old Data Resource Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRevisionItemImpl#getNewDataResource <em>New Data Resource</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRevisionItemImpl#getOldDataResource <em>Old Data Resource</em>}</li>
  * </ul>
  *
  * @generated
@@ -214,8 +214,8 @@ public class ContentRevisionItemImpl extends EntityIdentifiableImpl implements C
 	 * @generated
 	 */
 	@Override
-	public DataResource getNewDataResourceId() {
-		return (DataResource)eGet(ContentPackage.Literals.CONTENT_REVISION_ITEM__NEW_DATA_RESOURCE_ID, true);
+	public DataResource getNewDataResource() {
+		return (DataResource)eGet(ContentPackage.Literals.CONTENT_REVISION_ITEM__NEW_DATA_RESOURCE, true);
 	}
 
 	/**
@@ -224,8 +224,8 @@ public class ContentRevisionItemImpl extends EntityIdentifiableImpl implements C
 	 * @generated
 	 */
 	@Override
-	public void setNewDataResourceId(DataResource newNewDataResourceId) {
-		eSet(ContentPackage.Literals.CONTENT_REVISION_ITEM__NEW_DATA_RESOURCE_ID, newNewDataResourceId);
+	public void setNewDataResource(DataResource newNewDataResource) {
+		eSet(ContentPackage.Literals.CONTENT_REVISION_ITEM__NEW_DATA_RESOURCE, newNewDataResource);
 	}
 
 	/**
@@ -234,8 +234,8 @@ public class ContentRevisionItemImpl extends EntityIdentifiableImpl implements C
 	 * @generated
 	 */
 	@Override
-	public DataResource getOldDataResourceId() {
-		return (DataResource)eGet(ContentPackage.Literals.CONTENT_REVISION_ITEM__OLD_DATA_RESOURCE_ID, true);
+	public DataResource getOldDataResource() {
+		return (DataResource)eGet(ContentPackage.Literals.CONTENT_REVISION_ITEM__OLD_DATA_RESOURCE, true);
 	}
 
 	/**
@@ -244,8 +244,8 @@ public class ContentRevisionItemImpl extends EntityIdentifiableImpl implements C
 	 * @generated
 	 */
 	@Override
-	public void setOldDataResourceId(DataResource newOldDataResourceId) {
-		eSet(ContentPackage.Literals.CONTENT_REVISION_ITEM__OLD_DATA_RESOURCE_ID, newOldDataResourceId);
+	public void setOldDataResource(DataResource newOldDataResource) {
+		eSet(ContentPackage.Literals.CONTENT_REVISION_ITEM__OLD_DATA_RESOURCE, newOldDataResource);
 	}
 
 	/**

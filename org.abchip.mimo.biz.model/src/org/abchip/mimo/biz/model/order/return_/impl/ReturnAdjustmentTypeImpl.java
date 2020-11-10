@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentTypeImpl#getReturnAdjustmentTypeId <em>Return Adjustment Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,8 +200,8 @@ public class ReturnAdjustmentTypeImpl extends EntityTypeImpl<ReturnAdjustment> i
 	 * @generated
 	 */
 	@Override
-	public ReturnAdjustmentType getParentTypeId() {
-		return (ReturnAdjustmentType)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT_TYPE__PARENT_TYPE_ID, true);
+	public ReturnAdjustmentType getParentType() {
+		return (ReturnAdjustmentType)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -210,8 +210,8 @@ public class ReturnAdjustmentTypeImpl extends EntityTypeImpl<ReturnAdjustment> i
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(ReturnAdjustmentType newParentTypeId) {
-		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(ReturnAdjustmentType newParentType) {
+		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

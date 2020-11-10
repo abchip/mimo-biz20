@@ -36,7 +36,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentImpl#getDocumentAttributes <em>Document Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentImpl#getDocumentLocation <em>Document Location</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentImpl#getDocumentText <em>Document Text</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentImpl#getDocumentTypeId <em>Document Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentImpl#getDocumentType <em>Document Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentImpl#getImageData <em>Image Data</em>}</li>
  * </ul>
  *
@@ -270,8 +270,8 @@ public class DocumentImpl extends EntityTypedImpl<DocumentType> implements Docum
 	 * @generated
 	 */
 	@Override
-	public DocumentType getDocumentTypeId() {
-		return (DocumentType)eGet(DocumentPackage.Literals.DOCUMENT__DOCUMENT_TYPE_ID, true);
+	public DocumentType getDocumentType() {
+		return (DocumentType)eGet(DocumentPackage.Literals.DOCUMENT__DOCUMENT_TYPE, true);
 	}
 
 	/**
@@ -280,8 +280,8 @@ public class DocumentImpl extends EntityTypedImpl<DocumentType> implements Docum
 	 * @generated
 	 */
 	@Override
-	public void setDocumentTypeId(DocumentType newDocumentTypeId) {
-		eSet(DocumentPackage.Literals.DOCUMENT__DOCUMENT_TYPE_ID, newDocumentTypeId);
+	public void setDocumentType(DocumentType newDocumentType) {
+		eSet(DocumentPackage.Literals.DOCUMENT__DOCUMENT_TYPE, newDocumentType);
 	}
 
 	/**

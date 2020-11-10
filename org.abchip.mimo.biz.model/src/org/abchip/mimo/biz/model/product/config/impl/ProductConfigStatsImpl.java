@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigStatsImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigStatsImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigStatsImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigStatsImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigStatsImpl#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigStatsImpl#getConfigId <em>Config Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigStatsImpl#getConfigTypeId <em>Config Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigStatsImpl#getNumOfConfs <em>Num Of Confs</em>}</li>
@@ -153,6 +153,26 @@ public class ProductConfigStatsImpl extends EntityIdentifiableImpl implements Pr
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(ConfigPackage.Literals.PRODUCT_CONFIG_STATS__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(ConfigPackage.Literals.PRODUCT_CONFIG_STATS__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getConfigId() {
 		return (String)eGet(ConfigPackage.Literals.PRODUCT_CONFIG_STATS__CONFIG_ID, true);
 	}
@@ -243,26 +263,6 @@ public class ProductConfigStatsImpl extends EntityIdentifiableImpl implements Pr
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(ConfigPackage.Literals.PRODUCT_CONFIG_STATS__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(ConfigPackage.Literals.PRODUCT_CONFIG_STATS__PRODUCT_ID, newProductId);
 	}
 
 } //ProductConfigStatsImpl

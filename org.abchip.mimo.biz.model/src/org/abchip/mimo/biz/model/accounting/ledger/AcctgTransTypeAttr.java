@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransTypeAttr#getAcctgTransTypeId <em>Acctg Trans Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransTypeAttr#getAcctgTransType <em>Acctg Trans Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransTypeAttr#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransTypeAttr#getDescription <em>Description</em>}</li>
  * </ul>
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface AcctgTransTypeAttr extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Acctg Trans Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Acctg Trans Type</em>' reference.
+	 * @see #setAcctgTransType(AcctgTransType)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransTypeAttr_AcctgTransType()
+	 * @model keys="acctgTransTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	AcctgTransType getAcctgTransType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransTypeAttr#getAcctgTransType <em>Acctg Trans Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Acctg Trans Type</em>' reference.
+	 * @see #getAcctgTransType()
+	 * @generated
+	 */
+	void setAcctgTransType(AcctgTransType value);
+
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,32 +105,5 @@ public interface AcctgTransTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setAttrName(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Acctg Trans Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Acctg Trans Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Acctg Trans Type Id</em>' reference.
-	 * @see #setAcctgTransTypeId(AcctgTransType)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransTypeAttr_AcctgTransTypeId()
-	 * @model keys="acctgTransTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	AcctgTransType getAcctgTransTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransTypeAttr#getAcctgTransTypeId <em>Acctg Trans Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Acctg Trans Type Id</em>' reference.
-	 * @see #getAcctgTransTypeId()
-	 * @generated
-	 */
-	void setAcctgTransTypeId(AcctgTransType value);
 
 } // AcctgTransTypeAttr

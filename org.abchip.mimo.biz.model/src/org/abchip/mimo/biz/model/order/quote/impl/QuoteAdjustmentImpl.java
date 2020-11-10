@@ -48,16 +48,16 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#isIncludeInTax <em>Include In Tax</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getOverrideGlAccountId <em>Override Gl Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getPrimaryGeoId <em>Primary Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getOverrideGlAccount <em>Override Gl Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getPrimaryGeo <em>Primary Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getProductFeatureId <em>Product Feature Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getProductPromo <em>Product Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getProductPromoActionSeqId <em>Product Promo Action Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getProductPromoId <em>Product Promo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getProductPromoRuleId <em>Product Promo Rule Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getQuoteAdjustmentTypeId <em>Quote Adjustment Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getQuoteId <em>Quote Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getQuote <em>Quote</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getQuoteAdjustmentType <em>Quote Adjustment Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getQuoteItemSeqId <em>Quote Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getSecondaryGeoId <em>Secondary Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getSecondaryGeo <em>Secondary Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getSourcePercentage <em>Source Percentage</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getSourceReferenceId <em>Source Reference Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}</li>
@@ -423,8 +423,8 @@ public class QuoteAdjustmentImpl extends EntityIdentifiableImpl implements Quote
 	 * @generated
 	 */
 	@Override
-	public GlAccount getOverrideGlAccountId() {
-		return (GlAccount)eGet(QuotePackage.Literals.QUOTE_ADJUSTMENT__OVERRIDE_GL_ACCOUNT_ID, true);
+	public GlAccount getOverrideGlAccount() {
+		return (GlAccount)eGet(QuotePackage.Literals.QUOTE_ADJUSTMENT__OVERRIDE_GL_ACCOUNT, true);
 	}
 
 	/**
@@ -433,8 +433,8 @@ public class QuoteAdjustmentImpl extends EntityIdentifiableImpl implements Quote
 	 * @generated
 	 */
 	@Override
-	public void setOverrideGlAccountId(GlAccount newOverrideGlAccountId) {
-		eSet(QuotePackage.Literals.QUOTE_ADJUSTMENT__OVERRIDE_GL_ACCOUNT_ID, newOverrideGlAccountId);
+	public void setOverrideGlAccount(GlAccount newOverrideGlAccount) {
+		eSet(QuotePackage.Literals.QUOTE_ADJUSTMENT__OVERRIDE_GL_ACCOUNT, newOverrideGlAccount);
 	}
 
 	/**
@@ -443,8 +443,8 @@ public class QuoteAdjustmentImpl extends EntityIdentifiableImpl implements Quote
 	 * @generated
 	 */
 	@Override
-	public Geo getPrimaryGeoId() {
-		return (Geo)eGet(QuotePackage.Literals.QUOTE_ADJUSTMENT__PRIMARY_GEO_ID, true);
+	public Geo getPrimaryGeo() {
+		return (Geo)eGet(QuotePackage.Literals.QUOTE_ADJUSTMENT__PRIMARY_GEO, true);
 	}
 
 	/**
@@ -453,8 +453,8 @@ public class QuoteAdjustmentImpl extends EntityIdentifiableImpl implements Quote
 	 * @generated
 	 */
 	@Override
-	public void setPrimaryGeoId(Geo newPrimaryGeoId) {
-		eSet(QuotePackage.Literals.QUOTE_ADJUSTMENT__PRIMARY_GEO_ID, newPrimaryGeoId);
+	public void setPrimaryGeo(Geo newPrimaryGeo) {
+		eSet(QuotePackage.Literals.QUOTE_ADJUSTMENT__PRIMARY_GEO, newPrimaryGeo);
 	}
 
 	/**
@@ -483,6 +483,26 @@ public class QuoteAdjustmentImpl extends EntityIdentifiableImpl implements Quote
 	 * @generated
 	 */
 	@Override
+	public ProductPromo getProductPromo() {
+		return (ProductPromo)eGet(QuotePackage.Literals.QUOTE_ADJUSTMENT__PRODUCT_PROMO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPromo(ProductPromo newProductPromo) {
+		eSet(QuotePackage.Literals.QUOTE_ADJUSTMENT__PRODUCT_PROMO, newProductPromo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getProductPromoActionSeqId() {
 		return (String)eGet(QuotePackage.Literals.QUOTE_ADJUSTMENT__PRODUCT_PROMO_ACTION_SEQ_ID, true);
 	}
@@ -495,26 +515,6 @@ public class QuoteAdjustmentImpl extends EntityIdentifiableImpl implements Quote
 	@Override
 	public void setProductPromoActionSeqId(String newProductPromoActionSeqId) {
 		eSet(QuotePackage.Literals.QUOTE_ADJUSTMENT__PRODUCT_PROMO_ACTION_SEQ_ID, newProductPromoActionSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductPromo getProductPromoId() {
-		return (ProductPromo)eGet(QuotePackage.Literals.QUOTE_ADJUSTMENT__PRODUCT_PROMO_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPromoId(ProductPromo newProductPromoId) {
-		eSet(QuotePackage.Literals.QUOTE_ADJUSTMENT__PRODUCT_PROMO_ID, newProductPromoId);
 	}
 
 	/**
@@ -543,6 +543,46 @@ public class QuoteAdjustmentImpl extends EntityIdentifiableImpl implements Quote
 	 * @generated
 	 */
 	@Override
+	public Quote getQuote() {
+		return (Quote)eGet(QuotePackage.Literals.QUOTE_ADJUSTMENT__QUOTE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setQuote(Quote newQuote) {
+		eSet(QuotePackage.Literals.QUOTE_ADJUSTMENT__QUOTE, newQuote);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OrderAdjustmentType getQuoteAdjustmentType() {
+		return (OrderAdjustmentType)eGet(QuotePackage.Literals.QUOTE_ADJUSTMENT__QUOTE_ADJUSTMENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setQuoteAdjustmentType(OrderAdjustmentType newQuoteAdjustmentType) {
+		eSet(QuotePackage.Literals.QUOTE_ADJUSTMENT__QUOTE_ADJUSTMENT_TYPE, newQuoteAdjustmentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getQuoteAdjustmentId() {
 		return (String)eGet(QuotePackage.Literals.QUOTE_ADJUSTMENT__QUOTE_ADJUSTMENT_ID, true);
 	}
@@ -555,46 +595,6 @@ public class QuoteAdjustmentImpl extends EntityIdentifiableImpl implements Quote
 	@Override
 	public void setQuoteAdjustmentId(String newQuoteAdjustmentId) {
 		eSet(QuotePackage.Literals.QUOTE_ADJUSTMENT__QUOTE_ADJUSTMENT_ID, newQuoteAdjustmentId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderAdjustmentType getQuoteAdjustmentTypeId() {
-		return (OrderAdjustmentType)eGet(QuotePackage.Literals.QUOTE_ADJUSTMENT__QUOTE_ADJUSTMENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setQuoteAdjustmentTypeId(OrderAdjustmentType newQuoteAdjustmentTypeId) {
-		eSet(QuotePackage.Literals.QUOTE_ADJUSTMENT__QUOTE_ADJUSTMENT_TYPE_ID, newQuoteAdjustmentTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Quote getQuoteId() {
-		return (Quote)eGet(QuotePackage.Literals.QUOTE_ADJUSTMENT__QUOTE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setQuoteId(Quote newQuoteId) {
-		eSet(QuotePackage.Literals.QUOTE_ADJUSTMENT__QUOTE_ID, newQuoteId);
 	}
 
 	/**
@@ -623,8 +623,8 @@ public class QuoteAdjustmentImpl extends EntityIdentifiableImpl implements Quote
 	 * @generated
 	 */
 	@Override
-	public Geo getSecondaryGeoId() {
-		return (Geo)eGet(QuotePackage.Literals.QUOTE_ADJUSTMENT__SECONDARY_GEO_ID, true);
+	public Geo getSecondaryGeo() {
+		return (Geo)eGet(QuotePackage.Literals.QUOTE_ADJUSTMENT__SECONDARY_GEO, true);
 	}
 
 	/**
@@ -633,8 +633,8 @@ public class QuoteAdjustmentImpl extends EntityIdentifiableImpl implements Quote
 	 * @generated
 	 */
 	@Override
-	public void setSecondaryGeoId(Geo newSecondaryGeoId) {
-		eSet(QuotePackage.Literals.QUOTE_ADJUSTMENT__SECONDARY_GEO_ID, newSecondaryGeoId);
+	public void setSecondaryGeo(Geo newSecondaryGeo) {
+		eSet(QuotePackage.Literals.QUOTE_ADJUSTMENT__SECONDARY_GEO, newSecondaryGeo);
 	}
 
 	/**

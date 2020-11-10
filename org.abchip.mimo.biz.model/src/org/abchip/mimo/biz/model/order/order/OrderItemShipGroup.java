@@ -25,26 +25,26 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getShipGroupSeqId <em>Ship Group Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getCarrierPartyId <em>Carrier Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getCarrierParty <em>Carrier Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getCarrierRoleTypeId <em>Carrier Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getEstimatedDeliveryDate <em>Estimated Delivery Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getEstimatedShipDate <em>Estimated Ship Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getGiftMessage <em>Gift Message</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getIsGift <em>Is Gift</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getMaySplit <em>May Split</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getShipAfterDate <em>Ship After Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getShipByDate <em>Ship By Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getShipmentMethodType <em>Shipment Method Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getShippingInstructions <em>Shipping Instructions</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getSupplierAgreementId <em>Supplier Agreement Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getSupplierPartyId <em>Supplier Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getTelecomContactMechId <em>Telecom Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getSupplierAgreement <em>Supplier Agreement</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getSupplierParty <em>Supplier Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getTelecomContactMech <em>Telecom Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getTrackingNumber <em>Tracking Number</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getVendorPartyId <em>Vendor Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getVendorParty <em>Vendor Party</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup()
@@ -53,31 +53,27 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface OrderItemShipGroup extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Carrier Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Carrier Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Carrier Party Id</em>' reference.
-	 * @see #setCarrierPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_CarrierPartyId()
-	 * @model keys="partyId"
-	 *        annotation="mimo-ent-slot audit='true'"
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_Order()
+	 * @model keys="orderId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Party getCarrierPartyId();
+	OrderHeader getOrder();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getCarrierPartyId <em>Carrier Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getOrder <em>Order</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Carrier Party Id</em>' reference.
-	 * @see #getCarrierPartyId()
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
 	 * @generated
 	 */
-	void setCarrierPartyId(Party value);
+	void setOrder(OrderHeader value);
 
 	/**
 	 * Returns the value of the '<em><b>Carrier Role Type Id</b></em>' attribute.
@@ -106,30 +102,26 @@ public interface OrderItemShipGroup extends EntityIdentifiable, EntityInfo {
 	void setCarrierRoleTypeId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Contact Mech Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Contact Mech</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #setContactMechId(ContactMech)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_ContactMechId()
+	 * @return the value of the '<em>Contact Mech</em>' reference.
+	 * @see #setContactMech(ContactMech)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_ContactMech()
 	 * @model keys="contactMechId"
 	 * @generated
 	 */
-	ContactMech getContactMechId();
+	ContactMech getContactMech();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getContactMechId <em>Contact Mech Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getContactMech <em>Contact Mech</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #getContactMechId()
+	 * @param value the new value of the '<em>Contact Mech</em>' reference.
+	 * @see #getContactMech()
 	 * @generated
 	 */
-	void setContactMechId(ContactMech value);
+	void setContactMech(ContactMech value);
 
 	/**
 	 * Returns the value of the '<em><b>Estimated Delivery Date</b></em>' attribute.
@@ -184,30 +176,26 @@ public interface OrderItemShipGroup extends EntityIdentifiable, EntityInfo {
 	void setEstimatedShipDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Facility Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facility Id</em>' reference.
-	 * @see #setFacilityId(Facility)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_FacilityId()
+	 * @return the value of the '<em>Facility</em>' reference.
+	 * @see #setFacility(Facility)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_Facility()
 	 * @model keys="facilityId"
 	 * @generated
 	 */
-	Facility getFacilityId();
+	Facility getFacility();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getFacilityId <em>Facility Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getFacility <em>Facility</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Facility Id</em>' reference.
-	 * @see #getFacilityId()
+	 * @param value the new value of the '<em>Facility</em>' reference.
+	 * @see #getFacility()
 	 * @generated
 	 */
-	void setFacilityId(Facility value);
+	void setFacility(Facility value);
 
 	/**
 	 * Returns the value of the '<em><b>Gift Message</b></em>' attribute.
@@ -280,33 +268,6 @@ public interface OrderItemShipGroup extends EntityIdentifiable, EntityInfo {
 	void setMaySplit(Boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_OrderId()
-	 * @model keys="orderId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	OrderHeader getOrderId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getOrderId <em>Order Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
-	 * @generated
-	 */
-	void setOrderId(OrderHeader value);
-
-	/**
 	 * Returns the value of the '<em><b>Ship After Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -359,6 +320,29 @@ public interface OrderItemShipGroup extends EntityIdentifiable, EntityInfo {
 	void setShipByDate(Date value);
 
 	/**
+	 * Returns the value of the '<em><b>Shipment Method Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Shipment Method Type</em>' reference.
+	 * @see #setShipmentMethodType(ShipmentMethodType)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_ShipmentMethodType()
+	 * @model keys="shipmentMethodTypeId"
+	 *        annotation="mimo-ent-slot audit='true'"
+	 * @generated
+	 */
+	ShipmentMethodType getShipmentMethodType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getShipmentMethodType <em>Shipment Method Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Shipment Method Type</em>' reference.
+	 * @see #getShipmentMethodType()
+	 * @generated
+	 */
+	void setShipmentMethodType(ShipmentMethodType value);
+
+	/**
 	 * Returns the value of the '<em><b>Ship Group Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -387,31 +371,27 @@ public interface OrderItemShipGroup extends EntityIdentifiable, EntityInfo {
 	void setShipGroupSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Shipment Method Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Carrier Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Method Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shipment Method Type Id</em>' reference.
-	 * @see #setShipmentMethodTypeId(ShipmentMethodType)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_ShipmentMethodTypeId()
-	 * @model keys="shipmentMethodTypeId"
+	 * @return the value of the '<em>Carrier Party</em>' reference.
+	 * @see #setCarrierParty(Party)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_CarrierParty()
+	 * @model keys="partyId"
 	 *        annotation="mimo-ent-slot audit='true'"
 	 * @generated
 	 */
-	ShipmentMethodType getShipmentMethodTypeId();
+	Party getCarrierParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getCarrierParty <em>Carrier Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shipment Method Type Id</em>' reference.
-	 * @see #getShipmentMethodTypeId()
+	 * @param value the new value of the '<em>Carrier Party</em>' reference.
+	 * @see #getCarrierParty()
 	 * @generated
 	 */
-	void setShipmentMethodTypeId(ShipmentMethodType value);
+	void setCarrierParty(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Shipping Instructions</b></em>' attribute.
@@ -440,82 +420,70 @@ public interface OrderItemShipGroup extends EntityIdentifiable, EntityInfo {
 	void setShippingInstructions(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Supplier Agreement Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Supplier Agreement</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Supplier Agreement Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Supplier Agreement Id</em>' reference.
-	 * @see #setSupplierAgreementId(Agreement)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_SupplierAgreementId()
+	 * @return the value of the '<em>Supplier Agreement</em>' reference.
+	 * @see #setSupplierAgreement(Agreement)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_SupplierAgreement()
 	 * @model keys="agreementId"
 	 * @generated
 	 */
-	Agreement getSupplierAgreementId();
+	Agreement getSupplierAgreement();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getSupplierAgreementId <em>Supplier Agreement Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getSupplierAgreement <em>Supplier Agreement</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Supplier Agreement Id</em>' reference.
-	 * @see #getSupplierAgreementId()
+	 * @param value the new value of the '<em>Supplier Agreement</em>' reference.
+	 * @see #getSupplierAgreement()
 	 * @generated
 	 */
-	void setSupplierAgreementId(Agreement value);
+	void setSupplierAgreement(Agreement value);
 
 	/**
-	 * Returns the value of the '<em><b>Supplier Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Supplier Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Supplier Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Supplier Party Id</em>' reference.
-	 * @see #setSupplierPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_SupplierPartyId()
+	 * @return the value of the '<em>Supplier Party</em>' reference.
+	 * @see #setSupplierParty(Party)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_SupplierParty()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getSupplierPartyId();
+	Party getSupplierParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getSupplierPartyId <em>Supplier Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getSupplierParty <em>Supplier Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Supplier Party Id</em>' reference.
-	 * @see #getSupplierPartyId()
+	 * @param value the new value of the '<em>Supplier Party</em>' reference.
+	 * @see #getSupplierParty()
 	 * @generated
 	 */
-	void setSupplierPartyId(Party value);
+	void setSupplierParty(Party value);
 
 	/**
-	 * Returns the value of the '<em><b>Telecom Contact Mech Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Telecom Contact Mech</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Telecom Contact Mech Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Telecom Contact Mech Id</em>' reference.
-	 * @see #setTelecomContactMechId(ContactMech)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_TelecomContactMechId()
+	 * @return the value of the '<em>Telecom Contact Mech</em>' reference.
+	 * @see #setTelecomContactMech(ContactMech)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_TelecomContactMech()
 	 * @model keys="contactMechId"
 	 * @generated
 	 */
-	ContactMech getTelecomContactMechId();
+	ContactMech getTelecomContactMech();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getTelecomContactMechId <em>Telecom Contact Mech Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getTelecomContactMech <em>Telecom Contact Mech</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Telecom Contact Mech Id</em>' reference.
-	 * @see #getTelecomContactMechId()
+	 * @param value the new value of the '<em>Telecom Contact Mech</em>' reference.
+	 * @see #getTelecomContactMech()
 	 * @generated
 	 */
-	void setTelecomContactMechId(ContactMech value);
+	void setTelecomContactMech(ContactMech value);
 
 	/**
 	 * Returns the value of the '<em><b>Tracking Number</b></em>' attribute.
@@ -544,30 +512,26 @@ public interface OrderItemShipGroup extends EntityIdentifiable, EntityInfo {
 	void setTrackingNumber(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Vendor Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Vendor Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Vendor Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Vendor Party Id</em>' reference.
-	 * @see #setVendorPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_VendorPartyId()
+	 * @return the value of the '<em>Vendor Party</em>' reference.
+	 * @see #setVendorParty(Party)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_VendorParty()
 	 * @model keys="partyId"
 	 *        annotation="mimo-ent-slot help='For use with multi-vendor stores, order will be split so that each ship group is associated with only one vendor (only if applicable)'"
 	 * @generated
 	 */
-	Party getVendorPartyId();
+	Party getVendorParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getVendorPartyId <em>Vendor Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getVendorParty <em>Vendor Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Vendor Party Id</em>' reference.
-	 * @see #getVendorPartyId()
+	 * @param value the new value of the '<em>Vendor Party</em>' reference.
+	 * @see #getVendorParty()
 	 * @generated
 	 */
-	void setVendorPartyId(Party value);
+	void setVendorParty(Party value);
 
 } // OrderItemShipGroup

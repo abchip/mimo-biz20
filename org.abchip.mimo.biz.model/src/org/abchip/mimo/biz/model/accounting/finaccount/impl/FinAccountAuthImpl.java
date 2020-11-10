@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountAuthImpl#getAmount <em>Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountAuthImpl#getAuthorizationDate <em>Authorization Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountAuthImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountAuthImpl#getFinAccountId <em>Fin Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountAuthImpl#getFinAccount <em>Fin Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountAuthImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountAuthImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -217,6 +217,26 @@ public class FinAccountAuthImpl extends EntityIdentifiableImpl implements FinAcc
 	 * @generated
 	 */
 	@Override
+	public FinAccount getFinAccount() {
+		return (FinAccount)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_AUTH__FIN_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFinAccount(FinAccount newFinAccount) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_AUTH__FIN_ACCOUNT, newFinAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getFinAccountAuthId() {
 		return (String)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_AUTH__FIN_ACCOUNT_AUTH_ID, true);
 	}
@@ -307,26 +327,6 @@ public class FinAccountAuthImpl extends EntityIdentifiableImpl implements FinAcc
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FinAccount getFinAccountId() {
-		return (FinAccount)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_AUTH__FIN_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFinAccountId(FinAccount newFinAccountId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_AUTH__FIN_ACCOUNT_ID, newFinAccountId);
 	}
 
 } //FinAccountAuthImpl

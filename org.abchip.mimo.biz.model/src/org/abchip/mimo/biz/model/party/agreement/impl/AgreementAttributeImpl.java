@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementAttributeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementAttributeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementAttributeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementAttributeImpl#getAgreementId <em>Agreement Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementAttributeImpl#getAgreement <em>Agreement</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementAttributeImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementAttributeImpl#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementAttributeImpl#getAttrValue <em>Attr Value</em>}</li>
@@ -152,6 +152,26 @@ public class AgreementAttributeImpl extends EntityIdentifiableImpl implements Ag
 	 * @generated
 	 */
 	@Override
+	public Agreement getAgreement() {
+		return (Agreement)eGet(AgreementPackage.Literals.AGREEMENT_ATTRIBUTE__AGREEMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAgreement(Agreement newAgreement) {
+		eSet(AgreementPackage.Literals.AGREEMENT_ATTRIBUTE__AGREEMENT, newAgreement);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrDescription() {
 		return (String)eGet(AgreementPackage.Literals.AGREEMENT_ATTRIBUTE__ATTR_DESCRIPTION, true);
 	}
@@ -222,26 +242,6 @@ public class AgreementAttributeImpl extends EntityIdentifiableImpl implements Ag
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Agreement getAgreementId() {
-		return (Agreement)eGet(AgreementPackage.Literals.AGREEMENT_ATTRIBUTE__AGREEMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAgreementId(Agreement newAgreementId) {
-		eSet(AgreementPackage.Literals.AGREEMENT_ATTRIBUTE__AGREEMENT_ID, newAgreementId);
 	}
 
 	/**

@@ -36,8 +36,8 @@ import org.abchip.mimo.entity.EntityTyped;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getOrderId <em>Order Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getAgreementId <em>Agreement Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getAutoOrderShoppingListId <em>Auto Order Shopping List Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getBillingAccountId <em>Billing Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getAutoOrderShoppingList <em>Auto Order Shopping List</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getBillingAccount <em>Billing Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getCommunicationEventOrders <em>Communication Event Orders</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getCreatedBy <em>Created By</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getCurrencyUom <em>Currency Uom</em>}</li>
@@ -60,21 +60,21 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getOrderItems <em>Order Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getOrderName <em>Order Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getOrderProductPromoCodes <em>Order Product Promo Codes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getOrderTypeId <em>Order Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getOriginFacilityId <em>Origin Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getOrderType <em>Order Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getOriginFacility <em>Origin Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getPickSheetPrintedDate <em>Pick Sheet Printed Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getPriority <em>Priority</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getProductPromoUses <em>Product Promo Uses</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getRemainingSubTotal <em>Remaining Sub Total</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getSalesChannelEnumId <em>Sales Channel Enum Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getSyncStatusId <em>Sync Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getSalesChannelEnum <em>Sales Channel Enum</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getSyncStatus <em>Sync Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getTerminalId <em>Terminal Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getTrackingCodeOrders <em>Tracking Code Orders</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getTransactionId <em>Transaction Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getVisitId <em>Visit Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getWebSiteId <em>Web Site Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getWebSite <em>Web Site</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader()
@@ -109,56 +109,48 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	void setAgreementId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Auto Order Shopping List Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Auto Order Shopping List</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Auto Order Shopping List Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Auto Order Shopping List Id</em>' reference.
-	 * @see #setAutoOrderShoppingListId(ShoppingList)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_AutoOrderShoppingListId()
+	 * @return the value of the '<em>Auto Order Shopping List</em>' reference.
+	 * @see #setAutoOrderShoppingList(ShoppingList)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_AutoOrderShoppingList()
 	 * @model keys="shoppingListId"
 	 * @generated
 	 */
-	ShoppingList getAutoOrderShoppingListId();
+	ShoppingList getAutoOrderShoppingList();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getAutoOrderShoppingListId <em>Auto Order Shopping List Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getAutoOrderShoppingList <em>Auto Order Shopping List</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Auto Order Shopping List Id</em>' reference.
-	 * @see #getAutoOrderShoppingListId()
+	 * @param value the new value of the '<em>Auto Order Shopping List</em>' reference.
+	 * @see #getAutoOrderShoppingList()
 	 * @generated
 	 */
-	void setAutoOrderShoppingListId(ShoppingList value);
+	void setAutoOrderShoppingList(ShoppingList value);
 
 	/**
-	 * Returns the value of the '<em><b>Billing Account Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Billing Account</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Billing Account Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Billing Account Id</em>' reference.
-	 * @see #setBillingAccountId(BillingAccount)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_BillingAccountId()
+	 * @return the value of the '<em>Billing Account</em>' reference.
+	 * @see #setBillingAccount(BillingAccount)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_BillingAccount()
 	 * @model keys="billingAccountId"
 	 * @generated
 	 */
-	BillingAccount getBillingAccountId();
+	BillingAccount getBillingAccount();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getBillingAccountId <em>Billing Account Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getBillingAccount <em>Billing Account</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Billing Account Id</em>' reference.
-	 * @see #getBillingAccountId()
+	 * @param value the new value of the '<em>Billing Account</em>' reference.
+	 * @see #getBillingAccount()
 	 * @generated
 	 */
-	void setBillingAccountId(BillingAccount value);
+	void setBillingAccount(BillingAccount value);
 
 	/**
 	 * Returns the value of the '<em><b>Communication Event Orders</b></em>' reference list.
@@ -670,56 +662,48 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	List<OrderProductPromoCode> getOrderProductPromoCodes();
 
 	/**
-	 * Returns the value of the '<em><b>Order Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Order Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Type Id</em>' reference.
-	 * @see #setOrderTypeId(OrderType)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_OrderTypeId()
+	 * @return the value of the '<em>Order Type</em>' reference.
+	 * @see #setOrderType(OrderType)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_OrderType()
 	 * @model keys="orderTypeId"
 	 * @generated
 	 */
-	OrderType getOrderTypeId();
+	OrderType getOrderType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getOrderTypeId <em>Order Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getOrderType <em>Order Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Type Id</em>' reference.
-	 * @see #getOrderTypeId()
+	 * @param value the new value of the '<em>Order Type</em>' reference.
+	 * @see #getOrderType()
 	 * @generated
 	 */
-	void setOrderTypeId(OrderType value);
+	void setOrderType(OrderType value);
 
 	/**
-	 * Returns the value of the '<em><b>Origin Facility Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Origin Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Origin Facility Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Origin Facility Id</em>' reference.
-	 * @see #setOriginFacilityId(Facility)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_OriginFacilityId()
+	 * @return the value of the '<em>Origin Facility</em>' reference.
+	 * @see #setOriginFacility(Facility)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_OriginFacility()
 	 * @model keys="facilityId"
 	 * @generated
 	 */
-	Facility getOriginFacilityId();
+	Facility getOriginFacility();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getOriginFacilityId <em>Origin Facility Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getOriginFacility <em>Origin Facility</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Origin Facility Id</em>' reference.
-	 * @see #getOriginFacilityId()
+	 * @param value the new value of the '<em>Origin Facility</em>' reference.
+	 * @see #getOriginFacility()
 	 * @generated
 	 */
-	void setOriginFacilityId(Facility value);
+	void setOriginFacility(Facility value);
 
 	/**
 	 * Returns the value of the '<em><b>Pick Sheet Printed Date</b></em>' attribute.
@@ -787,30 +771,26 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	List<ProductPromoUse> getProductPromoUses();
 
 	/**
-	 * Returns the value of the '<em><b>Product Store Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Store</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store Id</em>' reference.
-	 * @see #setProductStoreId(ProductStore)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_ProductStoreId()
+	 * @return the value of the '<em>Product Store</em>' reference.
+	 * @see #setProductStore(ProductStore)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_ProductStore()
 	 * @model keys="productStoreId"
 	 * @generated
 	 */
-	ProductStore getProductStoreId();
+	ProductStore getProductStore();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getProductStoreId <em>Product Store Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getProductStore <em>Product Store</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store Id</em>' reference.
-	 * @see #getProductStoreId()
+	 * @param value the new value of the '<em>Product Store</em>' reference.
+	 * @see #getProductStore()
 	 * @generated
 	 */
-	void setProductStoreId(ProductStore value);
+	void setProductStore(ProductStore value);
 
 	/**
 	 * Returns the value of the '<em><b>Remaining Sub Total</b></em>' attribute.
@@ -839,82 +819,70 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	void setRemainingSubTotal(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Sales Channel Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Sales Channel Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sales Channel Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Sales Channel Enum Id</em>' reference.
-	 * @see #setSalesChannelEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_SalesChannelEnumId()
+	 * @return the value of the '<em>Sales Channel Enum</em>' reference.
+	 * @see #setSalesChannelEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_SalesChannelEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getSalesChannelEnumId();
+	Enumeration getSalesChannelEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getSalesChannelEnumId <em>Sales Channel Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getSalesChannelEnum <em>Sales Channel Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Sales Channel Enum Id</em>' reference.
-	 * @see #getSalesChannelEnumId()
+	 * @param value the new value of the '<em>Sales Channel Enum</em>' reference.
+	 * @see #getSalesChannelEnum()
 	 * @generated
 	 */
-	void setSalesChannelEnumId(Enumeration value);
+	void setSalesChannelEnum(Enumeration value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_StatusId()
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_Status()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getStatusId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getStatusId <em>Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setStatusId(StatusItem value);
+	void setStatus(StatusItem value);
 
 	/**
-	 * Returns the value of the '<em><b>Sync Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Sync Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sync Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Sync Status Id</em>' reference.
-	 * @see #setSyncStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_SyncStatusId()
+	 * @return the value of the '<em>Sync Status</em>' reference.
+	 * @see #setSyncStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_SyncStatus()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getSyncStatusId();
+	StatusItem getSyncStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getSyncStatusId <em>Sync Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getSyncStatus <em>Sync Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Sync Status Id</em>' reference.
-	 * @see #getSyncStatusId()
+	 * @param value the new value of the '<em>Sync Status</em>' reference.
+	 * @see #getSyncStatus()
 	 * @generated
 	 */
-	void setSyncStatusId(StatusItem value);
+	void setSyncStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Terminal Id</b></em>' attribute.
@@ -1011,30 +979,26 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	void setVisitId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Web Site Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Web Site</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Web Site Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Web Site Id</em>' reference.
-	 * @see #setWebSiteId(WebSite)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_WebSiteId()
+	 * @return the value of the '<em>Web Site</em>' reference.
+	 * @see #setWebSite(WebSite)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_WebSite()
 	 * @model keys="webSiteId"
 	 * @generated
 	 */
-	WebSite getWebSiteId();
+	WebSite getWebSite();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getWebSiteId <em>Web Site Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getWebSite <em>Web Site</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Web Site Id</em>' reference.
-	 * @see #getWebSiteId()
+	 * @param value the new value of the '<em>Web Site</em>' reference.
+	 * @see #getWebSite()
 	 * @generated
 	 */
-	void setWebSiteId(WebSite value);
+	void setWebSite(WebSite value);
 
 	/**
 	 * <!-- begin-user-doc -->

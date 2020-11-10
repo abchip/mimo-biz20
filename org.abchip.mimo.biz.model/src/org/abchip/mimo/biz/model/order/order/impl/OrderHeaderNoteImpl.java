@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderNoteImpl#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderNoteImpl#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderNoteImpl#getInternalNote <em>Internal Note</em>}</li>
  * </ul>
  *
@@ -54,8 +54,8 @@ public class OrderHeaderNoteImpl extends BizEntityNoteImpl implements OrderHeade
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_HEADER_NOTE__ORDER_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_HEADER_NOTE__ORDER, true);
 	}
 
 	/**
@@ -64,8 +64,8 @@ public class OrderHeaderNoteImpl extends BizEntityNoteImpl implements OrderHeade
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_HEADER_NOTE__ORDER_ID, newOrderId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_HEADER_NOTE__ORDER, newOrder);
 	}
 
 	/**

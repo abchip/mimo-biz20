@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPrpTypImpl#getCommunicationEventPurposes <em>Communication Event Purposes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPrpTypImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPrpTypImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPrpTypImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPrpTypImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -201,8 +201,8 @@ public class CommunicationEventPrpTypImpl extends EntityTypeImpl<CommunicationEv
 	 * @generated
 	 */
 	@Override
-	public CommunicationEventPrpTyp getParentTypeId() {
-		return (CommunicationEventPrpTyp)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PRP_TYP__PARENT_TYPE_ID, true);
+	public CommunicationEventPrpTyp getParentType() {
+		return (CommunicationEventPrpTyp)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PRP_TYP__PARENT_TYPE, true);
 	}
 
 	/**
@@ -211,8 +211,8 @@ public class CommunicationEventPrpTypImpl extends EntityTypeImpl<CommunicationEv
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(CommunicationEventPrpTyp newParentTypeId) {
-		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PRP_TYP__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(CommunicationEventPrpTyp newParentType) {
+		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PRP_TYP__PARENT_TYPE, newParentType);
 	}
 
 	/**

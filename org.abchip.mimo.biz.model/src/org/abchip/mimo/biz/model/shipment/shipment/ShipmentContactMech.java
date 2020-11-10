@@ -20,9 +20,9 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentContactMech#getShipmentId <em>Shipment Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentContactMech#getShipmentContactMechTypeId <em>Shipment Contact Mech Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentContactMech#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentContactMech#getShipment <em>Shipment</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentContactMech#getShipmentContactMechType <em>Shipment Contact Mech Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentContactMech#getContactMech <em>Contact Mech</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentContactMech()
@@ -31,83 +31,71 @@ import org.abchip.mimo.entity.EntityTyped;
  */
 public interface ShipmentContactMech extends EntityTyped<ShipmentContactMechType>, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Contact Mech Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #setContactMechId(ContactMech)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentContactMech_ContactMechId()
-	 * @model keys="contactMechId"
-	 * @generated
-	 */
-	ContactMech getContactMechId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentContactMech#getContactMechId <em>Contact Mech Id</em>}' reference.
+	 * Returns the value of the '<em><b>Shipment</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #getContactMechId()
-	 * @generated
-	 */
-	void setContactMechId(ContactMech value);
-
-	/**
-	 * Returns the value of the '<em><b>Shipment Contact Mech Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Contact Mech Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shipment Contact Mech Type Id</em>' reference.
-	 * @see #setShipmentContactMechTypeId(ShipmentContactMechType)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentContactMech_ShipmentContactMechTypeId()
-	 * @model keys="shipmentContactMechTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ShipmentContactMechType getShipmentContactMechTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentContactMech#getShipmentContactMechTypeId <em>Shipment Contact Mech Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shipment Contact Mech Type Id</em>' reference.
-	 * @see #getShipmentContactMechTypeId()
-	 * @generated
-	 */
-	void setShipmentContactMechTypeId(ShipmentContactMechType value);
-
-	/**
-	 * Returns the value of the '<em><b>Shipment Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shipment Id</em>' reference.
-	 * @see #setShipmentId(Shipment)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentContactMech_ShipmentId()
+	 * @return the value of the '<em>Shipment</em>' reference.
+	 * @see #setShipment(Shipment)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentContactMech_Shipment()
 	 * @model keys="shipmentId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Shipment getShipmentId();
+	Shipment getShipment();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentContactMech#getShipmentId <em>Shipment Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentContactMech#getShipment <em>Shipment</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shipment Id</em>' reference.
-	 * @see #getShipmentId()
+	 * @param value the new value of the '<em>Shipment</em>' reference.
+	 * @see #getShipment()
 	 * @generated
 	 */
-	void setShipmentId(Shipment value);
+	void setShipment(Shipment value);
+
+	/**
+	 * Returns the value of the '<em><b>Shipment Contact Mech Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Shipment Contact Mech Type</em>' reference.
+	 * @see #setShipmentContactMechType(ShipmentContactMechType)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentContactMech_ShipmentContactMechType()
+	 * @model keys="shipmentContactMechTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ShipmentContactMechType getShipmentContactMechType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentContactMech#getShipmentContactMechType <em>Shipment Contact Mech Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Shipment Contact Mech Type</em>' reference.
+	 * @see #getShipmentContactMechType()
+	 * @generated
+	 */
+	void setShipmentContactMechType(ShipmentContactMechType value);
+
+	/**
+	 * Returns the value of the '<em><b>Contact Mech</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Contact Mech</em>' reference.
+	 * @see #setContactMech(ContactMech)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentContactMech_ContactMech()
+	 * @model keys="contactMechId"
+	 * @generated
+	 */
+	ContactMech getContactMech();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentContactMech#getContactMech <em>Contact Mech</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Contact Mech</em>' reference.
+	 * @see #getContactMech()
+	 * @generated
+	 */
+	void setContactMech(ContactMech value);
 
 } // ShipmentContactMech

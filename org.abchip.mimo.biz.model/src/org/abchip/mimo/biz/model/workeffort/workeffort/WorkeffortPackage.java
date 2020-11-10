@@ -145,13 +145,13 @@ public interface WorkeffortPackage extends EPackage {
 	int APPLICATION_SANDBOX__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Runtime Data Id</b></em>' reference.
+	 * The feature id for the '<em><b>Runtime Data</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int APPLICATION_SANDBOX__RUNTIME_DATA_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int APPLICATION_SANDBOX__RUNTIME_DATA = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' attribute.
@@ -218,22 +218,22 @@ public interface WorkeffortPackage extends EPackage {
 	int COMMUNICATION_EVENT_WORK_EFF__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_WORK_EFF__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int COMMUNICATION_EVENT_WORK_EFF__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Communication Event Id</b></em>' reference.
+	 * The feature id for the '<em><b>Communication Event</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_WORK_EFF__COMMUNICATION_EVENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int COMMUNICATION_EVENT_WORK_EFF__COMMUNICATION_EVENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -318,13 +318,13 @@ public interface WorkeffortPackage extends EPackage {
 	int DELIVERABLE__DELIVERABLE_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Deliverable Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Deliverable Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERABLE__DELIVERABLE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int DELIVERABLE__DELIVERABLE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -482,22 +482,22 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT__WORK_EFFORT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Accommodation Map Id</b></em>' reference.
+	 * The feature id for the '<em><b>Accommodation Map</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__ACCOMMODATION_MAP_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int WORK_EFFORT__ACCOMMODATION_MAP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Accommodation Spot Id</b></em>' reference.
+	 * The feature id for the '<em><b>Accommodation Spot</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__ACCOMMODATION_SPOT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int WORK_EFFORT__ACCOMMODATION_SPOT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Actual Completion Date</b></em>' attribute.
@@ -563,13 +563,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT__CREATED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
-	 * The feature id for the '<em><b>Current Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Current Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__CURRENT_STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
+	int WORK_EFFORT__CURRENT_STATUS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -626,22 +626,22 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT__ESTIMATED_START_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__FACILITY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
+	int WORK_EFFORT__FACILITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__FIXED_ASSET_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
+	int WORK_EFFORT__FIXED_ASSET = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Info Url</b></em>' attribute.
@@ -689,22 +689,22 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT__LOCATION_DESC = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
 
 	/**
-	 * The feature id for the '<em><b>Money Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Money Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__MONEY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
+	int WORK_EFFORT__MONEY_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
 
 	/**
-	 * The feature id for the '<em><b>Note Id</b></em>' reference.
+	 * The feature id for the '<em><b>Note</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__NOTE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
+	int WORK_EFFORT__NOTE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Percent Complete</b></em>' attribute.
@@ -752,13 +752,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT__QUANTITY_TO_PRODUCE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 34;
 
 	/**
-	 * The feature id for the '<em><b>Recurrence Info Id</b></em>' reference.
+	 * The feature id for the '<em><b>Recurrence Info</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__RECURRENCE_INFO_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 35;
+	int WORK_EFFORT__RECURRENCE_INFO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 35;
 
 	/**
 	 * The feature id for the '<em><b>Reserv2nd PP Perc</b></em>' attribute.
@@ -797,22 +797,22 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT__REVISION_NUMBER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 39;
 
 	/**
-	 * The feature id for the '<em><b>Runtime Data Id</b></em>' reference.
+	 * The feature id for the '<em><b>Runtime Data</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__RUNTIME_DATA_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 40;
+	int WORK_EFFORT__RUNTIME_DATA = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 40;
 
 	/**
-	 * The feature id for the '<em><b>Scope Enum Id</b></em>' reference.
+	 * The feature id for the '<em><b>Scope Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__SCOPE_ENUM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 41;
+	int WORK_EFFORT__SCOPE_ENUM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 41;
 
 	/**
 	 * The feature id for the '<em><b>Send Notification Email</b></em>' attribute.
@@ -860,13 +860,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT__SPECIAL_TERMS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 46;
 
 	/**
-	 * The feature id for the '<em><b>Temp Expr Id</b></em>' reference.
+	 * The feature id for the '<em><b>Temp Expr</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__TEMP_EXPR_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 47;
+	int WORK_EFFORT__TEMP_EXPR = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 47;
 
 	/**
 	 * The feature id for the '<em><b>Time Transparency</b></em>' attribute.
@@ -1013,22 +1013,22 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT__WORK_EFFORT_NOTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 63;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Parent Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort Parent</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_PARENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 64;
+	int WORK_EFFORT__WORK_EFFORT_PARENT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 64;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Purpose Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort Purpose Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_PURPOSE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 65;
+	int WORK_EFFORT__WORK_EFFORT_PURPOSE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 65;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Skill Standards</b></em>' reference list.
@@ -1049,13 +1049,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT__WORK_EFFORT_SURVEY_APPLS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 67;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 68;
+	int WORK_EFFORT__WORK_EFFORT_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 68;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort</em>' class.
@@ -1113,13 +1113,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_ASSOC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Assoc Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort Assoc Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC__WORK_EFFORT_ASSOC_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int WORK_EFFORT_ASSOC__WORK_EFFORT_ASSOC_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id From</b></em>' reference.
@@ -1376,13 +1376,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_ASSOC_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int WORK_EFFORT_ASSOC_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Assoc Type Attrs</b></em>' reference list.
@@ -1449,13 +1449,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_ASSOC_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Assoc Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort Assoc Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE_ATTR__WORK_EFFORT_ASSOC_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_ASSOC_TYPE_ATTR__WORK_EFFORT_ASSOC_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1531,13 +1531,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ATTRIBUTE__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_ATTRIBUTE__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1622,22 +1622,22 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_BILLING__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_BILLING__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_BILLING__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Invoice Id</b></em>' reference.
+	 * The feature id for the '<em><b>Invoice</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_BILLING__INVOICE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int WORK_EFFORT_BILLING__INVOICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Seq Id</b></em>' attribute.
@@ -1713,22 +1713,22 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_CONTACT_MECH__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTACT_MECH__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_CONTACT_MECH__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Contact Mech Id</b></em>' reference.
+	 * The feature id for the '<em><b>Contact Mech</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTACT_MECH__CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int WORK_EFFORT_CONTACT_MECH__CONTACT_MECH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1813,31 +1813,31 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_CONTENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT__WORK_EFFORT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int WORK_EFFORT_CONTENT__WORK_EFFORT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Content Id</b></em>' reference.
+	 * The feature id for the '<em><b>Content</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT__CONTENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int WORK_EFFORT_CONTENT__CONTENT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Content Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort Content Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT__WORK_EFFORT_CONTENT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int WORK_EFFORT_CONTENT__WORK_EFFORT_CONTENT_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1940,13 +1940,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_CONTENT_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
+	int WORK_EFFORT_CONTENT_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Content Type</em>' class.
@@ -2004,22 +2004,22 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_COST_CALC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_COST_CALC__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_COST_CALC__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Cost Component Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Cost Component Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_COST_CALC__COST_COMPONENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int WORK_EFFORT_COST_CALC__COST_COMPONENT_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -2031,13 +2031,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_COST_CALC__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Cost Component Calc Id</b></em>' reference.
+	 * The feature id for the '<em><b>Cost Component Calc</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_COST_CALC__COST_COMPONENT_CALC_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int WORK_EFFORT_COST_CALC__COST_COMPONENT_CALC = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -2104,22 +2104,22 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_DELIVERABLE_PROD__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_DELIVERABLE_PROD__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_DELIVERABLE_PROD__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Deliverable Id</b></em>' reference.
+	 * The feature id for the '<em><b>Deliverable</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_DELIVERABLE_PROD__DELIVERABLE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int WORK_EFFORT_DELIVERABLE_PROD__DELIVERABLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Deliverable Prod</em>' class.
@@ -2177,13 +2177,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_EVENT_REMINDER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_EVENT_REMINDER__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_EVENT_REMINDER__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Id</b></em>' attribute.
@@ -2195,13 +2195,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_EVENT_REMINDER__SEQUENCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Contact Mech Id</b></em>' reference.
+	 * The feature id for the '<em><b>Contact Mech</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_EVENT_REMINDER__CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int WORK_EFFORT_EVENT_REMINDER__CONTACT_MECH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Current Count</b></em>' attribute.
@@ -2222,13 +2222,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_EVENT_REMINDER__LOCALE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_EVENT_REMINDER__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int WORK_EFFORT_EVENT_REMINDER__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Reminder Date Time</b></em>' attribute.
@@ -2331,22 +2331,22 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_FIXED_ASSET_ASSIGN__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_ASSIGN__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_FIXED_ASSET_ASSIGN__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_ASSIGN__FIXED_ASSET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int WORK_EFFORT_FIXED_ASSET_ASSIGN__FIXED_ASSET = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -2367,13 +2367,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_FIXED_ASSET_ASSIGN__ALLOCATED_COST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Availability Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Availability Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_ASSIGN__AVAILABILITY_STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int WORK_EFFORT_FIXED_ASSET_ASSIGN__AVAILABILITY_STATUS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -2385,13 +2385,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_FIXED_ASSET_ASSIGN__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_ASSIGN__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int WORK_EFFORT_FIXED_ASSET_ASSIGN__STATUS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -2458,22 +2458,22 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_FIXED_ASSET_STD__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_STD__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_FIXED_ASSET_STD__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_STD__FIXED_ASSET_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int WORK_EFFORT_FIXED_ASSET_STD__FIXED_ASSET_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Cost</b></em>' attribute.
@@ -2558,31 +2558,31 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_GOOD_STANDARD__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Good Std Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort Good Std Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT_GOOD_STD_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT_GOOD_STD_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int WORK_EFFORT_GOOD_STANDARD__PRODUCT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -2612,13 +2612,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_GOOD_STANDARD__ESTIMATED_QUANTITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int WORK_EFFORT_GOOD_STANDARD__STATUS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -2721,13 +2721,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_GOOD_STANDARD_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int WORK_EFFORT_GOOD_STANDARD_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Good Standard Type</em>' class.
@@ -2858,22 +2858,22 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_INVENTORY_ASSIGN__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_ASSIGN__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_INVENTORY_ASSIGN__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Inventory Item Id</b></em>' reference.
+	 * The feature id for the '<em><b>Inventory Item</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_ASSIGN__INVENTORY_ITEM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int WORK_EFFORT_INVENTORY_ASSIGN__INVENTORY_ITEM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -2885,13 +2885,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_INVENTORY_ASSIGN__QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_ASSIGN__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int WORK_EFFORT_INVENTORY_ASSIGN__STATUS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Inventory Assign</em>' class.
@@ -2949,22 +2949,22 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_INVENTORY_PRODUCED__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_PRODUCED__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_INVENTORY_PRODUCED__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Inventory Item Id</b></em>' reference.
+	 * The feature id for the '<em><b>Inventory Item</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_PRODUCED__INVENTORY_ITEM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int WORK_EFFORT_INVENTORY_PRODUCED__INVENTORY_ITEM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Inventory Produced</em>' class.
@@ -3022,13 +3022,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_KEYWORD__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_KEYWORD__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_KEYWORD__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Keyword</b></em>' attribute.
@@ -3113,13 +3113,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_NOTE__NOTE_ID = BizPackage.BIZ_ENTITY_NOTE__NOTE_ID;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_NOTE__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_NOTE_FEATURE_COUNT + 0;
+	int WORK_EFFORT_NOTE__WORK_EFFORT = BizPackage.BIZ_ENTITY_NOTE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Internal Note</b></em>' attribute.
@@ -3186,31 +3186,31 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_PARTY_ASSIGNMENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__ROLE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -3222,22 +3222,22 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_PARTY_ASSIGNMENT__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Assigned By User Login Id</b></em>' reference.
+	 * The feature id for the '<em><b>Assigned By User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__ASSIGNED_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__ASSIGNED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Availability Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Availability Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__AVAILABILITY_STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__AVAILABILITY_STATUS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -3249,31 +3249,31 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_PARTY_ASSIGNMENT__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Delegate Reason Enum Id</b></em>' reference.
+	 * The feature id for the '<em><b>Delegate Reason Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__DELEGATE_REASON_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__DELEGATE_REASON_ENUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
-	 * The feature id for the '<em><b>Expectation Enum Id</b></em>' reference.
+	 * The feature id for the '<em><b>Expectation Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__EXPECTATION_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__EXPECTATION_ENUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__FACILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Must Rsvp</b></em>' attribute.
@@ -3285,22 +3285,22 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_PARTY_ASSIGNMENT__MUST_RSVP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
+	 * The feature id for the '<em><b>Status</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_EFFORT_PARTY_ASSIGNMENT__STATUS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
+
+	/**
 	 * The feature id for the '<em><b>Status Date Time</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__STATUS_DATE_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
-
-	/**
-	 * The feature id for the '<em><b>Status Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__STATUS_DATE_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -3385,13 +3385,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_PURPOSE_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PURPOSE_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int WORK_EFFORT_PURPOSE_TYPE__PARENT_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Purpose Type</em>' class.
@@ -3449,22 +3449,22 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_REVIEW__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_REVIEW__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_REVIEW__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>User Login Id</b></em>' reference.
+	 * The feature id for the '<em><b>User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_REVIEW__USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int WORK_EFFORT_REVIEW__USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Review Date</b></em>' attribute.
@@ -3503,13 +3503,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_REVIEW__REVIEW_TEXT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_REVIEW__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int WORK_EFFORT_REVIEW__STATUS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Review</em>' class.
@@ -3567,13 +3567,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_SEARCH_CONSTRAINT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Search Result Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort Search Result</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_CONSTRAINT__WORK_EFFORT_SEARCH_RESULT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_SEARCH_CONSTRAINT__WORK_EFFORT_SEARCH_RESULT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Constraint Seq Id</b></em>' attribute.
@@ -3848,22 +3848,22 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_SKILL_STANDARD__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SKILL_STANDARD__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_SKILL_STANDARD__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Skill Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Skill Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SKILL_STANDARD__SKILL_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int WORK_EFFORT_SKILL_STANDARD__SKILL_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Cost</b></em>' attribute.
@@ -3948,22 +3948,22 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_STATUS__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_STATUS__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_STATUS__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_STATUS__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int WORK_EFFORT_STATUS__STATUS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Status Datetime</b></em>' attribute.
@@ -4048,22 +4048,22 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_SURVEY_APPL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Survey Id</b></em>' reference.
+	 * The feature id for the '<em><b>Survey</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SURVEY_APPL__SURVEY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_SURVEY_APPL__SURVEY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SURVEY_APPL__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int WORK_EFFORT_SURVEY_APPL__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -4139,13 +4139,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_TRANS_BOX__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Process Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Process Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TRANS_BOX__PROCESS_WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_TRANS_BOX__PROCESS_WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>To Activity Id</b></em>' attribute.
@@ -4257,13 +4257,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int WORK_EFFORT_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Type Attrs</b></em>' reference list.
@@ -4330,13 +4330,13 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE_ATTR__WORK_EFFORT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_TYPE_ATTR__WORK_EFFORT_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -4421,15 +4421,15 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getApplicationSandbox_RoleTypeId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.ApplicationSandbox#getRuntimeDataId <em>Runtime Data Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.ApplicationSandbox#getRuntimeData <em>Runtime Data</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Runtime Data Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.ApplicationSandbox#getRuntimeDataId()
+	 * @return the meta object for the reference '<em>Runtime Data</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.ApplicationSandbox#getRuntimeData()
 	 * @see #getApplicationSandbox()
 	 * @generated
 	 */
-	EReference getApplicationSandbox_RuntimeDataId();
+	EReference getApplicationSandbox_RuntimeData();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.ApplicationSandbox#getWorkEffortId <em>Work Effort Id</em>}'.
@@ -4453,26 +4453,26 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getCommunicationEventWorkEff();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.CommunicationEventWorkEff#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.CommunicationEventWorkEff#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.CommunicationEventWorkEff#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.CommunicationEventWorkEff#getWorkEffort()
 	 * @see #getCommunicationEventWorkEff()
 	 * @generated
 	 */
-	EReference getCommunicationEventWorkEff_WorkEffortId();
+	EReference getCommunicationEventWorkEff_WorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.CommunicationEventWorkEff#getCommunicationEventId <em>Communication Event Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.CommunicationEventWorkEff#getCommunicationEvent <em>Communication Event</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Communication Event Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.CommunicationEventWorkEff#getCommunicationEventId()
+	 * @return the meta object for the reference '<em>Communication Event</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.CommunicationEventWorkEff#getCommunicationEvent()
 	 * @see #getCommunicationEventWorkEff()
 	 * @generated
 	 */
-	EReference getCommunicationEventWorkEff_CommunicationEventId();
+	EReference getCommunicationEventWorkEff_CommunicationEvent();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.CommunicationEventWorkEff#getDescription <em>Description</em>}'.
@@ -4518,15 +4518,15 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getDeliverable_DeliverableName();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.Deliverable#getDeliverableTypeId <em>Deliverable Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.Deliverable#getDeliverableType <em>Deliverable Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Deliverable Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.Deliverable#getDeliverableTypeId()
+	 * @return the meta object for the reference '<em>Deliverable Type</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.Deliverable#getDeliverableType()
 	 * @see #getDeliverable()
 	 * @generated
 	 */
-	EReference getDeliverable_DeliverableTypeId();
+	EReference getDeliverable_DeliverableType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.Deliverable#getDescription <em>Description</em>}'.
@@ -4593,26 +4593,26 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffort_WorkEffortId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getAccommodationMapId <em>Accommodation Map Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getAccommodationMap <em>Accommodation Map</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Accommodation Map Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getAccommodationMapId()
+	 * @return the meta object for the reference '<em>Accommodation Map</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getAccommodationMap()
 	 * @see #getWorkEffort()
 	 * @generated
 	 */
-	EReference getWorkEffort_AccommodationMapId();
+	EReference getWorkEffort_AccommodationMap();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getAccommodationSpotId <em>Accommodation Spot Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getAccommodationSpot <em>Accommodation Spot</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Accommodation Spot Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getAccommodationSpotId()
+	 * @return the meta object for the reference '<em>Accommodation Spot</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getAccommodationSpot()
 	 * @see #getWorkEffort()
 	 * @generated
 	 */
-	EReference getWorkEffort_AccommodationSpotId();
+	EReference getWorkEffort_AccommodationSpot();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getActualCompletionDate <em>Actual Completion Date</em>}'.
@@ -4692,15 +4692,15 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffort_CreatedDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getCurrentStatusId <em>Current Status Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getCurrentStatus <em>Current Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Current Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getCurrentStatusId()
+	 * @return the meta object for the reference '<em>Current Status</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getCurrentStatus()
 	 * @see #getWorkEffort()
 	 * @generated
 	 */
-	EReference getWorkEffort_CurrentStatusId();
+	EReference getWorkEffort_CurrentStatus();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getDescription <em>Description</em>}'.
@@ -4769,26 +4769,26 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffort_EstimatedStartDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getFacilityId <em>Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getFacility <em>Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getFacilityId()
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getFacility()
 	 * @see #getWorkEffort()
 	 * @generated
 	 */
-	EReference getWorkEffort_FacilityId();
+	EReference getWorkEffort_Facility();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getFixedAssetId <em>Fixed Asset Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getFixedAsset <em>Fixed Asset</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getFixedAssetId()
+	 * @return the meta object for the reference '<em>Fixed Asset</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getFixedAsset()
 	 * @see #getWorkEffort()
 	 * @generated
 	 */
-	EReference getWorkEffort_FixedAssetId();
+	EReference getWorkEffort_FixedAsset();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getInfoUrl <em>Info Url</em>}'.
@@ -4846,26 +4846,26 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffort_LocationDesc();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getMoneyUomId <em>Money Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getMoneyUom <em>Money Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Money Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getMoneyUomId()
+	 * @return the meta object for the reference '<em>Money Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getMoneyUom()
 	 * @see #getWorkEffort()
 	 * @generated
 	 */
-	EReference getWorkEffort_MoneyUomId();
+	EReference getWorkEffort_MoneyUom();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getNoteId <em>Note Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getNote <em>Note</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Note Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getNoteId()
+	 * @return the meta object for the reference '<em>Note</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getNote()
 	 * @see #getWorkEffort()
 	 * @generated
 	 */
-	EReference getWorkEffort_NoteId();
+	EReference getWorkEffort_Note();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getPercentComplete <em>Percent Complete</em>}'.
@@ -4923,15 +4923,15 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffort_QuantityToProduce();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getRecurrenceInfoId <em>Recurrence Info Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getRecurrenceInfo <em>Recurrence Info</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Recurrence Info Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getRecurrenceInfoId()
+	 * @return the meta object for the reference '<em>Recurrence Info</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getRecurrenceInfo()
 	 * @see #getWorkEffort()
 	 * @generated
 	 */
-	EReference getWorkEffort_RecurrenceInfoId();
+	EReference getWorkEffort_RecurrenceInfo();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getReserv2ndPPPerc <em>Reserv2nd PP Perc</em>}'.
@@ -4978,26 +4978,26 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffort_RevisionNumber();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getRuntimeDataId <em>Runtime Data Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getRuntimeData <em>Runtime Data</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Runtime Data Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getRuntimeDataId()
+	 * @return the meta object for the reference '<em>Runtime Data</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getRuntimeData()
 	 * @see #getWorkEffort()
 	 * @generated
 	 */
-	EReference getWorkEffort_RuntimeDataId();
+	EReference getWorkEffort_RuntimeData();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getScopeEnumId <em>Scope Enum Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getScopeEnum <em>Scope Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Scope Enum Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getScopeEnumId()
+	 * @return the meta object for the reference '<em>Scope Enum</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getScopeEnum()
 	 * @see #getWorkEffort()
 	 * @generated
 	 */
-	EReference getWorkEffort_ScopeEnumId();
+	EReference getWorkEffort_ScopeEnum();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#isSendNotificationEmail <em>Send Notification Email</em>}'.
@@ -5055,15 +5055,15 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffort_SpecialTerms();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getTempExprId <em>Temp Expr Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getTempExpr <em>Temp Expr</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Temp Expr Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getTempExprId()
+	 * @return the meta object for the reference '<em>Temp Expr</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getTempExpr()
 	 * @see #getWorkEffort()
 	 * @generated
 	 */
-	EReference getWorkEffort_TempExprId();
+	EReference getWorkEffort_TempExpr();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getTimeTransparency <em>Time Transparency</em>}'.
@@ -5242,26 +5242,26 @@ public interface WorkeffortPackage extends EPackage {
 	EReference getWorkEffort_WorkEffortNotes();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortParentId <em>Work Effort Parent Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortParent <em>Work Effort Parent</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Parent Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortParentId()
+	 * @return the meta object for the reference '<em>Work Effort Parent</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortParent()
 	 * @see #getWorkEffort()
 	 * @generated
 	 */
-	EReference getWorkEffort_WorkEffortParentId();
+	EReference getWorkEffort_WorkEffortParent();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortPurposeTypeId <em>Work Effort Purpose Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortPurposeType <em>Work Effort Purpose Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Purpose Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortPurposeTypeId()
+	 * @return the meta object for the reference '<em>Work Effort Purpose Type</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortPurposeType()
 	 * @see #getWorkEffort()
 	 * @generated
 	 */
-	EReference getWorkEffort_WorkEffortPurposeTypeId();
+	EReference getWorkEffort_WorkEffortPurposeType();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortSkillStandards <em>Work Effort Skill Standards</em>}'.
@@ -5286,15 +5286,15 @@ public interface WorkeffortPackage extends EPackage {
 	EReference getWorkEffort_WorkEffortSurveyAppls();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortTypeId <em>Work Effort Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortType <em>Work Effort Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortTypeId()
+	 * @return the meta object for the reference '<em>Work Effort Type</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortType()
 	 * @see #getWorkEffort()
 	 * @generated
 	 */
-	EReference getWorkEffort_WorkEffortTypeId();
+	EReference getWorkEffort_WorkEffortType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssoc <em>Work Effort Assoc</em>}'.
@@ -5305,6 +5305,17 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getWorkEffortAssoc();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssoc#getWorkEffortAssocType <em>Work Effort Assoc Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Work Effort Assoc Type</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssoc#getWorkEffortAssocType()
+	 * @see #getWorkEffortAssoc()
+	 * @generated
+	 */
+	EReference getWorkEffortAssoc_WorkEffortAssocType();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssoc#getWorkEffortIdFrom <em>Work Effort Id From</em>}'.
@@ -5327,17 +5338,6 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getWorkEffortAssoc_WorkEffortIdTo();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssoc#getWorkEffortAssocTypeId <em>Work Effort Assoc Type Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Assoc Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssoc#getWorkEffortAssocTypeId()
-	 * @see #getWorkEffortAssoc()
-	 * @generated
-	 */
-	EReference getWorkEffortAssoc_WorkEffortAssocTypeId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssoc#getFromDate <em>From Date</em>}'.
@@ -5503,15 +5503,15 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortAssocType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocType#getParentType()
 	 * @see #getWorkEffortAssocType()
 	 * @generated
 	 */
-	EReference getWorkEffortAssocType_ParentTypeId();
+	EReference getWorkEffortAssocType_ParentType();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocType#getWorkEffortAssocTypeAttrs <em>Work Effort Assoc Type Attrs</em>}'.
@@ -5535,15 +5535,15 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortAssocTypeAttr();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocTypeAttr#getWorkEffortAssocTypeId <em>Work Effort Assoc Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocTypeAttr#getWorkEffortAssocType <em>Work Effort Assoc Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Assoc Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocTypeAttr#getWorkEffortAssocTypeId()
+	 * @return the meta object for the reference '<em>Work Effort Assoc Type</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocTypeAttr#getWorkEffortAssocType()
 	 * @see #getWorkEffortAssocTypeAttr()
 	 * @generated
 	 */
-	EReference getWorkEffortAssocTypeAttr_WorkEffortAssocTypeId();
+	EReference getWorkEffortAssocTypeAttr_WorkEffortAssocType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocTypeAttr#getAttrName <em>Attr Name</em>}'.
@@ -5578,15 +5578,15 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortAttribute();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAttribute#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAttribute#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAttribute#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAttribute#getWorkEffort()
 	 * @see #getWorkEffortAttribute()
 	 * @generated
 	 */
-	EReference getWorkEffortAttribute_WorkEffortId();
+	EReference getWorkEffortAttribute_WorkEffort();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAttribute#getAttrName <em>Attr Name</em>}'.
@@ -5632,26 +5632,26 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortBilling();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortBilling#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortBilling#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortBilling#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortBilling#getWorkEffort()
 	 * @see #getWorkEffortBilling()
 	 * @generated
 	 */
-	EReference getWorkEffortBilling_WorkEffortId();
+	EReference getWorkEffortBilling_WorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortBilling#getInvoiceId <em>Invoice Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortBilling#getInvoice <em>Invoice</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Invoice Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortBilling#getInvoiceId()
+	 * @return the meta object for the reference '<em>Invoice</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortBilling#getInvoice()
 	 * @see #getWorkEffortBilling()
 	 * @generated
 	 */
-	EReference getWorkEffortBilling_InvoiceId();
+	EReference getWorkEffortBilling_Invoice();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortBilling#getInvoiceItemSeqId <em>Invoice Item Seq Id</em>}'.
@@ -5686,26 +5686,26 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortContactMech();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContactMech#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContactMech#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContactMech#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContactMech#getWorkEffort()
 	 * @see #getWorkEffortContactMech()
 	 * @generated
 	 */
-	EReference getWorkEffortContactMech_WorkEffortId();
+	EReference getWorkEffortContactMech_WorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContactMech#getContactMechId <em>Contact Mech Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContactMech#getContactMech <em>Contact Mech</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Contact Mech Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContactMech#getContactMechId()
+	 * @return the meta object for the reference '<em>Contact Mech</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContactMech#getContactMech()
 	 * @see #getWorkEffortContactMech()
 	 * @generated
 	 */
-	EReference getWorkEffortContactMech_ContactMechId();
+	EReference getWorkEffortContactMech_ContactMech();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContactMech#getFromDate <em>From Date</em>}'.
@@ -5751,37 +5751,37 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortContent();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContent#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContent#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContent#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContent#getWorkEffort()
 	 * @see #getWorkEffortContent()
 	 * @generated
 	 */
-	EReference getWorkEffortContent_WorkEffortId();
+	EReference getWorkEffortContent_WorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContent#getContentId <em>Content Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContent#getContent <em>Content</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Content Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContent#getContentId()
+	 * @return the meta object for the reference '<em>Content</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContent#getContent()
 	 * @see #getWorkEffortContent()
 	 * @generated
 	 */
-	EReference getWorkEffortContent_ContentId();
+	EReference getWorkEffortContent_Content();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContent#getWorkEffortContentTypeId <em>Work Effort Content Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContent#getWorkEffortContentType <em>Work Effort Content Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Content Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContent#getWorkEffortContentTypeId()
+	 * @return the meta object for the reference '<em>Work Effort Content Type</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContent#getWorkEffortContentType()
 	 * @see #getWorkEffortContent()
 	 * @generated
 	 */
-	EReference getWorkEffortContent_WorkEffortContentTypeId();
+	EReference getWorkEffortContent_WorkEffortContentType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContent#getFromDate <em>From Date</em>}'.
@@ -5838,15 +5838,15 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortContentType_Description();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContentType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContentType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContentType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContentType#getParentType()
 	 * @see #getWorkEffortContentType()
 	 * @generated
 	 */
-	EReference getWorkEffortContentType_ParentTypeId();
+	EReference getWorkEffortContentType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortCostCalc <em>Work Effort Cost Calc</em>}'.
@@ -5859,26 +5859,26 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortCostCalc();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortCostCalc#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortCostCalc#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortCostCalc#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortCostCalc#getWorkEffort()
 	 * @see #getWorkEffortCostCalc()
 	 * @generated
 	 */
-	EReference getWorkEffortCostCalc_WorkEffortId();
+	EReference getWorkEffortCostCalc_WorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortCostCalc#getCostComponentTypeId <em>Cost Component Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortCostCalc#getCostComponentType <em>Cost Component Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Cost Component Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortCostCalc#getCostComponentTypeId()
+	 * @return the meta object for the reference '<em>Cost Component Type</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortCostCalc#getCostComponentType()
 	 * @see #getWorkEffortCostCalc()
 	 * @generated
 	 */
-	EReference getWorkEffortCostCalc_CostComponentTypeId();
+	EReference getWorkEffortCostCalc_CostComponentType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortCostCalc#getFromDate <em>From Date</em>}'.
@@ -5892,15 +5892,15 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortCostCalc_FromDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortCostCalc#getCostComponentCalcId <em>Cost Component Calc Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortCostCalc#getCostComponentCalc <em>Cost Component Calc</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Cost Component Calc Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortCostCalc#getCostComponentCalcId()
+	 * @return the meta object for the reference '<em>Cost Component Calc</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortCostCalc#getCostComponentCalc()
 	 * @see #getWorkEffortCostCalc()
 	 * @generated
 	 */
-	EReference getWorkEffortCostCalc_CostComponentCalcId();
+	EReference getWorkEffortCostCalc_CostComponentCalc();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortCostCalc#getThruDate <em>Thru Date</em>}'.
@@ -5924,26 +5924,26 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortDeliverableProd();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortDeliverableProd#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortDeliverableProd#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortDeliverableProd#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortDeliverableProd#getWorkEffort()
 	 * @see #getWorkEffortDeliverableProd()
 	 * @generated
 	 */
-	EReference getWorkEffortDeliverableProd_WorkEffortId();
+	EReference getWorkEffortDeliverableProd_WorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortDeliverableProd#getDeliverableId <em>Deliverable Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortDeliverableProd#getDeliverable <em>Deliverable</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Deliverable Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortDeliverableProd#getDeliverableId()
+	 * @return the meta object for the reference '<em>Deliverable</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortDeliverableProd#getDeliverable()
 	 * @see #getWorkEffortDeliverableProd()
 	 * @generated
 	 */
-	EReference getWorkEffortDeliverableProd_DeliverableId();
+	EReference getWorkEffortDeliverableProd_Deliverable();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder <em>Work Effort Event Reminder</em>}'.
@@ -5956,15 +5956,15 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortEventReminder();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getWorkEffort()
 	 * @see #getWorkEffortEventReminder()
 	 * @generated
 	 */
-	EReference getWorkEffortEventReminder_WorkEffortId();
+	EReference getWorkEffortEventReminder_WorkEffort();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getSequenceId <em>Sequence Id</em>}'.
@@ -5978,15 +5978,15 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortEventReminder_SequenceId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getContactMechId <em>Contact Mech Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getContactMech <em>Contact Mech</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Contact Mech Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getContactMechId()
+	 * @return the meta object for the reference '<em>Contact Mech</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getContactMech()
 	 * @see #getWorkEffortEventReminder()
 	 * @generated
 	 */
-	EReference getWorkEffortEventReminder_ContactMechId();
+	EReference getWorkEffortEventReminder_ContactMech();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getCurrentCount <em>Current Count</em>}'.
@@ -6011,15 +6011,15 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortEventReminder_LocaleId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getParty()
 	 * @see #getWorkEffortEventReminder()
 	 * @generated
 	 */
-	EReference getWorkEffortEventReminder_PartyId();
+	EReference getWorkEffortEventReminder_Party();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getReminderDateTime <em>Reminder Date Time</em>}'.
@@ -6087,26 +6087,26 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortFixedAssetAssign();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getWorkEffort()
 	 * @see #getWorkEffortFixedAssetAssign()
 	 * @generated
 	 */
-	EReference getWorkEffortFixedAssetAssign_WorkEffortId();
+	EReference getWorkEffortFixedAssetAssign_WorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getFixedAssetId <em>Fixed Asset Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getFixedAsset <em>Fixed Asset</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getFixedAssetId()
+	 * @return the meta object for the reference '<em>Fixed Asset</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getFixedAsset()
 	 * @see #getWorkEffortFixedAssetAssign()
 	 * @generated
 	 */
-	EReference getWorkEffortFixedAssetAssign_FixedAssetId();
+	EReference getWorkEffortFixedAssetAssign_FixedAsset();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getFromDate <em>From Date</em>}'.
@@ -6131,15 +6131,15 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortFixedAssetAssign_AllocatedCost();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getAvailabilityStatusId <em>Availability Status Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getAvailabilityStatus <em>Availability Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Availability Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getAvailabilityStatusId()
+	 * @return the meta object for the reference '<em>Availability Status</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getAvailabilityStatus()
 	 * @see #getWorkEffortFixedAssetAssign()
 	 * @generated
 	 */
-	EReference getWorkEffortFixedAssetAssign_AvailabilityStatusId();
+	EReference getWorkEffortFixedAssetAssign_AvailabilityStatus();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getComments <em>Comments</em>}'.
@@ -6153,15 +6153,15 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortFixedAssetAssign_Comments();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getStatusId <em>Status Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getStatus <em>Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getStatusId()
+	 * @return the meta object for the reference '<em>Status</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getStatus()
 	 * @see #getWorkEffortFixedAssetAssign()
 	 * @generated
 	 */
-	EReference getWorkEffortFixedAssetAssign_StatusId();
+	EReference getWorkEffortFixedAssetAssign_Status();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign#getThruDate <em>Thru Date</em>}'.
@@ -6185,26 +6185,26 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortFixedAssetStd();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetStd#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetStd#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetStd#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetStd#getWorkEffort()
 	 * @see #getWorkEffortFixedAssetStd()
 	 * @generated
 	 */
-	EReference getWorkEffortFixedAssetStd_WorkEffortId();
+	EReference getWorkEffortFixedAssetStd_WorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetStd#getFixedAssetTypeId <em>Fixed Asset Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetStd#getFixedAssetType <em>Fixed Asset Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetStd#getFixedAssetTypeId()
+	 * @return the meta object for the reference '<em>Fixed Asset Type</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetStd#getFixedAssetType()
 	 * @see #getWorkEffortFixedAssetStd()
 	 * @generated
 	 */
-	EReference getWorkEffortFixedAssetStd_FixedAssetTypeId();
+	EReference getWorkEffortFixedAssetStd_FixedAssetType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetStd#getEstimatedCost <em>Estimated Cost</em>}'.
@@ -6250,37 +6250,37 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortGoodStandard();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandard#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandard#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandard#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandard#getWorkEffort()
 	 * @see #getWorkEffortGoodStandard()
 	 * @generated
 	 */
-	EReference getWorkEffortGoodStandard_WorkEffortId();
+	EReference getWorkEffortGoodStandard_WorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandard#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandard#getWorkEffortGoodStdType <em>Work Effort Good Std Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandard#getProductId()
+	 * @return the meta object for the reference '<em>Work Effort Good Std Type</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandard#getWorkEffortGoodStdType()
 	 * @see #getWorkEffortGoodStandard()
 	 * @generated
 	 */
-	EReference getWorkEffortGoodStandard_ProductId();
+	EReference getWorkEffortGoodStandard_WorkEffortGoodStdType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandard#getWorkEffortGoodStdTypeId <em>Work Effort Good Std Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandard#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Good Std Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandard#getWorkEffortGoodStdTypeId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandard#getProduct()
 	 * @see #getWorkEffortGoodStandard()
 	 * @generated
 	 */
-	EReference getWorkEffortGoodStandard_WorkEffortGoodStdTypeId();
+	EReference getWorkEffortGoodStandard_Product();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandard#getFromDate <em>From Date</em>}'.
@@ -6316,15 +6316,15 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortGoodStandard_EstimatedQuantity();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandard#getStatusId <em>Status Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandard#getStatus <em>Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandard#getStatusId()
+	 * @return the meta object for the reference '<em>Status</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandard#getStatus()
 	 * @see #getWorkEffortGoodStandard()
 	 * @generated
 	 */
-	EReference getWorkEffortGoodStandard_StatusId();
+	EReference getWorkEffortGoodStandard_Status();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandard#getThruDate <em>Thru Date</em>}'.
@@ -6381,15 +6381,15 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortGoodStandardType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandardType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandardType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandardType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandardType#getParentType()
 	 * @see #getWorkEffortGoodStandardType()
 	 * @generated
 	 */
-	EReference getWorkEffortGoodStandardType_ParentTypeId();
+	EReference getWorkEffortGoodStandardType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortIcalData <em>Work Effort Ical Data</em>}'.
@@ -6434,26 +6434,26 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortInventoryAssign();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryAssign#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryAssign#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryAssign#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryAssign#getWorkEffort()
 	 * @see #getWorkEffortInventoryAssign()
 	 * @generated
 	 */
-	EReference getWorkEffortInventoryAssign_WorkEffortId();
+	EReference getWorkEffortInventoryAssign_WorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryAssign#getInventoryItemId <em>Inventory Item Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryAssign#getInventoryItem <em>Inventory Item</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Inventory Item Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryAssign#getInventoryItemId()
+	 * @return the meta object for the reference '<em>Inventory Item</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryAssign#getInventoryItem()
 	 * @see #getWorkEffortInventoryAssign()
 	 * @generated
 	 */
-	EReference getWorkEffortInventoryAssign_InventoryItemId();
+	EReference getWorkEffortInventoryAssign_InventoryItem();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryAssign#getQuantity <em>Quantity</em>}'.
@@ -6467,15 +6467,15 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortInventoryAssign_Quantity();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryAssign#getStatusId <em>Status Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryAssign#getStatus <em>Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryAssign#getStatusId()
+	 * @return the meta object for the reference '<em>Status</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryAssign#getStatus()
 	 * @see #getWorkEffortInventoryAssign()
 	 * @generated
 	 */
-	EReference getWorkEffortInventoryAssign_StatusId();
+	EReference getWorkEffortInventoryAssign_Status();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryProduced <em>Work Effort Inventory Produced</em>}'.
@@ -6488,26 +6488,26 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortInventoryProduced();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryProduced#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryProduced#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryProduced#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryProduced#getWorkEffort()
 	 * @see #getWorkEffortInventoryProduced()
 	 * @generated
 	 */
-	EReference getWorkEffortInventoryProduced_WorkEffortId();
+	EReference getWorkEffortInventoryProduced_WorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryProduced#getInventoryItemId <em>Inventory Item Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryProduced#getInventoryItem <em>Inventory Item</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Inventory Item Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryProduced#getInventoryItemId()
+	 * @return the meta object for the reference '<em>Inventory Item</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryProduced#getInventoryItem()
 	 * @see #getWorkEffortInventoryProduced()
 	 * @generated
 	 */
-	EReference getWorkEffortInventoryProduced_InventoryItemId();
+	EReference getWorkEffortInventoryProduced_InventoryItem();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortKeyword <em>Work Effort Keyword</em>}'.
@@ -6520,15 +6520,15 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortKeyword();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortKeyword#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortKeyword#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortKeyword#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortKeyword#getWorkEffort()
 	 * @see #getWorkEffortKeyword()
 	 * @generated
 	 */
-	EReference getWorkEffortKeyword_WorkEffortId();
+	EReference getWorkEffortKeyword_WorkEffort();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortKeyword#getKeyword <em>Keyword</em>}'.
@@ -6563,15 +6563,15 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortNote();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortNote#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortNote#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortNote#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortNote#getWorkEffort()
 	 * @see #getWorkEffortNote()
 	 * @generated
 	 */
-	EReference getWorkEffortNote_WorkEffortId();
+	EReference getWorkEffortNote_WorkEffort();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortNote#isInternalNote <em>Internal Note</em>}'.
@@ -6595,37 +6595,37 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortPartyAssignment();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getWorkEffort()
 	 * @see #getWorkEffortPartyAssignment()
 	 * @generated
 	 */
-	EReference getWorkEffortPartyAssignment_WorkEffortId();
+	EReference getWorkEffortPartyAssignment_WorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getParty()
 	 * @see #getWorkEffortPartyAssignment()
 	 * @generated
 	 */
-	EReference getWorkEffortPartyAssignment_PartyId();
+	EReference getWorkEffortPartyAssignment_Party();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getRoleTypeId <em>Role Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getRoleType <em>Role Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Role Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getRoleTypeId()
+	 * @return the meta object for the reference '<em>Role Type</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getRoleType()
 	 * @see #getWorkEffortPartyAssignment()
 	 * @generated
 	 */
-	EReference getWorkEffortPartyAssignment_RoleTypeId();
+	EReference getWorkEffortPartyAssignment_RoleType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getFromDate <em>From Date</em>}'.
@@ -6639,26 +6639,26 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortPartyAssignment_FromDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getAssignedByUserLoginId <em>Assigned By User Login Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getAssignedByUserLogin <em>Assigned By User Login</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Assigned By User Login Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getAssignedByUserLoginId()
+	 * @return the meta object for the reference '<em>Assigned By User Login</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getAssignedByUserLogin()
 	 * @see #getWorkEffortPartyAssignment()
 	 * @generated
 	 */
-	EReference getWorkEffortPartyAssignment_AssignedByUserLoginId();
+	EReference getWorkEffortPartyAssignment_AssignedByUserLogin();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getAvailabilityStatusId <em>Availability Status Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getAvailabilityStatus <em>Availability Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Availability Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getAvailabilityStatusId()
+	 * @return the meta object for the reference '<em>Availability Status</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getAvailabilityStatus()
 	 * @see #getWorkEffortPartyAssignment()
 	 * @generated
 	 */
-	EReference getWorkEffortPartyAssignment_AvailabilityStatusId();
+	EReference getWorkEffortPartyAssignment_AvailabilityStatus();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getComments <em>Comments</em>}'.
@@ -6672,37 +6672,37 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortPartyAssignment_Comments();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getDelegateReasonEnumId <em>Delegate Reason Enum Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getDelegateReasonEnum <em>Delegate Reason Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Delegate Reason Enum Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getDelegateReasonEnumId()
+	 * @return the meta object for the reference '<em>Delegate Reason Enum</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getDelegateReasonEnum()
 	 * @see #getWorkEffortPartyAssignment()
 	 * @generated
 	 */
-	EReference getWorkEffortPartyAssignment_DelegateReasonEnumId();
+	EReference getWorkEffortPartyAssignment_DelegateReasonEnum();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getExpectationEnumId <em>Expectation Enum Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getExpectationEnum <em>Expectation Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Expectation Enum Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getExpectationEnumId()
+	 * @return the meta object for the reference '<em>Expectation Enum</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getExpectationEnum()
 	 * @see #getWorkEffortPartyAssignment()
 	 * @generated
 	 */
-	EReference getWorkEffortPartyAssignment_ExpectationEnumId();
+	EReference getWorkEffortPartyAssignment_ExpectationEnum();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getFacilityId <em>Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getFacility <em>Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getFacilityId()
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getFacility()
 	 * @see #getWorkEffortPartyAssignment()
 	 * @generated
 	 */
-	EReference getWorkEffortPartyAssignment_FacilityId();
+	EReference getWorkEffortPartyAssignment_Facility();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getMustRsvp <em>Must Rsvp</em>}'.
@@ -6716,6 +6716,17 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortPartyAssignment_MustRsvp();
 
 	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getStatus <em>Status</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Status</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getStatus()
+	 * @see #getWorkEffortPartyAssignment()
+	 * @generated
+	 */
+	EReference getWorkEffortPartyAssignment_Status();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getStatusDateTime <em>Status Date Time</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6725,17 +6736,6 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getWorkEffortPartyAssignment_StatusDateTime();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getStatusId <em>Status Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getStatusId()
-	 * @see #getWorkEffortPartyAssignment()
-	 * @generated
-	 */
-	EReference getWorkEffortPartyAssignment_StatusId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getThruDate <em>Thru Date</em>}'.
@@ -6781,15 +6781,15 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortPurposeType_Description();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPurposeType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPurposeType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPurposeType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPurposeType#getParentType()
 	 * @see #getWorkEffortPurposeType()
 	 * @generated
 	 */
-	EReference getWorkEffortPurposeType_ParentTypeId();
+	EReference getWorkEffortPurposeType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortReview <em>Work Effort Review</em>}'.
@@ -6802,26 +6802,26 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortReview();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortReview#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortReview#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortReview#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortReview#getWorkEffort()
 	 * @see #getWorkEffortReview()
 	 * @generated
 	 */
-	EReference getWorkEffortReview_WorkEffortId();
+	EReference getWorkEffortReview_WorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortReview#getUserLoginId <em>User Login Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortReview#getUserLogin <em>User Login</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>User Login Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortReview#getUserLoginId()
+	 * @return the meta object for the reference '<em>User Login</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortReview#getUserLogin()
 	 * @see #getWorkEffortReview()
 	 * @generated
 	 */
-	EReference getWorkEffortReview_UserLoginId();
+	EReference getWorkEffortReview_UserLogin();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortReview#getReviewDate <em>Review Date</em>}'.
@@ -6868,15 +6868,15 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortReview_ReviewText();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortReview#getStatusId <em>Status Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortReview#getStatus <em>Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortReview#getStatusId()
+	 * @return the meta object for the reference '<em>Status</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortReview#getStatus()
 	 * @see #getWorkEffortReview()
 	 * @generated
 	 */
-	EReference getWorkEffortReview_StatusId();
+	EReference getWorkEffortReview_Status();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint <em>Work Effort Search Constraint</em>}'.
@@ -6889,15 +6889,15 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortSearchConstraint();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getWorkEffortSearchResultId <em>Work Effort Search Result Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getWorkEffortSearchResult <em>Work Effort Search Result</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Search Result Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getWorkEffortSearchResultId()
+	 * @return the meta object for the reference '<em>Work Effort Search Result</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getWorkEffortSearchResult()
 	 * @see #getWorkEffortSearchConstraint()
 	 * @generated
 	 */
-	EReference getWorkEffortSearchConstraint_WorkEffortSearchResultId();
+	EReference getWorkEffortSearchConstraint_WorkEffortSearchResult();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getConstraintSeqId <em>Constraint Seq Id</em>}'.
@@ -7118,26 +7118,26 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortSkillStandard();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSkillStandard#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSkillStandard#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSkillStandard#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSkillStandard#getWorkEffort()
 	 * @see #getWorkEffortSkillStandard()
 	 * @generated
 	 */
-	EReference getWorkEffortSkillStandard_WorkEffortId();
+	EReference getWorkEffortSkillStandard_WorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSkillStandard#getSkillTypeId <em>Skill Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSkillStandard#getSkillType <em>Skill Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Skill Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSkillStandard#getSkillTypeId()
+	 * @return the meta object for the reference '<em>Skill Type</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSkillStandard#getSkillType()
 	 * @see #getWorkEffortSkillStandard()
 	 * @generated
 	 */
-	EReference getWorkEffortSkillStandard_SkillTypeId();
+	EReference getWorkEffortSkillStandard_SkillType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSkillStandard#getEstimatedCost <em>Estimated Cost</em>}'.
@@ -7183,26 +7183,26 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortStatus();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortStatus#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortStatus#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortStatus#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortStatus#getWorkEffort()
 	 * @see #getWorkEffortStatus()
 	 * @generated
 	 */
-	EReference getWorkEffortStatus_WorkEffortId();
+	EReference getWorkEffortStatus_WorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortStatus#getStatusId <em>Status Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortStatus#getStatus <em>Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortStatus#getStatusId()
+	 * @return the meta object for the reference '<em>Status</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortStatus#getStatus()
 	 * @see #getWorkEffortStatus()
 	 * @generated
 	 */
-	EReference getWorkEffortStatus_StatusId();
+	EReference getWorkEffortStatus_Status();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortStatus#getStatusDatetime <em>Status Datetime</em>}'.
@@ -7248,26 +7248,26 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortSurveyAppl();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSurveyAppl#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSurveyAppl#getSurvey <em>Survey</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSurveyAppl#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Survey</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSurveyAppl#getSurvey()
 	 * @see #getWorkEffortSurveyAppl()
 	 * @generated
 	 */
-	EReference getWorkEffortSurveyAppl_WorkEffortId();
+	EReference getWorkEffortSurveyAppl_Survey();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSurveyAppl#getSurveyId <em>Survey Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSurveyAppl#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Survey Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSurveyAppl#getSurveyId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSurveyAppl#getWorkEffort()
 	 * @see #getWorkEffortSurveyAppl()
 	 * @generated
 	 */
-	EReference getWorkEffortSurveyAppl_SurveyId();
+	EReference getWorkEffortSurveyAppl_WorkEffort();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSurveyAppl#getFromDate <em>From Date</em>}'.
@@ -7302,15 +7302,15 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortTransBox();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortTransBox#getProcessWorkEffortId <em>Process Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortTransBox#getProcessWorkEffort <em>Process Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Process Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortTransBox#getProcessWorkEffortId()
+	 * @return the meta object for the reference '<em>Process Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortTransBox#getProcessWorkEffort()
 	 * @see #getWorkEffortTransBox()
 	 * @generated
 	 */
-	EReference getWorkEffortTransBox_ProcessWorkEffortId();
+	EReference getWorkEffortTransBox_ProcessWorkEffort();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortTransBox#getToActivityId <em>To Activity Id</em>}'.
@@ -7378,15 +7378,15 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortType#getParentType()
 	 * @see #getWorkEffortType()
 	 * @generated
 	 */
-	EReference getWorkEffortType_ParentTypeId();
+	EReference getWorkEffortType_ParentType();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortType#getWorkEffortTypeAttrs <em>Work Effort Type Attrs</em>}'.
@@ -7410,15 +7410,15 @@ public interface WorkeffortPackage extends EPackage {
 	EClass getWorkEffortTypeAttr();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortTypeAttr#getWorkEffortTypeId <em>Work Effort Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortTypeAttr#getWorkEffortType <em>Work Effort Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortTypeAttr#getWorkEffortTypeId()
+	 * @return the meta object for the reference '<em>Work Effort Type</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortTypeAttr#getWorkEffortType()
 	 * @see #getWorkEffortTypeAttr()
 	 * @generated
 	 */
-	EReference getWorkEffortTypeAttr_WorkEffortTypeId();
+	EReference getWorkEffortTypeAttr_WorkEffortType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortTypeAttr#getAttrName <em>Attr Name</em>}'.
@@ -7507,12 +7507,12 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute APPLICATION_SANDBOX__ROLE_TYPE_ID = eINSTANCE.getApplicationSandbox_RoleTypeId();
 
 		/**
-		 * The meta object literal for the '<em><b>Runtime Data Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Runtime Data</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference APPLICATION_SANDBOX__RUNTIME_DATA_ID = eINSTANCE.getApplicationSandbox_RuntimeDataId();
+		EReference APPLICATION_SANDBOX__RUNTIME_DATA = eINSTANCE.getApplicationSandbox_RuntimeData();
 
 		/**
 		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' attribute feature.
@@ -7533,20 +7533,20 @@ public interface WorkeffortPackage extends EPackage {
 		EClass COMMUNICATION_EVENT_WORK_EFF = eINSTANCE.getCommunicationEventWorkEff();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COMMUNICATION_EVENT_WORK_EFF__WORK_EFFORT_ID = eINSTANCE.getCommunicationEventWorkEff_WorkEffortId();
+		EReference COMMUNICATION_EVENT_WORK_EFF__WORK_EFFORT = eINSTANCE.getCommunicationEventWorkEff_WorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>Communication Event Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Communication Event</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COMMUNICATION_EVENT_WORK_EFF__COMMUNICATION_EVENT_ID = eINSTANCE.getCommunicationEventWorkEff_CommunicationEventId();
+		EReference COMMUNICATION_EVENT_WORK_EFF__COMMUNICATION_EVENT = eINSTANCE.getCommunicationEventWorkEff_CommunicationEvent();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
@@ -7583,12 +7583,12 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute DELIVERABLE__DELIVERABLE_NAME = eINSTANCE.getDeliverable_DeliverableName();
 
 		/**
-		 * The meta object literal for the '<em><b>Deliverable Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Deliverable Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DELIVERABLE__DELIVERABLE_TYPE_ID = eINSTANCE.getDeliverable_DeliverableTypeId();
+		EReference DELIVERABLE__DELIVERABLE_TYPE = eINSTANCE.getDeliverable_DeliverableType();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
@@ -7643,20 +7643,20 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT__WORK_EFFORT_ID = eINSTANCE.getWorkEffort_WorkEffortId();
 
 		/**
-		 * The meta object literal for the '<em><b>Accommodation Map Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Accommodation Map</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT__ACCOMMODATION_MAP_ID = eINSTANCE.getWorkEffort_AccommodationMapId();
+		EReference WORK_EFFORT__ACCOMMODATION_MAP = eINSTANCE.getWorkEffort_AccommodationMap();
 
 		/**
-		 * The meta object literal for the '<em><b>Accommodation Spot Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Accommodation Spot</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT__ACCOMMODATION_SPOT_ID = eINSTANCE.getWorkEffort_AccommodationSpotId();
+		EReference WORK_EFFORT__ACCOMMODATION_SPOT = eINSTANCE.getWorkEffort_AccommodationSpot();
 
 		/**
 		 * The meta object literal for the '<em><b>Actual Completion Date</b></em>' attribute feature.
@@ -7715,12 +7715,12 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT__CREATED_DATE = eINSTANCE.getWorkEffort_CreatedDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Current Status Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Current Status</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT__CURRENT_STATUS_ID = eINSTANCE.getWorkEffort_CurrentStatusId();
+		EReference WORK_EFFORT__CURRENT_STATUS = eINSTANCE.getWorkEffort_CurrentStatus();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
@@ -7771,20 +7771,20 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT__ESTIMATED_START_DATE = eINSTANCE.getWorkEffort_EstimatedStartDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT__FACILITY_ID = eINSTANCE.getWorkEffort_FacilityId();
+		EReference WORK_EFFORT__FACILITY = eINSTANCE.getWorkEffort_Facility();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT__FIXED_ASSET_ID = eINSTANCE.getWorkEffort_FixedAssetId();
+		EReference WORK_EFFORT__FIXED_ASSET = eINSTANCE.getWorkEffort_FixedAsset();
 
 		/**
 		 * The meta object literal for the '<em><b>Info Url</b></em>' attribute feature.
@@ -7827,20 +7827,20 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT__LOCATION_DESC = eINSTANCE.getWorkEffort_LocationDesc();
 
 		/**
-		 * The meta object literal for the '<em><b>Money Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Money Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT__MONEY_UOM_ID = eINSTANCE.getWorkEffort_MoneyUomId();
+		EReference WORK_EFFORT__MONEY_UOM = eINSTANCE.getWorkEffort_MoneyUom();
 
 		/**
-		 * The meta object literal for the '<em><b>Note Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Note</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT__NOTE_ID = eINSTANCE.getWorkEffort_NoteId();
+		EReference WORK_EFFORT__NOTE = eINSTANCE.getWorkEffort_Note();
 
 		/**
 		 * The meta object literal for the '<em><b>Percent Complete</b></em>' attribute feature.
@@ -7883,12 +7883,12 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT__QUANTITY_TO_PRODUCE = eINSTANCE.getWorkEffort_QuantityToProduce();
 
 		/**
-		 * The meta object literal for the '<em><b>Recurrence Info Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Recurrence Info</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT__RECURRENCE_INFO_ID = eINSTANCE.getWorkEffort_RecurrenceInfoId();
+		EReference WORK_EFFORT__RECURRENCE_INFO = eINSTANCE.getWorkEffort_RecurrenceInfo();
 
 		/**
 		 * The meta object literal for the '<em><b>Reserv2nd PP Perc</b></em>' attribute feature.
@@ -7923,20 +7923,20 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT__REVISION_NUMBER = eINSTANCE.getWorkEffort_RevisionNumber();
 
 		/**
-		 * The meta object literal for the '<em><b>Runtime Data Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Runtime Data</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT__RUNTIME_DATA_ID = eINSTANCE.getWorkEffort_RuntimeDataId();
+		EReference WORK_EFFORT__RUNTIME_DATA = eINSTANCE.getWorkEffort_RuntimeData();
 
 		/**
-		 * The meta object literal for the '<em><b>Scope Enum Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Scope Enum</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT__SCOPE_ENUM_ID = eINSTANCE.getWorkEffort_ScopeEnumId();
+		EReference WORK_EFFORT__SCOPE_ENUM = eINSTANCE.getWorkEffort_ScopeEnum();
 
 		/**
 		 * The meta object literal for the '<em><b>Send Notification Email</b></em>' attribute feature.
@@ -7979,12 +7979,12 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT__SPECIAL_TERMS = eINSTANCE.getWorkEffort_SpecialTerms();
 
 		/**
-		 * The meta object literal for the '<em><b>Temp Expr Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Temp Expr</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT__TEMP_EXPR_ID = eINSTANCE.getWorkEffort_TempExprId();
+		EReference WORK_EFFORT__TEMP_EXPR = eINSTANCE.getWorkEffort_TempExpr();
 
 		/**
 		 * The meta object literal for the '<em><b>Time Transparency</b></em>' attribute feature.
@@ -8115,20 +8115,20 @@ public interface WorkeffortPackage extends EPackage {
 		EReference WORK_EFFORT__WORK_EFFORT_NOTES = eINSTANCE.getWorkEffort_WorkEffortNotes();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Parent Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort Parent</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT__WORK_EFFORT_PARENT_ID = eINSTANCE.getWorkEffort_WorkEffortParentId();
+		EReference WORK_EFFORT__WORK_EFFORT_PARENT = eINSTANCE.getWorkEffort_WorkEffortParent();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Purpose Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort Purpose Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT__WORK_EFFORT_PURPOSE_TYPE_ID = eINSTANCE.getWorkEffort_WorkEffortPurposeTypeId();
+		EReference WORK_EFFORT__WORK_EFFORT_PURPOSE_TYPE = eINSTANCE.getWorkEffort_WorkEffortPurposeType();
 
 		/**
 		 * The meta object literal for the '<em><b>Work Effort Skill Standards</b></em>' reference list feature.
@@ -8147,12 +8147,12 @@ public interface WorkeffortPackage extends EPackage {
 		EReference WORK_EFFORT__WORK_EFFORT_SURVEY_APPLS = eINSTANCE.getWorkEffort_WorkEffortSurveyAppls();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT__WORK_EFFORT_TYPE_ID = eINSTANCE.getWorkEffort_WorkEffortTypeId();
+		EReference WORK_EFFORT__WORK_EFFORT_TYPE = eINSTANCE.getWorkEffort_WorkEffortType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocImpl <em>Work Effort Assoc</em>}' class.
@@ -8163,6 +8163,14 @@ public interface WorkeffortPackage extends EPackage {
 		 * @generated
 		 */
 		EClass WORK_EFFORT_ASSOC = eINSTANCE.getWorkEffortAssoc();
+
+		/**
+		 * The meta object literal for the '<em><b>Work Effort Assoc Type</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference WORK_EFFORT_ASSOC__WORK_EFFORT_ASSOC_TYPE = eINSTANCE.getWorkEffortAssoc_WorkEffortAssocType();
 
 		/**
 		 * The meta object literal for the '<em><b>Work Effort Id From</b></em>' reference feature.
@@ -8179,14 +8187,6 @@ public interface WorkeffortPackage extends EPackage {
 		 * @generated
 		 */
 		EReference WORK_EFFORT_ASSOC__WORK_EFFORT_ID_TO = eINSTANCE.getWorkEffortAssoc_WorkEffortIdTo();
-
-		/**
-		 * The meta object literal for the '<em><b>Work Effort Assoc Type Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference WORK_EFFORT_ASSOC__WORK_EFFORT_ASSOC_TYPE_ID = eINSTANCE.getWorkEffortAssoc_WorkEffortAssocTypeId();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -8313,12 +8313,12 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT_ASSOC_TYPE__HAS_TABLE = eINSTANCE.getWorkEffortAssocType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_ASSOC_TYPE__PARENT_TYPE_ID = eINSTANCE.getWorkEffortAssocType_ParentTypeId();
+		EReference WORK_EFFORT_ASSOC_TYPE__PARENT_TYPE = eINSTANCE.getWorkEffortAssocType_ParentType();
 
 		/**
 		 * The meta object literal for the '<em><b>Work Effort Assoc Type Attrs</b></em>' reference list feature.
@@ -8339,12 +8339,12 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_ASSOC_TYPE_ATTR = eINSTANCE.getWorkEffortAssocTypeAttr();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Assoc Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort Assoc Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_ASSOC_TYPE_ATTR__WORK_EFFORT_ASSOC_TYPE_ID = eINSTANCE.getWorkEffortAssocTypeAttr_WorkEffortAssocTypeId();
+		EReference WORK_EFFORT_ASSOC_TYPE_ATTR__WORK_EFFORT_ASSOC_TYPE = eINSTANCE.getWorkEffortAssocTypeAttr_WorkEffortAssocType();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -8373,12 +8373,12 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_ATTRIBUTE = eINSTANCE.getWorkEffortAttribute();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_ATTRIBUTE__WORK_EFFORT_ID = eINSTANCE.getWorkEffortAttribute_WorkEffortId();
+		EReference WORK_EFFORT_ATTRIBUTE__WORK_EFFORT = eINSTANCE.getWorkEffortAttribute_WorkEffort();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -8415,20 +8415,20 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_BILLING = eINSTANCE.getWorkEffortBilling();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_BILLING__WORK_EFFORT_ID = eINSTANCE.getWorkEffortBilling_WorkEffortId();
+		EReference WORK_EFFORT_BILLING__WORK_EFFORT = eINSTANCE.getWorkEffortBilling_WorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>Invoice Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Invoice</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_BILLING__INVOICE_ID = eINSTANCE.getWorkEffortBilling_InvoiceId();
+		EReference WORK_EFFORT_BILLING__INVOICE = eINSTANCE.getWorkEffortBilling_Invoice();
 
 		/**
 		 * The meta object literal for the '<em><b>Invoice Item Seq Id</b></em>' attribute feature.
@@ -8457,20 +8457,20 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_CONTACT_MECH = eINSTANCE.getWorkEffortContactMech();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_CONTACT_MECH__WORK_EFFORT_ID = eINSTANCE.getWorkEffortContactMech_WorkEffortId();
+		EReference WORK_EFFORT_CONTACT_MECH__WORK_EFFORT = eINSTANCE.getWorkEffortContactMech_WorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>Contact Mech Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Contact Mech</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_CONTACT_MECH__CONTACT_MECH_ID = eINSTANCE.getWorkEffortContactMech_ContactMechId();
+		EReference WORK_EFFORT_CONTACT_MECH__CONTACT_MECH = eINSTANCE.getWorkEffortContactMech_ContactMech();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -8507,28 +8507,28 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_CONTENT = eINSTANCE.getWorkEffortContent();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_CONTENT__WORK_EFFORT_ID = eINSTANCE.getWorkEffortContent_WorkEffortId();
+		EReference WORK_EFFORT_CONTENT__WORK_EFFORT = eINSTANCE.getWorkEffortContent_WorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>Content Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Content</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_CONTENT__CONTENT_ID = eINSTANCE.getWorkEffortContent_ContentId();
+		EReference WORK_EFFORT_CONTENT__CONTENT = eINSTANCE.getWorkEffortContent_Content();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Content Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort Content Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_CONTENT__WORK_EFFORT_CONTENT_TYPE_ID = eINSTANCE.getWorkEffortContent_WorkEffortContentTypeId();
+		EReference WORK_EFFORT_CONTENT__WORK_EFFORT_CONTENT_TYPE = eINSTANCE.getWorkEffortContent_WorkEffortContentType();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -8573,12 +8573,12 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT_CONTENT_TYPE__DESCRIPTION = eINSTANCE.getWorkEffortContentType_Description();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_CONTENT_TYPE__PARENT_TYPE_ID = eINSTANCE.getWorkEffortContentType_ParentTypeId();
+		EReference WORK_EFFORT_CONTENT_TYPE__PARENT_TYPE = eINSTANCE.getWorkEffortContentType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortCostCalcImpl <em>Work Effort Cost Calc</em>}' class.
@@ -8591,20 +8591,20 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_COST_CALC = eINSTANCE.getWorkEffortCostCalc();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_COST_CALC__WORK_EFFORT_ID = eINSTANCE.getWorkEffortCostCalc_WorkEffortId();
+		EReference WORK_EFFORT_COST_CALC__WORK_EFFORT = eINSTANCE.getWorkEffortCostCalc_WorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>Cost Component Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Cost Component Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_COST_CALC__COST_COMPONENT_TYPE_ID = eINSTANCE.getWorkEffortCostCalc_CostComponentTypeId();
+		EReference WORK_EFFORT_COST_CALC__COST_COMPONENT_TYPE = eINSTANCE.getWorkEffortCostCalc_CostComponentType();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -8615,12 +8615,12 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT_COST_CALC__FROM_DATE = eINSTANCE.getWorkEffortCostCalc_FromDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Cost Component Calc Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Cost Component Calc</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_COST_CALC__COST_COMPONENT_CALC_ID = eINSTANCE.getWorkEffortCostCalc_CostComponentCalcId();
+		EReference WORK_EFFORT_COST_CALC__COST_COMPONENT_CALC = eINSTANCE.getWorkEffortCostCalc_CostComponentCalc();
 
 		/**
 		 * The meta object literal for the '<em><b>Thru Date</b></em>' attribute feature.
@@ -8641,20 +8641,20 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_DELIVERABLE_PROD = eINSTANCE.getWorkEffortDeliverableProd();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_DELIVERABLE_PROD__WORK_EFFORT_ID = eINSTANCE.getWorkEffortDeliverableProd_WorkEffortId();
+		EReference WORK_EFFORT_DELIVERABLE_PROD__WORK_EFFORT = eINSTANCE.getWorkEffortDeliverableProd_WorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>Deliverable Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Deliverable</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_DELIVERABLE_PROD__DELIVERABLE_ID = eINSTANCE.getWorkEffortDeliverableProd_DeliverableId();
+		EReference WORK_EFFORT_DELIVERABLE_PROD__DELIVERABLE = eINSTANCE.getWorkEffortDeliverableProd_Deliverable();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortEventReminderImpl <em>Work Effort Event Reminder</em>}' class.
@@ -8667,12 +8667,12 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_EVENT_REMINDER = eINSTANCE.getWorkEffortEventReminder();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_EVENT_REMINDER__WORK_EFFORT_ID = eINSTANCE.getWorkEffortEventReminder_WorkEffortId();
+		EReference WORK_EFFORT_EVENT_REMINDER__WORK_EFFORT = eINSTANCE.getWorkEffortEventReminder_WorkEffort();
 
 		/**
 		 * The meta object literal for the '<em><b>Sequence Id</b></em>' attribute feature.
@@ -8683,12 +8683,12 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT_EVENT_REMINDER__SEQUENCE_ID = eINSTANCE.getWorkEffortEventReminder_SequenceId();
 
 		/**
-		 * The meta object literal for the '<em><b>Contact Mech Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Contact Mech</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_EVENT_REMINDER__CONTACT_MECH_ID = eINSTANCE.getWorkEffortEventReminder_ContactMechId();
+		EReference WORK_EFFORT_EVENT_REMINDER__CONTACT_MECH = eINSTANCE.getWorkEffortEventReminder_ContactMech();
 
 		/**
 		 * The meta object literal for the '<em><b>Current Count</b></em>' attribute feature.
@@ -8707,12 +8707,12 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT_EVENT_REMINDER__LOCALE_ID = eINSTANCE.getWorkEffortEventReminder_LocaleId();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_EVENT_REMINDER__PARTY_ID = eINSTANCE.getWorkEffortEventReminder_PartyId();
+		EReference WORK_EFFORT_EVENT_REMINDER__PARTY = eINSTANCE.getWorkEffortEventReminder_Party();
 
 		/**
 		 * The meta object literal for the '<em><b>Reminder Date Time</b></em>' attribute feature.
@@ -8765,20 +8765,20 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_FIXED_ASSET_ASSIGN = eINSTANCE.getWorkEffortFixedAssetAssign();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_FIXED_ASSET_ASSIGN__WORK_EFFORT_ID = eINSTANCE.getWorkEffortFixedAssetAssign_WorkEffortId();
+		EReference WORK_EFFORT_FIXED_ASSET_ASSIGN__WORK_EFFORT = eINSTANCE.getWorkEffortFixedAssetAssign_WorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_FIXED_ASSET_ASSIGN__FIXED_ASSET_ID = eINSTANCE.getWorkEffortFixedAssetAssign_FixedAssetId();
+		EReference WORK_EFFORT_FIXED_ASSET_ASSIGN__FIXED_ASSET = eINSTANCE.getWorkEffortFixedAssetAssign_FixedAsset();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -8797,12 +8797,12 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT_FIXED_ASSET_ASSIGN__ALLOCATED_COST = eINSTANCE.getWorkEffortFixedAssetAssign_AllocatedCost();
 
 		/**
-		 * The meta object literal for the '<em><b>Availability Status Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Availability Status</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_FIXED_ASSET_ASSIGN__AVAILABILITY_STATUS_ID = eINSTANCE.getWorkEffortFixedAssetAssign_AvailabilityStatusId();
+		EReference WORK_EFFORT_FIXED_ASSET_ASSIGN__AVAILABILITY_STATUS = eINSTANCE.getWorkEffortFixedAssetAssign_AvailabilityStatus();
 
 		/**
 		 * The meta object literal for the '<em><b>Comments</b></em>' attribute feature.
@@ -8813,12 +8813,12 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT_FIXED_ASSET_ASSIGN__COMMENTS = eINSTANCE.getWorkEffortFixedAssetAssign_Comments();
 
 		/**
-		 * The meta object literal for the '<em><b>Status Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Status</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_FIXED_ASSET_ASSIGN__STATUS_ID = eINSTANCE.getWorkEffortFixedAssetAssign_StatusId();
+		EReference WORK_EFFORT_FIXED_ASSET_ASSIGN__STATUS = eINSTANCE.getWorkEffortFixedAssetAssign_Status();
 
 		/**
 		 * The meta object literal for the '<em><b>Thru Date</b></em>' attribute feature.
@@ -8839,20 +8839,20 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_FIXED_ASSET_STD = eINSTANCE.getWorkEffortFixedAssetStd();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_FIXED_ASSET_STD__WORK_EFFORT_ID = eINSTANCE.getWorkEffortFixedAssetStd_WorkEffortId();
+		EReference WORK_EFFORT_FIXED_ASSET_STD__WORK_EFFORT = eINSTANCE.getWorkEffortFixedAssetStd_WorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_FIXED_ASSET_STD__FIXED_ASSET_TYPE_ID = eINSTANCE.getWorkEffortFixedAssetStd_FixedAssetTypeId();
+		EReference WORK_EFFORT_FIXED_ASSET_STD__FIXED_ASSET_TYPE = eINSTANCE.getWorkEffortFixedAssetStd_FixedAssetType();
 
 		/**
 		 * The meta object literal for the '<em><b>Estimated Cost</b></em>' attribute feature.
@@ -8889,28 +8889,28 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_GOOD_STANDARD = eINSTANCE.getWorkEffortGoodStandard();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT_ID = eINSTANCE.getWorkEffortGoodStandard_WorkEffortId();
+		EReference WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT = eINSTANCE.getWorkEffortGoodStandard_WorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort Good Std Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_GOOD_STANDARD__PRODUCT_ID = eINSTANCE.getWorkEffortGoodStandard_ProductId();
+		EReference WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT_GOOD_STD_TYPE = eINSTANCE.getWorkEffortGoodStandard_WorkEffortGoodStdType();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Good Std Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT_GOOD_STD_TYPE_ID = eINSTANCE.getWorkEffortGoodStandard_WorkEffortGoodStdTypeId();
+		EReference WORK_EFFORT_GOOD_STANDARD__PRODUCT = eINSTANCE.getWorkEffortGoodStandard_Product();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -8937,12 +8937,12 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT_GOOD_STANDARD__ESTIMATED_QUANTITY = eINSTANCE.getWorkEffortGoodStandard_EstimatedQuantity();
 
 		/**
-		 * The meta object literal for the '<em><b>Status Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Status</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_GOOD_STANDARD__STATUS_ID = eINSTANCE.getWorkEffortGoodStandard_StatusId();
+		EReference WORK_EFFORT_GOOD_STANDARD__STATUS = eINSTANCE.getWorkEffortGoodStandard_Status();
 
 		/**
 		 * The meta object literal for the '<em><b>Thru Date</b></em>' attribute feature.
@@ -8987,12 +8987,12 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT_GOOD_STANDARD_TYPE__HAS_TABLE = eINSTANCE.getWorkEffortGoodStandardType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_GOOD_STANDARD_TYPE__PARENT_TYPE_ID = eINSTANCE.getWorkEffortGoodStandardType_ParentTypeId();
+		EReference WORK_EFFORT_GOOD_STANDARD_TYPE__PARENT_TYPE = eINSTANCE.getWorkEffortGoodStandardType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortIcalDataImpl <em>Work Effort Ical Data</em>}' class.
@@ -9031,20 +9031,20 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_INVENTORY_ASSIGN = eINSTANCE.getWorkEffortInventoryAssign();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_INVENTORY_ASSIGN__WORK_EFFORT_ID = eINSTANCE.getWorkEffortInventoryAssign_WorkEffortId();
+		EReference WORK_EFFORT_INVENTORY_ASSIGN__WORK_EFFORT = eINSTANCE.getWorkEffortInventoryAssign_WorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>Inventory Item Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Inventory Item</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_INVENTORY_ASSIGN__INVENTORY_ITEM_ID = eINSTANCE.getWorkEffortInventoryAssign_InventoryItemId();
+		EReference WORK_EFFORT_INVENTORY_ASSIGN__INVENTORY_ITEM = eINSTANCE.getWorkEffortInventoryAssign_InventoryItem();
 
 		/**
 		 * The meta object literal for the '<em><b>Quantity</b></em>' attribute feature.
@@ -9055,12 +9055,12 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT_INVENTORY_ASSIGN__QUANTITY = eINSTANCE.getWorkEffortInventoryAssign_Quantity();
 
 		/**
-		 * The meta object literal for the '<em><b>Status Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Status</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_INVENTORY_ASSIGN__STATUS_ID = eINSTANCE.getWorkEffortInventoryAssign_StatusId();
+		EReference WORK_EFFORT_INVENTORY_ASSIGN__STATUS = eINSTANCE.getWorkEffortInventoryAssign_Status();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryProducedImpl <em>Work Effort Inventory Produced</em>}' class.
@@ -9073,20 +9073,20 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_INVENTORY_PRODUCED = eINSTANCE.getWorkEffortInventoryProduced();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_INVENTORY_PRODUCED__WORK_EFFORT_ID = eINSTANCE.getWorkEffortInventoryProduced_WorkEffortId();
+		EReference WORK_EFFORT_INVENTORY_PRODUCED__WORK_EFFORT = eINSTANCE.getWorkEffortInventoryProduced_WorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>Inventory Item Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Inventory Item</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_INVENTORY_PRODUCED__INVENTORY_ITEM_ID = eINSTANCE.getWorkEffortInventoryProduced_InventoryItemId();
+		EReference WORK_EFFORT_INVENTORY_PRODUCED__INVENTORY_ITEM = eINSTANCE.getWorkEffortInventoryProduced_InventoryItem();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortKeywordImpl <em>Work Effort Keyword</em>}' class.
@@ -9099,12 +9099,12 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_KEYWORD = eINSTANCE.getWorkEffortKeyword();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_KEYWORD__WORK_EFFORT_ID = eINSTANCE.getWorkEffortKeyword_WorkEffortId();
+		EReference WORK_EFFORT_KEYWORD__WORK_EFFORT = eINSTANCE.getWorkEffortKeyword_WorkEffort();
 
 		/**
 		 * The meta object literal for the '<em><b>Keyword</b></em>' attribute feature.
@@ -9133,12 +9133,12 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_NOTE = eINSTANCE.getWorkEffortNote();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_NOTE__WORK_EFFORT_ID = eINSTANCE.getWorkEffortNote_WorkEffortId();
+		EReference WORK_EFFORT_NOTE__WORK_EFFORT = eINSTANCE.getWorkEffortNote_WorkEffort();
 
 		/**
 		 * The meta object literal for the '<em><b>Internal Note</b></em>' attribute feature.
@@ -9159,28 +9159,28 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_PARTY_ASSIGNMENT = eINSTANCE.getWorkEffortPartyAssignment();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_PARTY_ASSIGNMENT__WORK_EFFORT_ID = eINSTANCE.getWorkEffortPartyAssignment_WorkEffortId();
+		EReference WORK_EFFORT_PARTY_ASSIGNMENT__WORK_EFFORT = eINSTANCE.getWorkEffortPartyAssignment_WorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_PARTY_ASSIGNMENT__PARTY_ID = eINSTANCE.getWorkEffortPartyAssignment_PartyId();
+		EReference WORK_EFFORT_PARTY_ASSIGNMENT__PARTY = eINSTANCE.getWorkEffortPartyAssignment_Party();
 
 		/**
-		 * The meta object literal for the '<em><b>Role Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Role Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_PARTY_ASSIGNMENT__ROLE_TYPE_ID = eINSTANCE.getWorkEffortPartyAssignment_RoleTypeId();
+		EReference WORK_EFFORT_PARTY_ASSIGNMENT__ROLE_TYPE = eINSTANCE.getWorkEffortPartyAssignment_RoleType();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -9191,20 +9191,20 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT_PARTY_ASSIGNMENT__FROM_DATE = eINSTANCE.getWorkEffortPartyAssignment_FromDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Assigned By User Login Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Assigned By User Login</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_PARTY_ASSIGNMENT__ASSIGNED_BY_USER_LOGIN_ID = eINSTANCE.getWorkEffortPartyAssignment_AssignedByUserLoginId();
+		EReference WORK_EFFORT_PARTY_ASSIGNMENT__ASSIGNED_BY_USER_LOGIN = eINSTANCE.getWorkEffortPartyAssignment_AssignedByUserLogin();
 
 		/**
-		 * The meta object literal for the '<em><b>Availability Status Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Availability Status</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_PARTY_ASSIGNMENT__AVAILABILITY_STATUS_ID = eINSTANCE.getWorkEffortPartyAssignment_AvailabilityStatusId();
+		EReference WORK_EFFORT_PARTY_ASSIGNMENT__AVAILABILITY_STATUS = eINSTANCE.getWorkEffortPartyAssignment_AvailabilityStatus();
 
 		/**
 		 * The meta object literal for the '<em><b>Comments</b></em>' attribute feature.
@@ -9215,28 +9215,28 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT_PARTY_ASSIGNMENT__COMMENTS = eINSTANCE.getWorkEffortPartyAssignment_Comments();
 
 		/**
-		 * The meta object literal for the '<em><b>Delegate Reason Enum Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Delegate Reason Enum</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_PARTY_ASSIGNMENT__DELEGATE_REASON_ENUM_ID = eINSTANCE.getWorkEffortPartyAssignment_DelegateReasonEnumId();
+		EReference WORK_EFFORT_PARTY_ASSIGNMENT__DELEGATE_REASON_ENUM = eINSTANCE.getWorkEffortPartyAssignment_DelegateReasonEnum();
 
 		/**
-		 * The meta object literal for the '<em><b>Expectation Enum Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Expectation Enum</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_PARTY_ASSIGNMENT__EXPECTATION_ENUM_ID = eINSTANCE.getWorkEffortPartyAssignment_ExpectationEnumId();
+		EReference WORK_EFFORT_PARTY_ASSIGNMENT__EXPECTATION_ENUM = eINSTANCE.getWorkEffortPartyAssignment_ExpectationEnum();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_PARTY_ASSIGNMENT__FACILITY_ID = eINSTANCE.getWorkEffortPartyAssignment_FacilityId();
+		EReference WORK_EFFORT_PARTY_ASSIGNMENT__FACILITY = eINSTANCE.getWorkEffortPartyAssignment_Facility();
 
 		/**
 		 * The meta object literal for the '<em><b>Must Rsvp</b></em>' attribute feature.
@@ -9247,20 +9247,20 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT_PARTY_ASSIGNMENT__MUST_RSVP = eINSTANCE.getWorkEffortPartyAssignment_MustRsvp();
 
 		/**
+		 * The meta object literal for the '<em><b>Status</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference WORK_EFFORT_PARTY_ASSIGNMENT__STATUS = eINSTANCE.getWorkEffortPartyAssignment_Status();
+
+		/**
 		 * The meta object literal for the '<em><b>Status Date Time</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute WORK_EFFORT_PARTY_ASSIGNMENT__STATUS_DATE_TIME = eINSTANCE.getWorkEffortPartyAssignment_StatusDateTime();
-
-		/**
-		 * The meta object literal for the '<em><b>Status Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference WORK_EFFORT_PARTY_ASSIGNMENT__STATUS_ID = eINSTANCE.getWorkEffortPartyAssignment_StatusId();
 
 		/**
 		 * The meta object literal for the '<em><b>Thru Date</b></em>' attribute feature.
@@ -9297,12 +9297,12 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT_PURPOSE_TYPE__DESCRIPTION = eINSTANCE.getWorkEffortPurposeType_Description();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_PURPOSE_TYPE__PARENT_TYPE_ID = eINSTANCE.getWorkEffortPurposeType_ParentTypeId();
+		EReference WORK_EFFORT_PURPOSE_TYPE__PARENT_TYPE = eINSTANCE.getWorkEffortPurposeType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortReviewImpl <em>Work Effort Review</em>}' class.
@@ -9315,20 +9315,20 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_REVIEW = eINSTANCE.getWorkEffortReview();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_REVIEW__WORK_EFFORT_ID = eINSTANCE.getWorkEffortReview_WorkEffortId();
+		EReference WORK_EFFORT_REVIEW__WORK_EFFORT = eINSTANCE.getWorkEffortReview_WorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>User Login Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>User Login</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_REVIEW__USER_LOGIN_ID = eINSTANCE.getWorkEffortReview_UserLoginId();
+		EReference WORK_EFFORT_REVIEW__USER_LOGIN = eINSTANCE.getWorkEffortReview_UserLogin();
 
 		/**
 		 * The meta object literal for the '<em><b>Review Date</b></em>' attribute feature.
@@ -9363,12 +9363,12 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT_REVIEW__REVIEW_TEXT = eINSTANCE.getWorkEffortReview_ReviewText();
 
 		/**
-		 * The meta object literal for the '<em><b>Status Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Status</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_REVIEW__STATUS_ID = eINSTANCE.getWorkEffortReview_StatusId();
+		EReference WORK_EFFORT_REVIEW__STATUS = eINSTANCE.getWorkEffortReview_Status();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchConstraintImpl <em>Work Effort Search Constraint</em>}' class.
@@ -9381,12 +9381,12 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_SEARCH_CONSTRAINT = eINSTANCE.getWorkEffortSearchConstraint();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Search Result Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort Search Result</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_SEARCH_CONSTRAINT__WORK_EFFORT_SEARCH_RESULT_ID = eINSTANCE.getWorkEffortSearchConstraint_WorkEffortSearchResultId();
+		EReference WORK_EFFORT_SEARCH_CONSTRAINT__WORK_EFFORT_SEARCH_RESULT = eINSTANCE.getWorkEffortSearchConstraint_WorkEffortSearchResult();
 
 		/**
 		 * The meta object literal for the '<em><b>Constraint Seq Id</b></em>' attribute feature.
@@ -9553,20 +9553,20 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_SKILL_STANDARD = eINSTANCE.getWorkEffortSkillStandard();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_SKILL_STANDARD__WORK_EFFORT_ID = eINSTANCE.getWorkEffortSkillStandard_WorkEffortId();
+		EReference WORK_EFFORT_SKILL_STANDARD__WORK_EFFORT = eINSTANCE.getWorkEffortSkillStandard_WorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>Skill Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Skill Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_SKILL_STANDARD__SKILL_TYPE_ID = eINSTANCE.getWorkEffortSkillStandard_SkillTypeId();
+		EReference WORK_EFFORT_SKILL_STANDARD__SKILL_TYPE = eINSTANCE.getWorkEffortSkillStandard_SkillType();
 
 		/**
 		 * The meta object literal for the '<em><b>Estimated Cost</b></em>' attribute feature.
@@ -9603,20 +9603,20 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_STATUS = eINSTANCE.getWorkEffortStatus();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_STATUS__WORK_EFFORT_ID = eINSTANCE.getWorkEffortStatus_WorkEffortId();
+		EReference WORK_EFFORT_STATUS__WORK_EFFORT = eINSTANCE.getWorkEffortStatus_WorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>Status Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Status</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_STATUS__STATUS_ID = eINSTANCE.getWorkEffortStatus_StatusId();
+		EReference WORK_EFFORT_STATUS__STATUS = eINSTANCE.getWorkEffortStatus_Status();
 
 		/**
 		 * The meta object literal for the '<em><b>Status Datetime</b></em>' attribute feature.
@@ -9653,20 +9653,20 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_SURVEY_APPL = eINSTANCE.getWorkEffortSurveyAppl();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Survey</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_SURVEY_APPL__WORK_EFFORT_ID = eINSTANCE.getWorkEffortSurveyAppl_WorkEffortId();
+		EReference WORK_EFFORT_SURVEY_APPL__SURVEY = eINSTANCE.getWorkEffortSurveyAppl_Survey();
 
 		/**
-		 * The meta object literal for the '<em><b>Survey Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_SURVEY_APPL__SURVEY_ID = eINSTANCE.getWorkEffortSurveyAppl_SurveyId();
+		EReference WORK_EFFORT_SURVEY_APPL__WORK_EFFORT = eINSTANCE.getWorkEffortSurveyAppl_WorkEffort();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -9695,12 +9695,12 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_TRANS_BOX = eINSTANCE.getWorkEffortTransBox();
 
 		/**
-		 * The meta object literal for the '<em><b>Process Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Process Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_TRANS_BOX__PROCESS_WORK_EFFORT_ID = eINSTANCE.getWorkEffortTransBox_ProcessWorkEffortId();
+		EReference WORK_EFFORT_TRANS_BOX__PROCESS_WORK_EFFORT = eINSTANCE.getWorkEffortTransBox_ProcessWorkEffort();
 
 		/**
 		 * The meta object literal for the '<em><b>To Activity Id</b></em>' attribute feature.
@@ -9753,12 +9753,12 @@ public interface WorkeffortPackage extends EPackage {
 		EAttribute WORK_EFFORT_TYPE__HAS_TABLE = eINSTANCE.getWorkEffortType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_TYPE__PARENT_TYPE_ID = eINSTANCE.getWorkEffortType_ParentTypeId();
+		EReference WORK_EFFORT_TYPE__PARENT_TYPE = eINSTANCE.getWorkEffortType_ParentType();
 
 		/**
 		 * The meta object literal for the '<em><b>Work Effort Type Attrs</b></em>' reference list feature.
@@ -9779,12 +9779,12 @@ public interface WorkeffortPackage extends EPackage {
 		EClass WORK_EFFORT_TYPE_ATTR = eINSTANCE.getWorkEffortTypeAttr();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_EFFORT_TYPE_ATTR__WORK_EFFORT_TYPE_ID = eINSTANCE.getWorkEffortTypeAttr_WorkEffortTypeId();
+		EReference WORK_EFFORT_TYPE_ATTR__WORK_EFFORT_TYPE = eINSTANCE.getWorkEffortTypeAttr_WorkEffortType();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.

@@ -853,7 +853,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudget_BudgetTypeId() {
+	public EReference getBudget_BudgetType() {
 		return (EReference)budgetEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -873,7 +873,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudget_CustomTimePeriodId() {
+	public EReference getBudget_CustomTimePeriod() {
 		return (EReference)budgetEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -893,7 +893,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudgetAttribute_BudgetId() {
+	public EReference getBudgetAttribute_Budget() {
 		return (EReference)budgetAttributeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -943,7 +943,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudgetItem_BudgetId() {
+	public EReference getBudgetItem_Budget() {
 		return (EReference)budgetItemEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -973,7 +973,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudgetItem_BudgetItemTypeId() {
+	public EReference getBudgetItem_BudgetItemType() {
 		return (EReference)budgetItemEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1113,7 +1113,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudgetItemType_ParentTypeId() {
+	public EReference getBudgetItemType_ParentType() {
 		return (EReference)budgetItemTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -1133,7 +1133,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudgetItemTypeAttr_BudgetItemTypeId() {
+	public EReference getBudgetItemTypeAttr_BudgetItemType() {
 		return (EReference)budgetItemTypeAttrEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1173,8 +1173,28 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudgetReview_BudgetId() {
+	public EReference getBudgetReview_Budget() {
 		return (EReference)budgetReviewEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getBudgetReview_Party() {
+		return (EReference)budgetReviewEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getBudgetReview_BudgetReviewResultType() {
+		return (EReference)budgetReviewEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1185,26 +1205,6 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	@Override
 	public EAttribute getBudgetReview_BudgetReviewId() {
 		return (EAttribute)budgetReviewEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getBudgetReview_PartyId() {
-		return (EReference)budgetReviewEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getBudgetReview_BudgetReviewResultTypeId() {
-		return (EReference)budgetReviewEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1273,7 +1273,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudgetRevision_BudgetId() {
+	public EReference getBudgetRevision_Budget() {
 		return (EReference)budgetRevisionEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1313,7 +1313,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudgetRevisionImpact_BudgetId() {
+	public EReference getBudgetRevisionImpact_Budget() {
 		return (EReference)budgetRevisionImpactEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1383,7 +1383,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudgetRole_BudgetId() {
+	public EReference getBudgetRole_Budget() {
 		return (EReference)budgetRoleEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1393,7 +1393,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudgetRole_PartyId() {
+	public EReference getBudgetRole_Party() {
 		return (EReference)budgetRoleEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1463,8 +1463,8 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getBudgetScenarioApplication_BudgetScenarioApplicId() {
-		return (EAttribute)budgetScenarioApplicationEClass.getEStructuralFeatures().get(1);
+	public EReference getBudgetScenarioApplication_BudgetScenario() {
+		return (EReference)budgetScenarioApplicationEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1473,8 +1473,8 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudgetScenarioApplication_BudgetScenarioId() {
-		return (EReference)budgetScenarioApplicationEClass.getEStructuralFeatures().get(0);
+	public EAttribute getBudgetScenarioApplication_BudgetScenarioApplicId() {
+		return (EAttribute)budgetScenarioApplicationEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1493,7 +1493,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudgetScenarioApplication_BudgetId() {
+	public EReference getBudgetScenarioApplication_Budget() {
 		return (EReference)budgetScenarioApplicationEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1533,7 +1533,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudgetScenarioRule_BudgetScenarioId() {
+	public EReference getBudgetScenarioRule_BudgetScenario() {
 		return (EReference)budgetScenarioRuleEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1543,7 +1543,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudgetScenarioRule_BudgetItemTypeId() {
+	public EReference getBudgetScenarioRule_BudgetItemType() {
 		return (EReference)budgetScenarioRuleEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1583,7 +1583,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudgetStatus_BudgetId() {
+	public EReference getBudgetStatus_Budget() {
 		return (EReference)budgetStatusEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1593,7 +1593,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudgetStatus_StatusId() {
+	public EReference getBudgetStatus_Status() {
 		return (EReference)budgetStatusEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1603,7 +1603,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudgetStatus_ChangeByUserLoginId() {
+	public EReference getBudgetStatus_ChangeByUserLogin() {
 		return (EReference)budgetStatusEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -1683,7 +1683,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudgetType_ParentTypeId() {
+	public EReference getBudgetType_ParentType() {
 		return (EReference)budgetTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -1703,7 +1703,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudgetTypeAttr_BudgetTypeId() {
+	public EReference getBudgetTypeAttr_BudgetType() {
 		return (EReference)budgetTypeAttrEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1762,21 +1762,21 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		createEReference(budgetEClass, BUDGET__BUDGET_ITEMS);
 		createEReference(budgetEClass, BUDGET__BUDGET_REVISIONS);
 		createEReference(budgetEClass, BUDGET__BUDGET_STATUSS);
-		createEReference(budgetEClass, BUDGET__BUDGET_TYPE_ID);
+		createEReference(budgetEClass, BUDGET__BUDGET_TYPE);
 		createEAttribute(budgetEClass, BUDGET__COMMENTS);
-		createEReference(budgetEClass, BUDGET__CUSTOM_TIME_PERIOD_ID);
+		createEReference(budgetEClass, BUDGET__CUSTOM_TIME_PERIOD);
 
 		budgetAttributeEClass = createEClass(BUDGET_ATTRIBUTE);
-		createEReference(budgetAttributeEClass, BUDGET_ATTRIBUTE__BUDGET_ID);
+		createEReference(budgetAttributeEClass, BUDGET_ATTRIBUTE__BUDGET);
 		createEAttribute(budgetAttributeEClass, BUDGET_ATTRIBUTE__ATTR_NAME);
 		createEAttribute(budgetAttributeEClass, BUDGET_ATTRIBUTE__ATTR_DESCRIPTION);
 		createEAttribute(budgetAttributeEClass, BUDGET_ATTRIBUTE__ATTR_VALUE);
 
 		budgetItemEClass = createEClass(BUDGET_ITEM);
-		createEReference(budgetItemEClass, BUDGET_ITEM__BUDGET_ID);
+		createEReference(budgetItemEClass, BUDGET_ITEM__BUDGET);
 		createEAttribute(budgetItemEClass, BUDGET_ITEM__BUDGET_ITEM_SEQ_ID);
 		createEAttribute(budgetItemEClass, BUDGET_ITEM__AMOUNT);
-		createEReference(budgetItemEClass, BUDGET_ITEM__BUDGET_ITEM_TYPE_ID);
+		createEReference(budgetItemEClass, BUDGET_ITEM__BUDGET_ITEM_TYPE);
 		createEAttribute(budgetItemEClass, BUDGET_ITEM__JUSTIFICATION);
 		createEAttribute(budgetItemEClass, BUDGET_ITEM__PURPOSE);
 
@@ -1792,17 +1792,17 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		createEReference(budgetItemTypeEClass, BUDGET_ITEM_TYPE__BUDGET_ITEM_TYPE_ATTRS);
 		createEAttribute(budgetItemTypeEClass, BUDGET_ITEM_TYPE__DESCRIPTION);
 		createEAttribute(budgetItemTypeEClass, BUDGET_ITEM_TYPE__HAS_TABLE);
-		createEReference(budgetItemTypeEClass, BUDGET_ITEM_TYPE__PARENT_TYPE_ID);
+		createEReference(budgetItemTypeEClass, BUDGET_ITEM_TYPE__PARENT_TYPE);
 
 		budgetItemTypeAttrEClass = createEClass(BUDGET_ITEM_TYPE_ATTR);
-		createEReference(budgetItemTypeAttrEClass, BUDGET_ITEM_TYPE_ATTR__BUDGET_ITEM_TYPE_ID);
+		createEReference(budgetItemTypeAttrEClass, BUDGET_ITEM_TYPE_ATTR__BUDGET_ITEM_TYPE);
 		createEAttribute(budgetItemTypeAttrEClass, BUDGET_ITEM_TYPE_ATTR__ATTR_NAME);
 		createEAttribute(budgetItemTypeAttrEClass, BUDGET_ITEM_TYPE_ATTR__DESCRIPTION);
 
 		budgetReviewEClass = createEClass(BUDGET_REVIEW);
-		createEReference(budgetReviewEClass, BUDGET_REVIEW__BUDGET_ID);
-		createEReference(budgetReviewEClass, BUDGET_REVIEW__PARTY_ID);
-		createEReference(budgetReviewEClass, BUDGET_REVIEW__BUDGET_REVIEW_RESULT_TYPE_ID);
+		createEReference(budgetReviewEClass, BUDGET_REVIEW__BUDGET);
+		createEReference(budgetReviewEClass, BUDGET_REVIEW__PARTY);
+		createEReference(budgetReviewEClass, BUDGET_REVIEW__BUDGET_REVIEW_RESULT_TYPE);
 		createEAttribute(budgetReviewEClass, BUDGET_REVIEW__BUDGET_REVIEW_ID);
 		createEAttribute(budgetReviewEClass, BUDGET_REVIEW__REVIEW_DATE);
 
@@ -1812,12 +1812,12 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		createEAttribute(budgetReviewResultTypeEClass, BUDGET_REVIEW_RESULT_TYPE__DESCRIPTION);
 
 		budgetRevisionEClass = createEClass(BUDGET_REVISION);
-		createEReference(budgetRevisionEClass, BUDGET_REVISION__BUDGET_ID);
+		createEReference(budgetRevisionEClass, BUDGET_REVISION__BUDGET);
 		createEAttribute(budgetRevisionEClass, BUDGET_REVISION__REVISION_SEQ_ID);
 		createEAttribute(budgetRevisionEClass, BUDGET_REVISION__DATE_REVISED);
 
 		budgetRevisionImpactEClass = createEClass(BUDGET_REVISION_IMPACT);
-		createEReference(budgetRevisionImpactEClass, BUDGET_REVISION_IMPACT__BUDGET_ID);
+		createEReference(budgetRevisionImpactEClass, BUDGET_REVISION_IMPACT__BUDGET);
 		createEAttribute(budgetRevisionImpactEClass, BUDGET_REVISION_IMPACT__BUDGET_ITEM_SEQ_ID);
 		createEAttribute(budgetRevisionImpactEClass, BUDGET_REVISION_IMPACT__REVISION_SEQ_ID);
 		createEAttribute(budgetRevisionImpactEClass, BUDGET_REVISION_IMPACT__ADD_DELETE_FLAG);
@@ -1825,8 +1825,8 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		createEAttribute(budgetRevisionImpactEClass, BUDGET_REVISION_IMPACT__REVISION_REASON);
 
 		budgetRoleEClass = createEClass(BUDGET_ROLE);
-		createEReference(budgetRoleEClass, BUDGET_ROLE__BUDGET_ID);
-		createEReference(budgetRoleEClass, BUDGET_ROLE__PARTY_ID);
+		createEReference(budgetRoleEClass, BUDGET_ROLE__BUDGET);
+		createEReference(budgetRoleEClass, BUDGET_ROLE__PARTY);
 		createEAttribute(budgetRoleEClass, BUDGET_ROLE__ROLE_TYPE_ID);
 
 		budgetScenarioEClass = createEClass(BUDGET_SCENARIO);
@@ -1835,23 +1835,23 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		createEAttribute(budgetScenarioEClass, BUDGET_SCENARIO__DESCRIPTION);
 
 		budgetScenarioApplicationEClass = createEClass(BUDGET_SCENARIO_APPLICATION);
-		createEReference(budgetScenarioApplicationEClass, BUDGET_SCENARIO_APPLICATION__BUDGET_SCENARIO_ID);
+		createEReference(budgetScenarioApplicationEClass, BUDGET_SCENARIO_APPLICATION__BUDGET_SCENARIO);
 		createEAttribute(budgetScenarioApplicationEClass, BUDGET_SCENARIO_APPLICATION__BUDGET_SCENARIO_APPLIC_ID);
 		createEAttribute(budgetScenarioApplicationEClass, BUDGET_SCENARIO_APPLICATION__AMOUNT_CHANGE);
-		createEReference(budgetScenarioApplicationEClass, BUDGET_SCENARIO_APPLICATION__BUDGET_ID);
+		createEReference(budgetScenarioApplicationEClass, BUDGET_SCENARIO_APPLICATION__BUDGET);
 		createEAttribute(budgetScenarioApplicationEClass, BUDGET_SCENARIO_APPLICATION__BUDGET_ITEM_SEQ_ID);
 		createEAttribute(budgetScenarioApplicationEClass, BUDGET_SCENARIO_APPLICATION__PERCENTAGE_CHANGE);
 
 		budgetScenarioRuleEClass = createEClass(BUDGET_SCENARIO_RULE);
-		createEReference(budgetScenarioRuleEClass, BUDGET_SCENARIO_RULE__BUDGET_SCENARIO_ID);
-		createEReference(budgetScenarioRuleEClass, BUDGET_SCENARIO_RULE__BUDGET_ITEM_TYPE_ID);
+		createEReference(budgetScenarioRuleEClass, BUDGET_SCENARIO_RULE__BUDGET_SCENARIO);
+		createEReference(budgetScenarioRuleEClass, BUDGET_SCENARIO_RULE__BUDGET_ITEM_TYPE);
 		createEAttribute(budgetScenarioRuleEClass, BUDGET_SCENARIO_RULE__AMOUNT_CHANGE);
 		createEAttribute(budgetScenarioRuleEClass, BUDGET_SCENARIO_RULE__PERCENTAGE_CHANGE);
 
 		budgetStatusEClass = createEClass(BUDGET_STATUS);
-		createEReference(budgetStatusEClass, BUDGET_STATUS__BUDGET_ID);
-		createEReference(budgetStatusEClass, BUDGET_STATUS__STATUS_ID);
-		createEReference(budgetStatusEClass, BUDGET_STATUS__CHANGE_BY_USER_LOGIN_ID);
+		createEReference(budgetStatusEClass, BUDGET_STATUS__BUDGET);
+		createEReference(budgetStatusEClass, BUDGET_STATUS__STATUS);
+		createEReference(budgetStatusEClass, BUDGET_STATUS__CHANGE_BY_USER_LOGIN);
 		createEAttribute(budgetStatusEClass, BUDGET_STATUS__COMMENTS);
 		createEAttribute(budgetStatusEClass, BUDGET_STATUS__STATUS_DATE);
 
@@ -1860,10 +1860,10 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		createEReference(budgetTypeEClass, BUDGET_TYPE__BUDGET_TYPE_ATTRS);
 		createEAttribute(budgetTypeEClass, BUDGET_TYPE__DESCRIPTION);
 		createEAttribute(budgetTypeEClass, BUDGET_TYPE__HAS_TABLE);
-		createEReference(budgetTypeEClass, BUDGET_TYPE__PARENT_TYPE_ID);
+		createEReference(budgetTypeEClass, BUDGET_TYPE__PARENT_TYPE);
 
 		budgetTypeAttrEClass = createEClass(BUDGET_TYPE_ATTR);
-		createEReference(budgetTypeAttrEClass, BUDGET_TYPE_ATTR__BUDGET_TYPE_ID);
+		createEReference(budgetTypeAttrEClass, BUDGET_TYPE_ATTR__BUDGET_TYPE);
 		createEAttribute(budgetTypeAttrEClass, BUDGET_TYPE_ATTR__ATTR_NAME);
 		createEAttribute(budgetTypeAttrEClass, BUDGET_TYPE_ATTR__DESCRIPTION);
 	}
@@ -1969,26 +1969,26 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		initEReference(getBudget_BudgetItems(), this.getBudgetItem(), null, "budgetItems", null, 0, -1, Budget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getBudget_BudgetRevisions(), this.getBudgetRevision(), null, "budgetRevisions", null, 0, -1, Budget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getBudget_BudgetStatuss(), this.getBudgetStatus(), null, "budgetStatuss", null, 0, -1, Budget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEReference(getBudget_BudgetTypeId(), this.getBudgetType(), null, "budgetTypeId", null, 0, 1, Budget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudget_BudgetTypeId().getEKeys().add(this.getBudgetType_BudgetTypeId());
+		initEReference(getBudget_BudgetType(), this.getBudgetType(), null, "budgetType", null, 0, 1, Budget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudget_BudgetType().getEKeys().add(this.getBudgetType_BudgetTypeId());
 		initEAttribute(getBudget_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, Budget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getBudget_CustomTimePeriodId(), thePeriodPackage.getCustomTimePeriod(), null, "customTimePeriodId", null, 0, 1, Budget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudget_CustomTimePeriodId().getEKeys().add(thePeriodPackage.getCustomTimePeriod_CustomTimePeriodId());
+		initEReference(getBudget_CustomTimePeriod(), thePeriodPackage.getCustomTimePeriod(), null, "customTimePeriod", null, 0, 1, Budget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudget_CustomTimePeriod().getEKeys().add(thePeriodPackage.getCustomTimePeriod_CustomTimePeriodId());
 
 		initEClass(budgetAttributeEClass, BudgetAttribute.class, "BudgetAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getBudgetAttribute_BudgetId(), this.getBudget(), null, "budgetId", null, 1, 1, BudgetAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetAttribute_BudgetId().getEKeys().add(this.getBudget_BudgetId());
+		initEReference(getBudgetAttribute_Budget(), this.getBudget(), null, "budget", null, 1, 1, BudgetAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetAttribute_Budget().getEKeys().add(this.getBudget_BudgetId());
 		initEAttribute(getBudgetAttribute_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, BudgetAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetAttribute_AttrDescription(), ecorePackage.getEString(), "attrDescription", null, 0, 1, BudgetAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetAttribute_AttrValue(), ecorePackage.getEString(), "attrValue", null, 0, 1, BudgetAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(budgetItemEClass, BudgetItem.class, "BudgetItem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getBudgetItem_BudgetId(), this.getBudget(), null, "budgetId", null, 1, 1, BudgetItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetItem_BudgetId().getEKeys().add(this.getBudget_BudgetId());
+		initEReference(getBudgetItem_Budget(), this.getBudget(), null, "budget", null, 1, 1, BudgetItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetItem_Budget().getEKeys().add(this.getBudget_BudgetId());
 		initEAttribute(getBudgetItem_BudgetItemSeqId(), ecorePackage.getEString(), "budgetItemSeqId", null, 1, 1, BudgetItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetItem_Amount(), ecorePackage.getEBigDecimal(), "amount", null, 0, 1, BudgetItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getBudgetItem_BudgetItemTypeId(), this.getBudgetItemType(), null, "budgetItemTypeId", null, 0, 1, BudgetItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetItem_BudgetItemTypeId().getEKeys().add(this.getBudgetItemType_BudgetItemTypeId());
+		initEReference(getBudgetItem_BudgetItemType(), this.getBudgetItemType(), null, "budgetItemType", null, 0, 1, BudgetItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetItem_BudgetItemType().getEKeys().add(this.getBudgetItemType_BudgetItemTypeId());
 		initEAttribute(getBudgetItem_Justification(), ecorePackage.getEString(), "justification", null, 0, 1, BudgetItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetItem_Purpose(), ecorePackage.getEString(), "purpose", null, 0, 1, BudgetItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -2004,22 +2004,22 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		initEReference(getBudgetItemType_BudgetItemTypeAttrs(), this.getBudgetItemTypeAttr(), null, "budgetItemTypeAttrs", null, 0, -1, BudgetItemType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetItemType_Description(), ecorePackage.getEString(), "description", null, 0, 1, BudgetItemType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetItemType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 0, 1, BudgetItemType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getBudgetItemType_ParentTypeId(), this.getBudgetItemType(), null, "parentTypeId", null, 0, 1, BudgetItemType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetItemType_ParentTypeId().getEKeys().add(this.getBudgetItemType_BudgetItemTypeId());
+		initEReference(getBudgetItemType_ParentType(), this.getBudgetItemType(), null, "parentType", null, 0, 1, BudgetItemType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetItemType_ParentType().getEKeys().add(this.getBudgetItemType_BudgetItemTypeId());
 
 		initEClass(budgetItemTypeAttrEClass, BudgetItemTypeAttr.class, "BudgetItemTypeAttr", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getBudgetItemTypeAttr_BudgetItemTypeId(), this.getBudgetItemType(), null, "budgetItemTypeId", null, 1, 1, BudgetItemTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetItemTypeAttr_BudgetItemTypeId().getEKeys().add(this.getBudgetItemType_BudgetItemTypeId());
+		initEReference(getBudgetItemTypeAttr_BudgetItemType(), this.getBudgetItemType(), null, "budgetItemType", null, 1, 1, BudgetItemTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetItemTypeAttr_BudgetItemType().getEKeys().add(this.getBudgetItemType_BudgetItemTypeId());
 		initEAttribute(getBudgetItemTypeAttr_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, BudgetItemTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetItemTypeAttr_Description(), ecorePackage.getEString(), "description", null, 0, 1, BudgetItemTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(budgetReviewEClass, BudgetReview.class, "BudgetReview", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getBudgetReview_BudgetId(), this.getBudget(), null, "budgetId", null, 1, 1, BudgetReview.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetReview_BudgetId().getEKeys().add(this.getBudget_BudgetId());
-		initEReference(getBudgetReview_PartyId(), thePartyPackage_1.getParty(), null, "partyId", null, 1, 1, BudgetReview.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetReview_PartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
-		initEReference(getBudgetReview_BudgetReviewResultTypeId(), this.getBudgetReviewResultType(), null, "budgetReviewResultTypeId", null, 1, 1, BudgetReview.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetReview_BudgetReviewResultTypeId().getEKeys().add(this.getBudgetReviewResultType_BudgetReviewResultTypeId());
+		initEReference(getBudgetReview_Budget(), this.getBudget(), null, "budget", null, 1, 1, BudgetReview.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetReview_Budget().getEKeys().add(this.getBudget_BudgetId());
+		initEReference(getBudgetReview_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, BudgetReview.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetReview_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getBudgetReview_BudgetReviewResultType(), this.getBudgetReviewResultType(), null, "budgetReviewResultType", null, 1, 1, BudgetReview.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetReview_BudgetReviewResultType().getEKeys().add(this.getBudgetReviewResultType_BudgetReviewResultTypeId());
 		initEAttribute(getBudgetReview_BudgetReviewId(), ecorePackage.getEString(), "budgetReviewId", null, 1, 1, BudgetReview.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetReview_ReviewDate(), ecorePackage.getEDate(), "reviewDate", null, 0, 1, BudgetReview.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -2029,14 +2029,14 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		initEAttribute(getBudgetReviewResultType_Description(), ecorePackage.getEString(), "description", null, 0, 1, BudgetReviewResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(budgetRevisionEClass, BudgetRevision.class, "BudgetRevision", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getBudgetRevision_BudgetId(), this.getBudget(), null, "budgetId", null, 1, 1, BudgetRevision.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetRevision_BudgetId().getEKeys().add(this.getBudget_BudgetId());
+		initEReference(getBudgetRevision_Budget(), this.getBudget(), null, "budget", null, 1, 1, BudgetRevision.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetRevision_Budget().getEKeys().add(this.getBudget_BudgetId());
 		initEAttribute(getBudgetRevision_RevisionSeqId(), ecorePackage.getEString(), "revisionSeqId", null, 1, 1, BudgetRevision.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetRevision_DateRevised(), ecorePackage.getEDate(), "dateRevised", null, 0, 1, BudgetRevision.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(budgetRevisionImpactEClass, BudgetRevisionImpact.class, "BudgetRevisionImpact", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getBudgetRevisionImpact_BudgetId(), this.getBudget(), null, "budgetId", null, 1, 1, BudgetRevisionImpact.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetRevisionImpact_BudgetId().getEKeys().add(this.getBudget_BudgetId());
+		initEReference(getBudgetRevisionImpact_Budget(), this.getBudget(), null, "budget", null, 1, 1, BudgetRevisionImpact.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetRevisionImpact_Budget().getEKeys().add(this.getBudget_BudgetId());
 		initEAttribute(getBudgetRevisionImpact_BudgetItemSeqId(), ecorePackage.getEString(), "budgetItemSeqId", null, 1, 1, BudgetRevisionImpact.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetRevisionImpact_RevisionSeqId(), ecorePackage.getEString(), "revisionSeqId", null, 1, 1, BudgetRevisionImpact.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetRevisionImpact_AddDeleteFlag(), ecorePackage.getEBooleanObject(), "addDeleteFlag", null, 0, 1, BudgetRevisionImpact.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2044,10 +2044,10 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		initEAttribute(getBudgetRevisionImpact_RevisionReason(), ecorePackage.getEString(), "revisionReason", null, 0, 1, BudgetRevisionImpact.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(budgetRoleEClass, BudgetRole.class, "BudgetRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getBudgetRole_BudgetId(), this.getBudget(), null, "budgetId", null, 1, 1, BudgetRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetRole_BudgetId().getEKeys().add(this.getBudget_BudgetId());
-		initEReference(getBudgetRole_PartyId(), thePartyPackage_1.getParty(), null, "partyId", null, 1, 1, BudgetRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetRole_PartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getBudgetRole_Budget(), this.getBudget(), null, "budget", null, 1, 1, BudgetRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetRole_Budget().getEKeys().add(this.getBudget_BudgetId());
+		initEReference(getBudgetRole_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, BudgetRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetRole_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getBudgetRole_RoleTypeId(), ecorePackage.getEString(), "roleTypeId", null, 1, 1, BudgetRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(budgetScenarioEClass, BudgetScenario.class, "BudgetScenario", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -2056,30 +2056,30 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		initEAttribute(getBudgetScenario_Description(), ecorePackage.getEString(), "description", null, 0, 1, BudgetScenario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(budgetScenarioApplicationEClass, BudgetScenarioApplication.class, "BudgetScenarioApplication", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getBudgetScenarioApplication_BudgetScenarioId(), this.getBudgetScenario(), null, "budgetScenarioId", null, 1, 1, BudgetScenarioApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetScenarioApplication_BudgetScenarioId().getEKeys().add(this.getBudgetScenario_BudgetScenarioId());
+		initEReference(getBudgetScenarioApplication_BudgetScenario(), this.getBudgetScenario(), null, "budgetScenario", null, 1, 1, BudgetScenarioApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetScenarioApplication_BudgetScenario().getEKeys().add(this.getBudgetScenario_BudgetScenarioId());
 		initEAttribute(getBudgetScenarioApplication_BudgetScenarioApplicId(), ecorePackage.getEString(), "budgetScenarioApplicId", null, 1, 1, BudgetScenarioApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetScenarioApplication_AmountChange(), ecorePackage.getEBigDecimal(), "amountChange", null, 0, 1, BudgetScenarioApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getBudgetScenarioApplication_BudgetId(), this.getBudget(), null, "budgetId", null, 0, 1, BudgetScenarioApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetScenarioApplication_BudgetId().getEKeys().add(this.getBudget_BudgetId());
+		initEReference(getBudgetScenarioApplication_Budget(), this.getBudget(), null, "budget", null, 0, 1, BudgetScenarioApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetScenarioApplication_Budget().getEKeys().add(this.getBudget_BudgetId());
 		initEAttribute(getBudgetScenarioApplication_BudgetItemSeqId(), ecorePackage.getEString(), "budgetItemSeqId", null, 0, 1, BudgetScenarioApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetScenarioApplication_PercentageChange(), ecorePackage.getEBigDecimal(), "percentageChange", null, 0, 1, BudgetScenarioApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(budgetScenarioRuleEClass, BudgetScenarioRule.class, "BudgetScenarioRule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getBudgetScenarioRule_BudgetScenarioId(), this.getBudgetScenario(), null, "budgetScenarioId", null, 1, 1, BudgetScenarioRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetScenarioRule_BudgetScenarioId().getEKeys().add(this.getBudgetScenario_BudgetScenarioId());
-		initEReference(getBudgetScenarioRule_BudgetItemTypeId(), this.getBudgetItemType(), null, "budgetItemTypeId", null, 1, 1, BudgetScenarioRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetScenarioRule_BudgetItemTypeId().getEKeys().add(this.getBudgetItemType_BudgetItemTypeId());
+		initEReference(getBudgetScenarioRule_BudgetScenario(), this.getBudgetScenario(), null, "budgetScenario", null, 1, 1, BudgetScenarioRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetScenarioRule_BudgetScenario().getEKeys().add(this.getBudgetScenario_BudgetScenarioId());
+		initEReference(getBudgetScenarioRule_BudgetItemType(), this.getBudgetItemType(), null, "budgetItemType", null, 1, 1, BudgetScenarioRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetScenarioRule_BudgetItemType().getEKeys().add(this.getBudgetItemType_BudgetItemTypeId());
 		initEAttribute(getBudgetScenarioRule_AmountChange(), ecorePackage.getEBigDecimal(), "amountChange", null, 0, 1, BudgetScenarioRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetScenarioRule_PercentageChange(), ecorePackage.getEBigDecimal(), "percentageChange", null, 0, 1, BudgetScenarioRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(budgetStatusEClass, BudgetStatus.class, "BudgetStatus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getBudgetStatus_BudgetId(), this.getBudget(), null, "budgetId", null, 1, 1, BudgetStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetStatus_BudgetId().getEKeys().add(this.getBudget_BudgetId());
-		initEReference(getBudgetStatus_StatusId(), theStatusPackage.getStatusItem(), null, "statusId", null, 1, 1, BudgetStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetStatus_StatusId().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
-		initEReference(getBudgetStatus_ChangeByUserLoginId(), theLoginPackage.getUserLogin(), null, "changeByUserLoginId", null, 0, 1, BudgetStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetStatus_ChangeByUserLoginId().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
+		initEReference(getBudgetStatus_Budget(), this.getBudget(), null, "budget", null, 1, 1, BudgetStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetStatus_Budget().getEKeys().add(this.getBudget_BudgetId());
+		initEReference(getBudgetStatus_Status(), theStatusPackage.getStatusItem(), null, "status", null, 1, 1, BudgetStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetStatus_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
+		initEReference(getBudgetStatus_ChangeByUserLogin(), theLoginPackage.getUserLogin(), null, "changeByUserLogin", null, 0, 1, BudgetStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetStatus_ChangeByUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEAttribute(getBudgetStatus_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, BudgetStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetStatus_StatusDate(), ecorePackage.getEDate(), "statusDate", null, 0, 1, BudgetStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -2088,12 +2088,12 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		initEReference(getBudgetType_BudgetTypeAttrs(), this.getBudgetTypeAttr(), null, "budgetTypeAttrs", null, 0, -1, BudgetType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetType_Description(), ecorePackage.getEString(), "description", null, 0, 1, BudgetType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 0, 1, BudgetType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getBudgetType_ParentTypeId(), this.getBudgetType(), null, "parentTypeId", null, 0, 1, BudgetType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetType_ParentTypeId().getEKeys().add(this.getBudgetType_BudgetTypeId());
+		initEReference(getBudgetType_ParentType(), this.getBudgetType(), null, "parentType", null, 0, 1, BudgetType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetType_ParentType().getEKeys().add(this.getBudgetType_BudgetTypeId());
 
 		initEClass(budgetTypeAttrEClass, BudgetTypeAttr.class, "BudgetTypeAttr", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getBudgetTypeAttr_BudgetTypeId(), this.getBudgetType(), null, "budgetTypeId", null, 1, 1, BudgetTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getBudgetTypeAttr_BudgetTypeId().getEKeys().add(this.getBudgetType_BudgetTypeId());
+		initEReference(getBudgetTypeAttr_BudgetType(), this.getBudgetType(), null, "budgetType", null, 1, 1, BudgetTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getBudgetTypeAttr_BudgetType().getEKeys().add(this.getBudgetType_BudgetTypeId());
 		initEAttribute(getBudgetTypeAttr_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, BudgetTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetTypeAttr_Description(), ecorePackage.getEString(), "description", null, 0, 1, BudgetTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -2383,7 +2383,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
 		addAnnotation
-		  (getBudgetAttribute_BudgetId(),
+		  (getBudgetAttribute_Budget(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2395,7 +2395,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getBudgetItem_BudgetId(),
+		  (getBudgetItem_Budget(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2425,7 +2425,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getBudgetItemTypeAttr_BudgetItemTypeId(),
+		  (getBudgetItemTypeAttr_BudgetItemType(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2437,19 +2437,19 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getBudgetReview_BudgetId(),
+		  (getBudgetReview_Budget(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getBudgetReview_PartyId(),
+		  (getBudgetReview_Party(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getBudgetReview_BudgetReviewResultTypeId(),
+		  (getBudgetReview_BudgetReviewResultType(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2461,7 +2461,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getBudgetRevision_BudgetId(),
+		  (getBudgetRevision_Budget(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2473,7 +2473,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getBudgetRevisionImpact_BudgetId(),
+		  (getBudgetRevisionImpact_Budget(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2491,13 +2491,13 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getBudgetRole_BudgetId(),
+		  (getBudgetRole_Budget(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getBudgetRole_PartyId(),
+		  (getBudgetRole_Party(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2509,7 +2509,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getBudgetScenarioApplication_BudgetScenarioId(),
+		  (getBudgetScenarioApplication_BudgetScenario(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2521,31 +2521,31 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getBudgetScenarioRule_BudgetScenarioId(),
+		  (getBudgetScenarioRule_BudgetScenario(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getBudgetScenarioRule_BudgetItemTypeId(),
+		  (getBudgetScenarioRule_BudgetItemType(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getBudgetStatus_BudgetId(),
+		  (getBudgetStatus_Budget(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getBudgetStatus_StatusId(),
+		  (getBudgetStatus_Status(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getBudgetTypeAttr_BudgetTypeId(),
+		  (getBudgetTypeAttr_BudgetType(),
 		   source,
 		   new String[] {
 			   "key", "true"

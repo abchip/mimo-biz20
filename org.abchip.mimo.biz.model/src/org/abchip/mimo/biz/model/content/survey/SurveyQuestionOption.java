@@ -20,7 +20,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionOption#getSurveyQuestionId <em>Survey Question Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionOption#getSurveyQuestion <em>Survey Question</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionOption#getSurveyOptionSeqId <em>Survey Option Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionOption#getAmountBase <em>Amount Base</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionOption#getAmountBaseUomId <em>Amount Base Uom Id</em>}</li>
@@ -36,6 +36,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface SurveyQuestionOption extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Survey Question</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Survey Question</em>' reference.
+	 * @see #setSurveyQuestion(SurveyQuestion)
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestionOption_SurveyQuestion()
+	 * @model keys="surveyQuestionId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	SurveyQuestion getSurveyQuestion();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionOption#getSurveyQuestion <em>Survey Question</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Survey Question</em>' reference.
+	 * @see #getSurveyQuestion()
+	 * @generated
+	 */
+	void setSurveyQuestion(SurveyQuestion value);
+
 	/**
 	 * Returns the value of the '<em><b>Amount Base</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -219,33 +242,6 @@ public interface SurveyQuestionOption extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setSurveyOptionSeqId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Survey Question Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Survey Question Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Survey Question Id</em>' reference.
-	 * @see #setSurveyQuestionId(SurveyQuestion)
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestionOption_SurveyQuestionId()
-	 * @model keys="surveyQuestionId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	SurveyQuestion getSurveyQuestionId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionOption#getSurveyQuestionId <em>Survey Question Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Survey Question Id</em>' reference.
-	 * @see #getSurveyQuestionId()
-	 * @generated
-	 */
-	void setSurveyQuestionId(SurveyQuestion value);
 
 	/**
 	 * Returns the value of the '<em><b>Weight Factor</b></em>' attribute.

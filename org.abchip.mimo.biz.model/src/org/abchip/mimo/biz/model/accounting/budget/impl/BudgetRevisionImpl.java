@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpl#getBudgetId <em>Budget Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpl#getBudget <em>Budget</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpl#getRevisionSeqId <em>Revision Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpl#getDateRevised <em>Date Revised</em>}</li>
  * </ul>
@@ -151,6 +151,26 @@ public class BudgetRevisionImpl extends EntityIdentifiableImpl implements Budget
 	 * @generated
 	 */
 	@Override
+	public Budget getBudget() {
+		return (Budget)eGet(BudgetPackage.Literals.BUDGET_REVISION__BUDGET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBudget(Budget newBudget) {
+		eSet(BudgetPackage.Literals.BUDGET_REVISION__BUDGET, newBudget);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getDateRevised() {
 		return (Date)eGet(BudgetPackage.Literals.BUDGET_REVISION__DATE_REVISED, true);
 	}
@@ -221,26 +241,6 @@ public class BudgetRevisionImpl extends EntityIdentifiableImpl implements Budget
 	@Override
 	public void setRevisionSeqId(String newRevisionSeqId) {
 		eSet(BudgetPackage.Literals.BUDGET_REVISION__REVISION_SEQ_ID, newRevisionSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Budget getBudgetId() {
-		return (Budget)eGet(BudgetPackage.Literals.BUDGET_REVISION__BUDGET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBudgetId(Budget newBudgetId) {
-		eSet(BudgetPackage.Literals.BUDGET_REVISION__BUDGET_ID, newBudgetId);
 	}
 
 } //BudgetRevisionImpl

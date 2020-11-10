@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureTypeImpl#getProductFeatureTypeId <em>Product Feature Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,8 +200,8 @@ public class ProductFeatureTypeImpl extends EntityTypeImpl<ProductFeature> imple
 	 * @generated
 	 */
 	@Override
-	public ProductFeatureType getParentTypeId() {
-		return (ProductFeatureType)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_TYPE__PARENT_TYPE_ID, true);
+	public ProductFeatureType getParentType() {
+		return (ProductFeatureType)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -210,8 +210,8 @@ public class ProductFeatureTypeImpl extends EntityTypeImpl<ProductFeature> imple
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(ProductFeatureType newParentTypeId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(ProductFeatureType newParentType) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

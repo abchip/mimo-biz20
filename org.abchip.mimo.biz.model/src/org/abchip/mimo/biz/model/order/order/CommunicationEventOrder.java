@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.CommunicationEventOrder#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.CommunicationEventOrder#getCommunicationEventId <em>Communication Event Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.CommunicationEventOrder#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.CommunicationEventOrder#getCommunicationEvent <em>Communication Event</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getCommunicationEventOrder()
@@ -30,57 +30,49 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface CommunicationEventOrder extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Communication Event Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Communication Event Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Communication Event Id</em>' reference.
-	 * @see #setCommunicationEventId(CommunicationEvent)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getCommunicationEventOrder_CommunicationEventId()
-	 * @model keys="communicationEventId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	CommunicationEvent getCommunicationEventId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.CommunicationEventOrder#getCommunicationEventId <em>Communication Event Id</em>}' reference.
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Communication Event Id</em>' reference.
-	 * @see #getCommunicationEventId()
-	 * @generated
-	 */
-	void setCommunicationEventId(CommunicationEvent value);
-
-	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getCommunicationEventOrder_OrderId()
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getCommunicationEventOrder_Order()
 	 * @model keys="orderId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	OrderHeader getOrderId();
+	OrderHeader getOrder();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.CommunicationEventOrder#getOrderId <em>Order Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.CommunicationEventOrder#getOrder <em>Order</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
 	 * @generated
 	 */
-	void setOrderId(OrderHeader value);
+	void setOrder(OrderHeader value);
+
+	/**
+	 * Returns the value of the '<em><b>Communication Event</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Communication Event</em>' reference.
+	 * @see #setCommunicationEvent(CommunicationEvent)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getCommunicationEventOrder_CommunicationEvent()
+	 * @model keys="communicationEventId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	CommunicationEvent getCommunicationEvent();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.CommunicationEventOrder#getCommunicationEvent <em>Communication Event</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Communication Event</em>' reference.
+	 * @see #getCommunicationEvent()
+	 * @generated
+	 */
+	void setCommunicationEvent(CommunicationEvent value);
 
 } // CommunicationEventOrder

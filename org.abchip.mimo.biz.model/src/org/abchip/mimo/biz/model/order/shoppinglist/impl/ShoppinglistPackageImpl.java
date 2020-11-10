@@ -737,7 +737,7 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 	 * @generated
 	 */
 	@Override
-	public EReference getShoppingList_ContactMechId() {
+	public EReference getShoppingList_ContactMech() {
 		return (EReference)shoppingListEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -817,7 +817,7 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 	 * @generated
 	 */
 	@Override
-	public EReference getShoppingList_ParentShoppingListId() {
+	public EReference getShoppingList_ParentShoppingList() {
 		return (EReference)shoppingListEClass.getEStructuralFeatures().get(11);
 	}
 
@@ -827,7 +827,7 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 	 * @generated
 	 */
 	@Override
-	public EReference getShoppingList_PartyId() {
+	public EReference getShoppingList_Party() {
 		return (EReference)shoppingListEClass.getEStructuralFeatures().get(12);
 	}
 
@@ -837,7 +837,7 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 	 * @generated
 	 */
 	@Override
-	public EReference getShoppingList_PaymentMethodId() {
+	public EReference getShoppingList_PaymentMethod() {
 		return (EReference)shoppingListEClass.getEStructuralFeatures().get(13);
 	}
 
@@ -847,7 +847,7 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 	 * @generated
 	 */
 	@Override
-	public EReference getShoppingList_ProductPromoCodeId() {
+	public EReference getShoppingList_ProductPromoCode() {
 		return (EReference)shoppingListEClass.getEStructuralFeatures().get(14);
 	}
 
@@ -857,7 +857,7 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 	 * @generated
 	 */
 	@Override
-	public EReference getShoppingList_ProductStoreId() {
+	public EReference getShoppingList_ProductStore() {
 		return (EReference)shoppingListEClass.getEStructuralFeatures().get(15);
 	}
 
@@ -867,7 +867,7 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 	 * @generated
 	 */
 	@Override
-	public EReference getShoppingList_RecurrenceInfoId() {
+	public EReference getShoppingList_RecurrenceInfo() {
 		return (EReference)shoppingListEClass.getEStructuralFeatures().get(16);
 	}
 
@@ -897,7 +897,7 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 	 * @generated
 	 */
 	@Override
-	public EReference getShoppingList_ShoppingListTypeId() {
+	public EReference getShoppingList_ShoppingListType() {
 		return (EReference)shoppingListEClass.getEStructuralFeatures().get(19);
 	}
 
@@ -937,7 +937,7 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 	 * @generated
 	 */
 	@Override
-	public EReference getShoppingListItem_ShoppingListId() {
+	public EReference getShoppingListItem_ShoppingList() {
 		return (EReference)shoppingListItemEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -977,7 +977,7 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 	 * @generated
 	 */
 	@Override
-	public EReference getShoppingListItem_ProductId() {
+	public EReference getShoppingListItem_Product() {
 		return (EReference)shoppingListItemEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -1047,8 +1047,18 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 	 * @generated
 	 */
 	@Override
-	public EReference getShoppingListItemSurvey_ShoppingListId() {
+	public EReference getShoppingListItemSurvey_ShoppingList() {
 		return (EReference)shoppingListItemSurveyEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getShoppingListItemSurvey_SurveyResponse() {
+		return (EReference)shoppingListItemSurveyEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1059,16 +1069,6 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 	@Override
 	public EAttribute getShoppingListItemSurvey_ShoppingListItemSeqId() {
 		return (EAttribute)shoppingListItemSurveyEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getShoppingListItemSurvey_SurveyResponseId() {
-		return (EReference)shoppingListItemSurveyEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1117,7 +1117,7 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 	 * @generated
 	 */
 	@Override
-	public EReference getShoppingListWorkEffort_ShoppingListId() {
+	public EReference getShoppingListWorkEffort_ShoppingList() {
 		return (EReference)shoppingListWorkEffortEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1127,7 +1127,7 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 	 * @generated
 	 */
 	@Override
-	public EReference getShoppingListWorkEffort_WorkEffortId() {
+	public EReference getShoppingListWorkEffort_WorkEffort() {
 		return (EReference)shoppingListWorkEffortEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1164,7 +1164,7 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 		createEAttribute(shoppingListEClass, SHOPPING_LIST__SHOPPING_LIST_ID);
 		createEAttribute(shoppingListEClass, SHOPPING_LIST__CARRIER_PARTY_ID);
 		createEAttribute(shoppingListEClass, SHOPPING_LIST__CARRIER_ROLE_TYPE_ID);
-		createEReference(shoppingListEClass, SHOPPING_LIST__CONTACT_MECH_ID);
+		createEReference(shoppingListEClass, SHOPPING_LIST__CONTACT_MECH);
 		createEAttribute(shoppingListEClass, SHOPPING_LIST__CURRENCY_UOM);
 		createEAttribute(shoppingListEClass, SHOPPING_LIST__DESCRIPTION);
 		createEAttribute(shoppingListEClass, SHOPPING_LIST__IS_ACTIVE);
@@ -1172,24 +1172,24 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 		createEAttribute(shoppingListEClass, SHOPPING_LIST__LAST_ADMIN_MODIFIED);
 		createEAttribute(shoppingListEClass, SHOPPING_LIST__LAST_ORDERED_DATE);
 		createEAttribute(shoppingListEClass, SHOPPING_LIST__LIST_NAME);
-		createEReference(shoppingListEClass, SHOPPING_LIST__PARENT_SHOPPING_LIST_ID);
-		createEReference(shoppingListEClass, SHOPPING_LIST__PARTY_ID);
-		createEReference(shoppingListEClass, SHOPPING_LIST__PAYMENT_METHOD_ID);
-		createEReference(shoppingListEClass, SHOPPING_LIST__PRODUCT_PROMO_CODE_ID);
-		createEReference(shoppingListEClass, SHOPPING_LIST__PRODUCT_STORE_ID);
-		createEReference(shoppingListEClass, SHOPPING_LIST__RECURRENCE_INFO_ID);
+		createEReference(shoppingListEClass, SHOPPING_LIST__PARENT_SHOPPING_LIST);
+		createEReference(shoppingListEClass, SHOPPING_LIST__PARTY);
+		createEReference(shoppingListEClass, SHOPPING_LIST__PAYMENT_METHOD);
+		createEReference(shoppingListEClass, SHOPPING_LIST__PRODUCT_PROMO_CODE);
+		createEReference(shoppingListEClass, SHOPPING_LIST__PRODUCT_STORE);
+		createEReference(shoppingListEClass, SHOPPING_LIST__RECURRENCE_INFO);
 		createEAttribute(shoppingListEClass, SHOPPING_LIST__SHIPMENT_METHOD_TYPE_ID);
 		createEReference(shoppingListEClass, SHOPPING_LIST__SHOPPING_LIST_ITEMS);
-		createEReference(shoppingListEClass, SHOPPING_LIST__SHOPPING_LIST_TYPE_ID);
+		createEReference(shoppingListEClass, SHOPPING_LIST__SHOPPING_LIST_TYPE);
 		createEReference(shoppingListEClass, SHOPPING_LIST__SHOPPING_LIST_WORK_EFFORTS);
 		createEAttribute(shoppingListEClass, SHOPPING_LIST__VISITOR_ID);
 
 		shoppingListItemEClass = createEClass(SHOPPING_LIST_ITEM);
-		createEReference(shoppingListItemEClass, SHOPPING_LIST_ITEM__SHOPPING_LIST_ID);
+		createEReference(shoppingListItemEClass, SHOPPING_LIST_ITEM__SHOPPING_LIST);
 		createEAttribute(shoppingListItemEClass, SHOPPING_LIST_ITEM__SHOPPING_LIST_ITEM_SEQ_ID);
 		createEAttribute(shoppingListItemEClass, SHOPPING_LIST_ITEM__CONFIG_ID);
 		createEAttribute(shoppingListItemEClass, SHOPPING_LIST_ITEM__MODIFIED_PRICE);
-		createEReference(shoppingListItemEClass, SHOPPING_LIST_ITEM__PRODUCT_ID);
+		createEReference(shoppingListItemEClass, SHOPPING_LIST_ITEM__PRODUCT);
 		createEAttribute(shoppingListItemEClass, SHOPPING_LIST_ITEM__QUANTITY);
 		createEAttribute(shoppingListItemEClass, SHOPPING_LIST_ITEM__QUANTITY_PURCHASED);
 		createEAttribute(shoppingListItemEClass, SHOPPING_LIST_ITEM__RESERV_LENGTH);
@@ -1197,8 +1197,8 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 		createEAttribute(shoppingListItemEClass, SHOPPING_LIST_ITEM__RESERV_START);
 
 		shoppingListItemSurveyEClass = createEClass(SHOPPING_LIST_ITEM_SURVEY);
-		createEReference(shoppingListItemSurveyEClass, SHOPPING_LIST_ITEM_SURVEY__SHOPPING_LIST_ID);
-		createEReference(shoppingListItemSurveyEClass, SHOPPING_LIST_ITEM_SURVEY__SURVEY_RESPONSE_ID);
+		createEReference(shoppingListItemSurveyEClass, SHOPPING_LIST_ITEM_SURVEY__SHOPPING_LIST);
+		createEReference(shoppingListItemSurveyEClass, SHOPPING_LIST_ITEM_SURVEY__SURVEY_RESPONSE);
 		createEAttribute(shoppingListItemSurveyEClass, SHOPPING_LIST_ITEM_SURVEY__SHOPPING_LIST_ITEM_SEQ_ID);
 
 		shoppingListTypeEClass = createEClass(SHOPPING_LIST_TYPE);
@@ -1206,8 +1206,8 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 		createEAttribute(shoppingListTypeEClass, SHOPPING_LIST_TYPE__DESCRIPTION);
 
 		shoppingListWorkEffortEClass = createEClass(SHOPPING_LIST_WORK_EFFORT);
-		createEReference(shoppingListWorkEffortEClass, SHOPPING_LIST_WORK_EFFORT__SHOPPING_LIST_ID);
-		createEReference(shoppingListWorkEffortEClass, SHOPPING_LIST_WORK_EFFORT__WORK_EFFORT_ID);
+		createEReference(shoppingListWorkEffortEClass, SHOPPING_LIST_WORK_EFFORT__SHOPPING_LIST);
+		createEReference(shoppingListWorkEffortEClass, SHOPPING_LIST_WORK_EFFORT__WORK_EFFORT);
 	}
 
 	/**
@@ -1274,8 +1274,8 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 		initEAttribute(getShoppingList_ShoppingListId(), ecorePackage.getEString(), "shoppingListId", null, 1, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShoppingList_CarrierPartyId(), ecorePackage.getEString(), "carrierPartyId", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShoppingList_CarrierRoleTypeId(), ecorePackage.getEString(), "carrierRoleTypeId", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getShoppingList_ContactMechId(), theContactPackage_1.getContactMech(), null, "contactMechId", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShoppingList_ContactMechId().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
+		initEReference(getShoppingList_ContactMech(), theContactPackage_1.getContactMech(), null, "contactMech", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShoppingList_ContactMech().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
 		initEAttribute(getShoppingList_CurrencyUom(), ecorePackage.getEString(), "currencyUom", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShoppingList_Description(), ecorePackage.getEString(), "description", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShoppingList_IsActive(), ecorePackage.getEBooleanObject(), "isActive", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1283,33 +1283,33 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 		initEAttribute(getShoppingList_LastAdminModified(), ecorePackage.getEDate(), "lastAdminModified", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShoppingList_LastOrderedDate(), ecorePackage.getEDate(), "lastOrderedDate", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShoppingList_ListName(), ecorePackage.getEString(), "listName", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getShoppingList_ParentShoppingListId(), this.getShoppingList(), null, "parentShoppingListId", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShoppingList_ParentShoppingListId().getEKeys().add(this.getShoppingList_ShoppingListId());
-		initEReference(getShoppingList_PartyId(), thePartyPackage_1.getParty(), null, "partyId", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShoppingList_PartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
-		initEReference(getShoppingList_PaymentMethodId(), thePaymentPackage.getPaymentMethod(), null, "paymentMethodId", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShoppingList_PaymentMethodId().getEKeys().add(thePaymentPackage.getPaymentMethod_PaymentMethodId());
-		initEReference(getShoppingList_ProductPromoCodeId(), thePromoPackage.getProductPromoCode(), null, "productPromoCodeId", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShoppingList_ProductPromoCodeId().getEKeys().add(thePromoPackage.getProductPromoCode_ProductPromoCodeId());
-		initEReference(getShoppingList_ProductStoreId(), theStorePackage.getProductStore(), null, "productStoreId", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShoppingList_ProductStoreId().getEKeys().add(theStorePackage.getProductStore_ProductStoreId());
-		initEReference(getShoppingList_RecurrenceInfoId(), theSchedulePackage.getRecurrenceInfo(), null, "recurrenceInfoId", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShoppingList_RecurrenceInfoId().getEKeys().add(theSchedulePackage.getRecurrenceInfo_RecurrenceInfoId());
+		initEReference(getShoppingList_ParentShoppingList(), this.getShoppingList(), null, "parentShoppingList", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShoppingList_ParentShoppingList().getEKeys().add(this.getShoppingList_ShoppingListId());
+		initEReference(getShoppingList_Party(), thePartyPackage_1.getParty(), null, "party", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShoppingList_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getShoppingList_PaymentMethod(), thePaymentPackage.getPaymentMethod(), null, "paymentMethod", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShoppingList_PaymentMethod().getEKeys().add(thePaymentPackage.getPaymentMethod_PaymentMethodId());
+		initEReference(getShoppingList_ProductPromoCode(), thePromoPackage.getProductPromoCode(), null, "productPromoCode", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShoppingList_ProductPromoCode().getEKeys().add(thePromoPackage.getProductPromoCode_ProductPromoCodeId());
+		initEReference(getShoppingList_ProductStore(), theStorePackage.getProductStore(), null, "productStore", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShoppingList_ProductStore().getEKeys().add(theStorePackage.getProductStore_ProductStoreId());
+		initEReference(getShoppingList_RecurrenceInfo(), theSchedulePackage.getRecurrenceInfo(), null, "recurrenceInfo", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShoppingList_RecurrenceInfo().getEKeys().add(theSchedulePackage.getRecurrenceInfo_RecurrenceInfoId());
 		initEAttribute(getShoppingList_ShipmentMethodTypeId(), ecorePackage.getEString(), "shipmentMethodTypeId", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getShoppingList_ShoppingListItems(), this.getShoppingListItem(), null, "shoppingListItems", null, 0, -1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEReference(getShoppingList_ShoppingListTypeId(), this.getShoppingListType(), null, "shoppingListTypeId", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShoppingList_ShoppingListTypeId().getEKeys().add(this.getShoppingListType_ShoppingListTypeId());
+		initEReference(getShoppingList_ShoppingListType(), this.getShoppingListType(), null, "shoppingListType", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShoppingList_ShoppingListType().getEKeys().add(this.getShoppingListType_ShoppingListTypeId());
 		initEReference(getShoppingList_ShoppingListWorkEfforts(), this.getShoppingListWorkEffort(), null, "shoppingListWorkEfforts", null, 0, -1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShoppingList_VisitorId(), ecorePackage.getEString(), "visitorId", null, 0, 1, ShoppingList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(shoppingListItemEClass, ShoppingListItem.class, "ShoppingListItem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getShoppingListItem_ShoppingListId(), this.getShoppingList(), null, "shoppingListId", null, 1, 1, ShoppingListItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShoppingListItem_ShoppingListId().getEKeys().add(this.getShoppingList_ShoppingListId());
+		initEReference(getShoppingListItem_ShoppingList(), this.getShoppingList(), null, "shoppingList", null, 1, 1, ShoppingListItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShoppingListItem_ShoppingList().getEKeys().add(this.getShoppingList_ShoppingListId());
 		initEAttribute(getShoppingListItem_ShoppingListItemSeqId(), ecorePackage.getEString(), "shoppingListItemSeqId", null, 1, 1, ShoppingListItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShoppingListItem_ConfigId(), ecorePackage.getEString(), "configId", null, 0, 1, ShoppingListItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShoppingListItem_ModifiedPrice(), ecorePackage.getEBigDecimal(), "modifiedPrice", null, 0, 1, ShoppingListItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getShoppingListItem_ProductId(), theProductPackage.getProduct(), null, "productId", null, 0, 1, ShoppingListItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShoppingListItem_ProductId().getEKeys().add(theProductPackage.getProduct_ProductId());
+		initEReference(getShoppingListItem_Product(), theProductPackage.getProduct(), null, "product", null, 0, 1, ShoppingListItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShoppingListItem_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEAttribute(getShoppingListItem_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, ShoppingListItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShoppingListItem_QuantityPurchased(), ecorePackage.getEBigDecimal(), "quantityPurchased", null, 0, 1, ShoppingListItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShoppingListItem_ReservLength(), ecorePackage.getEBigDecimal(), "reservLength", null, 0, 1, ShoppingListItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1317,10 +1317,10 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 		initEAttribute(getShoppingListItem_ReservStart(), ecorePackage.getEDate(), "reservStart", null, 0, 1, ShoppingListItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(shoppingListItemSurveyEClass, ShoppingListItemSurvey.class, "ShoppingListItemSurvey", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getShoppingListItemSurvey_ShoppingListId(), this.getShoppingList(), null, "shoppingListId", null, 1, 1, ShoppingListItemSurvey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShoppingListItemSurvey_ShoppingListId().getEKeys().add(this.getShoppingList_ShoppingListId());
-		initEReference(getShoppingListItemSurvey_SurveyResponseId(), theSurveyPackage.getSurveyResponse(), null, "surveyResponseId", null, 1, 1, ShoppingListItemSurvey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShoppingListItemSurvey_SurveyResponseId().getEKeys().add(theSurveyPackage.getSurveyResponse_SurveyResponseId());
+		initEReference(getShoppingListItemSurvey_ShoppingList(), this.getShoppingList(), null, "shoppingList", null, 1, 1, ShoppingListItemSurvey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShoppingListItemSurvey_ShoppingList().getEKeys().add(this.getShoppingList_ShoppingListId());
+		initEReference(getShoppingListItemSurvey_SurveyResponse(), theSurveyPackage.getSurveyResponse(), null, "surveyResponse", null, 1, 1, ShoppingListItemSurvey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShoppingListItemSurvey_SurveyResponse().getEKeys().add(theSurveyPackage.getSurveyResponse_SurveyResponseId());
 		initEAttribute(getShoppingListItemSurvey_ShoppingListItemSeqId(), ecorePackage.getEString(), "shoppingListItemSeqId", null, 1, 1, ShoppingListItemSurvey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(shoppingListTypeEClass, ShoppingListType.class, "ShoppingListType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1328,10 +1328,10 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 		initEAttribute(getShoppingListType_Description(), ecorePackage.getEString(), "description", null, 0, 1, ShoppingListType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(shoppingListWorkEffortEClass, ShoppingListWorkEffort.class, "ShoppingListWorkEffort", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getShoppingListWorkEffort_ShoppingListId(), this.getShoppingList(), null, "shoppingListId", null, 1, 1, ShoppingListWorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShoppingListWorkEffort_ShoppingListId().getEKeys().add(this.getShoppingList_ShoppingListId());
-		initEReference(getShoppingListWorkEffort_WorkEffortId(), theWorkeffortPackage.getWorkEffort(), null, "workEffortId", null, 1, 1, ShoppingListWorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShoppingListWorkEffort_WorkEffortId().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
+		initEReference(getShoppingListWorkEffort_ShoppingList(), this.getShoppingList(), null, "shoppingList", null, 1, 1, ShoppingListWorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShoppingListWorkEffort_ShoppingList().getEKeys().add(this.getShoppingList_ShoppingListId());
+		initEReference(getShoppingListWorkEffort_WorkEffort(), theWorkeffortPackage.getWorkEffort(), null, "workEffort", null, 1, 1, ShoppingListWorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShoppingListWorkEffort_WorkEffort().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
 
 		// Create resource
 		createResource(eNS_URI);
@@ -1511,7 +1511,7 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
 		addAnnotation
-		  (getShoppingListItem_ShoppingListId(),
+		  (getShoppingListItem_ShoppingList(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -1523,13 +1523,13 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getShoppingListItemSurvey_ShoppingListId(),
+		  (getShoppingListItemSurvey_ShoppingList(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getShoppingListItemSurvey_SurveyResponseId(),
+		  (getShoppingListItemSurvey_SurveyResponse(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -1541,13 +1541,13 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getShoppingListWorkEffort_ShoppingListId(),
+		  (getShoppingListWorkEffort_ShoppingList(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getShoppingListWorkEffort_WorkEffortId(),
+		  (getShoppingListWorkEffort_WorkEffort(),
 		   source,
 		   new String[] {
 			   "key", "true"

@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTypeAttrImpl#getShipmentTypeId <em>Shipment Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTypeAttrImpl#getShipmentType <em>Shipment Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -152,6 +152,26 @@ public class ShipmentTypeAttrImpl extends EntityIdentifiableImpl implements Ship
 	 * @generated
 	 */
 	@Override
+	public ShipmentType getShipmentType() {
+		return (ShipmentType)eGet(Shipment_Package.Literals.SHIPMENT_TYPE_ATTR__SHIPMENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setShipmentType(ShipmentType newShipmentType) {
+		eSet(Shipment_Package.Literals.SHIPMENT_TYPE_ATTR__SHIPMENT_TYPE, newShipmentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrName() {
 		return (String)eGet(Shipment_Package.Literals.SHIPMENT_TYPE_ATTR__ATTR_NAME, true);
 	}
@@ -222,26 +242,6 @@ public class ShipmentTypeAttrImpl extends EntityIdentifiableImpl implements Ship
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ShipmentType getShipmentTypeId() {
-		return (ShipmentType)eGet(Shipment_Package.Literals.SHIPMENT_TYPE_ATTR__SHIPMENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setShipmentTypeId(ShipmentType newShipmentTypeId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_TYPE_ATTR__SHIPMENT_TYPE_ID, newShipmentTypeId);
 	}
 
 } //ShipmentTypeAttrImpl

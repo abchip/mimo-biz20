@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipTypeImpl#getPartyRelationshipTypeId <em>Party Relationship Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipTypeImpl#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipTypeImpl#getPartyRelationshipName <em>Party Relationship Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipTypeImpl#getRoleTypeIdValidFrom <em>Role Type Id Valid From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipTypeImpl#getRoleTypeIdValidTo <em>Role Type Id Valid To</em>}</li>
@@ -203,6 +203,26 @@ public class PartyRelationshipTypeImpl extends EntityTypeImpl<PartyRelationship>
 	 * @generated
 	 */
 	@Override
+	public PartyRelationshipType getParentType() {
+		return (PartyRelationshipType)eGet(PartyPackage.Literals.PARTY_RELATIONSHIP_TYPE__PARENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParentType(PartyRelationshipType newParentType) {
+		eSet(PartyPackage.Literals.PARTY_RELATIONSHIP_TYPE__PARENT_TYPE, newParentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getPartyRelationshipName() {
 		return (String)eGet(PartyPackage.Literals.PARTY_RELATIONSHIP_TYPE__PARTY_RELATIONSHIP_NAME, true);
 	}
@@ -215,26 +235,6 @@ public class PartyRelationshipTypeImpl extends EntityTypeImpl<PartyRelationship>
 	@Override
 	public void setPartyRelationshipName(String newPartyRelationshipName) {
 		eSet(PartyPackage.Literals.PARTY_RELATIONSHIP_TYPE__PARTY_RELATIONSHIP_NAME, newPartyRelationshipName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PartyRelationshipType getParentTypeId() {
-		return (PartyRelationshipType)eGet(PartyPackage.Literals.PARTY_RELATIONSHIP_TYPE__PARENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentTypeId(PartyRelationshipType newParentTypeId) {
-		eSet(PartyPackage.Literals.PARTY_RELATIONSHIP_TYPE__PARENT_TYPE_ID, newParentTypeId);
 	}
 
 	/**

@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementTypeImpl#getRequirementTypeId <em>Requirement Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementTypeImpl#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementTypeImpl#getRequirementTypeAttrs <em>Requirement Type Attrs</em>}</li>
  * </ul>
  *
@@ -203,8 +203,8 @@ public class RequirementTypeImpl extends EntityTypeImpl<Requirement> implements 
 	 * @generated
 	 */
 	@Override
-	public RequirementType getParentTypeId() {
-		return (RequirementType)eGet(RequirementPackage.Literals.REQUIREMENT_TYPE__PARENT_TYPE_ID, true);
+	public RequirementType getParentType() {
+		return (RequirementType)eGet(RequirementPackage.Literals.REQUIREMENT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -213,8 +213,8 @@ public class RequirementTypeImpl extends EntityTypeImpl<Requirement> implements 
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(RequirementType newParentTypeId) {
-		eSet(RequirementPackage.Literals.REQUIREMENT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(RequirementType newParentType) {
+		eSet(RequirementPackage.Literals.REQUIREMENT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

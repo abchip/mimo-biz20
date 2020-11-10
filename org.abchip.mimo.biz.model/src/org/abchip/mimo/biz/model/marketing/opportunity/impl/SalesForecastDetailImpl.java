@@ -33,13 +33,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastDetailImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastDetailImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastDetailImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastDetailImpl#getSalesForecastId <em>Sales Forecast Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastDetailImpl#getSalesForecast <em>Sales Forecast</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastDetailImpl#getSalesForecastDetailId <em>Sales Forecast Detail Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastDetailImpl#getAmount <em>Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastDetailImpl#getProductCategoryId <em>Product Category Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastDetailImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastDetailImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastDetailImpl#getProductCategory <em>Product Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastDetailImpl#getQuantity <em>Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastDetailImpl#getQuantityUomId <em>Quantity Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastDetailImpl#getQuantityUom <em>Quantity Uom</em>}</li>
  * </ul>
  *
  * @generated
@@ -161,6 +161,26 @@ public class SalesForecastDetailImpl extends EntityIdentifiableImpl implements S
 	 * @generated
 	 */
 	@Override
+	public SalesForecast getSalesForecast() {
+		return (SalesForecast)eGet(OpportunityPackage.Literals.SALES_FORECAST_DETAIL__SALES_FORECAST, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSalesForecast(SalesForecast newSalesForecast) {
+		eSet(OpportunityPackage.Literals.SALES_FORECAST_DETAIL__SALES_FORECAST, newSalesForecast);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAmount() {
 		return (BigDecimal)eGet(OpportunityPackage.Literals.SALES_FORECAST_DETAIL__AMOUNT, true);
 	}
@@ -181,8 +201,8 @@ public class SalesForecastDetailImpl extends EntityIdentifiableImpl implements S
 	 * @generated
 	 */
 	@Override
-	public ProductCategory getProductCategoryId() {
-		return (ProductCategory)eGet(OpportunityPackage.Literals.SALES_FORECAST_DETAIL__PRODUCT_CATEGORY_ID, true);
+	public Product getProduct() {
+		return (Product)eGet(OpportunityPackage.Literals.SALES_FORECAST_DETAIL__PRODUCT, true);
 	}
 
 	/**
@@ -191,8 +211,8 @@ public class SalesForecastDetailImpl extends EntityIdentifiableImpl implements S
 	 * @generated
 	 */
 	@Override
-	public void setProductCategoryId(ProductCategory newProductCategoryId) {
-		eSet(OpportunityPackage.Literals.SALES_FORECAST_DETAIL__PRODUCT_CATEGORY_ID, newProductCategoryId);
+	public void setProduct(Product newProduct) {
+		eSet(OpportunityPackage.Literals.SALES_FORECAST_DETAIL__PRODUCT, newProduct);
 	}
 
 	/**
@@ -201,8 +221,8 @@ public class SalesForecastDetailImpl extends EntityIdentifiableImpl implements S
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(OpportunityPackage.Literals.SALES_FORECAST_DETAIL__PRODUCT_ID, true);
+	public ProductCategory getProductCategory() {
+		return (ProductCategory)eGet(OpportunityPackage.Literals.SALES_FORECAST_DETAIL__PRODUCT_CATEGORY, true);
 	}
 
 	/**
@@ -211,8 +231,8 @@ public class SalesForecastDetailImpl extends EntityIdentifiableImpl implements S
 	 * @generated
 	 */
 	@Override
-	public void setProductId(Product newProductId) {
-		eSet(OpportunityPackage.Literals.SALES_FORECAST_DETAIL__PRODUCT_ID, newProductId);
+	public void setProductCategory(ProductCategory newProductCategory) {
+		eSet(OpportunityPackage.Literals.SALES_FORECAST_DETAIL__PRODUCT_CATEGORY, newProductCategory);
 	}
 
 	/**
@@ -241,8 +261,8 @@ public class SalesForecastDetailImpl extends EntityIdentifiableImpl implements S
 	 * @generated
 	 */
 	@Override
-	public Uom getQuantityUomId() {
-		return (Uom)eGet(OpportunityPackage.Literals.SALES_FORECAST_DETAIL__QUANTITY_UOM_ID, true);
+	public Uom getQuantityUom() {
+		return (Uom)eGet(OpportunityPackage.Literals.SALES_FORECAST_DETAIL__QUANTITY_UOM, true);
 	}
 
 	/**
@@ -251,8 +271,8 @@ public class SalesForecastDetailImpl extends EntityIdentifiableImpl implements S
 	 * @generated
 	 */
 	@Override
-	public void setQuantityUomId(Uom newQuantityUomId) {
-		eSet(OpportunityPackage.Literals.SALES_FORECAST_DETAIL__QUANTITY_UOM_ID, newQuantityUomId);
+	public void setQuantityUom(Uom newQuantityUom) {
+		eSet(OpportunityPackage.Literals.SALES_FORECAST_DETAIL__QUANTITY_UOM, newQuantityUom);
 	}
 
 	/**
@@ -311,26 +331,6 @@ public class SalesForecastDetailImpl extends EntityIdentifiableImpl implements S
 	@Override
 	public void setSalesForecastDetailId(String newSalesForecastDetailId) {
 		eSet(OpportunityPackage.Literals.SALES_FORECAST_DETAIL__SALES_FORECAST_DETAIL_ID, newSalesForecastDetailId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SalesForecast getSalesForecastId() {
-		return (SalesForecast)eGet(OpportunityPackage.Literals.SALES_FORECAST_DETAIL__SALES_FORECAST_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSalesForecastId(SalesForecast newSalesForecastId) {
-		eSet(OpportunityPackage.Literals.SALES_FORECAST_DETAIL__SALES_FORECAST_ID, newSalesForecastId);
 	}
 
 } //SalesForecastDetailImpl

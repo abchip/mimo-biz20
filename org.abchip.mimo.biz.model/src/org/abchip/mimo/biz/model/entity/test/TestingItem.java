@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingItem#getTestingId <em>Testing Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingItem#getTesting <em>Testing</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingItem#getTestingSeqId <em>Testing Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingItem#getTestingHistory <em>Testing History</em>}</li>
  * </ul>
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface TestingItem extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Testing</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Testing</em>' reference.
+	 * @see #setTesting(Testing)
+	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingItem_Testing()
+	 * @model keys="testingId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Testing getTesting();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.test.TestingItem#getTesting <em>Testing</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Testing</em>' reference.
+	 * @see #getTesting()
+	 * @generated
+	 */
+	void setTesting(Testing value);
+
 	/**
 	 * Returns the value of the '<em><b>Testing History</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -54,33 +77,6 @@ public interface TestingItem extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setTestingHistory(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Testing Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Testing Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Testing Id</em>' reference.
-	 * @see #setTestingId(Testing)
-	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingItem_TestingId()
-	 * @model keys="testingId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Testing getTestingId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.test.TestingItem#getTestingId <em>Testing Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Testing Id</em>' reference.
-	 * @see #getTestingId()
-	 * @generated
-	 */
-	void setTestingId(Testing value);
 
 	/**
 	 * Returns the value of the '<em><b>Testing Seq Id</b></em>' attribute.

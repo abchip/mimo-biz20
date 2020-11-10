@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechPurposeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechPurposeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechPurposeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechPurposeImpl#getContactMechPurposeTypeId <em>Contact Mech Purpose Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechPurposeImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechPurposeImpl#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechPurposeImpl#getContactMechPurposeType <em>Contact Mech Purpose Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechPurposeImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechPurposeImpl#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechPurposeImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechPurposeImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -155,6 +155,66 @@ public class PartyContactMechPurposeImpl extends EntityTypedImpl<ContactMechPurp
 	 * @generated
 	 */
 	@Override
+	public ContactMechPurposeType getContactMechPurposeType() {
+		return (ContactMechPurposeType)eGet(ContactPackage.Literals.PARTY_CONTACT_MECH_PURPOSE__CONTACT_MECH_PURPOSE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContactMechPurposeType(ContactMechPurposeType newContactMechPurposeType) {
+		eSet(ContactPackage.Literals.PARTY_CONTACT_MECH_PURPOSE__CONTACT_MECH_PURPOSE_TYPE, newContactMechPurposeType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(ContactPackage.Literals.PARTY_CONTACT_MECH_PURPOSE__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(ContactPackage.Literals.PARTY_CONTACT_MECH_PURPOSE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(ContactPackage.Literals.PARTY_CONTACT_MECH_PURPOSE__CONTACT_MECH, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(ContactPackage.Literals.PARTY_CONTACT_MECH_PURPOSE__CONTACT_MECH, newContactMech);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(ContactPackage.Literals.PARTY_CONTACT_MECH_PURPOSE__FROM_DATE, true);
 	}
@@ -167,26 +227,6 @@ public class PartyContactMechPurposeImpl extends EntityTypedImpl<ContactMechPurp
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(ContactPackage.Literals.PARTY_CONTACT_MECH_PURPOSE__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(ContactPackage.Literals.PARTY_CONTACT_MECH_PURPOSE__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(ContactPackage.Literals.PARTY_CONTACT_MECH_PURPOSE__PARTY_ID, newPartyId);
 	}
 
 	/**
@@ -245,46 +285,6 @@ public class PartyContactMechPurposeImpl extends EntityTypedImpl<ContactMechPurp
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ContactMechPurposeType getContactMechPurposeTypeId() {
-		return (ContactMechPurposeType)eGet(ContactPackage.Literals.PARTY_CONTACT_MECH_PURPOSE__CONTACT_MECH_PURPOSE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContactMechPurposeTypeId(ContactMechPurposeType newContactMechPurposeTypeId) {
-		eSet(ContactPackage.Literals.PARTY_CONTACT_MECH_PURPOSE__CONTACT_MECH_PURPOSE_TYPE_ID, newContactMechPurposeTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(ContactPackage.Literals.PARTY_CONTACT_MECH_PURPOSE__CONTACT_MECH_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(ContactPackage.Literals.PARTY_CONTACT_MECH_PURPOSE__CONTACT_MECH_ID, newContactMechId);
 	}
 
 } //PartyContactMechPurposeImpl

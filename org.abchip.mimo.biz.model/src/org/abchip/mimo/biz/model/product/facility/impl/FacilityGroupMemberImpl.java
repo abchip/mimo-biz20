@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupMemberImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupMemberImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupMemberImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupMemberImpl#getFacilityId <em>Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupMemberImpl#getFacilityGroupId <em>Facility Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupMemberImpl#getFacility <em>Facility</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupMemberImpl#getFacilityGroup <em>Facility Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupMemberImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupMemberImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupMemberImpl#getThruDate <em>Thru Date</em>}</li>
@@ -155,6 +155,46 @@ public class FacilityGroupMemberImpl extends EntityIdentifiableImpl implements F
 	 * @generated
 	 */
 	@Override
+	public Facility getFacility() {
+		return (Facility)eGet(FacilityPackage.Literals.FACILITY_GROUP_MEMBER__FACILITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacility(Facility newFacility) {
+		eSet(FacilityPackage.Literals.FACILITY_GROUP_MEMBER__FACILITY, newFacility);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FacilityGroup getFacilityGroup() {
+		return (FacilityGroup)eGet(FacilityPackage.Literals.FACILITY_GROUP_MEMBER__FACILITY_GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacilityGroup(FacilityGroup newFacilityGroup) {
+		eSet(FacilityPackage.Literals.FACILITY_GROUP_MEMBER__FACILITY_GROUP, newFacilityGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(FacilityPackage.Literals.FACILITY_GROUP_MEMBER__FROM_DATE, true);
 	}
@@ -245,46 +285,6 @@ public class FacilityGroupMemberImpl extends EntityIdentifiableImpl implements F
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(FacilityPackage.Literals.FACILITY_GROUP_MEMBER__FACILITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(FacilityPackage.Literals.FACILITY_GROUP_MEMBER__FACILITY_ID, newFacilityId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FacilityGroup getFacilityGroupId() {
-		return (FacilityGroup)eGet(FacilityPackage.Literals.FACILITY_GROUP_MEMBER__FACILITY_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityGroupId(FacilityGroup newFacilityGroupId) {
-		eSet(FacilityPackage.Literals.FACILITY_GROUP_MEMBER__FACILITY_GROUP_ID, newFacilityGroupId);
 	}
 
 } //FacilityGroupMemberImpl

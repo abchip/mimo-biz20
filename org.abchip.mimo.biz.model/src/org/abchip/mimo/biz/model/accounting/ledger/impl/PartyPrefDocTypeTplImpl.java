@@ -34,10 +34,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyPrefDocTypeTplImpl#getPartyPrefDocTypeTplId <em>Party Pref Doc Type Tpl Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyPrefDocTypeTplImpl#getCustomScreenId <em>Custom Screen Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyPrefDocTypeTplImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyPrefDocTypeTplImpl#getInvoiceTypeId <em>Invoice Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyPrefDocTypeTplImpl#getOrderTypeId <em>Order Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyPrefDocTypeTplImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyPrefDocTypeTplImpl#getQuoteTypeId <em>Quote Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyPrefDocTypeTplImpl#getInvoiceType <em>Invoice Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyPrefDocTypeTplImpl#getOrderType <em>Order Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyPrefDocTypeTplImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyPrefDocTypeTplImpl#getQuoteType <em>Quote Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyPrefDocTypeTplImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -200,8 +200,8 @@ public class PartyPrefDocTypeTplImpl extends EntityIdentifiableImpl implements P
 	 * @generated
 	 */
 	@Override
-	public InvoiceType getInvoiceTypeId() {
-		return (InvoiceType)eGet(LedgerPackage.Literals.PARTY_PREF_DOC_TYPE_TPL__INVOICE_TYPE_ID, true);
+	public InvoiceType getInvoiceType() {
+		return (InvoiceType)eGet(LedgerPackage.Literals.PARTY_PREF_DOC_TYPE_TPL__INVOICE_TYPE, true);
 	}
 
 	/**
@@ -210,8 +210,8 @@ public class PartyPrefDocTypeTplImpl extends EntityIdentifiableImpl implements P
 	 * @generated
 	 */
 	@Override
-	public void setInvoiceTypeId(InvoiceType newInvoiceTypeId) {
-		eSet(LedgerPackage.Literals.PARTY_PREF_DOC_TYPE_TPL__INVOICE_TYPE_ID, newInvoiceTypeId);
+	public void setInvoiceType(InvoiceType newInvoiceType) {
+		eSet(LedgerPackage.Literals.PARTY_PREF_DOC_TYPE_TPL__INVOICE_TYPE, newInvoiceType);
 	}
 
 	/**
@@ -220,8 +220,8 @@ public class PartyPrefDocTypeTplImpl extends EntityIdentifiableImpl implements P
 	 * @generated
 	 */
 	@Override
-	public OrderType getOrderTypeId() {
-		return (OrderType)eGet(LedgerPackage.Literals.PARTY_PREF_DOC_TYPE_TPL__ORDER_TYPE_ID, true);
+	public OrderType getOrderType() {
+		return (OrderType)eGet(LedgerPackage.Literals.PARTY_PREF_DOC_TYPE_TPL__ORDER_TYPE, true);
 	}
 
 	/**
@@ -230,8 +230,8 @@ public class PartyPrefDocTypeTplImpl extends EntityIdentifiableImpl implements P
 	 * @generated
 	 */
 	@Override
-	public void setOrderTypeId(OrderType newOrderTypeId) {
-		eSet(LedgerPackage.Literals.PARTY_PREF_DOC_TYPE_TPL__ORDER_TYPE_ID, newOrderTypeId);
+	public void setOrderType(OrderType newOrderType) {
+		eSet(LedgerPackage.Literals.PARTY_PREF_DOC_TYPE_TPL__ORDER_TYPE, newOrderType);
 	}
 
 	/**
@@ -240,8 +240,8 @@ public class PartyPrefDocTypeTplImpl extends EntityIdentifiableImpl implements P
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(LedgerPackage.Literals.PARTY_PREF_DOC_TYPE_TPL__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(LedgerPackage.Literals.PARTY_PREF_DOC_TYPE_TPL__PARTY, true);
 	}
 
 	/**
@@ -250,8 +250,28 @@ public class PartyPrefDocTypeTplImpl extends EntityIdentifiableImpl implements P
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(LedgerPackage.Literals.PARTY_PREF_DOC_TYPE_TPL__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(LedgerPackage.Literals.PARTY_PREF_DOC_TYPE_TPL__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public QuoteType getQuoteType() {
+		return (QuoteType)eGet(LedgerPackage.Literals.PARTY_PREF_DOC_TYPE_TPL__QUOTE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setQuoteType(QuoteType newQuoteType) {
+		eSet(LedgerPackage.Literals.PARTY_PREF_DOC_TYPE_TPL__QUOTE_TYPE, newQuoteType);
 	}
 
 	/**
@@ -272,26 +292,6 @@ public class PartyPrefDocTypeTplImpl extends EntityIdentifiableImpl implements P
 	@Override
 	public void setPartyPrefDocTypeTplId(String newPartyPrefDocTypeTplId) {
 		eSet(LedgerPackage.Literals.PARTY_PREF_DOC_TYPE_TPL__PARTY_PREF_DOC_TYPE_TPL_ID, newPartyPrefDocTypeTplId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public QuoteType getQuoteTypeId() {
-		return (QuoteType)eGet(LedgerPackage.Literals.PARTY_PREF_DOC_TYPE_TPL__QUOTE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setQuoteTypeId(QuoteType newQuoteTypeId) {
-		eSet(LedgerPackage.Literals.PARTY_PREF_DOC_TYPE_TPL__QUOTE_TYPE_ID, newQuoteTypeId);
 	}
 
 	/**

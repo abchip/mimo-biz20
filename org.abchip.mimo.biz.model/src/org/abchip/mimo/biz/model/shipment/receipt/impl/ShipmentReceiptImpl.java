@@ -37,18 +37,18 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getReceiptId <em>Receipt Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getDatetimeReceived <em>Datetime Received</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getInventoryItemId <em>Inventory Item Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getInventoryItem <em>Inventory Item</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getItemDescription <em>Item Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getQuantityAccepted <em>Quantity Accepted</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getQuantityRejected <em>Quantity Rejected</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getReceivedByUserLoginId <em>Received By User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getRejectionId <em>Rejection Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getReceivedByUserLogin <em>Received By User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getRejection <em>Rejection</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getReturnId <em>Return Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getReturnItemSeqId <em>Return Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getShipmentId <em>Shipment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getShipment <em>Shipment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getShipmentItemSeqId <em>Shipment Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl#getShipmentPackageSeqId <em>Shipment Package Seq Id</em>}</li>
  * </ul>
@@ -192,8 +192,8 @@ public class ShipmentReceiptImpl extends EntityIdentifiableImpl implements Shipm
 	 * @generated
 	 */
 	@Override
-	public InventoryItem getInventoryItemId() {
-		return (InventoryItem)eGet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__INVENTORY_ITEM_ID, true);
+	public InventoryItem getInventoryItem() {
+		return (InventoryItem)eGet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__INVENTORY_ITEM, true);
 	}
 
 	/**
@@ -202,8 +202,8 @@ public class ShipmentReceiptImpl extends EntityIdentifiableImpl implements Shipm
 	 * @generated
 	 */
 	@Override
-	public void setInventoryItemId(InventoryItem newInventoryItemId) {
-		eSet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__INVENTORY_ITEM_ID, newInventoryItemId);
+	public void setInventoryItem(InventoryItem newInventoryItem) {
+		eSet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__INVENTORY_ITEM, newInventoryItem);
 	}
 
 	/**
@@ -232,8 +232,8 @@ public class ShipmentReceiptImpl extends EntityIdentifiableImpl implements Shipm
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__ORDER_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__ORDER, true);
 	}
 
 	/**
@@ -242,8 +242,8 @@ public class ShipmentReceiptImpl extends EntityIdentifiableImpl implements Shipm
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__ORDER_ID, newOrderId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__ORDER, newOrder);
 	}
 
 	/**
@@ -272,8 +272,8 @@ public class ShipmentReceiptImpl extends EntityIdentifiableImpl implements Shipm
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__PRODUCT_ID, true);
+	public Product getProduct() {
+		return (Product)eGet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__PRODUCT, true);
 	}
 
 	/**
@@ -282,8 +282,8 @@ public class ShipmentReceiptImpl extends EntityIdentifiableImpl implements Shipm
 	 * @generated
 	 */
 	@Override
-	public void setProductId(Product newProductId) {
-		eSet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__PRODUCT_ID, newProductId);
+	public void setProduct(Product newProduct) {
+		eSet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__PRODUCT, newProduct);
 	}
 
 	/**
@@ -332,6 +332,46 @@ public class ShipmentReceiptImpl extends EntityIdentifiableImpl implements Shipm
 	 * @generated
 	 */
 	@Override
+	public UserLogin getReceivedByUserLogin() {
+		return (UserLogin)eGet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__RECEIVED_BY_USER_LOGIN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setReceivedByUserLogin(UserLogin newReceivedByUserLogin) {
+		eSet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__RECEIVED_BY_USER_LOGIN, newReceivedByUserLogin);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RejectionReason getRejection() {
+		return (RejectionReason)eGet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__REJECTION, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRejection(RejectionReason newRejection) {
+		eSet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__REJECTION, newRejection);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getReceiptId() {
 		return (String)eGet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__RECEIPT_ID, true);
 	}
@@ -344,46 +384,6 @@ public class ShipmentReceiptImpl extends EntityIdentifiableImpl implements Shipm
 	@Override
 	public void setReceiptId(String newReceiptId) {
 		eSet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__RECEIPT_ID, newReceiptId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public UserLogin getReceivedByUserLoginId() {
-		return (UserLogin)eGet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__RECEIVED_BY_USER_LOGIN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setReceivedByUserLoginId(UserLogin newReceivedByUserLoginId) {
-		eSet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__RECEIVED_BY_USER_LOGIN_ID, newReceivedByUserLoginId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public RejectionReason getRejectionId() {
-		return (RejectionReason)eGet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__REJECTION_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRejectionId(RejectionReason newRejectionId) {
-		eSet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__REJECTION_ID, newRejectionId);
 	}
 
 	/**
@@ -432,8 +432,8 @@ public class ShipmentReceiptImpl extends EntityIdentifiableImpl implements Shipm
 	 * @generated
 	 */
 	@Override
-	public Shipment getShipmentId() {
-		return (Shipment)eGet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__SHIPMENT_ID, true);
+	public Shipment getShipment() {
+		return (Shipment)eGet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__SHIPMENT, true);
 	}
 
 	/**
@@ -442,8 +442,8 @@ public class ShipmentReceiptImpl extends EntityIdentifiableImpl implements Shipm
 	 * @generated
 	 */
 	@Override
-	public void setShipmentId(Shipment newShipmentId) {
-		eSet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__SHIPMENT_ID, newShipmentId);
+	public void setShipment(Shipment newShipment) {
+		eSet(ReceiptPackage.Literals.SHIPMENT_RECEIPT__SHIPMENT, newShipment);
 	}
 
 	/**

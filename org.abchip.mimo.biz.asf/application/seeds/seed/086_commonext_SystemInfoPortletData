@@ -3,30 +3,30 @@
   <contents xsi:type="biz-portal:PortletCategory" portletCategoryId="SYSTEMINFO" description="OFBiz System Information"/>
   <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="SystemInfoNotes" description="List of system notes for this specific party" editFormLocation="component://commonext/widget/SystemInfoForms.xml" editFormName="EditSysInfoPortletParams" portletName="System notes reporting an event" screenLocation="component://commonext/widget/SystemInfoScreens.xml" screenName="SystemInfoNotes" screenshot="/images/portlets/SystemInfoNotes.png"/>
   <contents xsi:type="biz-portal:PortletPortletCategory">
-    <portalPortletId href="PortalPortlet#SystemInfoNotes"/>
-    <portletCategoryId href="PortletCategory#SYSTEMINFO"/>
+    <portalPortlet href="PortalPortlet#SystemInfoNotes"/>
+    <portletCategory href="PortletCategory#SYSTEMINFO"/>
   </contents>
   <contents xsi:type="biz-data:DataResource" dataResourceId="HELP_SystemInfoNotes" dataResourceName="SystemInfoNotes help file" isPublic="true" localeString="en" objectInfo="applications/commonext/data/helpdata/HELP_SystemInfoNotes.xml">
-    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
-    <dataTemplateTypeId href="DataTemplateType#NONE"/>
-    <mimeTypeId href="MimeType#text/xml"/>
-    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <dataResourceType href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateType href="DataTemplateType#NONE"/>
+    <mimeType href="MimeType#text/xml"/>
+    <status href="StatusItem#CTNT_IN_PROGRESS"/>
   </contents>
   <contents xsi:type="biz-content:Content" contentId="HELP_SystemInfoNotes" contentName="Help SystemInfoNotes">
-    <contentTypeId href="ContentType#DOCUMENT"/>
-    <dataResourceId href="DataResource#HELP_SystemInfoNotes"/>
-    <mimeTypeId href="MimeType#text/html"/>
-    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
-    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+    <contentType href="ContentType#DOCUMENT"/>
+    <dataResource href="DataResource#HELP_SystemInfoNotes"/>
+    <mimeType href="MimeType#text/html"/>
+    <status href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResource href="DataResource#HELP_TEMPL"/>
   </contents>
   <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100">
-    <contentId href="Content#HELP_MYPORTAL"/>
+    <content href="Content#HELP_MYPORTAL"/>
     <contentIdTo href="Content#HELP_SystemInfoNotes"/>
-    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+    <contentAssocType href="ContentAssocType#TREE_CHILD"/>
   </contents>
   <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="SystemInfoStatus" description="List of system notes for this specific party" portletName="System status for this particular user" screenLocation="component://commonext/widget/SystemInfoScreens.xml" screenName="SystemInfoStatus" screenshot="/images/portlets/SystemInfoStatus.png"/>
   <contents xsi:type="biz-portal:PortletPortletCategory">
-    <portalPortletId href="PortalPortlet#SystemInfoStatus"/>
-    <portletCategoryId href="PortletCategory#SYSTEMINFO"/>
+    <portalPortlet href="PortalPortlet#SystemInfoStatus"/>
+    <portletCategory href="PortletCategory#SYSTEMINFO"/>
   </contents>
 </mimo-ent:EntityContainer>

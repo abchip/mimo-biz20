@@ -20,9 +20,9 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.WorkRequirementFulfillment#getRequirementId <em>Requirement Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.WorkRequirementFulfillment#getWorkEffortId <em>Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.WorkRequirementFulfillment#getWorkReqFulfTypeId <em>Work Req Fulf Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.WorkRequirementFulfillment#getRequirement <em>Requirement</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.WorkRequirementFulfillment#getWorkEffort <em>Work Effort</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.WorkRequirementFulfillment#getWorkReqFulfType <em>Work Req Fulf Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getWorkRequirementFulfillment()
@@ -31,83 +31,71 @@ import org.abchip.mimo.entity.EntityTyped;
  */
 public interface WorkRequirementFulfillment extends EntityTyped<WorkReqFulfType>, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Requirement Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Requirement</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Requirement Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Requirement Id</em>' reference.
-	 * @see #setRequirementId(Requirement)
-	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getWorkRequirementFulfillment_RequirementId()
+	 * @return the value of the '<em>Requirement</em>' reference.
+	 * @see #setRequirement(Requirement)
+	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getWorkRequirementFulfillment_Requirement()
 	 * @model keys="requirementId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Requirement getRequirementId();
+	Requirement getRequirement();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.WorkRequirementFulfillment#getRequirementId <em>Requirement Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.WorkRequirementFulfillment#getRequirement <em>Requirement</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Requirement Id</em>' reference.
-	 * @see #getRequirementId()
+	 * @param value the new value of the '<em>Requirement</em>' reference.
+	 * @see #getRequirement()
 	 * @generated
 	 */
-	void setRequirementId(Requirement value);
+	void setRequirement(Requirement value);
 
 	/**
-	 * Returns the value of the '<em><b>Work Effort Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Work Effort Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Work Effort Id</em>' reference.
-	 * @see #setWorkEffortId(WorkEffort)
-	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getWorkRequirementFulfillment_WorkEffortId()
+	 * @return the value of the '<em>Work Effort</em>' reference.
+	 * @see #setWorkEffort(WorkEffort)
+	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getWorkRequirementFulfillment_WorkEffort()
 	 * @model keys="workEffortId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	WorkEffort getWorkEffortId();
+	WorkEffort getWorkEffort();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.WorkRequirementFulfillment#getWorkEffortId <em>Work Effort Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.WorkRequirementFulfillment#getWorkEffort <em>Work Effort</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Work Effort Id</em>' reference.
-	 * @see #getWorkEffortId()
+	 * @param value the new value of the '<em>Work Effort</em>' reference.
+	 * @see #getWorkEffort()
 	 * @generated
 	 */
-	void setWorkEffortId(WorkEffort value);
+	void setWorkEffort(WorkEffort value);
 
 	/**
-	 * Returns the value of the '<em><b>Work Req Fulf Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Work Req Fulf Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Work Req Fulf Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Work Req Fulf Type Id</em>' reference.
-	 * @see #setWorkReqFulfTypeId(WorkReqFulfType)
-	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getWorkRequirementFulfillment_WorkReqFulfTypeId()
+	 * @return the value of the '<em>Work Req Fulf Type</em>' reference.
+	 * @see #setWorkReqFulfType(WorkReqFulfType)
+	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getWorkRequirementFulfillment_WorkReqFulfType()
 	 * @model keys="workReqFulfTypeId"
 	 * @generated
 	 */
-	WorkReqFulfType getWorkReqFulfTypeId();
+	WorkReqFulfType getWorkReqFulfType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.WorkRequirementFulfillment#getWorkReqFulfTypeId <em>Work Req Fulf Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.WorkRequirementFulfillment#getWorkReqFulfType <em>Work Req Fulf Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Work Req Fulf Type Id</em>' reference.
-	 * @see #getWorkReqFulfTypeId()
+	 * @param value the new value of the '<em>Work Req Fulf Type</em>' reference.
+	 * @see #getWorkReqFulfType()
 	 * @generated
 	 */
-	void setWorkReqFulfTypeId(WorkReqFulfType value);
+	void setWorkReqFulfType(WorkReqFulfType value);
 
 } // WorkRequirementFulfillment

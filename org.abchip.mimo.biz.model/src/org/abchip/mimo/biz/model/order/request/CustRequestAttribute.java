@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestAttribute#getCustRequestId <em>Cust Request Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestAttribute#getCustRequest <em>Cust Request</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestAttribute#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestAttribute#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestAttribute#getAttrValue <em>Attr Value</em>}</li>
@@ -30,6 +30,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface CustRequestAttribute extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Cust Request</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Cust Request</em>' reference.
+	 * @see #setCustRequest(CustRequest)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestAttribute_CustRequest()
+	 * @model keys="custRequestId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	CustRequest getCustRequest();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestAttribute#getCustRequest <em>Cust Request</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Cust Request</em>' reference.
+	 * @see #getCustRequest()
+	 * @generated
+	 */
+	void setCustRequest(CustRequest value);
+
 	/**
 	 * Returns the value of the '<em><b>Attr Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -109,32 +132,5 @@ public interface CustRequestAttribute extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setAttrValue(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Cust Request Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cust Request Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cust Request Id</em>' reference.
-	 * @see #setCustRequestId(CustRequest)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestAttribute_CustRequestId()
-	 * @model keys="custRequestId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	CustRequest getCustRequestId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestAttribute#getCustRequestId <em>Cust Request Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cust Request Id</em>' reference.
-	 * @see #getCustRequestId()
-	 * @generated
-	 */
-	void setCustRequestId(CustRequest value);
 
 } // CustRequestAttribute

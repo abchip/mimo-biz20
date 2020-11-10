@@ -37,7 +37,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeImpl#getEmplPositionTypeClasses <em>Empl Position Type Classes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeImpl#getEmplPositionTypeRates <em>Empl Position Type Rates</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeImpl#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeImpl#getValidResponsibilities <em>Valid Responsibilities</em>}</li>
  * </ul>
  *
@@ -229,6 +229,26 @@ public class EmplPositionTypeImpl extends EntityTypeImpl<EmplPosition> implement
 	 * @generated
 	 */
 	@Override
+	public EmplPositionType getParentType() {
+		return (EmplPositionType)eGet(PositionPackage.Literals.EMPL_POSITION_TYPE__PARENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParentType(EmplPositionType newParentType) {
+		eSet(PositionPackage.Literals.EMPL_POSITION_TYPE__PARENT_TYPE, newParentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEmplPositionTypeId() {
 		return (String)eGet(PositionPackage.Literals.EMPL_POSITION_TYPE__EMPL_POSITION_TYPE_ID, true);
 	}
@@ -241,26 +261,6 @@ public class EmplPositionTypeImpl extends EntityTypeImpl<EmplPosition> implement
 	@Override
 	public void setEmplPositionTypeId(String newEmplPositionTypeId) {
 		eSet(PositionPackage.Literals.EMPL_POSITION_TYPE__EMPL_POSITION_TYPE_ID, newEmplPositionTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EmplPositionType getParentTypeId() {
-		return (EmplPositionType)eGet(PositionPackage.Literals.EMPL_POSITION_TYPE__PARENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentTypeId(EmplPositionType newParentTypeId) {
-		eSet(PositionPackage.Literals.EMPL_POSITION_TYPE__PARENT_TYPE_ID, newParentTypeId);
 	}
 
 	/**

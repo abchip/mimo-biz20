@@ -21,9 +21,9 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentMetaData#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentMetaData#getMetaDataPredicateId <em>Meta Data Predicate Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentMetaData#getDataSourceId <em>Data Source Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentMetaData#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentMetaData#getMetaDataPredicate <em>Meta Data Predicate</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentMetaData#getDataSource <em>Data Source</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentMetaData#getMetaDataValue <em>Meta Data Value</em>}</li>
  * </ul>
  *
@@ -33,84 +33,72 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface ContentMetaData extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Content</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Id</em>' reference.
-	 * @see #setContentId(Content)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentMetaData_ContentId()
+	 * @return the value of the '<em>Content</em>' reference.
+	 * @see #setContent(Content)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentMetaData_Content()
 	 * @model keys="contentId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Content getContentId();
+	Content getContent();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentMetaData#getContentId <em>Content Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentMetaData#getContent <em>Content</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Id</em>' reference.
-	 * @see #getContentId()
+	 * @param value the new value of the '<em>Content</em>' reference.
+	 * @see #getContent()
 	 * @generated
 	 */
-	void setContentId(Content value);
+	void setContent(Content value);
 
 	/**
-	 * Returns the value of the '<em><b>Data Source Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Data Source Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Data Source Id</em>' reference.
-	 * @see #setDataSourceId(DataSource)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentMetaData_DataSourceId()
-	 * @model keys="dataSourceId"
-	 * @generated
-	 */
-	DataSource getDataSourceId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentMetaData#getDataSourceId <em>Data Source Id</em>}' reference.
+	 * Returns the value of the '<em><b>Meta Data Predicate</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Data Source Id</em>' reference.
-	 * @see #getDataSourceId()
-	 * @generated
-	 */
-	void setDataSourceId(DataSource value);
-
-	/**
-	 * Returns the value of the '<em><b>Meta Data Predicate Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Meta Data Predicate Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Meta Data Predicate Id</em>' reference.
-	 * @see #setMetaDataPredicateId(MetaDataPredicate)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentMetaData_MetaDataPredicateId()
+	 * @return the value of the '<em>Meta Data Predicate</em>' reference.
+	 * @see #setMetaDataPredicate(MetaDataPredicate)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentMetaData_MetaDataPredicate()
 	 * @model keys="metaDataPredicateId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	MetaDataPredicate getMetaDataPredicateId();
+	MetaDataPredicate getMetaDataPredicate();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentMetaData#getMetaDataPredicateId <em>Meta Data Predicate Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentMetaData#getMetaDataPredicate <em>Meta Data Predicate</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Meta Data Predicate Id</em>' reference.
-	 * @see #getMetaDataPredicateId()
+	 * @param value the new value of the '<em>Meta Data Predicate</em>' reference.
+	 * @see #getMetaDataPredicate()
 	 * @generated
 	 */
-	void setMetaDataPredicateId(MetaDataPredicate value);
+	void setMetaDataPredicate(MetaDataPredicate value);
+
+	/**
+	 * Returns the value of the '<em><b>Data Source</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Data Source</em>' reference.
+	 * @see #setDataSource(DataSource)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentMetaData_DataSource()
+	 * @model keys="dataSourceId"
+	 * @generated
+	 */
+	DataSource getDataSource();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentMetaData#getDataSource <em>Data Source</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Data Source</em>' reference.
+	 * @see #getDataSource()
+	 * @generated
+	 */
+	void setDataSource(DataSource value);
 
 	/**
 	 * Returns the value of the '<em><b>Meta Data Value</b></em>' attribute.

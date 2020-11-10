@@ -29,11 +29,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSitePathAliasImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSitePathAliasImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSitePathAliasImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSitePathAliasImpl#getWebSiteId <em>Web Site Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSitePathAliasImpl#getWebSite <em>Web Site</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSitePathAliasImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSitePathAliasImpl#getPathAlias <em>Path Alias</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSitePathAliasImpl#getAliasTo <em>Alias To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSitePathAliasImpl#getContentId <em>Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSitePathAliasImpl#getContent <em>Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSitePathAliasImpl#getMapKey <em>Map Key</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSitePathAliasImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -157,6 +157,26 @@ public class WebSitePathAliasImpl extends EntityIdentifiableImpl implements WebS
 	 * @generated
 	 */
 	@Override
+	public WebSite getWebSite() {
+		return (WebSite)eGet(WebsitePackage.Literals.WEB_SITE_PATH_ALIAS__WEB_SITE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWebSite(WebSite newWebSite) {
+		eSet(WebsitePackage.Literals.WEB_SITE_PATH_ALIAS__WEB_SITE, newWebSite);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAliasTo() {
 		return (String)eGet(WebsitePackage.Literals.WEB_SITE_PATH_ALIAS__ALIAS_TO, true);
 	}
@@ -177,8 +197,8 @@ public class WebSitePathAliasImpl extends EntityIdentifiableImpl implements WebS
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(WebsitePackage.Literals.WEB_SITE_PATH_ALIAS__CONTENT_ID, true);
+	public Content getContent() {
+		return (Content)eGet(WebsitePackage.Literals.WEB_SITE_PATH_ALIAS__CONTENT, true);
 	}
 
 	/**
@@ -187,8 +207,8 @@ public class WebSitePathAliasImpl extends EntityIdentifiableImpl implements WebS
 	 * @generated
 	 */
 	@Override
-	public void setContentId(Content newContentId) {
-		eSet(WebsitePackage.Literals.WEB_SITE_PATH_ALIAS__CONTENT_ID, newContentId);
+	public void setContent(Content newContent) {
+		eSet(WebsitePackage.Literals.WEB_SITE_PATH_ALIAS__CONTENT, newContent);
 	}
 
 	/**
@@ -307,26 +327,6 @@ public class WebSitePathAliasImpl extends EntityIdentifiableImpl implements WebS
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WebSite getWebSiteId() {
-		return (WebSite)eGet(WebsitePackage.Literals.WEB_SITE_PATH_ALIAS__WEB_SITE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWebSiteId(WebSite newWebSiteId) {
-		eSet(WebsitePackage.Literals.WEB_SITE_PATH_ALIAS__WEB_SITE_ID, newWebSiteId);
 	}
 
 } //WebSitePathAliasImpl

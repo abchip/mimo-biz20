@@ -23,7 +23,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentType#getShipmentTypeId <em>Shipment Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentType#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentType#getShipmentTypeAttrs <em>Shipment Type Attrs</em>}</li>
  * </ul>
  *
@@ -85,30 +85,26 @@ public interface ShipmentType extends EntityType<Shipment>, EntityInfo {
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(ShipmentType)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(ShipmentType)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentType_ParentType()
 	 * @model keys="shipmentTypeId"
 	 * @generated
 	 */
-	ShipmentType getParentTypeId();
+	ShipmentType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(ShipmentType value);
+	void setParentType(ShipmentType value);
 
 	/**
 	 * Returns the value of the '<em><b>Shipment Type Attrs</b></em>' reference list.

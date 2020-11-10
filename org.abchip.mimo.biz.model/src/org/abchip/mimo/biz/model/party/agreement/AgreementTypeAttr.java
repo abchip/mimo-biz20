@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTypeAttr#getAgreementTypeId <em>Agreement Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTypeAttr#getAgreementType <em>Agreement Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTypeAttr#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTypeAttr#getDescription <em>Description</em>}</li>
  * </ul>
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface AgreementTypeAttr extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Agreement Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Agreement Type</em>' reference.
+	 * @see #setAgreementType(AgreementType)
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementTypeAttr_AgreementType()
+	 * @model keys="agreementTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	AgreementType getAgreementType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTypeAttr#getAgreementType <em>Agreement Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Agreement Type</em>' reference.
+	 * @see #getAgreementType()
+	 * @generated
+	 */
+	void setAgreementType(AgreementType value);
+
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,32 +105,5 @@ public interface AgreementTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setAttrName(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Agreement Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Agreement Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Agreement Type Id</em>' reference.
-	 * @see #setAgreementTypeId(AgreementType)
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementTypeAttr_AgreementTypeId()
-	 * @model keys="agreementTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	AgreementType getAgreementTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTypeAttr#getAgreementTypeId <em>Agreement Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Agreement Type Id</em>' reference.
-	 * @see #getAgreementTypeId()
-	 * @generated
-	 */
-	void setAgreementTypeId(AgreementType value);
 
 } // AgreementTypeAttr

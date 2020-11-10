@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignRoleImpl#getMarketingCampaignId <em>Marketing Campaign Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignRoleImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignRoleImpl#getMarketingCampaign <em>Marketing Campaign</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignRoleImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignRoleImpl#getRoleType <em>Role Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignRoleImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignRoleImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -156,6 +156,66 @@ public class MarketingCampaignRoleImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
+	public MarketingCampaign getMarketingCampaign() {
+		return (MarketingCampaign)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN_ROLE__MARKETING_CAMPAIGN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMarketingCampaign(MarketingCampaign newMarketingCampaign) {
+		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN_ROLE__MARKETING_CAMPAIGN, newMarketingCampaign);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN_ROLE__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN_ROLE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RoleType getRoleType() {
+		return (RoleType)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN_ROLE__ROLE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRoleType(RoleType newRoleType) {
+		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN_ROLE__ROLE_TYPE, newRoleType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN_ROLE__FROM_DATE, true);
 	}
@@ -168,66 +228,6 @@ public class MarketingCampaignRoleImpl extends EntityIdentifiableImpl implements
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN_ROLE__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public MarketingCampaign getMarketingCampaignId() {
-		return (MarketingCampaign)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN_ROLE__MARKETING_CAMPAIGN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setMarketingCampaignId(MarketingCampaign newMarketingCampaignId) {
-		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN_ROLE__MARKETING_CAMPAIGN_ID, newMarketingCampaignId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN_ROLE__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN_ROLE__PARTY_ID, newPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN_ROLE__ROLE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN_ROLE__ROLE_TYPE_ID, newRoleTypeId);
 	}
 
 	/**

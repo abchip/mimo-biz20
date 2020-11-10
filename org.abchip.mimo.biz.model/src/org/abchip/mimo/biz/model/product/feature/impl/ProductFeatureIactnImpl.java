@@ -29,9 +29,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnImpl#getProductFeatureId <em>Product Feature Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnImpl#getProductFeature <em>Product Feature</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnImpl#getProductFeatureIdTo <em>Product Feature Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnImpl#getProductFeatureIactnTypeId <em>Product Feature Iactn Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnImpl#getProductFeatureIactnType <em>Product Feature Iactn Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnImpl#getProductId <em>Product Id</em>}</li>
  * </ul>
  *
@@ -154,6 +154,26 @@ public class ProductFeatureIactnImpl extends EntityTypedImpl<ProductFeatureIactn
 	 * @generated
 	 */
 	@Override
+	public ProductFeature getProductFeature() {
+		return (ProductFeature)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductFeature(ProductFeature newProductFeature) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE, newProductFeature);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getProductId() {
 		return (String)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_IACTN__PRODUCT_ID, true);
 	}
@@ -212,46 +232,6 @@ public class ProductFeatureIactnImpl extends EntityTypedImpl<ProductFeatureIactn
 	 * @generated
 	 */
 	@Override
-	public ProductFeatureIactnType getProductFeatureIactnTypeId() {
-		return (ProductFeatureIactnType)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE_IACTN_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductFeatureIactnTypeId(ProductFeatureIactnType newProductFeatureIactnTypeId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE_IACTN_TYPE_ID, newProductFeatureIactnTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductFeature getProductFeatureId() {
-		return (ProductFeature)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductFeatureId(ProductFeature newProductFeatureId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE_ID, newProductFeatureId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public ProductFeature getProductFeatureIdTo() {
 		return (ProductFeature)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE_ID_TO, true);
 	}
@@ -264,6 +244,26 @@ public class ProductFeatureIactnImpl extends EntityTypedImpl<ProductFeatureIactn
 	@Override
 	public void setProductFeatureIdTo(ProductFeature newProductFeatureIdTo) {
 		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE_ID_TO, newProductFeatureIdTo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductFeatureIactnType getProductFeatureIactnType() {
+		return (ProductFeatureIactnType)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE_IACTN_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductFeatureIactnType(ProductFeatureIactnType newProductFeatureIactnType) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE_IACTN_TYPE, newProductFeatureIactnType);
 	}
 
 } //ProductFeatureIactnImpl

@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GoogleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GoogleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GoogleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GoogleImpl#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GoogleImpl#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GoogleImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GoogleImpl#getClientId <em>Client Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GoogleImpl#getClientSecret <em>Client Secret</em>}</li>
@@ -157,8 +157,8 @@ public class OAuth2GoogleImpl extends EntityIdentifiableImpl implements OAuth2Go
 	 * @generated
 	 */
 	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(PassportPackage.Literals.OAUTH2_GOOGLE__PRODUCT_STORE_ID, true);
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(PassportPackage.Literals.OAUTH2_GOOGLE__PRODUCT_STORE, true);
 	}
 
 	/**
@@ -167,8 +167,8 @@ public class OAuth2GoogleImpl extends EntityIdentifiableImpl implements OAuth2Go
 	 * @generated
 	 */
 	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(PassportPackage.Literals.OAUTH2_GOOGLE__PRODUCT_STORE_ID, newProductStoreId);
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(PassportPackage.Literals.OAUTH2_GOOGLE__PRODUCT_STORE, newProductStore);
 	}
 
 	/**

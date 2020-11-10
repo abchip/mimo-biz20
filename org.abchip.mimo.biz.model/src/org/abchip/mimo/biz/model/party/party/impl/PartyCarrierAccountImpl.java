@@ -28,8 +28,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyCarrierAccountImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyCarrierAccountImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyCarrierAccountImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyCarrierAccountImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyCarrierAccountImpl#getCarrierPartyId <em>Carrier Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyCarrierAccountImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyCarrierAccountImpl#getCarrierParty <em>Carrier Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyCarrierAccountImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyCarrierAccountImpl#getAccountNumber <em>Account Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyCarrierAccountImpl#getThruDate <em>Thru Date</em>}</li>
@@ -153,6 +153,46 @@ public class PartyCarrierAccountImpl extends EntityIdentifiableImpl implements P
 	 * @generated
 	 */
 	@Override
+	public Party getParty() {
+		return (Party)eGet(PartyPackage.Literals.PARTY_CARRIER_ACCOUNT__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(PartyPackage.Literals.PARTY_CARRIER_ACCOUNT__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getCarrierParty() {
+		return (Party)eGet(PartyPackage.Literals.PARTY_CARRIER_ACCOUNT__CARRIER_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCarrierParty(Party newCarrierParty) {
+		eSet(PartyPackage.Literals.PARTY_CARRIER_ACCOUNT__CARRIER_PARTY, newCarrierParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAccountNumber() {
 		return (String)eGet(PartyPackage.Literals.PARTY_CARRIER_ACCOUNT__ACCOUNT_NUMBER, true);
 	}
@@ -243,46 +283,6 @@ public class PartyCarrierAccountImpl extends EntityIdentifiableImpl implements P
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(PartyPackage.Literals.PARTY_CARRIER_ACCOUNT__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(PartyPackage.Literals.PARTY_CARRIER_ACCOUNT__PARTY_ID, newPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getCarrierPartyId() {
-		return (Party)eGet(PartyPackage.Literals.PARTY_CARRIER_ACCOUNT__CARRIER_PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCarrierPartyId(Party newCarrierPartyId) {
-		eSet(PartyPackage.Literals.PARTY_CARRIER_ACCOUNT__CARRIER_PARTY_ID, newCarrierPartyId);
 	}
 
 } //PartyCarrierAccountImpl

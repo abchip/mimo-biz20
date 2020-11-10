@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginSecurityQuestionImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginSecurityQuestionImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginSecurityQuestionImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginSecurityQuestionImpl#getQuestionEnumId <em>Question Enum Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginSecurityQuestionImpl#getUserLoginId <em>User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginSecurityQuestionImpl#getQuestionEnum <em>Question Enum</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginSecurityQuestionImpl#getUserLogin <em>User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginSecurityQuestionImpl#getSecurityAnswer <em>Security Answer</em>}</li>
  * </ul>
  *
@@ -154,8 +154,8 @@ public class UserLoginSecurityQuestionImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public Enumeration getQuestionEnumId() {
-		return (Enumeration)eGet(LoginPackage.Literals.USER_LOGIN_SECURITY_QUESTION__QUESTION_ENUM_ID, true);
+	public Enumeration getQuestionEnum() {
+		return (Enumeration)eGet(LoginPackage.Literals.USER_LOGIN_SECURITY_QUESTION__QUESTION_ENUM, true);
 	}
 
 	/**
@@ -164,8 +164,28 @@ public class UserLoginSecurityQuestionImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setQuestionEnumId(Enumeration newQuestionEnumId) {
-		eSet(LoginPackage.Literals.USER_LOGIN_SECURITY_QUESTION__QUESTION_ENUM_ID, newQuestionEnumId);
+	public void setQuestionEnum(Enumeration newQuestionEnum) {
+		eSet(LoginPackage.Literals.USER_LOGIN_SECURITY_QUESTION__QUESTION_ENUM, newQuestionEnum);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UserLogin getUserLogin() {
+		return (UserLogin)eGet(LoginPackage.Literals.USER_LOGIN_SECURITY_QUESTION__USER_LOGIN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUserLogin(UserLogin newUserLogin) {
+		eSet(LoginPackage.Literals.USER_LOGIN_SECURITY_QUESTION__USER_LOGIN, newUserLogin);
 	}
 
 	/**
@@ -224,26 +244,6 @@ public class UserLoginSecurityQuestionImpl extends EntityIdentifiableImpl implem
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public UserLogin getUserLoginId() {
-		return (UserLogin)eGet(LoginPackage.Literals.USER_LOGIN_SECURITY_QUESTION__USER_LOGIN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setUserLoginId(UserLogin newUserLoginId) {
-		eSet(LoginPackage.Literals.USER_LOGIN_SECURITY_QUESTION__USER_LOGIN_ID, newUserLoginId);
 	}
 
 } //UserLoginSecurityQuestionImpl

@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementAttributeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementAttributeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementAttributeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementAttributeImpl#getRequirementId <em>Requirement Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementAttributeImpl#getRequirement <em>Requirement</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementAttributeImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementAttributeImpl#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementAttributeImpl#getAttrValue <em>Attr Value</em>}</li>
@@ -153,6 +153,26 @@ public class RequirementAttributeImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
+	public Requirement getRequirement() {
+		return (Requirement)eGet(RequirementPackage.Literals.REQUIREMENT_ATTRIBUTE__REQUIREMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRequirement(Requirement newRequirement) {
+		eSet(RequirementPackage.Literals.REQUIREMENT_ATTRIBUTE__REQUIREMENT, newRequirement);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrDescription() {
 		return (String)eGet(RequirementPackage.Literals.REQUIREMENT_ATTRIBUTE__ATTR_DESCRIPTION, true);
 	}
@@ -243,26 +263,6 @@ public class RequirementAttributeImpl extends EntityIdentifiableImpl implements 
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Requirement getRequirementId() {
-		return (Requirement)eGet(RequirementPackage.Literals.REQUIREMENT_ATTRIBUTE__REQUIREMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRequirementId(Requirement newRequirementId) {
-		eSet(RequirementPackage.Literals.REQUIREMENT_ATTRIBUTE__REQUIREMENT_ID, newRequirementId);
 	}
 
 } //RequirementAttributeImpl

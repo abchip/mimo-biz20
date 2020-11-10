@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyContentTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyContentTypeImpl#getPartyContentTypeId <em>Party Content Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyContentTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyContentTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyContentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -178,8 +178,8 @@ public class PartyContentTypeImpl extends EntityTypeImpl<PartyContent> implement
 	 * @generated
 	 */
 	@Override
-	public PartyContentType getParentTypeId() {
-		return (PartyContentType)eGet(PartyPackage.Literals.PARTY_CONTENT_TYPE__PARENT_TYPE_ID, true);
+	public PartyContentType getParentType() {
+		return (PartyContentType)eGet(PartyPackage.Literals.PARTY_CONTENT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -188,8 +188,8 @@ public class PartyContentTypeImpl extends EntityTypeImpl<PartyContent> implement
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(PartyContentType newParentTypeId) {
-		eSet(PartyPackage.Literals.PARTY_CONTENT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(PartyContentType newParentType) {
+		eSet(PartyPackage.Literals.PARTY_CONTENT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

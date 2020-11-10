@@ -23,25 +23,25 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getSubscriptionResourceId <em>Subscription Resource Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getSubscriptionResource <em>Subscription Resource</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#isAutomaticExtend <em>Automatic Extend</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getAvailableTime <em>Available Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getAvailableTimeUomId <em>Available Time Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getAvailableTimeUom <em>Available Time Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getCanclAutmExtTime <em>Cancl Autm Ext Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getCanclAutmExtTimeUomId <em>Cancl Autm Ext Time Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getCanclAutmExtTimeUom <em>Cancl Autm Ext Time Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getGracePeriodOnExpiry <em>Grace Period On Expiry</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getGracePeriodOnExpiryUomId <em>Grace Period On Expiry Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getGracePeriodOnExpiryUom <em>Grace Period On Expiry Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getMaxLifeTime <em>Max Life Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getMaxLifeTimeUomId <em>Max Life Time Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getMaxLifeTimeUom <em>Max Life Time Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getPurchaseFromDate <em>Purchase From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getPurchaseThruDate <em>Purchase Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getUseCountLimit <em>Use Count Limit</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getUseRoleTypeId <em>Use Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getUseRoleType <em>Use Role Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getUseTime <em>Use Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getUseTimeUomId <em>Use Time Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getUseTimeUom <em>Use Time Uom</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource()
@@ -49,6 +49,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductSubscriptionResource extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_Product()
+	 * @model keys="productId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
+
+	/**
+	 * Returns the value of the '<em><b>Subscription Resource</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Subscription Resource</em>' reference.
+	 * @see #setSubscriptionResource(SubscriptionResource)
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_SubscriptionResource()
+	 * @model keys="subscriptionResourceId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	SubscriptionResource getSubscriptionResource();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getSubscriptionResource <em>Subscription Resource</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Subscription Resource</em>' reference.
+	 * @see #getSubscriptionResource()
+	 * @generated
+	 */
+	void setSubscriptionResource(SubscriptionResource value);
+
 	/**
 	 * Returns the value of the '<em><b>Available Time</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -76,30 +122,26 @@ public interface ProductSubscriptionResource extends EntityIdentifiable, EntityI
 	void setAvailableTime(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Available Time Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Available Time Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Available Time Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Available Time Uom Id</em>' reference.
-	 * @see #setAvailableTimeUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_AvailableTimeUomId()
+	 * @return the value of the '<em>Available Time Uom</em>' reference.
+	 * @see #setAvailableTimeUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_AvailableTimeUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getAvailableTimeUomId();
+	Uom getAvailableTimeUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getAvailableTimeUomId <em>Available Time Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getAvailableTimeUom <em>Available Time Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Available Time Uom Id</em>' reference.
-	 * @see #getAvailableTimeUomId()
+	 * @param value the new value of the '<em>Available Time Uom</em>' reference.
+	 * @see #getAvailableTimeUom()
 	 * @generated
 	 */
-	void setAvailableTimeUomId(Uom value);
+	void setAvailableTimeUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Cancl Autm Ext Time</b></em>' attribute.
@@ -129,31 +171,27 @@ public interface ProductSubscriptionResource extends EntityIdentifiable, EntityI
 	void setCanclAutmExtTime(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Cancl Autm Ext Time Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Cancl Autm Ext Time Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cancl Autm Ext Time Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cancl Autm Ext Time Uom Id</em>' reference.
-	 * @see #setCanclAutmExtTimeUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_CanclAutmExtTimeUomId()
+	 * @return the value of the '<em>Cancl Autm Ext Time Uom</em>' reference.
+	 * @see #setCanclAutmExtTimeUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_CanclAutmExtTimeUom()
 	 * @model keys="uomId"
 	 *        annotation="mimo-ent-slot help='Unit Of Measure used for the automatic extension of the subscription.'"
 	 * @generated
 	 */
-	Uom getCanclAutmExtTimeUomId();
+	Uom getCanclAutmExtTimeUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getCanclAutmExtTimeUomId <em>Cancl Autm Ext Time Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getCanclAutmExtTimeUom <em>Cancl Autm Ext Time Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cancl Autm Ext Time Uom Id</em>' reference.
-	 * @see #getCanclAutmExtTimeUomId()
+	 * @param value the new value of the '<em>Cancl Autm Ext Time Uom</em>' reference.
+	 * @see #getCanclAutmExtTimeUom()
 	 * @generated
 	 */
-	void setCanclAutmExtTimeUomId(Uom value);
+	void setCanclAutmExtTimeUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -237,31 +275,27 @@ public interface ProductSubscriptionResource extends EntityIdentifiable, EntityI
 	void setGracePeriodOnExpiry(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Grace Period On Expiry Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Grace Period On Expiry Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Grace Period On Expiry Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Grace Period On Expiry Uom Id</em>' reference.
-	 * @see #setGracePeriodOnExpiryUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_GracePeriodOnExpiryUomId()
+	 * @return the value of the '<em>Grace Period On Expiry Uom</em>' reference.
+	 * @see #setGracePeriodOnExpiryUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_GracePeriodOnExpiryUom()
 	 * @model keys="uomId"
 	 *        annotation="mimo-ent-slot help='Unit Of Measure used for the grace period of the subscription.'"
 	 * @generated
 	 */
-	Uom getGracePeriodOnExpiryUomId();
+	Uom getGracePeriodOnExpiryUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getGracePeriodOnExpiryUomId <em>Grace Period On Expiry Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getGracePeriodOnExpiryUom <em>Grace Period On Expiry Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Grace Period On Expiry Uom Id</em>' reference.
-	 * @see #getGracePeriodOnExpiryUomId()
+	 * @param value the new value of the '<em>Grace Period On Expiry Uom</em>' reference.
+	 * @see #getGracePeriodOnExpiryUom()
 	 * @generated
 	 */
-	void setGracePeriodOnExpiryUomId(Uom value);
+	void setGracePeriodOnExpiryUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Max Life Time</b></em>' attribute.
@@ -291,30 +325,26 @@ public interface ProductSubscriptionResource extends EntityIdentifiable, EntityI
 	void setMaxLifeTime(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Max Life Time Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Max Life Time Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Max Life Time Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Max Life Time Uom Id</em>' reference.
-	 * @see #setMaxLifeTimeUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_MaxLifeTimeUomId()
+	 * @return the value of the '<em>Max Life Time Uom</em>' reference.
+	 * @see #setMaxLifeTimeUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_MaxLifeTimeUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getMaxLifeTimeUomId();
+	Uom getMaxLifeTimeUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getMaxLifeTimeUomId <em>Max Life Time Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getMaxLifeTimeUom <em>Max Life Time Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Max Life Time Uom Id</em>' reference.
-	 * @see #getMaxLifeTimeUomId()
+	 * @param value the new value of the '<em>Max Life Time Uom</em>' reference.
+	 * @see #getMaxLifeTimeUom()
 	 * @generated
 	 */
-	void setMaxLifeTimeUomId(Uom value);
+	void setMaxLifeTimeUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Purchase From Date</b></em>' attribute.
@@ -421,30 +451,26 @@ public interface ProductSubscriptionResource extends EntityIdentifiable, EntityI
 	void setUseCountLimit(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Use Role Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Use Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Use Role Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Use Role Type Id</em>' reference.
-	 * @see #setUseRoleTypeId(RoleType)
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_UseRoleTypeId()
+	 * @return the value of the '<em>Use Role Type</em>' reference.
+	 * @see #setUseRoleType(RoleType)
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_UseRoleType()
 	 * @model keys="roleTypeId"
 	 * @generated
 	 */
-	RoleType getUseRoleTypeId();
+	RoleType getUseRoleType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getUseRoleTypeId <em>Use Role Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getUseRoleType <em>Use Role Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Use Role Type Id</em>' reference.
-	 * @see #getUseRoleTypeId()
+	 * @param value the new value of the '<em>Use Role Type</em>' reference.
+	 * @see #getUseRoleType()
 	 * @generated
 	 */
-	void setUseRoleTypeId(RoleType value);
+	void setUseRoleType(RoleType value);
 
 	/**
 	 * Returns the value of the '<em><b>Use Time</b></em>' attribute.
@@ -474,83 +500,25 @@ public interface ProductSubscriptionResource extends EntityIdentifiable, EntityI
 	void setUseTime(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Use Time Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Use Time Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Use Time Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Use Time Uom Id</em>' reference.
-	 * @see #setUseTimeUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_UseTimeUomId()
+	 * @return the value of the '<em>Use Time Uom</em>' reference.
+	 * @see #setUseTimeUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_UseTimeUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getUseTimeUomId();
+	Uom getUseTimeUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getUseTimeUomId <em>Use Time Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getUseTimeUom <em>Use Time Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Use Time Uom Id</em>' reference.
-	 * @see #getUseTimeUomId()
+	 * @param value the new value of the '<em>Use Time Uom</em>' reference.
+	 * @see #getUseTimeUom()
 	 * @generated
 	 */
-	void setUseTimeUomId(Uom value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_ProductId()
-	 * @model keys="productId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Product getProductId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getProductId <em>Product Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
-	 * @generated
-	 */
-	void setProductId(Product value);
-
-	/**
-	 * Returns the value of the '<em><b>Subscription Resource Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Subscription Resource Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Subscription Resource Id</em>' reference.
-	 * @see #setSubscriptionResourceId(SubscriptionResource)
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_SubscriptionResourceId()
-	 * @model keys="subscriptionResourceId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	SubscriptionResource getSubscriptionResourceId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getSubscriptionResourceId <em>Subscription Resource Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Subscription Resource Id</em>' reference.
-	 * @see #getSubscriptionResourceId()
-	 * @generated
-	 */
-	void setSubscriptionResourceId(SubscriptionResource value);
+	void setUseTimeUom(Uom value);
 
 } // ProductSubscriptionResource

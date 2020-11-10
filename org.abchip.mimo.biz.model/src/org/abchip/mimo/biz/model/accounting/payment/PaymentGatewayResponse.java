@@ -28,24 +28,24 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getPaymentGatewayResponseId <em>Payment Gateway Response Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getAltReference <em>Alt Reference</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getAmount <em>Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getGatewayAvsResult <em>Gateway Avs Result</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getGatewayCode <em>Gateway Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getGatewayCvResult <em>Gateway Cv Result</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getGatewayFlag <em>Gateway Flag</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getGatewayMessage <em>Gateway Message</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getGatewayScoreResult <em>Gateway Score Result</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getOrderPaymentPreferenceId <em>Order Payment Preference Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getPaymentMethodId <em>Payment Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getPaymentMethodTypeId <em>Payment Method Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getPaymentServiceTypeEnumId <em>Payment Service Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getOrderPaymentPreference <em>Order Payment Preference</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getPaymentMethod <em>Payment Method</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getPaymentMethodType <em>Payment Method Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getPaymentServiceTypeEnum <em>Payment Service Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getReferenceNum <em>Reference Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultBadCardNumber <em>Result Bad Card Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultBadExpire <em>Result Bad Expire</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultDeclined <em>Result Declined</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultNsf <em>Result Nsf</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getSubReference <em>Sub Reference</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getTransCodeEnumId <em>Trans Code Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getTransCodeEnum <em>Trans Code Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getTransactionDate <em>Transaction Date</em>}</li>
  * </ul>
  *
@@ -107,30 +107,26 @@ public interface PaymentGatewayResponse extends EntityTyped<PaymentMethodType>, 
 	void setAmount(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Currency Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Currency Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Currency Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Currency Uom Id</em>' reference.
-	 * @see #setCurrencyUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_CurrencyUomId()
+	 * @return the value of the '<em>Currency Uom</em>' reference.
+	 * @see #setCurrencyUom(Uom)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_CurrencyUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getCurrencyUomId();
+	Uom getCurrencyUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getCurrencyUomId <em>Currency Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getCurrencyUom <em>Currency Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Currency Uom Id</em>' reference.
-	 * @see #getCurrencyUomId()
+	 * @param value the new value of the '<em>Currency Uom</em>' reference.
+	 * @see #getCurrencyUom()
 	 * @generated
 	 */
-	void setCurrencyUomId(Uom value);
+	void setCurrencyUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Gateway Avs Result</b></em>' attribute.
@@ -289,56 +285,92 @@ public interface PaymentGatewayResponse extends EntityTyped<PaymentMethodType>, 
 	void setGatewayScoreResult(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Order Payment Preference Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Order Payment Preference</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Payment Preference Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Payment Preference Id</em>' reference.
-	 * @see #setOrderPaymentPreferenceId(OrderPaymentPreference)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_OrderPaymentPreferenceId()
+	 * @return the value of the '<em>Order Payment Preference</em>' reference.
+	 * @see #setOrderPaymentPreference(OrderPaymentPreference)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_OrderPaymentPreference()
 	 * @model keys="orderPaymentPreferenceId"
 	 * @generated
 	 */
-	OrderPaymentPreference getOrderPaymentPreferenceId();
+	OrderPaymentPreference getOrderPaymentPreference();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getOrderPaymentPreferenceId <em>Order Payment Preference Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getOrderPaymentPreference <em>Order Payment Preference</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Payment Preference Id</em>' reference.
-	 * @see #getOrderPaymentPreferenceId()
+	 * @param value the new value of the '<em>Order Payment Preference</em>' reference.
+	 * @see #getOrderPaymentPreference()
 	 * @generated
 	 */
-	void setOrderPaymentPreferenceId(OrderPaymentPreference value);
+	void setOrderPaymentPreference(OrderPaymentPreference value);
 
 	/**
-	 * Returns the value of the '<em><b>Payment Service Type Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Payment Method</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Service Type Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Payment Service Type Enum Id</em>' reference.
-	 * @see #setPaymentServiceTypeEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_PaymentServiceTypeEnumId()
+	 * @return the value of the '<em>Payment Method</em>' reference.
+	 * @see #setPaymentMethod(PaymentMethod)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_PaymentMethod()
+	 * @model keys="paymentMethodId"
+	 * @generated
+	 */
+	PaymentMethod getPaymentMethod();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getPaymentMethod <em>Payment Method</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Payment Method</em>' reference.
+	 * @see #getPaymentMethod()
+	 * @generated
+	 */
+	void setPaymentMethod(PaymentMethod value);
+
+	/**
+	 * Returns the value of the '<em><b>Payment Method Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Payment Method Type</em>' reference.
+	 * @see #setPaymentMethodType(PaymentMethodType)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_PaymentMethodType()
+	 * @model keys="paymentMethodTypeId"
+	 * @generated
+	 */
+	PaymentMethodType getPaymentMethodType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getPaymentMethodType <em>Payment Method Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Payment Method Type</em>' reference.
+	 * @see #getPaymentMethodType()
+	 * @generated
+	 */
+	void setPaymentMethodType(PaymentMethodType value);
+
+	/**
+	 * Returns the value of the '<em><b>Payment Service Type Enum</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Payment Service Type Enum</em>' reference.
+	 * @see #setPaymentServiceTypeEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_PaymentServiceTypeEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getPaymentServiceTypeEnumId();
+	Enumeration getPaymentServiceTypeEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getPaymentServiceTypeEnumId <em>Payment Service Type Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getPaymentServiceTypeEnum <em>Payment Service Type Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Payment Service Type Enum Id</em>' reference.
-	 * @see #getPaymentServiceTypeEnumId()
+	 * @param value the new value of the '<em>Payment Service Type Enum</em>' reference.
+	 * @see #getPaymentServiceTypeEnum()
 	 * @generated
 	 */
-	void setPaymentServiceTypeEnumId(Enumeration value);
+	void setPaymentServiceTypeEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Reference Num</b></em>' attribute.
@@ -481,30 +513,26 @@ public interface PaymentGatewayResponse extends EntityTyped<PaymentMethodType>, 
 	void setSubReference(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Trans Code Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Trans Code Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Trans Code Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Trans Code Enum Id</em>' reference.
-	 * @see #setTransCodeEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_TransCodeEnumId()
+	 * @return the value of the '<em>Trans Code Enum</em>' reference.
+	 * @see #setTransCodeEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_TransCodeEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getTransCodeEnumId();
+	Enumeration getTransCodeEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getTransCodeEnumId <em>Trans Code Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getTransCodeEnum <em>Trans Code Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Trans Code Enum Id</em>' reference.
-	 * @see #getTransCodeEnumId()
+	 * @param value the new value of the '<em>Trans Code Enum</em>' reference.
+	 * @see #getTransCodeEnum()
 	 * @generated
 	 */
-	void setTransCodeEnumId(Enumeration value);
+	void setTransCodeEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Transaction Date</b></em>' attribute.
@@ -531,58 +559,6 @@ public interface PaymentGatewayResponse extends EntityTyped<PaymentMethodType>, 
 	 * @generated
 	 */
 	void setTransactionDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Payment Method Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Method Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Payment Method Type Id</em>' reference.
-	 * @see #setPaymentMethodTypeId(PaymentMethodType)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_PaymentMethodTypeId()
-	 * @model keys="paymentMethodTypeId"
-	 * @generated
-	 */
-	PaymentMethodType getPaymentMethodTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getPaymentMethodTypeId <em>Payment Method Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Payment Method Type Id</em>' reference.
-	 * @see #getPaymentMethodTypeId()
-	 * @generated
-	 */
-	void setPaymentMethodTypeId(PaymentMethodType value);
-
-	/**
-	 * Returns the value of the '<em><b>Payment Method Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Method Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Payment Method Id</em>' reference.
-	 * @see #setPaymentMethodId(PaymentMethod)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_PaymentMethodId()
-	 * @model keys="paymentMethodId"
-	 * @generated
-	 */
-	PaymentMethod getPaymentMethodId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getPaymentMethodId <em>Payment Method Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Payment Method Id</em>' reference.
-	 * @see #getPaymentMethodId()
-	 * @generated
-	 */
-	void setPaymentMethodId(PaymentMethod value);
 
 	/**
 	 * Returns the value of the '<em><b>Payment Gateway Response Id</b></em>' attribute.

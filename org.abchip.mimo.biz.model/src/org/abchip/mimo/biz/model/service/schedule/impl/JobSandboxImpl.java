@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getJobId <em>Job Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getAuthUserLoginId <em>Auth User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getAuthUserLogin <em>Auth User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getCancelDateTime <em>Cancel Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getCurrentRecurrenceCount <em>Current Recurrence Count</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getCurrentRetryCount <em>Current Retry Count</em>}</li>
@@ -46,15 +46,15 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getParentJobId <em>Parent Job Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getPoolId <em>Pool Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getPreviousJobId <em>Previous Job Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getRecurrenceInfoId <em>Recurrence Info Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getRecurrenceInfo <em>Recurrence Info</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getRunAsUser <em>Run As User</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getRunByInstanceId <em>Run By Instance Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getRunTime <em>Run Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getRuntimeDataId <em>Runtime Data Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getRuntimeData <em>Runtime Data</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getServiceName <em>Service Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getStartDateTime <em>Start Date Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getTempExprId <em>Temp Expr Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.JobSandboxImpl#getTempExpr <em>Temp Expr</em>}</li>
  * </ul>
  *
  * @generated
@@ -196,8 +196,8 @@ public class JobSandboxImpl extends EntityIdentifiableImpl implements JobSandbox
 	 * @generated
 	 */
 	@Override
-	public UserLogin getAuthUserLoginId() {
-		return (UserLogin)eGet(SchedulePackage.Literals.JOB_SANDBOX__AUTH_USER_LOGIN_ID, true);
+	public UserLogin getAuthUserLogin() {
+		return (UserLogin)eGet(SchedulePackage.Literals.JOB_SANDBOX__AUTH_USER_LOGIN, true);
 	}
 
 	/**
@@ -206,8 +206,8 @@ public class JobSandboxImpl extends EntityIdentifiableImpl implements JobSandbox
 	 * @generated
 	 */
 	@Override
-	public void setAuthUserLoginId(UserLogin newAuthUserLoginId) {
-		eSet(SchedulePackage.Literals.JOB_SANDBOX__AUTH_USER_LOGIN_ID, newAuthUserLoginId);
+	public void setAuthUserLogin(UserLogin newAuthUserLogin) {
+		eSet(SchedulePackage.Literals.JOB_SANDBOX__AUTH_USER_LOGIN, newAuthUserLogin);
 	}
 
 	/**
@@ -456,8 +456,8 @@ public class JobSandboxImpl extends EntityIdentifiableImpl implements JobSandbox
 	 * @generated
 	 */
 	@Override
-	public RecurrenceInfo getRecurrenceInfoId() {
-		return (RecurrenceInfo)eGet(SchedulePackage.Literals.JOB_SANDBOX__RECURRENCE_INFO_ID, true);
+	public RecurrenceInfo getRecurrenceInfo() {
+		return (RecurrenceInfo)eGet(SchedulePackage.Literals.JOB_SANDBOX__RECURRENCE_INFO, true);
 	}
 
 	/**
@@ -466,8 +466,8 @@ public class JobSandboxImpl extends EntityIdentifiableImpl implements JobSandbox
 	 * @generated
 	 */
 	@Override
-	public void setRecurrenceInfoId(RecurrenceInfo newRecurrenceInfoId) {
-		eSet(SchedulePackage.Literals.JOB_SANDBOX__RECURRENCE_INFO_ID, newRecurrenceInfoId);
+	public void setRecurrenceInfo(RecurrenceInfo newRecurrenceInfo) {
+		eSet(SchedulePackage.Literals.JOB_SANDBOX__RECURRENCE_INFO, newRecurrenceInfo);
 	}
 
 	/**
@@ -536,8 +536,8 @@ public class JobSandboxImpl extends EntityIdentifiableImpl implements JobSandbox
 	 * @generated
 	 */
 	@Override
-	public RuntimeData getRuntimeDataId() {
-		return (RuntimeData)eGet(SchedulePackage.Literals.JOB_SANDBOX__RUNTIME_DATA_ID, true);
+	public RuntimeData getRuntimeData() {
+		return (RuntimeData)eGet(SchedulePackage.Literals.JOB_SANDBOX__RUNTIME_DATA, true);
 	}
 
 	/**
@@ -546,8 +546,8 @@ public class JobSandboxImpl extends EntityIdentifiableImpl implements JobSandbox
 	 * @generated
 	 */
 	@Override
-	public void setRuntimeDataId(RuntimeData newRuntimeDataId) {
-		eSet(SchedulePackage.Literals.JOB_SANDBOX__RUNTIME_DATA_ID, newRuntimeDataId);
+	public void setRuntimeData(RuntimeData newRuntimeData) {
+		eSet(SchedulePackage.Literals.JOB_SANDBOX__RUNTIME_DATA, newRuntimeData);
 	}
 
 	/**
@@ -596,8 +596,8 @@ public class JobSandboxImpl extends EntityIdentifiableImpl implements JobSandbox
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(SchedulePackage.Literals.JOB_SANDBOX__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(SchedulePackage.Literals.JOB_SANDBOX__STATUS, true);
 	}
 
 	/**
@@ -606,8 +606,8 @@ public class JobSandboxImpl extends EntityIdentifiableImpl implements JobSandbox
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(SchedulePackage.Literals.JOB_SANDBOX__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(SchedulePackage.Literals.JOB_SANDBOX__STATUS, newStatus);
 	}
 
 	/**
@@ -616,8 +616,8 @@ public class JobSandboxImpl extends EntityIdentifiableImpl implements JobSandbox
 	 * @generated
 	 */
 	@Override
-	public TemporalExpression getTempExprId() {
-		return (TemporalExpression)eGet(SchedulePackage.Literals.JOB_SANDBOX__TEMP_EXPR_ID, true);
+	public TemporalExpression getTempExpr() {
+		return (TemporalExpression)eGet(SchedulePackage.Literals.JOB_SANDBOX__TEMP_EXPR, true);
 	}
 
 	/**
@@ -626,8 +626,8 @@ public class JobSandboxImpl extends EntityIdentifiableImpl implements JobSandbox
 	 * @generated
 	 */
 	@Override
-	public void setTempExprId(TemporalExpression newTempExprId) {
-		eSet(SchedulePackage.Literals.JOB_SANDBOX__TEMP_EXPR_ID, newTempExprId);
+	public void setTempExpr(TemporalExpression newTempExpr) {
+		eSet(SchedulePackage.Literals.JOB_SANDBOX__TEMP_EXPR, newTempExpr);
 	}
 
 	/**

@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPaymentMethodTypeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPaymentMethodTypeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPaymentMethodTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPaymentMethodTypeImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPaymentMethodTypeImpl#getPaymentMethodTypeId <em>Payment Method Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPaymentMethodTypeImpl#getProductPricePurposeId <em>Product Price Purpose Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPaymentMethodTypeImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPaymentMethodTypeImpl#getPaymentMethodType <em>Payment Method Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPaymentMethodTypeImpl#getProductPricePurpose <em>Product Price Purpose</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPaymentMethodTypeImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPaymentMethodTypeImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPaymentMethodTypeImpl#getThruDate <em>Thru Date</em>}</li>
@@ -164,6 +164,66 @@ public class ProductPaymentMethodTypeImpl extends EntityTypeImpl<ProductPricePur
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(PricePackage.Literals.PRODUCT_PAYMENT_METHOD_TYPE__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(PricePackage.Literals.PRODUCT_PAYMENT_METHOD_TYPE__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PaymentMethodType getPaymentMethodType() {
+		return (PaymentMethodType)eGet(PricePackage.Literals.PRODUCT_PAYMENT_METHOD_TYPE__PAYMENT_METHOD_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPaymentMethodType(PaymentMethodType newPaymentMethodType) {
+		eSet(PricePackage.Literals.PRODUCT_PAYMENT_METHOD_TYPE__PAYMENT_METHOD_TYPE, newPaymentMethodType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductPricePurpose getProductPricePurpose() {
+		return (ProductPricePurpose)eGet(PricePackage.Literals.PRODUCT_PAYMENT_METHOD_TYPE__PRODUCT_PRICE_PURPOSE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPricePurpose(ProductPricePurpose newProductPricePurpose) {
+		eSet(PricePackage.Literals.PRODUCT_PAYMENT_METHOD_TYPE__PRODUCT_PRICE_PURPOSE, newProductPricePurpose);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(PricePackage.Literals.PRODUCT_PAYMENT_METHOD_TYPE__FROM_DATE, true);
 	}
@@ -176,46 +236,6 @@ public class ProductPaymentMethodTypeImpl extends EntityTypeImpl<ProductPricePur
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(PricePackage.Literals.PRODUCT_PAYMENT_METHOD_TYPE__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PaymentMethodType getPaymentMethodTypeId() {
-		return (PaymentMethodType)eGet(PricePackage.Literals.PRODUCT_PAYMENT_METHOD_TYPE__PAYMENT_METHOD_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaymentMethodTypeId(PaymentMethodType newPaymentMethodTypeId) {
-		eSet(PricePackage.Literals.PRODUCT_PAYMENT_METHOD_TYPE__PAYMENT_METHOD_TYPE_ID, newPaymentMethodTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(PricePackage.Literals.PRODUCT_PAYMENT_METHOD_TYPE__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(PricePackage.Literals.PRODUCT_PAYMENT_METHOD_TYPE__PRODUCT_ID, newProductId);
 	}
 
 	/**
@@ -294,26 +314,6 @@ public class ProductPaymentMethodTypeImpl extends EntityTypeImpl<ProductPricePur
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductPricePurpose getProductPricePurposeId() {
-		return (ProductPricePurpose)eGet(PricePackage.Literals.PRODUCT_PAYMENT_METHOD_TYPE__PRODUCT_PRICE_PURPOSE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPricePurposeId(ProductPricePurpose newProductPricePurposeId) {
-		eSet(PricePackage.Literals.PRODUCT_PAYMENT_METHOD_TYPE__PRODUCT_PRICE_PURPOSE_ID, newProductPricePurposeId);
 	}
 
 } //ProductPaymentMethodTypeImpl

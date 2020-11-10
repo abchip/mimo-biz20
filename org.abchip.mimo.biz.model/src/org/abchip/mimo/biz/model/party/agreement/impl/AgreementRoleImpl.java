@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementRoleImpl#getAgreementId <em>Agreement Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementRoleImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementRoleImpl#getAgreement <em>Agreement</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementRoleImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementRoleImpl#getRoleType <em>Role Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -153,8 +153,8 @@ public class AgreementRoleImpl extends EntityIdentifiableImpl implements Agreeme
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(AgreementPackage.Literals.AGREEMENT_ROLE__PARTY_ID, true);
+	public Agreement getAgreement() {
+		return (Agreement)eGet(AgreementPackage.Literals.AGREEMENT_ROLE__AGREEMENT, true);
 	}
 
 	/**
@@ -163,8 +163,8 @@ public class AgreementRoleImpl extends EntityIdentifiableImpl implements Agreeme
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(AgreementPackage.Literals.AGREEMENT_ROLE__PARTY_ID, newPartyId);
+	public void setAgreement(Agreement newAgreement) {
+		eSet(AgreementPackage.Literals.AGREEMENT_ROLE__AGREEMENT, newAgreement);
 	}
 
 	/**
@@ -173,8 +173,8 @@ public class AgreementRoleImpl extends EntityIdentifiableImpl implements Agreeme
 	 * @generated
 	 */
 	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(AgreementPackage.Literals.AGREEMENT_ROLE__ROLE_TYPE_ID, true);
+	public Party getParty() {
+		return (Party)eGet(AgreementPackage.Literals.AGREEMENT_ROLE__PARTY, true);
 	}
 
 	/**
@@ -183,8 +183,28 @@ public class AgreementRoleImpl extends EntityIdentifiableImpl implements Agreeme
 	 * @generated
 	 */
 	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(AgreementPackage.Literals.AGREEMENT_ROLE__ROLE_TYPE_ID, newRoleTypeId);
+	public void setParty(Party newParty) {
+		eSet(AgreementPackage.Literals.AGREEMENT_ROLE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RoleType getRoleType() {
+		return (RoleType)eGet(AgreementPackage.Literals.AGREEMENT_ROLE__ROLE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRoleType(RoleType newRoleType) {
+		eSet(AgreementPackage.Literals.AGREEMENT_ROLE__ROLE_TYPE, newRoleType);
 	}
 
 	/**
@@ -223,26 +243,6 @@ public class AgreementRoleImpl extends EntityIdentifiableImpl implements Agreeme
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Agreement getAgreementId() {
-		return (Agreement)eGet(AgreementPackage.Literals.AGREEMENT_ROLE__AGREEMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAgreementId(Agreement newAgreementId) {
-		eSet(AgreementPackage.Literals.AGREEMENT_ROLE__AGREEMENT_ID, newAgreementId);
 	}
 
 } //AgreementRoleImpl

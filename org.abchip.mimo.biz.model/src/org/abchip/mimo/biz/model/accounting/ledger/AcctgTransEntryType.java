@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntryType#getAcctgTransEntryTypeId <em>Acctg Trans Entry Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntryType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntryType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntryType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntryType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransEntryType()
@@ -83,30 +83,26 @@ public interface AcctgTransEntryType extends EntityType<AcctgTransEntry>, Entity
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(AcctgTransEntryType)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransEntryType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(AcctgTransEntryType)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransEntryType_ParentType()
 	 * @model keys="acctgTransEntryTypeId"
 	 * @generated
 	 */
-	AcctgTransEntryType getParentTypeId();
+	AcctgTransEntryType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntryType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntryType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(AcctgTransEntryType value);
+	void setParentType(AcctgTransEntryType value);
 
 	/**
 	 * Returns the value of the '<em><b>Acctg Trans Entry Type Id</b></em>' attribute.

@@ -65,7 +65,7 @@ import org.osgi.service.log.Logger;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyId <em>Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getCreatedDate <em>Created Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getDataSourceId <em>Data Source Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getDataSource <em>Data Source</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getEmplLeaves <em>Empl Leaves</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getExternalId <em>External Id</em>}</li>
@@ -86,11 +86,11 @@ import org.osgi.service.log.Logger;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyRates <em>Party Rates</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyRoles <em>Party Roles</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartySkills <em>Party Skills</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyTypeId <em>Party Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyType <em>Party Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPerformanceNotes <em>Performance Notes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPersonTrainings <em>Person Trainings</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPreferredCurrencyUomId <em>Preferred Currency Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPreferredCurrencyUom <em>Preferred Currency Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getSupplierProductFeatures <em>Supplier Product Features</em>}</li>
  * </ul>
  *
@@ -244,21 +244,23 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public DataSource getDataSourceId() {
-		return (DataSource)eGet(PartyPackage.Literals.PARTY__DATA_SOURCE_ID, true);
+	public DataSource getDataSource() {
+		return (DataSource)eGet(PartyPackage.Literals.PARTY__DATA_SOURCE, true);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public void setDataSourceId(DataSource newDataSourceId) {
-		eSet(PartyPackage.Literals.PARTY__DATA_SOURCE_ID, newDataSourceId);
+	public void setDataSource(DataSource newDataSource) {
+		eSet(PartyPackage.Literals.PARTY__DATA_SOURCE, newDataSource);
 	}
 
 	/**
@@ -510,39 +512,23 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Uom getPreferredCurrencyUomId() {
-		return (Uom)eGet(PartyPackage.Literals.PARTY__PREFERRED_CURRENCY_UOM_ID, true);
+	public PartyType getPartyType() {
+		return (PartyType)eGet(PartyPackage.Literals.PARTY__PARTY_TYPE, true);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public void setPreferredCurrencyUomId(Uom newPreferredCurrencyUomId) {
-		eSet(PartyPackage.Literals.PARTY__PREFERRED_CURRENCY_UOM_ID, newPreferredCurrencyUomId);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(PartyPackage.Literals.PARTY__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(PartyPackage.Literals.PARTY__STATUS_ID, newStatusId);
+	public void setPartyType(PartyType newPartyType) {
+		eSet(PartyPackage.Literals.PARTY__PARTY_TYPE, newPartyType);
 	}
 
 	/**
@@ -571,7 +557,7 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 
 		Context context = resource.getContext();
 		try {
-			String filter = "partyId = \"" + this.getPartyId() + "\"  AND thruDate IS NULL and paymentMethodTypeId = \"" + methodType + "\"";
+			String filter = "partyId = '" + this.getPartyId() + "'  AND thruDate IS NULL and paymentMethodTypeId = '" + methodType + "'";
 			String order = "-fromDate";
 			ResourceReader<PaymentMethod> paymentMethodReader = context.getResourceManager().getResourceReader(PaymentMethod.class);
 			try (EntityIterator<PaymentMethod> paymentMethods = paymentMethodReader.find(filter, null, order)) {
@@ -620,16 +606,16 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 
 		Context context = resource.getContext();
 		try {
-			String filter = "partyId = \"" + this.getPartyId() + "\"  AND thruDate IS NULL";
+			String filter = "partyId = '" + this.getPartyId() + "'  AND thruDate IS NULL";
 			String order = "-fromDate";
 			ResourceReader<PartyContactMech> partyContactMechReader = context.getResourceManager().getResourceReader(PartyContactMech.class);
 
 			try (EntityIterator<PartyContactMech> partyContactMechs = partyContactMechReader.find(filter, null, order)) {
 				for (PartyContactMech partyContactMech : partyContactMechs) {
 					ResourceReader<ContactMech> contactMechReader = context.getResourceManager().getResourceReader(ContactMech.class);
-					ContactMech contactMech = contactMechReader.lookup(partyContactMech.getContactMechId().getContactMechId());
+					ContactMech contactMech = contactMechReader.lookup(partyContactMech.getContactMech().getContactMechId());
 
-					if (!contactMech.getContactMechTypeId().getContactMechTypeId().equals("POSTAL_ADDRESS"))
+					if (!contactMech.getContactMechType().getContactMechTypeId().equals("POSTAL_ADDRESS"))
 						continue;
 
 					return context.createProxy(PostalAddress.class, contactMech.getContactMechId());
@@ -657,16 +643,16 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 
 		Context context = resource.getContext();
 		try {
-			String filter = "partyId = \"" + this.getPartyId() + "\"  AND thruDate IS NULL";
+			String filter = "partyId = '" + this.getPartyId() + "'  AND thruDate IS NULL";
 			String order = "-fromDate";
 			ResourceReader<PartyContactMech> partyContactMechReader = context.getResourceManager().getResourceReader(PartyContactMech.class);
 
 			try (EntityIterator<PartyContactMech> partyContactMechs = partyContactMechReader.find(filter, null, order)) {
 				for (PartyContactMech partyContactMech : partyContactMechs) {
-					if (!partyContactMech.getContactMechId().getContactMechTypeId().getContactMechTypeId().equals("TELECOM_NUMBER"))
+					if (!partyContactMech.getContactMech().getContactMechType().getContactMechTypeId().equals("TELECOM_NUMBER"))
 						continue;
 
-					return context.createProxy(TelecomNumber.class, partyContactMech.getContactMechId().getContactMechId());
+					return context.createProxy(TelecomNumber.class, partyContactMech.getContactMech().getContactMechId());
 				}
 			}
 
@@ -731,16 +717,16 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 
 		Context context = resource.getContext();
 		try {
-			String filter = "partyId = \"" + this.getPartyId() + "\"  AND thruDate IS NULL";
+			String filter = "partyId = '" + this.getPartyId() + "'  AND thruDate IS NULL";
 			String order = "-fromDate";
 			ResourceReader<PartyContactMech> partyContactMechReader = context.getResourceManager().getResourceReader(PartyContactMech.class);
 
 			try (EntityIterator<PartyContactMech> partyContactMechs = partyContactMechReader.find(filter, null, order)) {
 				for (PartyContactMech partyContactMech : partyContactMechs) {
-					if (!partyContactMech.getContactMechId().getContactMechTypeId().getContactMechTypeId().equals("EMAIL_ADDRESS"))
+					if (!partyContactMech.getContactMech().getContactMechType().getContactMechTypeId().equals("EMAIL_ADDRESS"))
 						continue;
 
-					return partyContactMech.getContactMechId();
+					return partyContactMech.getContactMech();
 				}
 			}
 
@@ -749,24 +735,6 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 		}
 
 		return null;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PartyType getPartyTypeId() {
-		return (PartyType)eGet(PartyPackage.Literals.PARTY__PARTY_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyTypeId(PartyType newPartyTypeId) {
-		eSet(PartyPackage.Literals.PARTY__PARTY_TYPE_ID, newPartyTypeId);
 	}
 
 	/**
@@ -789,6 +757,46 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	@Override
 	public List<PersonTraining> getPersonTrainings() {
 		return (List<PersonTraining>)eGet(PartyPackage.Literals.PARTY__PERSON_TRAININGS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Uom getPreferredCurrencyUom() {
+		return (Uom)eGet(PartyPackage.Literals.PARTY__PREFERRED_CURRENCY_UOM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPreferredCurrencyUom(Uom newPreferredCurrencyUom) {
+		eSet(PartyPackage.Literals.PARTY__PREFERRED_CURRENCY_UOM, newPreferredCurrencyUom);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(PartyPackage.Literals.PARTY__STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(StatusItem newStatus) {
+		eSet(PartyPackage.Literals.PARTY__STATUS, newStatus);
 	}
 
 	/**

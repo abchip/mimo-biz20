@@ -22,10 +22,10 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus#getInvoiceId <em>Invoice Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus#getInvoice <em>Invoice</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus#getStatusDate <em>Status Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus#getChangeByUserLoginId <em>Change By User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus#getChangeByUserLogin <em>Change By User Login</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceStatus()
@@ -34,30 +34,50 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface InvoiceStatus extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Change By User Login Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Change By User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Change By User Login Id</em>' reference.
-	 * @see #setChangeByUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceStatus_ChangeByUserLoginId()
-	 * @model keys="userLoginId"
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceStatus_Status()
+	 * @model keys="statusId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	UserLogin getChangeByUserLoginId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus#getChangeByUserLoginId <em>Change By User Login Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Change By User Login Id</em>' reference.
-	 * @see #getChangeByUserLoginId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setChangeByUserLoginId(UserLogin value);
+	void setStatus(StatusItem value);
+
+	/**
+	 * Returns the value of the '<em><b>Invoice</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Invoice</em>' reference.
+	 * @see #setInvoice(Invoice)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceStatus_Invoice()
+	 * @model keys="invoiceId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Invoice getInvoice();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus#getInvoice <em>Invoice</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Invoice</em>' reference.
+	 * @see #getInvoice()
+	 * @generated
+	 */
+	void setInvoice(Invoice value);
 
 	/**
 	 * Returns the value of the '<em><b>Status Date</b></em>' attribute.
@@ -87,57 +107,25 @@ public interface InvoiceStatus extends EntityIdentifiable, EntityInfo {
 	void setStatusDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Change By User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceStatus_StatusId()
-	 * @model keys="statusId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
+	 * @return the value of the '<em>Change By User Login</em>' reference.
+	 * @see #setChangeByUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceStatus_ChangeByUserLogin()
+	 * @model keys="userLoginId"
 	 * @generated
 	 */
-	StatusItem getStatusId();
+	UserLogin getChangeByUserLogin();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus#getStatusId <em>Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus#getChangeByUserLogin <em>Change By User Login</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
+	 * @param value the new value of the '<em>Change By User Login</em>' reference.
+	 * @see #getChangeByUserLogin()
 	 * @generated
 	 */
-	void setStatusId(StatusItem value);
-
-	/**
-	 * Returns the value of the '<em><b>Invoice Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Invoice Id</em>' reference.
-	 * @see #setInvoiceId(Invoice)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceStatus_InvoiceId()
-	 * @model keys="invoiceId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Invoice getInvoiceId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus#getInvoiceId <em>Invoice Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Invoice Id</em>' reference.
-	 * @see #getInvoiceId()
-	 * @generated
-	 */
-	void setInvoiceId(Invoice value);
+	void setChangeByUserLogin(UserLogin value);
 
 } // InvoiceStatus

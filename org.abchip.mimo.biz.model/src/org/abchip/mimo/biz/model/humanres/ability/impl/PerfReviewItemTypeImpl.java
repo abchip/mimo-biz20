@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewItemTypeImpl#getPerfReviewItemTypeId <em>Perf Review Item Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewItemTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewItemTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewItemTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewItemTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,8 +200,8 @@ public class PerfReviewItemTypeImpl extends EntityTypeImpl<PerfReviewItem> imple
 	 * @generated
 	 */
 	@Override
-	public PerfReviewItemType getParentTypeId() {
-		return (PerfReviewItemType)eGet(AbilityPackage.Literals.PERF_REVIEW_ITEM_TYPE__PARENT_TYPE_ID, true);
+	public PerfReviewItemType getParentType() {
+		return (PerfReviewItemType)eGet(AbilityPackage.Literals.PERF_REVIEW_ITEM_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -210,8 +210,8 @@ public class PerfReviewItemTypeImpl extends EntityTypeImpl<PerfReviewItem> imple
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(PerfReviewItemType newParentTypeId) {
-		eSet(AbilityPackage.Literals.PERF_REVIEW_ITEM_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(PerfReviewItemType newParentType) {
+		eSet(AbilityPackage.Literals.PERF_REVIEW_ITEM_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

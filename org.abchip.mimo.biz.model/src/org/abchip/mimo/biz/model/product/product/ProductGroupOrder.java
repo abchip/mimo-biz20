@@ -26,11 +26,11 @@ import org.abchip.mimo.entity.EntityInfo;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductGroupOrder#getGroupOrderId <em>Group Order Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductGroupOrder#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductGroupOrder#getJobId <em>Job Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductGroupOrder#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductGroupOrder#getJob <em>Job</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductGroupOrder#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductGroupOrder#getReqOrderQty <em>Req Order Qty</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductGroupOrder#getSoldOrderQty <em>Sold Order Qty</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductGroupOrder#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductGroupOrder#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductGroupOrder#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -66,6 +66,50 @@ public interface ProductGroupOrder extends EntityIdentifiable, EntityInfo {
 	void setFromDate(Date value);
 
 	/**
+	 * Returns the value of the '<em><b>Job</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Job</em>' reference.
+	 * @see #setJob(JobSandbox)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductGroupOrder_Job()
+	 * @model keys="jobId"
+	 * @generated
+	 */
+	JobSandbox getJob();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductGroupOrder#getJob <em>Job</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Job</em>' reference.
+	 * @see #getJob()
+	 * @generated
+	 */
+	void setJob(JobSandbox value);
+
+	/**
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductGroupOrder_Product()
+	 * @model keys="productId"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductGroupOrder#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
+
+	/**
 	 * Returns the value of the '<em><b>Group Order Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -91,32 +135,6 @@ public interface ProductGroupOrder extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setGroupOrderId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Job Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Job Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Job Id</em>' reference.
-	 * @see #setJobId(JobSandbox)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductGroupOrder_JobId()
-	 * @model keys="jobId"
-	 * @generated
-	 */
-	JobSandbox getJobId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductGroupOrder#getJobId <em>Job Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Job Id</em>' reference.
-	 * @see #getJobId()
-	 * @generated
-	 */
-	void setJobId(JobSandbox value);
 
 	/**
 	 * Returns the value of the '<em><b>Req Order Qty</b></em>' attribute.
@@ -171,30 +189,26 @@ public interface ProductGroupOrder extends EntityIdentifiable, EntityInfo {
 	void setSoldOrderQty(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductGroupOrder_StatusId()
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductGroupOrder_Status()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getStatusId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductGroupOrder#getStatusId <em>Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductGroupOrder#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setStatusId(StatusItem value);
+	void setStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.
@@ -221,31 +235,5 @@ public interface ProductGroupOrder extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductGroupOrder_ProductId()
-	 * @model keys="productId"
-	 * @generated
-	 */
-	Product getProductId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductGroupOrder#getProductId <em>Product Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
-	 * @generated
-	 */
-	void setProductId(Product value);
 
 } // ProductGroupOrder

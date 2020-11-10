@@ -29,9 +29,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeMapImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeMapImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeMapImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeMapImpl#getInvoiceTypeId <em>Invoice Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeMapImpl#getInvoiceType <em>Invoice Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeMapImpl#getInvoiceItemMapKey <em>Invoice Item Map Key</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeMapImpl#getInvoiceItemTypeId <em>Invoice Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeMapImpl#getInvoiceItemType <em>Invoice Item Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,6 +152,26 @@ public class InvoiceItemTypeMapImpl extends EntityIdentifiableImpl implements In
 	 * @generated
 	 */
 	@Override
+	public InvoiceType getInvoiceType() {
+		return (InvoiceType)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_MAP__INVOICE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInvoiceType(InvoiceType newInvoiceType) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_MAP__INVOICE_TYPE, newInvoiceType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getInvoiceItemMapKey() {
 		return (String)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_MAP__INVOICE_ITEM_MAP_KEY, true);
 	}
@@ -172,8 +192,8 @@ public class InvoiceItemTypeMapImpl extends EntityIdentifiableImpl implements In
 	 * @generated
 	 */
 	@Override
-	public InvoiceType getInvoiceTypeId() {
-		return (InvoiceType)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_MAP__INVOICE_TYPE_ID, true);
+	public InvoiceItemType getInvoiceItemType() {
+		return (InvoiceItemType)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_MAP__INVOICE_ITEM_TYPE, true);
 	}
 
 	/**
@@ -182,28 +202,8 @@ public class InvoiceItemTypeMapImpl extends EntityIdentifiableImpl implements In
 	 * @generated
 	 */
 	@Override
-	public void setInvoiceTypeId(InvoiceType newInvoiceTypeId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_MAP__INVOICE_TYPE_ID, newInvoiceTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InvoiceItemType getInvoiceItemTypeId() {
-		return (InvoiceItemType)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_MAP__INVOICE_ITEM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInvoiceItemTypeId(InvoiceItemType newInvoiceItemTypeId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_MAP__INVOICE_ITEM_TYPE_ID, newInvoiceItemTypeId);
+	public void setInvoiceItemType(InvoiceItemType newInvoiceItemType) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_MAP__INVOICE_ITEM_TYPE, newInvoiceItemType);
 	}
 
 	/**

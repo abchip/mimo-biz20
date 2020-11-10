@@ -792,7 +792,7 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 	 * @generated
 	 */
 	@Override
-	public EReference getJobManagerLock_ReasonEnumId() {
+	public EReference getJobManagerLock_ReasonEnum() {
 		return (EReference)jobManagerLockEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -832,7 +832,7 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 	 * @generated
 	 */
 	@Override
-	public EReference getJobSandbox_AuthUserLoginId() {
+	public EReference getJobSandbox_AuthUserLogin() {
 		return (EReference)jobSandboxEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -962,7 +962,7 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 	 * @generated
 	 */
 	@Override
-	public EReference getJobSandbox_RecurrenceInfoId() {
+	public EReference getJobSandbox_RecurrenceInfo() {
 		return (EReference)jobSandboxEClass.getEStructuralFeatures().get(14);
 	}
 
@@ -1002,7 +1002,7 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 	 * @generated
 	 */
 	@Override
-	public EReference getJobSandbox_RuntimeDataId() {
+	public EReference getJobSandbox_RuntimeData() {
 		return (EReference)jobSandboxEClass.getEStructuralFeatures().get(18);
 	}
 
@@ -1032,7 +1032,7 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 	 * @generated
 	 */
 	@Override
-	public EReference getJobSandbox_StatusId() {
+	public EReference getJobSandbox_Status() {
 		return (EReference)jobSandboxEClass.getEStructuralFeatures().get(21);
 	}
 
@@ -1042,7 +1042,7 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 	 * @generated
 	 */
 	@Override
-	public EReference getJobSandbox_TempExprId() {
+	public EReference getJobSandbox_TempExpr() {
 		return (EReference)jobSandboxEClass.getEStructuralFeatures().get(22);
 	}
 
@@ -1082,7 +1082,7 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 	 * @generated
 	 */
 	@Override
-	public EReference getRecurrenceInfo_ExceptionRuleId() {
+	public EReference getRecurrenceInfo_ExceptionRule() {
 		return (EReference)recurrenceInfoEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -1112,7 +1112,7 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 	 * @generated
 	 */
 	@Override
-	public EReference getRecurrenceInfo_RecurrenceRuleId() {
+	public EReference getRecurrenceInfo_RecurrenceRule() {
 		return (EReference)recurrenceInfoEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -1452,7 +1452,7 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 	 * @generated
 	 */
 	@Override
-	public EReference getTemporalExpressionAssoc_FromTempExprId() {
+	public EReference getTemporalExpressionAssoc_FromTempExpr() {
 		return (EReference)temporalExpressionAssocEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1462,7 +1462,7 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 	 * @generated
 	 */
 	@Override
-	public EReference getTemporalExpressionAssoc_ToTempExprId() {
+	public EReference getTemporalExpressionAssoc_ToTempExpr() {
 		return (EReference)temporalExpressionAssocEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1513,12 +1513,12 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 		createEAttribute(jobManagerLockEClass, JOB_MANAGER_LOCK__CREATED_DATE);
 		createEAttribute(jobManagerLockEClass, JOB_MANAGER_LOCK__LAST_MODIFIED_BY_USER_LOGIN);
 		createEAttribute(jobManagerLockEClass, JOB_MANAGER_LOCK__LAST_MODIFIED_DATE);
-		createEReference(jobManagerLockEClass, JOB_MANAGER_LOCK__REASON_ENUM_ID);
+		createEReference(jobManagerLockEClass, JOB_MANAGER_LOCK__REASON_ENUM);
 		createEAttribute(jobManagerLockEClass, JOB_MANAGER_LOCK__THRU_DATE);
 
 		jobSandboxEClass = createEClass(JOB_SANDBOX);
 		createEAttribute(jobSandboxEClass, JOB_SANDBOX__JOB_ID);
-		createEReference(jobSandboxEClass, JOB_SANDBOX__AUTH_USER_LOGIN_ID);
+		createEReference(jobSandboxEClass, JOB_SANDBOX__AUTH_USER_LOGIN);
 		createEAttribute(jobSandboxEClass, JOB_SANDBOX__CANCEL_DATE_TIME);
 		createEAttribute(jobSandboxEClass, JOB_SANDBOX__CURRENT_RECURRENCE_COUNT);
 		createEAttribute(jobSandboxEClass, JOB_SANDBOX__CURRENT_RETRY_COUNT);
@@ -1531,23 +1531,23 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 		createEAttribute(jobSandboxEClass, JOB_SANDBOX__PARENT_JOB_ID);
 		createEAttribute(jobSandboxEClass, JOB_SANDBOX__POOL_ID);
 		createEAttribute(jobSandboxEClass, JOB_SANDBOX__PREVIOUS_JOB_ID);
-		createEReference(jobSandboxEClass, JOB_SANDBOX__RECURRENCE_INFO_ID);
+		createEReference(jobSandboxEClass, JOB_SANDBOX__RECURRENCE_INFO);
 		createEReference(jobSandboxEClass, JOB_SANDBOX__RUN_AS_USER);
 		createEAttribute(jobSandboxEClass, JOB_SANDBOX__RUN_BY_INSTANCE_ID);
 		createEAttribute(jobSandboxEClass, JOB_SANDBOX__RUN_TIME);
-		createEReference(jobSandboxEClass, JOB_SANDBOX__RUNTIME_DATA_ID);
+		createEReference(jobSandboxEClass, JOB_SANDBOX__RUNTIME_DATA);
 		createEAttribute(jobSandboxEClass, JOB_SANDBOX__SERVICE_NAME);
 		createEAttribute(jobSandboxEClass, JOB_SANDBOX__START_DATE_TIME);
-		createEReference(jobSandboxEClass, JOB_SANDBOX__STATUS_ID);
-		createEReference(jobSandboxEClass, JOB_SANDBOX__TEMP_EXPR_ID);
+		createEReference(jobSandboxEClass, JOB_SANDBOX__STATUS);
+		createEReference(jobSandboxEClass, JOB_SANDBOX__TEMP_EXPR);
 
 		recurrenceInfoEClass = createEClass(RECURRENCE_INFO);
 		createEAttribute(recurrenceInfoEClass, RECURRENCE_INFO__RECURRENCE_INFO_ID);
 		createEAttribute(recurrenceInfoEClass, RECURRENCE_INFO__EXCEPTION_DATE_TIMES);
-		createEReference(recurrenceInfoEClass, RECURRENCE_INFO__EXCEPTION_RULE_ID);
+		createEReference(recurrenceInfoEClass, RECURRENCE_INFO__EXCEPTION_RULE);
 		createEAttribute(recurrenceInfoEClass, RECURRENCE_INFO__RECURRENCE_COUNT);
 		createEAttribute(recurrenceInfoEClass, RECURRENCE_INFO__RECURRENCE_DATE_TIMES);
-		createEReference(recurrenceInfoEClass, RECURRENCE_INFO__RECURRENCE_RULE_ID);
+		createEReference(recurrenceInfoEClass, RECURRENCE_INFO__RECURRENCE_RULE);
 		createEAttribute(recurrenceInfoEClass, RECURRENCE_INFO__START_DATE_TIME);
 
 		recurrenceRuleEClass = createEClass(RECURRENCE_RULE);
@@ -1585,8 +1585,8 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 		createEAttribute(temporalExpressionEClass, TEMPORAL_EXPRESSION__TEMP_EXPR_TYPE_ID);
 
 		temporalExpressionAssocEClass = createEClass(TEMPORAL_EXPRESSION_ASSOC);
-		createEReference(temporalExpressionAssocEClass, TEMPORAL_EXPRESSION_ASSOC__FROM_TEMP_EXPR_ID);
-		createEReference(temporalExpressionAssocEClass, TEMPORAL_EXPRESSION_ASSOC__TO_TEMP_EXPR_ID);
+		createEReference(temporalExpressionAssocEClass, TEMPORAL_EXPRESSION_ASSOC__FROM_TEMP_EXPR);
+		createEReference(temporalExpressionAssocEClass, TEMPORAL_EXPRESSION_ASSOC__TO_TEMP_EXPR);
 		createEAttribute(temporalExpressionAssocEClass, TEMPORAL_EXPRESSION_ASSOC__EXPR_ASSOC_TYPE);
 	}
 
@@ -1648,14 +1648,14 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 		initEAttribute(getJobManagerLock_CreatedDate(), ecorePackage.getEDate(), "createdDate", null, 0, 1, JobManagerLock.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getJobManagerLock_LastModifiedByUserLogin(), ecorePackage.getEString(), "lastModifiedByUserLogin", null, 0, 1, JobManagerLock.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getJobManagerLock_LastModifiedDate(), ecorePackage.getEDate(), "lastModifiedDate", null, 0, 1, JobManagerLock.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getJobManagerLock_ReasonEnumId(), theEnumPackage.getEnumeration(), null, "reasonEnumId", null, 0, 1, JobManagerLock.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getJobManagerLock_ReasonEnumId().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
+		initEReference(getJobManagerLock_ReasonEnum(), theEnumPackage.getEnumeration(), null, "reasonEnum", null, 0, 1, JobManagerLock.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getJobManagerLock_ReasonEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getJobManagerLock_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, JobManagerLock.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(jobSandboxEClass, JobSandbox.class, "JobSandbox", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getJobSandbox_JobId(), ecorePackage.getEString(), "jobId", null, 1, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getJobSandbox_AuthUserLoginId(), theLoginPackage.getUserLogin(), null, "authUserLoginId", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getJobSandbox_AuthUserLoginId().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
+		initEReference(getJobSandbox_AuthUserLogin(), theLoginPackage.getUserLogin(), null, "authUserLogin", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getJobSandbox_AuthUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEAttribute(getJobSandbox_CancelDateTime(), ecorePackage.getEDate(), "cancelDateTime", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getJobSandbox_CurrentRecurrenceCount(), ecorePackage.getELong(), "currentRecurrenceCount", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getJobSandbox_CurrentRetryCount(), ecorePackage.getELong(), "currentRetryCount", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1668,30 +1668,30 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 		initEAttribute(getJobSandbox_ParentJobId(), ecorePackage.getEString(), "parentJobId", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getJobSandbox_PoolId(), ecorePackage.getEString(), "poolId", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getJobSandbox_PreviousJobId(), ecorePackage.getEString(), "previousJobId", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getJobSandbox_RecurrenceInfoId(), this.getRecurrenceInfo(), null, "recurrenceInfoId", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getJobSandbox_RecurrenceInfoId().getEKeys().add(this.getRecurrenceInfo_RecurrenceInfoId());
+		initEReference(getJobSandbox_RecurrenceInfo(), this.getRecurrenceInfo(), null, "recurrenceInfo", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getJobSandbox_RecurrenceInfo().getEKeys().add(this.getRecurrenceInfo_RecurrenceInfoId());
 		initEReference(getJobSandbox_RunAsUser(), theLoginPackage.getUserLogin(), null, "runAsUser", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getJobSandbox_RunAsUser().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEAttribute(getJobSandbox_RunByInstanceId(), ecorePackage.getEString(), "runByInstanceId", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getJobSandbox_RunTime(), ecorePackage.getEDate(), "runTime", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getJobSandbox_RuntimeDataId(), this.getRuntimeData(), null, "runtimeDataId", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getJobSandbox_RuntimeDataId().getEKeys().add(this.getRuntimeData_RuntimeDataId());
+		initEReference(getJobSandbox_RuntimeData(), this.getRuntimeData(), null, "runtimeData", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getJobSandbox_RuntimeData().getEKeys().add(this.getRuntimeData_RuntimeDataId());
 		initEAttribute(getJobSandbox_ServiceName(), ecorePackage.getEString(), "serviceName", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getJobSandbox_StartDateTime(), ecorePackage.getEDate(), "startDateTime", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getJobSandbox_StatusId(), theStatusPackage.getStatusItem(), null, "statusId", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getJobSandbox_StatusId().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
-		initEReference(getJobSandbox_TempExprId(), this.getTemporalExpression(), null, "tempExprId", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getJobSandbox_TempExprId().getEKeys().add(this.getTemporalExpression_TempExprId());
+		initEReference(getJobSandbox_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getJobSandbox_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
+		initEReference(getJobSandbox_TempExpr(), this.getTemporalExpression(), null, "tempExpr", null, 0, 1, JobSandbox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getJobSandbox_TempExpr().getEKeys().add(this.getTemporalExpression_TempExprId());
 
 		initEClass(recurrenceInfoEClass, RecurrenceInfo.class, "RecurrenceInfo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getRecurrenceInfo_RecurrenceInfoId(), ecorePackage.getEString(), "recurrenceInfoId", null, 1, 1, RecurrenceInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRecurrenceInfo_ExceptionDateTimes(), ecorePackage.getEString(), "exceptionDateTimes", null, 0, 1, RecurrenceInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getRecurrenceInfo_ExceptionRuleId(), this.getRecurrenceRule(), null, "exceptionRuleId", null, 0, 1, RecurrenceInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRecurrenceInfo_ExceptionRuleId().getEKeys().add(this.getRecurrenceRule_RecurrenceRuleId());
+		initEReference(getRecurrenceInfo_ExceptionRule(), this.getRecurrenceRule(), null, "exceptionRule", null, 0, 1, RecurrenceInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getRecurrenceInfo_ExceptionRule().getEKeys().add(this.getRecurrenceRule_RecurrenceRuleId());
 		initEAttribute(getRecurrenceInfo_RecurrenceCount(), ecorePackage.getELong(), "recurrenceCount", null, 0, 1, RecurrenceInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRecurrenceInfo_RecurrenceDateTimes(), ecorePackage.getEString(), "recurrenceDateTimes", null, 0, 1, RecurrenceInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getRecurrenceInfo_RecurrenceRuleId(), this.getRecurrenceRule(), null, "recurrenceRuleId", null, 0, 1, RecurrenceInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRecurrenceInfo_RecurrenceRuleId().getEKeys().add(this.getRecurrenceRule_RecurrenceRuleId());
+		initEReference(getRecurrenceInfo_RecurrenceRule(), this.getRecurrenceRule(), null, "recurrenceRule", null, 0, 1, RecurrenceInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getRecurrenceInfo_RecurrenceRule().getEKeys().add(this.getRecurrenceRule_RecurrenceRuleId());
 		initEAttribute(getRecurrenceInfo_StartDateTime(), ecorePackage.getEDate(), "startDateTime", null, 0, 1, RecurrenceInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(recurrenceRuleEClass, RecurrenceRule.class, "RecurrenceRule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1729,10 +1729,10 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 		initEAttribute(getTemporalExpression_TempExprTypeId(), ecorePackage.getEString(), "tempExprTypeId", null, 0, 1, TemporalExpression.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(temporalExpressionAssocEClass, TemporalExpressionAssoc.class, "TemporalExpressionAssoc", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTemporalExpressionAssoc_FromTempExprId(), this.getTemporalExpression(), null, "fromTempExprId", null, 1, 1, TemporalExpressionAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getTemporalExpressionAssoc_FromTempExprId().getEKeys().add(this.getTemporalExpression_TempExprId());
-		initEReference(getTemporalExpressionAssoc_ToTempExprId(), this.getTemporalExpression(), null, "toTempExprId", null, 1, 1, TemporalExpressionAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getTemporalExpressionAssoc_ToTempExprId().getEKeys().add(this.getTemporalExpression_TempExprId());
+		initEReference(getTemporalExpressionAssoc_FromTempExpr(), this.getTemporalExpression(), null, "fromTempExpr", null, 1, 1, TemporalExpressionAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getTemporalExpressionAssoc_FromTempExpr().getEKeys().add(this.getTemporalExpression_TempExprId());
+		initEReference(getTemporalExpressionAssoc_ToTempExpr(), this.getTemporalExpression(), null, "toTempExpr", null, 1, 1, TemporalExpressionAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getTemporalExpressionAssoc_ToTempExpr().getEKeys().add(this.getTemporalExpression_TempExprId());
 		initEAttribute(getTemporalExpressionAssoc_ExprAssocType(), ecorePackage.getEString(), "exprAssocType", null, 0, 1, TemporalExpressionAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
@@ -1985,13 +1985,13 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getJobSandbox_RecurrenceInfoId(),
+		  (getJobSandbox_RecurrenceInfo(),
 		   source,
 		   new String[] {
 			   "help", "Deprecated - use tempExprId instead"
 		   });
 		addAnnotation
-		  (getJobSandbox_TempExprId(),
+		  (getJobSandbox_TempExpr(),
 		   source,
 		   new String[] {
 			   "help", "Temporal expression id"
@@ -2003,14 +2003,14 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 			   "help", "Not recommended - more than one process could be using this RecurrenceInfo"
 		   });
 		addAnnotation
-		  (getTemporalExpressionAssoc_FromTempExprId(),
+		  (getTemporalExpressionAssoc_FromTempExpr(),
 		   source,
 		   new String[] {
 			   "key", "true",
 			   "help", "The \"parent\" expression"
 		   });
 		addAnnotation
-		  (getTemporalExpressionAssoc_ToTempExprId(),
+		  (getTemporalExpressionAssoc_ToTempExpr(),
 		   source,
 		   new String[] {
 			   "key", "true",

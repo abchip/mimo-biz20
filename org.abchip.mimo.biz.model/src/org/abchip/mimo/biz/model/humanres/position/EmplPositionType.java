@@ -25,7 +25,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionType#getEmplPositionTypeClasses <em>Empl Position Type Classes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionType#getEmplPositionTypeRates <em>Empl Position Type Rates</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionType#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionType#getValidResponsibilities <em>Valid Responsibilities</em>}</li>
  * </ul>
  *
@@ -113,6 +113,28 @@ public interface EmplPositionType extends EntityType<EmplPosition>, EntityInfo {
 	void setHasTable(boolean value);
 
 	/**
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(EmplPositionType)
+	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionType_ParentType()
+	 * @model keys="emplPositionTypeId"
+	 * @generated
+	 */
+	EmplPositionType getParentType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionType#getParentType <em>Parent Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
+	 * @generated
+	 */
+	void setParentType(EmplPositionType value);
+
+	/**
 	 * Returns the value of the '<em><b>Empl Position Type Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -138,32 +160,6 @@ public interface EmplPositionType extends EntityType<EmplPosition>, EntityInfo {
 	 * @generated
 	 */
 	void setEmplPositionTypeId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(EmplPositionType)
-	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionType_ParentTypeId()
-	 * @model keys="emplPositionTypeId"
-	 * @generated
-	 */
-	EmplPositionType getParentTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionType#getParentTypeId <em>Parent Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
-	 * @generated
-	 */
-	void setParentTypeId(EmplPositionType value);
 
 	/**
 	 * Returns the value of the '<em><b>Valid Responsibilities</b></em>' reference list.

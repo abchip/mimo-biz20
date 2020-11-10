@@ -28,8 +28,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.TemporalExpressionAssocImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.TemporalExpressionAssocImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.TemporalExpressionAssocImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.TemporalExpressionAssocImpl#getFromTempExprId <em>From Temp Expr Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.TemporalExpressionAssocImpl#getToTempExprId <em>To Temp Expr Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.TemporalExpressionAssocImpl#getFromTempExpr <em>From Temp Expr</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.TemporalExpressionAssocImpl#getToTempExpr <em>To Temp Expr</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.TemporalExpressionAssocImpl#getExprAssocType <em>Expr Assoc Type</em>}</li>
  * </ul>
  *
@@ -152,8 +152,8 @@ public class TemporalExpressionAssocImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public TemporalExpression getFromTempExprId() {
-		return (TemporalExpression)eGet(SchedulePackage.Literals.TEMPORAL_EXPRESSION_ASSOC__FROM_TEMP_EXPR_ID, true);
+	public TemporalExpression getFromTempExpr() {
+		return (TemporalExpression)eGet(SchedulePackage.Literals.TEMPORAL_EXPRESSION_ASSOC__FROM_TEMP_EXPR, true);
 	}
 
 	/**
@@ -162,8 +162,8 @@ public class TemporalExpressionAssocImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setFromTempExprId(TemporalExpression newFromTempExprId) {
-		eSet(SchedulePackage.Literals.TEMPORAL_EXPRESSION_ASSOC__FROM_TEMP_EXPR_ID, newFromTempExprId);
+	public void setFromTempExpr(TemporalExpression newFromTempExpr) {
+		eSet(SchedulePackage.Literals.TEMPORAL_EXPRESSION_ASSOC__FROM_TEMP_EXPR, newFromTempExpr);
 	}
 
 	/**
@@ -172,8 +172,8 @@ public class TemporalExpressionAssocImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public TemporalExpression getToTempExprId() {
-		return (TemporalExpression)eGet(SchedulePackage.Literals.TEMPORAL_EXPRESSION_ASSOC__TO_TEMP_EXPR_ID, true);
+	public TemporalExpression getToTempExpr() {
+		return (TemporalExpression)eGet(SchedulePackage.Literals.TEMPORAL_EXPRESSION_ASSOC__TO_TEMP_EXPR, true);
 	}
 
 	/**
@@ -182,8 +182,8 @@ public class TemporalExpressionAssocImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setToTempExprId(TemporalExpression newToTempExprId) {
-		eSet(SchedulePackage.Literals.TEMPORAL_EXPRESSION_ASSOC__TO_TEMP_EXPR_ID, newToTempExprId);
+	public void setToTempExpr(TemporalExpression newToTempExpr) {
+		eSet(SchedulePackage.Literals.TEMPORAL_EXPRESSION_ASSOC__TO_TEMP_EXPR, newToTempExpr);
 	}
 
 	/**

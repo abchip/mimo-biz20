@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigOptionIactnImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigOptionIactnImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigOptionIactnImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigOptionIactnImpl#getConfigItemId <em>Config Item Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigOptionIactnImpl#getConfigItem <em>Config Item</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigOptionIactnImpl#getConfigItemIdTo <em>Config Item Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigOptionIactnImpl#getConfigOptionId <em>Config Option Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigOptionIactnImpl#getConfigOptionIdTo <em>Config Option Id To</em>}</li>
@@ -148,6 +148,26 @@ public class ProductConfigOptionIactnImpl extends EntityIdentifiableImpl impleme
 	@Override
 	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
 		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductConfigItem getConfigItem() {
+		return (ProductConfigItem)eGet(ConfigPackage.Literals.PRODUCT_CONFIG_OPTION_IACTN__CONFIG_ITEM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setConfigItem(ProductConfigItem newConfigItem) {
+		eSet(ConfigPackage.Literals.PRODUCT_CONFIG_OPTION_IACTN__CONFIG_ITEM, newConfigItem);
 	}
 
 	/**
@@ -286,26 +306,6 @@ public class ProductConfigOptionIactnImpl extends EntityIdentifiableImpl impleme
 	@Override
 	public void setSequenceNum(long newSequenceNum) {
 		eSet(ConfigPackage.Literals.PRODUCT_CONFIG_OPTION_IACTN__SEQUENCE_NUM, newSequenceNum);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductConfigItem getConfigItemId() {
-		return (ProductConfigItem)eGet(ConfigPackage.Literals.PRODUCT_CONFIG_OPTION_IACTN__CONFIG_ITEM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setConfigItemId(ProductConfigItem newConfigItemId) {
-		eSet(ConfigPackage.Literals.PRODUCT_CONFIG_OPTION_IACTN__CONFIG_ITEM_ID, newConfigItemId);
 	}
 
 	/**

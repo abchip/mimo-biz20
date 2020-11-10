@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityQuoteImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityQuoteImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityQuoteImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityQuoteImpl#getSalesOpportunityId <em>Sales Opportunity Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityQuoteImpl#getQuoteId <em>Quote Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityQuoteImpl#getSalesOpportunity <em>Sales Opportunity</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityQuoteImpl#getQuote <em>Quote</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class SalesOpportunityQuoteImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public Quote getQuoteId() {
-		return (Quote)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_QUOTE__QUOTE_ID, true);
+	public SalesOpportunity getSalesOpportunity() {
+		return (SalesOpportunity)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_QUOTE__SALES_OPPORTUNITY, true);
 	}
 
 	/**
@@ -162,8 +162,28 @@ public class SalesOpportunityQuoteImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setQuoteId(Quote newQuoteId) {
-		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_QUOTE__QUOTE_ID, newQuoteId);
+	public void setSalesOpportunity(SalesOpportunity newSalesOpportunity) {
+		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_QUOTE__SALES_OPPORTUNITY, newSalesOpportunity);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Quote getQuote() {
+		return (Quote)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_QUOTE__QUOTE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setQuote(Quote newQuote) {
+		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_QUOTE__QUOTE, newQuote);
 	}
 
 	/**
@@ -202,26 +222,6 @@ public class SalesOpportunityQuoteImpl extends EntityIdentifiableImpl implements
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SalesOpportunity getSalesOpportunityId() {
-		return (SalesOpportunity)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_QUOTE__SALES_OPPORTUNITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSalesOpportunityId(SalesOpportunity newSalesOpportunityId) {
-		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_QUOTE__SALES_OPPORTUNITY_ID, newSalesOpportunityId);
 	}
 
 } //SalesOpportunityQuoteImpl

@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ValidContactMechRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ValidContactMechRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ValidContactMechRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ValidContactMechRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ValidContactMechRoleImpl#getContactMechTypeId <em>Contact Mech Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ValidContactMechRoleImpl#getRoleType <em>Role Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ValidContactMechRoleImpl#getContactMechType <em>Contact Mech Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -151,8 +151,8 @@ public class ValidContactMechRoleImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(ContactPackage.Literals.VALID_CONTACT_MECH_ROLE__ROLE_TYPE_ID, true);
+	public RoleType getRoleType() {
+		return (RoleType)eGet(ContactPackage.Literals.VALID_CONTACT_MECH_ROLE__ROLE_TYPE, true);
 	}
 
 	/**
@@ -161,8 +161,8 @@ public class ValidContactMechRoleImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(ContactPackage.Literals.VALID_CONTACT_MECH_ROLE__ROLE_TYPE_ID, newRoleTypeId);
+	public void setRoleType(RoleType newRoleType) {
+		eSet(ContactPackage.Literals.VALID_CONTACT_MECH_ROLE__ROLE_TYPE, newRoleType);
 	}
 
 	/**
@@ -171,8 +171,8 @@ public class ValidContactMechRoleImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public ContactMechType getContactMechTypeId() {
-		return (ContactMechType)eGet(ContactPackage.Literals.VALID_CONTACT_MECH_ROLE__CONTACT_MECH_TYPE_ID, true);
+	public ContactMechType getContactMechType() {
+		return (ContactMechType)eGet(ContactPackage.Literals.VALID_CONTACT_MECH_ROLE__CONTACT_MECH_TYPE, true);
 	}
 
 	/**
@@ -181,8 +181,8 @@ public class ValidContactMechRoleImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setContactMechTypeId(ContactMechType newContactMechTypeId) {
-		eSet(ContactPackage.Literals.VALID_CONTACT_MECH_ROLE__CONTACT_MECH_TYPE_ID, newContactMechTypeId);
+	public void setContactMechType(ContactMechType newContactMechType) {
+		eSet(ContactPackage.Literals.VALID_CONTACT_MECH_ROLE__CONTACT_MECH_TYPE, newContactMechType);
 	}
 
 	/**

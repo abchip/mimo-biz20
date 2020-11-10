@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupMemberImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupMemberImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupMemberImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupMemberImpl#getPaymentGroupId <em>Payment Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupMemberImpl#getPaymentId <em>Payment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupMemberImpl#getPaymentGroup <em>Payment Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupMemberImpl#getPayment <em>Payment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupMemberImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupMemberImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupMemberImpl#getThruDate <em>Thru Date</em>}</li>
@@ -154,6 +154,46 @@ public class PaymentGroupMemberImpl extends EntityIdentifiableImpl implements Pa
 	 * @generated
 	 */
 	@Override
+	public PaymentGroup getPaymentGroup() {
+		return (PaymentGroup)eGet(PaymentPackage.Literals.PAYMENT_GROUP_MEMBER__PAYMENT_GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPaymentGroup(PaymentGroup newPaymentGroup) {
+		eSet(PaymentPackage.Literals.PAYMENT_GROUP_MEMBER__PAYMENT_GROUP, newPaymentGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Payment getPayment() {
+		return (Payment)eGet(PaymentPackage.Literals.PAYMENT_GROUP_MEMBER__PAYMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPayment(Payment newPayment) {
+		eSet(PaymentPackage.Literals.PAYMENT_GROUP_MEMBER__PAYMENT, newPayment);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(PaymentPackage.Literals.PAYMENT_GROUP_MEMBER__FROM_DATE, true);
 	}
@@ -244,46 +284,6 @@ public class PaymentGroupMemberImpl extends EntityIdentifiableImpl implements Pa
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PaymentGroup getPaymentGroupId() {
-		return (PaymentGroup)eGet(PaymentPackage.Literals.PAYMENT_GROUP_MEMBER__PAYMENT_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaymentGroupId(PaymentGroup newPaymentGroupId) {
-		eSet(PaymentPackage.Literals.PAYMENT_GROUP_MEMBER__PAYMENT_GROUP_ID, newPaymentGroupId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Payment getPaymentId() {
-		return (Payment)eGet(PaymentPackage.Literals.PAYMENT_GROUP_MEMBER__PAYMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaymentId(Payment newPaymentId) {
-		eSet(PaymentPackage.Literals.PAYMENT_GROUP_MEMBER__PAYMENT_ID, newPaymentId);
 	}
 
 } //PaymentGroupMemberImpl

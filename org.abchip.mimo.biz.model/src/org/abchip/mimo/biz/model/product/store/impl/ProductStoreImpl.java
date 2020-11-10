@@ -66,10 +66,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isCheckInventory <em>Check Inventory</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getCompanyName <em>Company Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getDaysToCancelNonPay <em>Days To Cancel Non Pay</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getDefaultCurrencyUomId <em>Default Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getDefaultCurrencyUom <em>Default Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getDefaultLocaleString <em>Default Locale String</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getDefaultPassword <em>Default Password</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getDefaultSalesChannelEnumId <em>Default Sales Channel Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getDefaultSalesChannelEnum <em>Default Sales Channel Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getDefaultTimeZoneString <em>Default Time Zone String</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getDigProdUploadCategoryId <em>Dig Prod Upload Category Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getDigitalItemApprovedStatus <em>Digital Item Approved Status</em>}</li>
@@ -79,7 +79,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getHeaderApprovedStatus <em>Header Approved Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getHeaderCancelStatus <em>Header Cancel Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getHeaderDeclinedStatus <em>Header Declined Status</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getInventoryFacilityId <em>Inventory Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getInventoryFacility <em>Inventory Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isIsDemoStore <em>Is Demo Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isIsImmediatelyFulfilled <em>Is Immediately Fulfilled</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getItemApprovedStatus <em>Item Approved Status</em>}</li>
@@ -97,8 +97,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getOneInventoryFacility <em>One Inventory Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getOrderDecimalQuantity <em>Order Decimal Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getOrderNumberPrefix <em>Order Number Prefix</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getPayToPartyId <em>Pay To Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getPrimaryStoreGroupId <em>Primary Store Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getPayToParty <em>Pay To Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getPrimaryStoreGroup <em>Primary Store Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isProdSearchExcludeVariants <em>Prod Search Exclude Variants</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getProductStoreCatalogs <em>Product Store Catalogs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getProductStoreEmailSettings <em>Product Store Email Settings</em>}</li>
@@ -113,9 +113,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isReqShipAddrForDigItems <em>Req Ship Addr For Dig Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isRequireCustomerRole <em>Require Customer Role</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isRequireInventory <em>Require Inventory</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getRequirementMethodEnumId <em>Requirement Method Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getRequirementMethodEnum <em>Requirement Method Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isReserveInventory <em>Reserve Inventory</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getReserveOrderEnumId <em>Reserve Order Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getReserveOrderEnum <em>Reserve Order Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isRetryFailedAuths <em>Retry Failed Auths</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isSelectPaymentTypePerItem <em>Select Payment Type Per Item</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getSetOwnerUponIssuance <em>Set Owner Upon Issuance</em>}</li>
@@ -125,7 +125,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isShowPricesWithVatTax <em>Show Prices With Vat Tax</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isShowTaxIsExempt <em>Show Tax Is Exempt</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isSplitPayPrefPerShpGrp <em>Split Pay Pref Per Shp Grp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getStoreCreditAccountEnumId <em>Store Credit Account Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getStoreCreditAccountEnum <em>Store Credit Account Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getStoreCreditValidDays <em>Store Credit Valid Days</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getStoreName <em>Store Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getSubtitle <em>Subtitle</em>}</li>
@@ -596,8 +596,8 @@ public class ProductStoreImpl extends EntityIdentifiableImpl implements ProductS
 	 * @generated
 	 */
 	@Override
-	public Uom getDefaultCurrencyUomId() {
-		return (Uom)eGet(StorePackage.Literals.PRODUCT_STORE__DEFAULT_CURRENCY_UOM_ID, true);
+	public Uom getDefaultCurrencyUom() {
+		return (Uom)eGet(StorePackage.Literals.PRODUCT_STORE__DEFAULT_CURRENCY_UOM, true);
 	}
 
 	/**
@@ -606,8 +606,8 @@ public class ProductStoreImpl extends EntityIdentifiableImpl implements ProductS
 	 * @generated
 	 */
 	@Override
-	public void setDefaultCurrencyUomId(Uom newDefaultCurrencyUomId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE__DEFAULT_CURRENCY_UOM_ID, newDefaultCurrencyUomId);
+	public void setDefaultCurrencyUom(Uom newDefaultCurrencyUom) {
+		eSet(StorePackage.Literals.PRODUCT_STORE__DEFAULT_CURRENCY_UOM, newDefaultCurrencyUom);
 	}
 
 	/**
@@ -656,8 +656,8 @@ public class ProductStoreImpl extends EntityIdentifiableImpl implements ProductS
 	 * @generated
 	 */
 	@Override
-	public Enumeration getDefaultSalesChannelEnumId() {
-		return (Enumeration)eGet(StorePackage.Literals.PRODUCT_STORE__DEFAULT_SALES_CHANNEL_ENUM_ID, true);
+	public Enumeration getDefaultSalesChannelEnum() {
+		return (Enumeration)eGet(StorePackage.Literals.PRODUCT_STORE__DEFAULT_SALES_CHANNEL_ENUM, true);
 	}
 
 	/**
@@ -666,8 +666,8 @@ public class ProductStoreImpl extends EntityIdentifiableImpl implements ProductS
 	 * @generated
 	 */
 	@Override
-	public void setDefaultSalesChannelEnumId(Enumeration newDefaultSalesChannelEnumId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE__DEFAULT_SALES_CHANNEL_ENUM_ID, newDefaultSalesChannelEnumId);
+	public void setDefaultSalesChannelEnum(Enumeration newDefaultSalesChannelEnum) {
+		eSet(StorePackage.Literals.PRODUCT_STORE__DEFAULT_SALES_CHANNEL_ENUM, newDefaultSalesChannelEnum);
 	}
 
 	/**
@@ -969,6 +969,26 @@ public class ProductStoreImpl extends EntityIdentifiableImpl implements ProductS
 	 * @generated
 	 */
 	@Override
+	public Facility getInventoryFacility() {
+		return (Facility)eGet(StorePackage.Literals.PRODUCT_STORE__INVENTORY_FACILITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInventoryFacility(Facility newInventoryFacility) {
+		eSet(StorePackage.Literals.PRODUCT_STORE__INVENTORY_FACILITY, newInventoryFacility);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public StatusItem getItemApprovedStatus() {
 		return (StatusItem)eGet(StorePackage.Literals.PRODUCT_STORE__ITEM_APPROVED_STATUS, true);
 	}
@@ -1169,6 +1189,46 @@ public class ProductStoreImpl extends EntityIdentifiableImpl implements ProductS
 	 * @generated
 	 */
 	@Override
+	public Party getPayToParty() {
+		return (Party)eGet(StorePackage.Literals.PRODUCT_STORE__PAY_TO_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPayToParty(Party newPayToParty) {
+		eSet(StorePackage.Literals.PRODUCT_STORE__PAY_TO_PARTY, newPayToParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductStoreGroup getPrimaryStoreGroup() {
+		return (ProductStoreGroup)eGet(StorePackage.Literals.PRODUCT_STORE__PRIMARY_STORE_GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPrimaryStoreGroup(ProductStoreGroup newPrimaryStoreGroup) {
+		eSet(StorePackage.Literals.PRODUCT_STORE__PRIMARY_STORE_GROUP, newPrimaryStoreGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean isReqShipAddrForDigItems() {
 		return (Boolean)eGet(StorePackage.Literals.PRODUCT_STORE__REQ_SHIP_ADDR_FOR_DIG_ITEMS, true);
 	}
@@ -1229,6 +1289,26 @@ public class ProductStoreImpl extends EntityIdentifiableImpl implements ProductS
 	 * @generated
 	 */
 	@Override
+	public Enumeration getRequirementMethodEnum() {
+		return (Enumeration)eGet(StorePackage.Literals.PRODUCT_STORE__REQUIREMENT_METHOD_ENUM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRequirementMethodEnum(Enumeration newRequirementMethodEnum) {
+		eSet(StorePackage.Literals.PRODUCT_STORE__REQUIREMENT_METHOD_ENUM, newRequirementMethodEnum);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean isReserveInventory() {
 		return (Boolean)eGet(StorePackage.Literals.PRODUCT_STORE__RESERVE_INVENTORY, true);
 	}
@@ -1241,6 +1321,26 @@ public class ProductStoreImpl extends EntityIdentifiableImpl implements ProductS
 	@Override
 	public void setReserveInventory(boolean newReserveInventory) {
 		eSet(StorePackage.Literals.PRODUCT_STORE__RESERVE_INVENTORY, newReserveInventory);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Enumeration getReserveOrderEnum() {
+		return (Enumeration)eGet(StorePackage.Literals.PRODUCT_STORE__RESERVE_ORDER_ENUM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setReserveOrderEnum(Enumeration newReserveOrderEnum) {
+		eSet(StorePackage.Literals.PRODUCT_STORE__RESERVE_ORDER_ENUM, newReserveOrderEnum);
 	}
 
 	/**
@@ -1429,8 +1529,8 @@ public class ProductStoreImpl extends EntityIdentifiableImpl implements ProductS
 	 * @generated
 	 */
 	@Override
-	public Party getPayToPartyId() {
-		return (Party)eGet(StorePackage.Literals.PRODUCT_STORE__PAY_TO_PARTY_ID, true);
+	public Enumeration getStoreCreditAccountEnum() {
+		return (Enumeration)eGet(StorePackage.Literals.PRODUCT_STORE__STORE_CREDIT_ACCOUNT_ENUM, true);
 	}
 
 	/**
@@ -1439,68 +1539,8 @@ public class ProductStoreImpl extends EntityIdentifiableImpl implements ProductS
 	 * @generated
 	 */
 	@Override
-	public void setPayToPartyId(Party newPayToPartyId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE__PAY_TO_PARTY_ID, newPayToPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Enumeration getRequirementMethodEnumId() {
-		return (Enumeration)eGet(StorePackage.Literals.PRODUCT_STORE__REQUIREMENT_METHOD_ENUM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRequirementMethodEnumId(Enumeration newRequirementMethodEnumId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE__REQUIREMENT_METHOD_ENUM_ID, newRequirementMethodEnumId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Enumeration getReserveOrderEnumId() {
-		return (Enumeration)eGet(StorePackage.Literals.PRODUCT_STORE__RESERVE_ORDER_ENUM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setReserveOrderEnumId(Enumeration newReserveOrderEnumId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE__RESERVE_ORDER_ENUM_ID, newReserveOrderEnumId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Enumeration getStoreCreditAccountEnumId() {
-		return (Enumeration)eGet(StorePackage.Literals.PRODUCT_STORE__STORE_CREDIT_ACCOUNT_ENUM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStoreCreditAccountEnumId(Enumeration newStoreCreditAccountEnumId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE__STORE_CREDIT_ACCOUNT_ENUM_ID, newStoreCreditAccountEnumId);
+	public void setStoreCreditAccountEnum(Enumeration newStoreCreditAccountEnum) {
+		eSet(StorePackage.Literals.PRODUCT_STORE__STORE_CREDIT_ACCOUNT_ENUM, newStoreCreditAccountEnum);
 	}
 
 	/**
@@ -1787,26 +1827,6 @@ public class ProductStoreImpl extends EntityIdentifiableImpl implements ProductS
 	 * @generated
 	 */
 	@Override
-	public ProductStoreGroup getPrimaryStoreGroupId() {
-		return (ProductStoreGroup)eGet(StorePackage.Literals.PRODUCT_STORE__PRIMARY_STORE_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPrimaryStoreGroupId(ProductStoreGroup newPrimaryStoreGroupId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE__PRIMARY_STORE_GROUP_ID, newPrimaryStoreGroupId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean isProdSearchExcludeVariants() {
 		return (Boolean)eGet(StorePackage.Literals.PRODUCT_STORE__PROD_SEARCH_EXCLUDE_VARIANTS, true);
 	}
@@ -1896,26 +1916,6 @@ public class ProductStoreImpl extends EntityIdentifiableImpl implements ProductS
 	@Override
 	public List<ProductStorePromoAppl> getProductStorePromoAppls() {
 		return (List<ProductStorePromoAppl>)eGet(StorePackage.Literals.PRODUCT_STORE__PRODUCT_STORE_PROMO_APPLS, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Facility getInventoryFacilityId() {
-		return (Facility)eGet(StorePackage.Literals.PRODUCT_STORE__INVENTORY_FACILITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInventoryFacilityId(Facility newInventoryFacilityId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE__INVENTORY_FACILITY_ID, newInventoryFacilityId);
 	}
 
 	/**

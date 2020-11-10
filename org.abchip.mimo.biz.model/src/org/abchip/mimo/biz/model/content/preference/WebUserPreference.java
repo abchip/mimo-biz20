@@ -21,9 +21,9 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getWebPreferenceTypeId <em>Web Preference Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getUserLoginId <em>User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getWebPreferenceType <em>Web Preference Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getUserLogin <em>User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getVisitId <em>Visit Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getWebPreferenceValue <em>Web Preference Value</em>}</li>
  * </ul>
@@ -34,58 +34,73 @@ import org.abchip.mimo.entity.EntityTyped;
  */
 public interface WebUserPreference extends EntityTyped<WebPreferenceType>, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Web Preference Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.content.preference.PreferencePackage#getWebUserPreference_PartyId()
-	 * @model keys="partyId" required="true"
+	 * @return the value of the '<em>Web Preference Type</em>' reference.
+	 * @see #setWebPreferenceType(WebPreferenceType)
+	 * @see org.abchip.mimo.biz.model.content.preference.PreferencePackage#getWebUserPreference_WebPreferenceType()
+	 * @model keys="webPreferenceTypeId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Party getPartyId();
+	WebPreferenceType getWebPreferenceType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getWebPreferenceType <em>Web Preference Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
+	 * @param value the new value of the '<em>Web Preference Type</em>' reference.
+	 * @see #getWebPreferenceType()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setWebPreferenceType(WebPreferenceType value);
 
 	/**
-	 * Returns the value of the '<em><b>User Login Id</b></em>' reference.
+	 * Returns the value of the '<em><b>User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>User Login Id</em>' reference.
-	 * @see #setUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.content.preference.PreferencePackage#getWebUserPreference_UserLoginId()
+	 * @return the value of the '<em>User Login</em>' reference.
+	 * @see #setUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.content.preference.PreferencePackage#getWebUserPreference_UserLogin()
 	 * @model keys="userLoginId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	UserLogin getUserLoginId();
+	UserLogin getUserLogin();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getUserLoginId <em>User Login Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getUserLogin <em>User Login</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>User Login Id</em>' reference.
-	 * @see #getUserLoginId()
+	 * @param value the new value of the '<em>User Login</em>' reference.
+	 * @see #getUserLogin()
 	 * @generated
 	 */
-	void setUserLoginId(UserLogin value);
+	void setUserLogin(UserLogin value);
+
+	/**
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.content.preference.PreferencePackage#getWebUserPreference_Party()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getParty <em>Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
+	 * @generated
+	 */
+	void setParty(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Visit Id</b></em>' attribute.
@@ -114,33 +129,6 @@ public interface WebUserPreference extends EntityTyped<WebPreferenceType>, Entit
 	 * @generated
 	 */
 	void setVisitId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Web Preference Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Web Preference Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Web Preference Type Id</em>' reference.
-	 * @see #setWebPreferenceTypeId(WebPreferenceType)
-	 * @see org.abchip.mimo.biz.model.content.preference.PreferencePackage#getWebUserPreference_WebPreferenceTypeId()
-	 * @model keys="webPreferenceTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	WebPreferenceType getWebPreferenceTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getWebPreferenceTypeId <em>Web Preference Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Web Preference Type Id</em>' reference.
-	 * @see #getWebPreferenceTypeId()
-	 * @generated
-	 */
-	void setWebPreferenceTypeId(WebPreferenceType value);
 
 	/**
 	 * Returns the value of the '<em><b>Web Preference Value</b></em>' attribute.

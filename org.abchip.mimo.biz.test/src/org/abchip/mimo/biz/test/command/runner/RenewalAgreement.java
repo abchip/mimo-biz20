@@ -143,7 +143,7 @@ public class RenewalAgreement implements Callable<Long> {
 
 					try (EntityIterator<AgreementProductAppl> agreementProducts = agreementProductApplReader.find(productFilter)) {
 						for (AgreementProductAppl agreementProduct : agreementProducts) {
-							createRowProduct(agreement, agreementProduct.getProductId(), agreementItem.getAgreementItemSeqId());
+							createRowProduct(agreement, agreementProduct.getProduct(), agreementItem.getAgreementItemSeqId());
 						}
 					}
 					// Creo la fattura dalla nuova riga
@@ -152,7 +152,7 @@ public class RenewalAgreement implements Callable<Long> {
 					productFilter = "agreementId = '" + agreement.getAgreementId() + "' AND agreementItemSeqId = '" + agreementItem.getAgreementItemSeqId() + "'";
 					try (EntityIterator<AgreementProductAppl> agreementProducts = agreementProductApplReader.find(productFilter)) {
 						for (AgreementProductAppl agreementProduct : agreementProducts) {
-							createInvoiceItem(invoice, agreementProduct, 1, agreementTermLast.getInvoiceItemTypeId().getID());
+							createInvoiceItem(invoice, agreementProduct, 1, agreementTermLast.getInvoiceItemType().getID());
 						}
 					}
 
@@ -170,12 +170,12 @@ public class RenewalAgreement implements Callable<Long> {
 					LOGGER.info("Creato pagamento " + paymentId);
 
 					// Effettuo pagamento Tramite Stripe
-					CreditCard creditCard = invoice.getPartyId().getCreditCard();
+					CreditCard creditCard = invoice.getParty().getCreditCard();
 					if (creditCard != null) {
 						Stripe.apiKey = StripePaymentManager.API_KEY;
 
-						String description = "Payment invoice nr. " + invoice.getID() + " - customer " + invoice.getPartyId().getID();
-						PaymentIntent intent = StripePaymentManager.createPaymentIntent("card", invoice.getTotal(), invoice.getCurrencyUomId().getID(), description);
+						String description = "Payment invoice nr. " + invoice.getID() + " - customer " + invoice.getParty().getID();
+						PaymentIntent intent = StripePaymentManager.createPaymentIntent("card", invoice.getTotal(), invoice.getCurrencyUom().getID(), description);
 						String[] values = creditCard.getExpireDate().split("/");
 						com.stripe.model.PaymentMethod paymentMethod = StripePaymentManager.createPaymentCardMethod(creditCard.getCardNumber(), Integer.parseInt(values[0]),
 								Integer.parseInt(values[1]), creditCard.getDescription());
@@ -211,8 +211,8 @@ public class RenewalAgreement implements Callable<Long> {
 		ResourceWriter<AgreementItem> agreementItemWriter = context.getResourceManager().getResourceWriter(AgreementItem.class);
 
 		AgreementItem agreementItem = agreementItemWriter.make();
-		agreementItem.setAgreementId(agreement);
-		agreementItem.setAgreementItemTypeId(agreementType);
+		agreementItem.setAgreement(agreement);
+		agreementItem.setAgreementItemType(agreementType);
 		agreementItem.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 		agreementItem.setAgreementText(text);
 		agreementItemWriter.create(agreementItem);
@@ -220,10 +220,10 @@ public class RenewalAgreement implements Callable<Long> {
 		ResourceWriter<AgreementTerm> agreementTermWriter = context.getResourceManager().getResourceWriter(AgreementTerm.class);
 		AgreementTerm agreementTerm = agreementTermWriter.make();
 
-		agreementTerm.setTermTypeId(termType);
-		agreementTerm.setAgreementId(agreement);
+		agreementTerm.setTermType(termType);
+		agreementTerm.setAgreement(agreement);
 		agreementTerm.setAgreementItemSeqId(agreementItem.getAgreementItemSeqId());
-		agreementTerm.setInvoiceItemTypeId(invoiceItemType);
+		agreementTerm.setInvoiceItemType(invoiceItemType);
 		Date date1 = new Date();
 
 		Calendar cal = Calendar.getInstance();
@@ -244,9 +244,9 @@ public class RenewalAgreement implements Callable<Long> {
 		// AgreementProductAppl
 		ResourceWriter<AgreementProductAppl> agreementProductApplWriter = context.getResourceManager().getResourceWriter(AgreementProductAppl.class);
 		AgreementProductAppl agreementProductAppl = agreementProductApplWriter.make();
-		agreementProductAppl.setAgreementId(agreement);
+		agreementProductAppl.setAgreement(agreement);
 		agreementProductAppl.setAgreementItemSeqId(itemSeqId);
-		agreementProductAppl.setProductId(product);
+		agreementProductAppl.setProduct(product);
 
 		// price calculation
 		CalculateProductPrice calculateProductPrice = serviceManager.prepare(CalculateProductPrice.class);
@@ -269,11 +269,11 @@ public class RenewalAgreement implements Callable<Long> {
 		// Invoice Header
 		ResourceWriter<Invoice> invoiceWriter = context.getResourceManager().getResourceWriter(Invoice.class);
 		Invoice invoice = invoiceWriter.make();
-		invoice.setInvoiceTypeId(context.createProxy(InvoiceType.class, "SALES_INVOICE"));
+		invoice.setInvoiceType(context.createProxy(InvoiceType.class, "SALES_INVOICE"));
 		invoice.setInvoiceDate(new Date());
-		invoice.setStatusId(context.createProxy(StatusItem.class, "INVOICE_IN_PROCESS"));
-		invoice.setCurrencyUomId(commonDefault.getCurrencyUom());
-		invoice.setPartyId(party);
+		invoice.setStatus(context.createProxy(StatusItem.class, "INVOICE_IN_PROCESS"));
+		invoice.setCurrencyUom(commonDefault.getCurrencyUom());
+		invoice.setParty(party);
 		invoice.setPartyIdFrom(partyDefault.getOrganization());
 		if (!description.isEmpty())
 			invoice.setDescription(description);
@@ -282,9 +282,9 @@ public class RenewalAgreement implements Callable<Long> {
 		// InvoiceContactMech
 		ResourceWriter<InvoiceContactMech> invoiceContactMechWriter = context.getResourceManager().getResourceWriter(InvoiceContactMech.class);
 		InvoiceContactMech invoiceContactMech = invoiceContactMechWriter.make();
-		invoiceContactMech.setInvoiceId(invoice);
-		invoiceContactMech.setContactMechPurposeTypeId(context.createProxy(ContactMechPurposeType.class, "PAYMENT_LOCATION"));
-		invoiceContactMech.setContactMechId(party.getPostalAddress());
+		invoiceContactMech.setInvoice(invoice);
+		invoiceContactMech.setContactMechPurposeType(context.createProxy(ContactMechPurposeType.class, "PAYMENT_LOCATION"));
+		invoiceContactMech.setContactMech(party.getPostalAddress());
 		invoiceContactMechWriter.create(invoiceContactMech);
 
 		return invoice;
@@ -293,10 +293,10 @@ public class RenewalAgreement implements Callable<Long> {
 	private void createInvoiceItem(Invoice invoice, AgreementProductAppl agreementProductAppl, int quantity, String itemType) throws ResourceException, ServiceException {
 		ResourceWriter<InvoiceItem> invoiceItemWriter = context.getResourceManager().getResourceWriter(InvoiceItem.class);
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
-		invoiceItem.setInvoiceId(invoice);
-		invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, itemType));
-		invoiceItem.setProductId(agreementProductAppl.getProductId());
-		invoiceItem.setDescription(agreementProductAppl.getProductId().getProductName());
+		invoiceItem.setInvoice(invoice);
+		invoiceItem.setInvoiceItemType(context.createProxy(InvoiceItemType.class, itemType));
+		invoiceItem.setProduct(agreementProductAppl.getProduct());
+		invoiceItem.setDescription(agreementProductAppl.getProduct().getProductName());
 		invoiceItem.setQuantity(new BigDecimal(quantity));
 		invoiceItem.setAmount(agreementProductAppl.getPrice());
 		invoiceItemWriter.create(invoiceItem);
@@ -306,20 +306,20 @@ public class RenewalAgreement implements Callable<Long> {
 
 		ServiceManager serviceManager = context.getServiceManager();
 
-		PaymentMethod paymentMethod = invoice.getPartyId().getPaymentMethod("CREDIT_CARD");
+		PaymentMethod paymentMethod = invoice.getParty().getPaymentMethod("CREDIT_CARD");
 		if (paymentMethod == null) {
-			LOGGER.warn("Payment method not found for party " + invoice.getPartyId().getID());
+			LOGGER.warn("Payment method not found for party " + invoice.getParty().getID());
 		}
 
 		ResourceWriter<Payment> paymentWriter = context.getResourceManager().getResourceWriter(Payment.class);
 		Payment payment = paymentWriter.make();
 		payment.setAmount(invoice.getTotal());
 		payment.setPartyIdTo(invoice.getPartyIdFrom());
-		payment.setPartyIdFrom(invoice.getPartyId());
-		payment.setPaymentTypeId(context.createProxy(PaymentType.class, "CUSTOMER_PAYMENT"));
-		payment.setPaymentMethodTypeId(context.createProxy(PaymentMethodType.class, "CREDIT_CARD"));
-		payment.setPaymentMethodId(paymentMethod);
-		payment.setCurrencyUomId(commonDefault.getCurrencyUom());
+		payment.setPartyIdFrom(invoice.getParty());
+		payment.setPaymentType(context.createProxy(PaymentType.class, "CUSTOMER_PAYMENT"));
+		payment.setPaymentMethodType(context.createProxy(PaymentMethodType.class, "CREDIT_CARD"));
+		payment.setPaymentMethod(paymentMethod);
+		payment.setCurrencyUom(commonDefault.getCurrencyUom());
 		payment.setPaymentRefNum("Invoice number " + invoice.getID());
 
 		paymentWriter.create(payment);

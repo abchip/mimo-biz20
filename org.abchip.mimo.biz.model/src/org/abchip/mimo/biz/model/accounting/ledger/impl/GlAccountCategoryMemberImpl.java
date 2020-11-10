@@ -31,8 +31,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryMemberImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryMemberImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryMemberImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryMemberImpl#getGlAccountId <em>Gl Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryMemberImpl#getGlAccountCategoryId <em>Gl Account Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryMemberImpl#getGlAccount <em>Gl Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryMemberImpl#getGlAccountCategory <em>Gl Account Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryMemberImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryMemberImpl#getAmountPercentage <em>Amount Percentage</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryMemberImpl#getThruDate <em>Thru Date</em>}</li>
@@ -156,6 +156,46 @@ public class GlAccountCategoryMemberImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
+	public GlAccount getGlAccount() {
+		return (GlAccount)eGet(LedgerPackage.Literals.GL_ACCOUNT_CATEGORY_MEMBER__GL_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGlAccount(GlAccount newGlAccount) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT_CATEGORY_MEMBER__GL_ACCOUNT, newGlAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GlAccountCategory getGlAccountCategory() {
+		return (GlAccountCategory)eGet(LedgerPackage.Literals.GL_ACCOUNT_CATEGORY_MEMBER__GL_ACCOUNT_CATEGORY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGlAccountCategory(GlAccountCategory newGlAccountCategory) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT_CATEGORY_MEMBER__GL_ACCOUNT_CATEGORY, newGlAccountCategory);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAmountPercentage() {
 		return (BigDecimal)eGet(LedgerPackage.Literals.GL_ACCOUNT_CATEGORY_MEMBER__AMOUNT_PERCENTAGE, true);
 	}
@@ -246,46 +286,6 @@ public class GlAccountCategoryMemberImpl extends EntityIdentifiableImpl implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GlAccount getGlAccountId() {
-		return (GlAccount)eGet(LedgerPackage.Literals.GL_ACCOUNT_CATEGORY_MEMBER__GL_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGlAccountId(GlAccount newGlAccountId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT_CATEGORY_MEMBER__GL_ACCOUNT_ID, newGlAccountId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GlAccountCategory getGlAccountCategoryId() {
-		return (GlAccountCategory)eGet(LedgerPackage.Literals.GL_ACCOUNT_CATEGORY_MEMBER__GL_ACCOUNT_CATEGORY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGlAccountCategoryId(GlAccountCategory newGlAccountCategoryId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT_CATEGORY_MEMBER__GL_ACCOUNT_CATEGORY_ID, newGlAccountCategoryId);
 	}
 
 } //GlAccountCategoryMemberImpl

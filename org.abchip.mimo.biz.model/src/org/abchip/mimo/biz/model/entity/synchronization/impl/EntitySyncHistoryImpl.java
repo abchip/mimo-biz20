@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncHistoryImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncHistoryImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncHistoryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncHistoryImpl#getEntitySyncId <em>Entity Sync Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncHistoryImpl#getEntitySync <em>Entity Sync</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncHistoryImpl#getStartDate <em>Start Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncHistoryImpl#getBeginningSynchTime <em>Beginning Synch Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncHistoryImpl#getLastCandidateEndTime <em>Last Candidate End Time</em>}</li>
@@ -174,6 +174,26 @@ public class EntitySyncHistoryImpl extends EntityIdentifiableImpl implements Ent
 	 * @generated
 	 */
 	@Override
+	public EntitySync getEntitySync() {
+		return (EntitySync)eGet(SynchronizationPackage.Literals.ENTITY_SYNC_HISTORY__ENTITY_SYNC, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEntitySync(EntitySync newEntitySync) {
+		eSet(SynchronizationPackage.Literals.ENTITY_SYNC_HISTORY__ENTITY_SYNC, newEntitySync);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getBeginningSynchTime() {
 		return (Date)eGet(SynchronizationPackage.Literals.ENTITY_SYNC_HISTORY__BEGINNING_SYNCH_TIME, true);
 	}
@@ -186,26 +206,6 @@ public class EntitySyncHistoryImpl extends EntityIdentifiableImpl implements Ent
 	@Override
 	public void setBeginningSynchTime(Date newBeginningSynchTime) {
 		eSet(SynchronizationPackage.Literals.ENTITY_SYNC_HISTORY__BEGINNING_SYNCH_TIME, newBeginningSynchTime);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EntitySync getEntitySyncId() {
-		return (EntitySync)eGet(SynchronizationPackage.Literals.ENTITY_SYNC_HISTORY__ENTITY_SYNC_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setEntitySyncId(EntitySync newEntitySyncId) {
-		eSet(SynchronizationPackage.Literals.ENTITY_SYNC_HISTORY__ENTITY_SYNC_ID, newEntitySyncId);
 	}
 
 	/**

@@ -21,8 +21,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreCatalog#getProductStoreId <em>Product Store Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreCatalog#getProdCatalogId <em>Prod Catalog Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreCatalog#getProductStore <em>Product Store</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreCatalog#getProdCatalog <em>Prod Catalog</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreCatalog#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreCatalog#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreCatalog#getThruDate <em>Thru Date</em>}</li>
@@ -33,6 +33,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductStoreCatalog extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product Store</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Store</em>' reference.
+	 * @see #setProductStore(ProductStore)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreCatalog_ProductStore()
+	 * @model keys="productStoreId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductStore getProductStore();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreCatalog#getProductStore <em>Product Store</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Store</em>' reference.
+	 * @see #getProductStore()
+	 * @generated
+	 */
+	void setProductStore(ProductStore value);
+
+	/**
+	 * Returns the value of the '<em><b>Prod Catalog</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Prod Catalog</em>' reference.
+	 * @see #setProdCatalog(ProdCatalog)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreCatalog_ProdCatalog()
+	 * @model keys="prodCatalogId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProdCatalog getProdCatalog();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreCatalog#getProdCatalog <em>Prod Catalog</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Prod Catalog</em>' reference.
+	 * @see #getProdCatalog()
+	 * @generated
+	 */
+	void setProdCatalog(ProdCatalog value);
+
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -111,59 +157,5 @@ public interface ProductStoreCatalog extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Store Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store Id</em>' reference.
-	 * @see #setProductStoreId(ProductStore)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreCatalog_ProductStoreId()
-	 * @model keys="productStoreId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductStore getProductStoreId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreCatalog#getProductStoreId <em>Product Store Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store Id</em>' reference.
-	 * @see #getProductStoreId()
-	 * @generated
-	 */
-	void setProductStoreId(ProductStore value);
-
-	/**
-	 * Returns the value of the '<em><b>Prod Catalog Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Prod Catalog Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Prod Catalog Id</em>' reference.
-	 * @see #setProdCatalogId(ProdCatalog)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreCatalog_ProdCatalogId()
-	 * @model keys="prodCatalogId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProdCatalog getProdCatalogId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreCatalog#getProdCatalogId <em>Prod Catalog Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Prod Catalog Id</em>' reference.
-	 * @see #getProdCatalogId()
-	 * @generated
-	 */
-	void setProdCatalogId(ProdCatalog value);
 
 } // ProductStoreCatalog

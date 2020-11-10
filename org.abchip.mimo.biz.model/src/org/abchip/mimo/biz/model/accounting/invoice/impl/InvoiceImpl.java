@@ -43,9 +43,9 @@ import org.eclipse.emf.ecore.EOperation;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getInvoiceId <em>Invoice Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getBillingAccountId <em>Billing Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getContactMechId <em>Contact Mech Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getBillingAccount <em>Billing Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getContactMech <em>Contact Mech</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getDueDate <em>Due Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getInvoiceAttributes <em>Invoice Attributes</em>}</li>
@@ -53,14 +53,14 @@ import org.eclipse.emf.ecore.EOperation;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getInvoiceItems <em>Invoice Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getInvoiceMessage <em>Invoice Message</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getInvoiceNotes <em>Invoice Notes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getInvoiceTypeId <em>Invoice Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getInvoiceType <em>Invoice Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getPaidDate <em>Paid Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getPartyIdFrom <em>Party Id From</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getRecurrenceInfoId <em>Recurrence Info Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getRecurrenceInfo <em>Recurrence Info</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getReferenceNumber <em>Reference Number</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getRoleTypeId <em>Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getRoleType <em>Role Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @generated
@@ -180,60 +180,6 @@ public class InvoiceImpl extends EntityTypedImpl<InvoiceType> implements Invoice
 	 * @generated
 	 */
 	@Override
-	public BillingAccount getBillingAccountId() {
-		return (BillingAccount)eGet(InvoicePackage.Literals.INVOICE__BILLING_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBillingAccountId(BillingAccount newBillingAccountId) {
-		eSet(InvoicePackage.Literals.INVOICE__BILLING_ACCOUNT_ID, newBillingAccountId);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(InvoicePackage.Literals.INVOICE__CONTACT_MECH_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(InvoicePackage.Literals.INVOICE__CONTACT_MECH_ID, newContactMechId);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Uom getCurrencyUomId() {
-		return (Uom)eGet(InvoicePackage.Literals.INVOICE__CURRENCY_UOM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCurrencyUomId(Uom newCurrencyUomId) {
-		eSet(InvoicePackage.Literals.INVOICE__CURRENCY_UOM_ID, newCurrencyUomId);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getDescription() {
 		return (String)eGet(InvoicePackage.Literals.INVOICE__DESCRIPTION, true);
 	}
@@ -332,6 +278,26 @@ public class InvoiceImpl extends EntityTypedImpl<InvoiceType> implements Invoice
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InvoiceType getInvoiceType() {
+		return (InvoiceType)eGet(InvoicePackage.Literals.INVOICE__INVOICE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInvoiceType(InvoiceType newInvoiceType) {
+		eSet(InvoicePackage.Literals.INVOICE__INVOICE_TYPE, newInvoiceType);
+	}
+
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -350,21 +316,23 @@ public class InvoiceImpl extends EntityTypedImpl<InvoiceType> implements Invoice
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(InvoicePackage.Literals.INVOICE__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(InvoicePackage.Literals.INVOICE__PARTY, true);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(InvoicePackage.Literals.INVOICE__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(InvoicePackage.Literals.INVOICE__PARTY, newParty);
 	}
 
 	/**
@@ -386,21 +354,23 @@ public class InvoiceImpl extends EntityTypedImpl<InvoiceType> implements Invoice
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public RecurrenceInfo getRecurrenceInfoId() {
-		return (RecurrenceInfo)eGet(InvoicePackage.Literals.INVOICE__RECURRENCE_INFO_ID, true);
+	public RecurrenceInfo getRecurrenceInfo() {
+		return (RecurrenceInfo)eGet(InvoicePackage.Literals.INVOICE__RECURRENCE_INFO, true);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public void setRecurrenceInfoId(RecurrenceInfo newRecurrenceInfoId) {
-		eSet(InvoicePackage.Literals.INVOICE__RECURRENCE_INFO_ID, newRecurrenceInfoId);
+	public void setRecurrenceInfo(RecurrenceInfo newRecurrenceInfo) {
+		eSet(InvoicePackage.Literals.INVOICE__RECURRENCE_INFO, newRecurrenceInfo);
 	}
 
 	/**
@@ -422,39 +392,43 @@ public class InvoiceImpl extends EntityTypedImpl<InvoiceType> implements Invoice
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(InvoicePackage.Literals.INVOICE__ROLE_TYPE_ID, true);
+	public RoleType getRoleType() {
+		return (RoleType)eGet(InvoicePackage.Literals.INVOICE__ROLE_TYPE, true);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(InvoicePackage.Literals.INVOICE__ROLE_TYPE_ID, newRoleTypeId);
+	public void setRoleType(RoleType newRoleType) {
+		eSet(InvoicePackage.Literals.INVOICE__ROLE_TYPE, newRoleType);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(InvoicePackage.Literals.INVOICE__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(InvoicePackage.Literals.INVOICE__STATUS, true);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(InvoicePackage.Literals.INVOICE__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(InvoicePackage.Literals.INVOICE__STATUS, newStatus);
 	}
 
 	/**
@@ -524,24 +498,6 @@ public class InvoiceImpl extends EntityTypedImpl<InvoiceType> implements Invoice
 	 * @generated
 	 */
 	@Override
-	public InvoiceType getInvoiceTypeId() {
-		return (InvoiceType)eGet(InvoicePackage.Literals.INVOICE__INVOICE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInvoiceTypeId(InvoiceType newInvoiceTypeId) {
-		eSet(InvoicePackage.Literals.INVOICE__INVOICE_TYPE_ID, newInvoiceTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getInvoiceId() {
 		return (String)eGet(InvoicePackage.Literals.INVOICE__INVOICE_ID, true);
 	}
@@ -553,5 +509,65 @@ public class InvoiceImpl extends EntityTypedImpl<InvoiceType> implements Invoice
 	@Override
 	public void setInvoiceId(String newInvoiceId) {
 		eSet(InvoicePackage.Literals.INVOICE__INVOICE_ID, newInvoiceId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BillingAccount getBillingAccount() {
+		return (BillingAccount)eGet(InvoicePackage.Literals.INVOICE__BILLING_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBillingAccount(BillingAccount newBillingAccount) {
+		eSet(InvoicePackage.Literals.INVOICE__BILLING_ACCOUNT, newBillingAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(InvoicePackage.Literals.INVOICE__CONTACT_MECH, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(InvoicePackage.Literals.INVOICE__CONTACT_MECH, newContactMech);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Uom getCurrencyUom() {
+		return (Uom)eGet(InvoicePackage.Literals.INVOICE__CURRENCY_UOM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCurrencyUom(Uom newCurrencyUom) {
+		eSet(InvoicePackage.Literals.INVOICE__CURRENCY_UOM, newCurrencyUom);
 	}
 } // InvoiceImpl

@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransTypeAttrImpl#getFinAccountTransTypeId <em>Fin Account Trans Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransTypeAttrImpl#getFinAccountTransType <em>Fin Account Trans Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -151,6 +151,26 @@ public class FinAccountTransTypeAttrImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
+	public FinAccountTransType getFinAccountTransType() {
+		return (FinAccountTransType)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS_TYPE_ATTR__FIN_ACCOUNT_TRANS_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFinAccountTransType(FinAccountTransType newFinAccountTransType) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS_TYPE_ATTR__FIN_ACCOUNT_TRANS_TYPE, newFinAccountTransType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS_TYPE_ATTR__DESCRIPTION, true);
 	}
@@ -221,26 +241,6 @@ public class FinAccountTransTypeAttrImpl extends EntityIdentifiableImpl implemen
 	@Override
 	public void setAttrName(String newAttrName) {
 		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS_TYPE_ATTR__ATTR_NAME, newAttrName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FinAccountTransType getFinAccountTransTypeId() {
-		return (FinAccountTransType)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS_TYPE_ATTR__FIN_ACCOUNT_TRANS_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFinAccountTransTypeId(FinAccountTransType newFinAccountTransTypeId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS_TYPE_ATTR__FIN_ACCOUNT_TRANS_TYPE_ID, newFinAccountTransTypeId);
 	}
 
 } //FinAccountTransTypeAttrImpl

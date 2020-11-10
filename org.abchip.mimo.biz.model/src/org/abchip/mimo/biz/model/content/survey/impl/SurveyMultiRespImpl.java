@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyMultiRespImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyMultiRespImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyMultiRespImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyMultiRespImpl#getSurveyId <em>Survey Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyMultiRespImpl#getSurvey <em>Survey</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyMultiRespImpl#getSurveyMultiRespId <em>Survey Multi Resp Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyMultiRespImpl#getMultiRespTitle <em>Multi Resp Title</em>}</li>
  * </ul>
@@ -152,6 +152,26 @@ public class SurveyMultiRespImpl extends EntityIdentifiableImpl implements Surve
 	 * @generated
 	 */
 	@Override
+	public Survey getSurvey() {
+		return (Survey)eGet(SurveyPackage.Literals.SURVEY_MULTI_RESP__SURVEY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSurvey(Survey newSurvey) {
+		eSet(SurveyPackage.Literals.SURVEY_MULTI_RESP__SURVEY, newSurvey);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getMultiRespTitle() {
 		return (String)eGet(SurveyPackage.Literals.SURVEY_MULTI_RESP__MULTI_RESP_TITLE, true);
 	}
@@ -202,26 +222,6 @@ public class SurveyMultiRespImpl extends EntityIdentifiableImpl implements Surve
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Survey getSurveyId() {
-		return (Survey)eGet(SurveyPackage.Literals.SURVEY_MULTI_RESP__SURVEY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSurveyId(Survey newSurveyId) {
-		eSet(SurveyPackage.Literals.SURVEY_MULTI_RESP__SURVEY_ID, newSurveyId);
 	}
 
 	/**

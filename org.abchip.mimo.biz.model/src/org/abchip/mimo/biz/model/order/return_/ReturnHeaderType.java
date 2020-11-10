@@ -21,7 +21,7 @@ import org.abchip.mimo.entity.EntityType;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnHeaderType#getReturnHeaderTypeId <em>Return Header Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnHeaderType#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnHeaderType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnHeaderType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeaderType()
@@ -56,30 +56,26 @@ public interface ReturnHeaderType extends EntityType<ReturnHeader>, EntityInfo {
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(ReturnHeaderType)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeaderType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(ReturnHeaderType)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeaderType_ParentType()
 	 * @model keys="returnHeaderTypeId"
 	 * @generated
 	 */
-	ReturnHeaderType getParentTypeId();
+	ReturnHeaderType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnHeaderType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnHeaderType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(ReturnHeaderType value);
+	void setParentType(ReturnHeaderType value);
 
 	/**
 	 * Returns the value of the '<em><b>Return Header Type Id</b></em>' attribute.

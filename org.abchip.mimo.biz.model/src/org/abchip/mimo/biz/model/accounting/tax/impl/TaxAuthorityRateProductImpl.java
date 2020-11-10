@@ -37,11 +37,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityRateProductImpl#isIsTaxInShippingPrice <em>Is Tax In Shipping Price</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityRateProductImpl#getMinItemPrice <em>Min Item Price</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityRateProductImpl#getMinPurchase <em>Min Purchase</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityRateProductImpl#getProductCategoryId <em>Product Category Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityRateProductImpl#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityRateProductImpl#getProductCategory <em>Product Category</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityRateProductImpl#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityRateProductImpl#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityRateProductImpl#getTaxAuthPartyId <em>Tax Auth Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityRateProductImpl#getTaxAuthorityRateTypeId <em>Tax Authority Rate Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityRateProductImpl#getTaxAuthorityRateType <em>Tax Authority Rate Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityRateProductImpl#getTaxPercentage <em>Tax Percentage</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityRateProductImpl#isTaxPromotions <em>Tax Promotions</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityRateProductImpl#isTaxShipping <em>Tax Shipping</em>}</li>
@@ -267,8 +267,8 @@ public class TaxAuthorityRateProductImpl extends EntityTypedImpl<TaxAuthorityRat
 	 * @generated
 	 */
 	@Override
-	public ProductCategory getProductCategoryId() {
-		return (ProductCategory)eGet(TaxPackage.Literals.TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_CATEGORY_ID, true);
+	public ProductCategory getProductCategory() {
+		return (ProductCategory)eGet(TaxPackage.Literals.TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_CATEGORY, true);
 	}
 
 	/**
@@ -277,8 +277,8 @@ public class TaxAuthorityRateProductImpl extends EntityTypedImpl<TaxAuthorityRat
 	 * @generated
 	 */
 	@Override
-	public void setProductCategoryId(ProductCategory newProductCategoryId) {
-		eSet(TaxPackage.Literals.TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_CATEGORY_ID, newProductCategoryId);
+	public void setProductCategory(ProductCategory newProductCategory) {
+		eSet(TaxPackage.Literals.TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_CATEGORY, newProductCategory);
 	}
 
 	/**
@@ -287,8 +287,8 @@ public class TaxAuthorityRateProductImpl extends EntityTypedImpl<TaxAuthorityRat
 	 * @generated
 	 */
 	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(TaxPackage.Literals.TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_STORE_ID, true);
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(TaxPackage.Literals.TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_STORE, true);
 	}
 
 	/**
@@ -297,8 +297,8 @@ public class TaxAuthorityRateProductImpl extends EntityTypedImpl<TaxAuthorityRat
 	 * @generated
 	 */
 	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(TaxPackage.Literals.TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_STORE_ID, newProductStoreId);
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(TaxPackage.Literals.TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_STORE, newProductStore);
 	}
 
 	/**
@@ -339,6 +339,26 @@ public class TaxAuthorityRateProductImpl extends EntityTypedImpl<TaxAuthorityRat
 	@Override
 	public void setTaxAuthPartyId(String newTaxAuthPartyId) {
 		eSet(TaxPackage.Literals.TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTH_PARTY_ID, newTaxAuthPartyId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TaxAuthorityRateType getTaxAuthorityRateType() {
+		return (TaxAuthorityRateType)eGet(TaxPackage.Literals.TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTHORITY_RATE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTaxAuthorityRateType(TaxAuthorityRateType newTaxAuthorityRateType) {
+		eSet(TaxPackage.Literals.TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTHORITY_RATE_TYPE, newTaxAuthorityRateType);
 	}
 
 	/**
@@ -477,26 +497,6 @@ public class TaxAuthorityRateProductImpl extends EntityTypedImpl<TaxAuthorityRat
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public TaxAuthorityRateType getTaxAuthorityRateTypeId() {
-		return (TaxAuthorityRateType)eGet(TaxPackage.Literals.TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTHORITY_RATE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTaxAuthorityRateTypeId(TaxAuthorityRateType newTaxAuthorityRateTypeId) {
-		eSet(TaxPackage.Literals.TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTHORITY_RATE_TYPE_ID, newTaxAuthorityRateTypeId);
 	}
 
 	/**

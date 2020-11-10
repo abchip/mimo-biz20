@@ -34,13 +34,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppImpl#getApplicationId <em>Application Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppImpl#getApplicationDate <em>Application Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppImpl#getApplyingPartyId <em>Applying Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppImpl#getApproverPartyId <em>Approver Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppImpl#getEmplPositionId <em>Empl Position Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppImpl#getEmploymentAppSourceTypeId <em>Employment App Source Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppImpl#getJobRequisitionId <em>Job Requisition Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppImpl#getReferredByPartyId <em>Referred By Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppImpl#getApplyingParty <em>Applying Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppImpl#getApproverParty <em>Approver Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppImpl#getEmplPosition <em>Empl Position</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppImpl#getEmploymentAppSourceType <em>Employment App Source Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppImpl#getJobRequisition <em>Job Requisition</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppImpl#getReferredByParty <em>Referred By Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppImpl#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @generated
@@ -182,6 +182,146 @@ public class EmploymentAppImpl extends EntityTypedImpl<EmploymentAppSourceType> 
 	 * @generated
 	 */
 	@Override
+	public Party getApplyingParty() {
+		return (Party)eGet(EmploymentPackage.Literals.EMPLOYMENT_APP__APPLYING_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setApplyingParty(Party newApplyingParty) {
+		eSet(EmploymentPackage.Literals.EMPLOYMENT_APP__APPLYING_PARTY, newApplyingParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getApproverParty() {
+		return (Party)eGet(EmploymentPackage.Literals.EMPLOYMENT_APP__APPROVER_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setApproverParty(Party newApproverParty) {
+		eSet(EmploymentPackage.Literals.EMPLOYMENT_APP__APPROVER_PARTY, newApproverParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EmplPosition getEmplPosition() {
+		return (EmplPosition)eGet(EmploymentPackage.Literals.EMPLOYMENT_APP__EMPL_POSITION, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEmplPosition(EmplPosition newEmplPosition) {
+		eSet(EmploymentPackage.Literals.EMPLOYMENT_APP__EMPL_POSITION, newEmplPosition);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EmploymentAppSourceType getEmploymentAppSourceType() {
+		return (EmploymentAppSourceType)eGet(EmploymentPackage.Literals.EMPLOYMENT_APP__EMPLOYMENT_APP_SOURCE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEmploymentAppSourceType(EmploymentAppSourceType newEmploymentAppSourceType) {
+		eSet(EmploymentPackage.Literals.EMPLOYMENT_APP__EMPLOYMENT_APP_SOURCE_TYPE, newEmploymentAppSourceType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public JobRequisition getJobRequisition() {
+		return (JobRequisition)eGet(EmploymentPackage.Literals.EMPLOYMENT_APP__JOB_REQUISITION, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setJobRequisition(JobRequisition newJobRequisition) {
+		eSet(EmploymentPackage.Literals.EMPLOYMENT_APP__JOB_REQUISITION, newJobRequisition);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getReferredByParty() {
+		return (Party)eGet(EmploymentPackage.Literals.EMPLOYMENT_APP__REFERRED_BY_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setReferredByParty(Party newReferredByParty) {
+		eSet(EmploymentPackage.Literals.EMPLOYMENT_APP__REFERRED_BY_PARTY, newReferredByParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(EmploymentPackage.Literals.EMPLOYMENT_APP__STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(StatusItem newStatus) {
+		eSet(EmploymentPackage.Literals.EMPLOYMENT_APP__STATUS, newStatus);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getApplicationId() {
 		return (String)eGet(EmploymentPackage.Literals.EMPLOYMENT_APP__APPLICATION_ID, true);
 	}
@@ -194,146 +334,6 @@ public class EmploymentAppImpl extends EntityTypedImpl<EmploymentAppSourceType> 
 	@Override
 	public void setApplicationId(String newApplicationId) {
 		eSet(EmploymentPackage.Literals.EMPLOYMENT_APP__APPLICATION_ID, newApplicationId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getApplyingPartyId() {
-		return (Party)eGet(EmploymentPackage.Literals.EMPLOYMENT_APP__APPLYING_PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setApplyingPartyId(Party newApplyingPartyId) {
-		eSet(EmploymentPackage.Literals.EMPLOYMENT_APP__APPLYING_PARTY_ID, newApplyingPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getApproverPartyId() {
-		return (Party)eGet(EmploymentPackage.Literals.EMPLOYMENT_APP__APPROVER_PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setApproverPartyId(Party newApproverPartyId) {
-		eSet(EmploymentPackage.Literals.EMPLOYMENT_APP__APPROVER_PARTY_ID, newApproverPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EmplPosition getEmplPositionId() {
-		return (EmplPosition)eGet(EmploymentPackage.Literals.EMPLOYMENT_APP__EMPL_POSITION_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setEmplPositionId(EmplPosition newEmplPositionId) {
-		eSet(EmploymentPackage.Literals.EMPLOYMENT_APP__EMPL_POSITION_ID, newEmplPositionId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EmploymentAppSourceType getEmploymentAppSourceTypeId() {
-		return (EmploymentAppSourceType)eGet(EmploymentPackage.Literals.EMPLOYMENT_APP__EMPLOYMENT_APP_SOURCE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setEmploymentAppSourceTypeId(EmploymentAppSourceType newEmploymentAppSourceTypeId) {
-		eSet(EmploymentPackage.Literals.EMPLOYMENT_APP__EMPLOYMENT_APP_SOURCE_TYPE_ID, newEmploymentAppSourceTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public JobRequisition getJobRequisitionId() {
-		return (JobRequisition)eGet(EmploymentPackage.Literals.EMPLOYMENT_APP__JOB_REQUISITION_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setJobRequisitionId(JobRequisition newJobRequisitionId) {
-		eSet(EmploymentPackage.Literals.EMPLOYMENT_APP__JOB_REQUISITION_ID, newJobRequisitionId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getReferredByPartyId() {
-		return (Party)eGet(EmploymentPackage.Literals.EMPLOYMENT_APP__REFERRED_BY_PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setReferredByPartyId(Party newReferredByPartyId) {
-		eSet(EmploymentPackage.Literals.EMPLOYMENT_APP__REFERRED_BY_PARTY_ID, newReferredByPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(EmploymentPackage.Literals.EMPLOYMENT_APP__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(EmploymentPackage.Literals.EMPLOYMENT_APP__STATUS_ID, newStatusId);
 	}
 
 	/**

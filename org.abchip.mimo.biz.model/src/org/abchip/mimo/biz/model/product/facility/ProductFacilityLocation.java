@@ -21,8 +21,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getLocationSeqId <em>Location Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getMinimumStock <em>Minimum Stock</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getMoveQuantity <em>Move Quantity</em>}</li>
@@ -33,6 +33,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductFacilityLocation extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacilityLocation_Product()
+	 * @model keys="productId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
+
+	/**
+	 * Returns the value of the '<em><b>Facility</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Facility</em>' reference.
+	 * @see #setFacility(Facility)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacilityLocation_Facility()
+	 * @model keys="facilityId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Facility getFacility();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getFacility <em>Facility</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Facility</em>' reference.
+	 * @see #getFacility()
+	 * @generated
+	 */
+	void setFacility(Facility value);
+
 	/**
 	 * Returns the value of the '<em><b>Location Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -112,59 +158,5 @@ public interface ProductFacilityLocation extends EntityIdentifiable, EntityInfo 
 	 * @generated
 	 */
 	void setMoveQuantity(BigDecimal value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacilityLocation_ProductId()
-	 * @model keys="productId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Product getProductId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getProductId <em>Product Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
-	 * @generated
-	 */
-	void setProductId(Product value);
-
-	/**
-	 * Returns the value of the '<em><b>Facility Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facility Id</em>' reference.
-	 * @see #setFacilityId(Facility)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacilityLocation_FacilityId()
-	 * @model keys="facilityId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Facility getFacilityId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getFacilityId <em>Facility Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Facility Id</em>' reference.
-	 * @see #getFacilityId()
-	 * @generated
-	 */
-	void setFacilityId(Facility value);
 
 } // ProductFacilityLocation

@@ -108,22 +108,22 @@ public interface MrpPackage extends EPackage {
 	int MRP_EVENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MRP_EVENT__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int MRP_EVENT__PRODUCT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Mrp Event Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Mrp Event Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MRP_EVENT__MRP_EVENT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int MRP_EVENT__MRP_EVENT_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Event Date</b></em>' attribute.
@@ -153,13 +153,13 @@ public interface MrpPackage extends EPackage {
 	int MRP_EVENT__EVENT_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MRP_EVENT__FACILITY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int MRP_EVENT__FACILITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Facility Id To</b></em>' attribute.
@@ -291,6 +291,28 @@ public interface MrpPackage extends EPackage {
 	EClass getMrpEvent();
 
 	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getProduct <em>Product</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getProduct()
+	 * @see #getMrpEvent()
+	 * @generated
+	 */
+	EReference getMrpEvent_Product();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getMrpEventType <em>Mrp Event Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Mrp Event Type</em>'.
+	 * @see org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getMrpEventType()
+	 * @see #getMrpEvent()
+	 * @generated
+	 */
+	EReference getMrpEvent_MrpEventType();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getMrpId <em>Mrp Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -300,17 +322,6 @@ public interface MrpPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getMrpEvent_MrpId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getProductId <em>Product Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getProductId()
-	 * @see #getMrpEvent()
-	 * @generated
-	 */
-	EReference getMrpEvent_ProductId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getEventDate <em>Event Date</em>}'.
@@ -324,17 +335,6 @@ public interface MrpPackage extends EPackage {
 	EAttribute getMrpEvent_EventDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getMrpEventTypeId <em>Mrp Event Type Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Mrp Event Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getMrpEventTypeId()
-	 * @see #getMrpEvent()
-	 * @generated
-	 */
-	EReference getMrpEvent_MrpEventTypeId();
-
-	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getEventName <em>Event Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -346,15 +346,15 @@ public interface MrpPackage extends EPackage {
 	EAttribute getMrpEvent_EventName();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getFacilityId <em>Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getFacility <em>Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getFacilityId()
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getFacility()
 	 * @see #getMrpEvent()
 	 * @generated
 	 */
-	EReference getMrpEvent_FacilityId();
+	EReference getMrpEvent_Facility();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getFacilityIdTo <em>Facility Id To</em>}'.
@@ -454,20 +454,28 @@ public interface MrpPackage extends EPackage {
 		EClass MRP_EVENT = eINSTANCE.getMrpEvent();
 
 		/**
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MRP_EVENT__PRODUCT = eINSTANCE.getMrpEvent_Product();
+
+		/**
+		 * The meta object literal for the '<em><b>Mrp Event Type</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MRP_EVENT__MRP_EVENT_TYPE = eINSTANCE.getMrpEvent_MrpEventType();
+
+		/**
 		 * The meta object literal for the '<em><b>Mrp Id</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute MRP_EVENT__MRP_ID = eINSTANCE.getMrpEvent_MrpId();
-
-		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference MRP_EVENT__PRODUCT_ID = eINSTANCE.getMrpEvent_ProductId();
 
 		/**
 		 * The meta object literal for the '<em><b>Event Date</b></em>' attribute feature.
@@ -478,14 +486,6 @@ public interface MrpPackage extends EPackage {
 		EAttribute MRP_EVENT__EVENT_DATE = eINSTANCE.getMrpEvent_EventDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Mrp Event Type Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference MRP_EVENT__MRP_EVENT_TYPE_ID = eINSTANCE.getMrpEvent_MrpEventTypeId();
-
-		/**
 		 * The meta object literal for the '<em><b>Event Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -494,12 +494,12 @@ public interface MrpPackage extends EPackage {
 		EAttribute MRP_EVENT__EVENT_NAME = eINSTANCE.getMrpEvent_EventName();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference MRP_EVENT__FACILITY_ID = eINSTANCE.getMrpEvent_FacilityId();
+		EReference MRP_EVENT__FACILITY = eINSTANCE.getMrpEvent_Facility();
 
 		/**
 		 * The meta object literal for the '<em><b>Facility Id To</b></em>' attribute feature.

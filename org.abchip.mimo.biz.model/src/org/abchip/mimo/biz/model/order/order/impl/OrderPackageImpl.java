@@ -1027,7 +1027,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCommunicationEventOrder_OrderId() {
+	public EReference getCommunicationEventOrder_Order() {
 		return (EReference)communicationEventOrderEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1037,7 +1037,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCommunicationEventOrder_CommunicationEventId() {
+	public EReference getCommunicationEventOrder_CommunicationEvent() {
 		return (EReference)communicationEventOrderEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1227,7 +1227,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderAdjustment_OrderAdjustmentAttributes() {
+	public EReference getOrderAdjustment_Order() {
 		return (EReference)orderAdjustmentEClass.getEStructuralFeatures().get(17);
 	}
 
@@ -1237,7 +1237,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderAdjustment_OrderAdjustmentTypeId() {
+	public EReference getOrderAdjustment_OrderAdjustmentAttributes() {
 		return (EReference)orderAdjustmentEClass.getEStructuralFeatures().get(18);
 	}
 
@@ -1247,7 +1247,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderAdjustment_OrderId() {
+	public EReference getOrderAdjustment_OrderAdjustmentType() {
 		return (EReference)orderAdjustmentEClass.getEStructuralFeatures().get(19);
 	}
 
@@ -1267,7 +1267,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderAdjustment_OriginalAdjustmentId() {
+	public EReference getOrderAdjustment_OriginalAdjustment() {
 		return (EReference)orderAdjustmentEClass.getEStructuralFeatures().get(21);
 	}
 
@@ -1277,7 +1277,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderAdjustment_OverrideGlAccountId() {
+	public EReference getOrderAdjustment_OverrideGlAccount() {
 		return (EReference)orderAdjustmentEClass.getEStructuralFeatures().get(22);
 	}
 
@@ -1287,7 +1287,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderAdjustment_PrimaryGeoId() {
+	public EReference getOrderAdjustment_PrimaryGeo() {
 		return (EReference)orderAdjustmentEClass.getEStructuralFeatures().get(23);
 	}
 
@@ -1307,8 +1307,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getOrderAdjustment_ProductPromoActionSeqId() {
-		return (EAttribute)orderAdjustmentEClass.getEStructuralFeatures().get(25);
+	public EReference getOrderAdjustment_ProductPromo() {
+		return (EReference)orderAdjustmentEClass.getEStructuralFeatures().get(25);
 	}
 
 	/**
@@ -1317,8 +1317,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderAdjustment_ProductPromoId() {
-		return (EReference)orderAdjustmentEClass.getEStructuralFeatures().get(26);
+	public EAttribute getOrderAdjustment_ProductPromoActionSeqId() {
+		return (EAttribute)orderAdjustmentEClass.getEStructuralFeatures().get(26);
 	}
 
 	/**
@@ -1347,7 +1347,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderAdjustment_SecondaryGeoId() {
+	public EReference getOrderAdjustment_SecondaryGeo() {
 		return (EReference)orderAdjustmentEClass.getEStructuralFeatures().get(29);
 	}
 
@@ -1407,7 +1407,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderAdjustment_TaxAuthorityRateSeqId() {
+	public EReference getOrderAdjustment_TaxAuthorityRateSeq() {
 		return (EReference)orderAdjustmentEClass.getEStructuralFeatures().get(35);
 	}
 
@@ -1427,7 +1427,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderAdjustmentAttribute_OrderAdjustmentId() {
+	public EReference getOrderAdjustmentAttribute_OrderAdjustment() {
 		return (EReference)orderAdjustmentAttributeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1477,7 +1477,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderAdjustmentBilling_OrderAdjustmentId() {
+	public EReference getOrderAdjustmentBilling_OrderAdjustment() {
 		return (EReference)orderAdjustmentBillingEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1487,7 +1487,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderAdjustmentBilling_InvoiceId() {
+	public EReference getOrderAdjustmentBilling_Invoice() {
 		return (EReference)orderAdjustmentBillingEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1567,7 +1567,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderAdjustmentType_ParentTypeId() {
+	public EReference getOrderAdjustmentType_ParentType() {
 		return (EReference)orderAdjustmentTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -1587,7 +1587,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderAdjustmentTypeAttr_OrderAdjustmentTypeId() {
+	public EReference getOrderAdjustmentTypeAttr_OrderAdjustmentType() {
 		return (EReference)orderAdjustmentTypeAttrEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1627,7 +1627,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderAttribute_OrderId() {
+	public EReference getOrderAttribute_Order() {
 		return (EReference)orderAttributeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1677,8 +1677,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getOrderBlacklist_BlacklistString() {
-		return (EAttribute)orderBlacklistEClass.getEStructuralFeatures().get(1);
+	public EReference getOrderBlacklist_OrderBlacklistType() {
+		return (EReference)orderBlacklistEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1687,8 +1687,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderBlacklist_OrderBlacklistTypeId() {
-		return (EReference)orderBlacklistEClass.getEStructuralFeatures().get(0);
+	public EAttribute getOrderBlacklist_BlacklistString() {
+		return (EAttribute)orderBlacklistEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1737,7 +1737,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderContactMech_OrderId() {
+	public EReference getOrderContactMech_Order() {
 		return (EReference)orderContactMechEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1747,8 +1747,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderContactMech_ContactMechPurposeTypeId() {
-		return (EReference)orderContactMechEClass.getEStructuralFeatures().get(2);
+	public EReference getOrderContactMech_ContactMech() {
+		return (EReference)orderContactMechEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1757,8 +1757,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderContactMech_ContactMechId() {
-		return (EReference)orderContactMechEClass.getEStructuralFeatures().get(1);
+	public EReference getOrderContactMech_ContactMechPurposeType() {
+		return (EReference)orderContactMechEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1777,7 +1777,17 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderContent_ContentId() {
+	public EReference getOrderContent_Order() {
+		return (EReference)orderContentEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getOrderContent_Content() {
 		return (EReference)orderContentEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1787,8 +1797,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderContent_OrderId() {
-		return (EReference)orderContentEClass.getEStructuralFeatures().get(0);
+	public EReference getOrderContent_OrderContentType() {
+		return (EReference)orderContentEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1799,16 +1809,6 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	@Override
 	public EAttribute getOrderContent_OrderItemSeqId() {
 		return (EAttribute)orderContentEClass.getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getOrderContent_OrderContentTypeId() {
-		return (EReference)orderContentEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1877,7 +1877,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderContentType_ParentTypeId() {
+	public EReference getOrderContentType_ParentType() {
 		return (EReference)orderContentTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1897,7 +1897,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderDeliverySchedule_OrderId() {
+	public EReference getOrderDeliverySchedule_Order() {
 		return (EReference)orderDeliveryScheduleEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1947,7 +1947,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderDeliverySchedule_StatusId() {
+	public EReference getOrderDeliverySchedule_Status() {
 		return (EReference)orderDeliveryScheduleEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -1967,7 +1967,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderDeliverySchedule_TotalCubicUomId() {
+	public EReference getOrderDeliverySchedule_TotalCubicUom() {
 		return (EReference)orderDeliveryScheduleEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -1987,7 +1987,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderDeliverySchedule_TotalWeightUomId() {
+	public EReference getOrderDeliverySchedule_TotalWeightUom() {
 		return (EReference)orderDeliveryScheduleEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -2037,7 +2037,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderHeader_AutoOrderShoppingListId() {
+	public EReference getOrderHeader_AutoOrderShoppingList() {
 		return (EReference)orderHeaderEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -2047,7 +2047,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderHeader_BillingAccountId() {
+	public EReference getOrderHeader_BillingAccount() {
 		return (EReference)orderHeaderEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -2277,7 +2277,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderHeader_OrderTypeId() {
+	public EReference getOrderHeader_OrderType() {
 		return (EReference)orderHeaderEClass.getEStructuralFeatures().get(26);
 	}
 
@@ -2287,7 +2287,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderHeader_OriginFacilityId() {
+	public EReference getOrderHeader_OriginFacility() {
 		return (EReference)orderHeaderEClass.getEStructuralFeatures().get(27);
 	}
 
@@ -2327,7 +2327,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderHeader_ProductStoreId() {
+	public EReference getOrderHeader_ProductStore() {
 		return (EReference)orderHeaderEClass.getEStructuralFeatures().get(31);
 	}
 
@@ -2347,7 +2347,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderHeader_SalesChannelEnumId() {
+	public EReference getOrderHeader_SalesChannelEnum() {
 		return (EReference)orderHeaderEClass.getEStructuralFeatures().get(33);
 	}
 
@@ -2357,7 +2357,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderHeader_StatusId() {
+	public EReference getOrderHeader_Status() {
 		return (EReference)orderHeaderEClass.getEStructuralFeatures().get(34);
 	}
 
@@ -2367,7 +2367,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderHeader_SyncStatusId() {
+	public EReference getOrderHeader_SyncStatus() {
 		return (EReference)orderHeaderEClass.getEStructuralFeatures().get(35);
 	}
 
@@ -2417,7 +2417,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderHeader_WebSiteId() {
+	public EReference getOrderHeader_WebSite() {
 		return (EReference)orderHeaderEClass.getEStructuralFeatures().get(40);
 	}
 
@@ -2437,7 +2437,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderHeaderNote_OrderId() {
+	public EReference getOrderHeaderNote_Order() {
 		return (EReference)orderHeaderNoteEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -2467,7 +2467,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderHeaderWorkEffort_OrderId() {
+	public EReference getOrderHeaderWorkEffort_Order() {
 		return (EReference)orderHeaderWorkEffortEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -2477,7 +2477,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderHeaderWorkEffort_WorkEffortId() {
+	public EReference getOrderHeaderWorkEffort_WorkEffort() {
 		return (EReference)orderHeaderWorkEffortEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -2497,7 +2497,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItem_OrderId() {
+	public EReference getOrderItem_Order() {
 		return (EReference)orderItemEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -2567,7 +2567,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItem_ChangeByUserLoginId() {
+	public EReference getOrderItem_ChangeByUserLogin() {
 		return (EReference)orderItemEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -2657,7 +2657,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItem_FromInventoryItemId() {
+	public EReference getOrderItem_FromInventoryItem() {
 		return (EReference)orderItemEClass.getEStructuralFeatures().get(16);
 	}
 
@@ -2717,7 +2717,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItem_OrderItemTypeId() {
+	public EReference getOrderItem_OrderItemType() {
 		return (EReference)orderItemEClass.getEStructuralFeatures().get(22);
 	}
 
@@ -2727,7 +2727,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItem_OverrideGlAccountId() {
+	public EReference getOrderItem_OverrideGlAccount() {
 		return (EReference)orderItemEClass.getEStructuralFeatures().get(23);
 	}
 
@@ -2747,8 +2747,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getOrderItem_ProductCategoryId() {
-		return (EAttribute)orderItemEClass.getEStructuralFeatures().get(25);
+	public EReference getOrderItem_Product() {
+		return (EReference)orderItemEClass.getEStructuralFeatures().get(25);
 	}
 
 	/**
@@ -2757,7 +2757,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getOrderItem_ProductFeatureId() {
+	public EAttribute getOrderItem_ProductCategoryId() {
 		return (EAttribute)orderItemEClass.getEStructuralFeatures().get(26);
 	}
 
@@ -2767,8 +2767,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItem_ProductId() {
-		return (EReference)orderItemEClass.getEStructuralFeatures().get(27);
+	public EAttribute getOrderItem_ProductFeatureId() {
+		return (EAttribute)orderItemEClass.getEStructuralFeatures().get(27);
 	}
 
 	/**
@@ -2807,7 +2807,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItem_RecurringFreqUomId() {
+	public EReference getOrderItem_RecurringFreqUom() {
 		return (EReference)orderItemEClass.getEStructuralFeatures().get(31);
 	}
 
@@ -2827,7 +2827,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItem_SalesOpportunityId() {
+	public EReference getOrderItem_SalesOpportunity() {
 		return (EReference)orderItemEClass.getEStructuralFeatures().get(33);
 	}
 
@@ -2887,7 +2887,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItem_StatusId() {
+	public EReference getOrderItem_Status() {
 		return (EReference)orderItemEClass.getEStructuralFeatures().get(39);
 	}
 
@@ -2917,7 +2917,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItem_SyncStatusId() {
+	public EReference getOrderItem_SyncStatus() {
 		return (EReference)orderItemEClass.getEStructuralFeatures().get(42);
 	}
 
@@ -2977,8 +2977,28 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemAssoc_OrderId() {
+	public EReference getOrderItemAssoc_OrderItemAssocType() {
+		return (EReference)orderItemAssocEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getOrderItemAssoc_Order() {
 		return (EReference)orderItemAssocEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getOrderItemAssoc_ToOrder() {
+		return (EReference)orderItemAssocEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -3007,16 +3027,6 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemAssoc_ToOrderId() {
-		return (EReference)orderItemAssocEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EAttribute getOrderItemAssoc_ToOrderItemSeqId() {
 		return (EAttribute)orderItemAssocEClass.getEStructuralFeatures().get(5);
 	}
@@ -3029,16 +3039,6 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	@Override
 	public EAttribute getOrderItemAssoc_ToShipGroupSeqId() {
 		return (EAttribute)orderItemAssocEClass.getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getOrderItemAssoc_OrderItemAssocTypeId() {
-		return (EReference)orderItemAssocEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -3097,7 +3097,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemAssocType_ParentTypeId() {
+	public EReference getOrderItemAssocType_ParentType() {
 		return (EReference)orderItemAssocTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -3177,8 +3177,18 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemBilling_OrderId() {
+	public EReference getOrderItemBilling_Order() {
 		return (EReference)orderItemBillingEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getOrderItemBilling_Invoice() {
+		return (EReference)orderItemBillingEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -3189,16 +3199,6 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	@Override
 	public EAttribute getOrderItemBilling_OrderItemSeqId() {
 		return (EAttribute)orderItemBillingEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getOrderItemBilling_InvoiceId() {
-		return (EReference)orderItemBillingEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -3227,7 +3227,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemBilling_ItemIssuanceId() {
+	public EReference getOrderItemBilling_ItemIssuance() {
 		return (EReference)orderItemBillingEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -3247,7 +3247,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemBilling_ShipmentReceiptId() {
+	public EReference getOrderItemBilling_ShipmentReceipt() {
 		return (EReference)orderItemBillingEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -3307,7 +3307,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemChange_ChangeTypeEnumId() {
+	public EReference getOrderItemChange_ChangeTypeEnum() {
 		return (EReference)orderItemChangeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -3337,7 +3337,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemChange_OrderId() {
+	public EReference getOrderItemChange_Order() {
 		return (EReference)orderItemChangeEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -3367,7 +3367,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemChange_ReasonEnumId() {
+	public EReference getOrderItemChange_ReasonEnum() {
 		return (EReference)orderItemChangeEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -3397,8 +3397,18 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemContactMech_OrderId() {
+	public EReference getOrderItemContactMech_Order() {
 		return (EReference)orderItemContactMechEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getOrderItemContactMech_ContactMechPurposeType() {
+		return (EReference)orderItemContactMechEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -3417,17 +3427,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemContactMech_ContactMechPurposeTypeId() {
-		return (EReference)orderItemContactMechEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getOrderItemContactMech_ContactMechId() {
+	public EReference getOrderItemContactMech_ContactMech() {
 		return (EReference)orderItemContactMechEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -3447,7 +3447,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemGroup_OrderId() {
+	public EReference getOrderItemGroup_Order() {
 		return (EReference)orderItemGroupEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -3497,6 +3497,16 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getOrderItemGroupOrder_GroupOrder() {
+		return (EReference)orderItemGroupOrderEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getOrderItemGroupOrder_OrderId() {
 		return (EAttribute)orderItemGroupOrderEClass.getEStructuralFeatures().get(1);
 	}
@@ -3509,16 +3519,6 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	@Override
 	public EAttribute getOrderItemGroupOrder_OrderItemSeqId() {
 		return (EAttribute)orderItemGroupOrderEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getOrderItemGroupOrder_GroupOrderId() {
-		return (EReference)orderItemGroupOrderEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -3567,7 +3567,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemPriceInfo_OrderId() {
+	public EReference getOrderItemPriceInfo_Order() {
 		return (EReference)orderItemPriceInfoEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -3597,7 +3597,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemPriceInfo_ProductPriceRuleId() {
+	public EReference getOrderItemPriceInfo_ProductPriceRule() {
 		return (EReference)orderItemPriceInfoEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -3627,8 +3627,28 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemRole_OrderId() {
+	public EReference getOrderItemRole_Order() {
 		return (EReference)orderItemRoleEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getOrderItemRole_Party() {
+		return (EReference)orderItemRoleEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getOrderItemRole_RoleType() {
+		return (EReference)orderItemRoleEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -3647,26 +3667,6 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemRole_PartyId() {
-		return (EReference)orderItemRoleEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getOrderItemRole_RoleTypeId() {
-		return (EReference)orderItemRoleEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getOrderItemShipGroup() {
 		return orderItemShipGroupEClass;
 	}
@@ -3677,7 +3677,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemShipGroup_OrderId() {
+	public EReference getOrderItemShipGroup_Order() {
 		return (EReference)orderItemShipGroupEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -3697,7 +3697,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemShipGroup_CarrierPartyId() {
+	public EReference getOrderItemShipGroup_CarrierParty() {
 		return (EReference)orderItemShipGroupEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -3717,7 +3717,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemShipGroup_ContactMechId() {
+	public EReference getOrderItemShipGroup_ContactMech() {
 		return (EReference)orderItemShipGroupEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -3747,7 +3747,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemShipGroup_FacilityId() {
+	public EReference getOrderItemShipGroup_Facility() {
 		return (EReference)orderItemShipGroupEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -3807,7 +3807,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemShipGroup_ShipmentMethodTypeId() {
+	public EReference getOrderItemShipGroup_ShipmentMethodType() {
 		return (EReference)orderItemShipGroupEClass.getEStructuralFeatures().get(13);
 	}
 
@@ -3827,7 +3827,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemShipGroup_SupplierAgreementId() {
+	public EReference getOrderItemShipGroup_SupplierAgreement() {
 		return (EReference)orderItemShipGroupEClass.getEStructuralFeatures().get(15);
 	}
 
@@ -3837,7 +3837,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemShipGroup_SupplierPartyId() {
+	public EReference getOrderItemShipGroup_SupplierParty() {
 		return (EReference)orderItemShipGroupEClass.getEStructuralFeatures().get(16);
 	}
 
@@ -3847,7 +3847,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemShipGroup_TelecomContactMechId() {
+	public EReference getOrderItemShipGroup_TelecomContactMech() {
 		return (EReference)orderItemShipGroupEClass.getEStructuralFeatures().get(17);
 	}
 
@@ -3867,7 +3867,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemShipGroup_VendorPartyId() {
+	public EReference getOrderItemShipGroup_VendorParty() {
 		return (EReference)orderItemShipGroupEClass.getEStructuralFeatures().get(19);
 	}
 
@@ -3887,7 +3887,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemShipGroupAssoc_OrderId() {
+	public EReference getOrderItemShipGroupAssoc_Order() {
 		return (EReference)orderItemShipGroupAssocEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -3947,8 +3947,18 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemShipGrpInvRes_OrderId() {
+	public EReference getOrderItemShipGrpInvRes_Order() {
 		return (EReference)orderItemShipGrpInvResEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getOrderItemShipGrpInvRes_InventoryItem() {
+		return (EReference)orderItemShipGrpInvResEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -3969,16 +3979,6 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	@Override
 	public EAttribute getOrderItemShipGrpInvRes_OrderItemSeqId() {
 		return (EAttribute)orderItemShipGrpInvResEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getOrderItemShipGrpInvRes_InventoryItemId() {
-		return (EReference)orderItemShipGrpInvResEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -4137,7 +4137,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemType_ParentTypeId() {
+	public EReference getOrderItemType_ParentType() {
 		return (EReference)orderItemTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -4157,7 +4157,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderItemTypeAttr_OrderItemTypeId() {
+	public EReference getOrderItemTypeAttr_OrderItemType() {
 		return (EReference)orderItemTypeAttrEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -4237,7 +4237,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderNotification_OrderId() {
+	public EReference getOrderNotification_Order() {
 		return (EReference)orderNotificationEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -4297,7 +4297,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderPaymentPreference_FinAccountId() {
+	public EReference getOrderPaymentPreference_FinAccount() {
 		return (EReference)orderPaymentPreferenceEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -4367,7 +4367,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderPaymentPreference_OrderId() {
+	public EReference getOrderPaymentPreference_Order() {
 		return (EReference)orderPaymentPreferenceEClass.getEStructuralFeatures().get(11);
 	}
 
@@ -4397,7 +4397,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderPaymentPreference_PaymentMethodId() {
+	public EReference getOrderPaymentPreference_PaymentMethod() {
 		return (EReference)orderPaymentPreferenceEClass.getEStructuralFeatures().get(14);
 	}
 
@@ -4407,7 +4407,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderPaymentPreference_PaymentMethodTypeId() {
+	public EReference getOrderPaymentPreference_PaymentMethodType() {
 		return (EReference)orderPaymentPreferenceEClass.getEStructuralFeatures().get(15);
 	}
 
@@ -4437,7 +4437,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderPaymentPreference_ProductPricePurposeId() {
+	public EReference getOrderPaymentPreference_ProductPricePurpose() {
 		return (EReference)orderPaymentPreferenceEClass.getEStructuralFeatures().get(18);
 	}
 
@@ -4467,7 +4467,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderPaymentPreference_StatusId() {
+	public EReference getOrderPaymentPreference_Status() {
 		return (EReference)orderPaymentPreferenceEClass.getEStructuralFeatures().get(21);
 	}
 
@@ -4507,7 +4507,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderProductPromoCode_OrderId() {
+	public EReference getOrderProductPromoCode_Order() {
 		return (EReference)orderProductPromoCodeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -4517,7 +4517,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderProductPromoCode_ProductPromoCodeId() {
+	public EReference getOrderProductPromoCode_ProductPromoCode() {
 		return (EReference)orderProductPromoCodeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -4537,7 +4537,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderRole_OrderId() {
+	public EReference getOrderRole_Order() {
 		return (EReference)orderRoleEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -4547,7 +4547,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderRole_PartyId() {
+	public EReference getOrderRole_Party() {
 		return (EReference)orderRoleEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -4557,7 +4557,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderRole_RoleTypeId() {
+	public EReference getOrderRole_RoleType() {
 		return (EReference)orderRoleEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -4577,8 +4577,18 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderShipment_OrderId() {
+	public EReference getOrderShipment_Order() {
 		return (EReference)orderShipmentEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getOrderShipment_Shipment() {
+		return (EReference)orderShipmentEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -4599,16 +4609,6 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	@Override
 	public EAttribute getOrderShipment_ShipGroupSeqId() {
 		return (EAttribute)orderShipmentEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getOrderShipment_ShipmentId() {
-		return (EReference)orderShipmentEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -4667,7 +4667,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderStatus_OrderId() {
+	public EReference getOrderStatus_Order() {
 		return (EReference)orderStatusEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -4687,7 +4687,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderStatus_OrderPaymentPreferenceId() {
+	public EReference getOrderStatus_OrderPaymentPreference() {
 		return (EReference)orderStatusEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -4697,8 +4697,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getOrderStatus_StatusDatetime() {
-		return (EAttribute)orderStatusEClass.getEStructuralFeatures().get(5);
+	public EReference getOrderStatus_Status() {
+		return (EReference)orderStatusEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -4707,8 +4707,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderStatus_StatusId() {
-		return (EReference)orderStatusEClass.getEStructuralFeatures().get(6);
+	public EAttribute getOrderStatus_StatusDatetime() {
+		return (EAttribute)orderStatusEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -4737,17 +4737,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getOrderSummaryEntry_EntryDate() {
-		return (EAttribute)orderSummaryEntryEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getOrderSummaryEntry_ProductId() {
+	public EReference getOrderSummaryEntry_Product() {
 		return (EReference)orderSummaryEntryEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -4757,8 +4747,18 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderSummaryEntry_FacilityId() {
+	public EReference getOrderSummaryEntry_Facility() {
 		return (EReference)orderSummaryEntryEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOrderSummaryEntry_EntryDate() {
+		return (EAttribute)orderSummaryEntryEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -4807,8 +4807,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderTerm_TermTypeId() {
-		return (EReference)orderTermEClass.getEStructuralFeatures().get(1);
+	public EReference getOrderTerm_Order() {
+		return (EReference)orderTermEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -4817,8 +4817,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderTerm_OrderId() {
-		return (EReference)orderTermEClass.getEStructuralFeatures().get(0);
+	public EReference getOrderTerm_TermType() {
+		return (EReference)orderTermEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -4877,7 +4877,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderTerm_UomId() {
+	public EReference getOrderTerm_Uom() {
 		return (EReference)orderTermEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -5007,7 +5007,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderType_ParentTypeId() {
+	public EReference getOrderType_ParentType() {
 		return (EReference)orderTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -5027,7 +5027,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getOrderTypeAttr_OrderTypeId() {
+	public EReference getOrderTypeAttr_OrderType() {
 		return (EReference)orderTypeAttrEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -5067,8 +5067,18 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductOrderItem_OrderId() {
+	public EReference getProductOrderItem_Order() {
 		return (EReference)productOrderItemEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getProductOrderItem_Engagement() {
+		return (EReference)productOrderItemEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -5087,8 +5097,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductOrderItem_EngagementId() {
-		return (EReference)productOrderItemEClass.getEStructuralFeatures().get(1);
+	public EReference getProductOrderItem_Product() {
+		return (EReference)productOrderItemEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -5107,16 +5117,6 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductOrderItem_ProductId() {
-		return (EReference)productOrderItemEClass.getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getWorkOrderItemFulfillment() {
 		return workOrderItemFulfillmentEClass;
 	}
@@ -5127,8 +5127,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getWorkOrderItemFulfillment_WorkEffortId() {
-		return (EReference)workOrderItemFulfillmentEClass.getEStructuralFeatures().get(1);
+	public EReference getWorkOrderItemFulfillment_Order() {
+		return (EReference)workOrderItemFulfillmentEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -5137,8 +5137,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getWorkOrderItemFulfillment_OrderId() {
-		return (EReference)workOrderItemFulfillmentEClass.getEStructuralFeatures().get(0);
+	public EReference getWorkOrderItemFulfillment_WorkEffort() {
+		return (EReference)workOrderItemFulfillmentEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -5191,8 +5191,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 
 		// Create classes and their features
 		communicationEventOrderEClass = createEClass(COMMUNICATION_EVENT_ORDER);
-		createEReference(communicationEventOrderEClass, COMMUNICATION_EVENT_ORDER__ORDER_ID);
-		createEReference(communicationEventOrderEClass, COMMUNICATION_EVENT_ORDER__COMMUNICATION_EVENT_ID);
+		createEReference(communicationEventOrderEClass, COMMUNICATION_EVENT_ORDER__ORDER);
+		createEReference(communicationEventOrderEClass, COMMUNICATION_EVENT_ORDER__COMMUNICATION_EVENT);
 
 		orderAdjustmentEClass = createEClass(ORDER_ADJUSTMENT);
 		createEAttribute(orderAdjustmentEClass, ORDER_ADJUSTMENT__ORDER_ADJUSTMENT_ID);
@@ -5212,35 +5212,35 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		createEAttribute(orderAdjustmentEClass, ORDER_ADJUSTMENT__LAST_MODIFIED_DATE);
 		createEAttribute(orderAdjustmentEClass, ORDER_ADJUSTMENT__OLD_AMOUNT_PER_QUANTITY);
 		createEAttribute(orderAdjustmentEClass, ORDER_ADJUSTMENT__OLD_PERCENTAGE);
+		createEReference(orderAdjustmentEClass, ORDER_ADJUSTMENT__ORDER);
 		createEReference(orderAdjustmentEClass, ORDER_ADJUSTMENT__ORDER_ADJUSTMENT_ATTRIBUTES);
-		createEReference(orderAdjustmentEClass, ORDER_ADJUSTMENT__ORDER_ADJUSTMENT_TYPE_ID);
-		createEReference(orderAdjustmentEClass, ORDER_ADJUSTMENT__ORDER_ID);
+		createEReference(orderAdjustmentEClass, ORDER_ADJUSTMENT__ORDER_ADJUSTMENT_TYPE);
 		createEAttribute(orderAdjustmentEClass, ORDER_ADJUSTMENT__ORDER_ITEM_SEQ_ID);
-		createEReference(orderAdjustmentEClass, ORDER_ADJUSTMENT__ORIGINAL_ADJUSTMENT_ID);
-		createEReference(orderAdjustmentEClass, ORDER_ADJUSTMENT__OVERRIDE_GL_ACCOUNT_ID);
-		createEReference(orderAdjustmentEClass, ORDER_ADJUSTMENT__PRIMARY_GEO_ID);
+		createEReference(orderAdjustmentEClass, ORDER_ADJUSTMENT__ORIGINAL_ADJUSTMENT);
+		createEReference(orderAdjustmentEClass, ORDER_ADJUSTMENT__OVERRIDE_GL_ACCOUNT);
+		createEReference(orderAdjustmentEClass, ORDER_ADJUSTMENT__PRIMARY_GEO);
 		createEAttribute(orderAdjustmentEClass, ORDER_ADJUSTMENT__PRODUCT_FEATURE_ID);
+		createEReference(orderAdjustmentEClass, ORDER_ADJUSTMENT__PRODUCT_PROMO);
 		createEAttribute(orderAdjustmentEClass, ORDER_ADJUSTMENT__PRODUCT_PROMO_ACTION_SEQ_ID);
-		createEReference(orderAdjustmentEClass, ORDER_ADJUSTMENT__PRODUCT_PROMO_ID);
 		createEAttribute(orderAdjustmentEClass, ORDER_ADJUSTMENT__PRODUCT_PROMO_RULE_ID);
 		createEAttribute(orderAdjustmentEClass, ORDER_ADJUSTMENT__RECURRING_AMOUNT);
-		createEReference(orderAdjustmentEClass, ORDER_ADJUSTMENT__SECONDARY_GEO_ID);
+		createEReference(orderAdjustmentEClass, ORDER_ADJUSTMENT__SECONDARY_GEO);
 		createEAttribute(orderAdjustmentEClass, ORDER_ADJUSTMENT__SHIP_GROUP_SEQ_ID);
 		createEAttribute(orderAdjustmentEClass, ORDER_ADJUSTMENT__SOURCE_PERCENTAGE);
 		createEAttribute(orderAdjustmentEClass, ORDER_ADJUSTMENT__SOURCE_REFERENCE_ID);
 		createEAttribute(orderAdjustmentEClass, ORDER_ADJUSTMENT__TAX_AUTH_GEO_ID);
 		createEAttribute(orderAdjustmentEClass, ORDER_ADJUSTMENT__TAX_AUTH_PARTY_ID);
-		createEReference(orderAdjustmentEClass, ORDER_ADJUSTMENT__TAX_AUTHORITY_RATE_SEQ_ID);
+		createEReference(orderAdjustmentEClass, ORDER_ADJUSTMENT__TAX_AUTHORITY_RATE_SEQ);
 
 		orderAdjustmentAttributeEClass = createEClass(ORDER_ADJUSTMENT_ATTRIBUTE);
-		createEReference(orderAdjustmentAttributeEClass, ORDER_ADJUSTMENT_ATTRIBUTE__ORDER_ADJUSTMENT_ID);
+		createEReference(orderAdjustmentAttributeEClass, ORDER_ADJUSTMENT_ATTRIBUTE__ORDER_ADJUSTMENT);
 		createEAttribute(orderAdjustmentAttributeEClass, ORDER_ADJUSTMENT_ATTRIBUTE__ATTR_NAME);
 		createEAttribute(orderAdjustmentAttributeEClass, ORDER_ADJUSTMENT_ATTRIBUTE__ATTR_DESCRIPTION);
 		createEAttribute(orderAdjustmentAttributeEClass, ORDER_ADJUSTMENT_ATTRIBUTE__ATTR_VALUE);
 
 		orderAdjustmentBillingEClass = createEClass(ORDER_ADJUSTMENT_BILLING);
-		createEReference(orderAdjustmentBillingEClass, ORDER_ADJUSTMENT_BILLING__ORDER_ADJUSTMENT_ID);
-		createEReference(orderAdjustmentBillingEClass, ORDER_ADJUSTMENT_BILLING__INVOICE_ID);
+		createEReference(orderAdjustmentBillingEClass, ORDER_ADJUSTMENT_BILLING__ORDER_ADJUSTMENT);
+		createEReference(orderAdjustmentBillingEClass, ORDER_ADJUSTMENT_BILLING__INVOICE);
 		createEAttribute(orderAdjustmentBillingEClass, ORDER_ADJUSTMENT_BILLING__INVOICE_ITEM_SEQ_ID);
 		createEAttribute(orderAdjustmentBillingEClass, ORDER_ADJUSTMENT_BILLING__AMOUNT);
 
@@ -5249,21 +5249,21 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		createEAttribute(orderAdjustmentTypeEClass, ORDER_ADJUSTMENT_TYPE__DESCRIPTION);
 		createEAttribute(orderAdjustmentTypeEClass, ORDER_ADJUSTMENT_TYPE__HAS_TABLE);
 		createEReference(orderAdjustmentTypeEClass, ORDER_ADJUSTMENT_TYPE__ORDER_ADJUSTMENT_TYPE_ATTRS);
-		createEReference(orderAdjustmentTypeEClass, ORDER_ADJUSTMENT_TYPE__PARENT_TYPE_ID);
+		createEReference(orderAdjustmentTypeEClass, ORDER_ADJUSTMENT_TYPE__PARENT_TYPE);
 
 		orderAdjustmentTypeAttrEClass = createEClass(ORDER_ADJUSTMENT_TYPE_ATTR);
-		createEReference(orderAdjustmentTypeAttrEClass, ORDER_ADJUSTMENT_TYPE_ATTR__ORDER_ADJUSTMENT_TYPE_ID);
+		createEReference(orderAdjustmentTypeAttrEClass, ORDER_ADJUSTMENT_TYPE_ATTR__ORDER_ADJUSTMENT_TYPE);
 		createEAttribute(orderAdjustmentTypeAttrEClass, ORDER_ADJUSTMENT_TYPE_ATTR__ATTR_NAME);
 		createEAttribute(orderAdjustmentTypeAttrEClass, ORDER_ADJUSTMENT_TYPE_ATTR__DESCRIPTION);
 
 		orderAttributeEClass = createEClass(ORDER_ATTRIBUTE);
-		createEReference(orderAttributeEClass, ORDER_ATTRIBUTE__ORDER_ID);
+		createEReference(orderAttributeEClass, ORDER_ATTRIBUTE__ORDER);
 		createEAttribute(orderAttributeEClass, ORDER_ATTRIBUTE__ATTR_NAME);
 		createEAttribute(orderAttributeEClass, ORDER_ATTRIBUTE__ATTR_DESCRIPTION);
 		createEAttribute(orderAttributeEClass, ORDER_ATTRIBUTE__ATTR_VALUE);
 
 		orderBlacklistEClass = createEClass(ORDER_BLACKLIST);
-		createEReference(orderBlacklistEClass, ORDER_BLACKLIST__ORDER_BLACKLIST_TYPE_ID);
+		createEReference(orderBlacklistEClass, ORDER_BLACKLIST__ORDER_BLACKLIST_TYPE);
 		createEAttribute(orderBlacklistEClass, ORDER_BLACKLIST__BLACKLIST_STRING);
 
 		orderBlacklistTypeEClass = createEClass(ORDER_BLACKLIST_TYPE);
@@ -5271,14 +5271,14 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		createEAttribute(orderBlacklistTypeEClass, ORDER_BLACKLIST_TYPE__DESCRIPTION);
 
 		orderContactMechEClass = createEClass(ORDER_CONTACT_MECH);
-		createEReference(orderContactMechEClass, ORDER_CONTACT_MECH__ORDER_ID);
-		createEReference(orderContactMechEClass, ORDER_CONTACT_MECH__CONTACT_MECH_ID);
-		createEReference(orderContactMechEClass, ORDER_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE_ID);
+		createEReference(orderContactMechEClass, ORDER_CONTACT_MECH__ORDER);
+		createEReference(orderContactMechEClass, ORDER_CONTACT_MECH__CONTACT_MECH);
+		createEReference(orderContactMechEClass, ORDER_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE);
 
 		orderContentEClass = createEClass(ORDER_CONTENT);
-		createEReference(orderContentEClass, ORDER_CONTENT__ORDER_ID);
-		createEReference(orderContentEClass, ORDER_CONTENT__CONTENT_ID);
-		createEReference(orderContentEClass, ORDER_CONTENT__ORDER_CONTENT_TYPE_ID);
+		createEReference(orderContentEClass, ORDER_CONTENT__ORDER);
+		createEReference(orderContentEClass, ORDER_CONTENT__CONTENT);
+		createEReference(orderContentEClass, ORDER_CONTENT__ORDER_CONTENT_TYPE);
 		createEAttribute(orderContentEClass, ORDER_CONTENT__FROM_DATE);
 		createEAttribute(orderContentEClass, ORDER_CONTENT__ORDER_ITEM_SEQ_ID);
 		createEAttribute(orderContentEClass, ORDER_CONTENT__THRU_DATE);
@@ -5287,26 +5287,26 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		createEAttribute(orderContentTypeEClass, ORDER_CONTENT_TYPE__ORDER_CONTENT_TYPE_ID);
 		createEAttribute(orderContentTypeEClass, ORDER_CONTENT_TYPE__DESCRIPTION);
 		createEAttribute(orderContentTypeEClass, ORDER_CONTENT_TYPE__HAS_TABLE);
-		createEReference(orderContentTypeEClass, ORDER_CONTENT_TYPE__PARENT_TYPE_ID);
+		createEReference(orderContentTypeEClass, ORDER_CONTENT_TYPE__PARENT_TYPE);
 
 		orderDeliveryScheduleEClass = createEClass(ORDER_DELIVERY_SCHEDULE);
-		createEReference(orderDeliveryScheduleEClass, ORDER_DELIVERY_SCHEDULE__ORDER_ID);
+		createEReference(orderDeliveryScheduleEClass, ORDER_DELIVERY_SCHEDULE__ORDER);
 		createEAttribute(orderDeliveryScheduleEClass, ORDER_DELIVERY_SCHEDULE__ORDER_ITEM_SEQ_ID);
 		createEAttribute(orderDeliveryScheduleEClass, ORDER_DELIVERY_SCHEDULE__CARTONS);
 		createEAttribute(orderDeliveryScheduleEClass, ORDER_DELIVERY_SCHEDULE__ESTIMATED_READY_DATE);
 		createEAttribute(orderDeliveryScheduleEClass, ORDER_DELIVERY_SCHEDULE__SKIDS_PALLETS);
-		createEReference(orderDeliveryScheduleEClass, ORDER_DELIVERY_SCHEDULE__STATUS_ID);
+		createEReference(orderDeliveryScheduleEClass, ORDER_DELIVERY_SCHEDULE__STATUS);
 		createEAttribute(orderDeliveryScheduleEClass, ORDER_DELIVERY_SCHEDULE__TOTAL_CUBIC_SIZE);
-		createEReference(orderDeliveryScheduleEClass, ORDER_DELIVERY_SCHEDULE__TOTAL_CUBIC_UOM_ID);
+		createEReference(orderDeliveryScheduleEClass, ORDER_DELIVERY_SCHEDULE__TOTAL_CUBIC_UOM);
 		createEAttribute(orderDeliveryScheduleEClass, ORDER_DELIVERY_SCHEDULE__TOTAL_WEIGHT);
-		createEReference(orderDeliveryScheduleEClass, ORDER_DELIVERY_SCHEDULE__TOTAL_WEIGHT_UOM_ID);
+		createEReference(orderDeliveryScheduleEClass, ORDER_DELIVERY_SCHEDULE__TOTAL_WEIGHT_UOM);
 		createEAttribute(orderDeliveryScheduleEClass, ORDER_DELIVERY_SCHEDULE__UNITS_PIECES);
 
 		orderHeaderEClass = createEClass(ORDER_HEADER);
 		createEAttribute(orderHeaderEClass, ORDER_HEADER__ORDER_ID);
 		createEAttribute(orderHeaderEClass, ORDER_HEADER__AGREEMENT_ID);
-		createEReference(orderHeaderEClass, ORDER_HEADER__AUTO_ORDER_SHOPPING_LIST_ID);
-		createEReference(orderHeaderEClass, ORDER_HEADER__BILLING_ACCOUNT_ID);
+		createEReference(orderHeaderEClass, ORDER_HEADER__AUTO_ORDER_SHOPPING_LIST);
+		createEReference(orderHeaderEClass, ORDER_HEADER__BILLING_ACCOUNT);
 		createEReference(orderHeaderEClass, ORDER_HEADER__COMMUNICATION_EVENT_ORDERS);
 		createEReference(orderHeaderEClass, ORDER_HEADER__CREATED_BY);
 		createEReference(orderHeaderEClass, ORDER_HEADER__CURRENCY_UOM);
@@ -5329,39 +5329,39 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		createEReference(orderHeaderEClass, ORDER_HEADER__ORDER_ITEMS);
 		createEAttribute(orderHeaderEClass, ORDER_HEADER__ORDER_NAME);
 		createEReference(orderHeaderEClass, ORDER_HEADER__ORDER_PRODUCT_PROMO_CODES);
-		createEReference(orderHeaderEClass, ORDER_HEADER__ORDER_TYPE_ID);
-		createEReference(orderHeaderEClass, ORDER_HEADER__ORIGIN_FACILITY_ID);
+		createEReference(orderHeaderEClass, ORDER_HEADER__ORDER_TYPE);
+		createEReference(orderHeaderEClass, ORDER_HEADER__ORIGIN_FACILITY);
 		createEAttribute(orderHeaderEClass, ORDER_HEADER__PICK_SHEET_PRINTED_DATE);
 		createEAttribute(orderHeaderEClass, ORDER_HEADER__PRIORITY);
 		createEReference(orderHeaderEClass, ORDER_HEADER__PRODUCT_PROMO_USES);
-		createEReference(orderHeaderEClass, ORDER_HEADER__PRODUCT_STORE_ID);
+		createEReference(orderHeaderEClass, ORDER_HEADER__PRODUCT_STORE);
 		createEAttribute(orderHeaderEClass, ORDER_HEADER__REMAINING_SUB_TOTAL);
-		createEReference(orderHeaderEClass, ORDER_HEADER__SALES_CHANNEL_ENUM_ID);
-		createEReference(orderHeaderEClass, ORDER_HEADER__STATUS_ID);
-		createEReference(orderHeaderEClass, ORDER_HEADER__SYNC_STATUS_ID);
+		createEReference(orderHeaderEClass, ORDER_HEADER__SALES_CHANNEL_ENUM);
+		createEReference(orderHeaderEClass, ORDER_HEADER__STATUS);
+		createEReference(orderHeaderEClass, ORDER_HEADER__SYNC_STATUS);
 		createEAttribute(orderHeaderEClass, ORDER_HEADER__TERMINAL_ID);
 		createEReference(orderHeaderEClass, ORDER_HEADER__TRACKING_CODE_ORDERS);
 		createEAttribute(orderHeaderEClass, ORDER_HEADER__TRANSACTION_ID);
 		createEAttribute(orderHeaderEClass, ORDER_HEADER__VISIT_ID);
-		createEReference(orderHeaderEClass, ORDER_HEADER__WEB_SITE_ID);
+		createEReference(orderHeaderEClass, ORDER_HEADER__WEB_SITE);
 
 		orderHeaderNoteEClass = createEClass(ORDER_HEADER_NOTE);
-		createEReference(orderHeaderNoteEClass, ORDER_HEADER_NOTE__ORDER_ID);
+		createEReference(orderHeaderNoteEClass, ORDER_HEADER_NOTE__ORDER);
 		createEAttribute(orderHeaderNoteEClass, ORDER_HEADER_NOTE__INTERNAL_NOTE);
 
 		orderHeaderWorkEffortEClass = createEClass(ORDER_HEADER_WORK_EFFORT);
-		createEReference(orderHeaderWorkEffortEClass, ORDER_HEADER_WORK_EFFORT__ORDER_ID);
-		createEReference(orderHeaderWorkEffortEClass, ORDER_HEADER_WORK_EFFORT__WORK_EFFORT_ID);
+		createEReference(orderHeaderWorkEffortEClass, ORDER_HEADER_WORK_EFFORT__ORDER);
+		createEReference(orderHeaderWorkEffortEClass, ORDER_HEADER_WORK_EFFORT__WORK_EFFORT);
 
 		orderItemEClass = createEClass(ORDER_ITEM);
-		createEReference(orderItemEClass, ORDER_ITEM__ORDER_ID);
+		createEReference(orderItemEClass, ORDER_ITEM__ORDER);
 		createEAttribute(orderItemEClass, ORDER_ITEM__ORDER_ITEM_SEQ_ID);
 		createEAttribute(orderItemEClass, ORDER_ITEM__AUTO_CANCEL_DATE);
 		createEAttribute(orderItemEClass, ORDER_ITEM__BUDGET_ID);
 		createEAttribute(orderItemEClass, ORDER_ITEM__BUDGET_ITEM_SEQ_ID);
 		createEAttribute(orderItemEClass, ORDER_ITEM__CANCEL_BACK_ORDER_DATE);
 		createEAttribute(orderItemEClass, ORDER_ITEM__CANCEL_QUANTITY);
-		createEReference(orderItemEClass, ORDER_ITEM__CHANGE_BY_USER_LOGIN_ID);
+		createEReference(orderItemEClass, ORDER_ITEM__CHANGE_BY_USER_LOGIN);
 		createEAttribute(orderItemEClass, ORDER_ITEM__COMMENTS);
 		createEAttribute(orderItemEClass, ORDER_ITEM__CORRESPONDING_PO_ID);
 		createEAttribute(orderItemEClass, ORDER_ITEM__DEPLOYMENT_ID);
@@ -5370,42 +5370,42 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		createEAttribute(orderItemEClass, ORDER_ITEM__ESTIMATED_DELIVERY_DATE);
 		createEAttribute(orderItemEClass, ORDER_ITEM__ESTIMATED_SHIP_DATE);
 		createEAttribute(orderItemEClass, ORDER_ITEM__EXTERNAL_ID);
-		createEReference(orderItemEClass, ORDER_ITEM__FROM_INVENTORY_ITEM_ID);
+		createEReference(orderItemEClass, ORDER_ITEM__FROM_INVENTORY_ITEM);
 		createEAttribute(orderItemEClass, ORDER_ITEM__IS_ITEM_GROUP_PRIMARY);
 		createEAttribute(orderItemEClass, ORDER_ITEM__IS_MODIFIED_PRICE);
 		createEAttribute(orderItemEClass, ORDER_ITEM__IS_PROMO);
 		createEAttribute(orderItemEClass, ORDER_ITEM__ITEM_DESCRIPTION);
 		createEAttribute(orderItemEClass, ORDER_ITEM__ORDER_ITEM_GROUP_SEQ_ID);
-		createEReference(orderItemEClass, ORDER_ITEM__ORDER_ITEM_TYPE_ID);
-		createEReference(orderItemEClass, ORDER_ITEM__OVERRIDE_GL_ACCOUNT_ID);
+		createEReference(orderItemEClass, ORDER_ITEM__ORDER_ITEM_TYPE);
+		createEReference(orderItemEClass, ORDER_ITEM__OVERRIDE_GL_ACCOUNT);
 		createEAttribute(orderItemEClass, ORDER_ITEM__PROD_CATALOG_ID);
+		createEReference(orderItemEClass, ORDER_ITEM__PRODUCT);
 		createEAttribute(orderItemEClass, ORDER_ITEM__PRODUCT_CATEGORY_ID);
 		createEAttribute(orderItemEClass, ORDER_ITEM__PRODUCT_FEATURE_ID);
-		createEReference(orderItemEClass, ORDER_ITEM__PRODUCT_ID);
 		createEAttribute(orderItemEClass, ORDER_ITEM__QUANTITY);
 		createEAttribute(orderItemEClass, ORDER_ITEM__QUOTE_ID);
 		createEAttribute(orderItemEClass, ORDER_ITEM__QUOTE_ITEM_SEQ_ID);
-		createEReference(orderItemEClass, ORDER_ITEM__RECURRING_FREQ_UOM_ID);
+		createEReference(orderItemEClass, ORDER_ITEM__RECURRING_FREQ_UOM);
 		createEAttribute(orderItemEClass, ORDER_ITEM__RESERVE_AFTER_DATE);
-		createEReference(orderItemEClass, ORDER_ITEM__SALES_OPPORTUNITY_ID);
+		createEReference(orderItemEClass, ORDER_ITEM__SALES_OPPORTUNITY);
 		createEAttribute(orderItemEClass, ORDER_ITEM__SELECTED_AMOUNT);
 		createEAttribute(orderItemEClass, ORDER_ITEM__SHIP_AFTER_DATE);
 		createEAttribute(orderItemEClass, ORDER_ITEM__SHIP_BEFORE_DATE);
 		createEAttribute(orderItemEClass, ORDER_ITEM__SHOPPING_LIST_ID);
 		createEAttribute(orderItemEClass, ORDER_ITEM__SHOPPING_LIST_ITEM_SEQ_ID);
-		createEReference(orderItemEClass, ORDER_ITEM__STATUS_ID);
+		createEReference(orderItemEClass, ORDER_ITEM__STATUS);
 		createEAttribute(orderItemEClass, ORDER_ITEM__SUBSCRIPTION_ID);
 		createEAttribute(orderItemEClass, ORDER_ITEM__SUPPLIER_PRODUCT_ID);
-		createEReference(orderItemEClass, ORDER_ITEM__SYNC_STATUS_ID);
+		createEReference(orderItemEClass, ORDER_ITEM__SYNC_STATUS);
 		createEAttribute(orderItemEClass, ORDER_ITEM__UNIT_AVERAGE_COST);
 		createEAttribute(orderItemEClass, ORDER_ITEM__UNIT_LIST_PRICE);
 		createEAttribute(orderItemEClass, ORDER_ITEM__UNIT_PRICE);
 		createEAttribute(orderItemEClass, ORDER_ITEM__UNIT_RECURRING_PRICE);
 
 		orderItemAssocEClass = createEClass(ORDER_ITEM_ASSOC);
-		createEReference(orderItemAssocEClass, ORDER_ITEM_ASSOC__ORDER_ITEM_ASSOC_TYPE_ID);
-		createEReference(orderItemAssocEClass, ORDER_ITEM_ASSOC__ORDER_ID);
-		createEReference(orderItemAssocEClass, ORDER_ITEM_ASSOC__TO_ORDER_ID);
+		createEReference(orderItemAssocEClass, ORDER_ITEM_ASSOC__ORDER_ITEM_ASSOC_TYPE);
+		createEReference(orderItemAssocEClass, ORDER_ITEM_ASSOC__ORDER);
+		createEReference(orderItemAssocEClass, ORDER_ITEM_ASSOC__TO_ORDER);
 		createEAttribute(orderItemAssocEClass, ORDER_ITEM_ASSOC__ORDER_ITEM_SEQ_ID);
 		createEAttribute(orderItemAssocEClass, ORDER_ITEM_ASSOC__SHIP_GROUP_SEQ_ID);
 		createEAttribute(orderItemAssocEClass, ORDER_ITEM_ASSOC__TO_ORDER_ITEM_SEQ_ID);
@@ -5416,7 +5416,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		createEAttribute(orderItemAssocTypeEClass, ORDER_ITEM_ASSOC_TYPE__ORDER_ITEM_ASSOC_TYPE_ID);
 		createEAttribute(orderItemAssocTypeEClass, ORDER_ITEM_ASSOC_TYPE__DESCRIPTION);
 		createEAttribute(orderItemAssocTypeEClass, ORDER_ITEM_ASSOC_TYPE__HAS_TABLE);
-		createEReference(orderItemAssocTypeEClass, ORDER_ITEM_ASSOC_TYPE__PARENT_TYPE_ID);
+		createEReference(orderItemAssocTypeEClass, ORDER_ITEM_ASSOC_TYPE__PARENT_TYPE);
 
 		orderItemAttributeEClass = createEClass(ORDER_ITEM_ATTRIBUTE);
 		createEAttribute(orderItemAttributeEClass, ORDER_ITEM_ATTRIBUTE__ATTR_NAME);
@@ -5426,43 +5426,43 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		createEAttribute(orderItemAttributeEClass, ORDER_ITEM_ATTRIBUTE__ATTR_VALUE);
 
 		orderItemBillingEClass = createEClass(ORDER_ITEM_BILLING);
-		createEReference(orderItemBillingEClass, ORDER_ITEM_BILLING__ORDER_ID);
-		createEReference(orderItemBillingEClass, ORDER_ITEM_BILLING__INVOICE_ID);
+		createEReference(orderItemBillingEClass, ORDER_ITEM_BILLING__ORDER);
+		createEReference(orderItemBillingEClass, ORDER_ITEM_BILLING__INVOICE);
 		createEAttribute(orderItemBillingEClass, ORDER_ITEM_BILLING__INVOICE_ITEM_SEQ_ID);
 		createEAttribute(orderItemBillingEClass, ORDER_ITEM_BILLING__ORDER_ITEM_SEQ_ID);
 		createEAttribute(orderItemBillingEClass, ORDER_ITEM_BILLING__AMOUNT);
-		createEReference(orderItemBillingEClass, ORDER_ITEM_BILLING__ITEM_ISSUANCE_ID);
+		createEReference(orderItemBillingEClass, ORDER_ITEM_BILLING__ITEM_ISSUANCE);
 		createEAttribute(orderItemBillingEClass, ORDER_ITEM_BILLING__QUANTITY);
-		createEReference(orderItemBillingEClass, ORDER_ITEM_BILLING__SHIPMENT_RECEIPT_ID);
+		createEReference(orderItemBillingEClass, ORDER_ITEM_BILLING__SHIPMENT_RECEIPT);
 
 		orderItemChangeEClass = createEClass(ORDER_ITEM_CHANGE);
 		createEAttribute(orderItemChangeEClass, ORDER_ITEM_CHANGE__ORDER_ITEM_CHANGE_ID);
 		createEAttribute(orderItemChangeEClass, ORDER_ITEM_CHANGE__CANCEL_QUANTITY);
 		createEAttribute(orderItemChangeEClass, ORDER_ITEM_CHANGE__CHANGE_COMMENTS);
 		createEAttribute(orderItemChangeEClass, ORDER_ITEM_CHANGE__CHANGE_DATETIME);
-		createEReference(orderItemChangeEClass, ORDER_ITEM_CHANGE__CHANGE_TYPE_ENUM_ID);
+		createEReference(orderItemChangeEClass, ORDER_ITEM_CHANGE__CHANGE_TYPE_ENUM);
 		createEReference(orderItemChangeEClass, ORDER_ITEM_CHANGE__CHANGE_USER_LOGIN);
 		createEAttribute(orderItemChangeEClass, ORDER_ITEM_CHANGE__ITEM_DESCRIPTION);
-		createEReference(orderItemChangeEClass, ORDER_ITEM_CHANGE__ORDER_ID);
+		createEReference(orderItemChangeEClass, ORDER_ITEM_CHANGE__ORDER);
 		createEAttribute(orderItemChangeEClass, ORDER_ITEM_CHANGE__ORDER_ITEM_SEQ_ID);
 		createEAttribute(orderItemChangeEClass, ORDER_ITEM_CHANGE__QUANTITY);
-		createEReference(orderItemChangeEClass, ORDER_ITEM_CHANGE__REASON_ENUM_ID);
+		createEReference(orderItemChangeEClass, ORDER_ITEM_CHANGE__REASON_ENUM);
 		createEAttribute(orderItemChangeEClass, ORDER_ITEM_CHANGE__UNIT_PRICE);
 
 		orderItemContactMechEClass = createEClass(ORDER_ITEM_CONTACT_MECH);
-		createEReference(orderItemContactMechEClass, ORDER_ITEM_CONTACT_MECH__ORDER_ID);
-		createEReference(orderItemContactMechEClass, ORDER_ITEM_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE_ID);
+		createEReference(orderItemContactMechEClass, ORDER_ITEM_CONTACT_MECH__ORDER);
+		createEReference(orderItemContactMechEClass, ORDER_ITEM_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE);
 		createEAttribute(orderItemContactMechEClass, ORDER_ITEM_CONTACT_MECH__ORDER_ITEM_SEQ_ID);
-		createEReference(orderItemContactMechEClass, ORDER_ITEM_CONTACT_MECH__CONTACT_MECH_ID);
+		createEReference(orderItemContactMechEClass, ORDER_ITEM_CONTACT_MECH__CONTACT_MECH);
 
 		orderItemGroupEClass = createEClass(ORDER_ITEM_GROUP);
-		createEReference(orderItemGroupEClass, ORDER_ITEM_GROUP__ORDER_ID);
+		createEReference(orderItemGroupEClass, ORDER_ITEM_GROUP__ORDER);
 		createEAttribute(orderItemGroupEClass, ORDER_ITEM_GROUP__ORDER_ITEM_GROUP_SEQ_ID);
 		createEAttribute(orderItemGroupEClass, ORDER_ITEM_GROUP__GROUP_NAME);
 		createEAttribute(orderItemGroupEClass, ORDER_ITEM_GROUP__PARENT_GROUP_SEQ_ID);
 
 		orderItemGroupOrderEClass = createEClass(ORDER_ITEM_GROUP_ORDER);
-		createEReference(orderItemGroupOrderEClass, ORDER_ITEM_GROUP_ORDER__GROUP_ORDER_ID);
+		createEReference(orderItemGroupOrderEClass, ORDER_ITEM_GROUP_ORDER__GROUP_ORDER);
 		createEAttribute(orderItemGroupOrderEClass, ORDER_ITEM_GROUP_ORDER__ORDER_ID);
 		createEAttribute(orderItemGroupOrderEClass, ORDER_ITEM_GROUP_ORDER__ORDER_ITEM_SEQ_ID);
 
@@ -5470,50 +5470,50 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		createEAttribute(orderItemPriceInfoEClass, ORDER_ITEM_PRICE_INFO__ORDER_ITEM_PRICE_INFO_ID);
 		createEAttribute(orderItemPriceInfoEClass, ORDER_ITEM_PRICE_INFO__DESCRIPTION);
 		createEAttribute(orderItemPriceInfoEClass, ORDER_ITEM_PRICE_INFO__MODIFY_AMOUNT);
-		createEReference(orderItemPriceInfoEClass, ORDER_ITEM_PRICE_INFO__ORDER_ID);
+		createEReference(orderItemPriceInfoEClass, ORDER_ITEM_PRICE_INFO__ORDER);
 		createEAttribute(orderItemPriceInfoEClass, ORDER_ITEM_PRICE_INFO__ORDER_ITEM_SEQ_ID);
 		createEAttribute(orderItemPriceInfoEClass, ORDER_ITEM_PRICE_INFO__PRODUCT_PRICE_ACTION_SEQ_ID);
-		createEReference(orderItemPriceInfoEClass, ORDER_ITEM_PRICE_INFO__PRODUCT_PRICE_RULE_ID);
+		createEReference(orderItemPriceInfoEClass, ORDER_ITEM_PRICE_INFO__PRODUCT_PRICE_RULE);
 		createEAttribute(orderItemPriceInfoEClass, ORDER_ITEM_PRICE_INFO__RATE_CODE);
 
 		orderItemRoleEClass = createEClass(ORDER_ITEM_ROLE);
-		createEReference(orderItemRoleEClass, ORDER_ITEM_ROLE__ORDER_ID);
-		createEReference(orderItemRoleEClass, ORDER_ITEM_ROLE__PARTY_ID);
-		createEReference(orderItemRoleEClass, ORDER_ITEM_ROLE__ROLE_TYPE_ID);
+		createEReference(orderItemRoleEClass, ORDER_ITEM_ROLE__ORDER);
+		createEReference(orderItemRoleEClass, ORDER_ITEM_ROLE__PARTY);
+		createEReference(orderItemRoleEClass, ORDER_ITEM_ROLE__ROLE_TYPE);
 		createEAttribute(orderItemRoleEClass, ORDER_ITEM_ROLE__ORDER_ITEM_SEQ_ID);
 
 		orderItemShipGroupEClass = createEClass(ORDER_ITEM_SHIP_GROUP);
-		createEReference(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__ORDER_ID);
+		createEReference(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__ORDER);
 		createEAttribute(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__SHIP_GROUP_SEQ_ID);
-		createEReference(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__CARRIER_PARTY_ID);
+		createEReference(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__CARRIER_PARTY);
 		createEAttribute(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__CARRIER_ROLE_TYPE_ID);
-		createEReference(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__CONTACT_MECH_ID);
+		createEReference(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__CONTACT_MECH);
 		createEAttribute(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__ESTIMATED_DELIVERY_DATE);
 		createEAttribute(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__ESTIMATED_SHIP_DATE);
-		createEReference(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__FACILITY_ID);
+		createEReference(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__FACILITY);
 		createEAttribute(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__GIFT_MESSAGE);
 		createEAttribute(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__IS_GIFT);
 		createEAttribute(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__MAY_SPLIT);
 		createEAttribute(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__SHIP_AFTER_DATE);
 		createEAttribute(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__SHIP_BY_DATE);
-		createEReference(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__SHIPMENT_METHOD_TYPE_ID);
+		createEReference(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__SHIPMENT_METHOD_TYPE);
 		createEAttribute(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__SHIPPING_INSTRUCTIONS);
-		createEReference(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__SUPPLIER_AGREEMENT_ID);
-		createEReference(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__SUPPLIER_PARTY_ID);
-		createEReference(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__TELECOM_CONTACT_MECH_ID);
+		createEReference(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__SUPPLIER_AGREEMENT);
+		createEReference(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__SUPPLIER_PARTY);
+		createEReference(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__TELECOM_CONTACT_MECH);
 		createEAttribute(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__TRACKING_NUMBER);
-		createEReference(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__VENDOR_PARTY_ID);
+		createEReference(orderItemShipGroupEClass, ORDER_ITEM_SHIP_GROUP__VENDOR_PARTY);
 
 		orderItemShipGroupAssocEClass = createEClass(ORDER_ITEM_SHIP_GROUP_ASSOC);
-		createEReference(orderItemShipGroupAssocEClass, ORDER_ITEM_SHIP_GROUP_ASSOC__ORDER_ID);
+		createEReference(orderItemShipGroupAssocEClass, ORDER_ITEM_SHIP_GROUP_ASSOC__ORDER);
 		createEAttribute(orderItemShipGroupAssocEClass, ORDER_ITEM_SHIP_GROUP_ASSOC__ORDER_ITEM_SEQ_ID);
 		createEAttribute(orderItemShipGroupAssocEClass, ORDER_ITEM_SHIP_GROUP_ASSOC__SHIP_GROUP_SEQ_ID);
 		createEAttribute(orderItemShipGroupAssocEClass, ORDER_ITEM_SHIP_GROUP_ASSOC__CANCEL_QUANTITY);
 		createEAttribute(orderItemShipGroupAssocEClass, ORDER_ITEM_SHIP_GROUP_ASSOC__QUANTITY);
 
 		orderItemShipGrpInvResEClass = createEClass(ORDER_ITEM_SHIP_GRP_INV_RES);
-		createEReference(orderItemShipGrpInvResEClass, ORDER_ITEM_SHIP_GRP_INV_RES__ORDER_ID);
-		createEReference(orderItemShipGrpInvResEClass, ORDER_ITEM_SHIP_GRP_INV_RES__INVENTORY_ITEM_ID);
+		createEReference(orderItemShipGrpInvResEClass, ORDER_ITEM_SHIP_GRP_INV_RES__ORDER);
+		createEReference(orderItemShipGrpInvResEClass, ORDER_ITEM_SHIP_GRP_INV_RES__INVENTORY_ITEM);
 		createEAttribute(orderItemShipGrpInvResEClass, ORDER_ITEM_SHIP_GRP_INV_RES__ORDER_ITEM_SEQ_ID);
 		createEAttribute(orderItemShipGrpInvResEClass, ORDER_ITEM_SHIP_GRP_INV_RES__SHIP_GROUP_SEQ_ID);
 		createEAttribute(orderItemShipGrpInvResEClass, ORDER_ITEM_SHIP_GRP_INV_RES__CREATED_DATETIME);
@@ -5532,10 +5532,10 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		createEAttribute(orderItemTypeEClass, ORDER_ITEM_TYPE__DESCRIPTION);
 		createEAttribute(orderItemTypeEClass, ORDER_ITEM_TYPE__HAS_TABLE);
 		createEReference(orderItemTypeEClass, ORDER_ITEM_TYPE__ORDER_ITEM_TYPE_ATTRS);
-		createEReference(orderItemTypeEClass, ORDER_ITEM_TYPE__PARENT_TYPE_ID);
+		createEReference(orderItemTypeEClass, ORDER_ITEM_TYPE__PARENT_TYPE);
 
 		orderItemTypeAttrEClass = createEClass(ORDER_ITEM_TYPE_ATTR);
-		createEReference(orderItemTypeAttrEClass, ORDER_ITEM_TYPE_ATTR__ORDER_ITEM_TYPE_ID);
+		createEReference(orderItemTypeAttrEClass, ORDER_ITEM_TYPE_ATTR__ORDER_ITEM_TYPE);
 		createEAttribute(orderItemTypeAttrEClass, ORDER_ITEM_TYPE_ATTR__ATTR_NAME);
 		createEAttribute(orderItemTypeAttrEClass, ORDER_ITEM_TYPE_ATTR__DESCRIPTION);
 
@@ -5544,46 +5544,46 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		createEAttribute(orderNotificationEClass, ORDER_NOTIFICATION__COMMENTS);
 		createEReference(orderNotificationEClass, ORDER_NOTIFICATION__EMAIL_TYPE);
 		createEAttribute(orderNotificationEClass, ORDER_NOTIFICATION__NOTIFICATION_DATE);
-		createEReference(orderNotificationEClass, ORDER_NOTIFICATION__ORDER_ID);
+		createEReference(orderNotificationEClass, ORDER_NOTIFICATION__ORDER);
 
 		orderPaymentPreferenceEClass = createEClass(ORDER_PAYMENT_PREFERENCE);
 		createEAttribute(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__ORDER_PAYMENT_PREFERENCE_ID);
 		createEAttribute(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__BILLING_POSTAL_CODE);
 		createEReference(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__CREATED_BY_USER_LOGIN);
 		createEAttribute(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__CREATED_DATE);
-		createEReference(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__FIN_ACCOUNT_ID);
+		createEReference(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__FIN_ACCOUNT);
 		createEAttribute(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__LAST_MODIFIED_BY_USER_LOGIN);
 		createEAttribute(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__LAST_MODIFIED_DATE);
 		createEAttribute(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__MANUAL_AUTH_CODE);
 		createEAttribute(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__MANUAL_REF_NUM);
 		createEAttribute(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__MAX_AMOUNT);
 		createEAttribute(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__NEEDS_NSF_RETRY);
-		createEReference(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__ORDER_ID);
+		createEReference(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__ORDER);
 		createEAttribute(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__ORDER_ITEM_SEQ_ID);
 		createEAttribute(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__OVERFLOW_FLAG);
-		createEReference(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD_ID);
-		createEReference(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD_TYPE_ID);
+		createEReference(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD);
+		createEReference(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD_TYPE);
 		createEAttribute(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__PRESENT_FLAG);
 		createEAttribute(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__PROCESS_ATTEMPT);
-		createEReference(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__PRODUCT_PRICE_PURPOSE_ID);
+		createEReference(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__PRODUCT_PRICE_PURPOSE);
 		createEAttribute(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__SECURITY_CODE);
 		createEAttribute(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__SHIP_GROUP_SEQ_ID);
-		createEReference(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__STATUS_ID);
+		createEReference(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__STATUS);
 		createEAttribute(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__SWIPED_FLAG);
 		createEAttribute(orderPaymentPreferenceEClass, ORDER_PAYMENT_PREFERENCE__TRACK2);
 
 		orderProductPromoCodeEClass = createEClass(ORDER_PRODUCT_PROMO_CODE);
-		createEReference(orderProductPromoCodeEClass, ORDER_PRODUCT_PROMO_CODE__ORDER_ID);
-		createEReference(orderProductPromoCodeEClass, ORDER_PRODUCT_PROMO_CODE__PRODUCT_PROMO_CODE_ID);
+		createEReference(orderProductPromoCodeEClass, ORDER_PRODUCT_PROMO_CODE__ORDER);
+		createEReference(orderProductPromoCodeEClass, ORDER_PRODUCT_PROMO_CODE__PRODUCT_PROMO_CODE);
 
 		orderRoleEClass = createEClass(ORDER_ROLE);
-		createEReference(orderRoleEClass, ORDER_ROLE__ORDER_ID);
-		createEReference(orderRoleEClass, ORDER_ROLE__PARTY_ID);
-		createEReference(orderRoleEClass, ORDER_ROLE__ROLE_TYPE_ID);
+		createEReference(orderRoleEClass, ORDER_ROLE__ORDER);
+		createEReference(orderRoleEClass, ORDER_ROLE__PARTY);
+		createEReference(orderRoleEClass, ORDER_ROLE__ROLE_TYPE);
 
 		orderShipmentEClass = createEClass(ORDER_SHIPMENT);
-		createEReference(orderShipmentEClass, ORDER_SHIPMENT__ORDER_ID);
-		createEReference(orderShipmentEClass, ORDER_SHIPMENT__SHIPMENT_ID);
+		createEReference(orderShipmentEClass, ORDER_SHIPMENT__ORDER);
+		createEReference(orderShipmentEClass, ORDER_SHIPMENT__SHIPMENT);
 		createEAttribute(orderShipmentEClass, ORDER_SHIPMENT__ORDER_ITEM_SEQ_ID);
 		createEAttribute(orderShipmentEClass, ORDER_SHIPMENT__SHIP_GROUP_SEQ_ID);
 		createEAttribute(orderShipmentEClass, ORDER_SHIPMENT__SHIPMENT_ITEM_SEQ_ID);
@@ -5592,30 +5592,30 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		orderStatusEClass = createEClass(ORDER_STATUS);
 		createEAttribute(orderStatusEClass, ORDER_STATUS__ORDER_STATUS_ID);
 		createEAttribute(orderStatusEClass, ORDER_STATUS__CHANGE_REASON);
-		createEReference(orderStatusEClass, ORDER_STATUS__ORDER_ID);
+		createEReference(orderStatusEClass, ORDER_STATUS__ORDER);
 		createEAttribute(orderStatusEClass, ORDER_STATUS__ORDER_ITEM_SEQ_ID);
-		createEReference(orderStatusEClass, ORDER_STATUS__ORDER_PAYMENT_PREFERENCE_ID);
+		createEReference(orderStatusEClass, ORDER_STATUS__ORDER_PAYMENT_PREFERENCE);
+		createEReference(orderStatusEClass, ORDER_STATUS__STATUS);
 		createEAttribute(orderStatusEClass, ORDER_STATUS__STATUS_DATETIME);
-		createEReference(orderStatusEClass, ORDER_STATUS__STATUS_ID);
 		createEReference(orderStatusEClass, ORDER_STATUS__STATUS_USER_LOGIN);
 
 		orderSummaryEntryEClass = createEClass(ORDER_SUMMARY_ENTRY);
-		createEReference(orderSummaryEntryEClass, ORDER_SUMMARY_ENTRY__PRODUCT_ID);
-		createEReference(orderSummaryEntryEClass, ORDER_SUMMARY_ENTRY__FACILITY_ID);
+		createEReference(orderSummaryEntryEClass, ORDER_SUMMARY_ENTRY__PRODUCT);
+		createEReference(orderSummaryEntryEClass, ORDER_SUMMARY_ENTRY__FACILITY);
 		createEAttribute(orderSummaryEntryEClass, ORDER_SUMMARY_ENTRY__ENTRY_DATE);
 		createEAttribute(orderSummaryEntryEClass, ORDER_SUMMARY_ENTRY__GROSS_SALES);
 		createEAttribute(orderSummaryEntryEClass, ORDER_SUMMARY_ENTRY__PRODUCT_COST);
 		createEAttribute(orderSummaryEntryEClass, ORDER_SUMMARY_ENTRY__TOTAL_QUANTITY);
 
 		orderTermEClass = createEClass(ORDER_TERM);
-		createEReference(orderTermEClass, ORDER_TERM__ORDER_ID);
-		createEReference(orderTermEClass, ORDER_TERM__TERM_TYPE_ID);
+		createEReference(orderTermEClass, ORDER_TERM__ORDER);
+		createEReference(orderTermEClass, ORDER_TERM__TERM_TYPE);
 		createEAttribute(orderTermEClass, ORDER_TERM__ORDER_ITEM_SEQ_ID);
 		createEAttribute(orderTermEClass, ORDER_TERM__DESCRIPTION);
 		createEAttribute(orderTermEClass, ORDER_TERM__TERM_DAYS);
 		createEAttribute(orderTermEClass, ORDER_TERM__TERM_VALUE);
 		createEAttribute(orderTermEClass, ORDER_TERM__TEXT_VALUE);
-		createEReference(orderTermEClass, ORDER_TERM__UOM_ID);
+		createEReference(orderTermEClass, ORDER_TERM__UOM);
 
 		orderTermAttributeEClass = createEClass(ORDER_TERM_ATTRIBUTE);
 		createEAttribute(orderTermAttributeEClass, ORDER_TERM_ATTRIBUTE__ATTR_NAME);
@@ -5630,23 +5630,23 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		createEAttribute(orderTypeEClass, ORDER_TYPE__DESCRIPTION);
 		createEAttribute(orderTypeEClass, ORDER_TYPE__HAS_TABLE);
 		createEReference(orderTypeEClass, ORDER_TYPE__ORDER_TYPE_ATTRS);
-		createEReference(orderTypeEClass, ORDER_TYPE__PARENT_TYPE_ID);
+		createEReference(orderTypeEClass, ORDER_TYPE__PARENT_TYPE);
 
 		orderTypeAttrEClass = createEClass(ORDER_TYPE_ATTR);
-		createEReference(orderTypeAttrEClass, ORDER_TYPE_ATTR__ORDER_TYPE_ID);
+		createEReference(orderTypeAttrEClass, ORDER_TYPE_ATTR__ORDER_TYPE);
 		createEAttribute(orderTypeAttrEClass, ORDER_TYPE_ATTR__ATTR_NAME);
 		createEAttribute(orderTypeAttrEClass, ORDER_TYPE_ATTR__DESCRIPTION);
 
 		productOrderItemEClass = createEClass(PRODUCT_ORDER_ITEM);
-		createEReference(productOrderItemEClass, PRODUCT_ORDER_ITEM__ORDER_ID);
-		createEReference(productOrderItemEClass, PRODUCT_ORDER_ITEM__ENGAGEMENT_ID);
+		createEReference(productOrderItemEClass, PRODUCT_ORDER_ITEM__ORDER);
+		createEReference(productOrderItemEClass, PRODUCT_ORDER_ITEM__ENGAGEMENT);
 		createEAttribute(productOrderItemEClass, PRODUCT_ORDER_ITEM__ENGAGEMENT_ITEM_SEQ_ID);
 		createEAttribute(productOrderItemEClass, PRODUCT_ORDER_ITEM__ORDER_ITEM_SEQ_ID);
-		createEReference(productOrderItemEClass, PRODUCT_ORDER_ITEM__PRODUCT_ID);
+		createEReference(productOrderItemEClass, PRODUCT_ORDER_ITEM__PRODUCT);
 
 		workOrderItemFulfillmentEClass = createEClass(WORK_ORDER_ITEM_FULFILLMENT);
-		createEReference(workOrderItemFulfillmentEClass, WORK_ORDER_ITEM_FULFILLMENT__ORDER_ID);
-		createEReference(workOrderItemFulfillmentEClass, WORK_ORDER_ITEM_FULFILLMENT__WORK_EFFORT_ID);
+		createEReference(workOrderItemFulfillmentEClass, WORK_ORDER_ITEM_FULFILLMENT__ORDER);
+		createEReference(workOrderItemFulfillmentEClass, WORK_ORDER_ITEM_FULFILLMENT__WORK_EFFORT);
 		createEAttribute(workOrderItemFulfillmentEClass, WORK_ORDER_ITEM_FULFILLMENT__ORDER_ITEM_SEQ_ID);
 		createEAttribute(workOrderItemFulfillmentEClass, WORK_ORDER_ITEM_FULFILLMENT__SHIP_GROUP_SEQ_ID);
 	}
@@ -5852,10 +5852,10 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(communicationEventOrderEClass, CommunicationEventOrder.class, "CommunicationEventOrder", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getCommunicationEventOrder_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, CommunicationEventOrder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEventOrder_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
-		initEReference(getCommunicationEventOrder_CommunicationEventId(), theCommunicationPackage.getCommunicationEvent(), null, "communicationEventId", null, 1, 1, CommunicationEventOrder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEventOrder_CommunicationEventId().getEKeys().add(theCommunicationPackage.getCommunicationEvent_CommunicationEventId());
+		initEReference(getCommunicationEventOrder_Order(), this.getOrderHeader(), null, "order", null, 1, 1, CommunicationEventOrder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCommunicationEventOrder_Order().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getCommunicationEventOrder_CommunicationEvent(), theCommunicationPackage.getCommunicationEvent(), null, "communicationEvent", null, 1, 1, CommunicationEventOrder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCommunicationEventOrder_CommunicationEvent().getEKeys().add(theCommunicationPackage.getCommunicationEvent_CommunicationEventId());
 
 		initEClass(orderAdjustmentEClass, OrderAdjustment.class, "OrderAdjustment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getOrderAdjustment_OrderAdjustmentId(), ecorePackage.getEString(), "orderAdjustmentId", null, 1, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -5876,46 +5876,46 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		initEAttribute(getOrderAdjustment_LastModifiedDate(), ecorePackage.getEDate(), "lastModifiedDate", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderAdjustment_OldAmountPerQuantity(), ecorePackage.getEBigDecimal(), "oldAmountPerQuantity", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderAdjustment_OldPercentage(), ecorePackage.getEDouble(), "oldPercentage", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOrderAdjustment_Order(), this.getOrderHeader(), null, "order", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderAdjustment_Order().getEKeys().add(this.getOrderHeader_OrderId());
 		initEReference(getOrderAdjustment_OrderAdjustmentAttributes(), this.getOrderAdjustmentAttribute(), null, "orderAdjustmentAttributes", null, 0, -1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderAdjustment_OrderAdjustmentTypeId(), this.getOrderAdjustmentType(), null, "orderAdjustmentTypeId", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderAdjustment_OrderAdjustmentTypeId().getEKeys().add(this.getOrderAdjustmentType_OrderAdjustmentTypeId());
-		initEReference(getOrderAdjustment_OrderId(), this.getOrderHeader(), null, "orderId", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderAdjustment_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderAdjustment_OrderAdjustmentType(), this.getOrderAdjustmentType(), null, "orderAdjustmentType", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderAdjustment_OrderAdjustmentType().getEKeys().add(this.getOrderAdjustmentType_OrderAdjustmentTypeId());
 		initEAttribute(getOrderAdjustment_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderAdjustment_OriginalAdjustmentId(), this.getOrderAdjustment(), null, "originalAdjustmentId", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderAdjustment_OriginalAdjustmentId().getEKeys().add(this.getOrderAdjustment_OrderAdjustmentId());
-		initEReference(getOrderAdjustment_OverrideGlAccountId(), theLedgerPackage.getGlAccount(), null, "overrideGlAccountId", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderAdjustment_OverrideGlAccountId().getEKeys().add(theLedgerPackage.getGlAccount_GlAccountId());
-		initEReference(getOrderAdjustment_PrimaryGeoId(), theGeoPackage.getGeo(), null, "primaryGeoId", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderAdjustment_PrimaryGeoId().getEKeys().add(theGeoPackage.getGeo_GeoId());
+		initEReference(getOrderAdjustment_OriginalAdjustment(), this.getOrderAdjustment(), null, "originalAdjustment", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderAdjustment_OriginalAdjustment().getEKeys().add(this.getOrderAdjustment_OrderAdjustmentId());
+		initEReference(getOrderAdjustment_OverrideGlAccount(), theLedgerPackage.getGlAccount(), null, "overrideGlAccount", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderAdjustment_OverrideGlAccount().getEKeys().add(theLedgerPackage.getGlAccount_GlAccountId());
+		initEReference(getOrderAdjustment_PrimaryGeo(), theGeoPackage.getGeo(), null, "primaryGeo", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderAdjustment_PrimaryGeo().getEKeys().add(theGeoPackage.getGeo_GeoId());
 		initEAttribute(getOrderAdjustment_ProductFeatureId(), ecorePackage.getEString(), "productFeatureId", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOrderAdjustment_ProductPromo(), thePromoPackage.getProductPromo(), null, "productPromo", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderAdjustment_ProductPromo().getEKeys().add(thePromoPackage.getProductPromo_ProductPromoId());
 		initEAttribute(getOrderAdjustment_ProductPromoActionSeqId(), ecorePackage.getEString(), "productPromoActionSeqId", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderAdjustment_ProductPromoId(), thePromoPackage.getProductPromo(), null, "productPromoId", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderAdjustment_ProductPromoId().getEKeys().add(thePromoPackage.getProductPromo_ProductPromoId());
 		initEAttribute(getOrderAdjustment_ProductPromoRuleId(), ecorePackage.getEString(), "productPromoRuleId", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderAdjustment_RecurringAmount(), ecorePackage.getEBigDecimal(), "recurringAmount", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderAdjustment_SecondaryGeoId(), theGeoPackage.getGeo(), null, "secondaryGeoId", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderAdjustment_SecondaryGeoId().getEKeys().add(theGeoPackage.getGeo_GeoId());
+		initEReference(getOrderAdjustment_SecondaryGeo(), theGeoPackage.getGeo(), null, "secondaryGeo", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderAdjustment_SecondaryGeo().getEKeys().add(theGeoPackage.getGeo_GeoId());
 		initEAttribute(getOrderAdjustment_ShipGroupSeqId(), ecorePackage.getEString(), "shipGroupSeqId", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderAdjustment_SourcePercentage(), ecorePackage.getEBigDecimal(), "sourcePercentage", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderAdjustment_SourceReferenceId(), ecorePackage.getEString(), "sourceReferenceId", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderAdjustment_TaxAuthGeoId(), ecorePackage.getEString(), "taxAuthGeoId", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderAdjustment_TaxAuthPartyId(), ecorePackage.getEString(), "taxAuthPartyId", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderAdjustment_TaxAuthorityRateSeqId(), theTaxPackage.getTaxAuthorityRateProduct(), null, "taxAuthorityRateSeqId", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderAdjustment_TaxAuthorityRateSeqId().getEKeys().add(theTaxPackage.getTaxAuthorityRateProduct_TaxAuthorityRateSeqId());
+		initEReference(getOrderAdjustment_TaxAuthorityRateSeq(), theTaxPackage.getTaxAuthorityRateProduct(), null, "taxAuthorityRateSeq", null, 0, 1, OrderAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderAdjustment_TaxAuthorityRateSeq().getEKeys().add(theTaxPackage.getTaxAuthorityRateProduct_TaxAuthorityRateSeqId());
 
 		initEClass(orderAdjustmentAttributeEClass, OrderAdjustmentAttribute.class, "OrderAdjustmentAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderAdjustmentAttribute_OrderAdjustmentId(), this.getOrderAdjustment(), null, "orderAdjustmentId", null, 1, 1, OrderAdjustmentAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderAdjustmentAttribute_OrderAdjustmentId().getEKeys().add(this.getOrderAdjustment_OrderAdjustmentId());
+		initEReference(getOrderAdjustmentAttribute_OrderAdjustment(), this.getOrderAdjustment(), null, "orderAdjustment", null, 1, 1, OrderAdjustmentAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderAdjustmentAttribute_OrderAdjustment().getEKeys().add(this.getOrderAdjustment_OrderAdjustmentId());
 		initEAttribute(getOrderAdjustmentAttribute_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, OrderAdjustmentAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderAdjustmentAttribute_AttrDescription(), ecorePackage.getEString(), "attrDescription", null, 0, 1, OrderAdjustmentAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderAdjustmentAttribute_AttrValue(), ecorePackage.getEString(), "attrValue", null, 0, 1, OrderAdjustmentAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(orderAdjustmentBillingEClass, OrderAdjustmentBilling.class, "OrderAdjustmentBilling", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderAdjustmentBilling_OrderAdjustmentId(), this.getOrderAdjustment(), null, "orderAdjustmentId", null, 1, 1, OrderAdjustmentBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderAdjustmentBilling_OrderAdjustmentId().getEKeys().add(this.getOrderAdjustment_OrderAdjustmentId());
-		initEReference(getOrderAdjustmentBilling_InvoiceId(), theInvoicePackage.getInvoice(), null, "invoiceId", null, 1, 1, OrderAdjustmentBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderAdjustmentBilling_InvoiceId().getEKeys().add(theInvoicePackage.getInvoice_InvoiceId());
+		initEReference(getOrderAdjustmentBilling_OrderAdjustment(), this.getOrderAdjustment(), null, "orderAdjustment", null, 1, 1, OrderAdjustmentBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderAdjustmentBilling_OrderAdjustment().getEKeys().add(this.getOrderAdjustment_OrderAdjustmentId());
+		initEReference(getOrderAdjustmentBilling_Invoice(), theInvoicePackage.getInvoice(), null, "invoice", null, 1, 1, OrderAdjustmentBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderAdjustmentBilling_Invoice().getEKeys().add(theInvoicePackage.getInvoice_InvoiceId());
 		initEAttribute(getOrderAdjustmentBilling_InvoiceItemSeqId(), ecorePackage.getEString(), "invoiceItemSeqId", null, 1, 1, OrderAdjustmentBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderAdjustmentBilling_Amount(), ecorePackage.getEBigDecimal(), "amount", null, 0, 1, OrderAdjustmentBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -5924,25 +5924,25 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		initEAttribute(getOrderAdjustmentType_Description(), ecorePackage.getEString(), "description", null, 0, 1, OrderAdjustmentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderAdjustmentType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 0, 1, OrderAdjustmentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getOrderAdjustmentType_OrderAdjustmentTypeAttrs(), this.getOrderAdjustmentTypeAttr(), null, "orderAdjustmentTypeAttrs", null, 0, -1, OrderAdjustmentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderAdjustmentType_ParentTypeId(), this.getOrderAdjustmentType(), null, "parentTypeId", null, 0, 1, OrderAdjustmentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderAdjustmentType_ParentTypeId().getEKeys().add(this.getOrderAdjustmentType_OrderAdjustmentTypeId());
+		initEReference(getOrderAdjustmentType_ParentType(), this.getOrderAdjustmentType(), null, "parentType", null, 0, 1, OrderAdjustmentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderAdjustmentType_ParentType().getEKeys().add(this.getOrderAdjustmentType_OrderAdjustmentTypeId());
 
 		initEClass(orderAdjustmentTypeAttrEClass, OrderAdjustmentTypeAttr.class, "OrderAdjustmentTypeAttr", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderAdjustmentTypeAttr_OrderAdjustmentTypeId(), this.getOrderAdjustmentType(), null, "orderAdjustmentTypeId", null, 1, 1, OrderAdjustmentTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderAdjustmentTypeAttr_OrderAdjustmentTypeId().getEKeys().add(this.getOrderAdjustmentType_OrderAdjustmentTypeId());
+		initEReference(getOrderAdjustmentTypeAttr_OrderAdjustmentType(), this.getOrderAdjustmentType(), null, "orderAdjustmentType", null, 1, 1, OrderAdjustmentTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderAdjustmentTypeAttr_OrderAdjustmentType().getEKeys().add(this.getOrderAdjustmentType_OrderAdjustmentTypeId());
 		initEAttribute(getOrderAdjustmentTypeAttr_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, OrderAdjustmentTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderAdjustmentTypeAttr_Description(), ecorePackage.getEString(), "description", null, 0, 1, OrderAdjustmentTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(orderAttributeEClass, OrderAttribute.class, "OrderAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderAttribute_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderAttribute_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderAttribute_Order(), this.getOrderHeader(), null, "order", null, 1, 1, OrderAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderAttribute_Order().getEKeys().add(this.getOrderHeader_OrderId());
 		initEAttribute(getOrderAttribute_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, OrderAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderAttribute_AttrDescription(), ecorePackage.getEString(), "attrDescription", null, 0, 1, OrderAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderAttribute_AttrValue(), ecorePackage.getEString(), "attrValue", null, 0, 1, OrderAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(orderBlacklistEClass, OrderBlacklist.class, "OrderBlacklist", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderBlacklist_OrderBlacklistTypeId(), this.getOrderBlacklistType(), null, "orderBlacklistTypeId", null, 1, 1, OrderBlacklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderBlacklist_OrderBlacklistTypeId().getEKeys().add(this.getOrderBlacklistType_OrderBlacklistTypeId());
+		initEReference(getOrderBlacklist_OrderBlacklistType(), this.getOrderBlacklistType(), null, "orderBlacklistType", null, 1, 1, OrderBlacklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderBlacklist_OrderBlacklistType().getEKeys().add(this.getOrderBlacklistType_OrderBlacklistTypeId());
 		initEAttribute(getOrderBlacklist_BlacklistString(), ecorePackage.getEString(), "blacklistString", null, 1, 1, OrderBlacklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(orderBlacklistTypeEClass, OrderBlacklistType.class, "OrderBlacklistType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -5950,20 +5950,20 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		initEAttribute(getOrderBlacklistType_Description(), ecorePackage.getEString(), "description", null, 0, 1, OrderBlacklistType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(orderContactMechEClass, OrderContactMech.class, "OrderContactMech", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderContactMech_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderContactMech_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
-		initEReference(getOrderContactMech_ContactMechId(), theContactPackage_1.getContactMech(), null, "contactMechId", null, 1, 1, OrderContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderContactMech_ContactMechId().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
-		initEReference(getOrderContactMech_ContactMechPurposeTypeId(), theContactPackage_1.getContactMechPurposeType(), null, "contactMechPurposeTypeId", null, 1, 1, OrderContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderContactMech_ContactMechPurposeTypeId().getEKeys().add(theContactPackage_1.getContactMechPurposeType_ContactMechPurposeTypeId());
+		initEReference(getOrderContactMech_Order(), this.getOrderHeader(), null, "order", null, 1, 1, OrderContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderContactMech_Order().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderContactMech_ContactMech(), theContactPackage_1.getContactMech(), null, "contactMech", null, 1, 1, OrderContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderContactMech_ContactMech().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
+		initEReference(getOrderContactMech_ContactMechPurposeType(), theContactPackage_1.getContactMechPurposeType(), null, "contactMechPurposeType", null, 1, 1, OrderContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderContactMech_ContactMechPurposeType().getEKeys().add(theContactPackage_1.getContactMechPurposeType_ContactMechPurposeTypeId());
 
 		initEClass(orderContentEClass, OrderContent.class, "OrderContent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderContent_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderContent_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
-		initEReference(getOrderContent_ContentId(), theContentPackage.getContent(), null, "contentId", null, 1, 1, OrderContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderContent_ContentId().getEKeys().add(theContentPackage.getContent_ContentId());
-		initEReference(getOrderContent_OrderContentTypeId(), this.getOrderContentType(), null, "orderContentTypeId", null, 1, 1, OrderContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderContent_OrderContentTypeId().getEKeys().add(this.getOrderContentType_OrderContentTypeId());
+		initEReference(getOrderContent_Order(), this.getOrderHeader(), null, "order", null, 1, 1, OrderContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderContent_Order().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderContent_Content(), theContentPackage.getContent(), null, "content", null, 1, 1, OrderContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderContent_Content().getEKeys().add(theContentPackage.getContent_ContentId());
+		initEReference(getOrderContent_OrderContentType(), this.getOrderContentType(), null, "orderContentType", null, 1, 1, OrderContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderContent_OrderContentType().getEKeys().add(this.getOrderContentType_OrderContentTypeId());
 		initEAttribute(getOrderContent_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, OrderContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderContent_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 1, 1, OrderContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderContent_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, OrderContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -5972,33 +5972,33 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		initEAttribute(getOrderContentType_OrderContentTypeId(), ecorePackage.getEString(), "orderContentTypeId", null, 1, 1, OrderContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderContentType_Description(), ecorePackage.getEString(), "description", null, 0, 1, OrderContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderContentType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 0, 1, OrderContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderContentType_ParentTypeId(), this.getOrderContentType(), null, "parentTypeId", null, 0, 1, OrderContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderContentType_ParentTypeId().getEKeys().add(this.getOrderContentType_OrderContentTypeId());
+		initEReference(getOrderContentType_ParentType(), this.getOrderContentType(), null, "parentType", null, 0, 1, OrderContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderContentType_ParentType().getEKeys().add(this.getOrderContentType_OrderContentTypeId());
 
 		initEClass(orderDeliveryScheduleEClass, OrderDeliverySchedule.class, "OrderDeliverySchedule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderDeliverySchedule_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderDeliverySchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderDeliverySchedule_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderDeliverySchedule_Order(), this.getOrderHeader(), null, "order", null, 1, 1, OrderDeliverySchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderDeliverySchedule_Order().getEKeys().add(this.getOrderHeader_OrderId());
 		initEAttribute(getOrderDeliverySchedule_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 1, 1, OrderDeliverySchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderDeliverySchedule_Cartons(), ecorePackage.getELong(), "cartons", null, 0, 1, OrderDeliverySchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderDeliverySchedule_EstimatedReadyDate(), ecorePackage.getEDate(), "estimatedReadyDate", null, 0, 1, OrderDeliverySchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderDeliverySchedule_SkidsPallets(), ecorePackage.getELong(), "skidsPallets", null, 0, 1, OrderDeliverySchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderDeliverySchedule_StatusId(), theStatusPackage.getStatusItem(), null, "statusId", null, 0, 1, OrderDeliverySchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderDeliverySchedule_StatusId().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
+		initEReference(getOrderDeliverySchedule_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, OrderDeliverySchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderDeliverySchedule_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getOrderDeliverySchedule_TotalCubicSize(), ecorePackage.getEBigDecimal(), "totalCubicSize", null, 0, 1, OrderDeliverySchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderDeliverySchedule_TotalCubicUomId(), theUomPackage.getUom(), null, "totalCubicUomId", null, 0, 1, OrderDeliverySchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderDeliverySchedule_TotalCubicUomId().getEKeys().add(theUomPackage.getUom_UomId());
+		initEReference(getOrderDeliverySchedule_TotalCubicUom(), theUomPackage.getUom(), null, "totalCubicUom", null, 0, 1, OrderDeliverySchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderDeliverySchedule_TotalCubicUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEAttribute(getOrderDeliverySchedule_TotalWeight(), ecorePackage.getEBigDecimal(), "totalWeight", null, 0, 1, OrderDeliverySchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderDeliverySchedule_TotalWeightUomId(), theUomPackage.getUom(), null, "totalWeightUomId", null, 0, 1, OrderDeliverySchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderDeliverySchedule_TotalWeightUomId().getEKeys().add(theUomPackage.getUom_UomId());
+		initEReference(getOrderDeliverySchedule_TotalWeightUom(), theUomPackage.getUom(), null, "totalWeightUom", null, 0, 1, OrderDeliverySchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderDeliverySchedule_TotalWeightUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEAttribute(getOrderDeliverySchedule_UnitsPieces(), ecorePackage.getEBigDecimal(), "unitsPieces", null, 0, 1, OrderDeliverySchedule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(orderHeaderEClass, OrderHeader.class, "OrderHeader", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getOrderHeader_OrderId(), ecorePackage.getEString(), "orderId", null, 1, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderHeader_AgreementId(), ecorePackage.getEString(), "agreementId", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderHeader_AutoOrderShoppingListId(), theShoppinglistPackage.getShoppingList(), null, "autoOrderShoppingListId", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderHeader_AutoOrderShoppingListId().getEKeys().add(theShoppinglistPackage.getShoppingList_ShoppingListId());
-		initEReference(getOrderHeader_BillingAccountId(), thePaymentPackage.getBillingAccount(), null, "billingAccountId", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderHeader_BillingAccountId().getEKeys().add(thePaymentPackage.getBillingAccount_BillingAccountId());
+		initEReference(getOrderHeader_AutoOrderShoppingList(), theShoppinglistPackage.getShoppingList(), null, "autoOrderShoppingList", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderHeader_AutoOrderShoppingList().getEKeys().add(theShoppinglistPackage.getShoppingList_ShoppingListId());
+		initEReference(getOrderHeader_BillingAccount(), thePaymentPackage.getBillingAccount(), null, "billingAccount", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderHeader_BillingAccount().getEKeys().add(thePaymentPackage.getBillingAccount_BillingAccountId());
 		initEReference(getOrderHeader_CommunicationEventOrders(), this.getCommunicationEventOrder(), null, "communicationEventOrders", null, 0, -1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getOrderHeader_CreatedBy(), theLoginPackage.getUserLogin(), null, "createdBy", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getOrderHeader_CreatedBy().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
@@ -6023,28 +6023,28 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		initEReference(getOrderHeader_OrderItems(), this.getOrderItem(), null, "orderItems", null, 0, -1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderHeader_OrderName(), ecorePackage.getEString(), "orderName", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getOrderHeader_OrderProductPromoCodes(), this.getOrderProductPromoCode(), null, "orderProductPromoCodes", null, 0, -1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderHeader_OrderTypeId(), this.getOrderType(), null, "orderTypeId", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderHeader_OrderTypeId().getEKeys().add(this.getOrderType_OrderTypeId());
-		initEReference(getOrderHeader_OriginFacilityId(), theFacilityPackage.getFacility(), null, "originFacilityId", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderHeader_OriginFacilityId().getEKeys().add(theFacilityPackage.getFacility_FacilityId());
+		initEReference(getOrderHeader_OrderType(), this.getOrderType(), null, "orderType", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderHeader_OrderType().getEKeys().add(this.getOrderType_OrderTypeId());
+		initEReference(getOrderHeader_OriginFacility(), theFacilityPackage.getFacility(), null, "originFacility", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderHeader_OriginFacility().getEKeys().add(theFacilityPackage.getFacility_FacilityId());
 		initEAttribute(getOrderHeader_PickSheetPrintedDate(), ecorePackage.getEDate(), "pickSheetPrintedDate", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderHeader_Priority(), ecorePackage.getEString(), "priority", null, 1, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getOrderHeader_ProductPromoUses(), thePromoPackage.getProductPromoUse(), null, "productPromoUses", null, 0, -1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderHeader_ProductStoreId(), theStorePackage.getProductStore(), null, "productStoreId", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderHeader_ProductStoreId().getEKeys().add(theStorePackage.getProductStore_ProductStoreId());
+		initEReference(getOrderHeader_ProductStore(), theStorePackage.getProductStore(), null, "productStore", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderHeader_ProductStore().getEKeys().add(theStorePackage.getProductStore_ProductStoreId());
 		initEAttribute(getOrderHeader_RemainingSubTotal(), ecorePackage.getEBigDecimal(), "remainingSubTotal", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderHeader_SalesChannelEnumId(), theEnumPackage.getEnumeration(), null, "salesChannelEnumId", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderHeader_SalesChannelEnumId().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
-		initEReference(getOrderHeader_StatusId(), theStatusPackage.getStatusItem(), null, "statusId", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderHeader_StatusId().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
-		initEReference(getOrderHeader_SyncStatusId(), theStatusPackage.getStatusItem(), null, "syncStatusId", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderHeader_SyncStatusId().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
+		initEReference(getOrderHeader_SalesChannelEnum(), theEnumPackage.getEnumeration(), null, "salesChannelEnum", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderHeader_SalesChannelEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
+		initEReference(getOrderHeader_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderHeader_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
+		initEReference(getOrderHeader_SyncStatus(), theStatusPackage.getStatusItem(), null, "syncStatus", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderHeader_SyncStatus().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getOrderHeader_TerminalId(), ecorePackage.getEString(), "terminalId", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getOrderHeader_TrackingCodeOrders(), theTrackingPackage.getTrackingCodeOrder(), null, "trackingCodeOrders", null, 0, -1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderHeader_TransactionId(), ecorePackage.getEString(), "transactionId", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderHeader_VisitId(), ecorePackage.getEString(), "visitId", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderHeader_WebSiteId(), theWebsitePackage_1.getWebSite(), null, "webSiteId", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderHeader_WebSiteId().getEKeys().add(theWebsitePackage_1.getWebSite_WebSiteId());
+		initEReference(getOrderHeader_WebSite(), theWebsitePackage_1.getWebSite(), null, "webSite", null, 0, 1, OrderHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderHeader_WebSite().getEKeys().add(theWebsitePackage_1.getWebSite_WebSiteId());
 
 		addEOperation(orderHeaderEClass, ecorePackage.getEBoolean(), "isApprovable", 1, 1, IS_UNIQUE, IS_ORDERED);
 
@@ -6053,27 +6053,27 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		addEOperation(orderHeaderEClass, ecorePackage.getEBoolean(), "isHoldable", 1, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(orderHeaderNoteEClass, OrderHeaderNote.class, "OrderHeaderNote", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderHeaderNote_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderHeaderNote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderHeaderNote_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderHeaderNote_Order(), this.getOrderHeader(), null, "order", null, 1, 1, OrderHeaderNote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderHeaderNote_Order().getEKeys().add(this.getOrderHeader_OrderId());
 		initEAttribute(getOrderHeaderNote_InternalNote(), ecorePackage.getEBooleanObject(), "internalNote", null, 0, 1, OrderHeaderNote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(orderHeaderWorkEffortEClass, OrderHeaderWorkEffort.class, "OrderHeaderWorkEffort", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderHeaderWorkEffort_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderHeaderWorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderHeaderWorkEffort_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
-		initEReference(getOrderHeaderWorkEffort_WorkEffortId(), theWorkeffortPackage.getWorkEffort(), null, "workEffortId", null, 1, 1, OrderHeaderWorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderHeaderWorkEffort_WorkEffortId().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
+		initEReference(getOrderHeaderWorkEffort_Order(), this.getOrderHeader(), null, "order", null, 1, 1, OrderHeaderWorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderHeaderWorkEffort_Order().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderHeaderWorkEffort_WorkEffort(), theWorkeffortPackage.getWorkEffort(), null, "workEffort", null, 1, 1, OrderHeaderWorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderHeaderWorkEffort_WorkEffort().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
 
 		initEClass(orderItemEClass, OrderItem.class, "OrderItem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderItem_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItem_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderItem_Order(), this.getOrderHeader(), null, "order", null, 1, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItem_Order().getEKeys().add(this.getOrderHeader_OrderId());
 		initEAttribute(getOrderItem_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 1, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_AutoCancelDate(), ecorePackage.getEDate(), "autoCancelDate", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_BudgetId(), ecorePackage.getEString(), "budgetId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_BudgetItemSeqId(), ecorePackage.getEString(), "budgetItemSeqId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_CancelBackOrderDate(), ecorePackage.getEDate(), "cancelBackOrderDate", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_CancelQuantity(), ecorePackage.getEBigDecimal(), "cancelQuantity", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItem_ChangeByUserLoginId(), theLoginPackage.getUserLogin(), null, "changeByUserLoginId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItem_ChangeByUserLoginId().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
+		initEReference(getOrderItem_ChangeByUserLogin(), theLoginPackage.getUserLogin(), null, "changeByUserLogin", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItem_ChangeByUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEAttribute(getOrderItem_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_CorrespondingPoId(), ecorePackage.getEString(), "correspondingPoId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_DeploymentId(), ecorePackage.getEString(), "deploymentId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -6083,53 +6083,53 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		initEAttribute(getOrderItem_EstimatedDeliveryDate(), ecorePackage.getEDate(), "estimatedDeliveryDate", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_EstimatedShipDate(), ecorePackage.getEDate(), "estimatedShipDate", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_ExternalId(), ecorePackage.getEString(), "externalId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItem_FromInventoryItemId(), theInventoryPackage.getInventoryItem(), null, "fromInventoryItemId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItem_FromInventoryItemId().getEKeys().add(theInventoryPackage.getInventoryItem_InventoryItemId());
+		initEReference(getOrderItem_FromInventoryItem(), theInventoryPackage.getInventoryItem(), null, "fromInventoryItem", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItem_FromInventoryItem().getEKeys().add(theInventoryPackage.getInventoryItem_InventoryItemId());
 		initEAttribute(getOrderItem_IsItemGroupPrimary(), ecorePackage.getEBooleanObject(), "isItemGroupPrimary", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_IsModifiedPrice(), ecorePackage.getEBooleanObject(), "isModifiedPrice", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_IsPromo(), ecorePackage.getEBooleanObject(), "isPromo", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_ItemDescription(), ecorePackage.getEString(), "itemDescription", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_OrderItemGroupSeqId(), ecorePackage.getEString(), "orderItemGroupSeqId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItem_OrderItemTypeId(), this.getOrderItemType(), null, "orderItemTypeId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItem_OrderItemTypeId().getEKeys().add(this.getOrderItemType_OrderItemTypeId());
-		initEReference(getOrderItem_OverrideGlAccountId(), theLedgerPackage.getGlAccount(), null, "overrideGlAccountId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItem_OverrideGlAccountId().getEKeys().add(theLedgerPackage.getGlAccount_GlAccountId());
+		initEReference(getOrderItem_OrderItemType(), this.getOrderItemType(), null, "orderItemType", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItem_OrderItemType().getEKeys().add(this.getOrderItemType_OrderItemTypeId());
+		initEReference(getOrderItem_OverrideGlAccount(), theLedgerPackage.getGlAccount(), null, "overrideGlAccount", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItem_OverrideGlAccount().getEKeys().add(theLedgerPackage.getGlAccount_GlAccountId());
 		initEAttribute(getOrderItem_ProdCatalogId(), ecorePackage.getEString(), "prodCatalogId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOrderItem_Product(), theProductPackage.getProduct(), null, "product", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItem_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEAttribute(getOrderItem_ProductCategoryId(), ecorePackage.getEString(), "productCategoryId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_ProductFeatureId(), ecorePackage.getEString(), "productFeatureId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItem_ProductId(), theProductPackage.getProduct(), null, "productId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItem_ProductId().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEAttribute(getOrderItem_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_QuoteId(), ecorePackage.getEString(), "quoteId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_QuoteItemSeqId(), ecorePackage.getEString(), "quoteItemSeqId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItem_RecurringFreqUomId(), theUomPackage.getUom(), null, "recurringFreqUomId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItem_RecurringFreqUomId().getEKeys().add(theUomPackage.getUom_UomId());
+		initEReference(getOrderItem_RecurringFreqUom(), theUomPackage.getUom(), null, "recurringFreqUom", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItem_RecurringFreqUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEAttribute(getOrderItem_ReserveAfterDate(), ecorePackage.getEDate(), "reserveAfterDate", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItem_SalesOpportunityId(), theOpportunityPackage.getSalesOpportunity(), null, "salesOpportunityId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItem_SalesOpportunityId().getEKeys().add(theOpportunityPackage.getSalesOpportunity_SalesOpportunityId());
+		initEReference(getOrderItem_SalesOpportunity(), theOpportunityPackage.getSalesOpportunity(), null, "salesOpportunity", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItem_SalesOpportunity().getEKeys().add(theOpportunityPackage.getSalesOpportunity_SalesOpportunityId());
 		initEAttribute(getOrderItem_SelectedAmount(), ecorePackage.getEBigDecimal(), "selectedAmount", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_ShipAfterDate(), ecorePackage.getEDate(), "shipAfterDate", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_ShipBeforeDate(), ecorePackage.getEDate(), "shipBeforeDate", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_ShoppingListId(), ecorePackage.getEString(), "shoppingListId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_ShoppingListItemSeqId(), ecorePackage.getEString(), "shoppingListItemSeqId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItem_StatusId(), theStatusPackage.getStatusItem(), null, "statusId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItem_StatusId().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
+		initEReference(getOrderItem_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItem_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getOrderItem_SubscriptionId(), ecorePackage.getEString(), "subscriptionId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_SupplierProductId(), ecorePackage.getEString(), "supplierProductId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItem_SyncStatusId(), theStatusPackage.getStatusItem(), null, "syncStatusId", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItem_SyncStatusId().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
+		initEReference(getOrderItem_SyncStatus(), theStatusPackage.getStatusItem(), null, "syncStatus", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItem_SyncStatus().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getOrderItem_UnitAverageCost(), ecorePackage.getEBigDecimal(), "unitAverageCost", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_UnitListPrice(), ecorePackage.getEBigDecimal(), "unitListPrice", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_UnitPrice(), ecorePackage.getEBigDecimal(), "unitPrice", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItem_UnitRecurringPrice(), ecorePackage.getEBigDecimal(), "unitRecurringPrice", null, 0, 1, OrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(orderItemAssocEClass, OrderItemAssoc.class, "OrderItemAssoc", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderItemAssoc_OrderItemAssocTypeId(), this.getOrderItemAssocType(), null, "orderItemAssocTypeId", null, 1, 1, OrderItemAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemAssoc_OrderItemAssocTypeId().getEKeys().add(this.getOrderItemAssocType_OrderItemAssocTypeId());
-		initEReference(getOrderItemAssoc_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderItemAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemAssoc_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
-		initEReference(getOrderItemAssoc_ToOrderId(), this.getOrderHeader(), null, "toOrderId", null, 1, 1, OrderItemAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemAssoc_ToOrderId().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderItemAssoc_OrderItemAssocType(), this.getOrderItemAssocType(), null, "orderItemAssocType", null, 1, 1, OrderItemAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemAssoc_OrderItemAssocType().getEKeys().add(this.getOrderItemAssocType_OrderItemAssocTypeId());
+		initEReference(getOrderItemAssoc_Order(), this.getOrderHeader(), null, "order", null, 1, 1, OrderItemAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemAssoc_Order().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderItemAssoc_ToOrder(), this.getOrderHeader(), null, "toOrder", null, 1, 1, OrderItemAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemAssoc_ToOrder().getEKeys().add(this.getOrderHeader_OrderId());
 		initEAttribute(getOrderItemAssoc_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 1, 1, OrderItemAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemAssoc_ShipGroupSeqId(), ecorePackage.getEString(), "shipGroupSeqId", null, 1, 1, OrderItemAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemAssoc_ToOrderItemSeqId(), ecorePackage.getEString(), "toOrderItemSeqId", null, 1, 1, OrderItemAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -6140,8 +6140,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		initEAttribute(getOrderItemAssocType_OrderItemAssocTypeId(), ecorePackage.getEString(), "orderItemAssocTypeId", null, 1, 1, OrderItemAssocType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemAssocType_Description(), ecorePackage.getEString(), "description", null, 0, 1, OrderItemAssocType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemAssocType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 0, 1, OrderItemAssocType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItemAssocType_ParentTypeId(), this.getOrderItemAssocType(), null, "parentTypeId", null, 0, 1, OrderItemAssocType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemAssocType_ParentTypeId().getEKeys().add(this.getOrderItemAssocType_OrderItemAssocTypeId());
+		initEReference(getOrderItemAssocType_ParentType(), this.getOrderItemAssocType(), null, "parentType", null, 0, 1, OrderItemAssocType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemAssocType_ParentType().getEKeys().add(this.getOrderItemAssocType_OrderItemAssocTypeId());
 
 		initEClass(orderItemAttributeEClass, OrderItemAttribute.class, "OrderItemAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getOrderItemAttribute_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, OrderItemAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -6151,56 +6151,56 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		initEAttribute(getOrderItemAttribute_AttrValue(), ecorePackage.getEString(), "attrValue", null, 0, 1, OrderItemAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(orderItemBillingEClass, OrderItemBilling.class, "OrderItemBilling", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderItemBilling_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderItemBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemBilling_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
-		initEReference(getOrderItemBilling_InvoiceId(), theInvoicePackage.getInvoice(), null, "invoiceId", null, 1, 1, OrderItemBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemBilling_InvoiceId().getEKeys().add(theInvoicePackage.getInvoice_InvoiceId());
+		initEReference(getOrderItemBilling_Order(), this.getOrderHeader(), null, "order", null, 1, 1, OrderItemBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemBilling_Order().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderItemBilling_Invoice(), theInvoicePackage.getInvoice(), null, "invoice", null, 1, 1, OrderItemBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemBilling_Invoice().getEKeys().add(theInvoicePackage.getInvoice_InvoiceId());
 		initEAttribute(getOrderItemBilling_InvoiceItemSeqId(), ecorePackage.getEString(), "invoiceItemSeqId", null, 1, 1, OrderItemBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemBilling_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 1, 1, OrderItemBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemBilling_Amount(), ecorePackage.getEBigDecimal(), "amount", null, 0, 1, OrderItemBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItemBilling_ItemIssuanceId(), theIssuancePackage.getItemIssuance(), null, "itemIssuanceId", null, 0, 1, OrderItemBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemBilling_ItemIssuanceId().getEKeys().add(theIssuancePackage.getItemIssuance_ItemIssuanceId());
+		initEReference(getOrderItemBilling_ItemIssuance(), theIssuancePackage.getItemIssuance(), null, "itemIssuance", null, 0, 1, OrderItemBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemBilling_ItemIssuance().getEKeys().add(theIssuancePackage.getItemIssuance_ItemIssuanceId());
 		initEAttribute(getOrderItemBilling_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, OrderItemBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItemBilling_ShipmentReceiptId(), theReceiptPackage.getShipmentReceipt(), null, "shipmentReceiptId", null, 0, 1, OrderItemBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemBilling_ShipmentReceiptId().getEKeys().add(theReceiptPackage.getShipmentReceipt_ReceiptId());
+		initEReference(getOrderItemBilling_ShipmentReceipt(), theReceiptPackage.getShipmentReceipt(), null, "shipmentReceipt", null, 0, 1, OrderItemBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemBilling_ShipmentReceipt().getEKeys().add(theReceiptPackage.getShipmentReceipt_ReceiptId());
 
 		initEClass(orderItemChangeEClass, OrderItemChange.class, "OrderItemChange", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getOrderItemChange_OrderItemChangeId(), ecorePackage.getEString(), "orderItemChangeId", null, 1, 1, OrderItemChange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemChange_CancelQuantity(), ecorePackage.getEBigDecimal(), "cancelQuantity", null, 0, 1, OrderItemChange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemChange_ChangeComments(), ecorePackage.getEString(), "changeComments", null, 0, 1, OrderItemChange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemChange_ChangeDatetime(), ecorePackage.getEDate(), "changeDatetime", null, 0, 1, OrderItemChange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItemChange_ChangeTypeEnumId(), theEnumPackage.getEnumeration(), null, "changeTypeEnumId", null, 0, 1, OrderItemChange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemChange_ChangeTypeEnumId().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
+		initEReference(getOrderItemChange_ChangeTypeEnum(), theEnumPackage.getEnumeration(), null, "changeTypeEnum", null, 0, 1, OrderItemChange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemChange_ChangeTypeEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEReference(getOrderItemChange_ChangeUserLogin(), theLoginPackage.getUserLogin(), null, "changeUserLogin", null, 0, 1, OrderItemChange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getOrderItemChange_ChangeUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEAttribute(getOrderItemChange_ItemDescription(), ecorePackage.getEString(), "itemDescription", null, 0, 1, OrderItemChange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItemChange_OrderId(), this.getOrderHeader(), null, "orderId", null, 0, 1, OrderItemChange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemChange_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderItemChange_Order(), this.getOrderHeader(), null, "order", null, 0, 1, OrderItemChange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemChange_Order().getEKeys().add(this.getOrderHeader_OrderId());
 		initEAttribute(getOrderItemChange_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 0, 1, OrderItemChange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemChange_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, OrderItemChange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItemChange_ReasonEnumId(), theEnumPackage.getEnumeration(), null, "reasonEnumId", null, 0, 1, OrderItemChange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemChange_ReasonEnumId().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
+		initEReference(getOrderItemChange_ReasonEnum(), theEnumPackage.getEnumeration(), null, "reasonEnum", null, 0, 1, OrderItemChange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemChange_ReasonEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getOrderItemChange_UnitPrice(), ecorePackage.getEBigDecimal(), "unitPrice", null, 0, 1, OrderItemChange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(orderItemContactMechEClass, OrderItemContactMech.class, "OrderItemContactMech", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderItemContactMech_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderItemContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemContactMech_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
-		initEReference(getOrderItemContactMech_ContactMechPurposeTypeId(), theContactPackage_1.getContactMechPurposeType(), null, "contactMechPurposeTypeId", null, 1, 1, OrderItemContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemContactMech_ContactMechPurposeTypeId().getEKeys().add(theContactPackage_1.getContactMechPurposeType_ContactMechPurposeTypeId());
+		initEReference(getOrderItemContactMech_Order(), this.getOrderHeader(), null, "order", null, 1, 1, OrderItemContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemContactMech_Order().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderItemContactMech_ContactMechPurposeType(), theContactPackage_1.getContactMechPurposeType(), null, "contactMechPurposeType", null, 1, 1, OrderItemContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemContactMech_ContactMechPurposeType().getEKeys().add(theContactPackage_1.getContactMechPurposeType_ContactMechPurposeTypeId());
 		initEAttribute(getOrderItemContactMech_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 1, 1, OrderItemContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItemContactMech_ContactMechId(), theContactPackage_1.getContactMech(), null, "contactMechId", null, 0, 1, OrderItemContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemContactMech_ContactMechId().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
+		initEReference(getOrderItemContactMech_ContactMech(), theContactPackage_1.getContactMech(), null, "contactMech", null, 0, 1, OrderItemContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemContactMech_ContactMech().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
 
 		initEClass(orderItemGroupEClass, OrderItemGroup.class, "OrderItemGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderItemGroup_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderItemGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemGroup_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderItemGroup_Order(), this.getOrderHeader(), null, "order", null, 1, 1, OrderItemGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemGroup_Order().getEKeys().add(this.getOrderHeader_OrderId());
 		initEAttribute(getOrderItemGroup_OrderItemGroupSeqId(), ecorePackage.getEString(), "orderItemGroupSeqId", null, 1, 1, OrderItemGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemGroup_GroupName(), ecorePackage.getEString(), "groupName", null, 0, 1, OrderItemGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemGroup_ParentGroupSeqId(), ecorePackage.getEString(), "parentGroupSeqId", null, 0, 1, OrderItemGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(orderItemGroupOrderEClass, OrderItemGroupOrder.class, "OrderItemGroupOrder", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderItemGroupOrder_GroupOrderId(), theProductPackage.getProductGroupOrder(), null, "groupOrderId", null, 1, 1, OrderItemGroupOrder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemGroupOrder_GroupOrderId().getEKeys().add(theProductPackage.getProductGroupOrder_GroupOrderId());
+		initEReference(getOrderItemGroupOrder_GroupOrder(), theProductPackage.getProductGroupOrder(), null, "groupOrder", null, 1, 1, OrderItemGroupOrder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemGroupOrder_GroupOrder().getEKeys().add(theProductPackage.getProductGroupOrder_GroupOrderId());
 		initEAttribute(getOrderItemGroupOrder_OrderId(), ecorePackage.getEString(), "orderId", null, 1, 1, OrderItemGroupOrder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemGroupOrder_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 1, 1, OrderItemGroupOrder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -6208,67 +6208,67 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		initEAttribute(getOrderItemPriceInfo_OrderItemPriceInfoId(), ecorePackage.getEString(), "orderItemPriceInfoId", null, 1, 1, OrderItemPriceInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemPriceInfo_Description(), ecorePackage.getEString(), "description", null, 0, 1, OrderItemPriceInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemPriceInfo_ModifyAmount(), ecorePackage.getEBigDecimal(), "modifyAmount", null, 0, 1, OrderItemPriceInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItemPriceInfo_OrderId(), this.getOrderHeader(), null, "orderId", null, 0, 1, OrderItemPriceInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemPriceInfo_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderItemPriceInfo_Order(), this.getOrderHeader(), null, "order", null, 0, 1, OrderItemPriceInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemPriceInfo_Order().getEKeys().add(this.getOrderHeader_OrderId());
 		initEAttribute(getOrderItemPriceInfo_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 0, 1, OrderItemPriceInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemPriceInfo_ProductPriceActionSeqId(), ecorePackage.getEString(), "productPriceActionSeqId", null, 0, 1, OrderItemPriceInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItemPriceInfo_ProductPriceRuleId(), thePricePackage.getProductPriceRule(), null, "productPriceRuleId", null, 0, 1, OrderItemPriceInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemPriceInfo_ProductPriceRuleId().getEKeys().add(thePricePackage.getProductPriceRule_ProductPriceRuleId());
+		initEReference(getOrderItemPriceInfo_ProductPriceRule(), thePricePackage.getProductPriceRule(), null, "productPriceRule", null, 0, 1, OrderItemPriceInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemPriceInfo_ProductPriceRule().getEKeys().add(thePricePackage.getProductPriceRule_ProductPriceRuleId());
 		initEAttribute(getOrderItemPriceInfo_RateCode(), ecorePackage.getEString(), "rateCode", null, 0, 1, OrderItemPriceInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(orderItemRoleEClass, OrderItemRole.class, "OrderItemRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderItemRole_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderItemRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemRole_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
-		initEReference(getOrderItemRole_PartyId(), thePartyPackage_1.getParty(), null, "partyId", null, 1, 1, OrderItemRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemRole_PartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
-		initEReference(getOrderItemRole_RoleTypeId(), thePartyPackage_1.getRoleType(), null, "roleTypeId", null, 1, 1, OrderItemRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemRole_RoleTypeId().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
+		initEReference(getOrderItemRole_Order(), this.getOrderHeader(), null, "order", null, 1, 1, OrderItemRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemRole_Order().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderItemRole_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, OrderItemRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemRole_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getOrderItemRole_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 1, 1, OrderItemRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemRole_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEAttribute(getOrderItemRole_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 1, 1, OrderItemRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(orderItemShipGroupEClass, OrderItemShipGroup.class, "OrderItemShipGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderItemShipGroup_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemShipGroup_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderItemShipGroup_Order(), this.getOrderHeader(), null, "order", null, 1, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemShipGroup_Order().getEKeys().add(this.getOrderHeader_OrderId());
 		initEAttribute(getOrderItemShipGroup_ShipGroupSeqId(), ecorePackage.getEString(), "shipGroupSeqId", null, 1, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItemShipGroup_CarrierPartyId(), thePartyPackage_1.getParty(), null, "carrierPartyId", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemShipGroup_CarrierPartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getOrderItemShipGroup_CarrierParty(), thePartyPackage_1.getParty(), null, "carrierParty", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemShipGroup_CarrierParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getOrderItemShipGroup_CarrierRoleTypeId(), ecorePackage.getEString(), "carrierRoleTypeId", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItemShipGroup_ContactMechId(), theContactPackage_1.getContactMech(), null, "contactMechId", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemShipGroup_ContactMechId().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
+		initEReference(getOrderItemShipGroup_ContactMech(), theContactPackage_1.getContactMech(), null, "contactMech", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemShipGroup_ContactMech().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
 		initEAttribute(getOrderItemShipGroup_EstimatedDeliveryDate(), ecorePackage.getEDate(), "estimatedDeliveryDate", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemShipGroup_EstimatedShipDate(), ecorePackage.getEDate(), "estimatedShipDate", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItemShipGroup_FacilityId(), theFacilityPackage.getFacility(), null, "facilityId", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemShipGroup_FacilityId().getEKeys().add(theFacilityPackage.getFacility_FacilityId());
+		initEReference(getOrderItemShipGroup_Facility(), theFacilityPackage.getFacility(), null, "facility", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemShipGroup_Facility().getEKeys().add(theFacilityPackage.getFacility_FacilityId());
 		initEAttribute(getOrderItemShipGroup_GiftMessage(), ecorePackage.getEString(), "giftMessage", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemShipGroup_IsGift(), ecorePackage.getEBooleanObject(), "isGift", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemShipGroup_MaySplit(), ecorePackage.getEBooleanObject(), "maySplit", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemShipGroup_ShipAfterDate(), ecorePackage.getEDate(), "shipAfterDate", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemShipGroup_ShipByDate(), ecorePackage.getEDate(), "shipByDate", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItemShipGroup_ShipmentMethodTypeId(), theShipment_Package.getShipmentMethodType(), null, "shipmentMethodTypeId", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemShipGroup_ShipmentMethodTypeId().getEKeys().add(theShipment_Package.getShipmentMethodType_ShipmentMethodTypeId());
+		initEReference(getOrderItemShipGroup_ShipmentMethodType(), theShipment_Package.getShipmentMethodType(), null, "shipmentMethodType", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemShipGroup_ShipmentMethodType().getEKeys().add(theShipment_Package.getShipmentMethodType_ShipmentMethodTypeId());
 		initEAttribute(getOrderItemShipGroup_ShippingInstructions(), ecorePackage.getEString(), "shippingInstructions", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItemShipGroup_SupplierAgreementId(), theAgreementPackage.getAgreement(), null, "supplierAgreementId", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemShipGroup_SupplierAgreementId().getEKeys().add(theAgreementPackage.getAgreement_AgreementId());
-		initEReference(getOrderItemShipGroup_SupplierPartyId(), thePartyPackage_1.getParty(), null, "supplierPartyId", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemShipGroup_SupplierPartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
-		initEReference(getOrderItemShipGroup_TelecomContactMechId(), theContactPackage_1.getContactMech(), null, "telecomContactMechId", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemShipGroup_TelecomContactMechId().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
+		initEReference(getOrderItemShipGroup_SupplierAgreement(), theAgreementPackage.getAgreement(), null, "supplierAgreement", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemShipGroup_SupplierAgreement().getEKeys().add(theAgreementPackage.getAgreement_AgreementId());
+		initEReference(getOrderItemShipGroup_SupplierParty(), thePartyPackage_1.getParty(), null, "supplierParty", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemShipGroup_SupplierParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getOrderItemShipGroup_TelecomContactMech(), theContactPackage_1.getContactMech(), null, "telecomContactMech", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemShipGroup_TelecomContactMech().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
 		initEAttribute(getOrderItemShipGroup_TrackingNumber(), ecorePackage.getEString(), "trackingNumber", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItemShipGroup_VendorPartyId(), thePartyPackage_1.getParty(), null, "vendorPartyId", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemShipGroup_VendorPartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getOrderItemShipGroup_VendorParty(), thePartyPackage_1.getParty(), null, "vendorParty", null, 0, 1, OrderItemShipGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemShipGroup_VendorParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 
 		initEClass(orderItemShipGroupAssocEClass, OrderItemShipGroupAssoc.class, "OrderItemShipGroupAssoc", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderItemShipGroupAssoc_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderItemShipGroupAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemShipGroupAssoc_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderItemShipGroupAssoc_Order(), this.getOrderHeader(), null, "order", null, 1, 1, OrderItemShipGroupAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemShipGroupAssoc_Order().getEKeys().add(this.getOrderHeader_OrderId());
 		initEAttribute(getOrderItemShipGroupAssoc_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 1, 1, OrderItemShipGroupAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemShipGroupAssoc_ShipGroupSeqId(), ecorePackage.getEString(), "shipGroupSeqId", null, 1, 1, OrderItemShipGroupAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemShipGroupAssoc_CancelQuantity(), ecorePackage.getEBigDecimal(), "cancelQuantity", null, 0, 1, OrderItemShipGroupAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemShipGroupAssoc_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, OrderItemShipGroupAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(orderItemShipGrpInvResEClass, OrderItemShipGrpInvRes.class, "OrderItemShipGrpInvRes", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderItemShipGrpInvRes_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderItemShipGrpInvRes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemShipGrpInvRes_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
-		initEReference(getOrderItemShipGrpInvRes_InventoryItemId(), theInventoryPackage.getInventoryItem(), null, "inventoryItemId", null, 1, 1, OrderItemShipGrpInvRes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemShipGrpInvRes_InventoryItemId().getEKeys().add(theInventoryPackage.getInventoryItem_InventoryItemId());
+		initEReference(getOrderItemShipGrpInvRes_Order(), this.getOrderHeader(), null, "order", null, 1, 1, OrderItemShipGrpInvRes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemShipGrpInvRes_Order().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderItemShipGrpInvRes_InventoryItem(), theInventoryPackage.getInventoryItem(), null, "inventoryItem", null, 1, 1, OrderItemShipGrpInvRes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemShipGrpInvRes_InventoryItem().getEKeys().add(theInventoryPackage.getInventoryItem_InventoryItemId());
 		initEAttribute(getOrderItemShipGrpInvRes_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 1, 1, OrderItemShipGrpInvRes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemShipGrpInvRes_ShipGroupSeqId(), ecorePackage.getEString(), "shipGroupSeqId", null, 1, 1, OrderItemShipGrpInvRes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemShipGrpInvRes_CreatedDatetime(), ecorePackage.getEDate(), "createdDatetime", null, 0, 1, OrderItemShipGrpInvRes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -6287,12 +6287,12 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		initEAttribute(getOrderItemType_Description(), ecorePackage.getEString(), "description", null, 0, 1, OrderItemType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 0, 1, OrderItemType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getOrderItemType_OrderItemTypeAttrs(), this.getOrderItemTypeAttr(), null, "orderItemTypeAttrs", null, 0, -1, OrderItemType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderItemType_ParentTypeId(), this.getOrderItemType(), null, "parentTypeId", null, 0, 1, OrderItemType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemType_ParentTypeId().getEKeys().add(this.getOrderItemType_OrderItemTypeId());
+		initEReference(getOrderItemType_ParentType(), this.getOrderItemType(), null, "parentType", null, 0, 1, OrderItemType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemType_ParentType().getEKeys().add(this.getOrderItemType_OrderItemTypeId());
 
 		initEClass(orderItemTypeAttrEClass, OrderItemTypeAttr.class, "OrderItemTypeAttr", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderItemTypeAttr_OrderItemTypeId(), this.getOrderItemType(), null, "orderItemTypeId", null, 1, 1, OrderItemTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderItemTypeAttr_OrderItemTypeId().getEKeys().add(this.getOrderItemType_OrderItemTypeId());
+		initEReference(getOrderItemTypeAttr_OrderItemType(), this.getOrderItemType(), null, "orderItemType", null, 1, 1, OrderItemTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderItemTypeAttr_OrderItemType().getEKeys().add(this.getOrderItemType_OrderItemTypeId());
 		initEAttribute(getOrderItemTypeAttr_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, OrderItemTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderItemTypeAttr_Description(), ecorePackage.getEString(), "description", null, 0, 1, OrderItemTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -6302,8 +6302,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		initEReference(getOrderNotification_EmailType(), theEnumPackage.getEnumeration(), null, "emailType", null, 0, 1, OrderNotification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getOrderNotification_EmailType().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getOrderNotification_NotificationDate(), ecorePackage.getEDate(), "notificationDate", null, 0, 1, OrderNotification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderNotification_OrderId(), this.getOrderHeader(), null, "orderId", null, 0, 1, OrderNotification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderNotification_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderNotification_Order(), this.getOrderHeader(), null, "order", null, 0, 1, OrderNotification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderNotification_Order().getEKeys().add(this.getOrderHeader_OrderId());
 
 		initEClass(orderPaymentPreferenceEClass, OrderPaymentPreference.class, "OrderPaymentPreference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getOrderPaymentPreference_OrderPaymentPreferenceId(), ecorePackage.getEString(), "orderPaymentPreferenceId", null, 1, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -6311,52 +6311,52 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		initEReference(getOrderPaymentPreference_CreatedByUserLogin(), theLoginPackage.getUserLogin(), null, "createdByUserLogin", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getOrderPaymentPreference_CreatedByUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEAttribute(getOrderPaymentPreference_CreatedDate(), ecorePackage.getEDate(), "createdDate", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderPaymentPreference_FinAccountId(), theFinaccountPackage.getFinAccount(), null, "finAccountId", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderPaymentPreference_FinAccountId().getEKeys().add(theFinaccountPackage.getFinAccount_FinAccountId());
+		initEReference(getOrderPaymentPreference_FinAccount(), theFinaccountPackage.getFinAccount(), null, "finAccount", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderPaymentPreference_FinAccount().getEKeys().add(theFinaccountPackage.getFinAccount_FinAccountId());
 		initEAttribute(getOrderPaymentPreference_LastModifiedByUserLogin(), ecorePackage.getEString(), "lastModifiedByUserLogin", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderPaymentPreference_LastModifiedDate(), ecorePackage.getEDate(), "lastModifiedDate", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderPaymentPreference_ManualAuthCode(), ecorePackage.getEString(), "manualAuthCode", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderPaymentPreference_ManualRefNum(), ecorePackage.getEString(), "manualRefNum", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderPaymentPreference_MaxAmount(), ecorePackage.getEBigDecimal(), "maxAmount", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderPaymentPreference_NeedsNsfRetry(), ecorePackage.getEBooleanObject(), "needsNsfRetry", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderPaymentPreference_OrderId(), this.getOrderHeader(), null, "orderId", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderPaymentPreference_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderPaymentPreference_Order(), this.getOrderHeader(), null, "order", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderPaymentPreference_Order().getEKeys().add(this.getOrderHeader_OrderId());
 		initEAttribute(getOrderPaymentPreference_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderPaymentPreference_OverflowFlag(), ecorePackage.getEBooleanObject(), "overflowFlag", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderPaymentPreference_PaymentMethodId(), thePaymentPackage.getPaymentMethod(), null, "paymentMethodId", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderPaymentPreference_PaymentMethodId().getEKeys().add(thePaymentPackage.getPaymentMethod_PaymentMethodId());
-		initEReference(getOrderPaymentPreference_PaymentMethodTypeId(), thePaymentPackage.getPaymentMethodType(), null, "paymentMethodTypeId", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderPaymentPreference_PaymentMethodTypeId().getEKeys().add(thePaymentPackage.getPaymentMethodType_PaymentMethodTypeId());
+		initEReference(getOrderPaymentPreference_PaymentMethod(), thePaymentPackage.getPaymentMethod(), null, "paymentMethod", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderPaymentPreference_PaymentMethod().getEKeys().add(thePaymentPackage.getPaymentMethod_PaymentMethodId());
+		initEReference(getOrderPaymentPreference_PaymentMethodType(), thePaymentPackage.getPaymentMethodType(), null, "paymentMethodType", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderPaymentPreference_PaymentMethodType().getEKeys().add(thePaymentPackage.getPaymentMethodType_PaymentMethodTypeId());
 		initEAttribute(getOrderPaymentPreference_PresentFlag(), ecorePackage.getEBooleanObject(), "presentFlag", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderPaymentPreference_ProcessAttempt(), ecorePackage.getELong(), "processAttempt", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderPaymentPreference_ProductPricePurposeId(), thePricePackage.getProductPricePurpose(), null, "productPricePurposeId", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderPaymentPreference_ProductPricePurposeId().getEKeys().add(thePricePackage.getProductPricePurpose_ProductPricePurposeId());
+		initEReference(getOrderPaymentPreference_ProductPricePurpose(), thePricePackage.getProductPricePurpose(), null, "productPricePurpose", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderPaymentPreference_ProductPricePurpose().getEKeys().add(thePricePackage.getProductPricePurpose_ProductPricePurposeId());
 		initEAttribute(getOrderPaymentPreference_SecurityCode(), ecorePackage.getEString(), "securityCode", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderPaymentPreference_ShipGroupSeqId(), ecorePackage.getEString(), "shipGroupSeqId", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderPaymentPreference_StatusId(), theStatusPackage.getStatusItem(), null, "statusId", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderPaymentPreference_StatusId().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
+		initEReference(getOrderPaymentPreference_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderPaymentPreference_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getOrderPaymentPreference_SwipedFlag(), ecorePackage.getEBooleanObject(), "swipedFlag", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderPaymentPreference_Track2(), ecorePackage.getEString(), "track2", null, 0, 1, OrderPaymentPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(orderProductPromoCodeEClass, OrderProductPromoCode.class, "OrderProductPromoCode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderProductPromoCode_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderProductPromoCode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderProductPromoCode_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
-		initEReference(getOrderProductPromoCode_ProductPromoCodeId(), thePromoPackage.getProductPromoCode(), null, "productPromoCodeId", null, 1, 1, OrderProductPromoCode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderProductPromoCode_ProductPromoCodeId().getEKeys().add(thePromoPackage.getProductPromoCode_ProductPromoCodeId());
+		initEReference(getOrderProductPromoCode_Order(), this.getOrderHeader(), null, "order", null, 1, 1, OrderProductPromoCode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderProductPromoCode_Order().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderProductPromoCode_ProductPromoCode(), thePromoPackage.getProductPromoCode(), null, "productPromoCode", null, 1, 1, OrderProductPromoCode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderProductPromoCode_ProductPromoCode().getEKeys().add(thePromoPackage.getProductPromoCode_ProductPromoCodeId());
 
 		initEClass(orderRoleEClass, OrderRole.class, "OrderRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderRole_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderRole_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
-		initEReference(getOrderRole_PartyId(), thePartyPackage_1.getParty(), null, "partyId", null, 1, 1, OrderRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderRole_PartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
-		initEReference(getOrderRole_RoleTypeId(), thePartyPackage_1.getRoleType(), null, "roleTypeId", null, 1, 1, OrderRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderRole_RoleTypeId().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
+		initEReference(getOrderRole_Order(), this.getOrderHeader(), null, "order", null, 1, 1, OrderRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderRole_Order().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderRole_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, OrderRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderRole_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getOrderRole_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 1, 1, OrderRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderRole_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 
 		initEClass(orderShipmentEClass, OrderShipment.class, "OrderShipment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderShipment_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderShipment_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
-		initEReference(getOrderShipment_ShipmentId(), theShipment_Package.getShipment(), null, "shipmentId", null, 1, 1, OrderShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderShipment_ShipmentId().getEKeys().add(theShipment_Package.getShipment_ShipmentId());
+		initEReference(getOrderShipment_Order(), this.getOrderHeader(), null, "order", null, 1, 1, OrderShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderShipment_Order().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderShipment_Shipment(), theShipment_Package.getShipment(), null, "shipment", null, 1, 1, OrderShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderShipment_Shipment().getEKeys().add(theShipment_Package.getShipment_ShipmentId());
 		initEAttribute(getOrderShipment_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 1, 1, OrderShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderShipment_ShipGroupSeqId(), ecorePackage.getEString(), "shipGroupSeqId", null, 1, 1, OrderShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderShipment_ShipmentItemSeqId(), ecorePackage.getEString(), "shipmentItemSeqId", null, 1, 1, OrderShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -6365,39 +6365,39 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		initEClass(orderStatusEClass, OrderStatus.class, "OrderStatus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getOrderStatus_OrderStatusId(), ecorePackage.getEString(), "orderStatusId", null, 1, 1, OrderStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderStatus_ChangeReason(), ecorePackage.getEString(), "changeReason", null, 0, 1, OrderStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderStatus_OrderId(), this.getOrderHeader(), null, "orderId", null, 0, 1, OrderStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderStatus_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderStatus_Order(), this.getOrderHeader(), null, "order", null, 0, 1, OrderStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderStatus_Order().getEKeys().add(this.getOrderHeader_OrderId());
 		initEAttribute(getOrderStatus_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 0, 1, OrderStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderStatus_OrderPaymentPreferenceId(), this.getOrderPaymentPreference(), null, "orderPaymentPreferenceId", null, 0, 1, OrderStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderStatus_OrderPaymentPreferenceId().getEKeys().add(this.getOrderPaymentPreference_OrderPaymentPreferenceId());
+		initEReference(getOrderStatus_OrderPaymentPreference(), this.getOrderPaymentPreference(), null, "orderPaymentPreference", null, 0, 1, OrderStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderStatus_OrderPaymentPreference().getEKeys().add(this.getOrderPaymentPreference_OrderPaymentPreferenceId());
+		initEReference(getOrderStatus_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, OrderStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderStatus_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getOrderStatus_StatusDatetime(), ecorePackage.getEDate(), "statusDatetime", null, 0, 1, OrderStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderStatus_StatusId(), theStatusPackage.getStatusItem(), null, "statusId", null, 0, 1, OrderStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderStatus_StatusId().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEReference(getOrderStatus_StatusUserLogin(), theLoginPackage.getUserLogin(), null, "statusUserLogin", null, 0, 1, OrderStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getOrderStatus_StatusUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 
 		initEClass(orderSummaryEntryEClass, OrderSummaryEntry.class, "OrderSummaryEntry", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderSummaryEntry_ProductId(), theProductPackage.getProduct(), null, "productId", null, 1, 1, OrderSummaryEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderSummaryEntry_ProductId().getEKeys().add(theProductPackage.getProduct_ProductId());
-		initEReference(getOrderSummaryEntry_FacilityId(), theFacilityPackage.getFacility(), null, "facilityId", null, 1, 1, OrderSummaryEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderSummaryEntry_FacilityId().getEKeys().add(theFacilityPackage.getFacility_FacilityId());
+		initEReference(getOrderSummaryEntry_Product(), theProductPackage.getProduct(), null, "product", null, 1, 1, OrderSummaryEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderSummaryEntry_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
+		initEReference(getOrderSummaryEntry_Facility(), theFacilityPackage.getFacility(), null, "facility", null, 1, 1, OrderSummaryEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderSummaryEntry_Facility().getEKeys().add(theFacilityPackage.getFacility_FacilityId());
 		initEAttribute(getOrderSummaryEntry_EntryDate(), ecorePackage.getEDate(), "entryDate", null, 1, 1, OrderSummaryEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderSummaryEntry_GrossSales(), ecorePackage.getEBigDecimal(), "grossSales", null, 0, 1, OrderSummaryEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderSummaryEntry_ProductCost(), ecorePackage.getEBigDecimal(), "productCost", null, 0, 1, OrderSummaryEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderSummaryEntry_TotalQuantity(), ecorePackage.getEBigDecimal(), "totalQuantity", null, 0, 1, OrderSummaryEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(orderTermEClass, OrderTerm.class, "OrderTerm", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderTerm_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderTerm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderTerm_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
-		initEReference(getOrderTerm_TermTypeId(), theAgreementPackage.getTermType(), null, "termTypeId", null, 1, 1, OrderTerm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderTerm_TermTypeId().getEKeys().add(theAgreementPackage.getTermType_TermTypeId());
+		initEReference(getOrderTerm_Order(), this.getOrderHeader(), null, "order", null, 1, 1, OrderTerm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderTerm_Order().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getOrderTerm_TermType(), theAgreementPackage.getTermType(), null, "termType", null, 1, 1, OrderTerm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderTerm_TermType().getEKeys().add(theAgreementPackage.getTermType_TermTypeId());
 		initEAttribute(getOrderTerm_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 1, 1, OrderTerm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderTerm_Description(), ecorePackage.getEString(), "description", null, 0, 1, OrderTerm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderTerm_TermDays(), ecorePackage.getELong(), "termDays", null, 0, 1, OrderTerm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderTerm_TermValue(), ecorePackage.getEBigDecimal(), "termValue", null, 0, 1, OrderTerm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderTerm_TextValue(), ecorePackage.getEString(), "textValue", null, 0, 1, OrderTerm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderTerm_UomId(), theUomPackage.getUom(), null, "uomId", null, 0, 1, OrderTerm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderTerm_UomId().getEKeys().add(theUomPackage.getUom_UomId());
+		initEReference(getOrderTerm_Uom(), theUomPackage.getUom(), null, "uom", null, 0, 1, OrderTerm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderTerm_Uom().getEKeys().add(theUomPackage.getUom_UomId());
 
 		initEClass(orderTermAttributeEClass, OrderTermAttribute.class, "OrderTermAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getOrderTermAttribute_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, OrderTermAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -6412,30 +6412,30 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		initEAttribute(getOrderType_Description(), ecorePackage.getEString(), "description", null, 0, 1, OrderType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 0, 1, OrderType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getOrderType_OrderTypeAttrs(), this.getOrderTypeAttr(), null, "orderTypeAttrs", null, 0, -1, OrderType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEReference(getOrderType_ParentTypeId(), this.getOrderType(), null, "parentTypeId", null, 0, 1, OrderType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderType_ParentTypeId().getEKeys().add(this.getOrderType_OrderTypeId());
+		initEReference(getOrderType_ParentType(), this.getOrderType(), null, "parentType", null, 0, 1, OrderType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderType_ParentType().getEKeys().add(this.getOrderType_OrderTypeId());
 
 		initEClass(orderTypeAttrEClass, OrderTypeAttr.class, "OrderTypeAttr", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrderTypeAttr_OrderTypeId(), this.getOrderType(), null, "orderTypeId", null, 1, 1, OrderTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderTypeAttr_OrderTypeId().getEKeys().add(this.getOrderType_OrderTypeId());
+		initEReference(getOrderTypeAttr_OrderType(), this.getOrderType(), null, "orderType", null, 1, 1, OrderTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getOrderTypeAttr_OrderType().getEKeys().add(this.getOrderType_OrderTypeId());
 		initEAttribute(getOrderTypeAttr_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, OrderTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderTypeAttr_Description(), ecorePackage.getEString(), "description", null, 0, 1, OrderTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productOrderItemEClass, ProductOrderItem.class, "ProductOrderItem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProductOrderItem_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, ProductOrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductOrderItem_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
-		initEReference(getProductOrderItem_EngagementId(), this.getOrderHeader(), null, "engagementId", null, 1, 1, ProductOrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductOrderItem_EngagementId().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getProductOrderItem_Order(), this.getOrderHeader(), null, "order", null, 1, 1, ProductOrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductOrderItem_Order().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getProductOrderItem_Engagement(), this.getOrderHeader(), null, "engagement", null, 1, 1, ProductOrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductOrderItem_Engagement().getEKeys().add(this.getOrderHeader_OrderId());
 		initEAttribute(getProductOrderItem_EngagementItemSeqId(), ecorePackage.getEString(), "engagementItemSeqId", null, 1, 1, ProductOrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductOrderItem_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 1, 1, ProductOrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getProductOrderItem_ProductId(), theProductPackage.getProduct(), null, "productId", null, 0, 1, ProductOrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductOrderItem_ProductId().getEKeys().add(theProductPackage.getProduct_ProductId());
+		initEReference(getProductOrderItem_Product(), theProductPackage.getProduct(), null, "product", null, 0, 1, ProductOrderItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductOrderItem_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 
 		initEClass(workOrderItemFulfillmentEClass, WorkOrderItemFulfillment.class, "WorkOrderItemFulfillment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getWorkOrderItemFulfillment_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, WorkOrderItemFulfillment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWorkOrderItemFulfillment_OrderId().getEKeys().add(this.getOrderHeader_OrderId());
-		initEReference(getWorkOrderItemFulfillment_WorkEffortId(), theWorkeffortPackage.getWorkEffort(), null, "workEffortId", null, 1, 1, WorkOrderItemFulfillment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWorkOrderItemFulfillment_WorkEffortId().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
+		initEReference(getWorkOrderItemFulfillment_Order(), this.getOrderHeader(), null, "order", null, 1, 1, WorkOrderItemFulfillment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getWorkOrderItemFulfillment_Order().getEKeys().add(this.getOrderHeader_OrderId());
+		initEReference(getWorkOrderItemFulfillment_WorkEffort(), theWorkeffortPackage.getWorkEffort(), null, "workEffort", null, 1, 1, WorkOrderItemFulfillment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getWorkOrderItemFulfillment_WorkEffort().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
 		initEAttribute(getWorkOrderItemFulfillment_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 1, 1, WorkOrderItemFulfillment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getWorkOrderItemFulfillment_ShipGroupSeqId(), ecorePackage.getEString(), "shipGroupSeqId", null, 0, 1, WorkOrderItemFulfillment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -6460,13 +6460,13 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
 		addAnnotation
-		  (getCommunicationEventOrder_OrderId(),
+		  (getCommunicationEventOrder_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getCommunicationEventOrder_CommunicationEventId(),
+		  (getCommunicationEventOrder_CommunicationEvent(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -6490,25 +6490,25 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "help", "an amount that would normally apply, but not to this order; for tax exemption represents the what the tax would have been"
 		   });
 		addAnnotation
-		  (getOrderAdjustment_OriginalAdjustmentId(),
+		  (getOrderAdjustment_OriginalAdjustment(),
 		   source,
 		   new String[] {
 			   "help", "specifies relation to source OrderAdjustment - eg. for tax on shipping charges"
 		   });
 		addAnnotation
-		  (getOrderAdjustment_OverrideGlAccountId(),
+		  (getOrderAdjustment_OverrideGlAccount(),
 		   source,
 		   new String[] {
 			   "help", "used to specify the override or actual glAccountId used for the adjustment, avoids problems if configuration changes after initial posting, etc"
 		   });
 		addAnnotation
-		  (getOrderAdjustment_PrimaryGeoId(),
+		  (getOrderAdjustment_PrimaryGeo(),
 		   source,
 		   new String[] {
 			   "help", "for tax entries this is the primary jurisdiction Geo (the smallest or most local Geo that this tax is for, usually a state/province, perhaps a county or a city)"
 		   });
 		addAnnotation
-		  (getOrderAdjustment_SecondaryGeoId(),
+		  (getOrderAdjustment_SecondaryGeo(),
 		   source,
 		   new String[] {
 			   "help", "for tax entries this is the secondary jurisdiction Geo (usually a country, or other Geo that the primary is within)"
@@ -6526,7 +6526,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "help", "these taxAuth fields deprecate the primaryGeoId and secondaryGeoId fields and will be used with the newer tax calc stuff"
 		   });
 		addAnnotation
-		  (getOrderAdjustmentAttribute_OrderAdjustmentId(),
+		  (getOrderAdjustmentAttribute_OrderAdjustment(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -6538,13 +6538,13 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderAdjustmentBilling_OrderAdjustmentId(),
+		  (getOrderAdjustmentBilling_OrderAdjustment(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderAdjustmentBilling_InvoiceId(),
+		  (getOrderAdjustmentBilling_Invoice(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -6556,7 +6556,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderAdjustmentTypeAttr_OrderAdjustmentTypeId(),
+		  (getOrderAdjustmentTypeAttr_OrderAdjustmentType(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -6568,7 +6568,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderAttribute_OrderId(),
+		  (getOrderAttribute_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -6580,7 +6580,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderBlacklist_OrderBlacklistTypeId(),
+		  (getOrderBlacklist_OrderBlacklistType(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -6592,37 +6592,37 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderContactMech_OrderId(),
+		  (getOrderContactMech_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderContactMech_ContactMechId(),
+		  (getOrderContactMech_ContactMech(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderContactMech_ContactMechPurposeTypeId(),
+		  (getOrderContactMech_ContactMechPurposeType(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderContent_OrderId(),
+		  (getOrderContent_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderContent_ContentId(),
+		  (getOrderContent_Content(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderContent_OrderContentTypeId(),
+		  (getOrderContent_OrderContentType(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -6640,7 +6640,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderDeliverySchedule_OrderId(),
+		  (getOrderDeliverySchedule_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -6665,25 +6665,25 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "generated", "false"
 		   });
 		addAnnotation
-		  (getOrderHeaderNote_OrderId(),
+		  (getOrderHeaderNote_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderHeaderWorkEffort_OrderId(),
+		  (getOrderHeaderWorkEffort_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderHeaderWorkEffort_WorkEffortId(),
+		  (getOrderHeaderWorkEffort_WorkEffort(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderItem_OrderId(),
+		  (getOrderItem_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -6701,13 +6701,13 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "help", "Used to cancel all orders from suppliers when its in past"
 		   });
 		addAnnotation
-		  (getOrderItem_ChangeByUserLoginId(),
+		  (getOrderItem_ChangeByUserLogin(),
 		   source,
 		   new String[] {
 			   "audit", "true"
 		   });
 		addAnnotation
-		  (getOrderItem_OverrideGlAccountId(),
+		  (getOrderItem_OverrideGlAccount(),
 		   source,
 		   new String[] {
 			   "help", "Used to specify the override or actual glAccountId used for the adjustment, avoids problems if configuration changes after initial posting, etc."
@@ -6725,19 +6725,19 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "audit", "true"
 		   });
 		addAnnotation
-		  (getOrderItemAssoc_OrderItemAssocTypeId(),
+		  (getOrderItemAssoc_OrderItemAssocType(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderItemAssoc_OrderId(),
+		  (getOrderItemAssoc_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderItemAssoc_ToOrderId(),
+		  (getOrderItemAssoc_ToOrder(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -6785,13 +6785,13 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderItemBilling_OrderId(),
+		  (getOrderItemBilling_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderItemBilling_InvoiceId(),
+		  (getOrderItemBilling_Invoice(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -6809,13 +6809,13 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderItemContactMech_OrderId(),
+		  (getOrderItemContactMech_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderItemContactMech_ContactMechPurposeTypeId(),
+		  (getOrderItemContactMech_ContactMechPurposeType(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -6827,7 +6827,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderItemGroup_OrderId(),
+		  (getOrderItemGroup_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -6839,7 +6839,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderItemGroupOrder_GroupOrderId(),
+		  (getOrderItemGroupOrder_GroupOrder(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -6857,19 +6857,19 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderItemRole_OrderId(),
+		  (getOrderItemRole_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderItemRole_PartyId(),
+		  (getOrderItemRole_Party(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderItemRole_RoleTypeId(),
+		  (getOrderItemRole_RoleType(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -6881,7 +6881,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderItemShipGroup_OrderId(),
+		  (getOrderItemShipGroup_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -6893,25 +6893,25 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderItemShipGroup_CarrierPartyId(),
+		  (getOrderItemShipGroup_CarrierParty(),
 		   source,
 		   new String[] {
 			   "audit", "true"
 		   });
 		addAnnotation
-		  (getOrderItemShipGroup_ShipmentMethodTypeId(),
+		  (getOrderItemShipGroup_ShipmentMethodType(),
 		   source,
 		   new String[] {
 			   "audit", "true"
 		   });
 		addAnnotation
-		  (getOrderItemShipGroup_VendorPartyId(),
+		  (getOrderItemShipGroup_VendorParty(),
 		   source,
 		   new String[] {
 			   "help", "For use with multi-vendor stores, order will be split so that each ship group is associated with only one vendor (only if applicable)"
 		   });
 		addAnnotation
-		  (getOrderItemShipGroupAssoc_OrderId(),
+		  (getOrderItemShipGroupAssoc_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -6929,13 +6929,13 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderItemShipGrpInvRes_OrderId(),
+		  (getOrderItemShipGrpInvRes_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderItemShipGrpInvRes_InventoryItemId(),
+		  (getOrderItemShipGrpInvRes_InventoryItem(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -6959,7 +6959,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "help", "Sets priority for Inventory Reservation"
 		   });
 		addAnnotation
-		  (getOrderItemTypeAttr_OrderItemTypeId(),
+		  (getOrderItemTypeAttr_OrderItemType(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -6971,7 +6971,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderPaymentPreference_FinAccountId(),
+		  (getOrderPaymentPreference_FinAccount(),
 		   source,
 		   new String[] {
 			   "help", "For paying with a fin account instead of payment method on file"
@@ -6991,43 +6991,43 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "help", "NOTE: THIS SHOULD NEVER BE PERSISTED OUTSIDE THE SCOPE OF A SINGLE TRANSACTION,\n              TYPICALLY ONLY FOR AUTHORIZATION PURPOSES, SHOULD BE REMOVED IMMEDIATELY FOLLOWING USE;\n              this is raw track2 data, exactly as read by the magnetic swipe reader;\n              also note that this field is longer than needed to accommodate encryption."
 		   });
 		addAnnotation
-		  (getOrderProductPromoCode_OrderId(),
+		  (getOrderProductPromoCode_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderProductPromoCode_ProductPromoCodeId(),
+		  (getOrderProductPromoCode_ProductPromoCode(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderRole_OrderId(),
+		  (getOrderRole_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderRole_PartyId(),
+		  (getOrderRole_Party(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderRole_RoleTypeId(),
+		  (getOrderRole_RoleType(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderShipment_OrderId(),
+		  (getOrderShipment_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderShipment_ShipmentId(),
+		  (getOrderShipment_Shipment(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -7051,13 +7051,13 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderSummaryEntry_ProductId(),
+		  (getOrderSummaryEntry_Product(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderSummaryEntry_FacilityId(),
+		  (getOrderSummaryEntry_Facility(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -7069,13 +7069,13 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderTerm_OrderId(),
+		  (getOrderTerm_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderTerm_TermTypeId(),
+		  (getOrderTerm_TermType(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -7111,7 +7111,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOrderTypeAttr_OrderTypeId(),
+		  (getOrderTypeAttr_OrderType(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -7123,13 +7123,13 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductOrderItem_OrderId(),
+		  (getProductOrderItem_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductOrderItem_EngagementId(),
+		  (getProductOrderItem_Engagement(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -7147,13 +7147,13 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getWorkOrderItemFulfillment_OrderId(),
+		  (getWorkOrderItemFulfillment_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getWorkOrderItemFulfillment_WorkEffortId(),
+		  (getWorkOrderItemFulfillment_WorkEffort(),
 		   source,
 		   new String[] {
 			   "key", "true"

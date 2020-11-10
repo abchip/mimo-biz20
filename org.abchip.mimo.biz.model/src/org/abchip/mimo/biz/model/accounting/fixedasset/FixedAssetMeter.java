@@ -23,7 +23,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMeter#getProductMeterTypeId <em>Product Meter Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMeter#getProductMeterType <em>Product Meter Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMeter#getFixedAssetId <em>Fixed Asset Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMeter#getReadingDate <em>Reading Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMeter#getMaintHistSeqId <em>Maint Hist Seq Id</em>}</li>
@@ -37,6 +37,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface FixedAssetMeter extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product Meter Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Meter Type</em>' reference.
+	 * @see #setProductMeterType(ProductMeterType)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMeter_ProductMeterType()
+	 * @model keys="productMeterTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductMeterType getProductMeterType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMeter#getProductMeterType <em>Product Meter Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Meter Type</em>' reference.
+	 * @see #getProductMeterType()
+	 * @generated
+	 */
+	void setProductMeterType(ProductMeterType value);
+
 	/**
 	 * Returns the value of the '<em><b>Fixed Asset Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -116,33 +139,6 @@ public interface FixedAssetMeter extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setMeterValue(BigDecimal value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Meter Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Meter Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Meter Type Id</em>' reference.
-	 * @see #setProductMeterTypeId(ProductMeterType)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMeter_ProductMeterTypeId()
-	 * @model keys="productMeterTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductMeterType getProductMeterTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMeter#getProductMeterTypeId <em>Product Meter Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Meter Type Id</em>' reference.
-	 * @see #getProductMeterTypeId()
-	 * @generated
-	 */
-	void setProductMeterTypeId(ProductMeterType value);
 
 	/**
 	 * Returns the value of the '<em><b>Reading Date</b></em>' attribute.

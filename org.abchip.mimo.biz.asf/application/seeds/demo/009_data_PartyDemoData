@@ -2,162 +2,162 @@
 <mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-communication="http://www.abchip.org/mimo/biz/model/party/communication" xmlns:biz-contact="http://www.abchip.org/mimo/biz/model/party/contact" xmlns:biz-email="http://www.abchip.org/mimo/biz/model/common/email" xmlns:biz-login="http://www.abchip.org/mimo/biz/model/security/login" xmlns:biz-party="http://www.abchip.org/mimo/biz/model/party/party" xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/model/security/securitygroup" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/party/communication http://www.abchip.org/mimo/biz/model/party#//communication http://www.abchip.org/mimo/biz/model/party/contact http://www.abchip.org/mimo/biz/model/party#//contact http://www.abchip.org/mimo/biz/model/common/email http://www.abchip.org/mimo/biz/model/common#//email http://www.abchip.org/mimo/biz/model/party/party http://www.abchip.org/mimo/biz/model/party#//party http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="009_data_PartyDemoData">
   <contents xsi:type="biz-securitygroup:SecurityGroup" groupId="PARTYADMIN" description="Party Admin group, has all party permissions." groupName="Party Admin"/>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#PARTYADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_ADMIN"/>
+    <group href="SecurityGroup#PARTYADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_ADMIN"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#PARTYADMIN"/>
-    <permissionId href="SecurityPermission#OFBTOOLS_VIEW"/>
+    <group href="SecurityGroup#PARTYADMIN"/>
+    <permission href="SecurityPermission#OFBTOOLS_VIEW"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FULLADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_ADMIN"/>
+    <group href="SecurityGroup#FULLADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_ADMIN"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_CREATE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_CREATE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_DELETE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_DELETE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_UPDATE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_UPDATE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_NOTE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_NOTE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_VIEW"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_VIEW"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_STS_UPDATE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_STS_UPDATE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_GRP_UPDATE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_GRP_UPDATE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_REL_CREATE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_REL_CREATE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_REL_UPDATE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_REL_UPDATE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_ROLE_CREATE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_ROLE_CREATE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_ROLE_DELETE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_ROLE_DELETE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_PCM_CREATE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_PCM_CREATE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_PCM_UPDATE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_PCM_UPDATE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_PCM_DELETE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_PCM_DELETE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_SRC_CREATE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_SRC_CREATE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_CME_CREATE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_CME_CREATE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_CME_UPDATE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_CME_UPDATE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_CME_DELETE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_CME_DELETE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#VIEWADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_VIEW"/>
+    <group href="SecurityGroup#VIEWADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_VIEW"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#VIEWADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_NOTE"/>
+    <group href="SecurityGroup#VIEWADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_NOTE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#BIZADMIN"/>
-    <permissionId href="SecurityPermission#PARTYMGR_ADMIN"/>
+    <group href="SecurityGroup#BIZADMIN"/>
+    <permission href="SecurityPermission#PARTYMGR_ADMIN"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FULLADMIN"/>
-    <permissionId href="SecurityPermission#SECURITY_ADMIN"/>
+    <group href="SecurityGroup#FULLADMIN"/>
+    <permission href="SecurityPermission#SECURITY_ADMIN"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#SECURITY_CREATE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#SECURITY_CREATE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#SECURITY_DELETE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#SECURITY_DELETE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#SECURITY_UPDATE"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#SECURITY_UPDATE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#SECURITY_VIEW"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#SECURITY_VIEW"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#VIEWADMIN"/>
-    <permissionId href="SecurityPermission#SECURITY_VIEW"/>
+    <group href="SecurityGroup#VIEWADMIN"/>
+    <permission href="SecurityPermission#SECURITY_VIEW"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroup" groupId="SECURITYADMIN" description="Security Admin group, has all permissions to modify security settings in party manager." groupName="Security Admin"/>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SECURITYADMIN"/>
-    <permissionId href="SecurityPermission#SECURITY_ADMIN"/>
+    <group href="SecurityGroup#SECURITYADMIN"/>
+    <permission href="SecurityPermission#SECURITY_ADMIN"/>
   </contents>
   <contents xsi:type="biz-party:Party" partyId="admin">
-    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
   </contents>
   <contents xsi:type="biz-party:Party" partyId="Company">
-    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
   </contents>
   <contents xsi:type="biz-party:Party" partyId="DemoEmployee">
-    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#admin"/>
-    <roleTypeId href="RoleType#EMAIL_ADMIN"/>
+    <party href="Party#admin"/>
+    <roleType href="RoleType#EMAIL_ADMIN"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#Company"/>
-    <roleTypeId href="RoleType#_NA_"/>
+    <party href="Party#Company"/>
+    <roleType href="RoleType#_NA_"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#DemoEmployee"/>
-    <roleTypeId href="RoleType#EMAIL_ADMIN"/>
+    <party href="Party#DemoEmployee"/>
+    <roleType href="RoleType#EMAIL_ADMIN"/>
   </contents>
   <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
-    <statusId href="StatusItem#PARTY_ENABLED"/>
-    <partyId href="Party#admin"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
+    <party href="Party#admin"/>
   </contents>
   <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
-    <statusId href="StatusItem#PARTY_ENABLED"/>
-    <partyId href="Party#Company"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
+    <party href="Party#Company"/>
   </contents>
   <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
-    <statusId href="StatusItem#PARTY_ENABLED"/>
-    <partyId href="Party#DemoEmployee"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
+    <party href="Party#DemoEmployee"/>
   </contents>
   <contents xsi:type="biz-party:PartyRelationship" fromDate="2000-01-01T00:00:00.000+0100">
     <partyIdFrom href="Party#admin"/>
@@ -172,117 +172,117 @@
     <roleTypeIdTo href="RoleType#_NA_"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMech" contactMechId="admin" infoString="ofbiztest@example.com">
-    <contactMechTypeId href="ContactMechType#EMAIL_ADDRESS"/>
+    <contactMechType href="ContactMechType#EMAIL_ADDRESS"/>
   </contents>
   <contents xsi:type="biz-contact:PartyContactMech" fromDate="2003-01-01T00:00:00.000+0100" allowSolicitation="true">
-    <partyId href="Party#admin"/>
-    <contactMechId href="ContactMech#admin"/>
+    <party href="Party#admin"/>
+    <contactMech href="ContactMech#admin"/>
   </contents>
   <contents xsi:type="biz-contact:PartyContactMechPurpose" fromDate="2003-01-01T00:00:00.000+0100">
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PRIMARY_EMAIL"/>
-    <partyId href="Party#admin"/>
-    <contactMechId href="ContactMech#admin"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PRIMARY_EMAIL"/>
+    <party href="Party#admin"/>
+    <contactMech href="ContactMech#admin"/>
   </contents>
   <contents xsi:type="biz-party:Party" partyId="DemoSupplier">
-    <partyTypeId href="PartyType#PARTY_GROUP"/>
-    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyType href="PartyType#PARTY_GROUP"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
   </contents>
   <contents xsi:type="biz-party:PartyGroup" partyId="DemoSupplier" groupName="Demo Supplier"/>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#DemoSupplier"/>
-    <roleTypeId href="RoleType#ACCOUNT"/>
+    <party href="Party#DemoSupplier"/>
+    <roleType href="RoleType#ACCOUNT"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#DemoSupplier"/>
-    <roleTypeId href="RoleType#SUPPLIER"/>
+    <party href="Party#DemoSupplier"/>
+    <roleType href="RoleType#SUPPLIER"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#DemoSupplier"/>
-    <roleTypeId href="RoleType#BILL_FROM_VENDOR"/>
+    <party href="Party#DemoSupplier"/>
+    <roleType href="RoleType#BILL_FROM_VENDOR"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#DemoSupplier"/>
-    <roleTypeId href="RoleType#SHIP_FROM_VENDOR"/>
+    <party href="Party#DemoSupplier"/>
+    <roleType href="RoleType#SHIP_FROM_VENDOR"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#DemoSupplier"/>
-    <roleTypeId href="RoleType#SUPPLIER_AGENT"/>
+    <party href="Party#DemoSupplier"/>
+    <roleType href="RoleType#SUPPLIER_AGENT"/>
   </contents>
   <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
-    <statusId href="StatusItem#PARTY_ENABLED"/>
-    <partyId href="Party#DemoSupplier"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
+    <party href="Party#DemoSupplier"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMech" contactMechId="9001">
-    <contactMechTypeId href="ContactMechType#POSTAL_ADDRESS"/>
+    <contactMechType href="ContactMechType#POSTAL_ADDRESS"/>
   </contents>
   <contents xsi:type="biz-contact:PartyContactMech" fromDate="2001-05-13T00:00:00.000+0200" allowSolicitation="true">
-    <partyId href="Party#DemoSupplier"/>
-    <contactMechId href="ContactMech#9001"/>
+    <party href="Party#DemoSupplier"/>
+    <contactMech href="ContactMech#9001"/>
   </contents>
   <contents xsi:type="biz-contact:PostalAddress" contactMechId="9001" address1="2004 Factory Blvd" city="City of Industry" postalCode="90000" toName="Demo Supplier Company">
-    <countryGeoId href="Geo#USA"/>
-    <stateProvinceGeoId href="Geo#CA"/>
+    <countryGeo href="Geo#USA"/>
+    <stateProvinceGeo href="Geo#CA"/>
   </contents>
   <contents xsi:type="biz-contact:PartyContactMechPurpose" fromDate="2001-05-13T00:00:00.000+0200">
-    <contactMechPurposeTypeId href="ContactMechPurposeType#BILLING_LOCATION"/>
-    <partyId href="Party#DemoSupplier"/>
-    <contactMechId href="ContactMech#9001"/>
+    <contactMechPurposeType href="ContactMechPurposeType#BILLING_LOCATION"/>
+    <party href="Party#DemoSupplier"/>
+    <contactMech href="ContactMech#9001"/>
   </contents>
   <contents xsi:type="biz-contact:PartyContactMechPurpose" fromDate="2001-05-13T00:00:00.000+0200">
-    <contactMechPurposeTypeId href="ContactMechPurposeType#GENERAL_LOCATION"/>
-    <partyId href="Party#DemoSupplier"/>
-    <contactMechId href="ContactMech#9001"/>
+    <contactMechPurposeType href="ContactMechPurposeType#GENERAL_LOCATION"/>
+    <party href="Party#DemoSupplier"/>
+    <contactMech href="ContactMech#9001"/>
   </contents>
   <contents xsi:type="biz-contact:PartyContactMechPurpose" fromDate="2001-05-13T00:00:00.000+0200">
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PAYMENT_LOCATION"/>
-    <partyId href="Party#DemoSupplier"/>
-    <contactMechId href="ContactMech#9001"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PAYMENT_LOCATION"/>
+    <party href="Party#DemoSupplier"/>
+    <contactMech href="ContactMech#9001"/>
   </contents>
   <contents xsi:type="biz-login:UserLogin" userLoginId="DemoSupplier" currentPassword="{SHA}47b56994cbc2b6d10aa1be30f70165adb305a41a">
-    <partyId href="Party#DemoSupplier"/>
+    <party href="Party#DemoSupplier"/>
   </contents>
   <contents xsi:type="biz-party:PartyIdentificationType" partyIdentificationTypeId="CARD_ID" description="Person card identification number"/>
   <contents xsi:type="biz-party:PartyIdentificationType" partyIdentificationTypeId="SIRET" description="French company identification number (SIRET)"/>
   <contents xsi:type="biz-party:PartyIdentification" idValue="1234 5678 90123">
-    <partyIdentificationTypeId href="PartyIdentificationType#SIRET"/>
-    <partyId href="Party#DemoSupplier"/>
+    <partyIdentificationType href="PartyIdentificationType#SIRET"/>
+    <party href="Party#DemoSupplier"/>
   </contents>
   <contents xsi:type="biz-party:Party" partyId="AcctBigSupplier"/>
   <contents xsi:type="biz-communication:CommunicationEvent" communicationEventId="9000" content="Every time i think of you, only you...you are always on my mind......." datetimeStarted="2008-07-28T13:55:19.000+0200" entryDate="2008-07-28T13:55:55.827+0200" fromString="mailinglist@example.com" note="Sent from: my@email.com; Sent Name from: Jo Easy User; Sent to: ofbiztest@example.com; Delivered-To: ofbiztest@example.com; " subject="Why i would use the OFBiz system" toString="ofbiztest@example.com">
-    <communicationEventTypeId href="CommunicationEventType#EMAIL_COMMUNICATION"/>
+    <communicationEventType href="CommunicationEventType#EMAIL_COMMUNICATION"/>
     <contactMechIdTo href="ContactMech#admin"/>
-    <contactMechTypeId href="ContactMechType#EMAIL_ADDRESS"/>
-    <contentMimeTypeId href="MimeType#text/plain"/>
+    <contactMechType href="ContactMechType#EMAIL_ADDRESS"/>
+    <contentMimeType href="MimeType#text/plain"/>
     <partyIdTo href="Party#admin"/>
     <roleTypeIdFrom href="RoleType#_NA_"/>
     <roleTypeIdTo href="RoleType#_NA_"/>
-    <statusId href="StatusItem#COM_UNKNOWN_PARTY"/>
+    <status href="StatusItem#COM_UNKNOWN_PARTY"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#admin"/>
-    <roleTypeId href="RoleType#ADDRESSEE"/>
+    <party href="Party#admin"/>
+    <roleType href="RoleType#ADDRESSEE"/>
   </contents>
   <contents xsi:type="biz-communication:CommunicationEventRole">
-    <communicationEventId href="CommunicationEvent#9000"/>
-    <partyId href="Party#admin"/>
-    <roleTypeId href="RoleType#ADDRESSEE"/>
-    <contactMechId href="ContactMech#admin"/>
-    <statusId href="StatusItem#COM_ROLE_CREATED"/>
+    <communicationEvent href="CommunicationEvent#9000"/>
+    <party href="Party#admin"/>
+    <roleType href="RoleType#ADDRESSEE"/>
+    <contactMech href="ContactMech#admin"/>
+    <status href="StatusItem#COM_ROLE_CREATED"/>
   </contents>
   <contents xsi:type="biz-email:EmailTemplateSetting" emailTemplateSettingId="PARTY_REGISTER" bccAddress="ofbiztest@example.com" bodyScreenLocation="component://party/widget/partymgr/PartyScreens.xml#CreateUserNotification" fromAddress="ofbiztest@example.com" subject="New Account Created"/>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#admin"/>
-    <roleTypeId href="RoleType#CONTACT"/>
+    <party href="Party#admin"/>
+    <roleType href="RoleType#CONTACT"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#Company"/>
-    <roleTypeId href="RoleType#ACCOUNT"/>
+    <party href="Party#Company"/>
+    <roleType href="RoleType#ACCOUNT"/>
   </contents>
   <contents xsi:type="biz-party:PartyRelationship" fromDate="2000-01-01T00:00:00.000+0100">
     <partyIdFrom href="Party#Company"/>
     <partyIdTo href="Party#admin"/>
     <roleTypeIdFrom href="RoleType#ACCOUNT"/>
     <roleTypeIdTo href="RoleType#CONTACT"/>
-    <partyRelationshipTypeId href="PartyRelationshipType#EMPLOYMENT"/>
+    <partyRelationshipType href="PartyRelationshipType#EMPLOYMENT"/>
   </contents>
 </mimo-ent:EntityContainer>

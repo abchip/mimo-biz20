@@ -20,10 +20,10 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetItem#getBudgetId <em>Budget Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetItem#getBudget <em>Budget</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetItem#getBudgetItemSeqId <em>Budget Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetItem#getAmount <em>Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetItem#getBudgetItemTypeId <em>Budget Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetItem#getBudgetItemType <em>Budget Item Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetItem#getJustification <em>Justification</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetItem#getPurpose <em>Purpose</em>}</li>
  * </ul>
@@ -33,6 +33,29 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface BudgetItem extends EntityTyped<BudgetItemType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Budget</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Budget</em>' reference.
+	 * @see #setBudget(Budget)
+	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetItem_Budget()
+	 * @model keys="budgetId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Budget getBudget();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetItem#getBudget <em>Budget</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Budget</em>' reference.
+	 * @see #getBudget()
+	 * @generated
+	 */
+	void setBudget(Budget value);
+
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -58,6 +81,28 @@ public interface BudgetItem extends EntityTyped<BudgetItemType>, EntityInfo {
 	 * @generated
 	 */
 	void setAmount(BigDecimal value);
+
+	/**
+	 * Returns the value of the '<em><b>Budget Item Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Budget Item Type</em>' reference.
+	 * @see #setBudgetItemType(BudgetItemType)
+	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetItem_BudgetItemType()
+	 * @model keys="budgetItemTypeId"
+	 * @generated
+	 */
+	BudgetItemType getBudgetItemType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetItem#getBudgetItemType <em>Budget Item Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Budget Item Type</em>' reference.
+	 * @see #getBudgetItemType()
+	 * @generated
+	 */
+	void setBudgetItemType(BudgetItemType value);
 
 	/**
 	 * Returns the value of the '<em><b>Budget Item Seq Id</b></em>' attribute.
@@ -138,58 +183,5 @@ public interface BudgetItem extends EntityTyped<BudgetItemType>, EntityInfo {
 	 * @generated
 	 */
 	void setPurpose(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Budget Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Budget Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Budget Id</em>' reference.
-	 * @see #setBudgetId(Budget)
-	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetItem_BudgetId()
-	 * @model keys="budgetId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Budget getBudgetId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetItem#getBudgetId <em>Budget Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Budget Id</em>' reference.
-	 * @see #getBudgetId()
-	 * @generated
-	 */
-	void setBudgetId(Budget value);
-
-	/**
-	 * Returns the value of the '<em><b>Budget Item Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Budget Item Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Budget Item Type Id</em>' reference.
-	 * @see #setBudgetItemTypeId(BudgetItemType)
-	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetItem_BudgetItemTypeId()
-	 * @model keys="budgetItemTypeId"
-	 * @generated
-	 */
-	BudgetItemType getBudgetItemTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetItem#getBudgetItemTypeId <em>Budget Item Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Budget Item Type Id</em>' reference.
-	 * @see #getBudgetItemTypeId()
-	 * @generated
-	 */
-	void setBudgetItemTypeId(BudgetItemType value);
 
 } // BudgetItem

@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountAttribute#getFinAccountId <em>Fin Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountAttribute#getFinAccount <em>Fin Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountAttribute#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountAttribute#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountAttribute#getAttrValue <em>Attr Value</em>}</li>
@@ -30,6 +30,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface FinAccountAttribute extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Fin Account</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fin Account</em>' reference.
+	 * @see #setFinAccount(FinAccount)
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountAttribute_FinAccount()
+	 * @model keys="finAccountId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	FinAccount getFinAccount();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountAttribute#getFinAccount <em>Fin Account</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Fin Account</em>' reference.
+	 * @see #getFinAccount()
+	 * @generated
+	 */
+	void setFinAccount(FinAccount value);
+
 	/**
 	 * Returns the value of the '<em><b>Attr Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -81,33 +104,6 @@ public interface FinAccountAttribute extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setAttrValue(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Fin Account Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fin Account Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fin Account Id</em>' reference.
-	 * @see #setFinAccountId(FinAccount)
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountAttribute_FinAccountId()
-	 * @model keys="finAccountId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	FinAccount getFinAccountId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountAttribute#getFinAccountId <em>Fin Account Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fin Account Id</em>' reference.
-	 * @see #getFinAccountId()
-	 * @generated
-	 */
-	void setFinAccountId(FinAccount value);
 
 	/**
 	 * Returns the value of the '<em><b>Attr Name</b></em>' attribute.

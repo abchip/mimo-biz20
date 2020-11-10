@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentImpl#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentImpl#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentImpl#getOrderContentTypeId <em>Order Content Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentImpl#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentImpl#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentImpl#getOrderContentType <em>Order Content Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentImpl#getThruDate <em>Thru Date</em>}</li>
@@ -157,8 +157,8 @@ public class OrderContentImpl extends EntityTypedImpl<OrderContentType> implemen
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(OrderPackage.Literals.ORDER_CONTENT__CONTENT_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_CONTENT__ORDER, true);
 	}
 
 	/**
@@ -167,8 +167,48 @@ public class OrderContentImpl extends EntityTypedImpl<OrderContentType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setContentId(Content newContentId) {
-		eSet(OrderPackage.Literals.ORDER_CONTENT__CONTENT_ID, newContentId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_CONTENT__ORDER, newOrder);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Content getContent() {
+		return (Content)eGet(OrderPackage.Literals.ORDER_CONTENT__CONTENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContent(Content newContent) {
+		eSet(OrderPackage.Literals.ORDER_CONTENT__CONTENT, newContent);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OrderContentType getOrderContentType() {
+		return (OrderContentType)eGet(OrderPackage.Literals.ORDER_CONTENT__ORDER_CONTENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrderContentType(OrderContentType newOrderContentType) {
+		eSet(OrderPackage.Literals.ORDER_CONTENT__ORDER_CONTENT_TYPE, newOrderContentType);
 	}
 
 	/**
@@ -189,46 +229,6 @@ public class OrderContentImpl extends EntityTypedImpl<OrderContentType> implemen
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(OrderPackage.Literals.ORDER_CONTENT__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderContentType getOrderContentTypeId() {
-		return (OrderContentType)eGet(OrderPackage.Literals.ORDER_CONTENT__ORDER_CONTENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderContentTypeId(OrderContentType newOrderContentTypeId) {
-		eSet(OrderPackage.Literals.ORDER_CONTENT__ORDER_CONTENT_TYPE_ID, newOrderContentTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_CONTENT__ORDER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_CONTENT__ORDER_ID, newOrderId);
 	}
 
 	/**

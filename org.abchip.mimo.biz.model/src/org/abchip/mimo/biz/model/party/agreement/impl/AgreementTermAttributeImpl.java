@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermAttributeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermAttributeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermAttributeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermAttributeImpl#getAgreementTermId <em>Agreement Term Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermAttributeImpl#getAgreementTerm <em>Agreement Term</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermAttributeImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermAttributeImpl#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermAttributeImpl#getAttrValue <em>Attr Value</em>}</li>
@@ -152,6 +152,26 @@ public class AgreementTermAttributeImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
+	public AgreementTerm getAgreementTerm() {
+		return (AgreementTerm)eGet(AgreementPackage.Literals.AGREEMENT_TERM_ATTRIBUTE__AGREEMENT_TERM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAgreementTerm(AgreementTerm newAgreementTerm) {
+		eSet(AgreementPackage.Literals.AGREEMENT_TERM_ATTRIBUTE__AGREEMENT_TERM, newAgreementTerm);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrDescription() {
 		return (String)eGet(AgreementPackage.Literals.AGREEMENT_TERM_ATTRIBUTE__ATTR_DESCRIPTION, true);
 	}
@@ -242,26 +262,6 @@ public class AgreementTermAttributeImpl extends EntityIdentifiableImpl implement
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public AgreementTerm getAgreementTermId() {
-		return (AgreementTerm)eGet(AgreementPackage.Literals.AGREEMENT_TERM_ATTRIBUTE__AGREEMENT_TERM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAgreementTermId(AgreementTerm newAgreementTermId) {
-		eSet(AgreementPackage.Literals.AGREEMENT_TERM_ATTRIBUTE__AGREEMENT_TERM_ID, newAgreementTermId);
 	}
 
 } //AgreementTermAttributeImpl

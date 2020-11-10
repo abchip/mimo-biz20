@@ -773,7 +773,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuote_CurrencyUomId() {
+	public EReference getQuote_CurrencyUom() {
 		return (EReference)quoteEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -803,7 +803,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuote_PartyId() {
+	public EReference getQuote_Party() {
 		return (EReference)quoteEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -813,7 +813,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuote_ProductStoreId() {
+	public EReference getQuote_ProductStore() {
 		return (EReference)quoteEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -873,7 +873,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuote_QuoteTypeId() {
+	public EReference getQuote_QuoteType() {
 		return (EReference)quoteEClass.getEStructuralFeatures().get(11);
 	}
 
@@ -893,7 +893,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuote_SalesChannelEnumId() {
+	public EReference getQuote_SalesChannelEnum() {
 		return (EReference)quoteEClass.getEStructuralFeatures().get(13);
 	}
 
@@ -903,7 +903,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuote_StatusId() {
+	public EReference getQuote_Status() {
 		return (EReference)quoteEClass.getEStructuralFeatures().get(14);
 	}
 
@@ -1073,7 +1073,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteAdjustment_OverrideGlAccountId() {
+	public EReference getQuoteAdjustment_OverrideGlAccount() {
 		return (EReference)quoteAdjustmentEClass.getEStructuralFeatures().get(13);
 	}
 
@@ -1083,7 +1083,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteAdjustment_PrimaryGeoId() {
+	public EReference getQuoteAdjustment_PrimaryGeo() {
 		return (EReference)quoteAdjustmentEClass.getEStructuralFeatures().get(14);
 	}
 
@@ -1103,8 +1103,8 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getQuoteAdjustment_ProductPromoActionSeqId() {
-		return (EAttribute)quoteAdjustmentEClass.getEStructuralFeatures().get(16);
+	public EReference getQuoteAdjustment_ProductPromo() {
+		return (EReference)quoteAdjustmentEClass.getEStructuralFeatures().get(16);
 	}
 
 	/**
@@ -1113,8 +1113,8 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteAdjustment_ProductPromoId() {
-		return (EReference)quoteAdjustmentEClass.getEStructuralFeatures().get(17);
+	public EAttribute getQuoteAdjustment_ProductPromoActionSeqId() {
+		return (EAttribute)quoteAdjustmentEClass.getEStructuralFeatures().get(17);
 	}
 
 	/**
@@ -1133,7 +1133,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteAdjustment_QuoteAdjustmentTypeId() {
+	public EReference getQuoteAdjustment_Quote() {
 		return (EReference)quoteAdjustmentEClass.getEStructuralFeatures().get(19);
 	}
 
@@ -1143,7 +1143,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteAdjustment_QuoteId() {
+	public EReference getQuoteAdjustment_QuoteAdjustmentType() {
 		return (EReference)quoteAdjustmentEClass.getEStructuralFeatures().get(20);
 	}
 
@@ -1163,7 +1163,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteAdjustment_SecondaryGeoId() {
+	public EReference getQuoteAdjustment_SecondaryGeo() {
 		return (EReference)quoteAdjustmentEClass.getEStructuralFeatures().get(22);
 	}
 
@@ -1223,7 +1223,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteAttribute_QuoteId() {
+	public EReference getQuoteAttribute_Quote() {
 		return (EReference)quoteAttributeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1273,7 +1273,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteCoefficient_QuoteId() {
+	public EReference getQuoteCoefficient_Quote() {
 		return (EReference)quoteCoefficientEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1313,7 +1313,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteItem_QuoteId() {
+	public EReference getQuoteItem_Quote() {
 		return (EReference)quoteItemEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1353,7 +1353,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteItem_CustRequestId() {
+	public EReference getQuoteItem_CustRequest() {
 		return (EReference)quoteItemEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -1373,7 +1373,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteItem_DeliverableTypeId() {
+	public EReference getQuoteItem_DeliverableType() {
 		return (EReference)quoteItemEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -1413,7 +1413,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteItem_ProductFeatureId() {
+	public EReference getQuoteItem_Product() {
 		return (EReference)quoteItemEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -1423,7 +1423,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteItem_ProductId() {
+	public EReference getQuoteItem_ProductFeature() {
 		return (EReference)quoteItemEClass.getEStructuralFeatures().get(11);
 	}
 
@@ -1493,7 +1493,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteItem_SkillTypeId() {
+	public EReference getQuoteItem_SkillType() {
 		return (EReference)quoteItemEClass.getEStructuralFeatures().get(18);
 	}
 
@@ -1503,7 +1503,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteItem_UomId() {
+	public EReference getQuoteItem_Uom() {
 		return (EReference)quoteItemEClass.getEStructuralFeatures().get(19);
 	}
 
@@ -1513,7 +1513,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteItem_WorkEffortId() {
+	public EReference getQuoteItem_WorkEffort() {
 		return (EReference)quoteItemEClass.getEStructuralFeatures().get(20);
 	}
 
@@ -1533,7 +1533,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteNote_QuoteId() {
+	public EReference getQuoteNote_Quote() {
 		return (EReference)quoteNoteEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1553,7 +1553,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteRole_QuoteId() {
+	public EReference getQuoteRole_Quote() {
 		return (EReference)quoteRoleEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1563,7 +1563,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteRole_PartyId() {
+	public EReference getQuoteRole_Party() {
 		return (EReference)quoteRoleEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1573,7 +1573,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteRole_RoleTypeId() {
+	public EReference getQuoteRole_RoleType() {
 		return (EReference)quoteRoleEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -1613,8 +1613,8 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteTerm_TermTypeId() {
-		return (EReference)quoteTermEClass.getEStructuralFeatures().get(1);
+	public EReference getQuoteTerm_Quote() {
+		return (EReference)quoteTermEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1623,8 +1623,8 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteTerm_QuoteId() {
-		return (EReference)quoteTermEClass.getEStructuralFeatures().get(0);
+	public EReference getQuoteTerm_TermType() {
+		return (EReference)quoteTermEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1803,7 +1803,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteType_ParentTypeId() {
+	public EReference getQuoteType_ParentType() {
 		return (EReference)quoteTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1833,7 +1833,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteTypeAttr_QuoteTypeId() {
+	public EReference getQuoteTypeAttr_QuoteType() {
 		return (EReference)quoteTypeAttrEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1873,7 +1873,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteWorkEffort_QuoteId() {
+	public EReference getQuoteWorkEffort_Quote() {
 		return (EReference)quoteWorkEffortEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1883,7 +1883,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuoteWorkEffort_WorkEffortId() {
+	public EReference getQuoteWorkEffort_WorkEffort() {
 		return (EReference)quoteWorkEffortEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1918,20 +1918,20 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		// Create classes and their features
 		quoteEClass = createEClass(QUOTE);
 		createEAttribute(quoteEClass, QUOTE__QUOTE_ID);
-		createEReference(quoteEClass, QUOTE__CURRENCY_UOM_ID);
+		createEReference(quoteEClass, QUOTE__CURRENCY_UOM);
 		createEAttribute(quoteEClass, QUOTE__DESCRIPTION);
 		createEAttribute(quoteEClass, QUOTE__ISSUE_DATE);
-		createEReference(quoteEClass, QUOTE__PARTY_ID);
-		createEReference(quoteEClass, QUOTE__PRODUCT_STORE_ID);
+		createEReference(quoteEClass, QUOTE__PARTY);
+		createEReference(quoteEClass, QUOTE__PRODUCT_STORE);
 		createEReference(quoteEClass, QUOTE__QUOTE_ATTRIBUTES);
 		createEReference(quoteEClass, QUOTE__QUOTE_COEFFICIENTS);
 		createEReference(quoteEClass, QUOTE__QUOTE_ITEMS);
 		createEAttribute(quoteEClass, QUOTE__QUOTE_NAME);
 		createEReference(quoteEClass, QUOTE__QUOTE_NOTES);
-		createEReference(quoteEClass, QUOTE__QUOTE_TYPE_ID);
+		createEReference(quoteEClass, QUOTE__QUOTE_TYPE);
 		createEReference(quoteEClass, QUOTE__QUOTE_WORK_EFFORTS);
-		createEReference(quoteEClass, QUOTE__SALES_CHANNEL_ENUM_ID);
-		createEReference(quoteEClass, QUOTE__STATUS_ID);
+		createEReference(quoteEClass, QUOTE__SALES_CHANNEL_ENUM);
+		createEReference(quoteEClass, QUOTE__STATUS);
 		createEAttribute(quoteEClass, QUOTE__VALID_FROM_DATE);
 		createEAttribute(quoteEClass, QUOTE__VALID_THRU_DATE);
 
@@ -1949,68 +1949,68 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		createEAttribute(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__INCLUDE_IN_TAX);
 		createEAttribute(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__LAST_MODIFIED_BY_USER_LOGIN);
 		createEAttribute(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__LAST_MODIFIED_DATE);
-		createEReference(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__OVERRIDE_GL_ACCOUNT_ID);
-		createEReference(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__PRIMARY_GEO_ID);
+		createEReference(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__OVERRIDE_GL_ACCOUNT);
+		createEReference(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__PRIMARY_GEO);
 		createEAttribute(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__PRODUCT_FEATURE_ID);
+		createEReference(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__PRODUCT_PROMO);
 		createEAttribute(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__PRODUCT_PROMO_ACTION_SEQ_ID);
-		createEReference(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__PRODUCT_PROMO_ID);
 		createEAttribute(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__PRODUCT_PROMO_RULE_ID);
-		createEReference(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__QUOTE_ADJUSTMENT_TYPE_ID);
-		createEReference(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__QUOTE_ID);
+		createEReference(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__QUOTE);
+		createEReference(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__QUOTE_ADJUSTMENT_TYPE);
 		createEAttribute(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__QUOTE_ITEM_SEQ_ID);
-		createEReference(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__SECONDARY_GEO_ID);
+		createEReference(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__SECONDARY_GEO);
 		createEAttribute(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__SOURCE_PERCENTAGE);
 		createEAttribute(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__SOURCE_REFERENCE_ID);
 		createEAttribute(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__TAX_AUTH_GEO_ID);
 		createEAttribute(quoteAdjustmentEClass, QUOTE_ADJUSTMENT__TAX_AUTH_PARTY_ID);
 
 		quoteAttributeEClass = createEClass(QUOTE_ATTRIBUTE);
-		createEReference(quoteAttributeEClass, QUOTE_ATTRIBUTE__QUOTE_ID);
+		createEReference(quoteAttributeEClass, QUOTE_ATTRIBUTE__QUOTE);
 		createEAttribute(quoteAttributeEClass, QUOTE_ATTRIBUTE__ATTR_NAME);
 		createEAttribute(quoteAttributeEClass, QUOTE_ATTRIBUTE__ATTR_DESCRIPTION);
 		createEAttribute(quoteAttributeEClass, QUOTE_ATTRIBUTE__ATTR_VALUE);
 
 		quoteCoefficientEClass = createEClass(QUOTE_COEFFICIENT);
-		createEReference(quoteCoefficientEClass, QUOTE_COEFFICIENT__QUOTE_ID);
+		createEReference(quoteCoefficientEClass, QUOTE_COEFFICIENT__QUOTE);
 		createEAttribute(quoteCoefficientEClass, QUOTE_COEFFICIENT__COEFF_NAME);
 		createEAttribute(quoteCoefficientEClass, QUOTE_COEFFICIENT__COEFF_VALUE);
 
 		quoteItemEClass = createEClass(QUOTE_ITEM);
-		createEReference(quoteItemEClass, QUOTE_ITEM__QUOTE_ID);
+		createEReference(quoteItemEClass, QUOTE_ITEM__QUOTE);
 		createEAttribute(quoteItemEClass, QUOTE_ITEM__QUOTE_ITEM_SEQ_ID);
 		createEAttribute(quoteItemEClass, QUOTE_ITEM__COMMENTS);
 		createEAttribute(quoteItemEClass, QUOTE_ITEM__CONFIG_ID);
-		createEReference(quoteItemEClass, QUOTE_ITEM__CUST_REQUEST_ID);
+		createEReference(quoteItemEClass, QUOTE_ITEM__CUST_REQUEST);
 		createEAttribute(quoteItemEClass, QUOTE_ITEM__CUST_REQUEST_ITEM_SEQ_ID);
-		createEReference(quoteItemEClass, QUOTE_ITEM__DELIVERABLE_TYPE_ID);
+		createEReference(quoteItemEClass, QUOTE_ITEM__DELIVERABLE_TYPE);
 		createEAttribute(quoteItemEClass, QUOTE_ITEM__ESTIMATED_DELIVERY_DATE);
 		createEAttribute(quoteItemEClass, QUOTE_ITEM__IS_PROMO);
 		createEAttribute(quoteItemEClass, QUOTE_ITEM__LEAD_TIME_DAYS);
-		createEReference(quoteItemEClass, QUOTE_ITEM__PRODUCT_FEATURE_ID);
-		createEReference(quoteItemEClass, QUOTE_ITEM__PRODUCT_ID);
+		createEReference(quoteItemEClass, QUOTE_ITEM__PRODUCT);
+		createEReference(quoteItemEClass, QUOTE_ITEM__PRODUCT_FEATURE);
 		createEAttribute(quoteItemEClass, QUOTE_ITEM__QUANTITY);
 		createEAttribute(quoteItemEClass, QUOTE_ITEM__QUOTE_UNIT_PRICE);
 		createEAttribute(quoteItemEClass, QUOTE_ITEM__RESERV_LENGTH);
 		createEAttribute(quoteItemEClass, QUOTE_ITEM__RESERV_PERSONS);
 		createEAttribute(quoteItemEClass, QUOTE_ITEM__RESERV_START);
 		createEAttribute(quoteItemEClass, QUOTE_ITEM__SELECTED_AMOUNT);
-		createEReference(quoteItemEClass, QUOTE_ITEM__SKILL_TYPE_ID);
-		createEReference(quoteItemEClass, QUOTE_ITEM__UOM_ID);
-		createEReference(quoteItemEClass, QUOTE_ITEM__WORK_EFFORT_ID);
+		createEReference(quoteItemEClass, QUOTE_ITEM__SKILL_TYPE);
+		createEReference(quoteItemEClass, QUOTE_ITEM__UOM);
+		createEReference(quoteItemEClass, QUOTE_ITEM__WORK_EFFORT);
 
 		quoteNoteEClass = createEClass(QUOTE_NOTE);
-		createEReference(quoteNoteEClass, QUOTE_NOTE__QUOTE_ID);
+		createEReference(quoteNoteEClass, QUOTE_NOTE__QUOTE);
 
 		quoteRoleEClass = createEClass(QUOTE_ROLE);
-		createEReference(quoteRoleEClass, QUOTE_ROLE__QUOTE_ID);
-		createEReference(quoteRoleEClass, QUOTE_ROLE__PARTY_ID);
-		createEReference(quoteRoleEClass, QUOTE_ROLE__ROLE_TYPE_ID);
+		createEReference(quoteRoleEClass, QUOTE_ROLE__QUOTE);
+		createEReference(quoteRoleEClass, QUOTE_ROLE__PARTY);
+		createEReference(quoteRoleEClass, QUOTE_ROLE__ROLE_TYPE);
 		createEAttribute(quoteRoleEClass, QUOTE_ROLE__FROM_DATE);
 		createEAttribute(quoteRoleEClass, QUOTE_ROLE__THRU_DATE);
 
 		quoteTermEClass = createEClass(QUOTE_TERM);
-		createEReference(quoteTermEClass, QUOTE_TERM__QUOTE_ID);
-		createEReference(quoteTermEClass, QUOTE_TERM__TERM_TYPE_ID);
+		createEReference(quoteTermEClass, QUOTE_TERM__QUOTE);
+		createEReference(quoteTermEClass, QUOTE_TERM__TERM_TYPE);
 		createEAttribute(quoteTermEClass, QUOTE_TERM__QUOTE_ITEM_SEQ_ID);
 		createEAttribute(quoteTermEClass, QUOTE_TERM__DESCRIPTION);
 		createEAttribute(quoteTermEClass, QUOTE_TERM__TERM_DAYS);
@@ -2030,17 +2030,17 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		createEAttribute(quoteTypeEClass, QUOTE_TYPE__QUOTE_TYPE_ID);
 		createEAttribute(quoteTypeEClass, QUOTE_TYPE__DESCRIPTION);
 		createEAttribute(quoteTypeEClass, QUOTE_TYPE__HAS_TABLE);
-		createEReference(quoteTypeEClass, QUOTE_TYPE__PARENT_TYPE_ID);
+		createEReference(quoteTypeEClass, QUOTE_TYPE__PARENT_TYPE);
 		createEReference(quoteTypeEClass, QUOTE_TYPE__QUOTE_TYPE_ATTRS);
 
 		quoteTypeAttrEClass = createEClass(QUOTE_TYPE_ATTR);
-		createEReference(quoteTypeAttrEClass, QUOTE_TYPE_ATTR__QUOTE_TYPE_ID);
+		createEReference(quoteTypeAttrEClass, QUOTE_TYPE_ATTR__QUOTE_TYPE);
 		createEAttribute(quoteTypeAttrEClass, QUOTE_TYPE_ATTR__ATTR_NAME);
 		createEAttribute(quoteTypeAttrEClass, QUOTE_TYPE_ATTR__DESCRIPTION);
 
 		quoteWorkEffortEClass = createEClass(QUOTE_WORK_EFFORT);
-		createEReference(quoteWorkEffortEClass, QUOTE_WORK_EFFORT__QUOTE_ID);
-		createEReference(quoteWorkEffortEClass, QUOTE_WORK_EFFORT__WORK_EFFORT_ID);
+		createEReference(quoteWorkEffortEClass, QUOTE_WORK_EFFORT__QUOTE);
+		createEReference(quoteWorkEffortEClass, QUOTE_WORK_EFFORT__WORK_EFFORT);
 	}
 
 	/**
@@ -2080,8 +2080,8 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		OrderPackage theOrderPackage = (OrderPackage)EPackage.Registry.INSTANCE.getEPackage(OrderPackage.eNS_URI);
 		RequestPackage theRequestPackage = (RequestPackage)EPackage.Registry.INSTANCE.getEPackage(RequestPackage.eNS_URI);
 		WorkeffortPackage theWorkeffortPackage = (WorkeffortPackage)EPackage.Registry.INSTANCE.getEPackage(WorkeffortPackage.eNS_URI);
-		FeaturePackage theFeaturePackage = (FeaturePackage)EPackage.Registry.INSTANCE.getEPackage(FeaturePackage.eNS_URI);
 		ProductPackage theProductPackage = (ProductPackage)EPackage.Registry.INSTANCE.getEPackage(ProductPackage.eNS_URI);
+		FeaturePackage theFeaturePackage = (FeaturePackage)EPackage.Registry.INSTANCE.getEPackage(FeaturePackage.eNS_URI);
 		AbilityPackage theAbilityPackage = (AbilityPackage)EPackage.Registry.INSTANCE.getEPackage(AbilityPackage.eNS_URI);
 		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
 		AgreementPackage theAgreementPackage = (AgreementPackage)EPackage.Registry.INSTANCE.getEPackage(AgreementPackage.eNS_URI);
@@ -2126,26 +2126,26 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		// Initialize classes and features; add operations and parameters
 		initEClass(quoteEClass, Quote.class, "Quote", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getQuote_QuoteId(), ecorePackage.getEString(), "quoteId", null, 1, 1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getQuote_CurrencyUomId(), theUomPackage.getUom(), null, "currencyUomId", null, 0, 1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuote_CurrencyUomId().getEKeys().add(theUomPackage.getUom_UomId());
+		initEReference(getQuote_CurrencyUom(), theUomPackage.getUom(), null, "currencyUom", null, 0, 1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuote_CurrencyUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEAttribute(getQuote_Description(), ecorePackage.getEString(), "description", null, 0, 1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuote_IssueDate(), ecorePackage.getEDate(), "issueDate", null, 0, 1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getQuote_PartyId(), thePartyPackage_1.getParty(), null, "partyId", null, 0, 1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuote_PartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
-		initEReference(getQuote_ProductStoreId(), theStorePackage.getProductStore(), null, "productStoreId", null, 0, 1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuote_ProductStoreId().getEKeys().add(theStorePackage.getProductStore_ProductStoreId());
+		initEReference(getQuote_Party(), thePartyPackage_1.getParty(), null, "party", null, 0, 1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuote_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getQuote_ProductStore(), theStorePackage.getProductStore(), null, "productStore", null, 0, 1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuote_ProductStore().getEKeys().add(theStorePackage.getProductStore_ProductStoreId());
 		initEReference(getQuote_QuoteAttributes(), this.getQuoteAttribute(), null, "quoteAttributes", null, 0, -1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getQuote_QuoteCoefficients(), this.getQuoteCoefficient(), null, "quoteCoefficients", null, 0, -1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getQuote_QuoteItems(), this.getQuoteItem(), null, "quoteItems", null, 0, -1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuote_QuoteName(), ecorePackage.getEString(), "quoteName", null, 0, 1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getQuote_QuoteNotes(), this.getQuoteNote(), null, "quoteNotes", null, 0, -1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEReference(getQuote_QuoteTypeId(), this.getQuoteType(), null, "quoteTypeId", null, 0, 1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuote_QuoteTypeId().getEKeys().add(this.getQuoteType_QuoteTypeId());
+		initEReference(getQuote_QuoteType(), this.getQuoteType(), null, "quoteType", null, 0, 1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuote_QuoteType().getEKeys().add(this.getQuoteType_QuoteTypeId());
 		initEReference(getQuote_QuoteWorkEfforts(), this.getQuoteWorkEffort(), null, "quoteWorkEfforts", null, 0, -1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEReference(getQuote_SalesChannelEnumId(), theEnumPackage.getEnumeration(), null, "salesChannelEnumId", null, 0, 1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuote_SalesChannelEnumId().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
-		initEReference(getQuote_StatusId(), theStatusPackage.getStatusItem(), null, "statusId", null, 0, 1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuote_StatusId().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
+		initEReference(getQuote_SalesChannelEnum(), theEnumPackage.getEnumeration(), null, "salesChannelEnum", null, 0, 1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuote_SalesChannelEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
+		initEReference(getQuote_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuote_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getQuote_ValidFromDate(), ecorePackage.getEDate(), "validFromDate", null, 0, 1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuote_ValidThruDate(), ecorePackage.getEDate(), "validThruDate", null, 0, 1, Quote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -2164,90 +2164,90 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		initEAttribute(getQuoteAdjustment_IncludeInTax(), ecorePackage.getEBoolean(), "includeInTax", null, 1, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteAdjustment_LastModifiedByUserLogin(), ecorePackage.getEString(), "lastModifiedByUserLogin", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteAdjustment_LastModifiedDate(), ecorePackage.getEDate(), "lastModifiedDate", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getQuoteAdjustment_OverrideGlAccountId(), theLedgerPackage.getGlAccount(), null, "overrideGlAccountId", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteAdjustment_OverrideGlAccountId().getEKeys().add(theLedgerPackage.getGlAccount_GlAccountId());
-		initEReference(getQuoteAdjustment_PrimaryGeoId(), theGeoPackage.getGeo(), null, "primaryGeoId", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteAdjustment_PrimaryGeoId().getEKeys().add(theGeoPackage.getGeo_GeoId());
+		initEReference(getQuoteAdjustment_OverrideGlAccount(), theLedgerPackage.getGlAccount(), null, "overrideGlAccount", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteAdjustment_OverrideGlAccount().getEKeys().add(theLedgerPackage.getGlAccount_GlAccountId());
+		initEReference(getQuoteAdjustment_PrimaryGeo(), theGeoPackage.getGeo(), null, "primaryGeo", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteAdjustment_PrimaryGeo().getEKeys().add(theGeoPackage.getGeo_GeoId());
 		initEAttribute(getQuoteAdjustment_ProductFeatureId(), ecorePackage.getEString(), "productFeatureId", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getQuoteAdjustment_ProductPromo(), thePromoPackage.getProductPromo(), null, "productPromo", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteAdjustment_ProductPromo().getEKeys().add(thePromoPackage.getProductPromo_ProductPromoId());
 		initEAttribute(getQuoteAdjustment_ProductPromoActionSeqId(), ecorePackage.getEString(), "productPromoActionSeqId", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getQuoteAdjustment_ProductPromoId(), thePromoPackage.getProductPromo(), null, "productPromoId", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteAdjustment_ProductPromoId().getEKeys().add(thePromoPackage.getProductPromo_ProductPromoId());
 		initEAttribute(getQuoteAdjustment_ProductPromoRuleId(), ecorePackage.getEString(), "productPromoRuleId", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getQuoteAdjustment_QuoteAdjustmentTypeId(), theOrderPackage.getOrderAdjustmentType(), null, "quoteAdjustmentTypeId", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteAdjustment_QuoteAdjustmentTypeId().getEKeys().add(theOrderPackage.getOrderAdjustmentType_OrderAdjustmentTypeId());
-		initEReference(getQuoteAdjustment_QuoteId(), this.getQuote(), null, "quoteId", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteAdjustment_QuoteId().getEKeys().add(this.getQuote_QuoteId());
+		initEReference(getQuoteAdjustment_Quote(), this.getQuote(), null, "quote", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteAdjustment_Quote().getEKeys().add(this.getQuote_QuoteId());
+		initEReference(getQuoteAdjustment_QuoteAdjustmentType(), theOrderPackage.getOrderAdjustmentType(), null, "quoteAdjustmentType", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteAdjustment_QuoteAdjustmentType().getEKeys().add(theOrderPackage.getOrderAdjustmentType_OrderAdjustmentTypeId());
 		initEAttribute(getQuoteAdjustment_QuoteItemSeqId(), ecorePackage.getEString(), "quoteItemSeqId", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getQuoteAdjustment_SecondaryGeoId(), theGeoPackage.getGeo(), null, "secondaryGeoId", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteAdjustment_SecondaryGeoId().getEKeys().add(theGeoPackage.getGeo_GeoId());
+		initEReference(getQuoteAdjustment_SecondaryGeo(), theGeoPackage.getGeo(), null, "secondaryGeo", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteAdjustment_SecondaryGeo().getEKeys().add(theGeoPackage.getGeo_GeoId());
 		initEAttribute(getQuoteAdjustment_SourcePercentage(), ecorePackage.getEBigDecimal(), "sourcePercentage", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteAdjustment_SourceReferenceId(), ecorePackage.getEString(), "sourceReferenceId", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteAdjustment_TaxAuthGeoId(), ecorePackage.getEString(), "taxAuthGeoId", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteAdjustment_TaxAuthPartyId(), ecorePackage.getEString(), "taxAuthPartyId", null, 0, 1, QuoteAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(quoteAttributeEClass, QuoteAttribute.class, "QuoteAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getQuoteAttribute_QuoteId(), this.getQuote(), null, "quoteId", null, 1, 1, QuoteAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteAttribute_QuoteId().getEKeys().add(this.getQuote_QuoteId());
+		initEReference(getQuoteAttribute_Quote(), this.getQuote(), null, "quote", null, 1, 1, QuoteAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteAttribute_Quote().getEKeys().add(this.getQuote_QuoteId());
 		initEAttribute(getQuoteAttribute_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, QuoteAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteAttribute_AttrDescription(), ecorePackage.getEString(), "attrDescription", null, 0, 1, QuoteAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteAttribute_AttrValue(), ecorePackage.getEString(), "attrValue", null, 0, 1, QuoteAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(quoteCoefficientEClass, QuoteCoefficient.class, "QuoteCoefficient", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getQuoteCoefficient_QuoteId(), this.getQuote(), null, "quoteId", null, 1, 1, QuoteCoefficient.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteCoefficient_QuoteId().getEKeys().add(this.getQuote_QuoteId());
+		initEReference(getQuoteCoefficient_Quote(), this.getQuote(), null, "quote", null, 1, 1, QuoteCoefficient.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteCoefficient_Quote().getEKeys().add(this.getQuote_QuoteId());
 		initEAttribute(getQuoteCoefficient_CoeffName(), ecorePackage.getEString(), "coeffName", null, 1, 1, QuoteCoefficient.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteCoefficient_CoeffValue(), ecorePackage.getEBigDecimal(), "coeffValue", null, 0, 1, QuoteCoefficient.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(quoteItemEClass, QuoteItem.class, "QuoteItem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getQuoteItem_QuoteId(), this.getQuote(), null, "quoteId", null, 1, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteItem_QuoteId().getEKeys().add(this.getQuote_QuoteId());
+		initEReference(getQuoteItem_Quote(), this.getQuote(), null, "quote", null, 1, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteItem_Quote().getEKeys().add(this.getQuote_QuoteId());
 		initEAttribute(getQuoteItem_QuoteItemSeqId(), ecorePackage.getEString(), "quoteItemSeqId", null, 1, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteItem_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteItem_ConfigId(), ecorePackage.getEString(), "configId", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getQuoteItem_CustRequestId(), theRequestPackage.getCustRequest(), null, "custRequestId", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteItem_CustRequestId().getEKeys().add(theRequestPackage.getCustRequest_CustRequestId());
+		initEReference(getQuoteItem_CustRequest(), theRequestPackage.getCustRequest(), null, "custRequest", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteItem_CustRequest().getEKeys().add(theRequestPackage.getCustRequest_CustRequestId());
 		initEAttribute(getQuoteItem_CustRequestItemSeqId(), ecorePackage.getEString(), "custRequestItemSeqId", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getQuoteItem_DeliverableTypeId(), theWorkeffortPackage.getDeliverableType(), null, "deliverableTypeId", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteItem_DeliverableTypeId().getEKeys().add(theWorkeffortPackage.getDeliverableType_DeliverableTypeId());
+		initEReference(getQuoteItem_DeliverableType(), theWorkeffortPackage.getDeliverableType(), null, "deliverableType", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteItem_DeliverableType().getEKeys().add(theWorkeffortPackage.getDeliverableType_DeliverableTypeId());
 		initEAttribute(getQuoteItem_EstimatedDeliveryDate(), ecorePackage.getEDate(), "estimatedDeliveryDate", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteItem_IsPromo(), ecorePackage.getEBooleanObject(), "isPromo", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteItem_LeadTimeDays(), ecorePackage.getELong(), "leadTimeDays", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getQuoteItem_ProductFeatureId(), theFeaturePackage.getProductFeature(), null, "productFeatureId", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteItem_ProductFeatureId().getEKeys().add(theFeaturePackage.getProductFeature_ProductFeatureId());
-		initEReference(getQuoteItem_ProductId(), theProductPackage.getProduct(), null, "productId", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteItem_ProductId().getEKeys().add(theProductPackage.getProduct_ProductId());
+		initEReference(getQuoteItem_Product(), theProductPackage.getProduct(), null, "product", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteItem_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
+		initEReference(getQuoteItem_ProductFeature(), theFeaturePackage.getProductFeature(), null, "productFeature", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteItem_ProductFeature().getEKeys().add(theFeaturePackage.getProductFeature_ProductFeatureId());
 		initEAttribute(getQuoteItem_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteItem_QuoteUnitPrice(), ecorePackage.getEBigDecimal(), "quoteUnitPrice", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteItem_ReservLength(), ecorePackage.getEBigDecimal(), "reservLength", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteItem_ReservPersons(), ecorePackage.getEBigDecimal(), "reservPersons", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteItem_ReservStart(), ecorePackage.getEDate(), "reservStart", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteItem_SelectedAmount(), ecorePackage.getEBigDecimal(), "selectedAmount", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getQuoteItem_SkillTypeId(), theAbilityPackage.getSkillType(), null, "skillTypeId", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteItem_SkillTypeId().getEKeys().add(theAbilityPackage.getSkillType_SkillTypeId());
-		initEReference(getQuoteItem_UomId(), theUomPackage.getUom(), null, "uomId", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteItem_UomId().getEKeys().add(theUomPackage.getUom_UomId());
-		initEReference(getQuoteItem_WorkEffortId(), theWorkeffortPackage.getWorkEffort(), null, "workEffortId", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteItem_WorkEffortId().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
+		initEReference(getQuoteItem_SkillType(), theAbilityPackage.getSkillType(), null, "skillType", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteItem_SkillType().getEKeys().add(theAbilityPackage.getSkillType_SkillTypeId());
+		initEReference(getQuoteItem_Uom(), theUomPackage.getUom(), null, "uom", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteItem_Uom().getEKeys().add(theUomPackage.getUom_UomId());
+		initEReference(getQuoteItem_WorkEffort(), theWorkeffortPackage.getWorkEffort(), null, "workEffort", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteItem_WorkEffort().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
 
 		initEClass(quoteNoteEClass, QuoteNote.class, "QuoteNote", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getQuoteNote_QuoteId(), this.getQuote(), null, "quoteId", null, 1, 1, QuoteNote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteNote_QuoteId().getEKeys().add(this.getQuote_QuoteId());
+		initEReference(getQuoteNote_Quote(), this.getQuote(), null, "quote", null, 1, 1, QuoteNote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteNote_Quote().getEKeys().add(this.getQuote_QuoteId());
 
 		initEClass(quoteRoleEClass, QuoteRole.class, "QuoteRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getQuoteRole_QuoteId(), this.getQuote(), null, "quoteId", null, 1, 1, QuoteRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteRole_QuoteId().getEKeys().add(this.getQuote_QuoteId());
-		initEReference(getQuoteRole_PartyId(), thePartyPackage_1.getParty(), null, "partyId", null, 1, 1, QuoteRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteRole_PartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
-		initEReference(getQuoteRole_RoleTypeId(), thePartyPackage_1.getRoleType(), null, "roleTypeId", null, 1, 1, QuoteRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteRole_RoleTypeId().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
+		initEReference(getQuoteRole_Quote(), this.getQuote(), null, "quote", null, 1, 1, QuoteRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteRole_Quote().getEKeys().add(this.getQuote_QuoteId());
+		initEReference(getQuoteRole_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, QuoteRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteRole_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getQuoteRole_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 1, 1, QuoteRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteRole_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEAttribute(getQuoteRole_FromDate(), ecorePackage.getEDate(), "fromDate", null, 0, 1, QuoteRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteRole_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, QuoteRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(quoteTermEClass, QuoteTerm.class, "QuoteTerm", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getQuoteTerm_QuoteId(), this.getQuote(), null, "quoteId", null, 1, 1, QuoteTerm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteTerm_QuoteId().getEKeys().add(this.getQuote_QuoteId());
-		initEReference(getQuoteTerm_TermTypeId(), theAgreementPackage.getTermType(), null, "termTypeId", null, 1, 1, QuoteTerm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteTerm_TermTypeId().getEKeys().add(theAgreementPackage.getTermType_TermTypeId());
+		initEReference(getQuoteTerm_Quote(), this.getQuote(), null, "quote", null, 1, 1, QuoteTerm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteTerm_Quote().getEKeys().add(this.getQuote_QuoteId());
+		initEReference(getQuoteTerm_TermType(), theAgreementPackage.getTermType(), null, "termType", null, 1, 1, QuoteTerm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteTerm_TermType().getEKeys().add(theAgreementPackage.getTermType_TermTypeId());
 		initEAttribute(getQuoteTerm_QuoteItemSeqId(), ecorePackage.getEString(), "quoteItemSeqId", null, 1, 1, QuoteTerm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteTerm_Description(), ecorePackage.getEString(), "description", null, 0, 1, QuoteTerm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteTerm_TermDays(), ecorePackage.getELong(), "termDays", null, 0, 1, QuoteTerm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2267,21 +2267,21 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		initEAttribute(getQuoteType_QuoteTypeId(), ecorePackage.getEString(), "quoteTypeId", null, 1, 1, QuoteType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteType_Description(), ecorePackage.getEString(), "description", null, 0, 1, QuoteType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 0, 1, QuoteType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getQuoteType_ParentTypeId(), this.getQuoteType(), null, "parentTypeId", null, 0, 1, QuoteType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteType_ParentTypeId().getEKeys().add(this.getQuoteType_QuoteTypeId());
+		initEReference(getQuoteType_ParentType(), this.getQuoteType(), null, "parentType", null, 0, 1, QuoteType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteType_ParentType().getEKeys().add(this.getQuoteType_QuoteTypeId());
 		initEReference(getQuoteType_QuoteTypeAttrs(), this.getQuoteTypeAttr(), null, "quoteTypeAttrs", null, 0, -1, QuoteType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(quoteTypeAttrEClass, QuoteTypeAttr.class, "QuoteTypeAttr", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getQuoteTypeAttr_QuoteTypeId(), this.getQuoteType(), null, "quoteTypeId", null, 1, 1, QuoteTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteTypeAttr_QuoteTypeId().getEKeys().add(this.getQuoteType_QuoteTypeId());
+		initEReference(getQuoteTypeAttr_QuoteType(), this.getQuoteType(), null, "quoteType", null, 1, 1, QuoteTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteTypeAttr_QuoteType().getEKeys().add(this.getQuoteType_QuoteTypeId());
 		initEAttribute(getQuoteTypeAttr_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, QuoteTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteTypeAttr_Description(), ecorePackage.getEString(), "description", null, 0, 1, QuoteTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(quoteWorkEffortEClass, QuoteWorkEffort.class, "QuoteWorkEffort", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getQuoteWorkEffort_QuoteId(), this.getQuote(), null, "quoteId", null, 1, 1, QuoteWorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteWorkEffort_QuoteId().getEKeys().add(this.getQuote_QuoteId());
-		initEReference(getQuoteWorkEffort_WorkEffortId(), theWorkeffortPackage.getWorkEffort(), null, "workEffortId", null, 1, 1, QuoteWorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuoteWorkEffort_WorkEffortId().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
+		initEReference(getQuoteWorkEffort_Quote(), this.getQuote(), null, "quote", null, 1, 1, QuoteWorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteWorkEffort_Quote().getEKeys().add(this.getQuote_QuoteId());
+		initEReference(getQuoteWorkEffort_WorkEffort(), theWorkeffortPackage.getWorkEffort(), null, "workEffort", null, 1, 1, QuoteWorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuoteWorkEffort_WorkEffort().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
 
 		// Create resource
 		createResource(eNS_URI);
@@ -2678,7 +2678,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
 		addAnnotation
-		  (getQuoteAttribute_QuoteId(),
+		  (getQuoteAttribute_Quote(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2690,7 +2690,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getQuoteCoefficient_QuoteId(),
+		  (getQuoteCoefficient_Quote(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2702,7 +2702,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getQuoteItem_QuoteId(),
+		  (getQuoteItem_Quote(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2714,37 +2714,37 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getQuoteNote_QuoteId(),
+		  (getQuoteNote_Quote(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getQuoteRole_QuoteId(),
+		  (getQuoteRole_Quote(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getQuoteRole_PartyId(),
+		  (getQuoteRole_Party(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getQuoteRole_RoleTypeId(),
+		  (getQuoteRole_RoleType(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getQuoteTerm_QuoteId(),
+		  (getQuoteTerm_Quote(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getQuoteTerm_TermTypeId(),
+		  (getQuoteTerm_TermType(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2780,7 +2780,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getQuoteTypeAttr_QuoteTypeId(),
+		  (getQuoteTypeAttr_QuoteType(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2792,13 +2792,13 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getQuoteWorkEffort_QuoteId(),
+		  (getQuoteWorkEffort_Quote(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getQuoteWorkEffort_WorkEffortId(),
+		  (getQuoteWorkEffort_WorkEffort(),
 		   source,
 		   new String[] {
 			   "key", "true"

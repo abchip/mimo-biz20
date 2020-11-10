@@ -3,81 +3,81 @@
   <contents xsi:type="biz-status:StatusType" statusTypeId="EMPLOYMENT_APP_STTS" description="Employment Application"/>
   <contents xsi:type="biz-status:StatusType" statusTypeId="EMPL_POSITION_STATUS" description="Employee Position Status"/>
   <contents xsi:type="biz-status:StatusItem" statusId="EMPL_POS_PLANNEDFOR" description="Planned For" sequenceId="01" statusCode="PLANNED_FOR">
-    <statusTypeId href="StatusType#EMPL_POSITION_STATUS"/>
+    <statusType href="StatusType#EMPL_POSITION_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="EMPL_POS_ACTIVE" description="Active/Open" sequenceId="02" statusCode="ACTIVE">
-    <statusTypeId href="StatusType#EMPL_POSITION_STATUS"/>
+    <statusType href="StatusType#EMPL_POSITION_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="EMPL_POS_INACTIVE" description="Inactive/Closed" sequenceId="03" statusCode="INACTIVE">
-    <statusTypeId href="StatusType#EMPL_POSITION_STATUS"/>
+    <statusType href="StatusType#EMPL_POSITION_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusType" statusTypeId="UNEMPL_CLAIM_STATUS" description="Unemployment Claim"/>
   <contents xsi:type="biz-status:StatusType" statusTypeId="HR_DEGREE_STATUS" description="Degree status"/>
   <contents xsi:type="biz-status:StatusItem" statusId="HR_DS_COMPLETE" description="Completed" sequenceId="01" statusCode="COMPLETE">
-    <statusTypeId href="StatusType#HR_DEGREE_STATUS"/>
+    <statusType href="StatusType#HR_DEGREE_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="HR_DS_INCOMPLETE" description="Incomplete" sequenceId="02" statusCode="INCOMPLETE">
-    <statusTypeId href="StatusType#HR_DEGREE_STATUS"/>
+    <statusType href="StatusType#HR_DEGREE_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="HR_DS_DEFERRED" description="Deferred" sequenceId="03" statusCode="DEFERRED">
-    <statusTypeId href="StatusType#HR_DEGREE_STATUS"/>
+    <statusType href="StatusType#HR_DEGREE_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusType" statusTypeId="HR_JOB_STATUS" description="Job status"/>
   <contents xsi:type="biz-status:StatusItem" statusId="HR_JS_FULLTIME" description="Full time" sequenceId="01" statusCode="FULLTIME">
-    <statusTypeId href="StatusType#HR_JOB_STATUS"/>
+    <statusType href="StatusType#HR_JOB_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="HR_JS_PARTTIME" description="Part time" sequenceId="02" statusCode="PARTTIME">
-    <statusTypeId href="StatusType#HR_JOB_STATUS"/>
+    <statusType href="StatusType#HR_JOB_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="HR_JS_CONTRACTOR" description="Contractor" sequenceId="03" statusCode="CONTRACTOR">
-    <statusTypeId href="StatusType#HR_JOB_STATUS"/>
+    <statusType href="StatusType#HR_JOB_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusType" statusTypeId="PARTYQUAL_VERIFY" description="PartyQual verification status"/>
   <contents xsi:type="biz-status:StatusItem" statusId="PQV_NOT_VERIFIED" description="Not verified" sequenceId="01" statusCode="NOT_VERIFIED">
-    <statusTypeId href="StatusType#PARTYQUAL_VERIFY"/>
+    <statusType href="StatusType#PARTYQUAL_VERIFY"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="PQV_VERIFIED" description="Verified" sequenceId="02" statusCode="VERIFIED">
-    <statusTypeId href="StatusType#PARTYQUAL_VERIFY"/>
+    <statusType href="StatusType#PARTYQUAL_VERIFY"/>
   </contents>
   <contents xsi:type="biz-status:StatusType" statusTypeId="IJP_STATUS" description="Internal Job Posting Status"/>
   <contents xsi:type="biz-status:StatusItem" statusId="IJP_APPROVED" description="Approved">
-    <statusTypeId href="StatusType#IJP_STATUS"/>
+    <statusType href="StatusType#IJP_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="IJP_REJECTED" description="Rejected">
-    <statusTypeId href="StatusType#IJP_STATUS"/>
+    <statusType href="StatusType#IJP_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusType" statusTypeId="RELOCATION_STATUS" description="Relocation Status"/>
   <contents xsi:type="biz-status:StatusItem" statusId="STATUS_PENDING" description="Pending">
-    <statusTypeId href="StatusType#RELOCATION_STATUS"/>
+    <statusType href="StatusType#RELOCATION_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="STATUS_RELOCATED" description="Relocated">
-    <statusTypeId href="StatusType#RELOCATION_STATUS"/>
+    <statusType href="StatusType#RELOCATION_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusType" statusTypeId="TRAINING_STATUS" description="Training Status"/>
   <contents xsi:type="biz-status:StatusItem" statusId="TRAINING_APPLIED" description="Applied">
-    <statusTypeId href="StatusType#TRAINING_STATUS"/>
+    <statusType href="StatusType#TRAINING_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="TRAINING_APPROVED" description="Approved">
-    <statusTypeId href="StatusType#TRAINING_STATUS"/>
+    <statusType href="StatusType#TRAINING_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="TRAINING_ASSIGNED" description="Assigned">
-    <statusTypeId href="StatusType#TRAINING_STATUS"/>
+    <statusType href="StatusType#TRAINING_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="TRAINING_PROPOSED" description="Proposed">
-    <statusTypeId href="StatusType#TRAINING_STATUS"/>
+    <statusType href="StatusType#TRAINING_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="TRAINING_REJECTED" description="Rejected">
-    <statusTypeId href="StatusType#TRAINING_STATUS"/>
+    <statusType href="StatusType#TRAINING_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusType" statusTypeId="LEAVE_STATUS" description="Employee Leave Status"/>
   <contents xsi:type="biz-status:StatusItem" statusId="LEAVE_APPROVED" description="Approved">
-    <statusTypeId href="StatusType#LEAVE_STATUS"/>
+    <statusType href="StatusType#LEAVE_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="LEAVE_CREATED" description="Created">
-    <statusTypeId href="StatusType#LEAVE_STATUS"/>
+    <statusType href="StatusType#LEAVE_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="LEAVE_REJECTED" description="Rejected">
-    <statusTypeId href="StatusType#LEAVE_STATUS"/>
+    <statusType href="StatusType#LEAVE_STATUS"/>
   </contents>
   <contents xsi:type="biz-position:EmplPositionType" emplPositionTypeId="PROGRAMMER" description="Programmer"/>
   <contents xsi:type="biz-position:EmplPositionType" emplPositionTypeId="SYS_ADMIN" description="System Administrator"/>
@@ -109,29 +109,29 @@
   <contents xsi:type="biz-ability:PartyQualType" partyQualTypeId="DEGREE" description="Degree"/>
   <contents xsi:type="biz-ability:PartyQualType" partyQualTypeId="CERTIFICATION" description="Certification"/>
   <contents xsi:type="biz-ability:PartyQualType" partyQualTypeId="B.Tech" description="Bachelor of Technology">
-    <parentTypeId href="PartyQualType#DEGREE"/>
+    <parentType href="PartyQualType#DEGREE"/>
   </contents>
   <contents xsi:type="biz-ability:PartyQualType" partyQualTypeId="MBA" description="Masters of business administration">
-    <parentTypeId href="PartyQualType#DEGREE"/>
+    <parentType href="PartyQualType#DEGREE"/>
   </contents>
   <contents xsi:type="biz-ability:PartyQualType" partyQualTypeId="MSC" description="Masters of Science">
-    <parentTypeId href="PartyQualType#DEGREE"/>
+    <parentType href="PartyQualType#DEGREE"/>
   </contents>
   <contents xsi:type="biz-ability:PartyQualType" partyQualTypeId="BSC" description="Bachelor of Science">
-    <parentTypeId href="PartyQualType#DEGREE"/>
+    <parentType href="PartyQualType#DEGREE"/>
   </contents>
   <contents xsi:type="biz-enum:EnumerationType" enumTypeId="INTR_RATNG" description="Interview Rating"/>
   <contents xsi:type="biz-enum:Enumeration" enumId="INTR_RATNG_A" description="A (above 75%)" enumCode="RATING_A" sequenceId="01">
-    <enumTypeId href="EnumerationType#INTR_RATNG"/>
+    <enumType href="EnumerationType#INTR_RATNG"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="INTR_RATNG_B" description="B (60-75%)" enumCode="RATING_B" sequenceId="02">
-    <enumTypeId href="EnumerationType#INTR_RATNG"/>
+    <enumType href="EnumerationType#INTR_RATNG"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="INTR_RATNG_C" description="C (45-60%)" enumCode="RATING_C" sequenceId="03">
-    <enumTypeId href="EnumerationType#INTR_RATNG"/>
+    <enumType href="EnumerationType#INTR_RATNG"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="INTR_RATNG_D" description="D (below 40%)" enumCode="RATING_D" sequenceId="04">
-    <enumTypeId href="EnumerationType#INTR_RATNG"/>
+    <enumType href="EnumerationType#INTR_RATNG"/>
   </contents>
   <contents xsi:type="biz-employment:EmploymentAppSourceType" employmentAppSourceTypeId="NEWS_PAPER" description="NewsPaper"/>
   <contents xsi:type="biz-employment:EmploymentAppSourceType" employmentAppSourceTypeId="PER_REF" description="PersonalReferal"/>
@@ -150,10 +150,10 @@
   <contents xsi:type="biz-employment:EmplLeaveType" leaveTypeId="SPECIAL_DAY_OFF" description="Inland Special Day Off"/>
   <contents xsi:type="biz-enum:EnumerationType" enumTypeId="JOB_POSTING" description="Job Posting Types"/>
   <contents xsi:type="biz-enum:Enumeration" enumId="JOB_POSTING_INTR" description="Internal Job Posting" enumCode="POSTING_INTR" sequenceId="01">
-    <enumTypeId href="EnumerationType#JOB_POSTING"/>
+    <enumType href="EnumerationType#JOB_POSTING"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="JOB_POSTING_EXTR" description="External Job Posting" enumCode="POSTING_INTR" sequenceId="02">
-    <enumTypeId href="EnumerationType#JOB_POSTING"/>
+    <enumType href="EnumerationType#JOB_POSTING"/>
   </contents>
   <contents xsi:type="biz-position:EmplPositionType" emplPositionTypeId="PROGRAMMER" description="Programmer"/>
   <contents xsi:type="biz-position:EmplPositionType" emplPositionTypeId="SYS_ADMIN" description="System Administrator"/>
@@ -165,13 +165,13 @@
   <contents xsi:type="biz-recruitment:JobInterviewType" jobInterviewTypeId="CASE_INTERVW" description="It is an interview in which the applicant is given a question/situation and asked to resolve it"/>
   <contents xsi:type="biz-enum:EnumerationType" enumTypeId="EXAM_TYPE" description="Exam Type"/>
   <contents xsi:type="biz-enum:Enumeration" enumId="EXAM_WRITTEN_APT" description="Written Aptitude Exam" enumCode="WRITTEN_APT" sequenceId="01">
-    <enumTypeId href="EnumerationType#EXAM_TYPE"/>
+    <enumType href="EnumerationType#EXAM_TYPE"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="EXAM_TECHNICAL" description="Technical Exam" enumCode="TECHNICAL" sequenceId="02">
-    <enumTypeId href="EnumerationType#EXAM_TYPE"/>
+    <enumType href="EnumerationType#EXAM_TYPE"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="EXAM_GROUP_DISCN" description="Group Discussion" enumCode="GROUP_DISCN" sequenceId="03">
-    <enumTypeId href="EnumerationType#EXAM_TYPE"/>
+    <enumType href="EnumerationType#EXAM_TYPE"/>
   </contents>
   <contents xsi:type="biz-employment:EmplLeaveReasonType" emplLeaveReasonTypeId="MEDICAL" description="Medical"/>
   <contents xsi:type="biz-employment:EmplLeaveReasonType" emplLeaveReasonTypeId="CASUAL" description="Casual"/>

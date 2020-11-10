@@ -135,40 +135,40 @@ public interface CostPackage extends EPackage {
 	int COST_COMPONENT__COST_COMPONENT_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Cost Component Calc Id</b></em>' reference.
+	 * The feature id for the '<em><b>Cost Component Calc</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__COST_COMPONENT_CALC_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int COST_COMPONENT__COST_COMPONENT_CALC = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Cost Component Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Cost Component Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__COST_COMPONENT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int COST_COMPONENT__COST_COMPONENT_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Cost Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Cost Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__COST_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int COST_COMPONENT__COST_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__FIXED_ASSET_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int COST_COMPONENT__FIXED_ASSET = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -180,40 +180,40 @@ public interface CostPackage extends EPackage {
 	int COST_COMPONENT__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
-	 * The feature id for the '<em><b>Geo Id</b></em>' reference.
+	 * The feature id for the '<em><b>Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__GEO_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
+	int COST_COMPONENT__GEO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
+	int COST_COMPONENT__PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
-	 * The feature id for the '<em><b>Product Feature Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__PRODUCT_FEATURE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
+	int COST_COMPONENT__PRODUCT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Feature</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
+	int COST_COMPONENT__PRODUCT_FEATURE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -225,13 +225,13 @@ public interface CostPackage extends EPackage {
 	int COST_COMPONENT__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__WORK_EFFORT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
+	int COST_COMPONENT__WORK_EFFORT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The number of structural features of the '<em>Component</em>' class.
@@ -289,13 +289,13 @@ public interface CostPackage extends EPackage {
 	int COST_COMPONENT_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Cost Component Id</b></em>' reference.
+	 * The feature id for the '<em><b>Cost Component</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_ATTRIBUTE__COST_COMPONENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int COST_COMPONENT_ATTRIBUTE__COST_COMPONENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -389,31 +389,31 @@ public interface CostPackage extends EPackage {
 	int COST_COMPONENT_CALC__COST_COMPONENT_CALC_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Cost Custom Method Id</b></em>' reference.
+	 * The feature id for the '<em><b>Cost Custom Method</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_CALC__COST_CUSTOM_METHOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int COST_COMPONENT_CALC__COST_CUSTOM_METHOD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Cost Gl Account Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Cost Gl Account Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_CALC__COST_GL_ACCOUNT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int COST_COMPONENT_CALC__COST_GL_ACCOUNT_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Currency Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_CALC__CURRENCY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int COST_COMPONENT_CALC__CURRENCY_UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -434,13 +434,13 @@ public interface CostPackage extends EPackage {
 	int COST_COMPONENT_CALC__FIXED_COST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Offsetting Gl Account Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Offsetting Gl Account Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_CALC__OFFSETTING_GL_ACCOUNT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int COST_COMPONENT_CALC__OFFSETTING_GL_ACCOUNT_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Per Milli Second</b></em>' attribute.
@@ -561,13 +561,13 @@ public interface CostPackage extends EPackage {
 	int COST_COMPONENT_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
+	int COST_COMPONENT_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Component Type</em>' class.
@@ -625,13 +625,13 @@ public interface CostPackage extends EPackage {
 	int COST_COMPONENT_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Cost Component Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Cost Component Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE_ATTR__COST_COMPONENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int COST_COMPONENT_TYPE_ATTR__COST_COMPONENT_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -707,22 +707,22 @@ public interface CostPackage extends EPackage {
 	int PRODUCT_COST_COMPONENT_CALC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_COST_COMPONENT_CALC__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PRODUCT_COST_COMPONENT_CALC__PRODUCT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Cost Component Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Cost Component Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -734,13 +734,13 @@ public interface CostPackage extends EPackage {
 	int PRODUCT_COST_COMPONENT_CALC__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Cost Component Calc Id</b></em>' reference.
+	 * The feature id for the '<em><b>Cost Component Calc</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_CALC_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_CALC = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -814,48 +814,48 @@ public interface CostPackage extends EPackage {
 	EReference getCostComponent_CostComponentAttributes();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getCostComponentCalcId <em>Cost Component Calc Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getCostComponentCalc <em>Cost Component Calc</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Cost Component Calc Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.cost.CostComponent#getCostComponentCalcId()
+	 * @return the meta object for the reference '<em>Cost Component Calc</em>'.
+	 * @see org.abchip.mimo.biz.model.product.cost.CostComponent#getCostComponentCalc()
 	 * @see #getCostComponent()
 	 * @generated
 	 */
-	EReference getCostComponent_CostComponentCalcId();
+	EReference getCostComponent_CostComponentCalc();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getCostComponentTypeId <em>Cost Component Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getCostComponentType <em>Cost Component Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Cost Component Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.cost.CostComponent#getCostComponentTypeId()
+	 * @return the meta object for the reference '<em>Cost Component Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.cost.CostComponent#getCostComponentType()
 	 * @see #getCostComponent()
 	 * @generated
 	 */
-	EReference getCostComponent_CostComponentTypeId();
+	EReference getCostComponent_CostComponentType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getCostUomId <em>Cost Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getCostUom <em>Cost Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Cost Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.cost.CostComponent#getCostUomId()
+	 * @return the meta object for the reference '<em>Cost Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.product.cost.CostComponent#getCostUom()
 	 * @see #getCostComponent()
 	 * @generated
 	 */
-	EReference getCostComponent_CostUomId();
+	EReference getCostComponent_CostUom();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getFixedAssetId <em>Fixed Asset Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getFixedAsset <em>Fixed Asset</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.cost.CostComponent#getFixedAssetId()
+	 * @return the meta object for the reference '<em>Fixed Asset</em>'.
+	 * @see org.abchip.mimo.biz.model.product.cost.CostComponent#getFixedAsset()
 	 * @see #getCostComponent()
 	 * @generated
 	 */
-	EReference getCostComponent_FixedAssetId();
+	EReference getCostComponent_FixedAsset();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getFromDate <em>From Date</em>}'.
@@ -869,48 +869,48 @@ public interface CostPackage extends EPackage {
 	EAttribute getCostComponent_FromDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getGeoId <em>Geo Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getGeo <em>Geo</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Geo Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.cost.CostComponent#getGeoId()
+	 * @return the meta object for the reference '<em>Geo</em>'.
+	 * @see org.abchip.mimo.biz.model.product.cost.CostComponent#getGeo()
 	 * @see #getCostComponent()
 	 * @generated
 	 */
-	EReference getCostComponent_GeoId();
+	EReference getCostComponent_Geo();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.cost.CostComponent#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.product.cost.CostComponent#getParty()
 	 * @see #getCostComponent()
 	 * @generated
 	 */
-	EReference getCostComponent_PartyId();
+	EReference getCostComponent_Party();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getProductFeatureId <em>Product Feature Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Feature Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.cost.CostComponent#getProductFeatureId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.product.cost.CostComponent#getProduct()
 	 * @see #getCostComponent()
 	 * @generated
 	 */
-	EReference getCostComponent_ProductFeatureId();
+	EReference getCostComponent_Product();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getProductFeature <em>Product Feature</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.cost.CostComponent#getProductId()
+	 * @return the meta object for the reference '<em>Product Feature</em>'.
+	 * @see org.abchip.mimo.biz.model.product.cost.CostComponent#getProductFeature()
 	 * @see #getCostComponent()
 	 * @generated
 	 */
-	EReference getCostComponent_ProductId();
+	EReference getCostComponent_ProductFeature();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getThruDate <em>Thru Date</em>}'.
@@ -924,15 +924,15 @@ public interface CostPackage extends EPackage {
 	EAttribute getCostComponent_ThruDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponent#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.cost.CostComponent#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.product.cost.CostComponent#getWorkEffort()
 	 * @see #getCostComponent()
 	 * @generated
 	 */
-	EReference getCostComponent_WorkEffortId();
+	EReference getCostComponent_WorkEffort();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.cost.CostComponentAttribute <em>Component Attribute</em>}'.
@@ -945,15 +945,15 @@ public interface CostPackage extends EPackage {
 	EClass getCostComponentAttribute();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponentAttribute#getCostComponentId <em>Cost Component Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponentAttribute#getCostComponent <em>Cost Component</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Cost Component Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.cost.CostComponentAttribute#getCostComponentId()
+	 * @return the meta object for the reference '<em>Cost Component</em>'.
+	 * @see org.abchip.mimo.biz.model.product.cost.CostComponentAttribute#getCostComponent()
 	 * @see #getCostComponentAttribute()
 	 * @generated
 	 */
-	EReference getCostComponentAttribute_CostComponentId();
+	EReference getCostComponentAttribute_CostComponent();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.cost.CostComponentAttribute#getAttrName <em>Attr Name</em>}'.
@@ -1010,37 +1010,37 @@ public interface CostPackage extends EPackage {
 	EAttribute getCostComponentCalc_CostComponentCalcId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCostCustomMethodId <em>Cost Custom Method Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCostCustomMethod <em>Cost Custom Method</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Cost Custom Method Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCostCustomMethodId()
+	 * @return the meta object for the reference '<em>Cost Custom Method</em>'.
+	 * @see org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCostCustomMethod()
 	 * @see #getCostComponentCalc()
 	 * @generated
 	 */
-	EReference getCostComponentCalc_CostCustomMethodId();
+	EReference getCostComponentCalc_CostCustomMethod();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCostGlAccountTypeId <em>Cost Gl Account Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCostGlAccountType <em>Cost Gl Account Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Cost Gl Account Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCostGlAccountTypeId()
+	 * @return the meta object for the reference '<em>Cost Gl Account Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCostGlAccountType()
 	 * @see #getCostComponentCalc()
 	 * @generated
 	 */
-	EReference getCostComponentCalc_CostGlAccountTypeId();
+	EReference getCostComponentCalc_CostGlAccountType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCurrencyUomId <em>Currency Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCurrencyUom <em>Currency Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Currency Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCurrencyUomId()
+	 * @return the meta object for the reference '<em>Currency Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getCurrencyUom()
 	 * @see #getCostComponentCalc()
 	 * @generated
 	 */
-	EReference getCostComponentCalc_CurrencyUomId();
+	EReference getCostComponentCalc_CurrencyUom();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getDescription <em>Description</em>}'.
@@ -1065,15 +1065,15 @@ public interface CostPackage extends EPackage {
 	EAttribute getCostComponentCalc_FixedCost();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getOffsettingGlAccountTypeId <em>Offsetting Gl Account Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getOffsettingGlAccountType <em>Offsetting Gl Account Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Offsetting Gl Account Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getOffsettingGlAccountTypeId()
+	 * @return the meta object for the reference '<em>Offsetting Gl Account Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getOffsettingGlAccountType()
 	 * @see #getCostComponentCalc()
 	 * @generated
 	 */
-	EReference getCostComponentCalc_OffsettingGlAccountTypeId();
+	EReference getCostComponentCalc_OffsettingGlAccountType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.cost.CostComponentCalc#getPerMilliSecond <em>Per Milli Second</em>}'.
@@ -1152,15 +1152,15 @@ public interface CostPackage extends EPackage {
 	EAttribute getCostComponentType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponentType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponentType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.cost.CostComponentType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.cost.CostComponentType#getParentType()
 	 * @see #getCostComponentType()
 	 * @generated
 	 */
-	EReference getCostComponentType_ParentTypeId();
+	EReference getCostComponentType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.cost.CostComponentTypeAttr <em>Component Type Attr</em>}'.
@@ -1173,15 +1173,15 @@ public interface CostPackage extends EPackage {
 	EClass getCostComponentTypeAttr();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponentTypeAttr#getCostComponentTypeId <em>Cost Component Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.CostComponentTypeAttr#getCostComponentType <em>Cost Component Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Cost Component Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.cost.CostComponentTypeAttr#getCostComponentTypeId()
+	 * @return the meta object for the reference '<em>Cost Component Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.cost.CostComponentTypeAttr#getCostComponentType()
 	 * @see #getCostComponentTypeAttr()
 	 * @generated
 	 */
-	EReference getCostComponentTypeAttr_CostComponentTypeId();
+	EReference getCostComponentTypeAttr_CostComponentType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.cost.CostComponentTypeAttr#getAttrName <em>Attr Name</em>}'.
@@ -1216,26 +1216,26 @@ public interface CostPackage extends EPackage {
 	EClass getProductCostComponentCalc();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getProductId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getProduct()
 	 * @see #getProductCostComponentCalc()
 	 * @generated
 	 */
-	EReference getProductCostComponentCalc_ProductId();
+	EReference getProductCostComponentCalc_Product();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getCostComponentTypeId <em>Cost Component Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getCostComponentType <em>Cost Component Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Cost Component Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getCostComponentTypeId()
+	 * @return the meta object for the reference '<em>Cost Component Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getCostComponentType()
 	 * @see #getProductCostComponentCalc()
 	 * @generated
 	 */
-	EReference getProductCostComponentCalc_CostComponentTypeId();
+	EReference getProductCostComponentCalc_CostComponentType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getFromDate <em>From Date</em>}'.
@@ -1249,15 +1249,15 @@ public interface CostPackage extends EPackage {
 	EAttribute getProductCostComponentCalc_FromDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getCostComponentCalcId <em>Cost Component Calc Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getCostComponentCalc <em>Cost Component Calc</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Cost Component Calc Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getCostComponentCalcId()
+	 * @return the meta object for the reference '<em>Cost Component Calc</em>'.
+	 * @see org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getCostComponentCalc()
 	 * @see #getProductCostComponentCalc()
 	 * @generated
 	 */
-	EReference getProductCostComponentCalc_CostComponentCalcId();
+	EReference getProductCostComponentCalc_CostComponentCalc();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getSequenceNum <em>Sequence Num</em>}'.
@@ -1338,36 +1338,36 @@ public interface CostPackage extends EPackage {
 		EReference COST_COMPONENT__COST_COMPONENT_ATTRIBUTES = eINSTANCE.getCostComponent_CostComponentAttributes();
 
 		/**
-		 * The meta object literal for the '<em><b>Cost Component Calc Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Cost Component Calc</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COST_COMPONENT__COST_COMPONENT_CALC_ID = eINSTANCE.getCostComponent_CostComponentCalcId();
+		EReference COST_COMPONENT__COST_COMPONENT_CALC = eINSTANCE.getCostComponent_CostComponentCalc();
 
 		/**
-		 * The meta object literal for the '<em><b>Cost Component Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Cost Component Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COST_COMPONENT__COST_COMPONENT_TYPE_ID = eINSTANCE.getCostComponent_CostComponentTypeId();
+		EReference COST_COMPONENT__COST_COMPONENT_TYPE = eINSTANCE.getCostComponent_CostComponentType();
 
 		/**
-		 * The meta object literal for the '<em><b>Cost Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Cost Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COST_COMPONENT__COST_UOM_ID = eINSTANCE.getCostComponent_CostUomId();
+		EReference COST_COMPONENT__COST_UOM = eINSTANCE.getCostComponent_CostUom();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COST_COMPONENT__FIXED_ASSET_ID = eINSTANCE.getCostComponent_FixedAssetId();
+		EReference COST_COMPONENT__FIXED_ASSET = eINSTANCE.getCostComponent_FixedAsset();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -1378,36 +1378,36 @@ public interface CostPackage extends EPackage {
 		EAttribute COST_COMPONENT__FROM_DATE = eINSTANCE.getCostComponent_FromDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Geo Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Geo</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COST_COMPONENT__GEO_ID = eINSTANCE.getCostComponent_GeoId();
+		EReference COST_COMPONENT__GEO = eINSTANCE.getCostComponent_Geo();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COST_COMPONENT__PARTY_ID = eINSTANCE.getCostComponent_PartyId();
+		EReference COST_COMPONENT__PARTY = eINSTANCE.getCostComponent_Party();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Feature Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COST_COMPONENT__PRODUCT_FEATURE_ID = eINSTANCE.getCostComponent_ProductFeatureId();
+		EReference COST_COMPONENT__PRODUCT = eINSTANCE.getCostComponent_Product();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Feature</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COST_COMPONENT__PRODUCT_ID = eINSTANCE.getCostComponent_ProductId();
+		EReference COST_COMPONENT__PRODUCT_FEATURE = eINSTANCE.getCostComponent_ProductFeature();
 
 		/**
 		 * The meta object literal for the '<em><b>Thru Date</b></em>' attribute feature.
@@ -1418,12 +1418,12 @@ public interface CostPackage extends EPackage {
 		EAttribute COST_COMPONENT__THRU_DATE = eINSTANCE.getCostComponent_ThruDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COST_COMPONENT__WORK_EFFORT_ID = eINSTANCE.getCostComponent_WorkEffortId();
+		EReference COST_COMPONENT__WORK_EFFORT = eINSTANCE.getCostComponent_WorkEffort();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentAttributeImpl <em>Component Attribute</em>}' class.
@@ -1436,12 +1436,12 @@ public interface CostPackage extends EPackage {
 		EClass COST_COMPONENT_ATTRIBUTE = eINSTANCE.getCostComponentAttribute();
 
 		/**
-		 * The meta object literal for the '<em><b>Cost Component Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Cost Component</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COST_COMPONENT_ATTRIBUTE__COST_COMPONENT_ID = eINSTANCE.getCostComponentAttribute_CostComponentId();
+		EReference COST_COMPONENT_ATTRIBUTE__COST_COMPONENT = eINSTANCE.getCostComponentAttribute_CostComponent();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -1486,28 +1486,28 @@ public interface CostPackage extends EPackage {
 		EAttribute COST_COMPONENT_CALC__COST_COMPONENT_CALC_ID = eINSTANCE.getCostComponentCalc_CostComponentCalcId();
 
 		/**
-		 * The meta object literal for the '<em><b>Cost Custom Method Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Cost Custom Method</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COST_COMPONENT_CALC__COST_CUSTOM_METHOD_ID = eINSTANCE.getCostComponentCalc_CostCustomMethodId();
+		EReference COST_COMPONENT_CALC__COST_CUSTOM_METHOD = eINSTANCE.getCostComponentCalc_CostCustomMethod();
 
 		/**
-		 * The meta object literal for the '<em><b>Cost Gl Account Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Cost Gl Account Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COST_COMPONENT_CALC__COST_GL_ACCOUNT_TYPE_ID = eINSTANCE.getCostComponentCalc_CostGlAccountTypeId();
+		EReference COST_COMPONENT_CALC__COST_GL_ACCOUNT_TYPE = eINSTANCE.getCostComponentCalc_CostGlAccountType();
 
 		/**
-		 * The meta object literal for the '<em><b>Currency Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Currency Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COST_COMPONENT_CALC__CURRENCY_UOM_ID = eINSTANCE.getCostComponentCalc_CurrencyUomId();
+		EReference COST_COMPONENT_CALC__CURRENCY_UOM = eINSTANCE.getCostComponentCalc_CurrencyUom();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
@@ -1526,12 +1526,12 @@ public interface CostPackage extends EPackage {
 		EAttribute COST_COMPONENT_CALC__FIXED_COST = eINSTANCE.getCostComponentCalc_FixedCost();
 
 		/**
-		 * The meta object literal for the '<em><b>Offsetting Gl Account Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Offsetting Gl Account Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COST_COMPONENT_CALC__OFFSETTING_GL_ACCOUNT_TYPE_ID = eINSTANCE.getCostComponentCalc_OffsettingGlAccountTypeId();
+		EReference COST_COMPONENT_CALC__OFFSETTING_GL_ACCOUNT_TYPE = eINSTANCE.getCostComponentCalc_OffsettingGlAccountType();
 
 		/**
 		 * The meta object literal for the '<em><b>Per Milli Second</b></em>' attribute feature.
@@ -1592,12 +1592,12 @@ public interface CostPackage extends EPackage {
 		EAttribute COST_COMPONENT_TYPE__HAS_TABLE = eINSTANCE.getCostComponentType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COST_COMPONENT_TYPE__PARENT_TYPE_ID = eINSTANCE.getCostComponentType_ParentTypeId();
+		EReference COST_COMPONENT_TYPE__PARENT_TYPE = eINSTANCE.getCostComponentType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeAttrImpl <em>Component Type Attr</em>}' class.
@@ -1610,12 +1610,12 @@ public interface CostPackage extends EPackage {
 		EClass COST_COMPONENT_TYPE_ATTR = eINSTANCE.getCostComponentTypeAttr();
 
 		/**
-		 * The meta object literal for the '<em><b>Cost Component Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Cost Component Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COST_COMPONENT_TYPE_ATTR__COST_COMPONENT_TYPE_ID = eINSTANCE.getCostComponentTypeAttr_CostComponentTypeId();
+		EReference COST_COMPONENT_TYPE_ATTR__COST_COMPONENT_TYPE = eINSTANCE.getCostComponentTypeAttr_CostComponentType();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -1644,20 +1644,20 @@ public interface CostPackage extends EPackage {
 		EClass PRODUCT_COST_COMPONENT_CALC = eINSTANCE.getProductCostComponentCalc();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_COST_COMPONENT_CALC__PRODUCT_ID = eINSTANCE.getProductCostComponentCalc_ProductId();
+		EReference PRODUCT_COST_COMPONENT_CALC__PRODUCT = eINSTANCE.getProductCostComponentCalc_Product();
 
 		/**
-		 * The meta object literal for the '<em><b>Cost Component Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Cost Component Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_TYPE_ID = eINSTANCE.getProductCostComponentCalc_CostComponentTypeId();
+		EReference PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_TYPE = eINSTANCE.getProductCostComponentCalc_CostComponentType();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -1668,12 +1668,12 @@ public interface CostPackage extends EPackage {
 		EAttribute PRODUCT_COST_COMPONENT_CALC__FROM_DATE = eINSTANCE.getProductCostComponentCalc_FromDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Cost Component Calc Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Cost Component Calc</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_CALC_ID = eINSTANCE.getProductCostComponentCalc_CostComponentCalcId();
+		EReference PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_CALC = eINSTANCE.getProductCostComponentCalc_CostComponentCalc();
 
 		/**
 		 * The meta object literal for the '<em><b>Sequence Num</b></em>' attribute feature.

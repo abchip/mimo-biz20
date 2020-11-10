@@ -23,7 +23,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.common.period.PeriodType#getPeriodTypeId <em>Period Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.period.PeriodType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.period.PeriodType#getPeriodLength <em>Period Length</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.period.PeriodType#getUomId <em>Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.period.PeriodType#getUom <em>Uom</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.common.period.PeriodPackage#getPeriodType()
@@ -84,30 +84,26 @@ public interface PeriodType extends EntityType<CustomTimePeriod>, EntityInfo {
 	void setPeriodLength(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Uom Id</em>' reference.
-	 * @see #setUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.common.period.PeriodPackage#getPeriodType_UomId()
+	 * @return the value of the '<em>Uom</em>' reference.
+	 * @see #setUom(Uom)
+	 * @see org.abchip.mimo.biz.model.common.period.PeriodPackage#getPeriodType_Uom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getUomId();
+	Uom getUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.period.PeriodType#getUomId <em>Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.period.PeriodType#getUom <em>Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Uom Id</em>' reference.
-	 * @see #getUomId()
+	 * @param value the new value of the '<em>Uom</em>' reference.
+	 * @see #getUom()
 	 * @generated
 	 */
-	void setUomId(Uom value);
+	void setUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Period Type Id</b></em>' attribute.

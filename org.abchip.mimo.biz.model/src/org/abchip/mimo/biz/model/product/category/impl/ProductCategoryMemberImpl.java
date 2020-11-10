@@ -31,8 +31,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryMemberImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryMemberImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryMemberImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryMemberImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryMemberImpl#getProductCategoryId <em>Product Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryMemberImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryMemberImpl#getProductCategory <em>Product Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryMemberImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryMemberImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryMemberImpl#getQuantity <em>Quantity</em>}</li>
@@ -159,6 +159,46 @@ public class ProductCategoryMemberImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_MEMBER__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_MEMBER__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductCategory getProductCategory() {
+		return (ProductCategory)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_MEMBER__PRODUCT_CATEGORY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductCategory(ProductCategory newProductCategory) {
+		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_MEMBER__PRODUCT_CATEGORY, newProductCategory);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getComments() {
 		return (String)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_MEMBER__COMMENTS, true);
 	}
@@ -191,26 +231,6 @@ public class ProductCategoryMemberImpl extends EntityIdentifiableImpl implements
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_MEMBER__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_MEMBER__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_MEMBER__PRODUCT_ID, newProductId);
 	}
 
 	/**
@@ -309,26 +329,6 @@ public class ProductCategoryMemberImpl extends EntityIdentifiableImpl implements
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductCategory getProductCategoryId() {
-		return (ProductCategory)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_MEMBER__PRODUCT_CATEGORY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductCategoryId(ProductCategory newProductCategoryId) {
-		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_MEMBER__PRODUCT_CATEGORY_ID, newProductCategoryId);
 	}
 
 } //ProductCategoryMemberImpl

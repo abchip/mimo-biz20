@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeAttrImpl#getInvoiceItemTypeId <em>Invoice Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeAttrImpl#getInvoiceItemType <em>Invoice Item Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -151,6 +151,26 @@ public class InvoiceItemTypeAttrImpl extends EntityIdentifiableImpl implements I
 	 * @generated
 	 */
 	@Override
+	public InvoiceItemType getInvoiceItemType() {
+		return (InvoiceItemType)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_ATTR__INVOICE_ITEM_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInvoiceItemType(InvoiceItemType newInvoiceItemType) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_ATTR__INVOICE_ITEM_TYPE, newInvoiceItemType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_ATTR__DESCRIPTION, true);
 	}
@@ -221,26 +241,6 @@ public class InvoiceItemTypeAttrImpl extends EntityIdentifiableImpl implements I
 	@Override
 	public void setAttrName(String newAttrName) {
 		eSet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_ATTR__ATTR_NAME, newAttrName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InvoiceItemType getInvoiceItemTypeId() {
-		return (InvoiceItemType)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_ATTR__INVOICE_ITEM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInvoiceItemTypeId(InvoiceItemType newInvoiceItemTypeId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_ATTR__INVOICE_ITEM_TYPE_ID, newInvoiceItemTypeId);
 	}
 
 } //InvoiceItemTypeAttrImpl

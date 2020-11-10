@@ -21,10 +21,10 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityIdTo <em>Facility Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityAssocTypeId <em>Facility Assoc Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityAssocType <em>Facility Assoc Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getThruDate <em>Thru Date</em>}</li>
@@ -37,50 +37,50 @@ import org.abchip.mimo.entity.EntityTyped;
  */
 public interface ProductFacilityAssoc extends EntityTyped<FacilityAssocType>, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacilityAssoc_ProductId()
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacilityAssoc_Product()
 	 * @model keys="productId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Product getProductId();
+	Product getProduct();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getProductId <em>Product Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getProduct <em>Product</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
 	 * @generated
 	 */
-	void setProductId(Product value);
+	void setProduct(Product value);
 
 	/**
-	 * Returns the value of the '<em><b>Facility Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facility Id</em>' reference.
-	 * @see #setFacilityId(Facility)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacilityAssoc_FacilityId()
+	 * @return the value of the '<em>Facility</em>' reference.
+	 * @see #setFacility(Facility)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacilityAssoc_Facility()
 	 * @model keys="facilityId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Facility getFacilityId();
+	Facility getFacility();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityId <em>Facility Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacility <em>Facility</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Facility Id</em>' reference.
-	 * @see #getFacilityId()
+	 * @param value the new value of the '<em>Facility</em>' reference.
+	 * @see #getFacility()
 	 * @generated
 	 */
-	void setFacilityId(Facility value);
+	void setFacility(Facility value);
 
 	/**
 	 * Returns the value of the '<em><b>Facility Id To</b></em>' reference.
@@ -106,27 +106,27 @@ public interface ProductFacilityAssoc extends EntityTyped<FacilityAssocType>, En
 	void setFacilityIdTo(Facility value);
 
 	/**
-	 * Returns the value of the '<em><b>Facility Assoc Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Facility Assoc Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facility Assoc Type Id</em>' reference.
-	 * @see #setFacilityAssocTypeId(FacilityAssocType)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacilityAssoc_FacilityAssocTypeId()
+	 * @return the value of the '<em>Facility Assoc Type</em>' reference.
+	 * @see #setFacilityAssocType(FacilityAssocType)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacilityAssoc_FacilityAssocType()
 	 * @model keys="facilityAssocTypeId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	FacilityAssocType getFacilityAssocTypeId();
+	FacilityAssocType getFacilityAssocType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityAssocTypeId <em>Facility Assoc Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityAssocType <em>Facility Assoc Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Facility Assoc Type Id</em>' reference.
-	 * @see #getFacilityAssocTypeId()
+	 * @param value the new value of the '<em>Facility Assoc Type</em>' reference.
+	 * @see #getFacilityAssocType()
 	 * @generated
 	 */
-	void setFacilityAssocTypeId(FacilityAssocType value);
+	void setFacilityAssocType(FacilityAssocType value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.

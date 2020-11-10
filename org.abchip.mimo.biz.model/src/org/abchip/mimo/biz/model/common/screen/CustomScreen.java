@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.common.screen.CustomScreen#getCustomScreenId <em>Custom Screen Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.screen.CustomScreen#getCustomScreenLocation <em>Custom Screen Location</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.screen.CustomScreen#getCustomScreenName <em>Custom Screen Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.screen.CustomScreen#getCustomScreenTypeId <em>Custom Screen Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.screen.CustomScreen#getCustomScreenType <em>Custom Screen Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.screen.CustomScreen#getDescription <em>Description</em>}</li>
  * </ul>
  *
@@ -111,30 +111,26 @@ public interface CustomScreen extends EntityTyped<CustomScreenType>, EntityInfo 
 	void setCustomScreenName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Custom Screen Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Custom Screen Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Custom Screen Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Custom Screen Type Id</em>' reference.
-	 * @see #setCustomScreenTypeId(CustomScreenType)
-	 * @see org.abchip.mimo.biz.model.common.screen.ScreenPackage#getCustomScreen_CustomScreenTypeId()
+	 * @return the value of the '<em>Custom Screen Type</em>' reference.
+	 * @see #setCustomScreenType(CustomScreenType)
+	 * @see org.abchip.mimo.biz.model.common.screen.ScreenPackage#getCustomScreen_CustomScreenType()
 	 * @model keys="customScreenTypeId"
 	 * @generated
 	 */
-	CustomScreenType getCustomScreenTypeId();
+	CustomScreenType getCustomScreenType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.screen.CustomScreen#getCustomScreenTypeId <em>Custom Screen Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.screen.CustomScreen#getCustomScreenType <em>Custom Screen Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Custom Screen Type Id</em>' reference.
-	 * @see #getCustomScreenTypeId()
+	 * @param value the new value of the '<em>Custom Screen Type</em>' reference.
+	 * @see #getCustomScreenType()
 	 * @generated
 	 */
-	void setCustomScreenTypeId(CustomScreenType value);
+	void setCustomScreenType(CustomScreenType value);
 
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.

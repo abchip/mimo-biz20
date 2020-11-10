@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemAssocImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemAssocImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemAssocImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemAssocImpl#getInvoiceItemAssocTypeId <em>Invoice Item Assoc Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemAssocImpl#getInvoiceItemAssocType <em>Invoice Item Assoc Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemAssocImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemAssocImpl#getInvoiceIdFrom <em>Invoice Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemAssocImpl#getInvoiceIdTo <em>Invoice Id To</em>}</li>
@@ -154,6 +154,26 @@ public class InvoiceItemAssocImpl extends EntityTypedImpl<InvoiceItemAssocType> 
 	@Override
 	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
 		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InvoiceItemAssocType getInvoiceItemAssocType() {
+		return (InvoiceItemAssocType)eGet(InvoicePackage.Literals.INVOICE_ITEM_ASSOC__INVOICE_ITEM_ASSOC_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInvoiceItemAssocType(InvoiceItemAssocType newInvoiceItemAssocType) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM_ASSOC__INVOICE_ITEM_ASSOC_TYPE, newInvoiceItemAssocType);
 	}
 
 	/**
@@ -392,26 +412,6 @@ public class InvoiceItemAssocImpl extends EntityTypedImpl<InvoiceItemAssocType> 
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InvoiceItemAssocType getInvoiceItemAssocTypeId() {
-		return (InvoiceItemAssocType)eGet(InvoicePackage.Literals.INVOICE_ITEM_ASSOC__INVOICE_ITEM_ASSOC_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInvoiceItemAssocTypeId(InvoiceItemAssocType newInvoiceItemAssocTypeId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM_ASSOC__INVOICE_ITEM_ASSOC_TYPE_ID, newInvoiceItemAssocTypeId);
 	}
 
 } //InvoiceItemAssocImpl

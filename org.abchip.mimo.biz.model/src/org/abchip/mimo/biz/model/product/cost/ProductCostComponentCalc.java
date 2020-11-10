@@ -21,10 +21,10 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getCostComponentTypeId <em>Cost Component Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getCostComponentType <em>Cost Component Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getCostComponentCalcId <em>Cost Component Calc Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getCostComponentCalc <em>Cost Component Calc</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -34,6 +34,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductCostComponentCalc extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getProductCostComponentCalc_Product()
+	 * @model keys="productId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
+
+	/**
+	 * Returns the value of the '<em><b>Cost Component Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Cost Component Type</em>' reference.
+	 * @see #setCostComponentType(CostComponentType)
+	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getProductCostComponentCalc_CostComponentType()
+	 * @model keys="costComponentTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	CostComponentType getCostComponentType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getCostComponentType <em>Cost Component Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Cost Component Type</em>' reference.
+	 * @see #getCostComponentType()
+	 * @generated
+	 */
+	void setCostComponentType(CostComponentType value);
+
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -62,31 +108,26 @@ public interface ProductCostComponentCalc extends EntityIdentifiable, EntityInfo
 	void setFromDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Cost Component Calc</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getProductCostComponentCalc_ProductId()
-	 * @model keys="productId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
+	 * @return the value of the '<em>Cost Component Calc</em>' reference.
+	 * @see #setCostComponentCalc(CostComponentCalc)
+	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getProductCostComponentCalc_CostComponentCalc()
+	 * @model keys="costComponentCalcId"
 	 * @generated
 	 */
-	Product getProductId();
+	CostComponentCalc getCostComponentCalc();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getProductId <em>Product Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getCostComponentCalc <em>Cost Component Calc</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
+	 * @param value the new value of the '<em>Cost Component Calc</em>' reference.
+	 * @see #getCostComponentCalc()
 	 * @generated
 	 */
-	void setProductId(Product value);
+	void setCostComponentCalc(CostComponentCalc value);
 
 	/**
 	 * Returns the value of the '<em><b>Sequence Num</b></em>' attribute.
@@ -139,58 +180,5 @@ public interface ProductCostComponentCalc extends EntityIdentifiable, EntityInfo
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Cost Component Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cost Component Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cost Component Type Id</em>' reference.
-	 * @see #setCostComponentTypeId(CostComponentType)
-	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getProductCostComponentCalc_CostComponentTypeId()
-	 * @model keys="costComponentTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	CostComponentType getCostComponentTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getCostComponentTypeId <em>Cost Component Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cost Component Type Id</em>' reference.
-	 * @see #getCostComponentTypeId()
-	 * @generated
-	 */
-	void setCostComponentTypeId(CostComponentType value);
-
-	/**
-	 * Returns the value of the '<em><b>Cost Component Calc Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cost Component Calc Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cost Component Calc Id</em>' reference.
-	 * @see #setCostComponentCalcId(CostComponentCalc)
-	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getProductCostComponentCalc_CostComponentCalcId()
-	 * @model keys="costComponentCalcId"
-	 * @generated
-	 */
-	CostComponentCalc getCostComponentCalcId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc#getCostComponentCalcId <em>Cost Component Calc Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cost Component Calc Id</em>' reference.
-	 * @see #getCostComponentCalcId()
-	 * @generated
-	 */
-	void setCostComponentCalcId(CostComponentCalc value);
 
 } // ProductCostComponentCalc

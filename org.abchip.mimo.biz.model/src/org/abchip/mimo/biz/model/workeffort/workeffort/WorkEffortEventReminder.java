@@ -22,12 +22,12 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getWorkEffortId <em>Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getWorkEffort <em>Work Effort</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getSequenceId <em>Sequence Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getCurrentCount <em>Current Count</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getLocaleId <em>Locale Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getReminderDateTime <em>Reminder Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getReminderOffset <em>Reminder Offset</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getRepeatCount <em>Repeat Count</em>}</li>
@@ -41,30 +41,27 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface WorkEffortEventReminder extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Contact Mech Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #setContactMechId(ContactMech)
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortEventReminder_ContactMechId()
-	 * @model keys="contactMechId"
+	 * @return the value of the '<em>Work Effort</em>' reference.
+	 * @see #setWorkEffort(WorkEffort)
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortEventReminder_WorkEffort()
+	 * @model keys="workEffortId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ContactMech getContactMechId();
+	WorkEffort getWorkEffort();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getContactMechId <em>Contact Mech Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getWorkEffort <em>Work Effort</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #getContactMechId()
+	 * @param value the new value of the '<em>Work Effort</em>' reference.
+	 * @see #getWorkEffort()
 	 * @generated
 	 */
-	void setContactMechId(ContactMech value);
+	void setWorkEffort(WorkEffort value);
 
 	/**
 	 * Returns the value of the '<em><b>Current Count</b></em>' attribute.
@@ -119,31 +116,27 @@ public interface WorkEffortEventReminder extends EntityIdentifiable, EntityInfo 
 	void setLocaleId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortEventReminder_PartyId()
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortEventReminder_Party()
 	 * @model keys="partyId"
 	 *        annotation="mimo-ent-slot help='The party this reminder is assigned to'"
 	 * @generated
 	 */
-	Party getPartyId();
+	Party getParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getParty <em>Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setParty(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Reminder Date Time</b></em>' attribute.
@@ -280,6 +273,28 @@ public interface WorkEffortEventReminder extends EntityIdentifiable, EntityInfo 
 	void setSequenceId(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Contact Mech</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Contact Mech</em>' reference.
+	 * @see #setContactMech(ContactMech)
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortEventReminder_ContactMech()
+	 * @model keys="contactMechId"
+	 * @generated
+	 */
+	ContactMech getContactMech();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getContactMech <em>Contact Mech</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Contact Mech</em>' reference.
+	 * @see #getContactMech()
+	 * @generated
+	 */
+	void setContactMech(ContactMech value);
+
+	/**
 	 * Returns the value of the '<em><b>Time Zone Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -304,32 +319,5 @@ public interface WorkEffortEventReminder extends EntityIdentifiable, EntityInfo 
 	 * @generated
 	 */
 	void setTimeZoneId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Work Effort Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Work Effort Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Work Effort Id</em>' reference.
-	 * @see #setWorkEffortId(WorkEffort)
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortEventReminder_WorkEffortId()
-	 * @model keys="workEffortId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	WorkEffort getWorkEffortId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder#getWorkEffortId <em>Work Effort Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Work Effort Id</em>' reference.
-	 * @see #getWorkEffortId()
-	 * @generated
-	 */
-	void setWorkEffortId(WorkEffort value);
 
 } // WorkEffortEventReminder

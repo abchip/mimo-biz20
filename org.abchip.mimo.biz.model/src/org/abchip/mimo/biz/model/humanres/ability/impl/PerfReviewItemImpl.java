@@ -30,13 +30,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewItemImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewItemImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewItemImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewItemImpl#getEmployeePartyId <em>Employee Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewItemImpl#getEmployeeParty <em>Employee Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewItemImpl#getEmployeeRoleTypeId <em>Employee Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewItemImpl#getPerfReviewId <em>Perf Review Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewItemImpl#getPerfReviewItemSeqId <em>Perf Review Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewItemImpl#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewItemImpl#getPerfRatingTypeId <em>Perf Rating Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewItemImpl#getPerfReviewItemTypeId <em>Perf Review Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewItemImpl#getPerfRatingType <em>Perf Rating Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewItemImpl#getPerfReviewItemType <em>Perf Review Item Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -158,6 +158,26 @@ public class PerfReviewItemImpl extends EntityTypedImpl<PerfReviewItemType> impl
 	 * @generated
 	 */
 	@Override
+	public Party getEmployeeParty() {
+		return (Party)eGet(AbilityPackage.Literals.PERF_REVIEW_ITEM__EMPLOYEE_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEmployeeParty(Party newEmployeeParty) {
+		eSet(AbilityPackage.Literals.PERF_REVIEW_ITEM__EMPLOYEE_PARTY, newEmployeeParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getComments() {
 		return (String)eGet(AbilityPackage.Literals.PERF_REVIEW_ITEM__COMMENTS, true);
 	}
@@ -178,8 +198,8 @@ public class PerfReviewItemImpl extends EntityTypedImpl<PerfReviewItemType> impl
 	 * @generated
 	 */
 	@Override
-	public Party getEmployeePartyId() {
-		return (Party)eGet(AbilityPackage.Literals.PERF_REVIEW_ITEM__EMPLOYEE_PARTY_ID, true);
+	public PerfRatingType getPerfRatingType() {
+		return (PerfRatingType)eGet(AbilityPackage.Literals.PERF_REVIEW_ITEM__PERF_RATING_TYPE, true);
 	}
 
 	/**
@@ -188,8 +208,28 @@ public class PerfReviewItemImpl extends EntityTypedImpl<PerfReviewItemType> impl
 	 * @generated
 	 */
 	@Override
-	public void setEmployeePartyId(Party newEmployeePartyId) {
-		eSet(AbilityPackage.Literals.PERF_REVIEW_ITEM__EMPLOYEE_PARTY_ID, newEmployeePartyId);
+	public void setPerfRatingType(PerfRatingType newPerfRatingType) {
+		eSet(AbilityPackage.Literals.PERF_REVIEW_ITEM__PERF_RATING_TYPE, newPerfRatingType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PerfReviewItemType getPerfReviewItemType() {
+		return (PerfReviewItemType)eGet(AbilityPackage.Literals.PERF_REVIEW_ITEM__PERF_REVIEW_ITEM_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPerfReviewItemType(PerfReviewItemType newPerfReviewItemType) {
+		eSet(AbilityPackage.Literals.PERF_REVIEW_ITEM__PERF_REVIEW_ITEM_TYPE, newPerfReviewItemType);
 	}
 
 	/**
@@ -210,26 +250,6 @@ public class PerfReviewItemImpl extends EntityTypedImpl<PerfReviewItemType> impl
 	@Override
 	public void setEmployeeRoleTypeId(String newEmployeeRoleTypeId) {
 		eSet(AbilityPackage.Literals.PERF_REVIEW_ITEM__EMPLOYEE_ROLE_TYPE_ID, newEmployeeRoleTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PerfRatingType getPerfRatingTypeId() {
-		return (PerfRatingType)eGet(AbilityPackage.Literals.PERF_REVIEW_ITEM__PERF_RATING_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPerfRatingTypeId(PerfRatingType newPerfRatingTypeId) {
-		eSet(AbilityPackage.Literals.PERF_REVIEW_ITEM__PERF_RATING_TYPE_ID, newPerfRatingTypeId);
 	}
 
 	/**
@@ -270,26 +290,6 @@ public class PerfReviewItemImpl extends EntityTypedImpl<PerfReviewItemType> impl
 	@Override
 	public void setPerfReviewItemSeqId(String newPerfReviewItemSeqId) {
 		eSet(AbilityPackage.Literals.PERF_REVIEW_ITEM__PERF_REVIEW_ITEM_SEQ_ID, newPerfReviewItemSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PerfReviewItemType getPerfReviewItemTypeId() {
-		return (PerfReviewItemType)eGet(AbilityPackage.Literals.PERF_REVIEW_ITEM__PERF_REVIEW_ITEM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPerfReviewItemTypeId(PerfReviewItemType newPerfReviewItemTypeId) {
-		eSet(AbilityPackage.Literals.PERF_REVIEW_ITEM__PERF_REVIEW_ITEM_TYPE_ID, newPerfReviewItemTypeId);
 	}
 
 	/**

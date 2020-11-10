@@ -31,11 +31,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemImpl#getShoppingListId <em>Shopping List Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemImpl#getShoppingList <em>Shopping List</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemImpl#getShoppingListItemSeqId <em>Shopping List Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemImpl#getConfigId <em>Config Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemImpl#getModifiedPrice <em>Modified Price</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemImpl#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemImpl#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemImpl#getQuantityPurchased <em>Quantity Purchased</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemImpl#getReservLength <em>Reserv Length</em>}</li>
@@ -162,6 +162,26 @@ public class ShoppingListItemImpl extends EntityIdentifiableImpl implements Shop
 	 * @generated
 	 */
 	@Override
+	public ShoppingList getShoppingList() {
+		return (ShoppingList)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST_ITEM__SHOPPING_LIST, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setShoppingList(ShoppingList newShoppingList) {
+		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST_ITEM__SHOPPING_LIST, newShoppingList);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getConfigId() {
 		return (String)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST_ITEM__CONFIG_ID, true);
 	}
@@ -202,8 +222,8 @@ public class ShoppingListItemImpl extends EntityIdentifiableImpl implements Shop
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST_ITEM__PRODUCT_ID, true);
+	public Product getProduct() {
+		return (Product)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST_ITEM__PRODUCT, true);
 	}
 
 	/**
@@ -212,8 +232,8 @@ public class ShoppingListItemImpl extends EntityIdentifiableImpl implements Shop
 	 * @generated
 	 */
 	@Override
-	public void setProductId(Product newProductId) {
-		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST_ITEM__PRODUCT_ID, newProductId);
+	public void setProduct(Product newProduct) {
+		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST_ITEM__PRODUCT, newProduct);
 	}
 
 	/**
@@ -352,26 +372,6 @@ public class ShoppingListItemImpl extends EntityIdentifiableImpl implements Shop
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ShoppingList getShoppingListId() {
-		return (ShoppingList)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST_ITEM__SHOPPING_LIST_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setShoppingListId(ShoppingList newShoppingListId) {
-		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST_ITEM__SHOPPING_LIST_ID, newShoppingListId);
 	}
 
 	/**

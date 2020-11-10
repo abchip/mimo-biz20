@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTypeImpl#getWorkEffortTypeId <em>Work Effort Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTypeImpl#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTypeImpl#getWorkEffortTypeAttrs <em>Work Effort Type Attrs</em>}</li>
  * </ul>
  *
@@ -203,8 +203,8 @@ public class WorkEffortTypeImpl extends EntityTypeImpl<WorkEffort> implements Wo
 	 * @generated
 	 */
 	@Override
-	public WorkEffortType getParentTypeId() {
-		return (WorkEffortType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_TYPE__PARENT_TYPE_ID, true);
+	public WorkEffortType getParentType() {
+		return (WorkEffortType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -213,8 +213,8 @@ public class WorkEffortTypeImpl extends EntityTypeImpl<WorkEffort> implements Wo
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(WorkEffortType newParentTypeId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(WorkEffortType newParentType) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

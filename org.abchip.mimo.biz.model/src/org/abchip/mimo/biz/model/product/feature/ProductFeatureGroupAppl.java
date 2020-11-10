@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getProductFeatureGroupId <em>Product Feature Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getProductFeatureId <em>Product Feature Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getProductFeatureGroup <em>Product Feature Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getProductFeature <em>Product Feature</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getThruDate <em>Thru Date</em>}</li>
@@ -32,6 +32,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductFeatureGroupAppl extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product Feature Group</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Feature Group</em>' reference.
+	 * @see #setProductFeatureGroup(ProductFeatureGroup)
+	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureGroupAppl_ProductFeatureGroup()
+	 * @model keys="productFeatureGroupId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductFeatureGroup getProductFeatureGroup();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getProductFeatureGroup <em>Product Feature Group</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Feature Group</em>' reference.
+	 * @see #getProductFeatureGroup()
+	 * @generated
+	 */
+	void setProductFeatureGroup(ProductFeatureGroup value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Feature</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Feature</em>' reference.
+	 * @see #setProductFeature(ProductFeature)
+	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureGroupAppl_ProductFeature()
+	 * @model keys="productFeatureId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductFeature getProductFeature();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getProductFeature <em>Product Feature</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Feature</em>' reference.
+	 * @see #getProductFeature()
+	 * @generated
+	 */
+	void setProductFeature(ProductFeature value);
+
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -110,59 +156,5 @@ public interface ProductFeatureGroupAppl extends EntityIdentifiable, EntityInfo 
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Feature Group Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Feature Group Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Feature Group Id</em>' reference.
-	 * @see #setProductFeatureGroupId(ProductFeatureGroup)
-	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureGroupAppl_ProductFeatureGroupId()
-	 * @model keys="productFeatureGroupId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductFeatureGroup getProductFeatureGroupId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getProductFeatureGroupId <em>Product Feature Group Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Feature Group Id</em>' reference.
-	 * @see #getProductFeatureGroupId()
-	 * @generated
-	 */
-	void setProductFeatureGroupId(ProductFeatureGroup value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Feature Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Feature Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Feature Id</em>' reference.
-	 * @see #setProductFeatureId(ProductFeature)
-	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureGroupAppl_ProductFeatureId()
-	 * @model keys="productFeatureId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductFeature getProductFeatureId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getProductFeatureId <em>Product Feature Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Feature Id</em>' reference.
-	 * @see #getProductFeatureId()
-	 * @generated
-	 */
-	void setProductFeatureId(ProductFeature value);
 
 } // ProductFeatureGroupAppl

@@ -30,7 +30,7 @@ import org.osgi.service.log.Logger;
 public class ModelUtils {
 
 	private static final Logger LOGGER = Logs.getLogger(ModelUtils.class);
-	
+
 	public static final String OFBIZ_PACKAGE = "org.apache.ofbiz";
 
 	public static Set<String> findPackages(ModelReader modelReader, String packagePrefix) throws GenericEntityException {
@@ -101,9 +101,8 @@ public class ModelUtils {
 		for (ModelRelation modelRelation : modelEntity.getRelationsList(true, true, false)) {
 
 			// no automatic relation
-			if (modelRelation.isAutoRelation()) {
+			if (modelRelation.isAutoRelation())
 				continue;
-			}
 
 			// first field = pk
 			ModelKeyMap modelKeyMap = modelRelation.getKeyMaps().get(0);
@@ -111,9 +110,9 @@ public class ModelUtils {
 				continue;
 
 			// one field map
-			if (modelRelation.getKeyMaps().size() > 1) {				
-				LOGGER.info("HISTORY: "+ modelRelation.getRelEntityName() + " -> " + entityName);
-				continue;			
+			if (modelRelation.getKeyMaps().size() > 1) {
+				LOGGER.info("HISTORY: " + modelRelation.getRelEntityName() + " -> " + entityName);
+				continue;
 			}
 
 			superEntity = modelRelation.getRelEntityName();
@@ -126,14 +125,13 @@ public class ModelUtils {
 		if (superEntity.equals(entityName))
 			return null;
 
-		// super entity found
-		ModelEntity entityType = null;
 		try {
-			entityType = modelReader.getModelEntityNoCheck(superEntity + "Type");
+			// super entity typed
+			ModelEntity entityType = modelReader.getModelEntityNoCheck(superEntity + "Type");
 
 			// TODO who is? interfaces?
 			if (entityType == null) {
-				LOGGER.info("INTERFACE: "+superEntity + " -> " + entityName);
+				LOGGER.info("INTERFACE: " + superEntity + " -> " + entityName);
 				return null;
 			}
 
@@ -150,7 +148,7 @@ public class ModelUtils {
 
 			GenericValue genericValue = delegator.findOne(entityType.getEntityName(), true, pkField, pkValue);
 			if (genericValue == null) {
-				LOGGER.info("SUPER: "+entityType.getEntityName() + " -> " + entityName);
+				LOGGER.info("SUPER: " + entityType.getEntityName() + " -> " + entityName);
 				return null;
 			}
 
@@ -173,21 +171,27 @@ public class ModelUtils {
 		return superEntity;
 	}
 
-	public static ModelField getModelField(Delegator delegator, String frame, String slot) {
+	public static ModelField getModelField(Delegator delegator, String entityName, String slot) {
 
 		ModelReader modelReader = delegator.getModelReader();
 		ModelField modelField = null;
 
-		String superFrame = frame;
-		ModelEntity modelEntity = modelReader.getModelEntityNoCheck(frame);
+		String superEntity = entityName;
+		ModelEntity modelEntity = modelReader.getModelEntityNoCheck(entityName);
 		while (modelEntity != null) {
 			modelField = modelEntity.getField(slot);
 			if (modelField != null)
 				break;
 
-			superFrame = ModelUtils.getSuperEntity(delegator, superFrame);
-			if (superFrame != null)
-				modelEntity = modelReader.getModelEntityNoCheck(superFrame);
+			if (!slot.endsWith("Id")) {
+				modelField = modelEntity.getField(slot + "Id");
+				if (modelField != null)
+					break;
+			}
+
+			superEntity = ModelUtils.getSuperEntity(delegator, superEntity);
+			if (superEntity != null)
+				modelEntity = modelReader.getModelEntityNoCheck(superEntity);
 			else
 				modelEntity = null;
 		}
@@ -195,36 +199,36 @@ public class ModelUtils {
 		return modelField;
 	}
 
-	public static ModelRelation getModelRelation(Delegator delegator, String frame, String slot) {
+	public static ModelRelation getModelRelation(Delegator delegator, String entityName, String slot) {
 
 		ModelReader modelReader = delegator.getModelReader();
 		ModelRelation modelRelation = null;
 
-		String superFrame = frame;
-		ModelEntity modelEntity = modelReader.getModelEntityNoCheck(frame);
+		String superEntity = entityName;
+		ModelEntity modelEntity = modelReader.getModelEntityNoCheck(entityName);
 		while (modelEntity != null) {
 			modelRelation = modelEntity.getRelation(slot);
 			if (modelRelation != null)
 				break;
 
-			superFrame = ModelUtils.getSuperEntity(delegator, superFrame);
-			if (superFrame == null)
+			superEntity = ModelUtils.getSuperEntity(delegator, superEntity);
+			if (superEntity == null)
 				break;
 
-			modelEntity = modelReader.getModelEntityNoCheck(superFrame);
+			modelEntity = modelReader.getModelEntityNoCheck(superEntity);
 		}
 
 		return modelRelation;
 	}
 
-	public static Map<String, String> getManyRelationFromField(Delegator delegator, String frame, String slot) {
+	public static Map<String, String> getManyRelationFromField(Delegator delegator, String entityName, String slot) {
 		String field = slot;
 		Map<String, String> manyMap = new HashMap<String, String>();
 		field = singularization(field);
 		field = ModelUtil.upperFirstChar(field);
 
 		ModelReader modelReader = delegator.getModelReader();
-		ModelEntity modelEntity = modelReader.getModelEntityNoCheck(frame);
+		ModelEntity modelEntity = modelReader.getModelEntityNoCheck(entityName);
 		if (modelEntity == null)
 			return null;
 
@@ -267,7 +271,7 @@ public class ModelUtils {
 			}
 		}
 
-		String relationEntity = ModelUtils.getSuperEntity(delegator, frame);
+		String relationEntity = ModelUtils.getSuperEntity(delegator, entityName);
 		if (relationEntity != null && UtilValidate.isEmpty(manyMap)) {
 			manyMap = getManyRelationFromField(delegator, relationEntity, field);
 		}

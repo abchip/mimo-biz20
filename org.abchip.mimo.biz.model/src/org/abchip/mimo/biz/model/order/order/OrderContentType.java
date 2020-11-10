@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderContentType#getOrderContentTypeId <em>Order Content Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderContentType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderContentType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderContentType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderContentType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderContentType()
@@ -83,6 +83,28 @@ public interface OrderContentType extends EntityType<OrderContent>, EntityInfo {
 	void setHasTable(boolean value);
 
 	/**
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(OrderContentType)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderContentType_ParentType()
+	 * @model keys="orderContentTypeId"
+	 * @generated
+	 */
+	OrderContentType getParentType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderContentType#getParentType <em>Parent Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
+	 * @generated
+	 */
+	void setParentType(OrderContentType value);
+
+	/**
 	 * Returns the value of the '<em><b>Order Content Type Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -108,31 +130,5 @@ public interface OrderContentType extends EntityType<OrderContent>, EntityInfo {
 	 * @generated
 	 */
 	void setOrderContentTypeId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(OrderContentType)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderContentType_ParentTypeId()
-	 * @model keys="orderContentTypeId"
-	 * @generated
-	 */
-	OrderContentType getParentTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderContentType#getParentTypeId <em>Parent Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
-	 * @generated
-	 */
-	void setParentTypeId(OrderContentType value);
 
 } // OrderContentType

@@ -36,7 +36,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ContactMechTypeImpl#getContactMechTypePurposes <em>Contact Mech Type Purposes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ContactMechTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ContactMechTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ContactMechTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ContactMechTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -204,8 +204,8 @@ public class ContactMechTypeImpl extends EntityTypeImpl<ContactMech> implements 
 	 * @generated
 	 */
 	@Override
-	public ContactMechType getParentTypeId() {
-		return (ContactMechType)eGet(ContactPackage.Literals.CONTACT_MECH_TYPE__PARENT_TYPE_ID, true);
+	public ContactMechType getParentType() {
+		return (ContactMechType)eGet(ContactPackage.Literals.CONTACT_MECH_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -214,8 +214,8 @@ public class ContactMechTypeImpl extends EntityTypeImpl<ContactMech> implements 
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(ContactMechType newParentTypeId) {
-		eSet(ContactPackage.Literals.CONTACT_MECH_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(ContactMechType newParentType) {
+		eSet(ContactPackage.Literals.CONTACT_MECH_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

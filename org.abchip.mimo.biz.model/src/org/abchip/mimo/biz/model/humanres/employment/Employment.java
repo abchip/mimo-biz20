@@ -26,8 +26,8 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.Employment#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.Employment#getRoleTypeIdFrom <em>Role Type Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.Employment#getRoleTypeIdTo <em>Role Type Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.Employment#getTerminationReasonId <em>Termination Reason Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.Employment#getTerminationTypeId <em>Termination Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.Employment#getTerminationReason <em>Termination Reason</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.Employment#getTerminationType <em>Termination Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.Employment#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -174,56 +174,48 @@ public interface Employment extends EntityTyped<TerminationType>, EntityInfo {
 	void setRoleTypeIdTo(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Termination Reason Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Termination Reason</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Termination Reason Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Termination Reason Id</em>' reference.
-	 * @see #setTerminationReasonId(TerminationReason)
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmployment_TerminationReasonId()
+	 * @return the value of the '<em>Termination Reason</em>' reference.
+	 * @see #setTerminationReason(TerminationReason)
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmployment_TerminationReason()
 	 * @model keys="terminationReasonId"
 	 * @generated
 	 */
-	TerminationReason getTerminationReasonId();
+	TerminationReason getTerminationReason();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.Employment#getTerminationReasonId <em>Termination Reason Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.Employment#getTerminationReason <em>Termination Reason</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Termination Reason Id</em>' reference.
-	 * @see #getTerminationReasonId()
+	 * @param value the new value of the '<em>Termination Reason</em>' reference.
+	 * @see #getTerminationReason()
 	 * @generated
 	 */
-	void setTerminationReasonId(TerminationReason value);
+	void setTerminationReason(TerminationReason value);
 
 	/**
-	 * Returns the value of the '<em><b>Termination Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Termination Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Termination Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Termination Type Id</em>' reference.
-	 * @see #setTerminationTypeId(TerminationType)
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmployment_TerminationTypeId()
+	 * @return the value of the '<em>Termination Type</em>' reference.
+	 * @see #setTerminationType(TerminationType)
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmployment_TerminationType()
 	 * @model keys="terminationTypeId"
 	 * @generated
 	 */
-	TerminationType getTerminationTypeId();
+	TerminationType getTerminationType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.Employment#getTerminationTypeId <em>Termination Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.Employment#getTerminationType <em>Termination Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Termination Type Id</em>' reference.
-	 * @see #getTerminationTypeId()
+	 * @param value the new value of the '<em>Termination Type</em>' reference.
+	 * @see #getTerminationType()
 	 * @generated
 	 */
-	void setTerminationTypeId(TerminationType value);
+	void setTerminationType(TerminationType value);
 
 	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.

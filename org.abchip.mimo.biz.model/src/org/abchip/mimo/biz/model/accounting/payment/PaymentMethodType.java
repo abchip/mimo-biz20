@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityType;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType#getPaymentMethodTypeId <em>Payment Method Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType#getDefaultGlAccountId <em>Default Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType#getDefaultGlAccount <em>Default Gl Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType#getPaymentMethodTypeGlAccounts <em>Payment Method Type Gl Accounts</em>}</li>
  * </ul>
@@ -75,32 +75,6 @@ public interface PaymentMethodType extends EntityType<PaymentGatewayResponse>, E
 	List<PaymentMethodTypeGlAccount> getPaymentMethodTypeGlAccounts();
 
 	/**
-	 * Returns the value of the '<em><b>Default Gl Account Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Default Gl Account Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Default Gl Account Id</em>' reference.
-	 * @see #setDefaultGlAccountId(GlAccount)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentMethodType_DefaultGlAccountId()
-	 * @model keys="glAccountId"
-	 * @generated
-	 */
-	GlAccount getDefaultGlAccountId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType#getDefaultGlAccountId <em>Default Gl Account Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Default Gl Account Id</em>' reference.
-	 * @see #getDefaultGlAccountId()
-	 * @generated
-	 */
-	void setDefaultGlAccountId(GlAccount value);
-
-	/**
 	 * Returns the value of the '<em><b>Payment Method Type Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -126,5 +100,27 @@ public interface PaymentMethodType extends EntityType<PaymentGatewayResponse>, E
 	 * @generated
 	 */
 	void setPaymentMethodTypeId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Default Gl Account</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Default Gl Account</em>' reference.
+	 * @see #setDefaultGlAccount(GlAccount)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentMethodType_DefaultGlAccount()
+	 * @model keys="glAccountId"
+	 * @generated
+	 */
+	GlAccount getDefaultGlAccount();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType#getDefaultGlAccount <em>Default Gl Account</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Default Gl Account</em>' reference.
+	 * @see #getDefaultGlAccount()
+	 * @generated
+	 */
+	void setDefaultGlAccount(GlAccount value);
 
 } // PaymentMethodType

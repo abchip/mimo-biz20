@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityCompetitor#getSalesOpportunityId <em>Sales Opportunity Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityCompetitor#getSalesOpportunity <em>Sales Opportunity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityCompetitor#getCompetitorPartyId <em>Competitor Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityCompetitor#getPositionEnumId <em>Position Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityCompetitor#getStrengths <em>Strengths</em>}</li>
@@ -31,6 +31,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface SalesOpportunityCompetitor extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Sales Opportunity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Sales Opportunity</em>' reference.
+	 * @see #setSalesOpportunity(SalesOpportunity)
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityCompetitor_SalesOpportunity()
+	 * @model keys="salesOpportunityId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	SalesOpportunity getSalesOpportunity();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityCompetitor#getSalesOpportunity <em>Sales Opportunity</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Sales Opportunity</em>' reference.
+	 * @see #getSalesOpportunity()
+	 * @generated
+	 */
+	void setSalesOpportunity(SalesOpportunity value);
+
 	/**
 	 * Returns the value of the '<em><b>Competitor Party Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -84,33 +107,6 @@ public interface SalesOpportunityCompetitor extends EntityIdentifiable, EntityIn
 	 * @generated
 	 */
 	void setPositionEnumId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Sales Opportunity Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sales Opportunity Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Sales Opportunity Id</em>' reference.
-	 * @see #setSalesOpportunityId(SalesOpportunity)
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityCompetitor_SalesOpportunityId()
-	 * @model keys="salesOpportunityId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	SalesOpportunity getSalesOpportunityId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityCompetitor#getSalesOpportunityId <em>Sales Opportunity Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Sales Opportunity Id</em>' reference.
-	 * @see #getSalesOpportunityId()
-	 * @generated
-	 */
-	void setSalesOpportunityId(SalesOpportunity value);
 
 	/**
 	 * Returns the value of the '<em><b>Strengths</b></em>' attribute.

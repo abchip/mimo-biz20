@@ -30,8 +30,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemShipmentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemShipmentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemShipmentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemShipmentImpl#getReturnId <em>Return Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemShipmentImpl#getShipmentId <em>Shipment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemShipmentImpl#getReturn <em>Return</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemShipmentImpl#getShipment <em>Shipment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemShipmentImpl#getReturnItemSeqId <em>Return Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemShipmentImpl#getShipmentItemSeqId <em>Shipment Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemShipmentImpl#getQuantity <em>Quantity</em>}</li>
@@ -156,6 +156,46 @@ public class ReturnItemShipmentImpl extends EntityIdentifiableImpl implements Re
 	 * @generated
 	 */
 	@Override
+	public ReturnHeader getReturn() {
+		return (ReturnHeader)eGet(ReturnPackage.Literals.RETURN_ITEM_SHIPMENT__RETURN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setReturn(ReturnHeader newReturn) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM_SHIPMENT__RETURN, newReturn);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Shipment getShipment() {
+		return (Shipment)eGet(ReturnPackage.Literals.RETURN_ITEM_SHIPMENT__SHIPMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setShipment(Shipment newShipment) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM_SHIPMENT__SHIPMENT, newShipment);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getQuantity() {
 		return (BigDecimal)eGet(ReturnPackage.Literals.RETURN_ITEM_SHIPMENT__QUANTITY, true);
 	}
@@ -214,26 +254,6 @@ public class ReturnItemShipmentImpl extends EntityIdentifiableImpl implements Re
 	 * @generated
 	 */
 	@Override
-	public ReturnHeader getReturnId() {
-		return (ReturnHeader)eGet(ReturnPackage.Literals.RETURN_ITEM_SHIPMENT__RETURN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setReturnId(ReturnHeader newReturnId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM_SHIPMENT__RETURN_ID, newReturnId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getReturnItemSeqId() {
 		return (String)eGet(ReturnPackage.Literals.RETURN_ITEM_SHIPMENT__RETURN_ITEM_SEQ_ID, true);
 	}
@@ -246,26 +266,6 @@ public class ReturnItemShipmentImpl extends EntityIdentifiableImpl implements Re
 	@Override
 	public void setReturnItemSeqId(String newReturnItemSeqId) {
 		eSet(ReturnPackage.Literals.RETURN_ITEM_SHIPMENT__RETURN_ITEM_SEQ_ID, newReturnItemSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Shipment getShipmentId() {
-		return (Shipment)eGet(ReturnPackage.Literals.RETURN_ITEM_SHIPMENT__SHIPMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setShipmentId(Shipment newShipmentId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM_SHIPMENT__SHIPMENT_ID, newShipmentId);
 	}
 
 	/**

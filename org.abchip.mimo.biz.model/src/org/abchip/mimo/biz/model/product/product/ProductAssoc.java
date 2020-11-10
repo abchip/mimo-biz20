@@ -25,16 +25,16 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getProductAssocTypeId <em>Product Assoc Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getProductAssocType <em>Product Assoc Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getProductIdTo <em>Product Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getEstimateCalcMethod <em>Estimate Calc Method</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getInstruction <em>Instruction</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getReason <em>Reason</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getRecurrenceInfoId <em>Recurrence Info Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getRoutingWorkEffortId <em>Routing Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getRecurrenceInfo <em>Recurrence Info</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getRoutingWorkEffort <em>Routing Work Effort</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getScrapFactor <em>Scrap Factor</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getThruDate <em>Thru Date</em>}</li>
@@ -45,6 +45,52 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface ProductAssoc extends EntityTyped<ProductAssocType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product Assoc Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Assoc Type</em>' reference.
+	 * @see #setProductAssocType(ProductAssocType)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductAssoc_ProductAssocType()
+	 * @model keys="productAssocTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductAssocType getProductAssocType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getProductAssocType <em>Product Assoc Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Assoc Type</em>' reference.
+	 * @see #getProductAssocType()
+	 * @generated
+	 */
+	void setProductAssocType(ProductAssocType value);
+
+	/**
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductAssoc_Product()
+	 * @model keys="productId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
+
 	/**
 	 * Returns the value of the '<em><b>Estimate Calc Method</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -177,56 +223,48 @@ public interface ProductAssoc extends EntityTyped<ProductAssocType>, EntityInfo 
 	void setReason(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Recurrence Info Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Recurrence Info</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Recurrence Info Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Recurrence Info Id</em>' reference.
-	 * @see #setRecurrenceInfoId(RecurrenceInfo)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductAssoc_RecurrenceInfoId()
+	 * @return the value of the '<em>Recurrence Info</em>' reference.
+	 * @see #setRecurrenceInfo(RecurrenceInfo)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductAssoc_RecurrenceInfo()
 	 * @model keys="recurrenceInfoId"
 	 * @generated
 	 */
-	RecurrenceInfo getRecurrenceInfoId();
+	RecurrenceInfo getRecurrenceInfo();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getRecurrenceInfoId <em>Recurrence Info Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getRecurrenceInfo <em>Recurrence Info</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Recurrence Info Id</em>' reference.
-	 * @see #getRecurrenceInfoId()
+	 * @param value the new value of the '<em>Recurrence Info</em>' reference.
+	 * @see #getRecurrenceInfo()
 	 * @generated
 	 */
-	void setRecurrenceInfoId(RecurrenceInfo value);
+	void setRecurrenceInfo(RecurrenceInfo value);
 
 	/**
-	 * Returns the value of the '<em><b>Routing Work Effort Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Routing Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Routing Work Effort Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Routing Work Effort Id</em>' reference.
-	 * @see #setRoutingWorkEffortId(WorkEffort)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductAssoc_RoutingWorkEffortId()
+	 * @return the value of the '<em>Routing Work Effort</em>' reference.
+	 * @see #setRoutingWorkEffort(WorkEffort)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductAssoc_RoutingWorkEffort()
 	 * @model keys="workEffortId"
 	 * @generated
 	 */
-	WorkEffort getRoutingWorkEffortId();
+	WorkEffort getRoutingWorkEffort();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getRoutingWorkEffortId <em>Routing Work Effort Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getRoutingWorkEffort <em>Routing Work Effort</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Routing Work Effort Id</em>' reference.
-	 * @see #getRoutingWorkEffortId()
+	 * @param value the new value of the '<em>Routing Work Effort</em>' reference.
+	 * @see #getRoutingWorkEffort()
 	 * @generated
 	 */
-	void setRoutingWorkEffortId(WorkEffort value);
+	void setRoutingWorkEffort(WorkEffort value);
 
 	/**
 	 * Returns the value of the '<em><b>Scrap Factor</b></em>' attribute.
@@ -305,60 +343,6 @@ public interface ProductAssoc extends EntityTyped<ProductAssocType>, EntityInfo 
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Assoc Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Assoc Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Assoc Type Id</em>' reference.
-	 * @see #setProductAssocTypeId(ProductAssocType)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductAssoc_ProductAssocTypeId()
-	 * @model keys="productAssocTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductAssocType getProductAssocTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getProductAssocTypeId <em>Product Assoc Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Assoc Type Id</em>' reference.
-	 * @see #getProductAssocTypeId()
-	 * @generated
-	 */
-	void setProductAssocTypeId(ProductAssocType value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductAssoc_ProductId()
-	 * @model keys="productId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Product getProductId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductAssoc#getProductId <em>Product Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
-	 * @generated
-	 */
-	void setProductId(Product value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Id To</b></em>' reference.

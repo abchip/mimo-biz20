@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocImpl#getWorkEffortAssocTypeId <em>Work Effort Assoc Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocImpl#getWorkEffortAssocType <em>Work Effort Assoc Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocImpl#getWorkEffortIdFrom <em>Work Effort Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocImpl#getWorkEffortIdTo <em>Work Effort Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocImpl#getFromDate <em>From Date</em>}</li>
@@ -156,6 +156,26 @@ public class WorkEffortAssocImpl extends EntityTypedImpl<WorkEffortAssocType> im
 	 * @generated
 	 */
 	@Override
+	public WorkEffortAssocType getWorkEffortAssocType() {
+		return (WorkEffortAssocType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_ASSOC__WORK_EFFORT_ASSOC_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWorkEffortAssocType(WorkEffortAssocType newWorkEffortAssocType) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_ASSOC__WORK_EFFORT_ASSOC_TYPE, newWorkEffortAssocType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(WorkeffortPackage.Literals.WORK_EFFORT_ASSOC__FROM_DATE, true);
 	}
@@ -246,26 +266,6 @@ public class WorkEffortAssocImpl extends EntityTypedImpl<WorkEffortAssocType> im
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffortAssocType getWorkEffortAssocTypeId() {
-		return (WorkEffortAssocType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_ASSOC__WORK_EFFORT_ASSOC_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortAssocTypeId(WorkEffortAssocType newWorkEffortAssocTypeId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_ASSOC__WORK_EFFORT_ASSOC_TYPE_ID, newWorkEffortAssocTypeId);
 	}
 
 	/**

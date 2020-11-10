@@ -7,7 +7,7 @@
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="HUMANRES_DELETE" description="Delete operations in the HumanRes Manager."/>
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="HUMANRES_APPROVE" description="Approver can update the IJP approval status with this permission."/>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#HUMANRES_ADMIN"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#HUMANRES_ADMIN"/>
   </contents>
 </mimo-ent:EntityContainer>

@@ -50,36 +50,36 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getAddtlShippingChargeDesc <em>Addtl Shipping Charge Desc</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getCreatedDate <em>Created Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getDestinationContactMechId <em>Destination Contact Mech Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getDestinationFacilityId <em>Destination Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getDestinationTelecomNumberId <em>Destination Telecom Number Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getCurrencyUom <em>Currency Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getDestinationContactMech <em>Destination Contact Mech</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getDestinationFacility <em>Destination Facility</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getDestinationTelecomNumber <em>Destination Telecom Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getEstimatedArrivalDate <em>Estimated Arrival Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getEstimatedArrivalWorkEffId <em>Estimated Arrival Work Eff Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getEstimatedArrivalWorkEff <em>Estimated Arrival Work Eff</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getEstimatedReadyDate <em>Estimated Ready Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getEstimatedShipCost <em>Estimated Ship Cost</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getEstimatedShipDate <em>Estimated Ship Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getEstimatedShipWorkEffId <em>Estimated Ship Work Eff Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getEstimatedShipWorkEff <em>Estimated Ship Work Eff</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getHandlingInstructions <em>Handling Instructions</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getLatestCancelDate <em>Latest Cancel Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getOriginContactMechId <em>Origin Contact Mech Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getOriginFacilityId <em>Origin Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getOriginTelecomNumberId <em>Origin Telecom Number Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getOriginContactMech <em>Origin Contact Mech</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getOriginFacility <em>Origin Facility</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getOriginTelecomNumber <em>Origin Telecom Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getPartyIdFrom <em>Party Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getPartyIdTo <em>Party Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getPicklistBinId <em>Picklist Bin Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getPrimaryOrderId <em>Primary Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getPrimaryReturnId <em>Primary Return Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getPicklistBin <em>Picklist Bin</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getPrimaryOrder <em>Primary Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getPrimaryReturn <em>Primary Return</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getPrimaryShipGroupSeqId <em>Primary Ship Group Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getShipmentAttributes <em>Shipment Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getShipmentContactMechs <em>Shipment Contact Mechs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getShipmentItems <em>Shipment Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getShipmentPackages <em>Shipment Packages</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getShipmentRouteSegments <em>Shipment Route Segments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getShipmentTypeId <em>Shipment Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getShipmentType <em>Shipment Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @generated
@@ -281,8 +281,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public Uom getCurrencyUomId() {
-		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT__CURRENCY_UOM_ID, true);
+	public Uom getCurrencyUom() {
+		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT__CURRENCY_UOM, true);
 	}
 
 	/**
@@ -291,8 +291,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public void setCurrencyUomId(Uom newCurrencyUomId) {
-		eSet(Shipment_Package.Literals.SHIPMENT__CURRENCY_UOM_ID, newCurrencyUomId);
+	public void setCurrencyUom(Uom newCurrencyUom) {
+		eSet(Shipment_Package.Literals.SHIPMENT__CURRENCY_UOM, newCurrencyUom);
 	}
 
 	/**
@@ -301,8 +301,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public ContactMech getDestinationContactMechId() {
-		return (ContactMech)eGet(Shipment_Package.Literals.SHIPMENT__DESTINATION_CONTACT_MECH_ID, true);
+	public ContactMech getDestinationContactMech() {
+		return (ContactMech)eGet(Shipment_Package.Literals.SHIPMENT__DESTINATION_CONTACT_MECH, true);
 	}
 
 	/**
@@ -311,8 +311,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public void setDestinationContactMechId(ContactMech newDestinationContactMechId) {
-		eSet(Shipment_Package.Literals.SHIPMENT__DESTINATION_CONTACT_MECH_ID, newDestinationContactMechId);
+	public void setDestinationContactMech(ContactMech newDestinationContactMech) {
+		eSet(Shipment_Package.Literals.SHIPMENT__DESTINATION_CONTACT_MECH, newDestinationContactMech);
 	}
 
 	/**
@@ -321,8 +321,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public Facility getDestinationFacilityId() {
-		return (Facility)eGet(Shipment_Package.Literals.SHIPMENT__DESTINATION_FACILITY_ID, true);
+	public Facility getDestinationFacility() {
+		return (Facility)eGet(Shipment_Package.Literals.SHIPMENT__DESTINATION_FACILITY, true);
 	}
 
 	/**
@@ -331,8 +331,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public void setDestinationFacilityId(Facility newDestinationFacilityId) {
-		eSet(Shipment_Package.Literals.SHIPMENT__DESTINATION_FACILITY_ID, newDestinationFacilityId);
+	public void setDestinationFacility(Facility newDestinationFacility) {
+		eSet(Shipment_Package.Literals.SHIPMENT__DESTINATION_FACILITY, newDestinationFacility);
 	}
 
 	/**
@@ -341,8 +341,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public TelecomNumber getDestinationTelecomNumberId() {
-		return (TelecomNumber)eGet(Shipment_Package.Literals.SHIPMENT__DESTINATION_TELECOM_NUMBER_ID, true);
+	public TelecomNumber getDestinationTelecomNumber() {
+		return (TelecomNumber)eGet(Shipment_Package.Literals.SHIPMENT__DESTINATION_TELECOM_NUMBER, true);
 	}
 
 	/**
@@ -351,8 +351,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public void setDestinationTelecomNumberId(TelecomNumber newDestinationTelecomNumberId) {
-		eSet(Shipment_Package.Literals.SHIPMENT__DESTINATION_TELECOM_NUMBER_ID, newDestinationTelecomNumberId);
+	public void setDestinationTelecomNumber(TelecomNumber newDestinationTelecomNumber) {
+		eSet(Shipment_Package.Literals.SHIPMENT__DESTINATION_TELECOM_NUMBER, newDestinationTelecomNumber);
 	}
 
 	/**
@@ -381,8 +381,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public WorkEffort getEstimatedArrivalWorkEffId() {
-		return (WorkEffort)eGet(Shipment_Package.Literals.SHIPMENT__ESTIMATED_ARRIVAL_WORK_EFF_ID, true);
+	public WorkEffort getEstimatedArrivalWorkEff() {
+		return (WorkEffort)eGet(Shipment_Package.Literals.SHIPMENT__ESTIMATED_ARRIVAL_WORK_EFF, true);
 	}
 
 	/**
@@ -391,8 +391,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public void setEstimatedArrivalWorkEffId(WorkEffort newEstimatedArrivalWorkEffId) {
-		eSet(Shipment_Package.Literals.SHIPMENT__ESTIMATED_ARRIVAL_WORK_EFF_ID, newEstimatedArrivalWorkEffId);
+	public void setEstimatedArrivalWorkEff(WorkEffort newEstimatedArrivalWorkEff) {
+		eSet(Shipment_Package.Literals.SHIPMENT__ESTIMATED_ARRIVAL_WORK_EFF, newEstimatedArrivalWorkEff);
 	}
 
 	/**
@@ -461,8 +461,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public WorkEffort getEstimatedShipWorkEffId() {
-		return (WorkEffort)eGet(Shipment_Package.Literals.SHIPMENT__ESTIMATED_SHIP_WORK_EFF_ID, true);
+	public WorkEffort getEstimatedShipWorkEff() {
+		return (WorkEffort)eGet(Shipment_Package.Literals.SHIPMENT__ESTIMATED_SHIP_WORK_EFF, true);
 	}
 
 	/**
@@ -471,8 +471,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public void setEstimatedShipWorkEffId(WorkEffort newEstimatedShipWorkEffId) {
-		eSet(Shipment_Package.Literals.SHIPMENT__ESTIMATED_SHIP_WORK_EFF_ID, newEstimatedShipWorkEffId);
+	public void setEstimatedShipWorkEff(WorkEffort newEstimatedShipWorkEff) {
+		eSet(Shipment_Package.Literals.SHIPMENT__ESTIMATED_SHIP_WORK_EFF, newEstimatedShipWorkEff);
 	}
 
 	/**
@@ -561,8 +561,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public ContactMech getOriginContactMechId() {
-		return (ContactMech)eGet(Shipment_Package.Literals.SHIPMENT__ORIGIN_CONTACT_MECH_ID, true);
+	public ContactMech getOriginContactMech() {
+		return (ContactMech)eGet(Shipment_Package.Literals.SHIPMENT__ORIGIN_CONTACT_MECH, true);
 	}
 
 	/**
@@ -571,8 +571,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public void setOriginContactMechId(ContactMech newOriginContactMechId) {
-		eSet(Shipment_Package.Literals.SHIPMENT__ORIGIN_CONTACT_MECH_ID, newOriginContactMechId);
+	public void setOriginContactMech(ContactMech newOriginContactMech) {
+		eSet(Shipment_Package.Literals.SHIPMENT__ORIGIN_CONTACT_MECH, newOriginContactMech);
 	}
 
 	/**
@@ -581,8 +581,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public Facility getOriginFacilityId() {
-		return (Facility)eGet(Shipment_Package.Literals.SHIPMENT__ORIGIN_FACILITY_ID, true);
+	public Facility getOriginFacility() {
+		return (Facility)eGet(Shipment_Package.Literals.SHIPMENT__ORIGIN_FACILITY, true);
 	}
 
 	/**
@@ -591,8 +591,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public void setOriginFacilityId(Facility newOriginFacilityId) {
-		eSet(Shipment_Package.Literals.SHIPMENT__ORIGIN_FACILITY_ID, newOriginFacilityId);
+	public void setOriginFacility(Facility newOriginFacility) {
+		eSet(Shipment_Package.Literals.SHIPMENT__ORIGIN_FACILITY, newOriginFacility);
 	}
 
 	/**
@@ -601,8 +601,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public TelecomNumber getOriginTelecomNumberId() {
-		return (TelecomNumber)eGet(Shipment_Package.Literals.SHIPMENT__ORIGIN_TELECOM_NUMBER_ID, true);
+	public TelecomNumber getOriginTelecomNumber() {
+		return (TelecomNumber)eGet(Shipment_Package.Literals.SHIPMENT__ORIGIN_TELECOM_NUMBER, true);
 	}
 
 	/**
@@ -611,8 +611,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public void setOriginTelecomNumberId(TelecomNumber newOriginTelecomNumberId) {
-		eSet(Shipment_Package.Literals.SHIPMENT__ORIGIN_TELECOM_NUMBER_ID, newOriginTelecomNumberId);
+	public void setOriginTelecomNumber(TelecomNumber newOriginTelecomNumber) {
+		eSet(Shipment_Package.Literals.SHIPMENT__ORIGIN_TELECOM_NUMBER, newOriginTelecomNumber);
 	}
 
 	/**
@@ -661,8 +661,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public PicklistBin getPicklistBinId() {
-		return (PicklistBin)eGet(Shipment_Package.Literals.SHIPMENT__PICKLIST_BIN_ID, true);
+	public PicklistBin getPicklistBin() {
+		return (PicklistBin)eGet(Shipment_Package.Literals.SHIPMENT__PICKLIST_BIN, true);
 	}
 
 	/**
@@ -671,8 +671,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public void setPicklistBinId(PicklistBin newPicklistBinId) {
-		eSet(Shipment_Package.Literals.SHIPMENT__PICKLIST_BIN_ID, newPicklistBinId);
+	public void setPicklistBin(PicklistBin newPicklistBin) {
+		eSet(Shipment_Package.Literals.SHIPMENT__PICKLIST_BIN, newPicklistBin);
 	}
 
 	/**
@@ -681,8 +681,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getPrimaryOrderId() {
-		return (OrderHeader)eGet(Shipment_Package.Literals.SHIPMENT__PRIMARY_ORDER_ID, true);
+	public OrderHeader getPrimaryOrder() {
+		return (OrderHeader)eGet(Shipment_Package.Literals.SHIPMENT__PRIMARY_ORDER, true);
 	}
 
 	/**
@@ -691,8 +691,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public void setPrimaryOrderId(OrderHeader newPrimaryOrderId) {
-		eSet(Shipment_Package.Literals.SHIPMENT__PRIMARY_ORDER_ID, newPrimaryOrderId);
+	public void setPrimaryOrder(OrderHeader newPrimaryOrder) {
+		eSet(Shipment_Package.Literals.SHIPMENT__PRIMARY_ORDER, newPrimaryOrder);
 	}
 
 	/**
@@ -701,8 +701,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public ReturnHeader getPrimaryReturnId() {
-		return (ReturnHeader)eGet(Shipment_Package.Literals.SHIPMENT__PRIMARY_RETURN_ID, true);
+	public ReturnHeader getPrimaryReturn() {
+		return (ReturnHeader)eGet(Shipment_Package.Literals.SHIPMENT__PRIMARY_RETURN, true);
 	}
 
 	/**
@@ -711,8 +711,8 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
-	public void setPrimaryReturnId(ReturnHeader newPrimaryReturnId) {
-		eSet(Shipment_Package.Literals.SHIPMENT__PRIMARY_RETURN_ID, newPrimaryReturnId);
+	public void setPrimaryReturn(ReturnHeader newPrimaryReturn) {
+		eSet(Shipment_Package.Literals.SHIPMENT__PRIMARY_RETURN, newPrimaryReturn);
 	}
 
 	/**
@@ -796,6 +796,46 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	 * @generated
 	 */
 	@Override
+	public ShipmentType getShipmentType() {
+		return (ShipmentType)eGet(Shipment_Package.Literals.SHIPMENT__SHIPMENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setShipmentType(ShipmentType newShipmentType) {
+		eSet(Shipment_Package.Literals.SHIPMENT__SHIPMENT_TYPE, newShipmentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(Shipment_Package.Literals.SHIPMENT__STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(StatusItem newStatus) {
+		eSet(Shipment_Package.Literals.SHIPMENT__STATUS, newStatus);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getShipmentId() {
 		return (String)eGet(Shipment_Package.Literals.SHIPMENT__SHIPMENT_ID, true);
 	}
@@ -808,46 +848,6 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	@Override
 	public void setShipmentId(String newShipmentId) {
 		eSet(Shipment_Package.Literals.SHIPMENT__SHIPMENT_ID, newShipmentId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ShipmentType getShipmentTypeId() {
-		return (ShipmentType)eGet(Shipment_Package.Literals.SHIPMENT__SHIPMENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setShipmentTypeId(ShipmentType newShipmentTypeId) {
-		eSet(Shipment_Package.Literals.SHIPMENT__SHIPMENT_TYPE_ID, newShipmentTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(Shipment_Package.Literals.SHIPMENT__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(Shipment_Package.Literals.SHIPMENT__STATUS_ID, newStatusId);
 	}
 
 	/**

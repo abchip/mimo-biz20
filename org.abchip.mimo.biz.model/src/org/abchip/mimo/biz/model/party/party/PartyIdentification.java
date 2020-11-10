@@ -19,8 +19,8 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyIdentification#getPartyIdentificationTypeId <em>Party Identification Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyIdentification#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyIdentification#getPartyIdentificationType <em>Party Identification Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyIdentification#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyIdentification#getIdValue <em>Id Value</em>}</li>
  * </ul>
  *
@@ -29,6 +29,52 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface PartyIdentification extends EntityTyped<PartyIdentificationType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Party Identification Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party Identification Type</em>' reference.
+	 * @see #setPartyIdentificationType(PartyIdentificationType)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyIdentification_PartyIdentificationType()
+	 * @model keys="partyIdentificationTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	PartyIdentificationType getPartyIdentificationType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyIdentification#getPartyIdentificationType <em>Party Identification Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party Identification Type</em>' reference.
+	 * @see #getPartyIdentificationType()
+	 * @generated
+	 */
+	void setPartyIdentificationType(PartyIdentificationType value);
+
+	/**
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyIdentification_Party()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyIdentification#getParty <em>Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
+	 * @generated
+	 */
+	void setParty(Party value);
+
 	/**
 	 * Returns the value of the '<em><b>Id Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -54,59 +100,5 @@ public interface PartyIdentification extends EntityTyped<PartyIdentificationType
 	 * @generated
 	 */
 	void setIdValue(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Party Identification Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Identification Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Identification Type Id</em>' reference.
-	 * @see #setPartyIdentificationTypeId(PartyIdentificationType)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyIdentification_PartyIdentificationTypeId()
-	 * @model keys="partyIdentificationTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	PartyIdentificationType getPartyIdentificationTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyIdentification#getPartyIdentificationTypeId <em>Party Identification Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Identification Type Id</em>' reference.
-	 * @see #getPartyIdentificationTypeId()
-	 * @generated
-	 */
-	void setPartyIdentificationTypeId(PartyIdentificationType value);
-
-	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyIdentification_PartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyIdentification#getPartyId <em>Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
-	 * @generated
-	 */
-	void setPartyId(Party value);
 
 } // PartyIdentification

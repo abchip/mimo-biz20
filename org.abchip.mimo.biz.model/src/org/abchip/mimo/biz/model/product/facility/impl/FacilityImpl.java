@@ -44,9 +44,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilityId <em>Facility Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getClosedDate <em>Closed Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getDefaultDaysToShip <em>Default Days To Ship</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getDefaultDimensionUomId <em>Default Dimension Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getDefaultInventoryItemTypeId <em>Default Inventory Item Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getDefaultWeightUomId <em>Default Weight Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getDefaultDimensionUom <em>Default Dimension Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getDefaultInventoryItemType <em>Default Inventory Item Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getDefaultWeightUom <em>Default Weight Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilityAttributes <em>Facility Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilityContactMechs <em>Facility Contact Mechs</em>}</li>
@@ -56,15 +56,15 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilityLocations <em>Facility Locations</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilityName <em>Facility Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilitySize <em>Facility Size</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilitySizeUomId <em>Facility Size Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilityTypeId <em>Facility Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getGeoPointId <em>Geo Point Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilitySizeUom <em>Facility Size Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilityType <em>Facility Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getGeoPoint <em>Geo Point</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getOldSquareFootage <em>Old Square Footage</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getOpenedDate <em>Opened Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getOwnerPartyId <em>Owner Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getParentFacilityId <em>Parent Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getPrimaryFacilityGroupId <em>Primary Facility Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getOwnerParty <em>Owner Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getParentFacility <em>Parent Facility</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getPrimaryFacilityGroup <em>Primary Facility Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getProductStore <em>Product Store</em>}</li>
  * </ul>
  *
  * @generated
@@ -226,8 +226,8 @@ public class FacilityImpl extends EntityTypedImpl<FacilityType> implements Facil
 	 * @generated
 	 */
 	@Override
-	public Uom getDefaultDimensionUomId() {
-		return (Uom)eGet(FacilityPackage.Literals.FACILITY__DEFAULT_DIMENSION_UOM_ID, true);
+	public Uom getDefaultDimensionUom() {
+		return (Uom)eGet(FacilityPackage.Literals.FACILITY__DEFAULT_DIMENSION_UOM, true);
 	}
 
 	/**
@@ -236,8 +236,8 @@ public class FacilityImpl extends EntityTypedImpl<FacilityType> implements Facil
 	 * @generated
 	 */
 	@Override
-	public void setDefaultDimensionUomId(Uom newDefaultDimensionUomId) {
-		eSet(FacilityPackage.Literals.FACILITY__DEFAULT_DIMENSION_UOM_ID, newDefaultDimensionUomId);
+	public void setDefaultDimensionUom(Uom newDefaultDimensionUom) {
+		eSet(FacilityPackage.Literals.FACILITY__DEFAULT_DIMENSION_UOM, newDefaultDimensionUom);
 	}
 
 	/**
@@ -246,8 +246,8 @@ public class FacilityImpl extends EntityTypedImpl<FacilityType> implements Facil
 	 * @generated
 	 */
 	@Override
-	public InventoryItemType getDefaultInventoryItemTypeId() {
-		return (InventoryItemType)eGet(FacilityPackage.Literals.FACILITY__DEFAULT_INVENTORY_ITEM_TYPE_ID, true);
+	public InventoryItemType getDefaultInventoryItemType() {
+		return (InventoryItemType)eGet(FacilityPackage.Literals.FACILITY__DEFAULT_INVENTORY_ITEM_TYPE, true);
 	}
 
 	/**
@@ -256,8 +256,8 @@ public class FacilityImpl extends EntityTypedImpl<FacilityType> implements Facil
 	 * @generated
 	 */
 	@Override
-	public void setDefaultInventoryItemTypeId(InventoryItemType newDefaultInventoryItemTypeId) {
-		eSet(FacilityPackage.Literals.FACILITY__DEFAULT_INVENTORY_ITEM_TYPE_ID, newDefaultInventoryItemTypeId);
+	public void setDefaultInventoryItemType(InventoryItemType newDefaultInventoryItemType) {
+		eSet(FacilityPackage.Literals.FACILITY__DEFAULT_INVENTORY_ITEM_TYPE, newDefaultInventoryItemType);
 	}
 
 	/**
@@ -266,8 +266,8 @@ public class FacilityImpl extends EntityTypedImpl<FacilityType> implements Facil
 	 * @generated
 	 */
 	@Override
-	public Uom getDefaultWeightUomId() {
-		return (Uom)eGet(FacilityPackage.Literals.FACILITY__DEFAULT_WEIGHT_UOM_ID, true);
+	public Uom getDefaultWeightUom() {
+		return (Uom)eGet(FacilityPackage.Literals.FACILITY__DEFAULT_WEIGHT_UOM, true);
 	}
 
 	/**
@@ -276,8 +276,8 @@ public class FacilityImpl extends EntityTypedImpl<FacilityType> implements Facil
 	 * @generated
 	 */
 	@Override
-	public void setDefaultWeightUomId(Uom newDefaultWeightUomId) {
-		eSet(FacilityPackage.Literals.FACILITY__DEFAULT_WEIGHT_UOM_ID, newDefaultWeightUomId);
+	public void setDefaultWeightUom(Uom newDefaultWeightUom) {
+		eSet(FacilityPackage.Literals.FACILITY__DEFAULT_WEIGHT_UOM, newDefaultWeightUom);
 	}
 
 	/**
@@ -421,8 +421,8 @@ public class FacilityImpl extends EntityTypedImpl<FacilityType> implements Facil
 	 * @generated
 	 */
 	@Override
-	public Uom getFacilitySizeUomId() {
-		return (Uom)eGet(FacilityPackage.Literals.FACILITY__FACILITY_SIZE_UOM_ID, true);
+	public Uom getFacilitySizeUom() {
+		return (Uom)eGet(FacilityPackage.Literals.FACILITY__FACILITY_SIZE_UOM, true);
 	}
 
 	/**
@@ -431,8 +431,8 @@ public class FacilityImpl extends EntityTypedImpl<FacilityType> implements Facil
 	 * @generated
 	 */
 	@Override
-	public void setFacilitySizeUomId(Uom newFacilitySizeUomId) {
-		eSet(FacilityPackage.Literals.FACILITY__FACILITY_SIZE_UOM_ID, newFacilitySizeUomId);
+	public void setFacilitySizeUom(Uom newFacilitySizeUom) {
+		eSet(FacilityPackage.Literals.FACILITY__FACILITY_SIZE_UOM, newFacilitySizeUom);
 	}
 
 	/**
@@ -441,8 +441,8 @@ public class FacilityImpl extends EntityTypedImpl<FacilityType> implements Facil
 	 * @generated
 	 */
 	@Override
-	public GeoPoint getGeoPointId() {
-		return (GeoPoint)eGet(FacilityPackage.Literals.FACILITY__GEO_POINT_ID, true);
+	public FacilityType getFacilityType() {
+		return (FacilityType)eGet(FacilityPackage.Literals.FACILITY__FACILITY_TYPE, true);
 	}
 
 	/**
@@ -451,8 +451,28 @@ public class FacilityImpl extends EntityTypedImpl<FacilityType> implements Facil
 	 * @generated
 	 */
 	@Override
-	public void setGeoPointId(GeoPoint newGeoPointId) {
-		eSet(FacilityPackage.Literals.FACILITY__GEO_POINT_ID, newGeoPointId);
+	public void setFacilityType(FacilityType newFacilityType) {
+		eSet(FacilityPackage.Literals.FACILITY__FACILITY_TYPE, newFacilityType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GeoPoint getGeoPoint() {
+		return (GeoPoint)eGet(FacilityPackage.Literals.FACILITY__GEO_POINT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGeoPoint(GeoPoint newGeoPoint) {
+		eSet(FacilityPackage.Literals.FACILITY__GEO_POINT, newGeoPoint);
 	}
 
 	/**
@@ -501,8 +521,8 @@ public class FacilityImpl extends EntityTypedImpl<FacilityType> implements Facil
 	 * @generated
 	 */
 	@Override
-	public Party getOwnerPartyId() {
-		return (Party)eGet(FacilityPackage.Literals.FACILITY__OWNER_PARTY_ID, true);
+	public Party getOwnerParty() {
+		return (Party)eGet(FacilityPackage.Literals.FACILITY__OWNER_PARTY, true);
 	}
 
 	/**
@@ -511,8 +531,8 @@ public class FacilityImpl extends EntityTypedImpl<FacilityType> implements Facil
 	 * @generated
 	 */
 	@Override
-	public void setOwnerPartyId(Party newOwnerPartyId) {
-		eSet(FacilityPackage.Literals.FACILITY__OWNER_PARTY_ID, newOwnerPartyId);
+	public void setOwnerParty(Party newOwnerParty) {
+		eSet(FacilityPackage.Literals.FACILITY__OWNER_PARTY, newOwnerParty);
 	}
 
 	/**
@@ -521,8 +541,8 @@ public class FacilityImpl extends EntityTypedImpl<FacilityType> implements Facil
 	 * @generated
 	 */
 	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(FacilityPackage.Literals.FACILITY__PRODUCT_STORE_ID, true);
+	public Facility getParentFacility() {
+		return (Facility)eGet(FacilityPackage.Literals.FACILITY__PARENT_FACILITY, true);
 	}
 
 	/**
@@ -531,8 +551,48 @@ public class FacilityImpl extends EntityTypedImpl<FacilityType> implements Facil
 	 * @generated
 	 */
 	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(FacilityPackage.Literals.FACILITY__PRODUCT_STORE_ID, newProductStoreId);
+	public void setParentFacility(Facility newParentFacility) {
+		eSet(FacilityPackage.Literals.FACILITY__PARENT_FACILITY, newParentFacility);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FacilityGroup getPrimaryFacilityGroup() {
+		return (FacilityGroup)eGet(FacilityPackage.Literals.FACILITY__PRIMARY_FACILITY_GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPrimaryFacilityGroup(FacilityGroup newPrimaryFacilityGroup) {
+		eSet(FacilityPackage.Literals.FACILITY__PRIMARY_FACILITY_GROUP, newPrimaryFacilityGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(FacilityPackage.Literals.FACILITY__PRODUCT_STORE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(FacilityPackage.Literals.FACILITY__PRODUCT_STORE, newProductStore);
 	}
 
 	/**
@@ -571,66 +631,6 @@ public class FacilityImpl extends EntityTypedImpl<FacilityType> implements Facil
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Facility getParentFacilityId() {
-		return (Facility)eGet(FacilityPackage.Literals.FACILITY__PARENT_FACILITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentFacilityId(Facility newParentFacilityId) {
-		eSet(FacilityPackage.Literals.FACILITY__PARENT_FACILITY_ID, newParentFacilityId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FacilityGroup getPrimaryFacilityGroupId() {
-		return (FacilityGroup)eGet(FacilityPackage.Literals.FACILITY__PRIMARY_FACILITY_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPrimaryFacilityGroupId(FacilityGroup newPrimaryFacilityGroupId) {
-		eSet(FacilityPackage.Literals.FACILITY__PRIMARY_FACILITY_GROUP_ID, newPrimaryFacilityGroupId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FacilityType getFacilityTypeId() {
-		return (FacilityType)eGet(FacilityPackage.Literals.FACILITY__FACILITY_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityTypeId(FacilityType newFacilityTypeId) {
-		eSet(FacilityPackage.Literals.FACILITY__FACILITY_TYPE_ID, newFacilityTypeId);
 	}
 
 	/**

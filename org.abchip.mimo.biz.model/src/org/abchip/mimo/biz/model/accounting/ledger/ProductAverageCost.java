@@ -25,10 +25,10 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost#getProductAverageCostTypeId <em>Product Average Cost Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost#getOrganizationPartyId <em>Organization Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost#getProductAverageCostType <em>Product Average Cost Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost#getOrganizationParty <em>Organization Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost#getAverageCost <em>Average Cost</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost#getThruDate <em>Thru Date</em>}</li>
@@ -39,6 +39,98 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface ProductAverageCost extends EntityTyped<ProductAverageCostType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product Average Cost Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Average Cost Type</em>' reference.
+	 * @see #setProductAverageCostType(ProductAverageCostType)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getProductAverageCost_ProductAverageCostType()
+	 * @model keys="productAverageCostTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductAverageCostType getProductAverageCostType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost#getProductAverageCostType <em>Product Average Cost Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Average Cost Type</em>' reference.
+	 * @see #getProductAverageCostType()
+	 * @generated
+	 */
+	void setProductAverageCostType(ProductAverageCostType value);
+
+	/**
+	 * Returns the value of the '<em><b>Organization Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Organization Party</em>' reference.
+	 * @see #setOrganizationParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getProductAverageCost_OrganizationParty()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getOrganizationParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost#getOrganizationParty <em>Organization Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Organization Party</em>' reference.
+	 * @see #getOrganizationParty()
+	 * @generated
+	 */
+	void setOrganizationParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getProductAverageCost_Product()
+	 * @model keys="productId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
+
+	/**
+	 * Returns the value of the '<em><b>Facility</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Facility</em>' reference.
+	 * @see #setFacility(Facility)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getProductAverageCost_Facility()
+	 * @model keys="facilityId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Facility getFacility();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost#getFacility <em>Facility</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Facility</em>' reference.
+	 * @see #getFacility()
+	 * @generated
+	 */
+	void setFacility(Facility value);
+
 	/**
 	 * Returns the value of the '<em><b>Average Cost</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -64,33 +156,6 @@ public interface ProductAverageCost extends EntityTyped<ProductAverageCostType>,
 	 * @generated
 	 */
 	void setAverageCost(BigDecimal value);
-
-	/**
-	 * Returns the value of the '<em><b>Facility Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facility Id</em>' reference.
-	 * @see #setFacilityId(Facility)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getProductAverageCost_FacilityId()
-	 * @model keys="facilityId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Facility getFacilityId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost#getFacilityId <em>Facility Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Facility Id</em>' reference.
-	 * @see #getFacilityId()
-	 * @generated
-	 */
-	void setFacilityId(Facility value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -120,60 +185,6 @@ public interface ProductAverageCost extends EntityTyped<ProductAverageCostType>,
 	void setFromDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Organization Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Organization Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Organization Party Id</em>' reference.
-	 * @see #setOrganizationPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getProductAverageCost_OrganizationPartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getOrganizationPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost#getOrganizationPartyId <em>Organization Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Organization Party Id</em>' reference.
-	 * @see #getOrganizationPartyId()
-	 * @generated
-	 */
-	void setOrganizationPartyId(Party value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getProductAverageCost_ProductId()
-	 * @model keys="productId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Product getProductId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost#getProductId <em>Product Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
-	 * @generated
-	 */
-	void setProductId(Product value);
-
-	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -198,32 +209,5 @@ public interface ProductAverageCost extends EntityTyped<ProductAverageCostType>,
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Average Cost Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Average Cost Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Average Cost Type Id</em>' reference.
-	 * @see #setProductAverageCostTypeId(ProductAverageCostType)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getProductAverageCost_ProductAverageCostTypeId()
-	 * @model keys="productAverageCostTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductAverageCostType getProductAverageCostTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost#getProductAverageCostTypeId <em>Product Average Cost Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Average Cost Type Id</em>' reference.
-	 * @see #getProductAverageCostTypeId()
-	 * @generated
-	 */
-	void setProductAverageCostTypeId(ProductAverageCostType value);
 
 } // ProductAverageCost

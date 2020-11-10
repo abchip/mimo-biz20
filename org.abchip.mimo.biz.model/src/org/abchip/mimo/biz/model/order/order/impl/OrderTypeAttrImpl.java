@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeAttrImpl#getOrderTypeId <em>Order Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeAttrImpl#getOrderType <em>Order Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -152,6 +152,26 @@ public class OrderTypeAttrImpl extends EntityIdentifiableImpl implements OrderTy
 	 * @generated
 	 */
 	@Override
+	public OrderType getOrderType() {
+		return (OrderType)eGet(OrderPackage.Literals.ORDER_TYPE_ATTR__ORDER_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrderType(OrderType newOrderType) {
+		eSet(OrderPackage.Literals.ORDER_TYPE_ATTR__ORDER_TYPE, newOrderType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrName() {
 		return (String)eGet(OrderPackage.Literals.ORDER_TYPE_ATTR__ATTR_NAME, true);
 	}
@@ -222,26 +242,6 @@ public class OrderTypeAttrImpl extends EntityIdentifiableImpl implements OrderTy
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderType getOrderTypeId() {
-		return (OrderType)eGet(OrderPackage.Literals.ORDER_TYPE_ATTR__ORDER_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderTypeId(OrderType newOrderTypeId) {
-		eSet(OrderPackage.Literals.ORDER_TYPE_ATTR__ORDER_TYPE_ID, newOrderTypeId);
 	}
 
 } //OrderTypeAttrImpl

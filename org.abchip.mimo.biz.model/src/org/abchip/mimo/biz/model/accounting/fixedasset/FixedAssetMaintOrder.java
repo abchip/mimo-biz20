@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getFixedAssetId <em>Fixed Asset Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getFixedAsset <em>Fixed Asset</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getMaintHistSeqId <em>Maint Hist Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  * </ul>
@@ -31,6 +31,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface FixedAssetMaintOrder extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Fixed Asset</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fixed Asset</em>' reference.
+	 * @see #setFixedAsset(FixedAsset)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaintOrder_FixedAsset()
+	 * @model keys="fixedAssetId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	FixedAsset getFixedAsset();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getFixedAsset <em>Fixed Asset</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Fixed Asset</em>' reference.
+	 * @see #getFixedAsset()
+	 * @generated
+	 */
+	void setFixedAsset(FixedAsset value);
+
+	/**
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaintOrder_Order()
+	 * @model keys="orderId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	OrderHeader getOrder();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getOrder <em>Order</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
+	 * @generated
+	 */
+	void setOrder(OrderHeader value);
+
 	/**
 	 * Returns the value of the '<em><b>Maint Hist Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -60,33 +106,6 @@ public interface FixedAssetMaintOrder extends EntityIdentifiable, EntityInfo {
 	void setMaintHistSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaintOrder_OrderId()
-	 * @model keys="orderId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	OrderHeader getOrderId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getOrderId <em>Order Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
-	 * @generated
-	 */
-	void setOrderId(OrderHeader value);
-
-	/**
 	 * Returns the value of the '<em><b>Order Item Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -113,32 +132,5 @@ public interface FixedAssetMaintOrder extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setOrderItemSeqId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Fixed Asset Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fixed Asset Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fixed Asset Id</em>' reference.
-	 * @see #setFixedAssetId(FixedAsset)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaintOrder_FixedAssetId()
-	 * @model keys="fixedAssetId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	FixedAsset getFixedAssetId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getFixedAssetId <em>Fixed Asset Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fixed Asset Id</em>' reference.
-	 * @see #getFixedAssetId()
-	 * @generated
-	 */
-	void setFixedAssetId(FixedAsset value);
 
 } // FixedAssetMaintOrder

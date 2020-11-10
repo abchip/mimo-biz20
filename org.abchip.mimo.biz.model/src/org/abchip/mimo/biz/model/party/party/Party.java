@@ -41,7 +41,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyId <em>Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getCreatedDate <em>Created Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getDataSourceId <em>Data Source Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getDataSource <em>Data Source</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getEmplLeaves <em>Empl Leaves</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getExternalId <em>External Id</em>}</li>
@@ -62,11 +62,11 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyRates <em>Party Rates</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyRoles <em>Party Roles</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartySkills <em>Party Skills</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyTypeId <em>Party Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyType <em>Party Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPerformanceNotes <em>Performance Notes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPersonTrainings <em>Person Trainings</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPreferredCurrencyUomId <em>Preferred Currency Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPreferredCurrencyUom <em>Preferred Currency Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getSupplierProductFeatures <em>Supplier Product Features</em>}</li>
  * </ul>
  *
@@ -128,30 +128,26 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	void setCreatedDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Data Source Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Data Source</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Data Source Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Data Source Id</em>' reference.
-	 * @see #setDataSourceId(DataSource)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_DataSourceId()
+	 * @return the value of the '<em>Data Source</em>' reference.
+	 * @see #setDataSource(DataSource)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_DataSource()
 	 * @model keys="dataSourceId"
 	 * @generated
 	 */
-	DataSource getDataSourceId();
+	DataSource getDataSource();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.Party#getDataSourceId <em>Data Source Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.Party#getDataSource <em>Data Source</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Data Source Id</em>' reference.
-	 * @see #getDataSourceId()
+	 * @param value the new value of the '<em>Data Source</em>' reference.
+	 * @see #getDataSource()
 	 * @generated
 	 */
-	void setDataSourceId(DataSource value);
+	void setDataSource(DataSource value);
 
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
@@ -496,56 +492,26 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	List<PartySkill> getPartySkills();
 
 	/**
-	 * Returns the value of the '<em><b>Preferred Currency Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Preferred Currency Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Preferred Currency Uom Id</em>' reference.
-	 * @see #setPreferredCurrencyUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PreferredCurrencyUomId()
-	 * @model keys="uomId"
+	 * @return the value of the '<em>Party Type</em>' reference.
+	 * @see #setPartyType(PartyType)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyType()
+	 * @model keys="partyTypeId"
 	 * @generated
 	 */
-	Uom getPreferredCurrencyUomId();
+	PartyType getPartyType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.Party#getPreferredCurrencyUomId <em>Preferred Currency Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.Party#getPartyType <em>Party Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Preferred Currency Uom Id</em>' reference.
-	 * @see #getPreferredCurrencyUomId()
+	 * @param value the new value of the '<em>Party Type</em>' reference.
+	 * @see #getPartyType()
 	 * @generated
 	 */
-	void setPreferredCurrencyUomId(Uom value);
-
-	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_StatusId()
-	 * @model keys="statusId"
-	 * @generated
-	 */
-	StatusItem getStatusId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.Party#getStatusId <em>Status Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
-	 * @generated
-	 */
-	void setStatusId(StatusItem value);
+	void setPartyType(PartyType value);
 
 	/**
 	 * Returns the value of the '<em><b>Supplier Product Features</b></em>' reference list.
@@ -604,32 +570,6 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	ContactMech getEmail();
 
 	/**
-	 * Returns the value of the '<em><b>Party Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Type Id</em>' reference.
-	 * @see #setPartyTypeId(PartyType)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyTypeId()
-	 * @model keys="partyTypeId"
-	 * @generated
-	 */
-	PartyType getPartyTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.Party#getPartyTypeId <em>Party Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Type Id</em>' reference.
-	 * @see #getPartyTypeId()
-	 * @generated
-	 */
-	void setPartyTypeId(PartyType value);
-
-	/**
 	 * Returns the value of the '<em><b>Performance Notes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.humanres.ability.PerformanceNote}.
 	 * <!-- begin-user-doc -->
@@ -654,6 +594,50 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * @generated
 	 */
 	List<PersonTraining> getPersonTrainings();
+
+	/**
+	 * Returns the value of the '<em><b>Preferred Currency Uom</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Preferred Currency Uom</em>' reference.
+	 * @see #setPreferredCurrencyUom(Uom)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PreferredCurrencyUom()
+	 * @model keys="uomId"
+	 * @generated
+	 */
+	Uom getPreferredCurrencyUom();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.Party#getPreferredCurrencyUom <em>Preferred Currency Uom</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Preferred Currency Uom</em>' reference.
+	 * @see #getPreferredCurrencyUom()
+	 * @generated
+	 */
+	void setPreferredCurrencyUom(Uom value);
+
+	/**
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_Status()
+	 * @model keys="statusId"
+	 * @generated
+	 */
+	StatusItem getStatus();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.Party#getStatus <em>Status</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
+	 * @generated
+	 */
+	void setStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Party Id</b></em>' attribute.

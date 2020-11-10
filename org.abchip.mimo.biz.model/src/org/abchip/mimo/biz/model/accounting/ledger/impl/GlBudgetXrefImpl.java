@@ -31,8 +31,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlBudgetXrefImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlBudgetXrefImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlBudgetXrefImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlBudgetXrefImpl#getGlAccountId <em>Gl Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlBudgetXrefImpl#getBudgetItemTypeId <em>Budget Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlBudgetXrefImpl#getGlAccount <em>Gl Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlBudgetXrefImpl#getBudgetItemType <em>Budget Item Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlBudgetXrefImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlBudgetXrefImpl#getAllocationPercentage <em>Allocation Percentage</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlBudgetXrefImpl#getThruDate <em>Thru Date</em>}</li>
@@ -156,6 +156,46 @@ public class GlBudgetXrefImpl extends EntityIdentifiableImpl implements GlBudget
 	 * @generated
 	 */
 	@Override
+	public GlAccount getGlAccount() {
+		return (GlAccount)eGet(LedgerPackage.Literals.GL_BUDGET_XREF__GL_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGlAccount(GlAccount newGlAccount) {
+		eSet(LedgerPackage.Literals.GL_BUDGET_XREF__GL_ACCOUNT, newGlAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BudgetItemType getBudgetItemType() {
+		return (BudgetItemType)eGet(LedgerPackage.Literals.GL_BUDGET_XREF__BUDGET_ITEM_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBudgetItemType(BudgetItemType newBudgetItemType) {
+		eSet(LedgerPackage.Literals.GL_BUDGET_XREF__BUDGET_ITEM_TYPE, newBudgetItemType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAllocationPercentage() {
 		return (BigDecimal)eGet(LedgerPackage.Literals.GL_BUDGET_XREF__ALLOCATION_PERCENTAGE, true);
 	}
@@ -246,46 +286,6 @@ public class GlBudgetXrefImpl extends EntityIdentifiableImpl implements GlBudget
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GlAccount getGlAccountId() {
-		return (GlAccount)eGet(LedgerPackage.Literals.GL_BUDGET_XREF__GL_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGlAccountId(GlAccount newGlAccountId) {
-		eSet(LedgerPackage.Literals.GL_BUDGET_XREF__GL_ACCOUNT_ID, newGlAccountId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public BudgetItemType getBudgetItemTypeId() {
-		return (BudgetItemType)eGet(LedgerPackage.Literals.GL_BUDGET_XREF__BUDGET_ITEM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBudgetItemTypeId(BudgetItemType newBudgetItemTypeId) {
-		eSet(LedgerPackage.Literals.GL_BUDGET_XREF__BUDGET_ITEM_TYPE_ID, newBudgetItemTypeId);
 	}
 
 } //GlBudgetXrefImpl

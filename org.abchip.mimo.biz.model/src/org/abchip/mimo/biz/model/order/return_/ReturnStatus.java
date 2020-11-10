@@ -23,11 +23,11 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnStatus#getReturnStatusId <em>Return Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnStatus#getChangeByUserLoginId <em>Change By User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnStatus#getReturnId <em>Return Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnStatus#getChangeByUserLogin <em>Change By User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnStatus#getReturn <em>Return</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnStatus#getReturnItemSeqId <em>Return Item Seq Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnStatus#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnStatus#getStatusDatetime <em>Status Datetime</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnStatus#getStatusId <em>Status Id</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnStatus()
@@ -35,58 +35,6 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ReturnStatus extends EntityIdentifiable, EntityInfo {
-	/**
-	 * Returns the value of the '<em><b>Change By User Login Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Change By User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Change By User Login Id</em>' reference.
-	 * @see #setChangeByUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnStatus_ChangeByUserLoginId()
-	 * @model keys="userLoginId"
-	 * @generated
-	 */
-	UserLogin getChangeByUserLoginId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnStatus#getChangeByUserLoginId <em>Change By User Login Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Change By User Login Id</em>' reference.
-	 * @see #getChangeByUserLoginId()
-	 * @generated
-	 */
-	void setChangeByUserLoginId(UserLogin value);
-
-	/**
-	 * Returns the value of the '<em><b>Return Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Return Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Return Id</em>' reference.
-	 * @see #setReturnId(ReturnHeader)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnStatus_ReturnId()
-	 * @model keys="returnId"
-	 * @generated
-	 */
-	ReturnHeader getReturnId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnStatus#getReturnId <em>Return Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Return Id</em>' reference.
-	 * @see #getReturnId()
-	 * @generated
-	 */
-	void setReturnId(ReturnHeader value);
-
 	/**
 	 * Returns the value of the '<em><b>Return Item Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -112,6 +60,28 @@ public interface ReturnStatus extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setReturnItemSeqId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnStatus_Status()
+	 * @model keys="statusId"
+	 * @generated
+	 */
+	StatusItem getStatus();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnStatus#getStatus <em>Status</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
+	 * @generated
+	 */
+	void setStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Return Status Id</b></em>' attribute.
@@ -141,6 +111,50 @@ public interface ReturnStatus extends EntityIdentifiable, EntityInfo {
 	void setReturnStatusId(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Change By User Login</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Change By User Login</em>' reference.
+	 * @see #setChangeByUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnStatus_ChangeByUserLogin()
+	 * @model keys="userLoginId"
+	 * @generated
+	 */
+	UserLogin getChangeByUserLogin();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnStatus#getChangeByUserLogin <em>Change By User Login</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Change By User Login</em>' reference.
+	 * @see #getChangeByUserLogin()
+	 * @generated
+	 */
+	void setChangeByUserLogin(UserLogin value);
+
+	/**
+	 * Returns the value of the '<em><b>Return</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Return</em>' reference.
+	 * @see #setReturn(ReturnHeader)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnStatus_Return()
+	 * @model keys="returnId"
+	 * @generated
+	 */
+	ReturnHeader getReturn();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnStatus#getReturn <em>Return</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Return</em>' reference.
+	 * @see #getReturn()
+	 * @generated
+	 */
+	void setReturn(ReturnHeader value);
+
+	/**
 	 * Returns the value of the '<em><b>Status Datetime</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -165,31 +179,5 @@ public interface ReturnStatus extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setStatusDatetime(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnStatus_StatusId()
-	 * @model keys="statusId"
-	 * @generated
-	 */
-	StatusItem getStatusId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnStatus#getStatusId <em>Status Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
-	 * @generated
-	 */
-	void setStatusId(StatusItem value);
 
 } // ReturnStatus

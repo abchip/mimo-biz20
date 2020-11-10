@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.SalaryStepImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.SalaryStepImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.SalaryStepImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.SalaryStepImpl#getPayGradeId <em>Pay Grade Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.SalaryStepImpl#getPayGrade <em>Pay Grade</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.SalaryStepImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.SalaryStepImpl#getSalaryStepSeqId <em>Salary Step Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.SalaryStepImpl#getAmount <em>Amount</em>}</li>
@@ -159,6 +159,26 @@ public class SalaryStepImpl extends EntityIdentifiableImpl implements SalaryStep
 	 * @generated
 	 */
 	@Override
+	public PayGrade getPayGrade() {
+		return (PayGrade)eGet(EmploymentPackage.Literals.SALARY_STEP__PAY_GRADE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPayGrade(PayGrade newPayGrade) {
+		eSet(EmploymentPackage.Literals.SALARY_STEP__PAY_GRADE, newPayGrade);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAmount() {
 		return (BigDecimal)eGet(EmploymentPackage.Literals.SALARY_STEP__AMOUNT, true);
 	}
@@ -251,26 +271,6 @@ public class SalaryStepImpl extends EntityIdentifiableImpl implements SalaryStep
 	@Override
 	public void setLastModifiedByUserLogin(String newLastModifiedByUserLogin) {
 		eSet(EmploymentPackage.Literals.SALARY_STEP__LAST_MODIFIED_BY_USER_LOGIN, newLastModifiedByUserLogin);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PayGrade getPayGradeId() {
-		return (PayGrade)eGet(EmploymentPackage.Literals.SALARY_STEP__PAY_GRADE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPayGradeId(PayGrade newPayGradeId) {
-		eSet(EmploymentPackage.Literals.SALARY_STEP__PAY_GRADE_ID, newPayGradeId);
 	}
 
 	/**

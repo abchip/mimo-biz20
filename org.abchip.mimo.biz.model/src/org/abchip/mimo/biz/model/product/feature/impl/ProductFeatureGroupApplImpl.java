@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureGroupApplImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureGroupApplImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureGroupApplImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureGroupApplImpl#getProductFeatureGroupId <em>Product Feature Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureGroupApplImpl#getProductFeatureId <em>Product Feature Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureGroupApplImpl#getProductFeatureGroup <em>Product Feature Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureGroupApplImpl#getProductFeature <em>Product Feature</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureGroupApplImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureGroupApplImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureGroupApplImpl#getThruDate <em>Thru Date</em>}</li>
@@ -155,6 +155,46 @@ public class ProductFeatureGroupApplImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
+	public ProductFeatureGroup getProductFeatureGroup() {
+		return (ProductFeatureGroup)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_GROUP_APPL__PRODUCT_FEATURE_GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductFeatureGroup(ProductFeatureGroup newProductFeatureGroup) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_GROUP_APPL__PRODUCT_FEATURE_GROUP, newProductFeatureGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductFeature getProductFeature() {
+		return (ProductFeature)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_GROUP_APPL__PRODUCT_FEATURE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductFeature(ProductFeature newProductFeature) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_GROUP_APPL__PRODUCT_FEATURE, newProductFeature);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_GROUP_APPL__FROM_DATE, true);
 	}
@@ -245,46 +285,6 @@ public class ProductFeatureGroupApplImpl extends EntityIdentifiableImpl implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductFeatureGroup getProductFeatureGroupId() {
-		return (ProductFeatureGroup)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_GROUP_APPL__PRODUCT_FEATURE_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductFeatureGroupId(ProductFeatureGroup newProductFeatureGroupId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_GROUP_APPL__PRODUCT_FEATURE_GROUP_ID, newProductFeatureGroupId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductFeature getProductFeatureId() {
-		return (ProductFeature)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_GROUP_APPL__PRODUCT_FEATURE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductFeatureId(ProductFeature newProductFeatureId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_GROUP_APPL__PRODUCT_FEATURE_ID, newProductFeatureId);
 	}
 
 } //ProductFeatureGroupApplImpl

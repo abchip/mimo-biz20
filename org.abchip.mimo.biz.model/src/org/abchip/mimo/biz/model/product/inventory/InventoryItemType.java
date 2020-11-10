@@ -24,7 +24,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemType#isHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemType#getInventoryItemTypeAttrs <em>Inventory Item Type Attrs</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemType()
@@ -101,30 +101,26 @@ public interface InventoryItemType extends EntityType<InventoryItem>, EntityInfo
 	List<InventoryItemTypeAttr> getInventoryItemTypeAttrs();
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(InventoryItemType)
-	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(InventoryItemType)
+	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemType_ParentType()
 	 * @model keys="inventoryItemTypeId"
 	 * @generated
 	 */
-	InventoryItemType getParentTypeId();
+	InventoryItemType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(InventoryItemType value);
+	void setParentType(InventoryItemType value);
 
 	/**
 	 * Returns the value of the '<em><b>Inventory Item Type Id</b></em>' attribute.

@@ -37,27 +37,27 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getQuoteId <em>Quote Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getQuote <em>Quote</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getQuoteItemSeqId <em>Quote Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getConfigId <em>Config Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getCustRequestId <em>Cust Request Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getCustRequest <em>Cust Request</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getCustRequestItemSeqId <em>Cust Request Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getDeliverableTypeId <em>Deliverable Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getDeliverableType <em>Deliverable Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getEstimatedDeliveryDate <em>Estimated Delivery Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getIsPromo <em>Is Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getLeadTimeDays <em>Lead Time Days</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getProductFeatureId <em>Product Feature Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getProductFeature <em>Product Feature</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getQuoteUnitPrice <em>Quote Unit Price</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getReservLength <em>Reserv Length</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getReservPersons <em>Reserv Persons</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getReservStart <em>Reserv Start</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getSelectedAmount <em>Selected Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getSkillTypeId <em>Skill Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getUomId <em>Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getSkillType <em>Skill Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getUom <em>Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getWorkEffort <em>Work Effort</em>}</li>
  * </ul>
  *
  * @generated
@@ -179,6 +179,26 @@ public class QuoteItemImpl extends EntityIdentifiableImpl implements QuoteItem {
 	 * @generated
 	 */
 	@Override
+	public Quote getQuote() {
+		return (Quote)eGet(QuotePackage.Literals.QUOTE_ITEM__QUOTE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setQuote(Quote newQuote) {
+		eSet(QuotePackage.Literals.QUOTE_ITEM__QUOTE, newQuote);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getComments() {
 		return (String)eGet(QuotePackage.Literals.QUOTE_ITEM__COMMENTS, true);
 	}
@@ -219,8 +239,8 @@ public class QuoteItemImpl extends EntityIdentifiableImpl implements QuoteItem {
 	 * @generated
 	 */
 	@Override
-	public CustRequest getCustRequestId() {
-		return (CustRequest)eGet(QuotePackage.Literals.QUOTE_ITEM__CUST_REQUEST_ID, true);
+	public CustRequest getCustRequest() {
+		return (CustRequest)eGet(QuotePackage.Literals.QUOTE_ITEM__CUST_REQUEST, true);
 	}
 
 	/**
@@ -229,8 +249,8 @@ public class QuoteItemImpl extends EntityIdentifiableImpl implements QuoteItem {
 	 * @generated
 	 */
 	@Override
-	public void setCustRequestId(CustRequest newCustRequestId) {
-		eSet(QuotePackage.Literals.QUOTE_ITEM__CUST_REQUEST_ID, newCustRequestId);
+	public void setCustRequest(CustRequest newCustRequest) {
+		eSet(QuotePackage.Literals.QUOTE_ITEM__CUST_REQUEST, newCustRequest);
 	}
 
 	/**
@@ -259,8 +279,8 @@ public class QuoteItemImpl extends EntityIdentifiableImpl implements QuoteItem {
 	 * @generated
 	 */
 	@Override
-	public DeliverableType getDeliverableTypeId() {
-		return (DeliverableType)eGet(QuotePackage.Literals.QUOTE_ITEM__DELIVERABLE_TYPE_ID, true);
+	public DeliverableType getDeliverableType() {
+		return (DeliverableType)eGet(QuotePackage.Literals.QUOTE_ITEM__DELIVERABLE_TYPE, true);
 	}
 
 	/**
@@ -269,8 +289,8 @@ public class QuoteItemImpl extends EntityIdentifiableImpl implements QuoteItem {
 	 * @generated
 	 */
 	@Override
-	public void setDeliverableTypeId(DeliverableType newDeliverableTypeId) {
-		eSet(QuotePackage.Literals.QUOTE_ITEM__DELIVERABLE_TYPE_ID, newDeliverableTypeId);
+	public void setDeliverableType(DeliverableType newDeliverableType) {
+		eSet(QuotePackage.Literals.QUOTE_ITEM__DELIVERABLE_TYPE, newDeliverableType);
 	}
 
 	/**
@@ -339,8 +359,8 @@ public class QuoteItemImpl extends EntityIdentifiableImpl implements QuoteItem {
 	 * @generated
 	 */
 	@Override
-	public ProductFeature getProductFeatureId() {
-		return (ProductFeature)eGet(QuotePackage.Literals.QUOTE_ITEM__PRODUCT_FEATURE_ID, true);
+	public Product getProduct() {
+		return (Product)eGet(QuotePackage.Literals.QUOTE_ITEM__PRODUCT, true);
 	}
 
 	/**
@@ -349,8 +369,8 @@ public class QuoteItemImpl extends EntityIdentifiableImpl implements QuoteItem {
 	 * @generated
 	 */
 	@Override
-	public void setProductFeatureId(ProductFeature newProductFeatureId) {
-		eSet(QuotePackage.Literals.QUOTE_ITEM__PRODUCT_FEATURE_ID, newProductFeatureId);
+	public void setProduct(Product newProduct) {
+		eSet(QuotePackage.Literals.QUOTE_ITEM__PRODUCT, newProduct);
 	}
 
 	/**
@@ -359,8 +379,8 @@ public class QuoteItemImpl extends EntityIdentifiableImpl implements QuoteItem {
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(QuotePackage.Literals.QUOTE_ITEM__PRODUCT_ID, true);
+	public ProductFeature getProductFeature() {
+		return (ProductFeature)eGet(QuotePackage.Literals.QUOTE_ITEM__PRODUCT_FEATURE, true);
 	}
 
 	/**
@@ -369,8 +389,8 @@ public class QuoteItemImpl extends EntityIdentifiableImpl implements QuoteItem {
 	 * @generated
 	 */
 	@Override
-	public void setProductId(Product newProductId) {
-		eSet(QuotePackage.Literals.QUOTE_ITEM__PRODUCT_ID, newProductId);
+	public void setProductFeature(ProductFeature newProductFeature) {
+		eSet(QuotePackage.Literals.QUOTE_ITEM__PRODUCT_FEATURE, newProductFeature);
 	}
 
 	/**
@@ -391,26 +411,6 @@ public class QuoteItemImpl extends EntityIdentifiableImpl implements QuoteItem {
 	@Override
 	public void setQuantity(BigDecimal newQuantity) {
 		eSet(QuotePackage.Literals.QUOTE_ITEM__QUANTITY, newQuantity);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Quote getQuoteId() {
-		return (Quote)eGet(QuotePackage.Literals.QUOTE_ITEM__QUOTE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setQuoteId(Quote newQuoteId) {
-		eSet(QuotePackage.Literals.QUOTE_ITEM__QUOTE_ID, newQuoteId);
 	}
 
 	/**
@@ -539,8 +539,8 @@ public class QuoteItemImpl extends EntityIdentifiableImpl implements QuoteItem {
 	 * @generated
 	 */
 	@Override
-	public SkillType getSkillTypeId() {
-		return (SkillType)eGet(QuotePackage.Literals.QUOTE_ITEM__SKILL_TYPE_ID, true);
+	public SkillType getSkillType() {
+		return (SkillType)eGet(QuotePackage.Literals.QUOTE_ITEM__SKILL_TYPE, true);
 	}
 
 	/**
@@ -549,8 +549,8 @@ public class QuoteItemImpl extends EntityIdentifiableImpl implements QuoteItem {
 	 * @generated
 	 */
 	@Override
-	public void setSkillTypeId(SkillType newSkillTypeId) {
-		eSet(QuotePackage.Literals.QUOTE_ITEM__SKILL_TYPE_ID, newSkillTypeId);
+	public void setSkillType(SkillType newSkillType) {
+		eSet(QuotePackage.Literals.QUOTE_ITEM__SKILL_TYPE, newSkillType);
 	}
 
 	/**
@@ -559,8 +559,8 @@ public class QuoteItemImpl extends EntityIdentifiableImpl implements QuoteItem {
 	 * @generated
 	 */
 	@Override
-	public Uom getUomId() {
-		return (Uom)eGet(QuotePackage.Literals.QUOTE_ITEM__UOM_ID, true);
+	public Uom getUom() {
+		return (Uom)eGet(QuotePackage.Literals.QUOTE_ITEM__UOM, true);
 	}
 
 	/**
@@ -569,8 +569,8 @@ public class QuoteItemImpl extends EntityIdentifiableImpl implements QuoteItem {
 	 * @generated
 	 */
 	@Override
-	public void setUomId(Uom newUomId) {
-		eSet(QuotePackage.Literals.QUOTE_ITEM__UOM_ID, newUomId);
+	public void setUom(Uom newUom) {
+		eSet(QuotePackage.Literals.QUOTE_ITEM__UOM, newUom);
 	}
 
 	/**
@@ -579,8 +579,8 @@ public class QuoteItemImpl extends EntityIdentifiableImpl implements QuoteItem {
 	 * @generated
 	 */
 	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(QuotePackage.Literals.QUOTE_ITEM__WORK_EFFORT_ID, true);
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(QuotePackage.Literals.QUOTE_ITEM__WORK_EFFORT, true);
 	}
 
 	/**
@@ -589,8 +589,8 @@ public class QuoteItemImpl extends EntityIdentifiableImpl implements QuoteItem {
 	 * @generated
 	 */
 	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(QuotePackage.Literals.QUOTE_ITEM__WORK_EFFORT_ID, newWorkEffortId);
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(QuotePackage.Literals.QUOTE_ITEM__WORK_EFFORT, newWorkEffort);
 	}
 
 	/**

@@ -25,8 +25,8 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestType#getCustRequestTypeAttrs <em>Cust Request Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestType#getParentTypeId <em>Parent Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestType#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestType#getParentType <em>Parent Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestType#getParty <em>Party</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestType()
@@ -130,56 +130,48 @@ public interface CustRequestType extends EntityType<CustRequest>, EntityInfo {
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(CustRequestType)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(CustRequestType)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestType_ParentType()
 	 * @model keys="custRequestTypeId"
 	 * @generated
 	 */
-	CustRequestType getParentTypeId();
+	CustRequestType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(CustRequestType value);
+	void setParentType(CustRequestType value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestType_PartyId()
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestType_Party()
 	 * @model keys="partyId"
 	 *        annotation="mimo-ent-slot help='party or party group(via partyRelationShip entity) responsible for responding to the communication request of this particular type'"
 	 * @generated
 	 */
-	Party getPartyId();
+	Party getParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestType#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestType#getParty <em>Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setParty(Party value);
 
 } // CustRequestType

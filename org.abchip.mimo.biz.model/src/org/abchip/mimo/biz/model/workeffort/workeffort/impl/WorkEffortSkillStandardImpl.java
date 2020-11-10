@@ -31,8 +31,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSkillStandardImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSkillStandardImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSkillStandardImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSkillStandardImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSkillStandardImpl#getSkillTypeId <em>Skill Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSkillStandardImpl#getWorkEffort <em>Work Effort</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSkillStandardImpl#getSkillType <em>Skill Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSkillStandardImpl#getEstimatedCost <em>Estimated Cost</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSkillStandardImpl#getEstimatedDuration <em>Estimated Duration</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSkillStandardImpl#getEstimatedNumPeople <em>Estimated Num People</em>}</li>
@@ -157,6 +157,46 @@ public class WorkEffortSkillStandardImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_SKILL_STANDARD__WORK_EFFORT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_SKILL_STANDARD__WORK_EFFORT, newWorkEffort);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SkillType getSkillType() {
+		return (SkillType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_SKILL_STANDARD__SKILL_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSkillType(SkillType newSkillType) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_SKILL_STANDARD__SKILL_TYPE, newSkillType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getEstimatedCost() {
 		return (BigDecimal)eGet(WorkeffortPackage.Literals.WORK_EFFORT_SKILL_STANDARD__ESTIMATED_COST, true);
 	}
@@ -247,46 +287,6 @@ public class WorkEffortSkillStandardImpl extends EntityIdentifiableImpl implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SkillType getSkillTypeId() {
-		return (SkillType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_SKILL_STANDARD__SKILL_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSkillTypeId(SkillType newSkillTypeId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_SKILL_STANDARD__SKILL_TYPE_ID, newSkillTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_SKILL_STANDARD__WORK_EFFORT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_SKILL_STANDARD__WORK_EFFORT_ID, newWorkEffortId);
 	}
 
 } //WorkEffortSkillStandardImpl

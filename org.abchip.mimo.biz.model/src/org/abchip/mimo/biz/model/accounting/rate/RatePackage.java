@@ -108,22 +108,22 @@ public interface RatePackage extends EPackage {
 	int PARTY_RATE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RATE__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int PARTY_RATE__PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Rate Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Rate Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RATE__RATE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int PARTY_RATE__RATE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -217,58 +217,58 @@ public interface RatePackage extends EPackage {
 	int RATE_AMOUNT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Rate Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Rate Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RATE_AMOUNT__RATE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int RATE_AMOUNT__RATE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Rate Currency Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Rate Currency Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RATE_AMOUNT__RATE_CURRENCY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int RATE_AMOUNT__RATE_CURRENCY_UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RATE_AMOUNT__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int RATE_AMOUNT__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RATE_AMOUNT__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int RATE_AMOUNT__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Empl Position Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Empl Position Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RATE_AMOUNT__EMPL_POSITION_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int RATE_AMOUNT__EMPL_POSITION_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Period Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Period Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RATE_AMOUNT__PERIOD_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int RATE_AMOUNT__PERIOD_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -400,26 +400,26 @@ public interface RatePackage extends EPackage {
 	EClass getPartyRate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.rate.PartyRate#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.rate.PartyRate#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.rate.PartyRate#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.rate.PartyRate#getParty()
 	 * @see #getPartyRate()
 	 * @generated
 	 */
-	EReference getPartyRate_PartyId();
+	EReference getPartyRate_Party();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.rate.PartyRate#getRateTypeId <em>Rate Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.rate.PartyRate#getRateType <em>Rate Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Rate Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.rate.PartyRate#getRateTypeId()
+	 * @return the meta object for the reference '<em>Rate Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.rate.PartyRate#getRateType()
 	 * @see #getPartyRate()
 	 * @generated
 	 */
-	EReference getPartyRate_RateTypeId();
+	EReference getPartyRate_RateType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.rate.PartyRate#getFromDate <em>From Date</em>}'.
@@ -476,70 +476,70 @@ public interface RatePackage extends EPackage {
 	EClass getRateAmount();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getRateTypeId <em>Rate Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getRateType <em>Rate Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Rate Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.rate.RateAmount#getRateTypeId()
+	 * @return the meta object for the reference '<em>Rate Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.rate.RateAmount#getRateType()
 	 * @see #getRateAmount()
 	 * @generated
 	 */
-	EReference getRateAmount_RateTypeId();
+	EReference getRateAmount_RateType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getRateCurrencyUomId <em>Rate Currency Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getRateCurrencyUom <em>Rate Currency Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Rate Currency Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.rate.RateAmount#getRateCurrencyUomId()
+	 * @return the meta object for the reference '<em>Rate Currency Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.rate.RateAmount#getRateCurrencyUom()
 	 * @see #getRateAmount()
 	 * @generated
 	 */
-	EReference getRateAmount_RateCurrencyUomId();
+	EReference getRateAmount_RateCurrencyUom();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getPeriodTypeId <em>Period Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Period Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.rate.RateAmount#getPeriodTypeId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.rate.RateAmount#getWorkEffort()
 	 * @see #getRateAmount()
 	 * @generated
 	 */
-	EReference getRateAmount_PeriodTypeId();
+	EReference getRateAmount_WorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.rate.RateAmount#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.rate.RateAmount#getParty()
 	 * @see #getRateAmount()
 	 * @generated
 	 */
-	EReference getRateAmount_PartyId();
+	EReference getRateAmount_Party();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getEmplPositionType <em>Empl Position Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.rate.RateAmount#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Empl Position Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.rate.RateAmount#getEmplPositionType()
 	 * @see #getRateAmount()
 	 * @generated
 	 */
-	EReference getRateAmount_WorkEffortId();
+	EReference getRateAmount_EmplPositionType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getEmplPositionTypeId <em>Empl Position Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getPeriodType <em>Period Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Empl Position Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.rate.RateAmount#getEmplPositionTypeId()
+	 * @return the meta object for the reference '<em>Period Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.rate.RateAmount#getPeriodType()
 	 * @see #getRateAmount()
 	 * @generated
 	 */
-	EReference getRateAmount_EmplPositionTypeId();
+	EReference getRateAmount_PeriodType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getFromDate <em>From Date</em>}'.
@@ -639,20 +639,20 @@ public interface RatePackage extends EPackage {
 		EClass PARTY_RATE = eINSTANCE.getPartyRate();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PARTY_RATE__PARTY_ID = eINSTANCE.getPartyRate_PartyId();
+		EReference PARTY_RATE__PARTY = eINSTANCE.getPartyRate_Party();
 
 		/**
-		 * The meta object literal for the '<em><b>Rate Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Rate Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PARTY_RATE__RATE_TYPE_ID = eINSTANCE.getPartyRate_RateTypeId();
+		EReference PARTY_RATE__RATE_TYPE = eINSTANCE.getPartyRate_RateType();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -697,52 +697,52 @@ public interface RatePackage extends EPackage {
 		EClass RATE_AMOUNT = eINSTANCE.getRateAmount();
 
 		/**
-		 * The meta object literal for the '<em><b>Rate Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Rate Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference RATE_AMOUNT__RATE_TYPE_ID = eINSTANCE.getRateAmount_RateTypeId();
+		EReference RATE_AMOUNT__RATE_TYPE = eINSTANCE.getRateAmount_RateType();
 
 		/**
-		 * The meta object literal for the '<em><b>Rate Currency Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Rate Currency Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference RATE_AMOUNT__RATE_CURRENCY_UOM_ID = eINSTANCE.getRateAmount_RateCurrencyUomId();
+		EReference RATE_AMOUNT__RATE_CURRENCY_UOM = eINSTANCE.getRateAmount_RateCurrencyUom();
 
 		/**
-		 * The meta object literal for the '<em><b>Period Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference RATE_AMOUNT__PERIOD_TYPE_ID = eINSTANCE.getRateAmount_PeriodTypeId();
+		EReference RATE_AMOUNT__WORK_EFFORT = eINSTANCE.getRateAmount_WorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference RATE_AMOUNT__PARTY_ID = eINSTANCE.getRateAmount_PartyId();
+		EReference RATE_AMOUNT__PARTY = eINSTANCE.getRateAmount_Party();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Empl Position Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference RATE_AMOUNT__WORK_EFFORT_ID = eINSTANCE.getRateAmount_WorkEffortId();
+		EReference RATE_AMOUNT__EMPL_POSITION_TYPE = eINSTANCE.getRateAmount_EmplPositionType();
 
 		/**
-		 * The meta object literal for the '<em><b>Empl Position Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Period Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference RATE_AMOUNT__EMPL_POSITION_TYPE_ID = eINSTANCE.getRateAmount_EmplPositionTypeId();
+		EReference RATE_AMOUNT__PERIOD_TYPE = eINSTANCE.getRateAmount_PeriodType();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.

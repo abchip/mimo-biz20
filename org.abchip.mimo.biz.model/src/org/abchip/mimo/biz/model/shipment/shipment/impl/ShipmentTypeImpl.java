@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTypeImpl#getShipmentTypeId <em>Shipment Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTypeImpl#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTypeImpl#getShipmentTypeAttrs <em>Shipment Type Attrs</em>}</li>
  * </ul>
  *
@@ -203,8 +203,8 @@ public class ShipmentTypeImpl extends EntityTypeImpl<Shipment> implements Shipme
 	 * @generated
 	 */
 	@Override
-	public ShipmentType getParentTypeId() {
-		return (ShipmentType)eGet(Shipment_Package.Literals.SHIPMENT_TYPE__PARENT_TYPE_ID, true);
+	public ShipmentType getParentType() {
+		return (ShipmentType)eGet(Shipment_Package.Literals.SHIPMENT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -213,8 +213,8 @@ public class ShipmentTypeImpl extends EntityTypeImpl<Shipment> implements Shipme
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(ShipmentType newParentTypeId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(ShipmentType newParentType) {
+		eSet(Shipment_Package.Literals.SHIPMENT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

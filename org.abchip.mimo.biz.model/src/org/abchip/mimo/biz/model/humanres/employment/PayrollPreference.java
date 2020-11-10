@@ -26,17 +26,17 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getPayrollPreferenceSeqId <em>Payroll Preference Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getRoleTypeId <em>Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getAccountNumber <em>Account Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getBankName <em>Bank Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getDeductionTypeId <em>Deduction Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getDeductionType <em>Deduction Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getFlatAmount <em>Flat Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getPaymentMethodTypeId <em>Payment Method Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getPaymentMethodType <em>Payment Method Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getPercentage <em>Percentage</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getPeriodTypeId <em>Period Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getPeriodType <em>Period Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getRoutingNumber <em>Routing Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -46,6 +46,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface PayrollPreference extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayrollPreference_Party()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getParty <em>Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
+	 * @generated
+	 */
+	void setParty(Party value);
+
 	/**
 	 * Returns the value of the '<em><b>Account Number</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -99,30 +122,26 @@ public interface PayrollPreference extends EntityIdentifiable, EntityInfo {
 	void setBankName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Deduction Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Deduction Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Deduction Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Deduction Type Id</em>' reference.
-	 * @see #setDeductionTypeId(DeductionType)
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayrollPreference_DeductionTypeId()
+	 * @return the value of the '<em>Deduction Type</em>' reference.
+	 * @see #setDeductionType(DeductionType)
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayrollPreference_DeductionType()
 	 * @model keys="deductionTypeId"
 	 * @generated
 	 */
-	DeductionType getDeductionTypeId();
+	DeductionType getDeductionType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getDeductionTypeId <em>Deduction Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getDeductionType <em>Deduction Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Deduction Type Id</em>' reference.
-	 * @see #getDeductionTypeId()
+	 * @param value the new value of the '<em>Deduction Type</em>' reference.
+	 * @see #getDeductionType()
 	 * @generated
 	 */
-	void setDeductionTypeId(DeductionType value);
+	void setDeductionType(DeductionType value);
 
 	/**
 	 * Returns the value of the '<em><b>Flat Amount</b></em>' attribute.
@@ -177,57 +196,26 @@ public interface PayrollPreference extends EntityIdentifiable, EntityInfo {
 	void setFromDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayrollPreference_PartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getPartyId <em>Party Id</em>}' reference.
+	 * Returns the value of the '<em><b>Payment Method Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
-	 * @generated
-	 */
-	void setPartyId(Party value);
-
-	/**
-	 * Returns the value of the '<em><b>Payment Method Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Method Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Payment Method Type Id</em>' reference.
-	 * @see #setPaymentMethodTypeId(PaymentMethodType)
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayrollPreference_PaymentMethodTypeId()
+	 * @return the value of the '<em>Payment Method Type</em>' reference.
+	 * @see #setPaymentMethodType(PaymentMethodType)
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayrollPreference_PaymentMethodType()
 	 * @model keys="paymentMethodTypeId"
 	 * @generated
 	 */
-	PaymentMethodType getPaymentMethodTypeId();
+	PaymentMethodType getPaymentMethodType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getPaymentMethodTypeId <em>Payment Method Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getPaymentMethodType <em>Payment Method Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Payment Method Type Id</em>' reference.
-	 * @see #getPaymentMethodTypeId()
+	 * @param value the new value of the '<em>Payment Method Type</em>' reference.
+	 * @see #getPaymentMethodType()
 	 * @generated
 	 */
-	void setPaymentMethodTypeId(PaymentMethodType value);
+	void setPaymentMethodType(PaymentMethodType value);
 
 	/**
 	 * Returns the value of the '<em><b>Payroll Preference Seq Id</b></em>' attribute.
@@ -284,30 +272,26 @@ public interface PayrollPreference extends EntityIdentifiable, EntityInfo {
 	void setPercentage(double value);
 
 	/**
-	 * Returns the value of the '<em><b>Period Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Period Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Period Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Period Type Id</em>' reference.
-	 * @see #setPeriodTypeId(PeriodType)
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayrollPreference_PeriodTypeId()
+	 * @return the value of the '<em>Period Type</em>' reference.
+	 * @see #setPeriodType(PeriodType)
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayrollPreference_PeriodType()
 	 * @model keys="periodTypeId"
 	 * @generated
 	 */
-	PeriodType getPeriodTypeId();
+	PeriodType getPeriodType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getPeriodTypeId <em>Period Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.PayrollPreference#getPeriodType <em>Period Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Period Type Id</em>' reference.
-	 * @see #getPeriodTypeId()
+	 * @param value the new value of the '<em>Period Type</em>' reference.
+	 * @see #getPeriodType()
 	 * @generated
 	 */
-	void setPeriodTypeId(PeriodType value);
+	void setPeriodType(PeriodType value);
 
 	/**
 	 * Returns the value of the '<em><b>Role Type Id</b></em>' attribute.

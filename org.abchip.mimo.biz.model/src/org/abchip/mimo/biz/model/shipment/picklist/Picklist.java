@@ -27,12 +27,12 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.Picklist#getPicklistId <em>Picklist Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.Picklist#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.Picklist#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.Picklist#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.Picklist#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.Picklist#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.Picklist#getPicklistDate <em>Picklist Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.Picklist#getPicklistStatusHistories <em>Picklist Status Histories</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.Picklist#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.Picklist#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.Picklist#getShipmentMethodType <em>Shipment Method Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.Picklist#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklist()
@@ -93,30 +93,26 @@ public interface Picklist extends EntityIdentifiable, EntityInfo {
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Facility Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facility Id</em>' reference.
-	 * @see #setFacilityId(Facility)
-	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklist_FacilityId()
+	 * @return the value of the '<em>Facility</em>' reference.
+	 * @see #setFacility(Facility)
+	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklist_Facility()
 	 * @model keys="facilityId"
 	 * @generated
 	 */
-	Facility getFacilityId();
+	Facility getFacility();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.Picklist#getFacilityId <em>Facility Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.Picklist#getFacility <em>Facility</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Facility Id</em>' reference.
-	 * @see #getFacilityId()
+	 * @param value the new value of the '<em>Facility</em>' reference.
+	 * @see #getFacility()
 	 * @generated
 	 */
-	void setFacilityId(Facility value);
+	void setFacility(Facility value);
 
 	/**
 	 * Returns the value of the '<em><b>Last Modified By User Login</b></em>' attribute.
@@ -187,6 +183,50 @@ public interface Picklist extends EntityIdentifiable, EntityInfo {
 	List<PicklistStatusHistory> getPicklistStatusHistories();
 
 	/**
+	 * Returns the value of the '<em><b>Shipment Method Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Shipment Method Type</em>' reference.
+	 * @see #setShipmentMethodType(ShipmentMethodType)
+	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklist_ShipmentMethodType()
+	 * @model keys="shipmentMethodTypeId"
+	 * @generated
+	 */
+	ShipmentMethodType getShipmentMethodType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.Picklist#getShipmentMethodType <em>Shipment Method Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Shipment Method Type</em>' reference.
+	 * @see #getShipmentMethodType()
+	 * @generated
+	 */
+	void setShipmentMethodType(ShipmentMethodType value);
+
+	/**
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklist_Status()
+	 * @model keys="statusId"
+	 * @generated
+	 */
+	StatusItem getStatus();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.Picklist#getStatus <em>Status</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
+	 * @generated
+	 */
+	void setStatus(StatusItem value);
+
+	/**
 	 * Returns the value of the '<em><b>Picklist Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -212,57 +252,5 @@ public interface Picklist extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setPicklistId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Shipment Method Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Method Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shipment Method Type Id</em>' reference.
-	 * @see #setShipmentMethodTypeId(ShipmentMethodType)
-	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklist_ShipmentMethodTypeId()
-	 * @model keys="shipmentMethodTypeId"
-	 * @generated
-	 */
-	ShipmentMethodType getShipmentMethodTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.Picklist#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shipment Method Type Id</em>' reference.
-	 * @see #getShipmentMethodTypeId()
-	 * @generated
-	 */
-	void setShipmentMethodTypeId(ShipmentMethodType value);
-
-	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklist_StatusId()
-	 * @model keys="statusId"
-	 * @generated
-	 */
-	StatusItem getStatusId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.Picklist#getStatusId <em>Status Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
-	 * @generated
-	 */
-	void setStatusId(StatusItem value);
 
 } // Picklist

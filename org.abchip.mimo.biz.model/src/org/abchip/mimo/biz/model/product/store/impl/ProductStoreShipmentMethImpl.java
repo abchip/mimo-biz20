@@ -38,12 +38,12 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#isAllowCompanyAddr <em>Allow Company Addr</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#isAllowUspsAddr <em>Allow Usps Addr</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getAllowancePercent <em>Allowance Percent</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getCompanyPartyId <em>Company Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getCompanyParty <em>Company Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getConfigProps <em>Config Props</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getExcludeFeatureGroup <em>Exclude Feature Group</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getExcludeGeoId <em>Exclude Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getExcludeGeo <em>Exclude Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getIncludeFeatureGroup <em>Include Feature Group</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getIncludeGeoId <em>Include Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getIncludeGeo <em>Include Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#isIncludeNoChargeItems <em>Include No Charge Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getMaxSize <em>Max Size</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getMaxTotal <em>Max Total</em>}</li>
@@ -59,9 +59,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getRoleTypeId <em>Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getSequenceNumber <em>Sequence Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getServiceName <em>Service Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getShipmentCustomMethodId <em>Shipment Custom Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getShipmentGatewayConfigId <em>Shipment Gateway Config Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getShipmentCustomMethod <em>Shipment Custom Method</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getShipmentGatewayConfig <em>Shipment Gateway Config</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreShipmentMethImpl#getShipmentMethodType <em>Shipment Method Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -203,8 +203,8 @@ public class ProductStoreShipmentMethImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public Party getCompanyPartyId() {
-		return (Party)eGet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__COMPANY_PARTY_ID, true);
+	public Party getCompanyParty() {
+		return (Party)eGet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__COMPANY_PARTY, true);
 	}
 
 	/**
@@ -213,8 +213,8 @@ public class ProductStoreShipmentMethImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void setCompanyPartyId(Party newCompanyPartyId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__COMPANY_PARTY_ID, newCompanyPartyId);
+	public void setCompanyParty(Party newCompanyParty) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__COMPANY_PARTY, newCompanyParty);
 	}
 
 	/**
@@ -263,8 +263,8 @@ public class ProductStoreShipmentMethImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public Geo getExcludeGeoId() {
-		return (Geo)eGet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__EXCLUDE_GEO_ID, true);
+	public Geo getExcludeGeo() {
+		return (Geo)eGet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__EXCLUDE_GEO, true);
 	}
 
 	/**
@@ -273,8 +273,8 @@ public class ProductStoreShipmentMethImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void setExcludeGeoId(Geo newExcludeGeoId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__EXCLUDE_GEO_ID, newExcludeGeoId);
+	public void setExcludeGeo(Geo newExcludeGeo) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__EXCLUDE_GEO, newExcludeGeo);
 	}
 
 	/**
@@ -303,6 +303,26 @@ public class ProductStoreShipmentMethImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
+	public Geo getIncludeGeo() {
+		return (Geo)eGet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__INCLUDE_GEO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setIncludeGeo(Geo newIncludeGeo) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__INCLUDE_GEO, newIncludeGeo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean isIncludeNoChargeItems() {
 		return (Boolean)eGet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__INCLUDE_NO_CHARGE_ITEMS, true);
 	}
@@ -315,26 +335,6 @@ public class ProductStoreShipmentMethImpl extends EntityIdentifiableImpl impleme
 	@Override
 	public void setIncludeNoChargeItems(boolean newIncludeNoChargeItems) {
 		eSet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__INCLUDE_NO_CHARGE_ITEMS, newIncludeNoChargeItems);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Geo getIncludeGeoId() {
-		return (Geo)eGet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__INCLUDE_GEO_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setIncludeGeoId(Geo newIncludeGeoId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__INCLUDE_GEO_ID, newIncludeGeoId);
 	}
 
 	/**
@@ -683,8 +683,8 @@ public class ProductStoreShipmentMethImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public CustomMethod getShipmentCustomMethodId() {
-		return (CustomMethod)eGet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__SHIPMENT_CUSTOM_METHOD_ID, true);
+	public CustomMethod getShipmentCustomMethod() {
+		return (CustomMethod)eGet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__SHIPMENT_CUSTOM_METHOD, true);
 	}
 
 	/**
@@ -693,8 +693,8 @@ public class ProductStoreShipmentMethImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void setShipmentCustomMethodId(CustomMethod newShipmentCustomMethodId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__SHIPMENT_CUSTOM_METHOD_ID, newShipmentCustomMethodId);
+	public void setShipmentCustomMethod(CustomMethod newShipmentCustomMethod) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__SHIPMENT_CUSTOM_METHOD, newShipmentCustomMethod);
 	}
 
 	/**
@@ -703,8 +703,8 @@ public class ProductStoreShipmentMethImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public ShipmentGatewayConfig getShipmentGatewayConfigId() {
-		return (ShipmentGatewayConfig)eGet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__SHIPMENT_GATEWAY_CONFIG_ID, true);
+	public ShipmentGatewayConfig getShipmentGatewayConfig() {
+		return (ShipmentGatewayConfig)eGet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__SHIPMENT_GATEWAY_CONFIG, true);
 	}
 
 	/**
@@ -713,8 +713,8 @@ public class ProductStoreShipmentMethImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void setShipmentGatewayConfigId(ShipmentGatewayConfig newShipmentGatewayConfigId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__SHIPMENT_GATEWAY_CONFIG_ID, newShipmentGatewayConfigId);
+	public void setShipmentGatewayConfig(ShipmentGatewayConfig newShipmentGatewayConfig) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__SHIPMENT_GATEWAY_CONFIG, newShipmentGatewayConfig);
 	}
 
 	/**
@@ -723,8 +723,8 @@ public class ProductStoreShipmentMethImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public ShipmentMethodType getShipmentMethodTypeId() {
-		return (ShipmentMethodType)eGet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__SHIPMENT_METHOD_TYPE_ID, true);
+	public ShipmentMethodType getShipmentMethodType() {
+		return (ShipmentMethodType)eGet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__SHIPMENT_METHOD_TYPE, true);
 	}
 
 	/**
@@ -733,8 +733,8 @@ public class ProductStoreShipmentMethImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void setShipmentMethodTypeId(ShipmentMethodType newShipmentMethodTypeId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__SHIPMENT_METHOD_TYPE_ID, newShipmentMethodTypeId);
+	public void setShipmentMethodType(ShipmentMethodType newShipmentMethodType) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_SHIPMENT_METH__SHIPMENT_METHOD_TYPE, newShipmentMethodType);
 	}
 
 	/**

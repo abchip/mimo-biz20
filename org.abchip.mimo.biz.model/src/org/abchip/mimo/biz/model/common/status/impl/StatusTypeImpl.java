@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusTypeImpl#getStatusTypeId <em>Status Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -199,8 +199,8 @@ public class StatusTypeImpl extends EntityTypeImpl<StatusItem> implements Status
 	 * @generated
 	 */
 	@Override
-	public StatusType getParentTypeId() {
-		return (StatusType)eGet(StatusPackage.Literals.STATUS_TYPE__PARENT_TYPE_ID, true);
+	public StatusType getParentType() {
+		return (StatusType)eGet(StatusPackage.Literals.STATUS_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -209,8 +209,8 @@ public class StatusTypeImpl extends EntityTypeImpl<StatusItem> implements Status
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(StatusType newParentTypeId) {
-		eSet(StatusPackage.Literals.STATUS_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(StatusType newParentType) {
+		eSet(StatusPackage.Literals.STATUS_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

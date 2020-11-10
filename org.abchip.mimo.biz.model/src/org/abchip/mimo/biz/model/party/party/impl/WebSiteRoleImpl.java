@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.WebSiteRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.WebSiteRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.WebSiteRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.WebSiteRoleImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.WebSiteRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.WebSiteRoleImpl#getWebSiteId <em>Web Site Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.WebSiteRoleImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.WebSiteRoleImpl#getRoleType <em>Role Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.WebSiteRoleImpl#getWebSite <em>Web Site</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.WebSiteRoleImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.WebSiteRoleImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.WebSiteRoleImpl#getThruDate <em>Thru Date</em>}</li>
@@ -156,6 +156,66 @@ public class WebSiteRoleImpl extends EntityIdentifiableImpl implements WebSiteRo
 	 * @generated
 	 */
 	@Override
+	public Party getParty() {
+		return (Party)eGet(PartyPackage.Literals.WEB_SITE_ROLE__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(PartyPackage.Literals.WEB_SITE_ROLE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RoleType getRoleType() {
+		return (RoleType)eGet(PartyPackage.Literals.WEB_SITE_ROLE__ROLE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRoleType(RoleType newRoleType) {
+		eSet(PartyPackage.Literals.WEB_SITE_ROLE__ROLE_TYPE, newRoleType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public WebSite getWebSite() {
+		return (WebSite)eGet(PartyPackage.Literals.WEB_SITE_ROLE__WEB_SITE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWebSite(WebSite newWebSite) {
+		eSet(PartyPackage.Literals.WEB_SITE_ROLE__WEB_SITE, newWebSite);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(PartyPackage.Literals.WEB_SITE_ROLE__FROM_DATE, true);
 	}
@@ -246,66 +306,6 @@ public class WebSiteRoleImpl extends EntityIdentifiableImpl implements WebSiteRo
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WebSite getWebSiteId() {
-		return (WebSite)eGet(PartyPackage.Literals.WEB_SITE_ROLE__WEB_SITE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWebSiteId(WebSite newWebSiteId) {
-		eSet(PartyPackage.Literals.WEB_SITE_ROLE__WEB_SITE_ID, newWebSiteId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(PartyPackage.Literals.WEB_SITE_ROLE__ROLE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(PartyPackage.Literals.WEB_SITE_ROLE__ROLE_TYPE_ID, newRoleTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(PartyPackage.Literals.WEB_SITE_ROLE__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(PartyPackage.Literals.WEB_SITE_ROLE__PARTY_ID, newPartyId);
 	}
 
 } //WebSiteRoleImpl

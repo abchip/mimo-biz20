@@ -38,7 +38,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getShipmentId <em>Shipment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getShipment <em>Shipment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getShipmentRouteSegmentId <em>Shipment Route Segment Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getActualArrivalDate <em>Actual Arrival Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getActualCost <em>Actual Cost</em>}</li>
@@ -47,26 +47,26 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getActualStartDate <em>Actual Start Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getActualTransportCost <em>Actual Transport Cost</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getBillingWeight <em>Billing Weight</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getBillingWeightUomId <em>Billing Weight Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getBillingWeightUom <em>Billing Weight Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getCarrierDeliveryZone <em>Carrier Delivery Zone</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getCarrierPartyId <em>Carrier Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getCarrierParty <em>Carrier Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getCarrierRestrictionCodes <em>Carrier Restriction Codes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getCarrierRestrictionDesc <em>Carrier Restriction Desc</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getCarrierServiceStatusId <em>Carrier Service Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getDeliveryId <em>Delivery Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getDestContactMechId <em>Dest Contact Mech Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getDestFacilityId <em>Dest Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getDestTelecomNumberId <em>Dest Telecom Number Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getCarrierServiceStatus <em>Carrier Service Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getCurrencyUom <em>Currency Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getDelivery <em>Delivery</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getDestContactMech <em>Dest Contact Mech</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getDestFacility <em>Dest Facility</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getDestTelecomNumber <em>Dest Telecom Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getEstimatedArrivalDate <em>Estimated Arrival Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getEstimatedStartDate <em>Estimated Start Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getHomeDeliveryDate <em>Home Delivery Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getHomeDeliveryType <em>Home Delivery Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getLastUpdatedDate <em>Last Updated Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getOriginContactMechId <em>Origin Contact Mech Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getOriginFacilityId <em>Origin Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getOriginTelecomNumberId <em>Origin Telecom Number Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getOriginContactMech <em>Origin Contact Mech</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getOriginFacility <em>Origin Facility</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getOriginTelecomNumber <em>Origin Telecom Number</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getShipmentMethodType <em>Shipment Method Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getThirdPartyAccountNumber <em>Third Party Account Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getThirdPartyCountryGeoCode <em>Third Party Country Geo Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl#getThirdPartyPostalCode <em>Third Party Postal Code</em>}</li>
@@ -187,6 +187,26 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	@Override
 	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
 		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Shipment getShipment() {
+		return (Shipment)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__SHIPMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setShipment(Shipment newShipment) {
+		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__SHIPMENT, newShipment);
 	}
 
 	/**
@@ -335,8 +355,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Uom getBillingWeightUomId() {
-		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__BILLING_WEIGHT_UOM_ID, true);
+	public Uom getBillingWeightUom() {
+		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__BILLING_WEIGHT_UOM, true);
 	}
 
 	/**
@@ -345,8 +365,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setBillingWeightUomId(Uom newBillingWeightUomId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__BILLING_WEIGHT_UOM_ID, newBillingWeightUomId);
+	public void setBillingWeightUom(Uom newBillingWeightUom) {
+		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__BILLING_WEIGHT_UOM, newBillingWeightUom);
 	}
 
 	/**
@@ -375,8 +395,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Party getCarrierPartyId() {
-		return (Party)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__CARRIER_PARTY_ID, true);
+	public Party getCarrierParty() {
+		return (Party)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__CARRIER_PARTY, true);
 	}
 
 	/**
@@ -385,8 +405,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setCarrierPartyId(Party newCarrierPartyId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__CARRIER_PARTY_ID, newCarrierPartyId);
+	public void setCarrierParty(Party newCarrierParty) {
+		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__CARRIER_PARTY, newCarrierParty);
 	}
 
 	/**
@@ -435,8 +455,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public StatusItem getCarrierServiceStatusId() {
-		return (StatusItem)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__CARRIER_SERVICE_STATUS_ID, true);
+	public StatusItem getCarrierServiceStatus() {
+		return (StatusItem)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__CARRIER_SERVICE_STATUS, true);
 	}
 
 	/**
@@ -445,8 +465,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setCarrierServiceStatusId(StatusItem newCarrierServiceStatusId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__CARRIER_SERVICE_STATUS_ID, newCarrierServiceStatusId);
+	public void setCarrierServiceStatus(StatusItem newCarrierServiceStatus) {
+		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__CARRIER_SERVICE_STATUS, newCarrierServiceStatus);
 	}
 
 	/**
@@ -455,8 +475,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Uom getCurrencyUomId() {
-		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__CURRENCY_UOM_ID, true);
+	public Uom getCurrencyUom() {
+		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__CURRENCY_UOM, true);
 	}
 
 	/**
@@ -465,8 +485,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setCurrencyUomId(Uom newCurrencyUomId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__CURRENCY_UOM_ID, newCurrencyUomId);
+	public void setCurrencyUom(Uom newCurrencyUom) {
+		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__CURRENCY_UOM, newCurrencyUom);
 	}
 
 	/**
@@ -475,8 +495,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Delivery getDeliveryId() {
-		return (Delivery)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__DELIVERY_ID, true);
+	public Delivery getDelivery() {
+		return (Delivery)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__DELIVERY, true);
 	}
 
 	/**
@@ -485,8 +505,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setDeliveryId(Delivery newDeliveryId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__DELIVERY_ID, newDeliveryId);
+	public void setDelivery(Delivery newDelivery) {
+		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__DELIVERY, newDelivery);
 	}
 
 	/**
@@ -495,8 +515,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public ContactMech getDestContactMechId() {
-		return (ContactMech)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__DEST_CONTACT_MECH_ID, true);
+	public ContactMech getDestContactMech() {
+		return (ContactMech)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__DEST_CONTACT_MECH, true);
 	}
 
 	/**
@@ -505,8 +525,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setDestContactMechId(ContactMech newDestContactMechId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__DEST_CONTACT_MECH_ID, newDestContactMechId);
+	public void setDestContactMech(ContactMech newDestContactMech) {
+		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__DEST_CONTACT_MECH, newDestContactMech);
 	}
 
 	/**
@@ -515,8 +535,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Facility getDestFacilityId() {
-		return (Facility)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__DEST_FACILITY_ID, true);
+	public Facility getDestFacility() {
+		return (Facility)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__DEST_FACILITY, true);
 	}
 
 	/**
@@ -525,8 +545,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setDestFacilityId(Facility newDestFacilityId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__DEST_FACILITY_ID, newDestFacilityId);
+	public void setDestFacility(Facility newDestFacility) {
+		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__DEST_FACILITY, newDestFacility);
 	}
 
 	/**
@@ -535,8 +555,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public TelecomNumber getDestTelecomNumberId() {
-		return (TelecomNumber)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__DEST_TELECOM_NUMBER_ID, true);
+	public TelecomNumber getDestTelecomNumber() {
+		return (TelecomNumber)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__DEST_TELECOM_NUMBER, true);
 	}
 
 	/**
@@ -545,8 +565,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setDestTelecomNumberId(TelecomNumber newDestTelecomNumberId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__DEST_TELECOM_NUMBER_ID, newDestTelecomNumberId);
+	public void setDestTelecomNumber(TelecomNumber newDestTelecomNumber) {
+		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__DEST_TELECOM_NUMBER, newDestTelecomNumber);
 	}
 
 	/**
@@ -655,8 +675,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public ContactMech getOriginContactMechId() {
-		return (ContactMech)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__ORIGIN_CONTACT_MECH_ID, true);
+	public ContactMech getOriginContactMech() {
+		return (ContactMech)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__ORIGIN_CONTACT_MECH, true);
 	}
 
 	/**
@@ -665,8 +685,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setOriginContactMechId(ContactMech newOriginContactMechId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__ORIGIN_CONTACT_MECH_ID, newOriginContactMechId);
+	public void setOriginContactMech(ContactMech newOriginContactMech) {
+		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__ORIGIN_CONTACT_MECH, newOriginContactMech);
 	}
 
 	/**
@@ -675,8 +695,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Facility getOriginFacilityId() {
-		return (Facility)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__ORIGIN_FACILITY_ID, true);
+	public Facility getOriginFacility() {
+		return (Facility)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__ORIGIN_FACILITY, true);
 	}
 
 	/**
@@ -685,8 +705,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setOriginFacilityId(Facility newOriginFacilityId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__ORIGIN_FACILITY_ID, newOriginFacilityId);
+	public void setOriginFacility(Facility newOriginFacility) {
+		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__ORIGIN_FACILITY, newOriginFacility);
 	}
 
 	/**
@@ -695,8 +715,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public TelecomNumber getOriginTelecomNumberId() {
-		return (TelecomNumber)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__ORIGIN_TELECOM_NUMBER_ID, true);
+	public TelecomNumber getOriginTelecomNumber() {
+		return (TelecomNumber)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__ORIGIN_TELECOM_NUMBER, true);
 	}
 
 	/**
@@ -705,8 +725,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setOriginTelecomNumberId(TelecomNumber newOriginTelecomNumberId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__ORIGIN_TELECOM_NUMBER_ID, newOriginTelecomNumberId);
+	public void setOriginTelecomNumber(TelecomNumber newOriginTelecomNumber) {
+		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__ORIGIN_TELECOM_NUMBER, newOriginTelecomNumber);
 	}
 
 	/**
@@ -715,8 +735,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Shipment getShipmentId() {
-		return (Shipment)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__SHIPMENT_ID, true);
+	public ShipmentMethodType getShipmentMethodType() {
+		return (ShipmentMethodType)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__SHIPMENT_METHOD_TYPE, true);
 	}
 
 	/**
@@ -725,28 +745,8 @@ public class ShipmentRouteSegmentImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setShipmentId(Shipment newShipmentId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__SHIPMENT_ID, newShipmentId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ShipmentMethodType getShipmentMethodTypeId() {
-		return (ShipmentMethodType)eGet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__SHIPMENT_METHOD_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setShipmentMethodTypeId(ShipmentMethodType newShipmentMethodTypeId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__SHIPMENT_METHOD_TYPE_ID, newShipmentMethodTypeId);
+	public void setShipmentMethodType(ShipmentMethodType newShipmentMethodType) {
+		eSet(Shipment_Package.Literals.SHIPMENT_ROUTE_SEGMENT__SHIPMENT_METHOD_TYPE, newShipmentMethodType);
 	}
 
 	/**

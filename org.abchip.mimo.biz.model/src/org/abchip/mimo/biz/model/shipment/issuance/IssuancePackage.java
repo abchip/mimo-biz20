@@ -135,22 +135,22 @@ public interface IssuancePackage extends EPackage {
 	int ITEM_ISSUANCE__FIXED_ASSET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Inventory Item Id</b></em>' reference.
+	 * The feature id for the '<em><b>Inventory Item</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ITEM_ISSUANCE__INVENTORY_ITEM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int ITEM_ISSUANCE__INVENTORY_ITEM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Issued By User Login Id</b></em>' reference.
+	 * The feature id for the '<em><b>Issued By User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ITEM_ISSUANCE__ISSUED_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int ITEM_ISSUANCE__ISSUED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Issued Date Time</b></em>' attribute.
@@ -171,13 +171,13 @@ public interface IssuancePackage extends EPackage {
 	int ITEM_ISSUANCE__MAINT_HIST_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ITEM_ISSUANCE__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int ITEM_ISSUANCE__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -207,13 +207,13 @@ public interface IssuancePackage extends EPackage {
 	int ITEM_ISSUANCE__SHIP_GROUP_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
-	 * The feature id for the '<em><b>Shipment Id</b></em>' reference.
+	 * The feature id for the '<em><b>Shipment</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ITEM_ISSUANCE__SHIPMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
+	int ITEM_ISSUANCE__SHIPMENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Item Seq Id</b></em>' attribute.
@@ -280,22 +280,22 @@ public interface IssuancePackage extends EPackage {
 	int ITEM_ISSUANCE_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Item Issuance Id</b></em>' reference.
+	 * The feature id for the '<em><b>Item Issuance</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ITEM_ISSUANCE_ROLE__ITEM_ISSUANCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ITEM_ISSUANCE_ROLE__ITEM_ISSUANCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ITEM_ISSUANCE_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int ITEM_ISSUANCE_ROLE__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' attribute.
@@ -360,26 +360,26 @@ public interface IssuancePackage extends EPackage {
 	EAttribute getItemIssuance_FixedAssetId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getInventoryItemId <em>Inventory Item Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getInventoryItem <em>Inventory Item</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Inventory Item Id</em>'.
-	 * @see org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getInventoryItemId()
+	 * @return the meta object for the reference '<em>Inventory Item</em>'.
+	 * @see org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getInventoryItem()
 	 * @see #getItemIssuance()
 	 * @generated
 	 */
-	EReference getItemIssuance_InventoryItemId();
+	EReference getItemIssuance_InventoryItem();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getIssuedByUserLoginId <em>Issued By User Login Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getIssuedByUserLogin <em>Issued By User Login</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Issued By User Login Id</em>'.
-	 * @see org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getIssuedByUserLoginId()
+	 * @return the meta object for the reference '<em>Issued By User Login</em>'.
+	 * @see org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getIssuedByUserLogin()
 	 * @see #getItemIssuance()
 	 * @generated
 	 */
-	EReference getItemIssuance_IssuedByUserLoginId();
+	EReference getItemIssuance_IssuedByUserLogin();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getIssuedDateTime <em>Issued Date Time</em>}'.
@@ -404,15 +404,15 @@ public interface IssuancePackage extends EPackage {
 	EAttribute getItemIssuance_MaintHistSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getOrder()
 	 * @see #getItemIssuance()
 	 * @generated
 	 */
-	EReference getItemIssuance_OrderId();
+	EReference getItemIssuance_Order();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -448,15 +448,15 @@ public interface IssuancePackage extends EPackage {
 	EAttribute getItemIssuance_ShipGroupSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getShipmentId <em>Shipment Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getShipment <em>Shipment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Shipment Id</em>'.
-	 * @see org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getShipmentId()
+	 * @return the meta object for the reference '<em>Shipment</em>'.
+	 * @see org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getShipment()
 	 * @see #getItemIssuance()
 	 * @generated
 	 */
-	EReference getItemIssuance_ShipmentId();
+	EReference getItemIssuance_Shipment();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getShipmentItemSeqId <em>Shipment Item Seq Id</em>}'.
@@ -480,26 +480,26 @@ public interface IssuancePackage extends EPackage {
 	EClass getItemIssuanceRole();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuanceRole#getItemIssuanceId <em>Item Issuance Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuanceRole#getItemIssuance <em>Item Issuance</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Item Issuance Id</em>'.
-	 * @see org.abchip.mimo.biz.model.shipment.issuance.ItemIssuanceRole#getItemIssuanceId()
+	 * @return the meta object for the reference '<em>Item Issuance</em>'.
+	 * @see org.abchip.mimo.biz.model.shipment.issuance.ItemIssuanceRole#getItemIssuance()
 	 * @see #getItemIssuanceRole()
 	 * @generated
 	 */
-	EReference getItemIssuanceRole_ItemIssuanceId();
+	EReference getItemIssuanceRole_ItemIssuance();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuanceRole#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuanceRole#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.shipment.issuance.ItemIssuanceRole#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.shipment.issuance.ItemIssuanceRole#getParty()
 	 * @see #getItemIssuanceRole()
 	 * @generated
 	 */
-	EReference getItemIssuanceRole_PartyId();
+	EReference getItemIssuanceRole_Party();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuanceRole#getRoleTypeId <em>Role Type Id</em>}'.
@@ -569,20 +569,20 @@ public interface IssuancePackage extends EPackage {
 		EAttribute ITEM_ISSUANCE__FIXED_ASSET_ID = eINSTANCE.getItemIssuance_FixedAssetId();
 
 		/**
-		 * The meta object literal for the '<em><b>Inventory Item Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Inventory Item</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ITEM_ISSUANCE__INVENTORY_ITEM_ID = eINSTANCE.getItemIssuance_InventoryItemId();
+		EReference ITEM_ISSUANCE__INVENTORY_ITEM = eINSTANCE.getItemIssuance_InventoryItem();
 
 		/**
-		 * The meta object literal for the '<em><b>Issued By User Login Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Issued By User Login</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ITEM_ISSUANCE__ISSUED_BY_USER_LOGIN_ID = eINSTANCE.getItemIssuance_IssuedByUserLoginId();
+		EReference ITEM_ISSUANCE__ISSUED_BY_USER_LOGIN = eINSTANCE.getItemIssuance_IssuedByUserLogin();
 
 		/**
 		 * The meta object literal for the '<em><b>Issued Date Time</b></em>' attribute feature.
@@ -601,12 +601,12 @@ public interface IssuancePackage extends EPackage {
 		EAttribute ITEM_ISSUANCE__MAINT_HIST_SEQ_ID = eINSTANCE.getItemIssuance_MaintHistSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ITEM_ISSUANCE__ORDER_ID = eINSTANCE.getItemIssuance_OrderId();
+		EReference ITEM_ISSUANCE__ORDER = eINSTANCE.getItemIssuance_Order();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -633,12 +633,12 @@ public interface IssuancePackage extends EPackage {
 		EAttribute ITEM_ISSUANCE__SHIP_GROUP_SEQ_ID = eINSTANCE.getItemIssuance_ShipGroupSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>Shipment Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Shipment</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ITEM_ISSUANCE__SHIPMENT_ID = eINSTANCE.getItemIssuance_ShipmentId();
+		EReference ITEM_ISSUANCE__SHIPMENT = eINSTANCE.getItemIssuance_Shipment();
 
 		/**
 		 * The meta object literal for the '<em><b>Shipment Item Seq Id</b></em>' attribute feature.
@@ -659,20 +659,20 @@ public interface IssuancePackage extends EPackage {
 		EClass ITEM_ISSUANCE_ROLE = eINSTANCE.getItemIssuanceRole();
 
 		/**
-		 * The meta object literal for the '<em><b>Item Issuance Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Item Issuance</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ITEM_ISSUANCE_ROLE__ITEM_ISSUANCE_ID = eINSTANCE.getItemIssuanceRole_ItemIssuanceId();
+		EReference ITEM_ISSUANCE_ROLE__ITEM_ISSUANCE = eINSTANCE.getItemIssuanceRole_ItemIssuance();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ITEM_ISSUANCE_ROLE__PARTY_ID = eINSTANCE.getItemIssuanceRole_PartyId();
+		EReference ITEM_ISSUANCE_ROLE__PARTY = eINSTANCE.getItemIssuanceRole_Party();
 
 		/**
 		 * The meta object literal for the '<em><b>Role Type Id</b></em>' attribute feature.

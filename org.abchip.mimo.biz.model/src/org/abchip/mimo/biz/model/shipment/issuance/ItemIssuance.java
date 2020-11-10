@@ -29,15 +29,15 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getItemIssuanceId <em>Item Issuance Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getCancelQuantity <em>Cancel Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getFixedAssetId <em>Fixed Asset Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getInventoryItemId <em>Inventory Item Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getIssuedByUserLoginId <em>Issued By User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getInventoryItem <em>Inventory Item</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getIssuedByUserLogin <em>Issued By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getIssuedDateTime <em>Issued Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getMaintHistSeqId <em>Maint Hist Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getShipGroupSeqId <em>Ship Group Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getShipmentId <em>Shipment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getShipment <em>Shipment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getShipmentItemSeqId <em>Shipment Item Seq Id</em>}</li>
  * </ul>
  *
@@ -99,56 +99,48 @@ public interface ItemIssuance extends EntityIdentifiable, EntityInfo {
 	void setFixedAssetId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Inventory Item Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Inventory Item</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Inventory Item Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Inventory Item Id</em>' reference.
-	 * @see #setInventoryItemId(InventoryItem)
-	 * @see org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage#getItemIssuance_InventoryItemId()
+	 * @return the value of the '<em>Inventory Item</em>' reference.
+	 * @see #setInventoryItem(InventoryItem)
+	 * @see org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage#getItemIssuance_InventoryItem()
 	 * @model keys="inventoryItemId"
 	 * @generated
 	 */
-	InventoryItem getInventoryItemId();
+	InventoryItem getInventoryItem();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getInventoryItemId <em>Inventory Item Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getInventoryItem <em>Inventory Item</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Inventory Item Id</em>' reference.
-	 * @see #getInventoryItemId()
+	 * @param value the new value of the '<em>Inventory Item</em>' reference.
+	 * @see #getInventoryItem()
 	 * @generated
 	 */
-	void setInventoryItemId(InventoryItem value);
+	void setInventoryItem(InventoryItem value);
 
 	/**
-	 * Returns the value of the '<em><b>Issued By User Login Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Issued By User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Issued By User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Issued By User Login Id</em>' reference.
-	 * @see #setIssuedByUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage#getItemIssuance_IssuedByUserLoginId()
+	 * @return the value of the '<em>Issued By User Login</em>' reference.
+	 * @see #setIssuedByUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage#getItemIssuance_IssuedByUserLogin()
 	 * @model keys="userLoginId"
 	 * @generated
 	 */
-	UserLogin getIssuedByUserLoginId();
+	UserLogin getIssuedByUserLogin();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getIssuedByUserLoginId <em>Issued By User Login Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getIssuedByUserLogin <em>Issued By User Login</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Issued By User Login Id</em>' reference.
-	 * @see #getIssuedByUserLoginId()
+	 * @param value the new value of the '<em>Issued By User Login</em>' reference.
+	 * @see #getIssuedByUserLogin()
 	 * @generated
 	 */
-	void setIssuedByUserLoginId(UserLogin value);
+	void setIssuedByUserLogin(UserLogin value);
 
 	/**
 	 * Returns the value of the '<em><b>Issued Date Time</b></em>' attribute.
@@ -230,30 +222,26 @@ public interface ItemIssuance extends EntityIdentifiable, EntityInfo {
 	void setMaintHistSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage#getItemIssuance_OrderId()
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage#getItemIssuance_Order()
 	 * @model keys="orderId"
 	 * @generated
 	 */
-	OrderHeader getOrderId();
+	OrderHeader getOrder();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getOrderId <em>Order Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getOrder <em>Order</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
 	 * @generated
 	 */
-	void setOrderId(OrderHeader value);
+	void setOrder(OrderHeader value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -334,30 +322,26 @@ public interface ItemIssuance extends EntityIdentifiable, EntityInfo {
 	void setShipGroupSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Shipment Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Shipment</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shipment Id</em>' reference.
-	 * @see #setShipmentId(Shipment)
-	 * @see org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage#getItemIssuance_ShipmentId()
+	 * @return the value of the '<em>Shipment</em>' reference.
+	 * @see #setShipment(Shipment)
+	 * @see org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage#getItemIssuance_Shipment()
 	 * @model keys="shipmentId"
 	 * @generated
 	 */
-	Shipment getShipmentId();
+	Shipment getShipment();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getShipmentId <em>Shipment Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance#getShipment <em>Shipment</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shipment Id</em>' reference.
-	 * @see #getShipmentId()
+	 * @param value the new value of the '<em>Shipment</em>' reference.
+	 * @see #getShipment()
 	 * @generated
 	 */
-	void setShipmentId(Shipment value);
+	void setShipment(Shipment value);
 
 	/**
 	 * Returns the value of the '<em><b>Shipment Item Seq Id</b></em>' attribute.

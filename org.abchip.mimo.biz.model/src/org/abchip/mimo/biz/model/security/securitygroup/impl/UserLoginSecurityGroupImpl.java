@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.UserLoginSecurityGroupImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.UserLoginSecurityGroupImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.UserLoginSecurityGroupImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.UserLoginSecurityGroupImpl#getUserLoginId <em>User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.UserLoginSecurityGroupImpl#getGroupId <em>Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.UserLoginSecurityGroupImpl#getUserLogin <em>User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.UserLoginSecurityGroupImpl#getGroup <em>Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.UserLoginSecurityGroupImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.UserLoginSecurityGroupImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -155,6 +155,46 @@ public class UserLoginSecurityGroupImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
+	public UserLogin getUserLogin() {
+		return (UserLogin)eGet(SecuritygroupPackage.Literals.USER_LOGIN_SECURITY_GROUP__USER_LOGIN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUserLogin(UserLogin newUserLogin) {
+		eSet(SecuritygroupPackage.Literals.USER_LOGIN_SECURITY_GROUP__USER_LOGIN, newUserLogin);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SecurityGroup getGroup() {
+		return (SecurityGroup)eGet(SecuritygroupPackage.Literals.USER_LOGIN_SECURITY_GROUP__GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGroup(SecurityGroup newGroup) {
+		eSet(SecuritygroupPackage.Literals.USER_LOGIN_SECURITY_GROUP__GROUP, newGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(SecuritygroupPackage.Literals.USER_LOGIN_SECURITY_GROUP__FROM_DATE, true);
 	}
@@ -167,26 +207,6 @@ public class UserLoginSecurityGroupImpl extends EntityIdentifiableImpl implement
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(SecuritygroupPackage.Literals.USER_LOGIN_SECURITY_GROUP__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SecurityGroup getGroupId() {
-		return (SecurityGroup)eGet(SecuritygroupPackage.Literals.USER_LOGIN_SECURITY_GROUP__GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGroupId(SecurityGroup newGroupId) {
-		eSet(SecuritygroupPackage.Literals.USER_LOGIN_SECURITY_GROUP__GROUP_ID, newGroupId);
 	}
 
 	/**
@@ -245,26 +265,6 @@ public class UserLoginSecurityGroupImpl extends EntityIdentifiableImpl implement
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public UserLogin getUserLoginId() {
-		return (UserLogin)eGet(SecuritygroupPackage.Literals.USER_LOGIN_SECURITY_GROUP__USER_LOGIN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setUserLoginId(UserLogin newUserLoginId) {
-		eSet(SecuritygroupPackage.Literals.USER_LOGIN_SECURITY_GROUP__USER_LOGIN_ID, newUserLoginId);
 	}
 
 } //UserLoginSecurityGroupImpl

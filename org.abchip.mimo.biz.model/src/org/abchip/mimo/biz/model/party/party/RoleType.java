@@ -24,7 +24,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.RoleType#getRoleTypeId <em>Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.RoleType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.RoleType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.RoleType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.RoleType#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.RoleType#getRoleTypeAttrs <em>Role Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.RoleType#getValidContactMechRoles <em>Valid Contact Mech Roles</em>}</li>
  * </ul>
@@ -87,30 +87,26 @@ public interface RoleType extends EntityIdentifiable, EntityInfo {
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(RoleType)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getRoleType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(RoleType)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getRoleType_ParentType()
 	 * @model keys="roleTypeId"
 	 * @generated
 	 */
-	RoleType getParentTypeId();
+	RoleType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.RoleType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.RoleType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(RoleType value);
+	void setParentType(RoleType value);
 
 	/**
 	 * Returns the value of the '<em><b>Role Type Attrs</b></em>' reference list.

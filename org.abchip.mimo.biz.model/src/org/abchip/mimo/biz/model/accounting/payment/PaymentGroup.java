@@ -23,7 +23,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGroup#getPaymentGroupId <em>Payment Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGroup#getPaymentGroupMembers <em>Payment Group Members</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGroup#getPaymentGroupName <em>Payment Group Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGroup#getPaymentGroupTypeId <em>Payment Group Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGroup#getPaymentGroupType <em>Payment Group Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGroup()
@@ -58,30 +58,26 @@ public interface PaymentGroup extends EntityTyped<PaymentGroupType>, EntityInfo 
 	void setPaymentGroupName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Payment Group Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Payment Group Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Group Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Payment Group Type Id</em>' reference.
-	 * @see #setPaymentGroupTypeId(PaymentGroupType)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGroup_PaymentGroupTypeId()
+	 * @return the value of the '<em>Payment Group Type</em>' reference.
+	 * @see #setPaymentGroupType(PaymentGroupType)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGroup_PaymentGroupType()
 	 * @model keys="paymentGroupTypeId"
 	 * @generated
 	 */
-	PaymentGroupType getPaymentGroupTypeId();
+	PaymentGroupType getPaymentGroupType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGroup#getPaymentGroupTypeId <em>Payment Group Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGroup#getPaymentGroupType <em>Payment Group Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Payment Group Type Id</em>' reference.
-	 * @see #getPaymentGroupTypeId()
+	 * @param value the new value of the '<em>Payment Group Type</em>' reference.
+	 * @see #getPaymentGroupType()
 	 * @generated
 	 */
-	void setPaymentGroupTypeId(PaymentGroupType value);
+	void setPaymentGroupType(PaymentGroupType value);
 
 	/**
 	 * Returns the value of the '<em><b>Payment Group Id</b></em>' attribute.

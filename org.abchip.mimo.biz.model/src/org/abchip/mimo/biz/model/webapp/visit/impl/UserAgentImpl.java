@@ -33,11 +33,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.UserAgentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.UserAgentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.UserAgentImpl#getUserAgentId <em>User Agent Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.UserAgentImpl#getBrowserTypeId <em>Browser Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.UserAgentImpl#getPlatformTypeId <em>Platform Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.UserAgentImpl#getProtocolTypeId <em>Protocol Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.UserAgentImpl#getUserAgentMethodTypeId <em>User Agent Method Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.UserAgentImpl#getUserAgentTypeId <em>User Agent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.UserAgentImpl#getBrowserType <em>Browser Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.UserAgentImpl#getPlatformType <em>Platform Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.UserAgentImpl#getProtocolType <em>Protocol Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.UserAgentImpl#getUserAgentMethodType <em>User Agent Method Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.UserAgentImpl#getUserAgentType <em>User Agent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -179,8 +179,8 @@ public class UserAgentImpl extends EntityTypedImpl<UserAgentType> implements Use
 	 * @generated
 	 */
 	@Override
-	public BrowserType getBrowserTypeId() {
-		return (BrowserType)eGet(VisitPackage.Literals.USER_AGENT__BROWSER_TYPE_ID, true);
+	public BrowserType getBrowserType() {
+		return (BrowserType)eGet(VisitPackage.Literals.USER_AGENT__BROWSER_TYPE, true);
 	}
 
 	/**
@@ -189,8 +189,8 @@ public class UserAgentImpl extends EntityTypedImpl<UserAgentType> implements Use
 	 * @generated
 	 */
 	@Override
-	public void setBrowserTypeId(BrowserType newBrowserTypeId) {
-		eSet(VisitPackage.Literals.USER_AGENT__BROWSER_TYPE_ID, newBrowserTypeId);
+	public void setBrowserType(BrowserType newBrowserType) {
+		eSet(VisitPackage.Literals.USER_AGENT__BROWSER_TYPE, newBrowserType);
 	}
 
 	/**
@@ -199,8 +199,8 @@ public class UserAgentImpl extends EntityTypedImpl<UserAgentType> implements Use
 	 * @generated
 	 */
 	@Override
-	public PlatformType getPlatformTypeId() {
-		return (PlatformType)eGet(VisitPackage.Literals.USER_AGENT__PLATFORM_TYPE_ID, true);
+	public PlatformType getPlatformType() {
+		return (PlatformType)eGet(VisitPackage.Literals.USER_AGENT__PLATFORM_TYPE, true);
 	}
 
 	/**
@@ -209,8 +209,8 @@ public class UserAgentImpl extends EntityTypedImpl<UserAgentType> implements Use
 	 * @generated
 	 */
 	@Override
-	public void setPlatformTypeId(PlatformType newPlatformTypeId) {
-		eSet(VisitPackage.Literals.USER_AGENT__PLATFORM_TYPE_ID, newPlatformTypeId);
+	public void setPlatformType(PlatformType newPlatformType) {
+		eSet(VisitPackage.Literals.USER_AGENT__PLATFORM_TYPE, newPlatformType);
 	}
 
 	/**
@@ -219,8 +219,8 @@ public class UserAgentImpl extends EntityTypedImpl<UserAgentType> implements Use
 	 * @generated
 	 */
 	@Override
-	public ProtocolType getProtocolTypeId() {
-		return (ProtocolType)eGet(VisitPackage.Literals.USER_AGENT__PROTOCOL_TYPE_ID, true);
+	public ProtocolType getProtocolType() {
+		return (ProtocolType)eGet(VisitPackage.Literals.USER_AGENT__PROTOCOL_TYPE, true);
 	}
 
 	/**
@@ -229,8 +229,8 @@ public class UserAgentImpl extends EntityTypedImpl<UserAgentType> implements Use
 	 * @generated
 	 */
 	@Override
-	public void setProtocolTypeId(ProtocolType newProtocolTypeId) {
-		eSet(VisitPackage.Literals.USER_AGENT__PROTOCOL_TYPE_ID, newProtocolTypeId);
+	public void setProtocolType(ProtocolType newProtocolType) {
+		eSet(VisitPackage.Literals.USER_AGENT__PROTOCOL_TYPE, newProtocolType);
 	}
 
 	/**
@@ -239,8 +239,8 @@ public class UserAgentImpl extends EntityTypedImpl<UserAgentType> implements Use
 	 * @generated
 	 */
 	@Override
-	public UserAgentMethodType getUserAgentMethodTypeId() {
-		return (UserAgentMethodType)eGet(VisitPackage.Literals.USER_AGENT__USER_AGENT_METHOD_TYPE_ID, true);
+	public UserAgentMethodType getUserAgentMethodType() {
+		return (UserAgentMethodType)eGet(VisitPackage.Literals.USER_AGENT__USER_AGENT_METHOD_TYPE, true);
 	}
 
 	/**
@@ -249,8 +249,8 @@ public class UserAgentImpl extends EntityTypedImpl<UserAgentType> implements Use
 	 * @generated
 	 */
 	@Override
-	public void setUserAgentMethodTypeId(UserAgentMethodType newUserAgentMethodTypeId) {
-		eSet(VisitPackage.Literals.USER_AGENT__USER_AGENT_METHOD_TYPE_ID, newUserAgentMethodTypeId);
+	public void setUserAgentMethodType(UserAgentMethodType newUserAgentMethodType) {
+		eSet(VisitPackage.Literals.USER_AGENT__USER_AGENT_METHOD_TYPE, newUserAgentMethodType);
 	}
 
 	/**
@@ -259,8 +259,8 @@ public class UserAgentImpl extends EntityTypedImpl<UserAgentType> implements Use
 	 * @generated
 	 */
 	@Override
-	public UserAgentType getUserAgentTypeId() {
-		return (UserAgentType)eGet(VisitPackage.Literals.USER_AGENT__USER_AGENT_TYPE_ID, true);
+	public UserAgentType getUserAgentType() {
+		return (UserAgentType)eGet(VisitPackage.Literals.USER_AGENT__USER_AGENT_TYPE, true);
 	}
 
 	/**
@@ -269,8 +269,8 @@ public class UserAgentImpl extends EntityTypedImpl<UserAgentType> implements Use
 	 * @generated
 	 */
 	@Override
-	public void setUserAgentTypeId(UserAgentType newUserAgentTypeId) {
-		eSet(VisitPackage.Literals.USER_AGENT__USER_AGENT_TYPE_ID, newUserAgentTypeId);
+	public void setUserAgentType(UserAgentType newUserAgentType) {
+		eSet(VisitPackage.Literals.USER_AGENT__USER_AGENT_TYPE, newUserAgentType);
 	}
 
 	/**

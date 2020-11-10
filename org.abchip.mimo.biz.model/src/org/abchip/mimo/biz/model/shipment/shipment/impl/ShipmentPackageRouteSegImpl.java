@@ -31,12 +31,12 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getShipmentId <em>Shipment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getShipment <em>Shipment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getShipmentPackageSeqId <em>Shipment Package Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getShipmentRouteSegmentId <em>Shipment Route Segment Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getBoxNumber <em>Box Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getCodAmount <em>Cod Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getInsuredAmount <em>Insured Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getInternationalInvoice <em>International Invoice</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getLabelHtml <em>Label Html</em>}</li>
@@ -168,6 +168,26 @@ public class ShipmentPackageRouteSegImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
+	public Shipment getShipment() {
+		return (Shipment)eGet(Shipment_Package.Literals.SHIPMENT_PACKAGE_ROUTE_SEG__SHIPMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setShipment(Shipment newShipment) {
+		eSet(Shipment_Package.Literals.SHIPMENT_PACKAGE_ROUTE_SEG__SHIPMENT, newShipment);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getBoxNumber() {
 		return (String)eGet(Shipment_Package.Literals.SHIPMENT_PACKAGE_ROUTE_SEG__BOX_NUMBER, true);
 	}
@@ -208,8 +228,8 @@ public class ShipmentPackageRouteSegImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public Uom getCurrencyUomId() {
-		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT_PACKAGE_ROUTE_SEG__CURRENCY_UOM_ID, true);
+	public Uom getCurrencyUom() {
+		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT_PACKAGE_ROUTE_SEG__CURRENCY_UOM, true);
 	}
 
 	/**
@@ -218,8 +238,8 @@ public class ShipmentPackageRouteSegImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setCurrencyUomId(Uom newCurrencyUomId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_PACKAGE_ROUTE_SEG__CURRENCY_UOM_ID, newCurrencyUomId);
+	public void setCurrencyUom(Uom newCurrencyUom) {
+		eSet(Shipment_Package.Literals.SHIPMENT_PACKAGE_ROUTE_SEG__CURRENCY_UOM, newCurrencyUom);
 	}
 
 	/**
@@ -400,26 +420,6 @@ public class ShipmentPackageRouteSegImpl extends EntityIdentifiableImpl implemen
 	@Override
 	public void setPackageTransportCost(BigDecimal newPackageTransportCost) {
 		eSet(Shipment_Package.Literals.SHIPMENT_PACKAGE_ROUTE_SEG__PACKAGE_TRANSPORT_COST, newPackageTransportCost);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Shipment getShipmentId() {
-		return (Shipment)eGet(Shipment_Package.Literals.SHIPMENT_PACKAGE_ROUTE_SEG__SHIPMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setShipmentId(Shipment newShipmentId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_PACKAGE_ROUTE_SEG__SHIPMENT_ID, newShipmentId);
 	}
 
 	/**

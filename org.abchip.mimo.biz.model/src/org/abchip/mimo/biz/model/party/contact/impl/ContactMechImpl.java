@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ContactMechImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ContactMechImpl#getContactMechId <em>Contact Mech Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ContactMechImpl#getContactMechAttributes <em>Contact Mech Attributes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ContactMechImpl#getContactMechTypeId <em>Contact Mech Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ContactMechImpl#getContactMechType <em>Contact Mech Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ContactMechImpl#getFromContactMechLinks <em>From Contact Mech Links</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ContactMechImpl#getInfoString <em>Info String</em>}</li>
  * </ul>
@@ -213,26 +213,6 @@ public class ContactMechImpl extends EntityTypedImpl<ContactMechType> implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ContactMechType getContactMechTypeId() {
-		return (ContactMechType)eGet(ContactPackage.Literals.CONTACT_MECH__CONTACT_MECH_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContactMechTypeId(ContactMechType newContactMechTypeId) {
-		eSet(ContactPackage.Literals.CONTACT_MECH__CONTACT_MECH_TYPE_ID, newContactMechTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<ContactMechLink> getFromContactMechLinks() {
@@ -268,6 +248,26 @@ public class ContactMechImpl extends EntityTypedImpl<ContactMechType> implements
 	@Override
 	public List<ContactMechAttribute> getContactMechAttributes() {
 		return (List<ContactMechAttribute>)eGet(ContactPackage.Literals.CONTACT_MECH__CONTACT_MECH_ATTRIBUTES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContactMechType getContactMechType() {
+		return (ContactMechType)eGet(ContactPackage.Literals.CONTACT_MECH__CONTACT_MECH_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContactMechType(ContactMechType newContactMechType) {
+		eSet(ContactPackage.Literals.CONTACT_MECH__CONTACT_MECH_TYPE, newContactMechType);
 	}
 
 } //ContactMechImpl

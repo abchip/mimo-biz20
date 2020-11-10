@@ -38,36 +38,36 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getAddtlShippingChargeDesc <em>Addtl Shipping Charge Desc</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getCreatedDate <em>Created Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getCurrencyUomId <em>Currency Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getDestinationContactMechId <em>Destination Contact Mech Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getDestinationFacilityId <em>Destination Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getDestinationTelecomNumberId <em>Destination Telecom Number Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getCurrencyUom <em>Currency Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getDestinationContactMech <em>Destination Contact Mech</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getDestinationFacility <em>Destination Facility</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getDestinationTelecomNumber <em>Destination Telecom Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getEstimatedArrivalDate <em>Estimated Arrival Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getEstimatedArrivalWorkEffId <em>Estimated Arrival Work Eff Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getEstimatedArrivalWorkEff <em>Estimated Arrival Work Eff</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getEstimatedReadyDate <em>Estimated Ready Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getEstimatedShipCost <em>Estimated Ship Cost</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getEstimatedShipDate <em>Estimated Ship Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getEstimatedShipWorkEffId <em>Estimated Ship Work Eff Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getEstimatedShipWorkEff <em>Estimated Ship Work Eff</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getHandlingInstructions <em>Handling Instructions</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getLastModifiedDate <em>Last Modified Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getLatestCancelDate <em>Latest Cancel Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getOriginContactMechId <em>Origin Contact Mech Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getOriginFacilityId <em>Origin Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getOriginTelecomNumberId <em>Origin Telecom Number Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getOriginContactMech <em>Origin Contact Mech</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getOriginFacility <em>Origin Facility</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getOriginTelecomNumber <em>Origin Telecom Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getPartyIdFrom <em>Party Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getPartyIdTo <em>Party Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getPicklistBinId <em>Picklist Bin Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getPrimaryOrderId <em>Primary Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getPrimaryReturnId <em>Primary Return Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getPicklistBin <em>Picklist Bin</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getPrimaryOrder <em>Primary Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getPrimaryReturn <em>Primary Return</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getPrimaryShipGroupSeqId <em>Primary Ship Group Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getShipmentAttributes <em>Shipment Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getShipmentContactMechs <em>Shipment Contact Mechs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getShipmentItems <em>Shipment Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getShipmentPackages <em>Shipment Packages</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getShipmentRouteSegments <em>Shipment Route Segments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getShipmentTypeId <em>Shipment Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getShipmentType <em>Shipment Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment()
@@ -180,108 +180,92 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	void setCreatedDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Currency Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Currency Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Currency Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Currency Uom Id</em>' reference.
-	 * @see #setCurrencyUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_CurrencyUomId()
+	 * @return the value of the '<em>Currency Uom</em>' reference.
+	 * @see #setCurrencyUom(Uom)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_CurrencyUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getCurrencyUomId();
+	Uom getCurrencyUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getCurrencyUomId <em>Currency Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getCurrencyUom <em>Currency Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Currency Uom Id</em>' reference.
-	 * @see #getCurrencyUomId()
+	 * @param value the new value of the '<em>Currency Uom</em>' reference.
+	 * @see #getCurrencyUom()
 	 * @generated
 	 */
-	void setCurrencyUomId(Uom value);
+	void setCurrencyUom(Uom value);
 
 	/**
-	 * Returns the value of the '<em><b>Destination Contact Mech Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Destination Contact Mech</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Destination Contact Mech Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Destination Contact Mech Id</em>' reference.
-	 * @see #setDestinationContactMechId(ContactMech)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_DestinationContactMechId()
+	 * @return the value of the '<em>Destination Contact Mech</em>' reference.
+	 * @see #setDestinationContactMech(ContactMech)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_DestinationContactMech()
 	 * @model keys="contactMechId"
 	 * @generated
 	 */
-	ContactMech getDestinationContactMechId();
+	ContactMech getDestinationContactMech();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getDestinationContactMechId <em>Destination Contact Mech Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getDestinationContactMech <em>Destination Contact Mech</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Destination Contact Mech Id</em>' reference.
-	 * @see #getDestinationContactMechId()
+	 * @param value the new value of the '<em>Destination Contact Mech</em>' reference.
+	 * @see #getDestinationContactMech()
 	 * @generated
 	 */
-	void setDestinationContactMechId(ContactMech value);
+	void setDestinationContactMech(ContactMech value);
 
 	/**
-	 * Returns the value of the '<em><b>Destination Facility Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Destination Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Destination Facility Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Destination Facility Id</em>' reference.
-	 * @see #setDestinationFacilityId(Facility)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_DestinationFacilityId()
+	 * @return the value of the '<em>Destination Facility</em>' reference.
+	 * @see #setDestinationFacility(Facility)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_DestinationFacility()
 	 * @model keys="facilityId"
 	 * @generated
 	 */
-	Facility getDestinationFacilityId();
+	Facility getDestinationFacility();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getDestinationFacilityId <em>Destination Facility Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getDestinationFacility <em>Destination Facility</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Destination Facility Id</em>' reference.
-	 * @see #getDestinationFacilityId()
+	 * @param value the new value of the '<em>Destination Facility</em>' reference.
+	 * @see #getDestinationFacility()
 	 * @generated
 	 */
-	void setDestinationFacilityId(Facility value);
+	void setDestinationFacility(Facility value);
 
 	/**
-	 * Returns the value of the '<em><b>Destination Telecom Number Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Destination Telecom Number</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Destination Telecom Number Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Destination Telecom Number Id</em>' reference.
-	 * @see #setDestinationTelecomNumberId(TelecomNumber)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_DestinationTelecomNumberId()
+	 * @return the value of the '<em>Destination Telecom Number</em>' reference.
+	 * @see #setDestinationTelecomNumber(TelecomNumber)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_DestinationTelecomNumber()
 	 * @model keys="contactMechId"
 	 * @generated
 	 */
-	TelecomNumber getDestinationTelecomNumberId();
+	TelecomNumber getDestinationTelecomNumber();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getDestinationTelecomNumberId <em>Destination Telecom Number Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getDestinationTelecomNumber <em>Destination Telecom Number</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Destination Telecom Number Id</em>' reference.
-	 * @see #getDestinationTelecomNumberId()
+	 * @param value the new value of the '<em>Destination Telecom Number</em>' reference.
+	 * @see #getDestinationTelecomNumber()
 	 * @generated
 	 */
-	void setDestinationTelecomNumberId(TelecomNumber value);
+	void setDestinationTelecomNumber(TelecomNumber value);
 
 	/**
 	 * Returns the value of the '<em><b>Estimated Arrival Date</b></em>' attribute.
@@ -310,30 +294,26 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	void setEstimatedArrivalDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Estimated Arrival Work Eff Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Estimated Arrival Work Eff</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Estimated Arrival Work Eff Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Estimated Arrival Work Eff Id</em>' reference.
-	 * @see #setEstimatedArrivalWorkEffId(WorkEffort)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_EstimatedArrivalWorkEffId()
+	 * @return the value of the '<em>Estimated Arrival Work Eff</em>' reference.
+	 * @see #setEstimatedArrivalWorkEff(WorkEffort)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_EstimatedArrivalWorkEff()
 	 * @model keys="workEffortId"
 	 * @generated
 	 */
-	WorkEffort getEstimatedArrivalWorkEffId();
+	WorkEffort getEstimatedArrivalWorkEff();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getEstimatedArrivalWorkEffId <em>Estimated Arrival Work Eff Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getEstimatedArrivalWorkEff <em>Estimated Arrival Work Eff</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Estimated Arrival Work Eff Id</em>' reference.
-	 * @see #getEstimatedArrivalWorkEffId()
+	 * @param value the new value of the '<em>Estimated Arrival Work Eff</em>' reference.
+	 * @see #getEstimatedArrivalWorkEff()
 	 * @generated
 	 */
-	void setEstimatedArrivalWorkEffId(WorkEffort value);
+	void setEstimatedArrivalWorkEff(WorkEffort value);
 
 	/**
 	 * Returns the value of the '<em><b>Estimated Ready Date</b></em>' attribute.
@@ -414,30 +394,26 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	void setEstimatedShipDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Estimated Ship Work Eff Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Estimated Ship Work Eff</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Estimated Ship Work Eff Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Estimated Ship Work Eff Id</em>' reference.
-	 * @see #setEstimatedShipWorkEffId(WorkEffort)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_EstimatedShipWorkEffId()
+	 * @return the value of the '<em>Estimated Ship Work Eff</em>' reference.
+	 * @see #setEstimatedShipWorkEff(WorkEffort)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_EstimatedShipWorkEff()
 	 * @model keys="workEffortId"
 	 * @generated
 	 */
-	WorkEffort getEstimatedShipWorkEffId();
+	WorkEffort getEstimatedShipWorkEff();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getEstimatedShipWorkEffId <em>Estimated Ship Work Eff Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getEstimatedShipWorkEff <em>Estimated Ship Work Eff</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Estimated Ship Work Eff Id</em>' reference.
-	 * @see #getEstimatedShipWorkEffId()
+	 * @param value the new value of the '<em>Estimated Ship Work Eff</em>' reference.
+	 * @see #getEstimatedShipWorkEff()
 	 * @generated
 	 */
-	void setEstimatedShipWorkEffId(WorkEffort value);
+	void setEstimatedShipWorkEff(WorkEffort value);
 
 	/**
 	 * Returns the value of the '<em><b>Handling Instructions</b></em>' attribute.
@@ -544,82 +520,70 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	void setLatestCancelDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Origin Contact Mech Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Origin Contact Mech</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Origin Contact Mech Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Origin Contact Mech Id</em>' reference.
-	 * @see #setOriginContactMechId(ContactMech)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_OriginContactMechId()
+	 * @return the value of the '<em>Origin Contact Mech</em>' reference.
+	 * @see #setOriginContactMech(ContactMech)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_OriginContactMech()
 	 * @model keys="contactMechId"
 	 * @generated
 	 */
-	ContactMech getOriginContactMechId();
+	ContactMech getOriginContactMech();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getOriginContactMechId <em>Origin Contact Mech Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getOriginContactMech <em>Origin Contact Mech</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Origin Contact Mech Id</em>' reference.
-	 * @see #getOriginContactMechId()
+	 * @param value the new value of the '<em>Origin Contact Mech</em>' reference.
+	 * @see #getOriginContactMech()
 	 * @generated
 	 */
-	void setOriginContactMechId(ContactMech value);
+	void setOriginContactMech(ContactMech value);
 
 	/**
-	 * Returns the value of the '<em><b>Origin Facility Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Origin Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Origin Facility Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Origin Facility Id</em>' reference.
-	 * @see #setOriginFacilityId(Facility)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_OriginFacilityId()
+	 * @return the value of the '<em>Origin Facility</em>' reference.
+	 * @see #setOriginFacility(Facility)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_OriginFacility()
 	 * @model keys="facilityId"
 	 * @generated
 	 */
-	Facility getOriginFacilityId();
+	Facility getOriginFacility();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getOriginFacilityId <em>Origin Facility Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getOriginFacility <em>Origin Facility</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Origin Facility Id</em>' reference.
-	 * @see #getOriginFacilityId()
+	 * @param value the new value of the '<em>Origin Facility</em>' reference.
+	 * @see #getOriginFacility()
 	 * @generated
 	 */
-	void setOriginFacilityId(Facility value);
+	void setOriginFacility(Facility value);
 
 	/**
-	 * Returns the value of the '<em><b>Origin Telecom Number Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Origin Telecom Number</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Origin Telecom Number Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Origin Telecom Number Id</em>' reference.
-	 * @see #setOriginTelecomNumberId(TelecomNumber)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_OriginTelecomNumberId()
+	 * @return the value of the '<em>Origin Telecom Number</em>' reference.
+	 * @see #setOriginTelecomNumber(TelecomNumber)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_OriginTelecomNumber()
 	 * @model keys="contactMechId"
 	 * @generated
 	 */
-	TelecomNumber getOriginTelecomNumberId();
+	TelecomNumber getOriginTelecomNumber();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getOriginTelecomNumberId <em>Origin Telecom Number Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getOriginTelecomNumber <em>Origin Telecom Number</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Origin Telecom Number Id</em>' reference.
-	 * @see #getOriginTelecomNumberId()
+	 * @param value the new value of the '<em>Origin Telecom Number</em>' reference.
+	 * @see #getOriginTelecomNumber()
 	 * @generated
 	 */
-	void setOriginTelecomNumberId(TelecomNumber value);
+	void setOriginTelecomNumber(TelecomNumber value);
 
 	/**
 	 * Returns the value of the '<em><b>Party Id From</b></em>' reference.
@@ -674,82 +638,70 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	void setPartyIdTo(Party value);
 
 	/**
-	 * Returns the value of the '<em><b>Picklist Bin Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Picklist Bin</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Picklist Bin Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Picklist Bin Id</em>' reference.
-	 * @see #setPicklistBinId(PicklistBin)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_PicklistBinId()
+	 * @return the value of the '<em>Picklist Bin</em>' reference.
+	 * @see #setPicklistBin(PicklistBin)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_PicklistBin()
 	 * @model keys="picklistBinId"
 	 * @generated
 	 */
-	PicklistBin getPicklistBinId();
+	PicklistBin getPicklistBin();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getPicklistBinId <em>Picklist Bin Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getPicklistBin <em>Picklist Bin</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Picklist Bin Id</em>' reference.
-	 * @see #getPicklistBinId()
+	 * @param value the new value of the '<em>Picklist Bin</em>' reference.
+	 * @see #getPicklistBin()
 	 * @generated
 	 */
-	void setPicklistBinId(PicklistBin value);
+	void setPicklistBin(PicklistBin value);
 
 	/**
-	 * Returns the value of the '<em><b>Primary Order Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Primary Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Primary Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Primary Order Id</em>' reference.
-	 * @see #setPrimaryOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_PrimaryOrderId()
+	 * @return the value of the '<em>Primary Order</em>' reference.
+	 * @see #setPrimaryOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_PrimaryOrder()
 	 * @model keys="orderId"
 	 * @generated
 	 */
-	OrderHeader getPrimaryOrderId();
+	OrderHeader getPrimaryOrder();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getPrimaryOrderId <em>Primary Order Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getPrimaryOrder <em>Primary Order</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Primary Order Id</em>' reference.
-	 * @see #getPrimaryOrderId()
+	 * @param value the new value of the '<em>Primary Order</em>' reference.
+	 * @see #getPrimaryOrder()
 	 * @generated
 	 */
-	void setPrimaryOrderId(OrderHeader value);
+	void setPrimaryOrder(OrderHeader value);
 
 	/**
-	 * Returns the value of the '<em><b>Primary Return Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Primary Return</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Primary Return Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Primary Return Id</em>' reference.
-	 * @see #setPrimaryReturnId(ReturnHeader)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_PrimaryReturnId()
+	 * @return the value of the '<em>Primary Return</em>' reference.
+	 * @see #setPrimaryReturn(ReturnHeader)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_PrimaryReturn()
 	 * @model keys="returnId"
 	 * @generated
 	 */
-	ReturnHeader getPrimaryReturnId();
+	ReturnHeader getPrimaryReturn();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getPrimaryReturnId <em>Primary Return Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getPrimaryReturn <em>Primary Return</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Primary Return Id</em>' reference.
-	 * @see #getPrimaryReturnId()
+	 * @param value the new value of the '<em>Primary Return</em>' reference.
+	 * @see #getPrimaryReturn()
 	 * @generated
 	 */
-	void setPrimaryReturnId(ReturnHeader value);
+	void setPrimaryReturn(ReturnHeader value);
 
 	/**
 	 * Returns the value of the '<em><b>Primary Ship Group Seq Id</b></em>' attribute.
@@ -858,6 +810,50 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	List<ShipmentRouteSegment> getShipmentRouteSegments();
 
 	/**
+	 * Returns the value of the '<em><b>Shipment Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Shipment Type</em>' reference.
+	 * @see #setShipmentType(ShipmentType)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_ShipmentType()
+	 * @model keys="shipmentTypeId"
+	 * @generated
+	 */
+	ShipmentType getShipmentType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getShipmentType <em>Shipment Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Shipment Type</em>' reference.
+	 * @see #getShipmentType()
+	 * @generated
+	 */
+	void setShipmentType(ShipmentType value);
+
+	/**
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_Status()
+	 * @model keys="statusId"
+	 * @generated
+	 */
+	StatusItem getStatus();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getStatus <em>Status</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
+	 * @generated
+	 */
+	void setStatus(StatusItem value);
+
+	/**
 	 * Returns the value of the '<em><b>Shipment Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -883,57 +879,5 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * @generated
 	 */
 	void setShipmentId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Shipment Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shipment Type Id</em>' reference.
-	 * @see #setShipmentTypeId(ShipmentType)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_ShipmentTypeId()
-	 * @model keys="shipmentTypeId"
-	 * @generated
-	 */
-	ShipmentType getShipmentTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getShipmentTypeId <em>Shipment Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shipment Type Id</em>' reference.
-	 * @see #getShipmentTypeId()
-	 * @generated
-	 */
-	void setShipmentTypeId(ShipmentType value);
-
-	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_StatusId()
-	 * @model keys="statusId"
-	 * @generated
-	 */
-	StatusItem getStatusId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getStatusId <em>Status Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
-	 * @generated
-	 */
-	void setStatusId(StatusItem value);
 
 } // Shipment

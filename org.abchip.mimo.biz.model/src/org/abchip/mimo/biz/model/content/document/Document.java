@@ -27,7 +27,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.content.document.Document#getDocumentAttributes <em>Document Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.Document#getDocumentLocation <em>Document Location</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.Document#getDocumentText <em>Document Text</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.document.Document#getDocumentTypeId <em>Document Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.document.Document#getDocumentType <em>Document Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.Document#getImageData <em>Image Data</em>}</li>
  * </ul>
  *
@@ -184,30 +184,26 @@ public interface Document extends EntityTyped<DocumentType>, EntityInfo {
 	void setDocumentText(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Document Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Document Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Document Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Document Type Id</em>' reference.
-	 * @see #setDocumentTypeId(DocumentType)
-	 * @see org.abchip.mimo.biz.model.content.document.DocumentPackage#getDocument_DocumentTypeId()
+	 * @return the value of the '<em>Document Type</em>' reference.
+	 * @see #setDocumentType(DocumentType)
+	 * @see org.abchip.mimo.biz.model.content.document.DocumentPackage#getDocument_DocumentType()
 	 * @model keys="documentTypeId"
 	 * @generated
 	 */
-	DocumentType getDocumentTypeId();
+	DocumentType getDocumentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.document.Document#getDocumentTypeId <em>Document Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.document.Document#getDocumentType <em>Document Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Document Type Id</em>' reference.
-	 * @see #getDocumentTypeId()
+	 * @param value the new value of the '<em>Document Type</em>' reference.
+	 * @see #getDocumentType()
 	 * @generated
 	 */
-	void setDocumentTypeId(DocumentType value);
+	void setDocumentType(DocumentType value);
 
 	/**
 	 * Returns the value of the '<em><b>Image Data</b></em>' attribute.

@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentAttributeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentAttributeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentAttributeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentAttributeImpl#getOrderAdjustmentId <em>Order Adjustment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentAttributeImpl#getOrderAdjustment <em>Order Adjustment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentAttributeImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentAttributeImpl#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentAttributeImpl#getAttrValue <em>Attr Value</em>}</li>
@@ -153,6 +153,26 @@ public class OrderAdjustmentAttributeImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
+	public OrderAdjustment getOrderAdjustment() {
+		return (OrderAdjustment)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT_ATTRIBUTE__ORDER_ADJUSTMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrderAdjustment(OrderAdjustment newOrderAdjustment) {
+		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT_ATTRIBUTE__ORDER_ADJUSTMENT, newOrderAdjustment);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrDescription() {
 		return (String)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT_ATTRIBUTE__ATTR_DESCRIPTION, true);
 	}
@@ -243,26 +263,6 @@ public class OrderAdjustmentAttributeImpl extends EntityIdentifiableImpl impleme
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderAdjustment getOrderAdjustmentId() {
-		return (OrderAdjustment)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT_ATTRIBUTE__ORDER_ADJUSTMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderAdjustmentId(OrderAdjustment newOrderAdjustmentId) {
-		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT_ATTRIBUTE__ORDER_ADJUSTMENT_ID, newOrderAdjustmentId);
 	}
 
 } //OrderAdjustmentAttributeImpl

@@ -21,8 +21,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#getTaxAuthPartyId <em>Tax Auth Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#getTaxAuthGeo <em>Tax Auth Geo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#getTaxAuthParty <em>Tax Auth Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#isIncludeTaxInPrice <em>Include Tax In Price</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#isRequireTaxIdForExemption <em>Require Tax Id For Exemption</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#getTaxIdFormatPattern <em>Tax Id Format Pattern</em>}</li>
@@ -33,6 +33,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface TaxAuthority extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Tax Auth Geo</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tax Auth Geo</em>' reference.
+	 * @see #setTaxAuthGeo(Geo)
+	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthority_TaxAuthGeo()
+	 * @model keys="geoId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Geo getTaxAuthGeo();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#getTaxAuthGeo <em>Tax Auth Geo</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tax Auth Geo</em>' reference.
+	 * @see #getTaxAuthGeo()
+	 * @generated
+	 */
+	void setTaxAuthGeo(Geo value);
+
+	/**
+	 * Returns the value of the '<em><b>Tax Auth Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tax Auth Party</em>' reference.
+	 * @see #setTaxAuthParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthority_TaxAuthParty()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getTaxAuthParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#getTaxAuthParty <em>Tax Auth Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tax Auth Party</em>' reference.
+	 * @see #getTaxAuthParty()
+	 * @generated
+	 */
+	void setTaxAuthParty(Party value);
+
 	/**
 	 * Returns the value of the '<em><b>Include Tax In Price</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -85,60 +131,6 @@ public interface TaxAuthority extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setRequireTaxIdForExemption(boolean value);
-
-	/**
-	 * Returns the value of the '<em><b>Tax Auth Geo Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tax Auth Geo Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tax Auth Geo Id</em>' reference.
-	 * @see #setTaxAuthGeoId(Geo)
-	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthority_TaxAuthGeoId()
-	 * @model keys="geoId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Geo getTaxAuthGeoId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tax Auth Geo Id</em>' reference.
-	 * @see #getTaxAuthGeoId()
-	 * @generated
-	 */
-	void setTaxAuthGeoId(Geo value);
-
-	/**
-	 * Returns the value of the '<em><b>Tax Auth Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tax Auth Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tax Auth Party Id</em>' reference.
-	 * @see #setTaxAuthPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthority_TaxAuthPartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getTaxAuthPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthority#getTaxAuthPartyId <em>Tax Auth Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tax Auth Party Id</em>' reference.
-	 * @see #getTaxAuthPartyId()
-	 * @generated
-	 */
-	void setTaxAuthPartyId(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Tax Id Format Pattern</b></em>' attribute.

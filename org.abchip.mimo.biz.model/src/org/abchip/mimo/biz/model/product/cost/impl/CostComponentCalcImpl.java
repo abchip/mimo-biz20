@@ -33,12 +33,12 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentCalcImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentCalcImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentCalcImpl#getCostComponentCalcId <em>Cost Component Calc Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentCalcImpl#getCostCustomMethodId <em>Cost Custom Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentCalcImpl#getCostGlAccountTypeId <em>Cost Gl Account Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentCalcImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentCalcImpl#getCostCustomMethod <em>Cost Custom Method</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentCalcImpl#getCostGlAccountType <em>Cost Gl Account Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentCalcImpl#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentCalcImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentCalcImpl#getFixedCost <em>Fixed Cost</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentCalcImpl#getOffsettingGlAccountTypeId <em>Offsetting Gl Account Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentCalcImpl#getOffsettingGlAccountType <em>Offsetting Gl Account Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentCalcImpl#getPerMilliSecond <em>Per Milli Second</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentCalcImpl#getVariableCost <em>Variable Cost</em>}</li>
  * </ul>
@@ -162,66 +162,6 @@ public class CostComponentCalcImpl extends EntityIdentifiableImpl implements Cos
 	 * @generated
 	 */
 	@Override
-	public CustomMethod getCostCustomMethodId() {
-		return (CustomMethod)eGet(CostPackage.Literals.COST_COMPONENT_CALC__COST_CUSTOM_METHOD_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCostCustomMethodId(CustomMethod newCostCustomMethodId) {
-		eSet(CostPackage.Literals.COST_COMPONENT_CALC__COST_CUSTOM_METHOD_ID, newCostCustomMethodId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GlAccountType getCostGlAccountTypeId() {
-		return (GlAccountType)eGet(CostPackage.Literals.COST_COMPONENT_CALC__COST_GL_ACCOUNT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCostGlAccountTypeId(GlAccountType newCostGlAccountTypeId) {
-		eSet(CostPackage.Literals.COST_COMPONENT_CALC__COST_GL_ACCOUNT_TYPE_ID, newCostGlAccountTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Uom getCurrencyUomId() {
-		return (Uom)eGet(CostPackage.Literals.COST_COMPONENT_CALC__CURRENCY_UOM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCurrencyUomId(Uom newCurrencyUomId) {
-		eSet(CostPackage.Literals.COST_COMPONENT_CALC__CURRENCY_UOM_ID, newCurrencyUomId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getDescription() {
 		return (String)eGet(CostPackage.Literals.COST_COMPONENT_CALC__DESCRIPTION, true);
 	}
@@ -262,8 +202,8 @@ public class CostComponentCalcImpl extends EntityIdentifiableImpl implements Cos
 	 * @generated
 	 */
 	@Override
-	public GlAccountType getOffsettingGlAccountTypeId() {
-		return (GlAccountType)eGet(CostPackage.Literals.COST_COMPONENT_CALC__OFFSETTING_GL_ACCOUNT_TYPE_ID, true);
+	public GlAccountType getOffsettingGlAccountType() {
+		return (GlAccountType)eGet(CostPackage.Literals.COST_COMPONENT_CALC__OFFSETTING_GL_ACCOUNT_TYPE, true);
 	}
 
 	/**
@@ -272,8 +212,8 @@ public class CostComponentCalcImpl extends EntityIdentifiableImpl implements Cos
 	 * @generated
 	 */
 	@Override
-	public void setOffsettingGlAccountTypeId(GlAccountType newOffsettingGlAccountTypeId) {
-		eSet(CostPackage.Literals.COST_COMPONENT_CALC__OFFSETTING_GL_ACCOUNT_TYPE_ID, newOffsettingGlAccountTypeId);
+	public void setOffsettingGlAccountType(GlAccountType newOffsettingGlAccountType) {
+		eSet(CostPackage.Literals.COST_COMPONENT_CALC__OFFSETTING_GL_ACCOUNT_TYPE, newOffsettingGlAccountType);
 	}
 
 	/**
@@ -372,6 +312,66 @@ public class CostComponentCalcImpl extends EntityIdentifiableImpl implements Cos
 	@Override
 	public void setCostComponentCalcId(String newCostComponentCalcId) {
 		eSet(CostPackage.Literals.COST_COMPONENT_CALC__COST_COMPONENT_CALC_ID, newCostComponentCalcId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CustomMethod getCostCustomMethod() {
+		return (CustomMethod)eGet(CostPackage.Literals.COST_COMPONENT_CALC__COST_CUSTOM_METHOD, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCostCustomMethod(CustomMethod newCostCustomMethod) {
+		eSet(CostPackage.Literals.COST_COMPONENT_CALC__COST_CUSTOM_METHOD, newCostCustomMethod);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GlAccountType getCostGlAccountType() {
+		return (GlAccountType)eGet(CostPackage.Literals.COST_COMPONENT_CALC__COST_GL_ACCOUNT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCostGlAccountType(GlAccountType newCostGlAccountType) {
+		eSet(CostPackage.Literals.COST_COMPONENT_CALC__COST_GL_ACCOUNT_TYPE, newCostGlAccountType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Uom getCurrencyUom() {
+		return (Uom)eGet(CostPackage.Literals.COST_COMPONENT_CALC__CURRENCY_UOM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCurrencyUom(Uom newCurrencyUom) {
+		eSet(CostPackage.Literals.COST_COMPONENT_CALC__CURRENCY_UOM, newCurrencyUom);
 	}
 
 } //CostComponentCalcImpl

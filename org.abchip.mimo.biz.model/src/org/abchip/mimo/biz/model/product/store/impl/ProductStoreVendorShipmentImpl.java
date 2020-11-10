@@ -30,10 +30,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorShipmentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorShipmentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorShipmentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorShipmentImpl#getProductStoreId <em>Product Store Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorShipmentImpl#getVendorPartyId <em>Vendor Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorShipmentImpl#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorShipmentImpl#getCarrierPartyId <em>Carrier Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorShipmentImpl#getProductStore <em>Product Store</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorShipmentImpl#getVendorParty <em>Vendor Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorShipmentImpl#getShipmentMethodType <em>Shipment Method Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorShipmentImpl#getCarrierParty <em>Carrier Party</em>}</li>
  * </ul>
  *
  * @generated
@@ -155,8 +155,8 @@ public class ProductStoreVendorShipmentImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public Party getCarrierPartyId() {
-		return (Party)eGet(StorePackage.Literals.PRODUCT_STORE_VENDOR_SHIPMENT__CARRIER_PARTY_ID, true);
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(StorePackage.Literals.PRODUCT_STORE_VENDOR_SHIPMENT__PRODUCT_STORE, true);
 	}
 
 	/**
@@ -165,8 +165,68 @@ public class ProductStoreVendorShipmentImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setCarrierPartyId(Party newCarrierPartyId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_VENDOR_SHIPMENT__CARRIER_PARTY_ID, newCarrierPartyId);
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_VENDOR_SHIPMENT__PRODUCT_STORE, newProductStore);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getVendorParty() {
+		return (Party)eGet(StorePackage.Literals.PRODUCT_STORE_VENDOR_SHIPMENT__VENDOR_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setVendorParty(Party newVendorParty) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_VENDOR_SHIPMENT__VENDOR_PARTY, newVendorParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ShipmentMethodType getShipmentMethodType() {
+		return (ShipmentMethodType)eGet(StorePackage.Literals.PRODUCT_STORE_VENDOR_SHIPMENT__SHIPMENT_METHOD_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setShipmentMethodType(ShipmentMethodType newShipmentMethodType) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_VENDOR_SHIPMENT__SHIPMENT_METHOD_TYPE, newShipmentMethodType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getCarrierParty() {
+		return (Party)eGet(StorePackage.Literals.PRODUCT_STORE_VENDOR_SHIPMENT__CARRIER_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCarrierParty(Party newCarrierParty) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_VENDOR_SHIPMENT__CARRIER_PARTY, newCarrierParty);
 	}
 
 	/**
@@ -205,66 +265,6 @@ public class ProductStoreVendorShipmentImpl extends EntityIdentifiableImpl imple
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ShipmentMethodType getShipmentMethodTypeId() {
-		return (ShipmentMethodType)eGet(StorePackage.Literals.PRODUCT_STORE_VENDOR_SHIPMENT__SHIPMENT_METHOD_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setShipmentMethodTypeId(ShipmentMethodType newShipmentMethodTypeId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_VENDOR_SHIPMENT__SHIPMENT_METHOD_TYPE_ID, newShipmentMethodTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getVendorPartyId() {
-		return (Party)eGet(StorePackage.Literals.PRODUCT_STORE_VENDOR_SHIPMENT__VENDOR_PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setVendorPartyId(Party newVendorPartyId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_VENDOR_SHIPMENT__VENDOR_PARTY_ID, newVendorPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(StorePackage.Literals.PRODUCT_STORE_VENDOR_SHIPMENT__PRODUCT_STORE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_VENDOR_SHIPMENT__PRODUCT_STORE_ID, newProductStoreId);
 	}
 
 } //ProductStoreVendorShipmentImpl

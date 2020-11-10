@@ -32,14 +32,14 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getSurveyResponseId <em>Survey Response Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getSurveyQuestionId <em>Survey Question Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getSurveyResponse <em>Survey Response</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getSurveyQuestion <em>Survey Question</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getSurveyMultiRespColId <em>Survey Multi Resp Col Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getAmountBase <em>Amount Base</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getAmountBaseUomId <em>Amount Base Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getAnsweredDate <em>Answered Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getBooleanResponse <em>Boolean Response</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getContentId <em>Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getContent <em>Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getCurrencyResponse <em>Currency Response</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getDuration <em>Duration</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getDurationUomId <em>Duration Uom Id</em>}</li>
@@ -171,6 +171,46 @@ public class SurveyResponseAnswerImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
+	public SurveyResponse getSurveyResponse() {
+		return (SurveyResponse)eGet(SurveyPackage.Literals.SURVEY_RESPONSE_ANSWER__SURVEY_RESPONSE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSurveyResponse(SurveyResponse newSurveyResponse) {
+		eSet(SurveyPackage.Literals.SURVEY_RESPONSE_ANSWER__SURVEY_RESPONSE, newSurveyResponse);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SurveyQuestion getSurveyQuestion() {
+		return (SurveyQuestion)eGet(SurveyPackage.Literals.SURVEY_RESPONSE_ANSWER__SURVEY_QUESTION, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSurveyQuestion(SurveyQuestion newSurveyQuestion) {
+		eSet(SurveyPackage.Literals.SURVEY_RESPONSE_ANSWER__SURVEY_QUESTION, newSurveyQuestion);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAmountBase() {
 		return (BigDecimal)eGet(SurveyPackage.Literals.SURVEY_RESPONSE_ANSWER__AMOUNT_BASE, true);
 	}
@@ -251,8 +291,8 @@ public class SurveyResponseAnswerImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(SurveyPackage.Literals.SURVEY_RESPONSE_ANSWER__CONTENT_ID, true);
+	public Content getContent() {
+		return (Content)eGet(SurveyPackage.Literals.SURVEY_RESPONSE_ANSWER__CONTENT, true);
 	}
 
 	/**
@@ -261,8 +301,8 @@ public class SurveyResponseAnswerImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setContentId(Content newContentId) {
-		eSet(SurveyPackage.Literals.SURVEY_RESPONSE_ANSWER__CONTENT_ID, newContentId);
+	public void setContent(Content newContent) {
+		eSet(SurveyPackage.Literals.SURVEY_RESPONSE_ANSWER__CONTENT, newContent);
 	}
 
 	/**
@@ -443,46 +483,6 @@ public class SurveyResponseAnswerImpl extends EntityIdentifiableImpl implements 
 	@Override
 	public void setSurveyOptionSeqId(String newSurveyOptionSeqId) {
 		eSet(SurveyPackage.Literals.SURVEY_RESPONSE_ANSWER__SURVEY_OPTION_SEQ_ID, newSurveyOptionSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SurveyQuestion getSurveyQuestionId() {
-		return (SurveyQuestion)eGet(SurveyPackage.Literals.SURVEY_RESPONSE_ANSWER__SURVEY_QUESTION_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSurveyQuestionId(SurveyQuestion newSurveyQuestionId) {
-		eSet(SurveyPackage.Literals.SURVEY_RESPONSE_ANSWER__SURVEY_QUESTION_ID, newSurveyQuestionId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SurveyResponse getSurveyResponseId() {
-		return (SurveyResponse)eGet(SurveyPackage.Literals.SURVEY_RESPONSE_ANSWER__SURVEY_RESPONSE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSurveyResponseId(SurveyResponse newSurveyResponseId) {
-		eSet(SurveyPackage.Literals.SURVEY_RESPONSE_ANSWER__SURVEY_RESPONSE_ID, newSurveyResponseId);
 	}
 
 	/**

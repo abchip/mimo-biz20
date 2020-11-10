@@ -22,9 +22,9 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetStatus#getBudgetId <em>Budget Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetStatus#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetStatus#getChangeByUserLoginId <em>Change By User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetStatus#getBudget <em>Budget</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetStatus#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetStatus#getChangeByUserLogin <em>Change By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetStatus#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetStatus#getStatusDate <em>Status Date</em>}</li>
  * </ul>
@@ -35,30 +35,72 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface BudgetStatus extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Change By User Login Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Budget</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Change By User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Change By User Login Id</em>' reference.
-	 * @see #setChangeByUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetStatus_ChangeByUserLoginId()
+	 * @return the value of the '<em>Budget</em>' reference.
+	 * @see #setBudget(Budget)
+	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetStatus_Budget()
+	 * @model keys="budgetId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Budget getBudget();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetStatus#getBudget <em>Budget</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Budget</em>' reference.
+	 * @see #getBudget()
+	 * @generated
+	 */
+	void setBudget(Budget value);
+
+	/**
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetStatus_Status()
+	 * @model keys="statusId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	StatusItem getStatus();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetStatus#getStatus <em>Status</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
+	 * @generated
+	 */
+	void setStatus(StatusItem value);
+
+	/**
+	 * Returns the value of the '<em><b>Change By User Login</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Change By User Login</em>' reference.
+	 * @see #setChangeByUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetStatus_ChangeByUserLogin()
 	 * @model keys="userLoginId"
 	 * @generated
 	 */
-	UserLogin getChangeByUserLoginId();
+	UserLogin getChangeByUserLogin();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetStatus#getChangeByUserLoginId <em>Change By User Login Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetStatus#getChangeByUserLogin <em>Change By User Login</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Change By User Login Id</em>' reference.
-	 * @see #getChangeByUserLoginId()
+	 * @param value the new value of the '<em>Change By User Login</em>' reference.
+	 * @see #getChangeByUserLogin()
 	 * @generated
 	 */
-	void setChangeByUserLoginId(UserLogin value);
+	void setChangeByUserLogin(UserLogin value);
 
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
@@ -111,59 +153,5 @@ public interface BudgetStatus extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setStatusDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetStatus_StatusId()
-	 * @model keys="statusId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	StatusItem getStatusId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetStatus#getStatusId <em>Status Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
-	 * @generated
-	 */
-	void setStatusId(StatusItem value);
-
-	/**
-	 * Returns the value of the '<em><b>Budget Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Budget Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Budget Id</em>' reference.
-	 * @see #setBudgetId(Budget)
-	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetStatus_BudgetId()
-	 * @model keys="budgetId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Budget getBudgetId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetStatus#getBudgetId <em>Budget Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Budget Id</em>' reference.
-	 * @see #getBudgetId()
-	 * @generated
-	 */
-	void setBudgetId(Budget value);
 
 } // BudgetStatus

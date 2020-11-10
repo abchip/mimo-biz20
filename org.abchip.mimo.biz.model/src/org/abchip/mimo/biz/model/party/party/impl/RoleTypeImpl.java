@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.RoleTypeImpl#getRoleTypeId <em>Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.RoleTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.RoleTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.RoleTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.RoleTypeImpl#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.RoleTypeImpl#getRoleTypeAttrs <em>Role Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.RoleTypeImpl#getValidContactMechRoles <em>Valid Contact Mech Roles</em>}</li>
  * </ul>
@@ -196,8 +196,8 @@ public class RoleTypeImpl extends EntityIdentifiableImpl implements RoleType {
 	 * @generated
 	 */
 	@Override
-	public RoleType getParentTypeId() {
-		return (RoleType)eGet(PartyPackage.Literals.ROLE_TYPE__PARENT_TYPE_ID, true);
+	public RoleType getParentType() {
+		return (RoleType)eGet(PartyPackage.Literals.ROLE_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -206,8 +206,8 @@ public class RoleTypeImpl extends EntityIdentifiableImpl implements RoleType {
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(RoleType newParentTypeId) {
-		eSet(PartyPackage.Literals.ROLE_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(RoleType newParentType) {
+		eSet(PartyPackage.Literals.ROLE_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

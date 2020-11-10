@@ -20,7 +20,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.FileExtension#getFileExtensionId <em>File Extension Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.FileExtension#getMimeTypeId <em>Mime Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.FileExtension#getMimeType <em>Mime Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.content.data.DataPackage#getFileExtension()
@@ -56,29 +56,25 @@ public interface FileExtension extends EntityTyped<MimeType>, EntityInfo {
 	void setFileExtensionId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Mime Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Mime Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Mime Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Mime Type Id</em>' reference.
-	 * @see #setMimeTypeId(MimeType)
-	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getFileExtension_MimeTypeId()
+	 * @return the value of the '<em>Mime Type</em>' reference.
+	 * @see #setMimeType(MimeType)
+	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getFileExtension_MimeType()
 	 * @model keys="mimeTypeId"
 	 * @generated
 	 */
-	MimeType getMimeTypeId();
+	MimeType getMimeType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.data.FileExtension#getMimeTypeId <em>Mime Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.data.FileExtension#getMimeType <em>Mime Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Mime Type Id</em>' reference.
-	 * @see #getMimeTypeId()
+	 * @param value the new value of the '<em>Mime Type</em>' reference.
+	 * @see #getMimeType()
 	 * @generated
 	 */
-	void setMimeTypeId(MimeType value);
+	void setMimeType(MimeType value);
 
 } // FileExtension

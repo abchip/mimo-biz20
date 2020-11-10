@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.AccommodationClassImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.AccommodationClassImpl#getAccommodationClassId <em>Accommodation Class Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.AccommodationClassImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.AccommodationClassImpl#getParentClassId <em>Parent Class Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.AccommodationClassImpl#getParentClass <em>Parent Class</em>}</li>
  * </ul>
  *
  * @generated
@@ -170,8 +170,8 @@ public class AccommodationClassImpl extends EntityIdentifiableImpl implements Ac
 	 * @generated
 	 */
 	@Override
-	public AccommodationClass getParentClassId() {
-		return (AccommodationClass)eGet(FixedassetPackage.Literals.ACCOMMODATION_CLASS__PARENT_CLASS_ID, true);
+	public AccommodationClass getParentClass() {
+		return (AccommodationClass)eGet(FixedassetPackage.Literals.ACCOMMODATION_CLASS__PARENT_CLASS, true);
 	}
 
 	/**
@@ -180,8 +180,8 @@ public class AccommodationClassImpl extends EntityIdentifiableImpl implements Ac
 	 * @generated
 	 */
 	@Override
-	public void setParentClassId(AccommodationClass newParentClassId) {
-		eSet(FixedassetPackage.Literals.ACCOMMODATION_CLASS__PARENT_CLASS_ID, newParentClassId);
+	public void setParentClass(AccommodationClass newParentClass) {
+		eSet(FixedassetPackage.Literals.ACCOMMODATION_CLASS__PARENT_CLASS, newParentClass);
 	}
 
 	/**

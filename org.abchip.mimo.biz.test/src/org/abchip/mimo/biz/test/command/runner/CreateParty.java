@@ -87,9 +87,9 @@ public class CreateParty implements Callable<Long> {
 		// Create PartyGroup
 		ResourceWriter<PartyGroup> partyGroupWriter = context.getResourceManager().getResourceWriter(PartyGroup.class);
 		PartyGroup partyGroup = partyGroupWriter.make();
-		partyGroup.setStatusId(context.createProxy(StatusItem.class, "PARTY_ENABLED"));
-		partyGroup.setPartyTypeId(context.createProxy(PartyType.class, "PARTY_GROUP"));
-		partyGroup.setPreferredCurrencyUomId(commonDefault.getCurrencyUom());
+		partyGroup.setStatus(context.createProxy(StatusItem.class, "PARTY_ENABLED"));
+		partyGroup.setPartyType(context.createProxy(PartyType.class, "PARTY_GROUP"));
+		partyGroup.setPreferredCurrencyUom(commonDefault.getCurrencyUom());
 		// nome
 		partyGroup.setGroupName("Description Party " + role.toLowerCase());
 		partyGroupWriter.create(partyGroup);
@@ -103,9 +103,9 @@ public class CreateParty implements Callable<Long> {
 		// Create Person
 		ResourceWriter<Person> personWriter = context.getResourceManager().getResourceWriter(Person.class);
 		Person person = personWriter.make();
-		person.setStatusId(context.createProxy(StatusItem.class, "PARTY_ENABLED"));
-		person.setPartyTypeId(context.createProxy(PartyType.class, "PERSON"));
-		person.setPreferredCurrencyUomId(commonDefault.getCurrencyUom());
+		person.setStatus(context.createProxy(StatusItem.class, "PARTY_ENABLED"));
+		person.setPartyType(context.createProxy(PartyType.class, "PERSON"));
+		person.setPreferredCurrencyUom(commonDefault.getCurrencyUom());
 		person.setFirstName("First name " + role.toLowerCase());
 		person.setLastName("Last name " + role.toLowerCase());
 		personWriter.create(person);
@@ -119,46 +119,46 @@ public class CreateParty implements Callable<Long> {
 		// Base role
 		ResourceWriter<PartyRole> partyRoleWriter = context.getResourceManager().getResourceWriter(PartyRole.class);
 		PartyRole partyRole = partyRoleWriter.make();
-		partyRole.setPartyId(party);
-		partyRole.setRoleTypeId(context.createProxy(RoleType.class, role));
+		partyRole.setParty(party);
+		partyRole.setRoleType(context.createProxy(RoleType.class, role));
 		partyRoleWriter.create(partyRole);
 
 		switch (role) {
 		case "CUSTOMER":
 			partyRole = partyRoleWriter.make();
-			partyRole.setPartyId(party);
-			partyRole.setRoleTypeId(context.createProxy(RoleType.class, "BILL_TO_CUSTOMER"));
+			partyRole.setParty(party);
+			partyRole.setRoleType(context.createProxy(RoleType.class, "BILL_TO_CUSTOMER"));
 			partyRoleWriter.create(partyRole);
 
 			partyRole = partyRoleWriter.make();
-			partyRole.setPartyId(party);
-			partyRole.setRoleTypeId(context.createProxy(RoleType.class, "SHIP_TO_CUSTOMER"));
+			partyRole.setParty(party);
+			partyRole.setRoleType(context.createProxy(RoleType.class, "SHIP_TO_CUSTOMER"));
 			partyRoleWriter.create(partyRole);
 
 			partyRole = partyRoleWriter.make();
-			partyRole.setPartyId(party);
-			partyRole.setRoleTypeId(context.createProxy(RoleType.class, "END_USER_CUSTOMER"));
+			partyRole.setParty(party);
+			partyRole.setRoleType(context.createProxy(RoleType.class, "END_USER_CUSTOMER"));
 			partyRoleWriter.create(partyRole);
 
 			partyRole = partyRoleWriter.make();
-			partyRole.setPartyId(party);
-			partyRole.setRoleTypeId(context.createProxy(RoleType.class, "PLACING_CUSTOMER"));
+			partyRole.setParty(party);
+			partyRole.setRoleType(context.createProxy(RoleType.class, "PLACING_CUSTOMER"));
 			partyRoleWriter.create(partyRole);
 			break;
 		case "SUPPLIER":
 			partyRole = partyRoleWriter.make();
-			partyRole.setPartyId(party);
-			partyRole.setRoleTypeId(context.createProxy(RoleType.class, "BILL_FROM_VENDOR"));
+			partyRole.setParty(party);
+			partyRole.setRoleType(context.createProxy(RoleType.class, "BILL_FROM_VENDOR"));
 			partyRoleWriter.create(partyRole);
 
 			partyRole = partyRoleWriter.make();
-			partyRole.setPartyId(party);
-			partyRole.setRoleTypeId(context.createProxy(RoleType.class, "SHIP_FROM_VENDOR"));
+			partyRole.setParty(party);
+			partyRole.setRoleType(context.createProxy(RoleType.class, "SHIP_FROM_VENDOR"));
 			partyRoleWriter.create(partyRole);
 
 			partyRole = partyRoleWriter.make();
-			partyRole.setPartyId(party);
-			partyRole.setRoleTypeId(context.createProxy(RoleType.class, "SUPPLIER_AGENT"));
+			partyRole.setParty(party);
+			partyRole.setRoleType(context.createProxy(RoleType.class, "SUPPLIER_AGENT"));
 			partyRoleWriter.create(partyRole);
 			break;
 		}
@@ -174,9 +174,9 @@ public class CreateParty implements Callable<Long> {
 		postalAddress.setCity("Milano");
 		// indirizzo_cap
 		postalAddress.setPostalCode("20100");
-		postalAddress.setContactMechTypeId(context.createProxy(ContactMechType.class, "POSTAL_ADDRESS"));
-		postalAddress.setCountryGeoId(commonDefault.getCountryGeo());
-		postalAddress.setStateProvinceGeoId(context.createProxy(Geo.class, "IT-MI"));
+		postalAddress.setContactMechType(context.createProxy(ContactMechType.class, "POSTAL_ADDRESS"));
+		postalAddress.setCountryGeo(commonDefault.getCountryGeo());
+		postalAddress.setStateProvinceGeo(context.createProxy(Geo.class, "IT-MI"));
 		postalAddressWriter.create(postalAddress);
 		createPartyContactMech(serviceManager, party, postalAddress, Arrays.asList("GENERAL_LOCATION", "SHIPPING_LOCATION"));
 
@@ -185,14 +185,14 @@ public class CreateParty implements Callable<Long> {
 		ResourceWriter<ContactMech> contactMechWriter = context.getResourceManager().getResourceWriter(ContactMech.class);
 		ContactMech contactMech = contactMechWriter.make();
 		contactMech.setInfoString("info" + party.getID() + "@gmail.com");
-		contactMech.setContactMechTypeId(context.createProxy(ContactMechType.class, "EMAIL_ADDRESS"));
+		contactMech.setContactMechType(context.createProxy(ContactMechType.class, "EMAIL_ADDRESS"));
 		contactMechWriter.create(contactMech);
 		createPartyContactMech(serviceManager, party, contactMech, Arrays.asList("PRIMARY_EMAIL"));
 
 		// TelecomNumber
 		ResourceWriter<TelecomNumber> telecomNumberWriter = context.getResourceManager().getResourceWriter(TelecomNumber.class);
 		TelecomNumber telecomNumber = telecomNumberWriter.make();
-		telecomNumber.setContactMechTypeId(context.createProxy(ContactMechType.class, "TELECOM_NUMBER"));
+		telecomNumber.setContactMechType(context.createProxy(ContactMechType.class, "TELECOM_NUMBER"));
 		telecomNumber.setContactNumber(StressTestUtils.generateRandomString(3, true) + " " + StressTestUtils.generateRandomString(7, true));
 		telecomNumberWriter.create(telecomNumber);
 		createPartyContactMech(serviceManager, party, telecomNumber, Arrays.asList("PRIMARY_PHONE"));
@@ -200,7 +200,7 @@ public class CreateParty implements Callable<Long> {
 		// PartyTaxAuthInfo
 		ResourceWriter<PartyTaxAuthInfo> partyTaxAuthInfoWriter = context.getResourceManager().getResourceWriter(PartyTaxAuthInfo.class);
 		PartyTaxAuthInfo partyTaxAuthInfo = partyTaxAuthInfoWriter.make();
-		partyTaxAuthInfo.setPartyId(party);
+		partyTaxAuthInfo.setParty(party);
 		partyTaxAuthInfo.setFromDate(new Date());
 		partyTaxAuthInfo.setTaxAuthGeoId(commonDefault.getCountryGeo().getID());
 		partyTaxAuthInfo.setTaxAuthPartyId("ITA_ADE");
@@ -213,8 +213,8 @@ public class CreateParty implements Callable<Long> {
 		// PartyIdentification
 		ResourceWriter<PartyIdentification> partyIdentificationWriter = context.getResourceManager().getResourceWriter(PartyIdentification.class);
 		PartyIdentification partyIdentification = partyIdentificationWriter.make();
-		partyIdentification.setPartyId(party);
-		partyIdentification.setPartyIdentificationTypeId(context.createProxy(PartyIdentificationType.class, "VCARD_FN_ORIGIN"));
+		partyIdentification.setParty(party);
+		partyIdentification.setPartyIdentificationType(context.createProxy(PartyIdentificationType.class, "VCARD_FN_ORIGIN"));
 		partyIdentification.setIdValue(StressTestUtils.generateRandomString(16, false));
 		partyIdentificationWriter.create(partyIdentification);
 
@@ -224,8 +224,8 @@ public class CreateParty implements Callable<Long> {
 			// CreditCard
 			ResourceWriter<CreditCard> creditCardWriter = context.getResourceManager().getResourceWriter(CreditCard.class);
 			CreditCard creditCard = creditCardWriter.make();
-			creditCard.setPartyId(party);
-			creditCard.setPaymentMethodTypeId(context.createProxy(PaymentMethodType.class, "CREDIT_CARD"));
+			creditCard.setParty(party);
+			creditCard.setPaymentMethodType(context.createProxy(PaymentMethodType.class, "CREDIT_CARD"));
 			// CVC code
 			creditCard.setDescription("123");
 			creditCard.setFromDate(new Date());
@@ -247,7 +247,7 @@ public class CreateParty implements Callable<Long> {
 		if(purposeTypes.size()==1) {
 			createPartyContactMech.setPartyId(party.getID());
 			createPartyContactMech.setContactMechId(contactMech.getID());
-			createPartyContactMech.setContactMechTypeId(contactMech.getContactMechTypeId().getID());
+			createPartyContactMech.setContactMechTypeId(contactMech.getContactMechType().getID());
 			createPartyContactMech.setContactMechPurposeTypeId(purposeTypes.get(0));
 			createPartyContactMech.setFromDate(new Date());
 			CreatePartyContactMechResponse response = serviceManager.execute(createPartyContactMech);
@@ -257,7 +257,7 @@ public class CreateParty implements Callable<Long> {
 		} else {
 			createPartyContactMech.setPartyId(party.getID());
 			createPartyContactMech.setContactMechId(contactMech.getID());
-			createPartyContactMech.setContactMechTypeId(contactMech.getContactMechTypeId().getID());
+			createPartyContactMech.setContactMechTypeId(contactMech.getContactMechType().getID());
 			createPartyContactMech.setFromDate(new Date());
 			CreatePartyContactMechResponse response = serviceManager.execute(createPartyContactMech);
 			if (response.onError())
@@ -284,7 +284,7 @@ public class CreateParty implements Callable<Long> {
 		ResourceWriter<CreditCard> creditCardWriter = context.getResourceManager().getResourceWriter(CreditCard.class);
 		
 		// Search credit card company 
-		String filter = "partyId = \"" + partyDefault.getOrganization().getID() + "\" and paymentMethodTypeId = \"CREDIT_CARD\"" ;
+		String filter = "partyId = '" + partyDefault.getOrganization().getID() + "' and paymentMethodTypeId = 'CREDIT_CARD'" ;
 		CreditCard creditCard = null;
 				
 		try (EntityIterator<CreditCard> cards = creditCardWriter.find(filter, null, null, 1)) {
@@ -297,8 +297,8 @@ public class CreateParty implements Callable<Long> {
 			return;
 
 		creditCard = creditCardWriter.make();
-		creditCard.setPartyId(partyDefault.getOrganization());
-		creditCard.setPaymentMethodTypeId(context.createProxy(PaymentMethodType.class, "CREDIT_CARD"));
+		creditCard.setParty(partyDefault.getOrganization());
+		creditCard.setPaymentMethodType(context.createProxy(PaymentMethodType.class, "CREDIT_CARD"));
 		// CVC code
 		creditCard.setDescription("123");
 		creditCard.setFromDate(new Date());

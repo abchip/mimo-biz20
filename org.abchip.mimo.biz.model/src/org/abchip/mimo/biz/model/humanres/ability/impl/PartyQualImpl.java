@@ -30,14 +30,14 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualImpl#getPartyQualTypeId <em>Party Qual Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualImpl#getPartyQualType <em>Party Qual Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualImpl#getQualificationDesc <em>Qualification Desc</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualImpl#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualImpl#getTitle <em>Title</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualImpl#getVerifStatusId <em>Verif Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyQualImpl#getVerifStatus <em>Verif Status</em>}</li>
  * </ul>
  *
  * @generated
@@ -159,6 +159,46 @@ public class PartyQualImpl extends EntityTypedImpl<PartyQualType> implements Par
 	 * @generated
 	 */
 	@Override
+	public Party getParty() {
+		return (Party)eGet(AbilityPackage.Literals.PARTY_QUAL__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(AbilityPackage.Literals.PARTY_QUAL__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PartyQualType getPartyQualType() {
+		return (PartyQualType)eGet(AbilityPackage.Literals.PARTY_QUAL__PARTY_QUAL_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPartyQualType(PartyQualType newPartyQualType) {
+		eSet(AbilityPackage.Literals.PARTY_QUAL__PARTY_QUAL_TYPE, newPartyQualType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(AbilityPackage.Literals.PARTY_QUAL__FROM_DATE, true);
 	}
@@ -171,46 +211,6 @@ public class PartyQualImpl extends EntityTypedImpl<PartyQualType> implements Par
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(AbilityPackage.Literals.PARTY_QUAL__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(AbilityPackage.Literals.PARTY_QUAL__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(AbilityPackage.Literals.PARTY_QUAL__PARTY_ID, newPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PartyQualType getPartyQualTypeId() {
-		return (PartyQualType)eGet(AbilityPackage.Literals.PARTY_QUAL__PARTY_QUAL_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyQualTypeId(PartyQualType newPartyQualTypeId) {
-		eSet(AbilityPackage.Literals.PARTY_QUAL__PARTY_QUAL_TYPE_ID, newPartyQualTypeId);
 	}
 
 	/**
@@ -239,8 +239,8 @@ public class PartyQualImpl extends EntityTypedImpl<PartyQualType> implements Par
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(AbilityPackage.Literals.PARTY_QUAL__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(AbilityPackage.Literals.PARTY_QUAL__STATUS, true);
 	}
 
 	/**
@@ -249,8 +249,8 @@ public class PartyQualImpl extends EntityTypedImpl<PartyQualType> implements Par
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(AbilityPackage.Literals.PARTY_QUAL__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(AbilityPackage.Literals.PARTY_QUAL__STATUS, newStatus);
 	}
 
 	/**
@@ -299,8 +299,8 @@ public class PartyQualImpl extends EntityTypedImpl<PartyQualType> implements Par
 	 * @generated
 	 */
 	@Override
-	public StatusItem getVerifStatusId() {
-		return (StatusItem)eGet(AbilityPackage.Literals.PARTY_QUAL__VERIF_STATUS_ID, true);
+	public StatusItem getVerifStatus() {
+		return (StatusItem)eGet(AbilityPackage.Literals.PARTY_QUAL__VERIF_STATUS, true);
 	}
 
 	/**
@@ -309,8 +309,8 @@ public class PartyQualImpl extends EntityTypedImpl<PartyQualType> implements Par
 	 * @generated
 	 */
 	@Override
-	public void setVerifStatusId(StatusItem newVerifStatusId) {
-		eSet(AbilityPackage.Literals.PARTY_QUAL__VERIF_STATUS_ID, newVerifStatusId);
+	public void setVerifStatus(StatusItem newVerifStatus) {
+		eSet(AbilityPackage.Literals.PARTY_QUAL__VERIF_STATUS, newVerifStatus);
 	}
 
 	/**

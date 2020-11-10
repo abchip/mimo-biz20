@@ -24,8 +24,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getEntryDate <em>Entry Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getGrossSales <em>Gross Sales</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getProductCost <em>Product Cost</em>}</li>
@@ -37,6 +37,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface OrderSummaryEntry extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderSummaryEntry_Product()
+	 * @model keys="productId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
+
+	/**
+	 * Returns the value of the '<em><b>Facility</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Facility</em>' reference.
+	 * @see #setFacility(Facility)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderSummaryEntry_Facility()
+	 * @model keys="facilityId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Facility getFacility();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getFacility <em>Facility</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Facility</em>' reference.
+	 * @see #getFacility()
+	 * @generated
+	 */
+	void setFacility(Facility value);
+
 	/**
 	 * Returns the value of the '<em><b>Entry Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -63,33 +109,6 @@ public interface OrderSummaryEntry extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setEntryDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Facility Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facility Id</em>' reference.
-	 * @see #setFacilityId(Facility)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderSummaryEntry_FacilityId()
-	 * @model keys="facilityId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Facility getFacilityId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getFacilityId <em>Facility Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Facility Id</em>' reference.
-	 * @see #getFacilityId()
-	 * @generated
-	 */
-	void setFacilityId(Facility value);
 
 	/**
 	 * Returns the value of the '<em><b>Gross Sales</b></em>' attribute.
@@ -142,33 +161,6 @@ public interface OrderSummaryEntry extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setProductCost(BigDecimal value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderSummaryEntry_ProductId()
-	 * @model keys="productId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Product getProductId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getProductId <em>Product Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
-	 * @generated
-	 */
-	void setProductId(Product value);
 
 	/**
 	 * Returns the value of the '<em><b>Total Quantity</b></em>' attribute.

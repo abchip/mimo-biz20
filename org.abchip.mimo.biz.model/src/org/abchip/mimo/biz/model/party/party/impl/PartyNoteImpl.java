@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyNoteImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyNoteImpl#getParty <em>Party</em>}</li>
  * </ul>
  *
  * @generated
@@ -52,8 +52,8 @@ public class PartyNoteImpl extends BizEntityNoteImpl implements PartyNote {
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(PartyPackage.Literals.PARTY_NOTE__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(PartyPackage.Literals.PARTY_NOTE__PARTY, true);
 	}
 
 	/**
@@ -62,8 +62,8 @@ public class PartyNoteImpl extends BizEntityNoteImpl implements PartyNote {
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(PartyPackage.Literals.PARTY_NOTE__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(PartyPackage.Literals.PARTY_NOTE__PARTY, newParty);
 	}
 
 } //PartyNoteImpl

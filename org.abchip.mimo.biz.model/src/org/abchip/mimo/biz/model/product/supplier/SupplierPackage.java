@@ -108,22 +108,22 @@ public interface SupplierPackage extends EPackage {
 	int MARKET_INTEREST__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MARKET_INTEREST__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int MARKET_INTEREST__PRODUCT_CATEGORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Party Classification Group Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party Classification Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MARKET_INTEREST__PARTY_CLASSIFICATION_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int MARKET_INTEREST__PARTY_CLASSIFICATION_GROUP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -208,13 +208,13 @@ public interface SupplierPackage extends EPackage {
 	int REORDER_GUIDELINE__REORDER_GUIDELINE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int REORDER_GUIDELINE__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int REORDER_GUIDELINE__FACILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -226,31 +226,31 @@ public interface SupplierPackage extends EPackage {
 	int REORDER_GUIDELINE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Geo Id</b></em>' reference.
+	 * The feature id for the '<em><b>Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int REORDER_GUIDELINE__GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int REORDER_GUIDELINE__GEO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int REORDER_GUIDELINE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int REORDER_GUIDELINE__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int REORDER_GUIDELINE__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int REORDER_GUIDELINE__PRODUCT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Reorder Level</b></em>' attribute.
@@ -417,31 +417,31 @@ public interface SupplierPackage extends EPackage {
 	int SUPPLIER_PRODUCT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int SUPPLIER_PRODUCT__PRODUCT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int SUPPLIER_PRODUCT__PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Currency Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__CURRENCY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int SUPPLIER_PRODUCT__CURRENCY_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Available From Date</b></em>' attribute.
@@ -525,13 +525,13 @@ public interface SupplierPackage extends EPackage {
 	int SUPPLIER_PRODUCT__ORDER_QTY_INCREMENTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
-	 * The feature id for the '<em><b>Quantity Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Quantity Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__QUANTITY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
+	int SUPPLIER_PRODUCT__QUANTITY_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Shipping Price</b></em>' attribute.
@@ -552,13 +552,13 @@ public interface SupplierPackage extends EPackage {
 	int SUPPLIER_PRODUCT__STANDARD_LEAD_TIME_DAYS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
-	 * The feature id for the '<em><b>Supplier Pref Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Supplier Pref Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__SUPPLIER_PREF_ORDER_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
+	int SUPPLIER_PRODUCT__SUPPLIER_PREF_ORDER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Supplier Product Id</b></em>' attribute.
@@ -579,13 +579,13 @@ public interface SupplierPackage extends EPackage {
 	int SUPPLIER_PRODUCT__SUPPLIER_PRODUCT_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
-	 * The feature id for the '<em><b>Supplier Rating Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Supplier Rating Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__SUPPLIER_RATING_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
+	int SUPPLIER_PRODUCT__SUPPLIER_RATING_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Units Included</b></em>' attribute.
@@ -652,22 +652,22 @@ public interface SupplierPackage extends EPackage {
 	int SUPPLIER_PRODUCT_FEATURE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT_FEATURE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SUPPLIER_PRODUCT_FEATURE__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Product Feature Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Feature</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT_FEATURE__PRODUCT_FEATURE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int SUPPLIER_PRODUCT_FEATURE__PRODUCT_FEATURE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -688,13 +688,13 @@ public interface SupplierPackage extends EPackage {
 	int SUPPLIER_PRODUCT_FEATURE__ID_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT_FEATURE__UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int SUPPLIER_PRODUCT_FEATURE__UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Product Feature</em>' class.
@@ -799,26 +799,26 @@ public interface SupplierPackage extends EPackage {
 	EClass getMarketInterest();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.MarketInterest#getProductCategoryId <em>Product Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.MarketInterest#getProductCategory <em>Product Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.supplier.MarketInterest#getProductCategoryId()
+	 * @return the meta object for the reference '<em>Product Category</em>'.
+	 * @see org.abchip.mimo.biz.model.product.supplier.MarketInterest#getProductCategory()
 	 * @see #getMarketInterest()
 	 * @generated
 	 */
-	EReference getMarketInterest_ProductCategoryId();
+	EReference getMarketInterest_ProductCategory();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.MarketInterest#getPartyClassificationGroupId <em>Party Classification Group Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.MarketInterest#getPartyClassificationGroup <em>Party Classification Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Classification Group Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.supplier.MarketInterest#getPartyClassificationGroupId()
+	 * @return the meta object for the reference '<em>Party Classification Group</em>'.
+	 * @see org.abchip.mimo.biz.model.product.supplier.MarketInterest#getPartyClassificationGroup()
 	 * @see #getMarketInterest()
 	 * @generated
 	 */
-	EReference getMarketInterest_PartyClassificationGroupId();
+	EReference getMarketInterest_PartyClassificationGroup();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.supplier.MarketInterest#getFromDate <em>From Date</em>}'.
@@ -864,15 +864,15 @@ public interface SupplierPackage extends EPackage {
 	EAttribute getReorderGuideline_ReorderGuidelineId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getFacilityId <em>Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getFacility <em>Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getFacilityId()
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getFacility()
 	 * @see #getReorderGuideline()
 	 * @generated
 	 */
-	EReference getReorderGuideline_FacilityId();
+	EReference getReorderGuideline_Facility();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getFromDate <em>From Date</em>}'.
@@ -886,37 +886,37 @@ public interface SupplierPackage extends EPackage {
 	EAttribute getReorderGuideline_FromDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getGeoId <em>Geo Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getGeo <em>Geo</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Geo Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getGeoId()
+	 * @return the meta object for the reference '<em>Geo</em>'.
+	 * @see org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getGeo()
 	 * @see #getReorderGuideline()
 	 * @generated
 	 */
-	EReference getReorderGuideline_GeoId();
+	EReference getReorderGuideline_Geo();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getParty()
 	 * @see #getReorderGuideline()
 	 * @generated
 	 */
-	EReference getReorderGuideline_PartyId();
+	EReference getReorderGuideline_Party();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getProductId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getProduct()
 	 * @see #getReorderGuideline()
 	 * @generated
 	 */
-	EReference getReorderGuideline_ProductId();
+	EReference getReorderGuideline_Product();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getReorderLevel <em>Reorder Level</em>}'.
@@ -1005,37 +1005,37 @@ public interface SupplierPackage extends EPackage {
 	EClass getSupplierProduct();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getProductId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getProduct()
 	 * @see #getSupplierProduct()
 	 * @generated
 	 */
-	EReference getSupplierProduct_ProductId();
+	EReference getSupplierProduct_Product();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getParty()
 	 * @see #getSupplierProduct()
 	 * @generated
 	 */
-	EReference getSupplierProduct_PartyId();
+	EReference getSupplierProduct_Party();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getCurrencyUomId <em>Currency Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getCurrencyUom <em>Currency Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Currency Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getCurrencyUomId()
+	 * @return the meta object for the reference '<em>Currency Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getCurrencyUom()
 	 * @see #getSupplierProduct()
 	 * @generated
 	 */
-	EReference getSupplierProduct_CurrencyUomId();
+	EReference getSupplierProduct_CurrencyUom();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getMinimumOrderQuantity <em>Minimum Order Quantity</em>}'.
@@ -1137,15 +1137,15 @@ public interface SupplierPackage extends EPackage {
 	EAttribute getSupplierProduct_OrderQtyIncrements();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getQuantityUomId <em>Quantity Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getQuantityUom <em>Quantity Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Quantity Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getQuantityUomId()
+	 * @return the meta object for the reference '<em>Quantity Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getQuantityUom()
 	 * @see #getSupplierProduct()
 	 * @generated
 	 */
-	EReference getSupplierProduct_QuantityUomId();
+	EReference getSupplierProduct_QuantityUom();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getShippingPrice <em>Shipping Price</em>}'.
@@ -1170,15 +1170,15 @@ public interface SupplierPackage extends EPackage {
 	EAttribute getSupplierProduct_StandardLeadTimeDays();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getSupplierPrefOrderId <em>Supplier Pref Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getSupplierPrefOrder <em>Supplier Pref Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Supplier Pref Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getSupplierPrefOrderId()
+	 * @return the meta object for the reference '<em>Supplier Pref Order</em>'.
+	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getSupplierPrefOrder()
 	 * @see #getSupplierProduct()
 	 * @generated
 	 */
-	EReference getSupplierProduct_SupplierPrefOrderId();
+	EReference getSupplierProduct_SupplierPrefOrder();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getSupplierProductId <em>Supplier Product Id</em>}'.
@@ -1203,15 +1203,15 @@ public interface SupplierPackage extends EPackage {
 	EAttribute getSupplierProduct_SupplierProductName();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getSupplierRatingTypeId <em>Supplier Rating Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getSupplierRatingType <em>Supplier Rating Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Supplier Rating Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getSupplierRatingTypeId()
+	 * @return the meta object for the reference '<em>Supplier Rating Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getSupplierRatingType()
 	 * @see #getSupplierProduct()
 	 * @generated
 	 */
-	EReference getSupplierProduct_SupplierRatingTypeId();
+	EReference getSupplierProduct_SupplierRatingType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProduct#getUnitsIncluded <em>Units Included</em>}'.
@@ -1235,26 +1235,26 @@ public interface SupplierPackage extends EPackage {
 	EClass getSupplierProductFeature();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProductFeature#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProductFeature#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierProductFeature#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierProductFeature#getParty()
 	 * @see #getSupplierProductFeature()
 	 * @generated
 	 */
-	EReference getSupplierProductFeature_PartyId();
+	EReference getSupplierProductFeature_Party();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProductFeature#getProductFeatureId <em>Product Feature Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProductFeature#getProductFeature <em>Product Feature</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Feature Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierProductFeature#getProductFeatureId()
+	 * @return the meta object for the reference '<em>Product Feature</em>'.
+	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierProductFeature#getProductFeature()
 	 * @see #getSupplierProductFeature()
 	 * @generated
 	 */
-	EReference getSupplierProductFeature_ProductFeatureId();
+	EReference getSupplierProductFeature_ProductFeature();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProductFeature#getDescription <em>Description</em>}'.
@@ -1279,15 +1279,15 @@ public interface SupplierPackage extends EPackage {
 	EAttribute getSupplierProductFeature_IdCode();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProductFeature#getUomId <em>Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.supplier.SupplierProductFeature#getUom <em>Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierProductFeature#getUomId()
+	 * @return the meta object for the reference '<em>Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierProductFeature#getUom()
 	 * @see #getSupplierProductFeature()
 	 * @generated
 	 */
-	EReference getSupplierProductFeature_UomId();
+	EReference getSupplierProductFeature_Uom();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.supplier.SupplierRatingType <em>Rating Type</em>}'.
@@ -1354,20 +1354,20 @@ public interface SupplierPackage extends EPackage {
 		EClass MARKET_INTEREST = eINSTANCE.getMarketInterest();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference MARKET_INTEREST__PRODUCT_CATEGORY_ID = eINSTANCE.getMarketInterest_ProductCategoryId();
+		EReference MARKET_INTEREST__PRODUCT_CATEGORY = eINSTANCE.getMarketInterest_ProductCategory();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Classification Group Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party Classification Group</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference MARKET_INTEREST__PARTY_CLASSIFICATION_GROUP_ID = eINSTANCE.getMarketInterest_PartyClassificationGroupId();
+		EReference MARKET_INTEREST__PARTY_CLASSIFICATION_GROUP = eINSTANCE.getMarketInterest_PartyClassificationGroup();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -1404,12 +1404,12 @@ public interface SupplierPackage extends EPackage {
 		EAttribute REORDER_GUIDELINE__REORDER_GUIDELINE_ID = eINSTANCE.getReorderGuideline_ReorderGuidelineId();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference REORDER_GUIDELINE__FACILITY_ID = eINSTANCE.getReorderGuideline_FacilityId();
+		EReference REORDER_GUIDELINE__FACILITY = eINSTANCE.getReorderGuideline_Facility();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -1420,28 +1420,28 @@ public interface SupplierPackage extends EPackage {
 		EAttribute REORDER_GUIDELINE__FROM_DATE = eINSTANCE.getReorderGuideline_FromDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Geo Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Geo</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference REORDER_GUIDELINE__GEO_ID = eINSTANCE.getReorderGuideline_GeoId();
+		EReference REORDER_GUIDELINE__GEO = eINSTANCE.getReorderGuideline_Geo();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference REORDER_GUIDELINE__PARTY_ID = eINSTANCE.getReorderGuideline_PartyId();
+		EReference REORDER_GUIDELINE__PARTY = eINSTANCE.getReorderGuideline_Party();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference REORDER_GUIDELINE__PRODUCT_ID = eINSTANCE.getReorderGuideline_ProductId();
+		EReference REORDER_GUIDELINE__PRODUCT = eINSTANCE.getReorderGuideline_Product();
 
 		/**
 		 * The meta object literal for the '<em><b>Reorder Level</b></em>' attribute feature.
@@ -1512,28 +1512,28 @@ public interface SupplierPackage extends EPackage {
 		EClass SUPPLIER_PRODUCT = eINSTANCE.getSupplierProduct();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUPPLIER_PRODUCT__PRODUCT_ID = eINSTANCE.getSupplierProduct_ProductId();
+		EReference SUPPLIER_PRODUCT__PRODUCT = eINSTANCE.getSupplierProduct_Product();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUPPLIER_PRODUCT__PARTY_ID = eINSTANCE.getSupplierProduct_PartyId();
+		EReference SUPPLIER_PRODUCT__PARTY = eINSTANCE.getSupplierProduct_Party();
 
 		/**
-		 * The meta object literal for the '<em><b>Currency Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Currency Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUPPLIER_PRODUCT__CURRENCY_UOM_ID = eINSTANCE.getSupplierProduct_CurrencyUomId();
+		EReference SUPPLIER_PRODUCT__CURRENCY_UOM = eINSTANCE.getSupplierProduct_CurrencyUom();
 
 		/**
 		 * The meta object literal for the '<em><b>Minimum Order Quantity</b></em>' attribute feature.
@@ -1608,12 +1608,12 @@ public interface SupplierPackage extends EPackage {
 		EAttribute SUPPLIER_PRODUCT__ORDER_QTY_INCREMENTS = eINSTANCE.getSupplierProduct_OrderQtyIncrements();
 
 		/**
-		 * The meta object literal for the '<em><b>Quantity Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Quantity Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUPPLIER_PRODUCT__QUANTITY_UOM_ID = eINSTANCE.getSupplierProduct_QuantityUomId();
+		EReference SUPPLIER_PRODUCT__QUANTITY_UOM = eINSTANCE.getSupplierProduct_QuantityUom();
 
 		/**
 		 * The meta object literal for the '<em><b>Shipping Price</b></em>' attribute feature.
@@ -1632,12 +1632,12 @@ public interface SupplierPackage extends EPackage {
 		EAttribute SUPPLIER_PRODUCT__STANDARD_LEAD_TIME_DAYS = eINSTANCE.getSupplierProduct_StandardLeadTimeDays();
 
 		/**
-		 * The meta object literal for the '<em><b>Supplier Pref Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Supplier Pref Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUPPLIER_PRODUCT__SUPPLIER_PREF_ORDER_ID = eINSTANCE.getSupplierProduct_SupplierPrefOrderId();
+		EReference SUPPLIER_PRODUCT__SUPPLIER_PREF_ORDER = eINSTANCE.getSupplierProduct_SupplierPrefOrder();
 
 		/**
 		 * The meta object literal for the '<em><b>Supplier Product Id</b></em>' attribute feature.
@@ -1656,12 +1656,12 @@ public interface SupplierPackage extends EPackage {
 		EAttribute SUPPLIER_PRODUCT__SUPPLIER_PRODUCT_NAME = eINSTANCE.getSupplierProduct_SupplierProductName();
 
 		/**
-		 * The meta object literal for the '<em><b>Supplier Rating Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Supplier Rating Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUPPLIER_PRODUCT__SUPPLIER_RATING_TYPE_ID = eINSTANCE.getSupplierProduct_SupplierRatingTypeId();
+		EReference SUPPLIER_PRODUCT__SUPPLIER_RATING_TYPE = eINSTANCE.getSupplierProduct_SupplierRatingType();
 
 		/**
 		 * The meta object literal for the '<em><b>Units Included</b></em>' attribute feature.
@@ -1682,20 +1682,20 @@ public interface SupplierPackage extends EPackage {
 		EClass SUPPLIER_PRODUCT_FEATURE = eINSTANCE.getSupplierProductFeature();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUPPLIER_PRODUCT_FEATURE__PARTY_ID = eINSTANCE.getSupplierProductFeature_PartyId();
+		EReference SUPPLIER_PRODUCT_FEATURE__PARTY = eINSTANCE.getSupplierProductFeature_Party();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Feature Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Feature</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUPPLIER_PRODUCT_FEATURE__PRODUCT_FEATURE_ID = eINSTANCE.getSupplierProductFeature_ProductFeatureId();
+		EReference SUPPLIER_PRODUCT_FEATURE__PRODUCT_FEATURE = eINSTANCE.getSupplierProductFeature_ProductFeature();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
@@ -1714,12 +1714,12 @@ public interface SupplierPackage extends EPackage {
 		EAttribute SUPPLIER_PRODUCT_FEATURE__ID_CODE = eINSTANCE.getSupplierProductFeature_IdCode();
 
 		/**
-		 * The meta object literal for the '<em><b>Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUPPLIER_PRODUCT_FEATURE__UOM_ID = eINSTANCE.getSupplierProductFeature_UomId();
+		EReference SUPPLIER_PRODUCT_FEATURE__UOM = eINSTANCE.getSupplierProductFeature_Uom();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierRatingTypeImpl <em>Rating Type</em>}' class.

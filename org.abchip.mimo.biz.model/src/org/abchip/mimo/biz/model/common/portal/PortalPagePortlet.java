@@ -19,8 +19,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.common.portal.PortalPagePortlet#getPortalPageId <em>Portal Page Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.portal.PortalPagePortlet#getPortalPortletId <em>Portal Portlet Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.portal.PortalPagePortlet#getPortalPage <em>Portal Page</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.portal.PortalPagePortlet#getPortalPortlet <em>Portal Portlet</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.PortalPagePortlet#getPortletSeqId <em>Portlet Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.PortalPagePortlet#getColumnSeqId <em>Column Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.PortalPagePortlet#getSequenceNum <em>Sequence Num</em>}</li>
@@ -31,6 +31,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface PortalPagePortlet extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Portal Page</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Portal Page</em>' reference.
+	 * @see #setPortalPage(PortalPage)
+	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortalPagePortlet_PortalPage()
+	 * @model keys="portalPageId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	PortalPage getPortalPage();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.portal.PortalPagePortlet#getPortalPage <em>Portal Page</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Portal Page</em>' reference.
+	 * @see #getPortalPage()
+	 * @generated
+	 */
+	void setPortalPage(PortalPage value);
+
+	/**
+	 * Returns the value of the '<em><b>Portal Portlet</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Portal Portlet</em>' reference.
+	 * @see #setPortalPortlet(PortalPortlet)
+	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortalPagePortlet_PortalPortlet()
+	 * @model keys="portalPortletId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	PortalPortlet getPortalPortlet();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.portal.PortalPagePortlet#getPortalPortlet <em>Portal Portlet</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Portal Portlet</em>' reference.
+	 * @see #getPortalPortlet()
+	 * @generated
+	 */
+	void setPortalPortlet(PortalPortlet value);
+
 	/**
 	 * Returns the value of the '<em><b>Column Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -110,59 +156,5 @@ public interface PortalPagePortlet extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setSequenceNum(long value);
-
-	/**
-	 * Returns the value of the '<em><b>Portal Page Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Portal Page Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Portal Page Id</em>' reference.
-	 * @see #setPortalPageId(PortalPage)
-	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortalPagePortlet_PortalPageId()
-	 * @model keys="portalPageId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	PortalPage getPortalPageId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.portal.PortalPagePortlet#getPortalPageId <em>Portal Page Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Portal Page Id</em>' reference.
-	 * @see #getPortalPageId()
-	 * @generated
-	 */
-	void setPortalPageId(PortalPage value);
-
-	/**
-	 * Returns the value of the '<em><b>Portal Portlet Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Portal Portlet Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Portal Portlet Id</em>' reference.
-	 * @see #setPortalPortletId(PortalPortlet)
-	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortalPagePortlet_PortalPortletId()
-	 * @model keys="portalPortletId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	PortalPortlet getPortalPortletId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.portal.PortalPagePortlet#getPortalPortletId <em>Portal Portlet Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Portal Portlet Id</em>' reference.
-	 * @see #getPortalPortletId()
-	 * @generated
-	 */
-	void setPortalPortletId(PortalPortlet value);
 
 } // PortalPagePortlet

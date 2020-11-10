@@ -32,10 +32,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityAssocImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityAssocImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityAssocImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityAssocImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityAssocImpl#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityAssocImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityAssocImpl#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityAssocImpl#getFacilityIdTo <em>Facility Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityAssocImpl#getFacilityAssocTypeId <em>Facility Assoc Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityAssocImpl#getFacilityAssocType <em>Facility Assoc Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityAssocImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityAssocImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityAssocImpl#getThruDate <em>Thru Date</em>}</li>
@@ -161,8 +161,8 @@ public class ProductFacilityAssocImpl extends EntityTypedImpl<FacilityAssocType>
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(FacilityPackage.Literals.PRODUCT_FACILITY_ASSOC__PRODUCT_ID, true);
+	public Product getProduct() {
+		return (Product)eGet(FacilityPackage.Literals.PRODUCT_FACILITY_ASSOC__PRODUCT, true);
 	}
 
 	/**
@@ -171,8 +171,8 @@ public class ProductFacilityAssocImpl extends EntityTypedImpl<FacilityAssocType>
 	 * @generated
 	 */
 	@Override
-	public void setProductId(Product newProductId) {
-		eSet(FacilityPackage.Literals.PRODUCT_FACILITY_ASSOC__PRODUCT_ID, newProductId);
+	public void setProduct(Product newProduct) {
+		eSet(FacilityPackage.Literals.PRODUCT_FACILITY_ASSOC__PRODUCT, newProduct);
 	}
 
 	/**
@@ -181,8 +181,8 @@ public class ProductFacilityAssocImpl extends EntityTypedImpl<FacilityAssocType>
 	 * @generated
 	 */
 	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(FacilityPackage.Literals.PRODUCT_FACILITY_ASSOC__FACILITY_ID, true);
+	public Facility getFacility() {
+		return (Facility)eGet(FacilityPackage.Literals.PRODUCT_FACILITY_ASSOC__FACILITY, true);
 	}
 
 	/**
@@ -191,8 +191,8 @@ public class ProductFacilityAssocImpl extends EntityTypedImpl<FacilityAssocType>
 	 * @generated
 	 */
 	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(FacilityPackage.Literals.PRODUCT_FACILITY_ASSOC__FACILITY_ID, newFacilityId);
+	public void setFacility(Facility newFacility) {
+		eSet(FacilityPackage.Literals.PRODUCT_FACILITY_ASSOC__FACILITY, newFacility);
 	}
 
 	/**
@@ -221,8 +221,8 @@ public class ProductFacilityAssocImpl extends EntityTypedImpl<FacilityAssocType>
 	 * @generated
 	 */
 	@Override
-	public FacilityAssocType getFacilityAssocTypeId() {
-		return (FacilityAssocType)eGet(FacilityPackage.Literals.PRODUCT_FACILITY_ASSOC__FACILITY_ASSOC_TYPE_ID, true);
+	public FacilityAssocType getFacilityAssocType() {
+		return (FacilityAssocType)eGet(FacilityPackage.Literals.PRODUCT_FACILITY_ASSOC__FACILITY_ASSOC_TYPE, true);
 	}
 
 	/**
@@ -231,8 +231,8 @@ public class ProductFacilityAssocImpl extends EntityTypedImpl<FacilityAssocType>
 	 * @generated
 	 */
 	@Override
-	public void setFacilityAssocTypeId(FacilityAssocType newFacilityAssocTypeId) {
-		eSet(FacilityPackage.Literals.PRODUCT_FACILITY_ASSOC__FACILITY_ASSOC_TYPE_ID, newFacilityAssocTypeId);
+	public void setFacilityAssocType(FacilityAssocType newFacilityAssocType) {
+		eSet(FacilityPackage.Literals.PRODUCT_FACILITY_ASSOC__FACILITY_ASSOC_TYPE, newFacilityAssocType);
 	}
 
 	/**

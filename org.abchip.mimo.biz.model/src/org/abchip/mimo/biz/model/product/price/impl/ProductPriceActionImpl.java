@@ -30,10 +30,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceActionImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceActionImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceActionImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceActionImpl#getProductPriceRuleId <em>Product Price Rule Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceActionImpl#getProductPriceRule <em>Product Price Rule</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceActionImpl#getProductPriceActionSeqId <em>Product Price Action Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceActionImpl#getAmount <em>Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceActionImpl#getProductPriceActionTypeId <em>Product Price Action Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceActionImpl#getProductPriceActionType <em>Product Price Action Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceActionImpl#getRateCode <em>Rate Code</em>}</li>
  * </ul>
  *
@@ -156,6 +156,26 @@ public class ProductPriceActionImpl extends EntityTypedImpl<ProductPriceActionTy
 	 * @generated
 	 */
 	@Override
+	public ProductPriceRule getProductPriceRule() {
+		return (ProductPriceRule)eGet(PricePackage.Literals.PRODUCT_PRICE_ACTION__PRODUCT_PRICE_RULE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPriceRule(ProductPriceRule newProductPriceRule) {
+		eSet(PricePackage.Literals.PRODUCT_PRICE_ACTION__PRODUCT_PRICE_RULE, newProductPriceRule);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAmount() {
 		return (BigDecimal)eGet(PricePackage.Literals.PRODUCT_PRICE_ACTION__AMOUNT, true);
 	}
@@ -168,6 +188,26 @@ public class ProductPriceActionImpl extends EntityTypedImpl<ProductPriceActionTy
 	@Override
 	public void setAmount(BigDecimal newAmount) {
 		eSet(PricePackage.Literals.PRODUCT_PRICE_ACTION__AMOUNT, newAmount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductPriceActionType getProductPriceActionType() {
+		return (ProductPriceActionType)eGet(PricePackage.Literals.PRODUCT_PRICE_ACTION__PRODUCT_PRICE_ACTION_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPriceActionType(ProductPriceActionType newProductPriceActionType) {
+		eSet(PricePackage.Literals.PRODUCT_PRICE_ACTION__PRODUCT_PRICE_ACTION_TYPE, newProductPriceActionType);
 	}
 
 	/**
@@ -246,46 +286,6 @@ public class ProductPriceActionImpl extends EntityTypedImpl<ProductPriceActionTy
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductPriceActionType getProductPriceActionTypeId() {
-		return (ProductPriceActionType)eGet(PricePackage.Literals.PRODUCT_PRICE_ACTION__PRODUCT_PRICE_ACTION_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPriceActionTypeId(ProductPriceActionType newProductPriceActionTypeId) {
-		eSet(PricePackage.Literals.PRODUCT_PRICE_ACTION__PRODUCT_PRICE_ACTION_TYPE_ID, newProductPriceActionTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductPriceRule getProductPriceRuleId() {
-		return (ProductPriceRule)eGet(PricePackage.Literals.PRODUCT_PRICE_ACTION__PRODUCT_PRICE_RULE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPriceRuleId(ProductPriceRule newProductPriceRuleId) {
-		eSet(PricePackage.Literals.PRODUCT_PRICE_ACTION__PRODUCT_PRICE_RULE_ID, newProductPriceRuleId);
 	}
 
 } //ProductPriceActionImpl

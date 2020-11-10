@@ -33,17 +33,17 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobRequisitionImpl#getJobRequisitionId <em>Job Requisition Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobRequisitionImpl#getAge <em>Age</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobRequisitionImpl#getDurationMonths <em>Duration Months</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobRequisitionImpl#getExamTypeEnumId <em>Exam Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobRequisitionImpl#getExamTypeEnum <em>Exam Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobRequisitionImpl#getExperienceMonths <em>Experience Months</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobRequisitionImpl#getExperienceYears <em>Experience Years</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobRequisitionImpl#getGender <em>Gender</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobRequisitionImpl#getJobLocation <em>Job Location</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobRequisitionImpl#getJobPostingTypeEnumId <em>Job Posting Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobRequisitionImpl#getJobPostingTypeEnum <em>Job Posting Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobRequisitionImpl#getJobRequisitionDate <em>Job Requisition Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobRequisitionImpl#getNoOfResources <em>No Of Resources</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobRequisitionImpl#getQualification <em>Qualification</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobRequisitionImpl#getRequiredOnDate <em>Required On Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobRequisitionImpl#getSkillTypeId <em>Skill Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobRequisitionImpl#getSkillType <em>Skill Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -205,8 +205,8 @@ public class JobRequisitionImpl extends EntityIdentifiableImpl implements JobReq
 	 * @generated
 	 */
 	@Override
-	public Enumeration getExamTypeEnumId() {
-		return (Enumeration)eGet(RecruitmentPackage.Literals.JOB_REQUISITION__EXAM_TYPE_ENUM_ID, true);
+	public Enumeration getExamTypeEnum() {
+		return (Enumeration)eGet(RecruitmentPackage.Literals.JOB_REQUISITION__EXAM_TYPE_ENUM, true);
 	}
 
 	/**
@@ -215,8 +215,8 @@ public class JobRequisitionImpl extends EntityIdentifiableImpl implements JobReq
 	 * @generated
 	 */
 	@Override
-	public void setExamTypeEnumId(Enumeration newExamTypeEnumId) {
-		eSet(RecruitmentPackage.Literals.JOB_REQUISITION__EXAM_TYPE_ENUM_ID, newExamTypeEnumId);
+	public void setExamTypeEnum(Enumeration newExamTypeEnum) {
+		eSet(RecruitmentPackage.Literals.JOB_REQUISITION__EXAM_TYPE_ENUM, newExamTypeEnum);
 	}
 
 	/**
@@ -305,8 +305,8 @@ public class JobRequisitionImpl extends EntityIdentifiableImpl implements JobReq
 	 * @generated
 	 */
 	@Override
-	public Enumeration getJobPostingTypeEnumId() {
-		return (Enumeration)eGet(RecruitmentPackage.Literals.JOB_REQUISITION__JOB_POSTING_TYPE_ENUM_ID, true);
+	public Enumeration getJobPostingTypeEnum() {
+		return (Enumeration)eGet(RecruitmentPackage.Literals.JOB_REQUISITION__JOB_POSTING_TYPE_ENUM, true);
 	}
 
 	/**
@@ -315,8 +315,8 @@ public class JobRequisitionImpl extends EntityIdentifiableImpl implements JobReq
 	 * @generated
 	 */
 	@Override
-	public void setJobPostingTypeEnumId(Enumeration newJobPostingTypeEnumId) {
-		eSet(RecruitmentPackage.Literals.JOB_REQUISITION__JOB_POSTING_TYPE_ENUM_ID, newJobPostingTypeEnumId);
+	public void setJobPostingTypeEnum(Enumeration newJobPostingTypeEnum) {
+		eSet(RecruitmentPackage.Literals.JOB_REQUISITION__JOB_POSTING_TYPE_ENUM, newJobPostingTypeEnum);
 	}
 
 	/**
@@ -425,8 +425,8 @@ public class JobRequisitionImpl extends EntityIdentifiableImpl implements JobReq
 	 * @generated
 	 */
 	@Override
-	public SkillType getSkillTypeId() {
-		return (SkillType)eGet(RecruitmentPackage.Literals.JOB_REQUISITION__SKILL_TYPE_ID, true);
+	public SkillType getSkillType() {
+		return (SkillType)eGet(RecruitmentPackage.Literals.JOB_REQUISITION__SKILL_TYPE, true);
 	}
 
 	/**
@@ -435,8 +435,8 @@ public class JobRequisitionImpl extends EntityIdentifiableImpl implements JobReq
 	 * @generated
 	 */
 	@Override
-	public void setSkillTypeId(SkillType newSkillTypeId) {
-		eSet(RecruitmentPackage.Literals.JOB_REQUISITION__SKILL_TYPE_ID, newSkillTypeId);
+	public void setSkillType(SkillType newSkillType) {
+		eSet(RecruitmentPackage.Literals.JOB_REQUISITION__SKILL_TYPE, newSkillType);
 	}
 
 	/**

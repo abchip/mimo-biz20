@@ -35,7 +35,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityHistoryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityHistoryImpl#getSalesOpportunityHistoryId <em>Sales Opportunity History Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityHistoryImpl#getChangeNote <em>Change Note</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityHistoryImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityHistoryImpl#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityHistoryImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityHistoryImpl#getEstimatedAmount <em>Estimated Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityHistoryImpl#getEstimatedCloseDate <em>Estimated Close Date</em>}</li>
@@ -43,8 +43,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityHistoryImpl#getModifiedByUserLogin <em>Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityHistoryImpl#getModifiedTimestamp <em>Modified Timestamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityHistoryImpl#getNextStep <em>Next Step</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityHistoryImpl#getOpportunityStageId <em>Opportunity Stage Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityHistoryImpl#getSalesOpportunityId <em>Sales Opportunity Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityHistoryImpl#getOpportunityStage <em>Opportunity Stage</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityHistoryImpl#getSalesOpportunity <em>Sales Opportunity</em>}</li>
  * </ul>
  *
  * @generated
@@ -186,8 +186,8 @@ public class SalesOpportunityHistoryImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public Uom getCurrencyUomId() {
-		return (Uom)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_HISTORY__CURRENCY_UOM_ID, true);
+	public Uom getCurrencyUom() {
+		return (Uom)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_HISTORY__CURRENCY_UOM, true);
 	}
 
 	/**
@@ -196,8 +196,8 @@ public class SalesOpportunityHistoryImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setCurrencyUomId(Uom newCurrencyUomId) {
-		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_HISTORY__CURRENCY_UOM_ID, newCurrencyUomId);
+	public void setCurrencyUom(Uom newCurrencyUom) {
+		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_HISTORY__CURRENCY_UOM, newCurrencyUom);
 	}
 
 	/**
@@ -346,8 +346,8 @@ public class SalesOpportunityHistoryImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public SalesOpportunityStage getOpportunityStageId() {
-		return (SalesOpportunityStage)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_HISTORY__OPPORTUNITY_STAGE_ID, true);
+	public SalesOpportunityStage getOpportunityStage() {
+		return (SalesOpportunityStage)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_HISTORY__OPPORTUNITY_STAGE, true);
 	}
 
 	/**
@@ -356,8 +356,28 @@ public class SalesOpportunityHistoryImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setOpportunityStageId(SalesOpportunityStage newOpportunityStageId) {
-		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_HISTORY__OPPORTUNITY_STAGE_ID, newOpportunityStageId);
+	public void setOpportunityStage(SalesOpportunityStage newOpportunityStage) {
+		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_HISTORY__OPPORTUNITY_STAGE, newOpportunityStage);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SalesOpportunity getSalesOpportunity() {
+		return (SalesOpportunity)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_HISTORY__SALES_OPPORTUNITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSalesOpportunity(SalesOpportunity newSalesOpportunity) {
+		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_HISTORY__SALES_OPPORTUNITY, newSalesOpportunity);
 	}
 
 	/**
@@ -378,26 +398,6 @@ public class SalesOpportunityHistoryImpl extends EntityIdentifiableImpl implemen
 	@Override
 	public void setSalesOpportunityHistoryId(String newSalesOpportunityHistoryId) {
 		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_HISTORY__SALES_OPPORTUNITY_HISTORY_ID, newSalesOpportunityHistoryId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SalesOpportunity getSalesOpportunityId() {
-		return (SalesOpportunity)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_HISTORY__SALES_OPPORTUNITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSalesOpportunityId(SalesOpportunity newSalesOpportunityId) {
-		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_HISTORY__SALES_OPPORTUNITY_ID, newSalesOpportunityId);
 	}
 
 	/**

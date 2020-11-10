@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupGeo#getSegmentGroupId <em>Segment Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupGeo#getGeoId <em>Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupGeo#getSegmentGroup <em>Segment Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupGeo#getGeo <em>Geo</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupGeo()
@@ -30,57 +30,49 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface SegmentGroupGeo extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Geo Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geo Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Geo Id</em>' reference.
-	 * @see #setGeoId(Geo)
-	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupGeo_GeoId()
-	 * @model keys="geoId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Geo getGeoId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupGeo#getGeoId <em>Geo Id</em>}' reference.
+	 * Returns the value of the '<em><b>Segment Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Geo Id</em>' reference.
-	 * @see #getGeoId()
-	 * @generated
-	 */
-	void setGeoId(Geo value);
-
-	/**
-	 * Returns the value of the '<em><b>Segment Group Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Segment Group Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Segment Group Id</em>' reference.
-	 * @see #setSegmentGroupId(SegmentGroup)
-	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupGeo_SegmentGroupId()
+	 * @return the value of the '<em>Segment Group</em>' reference.
+	 * @see #setSegmentGroup(SegmentGroup)
+	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupGeo_SegmentGroup()
 	 * @model keys="segmentGroupId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	SegmentGroup getSegmentGroupId();
+	SegmentGroup getSegmentGroup();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupGeo#getSegmentGroupId <em>Segment Group Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupGeo#getSegmentGroup <em>Segment Group</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Segment Group Id</em>' reference.
-	 * @see #getSegmentGroupId()
+	 * @param value the new value of the '<em>Segment Group</em>' reference.
+	 * @see #getSegmentGroup()
 	 * @generated
 	 */
-	void setSegmentGroupId(SegmentGroup value);
+	void setSegmentGroup(SegmentGroup value);
+
+	/**
+	 * Returns the value of the '<em><b>Geo</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Geo</em>' reference.
+	 * @see #setGeo(Geo)
+	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupGeo_Geo()
+	 * @model keys="geoId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Geo getGeo();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupGeo#getGeo <em>Geo</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Geo</em>' reference.
+	 * @see #getGeo()
+	 * @generated
+	 */
+	void setGeo(Geo value);
 
 } // SegmentGroupGeo

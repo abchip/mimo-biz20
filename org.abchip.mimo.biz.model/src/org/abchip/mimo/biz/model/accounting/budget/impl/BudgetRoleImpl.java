@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRoleImpl#getBudgetId <em>Budget Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRoleImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRoleImpl#getBudget <em>Budget</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRoleImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
  * </ul>
  *
@@ -152,8 +152,8 @@ public class BudgetRoleImpl extends EntityIdentifiableImpl implements BudgetRole
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(BudgetPackage.Literals.BUDGET_ROLE__PARTY_ID, true);
+	public Budget getBudget() {
+		return (Budget)eGet(BudgetPackage.Literals.BUDGET_ROLE__BUDGET, true);
 	}
 
 	/**
@@ -162,8 +162,28 @@ public class BudgetRoleImpl extends EntityIdentifiableImpl implements BudgetRole
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(BudgetPackage.Literals.BUDGET_ROLE__PARTY_ID, newPartyId);
+	public void setBudget(Budget newBudget) {
+		eSet(BudgetPackage.Literals.BUDGET_ROLE__BUDGET, newBudget);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(BudgetPackage.Literals.BUDGET_ROLE__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(BudgetPackage.Literals.BUDGET_ROLE__PARTY, newParty);
 	}
 
 	/**
@@ -222,26 +242,6 @@ public class BudgetRoleImpl extends EntityIdentifiableImpl implements BudgetRole
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Budget getBudgetId() {
-		return (Budget)eGet(BudgetPackage.Literals.BUDGET_ROLE__BUDGET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBudgetId(Budget newBudgetId) {
-		eSet(BudgetPackage.Literals.BUDGET_ROLE__BUDGET_ID, newBudgetId);
 	}
 
 } //BudgetRoleImpl

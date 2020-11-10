@@ -21,11 +21,11 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreKeywordOvrd#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreKeywordOvrd#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreKeywordOvrd#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreKeywordOvrd#getKeyword <em>Keyword</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreKeywordOvrd#getTarget <em>Target</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreKeywordOvrd#getTargetTypeEnumId <em>Target Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreKeywordOvrd#getTargetTypeEnum <em>Target Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreKeywordOvrd#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -34,6 +34,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductStoreKeywordOvrd extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product Store</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Store</em>' reference.
+	 * @see #setProductStore(ProductStore)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreKeywordOvrd_ProductStore()
+	 * @model keys="productStoreId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductStore getProductStore();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreKeywordOvrd#getProductStore <em>Product Store</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Store</em>' reference.
+	 * @see #getProductStore()
+	 * @generated
+	 */
+	void setProductStore(ProductStore value);
+
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -116,30 +139,26 @@ public interface ProductStoreKeywordOvrd extends EntityIdentifiable, EntityInfo 
 	void setTarget(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Target Type Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Target Type Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Target Type Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Target Type Enum Id</em>' reference.
-	 * @see #setTargetTypeEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreKeywordOvrd_TargetTypeEnumId()
+	 * @return the value of the '<em>Target Type Enum</em>' reference.
+	 * @see #setTargetTypeEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreKeywordOvrd_TargetTypeEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getTargetTypeEnumId();
+	Enumeration getTargetTypeEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreKeywordOvrd#getTargetTypeEnumId <em>Target Type Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreKeywordOvrd#getTargetTypeEnum <em>Target Type Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Target Type Enum Id</em>' reference.
-	 * @see #getTargetTypeEnumId()
+	 * @param value the new value of the '<em>Target Type Enum</em>' reference.
+	 * @see #getTargetTypeEnum()
 	 * @generated
 	 */
-	void setTargetTypeEnumId(Enumeration value);
+	void setTargetTypeEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.
@@ -166,32 +185,5 @@ public interface ProductStoreKeywordOvrd extends EntityIdentifiable, EntityInfo 
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Store Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store Id</em>' reference.
-	 * @see #setProductStoreId(ProductStore)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreKeywordOvrd_ProductStoreId()
-	 * @model keys="productStoreId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductStore getProductStoreId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreKeywordOvrd#getProductStoreId <em>Product Store Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store Id</em>' reference.
-	 * @see #getProductStoreId()
-	 * @generated
-	 */
-	void setProductStoreId(ProductStore value);
 
 } // ProductStoreKeywordOvrd

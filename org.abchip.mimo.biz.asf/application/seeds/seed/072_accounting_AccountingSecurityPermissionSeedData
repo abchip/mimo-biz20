@@ -29,27 +29,27 @@
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="ACCTG_ATX_DELETE" description="Delete general ledger accounting transaction and entries."/>
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="ACCTG_ATX_VIEW" description="View general ledger accounting transaction and entries."/>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#ACCOUNTING_ADMIN"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#ACCOUNTING_ADMIN"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#ACCOUNTING_COMM_VIEW"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#ACCOUNTING_COMM_VIEW"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#ACCOUNTING_PRINT_CHECKS"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#ACCOUNTING_PRINT_CHECKS"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#ACCTG_PREF_ADMIN"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#ACCTG_PREF_ADMIN"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#ACCTG_FX_UPDATE"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#ACCTG_FX_UPDATE"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#ACCTG_ATX_ADMIN"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#ACCTG_ATX_ADMIN"/>
   </contents>
 </mimo-ent:EntityContainer>

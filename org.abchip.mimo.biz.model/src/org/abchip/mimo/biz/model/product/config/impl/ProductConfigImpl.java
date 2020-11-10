@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigImpl#getConfigItemId <em>Config Item Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigImpl#getConfigItem <em>Config Item</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigImpl#getConfigTypeId <em>Config Type Id</em>}</li>
@@ -160,6 +160,46 @@ public class ProductConfigImpl extends EntityIdentifiableImpl implements Product
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(ConfigPackage.Literals.PRODUCT_CONFIG__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(ConfigPackage.Literals.PRODUCT_CONFIG__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductConfigItem getConfigItem() {
+		return (ProductConfigItem)eGet(ConfigPackage.Literals.PRODUCT_CONFIG__CONFIG_ITEM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setConfigItem(ProductConfigItem newConfigItem) {
+		eSet(ConfigPackage.Literals.PRODUCT_CONFIG__CONFIG_ITEM, newConfigItem);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getConfigTypeId() {
 		return (String)eGet(ConfigPackage.Literals.PRODUCT_CONFIG__CONFIG_TYPE_ID, true);
 	}
@@ -280,26 +320,6 @@ public class ProductConfigImpl extends EntityIdentifiableImpl implements Product
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(ConfigPackage.Literals.PRODUCT_CONFIG__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(ConfigPackage.Literals.PRODUCT_CONFIG__PRODUCT_ID, newProductId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public long getSequenceNum() {
 		return (Long)eGet(ConfigPackage.Literals.PRODUCT_CONFIG__SEQUENCE_NUM, true);
 	}
@@ -370,26 +390,6 @@ public class ProductConfigImpl extends EntityIdentifiableImpl implements Product
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductConfigItem getConfigItemId() {
-		return (ProductConfigItem)eGet(ConfigPackage.Literals.PRODUCT_CONFIG__CONFIG_ITEM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setConfigItemId(ProductConfigItem newConfigItemId) {
-		eSet(ConfigPackage.Literals.PRODUCT_CONFIG__CONFIG_ITEM_ID, newConfigItemId);
 	}
 
 } //ProductConfigImpl

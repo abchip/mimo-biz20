@@ -23,15 +23,15 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getProductPromoId <em>Product Promo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getProductPromo <em>Product Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getProductPromoActionSeqId <em>Product Promo Action Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getProductPromoRuleId <em>Product Promo Rule Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getAmount <em>Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getCustomMethodId <em>Custom Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getOrderAdjustmentTypeId <em>Order Adjustment Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getCustomMethod <em>Custom Method</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getOrderAdjustmentType <em>Order Adjustment Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getPartyId <em>Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getProductPromoActionEnumId <em>Product Promo Action Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getProductPromoActionEnum <em>Product Promo Action Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getServiceName <em>Service Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getUseCartQuantity <em>Use Cart Quantity</em>}</li>
@@ -42,6 +42,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductPromoAction extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product Promo</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Promo</em>' reference.
+	 * @see #setProductPromo(ProductPromo)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoAction_ProductPromo()
+	 * @model keys="productPromoId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductPromo getProductPromo();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getProductPromo <em>Product Promo</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Promo</em>' reference.
+	 * @see #getProductPromo()
+	 * @generated
+	 */
+	void setProductPromo(ProductPromo value);
+
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -69,56 +92,48 @@ public interface ProductPromoAction extends EntityIdentifiable, EntityInfo {
 	void setAmount(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Custom Method Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Custom Method</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Custom Method Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Custom Method Id</em>' reference.
-	 * @see #setCustomMethodId(CustomMethod)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoAction_CustomMethodId()
+	 * @return the value of the '<em>Custom Method</em>' reference.
+	 * @see #setCustomMethod(CustomMethod)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoAction_CustomMethod()
 	 * @model keys="customMethodId"
 	 * @generated
 	 */
-	CustomMethod getCustomMethodId();
+	CustomMethod getCustomMethod();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getCustomMethodId <em>Custom Method Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getCustomMethod <em>Custom Method</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Custom Method Id</em>' reference.
-	 * @see #getCustomMethodId()
+	 * @param value the new value of the '<em>Custom Method</em>' reference.
+	 * @see #getCustomMethod()
 	 * @generated
 	 */
-	void setCustomMethodId(CustomMethod value);
+	void setCustomMethod(CustomMethod value);
 
 	/**
-	 * Returns the value of the '<em><b>Order Adjustment Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Order Adjustment Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Adjustment Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Adjustment Type Id</em>' reference.
-	 * @see #setOrderAdjustmentTypeId(OrderAdjustmentType)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoAction_OrderAdjustmentTypeId()
+	 * @return the value of the '<em>Order Adjustment Type</em>' reference.
+	 * @see #setOrderAdjustmentType(OrderAdjustmentType)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoAction_OrderAdjustmentType()
 	 * @model keys="orderAdjustmentTypeId"
 	 * @generated
 	 */
-	OrderAdjustmentType getOrderAdjustmentTypeId();
+	OrderAdjustmentType getOrderAdjustmentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getOrderAdjustmentTypeId <em>Order Adjustment Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getOrderAdjustmentType <em>Order Adjustment Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Adjustment Type Id</em>' reference.
-	 * @see #getOrderAdjustmentTypeId()
+	 * @param value the new value of the '<em>Order Adjustment Type</em>' reference.
+	 * @see #getOrderAdjustmentType()
 	 * @generated
 	 */
-	void setOrderAdjustmentTypeId(OrderAdjustmentType value);
+	void setOrderAdjustmentType(OrderAdjustmentType value);
 
 	/**
 	 * Returns the value of the '<em><b>Party Id</b></em>' attribute.
@@ -173,30 +188,26 @@ public interface ProductPromoAction extends EntityIdentifiable, EntityInfo {
 	void setProductId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Promo Action Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Promo Action Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Promo Action Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Promo Action Enum Id</em>' reference.
-	 * @see #setProductPromoActionEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoAction_ProductPromoActionEnumId()
+	 * @return the value of the '<em>Product Promo Action Enum</em>' reference.
+	 * @see #setProductPromoActionEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoAction_ProductPromoActionEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getProductPromoActionEnumId();
+	Enumeration getProductPromoActionEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getProductPromoActionEnumId <em>Product Promo Action Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getProductPromoActionEnum <em>Product Promo Action Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Promo Action Enum Id</em>' reference.
-	 * @see #getProductPromoActionEnumId()
+	 * @param value the new value of the '<em>Product Promo Action Enum</em>' reference.
+	 * @see #getProductPromoActionEnum()
 	 * @generated
 	 */
-	void setProductPromoActionEnumId(Enumeration value);
+	void setProductPromoActionEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Promo Action Seq Id</b></em>' attribute.
@@ -327,32 +338,5 @@ public interface ProductPromoAction extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setUseCartQuantity(Boolean value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Promo Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Promo Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Promo Id</em>' reference.
-	 * @see #setProductPromoId(ProductPromo)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoAction_ProductPromoId()
-	 * @model keys="productPromoId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductPromo getProductPromoId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getProductPromoId <em>Product Promo Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Promo Id</em>' reference.
-	 * @see #getProductPromoId()
-	 * @generated
-	 */
-	void setProductPromoId(ProductPromo value);
 
 } // ProductPromoAction

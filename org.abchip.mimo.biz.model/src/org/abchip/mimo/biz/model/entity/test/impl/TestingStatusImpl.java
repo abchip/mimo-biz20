@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingStatusImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingStatusImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingStatusImpl#getTestingStatusId <em>Testing Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingStatusImpl#getChangeByUserLoginId <em>Change By User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingStatusImpl#getChangeByUserLogin <em>Change By User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingStatusImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingStatusImpl#getStatusDate <em>Status Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingStatusImpl#getStatusId <em>Status Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingStatusImpl#getTestingId <em>Testing Id</em>}</li>
  * </ul>
  *
@@ -154,26 +154,6 @@ public class TestingStatusImpl extends EntityIdentifiableImpl implements Testing
 	 * @generated
 	 */
 	@Override
-	public UserLogin getChangeByUserLoginId() {
-		return (UserLogin)eGet(TestPackage.Literals.TESTING_STATUS__CHANGE_BY_USER_LOGIN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setChangeByUserLoginId(UserLogin newChangeByUserLoginId) {
-		eSet(TestPackage.Literals.TESTING_STATUS__CHANGE_BY_USER_LOGIN_ID, newChangeByUserLoginId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Date getStatusDate() {
 		return (Date)eGet(TestPackage.Literals.TESTING_STATUS__STATUS_DATE, true);
 	}
@@ -186,26 +166,6 @@ public class TestingStatusImpl extends EntityIdentifiableImpl implements Testing
 	@Override
 	public void setStatusDate(Date newStatusDate) {
 		eSet(TestPackage.Literals.TESTING_STATUS__STATUS_DATE, newStatusDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(TestPackage.Literals.TESTING_STATUS__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(TestPackage.Literals.TESTING_STATUS__STATUS_ID, newStatusId);
 	}
 
 	/**
@@ -284,6 +244,46 @@ public class TestingStatusImpl extends EntityIdentifiableImpl implements Testing
 	@Override
 	public void setTestingStatusId(String newTestingStatusId) {
 		eSet(TestPackage.Literals.TESTING_STATUS__TESTING_STATUS_ID, newTestingStatusId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UserLogin getChangeByUserLogin() {
+		return (UserLogin)eGet(TestPackage.Literals.TESTING_STATUS__CHANGE_BY_USER_LOGIN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setChangeByUserLogin(UserLogin newChangeByUserLogin) {
+		eSet(TestPackage.Literals.TESTING_STATUS__CHANGE_BY_USER_LOGIN, newChangeByUserLogin);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(TestPackage.Literals.TESTING_STATUS__STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(StatusItem newStatus) {
+		eSet(TestPackage.Literals.TESTING_STATUS__STATUS, newStatus);
 	}
 
 } //TestingStatusImpl

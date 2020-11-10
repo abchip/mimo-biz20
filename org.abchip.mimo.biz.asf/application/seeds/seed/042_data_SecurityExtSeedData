@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-login="http://www.abchip.org/mimo/biz/model/security/login" xmlns:biz-party="http://www.abchip.org/mimo/biz/model/party/party" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/party/party http://www.abchip.org/mimo/biz/model/party#//party http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="042_data_SecurityExtSeedData">
   <contents xsi:type="biz-party:Party" partyId="system">
-    <partyTypeId href="PartyType#PERSON"/>
-    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyType href="PartyType#PERSON"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
   </contents>
   <contents xsi:type="biz-party:Person" partyId="system" firstName="System" lastName="Account"/>
   <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
-    <statusId href="StatusItem#PARTY_ENABLED"/>
-    <partyId href="Party#system"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
+    <party href="Party#system"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#system"/>
-    <roleTypeId href="RoleType#PACKER"/>
+    <party href="Party#system"/>
+    <roleType href="RoleType#PACKER"/>
   </contents>
   <contents xsi:type="biz-login:UserLogin" userLoginId="system">
-    <partyId href="Party#system"/>
+    <party href="Party#system"/>
   </contents>
 </mimo-ent:EntityContainer>

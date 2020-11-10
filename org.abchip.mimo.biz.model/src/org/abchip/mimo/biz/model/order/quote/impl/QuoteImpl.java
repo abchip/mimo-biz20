@@ -40,20 +40,20 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getQuoteId <em>Quote Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getIssueDate <em>Issue Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getQuoteAttributes <em>Quote Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getQuoteCoefficients <em>Quote Coefficients</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getQuoteItems <em>Quote Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getQuoteName <em>Quote Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getQuoteNotes <em>Quote Notes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getQuoteTypeId <em>Quote Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getQuoteType <em>Quote Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getQuoteWorkEfforts <em>Quote Work Efforts</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getSalesChannelEnumId <em>Sales Channel Enum Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getSalesChannelEnum <em>Sales Channel Enum</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getValidFromDate <em>Valid From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteImpl#getValidThruDate <em>Valid Thru Date</em>}</li>
  * </ul>
@@ -177,26 +177,6 @@ public class QuoteImpl extends EntityTypedImpl<QuoteType> implements Quote {
 	 * @generated
 	 */
 	@Override
-	public Uom getCurrencyUomId() {
-		return (Uom)eGet(QuotePackage.Literals.QUOTE__CURRENCY_UOM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCurrencyUomId(Uom newCurrencyUomId) {
-		eSet(QuotePackage.Literals.QUOTE__CURRENCY_UOM_ID, newCurrencyUomId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getDescription() {
 		return (String)eGet(QuotePackage.Literals.QUOTE__DESCRIPTION, true);
 	}
@@ -237,8 +217,8 @@ public class QuoteImpl extends EntityTypedImpl<QuoteType> implements Quote {
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(QuotePackage.Literals.QUOTE__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(QuotePackage.Literals.QUOTE__PARTY, true);
 	}
 
 	/**
@@ -247,8 +227,8 @@ public class QuoteImpl extends EntityTypedImpl<QuoteType> implements Quote {
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(QuotePackage.Literals.QUOTE__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(QuotePackage.Literals.QUOTE__PARTY, newParty);
 	}
 
 	/**
@@ -257,8 +237,8 @@ public class QuoteImpl extends EntityTypedImpl<QuoteType> implements Quote {
 	 * @generated
 	 */
 	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(QuotePackage.Literals.QUOTE__PRODUCT_STORE_ID, true);
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(QuotePackage.Literals.QUOTE__PRODUCT_STORE, true);
 	}
 
 	/**
@@ -267,8 +247,8 @@ public class QuoteImpl extends EntityTypedImpl<QuoteType> implements Quote {
 	 * @generated
 	 */
 	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(QuotePackage.Literals.QUOTE__PRODUCT_STORE_ID, newProductStoreId);
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(QuotePackage.Literals.QUOTE__PRODUCT_STORE, newProductStore);
 	}
 
 	/**
@@ -330,6 +310,26 @@ public class QuoteImpl extends EntityTypedImpl<QuoteType> implements Quote {
 	 * @generated
 	 */
 	@Override
+	public Uom getCurrencyUom() {
+		return (Uom)eGet(QuotePackage.Literals.QUOTE__CURRENCY_UOM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCurrencyUom(Uom newCurrencyUom) {
+		eSet(QuotePackage.Literals.QUOTE__CURRENCY_UOM, newCurrencyUom);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getQuoteName() {
 		return (String)eGet(QuotePackage.Literals.QUOTE__QUOTE_NAME, true);
 	}
@@ -361,8 +361,8 @@ public class QuoteImpl extends EntityTypedImpl<QuoteType> implements Quote {
 	 * @generated
 	 */
 	@Override
-	public QuoteType getQuoteTypeId() {
-		return (QuoteType)eGet(QuotePackage.Literals.QUOTE__QUOTE_TYPE_ID, true);
+	public QuoteType getQuoteType() {
+		return (QuoteType)eGet(QuotePackage.Literals.QUOTE__QUOTE_TYPE, true);
 	}
 
 	/**
@@ -371,8 +371,8 @@ public class QuoteImpl extends EntityTypedImpl<QuoteType> implements Quote {
 	 * @generated
 	 */
 	@Override
-	public void setQuoteTypeId(QuoteType newQuoteTypeId) {
-		eSet(QuotePackage.Literals.QUOTE__QUOTE_TYPE_ID, newQuoteTypeId);
+	public void setQuoteType(QuoteType newQuoteType) {
+		eSet(QuotePackage.Literals.QUOTE__QUOTE_TYPE, newQuoteType);
 	}
 
 	/**
@@ -392,8 +392,8 @@ public class QuoteImpl extends EntityTypedImpl<QuoteType> implements Quote {
 	 * @generated
 	 */
 	@Override
-	public Enumeration getSalesChannelEnumId() {
-		return (Enumeration)eGet(QuotePackage.Literals.QUOTE__SALES_CHANNEL_ENUM_ID, true);
+	public Enumeration getSalesChannelEnum() {
+		return (Enumeration)eGet(QuotePackage.Literals.QUOTE__SALES_CHANNEL_ENUM, true);
 	}
 
 	/**
@@ -402,8 +402,8 @@ public class QuoteImpl extends EntityTypedImpl<QuoteType> implements Quote {
 	 * @generated
 	 */
 	@Override
-	public void setSalesChannelEnumId(Enumeration newSalesChannelEnumId) {
-		eSet(QuotePackage.Literals.QUOTE__SALES_CHANNEL_ENUM_ID, newSalesChannelEnumId);
+	public void setSalesChannelEnum(Enumeration newSalesChannelEnum) {
+		eSet(QuotePackage.Literals.QUOTE__SALES_CHANNEL_ENUM, newSalesChannelEnum);
 	}
 
 	/**
@@ -412,8 +412,8 @@ public class QuoteImpl extends EntityTypedImpl<QuoteType> implements Quote {
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(QuotePackage.Literals.QUOTE__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(QuotePackage.Literals.QUOTE__STATUS, true);
 	}
 
 	/**
@@ -422,8 +422,8 @@ public class QuoteImpl extends EntityTypedImpl<QuoteType> implements Quote {
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(QuotePackage.Literals.QUOTE__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(QuotePackage.Literals.QUOTE__STATUS, newStatus);
 	}
 
 	/**

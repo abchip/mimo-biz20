@@ -25,16 +25,16 @@ import org.abchip.mimo.entity.EntityTyped;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getAgreementTermId <em>Agreement Term Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getAgreementId <em>Agreement Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getAgreement <em>Agreement</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getAgreementItemSeqId <em>Agreement Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getAgreementTermAttributes <em>Agreement Term Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getInvoiceItemTypeId <em>Invoice Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getInvoiceItemType <em>Invoice Item Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getMaxQuantity <em>Max Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getMinQuantity <em>Min Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getTermDays <em>Term Days</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getTermTypeId <em>Term Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getTermType <em>Term Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getTermValue <em>Term Value</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getTextValue <em>Text Value</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getThruDate <em>Thru Date</em>}</li>
@@ -140,30 +140,26 @@ public interface AgreementTerm extends EntityTyped<TermType>, EntityInfo {
 	void setFromDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Invoice Item Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Invoice Item Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Item Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Invoice Item Type Id</em>' reference.
-	 * @see #setInvoiceItemTypeId(InvoiceItemType)
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementTerm_InvoiceItemTypeId()
+	 * @return the value of the '<em>Invoice Item Type</em>' reference.
+	 * @see #setInvoiceItemType(InvoiceItemType)
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementTerm_InvoiceItemType()
 	 * @model keys="invoiceItemTypeId"
 	 * @generated
 	 */
-	InvoiceItemType getInvoiceItemTypeId();
+	InvoiceItemType getInvoiceItemType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getInvoiceItemTypeId <em>Invoice Item Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getInvoiceItemType <em>Invoice Item Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Invoice Item Type Id</em>' reference.
-	 * @see #getInvoiceItemTypeId()
+	 * @param value the new value of the '<em>Invoice Item Type</em>' reference.
+	 * @see #getInvoiceItemType()
 	 * @generated
 	 */
-	void setInvoiceItemTypeId(InvoiceItemType value);
+	void setInvoiceItemType(InvoiceItemType value);
 
 	/**
 	 * Returns the value of the '<em><b>Max Quantity</b></em>' attribute.
@@ -244,6 +240,28 @@ public interface AgreementTerm extends EntityTyped<TermType>, EntityInfo {
 	void setTermDays(long value);
 
 	/**
+	 * Returns the value of the '<em><b>Term Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Term Type</em>' reference.
+	 * @see #setTermType(TermType)
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementTerm_TermType()
+	 * @model keys="termTypeId"
+	 * @generated
+	 */
+	TermType getTermType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getTermType <em>Term Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Term Type</em>' reference.
+	 * @see #getTermType()
+	 * @generated
+	 */
+	void setTermType(TermType value);
+
+	/**
 	 * Returns the value of the '<em><b>Term Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -322,58 +340,6 @@ public interface AgreementTerm extends EntityTyped<TermType>, EntityInfo {
 	void setThruDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Term Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Term Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Term Type Id</em>' reference.
-	 * @see #setTermTypeId(TermType)
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementTerm_TermTypeId()
-	 * @model keys="termTypeId"
-	 * @generated
-	 */
-	TermType getTermTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getTermTypeId <em>Term Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Term Type Id</em>' reference.
-	 * @see #getTermTypeId()
-	 * @generated
-	 */
-	void setTermTypeId(TermType value);
-
-	/**
-	 * Returns the value of the '<em><b>Agreement Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Agreement Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Agreement Id</em>' reference.
-	 * @see #setAgreementId(Agreement)
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementTerm_AgreementId()
-	 * @model keys="agreementId"
-	 * @generated
-	 */
-	Agreement getAgreementId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getAgreementId <em>Agreement Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Agreement Id</em>' reference.
-	 * @see #getAgreementId()
-	 * @generated
-	 */
-	void setAgreementId(Agreement value);
-
-	/**
 	 * Returns the value of the '<em><b>Agreement Term Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -399,5 +365,27 @@ public interface AgreementTerm extends EntityTyped<TermType>, EntityInfo {
 	 * @generated
 	 */
 	void setAgreementTermId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Agreement</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Agreement</em>' reference.
+	 * @see #setAgreement(Agreement)
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementTerm_Agreement()
+	 * @model keys="agreementId"
+	 * @generated
+	 */
+	Agreement getAgreement();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getAgreement <em>Agreement</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Agreement</em>' reference.
+	 * @see #getAgreement()
+	 * @generated
+	 */
+	void setAgreement(Agreement value);
 
 } // AgreementTerm

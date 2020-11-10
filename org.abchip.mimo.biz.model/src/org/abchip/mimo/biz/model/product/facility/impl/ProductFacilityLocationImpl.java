@@ -30,8 +30,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityLocationImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityLocationImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityLocationImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityLocationImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityLocationImpl#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityLocationImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityLocationImpl#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityLocationImpl#getLocationSeqId <em>Location Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityLocationImpl#getMinimumStock <em>Minimum Stock</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityLocationImpl#getMoveQuantity <em>Move Quantity</em>}</li>
@@ -156,6 +156,46 @@ public class ProductFacilityLocationImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(FacilityPackage.Literals.PRODUCT_FACILITY_LOCATION__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(FacilityPackage.Literals.PRODUCT_FACILITY_LOCATION__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Facility getFacility() {
+		return (Facility)eGet(FacilityPackage.Literals.PRODUCT_FACILITY_LOCATION__FACILITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacility(Facility newFacility) {
+		eSet(FacilityPackage.Literals.PRODUCT_FACILITY_LOCATION__FACILITY, newFacility);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getLocationSeqId() {
 		return (String)eGet(FacilityPackage.Literals.PRODUCT_FACILITY_LOCATION__LOCATION_SEQ_ID, true);
 	}
@@ -246,46 +286,6 @@ public class ProductFacilityLocationImpl extends EntityIdentifiableImpl implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(FacilityPackage.Literals.PRODUCT_FACILITY_LOCATION__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(FacilityPackage.Literals.PRODUCT_FACILITY_LOCATION__PRODUCT_ID, newProductId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(FacilityPackage.Literals.PRODUCT_FACILITY_LOCATION__FACILITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(FacilityPackage.Literals.PRODUCT_FACILITY_LOCATION__FACILITY_ID, newFacilityId);
 	}
 
 } //ProductFacilityLocationImpl

@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeAttrImpl#getPartyTypeId <em>Party Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeAttrImpl#getPartyType <em>Party Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -151,6 +151,26 @@ public class PartyTypeAttrImpl extends EntityIdentifiableImpl implements PartyTy
 	 * @generated
 	 */
 	@Override
+	public PartyType getPartyType() {
+		return (PartyType)eGet(PartyPackage.Literals.PARTY_TYPE_ATTR__PARTY_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPartyType(PartyType newPartyType) {
+		eSet(PartyPackage.Literals.PARTY_TYPE_ATTR__PARTY_TYPE, newPartyType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(PartyPackage.Literals.PARTY_TYPE_ATTR__DESCRIPTION, true);
 	}
@@ -221,26 +241,6 @@ public class PartyTypeAttrImpl extends EntityIdentifiableImpl implements PartyTy
 	@Override
 	public void setAttrName(String newAttrName) {
 		eSet(PartyPackage.Literals.PARTY_TYPE_ATTR__ATTR_NAME, newAttrName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PartyType getPartyTypeId() {
-		return (PartyType)eGet(PartyPackage.Literals.PARTY_TYPE_ATTR__PARTY_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyTypeId(PartyType newPartyTypeId) {
-		eSet(PartyPackage.Literals.PARTY_TYPE_ATTR__PARTY_TYPE_ID, newPartyTypeId);
 	}
 
 } //PartyTypeAttrImpl

@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCalendarImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCalendarImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCalendarImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCalendarImpl#getFacilityId <em>Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCalendarImpl#getFacilityCalendarTypeId <em>Facility Calendar Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCalendarImpl#getFacility <em>Facility</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCalendarImpl#getFacilityCalendarType <em>Facility Calendar Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCalendarImpl#getCalendarId <em>Calendar Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCalendarImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityCalendarImpl#getThruDate <em>Thru Date</em>}</li>
@@ -155,6 +155,46 @@ public class FacilityCalendarImpl extends EntityTypedImpl<FacilityCalendarType> 
 	 * @generated
 	 */
 	@Override
+	public Facility getFacility() {
+		return (Facility)eGet(FacilityPackage.Literals.FACILITY_CALENDAR__FACILITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacility(Facility newFacility) {
+		eSet(FacilityPackage.Literals.FACILITY_CALENDAR__FACILITY, newFacility);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FacilityCalendarType getFacilityCalendarType() {
+		return (FacilityCalendarType)eGet(FacilityPackage.Literals.FACILITY_CALENDAR__FACILITY_CALENDAR_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacilityCalendarType(FacilityCalendarType newFacilityCalendarType) {
+		eSet(FacilityPackage.Literals.FACILITY_CALENDAR__FACILITY_CALENDAR_TYPE, newFacilityCalendarType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getCalendarId() {
 		return (String)eGet(FacilityPackage.Literals.FACILITY_CALENDAR__CALENDAR_ID, true);
 	}
@@ -245,46 +285,6 @@ public class FacilityCalendarImpl extends EntityTypedImpl<FacilityCalendarType> 
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(FacilityPackage.Literals.FACILITY_CALENDAR__FACILITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(FacilityPackage.Literals.FACILITY_CALENDAR__FACILITY_ID, newFacilityId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FacilityCalendarType getFacilityCalendarTypeId() {
-		return (FacilityCalendarType)eGet(FacilityPackage.Literals.FACILITY_CALENDAR__FACILITY_CALENDAR_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityCalendarTypeId(FacilityCalendarType newFacilityCalendarTypeId) {
-		eSet(FacilityPackage.Literals.FACILITY_CALENDAR__FACILITY_CALENDAR_TYPE_ID, newFacilityCalendarTypeId);
 	}
 
 } //FacilityCalendarImpl

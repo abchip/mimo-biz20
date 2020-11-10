@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementPartyApplicImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementPartyApplicImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementPartyApplicImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementPartyApplicImpl#getAgreementId <em>Agreement Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementPartyApplicImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementPartyApplicImpl#getAgreement <em>Agreement</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementPartyApplicImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementPartyApplicImpl#getAgreementItemSeqId <em>Agreement Item Seq Id</em>}</li>
  * </ul>
  *
@@ -152,6 +152,46 @@ public class AgreementPartyApplicImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
+	public Agreement getAgreement() {
+		return (Agreement)eGet(AgreementPackage.Literals.AGREEMENT_PARTY_APPLIC__AGREEMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAgreement(Agreement newAgreement) {
+		eSet(AgreementPackage.Literals.AGREEMENT_PARTY_APPLIC__AGREEMENT, newAgreement);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(AgreementPackage.Literals.AGREEMENT_PARTY_APPLIC__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(AgreementPackage.Literals.AGREEMENT_PARTY_APPLIC__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAgreementItemSeqId() {
 		return (String)eGet(AgreementPackage.Literals.AGREEMENT_PARTY_APPLIC__AGREEMENT_ITEM_SEQ_ID, true);
 	}
@@ -202,46 +242,6 @@ public class AgreementPartyApplicImpl extends EntityIdentifiableImpl implements 
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(AgreementPackage.Literals.AGREEMENT_PARTY_APPLIC__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(AgreementPackage.Literals.AGREEMENT_PARTY_APPLIC__PARTY_ID, newPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Agreement getAgreementId() {
-		return (Agreement)eGet(AgreementPackage.Literals.AGREEMENT_PARTY_APPLIC__AGREEMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAgreementId(Agreement newAgreementId) {
-		eSet(AgreementPackage.Literals.AGREEMENT_PARTY_APPLIC__AGREEMENT_ID, newAgreementId);
 	}
 
 } //AgreementPartyApplicImpl

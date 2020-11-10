@@ -24,8 +24,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemTempRes#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemTempRes#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemTempRes#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemTempRes#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemTempRes#getVisitId <em>Visit Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemTempRes#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemTempRes#getReservedDate <em>Reserved Date</em>}</li>
@@ -37,58 +37,50 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface InventoryItemTempRes extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemTempRes_ProductId()
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemTempRes_Product()
 	 * @model keys="productId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Product getProductId();
+	Product getProduct();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemTempRes#getProductId <em>Product Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemTempRes#getProduct <em>Product</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
 	 * @generated
 	 */
-	void setProductId(Product value);
+	void setProduct(Product value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Store Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Store</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store Id</em>' reference.
-	 * @see #setProductStoreId(ProductStore)
-	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemTempRes_ProductStoreId()
+	 * @return the value of the '<em>Product Store</em>' reference.
+	 * @see #setProductStore(ProductStore)
+	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemTempRes_ProductStore()
 	 * @model keys="productStoreId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ProductStore getProductStoreId();
+	ProductStore getProductStore();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemTempRes#getProductStoreId <em>Product Store Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemTempRes#getProductStore <em>Product Store</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store Id</em>' reference.
-	 * @see #getProductStoreId()
+	 * @param value the new value of the '<em>Product Store</em>' reference.
+	 * @see #getProductStore()
 	 * @generated
 	 */
-	void setProductStoreId(ProductStore value);
+	void setProductStore(ProductStore value);
 
 	/**
 	 * Returns the value of the '<em><b>Quantity</b></em>' attribute.

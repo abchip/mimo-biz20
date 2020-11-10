@@ -35,8 +35,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestTypeImpl#getCustRequestTypeAttrs <em>Cust Request Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestTypeImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestTypeImpl#getParentType <em>Parent Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestTypeImpl#getParty <em>Party</em>}</li>
  * </ul>
  *
  * @generated
@@ -236,8 +236,8 @@ public class CustRequestTypeImpl extends EntityTypeImpl<CustRequest> implements 
 	 * @generated
 	 */
 	@Override
-	public CustRequestType getParentTypeId() {
-		return (CustRequestType)eGet(RequestPackage.Literals.CUST_REQUEST_TYPE__PARENT_TYPE_ID, true);
+	public CustRequestType getParentType() {
+		return (CustRequestType)eGet(RequestPackage.Literals.CUST_REQUEST_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -246,8 +246,8 @@ public class CustRequestTypeImpl extends EntityTypeImpl<CustRequest> implements 
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(CustRequestType newParentTypeId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(CustRequestType newParentType) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**
@@ -256,8 +256,8 @@ public class CustRequestTypeImpl extends EntityTypeImpl<CustRequest> implements 
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(RequestPackage.Literals.CUST_REQUEST_TYPE__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(RequestPackage.Literals.CUST_REQUEST_TYPE__PARTY, true);
 	}
 
 	/**
@@ -266,8 +266,8 @@ public class CustRequestTypeImpl extends EntityTypeImpl<CustRequest> implements 
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_TYPE__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_TYPE__PARTY, newParty);
 	}
 
 	/**

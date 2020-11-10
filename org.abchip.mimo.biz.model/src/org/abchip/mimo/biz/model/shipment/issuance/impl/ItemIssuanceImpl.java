@@ -36,15 +36,15 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceImpl#getItemIssuanceId <em>Item Issuance Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceImpl#getCancelQuantity <em>Cancel Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceImpl#getInventoryItemId <em>Inventory Item Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceImpl#getIssuedByUserLoginId <em>Issued By User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceImpl#getInventoryItem <em>Inventory Item</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceImpl#getIssuedByUserLogin <em>Issued By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceImpl#getIssuedDateTime <em>Issued Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceImpl#getMaintHistSeqId <em>Maint Hist Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceImpl#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceImpl#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceImpl#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceImpl#getShipGroupSeqId <em>Ship Group Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceImpl#getShipmentId <em>Shipment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceImpl#getShipment <em>Shipment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceImpl#getShipmentItemSeqId <em>Shipment Item Seq Id</em>}</li>
  * </ul>
  *
@@ -207,8 +207,8 @@ public class ItemIssuanceImpl extends EntityIdentifiableImpl implements ItemIssu
 	 * @generated
 	 */
 	@Override
-	public InventoryItem getInventoryItemId() {
-		return (InventoryItem)eGet(IssuancePackage.Literals.ITEM_ISSUANCE__INVENTORY_ITEM_ID, true);
+	public InventoryItem getInventoryItem() {
+		return (InventoryItem)eGet(IssuancePackage.Literals.ITEM_ISSUANCE__INVENTORY_ITEM, true);
 	}
 
 	/**
@@ -217,8 +217,8 @@ public class ItemIssuanceImpl extends EntityIdentifiableImpl implements ItemIssu
 	 * @generated
 	 */
 	@Override
-	public void setInventoryItemId(InventoryItem newInventoryItemId) {
-		eSet(IssuancePackage.Literals.ITEM_ISSUANCE__INVENTORY_ITEM_ID, newInventoryItemId);
+	public void setInventoryItem(InventoryItem newInventoryItem) {
+		eSet(IssuancePackage.Literals.ITEM_ISSUANCE__INVENTORY_ITEM, newInventoryItem);
 	}
 
 	/**
@@ -227,8 +227,8 @@ public class ItemIssuanceImpl extends EntityIdentifiableImpl implements ItemIssu
 	 * @generated
 	 */
 	@Override
-	public UserLogin getIssuedByUserLoginId() {
-		return (UserLogin)eGet(IssuancePackage.Literals.ITEM_ISSUANCE__ISSUED_BY_USER_LOGIN_ID, true);
+	public UserLogin getIssuedByUserLogin() {
+		return (UserLogin)eGet(IssuancePackage.Literals.ITEM_ISSUANCE__ISSUED_BY_USER_LOGIN, true);
 	}
 
 	/**
@@ -237,8 +237,8 @@ public class ItemIssuanceImpl extends EntityIdentifiableImpl implements ItemIssu
 	 * @generated
 	 */
 	@Override
-	public void setIssuedByUserLoginId(UserLogin newIssuedByUserLoginId) {
-		eSet(IssuancePackage.Literals.ITEM_ISSUANCE__ISSUED_BY_USER_LOGIN_ID, newIssuedByUserLoginId);
+	public void setIssuedByUserLogin(UserLogin newIssuedByUserLogin) {
+		eSet(IssuancePackage.Literals.ITEM_ISSUANCE__ISSUED_BY_USER_LOGIN, newIssuedByUserLogin);
 	}
 
 	/**
@@ -307,8 +307,8 @@ public class ItemIssuanceImpl extends EntityIdentifiableImpl implements ItemIssu
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(IssuancePackage.Literals.ITEM_ISSUANCE__ORDER_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(IssuancePackage.Literals.ITEM_ISSUANCE__ORDER, true);
 	}
 
 	/**
@@ -317,8 +317,8 @@ public class ItemIssuanceImpl extends EntityIdentifiableImpl implements ItemIssu
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(IssuancePackage.Literals.ITEM_ISSUANCE__ORDER_ID, newOrderId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(IssuancePackage.Literals.ITEM_ISSUANCE__ORDER, newOrder);
 	}
 
 	/**
@@ -387,8 +387,8 @@ public class ItemIssuanceImpl extends EntityIdentifiableImpl implements ItemIssu
 	 * @generated
 	 */
 	@Override
-	public Shipment getShipmentId() {
-		return (Shipment)eGet(IssuancePackage.Literals.ITEM_ISSUANCE__SHIPMENT_ID, true);
+	public Shipment getShipment() {
+		return (Shipment)eGet(IssuancePackage.Literals.ITEM_ISSUANCE__SHIPMENT, true);
 	}
 
 	/**
@@ -397,8 +397,8 @@ public class ItemIssuanceImpl extends EntityIdentifiableImpl implements ItemIssu
 	 * @generated
 	 */
 	@Override
-	public void setShipmentId(Shipment newShipmentId) {
-		eSet(IssuancePackage.Literals.ITEM_ISSUANCE__SHIPMENT_ID, newShipmentId);
+	public void setShipment(Shipment newShipment) {
+		eSet(IssuancePackage.Literals.ITEM_ISSUANCE__SHIPMENT, newShipment);
 	}
 
 	/**

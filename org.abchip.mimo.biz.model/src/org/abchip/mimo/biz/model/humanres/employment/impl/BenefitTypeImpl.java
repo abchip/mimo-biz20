@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.BenefitTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.BenefitTypeImpl#getEmployerPaidPercentage <em>Employer Paid Percentage</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.BenefitTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.BenefitTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.BenefitTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -262,8 +262,8 @@ public class BenefitTypeImpl extends EntityTypeImpl<PartyBenefit> implements Ben
 	 * @generated
 	 */
 	@Override
-	public BenefitType getParentTypeId() {
-		return (BenefitType)eGet(EmploymentPackage.Literals.BENEFIT_TYPE__PARENT_TYPE_ID, true);
+	public BenefitType getParentType() {
+		return (BenefitType)eGet(EmploymentPackage.Literals.BENEFIT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -272,8 +272,8 @@ public class BenefitTypeImpl extends EntityTypeImpl<PartyBenefit> implements Ben
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(BenefitType newParentTypeId) {
-		eSet(EmploymentPackage.Literals.BENEFIT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(BenefitType newParentType) {
+		eSet(EmploymentPackage.Literals.BENEFIT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

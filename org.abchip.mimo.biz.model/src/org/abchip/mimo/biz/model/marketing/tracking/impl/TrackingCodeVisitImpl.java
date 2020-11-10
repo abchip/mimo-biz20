@@ -29,10 +29,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeVisitImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeVisitImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeVisitImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeVisitImpl#getTrackingCodeId <em>Tracking Code Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeVisitImpl#getTrackingCode <em>Tracking Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeVisitImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeVisitImpl#getVisitId <em>Visit Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeVisitImpl#getSourceEnumId <em>Source Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeVisitImpl#getSourceEnum <em>Source Enum</em>}</li>
  * </ul>
  *
  * @generated
@@ -154,6 +154,26 @@ public class TrackingCodeVisitImpl extends EntityIdentifiableImpl implements Tra
 	 * @generated
 	 */
 	@Override
+	public TrackingCode getTrackingCode() {
+		return (TrackingCode)eGet(TrackingPackage.Literals.TRACKING_CODE_VISIT__TRACKING_CODE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTrackingCode(TrackingCode newTrackingCode) {
+		eSet(TrackingPackage.Literals.TRACKING_CODE_VISIT__TRACKING_CODE, newTrackingCode);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(TrackingPackage.Literals.TRACKING_CODE_VISIT__FROM_DATE, true);
 	}
@@ -166,26 +186,6 @@ public class TrackingCodeVisitImpl extends EntityIdentifiableImpl implements Tra
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(TrackingPackage.Literals.TRACKING_CODE_VISIT__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Enumeration getSourceEnumId() {
-		return (Enumeration)eGet(TrackingPackage.Literals.TRACKING_CODE_VISIT__SOURCE_ENUM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSourceEnumId(Enumeration newSourceEnumId) {
-		eSet(TrackingPackage.Literals.TRACKING_CODE_VISIT__SOURCE_ENUM_ID, newSourceEnumId);
 	}
 
 	/**
@@ -232,26 +232,6 @@ public class TrackingCodeVisitImpl extends EntityIdentifiableImpl implements Tra
 	 * @generated
 	 */
 	@Override
-	public TrackingCode getTrackingCodeId() {
-		return (TrackingCode)eGet(TrackingPackage.Literals.TRACKING_CODE_VISIT__TRACKING_CODE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTrackingCodeId(TrackingCode newTrackingCodeId) {
-		eSet(TrackingPackage.Literals.TRACKING_CODE_VISIT__TRACKING_CODE_ID, newTrackingCodeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getVisitId() {
 		return (String)eGet(TrackingPackage.Literals.TRACKING_CODE_VISIT__VISIT_ID, true);
 	}
@@ -264,6 +244,26 @@ public class TrackingCodeVisitImpl extends EntityIdentifiableImpl implements Tra
 	@Override
 	public void setVisitId(String newVisitId) {
 		eSet(TrackingPackage.Literals.TRACKING_CODE_VISIT__VISIT_ID, newVisitId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Enumeration getSourceEnum() {
+		return (Enumeration)eGet(TrackingPackage.Literals.TRACKING_CODE_VISIT__SOURCE_ENUM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSourceEnum(Enumeration newSourceEnum) {
+		eSet(TrackingPackage.Literals.TRACKING_CODE_VISIT__SOURCE_ENUM, newSourceEnum);
 	}
 
 } //TrackingCodeVisitImpl

@@ -30,14 +30,14 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getAllowSolicitation <em>Allow Solicitation</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getExtension <em>Extension</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getMonthsWithContactMech <em>Months With Contact Mech</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getRoleType <em>Role Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getVerified <em>Verified</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getYearsWithContactMech <em>Years With Contact Mech</em>}</li>
@@ -161,6 +161,46 @@ public class PartyContactMechImpl extends EntityIdentifiableImpl implements Part
 	 * @generated
 	 */
 	@Override
+	public Party getParty() {
+		return (Party)eGet(ContactPackage.Literals.PARTY_CONTACT_MECH__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(ContactPackage.Literals.PARTY_CONTACT_MECH__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(ContactPackage.Literals.PARTY_CONTACT_MECH__CONTACT_MECH, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(ContactPackage.Literals.PARTY_CONTACT_MECH__CONTACT_MECH, newContactMech);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getComments() {
 		return (String)eGet(ContactPackage.Literals.PARTY_CONTACT_MECH__COMMENTS, true);
 	}
@@ -261,8 +301,8 @@ public class PartyContactMechImpl extends EntityIdentifiableImpl implements Part
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(ContactPackage.Literals.PARTY_CONTACT_MECH__PARTY_ID, true);
+	public RoleType getRoleType() {
+		return (RoleType)eGet(ContactPackage.Literals.PARTY_CONTACT_MECH__ROLE_TYPE, true);
 	}
 
 	/**
@@ -271,28 +311,8 @@ public class PartyContactMechImpl extends EntityIdentifiableImpl implements Part
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(ContactPackage.Literals.PARTY_CONTACT_MECH__PARTY_ID, newPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(ContactPackage.Literals.PARTY_CONTACT_MECH__ROLE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(ContactPackage.Literals.PARTY_CONTACT_MECH__ROLE_TYPE_ID, newRoleTypeId);
+	public void setRoleType(RoleType newRoleType) {
+		eSet(ContactPackage.Literals.PARTY_CONTACT_MECH__ROLE_TYPE, newRoleType);
 	}
 
 	/**
@@ -391,26 +411,6 @@ public class PartyContactMechImpl extends EntityIdentifiableImpl implements Part
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(ContactPackage.Literals.PARTY_CONTACT_MECH__CONTACT_MECH_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(ContactPackage.Literals.PARTY_CONTACT_MECH__CONTACT_MECH_ID, newContactMechId);
 	}
 
 } //PartyContactMechImpl

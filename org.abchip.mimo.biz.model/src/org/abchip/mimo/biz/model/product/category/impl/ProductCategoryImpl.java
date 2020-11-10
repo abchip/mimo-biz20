@@ -46,11 +46,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryImpl#getLinkTwoImageUrl <em>Link Two Image Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryImpl#getLongDescription <em>Long Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryImpl#getMarketInterests <em>Market Interests</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryImpl#getPrimaryParentCategoryId <em>Primary Parent Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryImpl#getPrimaryParentCategory <em>Primary Parent Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryImpl#getProductCategoryAttributes <em>Product Category Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryImpl#getProductCategoryLinks <em>Product Category Links</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryImpl#getProductCategoryMembers <em>Product Category Members</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryImpl#getProductCategoryTypeId <em>Product Category Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryImpl#getProductCategoryType <em>Product Category Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryImpl#getProductFeatureCatGrpAppls <em>Product Feature Cat Grp Appls</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryImpl#getProductFeatureCategoryAppls <em>Product Feature Category Appls</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryImpl#getShowInSelect <em>Show In Select</em>}</li>
@@ -337,8 +337,8 @@ public class ProductCategoryImpl extends EntityTypedImpl<ProductCategoryType> im
 	 * @generated
 	 */
 	@Override
-	public ProductCategoryType getProductCategoryTypeId() {
-		return (ProductCategoryType)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRODUCT_CATEGORY_TYPE_ID, true);
+	public ProductCategory getPrimaryParentCategory() {
+		return (ProductCategory)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRIMARY_PARENT_CATEGORY, true);
 	}
 
 	/**
@@ -347,8 +347,8 @@ public class ProductCategoryImpl extends EntityTypedImpl<ProductCategoryType> im
 	 * @generated
 	 */
 	@Override
-	public void setProductCategoryTypeId(ProductCategoryType newProductCategoryTypeId) {
-		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRODUCT_CATEGORY_TYPE_ID, newProductCategoryTypeId);
+	public void setPrimaryParentCategory(ProductCategory newPrimaryParentCategory) {
+		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRIMARY_PARENT_CATEGORY, newPrimaryParentCategory);
 	}
 
 	/**
@@ -436,26 +436,6 @@ public class ProductCategoryImpl extends EntityTypedImpl<ProductCategoryType> im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ProductCategory getPrimaryParentCategoryId() {
-		return (ProductCategory)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRIMARY_PARENT_CATEGORY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPrimaryParentCategoryId(ProductCategory newPrimaryParentCategoryId) {
-		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRIMARY_PARENT_CATEGORY_ID, newPrimaryParentCategoryId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<ProductCategoryAttribute> getProductCategoryAttributes() {
@@ -482,6 +462,26 @@ public class ProductCategoryImpl extends EntityTypedImpl<ProductCategoryType> im
 	@Override
 	public List<ProductCategoryMember> getProductCategoryMembers() {
 		return (List<ProductCategoryMember>)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRODUCT_CATEGORY_MEMBERS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductCategoryType getProductCategoryType() {
+		return (ProductCategoryType)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRODUCT_CATEGORY_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductCategoryType(ProductCategoryType newProductCategoryType) {
+		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRODUCT_CATEGORY_TYPE, newProductCategoryType);
 	}
 
 	/**

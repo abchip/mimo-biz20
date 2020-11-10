@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemLabelImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemLabelImpl#getInventoryItemLabelId <em>Inventory Item Label Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemLabelImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemLabelImpl#getInventoryItemLabelTypeId <em>Inventory Item Label Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemLabelImpl#getInventoryItemLabelType <em>Inventory Item Label Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -172,8 +172,8 @@ public class InventoryItemLabelImpl extends EntityTypedImpl<InventoryItemLabelTy
 	 * @generated
 	 */
 	@Override
-	public InventoryItemLabelType getInventoryItemLabelTypeId() {
-		return (InventoryItemLabelType)eGet(InventoryPackage.Literals.INVENTORY_ITEM_LABEL__INVENTORY_ITEM_LABEL_TYPE_ID, true);
+	public InventoryItemLabelType getInventoryItemLabelType() {
+		return (InventoryItemLabelType)eGet(InventoryPackage.Literals.INVENTORY_ITEM_LABEL__INVENTORY_ITEM_LABEL_TYPE, true);
 	}
 
 	/**
@@ -182,8 +182,8 @@ public class InventoryItemLabelImpl extends EntityTypedImpl<InventoryItemLabelTy
 	 * @generated
 	 */
 	@Override
-	public void setInventoryItemLabelTypeId(InventoryItemLabelType newInventoryItemLabelTypeId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM_LABEL__INVENTORY_ITEM_LABEL_TYPE_ID, newInventoryItemLabelTypeId);
+	public void setInventoryItemLabelType(InventoryItemLabelType newInventoryItemLabelType) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM_LABEL__INVENTORY_ITEM_LABEL_TYPE, newInventoryItemLabelType);
 	}
 
 	/**

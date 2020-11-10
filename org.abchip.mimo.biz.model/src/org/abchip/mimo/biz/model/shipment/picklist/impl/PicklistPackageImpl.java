@@ -736,7 +736,7 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getPicklist_FacilityId() {
+	public EReference getPicklist_Facility() {
 		return (EReference)picklistEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -776,7 +776,7 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getPicklist_ShipmentMethodTypeId() {
+	public EReference getPicklist_ShipmentMethodType() {
 		return (EReference)picklistEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -786,7 +786,7 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getPicklist_StatusId() {
+	public EReference getPicklist_Status() {
 		return (EReference)picklistEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -826,7 +826,7 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getPicklistBin_PicklistId() {
+	public EReference getPicklistBin_Picklist() {
 		return (EReference)picklistBinEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -836,7 +836,7 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getPicklistBin_PrimaryOrderId() {
+	public EReference getPicklistBin_PrimaryOrder() {
 		return (EReference)picklistBinEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -866,7 +866,7 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getPicklistItem_PicklistBinId() {
+	public EReference getPicklistItem_PicklistBin() {
 		return (EReference)picklistItemEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -876,8 +876,18 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getPicklistItem_OrderId() {
+	public EReference getPicklistItem_Order() {
 		return (EReference)picklistItemEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPicklistItem_InventoryItem() {
+		return (EReference)picklistItemEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -906,17 +916,7 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getPicklistItem_InventoryItemId() {
-		return (EReference)picklistItemEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getPicklistItem_ItemStatusId() {
+	public EReference getPicklistItem_ItemStatus() {
 		return (EReference)picklistItemEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -946,8 +946,18 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getPicklistRole_PicklistId() {
+	public EReference getPicklistRole_Picklist() {
 		return (EReference)picklistRoleEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPicklistRole_RoleType() {
+		return (EReference)picklistRoleEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -958,16 +968,6 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 	@Override
 	public EAttribute getPicklistRole_PartyId() {
 		return (EAttribute)picklistRoleEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getPicklistRole_RoleTypeId() {
-		return (EReference)picklistRoleEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1026,7 +1026,7 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getPicklistStatusHistory_PicklistId() {
+	public EReference getPicklistStatusHistory_Picklist() {
 		return (EReference)picklistStatusHistoryEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1046,7 +1046,7 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getPicklistStatusHistory_ChangeUserLoginId() {
+	public EReference getPicklistStatusHistory_ChangeUserLogin() {
 		return (EReference)picklistStatusHistoryEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -1056,7 +1056,7 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getPicklistStatusHistory_StatusId() {
+	public EReference getPicklistStatusHistory_Status() {
 		return (EReference)picklistStatusHistoryEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1103,32 +1103,32 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 		createEAttribute(picklistEClass, PICKLIST__PICKLIST_ID);
 		createEAttribute(picklistEClass, PICKLIST__CREATED_BY_USER_LOGIN);
 		createEAttribute(picklistEClass, PICKLIST__DESCRIPTION);
-		createEReference(picklistEClass, PICKLIST__FACILITY_ID);
+		createEReference(picklistEClass, PICKLIST__FACILITY);
 		createEAttribute(picklistEClass, PICKLIST__LAST_MODIFIED_BY_USER_LOGIN);
 		createEAttribute(picklistEClass, PICKLIST__PICKLIST_DATE);
 		createEReference(picklistEClass, PICKLIST__PICKLIST_STATUS_HISTORIES);
-		createEReference(picklistEClass, PICKLIST__SHIPMENT_METHOD_TYPE_ID);
-		createEReference(picklistEClass, PICKLIST__STATUS_ID);
+		createEReference(picklistEClass, PICKLIST__SHIPMENT_METHOD_TYPE);
+		createEReference(picklistEClass, PICKLIST__STATUS);
 
 		picklistBinEClass = createEClass(PICKLIST_BIN);
 		createEAttribute(picklistBinEClass, PICKLIST_BIN__PICKLIST_BIN_ID);
 		createEAttribute(picklistBinEClass, PICKLIST_BIN__BIN_LOCATION_NUMBER);
-		createEReference(picklistBinEClass, PICKLIST_BIN__PICKLIST_ID);
-		createEReference(picklistBinEClass, PICKLIST_BIN__PRIMARY_ORDER_ID);
+		createEReference(picklistBinEClass, PICKLIST_BIN__PICKLIST);
+		createEReference(picklistBinEClass, PICKLIST_BIN__PRIMARY_ORDER);
 		createEAttribute(picklistBinEClass, PICKLIST_BIN__PRIMARY_SHIP_GROUP_SEQ_ID);
 
 		picklistItemEClass = createEClass(PICKLIST_ITEM);
-		createEReference(picklistItemEClass, PICKLIST_ITEM__PICKLIST_BIN_ID);
-		createEReference(picklistItemEClass, PICKLIST_ITEM__ORDER_ID);
-		createEReference(picklistItemEClass, PICKLIST_ITEM__INVENTORY_ITEM_ID);
+		createEReference(picklistItemEClass, PICKLIST_ITEM__PICKLIST_BIN);
+		createEReference(picklistItemEClass, PICKLIST_ITEM__ORDER);
+		createEReference(picklistItemEClass, PICKLIST_ITEM__INVENTORY_ITEM);
 		createEAttribute(picklistItemEClass, PICKLIST_ITEM__ORDER_ITEM_SEQ_ID);
 		createEAttribute(picklistItemEClass, PICKLIST_ITEM__SHIP_GROUP_SEQ_ID);
-		createEReference(picklistItemEClass, PICKLIST_ITEM__ITEM_STATUS_ID);
+		createEReference(picklistItemEClass, PICKLIST_ITEM__ITEM_STATUS);
 		createEAttribute(picklistItemEClass, PICKLIST_ITEM__QUANTITY);
 
 		picklistRoleEClass = createEClass(PICKLIST_ROLE);
-		createEReference(picklistRoleEClass, PICKLIST_ROLE__PICKLIST_ID);
-		createEReference(picklistRoleEClass, PICKLIST_ROLE__ROLE_TYPE_ID);
+		createEReference(picklistRoleEClass, PICKLIST_ROLE__PICKLIST);
+		createEReference(picklistRoleEClass, PICKLIST_ROLE__ROLE_TYPE);
 		createEAttribute(picklistRoleEClass, PICKLIST_ROLE__FROM_DATE);
 		createEAttribute(picklistRoleEClass, PICKLIST_ROLE__PARTY_ID);
 		createEReference(picklistRoleEClass, PICKLIST_ROLE__CREATED_BY_USER_LOGIN);
@@ -1136,10 +1136,10 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 		createEAttribute(picklistRoleEClass, PICKLIST_ROLE__THRU_DATE);
 
 		picklistStatusHistoryEClass = createEClass(PICKLIST_STATUS_HISTORY);
-		createEReference(picklistStatusHistoryEClass, PICKLIST_STATUS_HISTORY__PICKLIST_ID);
+		createEReference(picklistStatusHistoryEClass, PICKLIST_STATUS_HISTORY__PICKLIST);
 		createEAttribute(picklistStatusHistoryEClass, PICKLIST_STATUS_HISTORY__CHANGE_DATE);
-		createEReference(picklistStatusHistoryEClass, PICKLIST_STATUS_HISTORY__CHANGE_USER_LOGIN_ID);
-		createEReference(picklistStatusHistoryEClass, PICKLIST_STATUS_HISTORY__STATUS_ID);
+		createEReference(picklistStatusHistoryEClass, PICKLIST_STATUS_HISTORY__CHANGE_USER_LOGIN);
+		createEReference(picklistStatusHistoryEClass, PICKLIST_STATUS_HISTORY__STATUS);
 		createEReference(picklistStatusHistoryEClass, PICKLIST_STATUS_HISTORY__STATUS_ID_TO);
 	}
 
@@ -1197,43 +1197,43 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 		initEAttribute(getPicklist_PicklistId(), ecorePackage.getEString(), "picklistId", null, 1, 1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPicklist_CreatedByUserLogin(), ecorePackage.getEString(), "createdByUserLogin", null, 0, 1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPicklist_Description(), ecorePackage.getEString(), "description", null, 0, 1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPicklist_FacilityId(), theFacilityPackage.getFacility(), null, "facilityId", null, 0, 1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklist_FacilityId().getEKeys().add(theFacilityPackage.getFacility_FacilityId());
+		initEReference(getPicklist_Facility(), theFacilityPackage.getFacility(), null, "facility", null, 0, 1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPicklist_Facility().getEKeys().add(theFacilityPackage.getFacility_FacilityId());
 		initEAttribute(getPicklist_LastModifiedByUserLogin(), ecorePackage.getEString(), "lastModifiedByUserLogin", null, 0, 1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPicklist_PicklistDate(), ecorePackage.getEDate(), "picklistDate", null, 0, 1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPicklist_PicklistStatusHistories(), this.getPicklistStatusHistory(), null, "picklistStatusHistories", null, 0, -1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEReference(getPicklist_ShipmentMethodTypeId(), theShipment_Package.getShipmentMethodType(), null, "shipmentMethodTypeId", null, 0, 1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklist_ShipmentMethodTypeId().getEKeys().add(theShipment_Package.getShipmentMethodType_ShipmentMethodTypeId());
-		initEReference(getPicklist_StatusId(), theStatusPackage.getStatusItem(), null, "statusId", null, 0, 1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklist_StatusId().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
+		initEReference(getPicklist_ShipmentMethodType(), theShipment_Package.getShipmentMethodType(), null, "shipmentMethodType", null, 0, 1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPicklist_ShipmentMethodType().getEKeys().add(theShipment_Package.getShipmentMethodType_ShipmentMethodTypeId());
+		initEReference(getPicklist_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPicklist_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 
 		initEClass(picklistBinEClass, PicklistBin.class, "PicklistBin", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPicklistBin_PicklistBinId(), ecorePackage.getEString(), "picklistBinId", null, 1, 1, PicklistBin.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPicklistBin_BinLocationNumber(), ecorePackage.getELong(), "binLocationNumber", null, 0, 1, PicklistBin.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPicklistBin_PicklistId(), this.getPicklist(), null, "picklistId", null, 0, 1, PicklistBin.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistBin_PicklistId().getEKeys().add(this.getPicklist_PicklistId());
-		initEReference(getPicklistBin_PrimaryOrderId(), theOrderPackage.getOrderHeader(), null, "primaryOrderId", null, 0, 1, PicklistBin.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistBin_PrimaryOrderId().getEKeys().add(theOrderPackage.getOrderHeader_OrderId());
+		initEReference(getPicklistBin_Picklist(), this.getPicklist(), null, "picklist", null, 0, 1, PicklistBin.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPicklistBin_Picklist().getEKeys().add(this.getPicklist_PicklistId());
+		initEReference(getPicklistBin_PrimaryOrder(), theOrderPackage.getOrderHeader(), null, "primaryOrder", null, 0, 1, PicklistBin.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPicklistBin_PrimaryOrder().getEKeys().add(theOrderPackage.getOrderHeader_OrderId());
 		initEAttribute(getPicklistBin_PrimaryShipGroupSeqId(), ecorePackage.getEString(), "primaryShipGroupSeqId", null, 0, 1, PicklistBin.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(picklistItemEClass, PicklistItem.class, "PicklistItem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getPicklistItem_PicklistBinId(), this.getPicklistBin(), null, "picklistBinId", null, 1, 1, PicklistItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistItem_PicklistBinId().getEKeys().add(this.getPicklistBin_PicklistBinId());
-		initEReference(getPicklistItem_OrderId(), theOrderPackage.getOrderHeader(), null, "orderId", null, 1, 1, PicklistItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistItem_OrderId().getEKeys().add(theOrderPackage.getOrderHeader_OrderId());
-		initEReference(getPicklistItem_InventoryItemId(), theInventoryPackage.getInventoryItem(), null, "inventoryItemId", null, 1, 1, PicklistItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistItem_InventoryItemId().getEKeys().add(theInventoryPackage.getInventoryItem_InventoryItemId());
+		initEReference(getPicklistItem_PicklistBin(), this.getPicklistBin(), null, "picklistBin", null, 1, 1, PicklistItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPicklistItem_PicklistBin().getEKeys().add(this.getPicklistBin_PicklistBinId());
+		initEReference(getPicklistItem_Order(), theOrderPackage.getOrderHeader(), null, "order", null, 1, 1, PicklistItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPicklistItem_Order().getEKeys().add(theOrderPackage.getOrderHeader_OrderId());
+		initEReference(getPicklistItem_InventoryItem(), theInventoryPackage.getInventoryItem(), null, "inventoryItem", null, 1, 1, PicklistItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPicklistItem_InventoryItem().getEKeys().add(theInventoryPackage.getInventoryItem_InventoryItemId());
 		initEAttribute(getPicklistItem_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 1, 1, PicklistItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPicklistItem_ShipGroupSeqId(), ecorePackage.getEString(), "shipGroupSeqId", null, 1, 1, PicklistItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPicklistItem_ItemStatusId(), theStatusPackage.getStatusItem(), null, "itemStatusId", null, 0, 1, PicklistItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistItem_ItemStatusId().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
+		initEReference(getPicklistItem_ItemStatus(), theStatusPackage.getStatusItem(), null, "itemStatus", null, 0, 1, PicklistItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPicklistItem_ItemStatus().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getPicklistItem_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, PicklistItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(picklistRoleEClass, PicklistRole.class, "PicklistRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getPicklistRole_PicklistId(), this.getPicklist(), null, "picklistId", null, 1, 1, PicklistRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistRole_PicklistId().getEKeys().add(this.getPicklist_PicklistId());
-		initEReference(getPicklistRole_RoleTypeId(), thePartyPackage_1.getRoleType(), null, "roleTypeId", null, 1, 1, PicklistRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistRole_RoleTypeId().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
+		initEReference(getPicklistRole_Picklist(), this.getPicklist(), null, "picklist", null, 1, 1, PicklistRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPicklistRole_Picklist().getEKeys().add(this.getPicklist_PicklistId());
+		initEReference(getPicklistRole_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 1, 1, PicklistRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPicklistRole_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEAttribute(getPicklistRole_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, PicklistRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPicklistRole_PartyId(), ecorePackage.getEString(), "partyId", null, 1, 1, PicklistRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPicklistRole_CreatedByUserLogin(), theLoginPackage.getUserLogin(), null, "createdByUserLogin", null, 0, 1, PicklistRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1243,13 +1243,13 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 		initEAttribute(getPicklistRole_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, PicklistRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(picklistStatusHistoryEClass, PicklistStatusHistory.class, "PicklistStatusHistory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getPicklistStatusHistory_PicklistId(), this.getPicklist(), null, "picklistId", null, 1, 1, PicklistStatusHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistStatusHistory_PicklistId().getEKeys().add(this.getPicklist_PicklistId());
+		initEReference(getPicklistStatusHistory_Picklist(), this.getPicklist(), null, "picklist", null, 1, 1, PicklistStatusHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPicklistStatusHistory_Picklist().getEKeys().add(this.getPicklist_PicklistId());
 		initEAttribute(getPicklistStatusHistory_ChangeDate(), ecorePackage.getEDate(), "changeDate", null, 1, 1, PicklistStatusHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPicklistStatusHistory_ChangeUserLoginId(), theLoginPackage.getUserLogin(), null, "changeUserLoginId", null, 0, 1, PicklistStatusHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistStatusHistory_ChangeUserLoginId().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
-		initEReference(getPicklistStatusHistory_StatusId(), theStatusPackage.getStatusItem(), null, "statusId", null, 0, 1, PicklistStatusHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistStatusHistory_StatusId().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
+		initEReference(getPicklistStatusHistory_ChangeUserLogin(), theLoginPackage.getUserLogin(), null, "changeUserLogin", null, 0, 1, PicklistStatusHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPicklistStatusHistory_ChangeUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
+		initEReference(getPicklistStatusHistory_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, PicklistStatusHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPicklistStatusHistory_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEReference(getPicklistStatusHistory_StatusIdTo(), theStatusPackage.getStatusItem(), null, "statusIdTo", null, 0, 1, PicklistStatusHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getPicklistStatusHistory_StatusIdTo().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 
@@ -1381,19 +1381,19 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
 		addAnnotation
-		  (getPicklistItem_PicklistBinId(),
+		  (getPicklistItem_PicklistBin(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getPicklistItem_OrderId(),
+		  (getPicklistItem_Order(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getPicklistItem_InventoryItemId(),
+		  (getPicklistItem_InventoryItem(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -1411,13 +1411,13 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getPicklistRole_PicklistId(),
+		  (getPicklistRole_Picklist(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getPicklistRole_RoleTypeId(),
+		  (getPicklistRole_RoleType(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -1435,7 +1435,7 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getPicklistStatusHistory_PicklistId(),
+		  (getPicklistStatusHistory_Picklist(),
 		   source,
 		   new String[] {
 			   "key", "true"

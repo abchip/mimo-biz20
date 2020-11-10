@@ -21,7 +21,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentGatewayConfig#getShipmentGatewayConfigId <em>Shipment Gateway Config Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentGatewayConfig#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentGatewayConfig#getShipmentGatewayConfTypeId <em>Shipment Gateway Conf Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentGatewayConfig#getShipmentGatewayConfType <em>Shipment Gateway Conf Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentGatewayConfig()
@@ -56,30 +56,26 @@ public interface ShipmentGatewayConfig extends EntityTyped<ShipmentGatewayConfig
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Shipment Gateway Conf Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Shipment Gateway Conf Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Gateway Conf Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shipment Gateway Conf Type Id</em>' reference.
-	 * @see #setShipmentGatewayConfTypeId(ShipmentGatewayConfigType)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentGatewayConfig_ShipmentGatewayConfTypeId()
+	 * @return the value of the '<em>Shipment Gateway Conf Type</em>' reference.
+	 * @see #setShipmentGatewayConfType(ShipmentGatewayConfigType)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentGatewayConfig_ShipmentGatewayConfType()
 	 * @model keys="shipmentGatewayConfTypeId"
 	 * @generated
 	 */
-	ShipmentGatewayConfigType getShipmentGatewayConfTypeId();
+	ShipmentGatewayConfigType getShipmentGatewayConfType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentGatewayConfig#getShipmentGatewayConfTypeId <em>Shipment Gateway Conf Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentGatewayConfig#getShipmentGatewayConfType <em>Shipment Gateway Conf Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shipment Gateway Conf Type Id</em>' reference.
-	 * @see #getShipmentGatewayConfTypeId()
+	 * @param value the new value of the '<em>Shipment Gateway Conf Type</em>' reference.
+	 * @see #getShipmentGatewayConfType()
 	 * @generated
 	 */
-	void setShipmentGatewayConfTypeId(ShipmentGatewayConfigType value);
+	void setShipmentGatewayConfType(ShipmentGatewayConfigType value);
 
 	/**
 	 * Returns the value of the '<em><b>Shipment Gateway Config Id</b></em>' attribute.

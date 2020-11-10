@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountGroupImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountGroupImpl#getGlAccountGroupId <em>Gl Account Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountGroupImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountGroupImpl#getGlAccountGroupTypeId <em>Gl Account Group Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountGroupImpl#getGlAccountGroupType <em>Gl Account Group Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -171,8 +171,8 @@ public class GlAccountGroupImpl extends EntityTypedImpl<GlAccountGroupType> impl
 	 * @generated
 	 */
 	@Override
-	public GlAccountGroupType getGlAccountGroupTypeId() {
-		return (GlAccountGroupType)eGet(LedgerPackage.Literals.GL_ACCOUNT_GROUP__GL_ACCOUNT_GROUP_TYPE_ID, true);
+	public GlAccountGroupType getGlAccountGroupType() {
+		return (GlAccountGroupType)eGet(LedgerPackage.Literals.GL_ACCOUNT_GROUP__GL_ACCOUNT_GROUP_TYPE, true);
 	}
 
 	/**
@@ -181,8 +181,8 @@ public class GlAccountGroupImpl extends EntityTypedImpl<GlAccountGroupType> impl
 	 * @generated
 	 */
 	@Override
-	public void setGlAccountGroupTypeId(GlAccountGroupType newGlAccountGroupTypeId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT_GROUP__GL_ACCOUNT_GROUP_TYPE_ID, newGlAccountGroupTypeId);
+	public void setGlAccountGroupType(GlAccountGroupType newGlAccountGroupType) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT_GROUP__GL_ACCOUNT_GROUP_TYPE, newGlAccountGroupType);
 	}
 
 	/**

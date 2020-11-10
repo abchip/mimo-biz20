@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentTypeImpl#getProductContentTypeId <em>Product Content Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,8 +200,8 @@ public class ProductContentTypeImpl extends EntityTypeImpl<ProductContent> imple
 	 * @generated
 	 */
 	@Override
-	public ProductContentType getParentTypeId() {
-		return (ProductContentType)eGet(ProductPackage.Literals.PRODUCT_CONTENT_TYPE__PARENT_TYPE_ID, true);
+	public ProductContentType getParentType() {
+		return (ProductContentType)eGet(ProductPackage.Literals.PRODUCT_CONTENT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -210,8 +210,8 @@ public class ProductContentTypeImpl extends EntityTypeImpl<ProductContent> imple
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(ProductContentType newParentTypeId) {
-		eSet(ProductPackage.Literals.PRODUCT_CONTENT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(ProductContentType newParentType) {
+		eSet(ProductPackage.Literals.PRODUCT_CONTENT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

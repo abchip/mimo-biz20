@@ -22,14 +22,14 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getDaysToShip <em>Days To Ship</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getLastInventoryCount <em>Last Inventory Count</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getMinimumStock <em>Minimum Stock</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getReorderQuantity <em>Reorder Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getReplenishMethodEnumId <em>Replenish Method Enum Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getRequirementMethodEnumId <em>Requirement Method Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getReplenishMethodEnum <em>Replenish Method Enum</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getRequirementMethodEnum <em>Requirement Method Enum</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacility()
@@ -37,6 +37,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductFacility extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacility_Product()
+	 * @model keys="productId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
+
+	/**
+	 * Returns the value of the '<em><b>Facility</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Facility</em>' reference.
+	 * @see #setFacility(Facility)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacility_Facility()
+	 * @model keys="facilityId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Facility getFacility();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getFacility <em>Facility</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Facility</em>' reference.
+	 * @see #getFacility()
+	 * @generated
+	 */
+	void setFacility(Facility value);
+
 	/**
 	 * Returns the value of the '<em><b>Days To Ship</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -117,33 +163,6 @@ public interface ProductFacility extends EntityIdentifiable, EntityInfo {
 	void setMinimumStock(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacility_ProductId()
-	 * @model keys="productId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Product getProductId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getProductId <em>Product Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
-	 * @generated
-	 */
-	void setProductId(Product value);
-
-	/**
 	 * Returns the value of the '<em><b>Reorder Quantity</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -170,78 +189,47 @@ public interface ProductFacility extends EntityIdentifiable, EntityInfo {
 	void setReorderQuantity(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Replenish Method Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Replenish Method Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Replenish Method Enum Id</em>' reference.
-	 * @see #setReplenishMethodEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacility_ReplenishMethodEnumId()
+	 * @return the value of the '<em>Replenish Method Enum</em>' reference.
+	 * @see #setReplenishMethodEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacility_ReplenishMethodEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getReplenishMethodEnumId();
+	Enumeration getReplenishMethodEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getReplenishMethodEnumId <em>Replenish Method Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getReplenishMethodEnum <em>Replenish Method Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Replenish Method Enum Id</em>' reference.
-	 * @see #getReplenishMethodEnumId()
+	 * @param value the new value of the '<em>Replenish Method Enum</em>' reference.
+	 * @see #getReplenishMethodEnum()
 	 * @generated
 	 */
-	void setReplenishMethodEnumId(Enumeration value);
+	void setReplenishMethodEnum(Enumeration value);
 
 	/**
-	 * Returns the value of the '<em><b>Requirement Method Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Requirement Method Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Requirement Method Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Requirement Method Enum Id</em>' reference.
-	 * @see #setRequirementMethodEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacility_RequirementMethodEnumId()
+	 * @return the value of the '<em>Requirement Method Enum</em>' reference.
+	 * @see #setRequirementMethodEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacility_RequirementMethodEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getRequirementMethodEnumId();
+	Enumeration getRequirementMethodEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getRequirementMethodEnumId <em>Requirement Method Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getRequirementMethodEnum <em>Requirement Method Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Requirement Method Enum Id</em>' reference.
-	 * @see #getRequirementMethodEnumId()
+	 * @param value the new value of the '<em>Requirement Method Enum</em>' reference.
+	 * @see #getRequirementMethodEnum()
 	 * @generated
 	 */
-	void setRequirementMethodEnumId(Enumeration value);
-
-	/**
-	 * Returns the value of the '<em><b>Facility Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facility Id</em>' reference.
-	 * @see #setFacilityId(Facility)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacility_FacilityId()
-	 * @model keys="facilityId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Facility getFacilityId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getFacilityId <em>Facility Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Facility Id</em>' reference.
-	 * @see #getFacilityId()
-	 * @generated
-	 */
-	void setFacilityId(Facility value);
+	void setRequirementMethodEnum(Enumeration value);
 
 } // ProductFacility

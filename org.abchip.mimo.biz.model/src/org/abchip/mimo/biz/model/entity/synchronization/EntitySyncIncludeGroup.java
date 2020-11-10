@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncIncludeGroup#getEntityGroupId <em>Entity Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncIncludeGroup#getEntitySyncId <em>Entity Sync Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncIncludeGroup#getEntityGroup <em>Entity Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncIncludeGroup#getEntitySync <em>Entity Sync</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage#getEntitySyncIncludeGroup()
@@ -30,57 +30,49 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface EntitySyncIncludeGroup extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Entity Group Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Entity Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Entity Group Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Entity Group Id</em>' reference.
-	 * @see #setEntityGroupId(EntityGroup)
-	 * @see org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage#getEntitySyncIncludeGroup_EntityGroupId()
+	 * @return the value of the '<em>Entity Group</em>' reference.
+	 * @see #setEntityGroup(EntityGroup)
+	 * @see org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage#getEntitySyncIncludeGroup_EntityGroup()
 	 * @model keys="entityGroupId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	EntityGroup getEntityGroupId();
+	EntityGroup getEntityGroup();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncIncludeGroup#getEntityGroupId <em>Entity Group Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncIncludeGroup#getEntityGroup <em>Entity Group</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Entity Group Id</em>' reference.
-	 * @see #getEntityGroupId()
+	 * @param value the new value of the '<em>Entity Group</em>' reference.
+	 * @see #getEntityGroup()
 	 * @generated
 	 */
-	void setEntityGroupId(EntityGroup value);
+	void setEntityGroup(EntityGroup value);
 
 	/**
-	 * Returns the value of the '<em><b>Entity Sync Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Entity Sync</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Entity Sync Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Entity Sync Id</em>' reference.
-	 * @see #setEntitySyncId(EntitySync)
-	 * @see org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage#getEntitySyncIncludeGroup_EntitySyncId()
+	 * @return the value of the '<em>Entity Sync</em>' reference.
+	 * @see #setEntitySync(EntitySync)
+	 * @see org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage#getEntitySyncIncludeGroup_EntitySync()
 	 * @model keys="entitySyncId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	EntitySync getEntitySyncId();
+	EntitySync getEntitySync();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncIncludeGroup#getEntitySyncId <em>Entity Sync Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncIncludeGroup#getEntitySync <em>Entity Sync</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Entity Sync Id</em>' reference.
-	 * @see #getEntitySyncId()
+	 * @param value the new value of the '<em>Entity Sync</em>' reference.
+	 * @see #getEntitySync()
 	 * @generated
 	 */
-	void setEntitySyncId(EntitySync value);
+	void setEntitySync(EntitySync value);
 
 } // EntitySyncIncludeGroup

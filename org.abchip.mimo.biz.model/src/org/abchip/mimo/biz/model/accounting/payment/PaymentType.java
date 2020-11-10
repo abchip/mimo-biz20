@@ -23,7 +23,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentType#getPaymentTypeId <em>Payment Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentType#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentType#getPaymentGlAccountTypeMaps <em>Payment Gl Account Type Maps</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentType#getPaymentTypeAttrs <em>Payment Type Attrs</em>}</li>
  * </ul>
@@ -86,30 +86,26 @@ public interface PaymentType extends EntityType<Payment>, EntityInfo {
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(PaymentType)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(PaymentType)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentType_ParentType()
 	 * @model keys="paymentTypeId"
 	 * @generated
 	 */
-	PaymentType getParentTypeId();
+	PaymentType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(PaymentType value);
+	void setParentType(PaymentType value);
 
 	/**
 	 * Returns the value of the '<em><b>Payment Gl Account Type Maps</b></em>' reference list.

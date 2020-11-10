@@ -45,11 +45,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getAcquireOrderId <em>Acquire Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getAcquireOrder <em>Acquire Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getAcquireOrderItemSeqId <em>Acquire Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getActualEndOfLife <em>Actual End Of Life</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getCalendarId <em>Calendar Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getClassEnumId <em>Class Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getCalendar <em>Calendar</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getClassEnum <em>Class Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getDateAcquired <em>Date Acquired</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getDateLastServiced <em>Date Last Serviced</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getDateNextService <em>Date Next Service</em>}</li>
@@ -62,19 +62,19 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getFixedAssetName <em>Fixed Asset Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getFixedAssetRegistrations <em>Fixed Asset Registrations</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getFixedAssetStdCosts <em>Fixed Asset Std Costs</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getFixedAssetTypeId <em>Fixed Asset Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getInstanceOfProductId <em>Instance Of Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getLocatedAtFacilityId <em>Located At Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getFixedAssetType <em>Fixed Asset Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getInstanceOfProduct <em>Instance Of Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getLocatedAtFacility <em>Located At Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getLocatedAtLocationSeqId <em>Located At Location Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getParentFixedAssetId <em>Parent Fixed Asset Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getParentFixedAsset <em>Parent Fixed Asset</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getProductionCapacity <em>Production Capacity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getPurchaseCost <em>Purchase Cost</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getPurchaseCostUomId <em>Purchase Cost Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getRoleType <em>Role Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getSalvageValue <em>Salvage Value</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getSerialNumber <em>Serial Number</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getUomId <em>Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetImpl#getUom <em>Uom</em>}</li>
  * </ul>
  *
  * @generated
@@ -195,26 +195,6 @@ public class FixedAssetImpl extends EntityTypedImpl<FixedAssetType> implements F
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getAcquireOrderId() {
-		return (OrderHeader)eGet(FixedassetPackage.Literals.FIXED_ASSET__ACQUIRE_ORDER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAcquireOrderId(OrderHeader newAcquireOrderId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET__ACQUIRE_ORDER_ID, newAcquireOrderId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getAcquireOrderItemSeqId() {
 		return (String)eGet(FixedassetPackage.Literals.FIXED_ASSET__ACQUIRE_ORDER_ITEM_SEQ_ID, true);
 	}
@@ -255,8 +235,8 @@ public class FixedAssetImpl extends EntityTypedImpl<FixedAssetType> implements F
 	 * @generated
 	 */
 	@Override
-	public TechDataCalendar getCalendarId() {
-		return (TechDataCalendar)eGet(FixedassetPackage.Literals.FIXED_ASSET__CALENDAR_ID, true);
+	public TechDataCalendar getCalendar() {
+		return (TechDataCalendar)eGet(FixedassetPackage.Literals.FIXED_ASSET__CALENDAR, true);
 	}
 
 	/**
@@ -265,8 +245,8 @@ public class FixedAssetImpl extends EntityTypedImpl<FixedAssetType> implements F
 	 * @generated
 	 */
 	@Override
-	public void setCalendarId(TechDataCalendar newCalendarId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET__CALENDAR_ID, newCalendarId);
+	public void setCalendar(TechDataCalendar newCalendar) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET__CALENDAR, newCalendar);
 	}
 
 	/**
@@ -275,8 +255,8 @@ public class FixedAssetImpl extends EntityTypedImpl<FixedAssetType> implements F
 	 * @generated
 	 */
 	@Override
-	public Enumeration getClassEnumId() {
-		return (Enumeration)eGet(FixedassetPackage.Literals.FIXED_ASSET__CLASS_ENUM_ID, true);
+	public Enumeration getClassEnum() {
+		return (Enumeration)eGet(FixedassetPackage.Literals.FIXED_ASSET__CLASS_ENUM, true);
 	}
 
 	/**
@@ -285,8 +265,8 @@ public class FixedAssetImpl extends EntityTypedImpl<FixedAssetType> implements F
 	 * @generated
 	 */
 	@Override
-	public void setClassEnumId(Enumeration newClassEnumId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET__CLASS_ENUM_ID, newClassEnumId);
+	public void setClassEnum(Enumeration newClassEnum) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET__CLASS_ENUM, newClassEnum);
 	}
 
 	/**
@@ -481,8 +461,8 @@ public class FixedAssetImpl extends EntityTypedImpl<FixedAssetType> implements F
 	 * @generated
 	 */
 	@Override
-	public Product getInstanceOfProductId() {
-		return (Product)eGet(FixedassetPackage.Literals.FIXED_ASSET__INSTANCE_OF_PRODUCT_ID, true);
+	public FixedAssetType getFixedAssetType() {
+		return (FixedAssetType)eGet(FixedassetPackage.Literals.FIXED_ASSET__FIXED_ASSET_TYPE, true);
 	}
 
 	/**
@@ -491,8 +471,8 @@ public class FixedAssetImpl extends EntityTypedImpl<FixedAssetType> implements F
 	 * @generated
 	 */
 	@Override
-	public void setInstanceOfProductId(Product newInstanceOfProductId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET__INSTANCE_OF_PRODUCT_ID, newInstanceOfProductId);
+	public void setFixedAssetType(FixedAssetType newFixedAssetType) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET__FIXED_ASSET_TYPE, newFixedAssetType);
 	}
 
 	/**
@@ -501,8 +481,8 @@ public class FixedAssetImpl extends EntityTypedImpl<FixedAssetType> implements F
 	 * @generated
 	 */
 	@Override
-	public Facility getLocatedAtFacilityId() {
-		return (Facility)eGet(FixedassetPackage.Literals.FIXED_ASSET__LOCATED_AT_FACILITY_ID, true);
+	public Product getInstanceOfProduct() {
+		return (Product)eGet(FixedassetPackage.Literals.FIXED_ASSET__INSTANCE_OF_PRODUCT, true);
 	}
 
 	/**
@@ -511,8 +491,28 @@ public class FixedAssetImpl extends EntityTypedImpl<FixedAssetType> implements F
 	 * @generated
 	 */
 	@Override
-	public void setLocatedAtFacilityId(Facility newLocatedAtFacilityId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET__LOCATED_AT_FACILITY_ID, newLocatedAtFacilityId);
+	public void setInstanceOfProduct(Product newInstanceOfProduct) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET__INSTANCE_OF_PRODUCT, newInstanceOfProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Facility getLocatedAtFacility() {
+		return (Facility)eGet(FixedassetPackage.Literals.FIXED_ASSET__LOCATED_AT_FACILITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLocatedAtFacility(Facility newLocatedAtFacility) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET__LOCATED_AT_FACILITY, newLocatedAtFacility);
 	}
 
 	/**
@@ -541,8 +541,8 @@ public class FixedAssetImpl extends EntityTypedImpl<FixedAssetType> implements F
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(FixedassetPackage.Literals.FIXED_ASSET__PARTY_ID, true);
+	public FixedAsset getParentFixedAsset() {
+		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET__PARENT_FIXED_ASSET, true);
 	}
 
 	/**
@@ -551,8 +551,28 @@ public class FixedAssetImpl extends EntityTypedImpl<FixedAssetType> implements F
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET__PARTY_ID, newPartyId);
+	public void setParentFixedAsset(FixedAsset newParentFixedAsset) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET__PARENT_FIXED_ASSET, newParentFixedAsset);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(FixedassetPackage.Literals.FIXED_ASSET__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET__PARTY, newParty);
 	}
 
 	/**
@@ -621,8 +641,8 @@ public class FixedAssetImpl extends EntityTypedImpl<FixedAssetType> implements F
 	 * @generated
 	 */
 	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(FixedassetPackage.Literals.FIXED_ASSET__ROLE_TYPE_ID, true);
+	public RoleType getRoleType() {
+		return (RoleType)eGet(FixedassetPackage.Literals.FIXED_ASSET__ROLE_TYPE, true);
 	}
 
 	/**
@@ -631,8 +651,8 @@ public class FixedAssetImpl extends EntityTypedImpl<FixedAssetType> implements F
 	 * @generated
 	 */
 	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET__ROLE_TYPE_ID, newRoleTypeId);
+	public void setRoleType(RoleType newRoleType) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET__ROLE_TYPE, newRoleType);
 	}
 
 	/**
@@ -681,8 +701,8 @@ public class FixedAssetImpl extends EntityTypedImpl<FixedAssetType> implements F
 	 * @generated
 	 */
 	@Override
-	public Uom getUomId() {
-		return (Uom)eGet(FixedassetPackage.Literals.FIXED_ASSET__UOM_ID, true);
+	public Uom getUom() {
+		return (Uom)eGet(FixedassetPackage.Literals.FIXED_ASSET__UOM, true);
 	}
 
 	/**
@@ -691,8 +711,8 @@ public class FixedAssetImpl extends EntityTypedImpl<FixedAssetType> implements F
 	 * @generated
 	 */
 	@Override
-	public void setUomId(Uom newUomId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET__UOM_ID, newUomId);
+	public void setUom(Uom newUom) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET__UOM, newUom);
 	}
 
 	/**
@@ -739,46 +759,6 @@ public class FixedAssetImpl extends EntityTypedImpl<FixedAssetType> implements F
 	 * @generated
 	 */
 	@Override
-	public FixedAssetType getFixedAssetTypeId() {
-		return (FixedAssetType)eGet(FixedassetPackage.Literals.FIXED_ASSET__FIXED_ASSET_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFixedAssetTypeId(FixedAssetType newFixedAssetTypeId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET__FIXED_ASSET_TYPE_ID, newFixedAssetTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FixedAsset getParentFixedAssetId() {
-		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET__PARENT_FIXED_ASSET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentFixedAssetId(FixedAsset newParentFixedAssetId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET__PARENT_FIXED_ASSET_ID, newParentFixedAssetId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getFixedAssetId() {
 		return (String)eGet(FixedassetPackage.Literals.FIXED_ASSET__FIXED_ASSET_ID, true);
 	}
@@ -791,6 +771,26 @@ public class FixedAssetImpl extends EntityTypedImpl<FixedAssetType> implements F
 	@Override
 	public void setFixedAssetId(String newFixedAssetId) {
 		eSet(FixedassetPackage.Literals.FIXED_ASSET__FIXED_ASSET_ID, newFixedAssetId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OrderHeader getAcquireOrder() {
+		return (OrderHeader)eGet(FixedassetPackage.Literals.FIXED_ASSET__ACQUIRE_ORDER, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAcquireOrder(OrderHeader newAcquireOrder) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET__ACQUIRE_ORDER, newAcquireOrder);
 	}
 
 } //FixedAssetImpl

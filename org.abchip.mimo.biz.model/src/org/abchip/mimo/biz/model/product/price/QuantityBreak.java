@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.QuantityBreak#getQuantityBreakId <em>Quantity Break Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.QuantityBreak#getFromQuantity <em>From Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.QuantityBreak#getQuantityBreakTypeId <em>Quantity Break Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.QuantityBreak#getQuantityBreakType <em>Quantity Break Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.QuantityBreak#getThruQuantity <em>Thru Quantity</em>}</li>
  * </ul>
  *
@@ -56,6 +56,28 @@ public interface QuantityBreak extends EntityTyped<QuantityBreakType>, EntityInf
 	 * @generated
 	 */
 	void setFromQuantity(BigDecimal value);
+
+	/**
+	 * Returns the value of the '<em><b>Quantity Break Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Quantity Break Type</em>' reference.
+	 * @see #setQuantityBreakType(QuantityBreakType)
+	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getQuantityBreak_QuantityBreakType()
+	 * @model keys="quantityBreakTypeId"
+	 * @generated
+	 */
+	QuantityBreakType getQuantityBreakType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.QuantityBreak#getQuantityBreakType <em>Quantity Break Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Quantity Break Type</em>' reference.
+	 * @see #getQuantityBreakType()
+	 * @generated
+	 */
+	void setQuantityBreakType(QuantityBreakType value);
 
 	/**
 	 * Returns the value of the '<em><b>Quantity Break Id</b></em>' attribute.
@@ -109,31 +131,5 @@ public interface QuantityBreak extends EntityTyped<QuantityBreakType>, EntityInf
 	 * @generated
 	 */
 	void setThruQuantity(BigDecimal value);
-
-	/**
-	 * Returns the value of the '<em><b>Quantity Break Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Quantity Break Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Quantity Break Type Id</em>' reference.
-	 * @see #setQuantityBreakTypeId(QuantityBreakType)
-	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getQuantityBreak_QuantityBreakTypeId()
-	 * @model keys="quantityBreakTypeId"
-	 * @generated
-	 */
-	QuantityBreakType getQuantityBreakTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.QuantityBreak#getQuantityBreakTypeId <em>Quantity Break Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Quantity Break Type Id</em>' reference.
-	 * @see #getQuantityBreakTypeId()
-	 * @generated
-	 */
-	void setQuantityBreakTypeId(QuantityBreakType value);
 
 } // QuantityBreak

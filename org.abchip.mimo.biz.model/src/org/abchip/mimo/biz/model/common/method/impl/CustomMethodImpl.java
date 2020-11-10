@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.method.impl.CustomMethodImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.method.impl.CustomMethodImpl#getCustomMethodId <em>Custom Method Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.method.impl.CustomMethodImpl#getCustomMethodName <em>Custom Method Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.method.impl.CustomMethodImpl#getCustomMethodTypeId <em>Custom Method Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.method.impl.CustomMethodImpl#getCustomMethodType <em>Custom Method Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.method.impl.CustomMethodImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.method.impl.CustomMethodImpl#getFixedAssetDepMethods <em>Fixed Asset Dep Methods</em>}</li>
  * </ul>
@@ -195,6 +195,26 @@ public class CustomMethodImpl extends EntityTypedImpl<CustomMethodType> implemen
 	 * @generated
 	 */
 	@Override
+	public CustomMethodType getCustomMethodType() {
+		return (CustomMethodType)eGet(MethodPackage.Literals.CUSTOM_METHOD__CUSTOM_METHOD_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCustomMethodType(CustomMethodType newCustomMethodType) {
+		eSet(MethodPackage.Literals.CUSTOM_METHOD__CUSTOM_METHOD_TYPE, newCustomMethodType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(MethodPackage.Literals.CUSTOM_METHOD__DESCRIPTION, true);
 	}
@@ -256,26 +276,6 @@ public class CustomMethodImpl extends EntityTypedImpl<CustomMethodType> implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CustomMethodType getCustomMethodTypeId() {
-		return (CustomMethodType)eGet(MethodPackage.Literals.CUSTOM_METHOD__CUSTOM_METHOD_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCustomMethodTypeId(CustomMethodType newCustomMethodTypeId) {
-		eSet(MethodPackage.Literals.CUSTOM_METHOD__CUSTOM_METHOD_TYPE_ID, newCustomMethodTypeId);
 	}
 
 } //CustomMethodImpl

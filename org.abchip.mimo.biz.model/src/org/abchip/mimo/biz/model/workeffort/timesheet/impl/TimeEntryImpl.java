@@ -36,13 +36,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getHours <em>Hours</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getInvoiceId <em>Invoice Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getInvoice <em>Invoice</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getInvoiceItemSeqId <em>Invoice Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getRateTypeId <em>Rate Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getRateType <em>Rate Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getThruDate <em>Thru Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getTimesheetId <em>Timesheet Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getTimesheet <em>Timesheet</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getWorkEffort <em>Work Effort</em>}</li>
  * </ul>
  *
  * @generated
@@ -224,8 +224,8 @@ public class TimeEntryImpl extends EntityIdentifiableImpl implements TimeEntry {
 	 * @generated
 	 */
 	@Override
-	public Invoice getInvoiceId() {
-		return (Invoice)eGet(TimesheetPackage.Literals.TIME_ENTRY__INVOICE_ID, true);
+	public Invoice getInvoice() {
+		return (Invoice)eGet(TimesheetPackage.Literals.TIME_ENTRY__INVOICE, true);
 	}
 
 	/**
@@ -234,8 +234,8 @@ public class TimeEntryImpl extends EntityIdentifiableImpl implements TimeEntry {
 	 * @generated
 	 */
 	@Override
-	public void setInvoiceId(Invoice newInvoiceId) {
-		eSet(TimesheetPackage.Literals.TIME_ENTRY__INVOICE_ID, newInvoiceId);
+	public void setInvoice(Invoice newInvoice) {
+		eSet(TimesheetPackage.Literals.TIME_ENTRY__INVOICE, newInvoice);
 	}
 
 	/**
@@ -264,8 +264,8 @@ public class TimeEntryImpl extends EntityIdentifiableImpl implements TimeEntry {
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(TimesheetPackage.Literals.TIME_ENTRY__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(TimesheetPackage.Literals.TIME_ENTRY__PARTY, true);
 	}
 
 	/**
@@ -274,8 +274,8 @@ public class TimeEntryImpl extends EntityIdentifiableImpl implements TimeEntry {
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(TimesheetPackage.Literals.TIME_ENTRY__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(TimesheetPackage.Literals.TIME_ENTRY__PARTY, newParty);
 	}
 
 	/**
@@ -284,8 +284,8 @@ public class TimeEntryImpl extends EntityIdentifiableImpl implements TimeEntry {
 	 * @generated
 	 */
 	@Override
-	public RateType getRateTypeId() {
-		return (RateType)eGet(TimesheetPackage.Literals.TIME_ENTRY__RATE_TYPE_ID, true);
+	public RateType getRateType() {
+		return (RateType)eGet(TimesheetPackage.Literals.TIME_ENTRY__RATE_TYPE, true);
 	}
 
 	/**
@@ -294,8 +294,8 @@ public class TimeEntryImpl extends EntityIdentifiableImpl implements TimeEntry {
 	 * @generated
 	 */
 	@Override
-	public void setRateTypeId(RateType newRateTypeId) {
-		eSet(TimesheetPackage.Literals.TIME_ENTRY__RATE_TYPE_ID, newRateTypeId);
+	public void setRateType(RateType newRateType) {
+		eSet(TimesheetPackage.Literals.TIME_ENTRY__RATE_TYPE, newRateType);
 	}
 
 	/**
@@ -324,6 +324,46 @@ public class TimeEntryImpl extends EntityIdentifiableImpl implements TimeEntry {
 	 * @generated
 	 */
 	@Override
+	public Timesheet getTimesheet() {
+		return (Timesheet)eGet(TimesheetPackage.Literals.TIME_ENTRY__TIMESHEET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTimesheet(Timesheet newTimesheet) {
+		eSet(TimesheetPackage.Literals.TIME_ENTRY__TIMESHEET, newTimesheet);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(TimesheetPackage.Literals.TIME_ENTRY__WORK_EFFORT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(TimesheetPackage.Literals.TIME_ENTRY__WORK_EFFORT, newWorkEffort);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getTimeEntryId() {
 		return (String)eGet(TimesheetPackage.Literals.TIME_ENTRY__TIME_ENTRY_ID, true);
 	}
@@ -336,46 +376,6 @@ public class TimeEntryImpl extends EntityIdentifiableImpl implements TimeEntry {
 	@Override
 	public void setTimeEntryId(String newTimeEntryId) {
 		eSet(TimesheetPackage.Literals.TIME_ENTRY__TIME_ENTRY_ID, newTimeEntryId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Timesheet getTimesheetId() {
-		return (Timesheet)eGet(TimesheetPackage.Literals.TIME_ENTRY__TIMESHEET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTimesheetId(Timesheet newTimesheetId) {
-		eSet(TimesheetPackage.Literals.TIME_ENTRY__TIMESHEET_ID, newTimesheetId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(TimesheetPackage.Literals.TIME_ENTRY__WORK_EFFORT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(TimesheetPackage.Literals.TIME_ENTRY__WORK_EFFORT_ID, newWorkEffortId);
 	}
 
 	/**

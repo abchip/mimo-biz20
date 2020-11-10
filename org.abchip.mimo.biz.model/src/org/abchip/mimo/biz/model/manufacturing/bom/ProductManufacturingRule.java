@@ -25,8 +25,8 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.bom.ProductManufacturingRule#getRuleId <em>Rule Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.bom.ProductManufacturingRule#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.bom.ProductManufacturingRule#getFromDate <em>From Date</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.manufacturing.bom.ProductManufacturingRule#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.bom.ProductManufacturingRule#getProductFeature <em>Product Feature</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.manufacturing.bom.ProductManufacturingRule#getProductId <em>Product Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.bom.ProductManufacturingRule#getProductIdFor <em>Product Id For</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.bom.ProductManufacturingRule#getProductIdIn <em>Product Id In</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.bom.ProductManufacturingRule#getProductIdInSubst <em>Product Id In Subst</em>}</li>
@@ -121,6 +121,28 @@ public interface ProductManufacturingRule extends EntityIdentifiable, EntityInfo
 	void setFromDate(Date value);
 
 	/**
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.manufacturing.bom.BomPackage#getProductManufacturingRule_Product()
+	 * @model keys="productId"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.manufacturing.bom.ProductManufacturingRule#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
+
+	/**
 	 * Returns the value of the '<em><b>Product Feature</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -145,32 +167,6 @@ public interface ProductManufacturingRule extends EntityIdentifiable, EntityInfo
 	 * @generated
 	 */
 	void setProductFeature(ProductFeature value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.manufacturing.bom.BomPackage#getProductManufacturingRule_ProductId()
-	 * @model keys="productId"
-	 * @generated
-	 */
-	Product getProductId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.manufacturing.bom.ProductManufacturingRule#getProductId <em>Product Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
-	 * @generated
-	 */
-	void setProductId(Product value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Id For</b></em>' reference.

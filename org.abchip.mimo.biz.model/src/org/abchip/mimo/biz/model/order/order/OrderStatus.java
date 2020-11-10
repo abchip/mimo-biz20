@@ -24,11 +24,11 @@ import org.abchip.mimo.entity.EntityInfo;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getOrderStatusId <em>Order Status Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getChangeReason <em>Change Reason</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getOrderPaymentPreferenceId <em>Order Payment Preference Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getOrderPaymentPreference <em>Order Payment Preference</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getStatusDatetime <em>Status Datetime</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getStatusId <em>Status Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getStatusUserLogin <em>Status User Login</em>}</li>
  * </ul>
  *
@@ -64,30 +64,26 @@ public interface OrderStatus extends EntityIdentifiable, EntityInfo {
 	void setChangeReason(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderStatus_OrderId()
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderStatus_Order()
 	 * @model keys="orderId"
 	 * @generated
 	 */
-	OrderHeader getOrderId();
+	OrderHeader getOrder();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getOrderId <em>Order Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getOrder <em>Order</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
 	 * @generated
 	 */
-	void setOrderId(OrderHeader value);
+	void setOrder(OrderHeader value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -116,30 +112,48 @@ public interface OrderStatus extends EntityIdentifiable, EntityInfo {
 	void setOrderItemSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Order Payment Preference Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Order Payment Preference</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Payment Preference Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Payment Preference Id</em>' reference.
-	 * @see #setOrderPaymentPreferenceId(OrderPaymentPreference)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderStatus_OrderPaymentPreferenceId()
+	 * @return the value of the '<em>Order Payment Preference</em>' reference.
+	 * @see #setOrderPaymentPreference(OrderPaymentPreference)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderStatus_OrderPaymentPreference()
 	 * @model keys="orderPaymentPreferenceId"
 	 * @generated
 	 */
-	OrderPaymentPreference getOrderPaymentPreferenceId();
+	OrderPaymentPreference getOrderPaymentPreference();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getOrderPaymentPreferenceId <em>Order Payment Preference Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getOrderPaymentPreference <em>Order Payment Preference</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Payment Preference Id</em>' reference.
-	 * @see #getOrderPaymentPreferenceId()
+	 * @param value the new value of the '<em>Order Payment Preference</em>' reference.
+	 * @see #getOrderPaymentPreference()
 	 * @generated
 	 */
-	void setOrderPaymentPreferenceId(OrderPaymentPreference value);
+	void setOrderPaymentPreference(OrderPaymentPreference value);
+
+	/**
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderStatus_Status()
+	 * @model keys="statusId"
+	 * @generated
+	 */
+	StatusItem getStatus();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getStatus <em>Status</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
+	 * @generated
+	 */
+	void setStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Status Id</b></em>' attribute.
@@ -193,32 +207,6 @@ public interface OrderStatus extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setStatusDatetime(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderStatus_StatusId()
-	 * @model keys="statusId"
-	 * @generated
-	 */
-	StatusItem getStatusId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getStatusId <em>Status Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
-	 * @generated
-	 */
-	void setStatusId(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Status User Login</b></em>' reference.

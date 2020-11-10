@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.GoogleUserImpl#getGoogleUserId <em>Google User Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.GoogleUserImpl#getAccessToken <em>Access Token</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.GoogleUserImpl#getEnvPrefix <em>Env Prefix</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.passport.impl.GoogleUserImpl#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.passport.impl.GoogleUserImpl#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.GoogleUserImpl#getTokenType <em>Token Type</em>}</li>
  * </ul>
  *
@@ -214,8 +214,8 @@ public class GoogleUserImpl extends EntityIdentifiableImpl implements GoogleUser
 	 * @generated
 	 */
 	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(PassportPackage.Literals.GOOGLE_USER__PRODUCT_STORE_ID, true);
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(PassportPackage.Literals.GOOGLE_USER__PRODUCT_STORE, true);
 	}
 
 	/**
@@ -224,8 +224,8 @@ public class GoogleUserImpl extends EntityIdentifiableImpl implements GoogleUser
 	 * @generated
 	 */
 	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(PassportPackage.Literals.GOOGLE_USER__PRODUCT_STORE_ID, newProductStoreId);
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(PassportPackage.Literals.GOOGLE_USER__PRODUCT_STORE, newProductStore);
 	}
 
 	/**

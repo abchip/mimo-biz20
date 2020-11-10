@@ -27,10 +27,10 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getPartyPrefDocTypeTplId <em>Party Pref Doc Type Tpl Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getCustomScreenId <em>Custom Screen Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getInvoiceTypeId <em>Invoice Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getOrderTypeId <em>Order Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getQuoteTypeId <em>Quote Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getInvoiceType <em>Invoice Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getOrderType <em>Order Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getQuoteType <em>Quote Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -92,82 +92,92 @@ public interface PartyPrefDocTypeTpl extends EntityIdentifiable, EntityInfo {
 	void setFromDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Invoice Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Invoice Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Invoice Type Id</em>' reference.
-	 * @see #setInvoiceTypeId(InvoiceType)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyPrefDocTypeTpl_InvoiceTypeId()
+	 * @return the value of the '<em>Invoice Type</em>' reference.
+	 * @see #setInvoiceType(InvoiceType)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyPrefDocTypeTpl_InvoiceType()
 	 * @model keys="invoiceTypeId"
 	 * @generated
 	 */
-	InvoiceType getInvoiceTypeId();
+	InvoiceType getInvoiceType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getInvoiceTypeId <em>Invoice Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getInvoiceType <em>Invoice Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Invoice Type Id</em>' reference.
-	 * @see #getInvoiceTypeId()
+	 * @param value the new value of the '<em>Invoice Type</em>' reference.
+	 * @see #getInvoiceType()
 	 * @generated
 	 */
-	void setInvoiceTypeId(InvoiceType value);
+	void setInvoiceType(InvoiceType value);
 
 	/**
-	 * Returns the value of the '<em><b>Order Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Order Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Type Id</em>' reference.
-	 * @see #setOrderTypeId(OrderType)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyPrefDocTypeTpl_OrderTypeId()
+	 * @return the value of the '<em>Order Type</em>' reference.
+	 * @see #setOrderType(OrderType)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyPrefDocTypeTpl_OrderType()
 	 * @model keys="orderTypeId"
 	 * @generated
 	 */
-	OrderType getOrderTypeId();
+	OrderType getOrderType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getOrderTypeId <em>Order Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getOrderType <em>Order Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Type Id</em>' reference.
-	 * @see #getOrderTypeId()
+	 * @param value the new value of the '<em>Order Type</em>' reference.
+	 * @see #getOrderType()
 	 * @generated
 	 */
-	void setOrderTypeId(OrderType value);
+	void setOrderType(OrderType value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyPrefDocTypeTpl_PartyId()
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyPrefDocTypeTpl_Party()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getPartyId();
+	Party getParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getParty <em>Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Quote Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Quote Type</em>' reference.
+	 * @see #setQuoteType(QuoteType)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyPrefDocTypeTpl_QuoteType()
+	 * @model keys="quoteTypeId"
+	 * @generated
+	 */
+	QuoteType getQuoteType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getQuoteType <em>Quote Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Quote Type</em>' reference.
+	 * @see #getQuoteType()
+	 * @generated
+	 */
+	void setQuoteType(QuoteType value);
 
 	/**
 	 * Returns the value of the '<em><b>Party Pref Doc Type Tpl Id</b></em>' attribute.
@@ -195,32 +205,6 @@ public interface PartyPrefDocTypeTpl extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setPartyPrefDocTypeTplId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Quote Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Quote Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Quote Type Id</em>' reference.
-	 * @see #setQuoteTypeId(QuoteType)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyPrefDocTypeTpl_QuoteTypeId()
-	 * @model keys="quoteTypeId"
-	 * @generated
-	 */
-	QuoteType getQuoteTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl#getQuoteTypeId <em>Quote Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Quote Type Id</em>' reference.
-	 * @see #getQuoteTypeId()
-	 * @generated
-	 */
-	void setQuoteTypeId(QuoteType value);
 
 	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.

@@ -32,11 +32,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplImpl#getProductFeatureId <em>Product Feature Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplImpl#getProductFeature <em>Product Feature</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplImpl#getAmount <em>Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplImpl#getProductFeatureApplTypeId <em>Product Feature Appl Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplImpl#getProductFeatureApplType <em>Product Feature Appl Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplImpl#getRecurringAmount <em>Recurring Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplImpl#getThruDate <em>Thru Date</em>}</li>
@@ -161,6 +161,46 @@ public class ProductFeatureApplImpl extends EntityTypedImpl<ProductFeatureApplTy
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductFeature getProductFeature() {
+		return (ProductFeature)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL__PRODUCT_FEATURE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductFeature(ProductFeature newProductFeature) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL__PRODUCT_FEATURE, newProductFeature);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAmount() {
 		return (BigDecimal)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL__AMOUNT, true);
 	}
@@ -181,6 +221,26 @@ public class ProductFeatureApplImpl extends EntityTypedImpl<ProductFeatureApplTy
 	 * @generated
 	 */
 	@Override
+	public ProductFeatureApplType getProductFeatureApplType() {
+		return (ProductFeatureApplType)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL__PRODUCT_FEATURE_APPL_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductFeatureApplType(ProductFeatureApplType newProductFeatureApplType) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL__PRODUCT_FEATURE_APPL_TYPE, newProductFeatureApplType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL__FROM_DATE, true);
 	}
@@ -193,26 +253,6 @@ public class ProductFeatureApplImpl extends EntityTypedImpl<ProductFeatureApplTy
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL__PRODUCT_ID, newProductId);
 	}
 
 	/**
@@ -311,46 +351,6 @@ public class ProductFeatureApplImpl extends EntityTypedImpl<ProductFeatureApplTy
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductFeatureApplType getProductFeatureApplTypeId() {
-		return (ProductFeatureApplType)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL__PRODUCT_FEATURE_APPL_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductFeatureApplTypeId(ProductFeatureApplType newProductFeatureApplTypeId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL__PRODUCT_FEATURE_APPL_TYPE_ID, newProductFeatureApplTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductFeature getProductFeatureId() {
-		return (ProductFeature)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL__PRODUCT_FEATURE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductFeatureId(ProductFeature newProductFeatureId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL__PRODUCT_FEATURE_ID, newProductFeatureId);
 	}
 
 } //ProductFeatureApplImpl

@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocTypeAttr#getWorkEffortAssocTypeId <em>Work Effort Assoc Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocTypeAttr#getWorkEffortAssocType <em>Work Effort Assoc Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocTypeAttr#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocTypeAttr#getDescription <em>Description</em>}</li>
  * </ul>
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface WorkEffortAssocTypeAttr extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Work Effort Assoc Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Work Effort Assoc Type</em>' reference.
+	 * @see #setWorkEffortAssocType(WorkEffortAssocType)
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortAssocTypeAttr_WorkEffortAssocType()
+	 * @model keys="workEffortAssocTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	WorkEffortAssocType getWorkEffortAssocType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocTypeAttr#getWorkEffortAssocType <em>Work Effort Assoc Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Work Effort Assoc Type</em>' reference.
+	 * @see #getWorkEffortAssocType()
+	 * @generated
+	 */
+	void setWorkEffortAssocType(WorkEffortAssocType value);
+
 	/**
 	 * Returns the value of the '<em><b>Attr Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,32 +105,5 @@ public interface WorkEffortAssocTypeAttr extends EntityIdentifiable, EntityInfo 
 	 * @generated
 	 */
 	void setDescription(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Work Effort Assoc Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Work Effort Assoc Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Work Effort Assoc Type Id</em>' reference.
-	 * @see #setWorkEffortAssocTypeId(WorkEffortAssocType)
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortAssocTypeAttr_WorkEffortAssocTypeId()
-	 * @model keys="workEffortAssocTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	WorkEffortAssocType getWorkEffortAssocTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocTypeAttr#getWorkEffortAssocTypeId <em>Work Effort Assoc Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Work Effort Assoc Type Id</em>' reference.
-	 * @see #getWorkEffortAssocTypeId()
-	 * @generated
-	 */
-	void setWorkEffortAssocTypeId(WorkEffortAssocType value);
 
 } // WorkEffortAssocTypeAttr

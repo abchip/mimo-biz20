@@ -21,8 +21,8 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.PartyRate#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.PartyRate#getRateTypeId <em>Rate Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.PartyRate#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.PartyRate#getRateType <em>Rate Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.PartyRate#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.PartyRate#isDefaultRate <em>Default Rate</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.PartyRate#getPercentageUsed <em>Percentage Used</em>}</li>
@@ -34,6 +34,52 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface PartyRate extends EntityTyped<RateType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getPartyRate_Party()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.rate.PartyRate#getParty <em>Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
+	 * @generated
+	 */
+	void setParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Rate Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Rate Type</em>' reference.
+	 * @see #setRateType(RateType)
+	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getPartyRate_RateType()
+	 * @model keys="rateTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	RateType getRateType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.rate.PartyRate#getRateType <em>Rate Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Rate Type</em>' reference.
+	 * @see #getRateType()
+	 * @generated
+	 */
+	void setRateType(RateType value);
+
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -88,33 +134,6 @@ public interface PartyRate extends EntityTyped<RateType>, EntityInfo {
 	void setDefaultRate(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getPartyRate_PartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.rate.PartyRate#getPartyId <em>Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
-	 * @generated
-	 */
-	void setPartyId(Party value);
-
-	/**
 	 * Returns the value of the '<em><b>Percentage Used</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -165,32 +184,5 @@ public interface PartyRate extends EntityTyped<RateType>, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Rate Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Rate Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Rate Type Id</em>' reference.
-	 * @see #setRateTypeId(RateType)
-	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getPartyRate_RateTypeId()
-	 * @model keys="rateTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	RateType getRateTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.rate.PartyRate#getRateTypeId <em>Rate Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Rate Type Id</em>' reference.
-	 * @see #getRateTypeId()
-	 * @generated
-	 */
-	void setRateTypeId(RateType value);
 
 } // PartyRate

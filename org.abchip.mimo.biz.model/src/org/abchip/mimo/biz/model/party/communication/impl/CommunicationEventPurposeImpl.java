@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPurposeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPurposeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPurposeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPurposeImpl#getCommunicationEventId <em>Communication Event Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPurposeImpl#getCommunicationEventPrpTypId <em>Communication Event Prp Typ Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPurposeImpl#getCommunicationEvent <em>Communication Event</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPurposeImpl#getCommunicationEventPrpTyp <em>Communication Event Prp Typ</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPurposeImpl#getDescription <em>Description</em>}</li>
  * </ul>
  *
@@ -152,6 +152,46 @@ public class CommunicationEventPurposeImpl extends EntityTypedImpl<Communication
 	 * @generated
 	 */
 	@Override
+	public CommunicationEvent getCommunicationEvent() {
+		return (CommunicationEvent)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PURPOSE__COMMUNICATION_EVENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCommunicationEvent(CommunicationEvent newCommunicationEvent) {
+		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PURPOSE__COMMUNICATION_EVENT, newCommunicationEvent);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CommunicationEventPrpTyp getCommunicationEventPrpTyp() {
+		return (CommunicationEventPrpTyp)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PURPOSE__COMMUNICATION_EVENT_PRP_TYP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCommunicationEventPrpTyp(CommunicationEventPrpTyp newCommunicationEventPrpTyp) {
+		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PURPOSE__COMMUNICATION_EVENT_PRP_TYP, newCommunicationEventPrpTyp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PURPOSE__DESCRIPTION, true);
 	}
@@ -202,46 +242,6 @@ public class CommunicationEventPurposeImpl extends EntityTypedImpl<Communication
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CommunicationEvent getCommunicationEventId() {
-		return (CommunicationEvent)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PURPOSE__COMMUNICATION_EVENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCommunicationEventId(CommunicationEvent newCommunicationEventId) {
-		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PURPOSE__COMMUNICATION_EVENT_ID, newCommunicationEventId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CommunicationEventPrpTyp getCommunicationEventPrpTypId() {
-		return (CommunicationEventPrpTyp)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PURPOSE__COMMUNICATION_EVENT_PRP_TYP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCommunicationEventPrpTypId(CommunicationEventPrpTyp newCommunicationEventPrpTypId) {
-		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PURPOSE__COMMUNICATION_EVENT_PRP_TYP_ID, newCommunicationEventPrpTypId);
 	}
 
 } //CommunicationEventPurposeImpl

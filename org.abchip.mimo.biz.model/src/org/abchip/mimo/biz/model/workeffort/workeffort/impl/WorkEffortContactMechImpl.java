@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContactMechImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContactMechImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContactMechImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContactMechImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContactMechImpl#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContactMechImpl#getWorkEffort <em>Work Effort</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContactMechImpl#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContactMechImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContactMechImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContactMechImpl#getThruDate <em>Thru Date</em>}</li>
@@ -155,6 +155,46 @@ public class WorkEffortContactMechImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_CONTACT_MECH__WORK_EFFORT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_CONTACT_MECH__WORK_EFFORT, newWorkEffort);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(WorkeffortPackage.Literals.WORK_EFFORT_CONTACT_MECH__CONTACT_MECH, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_CONTACT_MECH__CONTACT_MECH, newContactMech);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getComments() {
 		return (String)eGet(WorkeffortPackage.Literals.WORK_EFFORT_CONTACT_MECH__COMMENTS, true);
 	}
@@ -167,26 +207,6 @@ public class WorkEffortContactMechImpl extends EntityIdentifiableImpl implements
 	@Override
 	public void setComments(String newComments) {
 		eSet(WorkeffortPackage.Literals.WORK_EFFORT_CONTACT_MECH__COMMENTS, newComments);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(WorkeffortPackage.Literals.WORK_EFFORT_CONTACT_MECH__CONTACT_MECH_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_CONTACT_MECH__CONTACT_MECH_ID, newContactMechId);
 	}
 
 	/**
@@ -265,26 +285,6 @@ public class WorkEffortContactMechImpl extends EntityIdentifiableImpl implements
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_CONTACT_MECH__WORK_EFFORT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_CONTACT_MECH__WORK_EFFORT_ID, newWorkEffortId);
 	}
 
 } //WorkEffortContactMechImpl

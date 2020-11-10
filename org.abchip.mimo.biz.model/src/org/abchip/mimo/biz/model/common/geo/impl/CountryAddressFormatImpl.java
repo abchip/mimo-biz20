@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.CountryAddressFormatImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.CountryAddressFormatImpl#getGeoId <em>Geo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.CountryAddressFormatImpl#getAddressFormat <em>Address Format</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.CountryAddressFormatImpl#getGeoAssocTypeId <em>Geo Assoc Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.CountryAddressFormatImpl#getGeoAssocType <em>Geo Assoc Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.CountryAddressFormatImpl#getHasPostalCodeExt <em>Has Postal Code Ext</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.CountryAddressFormatImpl#getPostalCodeRegex <em>Postal Code Regex</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.CountryAddressFormatImpl#getRequirePostalCode <em>Require Postal Code</em>}</li>
@@ -176,6 +176,26 @@ public class CountryAddressFormatImpl extends EntityTypedImpl<GeoAssocType> impl
 	 * @generated
 	 */
 	@Override
+	public GeoAssocType getGeoAssocType() {
+		return (GeoAssocType)eGet(GeoPackage.Literals.COUNTRY_ADDRESS_FORMAT__GEO_ASSOC_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGeoAssocType(GeoAssocType newGeoAssocType) {
+		eSet(GeoPackage.Literals.COUNTRY_ADDRESS_FORMAT__GEO_ASSOC_TYPE, newGeoAssocType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getPostalCodeRegex() {
 		return (String)eGet(GeoPackage.Literals.COUNTRY_ADDRESS_FORMAT__POSTAL_CODE_REGEX, true);
 	}
@@ -286,26 +306,6 @@ public class CountryAddressFormatImpl extends EntityTypedImpl<GeoAssocType> impl
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GeoAssocType getGeoAssocTypeId() {
-		return (GeoAssocType)eGet(GeoPackage.Literals.COUNTRY_ADDRESS_FORMAT__GEO_ASSOC_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGeoAssocTypeId(GeoAssocType newGeoAssocTypeId) {
-		eSet(GeoPackage.Literals.COUNTRY_ADDRESS_FORMAT__GEO_ASSOC_TYPE_ID, newGeoAssocTypeId);
 	}
 
 	/**

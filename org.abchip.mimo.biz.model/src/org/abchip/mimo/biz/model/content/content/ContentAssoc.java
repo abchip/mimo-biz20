@@ -22,14 +22,14 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getContentId <em>Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getContent <em>Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getContentIdTo <em>Content Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getContentAssocTypeId <em>Content Assoc Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getContentAssocType <em>Content Assoc Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getContentAssocPredicateId <em>Content Assoc Predicate Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getContentAssocPredicate <em>Content Assoc Predicate</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getCreatedDate <em>Created Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getDataSourceId <em>Data Source Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getDataSource <em>Data Source</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getLastModifiedDate <em>Last Modified Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getLeftCoordinate <em>Left Coordinate</em>}</li>
@@ -45,84 +45,27 @@ import org.abchip.mimo.entity.EntityTyped;
  */
 public interface ContentAssoc extends EntityTyped<ContentAssocType>, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Content Assoc Predicate Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Assoc Predicate Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Assoc Predicate Id</em>' reference.
-	 * @see #setContentAssocPredicateId(ContentAssocPredicate)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentAssoc_ContentAssocPredicateId()
-	 * @model keys="contentAssocPredicateId"
-	 * @generated
-	 */
-	ContentAssocPredicate getContentAssocPredicateId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getContentAssocPredicateId <em>Content Assoc Predicate Id</em>}' reference.
+	 * Returns the value of the '<em><b>Content</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Assoc Predicate Id</em>' reference.
-	 * @see #getContentAssocPredicateId()
-	 * @generated
-	 */
-	void setContentAssocPredicateId(ContentAssocPredicate value);
-
-	/**
-	 * Returns the value of the '<em><b>Content Assoc Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Assoc Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Assoc Type Id</em>' reference.
-	 * @see #setContentAssocTypeId(ContentAssocType)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentAssoc_ContentAssocTypeId()
-	 * @model keys="contentAssocTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ContentAssocType getContentAssocTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getContentAssocTypeId <em>Content Assoc Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Assoc Type Id</em>' reference.
-	 * @see #getContentAssocTypeId()
-	 * @generated
-	 */
-	void setContentAssocTypeId(ContentAssocType value);
-
-	/**
-	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Id</em>' reference.
-	 * @see #setContentId(Content)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentAssoc_ContentId()
+	 * @return the value of the '<em>Content</em>' reference.
+	 * @see #setContent(Content)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentAssoc_Content()
 	 * @model keys="contentId" required="true"
 	 *        annotation="mimo-ent-slot key='true' help='\"parent\" content'"
 	 * @generated
 	 */
-	Content getContentId();
+	Content getContent();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getContentId <em>Content Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getContent <em>Content</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Id</em>' reference.
-	 * @see #getContentId()
+	 * @param value the new value of the '<em>Content</em>' reference.
+	 * @see #getContent()
 	 * @generated
 	 */
-	void setContentId(Content value);
+	void setContent(Content value);
 
 	/**
 	 * Returns the value of the '<em><b>Content Id To</b></em>' reference.
@@ -150,6 +93,29 @@ public interface ContentAssoc extends EntityTyped<ContentAssocType>, EntityInfo 
 	 * @generated
 	 */
 	void setContentIdTo(Content value);
+
+	/**
+	 * Returns the value of the '<em><b>Content Assoc Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Content Assoc Type</em>' reference.
+	 * @see #setContentAssocType(ContentAssocType)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentAssoc_ContentAssocType()
+	 * @model keys="contentAssocTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ContentAssocType getContentAssocType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getContentAssocType <em>Content Assoc Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Content Assoc Type</em>' reference.
+	 * @see #getContentAssocType()
+	 * @generated
+	 */
+	void setContentAssocType(ContentAssocType value);
 
 	/**
 	 * Returns the value of the '<em><b>Created By User Login</b></em>' reference.
@@ -204,30 +170,26 @@ public interface ContentAssoc extends EntityTyped<ContentAssocType>, EntityInfo 
 	void setCreatedDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Data Source Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Data Source</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Data Source Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Data Source Id</em>' reference.
-	 * @see #setDataSourceId(DataSource)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentAssoc_DataSourceId()
+	 * @return the value of the '<em>Data Source</em>' reference.
+	 * @see #setDataSource(DataSource)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentAssoc_DataSource()
 	 * @model keys="dataSourceId"
 	 * @generated
 	 */
-	DataSource getDataSourceId();
+	DataSource getDataSource();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getDataSourceId <em>Data Source Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getDataSource <em>Data Source</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Data Source Id</em>' reference.
-	 * @see #getDataSourceId()
+	 * @param value the new value of the '<em>Data Source</em>' reference.
+	 * @see #getDataSource()
 	 * @generated
 	 */
-	void setDataSourceId(DataSource value);
+	void setDataSource(DataSource value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -255,6 +217,28 @@ public interface ContentAssoc extends EntityTyped<ContentAssocType>, EntityInfo 
 	 * @generated
 	 */
 	void setFromDate(Date value);
+
+	/**
+	 * Returns the value of the '<em><b>Content Assoc Predicate</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Content Assoc Predicate</em>' reference.
+	 * @see #setContentAssocPredicate(ContentAssocPredicate)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentAssoc_ContentAssocPredicate()
+	 * @model keys="contentAssocPredicateId"
+	 * @generated
+	 */
+	ContentAssocPredicate getContentAssocPredicate();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentAssoc#getContentAssocPredicate <em>Content Assoc Predicate</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Content Assoc Predicate</em>' reference.
+	 * @see #getContentAssocPredicate()
+	 * @generated
+	 */
+	void setContentAssocPredicate(ContentAssocPredicate value);
 
 	/**
 	 * Returns the value of the '<em><b>Last Modified By User Login</b></em>' reference.

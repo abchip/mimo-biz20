@@ -21,8 +21,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod#getDepreciationCustomMethodId <em>Depreciation Custom Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod#getFixedAssetId <em>Fixed Asset Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod#getDepreciationCustomMethod <em>Depreciation Custom Method</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod#getFixedAsset <em>Fixed Asset</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -33,31 +33,50 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface FixedAssetDepMethod extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Depreciation Custom Method Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Depreciation Custom Method</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Depreciation Custom Method Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Depreciation Custom Method Id</em>' reference.
-	 * @see #setDepreciationCustomMethodId(CustomMethod)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetDepMethod_DepreciationCustomMethodId()
+	 * @return the value of the '<em>Depreciation Custom Method</em>' reference.
+	 * @see #setDepreciationCustomMethod(CustomMethod)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetDepMethod_DepreciationCustomMethod()
 	 * @model keys="customMethodId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	CustomMethod getDepreciationCustomMethodId();
+	CustomMethod getDepreciationCustomMethod();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod#getDepreciationCustomMethodId <em>Depreciation Custom Method Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod#getDepreciationCustomMethod <em>Depreciation Custom Method</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Depreciation Custom Method Id</em>' reference.
-	 * @see #getDepreciationCustomMethodId()
+	 * @param value the new value of the '<em>Depreciation Custom Method</em>' reference.
+	 * @see #getDepreciationCustomMethod()
 	 * @generated
 	 */
-	void setDepreciationCustomMethodId(CustomMethod value);
+	void setDepreciationCustomMethod(CustomMethod value);
+
+	/**
+	 * Returns the value of the '<em><b>Fixed Asset</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fixed Asset</em>' reference.
+	 * @see #setFixedAsset(FixedAsset)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetDepMethod_FixedAsset()
+	 * @model keys="fixedAssetId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	FixedAsset getFixedAsset();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod#getFixedAsset <em>Fixed Asset</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Fixed Asset</em>' reference.
+	 * @see #getFixedAsset()
+	 * @generated
+	 */
+	void setFixedAsset(FixedAsset value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -110,32 +129,5 @@ public interface FixedAssetDepMethod extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Fixed Asset Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fixed Asset Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fixed Asset Id</em>' reference.
-	 * @see #setFixedAssetId(FixedAsset)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetDepMethod_FixedAssetId()
-	 * @model keys="fixedAssetId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	FixedAsset getFixedAssetId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod#getFixedAssetId <em>Fixed Asset Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fixed Asset Id</em>' reference.
-	 * @see #getFixedAssetId()
-	 * @generated
-	 */
-	void setFixedAssetId(FixedAsset value);
 
 } // FixedAssetDepMethod

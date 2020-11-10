@@ -692,7 +692,7 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getWebPage_ContentId() {
+	public EReference getWebPage_Content() {
 		return (EReference)webPageEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -712,7 +712,7 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getWebPage_WebSiteId() {
+	public EReference getWebPage_WebSite() {
 		return (EReference)webPageEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -842,7 +842,7 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getWebSite_ProductStoreId() {
+	public EReference getWebSite_ProductStore() {
 		return (EReference)webSiteEClass.getEStructuralFeatures().get(11);
 	}
 
@@ -882,7 +882,7 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getWebSite_VisualThemeSetId() {
+	public EReference getWebSite_VisualThemeSet() {
 		return (EReference)webSiteEClass.getEStructuralFeatures().get(15);
 	}
 
@@ -957,9 +957,9 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		// Create classes and their features
 		webPageEClass = createEClass(WEB_PAGE);
 		createEAttribute(webPageEClass, WEB_PAGE__WEB_PAGE_ID);
-		createEReference(webPageEClass, WEB_PAGE__CONTENT_ID);
+		createEReference(webPageEClass, WEB_PAGE__CONTENT);
 		createEAttribute(webPageEClass, WEB_PAGE__PAGE_NAME);
-		createEReference(webPageEClass, WEB_PAGE__WEB_SITE_ID);
+		createEReference(webPageEClass, WEB_PAGE__WEB_SITE);
 
 		webSiteEClass = createEClass(WEB_SITE);
 		createEAttribute(webSiteEClass, WEB_SITE__WEB_SITE_ID);
@@ -973,11 +973,11 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		createEAttribute(webSiteEClass, WEB_SITE__HTTPS_HOST);
 		createEAttribute(webSiteEClass, WEB_SITE__HTTPS_PORT);
 		createEAttribute(webSiteEClass, WEB_SITE__IS_DEFAULT);
-		createEReference(webSiteEClass, WEB_SITE__PRODUCT_STORE_ID);
+		createEReference(webSiteEClass, WEB_SITE__PRODUCT_STORE);
 		createEAttribute(webSiteEClass, WEB_SITE__SECURE_CONTENT_PREFIX);
 		createEAttribute(webSiteEClass, WEB_SITE__SITE_NAME);
 		createEAttribute(webSiteEClass, WEB_SITE__STANDARD_CONTENT_PREFIX);
-		createEReference(webSiteEClass, WEB_SITE__VISUAL_THEME_SET_ID);
+		createEReference(webSiteEClass, WEB_SITE__VISUAL_THEME_SET);
 		createEReference(webSiteEClass, WEB_SITE__WEB_ANALYTICS_CONFIGS);
 		createEReference(webSiteEClass, WEB_SITE__WEB_SITE_CONTACT_LISTS);
 		createEReference(webSiteEClass, WEB_SITE__WEB_SITE_PATH_ALIASS);
@@ -1028,11 +1028,11 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		// Initialize classes and features; add operations and parameters
 		initEClass(webPageEClass, WebPage.class, "WebPage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getWebPage_WebPageId(), ecorePackage.getEString(), "webPageId", null, 1, 1, WebPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getWebPage_ContentId(), theContentPackage.getContent(), null, "contentId", null, 0, 1, WebPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWebPage_ContentId().getEKeys().add(theContentPackage.getContent_ContentId());
+		initEReference(getWebPage_Content(), theContentPackage.getContent(), null, "content", null, 0, 1, WebPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getWebPage_Content().getEKeys().add(theContentPackage.getContent_ContentId());
 		initEAttribute(getWebPage_PageName(), ecorePackage.getEString(), "pageName", null, 0, 1, WebPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getWebPage_WebSiteId(), this.getWebSite(), null, "webSiteId", null, 0, 1, WebPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWebPage_WebSiteId().getEKeys().add(this.getWebSite_WebSiteId());
+		initEReference(getWebPage_WebSite(), this.getWebSite(), null, "webSite", null, 0, 1, WebPage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getWebPage_WebSite().getEKeys().add(this.getWebSite_WebSiteId());
 
 		initEClass(webSiteEClass, WebSite.class, "WebSite", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getWebSite_WebSiteId(), ecorePackage.getEString(), "webSiteId", null, 1, 1, WebSite.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1046,13 +1046,13 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		initEAttribute(getWebSite_HttpsHost(), ecorePackage.getEString(), "httpsHost", null, 0, 1, WebSite.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getWebSite_HttpsPort(), ecorePackage.getEString(), "httpsPort", null, 0, 1, WebSite.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getWebSite_IsDefault(), ecorePackage.getEBoolean(), "isDefault", null, 1, 1, WebSite.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getWebSite_ProductStoreId(), theStorePackage.getProductStore(), null, "productStoreId", null, 0, 1, WebSite.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWebSite_ProductStoreId().getEKeys().add(theStorePackage.getProductStore_ProductStoreId());
+		initEReference(getWebSite_ProductStore(), theStorePackage.getProductStore(), null, "productStore", null, 0, 1, WebSite.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getWebSite_ProductStore().getEKeys().add(theStorePackage.getProductStore_ProductStoreId());
 		initEAttribute(getWebSite_SecureContentPrefix(), ecorePackage.getEString(), "secureContentPrefix", null, 0, 1, WebSite.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getWebSite_SiteName(), ecorePackage.getEString(), "siteName", null, 0, 1, WebSite.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getWebSite_StandardContentPrefix(), ecorePackage.getEString(), "standardContentPrefix", null, 0, 1, WebSite.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getWebSite_VisualThemeSetId(), theThemePackage.getVisualThemeSet(), null, "visualThemeSetId", null, 0, 1, WebSite.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWebSite_VisualThemeSetId().getEKeys().add(theThemePackage.getVisualThemeSet_VisualThemeSetId());
+		initEReference(getWebSite_VisualThemeSet(), theThemePackage.getVisualThemeSet(), null, "visualThemeSet", null, 0, 1, WebSite.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getWebSite_VisualThemeSet().getEKeys().add(theThemePackage.getVisualThemeSet_VisualThemeSetId());
 		initEReference(getWebSite_WebAnalyticsConfigs(), theWebsitePackage_1.getWebAnalyticsConfig(), null, "webAnalyticsConfigs", null, 0, -1, WebSite.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getWebSite_WebSiteContactLists(), theContactPackage.getWebSiteContactList(), null, "webSiteContactLists", null, 0, -1, WebSite.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getWebSite_WebSitePathAliass(), theWebsitePackage_1.getWebSitePathAlias(), null, "webSitePathAliass", null, 0, -1, WebSite.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);

@@ -30,13 +30,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortReviewImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortReviewImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortReviewImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortReviewImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortReviewImpl#getUserLoginId <em>User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortReviewImpl#getWorkEffort <em>Work Effort</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortReviewImpl#getUserLogin <em>User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortReviewImpl#getReviewDate <em>Review Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortReviewImpl#isPostedAnonymous <em>Posted Anonymous</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortReviewImpl#getRating <em>Rating</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortReviewImpl#getReviewText <em>Review Text</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortReviewImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortReviewImpl#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @generated
@@ -158,6 +158,46 @@ public class WorkEffortReviewImpl extends EntityIdentifiableImpl implements Work
 	 * @generated
 	 */
 	@Override
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_REVIEW__WORK_EFFORT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_REVIEW__WORK_EFFORT, newWorkEffort);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UserLogin getUserLogin() {
+		return (UserLogin)eGet(WorkeffortPackage.Literals.WORK_EFFORT_REVIEW__USER_LOGIN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUserLogin(UserLogin newUserLogin) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_REVIEW__USER_LOGIN, newUserLogin);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public double getRating() {
 		return (Double)eGet(WorkeffortPackage.Literals.WORK_EFFORT_REVIEW__RATING, true);
 	}
@@ -238,8 +278,8 @@ public class WorkEffortReviewImpl extends EntityIdentifiableImpl implements Work
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT_REVIEW__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT_REVIEW__STATUS, true);
 	}
 
 	/**
@@ -248,8 +288,8 @@ public class WorkEffortReviewImpl extends EntityIdentifiableImpl implements Work
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_REVIEW__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_REVIEW__STATUS, newStatus);
 	}
 
 	/**
@@ -288,46 +328,6 @@ public class WorkEffortReviewImpl extends EntityIdentifiableImpl implements Work
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public UserLogin getUserLoginId() {
-		return (UserLogin)eGet(WorkeffortPackage.Literals.WORK_EFFORT_REVIEW__USER_LOGIN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setUserLoginId(UserLogin newUserLoginId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_REVIEW__USER_LOGIN_ID, newUserLoginId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_REVIEW__WORK_EFFORT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_REVIEW__WORK_EFFORT_ID, newWorkEffortId);
 	}
 
 } //WorkEffortReviewImpl

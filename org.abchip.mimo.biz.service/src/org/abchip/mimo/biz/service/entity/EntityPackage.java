@@ -82,24 +82,6 @@ public interface EntityPackage extends EPackage {
 	int CONVERT_SEEDS = 0;
 
 	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONVERT_SEEDS__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONVERT_SEEDS__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -109,13 +91,13 @@ public interface EntityPackage extends EPackage {
 	int CONVERT_SEEDS__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONVERT_SEEDS__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
+	int CONVERT_SEEDS__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Readers</b></em>' attribute.
@@ -147,24 +129,6 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT = 1;
 
 	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_TENANT__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_TENANT__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -174,13 +138,13 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_TENANT__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
+	int CREATE_TENANT__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
@@ -220,24 +184,6 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_DEMO = 2;
 
 	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_TENANT_DEMO__LOCALE = CREATE_TENANT__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_TENANT_DEMO__TENANT = CREATE_TENANT__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -247,13 +193,13 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_DEMO__CONTEXT = CREATE_TENANT__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_TENANT_DEMO__USER_PROFILE = CREATE_TENANT__USER_PROFILE;
+	int CREATE_TENANT_DEMO__TENANT = CREATE_TENANT__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
@@ -293,24 +239,6 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_MASTER = 3;
 
 	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_TENANT_MASTER__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_TENANT_MASTER__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -320,13 +248,13 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_MASTER__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_TENANT_MASTER__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
+	int CREATE_TENANT_MASTER__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The number of structural features of the '<em>Create Tenant Master</em>' class.
@@ -348,24 +276,6 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_PARTY = 4;
 
 	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_TENANT_PARTY__LOCALE = CREATE_TENANT__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_TENANT_PARTY__TENANT = CREATE_TENANT__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -375,13 +285,13 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_PARTY__CONTEXT = CREATE_TENANT__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_TENANT_PARTY__USER_PROFILE = CREATE_TENANT__USER_PROFILE;
+	int CREATE_TENANT_PARTY__TENANT = CREATE_TENANT__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
@@ -448,24 +358,6 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_TEST = 5;
 
 	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_TENANT_TEST__LOCALE = CREATE_TENANT__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_TENANT_TEST__TENANT = CREATE_TENANT__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -475,13 +367,13 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_TEST__CONTEXT = CREATE_TENANT__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_TENANT_TEST__USER_PROFILE = CREATE_TENANT__USER_PROFILE;
+	int CREATE_TENANT_TEST__TENANT = CREATE_TENANT__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
@@ -511,24 +403,6 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_TEST_FEATURE_COUNT = CREATE_TENANT_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXPORT_ENTITIES__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXPORT_ENTITIES__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -538,13 +412,13 @@ public interface EntityPackage extends EPackage {
 	int EXPORT_ENTITIES__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EXPORT_ENTITIES__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
+	int EXPORT_ENTITIES__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Path To</b></em>' attribute.

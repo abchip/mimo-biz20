@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.WorkOrderItemFulfillmentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.WorkOrderItemFulfillmentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.WorkOrderItemFulfillmentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.WorkOrderItemFulfillmentImpl#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.WorkOrderItemFulfillmentImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.WorkOrderItemFulfillmentImpl#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.WorkOrderItemFulfillmentImpl#getWorkEffort <em>Work Effort</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.WorkOrderItemFulfillmentImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.WorkOrderItemFulfillmentImpl#getShipGroupSeqId <em>Ship Group Seq Id</em>}</li>
  * </ul>
@@ -154,8 +154,8 @@ public class WorkOrderItemFulfillmentImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.WORK_ORDER_ITEM_FULFILLMENT__ORDER_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.WORK_ORDER_ITEM_FULFILLMENT__ORDER, true);
 	}
 
 	/**
@@ -164,8 +164,28 @@ public class WorkOrderItemFulfillmentImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.WORK_ORDER_ITEM_FULFILLMENT__ORDER_ID, newOrderId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.WORK_ORDER_ITEM_FULFILLMENT__ORDER, newOrder);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(OrderPackage.Literals.WORK_ORDER_ITEM_FULFILLMENT__WORK_EFFORT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(OrderPackage.Literals.WORK_ORDER_ITEM_FULFILLMENT__WORK_EFFORT, newWorkEffort);
 	}
 
 	/**
@@ -244,26 +264,6 @@ public class WorkOrderItemFulfillmentImpl extends EntityIdentifiableImpl impleme
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(OrderPackage.Literals.WORK_ORDER_ITEM_FULFILLMENT__WORK_EFFORT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(OrderPackage.Literals.WORK_ORDER_ITEM_FULFILLMENT__WORK_EFFORT_ID, newWorkEffortId);
 	}
 
 } //WorkOrderItemFulfillmentImpl

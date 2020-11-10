@@ -21,7 +21,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2Google#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2Google#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2Google#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2Google#getClientId <em>Client Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2Google#getClientSecret <em>Client Secret</em>}</li>
@@ -37,31 +37,27 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface OAuth2Google extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Product Store Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Store</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store Id</em>' reference.
-	 * @see #setProductStoreId(ProductStore)
-	 * @see org.abchip.mimo.biz.model.passport.PassportPackage#getOAuth2Google_ProductStoreId()
+	 * @return the value of the '<em>Product Store</em>' reference.
+	 * @see #setProductStore(ProductStore)
+	 * @see org.abchip.mimo.biz.model.passport.PassportPackage#getOAuth2Google_ProductStore()
 	 * @model keys="productStoreId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ProductStore getProductStoreId();
+	ProductStore getProductStore();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.passport.OAuth2Google#getProductStoreId <em>Product Store Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.passport.OAuth2Google#getProductStore <em>Product Store</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store Id</em>' reference.
-	 * @see #getProductStoreId()
+	 * @param value the new value of the '<em>Product Store</em>' reference.
+	 * @see #getProductStore()
 	 * @generated
 	 */
-	void setProductStoreId(ProductStore value);
+	void setProductStore(ProductStore value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.

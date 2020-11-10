@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetIdentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetIdentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetIdentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetIdentImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetIdentImpl#getFixedAssetIdentTypeId <em>Fixed Asset Ident Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetIdentImpl#getFixedAsset <em>Fixed Asset</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetIdentImpl#getFixedAssetIdentType <em>Fixed Asset Ident Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetIdentImpl#getIdValue <em>Id Value</em>}</li>
  * </ul>
  *
@@ -152,6 +152,46 @@ public class FixedAssetIdentImpl extends EntityTypedImpl<FixedAssetIdentType> im
 	 * @generated
 	 */
 	@Override
+	public FixedAsset getFixedAsset() {
+		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET_IDENT__FIXED_ASSET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFixedAsset(FixedAsset newFixedAsset) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_IDENT__FIXED_ASSET, newFixedAsset);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FixedAssetIdentType getFixedAssetIdentType() {
+		return (FixedAssetIdentType)eGet(FixedassetPackage.Literals.FIXED_ASSET_IDENT__FIXED_ASSET_IDENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFixedAssetIdentType(FixedAssetIdentType newFixedAssetIdentType) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_IDENT__FIXED_ASSET_IDENT_TYPE, newFixedAssetIdentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getIdValue() {
 		return (String)eGet(FixedassetPackage.Literals.FIXED_ASSET_IDENT__ID_VALUE, true);
 	}
@@ -202,46 +242,6 @@ public class FixedAssetIdentImpl extends EntityTypedImpl<FixedAssetIdentType> im
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FixedAsset getFixedAssetId() {
-		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET_IDENT__FIXED_ASSET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFixedAssetId(FixedAsset newFixedAssetId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_IDENT__FIXED_ASSET_ID, newFixedAssetId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FixedAssetIdentType getFixedAssetIdentTypeId() {
-		return (FixedAssetIdentType)eGet(FixedassetPackage.Literals.FIXED_ASSET_IDENT__FIXED_ASSET_IDENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFixedAssetIdentTypeId(FixedAssetIdentType newFixedAssetIdentTypeId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_IDENT__FIXED_ASSET_IDENT_TYPE_ID, newFixedAssetIdentTypeId);
 	}
 
 } //FixedAssetIdentImpl

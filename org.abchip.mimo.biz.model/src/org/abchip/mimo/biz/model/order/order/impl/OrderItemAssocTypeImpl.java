@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocTypeImpl#getOrderItemAssocTypeId <em>Order Item Assoc Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,6 +200,26 @@ public class OrderItemAssocTypeImpl extends EntityTypeImpl<OrderItemAssoc> imple
 	 * @generated
 	 */
 	@Override
+	public OrderItemAssocType getParentType() {
+		return (OrderItemAssocType)eGet(OrderPackage.Literals.ORDER_ITEM_ASSOC_TYPE__PARENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParentType(OrderItemAssocType newParentType) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_ASSOC_TYPE__PARENT_TYPE, newParentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getOrderItemAssocTypeId() {
 		return (String)eGet(OrderPackage.Literals.ORDER_ITEM_ASSOC_TYPE__ORDER_ITEM_ASSOC_TYPE_ID, true);
 	}
@@ -212,26 +232,6 @@ public class OrderItemAssocTypeImpl extends EntityTypeImpl<OrderItemAssoc> imple
 	@Override
 	public void setOrderItemAssocTypeId(String newOrderItemAssocTypeId) {
 		eSet(OrderPackage.Literals.ORDER_ITEM_ASSOC_TYPE__ORDER_ITEM_ASSOC_TYPE_ID, newOrderItemAssocTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderItemAssocType getParentTypeId() {
-		return (OrderItemAssocType)eGet(OrderPackage.Literals.ORDER_ITEM_ASSOC_TYPE__PARENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentTypeId(OrderItemAssocType newParentTypeId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_ASSOC_TYPE__PARENT_TYPE_ID, newParentTypeId);
 	}
 
 	/**

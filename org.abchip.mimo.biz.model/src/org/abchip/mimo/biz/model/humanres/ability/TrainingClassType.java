@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.TrainingClassType#getTrainingClassTypeId <em>Training Class Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.TrainingClassType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.TrainingClassType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.TrainingClassType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.TrainingClassType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getTrainingClassType()
@@ -83,30 +83,26 @@ public interface TrainingClassType extends EntityType<PersonTraining>, EntityInf
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(TrainingClassType)
-	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getTrainingClassType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(TrainingClassType)
+	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getTrainingClassType_ParentType()
 	 * @model keys="trainingClassTypeId"
 	 * @generated
 	 */
-	TrainingClassType getParentTypeId();
+	TrainingClassType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.TrainingClassType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.TrainingClassType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(TrainingClassType value);
+	void setParentType(TrainingClassType value);
 
 	/**
 	 * Returns the value of the '<em><b>Training Class Type Id</b></em>' attribute.

@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupRoleImpl#getSegmentGroupId <em>Segment Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupRoleImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupRoleImpl#getSegmentGroup <em>Segment Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupRoleImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupRoleImpl#getRoleType <em>Role Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -154,8 +154,8 @@ public class SegmentGroupRoleImpl extends EntityIdentifiableImpl implements Segm
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(SegmentPackage.Literals.SEGMENT_GROUP_ROLE__PARTY_ID, true);
+	public SegmentGroup getSegmentGroup() {
+		return (SegmentGroup)eGet(SegmentPackage.Literals.SEGMENT_GROUP_ROLE__SEGMENT_GROUP, true);
 	}
 
 	/**
@@ -164,8 +164,8 @@ public class SegmentGroupRoleImpl extends EntityIdentifiableImpl implements Segm
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(SegmentPackage.Literals.SEGMENT_GROUP_ROLE__PARTY_ID, newPartyId);
+	public void setSegmentGroup(SegmentGroup newSegmentGroup) {
+		eSet(SegmentPackage.Literals.SEGMENT_GROUP_ROLE__SEGMENT_GROUP, newSegmentGroup);
 	}
 
 	/**
@@ -174,8 +174,8 @@ public class SegmentGroupRoleImpl extends EntityIdentifiableImpl implements Segm
 	 * @generated
 	 */
 	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(SegmentPackage.Literals.SEGMENT_GROUP_ROLE__ROLE_TYPE_ID, true);
+	public Party getParty() {
+		return (Party)eGet(SegmentPackage.Literals.SEGMENT_GROUP_ROLE__PARTY, true);
 	}
 
 	/**
@@ -184,8 +184,28 @@ public class SegmentGroupRoleImpl extends EntityIdentifiableImpl implements Segm
 	 * @generated
 	 */
 	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(SegmentPackage.Literals.SEGMENT_GROUP_ROLE__ROLE_TYPE_ID, newRoleTypeId);
+	public void setParty(Party newParty) {
+		eSet(SegmentPackage.Literals.SEGMENT_GROUP_ROLE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RoleType getRoleType() {
+		return (RoleType)eGet(SegmentPackage.Literals.SEGMENT_GROUP_ROLE__ROLE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRoleType(RoleType newRoleType) {
+		eSet(SegmentPackage.Literals.SEGMENT_GROUP_ROLE__ROLE_TYPE, newRoleType);
 	}
 
 	/**
@@ -224,26 +244,6 @@ public class SegmentGroupRoleImpl extends EntityIdentifiableImpl implements Segm
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SegmentGroup getSegmentGroupId() {
-		return (SegmentGroup)eGet(SegmentPackage.Literals.SEGMENT_GROUP_ROLE__SEGMENT_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSegmentGroupId(SegmentGroup newSegmentGroupId) {
-		eSet(SegmentPackage.Literals.SEGMENT_GROUP_ROLE__SEGMENT_GROUP_ID, newSegmentGroupId);
 	}
 
 } //SegmentGroupRoleImpl

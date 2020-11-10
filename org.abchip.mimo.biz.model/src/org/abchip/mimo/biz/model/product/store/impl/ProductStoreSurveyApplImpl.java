@@ -35,13 +35,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getProductStoreSurveyId <em>Product Store Survey Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getGroupName <em>Group Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getProductCategoryId <em>Product Category Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getProductCategory <em>Product Category</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getResultTemplate <em>Result Template</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getSequenceNum <em>Sequence Num</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getSurveyApplTypeId <em>Survey Appl Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getSurveyId <em>Survey Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getSurvey <em>Survey</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getSurveyApplType <em>Survey Appl Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getSurveyTemplate <em>Survey Template</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -205,6 +205,66 @@ public class ProductStoreSurveyApplImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductCategory getProductCategory() {
+		return (ProductCategory)eGet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__PRODUCT_CATEGORY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductCategory(ProductCategory newProductCategory) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__PRODUCT_CATEGORY, newProductCategory);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__PRODUCT_STORE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__PRODUCT_STORE, newProductStore);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getProductStoreSurveyId() {
 		return (String)eGet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__PRODUCT_STORE_SURVEY_ID, true);
 	}
@@ -265,8 +325,8 @@ public class ProductStoreSurveyApplImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public SurveyApplType getSurveyApplTypeId() {
-		return (SurveyApplType)eGet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__SURVEY_APPL_TYPE_ID, true);
+	public Survey getSurvey() {
+		return (Survey)eGet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__SURVEY, true);
 	}
 
 	/**
@@ -275,8 +335,8 @@ public class ProductStoreSurveyApplImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setSurveyApplTypeId(SurveyApplType newSurveyApplTypeId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__SURVEY_APPL_TYPE_ID, newSurveyApplTypeId);
+	public void setSurvey(Survey newSurvey) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__SURVEY, newSurvey);
 	}
 
 	/**
@@ -285,8 +345,8 @@ public class ProductStoreSurveyApplImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public Survey getSurveyId() {
-		return (Survey)eGet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__SURVEY_ID, true);
+	public SurveyApplType getSurveyApplType() {
+		return (SurveyApplType)eGet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__SURVEY_APPL_TYPE, true);
 	}
 
 	/**
@@ -295,8 +355,8 @@ public class ProductStoreSurveyApplImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setSurveyId(Survey newSurveyId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__SURVEY_ID, newSurveyId);
+	public void setSurveyApplType(SurveyApplType newSurveyApplType) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__SURVEY_APPL_TYPE, newSurveyApplType);
 	}
 
 	/**
@@ -375,66 +435,6 @@ public class ProductStoreSurveyApplImpl extends EntityIdentifiableImpl implement
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__PRODUCT_STORE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__PRODUCT_STORE_ID, newProductStoreId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__PRODUCT_ID, newProductId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductCategory getProductCategoryId() {
-		return (ProductCategory)eGet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__PRODUCT_CATEGORY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductCategoryId(ProductCategory newProductCategoryId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__PRODUCT_CATEGORY_ID, newProductCategoryId);
 	}
 
 } //ProductStoreSurveyApplImpl

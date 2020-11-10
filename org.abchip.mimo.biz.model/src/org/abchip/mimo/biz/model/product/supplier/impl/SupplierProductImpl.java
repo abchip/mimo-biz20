@@ -34,9 +34,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getAvailableFromDate <em>Available From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getMinimumOrderQuantity <em>Minimum Order Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getAgreementId <em>Agreement Id</em>}</li>
@@ -46,13 +46,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getLastPrice <em>Last Price</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getOrderQtyIncrements <em>Order Qty Increments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getQuantityUomId <em>Quantity Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getQuantityUom <em>Quantity Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getShippingPrice <em>Shipping Price</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getStandardLeadTimeDays <em>Standard Lead Time Days</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getSupplierPrefOrderId <em>Supplier Pref Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getSupplierPrefOrder <em>Supplier Pref Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getSupplierProductId <em>Supplier Product Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getSupplierProductName <em>Supplier Product Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getSupplierRatingTypeId <em>Supplier Rating Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getSupplierRatingType <em>Supplier Rating Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductImpl#getUnitsIncluded <em>Units Included</em>}</li>
  * </ul>
  *
@@ -167,6 +167,66 @@ public class SupplierProductImpl extends EntityTypedImpl<SupplierRatingType> imp
 	@Override
 	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
 		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Product getProduct() {
+		return (Product)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(SupplierPackage.Literals.SUPPLIER_PRODUCT__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(SupplierPackage.Literals.SUPPLIER_PRODUCT__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Uom getCurrencyUom() {
+		return (Uom)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT__CURRENCY_UOM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCurrencyUom(Uom newCurrencyUom) {
+		eSet(SupplierPackage.Literals.SUPPLIER_PRODUCT__CURRENCY_UOM, newCurrencyUom);
 	}
 
 	/**
@@ -295,26 +355,6 @@ public class SupplierProductImpl extends EntityTypedImpl<SupplierRatingType> imp
 	 * @generated
 	 */
 	@Override
-	public Uom getCurrencyUomId() {
-		return (Uom)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT__CURRENCY_UOM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCurrencyUomId(Uom newCurrencyUomId) {
-		eSet(SupplierPackage.Literals.SUPPLIER_PRODUCT__CURRENCY_UOM_ID, newCurrencyUomId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public BigDecimal getLastPrice() {
 		return (BigDecimal)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT__LAST_PRICE, true);
 	}
@@ -375,8 +415,8 @@ public class SupplierProductImpl extends EntityTypedImpl<SupplierRatingType> imp
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT__PARTY_ID, true);
+	public Uom getQuantityUom() {
+		return (Uom)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT__QUANTITY_UOM, true);
 	}
 
 	/**
@@ -385,28 +425,8 @@ public class SupplierProductImpl extends EntityTypedImpl<SupplierRatingType> imp
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(SupplierPackage.Literals.SUPPLIER_PRODUCT__PARTY_ID, newPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Uom getQuantityUomId() {
-		return (Uom)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT__QUANTITY_UOM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setQuantityUomId(Uom newQuantityUomId) {
-		eSet(SupplierPackage.Literals.SUPPLIER_PRODUCT__QUANTITY_UOM_ID, newQuantityUomId);
+	public void setQuantityUom(Uom newQuantityUom) {
+		eSet(SupplierPackage.Literals.SUPPLIER_PRODUCT__QUANTITY_UOM, newQuantityUom);
 	}
 
 	/**
@@ -455,6 +475,26 @@ public class SupplierProductImpl extends EntityTypedImpl<SupplierRatingType> imp
 	 * @generated
 	 */
 	@Override
+	public SupplierPrefOrder getSupplierPrefOrder() {
+		return (SupplierPrefOrder)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT__SUPPLIER_PREF_ORDER, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSupplierPrefOrder(SupplierPrefOrder newSupplierPrefOrder) {
+		eSet(SupplierPackage.Literals.SUPPLIER_PRODUCT__SUPPLIER_PREF_ORDER, newSupplierPrefOrder);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getSupplierProductId() {
 		return (String)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT__SUPPLIER_PRODUCT_ID, true);
 	}
@@ -487,6 +527,26 @@ public class SupplierProductImpl extends EntityTypedImpl<SupplierRatingType> imp
 	@Override
 	public void setSupplierProductName(String newSupplierProductName) {
 		eSet(SupplierPackage.Literals.SUPPLIER_PRODUCT__SUPPLIER_PRODUCT_NAME, newSupplierProductName);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SupplierRatingType getSupplierRatingType() {
+		return (SupplierRatingType)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT__SUPPLIER_RATING_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSupplierRatingType(SupplierRatingType newSupplierRatingType) {
+		eSet(SupplierPackage.Literals.SUPPLIER_PRODUCT__SUPPLIER_RATING_TYPE, newSupplierRatingType);
 	}
 
 	/**
@@ -545,66 +605,6 @@ public class SupplierProductImpl extends EntityTypedImpl<SupplierRatingType> imp
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(SupplierPackage.Literals.SUPPLIER_PRODUCT__PRODUCT_ID, newProductId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SupplierPrefOrder getSupplierPrefOrderId() {
-		return (SupplierPrefOrder)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT__SUPPLIER_PREF_ORDER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSupplierPrefOrderId(SupplierPrefOrder newSupplierPrefOrderId) {
-		eSet(SupplierPackage.Literals.SUPPLIER_PRODUCT__SUPPLIER_PREF_ORDER_ID, newSupplierPrefOrderId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SupplierRatingType getSupplierRatingTypeId() {
-		return (SupplierRatingType)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT__SUPPLIER_RATING_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSupplierRatingTypeId(SupplierRatingType newSupplierRatingTypeId) {
-		eSet(SupplierPackage.Literals.SUPPLIER_PRODUCT__SUPPLIER_RATING_TYPE_ID, newSupplierRatingTypeId);
 	}
 
 } //SupplierProductImpl

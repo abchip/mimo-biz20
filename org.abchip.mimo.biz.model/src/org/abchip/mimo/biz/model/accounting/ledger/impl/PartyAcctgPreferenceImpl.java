@@ -33,27 +33,27 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getBaseCurrencyUomId <em>Base Currency Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getCogsMethodId <em>Cogs Method Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getBaseCurrencyUom <em>Base Currency Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getCogsMethod <em>Cogs Method</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getEnableAccounting <em>Enable Accounting</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getErrorGlJournalId <em>Error Gl Journal Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getErrorGlJournal <em>Error Gl Journal</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getFiscalYearStartDay <em>Fiscal Year Start Day</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getFiscalYearStartMonth <em>Fiscal Year Start Month</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getInvoiceIdPrefix <em>Invoice Id Prefix</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getInvoiceSeqCustMethId <em>Invoice Seq Cust Meth Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getInvoiceSeqCustMeth <em>Invoice Seq Cust Meth</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getLastInvoiceNumber <em>Last Invoice Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getLastInvoiceRestartDate <em>Last Invoice Restart Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getLastOrderNumber <em>Last Order Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getLastQuoteNumber <em>Last Quote Number</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getOldInvoiceSequenceEnumId <em>Old Invoice Sequence Enum Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getOldOrderSequenceEnumId <em>Old Order Sequence Enum Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getOldQuoteSequenceEnumId <em>Old Quote Sequence Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getOldInvoiceSequenceEnum <em>Old Invoice Sequence Enum</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getOldOrderSequenceEnum <em>Old Order Sequence Enum</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getOldQuoteSequenceEnum <em>Old Quote Sequence Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getOrderIdPrefix <em>Order Id Prefix</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getOrderSeqCustMethId <em>Order Seq Cust Meth Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getOrderSeqCustMeth <em>Order Seq Cust Meth</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getQuoteIdPrefix <em>Quote Id Prefix</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getQuoteSeqCustMethId <em>Quote Seq Cust Meth Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getRefundPaymentMethodId <em>Refund Payment Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getTaxFormId <em>Tax Form Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getQuoteSeqCustMeth <em>Quote Seq Cust Meth</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getRefundPaymentMethod <em>Refund Payment Method</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getTaxForm <em>Tax Form</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getUseInvoiceIdForReturns <em>Use Invoice Id For Returns</em>}</li>
  * </ul>
  *
@@ -175,46 +175,6 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Uom getBaseCurrencyUomId() {
-		return (Uom)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__BASE_CURRENCY_UOM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBaseCurrencyUomId(Uom newBaseCurrencyUomId) {
-		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__BASE_CURRENCY_UOM_ID, newBaseCurrencyUomId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Enumeration getCogsMethodId() {
-		return (Enumeration)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__COGS_METHOD_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCogsMethodId(Enumeration newCogsMethodId) {
-		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__COGS_METHOD_ID, newCogsMethodId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Boolean getEnableAccounting() {
 		return (Boolean)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__ENABLE_ACCOUNTING, true);
 	}
@@ -227,6 +187,26 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 	@Override
 	public void setEnableAccounting(Boolean newEnableAccounting) {
 		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__ENABLE_ACCOUNTING, newEnableAccounting);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GlJournal getErrorGlJournal() {
+		return (GlJournal)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__ERROR_GL_JOURNAL, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setErrorGlJournal(GlJournal newErrorGlJournal) {
+		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__ERROR_GL_JOURNAL, newErrorGlJournal);
 	}
 
 	/**
@@ -295,8 +275,8 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public CustomMethod getInvoiceSeqCustMethId() {
-		return (CustomMethod)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__INVOICE_SEQ_CUST_METH_ID, true);
+	public CustomMethod getInvoiceSeqCustMeth() {
+		return (CustomMethod)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__INVOICE_SEQ_CUST_METH, true);
 	}
 
 	/**
@@ -305,8 +285,8 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setInvoiceSeqCustMethId(CustomMethod newInvoiceSeqCustMethId) {
-		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__INVOICE_SEQ_CUST_METH_ID, newInvoiceSeqCustMethId);
+	public void setInvoiceSeqCustMeth(CustomMethod newInvoiceSeqCustMeth) {
+		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__INVOICE_SEQ_CUST_METH, newInvoiceSeqCustMeth);
 	}
 
 	/**
@@ -395,8 +375,8 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Enumeration getOldInvoiceSequenceEnumId() {
-		return (Enumeration)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__OLD_INVOICE_SEQUENCE_ENUM_ID, true);
+	public Enumeration getOldInvoiceSequenceEnum() {
+		return (Enumeration)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__OLD_INVOICE_SEQUENCE_ENUM, true);
 	}
 
 	/**
@@ -405,8 +385,8 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setOldInvoiceSequenceEnumId(Enumeration newOldInvoiceSequenceEnumId) {
-		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__OLD_INVOICE_SEQUENCE_ENUM_ID, newOldInvoiceSequenceEnumId);
+	public void setOldInvoiceSequenceEnum(Enumeration newOldInvoiceSequenceEnum) {
+		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__OLD_INVOICE_SEQUENCE_ENUM, newOldInvoiceSequenceEnum);
 	}
 
 	/**
@@ -415,8 +395,8 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Enumeration getOldOrderSequenceEnumId() {
-		return (Enumeration)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__OLD_ORDER_SEQUENCE_ENUM_ID, true);
+	public Enumeration getOldOrderSequenceEnum() {
+		return (Enumeration)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__OLD_ORDER_SEQUENCE_ENUM, true);
 	}
 
 	/**
@@ -425,8 +405,8 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setOldOrderSequenceEnumId(Enumeration newOldOrderSequenceEnumId) {
-		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__OLD_ORDER_SEQUENCE_ENUM_ID, newOldOrderSequenceEnumId);
+	public void setOldOrderSequenceEnum(Enumeration newOldOrderSequenceEnum) {
+		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__OLD_ORDER_SEQUENCE_ENUM, newOldOrderSequenceEnum);
 	}
 
 	/**
@@ -435,8 +415,8 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Enumeration getOldQuoteSequenceEnumId() {
-		return (Enumeration)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__OLD_QUOTE_SEQUENCE_ENUM_ID, true);
+	public Enumeration getOldQuoteSequenceEnum() {
+		return (Enumeration)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__OLD_QUOTE_SEQUENCE_ENUM, true);
 	}
 
 	/**
@@ -445,8 +425,8 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setOldQuoteSequenceEnumId(Enumeration newOldQuoteSequenceEnumId) {
-		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__OLD_QUOTE_SEQUENCE_ENUM_ID, newOldQuoteSequenceEnumId);
+	public void setOldQuoteSequenceEnum(Enumeration newOldQuoteSequenceEnum) {
+		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__OLD_QUOTE_SEQUENCE_ENUM, newOldQuoteSequenceEnum);
 	}
 
 	/**
@@ -475,8 +455,8 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public CustomMethod getOrderSeqCustMethId() {
-		return (CustomMethod)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__ORDER_SEQ_CUST_METH_ID, true);
+	public CustomMethod getOrderSeqCustMeth() {
+		return (CustomMethod)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__ORDER_SEQ_CUST_METH, true);
 	}
 
 	/**
@@ -485,8 +465,8 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setOrderSeqCustMethId(CustomMethod newOrderSeqCustMethId) {
-		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__ORDER_SEQ_CUST_METH_ID, newOrderSeqCustMethId);
+	public void setOrderSeqCustMeth(CustomMethod newOrderSeqCustMeth) {
+		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__ORDER_SEQ_CUST_METH, newOrderSeqCustMeth);
 	}
 
 	/**
@@ -515,6 +495,46 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
+	public Uom getBaseCurrencyUom() {
+		return (Uom)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__BASE_CURRENCY_UOM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBaseCurrencyUom(Uom newBaseCurrencyUom) {
+		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__BASE_CURRENCY_UOM, newBaseCurrencyUom);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Enumeration getCogsMethod() {
+		return (Enumeration)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__COGS_METHOD, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCogsMethod(Enumeration newCogsMethod) {
+		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__COGS_METHOD, newCogsMethod);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getQuoteIdPrefix() {
 		return (String)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__QUOTE_ID_PREFIX, true);
 	}
@@ -535,8 +555,8 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public CustomMethod getQuoteSeqCustMethId() {
-		return (CustomMethod)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__QUOTE_SEQ_CUST_METH_ID, true);
+	public CustomMethod getQuoteSeqCustMeth() {
+		return (CustomMethod)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__QUOTE_SEQ_CUST_METH, true);
 	}
 
 	/**
@@ -545,8 +565,8 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setQuoteSeqCustMethId(CustomMethod newQuoteSeqCustMethId) {
-		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__QUOTE_SEQ_CUST_METH_ID, newQuoteSeqCustMethId);
+	public void setQuoteSeqCustMeth(CustomMethod newQuoteSeqCustMeth) {
+		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__QUOTE_SEQ_CUST_METH, newQuoteSeqCustMeth);
 	}
 
 	/**
@@ -555,8 +575,8 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public PaymentMethod getRefundPaymentMethodId() {
-		return (PaymentMethod)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__REFUND_PAYMENT_METHOD_ID, true);
+	public PaymentMethod getRefundPaymentMethod() {
+		return (PaymentMethod)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__REFUND_PAYMENT_METHOD, true);
 	}
 
 	/**
@@ -565,8 +585,8 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setRefundPaymentMethodId(PaymentMethod newRefundPaymentMethodId) {
-		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__REFUND_PAYMENT_METHOD_ID, newRefundPaymentMethodId);
+	public void setRefundPaymentMethod(PaymentMethod newRefundPaymentMethod) {
+		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__REFUND_PAYMENT_METHOD, newRefundPaymentMethod);
 	}
 
 	/**
@@ -575,8 +595,8 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Enumeration getTaxFormId() {
-		return (Enumeration)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__TAX_FORM_ID, true);
+	public Enumeration getTaxForm() {
+		return (Enumeration)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__TAX_FORM, true);
 	}
 
 	/**
@@ -585,8 +605,8 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setTaxFormId(Enumeration newTaxFormId) {
-		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__TAX_FORM_ID, newTaxFormId);
+	public void setTaxForm(Enumeration newTaxForm) {
+		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__TAX_FORM, newTaxForm);
 	}
 
 	/**
@@ -645,26 +665,6 @@ public class PartyAcctgPreferenceImpl extends EntityIdentifiableImpl implements 
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GlJournal getErrorGlJournalId() {
-		return (GlJournal)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__ERROR_GL_JOURNAL_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setErrorGlJournalId(GlJournal newErrorGlJournalId) {
-		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__ERROR_GL_JOURNAL_ID, newErrorGlJournalId);
 	}
 
 } //PartyAcctgPreferenceImpl

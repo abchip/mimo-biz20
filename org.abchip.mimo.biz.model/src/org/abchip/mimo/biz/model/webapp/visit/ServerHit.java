@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.ServerHit#getHitTypeId <em>Hit Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.ServerHit#getVisitId <em>Visit Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.ServerHit#getHitType <em>Hit Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.ServerHit#getVisit <em>Visit</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.ServerHit#getContentId <em>Content Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.ServerHit#getHitStartDateTime <em>Hit Start Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.ServerHit#getIdByIpContactMechId <em>Id By Ip Contact Mech Id</em>}</li>
@@ -44,31 +44,50 @@ import org.abchip.mimo.entity.EntityTyped;
  */
 public interface ServerHit extends EntityTyped<ServerHitType>, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Visit Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Hit Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Visit Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Visit Id</em>' reference.
-	 * @see #setVisitId(Visit)
-	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getServerHit_VisitId()
+	 * @return the value of the '<em>Hit Type</em>' reference.
+	 * @see #setHitType(ServerHitType)
+	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getServerHit_HitType()
+	 * @model keys="hitTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ServerHitType getHitType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.visit.ServerHit#getHitType <em>Hit Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Hit Type</em>' reference.
+	 * @see #getHitType()
+	 * @generated
+	 */
+	void setHitType(ServerHitType value);
+
+	/**
+	 * Returns the value of the '<em><b>Visit</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Visit</em>' reference.
+	 * @see #setVisit(Visit)
+	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getServerHit_Visit()
 	 * @model keys="visitId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Visit getVisitId();
+	Visit getVisit();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.visit.ServerHit#getVisitId <em>Visit Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.visit.ServerHit#getVisit <em>Visit</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Visit Id</em>' reference.
-	 * @see #getVisitId()
+	 * @param value the new value of the '<em>Visit</em>' reference.
+	 * @see #getVisit()
 	 * @generated
 	 */
-	void setVisitId(Visit value);
+	void setVisit(Visit value);
 
 	/**
 	 * Returns the value of the '<em><b>Content Id</b></em>' attribute.
@@ -124,33 +143,6 @@ public interface ServerHit extends EntityTyped<ServerHitType>, EntityInfo {
 	 * @generated
 	 */
 	void setHitStartDateTime(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Hit Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Hit Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Hit Type Id</em>' reference.
-	 * @see #setHitTypeId(ServerHitType)
-	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getServerHit_HitTypeId()
-	 * @model keys="hitTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ServerHitType getHitTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.visit.ServerHit#getHitTypeId <em>Hit Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Hit Type Id</em>' reference.
-	 * @see #getHitTypeId()
-	 * @generated
-	 */
-	void setHitTypeId(ServerHitType value);
 
 	/**
 	 * Returns the value of the '<em><b>Id By Ip Contact Mech Id</b></em>' attribute.

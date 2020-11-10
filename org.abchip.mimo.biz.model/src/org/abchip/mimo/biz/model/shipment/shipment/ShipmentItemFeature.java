@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItemFeature#getShipmentId <em>Shipment Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItemFeature#getProductFeatureId <em>Product Feature Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItemFeature#getShipment <em>Shipment</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItemFeature#getProductFeature <em>Product Feature</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItemFeature#getShipmentItemSeqId <em>Shipment Item Seq Id</em>}</li>
  * </ul>
  *
@@ -31,58 +31,50 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface ShipmentItemFeature extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Product Feature Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Feature Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Feature Id</em>' reference.
-	 * @see #setProductFeatureId(ProductFeature)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentItemFeature_ProductFeatureId()
-	 * @model keys="productFeatureId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductFeature getProductFeatureId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItemFeature#getProductFeatureId <em>Product Feature Id</em>}' reference.
+	 * Returns the value of the '<em><b>Shipment</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Feature Id</em>' reference.
-	 * @see #getProductFeatureId()
-	 * @generated
-	 */
-	void setProductFeatureId(ProductFeature value);
-
-	/**
-	 * Returns the value of the '<em><b>Shipment Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shipment Id</em>' reference.
-	 * @see #setShipmentId(Shipment)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentItemFeature_ShipmentId()
+	 * @return the value of the '<em>Shipment</em>' reference.
+	 * @see #setShipment(Shipment)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentItemFeature_Shipment()
 	 * @model keys="shipmentId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Shipment getShipmentId();
+	Shipment getShipment();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItemFeature#getShipmentId <em>Shipment Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItemFeature#getShipment <em>Shipment</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shipment Id</em>' reference.
-	 * @see #getShipmentId()
+	 * @param value the new value of the '<em>Shipment</em>' reference.
+	 * @see #getShipment()
 	 * @generated
 	 */
-	void setShipmentId(Shipment value);
+	void setShipment(Shipment value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Feature</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Feature</em>' reference.
+	 * @see #setProductFeature(ProductFeature)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentItemFeature_ProductFeature()
+	 * @model keys="productFeatureId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductFeature getProductFeature();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItemFeature#getProductFeature <em>Product Feature</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Feature</em>' reference.
+	 * @see #getProductFeature()
+	 * @generated
+	 */
+	void setProductFeature(ProductFeature value);
 
 	/**
 	 * Returns the value of the '<em><b>Shipment Item Seq Id</b></em>' attribute.

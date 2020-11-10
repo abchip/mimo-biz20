@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderBlacklistImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderBlacklistImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderBlacklistImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderBlacklistImpl#getOrderBlacklistTypeId <em>Order Blacklist Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderBlacklistImpl#getOrderBlacklistType <em>Order Blacklist Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderBlacklistImpl#getBlacklistString <em>Blacklist String</em>}</li>
  * </ul>
  *
@@ -151,6 +151,26 @@ public class OrderBlacklistImpl extends EntityTypedImpl<OrderBlacklistType> impl
 	 * @generated
 	 */
 	@Override
+	public OrderBlacklistType getOrderBlacklistType() {
+		return (OrderBlacklistType)eGet(OrderPackage.Literals.ORDER_BLACKLIST__ORDER_BLACKLIST_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrderBlacklistType(OrderBlacklistType newOrderBlacklistType) {
+		eSet(OrderPackage.Literals.ORDER_BLACKLIST__ORDER_BLACKLIST_TYPE, newOrderBlacklistType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getBlacklistString() {
 		return (String)eGet(OrderPackage.Literals.ORDER_BLACKLIST__BLACKLIST_STRING, true);
 	}
@@ -201,26 +221,6 @@ public class OrderBlacklistImpl extends EntityTypedImpl<OrderBlacklistType> impl
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderBlacklistType getOrderBlacklistTypeId() {
-		return (OrderBlacklistType)eGet(OrderPackage.Literals.ORDER_BLACKLIST__ORDER_BLACKLIST_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderBlacklistTypeId(OrderBlacklistType newOrderBlacklistTypeId) {
-		eSet(OrderPackage.Literals.ORDER_BLACKLIST__ORDER_BLACKLIST_TYPE_ID, newOrderBlacklistTypeId);
 	}
 
 } //OrderBlacklistImpl

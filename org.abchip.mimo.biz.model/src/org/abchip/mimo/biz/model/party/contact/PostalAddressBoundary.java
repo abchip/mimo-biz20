@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddressBoundary#getContactMechId <em>Contact Mech Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddressBoundary#getGeoId <em>Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddressBoundary#getContactMech <em>Contact Mech</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddressBoundary#getGeo <em>Geo</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddressBoundary()
@@ -30,57 +30,49 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface PostalAddressBoundary extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Geo Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geo Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Geo Id</em>' reference.
-	 * @see #setGeoId(Geo)
-	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddressBoundary_GeoId()
-	 * @model keys="geoId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Geo getGeoId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PostalAddressBoundary#getGeoId <em>Geo Id</em>}' reference.
+	 * Returns the value of the '<em><b>Contact Mech</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Geo Id</em>' reference.
-	 * @see #getGeoId()
-	 * @generated
-	 */
-	void setGeoId(Geo value);
-
-	/**
-	 * Returns the value of the '<em><b>Contact Mech Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #setContactMechId(PostalAddress)
-	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddressBoundary_ContactMechId()
+	 * @return the value of the '<em>Contact Mech</em>' reference.
+	 * @see #setContactMech(PostalAddress)
+	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddressBoundary_ContactMech()
 	 * @model keys="contactMechId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	PostalAddress getContactMechId();
+	PostalAddress getContactMech();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PostalAddressBoundary#getContactMechId <em>Contact Mech Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PostalAddressBoundary#getContactMech <em>Contact Mech</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #getContactMechId()
+	 * @param value the new value of the '<em>Contact Mech</em>' reference.
+	 * @see #getContactMech()
 	 * @generated
 	 */
-	void setContactMechId(PostalAddress value);
+	void setContactMech(PostalAddress value);
+
+	/**
+	 * Returns the value of the '<em><b>Geo</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Geo</em>' reference.
+	 * @see #setGeo(Geo)
+	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddressBoundary_Geo()
+	 * @model keys="geoId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Geo getGeo();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PostalAddressBoundary#getGeo <em>Geo</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Geo</em>' reference.
+	 * @see #getGeo()
+	 * @generated
+	 */
+	void setGeo(Geo value);
 
 } // PostalAddressBoundary

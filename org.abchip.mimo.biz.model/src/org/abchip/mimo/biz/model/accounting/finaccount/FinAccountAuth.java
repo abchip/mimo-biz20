@@ -26,7 +26,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountAuth#getAmount <em>Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountAuth#getAuthorizationDate <em>Authorization Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountAuth#getCurrencyUomId <em>Currency Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountAuth#getFinAccountId <em>Fin Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountAuth#getFinAccount <em>Fin Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountAuth#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountAuth#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -115,6 +115,28 @@ public interface FinAccountAuth extends EntityIdentifiable, EntityInfo {
 	void setCurrencyUomId(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Fin Account</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fin Account</em>' reference.
+	 * @see #setFinAccount(FinAccount)
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountAuth_FinAccount()
+	 * @model keys="finAccountId"
+	 * @generated
+	 */
+	FinAccount getFinAccount();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountAuth#getFinAccount <em>Fin Account</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Fin Account</em>' reference.
+	 * @see #getFinAccount()
+	 * @generated
+	 */
+	void setFinAccount(FinAccount value);
+
+	/**
 	 * Returns the value of the '<em><b>Fin Account Auth Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -192,31 +214,5 @@ public interface FinAccountAuth extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Fin Account Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fin Account Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fin Account Id</em>' reference.
-	 * @see #setFinAccountId(FinAccount)
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountAuth_FinAccountId()
-	 * @model keys="finAccountId"
-	 * @generated
-	 */
-	FinAccount getFinAccountId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountAuth#getFinAccountId <em>Fin Account Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fin Account Id</em>' reference.
-	 * @see #getFinAccountId()
-	 * @generated
-	 */
-	void setFinAccountId(FinAccount value);
 
 } // FinAccountAuth

@@ -3,12 +3,12 @@
   <contents xsi:type="biz-portal:PortletCategory" portletCategoryId="HUMANRES" description="Human Resource Portlets"/>
   <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="myLeave" description="My Leaves form Human Resource" portletName="My Leave" screenLocation="component://humanres/widget/EmployeeScreens.xml" screenName="MyLeaveList" securityMainAction="VIEW" securityServiceName="portalPermissionIsEmployee"/>
   <contents xsi:type="biz-portal:PortletPortletCategory">
-    <portalPortletId href="PortalPortlet#myLeave"/>
-    <portletCategoryId href="PortletCategory#HUMANRES"/>
+    <portalPortlet href="PortalPortlet#myLeave"/>
+    <portletCategory href="PortletCategory#HUMANRES"/>
   </contents>
   <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="MyTrainings" description="Trainings of a party" portletName="My Trainings" screenLocation="component://humanres/widget/EmployeeScreens.xml" screenName="MyTrainings" securityMainAction="VIEW" securityServiceName="portalPermissionIsEmployee"/>
   <contents xsi:type="biz-portal:PortletPortletCategory">
-    <portalPortletId href="PortalPortlet#MyTrainings"/>
-    <portletCategoryId href="PortletCategory#HUMANRES"/>
+    <portalPortlet href="PortalPortlet#MyTrainings"/>
+    <portletCategory href="PortletCategory#HUMANRES"/>
   </contents>
 </mimo-ent:EntityContainer>

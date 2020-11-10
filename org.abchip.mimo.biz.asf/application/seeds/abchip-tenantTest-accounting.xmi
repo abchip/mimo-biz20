@@ -18,11 +18,11 @@
       invoiceIdPrefix="CI"
       orderIdPrefix="CO"
       quoteIdPrefix="CQ">
-    <baseCurrencyUomId
+    <baseCurrencyUom
         href="seed-initial.xmi#EUR"/>
-    <cogsMethodId
+    <cogsMethod
         href="seed-initial.xmi#COGS_AVG_COST"/>
-    <taxFormId
+    <taxForm
         href="seed-initial.xmi#US_IRS_1040"/>
   </contents>
   <contents
@@ -32,9 +32,9 @@
       periodName="2020"
       periodNum="1"
       thruDate="2020-12-31T00:00:00.000+0100">
-    <organizationPartyId
+    <organizationParty
         href="abchip-tenantTest.xmi#Company"/>
-    <periodTypeId
+    <periodType
         href="seed-initial-accounting.xmi#FISCAL_YEAR"/>
   </contents>
   <contents
@@ -42,11 +42,11 @@
       glAccountId="100000"
       accountCode="100000"
       accountName="ASSETS">
-    <glAccountClassId
+    <glAccountClass
         href="seed-initial-accounting.xmi#ASSET"/>
-    <glAccountTypeId
+    <glAccountType
         href="seed-initial-accounting.xmi#_NA_"/>
-    <glResourceTypeId
+    <glResourceType
         href="seed-initial-accounting.xmi#MONEY"/>
   </contents>
   <contents
@@ -54,12 +54,12 @@
       glAccountId="120000"
       accountCode="120000"
       accountName="ACCOUNTS RECEIVABLE"
-      parentGlAccountId="100000">
-    <glAccountClassId
+      parentGlAccount="100000">
+    <glAccountClass
         href="seed-initial-accounting.xmi#CURRENT_ASSET"/>
-    <glAccountTypeId
+    <glAccountType
         href="seed-initial-accounting.xmi#ACCOUNTS_RECEIVABLE"/>
-    <glResourceTypeId
+    <glResourceType
         href="seed-initial-accounting.xmi#MONEY"/>
   </contents>
   <contents
@@ -67,12 +67,12 @@
       glAccountId="122000"
       accountCode="122000"
       accountName="IN TRANSIT FROM CREDIT CARD PROCESSORS"
-      parentGlAccountId="120000">
-    <glAccountClassId
+      parentGlAccount="120000">
+    <glAccountClass
         href="seed-initial-accounting.xmi#CURRENT_ASSET"/>
-    <glAccountTypeId
+    <glAccountType
         href="seed-initial-accounting.xmi#MRCH_STLMNT_ACCOUNT"/>
-    <glResourceTypeId
+    <glResourceType
         href="seed-initial-accounting.xmi#MONEY"/>
   </contents>
   <contents
@@ -80,59 +80,59 @@
       glAccountId="122300"
       accountCode="122300"
       accountName="ACCOUNTS RECEIVABLE - CREDIT CARD"
-      parentGlAccountId="122000">
-    <glAccountClassId
+      parentGlAccount="122000">
+    <glAccountClass
         href="seed-initial-accounting.xmi#CURRENT_ASSET"/>
-    <glAccountTypeId
+    <glAccountType
         href="seed-initial-accounting.xmi#MRCH_STLMNT_ACCOUNT"/>
-    <glResourceTypeId
+    <glResourceType
         href="seed-initial-accounting.xmi#MONEY"/>
   </contents>
   <contents
       xsi:type="biz-ledger:GlAccountOrganization"
-      glAccountId="100000">
-    <organizationPartyId
+      glAccount="100000">
+    <organizationParty
         href="abchip-tenantTest.xmi#Company"/>
   </contents>
   <contents
       xsi:type="biz-ledger:GlAccountOrganization"
-      glAccountId="120000">
-    <organizationPartyId
+      glAccount="120000">
+    <organizationParty
         href="abchip-tenantTest.xmi#Company"/>
   </contents>
   <contents
       xsi:type="biz-ledger:GlAccountOrganization"
-      glAccountId="122000">
-    <organizationPartyId
+      glAccount="122000">
+    <organizationParty
         href="abchip-tenantTest.xmi#Company"/>
   </contents>
   <contents
       xsi:type="biz-ledger:GlAccountOrganization"
-      glAccountId="122300">
-    <organizationPartyId
+      glAccount="122300">
+    <organizationParty
         href="abchip-tenantTest.xmi#Company"/>
   </contents>
   <contents
       xsi:type="biz-ledger:GlAccountTypeDefault"
-      glAccountId="122000">
-    <glAccountTypeId
+      glAccount="122000">
+    <glAccountType
         href="seed-initial-accounting.xmi#ACCOUNTS_RECEIVABLE"/>
-    <organizationPartyId
+    <organizationParty
         href="abchip-tenantTest.xmi#Company"/>
   </contents>
   <contents
       xsi:type="biz-payment:PaymentGlAccountTypeMap">
-    <paymentTypeId
+    <paymentType
         href="seed-initial-accounting.xmi#CUSTOMER_PAYMENT"/>
-    <organizationPartyId
+    <organizationParty
         href="abchip-tenantTest.xmi#Company"/>
-    <glAccountTypeId
+    <glAccountType
         href="seed-initial-accounting.xmi#ACCOUNTS_RECEIVABLE"/>
   </contents>
   <contents
       xsi:type="biz-payment:PaymentMethodType"
       paymentMethodTypeId="CREDIT_CARD"
-      defaultGlAccountId="122000"
+      defaultGlAccount="122000"
       description="Carta Credito"/>
   <contents
       xsi:type="biz-payment:CreditCardTypeGlAccount"

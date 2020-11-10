@@ -26,38 +26,38 @@
       partyId="Company"
       groupName="ABChip s.r.l."
       logoImageUrl="/images/ofbiz_logo.png">
-    <partyTypeId
+    <partyType
         href="seed-initial.xmi#PARTY_GROUP"/>
-    <statusId
+    <status
         href="seed-initial.xmi#PARTY_ENABLED"/>
   </contents>
   <contents
       xsi:type="biz-party:PartyRole"
-      partyId="Company">
-    <roleTypeId
+      party="Company">
+    <roleType
         href="seed-initial.xmi#BILL_FROM_VENDOR"/>
   </contents>
   <contents
       xsi:type="biz-party:PartyRole"
-      partyId="Company">
-    <roleTypeId
+      party="Company">
+    <roleType
         href="seed-initial.xmi#BILL_TO_CUSTOMER"/>
   </contents>
   <contents
       xsi:type="biz-party:PartyRole"
-      partyId="Company">
-    <roleTypeId
+      party="Company">
+    <roleType
         href="seed-initial.xmi#INTERNAL_ORGANIZATIO"/>
   </contents>
   <contents
       xsi:type="biz-party:PartyRole"
-      partyId="Company">
-    <roleTypeId
+      party="Company">
+    <roleType
         href="seed-initial.xmi#_NA_"/>
   </contents>
   <contents
       xsi:type="biz-tax:PartyTaxAuthInfo"
-      partyId="Company"
+      party="Company"
       fromDate="2019-01-01T00:00:00.000+0100"
       taxAuthGeoId="ITA"
       taxAuthPartyId="ITA_ADE"
@@ -71,62 +71,62 @@
       city="Milano"
       postalCode="20124"
       toName="ABChip s.r.l.">
-    <contactMechTypeId
+    <contactMechType
         href="seed-initial.xmi#POSTAL_ADDRESS"/>
-    <countryGeoId
+    <countryGeo
         href="seed-initial.xmi#ITA"/>
-    <stateProvinceGeoId
+    <stateProvinceGeo
         href="seed-initial.xmi#MI"/>
   </contents>
   <contents
       xsi:type="biz-contact:PartyContactMech"
-      partyId="Company"
-      contactMechId="9000"
+      party="Company"
+      contactMech="9000"
       fromDate="2019-01-01T00:00:00.000+0100"
       allowSolicitation="true"/>
   <contents
       xsi:type="biz-contact:PartyContactMechPurpose"
-      partyId="Company"
-      contactMechId="9000"
+      party="Company"
+      contactMech="9000"
       fromDate="2019-01-01T00:00:00.000+0100">
-    <contactMechPurposeTypeId
+    <contactMechPurposeType
         href="seed-initial.xmi#BILLING_LOCATION"/>
   </contents>
   <contents
       xsi:type="biz-contact:PartyContactMechPurpose"
-      partyId="Company"
-      contactMechId="9000"
+      party="Company"
+      contactMech="9000"
       fromDate="2019-01-01T00:00:00.000+0100">
-    <contactMechPurposeTypeId
+    <contactMechPurposeType
         href="seed-initial.xmi#GENERAL_LOCATION"/>
   </contents>
   <contents
       xsi:type="biz-contact:PartyContactMechPurpose"
-      partyId="Company"
-      contactMechId="9000"
+      party="Company"
+      contactMech="9000"
       fromDate="2019-01-01T00:00:00.000+0100">
-    <contactMechPurposeTypeId
+    <contactMechPurposeType
         href="seed-initial.xmi#PAYMENT_LOCATION"/>
   </contents>
   <contents
       xsi:type="biz-contact:ContactMech"
       contactMechId="9001"
       infoString="info@abchip.it">
-    <contactMechTypeId
+    <contactMechType
         href="seed-initial.xmi#EMAIL_ADDRESS"/>
   </contents>
   <contents
       xsi:type="biz-contact:PartyContactMechPurpose"
-      partyId="Company"
-      contactMechId="9001"
+      party="Company"
+      contactMech="9001"
       fromDate="2019-01-01T00:00:00.000+0100">
-    <contactMechPurposeTypeId
+    <contactMechPurposeType
         href="seed-initial.xmi#PRIMARY_EMAIL"/>
   </contents>
   <contents
       xsi:type="biz-contact:PartyContactMech"
-      partyId="Company"
-      contactMechId="9001"
+      party="Company"
+      contactMech="9001"
       fromDate="2019-01-01T00:00:00.000+0100"
       allowSolicitation="true"/>
   <contents
@@ -134,8 +134,8 @@
       facilityId="WebStoreWarehouse"
       description="Warehouse exclusively for the Web Store"
       facilityName="Web Store Warehouse"
-      ownerPartyId="Company">
-    <facilityTypeId
+      ownerParty="Company">
+    <facilityType
         href="seed-initial.xmi#WAREHOUSE"/>
   </contents>
   <contents
@@ -147,10 +147,10 @@
       autoOrderCcTryLaterNsf="false"
       autoOrderCcTryOtherCards="false"
       checkInventory="false"
-      inventoryFacilityId="WebStoreWarehouse"
+      inventoryFacility="WebStoreWarehouse"
       isDemoStore="false"
       oneInventoryFacility="false"
-      payToPartyId="Company"
+      payToParty="Company"
       prodSearchExcludeVariants="false"
       prorateShipping="false"
       prorateTaxes="false"
@@ -165,7 +165,7 @@
       vatTaxAuthGeoId="ITA"
       vatTaxAuthPartyId="ITA_ADE"
       visualThemeId="EC_DEFAULT">
-    <defaultCurrencyUomId
+    <defaultCurrencyUom
         href="seed-initial.xmi#EUR"/>
   </contents>
   <contents
@@ -175,12 +175,12 @@
       useQuickAdd="false"/>
   <contents
       xsi:type="biz-store:ProductStoreCatalog"
-      productStoreId="8000"
-      prodCatalogId="ABChipCatalog"
+      productStore="8000"
+      prodCatalog="ABChipCatalog"
       fromDate="2019-01-01T00:00:00.000+0100"/>
   <contents
       xsi:type="biz-passport:OAuth2GitHub"
-      productStoreId="8000"
+      productStore="8000"
       fromDate="2019-01-01T00:00:00.000+0100"
       clientId="19d1197012536a245706"
       clientSecret="ae7fcc0e1bc17b608c4ec093d83c3248ae35c461"
@@ -189,7 +189,7 @@
       returnUrl="http://localhost:7080/ui/service/gitHubResponse"/>
   <contents
       xsi:type="biz-passport:OAuth2LinkedIn"
-      productStoreId="8000"
+      productStore="8000"
       fromDate="2019-01-01T00:00:00.000+0100"
       apiKey="86zhfjvwavq62d"
       iconUrl="/images/linkedin.png"
@@ -199,7 +199,7 @@
       testReturnUrl="http://localhost:7080/ui/service/linkedInResponse"/>
   <contents
       xsi:type="biz-passport:OAuth2Google"
-      productStoreId="8000"
+      productStore="8000"
       fromDate="2019-01-01T00:00:00.000+0100"
       clientId="522507914775-e194696ik4llnfmv1q1lch1ojsoqb8lb.apps.googleusercontent.com"
       clientSecret="BruAdo0FcydQj4wD01aEphXK"
@@ -211,12 +211,12 @@
       userLoginId="abchip"
       currentPassword="{SHA}47ca69ebb4bdc9ae0adec130880165d2cc05db1a"
       enabled="true"
-      partyId="Company"/>
+      party="Company"/>
   <contents
       xsi:type="biz-securitygroup:UserLoginSecurityGroup"
-      userLoginId="abchip"
+      userLogin="abchip"
       fromDate="2019-01-01T00:00:00.000+0100">
-    <groupId
+    <group
         href="seed-initial.xmi#SUPER"/>
   </contents>
   <contents
@@ -227,59 +227,59 @@
   <contents
       xsi:type="biz-website:WebSite"
       webSiteId="ABChipWebStore"
-      productStoreId="8000"
+      productStore="8000"
       siteName="abchip.net">
-    <visualThemeSetId
+    <visualThemeSet
         href="seed-initial.xmi#ECOMMERCE"/>
   </contents>
   <contents
       xsi:type="biz-party:Person"
       partyId="_NA_">
-    <partyTypeId
+    <partyType
         href="seed-initial.xmi#PERSON"/>
-    <statusId
+    <status
         href="seed-initial.xmi#PARTY_ENABLED"/>
   </contents>
   <contents
       xsi:type="biz-party:PartyRole"
-      partyId="_NA_">
-    <roleTypeId
+      party="_NA_">
+    <roleType
         href="seed-initial.xmi#CARRIER"/>
   </contents>
   <contents
       xsi:type="biz-party:PartyRole"
-      partyId="_NA_">
-    <roleTypeId
+      party="_NA_">
+    <roleType
         href="seed-initial.xmi#_NA_"/>
   </contents>
   <contents
       xsi:type="biz-store:ProductStorePaymentSetting"
-      productStoreId="8000"
+      productStore="8000"
       applyToAllProducts="true"
       paymentService="">
-    <paymentMethodTypeId
+    <paymentMethodType
         href="seed-initial.xmi#CREDIT_CARD"/>
-    <paymentServiceTypeEnumId
+    <paymentServiceTypeEnum
         href="seed-initial.xmi#PRDS_PAY_EXTERNAL"/>
   </contents>
   <contents
       xsi:type="biz-store:ProductStorePaymentSetting"
-      productStoreId="8000"
+      productStore="8000"
       applyToAllProducts="true"
       paymentService="">
-    <paymentMethodTypeId
+    <paymentMethodType
         href="seed-initial.xmi#EXT_COD"/>
-    <paymentServiceTypeEnumId
+    <paymentServiceTypeEnum
         href="seed-initial.xmi#PRDS_PAY_EXTERNAL"/>
   </contents>
   <contents
       xsi:type="biz-store:ProductStorePaymentSetting"
-      productStoreId="8000"
+      productStore="8000"
       applyToAllProducts="true"
       paymentService="">
-    <paymentMethodTypeId
+    <paymentMethodType
         href="seed-initial.xmi#EFT_ACCOUNT"/>
-    <paymentServiceTypeEnumId
+    <paymentServiceTypeEnum
         href="seed-initial.xmi#PRDS_PAY_EXTERNAL"/>
   </contents>
   <contents
@@ -292,14 +292,14 @@
       description="Standard"/>
   <contents
       xsi:type="biz-shipment:CarrierShipmentMethod"
-      shipmentMethodTypeId="NO_SHIPPING"
-      partyId="_NA_"
+      shipmentMethodType="NO_SHIPPING"
+      party="_NA_"
       roleTypeId="CARRIER"
       sequenceNumber="1"/>
   <contents
       xsi:type="biz-shipment:CarrierShipmentMethod"
-      shipmentMethodTypeId="STANDARD"
-      partyId="_NA_"
+      shipmentMethodType="STANDARD"
+      party="_NA_"
       roleTypeId="CARRIER"
       sequenceNumber="1"/>
   <contents
@@ -311,7 +311,7 @@
       productStoreId="8000"
       roleTypeId="CARRIER"
       sequenceNumber="1"
-      shipmentMethodTypeId="NO_SHIPPING"/>
+      shipmentMethodType="NO_SHIPPING"/>
   <contents
       xsi:type="biz-product:Product"
       productId="Accounting"
@@ -319,24 +319,24 @@
       lotIdFilledIn="Allowed"
       productName="Service for Accounting"
       taxable="true">
-    <inventoryItemTypeId
+    <inventoryItemType
         href="seed-initial.xmi#NON_SERIAL_INV_ITEM"/>
-    <productTypeId
+    <productType
         href="seed-initial.xmi#DIGITAL_GOOD"/>
   </contents>
   <contents
       xsi:type="biz-price:ProductPrice"
-      productId="Accounting"
+      product="Accounting"
       fromDate="2019-01-01T00:00:00.000+0100"
       price="1"
       taxInPrice="true">
-    <productPriceTypeId
+    <productPriceType
         href="seed-initial.xmi#DEFAULT_PRICE"/>
-    <productPricePurposeId
+    <productPricePurpose
         href="seed-initial.xmi#PURCHASE"/>
-    <currencyUomId
+    <currencyUom
         href="seed-initial.xmi#EUR"/>
-    <productStoreGroupId
+    <productStoreGroup
         href="seed-initial-product-store-group.xmi#_NA_"/>
   </contents>
   <contents
@@ -346,24 +346,24 @@
       lotIdFilledIn="Allowed"
       productName="Service for Edi"
       taxable="true">
-    <inventoryItemTypeId
+    <inventoryItemType
         href="seed-initial.xmi#NON_SERIAL_INV_ITEM"/>
-    <productTypeId
+    <productType
         href="seed-initial.xmi#DIGITAL_GOOD"/>
   </contents>
   <contents
       xsi:type="biz-price:ProductPrice"
-      productId="Edi"
+      product="Edi"
       fromDate="2019-01-01T00:00:00.000+0100"
       price="1"
       taxInPrice="true">
-    <productPriceTypeId
+    <productPriceType
         href="seed-initial.xmi#DEFAULT_PRICE"/>
-    <productPricePurposeId
+    <productPricePurpose
         href="seed-initial.xmi#PURCHASE"/>
-    <currencyUomId
+    <currencyUom
         href="seed-initial.xmi#EUR"/>
-    <productStoreGroupId
+    <productStoreGroup
         href="seed-initial-product-store-group.xmi#_NA_"/>
   </contents>
   <contents
@@ -373,24 +373,24 @@
       lotIdFilledIn="Allowed"
       productName="Service for Humanres"
       taxable="true">
-    <inventoryItemTypeId
+    <inventoryItemType
         href="seed-initial.xmi#NON_SERIAL_INV_ITEM"/>
-    <productTypeId
+    <productType
         href="seed-initial.xmi#DIGITAL_GOOD"/>
   </contents>
   <contents
       xsi:type="biz-price:ProductPrice"
-      productId="Humanres"
+      product="Humanres"
       fromDate="2019-01-01T00:00:00.000+0100"
       price="1"
       taxInPrice="true">
-    <productPriceTypeId
+    <productPriceType
         href="seed-initial.xmi#DEFAULT_PRICE"/>
-    <productPricePurposeId
+    <productPricePurpose
         href="seed-initial.xmi#PURCHASE"/>
-    <currencyUomId
+    <currencyUom
         href="seed-initial.xmi#EUR"/>
-    <productStoreGroupId
+    <productStoreGroup
         href="seed-initial-product-store-group.xmi#_NA_"/>
   </contents>
   <contents
@@ -400,24 +400,24 @@
       lotIdFilledIn="Allowed"
       productName="Service for Manufacturing"
       taxable="true">
-    <inventoryItemTypeId
+    <inventoryItemType
         href="seed-initial.xmi#NON_SERIAL_INV_ITEM"/>
-    <productTypeId
+    <productType
         href="seed-initial.xmi#DIGITAL_GOOD"/>
   </contents>
   <contents
       xsi:type="biz-price:ProductPrice"
-      productId="Manufacturing"
+      product="Manufacturing"
       fromDate="2019-01-01T00:00:00.000+0100"
       price="1"
       taxInPrice="true">
-    <productPriceTypeId
+    <productPriceType
         href="seed-initial.xmi#DEFAULT_PRICE"/>
-    <productPricePurposeId
+    <productPricePurpose
         href="seed-initial.xmi#PURCHASE"/>
-    <currencyUomId
+    <currencyUom
         href="seed-initial.xmi#EUR"/>
-    <productStoreGroupId
+    <productStoreGroup
         href="seed-initial-product-store-group.xmi#_NA_"/>
   </contents>
   <contents
@@ -427,24 +427,24 @@
       lotIdFilledIn="Allowed"
       productName="Service for Marketing"
       taxable="true">
-    <inventoryItemTypeId
+    <inventoryItemType
         href="seed-initial.xmi#NON_SERIAL_INV_ITEM"/>
-    <productTypeId
+    <productType
         href="seed-initial.xmi#DIGITAL_GOOD"/>
   </contents>
   <contents
       xsi:type="biz-price:ProductPrice"
-      productId="Marketing"
+      product="Marketing"
       fromDate="2019-01-01T00:00:00.000+0100"
       price="1"
       taxInPrice="true">
-    <productPriceTypeId
+    <productPriceType
         href="seed-initial.xmi#DEFAULT_PRICE"/>
-    <productPricePurposeId
+    <productPricePurpose
         href="seed-initial.xmi#PURCHASE"/>
-    <currencyUomId
+    <currencyUom
         href="seed-initial.xmi#EUR"/>
-    <productStoreGroupId
+    <productStoreGroup
         href="seed-initial-product-store-group.xmi#_NA_"/>
   </contents>
   <contents
@@ -454,24 +454,24 @@
       lotIdFilledIn="Allowed"
       productName="Service for Modeling"
       taxable="true">
-    <inventoryItemTypeId
+    <inventoryItemType
         href="seed-initial.xmi#NON_SERIAL_INV_ITEM"/>
-    <productTypeId
+    <productType
         href="seed-initial.xmi#DIGITAL_GOOD"/>
   </contents>
   <contents
       xsi:type="biz-price:ProductPrice"
-      productId="Modeling"
+      product="Modeling"
       fromDate="2019-01-01T00:00:00.000+0100"
       price="10"
       taxInPrice="true">
-    <productPriceTypeId
+    <productPriceType
         href="seed-initial.xmi#DEFAULT_PRICE"/>
-    <productPricePurposeId
+    <productPricePurpose
         href="seed-initial.xmi#PURCHASE"/>
-    <currencyUomId
+    <currencyUom
         href="seed-initial.xmi#EUR"/>
-    <productStoreGroupId
+    <productStoreGroup
         href="seed-initial-product-store-group.xmi#_NA_"/>
   </contents>
   <contents
@@ -481,24 +481,24 @@
       lotIdFilledIn="Allowed"
       productName="Service for Order"
       taxable="true">
-    <inventoryItemTypeId
+    <inventoryItemType
         href="seed-initial.xmi#NON_SERIAL_INV_ITEM"/>
-    <productTypeId
+    <productType
         href="seed-initial.xmi#DIGITAL_GOOD"/>
   </contents>
   <contents
       xsi:type="biz-price:ProductPrice"
-      productId="Order"
+      product="Order"
       fromDate="2019-01-01T00:00:00.000+0100"
       price="1"
       taxInPrice="true">
-    <productPriceTypeId
+    <productPriceType
         href="seed-initial.xmi#DEFAULT_PRICE"/>
-    <productPricePurposeId
+    <productPricePurpose
         href="seed-initial.xmi#PURCHASE"/>
-    <currencyUomId
+    <currencyUom
         href="seed-initial.xmi#EUR"/>
-    <productStoreGroupId
+    <productStoreGroup
         href="seed-initial-product-store-group.xmi#_NA_"/>
   </contents>
   <contents
@@ -508,24 +508,24 @@
       lotIdFilledIn="Allowed"
       productName="Service for Party"
       taxable="true">
-    <inventoryItemTypeId
+    <inventoryItemType
         href="seed-initial.xmi#NON_SERIAL_INV_ITEM"/>
-    <productTypeId
+    <productType
         href="seed-initial.xmi#DIGITAL_GOOD"/>
   </contents>
   <contents
       xsi:type="biz-price:ProductPrice"
-      productId="Party"
+      product="Party"
       fromDate="2019-01-01T00:00:00.000+0100"
       price="1"
       taxInPrice="true">
-    <productPriceTypeId
+    <productPriceType
         href="seed-initial.xmi#DEFAULT_PRICE"/>
-    <productPricePurposeId
+    <productPricePurpose
         href="seed-initial.xmi#PURCHASE"/>
-    <currencyUomId
+    <currencyUom
         href="seed-initial.xmi#EUR"/>
-    <productStoreGroupId
+    <productStoreGroup
         href="seed-initial-product-store-group.xmi#_NA_"/>
   </contents>
   <contents
@@ -535,24 +535,24 @@
       lotIdFilledIn="Allowed"
       productName="Service for Product"
       taxable="true">
-    <inventoryItemTypeId
+    <inventoryItemType
         href="seed-initial.xmi#NON_SERIAL_INV_ITEM"/>
-    <productTypeId
+    <productType
         href="seed-initial.xmi#DIGITAL_GOOD"/>
   </contents>
   <contents
       xsi:type="biz-price:ProductPrice"
-      productId="Product"
+      product="Product"
       fromDate="2019-01-01T00:00:00.000+0100"
       price="1"
       taxInPrice="true">
-    <productPriceTypeId
+    <productPriceType
         href="seed-initial.xmi#DEFAULT_PRICE"/>
-    <productPricePurposeId
+    <productPricePurpose
         href="seed-initial.xmi#PURCHASE"/>
-    <currencyUomId
+    <currencyUom
         href="seed-initial.xmi#EUR"/>
-    <productStoreGroupId
+    <productStoreGroup
         href="seed-initial-product-store-group.xmi#_NA_"/>
   </contents>
   <contents
@@ -562,24 +562,24 @@
       lotIdFilledIn="Allowed"
       productName="Service for Shipment"
       taxable="true">
-    <inventoryItemTypeId
+    <inventoryItemType
         href="seed-initial.xmi#NON_SERIAL_INV_ITEM"/>
-    <productTypeId
+    <productType
         href="seed-initial.xmi#DIGITAL_GOOD"/>
   </contents>
   <contents
       xsi:type="biz-price:ProductPrice"
-      productId="Shipment"
+      product="Shipment"
       fromDate="2019-01-01T00:00:00.000+0100"
       price="1"
       taxInPrice="true">
-    <productPriceTypeId
+    <productPriceType
         href="seed-initial.xmi#DEFAULT_PRICE"/>
-    <productPricePurposeId
+    <productPricePurpose
         href="seed-initial.xmi#PURCHASE"/>
-    <currencyUomId
+    <currencyUom
         href="seed-initial.xmi#EUR"/>
-    <productStoreGroupId
+    <productStoreGroup
         href="seed-initial-product-store-group.xmi#_NA_"/>
   </contents>
   <contents
@@ -589,24 +589,24 @@
       lotIdFilledIn="Allowed"
       productName="Service for Workeffort"
       taxable="true">
-    <inventoryItemTypeId
+    <inventoryItemType
         href="seed-initial.xmi#NON_SERIAL_INV_ITEM"/>
-    <productTypeId
+    <productType
         href="seed-initial.xmi#DIGITAL_GOOD"/>
   </contents>
   <contents
       xsi:type="biz-price:ProductPrice"
-      productId="Workeffort"
+      product="Workeffort"
       fromDate="2019-01-01T00:00:00.000+0100"
       price="1"
       taxInPrice="true">
-    <productPriceTypeId
+    <productPriceType
         href="seed-initial.xmi#DEFAULT_PRICE"/>
-    <productPricePurposeId
+    <productPricePurpose
         href="seed-initial.xmi#PURCHASE"/>
-    <currencyUomId
+    <currencyUom
         href="seed-initial.xmi#EUR"/>
-    <productStoreGroupId
+    <productStoreGroup
         href="seed-initial-product-store-group.xmi#_NA_"/>
   </contents>
   <contents
@@ -617,16 +617,16 @@
       taxAuthPartyId="ITA_ADE"
       taxPercentage="22"
       taxPromotions="true">
-    <taxAuthorityRateTypeId
+    <taxAuthorityRateType
         href="seed-initial.xmi#SALES_TAX"/>
   </contents>
   <contents
       xsi:type="biz-user:UserPreference"
       userPrefTypeId="ORGANIZATION_PARTY"
       userPrefValue="Company">
-    <userLoginId
+    <userLogin
         href="seed-initial-user-login.xmi#_NA_"/>
-    <userPrefGroupTypeId
+    <userPrefGroupType
         href="seed-initial.xmi#GLOBAL_PREFERENCES"/>
   </contents>
   <contents
@@ -646,9 +646,9 @@
       partyId="PersonCanary"
       firstName="First name"
       lastName="Last name">
-    <partyTypeId
+    <partyType
         href="seed-initial.xmi#PERSON"/>
-    <statusId
+    <status
         href="seed-initial.xmi#PARTY_ENABLED"/>
   </contents>
   <contents
@@ -657,24 +657,24 @@
       internalName="ProductCanary"
       lotIdFilledIn="Allowed"
       productName="ProductCanary description">
-    <inventoryItemTypeId
+    <inventoryItemType
         href="seed-initial.xmi#NON_SERIAL_INV_ITEM"/>
-    <productTypeId
+    <productType
         href="seed-initial.xmi#DIGITAL_GOOD"/>
   </contents>
   <contents
       xsi:type="biz-price:ProductPrice"
-      productId="ProductCanary"
+      product="ProductCanary"
       fromDate="2019-01-01T00:00:00.000+0100"
       price="1"
       taxInPrice="true">
-    <productPriceTypeId
+    <productPriceType
         href="seed-initial.xmi#DEFAULT_PRICE"/>
-    <productPricePurposeId
+    <productPricePurpose
         href="seed-initial.xmi#PURCHASE"/>
-    <currencyUomId
+    <currencyUom
         href="seed-initial.xmi#EUR"/>
-    <productStoreGroupId
+    <productStoreGroup
         href="seed-initial-product-store-group.xmi#_NA_"/>
   </contents>
 </mimo-ent:EntityContainer>

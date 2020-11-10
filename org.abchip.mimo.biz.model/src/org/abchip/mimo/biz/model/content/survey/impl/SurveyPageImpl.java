@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyPageImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyPageImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyPageImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyPageImpl#getSurveyId <em>Survey Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyPageImpl#getSurvey <em>Survey</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyPageImpl#getSurveyPageSeqId <em>Survey Page Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyPageImpl#getPageName <em>Page Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyPageImpl#getSequenceNum <em>Sequence Num</em>}</li>
@@ -153,6 +153,26 @@ public class SurveyPageImpl extends EntityIdentifiableImpl implements SurveyPage
 	 * @generated
 	 */
 	@Override
+	public Survey getSurvey() {
+		return (Survey)eGet(SurveyPackage.Literals.SURVEY_PAGE__SURVEY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSurvey(Survey newSurvey) {
+		eSet(SurveyPackage.Literals.SURVEY_PAGE__SURVEY, newSurvey);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getPageName() {
 		return (String)eGet(SurveyPackage.Literals.SURVEY_PAGE__PAGE_NAME, true);
 	}
@@ -223,26 +243,6 @@ public class SurveyPageImpl extends EntityIdentifiableImpl implements SurveyPage
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Survey getSurveyId() {
-		return (Survey)eGet(SurveyPackage.Literals.SURVEY_PAGE__SURVEY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSurveyId(Survey newSurveyId) {
-		eSet(SurveyPackage.Literals.SURVEY_PAGE__SURVEY_ID, newSurveyId);
 	}
 
 	/**

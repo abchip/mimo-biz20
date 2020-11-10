@@ -30,11 +30,11 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#isIsTaxInShippingPrice <em>Is Tax In Shipping Price</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getMinItemPrice <em>Min Item Price</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getMinPurchase <em>Min Purchase</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getProductCategoryId <em>Product Category Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getProductCategory <em>Product Category</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getTaxAuthPartyId <em>Tax Auth Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getTaxAuthorityRateTypeId <em>Tax Authority Rate Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getTaxAuthorityRateType <em>Tax Authority Rate Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getTaxPercentage <em>Tax Percentage</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#isTaxPromotions <em>Tax Promotions</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#isTaxShipping <em>Tax Shipping</em>}</li>
@@ -178,56 +178,48 @@ public interface TaxAuthorityRateProduct extends EntityTyped<TaxAuthorityRateTyp
 	void setMinPurchase(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Category Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Category Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Category Id</em>' reference.
-	 * @see #setProductCategoryId(ProductCategory)
-	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthorityRateProduct_ProductCategoryId()
+	 * @return the value of the '<em>Product Category</em>' reference.
+	 * @see #setProductCategory(ProductCategory)
+	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthorityRateProduct_ProductCategory()
 	 * @model keys="productCategoryId"
 	 * @generated
 	 */
-	ProductCategory getProductCategoryId();
+	ProductCategory getProductCategory();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getProductCategoryId <em>Product Category Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getProductCategory <em>Product Category</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Category Id</em>' reference.
-	 * @see #getProductCategoryId()
+	 * @param value the new value of the '<em>Product Category</em>' reference.
+	 * @see #getProductCategory()
 	 * @generated
 	 */
-	void setProductCategoryId(ProductCategory value);
+	void setProductCategory(ProductCategory value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Store Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Store</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store Id</em>' reference.
-	 * @see #setProductStoreId(ProductStore)
-	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthorityRateProduct_ProductStoreId()
+	 * @return the value of the '<em>Product Store</em>' reference.
+	 * @see #setProductStore(ProductStore)
+	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthorityRateProduct_ProductStore()
 	 * @model keys="productStoreId"
 	 * @generated
 	 */
-	ProductStore getProductStoreId();
+	ProductStore getProductStore();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getProductStoreId <em>Product Store Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getProductStore <em>Product Store</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store Id</em>' reference.
-	 * @see #getProductStoreId()
+	 * @param value the new value of the '<em>Product Store</em>' reference.
+	 * @see #getProductStore()
 	 * @generated
 	 */
-	void setProductStoreId(ProductStore value);
+	void setProductStore(ProductStore value);
 
 	/**
 	 * Returns the value of the '<em><b>Tax Auth Geo Id</b></em>' attribute.
@@ -280,6 +272,28 @@ public interface TaxAuthorityRateProduct extends EntityTyped<TaxAuthorityRateTyp
 	 * @generated
 	 */
 	void setTaxAuthPartyId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Tax Authority Rate Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tax Authority Rate Type</em>' reference.
+	 * @see #setTaxAuthorityRateType(TaxAuthorityRateType)
+	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthorityRateProduct_TaxAuthorityRateType()
+	 * @model keys="taxAuthorityRateTypeId"
+	 * @generated
+	 */
+	TaxAuthorityRateType getTaxAuthorityRateType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getTaxAuthorityRateType <em>Tax Authority Rate Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tax Authority Rate Type</em>' reference.
+	 * @see #getTaxAuthorityRateType()
+	 * @generated
+	 */
+	void setTaxAuthorityRateType(TaxAuthorityRateType value);
 
 	/**
 	 * Returns the value of the '<em><b>Tax Percentage</b></em>' attribute.
@@ -411,32 +425,6 @@ public interface TaxAuthorityRateProduct extends EntityTyped<TaxAuthorityRateTyp
 	 * @generated
 	 */
 	void setTitleTransferEnumId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Tax Authority Rate Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tax Authority Rate Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tax Authority Rate Type Id</em>' reference.
-	 * @see #setTaxAuthorityRateTypeId(TaxAuthorityRateType)
-	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthorityRateProduct_TaxAuthorityRateTypeId()
-	 * @model keys="taxAuthorityRateTypeId"
-	 * @generated
-	 */
-	TaxAuthorityRateType getTaxAuthorityRateTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct#getTaxAuthorityRateTypeId <em>Tax Authority Rate Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tax Authority Rate Type Id</em>' reference.
-	 * @see #getTaxAuthorityRateTypeId()
-	 * @generated
-	 */
-	void setTaxAuthorityRateTypeId(TaxAuthorityRateType value);
 
 	/**
 	 * Returns the value of the '<em><b>Tax Authority Rate Seq Id</b></em>' attribute.

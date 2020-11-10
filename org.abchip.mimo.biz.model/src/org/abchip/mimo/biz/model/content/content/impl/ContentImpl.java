@@ -44,7 +44,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getCharacterSetId <em>Character Set Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getCharacterSet <em>Character Set</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getChildBranchCount <em>Child Branch Count</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getChildLeafCount <em>Child Leaf Count</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getContentAttributes <em>Content Attributes</em>}</li>
@@ -53,25 +53,25 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getContentName <em>Content Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getContentPurposes <em>Content Purposes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getContentRevisions <em>Content Revisions</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getContentTypeId <em>Content Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getContentType <em>Content Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getCreatedDate <em>Created Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getCustomMethodId <em>Custom Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getDataResourceId <em>Data Resource Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getDataSourceId <em>Data Source Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getDecoratorContentId <em>Decorator Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getCustomMethod <em>Custom Method</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getDataResource <em>Data Resource</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getDataSource <em>Data Source</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getDecoratorContent <em>Decorator Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getFromCommEventContentAssocs <em>From Comm Event Content Assocs</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getInstanceOfContentId <em>Instance Of Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getInstanceOfContent <em>Instance Of Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getLocaleString <em>Locale String</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getMimeTypeId <em>Mime Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getOwnerContentId <em>Owner Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getPrivilegeEnumId <em>Privilege Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getMimeType <em>Mime Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getOwnerContent <em>Owner Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getPrivilegeEnum <em>Privilege Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getServiceName <em>Service Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getTemplateDataResourceId <em>Template Data Resource Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getTemplateDataResource <em>Template Data Resource</em>}</li>
  * </ul>
  *
  * @generated
@@ -193,26 +193,6 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public CharacterSet getCharacterSetId() {
-		return (CharacterSet)eGet(ContentPackage.Literals.CONTENT__CHARACTER_SET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCharacterSetId(CharacterSet newCharacterSetId) {
-		eSet(ContentPackage.Literals.CONTENT__CHARACTER_SET_ID, newCharacterSetId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public long getChildBranchCount() {
 		return (Long)eGet(ContentPackage.Literals.CONTENT__CHILD_BRANCH_COUNT, true);
 	}
@@ -306,6 +286,26 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
+	public CharacterSet getCharacterSet() {
+		return (CharacterSet)eGet(ContentPackage.Literals.CONTENT__CHARACTER_SET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCharacterSet(CharacterSet newCharacterSet) {
+		eSet(ContentPackage.Literals.CONTENT__CHARACTER_SET, newCharacterSet);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getContentName() {
 		return (String)eGet(ContentPackage.Literals.CONTENT__CONTENT_NAME, true);
 	}
@@ -348,8 +348,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public ContentType getContentTypeId() {
-		return (ContentType)eGet(ContentPackage.Literals.CONTENT__CONTENT_TYPE_ID, true);
+	public ContentType getContentType() {
+		return (ContentType)eGet(ContentPackage.Literals.CONTENT__CONTENT_TYPE, true);
 	}
 
 	/**
@@ -358,8 +358,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public void setContentTypeId(ContentType newContentTypeId) {
-		eSet(ContentPackage.Literals.CONTENT__CONTENT_TYPE_ID, newContentTypeId);
+	public void setContentType(ContentType newContentType) {
+		eSet(ContentPackage.Literals.CONTENT__CONTENT_TYPE, newContentType);
 	}
 
 	/**
@@ -408,8 +408,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public CustomMethod getCustomMethodId() {
-		return (CustomMethod)eGet(ContentPackage.Literals.CONTENT__CUSTOM_METHOD_ID, true);
+	public CustomMethod getCustomMethod() {
+		return (CustomMethod)eGet(ContentPackage.Literals.CONTENT__CUSTOM_METHOD, true);
 	}
 
 	/**
@@ -418,8 +418,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public void setCustomMethodId(CustomMethod newCustomMethodId) {
-		eSet(ContentPackage.Literals.CONTENT__CUSTOM_METHOD_ID, newCustomMethodId);
+	public void setCustomMethod(CustomMethod newCustomMethod) {
+		eSet(ContentPackage.Literals.CONTENT__CUSTOM_METHOD, newCustomMethod);
 	}
 
 	/**
@@ -428,8 +428,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public DataResource getDataResourceId() {
-		return (DataResource)eGet(ContentPackage.Literals.CONTENT__DATA_RESOURCE_ID, true);
+	public DataResource getDataResource() {
+		return (DataResource)eGet(ContentPackage.Literals.CONTENT__DATA_RESOURCE, true);
 	}
 
 	/**
@@ -438,8 +438,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public void setDataResourceId(DataResource newDataResourceId) {
-		eSet(ContentPackage.Literals.CONTENT__DATA_RESOURCE_ID, newDataResourceId);
+	public void setDataResource(DataResource newDataResource) {
+		eSet(ContentPackage.Literals.CONTENT__DATA_RESOURCE, newDataResource);
 	}
 
 	/**
@@ -448,8 +448,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public DataSource getDataSourceId() {
-		return (DataSource)eGet(ContentPackage.Literals.CONTENT__DATA_SOURCE_ID, true);
+	public DataSource getDataSource() {
+		return (DataSource)eGet(ContentPackage.Literals.CONTENT__DATA_SOURCE, true);
 	}
 
 	/**
@@ -458,8 +458,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public void setDataSourceId(DataSource newDataSourceId) {
-		eSet(ContentPackage.Literals.CONTENT__DATA_SOURCE_ID, newDataSourceId);
+	public void setDataSource(DataSource newDataSource) {
+		eSet(ContentPackage.Literals.CONTENT__DATA_SOURCE, newDataSource);
 	}
 
 	/**
@@ -468,8 +468,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public Content getDecoratorContentId() {
-		return (Content)eGet(ContentPackage.Literals.CONTENT__DECORATOR_CONTENT_ID, true);
+	public Content getDecoratorContent() {
+		return (Content)eGet(ContentPackage.Literals.CONTENT__DECORATOR_CONTENT, true);
 	}
 
 	/**
@@ -478,8 +478,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public void setDecoratorContentId(Content newDecoratorContentId) {
-		eSet(ContentPackage.Literals.CONTENT__DECORATOR_CONTENT_ID, newDecoratorContentId);
+	public void setDecoratorContent(Content newDecoratorContent) {
+		eSet(ContentPackage.Literals.CONTENT__DECORATOR_CONTENT, newDecoratorContent);
 	}
 
 	/**
@@ -519,8 +519,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public Content getInstanceOfContentId() {
-		return (Content)eGet(ContentPackage.Literals.CONTENT__INSTANCE_OF_CONTENT_ID, true);
+	public Content getInstanceOfContent() {
+		return (Content)eGet(ContentPackage.Literals.CONTENT__INSTANCE_OF_CONTENT, true);
 	}
 
 	/**
@@ -529,8 +529,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public void setInstanceOfContentId(Content newInstanceOfContentId) {
-		eSet(ContentPackage.Literals.CONTENT__INSTANCE_OF_CONTENT_ID, newInstanceOfContentId);
+	public void setInstanceOfContent(Content newInstanceOfContent) {
+		eSet(ContentPackage.Literals.CONTENT__INSTANCE_OF_CONTENT, newInstanceOfContent);
 	}
 
 	/**
@@ -599,8 +599,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public MimeType getMimeTypeId() {
-		return (MimeType)eGet(ContentPackage.Literals.CONTENT__MIME_TYPE_ID, true);
+	public MimeType getMimeType() {
+		return (MimeType)eGet(ContentPackage.Literals.CONTENT__MIME_TYPE, true);
 	}
 
 	/**
@@ -609,8 +609,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public void setMimeTypeId(MimeType newMimeTypeId) {
-		eSet(ContentPackage.Literals.CONTENT__MIME_TYPE_ID, newMimeTypeId);
+	public void setMimeType(MimeType newMimeType) {
+		eSet(ContentPackage.Literals.CONTENT__MIME_TYPE, newMimeType);
 	}
 
 	/**
@@ -619,8 +619,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public Content getOwnerContentId() {
-		return (Content)eGet(ContentPackage.Literals.CONTENT__OWNER_CONTENT_ID, true);
+	public Content getOwnerContent() {
+		return (Content)eGet(ContentPackage.Literals.CONTENT__OWNER_CONTENT, true);
 	}
 
 	/**
@@ -629,8 +629,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public void setOwnerContentId(Content newOwnerContentId) {
-		eSet(ContentPackage.Literals.CONTENT__OWNER_CONTENT_ID, newOwnerContentId);
+	public void setOwnerContent(Content newOwnerContent) {
+		eSet(ContentPackage.Literals.CONTENT__OWNER_CONTENT, newOwnerContent);
 	}
 
 	/**
@@ -639,8 +639,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public Enumeration getPrivilegeEnumId() {
-		return (Enumeration)eGet(ContentPackage.Literals.CONTENT__PRIVILEGE_ENUM_ID, true);
+	public Enumeration getPrivilegeEnum() {
+		return (Enumeration)eGet(ContentPackage.Literals.CONTENT__PRIVILEGE_ENUM, true);
 	}
 
 	/**
@@ -649,8 +649,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public void setPrivilegeEnumId(Enumeration newPrivilegeEnumId) {
-		eSet(ContentPackage.Literals.CONTENT__PRIVILEGE_ENUM_ID, newPrivilegeEnumId);
+	public void setPrivilegeEnum(Enumeration newPrivilegeEnum) {
+		eSet(ContentPackage.Literals.CONTENT__PRIVILEGE_ENUM, newPrivilegeEnum);
 	}
 
 	/**
@@ -679,8 +679,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(ContentPackage.Literals.CONTENT__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(ContentPackage.Literals.CONTENT__STATUS, true);
 	}
 
 	/**
@@ -689,8 +689,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(ContentPackage.Literals.CONTENT__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(ContentPackage.Literals.CONTENT__STATUS, newStatus);
 	}
 
 	/**
@@ -699,8 +699,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public DataResource getTemplateDataResourceId() {
-		return (DataResource)eGet(ContentPackage.Literals.CONTENT__TEMPLATE_DATA_RESOURCE_ID, true);
+	public DataResource getTemplateDataResource() {
+		return (DataResource)eGet(ContentPackage.Literals.CONTENT__TEMPLATE_DATA_RESOURCE, true);
 	}
 
 	/**
@@ -709,8 +709,8 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	 * @generated
 	 */
 	@Override
-	public void setTemplateDataResourceId(DataResource newTemplateDataResourceId) {
-		eSet(ContentPackage.Literals.CONTENT__TEMPLATE_DATA_RESOURCE_ID, newTemplateDataResourceId);
+	public void setTemplateDataResource(DataResource newTemplateDataResource) {
+		eSet(ContentPackage.Literals.CONTENT__TEMPLATE_DATA_RESOURCE, newTemplateDataResource);
 	}
 
 	/**

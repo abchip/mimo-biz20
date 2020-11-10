@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionFulfillmentPieceImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionFulfillmentPieceImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionFulfillmentPieceImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionFulfillmentPieceImpl#getSubscriptionId <em>Subscription Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionFulfillmentPieceImpl#getSubscriptionActivityId <em>Subscription Activity Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionFulfillmentPieceImpl#getSubscription <em>Subscription</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionFulfillmentPieceImpl#getSubscriptionActivity <em>Subscription Activity</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class SubscriptionFulfillmentPieceImpl extends EntityIdentifiableImpl imp
 	 * @generated
 	 */
 	@Override
-	public Subscription getSubscriptionId() {
-		return (Subscription)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION_ID, true);
+	public Subscription getSubscription() {
+		return (Subscription)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION, true);
 	}
 
 	/**
@@ -162,8 +162,8 @@ public class SubscriptionFulfillmentPieceImpl extends EntityIdentifiableImpl imp
 	 * @generated
 	 */
 	@Override
-	public void setSubscriptionId(Subscription newSubscriptionId) {
-		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION_ID, newSubscriptionId);
+	public void setSubscription(Subscription newSubscription) {
+		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION, newSubscription);
 	}
 
 	/**
@@ -172,8 +172,8 @@ public class SubscriptionFulfillmentPieceImpl extends EntityIdentifiableImpl imp
 	 * @generated
 	 */
 	@Override
-	public SubscriptionActivity getSubscriptionActivityId() {
-		return (SubscriptionActivity)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION_ACTIVITY_ID, true);
+	public SubscriptionActivity getSubscriptionActivity() {
+		return (SubscriptionActivity)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION_ACTIVITY, true);
 	}
 
 	/**
@@ -182,8 +182,8 @@ public class SubscriptionFulfillmentPieceImpl extends EntityIdentifiableImpl imp
 	 * @generated
 	 */
 	@Override
-	public void setSubscriptionActivityId(SubscriptionActivity newSubscriptionActivityId) {
-		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION_ACTIVITY_ID, newSubscriptionActivityId);
+	public void setSubscriptionActivity(SubscriptionActivity newSubscriptionActivity) {
+		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION_ACTIVITY, newSubscriptionActivity);
 	}
 
 	/**

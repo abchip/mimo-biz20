@@ -39,7 +39,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationImpl#getPartyIdFrom <em>Party Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationImpl#getPartyInvitationGroupAssocs <em>Party Invitation Group Assocs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationImpl#getPartyInvitationRoleAssocs <em>Party Invitation Role Assocs</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationImpl#getToName <em>To Name</em>}</li>
  * </ul>
  *
@@ -221,26 +221,6 @@ public class PartyInvitationImpl extends EntityIdentifiableImpl implements Party
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(PartyPackage.Literals.PARTY_INVITATION__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(PartyPackage.Literals.PARTY_INVITATION__STATUS_ID, newStatusId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getToName() {
 		return (String)eGet(PartyPackage.Literals.PARTY_INVITATION__TO_NAME, true);
 	}
@@ -333,6 +313,26 @@ public class PartyInvitationImpl extends EntityIdentifiableImpl implements Party
 	@Override
 	public List<PartyInvitationRoleAssoc> getPartyInvitationRoleAssocs() {
 		return (List<PartyInvitationRoleAssoc>)eGet(PartyPackage.Literals.PARTY_INVITATION__PARTY_INVITATION_ROLE_ASSOCS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(PartyPackage.Literals.PARTY_INVITATION__STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(StatusItem newStatus) {
+		eSet(PartyPackage.Literals.PARTY_INVITATION__STATUS, newStatus);
 	}
 
 	/**

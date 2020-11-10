@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentKeywordImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentKeywordImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentKeywordImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentKeywordImpl#getContentId <em>Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentKeywordImpl#getContent <em>Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentKeywordImpl#getKeyword <em>Keyword</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentKeywordImpl#getRelevancyWeight <em>Relevancy Weight</em>}</li>
  * </ul>
@@ -152,8 +152,8 @@ public class ContentKeywordImpl extends EntityIdentifiableImpl implements Conten
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(ContentPackage.Literals.CONTENT_KEYWORD__CONTENT_ID, true);
+	public Content getContent() {
+		return (Content)eGet(ContentPackage.Literals.CONTENT_KEYWORD__CONTENT, true);
 	}
 
 	/**
@@ -162,8 +162,8 @@ public class ContentKeywordImpl extends EntityIdentifiableImpl implements Conten
 	 * @generated
 	 */
 	@Override
-	public void setContentId(Content newContentId) {
-		eSet(ContentPackage.Literals.CONTENT_KEYWORD__CONTENT_ID, newContentId);
+	public void setContent(Content newContent) {
+		eSet(ContentPackage.Literals.CONTENT_KEYWORD__CONTENT, newContent);
 	}
 
 	/**

@@ -29,12 +29,12 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#isAllowCompanyAddr <em>Allow Company Addr</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#isAllowUspsAddr <em>Allow Usps Addr</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getAllowancePercent <em>Allowance Percent</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getCompanyPartyId <em>Company Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getCompanyParty <em>Company Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getConfigProps <em>Config Props</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getExcludeFeatureGroup <em>Exclude Feature Group</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getExcludeGeoId <em>Exclude Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getExcludeGeo <em>Exclude Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getIncludeFeatureGroup <em>Include Feature Group</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getIncludeGeoId <em>Include Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getIncludeGeo <em>Include Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#isIncludeNoChargeItems <em>Include No Charge Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getMaxSize <em>Max Size</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getMaxTotal <em>Max Total</em>}</li>
@@ -50,9 +50,9 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getRoleTypeId <em>Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getSequenceNumber <em>Sequence Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getServiceName <em>Service Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getShipmentCustomMethodId <em>Shipment Custom Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getShipmentGatewayConfigId <em>Shipment Gateway Config Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getShipmentCustomMethod <em>Shipment Custom Method</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getShipmentGatewayConfig <em>Shipment Gateway Config</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getShipmentMethodType <em>Shipment Method Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreShipmentMeth()
@@ -87,30 +87,26 @@ public interface ProductStoreShipmentMeth extends EntityIdentifiable, EntityInfo
 	void setAllowancePercent(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Company Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Company Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Company Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Company Party Id</em>' reference.
-	 * @see #setCompanyPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreShipmentMeth_CompanyPartyId()
+	 * @return the value of the '<em>Company Party</em>' reference.
+	 * @see #setCompanyParty(Party)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreShipmentMeth_CompanyParty()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getCompanyPartyId();
+	Party getCompanyParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getCompanyPartyId <em>Company Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getCompanyParty <em>Company Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Company Party Id</em>' reference.
-	 * @see #getCompanyPartyId()
+	 * @param value the new value of the '<em>Company Party</em>' reference.
+	 * @see #getCompanyParty()
 	 * @generated
 	 */
-	void setCompanyPartyId(Party value);
+	void setCompanyParty(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Config Props</b></em>' attribute.
@@ -165,30 +161,26 @@ public interface ProductStoreShipmentMeth extends EntityIdentifiable, EntityInfo
 	void setExcludeFeatureGroup(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Exclude Geo Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Exclude Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Exclude Geo Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Exclude Geo Id</em>' reference.
-	 * @see #setExcludeGeoId(Geo)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreShipmentMeth_ExcludeGeoId()
+	 * @return the value of the '<em>Exclude Geo</em>' reference.
+	 * @see #setExcludeGeo(Geo)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreShipmentMeth_ExcludeGeo()
 	 * @model keys="geoId"
 	 * @generated
 	 */
-	Geo getExcludeGeoId();
+	Geo getExcludeGeo();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getExcludeGeoId <em>Exclude Geo Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getExcludeGeo <em>Exclude Geo</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Exclude Geo Id</em>' reference.
-	 * @see #getExcludeGeoId()
+	 * @param value the new value of the '<em>Exclude Geo</em>' reference.
+	 * @see #getExcludeGeo()
 	 * @generated
 	 */
-	void setExcludeGeoId(Geo value);
+	void setExcludeGeo(Geo value);
 
 	/**
 	 * Returns the value of the '<em><b>Include Feature Group</b></em>' attribute.
@@ -217,6 +209,28 @@ public interface ProductStoreShipmentMeth extends EntityIdentifiable, EntityInfo
 	void setIncludeFeatureGroup(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Include Geo</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Include Geo</em>' reference.
+	 * @see #setIncludeGeo(Geo)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreShipmentMeth_IncludeGeo()
+	 * @model keys="geoId"
+	 * @generated
+	 */
+	Geo getIncludeGeo();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getIncludeGeo <em>Include Geo</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Include Geo</em>' reference.
+	 * @see #getIncludeGeo()
+	 * @generated
+	 */
+	void setIncludeGeo(Geo value);
+
+	/**
 	 * Returns the value of the '<em><b>Include No Charge Items</b></em>' attribute.
 	 * The default value is <code>"true"</code>.
 	 * <!-- begin-user-doc -->
@@ -242,32 +256,6 @@ public interface ProductStoreShipmentMeth extends EntityIdentifiable, EntityInfo
 	 * @generated
 	 */
 	void setIncludeNoChargeItems(boolean value);
-
-	/**
-	 * Returns the value of the '<em><b>Include Geo Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Include Geo Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Include Geo Id</em>' reference.
-	 * @see #setIncludeGeoId(Geo)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreShipmentMeth_IncludeGeoId()
-	 * @model keys="geoId"
-	 * @generated
-	 */
-	Geo getIncludeGeoId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getIncludeGeoId <em>Include Geo Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Include Geo Id</em>' reference.
-	 * @see #getIncludeGeoId()
-	 * @generated
-	 */
-	void setIncludeGeoId(Geo value);
 
 	/**
 	 * Returns the value of the '<em><b>Max Size</b></em>' attribute.
@@ -715,81 +703,69 @@ public interface ProductStoreShipmentMeth extends EntityIdentifiable, EntityInfo
 	void setServiceName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Shipment Custom Method Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Shipment Custom Method</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Custom Method Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shipment Custom Method Id</em>' reference.
-	 * @see #setShipmentCustomMethodId(CustomMethod)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreShipmentMeth_ShipmentCustomMethodId()
+	 * @return the value of the '<em>Shipment Custom Method</em>' reference.
+	 * @see #setShipmentCustomMethod(CustomMethod)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreShipmentMeth_ShipmentCustomMethod()
 	 * @model keys="customMethodId"
 	 * @generated
 	 */
-	CustomMethod getShipmentCustomMethodId();
+	CustomMethod getShipmentCustomMethod();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getShipmentCustomMethodId <em>Shipment Custom Method Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getShipmentCustomMethod <em>Shipment Custom Method</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shipment Custom Method Id</em>' reference.
-	 * @see #getShipmentCustomMethodId()
+	 * @param value the new value of the '<em>Shipment Custom Method</em>' reference.
+	 * @see #getShipmentCustomMethod()
 	 * @generated
 	 */
-	void setShipmentCustomMethodId(CustomMethod value);
+	void setShipmentCustomMethod(CustomMethod value);
 
 	/**
-	 * Returns the value of the '<em><b>Shipment Gateway Config Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Shipment Gateway Config</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Gateway Config Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shipment Gateway Config Id</em>' reference.
-	 * @see #setShipmentGatewayConfigId(ShipmentGatewayConfig)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreShipmentMeth_ShipmentGatewayConfigId()
+	 * @return the value of the '<em>Shipment Gateway Config</em>' reference.
+	 * @see #setShipmentGatewayConfig(ShipmentGatewayConfig)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreShipmentMeth_ShipmentGatewayConfig()
 	 * @model keys="shipmentGatewayConfigId"
 	 * @generated
 	 */
-	ShipmentGatewayConfig getShipmentGatewayConfigId();
+	ShipmentGatewayConfig getShipmentGatewayConfig();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getShipmentGatewayConfigId <em>Shipment Gateway Config Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getShipmentGatewayConfig <em>Shipment Gateway Config</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shipment Gateway Config Id</em>' reference.
-	 * @see #getShipmentGatewayConfigId()
+	 * @param value the new value of the '<em>Shipment Gateway Config</em>' reference.
+	 * @see #getShipmentGatewayConfig()
 	 * @generated
 	 */
-	void setShipmentGatewayConfigId(ShipmentGatewayConfig value);
+	void setShipmentGatewayConfig(ShipmentGatewayConfig value);
 
 	/**
-	 * Returns the value of the '<em><b>Shipment Method Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Shipment Method Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Method Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shipment Method Type Id</em>' reference.
-	 * @see #setShipmentMethodTypeId(ShipmentMethodType)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreShipmentMeth_ShipmentMethodTypeId()
+	 * @return the value of the '<em>Shipment Method Type</em>' reference.
+	 * @see #setShipmentMethodType(ShipmentMethodType)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreShipmentMeth_ShipmentMethodType()
 	 * @model keys="shipmentMethodTypeId"
 	 * @generated
 	 */
-	ShipmentMethodType getShipmentMethodTypeId();
+	ShipmentMethodType getShipmentMethodType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth#getShipmentMethodType <em>Shipment Method Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shipment Method Type Id</em>' reference.
-	 * @see #getShipmentMethodTypeId()
+	 * @param value the new value of the '<em>Shipment Method Type</em>' reference.
+	 * @see #getShipmentMethodType()
 	 * @generated
 	 */
-	void setShipmentMethodTypeId(ShipmentMethodType value);
+	void setShipmentMethodType(ShipmentMethodType value);
 
 } // ProductStoreShipmentMeth

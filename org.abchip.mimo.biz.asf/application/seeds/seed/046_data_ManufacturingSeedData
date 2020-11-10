@@ -15,32 +15,32 @@
   <contents xsi:type="biz-mrp:MrpEventType" mrpEventTypeId="PROP_TRANSFER_RECP" description="Proposed Transfer receipt"/>
   <contents xsi:type="biz-techdata:TechDataCalendarWeek" calendarWeekId="SUPPLIER" description="8hours/days, currently the Re-Order Process convert day to mms with 8h/days" fridayCapacity="2.88E7" fridayStartTime="1970-01-01T08:30:00.000+0100" mondayCapacity="2.88E7" mondayStartTime="1970-01-01T08:30:00.000+0100" thursdayCapacity="2.88E7" thursdayStartTime="1970-01-01T08:30:00.000+0100" tuesdayCapacity="2.88E7" tuesdayStartTime="1970-01-01T08:30:00.000+0100" wednesdayCapacity="2.88E7" wednesdayStartTime="1970-01-01T08:30:00.000+0100"/>
   <contents xsi:type="biz-techdata:TechDataCalendar" calendarId="SUPPLIER" description="Calendar used for Re-Order date calculation for bought product">
-    <calendarWeekId href="TechDataCalendarWeek#SUPPLIER"/>
+    <calendarWeek href="TechDataCalendarWeek#SUPPLIER"/>
   </contents>
   <contents xsi:type="biz-techdata:TechDataCalendarWeek" calendarWeekId="DEFAULT" description="8hours/days" fridayCapacity="2.88E7" fridayStartTime="1970-01-01T08:30:00.000+0100" mondayCapacity="2.88E7" mondayStartTime="1970-01-01T08:30:00.000+0100" thursdayCapacity="2.88E7" thursdayStartTime="1970-01-01T08:30:00.000+0100" tuesdayCapacity="2.88E7" tuesdayStartTime="1970-01-01T08:30:00.000+0100" wednesdayCapacity="2.88E7" wednesdayStartTime="1970-01-01T08:30:00.000+0100"/>
   <contents xsi:type="biz-techdata:TechDataCalendar" calendarId="DEFAULT" description="Default calendar used when no specific calendar is defined">
-    <calendarWeekId href="TechDataCalendarWeek#DEFAULT"/>
+    <calendarWeek href="TechDataCalendarWeek#DEFAULT"/>
   </contents>
   <contents xsi:type="biz-workeffort:WorkEffort" workEffortId="DEFAULT_ROUTING" description="Default Routing" quantityToProduce="0" revisionNumber="1" workEffortName="Default Routing">
-    <currentStatusId href="StatusItem#ROU_ACTIVE"/>
-    <workEffortTypeId href="WorkEffortType#ROUTING"/>
+    <currentStatus href="StatusItem#ROU_ACTIVE"/>
+    <workEffortType href="WorkEffortType#ROUTING"/>
   </contents>
   <contents xsi:type="biz-workeffort:WorkEffort" workEffortId="DEFAULT_TASK" description="Default Routing Task" revisionNumber="1" workEffortName="Default Routing Task">
-    <currentStatusId href="StatusItem#ROU_ACTIVE"/>
-    <workEffortPurposeTypeId href="WorkEffortPurposeType#ROU_ASSEMBLING"/>
-    <workEffortTypeId href="WorkEffortType#ROU_TASK"/>
+    <currentStatus href="StatusItem#ROU_ACTIVE"/>
+    <workEffortPurposeType href="WorkEffortPurposeType#ROU_ASSEMBLING"/>
+    <workEffortType href="WorkEffortType#ROU_TASK"/>
   </contents>
   <contents xsi:type="biz-workeffort:WorkEffortAssoc" fromDate="2004-09-24T15:09:38.736+0200" sequenceNum="10">
-    <workEffortAssocTypeId href="WorkEffortAssocType#ROUTING_COMPONENT"/>
+    <workEffortAssocType href="WorkEffortAssocType#ROUTING_COMPONENT"/>
     <workEffortIdFrom href="WorkEffort#DEFAULT_ROUTING"/>
     <workEffortIdTo href="WorkEffort#DEFAULT_TASK"/>
   </contents>
   <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="TASK_FORMULA" description="Formula for calculating time estimates for tasks"/>
   <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="BOM_FORMULA" description="Formula for calculating material estimates for boms"/>
   <contents xsi:type="biz-enum:Enumeration" enumId="WF_PREDECESSOR" description="Predecessor" enumCode="PREDECESSOR" sequenceId="1">
-    <enumTypeId href="EnumerationType#WORKFLOW"/>
+    <enumType href="EnumerationType#WORKFLOW"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="WF_SUCCESSOR" description="Successor" enumCode="SUCCESSOR" sequenceId="2">
-    <enumTypeId href="EnumerationType#WORKFLOW"/>
+    <enumType href="EnumerationType#WORKFLOW"/>
   </contents>
 </mimo-ent:EntityContainer>

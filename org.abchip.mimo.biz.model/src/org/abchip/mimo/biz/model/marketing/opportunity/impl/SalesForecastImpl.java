@@ -37,14 +37,14 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getSalesForecastId <em>Sales Forecast Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getBestCaseAmount <em>Best Case Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getClosedAmount <em>Closed Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getCreatedByUserLoginId <em>Created By User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getCustomTimePeriodId <em>Custom Time Period Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getCurrencyUom <em>Currency Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getCustomTimePeriod <em>Custom Time Period</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getForecastAmount <em>Forecast Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getInternalPartyId <em>Internal Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getModifiedByUserLoginId <em>Modified By User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getParentSalesForecastId <em>Parent Sales Forecast Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getInternalParty <em>Internal Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getModifiedByUserLogin <em>Modified By User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getOrganizationParty <em>Organization Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getParentSalesForecast <em>Parent Sales Forecast</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getPercentOfQuotaClosed <em>Percent Of Quota Closed</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getPercentOfQuotaForecast <em>Percent Of Quota Forecast</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastImpl#getPipelineAmount <em>Pipeline Amount</em>}</li>
@@ -211,8 +211,8 @@ public class SalesForecastImpl extends EntityIdentifiableImpl implements SalesFo
 	 * @generated
 	 */
 	@Override
-	public UserLogin getCreatedByUserLoginId() {
-		return (UserLogin)eGet(OpportunityPackage.Literals.SALES_FORECAST__CREATED_BY_USER_LOGIN_ID, true);
+	public UserLogin getCreatedByUserLogin() {
+		return (UserLogin)eGet(OpportunityPackage.Literals.SALES_FORECAST__CREATED_BY_USER_LOGIN, true);
 	}
 
 	/**
@@ -221,8 +221,8 @@ public class SalesForecastImpl extends EntityIdentifiableImpl implements SalesFo
 	 * @generated
 	 */
 	@Override
-	public void setCreatedByUserLoginId(UserLogin newCreatedByUserLoginId) {
-		eSet(OpportunityPackage.Literals.SALES_FORECAST__CREATED_BY_USER_LOGIN_ID, newCreatedByUserLoginId);
+	public void setCreatedByUserLogin(UserLogin newCreatedByUserLogin) {
+		eSet(OpportunityPackage.Literals.SALES_FORECAST__CREATED_BY_USER_LOGIN, newCreatedByUserLogin);
 	}
 
 	/**
@@ -231,8 +231,8 @@ public class SalesForecastImpl extends EntityIdentifiableImpl implements SalesFo
 	 * @generated
 	 */
 	@Override
-	public Uom getCurrencyUomId() {
-		return (Uom)eGet(OpportunityPackage.Literals.SALES_FORECAST__CURRENCY_UOM_ID, true);
+	public Uom getCurrencyUom() {
+		return (Uom)eGet(OpportunityPackage.Literals.SALES_FORECAST__CURRENCY_UOM, true);
 	}
 
 	/**
@@ -241,8 +241,8 @@ public class SalesForecastImpl extends EntityIdentifiableImpl implements SalesFo
 	 * @generated
 	 */
 	@Override
-	public void setCurrencyUomId(Uom newCurrencyUomId) {
-		eSet(OpportunityPackage.Literals.SALES_FORECAST__CURRENCY_UOM_ID, newCurrencyUomId);
+	public void setCurrencyUom(Uom newCurrencyUom) {
+		eSet(OpportunityPackage.Literals.SALES_FORECAST__CURRENCY_UOM, newCurrencyUom);
 	}
 
 	/**
@@ -251,8 +251,8 @@ public class SalesForecastImpl extends EntityIdentifiableImpl implements SalesFo
 	 * @generated
 	 */
 	@Override
-	public CustomTimePeriod getCustomTimePeriodId() {
-		return (CustomTimePeriod)eGet(OpportunityPackage.Literals.SALES_FORECAST__CUSTOM_TIME_PERIOD_ID, true);
+	public CustomTimePeriod getCustomTimePeriod() {
+		return (CustomTimePeriod)eGet(OpportunityPackage.Literals.SALES_FORECAST__CUSTOM_TIME_PERIOD, true);
 	}
 
 	/**
@@ -261,8 +261,8 @@ public class SalesForecastImpl extends EntityIdentifiableImpl implements SalesFo
 	 * @generated
 	 */
 	@Override
-	public void setCustomTimePeriodId(CustomTimePeriod newCustomTimePeriodId) {
-		eSet(OpportunityPackage.Literals.SALES_FORECAST__CUSTOM_TIME_PERIOD_ID, newCustomTimePeriodId);
+	public void setCustomTimePeriod(CustomTimePeriod newCustomTimePeriod) {
+		eSet(OpportunityPackage.Literals.SALES_FORECAST__CUSTOM_TIME_PERIOD, newCustomTimePeriod);
 	}
 
 	/**
@@ -291,8 +291,8 @@ public class SalesForecastImpl extends EntityIdentifiableImpl implements SalesFo
 	 * @generated
 	 */
 	@Override
-	public Party getInternalPartyId() {
-		return (Party)eGet(OpportunityPackage.Literals.SALES_FORECAST__INTERNAL_PARTY_ID, true);
+	public Party getInternalParty() {
+		return (Party)eGet(OpportunityPackage.Literals.SALES_FORECAST__INTERNAL_PARTY, true);
 	}
 
 	/**
@@ -301,8 +301,8 @@ public class SalesForecastImpl extends EntityIdentifiableImpl implements SalesFo
 	 * @generated
 	 */
 	@Override
-	public void setInternalPartyId(Party newInternalPartyId) {
-		eSet(OpportunityPackage.Literals.SALES_FORECAST__INTERNAL_PARTY_ID, newInternalPartyId);
+	public void setInternalParty(Party newInternalParty) {
+		eSet(OpportunityPackage.Literals.SALES_FORECAST__INTERNAL_PARTY, newInternalParty);
 	}
 
 	/**
@@ -311,8 +311,8 @@ public class SalesForecastImpl extends EntityIdentifiableImpl implements SalesFo
 	 * @generated
 	 */
 	@Override
-	public UserLogin getModifiedByUserLoginId() {
-		return (UserLogin)eGet(OpportunityPackage.Literals.SALES_FORECAST__MODIFIED_BY_USER_LOGIN_ID, true);
+	public UserLogin getModifiedByUserLogin() {
+		return (UserLogin)eGet(OpportunityPackage.Literals.SALES_FORECAST__MODIFIED_BY_USER_LOGIN, true);
 	}
 
 	/**
@@ -321,8 +321,8 @@ public class SalesForecastImpl extends EntityIdentifiableImpl implements SalesFo
 	 * @generated
 	 */
 	@Override
-	public void setModifiedByUserLoginId(UserLogin newModifiedByUserLoginId) {
-		eSet(OpportunityPackage.Literals.SALES_FORECAST__MODIFIED_BY_USER_LOGIN_ID, newModifiedByUserLoginId);
+	public void setModifiedByUserLogin(UserLogin newModifiedByUserLogin) {
+		eSet(OpportunityPackage.Literals.SALES_FORECAST__MODIFIED_BY_USER_LOGIN, newModifiedByUserLogin);
 	}
 
 	/**
@@ -331,8 +331,8 @@ public class SalesForecastImpl extends EntityIdentifiableImpl implements SalesFo
 	 * @generated
 	 */
 	@Override
-	public Party getOrganizationPartyId() {
-		return (Party)eGet(OpportunityPackage.Literals.SALES_FORECAST__ORGANIZATION_PARTY_ID, true);
+	public Party getOrganizationParty() {
+		return (Party)eGet(OpportunityPackage.Literals.SALES_FORECAST__ORGANIZATION_PARTY, true);
 	}
 
 	/**
@@ -341,8 +341,8 @@ public class SalesForecastImpl extends EntityIdentifiableImpl implements SalesFo
 	 * @generated
 	 */
 	@Override
-	public void setOrganizationPartyId(Party newOrganizationPartyId) {
-		eSet(OpportunityPackage.Literals.SALES_FORECAST__ORGANIZATION_PARTY_ID, newOrganizationPartyId);
+	public void setOrganizationParty(Party newOrganizationParty) {
+		eSet(OpportunityPackage.Literals.SALES_FORECAST__ORGANIZATION_PARTY, newOrganizationParty);
 	}
 
 	/**
@@ -351,8 +351,8 @@ public class SalesForecastImpl extends EntityIdentifiableImpl implements SalesFo
 	 * @generated
 	 */
 	@Override
-	public SalesForecast getParentSalesForecastId() {
-		return (SalesForecast)eGet(OpportunityPackage.Literals.SALES_FORECAST__PARENT_SALES_FORECAST_ID, true);
+	public SalesForecast getParentSalesForecast() {
+		return (SalesForecast)eGet(OpportunityPackage.Literals.SALES_FORECAST__PARENT_SALES_FORECAST, true);
 	}
 
 	/**
@@ -361,8 +361,8 @@ public class SalesForecastImpl extends EntityIdentifiableImpl implements SalesFo
 	 * @generated
 	 */
 	@Override
-	public void setParentSalesForecastId(SalesForecast newParentSalesForecastId) {
-		eSet(OpportunityPackage.Literals.SALES_FORECAST__PARENT_SALES_FORECAST_ID, newParentSalesForecastId);
+	public void setParentSalesForecast(SalesForecast newParentSalesForecast) {
+		eSet(OpportunityPackage.Literals.SALES_FORECAST__PARENT_SALES_FORECAST, newParentSalesForecast);
 	}
 
 	/**

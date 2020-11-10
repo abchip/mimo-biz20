@@ -21,9 +21,9 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getFacilityGroupId <em>Facility Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getFacilityGroup <em>Facility Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getRoleType <em>Role Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroupRole()
@@ -32,84 +32,72 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface FacilityGroupRole extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroupRole_PartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getPartyId <em>Party Id</em>}' reference.
+	 * Returns the value of the '<em><b>Facility Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
-	 * @generated
-	 */
-	void setPartyId(Party value);
-
-	/**
-	 * Returns the value of the '<em><b>Role Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Role Type Id</em>' reference.
-	 * @see #setRoleTypeId(RoleType)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroupRole_RoleTypeId()
-	 * @model keys="roleTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	RoleType getRoleTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getRoleTypeId <em>Role Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Role Type Id</em>' reference.
-	 * @see #getRoleTypeId()
-	 * @generated
-	 */
-	void setRoleTypeId(RoleType value);
-
-	/**
-	 * Returns the value of the '<em><b>Facility Group Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Group Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facility Group Id</em>' reference.
-	 * @see #setFacilityGroupId(FacilityGroup)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroupRole_FacilityGroupId()
+	 * @return the value of the '<em>Facility Group</em>' reference.
+	 * @see #setFacilityGroup(FacilityGroup)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroupRole_FacilityGroup()
 	 * @model keys="facilityGroupId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	FacilityGroup getFacilityGroupId();
+	FacilityGroup getFacilityGroup();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getFacilityGroupId <em>Facility Group Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getFacilityGroup <em>Facility Group</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Facility Group Id</em>' reference.
-	 * @see #getFacilityGroupId()
+	 * @param value the new value of the '<em>Facility Group</em>' reference.
+	 * @see #getFacilityGroup()
 	 * @generated
 	 */
-	void setFacilityGroupId(FacilityGroup value);
+	void setFacilityGroup(FacilityGroup value);
+
+	/**
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroupRole_Party()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getParty <em>Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
+	 * @generated
+	 */
+	void setParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Role Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Role Type</em>' reference.
+	 * @see #setRoleType(RoleType)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroupRole_RoleType()
+	 * @model keys="roleTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	RoleType getRoleType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getRoleType <em>Role Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Role Type</em>' reference.
+	 * @see #getRoleType()
+	 * @generated
+	 */
+	void setRoleType(RoleType value);
 
 } // FacilityGroupRole

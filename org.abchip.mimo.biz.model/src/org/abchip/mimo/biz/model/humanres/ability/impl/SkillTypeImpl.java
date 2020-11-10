@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.SkillTypeImpl#getSkillTypeId <em>Skill Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.SkillTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.SkillTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.SkillTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.SkillTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,8 +200,8 @@ public class SkillTypeImpl extends EntityTypeImpl<PartySkill> implements SkillTy
 	 * @generated
 	 */
 	@Override
-	public SkillType getParentTypeId() {
-		return (SkillType)eGet(AbilityPackage.Literals.SKILL_TYPE__PARENT_TYPE_ID, true);
+	public SkillType getParentType() {
+		return (SkillType)eGet(AbilityPackage.Literals.SKILL_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -210,8 +210,8 @@ public class SkillTypeImpl extends EntityTypeImpl<PartySkill> implements SkillTy
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(SkillType newParentTypeId) {
-		eSet(AbilityPackage.Literals.SKILL_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(SkillType newParentType) {
+		eSet(AbilityPackage.Literals.SKILL_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

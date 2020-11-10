@@ -32,9 +32,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountHistoryImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountHistoryImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountHistoryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountHistoryImpl#getGlAccountId <em>Gl Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountHistoryImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountHistoryImpl#getCustomTimePeriodId <em>Custom Time Period Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountHistoryImpl#getGlAccount <em>Gl Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountHistoryImpl#getOrganizationParty <em>Organization Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountHistoryImpl#getCustomTimePeriod <em>Custom Time Period</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountHistoryImpl#getEndingBalance <em>Ending Balance</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountHistoryImpl#getOpeningBalance <em>Opening Balance</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountHistoryImpl#getPostedCredits <em>Posted Credits</em>}</li>
@@ -159,8 +159,8 @@ public class GlAccountHistoryImpl extends EntityIdentifiableImpl implements GlAc
 	 * @generated
 	 */
 	@Override
-	public CustomTimePeriod getCustomTimePeriodId() {
-		return (CustomTimePeriod)eGet(LedgerPackage.Literals.GL_ACCOUNT_HISTORY__CUSTOM_TIME_PERIOD_ID, true);
+	public GlAccount getGlAccount() {
+		return (GlAccount)eGet(LedgerPackage.Literals.GL_ACCOUNT_HISTORY__GL_ACCOUNT, true);
 	}
 
 	/**
@@ -169,8 +169,48 @@ public class GlAccountHistoryImpl extends EntityIdentifiableImpl implements GlAc
 	 * @generated
 	 */
 	@Override
-	public void setCustomTimePeriodId(CustomTimePeriod newCustomTimePeriodId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT_HISTORY__CUSTOM_TIME_PERIOD_ID, newCustomTimePeriodId);
+	public void setGlAccount(GlAccount newGlAccount) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT_HISTORY__GL_ACCOUNT, newGlAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getOrganizationParty() {
+		return (Party)eGet(LedgerPackage.Literals.GL_ACCOUNT_HISTORY__ORGANIZATION_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrganizationParty(Party newOrganizationParty) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT_HISTORY__ORGANIZATION_PARTY, newOrganizationParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CustomTimePeriod getCustomTimePeriod() {
+		return (CustomTimePeriod)eGet(LedgerPackage.Literals.GL_ACCOUNT_HISTORY__CUSTOM_TIME_PERIOD, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCustomTimePeriod(CustomTimePeriod newCustomTimePeriod) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT_HISTORY__CUSTOM_TIME_PERIOD, newCustomTimePeriod);
 	}
 
 	/**
@@ -211,26 +251,6 @@ public class GlAccountHistoryImpl extends EntityIdentifiableImpl implements GlAc
 	@Override
 	public void setOpeningBalance(BigDecimal newOpeningBalance) {
 		eSet(LedgerPackage.Literals.GL_ACCOUNT_HISTORY__OPENING_BALANCE, newOpeningBalance);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getOrganizationPartyId() {
-		return (Party)eGet(LedgerPackage.Literals.GL_ACCOUNT_HISTORY__ORGANIZATION_PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrganizationPartyId(Party newOrganizationPartyId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT_HISTORY__ORGANIZATION_PARTY_ID, newOrganizationPartyId);
 	}
 
 	/**
@@ -309,26 +329,6 @@ public class GlAccountHistoryImpl extends EntityIdentifiableImpl implements GlAc
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GlAccount getGlAccountId() {
-		return (GlAccount)eGet(LedgerPackage.Literals.GL_ACCOUNT_HISTORY__GL_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGlAccountId(GlAccount newGlAccountId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT_HISTORY__GL_ACCOUNT_ID, newGlAccountId);
 	}
 
 } //GlAccountHistoryImpl

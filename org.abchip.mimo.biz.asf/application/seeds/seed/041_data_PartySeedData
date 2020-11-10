@@ -39,158 +39,158 @@
   <contents xsi:type="biz-contact:ContactMechType" contactMechTypeId="POSTAL_ADDRESS" description="Postal Address" hasTable="true"/>
   <contents xsi:type="biz-contact:ContactMechType" contactMechTypeId="TELECOM_NUMBER" description="Phone Number" hasTable="true"/>
   <contents xsi:type="biz-contact:ContactMechType" contactMechTypeId="EMAIL_ADDRESS" description="Email Address">
-    <parentTypeId href="ContactMechType#ELECTRONIC_ADDRESS"/>
+    <parentType href="ContactMechType#ELECTRONIC_ADDRESS"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechType" contactMechTypeId="IP_ADDRESS" description="Internet IP Address">
-    <parentTypeId href="ContactMechType#ELECTRONIC_ADDRESS"/>
+    <parentType href="ContactMechType#ELECTRONIC_ADDRESS"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechType" contactMechTypeId="DOMAIN_NAME" description="Internet Domain Name">
-    <parentTypeId href="ContactMechType#ELECTRONIC_ADDRESS"/>
+    <parentType href="ContactMechType#ELECTRONIC_ADDRESS"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechType" contactMechTypeId="WEB_ADDRESS" description="Web URL/Address">
-    <parentTypeId href="ContactMechType#ELECTRONIC_ADDRESS"/>
+    <parentType href="ContactMechType#ELECTRONIC_ADDRESS"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechType" contactMechTypeId="INTERNAL_PARTYID" description="Internal Note via partyId">
-    <parentTypeId href="ContactMechType#ELECTRONIC_ADDRESS"/>
+    <parentType href="ContactMechType#ELECTRONIC_ADDRESS"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechType" contactMechTypeId="FTP_ADDRESS" description="Ftp server connection" hasTable="true">
-    <parentTypeId href="ContactMechType#ELECTRONIC_ADDRESS"/>
+    <parentType href="ContactMechType#ELECTRONIC_ADDRESS"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#EMAIL_ADDRESS"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#BILLING_EMAIL"/>
+    <contactMechType href="ContactMechType#EMAIL_ADDRESS"/>
+    <contactMechPurposeType href="ContactMechPurposeType#BILLING_EMAIL"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#EMAIL_ADDRESS"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#MARKETING_EMAIL"/>
+    <contactMechType href="ContactMechType#EMAIL_ADDRESS"/>
+    <contactMechPurposeType href="ContactMechPurposeType#MARKETING_EMAIL"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#EMAIL_ADDRESS"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PAYMENT_EMAIL"/>
+    <contactMechType href="ContactMechType#EMAIL_ADDRESS"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PAYMENT_EMAIL"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#EMAIL_ADDRESS"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#ORDER_EMAIL"/>
+    <contactMechType href="ContactMechType#EMAIL_ADDRESS"/>
+    <contactMechPurposeType href="ContactMechPurposeType#ORDER_EMAIL"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#EMAIL_ADDRESS"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#OTHER_EMAIL"/>
+    <contactMechType href="ContactMechType#EMAIL_ADDRESS"/>
+    <contactMechPurposeType href="ContactMechPurposeType#OTHER_EMAIL"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#EMAIL_ADDRESS"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PRIMARY_EMAIL"/>
+    <contactMechType href="ContactMechType#EMAIL_ADDRESS"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PRIMARY_EMAIL"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#POSTAL_ADDRESS"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#SHIPPING_LOCATION"/>
+    <contactMechType href="ContactMechType#POSTAL_ADDRESS"/>
+    <contactMechPurposeType href="ContactMechPurposeType#SHIPPING_LOCATION"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#POSTAL_ADDRESS"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#SHIP_ORIG_LOCATION"/>
+    <contactMechType href="ContactMechType#POSTAL_ADDRESS"/>
+    <contactMechPurposeType href="ContactMechPurposeType#SHIP_ORIG_LOCATION"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#POSTAL_ADDRESS"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#BILLING_LOCATION"/>
+    <contactMechType href="ContactMechType#POSTAL_ADDRESS"/>
+    <contactMechPurposeType href="ContactMechPurposeType#BILLING_LOCATION"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#POSTAL_ADDRESS"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PAYMENT_LOCATION"/>
+    <contactMechType href="ContactMechType#POSTAL_ADDRESS"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PAYMENT_LOCATION"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#POSTAL_ADDRESS"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#GENERAL_LOCATION"/>
+    <contactMechType href="ContactMechType#POSTAL_ADDRESS"/>
+    <contactMechPurposeType href="ContactMechPurposeType#GENERAL_LOCATION"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#POSTAL_ADDRESS"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PUR_RET_LOCATION"/>
+    <contactMechType href="ContactMechType#POSTAL_ADDRESS"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PUR_RET_LOCATION"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#POSTAL_ADDRESS"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PRIMARY_LOCATION"/>
+    <contactMechType href="ContactMechType#POSTAL_ADDRESS"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PRIMARY_LOCATION"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#POSTAL_ADDRESS"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PREVIOUS_LOCATION"/>
+    <contactMechType href="ContactMechType#POSTAL_ADDRESS"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PREVIOUS_LOCATION"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#TELECOM_NUMBER"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#FAX_NUMBER"/>
+    <contactMechType href="ContactMechType#TELECOM_NUMBER"/>
+    <contactMechPurposeType href="ContactMechPurposeType#FAX_NUMBER"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#TELECOM_NUMBER"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#FAX_NUMBER_SEC"/>
+    <contactMechType href="ContactMechType#TELECOM_NUMBER"/>
+    <contactMechPurposeType href="ContactMechPurposeType#FAX_NUMBER_SEC"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#TELECOM_NUMBER"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PHONE_DID"/>
+    <contactMechType href="ContactMechType#TELECOM_NUMBER"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PHONE_DID"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#TELECOM_NUMBER"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PHONE_HOME"/>
+    <contactMechType href="ContactMechType#TELECOM_NUMBER"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PHONE_HOME"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#TELECOM_NUMBER"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PHONE_MOBILE"/>
+    <contactMechType href="ContactMechType#TELECOM_NUMBER"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PHONE_MOBILE"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#TELECOM_NUMBER"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PHONE_WORK"/>
+    <contactMechType href="ContactMechType#TELECOM_NUMBER"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PHONE_WORK"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#TELECOM_NUMBER"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PHONE_WORK_SEC"/>
+    <contactMechType href="ContactMechType#TELECOM_NUMBER"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PHONE_WORK_SEC"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#TELECOM_NUMBER"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PHONE_SHIPPING"/>
+    <contactMechType href="ContactMechType#TELECOM_NUMBER"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PHONE_SHIPPING"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#TELECOM_NUMBER"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PHONE_SHIP_ORIG"/>
+    <contactMechType href="ContactMechType#TELECOM_NUMBER"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PHONE_SHIP_ORIG"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#TELECOM_NUMBER"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PHONE_BILLING"/>
+    <contactMechType href="ContactMechType#TELECOM_NUMBER"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PHONE_BILLING"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#TELECOM_NUMBER"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PHONE_PAYMENT"/>
+    <contactMechType href="ContactMechType#TELECOM_NUMBER"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PHONE_PAYMENT"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#TELECOM_NUMBER"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PRIMARY_PHONE"/>
+    <contactMechType href="ContactMechType#TELECOM_NUMBER"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PRIMARY_PHONE"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#TELECOM_NUMBER"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PHONE_QUICK"/>
+    <contactMechType href="ContactMechType#TELECOM_NUMBER"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PHONE_QUICK"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#TELECOM_NUMBER"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#FAX_SHIPPING"/>
+    <contactMechType href="ContactMechType#TELECOM_NUMBER"/>
+    <contactMechPurposeType href="ContactMechPurposeType#FAX_SHIPPING"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#TELECOM_NUMBER"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#FAX_BILLING"/>
+    <contactMechType href="ContactMechType#TELECOM_NUMBER"/>
+    <contactMechPurposeType href="ContactMechPurposeType#FAX_BILLING"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#TELECOM_NUMBER"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PHONE_ASSISTANT"/>
+    <contactMechType href="ContactMechType#TELECOM_NUMBER"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PHONE_ASSISTANT"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#WEB_ADDRESS"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#PRIMARY_WEB_URL"/>
+    <contactMechType href="ContactMechType#WEB_ADDRESS"/>
+    <contactMechPurposeType href="ContactMechPurposeType#PRIMARY_WEB_URL"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#WEB_ADDRESS"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#TWITTER_URL"/>
+    <contactMechType href="ContactMechType#WEB_ADDRESS"/>
+    <contactMechPurposeType href="ContactMechPurposeType#TWITTER_URL"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#WEB_ADDRESS"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#FACEBOOK_URL"/>
+    <contactMechType href="ContactMechType#WEB_ADDRESS"/>
+    <contactMechPurposeType href="ContactMechPurposeType#FACEBOOK_URL"/>
   </contents>
   <contents xsi:type="biz-contact:ContactMechTypePurpose">
-    <contactMechTypeId href="ContactMechType#WEB_ADDRESS"/>
-    <contactMechPurposeTypeId href="ContactMechPurposeType#LINKEDIN_URL"/>
+    <contactMechType href="ContactMechType#WEB_ADDRESS"/>
+    <contactMechPurposeType href="ContactMechPurposeType#LINKEDIN_URL"/>
   </contents>
   <contents xsi:type="biz-communication:CommunicationEventPrpTyp" communicationEventPrpTypId="ACTIVITY_REQUEST" description="Activity Request"/>
   <contents xsi:type="biz-communication:CommunicationEventPrpTyp" communicationEventPrpTypId="CONFERENCE" description="Conference"/>
@@ -201,29 +201,29 @@
   <contents xsi:type="biz-communication:CommunicationEventPrpTyp" communicationEventPrpTypId="SEMINAR" description="Seminar"/>
   <contents xsi:type="biz-communication:CommunicationEventPrpTyp" communicationEventPrpTypId="SUPPORT_CALL" description="Support Call"/>
   <contents xsi:type="biz-communication:CommunicationEventType" communicationEventTypeId="EMAIL_COMMUNICATION" description="Email">
-    <contactMechTypeId href="ContactMechType#EMAIL_ADDRESS"/>
+    <contactMechType href="ContactMechType#EMAIL_ADDRESS"/>
   </contents>
   <contents xsi:type="biz-communication:CommunicationEventType" communicationEventTypeId="FACE_TO_FACE_COMMUNI" description="Face-To-Face"/>
   <contents xsi:type="biz-communication:CommunicationEventType" communicationEventTypeId="FAX_COMMUNICATION" description="Fax">
-    <contactMechTypeId href="ContactMechType#TELECOM_NUMBER"/>
+    <contactMechType href="ContactMechType#TELECOM_NUMBER"/>
   </contents>
   <contents xsi:type="biz-communication:CommunicationEventType" communicationEventTypeId="LETTER_CORRESPONDENC" description="Letter">
-    <contactMechTypeId href="ContactMechType#POSTAL_ADDRESS"/>
+    <contactMechType href="ContactMechType#POSTAL_ADDRESS"/>
   </contents>
   <contents xsi:type="biz-communication:CommunicationEventType" communicationEventTypeId="PHONE_COMMUNICATION" description="Phone">
-    <contactMechTypeId href="ContactMechType#TELECOM_NUMBER"/>
+    <contactMechType href="ContactMechType#TELECOM_NUMBER"/>
   </contents>
   <contents xsi:type="biz-communication:CommunicationEventType" communicationEventTypeId="WEB_SITE_COMMUNICATI" description="Web Site">
-    <contactMechTypeId href="ContactMechType#WEB_ADDRESS"/>
+    <contactMechType href="ContactMechType#WEB_ADDRESS"/>
   </contents>
   <contents xsi:type="biz-communication:CommunicationEventType" communicationEventTypeId="COMMENT_NOTE" description="Comment/Note">
-    <contactMechTypeId href="ContactMechType#INTERNAL_PARTYID"/>
+    <contactMechType href="ContactMechType#INTERNAL_PARTYID"/>
   </contents>
   <contents xsi:type="biz-communication:CommunicationEventType" communicationEventTypeId="AUTO_EMAIL_COMM" description="Auto Email">
-    <contactMechTypeId href="ContactMechType#EMAIL_ADDRESS"/>
+    <contactMechType href="ContactMechType#EMAIL_ADDRESS"/>
   </contents>
   <contents xsi:type="biz-communication:CommunicationEventType" communicationEventTypeId="FILE_TRANSFER_COMM" description="File transfer">
-    <contactMechTypeId href="ContactMechType#FTP_ADDRESS"/>
+    <contactMechType href="ContactMechType#FTP_ADDRESS"/>
   </contents>
   <contents xsi:type="biz-party:PartyContentType" partyContentTypeId="INTERNAL" description="Internal Content"/>
   <contents xsi:type="biz-party:PartyContentType" partyContentTypeId="USERDEF" description="User Defined Content"/>
@@ -231,69 +231,69 @@
   <contents xsi:type="biz-party:PartyContentType" partyContentTypeId="VNDSHPINF" description="Vendor Shipping Info"/>
   <contents xsi:type="biz-enum:EnumerationType" enumTypeId="EMPLOY_STTS" description="Employment Status"/>
   <contents xsi:type="biz-enum:Enumeration" enumId="EMPS_FULLTIME" description="Full-time Employed" enumCode="FULLTIME" sequenceId="01">
-    <enumTypeId href="EnumerationType#EMPLOY_STTS"/>
+    <enumType href="EnumerationType#EMPLOY_STTS"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="EMPS_PARTTIME" description="Part-time Employed" enumCode="PARTTIME" sequenceId="02">
-    <enumTypeId href="EnumerationType#EMPLOY_STTS"/>
+    <enumType href="EnumerationType#EMPLOY_STTS"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="EMPS_SELF" description="Self Employed" enumCode="SELF" sequenceId="03">
-    <enumTypeId href="EnumerationType#EMPLOY_STTS"/>
+    <enumType href="EnumerationType#EMPLOY_STTS"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="EMPS_HOUSE" description="House-Person" enumCode="HOUSE" sequenceId="04">
-    <enumTypeId href="EnumerationType#EMPLOY_STTS"/>
+    <enumType href="EnumerationType#EMPLOY_STTS"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="EMPS_RETIRED" description="Retired" enumCode="RETIRED" sequenceId="05">
-    <enumTypeId href="EnumerationType#EMPLOY_STTS"/>
+    <enumType href="EnumerationType#EMPLOY_STTS"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="EMPS_STUDENT" description="Student" enumCode="STUDENT" sequenceId="06">
-    <enumTypeId href="EnumerationType#EMPLOY_STTS"/>
+    <enumType href="EnumerationType#EMPLOY_STTS"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="EMPS_UNEMP" description="Unemployed" enumCode="UNEMP" sequenceId="07">
-    <enumTypeId href="EnumerationType#EMPLOY_STTS"/>
+    <enumType href="EnumerationType#EMPLOY_STTS"/>
   </contents>
   <contents xsi:type="biz-enum:EnumerationType" enumTypeId="PTY_RESID_STTS" description="Residence Status"/>
   <contents xsi:type="biz-enum:Enumeration" enumId="PRESS_OWN" description="Own Home" enumCode="OWN" sequenceId="01">
-    <enumTypeId href="EnumerationType#PTY_RESID_STTS"/>
+    <enumType href="EnumerationType#PTY_RESID_STTS"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="PRESS_PVT_TENANT" description="Private Tenant" enumCode="PVT_TENANT" sequenceId="02">
-    <enumTypeId href="EnumerationType#PTY_RESID_STTS"/>
+    <enumType href="EnumerationType#PTY_RESID_STTS"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="PRESS_PUB_TENANT" description="Public Tenant" enumCode="PUB_TENANT" sequenceId="03">
-    <enumTypeId href="EnumerationType#PTY_RESID_STTS"/>
+    <enumType href="EnumerationType#PTY_RESID_STTS"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="PRESS_PARENTS" description="With Parents" enumCode="PARENTS" sequenceId="04">
-    <enumTypeId href="EnumerationType#PTY_RESID_STTS"/>
+    <enumType href="EnumerationType#PTY_RESID_STTS"/>
   </contents>
   <contents xsi:type="biz-enum:EnumerationType" enumTypeId="PARTY_EMAIL" description="Party Email Notification"/>
   <contents xsi:type="biz-enum:Enumeration" enumId="PARTY_REGIS_CONFIRM" description="Party Registration Confirmation" enumCode="REGIS_CONFIRM" sequenceId="01">
-    <enumTypeId href="EnumerationType#PARTY_EMAIL"/>
+    <enumType href="EnumerationType#PARTY_EMAIL"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="UPD_PRSNL_INF_CNFRM" description="Update Personal Info Confirmation" enumCode="UPDAT_CONFIRM" sequenceId="02">
-    <enumTypeId href="EnumerationType#PARTY_EMAIL"/>
+    <enumType href="EnumerationType#PARTY_EMAIL"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_EMAIL_VERIFY" description="Party Email Address Verification" enumCode="EMAIL_VERIFY" sequenceId="03">
-    <enumTypeId href="EnumerationType#PARTY_EMAIL"/>
+    <enumType href="EnumerationType#PARTY_EMAIL"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_PARTYINV_EMAIL" description="Party Invitation" enumCode="INVITE_EMAIL" sequenceId="04">
-    <enumTypeId href="EnumerationType#PARTY_EMAIL"/>
+    <enumType href="EnumerationType#PARTY_EMAIL"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="CONT_NOTI_EMAIL" description="Contact-Us Notification" enumCode="CONT_EMAIL" sequenceId="05">
-    <enumTypeId href="EnumerationType#PARTY_EMAIL"/>
+    <enumType href="EnumerationType#PARTY_EMAIL"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_CUST_ACTIVATED" description="Account Activated Notification" enumCode="ACCOUNT_ACTIVATED" sequenceId="06">
-    <enumTypeId href="EnumerationType#PARTY_EMAIL"/>
+    <enumType href="EnumerationType#PARTY_EMAIL"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="UNSUB_CONT_LIST_NOTI" description="Unsubscribe Contact List Notification" enumCode="UNSUB_CONT_EMAIL" sequenceId="01">
-    <enumTypeId href="EnumerationType#PARTY_EMAIL"/>
+    <enumType href="EnumerationType#PARTY_EMAIL"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="SUB_CONT_LIST_NOTI" description="Subscribe Contact List Notification" enumCode="SUB_CONT_EMAIL" sequenceId="02">
-    <enumTypeId href="EnumerationType#PARTY_EMAIL"/>
+    <enumType href="EnumerationType#PARTY_EMAIL"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="UNSUB_CONT_LIST_VERI" description="Unsubscribe Contact List Verify" enumCode="UNSUB_CONT_VERIFY_EMAIL" sequenceId="03">
-    <enumTypeId href="EnumerationType#PARTY_EMAIL"/>
+    <enumType href="EnumerationType#PARTY_EMAIL"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="CONT_EMAIL_TEMPLATE" description="Contact List E-mail Template" enumCode="CONT_EMAIL_TEMPLATE" sequenceId="04">
-    <enumTypeId href="EnumerationType#PARTY_EMAIL"/>
+    <enumType href="EnumerationType#PARTY_EMAIL"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="MAIN_ROLE" description="Main Role"/>
   <contents xsi:type="biz-party:RoleType" roleTypeId="ACCOUNT_LEAD" description="Account Lead"/>
@@ -312,7 +312,7 @@
   <contents xsi:type="biz-party:RoleType" roleTypeId="MANUFACTURER" description="Manufacturer"/>
   <contents xsi:type="biz-party:RoleType" roleTypeId="_NA_" description="Not Applicable"/>
   <contents xsi:type="biz-party:RoleType" roleTypeId="ORGANIZATION_ROLE" description="Organization">
-    <parentTypeId href="RoleType#MAIN_ROLE"/>
+    <parentType href="RoleType#MAIN_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="OWNER" description="Owner"/>
   <contents xsi:type="biz-party:RoleType" roleTypeId="PROSPECT" description="Prospect"/>
@@ -320,19 +320,19 @@
   <contents xsi:type="biz-party:RoleType" roleTypeId="REFERRER" description="Referrer"/>
   <contents xsi:type="biz-party:RoleType" roleTypeId="REQUEST_ROLE" description="Request Role"/>
   <contents xsi:type="biz-party:RoleType" roleTypeId="REQ_MANAGER" description="Request Manager">
-    <parentTypeId href="RoleType#REQUEST_ROLE"/>
+    <parentType href="RoleType#REQUEST_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="REQ_REQUESTER" description="Requesting Party">
-    <parentTypeId href="RoleType#REQUEST_ROLE"/>
+    <parentType href="RoleType#REQUEST_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="REQ_TAKER" description="Request Taker">
-    <parentTypeId href="RoleType#REQUEST_ROLE"/>
+    <parentType href="RoleType#REQUEST_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="REQ_RESPOND" description="Request Respondent">
-    <parentTypeId href="RoleType#REQUEST_ROLE"/>
+    <parentType href="RoleType#REQUEST_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="SFA_ROLE" description="Sales Force Autm.">
-    <parentTypeId href="RoleType#MAIN_ROLE"/>
+    <parentType href="RoleType#MAIN_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="SHAREHOLDER" description="Shareholder"/>
   <contents xsi:type="biz-party:RoleType" roleTypeId="SUBSCRIBER" description="Subscriber"/>
@@ -342,175 +342,175 @@
   <contents xsi:type="biz-party:RoleType" roleTypeId="WORKFLOW_ROLE" description="Workflow"/>
   <contents xsi:type="biz-party:RoleType" roleTypeId="ACCOUNTANT" description="Accountant"/>
   <contents xsi:type="biz-party:RoleType" roleTypeId="ACCOUNT" description="Account">
-    <parentTypeId href="RoleType#SFA_ROLE"/>
+    <parentType href="RoleType#SFA_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="ADDRESSEE" description="Addressee">
-    <parentTypeId href="RoleType#COMMEVENT_ROLE"/>
+    <parentType href="RoleType#COMMEVENT_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="ASSOCIATION" description="Association">
-    <parentTypeId href="RoleType#ORGANIZATION_ROLE"/>
+    <parentType href="RoleType#ORGANIZATION_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="BILL_FROM_VENDOR" description="Bill-From Vendor">
-    <parentTypeId href="RoleType#VENDOR"/>
+    <parentType href="RoleType#VENDOR"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="BILL_TO_CUSTOMER" description="Bill-To Customer">
-    <parentTypeId href="RoleType#CUSTOMER"/>
+    <parentType href="RoleType#CUSTOMER"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="BCC" description="Blind Copy">
-    <parentTypeId href="RoleType#COMMEVENT_ROLE"/>
+    <parentType href="RoleType#COMMEVENT_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="BULK_CUSTOMER" description="Bulk Customer">
-    <parentTypeId href="RoleType#CUSTOMER"/>
+    <parentType href="RoleType#CUSTOMER"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="CAL_ATTENDEE" description="Calendar Attendee">
-    <parentTypeId href="RoleType#CALENDAR_ROLE"/>
+    <parentType href="RoleType#CALENDAR_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="CAL_DELEGATE" description="Calendar Delegate">
-    <parentTypeId href="RoleType#CALENDAR_ROLE"/>
+    <parentType href="RoleType#CALENDAR_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="CAL_HOST" description="Calendar Host">
-    <parentTypeId href="RoleType#CALENDAR_ROLE"/>
+    <parentType href="RoleType#CALENDAR_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="CAL_ORGANIZER" description="Calendar Organizer">
-    <parentTypeId href="RoleType#CALENDAR_ROLE"/>
+    <parentType href="RoleType#CALENDAR_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="CAL_OWNER" description="Calendar Owner">
-    <parentTypeId href="RoleType#CALENDAR_ROLE"/>
+    <parentType href="RoleType#CALENDAR_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="CARRIER" description="Carrier">
-    <parentTypeId href="RoleType#ORGANIZATION_ROLE"/>
+    <parentType href="RoleType#ORGANIZATION_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="COMPETITOR" description="Competitor">
-    <parentTypeId href="RoleType#ORGANIZATION_ROLE"/>
+    <parentType href="RoleType#ORGANIZATION_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="CONTACT" description="Contact">
-    <parentTypeId href="RoleType#SFA_ROLE"/>
+    <parentType href="RoleType#SFA_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="CC" description="Carbon Copy">
-    <parentTypeId href="RoleType#COMMEVENT_ROLE"/>
+    <parentType href="RoleType#COMMEVENT_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="ORIGINATOR" description="Originator">
-    <parentTypeId href="RoleType#COMMEVENT_ROLE"/>
+    <parentType href="RoleType#COMMEVENT_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="DISTRIBUTOR" description="Distributor">
-    <parentTypeId href="RoleType#DISTRIBUTION_CHANNEL"/>
+    <parentType href="RoleType#DISTRIBUTION_CHANNEL"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="EMPLOYEE" description="Employee">
-    <parentTypeId href="RoleType#PERSON_ROLE"/>
+    <parentType href="RoleType#PERSON_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="END_USER_CUSTOMER" description="End-User Customer">
-    <parentTypeId href="RoleType#CUSTOMER"/>
+    <parentType href="RoleType#CUSTOMER"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="HOUSEHOLD" description="Household">
-    <parentTypeId href="RoleType#ORGANIZATION_ROLE"/>
+    <parentType href="RoleType#ORGANIZATION_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="INTERNAL_ORGANIZATIO" description="Internal Organization" hasTable="true">
-    <parentTypeId href="RoleType#ORGANIZATION_ROLE"/>
+    <parentType href="RoleType#ORGANIZATION_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="LEAD" description="Lead">
-    <parentTypeId href="RoleType#SFA_ROLE"/>
+    <parentType href="RoleType#SFA_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="LTD_ADMIN" description="Limited Administrator">
-    <parentTypeId href="RoleType#ADMIN"/>
+    <parentType href="RoleType#ADMIN"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="ORGANIZATION_UNIT" description="Organization Unit">
-    <parentTypeId href="RoleType#ORGANIZATION_ROLE"/>
+    <parentType href="RoleType#ORGANIZATION_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="PARTNER" description="Partner">
-    <parentTypeId href="RoleType#ORGANIZATION_ROLE"/>
+    <parentType href="RoleType#ORGANIZATION_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="PLACING_CUSTOMER" description="Placing Customer">
-    <parentTypeId href="RoleType#CUSTOMER"/>
+    <parentType href="RoleType#CUSTOMER"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="REGULATORY_AGENCY" description="Regulatory Agency">
-    <parentTypeId href="RoleType#ORGANIZATION_ROLE"/>
+    <parentType href="RoleType#ORGANIZATION_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="SALES_REP" description="Sales Representative">
-    <parentTypeId href="RoleType#PERSON_ROLE"/>
+    <parentType href="RoleType#PERSON_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="SHIP_FROM_VENDOR" description="Ship-From Vendor">
-    <parentTypeId href="RoleType#VENDOR"/>
+    <parentType href="RoleType#VENDOR"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="SHIP_TO_CUSTOMER" description="Ship-To Customer">
-    <parentTypeId href="RoleType#CUSTOMER"/>
+    <parentType href="RoleType#CUSTOMER"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="SPONSOR" description="Sponsor">
-    <parentTypeId href="RoleType#PERSON_ROLE"/>
+    <parentType href="RoleType#PERSON_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="SPOUSE" description="Spouse">
-    <parentTypeId href="RoleType#PERSON_ROLE"/>
+    <parentType href="RoleType#PERSON_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="SUPPLIER_AGENT" description="Supplier Agent">
-    <parentTypeId href="RoleType#PERSON_ROLE"/>
+    <parentType href="RoleType#PERSON_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="SUPPLIER" description="Supplier">
-    <parentTypeId href="RoleType#ORGANIZATION_ROLE"/>
+    <parentType href="RoleType#ORGANIZATION_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="TAX_AUTHORITY" description="Tax Authority">
-    <parentTypeId href="RoleType#ORGANIZATION_ROLE"/>
+    <parentType href="RoleType#ORGANIZATION_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="UNION" description="Union">
-    <parentTypeId href="RoleType#ORGANIZATION_ROLE"/>
+    <parentType href="RoleType#ORGANIZATION_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="WF_OWNER" description="Workflow Owner">
-    <parentTypeId href="RoleType#WORKFLOW_ROLE"/>
+    <parentType href="RoleType#WORKFLOW_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="AFFILIATE" description="Affiliate">
-    <parentTypeId href="RoleType#SALES_REP"/>
+    <parentType href="RoleType#SALES_REP"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="BUYER" description="Buyer">
-    <parentTypeId href="RoleType#EMPLOYEE"/>
+    <parentType href="RoleType#EMPLOYEE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="CASHIER" description="Cashier">
-    <parentTypeId href="RoleType#EMPLOYEE"/>
+    <parentType href="RoleType#EMPLOYEE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="DEPARTMENT" description="Department">
-    <parentTypeId href="RoleType#ORGANIZATION_UNIT"/>
+    <parentType href="RoleType#ORGANIZATION_UNIT"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="DIVISION" description="Division">
-    <parentTypeId href="RoleType#ORGANIZATION_UNIT"/>
+    <parentType href="RoleType#ORGANIZATION_UNIT"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="FAMILY_MEMBER" description="Family Member">
-    <parentTypeId href="RoleType#PERSON_ROLE"/>
+    <parentType href="RoleType#PERSON_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="MANAGER" description="Manager">
-    <parentTypeId href="RoleType#EMPLOYEE"/>
+    <parentType href="RoleType#EMPLOYEE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="ORDER_CLERK" description="Order Clerk">
-    <parentTypeId href="RoleType#EMPLOYEE"/>
+    <parentType href="RoleType#EMPLOYEE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="OTHER_INTERNAL_ORGAN" description="Other Internal">
-    <parentTypeId href="RoleType#INTERNAL_ORGANIZATIO"/>
+    <parentType href="RoleType#INTERNAL_ORGANIZATIO"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="OTHER_ORGANIZATION_U" description="Other Organization Unit">
-    <parentTypeId href="RoleType#ORGANIZATION_UNIT"/>
+    <parentType href="RoleType#ORGANIZATION_UNIT"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="PARENT_ORGANIZATION" description="Parent Organization">
-    <parentTypeId href="RoleType#ORGANIZATION_UNIT"/>
+    <parentType href="RoleType#ORGANIZATION_UNIT"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="PACKER" description="Packer">
-    <parentTypeId href="RoleType#EMPLOYEE"/>
+    <parentType href="RoleType#EMPLOYEE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="PICKER" description="Picker">
-    <parentTypeId href="RoleType#EMPLOYEE"/>
+    <parentType href="RoleType#EMPLOYEE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="RECEIVER" description="Receiver">
-    <parentTypeId href="RoleType#EMPLOYEE"/>
+    <parentType href="RoleType#EMPLOYEE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="SHIPMENT_CLERK" description="Shipment Clerk">
-    <parentTypeId href="RoleType#EMPLOYEE"/>
+    <parentType href="RoleType#EMPLOYEE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="STOCKER" description="Stocker">
-    <parentTypeId href="RoleType#EMPLOYEE"/>
+    <parentType href="RoleType#EMPLOYEE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="SUBSIDIARY" description="Subsidiary">
-    <parentTypeId href="RoleType#ORGANIZATION_UNIT"/>
+    <parentType href="RoleType#ORGANIZATION_UNIT"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="WORKER" description="Worker">
-    <parentTypeId href="RoleType#EMPLOYEE"/>
+    <parentType href="RoleType#EMPLOYEE"/>
   </contents>
   <contents xsi:type="biz-party:RoleType" roleTypeId="EMAIL_ADMIN" description="Email Administrator">
-    <parentTypeId href="RoleType#PERSON_ROLE"/>
+    <parentType href="RoleType#PERSON_ROLE"/>
   </contents>
   <contents xsi:type="biz-party:PartyClassificationType" partyClassificationTypeId="EEOC_CLASSIFICATION" description="EEOC (Equal Opportunity)"/>
   <contents xsi:type="biz-party:PartyClassificationType" partyClassificationTypeId="MINORITY_CLASSIFICAT" description="Minority"/>
@@ -521,10 +521,10 @@
   <contents xsi:type="biz-party:PartyClassificationType" partyClassificationTypeId="SIZE_CLASSIFICATION" description="Size"/>
   <contents xsi:type="biz-party:PartyClassificationType" partyClassificationTypeId="TRADE_CLASSIFICATION" description="Trade"/>
   <contents xsi:type="biz-party:PartyClassificationType" partyClassificationTypeId="TRADE_WHOLE_CLASSIFI" description="Wholesale">
-    <parentTypeId href="PartyClassificationType#TRADE_CLASSIFICATION"/>
+    <parentType href="PartyClassificationType#TRADE_CLASSIFICATION"/>
   </contents>
   <contents xsi:type="biz-party:PartyClassificationType" partyClassificationTypeId="TRADE_RETAIL_CLASSIF" description="Retail">
-    <parentTypeId href="PartyClassificationType#TRADE_CLASSIFICATION"/>
+    <parentType href="PartyClassificationType#TRADE_CLASSIFICATION"/>
   </contents>
   <contents xsi:type="biz-party:PartyClassificationType" partyClassificationTypeId="ANNUAL_REVENUE" description="Annual Revenue"/>
   <contents xsi:type="biz-party:PartyClassificationType" partyClassificationTypeId="NUMBER_OF_EMPLOYEES" description="Number of Employees"/>
@@ -565,249 +565,249 @@
   <contents xsi:type="biz-party:PartyType" partyTypeId="PERSON" description="Person" hasTable="true"/>
   <contents xsi:type="biz-party:PartyType" partyTypeId="PARTY_GROUP" description="Party Group" hasTable="true"/>
   <contents xsi:type="biz-party:PartyType" partyTypeId="INFORMAL_GROUP" description="Informal Group">
-    <parentTypeId href="PartyType#PARTY_GROUP"/>
+    <parentType href="PartyType#PARTY_GROUP"/>
   </contents>
   <contents xsi:type="biz-party:PartyType" partyTypeId="FAMILY" description="Family">
-    <parentTypeId href="PartyType#INFORMAL_GROUP"/>
+    <parentType href="PartyType#INFORMAL_GROUP"/>
   </contents>
   <contents xsi:type="biz-party:PartyType" partyTypeId="TEAM" description="Team">
-    <parentTypeId href="PartyType#INFORMAL_GROUP"/>
+    <parentType href="PartyType#INFORMAL_GROUP"/>
   </contents>
   <contents xsi:type="biz-party:PartyType" partyTypeId="LEGAL_ORGANIZATION" description="Legal Organization">
-    <parentTypeId href="PartyType#PARTY_GROUP"/>
+    <parentType href="PartyType#PARTY_GROUP"/>
   </contents>
   <contents xsi:type="biz-party:PartyType" partyTypeId="CORPORATION" description="Corporation">
-    <parentTypeId href="PartyType#LEGAL_ORGANIZATION"/>
+    <parentType href="PartyType#LEGAL_ORGANIZATION"/>
   </contents>
   <contents xsi:type="biz-party:PartyType" partyTypeId="GOVERNMENT_AGENCY" description="Government Agency">
-    <parentTypeId href="PartyType#LEGAL_ORGANIZATION"/>
+    <parentType href="PartyType#LEGAL_ORGANIZATION"/>
   </contents>
   <contents xsi:type="biz-status:StatusType" statusTypeId="PARTY_STATUS" description="Party"/>
   <contents xsi:type="biz-status:StatusItem" statusId="PARTY_ENABLED" description="Enabled" sequenceId="01" statusCode="ENABLED">
-    <statusTypeId href="StatusType#PARTY_STATUS"/>
+    <statusType href="StatusType#PARTY_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="PARTY_DISABLED" description="Disabled" sequenceId="99" statusCode="DISABLED">
-    <statusTypeId href="StatusType#PARTY_STATUS"/>
+    <statusType href="StatusType#PARTY_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Disable">
-    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
     <statusIdTo href="StatusItem#PARTY_DISABLED"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Re-Enable">
-    <statusId href="StatusItem#PARTY_DISABLED"/>
+    <status href="StatusItem#PARTY_DISABLED"/>
     <statusIdTo href="StatusItem#PARTY_ENABLED"/>
   </contents>
   <contents xsi:type="biz-status:StatusType" statusTypeId="CASE_STATUS" description="Case"/>
   <contents xsi:type="biz-status:StatusType" statusTypeId="COM_EVENT_STATUS" description="Communication Event"/>
   <contents xsi:type="biz-status:StatusItem" statusId="COM_PENDING" description="Pending" sequenceId="01" statusCode="PENDING">
-    <statusTypeId href="StatusType#COM_EVENT_STATUS"/>
+    <statusType href="StatusType#COM_EVENT_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="COM_ENTERED" description="Entered" sequenceId="02" statusCode="ENTERED">
-    <statusTypeId href="StatusType#COM_EVENT_STATUS"/>
+    <statusType href="StatusType#COM_EVENT_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="COM_IN_PROGRESS" description="In-Progress" sequenceId="05" statusCode="IN_PROGRESS">
-    <statusTypeId href="StatusType#COM_EVENT_STATUS"/>
+    <statusType href="StatusType#COM_EVENT_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="COM_UNKNOWN_PARTY" description="Unknown Party" sequenceId="07" statusCode="UNKNOWN_PARTY">
-    <statusTypeId href="StatusType#COM_EVENT_STATUS"/>
+    <statusType href="StatusType#COM_EVENT_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="COM_COMPLETE" description="Closed" sequenceId="20" statusCode="COMPLETE">
-    <statusTypeId href="StatusType#COM_EVENT_STATUS"/>
+    <statusType href="StatusType#COM_EVENT_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="COM_RESOLVED" description="Resolved" sequenceId="21" statusCode="RESOLVED">
-    <statusTypeId href="StatusType#COM_EVENT_STATUS"/>
+    <statusType href="StatusType#COM_EVENT_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="COM_REFERRED" description="Referred" sequenceId="22" statusCode="REFERRED">
-    <statusTypeId href="StatusType#COM_EVENT_STATUS"/>
+    <statusType href="StatusType#COM_EVENT_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="COM_BOUNCED" description="Bounced" sequenceId="50" statusCode="BOUNCED">
-    <statusTypeId href="StatusType#COM_EVENT_STATUS"/>
+    <statusType href="StatusType#COM_EVENT_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="COM_CANCELLED" description="Cancelled" sequenceId="99" statusCode="CANCELLED">
-    <statusTypeId href="StatusType#COM_EVENT_STATUS"/>
+    <statusType href="StatusType#COM_EVENT_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Set Pending, only visible to originator">
-    <statusId href="StatusItem#COM_ENTERED"/>
+    <status href="StatusItem#COM_ENTERED"/>
     <statusIdTo href="StatusItem#COM_PENDING"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Set In Progress, waiting to be send">
-    <statusId href="StatusItem#COM_ENTERED"/>
+    <status href="StatusItem#COM_ENTERED"/>
     <statusIdTo href="StatusItem#COM_IN_PROGRESS"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Complete">
-    <statusId href="StatusItem#COM_ENTERED"/>
+    <status href="StatusItem#COM_ENTERED"/>
     <statusIdTo href="StatusItem#COM_COMPLETE"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Entered,visible to all participants">
-    <statusId href="StatusItem#COM_PENDING"/>
+    <status href="StatusItem#COM_PENDING"/>
     <statusIdTo href="StatusItem#COM_ENTERED"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Set In Progress, waiting to be send">
-    <statusId href="StatusItem#COM_PENDING"/>
+    <status href="StatusItem#COM_PENDING"/>
     <statusIdTo href="StatusItem#COM_IN_PROGRESS"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Complete">
-    <statusId href="StatusItem#COM_IN_PROGRESS"/>
+    <status href="StatusItem#COM_IN_PROGRESS"/>
     <statusIdTo href="StatusItem#COM_COMPLETE"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Bounced">
-    <statusId href="StatusItem#COM_IN_PROGRESS"/>
+    <status href="StatusItem#COM_IN_PROGRESS"/>
     <statusIdTo href="StatusItem#COM_BOUNCED"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Resolve">
-    <statusId href="StatusItem#COM_COMPLETE"/>
+    <status href="StatusItem#COM_COMPLETE"/>
     <statusIdTo href="StatusItem#COM_RESOLVED"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Refer">
-    <statusId href="StatusItem#COM_COMPLETE"/>
+    <status href="StatusItem#COM_COMPLETE"/>
     <statusIdTo href="StatusItem#COM_REFERRED"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Bounced">
-    <statusId href="StatusItem#COM_COMPLETE"/>
+    <status href="StatusItem#COM_COMPLETE"/>
     <statusIdTo href="StatusItem#COM_BOUNCED"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Complete">
-    <statusId href="StatusItem#COM_UNKNOWN_PARTY"/>
+    <status href="StatusItem#COM_UNKNOWN_PARTY"/>
     <statusIdTo href="StatusItem#COM_COMPLETE"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Corrected">
-    <statusId href="StatusItem#COM_UNKNOWN_PARTY"/>
+    <status href="StatusItem#COM_UNKNOWN_PARTY"/>
     <statusIdTo href="StatusItem#COM_ENTERED"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Complete">
-    <statusId href="StatusItem#COM_PENDING"/>
+    <status href="StatusItem#COM_PENDING"/>
     <statusIdTo href="StatusItem#COM_COMPLETE"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
-    <statusId href="StatusItem#COM_ENTERED"/>
+    <status href="StatusItem#COM_ENTERED"/>
     <statusIdTo href="StatusItem#COM_CANCELLED"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
-    <statusId href="StatusItem#COM_PENDING"/>
+    <status href="StatusItem#COM_PENDING"/>
     <statusIdTo href="StatusItem#COM_CANCELLED"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
-    <statusId href="StatusItem#COM_IN_PROGRESS"/>
+    <status href="StatusItem#COM_IN_PROGRESS"/>
     <statusIdTo href="StatusItem#COM_CANCELLED"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
-    <statusId href="StatusItem#COM_COMPLETE"/>
+    <status href="StatusItem#COM_COMPLETE"/>
     <statusIdTo href="StatusItem#COM_CANCELLED"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
-    <statusId href="StatusItem#COM_RESOLVED"/>
+    <status href="StatusItem#COM_RESOLVED"/>
     <statusIdTo href="StatusItem#COM_CANCELLED"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
-    <statusId href="StatusItem#COM_REFERRED"/>
+    <status href="StatusItem#COM_REFERRED"/>
     <statusIdTo href="StatusItem#COM_CANCELLED"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
-    <statusId href="StatusItem#COM_UNKNOWN_PARTY"/>
+    <status href="StatusItem#COM_UNKNOWN_PARTY"/>
     <statusIdTo href="StatusItem#COM_CANCELLED"/>
   </contents>
   <contents xsi:type="biz-status:StatusType" statusTypeId="COM_EVENT_ROL_STATUS" description="Communication Event Role">
-    <parentTypeId href="StatusType#COM_EVENT_STATUS"/>
+    <parentType href="StatusType#COM_EVENT_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="COM_ROLE_CREATED" description="Created" sequenceId="01" statusCode="ENTERED">
-    <statusTypeId href="StatusType#COM_EVENT_ROL_STATUS"/>
+    <statusType href="StatusType#COM_EVENT_ROL_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="COM_ROLE_READ" description="Read" sequenceId="02" statusCode="PENDING">
-    <statusTypeId href="StatusType#COM_EVENT_ROL_STATUS"/>
+    <statusType href="StatusType#COM_EVENT_ROL_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="COM_ROLE_COMPLETED" description="Closed" sequenceId="03" statusCode="READ">
-    <statusTypeId href="StatusType#COM_EVENT_ROL_STATUS"/>
+    <statusType href="StatusType#COM_EVENT_ROL_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Read">
-    <statusId href="StatusItem#COM_ROLE_CREATED"/>
+    <status href="StatusItem#COM_ROLE_CREATED"/>
     <statusIdTo href="StatusItem#COM_ROLE_READ"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Completed">
-    <statusId href="StatusItem#COM_ROLE_CREATED"/>
+    <status href="StatusItem#COM_ROLE_CREATED"/>
     <statusIdTo href="StatusItem#COM_ROLE_COMPLETED"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Completed">
-    <statusId href="StatusItem#COM_ROLE_READ"/>
+    <status href="StatusItem#COM_ROLE_READ"/>
     <statusIdTo href="StatusItem#COM_ROLE_COMPLETED"/>
   </contents>
   <contents xsi:type="biz-status:StatusType" statusTypeId="PARTY_REL_STATUS" description="Party Relationship"/>
   <contents xsi:type="biz-status:StatusItem" statusId="PARTYREL_CREATED" description="Created" sequenceId="01" statusCode="CREATED">
-    <statusTypeId href="StatusType#PARTY_REL_STATUS"/>
+    <statusType href="StatusType#PARTY_REL_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="PARTYREL_EXPIRED" description="Expired" sequenceId="02" statusCode="EXPIRED">
-    <statusTypeId href="StatusType#PARTY_REL_STATUS"/>
+    <statusType href="StatusType#PARTY_REL_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Expired">
-    <statusId href="StatusItem#PARTYREL_CREATED"/>
+    <status href="StatusItem#PARTYREL_CREATED"/>
     <statusIdTo href="StatusItem#PARTYREL_EXPIRED"/>
   </contents>
   <contents xsi:type="biz-status:StatusType" statusTypeId="PARTY_INV_STATUS" description="Party Invitation"/>
   <contents xsi:type="biz-status:StatusItem" statusId="PARTYINV_SENT" description="Invitation Sent" sequenceId="01" statusCode="SENT">
-    <statusTypeId href="StatusType#PARTY_INV_STATUS"/>
+    <statusType href="StatusType#PARTY_INV_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="PARTYINV_PENDING" description="Invitation Pending" sequenceId="02" statusCode="PENDING">
-    <statusTypeId href="StatusType#PARTY_INV_STATUS"/>
+    <statusType href="StatusType#PARTY_INV_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="PARTYINV_ACCEPTED" description="Invitation Accepted" sequenceId="05" statusCode="ACCEPTED">
-    <statusTypeId href="StatusType#PARTY_INV_STATUS"/>
+    <statusType href="StatusType#PARTY_INV_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="PARTYINV_DECLINED" description="Invitation Declined" sequenceId="06" statusCode="DECLINED">
-    <statusTypeId href="StatusType#PARTY_INV_STATUS"/>
+    <statusType href="StatusType#PARTY_INV_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusItem" statusId="PARTYINV_CANCELLED" description="Invitation Cancelled" sequenceId="10" statusCode="CANCELLED">
-    <statusTypeId href="StatusType#PARTY_INV_STATUS"/>
+    <statusType href="StatusType#PARTY_INV_STATUS"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Pending">
-    <statusId href="StatusItem#PARTYINV_SENT"/>
+    <status href="StatusItem#PARTYINV_SENT"/>
     <statusIdTo href="StatusItem#PARTYINV_PENDING"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Accepted">
-    <statusId href="StatusItem#PARTYINV_SENT"/>
+    <status href="StatusItem#PARTYINV_SENT"/>
     <statusIdTo href="StatusItem#PARTYINV_ACCEPTED"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Declined">
-    <statusId href="StatusItem#PARTYINV_SENT"/>
+    <status href="StatusItem#PARTYINV_SENT"/>
     <statusIdTo href="StatusItem#PARTYINV_DECLINED"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancelled">
-    <statusId href="StatusItem#PARTYINV_SENT"/>
+    <status href="StatusItem#PARTYINV_SENT"/>
     <statusIdTo href="StatusItem#PARTYINV_CANCELLED"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Accepted">
-    <statusId href="StatusItem#PARTYINV_PENDING"/>
+    <status href="StatusItem#PARTYINV_PENDING"/>
     <statusIdTo href="StatusItem#PARTYINV_ACCEPTED"/>
   </contents>
   <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancelled">
-    <statusId href="StatusItem#PARTYINV_PENDING"/>
+    <status href="StatusItem#PARTYINV_PENDING"/>
     <statusIdTo href="StatusItem#PARTYINV_CANCELLED"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="FINANCIAL_TERM" description="Financial"/>
   <contents xsi:type="biz-agreement:TermType" termTypeId="FIN_PAYMENT_TERM" description="Payment (net days)">
-    <parentTypeId href="TermType#FINANCIAL_TERM"/>
+    <parentType href="TermType#FINANCIAL_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="FIN_PAY_NETDAYS_1" description="Payment net days, part 1">
-    <parentTypeId href="TermType#FIN_PAYMENT_TERM"/>
+    <parentType href="TermType#FIN_PAYMENT_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="FIN_PAY_NETDAYS_2" description="Payment net days, part 2">
-    <parentTypeId href="TermType#FIN_PAYMENT_TERM"/>
+    <parentType href="TermType#FIN_PAYMENT_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="FIN_PAY_NETDAYS_3" description="Payment net days, part 3">
-    <parentTypeId href="TermType#FIN_PAYMENT_TERM"/>
+    <parentType href="TermType#FIN_PAYMENT_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="FIN_PAYMENT_DISC" description="Payment (discounted if paid within specified days)">
-    <parentTypeId href="TermType#FINANCIAL_TERM"/>
+    <parentType href="TermType#FINANCIAL_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="FIN_PAYMENT_FIXDAY" description="Payment (due on specified day of month)">
-    <parentTypeId href="TermType#FINANCIAL_TERM"/>
+    <parentType href="TermType#FINANCIAL_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="FIN_LATE_FEE_TERM" description="Late Fee (percent)">
-    <parentTypeId href="TermType#FINANCIAL_TERM"/>
+    <parentType href="TermType#FINANCIAL_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="FIN_COLLECT_TERM" description="Penalty For Collection Agency">
-    <parentTypeId href="TermType#FINANCIAL_TERM"/>
+    <parentType href="TermType#FINANCIAL_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="FIN_NORTN_ITEM_TERM" description="Non-Returnable Sales Item">
-    <parentTypeId href="TermType#FINANCIAL_TERM"/>
+    <parentType href="TermType#FINANCIAL_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="INCENTIVE" description="Incentive"/>
   <contents xsi:type="biz-agreement:TermType" termTypeId="LEGAL_TERM" description="Legal"/>
@@ -819,78 +819,78 @@
   <contents xsi:type="biz-agreement:TermType" termTypeId="EXCLUSIVE_RELATIONSH" description="Exclusive Relationship"/>
   <contents xsi:type="biz-agreement:TermType" termTypeId="COMMISSION_TERM" description="Commission"/>
   <contents xsi:type="biz-agreement:TermType" termTypeId="FIN_COMM_FIXED" description="Commission Term Fixed Per Unit">
-    <parentTypeId href="TermType#COMMISSION_TERM"/>
+    <parentType href="TermType#COMMISSION_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="FIN_COMM_VARIABLE" description="Commission Term Variable">
-    <parentTypeId href="TermType#COMMISSION_TERM"/>
+    <parentType href="TermType#COMMISSION_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="FIN_COMM_MIN" description="Commission Term Minimum Per Unit">
-    <parentTypeId href="TermType#COMMISSION_TERM"/>
+    <parentType href="TermType#COMMISSION_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="FIN_COMM_MAX" description="Commission Term Maximum Per Unit">
-    <parentTypeId href="TermType#COMMISSION_TERM"/>
+    <parentType href="TermType#COMMISSION_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="INCO_TERM" description="Incoterm"/>
   <contents xsi:type="biz-agreement:TermType" termTypeId="EXW" description="Incoterm Ex Works">
-    <parentTypeId href="TermType#INCO_TERM"/>
+    <parentType href="TermType#INCO_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="FCA" description="Incoterm Free Carrier">
-    <parentTypeId href="TermType#INCO_TERM"/>
+    <parentType href="TermType#INCO_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="FAS" description="Incoterm Free Alongside Ship">
-    <parentTypeId href="TermType#INCO_TERM"/>
+    <parentType href="TermType#INCO_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="FOB" description="Incoterm Free On Board">
-    <parentTypeId href="TermType#INCO_TERM"/>
+    <parentType href="TermType#INCO_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="CFR" description="Incoterm Cost and Freight">
-    <parentTypeId href="TermType#INCO_TERM"/>
+    <parentType href="TermType#INCO_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="CIF" description="Incoterm Cost, Insurance and Freight">
-    <parentTypeId href="TermType#INCO_TERM"/>
+    <parentType href="TermType#INCO_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="CPT" description="Incoterm Carriage Paid To">
-    <parentTypeId href="TermType#INCO_TERM"/>
+    <parentType href="TermType#INCO_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="CIP" description="Incoterm Carriage and Insurance Paid to">
-    <parentTypeId href="TermType#INCO_TERM"/>
+    <parentType href="TermType#INCO_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="DAF" description="Incoterm Delivered At Frontier">
-    <parentTypeId href="TermType#INCO_TERM"/>
+    <parentType href="TermType#INCO_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="DES" description="Incoterm Delivered Ex Ship">
-    <parentTypeId href="TermType#INCO_TERM"/>
+    <parentType href="TermType#INCO_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="DEQ" description="Incoterm Delivered Ex Quay">
-    <parentTypeId href="TermType#INCO_TERM"/>
+    <parentType href="TermType#INCO_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="DDU" description="Incoterm Delivered Duty Unpaid">
-    <parentTypeId href="TermType#INCO_TERM"/>
+    <parentType href="TermType#INCO_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="DDP" description="Incoterm Delivered Duty Paid">
-    <parentTypeId href="TermType#INCO_TERM"/>
+    <parentType href="TermType#INCO_TERM"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="PURCHASING" description="Purchasing"/>
   <contents xsi:type="biz-agreement:TermType" termTypeId="PURCH_VENDOR_ID" description="Vendor Customer ID">
-    <parentTypeId href="TermType#PURCHASING"/>
+    <parentType href="TermType#PURCHASING"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="PURCH_FREIGHT" description="Preferred Freight">
-    <parentTypeId href="TermType#PURCHASING"/>
+    <parentType href="TermType#PURCHASING"/>
   </contents>
   <contents xsi:type="biz-agreement:TermType" termTypeId="OTHER_TERM" description="Other"/>
   <contents xsi:type="biz-user:UserPreference" userPrefTypeId="ORGANIZATION_PARTY" userPrefValue="DEFAULT">
-    <userLoginId href="UserLogin#_NA_"/>
-    <userPrefGroupTypeId href="UserPrefGroupType#GLOBAL_PREFERENCES"/>
+    <userLogin href="UserLogin#_NA_"/>
+    <userPrefGroupType href="UserPrefGroupType#GLOBAL_PREFERENCES"/>
   </contents>
   <contents xsi:type="biz-enum:EnumerationType" enumTypeId="USER_PREF_GROUPS" description="User preference groups"/>
   <contents xsi:type="biz-enum:EnumerationType" enumTypeId="GLOBAL_PREFERENCES" description="Global preferences">
-    <parentTypeId href="EnumerationType#USER_PREF_GROUPS"/>
+    <parentType href="EnumerationType#USER_PREF_GROUPS"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="ORGANIZATION_PARTY" description="Organization party" sequenceId="01">
-    <enumTypeId href="EnumerationType#GLOBAL_PREFERENCES"/>
+    <enumType href="EnumerationType#GLOBAL_PREFERENCES"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="VISUAL_THEME" description="Visual Theme" sequenceId="02">
-    <enumTypeId href="EnumerationType#GLOBAL_PREFERENCES"/>
+    <enumType href="EnumerationType#GLOBAL_PREFERENCES"/>
   </contents>
   <contents xsi:type="biz-party:PartyIdentificationType" partyIdentificationTypeId="PARTY_IMPORT" description="Original ID in the system where this record was imported from"/>
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="PARTYMGR_VIEW" description="View operations in the Party Manager."/>
@@ -926,11 +926,11 @@
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="SECURITY_DELETE" description="Delete operations in the Security Management Screens."/>
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="SECURITY_ADMIN" description="ALL operations in the Security Management Screens."/>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#PARTYMGR_ADMIN"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#PARTYMGR_ADMIN"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#SECURITY_ADMIN"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#SECURITY_ADMIN"/>
   </contents>
 </mimo-ent:EntityContainer>

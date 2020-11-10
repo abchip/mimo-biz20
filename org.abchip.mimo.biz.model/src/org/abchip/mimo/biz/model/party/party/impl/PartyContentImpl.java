@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyContentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyContentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyContentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyContentImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyContentImpl#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyContentImpl#getPartyContentTypeId <em>Party Content Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyContentImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyContentImpl#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyContentImpl#getPartyContentType <em>Party Content Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyContentImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyContentImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -155,8 +155,8 @@ public class PartyContentImpl extends EntityTypedImpl<PartyContentType> implemen
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(PartyPackage.Literals.PARTY_CONTENT__CONTENT_ID, true);
+	public Party getParty() {
+		return (Party)eGet(PartyPackage.Literals.PARTY_CONTENT__PARTY, true);
 	}
 
 	/**
@@ -165,8 +165,48 @@ public class PartyContentImpl extends EntityTypedImpl<PartyContentType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setContentId(Content newContentId) {
-		eSet(PartyPackage.Literals.PARTY_CONTENT__CONTENT_ID, newContentId);
+	public void setParty(Party newParty) {
+		eSet(PartyPackage.Literals.PARTY_CONTENT__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Content getContent() {
+		return (Content)eGet(PartyPackage.Literals.PARTY_CONTENT__CONTENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContent(Content newContent) {
+		eSet(PartyPackage.Literals.PARTY_CONTENT__CONTENT, newContent);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PartyContentType getPartyContentType() {
+		return (PartyContentType)eGet(PartyPackage.Literals.PARTY_CONTENT__PARTY_CONTENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPartyContentType(PartyContentType newPartyContentType) {
+		eSet(PartyPackage.Literals.PARTY_CONTENT__PARTY_CONTENT_TYPE, newPartyContentType);
 	}
 
 	/**
@@ -245,46 +285,6 @@ public class PartyContentImpl extends EntityTypedImpl<PartyContentType> implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(PartyPackage.Literals.PARTY_CONTENT__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(PartyPackage.Literals.PARTY_CONTENT__PARTY_ID, newPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PartyContentType getPartyContentTypeId() {
-		return (PartyContentType)eGet(PartyPackage.Literals.PARTY_CONTENT__PARTY_CONTENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyContentTypeId(PartyContentType newPartyContentTypeId) {
-		eSet(PartyPackage.Literals.PARTY_CONTENT__PARTY_CONTENT_TYPE_ID, newPartyContentTypeId);
 	}
 
 } //PartyContentImpl

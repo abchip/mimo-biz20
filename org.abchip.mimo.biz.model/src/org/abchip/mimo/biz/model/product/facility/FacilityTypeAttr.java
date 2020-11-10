@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityTypeAttr#getFacilityTypeId <em>Facility Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityTypeAttr#getFacilityType <em>Facility Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityTypeAttr#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityTypeAttr#getDescription <em>Description</em>}</li>
  * </ul>
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface FacilityTypeAttr extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Facility Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Facility Type</em>' reference.
+	 * @see #setFacilityType(FacilityType)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityTypeAttr_FacilityType()
+	 * @model keys="facilityTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	FacilityType getFacilityType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityTypeAttr#getFacilityType <em>Facility Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Facility Type</em>' reference.
+	 * @see #getFacilityType()
+	 * @generated
+	 */
+	void setFacilityType(FacilityType value);
+
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,32 +105,5 @@ public interface FacilityTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setAttrName(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Facility Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facility Type Id</em>' reference.
-	 * @see #setFacilityTypeId(FacilityType)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityTypeAttr_FacilityTypeId()
-	 * @model keys="facilityTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	FacilityType getFacilityTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityTypeAttr#getFacilityTypeId <em>Facility Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Facility Type Id</em>' reference.
-	 * @see #getFacilityTypeId()
-	 * @generated
-	 */
-	void setFacilityTypeId(FacilityType value);
 
 } // FacilityTypeAttr

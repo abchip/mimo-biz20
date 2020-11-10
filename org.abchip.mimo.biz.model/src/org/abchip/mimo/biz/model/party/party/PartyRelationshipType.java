@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationshipType#getPartyRelationshipTypeId <em>Party Relationship Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationshipType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationshipType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationshipType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationshipType#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationshipType#getPartyRelationshipName <em>Party Relationship Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationshipType#getRoleTypeIdValidFrom <em>Role Type Id Valid From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationshipType#getRoleTypeIdValidTo <em>Role Type Id Valid To</em>}</li>
@@ -86,6 +86,28 @@ public interface PartyRelationshipType extends EntityType<PartyRelationship>, En
 	void setHasTable(boolean value);
 
 	/**
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(PartyRelationshipType)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationshipType_ParentType()
+	 * @model keys="partyRelationshipTypeId"
+	 * @generated
+	 */
+	PartyRelationshipType getParentType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyRelationshipType#getParentType <em>Parent Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
+	 * @generated
+	 */
+	void setParentType(PartyRelationshipType value);
+
+	/**
 	 * Returns the value of the '<em><b>Party Relationship Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -110,32 +132,6 @@ public interface PartyRelationshipType extends EntityType<PartyRelationship>, En
 	 * @generated
 	 */
 	void setPartyRelationshipName(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(PartyRelationshipType)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationshipType_ParentTypeId()
-	 * @model keys="partyRelationshipTypeId"
-	 * @generated
-	 */
-	PartyRelationshipType getParentTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyRelationshipType#getParentTypeId <em>Parent Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
-	 * @generated
-	 */
-	void setParentTypeId(PartyRelationshipType value);
 
 	/**
 	 * Returns the value of the '<em><b>Role Type Id Valid From</b></em>' reference.

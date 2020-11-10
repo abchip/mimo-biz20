@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentStatusImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentStatusImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentStatusImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentStatusImpl#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentStatusImpl#getShipmentId <em>Shipment Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentStatusImpl#getChangeByUserLoginId <em>Change By User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentStatusImpl#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentStatusImpl#getShipment <em>Shipment</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentStatusImpl#getChangeByUserLogin <em>Change By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentStatusImpl#getStatusDate <em>Status Date</em>}</li>
  * </ul>
  *
@@ -155,8 +155,8 @@ public class ShipmentStatusImpl extends EntityIdentifiableImpl implements Shipme
 	 * @generated
 	 */
 	@Override
-	public UserLogin getChangeByUserLoginId() {
-		return (UserLogin)eGet(Shipment_Package.Literals.SHIPMENT_STATUS__CHANGE_BY_USER_LOGIN_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(Shipment_Package.Literals.SHIPMENT_STATUS__STATUS, true);
 	}
 
 	/**
@@ -165,8 +165,8 @@ public class ShipmentStatusImpl extends EntityIdentifiableImpl implements Shipme
 	 * @generated
 	 */
 	@Override
-	public void setChangeByUserLoginId(UserLogin newChangeByUserLoginId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_STATUS__CHANGE_BY_USER_LOGIN_ID, newChangeByUserLoginId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(Shipment_Package.Literals.SHIPMENT_STATUS__STATUS, newStatus);
 	}
 
 	/**
@@ -175,8 +175,8 @@ public class ShipmentStatusImpl extends EntityIdentifiableImpl implements Shipme
 	 * @generated
 	 */
 	@Override
-	public Shipment getShipmentId() {
-		return (Shipment)eGet(Shipment_Package.Literals.SHIPMENT_STATUS__SHIPMENT_ID, true);
+	public Shipment getShipment() {
+		return (Shipment)eGet(Shipment_Package.Literals.SHIPMENT_STATUS__SHIPMENT, true);
 	}
 
 	/**
@@ -185,8 +185,28 @@ public class ShipmentStatusImpl extends EntityIdentifiableImpl implements Shipme
 	 * @generated
 	 */
 	@Override
-	public void setShipmentId(Shipment newShipmentId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_STATUS__SHIPMENT_ID, newShipmentId);
+	public void setShipment(Shipment newShipment) {
+		eSet(Shipment_Package.Literals.SHIPMENT_STATUS__SHIPMENT, newShipment);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UserLogin getChangeByUserLogin() {
+		return (UserLogin)eGet(Shipment_Package.Literals.SHIPMENT_STATUS__CHANGE_BY_USER_LOGIN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setChangeByUserLogin(UserLogin newChangeByUserLogin) {
+		eSet(Shipment_Package.Literals.SHIPMENT_STATUS__CHANGE_BY_USER_LOGIN, newChangeByUserLogin);
 	}
 
 	/**
@@ -245,26 +265,6 @@ public class ShipmentStatusImpl extends EntityIdentifiableImpl implements Shipme
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(Shipment_Package.Literals.SHIPMENT_STATUS__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_STATUS__STATUS_ID, newStatusId);
 	}
 
 } //ShipmentStatusImpl

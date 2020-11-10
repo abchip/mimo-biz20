@@ -38,9 +38,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodeImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodeImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodeImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodeImpl#getProductPromo <em>Product Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodeImpl#getProductPromoCodeEmails <em>Product Promo Code Emails</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodeImpl#getProductPromoCodeParties <em>Product Promo Code Parties</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodeImpl#getProductPromoId <em>Product Promo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodeImpl#isRequireEmailOrParty <em>Require Email Or Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodeImpl#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodeImpl#getUseLimitPerCode <em>Use Limit Per Code</em>}</li>
@@ -266,6 +266,26 @@ public class ProductPromoCodeImpl extends EntityIdentifiableImpl implements Prod
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public ProductPromo getProductPromo() {
+		return (ProductPromo)eGet(PromoPackage.Literals.PRODUCT_PROMO_CODE__PRODUCT_PROMO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPromo(ProductPromo newProductPromo) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_CODE__PRODUCT_PROMO, newProductPromo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<ProductPromoCodeEmail> getProductPromoCodeEmails() {
@@ -419,26 +439,6 @@ public class ProductPromoCodeImpl extends EntityIdentifiableImpl implements Prod
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductPromo getProductPromoId() {
-		return (ProductPromo)eGet(PromoPackage.Literals.PRODUCT_PROMO_CODE__PRODUCT_PROMO_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPromoId(ProductPromo newProductPromoId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_CODE__PRODUCT_PROMO_ID, newProductPromoId);
 	}
 
 	/**

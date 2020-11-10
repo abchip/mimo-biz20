@@ -35,11 +35,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemResponseImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemResponseImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemResponseImpl#getReturnItemResponseId <em>Return Item Response Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemResponseImpl#getBillingAccountId <em>Billing Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemResponseImpl#getFinAccountTransId <em>Fin Account Trans Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemResponseImpl#getOrderPaymentPreferenceId <em>Order Payment Preference Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemResponseImpl#getPaymentId <em>Payment Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemResponseImpl#getReplacementOrderId <em>Replacement Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemResponseImpl#getBillingAccount <em>Billing Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemResponseImpl#getFinAccountTrans <em>Fin Account Trans</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemResponseImpl#getOrderPaymentPreference <em>Order Payment Preference</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemResponseImpl#getPayment <em>Payment</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemResponseImpl#getReplacementOrder <em>Replacement Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemResponseImpl#getResponseAmount <em>Response Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemResponseImpl#getResponseDate <em>Response Date</em>}</li>
  * </ul>
@@ -163,106 +163,6 @@ public class ReturnItemResponseImpl extends EntityIdentifiableImpl implements Re
 	 * @generated
 	 */
 	@Override
-	public BillingAccount getBillingAccountId() {
-		return (BillingAccount)eGet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__BILLING_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBillingAccountId(BillingAccount newBillingAccountId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__BILLING_ACCOUNT_ID, newBillingAccountId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FinAccountTrans getFinAccountTransId() {
-		return (FinAccountTrans)eGet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__FIN_ACCOUNT_TRANS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFinAccountTransId(FinAccountTrans newFinAccountTransId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__FIN_ACCOUNT_TRANS_ID, newFinAccountTransId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderPaymentPreference getOrderPaymentPreferenceId() {
-		return (OrderPaymentPreference)eGet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__ORDER_PAYMENT_PREFERENCE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderPaymentPreferenceId(OrderPaymentPreference newOrderPaymentPreferenceId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__ORDER_PAYMENT_PREFERENCE_ID, newOrderPaymentPreferenceId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Payment getPaymentId() {
-		return (Payment)eGet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__PAYMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaymentId(Payment newPaymentId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__PAYMENT_ID, newPaymentId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderHeader getReplacementOrderId() {
-		return (OrderHeader)eGet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__REPLACEMENT_ORDER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setReplacementOrderId(OrderHeader newReplacementOrderId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__REPLACEMENT_ORDER_ID, newReplacementOrderId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public BigDecimal getResponseAmount() {
 		return (BigDecimal)eGet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__RESPONSE_AMOUNT, true);
 	}
@@ -353,6 +253,106 @@ public class ReturnItemResponseImpl extends EntityIdentifiableImpl implements Re
 	@Override
 	public void setReturnItemResponseId(String newReturnItemResponseId) {
 		eSet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__RETURN_ITEM_RESPONSE_ID, newReturnItemResponseId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BillingAccount getBillingAccount() {
+		return (BillingAccount)eGet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__BILLING_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBillingAccount(BillingAccount newBillingAccount) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__BILLING_ACCOUNT, newBillingAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FinAccountTrans getFinAccountTrans() {
+		return (FinAccountTrans)eGet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__FIN_ACCOUNT_TRANS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFinAccountTrans(FinAccountTrans newFinAccountTrans) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__FIN_ACCOUNT_TRANS, newFinAccountTrans);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OrderPaymentPreference getOrderPaymentPreference() {
+		return (OrderPaymentPreference)eGet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__ORDER_PAYMENT_PREFERENCE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrderPaymentPreference(OrderPaymentPreference newOrderPaymentPreference) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__ORDER_PAYMENT_PREFERENCE, newOrderPaymentPreference);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Payment getPayment() {
+		return (Payment)eGet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__PAYMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPayment(Payment newPayment) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__PAYMENT, newPayment);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OrderHeader getReplacementOrder() {
+		return (OrderHeader)eGet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__REPLACEMENT_ORDER, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setReplacementOrder(OrderHeader newReplacementOrder) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM_RESPONSE__REPLACEMENT_ORDER, newReplacementOrder);
 	}
 
 } //ReturnItemResponseImpl

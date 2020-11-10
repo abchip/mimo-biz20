@@ -46,7 +46,7 @@ public class PartyTest {
 			Party partyTest = partyReader.lookup(personId);
 			testAsserter.assertNotNull("Party '" + personId + "' exist", partyTest);
 			if (partyTest != null) {
-				testAsserter.assertEquals("Party type", "PERSON", partyTest.getPartyTypeId().getPartyTypeId());
+				testAsserter.assertEquals("Party type", "PERSON", partyTest.getPartyType().getPartyTypeId());
 			} else {
 				testAsserter.assertEquals("Party type", "PERSON", "");
 			}
@@ -73,7 +73,7 @@ public class PartyTest {
 			Party partyTest = partyReader.lookup(partyGroupId);
 			testAsserter.assertNotNull("Party '" + partyGroupId + "' exist", partyTest);
 			if (partyTest != null) {
-				testAsserter.assertEquals("Party type", "PARTY_GROUP", partyTest.getPartyTypeId().getPartyTypeId());
+				testAsserter.assertEquals("Party type", "PARTY_GROUP", partyTest.getPartyType().getPartyTypeId());
 			} else {
 				testAsserter.assertEquals("Party type", "PARTY_GROUP", "");
 			}

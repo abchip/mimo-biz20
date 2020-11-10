@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeImpl#getDocumentTypeAttrs <em>Document Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -214,6 +214,26 @@ public class DocumentTypeImpl extends EntityTypeImpl<Document> implements Docume
 	 * @generated
 	 */
 	@Override
+	public DocumentType getParentType() {
+		return (DocumentType)eGet(DocumentPackage.Literals.DOCUMENT_TYPE__PARENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParentType(DocumentType newParentType) {
+		eSet(DocumentPackage.Literals.DOCUMENT_TYPE__PARENT_TYPE, newParentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDocumentTypeId() {
 		return (String)eGet(DocumentPackage.Literals.DOCUMENT_TYPE__DOCUMENT_TYPE_ID, true);
 	}
@@ -226,26 +246,6 @@ public class DocumentTypeImpl extends EntityTypeImpl<Document> implements Docume
 	@Override
 	public void setDocumentTypeId(String newDocumentTypeId) {
 		eSet(DocumentPackage.Literals.DOCUMENT_TYPE__DOCUMENT_TYPE_ID, newDocumentTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DocumentType getParentTypeId() {
-		return (DocumentType)eGet(DocumentPackage.Literals.DOCUMENT_TYPE__PARENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentTypeId(DocumentType newParentTypeId) {
-		eSet(DocumentPackage.Literals.DOCUMENT_TYPE__PARENT_TYPE_ID, newParentTypeId);
 	}
 
 	/**

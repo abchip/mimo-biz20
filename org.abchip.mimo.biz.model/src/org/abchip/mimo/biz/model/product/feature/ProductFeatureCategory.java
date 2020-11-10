@@ -21,7 +21,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCategory#getProductFeatureCategoryId <em>Product Feature Category Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCategory#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCategory#getParentCategoryId <em>Parent Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCategory#getParentCategory <em>Parent Category</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureCategory()
@@ -56,30 +56,26 @@ public interface ProductFeatureCategory extends EntityIdentifiable, EntityInfo {
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Category Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Category Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Category Id</em>' reference.
-	 * @see #setParentCategoryId(ProductFeatureCategory)
-	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureCategory_ParentCategoryId()
+	 * @return the value of the '<em>Parent Category</em>' reference.
+	 * @see #setParentCategory(ProductFeatureCategory)
+	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureCategory_ParentCategory()
 	 * @model keys="productFeatureCategoryId"
 	 * @generated
 	 */
-	ProductFeatureCategory getParentCategoryId();
+	ProductFeatureCategory getParentCategory();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCategory#getParentCategoryId <em>Parent Category Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCategory#getParentCategory <em>Parent Category</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Category Id</em>' reference.
-	 * @see #getParentCategoryId()
+	 * @param value the new value of the '<em>Parent Category</em>' reference.
+	 * @see #getParentCategory()
 	 * @generated
 	 */
-	void setParentCategoryId(ProductFeatureCategory value);
+	void setParentCategory(ProductFeatureCategory value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Feature Category Id</b></em>' attribute.

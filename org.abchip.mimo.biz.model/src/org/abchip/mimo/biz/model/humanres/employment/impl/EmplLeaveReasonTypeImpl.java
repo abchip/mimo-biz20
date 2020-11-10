@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveReasonTypeImpl#getEmplLeaveReasonTypeId <em>Empl Leave Reason Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveReasonTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveReasonTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveReasonTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveReasonTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -192,6 +192,26 @@ public class EmplLeaveReasonTypeImpl extends EntityIdentifiableImpl implements E
 	 * @generated
 	 */
 	@Override
+	public EmplLeaveReasonType getParentType() {
+		return (EmplLeaveReasonType)eGet(EmploymentPackage.Literals.EMPL_LEAVE_REASON_TYPE__PARENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParentType(EmplLeaveReasonType newParentType) {
+		eSet(EmploymentPackage.Literals.EMPL_LEAVE_REASON_TYPE__PARENT_TYPE, newParentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEmplLeaveReasonTypeId() {
 		return (String)eGet(EmploymentPackage.Literals.EMPL_LEAVE_REASON_TYPE__EMPL_LEAVE_REASON_TYPE_ID, true);
 	}
@@ -204,26 +224,6 @@ public class EmplLeaveReasonTypeImpl extends EntityIdentifiableImpl implements E
 	@Override
 	public void setEmplLeaveReasonTypeId(String newEmplLeaveReasonTypeId) {
 		eSet(EmploymentPackage.Literals.EMPL_LEAVE_REASON_TYPE__EMPL_LEAVE_REASON_TYPE_ID, newEmplLeaveReasonTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EmplLeaveReasonType getParentTypeId() {
-		return (EmplLeaveReasonType)eGet(EmploymentPackage.Literals.EMPL_LEAVE_REASON_TYPE__PARENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentTypeId(EmplLeaveReasonType newParentTypeId) {
-		eSet(EmploymentPackage.Literals.EMPL_LEAVE_REASON_TYPE__PARENT_TYPE_ID, newParentTypeId);
 	}
 
 	/**

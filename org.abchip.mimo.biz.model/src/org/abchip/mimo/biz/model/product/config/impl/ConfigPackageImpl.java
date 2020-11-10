@@ -827,7 +827,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProdConfItemContent_ConfigItemId() {
+	public EReference getProdConfItemContent_ConfigItem() {
 		return (EReference)prodConfItemContentEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -837,7 +837,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProdConfItemContent_ContentId() {
+	public EReference getProdConfItemContent_Content() {
 		return (EReference)prodConfItemContentEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -847,7 +847,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProdConfItemContent_ConfItemContentTypeId() {
+	public EReference getProdConfItemContent_ConfItemContentType() {
 		return (EReference)prodConfItemContentEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -917,7 +917,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProdConfItemContentType_ParentTypeId() {
+	public EReference getProdConfItemContentType_ParentType() {
 		return (EReference)prodConfItemContentTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -937,7 +937,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductConfig_ProductId() {
+	public EReference getProductConfig_Product() {
 		return (EReference)productConfigEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -947,7 +947,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductConfig_ConfigItemId() {
+	public EReference getProductConfig_ConfigItem() {
 		return (EReference)productConfigEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1047,8 +1047,8 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getProductConfigConfig_ConfigId() {
-		return (EAttribute)productConfigConfigEClass.getEStructuralFeatures().get(1);
+	public EReference getProductConfigConfig_ConfigItem() {
+		return (EReference)productConfigConfigEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1057,8 +1057,8 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductConfigConfig_ConfigItemId() {
-		return (EReference)productConfigConfigEClass.getEStructuralFeatures().get(0);
+	public EAttribute getProductConfigConfig_ConfigId() {
+		return (EAttribute)productConfigConfigEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1187,7 +1187,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductConfigOption_ConfigItemId() {
+	public EReference getProductConfigOption_ConfigItem() {
 		return (EReference)productConfigOptionEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1247,7 +1247,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductConfigOptionIactn_ConfigItemId() {
+	public EReference getProductConfigOptionIactn_ConfigItem() {
 		return (EReference)productConfigOptionIactnEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1327,8 +1327,18 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductConfigProduct_ConfigItemId() {
+	public EReference getProductConfigProduct_ConfigItem() {
 		return (EReference)productConfigProductEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getProductConfigProduct_Product() {
+		return (EReference)productConfigProductEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1339,16 +1349,6 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 	@Override
 	public EAttribute getProductConfigProduct_ConfigOptionId() {
 		return (EAttribute)productConfigProductEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getProductConfigProduct_ProductId() {
-		return (EReference)productConfigProductEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1387,8 +1387,8 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getProductConfigStats_ConfigId() {
-		return (EAttribute)productConfigStatsEClass.getEStructuralFeatures().get(1);
+	public EReference getProductConfigStats_Product() {
+		return (EReference)productConfigStatsEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1397,8 +1397,8 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductConfigStats_ProductId() {
-		return (EReference)productConfigStatsEClass.getEStructuralFeatures().get(0);
+	public EAttribute getProductConfigStats_ConfigId() {
+		return (EAttribute)productConfigStatsEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1460,9 +1460,9 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		createEAttribute(configOptionProductOptionEClass, CONFIG_OPTION_PRODUCT_OPTION__PRODUCT_OPTION_ID);
 
 		prodConfItemContentEClass = createEClass(PROD_CONF_ITEM_CONTENT);
-		createEReference(prodConfItemContentEClass, PROD_CONF_ITEM_CONTENT__CONFIG_ITEM_ID);
-		createEReference(prodConfItemContentEClass, PROD_CONF_ITEM_CONTENT__CONTENT_ID);
-		createEReference(prodConfItemContentEClass, PROD_CONF_ITEM_CONTENT__CONF_ITEM_CONTENT_TYPE_ID);
+		createEReference(prodConfItemContentEClass, PROD_CONF_ITEM_CONTENT__CONFIG_ITEM);
+		createEReference(prodConfItemContentEClass, PROD_CONF_ITEM_CONTENT__CONTENT);
+		createEReference(prodConfItemContentEClass, PROD_CONF_ITEM_CONTENT__CONF_ITEM_CONTENT_TYPE);
 		createEAttribute(prodConfItemContentEClass, PROD_CONF_ITEM_CONTENT__FROM_DATE);
 		createEAttribute(prodConfItemContentEClass, PROD_CONF_ITEM_CONTENT__THRU_DATE);
 
@@ -1470,11 +1470,11 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		createEAttribute(prodConfItemContentTypeEClass, PROD_CONF_ITEM_CONTENT_TYPE__CONF_ITEM_CONTENT_TYPE_ID);
 		createEAttribute(prodConfItemContentTypeEClass, PROD_CONF_ITEM_CONTENT_TYPE__DESCRIPTION);
 		createEAttribute(prodConfItemContentTypeEClass, PROD_CONF_ITEM_CONTENT_TYPE__HAS_TABLE);
-		createEReference(prodConfItemContentTypeEClass, PROD_CONF_ITEM_CONTENT_TYPE__PARENT_TYPE_ID);
+		createEReference(prodConfItemContentTypeEClass, PROD_CONF_ITEM_CONTENT_TYPE__PARENT_TYPE);
 
 		productConfigEClass = createEClass(PRODUCT_CONFIG);
-		createEReference(productConfigEClass, PRODUCT_CONFIG__PRODUCT_ID);
-		createEReference(productConfigEClass, PRODUCT_CONFIG__CONFIG_ITEM_ID);
+		createEReference(productConfigEClass, PRODUCT_CONFIG__PRODUCT);
+		createEReference(productConfigEClass, PRODUCT_CONFIG__CONFIG_ITEM);
 		createEAttribute(productConfigEClass, PRODUCT_CONFIG__FROM_DATE);
 		createEAttribute(productConfigEClass, PRODUCT_CONFIG__SEQUENCE_NUM);
 		createEAttribute(productConfigEClass, PRODUCT_CONFIG__CONFIG_TYPE_ID);
@@ -1485,7 +1485,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		createEAttribute(productConfigEClass, PRODUCT_CONFIG__THRU_DATE);
 
 		productConfigConfigEClass = createEClass(PRODUCT_CONFIG_CONFIG);
-		createEReference(productConfigConfigEClass, PRODUCT_CONFIG_CONFIG__CONFIG_ITEM_ID);
+		createEReference(productConfigConfigEClass, PRODUCT_CONFIG_CONFIG__CONFIG_ITEM);
 		createEAttribute(productConfigConfigEClass, PRODUCT_CONFIG_CONFIG__CONFIG_ID);
 		createEAttribute(productConfigConfigEClass, PRODUCT_CONFIG_CONFIG__CONFIG_OPTION_ID);
 		createEAttribute(productConfigConfigEClass, PRODUCT_CONFIG_CONFIG__SEQUENCE_NUM);
@@ -1501,14 +1501,14 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		createEAttribute(productConfigItemEClass, PRODUCT_CONFIG_ITEM__LONG_DESCRIPTION);
 
 		productConfigOptionEClass = createEClass(PRODUCT_CONFIG_OPTION);
-		createEReference(productConfigOptionEClass, PRODUCT_CONFIG_OPTION__CONFIG_ITEM_ID);
+		createEReference(productConfigOptionEClass, PRODUCT_CONFIG_OPTION__CONFIG_ITEM);
 		createEAttribute(productConfigOptionEClass, PRODUCT_CONFIG_OPTION__CONFIG_OPTION_ID);
 		createEAttribute(productConfigOptionEClass, PRODUCT_CONFIG_OPTION__CONFIG_OPTION_NAME);
 		createEAttribute(productConfigOptionEClass, PRODUCT_CONFIG_OPTION__DESCRIPTION);
 		createEAttribute(productConfigOptionEClass, PRODUCT_CONFIG_OPTION__SEQUENCE_NUM);
 
 		productConfigOptionIactnEClass = createEClass(PRODUCT_CONFIG_OPTION_IACTN);
-		createEReference(productConfigOptionIactnEClass, PRODUCT_CONFIG_OPTION_IACTN__CONFIG_ITEM_ID);
+		createEReference(productConfigOptionIactnEClass, PRODUCT_CONFIG_OPTION_IACTN__CONFIG_ITEM);
 		createEReference(productConfigOptionIactnEClass, PRODUCT_CONFIG_OPTION_IACTN__CONFIG_ITEM_ID_TO);
 		createEAttribute(productConfigOptionIactnEClass, PRODUCT_CONFIG_OPTION_IACTN__CONFIG_OPTION_ID);
 		createEAttribute(productConfigOptionIactnEClass, PRODUCT_CONFIG_OPTION_IACTN__CONFIG_OPTION_ID_TO);
@@ -1517,14 +1517,14 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		createEAttribute(productConfigOptionIactnEClass, PRODUCT_CONFIG_OPTION_IACTN__DESCRIPTION);
 
 		productConfigProductEClass = createEClass(PRODUCT_CONFIG_PRODUCT);
-		createEReference(productConfigProductEClass, PRODUCT_CONFIG_PRODUCT__CONFIG_ITEM_ID);
-		createEReference(productConfigProductEClass, PRODUCT_CONFIG_PRODUCT__PRODUCT_ID);
+		createEReference(productConfigProductEClass, PRODUCT_CONFIG_PRODUCT__CONFIG_ITEM);
+		createEReference(productConfigProductEClass, PRODUCT_CONFIG_PRODUCT__PRODUCT);
 		createEAttribute(productConfigProductEClass, PRODUCT_CONFIG_PRODUCT__CONFIG_OPTION_ID);
 		createEAttribute(productConfigProductEClass, PRODUCT_CONFIG_PRODUCT__QUANTITY);
 		createEAttribute(productConfigProductEClass, PRODUCT_CONFIG_PRODUCT__SEQUENCE_NUM);
 
 		productConfigStatsEClass = createEClass(PRODUCT_CONFIG_STATS);
-		createEReference(productConfigStatsEClass, PRODUCT_CONFIG_STATS__PRODUCT_ID);
+		createEReference(productConfigStatsEClass, PRODUCT_CONFIG_STATS__PRODUCT);
 		createEAttribute(productConfigStatsEClass, PRODUCT_CONFIG_STATS__CONFIG_ID);
 		createEAttribute(productConfigStatsEClass, PRODUCT_CONFIG_STATS__CONFIG_TYPE_ID);
 		createEAttribute(productConfigStatsEClass, PRODUCT_CONFIG_STATS__NUM_OF_CONFS);
@@ -1603,12 +1603,12 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		initEAttribute(getConfigOptionProductOption_ProductOptionId(), ecorePackage.getEString(), "productOptionId", null, 0, 1, ConfigOptionProductOption.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(prodConfItemContentEClass, ProdConfItemContent.class, "ProdConfItemContent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProdConfItemContent_ConfigItemId(), this.getProductConfigItem(), null, "configItemId", null, 1, 1, ProdConfItemContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProdConfItemContent_ConfigItemId().getEKeys().add(this.getProductConfigItem_ConfigItemId());
-		initEReference(getProdConfItemContent_ContentId(), theContentPackage.getContent(), null, "contentId", null, 1, 1, ProdConfItemContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProdConfItemContent_ContentId().getEKeys().add(theContentPackage.getContent_ContentId());
-		initEReference(getProdConfItemContent_ConfItemContentTypeId(), this.getProdConfItemContentType(), null, "confItemContentTypeId", null, 1, 1, ProdConfItemContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProdConfItemContent_ConfItemContentTypeId().getEKeys().add(this.getProdConfItemContentType_ConfItemContentTypeId());
+		initEReference(getProdConfItemContent_ConfigItem(), this.getProductConfigItem(), null, "configItem", null, 1, 1, ProdConfItemContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProdConfItemContent_ConfigItem().getEKeys().add(this.getProductConfigItem_ConfigItemId());
+		initEReference(getProdConfItemContent_Content(), theContentPackage.getContent(), null, "content", null, 1, 1, ProdConfItemContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProdConfItemContent_Content().getEKeys().add(theContentPackage.getContent_ContentId());
+		initEReference(getProdConfItemContent_ConfItemContentType(), this.getProdConfItemContentType(), null, "confItemContentType", null, 1, 1, ProdConfItemContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProdConfItemContent_ConfItemContentType().getEKeys().add(this.getProdConfItemContentType_ConfItemContentTypeId());
 		initEAttribute(getProdConfItemContent_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProdConfItemContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProdConfItemContent_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProdConfItemContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1616,14 +1616,14 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		initEAttribute(getProdConfItemContentType_ConfItemContentTypeId(), ecorePackage.getEString(), "confItemContentTypeId", null, 1, 1, ProdConfItemContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProdConfItemContentType_Description(), ecorePackage.getEString(), "description", null, 0, 1, ProdConfItemContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProdConfItemContentType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 0, 1, ProdConfItemContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getProdConfItemContentType_ParentTypeId(), this.getProdConfItemContentType(), null, "parentTypeId", null, 0, 1, ProdConfItemContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProdConfItemContentType_ParentTypeId().getEKeys().add(this.getProdConfItemContentType_ConfItemContentTypeId());
+		initEReference(getProdConfItemContentType_ParentType(), this.getProdConfItemContentType(), null, "parentType", null, 0, 1, ProdConfItemContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProdConfItemContentType_ParentType().getEKeys().add(this.getProdConfItemContentType_ConfItemContentTypeId());
 
 		initEClass(productConfigEClass, ProductConfig.class, "ProductConfig", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProductConfig_ProductId(), theProductPackage.getProduct(), null, "productId", null, 1, 1, ProductConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductConfig_ProductId().getEKeys().add(theProductPackage.getProduct_ProductId());
-		initEReference(getProductConfig_ConfigItemId(), this.getProductConfigItem(), null, "configItemId", null, 1, 1, ProductConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductConfig_ConfigItemId().getEKeys().add(this.getProductConfigItem_ConfigItemId());
+		initEReference(getProductConfig_Product(), theProductPackage.getProduct(), null, "product", null, 1, 1, ProductConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductConfig_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
+		initEReference(getProductConfig_ConfigItem(), this.getProductConfigItem(), null, "configItem", null, 1, 1, ProductConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductConfig_ConfigItem().getEKeys().add(this.getProductConfigItem_ConfigItemId());
 		initEAttribute(getProductConfig_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductConfig_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 1, 1, ProductConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductConfig_ConfigTypeId(), ecorePackage.getEString(), "configTypeId", null, 0, 1, ProductConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1634,8 +1634,8 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		initEAttribute(getProductConfig_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productConfigConfigEClass, ProductConfigConfig.class, "ProductConfigConfig", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProductConfigConfig_ConfigItemId(), this.getProductConfigItem(), null, "configItemId", null, 1, 1, ProductConfigConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductConfigConfig_ConfigItemId().getEKeys().add(this.getProductConfigItem_ConfigItemId());
+		initEReference(getProductConfigConfig_ConfigItem(), this.getProductConfigItem(), null, "configItem", null, 1, 1, ProductConfigConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductConfigConfig_ConfigItem().getEKeys().add(this.getProductConfigItem_ConfigItemId());
 		initEAttribute(getProductConfigConfig_ConfigId(), ecorePackage.getEString(), "configId", null, 1, 1, ProductConfigConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductConfigConfig_ConfigOptionId(), ecorePackage.getEString(), "configOptionId", null, 1, 1, ProductConfigConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductConfigConfig_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 1, 1, ProductConfigConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1651,16 +1651,16 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		initEAttribute(getProductConfigItem_LongDescription(), ecorePackage.getEString(), "longDescription", null, 0, 1, ProductConfigItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productConfigOptionEClass, ProductConfigOption.class, "ProductConfigOption", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProductConfigOption_ConfigItemId(), this.getProductConfigItem(), null, "configItemId", null, 1, 1, ProductConfigOption.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductConfigOption_ConfigItemId().getEKeys().add(this.getProductConfigItem_ConfigItemId());
+		initEReference(getProductConfigOption_ConfigItem(), this.getProductConfigItem(), null, "configItem", null, 1, 1, ProductConfigOption.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductConfigOption_ConfigItem().getEKeys().add(this.getProductConfigItem_ConfigItemId());
 		initEAttribute(getProductConfigOption_ConfigOptionId(), ecorePackage.getEString(), "configOptionId", null, 1, 1, ProductConfigOption.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductConfigOption_ConfigOptionName(), ecorePackage.getEString(), "configOptionName", null, 0, 1, ProductConfigOption.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductConfigOption_Description(), ecorePackage.getEString(), "description", null, 0, 1, ProductConfigOption.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductConfigOption_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, ProductConfigOption.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productConfigOptionIactnEClass, ProductConfigOptionIactn.class, "ProductConfigOptionIactn", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProductConfigOptionIactn_ConfigItemId(), this.getProductConfigItem(), null, "configItemId", null, 1, 1, ProductConfigOptionIactn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductConfigOptionIactn_ConfigItemId().getEKeys().add(this.getProductConfigItem_ConfigItemId());
+		initEReference(getProductConfigOptionIactn_ConfigItem(), this.getProductConfigItem(), null, "configItem", null, 1, 1, ProductConfigOptionIactn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductConfigOptionIactn_ConfigItem().getEKeys().add(this.getProductConfigItem_ConfigItemId());
 		initEReference(getProductConfigOptionIactn_ConfigItemIdTo(), this.getProductConfigItem(), null, "configItemIdTo", null, 1, 1, ProductConfigOptionIactn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getProductConfigOptionIactn_ConfigItemIdTo().getEKeys().add(this.getProductConfigItem_ConfigItemId());
 		initEAttribute(getProductConfigOptionIactn_ConfigOptionId(), ecorePackage.getEString(), "configOptionId", null, 1, 1, ProductConfigOptionIactn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1670,17 +1670,17 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		initEAttribute(getProductConfigOptionIactn_Description(), ecorePackage.getEString(), "description", null, 0, 1, ProductConfigOptionIactn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productConfigProductEClass, ProductConfigProduct.class, "ProductConfigProduct", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProductConfigProduct_ConfigItemId(), this.getProductConfigItem(), null, "configItemId", null, 1, 1, ProductConfigProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductConfigProduct_ConfigItemId().getEKeys().add(this.getProductConfigItem_ConfigItemId());
-		initEReference(getProductConfigProduct_ProductId(), theProductPackage.getProduct(), null, "productId", null, 1, 1, ProductConfigProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductConfigProduct_ProductId().getEKeys().add(theProductPackage.getProduct_ProductId());
+		initEReference(getProductConfigProduct_ConfigItem(), this.getProductConfigItem(), null, "configItem", null, 1, 1, ProductConfigProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductConfigProduct_ConfigItem().getEKeys().add(this.getProductConfigItem_ConfigItemId());
+		initEReference(getProductConfigProduct_Product(), theProductPackage.getProduct(), null, "product", null, 1, 1, ProductConfigProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductConfigProduct_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEAttribute(getProductConfigProduct_ConfigOptionId(), ecorePackage.getEString(), "configOptionId", null, 1, 1, ProductConfigProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductConfigProduct_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, ProductConfigProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductConfigProduct_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, ProductConfigProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productConfigStatsEClass, ProductConfigStats.class, "ProductConfigStats", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProductConfigStats_ProductId(), theProductPackage.getProduct(), null, "productId", null, 1, 1, ProductConfigStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductConfigStats_ProductId().getEKeys().add(theProductPackage.getProduct_ProductId());
+		initEReference(getProductConfigStats_Product(), theProductPackage.getProduct(), null, "product", null, 1, 1, ProductConfigStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductConfigStats_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEAttribute(getProductConfigStats_ConfigId(), ecorePackage.getEString(), "configId", null, 1, 1, ProductConfigStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductConfigStats_ConfigTypeId(), ecorePackage.getEString(), "configTypeId", null, 0, 1, ProductConfigStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductConfigStats_NumOfConfs(), ecorePackage.getELong(), "numOfConfs", null, 0, 1, ProductConfigStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2064,19 +2064,19 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProdConfItemContent_ConfigItemId(),
+		  (getProdConfItemContent_ConfigItem(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProdConfItemContent_ContentId(),
+		  (getProdConfItemContent_Content(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProdConfItemContent_ConfItemContentTypeId(),
+		  (getProdConfItemContent_ConfItemContentType(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2088,13 +2088,13 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductConfig_ProductId(),
+		  (getProductConfig_Product(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductConfig_ConfigItemId(),
+		  (getProductConfig_ConfigItem(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2112,7 +2112,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductConfigConfig_ConfigItemId(),
+		  (getProductConfigConfig_ConfigItem(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2136,7 +2136,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductConfigOption_ConfigItemId(),
+		  (getProductConfigOption_ConfigItem(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2148,7 +2148,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductConfigOptionIactn_ConfigItemId(),
+		  (getProductConfigOptionIactn_ConfigItem(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2184,13 +2184,13 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 			   "help", "INCOMPATIBLE, etc..."
 		   });
 		addAnnotation
-		  (getProductConfigProduct_ConfigItemId(),
+		  (getProductConfigProduct_ConfigItem(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductConfigProduct_ProductId(),
+		  (getProductConfigProduct_Product(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2202,7 +2202,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductConfigStats_ProductId(),
+		  (getProductConfigStats_Product(),
 		   source,
 		   new String[] {
 			   "key", "true"

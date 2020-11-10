@@ -24,8 +24,8 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getCurrentFacilityGroupRollups <em>Current Facility Group Rollups</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getFacilityGroupName <em>Facility Group Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getFacilityGroupTypeId <em>Facility Group Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getPrimaryParentGroupId <em>Primary Parent Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getFacilityGroupType <em>Facility Group Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getPrimaryParentGroup <em>Primary Parent Group</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroup()
@@ -86,56 +86,48 @@ public interface FacilityGroup extends EntityTyped<FacilityGroupType>, EntityInf
 	void setFacilityGroupName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Facility Group Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Facility Group Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Group Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facility Group Type Id</em>' reference.
-	 * @see #setFacilityGroupTypeId(FacilityGroupType)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroup_FacilityGroupTypeId()
+	 * @return the value of the '<em>Facility Group Type</em>' reference.
+	 * @see #setFacilityGroupType(FacilityGroupType)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroup_FacilityGroupType()
 	 * @model keys="facilityGroupTypeId"
 	 * @generated
 	 */
-	FacilityGroupType getFacilityGroupTypeId();
+	FacilityGroupType getFacilityGroupType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getFacilityGroupTypeId <em>Facility Group Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getFacilityGroupType <em>Facility Group Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Facility Group Type Id</em>' reference.
-	 * @see #getFacilityGroupTypeId()
+	 * @param value the new value of the '<em>Facility Group Type</em>' reference.
+	 * @see #getFacilityGroupType()
 	 * @generated
 	 */
-	void setFacilityGroupTypeId(FacilityGroupType value);
+	void setFacilityGroupType(FacilityGroupType value);
 
 	/**
-	 * Returns the value of the '<em><b>Primary Parent Group Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Primary Parent Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Primary Parent Group Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Primary Parent Group Id</em>' reference.
-	 * @see #setPrimaryParentGroupId(FacilityGroup)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroup_PrimaryParentGroupId()
+	 * @return the value of the '<em>Primary Parent Group</em>' reference.
+	 * @see #setPrimaryParentGroup(FacilityGroup)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroup_PrimaryParentGroup()
 	 * @model keys="facilityGroupId"
 	 * @generated
 	 */
-	FacilityGroup getPrimaryParentGroupId();
+	FacilityGroup getPrimaryParentGroup();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getPrimaryParentGroupId <em>Primary Parent Group Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getPrimaryParentGroup <em>Primary Parent Group</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Primary Parent Group Id</em>' reference.
-	 * @see #getPrimaryParentGroupId()
+	 * @param value the new value of the '<em>Primary Parent Group</em>' reference.
+	 * @see #getPrimaryParentGroup()
 	 * @generated
 	 */
-	void setPrimaryParentGroupId(FacilityGroup value);
+	void setPrimaryParentGroup(FacilityGroup value);
 
 	/**
 	 * Returns the value of the '<em><b>Facility Group Id</b></em>' attribute.

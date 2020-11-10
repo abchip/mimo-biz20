@@ -23,11 +23,11 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestStatus#getCustRequestStatusId <em>Cust Request Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestStatus#getChangeByUserLoginId <em>Change By User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestStatus#getCustRequestId <em>Cust Request Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestStatus#getChangeByUserLogin <em>Change By User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestStatus#getCustRequest <em>Cust Request</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestStatus#getCustRequestItemSeqId <em>Cust Request Item Seq Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestStatus#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestStatus#getStatusDate <em>Status Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestStatus#getStatusId <em>Status Id</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestStatus()
@@ -35,58 +35,6 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface CustRequestStatus extends EntityIdentifiable, EntityInfo {
-	/**
-	 * Returns the value of the '<em><b>Change By User Login Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Change By User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Change By User Login Id</em>' reference.
-	 * @see #setChangeByUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestStatus_ChangeByUserLoginId()
-	 * @model keys="userLoginId"
-	 * @generated
-	 */
-	UserLogin getChangeByUserLoginId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestStatus#getChangeByUserLoginId <em>Change By User Login Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Change By User Login Id</em>' reference.
-	 * @see #getChangeByUserLoginId()
-	 * @generated
-	 */
-	void setChangeByUserLoginId(UserLogin value);
-
-	/**
-	 * Returns the value of the '<em><b>Cust Request Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cust Request Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cust Request Id</em>' reference.
-	 * @see #setCustRequestId(CustRequest)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestStatus_CustRequestId()
-	 * @model keys="custRequestId"
-	 * @generated
-	 */
-	CustRequest getCustRequestId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestStatus#getCustRequestId <em>Cust Request Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cust Request Id</em>' reference.
-	 * @see #getCustRequestId()
-	 * @generated
-	 */
-	void setCustRequestId(CustRequest value);
-
 	/**
 	 * Returns the value of the '<em><b>Cust Request Item Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -112,6 +60,28 @@ public interface CustRequestStatus extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setCustRequestItemSeqId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestStatus_Status()
+	 * @model keys="statusId"
+	 * @generated
+	 */
+	StatusItem getStatus();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestStatus#getStatus <em>Status</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
+	 * @generated
+	 */
+	void setStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Cust Request Status Id</b></em>' attribute.
@@ -141,6 +111,50 @@ public interface CustRequestStatus extends EntityIdentifiable, EntityInfo {
 	void setCustRequestStatusId(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Change By User Login</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Change By User Login</em>' reference.
+	 * @see #setChangeByUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestStatus_ChangeByUserLogin()
+	 * @model keys="userLoginId"
+	 * @generated
+	 */
+	UserLogin getChangeByUserLogin();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestStatus#getChangeByUserLogin <em>Change By User Login</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Change By User Login</em>' reference.
+	 * @see #getChangeByUserLogin()
+	 * @generated
+	 */
+	void setChangeByUserLogin(UserLogin value);
+
+	/**
+	 * Returns the value of the '<em><b>Cust Request</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Cust Request</em>' reference.
+	 * @see #setCustRequest(CustRequest)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestStatus_CustRequest()
+	 * @model keys="custRequestId"
+	 * @generated
+	 */
+	CustRequest getCustRequest();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestStatus#getCustRequest <em>Cust Request</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Cust Request</em>' reference.
+	 * @see #getCustRequest()
+	 * @generated
+	 */
+	void setCustRequest(CustRequest value);
+
+	/**
 	 * Returns the value of the '<em><b>Status Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -165,31 +179,5 @@ public interface CustRequestStatus extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setStatusDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestStatus_StatusId()
-	 * @model keys="statusId"
-	 * @generated
-	 */
-	StatusItem getStatusId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestStatus#getStatusId <em>Status Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
-	 * @generated
-	 */
-	void setStatusId(StatusItem value);
 
 } // CustRequestStatus

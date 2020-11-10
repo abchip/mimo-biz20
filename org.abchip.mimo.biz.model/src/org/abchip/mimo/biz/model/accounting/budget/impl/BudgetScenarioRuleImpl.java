@@ -31,8 +31,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioRuleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioRuleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioRuleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioRuleImpl#getBudgetScenarioId <em>Budget Scenario Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioRuleImpl#getBudgetItemTypeId <em>Budget Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioRuleImpl#getBudgetScenario <em>Budget Scenario</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioRuleImpl#getBudgetItemType <em>Budget Item Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioRuleImpl#getAmountChange <em>Amount Change</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioRuleImpl#getPercentageChange <em>Percentage Change</em>}</li>
  * </ul>
@@ -155,6 +155,46 @@ public class BudgetScenarioRuleImpl extends EntityIdentifiableImpl implements Bu
 	 * @generated
 	 */
 	@Override
+	public BudgetScenario getBudgetScenario() {
+		return (BudgetScenario)eGet(BudgetPackage.Literals.BUDGET_SCENARIO_RULE__BUDGET_SCENARIO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBudgetScenario(BudgetScenario newBudgetScenario) {
+		eSet(BudgetPackage.Literals.BUDGET_SCENARIO_RULE__BUDGET_SCENARIO, newBudgetScenario);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BudgetItemType getBudgetItemType() {
+		return (BudgetItemType)eGet(BudgetPackage.Literals.BUDGET_SCENARIO_RULE__BUDGET_ITEM_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBudgetItemType(BudgetItemType newBudgetItemType) {
+		eSet(BudgetPackage.Literals.BUDGET_SCENARIO_RULE__BUDGET_ITEM_TYPE, newBudgetItemType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAmountChange() {
 		return (BigDecimal)eGet(BudgetPackage.Literals.BUDGET_SCENARIO_RULE__AMOUNT_CHANGE, true);
 	}
@@ -225,46 +265,6 @@ public class BudgetScenarioRuleImpl extends EntityIdentifiableImpl implements Bu
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public BudgetScenario getBudgetScenarioId() {
-		return (BudgetScenario)eGet(BudgetPackage.Literals.BUDGET_SCENARIO_RULE__BUDGET_SCENARIO_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBudgetScenarioId(BudgetScenario newBudgetScenarioId) {
-		eSet(BudgetPackage.Literals.BUDGET_SCENARIO_RULE__BUDGET_SCENARIO_ID, newBudgetScenarioId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public BudgetItemType getBudgetItemTypeId() {
-		return (BudgetItemType)eGet(BudgetPackage.Literals.BUDGET_SCENARIO_RULE__BUDGET_ITEM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBudgetItemTypeId(BudgetItemType newBudgetItemTypeId) {
-		eSet(BudgetPackage.Literals.BUDGET_SCENARIO_RULE__BUDGET_ITEM_TYPE_ID, newBudgetItemTypeId);
 	}
 
 } //BudgetScenarioRuleImpl

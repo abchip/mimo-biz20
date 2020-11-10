@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityTrckCodeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityTrckCodeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityTrckCodeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityTrckCodeImpl#getSalesOpportunityId <em>Sales Opportunity Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityTrckCodeImpl#getSalesOpportunity <em>Sales Opportunity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityTrckCodeImpl#getTrackingCodeId <em>Tracking Code Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityTrckCodeImpl#getReceivedDate <em>Received Date</em>}</li>
  * </ul>
@@ -152,6 +152,26 @@ public class SalesOpportunityTrckCodeImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
+	public SalesOpportunity getSalesOpportunity() {
+		return (SalesOpportunity)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_TRCK_CODE__SALES_OPPORTUNITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSalesOpportunity(SalesOpportunity newSalesOpportunity) {
+		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_TRCK_CODE__SALES_OPPORTUNITY, newSalesOpportunity);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getReceivedDate() {
 		return (Date)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_TRCK_CODE__RECEIVED_DATE, true);
 	}
@@ -202,26 +222,6 @@ public class SalesOpportunityTrckCodeImpl extends EntityIdentifiableImpl impleme
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SalesOpportunity getSalesOpportunityId() {
-		return (SalesOpportunity)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_TRCK_CODE__SALES_OPPORTUNITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSalesOpportunityId(SalesOpportunity newSalesOpportunityId) {
-		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_TRCK_CODE__SALES_OPPORTUNITY_ID, newSalesOpportunityId);
 	}
 
 	/**

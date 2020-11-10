@@ -21,38 +21,38 @@
       partyId="Company"
       groupName="ABChip Test"
       logoImageUrl="/images/ofbiz_logo.png">
-    <partyTypeId
+    <partyType
         href="seed-initial.xmi#PARTY_GROUP"/>
-    <statusId
+    <status
         href="seed-initial.xmi#PARTY_ENABLED"/>
   </contents>
   <contents
       xsi:type="biz-party:PartyRole"
-      partyId="Company">
-    <roleTypeId
+      party="Company">
+    <roleType
         href="seed-initial.xmi#BILL_FROM_VENDOR"/>
   </contents>
   <contents
       xsi:type="biz-party:PartyRole"
-      partyId="Company">
-    <roleTypeId
+      party="Company">
+    <roleType
         href="seed-initial.xmi#BILL_TO_CUSTOMER"/>
   </contents>
   <contents
       xsi:type="biz-party:PartyRole"
-      partyId="Company">
-    <roleTypeId
+      party="Company">
+    <roleType
         href="seed-initial.xmi#INTERNAL_ORGANIZATIO"/>
   </contents>
   <contents
       xsi:type="biz-party:PartyRole"
-      partyId="Company">
-    <roleTypeId
+      party="Company">
+    <roleType
         href="seed-initial.xmi#_NA_"/>
   </contents>
   <contents
       xsi:type="biz-tax:PartyTaxAuthInfo"
-      partyId="Company"
+      party="Company"
       fromDate="2019-01-01T00:00:00.000+0100"
       taxAuthGeoId="ITA"
       taxAuthPartyId="ITA_ADE"
@@ -66,46 +66,46 @@
       city="City"
       postalCode="20100"
       toName="Company test ">
-    <contactMechTypeId
+    <contactMechType
         href="seed-initial.xmi#POSTAL_ADDRESS"/>
-    <countryGeoId
+    <countryGeo
         href="seed-initial.xmi#ITA"/>
-    <stateProvinceGeoId
+    <stateProvinceGeo
         href="seed-initial.xmi#MI"/>
   </contents>
   <contents
       xsi:type="biz-contact:PartyContactMech"
-      partyId="Company"
-      contactMechId="9000"
+      party="Company"
+      contactMech="9000"
       fromDate="2019-01-01T00:00:00.000+0100"
       allowSolicitation="true"/>
   <contents
       xsi:type="biz-contact:PartyContactMechPurpose"
-      partyId="Company"
-      contactMechId="9000"
+      party="Company"
+      contactMech="9000"
       fromDate="2019-01-01T00:00:00.000+0100">
-    <contactMechPurposeTypeId
+    <contactMechPurposeType
         href="seed-initial.xmi#GENERAL_LOCATION"/>
   </contents>
   <contents
       xsi:type="biz-contact:ContactMech"
       contactMechId="9001"
       infoString="info@test.it">
-    <contactMechTypeId
+    <contactMechType
         href="seed-initial.xmi#EMAIL_ADDRESS"/>
   </contents>
   <contents
       xsi:type="biz-contact:PartyContactMechPurpose"
-      partyId="Company"
-      contactMechId="9001"
+      party="Company"
+      contactMech="9001"
       fromDate="2019-01-01T00:00:00.000+0100">
-    <contactMechPurposeTypeId
+    <contactMechPurposeType
         href="seed-initial.xmi#PRIMARY_EMAIL"/>
   </contents>
   <contents
       xsi:type="biz-contact:PartyContactMech"
-      partyId="Company"
-      contactMechId="9001"
+      party="Company"
+      contactMech="9001"
       fromDate="2019-01-01T00:00:00.000+0100"
       allowSolicitation="true"/>
   <contents
@@ -113,8 +113,8 @@
       facilityId="WebStoreWarehouse"
       description="Warehouse exclusively for the Web Store"
       facilityName="Web Store Warehouse"
-      ownerPartyId="Company">
-    <facilityTypeId
+      ownerParty="Company">
+    <facilityType
         href="seed-initial.xmi#WAREHOUSE"/>
   </contents>
   <contents
@@ -126,7 +126,7 @@
       autoOrderCcTryOtherCards="false"
       checkInventory="false"
       oneInventoryFacility="false"
-      payToPartyId="Company"
+      payToParty="Company"
       prodSearchExcludeVariants="false"
       reqShipAddrForDigItems="false"
       reserveInventory="false"
@@ -145,20 +145,20 @@
       catalogName="ABChip Test Catalog"/>
   <contents
       xsi:type="biz-store:ProductStoreCatalog"
-      productStoreId="8000"
-      prodCatalogId="ABChipTest"
+      productStore="8000"
+      prodCatalog="ABChipTest"
       fromDate="2019-01-01T00:00:00.000+0100"/>
   <contents
       xsi:type="biz-login:UserLogin"
       userLoginId="abchip-test"
       currentPassword="{SHA}47ca69ebb4bdc9ae0adec130880165d2cc05db1a"
       enabled="true"
-      partyId="Company"/>
+      party="Company"/>
   <contents
       xsi:type="biz-securitygroup:UserLoginSecurityGroup"
-      userLoginId="abchip-test"
+      userLogin="abchip-test"
       fromDate="2019-01-01T00:00:00.000+0100">
-    <groupId
+    <group
         href="seed-initial.xmi#SUPER"/>
   </contents>
   <contents
@@ -169,51 +169,51 @@
   <contents
       xsi:type="biz-party:Person"
       partyId="_NA_">
-    <partyTypeId
+    <partyType
         href="seed-initial.xmi#PERSON"/>
-    <statusId
+    <status
         href="seed-initial.xmi#PARTY_ENABLED"/>
   </contents>
   <contents
       xsi:type="biz-party:PartyRole"
-      partyId="_NA_">
-    <roleTypeId
+      party="_NA_">
+    <roleType
         href="seed-initial.xmi#CARRIER"/>
   </contents>
   <contents
       xsi:type="biz-party:PartyRole"
-      partyId="_NA_">
-    <roleTypeId
+      party="_NA_">
+    <roleType
         href="seed-initial.xmi#_NA_"/>
   </contents>
   <contents
       xsi:type="biz-store:ProductStorePaymentSetting"
-      productStoreId="8000"
+      productStore="8000"
       applyToAllProducts="true"
       paymentService="">
-    <paymentMethodTypeId
+    <paymentMethodType
         href="seed-initial.xmi#CREDIT_CARD"/>
-    <paymentServiceTypeEnumId
+    <paymentServiceTypeEnum
         href="seed-initial.xmi#PRDS_PAY_EXTERNAL"/>
   </contents>
   <contents
       xsi:type="biz-store:ProductStorePaymentSetting"
-      productStoreId="8000"
+      productStore="8000"
       applyToAllProducts="true"
       paymentService="">
-    <paymentMethodTypeId
+    <paymentMethodType
         href="seed-initial.xmi#EXT_COD"/>
-    <paymentServiceTypeEnumId
+    <paymentServiceTypeEnum
         href="seed-initial.xmi#PRDS_PAY_EXTERNAL"/>
   </contents>
   <contents
       xsi:type="biz-store:ProductStorePaymentSetting"
-      productStoreId="8000"
+      productStore="8000"
       applyToAllProducts="true"
       paymentService="">
-    <paymentMethodTypeId
+    <paymentMethodType
         href="seed-initial.xmi#EFT_ACCOUNT"/>
-    <paymentServiceTypeEnumId
+    <paymentServiceTypeEnum
         href="seed-initial.xmi#PRDS_PAY_EXTERNAL"/>
   </contents>
   <contents
@@ -226,14 +226,14 @@
       description="Standard"/>
   <contents
       xsi:type="biz-shipment:CarrierShipmentMethod"
-      shipmentMethodTypeId="NO_SHIPPING"
-      partyId="_NA_"
+      shipmentMethodType="NO_SHIPPING"
+      party="_NA_"
       roleTypeId="CARRIER"
       sequenceNumber="1"/>
   <contents
       xsi:type="biz-shipment:CarrierShipmentMethod"
-      shipmentMethodTypeId="STANDARD"
-      partyId="_NA_"
+      shipmentMethodType="STANDARD"
+      party="_NA_"
       roleTypeId="CARRIER"
       sequenceNumber="1"/>
   <contents
@@ -245,7 +245,7 @@
       productStoreId="8000"
       roleTypeId="CARRIER"
       sequenceNumber="1"
-      shipmentMethodTypeId="NO_SHIPPING"/>
+      shipmentMethodType="NO_SHIPPING"/>
   <contents
       xsi:type="biz-property:SystemProperty"
       systemPropertyId="currency.uom.id.default"
@@ -267,7 +267,7 @@
       taxAuthPartyId="ITA_ADE"
       taxPercentage="22"
       taxPromotions="true">
-    <taxAuthorityRateTypeId
+    <taxAuthorityRateType
         href="seed-initial.xmi#SALES_TAX"/>
   </contents>
   <contents
@@ -277,24 +277,24 @@
       city="City"
       postalCode="20100"
       toName="Company test ">
-    <contactMechTypeId
+    <contactMechType
         href="seed-initial.xmi#POSTAL_ADDRESS"/>
-    <countryGeoId
+    <countryGeo
         href="seed-initial.xmi#ITA"/>
-    <stateProvinceGeoId
+    <stateProvinceGeo
         href="seed-initial.xmi#MI"/>
   </contents>
   <contents
       xsi:type="biz-facility:FacilityContactMech"
-      facilityId="WebStoreWarehouse"
-      contactMechId="9002"
+      facility="WebStoreWarehouse"
+      contactMech="9002"
       fromDate="2019-01-01T00:00:00.000+0100"/>
   <contents
       xsi:type="biz-facility:FacilityContactMechPurpose"
-      facilityId="WebStoreWarehouse"
-      contactMechId="9002"
+      facility="WebStoreWarehouse"
+      contactMech="9002"
       fromDate="2019-01-01T00:00:00.000+0100">
-    <contactMechPurposeTypeId
+    <contactMechPurposeType
         href="seed-initial.xmi#GENERAL_LOCATION"/>
   </contents>
 </mimo-ent:EntityContainer>

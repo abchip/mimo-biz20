@@ -25,11 +25,11 @@ import org.abchip.mimo.entity.EntityInfo;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getPaymentMethodId <em>Payment Method Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getFinAccountId <em>Fin Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getFinAccount <em>Fin Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getGlAccountId <em>Gl Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getPaymentMethodTypeId <em>Payment Method Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getGlAccount <em>Gl Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getPaymentMethodType <em>Payment Method Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -65,6 +65,28 @@ public interface PaymentMethod extends EntityIdentifiable, EntityInfo {
 	void setDescription(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Fin Account</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fin Account</em>' reference.
+	 * @see #setFinAccount(FinAccount)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentMethod_FinAccount()
+	 * @model keys="finAccountId"
+	 * @generated
+	 */
+	FinAccount getFinAccount();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getFinAccount <em>Fin Account</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Fin Account</em>' reference.
+	 * @see #getFinAccount()
+	 * @generated
+	 */
+	void setFinAccount(FinAccount value);
+
+	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -91,30 +113,70 @@ public interface PaymentMethod extends EntityIdentifiable, EntityInfo {
 	void setFromDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Gl Account</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentMethod_PartyId()
+	 * @return the value of the '<em>Gl Account</em>' reference.
+	 * @see #setGlAccount(GlAccount)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentMethod_GlAccount()
+	 * @model keys="glAccountId"
+	 * @generated
+	 */
+	GlAccount getGlAccount();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getGlAccount <em>Gl Account</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Gl Account</em>' reference.
+	 * @see #getGlAccount()
+	 * @generated
+	 */
+	void setGlAccount(GlAccount value);
+
+	/**
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentMethod_Party()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getPartyId();
+	Party getParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getParty <em>Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Payment Method Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Payment Method Type</em>' reference.
+	 * @see #setPaymentMethodType(PaymentMethodType)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentMethod_PaymentMethodType()
+	 * @model keys="paymentMethodTypeId"
+	 * @generated
+	 */
+	PaymentMethodType getPaymentMethodType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getPaymentMethodType <em>Payment Method Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Payment Method Type</em>' reference.
+	 * @see #getPaymentMethodType()
+	 * @generated
+	 */
+	void setPaymentMethodType(PaymentMethodType value);
 
 	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.
@@ -141,84 +203,6 @@ public interface PaymentMethod extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Payment Method Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Method Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Payment Method Type Id</em>' reference.
-	 * @see #setPaymentMethodTypeId(PaymentMethodType)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentMethod_PaymentMethodTypeId()
-	 * @model keys="paymentMethodTypeId"
-	 * @generated
-	 */
-	PaymentMethodType getPaymentMethodTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getPaymentMethodTypeId <em>Payment Method Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Payment Method Type Id</em>' reference.
-	 * @see #getPaymentMethodTypeId()
-	 * @generated
-	 */
-	void setPaymentMethodTypeId(PaymentMethodType value);
-
-	/**
-	 * Returns the value of the '<em><b>Gl Account Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gl Account Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Account Id</em>' reference.
-	 * @see #setGlAccountId(GlAccount)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentMethod_GlAccountId()
-	 * @model keys="glAccountId"
-	 * @generated
-	 */
-	GlAccount getGlAccountId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getGlAccountId <em>Gl Account Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Gl Account Id</em>' reference.
-	 * @see #getGlAccountId()
-	 * @generated
-	 */
-	void setGlAccountId(GlAccount value);
-
-	/**
-	 * Returns the value of the '<em><b>Fin Account Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fin Account Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fin Account Id</em>' reference.
-	 * @see #setFinAccountId(FinAccount)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentMethod_FinAccountId()
-	 * @model keys="finAccountId"
-	 * @generated
-	 */
-	FinAccount getFinAccountId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentMethod#getFinAccountId <em>Fin Account Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fin Account Id</em>' reference.
-	 * @see #getFinAccountId()
-	 * @generated
-	 */
-	void setFinAccountId(FinAccount value);
 
 	/**
 	 * Returns the value of the '<em><b>Payment Method Id</b></em>' attribute.

@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionAttributeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionAttributeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionAttributeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionAttributeImpl#getSubscriptionId <em>Subscription Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionAttributeImpl#getSubscription <em>Subscription</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionAttributeImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionAttributeImpl#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionAttributeImpl#getAttrValue <em>Attr Value</em>}</li>
@@ -153,6 +153,26 @@ public class SubscriptionAttributeImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
+	public Subscription getSubscription() {
+		return (Subscription)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_ATTRIBUTE__SUBSCRIPTION, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSubscription(Subscription newSubscription) {
+		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_ATTRIBUTE__SUBSCRIPTION, newSubscription);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrDescription() {
 		return (String)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_ATTRIBUTE__ATTR_DESCRIPTION, true);
 	}
@@ -223,26 +243,6 @@ public class SubscriptionAttributeImpl extends EntityIdentifiableImpl implements
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Subscription getSubscriptionId() {
-		return (Subscription)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_ATTRIBUTE__SUBSCRIPTION_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSubscriptionId(Subscription newSubscriptionId) {
-		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_ATTRIBUTE__SUBSCRIPTION_ID, newSubscriptionId);
 	}
 
 	/**

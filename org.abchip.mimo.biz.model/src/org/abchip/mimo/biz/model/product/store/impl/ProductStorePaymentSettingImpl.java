@@ -32,12 +32,12 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePaymentSettingImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePaymentSettingImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePaymentSettingImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePaymentSettingImpl#getProductStoreId <em>Product Store Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePaymentSettingImpl#getPaymentMethodTypeId <em>Payment Method Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePaymentSettingImpl#getPaymentServiceTypeEnumId <em>Payment Service Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePaymentSettingImpl#getProductStore <em>Product Store</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePaymentSettingImpl#getPaymentMethodType <em>Payment Method Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePaymentSettingImpl#getPaymentServiceTypeEnum <em>Payment Service Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePaymentSettingImpl#isApplyToAllProducts <em>Apply To All Products</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePaymentSettingImpl#getPaymentCustomMethodId <em>Payment Custom Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePaymentSettingImpl#getPaymentGatewayConfigId <em>Payment Gateway Config Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePaymentSettingImpl#getPaymentCustomMethod <em>Payment Custom Method</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePaymentSettingImpl#getPaymentGatewayConfig <em>Payment Gateway Config</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePaymentSettingImpl#getPaymentPropertiesPath <em>Payment Properties Path</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePaymentSettingImpl#getPaymentService <em>Payment Service</em>}</li>
  * </ul>
@@ -161,6 +161,66 @@ public class ProductStorePaymentSettingImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PRODUCT_STORE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PRODUCT_STORE, newProductStore);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PaymentMethodType getPaymentMethodType() {
+		return (PaymentMethodType)eGet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PAYMENT_METHOD_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPaymentMethodType(PaymentMethodType newPaymentMethodType) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PAYMENT_METHOD_TYPE, newPaymentMethodType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Enumeration getPaymentServiceTypeEnum() {
+		return (Enumeration)eGet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PAYMENT_SERVICE_TYPE_ENUM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPaymentServiceTypeEnum(Enumeration newPaymentServiceTypeEnum) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PAYMENT_SERVICE_TYPE_ENUM, newPaymentServiceTypeEnum);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean isApplyToAllProducts() {
 		return (Boolean)eGet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__APPLY_TO_ALL_PRODUCTS, true);
 	}
@@ -181,8 +241,8 @@ public class ProductStorePaymentSettingImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public CustomMethod getPaymentCustomMethodId() {
-		return (CustomMethod)eGet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PAYMENT_CUSTOM_METHOD_ID, true);
+	public CustomMethod getPaymentCustomMethod() {
+		return (CustomMethod)eGet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PAYMENT_CUSTOM_METHOD, true);
 	}
 
 	/**
@@ -191,8 +251,8 @@ public class ProductStorePaymentSettingImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setPaymentCustomMethodId(CustomMethod newPaymentCustomMethodId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PAYMENT_CUSTOM_METHOD_ID, newPaymentCustomMethodId);
+	public void setPaymentCustomMethod(CustomMethod newPaymentCustomMethod) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PAYMENT_CUSTOM_METHOD, newPaymentCustomMethod);
 	}
 
 	/**
@@ -201,8 +261,8 @@ public class ProductStorePaymentSettingImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public PaymentGatewayConfig getPaymentGatewayConfigId() {
-		return (PaymentGatewayConfig)eGet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PAYMENT_GATEWAY_CONFIG_ID, true);
+	public PaymentGatewayConfig getPaymentGatewayConfig() {
+		return (PaymentGatewayConfig)eGet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PAYMENT_GATEWAY_CONFIG, true);
 	}
 
 	/**
@@ -211,28 +271,8 @@ public class ProductStorePaymentSettingImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setPaymentGatewayConfigId(PaymentGatewayConfig newPaymentGatewayConfigId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PAYMENT_GATEWAY_CONFIG_ID, newPaymentGatewayConfigId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PaymentMethodType getPaymentMethodTypeId() {
-		return (PaymentMethodType)eGet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PAYMENT_METHOD_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaymentMethodTypeId(PaymentMethodType newPaymentMethodTypeId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PAYMENT_METHOD_TYPE_ID, newPaymentMethodTypeId);
+	public void setPaymentGatewayConfig(PaymentGatewayConfig newPaymentGatewayConfig) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PAYMENT_GATEWAY_CONFIG, newPaymentGatewayConfig);
 	}
 
 	/**
@@ -311,46 +351,6 @@ public class ProductStorePaymentSettingImpl extends EntityIdentifiableImpl imple
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Enumeration getPaymentServiceTypeEnumId() {
-		return (Enumeration)eGet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PAYMENT_SERVICE_TYPE_ENUM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaymentServiceTypeEnumId(Enumeration newPaymentServiceTypeEnumId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PAYMENT_SERVICE_TYPE_ENUM_ID, newPaymentServiceTypeEnumId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PRODUCT_STORE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_PAYMENT_SETTING__PRODUCT_STORE_ID, newProductStoreId);
 	}
 
 } //ProductStorePaymentSettingImpl

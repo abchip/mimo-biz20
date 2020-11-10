@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementTypeAttrImpl#getRequirementTypeId <em>Requirement Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementTypeAttrImpl#getRequirementType <em>Requirement Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -152,6 +152,26 @@ public class RequirementTypeAttrImpl extends EntityIdentifiableImpl implements R
 	 * @generated
 	 */
 	@Override
+	public RequirementType getRequirementType() {
+		return (RequirementType)eGet(RequirementPackage.Literals.REQUIREMENT_TYPE_ATTR__REQUIREMENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRequirementType(RequirementType newRequirementType) {
+		eSet(RequirementPackage.Literals.REQUIREMENT_TYPE_ATTR__REQUIREMENT_TYPE, newRequirementType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrName() {
 		return (String)eGet(RequirementPackage.Literals.REQUIREMENT_TYPE_ATTR__ATTR_NAME, true);
 	}
@@ -222,26 +242,6 @@ public class RequirementTypeAttrImpl extends EntityIdentifiableImpl implements R
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public RequirementType getRequirementTypeId() {
-		return (RequirementType)eGet(RequirementPackage.Literals.REQUIREMENT_TYPE_ATTR__REQUIREMENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRequirementTypeId(RequirementType newRequirementTypeId) {
-		eSet(RequirementPackage.Literals.REQUIREMENT_TYPE_ATTR__REQUIREMENT_TYPE_ID, newRequirementTypeId);
 	}
 
 } //RequirementTypeAttrImpl

@@ -39,8 +39,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayHistoryImpl#getRoleTypeIdTo <em>Role Type Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayHistoryImpl#getAmount <em>Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayHistoryImpl#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayHistoryImpl#getPayGradeId <em>Pay Grade Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayHistoryImpl#getPeriodTypeId <em>Period Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayHistoryImpl#getPayGrade <em>Pay Grade</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayHistoryImpl#getPeriodType <em>Period Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayHistoryImpl#getSalaryStepSeqId <em>Salary Step Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayHistoryImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -224,6 +224,46 @@ public class PayHistoryImpl extends EntityIdentifiableImpl implements PayHistory
 	 * @generated
 	 */
 	@Override
+	public PayGrade getPayGrade() {
+		return (PayGrade)eGet(EmploymentPackage.Literals.PAY_HISTORY__PAY_GRADE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPayGrade(PayGrade newPayGrade) {
+		eSet(EmploymentPackage.Literals.PAY_HISTORY__PAY_GRADE, newPayGrade);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PeriodType getPeriodType() {
+		return (PeriodType)eGet(EmploymentPackage.Literals.PAY_HISTORY__PERIOD_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPeriodType(PeriodType newPeriodType) {
+		eSet(EmploymentPackage.Literals.PAY_HISTORY__PERIOD_TYPE, newPeriodType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(EmploymentPackage.Literals.PAY_HISTORY__FROM_DATE, true);
 	}
@@ -276,46 +316,6 @@ public class PayHistoryImpl extends EntityIdentifiableImpl implements PayHistory
 	@Override
 	public void setPartyIdTo(String newPartyIdTo) {
 		eSet(EmploymentPackage.Literals.PAY_HISTORY__PARTY_ID_TO, newPartyIdTo);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PayGrade getPayGradeId() {
-		return (PayGrade)eGet(EmploymentPackage.Literals.PAY_HISTORY__PAY_GRADE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPayGradeId(PayGrade newPayGradeId) {
-		eSet(EmploymentPackage.Literals.PAY_HISTORY__PAY_GRADE_ID, newPayGradeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PeriodType getPeriodTypeId() {
-		return (PeriodType)eGet(EmploymentPackage.Literals.PAY_HISTORY__PERIOD_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPeriodTypeId(PeriodType newPeriodTypeId) {
-		eSet(EmploymentPackage.Literals.PAY_HISTORY__PERIOD_TYPE_ID, newPeriodTypeId);
 	}
 
 	/**

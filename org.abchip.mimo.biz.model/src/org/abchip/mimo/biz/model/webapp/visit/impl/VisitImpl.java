@@ -50,10 +50,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitImpl#getServerIpAddress <em>Server Ip Address</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitImpl#getSessionId <em>Session Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitImpl#getThruDate <em>Thru Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitImpl#getUserAgentId <em>User Agent Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitImpl#getUserAgent <em>User Agent</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitImpl#getUserCreated <em>User Created</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitImpl#getUserLoginId <em>User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitImpl#getVisitorId <em>Visitor Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitImpl#getVisitor <em>Visitor</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitImpl#getWebappName <em>Webapp Name</em>}</li>
  * </ul>
  *
@@ -596,8 +596,8 @@ public class VisitImpl extends EntityIdentifiableImpl implements Visit {
 	 * @generated
 	 */
 	@Override
-	public UserAgent getUserAgentId() {
-		return (UserAgent)eGet(VisitPackage.Literals.VISIT__USER_AGENT_ID, true);
+	public UserAgent getUserAgent() {
+		return (UserAgent)eGet(VisitPackage.Literals.VISIT__USER_AGENT, true);
 	}
 
 	/**
@@ -606,8 +606,8 @@ public class VisitImpl extends EntityIdentifiableImpl implements Visit {
 	 * @generated
 	 */
 	@Override
-	public void setUserAgentId(UserAgent newUserAgentId) {
-		eSet(VisitPackage.Literals.VISIT__USER_AGENT_ID, newUserAgentId);
+	public void setUserAgent(UserAgent newUserAgent) {
+		eSet(VisitPackage.Literals.VISIT__USER_AGENT, newUserAgent);
 	}
 
 	/**
@@ -656,8 +656,8 @@ public class VisitImpl extends EntityIdentifiableImpl implements Visit {
 	 * @generated
 	 */
 	@Override
-	public Visitor getVisitorId() {
-		return (Visitor)eGet(VisitPackage.Literals.VISIT__VISITOR_ID, true);
+	public Visitor getVisitor() {
+		return (Visitor)eGet(VisitPackage.Literals.VISIT__VISITOR, true);
 	}
 
 	/**
@@ -666,8 +666,8 @@ public class VisitImpl extends EntityIdentifiableImpl implements Visit {
 	 * @generated
 	 */
 	@Override
-	public void setVisitorId(Visitor newVisitorId) {
-		eSet(VisitPackage.Literals.VISIT__VISITOR_ID, newVisitorId);
+	public void setVisitor(Visitor newVisitor) {
+		eSet(VisitPackage.Literals.VISIT__VISITOR, newVisitor);
 	}
 
 	/**

@@ -587,7 +587,12 @@ public class EntityServices {
 		EcoreFactory ecoreFactory = EcoreFactory.eINSTANCE;
 
 		EReference eReference = ecoreFactory.createEReference();
-		eReference.setName(eAttribute.getName());
+
+		String name = eAttribute.getName();
+		if (name.endsWith("Id"))
+			name = name.substring(0, name.length() - 2);
+		eReference.setName(name);
+
 		eReference.setEType(eClassRel);
 		eReference.getEKeys().add(eClassRel.getEIDAttribute());
 

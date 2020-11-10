@@ -21,10 +21,10 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getContactMechPurposeTypeId <em>Contact Mech Purpose Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getContactMechPurposeType <em>Contact Mech Purpose Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getContactMech <em>Contact Mech</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemContactMech()
@@ -33,84 +33,50 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface OrderItemContactMech extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Contact Mech Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #setContactMechId(ContactMech)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemContactMech_ContactMechId()
-	 * @model keys="contactMechId"
-	 * @generated
-	 */
-	ContactMech getContactMechId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getContactMechId <em>Contact Mech Id</em>}' reference.
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #getContactMechId()
-	 * @generated
-	 */
-	void setContactMechId(ContactMech value);
-
-	/**
-	 * Returns the value of the '<em><b>Contact Mech Purpose Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Purpose Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Mech Purpose Type Id</em>' reference.
-	 * @see #setContactMechPurposeTypeId(ContactMechPurposeType)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemContactMech_ContactMechPurposeTypeId()
-	 * @model keys="contactMechPurposeTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ContactMechPurposeType getContactMechPurposeTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getContactMechPurposeTypeId <em>Contact Mech Purpose Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Mech Purpose Type Id</em>' reference.
-	 * @see #getContactMechPurposeTypeId()
-	 * @generated
-	 */
-	void setContactMechPurposeTypeId(ContactMechPurposeType value);
-
-	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemContactMech_OrderId()
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemContactMech_Order()
 	 * @model keys="orderId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	OrderHeader getOrderId();
+	OrderHeader getOrder();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getOrderId <em>Order Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getOrder <em>Order</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
 	 * @generated
 	 */
-	void setOrderId(OrderHeader value);
+	void setOrder(OrderHeader value);
+
+	/**
+	 * Returns the value of the '<em><b>Contact Mech Purpose Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Contact Mech Purpose Type</em>' reference.
+	 * @see #setContactMechPurposeType(ContactMechPurposeType)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemContactMech_ContactMechPurposeType()
+	 * @model keys="contactMechPurposeTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ContactMechPurposeType getContactMechPurposeType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getContactMechPurposeType <em>Contact Mech Purpose Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Contact Mech Purpose Type</em>' reference.
+	 * @see #getContactMechPurposeType()
+	 * @generated
+	 */
+	void setContactMechPurposeType(ContactMechPurposeType value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -139,5 +105,27 @@ public interface OrderItemContactMech extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setOrderItemSeqId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Contact Mech</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Contact Mech</em>' reference.
+	 * @see #setContactMech(ContactMech)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemContactMech_ContactMech()
+	 * @model keys="contactMechId"
+	 * @generated
+	 */
+	ContactMech getContactMech();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getContactMech <em>Contact Mech</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Contact Mech</em>' reference.
+	 * @see #getContactMech()
+	 * @generated
+	 */
+	void setContactMech(ContactMech value);
 
 } // OrderItemContactMech

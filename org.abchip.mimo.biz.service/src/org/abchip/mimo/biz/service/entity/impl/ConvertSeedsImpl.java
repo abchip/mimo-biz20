@@ -55,7 +55,7 @@ public class ConvertSeedsImpl extends ServiceRequestImpl<ServiceResponse> implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 4;
+	protected static final int ESTATIC_FEATURE_COUNT = 2;
 
 	/**
 	 * <!-- begin-user-doc -->

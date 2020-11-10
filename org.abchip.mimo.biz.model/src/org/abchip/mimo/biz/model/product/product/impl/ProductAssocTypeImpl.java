@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocTypeImpl#getProductAssocTypeId <em>Product Assoc Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,8 +200,8 @@ public class ProductAssocTypeImpl extends EntityTypeImpl<ProductAssoc> implement
 	 * @generated
 	 */
 	@Override
-	public ProductAssocType getParentTypeId() {
-		return (ProductAssocType)eGet(ProductPackage.Literals.PRODUCT_ASSOC_TYPE__PARENT_TYPE_ID, true);
+	public ProductAssocType getParentType() {
+		return (ProductAssocType)eGet(ProductPackage.Literals.PRODUCT_ASSOC_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -210,8 +210,8 @@ public class ProductAssocTypeImpl extends EntityTypeImpl<ProductAssoc> implement
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(ProductAssocType newParentTypeId) {
-		eSet(ProductPackage.Literals.PRODUCT_ASSOC_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(ProductAssocType newParentType) {
+		eSet(ProductPackage.Literals.PRODUCT_ASSOC_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMeterImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMeterImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMeterImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMeterImpl#getProductMeterTypeId <em>Product Meter Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMeterImpl#getProductMeterType <em>Product Meter Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMeterImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMeterImpl#getReadingDate <em>Reading Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMeterImpl#getMaintHistSeqId <em>Maint Hist Seq Id</em>}</li>
@@ -157,6 +157,26 @@ public class FixedAssetMeterImpl extends EntityIdentifiableImpl implements Fixed
 	 * @generated
 	 */
 	@Override
+	public ProductMeterType getProductMeterType() {
+		return (ProductMeterType)eGet(FixedassetPackage.Literals.FIXED_ASSET_METER__PRODUCT_METER_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductMeterType(ProductMeterType newProductMeterType) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_METER__PRODUCT_METER_TYPE, newProductMeterType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getFixedAssetId() {
 		return (String)eGet(FixedassetPackage.Literals.FIXED_ASSET_METER__FIXED_ASSET_ID, true);
 	}
@@ -209,26 +229,6 @@ public class FixedAssetMeterImpl extends EntityIdentifiableImpl implements Fixed
 	@Override
 	public void setMeterValue(BigDecimal newMeterValue) {
 		eSet(FixedassetPackage.Literals.FIXED_ASSET_METER__METER_VALUE, newMeterValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductMeterType getProductMeterTypeId() {
-		return (ProductMeterType)eGet(FixedassetPackage.Literals.FIXED_ASSET_METER__PRODUCT_METER_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductMeterTypeId(ProductMeterType newProductMeterTypeId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_METER__PRODUCT_METER_TYPE_ID, newProductMeterTypeId);
 	}
 
 	/**

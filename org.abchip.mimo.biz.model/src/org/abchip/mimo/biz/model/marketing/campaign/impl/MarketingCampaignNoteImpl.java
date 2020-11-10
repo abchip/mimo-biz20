@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignNoteImpl#getMarketingCampaignId <em>Marketing Campaign Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignNoteImpl#getMarketingCampaign <em>Marketing Campaign</em>}</li>
  * </ul>
  *
  * @generated
@@ -54,8 +54,8 @@ public class MarketingCampaignNoteImpl extends BizEntityNoteImpl implements Mark
 	 * @generated
 	 */
 	@Override
-	public MarketingCampaign getMarketingCampaignId() {
-		return (MarketingCampaign)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN_NOTE__MARKETING_CAMPAIGN_ID, true);
+	public MarketingCampaign getMarketingCampaign() {
+		return (MarketingCampaign)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN_NOTE__MARKETING_CAMPAIGN, true);
 	}
 
 	/**
@@ -64,8 +64,8 @@ public class MarketingCampaignNoteImpl extends BizEntityNoteImpl implements Mark
 	 * @generated
 	 */
 	@Override
-	public void setMarketingCampaignId(MarketingCampaign newMarketingCampaignId) {
-		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN_NOTE__MARKETING_CAMPAIGN_ID, newMarketingCampaignId);
+	public void setMarketingCampaign(MarketingCampaign newMarketingCampaign) {
+		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN_NOTE__MARKETING_CAMPAIGN, newMarketingCampaign);
 	}
 
 } //MarketingCampaignNoteImpl

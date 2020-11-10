@@ -26,7 +26,7 @@ import org.abchip.mimo.biz.model.party.MaritalStatus;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getCardId <em>Card Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getDeceasedDate <em>Deceased Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getEmploymentStatusEnumId <em>Employment Status Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getEmploymentStatusEnum <em>Employment Status Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getExistingCustomer <em>Existing Customer</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getFirstName <em>First Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getFirstNameLocal <em>First Name Local</em>}</li>
@@ -46,7 +46,7 @@ import org.abchip.mimo.biz.model.party.MaritalStatus;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getPassportExpireDate <em>Passport Expire Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getPassportNumber <em>Passport Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getPersonalTitle <em>Personal Title</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getResidenceStatusEnumId <em>Residence Status Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getResidenceStatusEnum <em>Residence Status Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getSalutation <em>Salutation</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getSocialSecurityNumber <em>Social Security Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getSuffix <em>Suffix</em>}</li>
@@ -165,30 +165,26 @@ public interface Person extends Party {
 	void setDeceasedDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Employment Status Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Employment Status Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Employment Status Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Employment Status Enum Id</em>' reference.
-	 * @see #setEmploymentStatusEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPerson_EmploymentStatusEnumId()
+	 * @return the value of the '<em>Employment Status Enum</em>' reference.
+	 * @see #setEmploymentStatusEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPerson_EmploymentStatusEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getEmploymentStatusEnumId();
+	Enumeration getEmploymentStatusEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.Person#getEmploymentStatusEnumId <em>Employment Status Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.Person#getEmploymentStatusEnum <em>Employment Status Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Employment Status Enum Id</em>' reference.
-	 * @see #getEmploymentStatusEnumId()
+	 * @param value the new value of the '<em>Employment Status Enum</em>' reference.
+	 * @see #getEmploymentStatusEnum()
 	 * @generated
 	 */
-	void setEmploymentStatusEnumId(Enumeration value);
+	void setEmploymentStatusEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Existing Customer</b></em>' attribute.
@@ -689,30 +685,26 @@ public interface Person extends Party {
 	void setPersonalTitle(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Residence Status Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Residence Status Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Residence Status Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Residence Status Enum Id</em>' reference.
-	 * @see #setResidenceStatusEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPerson_ResidenceStatusEnumId()
+	 * @return the value of the '<em>Residence Status Enum</em>' reference.
+	 * @see #setResidenceStatusEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPerson_ResidenceStatusEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getResidenceStatusEnumId();
+	Enumeration getResidenceStatusEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.Person#getResidenceStatusEnumId <em>Residence Status Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.Person#getResidenceStatusEnum <em>Residence Status Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Residence Status Enum Id</em>' reference.
-	 * @see #getResidenceStatusEnumId()
+	 * @param value the new value of the '<em>Residence Status Enum</em>' reference.
+	 * @see #getResidenceStatusEnum()
 	 * @generated
 	 */
-	void setResidenceStatusEnumId(Enumeration value);
+	void setResidenceStatusEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Salutation</b></em>' attribute.

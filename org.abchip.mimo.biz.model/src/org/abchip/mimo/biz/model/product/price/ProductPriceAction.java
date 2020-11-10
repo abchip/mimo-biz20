@@ -20,10 +20,10 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPriceAction#getProductPriceRuleId <em>Product Price Rule Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPriceAction#getProductPriceRule <em>Product Price Rule</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPriceAction#getProductPriceActionSeqId <em>Product Price Action Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPriceAction#getAmount <em>Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPriceAction#getProductPriceActionTypeId <em>Product Price Action Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPriceAction#getProductPriceActionType <em>Product Price Action Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPriceAction#getRateCode <em>Rate Code</em>}</li>
  * </ul>
  *
@@ -32,6 +32,29 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface ProductPriceAction extends EntityTyped<ProductPriceActionType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product Price Rule</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Price Rule</em>' reference.
+	 * @see #setProductPriceRule(ProductPriceRule)
+	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPriceAction_ProductPriceRule()
+	 * @model keys="productPriceRuleId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductPriceRule getProductPriceRule();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPriceAction#getProductPriceRule <em>Product Price Rule</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Price Rule</em>' reference.
+	 * @see #getProductPriceRule()
+	 * @generated
+	 */
+	void setProductPriceRule(ProductPriceRule value);
+
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -57,6 +80,28 @@ public interface ProductPriceAction extends EntityTyped<ProductPriceActionType>,
 	 * @generated
 	 */
 	void setAmount(BigDecimal value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Price Action Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Price Action Type</em>' reference.
+	 * @see #setProductPriceActionType(ProductPriceActionType)
+	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPriceAction_ProductPriceActionType()
+	 * @model keys="productPriceActionTypeId"
+	 * @generated
+	 */
+	ProductPriceActionType getProductPriceActionType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPriceAction#getProductPriceActionType <em>Product Price Action Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Price Action Type</em>' reference.
+	 * @see #getProductPriceActionType()
+	 * @generated
+	 */
+	void setProductPriceActionType(ProductPriceActionType value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Price Action Seq Id</b></em>' attribute.
@@ -111,58 +156,5 @@ public interface ProductPriceAction extends EntityTyped<ProductPriceActionType>,
 	 * @generated
 	 */
 	void setRateCode(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Price Action Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Price Action Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Price Action Type Id</em>' reference.
-	 * @see #setProductPriceActionTypeId(ProductPriceActionType)
-	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPriceAction_ProductPriceActionTypeId()
-	 * @model keys="productPriceActionTypeId"
-	 * @generated
-	 */
-	ProductPriceActionType getProductPriceActionTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPriceAction#getProductPriceActionTypeId <em>Product Price Action Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Price Action Type Id</em>' reference.
-	 * @see #getProductPriceActionTypeId()
-	 * @generated
-	 */
-	void setProductPriceActionTypeId(ProductPriceActionType value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Price Rule Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Price Rule Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Price Rule Id</em>' reference.
-	 * @see #setProductPriceRuleId(ProductPriceRule)
-	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPriceAction_ProductPriceRuleId()
-	 * @model keys="productPriceRuleId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductPriceRule getProductPriceRuleId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPriceAction#getProductPriceRuleId <em>Product Price Rule Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Price Rule Id</em>' reference.
-	 * @see #getProductPriceRuleId()
-	 * @generated
-	 */
-	void setProductPriceRuleId(ProductPriceRule value);
 
 } // ProductPriceAction

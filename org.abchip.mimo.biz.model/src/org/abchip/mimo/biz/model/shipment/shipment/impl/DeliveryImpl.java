@@ -34,13 +34,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.DeliveryImpl#getDeliveryId <em>Delivery Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.DeliveryImpl#getActualArrivalDate <em>Actual Arrival Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.DeliveryImpl#getActualStartDate <em>Actual Start Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.DeliveryImpl#getDestFacilityId <em>Dest Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.DeliveryImpl#getDestFacility <em>Dest Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.DeliveryImpl#getEndMileage <em>End Mileage</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.DeliveryImpl#getEstimatedArrivalDate <em>Estimated Arrival Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.DeliveryImpl#getEstimatedStartDate <em>Estimated Start Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.DeliveryImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.DeliveryImpl#getFixedAsset <em>Fixed Asset</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.DeliveryImpl#getFuelUsed <em>Fuel Used</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.DeliveryImpl#getOriginFacilityId <em>Origin Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.DeliveryImpl#getOriginFacility <em>Origin Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.DeliveryImpl#getStartMileage <em>Start Mileage</em>}</li>
  * </ul>
  *
@@ -203,6 +203,26 @@ public class DeliveryImpl extends EntityIdentifiableImpl implements Delivery {
 	 * @generated
 	 */
 	@Override
+	public Facility getDestFacility() {
+		return (Facility)eGet(Shipment_Package.Literals.DELIVERY__DEST_FACILITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDestFacility(Facility newDestFacility) {
+		eSet(Shipment_Package.Literals.DELIVERY__DEST_FACILITY, newDestFacility);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDeliveryId() {
 		return (String)eGet(Shipment_Package.Literals.DELIVERY__DELIVERY_ID, true);
 	}
@@ -215,26 +235,6 @@ public class DeliveryImpl extends EntityIdentifiableImpl implements Delivery {
 	@Override
 	public void setDeliveryId(String newDeliveryId) {
 		eSet(Shipment_Package.Literals.DELIVERY__DELIVERY_ID, newDeliveryId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Facility getDestFacilityId() {
-		return (Facility)eGet(Shipment_Package.Literals.DELIVERY__DEST_FACILITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDestFacilityId(Facility newDestFacilityId) {
-		eSet(Shipment_Package.Literals.DELIVERY__DEST_FACILITY_ID, newDestFacilityId);
 	}
 
 	/**
@@ -303,8 +303,8 @@ public class DeliveryImpl extends EntityIdentifiableImpl implements Delivery {
 	 * @generated
 	 */
 	@Override
-	public FixedAsset getFixedAssetId() {
-		return (FixedAsset)eGet(Shipment_Package.Literals.DELIVERY__FIXED_ASSET_ID, true);
+	public FixedAsset getFixedAsset() {
+		return (FixedAsset)eGet(Shipment_Package.Literals.DELIVERY__FIXED_ASSET, true);
 	}
 
 	/**
@@ -313,8 +313,8 @@ public class DeliveryImpl extends EntityIdentifiableImpl implements Delivery {
 	 * @generated
 	 */
 	@Override
-	public void setFixedAssetId(FixedAsset newFixedAssetId) {
-		eSet(Shipment_Package.Literals.DELIVERY__FIXED_ASSET_ID, newFixedAssetId);
+	public void setFixedAsset(FixedAsset newFixedAsset) {
+		eSet(Shipment_Package.Literals.DELIVERY__FIXED_ASSET, newFixedAsset);
 	}
 
 	/**
@@ -343,8 +343,8 @@ public class DeliveryImpl extends EntityIdentifiableImpl implements Delivery {
 	 * @generated
 	 */
 	@Override
-	public Facility getOriginFacilityId() {
-		return (Facility)eGet(Shipment_Package.Literals.DELIVERY__ORIGIN_FACILITY_ID, true);
+	public Facility getOriginFacility() {
+		return (Facility)eGet(Shipment_Package.Literals.DELIVERY__ORIGIN_FACILITY, true);
 	}
 
 	/**
@@ -353,8 +353,8 @@ public class DeliveryImpl extends EntityIdentifiableImpl implements Delivery {
 	 * @generated
 	 */
 	@Override
-	public void setOriginFacilityId(Facility newOriginFacilityId) {
-		eSet(Shipment_Package.Literals.DELIVERY__ORIGIN_FACILITY_ID, newOriginFacilityId);
+	public void setOriginFacility(Facility newOriginFacility) {
+		eSet(Shipment_Package.Literals.DELIVERY__ORIGIN_FACILITY, newOriginFacility);
 	}
 
 	/**

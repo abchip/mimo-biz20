@@ -24,7 +24,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlJournal#getGlJournalId <em>Gl Journal Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlJournal#getGlJournalName <em>Gl Journal Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlJournal#getIsPosted <em>Is Posted</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlJournal#getOrganizationPartyId <em>Organization Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlJournal#getOrganizationParty <em>Organization Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlJournal#getPostedDate <em>Posted Date</em>}</li>
  * </ul>
  *
@@ -82,30 +82,26 @@ public interface GlJournal extends EntityIdentifiable, EntityInfo {
 	void setIsPosted(Boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Organization Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Organization Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Organization Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Organization Party Id</em>' reference.
-	 * @see #setOrganizationPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlJournal_OrganizationPartyId()
+	 * @return the value of the '<em>Organization Party</em>' reference.
+	 * @see #setOrganizationParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlJournal_OrganizationParty()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getOrganizationPartyId();
+	Party getOrganizationParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlJournal#getOrganizationPartyId <em>Organization Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlJournal#getOrganizationParty <em>Organization Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Organization Party Id</em>' reference.
-	 * @see #getOrganizationPartyId()
+	 * @param value the new value of the '<em>Organization Party</em>' reference.
+	 * @see #getOrganizationParty()
 	 * @generated
 	 */
-	void setOrganizationPartyId(Party value);
+	void setOrganizationParty(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Posted Date</b></em>' attribute.

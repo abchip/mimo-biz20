@@ -28,13 +28,13 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getCancelQuantity <em>Cancel Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getChangeComments <em>Change Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getChangeDatetime <em>Change Datetime</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getChangeTypeEnumId <em>Change Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getChangeTypeEnum <em>Change Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getChangeUserLogin <em>Change User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getItemDescription <em>Item Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getQuantity <em>Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getReasonEnumId <em>Reason Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getReasonEnum <em>Reason Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getUnitPrice <em>Unit Price</em>}</li>
  * </ul>
  *
@@ -122,30 +122,26 @@ public interface OrderItemChange extends EntityIdentifiable, EntityInfo {
 	void setChangeDatetime(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Change Type Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Change Type Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Change Type Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Change Type Enum Id</em>' reference.
-	 * @see #setChangeTypeEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemChange_ChangeTypeEnumId()
+	 * @return the value of the '<em>Change Type Enum</em>' reference.
+	 * @see #setChangeTypeEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemChange_ChangeTypeEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getChangeTypeEnumId();
+	Enumeration getChangeTypeEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getChangeTypeEnumId <em>Change Type Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getChangeTypeEnum <em>Change Type Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Change Type Enum Id</em>' reference.
-	 * @see #getChangeTypeEnumId()
+	 * @param value the new value of the '<em>Change Type Enum</em>' reference.
+	 * @see #getChangeTypeEnum()
 	 * @generated
 	 */
-	void setChangeTypeEnumId(Enumeration value);
+	void setChangeTypeEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Change User Login</b></em>' reference.
@@ -200,30 +196,26 @@ public interface OrderItemChange extends EntityIdentifiable, EntityInfo {
 	void setItemDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemChange_OrderId()
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemChange_Order()
 	 * @model keys="orderId"
 	 * @generated
 	 */
-	OrderHeader getOrderId();
+	OrderHeader getOrder();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getOrderId <em>Order Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getOrder <em>Order</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
 	 * @generated
 	 */
-	void setOrderId(OrderHeader value);
+	void setOrder(OrderHeader value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Item Change Id</b></em>' attribute.
@@ -305,30 +297,26 @@ public interface OrderItemChange extends EntityIdentifiable, EntityInfo {
 	void setQuantity(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Reason Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Reason Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Reason Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Reason Enum Id</em>' reference.
-	 * @see #setReasonEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemChange_ReasonEnumId()
+	 * @return the value of the '<em>Reason Enum</em>' reference.
+	 * @see #setReasonEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemChange_ReasonEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getReasonEnumId();
+	Enumeration getReasonEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getReasonEnumId <em>Reason Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getReasonEnum <em>Reason Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Reason Enum Id</em>' reference.
-	 * @see #getReasonEnumId()
+	 * @param value the new value of the '<em>Reason Enum</em>' reference.
+	 * @see #getReasonEnum()
 	 * @generated
 	 */
-	void setReasonEnumId(Enumeration value);
+	void setReasonEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Unit Price</b></em>' attribute.

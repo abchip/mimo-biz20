@@ -19,8 +19,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyInvitationRoleAssoc#getRoleTypeId <em>Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyInvitationRoleAssoc#getPartyInvitationId <em>Party Invitation Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyInvitationRoleAssoc#getRoleType <em>Role Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyInvitationRoleAssoc#getPartyInvitation <em>Party Invitation</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyInvitationRoleAssoc()
@@ -29,57 +29,49 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface PartyInvitationRoleAssoc extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Role Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Role Type Id</em>' reference.
-	 * @see #setRoleTypeId(RoleType)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyInvitationRoleAssoc_RoleTypeId()
+	 * @return the value of the '<em>Role Type</em>' reference.
+	 * @see #setRoleType(RoleType)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyInvitationRoleAssoc_RoleType()
 	 * @model keys="roleTypeId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	RoleType getRoleTypeId();
+	RoleType getRoleType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyInvitationRoleAssoc#getRoleTypeId <em>Role Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyInvitationRoleAssoc#getRoleType <em>Role Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Role Type Id</em>' reference.
-	 * @see #getRoleTypeId()
+	 * @param value the new value of the '<em>Role Type</em>' reference.
+	 * @see #getRoleType()
 	 * @generated
 	 */
-	void setRoleTypeId(RoleType value);
+	void setRoleType(RoleType value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Invitation Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party Invitation</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Invitation Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Invitation Id</em>' reference.
-	 * @see #setPartyInvitationId(PartyInvitation)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyInvitationRoleAssoc_PartyInvitationId()
+	 * @return the value of the '<em>Party Invitation</em>' reference.
+	 * @see #setPartyInvitation(PartyInvitation)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyInvitationRoleAssoc_PartyInvitation()
 	 * @model keys="partyInvitationId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	PartyInvitation getPartyInvitationId();
+	PartyInvitation getPartyInvitation();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyInvitationRoleAssoc#getPartyInvitationId <em>Party Invitation Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyInvitationRoleAssoc#getPartyInvitation <em>Party Invitation</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Invitation Id</em>' reference.
-	 * @see #getPartyInvitationId()
+	 * @param value the new value of the '<em>Party Invitation</em>' reference.
+	 * @see #getPartyInvitation()
 	 * @generated
 	 */
-	void setPartyInvitationId(PartyInvitation value);
+	void setPartyInvitation(PartyInvitation value);
 
 } // PartyInvitationRoleAssoc

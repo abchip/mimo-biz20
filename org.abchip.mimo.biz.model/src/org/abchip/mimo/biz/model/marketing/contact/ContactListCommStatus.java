@@ -24,13 +24,13 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getContactListId <em>Contact List Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getCommunicationEventId <em>Communication Event Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getContactMechId <em>Contact Mech Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getChangeByUserLoginId <em>Change By User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getContactList <em>Contact List</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getCommunicationEvent <em>Communication Event</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getContactMech <em>Contact Mech</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getChangeByUserLogin <em>Change By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getMessageId <em>Message Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListCommStatus()
@@ -39,111 +39,95 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface ContactListCommStatus extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Change By User Login Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Change By User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Change By User Login Id</em>' reference.
-	 * @see #setChangeByUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListCommStatus_ChangeByUserLoginId()
-	 * @model keys="userLoginId"
-	 * @generated
-	 */
-	UserLogin getChangeByUserLoginId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getChangeByUserLoginId <em>Change By User Login Id</em>}' reference.
+	 * Returns the value of the '<em><b>Contact List</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Change By User Login Id</em>' reference.
-	 * @see #getChangeByUserLoginId()
-	 * @generated
-	 */
-	void setChangeByUserLoginId(UserLogin value);
-
-	/**
-	 * Returns the value of the '<em><b>Communication Event Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Communication Event Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Communication Event Id</em>' reference.
-	 * @see #setCommunicationEventId(CommunicationEvent)
-	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListCommStatus_CommunicationEventId()
-	 * @model keys="communicationEventId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	CommunicationEvent getCommunicationEventId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getCommunicationEventId <em>Communication Event Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Communication Event Id</em>' reference.
-	 * @see #getCommunicationEventId()
-	 * @generated
-	 */
-	void setCommunicationEventId(CommunicationEvent value);
-
-	/**
-	 * Returns the value of the '<em><b>Contact List Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact List Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact List Id</em>' reference.
-	 * @see #setContactListId(ContactList)
-	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListCommStatus_ContactListId()
+	 * @return the value of the '<em>Contact List</em>' reference.
+	 * @see #setContactList(ContactList)
+	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListCommStatus_ContactList()
 	 * @model keys="contactListId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ContactList getContactListId();
+	ContactList getContactList();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getContactListId <em>Contact List Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getContactList <em>Contact List</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact List Id</em>' reference.
-	 * @see #getContactListId()
+	 * @param value the new value of the '<em>Contact List</em>' reference.
+	 * @see #getContactList()
 	 * @generated
 	 */
-	void setContactListId(ContactList value);
+	void setContactList(ContactList value);
 
 	/**
-	 * Returns the value of the '<em><b>Contact Mech Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Communication Event</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #setContactMechId(ContactMech)
-	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListCommStatus_ContactMechId()
+	 * @return the value of the '<em>Communication Event</em>' reference.
+	 * @see #setCommunicationEvent(CommunicationEvent)
+	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListCommStatus_CommunicationEvent()
+	 * @model keys="communicationEventId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	CommunicationEvent getCommunicationEvent();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getCommunicationEvent <em>Communication Event</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Communication Event</em>' reference.
+	 * @see #getCommunicationEvent()
+	 * @generated
+	 */
+	void setCommunicationEvent(CommunicationEvent value);
+
+	/**
+	 * Returns the value of the '<em><b>Contact Mech</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Contact Mech</em>' reference.
+	 * @see #setContactMech(ContactMech)
+	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListCommStatus_ContactMech()
 	 * @model keys="contactMechId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ContactMech getContactMechId();
+	ContactMech getContactMech();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getContactMechId <em>Contact Mech Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getContactMech <em>Contact Mech</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #getContactMechId()
+	 * @param value the new value of the '<em>Contact Mech</em>' reference.
+	 * @see #getContactMech()
 	 * @generated
 	 */
-	void setContactMechId(ContactMech value);
+	void setContactMech(ContactMech value);
+
+	/**
+	 * Returns the value of the '<em><b>Change By User Login</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Change By User Login</em>' reference.
+	 * @see #setChangeByUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListCommStatus_ChangeByUserLogin()
+	 * @model keys="userLoginId"
+	 * @generated
+	 */
+	UserLogin getChangeByUserLogin();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getChangeByUserLogin <em>Change By User Login</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Change By User Login</em>' reference.
+	 * @see #getChangeByUserLogin()
+	 * @generated
+	 */
+	void setChangeByUserLogin(UserLogin value);
 
 	/**
 	 * Returns the value of the '<em><b>Message Id</b></em>' attribute.
@@ -172,55 +156,47 @@ public interface ContactListCommStatus extends EntityIdentifiable, EntityInfo {
 	void setMessageId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListCommStatus_PartyId()
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListCommStatus_Party()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getPartyId();
+	Party getParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getParty <em>Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setParty(Party value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListCommStatus_StatusId()
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListCommStatus_Status()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getStatusId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getStatusId <em>Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactListCommStatus#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setStatusId(StatusItem value);
+	void setStatus(StatusItem value);
 
 } // ContactListCommStatus

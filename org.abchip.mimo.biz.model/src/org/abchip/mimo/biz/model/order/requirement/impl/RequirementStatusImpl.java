@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementStatusImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementStatusImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementStatusImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementStatusImpl#getRequirementId <em>Requirement Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementStatusImpl#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementStatusImpl#getChangeByUserLoginId <em>Change By User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementStatusImpl#getRequirement <em>Requirement</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementStatusImpl#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementStatusImpl#getChangeByUserLogin <em>Change By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementStatusImpl#getStatusDate <em>Status Date</em>}</li>
  * </ul>
  *
@@ -155,8 +155,8 @@ public class RequirementStatusImpl extends EntityIdentifiableImpl implements Req
 	 * @generated
 	 */
 	@Override
-	public UserLogin getChangeByUserLoginId() {
-		return (UserLogin)eGet(RequirementPackage.Literals.REQUIREMENT_STATUS__CHANGE_BY_USER_LOGIN_ID, true);
+	public Requirement getRequirement() {
+		return (Requirement)eGet(RequirementPackage.Literals.REQUIREMENT_STATUS__REQUIREMENT, true);
 	}
 
 	/**
@@ -165,8 +165,8 @@ public class RequirementStatusImpl extends EntityIdentifiableImpl implements Req
 	 * @generated
 	 */
 	@Override
-	public void setChangeByUserLoginId(UserLogin newChangeByUserLoginId) {
-		eSet(RequirementPackage.Literals.REQUIREMENT_STATUS__CHANGE_BY_USER_LOGIN_ID, newChangeByUserLoginId);
+	public void setRequirement(Requirement newRequirement) {
+		eSet(RequirementPackage.Literals.REQUIREMENT_STATUS__REQUIREMENT, newRequirement);
 	}
 
 	/**
@@ -175,8 +175,8 @@ public class RequirementStatusImpl extends EntityIdentifiableImpl implements Req
 	 * @generated
 	 */
 	@Override
-	public Requirement getRequirementId() {
-		return (Requirement)eGet(RequirementPackage.Literals.REQUIREMENT_STATUS__REQUIREMENT_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(RequirementPackage.Literals.REQUIREMENT_STATUS__STATUS, true);
 	}
 
 	/**
@@ -185,8 +185,28 @@ public class RequirementStatusImpl extends EntityIdentifiableImpl implements Req
 	 * @generated
 	 */
 	@Override
-	public void setRequirementId(Requirement newRequirementId) {
-		eSet(RequirementPackage.Literals.REQUIREMENT_STATUS__REQUIREMENT_ID, newRequirementId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(RequirementPackage.Literals.REQUIREMENT_STATUS__STATUS, newStatus);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UserLogin getChangeByUserLogin() {
+		return (UserLogin)eGet(RequirementPackage.Literals.REQUIREMENT_STATUS__CHANGE_BY_USER_LOGIN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setChangeByUserLogin(UserLogin newChangeByUserLogin) {
+		eSet(RequirementPackage.Literals.REQUIREMENT_STATUS__CHANGE_BY_USER_LOGIN, newChangeByUserLogin);
 	}
 
 	/**
@@ -245,26 +265,6 @@ public class RequirementStatusImpl extends EntityIdentifiableImpl implements Req
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(RequirementPackage.Literals.REQUIREMENT_STATUS__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(RequirementPackage.Literals.REQUIREMENT_STATUS__STATUS_ID, newStatusId);
 	}
 
 } //RequirementStatusImpl

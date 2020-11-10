@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryProducedImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryProducedImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryProducedImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryProducedImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryProducedImpl#getInventoryItemId <em>Inventory Item Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryProducedImpl#getWorkEffort <em>Work Effort</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryProducedImpl#getInventoryItem <em>Inventory Item</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class WorkEffortInventoryProducedImpl extends EntityIdentifiableImpl impl
 	 * @generated
 	 */
 	@Override
-	public InventoryItem getInventoryItemId() {
-		return (InventoryItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_PRODUCED__INVENTORY_ITEM_ID, true);
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_PRODUCED__WORK_EFFORT, true);
 	}
 
 	/**
@@ -162,8 +162,28 @@ public class WorkEffortInventoryProducedImpl extends EntityIdentifiableImpl impl
 	 * @generated
 	 */
 	@Override
-	public void setInventoryItemId(InventoryItem newInventoryItemId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_PRODUCED__INVENTORY_ITEM_ID, newInventoryItemId);
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_PRODUCED__WORK_EFFORT, newWorkEffort);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InventoryItem getInventoryItem() {
+		return (InventoryItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_PRODUCED__INVENTORY_ITEM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInventoryItem(InventoryItem newInventoryItem) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_PRODUCED__INVENTORY_ITEM, newInventoryItem);
 	}
 
 	/**
@@ -202,26 +222,6 @@ public class WorkEffortInventoryProducedImpl extends EntityIdentifiableImpl impl
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_PRODUCED__WORK_EFFORT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_PRODUCED__WORK_EFFORT_ID, newWorkEffortId);
 	}
 
 } //WorkEffortInventoryProducedImpl

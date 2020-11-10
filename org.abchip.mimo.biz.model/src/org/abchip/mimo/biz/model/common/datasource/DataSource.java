@@ -20,7 +20,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.common.datasource.DataSource#getDataSourceId <em>Data Source Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.datasource.DataSource#getDataSourceTypeId <em>Data Source Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.datasource.DataSource#getDataSourceType <em>Data Source Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.datasource.DataSource#getDescription <em>Description</em>}</li>
  * </ul>
  *
@@ -57,6 +57,28 @@ public interface DataSource extends EntityTyped<DataSourceType>, EntityInfo {
 	void setDataSourceId(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Data Source Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Data Source Type</em>' reference.
+	 * @see #setDataSourceType(DataSourceType)
+	 * @see org.abchip.mimo.biz.model.common.datasource.DatasourcePackage#getDataSource_DataSourceType()
+	 * @model keys="dataSourceTypeId"
+	 * @generated
+	 */
+	DataSourceType getDataSourceType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.datasource.DataSource#getDataSourceType <em>Data Source Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Data Source Type</em>' reference.
+	 * @see #getDataSourceType()
+	 * @generated
+	 */
+	void setDataSourceType(DataSourceType value);
+
+	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -81,31 +103,5 @@ public interface DataSource extends EntityTyped<DataSourceType>, EntityInfo {
 	 * @generated
 	 */
 	void setDescription(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Data Source Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Data Source Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Data Source Type Id</em>' reference.
-	 * @see #setDataSourceTypeId(DataSourceType)
-	 * @see org.abchip.mimo.biz.model.common.datasource.DatasourcePackage#getDataSource_DataSourceTypeId()
-	 * @model keys="dataSourceTypeId"
-	 * @generated
-	 */
-	DataSourceType getDataSourceTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.datasource.DataSource#getDataSourceTypeId <em>Data Source Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Data Source Type Id</em>' reference.
-	 * @see #getDataSourceTypeId()
-	 * @generated
-	 */
-	void setDataSourceTypeId(DataSourceType value);
 
 } // DataSource

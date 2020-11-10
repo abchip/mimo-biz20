@@ -23,7 +23,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.TermType#getTermTypeId <em>Term Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.TermType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.TermType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.TermType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.TermType#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.TermType#getTermTypeAttrs <em>Term Type Attrs</em>}</li>
  * </ul>
  *
@@ -85,30 +85,26 @@ public interface TermType extends EntityType<AgreementTerm>, EntityInfo {
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(TermType)
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getTermType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(TermType)
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getTermType_ParentType()
 	 * @model keys="termTypeId"
 	 * @generated
 	 */
-	TermType getParentTypeId();
+	TermType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.TermType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.TermType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(TermType value);
+	void setParentType(TermType value);
 
 	/**
 	 * Returns the value of the '<em><b>Term Type Attrs</b></em>' reference list.

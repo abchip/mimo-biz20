@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeAttrImpl#getQuoteTypeId <em>Quote Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeAttrImpl#getQuoteType <em>Quote Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -152,6 +152,26 @@ public class QuoteTypeAttrImpl extends EntityIdentifiableImpl implements QuoteTy
 	 * @generated
 	 */
 	@Override
+	public QuoteType getQuoteType() {
+		return (QuoteType)eGet(QuotePackage.Literals.QUOTE_TYPE_ATTR__QUOTE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setQuoteType(QuoteType newQuoteType) {
+		eSet(QuotePackage.Literals.QUOTE_TYPE_ATTR__QUOTE_TYPE, newQuoteType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrName() {
 		return (String)eGet(QuotePackage.Literals.QUOTE_TYPE_ATTR__ATTR_NAME, true);
 	}
@@ -222,26 +242,6 @@ public class QuoteTypeAttrImpl extends EntityIdentifiableImpl implements QuoteTy
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public QuoteType getQuoteTypeId() {
-		return (QuoteType)eGet(QuotePackage.Literals.QUOTE_TYPE_ATTR__QUOTE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setQuoteTypeId(QuoteType newQuoteTypeId) {
-		eSet(QuotePackage.Literals.QUOTE_TYPE_ATTR__QUOTE_TYPE_ID, newQuoteTypeId);
 	}
 
 } //QuoteTypeAttrImpl

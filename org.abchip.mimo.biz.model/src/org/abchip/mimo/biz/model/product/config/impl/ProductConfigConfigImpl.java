@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigConfigImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigConfigImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigConfigImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigConfigImpl#getConfigItemId <em>Config Item Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigConfigImpl#getConfigItem <em>Config Item</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigConfigImpl#getConfigId <em>Config Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigConfigImpl#getConfigOptionId <em>Config Option Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigConfigImpl#getSequenceNum <em>Sequence Num</em>}</li>
@@ -154,6 +154,26 @@ public class ProductConfigConfigImpl extends EntityIdentifiableImpl implements P
 	 * @generated
 	 */
 	@Override
+	public ProductConfigItem getConfigItem() {
+		return (ProductConfigItem)eGet(ConfigPackage.Literals.PRODUCT_CONFIG_CONFIG__CONFIG_ITEM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setConfigItem(ProductConfigItem newConfigItem) {
+		eSet(ConfigPackage.Literals.PRODUCT_CONFIG_CONFIG__CONFIG_ITEM, newConfigItem);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getConfigId() {
 		return (String)eGet(ConfigPackage.Literals.PRODUCT_CONFIG_CONFIG__CONFIG_ID, true);
 	}
@@ -264,26 +284,6 @@ public class ProductConfigConfigImpl extends EntityIdentifiableImpl implements P
 	@Override
 	public void setSequenceNum(long newSequenceNum) {
 		eSet(ConfigPackage.Literals.PRODUCT_CONFIG_CONFIG__SEQUENCE_NUM, newSequenceNum);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductConfigItem getConfigItemId() {
-		return (ProductConfigItem)eGet(ConfigPackage.Literals.PRODUCT_CONFIG_CONFIG__CONFIG_ITEM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setConfigItemId(ProductConfigItem newConfigItemId) {
-		eSet(ConfigPackage.Literals.PRODUCT_CONFIG_CONFIG__CONFIG_ITEM_ID, newConfigItemId);
 	}
 
 } //ProductConfigConfigImpl

@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentItemFeatureImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentItemFeatureImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentItemFeatureImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentItemFeatureImpl#getShipmentId <em>Shipment Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentItemFeatureImpl#getProductFeatureId <em>Product Feature Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentItemFeatureImpl#getShipment <em>Shipment</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentItemFeatureImpl#getProductFeature <em>Product Feature</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentItemFeatureImpl#getShipmentItemSeqId <em>Shipment Item Seq Id</em>}</li>
  * </ul>
  *
@@ -153,8 +153,8 @@ public class ShipmentItemFeatureImpl extends EntityIdentifiableImpl implements S
 	 * @generated
 	 */
 	@Override
-	public ProductFeature getProductFeatureId() {
-		return (ProductFeature)eGet(Shipment_Package.Literals.SHIPMENT_ITEM_FEATURE__PRODUCT_FEATURE_ID, true);
+	public Shipment getShipment() {
+		return (Shipment)eGet(Shipment_Package.Literals.SHIPMENT_ITEM_FEATURE__SHIPMENT, true);
 	}
 
 	/**
@@ -163,8 +163,8 @@ public class ShipmentItemFeatureImpl extends EntityIdentifiableImpl implements S
 	 * @generated
 	 */
 	@Override
-	public void setProductFeatureId(ProductFeature newProductFeatureId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_ITEM_FEATURE__PRODUCT_FEATURE_ID, newProductFeatureId);
+	public void setShipment(Shipment newShipment) {
+		eSet(Shipment_Package.Literals.SHIPMENT_ITEM_FEATURE__SHIPMENT, newShipment);
 	}
 
 	/**
@@ -173,8 +173,8 @@ public class ShipmentItemFeatureImpl extends EntityIdentifiableImpl implements S
 	 * @generated
 	 */
 	@Override
-	public Shipment getShipmentId() {
-		return (Shipment)eGet(Shipment_Package.Literals.SHIPMENT_ITEM_FEATURE__SHIPMENT_ID, true);
+	public ProductFeature getProductFeature() {
+		return (ProductFeature)eGet(Shipment_Package.Literals.SHIPMENT_ITEM_FEATURE__PRODUCT_FEATURE, true);
 	}
 
 	/**
@@ -183,8 +183,8 @@ public class ShipmentItemFeatureImpl extends EntityIdentifiableImpl implements S
 	 * @generated
 	 */
 	@Override
-	public void setShipmentId(Shipment newShipmentId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_ITEM_FEATURE__SHIPMENT_ID, newShipmentId);
+	public void setProductFeature(ProductFeature newProductFeature) {
+		eSet(Shipment_Package.Literals.SHIPMENT_ITEM_FEATURE__PRODUCT_FEATURE, newProductFeature);
 	}
 
 	/**

@@ -31,7 +31,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getCharacterSetId <em>Character Set Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getCharacterSet <em>Character Set</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getChildBranchCount <em>Child Branch Count</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getChildLeafCount <em>Child Leaf Count</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getContentAttributes <em>Content Attributes</em>}</li>
@@ -40,25 +40,25 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getContentName <em>Content Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getContentPurposes <em>Content Purposes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getContentRevisions <em>Content Revisions</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getContentTypeId <em>Content Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getContentType <em>Content Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getCreatedDate <em>Created Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getCustomMethodId <em>Custom Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getDataResourceId <em>Data Resource Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getDataSourceId <em>Data Source Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getDecoratorContentId <em>Decorator Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getCustomMethod <em>Custom Method</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getDataResource <em>Data Resource</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getDataSource <em>Data Source</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getDecoratorContent <em>Decorator Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getFromCommEventContentAssocs <em>From Comm Event Content Assocs</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getInstanceOfContentId <em>Instance Of Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getInstanceOfContent <em>Instance Of Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getLastModifiedDate <em>Last Modified Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getLocaleString <em>Locale String</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getMimeTypeId <em>Mime Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getOwnerContentId <em>Owner Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getPrivilegeEnumId <em>Privilege Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getMimeType <em>Mime Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getOwnerContent <em>Owner Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getPrivilegeEnum <em>Privilege Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getServiceName <em>Service Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getTemplateDataResourceId <em>Template Data Resource Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getTemplateDataResource <em>Template Data Resource</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent()
@@ -66,32 +66,6 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface Content extends EntityTyped<ContentType>, EntityInfo {
-	/**
-	 * Returns the value of the '<em><b>Character Set Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Character Set Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Character Set Id</em>' reference.
-	 * @see #setCharacterSetId(CharacterSet)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_CharacterSetId()
-	 * @model keys="characterSetId"
-	 * @generated
-	 */
-	CharacterSet getCharacterSetId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getCharacterSetId <em>Character Set Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Character Set Id</em>' reference.
-	 * @see #getCharacterSetId()
-	 * @generated
-	 */
-	void setCharacterSetId(CharacterSet value);
-
 	/**
 	 * Returns the value of the '<em><b>Child Branch Count</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -220,6 +194,28 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	void setContentId(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Character Set</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Character Set</em>' reference.
+	 * @see #setCharacterSet(CharacterSet)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_CharacterSet()
+	 * @model keys="characterSetId"
+	 * @generated
+	 */
+	CharacterSet getCharacterSet();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getCharacterSet <em>Character Set</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Character Set</em>' reference.
+	 * @see #getCharacterSet()
+	 * @generated
+	 */
+	void setCharacterSet(CharacterSet value);
+
+	/**
 	 * Returns the value of the '<em><b>Content Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -278,30 +274,26 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	List<ContentRevision> getContentRevisions();
 
 	/**
-	 * Returns the value of the '<em><b>Content Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Content Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Type Id</em>' reference.
-	 * @see #setContentTypeId(ContentType)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_ContentTypeId()
+	 * @return the value of the '<em>Content Type</em>' reference.
+	 * @see #setContentType(ContentType)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_ContentType()
 	 * @model keys="contentTypeId"
 	 * @generated
 	 */
-	ContentType getContentTypeId();
+	ContentType getContentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getContentTypeId <em>Content Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getContentType <em>Content Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Type Id</em>' reference.
-	 * @see #getContentTypeId()
+	 * @param value the new value of the '<em>Content Type</em>' reference.
+	 * @see #getContentType()
 	 * @generated
 	 */
-	void setContentTypeId(ContentType value);
+	void setContentType(ContentType value);
 
 	/**
 	 * Returns the value of the '<em><b>Created By User Login</b></em>' reference.
@@ -356,108 +348,92 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	void setCreatedDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Custom Method Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Custom Method</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Custom Method Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Custom Method Id</em>' reference.
-	 * @see #setCustomMethodId(CustomMethod)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_CustomMethodId()
+	 * @return the value of the '<em>Custom Method</em>' reference.
+	 * @see #setCustomMethod(CustomMethod)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_CustomMethod()
 	 * @model keys="customMethodId"
 	 * @generated
 	 */
-	CustomMethod getCustomMethodId();
+	CustomMethod getCustomMethod();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getCustomMethodId <em>Custom Method Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getCustomMethod <em>Custom Method</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Custom Method Id</em>' reference.
-	 * @see #getCustomMethodId()
+	 * @param value the new value of the '<em>Custom Method</em>' reference.
+	 * @see #getCustomMethod()
 	 * @generated
 	 */
-	void setCustomMethodId(CustomMethod value);
+	void setCustomMethod(CustomMethod value);
 
 	/**
-	 * Returns the value of the '<em><b>Data Resource Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Data Resource</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Data Resource Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Data Resource Id</em>' reference.
-	 * @see #setDataResourceId(DataResource)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_DataResourceId()
+	 * @return the value of the '<em>Data Resource</em>' reference.
+	 * @see #setDataResource(DataResource)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_DataResource()
 	 * @model keys="dataResourceId"
 	 * @generated
 	 */
-	DataResource getDataResourceId();
+	DataResource getDataResource();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getDataResourceId <em>Data Resource Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getDataResource <em>Data Resource</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Data Resource Id</em>' reference.
-	 * @see #getDataResourceId()
+	 * @param value the new value of the '<em>Data Resource</em>' reference.
+	 * @see #getDataResource()
 	 * @generated
 	 */
-	void setDataResourceId(DataResource value);
+	void setDataResource(DataResource value);
 
 	/**
-	 * Returns the value of the '<em><b>Data Source Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Data Source</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Data Source Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Data Source Id</em>' reference.
-	 * @see #setDataSourceId(DataSource)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_DataSourceId()
+	 * @return the value of the '<em>Data Source</em>' reference.
+	 * @see #setDataSource(DataSource)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_DataSource()
 	 * @model keys="dataSourceId"
 	 * @generated
 	 */
-	DataSource getDataSourceId();
+	DataSource getDataSource();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getDataSourceId <em>Data Source Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getDataSource <em>Data Source</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Data Source Id</em>' reference.
-	 * @see #getDataSourceId()
+	 * @param value the new value of the '<em>Data Source</em>' reference.
+	 * @see #getDataSource()
 	 * @generated
 	 */
-	void setDataSourceId(DataSource value);
+	void setDataSource(DataSource value);
 
 	/**
-	 * Returns the value of the '<em><b>Decorator Content Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Decorator Content</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Decorator Content Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Decorator Content Id</em>' reference.
-	 * @see #setDecoratorContentId(Content)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_DecoratorContentId()
+	 * @return the value of the '<em>Decorator Content</em>' reference.
+	 * @see #setDecoratorContent(Content)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_DecoratorContent()
 	 * @model keys="contentId"
 	 * @generated
 	 */
-	Content getDecoratorContentId();
+	Content getDecoratorContent();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getDecoratorContentId <em>Decorator Content Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getDecoratorContent <em>Decorator Content</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Decorator Content Id</em>' reference.
-	 * @see #getDecoratorContentId()
+	 * @param value the new value of the '<em>Decorator Content</em>' reference.
+	 * @see #getDecoratorContent()
 	 * @generated
 	 */
-	void setDecoratorContentId(Content value);
+	void setDecoratorContent(Content value);
 
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
@@ -499,30 +475,26 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	List<CommEventContentAssoc> getFromCommEventContentAssocs();
 
 	/**
-	 * Returns the value of the '<em><b>Instance Of Content Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Instance Of Content</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Instance Of Content Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Instance Of Content Id</em>' reference.
-	 * @see #setInstanceOfContentId(Content)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_InstanceOfContentId()
+	 * @return the value of the '<em>Instance Of Content</em>' reference.
+	 * @see #setInstanceOfContent(Content)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_InstanceOfContent()
 	 * @model keys="contentId"
 	 * @generated
 	 */
-	Content getInstanceOfContentId();
+	Content getInstanceOfContent();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getInstanceOfContentId <em>Instance Of Content Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getInstanceOfContent <em>Instance Of Content</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Instance Of Content Id</em>' reference.
-	 * @see #getInstanceOfContentId()
+	 * @param value the new value of the '<em>Instance Of Content</em>' reference.
+	 * @see #getInstanceOfContent()
 	 * @generated
 	 */
-	void setInstanceOfContentId(Content value);
+	void setInstanceOfContent(Content value);
 
 	/**
 	 * Returns the value of the '<em><b>Last Modified By User Login</b></em>' reference.
@@ -603,83 +575,71 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	void setLocaleString(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Mime Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Mime Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Mime Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Mime Type Id</em>' reference.
-	 * @see #setMimeTypeId(MimeType)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_MimeTypeId()
+	 * @return the value of the '<em>Mime Type</em>' reference.
+	 * @see #setMimeType(MimeType)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_MimeType()
 	 * @model keys="mimeTypeId"
 	 * @generated
 	 */
-	MimeType getMimeTypeId();
+	MimeType getMimeType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getMimeTypeId <em>Mime Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getMimeType <em>Mime Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Mime Type Id</em>' reference.
-	 * @see #getMimeTypeId()
+	 * @param value the new value of the '<em>Mime Type</em>' reference.
+	 * @see #getMimeType()
 	 * @generated
 	 */
-	void setMimeTypeId(MimeType value);
+	void setMimeType(MimeType value);
 
 	/**
-	 * Returns the value of the '<em><b>Owner Content Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Owner Content</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Owner Content Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Owner Content Id</em>' reference.
-	 * @see #setOwnerContentId(Content)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_OwnerContentId()
+	 * @return the value of the '<em>Owner Content</em>' reference.
+	 * @see #setOwnerContent(Content)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_OwnerContent()
 	 * @model keys="contentId"
 	 *        annotation="mimo-ent-slot help='Used for permissions checking'"
 	 * @generated
 	 */
-	Content getOwnerContentId();
+	Content getOwnerContent();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getOwnerContentId <em>Owner Content Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getOwnerContent <em>Owner Content</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Owner Content Id</em>' reference.
-	 * @see #getOwnerContentId()
+	 * @param value the new value of the '<em>Owner Content</em>' reference.
+	 * @see #getOwnerContent()
 	 * @generated
 	 */
-	void setOwnerContentId(Content value);
+	void setOwnerContent(Content value);
 
 	/**
-	 * Returns the value of the '<em><b>Privilege Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Privilege Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Privilege Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Privilege Enum Id</em>' reference.
-	 * @see #setPrivilegeEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_PrivilegeEnumId()
+	 * @return the value of the '<em>Privilege Enum</em>' reference.
+	 * @see #setPrivilegeEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_PrivilegeEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getPrivilegeEnumId();
+	Enumeration getPrivilegeEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getPrivilegeEnumId <em>Privilege Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getPrivilegeEnum <em>Privilege Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Privilege Enum Id</em>' reference.
-	 * @see #getPrivilegeEnumId()
+	 * @param value the new value of the '<em>Privilege Enum</em>' reference.
+	 * @see #getPrivilegeEnum()
 	 * @generated
 	 */
-	void setPrivilegeEnumId(Enumeration value);
+	void setPrivilegeEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Service Name</b></em>' attribute.
@@ -709,55 +669,47 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	void setServiceName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_StatusId()
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_Status()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getStatusId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getStatusId <em>Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setStatusId(StatusItem value);
+	void setStatus(StatusItem value);
 
 	/**
-	 * Returns the value of the '<em><b>Template Data Resource Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Template Data Resource</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Template Data Resource Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Template Data Resource Id</em>' reference.
-	 * @see #setTemplateDataResourceId(DataResource)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_TemplateDataResourceId()
+	 * @return the value of the '<em>Template Data Resource</em>' reference.
+	 * @see #setTemplateDataResource(DataResource)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_TemplateDataResource()
 	 * @model keys="dataResourceId"
 	 * @generated
 	 */
-	DataResource getTemplateDataResourceId();
+	DataResource getTemplateDataResource();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getTemplateDataResourceId <em>Template Data Resource Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.Content#getTemplateDataResource <em>Template Data Resource</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Template Data Resource Id</em>' reference.
-	 * @see #getTemplateDataResourceId()
+	 * @param value the new value of the '<em>Template Data Resource</em>' reference.
+	 * @see #getTemplateDataResource()
 	 * @generated
 	 */
-	void setTemplateDataResourceId(DataResource value);
+	void setTemplateDataResource(DataResource value);
 
 } // Content

@@ -24,7 +24,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.common.enum_.Enumeration#getEnumId <em>Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.enum_.Enumeration#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.enum_.Enumeration#getEnumCode <em>Enum Code</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.enum_.Enumeration#getEnumTypeId <em>Enum Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.enum_.Enumeration#getEnumType <em>Enum Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.enum_.Enumeration#getSequenceId <em>Sequence Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.enum_.Enumeration#getUserLoginSecurityQuestions <em>User Login Security Questions</em>}</li>
  * </ul>
@@ -87,6 +87,28 @@ public interface Enumeration extends EntityTyped<EnumerationType>, EntityInfo {
 	void setEnumCode(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Enum Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Enum Type</em>' reference.
+	 * @see #setEnumType(EnumerationType)
+	 * @see org.abchip.mimo.biz.model.common.enum_.EnumPackage#getEnumeration_EnumType()
+	 * @model keys="enumTypeId"
+	 * @generated
+	 */
+	EnumerationType getEnumType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.enum_.Enumeration#getEnumType <em>Enum Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Enum Type</em>' reference.
+	 * @see #getEnumType()
+	 * @generated
+	 */
+	void setEnumType(EnumerationType value);
+
+	/**
 	 * Returns the value of the '<em><b>Sequence Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -127,32 +149,6 @@ public interface Enumeration extends EntityTyped<EnumerationType>, EntityInfo {
 	 * @generated
 	 */
 	List<UserLoginSecurityQuestion> getUserLoginSecurityQuestions();
-
-	/**
-	 * Returns the value of the '<em><b>Enum Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Enum Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Enum Type Id</em>' reference.
-	 * @see #setEnumTypeId(EnumerationType)
-	 * @see org.abchip.mimo.biz.model.common.enum_.EnumPackage#getEnumeration_EnumTypeId()
-	 * @model keys="enumTypeId"
-	 * @generated
-	 */
-	EnumerationType getEnumTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.enum_.Enumeration#getEnumTypeId <em>Enum Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Enum Type Id</em>' reference.
-	 * @see #getEnumTypeId()
-	 * @generated
-	 */
-	void setEnumTypeId(EnumerationType value);
 
 	/**
 	 * Returns the value of the '<em><b>Enum Id</b></em>' attribute.

@@ -29,9 +29,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetRegistrationImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetRegistrationImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetRegistrationImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetRegistrationImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetRegistrationImpl#getFixedAsset <em>Fixed Asset</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetRegistrationImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetRegistrationImpl#getGovAgencyPartyId <em>Gov Agency Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetRegistrationImpl#getGovAgencyParty <em>Gov Agency Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetRegistrationImpl#getLicenseNumber <em>License Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetRegistrationImpl#getRegistrationDate <em>Registration Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetRegistrationImpl#getRegistrationNumber <em>Registration Number</em>}</li>
@@ -156,6 +156,26 @@ public class FixedAssetRegistrationImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
+	public FixedAsset getFixedAsset() {
+		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET_REGISTRATION__FIXED_ASSET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFixedAsset(FixedAsset newFixedAsset) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_REGISTRATION__FIXED_ASSET, newFixedAsset);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(FixedassetPackage.Literals.FIXED_ASSET_REGISTRATION__FROM_DATE, true);
 	}
@@ -176,8 +196,8 @@ public class FixedAssetRegistrationImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public Party getGovAgencyPartyId() {
-		return (Party)eGet(FixedassetPackage.Literals.FIXED_ASSET_REGISTRATION__GOV_AGENCY_PARTY_ID, true);
+	public Party getGovAgencyParty() {
+		return (Party)eGet(FixedassetPackage.Literals.FIXED_ASSET_REGISTRATION__GOV_AGENCY_PARTY, true);
 	}
 
 	/**
@@ -186,8 +206,8 @@ public class FixedAssetRegistrationImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setGovAgencyPartyId(Party newGovAgencyPartyId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_REGISTRATION__GOV_AGENCY_PARTY_ID, newGovAgencyPartyId);
+	public void setGovAgencyParty(Party newGovAgencyParty) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_REGISTRATION__GOV_AGENCY_PARTY, newGovAgencyParty);
 	}
 
 	/**
@@ -306,26 +326,6 @@ public class FixedAssetRegistrationImpl extends EntityIdentifiableImpl implement
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FixedAsset getFixedAssetId() {
-		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET_REGISTRATION__FIXED_ASSET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFixedAssetId(FixedAsset newFixedAssetId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_REGISTRATION__FIXED_ASSET_ID, newFixedAssetId);
 	}
 
 } //FixedAssetRegistrationImpl

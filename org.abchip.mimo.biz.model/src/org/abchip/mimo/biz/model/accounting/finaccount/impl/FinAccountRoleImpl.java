@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountRoleImpl#getFinAccountId <em>Fin Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountRoleImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountRoleImpl#getFinAccount <em>Fin Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountRoleImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountRoleImpl#getRoleType <em>Role Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountRoleImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountRoleImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -155,6 +155,66 @@ public class FinAccountRoleImpl extends EntityIdentifiableImpl implements FinAcc
 	 * @generated
 	 */
 	@Override
+	public FinAccount getFinAccount() {
+		return (FinAccount)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_ROLE__FIN_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFinAccount(FinAccount newFinAccount) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_ROLE__FIN_ACCOUNT, newFinAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_ROLE__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_ROLE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RoleType getRoleType() {
+		return (RoleType)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_ROLE__ROLE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRoleType(RoleType newRoleType) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_ROLE__ROLE_TYPE, newRoleType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_ROLE__FROM_DATE, true);
 	}
@@ -167,46 +227,6 @@ public class FinAccountRoleImpl extends EntityIdentifiableImpl implements FinAcc
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_ROLE__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_ROLE__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_ROLE__PARTY_ID, newPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_ROLE__ROLE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_ROLE__ROLE_TYPE_ID, newRoleTypeId);
 	}
 
 	/**
@@ -265,26 +285,6 @@ public class FinAccountRoleImpl extends EntityIdentifiableImpl implements FinAcc
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FinAccount getFinAccountId() {
-		return (FinAccount)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_ROLE__FIN_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFinAccountId(FinAccount newFinAccountId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_ROLE__FIN_ACCOUNT_ID, newFinAccountId);
 	}
 
 } //FinAccountRoleImpl

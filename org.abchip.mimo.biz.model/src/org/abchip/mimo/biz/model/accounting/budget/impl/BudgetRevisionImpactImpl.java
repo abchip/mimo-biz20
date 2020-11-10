@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpactImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpactImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpactImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpactImpl#getBudgetId <em>Budget Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpactImpl#getBudget <em>Budget</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpactImpl#getBudgetItemSeqId <em>Budget Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpactImpl#getRevisionSeqId <em>Revision Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpactImpl#getAddDeleteFlag <em>Add Delete Flag</em>}</li>
@@ -148,6 +148,26 @@ public class BudgetRevisionImpactImpl extends EntityIdentifiableImpl implements 
 	@Override
 	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
 		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Budget getBudget() {
+		return (Budget)eGet(BudgetPackage.Literals.BUDGET_REVISION_IMPACT__BUDGET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBudget(Budget newBudget) {
+		eSet(BudgetPackage.Literals.BUDGET_REVISION_IMPACT__BUDGET, newBudget);
 	}
 
 	/**
@@ -286,26 +306,6 @@ public class BudgetRevisionImpactImpl extends EntityIdentifiableImpl implements 
 	@Override
 	public void setAddDeleteFlag(Boolean newAddDeleteFlag) {
 		eSet(BudgetPackage.Literals.BUDGET_REVISION_IMPACT__ADD_DELETE_FLAG, newAddDeleteFlag);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Budget getBudgetId() {
-		return (Budget)eGet(BudgetPackage.Literals.BUDGET_REVISION_IMPACT__BUDGET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBudgetId(Budget newBudgetId) {
-		eSet(BudgetPackage.Literals.BUDGET_REVISION_IMPACT__BUDGET_ID, newBudgetId);
 	}
 
 } //BudgetRevisionImpactImpl

@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getProductCategoryId <em>Product Category Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getParentProductCategoryId <em>Parent Product Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getProductCategory <em>Product Category</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getParentProductCategory <em>Parent Product Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getThruDate <em>Thru Date</em>}</li>
@@ -32,6 +32,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductCategoryRollup extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product Category</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Category</em>' reference.
+	 * @see #setProductCategory(ProductCategory)
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryRollup_ProductCategory()
+	 * @model keys="productCategoryId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductCategory getProductCategory();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getProductCategory <em>Product Category</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Category</em>' reference.
+	 * @see #getProductCategory()
+	 * @generated
+	 */
+	void setProductCategory(ProductCategory value);
+
+	/**
+	 * Returns the value of the '<em><b>Parent Product Category</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Parent Product Category</em>' reference.
+	 * @see #setParentProductCategory(ProductCategory)
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryRollup_ParentProductCategory()
+	 * @model keys="productCategoryId" required="true"
+	 *        annotation="mimo-ent-slot key='true' help='The parent category; it should be one of productCategoryId already setup in ProductCategory or ProductCategoryRollup'"
+	 * @generated
+	 */
+	ProductCategory getParentProductCategory();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getParentProductCategory <em>Parent Product Category</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Parent Product Category</em>' reference.
+	 * @see #getParentProductCategory()
+	 * @generated
+	 */
+	void setParentProductCategory(ProductCategory value);
+
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -110,59 +156,5 @@ public interface ProductCategoryRollup extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Category Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Category Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Category Id</em>' reference.
-	 * @see #setProductCategoryId(ProductCategory)
-	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryRollup_ProductCategoryId()
-	 * @model keys="productCategoryId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductCategory getProductCategoryId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getProductCategoryId <em>Product Category Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Category Id</em>' reference.
-	 * @see #getProductCategoryId()
-	 * @generated
-	 */
-	void setProductCategoryId(ProductCategory value);
-
-	/**
-	 * Returns the value of the '<em><b>Parent Product Category Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Product Category Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Product Category Id</em>' reference.
-	 * @see #setParentProductCategoryId(ProductCategory)
-	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryRollup_ParentProductCategoryId()
-	 * @model keys="productCategoryId" required="true"
-	 *        annotation="mimo-ent-slot key='true' help='The parent category; it should be one of productCategoryId already setup in ProductCategory or ProductCategoryRollup'"
-	 * @generated
-	 */
-	ProductCategory getParentProductCategoryId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getParentProductCategoryId <em>Parent Product Category Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Product Category Id</em>' reference.
-	 * @see #getParentProductCategoryId()
-	 * @generated
-	 */
-	void setParentProductCategoryId(ProductCategory value);
 
 } // ProductCategoryRollup

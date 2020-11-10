@@ -32,14 +32,14 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTermImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTermImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTermImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTermImpl#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTermImpl#getTermTypeId <em>Term Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTermImpl#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTermImpl#getTermType <em>Term Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTermImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTermImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTermImpl#getTermDays <em>Term Days</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTermImpl#getTermValue <em>Term Value</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTermImpl#getTextValue <em>Text Value</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTermImpl#getUomId <em>Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTermImpl#getUom <em>Uom</em>}</li>
  * </ul>
  *
  * @generated
@@ -161,6 +161,46 @@ public class OrderTermImpl extends EntityIdentifiableImpl implements OrderTerm {
 	 * @generated
 	 */
 	@Override
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_TERM__ORDER, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_TERM__ORDER, newOrder);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TermType getTermType() {
+		return (TermType)eGet(OrderPackage.Literals.ORDER_TERM__TERM_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTermType(TermType newTermType) {
+		eSet(OrderPackage.Literals.ORDER_TERM__TERM_TYPE, newTermType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(OrderPackage.Literals.ORDER_TERM__DESCRIPTION, true);
 	}
@@ -173,26 +213,6 @@ public class OrderTermImpl extends EntityIdentifiableImpl implements OrderTerm {
 	@Override
 	public void setDescription(String newDescription) {
 		eSet(OrderPackage.Literals.ORDER_TERM__DESCRIPTION, newDescription);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_TERM__ORDER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_TERM__ORDER_ID, newOrderId);
 	}
 
 	/**
@@ -241,26 +261,6 @@ public class OrderTermImpl extends EntityIdentifiableImpl implements OrderTerm {
 	 * @generated
 	 */
 	@Override
-	public TermType getTermTypeId() {
-		return (TermType)eGet(OrderPackage.Literals.ORDER_TERM__TERM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTermTypeId(TermType newTermTypeId) {
-		eSet(OrderPackage.Literals.ORDER_TERM__TERM_TYPE_ID, newTermTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public BigDecimal getTermValue() {
 		return (BigDecimal)eGet(OrderPackage.Literals.ORDER_TERM__TERM_VALUE, true);
 	}
@@ -301,8 +301,8 @@ public class OrderTermImpl extends EntityIdentifiableImpl implements OrderTerm {
 	 * @generated
 	 */
 	@Override
-	public Uom getUomId() {
-		return (Uom)eGet(OrderPackage.Literals.ORDER_TERM__UOM_ID, true);
+	public Uom getUom() {
+		return (Uom)eGet(OrderPackage.Literals.ORDER_TERM__UOM, true);
 	}
 
 	/**
@@ -311,8 +311,8 @@ public class OrderTermImpl extends EntityIdentifiableImpl implements OrderTerm {
 	 * @generated
 	 */
 	@Override
-	public void setUomId(Uom newUomId) {
-		eSet(OrderPackage.Literals.ORDER_TERM__UOM_ID, newUomId);
+	public void setUom(Uom newUom) {
+		eSet(OrderPackage.Literals.ORDER_TERM__UOM, newUom);
 	}
 
 	/**

@@ -21,9 +21,9 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebPage#getWebPageId <em>Web Page Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebPage#getContentId <em>Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebPage#getContent <em>Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebPage#getPageName <em>Page Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebPage#getWebSiteId <em>Web Site Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebPage#getWebSite <em>Web Site</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebPage()
@@ -59,30 +59,26 @@ public interface WebPage extends EntityIdentifiable, EntityInfo {
 	void setWebPageId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Content</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Id</em>' reference.
-	 * @see #setContentId(Content)
-	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebPage_ContentId()
+	 * @return the value of the '<em>Content</em>' reference.
+	 * @see #setContent(Content)
+	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebPage_Content()
 	 * @model keys="contentId"
 	 * @generated
 	 */
-	Content getContentId();
+	Content getContent();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.website.WebPage#getContentId <em>Content Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.website.WebPage#getContent <em>Content</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Id</em>' reference.
-	 * @see #getContentId()
+	 * @param value the new value of the '<em>Content</em>' reference.
+	 * @see #getContent()
 	 * @generated
 	 */
-	void setContentId(Content value);
+	void setContent(Content value);
 
 	/**
 	 * Returns the value of the '<em><b>Page Name</b></em>' attribute.
@@ -111,29 +107,25 @@ public interface WebPage extends EntityIdentifiable, EntityInfo {
 	void setPageName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Web Site Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Web Site</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Web Site Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Web Site Id</em>' reference.
-	 * @see #setWebSiteId(WebSite)
-	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebPage_WebSiteId()
+	 * @return the value of the '<em>Web Site</em>' reference.
+	 * @see #setWebSite(WebSite)
+	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebPage_WebSite()
 	 * @model keys="webSiteId"
 	 * @generated
 	 */
-	WebSite getWebSiteId();
+	WebSite getWebSite();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.website.WebPage#getWebSiteId <em>Web Site Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.website.WebPage#getWebSite <em>Web Site</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Web Site Id</em>' reference.
-	 * @see #getWebSiteId()
+	 * @param value the new value of the '<em>Web Site</em>' reference.
+	 * @see #getWebSite()
 	 * @generated
 	 */
-	void setWebSiteId(WebSite value);
+	void setWebSite(WebSite value);
 
 } // WebPage

@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignPromoImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignPromoImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignPromoImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignPromoImpl#getMarketingCampaignId <em>Marketing Campaign Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignPromoImpl#getProductPromoId <em>Product Promo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignPromoImpl#getMarketingCampaign <em>Marketing Campaign</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignPromoImpl#getProductPromo <em>Product Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignPromoImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignPromoImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -154,6 +154,46 @@ public class MarketingCampaignPromoImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
+	public MarketingCampaign getMarketingCampaign() {
+		return (MarketingCampaign)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN_PROMO__MARKETING_CAMPAIGN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMarketingCampaign(MarketingCampaign newMarketingCampaign) {
+		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN_PROMO__MARKETING_CAMPAIGN, newMarketingCampaign);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductPromo getProductPromo() {
+		return (ProductPromo)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN_PROMO__PRODUCT_PROMO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPromo(ProductPromo newProductPromo) {
+		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN_PROMO__PRODUCT_PROMO, newProductPromo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN_PROMO__FROM_DATE, true);
 	}
@@ -166,46 +206,6 @@ public class MarketingCampaignPromoImpl extends EntityIdentifiableImpl implement
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN_PROMO__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public MarketingCampaign getMarketingCampaignId() {
-		return (MarketingCampaign)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN_PROMO__MARKETING_CAMPAIGN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setMarketingCampaignId(MarketingCampaign newMarketingCampaignId) {
-		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN_PROMO__MARKETING_CAMPAIGN_ID, newMarketingCampaignId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductPromo getProductPromoId() {
-		return (ProductPromo)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN_PROMO__PRODUCT_PROMO_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPromoId(ProductPromo newProductPromoId) {
-		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN_PROMO__PRODUCT_PROMO_ID, newProductPromoId);
 	}
 
 	/**

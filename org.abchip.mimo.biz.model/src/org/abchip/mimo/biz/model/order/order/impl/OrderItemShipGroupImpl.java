@@ -33,26 +33,26 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getShipGroupSeqId <em>Ship Group Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getCarrierPartyId <em>Carrier Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getCarrierParty <em>Carrier Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getCarrierRoleTypeId <em>Carrier Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getEstimatedDeliveryDate <em>Estimated Delivery Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getEstimatedShipDate <em>Estimated Ship Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getGiftMessage <em>Gift Message</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getIsGift <em>Is Gift</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getMaySplit <em>May Split</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getShipAfterDate <em>Ship After Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getShipByDate <em>Ship By Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getShipmentMethodType <em>Shipment Method Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getShippingInstructions <em>Shipping Instructions</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getSupplierAgreementId <em>Supplier Agreement Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getSupplierPartyId <em>Supplier Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getTelecomContactMechId <em>Telecom Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getSupplierAgreement <em>Supplier Agreement</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getSupplierParty <em>Supplier Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getTelecomContactMech <em>Telecom Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getTrackingNumber <em>Tracking Number</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getVendorPartyId <em>Vendor Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getVendorParty <em>Vendor Party</em>}</li>
  * </ul>
  *
  * @generated
@@ -174,8 +174,8 @@ public class OrderItemShipGroupImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public Party getCarrierPartyId() {
-		return (Party)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__CARRIER_PARTY_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__ORDER, true);
 	}
 
 	/**
@@ -184,8 +184,8 @@ public class OrderItemShipGroupImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public void setCarrierPartyId(Party newCarrierPartyId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__CARRIER_PARTY_ID, newCarrierPartyId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__ORDER, newOrder);
 	}
 
 	/**
@@ -214,8 +214,8 @@ public class OrderItemShipGroupImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__CONTACT_MECH_ID, true);
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__CONTACT_MECH, true);
 	}
 
 	/**
@@ -224,8 +224,8 @@ public class OrderItemShipGroupImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__CONTACT_MECH_ID, newContactMechId);
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__CONTACT_MECH, newContactMech);
 	}
 
 	/**
@@ -274,8 +274,8 @@ public class OrderItemShipGroupImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__FACILITY_ID, true);
+	public Facility getFacility() {
+		return (Facility)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__FACILITY, true);
 	}
 
 	/**
@@ -284,8 +284,8 @@ public class OrderItemShipGroupImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__FACILITY_ID, newFacilityId);
+	public void setFacility(Facility newFacility) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__FACILITY, newFacility);
 	}
 
 	/**
@@ -354,26 +354,6 @@ public class OrderItemShipGroupImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__ORDER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__ORDER_ID, newOrderId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Date getShipAfterDate() {
 		return (Date)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__SHIP_AFTER_DATE, true);
 	}
@@ -414,6 +394,26 @@ public class OrderItemShipGroupImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
+	public ShipmentMethodType getShipmentMethodType() {
+		return (ShipmentMethodType)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__SHIPMENT_METHOD_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setShipmentMethodType(ShipmentMethodType newShipmentMethodType) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__SHIPMENT_METHOD_TYPE, newShipmentMethodType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getShipGroupSeqId() {
 		return (String)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__SHIP_GROUP_SEQ_ID, true);
 	}
@@ -434,8 +434,8 @@ public class OrderItemShipGroupImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public ShipmentMethodType getShipmentMethodTypeId() {
-		return (ShipmentMethodType)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__SHIPMENT_METHOD_TYPE_ID, true);
+	public Party getCarrierParty() {
+		return (Party)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__CARRIER_PARTY, true);
 	}
 
 	/**
@@ -444,8 +444,8 @@ public class OrderItemShipGroupImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public void setShipmentMethodTypeId(ShipmentMethodType newShipmentMethodTypeId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__SHIPMENT_METHOD_TYPE_ID, newShipmentMethodTypeId);
+	public void setCarrierParty(Party newCarrierParty) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__CARRIER_PARTY, newCarrierParty);
 	}
 
 	/**
@@ -474,8 +474,8 @@ public class OrderItemShipGroupImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public Agreement getSupplierAgreementId() {
-		return (Agreement)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__SUPPLIER_AGREEMENT_ID, true);
+	public Agreement getSupplierAgreement() {
+		return (Agreement)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__SUPPLIER_AGREEMENT, true);
 	}
 
 	/**
@@ -484,8 +484,8 @@ public class OrderItemShipGroupImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public void setSupplierAgreementId(Agreement newSupplierAgreementId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__SUPPLIER_AGREEMENT_ID, newSupplierAgreementId);
+	public void setSupplierAgreement(Agreement newSupplierAgreement) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__SUPPLIER_AGREEMENT, newSupplierAgreement);
 	}
 
 	/**
@@ -494,8 +494,8 @@ public class OrderItemShipGroupImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public Party getSupplierPartyId() {
-		return (Party)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__SUPPLIER_PARTY_ID, true);
+	public Party getSupplierParty() {
+		return (Party)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__SUPPLIER_PARTY, true);
 	}
 
 	/**
@@ -504,8 +504,8 @@ public class OrderItemShipGroupImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public void setSupplierPartyId(Party newSupplierPartyId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__SUPPLIER_PARTY_ID, newSupplierPartyId);
+	public void setSupplierParty(Party newSupplierParty) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__SUPPLIER_PARTY, newSupplierParty);
 	}
 
 	/**
@@ -514,8 +514,8 @@ public class OrderItemShipGroupImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public ContactMech getTelecomContactMechId() {
-		return (ContactMech)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__TELECOM_CONTACT_MECH_ID, true);
+	public ContactMech getTelecomContactMech() {
+		return (ContactMech)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__TELECOM_CONTACT_MECH, true);
 	}
 
 	/**
@@ -524,8 +524,8 @@ public class OrderItemShipGroupImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public void setTelecomContactMechId(ContactMech newTelecomContactMechId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__TELECOM_CONTACT_MECH_ID, newTelecomContactMechId);
+	public void setTelecomContactMech(ContactMech newTelecomContactMech) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__TELECOM_CONTACT_MECH, newTelecomContactMech);
 	}
 
 	/**
@@ -554,8 +554,8 @@ public class OrderItemShipGroupImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public Party getVendorPartyId() {
-		return (Party)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__VENDOR_PARTY_ID, true);
+	public Party getVendorParty() {
+		return (Party)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__VENDOR_PARTY, true);
 	}
 
 	/**
@@ -564,8 +564,8 @@ public class OrderItemShipGroupImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public void setVendorPartyId(Party newVendorPartyId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__VENDOR_PARTY_ID, newVendorPartyId);
+	public void setVendorParty(Party newVendorParty) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__VENDOR_PARTY, newVendorParty);
 	}
 
 	/**

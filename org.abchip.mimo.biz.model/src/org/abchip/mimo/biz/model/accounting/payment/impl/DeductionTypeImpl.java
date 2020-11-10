@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.DeductionTypeImpl#getDeductionTypeId <em>Deduction Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.DeductionTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.DeductionTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.DeductionTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.DeductionTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -199,8 +199,8 @@ public class DeductionTypeImpl extends EntityTypeImpl<Deduction> implements Dedu
 	 * @generated
 	 */
 	@Override
-	public DeductionType getParentTypeId() {
-		return (DeductionType)eGet(PaymentPackage.Literals.DEDUCTION_TYPE__PARENT_TYPE_ID, true);
+	public DeductionType getParentType() {
+		return (DeductionType)eGet(PaymentPackage.Literals.DEDUCTION_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -209,8 +209,8 @@ public class DeductionTypeImpl extends EntityTypeImpl<Deduction> implements Dedu
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(DeductionType newParentTypeId) {
-		eSet(PaymentPackage.Literals.DEDUCTION_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(DeductionType newParentType) {
+		eSet(PaymentPackage.Literals.DEDUCTION_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

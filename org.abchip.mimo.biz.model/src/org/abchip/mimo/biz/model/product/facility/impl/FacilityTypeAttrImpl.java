@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityTypeAttrImpl#getFacilityTypeId <em>Facility Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityTypeAttrImpl#getFacilityType <em>Facility Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -152,6 +152,26 @@ public class FacilityTypeAttrImpl extends EntityIdentifiableImpl implements Faci
 	 * @generated
 	 */
 	@Override
+	public FacilityType getFacilityType() {
+		return (FacilityType)eGet(FacilityPackage.Literals.FACILITY_TYPE_ATTR__FACILITY_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacilityType(FacilityType newFacilityType) {
+		eSet(FacilityPackage.Literals.FACILITY_TYPE_ATTR__FACILITY_TYPE, newFacilityType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(FacilityPackage.Literals.FACILITY_TYPE_ATTR__DESCRIPTION, true);
 	}
@@ -222,26 +242,6 @@ public class FacilityTypeAttrImpl extends EntityIdentifiableImpl implements Faci
 	@Override
 	public void setAttrName(String newAttrName) {
 		eSet(FacilityPackage.Literals.FACILITY_TYPE_ATTR__ATTR_NAME, newAttrName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FacilityType getFacilityTypeId() {
-		return (FacilityType)eGet(FacilityPackage.Literals.FACILITY_TYPE_ATTR__FACILITY_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityTypeId(FacilityType newFacilityTypeId) {
-		eSet(FacilityPackage.Literals.FACILITY_TYPE_ATTR__FACILITY_TYPE_ID, newFacilityTypeId);
 	}
 
 } //FacilityTypeAttrImpl

@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentImpl#getWebSiteId <em>Web Site Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentImpl#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentImpl#getWebSiteContentTypeId <em>Web Site Content Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentImpl#getWebSite <em>Web Site</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentImpl#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentImpl#getWebSiteContentType <em>Web Site Content Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -156,8 +156,8 @@ public class WebSiteContentImpl extends EntityTypedImpl<WebSiteContentType> impl
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(WebsitePackage.Literals.WEB_SITE_CONTENT__CONTENT_ID, true);
+	public WebSite getWebSite() {
+		return (WebSite)eGet(WebsitePackage.Literals.WEB_SITE_CONTENT__WEB_SITE, true);
 	}
 
 	/**
@@ -166,8 +166,48 @@ public class WebSiteContentImpl extends EntityTypedImpl<WebSiteContentType> impl
 	 * @generated
 	 */
 	@Override
-	public void setContentId(Content newContentId) {
-		eSet(WebsitePackage.Literals.WEB_SITE_CONTENT__CONTENT_ID, newContentId);
+	public void setWebSite(WebSite newWebSite) {
+		eSet(WebsitePackage.Literals.WEB_SITE_CONTENT__WEB_SITE, newWebSite);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Content getContent() {
+		return (Content)eGet(WebsitePackage.Literals.WEB_SITE_CONTENT__CONTENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContent(Content newContent) {
+		eSet(WebsitePackage.Literals.WEB_SITE_CONTENT__CONTENT, newContent);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public WebSiteContentType getWebSiteContentType() {
+		return (WebSiteContentType)eGet(WebsitePackage.Literals.WEB_SITE_CONTENT__WEB_SITE_CONTENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWebSiteContentType(WebSiteContentType newWebSiteContentType) {
+		eSet(WebsitePackage.Literals.WEB_SITE_CONTENT__WEB_SITE_CONTENT_TYPE, newWebSiteContentType);
 	}
 
 	/**
@@ -246,46 +286,6 @@ public class WebSiteContentImpl extends EntityTypedImpl<WebSiteContentType> impl
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WebSiteContentType getWebSiteContentTypeId() {
-		return (WebSiteContentType)eGet(WebsitePackage.Literals.WEB_SITE_CONTENT__WEB_SITE_CONTENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWebSiteContentTypeId(WebSiteContentType newWebSiteContentTypeId) {
-		eSet(WebsitePackage.Literals.WEB_SITE_CONTENT__WEB_SITE_CONTENT_TYPE_ID, newWebSiteContentTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WebSite getWebSiteId() {
-		return (WebSite)eGet(WebsitePackage.Literals.WEB_SITE_CONTENT__WEB_SITE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWebSiteId(WebSite newWebSiteId) {
-		eSet(WebsitePackage.Literals.WEB_SITE_CONTENT__WEB_SITE_ID, newWebSiteId);
 	}
 
 } //WebSiteContentImpl

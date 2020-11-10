@@ -316,13 +316,13 @@ public interface SynchronizationPackage extends EPackage {
 	int ENTITY_SYNC_HISTORY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Entity Sync Id</b></em>' reference.
+	 * The feature id for the '<em><b>Entity Sync</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_SYNC_HISTORY__ENTITY_SYNC_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ENTITY_SYNC_HISTORY__ENTITY_SYNC = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Start Date</b></em>' attribute.
@@ -605,13 +605,13 @@ public interface SynchronizationPackage extends EPackage {
 	int ENTITY_SYNC_INCLUDE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Entity Sync Id</b></em>' reference.
+	 * The feature id for the '<em><b>Entity Sync</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_SYNC_INCLUDE__ENTITY_SYNC_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ENTITY_SYNC_INCLUDE__ENTITY_SYNC = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Entity Or Package</b></em>' attribute.
@@ -687,22 +687,22 @@ public interface SynchronizationPackage extends EPackage {
 	int ENTITY_SYNC_INCLUDE_GROUP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Entity Group Id</b></em>' reference.
+	 * The feature id for the '<em><b>Entity Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_SYNC_INCLUDE_GROUP__ENTITY_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ENTITY_SYNC_INCLUDE_GROUP__ENTITY_GROUP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Entity Sync Id</b></em>' reference.
+	 * The feature id for the '<em><b>Entity Sync</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_SYNC_INCLUDE_GROUP__ENTITY_SYNC_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int ENTITY_SYNC_INCLUDE_GROUP__ENTITY_SYNC = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Entity Sync Include Group</em>' class.
@@ -995,15 +995,15 @@ public interface SynchronizationPackage extends EPackage {
 	EClass getEntitySyncHistory();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncHistory#getEntitySyncId <em>Entity Sync Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncHistory#getEntitySync <em>Entity Sync</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Entity Sync Id</em>'.
-	 * @see org.abchip.mimo.biz.model.entity.synchronization.EntitySyncHistory#getEntitySyncId()
+	 * @return the meta object for the reference '<em>Entity Sync</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.synchronization.EntitySyncHistory#getEntitySync()
 	 * @see #getEntitySyncHistory()
 	 * @generated
 	 */
-	EReference getEntitySyncHistory_EntitySyncId();
+	EReference getEntitySyncHistory_EntitySync();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncHistory#getStartDate <em>Start Date</em>}'.
@@ -1291,15 +1291,15 @@ public interface SynchronizationPackage extends EPackage {
 	EClass getEntitySyncInclude();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncInclude#getEntitySyncId <em>Entity Sync Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncInclude#getEntitySync <em>Entity Sync</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Entity Sync Id</em>'.
-	 * @see org.abchip.mimo.biz.model.entity.synchronization.EntitySyncInclude#getEntitySyncId()
+	 * @return the meta object for the reference '<em>Entity Sync</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.synchronization.EntitySyncInclude#getEntitySync()
 	 * @see #getEntitySyncInclude()
 	 * @generated
 	 */
-	EReference getEntitySyncInclude_EntitySyncId();
+	EReference getEntitySyncInclude_EntitySync();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncInclude#getEntityOrPackage <em>Entity Or Package</em>}'.
@@ -1334,26 +1334,26 @@ public interface SynchronizationPackage extends EPackage {
 	EClass getEntitySyncIncludeGroup();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncIncludeGroup#getEntitySyncId <em>Entity Sync Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncIncludeGroup#getEntityGroup <em>Entity Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Entity Sync Id</em>'.
-	 * @see org.abchip.mimo.biz.model.entity.synchronization.EntitySyncIncludeGroup#getEntitySyncId()
+	 * @return the meta object for the reference '<em>Entity Group</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.synchronization.EntitySyncIncludeGroup#getEntityGroup()
 	 * @see #getEntitySyncIncludeGroup()
 	 * @generated
 	 */
-	EReference getEntitySyncIncludeGroup_EntitySyncId();
+	EReference getEntitySyncIncludeGroup_EntityGroup();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncIncludeGroup#getEntityGroupId <em>Entity Group Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncIncludeGroup#getEntitySync <em>Entity Sync</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Entity Group Id</em>'.
-	 * @see org.abchip.mimo.biz.model.entity.synchronization.EntitySyncIncludeGroup#getEntityGroupId()
+	 * @return the meta object for the reference '<em>Entity Sync</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.synchronization.EntitySyncIncludeGroup#getEntitySync()
 	 * @see #getEntitySyncIncludeGroup()
 	 * @generated
 	 */
-	EReference getEntitySyncIncludeGroup_EntityGroupId();
+	EReference getEntitySyncIncludeGroup_EntitySync();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncRemove <em>Entity Sync Remove</em>}'.
@@ -1566,12 +1566,12 @@ public interface SynchronizationPackage extends EPackage {
 		EClass ENTITY_SYNC_HISTORY = eINSTANCE.getEntitySyncHistory();
 
 		/**
-		 * The meta object literal for the '<em><b>Entity Sync Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Entity Sync</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ENTITY_SYNC_HISTORY__ENTITY_SYNC_ID = eINSTANCE.getEntitySyncHistory_EntitySyncId();
+		EReference ENTITY_SYNC_HISTORY__ENTITY_SYNC = eINSTANCE.getEntitySyncHistory_EntitySync();
 
 		/**
 		 * The meta object literal for the '<em><b>Start Date</b></em>' attribute feature.
@@ -1784,12 +1784,12 @@ public interface SynchronizationPackage extends EPackage {
 		EClass ENTITY_SYNC_INCLUDE = eINSTANCE.getEntitySyncInclude();
 
 		/**
-		 * The meta object literal for the '<em><b>Entity Sync Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Entity Sync</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ENTITY_SYNC_INCLUDE__ENTITY_SYNC_ID = eINSTANCE.getEntitySyncInclude_EntitySyncId();
+		EReference ENTITY_SYNC_INCLUDE__ENTITY_SYNC = eINSTANCE.getEntitySyncInclude_EntitySync();
 
 		/**
 		 * The meta object literal for the '<em><b>Entity Or Package</b></em>' attribute feature.
@@ -1818,20 +1818,20 @@ public interface SynchronizationPackage extends EPackage {
 		EClass ENTITY_SYNC_INCLUDE_GROUP = eINSTANCE.getEntitySyncIncludeGroup();
 
 		/**
-		 * The meta object literal for the '<em><b>Entity Sync Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Entity Group</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ENTITY_SYNC_INCLUDE_GROUP__ENTITY_SYNC_ID = eINSTANCE.getEntitySyncIncludeGroup_EntitySyncId();
+		EReference ENTITY_SYNC_INCLUDE_GROUP__ENTITY_GROUP = eINSTANCE.getEntitySyncIncludeGroup_EntityGroup();
 
 		/**
-		 * The meta object literal for the '<em><b>Entity Group Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Entity Sync</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ENTITY_SYNC_INCLUDE_GROUP__ENTITY_GROUP_ID = eINSTANCE.getEntitySyncIncludeGroup_EntityGroupId();
+		EReference ENTITY_SYNC_INCLUDE_GROUP__ENTITY_SYNC = eINSTANCE.getEntitySyncIncludeGroup_EntitySync();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncRemoveImpl <em>Entity Sync Remove</em>}' class.

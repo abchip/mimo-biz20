@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceTypeAttr#getInvoiceTypeId <em>Invoice Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceTypeAttr#getInvoiceType <em>Invoice Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceTypeAttr#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceTypeAttr#getDescription <em>Description</em>}</li>
  * </ul>
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface InvoiceTypeAttr extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Invoice Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Invoice Type</em>' reference.
+	 * @see #setInvoiceType(InvoiceType)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceTypeAttr_InvoiceType()
+	 * @model keys="invoiceTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	InvoiceType getInvoiceType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceTypeAttr#getInvoiceType <em>Invoice Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Invoice Type</em>' reference.
+	 * @see #getInvoiceType()
+	 * @generated
+	 */
+	void setInvoiceType(InvoiceType value);
+
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,32 +105,5 @@ public interface InvoiceTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setAttrName(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Invoice Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Invoice Type Id</em>' reference.
-	 * @see #setInvoiceTypeId(InvoiceType)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceTypeAttr_InvoiceTypeId()
-	 * @model keys="invoiceTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	InvoiceType getInvoiceTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceTypeAttr#getInvoiceTypeId <em>Invoice Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Invoice Type Id</em>' reference.
-	 * @see #getInvoiceTypeId()
-	 * @generated
-	 */
-	void setInvoiceTypeId(InvoiceType value);
 
 } // InvoiceTypeAttr

@@ -32,8 +32,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.bom.impl.ProductManufacturingRuleImpl#getRuleId <em>Rule Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.bom.impl.ProductManufacturingRuleImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.bom.impl.ProductManufacturingRuleImpl#getFromDate <em>From Date</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.manufacturing.bom.impl.ProductManufacturingRuleImpl#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.bom.impl.ProductManufacturingRuleImpl#getProductFeature <em>Product Feature</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.manufacturing.bom.impl.ProductManufacturingRuleImpl#getProductId <em>Product Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.bom.impl.ProductManufacturingRuleImpl#getProductIdFor <em>Product Id For</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.bom.impl.ProductManufacturingRuleImpl#getProductIdIn <em>Product Id In</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.bom.impl.ProductManufacturingRuleImpl#getProductIdInSubst <em>Product Id In Subst</em>}</li>
@@ -222,6 +222,26 @@ public class ProductManufacturingRuleImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(BomPackage.Literals.PRODUCT_MANUFACTURING_RULE__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(BomPackage.Literals.PRODUCT_MANUFACTURING_RULE__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public ProductFeature getProductFeature() {
 		return (ProductFeature)eGet(BomPackage.Literals.PRODUCT_MANUFACTURING_RULE__PRODUCT_FEATURE, true);
 	}
@@ -234,26 +254,6 @@ public class ProductManufacturingRuleImpl extends EntityIdentifiableImpl impleme
 	@Override
 	public void setProductFeature(ProductFeature newProductFeature) {
 		eSet(BomPackage.Literals.PRODUCT_MANUFACTURING_RULE__PRODUCT_FEATURE, newProductFeature);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(BomPackage.Literals.PRODUCT_MANUFACTURING_RULE__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(BomPackage.Literals.PRODUCT_MANUFACTURING_RULE__PRODUCT_ID, newProductId);
 	}
 
 	/**

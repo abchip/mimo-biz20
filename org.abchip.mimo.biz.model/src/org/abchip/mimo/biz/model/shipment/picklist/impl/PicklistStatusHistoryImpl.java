@@ -30,10 +30,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistStatusHistoryImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistStatusHistoryImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistStatusHistoryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistStatusHistoryImpl#getPicklistId <em>Picklist Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistStatusHistoryImpl#getPicklist <em>Picklist</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistStatusHistoryImpl#getChangeDate <em>Change Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistStatusHistoryImpl#getChangeUserLoginId <em>Change User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistStatusHistoryImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistStatusHistoryImpl#getChangeUserLogin <em>Change User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistStatusHistoryImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistStatusHistoryImpl#getStatusIdTo <em>Status Id To</em>}</li>
  * </ul>
  *
@@ -156,6 +156,26 @@ public class PicklistStatusHistoryImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
+	public Picklist getPicklist() {
+		return (Picklist)eGet(PicklistPackage.Literals.PICKLIST_STATUS_HISTORY__PICKLIST, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPicklist(Picklist newPicklist) {
+		eSet(PicklistPackage.Literals.PICKLIST_STATUS_HISTORY__PICKLIST, newPicklist);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getChangeDate() {
 		return (Date)eGet(PicklistPackage.Literals.PICKLIST_STATUS_HISTORY__CHANGE_DATE, true);
 	}
@@ -176,8 +196,8 @@ public class PicklistStatusHistoryImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public UserLogin getChangeUserLoginId() {
-		return (UserLogin)eGet(PicklistPackage.Literals.PICKLIST_STATUS_HISTORY__CHANGE_USER_LOGIN_ID, true);
+	public UserLogin getChangeUserLogin() {
+		return (UserLogin)eGet(PicklistPackage.Literals.PICKLIST_STATUS_HISTORY__CHANGE_USER_LOGIN, true);
 	}
 
 	/**
@@ -186,8 +206,8 @@ public class PicklistStatusHistoryImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setChangeUserLoginId(UserLogin newChangeUserLoginId) {
-		eSet(PicklistPackage.Literals.PICKLIST_STATUS_HISTORY__CHANGE_USER_LOGIN_ID, newChangeUserLoginId);
+	public void setChangeUserLogin(UserLogin newChangeUserLogin) {
+		eSet(PicklistPackage.Literals.PICKLIST_STATUS_HISTORY__CHANGE_USER_LOGIN, newChangeUserLogin);
 	}
 
 	/**
@@ -196,8 +216,8 @@ public class PicklistStatusHistoryImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public Picklist getPicklistId() {
-		return (Picklist)eGet(PicklistPackage.Literals.PICKLIST_STATUS_HISTORY__PICKLIST_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(PicklistPackage.Literals.PICKLIST_STATUS_HISTORY__STATUS, true);
 	}
 
 	/**
@@ -206,28 +226,8 @@ public class PicklistStatusHistoryImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setPicklistId(Picklist newPicklistId) {
-		eSet(PicklistPackage.Literals.PICKLIST_STATUS_HISTORY__PICKLIST_ID, newPicklistId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(PicklistPackage.Literals.PICKLIST_STATUS_HISTORY__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(PicklistPackage.Literals.PICKLIST_STATUS_HISTORY__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(PicklistPackage.Literals.PICKLIST_STATUS_HISTORY__STATUS, newStatus);
 	}
 
 	/**

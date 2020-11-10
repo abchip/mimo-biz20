@@ -46,31 +46,31 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getClosedDateTime <em>Closed Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCreatedDate <em>Created Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCustRequestAttributes <em>Cust Request Attributes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCustRequestCategoryId <em>Cust Request Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCustRequestCategory <em>Cust Request Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCustRequestCommEvents <em>Cust Request Comm Events</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCustRequestContents <em>Cust Request Contents</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCustRequestDate <em>Cust Request Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCustRequestItems <em>Cust Request Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCustRequestName <em>Cust Request Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCustRequestNotes <em>Cust Request Notes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCustRequestTypeId <em>Cust Request Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCustRequestType <em>Cust Request Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCustRequestWorkEfforts <em>Cust Request Work Efforts</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getFromPartyId <em>From Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getFulfillContactMechId <em>Fulfill Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getFromParty <em>From Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getFulfillContactMech <em>Fulfill Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getInternalComment <em>Internal Comment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getMaximumAmountUomId <em>Maximum Amount Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getMaximumAmountUom <em>Maximum Amount Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getOpenDateTime <em>Open Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getPriority <em>Priority</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getReason <em>Reason</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getResponseRequiredDate <em>Response Required Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getSalesChannelEnumId <em>Sales Channel Enum Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getSalesChannelEnum <em>Sales Channel Enum</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @generated
@@ -252,8 +252,8 @@ public class CustRequestImpl extends EntityTypedImpl<CustRequestType> implements
 	 * @generated
 	 */
 	@Override
-	public Uom getCurrencyUomId() {
-		return (Uom)eGet(RequestPackage.Literals.CUST_REQUEST__CURRENCY_UOM_ID, true);
+	public Uom getCurrencyUom() {
+		return (Uom)eGet(RequestPackage.Literals.CUST_REQUEST__CURRENCY_UOM, true);
 	}
 
 	/**
@@ -262,8 +262,8 @@ public class CustRequestImpl extends EntityTypedImpl<CustRequestType> implements
 	 * @generated
 	 */
 	@Override
-	public void setCurrencyUomId(Uom newCurrencyUomId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST__CURRENCY_UOM_ID, newCurrencyUomId);
+	public void setCurrencyUom(Uom newCurrencyUom) {
+		eSet(RequestPackage.Literals.CUST_REQUEST__CURRENCY_UOM, newCurrencyUom);
 	}
 
 	/**
@@ -283,8 +283,8 @@ public class CustRequestImpl extends EntityTypedImpl<CustRequestType> implements
 	 * @generated
 	 */
 	@Override
-	public CustRequestCategory getCustRequestCategoryId() {
-		return (CustRequestCategory)eGet(RequestPackage.Literals.CUST_REQUEST__CUST_REQUEST_CATEGORY_ID, true);
+	public CustRequestCategory getCustRequestCategory() {
+		return (CustRequestCategory)eGet(RequestPackage.Literals.CUST_REQUEST__CUST_REQUEST_CATEGORY, true);
 	}
 
 	/**
@@ -293,8 +293,8 @@ public class CustRequestImpl extends EntityTypedImpl<CustRequestType> implements
 	 * @generated
 	 */
 	@Override
-	public void setCustRequestCategoryId(CustRequestCategory newCustRequestCategoryId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST__CUST_REQUEST_CATEGORY_ID, newCustRequestCategoryId);
+	public void setCustRequestCategory(CustRequestCategory newCustRequestCategory) {
+		eSet(RequestPackage.Literals.CUST_REQUEST__CUST_REQUEST_CATEGORY, newCustRequestCategory);
 	}
 
 	/**
@@ -407,8 +407,8 @@ public class CustRequestImpl extends EntityTypedImpl<CustRequestType> implements
 	 * @generated
 	 */
 	@Override
-	public CustRequestType getCustRequestTypeId() {
-		return (CustRequestType)eGet(RequestPackage.Literals.CUST_REQUEST__CUST_REQUEST_TYPE_ID, true);
+	public CustRequestType getCustRequestType() {
+		return (CustRequestType)eGet(RequestPackage.Literals.CUST_REQUEST__CUST_REQUEST_TYPE, true);
 	}
 
 	/**
@@ -417,8 +417,8 @@ public class CustRequestImpl extends EntityTypedImpl<CustRequestType> implements
 	 * @generated
 	 */
 	@Override
-	public void setCustRequestTypeId(CustRequestType newCustRequestTypeId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST__CUST_REQUEST_TYPE_ID, newCustRequestTypeId);
+	public void setCustRequestType(CustRequestType newCustRequestType) {
+		eSet(RequestPackage.Literals.CUST_REQUEST__CUST_REQUEST_TYPE, newCustRequestType);
 	}
 
 	/**
@@ -458,8 +458,8 @@ public class CustRequestImpl extends EntityTypedImpl<CustRequestType> implements
 	 * @generated
 	 */
 	@Override
-	public Party getFromPartyId() {
-		return (Party)eGet(RequestPackage.Literals.CUST_REQUEST__FROM_PARTY_ID, true);
+	public Party getFromParty() {
+		return (Party)eGet(RequestPackage.Literals.CUST_REQUEST__FROM_PARTY, true);
 	}
 
 	/**
@@ -468,8 +468,8 @@ public class CustRequestImpl extends EntityTypedImpl<CustRequestType> implements
 	 * @generated
 	 */
 	@Override
-	public void setFromPartyId(Party newFromPartyId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST__FROM_PARTY_ID, newFromPartyId);
+	public void setFromParty(Party newFromParty) {
+		eSet(RequestPackage.Literals.CUST_REQUEST__FROM_PARTY, newFromParty);
 	}
 
 	/**
@@ -478,8 +478,8 @@ public class CustRequestImpl extends EntityTypedImpl<CustRequestType> implements
 	 * @generated
 	 */
 	@Override
-	public ContactMech getFulfillContactMechId() {
-		return (ContactMech)eGet(RequestPackage.Literals.CUST_REQUEST__FULFILL_CONTACT_MECH_ID, true);
+	public ContactMech getFulfillContactMech() {
+		return (ContactMech)eGet(RequestPackage.Literals.CUST_REQUEST__FULFILL_CONTACT_MECH, true);
 	}
 
 	/**
@@ -488,8 +488,8 @@ public class CustRequestImpl extends EntityTypedImpl<CustRequestType> implements
 	 * @generated
 	 */
 	@Override
-	public void setFulfillContactMechId(ContactMech newFulfillContactMechId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST__FULFILL_CONTACT_MECH_ID, newFulfillContactMechId);
+	public void setFulfillContactMech(ContactMech newFulfillContactMech) {
+		eSet(RequestPackage.Literals.CUST_REQUEST__FULFILL_CONTACT_MECH, newFulfillContactMech);
 	}
 
 	/**
@@ -558,8 +558,8 @@ public class CustRequestImpl extends EntityTypedImpl<CustRequestType> implements
 	 * @generated
 	 */
 	@Override
-	public Uom getMaximumAmountUomId() {
-		return (Uom)eGet(RequestPackage.Literals.CUST_REQUEST__MAXIMUM_AMOUNT_UOM_ID, true);
+	public Uom getMaximumAmountUom() {
+		return (Uom)eGet(RequestPackage.Literals.CUST_REQUEST__MAXIMUM_AMOUNT_UOM, true);
 	}
 
 	/**
@@ -568,8 +568,8 @@ public class CustRequestImpl extends EntityTypedImpl<CustRequestType> implements
 	 * @generated
 	 */
 	@Override
-	public void setMaximumAmountUomId(Uom newMaximumAmountUomId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST__MAXIMUM_AMOUNT_UOM_ID, newMaximumAmountUomId);
+	public void setMaximumAmountUom(Uom newMaximumAmountUom) {
+		eSet(RequestPackage.Literals.CUST_REQUEST__MAXIMUM_AMOUNT_UOM, newMaximumAmountUom);
 	}
 
 	/**
@@ -618,8 +618,8 @@ public class CustRequestImpl extends EntityTypedImpl<CustRequestType> implements
 	 * @generated
 	 */
 	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(RequestPackage.Literals.CUST_REQUEST__PRODUCT_STORE_ID, true);
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(RequestPackage.Literals.CUST_REQUEST__PRODUCT_STORE, true);
 	}
 
 	/**
@@ -628,8 +628,8 @@ public class CustRequestImpl extends EntityTypedImpl<CustRequestType> implements
 	 * @generated
 	 */
 	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST__PRODUCT_STORE_ID, newProductStoreId);
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(RequestPackage.Literals.CUST_REQUEST__PRODUCT_STORE, newProductStore);
 	}
 
 	/**
@@ -678,8 +678,8 @@ public class CustRequestImpl extends EntityTypedImpl<CustRequestType> implements
 	 * @generated
 	 */
 	@Override
-	public Enumeration getSalesChannelEnumId() {
-		return (Enumeration)eGet(RequestPackage.Literals.CUST_REQUEST__SALES_CHANNEL_ENUM_ID, true);
+	public Enumeration getSalesChannelEnum() {
+		return (Enumeration)eGet(RequestPackage.Literals.CUST_REQUEST__SALES_CHANNEL_ENUM, true);
 	}
 
 	/**
@@ -688,8 +688,8 @@ public class CustRequestImpl extends EntityTypedImpl<CustRequestType> implements
 	 * @generated
 	 */
 	@Override
-	public void setSalesChannelEnumId(Enumeration newSalesChannelEnumId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST__SALES_CHANNEL_ENUM_ID, newSalesChannelEnumId);
+	public void setSalesChannelEnum(Enumeration newSalesChannelEnum) {
+		eSet(RequestPackage.Literals.CUST_REQUEST__SALES_CHANNEL_ENUM, newSalesChannelEnum);
 	}
 
 	/**
@@ -698,8 +698,8 @@ public class CustRequestImpl extends EntityTypedImpl<CustRequestType> implements
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(RequestPackage.Literals.CUST_REQUEST__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(RequestPackage.Literals.CUST_REQUEST__STATUS, true);
 	}
 
 	/**
@@ -708,8 +708,8 @@ public class CustRequestImpl extends EntityTypedImpl<CustRequestType> implements
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(RequestPackage.Literals.CUST_REQUEST__STATUS, newStatus);
 	}
 
 	/**

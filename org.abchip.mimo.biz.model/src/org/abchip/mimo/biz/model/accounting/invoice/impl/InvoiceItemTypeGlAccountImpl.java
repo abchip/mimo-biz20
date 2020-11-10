@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeGlAccountImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeGlAccountImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeGlAccountImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeGlAccountImpl#getInvoiceItemTypeId <em>Invoice Item Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeGlAccountImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeGlAccountImpl#getGlAccountId <em>Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeGlAccountImpl#getInvoiceItemType <em>Invoice Item Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeGlAccountImpl#getOrganizationParty <em>Organization Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeGlAccountImpl#getGlAccount <em>Gl Account</em>}</li>
  * </ul>
  *
  * @generated
@@ -153,8 +153,8 @@ public class InvoiceItemTypeGlAccountImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public GlAccount getGlAccountId() {
-		return (GlAccount)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_GL_ACCOUNT__GL_ACCOUNT_ID, true);
+	public InvoiceItemType getInvoiceItemType() {
+		return (InvoiceItemType)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_GL_ACCOUNT__INVOICE_ITEM_TYPE, true);
 	}
 
 	/**
@@ -163,8 +163,48 @@ public class InvoiceItemTypeGlAccountImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void setGlAccountId(GlAccount newGlAccountId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_GL_ACCOUNT__GL_ACCOUNT_ID, newGlAccountId);
+	public void setInvoiceItemType(InvoiceItemType newInvoiceItemType) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_GL_ACCOUNT__INVOICE_ITEM_TYPE, newInvoiceItemType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getOrganizationParty() {
+		return (Party)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrganizationParty(Party newOrganizationParty) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY, newOrganizationParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GlAccount getGlAccount() {
+		return (GlAccount)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_GL_ACCOUNT__GL_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGlAccount(GlAccount newGlAccount) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_GL_ACCOUNT__GL_ACCOUNT, newGlAccount);
 	}
 
 	/**
@@ -203,46 +243,6 @@ public class InvoiceItemTypeGlAccountImpl extends EntityIdentifiableImpl impleme
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getOrganizationPartyId() {
-		return (Party)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrganizationPartyId(Party newOrganizationPartyId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY_ID, newOrganizationPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InvoiceItemType getInvoiceItemTypeId() {
-		return (InvoiceItemType)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_GL_ACCOUNT__INVOICE_ITEM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInvoiceItemTypeId(InvoiceItemType newInvoiceItemTypeId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM_TYPE_GL_ACCOUNT__INVOICE_ITEM_TYPE_ID, newInvoiceItemTypeId);
 	}
 
 } //InvoiceItemTypeGlAccountImpl

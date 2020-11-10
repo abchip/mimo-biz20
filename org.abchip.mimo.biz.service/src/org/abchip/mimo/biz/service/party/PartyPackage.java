@@ -93,24 +93,6 @@ public interface PartyPackage extends EPackage {
 	int CREATE_PARTY_CONTACT_MECH = 0;
 
 	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_PARTY_CONTACT_MECH__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_PARTY_CONTACT_MECH__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -120,13 +102,13 @@ public interface PartyPackage extends EPackage {
 	int CREATE_PARTY_CONTACT_MECH__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_PARTY_CONTACT_MECH__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
+	int CREATE_PARTY_CONTACT_MECH__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Allow Solicitation</b></em>' attribute.
@@ -321,24 +303,6 @@ public interface PartyPackage extends EPackage {
 	int CREATE_PARTY_CONTACT_MECH_PURPOSE = 2;
 
 	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_PARTY_CONTACT_MECH_PURPOSE__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_PARTY_CONTACT_MECH_PURPOSE__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -348,13 +312,13 @@ public interface PartyPackage extends EPackage {
 	int CREATE_PARTY_CONTACT_MECH_PURPOSE__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_PARTY_CONTACT_MECH_PURPOSE__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
+	int CREATE_PARTY_CONTACT_MECH_PURPOSE__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Contact Mech Id</b></em>' attribute.
@@ -448,24 +412,6 @@ public interface PartyPackage extends EPackage {
 	int CREATE_PARTY_CONTACT_MECH_PURPOSE_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GET_PARTY_DEFAULT__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GET_PARTY_DEFAULT__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -475,13 +421,13 @@ public interface PartyPackage extends EPackage {
 	int GET_PARTY_DEFAULT__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GET_PARTY_DEFAULT__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
+	int GET_PARTY_DEFAULT__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The number of structural features of the '<em>Get Party Default</em>' class.

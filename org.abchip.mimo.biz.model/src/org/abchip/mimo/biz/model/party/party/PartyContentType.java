@@ -21,7 +21,7 @@ import org.abchip.mimo.entity.EntityType;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyContentType#getPartyContentTypeId <em>Party Content Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyContentType#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyContentType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyContentType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyContentType()
@@ -56,30 +56,26 @@ public interface PartyContentType extends EntityType<PartyContent>, EntityInfo {
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(PartyContentType)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyContentType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(PartyContentType)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyContentType_ParentType()
 	 * @model keys="partyContentTypeId"
 	 * @generated
 	 */
-	PartyContentType getParentTypeId();
+	PartyContentType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyContentType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyContentType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(PartyContentType value);
+	void setParentType(PartyContentType value);
 
 	/**
 	 * Returns the value of the '<em><b>Party Content Type Id</b></em>' attribute.

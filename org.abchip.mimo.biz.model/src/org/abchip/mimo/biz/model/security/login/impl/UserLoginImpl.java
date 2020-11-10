@@ -38,7 +38,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getLastCurrencyUom <em>Last Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getLastLocale <em>Last Locale</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getLastTimeZone <em>Last Time Zone</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getPasswordHint <em>Password Hint</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#isRequirePasswordChange <em>Require Password Change</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getSuccessiveFailedLogins <em>Successive Failed Logins</em>}</li>
@@ -296,8 +296,8 @@ public class UserLoginImpl extends UserProfileImpl implements UserLogin {
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(LoginPackage.Literals.USER_LOGIN__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(LoginPackage.Literals.USER_LOGIN__PARTY, true);
 	}
 
 	/**
@@ -306,8 +306,8 @@ public class UserLoginImpl extends UserProfileImpl implements UserLogin {
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(LoginPackage.Literals.USER_LOGIN__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(LoginPackage.Literals.USER_LOGIN__PARTY, newParty);
 	}
 
 	/**

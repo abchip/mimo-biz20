@@ -190,13 +190,13 @@ public interface UserPackage extends EPackage {
 	int USER_PREFERENCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>User Login Id</b></em>' reference.
+	 * The feature id for the '<em><b>User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_PREFERENCE__USER_LOGIN_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int USER_PREFERENCE__USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>User Pref Type Id</b></em>' attribute.
@@ -217,13 +217,13 @@ public interface UserPackage extends EPackage {
 	int USER_PREFERENCE__USER_PREF_DATA_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>User Pref Group Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>User Pref Group Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_PREFERENCE__USER_PREF_GROUP_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int USER_PREFERENCE__USER_PREF_GROUP_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>User Pref Value</b></em>' attribute.
@@ -287,15 +287,15 @@ public interface UserPackage extends EPackage {
 	EClass getUserPreference();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.user.UserPreference#getUserLoginId <em>User Login Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.user.UserPreference#getUserLogin <em>User Login</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>User Login Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.user.UserPreference#getUserLoginId()
+	 * @return the meta object for the reference '<em>User Login</em>'.
+	 * @see org.abchip.mimo.biz.model.common.user.UserPreference#getUserLogin()
 	 * @see #getUserPreference()
 	 * @generated
 	 */
-	EReference getUserPreference_UserLoginId();
+	EReference getUserPreference_UserLogin();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.user.UserPreference#getUserPrefTypeId <em>User Pref Type Id</em>}'.
@@ -320,15 +320,15 @@ public interface UserPackage extends EPackage {
 	EAttribute getUserPreference_UserPrefDataType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.user.UserPreference#getUserPrefGroupTypeId <em>User Pref Group Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.user.UserPreference#getUserPrefGroupType <em>User Pref Group Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>User Pref Group Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.user.UserPreference#getUserPrefGroupTypeId()
+	 * @return the meta object for the reference '<em>User Pref Group Type</em>'.
+	 * @see org.abchip.mimo.biz.model.common.user.UserPreference#getUserPrefGroupType()
 	 * @see #getUserPreference()
 	 * @generated
 	 */
-	EReference getUserPreference_UserPrefGroupTypeId();
+	EReference getUserPreference_UserPrefGroupType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.user.UserPreference#getUserPrefValue <em>User Pref Value</em>}'.
@@ -400,12 +400,12 @@ public interface UserPackage extends EPackage {
 		EClass USER_PREFERENCE = eINSTANCE.getUserPreference();
 
 		/**
-		 * The meta object literal for the '<em><b>User Login Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>User Login</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference USER_PREFERENCE__USER_LOGIN_ID = eINSTANCE.getUserPreference_UserLoginId();
+		EReference USER_PREFERENCE__USER_LOGIN = eINSTANCE.getUserPreference_UserLogin();
 
 		/**
 		 * The meta object literal for the '<em><b>User Pref Type Id</b></em>' attribute feature.
@@ -424,12 +424,12 @@ public interface UserPackage extends EPackage {
 		EAttribute USER_PREFERENCE__USER_PREF_DATA_TYPE = eINSTANCE.getUserPreference_UserPrefDataType();
 
 		/**
-		 * The meta object literal for the '<em><b>User Pref Group Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>User Pref Group Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference USER_PREFERENCE__USER_PREF_GROUP_TYPE_ID = eINSTANCE.getUserPreference_UserPrefGroupTypeId();
+		EReference USER_PREFERENCE__USER_PREF_GROUP_TYPE = eINSTANCE.getUserPreference_UserPrefGroupType();
 
 		/**
 		 * The meta object literal for the '<em><b>User Pref Value</b></em>' attribute feature.

@@ -29,7 +29,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyInvitation#getPartyIdFrom <em>Party Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyInvitation#getPartyInvitationGroupAssocs <em>Party Invitation Group Assocs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyInvitation#getPartyInvitationRoleAssocs <em>Party Invitation Role Assocs</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyInvitation#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyInvitation#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyInvitation#getToName <em>To Name</em>}</li>
  * </ul>
  *
@@ -117,32 +117,6 @@ public interface PartyInvitation extends EntityIdentifiable, EntityInfo {
 	void setPartyId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyInvitation_StatusId()
-	 * @model keys="statusId"
-	 * @generated
-	 */
-	StatusItem getStatusId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyInvitation#getStatusId <em>Status Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
-	 * @generated
-	 */
-	void setStatusId(StatusItem value);
-
-	/**
 	 * Returns the value of the '<em><b>To Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -225,6 +199,28 @@ public interface PartyInvitation extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	List<PartyInvitationRoleAssoc> getPartyInvitationRoleAssocs();
+
+	/**
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyInvitation_Status()
+	 * @model keys="statusId"
+	 * @generated
+	 */
+	StatusItem getStatus();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyInvitation#getStatus <em>Status</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
+	 * @generated
+	 */
+	void setStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Party Invitation Id</b></em>' attribute.

@@ -12,51 +12,51 @@
       xsi:type="biz-party:Person"
       partyId="EdiIntermediate"
       firstName="Intermediate Agent">
-    <partyTypeId
+    <partyType
         href="seed-initial.xmi#PERSON"/>
-    <preferredCurrencyUomId
+    <preferredCurrencyUom
         href="seed-initial.xmi#EUR"/>
-    <statusId
+    <status
         href="seed-initial.xmi#PARTY_ENABLED"/>
   </contents>
   <contents
       xsi:type="biz-party:PartyRole"
-      partyId="EdiIntermediate">
-    <roleTypeId
+      party="EdiIntermediate">
+    <roleType
         href="seed-initial.xmi#AGENT"/>
   </contents>
   <contents
       xsi:type="biz-party:Person"
       partyId="EdiSender"
       firstName="Sender Agent">
-    <partyTypeId
+    <partyType
         href="seed-initial.xmi#PERSON"/>
-    <preferredCurrencyUomId
+    <preferredCurrencyUom
         href="seed-initial.xmi#EUR"/>
-    <statusId
+    <status
         href="seed-initial.xmi#PARTY_ENABLED"/>
   </contents>
   <contents
       xsi:type="biz-party:PartyRole"
-      partyId="EdiSender">
-    <roleTypeId
+      party="EdiSender">
+    <roleType
         href="seed-initial.xmi#AGENT"/>
   </contents>
   <contents
       xsi:type="biz-party:Person"
       partyId="EdiReceiver"
       firstName="Receiver Agent">
-    <partyTypeId
+    <partyType
         href="seed-initial.xmi#PERSON"/>
-    <preferredCurrencyUomId
+    <preferredCurrencyUom
         href="seed-initial.xmi#EUR"/>
-    <statusId
+    <status
         href="seed-initial.xmi#PARTY_ENABLED"/>
   </contents>
   <contents
       xsi:type="biz-party:PartyRole"
-      partyId="EdiReceiver">
-    <roleTypeId
+      party="EdiReceiver">
+    <roleType
         href="seed-initial.xmi#AGENT"/>
   </contents>
   <contents

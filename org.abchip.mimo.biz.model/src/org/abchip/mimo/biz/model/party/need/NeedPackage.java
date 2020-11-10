@@ -190,22 +190,22 @@ public interface NeedPackage extends EPackage {
 	int PARTY_NEED__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int PARTY_NEED__PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__ROLE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int PARTY_NEED__ROLE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Party Need Id</b></em>' attribute.
@@ -217,13 +217,13 @@ public interface NeedPackage extends EPackage {
 	int PARTY_NEED__PARTY_NEED_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Communication Event Id</b></em>' reference.
+	 * The feature id for the '<em><b>Communication Event</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__COMMUNICATION_EVENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int PARTY_NEED__COMMUNICATION_EVENT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Datetime Recorded</b></em>' attribute.
@@ -244,40 +244,40 @@ public interface NeedPackage extends EPackage {
 	int PARTY_NEED__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Need Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Need Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__NEED_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int PARTY_NEED__NEED_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Party Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__PARTY_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
+	int PARTY_NEED__PARTY_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
-	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
+	int PARTY_NEED__PRODUCT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
+	int PARTY_NEED__PRODUCT_CATEGORY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Visit Id</b></em>' attribute.
@@ -341,6 +341,28 @@ public interface NeedPackage extends EPackage {
 	EClass getPartyNeed();
 
 	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.need.PartyNeed#getParty <em>Party</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.party.need.PartyNeed#getParty()
+	 * @see #getPartyNeed()
+	 * @generated
+	 */
+	EReference getPartyNeed_Party();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.need.PartyNeed#getRoleType <em>Role Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Role Type</em>'.
+	 * @see org.abchip.mimo.biz.model.party.need.PartyNeed#getRoleType()
+	 * @see #getPartyNeed()
+	 * @generated
+	 */
+	EReference getPartyNeed_RoleType();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.need.PartyNeed#getPartyNeedId <em>Party Need Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -352,37 +374,15 @@ public interface NeedPackage extends EPackage {
 	EAttribute getPartyNeed_PartyNeedId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.need.PartyNeed#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.need.PartyNeed#getCommunicationEvent <em>Communication Event</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.need.PartyNeed#getPartyId()
+	 * @return the meta object for the reference '<em>Communication Event</em>'.
+	 * @see org.abchip.mimo.biz.model.party.need.PartyNeed#getCommunicationEvent()
 	 * @see #getPartyNeed()
 	 * @generated
 	 */
-	EReference getPartyNeed_PartyId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.need.PartyNeed#getRoleTypeId <em>Role Type Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Role Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.need.PartyNeed#getRoleTypeId()
-	 * @see #getPartyNeed()
-	 * @generated
-	 */
-	EReference getPartyNeed_RoleTypeId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.need.PartyNeed#getCommunicationEventId <em>Communication Event Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Communication Event Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.need.PartyNeed#getCommunicationEventId()
-	 * @see #getPartyNeed()
-	 * @generated
-	 */
-	EReference getPartyNeed_CommunicationEventId();
+	EReference getPartyNeed_CommunicationEvent();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.need.PartyNeed#getDatetimeRecorded <em>Datetime Recorded</em>}'.
@@ -407,48 +407,48 @@ public interface NeedPackage extends EPackage {
 	EAttribute getPartyNeed_Description();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.need.PartyNeed#getNeedTypeId <em>Need Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.need.PartyNeed#getNeedType <em>Need Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Need Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.need.PartyNeed#getNeedTypeId()
+	 * @return the meta object for the reference '<em>Need Type</em>'.
+	 * @see org.abchip.mimo.biz.model.party.need.PartyNeed#getNeedType()
 	 * @see #getPartyNeed()
 	 * @generated
 	 */
-	EReference getPartyNeed_NeedTypeId();
+	EReference getPartyNeed_NeedType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.need.PartyNeed#getPartyTypeId <em>Party Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.need.PartyNeed#getPartyType <em>Party Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.need.PartyNeed#getPartyTypeId()
+	 * @return the meta object for the reference '<em>Party Type</em>'.
+	 * @see org.abchip.mimo.biz.model.party.need.PartyNeed#getPartyType()
 	 * @see #getPartyNeed()
 	 * @generated
 	 */
-	EReference getPartyNeed_PartyTypeId();
+	EReference getPartyNeed_PartyType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.need.PartyNeed#getProductCategoryId <em>Product Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.need.PartyNeed#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.need.PartyNeed#getProductCategoryId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.party.need.PartyNeed#getProduct()
 	 * @see #getPartyNeed()
 	 * @generated
 	 */
-	EReference getPartyNeed_ProductCategoryId();
+	EReference getPartyNeed_Product();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.need.PartyNeed#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.need.PartyNeed#getProductCategory <em>Product Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.need.PartyNeed#getProductId()
+	 * @return the meta object for the reference '<em>Product Category</em>'.
+	 * @see org.abchip.mimo.biz.model.party.need.PartyNeed#getProductCategory()
 	 * @see #getPartyNeed()
 	 * @generated
 	 */
-	EReference getPartyNeed_ProductId();
+	EReference getPartyNeed_ProductCategory();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.need.PartyNeed#getVisitId <em>Visit Id</em>}'.
@@ -520,6 +520,22 @@ public interface NeedPackage extends EPackage {
 		EClass PARTY_NEED = eINSTANCE.getPartyNeed();
 
 		/**
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARTY_NEED__PARTY = eINSTANCE.getPartyNeed_Party();
+
+		/**
+		 * The meta object literal for the '<em><b>Role Type</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARTY_NEED__ROLE_TYPE = eINSTANCE.getPartyNeed_RoleType();
+
+		/**
 		 * The meta object literal for the '<em><b>Party Need Id</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -528,28 +544,12 @@ public interface NeedPackage extends EPackage {
 		EAttribute PARTY_NEED__PARTY_NEED_ID = eINSTANCE.getPartyNeed_PartyNeedId();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Communication Event</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PARTY_NEED__PARTY_ID = eINSTANCE.getPartyNeed_PartyId();
-
-		/**
-		 * The meta object literal for the '<em><b>Role Type Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PARTY_NEED__ROLE_TYPE_ID = eINSTANCE.getPartyNeed_RoleTypeId();
-
-		/**
-		 * The meta object literal for the '<em><b>Communication Event Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PARTY_NEED__COMMUNICATION_EVENT_ID = eINSTANCE.getPartyNeed_CommunicationEventId();
+		EReference PARTY_NEED__COMMUNICATION_EVENT = eINSTANCE.getPartyNeed_CommunicationEvent();
 
 		/**
 		 * The meta object literal for the '<em><b>Datetime Recorded</b></em>' attribute feature.
@@ -568,36 +568,36 @@ public interface NeedPackage extends EPackage {
 		EAttribute PARTY_NEED__DESCRIPTION = eINSTANCE.getPartyNeed_Description();
 
 		/**
-		 * The meta object literal for the '<em><b>Need Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Need Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PARTY_NEED__NEED_TYPE_ID = eINSTANCE.getPartyNeed_NeedTypeId();
+		EReference PARTY_NEED__NEED_TYPE = eINSTANCE.getPartyNeed_NeedType();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PARTY_NEED__PARTY_TYPE_ID = eINSTANCE.getPartyNeed_PartyTypeId();
+		EReference PARTY_NEED__PARTY_TYPE = eINSTANCE.getPartyNeed_PartyType();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PARTY_NEED__PRODUCT_CATEGORY_ID = eINSTANCE.getPartyNeed_ProductCategoryId();
+		EReference PARTY_NEED__PRODUCT = eINSTANCE.getPartyNeed_Product();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PARTY_NEED__PRODUCT_ID = eINSTANCE.getPartyNeed_ProductId();
+		EReference PARTY_NEED__PRODUCT_CATEGORY = eINSTANCE.getPartyNeed_ProductCategory();
 
 		/**
 		 * The meta object literal for the '<em><b>Visit Id</b></em>' attribute feature.

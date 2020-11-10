@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContentImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContentImpl#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContentImpl#getWorkEffortContentTypeId <em>Work Effort Content Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContentImpl#getWorkEffort <em>Work Effort</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContentImpl#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContentImpl#getWorkEffortContentType <em>Work Effort Content Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContentImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContentImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -156,8 +156,8 @@ public class WorkEffortContentImpl extends EntityTypedImpl<WorkEffortContentType
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(WorkeffortPackage.Literals.WORK_EFFORT_CONTENT__CONTENT_ID, true);
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_CONTENT__WORK_EFFORT, true);
 	}
 
 	/**
@@ -166,8 +166,48 @@ public class WorkEffortContentImpl extends EntityTypedImpl<WorkEffortContentType
 	 * @generated
 	 */
 	@Override
-	public void setContentId(Content newContentId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_CONTENT__CONTENT_ID, newContentId);
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_CONTENT__WORK_EFFORT, newWorkEffort);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Content getContent() {
+		return (Content)eGet(WorkeffortPackage.Literals.WORK_EFFORT_CONTENT__CONTENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContent(Content newContent) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_CONTENT__CONTENT, newContent);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public WorkEffortContentType getWorkEffortContentType() {
+		return (WorkEffortContentType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_CONTENT__WORK_EFFORT_CONTENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWorkEffortContentType(WorkEffortContentType newWorkEffortContentType) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_CONTENT__WORK_EFFORT_CONTENT_TYPE, newWorkEffortContentType);
 	}
 
 	/**
@@ -246,46 +286,6 @@ public class WorkEffortContentImpl extends EntityTypedImpl<WorkEffortContentType
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffortContentType getWorkEffortContentTypeId() {
-		return (WorkEffortContentType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_CONTENT__WORK_EFFORT_CONTENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortContentTypeId(WorkEffortContentType newWorkEffortContentTypeId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_CONTENT__WORK_EFFORT_CONTENT_TYPE_ID, newWorkEffortContentTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_CONTENT__WORK_EFFORT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_CONTENT__WORK_EFFORT_ID, newWorkEffortId);
 	}
 
 } //WorkEffortContentImpl

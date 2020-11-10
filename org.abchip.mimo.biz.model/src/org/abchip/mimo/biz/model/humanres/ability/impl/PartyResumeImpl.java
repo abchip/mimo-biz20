@@ -30,8 +30,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyResumeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyResumeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyResumeImpl#getResumeId <em>Resume Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyResumeImpl#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyResumeImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyResumeImpl#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyResumeImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyResumeImpl#getResumeDate <em>Resume Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartyResumeImpl#getResumeText <em>Resume Text</em>}</li>
  * </ul>
@@ -155,46 +155,6 @@ public class PartyResumeImpl extends EntityIdentifiableImpl implements PartyResu
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(AbilityPackage.Literals.PARTY_RESUME__CONTENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContentId(Content newContentId) {
-		eSet(AbilityPackage.Literals.PARTY_RESUME__CONTENT_ID, newContentId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(AbilityPackage.Literals.PARTY_RESUME__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(AbilityPackage.Literals.PARTY_RESUME__PARTY_ID, newPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Date getResumeDate() {
 		return (Date)eGet(AbilityPackage.Literals.PARTY_RESUME__RESUME_DATE, true);
 	}
@@ -227,6 +187,46 @@ public class PartyResumeImpl extends EntityIdentifiableImpl implements PartyResu
 	@Override
 	public void setResumeId(String newResumeId) {
 		eSet(AbilityPackage.Literals.PARTY_RESUME__RESUME_ID, newResumeId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Content getContent() {
+		return (Content)eGet(AbilityPackage.Literals.PARTY_RESUME__CONTENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContent(Content newContent) {
+		eSet(AbilityPackage.Literals.PARTY_RESUME__CONTENT, newContent);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(AbilityPackage.Literals.PARTY_RESUME__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(AbilityPackage.Literals.PARTY_RESUME__PARTY, newParty);
 	}
 
 	/**

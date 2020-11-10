@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.TenantDataSource#getTenantId <em>Tenant Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.TenantDataSource#getTenant <em>Tenant</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.TenantDataSource#getEntityGroupName <em>Entity Group Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.TenantDataSource#getJdbcPassword <em>Jdbc Password</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.TenantDataSource#getJdbcUri <em>Jdbc Uri</em>}</li>
@@ -31,6 +31,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface TenantDataSource extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Tenant</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tenant</em>' reference.
+	 * @see #setTenant(Tenant)
+	 * @see org.abchip.mimo.biz.model.entity.tenant.TenantPackage#getTenantDataSource_Tenant()
+	 * @model keys="tenantId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Tenant getTenant();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.tenant.TenantDataSource#getTenant <em>Tenant</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tenant</em>' reference.
+	 * @see #getTenant()
+	 * @generated
+	 */
+	void setTenant(Tenant value);
+
 	/**
 	 * Returns the value of the '<em><b>Entity Group Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -136,32 +159,5 @@ public interface TenantDataSource extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setJdbcUsername(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Tenant Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tenant Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tenant Id</em>' reference.
-	 * @see #setTenantId(Tenant)
-	 * @see org.abchip.mimo.biz.model.entity.tenant.TenantPackage#getTenantDataSource_TenantId()
-	 * @model keys="tenantId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Tenant getTenantId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.tenant.TenantDataSource#getTenantId <em>Tenant Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tenant Id</em>' reference.
-	 * @see #getTenantId()
-	 * @generated
-	 */
-	void setTenantId(Tenant value);
 
 } // TenantDataSource

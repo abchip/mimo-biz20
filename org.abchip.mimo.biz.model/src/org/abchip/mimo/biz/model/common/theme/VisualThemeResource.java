@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.common.theme.VisualThemeResource#getVisualThemeId <em>Visual Theme Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.theme.VisualThemeResource#getResourceTypeEnumId <em>Resource Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.theme.VisualThemeResource#getVisualTheme <em>Visual Theme</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.theme.VisualThemeResource#getResourceTypeEnum <em>Resource Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.theme.VisualThemeResource#getSequenceId <em>Sequence Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.theme.VisualThemeResource#getResourceValue <em>Resource Value</em>}</li>
  * </ul>
@@ -31,6 +31,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface VisualThemeResource extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Visual Theme</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Visual Theme</em>' reference.
+	 * @see #setVisualTheme(VisualTheme)
+	 * @see org.abchip.mimo.biz.model.common.theme.ThemePackage#getVisualThemeResource_VisualTheme()
+	 * @model keys="visualThemeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	VisualTheme getVisualTheme();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.theme.VisualThemeResource#getVisualTheme <em>Visual Theme</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Visual Theme</em>' reference.
+	 * @see #getVisualTheme()
+	 * @generated
+	 */
+	void setVisualTheme(VisualTheme value);
+
+	/**
+	 * Returns the value of the '<em><b>Resource Type Enum</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Resource Type Enum</em>' reference.
+	 * @see #setResourceTypeEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.common.theme.ThemePackage#getVisualThemeResource_ResourceTypeEnum()
+	 * @model keys="enumId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Enumeration getResourceTypeEnum();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.theme.VisualThemeResource#getResourceTypeEnum <em>Resource Type Enum</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Resource Type Enum</em>' reference.
+	 * @see #getResourceTypeEnum()
+	 * @generated
+	 */
+	void setResourceTypeEnum(Enumeration value);
+
 	/**
 	 * Returns the value of the '<em><b>Resource Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -85,59 +131,5 @@ public interface VisualThemeResource extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setSequenceId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Visual Theme Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Visual Theme Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Visual Theme Id</em>' reference.
-	 * @see #setVisualThemeId(VisualTheme)
-	 * @see org.abchip.mimo.biz.model.common.theme.ThemePackage#getVisualThemeResource_VisualThemeId()
-	 * @model keys="visualThemeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	VisualTheme getVisualThemeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.theme.VisualThemeResource#getVisualThemeId <em>Visual Theme Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Visual Theme Id</em>' reference.
-	 * @see #getVisualThemeId()
-	 * @generated
-	 */
-	void setVisualThemeId(VisualTheme value);
-
-	/**
-	 * Returns the value of the '<em><b>Resource Type Enum Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Resource Type Enum Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Resource Type Enum Id</em>' reference.
-	 * @see #setResourceTypeEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.common.theme.ThemePackage#getVisualThemeResource_ResourceTypeEnumId()
-	 * @model keys="enumId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Enumeration getResourceTypeEnumId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.theme.VisualThemeResource#getResourceTypeEnumId <em>Resource Type Enum Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Resource Type Enum Id</em>' reference.
-	 * @see #getResourceTypeEnumId()
-	 * @generated
-	 */
-	void setResourceTypeEnumId(Enumeration value);
 
 } // VisualThemeResource

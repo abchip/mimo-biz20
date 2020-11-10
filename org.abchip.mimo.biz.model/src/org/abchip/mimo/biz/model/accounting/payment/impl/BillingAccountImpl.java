@@ -31,9 +31,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountImpl#getBillingAccountId <em>Billing Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountImpl#getAccountCurrencyUomId <em>Account Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountImpl#getAccountCurrencyUom <em>Account Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountImpl#getAccountLimit <em>Account Limit</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountImpl#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountImpl#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountImpl#getExternalAccountId <em>External Account Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountImpl#getFromDate <em>From Date</em>}</li>
@@ -158,26 +158,6 @@ public class BillingAccountImpl extends EntityIdentifiableImpl implements Billin
 	 * @generated
 	 */
 	@Override
-	public Uom getAccountCurrencyUomId() {
-		return (Uom)eGet(PaymentPackage.Literals.BILLING_ACCOUNT__ACCOUNT_CURRENCY_UOM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAccountCurrencyUomId(Uom newAccountCurrencyUomId) {
-		eSet(PaymentPackage.Literals.BILLING_ACCOUNT__ACCOUNT_CURRENCY_UOM_ID, newAccountCurrencyUomId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public BigDecimal getAccountLimit() {
 		return (BigDecimal)eGet(PaymentPackage.Literals.BILLING_ACCOUNT__ACCOUNT_LIMIT, true);
 	}
@@ -198,8 +178,8 @@ public class BillingAccountImpl extends EntityIdentifiableImpl implements Billin
 	 * @generated
 	 */
 	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(PaymentPackage.Literals.BILLING_ACCOUNT__CONTACT_MECH_ID, true);
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(PaymentPackage.Literals.BILLING_ACCOUNT__CONTACT_MECH, true);
 	}
 
 	/**
@@ -208,8 +188,8 @@ public class BillingAccountImpl extends EntityIdentifiableImpl implements Billin
 	 * @generated
 	 */
 	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(PaymentPackage.Literals.BILLING_ACCOUNT__CONTACT_MECH_ID, newContactMechId);
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(PaymentPackage.Literals.BILLING_ACCOUNT__CONTACT_MECH, newContactMech);
 	}
 
 	/**
@@ -348,6 +328,26 @@ public class BillingAccountImpl extends EntityIdentifiableImpl implements Billin
 	@Override
 	public void setBillingAccountId(String newBillingAccountId) {
 		eSet(PaymentPackage.Literals.BILLING_ACCOUNT__BILLING_ACCOUNT_ID, newBillingAccountId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Uom getAccountCurrencyUom() {
+		return (Uom)eGet(PaymentPackage.Literals.BILLING_ACCOUNT__ACCOUNT_CURRENCY_UOM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAccountCurrencyUom(Uom newAccountCurrencyUom) {
+		eSet(PaymentPackage.Literals.BILLING_ACCOUNT__ACCOUNT_CURRENCY_UOM, newAccountCurrencyUom);
 	}
 
 } //BillingAccountImpl

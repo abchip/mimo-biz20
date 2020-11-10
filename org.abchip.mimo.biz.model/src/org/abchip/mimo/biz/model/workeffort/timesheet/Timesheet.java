@@ -24,12 +24,12 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getTimesheetId <em>Timesheet Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getApprovedByUserLoginId <em>Approved By User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getClientPartyId <em>Client Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getApprovedByUserLogin <em>Approved By User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getClientParty <em>Client Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -38,58 +38,6 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface Timesheet extends EntityIdentifiable, EntityInfo {
-	/**
-	 * Returns the value of the '<em><b>Approved By User Login Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Approved By User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Approved By User Login Id</em>' reference.
-	 * @see #setApprovedByUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheet_ApprovedByUserLoginId()
-	 * @model keys="userLoginId"
-	 * @generated
-	 */
-	UserLogin getApprovedByUserLoginId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getApprovedByUserLoginId <em>Approved By User Login Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Approved By User Login Id</em>' reference.
-	 * @see #getApprovedByUserLoginId()
-	 * @generated
-	 */
-	void setApprovedByUserLoginId(UserLogin value);
-
-	/**
-	 * Returns the value of the '<em><b>Client Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Client Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Client Party Id</em>' reference.
-	 * @see #setClientPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheet_ClientPartyId()
-	 * @model keys="partyId"
-	 * @generated
-	 */
-	Party getClientPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getClientPartyId <em>Client Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Client Party Id</em>' reference.
-	 * @see #getClientPartyId()
-	 * @generated
-	 */
-	void setClientPartyId(Party value);
-
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -143,56 +91,48 @@ public interface Timesheet extends EntityIdentifiable, EntityInfo {
 	void setFromDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheet_PartyId()
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheet_Party()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getPartyId();
+	Party getParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getParty <em>Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setParty(Party value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheet_StatusId()
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheet_Status()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getStatusId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getStatusId <em>Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setStatusId(StatusItem value);
+	void setStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.
@@ -246,5 +186,49 @@ public interface Timesheet extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setTimesheetId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Approved By User Login</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Approved By User Login</em>' reference.
+	 * @see #setApprovedByUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheet_ApprovedByUserLogin()
+	 * @model keys="userLoginId"
+	 * @generated
+	 */
+	UserLogin getApprovedByUserLogin();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getApprovedByUserLogin <em>Approved By User Login</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Approved By User Login</em>' reference.
+	 * @see #getApprovedByUserLogin()
+	 * @generated
+	 */
+	void setApprovedByUserLogin(UserLogin value);
+
+	/**
+	 * Returns the value of the '<em><b>Client Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Client Party</em>' reference.
+	 * @see #setClientParty(Party)
+	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheet_ClientParty()
+	 * @model keys="partyId"
+	 * @generated
+	 */
+	Party getClientParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet#getClientParty <em>Client Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Client Party</em>' reference.
+	 * @see #getClientParty()
+	 * @generated
+	 */
+	void setClientParty(Party value);
 
 } // Timesheet

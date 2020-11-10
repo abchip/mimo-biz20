@@ -30,8 +30,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigProductImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigProductImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigProductImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigProductImpl#getConfigItemId <em>Config Item Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigProductImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigProductImpl#getConfigItem <em>Config Item</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigProductImpl#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigProductImpl#getConfigOptionId <em>Config Option Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigProductImpl#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigProductImpl#getSequenceNum <em>Sequence Num</em>}</li>
@@ -156,6 +156,46 @@ public class ProductConfigProductImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
+	public ProductConfigItem getConfigItem() {
+		return (ProductConfigItem)eGet(ConfigPackage.Literals.PRODUCT_CONFIG_PRODUCT__CONFIG_ITEM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setConfigItem(ProductConfigItem newConfigItem) {
+		eSet(ConfigPackage.Literals.PRODUCT_CONFIG_PRODUCT__CONFIG_ITEM, newConfigItem);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Product getProduct() {
+		return (Product)eGet(ConfigPackage.Literals.PRODUCT_CONFIG_PRODUCT__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(ConfigPackage.Literals.PRODUCT_CONFIG_PRODUCT__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getConfigOptionId() {
 		return (String)eGet(ConfigPackage.Literals.PRODUCT_CONFIG_PRODUCT__CONFIG_OPTION_ID, true);
 	}
@@ -168,26 +208,6 @@ public class ProductConfigProductImpl extends EntityIdentifiableImpl implements 
 	@Override
 	public void setConfigOptionId(String newConfigOptionId) {
 		eSet(ConfigPackage.Literals.PRODUCT_CONFIG_PRODUCT__CONFIG_OPTION_ID, newConfigOptionId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(ConfigPackage.Literals.PRODUCT_CONFIG_PRODUCT__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(ConfigPackage.Literals.PRODUCT_CONFIG_PRODUCT__PRODUCT_ID, newProductId);
 	}
 
 	/**
@@ -266,26 +286,6 @@ public class ProductConfigProductImpl extends EntityIdentifiableImpl implements 
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductConfigItem getConfigItemId() {
-		return (ProductConfigItem)eGet(ConfigPackage.Literals.PRODUCT_CONFIG_PRODUCT__CONFIG_ITEM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setConfigItemId(ProductConfigItem newConfigItemId) {
-		eSet(ConfigPackage.Literals.PRODUCT_CONFIG_PRODUCT__CONFIG_ITEM_ID, newConfigItemId);
 	}
 
 } //ProductConfigProductImpl

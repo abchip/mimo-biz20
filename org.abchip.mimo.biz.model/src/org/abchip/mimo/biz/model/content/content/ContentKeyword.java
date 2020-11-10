@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentKeyword#getContentId <em>Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentKeyword#getContent <em>Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentKeyword#getKeyword <em>Keyword</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentKeyword#getRelevancyWeight <em>Relevancy Weight</em>}</li>
  * </ul>
@@ -30,31 +30,27 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface ContentKeyword extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Content</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Id</em>' reference.
-	 * @see #setContentId(Content)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentKeyword_ContentId()
+	 * @return the value of the '<em>Content</em>' reference.
+	 * @see #setContent(Content)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentKeyword_Content()
 	 * @model keys="contentId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Content getContentId();
+	Content getContent();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentKeyword#getContentId <em>Content Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentKeyword#getContent <em>Content</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Id</em>' reference.
-	 * @see #getContentId()
+	 * @param value the new value of the '<em>Content</em>' reference.
+	 * @see #getContent()
 	 * @generated
 	 */
-	void setContentId(Content value);
+	void setContent(Content value);
 
 	/**
 	 * Returns the value of the '<em><b>Keyword</b></em>' attribute.

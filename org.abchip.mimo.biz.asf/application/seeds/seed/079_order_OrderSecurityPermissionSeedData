@@ -26,11 +26,11 @@
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="ORDERMGR_4C_CREATE" description="Create sales forecasts in the Order Manager."/>
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="ORDERMGR_4C_UPDATE" description="Update sales forecasts in the Order Manager."/>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#ORDERMGR_ADMIN"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#ORDERMGR_ADMIN"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#ORDERMGR_CRQ_ADMIN"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#ORDERMGR_CRQ_ADMIN"/>
   </contents>
 </mimo-ent:EntityContainer>

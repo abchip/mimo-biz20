@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderNotificationImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderNotificationImpl#getEmailType <em>Email Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderNotificationImpl#getNotificationDate <em>Notification Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderNotificationImpl#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderNotificationImpl#getOrder <em>Order</em>}</li>
  * </ul>
  *
  * @generated
@@ -215,8 +215,8 @@ public class OrderNotificationImpl extends EntityIdentifiableImpl implements Ord
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_NOTIFICATION__ORDER_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_NOTIFICATION__ORDER, true);
 	}
 
 	/**
@@ -225,8 +225,8 @@ public class OrderNotificationImpl extends EntityIdentifiableImpl implements Ord
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_NOTIFICATION__ORDER_ID, newOrderId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_NOTIFICATION__ORDER, newOrder);
 	}
 
 	/**

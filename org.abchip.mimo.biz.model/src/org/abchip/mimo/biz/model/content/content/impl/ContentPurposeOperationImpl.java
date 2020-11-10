@@ -32,11 +32,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeOperationImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeOperationImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeOperationImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeOperationImpl#getContentPurposeTypeId <em>Content Purpose Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeOperationImpl#getContentOperationId <em>Content Operation Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeOperationImpl#getRoleTypeId <em>Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeOperationImpl#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeOperationImpl#getPrivilegeEnumId <em>Privilege Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeOperationImpl#getContentPurposeType <em>Content Purpose Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeOperationImpl#getContentOperation <em>Content Operation</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeOperationImpl#getRoleType <em>Role Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeOperationImpl#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeOperationImpl#getPrivilegeEnum <em>Privilege Enum</em>}</li>
  * </ul>
  *
  * @generated
@@ -158,8 +158,8 @@ public class ContentPurposeOperationImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public ContentOperation getContentOperationId() {
-		return (ContentOperation)eGet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__CONTENT_OPERATION_ID, true);
+	public ContentPurposeType getContentPurposeType() {
+		return (ContentPurposeType)eGet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__CONTENT_PURPOSE_TYPE, true);
 	}
 
 	/**
@@ -168,8 +168,8 @@ public class ContentPurposeOperationImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setContentOperationId(ContentOperation newContentOperationId) {
-		eSet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__CONTENT_OPERATION_ID, newContentOperationId);
+	public void setContentPurposeType(ContentPurposeType newContentPurposeType) {
+		eSet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__CONTENT_PURPOSE_TYPE, newContentPurposeType);
 	}
 
 	/**
@@ -178,8 +178,8 @@ public class ContentPurposeOperationImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public ContentPurposeType getContentPurposeTypeId() {
-		return (ContentPurposeType)eGet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__CONTENT_PURPOSE_TYPE_ID, true);
+	public ContentOperation getContentOperation() {
+		return (ContentOperation)eGet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__CONTENT_OPERATION, true);
 	}
 
 	/**
@@ -188,8 +188,8 @@ public class ContentPurposeOperationImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setContentPurposeTypeId(ContentPurposeType newContentPurposeTypeId) {
-		eSet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__CONTENT_PURPOSE_TYPE_ID, newContentPurposeTypeId);
+	public void setContentOperation(ContentOperation newContentOperation) {
+		eSet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__CONTENT_OPERATION, newContentOperation);
 	}
 
 	/**
@@ -198,8 +198,8 @@ public class ContentPurposeOperationImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public Enumeration getPrivilegeEnumId() {
-		return (Enumeration)eGet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__PRIVILEGE_ENUM_ID, true);
+	public RoleType getRoleType() {
+		return (RoleType)eGet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__ROLE_TYPE, true);
 	}
 
 	/**
@@ -208,8 +208,48 @@ public class ContentPurposeOperationImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setPrivilegeEnumId(Enumeration newPrivilegeEnumId) {
-		eSet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__PRIVILEGE_ENUM_ID, newPrivilegeEnumId);
+	public void setRoleType(RoleType newRoleType) {
+		eSet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__ROLE_TYPE, newRoleType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(StatusItem newStatus) {
+		eSet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__STATUS, newStatus);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Enumeration getPrivilegeEnum() {
+		return (Enumeration)eGet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__PRIVILEGE_ENUM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPrivilegeEnum(Enumeration newPrivilegeEnum) {
+		eSet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__PRIVILEGE_ENUM, newPrivilegeEnum);
 	}
 
 	/**
@@ -248,46 +288,6 @@ public class ContentPurposeOperationImpl extends EntityIdentifiableImpl implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__ROLE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__ROLE_TYPE_ID, newRoleTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(ContentPackage.Literals.CONTENT_PURPOSE_OPERATION__STATUS_ID, newStatusId);
 	}
 
 } //ContentPurposeOperationImpl

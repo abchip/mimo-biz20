@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayConfigImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayConfigImpl#getPaymentGatewayConfigId <em>Payment Gateway Config Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayConfigImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayConfigImpl#getPaymentGatewayConfigTypeId <em>Payment Gateway Config Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayConfigImpl#getPaymentGatewayConfigType <em>Payment Gateway Config Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -171,8 +171,8 @@ public class PaymentGatewayConfigImpl extends EntityTypedImpl<PaymentGatewayConf
 	 * @generated
 	 */
 	@Override
-	public PaymentGatewayConfigType getPaymentGatewayConfigTypeId() {
-		return (PaymentGatewayConfigType)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_CONFIG__PAYMENT_GATEWAY_CONFIG_TYPE_ID, true);
+	public PaymentGatewayConfigType getPaymentGatewayConfigType() {
+		return (PaymentGatewayConfigType)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_CONFIG__PAYMENT_GATEWAY_CONFIG_TYPE, true);
 	}
 
 	/**
@@ -181,8 +181,8 @@ public class PaymentGatewayConfigImpl extends EntityTypedImpl<PaymentGatewayConf
 	 * @generated
 	 */
 	@Override
-	public void setPaymentGatewayConfigTypeId(PaymentGatewayConfigType newPaymentGatewayConfigTypeId) {
-		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_CONFIG__PAYMENT_GATEWAY_CONFIG_TYPE_ID, newPaymentGatewayConfigTypeId);
+	public void setPaymentGatewayConfigType(PaymentGatewayConfigType newPaymentGatewayConfigType) {
+		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_CONFIG__PAYMENT_GATEWAY_CONFIG_TYPE, newPaymentGatewayConfigType);
 	}
 
 	/**

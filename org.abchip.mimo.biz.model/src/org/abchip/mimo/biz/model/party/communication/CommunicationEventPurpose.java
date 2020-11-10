@@ -19,8 +19,8 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventPurpose#getCommunicationEventId <em>Communication Event Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventPurpose#getCommunicationEventPrpTypId <em>Communication Event Prp Typ Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventPurpose#getCommunicationEvent <em>Communication Event</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventPurpose#getCommunicationEventPrpTyp <em>Communication Event Prp Typ</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventPurpose#getDescription <em>Description</em>}</li>
  * </ul>
  *
@@ -29,6 +29,52 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface CommunicationEventPurpose extends EntityTyped<CommunicationEventPrpTyp>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Communication Event</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Communication Event</em>' reference.
+	 * @see #setCommunicationEvent(CommunicationEvent)
+	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventPurpose_CommunicationEvent()
+	 * @model keys="communicationEventId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	CommunicationEvent getCommunicationEvent();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventPurpose#getCommunicationEvent <em>Communication Event</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Communication Event</em>' reference.
+	 * @see #getCommunicationEvent()
+	 * @generated
+	 */
+	void setCommunicationEvent(CommunicationEvent value);
+
+	/**
+	 * Returns the value of the '<em><b>Communication Event Prp Typ</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Communication Event Prp Typ</em>' reference.
+	 * @see #setCommunicationEventPrpTyp(CommunicationEventPrpTyp)
+	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventPurpose_CommunicationEventPrpTyp()
+	 * @model keys="communicationEventPrpTypId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	CommunicationEventPrpTyp getCommunicationEventPrpTyp();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventPurpose#getCommunicationEventPrpTyp <em>Communication Event Prp Typ</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Communication Event Prp Typ</em>' reference.
+	 * @see #getCommunicationEventPrpTyp()
+	 * @generated
+	 */
+	void setCommunicationEventPrpTyp(CommunicationEventPrpTyp value);
+
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -54,59 +100,5 @@ public interface CommunicationEventPurpose extends EntityTyped<CommunicationEven
 	 * @generated
 	 */
 	void setDescription(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Communication Event Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Communication Event Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Communication Event Id</em>' reference.
-	 * @see #setCommunicationEventId(CommunicationEvent)
-	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventPurpose_CommunicationEventId()
-	 * @model keys="communicationEventId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	CommunicationEvent getCommunicationEventId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventPurpose#getCommunicationEventId <em>Communication Event Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Communication Event Id</em>' reference.
-	 * @see #getCommunicationEventId()
-	 * @generated
-	 */
-	void setCommunicationEventId(CommunicationEvent value);
-
-	/**
-	 * Returns the value of the '<em><b>Communication Event Prp Typ Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Communication Event Prp Typ Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Communication Event Prp Typ Id</em>' reference.
-	 * @see #setCommunicationEventPrpTypId(CommunicationEventPrpTyp)
-	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventPurpose_CommunicationEventPrpTypId()
-	 * @model keys="communicationEventPrpTypId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	CommunicationEventPrpTyp getCommunicationEventPrpTypId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventPurpose#getCommunicationEventPrpTypId <em>Communication Event Prp Typ Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Communication Event Prp Typ Id</em>' reference.
-	 * @see #getCommunicationEventPrpTypId()
-	 * @generated
-	 */
-	void setCommunicationEventPrpTypId(CommunicationEventPrpTyp value);
 
 } // CommunicationEventPurpose

@@ -272,13 +272,13 @@ public interface DataPackage extends EPackage {
 	int DATA_CATEGORY__CATEGORY_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Parent Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_CATEGORY__PARENT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int DATA_CATEGORY__PARENT_CATEGORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Category</em>' class.
@@ -345,13 +345,13 @@ public interface DataPackage extends EPackage {
 	int DATA_RESOURCE__DATA_RESOURCE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Character Set Id</b></em>' reference.
+	 * The feature id for the '<em><b>Character Set</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__CHARACTER_SET_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int DATA_RESOURCE__CHARACTER_SET = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login</b></em>' reference.
@@ -372,13 +372,13 @@ public interface DataPackage extends EPackage {
 	int DATA_RESOURCE__CREATED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Data Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Data Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__DATA_CATEGORY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int DATA_RESOURCE__DATA_CATEGORY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Attributes</b></em>' reference list.
@@ -417,31 +417,31 @@ public interface DataPackage extends EPackage {
 	int DATA_RESOURCE__DATA_RESOURCE_PURPOSES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
-	 * The feature id for the '<em><b>Data Resource Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Data Resource Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__DATA_RESOURCE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
+	int DATA_RESOURCE__DATA_RESOURCE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
-	 * The feature id for the '<em><b>Data Source Id</b></em>' reference.
+	 * The feature id for the '<em><b>Data Source</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__DATA_SOURCE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
+	int DATA_RESOURCE__DATA_SOURCE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
-	 * The feature id for the '<em><b>Data Template Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Data Template Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__DATA_TEMPLATE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
+	int DATA_RESOURCE__DATA_TEMPLATE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Is Public</b></em>' attribute.
@@ -480,13 +480,13 @@ public interface DataPackage extends EPackage {
 	int DATA_RESOURCE__LOCALE_STRING = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
-	 * The feature id for the '<em><b>Mime Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Mime Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__MIME_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
+	int DATA_RESOURCE__MIME_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Object Info</b></em>' attribute.
@@ -516,31 +516,31 @@ public interface DataPackage extends EPackage {
 	int DATA_RESOURCE__RELATED_DETAIL_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
-	 * The feature id for the '<em><b>Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
+	int DATA_RESOURCE__STATUS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
-	 * The feature id for the '<em><b>Survey Id</b></em>' reference.
+	 * The feature id for the '<em><b>Survey</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__SURVEY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
+	int DATA_RESOURCE__SURVEY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
 
 	/**
-	 * The feature id for the '<em><b>Survey Response Id</b></em>' reference.
+	 * The feature id for the '<em><b>Survey Response</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__SURVEY_RESPONSE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
+	int DATA_RESOURCE__SURVEY_RESPONSE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
 
 	/**
 	 * The number of structural features of the '<em>Resource</em>' class.
@@ -598,13 +598,13 @@ public interface DataPackage extends EPackage {
 	int DATA_RESOURCE_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Data Resource Id</b></em>' reference.
+	 * The feature id for the '<em><b>Data Resource</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ATTRIBUTE__DATA_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int DATA_RESOURCE_ATTRIBUTE__DATA_RESOURCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -689,31 +689,31 @@ public interface DataPackage extends EPackage {
 	int DATA_RESOURCE_META_DATA__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Data Resource Id</b></em>' reference.
+	 * The feature id for the '<em><b>Data Resource</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_META_DATA__DATA_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int DATA_RESOURCE_META_DATA__DATA_RESOURCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Meta Data Predicate Id</b></em>' reference.
+	 * The feature id for the '<em><b>Meta Data Predicate</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_META_DATA__META_DATA_PREDICATE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int DATA_RESOURCE_META_DATA__META_DATA_PREDICATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Data Source Id</b></em>' reference.
+	 * The feature id for the '<em><b>Data Source</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_META_DATA__DATA_SOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int DATA_RESOURCE_META_DATA__DATA_SOURCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Meta Data Value</b></em>' attribute.
@@ -780,22 +780,22 @@ public interface DataPackage extends EPackage {
 	int DATA_RESOURCE_PURPOSE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Data Resource Id</b></em>' reference.
+	 * The feature id for the '<em><b>Data Resource</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_PURPOSE__DATA_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int DATA_RESOURCE_PURPOSE__DATA_RESOURCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Content Purpose Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Content Purpose Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_PURPOSE__CONTENT_PURPOSE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int DATA_RESOURCE_PURPOSE__CONTENT_PURPOSE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Resource Purpose</em>' class.
@@ -853,22 +853,22 @@ public interface DataPackage extends EPackage {
 	int DATA_RESOURCE_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Data Resource Id</b></em>' reference.
+	 * The feature id for the '<em><b>Data Resource</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ROLE__DATA_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int DATA_RESOURCE_ROLE__DATA_RESOURCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int DATA_RESOURCE_ROLE__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -998,13 +998,13 @@ public interface DataPackage extends EPackage {
 	int DATA_RESOURCE_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
+	int DATA_RESOURCE_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Resource Type</em>' class.
@@ -1062,13 +1062,13 @@ public interface DataPackage extends EPackage {
 	int DATA_RESOURCE_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Data Resource Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Data Resource Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE_ATTR__DATA_RESOURCE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int DATA_RESOURCE_TYPE_ATTR__DATA_RESOURCE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1235,13 +1235,13 @@ public interface DataPackage extends EPackage {
 	int ELECTRONIC_TEXT__DATA_RESOURCE_ID = DATA_RESOURCE__DATA_RESOURCE_ID;
 
 	/**
-	 * The feature id for the '<em><b>Character Set Id</b></em>' reference.
+	 * The feature id for the '<em><b>Character Set</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ELECTRONIC_TEXT__CHARACTER_SET_ID = DATA_RESOURCE__CHARACTER_SET_ID;
+	int ELECTRONIC_TEXT__CHARACTER_SET = DATA_RESOURCE__CHARACTER_SET;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login</b></em>' reference.
@@ -1262,13 +1262,13 @@ public interface DataPackage extends EPackage {
 	int ELECTRONIC_TEXT__CREATED_DATE = DATA_RESOURCE__CREATED_DATE;
 
 	/**
-	 * The feature id for the '<em><b>Data Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Data Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ELECTRONIC_TEXT__DATA_CATEGORY_ID = DATA_RESOURCE__DATA_CATEGORY_ID;
+	int ELECTRONIC_TEXT__DATA_CATEGORY = DATA_RESOURCE__DATA_CATEGORY;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Attributes</b></em>' reference list.
@@ -1307,31 +1307,31 @@ public interface DataPackage extends EPackage {
 	int ELECTRONIC_TEXT__DATA_RESOURCE_PURPOSES = DATA_RESOURCE__DATA_RESOURCE_PURPOSES;
 
 	/**
-	 * The feature id for the '<em><b>Data Resource Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Data Resource Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ELECTRONIC_TEXT__DATA_RESOURCE_TYPE_ID = DATA_RESOURCE__DATA_RESOURCE_TYPE_ID;
+	int ELECTRONIC_TEXT__DATA_RESOURCE_TYPE = DATA_RESOURCE__DATA_RESOURCE_TYPE;
 
 	/**
-	 * The feature id for the '<em><b>Data Source Id</b></em>' reference.
+	 * The feature id for the '<em><b>Data Source</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ELECTRONIC_TEXT__DATA_SOURCE_ID = DATA_RESOURCE__DATA_SOURCE_ID;
+	int ELECTRONIC_TEXT__DATA_SOURCE = DATA_RESOURCE__DATA_SOURCE;
 
 	/**
-	 * The feature id for the '<em><b>Data Template Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Data Template Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ELECTRONIC_TEXT__DATA_TEMPLATE_TYPE_ID = DATA_RESOURCE__DATA_TEMPLATE_TYPE_ID;
+	int ELECTRONIC_TEXT__DATA_TEMPLATE_TYPE = DATA_RESOURCE__DATA_TEMPLATE_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Is Public</b></em>' attribute.
@@ -1370,13 +1370,13 @@ public interface DataPackage extends EPackage {
 	int ELECTRONIC_TEXT__LOCALE_STRING = DATA_RESOURCE__LOCALE_STRING;
 
 	/**
-	 * The feature id for the '<em><b>Mime Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Mime Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ELECTRONIC_TEXT__MIME_TYPE_ID = DATA_RESOURCE__MIME_TYPE_ID;
+	int ELECTRONIC_TEXT__MIME_TYPE = DATA_RESOURCE__MIME_TYPE;
 
 	/**
 	 * The feature id for the '<em><b>Object Info</b></em>' attribute.
@@ -1406,31 +1406,31 @@ public interface DataPackage extends EPackage {
 	int ELECTRONIC_TEXT__RELATED_DETAIL_ID = DATA_RESOURCE__RELATED_DETAIL_ID;
 
 	/**
-	 * The feature id for the '<em><b>Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ELECTRONIC_TEXT__STATUS_ID = DATA_RESOURCE__STATUS_ID;
+	int ELECTRONIC_TEXT__STATUS = DATA_RESOURCE__STATUS;
 
 	/**
-	 * The feature id for the '<em><b>Survey Id</b></em>' reference.
+	 * The feature id for the '<em><b>Survey</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ELECTRONIC_TEXT__SURVEY_ID = DATA_RESOURCE__SURVEY_ID;
+	int ELECTRONIC_TEXT__SURVEY = DATA_RESOURCE__SURVEY;
 
 	/**
-	 * The feature id for the '<em><b>Survey Response Id</b></em>' reference.
+	 * The feature id for the '<em><b>Survey Response</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ELECTRONIC_TEXT__SURVEY_RESPONSE_ID = DATA_RESOURCE__SURVEY_RESPONSE_ID;
+	int ELECTRONIC_TEXT__SURVEY_RESPONSE = DATA_RESOURCE__SURVEY_RESPONSE;
 
 	/**
 	 * The feature id for the '<em><b>Text Data</b></em>' attribute.
@@ -1506,13 +1506,13 @@ public interface DataPackage extends EPackage {
 	int FILE_EXTENSION__FILE_EXTENSION_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Mime Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Mime Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FILE_EXTENSION__MIME_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int FILE_EXTENSION__MIME_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>File Extension</em>' class.
@@ -2068,15 +2068,15 @@ public interface DataPackage extends EPackage {
 	EAttribute getDataCategory_CategoryName();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataCategory#getParentCategoryId <em>Parent Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataCategory#getParentCategory <em>Parent Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataCategory#getParentCategoryId()
+	 * @return the meta object for the reference '<em>Parent Category</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataCategory#getParentCategory()
 	 * @see #getDataCategory()
 	 * @generated
 	 */
-	EReference getDataCategory_ParentCategoryId();
+	EReference getDataCategory_ParentCategory();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.content.data.DataResource <em>Resource</em>}'.
@@ -2100,15 +2100,15 @@ public interface DataPackage extends EPackage {
 	EAttribute getDataResource_DataResourceId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResource#getCharacterSetId <em>Character Set Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResource#getCharacterSet <em>Character Set</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Character Set Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataResource#getCharacterSetId()
+	 * @return the meta object for the reference '<em>Character Set</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataResource#getCharacterSet()
 	 * @see #getDataResource()
 	 * @generated
 	 */
-	EReference getDataResource_CharacterSetId();
+	EReference getDataResource_CharacterSet();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResource#getCreatedByUserLogin <em>Created By User Login</em>}'.
@@ -2133,15 +2133,15 @@ public interface DataPackage extends EPackage {
 	EAttribute getDataResource_CreatedDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResource#getDataCategoryId <em>Data Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResource#getDataCategory <em>Data Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Data Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataResource#getDataCategoryId()
+	 * @return the meta object for the reference '<em>Data Category</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataResource#getDataCategory()
 	 * @see #getDataResource()
 	 * @generated
 	 */
-	EReference getDataResource_DataCategoryId();
+	EReference getDataResource_DataCategory();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.content.data.DataResource#getDataResourceAttributes <em>Data Resource Attributes</em>}'.
@@ -2188,37 +2188,37 @@ public interface DataPackage extends EPackage {
 	EReference getDataResource_DataResourcePurposes();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResource#getDataResourceTypeId <em>Data Resource Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResource#getDataResourceType <em>Data Resource Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Data Resource Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataResource#getDataResourceTypeId()
+	 * @return the meta object for the reference '<em>Data Resource Type</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataResource#getDataResourceType()
 	 * @see #getDataResource()
 	 * @generated
 	 */
-	EReference getDataResource_DataResourceTypeId();
+	EReference getDataResource_DataResourceType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResource#getDataSourceId <em>Data Source Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResource#getDataSource <em>Data Source</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Data Source Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataResource#getDataSourceId()
+	 * @return the meta object for the reference '<em>Data Source</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataResource#getDataSource()
 	 * @see #getDataResource()
 	 * @generated
 	 */
-	EReference getDataResource_DataSourceId();
+	EReference getDataResource_DataSource();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResource#getDataTemplateTypeId <em>Data Template Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResource#getDataTemplateType <em>Data Template Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Data Template Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataResource#getDataTemplateTypeId()
+	 * @return the meta object for the reference '<em>Data Template Type</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataResource#getDataTemplateType()
 	 * @see #getDataResource()
 	 * @generated
 	 */
-	EReference getDataResource_DataTemplateTypeId();
+	EReference getDataResource_DataTemplateType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.data.DataResource#isIsPublic <em>Is Public</em>}'.
@@ -2265,15 +2265,15 @@ public interface DataPackage extends EPackage {
 	EAttribute getDataResource_LocaleString();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResource#getMimeTypeId <em>Mime Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResource#getMimeType <em>Mime Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Mime Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataResource#getMimeTypeId()
+	 * @return the meta object for the reference '<em>Mime Type</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataResource#getMimeType()
 	 * @see #getDataResource()
 	 * @generated
 	 */
-	EReference getDataResource_MimeTypeId();
+	EReference getDataResource_MimeType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.data.DataResource#getObjectInfo <em>Object Info</em>}'.
@@ -2309,37 +2309,37 @@ public interface DataPackage extends EPackage {
 	EAttribute getDataResource_RelatedDetailId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResource#getStatusId <em>Status Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResource#getStatus <em>Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataResource#getStatusId()
+	 * @return the meta object for the reference '<em>Status</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataResource#getStatus()
 	 * @see #getDataResource()
 	 * @generated
 	 */
-	EReference getDataResource_StatusId();
+	EReference getDataResource_Status();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResource#getSurveyId <em>Survey Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResource#getSurvey <em>Survey</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Survey Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataResource#getSurveyId()
+	 * @return the meta object for the reference '<em>Survey</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataResource#getSurvey()
 	 * @see #getDataResource()
 	 * @generated
 	 */
-	EReference getDataResource_SurveyId();
+	EReference getDataResource_Survey();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResource#getSurveyResponseId <em>Survey Response Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResource#getSurveyResponse <em>Survey Response</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Survey Response Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataResource#getSurveyResponseId()
+	 * @return the meta object for the reference '<em>Survey Response</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataResource#getSurveyResponse()
 	 * @see #getDataResource()
 	 * @generated
 	 */
-	EReference getDataResource_SurveyResponseId();
+	EReference getDataResource_SurveyResponse();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.content.data.DataResourceAttribute <em>Resource Attribute</em>}'.
@@ -2352,15 +2352,15 @@ public interface DataPackage extends EPackage {
 	EClass getDataResourceAttribute();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourceAttribute#getDataResourceId <em>Data Resource Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourceAttribute#getDataResource <em>Data Resource</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Data Resource Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataResourceAttribute#getDataResourceId()
+	 * @return the meta object for the reference '<em>Data Resource</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataResourceAttribute#getDataResource()
 	 * @see #getDataResourceAttribute()
 	 * @generated
 	 */
-	EReference getDataResourceAttribute_DataResourceId();
+	EReference getDataResourceAttribute_DataResource();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.data.DataResourceAttribute#getAttrName <em>Attr Name</em>}'.
@@ -2406,37 +2406,37 @@ public interface DataPackage extends EPackage {
 	EClass getDataResourceMetaData();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourceMetaData#getDataResourceId <em>Data Resource Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourceMetaData#getDataResource <em>Data Resource</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Data Resource Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataResourceMetaData#getDataResourceId()
+	 * @return the meta object for the reference '<em>Data Resource</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataResourceMetaData#getDataResource()
 	 * @see #getDataResourceMetaData()
 	 * @generated
 	 */
-	EReference getDataResourceMetaData_DataResourceId();
+	EReference getDataResourceMetaData_DataResource();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourceMetaData#getMetaDataPredicateId <em>Meta Data Predicate Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourceMetaData#getMetaDataPredicate <em>Meta Data Predicate</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Meta Data Predicate Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataResourceMetaData#getMetaDataPredicateId()
+	 * @return the meta object for the reference '<em>Meta Data Predicate</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataResourceMetaData#getMetaDataPredicate()
 	 * @see #getDataResourceMetaData()
 	 * @generated
 	 */
-	EReference getDataResourceMetaData_MetaDataPredicateId();
+	EReference getDataResourceMetaData_MetaDataPredicate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourceMetaData#getDataSourceId <em>Data Source Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourceMetaData#getDataSource <em>Data Source</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Data Source Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataResourceMetaData#getDataSourceId()
+	 * @return the meta object for the reference '<em>Data Source</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataResourceMetaData#getDataSource()
 	 * @see #getDataResourceMetaData()
 	 * @generated
 	 */
-	EReference getDataResourceMetaData_DataSourceId();
+	EReference getDataResourceMetaData_DataSource();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.data.DataResourceMetaData#getMetaDataValue <em>Meta Data Value</em>}'.
@@ -2460,26 +2460,26 @@ public interface DataPackage extends EPackage {
 	EClass getDataResourcePurpose();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourcePurpose#getDataResourceId <em>Data Resource Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourcePurpose#getDataResource <em>Data Resource</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Data Resource Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataResourcePurpose#getDataResourceId()
+	 * @return the meta object for the reference '<em>Data Resource</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataResourcePurpose#getDataResource()
 	 * @see #getDataResourcePurpose()
 	 * @generated
 	 */
-	EReference getDataResourcePurpose_DataResourceId();
+	EReference getDataResourcePurpose_DataResource();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourcePurpose#getContentPurposeTypeId <em>Content Purpose Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourcePurpose#getContentPurposeType <em>Content Purpose Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Content Purpose Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataResourcePurpose#getContentPurposeTypeId()
+	 * @return the meta object for the reference '<em>Content Purpose Type</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataResourcePurpose#getContentPurposeType()
 	 * @see #getDataResourcePurpose()
 	 * @generated
 	 */
-	EReference getDataResourcePurpose_ContentPurposeTypeId();
+	EReference getDataResourcePurpose_ContentPurposeType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.content.data.DataResourceRole <em>Resource Role</em>}'.
@@ -2492,26 +2492,26 @@ public interface DataPackage extends EPackage {
 	EClass getDataResourceRole();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourceRole#getDataResourceId <em>Data Resource Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourceRole#getDataResource <em>Data Resource</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Data Resource Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataResourceRole#getDataResourceId()
+	 * @return the meta object for the reference '<em>Data Resource</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataResourceRole#getDataResource()
 	 * @see #getDataResourceRole()
 	 * @generated
 	 */
-	EReference getDataResourceRole_DataResourceId();
+	EReference getDataResourceRole_DataResource();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourceRole#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourceRole#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataResourceRole#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataResourceRole#getParty()
 	 * @see #getDataResourceRole()
 	 * @generated
 	 */
-	EReference getDataResourceRole_PartyId();
+	EReference getDataResourceRole_Party();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.data.DataResourceRole#getRoleTypeId <em>Role Type Id</em>}'.
@@ -2601,15 +2601,15 @@ public interface DataPackage extends EPackage {
 	EAttribute getDataResourceType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourceType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourceType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataResourceType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataResourceType#getParentType()
 	 * @see #getDataResourceType()
 	 * @generated
 	 */
-	EReference getDataResourceType_ParentTypeId();
+	EReference getDataResourceType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.content.data.DataResourceTypeAttr <em>Resource Type Attr</em>}'.
@@ -2622,15 +2622,15 @@ public interface DataPackage extends EPackage {
 	EClass getDataResourceTypeAttr();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourceTypeAttr#getDataResourceTypeId <em>Data Resource Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.DataResourceTypeAttr#getDataResourceType <em>Data Resource Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Data Resource Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.DataResourceTypeAttr#getDataResourceTypeId()
+	 * @return the meta object for the reference '<em>Data Resource Type</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.DataResourceTypeAttr#getDataResourceType()
 	 * @see #getDataResourceTypeAttr()
 	 * @generated
 	 */
-	EReference getDataResourceTypeAttr_DataResourceTypeId();
+	EReference getDataResourceTypeAttr_DataResourceType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.data.DataResourceTypeAttr#getAttrName <em>Attr Name</em>}'.
@@ -2740,15 +2740,15 @@ public interface DataPackage extends EPackage {
 	EAttribute getFileExtension_FileExtensionId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.FileExtension#getMimeTypeId <em>Mime Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.data.FileExtension#getMimeType <em>Mime Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Mime Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.FileExtension#getMimeTypeId()
+	 * @return the meta object for the reference '<em>Mime Type</em>'.
+	 * @see org.abchip.mimo.biz.model.content.data.FileExtension#getMimeType()
 	 * @see #getFileExtension()
 	 * @generated
 	 */
-	EReference getFileExtension_MimeTypeId();
+	EReference getFileExtension_MimeType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.content.data.ImageDataResource <em>Image Data Resource</em>}'.
@@ -3043,12 +3043,12 @@ public interface DataPackage extends EPackage {
 		EAttribute DATA_CATEGORY__CATEGORY_NAME = eINSTANCE.getDataCategory_CategoryName();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_CATEGORY__PARENT_CATEGORY_ID = eINSTANCE.getDataCategory_ParentCategoryId();
+		EReference DATA_CATEGORY__PARENT_CATEGORY = eINSTANCE.getDataCategory_ParentCategory();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl <em>Resource</em>}' class.
@@ -3069,12 +3069,12 @@ public interface DataPackage extends EPackage {
 		EAttribute DATA_RESOURCE__DATA_RESOURCE_ID = eINSTANCE.getDataResource_DataResourceId();
 
 		/**
-		 * The meta object literal for the '<em><b>Character Set Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Character Set</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_RESOURCE__CHARACTER_SET_ID = eINSTANCE.getDataResource_CharacterSetId();
+		EReference DATA_RESOURCE__CHARACTER_SET = eINSTANCE.getDataResource_CharacterSet();
 
 		/**
 		 * The meta object literal for the '<em><b>Created By User Login</b></em>' reference feature.
@@ -3093,12 +3093,12 @@ public interface DataPackage extends EPackage {
 		EAttribute DATA_RESOURCE__CREATED_DATE = eINSTANCE.getDataResource_CreatedDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Data Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Data Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_RESOURCE__DATA_CATEGORY_ID = eINSTANCE.getDataResource_DataCategoryId();
+		EReference DATA_RESOURCE__DATA_CATEGORY = eINSTANCE.getDataResource_DataCategory();
 
 		/**
 		 * The meta object literal for the '<em><b>Data Resource Attributes</b></em>' reference list feature.
@@ -3133,28 +3133,28 @@ public interface DataPackage extends EPackage {
 		EReference DATA_RESOURCE__DATA_RESOURCE_PURPOSES = eINSTANCE.getDataResource_DataResourcePurposes();
 
 		/**
-		 * The meta object literal for the '<em><b>Data Resource Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Data Resource Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_RESOURCE__DATA_RESOURCE_TYPE_ID = eINSTANCE.getDataResource_DataResourceTypeId();
+		EReference DATA_RESOURCE__DATA_RESOURCE_TYPE = eINSTANCE.getDataResource_DataResourceType();
 
 		/**
-		 * The meta object literal for the '<em><b>Data Source Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Data Source</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_RESOURCE__DATA_SOURCE_ID = eINSTANCE.getDataResource_DataSourceId();
+		EReference DATA_RESOURCE__DATA_SOURCE = eINSTANCE.getDataResource_DataSource();
 
 		/**
-		 * The meta object literal for the '<em><b>Data Template Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Data Template Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_RESOURCE__DATA_TEMPLATE_TYPE_ID = eINSTANCE.getDataResource_DataTemplateTypeId();
+		EReference DATA_RESOURCE__DATA_TEMPLATE_TYPE = eINSTANCE.getDataResource_DataTemplateType();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Public</b></em>' attribute feature.
@@ -3189,12 +3189,12 @@ public interface DataPackage extends EPackage {
 		EAttribute DATA_RESOURCE__LOCALE_STRING = eINSTANCE.getDataResource_LocaleString();
 
 		/**
-		 * The meta object literal for the '<em><b>Mime Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Mime Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_RESOURCE__MIME_TYPE_ID = eINSTANCE.getDataResource_MimeTypeId();
+		EReference DATA_RESOURCE__MIME_TYPE = eINSTANCE.getDataResource_MimeType();
 
 		/**
 		 * The meta object literal for the '<em><b>Object Info</b></em>' attribute feature.
@@ -3221,28 +3221,28 @@ public interface DataPackage extends EPackage {
 		EAttribute DATA_RESOURCE__RELATED_DETAIL_ID = eINSTANCE.getDataResource_RelatedDetailId();
 
 		/**
-		 * The meta object literal for the '<em><b>Status Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Status</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_RESOURCE__STATUS_ID = eINSTANCE.getDataResource_StatusId();
+		EReference DATA_RESOURCE__STATUS = eINSTANCE.getDataResource_Status();
 
 		/**
-		 * The meta object literal for the '<em><b>Survey Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Survey</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_RESOURCE__SURVEY_ID = eINSTANCE.getDataResource_SurveyId();
+		EReference DATA_RESOURCE__SURVEY = eINSTANCE.getDataResource_Survey();
 
 		/**
-		 * The meta object literal for the '<em><b>Survey Response Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Survey Response</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_RESOURCE__SURVEY_RESPONSE_ID = eINSTANCE.getDataResource_SurveyResponseId();
+		EReference DATA_RESOURCE__SURVEY_RESPONSE = eINSTANCE.getDataResource_SurveyResponse();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceAttributeImpl <em>Resource Attribute</em>}' class.
@@ -3255,12 +3255,12 @@ public interface DataPackage extends EPackage {
 		EClass DATA_RESOURCE_ATTRIBUTE = eINSTANCE.getDataResourceAttribute();
 
 		/**
-		 * The meta object literal for the '<em><b>Data Resource Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Data Resource</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_RESOURCE_ATTRIBUTE__DATA_RESOURCE_ID = eINSTANCE.getDataResourceAttribute_DataResourceId();
+		EReference DATA_RESOURCE_ATTRIBUTE__DATA_RESOURCE = eINSTANCE.getDataResourceAttribute_DataResource();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -3297,28 +3297,28 @@ public interface DataPackage extends EPackage {
 		EClass DATA_RESOURCE_META_DATA = eINSTANCE.getDataResourceMetaData();
 
 		/**
-		 * The meta object literal for the '<em><b>Data Resource Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Data Resource</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_RESOURCE_META_DATA__DATA_RESOURCE_ID = eINSTANCE.getDataResourceMetaData_DataResourceId();
+		EReference DATA_RESOURCE_META_DATA__DATA_RESOURCE = eINSTANCE.getDataResourceMetaData_DataResource();
 
 		/**
-		 * The meta object literal for the '<em><b>Meta Data Predicate Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Meta Data Predicate</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_RESOURCE_META_DATA__META_DATA_PREDICATE_ID = eINSTANCE.getDataResourceMetaData_MetaDataPredicateId();
+		EReference DATA_RESOURCE_META_DATA__META_DATA_PREDICATE = eINSTANCE.getDataResourceMetaData_MetaDataPredicate();
 
 		/**
-		 * The meta object literal for the '<em><b>Data Source Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Data Source</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_RESOURCE_META_DATA__DATA_SOURCE_ID = eINSTANCE.getDataResourceMetaData_DataSourceId();
+		EReference DATA_RESOURCE_META_DATA__DATA_SOURCE = eINSTANCE.getDataResourceMetaData_DataSource();
 
 		/**
 		 * The meta object literal for the '<em><b>Meta Data Value</b></em>' attribute feature.
@@ -3339,20 +3339,20 @@ public interface DataPackage extends EPackage {
 		EClass DATA_RESOURCE_PURPOSE = eINSTANCE.getDataResourcePurpose();
 
 		/**
-		 * The meta object literal for the '<em><b>Data Resource Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Data Resource</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_RESOURCE_PURPOSE__DATA_RESOURCE_ID = eINSTANCE.getDataResourcePurpose_DataResourceId();
+		EReference DATA_RESOURCE_PURPOSE__DATA_RESOURCE = eINSTANCE.getDataResourcePurpose_DataResource();
 
 		/**
-		 * The meta object literal for the '<em><b>Content Purpose Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Content Purpose Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_RESOURCE_PURPOSE__CONTENT_PURPOSE_TYPE_ID = eINSTANCE.getDataResourcePurpose_ContentPurposeTypeId();
+		EReference DATA_RESOURCE_PURPOSE__CONTENT_PURPOSE_TYPE = eINSTANCE.getDataResourcePurpose_ContentPurposeType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceRoleImpl <em>Resource Role</em>}' class.
@@ -3365,20 +3365,20 @@ public interface DataPackage extends EPackage {
 		EClass DATA_RESOURCE_ROLE = eINSTANCE.getDataResourceRole();
 
 		/**
-		 * The meta object literal for the '<em><b>Data Resource Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Data Resource</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_RESOURCE_ROLE__DATA_RESOURCE_ID = eINSTANCE.getDataResourceRole_DataResourceId();
+		EReference DATA_RESOURCE_ROLE__DATA_RESOURCE = eINSTANCE.getDataResourceRole_DataResource();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_RESOURCE_ROLE__PARTY_ID = eINSTANCE.getDataResourceRole_PartyId();
+		EReference DATA_RESOURCE_ROLE__PARTY = eINSTANCE.getDataResourceRole_Party();
 
 		/**
 		 * The meta object literal for the '<em><b>Role Type Id</b></em>' attribute feature.
@@ -3447,12 +3447,12 @@ public interface DataPackage extends EPackage {
 		EAttribute DATA_RESOURCE_TYPE__HAS_TABLE = eINSTANCE.getDataResourceType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_RESOURCE_TYPE__PARENT_TYPE_ID = eINSTANCE.getDataResourceType_ParentTypeId();
+		EReference DATA_RESOURCE_TYPE__PARENT_TYPE = eINSTANCE.getDataResourceType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceTypeAttrImpl <em>Resource Type Attr</em>}' class.
@@ -3465,12 +3465,12 @@ public interface DataPackage extends EPackage {
 		EClass DATA_RESOURCE_TYPE_ATTR = eINSTANCE.getDataResourceTypeAttr();
 
 		/**
-		 * The meta object literal for the '<em><b>Data Resource Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Data Resource Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_RESOURCE_TYPE_ATTR__DATA_RESOURCE_TYPE_ID = eINSTANCE.getDataResourceTypeAttr_DataResourceTypeId();
+		EReference DATA_RESOURCE_TYPE_ATTR__DATA_RESOURCE_TYPE = eINSTANCE.getDataResourceTypeAttr_DataResourceType();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -3559,12 +3559,12 @@ public interface DataPackage extends EPackage {
 		EAttribute FILE_EXTENSION__FILE_EXTENSION_ID = eINSTANCE.getFileExtension_FileExtensionId();
 
 		/**
-		 * The meta object literal for the '<em><b>Mime Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Mime Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FILE_EXTENSION__MIME_TYPE_ID = eINSTANCE.getFileExtension_MimeTypeId();
+		EReference FILE_EXTENSION__MIME_TYPE = eINSTANCE.getFileExtension_MimeType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.content.data.impl.ImageDataResourceImpl <em>Image Data Resource</em>}' class.

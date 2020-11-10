@@ -24,7 +24,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.GoodIdentificationType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.GoodIdentificationType#getGoodIdentifications <em>Good Identifications</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.GoodIdentificationType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.GoodIdentificationType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.GoodIdentificationType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getGoodIdentificationType()
@@ -101,30 +101,26 @@ public interface GoodIdentificationType extends EntityType<GoodIdentification>, 
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(GoodIdentificationType)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getGoodIdentificationType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(GoodIdentificationType)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getGoodIdentificationType_ParentType()
 	 * @model keys="goodIdentificationTypeId"
 	 * @generated
 	 */
-	GoodIdentificationType getParentTypeId();
+	GoodIdentificationType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.GoodIdentificationType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.GoodIdentificationType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(GoodIdentificationType value);
+	void setParentType(GoodIdentificationType value);
 
 	/**
 	 * Returns the value of the '<em><b>Good Identification Type Id</b></em>' attribute.

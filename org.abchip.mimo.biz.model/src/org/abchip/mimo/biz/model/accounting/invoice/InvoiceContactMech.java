@@ -21,9 +21,9 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech#getInvoiceId <em>Invoice Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech#getContactMechId <em>Contact Mech Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech#getContactMechPurposeTypeId <em>Contact Mech Purpose Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech#getInvoice <em>Invoice</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech#getContactMech <em>Contact Mech</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech#getContactMechPurposeType <em>Contact Mech Purpose Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceContactMech()
@@ -32,84 +32,72 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface InvoiceContactMech extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Contact Mech Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #setContactMechId(ContactMech)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceContactMech_ContactMechId()
-	 * @model keys="contactMechId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ContactMech getContactMechId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech#getContactMechId <em>Contact Mech Id</em>}' reference.
+	 * Returns the value of the '<em><b>Invoice</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #getContactMechId()
-	 * @generated
-	 */
-	void setContactMechId(ContactMech value);
-
-	/**
-	 * Returns the value of the '<em><b>Contact Mech Purpose Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Purpose Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Mech Purpose Type Id</em>' reference.
-	 * @see #setContactMechPurposeTypeId(ContactMechPurposeType)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceContactMech_ContactMechPurposeTypeId()
-	 * @model keys="contactMechPurposeTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ContactMechPurposeType getContactMechPurposeTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech#getContactMechPurposeTypeId <em>Contact Mech Purpose Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Mech Purpose Type Id</em>' reference.
-	 * @see #getContactMechPurposeTypeId()
-	 * @generated
-	 */
-	void setContactMechPurposeTypeId(ContactMechPurposeType value);
-
-	/**
-	 * Returns the value of the '<em><b>Invoice Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Invoice Id</em>' reference.
-	 * @see #setInvoiceId(Invoice)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceContactMech_InvoiceId()
+	 * @return the value of the '<em>Invoice</em>' reference.
+	 * @see #setInvoice(Invoice)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceContactMech_Invoice()
 	 * @model keys="invoiceId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Invoice getInvoiceId();
+	Invoice getInvoice();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech#getInvoiceId <em>Invoice Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech#getInvoice <em>Invoice</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Invoice Id</em>' reference.
-	 * @see #getInvoiceId()
+	 * @param value the new value of the '<em>Invoice</em>' reference.
+	 * @see #getInvoice()
 	 * @generated
 	 */
-	void setInvoiceId(Invoice value);
+	void setInvoice(Invoice value);
+
+	/**
+	 * Returns the value of the '<em><b>Contact Mech</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Contact Mech</em>' reference.
+	 * @see #setContactMech(ContactMech)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceContactMech_ContactMech()
+	 * @model keys="contactMechId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ContactMech getContactMech();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech#getContactMech <em>Contact Mech</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Contact Mech</em>' reference.
+	 * @see #getContactMech()
+	 * @generated
+	 */
+	void setContactMech(ContactMech value);
+
+	/**
+	 * Returns the value of the '<em><b>Contact Mech Purpose Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Contact Mech Purpose Type</em>' reference.
+	 * @see #setContactMechPurposeType(ContactMechPurposeType)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceContactMech_ContactMechPurposeType()
+	 * @model keys="contactMechPurposeTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ContactMechPurposeType getContactMechPurposeType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech#getContactMechPurposeType <em>Contact Mech Purpose Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Contact Mech Purpose Type</em>' reference.
+	 * @see #getContactMechPurposeType()
+	 * @generated
+	 */
+	void setContactMechPurposeType(ContactMechPurposeType value);
 
 } // InvoiceContactMech

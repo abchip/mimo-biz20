@@ -21,9 +21,9 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetReview#getBudgetId <em>Budget Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetReview#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetReview#getBudgetReviewResultTypeId <em>Budget Review Result Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetReview#getBudget <em>Budget</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetReview#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetReview#getBudgetReviewResultType <em>Budget Review Result Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetReview#getBudgetReviewId <em>Budget Review Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetReview#getReviewDate <em>Review Date</em>}</li>
  * </ul>
@@ -33,6 +33,75 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface BudgetReview extends EntityTyped<BudgetReviewResultType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Budget</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Budget</em>' reference.
+	 * @see #setBudget(Budget)
+	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetReview_Budget()
+	 * @model keys="budgetId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Budget getBudget();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetReview#getBudget <em>Budget</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Budget</em>' reference.
+	 * @see #getBudget()
+	 * @generated
+	 */
+	void setBudget(Budget value);
+
+	/**
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetReview_Party()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetReview#getParty <em>Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
+	 * @generated
+	 */
+	void setParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Budget Review Result Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Budget Review Result Type</em>' reference.
+	 * @see #setBudgetReviewResultType(BudgetReviewResultType)
+	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetReview_BudgetReviewResultType()
+	 * @model keys="budgetReviewResultTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	BudgetReviewResultType getBudgetReviewResultType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetReview#getBudgetReviewResultType <em>Budget Review Result Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Budget Review Result Type</em>' reference.
+	 * @see #getBudgetReviewResultType()
+	 * @generated
+	 */
+	void setBudgetReviewResultType(BudgetReviewResultType value);
+
 	/**
 	 * Returns the value of the '<em><b>Budget Review Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -62,33 +131,6 @@ public interface BudgetReview extends EntityTyped<BudgetReviewResultType>, Entit
 	void setBudgetReviewId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetReview_PartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetReview#getPartyId <em>Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
-	 * @generated
-	 */
-	void setPartyId(Party value);
-
-	/**
 	 * Returns the value of the '<em><b>Review Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -113,59 +155,5 @@ public interface BudgetReview extends EntityTyped<BudgetReviewResultType>, Entit
 	 * @generated
 	 */
 	void setReviewDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Budget Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Budget Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Budget Id</em>' reference.
-	 * @see #setBudgetId(Budget)
-	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetReview_BudgetId()
-	 * @model keys="budgetId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Budget getBudgetId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetReview#getBudgetId <em>Budget Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Budget Id</em>' reference.
-	 * @see #getBudgetId()
-	 * @generated
-	 */
-	void setBudgetId(Budget value);
-
-	/**
-	 * Returns the value of the '<em><b>Budget Review Result Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Budget Review Result Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Budget Review Result Type Id</em>' reference.
-	 * @see #setBudgetReviewResultTypeId(BudgetReviewResultType)
-	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetReview_BudgetReviewResultTypeId()
-	 * @model keys="budgetReviewResultTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	BudgetReviewResultType getBudgetReviewResultTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetReview#getBudgetReviewResultTypeId <em>Budget Review Result Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Budget Review Result Type Id</em>' reference.
-	 * @see #getBudgetReviewResultTypeId()
-	 * @generated
-	 */
-	void setBudgetReviewResultTypeId(BudgetReviewResultType value);
 
 } // BudgetReview

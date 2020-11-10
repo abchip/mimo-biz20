@@ -26,14 +26,14 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getExternalId <em>External Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlAccountCategoryMembers <em>Gl Account Category Members</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlAccountClassId <em>Gl Account Class Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlAccountClass <em>Gl Account Class</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlAccountGroupMembers <em>Gl Account Group Members</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlAccountOrganizations <em>Gl Account Organizations</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlAccountTypeId <em>Gl Account Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlAccountType <em>Gl Account Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlBudgetXrefs <em>Gl Budget Xrefs</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlResourceTypeId <em>Gl Resource Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlXbrlClassId <em>Gl Xbrl Class Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getParentGlAccountId <em>Parent Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlResourceType <em>Gl Resource Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlXbrlClass <em>Gl Xbrl Class</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getParentGlAccount <em>Parent Gl Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getProductId <em>Product Id</em>}</li>
  * </ul>
  *
@@ -161,6 +161,28 @@ public interface GlAccount extends EntityTyped<GlAccountType>, EntityInfo {
 	List<GlAccountCategoryMember> getGlAccountCategoryMembers();
 
 	/**
+	 * Returns the value of the '<em><b>Gl Account Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Gl Account Class</em>' reference.
+	 * @see #setGlAccountClass(GlAccountClass)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlAccountClass()
+	 * @model keys="glAccountClassId"
+	 * @generated
+	 */
+	GlAccountClass getGlAccountClass();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlAccountClass <em>Gl Account Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Gl Account Class</em>' reference.
+	 * @see #getGlAccountClass()
+	 * @generated
+	 */
+	void setGlAccountClass(GlAccountClass value);
+
+	/**
 	 * Returns the value of the '<em><b>Product Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -187,32 +209,6 @@ public interface GlAccount extends EntityTyped<GlAccountType>, EntityInfo {
 	void setProductId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Gl Account Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gl Account Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Account Type Id</em>' reference.
-	 * @see #setGlAccountTypeId(GlAccountType)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlAccountTypeId()
-	 * @model keys="glAccountTypeId"
-	 * @generated
-	 */
-	GlAccountType getGlAccountTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlAccountTypeId <em>Gl Account Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Gl Account Type Id</em>' reference.
-	 * @see #getGlAccountTypeId()
-	 * @generated
-	 */
-	void setGlAccountTypeId(GlAccountType value);
-
-	/**
 	 * Returns the value of the '<em><b>Gl Budget Xrefs</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.ledger.GlBudgetXref}.
 	 * <!-- begin-user-doc -->
@@ -226,30 +222,70 @@ public interface GlAccount extends EntityTyped<GlAccountType>, EntityInfo {
 	List<GlBudgetXref> getGlBudgetXrefs();
 
 	/**
-	 * Returns the value of the '<em><b>Gl Account Class Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Gl Resource Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gl Account Class Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Account Class Id</em>' reference.
-	 * @see #setGlAccountClassId(GlAccountClass)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlAccountClassId()
-	 * @model keys="glAccountClassId"
+	 * @return the value of the '<em>Gl Resource Type</em>' reference.
+	 * @see #setGlResourceType(GlResourceType)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlResourceType()
+	 * @model keys="glResourceTypeId"
 	 * @generated
 	 */
-	GlAccountClass getGlAccountClassId();
+	GlResourceType getGlResourceType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlAccountClassId <em>Gl Account Class Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlResourceType <em>Gl Resource Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Gl Account Class Id</em>' reference.
-	 * @see #getGlAccountClassId()
+	 * @param value the new value of the '<em>Gl Resource Type</em>' reference.
+	 * @see #getGlResourceType()
 	 * @generated
 	 */
-	void setGlAccountClassId(GlAccountClass value);
+	void setGlResourceType(GlResourceType value);
+
+	/**
+	 * Returns the value of the '<em><b>Gl Xbrl Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Gl Xbrl Class</em>' reference.
+	 * @see #setGlXbrlClass(GlXbrlClass)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlXbrlClass()
+	 * @model keys="glXbrlClassId"
+	 * @generated
+	 */
+	GlXbrlClass getGlXbrlClass();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlXbrlClass <em>Gl Xbrl Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Gl Xbrl Class</em>' reference.
+	 * @see #getGlXbrlClass()
+	 * @generated
+	 */
+	void setGlXbrlClass(GlXbrlClass value);
+
+	/**
+	 * Returns the value of the '<em><b>Parent Gl Account</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Parent Gl Account</em>' reference.
+	 * @see #setParentGlAccount(GlAccount)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_ParentGlAccount()
+	 * @model keys="glAccountId"
+	 * @generated
+	 */
+	GlAccount getParentGlAccount();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getParentGlAccount <em>Parent Gl Account</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Parent Gl Account</em>' reference.
+	 * @see #getParentGlAccount()
+	 * @generated
+	 */
+	void setParentGlAccount(GlAccount value);
 
 	/**
 	 * Returns the value of the '<em><b>Gl Account Group Members</b></em>' reference list.
@@ -284,82 +320,26 @@ public interface GlAccount extends EntityTyped<GlAccountType>, EntityInfo {
 	List<GlAccountOrganization> getGlAccountOrganizations();
 
 	/**
-	 * Returns the value of the '<em><b>Gl Resource Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Gl Account Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gl Resource Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Resource Type Id</em>' reference.
-	 * @see #setGlResourceTypeId(GlResourceType)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlResourceTypeId()
-	 * @model keys="glResourceTypeId"
+	 * @return the value of the '<em>Gl Account Type</em>' reference.
+	 * @see #setGlAccountType(GlAccountType)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlAccountType()
+	 * @model keys="glAccountTypeId"
 	 * @generated
 	 */
-	GlResourceType getGlResourceTypeId();
+	GlAccountType getGlAccountType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlResourceTypeId <em>Gl Resource Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlAccountType <em>Gl Account Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Gl Resource Type Id</em>' reference.
-	 * @see #getGlResourceTypeId()
+	 * @param value the new value of the '<em>Gl Account Type</em>' reference.
+	 * @see #getGlAccountType()
 	 * @generated
 	 */
-	void setGlResourceTypeId(GlResourceType value);
-
-	/**
-	 * Returns the value of the '<em><b>Gl Xbrl Class Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gl Xbrl Class Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Xbrl Class Id</em>' reference.
-	 * @see #setGlXbrlClassId(GlXbrlClass)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlXbrlClassId()
-	 * @model keys="glXbrlClassId"
-	 * @generated
-	 */
-	GlXbrlClass getGlXbrlClassId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlXbrlClassId <em>Gl Xbrl Class Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Gl Xbrl Class Id</em>' reference.
-	 * @see #getGlXbrlClassId()
-	 * @generated
-	 */
-	void setGlXbrlClassId(GlXbrlClass value);
-
-	/**
-	 * Returns the value of the '<em><b>Parent Gl Account Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Gl Account Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Gl Account Id</em>' reference.
-	 * @see #setParentGlAccountId(GlAccount)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_ParentGlAccountId()
-	 * @model keys="glAccountId"
-	 * @generated
-	 */
-	GlAccount getParentGlAccountId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getParentGlAccountId <em>Parent Gl Account Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Gl Account Id</em>' reference.
-	 * @see #getParentGlAccountId()
-	 * @generated
-	 */
-	void setParentGlAccountId(GlAccount value);
+	void setGlAccountType(GlAccountType value);
 
 	/**
 	 * Returns the value of the '<em><b>Gl Account Id</b></em>' attribute.

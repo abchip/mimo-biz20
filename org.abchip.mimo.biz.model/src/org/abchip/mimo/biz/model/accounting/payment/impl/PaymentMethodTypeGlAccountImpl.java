@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodTypeGlAccountImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodTypeGlAccountImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodTypeGlAccountImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodTypeGlAccountImpl#getPaymentMethodTypeId <em>Payment Method Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodTypeGlAccountImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodTypeGlAccountImpl#getGlAccountId <em>Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodTypeGlAccountImpl#getPaymentMethodType <em>Payment Method Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodTypeGlAccountImpl#getOrganizationParty <em>Organization Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodTypeGlAccountImpl#getGlAccount <em>Gl Account</em>}</li>
  * </ul>
  *
  * @generated
@@ -153,8 +153,8 @@ public class PaymentMethodTypeGlAccountImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public Party getOrganizationPartyId() {
-		return (Party)eGet(PaymentPackage.Literals.PAYMENT_METHOD_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY_ID, true);
+	public PaymentMethodType getPaymentMethodType() {
+		return (PaymentMethodType)eGet(PaymentPackage.Literals.PAYMENT_METHOD_TYPE_GL_ACCOUNT__PAYMENT_METHOD_TYPE, true);
 	}
 
 	/**
@@ -163,8 +163,8 @@ public class PaymentMethodTypeGlAccountImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setOrganizationPartyId(Party newOrganizationPartyId) {
-		eSet(PaymentPackage.Literals.PAYMENT_METHOD_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY_ID, newOrganizationPartyId);
+	public void setPaymentMethodType(PaymentMethodType newPaymentMethodType) {
+		eSet(PaymentPackage.Literals.PAYMENT_METHOD_TYPE_GL_ACCOUNT__PAYMENT_METHOD_TYPE, newPaymentMethodType);
 	}
 
 	/**
@@ -173,8 +173,8 @@ public class PaymentMethodTypeGlAccountImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public PaymentMethodType getPaymentMethodTypeId() {
-		return (PaymentMethodType)eGet(PaymentPackage.Literals.PAYMENT_METHOD_TYPE_GL_ACCOUNT__PAYMENT_METHOD_TYPE_ID, true);
+	public Party getOrganizationParty() {
+		return (Party)eGet(PaymentPackage.Literals.PAYMENT_METHOD_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY, true);
 	}
 
 	/**
@@ -183,8 +183,8 @@ public class PaymentMethodTypeGlAccountImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setPaymentMethodTypeId(PaymentMethodType newPaymentMethodTypeId) {
-		eSet(PaymentPackage.Literals.PAYMENT_METHOD_TYPE_GL_ACCOUNT__PAYMENT_METHOD_TYPE_ID, newPaymentMethodTypeId);
+	public void setOrganizationParty(Party newOrganizationParty) {
+		eSet(PaymentPackage.Literals.PAYMENT_METHOD_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY, newOrganizationParty);
 	}
 
 	/**
@@ -193,8 +193,8 @@ public class PaymentMethodTypeGlAccountImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public GlAccount getGlAccountId() {
-		return (GlAccount)eGet(PaymentPackage.Literals.PAYMENT_METHOD_TYPE_GL_ACCOUNT__GL_ACCOUNT_ID, true);
+	public GlAccount getGlAccount() {
+		return (GlAccount)eGet(PaymentPackage.Literals.PAYMENT_METHOD_TYPE_GL_ACCOUNT__GL_ACCOUNT, true);
 	}
 
 	/**
@@ -203,8 +203,8 @@ public class PaymentMethodTypeGlAccountImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setGlAccountId(GlAccount newGlAccountId) {
-		eSet(PaymentPackage.Literals.PAYMENT_METHOD_TYPE_GL_ACCOUNT__GL_ACCOUNT_ID, newGlAccountId);
+	public void setGlAccount(GlAccount newGlAccount) {
+		eSet(PaymentPackage.Literals.PAYMENT_METHOD_TYPE_GL_ACCOUNT__GL_ACCOUNT, newGlAccount);
 	}
 
 	/**

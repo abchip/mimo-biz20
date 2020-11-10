@@ -21,8 +21,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemShipment#getReturnId <em>Return Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemShipment#getShipmentId <em>Shipment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemShipment#getReturn <em>Return</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemShipment#getShipment <em>Shipment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemShipment#getReturnItemSeqId <em>Return Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemShipment#getShipmentItemSeqId <em>Shipment Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemShipment#getQuantity <em>Quantity</em>}</li>
@@ -33,6 +33,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ReturnItemShipment extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Return</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Return</em>' reference.
+	 * @see #setReturn(ReturnHeader)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemShipment_Return()
+	 * @model keys="returnId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ReturnHeader getReturn();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItemShipment#getReturn <em>Return</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Return</em>' reference.
+	 * @see #getReturn()
+	 * @generated
+	 */
+	void setReturn(ReturnHeader value);
+
+	/**
+	 * Returns the value of the '<em><b>Shipment</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Shipment</em>' reference.
+	 * @see #setShipment(Shipment)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemShipment_Shipment()
+	 * @model keys="shipmentId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Shipment getShipment();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItemShipment#getShipment <em>Shipment</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Shipment</em>' reference.
+	 * @see #getShipment()
+	 * @generated
+	 */
+	void setShipment(Shipment value);
+
 	/**
 	 * Returns the value of the '<em><b>Quantity</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -58,33 +104,6 @@ public interface ReturnItemShipment extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setQuantity(BigDecimal value);
-
-	/**
-	 * Returns the value of the '<em><b>Return Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Return Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Return Id</em>' reference.
-	 * @see #setReturnId(ReturnHeader)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemShipment_ReturnId()
-	 * @model keys="returnId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ReturnHeader getReturnId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItemShipment#getReturnId <em>Return Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Return Id</em>' reference.
-	 * @see #getReturnId()
-	 * @generated
-	 */
-	void setReturnId(ReturnHeader value);
 
 	/**
 	 * Returns the value of the '<em><b>Return Item Seq Id</b></em>' attribute.
@@ -113,33 +132,6 @@ public interface ReturnItemShipment extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setReturnItemSeqId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Shipment Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shipment Id</em>' reference.
-	 * @see #setShipmentId(Shipment)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemShipment_ShipmentId()
-	 * @model keys="shipmentId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Shipment getShipmentId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItemShipment#getShipmentId <em>Shipment Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shipment Id</em>' reference.
-	 * @see #getShipmentId()
-	 * @generated
-	 */
-	void setShipmentId(Shipment value);
 
 	/**
 	 * Returns the value of the '<em><b>Shipment Item Seq Id</b></em>' attribute.

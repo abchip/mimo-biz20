@@ -41,7 +41,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeImpl#getGroupId <em>Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeImpl#getMarketingCampaignId <em>Marketing Campaign Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeImpl#getMarketingCampaign <em>Marketing Campaign</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeImpl#getOverrideCss <em>Override Css</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeImpl#getOverrideLogo <em>Override Logo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeImpl#getProdCatalogId <em>Prod Catalog Id</em>}</li>
@@ -49,7 +49,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeImpl#getSubgroupId <em>Subgroup Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeImpl#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeImpl#getTrackableLifetime <em>Trackable Lifetime</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeImpl#getTrackingCodeTypeId <em>Tracking Code Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeImpl#getTrackingCodeType <em>Tracking Code Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeImpl#getTrackingCodeVisits <em>Tracking Code Visits</em>}</li>
  * </ul>
  *
@@ -352,8 +352,8 @@ public class TrackingCodeImpl extends EntityTypedImpl<TrackingCodeType> implemen
 	 * @generated
 	 */
 	@Override
-	public MarketingCampaign getMarketingCampaignId() {
-		return (MarketingCampaign)eGet(TrackingPackage.Literals.TRACKING_CODE__MARKETING_CAMPAIGN_ID, true);
+	public MarketingCampaign getMarketingCampaign() {
+		return (MarketingCampaign)eGet(TrackingPackage.Literals.TRACKING_CODE__MARKETING_CAMPAIGN, true);
 	}
 
 	/**
@@ -362,8 +362,8 @@ public class TrackingCodeImpl extends EntityTypedImpl<TrackingCodeType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setMarketingCampaignId(MarketingCampaign newMarketingCampaignId) {
-		eSet(TrackingPackage.Literals.TRACKING_CODE__MARKETING_CAMPAIGN_ID, newMarketingCampaignId);
+	public void setMarketingCampaign(MarketingCampaign newMarketingCampaign) {
+		eSet(TrackingPackage.Literals.TRACKING_CODE__MARKETING_CAMPAIGN, newMarketingCampaign);
 	}
 
 	/**
@@ -512,6 +512,26 @@ public class TrackingCodeImpl extends EntityTypedImpl<TrackingCodeType> implemen
 	 * @generated
 	 */
 	@Override
+	public TrackingCodeType getTrackingCodeType() {
+		return (TrackingCodeType)eGet(TrackingPackage.Literals.TRACKING_CODE__TRACKING_CODE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTrackingCodeType(TrackingCodeType newTrackingCodeType) {
+		eSet(TrackingPackage.Literals.TRACKING_CODE__TRACKING_CODE_TYPE, newTrackingCodeType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getTrackingCodeId() {
 		return (String)eGet(TrackingPackage.Literals.TRACKING_CODE__TRACKING_CODE_ID, true);
 	}
@@ -524,26 +544,6 @@ public class TrackingCodeImpl extends EntityTypedImpl<TrackingCodeType> implemen
 	@Override
 	public void setTrackingCodeId(String newTrackingCodeId) {
 		eSet(TrackingPackage.Literals.TRACKING_CODE__TRACKING_CODE_ID, newTrackingCodeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public TrackingCodeType getTrackingCodeTypeId() {
-		return (TrackingCodeType)eGet(TrackingPackage.Literals.TRACKING_CODE__TRACKING_CODE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTrackingCodeTypeId(TrackingCodeType newTrackingCodeTypeId) {
-		eSet(TrackingPackage.Literals.TRACKING_CODE__TRACKING_CODE_TYPE_ID, newTrackingCodeTypeId);
 	}
 
 	/**

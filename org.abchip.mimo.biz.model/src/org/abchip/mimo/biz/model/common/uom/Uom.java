@@ -26,7 +26,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.Uom#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.Uom#getMainUomConversions <em>Main Uom Conversions</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.Uom#getNumericCode <em>Numeric Code</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.uom.Uom#getUomTypeId <em>Uom Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.uom.Uom#getUomType <em>Uom Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUom()
@@ -142,30 +142,26 @@ public interface Uom extends EntityTyped<UomType>, EntityInfo {
 	void setNumericCode(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Uom Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Uom Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uom Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Uom Type Id</em>' reference.
-	 * @see #setUomTypeId(UomType)
-	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUom_UomTypeId()
+	 * @return the value of the '<em>Uom Type</em>' reference.
+	 * @see #setUomType(UomType)
+	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUom_UomType()
 	 * @model keys="uomTypeId"
 	 * @generated
 	 */
-	UomType getUomTypeId();
+	UomType getUomType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.uom.Uom#getUomTypeId <em>Uom Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.uom.Uom#getUomType <em>Uom Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Uom Type Id</em>' reference.
-	 * @see #getUomTypeId()
+	 * @param value the new value of the '<em>Uom Type</em>' reference.
+	 * @see #getUomType()
 	 * @generated
 	 */
-	void setUomTypeId(UomType value);
+	void setUomType(UomType value);
 
 	/**
 	 * Returns the value of the '<em><b>Uom Id</b></em>' attribute.

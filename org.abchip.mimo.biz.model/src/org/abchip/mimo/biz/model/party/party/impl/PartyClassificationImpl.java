@@ -30,8 +30,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationImpl#getPartyClassificationGroupId <em>Party Classification Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationImpl#getPartyClassificationGroup <em>Party Classification Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -154,6 +154,46 @@ public class PartyClassificationImpl extends EntityTypedImpl<PartyClassification
 	 * @generated
 	 */
 	@Override
+	public Party getParty() {
+		return (Party)eGet(PartyPackage.Literals.PARTY_CLASSIFICATION__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(PartyPackage.Literals.PARTY_CLASSIFICATION__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PartyClassificationGroup getPartyClassificationGroup() {
+		return (PartyClassificationGroup)eGet(PartyPackage.Literals.PARTY_CLASSIFICATION__PARTY_CLASSIFICATION_GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPartyClassificationGroup(PartyClassificationGroup newPartyClassificationGroup) {
+		eSet(PartyPackage.Literals.PARTY_CLASSIFICATION__PARTY_CLASSIFICATION_GROUP, newPartyClassificationGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(PartyPackage.Literals.PARTY_CLASSIFICATION__FROM_DATE, true);
 	}
@@ -224,46 +264,6 @@ public class PartyClassificationImpl extends EntityTypedImpl<PartyClassification
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(PartyPackage.Literals.PARTY_CLASSIFICATION__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(PartyPackage.Literals.PARTY_CLASSIFICATION__PARTY_ID, newPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PartyClassificationGroup getPartyClassificationGroupId() {
-		return (PartyClassificationGroup)eGet(PartyPackage.Literals.PARTY_CLASSIFICATION__PARTY_CLASSIFICATION_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyClassificationGroupId(PartyClassificationGroup newPartyClassificationGroupId) {
-		eSet(PartyPackage.Literals.PARTY_CLASSIFICATION__PARTY_CLASSIFICATION_GROUP_ID, newPartyClassificationGroupId);
 	}
 
 } //PartyClassificationImpl

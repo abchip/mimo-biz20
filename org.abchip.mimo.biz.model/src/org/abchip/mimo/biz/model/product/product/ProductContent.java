@@ -23,18 +23,18 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductContent#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductContent#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductContent#getProductContentTypeId <em>Product Content Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductContent#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductContent#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductContent#getProductContentType <em>Product Content Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductContent#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductContent#getPurchaseFromDate <em>Purchase From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductContent#getPurchaseThruDate <em>Purchase Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductContent#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductContent#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductContent#getUseCountLimit <em>Use Count Limit</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductContent#getUseRoleTypeId <em>Use Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductContent#getUseRoleType <em>Use Role Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductContent#getUseTime <em>Use Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductContent#getUseTimeUomId <em>Use Time Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductContent#getUseTimeUom <em>Use Time Uom</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductContent()
@@ -43,31 +43,73 @@ import org.abchip.mimo.entity.EntityTyped;
  */
 public interface ProductContent extends EntityTyped<ProductContentType>, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Id</em>' reference.
-	 * @see #setContentId(Content)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductContent_ContentId()
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductContent_Product()
+	 * @model keys="productId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductContent#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
+
+	/**
+	 * Returns the value of the '<em><b>Content</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Content</em>' reference.
+	 * @see #setContent(Content)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductContent_Content()
 	 * @model keys="contentId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Content getContentId();
+	Content getContent();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductContent#getContentId <em>Content Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductContent#getContent <em>Content</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Id</em>' reference.
-	 * @see #getContentId()
+	 * @param value the new value of the '<em>Content</em>' reference.
+	 * @see #getContent()
 	 * @generated
 	 */
-	void setContentId(Content value);
+	void setContent(Content value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Content Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Content Type</em>' reference.
+	 * @see #setProductContentType(ProductContentType)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductContent_ProductContentType()
+	 * @model keys="productContentTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductContentType getProductContentType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductContent#getProductContentType <em>Product Content Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Content Type</em>' reference.
+	 * @see #getProductContentType()
+	 * @generated
+	 */
+	void setProductContentType(ProductContentType value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -227,30 +269,26 @@ public interface ProductContent extends EntityTyped<ProductContentType>, EntityI
 	void setUseCountLimit(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Use Role Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Use Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Use Role Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Use Role Type Id</em>' reference.
-	 * @see #setUseRoleTypeId(RoleType)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductContent_UseRoleTypeId()
+	 * @return the value of the '<em>Use Role Type</em>' reference.
+	 * @see #setUseRoleType(RoleType)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductContent_UseRoleType()
 	 * @model keys="roleTypeId"
 	 * @generated
 	 */
-	RoleType getUseRoleTypeId();
+	RoleType getUseRoleType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductContent#getUseRoleTypeId <em>Use Role Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductContent#getUseRoleType <em>Use Role Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Use Role Type Id</em>' reference.
-	 * @see #getUseRoleTypeId()
+	 * @param value the new value of the '<em>Use Role Type</em>' reference.
+	 * @see #getUseRoleType()
 	 * @generated
 	 */
-	void setUseRoleTypeId(RoleType value);
+	void setUseRoleType(RoleType value);
 
 	/**
 	 * Returns the value of the '<em><b>Use Time</b></em>' attribute.
@@ -279,83 +317,25 @@ public interface ProductContent extends EntityTyped<ProductContentType>, EntityI
 	void setUseTime(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Use Time Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Use Time Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Use Time Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Use Time Uom Id</em>' reference.
-	 * @see #setUseTimeUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductContent_UseTimeUomId()
+	 * @return the value of the '<em>Use Time Uom</em>' reference.
+	 * @see #setUseTimeUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductContent_UseTimeUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getUseTimeUomId();
+	Uom getUseTimeUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductContent#getUseTimeUomId <em>Use Time Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductContent#getUseTimeUom <em>Use Time Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Use Time Uom Id</em>' reference.
-	 * @see #getUseTimeUomId()
+	 * @param value the new value of the '<em>Use Time Uom</em>' reference.
+	 * @see #getUseTimeUom()
 	 * @generated
 	 */
-	void setUseTimeUomId(Uom value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductContent_ProductId()
-	 * @model keys="productId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Product getProductId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductContent#getProductId <em>Product Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
-	 * @generated
-	 */
-	void setProductId(Product value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Content Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Content Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Content Type Id</em>' reference.
-	 * @see #setProductContentTypeId(ProductContentType)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductContent_ProductContentTypeId()
-	 * @model keys="productContentTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductContentType getProductContentTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductContent#getProductContentTypeId <em>Product Content Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Content Type Id</em>' reference.
-	 * @see #getProductContentTypeId()
-	 * @generated
-	 */
-	void setProductContentTypeId(ProductContentType value);
+	void setUseTimeUom(Uom value);
 
 } // ProductContent

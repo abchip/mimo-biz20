@@ -21,9 +21,9 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderContent#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderContent#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderContent#getOrderContentTypeId <em>Order Content Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderContent#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderContent#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderContent#getOrderContentType <em>Order Content Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderContent#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderContent#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderContent#getThruDate <em>Thru Date</em>}</li>
@@ -35,31 +35,73 @@ import org.abchip.mimo.entity.EntityTyped;
  */
 public interface OrderContent extends EntityTyped<OrderContentType>, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Id</em>' reference.
-	 * @see #setContentId(Content)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderContent_ContentId()
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderContent_Order()
+	 * @model keys="orderId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	OrderHeader getOrder();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderContent#getOrder <em>Order</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
+	 * @generated
+	 */
+	void setOrder(OrderHeader value);
+
+	/**
+	 * Returns the value of the '<em><b>Content</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Content</em>' reference.
+	 * @see #setContent(Content)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderContent_Content()
 	 * @model keys="contentId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Content getContentId();
+	Content getContent();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderContent#getContentId <em>Content Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderContent#getContent <em>Content</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Id</em>' reference.
-	 * @see #getContentId()
+	 * @param value the new value of the '<em>Content</em>' reference.
+	 * @see #getContent()
 	 * @generated
 	 */
-	void setContentId(Content value);
+	void setContent(Content value);
+
+	/**
+	 * Returns the value of the '<em><b>Order Content Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Order Content Type</em>' reference.
+	 * @see #setOrderContentType(OrderContentType)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderContent_OrderContentType()
+	 * @model keys="orderContentTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	OrderContentType getOrderContentType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderContent#getOrderContentType <em>Order Content Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Order Content Type</em>' reference.
+	 * @see #getOrderContentType()
+	 * @generated
+	 */
+	void setOrderContentType(OrderContentType value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -87,60 +129,6 @@ public interface OrderContent extends EntityTyped<OrderContentType>, EntityInfo 
 	 * @generated
 	 */
 	void setFromDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Order Content Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Content Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Content Type Id</em>' reference.
-	 * @see #setOrderContentTypeId(OrderContentType)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderContent_OrderContentTypeId()
-	 * @model keys="orderContentTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	OrderContentType getOrderContentTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderContent#getOrderContentTypeId <em>Order Content Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Content Type Id</em>' reference.
-	 * @see #getOrderContentTypeId()
-	 * @generated
-	 */
-	void setOrderContentTypeId(OrderContentType value);
-
-	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderContent_OrderId()
-	 * @model keys="orderId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	OrderHeader getOrderId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderContent#getOrderId <em>Order Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
-	 * @generated
-	 */
-	void setOrderId(OrderHeader value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Item Seq Id</b></em>' attribute.

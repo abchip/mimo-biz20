@@ -34,11 +34,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGroupOrderImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGroupOrderImpl#getGroupOrderId <em>Group Order Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGroupOrderImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGroupOrderImpl#getJobId <em>Job Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGroupOrderImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGroupOrderImpl#getJob <em>Job</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGroupOrderImpl#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGroupOrderImpl#getReqOrderQty <em>Req Order Qty</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGroupOrderImpl#getSoldOrderQty <em>Sold Order Qty</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGroupOrderImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGroupOrderImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGroupOrderImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -181,6 +181,46 @@ public class ProductGroupOrderImpl extends EntityIdentifiableImpl implements Pro
 	 * @generated
 	 */
 	@Override
+	public JobSandbox getJob() {
+		return (JobSandbox)eGet(ProductPackage.Literals.PRODUCT_GROUP_ORDER__JOB, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setJob(JobSandbox newJob) {
+		eSet(ProductPackage.Literals.PRODUCT_GROUP_ORDER__JOB, newJob);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Product getProduct() {
+		return (Product)eGet(ProductPackage.Literals.PRODUCT_GROUP_ORDER__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(ProductPackage.Literals.PRODUCT_GROUP_ORDER__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getGroupOrderId() {
 		return (String)eGet(ProductPackage.Literals.PRODUCT_GROUP_ORDER__GROUP_ORDER_ID, true);
 	}
@@ -193,26 +233,6 @@ public class ProductGroupOrderImpl extends EntityIdentifiableImpl implements Pro
 	@Override
 	public void setGroupOrderId(String newGroupOrderId) {
 		eSet(ProductPackage.Literals.PRODUCT_GROUP_ORDER__GROUP_ORDER_ID, newGroupOrderId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public JobSandbox getJobId() {
-		return (JobSandbox)eGet(ProductPackage.Literals.PRODUCT_GROUP_ORDER__JOB_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setJobId(JobSandbox newJobId) {
-		eSet(ProductPackage.Literals.PRODUCT_GROUP_ORDER__JOB_ID, newJobId);
 	}
 
 	/**
@@ -261,8 +281,8 @@ public class ProductGroupOrderImpl extends EntityIdentifiableImpl implements Pro
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(ProductPackage.Literals.PRODUCT_GROUP_ORDER__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(ProductPackage.Literals.PRODUCT_GROUP_ORDER__STATUS, true);
 	}
 
 	/**
@@ -271,8 +291,8 @@ public class ProductGroupOrderImpl extends EntityIdentifiableImpl implements Pro
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(ProductPackage.Literals.PRODUCT_GROUP_ORDER__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(ProductPackage.Literals.PRODUCT_GROUP_ORDER__STATUS, newStatus);
 	}
 
 	/**
@@ -331,26 +351,6 @@ public class ProductGroupOrderImpl extends EntityIdentifiableImpl implements Pro
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(ProductPackage.Literals.PRODUCT_GROUP_ORDER__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(ProductPackage.Literals.PRODUCT_GROUP_ORDER__PRODUCT_ID, newProductId);
 	}
 
 } //ProductGroupOrderImpl

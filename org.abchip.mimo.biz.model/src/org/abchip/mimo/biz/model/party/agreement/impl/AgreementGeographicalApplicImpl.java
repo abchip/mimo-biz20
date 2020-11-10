@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementGeographicalApplicImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementGeographicalApplicImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementGeographicalApplicImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementGeographicalApplicImpl#getAgreementId <em>Agreement Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementGeographicalApplicImpl#getGeoId <em>Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementGeographicalApplicImpl#getAgreement <em>Agreement</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementGeographicalApplicImpl#getGeo <em>Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementGeographicalApplicImpl#getAgreementItemSeqId <em>Agreement Item Seq Id</em>}</li>
  * </ul>
  *
@@ -152,6 +152,46 @@ public class AgreementGeographicalApplicImpl extends EntityIdentifiableImpl impl
 	 * @generated
 	 */
 	@Override
+	public Agreement getAgreement() {
+		return (Agreement)eGet(AgreementPackage.Literals.AGREEMENT_GEOGRAPHICAL_APPLIC__AGREEMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAgreement(Agreement newAgreement) {
+		eSet(AgreementPackage.Literals.AGREEMENT_GEOGRAPHICAL_APPLIC__AGREEMENT, newAgreement);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Geo getGeo() {
+		return (Geo)eGet(AgreementPackage.Literals.AGREEMENT_GEOGRAPHICAL_APPLIC__GEO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGeo(Geo newGeo) {
+		eSet(AgreementPackage.Literals.AGREEMENT_GEOGRAPHICAL_APPLIC__GEO, newGeo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAgreementItemSeqId() {
 		return (String)eGet(AgreementPackage.Literals.AGREEMENT_GEOGRAPHICAL_APPLIC__AGREEMENT_ITEM_SEQ_ID, true);
 	}
@@ -202,46 +242,6 @@ public class AgreementGeographicalApplicImpl extends EntityIdentifiableImpl impl
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Geo getGeoId() {
-		return (Geo)eGet(AgreementPackage.Literals.AGREEMENT_GEOGRAPHICAL_APPLIC__GEO_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGeoId(Geo newGeoId) {
-		eSet(AgreementPackage.Literals.AGREEMENT_GEOGRAPHICAL_APPLIC__GEO_ID, newGeoId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Agreement getAgreementId() {
-		return (Agreement)eGet(AgreementPackage.Literals.AGREEMENT_GEOGRAPHICAL_APPLIC__AGREEMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAgreementId(Agreement newAgreementId) {
-		eSet(AgreementPackage.Literals.AGREEMENT_GEOGRAPHICAL_APPLIC__AGREEMENT_ID, newAgreementId);
 	}
 
 } //AgreementGeographicalApplicImpl

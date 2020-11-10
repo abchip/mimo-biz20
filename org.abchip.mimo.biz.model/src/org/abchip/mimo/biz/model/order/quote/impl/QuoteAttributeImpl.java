@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAttributeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAttributeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAttributeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAttributeImpl#getQuoteId <em>Quote Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAttributeImpl#getQuote <em>Quote</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAttributeImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAttributeImpl#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAttributeImpl#getAttrValue <em>Attr Value</em>}</li>
@@ -153,6 +153,26 @@ public class QuoteAttributeImpl extends EntityIdentifiableImpl implements QuoteA
 	 * @generated
 	 */
 	@Override
+	public Quote getQuote() {
+		return (Quote)eGet(QuotePackage.Literals.QUOTE_ATTRIBUTE__QUOTE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setQuote(Quote newQuote) {
+		eSet(QuotePackage.Literals.QUOTE_ATTRIBUTE__QUOTE, newQuote);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrDescription() {
 		return (String)eGet(QuotePackage.Literals.QUOTE_ATTRIBUTE__ATTR_DESCRIPTION, true);
 	}
@@ -243,26 +263,6 @@ public class QuoteAttributeImpl extends EntityIdentifiableImpl implements QuoteA
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Quote getQuoteId() {
-		return (Quote)eGet(QuotePackage.Literals.QUOTE_ATTRIBUTE__QUOTE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setQuoteId(Quote newQuoteId) {
-		eSet(QuotePackage.Literals.QUOTE_ATTRIBUTE__QUOTE_ID, newQuoteId);
 	}
 
 } //QuoteAttributeImpl

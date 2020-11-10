@@ -23,14 +23,14 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getSurveyResponseId <em>Survey Response Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getSurveyQuestionId <em>Survey Question Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getSurveyResponse <em>Survey Response</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getSurveyQuestion <em>Survey Question</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getSurveyMultiRespColId <em>Survey Multi Resp Col Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getAmountBase <em>Amount Base</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getAmountBaseUomId <em>Amount Base Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getAnsweredDate <em>Answered Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getBooleanResponse <em>Boolean Response</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getContentId <em>Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getContent <em>Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getCurrencyResponse <em>Currency Response</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getDuration <em>Duration</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getDurationUomId <em>Duration Uom Id</em>}</li>
@@ -48,6 +48,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface SurveyResponseAnswer extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Survey Response</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Survey Response</em>' reference.
+	 * @see #setSurveyResponse(SurveyResponse)
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyResponseAnswer_SurveyResponse()
+	 * @model keys="surveyResponseId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	SurveyResponse getSurveyResponse();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getSurveyResponse <em>Survey Response</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Survey Response</em>' reference.
+	 * @see #getSurveyResponse()
+	 * @generated
+	 */
+	void setSurveyResponse(SurveyResponse value);
+
+	/**
+	 * Returns the value of the '<em><b>Survey Question</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Survey Question</em>' reference.
+	 * @see #setSurveyQuestion(SurveyQuestion)
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyResponseAnswer_SurveyQuestion()
+	 * @model keys="surveyQuestionId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	SurveyQuestion getSurveyQuestion();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getSurveyQuestion <em>Survey Question</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Survey Question</em>' reference.
+	 * @see #getSurveyQuestion()
+	 * @generated
+	 */
+	void setSurveyQuestion(SurveyQuestion value);
+
 	/**
 	 * Returns the value of the '<em><b>Amount Base</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -149,30 +195,26 @@ public interface SurveyResponseAnswer extends EntityIdentifiable, EntityInfo {
 	void setBooleanResponse(Boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Content</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Id</em>' reference.
-	 * @see #setContentId(Content)
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyResponseAnswer_ContentId()
+	 * @return the value of the '<em>Content</em>' reference.
+	 * @see #setContent(Content)
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyResponseAnswer_Content()
 	 * @model keys="contentId"
 	 * @generated
 	 */
-	Content getContentId();
+	Content getContent();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getContentId <em>Content Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getContent <em>Content</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Id</em>' reference.
-	 * @see #getContentId()
+	 * @param value the new value of the '<em>Content</em>' reference.
+	 * @see #getContent()
 	 * @generated
 	 */
-	void setContentId(Content value);
+	void setContent(Content value);
 
 	/**
 	 * Returns the value of the '<em><b>Currency Response</b></em>' attribute.
@@ -410,60 +452,6 @@ public interface SurveyResponseAnswer extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setSurveyOptionSeqId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Survey Question Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Survey Question Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Survey Question Id</em>' reference.
-	 * @see #setSurveyQuestionId(SurveyQuestion)
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyResponseAnswer_SurveyQuestionId()
-	 * @model keys="surveyQuestionId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	SurveyQuestion getSurveyQuestionId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getSurveyQuestionId <em>Survey Question Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Survey Question Id</em>' reference.
-	 * @see #getSurveyQuestionId()
-	 * @generated
-	 */
-	void setSurveyQuestionId(SurveyQuestion value);
-
-	/**
-	 * Returns the value of the '<em><b>Survey Response Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Survey Response Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Survey Response Id</em>' reference.
-	 * @see #setSurveyResponseId(SurveyResponse)
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyResponseAnswer_SurveyResponseId()
-	 * @model keys="surveyResponseId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	SurveyResponse getSurveyResponseId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getSurveyResponseId <em>Survey Response Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Survey Response Id</em>' reference.
-	 * @see #getSurveyResponseId()
-	 * @generated
-	 */
-	void setSurveyResponseId(SurveyResponse value);
 
 	/**
 	 * Returns the value of the '<em><b>Text Response</b></em>' attribute.

@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeAttrImpl#getBudgetItemTypeId <em>Budget Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeAttrImpl#getBudgetItemType <em>Budget Item Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -151,6 +151,26 @@ public class BudgetItemTypeAttrImpl extends EntityIdentifiableImpl implements Bu
 	 * @generated
 	 */
 	@Override
+	public BudgetItemType getBudgetItemType() {
+		return (BudgetItemType)eGet(BudgetPackage.Literals.BUDGET_ITEM_TYPE_ATTR__BUDGET_ITEM_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBudgetItemType(BudgetItemType newBudgetItemType) {
+		eSet(BudgetPackage.Literals.BUDGET_ITEM_TYPE_ATTR__BUDGET_ITEM_TYPE, newBudgetItemType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(BudgetPackage.Literals.BUDGET_ITEM_TYPE_ATTR__DESCRIPTION, true);
 	}
@@ -221,26 +241,6 @@ public class BudgetItemTypeAttrImpl extends EntityIdentifiableImpl implements Bu
 	@Override
 	public void setAttrName(String newAttrName) {
 		eSet(BudgetPackage.Literals.BUDGET_ITEM_TYPE_ATTR__ATTR_NAME, newAttrName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public BudgetItemType getBudgetItemTypeId() {
-		return (BudgetItemType)eGet(BudgetPackage.Literals.BUDGET_ITEM_TYPE_ATTR__BUDGET_ITEM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBudgetItemTypeId(BudgetItemType newBudgetItemTypeId) {
-		eSet(BudgetPackage.Literals.BUDGET_ITEM_TYPE_ATTR__BUDGET_ITEM_TYPE_ID, newBudgetItemTypeId);
 	}
 
 } //BudgetItemTypeAttrImpl

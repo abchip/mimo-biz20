@@ -22,8 +22,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistRole#getPicklistId <em>Picklist Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistRole#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistRole#getPicklist <em>Picklist</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistRole#getRoleType <em>Role Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistRole#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistRole#getPartyId <em>Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistRole#getCreatedByUserLogin <em>Created By User Login</em>}</li>
@@ -36,6 +36,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface PicklistRole extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Picklist</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Picklist</em>' reference.
+	 * @see #setPicklist(Picklist)
+	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistRole_Picklist()
+	 * @model keys="picklistId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Picklist getPicklist();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistRole#getPicklist <em>Picklist</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Picklist</em>' reference.
+	 * @see #getPicklist()
+	 * @generated
+	 */
+	void setPicklist(Picklist value);
+
+	/**
+	 * Returns the value of the '<em><b>Role Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Role Type</em>' reference.
+	 * @see #setRoleType(RoleType)
+	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistRole_RoleType()
+	 * @model keys="roleTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	RoleType getRoleType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistRole#getRoleType <em>Role Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Role Type</em>' reference.
+	 * @see #getRoleType()
+	 * @generated
+	 */
+	void setRoleType(RoleType value);
+
 	/**
 	 * Returns the value of the '<em><b>Created By User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -142,60 +188,6 @@ public interface PicklistRole extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setPartyId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Picklist Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Picklist Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Picklist Id</em>' reference.
-	 * @see #setPicklistId(Picklist)
-	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistRole_PicklistId()
-	 * @model keys="picklistId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Picklist getPicklistId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistRole#getPicklistId <em>Picklist Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Picklist Id</em>' reference.
-	 * @see #getPicklistId()
-	 * @generated
-	 */
-	void setPicklistId(Picklist value);
-
-	/**
-	 * Returns the value of the '<em><b>Role Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Role Type Id</em>' reference.
-	 * @see #setRoleTypeId(RoleType)
-	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistRole_RoleTypeId()
-	 * @model keys="roleTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	RoleType getRoleTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistRole#getRoleTypeId <em>Role Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Role Type Id</em>' reference.
-	 * @see #getRoleTypeId()
-	 * @generated
-	 */
-	void setRoleTypeId(RoleType value);
 
 	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.

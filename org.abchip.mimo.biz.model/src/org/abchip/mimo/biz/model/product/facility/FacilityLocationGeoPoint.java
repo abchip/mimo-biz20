@@ -21,7 +21,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityLocationGeoPoint#getGeoPointId <em>Geo Point Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityLocationGeoPoint#getGeoPoint <em>Geo Point</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityLocationGeoPoint#getFacilityId <em>Facility Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityLocationGeoPoint#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityLocationGeoPoint#getLocationSeqId <em>Location Seq Id</em>}</li>
@@ -33,6 +33,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface FacilityLocationGeoPoint extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Geo Point</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Geo Point</em>' reference.
+	 * @see #setGeoPoint(GeoPoint)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityLocationGeoPoint_GeoPoint()
+	 * @model keys="geoPointId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	GeoPoint getGeoPoint();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityLocationGeoPoint#getGeoPoint <em>Geo Point</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Geo Point</em>' reference.
+	 * @see #getGeoPoint()
+	 * @generated
+	 */
+	void setGeoPoint(GeoPoint value);
+
 	/**
 	 * Returns the value of the '<em><b>Facility Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -87,33 +110,6 @@ public interface FacilityLocationGeoPoint extends EntityIdentifiable, EntityInfo
 	 * @generated
 	 */
 	void setFromDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Geo Point Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geo Point Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Geo Point Id</em>' reference.
-	 * @see #setGeoPointId(GeoPoint)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityLocationGeoPoint_GeoPointId()
-	 * @model keys="geoPointId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	GeoPoint getGeoPointId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityLocationGeoPoint#getGeoPointId <em>Geo Point Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Geo Point Id</em>' reference.
-	 * @see #getGeoPointId()
-	 * @generated
-	 */
-	void setGeoPointId(GeoPoint value);
 
 	/**
 	 * Returns the value of the '<em><b>Location Seq Id</b></em>' attribute.

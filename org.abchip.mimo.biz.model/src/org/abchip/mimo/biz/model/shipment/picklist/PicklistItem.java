@@ -23,12 +23,12 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistItem#getPicklistBinId <em>Picklist Bin Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistItem#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistItem#getInventoryItemId <em>Inventory Item Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistItem#getPicklistBin <em>Picklist Bin</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistItem#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistItem#getInventoryItem <em>Inventory Item</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistItem#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistItem#getShipGroupSeqId <em>Ship Group Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistItem#getItemStatusId <em>Item Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistItem#getItemStatus <em>Item Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistItem#getQuantity <em>Quantity</em>}</li>
  * </ul>
  *
@@ -38,84 +38,73 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface PicklistItem extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Inventory Item Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Picklist Bin</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Inventory Item Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Inventory Item Id</em>' reference.
-	 * @see #setInventoryItemId(InventoryItem)
-	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistItem_InventoryItemId()
-	 * @model keys="inventoryItemId" required="true"
+	 * @return the value of the '<em>Picklist Bin</em>' reference.
+	 * @see #setPicklistBin(PicklistBin)
+	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistItem_PicklistBin()
+	 * @model keys="picklistBinId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	InventoryItem getInventoryItemId();
+	PicklistBin getPicklistBin();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistItem#getInventoryItemId <em>Inventory Item Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistItem#getPicklistBin <em>Picklist Bin</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Inventory Item Id</em>' reference.
-	 * @see #getInventoryItemId()
+	 * @param value the new value of the '<em>Picklist Bin</em>' reference.
+	 * @see #getPicklistBin()
 	 * @generated
 	 */
-	void setInventoryItemId(InventoryItem value);
+	void setPicklistBin(PicklistBin value);
 
 	/**
-	 * Returns the value of the '<em><b>Item Status Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Item Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Item Status Id</em>' reference.
-	 * @see #setItemStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistItem_ItemStatusId()
-	 * @model keys="statusId"
-	 * @generated
-	 */
-	StatusItem getItemStatusId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistItem#getItemStatusId <em>Item Status Id</em>}' reference.
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Item Status Id</em>' reference.
-	 * @see #getItemStatusId()
-	 * @generated
-	 */
-	void setItemStatusId(StatusItem value);
-
-	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistItem_OrderId()
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistItem_Order()
 	 * @model keys="orderId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	OrderHeader getOrderId();
+	OrderHeader getOrder();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistItem#getOrderId <em>Order Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistItem#getOrder <em>Order</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
 	 * @generated
 	 */
-	void setOrderId(OrderHeader value);
+	void setOrder(OrderHeader value);
+
+	/**
+	 * Returns the value of the '<em><b>Inventory Item</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Inventory Item</em>' reference.
+	 * @see #setInventoryItem(InventoryItem)
+	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistItem_InventoryItem()
+	 * @model keys="inventoryItemId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	InventoryItem getInventoryItem();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistItem#getInventoryItem <em>Inventory Item</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Inventory Item</em>' reference.
+	 * @see #getInventoryItem()
+	 * @generated
+	 */
+	void setInventoryItem(InventoryItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -144,33 +133,6 @@ public interface PicklistItem extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setOrderItemSeqId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Picklist Bin Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Picklist Bin Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Picklist Bin Id</em>' reference.
-	 * @see #setPicklistBinId(PicklistBin)
-	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistItem_PicklistBinId()
-	 * @model keys="picklistBinId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	PicklistBin getPicklistBinId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistItem#getPicklistBinId <em>Picklist Bin Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Picklist Bin Id</em>' reference.
-	 * @see #getPicklistBinId()
-	 * @generated
-	 */
-	void setPicklistBinId(PicklistBin value);
 
 	/**
 	 * Returns the value of the '<em><b>Quantity</b></em>' attribute.
@@ -225,5 +187,27 @@ public interface PicklistItem extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setShipGroupSeqId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Item Status</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Item Status</em>' reference.
+	 * @see #setItemStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistItem_ItemStatus()
+	 * @model keys="statusId"
+	 * @generated
+	 */
+	StatusItem getItemStatus();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistItem#getItemStatus <em>Item Status</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Item Status</em>' reference.
+	 * @see #getItemStatus()
+	 * @generated
+	 */
+	void setItemStatus(StatusItem value);
 
 } // PicklistItem

@@ -19,8 +19,8 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.GoodIdentification#getGoodIdentificationTypeId <em>Good Identification Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.GoodIdentification#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.GoodIdentification#getGoodIdentificationType <em>Good Identification Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.GoodIdentification#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.GoodIdentification#getIdValue <em>Id Value</em>}</li>
  * </ul>
  *
@@ -29,6 +29,52 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface GoodIdentification extends EntityTyped<GoodIdentificationType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Good Identification Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Good Identification Type</em>' reference.
+	 * @see #setGoodIdentificationType(GoodIdentificationType)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getGoodIdentification_GoodIdentificationType()
+	 * @model keys="goodIdentificationTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	GoodIdentificationType getGoodIdentificationType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.GoodIdentification#getGoodIdentificationType <em>Good Identification Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Good Identification Type</em>' reference.
+	 * @see #getGoodIdentificationType()
+	 * @generated
+	 */
+	void setGoodIdentificationType(GoodIdentificationType value);
+
+	/**
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getGoodIdentification_Product()
+	 * @model keys="productId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.GoodIdentification#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
+
 	/**
 	 * Returns the value of the '<em><b>Id Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -54,59 +100,5 @@ public interface GoodIdentification extends EntityTyped<GoodIdentificationType>,
 	 * @generated
 	 */
 	void setIdValue(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Good Identification Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Good Identification Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Good Identification Type Id</em>' reference.
-	 * @see #setGoodIdentificationTypeId(GoodIdentificationType)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getGoodIdentification_GoodIdentificationTypeId()
-	 * @model keys="goodIdentificationTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	GoodIdentificationType getGoodIdentificationTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.GoodIdentification#getGoodIdentificationTypeId <em>Good Identification Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Good Identification Type Id</em>' reference.
-	 * @see #getGoodIdentificationTypeId()
-	 * @generated
-	 */
-	void setGoodIdentificationTypeId(GoodIdentificationType value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getGoodIdentification_ProductId()
-	 * @model keys="productId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Product getProductId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.GoodIdentification#getProductId <em>Product Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
-	 * @generated
-	 */
-	void setProductId(Product value);
 
 } // GoodIdentification

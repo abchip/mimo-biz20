@@ -47,22 +47,22 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getOrderPricePercent <em>Order Price Percent</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getOversizePrice <em>Oversize Price</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getOversizeUnit <em>Oversize Unit</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getPriceBreakId <em>Price Break Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getPriceBreak <em>Price Break</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getPriceUnitPrice <em>Price Unit Price</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getPriceUomId <em>Price Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getPriceUom <em>Price Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getProductFeatureGroupId <em>Product Feature Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getProductStoreId <em>Product Store Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getProductStoreShipMethId <em>Product Store Ship Meth Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getQuantityBreakId <em>Quantity Break Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getProductStoreShipMeth <em>Product Store Ship Meth</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getQuantityBreak <em>Quantity Break</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getQuantityUnitPrice <em>Quantity Unit Price</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getQuantityUomId <em>Quantity Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getQuantityUom <em>Quantity Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getRoleType <em>Role Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getShippingPricePercent <em>Shipping Price Percent</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getWeightBreakId <em>Weight Break Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getWeightBreak <em>Weight Break</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getWeightUnitPrice <em>Weight Unit Price</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getWeightUomId <em>Weight Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl#getWeightUom <em>Weight Uom</em>}</li>
  * </ul>
  *
  * @generated
@@ -404,8 +404,8 @@ public class ShipmentCostEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__PARTY, true);
 	}
 
 	/**
@@ -414,8 +414,8 @@ public class ShipmentCostEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__PARTY, newParty);
 	}
 
 	/**
@@ -424,8 +424,8 @@ public class ShipmentCostEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public QuantityBreak getPriceBreakId() {
-		return (QuantityBreak)eGet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__PRICE_BREAK_ID, true);
+	public QuantityBreak getPriceBreak() {
+		return (QuantityBreak)eGet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__PRICE_BREAK, true);
 	}
 
 	/**
@@ -434,8 +434,8 @@ public class ShipmentCostEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setPriceBreakId(QuantityBreak newPriceBreakId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__PRICE_BREAK_ID, newPriceBreakId);
+	public void setPriceBreak(QuantityBreak newPriceBreak) {
+		eSet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__PRICE_BREAK, newPriceBreak);
 	}
 
 	/**
@@ -464,8 +464,8 @@ public class ShipmentCostEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Uom getPriceUomId() {
-		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__PRICE_UOM_ID, true);
+	public Uom getPriceUom() {
+		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__PRICE_UOM, true);
 	}
 
 	/**
@@ -474,8 +474,8 @@ public class ShipmentCostEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setPriceUomId(Uom newPriceUomId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__PRICE_UOM_ID, newPriceUomId);
+	public void setPriceUom(Uom newPriceUom) {
+		eSet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__PRICE_UOM, newPriceUom);
 	}
 
 	/**
@@ -524,8 +524,8 @@ public class ShipmentCostEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public ProductStoreShipmentMeth getProductStoreShipMethId() {
-		return (ProductStoreShipmentMeth)eGet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__PRODUCT_STORE_SHIP_METH_ID, true);
+	public ProductStoreShipmentMeth getProductStoreShipMeth() {
+		return (ProductStoreShipmentMeth)eGet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__PRODUCT_STORE_SHIP_METH, true);
 	}
 
 	/**
@@ -534,8 +534,8 @@ public class ShipmentCostEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setProductStoreShipMethId(ProductStoreShipmentMeth newProductStoreShipMethId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__PRODUCT_STORE_SHIP_METH_ID, newProductStoreShipMethId);
+	public void setProductStoreShipMeth(ProductStoreShipmentMeth newProductStoreShipMeth) {
+		eSet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__PRODUCT_STORE_SHIP_METH, newProductStoreShipMeth);
 	}
 
 	/**
@@ -544,8 +544,8 @@ public class ShipmentCostEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public QuantityBreak getQuantityBreakId() {
-		return (QuantityBreak)eGet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__QUANTITY_BREAK_ID, true);
+	public QuantityBreak getQuantityBreak() {
+		return (QuantityBreak)eGet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__QUANTITY_BREAK, true);
 	}
 
 	/**
@@ -554,8 +554,8 @@ public class ShipmentCostEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setQuantityBreakId(QuantityBreak newQuantityBreakId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__QUANTITY_BREAK_ID, newQuantityBreakId);
+	public void setQuantityBreak(QuantityBreak newQuantityBreak) {
+		eSet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__QUANTITY_BREAK, newQuantityBreak);
 	}
 
 	/**
@@ -584,8 +584,8 @@ public class ShipmentCostEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Uom getQuantityUomId() {
-		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__QUANTITY_UOM_ID, true);
+	public Uom getQuantityUom() {
+		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__QUANTITY_UOM, true);
 	}
 
 	/**
@@ -594,8 +594,8 @@ public class ShipmentCostEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setQuantityUomId(Uom newQuantityUomId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__QUANTITY_UOM_ID, newQuantityUomId);
+	public void setQuantityUom(Uom newQuantityUom) {
+		eSet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__QUANTITY_UOM, newQuantityUom);
 	}
 
 	/**
@@ -604,8 +604,8 @@ public class ShipmentCostEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__ROLE_TYPE_ID, true);
+	public RoleType getRoleType() {
+		return (RoleType)eGet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__ROLE_TYPE, true);
 	}
 
 	/**
@@ -614,8 +614,8 @@ public class ShipmentCostEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__ROLE_TYPE_ID, newRoleTypeId);
+	public void setRoleType(RoleType newRoleType) {
+		eSet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__ROLE_TYPE, newRoleType);
 	}
 
 	/**
@@ -684,8 +684,8 @@ public class ShipmentCostEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public QuantityBreak getWeightBreakId() {
-		return (QuantityBreak)eGet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__WEIGHT_BREAK_ID, true);
+	public QuantityBreak getWeightBreak() {
+		return (QuantityBreak)eGet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__WEIGHT_BREAK, true);
 	}
 
 	/**
@@ -694,8 +694,8 @@ public class ShipmentCostEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setWeightBreakId(QuantityBreak newWeightBreakId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__WEIGHT_BREAK_ID, newWeightBreakId);
+	public void setWeightBreak(QuantityBreak newWeightBreak) {
+		eSet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__WEIGHT_BREAK, newWeightBreak);
 	}
 
 	/**
@@ -724,8 +724,8 @@ public class ShipmentCostEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Uom getWeightUomId() {
-		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__WEIGHT_UOM_ID, true);
+	public Uom getWeightUom() {
+		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__WEIGHT_UOM, true);
 	}
 
 	/**
@@ -734,8 +734,8 @@ public class ShipmentCostEstimateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setWeightUomId(Uom newWeightUomId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__WEIGHT_UOM_ID, newWeightUomId);
+	public void setWeightUom(Uom newWeightUom) {
+		eSet(Shipment_Package.Literals.SHIPMENT_COST_ESTIMATE__WEIGHT_UOM, newWeightUom);
 	}
 
 	/**

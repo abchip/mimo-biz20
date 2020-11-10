@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.RequirementCustRequest#getCustRequestId <em>Cust Request Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.RequirementCustRequest#getRequirementId <em>Requirement Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.RequirementCustRequest#getCustRequest <em>Cust Request</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.RequirementCustRequest#getRequirement <em>Requirement</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.RequirementCustRequest#getCustRequestItemSeqId <em>Cust Request Item Seq Id</em>}</li>
  * </ul>
  *
@@ -31,31 +31,50 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface RequirementCustRequest extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Cust Request Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Cust Request</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cust Request Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cust Request Id</em>' reference.
-	 * @see #setCustRequestId(CustRequest)
-	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementCustRequest_CustRequestId()
+	 * @return the value of the '<em>Cust Request</em>' reference.
+	 * @see #setCustRequest(CustRequest)
+	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementCustRequest_CustRequest()
 	 * @model keys="custRequestId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	CustRequest getCustRequestId();
+	CustRequest getCustRequest();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.RequirementCustRequest#getCustRequestId <em>Cust Request Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.RequirementCustRequest#getCustRequest <em>Cust Request</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cust Request Id</em>' reference.
-	 * @see #getCustRequestId()
+	 * @param value the new value of the '<em>Cust Request</em>' reference.
+	 * @see #getCustRequest()
 	 * @generated
 	 */
-	void setCustRequestId(CustRequest value);
+	void setCustRequest(CustRequest value);
+
+	/**
+	 * Returns the value of the '<em><b>Requirement</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Requirement</em>' reference.
+	 * @see #setRequirement(Requirement)
+	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementCustRequest_Requirement()
+	 * @model keys="requirementId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Requirement getRequirement();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.RequirementCustRequest#getRequirement <em>Requirement</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Requirement</em>' reference.
+	 * @see #getRequirement()
+	 * @generated
+	 */
+	void setRequirement(Requirement value);
 
 	/**
 	 * Returns the value of the '<em><b>Cust Request Item Seq Id</b></em>' attribute.
@@ -84,32 +103,5 @@ public interface RequirementCustRequest extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setCustRequestItemSeqId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Requirement Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Requirement Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Requirement Id</em>' reference.
-	 * @see #setRequirementId(Requirement)
-	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementCustRequest_RequirementId()
-	 * @model keys="requirementId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Requirement getRequirementId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.RequirementCustRequest#getRequirementId <em>Requirement Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Requirement Id</em>' reference.
-	 * @see #getRequirementId()
-	 * @generated
-	 */
-	void setRequirementId(Requirement value);
 
 } // RequirementCustRequest

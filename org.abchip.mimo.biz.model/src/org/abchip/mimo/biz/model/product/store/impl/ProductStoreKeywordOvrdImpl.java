@@ -29,11 +29,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreKeywordOvrdImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreKeywordOvrdImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreKeywordOvrdImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreKeywordOvrdImpl#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreKeywordOvrdImpl#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreKeywordOvrdImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreKeywordOvrdImpl#getKeyword <em>Keyword</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreKeywordOvrdImpl#getTarget <em>Target</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreKeywordOvrdImpl#getTargetTypeEnumId <em>Target Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreKeywordOvrdImpl#getTargetTypeEnum <em>Target Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreKeywordOvrdImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -156,6 +156,26 @@ public class ProductStoreKeywordOvrdImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(StorePackage.Literals.PRODUCT_STORE_KEYWORD_OVRD__PRODUCT_STORE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_KEYWORD_OVRD__PRODUCT_STORE, newProductStore);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(StorePackage.Literals.PRODUCT_STORE_KEYWORD_OVRD__FROM_DATE, true);
 	}
@@ -216,8 +236,8 @@ public class ProductStoreKeywordOvrdImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public Enumeration getTargetTypeEnumId() {
-		return (Enumeration)eGet(StorePackage.Literals.PRODUCT_STORE_KEYWORD_OVRD__TARGET_TYPE_ENUM_ID, true);
+	public Enumeration getTargetTypeEnum() {
+		return (Enumeration)eGet(StorePackage.Literals.PRODUCT_STORE_KEYWORD_OVRD__TARGET_TYPE_ENUM, true);
 	}
 
 	/**
@@ -226,8 +246,8 @@ public class ProductStoreKeywordOvrdImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setTargetTypeEnumId(Enumeration newTargetTypeEnumId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_KEYWORD_OVRD__TARGET_TYPE_ENUM_ID, newTargetTypeEnumId);
+	public void setTargetTypeEnum(Enumeration newTargetTypeEnum) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_KEYWORD_OVRD__TARGET_TYPE_ENUM, newTargetTypeEnum);
 	}
 
 	/**
@@ -286,26 +306,6 @@ public class ProductStoreKeywordOvrdImpl extends EntityIdentifiableImpl implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(StorePackage.Literals.PRODUCT_STORE_KEYWORD_OVRD__PRODUCT_STORE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_KEYWORD_OVRD__PRODUCT_STORE_ID, newProductStoreId);
 	}
 
 } //ProductStoreKeywordOvrdImpl

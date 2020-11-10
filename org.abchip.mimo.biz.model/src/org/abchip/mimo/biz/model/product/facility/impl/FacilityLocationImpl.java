@@ -30,13 +30,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationImpl#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationImpl#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationImpl#getLocationSeqId <em>Location Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationImpl#getAisleId <em>Aisle Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationImpl#getAreaId <em>Area Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationImpl#getGeoPointId <em>Geo Point Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationImpl#getGeoPoint <em>Geo Point</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationImpl#getLevelId <em>Level Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationImpl#getLocationTypeEnumId <em>Location Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationImpl#getLocationTypeEnum <em>Location Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationImpl#getPositionId <em>Position Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationImpl#getSectionId <em>Section Id</em>}</li>
  * </ul>
@@ -160,6 +160,26 @@ public class FacilityLocationImpl extends EntityIdentifiableImpl implements Faci
 	 * @generated
 	 */
 	@Override
+	public Facility getFacility() {
+		return (Facility)eGet(FacilityPackage.Literals.FACILITY_LOCATION__FACILITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacility(Facility newFacility) {
+		eSet(FacilityPackage.Literals.FACILITY_LOCATION__FACILITY, newFacility);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAisleId() {
 		return (String)eGet(FacilityPackage.Literals.FACILITY_LOCATION__AISLE_ID, true);
 	}
@@ -200,8 +220,8 @@ public class FacilityLocationImpl extends EntityIdentifiableImpl implements Faci
 	 * @generated
 	 */
 	@Override
-	public GeoPoint getGeoPointId() {
-		return (GeoPoint)eGet(FacilityPackage.Literals.FACILITY_LOCATION__GEO_POINT_ID, true);
+	public GeoPoint getGeoPoint() {
+		return (GeoPoint)eGet(FacilityPackage.Literals.FACILITY_LOCATION__GEO_POINT, true);
 	}
 
 	/**
@@ -210,8 +230,8 @@ public class FacilityLocationImpl extends EntityIdentifiableImpl implements Faci
 	 * @generated
 	 */
 	@Override
-	public void setGeoPointId(GeoPoint newGeoPointId) {
-		eSet(FacilityPackage.Literals.FACILITY_LOCATION__GEO_POINT_ID, newGeoPointId);
+	public void setGeoPoint(GeoPoint newGeoPoint) {
+		eSet(FacilityPackage.Literals.FACILITY_LOCATION__GEO_POINT, newGeoPoint);
 	}
 
 	/**
@@ -240,6 +260,26 @@ public class FacilityLocationImpl extends EntityIdentifiableImpl implements Faci
 	 * @generated
 	 */
 	@Override
+	public Enumeration getLocationTypeEnum() {
+		return (Enumeration)eGet(FacilityPackage.Literals.FACILITY_LOCATION__LOCATION_TYPE_ENUM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLocationTypeEnum(Enumeration newLocationTypeEnum) {
+		eSet(FacilityPackage.Literals.FACILITY_LOCATION__LOCATION_TYPE_ENUM, newLocationTypeEnum);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getLocationSeqId() {
 		return (String)eGet(FacilityPackage.Literals.FACILITY_LOCATION__LOCATION_SEQ_ID, true);
 	}
@@ -252,26 +292,6 @@ public class FacilityLocationImpl extends EntityIdentifiableImpl implements Faci
 	@Override
 	public void setLocationSeqId(String newLocationSeqId) {
 		eSet(FacilityPackage.Literals.FACILITY_LOCATION__LOCATION_SEQ_ID, newLocationSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Enumeration getLocationTypeEnumId() {
-		return (Enumeration)eGet(FacilityPackage.Literals.FACILITY_LOCATION__LOCATION_TYPE_ENUM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setLocationTypeEnumId(Enumeration newLocationTypeEnumId) {
-		eSet(FacilityPackage.Literals.FACILITY_LOCATION__LOCATION_TYPE_ENUM_ID, newLocationTypeEnumId);
 	}
 
 	/**
@@ -350,26 +370,6 @@ public class FacilityLocationImpl extends EntityIdentifiableImpl implements Faci
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(FacilityPackage.Literals.FACILITY_LOCATION__FACILITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(FacilityPackage.Literals.FACILITY_LOCATION__FACILITY_ID, newFacilityId);
 	}
 
 } //FacilityLocationImpl

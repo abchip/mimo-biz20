@@ -1,299 +1,299 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-geo="http://www.abchip.org/mimo/biz/model/common/geo" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/common/geo http://www.abchip.org/mimo/biz/model/common#//geo http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="020_common_GeoData_IN">
   <contents xsi:type="biz-geo:Geo" geoId="IN-AN" abbreviation="AN" geoCode="AN" geoName="Andaman and Nicobar Islands">
-    <geoTypeId href="GeoType#TERRITORY"/>
+    <geoType href="GeoType#TERRITORY"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-AP" abbreviation="AP" geoCode="AP" geoName="Andhra Pradesh">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-AR" abbreviation="AR" geoCode="AR" geoName="Arunachal Pradesh">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-AS" abbreviation="AS" geoCode="AS" geoName="Assam">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-BR" abbreviation="BR" geoCode="BR" geoName="Bihar">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-CH" abbreviation="CH" geoCode="CH" geoName="Chandigarh">
-    <geoTypeId href="GeoType#TERRITORY"/>
+    <geoType href="GeoType#TERRITORY"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-CT" abbreviation="CT" geoCode="CT" geoName="Chhattisgarh">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-DN" abbreviation="DN" geoCode="DN" geoName="Dadra and Nagar Haveli">
-    <geoTypeId href="GeoType#TERRITORY"/>
+    <geoType href="GeoType#TERRITORY"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-DD" abbreviation="DD" geoCode="DD" geoName="Daman and Diu">
-    <geoTypeId href="GeoType#TERRITORY"/>
+    <geoType href="GeoType#TERRITORY"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-DL" abbreviation="DL" geoCode="DL" geoName="Delhi">
-    <geoTypeId href="GeoType#TERRITORY"/>
+    <geoType href="GeoType#TERRITORY"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-GA" abbreviation="GA" geoCode="GA" geoName="Goa">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-GJ" abbreviation="GJ" geoCode="GJ" geoName="Gujarat">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-HR" abbreviation="HR" geoCode="HR" geoName="Haryana">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-HP" abbreviation="HP" geoCode="HP" geoName="Himachal Pradesh">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-JK" abbreviation="JK" geoCode="JK" geoName="Jammu and Kashmir">
-    <geoTypeId href="GeoType#TERRITORY"/>
+    <geoType href="GeoType#TERRITORY"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-JH" abbreviation="JH" geoCode="JH" geoName="Jharkhand">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-KA" abbreviation="KA" geoCode="KA" geoName="Karnataka">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-KL" abbreviation="KL" geoCode="KL" geoName="Kerala">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-LA" abbreviation="LA" geoCode="LA" geoName="Ladakh">
-    <geoTypeId href="GeoType#TERRITORY"/>
+    <geoType href="GeoType#TERRITORY"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-LD" abbreviation="LD" geoCode="LD" geoName="Lakshadweep">
-    <geoTypeId href="GeoType#TERRITORY"/>
+    <geoType href="GeoType#TERRITORY"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-MP" abbreviation="MP" geoCode="MP" geoName="Madhya Pradesh">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-MH" abbreviation="MH" geoCode="MH" geoName="Maharashtra">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-MN" abbreviation="MN" geoCode="MN" geoName="Manipur">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-ML" abbreviation="ML" geoCode="ML" geoName="Meghalaya">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-MZ" abbreviation="MZ" geoCode="MZ" geoName="Mizoram">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-NL" abbreviation="NL" geoCode="NL" geoName="Nagaland">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-OR" abbreviation="OR" geoCode="OR" geoName="Odisha">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-PY" abbreviation="PY" geoCode="PY" geoName="Puducherry" wellKnownText="Pondicherry">
-    <geoTypeId href="GeoType#TERRITORY"/>
+    <geoType href="GeoType#TERRITORY"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-PB" abbreviation="PB" geoCode="PB" geoName="Punjab">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-RJ" abbreviation="RJ" geoCode="RJ" geoName="Rajasthan">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-SK" abbreviation="SK" geoCode="SK" geoName="Sikkim">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-TN" abbreviation="TN" geoCode="TN" geoName="Tamil Nadu">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-TG" abbreviation="TG" geoCode="TG" geoName="Telangana">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-TR" abbreviation="TR" geoCode="TR" geoName="Tripura">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-UP" abbreviation="UP" geoCode="UP" geoName="Uttar Pradesh">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-UT" abbreviation="UT" geoCode="UT" geoName="Uttarakhand">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="IN-WB" abbreviation="WB" geoCode="WB" geoName="West Bengal">
-    <geoTypeId href="GeoType#STATE"/>
+    <geoType href="GeoType#STATE"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-AN"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-AP"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-AR"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-AS"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-BR"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-CH"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-CT"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-DL"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-DN"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-DD"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-GA"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-GJ"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-HR"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-HP"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-JK"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-JH"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-KA"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-KL"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-LA"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-LD"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-MP"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-MH"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-MN"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-ML"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-MZ"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-NL"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-OR"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-PY"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-PB"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-RJ"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-SK"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-TN"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-TG"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-TR"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-UP"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-UT"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#IND"/>
+    <geo href="Geo#IND"/>
     <geoIdTo href="Geo#IN-WB"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
 </mimo-ent:EntityContainer>

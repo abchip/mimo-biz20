@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductSearchConstraint#getProductSearchResultId <em>Product Search Result Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductSearchConstraint#getProductSearchResult <em>Product Search Result</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductSearchConstraint#getConstraintSeqId <em>Constraint Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductSearchConstraint#getAnyPrefix <em>Any Prefix</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductSearchConstraint#getAnySuffix <em>Any Suffix</em>}</li>
@@ -37,6 +37,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductSearchConstraint extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product Search Result</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Search Result</em>' reference.
+	 * @see #setProductSearchResult(ProductSearchResult)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductSearchConstraint_ProductSearchResult()
+	 * @model keys="productSearchResultId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductSearchResult getProductSearchResult();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductSearchConstraint#getProductSearchResult <em>Product Search Result</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Search Result</em>' reference.
+	 * @see #getProductSearchResult()
+	 * @generated
+	 */
+	void setProductSearchResult(ProductSearchResult value);
+
 	/**
 	 * Returns the value of the '<em><b>Constraint Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -286,32 +309,5 @@ public interface ProductSearchConstraint extends EntityIdentifiable, EntityInfo 
 	 * @generated
 	 */
 	void setRemoveStems(Boolean value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Search Result Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Search Result Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Search Result Id</em>' reference.
-	 * @see #setProductSearchResultId(ProductSearchResult)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductSearchConstraint_ProductSearchResultId()
-	 * @model keys="productSearchResultId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductSearchResult getProductSearchResultId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductSearchConstraint#getProductSearchResultId <em>Product Search Result Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Search Result Id</em>' reference.
-	 * @see #getProductSearchResultId()
-	 * @generated
-	 */
-	void setProductSearchResultId(ProductSearchResult value);
 
 } // ProductSearchConstraint

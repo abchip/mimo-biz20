@@ -21,8 +21,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint#getContainerId <em>Container Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint#getGeoPointId <em>Geo Point Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint#getContainer <em>Container</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint#getGeoPoint <em>Geo Point</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -32,6 +32,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ContainerGeoPoint extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Container</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Container</em>' reference.
+	 * @see #setContainer(Container)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getContainerGeoPoint_Container()
+	 * @model keys="containerId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Container getContainer();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint#getContainer <em>Container</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Container</em>' reference.
+	 * @see #getContainer()
+	 * @generated
+	 */
+	void setContainer(Container value);
+
+	/**
+	 * Returns the value of the '<em><b>Geo Point</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Geo Point</em>' reference.
+	 * @see #setGeoPoint(GeoPoint)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getContainerGeoPoint_GeoPoint()
+	 * @model keys="geoPointId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	GeoPoint getGeoPoint();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint#getGeoPoint <em>Geo Point</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Geo Point</em>' reference.
+	 * @see #getGeoPoint()
+	 * @generated
+	 */
+	void setGeoPoint(GeoPoint value);
+
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -60,33 +106,6 @@ public interface ContainerGeoPoint extends EntityIdentifiable, EntityInfo {
 	void setFromDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Geo Point Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geo Point Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Geo Point Id</em>' reference.
-	 * @see #setGeoPointId(GeoPoint)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getContainerGeoPoint_GeoPointId()
-	 * @model keys="geoPointId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	GeoPoint getGeoPointId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint#getGeoPointId <em>Geo Point Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Geo Point Id</em>' reference.
-	 * @see #getGeoPointId()
-	 * @generated
-	 */
-	void setGeoPointId(GeoPoint value);
-
-	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -111,32 +130,5 @@ public interface ContainerGeoPoint extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Container Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Container Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Container Id</em>' reference.
-	 * @see #setContainerId(Container)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getContainerGeoPoint_ContainerId()
-	 * @model keys="containerId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Container getContainerId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint#getContainerId <em>Container Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Id</em>' reference.
-	 * @see #getContainerId()
-	 * @generated
-	 */
-	void setContainerId(Container value);
 
 } // ContainerGeoPoint

@@ -28,12 +28,12 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductReview#getProductReviewId <em>Product Review Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductReview#getPostedAnonymous <em>Posted Anonymous</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductReview#getPostedDateTime <em>Posted Date Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductReview#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductReview#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductReview#getProductRating <em>Product Rating</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductReview#getProductReview <em>Product Review</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductReview#getProductStoreId <em>Product Store Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductReview#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductReview#getUserLoginId <em>User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductReview#getProductStore <em>Product Store</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductReview#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductReview#getUserLogin <em>User Login</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductReview()
@@ -66,6 +66,28 @@ public interface ProductReview extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setPostedDateTime(Date value);
+
+	/**
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductReview_Product()
+	 * @model keys="productId"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductReview#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Rating</b></em>' attribute.
@@ -120,6 +142,72 @@ public interface ProductReview extends EntityIdentifiable, EntityInfo {
 	void setProductReview(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Product Store</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Store</em>' reference.
+	 * @see #setProductStore(ProductStore)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductReview_ProductStore()
+	 * @model keys="productStoreId"
+	 * @generated
+	 */
+	ProductStore getProductStore();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductReview#getProductStore <em>Product Store</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Store</em>' reference.
+	 * @see #getProductStore()
+	 * @generated
+	 */
+	void setProductStore(ProductStore value);
+
+	/**
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductReview_Status()
+	 * @model keys="statusId"
+	 * @generated
+	 */
+	StatusItem getStatus();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductReview#getStatus <em>Status</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
+	 * @generated
+	 */
+	void setStatus(StatusItem value);
+
+	/**
+	 * Returns the value of the '<em><b>User Login</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>User Login</em>' reference.
+	 * @see #setUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductReview_UserLogin()
+	 * @model keys="userLoginId"
+	 * @generated
+	 */
+	UserLogin getUserLogin();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductReview#getUserLogin <em>User Login</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>User Login</em>' reference.
+	 * @see #getUserLogin()
+	 * @generated
+	 */
+	void setUserLogin(UserLogin value);
+
+	/**
 	 * Returns the value of the '<em><b>Product Review Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -167,109 +255,5 @@ public interface ProductReview extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setPostedAnonymous(Boolean value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Store Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store Id</em>' reference.
-	 * @see #setProductStoreId(ProductStore)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductReview_ProductStoreId()
-	 * @model keys="productStoreId"
-	 * @generated
-	 */
-	ProductStore getProductStoreId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductReview#getProductStoreId <em>Product Store Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store Id</em>' reference.
-	 * @see #getProductStoreId()
-	 * @generated
-	 */
-	void setProductStoreId(ProductStore value);
-
-	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductReview_StatusId()
-	 * @model keys="statusId"
-	 * @generated
-	 */
-	StatusItem getStatusId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductReview#getStatusId <em>Status Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
-	 * @generated
-	 */
-	void setStatusId(StatusItem value);
-
-	/**
-	 * Returns the value of the '<em><b>User Login Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>User Login Id</em>' reference.
-	 * @see #setUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductReview_UserLoginId()
-	 * @model keys="userLoginId"
-	 * @generated
-	 */
-	UserLogin getUserLoginId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductReview#getUserLoginId <em>User Login Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>User Login Id</em>' reference.
-	 * @see #getUserLoginId()
-	 * @generated
-	 */
-	void setUserLoginId(UserLogin value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductReview_ProductId()
-	 * @model keys="productId"
-	 * @generated
-	 */
-	Product getProductId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductReview#getProductId <em>Product Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
-	 * @generated
-	 */
-	void setProductId(Product value);
 
 } // ProductReview

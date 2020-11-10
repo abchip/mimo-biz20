@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.VarianceReasonGlAccountImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.VarianceReasonGlAccountImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.VarianceReasonGlAccountImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.VarianceReasonGlAccountImpl#getVarianceReasonId <em>Variance Reason Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.VarianceReasonGlAccountImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.VarianceReasonGlAccountImpl#getGlAccountId <em>Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.VarianceReasonGlAccountImpl#getVarianceReason <em>Variance Reason</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.VarianceReasonGlAccountImpl#getOrganizationParty <em>Organization Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.VarianceReasonGlAccountImpl#getGlAccount <em>Gl Account</em>}</li>
  * </ul>
  *
  * @generated
@@ -153,8 +153,8 @@ public class VarianceReasonGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public Party getOrganizationPartyId() {
-		return (Party)eGet(LedgerPackage.Literals.VARIANCE_REASON_GL_ACCOUNT__ORGANIZATION_PARTY_ID, true);
+	public VarianceReason getVarianceReason() {
+		return (VarianceReason)eGet(LedgerPackage.Literals.VARIANCE_REASON_GL_ACCOUNT__VARIANCE_REASON, true);
 	}
 
 	/**
@@ -163,8 +163,8 @@ public class VarianceReasonGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setOrganizationPartyId(Party newOrganizationPartyId) {
-		eSet(LedgerPackage.Literals.VARIANCE_REASON_GL_ACCOUNT__ORGANIZATION_PARTY_ID, newOrganizationPartyId);
+	public void setVarianceReason(VarianceReason newVarianceReason) {
+		eSet(LedgerPackage.Literals.VARIANCE_REASON_GL_ACCOUNT__VARIANCE_REASON, newVarianceReason);
 	}
 
 	/**
@@ -173,8 +173,8 @@ public class VarianceReasonGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public VarianceReason getVarianceReasonId() {
-		return (VarianceReason)eGet(LedgerPackage.Literals.VARIANCE_REASON_GL_ACCOUNT__VARIANCE_REASON_ID, true);
+	public Party getOrganizationParty() {
+		return (Party)eGet(LedgerPackage.Literals.VARIANCE_REASON_GL_ACCOUNT__ORGANIZATION_PARTY, true);
 	}
 
 	/**
@@ -183,8 +183,8 @@ public class VarianceReasonGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setVarianceReasonId(VarianceReason newVarianceReasonId) {
-		eSet(LedgerPackage.Literals.VARIANCE_REASON_GL_ACCOUNT__VARIANCE_REASON_ID, newVarianceReasonId);
+	public void setOrganizationParty(Party newOrganizationParty) {
+		eSet(LedgerPackage.Literals.VARIANCE_REASON_GL_ACCOUNT__ORGANIZATION_PARTY, newOrganizationParty);
 	}
 
 	/**
@@ -193,8 +193,8 @@ public class VarianceReasonGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public GlAccount getGlAccountId() {
-		return (GlAccount)eGet(LedgerPackage.Literals.VARIANCE_REASON_GL_ACCOUNT__GL_ACCOUNT_ID, true);
+	public GlAccount getGlAccount() {
+		return (GlAccount)eGet(LedgerPackage.Literals.VARIANCE_REASON_GL_ACCOUNT__GL_ACCOUNT, true);
 	}
 
 	/**
@@ -203,8 +203,8 @@ public class VarianceReasonGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setGlAccountId(GlAccount newGlAccountId) {
-		eSet(LedgerPackage.Literals.VARIANCE_REASON_GL_ACCOUNT__GL_ACCOUNT_ID, newGlAccountId);
+	public void setGlAccount(GlAccount newGlAccount) {
+		eSet(LedgerPackage.Literals.VARIANCE_REASON_GL_ACCOUNT__GL_ACCOUNT, newGlAccount);
 	}
 
 	/**

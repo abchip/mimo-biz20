@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustmentType#getReturnAdjustmentTypeId <em>Return Adjustment Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustmentType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustmentType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustmentType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustmentType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustmentType()
@@ -83,30 +83,26 @@ public interface ReturnAdjustmentType extends EntityType<ReturnAdjustment>, Enti
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(ReturnAdjustmentType)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustmentType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(ReturnAdjustmentType)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustmentType_ParentType()
 	 * @model keys="returnAdjustmentTypeId"
 	 * @generated
 	 */
-	ReturnAdjustmentType getParentTypeId();
+	ReturnAdjustmentType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustmentType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustmentType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(ReturnAdjustmentType value);
+	void setParentType(ReturnAdjustmentType value);
 
 	/**
 	 * Returns the value of the '<em><b>Return Adjustment Type Id</b></em>' attribute.

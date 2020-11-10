@@ -20,7 +20,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.TenantDomainName#getDomainName <em>Domain Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.TenantDomainName#getTenantId <em>Tenant Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.TenantDomainName#getTenant <em>Tenant</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.entity.tenant.TenantPackage#getTenantDomainName()
@@ -56,29 +56,25 @@ public interface TenantDomainName extends EntityIdentifiable, EntityInfo {
 	void setDomainName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Tenant Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Tenant</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tenant Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tenant Id</em>' reference.
-	 * @see #setTenantId(Tenant)
-	 * @see org.abchip.mimo.biz.model.entity.tenant.TenantPackage#getTenantDomainName_TenantId()
+	 * @return the value of the '<em>Tenant</em>' reference.
+	 * @see #setTenant(Tenant)
+	 * @see org.abchip.mimo.biz.model.entity.tenant.TenantPackage#getTenantDomainName_Tenant()
 	 * @model keys="tenantId"
 	 * @generated
 	 */
-	Tenant getTenantId();
+	Tenant getTenant();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.tenant.TenantDomainName#getTenantId <em>Tenant Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.tenant.TenantDomainName#getTenant <em>Tenant</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tenant Id</em>' reference.
-	 * @see #getTenantId()
+	 * @param value the new value of the '<em>Tenant</em>' reference.
+	 * @see #getTenant()
 	 * @generated
 	 */
-	void setTenantId(Tenant value);
+	void setTenant(Tenant value);
 
 } // TenantDomainName

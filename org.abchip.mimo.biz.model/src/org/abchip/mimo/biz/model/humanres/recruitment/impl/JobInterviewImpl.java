@@ -32,13 +32,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobInterviewImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobInterviewImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobInterviewImpl#getJobInterviewId <em>Job Interview Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobInterviewImpl#getGradeSecuredEnumId <em>Grade Secured Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobInterviewImpl#getGradeSecuredEnum <em>Grade Secured Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobInterviewImpl#getJobInterviewDate <em>Job Interview Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobInterviewImpl#getJobInterviewResult <em>Job Interview Result</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobInterviewImpl#getJobInterviewTypeId <em>Job Interview Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobInterviewImpl#getJobIntervieweePartyId <em>Job Interviewee Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobInterviewImpl#getJobInterviewerPartyId <em>Job Interviewer Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobInterviewImpl#getJobRequisitionId <em>Job Requisition Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobInterviewImpl#getJobInterviewType <em>Job Interview Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobInterviewImpl#getJobIntervieweeParty <em>Job Interviewee Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobInterviewImpl#getJobInterviewerParty <em>Job Interviewer Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobInterviewImpl#getJobRequisition <em>Job Requisition</em>}</li>
  * </ul>
  *
  * @generated
@@ -160,26 +160,6 @@ public class JobInterviewImpl extends EntityTypedImpl<JobInterviewType> implemen
 	 * @generated
 	 */
 	@Override
-	public Enumeration getGradeSecuredEnumId() {
-		return (Enumeration)eGet(RecruitmentPackage.Literals.JOB_INTERVIEW__GRADE_SECURED_ENUM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGradeSecuredEnumId(Enumeration newGradeSecuredEnumId) {
-		eSet(RecruitmentPackage.Literals.JOB_INTERVIEW__GRADE_SECURED_ENUM_ID, newGradeSecuredEnumId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Date getJobInterviewDate() {
 		return (Date)eGet(RecruitmentPackage.Literals.JOB_INTERVIEW__JOB_INTERVIEW_DATE, true);
 	}
@@ -220,6 +200,26 @@ public class JobInterviewImpl extends EntityTypedImpl<JobInterviewType> implemen
 	 * @generated
 	 */
 	@Override
+	public Enumeration getGradeSecuredEnum() {
+		return (Enumeration)eGet(RecruitmentPackage.Literals.JOB_INTERVIEW__GRADE_SECURED_ENUM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGradeSecuredEnum(Enumeration newGradeSecuredEnum) {
+		eSet(RecruitmentPackage.Literals.JOB_INTERVIEW__GRADE_SECURED_ENUM, newGradeSecuredEnum);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getJobInterviewResult() {
 		return (String)eGet(RecruitmentPackage.Literals.JOB_INTERVIEW__JOB_INTERVIEW_RESULT, true);
 	}
@@ -240,8 +240,8 @@ public class JobInterviewImpl extends EntityTypedImpl<JobInterviewType> implemen
 	 * @generated
 	 */
 	@Override
-	public JobInterviewType getJobInterviewTypeId() {
-		return (JobInterviewType)eGet(RecruitmentPackage.Literals.JOB_INTERVIEW__JOB_INTERVIEW_TYPE_ID, true);
+	public JobInterviewType getJobInterviewType() {
+		return (JobInterviewType)eGet(RecruitmentPackage.Literals.JOB_INTERVIEW__JOB_INTERVIEW_TYPE, true);
 	}
 
 	/**
@@ -250,8 +250,8 @@ public class JobInterviewImpl extends EntityTypedImpl<JobInterviewType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setJobInterviewTypeId(JobInterviewType newJobInterviewTypeId) {
-		eSet(RecruitmentPackage.Literals.JOB_INTERVIEW__JOB_INTERVIEW_TYPE_ID, newJobInterviewTypeId);
+	public void setJobInterviewType(JobInterviewType newJobInterviewType) {
+		eSet(RecruitmentPackage.Literals.JOB_INTERVIEW__JOB_INTERVIEW_TYPE, newJobInterviewType);
 	}
 
 	/**
@@ -260,8 +260,8 @@ public class JobInterviewImpl extends EntityTypedImpl<JobInterviewType> implemen
 	 * @generated
 	 */
 	@Override
-	public Party getJobIntervieweePartyId() {
-		return (Party)eGet(RecruitmentPackage.Literals.JOB_INTERVIEW__JOB_INTERVIEWEE_PARTY_ID, true);
+	public Party getJobIntervieweeParty() {
+		return (Party)eGet(RecruitmentPackage.Literals.JOB_INTERVIEW__JOB_INTERVIEWEE_PARTY, true);
 	}
 
 	/**
@@ -270,8 +270,8 @@ public class JobInterviewImpl extends EntityTypedImpl<JobInterviewType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setJobIntervieweePartyId(Party newJobIntervieweePartyId) {
-		eSet(RecruitmentPackage.Literals.JOB_INTERVIEW__JOB_INTERVIEWEE_PARTY_ID, newJobIntervieweePartyId);
+	public void setJobIntervieweeParty(Party newJobIntervieweeParty) {
+		eSet(RecruitmentPackage.Literals.JOB_INTERVIEW__JOB_INTERVIEWEE_PARTY, newJobIntervieweeParty);
 	}
 
 	/**
@@ -280,8 +280,8 @@ public class JobInterviewImpl extends EntityTypedImpl<JobInterviewType> implemen
 	 * @generated
 	 */
 	@Override
-	public Party getJobInterviewerPartyId() {
-		return (Party)eGet(RecruitmentPackage.Literals.JOB_INTERVIEW__JOB_INTERVIEWER_PARTY_ID, true);
+	public Party getJobInterviewerParty() {
+		return (Party)eGet(RecruitmentPackage.Literals.JOB_INTERVIEW__JOB_INTERVIEWER_PARTY, true);
 	}
 
 	/**
@@ -290,8 +290,8 @@ public class JobInterviewImpl extends EntityTypedImpl<JobInterviewType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setJobInterviewerPartyId(Party newJobInterviewerPartyId) {
-		eSet(RecruitmentPackage.Literals.JOB_INTERVIEW__JOB_INTERVIEWER_PARTY_ID, newJobInterviewerPartyId);
+	public void setJobInterviewerParty(Party newJobInterviewerParty) {
+		eSet(RecruitmentPackage.Literals.JOB_INTERVIEW__JOB_INTERVIEWER_PARTY, newJobInterviewerParty);
 	}
 
 	/**
@@ -300,8 +300,8 @@ public class JobInterviewImpl extends EntityTypedImpl<JobInterviewType> implemen
 	 * @generated
 	 */
 	@Override
-	public JobRequisition getJobRequisitionId() {
-		return (JobRequisition)eGet(RecruitmentPackage.Literals.JOB_INTERVIEW__JOB_REQUISITION_ID, true);
+	public JobRequisition getJobRequisition() {
+		return (JobRequisition)eGet(RecruitmentPackage.Literals.JOB_INTERVIEW__JOB_REQUISITION, true);
 	}
 
 	/**
@@ -310,8 +310,8 @@ public class JobInterviewImpl extends EntityTypedImpl<JobInterviewType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setJobRequisitionId(JobRequisition newJobRequisitionId) {
-		eSet(RecruitmentPackage.Literals.JOB_INTERVIEW__JOB_REQUISITION_ID, newJobRequisitionId);
+	public void setJobRequisition(JobRequisition newJobRequisition) {
+		eSet(RecruitmentPackage.Literals.JOB_INTERVIEW__JOB_REQUISITION, newJobRequisition);
 	}
 
 	/**

@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCategoryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCategoryImpl#getProductFeatureCategoryId <em>Product Feature Category Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCategoryImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCategoryImpl#getParentCategoryId <em>Parent Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCategoryImpl#getParentCategory <em>Parent Category</em>}</li>
  * </ul>
  *
  * @generated
@@ -171,8 +171,8 @@ public class ProductFeatureCategoryImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public ProductFeatureCategory getParentCategoryId() {
-		return (ProductFeatureCategory)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_CATEGORY__PARENT_CATEGORY_ID, true);
+	public ProductFeatureCategory getParentCategory() {
+		return (ProductFeatureCategory)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_CATEGORY__PARENT_CATEGORY, true);
 	}
 
 	/**
@@ -181,8 +181,8 @@ public class ProductFeatureCategoryImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setParentCategoryId(ProductFeatureCategory newParentCategoryId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_CATEGORY__PARENT_CATEGORY_ID, newParentCategoryId);
+	public void setParentCategory(ProductFeatureCategory newParentCategory) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_CATEGORY__PARENT_CATEGORY, newParentCategory);
 	}
 
 	/**

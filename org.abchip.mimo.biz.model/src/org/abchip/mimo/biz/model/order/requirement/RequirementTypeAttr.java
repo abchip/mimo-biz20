@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.RequirementTypeAttr#getRequirementTypeId <em>Requirement Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.RequirementTypeAttr#getRequirementType <em>Requirement Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.RequirementTypeAttr#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.RequirementTypeAttr#getDescription <em>Description</em>}</li>
  * </ul>
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface RequirementTypeAttr extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Requirement Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Requirement Type</em>' reference.
+	 * @see #setRequirementType(RequirementType)
+	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementTypeAttr_RequirementType()
+	 * @model keys="requirementTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	RequirementType getRequirementType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.RequirementTypeAttr#getRequirementType <em>Requirement Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Requirement Type</em>' reference.
+	 * @see #getRequirementType()
+	 * @generated
+	 */
+	void setRequirementType(RequirementType value);
+
 	/**
 	 * Returns the value of the '<em><b>Attr Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,32 +105,5 @@ public interface RequirementTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setDescription(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Requirement Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Requirement Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Requirement Type Id</em>' reference.
-	 * @see #setRequirementTypeId(RequirementType)
-	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementTypeAttr_RequirementTypeId()
-	 * @model keys="requirementTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	RequirementType getRequirementTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.RequirementTypeAttr#getRequirementTypeId <em>Requirement Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Requirement Type Id</em>' reference.
-	 * @see #getRequirementTypeId()
-	 * @generated
-	 */
-	void setRequirementTypeId(RequirementType value);
 
 } // RequirementTypeAttr

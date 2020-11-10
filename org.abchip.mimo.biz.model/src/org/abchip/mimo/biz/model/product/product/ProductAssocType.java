@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssocType#getProductAssocTypeId <em>Product Assoc Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssocType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssocType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssocType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductAssocType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductAssocType()
@@ -83,30 +83,26 @@ public interface ProductAssocType extends EntityType<ProductAssoc>, EntityInfo {
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(ProductAssocType)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductAssocType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(ProductAssocType)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductAssocType_ParentType()
 	 * @model keys="productAssocTypeId"
 	 * @generated
 	 */
-	ProductAssocType getParentTypeId();
+	ProductAssocType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductAssocType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductAssocType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(ProductAssocType value);
+	void setParentType(ProductAssocType value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Assoc Type Id</b></em>' attribute.

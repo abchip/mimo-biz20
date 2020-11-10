@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderRoleImpl#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderRoleImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderRoleImpl#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderRoleImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderRoleImpl#getRoleType <em>Role Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -154,8 +154,8 @@ public class OrderRoleImpl extends EntityIdentifiableImpl implements OrderRole {
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ROLE__ORDER_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ROLE__ORDER, true);
 	}
 
 	/**
@@ -164,8 +164,8 @@ public class OrderRoleImpl extends EntityIdentifiableImpl implements OrderRole {
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_ROLE__ORDER_ID, newOrderId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_ROLE__ORDER, newOrder);
 	}
 
 	/**
@@ -174,8 +174,8 @@ public class OrderRoleImpl extends EntityIdentifiableImpl implements OrderRole {
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(OrderPackage.Literals.ORDER_ROLE__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(OrderPackage.Literals.ORDER_ROLE__PARTY, true);
 	}
 
 	/**
@@ -184,8 +184,8 @@ public class OrderRoleImpl extends EntityIdentifiableImpl implements OrderRole {
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(OrderPackage.Literals.ORDER_ROLE__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(OrderPackage.Literals.ORDER_ROLE__PARTY, newParty);
 	}
 
 	/**
@@ -194,8 +194,8 @@ public class OrderRoleImpl extends EntityIdentifiableImpl implements OrderRole {
 	 * @generated
 	 */
 	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(OrderPackage.Literals.ORDER_ROLE__ROLE_TYPE_ID, true);
+	public RoleType getRoleType() {
+		return (RoleType)eGet(OrderPackage.Literals.ORDER_ROLE__ROLE_TYPE, true);
 	}
 
 	/**
@@ -204,8 +204,8 @@ public class OrderRoleImpl extends EntityIdentifiableImpl implements OrderRole {
 	 * @generated
 	 */
 	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(OrderPackage.Literals.ORDER_ROLE__ROLE_TYPE_ID, newRoleTypeId);
+	public void setRoleType(RoleType newRoleType) {
+		eSet(OrderPackage.Literals.ORDER_ROLE__ROLE_TYPE, newRoleType);
 	}
 
 	/**

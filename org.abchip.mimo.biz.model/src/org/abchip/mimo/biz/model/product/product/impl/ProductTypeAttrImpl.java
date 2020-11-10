@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeAttrImpl#getProductTypeId <em>Product Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeAttrImpl#getProductType <em>Product Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -152,6 +152,26 @@ public class ProductTypeAttrImpl extends EntityIdentifiableImpl implements Produ
 	 * @generated
 	 */
 	@Override
+	public ProductType getProductType() {
+		return (ProductType)eGet(ProductPackage.Literals.PRODUCT_TYPE_ATTR__PRODUCT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductType(ProductType newProductType) {
+		eSet(ProductPackage.Literals.PRODUCT_TYPE_ATTR__PRODUCT_TYPE, newProductType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(ProductPackage.Literals.PRODUCT_TYPE_ATTR__DESCRIPTION, true);
 	}
@@ -222,26 +242,6 @@ public class ProductTypeAttrImpl extends EntityIdentifiableImpl implements Produ
 	@Override
 	public void setAttrName(String newAttrName) {
 		eSet(ProductPackage.Literals.PRODUCT_TYPE_ATTR__ATTR_NAME, newAttrName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductType getProductTypeId() {
-		return (ProductType)eGet(ProductPackage.Literals.PRODUCT_TYPE_ATTR__PRODUCT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductTypeId(ProductType newProductTypeId) {
-		eSet(ProductPackage.Literals.PRODUCT_TYPE_ATTR__PRODUCT_TYPE_ID, newProductTypeId);
 	}
 
 } //ProductTypeAttrImpl

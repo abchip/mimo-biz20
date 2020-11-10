@@ -38,19 +38,19 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getFinAccountId <em>Fin Account Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getActualBalance <em>Actual Balance</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getAvailableBalance <em>Available Balance</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getFinAccountAttributes <em>Fin Account Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getFinAccountCode <em>Fin Account Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getFinAccountName <em>Fin Account Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getFinAccountPin <em>Fin Account Pin</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getFinAccountTypeId <em>Fin Account Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getFinAccountType <em>Fin Account Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#isIsRefundable <em>Is Refundable</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getOwnerPartyId <em>Owner Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getPostToGlAccountId <em>Post To Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getOrganizationParty <em>Organization Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getOwnerParty <em>Owner Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getPostToGlAccount <em>Post To Gl Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getReplenishLevel <em>Replenish Level</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getReplenishPaymentId <em>Replenish Payment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getReplenishPayment <em>Replenish Payment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getStatusId <em>Status Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -213,8 +213,8 @@ public class FinAccountImpl extends EntityTypedImpl<FinAccountType> implements F
 	 * @generated
 	 */
 	@Override
-	public Uom getCurrencyUomId() {
-		return (Uom)eGet(FinaccountPackage.Literals.FIN_ACCOUNT__CURRENCY_UOM_ID, true);
+	public Uom getCurrencyUom() {
+		return (Uom)eGet(FinaccountPackage.Literals.FIN_ACCOUNT__CURRENCY_UOM, true);
 	}
 
 	/**
@@ -223,8 +223,8 @@ public class FinAccountImpl extends EntityTypedImpl<FinAccountType> implements F
 	 * @generated
 	 */
 	@Override
-	public void setCurrencyUomId(Uom newCurrencyUomId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT__CURRENCY_UOM_ID, newCurrencyUomId);
+	public void setCurrencyUom(Uom newCurrencyUom) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT__CURRENCY_UOM, newCurrencyUom);
 	}
 
 	/**
@@ -304,6 +304,26 @@ public class FinAccountImpl extends EntityTypedImpl<FinAccountType> implements F
 	 * @generated
 	 */
 	@Override
+	public FinAccountType getFinAccountType() {
+		return (FinAccountType)eGet(FinaccountPackage.Literals.FIN_ACCOUNT__FIN_ACCOUNT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFinAccountType(FinAccountType newFinAccountType) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT__FIN_ACCOUNT_TYPE, newFinAccountType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(FinaccountPackage.Literals.FIN_ACCOUNT__FROM_DATE, true);
 	}
@@ -344,8 +364,8 @@ public class FinAccountImpl extends EntityTypedImpl<FinAccountType> implements F
 	 * @generated
 	 */
 	@Override
-	public Party getOrganizationPartyId() {
-		return (Party)eGet(FinaccountPackage.Literals.FIN_ACCOUNT__ORGANIZATION_PARTY_ID, true);
+	public Party getOrganizationParty() {
+		return (Party)eGet(FinaccountPackage.Literals.FIN_ACCOUNT__ORGANIZATION_PARTY, true);
 	}
 
 	/**
@@ -354,8 +374,8 @@ public class FinAccountImpl extends EntityTypedImpl<FinAccountType> implements F
 	 * @generated
 	 */
 	@Override
-	public void setOrganizationPartyId(Party newOrganizationPartyId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT__ORGANIZATION_PARTY_ID, newOrganizationPartyId);
+	public void setOrganizationParty(Party newOrganizationParty) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT__ORGANIZATION_PARTY, newOrganizationParty);
 	}
 
 	/**
@@ -364,8 +384,8 @@ public class FinAccountImpl extends EntityTypedImpl<FinAccountType> implements F
 	 * @generated
 	 */
 	@Override
-	public Party getOwnerPartyId() {
-		return (Party)eGet(FinaccountPackage.Literals.FIN_ACCOUNT__OWNER_PARTY_ID, true);
+	public Party getOwnerParty() {
+		return (Party)eGet(FinaccountPackage.Literals.FIN_ACCOUNT__OWNER_PARTY, true);
 	}
 
 	/**
@@ -374,8 +394,8 @@ public class FinAccountImpl extends EntityTypedImpl<FinAccountType> implements F
 	 * @generated
 	 */
 	@Override
-	public void setOwnerPartyId(Party newOwnerPartyId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT__OWNER_PARTY_ID, newOwnerPartyId);
+	public void setOwnerParty(Party newOwnerParty) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT__OWNER_PARTY, newOwnerParty);
 	}
 
 	/**
@@ -384,8 +404,8 @@ public class FinAccountImpl extends EntityTypedImpl<FinAccountType> implements F
 	 * @generated
 	 */
 	@Override
-	public GlAccount getPostToGlAccountId() {
-		return (GlAccount)eGet(FinaccountPackage.Literals.FIN_ACCOUNT__POST_TO_GL_ACCOUNT_ID, true);
+	public GlAccount getPostToGlAccount() {
+		return (GlAccount)eGet(FinaccountPackage.Literals.FIN_ACCOUNT__POST_TO_GL_ACCOUNT, true);
 	}
 
 	/**
@@ -394,8 +414,8 @@ public class FinAccountImpl extends EntityTypedImpl<FinAccountType> implements F
 	 * @generated
 	 */
 	@Override
-	public void setPostToGlAccountId(GlAccount newPostToGlAccountId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT__POST_TO_GL_ACCOUNT_ID, newPostToGlAccountId);
+	public void setPostToGlAccount(GlAccount newPostToGlAccount) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT__POST_TO_GL_ACCOUNT, newPostToGlAccount);
 	}
 
 	/**
@@ -424,8 +444,8 @@ public class FinAccountImpl extends EntityTypedImpl<FinAccountType> implements F
 	 * @generated
 	 */
 	@Override
-	public PaymentMethod getReplenishPaymentId() {
-		return (PaymentMethod)eGet(FinaccountPackage.Literals.FIN_ACCOUNT__REPLENISH_PAYMENT_ID, true);
+	public PaymentMethod getReplenishPayment() {
+		return (PaymentMethod)eGet(FinaccountPackage.Literals.FIN_ACCOUNT__REPLENISH_PAYMENT, true);
 	}
 
 	/**
@@ -434,8 +454,8 @@ public class FinAccountImpl extends EntityTypedImpl<FinAccountType> implements F
 	 * @generated
 	 */
 	@Override
-	public void setReplenishPaymentId(PaymentMethod newReplenishPaymentId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT__REPLENISH_PAYMENT_ID, newReplenishPaymentId);
+	public void setReplenishPayment(PaymentMethod newReplenishPayment) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT__REPLENISH_PAYMENT, newReplenishPayment);
 	}
 
 	/**
@@ -514,26 +534,6 @@ public class FinAccountImpl extends EntityTypedImpl<FinAccountType> implements F
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FinAccountType getFinAccountTypeId() {
-		return (FinAccountType)eGet(FinaccountPackage.Literals.FIN_ACCOUNT__FIN_ACCOUNT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFinAccountTypeId(FinAccountType newFinAccountTypeId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT__FIN_ACCOUNT_TYPE_ID, newFinAccountTypeId);
 	}
 
 	/**

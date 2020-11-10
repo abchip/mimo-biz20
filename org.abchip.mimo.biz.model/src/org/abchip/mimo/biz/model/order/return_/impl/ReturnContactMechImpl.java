@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnContactMechImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnContactMechImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnContactMechImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnContactMechImpl#getReturnId <em>Return Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnContactMechImpl#getContactMechId <em>Contact Mech Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnContactMechImpl#getContactMechPurposeTypeId <em>Contact Mech Purpose Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnContactMechImpl#getReturn <em>Return</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnContactMechImpl#getContactMech <em>Contact Mech</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnContactMechImpl#getContactMechPurposeType <em>Contact Mech Purpose Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -154,8 +154,8 @@ public class ReturnContactMechImpl extends EntityIdentifiableImpl implements Ret
 	 * @generated
 	 */
 	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(ReturnPackage.Literals.RETURN_CONTACT_MECH__CONTACT_MECH_ID, true);
+	public ReturnHeader getReturn() {
+		return (ReturnHeader)eGet(ReturnPackage.Literals.RETURN_CONTACT_MECH__RETURN, true);
 	}
 
 	/**
@@ -164,8 +164,8 @@ public class ReturnContactMechImpl extends EntityIdentifiableImpl implements Ret
 	 * @generated
 	 */
 	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(ReturnPackage.Literals.RETURN_CONTACT_MECH__CONTACT_MECH_ID, newContactMechId);
+	public void setReturn(ReturnHeader newReturn) {
+		eSet(ReturnPackage.Literals.RETURN_CONTACT_MECH__RETURN, newReturn);
 	}
 
 	/**
@@ -174,8 +174,8 @@ public class ReturnContactMechImpl extends EntityIdentifiableImpl implements Ret
 	 * @generated
 	 */
 	@Override
-	public ContactMechPurposeType getContactMechPurposeTypeId() {
-		return (ContactMechPurposeType)eGet(ReturnPackage.Literals.RETURN_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE_ID, true);
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(ReturnPackage.Literals.RETURN_CONTACT_MECH__CONTACT_MECH, true);
 	}
 
 	/**
@@ -184,8 +184,28 @@ public class ReturnContactMechImpl extends EntityIdentifiableImpl implements Ret
 	 * @generated
 	 */
 	@Override
-	public void setContactMechPurposeTypeId(ContactMechPurposeType newContactMechPurposeTypeId) {
-		eSet(ReturnPackage.Literals.RETURN_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE_ID, newContactMechPurposeTypeId);
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(ReturnPackage.Literals.RETURN_CONTACT_MECH__CONTACT_MECH, newContactMech);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContactMechPurposeType getContactMechPurposeType() {
+		return (ContactMechPurposeType)eGet(ReturnPackage.Literals.RETURN_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContactMechPurposeType(ContactMechPurposeType newContactMechPurposeType) {
+		eSet(ReturnPackage.Literals.RETURN_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE, newContactMechPurposeType);
 	}
 
 	/**
@@ -224,26 +244,6 @@ public class ReturnContactMechImpl extends EntityIdentifiableImpl implements Ret
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ReturnHeader getReturnId() {
-		return (ReturnHeader)eGet(ReturnPackage.Literals.RETURN_CONTACT_MECH__RETURN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setReturnId(ReturnHeader newReturnId) {
-		eSet(ReturnPackage.Literals.RETURN_CONTACT_MECH__RETURN_ID, newReturnId);
 	}
 
 } //ReturnContactMechImpl

@@ -18,7 +18,7 @@ import org.abchip.mimo.biz.BizEntityNote;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteNote#getQuoteId <em>Quote Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteNote#getQuote <em>Quote</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteNote()
@@ -27,30 +27,26 @@ import org.abchip.mimo.biz.BizEntityNote;
  */
 public interface QuoteNote extends BizEntityNote {
 	/**
-	 * Returns the value of the '<em><b>Quote Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Quote</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Quote Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Quote Id</em>' reference.
-	 * @see #setQuoteId(Quote)
-	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteNote_QuoteId()
+	 * @return the value of the '<em>Quote</em>' reference.
+	 * @see #setQuote(Quote)
+	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteNote_Quote()
 	 * @model keys="quoteId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Quote getQuoteId();
+	Quote getQuote();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteNote#getQuoteId <em>Quote Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteNote#getQuote <em>Quote</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Quote Id</em>' reference.
-	 * @see #getQuoteId()
+	 * @param value the new value of the '<em>Quote</em>' reference.
+	 * @see #getQuote()
 	 * @generated
 	 */
-	void setQuoteId(Quote value);
+	void setQuote(Quote value);
 
 } // QuoteNote

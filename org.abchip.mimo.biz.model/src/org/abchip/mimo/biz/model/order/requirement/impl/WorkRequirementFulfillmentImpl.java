@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.WorkRequirementFulfillmentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.WorkRequirementFulfillmentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.WorkRequirementFulfillmentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.WorkRequirementFulfillmentImpl#getRequirementId <em>Requirement Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.WorkRequirementFulfillmentImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.WorkRequirementFulfillmentImpl#getWorkReqFulfTypeId <em>Work Req Fulf Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.WorkRequirementFulfillmentImpl#getRequirement <em>Requirement</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.WorkRequirementFulfillmentImpl#getWorkEffort <em>Work Effort</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.WorkRequirementFulfillmentImpl#getWorkReqFulfType <em>Work Req Fulf Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -154,8 +154,8 @@ public class WorkRequirementFulfillmentImpl extends EntityTypedImpl<WorkReqFulfT
 	 * @generated
 	 */
 	@Override
-	public Requirement getRequirementId() {
-		return (Requirement)eGet(RequirementPackage.Literals.WORK_REQUIREMENT_FULFILLMENT__REQUIREMENT_ID, true);
+	public Requirement getRequirement() {
+		return (Requirement)eGet(RequirementPackage.Literals.WORK_REQUIREMENT_FULFILLMENT__REQUIREMENT, true);
 	}
 
 	/**
@@ -164,8 +164,8 @@ public class WorkRequirementFulfillmentImpl extends EntityTypedImpl<WorkReqFulfT
 	 * @generated
 	 */
 	@Override
-	public void setRequirementId(Requirement newRequirementId) {
-		eSet(RequirementPackage.Literals.WORK_REQUIREMENT_FULFILLMENT__REQUIREMENT_ID, newRequirementId);
+	public void setRequirement(Requirement newRequirement) {
+		eSet(RequirementPackage.Literals.WORK_REQUIREMENT_FULFILLMENT__REQUIREMENT, newRequirement);
 	}
 
 	/**
@@ -174,8 +174,8 @@ public class WorkRequirementFulfillmentImpl extends EntityTypedImpl<WorkReqFulfT
 	 * @generated
 	 */
 	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(RequirementPackage.Literals.WORK_REQUIREMENT_FULFILLMENT__WORK_EFFORT_ID, true);
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(RequirementPackage.Literals.WORK_REQUIREMENT_FULFILLMENT__WORK_EFFORT, true);
 	}
 
 	/**
@@ -184,8 +184,8 @@ public class WorkRequirementFulfillmentImpl extends EntityTypedImpl<WorkReqFulfT
 	 * @generated
 	 */
 	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(RequirementPackage.Literals.WORK_REQUIREMENT_FULFILLMENT__WORK_EFFORT_ID, newWorkEffortId);
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(RequirementPackage.Literals.WORK_REQUIREMENT_FULFILLMENT__WORK_EFFORT, newWorkEffort);
 	}
 
 	/**
@@ -194,8 +194,8 @@ public class WorkRequirementFulfillmentImpl extends EntityTypedImpl<WorkReqFulfT
 	 * @generated
 	 */
 	@Override
-	public WorkReqFulfType getWorkReqFulfTypeId() {
-		return (WorkReqFulfType)eGet(RequirementPackage.Literals.WORK_REQUIREMENT_FULFILLMENT__WORK_REQ_FULF_TYPE_ID, true);
+	public WorkReqFulfType getWorkReqFulfType() {
+		return (WorkReqFulfType)eGet(RequirementPackage.Literals.WORK_REQUIREMENT_FULFILLMENT__WORK_REQ_FULF_TYPE, true);
 	}
 
 	/**
@@ -204,8 +204,8 @@ public class WorkRequirementFulfillmentImpl extends EntityTypedImpl<WorkReqFulfT
 	 * @generated
 	 */
 	@Override
-	public void setWorkReqFulfTypeId(WorkReqFulfType newWorkReqFulfTypeId) {
-		eSet(RequirementPackage.Literals.WORK_REQUIREMENT_FULFILLMENT__WORK_REQ_FULF_TYPE_ID, newWorkReqFulfTypeId);
+	public void setWorkReqFulfType(WorkReqFulfType newWorkReqFulfType) {
+		eSet(RequirementPackage.Literals.WORK_REQUIREMENT_FULFILLMENT__WORK_REQ_FULF_TYPE, newWorkReqFulfType);
 	}
 
 	/**

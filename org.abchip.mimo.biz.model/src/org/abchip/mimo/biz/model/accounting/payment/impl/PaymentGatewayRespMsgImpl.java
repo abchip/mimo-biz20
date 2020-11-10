@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayRespMsgImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayRespMsgImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayRespMsgImpl#getPaymentGatewayRespMsgId <em>Payment Gateway Resp Msg Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayRespMsgImpl#getPaymentGatewayResponseId <em>Payment Gateway Response Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayRespMsgImpl#getPaymentGatewayResponse <em>Payment Gateway Response</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayRespMsgImpl#getPgrMessage <em>Pgr Message</em>}</li>
  * </ul>
  *
@@ -171,6 +171,26 @@ public class PaymentGatewayRespMsgImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
+	public PaymentGatewayResponse getPaymentGatewayResponse() {
+		return (PaymentGatewayResponse)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESP_MSG__PAYMENT_GATEWAY_RESPONSE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPaymentGatewayResponse(PaymentGatewayResponse newPaymentGatewayResponse) {
+		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESP_MSG__PAYMENT_GATEWAY_RESPONSE, newPaymentGatewayResponse);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getPgrMessage() {
 		return (String)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESP_MSG__PGR_MESSAGE, true);
 	}
@@ -221,26 +241,6 @@ public class PaymentGatewayRespMsgImpl extends EntityIdentifiableImpl implements
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PaymentGatewayResponse getPaymentGatewayResponseId() {
-		return (PaymentGatewayResponse)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESP_MSG__PAYMENT_GATEWAY_RESPONSE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaymentGatewayResponseId(PaymentGatewayResponse newPaymentGatewayResponseId) {
-		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESP_MSG__PAYMENT_GATEWAY_RESPONSE_ID, newPaymentGatewayResponseId);
 	}
 
 } //PaymentGatewayRespMsgImpl

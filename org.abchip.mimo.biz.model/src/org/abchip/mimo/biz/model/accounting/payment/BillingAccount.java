@@ -25,9 +25,9 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccount#getBillingAccountId <em>Billing Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccount#getAccountCurrencyUomId <em>Account Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccount#getAccountCurrencyUom <em>Account Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccount#getAccountLimit <em>Account Limit</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccount#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccount#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccount#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccount#getExternalAccountId <em>External Account Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccount#getFromDate <em>From Date</em>}</li>
@@ -39,32 +39,6 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface BillingAccount extends EntityIdentifiable, EntityInfo {
-	/**
-	 * Returns the value of the '<em><b>Account Currency Uom Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Account Currency Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Account Currency Uom Id</em>' reference.
-	 * @see #setAccountCurrencyUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccount_AccountCurrencyUomId()
-	 * @model keys="uomId"
-	 * @generated
-	 */
-	Uom getAccountCurrencyUomId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccount#getAccountCurrencyUomId <em>Account Currency Uom Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Account Currency Uom Id</em>' reference.
-	 * @see #getAccountCurrencyUomId()
-	 * @generated
-	 */
-	void setAccountCurrencyUomId(Uom value);
-
 	/**
 	 * Returns the value of the '<em><b>Account Limit</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -92,30 +66,26 @@ public interface BillingAccount extends EntityIdentifiable, EntityInfo {
 	void setAccountLimit(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Contact Mech Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Contact Mech</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #setContactMechId(ContactMech)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccount_ContactMechId()
+	 * @return the value of the '<em>Contact Mech</em>' reference.
+	 * @see #setContactMech(ContactMech)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccount_ContactMech()
 	 * @model keys="contactMechId"
 	 * @generated
 	 */
-	ContactMech getContactMechId();
+	ContactMech getContactMech();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccount#getContactMechId <em>Contact Mech Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccount#getContactMech <em>Contact Mech</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #getContactMechId()
+	 * @param value the new value of the '<em>Contact Mech</em>' reference.
+	 * @see #getContactMech()
 	 * @generated
 	 */
-	void setContactMechId(ContactMech value);
+	void setContactMech(ContactMech value);
 
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
@@ -247,5 +217,27 @@ public interface BillingAccount extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setBillingAccountId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Account Currency Uom</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Account Currency Uom</em>' reference.
+	 * @see #setAccountCurrencyUom(Uom)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccount_AccountCurrencyUom()
+	 * @model keys="uomId"
+	 * @generated
+	 */
+	Uom getAccountCurrencyUom();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccount#getAccountCurrencyUom <em>Account Currency Uom</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Account Currency Uom</em>' reference.
+	 * @see #getAccountCurrencyUom()
+	 * @generated
+	 */
+	void setAccountCurrencyUom(Uom value);
 
 } // BillingAccount

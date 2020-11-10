@@ -33,10 +33,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostImpl#getProductAverageCostTypeId <em>Product Average Cost Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostImpl#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostImpl#getProductAverageCostType <em>Product Average Cost Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostImpl#getOrganizationParty <em>Organization Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostImpl#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostImpl#getAverageCost <em>Average Cost</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostImpl#getThruDate <em>Thru Date</em>}</li>
@@ -160,6 +160,86 @@ public class ProductAverageCostImpl extends EntityTypedImpl<ProductAverageCostTy
 	 * @generated
 	 */
 	@Override
+	public ProductAverageCostType getProductAverageCostType() {
+		return (ProductAverageCostType)eGet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST__PRODUCT_AVERAGE_COST_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductAverageCostType(ProductAverageCostType newProductAverageCostType) {
+		eSet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST__PRODUCT_AVERAGE_COST_TYPE, newProductAverageCostType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getOrganizationParty() {
+		return (Party)eGet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST__ORGANIZATION_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrganizationParty(Party newOrganizationParty) {
+		eSet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST__ORGANIZATION_PARTY, newOrganizationParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Product getProduct() {
+		return (Product)eGet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Facility getFacility() {
+		return (Facility)eGet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST__FACILITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacility(Facility newFacility) {
+		eSet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST__FACILITY, newFacility);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAverageCost() {
 		return (BigDecimal)eGet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST__AVERAGE_COST, true);
 	}
@@ -180,26 +260,6 @@ public class ProductAverageCostImpl extends EntityTypedImpl<ProductAverageCostTy
 	 * @generated
 	 */
 	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST__FACILITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST__FACILITY_ID, newFacilityId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Date getFromDate() {
 		return (Date)eGet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST__FROM_DATE, true);
 	}
@@ -212,46 +272,6 @@ public class ProductAverageCostImpl extends EntityTypedImpl<ProductAverageCostTy
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getOrganizationPartyId() {
-		return (Party)eGet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST__ORGANIZATION_PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrganizationPartyId(Party newOrganizationPartyId) {
-		eSet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST__ORGANIZATION_PARTY_ID, newOrganizationPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST__PRODUCT_ID, newProductId);
 	}
 
 	/**
@@ -310,26 +330,6 @@ public class ProductAverageCostImpl extends EntityTypedImpl<ProductAverageCostTy
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductAverageCostType getProductAverageCostTypeId() {
-		return (ProductAverageCostType)eGet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST__PRODUCT_AVERAGE_COST_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductAverageCostTypeId(ProductAverageCostType newProductAverageCostTypeId) {
-		eSet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST__PRODUCT_AVERAGE_COST_TYPE_ID, newProductAverageCostTypeId);
 	}
 
 } //ProductAverageCostImpl

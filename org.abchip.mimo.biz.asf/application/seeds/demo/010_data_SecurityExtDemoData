@@ -1,172 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-contact="http://www.abchip.org/mimo/biz/model/party/contact" xmlns:biz-email="http://www.abchip.org/mimo/biz/model/common/email" xmlns:biz-login="http://www.abchip.org/mimo/biz/model/security/login" xmlns:biz-party="http://www.abchip.org/mimo/biz/model/party/party" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/party/contact http://www.abchip.org/mimo/biz/model/party#//contact http://www.abchip.org/mimo/biz/model/common/email http://www.abchip.org/mimo/biz/model/common#//email http://www.abchip.org/mimo/biz/model/party/party http://www.abchip.org/mimo/biz/model/party#//party http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="010_data_SecurityExtDemoData">
   <contents xsi:type="biz-party:Party" partyId="_NA_">
-    <partyTypeId href="PartyType#PERSON"/>
-    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyType href="PartyType#PERSON"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
   </contents>
   <contents xsi:type="biz-party:Person" partyId="_NA_"/>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#_NA_"/>
-    <roleTypeId href="RoleType#CARRIER"/>
+    <party href="Party#_NA_"/>
+    <roleType href="RoleType#CARRIER"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#_NA_"/>
-    <roleTypeId href="RoleType#_NA_"/>
+    <party href="Party#_NA_"/>
+    <roleType href="RoleType#_NA_"/>
   </contents>
   <contents xsi:type="biz-party:Party" partyId="admin">
-    <partyTypeId href="PartyType#PERSON"/>
-    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyType href="PartyType#PERSON"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
   </contents>
   <contents xsi:type="biz-party:Person" partyId="admin" firstName="THE" lastName="ADMINISTRATOR" middleName="PRIVILEGED" personalTitle="Mr."/>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#admin"/>
-    <roleTypeId href="RoleType#BUYER"/>
+    <party href="Party#admin"/>
+    <roleType href="RoleType#BUYER"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#admin"/>
-    <roleTypeId href="RoleType#MANAGER"/>
+    <party href="Party#admin"/>
+    <roleType href="RoleType#MANAGER"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#admin"/>
-    <roleTypeId href="RoleType#ORDER_CLERK"/>
+    <party href="Party#admin"/>
+    <roleType href="RoleType#ORDER_CLERK"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#admin"/>
-    <roleTypeId href="RoleType#SHIPMENT_CLERK"/>
+    <party href="Party#admin"/>
+    <roleType href="RoleType#SHIPMENT_CLERK"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#admin"/>
-    <roleTypeId href="RoleType#SALES_REP"/>
+    <party href="Party#admin"/>
+    <roleType href="RoleType#SALES_REP"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#admin"/>
-    <roleTypeId href="RoleType#_NA_"/>
+    <party href="Party#admin"/>
+    <roleType href="RoleType#_NA_"/>
   </contents>
   <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
-    <statusId href="StatusItem#PARTY_ENABLED"/>
-    <partyId href="Party#admin"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
+    <party href="Party#admin"/>
   </contents>
   <contents xsi:type="biz-party:Party" partyId="ltdadmin">
-    <partyTypeId href="PartyType#PERSON"/>
-    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyType href="PartyType#PERSON"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
   </contents>
   <contents xsi:type="biz-party:Person" partyId="ltdadmin" firstName="Limited" lastName="Administrator" personalTitle="Mr."/>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#ltdadmin"/>
-    <roleTypeId href="RoleType#ORDER_CLERK"/>
+    <party href="Party#ltdadmin"/>
+    <roleType href="RoleType#ORDER_CLERK"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#ltdadmin"/>
-    <roleTypeId href="RoleType#LTD_ADMIN"/>
+    <party href="Party#ltdadmin"/>
+    <roleType href="RoleType#LTD_ADMIN"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#ltdadmin"/>
-    <roleTypeId href="RoleType#_NA_"/>
+    <party href="Party#ltdadmin"/>
+    <roleType href="RoleType#_NA_"/>
   </contents>
   <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
-    <statusId href="StatusItem#PARTY_ENABLED"/>
-    <partyId href="Party#ltdadmin"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
+    <party href="Party#ltdadmin"/>
   </contents>
   <contents xsi:type="biz-contact:PartyContactMech" fromDate="2003-01-01T00:00:00.000+0100" allowSolicitation="true">
-    <partyId href="Party#ltdadmin"/>
-    <contactMechId href="ContactMech#admin"/>
+    <party href="Party#ltdadmin"/>
+    <contactMech href="ContactMech#admin"/>
   </contents>
   <contents xsi:type="biz-party:Party" partyId="ltdadmin1">
-    <partyTypeId href="PartyType#PERSON"/>
-    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyType href="PartyType#PERSON"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
   </contents>
   <contents xsi:type="biz-party:Person" partyId="ltdadmin1" firstName="Limited" lastName="Administrator1" personalTitle="Mr."/>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#ltdadmin1"/>
-    <roleTypeId href="RoleType#ORDER_CLERK"/>
+    <party href="Party#ltdadmin1"/>
+    <roleType href="RoleType#ORDER_CLERK"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#ltdadmin1"/>
-    <roleTypeId href="RoleType#LTD_ADMIN"/>
+    <party href="Party#ltdadmin1"/>
+    <roleType href="RoleType#LTD_ADMIN"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#ltdadmin1"/>
-    <roleTypeId href="RoleType#_NA_"/>
+    <party href="Party#ltdadmin1"/>
+    <roleType href="RoleType#_NA_"/>
   </contents>
   <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
-    <statusId href="StatusItem#PARTY_ENABLED"/>
-    <partyId href="Party#ltdadmin1"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
+    <party href="Party#ltdadmin1"/>
   </contents>
   <contents xsi:type="biz-contact:PartyContactMech" fromDate="2003-01-01T00:00:00.000+0100" allowSolicitation="true">
-    <partyId href="Party#ltdadmin1"/>
-    <contactMechId href="ContactMech#admin"/>
+    <party href="Party#ltdadmin1"/>
+    <contactMech href="ContactMech#admin"/>
   </contents>
   <contents xsi:type="biz-party:Party" partyId="externaluser">
-    <partyTypeId href="PartyType#PERSON"/>
-    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyType href="PartyType#PERSON"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
   </contents>
   <contents xsi:type="biz-party:Person" partyId="externaluser" firstName="External" lastName="User" personalTitle="Mr."/>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#externaluser"/>
-    <roleTypeId href="RoleType#SUPPLIER"/>
+    <party href="Party#externaluser"/>
+    <roleType href="RoleType#SUPPLIER"/>
   </contents>
   <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
-    <statusId href="StatusItem#PARTY_ENABLED"/>
-    <partyId href="Party#externaluser"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
+    <party href="Party#externaluser"/>
   </contents>
   <contents xsi:type="biz-contact:PartyContactMech" fromDate="2003-01-01T00:00:00.000+0100" allowSolicitation="true">
-    <partyId href="Party#externaluser"/>
-    <contactMechId href="ContactMech#admin"/>
+    <party href="Party#externaluser"/>
+    <contactMech href="ContactMech#admin"/>
   </contents>
   <contents xsi:type="biz-party:Party" partyId="bizadmin">
-    <partyTypeId href="PartyType#PERSON"/>
-    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyType href="PartyType#PERSON"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
   </contents>
   <contents xsi:type="biz-party:Person" partyId="bizadmin" firstName="Business" lastName="Administrator"/>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#bizadmin"/>
-    <roleTypeId href="RoleType#BUYER"/>
+    <party href="Party#bizadmin"/>
+    <roleType href="RoleType#BUYER"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#bizadmin"/>
-    <roleTypeId href="RoleType#MANAGER"/>
+    <party href="Party#bizadmin"/>
+    <roleType href="RoleType#MANAGER"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#bizadmin"/>
-    <roleTypeId href="RoleType#ORDER_CLERK"/>
+    <party href="Party#bizadmin"/>
+    <roleType href="RoleType#ORDER_CLERK"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#bizadmin"/>
-    <roleTypeId href="RoleType#SHIPMENT_CLERK"/>
+    <party href="Party#bizadmin"/>
+    <roleType href="RoleType#SHIPMENT_CLERK"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#bizadmin"/>
-    <roleTypeId href="RoleType#SALES_REP"/>
+    <party href="Party#bizadmin"/>
+    <roleType href="RoleType#SALES_REP"/>
   </contents>
   <contents xsi:type="biz-party:PartyRole">
-    <partyId href="Party#bizadmin"/>
-    <roleTypeId href="RoleType#_NA_"/>
+    <party href="Party#bizadmin"/>
+    <roleType href="RoleType#_NA_"/>
   </contents>
   <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
-    <statusId href="StatusItem#PARTY_ENABLED"/>
-    <partyId href="Party#bizadmin"/>
+    <status href="StatusItem#PARTY_ENABLED"/>
+    <party href="Party#bizadmin"/>
   </contents>
   <contents xsi:type="biz-contact:PartyContactMech" fromDate="2003-01-01T00:00:00.000+0100" allowSolicitation="true">
-    <partyId href="Party#bizadmin"/>
-    <contactMechId href="ContactMech#admin"/>
+    <party href="Party#bizadmin"/>
+    <contactMech href="ContactMech#admin"/>
   </contents>
   <contents xsi:type="biz-login:UserLogin" userLoginId="admin">
-    <partyId href="Party#admin"/>
+    <party href="Party#admin"/>
   </contents>
   <contents xsi:type="biz-login:UserLogin" userLoginId="flexadmin">
-    <partyId href="Party#admin"/>
+    <party href="Party#admin"/>
   </contents>
   <contents xsi:type="biz-login:UserLogin" userLoginId="demoadmin">
-    <partyId href="Party#admin"/>
+    <party href="Party#admin"/>
   </contents>
   <contents xsi:type="biz-login:UserLogin" userLoginId="ltdadmin">
-    <partyId href="Party#ltdadmin"/>
+    <party href="Party#ltdadmin"/>
   </contents>
   <contents xsi:type="biz-login:UserLogin" userLoginId="ltdadmin1">
-    <partyId href="Party#ltdadmin1"/>
+    <party href="Party#ltdadmin1"/>
   </contents>
   <contents xsi:type="biz-login:UserLogin" userLoginId="bizadmin">
-    <partyId href="Party#bizadmin"/>
+    <party href="Party#bizadmin"/>
   </contents>
   <contents xsi:type="biz-email:EmailTemplateSetting" emailTemplateSettingId="EMAIL_PASSWORD" description="Used to send a new password at user request" fromAddress="ofbiztest@example.com" subject="New Password Sent (${userLoginId})"/>
 </mimo-ent:EntityContainer>

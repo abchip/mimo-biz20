@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintOrderImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintOrderImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintOrderImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintOrderImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintOrderImpl#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintOrderImpl#getFixedAsset <em>Fixed Asset</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintOrderImpl#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintOrderImpl#getMaintHistSeqId <em>Maint Hist Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintOrderImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  * </ul>
@@ -153,6 +153,46 @@ public class FixedAssetMaintOrderImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
+	public FixedAsset getFixedAsset() {
+		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT_ORDER__FIXED_ASSET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFixedAsset(FixedAsset newFixedAsset) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_MAINT_ORDER__FIXED_ASSET, newFixedAsset);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT_ORDER__ORDER, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrder(OrderHeader newOrder) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_MAINT_ORDER__ORDER, newOrder);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getMaintHistSeqId() {
 		return (String)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT_ORDER__MAINT_HIST_SEQ_ID, true);
 	}
@@ -165,26 +205,6 @@ public class FixedAssetMaintOrderImpl extends EntityIdentifiableImpl implements 
 	@Override
 	public void setMaintHistSeqId(String newMaintHistSeqId) {
 		eSet(FixedassetPackage.Literals.FIXED_ASSET_MAINT_ORDER__MAINT_HIST_SEQ_ID, newMaintHistSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT_ORDER__ORDER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_MAINT_ORDER__ORDER_ID, newOrderId);
 	}
 
 	/**
@@ -243,26 +263,6 @@ public class FixedAssetMaintOrderImpl extends EntityIdentifiableImpl implements 
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FixedAsset getFixedAssetId() {
-		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT_ORDER__FIXED_ASSET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFixedAssetId(FixedAsset newFixedAssetId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_MAINT_ORDER__FIXED_ASSET_ID, newFixedAssetId);
 	}
 
 } //FixedAssetMaintOrderImpl

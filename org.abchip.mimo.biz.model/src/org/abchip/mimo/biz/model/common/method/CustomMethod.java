@@ -23,7 +23,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.common.method.CustomMethod#getCustomMethodId <em>Custom Method Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.method.CustomMethod#getCustomMethodName <em>Custom Method Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.method.CustomMethod#getCustomMethodTypeId <em>Custom Method Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.method.CustomMethod#getCustomMethodType <em>Custom Method Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.method.CustomMethod#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.method.CustomMethod#getFixedAssetDepMethods <em>Fixed Asset Dep Methods</em>}</li>
  * </ul>
@@ -87,6 +87,28 @@ public interface CustomMethod extends EntityTyped<CustomMethodType>, EntityInfo 
 	void setCustomMethodName(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Custom Method Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Custom Method Type</em>' reference.
+	 * @see #setCustomMethodType(CustomMethodType)
+	 * @see org.abchip.mimo.biz.model.common.method.MethodPackage#getCustomMethod_CustomMethodType()
+	 * @model keys="customMethodTypeId"
+	 * @generated
+	 */
+	CustomMethodType getCustomMethodType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.method.CustomMethod#getCustomMethodType <em>Custom Method Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Custom Method Type</em>' reference.
+	 * @see #getCustomMethodType()
+	 * @generated
+	 */
+	void setCustomMethodType(CustomMethodType value);
+
+	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -127,31 +149,5 @@ public interface CustomMethod extends EntityTyped<CustomMethodType>, EntityInfo 
 	 * @generated
 	 */
 	List<FixedAssetDepMethod> getFixedAssetDepMethods();
-
-	/**
-	 * Returns the value of the '<em><b>Custom Method Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Custom Method Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Custom Method Type Id</em>' reference.
-	 * @see #setCustomMethodTypeId(CustomMethodType)
-	 * @see org.abchip.mimo.biz.model.common.method.MethodPackage#getCustomMethod_CustomMethodTypeId()
-	 * @model keys="customMethodTypeId"
-	 * @generated
-	 */
-	CustomMethodType getCustomMethodTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.method.CustomMethod#getCustomMethodTypeId <em>Custom Method Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Custom Method Type Id</em>' reference.
-	 * @see #getCustomMethodTypeId()
-	 * @generated
-	 */
-	void setCustomMethodTypeId(CustomMethodType value);
 
 } // CustomMethod

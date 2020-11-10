@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.CommunicationEventWorkEffImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.CommunicationEventWorkEffImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.CommunicationEventWorkEffImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.CommunicationEventWorkEffImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.CommunicationEventWorkEffImpl#getCommunicationEventId <em>Communication Event Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.CommunicationEventWorkEffImpl#getWorkEffort <em>Work Effort</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.CommunicationEventWorkEffImpl#getCommunicationEvent <em>Communication Event</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.CommunicationEventWorkEffImpl#getDescription <em>Description</em>}</li>
  * </ul>
  *
@@ -153,8 +153,8 @@ public class CommunicationEventWorkEffImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public CommunicationEvent getCommunicationEventId() {
-		return (CommunicationEvent)eGet(WorkeffortPackage.Literals.COMMUNICATION_EVENT_WORK_EFF__COMMUNICATION_EVENT_ID, true);
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(WorkeffortPackage.Literals.COMMUNICATION_EVENT_WORK_EFF__WORK_EFFORT, true);
 	}
 
 	/**
@@ -163,8 +163,28 @@ public class CommunicationEventWorkEffImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setCommunicationEventId(CommunicationEvent newCommunicationEventId) {
-		eSet(WorkeffortPackage.Literals.COMMUNICATION_EVENT_WORK_EFF__COMMUNICATION_EVENT_ID, newCommunicationEventId);
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(WorkeffortPackage.Literals.COMMUNICATION_EVENT_WORK_EFF__WORK_EFFORT, newWorkEffort);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CommunicationEvent getCommunicationEvent() {
+		return (CommunicationEvent)eGet(WorkeffortPackage.Literals.COMMUNICATION_EVENT_WORK_EFF__COMMUNICATION_EVENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCommunicationEvent(CommunicationEvent newCommunicationEvent) {
+		eSet(WorkeffortPackage.Literals.COMMUNICATION_EVENT_WORK_EFF__COMMUNICATION_EVENT, newCommunicationEvent);
 	}
 
 	/**
@@ -223,26 +243,6 @@ public class CommunicationEventWorkEffImpl extends EntityIdentifiableImpl implem
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(WorkeffortPackage.Literals.COMMUNICATION_EVENT_WORK_EFF__WORK_EFFORT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(WorkeffortPackage.Literals.COMMUNICATION_EVENT_WORK_EFF__WORK_EFFORT_ID, newWorkEffortId);
 	}
 
 } //CommunicationEventWorkEffImpl

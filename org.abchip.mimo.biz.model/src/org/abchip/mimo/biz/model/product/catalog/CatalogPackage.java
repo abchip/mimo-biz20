@@ -253,31 +253,31 @@ public interface CatalogPackage extends EPackage {
 	int PROD_CATALOG_CATEGORY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Prod Catalog Id</b></em>' reference.
+	 * The feature id for the '<em><b>Prod Catalog</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY__PROD_CATALOG_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int PROD_CATALOG_CATEGORY__PROD_CATALOG = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int PROD_CATALOG_CATEGORY__PRODUCT_CATEGORY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Prod Catalog Category Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Prod Catalog Category Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY__PROD_CATALOG_CATEGORY_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int PROD_CATALOG_CATEGORY__PROD_CATALOG_CATEGORY_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -389,13 +389,13 @@ public interface CatalogPackage extends EPackage {
 	int PROD_CATALOG_CATEGORY_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
+	int PROD_CATALOG_CATEGORY_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Prod Catalog Category Type</em>' class.
@@ -453,22 +453,22 @@ public interface CatalogPackage extends EPackage {
 	int PROD_CATALOG_INV_FACILITY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Prod Catalog Id</b></em>' reference.
+	 * The feature id for the '<em><b>Prod Catalog</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_INV_FACILITY__PROD_CATALOG_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PROD_CATALOG_INV_FACILITY__PROD_CATALOG = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_INV_FACILITY__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PROD_CATALOG_INV_FACILITY__FACILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -553,31 +553,31 @@ public interface CatalogPackage extends EPackage {
 	int PROD_CATALOG_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PROD_CATALOG_ROLE__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PROD_CATALOG_ROLE__ROLE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Prod Catalog Id</b></em>' reference.
+	 * The feature id for the '<em><b>Prod Catalog</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_ROLE__PROD_CATALOG_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int PROD_CATALOG_ROLE__PROD_CATALOG = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -747,37 +747,37 @@ public interface CatalogPackage extends EPackage {
 	EClass getProdCatalogCategory();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProdCatalogId <em>Prod Catalog Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProdCatalog <em>Prod Catalog</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Prod Catalog Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProdCatalogId()
+	 * @return the meta object for the reference '<em>Prod Catalog</em>'.
+	 * @see org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProdCatalog()
 	 * @see #getProdCatalogCategory()
 	 * @generated
 	 */
-	EReference getProdCatalogCategory_ProdCatalogId();
+	EReference getProdCatalogCategory_ProdCatalog();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProductCategoryId <em>Product Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProductCategory <em>Product Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProductCategoryId()
+	 * @return the meta object for the reference '<em>Product Category</em>'.
+	 * @see org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProductCategory()
 	 * @see #getProdCatalogCategory()
 	 * @generated
 	 */
-	EReference getProdCatalogCategory_ProductCategoryId();
+	EReference getProdCatalogCategory_ProductCategory();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProdCatalogCategoryTypeId <em>Prod Catalog Category Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProdCatalogCategoryType <em>Prod Catalog Category Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Prod Catalog Category Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProdCatalogCategoryTypeId()
+	 * @return the meta object for the reference '<em>Prod Catalog Category Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getProdCatalogCategoryType()
 	 * @see #getProdCatalogCategory()
 	 * @generated
 	 */
-	EReference getProdCatalogCategory_ProdCatalogCategoryTypeId();
+	EReference getProdCatalogCategory_ProdCatalogCategoryType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory#getFromDate <em>From Date</em>}'.
@@ -845,15 +845,15 @@ public interface CatalogPackage extends EPackage {
 	EAttribute getProdCatalogCategoryType_Description();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategoryType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategoryType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategoryType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategoryType#getParentType()
 	 * @see #getProdCatalogCategoryType()
 	 * @generated
 	 */
-	EReference getProdCatalogCategoryType_ParentTypeId();
+	EReference getProdCatalogCategoryType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogInvFacility <em>Prod Catalog Inv Facility</em>}'.
@@ -866,26 +866,26 @@ public interface CatalogPackage extends EPackage {
 	EClass getProdCatalogInvFacility();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogInvFacility#getProdCatalogId <em>Prod Catalog Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogInvFacility#getProdCatalog <em>Prod Catalog</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Prod Catalog Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.catalog.ProdCatalogInvFacility#getProdCatalogId()
+	 * @return the meta object for the reference '<em>Prod Catalog</em>'.
+	 * @see org.abchip.mimo.biz.model.product.catalog.ProdCatalogInvFacility#getProdCatalog()
 	 * @see #getProdCatalogInvFacility()
 	 * @generated
 	 */
-	EReference getProdCatalogInvFacility_ProdCatalogId();
+	EReference getProdCatalogInvFacility_ProdCatalog();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogInvFacility#getFacilityId <em>Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogInvFacility#getFacility <em>Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.catalog.ProdCatalogInvFacility#getFacilityId()
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.product.catalog.ProdCatalogInvFacility#getFacility()
 	 * @see #getProdCatalogInvFacility()
 	 * @generated
 	 */
-	EReference getProdCatalogInvFacility_FacilityId();
+	EReference getProdCatalogInvFacility_Facility();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogInvFacility#getFromDate <em>From Date</em>}'.
@@ -931,37 +931,37 @@ public interface CatalogPackage extends EPackage {
 	EClass getProdCatalogRole();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogRole#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogRole#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.catalog.ProdCatalogRole#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.product.catalog.ProdCatalogRole#getParty()
 	 * @see #getProdCatalogRole()
 	 * @generated
 	 */
-	EReference getProdCatalogRole_PartyId();
+	EReference getProdCatalogRole_Party();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogRole#getRoleTypeId <em>Role Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogRole#getRoleType <em>Role Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Role Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.catalog.ProdCatalogRole#getRoleTypeId()
+	 * @return the meta object for the reference '<em>Role Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.catalog.ProdCatalogRole#getRoleType()
 	 * @see #getProdCatalogRole()
 	 * @generated
 	 */
-	EReference getProdCatalogRole_RoleTypeId();
+	EReference getProdCatalogRole_RoleType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogRole#getProdCatalogId <em>Prod Catalog Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogRole#getProdCatalog <em>Prod Catalog</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Prod Catalog Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.catalog.ProdCatalogRole#getProdCatalogId()
+	 * @return the meta object for the reference '<em>Prod Catalog</em>'.
+	 * @see org.abchip.mimo.biz.model.product.catalog.ProdCatalogRole#getProdCatalog()
 	 * @see #getProdCatalogRole()
 	 * @generated
 	 */
-	EReference getProdCatalogRole_ProdCatalogId();
+	EReference getProdCatalogRole_ProdCatalog();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogRole#getFromDate <em>From Date</em>}'.
@@ -1119,28 +1119,28 @@ public interface CatalogPackage extends EPackage {
 		EClass PROD_CATALOG_CATEGORY = eINSTANCE.getProdCatalogCategory();
 
 		/**
-		 * The meta object literal for the '<em><b>Prod Catalog Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Prod Catalog</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PROD_CATALOG_CATEGORY__PROD_CATALOG_ID = eINSTANCE.getProdCatalogCategory_ProdCatalogId();
+		EReference PROD_CATALOG_CATEGORY__PROD_CATALOG = eINSTANCE.getProdCatalogCategory_ProdCatalog();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PROD_CATALOG_CATEGORY__PRODUCT_CATEGORY_ID = eINSTANCE.getProdCatalogCategory_ProductCategoryId();
+		EReference PROD_CATALOG_CATEGORY__PRODUCT_CATEGORY = eINSTANCE.getProdCatalogCategory_ProductCategory();
 
 		/**
-		 * The meta object literal for the '<em><b>Prod Catalog Category Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Prod Catalog Category Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PROD_CATALOG_CATEGORY__PROD_CATALOG_CATEGORY_TYPE_ID = eINSTANCE.getProdCatalogCategory_ProdCatalogCategoryTypeId();
+		EReference PROD_CATALOG_CATEGORY__PROD_CATALOG_CATEGORY_TYPE = eINSTANCE.getProdCatalogCategory_ProdCatalogCategoryType();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -1193,12 +1193,12 @@ public interface CatalogPackage extends EPackage {
 		EAttribute PROD_CATALOG_CATEGORY_TYPE__DESCRIPTION = eINSTANCE.getProdCatalogCategoryType_Description();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PROD_CATALOG_CATEGORY_TYPE__PARENT_TYPE_ID = eINSTANCE.getProdCatalogCategoryType_ParentTypeId();
+		EReference PROD_CATALOG_CATEGORY_TYPE__PARENT_TYPE = eINSTANCE.getProdCatalogCategoryType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogInvFacilityImpl <em>Prod Catalog Inv Facility</em>}' class.
@@ -1211,20 +1211,20 @@ public interface CatalogPackage extends EPackage {
 		EClass PROD_CATALOG_INV_FACILITY = eINSTANCE.getProdCatalogInvFacility();
 
 		/**
-		 * The meta object literal for the '<em><b>Prod Catalog Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Prod Catalog</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PROD_CATALOG_INV_FACILITY__PROD_CATALOG_ID = eINSTANCE.getProdCatalogInvFacility_ProdCatalogId();
+		EReference PROD_CATALOG_INV_FACILITY__PROD_CATALOG = eINSTANCE.getProdCatalogInvFacility_ProdCatalog();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PROD_CATALOG_INV_FACILITY__FACILITY_ID = eINSTANCE.getProdCatalogInvFacility_FacilityId();
+		EReference PROD_CATALOG_INV_FACILITY__FACILITY = eINSTANCE.getProdCatalogInvFacility_Facility();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -1261,28 +1261,28 @@ public interface CatalogPackage extends EPackage {
 		EClass PROD_CATALOG_ROLE = eINSTANCE.getProdCatalogRole();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PROD_CATALOG_ROLE__PARTY_ID = eINSTANCE.getProdCatalogRole_PartyId();
+		EReference PROD_CATALOG_ROLE__PARTY = eINSTANCE.getProdCatalogRole_Party();
 
 		/**
-		 * The meta object literal for the '<em><b>Role Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Role Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PROD_CATALOG_ROLE__ROLE_TYPE_ID = eINSTANCE.getProdCatalogRole_RoleTypeId();
+		EReference PROD_CATALOG_ROLE__ROLE_TYPE = eINSTANCE.getProdCatalogRole_RoleType();
 
 		/**
-		 * The meta object literal for the '<em><b>Prod Catalog Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Prod Catalog</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PROD_CATALOG_ROLE__PROD_CATALOG_ID = eINSTANCE.getProdCatalogRole_ProdCatalogId();
+		EReference PROD_CATALOG_ROLE__PROD_CATALOG = eINSTANCE.getProdCatalogRole_ProdCatalog();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.

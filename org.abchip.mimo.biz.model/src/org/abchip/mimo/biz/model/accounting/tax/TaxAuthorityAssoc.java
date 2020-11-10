@@ -25,7 +25,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityAssoc#getTaxAuthPartyId <em>Tax Auth Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityAssoc#getToTaxAuthGeoId <em>To Tax Auth Geo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityAssoc#getToTaxAuthPartyId <em>To Tax Auth Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityAssoc#getTaxAuthorityAssocTypeId <em>Tax Authority Assoc Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityAssoc#getTaxAuthorityAssocType <em>Tax Authority Assoc Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityAssoc#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -200,29 +200,25 @@ public interface TaxAuthorityAssoc extends EntityTyped<TaxAuthorityAssocType>, E
 	void setToTaxAuthPartyId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Tax Authority Assoc Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Tax Authority Assoc Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tax Authority Assoc Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tax Authority Assoc Type Id</em>' reference.
-	 * @see #setTaxAuthorityAssocTypeId(TaxAuthorityAssocType)
-	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthorityAssoc_TaxAuthorityAssocTypeId()
+	 * @return the value of the '<em>Tax Authority Assoc Type</em>' reference.
+	 * @see #setTaxAuthorityAssocType(TaxAuthorityAssocType)
+	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthorityAssoc_TaxAuthorityAssocType()
 	 * @model keys="taxAuthorityAssocTypeId"
 	 * @generated
 	 */
-	TaxAuthorityAssocType getTaxAuthorityAssocTypeId();
+	TaxAuthorityAssocType getTaxAuthorityAssocType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityAssoc#getTaxAuthorityAssocTypeId <em>Tax Authority Assoc Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityAssoc#getTaxAuthorityAssocType <em>Tax Authority Assoc Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tax Authority Assoc Type Id</em>' reference.
-	 * @see #getTaxAuthorityAssocTypeId()
+	 * @param value the new value of the '<em>Tax Authority Assoc Type</em>' reference.
+	 * @see #getTaxAuthorityAssocType()
 	 * @generated
 	 */
-	void setTaxAuthorityAssocTypeId(TaxAuthorityAssocType value);
+	void setTaxAuthorityAssocType(TaxAuthorityAssocType value);
 
 } // TaxAuthorityAssoc

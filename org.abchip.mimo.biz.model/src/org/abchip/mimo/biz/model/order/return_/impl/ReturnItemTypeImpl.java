@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemTypeImpl#getReturnItemTypeId <em>Return Item Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -179,8 +179,8 @@ public class ReturnItemTypeImpl extends EntityTypeImpl<ReturnItem> implements Re
 	 * @generated
 	 */
 	@Override
-	public ReturnItemType getParentTypeId() {
-		return (ReturnItemType)eGet(ReturnPackage.Literals.RETURN_ITEM_TYPE__PARENT_TYPE_ID, true);
+	public ReturnItemType getParentType() {
+		return (ReturnItemType)eGet(ReturnPackage.Literals.RETURN_ITEM_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -189,8 +189,8 @@ public class ReturnItemTypeImpl extends EntityTypeImpl<ReturnItem> implements Re
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(ReturnItemType newParentTypeId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(ReturnItemType newParentType) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

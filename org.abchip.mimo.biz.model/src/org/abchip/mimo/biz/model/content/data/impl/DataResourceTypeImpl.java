@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceTypeImpl#getDataResourceTypeAttrs <em>Data Resource Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -234,8 +234,8 @@ public class DataResourceTypeImpl extends EntityTypeImpl<DataResource> implement
 	 * @generated
 	 */
 	@Override
-	public DataResourceType getParentTypeId() {
-		return (DataResourceType)eGet(DataPackage.Literals.DATA_RESOURCE_TYPE__PARENT_TYPE_ID, true);
+	public DataResourceType getParentType() {
+		return (DataResourceType)eGet(DataPackage.Literals.DATA_RESOURCE_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -244,8 +244,8 @@ public class DataResourceTypeImpl extends EntityTypeImpl<DataResource> implement
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(DataResourceType newParentTypeId) {
-		eSet(DataPackage.Literals.DATA_RESOURCE_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(DataResourceType newParentType) {
+		eSet(DataPackage.Literals.DATA_RESOURCE_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

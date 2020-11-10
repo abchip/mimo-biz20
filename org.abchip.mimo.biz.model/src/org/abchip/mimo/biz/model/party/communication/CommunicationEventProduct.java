@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventProduct#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventProduct#getCommunicationEventId <em>Communication Event Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventProduct#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventProduct#getCommunicationEvent <em>Communication Event</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventProduct()
@@ -30,57 +30,49 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface CommunicationEventProduct extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventProduct_ProductId()
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventProduct_Product()
 	 * @model keys="productId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Product getProductId();
+	Product getProduct();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventProduct#getProductId <em>Product Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventProduct#getProduct <em>Product</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
 	 * @generated
 	 */
-	void setProductId(Product value);
+	void setProduct(Product value);
 
 	/**
-	 * Returns the value of the '<em><b>Communication Event Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Communication Event</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Communication Event Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Communication Event Id</em>' reference.
-	 * @see #setCommunicationEventId(CommunicationEvent)
-	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventProduct_CommunicationEventId()
+	 * @return the value of the '<em>Communication Event</em>' reference.
+	 * @see #setCommunicationEvent(CommunicationEvent)
+	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventProduct_CommunicationEvent()
 	 * @model keys="communicationEventId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	CommunicationEvent getCommunicationEventId();
+	CommunicationEvent getCommunicationEvent();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventProduct#getCommunicationEventId <em>Communication Event Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventProduct#getCommunicationEvent <em>Communication Event</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Communication Event Id</em>' reference.
-	 * @see #getCommunicationEventId()
+	 * @param value the new value of the '<em>Communication Event</em>' reference.
+	 * @see #getCommunicationEvent()
 	 * @generated
 	 */
-	void setCommunicationEventId(CommunicationEvent value);
+	void setCommunicationEvent(CommunicationEvent value);
 
 } // CommunicationEventProduct

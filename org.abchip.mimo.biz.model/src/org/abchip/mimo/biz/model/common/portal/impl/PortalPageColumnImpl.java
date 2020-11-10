@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageColumnImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageColumnImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageColumnImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageColumnImpl#getPortalPageId <em>Portal Page Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageColumnImpl#getPortalPage <em>Portal Page</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageColumnImpl#getColumnSeqId <em>Column Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageColumnImpl#getColumnWidthPercentage <em>Column Width Percentage</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageColumnImpl#getColumnWidthPixels <em>Column Width Pixels</em>}</li>
@@ -152,6 +152,26 @@ public class PortalPageColumnImpl extends EntityIdentifiableImpl implements Port
 	 * @generated
 	 */
 	@Override
+	public PortalPage getPortalPage() {
+		return (PortalPage)eGet(PortalPackage.Literals.PORTAL_PAGE_COLUMN__PORTAL_PAGE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPortalPage(PortalPage newPortalPage) {
+		eSet(PortalPackage.Literals.PORTAL_PAGE_COLUMN__PORTAL_PAGE, newPortalPage);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getColumnSeqId() {
 		return (String)eGet(PortalPackage.Literals.PORTAL_PAGE_COLUMN__COLUMN_SEQ_ID, true);
 	}
@@ -242,26 +262,6 @@ public class PortalPageColumnImpl extends EntityIdentifiableImpl implements Port
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PortalPage getPortalPageId() {
-		return (PortalPage)eGet(PortalPackage.Literals.PORTAL_PAGE_COLUMN__PORTAL_PAGE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPortalPageId(PortalPage newPortalPageId) {
-		eSet(PortalPackage.Literals.PORTAL_PAGE_COLUMN__PORTAL_PAGE_ID, newPortalPageId);
 	}
 
 } //PortalPageColumnImpl

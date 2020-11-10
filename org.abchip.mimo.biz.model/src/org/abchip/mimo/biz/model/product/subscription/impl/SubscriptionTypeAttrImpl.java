@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionTypeAttrImpl#getSubscriptionTypeId <em>Subscription Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionTypeAttrImpl#getSubscriptionType <em>Subscription Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -152,6 +152,26 @@ public class SubscriptionTypeAttrImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
+	public SubscriptionType getSubscriptionType() {
+		return (SubscriptionType)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_TYPE_ATTR__SUBSCRIPTION_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSubscriptionType(SubscriptionType newSubscriptionType) {
+		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_TYPE_ATTR__SUBSCRIPTION_TYPE, newSubscriptionType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_TYPE_ATTR__DESCRIPTION, true);
 	}
@@ -222,26 +242,6 @@ public class SubscriptionTypeAttrImpl extends EntityIdentifiableImpl implements 
 	@Override
 	public void setAttrName(String newAttrName) {
 		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_TYPE_ATTR__ATTR_NAME, newAttrName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SubscriptionType getSubscriptionTypeId() {
-		return (SubscriptionType)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_TYPE_ATTR__SUBSCRIPTION_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSubscriptionTypeId(SubscriptionType newSubscriptionTypeId) {
-		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_TYPE_ATTR__SUBSCRIPTION_TYPE_ID, newSubscriptionTypeId);
 	}
 
 } //SubscriptionTypeAttrImpl

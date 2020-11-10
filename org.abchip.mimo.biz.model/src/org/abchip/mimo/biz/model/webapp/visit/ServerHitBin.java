@@ -24,7 +24,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.ServerHitBin#getBinEndDateTime <em>Bin End Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.ServerHitBin#getBinStartDateTime <em>Bin Start Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.ServerHitBin#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.ServerHitBin#getHitTypeId <em>Hit Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.ServerHitBin#getHitType <em>Hit Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.ServerHitBin#getInternalContentId <em>Internal Content Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.ServerHitBin#getMaxTimeMillis <em>Max Time Millis</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.ServerHitBin#getMinTimeMillis <em>Min Time Millis</em>}</li>
@@ -145,30 +145,26 @@ public interface ServerHitBin extends EntityIdentifiable, EntityInfo {
 	void setContentId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Hit Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Hit Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Hit Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Hit Type Id</em>' reference.
-	 * @see #setHitTypeId(ServerHitType)
-	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getServerHitBin_HitTypeId()
+	 * @return the value of the '<em>Hit Type</em>' reference.
+	 * @see #setHitType(ServerHitType)
+	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getServerHitBin_HitType()
 	 * @model keys="hitTypeId"
 	 * @generated
 	 */
-	ServerHitType getHitTypeId();
+	ServerHitType getHitType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.visit.ServerHitBin#getHitTypeId <em>Hit Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.visit.ServerHitBin#getHitType <em>Hit Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Hit Type Id</em>' reference.
-	 * @see #getHitTypeId()
+	 * @param value the new value of the '<em>Hit Type</em>' reference.
+	 * @see #getHitType()
 	 * @generated
 	 */
-	void setHitTypeId(ServerHitType value);
+	void setHitType(ServerHitType value);
 
 	/**
 	 * Returns the value of the '<em><b>Internal Content Id</b></em>' attribute.

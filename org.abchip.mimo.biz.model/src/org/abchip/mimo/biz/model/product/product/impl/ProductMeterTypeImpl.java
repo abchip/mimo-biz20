@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMeterTypeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMeterTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMeterTypeImpl#getProductMeterTypeId <em>Product Meter Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMeterTypeImpl#getDefaultUomId <em>Default Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMeterTypeImpl#getDefaultUom <em>Default Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMeterTypeImpl#getDescription <em>Description</em>}</li>
  * </ul>
  *
@@ -160,26 +160,6 @@ public class ProductMeterTypeImpl extends EntityTypeImpl<ProductMeter> implement
 	 * @generated
 	 */
 	@Override
-	public Uom getDefaultUomId() {
-		return (Uom)eGet(ProductPackage.Literals.PRODUCT_METER_TYPE__DEFAULT_UOM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDefaultUomId(Uom newDefaultUomId) {
-		eSet(ProductPackage.Literals.PRODUCT_METER_TYPE__DEFAULT_UOM_ID, newDefaultUomId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getDescription() {
 		return (String)eGet(ProductPackage.Literals.PRODUCT_METER_TYPE__DESCRIPTION, true);
 	}
@@ -250,6 +230,26 @@ public class ProductMeterTypeImpl extends EntityTypeImpl<ProductMeter> implement
 	@Override
 	public void setProductMeterTypeId(String newProductMeterTypeId) {
 		eSet(ProductPackage.Literals.PRODUCT_METER_TYPE__PRODUCT_METER_TYPE_ID, newProductMeterTypeId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Uom getDefaultUom() {
+		return (Uom)eGet(ProductPackage.Literals.PRODUCT_METER_TYPE__DEFAULT_UOM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDefaultUom(Uom newDefaultUom) {
+		eSet(ProductPackage.Literals.PRODUCT_METER_TYPE__DEFAULT_UOM, newDefaultUom);
 	}
 
 } //ProductMeterTypeImpl

@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodePartyImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodePartyImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodePartyImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodePartyImpl#getProductPromoCodeId <em>Product Promo Code Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodePartyImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodePartyImpl#getProductPromoCode <em>Product Promo Code</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodePartyImpl#getParty <em>Party</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class ProductPromoCodePartyImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(PromoPackage.Literals.PRODUCT_PROMO_CODE_PARTY__PARTY_ID, true);
+	public ProductPromoCode getProductPromoCode() {
+		return (ProductPromoCode)eGet(PromoPackage.Literals.PRODUCT_PROMO_CODE_PARTY__PRODUCT_PROMO_CODE, true);
 	}
 
 	/**
@@ -162,8 +162,28 @@ public class ProductPromoCodePartyImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_CODE_PARTY__PARTY_ID, newPartyId);
+	public void setProductPromoCode(ProductPromoCode newProductPromoCode) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_CODE_PARTY__PRODUCT_PROMO_CODE, newProductPromoCode);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(PromoPackage.Literals.PRODUCT_PROMO_CODE_PARTY__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_CODE_PARTY__PARTY, newParty);
 	}
 
 	/**
@@ -202,26 +222,6 @@ public class ProductPromoCodePartyImpl extends EntityIdentifiableImpl implements
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductPromoCode getProductPromoCodeId() {
-		return (ProductPromoCode)eGet(PromoPackage.Literals.PRODUCT_PROMO_CODE_PARTY__PRODUCT_PROMO_CODE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPromoCodeId(ProductPromoCode newProductPromoCodeId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_CODE_PARTY__PRODUCT_PROMO_CODE_ID, newProductPromoCodeId);
 	}
 
 } //ProductPromoCodePartyImpl

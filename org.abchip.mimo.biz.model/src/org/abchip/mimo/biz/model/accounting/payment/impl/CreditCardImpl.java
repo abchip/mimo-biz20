@@ -27,7 +27,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.CreditCardImpl#getCompanyNameOnCard <em>Company Name On Card</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.CreditCardImpl#getConsecutiveFailedAuths <em>Consecutive Failed Auths</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.CreditCardImpl#getConsecutiveFailedNsf <em>Consecutive Failed Nsf</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.CreditCardImpl#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.CreditCardImpl#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.CreditCardImpl#getExpireDate <em>Expire Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.CreditCardImpl#getFirstNameOnCard <em>First Name On Card</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.CreditCardImpl#getIssueNumber <em>Issue Number</em>}</li>
@@ -168,8 +168,8 @@ public class CreditCardImpl extends PaymentMethodImpl implements CreditCard {
 	 * @generated
 	 */
 	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(PaymentPackage.Literals.CREDIT_CARD__CONTACT_MECH_ID, true);
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(PaymentPackage.Literals.CREDIT_CARD__CONTACT_MECH, true);
 	}
 
 	/**
@@ -178,8 +178,8 @@ public class CreditCardImpl extends PaymentMethodImpl implements CreditCard {
 	 * @generated
 	 */
 	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(PaymentPackage.Literals.CREDIT_CARD__CONTACT_MECH_ID, newContactMechId);
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(PaymentPackage.Literals.CREDIT_CARD__CONTACT_MECH, newContactMech);
 	}
 
 	/**

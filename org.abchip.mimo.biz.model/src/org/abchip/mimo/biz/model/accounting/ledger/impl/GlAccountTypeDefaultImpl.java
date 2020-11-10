@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeDefaultImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeDefaultImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeDefaultImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeDefaultImpl#getGlAccountTypeId <em>Gl Account Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeDefaultImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeDefaultImpl#getGlAccountId <em>Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeDefaultImpl#getGlAccountType <em>Gl Account Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeDefaultImpl#getOrganizationParty <em>Organization Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeDefaultImpl#getGlAccount <em>Gl Account</em>}</li>
  * </ul>
  *
  * @generated
@@ -153,8 +153,8 @@ public class GlAccountTypeDefaultImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Party getOrganizationPartyId() {
-		return (Party)eGet(LedgerPackage.Literals.GL_ACCOUNT_TYPE_DEFAULT__ORGANIZATION_PARTY_ID, true);
+	public GlAccountType getGlAccountType() {
+		return (GlAccountType)eGet(LedgerPackage.Literals.GL_ACCOUNT_TYPE_DEFAULT__GL_ACCOUNT_TYPE, true);
 	}
 
 	/**
@@ -163,8 +163,8 @@ public class GlAccountTypeDefaultImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setOrganizationPartyId(Party newOrganizationPartyId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT_TYPE_DEFAULT__ORGANIZATION_PARTY_ID, newOrganizationPartyId);
+	public void setGlAccountType(GlAccountType newGlAccountType) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT_TYPE_DEFAULT__GL_ACCOUNT_TYPE, newGlAccountType);
 	}
 
 	/**
@@ -173,8 +173,8 @@ public class GlAccountTypeDefaultImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public GlAccountType getGlAccountTypeId() {
-		return (GlAccountType)eGet(LedgerPackage.Literals.GL_ACCOUNT_TYPE_DEFAULT__GL_ACCOUNT_TYPE_ID, true);
+	public Party getOrganizationParty() {
+		return (Party)eGet(LedgerPackage.Literals.GL_ACCOUNT_TYPE_DEFAULT__ORGANIZATION_PARTY, true);
 	}
 
 	/**
@@ -183,8 +183,8 @@ public class GlAccountTypeDefaultImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setGlAccountTypeId(GlAccountType newGlAccountTypeId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT_TYPE_DEFAULT__GL_ACCOUNT_TYPE_ID, newGlAccountTypeId);
+	public void setOrganizationParty(Party newOrganizationParty) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT_TYPE_DEFAULT__ORGANIZATION_PARTY, newOrganizationParty);
 	}
 
 	/**
@@ -193,8 +193,8 @@ public class GlAccountTypeDefaultImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public GlAccount getGlAccountId() {
-		return (GlAccount)eGet(LedgerPackage.Literals.GL_ACCOUNT_TYPE_DEFAULT__GL_ACCOUNT_ID, true);
+	public GlAccount getGlAccount() {
+		return (GlAccount)eGet(LedgerPackage.Literals.GL_ACCOUNT_TYPE_DEFAULT__GL_ACCOUNT, true);
 	}
 
 	/**
@@ -203,8 +203,8 @@ public class GlAccountTypeDefaultImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setGlAccountId(GlAccount newGlAccountId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT_TYPE_DEFAULT__GL_ACCOUNT_ID, newGlAccountId);
+	public void setGlAccount(GlAccount newGlAccount) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT_TYPE_DEFAULT__GL_ACCOUNT, newGlAccount);
 	}
 
 	/**

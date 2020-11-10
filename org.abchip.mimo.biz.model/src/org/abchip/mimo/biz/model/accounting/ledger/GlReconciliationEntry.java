@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlReconciliationEntry#getGlReconciliationId <em>Gl Reconciliation Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlReconciliationEntry#getAcctgTransId <em>Acctg Trans Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlReconciliationEntry#getGlReconciliation <em>Gl Reconciliation</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlReconciliationEntry#getAcctgTrans <em>Acctg Trans</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlReconciliationEntry#getAcctgTransEntrySeqId <em>Acctg Trans Entry Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlReconciliationEntry#getReconciledAmount <em>Reconciled Amount</em>}</li>
  * </ul>
@@ -31,6 +31,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface GlReconciliationEntry extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Gl Reconciliation</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Gl Reconciliation</em>' reference.
+	 * @see #setGlReconciliation(GlReconciliation)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlReconciliationEntry_GlReconciliation()
+	 * @model keys="glReconciliationId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	GlReconciliation getGlReconciliation();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlReconciliationEntry#getGlReconciliation <em>Gl Reconciliation</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Gl Reconciliation</em>' reference.
+	 * @see #getGlReconciliation()
+	 * @generated
+	 */
+	void setGlReconciliation(GlReconciliation value);
+
+	/**
+	 * Returns the value of the '<em><b>Acctg Trans</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Acctg Trans</em>' reference.
+	 * @see #setAcctgTrans(AcctgTrans)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlReconciliationEntry_AcctgTrans()
+	 * @model keys="acctgTransId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	AcctgTrans getAcctgTrans();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlReconciliationEntry#getAcctgTrans <em>Acctg Trans</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Acctg Trans</em>' reference.
+	 * @see #getAcctgTrans()
+	 * @generated
+	 */
+	void setAcctgTrans(AcctgTrans value);
+
 	/**
 	 * Returns the value of the '<em><b>Acctg Trans Entry Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -84,59 +130,5 @@ public interface GlReconciliationEntry extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setReconciledAmount(BigDecimal value);
-
-	/**
-	 * Returns the value of the '<em><b>Gl Reconciliation Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gl Reconciliation Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Reconciliation Id</em>' reference.
-	 * @see #setGlReconciliationId(GlReconciliation)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlReconciliationEntry_GlReconciliationId()
-	 * @model keys="glReconciliationId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	GlReconciliation getGlReconciliationId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlReconciliationEntry#getGlReconciliationId <em>Gl Reconciliation Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Gl Reconciliation Id</em>' reference.
-	 * @see #getGlReconciliationId()
-	 * @generated
-	 */
-	void setGlReconciliationId(GlReconciliation value);
-
-	/**
-	 * Returns the value of the '<em><b>Acctg Trans Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Acctg Trans Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Acctg Trans Id</em>' reference.
-	 * @see #setAcctgTransId(AcctgTrans)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlReconciliationEntry_AcctgTransId()
-	 * @model keys="acctgTransId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	AcctgTrans getAcctgTransId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlReconciliationEntry#getAcctgTransId <em>Acctg Trans Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Acctg Trans Id</em>' reference.
-	 * @see #getAcctgTransId()
-	 * @generated
-	 */
-	void setAcctgTransId(AcctgTrans value);
 
 } // GlReconciliationEntry

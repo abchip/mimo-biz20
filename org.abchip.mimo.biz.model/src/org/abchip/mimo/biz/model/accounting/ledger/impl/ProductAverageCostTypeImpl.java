@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostTypeImpl#getProductAverageCostTypeId <em>Product Average Cost Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -199,8 +199,8 @@ public class ProductAverageCostTypeImpl extends EntityTypeImpl<ProductAverageCos
 	 * @generated
 	 */
 	@Override
-	public ProductAverageCostType getParentTypeId() {
-		return (ProductAverageCostType)eGet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST_TYPE__PARENT_TYPE_ID, true);
+	public ProductAverageCostType getParentType() {
+		return (ProductAverageCostType)eGet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -209,8 +209,8 @@ public class ProductAverageCostTypeImpl extends EntityTypeImpl<ProductAverageCos
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(ProductAverageCostType newParentTypeId) {
-		eSet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(ProductAverageCostType newParentType) {
+		eSet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

@@ -29,10 +29,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#getUserLoginId <em>User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#getUserLogin <em>User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#getOriginUserLoginId <em>Origin User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#getOriginUserLogin <em>Origin User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#getPasswordUsed <em>Password Used</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#getSuccessfulLogin <em>Successful Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#getThruDate <em>Thru Date</em>}</li>
@@ -159,6 +159,26 @@ public class UserLoginHistoryImpl extends EntityIdentifiableImpl implements User
 	 * @generated
 	 */
 	@Override
+	public UserLogin getUserLogin() {
+		return (UserLogin)eGet(LoginPackage.Literals.USER_LOGIN_HISTORY__USER_LOGIN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUserLogin(UserLogin newUserLogin) {
+		eSet(LoginPackage.Literals.USER_LOGIN_HISTORY__USER_LOGIN, newUserLogin);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(LoginPackage.Literals.USER_LOGIN_HISTORY__FROM_DATE, true);
 	}
@@ -179,8 +199,8 @@ public class UserLoginHistoryImpl extends EntityIdentifiableImpl implements User
 	 * @generated
 	 */
 	@Override
-	public UserLogin getOriginUserLoginId() {
-		return (UserLogin)eGet(LoginPackage.Literals.USER_LOGIN_HISTORY__ORIGIN_USER_LOGIN_ID, true);
+	public UserLogin getOriginUserLogin() {
+		return (UserLogin)eGet(LoginPackage.Literals.USER_LOGIN_HISTORY__ORIGIN_USER_LOGIN, true);
 	}
 
 	/**
@@ -189,8 +209,8 @@ public class UserLoginHistoryImpl extends EntityIdentifiableImpl implements User
 	 * @generated
 	 */
 	@Override
-	public void setOriginUserLoginId(UserLogin newOriginUserLoginId) {
-		eSet(LoginPackage.Literals.USER_LOGIN_HISTORY__ORIGIN_USER_LOGIN_ID, newOriginUserLoginId);
+	public void setOriginUserLogin(UserLogin newOriginUserLogin) {
+		eSet(LoginPackage.Literals.USER_LOGIN_HISTORY__ORIGIN_USER_LOGIN, newOriginUserLogin);
 	}
 
 	/**
@@ -199,8 +219,8 @@ public class UserLoginHistoryImpl extends EntityIdentifiableImpl implements User
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(LoginPackage.Literals.USER_LOGIN_HISTORY__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(LoginPackage.Literals.USER_LOGIN_HISTORY__PARTY, true);
 	}
 
 	/**
@@ -209,8 +229,8 @@ public class UserLoginHistoryImpl extends EntityIdentifiableImpl implements User
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(LoginPackage.Literals.USER_LOGIN_HISTORY__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(LoginPackage.Literals.USER_LOGIN_HISTORY__PARTY, newParty);
 	}
 
 	/**
@@ -271,26 +291,6 @@ public class UserLoginHistoryImpl extends EntityIdentifiableImpl implements User
 	@Override
 	public void setThruDate(Date newThruDate) {
 		eSet(LoginPackage.Literals.USER_LOGIN_HISTORY__THRU_DATE, newThruDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public UserLogin getUserLoginId() {
-		return (UserLogin)eGet(LoginPackage.Literals.USER_LOGIN_HISTORY__USER_LOGIN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setUserLoginId(UserLogin newUserLoginId) {
-		eSet(LoginPackage.Literals.USER_LOGIN_HISTORY__USER_LOGIN_ID, newUserLoginId);
 	}
 
 	/**

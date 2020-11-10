@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionTypeImpl#getSubscriptionTypeId <em>Subscription Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionTypeImpl#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionTypeImpl#getSubscriptionTypeAttrs <em>Subscription Type Attrs</em>}</li>
  * </ul>
  *
@@ -203,8 +203,8 @@ public class SubscriptionTypeImpl extends EntityTypeImpl<Subscription> implement
 	 * @generated
 	 */
 	@Override
-	public SubscriptionType getParentTypeId() {
-		return (SubscriptionType)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_TYPE__PARENT_TYPE_ID, true);
+	public SubscriptionType getParentType() {
+		return (SubscriptionType)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -213,8 +213,8 @@ public class SubscriptionTypeImpl extends EntityTypeImpl<Subscription> implement
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(SubscriptionType newParentTypeId) {
-		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(SubscriptionType newParentType) {
+		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

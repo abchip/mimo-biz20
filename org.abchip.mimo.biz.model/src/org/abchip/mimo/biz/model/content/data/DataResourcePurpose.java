@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourcePurpose#getDataResourceId <em>Data Resource Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourcePurpose#getContentPurposeTypeId <em>Content Purpose Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourcePurpose#getDataResource <em>Data Resource</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourcePurpose#getContentPurposeType <em>Content Purpose Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourcePurpose()
@@ -30,57 +30,49 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface DataResourcePurpose extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Content Purpose Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Purpose Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Purpose Type Id</em>' reference.
-	 * @see #setContentPurposeTypeId(ContentPurposeType)
-	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourcePurpose_ContentPurposeTypeId()
-	 * @model keys="contentPurposeTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ContentPurposeType getContentPurposeTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.data.DataResourcePurpose#getContentPurposeTypeId <em>Content Purpose Type Id</em>}' reference.
+	 * Returns the value of the '<em><b>Data Resource</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Purpose Type Id</em>' reference.
-	 * @see #getContentPurposeTypeId()
-	 * @generated
-	 */
-	void setContentPurposeTypeId(ContentPurposeType value);
-
-	/**
-	 * Returns the value of the '<em><b>Data Resource Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Data Resource Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Data Resource Id</em>' reference.
-	 * @see #setDataResourceId(DataResource)
-	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourcePurpose_DataResourceId()
+	 * @return the value of the '<em>Data Resource</em>' reference.
+	 * @see #setDataResource(DataResource)
+	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourcePurpose_DataResource()
 	 * @model keys="dataResourceId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	DataResource getDataResourceId();
+	DataResource getDataResource();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.data.DataResourcePurpose#getDataResourceId <em>Data Resource Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.data.DataResourcePurpose#getDataResource <em>Data Resource</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Data Resource Id</em>' reference.
-	 * @see #getDataResourceId()
+	 * @param value the new value of the '<em>Data Resource</em>' reference.
+	 * @see #getDataResource()
 	 * @generated
 	 */
-	void setDataResourceId(DataResource value);
+	void setDataResource(DataResource value);
+
+	/**
+	 * Returns the value of the '<em><b>Content Purpose Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Content Purpose Type</em>' reference.
+	 * @see #setContentPurposeType(ContentPurposeType)
+	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourcePurpose_ContentPurposeType()
+	 * @model keys="contentPurposeTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ContentPurposeType getContentPurposeType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.data.DataResourcePurpose#getContentPurposeType <em>Content Purpose Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Content Purpose Type</em>' reference.
+	 * @see #getContentPurposeType()
+	 * @generated
+	 */
+	void setContentPurposeType(ContentPurposeType value);
 
 } // DataResourcePurpose

@@ -32,9 +32,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryContentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryContentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryContentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryContentImpl#getProductCategoryId <em>Product Category Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryContentImpl#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryContentImpl#getProdCatContentTypeId <em>Prod Cat Content Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryContentImpl#getProductCategory <em>Product Category</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryContentImpl#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryContentImpl#getProdCatContentType <em>Prod Cat Content Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryContentImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryContentImpl#getPurchaseFromDate <em>Purchase From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryContentImpl#getPurchaseThruDate <em>Purchase Thru Date</em>}</li>
@@ -162,8 +162,8 @@ public class ProductCategoryContentImpl extends EntityTypedImpl<ProductCategoryC
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_CONTENT__CONTENT_ID, true);
+	public ProductCategory getProductCategory() {
+		return (ProductCategory)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_CONTENT__PRODUCT_CATEGORY, true);
 	}
 
 	/**
@@ -172,8 +172,48 @@ public class ProductCategoryContentImpl extends EntityTypedImpl<ProductCategoryC
 	 * @generated
 	 */
 	@Override
-	public void setContentId(Content newContentId) {
-		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_CONTENT__CONTENT_ID, newContentId);
+	public void setProductCategory(ProductCategory newProductCategory) {
+		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_CONTENT__PRODUCT_CATEGORY, newProductCategory);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Content getContent() {
+		return (Content)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_CONTENT__CONTENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContent(Content newContent) {
+		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_CONTENT__CONTENT, newContent);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductCategoryContentType getProdCatContentType() {
+		return (ProductCategoryContentType)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_CONTENT__PROD_CAT_CONTENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProdCatContentType(ProductCategoryContentType newProdCatContentType) {
+		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_CONTENT__PROD_CAT_CONTENT_TYPE, newProdCatContentType);
 	}
 
 	/**
@@ -332,46 +372,6 @@ public class ProductCategoryContentImpl extends EntityTypedImpl<ProductCategoryC
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductCategory getProductCategoryId() {
-		return (ProductCategory)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_CONTENT__PRODUCT_CATEGORY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductCategoryId(ProductCategory newProductCategoryId) {
-		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_CONTENT__PRODUCT_CATEGORY_ID, newProductCategoryId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductCategoryContentType getProdCatContentTypeId() {
-		return (ProductCategoryContentType)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_CONTENT__PROD_CAT_CONTENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProdCatContentTypeId(ProductCategoryContentType newProdCatContentTypeId) {
-		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_CONTENT__PROD_CAT_CONTENT_TYPE_ID, newProdCatContentTypeId);
 	}
 
 } //ProductCategoryContentImpl

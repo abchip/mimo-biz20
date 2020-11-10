@@ -25,7 +25,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductType#isHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductType#getIsDigital <em>Is Digital</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductType#getIsPhysical <em>Is Physical</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductType#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductType#getProductTypeAttrs <em>Product Type Attrs</em>}</li>
  * </ul>
  *
@@ -131,30 +131,26 @@ public interface ProductType extends EntityType<Product>, EntityInfo {
 	void setIsPhysical(Boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(ProductType)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(ProductType)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductType_ParentType()
 	 * @model keys="productTypeId"
 	 * @generated
 	 */
-	ProductType getParentTypeId();
+	ProductType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(ProductType value);
+	void setParentType(ProductType value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Type Attrs</b></em>' reference list.

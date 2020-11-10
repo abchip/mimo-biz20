@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getFacilityGroupId <em>Facility Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getParentFacilityGroupId <em>Parent Facility Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getFacilityGroup <em>Facility Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getParentFacilityGroup <em>Parent Facility Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getThruDate <em>Thru Date</em>}</li>
@@ -32,6 +32,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface FacilityGroupRollup extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Facility Group</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Facility Group</em>' reference.
+	 * @see #setFacilityGroup(FacilityGroup)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroupRollup_FacilityGroup()
+	 * @model keys="facilityGroupId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	FacilityGroup getFacilityGroup();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getFacilityGroup <em>Facility Group</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Facility Group</em>' reference.
+	 * @see #getFacilityGroup()
+	 * @generated
+	 */
+	void setFacilityGroup(FacilityGroup value);
+
+	/**
+	 * Returns the value of the '<em><b>Parent Facility Group</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Parent Facility Group</em>' reference.
+	 * @see #setParentFacilityGroup(FacilityGroup)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroupRollup_ParentFacilityGroup()
+	 * @model keys="facilityGroupId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	FacilityGroup getParentFacilityGroup();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getParentFacilityGroup <em>Parent Facility Group</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Parent Facility Group</em>' reference.
+	 * @see #getParentFacilityGroup()
+	 * @generated
+	 */
+	void setParentFacilityGroup(FacilityGroup value);
+
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -110,59 +156,5 @@ public interface FacilityGroupRollup extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Facility Group Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Group Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facility Group Id</em>' reference.
-	 * @see #setFacilityGroupId(FacilityGroup)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroupRollup_FacilityGroupId()
-	 * @model keys="facilityGroupId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	FacilityGroup getFacilityGroupId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getFacilityGroupId <em>Facility Group Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Facility Group Id</em>' reference.
-	 * @see #getFacilityGroupId()
-	 * @generated
-	 */
-	void setFacilityGroupId(FacilityGroup value);
-
-	/**
-	 * Returns the value of the '<em><b>Parent Facility Group Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Facility Group Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Facility Group Id</em>' reference.
-	 * @see #setParentFacilityGroupId(FacilityGroup)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroupRollup_ParentFacilityGroupId()
-	 * @model keys="facilityGroupId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	FacilityGroup getParentFacilityGroupId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getParentFacilityGroupId <em>Parent Facility Group Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Facility Group Id</em>' reference.
-	 * @see #getParentFacilityGroupId()
-	 * @generated
-	 */
-	void setParentFacilityGroupId(FacilityGroup value);
 
 } // FacilityGroupRollup

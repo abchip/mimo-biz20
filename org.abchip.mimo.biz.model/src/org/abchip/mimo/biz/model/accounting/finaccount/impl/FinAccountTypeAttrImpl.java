@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeAttrImpl#getFinAccountTypeId <em>Fin Account Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeAttrImpl#getFinAccountType <em>Fin Account Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeAttrImpl#getAttrValue <em>Attr Value</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeAttrImpl#getDescription <em>Description</em>}</li>
@@ -152,6 +152,26 @@ public class FinAccountTypeAttrImpl extends EntityIdentifiableImpl implements Fi
 	 * @generated
 	 */
 	@Override
+	public FinAccountType getFinAccountType() {
+		return (FinAccountType)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE_ATTR__FIN_ACCOUNT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFinAccountType(FinAccountType newFinAccountType) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE_ATTR__FIN_ACCOUNT_TYPE, newFinAccountType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrValue() {
 		return (String)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE_ATTR__ATTR_VALUE, true);
 	}
@@ -242,26 +262,6 @@ public class FinAccountTypeAttrImpl extends EntityIdentifiableImpl implements Fi
 	@Override
 	public void setAttrName(String newAttrName) {
 		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE_ATTR__ATTR_NAME, newAttrName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FinAccountType getFinAccountTypeId() {
-		return (FinAccountType)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE_ATTR__FIN_ACCOUNT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFinAccountTypeId(FinAccountType newFinAccountTypeId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE_ATTR__FIN_ACCOUNT_TYPE_ID, newFinAccountTypeId);
 	}
 
 } //FinAccountTypeAttrImpl

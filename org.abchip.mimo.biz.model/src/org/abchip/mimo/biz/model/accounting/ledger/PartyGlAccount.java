@@ -21,11 +21,11 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getOrganizationPartyId <em>Organization Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getRoleTypeId <em>Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getGlAccountTypeId <em>Gl Account Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getGlAccountId <em>Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getOrganizationParty <em>Organization Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getRoleType <em>Role Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getGlAccountType <em>Gl Account Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getGlAccount <em>Gl Account</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyGlAccount()
@@ -34,137 +34,117 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface PartyGlAccount extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Organization Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Organization Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Organization Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Organization Party Id</em>' reference.
-	 * @see #setOrganizationPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyGlAccount_OrganizationPartyId()
+	 * @return the value of the '<em>Organization Party</em>' reference.
+	 * @see #setOrganizationParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyGlAccount_OrganizationParty()
 	 * @model keys="partyId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Party getOrganizationPartyId();
+	Party getOrganizationParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getOrganizationPartyId <em>Organization Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getOrganizationParty <em>Organization Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Organization Party Id</em>' reference.
-	 * @see #getOrganizationPartyId()
+	 * @param value the new value of the '<em>Organization Party</em>' reference.
+	 * @see #getOrganizationParty()
 	 * @generated
 	 */
-	void setOrganizationPartyId(Party value);
+	void setOrganizationParty(Party value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyGlAccount_PartyId()
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyGlAccount_Party()
 	 * @model keys="partyId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Party getPartyId();
+	Party getParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getParty <em>Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setParty(Party value);
 
 	/**
-	 * Returns the value of the '<em><b>Role Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Role Type Id</em>' reference.
-	 * @see #setRoleTypeId(RoleType)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyGlAccount_RoleTypeId()
+	 * @return the value of the '<em>Role Type</em>' reference.
+	 * @see #setRoleType(RoleType)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyGlAccount_RoleType()
 	 * @model keys="roleTypeId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	RoleType getRoleTypeId();
+	RoleType getRoleType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getRoleTypeId <em>Role Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getRoleType <em>Role Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Role Type Id</em>' reference.
-	 * @see #getRoleTypeId()
+	 * @param value the new value of the '<em>Role Type</em>' reference.
+	 * @see #getRoleType()
 	 * @generated
 	 */
-	void setRoleTypeId(RoleType value);
+	void setRoleType(RoleType value);
 
 	/**
-	 * Returns the value of the '<em><b>Gl Account Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Gl Account Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gl Account Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Account Type Id</em>' reference.
-	 * @see #setGlAccountTypeId(GlAccountType)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyGlAccount_GlAccountTypeId()
+	 * @return the value of the '<em>Gl Account Type</em>' reference.
+	 * @see #setGlAccountType(GlAccountType)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyGlAccount_GlAccountType()
 	 * @model keys="glAccountTypeId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	GlAccountType getGlAccountTypeId();
+	GlAccountType getGlAccountType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getGlAccountTypeId <em>Gl Account Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getGlAccountType <em>Gl Account Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Gl Account Type Id</em>' reference.
-	 * @see #getGlAccountTypeId()
+	 * @param value the new value of the '<em>Gl Account Type</em>' reference.
+	 * @see #getGlAccountType()
 	 * @generated
 	 */
-	void setGlAccountTypeId(GlAccountType value);
+	void setGlAccountType(GlAccountType value);
 
 	/**
-	 * Returns the value of the '<em><b>Gl Account Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Gl Account</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gl Account Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Account Id</em>' reference.
-	 * @see #setGlAccountId(GlAccount)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyGlAccount_GlAccountId()
+	 * @return the value of the '<em>Gl Account</em>' reference.
+	 * @see #setGlAccount(GlAccount)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyGlAccount_GlAccount()
 	 * @model keys="glAccountId"
 	 * @generated
 	 */
-	GlAccount getGlAccountId();
+	GlAccount getGlAccount();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getGlAccountId <em>Gl Account Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyGlAccount#getGlAccount <em>Gl Account</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Gl Account Id</em>' reference.
-	 * @see #getGlAccountId()
+	 * @param value the new value of the '<em>Gl Account</em>' reference.
+	 * @see #getGlAccount()
 	 * @generated
 	 */
-	void setGlAccountId(GlAccount value);
+	void setGlAccount(GlAccount value);
 
 } // PartyGlAccount

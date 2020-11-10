@@ -135,22 +135,22 @@ public interface BomPackage extends EPackage {
 	int PRODUCT_MANUFACTURING_RULE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
+	 * The feature id for the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_MANUFACTURING_RULE__PRODUCT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+
+	/**
 	 * The feature id for the '<em><b>Product Feature</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_MANUFACTURING_RULE__PRODUCT_FEATURE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
-
-	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCT_MANUFACTURING_RULE__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int PRODUCT_MANUFACTURING_RULE__PRODUCT_FEATURE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Product Id For</b></em>' reference.
@@ -269,6 +269,17 @@ public interface BomPackage extends EPackage {
 	EAttribute getProductManufacturingRule_FromDate();
 
 	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.manufacturing.bom.ProductManufacturingRule#getProduct <em>Product</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.manufacturing.bom.ProductManufacturingRule#getProduct()
+	 * @see #getProductManufacturingRule()
+	 * @generated
+	 */
+	EReference getProductManufacturingRule_Product();
+
+	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.manufacturing.bom.ProductManufacturingRule#getProductFeature <em>Product Feature</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -278,17 +289,6 @@ public interface BomPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getProductManufacturingRule_ProductFeature();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.manufacturing.bom.ProductManufacturingRule#getProductId <em>Product Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.manufacturing.bom.ProductManufacturingRule#getProductId()
-	 * @see #getProductManufacturingRule()
-	 * @generated
-	 */
-	EReference getProductManufacturingRule_ProductId();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.manufacturing.bom.ProductManufacturingRule#getProductIdFor <em>Product Id For</em>}'.
@@ -424,20 +424,20 @@ public interface BomPackage extends EPackage {
 		EAttribute PRODUCT_MANUFACTURING_RULE__FROM_DATE = eINSTANCE.getProductManufacturingRule_FromDate();
 
 		/**
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_MANUFACTURING_RULE__PRODUCT = eINSTANCE.getProductManufacturingRule_Product();
+
+		/**
 		 * The meta object literal for the '<em><b>Product Feature</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference PRODUCT_MANUFACTURING_RULE__PRODUCT_FEATURE = eINSTANCE.getProductManufacturingRule_ProductFeature();
-
-		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PRODUCT_MANUFACTURING_RULE__PRODUCT_ID = eINSTANCE.getProductManufacturingRule_ProductId();
 
 		/**
 		 * The meta object literal for the '<em><b>Product Id For</b></em>' reference feature.

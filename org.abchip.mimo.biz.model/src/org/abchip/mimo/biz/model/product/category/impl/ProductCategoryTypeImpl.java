@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryTypeImpl#getProductCategoryTypeId <em>Product Category Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryTypeImpl#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryTypeImpl#getProductCategoryTypeAttrs <em>Product Category Type Attrs</em>}</li>
  * </ul>
  *
@@ -203,8 +203,8 @@ public class ProductCategoryTypeImpl extends EntityTypeImpl<ProductCategory> imp
 	 * @generated
 	 */
 	@Override
-	public ProductCategoryType getParentTypeId() {
-		return (ProductCategoryType)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_TYPE__PARENT_TYPE_ID, true);
+	public ProductCategoryType getParentType() {
+		return (ProductCategoryType)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -213,8 +213,8 @@ public class ProductCategoryTypeImpl extends EntityTypeImpl<ProductCategory> imp
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(ProductCategoryType newParentTypeId) {
-		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(ProductCategoryType newParentType) {
+		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

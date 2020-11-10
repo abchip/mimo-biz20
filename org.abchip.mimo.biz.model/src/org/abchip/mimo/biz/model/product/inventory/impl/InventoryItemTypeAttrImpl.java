@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTypeAttrImpl#getInventoryItemTypeId <em>Inventory Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTypeAttrImpl#getInventoryItemType <em>Inventory Item Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -152,6 +152,26 @@ public class InventoryItemTypeAttrImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
+	public InventoryItemType getInventoryItemType() {
+		return (InventoryItemType)eGet(InventoryPackage.Literals.INVENTORY_ITEM_TYPE_ATTR__INVENTORY_ITEM_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInventoryItemType(InventoryItemType newInventoryItemType) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM_TYPE_ATTR__INVENTORY_ITEM_TYPE, newInventoryItemType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(InventoryPackage.Literals.INVENTORY_ITEM_TYPE_ATTR__DESCRIPTION, true);
 	}
@@ -222,26 +242,6 @@ public class InventoryItemTypeAttrImpl extends EntityIdentifiableImpl implements
 	@Override
 	public void setAttrName(String newAttrName) {
 		eSet(InventoryPackage.Literals.INVENTORY_ITEM_TYPE_ATTR__ATTR_NAME, newAttrName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InventoryItemType getInventoryItemTypeId() {
-		return (InventoryItemType)eGet(InventoryPackage.Literals.INVENTORY_ITEM_TYPE_ATTR__INVENTORY_ITEM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInventoryItemTypeId(InventoryItemType newInventoryItemTypeId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM_TYPE_ATTR__INVENTORY_ITEM_TYPE_ID, newInventoryItemTypeId);
 	}
 
 } //InventoryItemTypeAttrImpl

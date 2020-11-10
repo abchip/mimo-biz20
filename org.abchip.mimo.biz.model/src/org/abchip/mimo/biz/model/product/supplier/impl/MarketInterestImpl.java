@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.MarketInterestImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.MarketInterestImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.MarketInterestImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.MarketInterestImpl#getProductCategoryId <em>Product Category Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.MarketInterestImpl#getPartyClassificationGroupId <em>Party Classification Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.MarketInterestImpl#getProductCategory <em>Product Category</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.MarketInterestImpl#getPartyClassificationGroup <em>Party Classification Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.MarketInterestImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.MarketInterestImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -154,6 +154,46 @@ public class MarketInterestImpl extends EntityIdentifiableImpl implements Market
 	 * @generated
 	 */
 	@Override
+	public ProductCategory getProductCategory() {
+		return (ProductCategory)eGet(SupplierPackage.Literals.MARKET_INTEREST__PRODUCT_CATEGORY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductCategory(ProductCategory newProductCategory) {
+		eSet(SupplierPackage.Literals.MARKET_INTEREST__PRODUCT_CATEGORY, newProductCategory);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PartyClassificationGroup getPartyClassificationGroup() {
+		return (PartyClassificationGroup)eGet(SupplierPackage.Literals.MARKET_INTEREST__PARTY_CLASSIFICATION_GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPartyClassificationGroup(PartyClassificationGroup newPartyClassificationGroup) {
+		eSet(SupplierPackage.Literals.MARKET_INTEREST__PARTY_CLASSIFICATION_GROUP, newPartyClassificationGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(SupplierPackage.Literals.MARKET_INTEREST__FROM_DATE, true);
 	}
@@ -166,26 +206,6 @@ public class MarketInterestImpl extends EntityIdentifiableImpl implements Market
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(SupplierPackage.Literals.MARKET_INTEREST__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PartyClassificationGroup getPartyClassificationGroupId() {
-		return (PartyClassificationGroup)eGet(SupplierPackage.Literals.MARKET_INTEREST__PARTY_CLASSIFICATION_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyClassificationGroupId(PartyClassificationGroup newPartyClassificationGroupId) {
-		eSet(SupplierPackage.Literals.MARKET_INTEREST__PARTY_CLASSIFICATION_GROUP_ID, newPartyClassificationGroupId);
 	}
 
 	/**
@@ -244,26 +264,6 @@ public class MarketInterestImpl extends EntityIdentifiableImpl implements Market
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductCategory getProductCategoryId() {
-		return (ProductCategory)eGet(SupplierPackage.Literals.MARKET_INTEREST__PRODUCT_CATEGORY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductCategoryId(ProductCategory newProductCategoryId) {
-		eSet(SupplierPackage.Literals.MARKET_INTEREST__PRODUCT_CATEGORY_ID, newProductCategoryId);
 	}
 
 } //MarketInterestImpl

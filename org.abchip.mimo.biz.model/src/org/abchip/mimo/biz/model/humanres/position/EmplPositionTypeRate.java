@@ -21,8 +21,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeRate#getEmplPositionTypeId <em>Empl Position Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeRate#getRateTypeId <em>Rate Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeRate#getEmplPositionType <em>Empl Position Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeRate#getRateType <em>Rate Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeRate#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeRate#getPayGradeId <em>Pay Grade Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeRate#getSalaryStepSeqId <em>Salary Step Seq Id</em>}</li>
@@ -35,31 +35,50 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface EmplPositionTypeRate extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Empl Position Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Empl Position Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Empl Position Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Empl Position Type Id</em>' reference.
-	 * @see #setEmplPositionTypeId(EmplPositionType)
-	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionTypeRate_EmplPositionTypeId()
+	 * @return the value of the '<em>Empl Position Type</em>' reference.
+	 * @see #setEmplPositionType(EmplPositionType)
+	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionTypeRate_EmplPositionType()
 	 * @model keys="emplPositionTypeId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	EmplPositionType getEmplPositionTypeId();
+	EmplPositionType getEmplPositionType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeRate#getEmplPositionTypeId <em>Empl Position Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeRate#getEmplPositionType <em>Empl Position Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Empl Position Type Id</em>' reference.
-	 * @see #getEmplPositionTypeId()
+	 * @param value the new value of the '<em>Empl Position Type</em>' reference.
+	 * @see #getEmplPositionType()
 	 * @generated
 	 */
-	void setEmplPositionTypeId(EmplPositionType value);
+	void setEmplPositionType(EmplPositionType value);
+
+	/**
+	 * Returns the value of the '<em><b>Rate Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Rate Type</em>' reference.
+	 * @see #setRateType(RateType)
+	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionTypeRate_RateType()
+	 * @model keys="rateTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	RateType getRateType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeRate#getRateType <em>Rate Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Rate Type</em>' reference.
+	 * @see #getRateType()
+	 * @generated
+	 */
+	void setRateType(RateType value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -113,33 +132,6 @@ public interface EmplPositionTypeRate extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setPayGradeId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Rate Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Rate Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Rate Type Id</em>' reference.
-	 * @see #setRateTypeId(RateType)
-	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionTypeRate_RateTypeId()
-	 * @model keys="rateTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	RateType getRateTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeRate#getRateTypeId <em>Rate Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Rate Type Id</em>' reference.
-	 * @see #getRateTypeId()
-	 * @generated
-	 */
-	void setRateTypeId(RateType value);
 
 	/**
 	 * Returns the value of the '<em><b>Salary Step Seq Id</b></em>' attribute.

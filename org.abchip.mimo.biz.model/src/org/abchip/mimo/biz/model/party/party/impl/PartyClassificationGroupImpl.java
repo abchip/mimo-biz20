@@ -30,8 +30,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationGroupImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationGroupImpl#getPartyClassificationGroupId <em>Party Classification Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationGroupImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationGroupImpl#getParentGroupId <em>Parent Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationGroupImpl#getPartyClassificationTypeId <em>Party Classification Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationGroupImpl#getParentGroup <em>Parent Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationGroupImpl#getPartyClassificationType <em>Party Classification Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -172,8 +172,8 @@ public class PartyClassificationGroupImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public PartyClassificationGroup getParentGroupId() {
-		return (PartyClassificationGroup)eGet(PartyPackage.Literals.PARTY_CLASSIFICATION_GROUP__PARENT_GROUP_ID, true);
+	public PartyClassificationGroup getParentGroup() {
+		return (PartyClassificationGroup)eGet(PartyPackage.Literals.PARTY_CLASSIFICATION_GROUP__PARENT_GROUP, true);
 	}
 
 	/**
@@ -182,8 +182,8 @@ public class PartyClassificationGroupImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void setParentGroupId(PartyClassificationGroup newParentGroupId) {
-		eSet(PartyPackage.Literals.PARTY_CLASSIFICATION_GROUP__PARENT_GROUP_ID, newParentGroupId);
+	public void setParentGroup(PartyClassificationGroup newParentGroup) {
+		eSet(PartyPackage.Literals.PARTY_CLASSIFICATION_GROUP__PARENT_GROUP, newParentGroup);
 	}
 
 	/**
@@ -192,8 +192,8 @@ public class PartyClassificationGroupImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public PartyClassificationType getPartyClassificationTypeId() {
-		return (PartyClassificationType)eGet(PartyPackage.Literals.PARTY_CLASSIFICATION_GROUP__PARTY_CLASSIFICATION_TYPE_ID, true);
+	public PartyClassificationType getPartyClassificationType() {
+		return (PartyClassificationType)eGet(PartyPackage.Literals.PARTY_CLASSIFICATION_GROUP__PARTY_CLASSIFICATION_TYPE, true);
 	}
 
 	/**
@@ -202,8 +202,8 @@ public class PartyClassificationGroupImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void setPartyClassificationTypeId(PartyClassificationType newPartyClassificationTypeId) {
-		eSet(PartyPackage.Literals.PARTY_CLASSIFICATION_GROUP__PARTY_CLASSIFICATION_TYPE_ID, newPartyClassificationTypeId);
+	public void setPartyClassificationType(PartyClassificationType newPartyClassificationType) {
+		eSet(PartyPackage.Literals.PARTY_CLASSIFICATION_GROUP__PARTY_CLASSIFICATION_TYPE, newPartyClassificationType);
 	}
 
 	/**

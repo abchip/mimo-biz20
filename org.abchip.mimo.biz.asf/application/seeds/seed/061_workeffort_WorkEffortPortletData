@@ -3,25 +3,25 @@
   <contents xsi:type="biz-portal:PortletCategory" portletCategoryId="EVENTSTASKS" description="Events and Tasks"/>
   <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="Calendar" description="My Calendar" editFormLocation="component://workeffort/widget/CalendarForms.xml" editFormName="EditCalendar" portletName="Event Calendar" screenLocation="component://workeffort/widget/CalendarScreens.xml" screenName="Calendar" screenshot="/images/portlets/Calendar.png"/>
   <contents xsi:type="biz-portal:PortletPortletCategory">
-    <portalPortletId href="PortalPortlet#Calendar"/>
-    <portletCategoryId href="PortletCategory#EVENTSTASKS"/>
+    <portalPortlet href="PortalPortlet#Calendar"/>
+    <portletCategory href="PortletCategory#EVENTSTASKS"/>
   </contents>
   <contents xsi:type="biz-data:DataResource" dataResourceId="HELP_Calendar" dataResourceName="Calendar help file" isPublic="true" localeString="en" objectInfo="applications/workeffort/data/helpdata/HELP_PORTLET_CALENDAR.xml">
-    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
-    <dataTemplateTypeId href="DataTemplateType#NONE"/>
-    <mimeTypeId href="MimeType#text/xml"/>
-    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <dataResourceType href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateType href="DataTemplateType#NONE"/>
+    <mimeType href="MimeType#text/xml"/>
+    <status href="StatusItem#CTNT_IN_PROGRESS"/>
   </contents>
   <contents xsi:type="biz-content:Content" contentId="HELP_Calendar" contentName="Help portlet Calendar">
-    <contentTypeId href="ContentType#DOCUMENT"/>
-    <dataResourceId href="DataResource#HELP_Calendar"/>
-    <mimeTypeId href="MimeType#text/html"/>
-    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
-    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+    <contentType href="ContentType#DOCUMENT"/>
+    <dataResource href="DataResource#HELP_Calendar"/>
+    <mimeType href="MimeType#text/html"/>
+    <status href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResource href="DataResource#HELP_TEMPL"/>
   </contents>
   <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100">
-    <contentId href="Content#HELP_MYPORTAL"/>
+    <content href="Content#HELP_MYPORTAL"/>
     <contentIdTo href="Content#HELP_Calendar"/>
-    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+    <contentAssocType href="ContentAssocType#TREE_CHILD"/>
   </contents>
 </mimo-ent:EntityContainer>

@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitBinImpl#getBinEndDateTime <em>Bin End Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitBinImpl#getBinStartDateTime <em>Bin Start Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitBinImpl#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitBinImpl#getHitTypeId <em>Hit Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitBinImpl#getHitType <em>Hit Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitBinImpl#getInternalContentId <em>Internal Content Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitBinImpl#getMaxTimeMillis <em>Max Time Millis</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitBinImpl#getMinTimeMillis <em>Min Time Millis</em>}</li>
@@ -241,8 +241,8 @@ public class ServerHitBinImpl extends EntityIdentifiableImpl implements ServerHi
 	 * @generated
 	 */
 	@Override
-	public ServerHitType getHitTypeId() {
-		return (ServerHitType)eGet(VisitPackage.Literals.SERVER_HIT_BIN__HIT_TYPE_ID, true);
+	public ServerHitType getHitType() {
+		return (ServerHitType)eGet(VisitPackage.Literals.SERVER_HIT_BIN__HIT_TYPE, true);
 	}
 
 	/**
@@ -251,8 +251,8 @@ public class ServerHitBinImpl extends EntityIdentifiableImpl implements ServerHi
 	 * @generated
 	 */
 	@Override
-	public void setHitTypeId(ServerHitType newHitTypeId) {
-		eSet(VisitPackage.Literals.SERVER_HIT_BIN__HIT_TYPE_ID, newHitTypeId);
+	public void setHitType(ServerHitType newHitType) {
+		eSet(VisitPackage.Literals.SERVER_HIT_BIN__HIT_TYPE, newHitType);
 	}
 
 	/**

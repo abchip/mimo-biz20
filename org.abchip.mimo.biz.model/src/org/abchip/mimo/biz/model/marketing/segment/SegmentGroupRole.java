@@ -21,9 +21,9 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getSegmentGroupId <em>Segment Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getSegmentGroup <em>Segment Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getRoleType <em>Role Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupRole()
@@ -32,84 +32,72 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface SegmentGroupRole extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupRole_PartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getPartyId <em>Party Id</em>}' reference.
+	 * Returns the value of the '<em><b>Segment Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
-	 * @generated
-	 */
-	void setPartyId(Party value);
-
-	/**
-	 * Returns the value of the '<em><b>Role Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Role Type Id</em>' reference.
-	 * @see #setRoleTypeId(RoleType)
-	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupRole_RoleTypeId()
-	 * @model keys="roleTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	RoleType getRoleTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getRoleTypeId <em>Role Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Role Type Id</em>' reference.
-	 * @see #getRoleTypeId()
-	 * @generated
-	 */
-	void setRoleTypeId(RoleType value);
-
-	/**
-	 * Returns the value of the '<em><b>Segment Group Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Segment Group Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Segment Group Id</em>' reference.
-	 * @see #setSegmentGroupId(SegmentGroup)
-	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupRole_SegmentGroupId()
+	 * @return the value of the '<em>Segment Group</em>' reference.
+	 * @see #setSegmentGroup(SegmentGroup)
+	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupRole_SegmentGroup()
 	 * @model keys="segmentGroupId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	SegmentGroup getSegmentGroupId();
+	SegmentGroup getSegmentGroup();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getSegmentGroupId <em>Segment Group Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getSegmentGroup <em>Segment Group</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Segment Group Id</em>' reference.
-	 * @see #getSegmentGroupId()
+	 * @param value the new value of the '<em>Segment Group</em>' reference.
+	 * @see #getSegmentGroup()
 	 * @generated
 	 */
-	void setSegmentGroupId(SegmentGroup value);
+	void setSegmentGroup(SegmentGroup value);
+
+	/**
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupRole_Party()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getParty <em>Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
+	 * @generated
+	 */
+	void setParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Role Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Role Type</em>' reference.
+	 * @see #setRoleType(RoleType)
+	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupRole_RoleType()
+	 * @model keys="roleTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	RoleType getRoleType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getRoleType <em>Role Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Role Type</em>' reference.
+	 * @see #getRoleType()
+	 * @generated
+	 */
+	void setRoleType(RoleType value);
 
 } // SegmentGroupRole

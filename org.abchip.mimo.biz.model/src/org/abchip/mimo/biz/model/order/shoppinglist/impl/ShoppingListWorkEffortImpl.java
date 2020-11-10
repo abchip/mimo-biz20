@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListWorkEffortImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListWorkEffortImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListWorkEffortImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListWorkEffortImpl#getShoppingListId <em>Shopping List Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListWorkEffortImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListWorkEffortImpl#getShoppingList <em>Shopping List</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListWorkEffortImpl#getWorkEffort <em>Work Effort</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class ShoppingListWorkEffortImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public ShoppingList getShoppingListId() {
-		return (ShoppingList)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST_WORK_EFFORT__SHOPPING_LIST_ID, true);
+	public ShoppingList getShoppingList() {
+		return (ShoppingList)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST_WORK_EFFORT__SHOPPING_LIST, true);
 	}
 
 	/**
@@ -162,8 +162,8 @@ public class ShoppingListWorkEffortImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setShoppingListId(ShoppingList newShoppingListId) {
-		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST_WORK_EFFORT__SHOPPING_LIST_ID, newShoppingListId);
+	public void setShoppingList(ShoppingList newShoppingList) {
+		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST_WORK_EFFORT__SHOPPING_LIST, newShoppingList);
 	}
 
 	/**
@@ -172,8 +172,8 @@ public class ShoppingListWorkEffortImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST_WORK_EFFORT__WORK_EFFORT_ID, true);
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST_WORK_EFFORT__WORK_EFFORT, true);
 	}
 
 	/**
@@ -182,8 +182,8 @@ public class ShoppingListWorkEffortImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST_WORK_EFFORT__WORK_EFFORT_ID, newWorkEffortId);
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST_WORK_EFFORT__WORK_EFFORT, newWorkEffort);
 	}
 
 	/**

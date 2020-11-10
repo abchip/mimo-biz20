@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentMetaDataImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentMetaDataImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentMetaDataImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentMetaDataImpl#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentMetaDataImpl#getMetaDataPredicateId <em>Meta Data Predicate Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentMetaDataImpl#getDataSourceId <em>Data Source Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentMetaDataImpl#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentMetaDataImpl#getMetaDataPredicate <em>Meta Data Predicate</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentMetaDataImpl#getDataSource <em>Data Source</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentMetaDataImpl#getMetaDataValue <em>Meta Data Value</em>}</li>
  * </ul>
  *
@@ -155,8 +155,8 @@ public class ContentMetaDataImpl extends EntityIdentifiableImpl implements Conte
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(ContentPackage.Literals.CONTENT_META_DATA__CONTENT_ID, true);
+	public Content getContent() {
+		return (Content)eGet(ContentPackage.Literals.CONTENT_META_DATA__CONTENT, true);
 	}
 
 	/**
@@ -165,8 +165,8 @@ public class ContentMetaDataImpl extends EntityIdentifiableImpl implements Conte
 	 * @generated
 	 */
 	@Override
-	public void setContentId(Content newContentId) {
-		eSet(ContentPackage.Literals.CONTENT_META_DATA__CONTENT_ID, newContentId);
+	public void setContent(Content newContent) {
+		eSet(ContentPackage.Literals.CONTENT_META_DATA__CONTENT, newContent);
 	}
 
 	/**
@@ -175,8 +175,8 @@ public class ContentMetaDataImpl extends EntityIdentifiableImpl implements Conte
 	 * @generated
 	 */
 	@Override
-	public DataSource getDataSourceId() {
-		return (DataSource)eGet(ContentPackage.Literals.CONTENT_META_DATA__DATA_SOURCE_ID, true);
+	public MetaDataPredicate getMetaDataPredicate() {
+		return (MetaDataPredicate)eGet(ContentPackage.Literals.CONTENT_META_DATA__META_DATA_PREDICATE, true);
 	}
 
 	/**
@@ -185,8 +185,8 @@ public class ContentMetaDataImpl extends EntityIdentifiableImpl implements Conte
 	 * @generated
 	 */
 	@Override
-	public void setDataSourceId(DataSource newDataSourceId) {
-		eSet(ContentPackage.Literals.CONTENT_META_DATA__DATA_SOURCE_ID, newDataSourceId);
+	public void setMetaDataPredicate(MetaDataPredicate newMetaDataPredicate) {
+		eSet(ContentPackage.Literals.CONTENT_META_DATA__META_DATA_PREDICATE, newMetaDataPredicate);
 	}
 
 	/**
@@ -195,8 +195,8 @@ public class ContentMetaDataImpl extends EntityIdentifiableImpl implements Conte
 	 * @generated
 	 */
 	@Override
-	public MetaDataPredicate getMetaDataPredicateId() {
-		return (MetaDataPredicate)eGet(ContentPackage.Literals.CONTENT_META_DATA__META_DATA_PREDICATE_ID, true);
+	public DataSource getDataSource() {
+		return (DataSource)eGet(ContentPackage.Literals.CONTENT_META_DATA__DATA_SOURCE, true);
 	}
 
 	/**
@@ -205,8 +205,8 @@ public class ContentMetaDataImpl extends EntityIdentifiableImpl implements Conte
 	 * @generated
 	 */
 	@Override
-	public void setMetaDataPredicateId(MetaDataPredicate newMetaDataPredicateId) {
-		eSet(ContentPackage.Literals.CONTENT_META_DATA__META_DATA_PREDICATE_ID, newMetaDataPredicateId);
+	public void setDataSource(DataSource newDataSource) {
+		eSet(ContentPackage.Literals.CONTENT_META_DATA__DATA_SOURCE, newDataSource);
 	}
 
 	/**

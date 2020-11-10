@@ -31,9 +31,9 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityId <em>Facility Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getClosedDate <em>Closed Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultDaysToShip <em>Default Days To Ship</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultDimensionUomId <em>Default Dimension Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultInventoryItemTypeId <em>Default Inventory Item Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultWeightUomId <em>Default Weight Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultDimensionUom <em>Default Dimension Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultInventoryItemType <em>Default Inventory Item Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultWeightUom <em>Default Weight Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityAttributes <em>Facility Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityContactMechs <em>Facility Contact Mechs</em>}</li>
@@ -43,15 +43,15 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityLocations <em>Facility Locations</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityName <em>Facility Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilitySize <em>Facility Size</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilitySizeUomId <em>Facility Size Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityTypeId <em>Facility Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getGeoPointId <em>Geo Point Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilitySizeUom <em>Facility Size Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityType <em>Facility Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getGeoPoint <em>Geo Point</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getOldSquareFootage <em>Old Square Footage</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getOpenedDate <em>Opened Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getOwnerPartyId <em>Owner Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getParentFacilityId <em>Parent Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getPrimaryFacilityGroupId <em>Primary Facility Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getOwnerParty <em>Owner Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getParentFacility <em>Parent Facility</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getPrimaryFacilityGroup <em>Primary Facility Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getProductStore <em>Product Store</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility()
@@ -113,83 +113,71 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	void setDefaultDaysToShip(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Default Dimension Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Default Dimension Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Default Dimension Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Default Dimension Uom Id</em>' reference.
-	 * @see #setDefaultDimensionUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_DefaultDimensionUomId()
+	 * @return the value of the '<em>Default Dimension Uom</em>' reference.
+	 * @see #setDefaultDimensionUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_DefaultDimensionUom()
 	 * @model keys="uomId"
 	 *        annotation="mimo-ent-slot help='This field store the unit of measurement of dimension (length, width and height)'"
 	 * @generated
 	 */
-	Uom getDefaultDimensionUomId();
+	Uom getDefaultDimensionUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultDimensionUomId <em>Default Dimension Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultDimensionUom <em>Default Dimension Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Default Dimension Uom Id</em>' reference.
-	 * @see #getDefaultDimensionUomId()
+	 * @param value the new value of the '<em>Default Dimension Uom</em>' reference.
+	 * @see #getDefaultDimensionUom()
 	 * @generated
 	 */
-	void setDefaultDimensionUomId(Uom value);
+	void setDefaultDimensionUom(Uom value);
 
 	/**
-	 * Returns the value of the '<em><b>Default Inventory Item Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Default Inventory Item Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Default Inventory Item Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Default Inventory Item Type Id</em>' reference.
-	 * @see #setDefaultInventoryItemTypeId(InventoryItemType)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_DefaultInventoryItemTypeId()
+	 * @return the value of the '<em>Default Inventory Item Type</em>' reference.
+	 * @see #setDefaultInventoryItemType(InventoryItemType)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_DefaultInventoryItemType()
 	 * @model keys="inventoryItemTypeId"
 	 * @generated
 	 */
-	InventoryItemType getDefaultInventoryItemTypeId();
+	InventoryItemType getDefaultInventoryItemType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultInventoryItemTypeId <em>Default Inventory Item Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultInventoryItemType <em>Default Inventory Item Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Default Inventory Item Type Id</em>' reference.
-	 * @see #getDefaultInventoryItemTypeId()
+	 * @param value the new value of the '<em>Default Inventory Item Type</em>' reference.
+	 * @see #getDefaultInventoryItemType()
 	 * @generated
 	 */
-	void setDefaultInventoryItemTypeId(InventoryItemType value);
+	void setDefaultInventoryItemType(InventoryItemType value);
 
 	/**
-	 * Returns the value of the '<em><b>Default Weight Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Default Weight Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Default Weight Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Default Weight Uom Id</em>' reference.
-	 * @see #setDefaultWeightUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_DefaultWeightUomId()
+	 * @return the value of the '<em>Default Weight Uom</em>' reference.
+	 * @see #setDefaultWeightUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_DefaultWeightUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getDefaultWeightUomId();
+	Uom getDefaultWeightUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultWeightUomId <em>Default Weight Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultWeightUom <em>Default Weight Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Default Weight Uom Id</em>' reference.
-	 * @see #getDefaultWeightUomId()
+	 * @param value the new value of the '<em>Default Weight Uom</em>' reference.
+	 * @see #getDefaultWeightUom()
 	 * @generated
 	 */
-	void setDefaultWeightUomId(Uom value);
+	void setDefaultWeightUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
@@ -364,56 +352,70 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	void setFacilitySize(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Facility Size Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Facility Size Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Size Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facility Size Uom Id</em>' reference.
-	 * @see #setFacilitySizeUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_FacilitySizeUomId()
+	 * @return the value of the '<em>Facility Size Uom</em>' reference.
+	 * @see #setFacilitySizeUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_FacilitySizeUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getFacilitySizeUomId();
+	Uom getFacilitySizeUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilitySizeUomId <em>Facility Size Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilitySizeUom <em>Facility Size Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Facility Size Uom Id</em>' reference.
-	 * @see #getFacilitySizeUomId()
+	 * @param value the new value of the '<em>Facility Size Uom</em>' reference.
+	 * @see #getFacilitySizeUom()
 	 * @generated
 	 */
-	void setFacilitySizeUomId(Uom value);
+	void setFacilitySizeUom(Uom value);
 
 	/**
-	 * Returns the value of the '<em><b>Geo Point Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Facility Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geo Point Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Geo Point Id</em>' reference.
-	 * @see #setGeoPointId(GeoPoint)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_GeoPointId()
+	 * @return the value of the '<em>Facility Type</em>' reference.
+	 * @see #setFacilityType(FacilityType)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_FacilityType()
+	 * @model keys="facilityTypeId"
+	 * @generated
+	 */
+	FacilityType getFacilityType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityType <em>Facility Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Facility Type</em>' reference.
+	 * @see #getFacilityType()
+	 * @generated
+	 */
+	void setFacilityType(FacilityType value);
+
+	/**
+	 * Returns the value of the '<em><b>Geo Point</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Geo Point</em>' reference.
+	 * @see #setGeoPoint(GeoPoint)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_GeoPoint()
 	 * @model keys="geoPointId"
 	 * @generated
 	 */
-	GeoPoint getGeoPointId();
+	GeoPoint getGeoPoint();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getGeoPointId <em>Geo Point Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getGeoPoint <em>Geo Point</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Geo Point Id</em>' reference.
-	 * @see #getGeoPointId()
+	 * @param value the new value of the '<em>Geo Point</em>' reference.
+	 * @see #getGeoPoint()
 	 * @generated
 	 */
-	void setGeoPointId(GeoPoint value);
+	void setGeoPoint(GeoPoint value);
 
 	/**
 	 * Returns the value of the '<em><b>Old Square Footage</b></em>' attribute.
@@ -468,134 +470,92 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	void setOpenedDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Owner Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Owner Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Owner Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Owner Party Id</em>' reference.
-	 * @see #setOwnerPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_OwnerPartyId()
+	 * @return the value of the '<em>Owner Party</em>' reference.
+	 * @see #setOwnerParty(Party)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_OwnerParty()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getOwnerPartyId();
+	Party getOwnerParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getOwnerPartyId <em>Owner Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getOwnerParty <em>Owner Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Owner Party Id</em>' reference.
-	 * @see #getOwnerPartyId()
+	 * @param value the new value of the '<em>Owner Party</em>' reference.
+	 * @see #getOwnerParty()
 	 * @generated
 	 */
-	void setOwnerPartyId(Party value);
+	void setOwnerParty(Party value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Store Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store Id</em>' reference.
-	 * @see #setProductStoreId(ProductStore)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_ProductStoreId()
-	 * @model keys="productStoreId"
-	 * @generated
-	 */
-	ProductStore getProductStoreId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getProductStoreId <em>Product Store Id</em>}' reference.
+	 * Returns the value of the '<em><b>Parent Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store Id</em>' reference.
-	 * @see #getProductStoreId()
-	 * @generated
-	 */
-	void setProductStoreId(ProductStore value);
-
-	/**
-	 * Returns the value of the '<em><b>Parent Facility Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Facility Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Facility Id</em>' reference.
-	 * @see #setParentFacilityId(Facility)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_ParentFacilityId()
+	 * @return the value of the '<em>Parent Facility</em>' reference.
+	 * @see #setParentFacility(Facility)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_ParentFacility()
 	 * @model keys="facilityId"
 	 * @generated
 	 */
-	Facility getParentFacilityId();
+	Facility getParentFacility();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getParentFacilityId <em>Parent Facility Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getParentFacility <em>Parent Facility</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Facility Id</em>' reference.
-	 * @see #getParentFacilityId()
+	 * @param value the new value of the '<em>Parent Facility</em>' reference.
+	 * @see #getParentFacility()
 	 * @generated
 	 */
-	void setParentFacilityId(Facility value);
+	void setParentFacility(Facility value);
 
 	/**
-	 * Returns the value of the '<em><b>Primary Facility Group Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Primary Facility Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Primary Facility Group Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Primary Facility Group Id</em>' reference.
-	 * @see #setPrimaryFacilityGroupId(FacilityGroup)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_PrimaryFacilityGroupId()
+	 * @return the value of the '<em>Primary Facility Group</em>' reference.
+	 * @see #setPrimaryFacilityGroup(FacilityGroup)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_PrimaryFacilityGroup()
 	 * @model keys="facilityGroupId"
 	 * @generated
 	 */
-	FacilityGroup getPrimaryFacilityGroupId();
+	FacilityGroup getPrimaryFacilityGroup();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getPrimaryFacilityGroupId <em>Primary Facility Group Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getPrimaryFacilityGroup <em>Primary Facility Group</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Primary Facility Group Id</em>' reference.
-	 * @see #getPrimaryFacilityGroupId()
+	 * @param value the new value of the '<em>Primary Facility Group</em>' reference.
+	 * @see #getPrimaryFacilityGroup()
 	 * @generated
 	 */
-	void setPrimaryFacilityGroupId(FacilityGroup value);
+	void setPrimaryFacilityGroup(FacilityGroup value);
 
 	/**
-	 * Returns the value of the '<em><b>Facility Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Store</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facility Type Id</em>' reference.
-	 * @see #setFacilityTypeId(FacilityType)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_FacilityTypeId()
-	 * @model keys="facilityTypeId"
+	 * @return the value of the '<em>Product Store</em>' reference.
+	 * @see #setProductStore(ProductStore)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_ProductStore()
+	 * @model keys="productStoreId"
 	 * @generated
 	 */
-	FacilityType getFacilityTypeId();
+	ProductStore getProductStore();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityTypeId <em>Facility Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getProductStore <em>Product Store</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Facility Type Id</em>' reference.
-	 * @see #getFacilityTypeId()
+	 * @param value the new value of the '<em>Product Store</em>' reference.
+	 * @see #getProductStore()
 	 * @generated
 	 */
-	void setFacilityTypeId(FacilityType value);
+	void setProductStore(ProductStore value);
 
 	/**
 	 * Returns the value of the '<em><b>Facility Id</b></em>' attribute.

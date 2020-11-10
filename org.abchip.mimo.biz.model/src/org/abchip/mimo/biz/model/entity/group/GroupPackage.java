@@ -190,13 +190,13 @@ public interface GroupPackage extends EPackage {
 	int ENTITY_GROUP_ENTRY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Entity Group Id</b></em>' reference.
+	 * The feature id for the '<em><b>Entity Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_GROUP_ENTRY__ENTITY_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ENTITY_GROUP_ENTRY__ENTITY_GROUP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Entity Or Package</b></em>' attribute.
@@ -280,15 +280,15 @@ public interface GroupPackage extends EPackage {
 	EClass getEntityGroupEntry();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.group.EntityGroupEntry#getEntityGroupId <em>Entity Group Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.group.EntityGroupEntry#getEntityGroup <em>Entity Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Entity Group Id</em>'.
-	 * @see org.abchip.mimo.biz.model.entity.group.EntityGroupEntry#getEntityGroupId()
+	 * @return the meta object for the reference '<em>Entity Group</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.group.EntityGroupEntry#getEntityGroup()
 	 * @see #getEntityGroupEntry()
 	 * @generated
 	 */
-	EReference getEntityGroupEntry_EntityGroupId();
+	EReference getEntityGroupEntry_EntityGroup();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.group.EntityGroupEntry#getEntityOrPackage <em>Entity Or Package</em>}'.
@@ -379,12 +379,12 @@ public interface GroupPackage extends EPackage {
 		EClass ENTITY_GROUP_ENTRY = eINSTANCE.getEntityGroupEntry();
 
 		/**
-		 * The meta object literal for the '<em><b>Entity Group Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Entity Group</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ENTITY_GROUP_ENTRY__ENTITY_GROUP_ID = eINSTANCE.getEntityGroupEntry_EntityGroupId();
+		EReference ENTITY_GROUP_ENTRY__ENTITY_GROUP = eINSTANCE.getEntityGroupEntry_EntityGroup();
 
 		/**
 		 * The meta object literal for the '<em><b>Entity Or Package</b></em>' attribute feature.

@@ -27,11 +27,11 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getReorderGuidelineId <em>Reorder Guideline Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getGeoId <em>Geo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getGeo <em>Geo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getReorderLevel <em>Reorder Level</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getReorderQuantity <em>Reorder Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getRoleTypeId <em>Role Type Id</em>}</li>
@@ -70,56 +70,70 @@ public interface ReorderGuideline extends EntityIdentifiable, EntityInfo {
 	void setFromDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Geo Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geo Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Geo Id</em>' reference.
-	 * @see #setGeoId(Geo)
-	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getReorderGuideline_GeoId()
+	 * @return the value of the '<em>Geo</em>' reference.
+	 * @see #setGeo(Geo)
+	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getReorderGuideline_Geo()
 	 * @model keys="geoId"
 	 * @generated
 	 */
-	Geo getGeoId();
+	Geo getGeo();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getGeoId <em>Geo Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getGeo <em>Geo</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Geo Id</em>' reference.
-	 * @see #getGeoId()
+	 * @param value the new value of the '<em>Geo</em>' reference.
+	 * @see #getGeo()
 	 * @generated
 	 */
-	void setGeoId(Geo value);
+	void setGeo(Geo value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getReorderGuideline_PartyId()
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getReorderGuideline_Party()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getPartyId();
+	Party getParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getParty <em>Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getReorderGuideline_Product()
+	 * @model keys="productId"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
 
 	/**
 	 * Returns the value of the '<em><b>Reorder Guideline Id</b></em>' attribute.
@@ -147,6 +161,28 @@ public interface ReorderGuideline extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setReorderGuidelineId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Facility</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Facility</em>' reference.
+	 * @see #setFacility(Facility)
+	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getReorderGuideline_Facility()
+	 * @model keys="facilityId"
+	 * @generated
+	 */
+	Facility getFacility();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getFacility <em>Facility</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Facility</em>' reference.
+	 * @see #getFacility()
+	 * @generated
+	 */
+	void setFacility(Facility value);
 
 	/**
 	 * Returns the value of the '<em><b>Reorder Level</b></em>' attribute.
@@ -251,57 +287,5 @@ public interface ReorderGuideline extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getReorderGuideline_ProductId()
-	 * @model keys="productId"
-	 * @generated
-	 */
-	Product getProductId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getProductId <em>Product Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
-	 * @generated
-	 */
-	void setProductId(Product value);
-
-	/**
-	 * Returns the value of the '<em><b>Facility Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facility Id</em>' reference.
-	 * @see #setFacilityId(Facility)
-	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getReorderGuideline_FacilityId()
-	 * @model keys="facilityId"
-	 * @generated
-	 */
-	Facility getFacilityId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.supplier.ReorderGuideline#getFacilityId <em>Facility Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Facility Id</em>' reference.
-	 * @see #getFacilityId()
-	 * @generated
-	 */
-	void setFacilityId(Facility value);
 
 } // ReorderGuideline

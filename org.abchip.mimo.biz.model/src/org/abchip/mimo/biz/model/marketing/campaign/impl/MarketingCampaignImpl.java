@@ -41,7 +41,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getCampaignSummary <em>Campaign Summary</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getConvertedLeads <em>Converted Leads</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getEstimatedCost <em>Estimated Cost</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getExpectedResponsePercent <em>Expected Response Percent</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getExpectedRevenue <em>Expected Revenue</em>}</li>
@@ -52,9 +52,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getMarketingCampaignPrices <em>Marketing Campaign Prices</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getMarketingCampaignPromos <em>Marketing Campaign Promos</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getNumSent <em>Num Sent</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getParentCampaignId <em>Parent Campaign Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getParentCampaign <em>Parent Campaign</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getStartDate <em>Start Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -298,8 +298,8 @@ public class MarketingCampaignImpl extends EntityIdentifiableImpl implements Mar
 	 * @generated
 	 */
 	@Override
-	public Uom getCurrencyUomId() {
-		return (Uom)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN__CURRENCY_UOM_ID, true);
+	public Uom getCurrencyUom() {
+		return (Uom)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN__CURRENCY_UOM, true);
 	}
 
 	/**
@@ -308,8 +308,8 @@ public class MarketingCampaignImpl extends EntityIdentifiableImpl implements Mar
 	 * @generated
 	 */
 	@Override
-	public void setCurrencyUomId(Uom newCurrencyUomId) {
-		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN__CURRENCY_UOM_ID, newCurrencyUomId);
+	public void setCurrencyUom(Uom newCurrencyUom) {
+		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN__CURRENCY_UOM, newCurrencyUom);
 	}
 
 	/**
@@ -511,8 +511,8 @@ public class MarketingCampaignImpl extends EntityIdentifiableImpl implements Mar
 	 * @generated
 	 */
 	@Override
-	public MarketingCampaign getParentCampaignId() {
-		return (MarketingCampaign)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN__PARENT_CAMPAIGN_ID, true);
+	public MarketingCampaign getParentCampaign() {
+		return (MarketingCampaign)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN__PARENT_CAMPAIGN, true);
 	}
 
 	/**
@@ -521,8 +521,8 @@ public class MarketingCampaignImpl extends EntityIdentifiableImpl implements Mar
 	 * @generated
 	 */
 	@Override
-	public void setParentCampaignId(MarketingCampaign newParentCampaignId) {
-		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN__PARENT_CAMPAIGN_ID, newParentCampaignId);
+	public void setParentCampaign(MarketingCampaign newParentCampaign) {
+		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN__PARENT_CAMPAIGN, newParentCampaign);
 	}
 
 	/**
@@ -551,8 +551,8 @@ public class MarketingCampaignImpl extends EntityIdentifiableImpl implements Mar
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN__STATUS, true);
 	}
 
 	/**
@@ -561,8 +561,8 @@ public class MarketingCampaignImpl extends EntityIdentifiableImpl implements Mar
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(CampaignPackage.Literals.MARKETING_CAMPAIGN__STATUS, newStatus);
 	}
 
 	/**

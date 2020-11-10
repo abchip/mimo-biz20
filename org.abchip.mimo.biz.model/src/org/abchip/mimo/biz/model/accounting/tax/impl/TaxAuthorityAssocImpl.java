@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityAssocImpl#getTaxAuthPartyId <em>Tax Auth Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityAssocImpl#getToTaxAuthGeoId <em>To Tax Auth Geo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityAssocImpl#getToTaxAuthPartyId <em>To Tax Auth Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityAssocImpl#getTaxAuthorityAssocTypeId <em>Tax Authority Assoc Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityAssocImpl#getTaxAuthorityAssocType <em>Tax Authority Assoc Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityAssocImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -313,8 +313,8 @@ public class TaxAuthorityAssocImpl extends EntityTypedImpl<TaxAuthorityAssocType
 	 * @generated
 	 */
 	@Override
-	public TaxAuthorityAssocType getTaxAuthorityAssocTypeId() {
-		return (TaxAuthorityAssocType)eGet(TaxPackage.Literals.TAX_AUTHORITY_ASSOC__TAX_AUTHORITY_ASSOC_TYPE_ID, true);
+	public TaxAuthorityAssocType getTaxAuthorityAssocType() {
+		return (TaxAuthorityAssocType)eGet(TaxPackage.Literals.TAX_AUTHORITY_ASSOC__TAX_AUTHORITY_ASSOC_TYPE, true);
 	}
 
 	/**
@@ -323,8 +323,8 @@ public class TaxAuthorityAssocImpl extends EntityTypedImpl<TaxAuthorityAssocType
 	 * @generated
 	 */
 	@Override
-	public void setTaxAuthorityAssocTypeId(TaxAuthorityAssocType newTaxAuthorityAssocTypeId) {
-		eSet(TaxPackage.Literals.TAX_AUTHORITY_ASSOC__TAX_AUTHORITY_ASSOC_TYPE_ID, newTaxAuthorityAssocTypeId);
+	public void setTaxAuthorityAssocType(TaxAuthorityAssocType newTaxAuthorityAssocType) {
+		eSet(TaxPackage.Literals.TAX_AUTHORITY_ASSOC__TAX_AUTHORITY_ASSOC_TYPE, newTaxAuthorityAssocType);
 	}
 
 } //TaxAuthorityAssocImpl

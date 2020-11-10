@@ -30,8 +30,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.OrderRequirementCommitmentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.OrderRequirementCommitmentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.OrderRequirementCommitmentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.OrderRequirementCommitmentImpl#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.OrderRequirementCommitmentImpl#getRequirementId <em>Requirement Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.OrderRequirementCommitmentImpl#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.OrderRequirementCommitmentImpl#getRequirement <em>Requirement</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.OrderRequirementCommitmentImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.OrderRequirementCommitmentImpl#getQuantity <em>Quantity</em>}</li>
  * </ul>
@@ -155,8 +155,8 @@ public class OrderRequirementCommitmentImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(RequirementPackage.Literals.ORDER_REQUIREMENT_COMMITMENT__ORDER_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(RequirementPackage.Literals.ORDER_REQUIREMENT_COMMITMENT__ORDER, true);
 	}
 
 	/**
@@ -165,8 +165,28 @@ public class OrderRequirementCommitmentImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(RequirementPackage.Literals.ORDER_REQUIREMENT_COMMITMENT__ORDER_ID, newOrderId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(RequirementPackage.Literals.ORDER_REQUIREMENT_COMMITMENT__ORDER, newOrder);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Requirement getRequirement() {
+		return (Requirement)eGet(RequirementPackage.Literals.ORDER_REQUIREMENT_COMMITMENT__REQUIREMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRequirement(Requirement newRequirement) {
+		eSet(RequirementPackage.Literals.ORDER_REQUIREMENT_COMMITMENT__REQUIREMENT, newRequirement);
 	}
 
 	/**
@@ -245,26 +265,6 @@ public class OrderRequirementCommitmentImpl extends EntityIdentifiableImpl imple
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Requirement getRequirementId() {
-		return (Requirement)eGet(RequirementPackage.Literals.ORDER_REQUIREMENT_COMMITMENT__REQUIREMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRequirementId(Requirement newRequirementId) {
-		eSet(RequirementPackage.Literals.ORDER_REQUIREMENT_COMMITMENT__REQUIREMENT_ID, newRequirementId);
 	}
 
 } //OrderRequirementCommitmentImpl

@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentTypeImpl#getPaymentContentTypeId <em>Payment Content Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -199,8 +199,8 @@ public class PaymentContentTypeImpl extends EntityTypeImpl<PaymentContent> imple
 	 * @generated
 	 */
 	@Override
-	public PaymentContentType getParentTypeId() {
-		return (PaymentContentType)eGet(PaymentPackage.Literals.PAYMENT_CONTENT_TYPE__PARENT_TYPE_ID, true);
+	public PaymentContentType getParentType() {
+		return (PaymentContentType)eGet(PaymentPackage.Literals.PAYMENT_CONTENT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -209,8 +209,8 @@ public class PaymentContentTypeImpl extends EntityTypeImpl<PaymentContent> imple
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(PaymentContentType newParentTypeId) {
-		eSet(PaymentPackage.Literals.PAYMENT_CONTENT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(PaymentContentType newParentType) {
+		eSet(PaymentPackage.Literals.PAYMENT_CONTENT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

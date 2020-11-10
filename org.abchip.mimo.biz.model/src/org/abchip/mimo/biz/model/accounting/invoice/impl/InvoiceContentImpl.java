@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContentImpl#getInvoiceId <em>Invoice Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContentImpl#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContentImpl#getInvoiceContentTypeId <em>Invoice Content Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContentImpl#getInvoice <em>Invoice</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContentImpl#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContentImpl#getInvoiceContentType <em>Invoice Content Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContentImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContentImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -155,8 +155,8 @@ public class InvoiceContentImpl extends EntityTypedImpl<InvoiceContentType> impl
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(InvoicePackage.Literals.INVOICE_CONTENT__CONTENT_ID, true);
+	public Invoice getInvoice() {
+		return (Invoice)eGet(InvoicePackage.Literals.INVOICE_CONTENT__INVOICE, true);
 	}
 
 	/**
@@ -165,8 +165,48 @@ public class InvoiceContentImpl extends EntityTypedImpl<InvoiceContentType> impl
 	 * @generated
 	 */
 	@Override
-	public void setContentId(Content newContentId) {
-		eSet(InvoicePackage.Literals.INVOICE_CONTENT__CONTENT_ID, newContentId);
+	public void setInvoice(Invoice newInvoice) {
+		eSet(InvoicePackage.Literals.INVOICE_CONTENT__INVOICE, newInvoice);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Content getContent() {
+		return (Content)eGet(InvoicePackage.Literals.INVOICE_CONTENT__CONTENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContent(Content newContent) {
+		eSet(InvoicePackage.Literals.INVOICE_CONTENT__CONTENT, newContent);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InvoiceContentType getInvoiceContentType() {
+		return (InvoiceContentType)eGet(InvoicePackage.Literals.INVOICE_CONTENT__INVOICE_CONTENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInvoiceContentType(InvoiceContentType newInvoiceContentType) {
+		eSet(InvoicePackage.Literals.INVOICE_CONTENT__INVOICE_CONTENT_TYPE, newInvoiceContentType);
 	}
 
 	/**
@@ -245,46 +285,6 @@ public class InvoiceContentImpl extends EntityTypedImpl<InvoiceContentType> impl
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Invoice getInvoiceId() {
-		return (Invoice)eGet(InvoicePackage.Literals.INVOICE_CONTENT__INVOICE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInvoiceId(Invoice newInvoiceId) {
-		eSet(InvoicePackage.Literals.INVOICE_CONTENT__INVOICE_ID, newInvoiceId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InvoiceContentType getInvoiceContentTypeId() {
-		return (InvoiceContentType)eGet(InvoicePackage.Literals.INVOICE_CONTENT__INVOICE_CONTENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInvoiceContentTypeId(InvoiceContentType newInvoiceContentTypeId) {
-		eSet(InvoicePackage.Literals.INVOICE_CONTENT__INVOICE_CONTENT_TYPE_ID, newInvoiceContentTypeId);
 	}
 
 } //InvoiceContentImpl

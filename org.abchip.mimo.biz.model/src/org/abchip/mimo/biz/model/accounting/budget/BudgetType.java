@@ -24,7 +24,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetType#getBudgetTypeAttrs <em>Budget Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetType()
@@ -85,30 +85,26 @@ public interface BudgetType extends EntityType<Budget>, EntityInfo {
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(BudgetType)
-	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(BudgetType)
+	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetType_ParentType()
 	 * @model keys="budgetTypeId"
 	 * @generated
 	 */
-	BudgetType getParentTypeId();
+	BudgetType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(BudgetType value);
+	void setParentType(BudgetType value);
 
 	/**
 	 * Returns the value of the '<em><b>Budget Type Id</b></em>' attribute.

@@ -22,10 +22,10 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getProductCategoryId <em>Product Category Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getOrganizationPartyId <em>Organization Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getGlAccountTypeId <em>Gl Account Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getGlAccountId <em>Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getProductCategory <em>Product Category</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getOrganizationParty <em>Organization Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getGlAccountType <em>Gl Account Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getGlAccount <em>Gl Account</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryGlAccount()
@@ -34,110 +34,94 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface ProductCategoryGlAccount extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Gl Account Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gl Account Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Account Id</em>' reference.
-	 * @see #setGlAccountId(GlAccount)
-	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryGlAccount_GlAccountId()
-	 * @model keys="glAccountId"
-	 * @generated
-	 */
-	GlAccount getGlAccountId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getGlAccountId <em>Gl Account Id</em>}' reference.
+	 * Returns the value of the '<em><b>Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Gl Account Id</em>' reference.
-	 * @see #getGlAccountId()
-	 * @generated
-	 */
-	void setGlAccountId(GlAccount value);
-
-	/**
-	 * Returns the value of the '<em><b>Gl Account Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gl Account Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Account Type Id</em>' reference.
-	 * @see #setGlAccountTypeId(GlAccountType)
-	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryGlAccount_GlAccountTypeId()
-	 * @model keys="glAccountTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	GlAccountType getGlAccountTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getGlAccountTypeId <em>Gl Account Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Gl Account Type Id</em>' reference.
-	 * @see #getGlAccountTypeId()
-	 * @generated
-	 */
-	void setGlAccountTypeId(GlAccountType value);
-
-	/**
-	 * Returns the value of the '<em><b>Organization Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Organization Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Organization Party Id</em>' reference.
-	 * @see #setOrganizationPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryGlAccount_OrganizationPartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getOrganizationPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getOrganizationPartyId <em>Organization Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Organization Party Id</em>' reference.
-	 * @see #getOrganizationPartyId()
-	 * @generated
-	 */
-	void setOrganizationPartyId(Party value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Category Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Category Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Category Id</em>' reference.
-	 * @see #setProductCategoryId(ProductCategory)
-	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryGlAccount_ProductCategoryId()
+	 * @return the value of the '<em>Product Category</em>' reference.
+	 * @see #setProductCategory(ProductCategory)
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryGlAccount_ProductCategory()
 	 * @model keys="productCategoryId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ProductCategory getProductCategoryId();
+	ProductCategory getProductCategory();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getProductCategoryId <em>Product Category Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getProductCategory <em>Product Category</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Category Id</em>' reference.
-	 * @see #getProductCategoryId()
+	 * @param value the new value of the '<em>Product Category</em>' reference.
+	 * @see #getProductCategory()
 	 * @generated
 	 */
-	void setProductCategoryId(ProductCategory value);
+	void setProductCategory(ProductCategory value);
+
+	/**
+	 * Returns the value of the '<em><b>Organization Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Organization Party</em>' reference.
+	 * @see #setOrganizationParty(Party)
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryGlAccount_OrganizationParty()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getOrganizationParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getOrganizationParty <em>Organization Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Organization Party</em>' reference.
+	 * @see #getOrganizationParty()
+	 * @generated
+	 */
+	void setOrganizationParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Gl Account Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Gl Account Type</em>' reference.
+	 * @see #setGlAccountType(GlAccountType)
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryGlAccount_GlAccountType()
+	 * @model keys="glAccountTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	GlAccountType getGlAccountType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getGlAccountType <em>Gl Account Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Gl Account Type</em>' reference.
+	 * @see #getGlAccountType()
+	 * @generated
+	 */
+	void setGlAccountType(GlAccountType value);
+
+	/**
+	 * Returns the value of the '<em><b>Gl Account</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Gl Account</em>' reference.
+	 * @see #setGlAccount(GlAccount)
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryGlAccount_GlAccount()
+	 * @model keys="glAccountId"
+	 * @generated
+	 */
+	GlAccount getGlAccount();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getGlAccount <em>Gl Account</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Gl Account</em>' reference.
+	 * @see #getGlAccount()
+	 * @generated
+	 */
+	void setGlAccount(GlAccount value);
 
 } // ProductCategoryGlAccount

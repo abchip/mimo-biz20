@@ -29,14 +29,14 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getAutoCancelDate <em>Auto Cancel Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getBudgetId <em>Budget Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getBudgetItemSeqId <em>Budget Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getCancelBackOrderDate <em>Cancel Back Order Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getCancelQuantity <em>Cancel Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getChangeByUserLoginId <em>Change By User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getChangeByUserLogin <em>Change By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getCorrespondingPoId <em>Corresponding Po Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getDeploymentId <em>Deployment Id</em>}</li>
@@ -45,33 +45,33 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getEstimatedDeliveryDate <em>Estimated Delivery Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getEstimatedShipDate <em>Estimated Ship Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getExternalId <em>External Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getFromInventoryItemId <em>From Inventory Item Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getFromInventoryItem <em>From Inventory Item</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getIsItemGroupPrimary <em>Is Item Group Primary</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getIsModifiedPrice <em>Is Modified Price</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getIsPromo <em>Is Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getItemDescription <em>Item Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOrderItemGroupSeqId <em>Order Item Group Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOrderItemTypeId <em>Order Item Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOverrideGlAccountId <em>Override Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOrderItemType <em>Order Item Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOverrideGlAccount <em>Override Gl Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getProdCatalogId <em>Prod Catalog Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getProductCategoryId <em>Product Category Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getProductFeatureId <em>Product Feature Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getProductId <em>Product Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getQuoteId <em>Quote Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getQuoteItemSeqId <em>Quote Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getRecurringFreqUomId <em>Recurring Freq Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getRecurringFreqUom <em>Recurring Freq Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getReserveAfterDate <em>Reserve After Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getSalesOpportunityId <em>Sales Opportunity Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getSalesOpportunity <em>Sales Opportunity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getSelectedAmount <em>Selected Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getShipAfterDate <em>Ship After Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getShipBeforeDate <em>Ship Before Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getShoppingListId <em>Shopping List Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getShoppingListItemSeqId <em>Shopping List Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getSubscriptionId <em>Subscription Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getSupplierProductId <em>Supplier Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getSyncStatusId <em>Sync Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getSyncStatus <em>Sync Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getUnitAverageCost <em>Unit Average Cost</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getUnitListPrice <em>Unit List Price</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getUnitPrice <em>Unit Price</em>}</li>
@@ -83,6 +83,29 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_Order()
+	 * @model keys="orderId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	OrderHeader getOrder();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOrder <em>Order</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
+	 * @generated
+	 */
+	void setOrder(OrderHeader value);
+
 	/**
 	 * Returns the value of the '<em><b>Auto Cancel Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -214,31 +237,27 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	void setCancelQuantity(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Change By User Login Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Change By User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Change By User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Change By User Login Id</em>' reference.
-	 * @see #setChangeByUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_ChangeByUserLoginId()
+	 * @return the value of the '<em>Change By User Login</em>' reference.
+	 * @see #setChangeByUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_ChangeByUserLogin()
 	 * @model keys="userLoginId"
 	 *        annotation="mimo-ent-slot audit='true'"
 	 * @generated
 	 */
-	UserLogin getChangeByUserLoginId();
+	UserLogin getChangeByUserLogin();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getChangeByUserLoginId <em>Change By User Login Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getChangeByUserLogin <em>Change By User Login</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Change By User Login Id</em>' reference.
-	 * @see #getChangeByUserLoginId()
+	 * @param value the new value of the '<em>Change By User Login</em>' reference.
+	 * @see #getChangeByUserLogin()
 	 * @generated
 	 */
-	void setChangeByUserLoginId(UserLogin value);
+	void setChangeByUserLogin(UserLogin value);
 
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
@@ -449,30 +468,26 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	void setExternalId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>From Inventory Item Id</b></em>' reference.
+	 * Returns the value of the '<em><b>From Inventory Item</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>From Inventory Item Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>From Inventory Item Id</em>' reference.
-	 * @see #setFromInventoryItemId(InventoryItem)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_FromInventoryItemId()
+	 * @return the value of the '<em>From Inventory Item</em>' reference.
+	 * @see #setFromInventoryItem(InventoryItem)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_FromInventoryItem()
 	 * @model keys="inventoryItemId"
 	 * @generated
 	 */
-	InventoryItem getFromInventoryItemId();
+	InventoryItem getFromInventoryItem();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getFromInventoryItemId <em>From Inventory Item Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getFromInventoryItem <em>From Inventory Item</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>From Inventory Item Id</em>' reference.
-	 * @see #getFromInventoryItemId()
+	 * @param value the new value of the '<em>From Inventory Item</em>' reference.
+	 * @see #getFromInventoryItem()
 	 * @generated
 	 */
-	void setFromInventoryItemId(InventoryItem value);
+	void setFromInventoryItem(InventoryItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Is Item Group Primary</b></em>' attribute.
@@ -567,33 +582,6 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	void setItemDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_OrderId()
-	 * @model keys="orderId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	OrderHeader getOrderId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOrderId <em>Order Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
-	 * @generated
-	 */
-	void setOrderId(OrderHeader value);
-
-	/**
 	 * Returns the value of the '<em><b>Order Item Group Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -618,6 +606,51 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	 * @generated
 	 */
 	void setOrderItemGroupSeqId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Order Item Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Order Item Type</em>' reference.
+	 * @see #setOrderItemType(OrderItemType)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_OrderItemType()
+	 * @model keys="orderItemTypeId"
+	 * @generated
+	 */
+	OrderItemType getOrderItemType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOrderItemType <em>Order Item Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Order Item Type</em>' reference.
+	 * @see #getOrderItemType()
+	 * @generated
+	 */
+	void setOrderItemType(OrderItemType value);
+
+	/**
+	 * Returns the value of the '<em><b>Override Gl Account</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Override Gl Account</em>' reference.
+	 * @see #setOverrideGlAccount(GlAccount)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_OverrideGlAccount()
+	 * @model keys="glAccountId"
+	 *        annotation="mimo-ent-slot help='Used to specify the override or actual glAccountId used for the adjustment, avoids problems if configuration changes after initial posting, etc.'"
+	 * @generated
+	 */
+	GlAccount getOverrideGlAccount();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOverrideGlAccount <em>Override Gl Account</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Override Gl Account</em>' reference.
+	 * @see #getOverrideGlAccount()
+	 * @generated
+	 */
+	void setOverrideGlAccount(GlAccount value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -648,59 +681,6 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	void setOrderItemSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Order Item Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Item Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Item Type Id</em>' reference.
-	 * @see #setOrderItemTypeId(OrderItemType)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_OrderItemTypeId()
-	 * @model keys="orderItemTypeId"
-	 * @generated
-	 */
-	OrderItemType getOrderItemTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOrderItemTypeId <em>Order Item Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Item Type Id</em>' reference.
-	 * @see #getOrderItemTypeId()
-	 * @generated
-	 */
-	void setOrderItemTypeId(OrderItemType value);
-
-	/**
-	 * Returns the value of the '<em><b>Override Gl Account Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Override Gl Account Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Override Gl Account Id</em>' reference.
-	 * @see #setOverrideGlAccountId(GlAccount)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_OverrideGlAccountId()
-	 * @model keys="glAccountId"
-	 *        annotation="mimo-ent-slot help='Used to specify the override or actual glAccountId used for the adjustment, avoids problems if configuration changes after initial posting, etc.'"
-	 * @generated
-	 */
-	GlAccount getOverrideGlAccountId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOverrideGlAccountId <em>Override Gl Account Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Override Gl Account Id</em>' reference.
-	 * @see #getOverrideGlAccountId()
-	 * @generated
-	 */
-	void setOverrideGlAccountId(GlAccount value);
-
-	/**
 	 * Returns the value of the '<em><b>Prod Catalog Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -725,6 +705,28 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	 * @generated
 	 */
 	void setProdCatalogId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_Product()
+	 * @model keys="productId"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Category Id</b></em>' attribute.
@@ -777,32 +779,6 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	 * @generated
 	 */
 	void setProductFeatureId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_ProductId()
-	 * @model keys="productId"
-	 * @generated
-	 */
-	Product getProductId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getProductId <em>Product Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
-	 * @generated
-	 */
-	void setProductId(Product value);
 
 	/**
 	 * Returns the value of the '<em><b>Quantity</b></em>' attribute.
@@ -884,30 +860,26 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	void setQuoteItemSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Recurring Freq Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Recurring Freq Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Recurring Freq Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Recurring Freq Uom Id</em>' reference.
-	 * @see #setRecurringFreqUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_RecurringFreqUomId()
+	 * @return the value of the '<em>Recurring Freq Uom</em>' reference.
+	 * @see #setRecurringFreqUom(Uom)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_RecurringFreqUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getRecurringFreqUomId();
+	Uom getRecurringFreqUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getRecurringFreqUomId <em>Recurring Freq Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getRecurringFreqUom <em>Recurring Freq Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Recurring Freq Uom Id</em>' reference.
-	 * @see #getRecurringFreqUomId()
+	 * @param value the new value of the '<em>Recurring Freq Uom</em>' reference.
+	 * @see #getRecurringFreqUom()
 	 * @generated
 	 */
-	void setRecurringFreqUomId(Uom value);
+	void setRecurringFreqUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Reserve After Date</b></em>' attribute.
@@ -936,30 +908,26 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	void setReserveAfterDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Sales Opportunity Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Sales Opportunity</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sales Opportunity Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Sales Opportunity Id</em>' reference.
-	 * @see #setSalesOpportunityId(SalesOpportunity)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_SalesOpportunityId()
+	 * @return the value of the '<em>Sales Opportunity</em>' reference.
+	 * @see #setSalesOpportunity(SalesOpportunity)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_SalesOpportunity()
 	 * @model keys="salesOpportunityId"
 	 * @generated
 	 */
-	SalesOpportunity getSalesOpportunityId();
+	SalesOpportunity getSalesOpportunity();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getSalesOpportunityId <em>Sales Opportunity Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getSalesOpportunity <em>Sales Opportunity</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Sales Opportunity Id</em>' reference.
-	 * @see #getSalesOpportunityId()
+	 * @param value the new value of the '<em>Sales Opportunity</em>' reference.
+	 * @see #getSalesOpportunity()
 	 * @generated
 	 */
-	void setSalesOpportunityId(SalesOpportunity value);
+	void setSalesOpportunity(SalesOpportunity value);
 
 	/**
 	 * Returns the value of the '<em><b>Selected Amount</b></em>' attribute.
@@ -1092,30 +1060,26 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	void setShoppingListItemSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_StatusId()
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_Status()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getStatusId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getStatusId <em>Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setStatusId(StatusItem value);
+	void setStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Subscription Id</b></em>' attribute.
@@ -1170,30 +1134,26 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	void setSupplierProductId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Sync Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Sync Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sync Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Sync Status Id</em>' reference.
-	 * @see #setSyncStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_SyncStatusId()
+	 * @return the value of the '<em>Sync Status</em>' reference.
+	 * @see #setSyncStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_SyncStatus()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getSyncStatusId();
+	StatusItem getSyncStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getSyncStatusId <em>Sync Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getSyncStatus <em>Sync Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Sync Status Id</em>' reference.
-	 * @see #getSyncStatusId()
+	 * @param value the new value of the '<em>Sync Status</em>' reference.
+	 * @see #getSyncStatus()
 	 * @generated
 	 */
-	void setSyncStatusId(StatusItem value);
+	void setSyncStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Unit Average Cost</b></em>' attribute.

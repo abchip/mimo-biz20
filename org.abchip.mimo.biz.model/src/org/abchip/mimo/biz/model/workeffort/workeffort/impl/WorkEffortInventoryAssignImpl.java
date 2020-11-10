@@ -30,10 +30,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryAssignImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryAssignImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryAssignImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryAssignImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryAssignImpl#getInventoryItemId <em>Inventory Item Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryAssignImpl#getWorkEffort <em>Work Effort</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryAssignImpl#getInventoryItem <em>Inventory Item</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryAssignImpl#getQuantity <em>Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryAssignImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryAssignImpl#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @generated
@@ -155,8 +155,8 @@ public class WorkEffortInventoryAssignImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public InventoryItem getInventoryItemId() {
-		return (InventoryItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_ASSIGN__INVENTORY_ITEM_ID, true);
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_ASSIGN__WORK_EFFORT, true);
 	}
 
 	/**
@@ -165,8 +165,28 @@ public class WorkEffortInventoryAssignImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setInventoryItemId(InventoryItem newInventoryItemId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_ASSIGN__INVENTORY_ITEM_ID, newInventoryItemId);
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_ASSIGN__WORK_EFFORT, newWorkEffort);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InventoryItem getInventoryItem() {
+		return (InventoryItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_ASSIGN__INVENTORY_ITEM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInventoryItem(InventoryItem newInventoryItem) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_ASSIGN__INVENTORY_ITEM, newInventoryItem);
 	}
 
 	/**
@@ -195,8 +215,8 @@ public class WorkEffortInventoryAssignImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_ASSIGN__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_ASSIGN__STATUS, true);
 	}
 
 	/**
@@ -205,8 +225,8 @@ public class WorkEffortInventoryAssignImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_ASSIGN__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_ASSIGN__STATUS, newStatus);
 	}
 
 	/**
@@ -245,26 +265,6 @@ public class WorkEffortInventoryAssignImpl extends EntityIdentifiableImpl implem
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_ASSIGN__WORK_EFFORT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_INVENTORY_ASSIGN__WORK_EFFORT_ID, newWorkEffortId);
 	}
 
 } //WorkEffortInventoryAssignImpl

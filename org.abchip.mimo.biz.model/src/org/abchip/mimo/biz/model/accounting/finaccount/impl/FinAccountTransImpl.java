@@ -41,17 +41,17 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getAmount <em>Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getEntryDate <em>Entry Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getFinAccountId <em>Fin Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getFinAccount <em>Fin Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getFinAccountTransAttributes <em>Fin Account Trans Attributes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getFinAccountTransTypeId <em>Fin Account Trans Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getGlReconciliationId <em>Gl Reconciliation Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getFinAccountTransType <em>Fin Account Trans Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getGlReconciliation <em>Gl Reconciliation</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getOrderId <em>Order Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getPaymentId <em>Payment Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getPerformedByPartyId <em>Performed By Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getReasonEnumId <em>Reason Enum Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getPayment <em>Payment</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getPerformedByParty <em>Performed By Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getReasonEnum <em>Reason Enum</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransImpl#getTransactionDate <em>Transaction Date</em>}</li>
  * </ul>
  *
@@ -233,8 +233,8 @@ public class FinAccountTransImpl extends EntityTypedImpl<FinAccountTransType> im
 	 * @generated
 	 */
 	@Override
-	public GlReconciliation getGlReconciliationId() {
-		return (GlReconciliation)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__GL_RECONCILIATION_ID, true);
+	public FinAccount getFinAccount() {
+		return (FinAccount)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__FIN_ACCOUNT, true);
 	}
 
 	/**
@@ -243,8 +243,8 @@ public class FinAccountTransImpl extends EntityTypedImpl<FinAccountTransType> im
 	 * @generated
 	 */
 	@Override
-	public void setGlReconciliationId(GlReconciliation newGlReconciliationId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__GL_RECONCILIATION_ID, newGlReconciliationId);
+	public void setFinAccount(FinAccount newFinAccount) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__FIN_ACCOUNT, newFinAccount);
 	}
 
 	/**
@@ -293,8 +293,8 @@ public class FinAccountTransImpl extends EntityTypedImpl<FinAccountTransType> im
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__PARTY, true);
 	}
 
 	/**
@@ -303,8 +303,8 @@ public class FinAccountTransImpl extends EntityTypedImpl<FinAccountTransType> im
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__PARTY, newParty);
 	}
 
 	/**
@@ -313,8 +313,8 @@ public class FinAccountTransImpl extends EntityTypedImpl<FinAccountTransType> im
 	 * @generated
 	 */
 	@Override
-	public Payment getPaymentId() {
-		return (Payment)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__PAYMENT_ID, true);
+	public Payment getPayment() {
+		return (Payment)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__PAYMENT, true);
 	}
 
 	/**
@@ -323,8 +323,8 @@ public class FinAccountTransImpl extends EntityTypedImpl<FinAccountTransType> im
 	 * @generated
 	 */
 	@Override
-	public void setPaymentId(Payment newPaymentId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__PAYMENT_ID, newPaymentId);
+	public void setPayment(Payment newPayment) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__PAYMENT, newPayment);
 	}
 
 	/**
@@ -333,8 +333,8 @@ public class FinAccountTransImpl extends EntityTypedImpl<FinAccountTransType> im
 	 * @generated
 	 */
 	@Override
-	public Party getPerformedByPartyId() {
-		return (Party)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__PERFORMED_BY_PARTY_ID, true);
+	public Party getPerformedByParty() {
+		return (Party)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__PERFORMED_BY_PARTY, true);
 	}
 
 	/**
@@ -343,8 +343,8 @@ public class FinAccountTransImpl extends EntityTypedImpl<FinAccountTransType> im
 	 * @generated
 	 */
 	@Override
-	public void setPerformedByPartyId(Party newPerformedByPartyId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__PERFORMED_BY_PARTY_ID, newPerformedByPartyId);
+	public void setPerformedByParty(Party newPerformedByParty) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__PERFORMED_BY_PARTY, newPerformedByParty);
 	}
 
 	/**
@@ -353,8 +353,8 @@ public class FinAccountTransImpl extends EntityTypedImpl<FinAccountTransType> im
 	 * @generated
 	 */
 	@Override
-	public Enumeration getReasonEnumId() {
-		return (Enumeration)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__REASON_ENUM_ID, true);
+	public Enumeration getReasonEnum() {
+		return (Enumeration)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__REASON_ENUM, true);
 	}
 
 	/**
@@ -363,8 +363,8 @@ public class FinAccountTransImpl extends EntityTypedImpl<FinAccountTransType> im
 	 * @generated
 	 */
 	@Override
-	public void setReasonEnumId(Enumeration newReasonEnumId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__REASON_ENUM_ID, newReasonEnumId);
+	public void setReasonEnum(Enumeration newReasonEnum) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__REASON_ENUM, newReasonEnum);
 	}
 
 	/**
@@ -373,8 +373,8 @@ public class FinAccountTransImpl extends EntityTypedImpl<FinAccountTransType> im
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__STATUS, true);
 	}
 
 	/**
@@ -383,8 +383,8 @@ public class FinAccountTransImpl extends EntityTypedImpl<FinAccountTransType> im
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__STATUS, newStatus);
 	}
 
 	/**
@@ -450,50 +450,50 @@ public class FinAccountTransImpl extends EntityTypedImpl<FinAccountTransType> im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public FinAccountTransType getFinAccountTransTypeId() {
-		return (FinAccountTransType)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__FIN_ACCOUNT_TRANS_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFinAccountTransTypeId(FinAccountTransType newFinAccountTransTypeId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__FIN_ACCOUNT_TRANS_TYPE_ID, newFinAccountTransTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FinAccount getFinAccountId() {
-		return (FinAccount)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__FIN_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFinAccountId(FinAccount newFinAccountId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__FIN_ACCOUNT_ID, newFinAccountId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<FinAccountTransAttribute> getFinAccountTransAttributes() {
 		return (List<FinAccountTransAttribute>)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__FIN_ACCOUNT_TRANS_ATTRIBUTES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FinAccountTransType getFinAccountTransType() {
+		return (FinAccountTransType)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__FIN_ACCOUNT_TRANS_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFinAccountTransType(FinAccountTransType newFinAccountTransType) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__FIN_ACCOUNT_TRANS_TYPE, newFinAccountTransType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GlReconciliation getGlReconciliation() {
+		return (GlReconciliation)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__GL_RECONCILIATION, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGlReconciliation(GlReconciliation newGlReconciliation) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__GL_RECONCILIATION, newGlReconciliation);
 	}
 
 	/**

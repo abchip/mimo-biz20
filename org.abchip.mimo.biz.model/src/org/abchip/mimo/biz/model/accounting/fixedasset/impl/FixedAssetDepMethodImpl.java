@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetDepMethodImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetDepMethodImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetDepMethodImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetDepMethodImpl#getDepreciationCustomMethodId <em>Depreciation Custom Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetDepMethodImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetDepMethodImpl#getDepreciationCustomMethod <em>Depreciation Custom Method</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetDepMethodImpl#getFixedAsset <em>Fixed Asset</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetDepMethodImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetDepMethodImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -153,8 +153,8 @@ public class FixedAssetDepMethodImpl extends EntityIdentifiableImpl implements F
 	 * @generated
 	 */
 	@Override
-	public CustomMethod getDepreciationCustomMethodId() {
-		return (CustomMethod)eGet(FixedassetPackage.Literals.FIXED_ASSET_DEP_METHOD__DEPRECIATION_CUSTOM_METHOD_ID, true);
+	public CustomMethod getDepreciationCustomMethod() {
+		return (CustomMethod)eGet(FixedassetPackage.Literals.FIXED_ASSET_DEP_METHOD__DEPRECIATION_CUSTOM_METHOD, true);
 	}
 
 	/**
@@ -163,8 +163,28 @@ public class FixedAssetDepMethodImpl extends EntityIdentifiableImpl implements F
 	 * @generated
 	 */
 	@Override
-	public void setDepreciationCustomMethodId(CustomMethod newDepreciationCustomMethodId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_DEP_METHOD__DEPRECIATION_CUSTOM_METHOD_ID, newDepreciationCustomMethodId);
+	public void setDepreciationCustomMethod(CustomMethod newDepreciationCustomMethod) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_DEP_METHOD__DEPRECIATION_CUSTOM_METHOD, newDepreciationCustomMethod);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FixedAsset getFixedAsset() {
+		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET_DEP_METHOD__FIXED_ASSET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFixedAsset(FixedAsset newFixedAsset) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_DEP_METHOD__FIXED_ASSET, newFixedAsset);
 	}
 
 	/**
@@ -243,26 +263,6 @@ public class FixedAssetDepMethodImpl extends EntityIdentifiableImpl implements F
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FixedAsset getFixedAssetId() {
-		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET_DEP_METHOD__FIXED_ASSET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFixedAssetId(FixedAsset newFixedAssetId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_DEP_METHOD__FIXED_ASSET_ID, newFixedAssetId);
 	}
 
 } //FixedAssetDepMethodImpl

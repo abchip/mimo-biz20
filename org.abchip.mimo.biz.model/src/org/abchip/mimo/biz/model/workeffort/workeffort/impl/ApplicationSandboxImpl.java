@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.ApplicationSandboxImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.ApplicationSandboxImpl#getPartyId <em>Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.ApplicationSandboxImpl#getRoleTypeId <em>Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.ApplicationSandboxImpl#getRuntimeDataId <em>Runtime Data Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.ApplicationSandboxImpl#getRuntimeData <em>Runtime Data</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.ApplicationSandboxImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
  * </ul>
  *
@@ -235,8 +235,8 @@ public class ApplicationSandboxImpl extends EntityIdentifiableImpl implements Ap
 	 * @generated
 	 */
 	@Override
-	public RuntimeData getRuntimeDataId() {
-		return (RuntimeData)eGet(WorkeffortPackage.Literals.APPLICATION_SANDBOX__RUNTIME_DATA_ID, true);
+	public RuntimeData getRuntimeData() {
+		return (RuntimeData)eGet(WorkeffortPackage.Literals.APPLICATION_SANDBOX__RUNTIME_DATA, true);
 	}
 
 	/**
@@ -245,8 +245,8 @@ public class ApplicationSandboxImpl extends EntityIdentifiableImpl implements Ap
 	 * @generated
 	 */
 	@Override
-	public void setRuntimeDataId(RuntimeData newRuntimeDataId) {
-		eSet(WorkeffortPackage.Literals.APPLICATION_SANDBOX__RUNTIME_DATA_ID, newRuntimeDataId);
+	public void setRuntimeData(RuntimeData newRuntimeData) {
+		eSet(WorkeffortPackage.Literals.APPLICATION_SANDBOX__RUNTIME_DATA, newRuntimeData);
 	}
 
 	/**

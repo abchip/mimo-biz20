@@ -24,14 +24,14 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getCustRequestId <em>Cust Request Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getCustRequest <em>Cust Request</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getCustRequestItemSeqId <em>Cust Request Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getConfigId <em>Config Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getCustRequestResolutionId <em>Cust Request Resolution Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getCustRequestResolution <em>Cust Request Resolution</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getMaximumAmount <em>Maximum Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getPriority <em>Priority</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getRequiredByDate <em>Required By Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getReservLength <em>Reserv Length</em>}</li>
@@ -39,7 +39,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getReservStart <em>Reserv Start</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getSelectedAmount <em>Selected Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getSequenceNum <em>Sequence Num</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getStory <em>Story</em>}</li>
  * </ul>
  *
@@ -48,6 +48,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface CustRequestItem extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Cust Request</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Cust Request</em>' reference.
+	 * @see #setCustRequest(CustRequest)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestItem_CustRequest()
+	 * @model keys="custRequestId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	CustRequest getCustRequest();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getCustRequest <em>Cust Request</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Cust Request</em>' reference.
+	 * @see #getCustRequest()
+	 * @generated
+	 */
+	void setCustRequest(CustRequest value);
+
 	/**
 	 * Returns the value of the '<em><b>Config Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -75,31 +98,26 @@ public interface CustRequestItem extends EntityIdentifiable, EntityInfo {
 	void setConfigId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Cust Request Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Cust Request Resolution</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cust Request Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cust Request Id</em>' reference.
-	 * @see #setCustRequestId(CustRequest)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestItem_CustRequestId()
-	 * @model keys="custRequestId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
+	 * @return the value of the '<em>Cust Request Resolution</em>' reference.
+	 * @see #setCustRequestResolution(CustRequestResolution)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestItem_CustRequestResolution()
+	 * @model keys="custRequestResolutionId"
 	 * @generated
 	 */
-	CustRequest getCustRequestId();
+	CustRequestResolution getCustRequestResolution();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getCustRequestId <em>Cust Request Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getCustRequestResolution <em>Cust Request Resolution</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cust Request Id</em>' reference.
-	 * @see #getCustRequestId()
+	 * @param value the new value of the '<em>Cust Request Resolution</em>' reference.
+	 * @see #getCustRequestResolution()
 	 * @generated
 	 */
-	void setCustRequestId(CustRequest value);
+	void setCustRequestResolution(CustRequestResolution value);
 
 	/**
 	 * Returns the value of the '<em><b>Cust Request Item Seq Id</b></em>' attribute.
@@ -128,32 +146,6 @@ public interface CustRequestItem extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setCustRequestItemSeqId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Cust Request Resolution Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cust Request Resolution Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cust Request Resolution Id</em>' reference.
-	 * @see #setCustRequestResolutionId(CustRequestResolution)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestItem_CustRequestResolutionId()
-	 * @model keys="custRequestResolutionId"
-	 * @generated
-	 */
-	CustRequestResolution getCustRequestResolutionId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getCustRequestResolutionId <em>Cust Request Resolution Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cust Request Resolution Id</em>' reference.
-	 * @see #getCustRequestResolutionId()
-	 * @generated
-	 */
-	void setCustRequestResolutionId(CustRequestResolution value);
 
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
@@ -234,30 +226,26 @@ public interface CustRequestItem extends EntityIdentifiable, EntityInfo {
 	void setPriority(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestItem_ProductId()
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestItem_Product()
 	 * @model keys="productId"
 	 * @generated
 	 */
-	Product getProductId();
+	Product getProduct();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getProductId <em>Product Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getProduct <em>Product</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
 	 * @generated
 	 */
-	void setProductId(Product value);
+	void setProduct(Product value);
 
 	/**
 	 * Returns the value of the '<em><b>Quantity</b></em>' attribute.
@@ -442,30 +430,26 @@ public interface CustRequestItem extends EntityIdentifiable, EntityInfo {
 	void setSequenceNum(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestItem_StatusId()
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestItem_Status()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getStatusId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getStatusId <em>Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestItem#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setStatusId(StatusItem value);
+	void setStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Story</b></em>' attribute.

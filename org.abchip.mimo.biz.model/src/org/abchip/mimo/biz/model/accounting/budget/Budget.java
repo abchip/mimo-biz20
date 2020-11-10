@@ -26,9 +26,9 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getBudgetItems <em>Budget Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getBudgetRevisions <em>Budget Revisions</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getBudgetStatuss <em>Budget Statuss</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getBudgetTypeId <em>Budget Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getBudgetType <em>Budget Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getCustomTimePeriodId <em>Custom Time Period Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getCustomTimePeriod <em>Custom Time Period</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudget()
@@ -63,56 +63,26 @@ public interface Budget extends EntityTyped<BudgetType>, EntityInfo {
 	void setComments(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Custom Time Period Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Custom Time Period</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Custom Time Period Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Custom Time Period Id</em>' reference.
-	 * @see #setCustomTimePeriodId(CustomTimePeriod)
-	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudget_CustomTimePeriodId()
+	 * @return the value of the '<em>Custom Time Period</em>' reference.
+	 * @see #setCustomTimePeriod(CustomTimePeriod)
+	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudget_CustomTimePeriod()
 	 * @model keys="customTimePeriodId"
 	 * @generated
 	 */
-	CustomTimePeriod getCustomTimePeriodId();
+	CustomTimePeriod getCustomTimePeriod();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getCustomTimePeriodId <em>Custom Time Period Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getCustomTimePeriod <em>Custom Time Period</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Custom Time Period Id</em>' reference.
-	 * @see #getCustomTimePeriodId()
+	 * @param value the new value of the '<em>Custom Time Period</em>' reference.
+	 * @see #getCustomTimePeriod()
 	 * @generated
 	 */
-	void setCustomTimePeriodId(CustomTimePeriod value);
-
-	/**
-	 * Returns the value of the '<em><b>Budget Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Budget Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Budget Type Id</em>' reference.
-	 * @see #setBudgetTypeId(BudgetType)
-	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudget_BudgetTypeId()
-	 * @model keys="budgetTypeId"
-	 * @generated
-	 */
-	BudgetType getBudgetTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getBudgetTypeId <em>Budget Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Budget Type Id</em>' reference.
-	 * @see #getBudgetTypeId()
-	 * @generated
-	 */
-	void setBudgetTypeId(BudgetType value);
+	void setCustomTimePeriod(CustomTimePeriod value);
 
 	/**
 	 * Returns the value of the '<em><b>Budget Id</b></em>' attribute.
@@ -204,5 +174,27 @@ public interface Budget extends EntityTyped<BudgetType>, EntityInfo {
 	 * @generated
 	 */
 	List<BudgetStatus> getBudgetStatuss();
+
+	/**
+	 * Returns the value of the '<em><b>Budget Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Budget Type</em>' reference.
+	 * @see #setBudgetType(BudgetType)
+	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudget_BudgetType()
+	 * @model keys="budgetTypeId"
+	 * @generated
+	 */
+	BudgetType getBudgetType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getBudgetType <em>Budget Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Budget Type</em>' reference.
+	 * @see #getBudgetType()
+	 * @generated
+	 */
+	void setBudgetType(BudgetType value);
 
 } // Budget

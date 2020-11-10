@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeMemberImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeMemberImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeMemberImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeMemberImpl#getTestingId <em>Testing Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeMemberImpl#getTestingNodeId <em>Testing Node Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeMemberImpl#getTesting <em>Testing</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeMemberImpl#getTestingNode <em>Testing Node</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeMemberImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeMemberImpl#getExtendFromDate <em>Extend From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeMemberImpl#getExtendThruDate <em>Extend Thru Date</em>}</li>
@@ -155,6 +155,46 @@ public class TestingNodeMemberImpl extends EntityIdentifiableImpl implements Tes
 	 * @generated
 	 */
 	@Override
+	public Testing getTesting() {
+		return (Testing)eGet(TestPackage.Literals.TESTING_NODE_MEMBER__TESTING, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTesting(Testing newTesting) {
+		eSet(TestPackage.Literals.TESTING_NODE_MEMBER__TESTING, newTesting);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TestingNode getTestingNode() {
+		return (TestingNode)eGet(TestPackage.Literals.TESTING_NODE_MEMBER__TESTING_NODE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTestingNode(TestingNode newTestingNode) {
+		eSet(TestPackage.Literals.TESTING_NODE_MEMBER__TESTING_NODE, newTestingNode);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getExtendFromDate() {
 		return (Date)eGet(TestPackage.Literals.TESTING_NODE_MEMBER__EXTEND_FROM_DATE, true);
 	}
@@ -207,46 +247,6 @@ public class TestingNodeMemberImpl extends EntityIdentifiableImpl implements Tes
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(TestPackage.Literals.TESTING_NODE_MEMBER__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Testing getTestingId() {
-		return (Testing)eGet(TestPackage.Literals.TESTING_NODE_MEMBER__TESTING_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTestingId(Testing newTestingId) {
-		eSet(TestPackage.Literals.TESTING_NODE_MEMBER__TESTING_ID, newTestingId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public TestingNode getTestingNodeId() {
-		return (TestingNode)eGet(TestPackage.Literals.TESTING_NODE_MEMBER__TESTING_NODE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTestingNodeId(TestingNode newTestingNodeId) {
-		eSet(TestPackage.Literals.TESTING_NODE_MEMBER__TESTING_NODE_ID, newTestingNodeId);
 	}
 
 	/**

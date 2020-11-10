@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfRatingTypeImpl#getPerfRatingTypeId <em>Perf Rating Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfRatingTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfRatingTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfRatingTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfRatingTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -192,8 +192,8 @@ public class PerfRatingTypeImpl extends EntityIdentifiableImpl implements PerfRa
 	 * @generated
 	 */
 	@Override
-	public PerfRatingType getParentTypeId() {
-		return (PerfRatingType)eGet(AbilityPackage.Literals.PERF_RATING_TYPE__PARENT_TYPE_ID, true);
+	public PerfRatingType getParentType() {
+		return (PerfRatingType)eGet(AbilityPackage.Literals.PERF_RATING_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -202,8 +202,8 @@ public class PerfRatingTypeImpl extends EntityIdentifiableImpl implements PerfRa
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(PerfRatingType newParentTypeId) {
-		eSet(AbilityPackage.Literals.PERF_RATING_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(PerfRatingType newParentType) {
+		eSet(AbilityPackage.Literals.PERF_RATING_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

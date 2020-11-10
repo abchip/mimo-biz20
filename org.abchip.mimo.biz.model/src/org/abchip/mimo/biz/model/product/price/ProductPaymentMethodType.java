@@ -22,9 +22,9 @@ import org.abchip.mimo.entity.EntityType;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPaymentMethodType#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPaymentMethodType#getPaymentMethodTypeId <em>Payment Method Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPaymentMethodType#getProductPricePurposeId <em>Product Price Purpose Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPaymentMethodType#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPaymentMethodType#getPaymentMethodType <em>Payment Method Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPaymentMethodType#getProductPricePurpose <em>Product Price Purpose</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPaymentMethodType#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPaymentMethodType#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPaymentMethodType#getThruDate <em>Thru Date</em>}</li>
@@ -35,6 +35,75 @@ import org.abchip.mimo.entity.EntityType;
  * @generated
  */
 public interface ProductPaymentMethodType extends EntityType<ProductPricePurpose>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPaymentMethodType_Product()
+	 * @model keys="productId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPaymentMethodType#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
+
+	/**
+	 * Returns the value of the '<em><b>Payment Method Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Payment Method Type</em>' reference.
+	 * @see #setPaymentMethodType(PaymentMethodType)
+	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPaymentMethodType_PaymentMethodType()
+	 * @model keys="paymentMethodTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	PaymentMethodType getPaymentMethodType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPaymentMethodType#getPaymentMethodType <em>Payment Method Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Payment Method Type</em>' reference.
+	 * @see #getPaymentMethodType()
+	 * @generated
+	 */
+	void setPaymentMethodType(PaymentMethodType value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Price Purpose</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Price Purpose</em>' reference.
+	 * @see #setProductPricePurpose(ProductPricePurpose)
+	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPaymentMethodType_ProductPricePurpose()
+	 * @model keys="productPricePurposeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductPricePurpose getProductPricePurpose();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPaymentMethodType#getProductPricePurpose <em>Product Price Purpose</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Price Purpose</em>' reference.
+	 * @see #getProductPricePurpose()
+	 * @generated
+	 */
+	void setProductPricePurpose(ProductPricePurpose value);
+
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -61,60 +130,6 @@ public interface ProductPaymentMethodType extends EntityType<ProductPricePurpose
 	 * @generated
 	 */
 	void setFromDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Payment Method Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Method Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Payment Method Type Id</em>' reference.
-	 * @see #setPaymentMethodTypeId(PaymentMethodType)
-	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPaymentMethodType_PaymentMethodTypeId()
-	 * @model keys="paymentMethodTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	PaymentMethodType getPaymentMethodTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPaymentMethodType#getPaymentMethodTypeId <em>Payment Method Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Payment Method Type Id</em>' reference.
-	 * @see #getPaymentMethodTypeId()
-	 * @generated
-	 */
-	void setPaymentMethodTypeId(PaymentMethodType value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPaymentMethodType_ProductId()
-	 * @model keys="productId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Product getProductId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPaymentMethodType#getProductId <em>Product Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
-	 * @generated
-	 */
-	void setProductId(Product value);
 
 	/**
 	 * Returns the value of the '<em><b>Sequence Num</b></em>' attribute.
@@ -167,32 +182,5 @@ public interface ProductPaymentMethodType extends EntityType<ProductPricePurpose
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Price Purpose Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Price Purpose Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Price Purpose Id</em>' reference.
-	 * @see #setProductPricePurposeId(ProductPricePurpose)
-	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPaymentMethodType_ProductPricePurposeId()
-	 * @model keys="productPricePurposeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductPricePurpose getProductPricePurposeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPaymentMethodType#getProductPricePurposeId <em>Product Price Purpose Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Price Purpose Id</em>' reference.
-	 * @see #getProductPricePurposeId()
-	 * @generated
-	 */
-	void setProductPricePurposeId(ProductPricePurpose value);
 
 } // ProductPaymentMethodType

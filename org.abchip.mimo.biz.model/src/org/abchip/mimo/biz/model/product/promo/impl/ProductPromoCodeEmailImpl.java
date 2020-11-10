@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodeEmailImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodeEmailImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodeEmailImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodeEmailImpl#getProductPromoCodeId <em>Product Promo Code Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodeEmailImpl#getProductPromoCode <em>Product Promo Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodeEmailImpl#getEmailAddress <em>Email Address</em>}</li>
  * </ul>
  *
@@ -151,6 +151,26 @@ public class ProductPromoCodeEmailImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
+	public ProductPromoCode getProductPromoCode() {
+		return (ProductPromoCode)eGet(PromoPackage.Literals.PRODUCT_PROMO_CODE_EMAIL__PRODUCT_PROMO_CODE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPromoCode(ProductPromoCode newProductPromoCode) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_CODE_EMAIL__PRODUCT_PROMO_CODE, newProductPromoCode);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEmailAddress() {
 		return (String)eGet(PromoPackage.Literals.PRODUCT_PROMO_CODE_EMAIL__EMAIL_ADDRESS, true);
 	}
@@ -201,26 +221,6 @@ public class ProductPromoCodeEmailImpl extends EntityIdentifiableImpl implements
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductPromoCode getProductPromoCodeId() {
-		return (ProductPromoCode)eGet(PromoPackage.Literals.PRODUCT_PROMO_CODE_EMAIL__PRODUCT_PROMO_CODE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPromoCodeId(ProductPromoCode newProductPromoCodeId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_CODE_EMAIL__PRODUCT_PROMO_CODE_ID, newProductPromoCodeId);
 	}
 
 } //ProductPromoCodeEmailImpl

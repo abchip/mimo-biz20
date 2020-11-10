@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentGatewayConfigTypeImpl#getShipmentGatewayConfTypeId <em>Shipment Gateway Conf Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentGatewayConfigTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentGatewayConfigTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentGatewayConfigTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentGatewayConfigTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,8 +200,8 @@ public class ShipmentGatewayConfigTypeImpl extends EntityTypeImpl<ShipmentGatewa
 	 * @generated
 	 */
 	@Override
-	public ShipmentGatewayConfigType getParentTypeId() {
-		return (ShipmentGatewayConfigType)eGet(Shipment_Package.Literals.SHIPMENT_GATEWAY_CONFIG_TYPE__PARENT_TYPE_ID, true);
+	public ShipmentGatewayConfigType getParentType() {
+		return (ShipmentGatewayConfigType)eGet(Shipment_Package.Literals.SHIPMENT_GATEWAY_CONFIG_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -210,8 +210,8 @@ public class ShipmentGatewayConfigTypeImpl extends EntityTypeImpl<ShipmentGatewa
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(ShipmentGatewayConfigType newParentTypeId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_GATEWAY_CONFIG_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(ShipmentGatewayConfigType newParentType) {
+		eSet(Shipment_Package.Literals.SHIPMENT_GATEWAY_CONFIG_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

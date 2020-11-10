@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncIncludeGroupImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncIncludeGroupImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncIncludeGroupImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncIncludeGroupImpl#getEntityGroupId <em>Entity Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncIncludeGroupImpl#getEntitySyncId <em>Entity Sync Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncIncludeGroupImpl#getEntityGroup <em>Entity Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncIncludeGroupImpl#getEntitySync <em>Entity Sync</em>}</li>
  * </ul>
  *
  * @generated
@@ -151,8 +151,8 @@ public class EntitySyncIncludeGroupImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public EntityGroup getEntityGroupId() {
-		return (EntityGroup)eGet(SynchronizationPackage.Literals.ENTITY_SYNC_INCLUDE_GROUP__ENTITY_GROUP_ID, true);
+	public EntityGroup getEntityGroup() {
+		return (EntityGroup)eGet(SynchronizationPackage.Literals.ENTITY_SYNC_INCLUDE_GROUP__ENTITY_GROUP, true);
 	}
 
 	/**
@@ -161,8 +161,8 @@ public class EntitySyncIncludeGroupImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setEntityGroupId(EntityGroup newEntityGroupId) {
-		eSet(SynchronizationPackage.Literals.ENTITY_SYNC_INCLUDE_GROUP__ENTITY_GROUP_ID, newEntityGroupId);
+	public void setEntityGroup(EntityGroup newEntityGroup) {
+		eSet(SynchronizationPackage.Literals.ENTITY_SYNC_INCLUDE_GROUP__ENTITY_GROUP, newEntityGroup);
 	}
 
 	/**
@@ -171,8 +171,8 @@ public class EntitySyncIncludeGroupImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public EntitySync getEntitySyncId() {
-		return (EntitySync)eGet(SynchronizationPackage.Literals.ENTITY_SYNC_INCLUDE_GROUP__ENTITY_SYNC_ID, true);
+	public EntitySync getEntitySync() {
+		return (EntitySync)eGet(SynchronizationPackage.Literals.ENTITY_SYNC_INCLUDE_GROUP__ENTITY_SYNC, true);
 	}
 
 	/**
@@ -181,8 +181,8 @@ public class EntitySyncIncludeGroupImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setEntitySyncId(EntitySync newEntitySyncId) {
-		eSet(SynchronizationPackage.Literals.ENTITY_SYNC_INCLUDE_GROUP__ENTITY_SYNC_ID, newEntitySyncId);
+	public void setEntitySync(EntitySync newEntitySync) {
+		eSet(SynchronizationPackage.Literals.ENTITY_SYNC_INCLUDE_GROUP__ENTITY_SYNC, newEntitySync);
 	}
 
 	/**

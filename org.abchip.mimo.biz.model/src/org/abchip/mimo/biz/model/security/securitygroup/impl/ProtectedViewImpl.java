@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.ProtectedViewImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.ProtectedViewImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.ProtectedViewImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.ProtectedViewImpl#getGroupId <em>Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.ProtectedViewImpl#getGroup <em>Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.ProtectedViewImpl#getViewNameId <em>View Name Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.ProtectedViewImpl#getMaxHits <em>Max Hits</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.ProtectedViewImpl#getMaxHitsDuration <em>Max Hits Duration</em>}</li>
@@ -155,8 +155,8 @@ public class ProtectedViewImpl extends EntityIdentifiableImpl implements Protect
 	 * @generated
 	 */
 	@Override
-	public SecurityGroup getGroupId() {
-		return (SecurityGroup)eGet(SecuritygroupPackage.Literals.PROTECTED_VIEW__GROUP_ID, true);
+	public SecurityGroup getGroup() {
+		return (SecurityGroup)eGet(SecuritygroupPackage.Literals.PROTECTED_VIEW__GROUP, true);
 	}
 
 	/**
@@ -165,8 +165,8 @@ public class ProtectedViewImpl extends EntityIdentifiableImpl implements Protect
 	 * @generated
 	 */
 	@Override
-	public void setGroupId(SecurityGroup newGroupId) {
-		eSet(SecuritygroupPackage.Literals.PROTECTED_VIEW__GROUP_ID, newGroupId);
+	public void setGroup(SecurityGroup newGroup) {
+		eSet(SecuritygroupPackage.Literals.PROTECTED_VIEW__GROUP, newGroup);
 	}
 
 	/**

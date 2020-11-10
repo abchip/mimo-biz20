@@ -21,71 +21,71 @@
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="UTIL_DEBUG_VIEW" description="View a UtilDebug instance."/>
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="UTIL_DEBUG_EDIT" description="Edit a UtilDebug instance."/>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#WEBTOOLS_VIEW"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#WEBTOOLS_VIEW"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#SERVER_STATS_VIEW"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#SERVER_STATS_VIEW"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#SERVICE_RSAS_VIEW"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#SERVICE_RSAS_VIEW"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#ARTIFACT_INFO_VIEW"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#ARTIFACT_INFO_VIEW"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#LABEL_MANAGER_VIEW"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#LABEL_MANAGER_VIEW"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#DATAFILE_MAINT"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#DATAFILE_MAINT"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#DATAFILE_MAINT"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#DATAFILE_MAINT"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#SERVICE_MAINT"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#SERVICE_MAINT"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#SERVICE_JM_LOCK"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#SERVICE_JM_LOCK"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#PERIOD_MAINT"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#PERIOD_MAINT"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#ENUM_STATUS_MAINT"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#ENUM_STATUS_MAINT"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#ENTITY_MAINT"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#ENTITY_MAINT"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#ENTITY_DATA_ADMIN"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#ENTITY_DATA_ADMIN"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#UTIL_CACHE_EDIT"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#UTIL_CACHE_EDIT"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#UTIL_CACHE_VIEW"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#UTIL_CACHE_VIEW"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#UTIL_DEBUG_EDIT"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#UTIL_DEBUG_EDIT"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#UTIL_DEBUG_VIEW"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#UTIL_DEBUG_VIEW"/>
   </contents>
 </mimo-ent:EntityContainer>

@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductTypeAttr#getProductTypeId <em>Product Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductTypeAttr#getProductType <em>Product Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductTypeAttr#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductTypeAttr#getDescription <em>Description</em>}</li>
  * </ul>
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductTypeAttr extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Type</em>' reference.
+	 * @see #setProductType(ProductType)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductTypeAttr_ProductType()
+	 * @model keys="productTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductType getProductType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductTypeAttr#getProductType <em>Product Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Type</em>' reference.
+	 * @see #getProductType()
+	 * @generated
+	 */
+	void setProductType(ProductType value);
+
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,32 +105,5 @@ public interface ProductTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setAttrName(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Type Id</em>' reference.
-	 * @see #setProductTypeId(ProductType)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductTypeAttr_ProductTypeId()
-	 * @model keys="productTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductType getProductTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductTypeAttr#getProductTypeId <em>Product Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Type Id</em>' reference.
-	 * @see #getProductTypeId()
-	 * @generated
-	 */
-	void setProductTypeId(ProductType value);
 
 } // ProductTypeAttr

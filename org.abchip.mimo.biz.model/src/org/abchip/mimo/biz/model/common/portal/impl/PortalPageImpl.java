@@ -33,13 +33,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageImpl#getPortalPageId <em>Portal Page Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageImpl#getHelpContentId <em>Help Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageImpl#getHelpContent <em>Help Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageImpl#getOriginalPortalPageId <em>Original Portal Page Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageImpl#getOwnerUserLoginId <em>Owner User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageImpl#getParentPortalPageId <em>Parent Portal Page Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageImpl#getParentPortalPage <em>Parent Portal Page</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageImpl#getPortalPageColumns <em>Portal Page Columns</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageImpl#getPortalPageName <em>Portal Page Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageImpl#getSecurityGroupId <em>Security Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageImpl#getSecurityGroup <em>Security Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageImpl#getSequenceNum <em>Sequence Num</em>}</li>
  * </ul>
  *
@@ -181,8 +181,8 @@ public class PortalPageImpl extends EntityIdentifiableImpl implements PortalPage
 	 * @generated
 	 */
 	@Override
-	public Content getHelpContentId() {
-		return (Content)eGet(PortalPackage.Literals.PORTAL_PAGE__HELP_CONTENT_ID, true);
+	public Content getHelpContent() {
+		return (Content)eGet(PortalPackage.Literals.PORTAL_PAGE__HELP_CONTENT, true);
 	}
 
 	/**
@@ -191,8 +191,8 @@ public class PortalPageImpl extends EntityIdentifiableImpl implements PortalPage
 	 * @generated
 	 */
 	@Override
-	public void setHelpContentId(Content newHelpContentId) {
-		eSet(PortalPackage.Literals.PORTAL_PAGE__HELP_CONTENT_ID, newHelpContentId);
+	public void setHelpContent(Content newHelpContent) {
+		eSet(PortalPackage.Literals.PORTAL_PAGE__HELP_CONTENT, newHelpContent);
 	}
 
 	/**
@@ -241,6 +241,26 @@ public class PortalPageImpl extends EntityIdentifiableImpl implements PortalPage
 	 * @generated
 	 */
 	@Override
+	public PortalPage getParentPortalPage() {
+		return (PortalPage)eGet(PortalPackage.Literals.PORTAL_PAGE__PARENT_PORTAL_PAGE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParentPortalPage(PortalPage newParentPortalPage) {
+		eSet(PortalPackage.Literals.PORTAL_PAGE__PARENT_PORTAL_PAGE, newParentPortalPage);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getPortalPageName() {
 		return (String)eGet(PortalPackage.Literals.PORTAL_PAGE__PORTAL_PAGE_NAME, true);
 	}
@@ -261,8 +281,8 @@ public class PortalPageImpl extends EntityIdentifiableImpl implements PortalPage
 	 * @generated
 	 */
 	@Override
-	public SecurityGroup getSecurityGroupId() {
-		return (SecurityGroup)eGet(PortalPackage.Literals.PORTAL_PAGE__SECURITY_GROUP_ID, true);
+	public SecurityGroup getSecurityGroup() {
+		return (SecurityGroup)eGet(PortalPackage.Literals.PORTAL_PAGE__SECURITY_GROUP, true);
 	}
 
 	/**
@@ -271,8 +291,8 @@ public class PortalPageImpl extends EntityIdentifiableImpl implements PortalPage
 	 * @generated
 	 */
 	@Override
-	public void setSecurityGroupId(SecurityGroup newSecurityGroupId) {
-		eSet(PortalPackage.Literals.PORTAL_PAGE__SECURITY_GROUP_ID, newSecurityGroupId);
+	public void setSecurityGroup(SecurityGroup newSecurityGroup) {
+		eSet(PortalPackage.Literals.PORTAL_PAGE__SECURITY_GROUP, newSecurityGroup);
 	}
 
 	/**
@@ -331,26 +351,6 @@ public class PortalPageImpl extends EntityIdentifiableImpl implements PortalPage
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PortalPage getParentPortalPageId() {
-		return (PortalPage)eGet(PortalPackage.Literals.PORTAL_PAGE__PARENT_PORTAL_PAGE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentPortalPageId(PortalPage newParentPortalPageId) {
-		eSet(PortalPackage.Literals.PORTAL_PAGE__PARENT_PORTAL_PAGE_ID, newParentPortalPageId);
 	}
 
 	/**

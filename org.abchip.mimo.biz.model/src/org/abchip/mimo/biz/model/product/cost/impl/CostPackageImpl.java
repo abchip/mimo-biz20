@@ -745,7 +745,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCostComponent_CostComponentCalcId() {
+	public EReference getCostComponent_CostComponentCalc() {
 		return (EReference)costComponentEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -755,7 +755,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCostComponent_CostComponentTypeId() {
+	public EReference getCostComponent_CostComponentType() {
 		return (EReference)costComponentEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -765,7 +765,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCostComponent_CostUomId() {
+	public EReference getCostComponent_CostUom() {
 		return (EReference)costComponentEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -775,7 +775,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCostComponent_FixedAssetId() {
+	public EReference getCostComponent_FixedAsset() {
 		return (EReference)costComponentEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -795,7 +795,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCostComponent_GeoId() {
+	public EReference getCostComponent_Geo() {
 		return (EReference)costComponentEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -805,7 +805,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCostComponent_PartyId() {
+	public EReference getCostComponent_Party() {
 		return (EReference)costComponentEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -815,7 +815,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCostComponent_ProductFeatureId() {
+	public EReference getCostComponent_Product() {
 		return (EReference)costComponentEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -825,7 +825,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCostComponent_ProductId() {
+	public EReference getCostComponent_ProductFeature() {
 		return (EReference)costComponentEClass.getEStructuralFeatures().get(11);
 	}
 
@@ -845,7 +845,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCostComponent_WorkEffortId() {
+	public EReference getCostComponent_WorkEffort() {
 		return (EReference)costComponentEClass.getEStructuralFeatures().get(13);
 	}
 
@@ -865,7 +865,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCostComponentAttribute_CostComponentId() {
+	public EReference getCostComponentAttribute_CostComponent() {
 		return (EReference)costComponentAttributeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -925,7 +925,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCostComponentCalc_CostCustomMethodId() {
+	public EReference getCostComponentCalc_CostCustomMethod() {
 		return (EReference)costComponentCalcEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -935,7 +935,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCostComponentCalc_CostGlAccountTypeId() {
+	public EReference getCostComponentCalc_CostGlAccountType() {
 		return (EReference)costComponentCalcEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -945,7 +945,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCostComponentCalc_CurrencyUomId() {
+	public EReference getCostComponentCalc_CurrencyUom() {
 		return (EReference)costComponentCalcEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -975,7 +975,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCostComponentCalc_OffsettingGlAccountTypeId() {
+	public EReference getCostComponentCalc_OffsettingGlAccountType() {
 		return (EReference)costComponentCalcEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -1055,7 +1055,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCostComponentType_ParentTypeId() {
+	public EReference getCostComponentType_ParentType() {
 		return (EReference)costComponentTypeEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -1075,7 +1075,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCostComponentTypeAttr_CostComponentTypeId() {
+	public EReference getCostComponentTypeAttr_CostComponentType() {
 		return (EReference)costComponentTypeAttrEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1115,7 +1115,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductCostComponentCalc_ProductId() {
+	public EReference getProductCostComponentCalc_Product() {
 		return (EReference)productCostComponentCalcEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1125,7 +1125,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductCostComponentCalc_CostComponentTypeId() {
+	public EReference getProductCostComponentCalc_CostComponentType() {
 		return (EReference)productCostComponentCalcEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1145,7 +1145,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductCostComponentCalc_CostComponentCalcId() {
+	public EReference getProductCostComponentCalc_CostComponentCalc() {
 		return (EReference)productCostComponentCalcEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1202,32 +1202,32 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 		createEAttribute(costComponentEClass, COST_COMPONENT__COST_COMPONENT_ID);
 		createEAttribute(costComponentEClass, COST_COMPONENT__COST);
 		createEReference(costComponentEClass, COST_COMPONENT__COST_COMPONENT_ATTRIBUTES);
-		createEReference(costComponentEClass, COST_COMPONENT__COST_COMPONENT_CALC_ID);
-		createEReference(costComponentEClass, COST_COMPONENT__COST_COMPONENT_TYPE_ID);
-		createEReference(costComponentEClass, COST_COMPONENT__COST_UOM_ID);
-		createEReference(costComponentEClass, COST_COMPONENT__FIXED_ASSET_ID);
+		createEReference(costComponentEClass, COST_COMPONENT__COST_COMPONENT_CALC);
+		createEReference(costComponentEClass, COST_COMPONENT__COST_COMPONENT_TYPE);
+		createEReference(costComponentEClass, COST_COMPONENT__COST_UOM);
+		createEReference(costComponentEClass, COST_COMPONENT__FIXED_ASSET);
 		createEAttribute(costComponentEClass, COST_COMPONENT__FROM_DATE);
-		createEReference(costComponentEClass, COST_COMPONENT__GEO_ID);
-		createEReference(costComponentEClass, COST_COMPONENT__PARTY_ID);
-		createEReference(costComponentEClass, COST_COMPONENT__PRODUCT_FEATURE_ID);
-		createEReference(costComponentEClass, COST_COMPONENT__PRODUCT_ID);
+		createEReference(costComponentEClass, COST_COMPONENT__GEO);
+		createEReference(costComponentEClass, COST_COMPONENT__PARTY);
+		createEReference(costComponentEClass, COST_COMPONENT__PRODUCT);
+		createEReference(costComponentEClass, COST_COMPONENT__PRODUCT_FEATURE);
 		createEAttribute(costComponentEClass, COST_COMPONENT__THRU_DATE);
-		createEReference(costComponentEClass, COST_COMPONENT__WORK_EFFORT_ID);
+		createEReference(costComponentEClass, COST_COMPONENT__WORK_EFFORT);
 
 		costComponentAttributeEClass = createEClass(COST_COMPONENT_ATTRIBUTE);
-		createEReference(costComponentAttributeEClass, COST_COMPONENT_ATTRIBUTE__COST_COMPONENT_ID);
+		createEReference(costComponentAttributeEClass, COST_COMPONENT_ATTRIBUTE__COST_COMPONENT);
 		createEAttribute(costComponentAttributeEClass, COST_COMPONENT_ATTRIBUTE__ATTR_NAME);
 		createEAttribute(costComponentAttributeEClass, COST_COMPONENT_ATTRIBUTE__ATTR_DESCRIPTION);
 		createEAttribute(costComponentAttributeEClass, COST_COMPONENT_ATTRIBUTE__ATTR_VALUE);
 
 		costComponentCalcEClass = createEClass(COST_COMPONENT_CALC);
 		createEAttribute(costComponentCalcEClass, COST_COMPONENT_CALC__COST_COMPONENT_CALC_ID);
-		createEReference(costComponentCalcEClass, COST_COMPONENT_CALC__COST_CUSTOM_METHOD_ID);
-		createEReference(costComponentCalcEClass, COST_COMPONENT_CALC__COST_GL_ACCOUNT_TYPE_ID);
-		createEReference(costComponentCalcEClass, COST_COMPONENT_CALC__CURRENCY_UOM_ID);
+		createEReference(costComponentCalcEClass, COST_COMPONENT_CALC__COST_CUSTOM_METHOD);
+		createEReference(costComponentCalcEClass, COST_COMPONENT_CALC__COST_GL_ACCOUNT_TYPE);
+		createEReference(costComponentCalcEClass, COST_COMPONENT_CALC__CURRENCY_UOM);
 		createEAttribute(costComponentCalcEClass, COST_COMPONENT_CALC__DESCRIPTION);
 		createEAttribute(costComponentCalcEClass, COST_COMPONENT_CALC__FIXED_COST);
-		createEReference(costComponentCalcEClass, COST_COMPONENT_CALC__OFFSETTING_GL_ACCOUNT_TYPE_ID);
+		createEReference(costComponentCalcEClass, COST_COMPONENT_CALC__OFFSETTING_GL_ACCOUNT_TYPE);
 		createEAttribute(costComponentCalcEClass, COST_COMPONENT_CALC__PER_MILLI_SECOND);
 		createEAttribute(costComponentCalcEClass, COST_COMPONENT_CALC__VARIABLE_COST);
 
@@ -1236,18 +1236,18 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 		createEReference(costComponentTypeEClass, COST_COMPONENT_TYPE__COST_COMPONENT_TYPE_ATTRS);
 		createEAttribute(costComponentTypeEClass, COST_COMPONENT_TYPE__DESCRIPTION);
 		createEAttribute(costComponentTypeEClass, COST_COMPONENT_TYPE__HAS_TABLE);
-		createEReference(costComponentTypeEClass, COST_COMPONENT_TYPE__PARENT_TYPE_ID);
+		createEReference(costComponentTypeEClass, COST_COMPONENT_TYPE__PARENT_TYPE);
 
 		costComponentTypeAttrEClass = createEClass(COST_COMPONENT_TYPE_ATTR);
-		createEReference(costComponentTypeAttrEClass, COST_COMPONENT_TYPE_ATTR__COST_COMPONENT_TYPE_ID);
+		createEReference(costComponentTypeAttrEClass, COST_COMPONENT_TYPE_ATTR__COST_COMPONENT_TYPE);
 		createEAttribute(costComponentTypeAttrEClass, COST_COMPONENT_TYPE_ATTR__ATTR_NAME);
 		createEAttribute(costComponentTypeAttrEClass, COST_COMPONENT_TYPE_ATTR__DESCRIPTION);
 
 		productCostComponentCalcEClass = createEClass(PRODUCT_COST_COMPONENT_CALC);
-		createEReference(productCostComponentCalcEClass, PRODUCT_COST_COMPONENT_CALC__PRODUCT_ID);
-		createEReference(productCostComponentCalcEClass, PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_TYPE_ID);
+		createEReference(productCostComponentCalcEClass, PRODUCT_COST_COMPONENT_CALC__PRODUCT);
+		createEReference(productCostComponentCalcEClass, PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_TYPE);
 		createEAttribute(productCostComponentCalcEClass, PRODUCT_COST_COMPONENT_CALC__FROM_DATE);
-		createEReference(productCostComponentCalcEClass, PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_CALC_ID);
+		createEReference(productCostComponentCalcEClass, PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_CALC);
 		createEAttribute(productCostComponentCalcEClass, PRODUCT_COST_COMPONENT_CALC__SEQUENCE_NUM);
 		createEAttribute(productCostComponentCalcEClass, PRODUCT_COST_COMPONENT_CALC__THRU_DATE);
 	}
@@ -1281,8 +1281,8 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 		FixedassetPackage theFixedassetPackage = (FixedassetPackage)EPackage.Registry.INSTANCE.getEPackage(FixedassetPackage.eNS_URI);
 		GeoPackage theGeoPackage = (GeoPackage)EPackage.Registry.INSTANCE.getEPackage(GeoPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
-		FeaturePackage theFeaturePackage = (FeaturePackage)EPackage.Registry.INSTANCE.getEPackage(FeaturePackage.eNS_URI);
 		ProductPackage theProductPackage = (ProductPackage)EPackage.Registry.INSTANCE.getEPackage(ProductPackage.eNS_URI);
+		FeaturePackage theFeaturePackage = (FeaturePackage)EPackage.Registry.INSTANCE.getEPackage(FeaturePackage.eNS_URI);
 		WorkeffortPackage theWorkeffortPackage = (WorkeffortPackage)EPackage.Registry.INSTANCE.getEPackage(WorkeffortPackage.eNS_URI);
 		MethodPackage theMethodPackage = (MethodPackage)EPackage.Registry.INSTANCE.getEPackage(MethodPackage.eNS_URI);
 		LedgerPackage theLedgerPackage = (LedgerPackage)EPackage.Registry.INSTANCE.getEPackage(LedgerPackage.eNS_URI);
@@ -1318,46 +1318,46 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 		initEAttribute(getCostComponent_CostComponentId(), ecorePackage.getEString(), "costComponentId", null, 1, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCostComponent_Cost(), ecorePackage.getEBigDecimal(), "cost", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCostComponent_CostComponentAttributes(), this.getCostComponentAttribute(), null, "costComponentAttributes", null, 0, -1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEReference(getCostComponent_CostComponentCalcId(), this.getCostComponentCalc(), null, "costComponentCalcId", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCostComponent_CostComponentCalcId().getEKeys().add(this.getCostComponentCalc_CostComponentCalcId());
-		initEReference(getCostComponent_CostComponentTypeId(), this.getCostComponentType(), null, "costComponentTypeId", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCostComponent_CostComponentTypeId().getEKeys().add(this.getCostComponentType_CostComponentTypeId());
-		initEReference(getCostComponent_CostUomId(), theUomPackage.getUom(), null, "costUomId", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCostComponent_CostUomId().getEKeys().add(theUomPackage.getUom_UomId());
-		initEReference(getCostComponent_FixedAssetId(), theFixedassetPackage.getFixedAsset(), null, "fixedAssetId", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCostComponent_FixedAssetId().getEKeys().add(theFixedassetPackage.getFixedAsset_FixedAssetId());
+		initEReference(getCostComponent_CostComponentCalc(), this.getCostComponentCalc(), null, "costComponentCalc", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCostComponent_CostComponentCalc().getEKeys().add(this.getCostComponentCalc_CostComponentCalcId());
+		initEReference(getCostComponent_CostComponentType(), this.getCostComponentType(), null, "costComponentType", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCostComponent_CostComponentType().getEKeys().add(this.getCostComponentType_CostComponentTypeId());
+		initEReference(getCostComponent_CostUom(), theUomPackage.getUom(), null, "costUom", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCostComponent_CostUom().getEKeys().add(theUomPackage.getUom_UomId());
+		initEReference(getCostComponent_FixedAsset(), theFixedassetPackage.getFixedAsset(), null, "fixedAsset", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCostComponent_FixedAsset().getEKeys().add(theFixedassetPackage.getFixedAsset_FixedAssetId());
 		initEAttribute(getCostComponent_FromDate(), ecorePackage.getEDate(), "fromDate", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCostComponent_GeoId(), theGeoPackage.getGeo(), null, "geoId", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCostComponent_GeoId().getEKeys().add(theGeoPackage.getGeo_GeoId());
-		initEReference(getCostComponent_PartyId(), thePartyPackage_1.getParty(), null, "partyId", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCostComponent_PartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
-		initEReference(getCostComponent_ProductFeatureId(), theFeaturePackage.getProductFeature(), null, "productFeatureId", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCostComponent_ProductFeatureId().getEKeys().add(theFeaturePackage.getProductFeature_ProductFeatureId());
-		initEReference(getCostComponent_ProductId(), theProductPackage.getProduct(), null, "productId", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCostComponent_ProductId().getEKeys().add(theProductPackage.getProduct_ProductId());
+		initEReference(getCostComponent_Geo(), theGeoPackage.getGeo(), null, "geo", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCostComponent_Geo().getEKeys().add(theGeoPackage.getGeo_GeoId());
+		initEReference(getCostComponent_Party(), thePartyPackage_1.getParty(), null, "party", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCostComponent_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getCostComponent_Product(), theProductPackage.getProduct(), null, "product", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCostComponent_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
+		initEReference(getCostComponent_ProductFeature(), theFeaturePackage.getProductFeature(), null, "productFeature", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCostComponent_ProductFeature().getEKeys().add(theFeaturePackage.getProductFeature_ProductFeatureId());
 		initEAttribute(getCostComponent_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCostComponent_WorkEffortId(), theWorkeffortPackage.getWorkEffort(), null, "workEffortId", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCostComponent_WorkEffortId().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
+		initEReference(getCostComponent_WorkEffort(), theWorkeffortPackage.getWorkEffort(), null, "workEffort", null, 0, 1, CostComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCostComponent_WorkEffort().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
 
 		initEClass(costComponentAttributeEClass, CostComponentAttribute.class, "CostComponentAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getCostComponentAttribute_CostComponentId(), this.getCostComponent(), null, "costComponentId", null, 1, 1, CostComponentAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCostComponentAttribute_CostComponentId().getEKeys().add(this.getCostComponent_CostComponentId());
+		initEReference(getCostComponentAttribute_CostComponent(), this.getCostComponent(), null, "costComponent", null, 1, 1, CostComponentAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCostComponentAttribute_CostComponent().getEKeys().add(this.getCostComponent_CostComponentId());
 		initEAttribute(getCostComponentAttribute_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, CostComponentAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCostComponentAttribute_AttrDescription(), ecorePackage.getEString(), "attrDescription", null, 0, 1, CostComponentAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCostComponentAttribute_AttrValue(), ecorePackage.getEString(), "attrValue", null, 0, 1, CostComponentAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(costComponentCalcEClass, CostComponentCalc.class, "CostComponentCalc", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCostComponentCalc_CostComponentCalcId(), ecorePackage.getEString(), "costComponentCalcId", null, 1, 1, CostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCostComponentCalc_CostCustomMethodId(), theMethodPackage.getCustomMethod(), null, "costCustomMethodId", null, 0, 1, CostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCostComponentCalc_CostCustomMethodId().getEKeys().add(theMethodPackage.getCustomMethod_CustomMethodId());
-		initEReference(getCostComponentCalc_CostGlAccountTypeId(), theLedgerPackage.getGlAccountType(), null, "costGlAccountTypeId", null, 0, 1, CostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCostComponentCalc_CostGlAccountTypeId().getEKeys().add(theLedgerPackage.getGlAccountType_GlAccountTypeId());
-		initEReference(getCostComponentCalc_CurrencyUomId(), theUomPackage.getUom(), null, "currencyUomId", null, 0, 1, CostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCostComponentCalc_CurrencyUomId().getEKeys().add(theUomPackage.getUom_UomId());
+		initEReference(getCostComponentCalc_CostCustomMethod(), theMethodPackage.getCustomMethod(), null, "costCustomMethod", null, 0, 1, CostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCostComponentCalc_CostCustomMethod().getEKeys().add(theMethodPackage.getCustomMethod_CustomMethodId());
+		initEReference(getCostComponentCalc_CostGlAccountType(), theLedgerPackage.getGlAccountType(), null, "costGlAccountType", null, 0, 1, CostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCostComponentCalc_CostGlAccountType().getEKeys().add(theLedgerPackage.getGlAccountType_GlAccountTypeId());
+		initEReference(getCostComponentCalc_CurrencyUom(), theUomPackage.getUom(), null, "currencyUom", null, 0, 1, CostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCostComponentCalc_CurrencyUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEAttribute(getCostComponentCalc_Description(), ecorePackage.getEString(), "description", null, 0, 1, CostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCostComponentCalc_FixedCost(), ecorePackage.getEBigDecimal(), "fixedCost", null, 0, 1, CostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCostComponentCalc_OffsettingGlAccountTypeId(), theLedgerPackage.getGlAccountType(), null, "offsettingGlAccountTypeId", null, 0, 1, CostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCostComponentCalc_OffsettingGlAccountTypeId().getEKeys().add(theLedgerPackage.getGlAccountType_GlAccountTypeId());
+		initEReference(getCostComponentCalc_OffsettingGlAccountType(), theLedgerPackage.getGlAccountType(), null, "offsettingGlAccountType", null, 0, 1, CostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCostComponentCalc_OffsettingGlAccountType().getEKeys().add(theLedgerPackage.getGlAccountType_GlAccountTypeId());
 		initEAttribute(getCostComponentCalc_PerMilliSecond(), ecorePackage.getELong(), "perMilliSecond", null, 0, 1, CostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCostComponentCalc_VariableCost(), ecorePackage.getEBigDecimal(), "variableCost", null, 0, 1, CostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1366,23 +1366,23 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 		initEReference(getCostComponentType_CostComponentTypeAttrs(), this.getCostComponentTypeAttr(), null, "costComponentTypeAttrs", null, 0, -1, CostComponentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCostComponentType_Description(), ecorePackage.getEString(), "description", null, 0, 1, CostComponentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCostComponentType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 0, 1, CostComponentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCostComponentType_ParentTypeId(), this.getCostComponentType(), null, "parentTypeId", null, 0, 1, CostComponentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCostComponentType_ParentTypeId().getEKeys().add(this.getCostComponentType_CostComponentTypeId());
+		initEReference(getCostComponentType_ParentType(), this.getCostComponentType(), null, "parentType", null, 0, 1, CostComponentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCostComponentType_ParentType().getEKeys().add(this.getCostComponentType_CostComponentTypeId());
 
 		initEClass(costComponentTypeAttrEClass, CostComponentTypeAttr.class, "CostComponentTypeAttr", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getCostComponentTypeAttr_CostComponentTypeId(), this.getCostComponentType(), null, "costComponentTypeId", null, 1, 1, CostComponentTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCostComponentTypeAttr_CostComponentTypeId().getEKeys().add(this.getCostComponentType_CostComponentTypeId());
+		initEReference(getCostComponentTypeAttr_CostComponentType(), this.getCostComponentType(), null, "costComponentType", null, 1, 1, CostComponentTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCostComponentTypeAttr_CostComponentType().getEKeys().add(this.getCostComponentType_CostComponentTypeId());
 		initEAttribute(getCostComponentTypeAttr_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, CostComponentTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCostComponentTypeAttr_Description(), ecorePackage.getEString(), "description", null, 0, 1, CostComponentTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productCostComponentCalcEClass, ProductCostComponentCalc.class, "ProductCostComponentCalc", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProductCostComponentCalc_ProductId(), theProductPackage.getProduct(), null, "productId", null, 1, 1, ProductCostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCostComponentCalc_ProductId().getEKeys().add(theProductPackage.getProduct_ProductId());
-		initEReference(getProductCostComponentCalc_CostComponentTypeId(), this.getCostComponentType(), null, "costComponentTypeId", null, 1, 1, ProductCostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCostComponentCalc_CostComponentTypeId().getEKeys().add(this.getCostComponentType_CostComponentTypeId());
+		initEReference(getProductCostComponentCalc_Product(), theProductPackage.getProduct(), null, "product", null, 1, 1, ProductCostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductCostComponentCalc_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
+		initEReference(getProductCostComponentCalc_CostComponentType(), this.getCostComponentType(), null, "costComponentType", null, 1, 1, ProductCostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductCostComponentCalc_CostComponentType().getEKeys().add(this.getCostComponentType_CostComponentTypeId());
 		initEAttribute(getProductCostComponentCalc_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductCostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getProductCostComponentCalc_CostComponentCalcId(), this.getCostComponentCalc(), null, "costComponentCalcId", null, 0, 1, ProductCostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCostComponentCalc_CostComponentCalcId().getEKeys().add(this.getCostComponentCalc_CostComponentCalcId());
+		initEReference(getProductCostComponentCalc_CostComponentCalc(), this.getCostComponentCalc(), null, "costComponentCalc", null, 0, 1, ProductCostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductCostComponentCalc_CostComponentCalc().getEKeys().add(this.getCostComponentCalc_CostComponentCalcId());
 		initEAttribute(getProductCostComponentCalc_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, ProductCostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCostComponentCalc_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductCostComponentCalc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1521,7 +1521,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 			   "help", "Higher precision in case it is a calculated number"
 		   });
 		addAnnotation
-		  (getCostComponentAttribute_CostComponentId(),
+		  (getCostComponentAttribute_CostComponent(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -1533,7 +1533,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getCostComponentTypeAttr_CostComponentTypeId(),
+		  (getCostComponentTypeAttr_CostComponentType(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -1545,13 +1545,13 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductCostComponentCalc_ProductId(),
+		  (getProductCostComponentCalc_Product(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductCostComponentCalc_CostComponentTypeId(),
+		  (getProductCostComponentCalc_CostComponentType(),
 		   source,
 		   new String[] {
 			   "key", "true"

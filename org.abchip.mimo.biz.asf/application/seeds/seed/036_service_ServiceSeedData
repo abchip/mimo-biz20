@@ -140,12 +140,12 @@
   <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="DAYOFMONTH_31" description="Day 31 of Month" integer1="31" integer2="31" tempExprTypeId="DAY_OF_MONTH_RANGE"/>
   <contents xsi:type="biz-enum:EnumerationType" enumTypeId="JS_LOCK_REASON" description="JobSandbox lock reason"/>
   <contents xsi:type="biz-enum:Enumeration" enumId="JS_LOCK_REASON_0" description="Instance updating" enumCode="0" sequenceId="00">
-    <enumTypeId href="EnumerationType#JS_LOCK_REASON"/>
+    <enumType href="EnumerationType#JS_LOCK_REASON"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="JS_LOCK_REASON_1" description="Instance surcharge" enumCode="1" sequenceId="01">
-    <enumTypeId href="EnumerationType#JS_LOCK_REASON"/>
+    <enumType href="EnumerationType#JS_LOCK_REASON"/>
   </contents>
   <contents xsi:type="biz-enum:Enumeration" enumId="JS_LOCK_REASON_2" description="Instance maintenance" enumCode="2" sequenceId="02">
-    <enumTypeId href="EnumerationType#JS_LOCK_REASON"/>
+    <enumType href="EnumerationType#JS_LOCK_REASON"/>
   </contents>
 </mimo-ent:EntityContainer>

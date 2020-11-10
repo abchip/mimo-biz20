@@ -32,16 +32,16 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderDeliveryScheduleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderDeliveryScheduleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderDeliveryScheduleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderDeliveryScheduleImpl#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderDeliveryScheduleImpl#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderDeliveryScheduleImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderDeliveryScheduleImpl#getCartons <em>Cartons</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderDeliveryScheduleImpl#getEstimatedReadyDate <em>Estimated Ready Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderDeliveryScheduleImpl#getSkidsPallets <em>Skids Pallets</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderDeliveryScheduleImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderDeliveryScheduleImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderDeliveryScheduleImpl#getTotalCubicSize <em>Total Cubic Size</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderDeliveryScheduleImpl#getTotalCubicUomId <em>Total Cubic Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderDeliveryScheduleImpl#getTotalCubicUom <em>Total Cubic Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderDeliveryScheduleImpl#getTotalWeight <em>Total Weight</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderDeliveryScheduleImpl#getTotalWeightUomId <em>Total Weight Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderDeliveryScheduleImpl#getTotalWeightUom <em>Total Weight Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderDeliveryScheduleImpl#getUnitsPieces <em>Units Pieces</em>}</li>
  * </ul>
  *
@@ -164,6 +164,26 @@ public class OrderDeliveryScheduleImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_DELIVERY_SCHEDULE__ORDER, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_DELIVERY_SCHEDULE__ORDER, newOrder);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public long getCartons() {
 		return (Long)eGet(OrderPackage.Literals.ORDER_DELIVERY_SCHEDULE__CARTONS, true);
 	}
@@ -196,26 +216,6 @@ public class OrderDeliveryScheduleImpl extends EntityIdentifiableImpl implements
 	@Override
 	public void setEstimatedReadyDate(Date newEstimatedReadyDate) {
 		eSet(OrderPackage.Literals.ORDER_DELIVERY_SCHEDULE__ESTIMATED_READY_DATE, newEstimatedReadyDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_DELIVERY_SCHEDULE__ORDER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_DELIVERY_SCHEDULE__ORDER_ID, newOrderId);
 	}
 
 	/**
@@ -264,8 +264,8 @@ public class OrderDeliveryScheduleImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(OrderPackage.Literals.ORDER_DELIVERY_SCHEDULE__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(OrderPackage.Literals.ORDER_DELIVERY_SCHEDULE__STATUS, true);
 	}
 
 	/**
@@ -274,8 +274,8 @@ public class OrderDeliveryScheduleImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(OrderPackage.Literals.ORDER_DELIVERY_SCHEDULE__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(OrderPackage.Literals.ORDER_DELIVERY_SCHEDULE__STATUS, newStatus);
 	}
 
 	/**
@@ -304,8 +304,8 @@ public class OrderDeliveryScheduleImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public Uom getTotalCubicUomId() {
-		return (Uom)eGet(OrderPackage.Literals.ORDER_DELIVERY_SCHEDULE__TOTAL_CUBIC_UOM_ID, true);
+	public Uom getTotalCubicUom() {
+		return (Uom)eGet(OrderPackage.Literals.ORDER_DELIVERY_SCHEDULE__TOTAL_CUBIC_UOM, true);
 	}
 
 	/**
@@ -314,8 +314,8 @@ public class OrderDeliveryScheduleImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setTotalCubicUomId(Uom newTotalCubicUomId) {
-		eSet(OrderPackage.Literals.ORDER_DELIVERY_SCHEDULE__TOTAL_CUBIC_UOM_ID, newTotalCubicUomId);
+	public void setTotalCubicUom(Uom newTotalCubicUom) {
+		eSet(OrderPackage.Literals.ORDER_DELIVERY_SCHEDULE__TOTAL_CUBIC_UOM, newTotalCubicUom);
 	}
 
 	/**
@@ -344,8 +344,8 @@ public class OrderDeliveryScheduleImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public Uom getTotalWeightUomId() {
-		return (Uom)eGet(OrderPackage.Literals.ORDER_DELIVERY_SCHEDULE__TOTAL_WEIGHT_UOM_ID, true);
+	public Uom getTotalWeightUom() {
+		return (Uom)eGet(OrderPackage.Literals.ORDER_DELIVERY_SCHEDULE__TOTAL_WEIGHT_UOM, true);
 	}
 
 	/**
@@ -354,8 +354,8 @@ public class OrderDeliveryScheduleImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setTotalWeightUomId(Uom newTotalWeightUomId) {
-		eSet(OrderPackage.Literals.ORDER_DELIVERY_SCHEDULE__TOTAL_WEIGHT_UOM_ID, newTotalWeightUomId);
+	public void setTotalWeightUom(Uom newTotalWeightUom) {
+		eSet(OrderPackage.Literals.ORDER_DELIVERY_SCHEDULE__TOTAL_WEIGHT_UOM, newTotalWeightUom);
 	}
 
 	/**

@@ -21,7 +21,7 @@ import org.abchip.mimo.entity.EntityType;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductMeterType#getProductMeterTypeId <em>Product Meter Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductMeterType#getDefaultUomId <em>Default Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductMeterType#getDefaultUom <em>Default Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductMeterType#getDescription <em>Description</em>}</li>
  * </ul>
  *
@@ -30,33 +30,6 @@ import org.abchip.mimo.entity.EntityType;
  * @generated
  */
 public interface ProductMeterType extends EntityType<ProductMeter>, EntityInfo {
-	/**
-	 * Returns the value of the '<em><b>Default Uom Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Default Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Default Uom Id</em>' reference.
-	 * @see #setDefaultUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductMeterType_DefaultUomId()
-	 * @model keys="uomId"
-	 *        annotation="mimo-ent-slot help='This is optional and if applicable can describe the meter better'"
-	 * @generated
-	 */
-	Uom getDefaultUomId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductMeterType#getDefaultUomId <em>Default Uom Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Default Uom Id</em>' reference.
-	 * @see #getDefaultUomId()
-	 * @generated
-	 */
-	void setDefaultUomId(Uom value);
-
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -109,5 +82,28 @@ public interface ProductMeterType extends EntityType<ProductMeter>, EntityInfo {
 	 * @generated
 	 */
 	void setProductMeterTypeId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Default Uom</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Default Uom</em>' reference.
+	 * @see #setDefaultUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductMeterType_DefaultUom()
+	 * @model keys="uomId"
+	 *        annotation="mimo-ent-slot help='This is optional and if applicable can describe the meter better'"
+	 * @generated
+	 */
+	Uom getDefaultUom();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductMeterType#getDefaultUom <em>Default Uom</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Default Uom</em>' reference.
+	 * @see #getDefaultUom()
+	 * @generated
+	 */
+	void setDefaultUom(Uom value);
 
 } // ProductMeterType

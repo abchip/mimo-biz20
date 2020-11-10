@@ -48,31 +48,31 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getAvailableToPromiseTotal <em>Available To Promise Total</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getBinNumber <em>Bin Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getContainerId <em>Container Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getContainer <em>Container</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getDatetimeManufactured <em>Datetime Manufactured</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getDatetimeReceived <em>Datetime Received</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getExpireDate <em>Expire Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getFacilityId <em>Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getFacility <em>Facility</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getFixedAsset <em>Fixed Asset</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getInventoryItemAttributes <em>Inventory Item Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getInventoryItemDetails <em>Inventory Item Details</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getInventoryItemLabelAppls <em>Inventory Item Label Appls</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getInventoryItemTypeId <em>Inventory Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getInventoryItemType <em>Inventory Item Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getInventoryItemVariances <em>Inventory Item Variances</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getLocationSeqId <em>Location Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getLotId <em>Lot Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getLot <em>Lot</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getOldAvailableToPromise <em>Old Available To Promise</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getOldQuantityOnHand <em>Old Quantity On Hand</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getOwnerPartyId <em>Owner Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getOwnerParty <em>Owner Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getQuantityOnHandTotal <em>Quantity On Hand Total</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getSerialNumber <em>Serial Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getSoftIdentifier <em>Soft Identifier</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getUnitCost <em>Unit Cost</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getUomId <em>Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getUom <em>Uom</em>}</li>
  * </ul>
  *
  * @generated
@@ -314,8 +314,8 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 	 * @generated
 	 */
 	@Override
-	public Uom getCurrencyUomId() {
-		return (Uom)eGet(InventoryPackage.Literals.INVENTORY_ITEM__CURRENCY_UOM_ID, true);
+	public org.abchip.mimo.biz.model.product.facility.Container getContainer() {
+		return (org.abchip.mimo.biz.model.product.facility.Container)eGet(InventoryPackage.Literals.INVENTORY_ITEM__CONTAINER, true);
 	}
 
 	/**
@@ -324,8 +324,28 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 	 * @generated
 	 */
 	@Override
-	public void setCurrencyUomId(Uom newCurrencyUomId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM__CURRENCY_UOM_ID, newCurrencyUomId);
+	public void setContainer(org.abchip.mimo.biz.model.product.facility.Container newContainer) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM__CONTAINER, newContainer);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Uom getCurrencyUom() {
+		return (Uom)eGet(InventoryPackage.Literals.INVENTORY_ITEM__CURRENCY_UOM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCurrencyUom(Uom newCurrencyUom) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM__CURRENCY_UOM, newCurrencyUom);
 	}
 
 	/**
@@ -394,8 +414,8 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 	 * @generated
 	 */
 	@Override
-	public FixedAsset getFixedAssetId() {
-		return (FixedAsset)eGet(InventoryPackage.Literals.INVENTORY_ITEM__FIXED_ASSET_ID, true);
+	public Facility getFacility() {
+		return (Facility)eGet(InventoryPackage.Literals.INVENTORY_ITEM__FACILITY, true);
 	}
 
 	/**
@@ -404,8 +424,28 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 	 * @generated
 	 */
 	@Override
-	public void setFixedAssetId(FixedAsset newFixedAssetId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM__FIXED_ASSET_ID, newFixedAssetId);
+	public void setFacility(Facility newFacility) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM__FACILITY, newFacility);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FixedAsset getFixedAsset() {
+		return (FixedAsset)eGet(InventoryPackage.Literals.INVENTORY_ITEM__FIXED_ASSET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFixedAsset(FixedAsset newFixedAsset) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM__FIXED_ASSET, newFixedAsset);
 	}
 
 	/**
@@ -447,6 +487,26 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 	 * @generated
 	 */
 	@Override
+	public InventoryItemType getInventoryItemType() {
+		return (InventoryItemType)eGet(InventoryPackage.Literals.INVENTORY_ITEM__INVENTORY_ITEM_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInventoryItemType(InventoryItemType newInventoryItemType) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM__INVENTORY_ITEM_TYPE, newInventoryItemType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getLocationSeqId() {
 		return (String)eGet(InventoryPackage.Literals.INVENTORY_ITEM__LOCATION_SEQ_ID, true);
 	}
@@ -459,6 +519,26 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 	@Override
 	public void setLocationSeqId(String newLocationSeqId) {
 		eSet(InventoryPackage.Literals.INVENTORY_ITEM__LOCATION_SEQ_ID, newLocationSeqId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Lot getLot() {
+		return (Lot)eGet(InventoryPackage.Literals.INVENTORY_ITEM__LOT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLot(Lot newLot) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM__LOT, newLot);
 	}
 
 	/**
@@ -507,8 +587,8 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 	 * @generated
 	 */
 	@Override
-	public Party getOwnerPartyId() {
-		return (Party)eGet(InventoryPackage.Literals.INVENTORY_ITEM__OWNER_PARTY_ID, true);
+	public Party getOwnerParty() {
+		return (Party)eGet(InventoryPackage.Literals.INVENTORY_ITEM__OWNER_PARTY, true);
 	}
 
 	/**
@@ -517,8 +597,8 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 	 * @generated
 	 */
 	@Override
-	public void setOwnerPartyId(Party newOwnerPartyId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM__OWNER_PARTY_ID, newOwnerPartyId);
+	public void setOwnerParty(Party newOwnerParty) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM__OWNER_PARTY, newOwnerParty);
 	}
 
 	/**
@@ -527,8 +607,8 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(InventoryPackage.Literals.INVENTORY_ITEM__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(InventoryPackage.Literals.INVENTORY_ITEM__PARTY, true);
 	}
 
 	/**
@@ -537,8 +617,8 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM__PARTY, newParty);
 	}
 
 	/**
@@ -547,8 +627,8 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(InventoryPackage.Literals.INVENTORY_ITEM__PRODUCT_ID, true);
+	public Product getProduct() {
+		return (Product)eGet(InventoryPackage.Literals.INVENTORY_ITEM__PRODUCT, true);
 	}
 
 	/**
@@ -557,8 +637,8 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 	 * @generated
 	 */
 	@Override
-	public void setProductId(Product newProductId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM__PRODUCT_ID, newProductId);
+	public void setProduct(Product newProduct) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM__PRODUCT, newProduct);
 	}
 
 	/**
@@ -627,8 +707,8 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(InventoryPackage.Literals.INVENTORY_ITEM__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(InventoryPackage.Literals.INVENTORY_ITEM__STATUS, true);
 	}
 
 	/**
@@ -637,8 +717,8 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM__STATUS, newStatus);
 	}
 
 	/**
@@ -667,8 +747,8 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 	 * @generated
 	 */
 	@Override
-	public Uom getUomId() {
-		return (Uom)eGet(InventoryPackage.Literals.INVENTORY_ITEM__UOM_ID, true);
+	public Uom getUom() {
+		return (Uom)eGet(InventoryPackage.Literals.INVENTORY_ITEM__UOM, true);
 	}
 
 	/**
@@ -677,8 +757,8 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 	 * @generated
 	 */
 	@Override
-	public void setUomId(Uom newUomId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM__UOM_ID, newUomId);
+	public void setUom(Uom newUom) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM__UOM, newUom);
 	}
 
 	/**
@@ -724,90 +804,10 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public InventoryItemType getInventoryItemTypeId() {
-		return (InventoryItemType)eGet(InventoryPackage.Literals.INVENTORY_ITEM__INVENTORY_ITEM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInventoryItemTypeId(InventoryItemType newInventoryItemTypeId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM__INVENTORY_ITEM_TYPE_ID, newInventoryItemTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<InventoryItemVariance> getInventoryItemVariances() {
 		return (List<InventoryItemVariance>)eGet(InventoryPackage.Literals.INVENTORY_ITEM__INVENTORY_ITEM_VARIANCES, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(InventoryPackage.Literals.INVENTORY_ITEM__FACILITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM__FACILITY_ID, newFacilityId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public org.abchip.mimo.biz.model.product.facility.Container getContainerId() {
-		return (org.abchip.mimo.biz.model.product.facility.Container)eGet(InventoryPackage.Literals.INVENTORY_ITEM__CONTAINER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContainerId(org.abchip.mimo.biz.model.product.facility.Container newContainerId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM__CONTAINER_ID, newContainerId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Lot getLotId() {
-		return (Lot)eGet(InventoryPackage.Literals.INVENTORY_ITEM__LOT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setLotId(Lot newLotId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM__LOT_ID, newLotId);
 	}
 
 	/**

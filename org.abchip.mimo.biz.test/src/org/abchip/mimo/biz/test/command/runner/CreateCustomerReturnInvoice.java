@@ -75,7 +75,7 @@ public class CreateCustomerReturnInvoice implements Callable<Long> {
 		ResourceWriter<Invoice> invoiceWriter = context.getResourceManager().getResourceWriter(Invoice.class);
 		
 		// Search Sales invoice from customer 
-		String filter = "partyId = \"" + party.getID() + "\" and invoiceTypeId = \"SALES_INVOICE\"" ;
+		String filter = "partyId = '" + party.getID() + "' and invoiceTypeId = 'SALES_INVOICE'" ;
 		String order = "-invoiceDate";
 		Invoice invoiceReference = null;
 				
@@ -92,11 +92,11 @@ public class CreateCustomerReturnInvoice implements Callable<Long> {
 		Party company = partyDefault.getOrganization();
 		// Invoice Header
 		Invoice invoice = invoiceWriter.make();
-		invoice.setInvoiceTypeId(context.createProxy(InvoiceType.class, "CUST_RTN_INVOICE"));
+		invoice.setInvoiceType(context.createProxy(InvoiceType.class, "CUST_RTN_INVOICE"));
 		invoice.setInvoiceDate(new Date());
-		invoice.setStatusId(context.createProxy(StatusItem.class, "INVOICE_IN_PROCESS"));
-		invoice.setCurrencyUomId(commonDefault.getCurrencyUom());
-		invoice.setPartyId(company);
+		invoice.setStatus(context.createProxy(StatusItem.class, "INVOICE_IN_PROCESS"));
+		invoice.setCurrencyUom(commonDefault.getCurrencyUom());
+		invoice.setParty(company);
 		invoice.setPartyIdFrom(party);
 		invoice.setDescription("Customer return invoice test for party " + party.getID());
 		invoice.setReferenceNumber(invoiceReference.getID());
@@ -105,9 +105,9 @@ public class CreateCustomerReturnInvoice implements Callable<Long> {
 		// InvoiceContactMech
 		ResourceWriter<InvoiceContactMech> invoiceContactMechWriter = context.getResourceManager().getResourceWriter(InvoiceContactMech.class);
 		InvoiceContactMech invoiceContactMech = invoiceContactMechWriter.make();
-		invoiceContactMech.setInvoiceId(invoice);
-		invoiceContactMech.setContactMechPurposeTypeId(context.createProxy(ContactMechPurposeType.class, "PAYMENT_LOCATION"));
-		invoiceContactMech.setContactMechId(company.getPostalAddress());
+		invoiceContactMech.setInvoice(invoice);
+		invoiceContactMech.setContactMechPurposeType(context.createProxy(ContactMechPurposeType.class, "PAYMENT_LOCATION"));
+		invoiceContactMech.setContactMech(company.getPostalAddress());
 		invoiceContactMechWriter.create(invoiceContactMech);
 
 		// Items
@@ -129,14 +129,14 @@ public class CreateCustomerReturnInvoice implements Callable<Long> {
 		
 		ResourceWriter<InvoiceItem> invoiceItemWriter = context.getResourceManager().getResourceWriter(InvoiceItem.class);
 		
-		String filter = "invoiceId = \"" + invoiceRef.getID() + "\" and invoiceItemTypeId = \"INV_DPROD_ITEM\"" ;
+		String filter = "invoiceId = '" + invoiceRef.getID() + "' and invoiceItemTypeId = 'INV_DPROD_ITEM'" ;
 		try (EntityIterator<InvoiceItem> invoiceItems = invoiceItemWriter.find(filter)) {
 			for (InvoiceItem invoiceItemRef : invoiceItems) {
 
 				InvoiceItem invoiceItem = invoiceItemWriter.make();
-				invoiceItem.setInvoiceId(invoice);
-				invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, "CRT_FPROD_ITEM"));
-				invoiceItem.setProductId(invoiceItemRef.getProductId());
+				invoiceItem.setInvoice(invoice);
+				invoiceItem.setInvoiceItemType(context.createProxy(InvoiceItemType.class, "CRT_FPROD_ITEM"));
+				invoiceItem.setProduct(invoiceItemRef.getProduct());
 				invoiceItem.setDescription(invoiceItemRef.getDescription());
 				invoiceItem.setQuantity(invoiceItemRef.getQuantity());
 				invoiceItem.setTaxableFlag(invoiceItemRef.isTaxableFlag());
@@ -148,21 +148,21 @@ public class CreateCustomerReturnInvoice implements Callable<Long> {
 	
 	private String createPaymentFromInvoice(ServiceManager serviceManager, Invoice invoice) throws ResourceException, ServiceException {
 
-		PaymentMethod paymentMethod = invoice.getPartyId().getPaymentMethod("CREDIT_CARD");
+		PaymentMethod paymentMethod = invoice.getParty().getPaymentMethod("CREDIT_CARD");
 		if (paymentMethod == null) {
-			LOGGER.error("Payment method not found for party " + invoice.getPartyId().getID());
+			LOGGER.error("Payment method not found for party " + invoice.getParty().getID());
 		}
 
 		ResourceWriter<Payment> paymentWriter = context.getResourceManager().getResourceWriter(Payment.class);
 		Payment payment = paymentWriter.make();
 		payment.setAmount(invoice.getTotal());
 		payment.setPartyIdTo(invoice.getPartyIdFrom());
-		payment.setPartyIdFrom(invoice.getPartyId());
-		payment.setPaymentTypeId(context.createProxy(PaymentType.class, "VENDOR_PAYMENT"));
-		payment.setPaymentMethodTypeId(context.createProxy(PaymentMethodType.class, "CREDIT_CARD"));
+		payment.setPartyIdFrom(invoice.getParty());
+		payment.setPaymentType(context.createProxy(PaymentType.class, "VENDOR_PAYMENT"));
+		payment.setPaymentMethodType(context.createProxy(PaymentMethodType.class, "CREDIT_CARD"));
 		if(paymentMethod != null)
-			payment.setPaymentMethodId(paymentMethod);
-		payment.setCurrencyUomId(commonDefault.getCurrencyUom());
+			payment.setPaymentMethod(paymentMethod);
+		payment.setCurrencyUom(commonDefault.getCurrencyUom());
 		payment.setPaymentRefNum("Invoice number " + invoice.getID());
 
 		paymentWriter.create(payment);

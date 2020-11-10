@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteCoefficientImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteCoefficientImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteCoefficientImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteCoefficientImpl#getQuoteId <em>Quote Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteCoefficientImpl#getQuote <em>Quote</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteCoefficientImpl#getCoeffName <em>Coeff Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteCoefficientImpl#getCoeffValue <em>Coeff Value</em>}</li>
  * </ul>
@@ -153,6 +153,26 @@ public class QuoteCoefficientImpl extends EntityIdentifiableImpl implements Quot
 	 * @generated
 	 */
 	@Override
+	public Quote getQuote() {
+		return (Quote)eGet(QuotePackage.Literals.QUOTE_COEFFICIENT__QUOTE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setQuote(Quote newQuote) {
+		eSet(QuotePackage.Literals.QUOTE_COEFFICIENT__QUOTE, newQuote);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getCoeffName() {
 		return (String)eGet(QuotePackage.Literals.QUOTE_COEFFICIENT__COEFF_NAME, true);
 	}
@@ -223,26 +243,6 @@ public class QuoteCoefficientImpl extends EntityIdentifiableImpl implements Quot
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Quote getQuoteId() {
-		return (Quote)eGet(QuotePackage.Literals.QUOTE_COEFFICIENT__QUOTE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setQuoteId(Quote newQuoteId) {
-		eSet(QuotePackage.Literals.QUOTE_COEFFICIENT__QUOTE_ID, newQuoteId);
 	}
 
 } //QuoteCoefficientImpl

@@ -32,13 +32,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortFixedAssetAssignImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortFixedAssetAssignImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortFixedAssetAssignImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortFixedAssetAssignImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortFixedAssetAssignImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortFixedAssetAssignImpl#getWorkEffort <em>Work Effort</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortFixedAssetAssignImpl#getFixedAsset <em>Fixed Asset</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortFixedAssetAssignImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortFixedAssetAssignImpl#getAllocatedCost <em>Allocated Cost</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortFixedAssetAssignImpl#getAvailabilityStatusId <em>Availability Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortFixedAssetAssignImpl#getAvailabilityStatus <em>Availability Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortFixedAssetAssignImpl#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortFixedAssetAssignImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortFixedAssetAssignImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortFixedAssetAssignImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -161,6 +161,46 @@ public class WorkEffortFixedAssetAssignImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_FIXED_ASSET_ASSIGN__WORK_EFFORT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_FIXED_ASSET_ASSIGN__WORK_EFFORT, newWorkEffort);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FixedAsset getFixedAsset() {
+		return (FixedAsset)eGet(WorkeffortPackage.Literals.WORK_EFFORT_FIXED_ASSET_ASSIGN__FIXED_ASSET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFixedAsset(FixedAsset newFixedAsset) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_FIXED_ASSET_ASSIGN__FIXED_ASSET, newFixedAsset);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAllocatedCost() {
 		return (BigDecimal)eGet(WorkeffortPackage.Literals.WORK_EFFORT_FIXED_ASSET_ASSIGN__ALLOCATED_COST, true);
 	}
@@ -181,8 +221,8 @@ public class WorkEffortFixedAssetAssignImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public StatusItem getAvailabilityStatusId() {
-		return (StatusItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT_FIXED_ASSET_ASSIGN__AVAILABILITY_STATUS_ID, true);
+	public StatusItem getAvailabilityStatus() {
+		return (StatusItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT_FIXED_ASSET_ASSIGN__AVAILABILITY_STATUS, true);
 	}
 
 	/**
@@ -191,8 +231,8 @@ public class WorkEffortFixedAssetAssignImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setAvailabilityStatusId(StatusItem newAvailabilityStatusId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_FIXED_ASSET_ASSIGN__AVAILABILITY_STATUS_ID, newAvailabilityStatusId);
+	public void setAvailabilityStatus(StatusItem newAvailabilityStatus) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_FIXED_ASSET_ASSIGN__AVAILABILITY_STATUS, newAvailabilityStatus);
 	}
 
 	/**
@@ -221,8 +261,8 @@ public class WorkEffortFixedAssetAssignImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public FixedAsset getFixedAssetId() {
-		return (FixedAsset)eGet(WorkeffortPackage.Literals.WORK_EFFORT_FIXED_ASSET_ASSIGN__FIXED_ASSET_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT_FIXED_ASSET_ASSIGN__STATUS, true);
 	}
 
 	/**
@@ -231,8 +271,8 @@ public class WorkEffortFixedAssetAssignImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setFixedAssetId(FixedAsset newFixedAssetId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_FIXED_ASSET_ASSIGN__FIXED_ASSET_ID, newFixedAssetId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_FIXED_ASSET_ASSIGN__STATUS, newStatus);
 	}
 
 	/**
@@ -253,26 +293,6 @@ public class WorkEffortFixedAssetAssignImpl extends EntityIdentifiableImpl imple
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(WorkeffortPackage.Literals.WORK_EFFORT_FIXED_ASSET_ASSIGN__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT_FIXED_ASSET_ASSIGN__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_FIXED_ASSET_ASSIGN__STATUS_ID, newStatusId);
 	}
 
 	/**
@@ -331,26 +351,6 @@ public class WorkEffortFixedAssetAssignImpl extends EntityIdentifiableImpl imple
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_FIXED_ASSET_ASSIGN__WORK_EFFORT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_FIXED_ASSET_ASSIGN__WORK_EFFORT_ID, newWorkEffortId);
 	}
 
 } //WorkEffortFixedAssetAssignImpl

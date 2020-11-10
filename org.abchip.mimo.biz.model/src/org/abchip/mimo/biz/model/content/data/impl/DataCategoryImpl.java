@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataCategoryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataCategoryImpl#getDataCategoryId <em>Data Category Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataCategoryImpl#getCategoryName <em>Category Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataCategoryImpl#getParentCategoryId <em>Parent Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataCategoryImpl#getParentCategory <em>Parent Category</em>}</li>
  * </ul>
  *
  * @generated
@@ -171,6 +171,26 @@ public class DataCategoryImpl extends EntityIdentifiableImpl implements DataCate
 	 * @generated
 	 */
 	@Override
+	public DataCategory getParentCategory() {
+		return (DataCategory)eGet(DataPackage.Literals.DATA_CATEGORY__PARENT_CATEGORY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParentCategory(DataCategory newParentCategory) {
+		eSet(DataPackage.Literals.DATA_CATEGORY__PARENT_CATEGORY, newParentCategory);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDataCategoryId() {
 		return (String)eGet(DataPackage.Literals.DATA_CATEGORY__DATA_CATEGORY_ID, true);
 	}
@@ -183,26 +203,6 @@ public class DataCategoryImpl extends EntityIdentifiableImpl implements DataCate
 	@Override
 	public void setDataCategoryId(String newDataCategoryId) {
 		eSet(DataPackage.Literals.DATA_CATEGORY__DATA_CATEGORY_ID, newDataCategoryId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DataCategory getParentCategoryId() {
-		return (DataCategory)eGet(DataPackage.Literals.DATA_CATEGORY__PARENT_CATEGORY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentCategoryId(DataCategory newParentCategoryId) {
-		eSet(DataPackage.Literals.DATA_CATEGORY__PARENT_CATEGORY_ID, newParentCategoryId);
 	}
 
 	/**

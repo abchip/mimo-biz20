@@ -35,15 +35,15 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationImpl#getCreatedDate <em>Created Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationImpl#getGlAccountId <em>Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationImpl#getGlAccount <em>Gl Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationImpl#getGlReconciliationName <em>Gl Reconciliation Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationImpl#getOpeningBalance <em>Opening Balance</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationImpl#getOrganizationParty <em>Organization Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationImpl#getReconciledBalance <em>Reconciled Balance</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationImpl#getReconciledDate <em>Reconciled Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationImpl#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @generated
@@ -224,6 +224,26 @@ public class GlReconciliationImpl extends EntityIdentifiableImpl implements GlRe
 	 * @generated
 	 */
 	@Override
+	public GlAccount getGlAccount() {
+		return (GlAccount)eGet(LedgerPackage.Literals.GL_RECONCILIATION__GL_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGlAccount(GlAccount newGlAccount) {
+		eSet(LedgerPackage.Literals.GL_RECONCILIATION__GL_ACCOUNT, newGlAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getGlReconciliationName() {
 		return (String)eGet(LedgerPackage.Literals.GL_RECONCILIATION__GL_RECONCILIATION_NAME, true);
 	}
@@ -304,8 +324,8 @@ public class GlReconciliationImpl extends EntityIdentifiableImpl implements GlRe
 	 * @generated
 	 */
 	@Override
-	public Party getOrganizationPartyId() {
-		return (Party)eGet(LedgerPackage.Literals.GL_RECONCILIATION__ORGANIZATION_PARTY_ID, true);
+	public Party getOrganizationParty() {
+		return (Party)eGet(LedgerPackage.Literals.GL_RECONCILIATION__ORGANIZATION_PARTY, true);
 	}
 
 	/**
@@ -314,8 +334,8 @@ public class GlReconciliationImpl extends EntityIdentifiableImpl implements GlRe
 	 * @generated
 	 */
 	@Override
-	public void setOrganizationPartyId(Party newOrganizationPartyId) {
-		eSet(LedgerPackage.Literals.GL_RECONCILIATION__ORGANIZATION_PARTY_ID, newOrganizationPartyId);
+	public void setOrganizationParty(Party newOrganizationParty) {
+		eSet(LedgerPackage.Literals.GL_RECONCILIATION__ORGANIZATION_PARTY, newOrganizationParty);
 	}
 
 	/**
@@ -364,8 +384,8 @@ public class GlReconciliationImpl extends EntityIdentifiableImpl implements GlRe
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(LedgerPackage.Literals.GL_RECONCILIATION__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(LedgerPackage.Literals.GL_RECONCILIATION__STATUS, true);
 	}
 
 	/**
@@ -374,8 +394,8 @@ public class GlReconciliationImpl extends EntityIdentifiableImpl implements GlRe
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(LedgerPackage.Literals.GL_RECONCILIATION__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(LedgerPackage.Literals.GL_RECONCILIATION__STATUS, newStatus);
 	}
 
 	/**
@@ -414,26 +434,6 @@ public class GlReconciliationImpl extends EntityIdentifiableImpl implements GlRe
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GlAccount getGlAccountId() {
-		return (GlAccount)eGet(LedgerPackage.Literals.GL_RECONCILIATION__GL_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGlAccountId(GlAccount newGlAccountId) {
-		eSet(LedgerPackage.Literals.GL_RECONCILIATION__GL_ACCOUNT_ID, newGlAccountId);
 	}
 
 	/**

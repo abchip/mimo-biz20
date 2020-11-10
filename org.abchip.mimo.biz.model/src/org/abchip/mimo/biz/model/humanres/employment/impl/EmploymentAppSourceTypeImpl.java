@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppSourceTypeImpl#getEmploymentAppSourceTypeId <em>Employment App Source Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppSourceTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppSourceTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppSourceTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppSourceTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,6 +200,26 @@ public class EmploymentAppSourceTypeImpl extends EntityTypeImpl<EmploymentApp> i
 	 * @generated
 	 */
 	@Override
+	public EmploymentAppSourceType getParentType() {
+		return (EmploymentAppSourceType)eGet(EmploymentPackage.Literals.EMPLOYMENT_APP_SOURCE_TYPE__PARENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParentType(EmploymentAppSourceType newParentType) {
+		eSet(EmploymentPackage.Literals.EMPLOYMENT_APP_SOURCE_TYPE__PARENT_TYPE, newParentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEmploymentAppSourceTypeId() {
 		return (String)eGet(EmploymentPackage.Literals.EMPLOYMENT_APP_SOURCE_TYPE__EMPLOYMENT_APP_SOURCE_TYPE_ID, true);
 	}
@@ -212,26 +232,6 @@ public class EmploymentAppSourceTypeImpl extends EntityTypeImpl<EmploymentApp> i
 	@Override
 	public void setEmploymentAppSourceTypeId(String newEmploymentAppSourceTypeId) {
 		eSet(EmploymentPackage.Literals.EMPLOYMENT_APP_SOURCE_TYPE__EMPLOYMENT_APP_SOURCE_TYPE_ID, newEmploymentAppSourceTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EmploymentAppSourceType getParentTypeId() {
-		return (EmploymentAppSourceType)eGet(EmploymentPackage.Literals.EMPLOYMENT_APP_SOURCE_TYPE__PARENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentTypeId(EmploymentAppSourceType newParentTypeId) {
-		eSet(EmploymentPackage.Literals.EMPLOYMENT_APP_SOURCE_TYPE__PARENT_TYPE_ID, newParentTypeId);
 	}
 
 	/**

@@ -32,7 +32,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getGroupId <em>Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getLastModifiedDate <em>Last Modified Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getMarketingCampaignId <em>Marketing Campaign Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getMarketingCampaign <em>Marketing Campaign</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getOverrideCss <em>Override Css</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getOverrideLogo <em>Override Logo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getProdCatalogId <em>Prod Catalog Id</em>}</li>
@@ -40,7 +40,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getSubgroupId <em>Subgroup Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getTrackableLifetime <em>Trackable Lifetime</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getTrackingCodeTypeId <em>Tracking Code Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getTrackingCodeType <em>Tracking Code Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getTrackingCodeVisits <em>Tracking Code Visits</em>}</li>
  * </ul>
  *
@@ -284,30 +284,26 @@ public interface TrackingCode extends EntityTyped<TrackingCodeType>, EntityInfo 
 	void setLastModifiedDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Marketing Campaign Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Marketing Campaign</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Marketing Campaign Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Marketing Campaign Id</em>' reference.
-	 * @see #setMarketingCampaignId(MarketingCampaign)
-	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCode_MarketingCampaignId()
+	 * @return the value of the '<em>Marketing Campaign</em>' reference.
+	 * @see #setMarketingCampaign(MarketingCampaign)
+	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCode_MarketingCampaign()
 	 * @model keys="marketingCampaignId"
 	 * @generated
 	 */
-	MarketingCampaign getMarketingCampaignId();
+	MarketingCampaign getMarketingCampaign();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getMarketingCampaignId <em>Marketing Campaign Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getMarketingCampaign <em>Marketing Campaign</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Marketing Campaign Id</em>' reference.
-	 * @see #getMarketingCampaignId()
+	 * @param value the new value of the '<em>Marketing Campaign</em>' reference.
+	 * @see #getMarketingCampaign()
 	 * @generated
 	 */
-	void setMarketingCampaignId(MarketingCampaign value);
+	void setMarketingCampaign(MarketingCampaign value);
 
 	/**
 	 * Returns the value of the '<em><b>Override Css</b></em>' attribute.
@@ -492,6 +488,28 @@ public interface TrackingCode extends EntityTyped<TrackingCodeType>, EntityInfo 
 	void setTrackableLifetime(long value);
 
 	/**
+	 * Returns the value of the '<em><b>Tracking Code Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tracking Code Type</em>' reference.
+	 * @see #setTrackingCodeType(TrackingCodeType)
+	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCode_TrackingCodeType()
+	 * @model keys="trackingCodeTypeId"
+	 * @generated
+	 */
+	TrackingCodeType getTrackingCodeType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getTrackingCodeType <em>Tracking Code Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tracking Code Type</em>' reference.
+	 * @see #getTrackingCodeType()
+	 * @generated
+	 */
+	void setTrackingCodeType(TrackingCodeType value);
+
+	/**
 	 * Returns the value of the '<em><b>Tracking Code Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -517,32 +535,6 @@ public interface TrackingCode extends EntityTyped<TrackingCodeType>, EntityInfo 
 	 * @generated
 	 */
 	void setTrackingCodeId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Tracking Code Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tracking Code Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tracking Code Type Id</em>' reference.
-	 * @see #setTrackingCodeTypeId(TrackingCodeType)
-	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCode_TrackingCodeTypeId()
-	 * @model keys="trackingCodeTypeId"
-	 * @generated
-	 */
-	TrackingCodeType getTrackingCodeTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getTrackingCodeTypeId <em>Tracking Code Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tracking Code Type Id</em>' reference.
-	 * @see #getTrackingCodeTypeId()
-	 * @generated
-	 */
-	void setTrackingCodeTypeId(TrackingCodeType value);
 
 	/**
 	 * Returns the value of the '<em><b>Tracking Code Visits</b></em>' reference list.

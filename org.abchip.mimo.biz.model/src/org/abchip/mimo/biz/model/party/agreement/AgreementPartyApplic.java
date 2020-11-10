@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementPartyApplic#getAgreementId <em>Agreement Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementPartyApplic#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementPartyApplic#getAgreement <em>Agreement</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementPartyApplic#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementPartyApplic#getAgreementItemSeqId <em>Agreement Item Seq Id</em>}</li>
  * </ul>
  *
@@ -30,6 +30,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface AgreementPartyApplic extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Agreement</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Agreement</em>' reference.
+	 * @see #setAgreement(Agreement)
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementPartyApplic_Agreement()
+	 * @model keys="agreementId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Agreement getAgreement();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.AgreementPartyApplic#getAgreement <em>Agreement</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Agreement</em>' reference.
+	 * @see #getAgreement()
+	 * @generated
+	 */
+	void setAgreement(Agreement value);
+
+	/**
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementPartyApplic_Party()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.AgreementPartyApplic#getParty <em>Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
+	 * @generated
+	 */
+	void setParty(Party value);
+
 	/**
 	 * Returns the value of the '<em><b>Agreement Item Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -57,59 +103,5 @@ public interface AgreementPartyApplic extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setAgreementItemSeqId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementPartyApplic_PartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.AgreementPartyApplic#getPartyId <em>Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
-	 * @generated
-	 */
-	void setPartyId(Party value);
-
-	/**
-	 * Returns the value of the '<em><b>Agreement Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Agreement Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Agreement Id</em>' reference.
-	 * @see #setAgreementId(Agreement)
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementPartyApplic_AgreementId()
-	 * @model keys="agreementId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Agreement getAgreementId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.AgreementPartyApplic#getAgreementId <em>Agreement Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Agreement Id</em>' reference.
-	 * @see #getAgreementId()
-	 * @generated
-	 */
-	void setAgreementId(Agreement value);
 
 } // AgreementPartyApplic

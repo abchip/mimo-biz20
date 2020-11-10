@@ -33,17 +33,17 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getPayrollPreferenceSeqId <em>Payroll Preference Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getRoleTypeId <em>Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getAccountNumber <em>Account Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getBankName <em>Bank Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getDeductionTypeId <em>Deduction Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getDeductionType <em>Deduction Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getFlatAmount <em>Flat Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getPaymentMethodTypeId <em>Payment Method Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getPaymentMethodType <em>Payment Method Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getPercentage <em>Percentage</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getPeriodTypeId <em>Period Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getPeriodType <em>Period Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getRoutingNumber <em>Routing Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -167,6 +167,26 @@ public class PayrollPreferenceImpl extends EntityIdentifiableImpl implements Pay
 	 * @generated
 	 */
 	@Override
+	public Party getParty() {
+		return (Party)eGet(EmploymentPackage.Literals.PAYROLL_PREFERENCE__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(EmploymentPackage.Literals.PAYROLL_PREFERENCE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAccountNumber() {
 		return (String)eGet(EmploymentPackage.Literals.PAYROLL_PREFERENCE__ACCOUNT_NUMBER, true);
 	}
@@ -207,8 +227,8 @@ public class PayrollPreferenceImpl extends EntityIdentifiableImpl implements Pay
 	 * @generated
 	 */
 	@Override
-	public DeductionType getDeductionTypeId() {
-		return (DeductionType)eGet(EmploymentPackage.Literals.PAYROLL_PREFERENCE__DEDUCTION_TYPE_ID, true);
+	public DeductionType getDeductionType() {
+		return (DeductionType)eGet(EmploymentPackage.Literals.PAYROLL_PREFERENCE__DEDUCTION_TYPE, true);
 	}
 
 	/**
@@ -217,8 +237,8 @@ public class PayrollPreferenceImpl extends EntityIdentifiableImpl implements Pay
 	 * @generated
 	 */
 	@Override
-	public void setDeductionTypeId(DeductionType newDeductionTypeId) {
-		eSet(EmploymentPackage.Literals.PAYROLL_PREFERENCE__DEDUCTION_TYPE_ID, newDeductionTypeId);
+	public void setDeductionType(DeductionType newDeductionType) {
+		eSet(EmploymentPackage.Literals.PAYROLL_PREFERENCE__DEDUCTION_TYPE, newDeductionType);
 	}
 
 	/**
@@ -267,8 +287,8 @@ public class PayrollPreferenceImpl extends EntityIdentifiableImpl implements Pay
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(EmploymentPackage.Literals.PAYROLL_PREFERENCE__PARTY_ID, true);
+	public PaymentMethodType getPaymentMethodType() {
+		return (PaymentMethodType)eGet(EmploymentPackage.Literals.PAYROLL_PREFERENCE__PAYMENT_METHOD_TYPE, true);
 	}
 
 	/**
@@ -277,28 +297,8 @@ public class PayrollPreferenceImpl extends EntityIdentifiableImpl implements Pay
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(EmploymentPackage.Literals.PAYROLL_PREFERENCE__PARTY_ID, newPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PaymentMethodType getPaymentMethodTypeId() {
-		return (PaymentMethodType)eGet(EmploymentPackage.Literals.PAYROLL_PREFERENCE__PAYMENT_METHOD_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaymentMethodTypeId(PaymentMethodType newPaymentMethodTypeId) {
-		eSet(EmploymentPackage.Literals.PAYROLL_PREFERENCE__PAYMENT_METHOD_TYPE_ID, newPaymentMethodTypeId);
+	public void setPaymentMethodType(PaymentMethodType newPaymentMethodType) {
+		eSet(EmploymentPackage.Literals.PAYROLL_PREFERENCE__PAYMENT_METHOD_TYPE, newPaymentMethodType);
 	}
 
 	/**
@@ -347,8 +347,8 @@ public class PayrollPreferenceImpl extends EntityIdentifiableImpl implements Pay
 	 * @generated
 	 */
 	@Override
-	public PeriodType getPeriodTypeId() {
-		return (PeriodType)eGet(EmploymentPackage.Literals.PAYROLL_PREFERENCE__PERIOD_TYPE_ID, true);
+	public PeriodType getPeriodType() {
+		return (PeriodType)eGet(EmploymentPackage.Literals.PAYROLL_PREFERENCE__PERIOD_TYPE, true);
 	}
 
 	/**
@@ -357,8 +357,8 @@ public class PayrollPreferenceImpl extends EntityIdentifiableImpl implements Pay
 	 * @generated
 	 */
 	@Override
-	public void setPeriodTypeId(PeriodType newPeriodTypeId) {
-		eSet(EmploymentPackage.Literals.PAYROLL_PREFERENCE__PERIOD_TYPE_ID, newPeriodTypeId);
+	public void setPeriodType(PeriodType newPeriodType) {
+		eSet(EmploymentPackage.Literals.PAYROLL_PREFERENCE__PERIOD_TYPE, newPeriodType);
 	}
 
 	/**

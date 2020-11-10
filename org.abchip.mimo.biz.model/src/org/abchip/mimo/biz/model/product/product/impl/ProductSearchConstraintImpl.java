@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchConstraintImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchConstraintImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchConstraintImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchConstraintImpl#getProductSearchResultId <em>Product Search Result Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchConstraintImpl#getProductSearchResult <em>Product Search Result</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchConstraintImpl#getConstraintSeqId <em>Constraint Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchConstraintImpl#getAnyPrefix <em>Any Prefix</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchConstraintImpl#getAnySuffix <em>Any Suffix</em>}</li>
@@ -152,6 +152,26 @@ public class ProductSearchConstraintImpl extends EntityIdentifiableImpl implemen
 	@Override
 	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
 		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductSearchResult getProductSearchResult() {
+		return (ProductSearchResult)eGet(ProductPackage.Literals.PRODUCT_SEARCH_CONSTRAINT__PRODUCT_SEARCH_RESULT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductSearchResult(ProductSearchResult newProductSearchResult) {
+		eSet(ProductPackage.Literals.PRODUCT_SEARCH_CONSTRAINT__PRODUCT_SEARCH_RESULT, newProductSearchResult);
 	}
 
 	/**
@@ -390,26 +410,6 @@ public class ProductSearchConstraintImpl extends EntityIdentifiableImpl implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductSearchResult getProductSearchResultId() {
-		return (ProductSearchResult)eGet(ProductPackage.Literals.PRODUCT_SEARCH_CONSTRAINT__PRODUCT_SEARCH_RESULT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductSearchResultId(ProductSearchResult newProductSearchResultId) {
-		eSet(ProductPackage.Literals.PRODUCT_SEARCH_CONSTRAINT__PRODUCT_SEARCH_RESULT_ID, newProductSearchResultId);
 	}
 
 } //ProductSearchConstraintImpl

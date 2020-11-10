@@ -21,8 +21,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignPrice#getMarketingCampaignId <em>Marketing Campaign Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignPrice#getProductPriceRuleId <em>Product Price Rule Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignPrice#getMarketingCampaign <em>Marketing Campaign</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignPrice#getProductPriceRule <em>Product Price Rule</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignPrice#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignPrice#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -32,6 +32,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface MarketingCampaignPrice extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Marketing Campaign</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Marketing Campaign</em>' reference.
+	 * @see #setMarketingCampaign(MarketingCampaign)
+	 * @see org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage#getMarketingCampaignPrice_MarketingCampaign()
+	 * @model keys="marketingCampaignId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	MarketingCampaign getMarketingCampaign();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignPrice#getMarketingCampaign <em>Marketing Campaign</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Marketing Campaign</em>' reference.
+	 * @see #getMarketingCampaign()
+	 * @generated
+	 */
+	void setMarketingCampaign(MarketingCampaign value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Price Rule</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Price Rule</em>' reference.
+	 * @see #setProductPriceRule(ProductPriceRule)
+	 * @see org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage#getMarketingCampaignPrice_ProductPriceRule()
+	 * @model keys="productPriceRuleId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductPriceRule getProductPriceRule();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignPrice#getProductPriceRule <em>Product Price Rule</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Price Rule</em>' reference.
+	 * @see #getProductPriceRule()
+	 * @generated
+	 */
+	void setProductPriceRule(ProductPriceRule value);
+
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -58,60 +104,6 @@ public interface MarketingCampaignPrice extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setFromDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Marketing Campaign Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Marketing Campaign Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Marketing Campaign Id</em>' reference.
-	 * @see #setMarketingCampaignId(MarketingCampaign)
-	 * @see org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage#getMarketingCampaignPrice_MarketingCampaignId()
-	 * @model keys="marketingCampaignId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	MarketingCampaign getMarketingCampaignId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignPrice#getMarketingCampaignId <em>Marketing Campaign Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Marketing Campaign Id</em>' reference.
-	 * @see #getMarketingCampaignId()
-	 * @generated
-	 */
-	void setMarketingCampaignId(MarketingCampaign value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Price Rule Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Price Rule Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Price Rule Id</em>' reference.
-	 * @see #setProductPriceRuleId(ProductPriceRule)
-	 * @see org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage#getMarketingCampaignPrice_ProductPriceRuleId()
-	 * @model keys="productPriceRuleId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductPriceRule getProductPriceRuleId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignPrice#getProductPriceRuleId <em>Product Price Rule Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Price Rule Id</em>' reference.
-	 * @see #getProductPriceRuleId()
-	 * @generated
-	 */
-	void setProductPriceRuleId(ProductPriceRule value);
 
 	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.

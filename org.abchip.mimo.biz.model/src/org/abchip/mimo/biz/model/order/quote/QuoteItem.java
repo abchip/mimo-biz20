@@ -29,27 +29,27 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getQuoteId <em>Quote Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getQuote <em>Quote</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getQuoteItemSeqId <em>Quote Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getConfigId <em>Config Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getCustRequestId <em>Cust Request Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getCustRequest <em>Cust Request</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getCustRequestItemSeqId <em>Cust Request Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getDeliverableTypeId <em>Deliverable Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getDeliverableType <em>Deliverable Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getEstimatedDeliveryDate <em>Estimated Delivery Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getIsPromo <em>Is Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getLeadTimeDays <em>Lead Time Days</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getProductFeatureId <em>Product Feature Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getProductFeature <em>Product Feature</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getQuoteUnitPrice <em>Quote Unit Price</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getReservLength <em>Reserv Length</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getReservPersons <em>Reserv Persons</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getReservStart <em>Reserv Start</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getSelectedAmount <em>Selected Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getSkillTypeId <em>Skill Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getUomId <em>Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getWorkEffortId <em>Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getSkillType <em>Skill Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getUom <em>Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getWorkEffort <em>Work Effort</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem()
@@ -57,6 +57,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface QuoteItem extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Quote</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Quote</em>' reference.
+	 * @see #setQuote(Quote)
+	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_Quote()
+	 * @model keys="quoteId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Quote getQuote();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getQuote <em>Quote</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Quote</em>' reference.
+	 * @see #getQuote()
+	 * @generated
+	 */
+	void setQuote(Quote value);
+
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -110,30 +133,26 @@ public interface QuoteItem extends EntityIdentifiable, EntityInfo {
 	void setConfigId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Cust Request Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Cust Request</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cust Request Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cust Request Id</em>' reference.
-	 * @see #setCustRequestId(CustRequest)
-	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_CustRequestId()
+	 * @return the value of the '<em>Cust Request</em>' reference.
+	 * @see #setCustRequest(CustRequest)
+	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_CustRequest()
 	 * @model keys="custRequestId"
 	 * @generated
 	 */
-	CustRequest getCustRequestId();
+	CustRequest getCustRequest();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getCustRequestId <em>Cust Request Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getCustRequest <em>Cust Request</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cust Request Id</em>' reference.
-	 * @see #getCustRequestId()
+	 * @param value the new value of the '<em>Cust Request</em>' reference.
+	 * @see #getCustRequest()
 	 * @generated
 	 */
-	void setCustRequestId(CustRequest value);
+	void setCustRequest(CustRequest value);
 
 	/**
 	 * Returns the value of the '<em><b>Cust Request Item Seq Id</b></em>' attribute.
@@ -162,30 +181,26 @@ public interface QuoteItem extends EntityIdentifiable, EntityInfo {
 	void setCustRequestItemSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Deliverable Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Deliverable Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Deliverable Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Deliverable Type Id</em>' reference.
-	 * @see #setDeliverableTypeId(DeliverableType)
-	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_DeliverableTypeId()
+	 * @return the value of the '<em>Deliverable Type</em>' reference.
+	 * @see #setDeliverableType(DeliverableType)
+	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_DeliverableType()
 	 * @model keys="deliverableTypeId"
 	 * @generated
 	 */
-	DeliverableType getDeliverableTypeId();
+	DeliverableType getDeliverableType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getDeliverableTypeId <em>Deliverable Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getDeliverableType <em>Deliverable Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Deliverable Type Id</em>' reference.
-	 * @see #getDeliverableTypeId()
+	 * @param value the new value of the '<em>Deliverable Type</em>' reference.
+	 * @see #getDeliverableType()
 	 * @generated
 	 */
-	void setDeliverableTypeId(DeliverableType value);
+	void setDeliverableType(DeliverableType value);
 
 	/**
 	 * Returns the value of the '<em><b>Estimated Delivery Date</b></em>' attribute.
@@ -262,56 +277,48 @@ public interface QuoteItem extends EntityIdentifiable, EntityInfo {
 	void setLeadTimeDays(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Feature Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Feature Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Feature Id</em>' reference.
-	 * @see #setProductFeatureId(ProductFeature)
-	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_ProductFeatureId()
-	 * @model keys="productFeatureId"
-	 * @generated
-	 */
-	ProductFeature getProductFeatureId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getProductFeatureId <em>Product Feature Id</em>}' reference.
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Feature Id</em>' reference.
-	 * @see #getProductFeatureId()
-	 * @generated
-	 */
-	void setProductFeatureId(ProductFeature value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_ProductId()
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_Product()
 	 * @model keys="productId"
 	 * @generated
 	 */
-	Product getProductId();
+	Product getProduct();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getProductId <em>Product Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getProduct <em>Product</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
 	 * @generated
 	 */
-	void setProductId(Product value);
+	void setProduct(Product value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Feature</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Feature</em>' reference.
+	 * @see #setProductFeature(ProductFeature)
+	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_ProductFeature()
+	 * @model keys="productFeatureId"
+	 * @generated
+	 */
+	ProductFeature getProductFeature();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getProductFeature <em>Product Feature</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Feature</em>' reference.
+	 * @see #getProductFeature()
+	 * @generated
+	 */
+	void setProductFeature(ProductFeature value);
 
 	/**
 	 * Returns the value of the '<em><b>Quantity</b></em>' attribute.
@@ -338,33 +345,6 @@ public interface QuoteItem extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setQuantity(BigDecimal value);
-
-	/**
-	 * Returns the value of the '<em><b>Quote Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Quote Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Quote Id</em>' reference.
-	 * @see #setQuoteId(Quote)
-	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_QuoteId()
-	 * @model keys="quoteId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Quote getQuoteId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getQuoteId <em>Quote Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Quote Id</em>' reference.
-	 * @see #getQuoteId()
-	 * @generated
-	 */
-	void setQuoteId(Quote value);
 
 	/**
 	 * Returns the value of the '<em><b>Quote Item Seq Id</b></em>' attribute.
@@ -525,81 +505,69 @@ public interface QuoteItem extends EntityIdentifiable, EntityInfo {
 	void setSelectedAmount(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Skill Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Skill Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Skill Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Skill Type Id</em>' reference.
-	 * @see #setSkillTypeId(SkillType)
-	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_SkillTypeId()
+	 * @return the value of the '<em>Skill Type</em>' reference.
+	 * @see #setSkillType(SkillType)
+	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_SkillType()
 	 * @model keys="skillTypeId"
 	 * @generated
 	 */
-	SkillType getSkillTypeId();
+	SkillType getSkillType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getSkillTypeId <em>Skill Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getSkillType <em>Skill Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Skill Type Id</em>' reference.
-	 * @see #getSkillTypeId()
+	 * @param value the new value of the '<em>Skill Type</em>' reference.
+	 * @see #getSkillType()
 	 * @generated
 	 */
-	void setSkillTypeId(SkillType value);
+	void setSkillType(SkillType value);
 
 	/**
-	 * Returns the value of the '<em><b>Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Uom Id</em>' reference.
-	 * @see #setUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_UomId()
+	 * @return the value of the '<em>Uom</em>' reference.
+	 * @see #setUom(Uom)
+	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_Uom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getUomId();
+	Uom getUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getUomId <em>Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getUom <em>Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Uom Id</em>' reference.
-	 * @see #getUomId()
+	 * @param value the new value of the '<em>Uom</em>' reference.
+	 * @see #getUom()
 	 * @generated
 	 */
-	void setUomId(Uom value);
+	void setUom(Uom value);
 
 	/**
-	 * Returns the value of the '<em><b>Work Effort Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Work Effort Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Work Effort Id</em>' reference.
-	 * @see #setWorkEffortId(WorkEffort)
-	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_WorkEffortId()
+	 * @return the value of the '<em>Work Effort</em>' reference.
+	 * @see #setWorkEffort(WorkEffort)
+	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_WorkEffort()
 	 * @model keys="workEffortId"
 	 * @generated
 	 */
-	WorkEffort getWorkEffortId();
+	WorkEffort getWorkEffort();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getWorkEffortId <em>Work Effort Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getWorkEffort <em>Work Effort</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Work Effort Id</em>' reference.
-	 * @see #getWorkEffortId()
+	 * @param value the new value of the '<em>Work Effort</em>' reference.
+	 * @see #getWorkEffort()
 	 * @generated
 	 */
-	void setWorkEffortId(WorkEffort value);
+	void setWorkEffort(WorkEffort value);
 
 } // QuoteItem

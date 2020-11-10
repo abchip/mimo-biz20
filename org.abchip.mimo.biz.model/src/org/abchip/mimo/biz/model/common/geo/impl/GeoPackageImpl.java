@@ -759,7 +759,7 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCountryAddressFormat_GeoAssocTypeId() {
+	public EReference getCountryAddressFormat_GeoAssocType() {
 		return (EReference)countryAddressFormatEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -969,7 +969,7 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGeo_GeoTypeId() {
+	public EReference getGeo_GeoType() {
 		return (EReference)geoEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -1019,7 +1019,7 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGeoAssoc_GeoId() {
+	public EReference getGeoAssoc_Geo() {
 		return (EReference)geoAssocEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1039,7 +1039,7 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGeoAssoc_GeoAssocTypeId() {
+	public EReference getGeoAssoc_GeoAssocType() {
 		return (EReference)geoAssocEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -1099,7 +1099,7 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGeoPoint_DataSourceId() {
+	public EReference getGeoPoint_DataSource() {
 		return (EReference)geoPointEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1129,7 +1129,7 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGeoPoint_ElevationUomId() {
+	public EReference getGeoPoint_ElevationUom() {
 		return (EReference)geoPointEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -1139,7 +1139,7 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGeoPoint_GeoPointTypeEnumId() {
+	public EReference getGeoPoint_GeoPointTypeEnum() {
 		return (EReference)geoPointEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -1219,7 +1219,7 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGeoType_ParentTypeId() {
+	public EReference getGeoType_ParentType() {
 		return (EReference)geoTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1255,7 +1255,7 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 		countryAddressFormatEClass = createEClass(COUNTRY_ADDRESS_FORMAT);
 		createEAttribute(countryAddressFormatEClass, COUNTRY_ADDRESS_FORMAT__GEO_ID);
 		createEAttribute(countryAddressFormatEClass, COUNTRY_ADDRESS_FORMAT__ADDRESS_FORMAT);
-		createEReference(countryAddressFormatEClass, COUNTRY_ADDRESS_FORMAT__GEO_ASSOC_TYPE_ID);
+		createEReference(countryAddressFormatEClass, COUNTRY_ADDRESS_FORMAT__GEO_ASSOC_TYPE);
 		createEAttribute(countryAddressFormatEClass, COUNTRY_ADDRESS_FORMAT__HAS_POSTAL_CODE_EXT);
 		createEAttribute(countryAddressFormatEClass, COUNTRY_ADDRESS_FORMAT__POSTAL_CODE_REGEX);
 		createEAttribute(countryAddressFormatEClass, COUNTRY_ADDRESS_FORMAT__REQUIRE_POSTAL_CODE);
@@ -1280,15 +1280,15 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 		createEAttribute(geoEClass, GEO__GEO_CODE);
 		createEAttribute(geoEClass, GEO__GEO_NAME);
 		createEAttribute(geoEClass, GEO__GEO_SEC_CODE);
-		createEReference(geoEClass, GEO__GEO_TYPE_ID);
+		createEReference(geoEClass, GEO__GEO_TYPE);
 		createEReference(geoEClass, GEO__MAIN_GEO_ASSOCS);
 		createEReference(geoEClass, GEO__TAX_AUTH_TAX_AUTHORITIES);
 		createEAttribute(geoEClass, GEO__WELL_KNOWN_TEXT);
 
 		geoAssocEClass = createEClass(GEO_ASSOC);
-		createEReference(geoAssocEClass, GEO_ASSOC__GEO_ID);
+		createEReference(geoAssocEClass, GEO_ASSOC__GEO);
 		createEReference(geoAssocEClass, GEO_ASSOC__GEO_ID_TO);
-		createEReference(geoAssocEClass, GEO_ASSOC__GEO_ASSOC_TYPE_ID);
+		createEReference(geoAssocEClass, GEO_ASSOC__GEO_ASSOC_TYPE);
 
 		geoAssocTypeEClass = createEClass(GEO_ASSOC_TYPE);
 		createEAttribute(geoAssocTypeEClass, GEO_ASSOC_TYPE__GEO_ASSOC_TYPE_ID);
@@ -1296,11 +1296,11 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 
 		geoPointEClass = createEClass(GEO_POINT);
 		createEAttribute(geoPointEClass, GEO_POINT__GEO_POINT_ID);
-		createEReference(geoPointEClass, GEO_POINT__DATA_SOURCE_ID);
+		createEReference(geoPointEClass, GEO_POINT__DATA_SOURCE);
 		createEAttribute(geoPointEClass, GEO_POINT__DESCRIPTION);
 		createEAttribute(geoPointEClass, GEO_POINT__ELEVATION);
-		createEReference(geoPointEClass, GEO_POINT__ELEVATION_UOM_ID);
-		createEReference(geoPointEClass, GEO_POINT__GEO_POINT_TYPE_ENUM_ID);
+		createEReference(geoPointEClass, GEO_POINT__ELEVATION_UOM);
+		createEReference(geoPointEClass, GEO_POINT__GEO_POINT_TYPE_ENUM);
 		createEAttribute(geoPointEClass, GEO_POINT__INFORMATION);
 		createEAttribute(geoPointEClass, GEO_POINT__LATITUDE);
 		createEAttribute(geoPointEClass, GEO_POINT__LONGITUDE);
@@ -1309,7 +1309,7 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 		createEAttribute(geoTypeEClass, GEO_TYPE__GEO_TYPE_ID);
 		createEAttribute(geoTypeEClass, GEO_TYPE__DESCRIPTION);
 		createEAttribute(geoTypeEClass, GEO_TYPE__HAS_TABLE);
-		createEReference(geoTypeEClass, GEO_TYPE__PARENT_TYPE_ID);
+		createEReference(geoTypeEClass, GEO_TYPE__PARENT_TYPE);
 	}
 
 	/**
@@ -1384,8 +1384,8 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 		initEClass(countryAddressFormatEClass, CountryAddressFormat.class, "CountryAddressFormat", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCountryAddressFormat_GeoId(), ecorePackage.getEString(), "geoId", null, 1, 1, CountryAddressFormat.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCountryAddressFormat_AddressFormat(), ecorePackage.getEString(), "addressFormat", null, 0, 1, CountryAddressFormat.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCountryAddressFormat_GeoAssocTypeId(), this.getGeoAssocType(), null, "geoAssocTypeId", null, 0, 1, CountryAddressFormat.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCountryAddressFormat_GeoAssocTypeId().getEKeys().add(this.getGeoAssocType_GeoAssocTypeId());
+		initEReference(getCountryAddressFormat_GeoAssocType(), this.getGeoAssocType(), null, "geoAssocType", null, 0, 1, CountryAddressFormat.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCountryAddressFormat_GeoAssocType().getEKeys().add(this.getGeoAssocType_GeoAssocTypeId());
 		initEAttribute(getCountryAddressFormat_HasPostalCodeExt(), ecorePackage.getEBooleanObject(), "hasPostalCodeExt", null, 0, 1, CountryAddressFormat.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCountryAddressFormat_PostalCodeRegex(), ecorePackage.getEString(), "postalCodeRegex", null, 0, 1, CountryAddressFormat.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCountryAddressFormat_RequirePostalCode(), ecorePackage.getEBooleanObject(), "requirePostalCode", null, 0, 1, CountryAddressFormat.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1410,19 +1410,19 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 		initEAttribute(getGeo_GeoCode(), ecorePackage.getEString(), "geoCode", null, 0, 1, Geo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGeo_GeoName(), ecorePackage.getEString(), "geoName", null, 0, 1, Geo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGeo_GeoSecCode(), ecorePackage.getEString(), "geoSecCode", null, 0, 1, Geo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getGeo_GeoTypeId(), this.getGeoType(), null, "geoTypeId", null, 0, 1, Geo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGeo_GeoTypeId().getEKeys().add(this.getGeoType_GeoTypeId());
+		initEReference(getGeo_GeoType(), this.getGeoType(), null, "geoType", null, 0, 1, Geo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getGeo_GeoType().getEKeys().add(this.getGeoType_GeoTypeId());
 		initEReference(getGeo_MainGeoAssocs(), this.getGeoAssoc(), null, "mainGeoAssocs", null, 0, -1, Geo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getGeo_TaxAuthTaxAuthorities(), theTaxPackage.getTaxAuthority(), null, "taxAuthTaxAuthorities", null, 0, -1, Geo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGeo_WellKnownText(), ecorePackage.getEString(), "wellKnownText", null, 0, 1, Geo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(geoAssocEClass, GeoAssoc.class, "GeoAssoc", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getGeoAssoc_GeoId(), this.getGeo(), null, "geoId", null, 1, 1, GeoAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGeoAssoc_GeoId().getEKeys().add(this.getGeo_GeoId());
+		initEReference(getGeoAssoc_Geo(), this.getGeo(), null, "geo", null, 1, 1, GeoAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getGeoAssoc_Geo().getEKeys().add(this.getGeo_GeoId());
 		initEReference(getGeoAssoc_GeoIdTo(), this.getGeo(), null, "geoIdTo", null, 1, 1, GeoAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getGeoAssoc_GeoIdTo().getEKeys().add(this.getGeo_GeoId());
-		initEReference(getGeoAssoc_GeoAssocTypeId(), this.getGeoAssocType(), null, "geoAssocTypeId", null, 0, 1, GeoAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGeoAssoc_GeoAssocTypeId().getEKeys().add(this.getGeoAssocType_GeoAssocTypeId());
+		initEReference(getGeoAssoc_GeoAssocType(), this.getGeoAssocType(), null, "geoAssocType", null, 0, 1, GeoAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getGeoAssoc_GeoAssocType().getEKeys().add(this.getGeoAssocType_GeoAssocTypeId());
 
 		initEClass(geoAssocTypeEClass, GeoAssocType.class, "GeoAssocType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getGeoAssocType_GeoAssocTypeId(), ecorePackage.getEString(), "geoAssocTypeId", null, 1, 1, GeoAssocType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1430,14 +1430,14 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 
 		initEClass(geoPointEClass, GeoPoint.class, "GeoPoint", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getGeoPoint_GeoPointId(), ecorePackage.getEString(), "geoPointId", null, 1, 1, GeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getGeoPoint_DataSourceId(), theDatasourcePackage.getDataSource(), null, "dataSourceId", null, 0, 1, GeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGeoPoint_DataSourceId().getEKeys().add(theDatasourcePackage.getDataSource_DataSourceId());
+		initEReference(getGeoPoint_DataSource(), theDatasourcePackage.getDataSource(), null, "dataSource", null, 0, 1, GeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getGeoPoint_DataSource().getEKeys().add(theDatasourcePackage.getDataSource_DataSourceId());
 		initEAttribute(getGeoPoint_Description(), ecorePackage.getEString(), "description", null, 0, 1, GeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGeoPoint_Elevation(), ecorePackage.getEBigDecimal(), "elevation", null, 0, 1, GeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getGeoPoint_ElevationUomId(), theUomPackage.getUom(), null, "elevationUomId", null, 0, 1, GeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGeoPoint_ElevationUomId().getEKeys().add(theUomPackage.getUom_UomId());
-		initEReference(getGeoPoint_GeoPointTypeEnumId(), theEnumPackage.getEnumeration(), null, "geoPointTypeEnumId", null, 0, 1, GeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGeoPoint_GeoPointTypeEnumId().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
+		initEReference(getGeoPoint_ElevationUom(), theUomPackage.getUom(), null, "elevationUom", null, 0, 1, GeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getGeoPoint_ElevationUom().getEKeys().add(theUomPackage.getUom_UomId());
+		initEReference(getGeoPoint_GeoPointTypeEnum(), theEnumPackage.getEnumeration(), null, "geoPointTypeEnum", null, 0, 1, GeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getGeoPoint_GeoPointTypeEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getGeoPoint_Information(), ecorePackage.getEString(), "information", null, 0, 1, GeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGeoPoint_Latitude(), ecorePackage.getEString(), "latitude", null, 1, 1, GeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGeoPoint_Longitude(), ecorePackage.getEString(), "longitude", null, 1, 1, GeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1446,8 +1446,8 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 		initEAttribute(getGeoType_GeoTypeId(), ecorePackage.getEString(), "geoTypeId", null, 1, 1, GeoType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGeoType_Description(), ecorePackage.getEString(), "description", null, 0, 1, GeoType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGeoType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 0, 1, GeoType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getGeoType_ParentTypeId(), this.getGeoType(), null, "parentTypeId", null, 0, 1, GeoType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGeoType_ParentTypeId().getEKeys().add(this.getGeoType_GeoTypeId());
+		initEReference(getGeoType_ParentType(), this.getGeoType(), null, "parentType", null, 0, 1, GeoType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getGeoType_ParentType().getEKeys().add(this.getGeoType_GeoTypeId());
 
 		// Create annotations
 		// mimo-ent-frame
@@ -1629,7 +1629,7 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
 		addAnnotation
-		  (getGeoAssoc_GeoId(),
+		  (getGeoAssoc_Geo(),
 		   source,
 		   new String[] {
 			   "key", "true",
@@ -1643,7 +1643,7 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 			   "help", "The enclosing geo"
 		   });
 		addAnnotation
-		  (getGeoPoint_ElevationUomId(),
+		  (getGeoPoint_ElevationUom(),
 		   source,
 		   new String[] {
 			   "help", "UOM for elevation (feet, meters, etc.)"

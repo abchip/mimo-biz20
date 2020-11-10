@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContactMechImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContactMechImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContactMechImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContactMechImpl#getFacilityId <em>Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContactMechImpl#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContactMechImpl#getFacility <em>Facility</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContactMechImpl#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContactMechImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContactMechImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContactMechImpl#getExtension <em>Extension</em>}</li>
@@ -156,6 +156,46 @@ public class FacilityContactMechImpl extends EntityIdentifiableImpl implements F
 	 * @generated
 	 */
 	@Override
+	public Facility getFacility() {
+		return (Facility)eGet(FacilityPackage.Literals.FACILITY_CONTACT_MECH__FACILITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacility(Facility newFacility) {
+		eSet(FacilityPackage.Literals.FACILITY_CONTACT_MECH__FACILITY, newFacility);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(FacilityPackage.Literals.FACILITY_CONTACT_MECH__CONTACT_MECH, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(FacilityPackage.Literals.FACILITY_CONTACT_MECH__CONTACT_MECH, newContactMech);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getComments() {
 		return (String)eGet(FacilityPackage.Literals.FACILITY_CONTACT_MECH__COMMENTS, true);
 	}
@@ -168,26 +208,6 @@ public class FacilityContactMechImpl extends EntityIdentifiableImpl implements F
 	@Override
 	public void setComments(String newComments) {
 		eSet(FacilityPackage.Literals.FACILITY_CONTACT_MECH__COMMENTS, newComments);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(FacilityPackage.Literals.FACILITY_CONTACT_MECH__CONTACT_MECH_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(FacilityPackage.Literals.FACILITY_CONTACT_MECH__CONTACT_MECH_ID, newContactMechId);
 	}
 
 	/**
@@ -286,26 +306,6 @@ public class FacilityContactMechImpl extends EntityIdentifiableImpl implements F
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(FacilityPackage.Literals.FACILITY_CONTACT_MECH__FACILITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(FacilityPackage.Literals.FACILITY_CONTACT_MECH__FACILITY_ID, newFacilityId);
 	}
 
 } //FacilityContactMechImpl

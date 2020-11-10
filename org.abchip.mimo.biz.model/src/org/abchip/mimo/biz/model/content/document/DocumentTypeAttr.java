@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.document.DocumentTypeAttr#getDocumentTypeId <em>Document Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.document.DocumentTypeAttr#getDocumentType <em>Document Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.DocumentTypeAttr#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.DocumentTypeAttr#getDescription <em>Description</em>}</li>
  * </ul>
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface DocumentTypeAttr extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Document Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Document Type</em>' reference.
+	 * @see #setDocumentType(DocumentType)
+	 * @see org.abchip.mimo.biz.model.content.document.DocumentPackage#getDocumentTypeAttr_DocumentType()
+	 * @model keys="documentTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	DocumentType getDocumentType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.document.DocumentTypeAttr#getDocumentType <em>Document Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Document Type</em>' reference.
+	 * @see #getDocumentType()
+	 * @generated
+	 */
+	void setDocumentType(DocumentType value);
+
 	/**
 	 * Returns the value of the '<em><b>Attr Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,32 +105,5 @@ public interface DocumentTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setDescription(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Document Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Document Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Document Type Id</em>' reference.
-	 * @see #setDocumentTypeId(DocumentType)
-	 * @see org.abchip.mimo.biz.model.content.document.DocumentPackage#getDocumentTypeAttr_DocumentTypeId()
-	 * @model keys="documentTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	DocumentType getDocumentTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.document.DocumentTypeAttr#getDocumentTypeId <em>Document Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Document Type Id</em>' reference.
-	 * @see #getDocumentTypeId()
-	 * @generated
-	 */
-	void setDocumentTypeId(DocumentType value);
 
 } // DocumentTypeAttr

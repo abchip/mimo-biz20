@@ -30,10 +30,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemStatusImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemStatusImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemStatusImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemStatusImpl#getInventoryItemId <em>Inventory Item Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemStatusImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemStatusImpl#getInventoryItem <em>Inventory Item</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemStatusImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemStatusImpl#getStatusDatetime <em>Status Datetime</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemStatusImpl#getChangeByUserLoginId <em>Change By User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemStatusImpl#getChangeByUserLogin <em>Change By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemStatusImpl#getOwnerPartyId <em>Owner Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemStatusImpl#getProductId <em>Product Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemStatusImpl#getStatusEndDatetime <em>Status End Datetime</em>}</li>
@@ -158,8 +158,8 @@ public class InventoryItemStatusImpl extends EntityIdentifiableImpl implements I
 	 * @generated
 	 */
 	@Override
-	public UserLogin getChangeByUserLoginId() {
-		return (UserLogin)eGet(InventoryPackage.Literals.INVENTORY_ITEM_STATUS__CHANGE_BY_USER_LOGIN_ID, true);
+	public InventoryItem getInventoryItem() {
+		return (InventoryItem)eGet(InventoryPackage.Literals.INVENTORY_ITEM_STATUS__INVENTORY_ITEM, true);
 	}
 
 	/**
@@ -168,8 +168,28 @@ public class InventoryItemStatusImpl extends EntityIdentifiableImpl implements I
 	 * @generated
 	 */
 	@Override
-	public void setChangeByUserLoginId(UserLogin newChangeByUserLoginId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM_STATUS__CHANGE_BY_USER_LOGIN_ID, newChangeByUserLoginId);
+	public void setInventoryItem(InventoryItem newInventoryItem) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM_STATUS__INVENTORY_ITEM, newInventoryItem);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(InventoryPackage.Literals.INVENTORY_ITEM_STATUS__STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(StatusItem newStatus) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM_STATUS__STATUS, newStatus);
 	}
 
 	/**
@@ -238,6 +258,26 @@ public class InventoryItemStatusImpl extends EntityIdentifiableImpl implements I
 	 * @generated
 	 */
 	@Override
+	public UserLogin getChangeByUserLogin() {
+		return (UserLogin)eGet(InventoryPackage.Literals.INVENTORY_ITEM_STATUS__CHANGE_BY_USER_LOGIN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setChangeByUserLogin(UserLogin newChangeByUserLogin) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM_STATUS__CHANGE_BY_USER_LOGIN, newChangeByUserLogin);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getStatusEndDatetime() {
 		return (Date)eGet(InventoryPackage.Literals.INVENTORY_ITEM_STATUS__STATUS_END_DATETIME, true);
 	}
@@ -288,46 +328,6 @@ public class InventoryItemStatusImpl extends EntityIdentifiableImpl implements I
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(InventoryPackage.Literals.INVENTORY_ITEM_STATUS__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM_STATUS__STATUS_ID, newStatusId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InventoryItem getInventoryItemId() {
-		return (InventoryItem)eGet(InventoryPackage.Literals.INVENTORY_ITEM_STATUS__INVENTORY_ITEM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInventoryItemId(InventoryItem newInventoryItemId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM_STATUS__INVENTORY_ITEM_ID, newInventoryItemId);
 	}
 
 } //InventoryItemStatusImpl

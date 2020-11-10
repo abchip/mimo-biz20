@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.CommunicationEventReturnImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.CommunicationEventReturnImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.CommunicationEventReturnImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.CommunicationEventReturnImpl#getReturnId <em>Return Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.CommunicationEventReturnImpl#getCommunicationEventId <em>Communication Event Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.CommunicationEventReturnImpl#getReturn <em>Return</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.CommunicationEventReturnImpl#getCommunicationEvent <em>Communication Event</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class CommunicationEventReturnImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public CommunicationEvent getCommunicationEventId() {
-		return (CommunicationEvent)eGet(ReturnPackage.Literals.COMMUNICATION_EVENT_RETURN__COMMUNICATION_EVENT_ID, true);
+	public ReturnHeader getReturn() {
+		return (ReturnHeader)eGet(ReturnPackage.Literals.COMMUNICATION_EVENT_RETURN__RETURN, true);
 	}
 
 	/**
@@ -162,8 +162,28 @@ public class CommunicationEventReturnImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void setCommunicationEventId(CommunicationEvent newCommunicationEventId) {
-		eSet(ReturnPackage.Literals.COMMUNICATION_EVENT_RETURN__COMMUNICATION_EVENT_ID, newCommunicationEventId);
+	public void setReturn(ReturnHeader newReturn) {
+		eSet(ReturnPackage.Literals.COMMUNICATION_EVENT_RETURN__RETURN, newReturn);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CommunicationEvent getCommunicationEvent() {
+		return (CommunicationEvent)eGet(ReturnPackage.Literals.COMMUNICATION_EVENT_RETURN__COMMUNICATION_EVENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCommunicationEvent(CommunicationEvent newCommunicationEvent) {
+		eSet(ReturnPackage.Literals.COMMUNICATION_EVENT_RETURN__COMMUNICATION_EVENT, newCommunicationEvent);
 	}
 
 	/**
@@ -202,26 +222,6 @@ public class CommunicationEventReturnImpl extends EntityIdentifiableImpl impleme
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ReturnHeader getReturnId() {
-		return (ReturnHeader)eGet(ReturnPackage.Literals.COMMUNICATION_EVENT_RETURN__RETURN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setReturnId(ReturnHeader newReturnId) {
-		eSet(ReturnPackage.Literals.COMMUNICATION_EVENT_RETURN__RETURN_ID, newReturnId);
 	}
 
 } //CommunicationEventReturnImpl

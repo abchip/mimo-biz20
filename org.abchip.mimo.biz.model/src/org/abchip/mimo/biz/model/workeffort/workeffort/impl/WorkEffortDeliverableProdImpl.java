@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortDeliverableProdImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortDeliverableProdImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortDeliverableProdImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortDeliverableProdImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortDeliverableProdImpl#getDeliverableId <em>Deliverable Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortDeliverableProdImpl#getWorkEffort <em>Work Effort</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortDeliverableProdImpl#getDeliverable <em>Deliverable</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class WorkEffortDeliverableProdImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public Deliverable getDeliverableId() {
-		return (Deliverable)eGet(WorkeffortPackage.Literals.WORK_EFFORT_DELIVERABLE_PROD__DELIVERABLE_ID, true);
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_DELIVERABLE_PROD__WORK_EFFORT, true);
 	}
 
 	/**
@@ -162,8 +162,28 @@ public class WorkEffortDeliverableProdImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setDeliverableId(Deliverable newDeliverableId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_DELIVERABLE_PROD__DELIVERABLE_ID, newDeliverableId);
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_DELIVERABLE_PROD__WORK_EFFORT, newWorkEffort);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Deliverable getDeliverable() {
+		return (Deliverable)eGet(WorkeffortPackage.Literals.WORK_EFFORT_DELIVERABLE_PROD__DELIVERABLE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDeliverable(Deliverable newDeliverable) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_DELIVERABLE_PROD__DELIVERABLE, newDeliverable);
 	}
 
 	/**
@@ -202,26 +222,6 @@ public class WorkEffortDeliverableProdImpl extends EntityIdentifiableImpl implem
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_DELIVERABLE_PROD__WORK_EFFORT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_DELIVERABLE_PROD__WORK_EFFORT_ID, newWorkEffortId);
 	}
 
 } //WorkEffortDeliverableProdImpl

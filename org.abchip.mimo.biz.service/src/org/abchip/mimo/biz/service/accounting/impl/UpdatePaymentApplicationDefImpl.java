@@ -53,7 +53,7 @@ public class UpdatePaymentApplicationDefImpl extends ServiceRequestImpl<UpdatePa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 4;
+	protected static final int ESTATIC_FEATURE_COUNT = 2;
 
 	/**
 	 * <!-- begin-user-doc -->

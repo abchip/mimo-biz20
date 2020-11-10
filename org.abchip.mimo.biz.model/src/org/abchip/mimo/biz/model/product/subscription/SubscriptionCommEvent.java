@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionCommEvent#getCommunicationEventId <em>Communication Event Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionCommEvent#getSubscriptionId <em>Subscription Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionCommEvent#getCommunicationEvent <em>Communication Event</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionCommEvent#getSubscription <em>Subscription</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionCommEvent()
@@ -30,57 +30,49 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface SubscriptionCommEvent extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Communication Event Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Communication Event</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Communication Event Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Communication Event Id</em>' reference.
-	 * @see #setCommunicationEventId(CommunicationEvent)
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionCommEvent_CommunicationEventId()
+	 * @return the value of the '<em>Communication Event</em>' reference.
+	 * @see #setCommunicationEvent(CommunicationEvent)
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionCommEvent_CommunicationEvent()
 	 * @model keys="communicationEventId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	CommunicationEvent getCommunicationEventId();
+	CommunicationEvent getCommunicationEvent();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionCommEvent#getCommunicationEventId <em>Communication Event Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionCommEvent#getCommunicationEvent <em>Communication Event</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Communication Event Id</em>' reference.
-	 * @see #getCommunicationEventId()
+	 * @param value the new value of the '<em>Communication Event</em>' reference.
+	 * @see #getCommunicationEvent()
 	 * @generated
 	 */
-	void setCommunicationEventId(CommunicationEvent value);
+	void setCommunicationEvent(CommunicationEvent value);
 
 	/**
-	 * Returns the value of the '<em><b>Subscription Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Subscription</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Subscription Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Subscription Id</em>' reference.
-	 * @see #setSubscriptionId(Subscription)
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionCommEvent_SubscriptionId()
+	 * @return the value of the '<em>Subscription</em>' reference.
+	 * @see #setSubscription(Subscription)
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionCommEvent_Subscription()
 	 * @model keys="subscriptionId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Subscription getSubscriptionId();
+	Subscription getSubscription();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionCommEvent#getSubscriptionId <em>Subscription Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionCommEvent#getSubscription <em>Subscription</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Subscription Id</em>' reference.
-	 * @see #getSubscriptionId()
+	 * @param value the new value of the '<em>Subscription</em>' reference.
+	 * @see #getSubscription()
 	 * @generated
 	 */
-	void setSubscriptionId(Subscription value);
+	void setSubscription(Subscription value);
 
 } // SubscriptionCommEvent

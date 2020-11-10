@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.TermTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.TermTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.TermTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.TermTypeAttrImpl#getTermTypeId <em>Term Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.TermTypeAttrImpl#getTermType <em>Term Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.TermTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.TermTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -151,6 +151,26 @@ public class TermTypeAttrImpl extends EntityIdentifiableImpl implements TermType
 	 * @generated
 	 */
 	@Override
+	public TermType getTermType() {
+		return (TermType)eGet(AgreementPackage.Literals.TERM_TYPE_ATTR__TERM_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTermType(TermType newTermType) {
+		eSet(AgreementPackage.Literals.TERM_TYPE_ATTR__TERM_TYPE, newTermType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(AgreementPackage.Literals.TERM_TYPE_ATTR__DESCRIPTION, true);
 	}
@@ -221,26 +241,6 @@ public class TermTypeAttrImpl extends EntityIdentifiableImpl implements TermType
 	@Override
 	public void setAttrName(String newAttrName) {
 		eSet(AgreementPackage.Literals.TERM_TYPE_ATTR__ATTR_NAME, newAttrName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public TermType getTermTypeId() {
-		return (TermType)eGet(AgreementPackage.Literals.TERM_TYPE_ATTR__TERM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTermTypeId(TermType newTermTypeId) {
-		eSet(AgreementPackage.Literals.TERM_TYPE_ATTR__TERM_TYPE_ID, newTermTypeId);
 	}
 
 } //TermTypeAttrImpl

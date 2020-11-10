@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentTypeAttr#getContentTypeId <em>Content Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentTypeAttr#getContentType <em>Content Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentTypeAttr#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentTypeAttr#getDescription <em>Description</em>}</li>
  * </ul>
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ContentTypeAttr extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Content Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Content Type</em>' reference.
+	 * @see #setContentType(ContentType)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentTypeAttr_ContentType()
+	 * @model keys="contentTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ContentType getContentType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentTypeAttr#getContentType <em>Content Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Content Type</em>' reference.
+	 * @see #getContentType()
+	 * @generated
+	 */
+	void setContentType(ContentType value);
+
 	/**
 	 * Returns the value of the '<em><b>Attr Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -56,33 +79,6 @@ public interface ContentTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setAttrName(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Content Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Type Id</em>' reference.
-	 * @see #setContentTypeId(ContentType)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentTypeAttr_ContentTypeId()
-	 * @model keys="contentTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ContentType getContentTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentTypeAttr#getContentTypeId <em>Content Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Type Id</em>' reference.
-	 * @see #getContentTypeId()
-	 * @generated
-	 */
-	void setContentTypeId(ContentType value);
 
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.

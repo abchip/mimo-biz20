@@ -22,11 +22,11 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse#getPromoSequenceId <em>Promo Sequence Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse#getProductPromoCodeId <em>Product Promo Code Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse#getProductPromoId <em>Product Promo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse#getProductPromo <em>Product Promo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse#getProductPromoCode <em>Product Promo Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse#getQuantityLeftInActions <em>Quantity Left In Actions</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse#getTotalDiscountAmount <em>Total Discount Amount</em>}</li>
  * </ul>
@@ -37,57 +37,27 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface ProductPromoUse extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoUse_OrderId()
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoUse_Order()
 	 * @model keys="orderId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	OrderHeader getOrderId();
+	OrderHeader getOrder();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse#getOrderId <em>Order Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse#getOrder <em>Order</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
 	 * @generated
 	 */
-	void setOrderId(OrderHeader value);
-
-	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoUse_PartyId()
-	 * @model keys="partyId"
-	 * @generated
-	 */
-	Party getPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse#getPartyId <em>Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
-	 * @generated
-	 */
-	void setPartyId(Party value);
+	void setOrder(OrderHeader value);
 
 	/**
 	 * Returns the value of the '<em><b>Promo Sequence Id</b></em>' attribute.
@@ -116,6 +86,72 @@ public interface ProductPromoUse extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setPromoSequenceId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoUse_Party()
+	 * @model keys="partyId"
+	 * @generated
+	 */
+	Party getParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse#getParty <em>Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
+	 * @generated
+	 */
+	void setParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Promo</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Promo</em>' reference.
+	 * @see #setProductPromo(ProductPromo)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoUse_ProductPromo()
+	 * @model keys="productPromoId"
+	 * @generated
+	 */
+	ProductPromo getProductPromo();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse#getProductPromo <em>Product Promo</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Promo</em>' reference.
+	 * @see #getProductPromo()
+	 * @generated
+	 */
+	void setProductPromo(ProductPromo value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Promo Code</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Promo Code</em>' reference.
+	 * @see #setProductPromoCode(ProductPromoCode)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoUse_ProductPromoCode()
+	 * @model keys="productPromoCodeId"
+	 * @generated
+	 */
+	ProductPromoCode getProductPromoCode();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse#getProductPromoCode <em>Product Promo Code</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Promo Code</em>' reference.
+	 * @see #getProductPromoCode()
+	 * @generated
+	 */
+	void setProductPromoCode(ProductPromoCode value);
 
 	/**
 	 * Returns the value of the '<em><b>Quantity Left In Actions</b></em>' attribute.
@@ -168,57 +204,5 @@ public interface ProductPromoUse extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setTotalDiscountAmount(BigDecimal value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Promo Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Promo Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Promo Id</em>' reference.
-	 * @see #setProductPromoId(ProductPromo)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoUse_ProductPromoId()
-	 * @model keys="productPromoId"
-	 * @generated
-	 */
-	ProductPromo getProductPromoId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse#getProductPromoId <em>Product Promo Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Promo Id</em>' reference.
-	 * @see #getProductPromoId()
-	 * @generated
-	 */
-	void setProductPromoId(ProductPromo value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Promo Code Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Promo Code Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Promo Code Id</em>' reference.
-	 * @see #setProductPromoCodeId(ProductPromoCode)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoUse_ProductPromoCodeId()
-	 * @model keys="productPromoCodeId"
-	 * @generated
-	 */
-	ProductPromoCode getProductPromoCodeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse#getProductPromoCodeId <em>Product Promo Code Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Promo Code Id</em>' reference.
-	 * @see #getProductPromoCodeId()
-	 * @generated
-	 */
-	void setProductPromoCodeId(ProductPromoCode value);
 
 } // ProductPromoUse

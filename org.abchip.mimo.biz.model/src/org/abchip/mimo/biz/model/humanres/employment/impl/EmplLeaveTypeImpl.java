@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveTypeImpl#getLeaveTypeId <em>Leave Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,6 +200,26 @@ public class EmplLeaveTypeImpl extends EntityTypeImpl<EmplLeave> implements Empl
 	 * @generated
 	 */
 	@Override
+	public EmplLeaveType getParentType() {
+		return (EmplLeaveType)eGet(EmploymentPackage.Literals.EMPL_LEAVE_TYPE__PARENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParentType(EmplLeaveType newParentType) {
+		eSet(EmploymentPackage.Literals.EMPL_LEAVE_TYPE__PARENT_TYPE, newParentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getLeaveTypeId() {
 		return (String)eGet(EmploymentPackage.Literals.EMPL_LEAVE_TYPE__LEAVE_TYPE_ID, true);
 	}
@@ -212,26 +232,6 @@ public class EmplLeaveTypeImpl extends EntityTypeImpl<EmplLeave> implements Empl
 	@Override
 	public void setLeaveTypeId(String newLeaveTypeId) {
 		eSet(EmploymentPackage.Literals.EMPL_LEAVE_TYPE__LEAVE_TYPE_ID, newLeaveTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EmplLeaveType getParentTypeId() {
-		return (EmplLeaveType)eGet(EmploymentPackage.Literals.EMPL_LEAVE_TYPE__PARENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentTypeId(EmplLeaveType newParentTypeId) {
-		eSet(EmploymentPackage.Literals.EMPL_LEAVE_TYPE__PARENT_TYPE_ID, newParentTypeId);
 	}
 
 	/**

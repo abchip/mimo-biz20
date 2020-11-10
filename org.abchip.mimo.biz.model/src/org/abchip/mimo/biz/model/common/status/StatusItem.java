@@ -27,7 +27,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.common.status.StatusItem#getSequenceId <em>Sequence Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.status.StatusItem#getShipmentStatuss <em>Shipment Statuss</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.status.StatusItem#getStatusCode <em>Status Code</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.status.StatusItem#getStatusTypeId <em>Status Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.status.StatusItem#getStatusType <em>Status Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.common.status.StatusPackage#getStatusItem()
@@ -146,30 +146,26 @@ public interface StatusItem extends EntityTyped<StatusType>, EntityInfo {
 	void setStatusCode(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Type Id</em>' reference.
-	 * @see #setStatusTypeId(StatusType)
-	 * @see org.abchip.mimo.biz.model.common.status.StatusPackage#getStatusItem_StatusTypeId()
+	 * @return the value of the '<em>Status Type</em>' reference.
+	 * @see #setStatusType(StatusType)
+	 * @see org.abchip.mimo.biz.model.common.status.StatusPackage#getStatusItem_StatusType()
 	 * @model keys="statusTypeId"
 	 * @generated
 	 */
-	StatusType getStatusTypeId();
+	StatusType getStatusType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.status.StatusItem#getStatusTypeId <em>Status Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.status.StatusItem#getStatusType <em>Status Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Type Id</em>' reference.
-	 * @see #getStatusTypeId()
+	 * @param value the new value of the '<em>Status Type</em>' reference.
+	 * @see #getStatusType()
 	 * @generated
 	 */
-	void setStatusTypeId(StatusType value);
+	void setStatusType(StatusType value);
 
 	/**
 	 * Returns the value of the '<em><b>Status Id</b></em>' attribute.

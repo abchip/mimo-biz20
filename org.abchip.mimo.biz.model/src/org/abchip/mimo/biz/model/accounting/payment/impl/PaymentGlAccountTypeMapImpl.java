@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGlAccountTypeMapImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGlAccountTypeMapImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGlAccountTypeMapImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGlAccountTypeMapImpl#getPaymentTypeId <em>Payment Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGlAccountTypeMapImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGlAccountTypeMapImpl#getGlAccountTypeId <em>Gl Account Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGlAccountTypeMapImpl#getPaymentType <em>Payment Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGlAccountTypeMapImpl#getOrganizationParty <em>Organization Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGlAccountTypeMapImpl#getGlAccountType <em>Gl Account Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -153,8 +153,8 @@ public class PaymentGlAccountTypeMapImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public Party getOrganizationPartyId() {
-		return (Party)eGet(PaymentPackage.Literals.PAYMENT_GL_ACCOUNT_TYPE_MAP__ORGANIZATION_PARTY_ID, true);
+	public PaymentType getPaymentType() {
+		return (PaymentType)eGet(PaymentPackage.Literals.PAYMENT_GL_ACCOUNT_TYPE_MAP__PAYMENT_TYPE, true);
 	}
 
 	/**
@@ -163,8 +163,8 @@ public class PaymentGlAccountTypeMapImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setOrganizationPartyId(Party newOrganizationPartyId) {
-		eSet(PaymentPackage.Literals.PAYMENT_GL_ACCOUNT_TYPE_MAP__ORGANIZATION_PARTY_ID, newOrganizationPartyId);
+	public void setPaymentType(PaymentType newPaymentType) {
+		eSet(PaymentPackage.Literals.PAYMENT_GL_ACCOUNT_TYPE_MAP__PAYMENT_TYPE, newPaymentType);
 	}
 
 	/**
@@ -173,8 +173,8 @@ public class PaymentGlAccountTypeMapImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public PaymentType getPaymentTypeId() {
-		return (PaymentType)eGet(PaymentPackage.Literals.PAYMENT_GL_ACCOUNT_TYPE_MAP__PAYMENT_TYPE_ID, true);
+	public Party getOrganizationParty() {
+		return (Party)eGet(PaymentPackage.Literals.PAYMENT_GL_ACCOUNT_TYPE_MAP__ORGANIZATION_PARTY, true);
 	}
 
 	/**
@@ -183,8 +183,8 @@ public class PaymentGlAccountTypeMapImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setPaymentTypeId(PaymentType newPaymentTypeId) {
-		eSet(PaymentPackage.Literals.PAYMENT_GL_ACCOUNT_TYPE_MAP__PAYMENT_TYPE_ID, newPaymentTypeId);
+	public void setOrganizationParty(Party newOrganizationParty) {
+		eSet(PaymentPackage.Literals.PAYMENT_GL_ACCOUNT_TYPE_MAP__ORGANIZATION_PARTY, newOrganizationParty);
 	}
 
 	/**
@@ -193,8 +193,8 @@ public class PaymentGlAccountTypeMapImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public GlAccountType getGlAccountTypeId() {
-		return (GlAccountType)eGet(PaymentPackage.Literals.PAYMENT_GL_ACCOUNT_TYPE_MAP__GL_ACCOUNT_TYPE_ID, true);
+	public GlAccountType getGlAccountType() {
+		return (GlAccountType)eGet(PaymentPackage.Literals.PAYMENT_GL_ACCOUNT_TYPE_MAP__GL_ACCOUNT_TYPE, true);
 	}
 
 	/**
@@ -203,8 +203,8 @@ public class PaymentGlAccountTypeMapImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setGlAccountTypeId(GlAccountType newGlAccountTypeId) {
-		eSet(PaymentPackage.Literals.PAYMENT_GL_ACCOUNT_TYPE_MAP__GL_ACCOUNT_TYPE_ID, newGlAccountTypeId);
+	public void setGlAccountType(GlAccountType newGlAccountType) {
+		eSet(PaymentPackage.Literals.PAYMENT_GL_ACCOUNT_TYPE_MAP__GL_ACCOUNT_TYPE, newGlAccountType);
 	}
 
 	/**

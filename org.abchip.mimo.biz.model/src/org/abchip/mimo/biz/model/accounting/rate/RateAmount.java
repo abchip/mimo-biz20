@@ -27,12 +27,12 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getRateTypeId <em>Rate Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getRateCurrencyUomId <em>Rate Currency Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getWorkEffortId <em>Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getEmplPositionTypeId <em>Empl Position Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getPeriodTypeId <em>Period Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getRateType <em>Rate Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getRateCurrencyUom <em>Rate Currency Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getWorkEffort <em>Work Effort</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getEmplPositionType <em>Empl Position Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getPeriodType <em>Period Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getRateAmount <em>Rate Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getThruDate <em>Thru Date</em>}</li>
@@ -44,31 +44,142 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface RateAmount extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Empl Position Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Rate Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Empl Position Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Empl Position Type Id</em>' reference.
-	 * @see #setEmplPositionTypeId(EmplPositionType)
-	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getRateAmount_EmplPositionTypeId()
+	 * @return the value of the '<em>Rate Type</em>' reference.
+	 * @see #setRateType(RateType)
+	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getRateAmount_RateType()
+	 * @model keys="rateTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	RateType getRateType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getRateType <em>Rate Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Rate Type</em>' reference.
+	 * @see #getRateType()
+	 * @generated
+	 */
+	void setRateType(RateType value);
+
+	/**
+	 * Returns the value of the '<em><b>Rate Currency Uom</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Rate Currency Uom</em>' reference.
+	 * @see #setRateCurrencyUom(Uom)
+	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getRateAmount_RateCurrencyUom()
+	 * @model keys="uomId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Uom getRateCurrencyUom();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getRateCurrencyUom <em>Rate Currency Uom</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Rate Currency Uom</em>' reference.
+	 * @see #getRateCurrencyUom()
+	 * @generated
+	 */
+	void setRateCurrencyUom(Uom value);
+
+	/**
+	 * Returns the value of the '<em><b>Work Effort</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Work Effort</em>' reference.
+	 * @see #setWorkEffort(WorkEffort)
+	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getRateAmount_WorkEffort()
+	 * @model keys="workEffortId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	WorkEffort getWorkEffort();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getWorkEffort <em>Work Effort</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Work Effort</em>' reference.
+	 * @see #getWorkEffort()
+	 * @generated
+	 */
+	void setWorkEffort(WorkEffort value);
+
+	/**
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getRateAmount_Party()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getParty <em>Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
+	 * @generated
+	 */
+	void setParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Empl Position Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Empl Position Type</em>' reference.
+	 * @see #setEmplPositionType(EmplPositionType)
+	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getRateAmount_EmplPositionType()
 	 * @model keys="emplPositionTypeId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	EmplPositionType getEmplPositionTypeId();
+	EmplPositionType getEmplPositionType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getEmplPositionTypeId <em>Empl Position Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getEmplPositionType <em>Empl Position Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Empl Position Type Id</em>' reference.
-	 * @see #getEmplPositionTypeId()
+	 * @param value the new value of the '<em>Empl Position Type</em>' reference.
+	 * @see #getEmplPositionType()
 	 * @generated
 	 */
-	void setEmplPositionTypeId(EmplPositionType value);
+	void setEmplPositionType(EmplPositionType value);
+
+	/**
+	 * Returns the value of the '<em><b>Period Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Period Type</em>' reference.
+	 * @see #setPeriodType(PeriodType)
+	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getRateAmount_PeriodType()
+	 * @model keys="periodTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	PeriodType getPeriodType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getPeriodType <em>Period Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Period Type</em>' reference.
+	 * @see #getPeriodType()
+	 * @generated
+	 */
+	void setPeriodType(PeriodType value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -98,60 +209,6 @@ public interface RateAmount extends EntityIdentifiable, EntityInfo {
 	void setFromDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getRateAmount_PartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getPartyId <em>Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
-	 * @generated
-	 */
-	void setPartyId(Party value);
-
-	/**
-	 * Returns the value of the '<em><b>Period Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Period Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Period Type Id</em>' reference.
-	 * @see #setPeriodTypeId(PeriodType)
-	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getRateAmount_PeriodTypeId()
-	 * @model keys="periodTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	PeriodType getPeriodTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getPeriodTypeId <em>Period Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Period Type Id</em>' reference.
-	 * @see #getPeriodTypeId()
-	 * @generated
-	 */
-	void setPeriodTypeId(PeriodType value);
-
-	/**
 	 * Returns the value of the '<em><b>Rate Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -178,33 +235,6 @@ public interface RateAmount extends EntityIdentifiable, EntityInfo {
 	void setRateAmount(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Rate Currency Uom Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Rate Currency Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Rate Currency Uom Id</em>' reference.
-	 * @see #setRateCurrencyUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getRateAmount_RateCurrencyUomId()
-	 * @model keys="uomId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Uom getRateCurrencyUomId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getRateCurrencyUomId <em>Rate Currency Uom Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Rate Currency Uom Id</em>' reference.
-	 * @see #getRateCurrencyUomId()
-	 * @generated
-	 */
-	void setRateCurrencyUomId(Uom value);
-
-	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -229,59 +259,5 @@ public interface RateAmount extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Work Effort Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Work Effort Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Work Effort Id</em>' reference.
-	 * @see #setWorkEffortId(WorkEffort)
-	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getRateAmount_WorkEffortId()
-	 * @model keys="workEffortId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	WorkEffort getWorkEffortId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getWorkEffortId <em>Work Effort Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Work Effort Id</em>' reference.
-	 * @see #getWorkEffortId()
-	 * @generated
-	 */
-	void setWorkEffortId(WorkEffort value);
-
-	/**
-	 * Returns the value of the '<em><b>Rate Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Rate Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Rate Type Id</em>' reference.
-	 * @see #setRateTypeId(RateType)
-	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getRateAmount_RateTypeId()
-	 * @model keys="rateTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	RateType getRateTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.rate.RateAmount#getRateTypeId <em>Rate Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Rate Type Id</em>' reference.
-	 * @see #getRateTypeId()
-	 * @generated
-	 */
-	void setRateTypeId(RateType value);
 
 } // RateAmount

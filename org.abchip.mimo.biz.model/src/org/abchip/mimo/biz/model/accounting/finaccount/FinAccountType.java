@@ -27,8 +27,8 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getFinAccountTypeGlAccounts <em>Fin Account Type Gl Accounts</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#isHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getIsRefundable <em>Is Refundable</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getParentTypeId <em>Parent Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getReplenishEnumId <em>Replenish Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getParentType <em>Parent Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getReplenishEnum <em>Replenish Enum</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountType()
@@ -143,56 +143,48 @@ public interface FinAccountType extends EntityType<FinAccount>, EntityInfo {
 	void setIsRefundable(Boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Replenish Enum Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Replenish Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Replenish Enum Id</em>' reference.
-	 * @see #setReplenishEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountType_ReplenishEnumId()
-	 * @model keys="enumId"
-	 * @generated
-	 */
-	Enumeration getReplenishEnumId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getReplenishEnumId <em>Replenish Enum Id</em>}' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Replenish Enum Id</em>' reference.
-	 * @see #getReplenishEnumId()
-	 * @generated
-	 */
-	void setReplenishEnumId(Enumeration value);
-
-	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(FinAccountType)
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(FinAccountType)
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountType_ParentType()
 	 * @model keys="finAccountTypeId"
 	 * @generated
 	 */
-	FinAccountType getParentTypeId();
+	FinAccountType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(FinAccountType value);
+	void setParentType(FinAccountType value);
+
+	/**
+	 * Returns the value of the '<em><b>Replenish Enum</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Replenish Enum</em>' reference.
+	 * @see #setReplenishEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountType_ReplenishEnum()
+	 * @model keys="enumId"
+	 * @generated
+	 */
+	Enumeration getReplenishEnum();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getReplenishEnum <em>Replenish Enum</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Replenish Enum</em>' reference.
+	 * @see #getReplenishEnum()
+	 * @generated
+	 */
+	void setReplenishEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Fin Account Type Id</b></em>' attribute.

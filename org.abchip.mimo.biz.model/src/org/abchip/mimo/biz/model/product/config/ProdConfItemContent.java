@@ -21,9 +21,9 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContent#getConfigItemId <em>Config Item Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContent#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContent#getConfItemContentTypeId <em>Conf Item Content Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContent#getConfigItem <em>Config Item</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContent#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContent#getConfItemContentType <em>Conf Item Content Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContent#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContent#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -34,31 +34,73 @@ import org.abchip.mimo.entity.EntityTyped;
  */
 public interface ProdConfItemContent extends EntityTyped<ProdConfItemContentType>, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Config Item</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Id</em>' reference.
-	 * @see #setContentId(Content)
-	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProdConfItemContent_ContentId()
+	 * @return the value of the '<em>Config Item</em>' reference.
+	 * @see #setConfigItem(ProductConfigItem)
+	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProdConfItemContent_ConfigItem()
+	 * @model keys="configItemId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductConfigItem getConfigItem();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContent#getConfigItem <em>Config Item</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Config Item</em>' reference.
+	 * @see #getConfigItem()
+	 * @generated
+	 */
+	void setConfigItem(ProductConfigItem value);
+
+	/**
+	 * Returns the value of the '<em><b>Content</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Content</em>' reference.
+	 * @see #setContent(Content)
+	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProdConfItemContent_Content()
 	 * @model keys="contentId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Content getContentId();
+	Content getContent();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContent#getContentId <em>Content Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContent#getContent <em>Content</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Id</em>' reference.
-	 * @see #getContentId()
+	 * @param value the new value of the '<em>Content</em>' reference.
+	 * @see #getContent()
 	 * @generated
 	 */
-	void setContentId(Content value);
+	void setContent(Content value);
+
+	/**
+	 * Returns the value of the '<em><b>Conf Item Content Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Conf Item Content Type</em>' reference.
+	 * @see #setConfItemContentType(ProdConfItemContentType)
+	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProdConfItemContent_ConfItemContentType()
+	 * @model keys="confItemContentTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProdConfItemContentType getConfItemContentType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContent#getConfItemContentType <em>Conf Item Content Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Conf Item Content Type</em>' reference.
+	 * @see #getConfItemContentType()
+	 * @generated
+	 */
+	void setConfItemContentType(ProdConfItemContentType value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -112,59 +154,5 @@ public interface ProdConfItemContent extends EntityTyped<ProdConfItemContentType
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Config Item Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Config Item Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Config Item Id</em>' reference.
-	 * @see #setConfigItemId(ProductConfigItem)
-	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProdConfItemContent_ConfigItemId()
-	 * @model keys="configItemId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductConfigItem getConfigItemId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContent#getConfigItemId <em>Config Item Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Config Item Id</em>' reference.
-	 * @see #getConfigItemId()
-	 * @generated
-	 */
-	void setConfigItemId(ProductConfigItem value);
-
-	/**
-	 * Returns the value of the '<em><b>Conf Item Content Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Conf Item Content Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Conf Item Content Type Id</em>' reference.
-	 * @see #setConfItemContentTypeId(ProdConfItemContentType)
-	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProdConfItemContent_ConfItemContentTypeId()
-	 * @model keys="confItemContentTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProdConfItemContentType getConfItemContentTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContent#getConfItemContentTypeId <em>Conf Item Content Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Conf Item Content Type Id</em>' reference.
-	 * @see #getConfItemContentTypeId()
-	 * @generated
-	 */
-	void setConfItemContentTypeId(ProdConfItemContentType value);
 
 } // ProdConfItemContent

@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.GoodIdentificationTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.GoodIdentificationTypeImpl#getGoodIdentifications <em>Good Identifications</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.GoodIdentificationTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.GoodIdentificationTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.GoodIdentificationTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -213,8 +213,8 @@ public class GoodIdentificationTypeImpl extends EntityTypeImpl<GoodIdentificatio
 	 * @generated
 	 */
 	@Override
-	public GoodIdentificationType getParentTypeId() {
-		return (GoodIdentificationType)eGet(ProductPackage.Literals.GOOD_IDENTIFICATION_TYPE__PARENT_TYPE_ID, true);
+	public GoodIdentificationType getParentType() {
+		return (GoodIdentificationType)eGet(ProductPackage.Literals.GOOD_IDENTIFICATION_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -223,8 +223,8 @@ public class GoodIdentificationTypeImpl extends EntityTypeImpl<GoodIdentificatio
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(GoodIdentificationType newParentTypeId) {
-		eSet(ProductPackage.Literals.GOOD_IDENTIFICATION_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(GoodIdentificationType newParentType) {
+		eSet(ProductPackage.Literals.GOOD_IDENTIFICATION_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

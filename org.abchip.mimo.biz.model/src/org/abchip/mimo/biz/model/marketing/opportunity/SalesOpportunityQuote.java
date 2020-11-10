@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityQuote#getSalesOpportunityId <em>Sales Opportunity Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityQuote#getQuoteId <em>Quote Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityQuote#getSalesOpportunity <em>Sales Opportunity</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityQuote#getQuote <em>Quote</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityQuote()
@@ -30,57 +30,49 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface SalesOpportunityQuote extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Quote Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Quote Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Quote Id</em>' reference.
-	 * @see #setQuoteId(Quote)
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityQuote_QuoteId()
-	 * @model keys="quoteId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Quote getQuoteId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityQuote#getQuoteId <em>Quote Id</em>}' reference.
+	 * Returns the value of the '<em><b>Sales Opportunity</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Quote Id</em>' reference.
-	 * @see #getQuoteId()
-	 * @generated
-	 */
-	void setQuoteId(Quote value);
-
-	/**
-	 * Returns the value of the '<em><b>Sales Opportunity Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sales Opportunity Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Sales Opportunity Id</em>' reference.
-	 * @see #setSalesOpportunityId(SalesOpportunity)
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityQuote_SalesOpportunityId()
+	 * @return the value of the '<em>Sales Opportunity</em>' reference.
+	 * @see #setSalesOpportunity(SalesOpportunity)
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityQuote_SalesOpportunity()
 	 * @model keys="salesOpportunityId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	SalesOpportunity getSalesOpportunityId();
+	SalesOpportunity getSalesOpportunity();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityQuote#getSalesOpportunityId <em>Sales Opportunity Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityQuote#getSalesOpportunity <em>Sales Opportunity</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Sales Opportunity Id</em>' reference.
-	 * @see #getSalesOpportunityId()
+	 * @param value the new value of the '<em>Sales Opportunity</em>' reference.
+	 * @see #getSalesOpportunity()
 	 * @generated
 	 */
-	void setSalesOpportunityId(SalesOpportunity value);
+	void setSalesOpportunity(SalesOpportunity value);
+
+	/**
+	 * Returns the value of the '<em><b>Quote</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Quote</em>' reference.
+	 * @see #setQuote(Quote)
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityQuote_Quote()
+	 * @model keys="quoteId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Quote getQuote();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityQuote#getQuote <em>Quote</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Quote</em>' reference.
+	 * @see #getQuote()
+	 * @generated
+	 */
+	void setQuote(Quote value);
 
 } // SalesOpportunityQuote

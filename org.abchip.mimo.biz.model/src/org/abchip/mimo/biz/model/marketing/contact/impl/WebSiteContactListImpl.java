@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.WebSiteContactListImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.WebSiteContactListImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.WebSiteContactListImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.WebSiteContactListImpl#getWebSiteId <em>Web Site Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.WebSiteContactListImpl#getContactListId <em>Contact List Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.WebSiteContactListImpl#getWebSite <em>Web Site</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.WebSiteContactListImpl#getContactList <em>Contact List</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.WebSiteContactListImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.WebSiteContactListImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -155,8 +155,8 @@ public class WebSiteContactListImpl extends EntityIdentifiableImpl implements We
 	 * @generated
 	 */
 	@Override
-	public ContactList getContactListId() {
-		return (ContactList)eGet(ContactPackage.Literals.WEB_SITE_CONTACT_LIST__CONTACT_LIST_ID, true);
+	public WebSite getWebSite() {
+		return (WebSite)eGet(ContactPackage.Literals.WEB_SITE_CONTACT_LIST__WEB_SITE, true);
 	}
 
 	/**
@@ -165,8 +165,28 @@ public class WebSiteContactListImpl extends EntityIdentifiableImpl implements We
 	 * @generated
 	 */
 	@Override
-	public void setContactListId(ContactList newContactListId) {
-		eSet(ContactPackage.Literals.WEB_SITE_CONTACT_LIST__CONTACT_LIST_ID, newContactListId);
+	public void setWebSite(WebSite newWebSite) {
+		eSet(ContactPackage.Literals.WEB_SITE_CONTACT_LIST__WEB_SITE, newWebSite);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContactList getContactList() {
+		return (ContactList)eGet(ContactPackage.Literals.WEB_SITE_CONTACT_LIST__CONTACT_LIST, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContactList(ContactList newContactList) {
+		eSet(ContactPackage.Literals.WEB_SITE_CONTACT_LIST__CONTACT_LIST, newContactList);
 	}
 
 	/**
@@ -245,26 +265,6 @@ public class WebSiteContactListImpl extends EntityIdentifiableImpl implements We
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WebSite getWebSiteId() {
-		return (WebSite)eGet(ContactPackage.Literals.WEB_SITE_CONTACT_LIST__WEB_SITE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWebSiteId(WebSite newWebSiteId) {
-		eSet(ContactPackage.Literals.WEB_SITE_CONTACT_LIST__WEB_SITE_ID, newWebSiteId);
 	}
 
 } //WebSiteContactListImpl

@@ -159,7 +159,7 @@ public class StressTestCommands extends BaseTestCommands {
 			String invoiceId = nextArgument(interpreter);
 			Invoice invoice = context.get().getResourceManager().getResourceReader(Invoice.class).lookup(invoiceId);
 			interpreter.println("From: " + invoice.getPartyIdFrom().getID());
-			interpreter.println("To: " + invoice.getPartyId().getID());
+			interpreter.println("To: " + invoice.getParty().getID());
 			interpreter.println("Total: " + invoice.getTotal());
 		}
 	}

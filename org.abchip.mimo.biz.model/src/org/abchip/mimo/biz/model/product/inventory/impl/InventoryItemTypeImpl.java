@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTypeImpl#isHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTypeImpl#getInventoryItemTypeAttrs <em>Inventory Item Type Attrs</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -214,8 +214,8 @@ public class InventoryItemTypeImpl extends EntityTypeImpl<InventoryItem> impleme
 	 * @generated
 	 */
 	@Override
-	public InventoryItemType getParentTypeId() {
-		return (InventoryItemType)eGet(InventoryPackage.Literals.INVENTORY_ITEM_TYPE__PARENT_TYPE_ID, true);
+	public InventoryItemType getParentType() {
+		return (InventoryItemType)eGet(InventoryPackage.Literals.INVENTORY_ITEM_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -224,8 +224,8 @@ public class InventoryItemTypeImpl extends EntityTypeImpl<InventoryItem> impleme
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(InventoryItemType newParentTypeId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(InventoryItemType newParentType) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

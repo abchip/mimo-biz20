@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.PeriodTypeImpl#getPeriodTypeId <em>Period Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.PeriodTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.PeriodTypeImpl#getPeriodLength <em>Period Length</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.PeriodTypeImpl#getUomId <em>Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.PeriodTypeImpl#getUom <em>Uom</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,8 +200,8 @@ public class PeriodTypeImpl extends EntityTypeImpl<CustomTimePeriod> implements 
 	 * @generated
 	 */
 	@Override
-	public Uom getUomId() {
-		return (Uom)eGet(PeriodPackage.Literals.PERIOD_TYPE__UOM_ID, true);
+	public Uom getUom() {
+		return (Uom)eGet(PeriodPackage.Literals.PERIOD_TYPE__UOM, true);
 	}
 
 	/**
@@ -210,8 +210,8 @@ public class PeriodTypeImpl extends EntityTypeImpl<CustomTimePeriod> implements 
 	 * @generated
 	 */
 	@Override
-	public void setUomId(Uom newUomId) {
-		eSet(PeriodPackage.Literals.PERIOD_TYPE__UOM_ID, newUomId);
+	public void setUom(Uom newUom) {
+		eSet(PeriodPackage.Literals.PERIOD_TYPE__UOM, newUom);
 	}
 
 	/**

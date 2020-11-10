@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationRoleAssocImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationRoleAssocImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationRoleAssocImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationRoleAssocImpl#getRoleTypeId <em>Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationRoleAssocImpl#getPartyInvitationId <em>Party Invitation Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationRoleAssocImpl#getRoleType <em>Role Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationRoleAssocImpl#getPartyInvitation <em>Party Invitation</em>}</li>
  * </ul>
  *
  * @generated
@@ -151,8 +151,8 @@ public class PartyInvitationRoleAssocImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(PartyPackage.Literals.PARTY_INVITATION_ROLE_ASSOC__ROLE_TYPE_ID, true);
+	public RoleType getRoleType() {
+		return (RoleType)eGet(PartyPackage.Literals.PARTY_INVITATION_ROLE_ASSOC__ROLE_TYPE, true);
 	}
 
 	/**
@@ -161,8 +161,8 @@ public class PartyInvitationRoleAssocImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(PartyPackage.Literals.PARTY_INVITATION_ROLE_ASSOC__ROLE_TYPE_ID, newRoleTypeId);
+	public void setRoleType(RoleType newRoleType) {
+		eSet(PartyPackage.Literals.PARTY_INVITATION_ROLE_ASSOC__ROLE_TYPE, newRoleType);
 	}
 
 	/**
@@ -171,8 +171,8 @@ public class PartyInvitationRoleAssocImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public PartyInvitation getPartyInvitationId() {
-		return (PartyInvitation)eGet(PartyPackage.Literals.PARTY_INVITATION_ROLE_ASSOC__PARTY_INVITATION_ID, true);
+	public PartyInvitation getPartyInvitation() {
+		return (PartyInvitation)eGet(PartyPackage.Literals.PARTY_INVITATION_ROLE_ASSOC__PARTY_INVITATION, true);
 	}
 
 	/**
@@ -181,8 +181,8 @@ public class PartyInvitationRoleAssocImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void setPartyInvitationId(PartyInvitation newPartyInvitationId) {
-		eSet(PartyPackage.Literals.PARTY_INVITATION_ROLE_ASSOC__PARTY_INVITATION_ID, newPartyInvitationId);
+	public void setPartyInvitation(PartyInvitation newPartyInvitation) {
+		eSet(PartyPackage.Literals.PARTY_INVITATION_ROLE_ASSOC__PARTY_INVITATION, newPartyInvitation);
 	}
 
 	/**

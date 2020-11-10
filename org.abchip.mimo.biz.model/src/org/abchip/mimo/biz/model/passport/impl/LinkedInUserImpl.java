@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.LinkedInUserImpl#getLinkedInUserId <em>Linked In User Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.LinkedInUserImpl#getAccessToken <em>Access Token</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.LinkedInUserImpl#getEnvPrefix <em>Env Prefix</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.passport.impl.LinkedInUserImpl#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.passport.impl.LinkedInUserImpl#getProductStore <em>Product Store</em>}</li>
  * </ul>
  *
  * @generated
@@ -213,8 +213,8 @@ public class LinkedInUserImpl extends EntityIdentifiableImpl implements LinkedIn
 	 * @generated
 	 */
 	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(PassportPackage.Literals.LINKED_IN_USER__PRODUCT_STORE_ID, true);
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(PassportPackage.Literals.LINKED_IN_USER__PRODUCT_STORE, true);
 	}
 
 	/**
@@ -223,8 +223,8 @@ public class LinkedInUserImpl extends EntityIdentifiableImpl implements LinkedIn
 	 * @generated
 	 */
 	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(PassportPackage.Literals.LINKED_IN_USER__PRODUCT_STORE_ID, newProductStoreId);
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(PassportPackage.Literals.LINKED_IN_USER__PRODUCT_STORE, newProductStore);
 	}
 
 	/**

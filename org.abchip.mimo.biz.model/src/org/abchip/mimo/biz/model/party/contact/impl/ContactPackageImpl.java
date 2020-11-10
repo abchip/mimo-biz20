@@ -807,7 +807,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getContactMech_ContactMechTypeId() {
+	public EReference getContactMech_ContactMechType() {
 		return (EReference)contactMechEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -847,7 +847,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getContactMechAttribute_ContactMechId() {
+	public EReference getContactMechAttribute_ContactMech() {
 		return (EReference)contactMechAttributeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1007,7 +1007,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getContactMechType_ParentTypeId() {
+	public EReference getContactMechType_ParentType() {
 		return (EReference)contactMechTypeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -1027,7 +1027,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getContactMechTypeAttr_ContactMechTypeId() {
+	public EReference getContactMechTypeAttr_ContactMechType() {
 		return (EReference)contactMechTypeAttrEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1067,7 +1067,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getContactMechTypePurpose_ContactMechTypeId() {
+	public EReference getContactMechTypePurpose_ContactMechType() {
 		return (EReference)contactMechTypePurposeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1077,7 +1077,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getContactMechTypePurpose_ContactMechPurposeTypeId() {
+	public EReference getContactMechTypePurpose_ContactMechPurposeType() {
 		return (EReference)contactMechTypePurposeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1237,7 +1237,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPartyContactMech_PartyId() {
+	public EReference getPartyContactMech_Party() {
 		return (EReference)partyContactMechEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1247,7 +1247,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPartyContactMech_ContactMechId() {
+	public EReference getPartyContactMech_ContactMech() {
 		return (EReference)partyContactMechEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1307,7 +1307,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPartyContactMech_RoleTypeId() {
+	public EReference getPartyContactMech_RoleType() {
 		return (EReference)partyContactMechEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -1357,7 +1357,17 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPartyContactMechPurpose_PartyId() {
+	public EReference getPartyContactMechPurpose_ContactMechPurposeType() {
+		return (EReference)partyContactMechPurposeEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPartyContactMechPurpose_Party() {
 		return (EReference)partyContactMechPurposeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1367,18 +1377,8 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPartyContactMechPurpose_ContactMechId() {
+	public EReference getPartyContactMechPurpose_ContactMech() {
 		return (EReference)partyContactMechPurposeEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getPartyContactMechPurpose_ContactMechPurposeTypeId() {
-		return (EReference)partyContactMechPurposeEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1457,7 +1457,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPostalAddress_CityGeoId() {
+	public EReference getPostalAddress_CityGeo() {
 		return (EReference)postalAddressEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -1467,7 +1467,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPostalAddress_CountryGeoId() {
+	public EReference getPostalAddress_CountryGeo() {
 		return (EReference)postalAddressEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -1477,7 +1477,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPostalAddress_CountyGeoId() {
+	public EReference getPostalAddress_CountyGeo() {
 		return (EReference)postalAddressEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -1497,7 +1497,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPostalAddress_GeoPointId() {
+	public EReference getPostalAddress_GeoPoint() {
 		return (EReference)postalAddressEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -1527,7 +1527,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPostalAddress_MunicipalityGeoId() {
+	public EReference getPostalAddress_MunicipalityGeo() {
 		return (EReference)postalAddressEClass.getEStructuralFeatures().get(11);
 	}
 
@@ -1567,7 +1567,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPostalAddress_PostalCodeGeoId() {
+	public EReference getPostalAddress_PostalCodeGeo() {
 		return (EReference)postalAddressEClass.getEStructuralFeatures().get(15);
 	}
 
@@ -1577,7 +1577,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPostalAddress_StateProvinceGeoId() {
+	public EReference getPostalAddress_StateProvinceGeo() {
 		return (EReference)postalAddressEClass.getEStructuralFeatures().get(16);
 	}
 
@@ -1607,7 +1607,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPostalAddressBoundary_ContactMechId() {
+	public EReference getPostalAddressBoundary_ContactMech() {
 		return (EReference)postalAddressBoundaryEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1617,7 +1617,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPostalAddressBoundary_GeoId() {
+	public EReference getPostalAddressBoundary_Geo() {
 		return (EReference)postalAddressBoundaryEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1687,7 +1687,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getValidContactMechRole_RoleTypeId() {
+	public EReference getValidContactMechRole_RoleType() {
 		return (EReference)validContactMechRoleEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1697,7 +1697,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getValidContactMechRole_ContactMechTypeId() {
+	public EReference getValidContactMechRole_ContactMechType() {
 		return (EReference)validContactMechRoleEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1733,12 +1733,12 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		contactMechEClass = createEClass(CONTACT_MECH);
 		createEAttribute(contactMechEClass, CONTACT_MECH__CONTACT_MECH_ID);
 		createEReference(contactMechEClass, CONTACT_MECH__CONTACT_MECH_ATTRIBUTES);
-		createEReference(contactMechEClass, CONTACT_MECH__CONTACT_MECH_TYPE_ID);
+		createEReference(contactMechEClass, CONTACT_MECH__CONTACT_MECH_TYPE);
 		createEReference(contactMechEClass, CONTACT_MECH__FROM_CONTACT_MECH_LINKS);
 		createEAttribute(contactMechEClass, CONTACT_MECH__INFO_STRING);
 
 		contactMechAttributeEClass = createEClass(CONTACT_MECH_ATTRIBUTE);
-		createEReference(contactMechAttributeEClass, CONTACT_MECH_ATTRIBUTE__CONTACT_MECH_ID);
+		createEReference(contactMechAttributeEClass, CONTACT_MECH_ATTRIBUTE__CONTACT_MECH);
 		createEAttribute(contactMechAttributeEClass, CONTACT_MECH_ATTRIBUTE__ATTR_NAME);
 		createEAttribute(contactMechAttributeEClass, CONTACT_MECH_ATTRIBUTE__ATTR_DESCRIPTION);
 		createEAttribute(contactMechAttributeEClass, CONTACT_MECH_ATTRIBUTE__ATTR_VALUE);
@@ -1757,16 +1757,16 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		createEReference(contactMechTypeEClass, CONTACT_MECH_TYPE__CONTACT_MECH_TYPE_PURPOSES);
 		createEAttribute(contactMechTypeEClass, CONTACT_MECH_TYPE__DESCRIPTION);
 		createEAttribute(contactMechTypeEClass, CONTACT_MECH_TYPE__HAS_TABLE);
-		createEReference(contactMechTypeEClass, CONTACT_MECH_TYPE__PARENT_TYPE_ID);
+		createEReference(contactMechTypeEClass, CONTACT_MECH_TYPE__PARENT_TYPE);
 
 		contactMechTypeAttrEClass = createEClass(CONTACT_MECH_TYPE_ATTR);
-		createEReference(contactMechTypeAttrEClass, CONTACT_MECH_TYPE_ATTR__CONTACT_MECH_TYPE_ID);
+		createEReference(contactMechTypeAttrEClass, CONTACT_MECH_TYPE_ATTR__CONTACT_MECH_TYPE);
 		createEAttribute(contactMechTypeAttrEClass, CONTACT_MECH_TYPE_ATTR__ATTR_NAME);
 		createEAttribute(contactMechTypeAttrEClass, CONTACT_MECH_TYPE_ATTR__DESCRIPTION);
 
 		contactMechTypePurposeEClass = createEClass(CONTACT_MECH_TYPE_PURPOSE);
-		createEReference(contactMechTypePurposeEClass, CONTACT_MECH_TYPE_PURPOSE__CONTACT_MECH_TYPE_ID);
-		createEReference(contactMechTypePurposeEClass, CONTACT_MECH_TYPE_PURPOSE__CONTACT_MECH_PURPOSE_TYPE_ID);
+		createEReference(contactMechTypePurposeEClass, CONTACT_MECH_TYPE_PURPOSE__CONTACT_MECH_TYPE);
+		createEReference(contactMechTypePurposeEClass, CONTACT_MECH_TYPE_PURPOSE__CONTACT_MECH_PURPOSE_TYPE);
 
 		emailAddressVerificationEClass = createEClass(EMAIL_ADDRESS_VERIFICATION);
 		createEAttribute(emailAddressVerificationEClass, EMAIL_ADDRESS_VERIFICATION__EMAIL_ADDRESS);
@@ -1785,22 +1785,22 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		createEAttribute(ftpAddressEClass, FTP_ADDRESS__ZIP_FILE);
 
 		partyContactMechEClass = createEClass(PARTY_CONTACT_MECH);
-		createEReference(partyContactMechEClass, PARTY_CONTACT_MECH__PARTY_ID);
-		createEReference(partyContactMechEClass, PARTY_CONTACT_MECH__CONTACT_MECH_ID);
+		createEReference(partyContactMechEClass, PARTY_CONTACT_MECH__PARTY);
+		createEReference(partyContactMechEClass, PARTY_CONTACT_MECH__CONTACT_MECH);
 		createEAttribute(partyContactMechEClass, PARTY_CONTACT_MECH__FROM_DATE);
 		createEAttribute(partyContactMechEClass, PARTY_CONTACT_MECH__ALLOW_SOLICITATION);
 		createEAttribute(partyContactMechEClass, PARTY_CONTACT_MECH__COMMENTS);
 		createEAttribute(partyContactMechEClass, PARTY_CONTACT_MECH__EXTENSION);
 		createEAttribute(partyContactMechEClass, PARTY_CONTACT_MECH__MONTHS_WITH_CONTACT_MECH);
-		createEReference(partyContactMechEClass, PARTY_CONTACT_MECH__ROLE_TYPE_ID);
+		createEReference(partyContactMechEClass, PARTY_CONTACT_MECH__ROLE_TYPE);
 		createEAttribute(partyContactMechEClass, PARTY_CONTACT_MECH__THRU_DATE);
 		createEAttribute(partyContactMechEClass, PARTY_CONTACT_MECH__VERIFIED);
 		createEAttribute(partyContactMechEClass, PARTY_CONTACT_MECH__YEARS_WITH_CONTACT_MECH);
 
 		partyContactMechPurposeEClass = createEClass(PARTY_CONTACT_MECH_PURPOSE);
-		createEReference(partyContactMechPurposeEClass, PARTY_CONTACT_MECH_PURPOSE__CONTACT_MECH_PURPOSE_TYPE_ID);
-		createEReference(partyContactMechPurposeEClass, PARTY_CONTACT_MECH_PURPOSE__PARTY_ID);
-		createEReference(partyContactMechPurposeEClass, PARTY_CONTACT_MECH_PURPOSE__CONTACT_MECH_ID);
+		createEReference(partyContactMechPurposeEClass, PARTY_CONTACT_MECH_PURPOSE__CONTACT_MECH_PURPOSE_TYPE);
+		createEReference(partyContactMechPurposeEClass, PARTY_CONTACT_MECH_PURPOSE__PARTY);
+		createEReference(partyContactMechPurposeEClass, PARTY_CONTACT_MECH_PURPOSE__CONTACT_MECH);
 		createEAttribute(partyContactMechPurposeEClass, PARTY_CONTACT_MECH_PURPOSE__FROM_DATE);
 		createEAttribute(partyContactMechPurposeEClass, PARTY_CONTACT_MECH_PURPOSE__THRU_DATE);
 
@@ -1809,24 +1809,24 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		createEAttribute(postalAddressEClass, POSTAL_ADDRESS__ADDRESS2);
 		createEAttribute(postalAddressEClass, POSTAL_ADDRESS__ATTN_NAME);
 		createEAttribute(postalAddressEClass, POSTAL_ADDRESS__CITY);
-		createEReference(postalAddressEClass, POSTAL_ADDRESS__CITY_GEO_ID);
-		createEReference(postalAddressEClass, POSTAL_ADDRESS__COUNTRY_GEO_ID);
-		createEReference(postalAddressEClass, POSTAL_ADDRESS__COUNTY_GEO_ID);
+		createEReference(postalAddressEClass, POSTAL_ADDRESS__CITY_GEO);
+		createEReference(postalAddressEClass, POSTAL_ADDRESS__COUNTRY_GEO);
+		createEReference(postalAddressEClass, POSTAL_ADDRESS__COUNTY_GEO);
 		createEAttribute(postalAddressEClass, POSTAL_ADDRESS__DIRECTIONS);
-		createEReference(postalAddressEClass, POSTAL_ADDRESS__GEO_POINT_ID);
+		createEReference(postalAddressEClass, POSTAL_ADDRESS__GEO_POINT);
 		createEAttribute(postalAddressEClass, POSTAL_ADDRESS__HOUSE_NUMBER);
 		createEAttribute(postalAddressEClass, POSTAL_ADDRESS__HOUSE_NUMBER_EXT);
-		createEReference(postalAddressEClass, POSTAL_ADDRESS__MUNICIPALITY_GEO_ID);
+		createEReference(postalAddressEClass, POSTAL_ADDRESS__MUNICIPALITY_GEO);
 		createEReference(postalAddressEClass, POSTAL_ADDRESS__POSTAL_ADDRESS_BOUNDARIES);
 		createEAttribute(postalAddressEClass, POSTAL_ADDRESS__POSTAL_CODE);
 		createEAttribute(postalAddressEClass, POSTAL_ADDRESS__POSTAL_CODE_EXT);
-		createEReference(postalAddressEClass, POSTAL_ADDRESS__POSTAL_CODE_GEO_ID);
-		createEReference(postalAddressEClass, POSTAL_ADDRESS__STATE_PROVINCE_GEO_ID);
+		createEReference(postalAddressEClass, POSTAL_ADDRESS__POSTAL_CODE_GEO);
+		createEReference(postalAddressEClass, POSTAL_ADDRESS__STATE_PROVINCE_GEO);
 		createEAttribute(postalAddressEClass, POSTAL_ADDRESS__TO_NAME);
 
 		postalAddressBoundaryEClass = createEClass(POSTAL_ADDRESS_BOUNDARY);
-		createEReference(postalAddressBoundaryEClass, POSTAL_ADDRESS_BOUNDARY__CONTACT_MECH_ID);
-		createEReference(postalAddressBoundaryEClass, POSTAL_ADDRESS_BOUNDARY__GEO_ID);
+		createEReference(postalAddressBoundaryEClass, POSTAL_ADDRESS_BOUNDARY__CONTACT_MECH);
+		createEReference(postalAddressBoundaryEClass, POSTAL_ADDRESS_BOUNDARY__GEO);
 
 		telecomNumberEClass = createEClass(TELECOM_NUMBER);
 		createEAttribute(telecomNumberEClass, TELECOM_NUMBER__AREA_CODE);
@@ -1835,8 +1835,8 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		createEAttribute(telecomNumberEClass, TELECOM_NUMBER__COUNTRY_CODE);
 
 		validContactMechRoleEClass = createEClass(VALID_CONTACT_MECH_ROLE);
-		createEReference(validContactMechRoleEClass, VALID_CONTACT_MECH_ROLE__ROLE_TYPE_ID);
-		createEReference(validContactMechRoleEClass, VALID_CONTACT_MECH_ROLE__CONTACT_MECH_TYPE_ID);
+		createEReference(validContactMechRoleEClass, VALID_CONTACT_MECH_ROLE__ROLE_TYPE);
+		createEReference(validContactMechRoleEClass, VALID_CONTACT_MECH_ROLE__CONTACT_MECH_TYPE);
 	}
 
 	/**
@@ -1920,14 +1920,14 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		initEClass(contactMechEClass, ContactMech.class, "ContactMech", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getContactMech_ContactMechId(), ecorePackage.getEString(), "contactMechId", null, 1, 1, ContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContactMech_ContactMechAttributes(), this.getContactMechAttribute(), null, "contactMechAttributes", null, 0, -1, ContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEReference(getContactMech_ContactMechTypeId(), this.getContactMechType(), null, "contactMechTypeId", null, 0, 1, ContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContactMech_ContactMechTypeId().getEKeys().add(this.getContactMechType_ContactMechTypeId());
+		initEReference(getContactMech_ContactMechType(), this.getContactMechType(), null, "contactMechType", null, 0, 1, ContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getContactMech_ContactMechType().getEKeys().add(this.getContactMechType_ContactMechTypeId());
 		initEReference(getContactMech_FromContactMechLinks(), this.getContactMechLink(), null, "fromContactMechLinks", null, 0, -1, ContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContactMech_InfoString(), ecorePackage.getEString(), "infoString", null, 0, 1, ContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(contactMechAttributeEClass, ContactMechAttribute.class, "ContactMechAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getContactMechAttribute_ContactMechId(), this.getContactMech(), null, "contactMechId", null, 1, 1, ContactMechAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContactMechAttribute_ContactMechId().getEKeys().add(this.getContactMech_ContactMechId());
+		initEReference(getContactMechAttribute_ContactMech(), this.getContactMech(), null, "contactMech", null, 1, 1, ContactMechAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getContactMechAttribute_ContactMech().getEKeys().add(this.getContactMech_ContactMechId());
 		initEAttribute(getContactMechAttribute_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, ContactMechAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContactMechAttribute_AttrDescription(), ecorePackage.getEString(), "attrDescription", null, 0, 1, ContactMechAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContactMechAttribute_AttrValue(), ecorePackage.getEString(), "attrValue", null, 0, 1, ContactMechAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1948,20 +1948,20 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		initEReference(getContactMechType_ContactMechTypePurposes(), this.getContactMechTypePurpose(), null, "contactMechTypePurposes", null, 0, -1, ContactMechType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContactMechType_Description(), ecorePackage.getEString(), "description", null, 0, 1, ContactMechType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContactMechType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 0, 1, ContactMechType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getContactMechType_ParentTypeId(), this.getContactMechType(), null, "parentTypeId", null, 0, 1, ContactMechType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContactMechType_ParentTypeId().getEKeys().add(this.getContactMechType_ContactMechTypeId());
+		initEReference(getContactMechType_ParentType(), this.getContactMechType(), null, "parentType", null, 0, 1, ContactMechType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getContactMechType_ParentType().getEKeys().add(this.getContactMechType_ContactMechTypeId());
 
 		initEClass(contactMechTypeAttrEClass, ContactMechTypeAttr.class, "ContactMechTypeAttr", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getContactMechTypeAttr_ContactMechTypeId(), this.getContactMechType(), null, "contactMechTypeId", null, 1, 1, ContactMechTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContactMechTypeAttr_ContactMechTypeId().getEKeys().add(this.getContactMechType_ContactMechTypeId());
+		initEReference(getContactMechTypeAttr_ContactMechType(), this.getContactMechType(), null, "contactMechType", null, 1, 1, ContactMechTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getContactMechTypeAttr_ContactMechType().getEKeys().add(this.getContactMechType_ContactMechTypeId());
 		initEAttribute(getContactMechTypeAttr_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, ContactMechTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContactMechTypeAttr_Description(), ecorePackage.getEString(), "description", null, 0, 1, ContactMechTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(contactMechTypePurposeEClass, ContactMechTypePurpose.class, "ContactMechTypePurpose", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getContactMechTypePurpose_ContactMechTypeId(), this.getContactMechType(), null, "contactMechTypeId", null, 1, 1, ContactMechTypePurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContactMechTypePurpose_ContactMechTypeId().getEKeys().add(this.getContactMechType_ContactMechTypeId());
-		initEReference(getContactMechTypePurpose_ContactMechPurposeTypeId(), this.getContactMechPurposeType(), null, "contactMechPurposeTypeId", null, 1, 1, ContactMechTypePurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContactMechTypePurpose_ContactMechPurposeTypeId().getEKeys().add(this.getContactMechPurposeType_ContactMechPurposeTypeId());
+		initEReference(getContactMechTypePurpose_ContactMechType(), this.getContactMechType(), null, "contactMechType", null, 1, 1, ContactMechTypePurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getContactMechTypePurpose_ContactMechType().getEKeys().add(this.getContactMechType_ContactMechTypeId());
+		initEReference(getContactMechTypePurpose_ContactMechPurposeType(), this.getContactMechPurposeType(), null, "contactMechPurposeType", null, 1, 1, ContactMechTypePurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getContactMechTypePurpose_ContactMechPurposeType().getEKeys().add(this.getContactMechPurposeType_ContactMechPurposeTypeId());
 
 		initEClass(emailAddressVerificationEClass, EmailAddressVerification.class, "EmailAddressVerification", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getEmailAddressVerification_EmailAddress(), ecorePackage.getEString(), "emailAddress", null, 1, 1, EmailAddressVerification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1980,28 +1980,28 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		initEAttribute(getFtpAddress_ZipFile(), ecorePackage.getEBooleanObject(), "zipFile", null, 0, 1, FtpAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(partyContactMechEClass, PartyContactMech.class, "PartyContactMech", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getPartyContactMech_PartyId(), thePartyPackage_1.getParty(), null, "partyId", null, 1, 1, PartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyContactMech_PartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
-		initEReference(getPartyContactMech_ContactMechId(), this.getContactMech(), null, "contactMechId", null, 1, 1, PartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyContactMech_ContactMechId().getEKeys().add(this.getContactMech_ContactMechId());
+		initEReference(getPartyContactMech_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, PartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPartyContactMech_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getPartyContactMech_ContactMech(), this.getContactMech(), null, "contactMech", null, 1, 1, PartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPartyContactMech_ContactMech().getEKeys().add(this.getContactMech_ContactMechId());
 		initEAttribute(getPartyContactMech_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, PartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyContactMech_AllowSolicitation(), ecorePackage.getEBooleanObject(), "allowSolicitation", null, 0, 1, PartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyContactMech_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, PartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyContactMech_Extension(), ecorePackage.getEString(), "extension", null, 0, 1, PartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyContactMech_MonthsWithContactMech(), ecorePackage.getELong(), "monthsWithContactMech", null, 0, 1, PartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPartyContactMech_RoleTypeId(), thePartyPackage_1.getRoleType(), null, "roleTypeId", null, 0, 1, PartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyContactMech_RoleTypeId().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
+		initEReference(getPartyContactMech_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 0, 1, PartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPartyContactMech_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEAttribute(getPartyContactMech_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, PartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyContactMech_Verified(), ecorePackage.getEBooleanObject(), "verified", null, 0, 1, PartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyContactMech_YearsWithContactMech(), ecorePackage.getELong(), "yearsWithContactMech", null, 0, 1, PartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(partyContactMechPurposeEClass, PartyContactMechPurpose.class, "PartyContactMechPurpose", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getPartyContactMechPurpose_ContactMechPurposeTypeId(), this.getContactMechPurposeType(), null, "contactMechPurposeTypeId", null, 1, 1, PartyContactMechPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyContactMechPurpose_ContactMechPurposeTypeId().getEKeys().add(this.getContactMechPurposeType_ContactMechPurposeTypeId());
-		initEReference(getPartyContactMechPurpose_PartyId(), thePartyPackage_1.getParty(), null, "partyId", null, 1, 1, PartyContactMechPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyContactMechPurpose_PartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
-		initEReference(getPartyContactMechPurpose_ContactMechId(), this.getContactMech(), null, "contactMechId", null, 1, 1, PartyContactMechPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyContactMechPurpose_ContactMechId().getEKeys().add(this.getContactMech_ContactMechId());
+		initEReference(getPartyContactMechPurpose_ContactMechPurposeType(), this.getContactMechPurposeType(), null, "contactMechPurposeType", null, 1, 1, PartyContactMechPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPartyContactMechPurpose_ContactMechPurposeType().getEKeys().add(this.getContactMechPurposeType_ContactMechPurposeTypeId());
+		initEReference(getPartyContactMechPurpose_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, PartyContactMechPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPartyContactMechPurpose_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getPartyContactMechPurpose_ContactMech(), this.getContactMech(), null, "contactMech", null, 1, 1, PartyContactMechPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPartyContactMechPurpose_ContactMech().getEKeys().add(this.getContactMech_ContactMechId());
 		initEAttribute(getPartyContactMechPurpose_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, PartyContactMechPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyContactMechPurpose_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, PartyContactMechPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -2010,33 +2010,33 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		initEAttribute(getPostalAddress_Address2(), ecorePackage.getEString(), "address2", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPostalAddress_AttnName(), ecorePackage.getEString(), "attnName", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPostalAddress_City(), ecorePackage.getEString(), "city", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPostalAddress_CityGeoId(), theGeoPackage.getGeo(), null, "cityGeoId", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPostalAddress_CityGeoId().getEKeys().add(theGeoPackage.getGeo_GeoId());
-		initEReference(getPostalAddress_CountryGeoId(), theGeoPackage.getGeo(), null, "countryGeoId", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPostalAddress_CountryGeoId().getEKeys().add(theGeoPackage.getGeo_GeoId());
-		initEReference(getPostalAddress_CountyGeoId(), theGeoPackage.getGeo(), null, "countyGeoId", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPostalAddress_CountyGeoId().getEKeys().add(theGeoPackage.getGeo_GeoId());
+		initEReference(getPostalAddress_CityGeo(), theGeoPackage.getGeo(), null, "cityGeo", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPostalAddress_CityGeo().getEKeys().add(theGeoPackage.getGeo_GeoId());
+		initEReference(getPostalAddress_CountryGeo(), theGeoPackage.getGeo(), null, "countryGeo", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPostalAddress_CountryGeo().getEKeys().add(theGeoPackage.getGeo_GeoId());
+		initEReference(getPostalAddress_CountyGeo(), theGeoPackage.getGeo(), null, "countyGeo", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPostalAddress_CountyGeo().getEKeys().add(theGeoPackage.getGeo_GeoId());
 		initEAttribute(getPostalAddress_Directions(), ecorePackage.getEString(), "directions", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPostalAddress_GeoPointId(), theGeoPackage.getGeoPoint(), null, "geoPointId", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPostalAddress_GeoPointId().getEKeys().add(theGeoPackage.getGeoPoint_GeoPointId());
+		initEReference(getPostalAddress_GeoPoint(), theGeoPackage.getGeoPoint(), null, "geoPoint", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPostalAddress_GeoPoint().getEKeys().add(theGeoPackage.getGeoPoint_GeoPointId());
 		initEAttribute(getPostalAddress_HouseNumber(), ecorePackage.getELong(), "houseNumber", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPostalAddress_HouseNumberExt(), ecorePackage.getEString(), "houseNumberExt", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPostalAddress_MunicipalityGeoId(), theGeoPackage.getGeo(), null, "municipalityGeoId", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPostalAddress_MunicipalityGeoId().getEKeys().add(theGeoPackage.getGeo_GeoId());
+		initEReference(getPostalAddress_MunicipalityGeo(), theGeoPackage.getGeo(), null, "municipalityGeo", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPostalAddress_MunicipalityGeo().getEKeys().add(theGeoPackage.getGeo_GeoId());
 		initEReference(getPostalAddress_PostalAddressBoundaries(), this.getPostalAddressBoundary(), null, "postalAddressBoundaries", null, 0, -1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPostalAddress_PostalCode(), ecorePackage.getEString(), "postalCode", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPostalAddress_PostalCodeExt(), ecorePackage.getEString(), "postalCodeExt", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPostalAddress_PostalCodeGeoId(), theGeoPackage.getGeo(), null, "postalCodeGeoId", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPostalAddress_PostalCodeGeoId().getEKeys().add(theGeoPackage.getGeo_GeoId());
-		initEReference(getPostalAddress_StateProvinceGeoId(), theGeoPackage.getGeo(), null, "stateProvinceGeoId", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPostalAddress_StateProvinceGeoId().getEKeys().add(theGeoPackage.getGeo_GeoId());
+		initEReference(getPostalAddress_PostalCodeGeo(), theGeoPackage.getGeo(), null, "postalCodeGeo", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPostalAddress_PostalCodeGeo().getEKeys().add(theGeoPackage.getGeo_GeoId());
+		initEReference(getPostalAddress_StateProvinceGeo(), theGeoPackage.getGeo(), null, "stateProvinceGeo", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPostalAddress_StateProvinceGeo().getEKeys().add(theGeoPackage.getGeo_GeoId());
 		initEAttribute(getPostalAddress_ToName(), ecorePackage.getEString(), "toName", null, 0, 1, PostalAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(postalAddressBoundaryEClass, PostalAddressBoundary.class, "PostalAddressBoundary", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getPostalAddressBoundary_ContactMechId(), this.getPostalAddress(), null, "contactMechId", null, 1, 1, PostalAddressBoundary.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPostalAddressBoundary_ContactMechId().getEKeys().add(this.getContactMech_ContactMechId());
-		initEReference(getPostalAddressBoundary_GeoId(), theGeoPackage.getGeo(), null, "geoId", null, 1, 1, PostalAddressBoundary.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPostalAddressBoundary_GeoId().getEKeys().add(theGeoPackage.getGeo_GeoId());
+		initEReference(getPostalAddressBoundary_ContactMech(), this.getPostalAddress(), null, "contactMech", null, 1, 1, PostalAddressBoundary.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPostalAddressBoundary_ContactMech().getEKeys().add(this.getContactMech_ContactMechId());
+		initEReference(getPostalAddressBoundary_Geo(), theGeoPackage.getGeo(), null, "geo", null, 1, 1, PostalAddressBoundary.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getPostalAddressBoundary_Geo().getEKeys().add(theGeoPackage.getGeo_GeoId());
 
 		initEClass(telecomNumberEClass, TelecomNumber.class, "TelecomNumber", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getTelecomNumber_AreaCode(), ecorePackage.getEString(), "areaCode", null, 0, 1, TelecomNumber.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2045,10 +2045,10 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		initEAttribute(getTelecomNumber_CountryCode(), ecorePackage.getEString(), "countryCode", null, 0, 1, TelecomNumber.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(validContactMechRoleEClass, ValidContactMechRole.class, "ValidContactMechRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getValidContactMechRole_RoleTypeId(), thePartyPackage_1.getRoleType(), null, "roleTypeId", null, 1, 1, ValidContactMechRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getValidContactMechRole_RoleTypeId().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
-		initEReference(getValidContactMechRole_ContactMechTypeId(), this.getContactMechType(), null, "contactMechTypeId", null, 1, 1, ValidContactMechRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getValidContactMechRole_ContactMechTypeId().getEKeys().add(this.getContactMechType_ContactMechTypeId());
+		initEReference(getValidContactMechRole_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 1, 1, ValidContactMechRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getValidContactMechRole_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
+		initEReference(getValidContactMechRole_ContactMechType(), this.getContactMechType(), null, "contactMechType", null, 1, 1, ValidContactMechRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getValidContactMechRole_ContactMechType().getEKeys().add(this.getContactMechType_ContactMechTypeId());
 
 		// Create annotations
 		// mimo-ent-frame
@@ -2305,7 +2305,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
 		addAnnotation
-		  (getContactMechAttribute_ContactMechId(),
+		  (getContactMechAttribute_ContactMech(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2329,7 +2329,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getContactMechTypeAttr_ContactMechTypeId(),
+		  (getContactMechTypeAttr_ContactMechType(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2341,13 +2341,13 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getContactMechTypePurpose_ContactMechTypeId(),
+		  (getContactMechTypePurpose_ContactMechType(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getContactMechTypePurpose_ContactMechPurposeTypeId(),
+		  (getContactMechTypePurpose_ContactMechPurposeType(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2359,13 +2359,13 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 			   "encrypt", "TRUE"
 		   });
 		addAnnotation
-		  (getPartyContactMech_PartyId(),
+		  (getPartyContactMech_Party(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getPartyContactMech_ContactMechId(),
+		  (getPartyContactMech_ContactMech(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2377,19 +2377,19 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getPartyContactMechPurpose_ContactMechPurposeTypeId(),
+		  (getPartyContactMechPurpose_ContactMechPurposeType(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getPartyContactMechPurpose_PartyId(),
+		  (getPartyContactMechPurpose_Party(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getPartyContactMechPurpose_ContactMechId(),
+		  (getPartyContactMechPurpose_ContactMech(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2401,25 +2401,25 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getPostalAddressBoundary_ContactMechId(),
+		  (getPostalAddressBoundary_ContactMech(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getPostalAddressBoundary_GeoId(),
+		  (getPostalAddressBoundary_Geo(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getValidContactMechRole_RoleTypeId(),
+		  (getValidContactMechRole_RoleType(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getValidContactMechRole_ContactMechTypeId(),
+		  (getValidContactMechRole_ContactMechType(),
 		   source,
 		   new String[] {
 			   "key", "true"

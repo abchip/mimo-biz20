@@ -31,11 +31,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestStatusImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestStatusImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestStatusImpl#getCustRequestStatusId <em>Cust Request Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestStatusImpl#getChangeByUserLoginId <em>Change By User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestStatusImpl#getCustRequestId <em>Cust Request Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestStatusImpl#getChangeByUserLogin <em>Change By User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestStatusImpl#getCustRequest <em>Cust Request</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestStatusImpl#getCustRequestItemSeqId <em>Cust Request Item Seq Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestStatusImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestStatusImpl#getStatusDate <em>Status Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestStatusImpl#getStatusId <em>Status Id</em>}</li>
  * </ul>
  *
  * @generated
@@ -157,46 +157,6 @@ public class CustRequestStatusImpl extends EntityIdentifiableImpl implements Cus
 	 * @generated
 	 */
 	@Override
-	public UserLogin getChangeByUserLoginId() {
-		return (UserLogin)eGet(RequestPackage.Literals.CUST_REQUEST_STATUS__CHANGE_BY_USER_LOGIN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setChangeByUserLoginId(UserLogin newChangeByUserLoginId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_STATUS__CHANGE_BY_USER_LOGIN_ID, newChangeByUserLoginId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CustRequest getCustRequestId() {
-		return (CustRequest)eGet(RequestPackage.Literals.CUST_REQUEST_STATUS__CUST_REQUEST_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCustRequestId(CustRequest newCustRequestId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_STATUS__CUST_REQUEST_ID, newCustRequestId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getCustRequestItemSeqId() {
 		return (String)eGet(RequestPackage.Literals.CUST_REQUEST_STATUS__CUST_REQUEST_ITEM_SEQ_ID, true);
 	}
@@ -209,6 +169,26 @@ public class CustRequestStatusImpl extends EntityIdentifiableImpl implements Cus
 	@Override
 	public void setCustRequestItemSeqId(String newCustRequestItemSeqId) {
 		eSet(RequestPackage.Literals.CUST_REQUEST_STATUS__CUST_REQUEST_ITEM_SEQ_ID, newCustRequestItemSeqId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(RequestPackage.Literals.CUST_REQUEST_STATUS__STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(StatusItem newStatus) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_STATUS__STATUS, newStatus);
 	}
 
 	/**
@@ -237,6 +217,46 @@ public class CustRequestStatusImpl extends EntityIdentifiableImpl implements Cus
 	 * @generated
 	 */
 	@Override
+	public UserLogin getChangeByUserLogin() {
+		return (UserLogin)eGet(RequestPackage.Literals.CUST_REQUEST_STATUS__CHANGE_BY_USER_LOGIN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setChangeByUserLogin(UserLogin newChangeByUserLogin) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_STATUS__CHANGE_BY_USER_LOGIN, newChangeByUserLogin);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CustRequest getCustRequest() {
+		return (CustRequest)eGet(RequestPackage.Literals.CUST_REQUEST_STATUS__CUST_REQUEST, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCustRequest(CustRequest newCustRequest) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_STATUS__CUST_REQUEST, newCustRequest);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getStatusDate() {
 		return (Date)eGet(RequestPackage.Literals.CUST_REQUEST_STATUS__STATUS_DATE, true);
 	}
@@ -249,26 +269,6 @@ public class CustRequestStatusImpl extends EntityIdentifiableImpl implements Cus
 	@Override
 	public void setStatusDate(Date newStatusDate) {
 		eSet(RequestPackage.Literals.CUST_REQUEST_STATUS__STATUS_DATE, newStatusDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(RequestPackage.Literals.CUST_REQUEST_STATUS__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_STATUS__STATUS_ID, newStatusId);
 	}
 
 	/**

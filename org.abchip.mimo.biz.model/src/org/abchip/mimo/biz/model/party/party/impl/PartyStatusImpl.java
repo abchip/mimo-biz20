@@ -30,10 +30,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyStatusImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyStatusImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyStatusImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyStatusImpl#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyStatusImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyStatusImpl#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyStatusImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyStatusImpl#getStatusDate <em>Status Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyStatusImpl#getChangeByUserLoginId <em>Change By User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyStatusImpl#getChangeByUserLogin <em>Change By User Login</em>}</li>
  * </ul>
  *
  * @generated
@@ -154,8 +154,8 @@ public class PartyStatusImpl extends EntityIdentifiableImpl implements PartyStat
 	 * @generated
 	 */
 	@Override
-	public UserLogin getChangeByUserLoginId() {
-		return (UserLogin)eGet(PartyPackage.Literals.PARTY_STATUS__CHANGE_BY_USER_LOGIN_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(PartyPackage.Literals.PARTY_STATUS__STATUS, true);
 	}
 
 	/**
@@ -164,8 +164,28 @@ public class PartyStatusImpl extends EntityIdentifiableImpl implements PartyStat
 	 * @generated
 	 */
 	@Override
-	public void setChangeByUserLoginId(UserLogin newChangeByUserLoginId) {
-		eSet(PartyPackage.Literals.PARTY_STATUS__CHANGE_BY_USER_LOGIN_ID, newChangeByUserLoginId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(PartyPackage.Literals.PARTY_STATUS__STATUS, newStatus);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(PartyPackage.Literals.PARTY_STATUS__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(PartyPackage.Literals.PARTY_STATUS__PARTY, newParty);
 	}
 
 	/**
@@ -232,8 +252,8 @@ public class PartyStatusImpl extends EntityIdentifiableImpl implements PartyStat
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(PartyPackage.Literals.PARTY_STATUS__STATUS_ID, true);
+	public UserLogin getChangeByUserLogin() {
+		return (UserLogin)eGet(PartyPackage.Literals.PARTY_STATUS__CHANGE_BY_USER_LOGIN, true);
 	}
 
 	/**
@@ -242,28 +262,8 @@ public class PartyStatusImpl extends EntityIdentifiableImpl implements PartyStat
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(PartyPackage.Literals.PARTY_STATUS__STATUS_ID, newStatusId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(PartyPackage.Literals.PARTY_STATUS__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(PartyPackage.Literals.PARTY_STATUS__PARTY_ID, newPartyId);
+	public void setChangeByUserLogin(UserLogin newChangeByUserLogin) {
+		eSet(PartyPackage.Literals.PARTY_STATUS__CHANGE_BY_USER_LOGIN, newChangeByUserLogin);
 	}
 
 } //PartyStatusImpl

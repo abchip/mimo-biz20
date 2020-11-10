@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeAttrImpl#getCostComponentTypeId <em>Cost Component Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeAttrImpl#getCostComponentType <em>Cost Component Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -152,6 +152,26 @@ public class CostComponentTypeAttrImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
+	public CostComponentType getCostComponentType() {
+		return (CostComponentType)eGet(CostPackage.Literals.COST_COMPONENT_TYPE_ATTR__COST_COMPONENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCostComponentType(CostComponentType newCostComponentType) {
+		eSet(CostPackage.Literals.COST_COMPONENT_TYPE_ATTR__COST_COMPONENT_TYPE, newCostComponentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(CostPackage.Literals.COST_COMPONENT_TYPE_ATTR__DESCRIPTION, true);
 	}
@@ -222,26 +242,6 @@ public class CostComponentTypeAttrImpl extends EntityIdentifiableImpl implements
 	@Override
 	public void setAttrName(String newAttrName) {
 		eSet(CostPackage.Literals.COST_COMPONENT_TYPE_ATTR__ATTR_NAME, newAttrName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CostComponentType getCostComponentTypeId() {
-		return (CostComponentType)eGet(CostPackage.Literals.COST_COMPONENT_TYPE_ATTR__COST_COMPONENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCostComponentTypeId(CostComponentType newCostComponentTypeId) {
-		eSet(CostPackage.Literals.COST_COMPONENT_TYPE_ATTR__COST_COMPONENT_TYPE_ID, newCostComponentTypeId);
 	}
 
 } //CostComponentTypeAttrImpl

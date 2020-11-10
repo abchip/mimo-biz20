@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusValidChangeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusValidChangeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusValidChangeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusValidChangeImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusValidChangeImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusValidChangeImpl#getStatusIdTo <em>Status Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusValidChangeImpl#getConditionExpression <em>Condition Expression</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusValidChangeImpl#getTransitionName <em>Transition Name</em>}</li>
@@ -152,6 +152,26 @@ public class StatusValidChangeImpl extends EntityIdentifiableImpl implements Sta
 	 * @generated
 	 */
 	@Override
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(StatusPackage.Literals.STATUS_VALID_CHANGE__STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(StatusItem newStatus) {
+		eSet(StatusPackage.Literals.STATUS_VALID_CHANGE__STATUS, newStatus);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getConditionExpression() {
 		return (String)eGet(StatusPackage.Literals.STATUS_VALID_CHANGE__CONDITION_EXPRESSION, true);
 	}
@@ -222,26 +242,6 @@ public class StatusValidChangeImpl extends EntityIdentifiableImpl implements Sta
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(StatusPackage.Literals.STATUS_VALID_CHANGE__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(StatusPackage.Literals.STATUS_VALID_CHANGE__STATUS_ID, newStatusId);
 	}
 
 	/**

@@ -708,7 +708,7 @@ public class TechdataPackageImpl extends EPackageImpl implements TechdataPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getTechDataCalendar_CalendarWeekId() {
+	public EReference getTechDataCalendar_CalendarWeek() {
 		return (EReference)techDataCalendarEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -758,7 +758,7 @@ public class TechdataPackageImpl extends EPackageImpl implements TechdataPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getTechDataCalendarExcDay_CalendarId() {
+	public EReference getTechDataCalendarExcDay_Calendar() {
 		return (EReference)techDataCalendarExcDayEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -818,7 +818,7 @@ public class TechdataPackageImpl extends EPackageImpl implements TechdataPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getTechDataCalendarExcWeek_CalendarId() {
+	public EReference getTechDataCalendarExcWeek_Calendar() {
 		return (EReference)techDataCalendarExcWeekEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -838,7 +838,7 @@ public class TechdataPackageImpl extends EPackageImpl implements TechdataPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getTechDataCalendarExcWeek_CalendarWeekId() {
+	public EReference getTechDataCalendarExcWeek_CalendarWeek() {
 		return (EReference)techDataCalendarExcWeekEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -1053,22 +1053,22 @@ public class TechdataPackageImpl extends EPackageImpl implements TechdataPackage
 		// Create classes and their features
 		techDataCalendarEClass = createEClass(TECH_DATA_CALENDAR);
 		createEAttribute(techDataCalendarEClass, TECH_DATA_CALENDAR__CALENDAR_ID);
-		createEReference(techDataCalendarEClass, TECH_DATA_CALENDAR__CALENDAR_WEEK_ID);
+		createEReference(techDataCalendarEClass, TECH_DATA_CALENDAR__CALENDAR_WEEK);
 		createEAttribute(techDataCalendarEClass, TECH_DATA_CALENDAR__DESCRIPTION);
 		createEReference(techDataCalendarEClass, TECH_DATA_CALENDAR__TECH_DATA_CALENDAR_EXC_DAIES);
 		createEReference(techDataCalendarEClass, TECH_DATA_CALENDAR__TECH_DATA_CALENDAR_EXC_WEEKS);
 
 		techDataCalendarExcDayEClass = createEClass(TECH_DATA_CALENDAR_EXC_DAY);
-		createEReference(techDataCalendarExcDayEClass, TECH_DATA_CALENDAR_EXC_DAY__CALENDAR_ID);
+		createEReference(techDataCalendarExcDayEClass, TECH_DATA_CALENDAR_EXC_DAY__CALENDAR);
 		createEAttribute(techDataCalendarExcDayEClass, TECH_DATA_CALENDAR_EXC_DAY__EXCEPTION_DATE_START_TIME);
 		createEAttribute(techDataCalendarExcDayEClass, TECH_DATA_CALENDAR_EXC_DAY__DESCRIPTION);
 		createEAttribute(techDataCalendarExcDayEClass, TECH_DATA_CALENDAR_EXC_DAY__EXCEPTION_CAPACITY);
 		createEAttribute(techDataCalendarExcDayEClass, TECH_DATA_CALENDAR_EXC_DAY__USED_CAPACITY);
 
 		techDataCalendarExcWeekEClass = createEClass(TECH_DATA_CALENDAR_EXC_WEEK);
-		createEReference(techDataCalendarExcWeekEClass, TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR_ID);
+		createEReference(techDataCalendarExcWeekEClass, TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR);
 		createEAttribute(techDataCalendarExcWeekEClass, TECH_DATA_CALENDAR_EXC_WEEK__EXCEPTION_DATE_START);
-		createEReference(techDataCalendarExcWeekEClass, TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR_WEEK_ID);
+		createEReference(techDataCalendarExcWeekEClass, TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR_WEEK);
 		createEAttribute(techDataCalendarExcWeekEClass, TECH_DATA_CALENDAR_EXC_WEEK__DESCRIPTION);
 
 		techDataCalendarWeekEClass = createEClass(TECH_DATA_CALENDAR_WEEK);
@@ -1133,26 +1133,26 @@ public class TechdataPackageImpl extends EPackageImpl implements TechdataPackage
 		// Initialize classes and features; add operations and parameters
 		initEClass(techDataCalendarEClass, TechDataCalendar.class, "TechDataCalendar", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getTechDataCalendar_CalendarId(), ecorePackage.getEString(), "calendarId", null, 1, 1, TechDataCalendar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getTechDataCalendar_CalendarWeekId(), this.getTechDataCalendarWeek(), null, "calendarWeekId", null, 0, 1, TechDataCalendar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getTechDataCalendar_CalendarWeekId().getEKeys().add(this.getTechDataCalendarWeek_CalendarWeekId());
+		initEReference(getTechDataCalendar_CalendarWeek(), this.getTechDataCalendarWeek(), null, "calendarWeek", null, 0, 1, TechDataCalendar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getTechDataCalendar_CalendarWeek().getEKeys().add(this.getTechDataCalendarWeek_CalendarWeekId());
 		initEAttribute(getTechDataCalendar_Description(), ecorePackage.getEString(), "description", null, 0, 1, TechDataCalendar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getTechDataCalendar_TechDataCalendarExcDaies(), this.getTechDataCalendarExcDay(), null, "techDataCalendarExcDaies", null, 0, -1, TechDataCalendar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getTechDataCalendar_TechDataCalendarExcWeeks(), this.getTechDataCalendarExcWeek(), null, "techDataCalendarExcWeeks", null, 0, -1, TechDataCalendar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(techDataCalendarExcDayEClass, TechDataCalendarExcDay.class, "TechDataCalendarExcDay", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTechDataCalendarExcDay_CalendarId(), this.getTechDataCalendar(), null, "calendarId", null, 1, 1, TechDataCalendarExcDay.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getTechDataCalendarExcDay_CalendarId().getEKeys().add(this.getTechDataCalendar_CalendarId());
+		initEReference(getTechDataCalendarExcDay_Calendar(), this.getTechDataCalendar(), null, "calendar", null, 1, 1, TechDataCalendarExcDay.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getTechDataCalendarExcDay_Calendar().getEKeys().add(this.getTechDataCalendar_CalendarId());
 		initEAttribute(getTechDataCalendarExcDay_ExceptionDateStartTime(), ecorePackage.getEDate(), "exceptionDateStartTime", null, 1, 1, TechDataCalendarExcDay.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTechDataCalendarExcDay_Description(), ecorePackage.getEString(), "description", null, 0, 1, TechDataCalendarExcDay.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTechDataCalendarExcDay_ExceptionCapacity(), ecorePackage.getEBigDecimal(), "exceptionCapacity", null, 0, 1, TechDataCalendarExcDay.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTechDataCalendarExcDay_UsedCapacity(), ecorePackage.getEBigDecimal(), "usedCapacity", null, 0, 1, TechDataCalendarExcDay.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(techDataCalendarExcWeekEClass, TechDataCalendarExcWeek.class, "TechDataCalendarExcWeek", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTechDataCalendarExcWeek_CalendarId(), this.getTechDataCalendar(), null, "calendarId", null, 1, 1, TechDataCalendarExcWeek.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getTechDataCalendarExcWeek_CalendarId().getEKeys().add(this.getTechDataCalendar_CalendarId());
+		initEReference(getTechDataCalendarExcWeek_Calendar(), this.getTechDataCalendar(), null, "calendar", null, 1, 1, TechDataCalendarExcWeek.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getTechDataCalendarExcWeek_Calendar().getEKeys().add(this.getTechDataCalendar_CalendarId());
 		initEAttribute(getTechDataCalendarExcWeek_ExceptionDateStart(), ecorePackage.getEDate(), "exceptionDateStart", null, 1, 1, TechDataCalendarExcWeek.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getTechDataCalendarExcWeek_CalendarWeekId(), this.getTechDataCalendarWeek(), null, "calendarWeekId", null, 0, 1, TechDataCalendarExcWeek.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getTechDataCalendarExcWeek_CalendarWeekId().getEKeys().add(this.getTechDataCalendarWeek_CalendarWeekId());
+		initEReference(getTechDataCalendarExcWeek_CalendarWeek(), this.getTechDataCalendarWeek(), null, "calendarWeek", null, 0, 1, TechDataCalendarExcWeek.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getTechDataCalendarExcWeek_CalendarWeek().getEKeys().add(this.getTechDataCalendarWeek_CalendarWeekId());
 		initEAttribute(getTechDataCalendarExcWeek_Description(), ecorePackage.getEString(), "description", null, 0, 1, TechDataCalendarExcWeek.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(techDataCalendarWeekEClass, TechDataCalendarWeek.class, "TechDataCalendarWeek", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1300,7 +1300,7 @@ public class TechdataPackageImpl extends EPackageImpl implements TechdataPackage
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
 		addAnnotation
-		  (getTechDataCalendarExcDay_CalendarId(),
+		  (getTechDataCalendarExcDay_Calendar(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -1312,7 +1312,7 @@ public class TechdataPackageImpl extends EPackageImpl implements TechdataPackage
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getTechDataCalendarExcWeek_CalendarId(),
+		  (getTechDataCalendarExcWeek_Calendar(),
 		   source,
 		   new String[] {
 			   "key", "true"

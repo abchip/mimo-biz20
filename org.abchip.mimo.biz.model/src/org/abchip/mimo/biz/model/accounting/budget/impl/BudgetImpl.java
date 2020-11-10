@@ -39,9 +39,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetImpl#getBudgetItems <em>Budget Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetImpl#getBudgetRevisions <em>Budget Revisions</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetImpl#getBudgetStatuss <em>Budget Statuss</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetImpl#getBudgetTypeId <em>Budget Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetImpl#getBudgetType <em>Budget Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetImpl#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetImpl#getCustomTimePeriodId <em>Custom Time Period Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetImpl#getCustomTimePeriod <em>Custom Time Period</em>}</li>
  * </ul>
  *
  * @generated
@@ -182,8 +182,8 @@ public class BudgetImpl extends EntityTypedImpl<BudgetType> implements Budget {
 	 * @generated
 	 */
 	@Override
-	public CustomTimePeriod getCustomTimePeriodId() {
-		return (CustomTimePeriod)eGet(BudgetPackage.Literals.BUDGET__CUSTOM_TIME_PERIOD_ID, true);
+	public CustomTimePeriod getCustomTimePeriod() {
+		return (CustomTimePeriod)eGet(BudgetPackage.Literals.BUDGET__CUSTOM_TIME_PERIOD, true);
 	}
 
 	/**
@@ -192,8 +192,8 @@ public class BudgetImpl extends EntityTypedImpl<BudgetType> implements Budget {
 	 * @generated
 	 */
 	@Override
-	public void setCustomTimePeriodId(CustomTimePeriod newCustomTimePeriodId) {
-		eSet(BudgetPackage.Literals.BUDGET__CUSTOM_TIME_PERIOD_ID, newCustomTimePeriodId);
+	public void setCustomTimePeriod(CustomTimePeriod newCustomTimePeriod) {
+		eSet(BudgetPackage.Literals.BUDGET__CUSTOM_TIME_PERIOD, newCustomTimePeriod);
 	}
 
 	/**
@@ -232,26 +232,6 @@ public class BudgetImpl extends EntityTypedImpl<BudgetType> implements Budget {
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public BudgetType getBudgetTypeId() {
-		return (BudgetType)eGet(BudgetPackage.Literals.BUDGET__BUDGET_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBudgetTypeId(BudgetType newBudgetTypeId) {
-		eSet(BudgetPackage.Literals.BUDGET__BUDGET_TYPE_ID, newBudgetTypeId);
 	}
 
 	/**
@@ -316,6 +296,26 @@ public class BudgetImpl extends EntityTypedImpl<BudgetType> implements Budget {
 	@Override
 	public List<BudgetStatus> getBudgetStatuss() {
 		return (List<BudgetStatus>)eGet(BudgetPackage.Literals.BUDGET__BUDGET_STATUSS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BudgetType getBudgetType() {
+		return (BudgetType)eGet(BudgetPackage.Literals.BUDGET__BUDGET_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBudgetType(BudgetType newBudgetType) {
+		eSet(BudgetPackage.Literals.BUDGET__BUDGET_TYPE, newBudgetType);
 	}
 
 } //BudgetImpl

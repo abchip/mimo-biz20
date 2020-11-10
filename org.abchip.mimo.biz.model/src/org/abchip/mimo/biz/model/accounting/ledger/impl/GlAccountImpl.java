@@ -42,14 +42,14 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getExternalId <em>External Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlAccountCategoryMembers <em>Gl Account Category Members</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlAccountClassId <em>Gl Account Class Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlAccountClass <em>Gl Account Class</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlAccountGroupMembers <em>Gl Account Group Members</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlAccountOrganizations <em>Gl Account Organizations</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlAccountTypeId <em>Gl Account Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlAccountType <em>Gl Account Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlBudgetXrefs <em>Gl Budget Xrefs</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlResourceTypeId <em>Gl Resource Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlXbrlClassId <em>Gl Xbrl Class Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getParentGlAccountId <em>Parent Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlResourceType <em>Gl Resource Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlXbrlClass <em>Gl Xbrl Class</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getParentGlAccount <em>Parent Gl Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getProductId <em>Product Id</em>}</li>
  * </ul>
  *
@@ -262,6 +262,26 @@ public class GlAccountImpl extends EntityTypedImpl<GlAccountType> implements GlA
 	 * @generated
 	 */
 	@Override
+	public GlAccountClass getGlAccountClass() {
+		return (GlAccountClass)eGet(LedgerPackage.Literals.GL_ACCOUNT__GL_ACCOUNT_CLASS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGlAccountClass(GlAccountClass newGlAccountClass) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT__GL_ACCOUNT_CLASS, newGlAccountClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getProductId() {
 		return (String)eGet(LedgerPackage.Literals.GL_ACCOUNT__PRODUCT_ID, true);
 	}
@@ -319,26 +339,6 @@ public class GlAccountImpl extends EntityTypedImpl<GlAccountType> implements GlA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public GlAccountType getGlAccountTypeId() {
-		return (GlAccountType)eGet(LedgerPackage.Literals.GL_ACCOUNT__GL_ACCOUNT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGlAccountTypeId(GlAccountType newGlAccountTypeId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT__GL_ACCOUNT_TYPE_ID, newGlAccountTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<GlBudgetXref> getGlBudgetXrefs() {
@@ -351,8 +351,8 @@ public class GlAccountImpl extends EntityTypedImpl<GlAccountType> implements GlA
 	 * @generated
 	 */
 	@Override
-	public GlAccountClass getGlAccountClassId() {
-		return (GlAccountClass)eGet(LedgerPackage.Literals.GL_ACCOUNT__GL_ACCOUNT_CLASS_ID, true);
+	public GlResourceType getGlResourceType() {
+		return (GlResourceType)eGet(LedgerPackage.Literals.GL_ACCOUNT__GL_RESOURCE_TYPE, true);
 	}
 
 	/**
@@ -361,8 +361,48 @@ public class GlAccountImpl extends EntityTypedImpl<GlAccountType> implements GlA
 	 * @generated
 	 */
 	@Override
-	public void setGlAccountClassId(GlAccountClass newGlAccountClassId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT__GL_ACCOUNT_CLASS_ID, newGlAccountClassId);
+	public void setGlResourceType(GlResourceType newGlResourceType) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT__GL_RESOURCE_TYPE, newGlResourceType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GlXbrlClass getGlXbrlClass() {
+		return (GlXbrlClass)eGet(LedgerPackage.Literals.GL_ACCOUNT__GL_XBRL_CLASS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGlXbrlClass(GlXbrlClass newGlXbrlClass) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT__GL_XBRL_CLASS, newGlXbrlClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GlAccount getParentGlAccount() {
+		return (GlAccount)eGet(LedgerPackage.Literals.GL_ACCOUNT__PARENT_GL_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParentGlAccount(GlAccount newParentGlAccount) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT__PARENT_GL_ACCOUNT, newParentGlAccount);
 	}
 
 	/**
@@ -393,8 +433,8 @@ public class GlAccountImpl extends EntityTypedImpl<GlAccountType> implements GlA
 	 * @generated
 	 */
 	@Override
-	public GlResourceType getGlResourceTypeId() {
-		return (GlResourceType)eGet(LedgerPackage.Literals.GL_ACCOUNT__GL_RESOURCE_TYPE_ID, true);
+	public GlAccountType getGlAccountType() {
+		return (GlAccountType)eGet(LedgerPackage.Literals.GL_ACCOUNT__GL_ACCOUNT_TYPE, true);
 	}
 
 	/**
@@ -403,48 +443,8 @@ public class GlAccountImpl extends EntityTypedImpl<GlAccountType> implements GlA
 	 * @generated
 	 */
 	@Override
-	public void setGlResourceTypeId(GlResourceType newGlResourceTypeId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT__GL_RESOURCE_TYPE_ID, newGlResourceTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GlXbrlClass getGlXbrlClassId() {
-		return (GlXbrlClass)eGet(LedgerPackage.Literals.GL_ACCOUNT__GL_XBRL_CLASS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGlXbrlClassId(GlXbrlClass newGlXbrlClassId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT__GL_XBRL_CLASS_ID, newGlXbrlClassId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GlAccount getParentGlAccountId() {
-		return (GlAccount)eGet(LedgerPackage.Literals.GL_ACCOUNT__PARENT_GL_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentGlAccountId(GlAccount newParentGlAccountId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT__PARENT_GL_ACCOUNT_ID, newParentGlAccountId);
+	public void setGlAccountType(GlAccountType newGlAccountType) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT__GL_ACCOUNT_TYPE, newGlAccountType);
 	}
 
 	/**

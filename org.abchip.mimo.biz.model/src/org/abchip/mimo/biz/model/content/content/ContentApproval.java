@@ -25,12 +25,12 @@ import org.abchip.mimo.entity.EntityInfo;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getContentApprovalId <em>Content Approval Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getApprovalDate <em>Approval Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getApprovalStatusId <em>Approval Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getApprovalStatus <em>Approval Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getContentId <em>Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getContent <em>Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getContentRevisionSeqId <em>Content Revision Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getRoleType <em>Role Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getSequenceNum <em>Sequence Num</em>}</li>
  * </ul>
  *
@@ -66,30 +66,26 @@ public interface ContentApproval extends EntityIdentifiable, EntityInfo {
 	void setApprovalDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Approval Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Approval Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Approval Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Approval Status Id</em>' reference.
-	 * @see #setApprovalStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentApproval_ApprovalStatusId()
+	 * @return the value of the '<em>Approval Status</em>' reference.
+	 * @see #setApprovalStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentApproval_ApprovalStatus()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getApprovalStatusId();
+	StatusItem getApprovalStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getApprovalStatusId <em>Approval Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getApprovalStatus <em>Approval Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Approval Status Id</em>' reference.
-	 * @see #getApprovalStatusId()
+	 * @param value the new value of the '<em>Approval Status</em>' reference.
+	 * @see #getApprovalStatus()
 	 * @generated
 	 */
-	void setApprovalStatusId(StatusItem value);
+	void setApprovalStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
@@ -116,6 +112,28 @@ public interface ContentApproval extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setComments(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Content</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Content</em>' reference.
+	 * @see #setContent(Content)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentApproval_Content()
+	 * @model keys="contentId"
+	 * @generated
+	 */
+	Content getContent();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getContent <em>Content</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Content</em>' reference.
+	 * @see #getContent()
+	 * @generated
+	 */
+	void setContent(Content value);
 
 	/**
 	 * Returns the value of the '<em><b>Content Approval Id</b></em>' attribute.
@@ -145,32 +163,6 @@ public interface ContentApproval extends EntityIdentifiable, EntityInfo {
 	void setContentApprovalId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Id</em>' reference.
-	 * @see #setContentId(Content)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentApproval_ContentId()
-	 * @model keys="contentId"
-	 * @generated
-	 */
-	Content getContentId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getContentId <em>Content Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Id</em>' reference.
-	 * @see #getContentId()
-	 * @generated
-	 */
-	void setContentId(Content value);
-
-	/**
 	 * Returns the value of the '<em><b>Content Revision Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -197,56 +189,48 @@ public interface ContentApproval extends EntityIdentifiable, EntityInfo {
 	void setContentRevisionSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentApproval_PartyId()
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentApproval_Party()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getPartyId();
+	Party getParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getParty <em>Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setParty(Party value);
 
 	/**
-	 * Returns the value of the '<em><b>Role Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Role Type Id</em>' reference.
-	 * @see #setRoleTypeId(RoleType)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentApproval_RoleTypeId()
+	 * @return the value of the '<em>Role Type</em>' reference.
+	 * @see #setRoleType(RoleType)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentApproval_RoleType()
 	 * @model keys="roleTypeId"
 	 * @generated
 	 */
-	RoleType getRoleTypeId();
+	RoleType getRoleType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getRoleTypeId <em>Role Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentApproval#getRoleType <em>Role Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Role Type Id</em>' reference.
-	 * @see #getRoleTypeId()
+	 * @param value the new value of the '<em>Role Type</em>' reference.
+	 * @see #getRoleType()
 	 * @generated
 	 */
-	void setRoleTypeId(RoleType value);
+	void setRoleType(RoleType value);
 
 	/**
 	 * Returns the value of the '<em><b>Sequence Num</b></em>' attribute.

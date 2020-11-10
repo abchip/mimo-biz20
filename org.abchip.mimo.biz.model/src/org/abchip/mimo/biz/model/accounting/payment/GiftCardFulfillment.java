@@ -32,14 +32,14 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getCardNumber <em>Card Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getFulfillmentDate <em>Fulfillment Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getMerchantId <em>Merchant Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getPinNumber <em>Pin Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getReferenceNum <em>Reference Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getResponseCode <em>Response Code</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getSurveyResponseId <em>Survey Response Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getTypeEnumId <em>Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getSurveyResponse <em>Survey Response</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getTypeEnum <em>Type Enum</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getGiftCardFulfillment()
@@ -206,30 +206,26 @@ public interface GiftCardFulfillment extends EntityIdentifiable, EntityInfo {
 	void setMerchantId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getGiftCardFulfillment_OrderId()
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getGiftCardFulfillment_Order()
 	 * @model keys="orderId"
 	 * @generated
 	 */
-	OrderHeader getOrderId();
+	OrderHeader getOrder();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getOrderId <em>Order Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getOrder <em>Order</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
 	 * @generated
 	 */
-	void setOrderId(OrderHeader value);
+	void setOrder(OrderHeader value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -258,30 +254,26 @@ public interface GiftCardFulfillment extends EntityIdentifiable, EntityInfo {
 	void setOrderItemSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getGiftCardFulfillment_PartyId()
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getGiftCardFulfillment_Party()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getPartyId();
+	Party getParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getParty <em>Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setParty(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Pin Number</b></em>' attribute.
@@ -363,55 +355,47 @@ public interface GiftCardFulfillment extends EntityIdentifiable, EntityInfo {
 	void setResponseCode(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Survey Response Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Survey Response</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Survey Response Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Survey Response Id</em>' reference.
-	 * @see #setSurveyResponseId(SurveyResponse)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getGiftCardFulfillment_SurveyResponseId()
+	 * @return the value of the '<em>Survey Response</em>' reference.
+	 * @see #setSurveyResponse(SurveyResponse)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getGiftCardFulfillment_SurveyResponse()
 	 * @model keys="surveyResponseId"
 	 * @generated
 	 */
-	SurveyResponse getSurveyResponseId();
+	SurveyResponse getSurveyResponse();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getSurveyResponseId <em>Survey Response Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getSurveyResponse <em>Survey Response</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Survey Response Id</em>' reference.
-	 * @see #getSurveyResponseId()
+	 * @param value the new value of the '<em>Survey Response</em>' reference.
+	 * @see #getSurveyResponse()
 	 * @generated
 	 */
-	void setSurveyResponseId(SurveyResponse value);
+	void setSurveyResponse(SurveyResponse value);
 
 	/**
-	 * Returns the value of the '<em><b>Type Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Type Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Type Enum Id</em>' reference.
-	 * @see #setTypeEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getGiftCardFulfillment_TypeEnumId()
+	 * @return the value of the '<em>Type Enum</em>' reference.
+	 * @see #setTypeEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getGiftCardFulfillment_TypeEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getTypeEnumId();
+	Enumeration getTypeEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getTypeEnumId <em>Type Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.GiftCardFulfillment#getTypeEnum <em>Type Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Type Enum Id</em>' reference.
-	 * @see #getTypeEnumId()
+	 * @param value the new value of the '<em>Type Enum</em>' reference.
+	 * @see #getTypeEnum()
 	 * @generated
 	 */
-	void setTypeEnumId(Enumeration value);
+	void setTypeEnum(Enumeration value);
 
 } // GiftCardFulfillment

@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryTypeAttrImpl#getProductCategoryTypeId <em>Product Category Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryTypeAttrImpl#getProductCategoryType <em>Product Category Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -152,6 +152,26 @@ public class ProductCategoryTypeAttrImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
+	public ProductCategoryType getProductCategoryType() {
+		return (ProductCategoryType)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_TYPE_ATTR__PRODUCT_CATEGORY_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductCategoryType(ProductCategoryType newProductCategoryType) {
+		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_TYPE_ATTR__PRODUCT_CATEGORY_TYPE, newProductCategoryType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_TYPE_ATTR__DESCRIPTION, true);
 	}
@@ -222,26 +242,6 @@ public class ProductCategoryTypeAttrImpl extends EntityIdentifiableImpl implemen
 	@Override
 	public void setAttrName(String newAttrName) {
 		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_TYPE_ATTR__ATTR_NAME, newAttrName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductCategoryType getProductCategoryTypeId() {
-		return (ProductCategoryType)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_TYPE_ATTR__PRODUCT_CATEGORY_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductCategoryTypeId(ProductCategoryType newProductCategoryTypeId) {
-		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_TYPE_ATTR__PRODUCT_CATEGORY_TYPE_ID, newProductCategoryTypeId);
 	}
 
 } //ProductCategoryTypeAttrImpl

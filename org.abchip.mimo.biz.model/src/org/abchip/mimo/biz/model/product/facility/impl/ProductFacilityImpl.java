@@ -32,14 +32,14 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getDaysToShip <em>Days To Ship</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getLastInventoryCount <em>Last Inventory Count</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getMinimumStock <em>Minimum Stock</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getReorderQuantity <em>Reorder Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getReplenishMethodEnumId <em>Replenish Method Enum Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getRequirementMethodEnumId <em>Requirement Method Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getReplenishMethodEnum <em>Replenish Method Enum</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getRequirementMethodEnum <em>Requirement Method Enum</em>}</li>
  * </ul>
  *
  * @generated
@@ -161,6 +161,46 @@ public class ProductFacilityImpl extends EntityIdentifiableImpl implements Produ
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(FacilityPackage.Literals.PRODUCT_FACILITY__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(FacilityPackage.Literals.PRODUCT_FACILITY__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Facility getFacility() {
+		return (Facility)eGet(FacilityPackage.Literals.PRODUCT_FACILITY__FACILITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacility(Facility newFacility) {
+		eSet(FacilityPackage.Literals.PRODUCT_FACILITY__FACILITY, newFacility);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public long getDaysToShip() {
 		return (Long)eGet(FacilityPackage.Literals.PRODUCT_FACILITY__DAYS_TO_SHIP, true);
 	}
@@ -221,26 +261,6 @@ public class ProductFacilityImpl extends EntityIdentifiableImpl implements Produ
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(FacilityPackage.Literals.PRODUCT_FACILITY__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(FacilityPackage.Literals.PRODUCT_FACILITY__PRODUCT_ID, newProductId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public BigDecimal getReorderQuantity() {
 		return (BigDecimal)eGet(FacilityPackage.Literals.PRODUCT_FACILITY__REORDER_QUANTITY, true);
 	}
@@ -261,8 +281,8 @@ public class ProductFacilityImpl extends EntityIdentifiableImpl implements Produ
 	 * @generated
 	 */
 	@Override
-	public Enumeration getReplenishMethodEnumId() {
-		return (Enumeration)eGet(FacilityPackage.Literals.PRODUCT_FACILITY__REPLENISH_METHOD_ENUM_ID, true);
+	public Enumeration getReplenishMethodEnum() {
+		return (Enumeration)eGet(FacilityPackage.Literals.PRODUCT_FACILITY__REPLENISH_METHOD_ENUM, true);
 	}
 
 	/**
@@ -271,8 +291,8 @@ public class ProductFacilityImpl extends EntityIdentifiableImpl implements Produ
 	 * @generated
 	 */
 	@Override
-	public void setReplenishMethodEnumId(Enumeration newReplenishMethodEnumId) {
-		eSet(FacilityPackage.Literals.PRODUCT_FACILITY__REPLENISH_METHOD_ENUM_ID, newReplenishMethodEnumId);
+	public void setReplenishMethodEnum(Enumeration newReplenishMethodEnum) {
+		eSet(FacilityPackage.Literals.PRODUCT_FACILITY__REPLENISH_METHOD_ENUM, newReplenishMethodEnum);
 	}
 
 	/**
@@ -281,8 +301,8 @@ public class ProductFacilityImpl extends EntityIdentifiableImpl implements Produ
 	 * @generated
 	 */
 	@Override
-	public Enumeration getRequirementMethodEnumId() {
-		return (Enumeration)eGet(FacilityPackage.Literals.PRODUCT_FACILITY__REQUIREMENT_METHOD_ENUM_ID, true);
+	public Enumeration getRequirementMethodEnum() {
+		return (Enumeration)eGet(FacilityPackage.Literals.PRODUCT_FACILITY__REQUIREMENT_METHOD_ENUM, true);
 	}
 
 	/**
@@ -291,8 +311,8 @@ public class ProductFacilityImpl extends EntityIdentifiableImpl implements Produ
 	 * @generated
 	 */
 	@Override
-	public void setRequirementMethodEnumId(Enumeration newRequirementMethodEnumId) {
-		eSet(FacilityPackage.Literals.PRODUCT_FACILITY__REQUIREMENT_METHOD_ENUM_ID, newRequirementMethodEnumId);
+	public void setRequirementMethodEnum(Enumeration newRequirementMethodEnum) {
+		eSet(FacilityPackage.Literals.PRODUCT_FACILITY__REQUIREMENT_METHOD_ENUM, newRequirementMethodEnum);
 	}
 
 	/**
@@ -331,26 +351,6 @@ public class ProductFacilityImpl extends EntityIdentifiableImpl implements Produ
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(FacilityPackage.Literals.PRODUCT_FACILITY__FACILITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(FacilityPackage.Literals.PRODUCT_FACILITY__FACILITY_ID, newFacilityId);
 	}
 
 } //ProductFacilityImpl

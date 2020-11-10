@@ -24,7 +24,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentType#getContentTypeAttrs <em>Content Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentType()
@@ -128,29 +128,25 @@ public interface ContentType extends EntityType<Content>, EntityInfo {
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(ContentType)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(ContentType)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentType_ParentType()
 	 * @model keys="contentTypeId"
 	 * @generated
 	 */
-	ContentType getParentTypeId();
+	ContentType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(ContentType value);
+	void setParentType(ContentType value);
 
 } // ContentType

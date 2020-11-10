@@ -198,13 +198,13 @@ public interface CategoryPackage extends EPackage {
 	int PRODUCT_CATEGORY__MARKET_INTERESTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
-	 * The feature id for the '<em><b>Primary Parent Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Primary Parent Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY__PRIMARY_PARENT_CATEGORY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
+	int PRODUCT_CATEGORY__PRIMARY_PARENT_CATEGORY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Product Category Attributes</b></em>' reference list.
@@ -234,13 +234,13 @@ public interface CategoryPackage extends EPackage {
 	int PRODUCT_CATEGORY__PRODUCT_CATEGORY_MEMBERS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
-	 * The feature id for the '<em><b>Product Category Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Category Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY__PRODUCT_CATEGORY_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
+	int PRODUCT_CATEGORY__PRODUCT_CATEGORY_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Product Feature Cat Grp Appls</b></em>' reference list.
@@ -325,13 +325,13 @@ public interface CategoryPackage extends EPackage {
 	int PRODUCT_CATEGORY_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_ATTRIBUTE__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PRODUCT_CATEGORY_ATTRIBUTE__PRODUCT_CATEGORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -416,31 +416,31 @@ public interface CategoryPackage extends EPackage {
 	int PRODUCT_CATEGORY_CONTENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_CONTENT__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int PRODUCT_CATEGORY_CONTENT__PRODUCT_CATEGORY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Content Id</b></em>' reference.
+	 * The feature id for the '<em><b>Content</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_CONTENT__CONTENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int PRODUCT_CATEGORY_CONTENT__CONTENT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Prod Cat Content Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Prod Cat Content Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_CONTENT__PROD_CAT_CONTENT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int PRODUCT_CATEGORY_CONTENT__PROD_CAT_CONTENT_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -588,13 +588,13 @@ public interface CategoryPackage extends EPackage {
 	int PRODUCT_CATEGORY_CONTENT_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_CONTENT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int PRODUCT_CATEGORY_CONTENT_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Product Category Content Type</em>' class.
@@ -652,40 +652,40 @@ public interface CategoryPackage extends EPackage {
 	int PRODUCT_CATEGORY_GL_ACCOUNT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_GL_ACCOUNT__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PRODUCT_CATEGORY_GL_ACCOUNT__PRODUCT_CATEGORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Organization Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Organization Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_GL_ACCOUNT__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PRODUCT_CATEGORY_GL_ACCOUNT__ORGANIZATION_PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Gl Account Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Gl Account Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_GL_ACCOUNT__GL_ACCOUNT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int PRODUCT_CATEGORY_GL_ACCOUNT__GL_ACCOUNT_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Gl Account Id</b></em>' reference.
+	 * The feature id for the '<em><b>Gl Account</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_GL_ACCOUNT__GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int PRODUCT_CATEGORY_GL_ACCOUNT__GL_ACCOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Product Category Gl Account</em>' class.
@@ -743,13 +743,13 @@ public interface CategoryPackage extends EPackage {
 	int PRODUCT_CATEGORY_LINK__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_LINK__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PRODUCT_CATEGORY_LINK__PRODUCT_CATEGORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -824,13 +824,13 @@ public interface CategoryPackage extends EPackage {
 	int PRODUCT_CATEGORY_LINK__LINK_INFO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
-	 * The feature id for the '<em><b>Link Type Enum Id</b></em>' reference.
+	 * The feature id for the '<em><b>Link Type Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_LINK__LINK_TYPE_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
+	int PRODUCT_CATEGORY_LINK__LINK_TYPE_ENUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -915,22 +915,22 @@ public interface CategoryPackage extends EPackage {
 	int PRODUCT_CATEGORY_MEMBER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_MEMBER__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PRODUCT_CATEGORY_MEMBER__PRODUCT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_MEMBER__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PRODUCT_CATEGORY_MEMBER__PRODUCT_CATEGORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1033,31 +1033,31 @@ public interface CategoryPackage extends EPackage {
 	int PRODUCT_CATEGORY_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PRODUCT_CATEGORY_ROLE__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PRODUCT_CATEGORY_ROLE__ROLE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_ROLE__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int PRODUCT_CATEGORY_ROLE__PRODUCT_CATEGORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1142,22 +1142,22 @@ public interface CategoryPackage extends EPackage {
 	int PRODUCT_CATEGORY_ROLLUP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_ROLLUP__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PRODUCT_CATEGORY_ROLLUP__PRODUCT_CATEGORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Parent Product Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_ROLLUP__PARENT_PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PRODUCT_CATEGORY_ROLLUP__PARENT_PRODUCT_CATEGORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1278,13 +1278,13 @@ public interface CategoryPackage extends EPackage {
 	int PRODUCT_CATEGORY_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int PRODUCT_CATEGORY_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Product Category Type Attrs</b></em>' reference list.
@@ -1351,13 +1351,13 @@ public interface CategoryPackage extends EPackage {
 	int PRODUCT_CATEGORY_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Category Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Category Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_TYPE_ATTR__PRODUCT_CATEGORY_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PRODUCT_CATEGORY_TYPE_ATTR__PRODUCT_CATEGORY_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1508,15 +1508,15 @@ public interface CategoryPackage extends EPackage {
 	EReference getProductCategory_MarketInterests();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getPrimaryParentCategoryId <em>Primary Parent Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getPrimaryParentCategory <em>Primary Parent Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Primary Parent Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategory#getPrimaryParentCategoryId()
+	 * @return the meta object for the reference '<em>Primary Parent Category</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategory#getPrimaryParentCategory()
 	 * @see #getProductCategory()
 	 * @generated
 	 */
-	EReference getProductCategory_PrimaryParentCategoryId();
+	EReference getProductCategory_PrimaryParentCategory();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getProductCategoryAttributes <em>Product Category Attributes</em>}'.
@@ -1552,15 +1552,15 @@ public interface CategoryPackage extends EPackage {
 	EReference getProductCategory_ProductCategoryMembers();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getProductCategoryTypeId <em>Product Category Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getProductCategoryType <em>Product Category Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Category Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategory#getProductCategoryTypeId()
+	 * @return the meta object for the reference '<em>Product Category Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategory#getProductCategoryType()
 	 * @see #getProductCategory()
 	 * @generated
 	 */
-	EReference getProductCategory_ProductCategoryTypeId();
+	EReference getProductCategory_ProductCategoryType();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getProductFeatureCatGrpAppls <em>Product Feature Cat Grp Appls</em>}'.
@@ -1606,15 +1606,15 @@ public interface CategoryPackage extends EPackage {
 	EClass getProductCategoryAttribute();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryAttribute#getProductCategoryId <em>Product Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryAttribute#getProductCategory <em>Product Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryAttribute#getProductCategoryId()
+	 * @return the meta object for the reference '<em>Product Category</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryAttribute#getProductCategory()
 	 * @see #getProductCategoryAttribute()
 	 * @generated
 	 */
-	EReference getProductCategoryAttribute_ProductCategoryId();
+	EReference getProductCategoryAttribute_ProductCategory();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryAttribute#getAttrName <em>Attr Name</em>}'.
@@ -1660,37 +1660,37 @@ public interface CategoryPackage extends EPackage {
 	EClass getProductCategoryContent();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryContent#getProductCategoryId <em>Product Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryContent#getProductCategory <em>Product Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryContent#getProductCategoryId()
+	 * @return the meta object for the reference '<em>Product Category</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryContent#getProductCategory()
 	 * @see #getProductCategoryContent()
 	 * @generated
 	 */
-	EReference getProductCategoryContent_ProductCategoryId();
+	EReference getProductCategoryContent_ProductCategory();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryContent#getContentId <em>Content Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryContent#getContent <em>Content</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Content Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryContent#getContentId()
+	 * @return the meta object for the reference '<em>Content</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryContent#getContent()
 	 * @see #getProductCategoryContent()
 	 * @generated
 	 */
-	EReference getProductCategoryContent_ContentId();
+	EReference getProductCategoryContent_Content();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryContent#getProdCatContentTypeId <em>Prod Cat Content Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryContent#getProdCatContentType <em>Prod Cat Content Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Prod Cat Content Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryContent#getProdCatContentTypeId()
+	 * @return the meta object for the reference '<em>Prod Cat Content Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryContent#getProdCatContentType()
 	 * @see #getProductCategoryContent()
 	 * @generated
 	 */
-	EReference getProductCategoryContent_ProdCatContentTypeId();
+	EReference getProductCategoryContent_ProdCatContentType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryContent#getFromDate <em>From Date</em>}'.
@@ -1802,15 +1802,15 @@ public interface CategoryPackage extends EPackage {
 	EAttribute getProductCategoryContentType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryContentType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryContentType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryContentType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryContentType#getParentType()
 	 * @see #getProductCategoryContentType()
 	 * @generated
 	 */
-	EReference getProductCategoryContentType_ParentTypeId();
+	EReference getProductCategoryContentType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount <em>Product Category Gl Account</em>}'.
@@ -1823,48 +1823,48 @@ public interface CategoryPackage extends EPackage {
 	EClass getProductCategoryGlAccount();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getProductCategoryId <em>Product Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getProductCategory <em>Product Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getProductCategoryId()
+	 * @return the meta object for the reference '<em>Product Category</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getProductCategory()
 	 * @see #getProductCategoryGlAccount()
 	 * @generated
 	 */
-	EReference getProductCategoryGlAccount_ProductCategoryId();
+	EReference getProductCategoryGlAccount_ProductCategory();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getOrganizationPartyId <em>Organization Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getOrganizationParty <em>Organization Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Organization Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getOrganizationPartyId()
+	 * @return the meta object for the reference '<em>Organization Party</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getOrganizationParty()
 	 * @see #getProductCategoryGlAccount()
 	 * @generated
 	 */
-	EReference getProductCategoryGlAccount_OrganizationPartyId();
+	EReference getProductCategoryGlAccount_OrganizationParty();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getGlAccountTypeId <em>Gl Account Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getGlAccountType <em>Gl Account Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Gl Account Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getGlAccountTypeId()
+	 * @return the meta object for the reference '<em>Gl Account Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getGlAccountType()
 	 * @see #getProductCategoryGlAccount()
 	 * @generated
 	 */
-	EReference getProductCategoryGlAccount_GlAccountTypeId();
+	EReference getProductCategoryGlAccount_GlAccountType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getGlAccountId <em>Gl Account Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getGlAccount <em>Gl Account</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Gl Account Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getGlAccountId()
+	 * @return the meta object for the reference '<em>Gl Account</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryGlAccount#getGlAccount()
 	 * @see #getProductCategoryGlAccount()
 	 * @generated
 	 */
-	EReference getProductCategoryGlAccount_GlAccountId();
+	EReference getProductCategoryGlAccount_GlAccount();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink <em>Product Category Link</em>}'.
@@ -1877,15 +1877,15 @@ public interface CategoryPackage extends EPackage {
 	EClass getProductCategoryLink();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getProductCategoryId <em>Product Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getProductCategory <em>Product Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getProductCategoryId()
+	 * @return the meta object for the reference '<em>Product Category</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getProductCategory()
 	 * @see #getProductCategoryLink()
 	 * @generated
 	 */
-	EReference getProductCategoryLink_ProductCategoryId();
+	EReference getProductCategoryLink_ProductCategory();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getLinkSeqId <em>Link Seq Id</em>}'.
@@ -1976,15 +1976,15 @@ public interface CategoryPackage extends EPackage {
 	EAttribute getProductCategoryLink_LinkInfo();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getLinkTypeEnumId <em>Link Type Enum Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getLinkTypeEnum <em>Link Type Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Link Type Enum Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getLinkTypeEnumId()
+	 * @return the meta object for the reference '<em>Link Type Enum</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getLinkTypeEnum()
 	 * @see #getProductCategoryLink()
 	 * @generated
 	 */
-	EReference getProductCategoryLink_LinkTypeEnumId();
+	EReference getProductCategoryLink_LinkTypeEnum();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getSequenceNum <em>Sequence Num</em>}'.
@@ -2030,26 +2030,26 @@ public interface CategoryPackage extends EPackage {
 	EClass getProductCategoryMember();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getProductCategoryId <em>Product Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getProductCategoryId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getProduct()
 	 * @see #getProductCategoryMember()
 	 * @generated
 	 */
-	EReference getProductCategoryMember_ProductCategoryId();
+	EReference getProductCategoryMember_Product();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getProductCategory <em>Product Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getProductId()
+	 * @return the meta object for the reference '<em>Product Category</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getProductCategory()
 	 * @see #getProductCategoryMember()
 	 * @generated
 	 */
-	EReference getProductCategoryMember_ProductId();
+	EReference getProductCategoryMember_ProductCategory();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryMember#getFromDate <em>From Date</em>}'.
@@ -2117,37 +2117,37 @@ public interface CategoryPackage extends EPackage {
 	EClass getProductCategoryRole();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRole#getProductCategoryId <em>Product Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRole#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryRole#getProductCategoryId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryRole#getParty()
 	 * @see #getProductCategoryRole()
 	 * @generated
 	 */
-	EReference getProductCategoryRole_ProductCategoryId();
+	EReference getProductCategoryRole_Party();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRole#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRole#getRoleType <em>Role Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryRole#getPartyId()
+	 * @return the meta object for the reference '<em>Role Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryRole#getRoleType()
 	 * @see #getProductCategoryRole()
 	 * @generated
 	 */
-	EReference getProductCategoryRole_PartyId();
+	EReference getProductCategoryRole_RoleType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRole#getRoleTypeId <em>Role Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRole#getProductCategory <em>Product Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Role Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryRole#getRoleTypeId()
+	 * @return the meta object for the reference '<em>Product Category</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryRole#getProductCategory()
 	 * @see #getProductCategoryRole()
 	 * @generated
 	 */
-	EReference getProductCategoryRole_RoleTypeId();
+	EReference getProductCategoryRole_ProductCategory();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRole#getFromDate <em>From Date</em>}'.
@@ -2193,26 +2193,26 @@ public interface CategoryPackage extends EPackage {
 	EClass getProductCategoryRollup();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getProductCategoryId <em>Product Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getProductCategory <em>Product Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getProductCategoryId()
+	 * @return the meta object for the reference '<em>Product Category</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getProductCategory()
 	 * @see #getProductCategoryRollup()
 	 * @generated
 	 */
-	EReference getProductCategoryRollup_ProductCategoryId();
+	EReference getProductCategoryRollup_ProductCategory();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getParentProductCategoryId <em>Parent Product Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getParentProductCategory <em>Parent Product Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Product Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getParentProductCategoryId()
+	 * @return the meta object for the reference '<em>Parent Product Category</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getParentProductCategory()
 	 * @see #getProductCategoryRollup()
 	 * @generated
 	 */
-	EReference getProductCategoryRollup_ParentProductCategoryId();
+	EReference getProductCategoryRollup_ParentProductCategory();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryRollup#getFromDate <em>From Date</em>}'.
@@ -2291,15 +2291,15 @@ public interface CategoryPackage extends EPackage {
 	EAttribute getProductCategoryType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryType#getParentType()
 	 * @see #getProductCategoryType()
 	 * @generated
 	 */
-	EReference getProductCategoryType_ParentTypeId();
+	EReference getProductCategoryType_ParentType();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryType#getProductCategoryTypeAttrs <em>Product Category Type Attrs</em>}'.
@@ -2323,15 +2323,15 @@ public interface CategoryPackage extends EPackage {
 	EClass getProductCategoryTypeAttr();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryTypeAttr#getProductCategoryTypeId <em>Product Category Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryTypeAttr#getProductCategoryType <em>Product Category Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Category Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryTypeAttr#getProductCategoryTypeId()
+	 * @return the meta object for the reference '<em>Product Category Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategoryTypeAttr#getProductCategoryType()
 	 * @see #getProductCategoryTypeAttr()
 	 * @generated
 	 */
-	EReference getProductCategoryTypeAttr_ProductCategoryTypeId();
+	EReference getProductCategoryTypeAttr_ProductCategoryType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryTypeAttr#getAttrName <em>Attr Name</em>}'.
@@ -2468,12 +2468,12 @@ public interface CategoryPackage extends EPackage {
 		EReference PRODUCT_CATEGORY__MARKET_INTERESTS = eINSTANCE.getProductCategory_MarketInterests();
 
 		/**
-		 * The meta object literal for the '<em><b>Primary Parent Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Primary Parent Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY__PRIMARY_PARENT_CATEGORY_ID = eINSTANCE.getProductCategory_PrimaryParentCategoryId();
+		EReference PRODUCT_CATEGORY__PRIMARY_PARENT_CATEGORY = eINSTANCE.getProductCategory_PrimaryParentCategory();
 
 		/**
 		 * The meta object literal for the '<em><b>Product Category Attributes</b></em>' reference list feature.
@@ -2500,12 +2500,12 @@ public interface CategoryPackage extends EPackage {
 		EReference PRODUCT_CATEGORY__PRODUCT_CATEGORY_MEMBERS = eINSTANCE.getProductCategory_ProductCategoryMembers();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Category Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Category Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY__PRODUCT_CATEGORY_TYPE_ID = eINSTANCE.getProductCategory_ProductCategoryTypeId();
+		EReference PRODUCT_CATEGORY__PRODUCT_CATEGORY_TYPE = eINSTANCE.getProductCategory_ProductCategoryType();
 
 		/**
 		 * The meta object literal for the '<em><b>Product Feature Cat Grp Appls</b></em>' reference list feature.
@@ -2542,12 +2542,12 @@ public interface CategoryPackage extends EPackage {
 		EClass PRODUCT_CATEGORY_ATTRIBUTE = eINSTANCE.getProductCategoryAttribute();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_ATTRIBUTE__PRODUCT_CATEGORY_ID = eINSTANCE.getProductCategoryAttribute_ProductCategoryId();
+		EReference PRODUCT_CATEGORY_ATTRIBUTE__PRODUCT_CATEGORY = eINSTANCE.getProductCategoryAttribute_ProductCategory();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -2584,28 +2584,28 @@ public interface CategoryPackage extends EPackage {
 		EClass PRODUCT_CATEGORY_CONTENT = eINSTANCE.getProductCategoryContent();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_CONTENT__PRODUCT_CATEGORY_ID = eINSTANCE.getProductCategoryContent_ProductCategoryId();
+		EReference PRODUCT_CATEGORY_CONTENT__PRODUCT_CATEGORY = eINSTANCE.getProductCategoryContent_ProductCategory();
 
 		/**
-		 * The meta object literal for the '<em><b>Content Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Content</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_CONTENT__CONTENT_ID = eINSTANCE.getProductCategoryContent_ContentId();
+		EReference PRODUCT_CATEGORY_CONTENT__CONTENT = eINSTANCE.getProductCategoryContent_Content();
 
 		/**
-		 * The meta object literal for the '<em><b>Prod Cat Content Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Prod Cat Content Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_CONTENT__PROD_CAT_CONTENT_TYPE_ID = eINSTANCE.getProductCategoryContent_ProdCatContentTypeId();
+		EReference PRODUCT_CATEGORY_CONTENT__PROD_CAT_CONTENT_TYPE = eINSTANCE.getProductCategoryContent_ProdCatContentType();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -2690,12 +2690,12 @@ public interface CategoryPackage extends EPackage {
 		EAttribute PRODUCT_CATEGORY_CONTENT_TYPE__HAS_TABLE = eINSTANCE.getProductCategoryContentType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_CONTENT_TYPE__PARENT_TYPE_ID = eINSTANCE.getProductCategoryContentType_ParentTypeId();
+		EReference PRODUCT_CATEGORY_CONTENT_TYPE__PARENT_TYPE = eINSTANCE.getProductCategoryContentType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryGlAccountImpl <em>Product Category Gl Account</em>}' class.
@@ -2708,36 +2708,36 @@ public interface CategoryPackage extends EPackage {
 		EClass PRODUCT_CATEGORY_GL_ACCOUNT = eINSTANCE.getProductCategoryGlAccount();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_GL_ACCOUNT__PRODUCT_CATEGORY_ID = eINSTANCE.getProductCategoryGlAccount_ProductCategoryId();
+		EReference PRODUCT_CATEGORY_GL_ACCOUNT__PRODUCT_CATEGORY = eINSTANCE.getProductCategoryGlAccount_ProductCategory();
 
 		/**
-		 * The meta object literal for the '<em><b>Organization Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Organization Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_GL_ACCOUNT__ORGANIZATION_PARTY_ID = eINSTANCE.getProductCategoryGlAccount_OrganizationPartyId();
+		EReference PRODUCT_CATEGORY_GL_ACCOUNT__ORGANIZATION_PARTY = eINSTANCE.getProductCategoryGlAccount_OrganizationParty();
 
 		/**
-		 * The meta object literal for the '<em><b>Gl Account Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Gl Account Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_GL_ACCOUNT__GL_ACCOUNT_TYPE_ID = eINSTANCE.getProductCategoryGlAccount_GlAccountTypeId();
+		EReference PRODUCT_CATEGORY_GL_ACCOUNT__GL_ACCOUNT_TYPE = eINSTANCE.getProductCategoryGlAccount_GlAccountType();
 
 		/**
-		 * The meta object literal for the '<em><b>Gl Account Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Gl Account</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_GL_ACCOUNT__GL_ACCOUNT_ID = eINSTANCE.getProductCategoryGlAccount_GlAccountId();
+		EReference PRODUCT_CATEGORY_GL_ACCOUNT__GL_ACCOUNT = eINSTANCE.getProductCategoryGlAccount_GlAccount();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryLinkImpl <em>Product Category Link</em>}' class.
@@ -2750,12 +2750,12 @@ public interface CategoryPackage extends EPackage {
 		EClass PRODUCT_CATEGORY_LINK = eINSTANCE.getProductCategoryLink();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_LINK__PRODUCT_CATEGORY_ID = eINSTANCE.getProductCategoryLink_ProductCategoryId();
+		EReference PRODUCT_CATEGORY_LINK__PRODUCT_CATEGORY = eINSTANCE.getProductCategoryLink_ProductCategory();
 
 		/**
 		 * The meta object literal for the '<em><b>Link Seq Id</b></em>' attribute feature.
@@ -2822,12 +2822,12 @@ public interface CategoryPackage extends EPackage {
 		EAttribute PRODUCT_CATEGORY_LINK__LINK_INFO = eINSTANCE.getProductCategoryLink_LinkInfo();
 
 		/**
-		 * The meta object literal for the '<em><b>Link Type Enum Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Link Type Enum</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_LINK__LINK_TYPE_ENUM_ID = eINSTANCE.getProductCategoryLink_LinkTypeEnumId();
+		EReference PRODUCT_CATEGORY_LINK__LINK_TYPE_ENUM = eINSTANCE.getProductCategoryLink_LinkTypeEnum();
 
 		/**
 		 * The meta object literal for the '<em><b>Sequence Num</b></em>' attribute feature.
@@ -2864,20 +2864,20 @@ public interface CategoryPackage extends EPackage {
 		EClass PRODUCT_CATEGORY_MEMBER = eINSTANCE.getProductCategoryMember();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_MEMBER__PRODUCT_CATEGORY_ID = eINSTANCE.getProductCategoryMember_ProductCategoryId();
+		EReference PRODUCT_CATEGORY_MEMBER__PRODUCT = eINSTANCE.getProductCategoryMember_Product();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_MEMBER__PRODUCT_ID = eINSTANCE.getProductCategoryMember_ProductId();
+		EReference PRODUCT_CATEGORY_MEMBER__PRODUCT_CATEGORY = eINSTANCE.getProductCategoryMember_ProductCategory();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -2930,28 +2930,28 @@ public interface CategoryPackage extends EPackage {
 		EClass PRODUCT_CATEGORY_ROLE = eINSTANCE.getProductCategoryRole();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_ROLE__PRODUCT_CATEGORY_ID = eINSTANCE.getProductCategoryRole_ProductCategoryId();
+		EReference PRODUCT_CATEGORY_ROLE__PARTY = eINSTANCE.getProductCategoryRole_Party();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Role Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_ROLE__PARTY_ID = eINSTANCE.getProductCategoryRole_PartyId();
+		EReference PRODUCT_CATEGORY_ROLE__ROLE_TYPE = eINSTANCE.getProductCategoryRole_RoleType();
 
 		/**
-		 * The meta object literal for the '<em><b>Role Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_ROLE__ROLE_TYPE_ID = eINSTANCE.getProductCategoryRole_RoleTypeId();
+		EReference PRODUCT_CATEGORY_ROLE__PRODUCT_CATEGORY = eINSTANCE.getProductCategoryRole_ProductCategory();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -2988,20 +2988,20 @@ public interface CategoryPackage extends EPackage {
 		EClass PRODUCT_CATEGORY_ROLLUP = eINSTANCE.getProductCategoryRollup();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_ROLLUP__PRODUCT_CATEGORY_ID = eINSTANCE.getProductCategoryRollup_ProductCategoryId();
+		EReference PRODUCT_CATEGORY_ROLLUP__PRODUCT_CATEGORY = eINSTANCE.getProductCategoryRollup_ProductCategory();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Product Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Product Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_ROLLUP__PARENT_PRODUCT_CATEGORY_ID = eINSTANCE.getProductCategoryRollup_ParentProductCategoryId();
+		EReference PRODUCT_CATEGORY_ROLLUP__PARENT_PRODUCT_CATEGORY = eINSTANCE.getProductCategoryRollup_ParentProductCategory();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -3062,12 +3062,12 @@ public interface CategoryPackage extends EPackage {
 		EAttribute PRODUCT_CATEGORY_TYPE__HAS_TABLE = eINSTANCE.getProductCategoryType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_TYPE__PARENT_TYPE_ID = eINSTANCE.getProductCategoryType_ParentTypeId();
+		EReference PRODUCT_CATEGORY_TYPE__PARENT_TYPE = eINSTANCE.getProductCategoryType_ParentType();
 
 		/**
 		 * The meta object literal for the '<em><b>Product Category Type Attrs</b></em>' reference list feature.
@@ -3088,12 +3088,12 @@ public interface CategoryPackage extends EPackage {
 		EClass PRODUCT_CATEGORY_TYPE_ATTR = eINSTANCE.getProductCategoryTypeAttr();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Category Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Category Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_CATEGORY_TYPE_ATTR__PRODUCT_CATEGORY_TYPE_ID = eINSTANCE.getProductCategoryTypeAttr_ProductCategoryTypeId();
+		EReference PRODUCT_CATEGORY_TYPE_ATTR__PRODUCT_CATEGORY_TYPE = eINSTANCE.getProductCategoryTypeAttr_ProductCategoryType();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.

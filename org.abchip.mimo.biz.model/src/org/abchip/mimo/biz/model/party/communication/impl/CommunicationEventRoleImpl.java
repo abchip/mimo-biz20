@@ -32,11 +32,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventRoleImpl#getCommunicationEventId <em>Communication Event Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventRoleImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventRoleImpl#getContactMechId <em>Contact Mech Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventRoleImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventRoleImpl#getCommunicationEvent <em>Communication Event</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventRoleImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventRoleImpl#getRoleType <em>Role Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventRoleImpl#getContactMech <em>Contact Mech</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventRoleImpl#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @generated
@@ -157,8 +157,8 @@ public class CommunicationEventRoleImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__CONTACT_MECH_ID, true);
+	public CommunicationEvent getCommunicationEvent() {
+		return (CommunicationEvent)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__COMMUNICATION_EVENT, true);
 	}
 
 	/**
@@ -167,8 +167,8 @@ public class CommunicationEventRoleImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__CONTACT_MECH_ID, newContactMechId);
+	public void setCommunicationEvent(CommunicationEvent newCommunicationEvent) {
+		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__COMMUNICATION_EVENT, newCommunicationEvent);
 	}
 
 	/**
@@ -177,8 +177,8 @@ public class CommunicationEventRoleImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__PARTY, true);
 	}
 
 	/**
@@ -187,8 +187,8 @@ public class CommunicationEventRoleImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__PARTY, newParty);
 	}
 
 	/**
@@ -197,8 +197,8 @@ public class CommunicationEventRoleImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__ROLE_TYPE_ID, true);
+	public RoleType getRoleType() {
+		return (RoleType)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__ROLE_TYPE, true);
 	}
 
 	/**
@@ -207,8 +207,8 @@ public class CommunicationEventRoleImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__ROLE_TYPE_ID, newRoleTypeId);
+	public void setRoleType(RoleType newRoleType) {
+		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__ROLE_TYPE, newRoleType);
 	}
 
 	/**
@@ -217,8 +217,8 @@ public class CommunicationEventRoleImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__STATUS_ID, true);
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__CONTACT_MECH, true);
 	}
 
 	/**
@@ -227,8 +227,28 @@ public class CommunicationEventRoleImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__STATUS_ID, newStatusId);
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__CONTACT_MECH, newContactMech);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(StatusItem newStatus) {
+		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__STATUS, newStatus);
 	}
 
 	/**
@@ -267,26 +287,6 @@ public class CommunicationEventRoleImpl extends EntityIdentifiableImpl implement
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CommunicationEvent getCommunicationEventId() {
-		return (CommunicationEvent)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__COMMUNICATION_EVENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCommunicationEventId(CommunicationEvent newCommunicationEventId) {
-		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_ROLE__COMMUNICATION_EVENT_ID, newCommunicationEventId);
 	}
 
 } //CommunicationEventRoleImpl

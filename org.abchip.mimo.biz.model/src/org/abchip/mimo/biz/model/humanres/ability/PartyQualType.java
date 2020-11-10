@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PartyQualType#getPartyQualTypeId <em>Party Qual Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PartyQualType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PartyQualType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PartyQualType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PartyQualType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPartyQualType()
@@ -83,30 +83,26 @@ public interface PartyQualType extends EntityType<PartyQual>, EntityInfo {
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(PartyQualType)
-	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPartyQualType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(PartyQualType)
+	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPartyQualType_ParentType()
 	 * @model keys="partyQualTypeId"
 	 * @generated
 	 */
-	PartyQualType getParentTypeId();
+	PartyQualType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PartyQualType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PartyQualType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(PartyQualType value);
+	void setParentType(PartyQualType value);
 
 	/**
 	 * Returns the value of the '<em><b>Party Qual Type Id</b></em>' attribute.

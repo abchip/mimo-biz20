@@ -67,8 +67,8 @@ public class CreateInpsAgreement implements Callable<Long> {
 		TermType termType = context.createProxy(TermType.class, "INDEMNIFICATION");
 		ResourceWriter<AgreementTerm> agreementTermWriter = context.getResourceManager().getResourceWriter(AgreementTerm.class);
 		AgreementTerm agreementTerm = agreementTermWriter.make(true);
-		agreementTerm.setTermTypeId(termType);
-		agreementTerm.setAgreementId(agreement);
+		agreementTerm.setTermType(termType);
+		agreementTerm.setAgreement(agreement);
 		agreementTerm.setAgreementItemSeqId("00001");
 		Date date1 = new Date();
 
@@ -86,7 +86,7 @@ public class CreateInpsAgreement implements Callable<Long> {
 		// AgreementItem
 		ResourceWriter<AgreementItem> agreementItemWriter = context.getResourceManager().getResourceWriter(AgreementItem.class);
 		AgreementItem agreementItem = agreementItemWriter.make();
-		agreementItem.setAgreementId(agreement);
+		agreementItem.setAgreement(agreement);
 		agreementItem.setAgreementItemSeqId(seqId);
 		agreementItem.setAgreementText(text);
 		agreementItemWriter.create(agreementItem);

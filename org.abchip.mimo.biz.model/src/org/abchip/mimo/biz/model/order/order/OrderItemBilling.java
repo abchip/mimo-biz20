@@ -23,14 +23,14 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getInvoiceId <em>Invoice Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getInvoice <em>Invoice</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getInvoiceItemSeqId <em>Invoice Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getAmount <em>Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getItemIssuanceId <em>Item Issuance Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getItemIssuance <em>Item Issuance</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getQuantity <em>Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getShipmentReceiptId <em>Shipment Receipt Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getShipmentReceipt <em>Shipment Receipt</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemBilling()
@@ -38,6 +38,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface OrderItemBilling extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemBilling_Order()
+	 * @model keys="orderId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	OrderHeader getOrder();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getOrder <em>Order</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
+	 * @generated
+	 */
+	void setOrder(OrderHeader value);
+
+	/**
+	 * Returns the value of the '<em><b>Invoice</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Invoice</em>' reference.
+	 * @see #setInvoice(Invoice)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemBilling_Invoice()
+	 * @model keys="invoiceId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Invoice getInvoice();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getInvoice <em>Invoice</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Invoice</em>' reference.
+	 * @see #getInvoice()
+	 * @generated
+	 */
+	void setInvoice(Invoice value);
+
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -65,31 +111,26 @@ public interface OrderItemBilling extends EntityIdentifiable, EntityInfo {
 	void setAmount(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Invoice Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Item Issuance</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Invoice Id</em>' reference.
-	 * @see #setInvoiceId(Invoice)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemBilling_InvoiceId()
-	 * @model keys="invoiceId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
+	 * @return the value of the '<em>Item Issuance</em>' reference.
+	 * @see #setItemIssuance(ItemIssuance)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemBilling_ItemIssuance()
+	 * @model keys="itemIssuanceId"
 	 * @generated
 	 */
-	Invoice getInvoiceId();
+	ItemIssuance getItemIssuance();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getInvoiceId <em>Invoice Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getItemIssuance <em>Item Issuance</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Invoice Id</em>' reference.
-	 * @see #getInvoiceId()
+	 * @param value the new value of the '<em>Item Issuance</em>' reference.
+	 * @see #getItemIssuance()
 	 * @generated
 	 */
-	void setInvoiceId(Invoice value);
+	void setItemIssuance(ItemIssuance value);
 
 	/**
 	 * Returns the value of the '<em><b>Invoice Item Seq Id</b></em>' attribute.
@@ -118,59 +159,6 @@ public interface OrderItemBilling extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setInvoiceItemSeqId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Item Issuance Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Item Issuance Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Item Issuance Id</em>' reference.
-	 * @see #setItemIssuanceId(ItemIssuance)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemBilling_ItemIssuanceId()
-	 * @model keys="itemIssuanceId"
-	 * @generated
-	 */
-	ItemIssuance getItemIssuanceId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getItemIssuanceId <em>Item Issuance Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Item Issuance Id</em>' reference.
-	 * @see #getItemIssuanceId()
-	 * @generated
-	 */
-	void setItemIssuanceId(ItemIssuance value);
-
-	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemBilling_OrderId()
-	 * @model keys="orderId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	OrderHeader getOrderId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getOrderId <em>Order Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
-	 * @generated
-	 */
-	void setOrderId(OrderHeader value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -227,29 +215,25 @@ public interface OrderItemBilling extends EntityIdentifiable, EntityInfo {
 	void setQuantity(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Shipment Receipt Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Shipment Receipt</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Receipt Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shipment Receipt Id</em>' reference.
-	 * @see #setShipmentReceiptId(ShipmentReceipt)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemBilling_ShipmentReceiptId()
+	 * @return the value of the '<em>Shipment Receipt</em>' reference.
+	 * @see #setShipmentReceipt(ShipmentReceipt)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemBilling_ShipmentReceipt()
 	 * @model keys="receiptId"
 	 * @generated
 	 */
-	ShipmentReceipt getShipmentReceiptId();
+	ShipmentReceipt getShipmentReceipt();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getShipmentReceiptId <em>Shipment Receipt Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getShipmentReceipt <em>Shipment Receipt</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shipment Receipt Id</em>' reference.
-	 * @see #getShipmentReceiptId()
+	 * @param value the new value of the '<em>Shipment Receipt</em>' reference.
+	 * @see #getShipmentReceipt()
 	 * @generated
 	 */
-	void setShipmentReceiptId(ShipmentReceipt value);
+	void setShipmentReceipt(ShipmentReceipt value);
 
 } // OrderItemBilling

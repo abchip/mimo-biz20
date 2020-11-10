@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestWorkEffortImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestWorkEffortImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestWorkEffortImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestWorkEffortImpl#getCustRequestId <em>Cust Request Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestWorkEffortImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestWorkEffortImpl#getCustRequest <em>Cust Request</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestWorkEffortImpl#getWorkEffort <em>Work Effort</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class CustRequestWorkEffortImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public CustRequest getCustRequestId() {
-		return (CustRequest)eGet(RequestPackage.Literals.CUST_REQUEST_WORK_EFFORT__CUST_REQUEST_ID, true);
+	public CustRequest getCustRequest() {
+		return (CustRequest)eGet(RequestPackage.Literals.CUST_REQUEST_WORK_EFFORT__CUST_REQUEST, true);
 	}
 
 	/**
@@ -162,8 +162,8 @@ public class CustRequestWorkEffortImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setCustRequestId(CustRequest newCustRequestId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_WORK_EFFORT__CUST_REQUEST_ID, newCustRequestId);
+	public void setCustRequest(CustRequest newCustRequest) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_WORK_EFFORT__CUST_REQUEST, newCustRequest);
 	}
 
 	/**
@@ -172,8 +172,8 @@ public class CustRequestWorkEffortImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(RequestPackage.Literals.CUST_REQUEST_WORK_EFFORT__WORK_EFFORT_ID, true);
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(RequestPackage.Literals.CUST_REQUEST_WORK_EFFORT__WORK_EFFORT, true);
 	}
 
 	/**
@@ -182,8 +182,8 @@ public class CustRequestWorkEffortImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_WORK_EFFORT__WORK_EFFORT_ID, newWorkEffortId);
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_WORK_EFFORT__WORK_EFFORT, newWorkEffort);
 	}
 
 	/**

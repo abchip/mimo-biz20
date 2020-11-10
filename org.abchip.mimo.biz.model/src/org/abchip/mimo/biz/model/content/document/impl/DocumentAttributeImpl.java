@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentAttributeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentAttributeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentAttributeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentAttributeImpl#getDocumentId <em>Document Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentAttributeImpl#getDocument <em>Document</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentAttributeImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentAttributeImpl#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentAttributeImpl#getAttrValue <em>Attr Value</em>}</li>
@@ -153,6 +153,26 @@ public class DocumentAttributeImpl extends EntityIdentifiableImpl implements Doc
 	 * @generated
 	 */
 	@Override
+	public Document getDocument() {
+		return (Document)eGet(DocumentPackage.Literals.DOCUMENT_ATTRIBUTE__DOCUMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDocument(Document newDocument) {
+		eSet(DocumentPackage.Literals.DOCUMENT_ATTRIBUTE__DOCUMENT, newDocument);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrDescription() {
 		return (String)eGet(DocumentPackage.Literals.DOCUMENT_ATTRIBUTE__ATTR_DESCRIPTION, true);
 	}
@@ -243,26 +263,6 @@ public class DocumentAttributeImpl extends EntityIdentifiableImpl implements Doc
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Document getDocumentId() {
-		return (Document)eGet(DocumentPackage.Literals.DOCUMENT_ATTRIBUTE__DOCUMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDocumentId(Document newDocumentId) {
-		eSet(DocumentPackage.Literals.DOCUMENT_ATTRIBUTE__DOCUMENT_ID, newDocumentId);
 	}
 
 } //DocumentAttributeImpl

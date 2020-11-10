@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationGeoPointImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationGeoPointImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationGeoPointImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationGeoPointImpl#getGeoPointId <em>Geo Point Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationGeoPointImpl#getGeoPoint <em>Geo Point</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationGeoPointImpl#getFacilityId <em>Facility Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationGeoPointImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityLocationGeoPointImpl#getLocationSeqId <em>Location Seq Id</em>}</li>
@@ -154,6 +154,26 @@ public class FacilityLocationGeoPointImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
+	public GeoPoint getGeoPoint() {
+		return (GeoPoint)eGet(FacilityPackage.Literals.FACILITY_LOCATION_GEO_POINT__GEO_POINT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGeoPoint(GeoPoint newGeoPoint) {
+		eSet(FacilityPackage.Literals.FACILITY_LOCATION_GEO_POINT__GEO_POINT, newGeoPoint);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getFacilityId() {
 		return (String)eGet(FacilityPackage.Literals.FACILITY_LOCATION_GEO_POINT__FACILITY_ID, true);
 	}
@@ -186,26 +206,6 @@ public class FacilityLocationGeoPointImpl extends EntityIdentifiableImpl impleme
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(FacilityPackage.Literals.FACILITY_LOCATION_GEO_POINT__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GeoPoint getGeoPointId() {
-		return (GeoPoint)eGet(FacilityPackage.Literals.FACILITY_LOCATION_GEO_POINT__GEO_POINT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGeoPointId(GeoPoint newGeoPointId) {
-		eSet(FacilityPackage.Literals.FACILITY_LOCATION_GEO_POINT__GEO_POINT_ID, newGeoPointId);
 	}
 
 	/**

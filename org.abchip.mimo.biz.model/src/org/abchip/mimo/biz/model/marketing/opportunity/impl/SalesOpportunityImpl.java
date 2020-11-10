@@ -40,22 +40,22 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getSalesOpportunityId <em>Sales Opportunity Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getDataSourceId <em>Data Source Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getEstimatedAmount <em>Estimated Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getEstimatedCloseDate <em>Estimated Close Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getEstimatedProbability <em>Estimated Probability</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getMarketingCampaignId <em>Marketing Campaign Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getMarketingCampaign <em>Marketing Campaign</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getNextStep <em>Next Step</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getNextStepDate <em>Next Step Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getOpportunityName <em>Opportunity Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getOpportunityStageId <em>Opportunity Stage Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getOpportunityStage <em>Opportunity Stage</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getSalesOpportunityCompetitors <em>Sales Opportunity Competitors</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getSalesOpportunityQuotes <em>Sales Opportunity Quotes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getSalesOpportunityTrckCodes <em>Sales Opportunity Trck Codes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getSalesOpportunityWorkEfforts <em>Sales Opportunity Work Efforts</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getTypeEnumId <em>Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl#getTypeEnum <em>Type Enum</em>}</li>
  * </ul>
  *
  * @generated
@@ -197,8 +197,8 @@ public class SalesOpportunityImpl extends EntityIdentifiableImpl implements Sale
 	 * @generated
 	 */
 	@Override
-	public Uom getCurrencyUomId() {
-		return (Uom)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY__CURRENCY_UOM_ID, true);
+	public Uom getCurrencyUom() {
+		return (Uom)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY__CURRENCY_UOM, true);
 	}
 
 	/**
@@ -207,8 +207,8 @@ public class SalesOpportunityImpl extends EntityIdentifiableImpl implements Sale
 	 * @generated
 	 */
 	@Override
-	public void setCurrencyUomId(Uom newCurrencyUomId) {
-		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY__CURRENCY_UOM_ID, newCurrencyUomId);
+	public void setCurrencyUom(Uom newCurrencyUom) {
+		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY__CURRENCY_UOM, newCurrencyUom);
 	}
 
 	/**
@@ -317,8 +317,8 @@ public class SalesOpportunityImpl extends EntityIdentifiableImpl implements Sale
 	 * @generated
 	 */
 	@Override
-	public MarketingCampaign getMarketingCampaignId() {
-		return (MarketingCampaign)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY__MARKETING_CAMPAIGN_ID, true);
+	public MarketingCampaign getMarketingCampaign() {
+		return (MarketingCampaign)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY__MARKETING_CAMPAIGN, true);
 	}
 
 	/**
@@ -327,8 +327,8 @@ public class SalesOpportunityImpl extends EntityIdentifiableImpl implements Sale
 	 * @generated
 	 */
 	@Override
-	public void setMarketingCampaignId(MarketingCampaign newMarketingCampaignId) {
-		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY__MARKETING_CAMPAIGN_ID, newMarketingCampaignId);
+	public void setMarketingCampaign(MarketingCampaign newMarketingCampaign) {
+		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY__MARKETING_CAMPAIGN, newMarketingCampaign);
 	}
 
 	/**
@@ -397,8 +397,8 @@ public class SalesOpportunityImpl extends EntityIdentifiableImpl implements Sale
 	 * @generated
 	 */
 	@Override
-	public SalesOpportunityStage getOpportunityStageId() {
-		return (SalesOpportunityStage)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY__OPPORTUNITY_STAGE_ID, true);
+	public SalesOpportunityStage getOpportunityStage() {
+		return (SalesOpportunityStage)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY__OPPORTUNITY_STAGE, true);
 	}
 
 	/**
@@ -407,8 +407,8 @@ public class SalesOpportunityImpl extends EntityIdentifiableImpl implements Sale
 	 * @generated
 	 */
 	@Override
-	public void setOpportunityStageId(SalesOpportunityStage newOpportunityStageId) {
-		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY__OPPORTUNITY_STAGE_ID, newOpportunityStageId);
+	public void setOpportunityStage(SalesOpportunityStage newOpportunityStage) {
+		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY__OPPORTUNITY_STAGE, newOpportunityStage);
 	}
 
 	/**
@@ -461,6 +461,26 @@ public class SalesOpportunityImpl extends EntityIdentifiableImpl implements Sale
 	 * @generated
 	 */
 	@Override
+	public Enumeration getTypeEnum() {
+		return (Enumeration)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY__TYPE_ENUM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTypeEnum(Enumeration newTypeEnum) {
+		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY__TYPE_ENUM, newTypeEnum);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getSalesOpportunityId() {
 		return (String)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY__SALES_OPPORTUNITY_ID, true);
 	}
@@ -473,26 +493,6 @@ public class SalesOpportunityImpl extends EntityIdentifiableImpl implements Sale
 	@Override
 	public void setSalesOpportunityId(String newSalesOpportunityId) {
 		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY__SALES_OPPORTUNITY_ID, newSalesOpportunityId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Enumeration getTypeEnumId() {
-		return (Enumeration)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY__TYPE_ENUM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTypeEnumId(Enumeration newTypeEnumId) {
-		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY__TYPE_ENUM_ID, newTypeEnumId);
 	}
 
 	/**

@@ -52,8 +52,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getOrderId <em>Order Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getAgreementId <em>Agreement Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getAutoOrderShoppingListId <em>Auto Order Shopping List Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getBillingAccountId <em>Billing Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getAutoOrderShoppingList <em>Auto Order Shopping List</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getBillingAccount <em>Billing Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getCommunicationEventOrders <em>Communication Event Orders</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getCreatedBy <em>Created By</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getCurrencyUom <em>Currency Uom</em>}</li>
@@ -76,21 +76,21 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getOrderItems <em>Order Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getOrderName <em>Order Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getOrderProductPromoCodes <em>Order Product Promo Codes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getOrderTypeId <em>Order Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getOriginFacilityId <em>Origin Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getOrderType <em>Order Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getOriginFacility <em>Origin Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getPickSheetPrintedDate <em>Pick Sheet Printed Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getPriority <em>Priority</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getProductPromoUses <em>Product Promo Uses</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getRemainingSubTotal <em>Remaining Sub Total</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getSalesChannelEnumId <em>Sales Channel Enum Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getSyncStatusId <em>Sync Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getSalesChannelEnum <em>Sales Channel Enum</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getSyncStatus <em>Sync Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getTerminalId <em>Terminal Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getTrackingCodeOrders <em>Tracking Code Orders</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getTransactionId <em>Transaction Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getVisitId <em>Visit Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getWebSiteId <em>Web Site Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderImpl#getWebSite <em>Web Site</em>}</li>
  * </ul>
  *
  * @generated
@@ -214,39 +214,43 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public ShoppingList getAutoOrderShoppingListId() {
-		return (ShoppingList)eGet(OrderPackage.Literals.ORDER_HEADER__AUTO_ORDER_SHOPPING_LIST_ID, true);
+	public ShoppingList getAutoOrderShoppingList() {
+		return (ShoppingList)eGet(OrderPackage.Literals.ORDER_HEADER__AUTO_ORDER_SHOPPING_LIST, true);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public void setAutoOrderShoppingListId(ShoppingList newAutoOrderShoppingListId) {
-		eSet(OrderPackage.Literals.ORDER_HEADER__AUTO_ORDER_SHOPPING_LIST_ID, newAutoOrderShoppingListId);
+	public void setAutoOrderShoppingList(ShoppingList newAutoOrderShoppingList) {
+		eSet(OrderPackage.Literals.ORDER_HEADER__AUTO_ORDER_SHOPPING_LIST, newAutoOrderShoppingList);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public BillingAccount getBillingAccountId() {
-		return (BillingAccount)eGet(OrderPackage.Literals.ORDER_HEADER__BILLING_ACCOUNT_ID, true);
+	public BillingAccount getBillingAccount() {
+		return (BillingAccount)eGet(OrderPackage.Literals.ORDER_HEADER__BILLING_ACCOUNT, true);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public void setBillingAccountId(BillingAccount newBillingAccountId) {
-		eSet(OrderPackage.Literals.ORDER_HEADER__BILLING_ACCOUNT_ID, newBillingAccountId);
+	public void setBillingAccount(BillingAccount newBillingAccount) {
+		eSet(OrderPackage.Literals.ORDER_HEADER__BILLING_ACCOUNT, newBillingAccount);
 	}
 
 	/**
@@ -592,39 +596,43 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public OrderType getOrderTypeId() {
-		return (OrderType)eGet(OrderPackage.Literals.ORDER_HEADER__ORDER_TYPE_ID, true);
+	public OrderType getOrderType() {
+		return (OrderType)eGet(OrderPackage.Literals.ORDER_HEADER__ORDER_TYPE, true);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public void setOrderTypeId(OrderType newOrderTypeId) {
-		eSet(OrderPackage.Literals.ORDER_HEADER__ORDER_TYPE_ID, newOrderTypeId);
+	public void setOrderType(OrderType newOrderType) {
+		eSet(OrderPackage.Literals.ORDER_HEADER__ORDER_TYPE, newOrderType);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Facility getOriginFacilityId() {
-		return (Facility)eGet(OrderPackage.Literals.ORDER_HEADER__ORIGIN_FACILITY_ID, true);
+	public Facility getOriginFacility() {
+		return (Facility)eGet(OrderPackage.Literals.ORDER_HEADER__ORIGIN_FACILITY, true);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public void setOriginFacilityId(Facility newOriginFacilityId) {
-		eSet(OrderPackage.Literals.ORDER_HEADER__ORIGIN_FACILITY_ID, newOriginFacilityId);
+	public void setOriginFacility(Facility newOriginFacility) {
+		eSet(OrderPackage.Literals.ORDER_HEADER__ORIGIN_FACILITY, newOriginFacility);
 	}
 
 	/**
@@ -675,21 +683,23 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(OrderPackage.Literals.ORDER_HEADER__PRODUCT_STORE_ID, true);
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(OrderPackage.Literals.ORDER_HEADER__PRODUCT_STORE, true);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(OrderPackage.Literals.ORDER_HEADER__PRODUCT_STORE_ID, newProductStoreId);
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(OrderPackage.Literals.ORDER_HEADER__PRODUCT_STORE, newProductStore);
 	}
 
 	/**
@@ -711,57 +721,63 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Enumeration getSalesChannelEnumId() {
-		return (Enumeration)eGet(OrderPackage.Literals.ORDER_HEADER__SALES_CHANNEL_ENUM_ID, true);
+	public Enumeration getSalesChannelEnum() {
+		return (Enumeration)eGet(OrderPackage.Literals.ORDER_HEADER__SALES_CHANNEL_ENUM, true);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public void setSalesChannelEnumId(Enumeration newSalesChannelEnumId) {
-		eSet(OrderPackage.Literals.ORDER_HEADER__SALES_CHANNEL_ENUM_ID, newSalesChannelEnumId);
+	public void setSalesChannelEnum(Enumeration newSalesChannelEnum) {
+		eSet(OrderPackage.Literals.ORDER_HEADER__SALES_CHANNEL_ENUM, newSalesChannelEnum);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(OrderPackage.Literals.ORDER_HEADER__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(OrderPackage.Literals.ORDER_HEADER__STATUS, true);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(OrderPackage.Literals.ORDER_HEADER__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(OrderPackage.Literals.ORDER_HEADER__STATUS, newStatus);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public StatusItem getSyncStatusId() {
-		return (StatusItem)eGet(OrderPackage.Literals.ORDER_HEADER__SYNC_STATUS_ID, true);
+	public StatusItem getSyncStatus() {
+		return (StatusItem)eGet(OrderPackage.Literals.ORDER_HEADER__SYNC_STATUS, true);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public void setSyncStatusId(StatusItem newSyncStatusId) {
-		eSet(OrderPackage.Literals.ORDER_HEADER__SYNC_STATUS_ID, newSyncStatusId);
+	public void setSyncStatus(StatusItem newSyncStatus) {
+		eSet(OrderPackage.Literals.ORDER_HEADER__SYNC_STATUS, newSyncStatus);
 	}
 
 	/**
@@ -829,21 +845,23 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public WebSite getWebSiteId() {
-		return (WebSite)eGet(OrderPackage.Literals.ORDER_HEADER__WEB_SITE_ID, true);
+	public WebSite getWebSite() {
+		return (WebSite)eGet(OrderPackage.Literals.ORDER_HEADER__WEB_SITE, true);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public void setWebSiteId(WebSite newWebSiteId) {
-		eSet(OrderPackage.Literals.ORDER_HEADER__WEB_SITE_ID, newWebSiteId);
+	public void setWebSite(WebSite newWebSite) {
+		eSet(OrderPackage.Literals.ORDER_HEADER__WEB_SITE, newWebSite);
 	}
 
 	/**
@@ -854,10 +872,10 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	@Override
 	public boolean isApprovable() {
 
-		if (!eIsSet(OrderPackage.ORDER_HEADER__STATUS_ID))
+		if (!eIsSet(OrderPackage.ORDER_HEADER__STATUS))
 			return false;
 
-		StatusItem statusId = (StatusItem) eGet(OrderPackage.ORDER_HEADER__STATUS_ID, false, true);
+		StatusItem statusId = (StatusItem) eGet(OrderPackage.ORDER_HEADER__STATUS, false, true);
 
 		if (statusId.getID().equals("ORDER_CREATED") || statusId.getID().equals("ORDER_PROCESSING") || statusId.getID().equals("ORDER_HOLD"))
 			return true;
@@ -873,10 +891,10 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	@Override
 	public boolean isCancellable() {
 
-		if (!eIsSet(OrderPackage.ORDER_HEADER__STATUS_ID))
+		if (!eIsSet(OrderPackage.ORDER_HEADER__STATUS))
 			return false;
 
-		StatusItem statusId = (StatusItem) eGet(OrderPackage.ORDER_HEADER__STATUS_ID, false, true);
+		StatusItem statusId = (StatusItem) eGet(OrderPackage.ORDER_HEADER__STATUS, false, true);
 
 		if (statusId.getID().equals("ORDER_CANCELLED") || statusId.getID().equals("ORDER_COMPLETED"))
 			return false;
@@ -892,10 +910,10 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	@Override
 	public boolean isHoldable() {
 
-		if (!eIsSet(OrderPackage.ORDER_HEADER__STATUS_ID))
+		if (!eIsSet(OrderPackage.ORDER_HEADER__STATUS))
 			return false;
 
-		StatusItem statusId = (StatusItem) eGet(OrderPackage.ORDER_HEADER__STATUS_ID, false, true);
+		StatusItem statusId = (StatusItem) eGet(OrderPackage.ORDER_HEADER__STATUS, false, true);
 
 		if (statusId.getID().equals("ORDER_APPROVED"))
 			return true;

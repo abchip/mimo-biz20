@@ -22,10 +22,10 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.RespondingParty#getCustRequestId <em>Cust Request Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.RespondingParty#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.RespondingParty#getCustRequest <em>Cust Request</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.RespondingParty#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.RespondingParty#getRespondingPartySeqId <em>Responding Party Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.RespondingParty#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.RespondingParty#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.RespondingParty#getDateSent <em>Date Sent</em>}</li>
  * </ul>
  *
@@ -35,57 +35,50 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface RespondingParty extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Contact Mech Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #setContactMechId(ContactMech)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getRespondingParty_ContactMechId()
-	 * @model keys="contactMechId"
-	 * @generated
-	 */
-	ContactMech getContactMechId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.RespondingParty#getContactMechId <em>Contact Mech Id</em>}' reference.
+	 * Returns the value of the '<em><b>Cust Request</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #getContactMechId()
-	 * @generated
-	 */
-	void setContactMechId(ContactMech value);
-
-	/**
-	 * Returns the value of the '<em><b>Cust Request Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cust Request Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cust Request Id</em>' reference.
-	 * @see #setCustRequestId(CustRequest)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getRespondingParty_CustRequestId()
+	 * @return the value of the '<em>Cust Request</em>' reference.
+	 * @see #setCustRequest(CustRequest)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getRespondingParty_CustRequest()
 	 * @model keys="custRequestId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	CustRequest getCustRequestId();
+	CustRequest getCustRequest();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.RespondingParty#getCustRequestId <em>Cust Request Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.RespondingParty#getCustRequest <em>Cust Request</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cust Request Id</em>' reference.
-	 * @see #getCustRequestId()
+	 * @param value the new value of the '<em>Cust Request</em>' reference.
+	 * @see #getCustRequest()
 	 * @generated
 	 */
-	void setCustRequestId(CustRequest value);
+	void setCustRequest(CustRequest value);
+
+	/**
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getRespondingParty_Party()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.RespondingParty#getParty <em>Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
+	 * @generated
+	 */
+	void setParty(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Date Sent</b></em>' attribute.
@@ -114,33 +107,6 @@ public interface RespondingParty extends EntityIdentifiable, EntityInfo {
 	void setDateSent(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getRespondingParty_PartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.RespondingParty#getPartyId <em>Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
-	 * @generated
-	 */
-	void setPartyId(Party value);
-
-	/**
 	 * Returns the value of the '<em><b>Responding Party Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -167,5 +133,27 @@ public interface RespondingParty extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setRespondingPartySeqId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Contact Mech</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Contact Mech</em>' reference.
+	 * @see #setContactMech(ContactMech)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getRespondingParty_ContactMech()
+	 * @model keys="contactMechId"
+	 * @generated
+	 */
+	ContactMech getContactMech();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.RespondingParty#getContactMech <em>Contact Mech</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Contact Mech</em>' reference.
+	 * @see #getContactMech()
+	 * @generated
+	 */
+	void setContactMech(ContactMech value);
 
 } // RespondingParty

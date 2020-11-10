@@ -31,8 +31,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTempResImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTempResImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTempResImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTempResImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTempResImpl#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTempResImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTempResImpl#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTempResImpl#getVisitId <em>Visit Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTempResImpl#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTempResImpl#getReservedDate <em>Reserved Date</em>}</li>
@@ -157,8 +157,8 @@ public class InventoryItemTempResImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(InventoryPackage.Literals.INVENTORY_ITEM_TEMP_RES__PRODUCT_ID, true);
+	public Product getProduct() {
+		return (Product)eGet(InventoryPackage.Literals.INVENTORY_ITEM_TEMP_RES__PRODUCT, true);
 	}
 
 	/**
@@ -167,8 +167,8 @@ public class InventoryItemTempResImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setProductId(Product newProductId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM_TEMP_RES__PRODUCT_ID, newProductId);
+	public void setProduct(Product newProduct) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM_TEMP_RES__PRODUCT, newProduct);
 	}
 
 	/**
@@ -177,8 +177,8 @@ public class InventoryItemTempResImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(InventoryPackage.Literals.INVENTORY_ITEM_TEMP_RES__PRODUCT_STORE_ID, true);
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(InventoryPackage.Literals.INVENTORY_ITEM_TEMP_RES__PRODUCT_STORE, true);
 	}
 
 	/**
@@ -187,8 +187,8 @@ public class InventoryItemTempResImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM_TEMP_RES__PRODUCT_STORE_ID, newProductStoreId);
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM_TEMP_RES__PRODUCT_STORE, newProductStore);
 	}
 
 	/**

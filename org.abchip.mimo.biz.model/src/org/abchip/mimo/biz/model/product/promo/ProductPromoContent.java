@@ -22,9 +22,9 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoContent#getProductPromoId <em>Product Promo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoContent#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoContent#getProductPromoContentTypeId <em>Product Promo Content Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoContent#getProductPromo <em>Product Promo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoContent#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoContent#getProductPromoContentType <em>Product Promo Content Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoContent#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoContent#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -35,31 +35,73 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface ProductPromoContent extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Promo</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Id</em>' reference.
-	 * @see #setContentId(Content)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoContent_ContentId()
+	 * @return the value of the '<em>Product Promo</em>' reference.
+	 * @see #setProductPromo(ProductPromo)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoContent_ProductPromo()
+	 * @model keys="productPromoId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductPromo getProductPromo();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoContent#getProductPromo <em>Product Promo</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Promo</em>' reference.
+	 * @see #getProductPromo()
+	 * @generated
+	 */
+	void setProductPromo(ProductPromo value);
+
+	/**
+	 * Returns the value of the '<em><b>Content</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Content</em>' reference.
+	 * @see #setContent(Content)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoContent_Content()
 	 * @model keys="contentId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Content getContentId();
+	Content getContent();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoContent#getContentId <em>Content Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoContent#getContent <em>Content</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Id</em>' reference.
-	 * @see #getContentId()
+	 * @param value the new value of the '<em>Content</em>' reference.
+	 * @see #getContent()
 	 * @generated
 	 */
-	void setContentId(Content value);
+	void setContent(Content value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Promo Content Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Promo Content Type</em>' reference.
+	 * @see #setProductPromoContentType(ProductContentType)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoContent_ProductPromoContentType()
+	 * @model keys="productContentTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductContentType getProductPromoContentType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoContent#getProductPromoContentType <em>Product Promo Content Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Promo Content Type</em>' reference.
+	 * @see #getProductPromoContentType()
+	 * @generated
+	 */
+	void setProductPromoContentType(ProductContentType value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -113,59 +155,5 @@ public interface ProductPromoContent extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Promo Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Promo Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Promo Id</em>' reference.
-	 * @see #setProductPromoId(ProductPromo)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoContent_ProductPromoId()
-	 * @model keys="productPromoId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductPromo getProductPromoId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoContent#getProductPromoId <em>Product Promo Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Promo Id</em>' reference.
-	 * @see #getProductPromoId()
-	 * @generated
-	 */
-	void setProductPromoId(ProductPromo value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Promo Content Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Promo Content Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Promo Content Type Id</em>' reference.
-	 * @see #setProductPromoContentTypeId(ProductContentType)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoContent_ProductPromoContentTypeId()
-	 * @model keys="productContentTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductContentType getProductPromoContentTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoContent#getProductPromoContentTypeId <em>Product Promo Content Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Promo Content Type Id</em>' reference.
-	 * @see #getProductPromoContentTypeId()
-	 * @generated
-	 */
-	void setProductPromoContentTypeId(ProductContentType value);
 
 } // ProductPromoContent

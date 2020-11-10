@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion#getQuestionEnumId <em>Question Enum Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion#getUserLoginId <em>User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion#getQuestionEnum <em>Question Enum</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion#getUserLogin <em>User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion#getSecurityAnswer <em>Security Answer</em>}</li>
  * </ul>
  *
@@ -31,31 +31,50 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface UserLoginSecurityQuestion extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Question Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Question Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Question Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Question Enum Id</em>' reference.
-	 * @see #setQuestionEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLoginSecurityQuestion_QuestionEnumId()
+	 * @return the value of the '<em>Question Enum</em>' reference.
+	 * @see #setQuestionEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLoginSecurityQuestion_QuestionEnum()
 	 * @model keys="enumId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Enumeration getQuestionEnumId();
+	Enumeration getQuestionEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion#getQuestionEnumId <em>Question Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion#getQuestionEnum <em>Question Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Question Enum Id</em>' reference.
-	 * @see #getQuestionEnumId()
+	 * @param value the new value of the '<em>Question Enum</em>' reference.
+	 * @see #getQuestionEnum()
 	 * @generated
 	 */
-	void setQuestionEnumId(Enumeration value);
+	void setQuestionEnum(Enumeration value);
+
+	/**
+	 * Returns the value of the '<em><b>User Login</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>User Login</em>' reference.
+	 * @see #setUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLoginSecurityQuestion_UserLogin()
+	 * @model keys="userLoginId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	UserLogin getUserLogin();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion#getUserLogin <em>User Login</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>User Login</em>' reference.
+	 * @see #getUserLogin()
+	 * @generated
+	 */
+	void setUserLogin(UserLogin value);
 
 	/**
 	 * Returns the value of the '<em><b>Security Answer</b></em>' attribute.
@@ -82,32 +101,5 @@ public interface UserLoginSecurityQuestion extends EntityIdentifiable, EntityInf
 	 * @generated
 	 */
 	void setSecurityAnswer(String value);
-
-	/**
-	 * Returns the value of the '<em><b>User Login Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>User Login Id</em>' reference.
-	 * @see #setUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLoginSecurityQuestion_UserLoginId()
-	 * @model keys="userLoginId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	UserLogin getUserLoginId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion#getUserLoginId <em>User Login Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>User Login Id</em>' reference.
-	 * @see #getUserLoginId()
-	 * @generated
-	 */
-	void setUserLoginId(UserLogin value);
 
 } // UserLoginSecurityQuestion

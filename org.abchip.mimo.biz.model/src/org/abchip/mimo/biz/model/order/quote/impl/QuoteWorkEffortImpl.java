@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteWorkEffortImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteWorkEffortImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteWorkEffortImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteWorkEffortImpl#getQuoteId <em>Quote Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteWorkEffortImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteWorkEffortImpl#getQuote <em>Quote</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteWorkEffortImpl#getWorkEffort <em>Work Effort</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class QuoteWorkEffortImpl extends EntityIdentifiableImpl implements Quote
 	 * @generated
 	 */
 	@Override
-	public Quote getQuoteId() {
-		return (Quote)eGet(QuotePackage.Literals.QUOTE_WORK_EFFORT__QUOTE_ID, true);
+	public Quote getQuote() {
+		return (Quote)eGet(QuotePackage.Literals.QUOTE_WORK_EFFORT__QUOTE, true);
 	}
 
 	/**
@@ -162,8 +162,8 @@ public class QuoteWorkEffortImpl extends EntityIdentifiableImpl implements Quote
 	 * @generated
 	 */
 	@Override
-	public void setQuoteId(Quote newQuoteId) {
-		eSet(QuotePackage.Literals.QUOTE_WORK_EFFORT__QUOTE_ID, newQuoteId);
+	public void setQuote(Quote newQuote) {
+		eSet(QuotePackage.Literals.QUOTE_WORK_EFFORT__QUOTE, newQuote);
 	}
 
 	/**
@@ -172,8 +172,8 @@ public class QuoteWorkEffortImpl extends EntityIdentifiableImpl implements Quote
 	 * @generated
 	 */
 	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(QuotePackage.Literals.QUOTE_WORK_EFFORT__WORK_EFFORT_ID, true);
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(QuotePackage.Literals.QUOTE_WORK_EFFORT__WORK_EFFORT, true);
 	}
 
 	/**
@@ -182,8 +182,8 @@ public class QuoteWorkEffortImpl extends EntityIdentifiableImpl implements Quote
 	 * @generated
 	 */
 	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(QuotePackage.Literals.QUOTE_WORK_EFFORT__WORK_EFFORT_ID, newWorkEffortId);
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(QuotePackage.Literals.QUOTE_WORK_EFFORT__WORK_EFFORT, newWorkEffort);
 	}
 
 	/**

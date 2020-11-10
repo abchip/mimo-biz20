@@ -35,28 +35,28 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getInventoryItemId <em>Inventory Item Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getInventoryItem <em>Inventory Item</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getInventoryItemDetailSeqId <em>Inventory Item Detail Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getAccountingQuantityDiff <em>Accounting Quantity Diff</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getAvailableToPromiseDiff <em>Available To Promise Diff</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getEffectiveDate <em>Effective Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getItemIssuanceId <em>Item Issuance Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getItemIssuance <em>Item Issuance</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getMaintHistSeqId <em>Maint Hist Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getOrderId <em>Order Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getPhysicalInventoryId <em>Physical Inventory Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getPhysicalInventory <em>Physical Inventory</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getQuantityOnHandDiff <em>Quantity On Hand Diff</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getReasonEnumId <em>Reason Enum Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getReceiptId <em>Receipt Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getReasonEnum <em>Reason Enum</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getReceipt <em>Receipt</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getReturnId <em>Return Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getReturnItemSeqId <em>Return Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getShipGroupSeqId <em>Ship Group Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getShipmentId <em>Shipment Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getShipmentItemSeqId <em>Shipment Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getUnitCost <em>Unit Cost</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemDetailImpl#getWorkEffort <em>Work Effort</em>}</li>
  * </ul>
  *
  * @generated
@@ -178,6 +178,26 @@ public class InventoryItemDetailImpl extends EntityIdentifiableImpl implements I
 	 * @generated
 	 */
 	@Override
+	public InventoryItem getInventoryItem() {
+		return (InventoryItem)eGet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__INVENTORY_ITEM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInventoryItem(InventoryItem newInventoryItem) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__INVENTORY_ITEM, newInventoryItem);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAccountingQuantityDiff() {
 		return (BigDecimal)eGet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__ACCOUNTING_QUANTITY_DIFF, true);
 	}
@@ -278,6 +298,26 @@ public class InventoryItemDetailImpl extends EntityIdentifiableImpl implements I
 	 * @generated
 	 */
 	@Override
+	public ItemIssuance getItemIssuance() {
+		return (ItemIssuance)eGet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__ITEM_ISSUANCE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setItemIssuance(ItemIssuance newItemIssuance) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__ITEM_ISSUANCE, newItemIssuance);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getInventoryItemDetailSeqId() {
 		return (String)eGet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__INVENTORY_ITEM_DETAIL_SEQ_ID, true);
 	}
@@ -290,26 +330,6 @@ public class InventoryItemDetailImpl extends EntityIdentifiableImpl implements I
 	@Override
 	public void setInventoryItemDetailSeqId(String newInventoryItemDetailSeqId) {
 		eSet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__INVENTORY_ITEM_DETAIL_SEQ_ID, newInventoryItemDetailSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ItemIssuance getItemIssuanceId() {
-		return (ItemIssuance)eGet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__ITEM_ISSUANCE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setItemIssuanceId(ItemIssuance newItemIssuanceId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__ITEM_ISSUANCE_ID, newItemIssuanceId);
 	}
 
 	/**
@@ -378,6 +398,26 @@ public class InventoryItemDetailImpl extends EntityIdentifiableImpl implements I
 	 * @generated
 	 */
 	@Override
+	public PhysicalInventory getPhysicalInventory() {
+		return (PhysicalInventory)eGet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__PHYSICAL_INVENTORY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPhysicalInventory(PhysicalInventory newPhysicalInventory) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__PHYSICAL_INVENTORY, newPhysicalInventory);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getQuantityOnHandDiff() {
 		return (BigDecimal)eGet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__QUANTITY_ON_HAND_DIFF, true);
 	}
@@ -398,8 +438,8 @@ public class InventoryItemDetailImpl extends EntityIdentifiableImpl implements I
 	 * @generated
 	 */
 	@Override
-	public Enumeration getReasonEnumId() {
-		return (Enumeration)eGet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__REASON_ENUM_ID, true);
+	public Enumeration getReasonEnum() {
+		return (Enumeration)eGet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__REASON_ENUM, true);
 	}
 
 	/**
@@ -408,8 +448,8 @@ public class InventoryItemDetailImpl extends EntityIdentifiableImpl implements I
 	 * @generated
 	 */
 	@Override
-	public void setReasonEnumId(Enumeration newReasonEnumId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__REASON_ENUM_ID, newReasonEnumId);
+	public void setReasonEnum(Enumeration newReasonEnum) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__REASON_ENUM, newReasonEnum);
 	}
 
 	/**
@@ -418,8 +458,8 @@ public class InventoryItemDetailImpl extends EntityIdentifiableImpl implements I
 	 * @generated
 	 */
 	@Override
-	public ShipmentReceipt getReceiptId() {
-		return (ShipmentReceipt)eGet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__RECEIPT_ID, true);
+	public ShipmentReceipt getReceipt() {
+		return (ShipmentReceipt)eGet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__RECEIPT, true);
 	}
 
 	/**
@@ -428,8 +468,8 @@ public class InventoryItemDetailImpl extends EntityIdentifiableImpl implements I
 	 * @generated
 	 */
 	@Override
-	public void setReceiptId(ShipmentReceipt newReceiptId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__RECEIPT_ID, newReceiptId);
+	public void setReceipt(ShipmentReceipt newReceipt) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__RECEIPT, newReceipt);
 	}
 
 	/**
@@ -558,8 +598,8 @@ public class InventoryItemDetailImpl extends EntityIdentifiableImpl implements I
 	 * @generated
 	 */
 	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__WORK_EFFORT_ID, true);
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__WORK_EFFORT, true);
 	}
 
 	/**
@@ -568,8 +608,8 @@ public class InventoryItemDetailImpl extends EntityIdentifiableImpl implements I
 	 * @generated
 	 */
 	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__WORK_EFFORT_ID, newWorkEffortId);
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__WORK_EFFORT, newWorkEffort);
 	}
 
 	/**
@@ -608,46 +648,6 @@ public class InventoryItemDetailImpl extends EntityIdentifiableImpl implements I
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InventoryItem getInventoryItemId() {
-		return (InventoryItem)eGet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__INVENTORY_ITEM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInventoryItemId(InventoryItem newInventoryItemId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__INVENTORY_ITEM_ID, newInventoryItemId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PhysicalInventory getPhysicalInventoryId() {
-		return (PhysicalInventory)eGet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__PHYSICAL_INVENTORY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPhysicalInventoryId(PhysicalInventory newPhysicalInventoryId) {
-		eSet(InventoryPackage.Literals.INVENTORY_ITEM_DETAIL__PHYSICAL_INVENTORY_ID, newPhysicalInventoryId);
 	}
 
 } //InventoryItemDetailImpl

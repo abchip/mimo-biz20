@@ -58,8 +58,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getAccommodationMapId <em>Accommodation Map Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getAccommodationSpotId <em>Accommodation Spot Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getAccommodationMap <em>Accommodation Map</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getAccommodationSpot <em>Accommodation Spot</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getActualCompletionDate <em>Actual Completion Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getActualMilliSeconds <em>Actual Milli Seconds</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getActualSetupMillis <em>Actual Setup Millis</em>}</li>
@@ -67,40 +67,40 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getCommunicationEventWorkEffs <em>Communication Event Work Effs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getCreatedDate <em>Created Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getCurrentStatusId <em>Current Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getCurrentStatus <em>Current Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getEstimateCalcMethod <em>Estimate Calc Method</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getEstimatedCompletionDate <em>Estimated Completion Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getEstimatedMilliSeconds <em>Estimated Milli Seconds</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getEstimatedSetupMillis <em>Estimated Setup Millis</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getEstimatedStartDate <em>Estimated Start Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getFacilityId <em>Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getFacility <em>Facility</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getFixedAsset <em>Fixed Asset</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getInfoUrl <em>Info Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getLastStatusUpdate <em>Last Status Update</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getLocationDesc <em>Location Desc</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getMoneyUomId <em>Money Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getNoteId <em>Note Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getMoneyUom <em>Money Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getNote <em>Note</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getPercentComplete <em>Percent Complete</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getPriority <em>Priority</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getQuantityProduced <em>Quantity Produced</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getQuantityRejected <em>Quantity Rejected</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getQuantityToProduce <em>Quantity To Produce</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getRecurrenceInfoId <em>Recurrence Info Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getRecurrenceInfo <em>Recurrence Info</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getReserv2ndPPPerc <em>Reserv2nd PP Perc</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getReservNthPPPerc <em>Reserv Nth PP Perc</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getReservPersons <em>Reserv Persons</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getRevisionNumber <em>Revision Number</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getRuntimeDataId <em>Runtime Data Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getScopeEnumId <em>Scope Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getRuntimeData <em>Runtime Data</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getScopeEnum <em>Scope Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#isSendNotificationEmail <em>Send Notification Email</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getServiceLoaderName <em>Service Loader Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getShowAsEnumId <em>Show As Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getSourceReferenceId <em>Source Reference Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getSpecialTerms <em>Special Terms</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getTempExprId <em>Temp Expr Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getTempExpr <em>Temp Expr</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getTimeTransparency <em>Time Transparency</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getTotalMilliSecondsAllowed <em>Total Milli Seconds Allowed</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getTotalMoneyAllowed <em>Total Money Allowed</em>}</li>
@@ -117,11 +117,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortKeywords <em>Work Effort Keywords</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortName <em>Work Effort Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortNotes <em>Work Effort Notes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortParentId <em>Work Effort Parent Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortPurposeTypeId <em>Work Effort Purpose Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortParent <em>Work Effort Parent</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortPurposeType <em>Work Effort Purpose Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortSkillStandards <em>Work Effort Skill Standards</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortSurveyAppls <em>Work Effort Survey Appls</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortTypeId <em>Work Effort Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortType <em>Work Effort Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -235,46 +235,6 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	@Override
 	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
 		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public AccommodationMap getAccommodationMapId() {
-		return (AccommodationMap)eGet(WorkeffortPackage.Literals.WORK_EFFORT__ACCOMMODATION_MAP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAccommodationMapId(AccommodationMap newAccommodationMapId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT__ACCOMMODATION_MAP_ID, newAccommodationMapId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public AccommodationSpot getAccommodationSpotId() {
-		return (AccommodationSpot)eGet(WorkeffortPackage.Literals.WORK_EFFORT__ACCOMMODATION_SPOT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAccommodationSpotId(AccommodationSpot newAccommodationSpotId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT__ACCOMMODATION_SPOT_ID, newAccommodationSpotId);
 	}
 
 	/**
@@ -414,8 +374,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public StatusItem getCurrentStatusId() {
-		return (StatusItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT__CURRENT_STATUS_ID, true);
+	public StatusItem getCurrentStatus() {
+		return (StatusItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT__CURRENT_STATUS, true);
 	}
 
 	/**
@@ -424,8 +384,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public void setCurrentStatusId(StatusItem newCurrentStatusId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT__CURRENT_STATUS_ID, newCurrentStatusId);
+	public void setCurrentStatus(StatusItem newCurrentStatus) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT__CURRENT_STATUS, newCurrentStatus);
 	}
 
 	/**
@@ -554,8 +514,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(WorkeffortPackage.Literals.WORK_EFFORT__FACILITY_ID, true);
+	public Facility getFacility() {
+		return (Facility)eGet(WorkeffortPackage.Literals.WORK_EFFORT__FACILITY, true);
 	}
 
 	/**
@@ -564,8 +524,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT__FACILITY_ID, newFacilityId);
+	public void setFacility(Facility newFacility) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT__FACILITY, newFacility);
 	}
 
 	/**
@@ -574,8 +534,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public FixedAsset getFixedAssetId() {
-		return (FixedAsset)eGet(WorkeffortPackage.Literals.WORK_EFFORT__FIXED_ASSET_ID, true);
+	public FixedAsset getFixedAsset() {
+		return (FixedAsset)eGet(WorkeffortPackage.Literals.WORK_EFFORT__FIXED_ASSET, true);
 	}
 
 	/**
@@ -584,8 +544,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public void setFixedAssetId(FixedAsset newFixedAssetId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT__FIXED_ASSET_ID, newFixedAssetId);
+	public void setFixedAsset(FixedAsset newFixedAsset) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT__FIXED_ASSET, newFixedAsset);
 	}
 
 	/**
@@ -694,8 +654,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public Uom getMoneyUomId() {
-		return (Uom)eGet(WorkeffortPackage.Literals.WORK_EFFORT__MONEY_UOM_ID, true);
+	public Uom getMoneyUom() {
+		return (Uom)eGet(WorkeffortPackage.Literals.WORK_EFFORT__MONEY_UOM, true);
 	}
 
 	/**
@@ -704,8 +664,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public void setMoneyUomId(Uom newMoneyUomId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT__MONEY_UOM_ID, newMoneyUomId);
+	public void setMoneyUom(Uom newMoneyUom) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT__MONEY_UOM, newMoneyUom);
 	}
 
 	/**
@@ -714,8 +674,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public NoteData getNoteId() {
-		return (NoteData)eGet(WorkeffortPackage.Literals.WORK_EFFORT__NOTE_ID, true);
+	public NoteData getNote() {
+		return (NoteData)eGet(WorkeffortPackage.Literals.WORK_EFFORT__NOTE, true);
 	}
 
 	/**
@@ -724,8 +684,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public void setNoteId(NoteData newNoteId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT__NOTE_ID, newNoteId);
+	public void setNote(NoteData newNote) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT__NOTE, newNote);
 	}
 
 	/**
@@ -834,8 +794,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public RecurrenceInfo getRecurrenceInfoId() {
-		return (RecurrenceInfo)eGet(WorkeffortPackage.Literals.WORK_EFFORT__RECURRENCE_INFO_ID, true);
+	public RecurrenceInfo getRecurrenceInfo() {
+		return (RecurrenceInfo)eGet(WorkeffortPackage.Literals.WORK_EFFORT__RECURRENCE_INFO, true);
 	}
 
 	/**
@@ -844,8 +804,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public void setRecurrenceInfoId(RecurrenceInfo newRecurrenceInfoId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT__RECURRENCE_INFO_ID, newRecurrenceInfoId);
+	public void setRecurrenceInfo(RecurrenceInfo newRecurrenceInfo) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT__RECURRENCE_INFO, newRecurrenceInfo);
 	}
 
 	/**
@@ -934,6 +894,46 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
+	public RuntimeData getRuntimeData() {
+		return (RuntimeData)eGet(WorkeffortPackage.Literals.WORK_EFFORT__RUNTIME_DATA, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRuntimeData(RuntimeData newRuntimeData) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT__RUNTIME_DATA, newRuntimeData);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Enumeration getScopeEnum() {
+		return (Enumeration)eGet(WorkeffortPackage.Literals.WORK_EFFORT__SCOPE_ENUM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setScopeEnum(Enumeration newScopeEnum) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT__SCOPE_ENUM, newScopeEnum);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean isSendNotificationEmail() {
 		return (Boolean)eGet(WorkeffortPackage.Literals.WORK_EFFORT__SEND_NOTIFICATION_EMAIL, true);
 	}
@@ -946,46 +946,6 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	@Override
 	public void setSendNotificationEmail(boolean newSendNotificationEmail) {
 		eSet(WorkeffortPackage.Literals.WORK_EFFORT__SEND_NOTIFICATION_EMAIL, newSendNotificationEmail);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public RuntimeData getRuntimeDataId() {
-		return (RuntimeData)eGet(WorkeffortPackage.Literals.WORK_EFFORT__RUNTIME_DATA_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRuntimeDataId(RuntimeData newRuntimeDataId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT__RUNTIME_DATA_ID, newRuntimeDataId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Enumeration getScopeEnumId() {
-		return (Enumeration)eGet(WorkeffortPackage.Literals.WORK_EFFORT__SCOPE_ENUM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setScopeEnumId(Enumeration newScopeEnumId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT__SCOPE_ENUM_ID, newScopeEnumId);
 	}
 
 	/**
@@ -1074,8 +1034,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public TemporalExpression getTempExprId() {
-		return (TemporalExpression)eGet(WorkeffortPackage.Literals.WORK_EFFORT__TEMP_EXPR_ID, true);
+	public TemporalExpression getTempExpr() {
+		return (TemporalExpression)eGet(WorkeffortPackage.Literals.WORK_EFFORT__TEMP_EXPR, true);
 	}
 
 	/**
@@ -1084,8 +1044,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public void setTempExprId(TemporalExpression newTempExprId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT__TEMP_EXPR_ID, newTempExprId);
+	public void setTempExpr(TemporalExpression newTempExpr) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT__TEMP_EXPR, newTempExpr);
 	}
 
 	/**
@@ -1304,6 +1264,46 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
+	public AccommodationMap getAccommodationMap() {
+		return (AccommodationMap)eGet(WorkeffortPackage.Literals.WORK_EFFORT__ACCOMMODATION_MAP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAccommodationMap(AccommodationMap newAccommodationMap) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT__ACCOMMODATION_MAP, newAccommodationMap);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AccommodationSpot getAccommodationSpot() {
+		return (AccommodationSpot)eGet(WorkeffortPackage.Literals.WORK_EFFORT__ACCOMMODATION_SPOT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAccommodationSpot(AccommodationSpot newAccommodationSpot) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT__ACCOMMODATION_SPOT, newAccommodationSpot);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getWorkEffortName() {
 		return (String)eGet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_NAME, true);
 	}
@@ -1335,8 +1335,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public WorkEffort getWorkEffortParentId() {
-		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_PARENT_ID, true);
+	public WorkEffort getWorkEffortParent() {
+		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_PARENT, true);
 	}
 
 	/**
@@ -1345,8 +1345,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public void setWorkEffortParentId(WorkEffort newWorkEffortParentId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_PARENT_ID, newWorkEffortParentId);
+	public void setWorkEffortParent(WorkEffort newWorkEffortParent) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_PARENT, newWorkEffortParent);
 	}
 
 	/**
@@ -1355,8 +1355,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public WorkEffortPurposeType getWorkEffortPurposeTypeId() {
-		return (WorkEffortPurposeType)eGet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_PURPOSE_TYPE_ID, true);
+	public WorkEffortPurposeType getWorkEffortPurposeType() {
+		return (WorkEffortPurposeType)eGet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_PURPOSE_TYPE, true);
 	}
 
 	/**
@@ -1365,8 +1365,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public void setWorkEffortPurposeTypeId(WorkEffortPurposeType newWorkEffortPurposeTypeId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_PURPOSE_TYPE_ID, newWorkEffortPurposeTypeId);
+	public void setWorkEffortPurposeType(WorkEffortPurposeType newWorkEffortPurposeType) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_PURPOSE_TYPE, newWorkEffortPurposeType);
 	}
 
 	/**
@@ -1397,8 +1397,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public WorkEffortType getWorkEffortTypeId() {
-		return (WorkEffortType)eGet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_TYPE_ID, true);
+	public WorkEffortType getWorkEffortType() {
+		return (WorkEffortType)eGet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_TYPE, true);
 	}
 
 	/**
@@ -1407,8 +1407,8 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 * @generated
 	 */
 	@Override
-	public void setWorkEffortTypeId(WorkEffortType newWorkEffortTypeId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_TYPE_ID, newWorkEffortTypeId);
+	public void setWorkEffortType(WorkEffortType newWorkEffortType) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_TYPE, newWorkEffortType);
 	}
 
 	/**

@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeImpl#getBudgetItemTypeAttrs <em>Budget Item Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -202,8 +202,8 @@ public class BudgetItemTypeImpl extends EntityTypeImpl<BudgetItem> implements Bu
 	 * @generated
 	 */
 	@Override
-	public BudgetItemType getParentTypeId() {
-		return (BudgetItemType)eGet(BudgetPackage.Literals.BUDGET_ITEM_TYPE__PARENT_TYPE_ID, true);
+	public BudgetItemType getParentType() {
+		return (BudgetItemType)eGet(BudgetPackage.Literals.BUDGET_ITEM_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -212,8 +212,8 @@ public class BudgetItemTypeImpl extends EntityTypeImpl<BudgetItem> implements Bu
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(BudgetItemType newParentTypeId) {
-		eSet(BudgetPackage.Literals.BUDGET_ITEM_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(BudgetItemType newParentType) {
+		eSet(BudgetPackage.Literals.BUDGET_ITEM_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

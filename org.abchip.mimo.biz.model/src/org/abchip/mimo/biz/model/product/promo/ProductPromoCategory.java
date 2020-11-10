@@ -21,14 +21,14 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getProductPromoId <em>Product Promo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getProductCategoryId <em>Product Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getProductPromo <em>Product Promo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getProductCategory <em>Product Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getAndGroupId <em>And Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getProductPromoActionSeqId <em>Product Promo Action Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getProductPromoCondSeqId <em>Product Promo Cond Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getProductPromoRuleId <em>Product Promo Rule Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getIncludeSubCategories <em>Include Sub Categories</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getProductPromoApplEnumId <em>Product Promo Appl Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getProductPromoApplEnum <em>Product Promo Appl Enum</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCategory()
@@ -36,6 +36,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductPromoCategory extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product Promo</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Promo</em>' reference.
+	 * @see #setProductPromo(ProductPromo)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCategory_ProductPromo()
+	 * @model keys="productPromoId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductPromo getProductPromo();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getProductPromo <em>Product Promo</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Promo</em>' reference.
+	 * @see #getProductPromo()
+	 * @generated
+	 */
+	void setProductPromo(ProductPromo value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Category</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Category</em>' reference.
+	 * @see #setProductCategory(ProductCategory)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCategory_ProductCategory()
+	 * @model keys="productCategoryId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductCategory getProductCategory();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getProductCategory <em>Product Category</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Category</em>' reference.
+	 * @see #getProductCategory()
+	 * @generated
+	 */
+	void setProductCategory(ProductCategory value);
+
 	/**
 	 * Returns the value of the '<em><b>And Group Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -91,32 +137,6 @@ public interface ProductPromoCategory extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setProductPromoActionSeqId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Promo Appl Enum Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Promo Appl Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Promo Appl Enum Id</em>' reference.
-	 * @see #setProductPromoApplEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCategory_ProductPromoApplEnumId()
-	 * @model keys="enumId"
-	 * @generated
-	 */
-	Enumeration getProductPromoApplEnumId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getProductPromoApplEnumId <em>Product Promo Appl Enum Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Promo Appl Enum Id</em>' reference.
-	 * @see #getProductPromoApplEnumId()
-	 * @generated
-	 */
-	void setProductPromoApplEnumId(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Promo Cond Seq Id</b></em>' attribute.
@@ -197,57 +217,25 @@ public interface ProductPromoCategory extends EntityIdentifiable, EntityInfo {
 	void setIncludeSubCategories(Boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Promo Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Promo Appl Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Promo Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Promo Id</em>' reference.
-	 * @see #setProductPromoId(ProductPromo)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCategory_ProductPromoId()
-	 * @model keys="productPromoId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
+	 * @return the value of the '<em>Product Promo Appl Enum</em>' reference.
+	 * @see #setProductPromoApplEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCategory_ProductPromoApplEnum()
+	 * @model keys="enumId"
 	 * @generated
 	 */
-	ProductPromo getProductPromoId();
+	Enumeration getProductPromoApplEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getProductPromoId <em>Product Promo Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getProductPromoApplEnum <em>Product Promo Appl Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Promo Id</em>' reference.
-	 * @see #getProductPromoId()
+	 * @param value the new value of the '<em>Product Promo Appl Enum</em>' reference.
+	 * @see #getProductPromoApplEnum()
 	 * @generated
 	 */
-	void setProductPromoId(ProductPromo value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Category Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Category Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Category Id</em>' reference.
-	 * @see #setProductCategoryId(ProductCategory)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCategory_ProductCategoryId()
-	 * @model keys="productCategoryId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductCategory getProductCategoryId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getProductCategoryId <em>Product Category Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Category Id</em>' reference.
-	 * @see #getProductCategoryId()
-	 * @generated
-	 */
-	void setProductCategoryId(ProductCategory value);
+	void setProductPromoApplEnum(Enumeration value);
 
 } // ProductPromoCategory

@@ -33,13 +33,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetProductImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetProductImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetProductImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetProductImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetProductImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetProductImpl#getFixedAssetProductTypeId <em>Fixed Asset Product Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetProductImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetProductImpl#getFixedAsset <em>Fixed Asset</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetProductImpl#getFixedAssetProductType <em>Fixed Asset Product Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetProductImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetProductImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetProductImpl#getQuantity <em>Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetProductImpl#getQuantityUomId <em>Quantity Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetProductImpl#getQuantityUom <em>Quantity Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetProductImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetProductImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -162,6 +162,66 @@ public class FixedAssetProductImpl extends EntityTypedImpl<FixedAssetProductType
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(FixedassetPackage.Literals.FIXED_ASSET_PRODUCT__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_PRODUCT__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FixedAsset getFixedAsset() {
+		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET_PRODUCT__FIXED_ASSET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFixedAsset(FixedAsset newFixedAsset) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_PRODUCT__FIXED_ASSET, newFixedAsset);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FixedAssetProductType getFixedAssetProductType() {
+		return (FixedAssetProductType)eGet(FixedassetPackage.Literals.FIXED_ASSET_PRODUCT__FIXED_ASSET_PRODUCT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFixedAssetProductType(FixedAssetProductType newFixedAssetProductType) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_PRODUCT__FIXED_ASSET_PRODUCT_TYPE, newFixedAssetProductType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getComments() {
 		return (String)eGet(FixedassetPackage.Literals.FIXED_ASSET_PRODUCT__COMMENTS, true);
 	}
@@ -202,26 +262,6 @@ public class FixedAssetProductImpl extends EntityTypedImpl<FixedAssetProductType
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(FixedassetPackage.Literals.FIXED_ASSET_PRODUCT__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_PRODUCT__PRODUCT_ID, newProductId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public BigDecimal getQuantity() {
 		return (BigDecimal)eGet(FixedassetPackage.Literals.FIXED_ASSET_PRODUCT__QUANTITY, true);
 	}
@@ -242,8 +282,8 @@ public class FixedAssetProductImpl extends EntityTypedImpl<FixedAssetProductType
 	 * @generated
 	 */
 	@Override
-	public Uom getQuantityUomId() {
-		return (Uom)eGet(FixedassetPackage.Literals.FIXED_ASSET_PRODUCT__QUANTITY_UOM_ID, true);
+	public Uom getQuantityUom() {
+		return (Uom)eGet(FixedassetPackage.Literals.FIXED_ASSET_PRODUCT__QUANTITY_UOM, true);
 	}
 
 	/**
@@ -252,8 +292,8 @@ public class FixedAssetProductImpl extends EntityTypedImpl<FixedAssetProductType
 	 * @generated
 	 */
 	@Override
-	public void setQuantityUomId(Uom newQuantityUomId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_PRODUCT__QUANTITY_UOM_ID, newQuantityUomId);
+	public void setQuantityUom(Uom newQuantityUom) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_PRODUCT__QUANTITY_UOM, newQuantityUom);
 	}
 
 	/**
@@ -332,46 +372,6 @@ public class FixedAssetProductImpl extends EntityTypedImpl<FixedAssetProductType
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FixedAsset getFixedAssetId() {
-		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET_PRODUCT__FIXED_ASSET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFixedAssetId(FixedAsset newFixedAssetId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_PRODUCT__FIXED_ASSET_ID, newFixedAssetId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FixedAssetProductType getFixedAssetProductTypeId() {
-		return (FixedAssetProductType)eGet(FixedassetPackage.Literals.FIXED_ASSET_PRODUCT__FIXED_ASSET_PRODUCT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFixedAssetProductTypeId(FixedAssetProductType newFixedAssetProductTypeId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_PRODUCT__FIXED_ASSET_PRODUCT_TYPE_ID, newFixedAssetProductTypeId);
 	}
 
 } //FixedAssetProductImpl

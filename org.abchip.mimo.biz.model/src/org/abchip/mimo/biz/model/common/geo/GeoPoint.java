@@ -24,11 +24,11 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getGeoPointId <em>Geo Point Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getDataSourceId <em>Data Source Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getDataSource <em>Data Source</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getElevation <em>Elevation</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getElevationUomId <em>Elevation Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getGeoPointTypeEnumId <em>Geo Point Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getElevationUom <em>Elevation Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getGeoPointTypeEnum <em>Geo Point Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getInformation <em>Information</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getLatitude <em>Latitude</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getLongitude <em>Longitude</em>}</li>
@@ -92,31 +92,49 @@ public interface GeoPoint extends EntityIdentifiable, EntityInfo {
 	void setElevation(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Elevation Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Elevation Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Elevation Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Elevation Uom Id</em>' reference.
-	 * @see #setElevationUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoPoint_ElevationUomId()
+	 * @return the value of the '<em>Elevation Uom</em>' reference.
+	 * @see #setElevationUom(Uom)
+	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoPoint_ElevationUom()
 	 * @model keys="uomId"
 	 *        annotation="mimo-ent-slot help='UOM for elevation (feet, meters, etc.)'"
 	 * @generated
 	 */
-	Uom getElevationUomId();
+	Uom getElevationUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getElevationUomId <em>Elevation Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getElevationUom <em>Elevation Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Elevation Uom Id</em>' reference.
-	 * @see #getElevationUomId()
+	 * @param value the new value of the '<em>Elevation Uom</em>' reference.
+	 * @see #getElevationUom()
 	 * @generated
 	 */
-	void setElevationUomId(Uom value);
+	void setElevationUom(Uom value);
+
+	/**
+	 * Returns the value of the '<em><b>Geo Point Type Enum</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Geo Point Type Enum</em>' reference.
+	 * @see #setGeoPointTypeEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoPoint_GeoPointTypeEnum()
+	 * @model keys="enumId"
+	 * @generated
+	 */
+	Enumeration getGeoPointTypeEnum();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getGeoPointTypeEnum <em>Geo Point Type Enum</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Geo Point Type Enum</em>' reference.
+	 * @see #getGeoPointTypeEnum()
+	 * @generated
+	 */
+	void setGeoPointTypeEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Geo Point Id</b></em>' attribute.
@@ -144,6 +162,28 @@ public interface GeoPoint extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setGeoPointId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Data Source</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Data Source</em>' reference.
+	 * @see #setDataSource(DataSource)
+	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoPoint_DataSource()
+	 * @model keys="dataSourceId"
+	 * @generated
+	 */
+	DataSource getDataSource();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getDataSource <em>Data Source</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Data Source</em>' reference.
+	 * @see #getDataSource()
+	 * @generated
+	 */
+	void setDataSource(DataSource value);
 
 	/**
 	 * Returns the value of the '<em><b>Information</b></em>' attribute.
@@ -225,57 +265,5 @@ public interface GeoPoint extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setLongitude(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Data Source Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Data Source Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Data Source Id</em>' reference.
-	 * @see #setDataSourceId(DataSource)
-	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoPoint_DataSourceId()
-	 * @model keys="dataSourceId"
-	 * @generated
-	 */
-	DataSource getDataSourceId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getDataSourceId <em>Data Source Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Data Source Id</em>' reference.
-	 * @see #getDataSourceId()
-	 * @generated
-	 */
-	void setDataSourceId(DataSource value);
-
-	/**
-	 * Returns the value of the '<em><b>Geo Point Type Enum Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geo Point Type Enum Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Geo Point Type Enum Id</em>' reference.
-	 * @see #setGeoPointTypeEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoPoint_GeoPointTypeEnumId()
-	 * @model keys="enumId"
-	 * @generated
-	 */
-	Enumeration getGeoPointTypeEnumId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getGeoPointTypeEnumId <em>Geo Point Type Enum Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Geo Point Type Enum Id</em>' reference.
-	 * @see #getGeoPointTypeEnumId()
-	 * @generated
-	 */
-	void setGeoPointTypeEnumId(Enumeration value);
 
 } // GeoPoint

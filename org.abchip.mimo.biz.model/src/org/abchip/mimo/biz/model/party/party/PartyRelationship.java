@@ -28,13 +28,13 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getRoleTypeIdTo <em>Role Type Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getPartyRelationshipTypeId <em>Party Relationship Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getPartyRelationshipType <em>Party Relationship Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getPermissionsEnumId <em>Permissions Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getPositionTitle <em>Position Title</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getPriorityTypeId <em>Priority Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getPriorityType <em>Priority Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getRelationshipName <em>Relationship Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getSecurityGroupId <em>Security Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getSecurityGroup <em>Security Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -68,6 +68,28 @@ public interface PartyRelationship extends EntityTyped<PartyRelationshipType>, E
 	 * @generated
 	 */
 	void setComments(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Party Relationship Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party Relationship Type</em>' reference.
+	 * @see #setPartyRelationshipType(PartyRelationshipType)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationship_PartyRelationshipType()
+	 * @model keys="partyRelationshipTypeId"
+	 * @generated
+	 */
+	PartyRelationshipType getPartyRelationshipType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getPartyRelationshipType <em>Party Relationship Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party Relationship Type</em>' reference.
+	 * @see #getPartyRelationshipType()
+	 * @generated
+	 */
+	void setPartyRelationshipType(PartyRelationshipType value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -150,6 +172,28 @@ public interface PartyRelationship extends EntityTyped<PartyRelationshipType>, E
 	void setPositionTitle(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Priority Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Priority Type</em>' reference.
+	 * @see #setPriorityType(PriorityType)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationship_PriorityType()
+	 * @model keys="priorityTypeId"
+	 * @generated
+	 */
+	PriorityType getPriorityType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getPriorityType <em>Priority Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Priority Type</em>' reference.
+	 * @see #getPriorityType()
+	 * @generated
+	 */
+	void setPriorityType(PriorityType value);
+
+	/**
 	 * Returns the value of the '<em><b>Relationship Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -177,56 +221,48 @@ public interface PartyRelationship extends EntityTyped<PartyRelationshipType>, E
 	void setRelationshipName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Security Group Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Security Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Security Group Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Security Group Id</em>' reference.
-	 * @see #setSecurityGroupId(SecurityGroup)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationship_SecurityGroupId()
+	 * @return the value of the '<em>Security Group</em>' reference.
+	 * @see #setSecurityGroup(SecurityGroup)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationship_SecurityGroup()
 	 * @model keys="groupId"
 	 * @generated
 	 */
-	SecurityGroup getSecurityGroupId();
+	SecurityGroup getSecurityGroup();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getSecurityGroupId <em>Security Group Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getSecurityGroup <em>Security Group</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Security Group Id</em>' reference.
-	 * @see #getSecurityGroupId()
+	 * @param value the new value of the '<em>Security Group</em>' reference.
+	 * @see #getSecurityGroup()
 	 * @generated
 	 */
-	void setSecurityGroupId(SecurityGroup value);
+	void setSecurityGroup(SecurityGroup value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationship_StatusId()
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationship_Status()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getStatusId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getStatusId <em>Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setStatusId(StatusItem value);
+	void setStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.
@@ -361,57 +397,5 @@ public interface PartyRelationship extends EntityTyped<PartyRelationshipType>, E
 	 * @generated
 	 */
 	void setRoleTypeIdTo(RoleType value);
-
-	/**
-	 * Returns the value of the '<em><b>Priority Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Priority Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Priority Type Id</em>' reference.
-	 * @see #setPriorityTypeId(PriorityType)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationship_PriorityTypeId()
-	 * @model keys="priorityTypeId"
-	 * @generated
-	 */
-	PriorityType getPriorityTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getPriorityTypeId <em>Priority Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Priority Type Id</em>' reference.
-	 * @see #getPriorityTypeId()
-	 * @generated
-	 */
-	void setPriorityTypeId(PriorityType value);
-
-	/**
-	 * Returns the value of the '<em><b>Party Relationship Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Relationship Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Relationship Type Id</em>' reference.
-	 * @see #setPartyRelationshipTypeId(PartyRelationshipType)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationship_PartyRelationshipTypeId()
-	 * @model keys="partyRelationshipTypeId"
-	 * @generated
-	 */
-	PartyRelationshipType getPartyRelationshipTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyRelationship#getPartyRelationshipTypeId <em>Party Relationship Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Relationship Type Id</em>' reference.
-	 * @see #getPartyRelationshipTypeId()
-	 * @generated
-	 */
-	void setPartyRelationshipTypeId(PartyRelationshipType value);
 
 } // PartyRelationship

@@ -28,15 +28,15 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getContactListName <em>Contact List Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getContactListParties <em>Contact List Parties</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getContactListTypeId <em>Contact List Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getContactMechTypeId <em>Contact Mech Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getContactListType <em>Contact List Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getContactMechType <em>Contact Mech Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getIsPublic <em>Is Public</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getMarketingCampaignId <em>Marketing Campaign Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getMarketingCampaign <em>Marketing Campaign</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getOptOutScreen <em>Opt Out Screen</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getOwnerPartyId <em>Owner Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getOwnerParty <em>Owner Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getSingleUse <em>Single Use</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getVerifyEmailFrom <em>Verify Email From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getVerifyEmailScreen <em>Verify Email Screen</em>}</li>
@@ -142,56 +142,48 @@ public interface ContactList extends EntityTyped<ContactListType>, EntityInfo {
 	List<ContactListParty> getContactListParties();
 
 	/**
-	 * Returns the value of the '<em><b>Contact List Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Contact List Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact List Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact List Type Id</em>' reference.
-	 * @see #setContactListTypeId(ContactListType)
-	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_ContactListTypeId()
+	 * @return the value of the '<em>Contact List Type</em>' reference.
+	 * @see #setContactListType(ContactListType)
+	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_ContactListType()
 	 * @model keys="contactListTypeId"
 	 * @generated
 	 */
-	ContactListType getContactListTypeId();
+	ContactListType getContactListType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getContactListTypeId <em>Contact List Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getContactListType <em>Contact List Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact List Type Id</em>' reference.
-	 * @see #getContactListTypeId()
+	 * @param value the new value of the '<em>Contact List Type</em>' reference.
+	 * @see #getContactListType()
 	 * @generated
 	 */
-	void setContactListTypeId(ContactListType value);
+	void setContactListType(ContactListType value);
 
 	/**
-	 * Returns the value of the '<em><b>Contact Mech Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Contact Mech Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Mech Type Id</em>' reference.
-	 * @see #setContactMechTypeId(ContactMechType)
-	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_ContactMechTypeId()
+	 * @return the value of the '<em>Contact Mech Type</em>' reference.
+	 * @see #setContactMechType(ContactMechType)
+	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_ContactMechType()
 	 * @model keys="contactMechTypeId"
 	 * @generated
 	 */
-	ContactMechType getContactMechTypeId();
+	ContactMechType getContactMechType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getContactMechTypeId <em>Contact Mech Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getContactMechType <em>Contact Mech Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Mech Type Id</em>' reference.
-	 * @see #getContactMechTypeId()
+	 * @param value the new value of the '<em>Contact Mech Type</em>' reference.
+	 * @see #getContactMechType()
 	 * @generated
 	 */
-	void setContactMechTypeId(ContactMechType value);
+	void setContactMechType(ContactMechType value);
 
 	/**
 	 * Returns the value of the '<em><b>Created By User Login</b></em>' reference.
@@ -294,30 +286,26 @@ public interface ContactList extends EntityTyped<ContactListType>, EntityInfo {
 	void setLastModifiedByUserLogin(UserLogin value);
 
 	/**
-	 * Returns the value of the '<em><b>Marketing Campaign Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Marketing Campaign</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Marketing Campaign Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Marketing Campaign Id</em>' reference.
-	 * @see #setMarketingCampaignId(MarketingCampaign)
-	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_MarketingCampaignId()
+	 * @return the value of the '<em>Marketing Campaign</em>' reference.
+	 * @see #setMarketingCampaign(MarketingCampaign)
+	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_MarketingCampaign()
 	 * @model keys="marketingCampaignId"
 	 * @generated
 	 */
-	MarketingCampaign getMarketingCampaignId();
+	MarketingCampaign getMarketingCampaign();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getMarketingCampaignId <em>Marketing Campaign Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getMarketingCampaign <em>Marketing Campaign</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Marketing Campaign Id</em>' reference.
-	 * @see #getMarketingCampaignId()
+	 * @param value the new value of the '<em>Marketing Campaign</em>' reference.
+	 * @see #getMarketingCampaign()
 	 * @generated
 	 */
-	void setMarketingCampaignId(MarketingCampaign value);
+	void setMarketingCampaign(MarketingCampaign value);
 
 	/**
 	 * Returns the value of the '<em><b>Opt Out Screen</b></em>' attribute.
@@ -346,30 +334,26 @@ public interface ContactList extends EntityTyped<ContactListType>, EntityInfo {
 	void setOptOutScreen(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Owner Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Owner Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Owner Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Owner Party Id</em>' reference.
-	 * @see #setOwnerPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_OwnerPartyId()
+	 * @return the value of the '<em>Owner Party</em>' reference.
+	 * @see #setOwnerParty(Party)
+	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_OwnerParty()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getOwnerPartyId();
+	Party getOwnerParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getOwnerPartyId <em>Owner Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getOwnerParty <em>Owner Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Owner Party Id</em>' reference.
-	 * @see #getOwnerPartyId()
+	 * @param value the new value of the '<em>Owner Party</em>' reference.
+	 * @see #getOwnerParty()
 	 * @generated
 	 */
-	void setOwnerPartyId(Party value);
+	void setOwnerParty(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Single Use</b></em>' attribute.

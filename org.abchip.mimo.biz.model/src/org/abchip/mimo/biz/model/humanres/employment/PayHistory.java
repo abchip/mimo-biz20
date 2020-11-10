@@ -31,8 +31,8 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getRoleTypeIdTo <em>Role Type Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getAmount <em>Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getPayGradeId <em>Pay Grade Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getPeriodTypeId <em>Period Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getPayGrade <em>Pay Grade</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getPeriodType <em>Period Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getSalaryStepSeqId <em>Salary Step Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -118,6 +118,50 @@ public interface PayHistory extends EntityIdentifiable, EntityInfo {
 	void setComments(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Pay Grade</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Pay Grade</em>' reference.
+	 * @see #setPayGrade(PayGrade)
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayHistory_PayGrade()
+	 * @model keys="payGradeId"
+	 * @generated
+	 */
+	PayGrade getPayGrade();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getPayGrade <em>Pay Grade</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Pay Grade</em>' reference.
+	 * @see #getPayGrade()
+	 * @generated
+	 */
+	void setPayGrade(PayGrade value);
+
+	/**
+	 * Returns the value of the '<em><b>Period Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Period Type</em>' reference.
+	 * @see #setPeriodType(PeriodType)
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayHistory_PeriodType()
+	 * @model keys="periodTypeId"
+	 * @generated
+	 */
+	PeriodType getPeriodType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getPeriodType <em>Period Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Period Type</em>' reference.
+	 * @see #getPeriodType()
+	 * @generated
+	 */
+	void setPeriodType(PeriodType value);
+
+	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -199,58 +243,6 @@ public interface PayHistory extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setPartyIdTo(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Pay Grade Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pay Grade Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Pay Grade Id</em>' reference.
-	 * @see #setPayGradeId(PayGrade)
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayHistory_PayGradeId()
-	 * @model keys="payGradeId"
-	 * @generated
-	 */
-	PayGrade getPayGradeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getPayGradeId <em>Pay Grade Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Pay Grade Id</em>' reference.
-	 * @see #getPayGradeId()
-	 * @generated
-	 */
-	void setPayGradeId(PayGrade value);
-
-	/**
-	 * Returns the value of the '<em><b>Period Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Period Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Period Type Id</em>' reference.
-	 * @see #setPeriodTypeId(PeriodType)
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayHistory_PeriodTypeId()
-	 * @model keys="periodTypeId"
-	 * @generated
-	 */
-	PeriodType getPeriodTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getPeriodTypeId <em>Period Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Period Type Id</em>' reference.
-	 * @see #getPeriodTypeId()
-	 * @generated
-	 */
-	void setPeriodTypeId(PeriodType value);
 
 	/**
 	 * Returns the value of the '<em><b>Role Type Id From</b></em>' attribute.

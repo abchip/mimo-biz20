@@ -19,8 +19,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.service.schedule.TemporalExpressionAssoc#getFromTempExprId <em>From Temp Expr Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.service.schedule.TemporalExpressionAssoc#getToTempExprId <em>To Temp Expr Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.service.schedule.TemporalExpressionAssoc#getFromTempExpr <em>From Temp Expr</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.service.schedule.TemporalExpressionAssoc#getToTempExpr <em>To Temp Expr</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.TemporalExpressionAssoc#getExprAssocType <em>Expr Assoc Type</em>}</li>
  * </ul>
  *
@@ -30,58 +30,50 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface TemporalExpressionAssoc extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>From Temp Expr Id</b></em>' reference.
+	 * Returns the value of the '<em><b>From Temp Expr</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>From Temp Expr Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>From Temp Expr Id</em>' reference.
-	 * @see #setFromTempExprId(TemporalExpression)
-	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getTemporalExpressionAssoc_FromTempExprId()
+	 * @return the value of the '<em>From Temp Expr</em>' reference.
+	 * @see #setFromTempExpr(TemporalExpression)
+	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getTemporalExpressionAssoc_FromTempExpr()
 	 * @model keys="tempExprId" required="true"
 	 *        annotation="mimo-ent-slot key='true' help='The \"parent\" expression'"
 	 * @generated
 	 */
-	TemporalExpression getFromTempExprId();
+	TemporalExpression getFromTempExpr();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.service.schedule.TemporalExpressionAssoc#getFromTempExprId <em>From Temp Expr Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.service.schedule.TemporalExpressionAssoc#getFromTempExpr <em>From Temp Expr</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>From Temp Expr Id</em>' reference.
-	 * @see #getFromTempExprId()
+	 * @param value the new value of the '<em>From Temp Expr</em>' reference.
+	 * @see #getFromTempExpr()
 	 * @generated
 	 */
-	void setFromTempExprId(TemporalExpression value);
+	void setFromTempExpr(TemporalExpression value);
 
 	/**
-	 * Returns the value of the '<em><b>To Temp Expr Id</b></em>' reference.
+	 * Returns the value of the '<em><b>To Temp Expr</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>To Temp Expr Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>To Temp Expr Id</em>' reference.
-	 * @see #setToTempExprId(TemporalExpression)
-	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getTemporalExpressionAssoc_ToTempExprId()
+	 * @return the value of the '<em>To Temp Expr</em>' reference.
+	 * @see #setToTempExpr(TemporalExpression)
+	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getTemporalExpressionAssoc_ToTempExpr()
 	 * @model keys="tempExprId" required="true"
 	 *        annotation="mimo-ent-slot key='true' help='The \"child\" expression'"
 	 * @generated
 	 */
-	TemporalExpression getToTempExprId();
+	TemporalExpression getToTempExpr();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.service.schedule.TemporalExpressionAssoc#getToTempExprId <em>To Temp Expr Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.service.schedule.TemporalExpressionAssoc#getToTempExpr <em>To Temp Expr</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>To Temp Expr Id</em>' reference.
-	 * @see #getToTempExprId()
+	 * @param value the new value of the '<em>To Temp Expr</em>' reference.
+	 * @see #getToTempExpr()
 	 * @generated
 	 */
-	void setToTempExprId(TemporalExpression value);
+	void setToTempExpr(TemporalExpression value);
 
 	/**
 	 * Returns the value of the '<em><b>Expr Assoc Type</b></em>' attribute.

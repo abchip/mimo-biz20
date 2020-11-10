@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchConstraintImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchConstraintImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchConstraintImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchConstraintImpl#getContentSearchResultId <em>Content Search Result Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchConstraintImpl#getContentSearchResult <em>Content Search Result</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchConstraintImpl#getConstraintSeqId <em>Constraint Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchConstraintImpl#getAnyPrefix <em>Any Prefix</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchConstraintImpl#getAnySuffix <em>Any Suffix</em>}</li>
@@ -160,6 +160,26 @@ public class ContentSearchConstraintImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
+	public ContentSearchResult getContentSearchResult() {
+		return (ContentSearchResult)eGet(ContentPackage.Literals.CONTENT_SEARCH_CONSTRAINT__CONTENT_SEARCH_RESULT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContentSearchResult(ContentSearchResult newContentSearchResult) {
+		eSet(ContentPackage.Literals.CONTENT_SEARCH_CONSTRAINT__CONTENT_SEARCH_RESULT, newContentSearchResult);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getConstraintName() {
 		return (String)eGet(ContentPackage.Literals.CONTENT_SEARCH_CONSTRAINT__CONSTRAINT_NAME, true);
 	}
@@ -232,26 +252,6 @@ public class ContentSearchConstraintImpl extends EntityIdentifiableImpl implemen
 	@Override
 	public void setAnySuffix(String newAnySuffix) {
 		eSet(ContentPackage.Literals.CONTENT_SEARCH_CONSTRAINT__ANY_SUFFIX, newAnySuffix);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ContentSearchResult getContentSearchResultId() {
-		return (ContentSearchResult)eGet(ContentPackage.Literals.CONTENT_SEARCH_CONSTRAINT__CONTENT_SEARCH_RESULT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContentSearchResultId(ContentSearchResult newContentSearchResultId) {
-		eSet(ContentPackage.Literals.CONTENT_SEARCH_CONSTRAINT__CONTENT_SEARCH_RESULT_ID, newContentSearchResultId);
 	}
 
 	/**

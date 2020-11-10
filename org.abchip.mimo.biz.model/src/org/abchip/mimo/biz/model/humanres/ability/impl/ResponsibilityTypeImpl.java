@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.ResponsibilityTypeImpl#getResponsibilityTypeId <em>Responsibility Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.ResponsibilityTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.ResponsibilityTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.ResponsibilityTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.ResponsibilityTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -192,8 +192,8 @@ public class ResponsibilityTypeImpl extends EntityIdentifiableImpl implements Re
 	 * @generated
 	 */
 	@Override
-	public ResponsibilityType getParentTypeId() {
-		return (ResponsibilityType)eGet(AbilityPackage.Literals.RESPONSIBILITY_TYPE__PARENT_TYPE_ID, true);
+	public ResponsibilityType getParentType() {
+		return (ResponsibilityType)eGet(AbilityPackage.Literals.RESPONSIBILITY_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -202,8 +202,8 @@ public class ResponsibilityTypeImpl extends EntityIdentifiableImpl implements Re
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(ResponsibilityType newParentTypeId) {
-		eSet(AbilityPackage.Literals.RESPONSIBILITY_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(ResponsibilityType newParentType) {
+		eSet(AbilityPackage.Literals.RESPONSIBILITY_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

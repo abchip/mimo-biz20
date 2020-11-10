@@ -29,9 +29,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarExcWeekImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarExcWeekImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarExcWeekImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarExcWeekImpl#getCalendarId <em>Calendar Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarExcWeekImpl#getCalendar <em>Calendar</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarExcWeekImpl#getExceptionDateStart <em>Exception Date Start</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarExcWeekImpl#getCalendarWeekId <em>Calendar Week Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarExcWeekImpl#getCalendarWeek <em>Calendar Week</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarExcWeekImpl#getDescription <em>Description</em>}</li>
  * </ul>
  *
@@ -154,8 +154,8 @@ public class TechDataCalendarExcWeekImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public TechDataCalendar getCalendarId() {
-		return (TechDataCalendar)eGet(TechdataPackage.Literals.TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR_ID, true);
+	public TechDataCalendar getCalendar() {
+		return (TechDataCalendar)eGet(TechdataPackage.Literals.TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR, true);
 	}
 
 	/**
@@ -164,8 +164,8 @@ public class TechDataCalendarExcWeekImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setCalendarId(TechDataCalendar newCalendarId) {
-		eSet(TechdataPackage.Literals.TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR_ID, newCalendarId);
+	public void setCalendar(TechDataCalendar newCalendar) {
+		eSet(TechdataPackage.Literals.TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR, newCalendar);
 	}
 
 	/**
@@ -194,8 +194,8 @@ public class TechDataCalendarExcWeekImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public TechDataCalendarWeek getCalendarWeekId() {
-		return (TechDataCalendarWeek)eGet(TechdataPackage.Literals.TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR_WEEK_ID, true);
+	public TechDataCalendarWeek getCalendarWeek() {
+		return (TechDataCalendarWeek)eGet(TechdataPackage.Literals.TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR_WEEK, true);
 	}
 
 	/**
@@ -204,8 +204,8 @@ public class TechDataCalendarExcWeekImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setCalendarWeekId(TechDataCalendarWeek newCalendarWeekId) {
-		eSet(TechdataPackage.Literals.TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR_WEEK_ID, newCalendarWeekId);
+	public void setCalendarWeek(TechDataCalendarWeek newCalendarWeek) {
+		eSet(TechdataPackage.Literals.TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR_WEEK, newCalendarWeek);
 	}
 
 	/**

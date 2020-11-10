@@ -39,13 +39,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipImpl#getRoleTypeIdTo <em>Role Type Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipImpl#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipImpl#getPartyRelationshipTypeId <em>Party Relationship Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipImpl#getPartyRelationshipType <em>Party Relationship Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipImpl#getPermissionsEnumId <em>Permissions Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipImpl#getPositionTitle <em>Position Title</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipImpl#getPriorityTypeId <em>Priority Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipImpl#getPriorityType <em>Priority Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipImpl#getRelationshipName <em>Relationship Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipImpl#getSecurityGroupId <em>Security Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipImpl#getSecurityGroup <em>Security Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -187,6 +187,26 @@ public class PartyRelationshipImpl extends EntityTypedImpl<PartyRelationshipType
 	 * @generated
 	 */
 	@Override
+	public PartyRelationshipType getPartyRelationshipType() {
+		return (PartyRelationshipType)eGet(PartyPackage.Literals.PARTY_RELATIONSHIP__PARTY_RELATIONSHIP_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPartyRelationshipType(PartyRelationshipType newPartyRelationshipType) {
+		eSet(PartyPackage.Literals.PARTY_RELATIONSHIP__PARTY_RELATIONSHIP_TYPE, newPartyRelationshipType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(PartyPackage.Literals.PARTY_RELATIONSHIP__FROM_DATE, true);
 	}
@@ -247,6 +267,26 @@ public class PartyRelationshipImpl extends EntityTypedImpl<PartyRelationshipType
 	 * @generated
 	 */
 	@Override
+	public PriorityType getPriorityType() {
+		return (PriorityType)eGet(PartyPackage.Literals.PARTY_RELATIONSHIP__PRIORITY_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPriorityType(PriorityType newPriorityType) {
+		eSet(PartyPackage.Literals.PARTY_RELATIONSHIP__PRIORITY_TYPE, newPriorityType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getRelationshipName() {
 		return (String)eGet(PartyPackage.Literals.PARTY_RELATIONSHIP__RELATIONSHIP_NAME, true);
 	}
@@ -267,8 +307,8 @@ public class PartyRelationshipImpl extends EntityTypedImpl<PartyRelationshipType
 	 * @generated
 	 */
 	@Override
-	public SecurityGroup getSecurityGroupId() {
-		return (SecurityGroup)eGet(PartyPackage.Literals.PARTY_RELATIONSHIP__SECURITY_GROUP_ID, true);
+	public SecurityGroup getSecurityGroup() {
+		return (SecurityGroup)eGet(PartyPackage.Literals.PARTY_RELATIONSHIP__SECURITY_GROUP, true);
 	}
 
 	/**
@@ -277,8 +317,8 @@ public class PartyRelationshipImpl extends EntityTypedImpl<PartyRelationshipType
 	 * @generated
 	 */
 	@Override
-	public void setSecurityGroupId(SecurityGroup newSecurityGroupId) {
-		eSet(PartyPackage.Literals.PARTY_RELATIONSHIP__SECURITY_GROUP_ID, newSecurityGroupId);
+	public void setSecurityGroup(SecurityGroup newSecurityGroup) {
+		eSet(PartyPackage.Literals.PARTY_RELATIONSHIP__SECURITY_GROUP, newSecurityGroup);
 	}
 
 	/**
@@ -287,8 +327,8 @@ public class PartyRelationshipImpl extends EntityTypedImpl<PartyRelationshipType
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(PartyPackage.Literals.PARTY_RELATIONSHIP__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(PartyPackage.Literals.PARTY_RELATIONSHIP__STATUS, true);
 	}
 
 	/**
@@ -297,8 +337,8 @@ public class PartyRelationshipImpl extends EntityTypedImpl<PartyRelationshipType
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(PartyPackage.Literals.PARTY_RELATIONSHIP__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(PartyPackage.Literals.PARTY_RELATIONSHIP__STATUS, newStatus);
 	}
 
 	/**
@@ -437,46 +477,6 @@ public class PartyRelationshipImpl extends EntityTypedImpl<PartyRelationshipType
 	@Override
 	public void setRoleTypeIdTo(RoleType newRoleTypeIdTo) {
 		eSet(PartyPackage.Literals.PARTY_RELATIONSHIP__ROLE_TYPE_ID_TO, newRoleTypeIdTo);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PriorityType getPriorityTypeId() {
-		return (PriorityType)eGet(PartyPackage.Literals.PARTY_RELATIONSHIP__PRIORITY_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPriorityTypeId(PriorityType newPriorityTypeId) {
-		eSet(PartyPackage.Literals.PARTY_RELATIONSHIP__PRIORITY_TYPE_ID, newPriorityTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PartyRelationshipType getPartyRelationshipTypeId() {
-		return (PartyRelationshipType)eGet(PartyPackage.Literals.PARTY_RELATIONSHIP__PARTY_RELATIONSHIP_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyRelationshipTypeId(PartyRelationshipType newPartyRelationshipTypeId) {
-		eSet(PartyPackage.Literals.PARTY_RELATIONSHIP__PARTY_RELATIONSHIP_TYPE_ID, newPartyRelationshipTypeId);
 	}
 
 } //PartyRelationshipImpl

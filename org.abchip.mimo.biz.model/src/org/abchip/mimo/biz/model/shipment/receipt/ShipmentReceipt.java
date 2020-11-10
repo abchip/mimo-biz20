@@ -29,18 +29,18 @@ import org.abchip.mimo.entity.EntityInfo;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getReceiptId <em>Receipt Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getDatetimeReceived <em>Datetime Received</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getInventoryItemId <em>Inventory Item Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getInventoryItem <em>Inventory Item</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getItemDescription <em>Item Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getQuantityAccepted <em>Quantity Accepted</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getQuantityRejected <em>Quantity Rejected</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getReceivedByUserLoginId <em>Received By User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getRejectionId <em>Rejection Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getReceivedByUserLogin <em>Received By User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getRejection <em>Rejection</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getReturnId <em>Return Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getReturnItemSeqId <em>Return Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getShipmentId <em>Shipment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getShipment <em>Shipment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getShipmentItemSeqId <em>Shipment Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getShipmentPackageSeqId <em>Shipment Package Seq Id</em>}</li>
  * </ul>
@@ -77,30 +77,26 @@ public interface ShipmentReceipt extends EntityIdentifiable, EntityInfo {
 	void setDatetimeReceived(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Inventory Item Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Inventory Item</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Inventory Item Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Inventory Item Id</em>' reference.
-	 * @see #setInventoryItemId(InventoryItem)
-	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceipt_InventoryItemId()
+	 * @return the value of the '<em>Inventory Item</em>' reference.
+	 * @see #setInventoryItem(InventoryItem)
+	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceipt_InventoryItem()
 	 * @model keys="inventoryItemId"
 	 * @generated
 	 */
-	InventoryItem getInventoryItemId();
+	InventoryItem getInventoryItem();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getInventoryItemId <em>Inventory Item Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getInventoryItem <em>Inventory Item</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Inventory Item Id</em>' reference.
-	 * @see #getInventoryItemId()
+	 * @param value the new value of the '<em>Inventory Item</em>' reference.
+	 * @see #getInventoryItem()
 	 * @generated
 	 */
-	void setInventoryItemId(InventoryItem value);
+	void setInventoryItem(InventoryItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Item Description</b></em>' attribute.
@@ -129,30 +125,26 @@ public interface ShipmentReceipt extends EntityIdentifiable, EntityInfo {
 	void setItemDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceipt_OrderId()
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceipt_Order()
 	 * @model keys="orderId"
 	 * @generated
 	 */
-	OrderHeader getOrderId();
+	OrderHeader getOrder();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getOrderId <em>Order Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getOrder <em>Order</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
 	 * @generated
 	 */
-	void setOrderId(OrderHeader value);
+	void setOrder(OrderHeader value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -181,30 +173,26 @@ public interface ShipmentReceipt extends EntityIdentifiable, EntityInfo {
 	void setOrderItemSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceipt_ProductId()
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceipt_Product()
 	 * @model keys="productId"
 	 * @generated
 	 */
-	Product getProductId();
+	Product getProduct();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getProductId <em>Product Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getProduct <em>Product</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
 	 * @generated
 	 */
-	void setProductId(Product value);
+	void setProduct(Product value);
 
 	/**
 	 * Returns the value of the '<em><b>Quantity Accepted</b></em>' attribute.
@@ -259,6 +247,50 @@ public interface ShipmentReceipt extends EntityIdentifiable, EntityInfo {
 	void setQuantityRejected(BigDecimal value);
 
 	/**
+	 * Returns the value of the '<em><b>Received By User Login</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Received By User Login</em>' reference.
+	 * @see #setReceivedByUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceipt_ReceivedByUserLogin()
+	 * @model keys="userLoginId"
+	 * @generated
+	 */
+	UserLogin getReceivedByUserLogin();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getReceivedByUserLogin <em>Received By User Login</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Received By User Login</em>' reference.
+	 * @see #getReceivedByUserLogin()
+	 * @generated
+	 */
+	void setReceivedByUserLogin(UserLogin value);
+
+	/**
+	 * Returns the value of the '<em><b>Rejection</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Rejection</em>' reference.
+	 * @see #setRejection(RejectionReason)
+	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceipt_Rejection()
+	 * @model keys="rejectionId"
+	 * @generated
+	 */
+	RejectionReason getRejection();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getRejection <em>Rejection</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Rejection</em>' reference.
+	 * @see #getRejection()
+	 * @generated
+	 */
+	void setRejection(RejectionReason value);
+
+	/**
 	 * Returns the value of the '<em><b>Receipt Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -284,58 +316,6 @@ public interface ShipmentReceipt extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setReceiptId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Received By User Login Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Received By User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Received By User Login Id</em>' reference.
-	 * @see #setReceivedByUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceipt_ReceivedByUserLoginId()
-	 * @model keys="userLoginId"
-	 * @generated
-	 */
-	UserLogin getReceivedByUserLoginId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getReceivedByUserLoginId <em>Received By User Login Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Received By User Login Id</em>' reference.
-	 * @see #getReceivedByUserLoginId()
-	 * @generated
-	 */
-	void setReceivedByUserLoginId(UserLogin value);
-
-	/**
-	 * Returns the value of the '<em><b>Rejection Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Rejection Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Rejection Id</em>' reference.
-	 * @see #setRejectionId(RejectionReason)
-	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceipt_RejectionId()
-	 * @model keys="rejectionId"
-	 * @generated
-	 */
-	RejectionReason getRejectionId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getRejectionId <em>Rejection Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Rejection Id</em>' reference.
-	 * @see #getRejectionId()
-	 * @generated
-	 */
-	void setRejectionId(RejectionReason value);
 
 	/**
 	 * Returns the value of the '<em><b>Return Id</b></em>' attribute.
@@ -390,30 +370,26 @@ public interface ShipmentReceipt extends EntityIdentifiable, EntityInfo {
 	void setReturnItemSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Shipment Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Shipment</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shipment Id</em>' reference.
-	 * @see #setShipmentId(Shipment)
-	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceipt_ShipmentId()
+	 * @return the value of the '<em>Shipment</em>' reference.
+	 * @see #setShipment(Shipment)
+	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceipt_Shipment()
 	 * @model keys="shipmentId"
 	 * @generated
 	 */
-	Shipment getShipmentId();
+	Shipment getShipment();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getShipmentId <em>Shipment Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getShipment <em>Shipment</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shipment Id</em>' reference.
-	 * @see #getShipmentId()
+	 * @param value the new value of the '<em>Shipment</em>' reference.
+	 * @see #getShipment()
 	 * @generated
 	 */
-	void setShipmentId(Shipment value);
+	void setShipment(Shipment value);
 
 	/**
 	 * Returns the value of the '<em><b>Shipment Item Seq Id</b></em>' attribute.

@@ -36,24 +36,24 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getPaymentGatewayResponseId <em>Payment Gateway Response Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getAltReference <em>Alt Reference</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getAmount <em>Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getGatewayAvsResult <em>Gateway Avs Result</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getGatewayCode <em>Gateway Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getGatewayCvResult <em>Gateway Cv Result</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getGatewayFlag <em>Gateway Flag</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getGatewayMessage <em>Gateway Message</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getGatewayScoreResult <em>Gateway Score Result</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getOrderPaymentPreferenceId <em>Order Payment Preference Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getPaymentMethodId <em>Payment Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getPaymentMethodTypeId <em>Payment Method Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getPaymentServiceTypeEnumId <em>Payment Service Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getOrderPaymentPreference <em>Order Payment Preference</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getPaymentMethod <em>Payment Method</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getPaymentMethodType <em>Payment Method Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getPaymentServiceTypeEnum <em>Payment Service Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getReferenceNum <em>Reference Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getResultBadCardNumber <em>Result Bad Card Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getResultBadExpire <em>Result Bad Expire</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getResultDeclined <em>Result Declined</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getResultNsf <em>Result Nsf</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getSubReference <em>Sub Reference</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getTransCodeEnumId <em>Trans Code Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getTransCodeEnum <em>Trans Code Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getTransactionDate <em>Transaction Date</em>}</li>
  * </ul>
  *
@@ -215,8 +215,8 @@ public class PaymentGatewayResponseImpl extends EntityTypedImpl<PaymentMethodTyp
 	 * @generated
 	 */
 	@Override
-	public Uom getCurrencyUomId() {
-		return (Uom)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__CURRENCY_UOM_ID, true);
+	public Uom getCurrencyUom() {
+		return (Uom)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__CURRENCY_UOM, true);
 	}
 
 	/**
@@ -225,8 +225,8 @@ public class PaymentGatewayResponseImpl extends EntityTypedImpl<PaymentMethodTyp
 	 * @generated
 	 */
 	@Override
-	public void setCurrencyUomId(Uom newCurrencyUomId) {
-		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__CURRENCY_UOM_ID, newCurrencyUomId);
+	public void setCurrencyUom(Uom newCurrencyUom) {
+		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__CURRENCY_UOM, newCurrencyUom);
 	}
 
 	/**
@@ -355,8 +355,8 @@ public class PaymentGatewayResponseImpl extends EntityTypedImpl<PaymentMethodTyp
 	 * @generated
 	 */
 	@Override
-	public OrderPaymentPreference getOrderPaymentPreferenceId() {
-		return (OrderPaymentPreference)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__ORDER_PAYMENT_PREFERENCE_ID, true);
+	public OrderPaymentPreference getOrderPaymentPreference() {
+		return (OrderPaymentPreference)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__ORDER_PAYMENT_PREFERENCE, true);
 	}
 
 	/**
@@ -365,8 +365,8 @@ public class PaymentGatewayResponseImpl extends EntityTypedImpl<PaymentMethodTyp
 	 * @generated
 	 */
 	@Override
-	public void setOrderPaymentPreferenceId(OrderPaymentPreference newOrderPaymentPreferenceId) {
-		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__ORDER_PAYMENT_PREFERENCE_ID, newOrderPaymentPreferenceId);
+	public void setOrderPaymentPreference(OrderPaymentPreference newOrderPaymentPreference) {
+		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__ORDER_PAYMENT_PREFERENCE, newOrderPaymentPreference);
 	}
 
 	/**
@@ -375,8 +375,8 @@ public class PaymentGatewayResponseImpl extends EntityTypedImpl<PaymentMethodTyp
 	 * @generated
 	 */
 	@Override
-	public Enumeration getPaymentServiceTypeEnumId() {
-		return (Enumeration)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__PAYMENT_SERVICE_TYPE_ENUM_ID, true);
+	public PaymentMethod getPaymentMethod() {
+		return (PaymentMethod)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__PAYMENT_METHOD, true);
 	}
 
 	/**
@@ -385,8 +385,48 @@ public class PaymentGatewayResponseImpl extends EntityTypedImpl<PaymentMethodTyp
 	 * @generated
 	 */
 	@Override
-	public void setPaymentServiceTypeEnumId(Enumeration newPaymentServiceTypeEnumId) {
-		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__PAYMENT_SERVICE_TYPE_ENUM_ID, newPaymentServiceTypeEnumId);
+	public void setPaymentMethod(PaymentMethod newPaymentMethod) {
+		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__PAYMENT_METHOD, newPaymentMethod);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PaymentMethodType getPaymentMethodType() {
+		return (PaymentMethodType)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__PAYMENT_METHOD_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPaymentMethodType(PaymentMethodType newPaymentMethodType) {
+		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__PAYMENT_METHOD_TYPE, newPaymentMethodType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Enumeration getPaymentServiceTypeEnum() {
+		return (Enumeration)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__PAYMENT_SERVICE_TYPE_ENUM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPaymentServiceTypeEnum(Enumeration newPaymentServiceTypeEnum) {
+		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__PAYMENT_SERVICE_TYPE_ENUM, newPaymentServiceTypeEnum);
 	}
 
 	/**
@@ -515,8 +555,8 @@ public class PaymentGatewayResponseImpl extends EntityTypedImpl<PaymentMethodTyp
 	 * @generated
 	 */
 	@Override
-	public Enumeration getTransCodeEnumId() {
-		return (Enumeration)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__TRANS_CODE_ENUM_ID, true);
+	public Enumeration getTransCodeEnum() {
+		return (Enumeration)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__TRANS_CODE_ENUM, true);
 	}
 
 	/**
@@ -525,8 +565,8 @@ public class PaymentGatewayResponseImpl extends EntityTypedImpl<PaymentMethodTyp
 	 * @generated
 	 */
 	@Override
-	public void setTransCodeEnumId(Enumeration newTransCodeEnumId) {
-		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__TRANS_CODE_ENUM_ID, newTransCodeEnumId);
+	public void setTransCodeEnum(Enumeration newTransCodeEnum) {
+		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__TRANS_CODE_ENUM, newTransCodeEnum);
 	}
 
 	/**
@@ -585,46 +625,6 @@ public class PaymentGatewayResponseImpl extends EntityTypedImpl<PaymentMethodTyp
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PaymentMethodType getPaymentMethodTypeId() {
-		return (PaymentMethodType)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__PAYMENT_METHOD_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaymentMethodTypeId(PaymentMethodType newPaymentMethodTypeId) {
-		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__PAYMENT_METHOD_TYPE_ID, newPaymentMethodTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PaymentMethod getPaymentMethodId() {
-		return (PaymentMethod)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__PAYMENT_METHOD_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaymentMethodId(PaymentMethod newPaymentMethodId) {
-		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__PAYMENT_METHOD_ID, newPaymentMethodId);
 	}
 
 	/**

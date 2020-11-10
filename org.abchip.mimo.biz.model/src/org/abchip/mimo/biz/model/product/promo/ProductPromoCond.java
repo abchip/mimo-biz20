@@ -21,13 +21,13 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getProductPromoId <em>Product Promo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getProductPromo <em>Product Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getProductPromoCondSeqId <em>Product Promo Cond Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getProductPromoRuleId <em>Product Promo Rule Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getCondValue <em>Cond Value</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getCustomMethodId <em>Custom Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getInputParamEnumId <em>Input Param Enum Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getOperatorEnumId <em>Operator Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getCustomMethod <em>Custom Method</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getInputParamEnum <em>Input Param Enum</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getOperatorEnum <em>Operator Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getOtherValue <em>Other Value</em>}</li>
  * </ul>
  *
@@ -36,6 +36,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductPromoCond extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product Promo</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Promo</em>' reference.
+	 * @see #setProductPromo(ProductPromo)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCond_ProductPromo()
+	 * @model keys="productPromoId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductPromo getProductPromo();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getProductPromo <em>Product Promo</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Promo</em>' reference.
+	 * @see #getProductPromo()
+	 * @generated
+	 */
+	void setProductPromo(ProductPromo value);
+
 	/**
 	 * Returns the value of the '<em><b>Cond Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -63,82 +86,70 @@ public interface ProductPromoCond extends EntityIdentifiable, EntityInfo {
 	void setCondValue(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Custom Method Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Custom Method</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Custom Method Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Custom Method Id</em>' reference.
-	 * @see #setCustomMethodId(CustomMethod)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCond_CustomMethodId()
+	 * @return the value of the '<em>Custom Method</em>' reference.
+	 * @see #setCustomMethod(CustomMethod)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCond_CustomMethod()
 	 * @model keys="customMethodId"
 	 * @generated
 	 */
-	CustomMethod getCustomMethodId();
+	CustomMethod getCustomMethod();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getCustomMethodId <em>Custom Method Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getCustomMethod <em>Custom Method</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Custom Method Id</em>' reference.
-	 * @see #getCustomMethodId()
+	 * @param value the new value of the '<em>Custom Method</em>' reference.
+	 * @see #getCustomMethod()
 	 * @generated
 	 */
-	void setCustomMethodId(CustomMethod value);
+	void setCustomMethod(CustomMethod value);
 
 	/**
-	 * Returns the value of the '<em><b>Input Param Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Input Param Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Input Param Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Input Param Enum Id</em>' reference.
-	 * @see #setInputParamEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCond_InputParamEnumId()
+	 * @return the value of the '<em>Input Param Enum</em>' reference.
+	 * @see #setInputParamEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCond_InputParamEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getInputParamEnumId();
+	Enumeration getInputParamEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getInputParamEnumId <em>Input Param Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getInputParamEnum <em>Input Param Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Input Param Enum Id</em>' reference.
-	 * @see #getInputParamEnumId()
+	 * @param value the new value of the '<em>Input Param Enum</em>' reference.
+	 * @see #getInputParamEnum()
 	 * @generated
 	 */
-	void setInputParamEnumId(Enumeration value);
+	void setInputParamEnum(Enumeration value);
 
 	/**
-	 * Returns the value of the '<em><b>Operator Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Operator Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Operator Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Operator Enum Id</em>' reference.
-	 * @see #setOperatorEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCond_OperatorEnumId()
+	 * @return the value of the '<em>Operator Enum</em>' reference.
+	 * @see #setOperatorEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCond_OperatorEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getOperatorEnumId();
+	Enumeration getOperatorEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getOperatorEnumId <em>Operator Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getOperatorEnum <em>Operator Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Operator Enum Id</em>' reference.
-	 * @see #getOperatorEnumId()
+	 * @param value the new value of the '<em>Operator Enum</em>' reference.
+	 * @see #getOperatorEnum()
 	 * @generated
 	 */
-	void setOperatorEnumId(Enumeration value);
+	void setOperatorEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Other Value</b></em>' attribute.
@@ -221,32 +232,5 @@ public interface ProductPromoCond extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setProductPromoRuleId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Promo Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Promo Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Promo Id</em>' reference.
-	 * @see #setProductPromoId(ProductPromo)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCond_ProductPromoId()
-	 * @model keys="productPromoId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductPromo getProductPromoId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCond#getProductPromoId <em>Product Promo Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Promo Id</em>' reference.
-	 * @see #getProductPromoId()
-	 * @generated
-	 */
-	void setProductPromoId(ProductPromo value);
 
 } // ProductPromoCond

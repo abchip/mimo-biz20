@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteNoteImpl#getQuoteId <em>Quote Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteNoteImpl#getQuote <em>Quote</em>}</li>
  * </ul>
  *
  * @generated
@@ -53,8 +53,8 @@ public class QuoteNoteImpl extends BizEntityNoteImpl implements QuoteNote {
 	 * @generated
 	 */
 	@Override
-	public Quote getQuoteId() {
-		return (Quote)eGet(QuotePackage.Literals.QUOTE_NOTE__QUOTE_ID, true);
+	public Quote getQuote() {
+		return (Quote)eGet(QuotePackage.Literals.QUOTE_NOTE__QUOTE, true);
 	}
 
 	/**
@@ -63,8 +63,8 @@ public class QuoteNoteImpl extends BizEntityNoteImpl implements QuoteNote {
 	 * @generated
 	 */
 	@Override
-	public void setQuoteId(Quote newQuoteId) {
-		eSet(QuotePackage.Literals.QUOTE_NOTE__QUOTE_ID, newQuoteId);
+	public void setQuote(Quote newQuote) {
+		eSet(QuotePackage.Literals.QUOTE_NOTE__QUOTE, newQuote);
 	}
 
 } //QuoteNoteImpl

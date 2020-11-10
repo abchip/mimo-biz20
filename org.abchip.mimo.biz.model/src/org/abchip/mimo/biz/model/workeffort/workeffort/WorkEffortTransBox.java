@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortTransBox#getProcessWorkEffortId <em>Process Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortTransBox#getProcessWorkEffort <em>Process Work Effort</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortTransBox#getToActivityId <em>To Activity Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortTransBox#getTransitionId <em>Transition Id</em>}</li>
  * </ul>
@@ -30,31 +30,27 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface WorkEffortTransBox extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Process Work Effort Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Process Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Process Work Effort Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Process Work Effort Id</em>' reference.
-	 * @see #setProcessWorkEffortId(WorkEffort)
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortTransBox_ProcessWorkEffortId()
+	 * @return the value of the '<em>Process Work Effort</em>' reference.
+	 * @see #setProcessWorkEffort(WorkEffort)
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortTransBox_ProcessWorkEffort()
 	 * @model keys="workEffortId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	WorkEffort getProcessWorkEffortId();
+	WorkEffort getProcessWorkEffort();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortTransBox#getProcessWorkEffortId <em>Process Work Effort Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortTransBox#getProcessWorkEffort <em>Process Work Effort</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Process Work Effort Id</em>' reference.
-	 * @see #getProcessWorkEffortId()
+	 * @param value the new value of the '<em>Process Work Effort</em>' reference.
+	 * @see #getProcessWorkEffort()
 	 * @generated
 	 */
-	void setProcessWorkEffortId(WorkEffort value);
+	void setProcessWorkEffort(WorkEffort value);
 
 	/**
 	 * Returns the value of the '<em><b>To Activity Id</b></em>' attribute.

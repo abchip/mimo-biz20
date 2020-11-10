@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderProductPromoCodeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderProductPromoCodeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderProductPromoCodeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderProductPromoCodeImpl#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderProductPromoCodeImpl#getProductPromoCodeId <em>Product Promo Code Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderProductPromoCodeImpl#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderProductPromoCodeImpl#getProductPromoCode <em>Product Promo Code</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class OrderProductPromoCodeImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_PRODUCT_PROMO_CODE__ORDER_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_PRODUCT_PROMO_CODE__ORDER, true);
 	}
 
 	/**
@@ -162,8 +162,8 @@ public class OrderProductPromoCodeImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_PRODUCT_PROMO_CODE__ORDER_ID, newOrderId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_PRODUCT_PROMO_CODE__ORDER, newOrder);
 	}
 
 	/**
@@ -172,8 +172,8 @@ public class OrderProductPromoCodeImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public ProductPromoCode getProductPromoCodeId() {
-		return (ProductPromoCode)eGet(OrderPackage.Literals.ORDER_PRODUCT_PROMO_CODE__PRODUCT_PROMO_CODE_ID, true);
+	public ProductPromoCode getProductPromoCode() {
+		return (ProductPromoCode)eGet(OrderPackage.Literals.ORDER_PRODUCT_PROMO_CODE__PRODUCT_PROMO_CODE, true);
 	}
 
 	/**
@@ -182,8 +182,8 @@ public class OrderProductPromoCodeImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setProductPromoCodeId(ProductPromoCode newProductPromoCodeId) {
-		eSet(OrderPackage.Literals.ORDER_PRODUCT_PROMO_CODE__PRODUCT_PROMO_CODE_ID, newProductPromoCodeId);
+	public void setProductPromoCode(ProductPromoCode newProductPromoCode) {
+		eSet(OrderPackage.Literals.ORDER_PRODUCT_PROMO_CODE__PRODUCT_PROMO_CODE, newProductPromoCode);
 	}
 
 	/**

@@ -740,7 +740,7 @@ public class ReceiptPackageImpl extends EPackageImpl implements ReceiptPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getShipmentReceipt_InventoryItemId() {
+	public EReference getShipmentReceipt_InventoryItem() {
 		return (EReference)shipmentReceiptEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -760,7 +760,7 @@ public class ReceiptPackageImpl extends EPackageImpl implements ReceiptPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getShipmentReceipt_OrderId() {
+	public EReference getShipmentReceipt_Order() {
 		return (EReference)shipmentReceiptEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -780,7 +780,7 @@ public class ReceiptPackageImpl extends EPackageImpl implements ReceiptPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getShipmentReceipt_ProductId() {
+	public EReference getShipmentReceipt_Product() {
 		return (EReference)shipmentReceiptEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -810,7 +810,7 @@ public class ReceiptPackageImpl extends EPackageImpl implements ReceiptPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getShipmentReceipt_ReceivedByUserLoginId() {
+	public EReference getShipmentReceipt_ReceivedByUserLogin() {
 		return (EReference)shipmentReceiptEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -820,7 +820,7 @@ public class ReceiptPackageImpl extends EPackageImpl implements ReceiptPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getShipmentReceipt_RejectionId() {
+	public EReference getShipmentReceipt_Rejection() {
 		return (EReference)shipmentReceiptEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -850,7 +850,7 @@ public class ReceiptPackageImpl extends EPackageImpl implements ReceiptPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getShipmentReceipt_ShipmentId() {
+	public EReference getShipmentReceipt_Shipment() {
 		return (EReference)shipmentReceiptEClass.getEStructuralFeatures().get(13);
 	}
 
@@ -890,7 +890,7 @@ public class ReceiptPackageImpl extends EPackageImpl implements ReceiptPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getShipmentReceiptRole_ReceiptId() {
+	public EReference getShipmentReceiptRole_Receipt() {
 		return (EReference)shipmentReceiptRoleEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -900,7 +900,7 @@ public class ReceiptPackageImpl extends EPackageImpl implements ReceiptPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getShipmentReceiptRole_PartyId() {
+	public EReference getShipmentReceiptRole_Party() {
 		return (EReference)shipmentReceiptRoleEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -950,24 +950,24 @@ public class ReceiptPackageImpl extends EPackageImpl implements ReceiptPackage {
 		shipmentReceiptEClass = createEClass(SHIPMENT_RECEIPT);
 		createEAttribute(shipmentReceiptEClass, SHIPMENT_RECEIPT__RECEIPT_ID);
 		createEAttribute(shipmentReceiptEClass, SHIPMENT_RECEIPT__DATETIME_RECEIVED);
-		createEReference(shipmentReceiptEClass, SHIPMENT_RECEIPT__INVENTORY_ITEM_ID);
+		createEReference(shipmentReceiptEClass, SHIPMENT_RECEIPT__INVENTORY_ITEM);
 		createEAttribute(shipmentReceiptEClass, SHIPMENT_RECEIPT__ITEM_DESCRIPTION);
-		createEReference(shipmentReceiptEClass, SHIPMENT_RECEIPT__ORDER_ID);
+		createEReference(shipmentReceiptEClass, SHIPMENT_RECEIPT__ORDER);
 		createEAttribute(shipmentReceiptEClass, SHIPMENT_RECEIPT__ORDER_ITEM_SEQ_ID);
-		createEReference(shipmentReceiptEClass, SHIPMENT_RECEIPT__PRODUCT_ID);
+		createEReference(shipmentReceiptEClass, SHIPMENT_RECEIPT__PRODUCT);
 		createEAttribute(shipmentReceiptEClass, SHIPMENT_RECEIPT__QUANTITY_ACCEPTED);
 		createEAttribute(shipmentReceiptEClass, SHIPMENT_RECEIPT__QUANTITY_REJECTED);
-		createEReference(shipmentReceiptEClass, SHIPMENT_RECEIPT__RECEIVED_BY_USER_LOGIN_ID);
-		createEReference(shipmentReceiptEClass, SHIPMENT_RECEIPT__REJECTION_ID);
+		createEReference(shipmentReceiptEClass, SHIPMENT_RECEIPT__RECEIVED_BY_USER_LOGIN);
+		createEReference(shipmentReceiptEClass, SHIPMENT_RECEIPT__REJECTION);
 		createEAttribute(shipmentReceiptEClass, SHIPMENT_RECEIPT__RETURN_ID);
 		createEAttribute(shipmentReceiptEClass, SHIPMENT_RECEIPT__RETURN_ITEM_SEQ_ID);
-		createEReference(shipmentReceiptEClass, SHIPMENT_RECEIPT__SHIPMENT_ID);
+		createEReference(shipmentReceiptEClass, SHIPMENT_RECEIPT__SHIPMENT);
 		createEAttribute(shipmentReceiptEClass, SHIPMENT_RECEIPT__SHIPMENT_ITEM_SEQ_ID);
 		createEAttribute(shipmentReceiptEClass, SHIPMENT_RECEIPT__SHIPMENT_PACKAGE_SEQ_ID);
 
 		shipmentReceiptRoleEClass = createEClass(SHIPMENT_RECEIPT_ROLE);
-		createEReference(shipmentReceiptRoleEClass, SHIPMENT_RECEIPT_ROLE__RECEIPT_ID);
-		createEReference(shipmentReceiptRoleEClass, SHIPMENT_RECEIPT_ROLE__PARTY_ID);
+		createEReference(shipmentReceiptRoleEClass, SHIPMENT_RECEIPT_ROLE__RECEIPT);
+		createEReference(shipmentReceiptRoleEClass, SHIPMENT_RECEIPT_ROLE__PARTY);
 		createEAttribute(shipmentReceiptRoleEClass, SHIPMENT_RECEIPT_ROLE__ROLE_TYPE_ID);
 	}
 
@@ -1023,32 +1023,32 @@ public class ReceiptPackageImpl extends EPackageImpl implements ReceiptPackage {
 		initEClass(shipmentReceiptEClass, ShipmentReceipt.class, "ShipmentReceipt", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getShipmentReceipt_ReceiptId(), ecorePackage.getEString(), "receiptId", null, 1, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShipmentReceipt_DatetimeReceived(), ecorePackage.getEDate(), "datetimeReceived", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getShipmentReceipt_InventoryItemId(), theInventoryPackage.getInventoryItem(), null, "inventoryItemId", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShipmentReceipt_InventoryItemId().getEKeys().add(theInventoryPackage.getInventoryItem_InventoryItemId());
+		initEReference(getShipmentReceipt_InventoryItem(), theInventoryPackage.getInventoryItem(), null, "inventoryItem", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShipmentReceipt_InventoryItem().getEKeys().add(theInventoryPackage.getInventoryItem_InventoryItemId());
 		initEAttribute(getShipmentReceipt_ItemDescription(), ecorePackage.getEString(), "itemDescription", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getShipmentReceipt_OrderId(), theOrderPackage.getOrderHeader(), null, "orderId", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShipmentReceipt_OrderId().getEKeys().add(theOrderPackage.getOrderHeader_OrderId());
+		initEReference(getShipmentReceipt_Order(), theOrderPackage.getOrderHeader(), null, "order", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShipmentReceipt_Order().getEKeys().add(theOrderPackage.getOrderHeader_OrderId());
 		initEAttribute(getShipmentReceipt_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getShipmentReceipt_ProductId(), theProductPackage.getProduct(), null, "productId", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShipmentReceipt_ProductId().getEKeys().add(theProductPackage.getProduct_ProductId());
+		initEReference(getShipmentReceipt_Product(), theProductPackage.getProduct(), null, "product", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShipmentReceipt_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEAttribute(getShipmentReceipt_QuantityAccepted(), ecorePackage.getEBigDecimal(), "quantityAccepted", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShipmentReceipt_QuantityRejected(), ecorePackage.getEBigDecimal(), "quantityRejected", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getShipmentReceipt_ReceivedByUserLoginId(), theLoginPackage.getUserLogin(), null, "receivedByUserLoginId", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShipmentReceipt_ReceivedByUserLoginId().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
-		initEReference(getShipmentReceipt_RejectionId(), this.getRejectionReason(), null, "rejectionId", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShipmentReceipt_RejectionId().getEKeys().add(this.getRejectionReason_RejectionId());
+		initEReference(getShipmentReceipt_ReceivedByUserLogin(), theLoginPackage.getUserLogin(), null, "receivedByUserLogin", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShipmentReceipt_ReceivedByUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
+		initEReference(getShipmentReceipt_Rejection(), this.getRejectionReason(), null, "rejection", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShipmentReceipt_Rejection().getEKeys().add(this.getRejectionReason_RejectionId());
 		initEAttribute(getShipmentReceipt_ReturnId(), ecorePackage.getEString(), "returnId", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShipmentReceipt_ReturnItemSeqId(), ecorePackage.getEString(), "returnItemSeqId", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getShipmentReceipt_ShipmentId(), theShipment_Package.getShipment(), null, "shipmentId", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShipmentReceipt_ShipmentId().getEKeys().add(theShipment_Package.getShipment_ShipmentId());
+		initEReference(getShipmentReceipt_Shipment(), theShipment_Package.getShipment(), null, "shipment", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShipmentReceipt_Shipment().getEKeys().add(theShipment_Package.getShipment_ShipmentId());
 		initEAttribute(getShipmentReceipt_ShipmentItemSeqId(), ecorePackage.getEString(), "shipmentItemSeqId", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShipmentReceipt_ShipmentPackageSeqId(), ecorePackage.getEString(), "shipmentPackageSeqId", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(shipmentReceiptRoleEClass, ShipmentReceiptRole.class, "ShipmentReceiptRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getShipmentReceiptRole_ReceiptId(), this.getShipmentReceipt(), null, "receiptId", null, 1, 1, ShipmentReceiptRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShipmentReceiptRole_ReceiptId().getEKeys().add(this.getShipmentReceipt_ReceiptId());
-		initEReference(getShipmentReceiptRole_PartyId(), thePartyPackage_1.getParty(), null, "partyId", null, 1, 1, ShipmentReceiptRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShipmentReceiptRole_PartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getShipmentReceiptRole_Receipt(), this.getShipmentReceipt(), null, "receipt", null, 1, 1, ShipmentReceiptRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShipmentReceiptRole_Receipt().getEKeys().add(this.getShipmentReceipt_ReceiptId());
+		initEReference(getShipmentReceiptRole_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, ShipmentReceiptRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getShipmentReceiptRole_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getShipmentReceiptRole_RoleTypeId(), ecorePackage.getEString(), "roleTypeId", null, 1, 1, ShipmentReceiptRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
@@ -1175,13 +1175,13 @@ public class ReceiptPackageImpl extends EPackageImpl implements ReceiptPackage {
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
 		addAnnotation
-		  (getShipmentReceiptRole_ReceiptId(),
+		  (getShipmentReceiptRole_Receipt(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getShipmentReceiptRole_PartyId(),
+		  (getShipmentReceiptRole_Party(),
 		   source,
 		   new String[] {
 			   "key", "true"

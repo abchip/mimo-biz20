@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementRoleImpl#getRequirementId <em>Requirement Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementRoleImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementRoleImpl#getRequirement <em>Requirement</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementRoleImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementRoleImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementRoleImpl#getThruDate <em>Thru Date</em>}</li>
@@ -155,6 +155,46 @@ public class RequirementRoleImpl extends EntityIdentifiableImpl implements Requi
 	 * @generated
 	 */
 	@Override
+	public Requirement getRequirement() {
+		return (Requirement)eGet(RequirementPackage.Literals.REQUIREMENT_ROLE__REQUIREMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRequirement(Requirement newRequirement) {
+		eSet(RequirementPackage.Literals.REQUIREMENT_ROLE__REQUIREMENT, newRequirement);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(RequirementPackage.Literals.REQUIREMENT_ROLE__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(RequirementPackage.Literals.REQUIREMENT_ROLE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(RequirementPackage.Literals.REQUIREMENT_ROLE__FROM_DATE, true);
 	}
@@ -167,46 +207,6 @@ public class RequirementRoleImpl extends EntityIdentifiableImpl implements Requi
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(RequirementPackage.Literals.REQUIREMENT_ROLE__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(RequirementPackage.Literals.REQUIREMENT_ROLE__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(RequirementPackage.Literals.REQUIREMENT_ROLE__PARTY_ID, newPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Requirement getRequirementId() {
-		return (Requirement)eGet(RequirementPackage.Literals.REQUIREMENT_ROLE__REQUIREMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRequirementId(Requirement newRequirementId) {
-		eSet(RequirementPackage.Literals.REQUIREMENT_ROLE__REQUIREMENT_ID, newRequirementId);
 	}
 
 	/**

@@ -20,13 +20,13 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReviewItem#getEmployeePartyId <em>Employee Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReviewItem#getEmployeeParty <em>Employee Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReviewItem#getEmployeeRoleTypeId <em>Employee Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReviewItem#getPerfReviewId <em>Perf Review Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReviewItem#getPerfReviewItemSeqId <em>Perf Review Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReviewItem#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReviewItem#getPerfRatingTypeId <em>Perf Rating Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReviewItem#getPerfReviewItemTypeId <em>Perf Review Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReviewItem#getPerfRatingType <em>Perf Rating Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PerfReviewItem#getPerfReviewItemType <em>Perf Review Item Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReviewItem()
@@ -34,6 +34,29 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface PerfReviewItem extends EntityTyped<PerfReviewItemType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Employee Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Employee Party</em>' reference.
+	 * @see #setEmployeeParty(Party)
+	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReviewItem_EmployeeParty()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getEmployeeParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PerfReviewItem#getEmployeeParty <em>Employee Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Employee Party</em>' reference.
+	 * @see #getEmployeeParty()
+	 * @generated
+	 */
+	void setEmployeeParty(Party value);
+
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -61,31 +84,48 @@ public interface PerfReviewItem extends EntityTyped<PerfReviewItemType>, EntityI
 	void setComments(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Employee Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Perf Rating Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Employee Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Employee Party Id</em>' reference.
-	 * @see #setEmployeePartyId(Party)
-	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReviewItem_EmployeePartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
+	 * @return the value of the '<em>Perf Rating Type</em>' reference.
+	 * @see #setPerfRatingType(PerfRatingType)
+	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReviewItem_PerfRatingType()
+	 * @model keys="perfRatingTypeId"
 	 * @generated
 	 */
-	Party getEmployeePartyId();
+	PerfRatingType getPerfRatingType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PerfReviewItem#getEmployeePartyId <em>Employee Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PerfReviewItem#getPerfRatingType <em>Perf Rating Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Employee Party Id</em>' reference.
-	 * @see #getEmployeePartyId()
+	 * @param value the new value of the '<em>Perf Rating Type</em>' reference.
+	 * @see #getPerfRatingType()
 	 * @generated
 	 */
-	void setEmployeePartyId(Party value);
+	void setPerfRatingType(PerfRatingType value);
+
+	/**
+	 * Returns the value of the '<em><b>Perf Review Item Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Perf Review Item Type</em>' reference.
+	 * @see #setPerfReviewItemType(PerfReviewItemType)
+	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReviewItem_PerfReviewItemType()
+	 * @model keys="perfReviewItemTypeId"
+	 * @generated
+	 */
+	PerfReviewItemType getPerfReviewItemType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PerfReviewItem#getPerfReviewItemType <em>Perf Review Item Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Perf Review Item Type</em>' reference.
+	 * @see #getPerfReviewItemType()
+	 * @generated
+	 */
+	void setPerfReviewItemType(PerfReviewItemType value);
 
 	/**
 	 * Returns the value of the '<em><b>Employee Role Type Id</b></em>' attribute.
@@ -114,32 +154,6 @@ public interface PerfReviewItem extends EntityTyped<PerfReviewItemType>, EntityI
 	 * @generated
 	 */
 	void setEmployeeRoleTypeId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Perf Rating Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Perf Rating Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Perf Rating Type Id</em>' reference.
-	 * @see #setPerfRatingTypeId(PerfRatingType)
-	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReviewItem_PerfRatingTypeId()
-	 * @model keys="perfRatingTypeId"
-	 * @generated
-	 */
-	PerfRatingType getPerfRatingTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PerfReviewItem#getPerfRatingTypeId <em>Perf Rating Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Perf Rating Type Id</em>' reference.
-	 * @see #getPerfRatingTypeId()
-	 * @generated
-	 */
-	void setPerfRatingTypeId(PerfRatingType value);
 
 	/**
 	 * Returns the value of the '<em><b>Perf Review Id</b></em>' attribute.
@@ -196,31 +210,5 @@ public interface PerfReviewItem extends EntityTyped<PerfReviewItemType>, EntityI
 	 * @generated
 	 */
 	void setPerfReviewItemSeqId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Perf Review Item Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Perf Review Item Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Perf Review Item Type Id</em>' reference.
-	 * @see #setPerfReviewItemTypeId(PerfReviewItemType)
-	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReviewItem_PerfReviewItemTypeId()
-	 * @model keys="perfReviewItemTypeId"
-	 * @generated
-	 */
-	PerfReviewItemType getPerfReviewItemTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PerfReviewItem#getPerfReviewItemTypeId <em>Perf Review Item Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Perf Review Item Type Id</em>' reference.
-	 * @see #getPerfReviewItemTypeId()
-	 * @generated
-	 */
-	void setPerfReviewItemTypeId(PerfReviewItemType value);
 
 } // PerfReviewItem

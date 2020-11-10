@@ -22,9 +22,9 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getWebSiteId <em>Web Site Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getWebSiteContentTypeId <em>Web Site Content Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getWebSite <em>Web Site</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getWebSiteContentType <em>Web Site Content Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -35,31 +35,73 @@ import org.abchip.mimo.entity.EntityTyped;
  */
 public interface WebSiteContent extends EntityTyped<WebSiteContentType>, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Web Site</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Id</em>' reference.
-	 * @see #setContentId(Content)
-	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebSiteContent_ContentId()
+	 * @return the value of the '<em>Web Site</em>' reference.
+	 * @see #setWebSite(WebSite)
+	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebSiteContent_WebSite()
+	 * @model keys="webSiteId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	WebSite getWebSite();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getWebSite <em>Web Site</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Web Site</em>' reference.
+	 * @see #getWebSite()
+	 * @generated
+	 */
+	void setWebSite(WebSite value);
+
+	/**
+	 * Returns the value of the '<em><b>Content</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Content</em>' reference.
+	 * @see #setContent(Content)
+	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebSiteContent_Content()
 	 * @model keys="contentId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Content getContentId();
+	Content getContent();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getContentId <em>Content Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getContent <em>Content</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Id</em>' reference.
-	 * @see #getContentId()
+	 * @param value the new value of the '<em>Content</em>' reference.
+	 * @see #getContent()
 	 * @generated
 	 */
-	void setContentId(Content value);
+	void setContent(Content value);
+
+	/**
+	 * Returns the value of the '<em><b>Web Site Content Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Web Site Content Type</em>' reference.
+	 * @see #setWebSiteContentType(WebSiteContentType)
+	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebSiteContent_WebSiteContentType()
+	 * @model keys="webSiteContentTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	WebSiteContentType getWebSiteContentType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getWebSiteContentType <em>Web Site Content Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Web Site Content Type</em>' reference.
+	 * @see #getWebSiteContentType()
+	 * @generated
+	 */
+	void setWebSiteContentType(WebSiteContentType value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -113,59 +155,5 @@ public interface WebSiteContent extends EntityTyped<WebSiteContentType>, EntityI
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Web Site Content Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Web Site Content Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Web Site Content Type Id</em>' reference.
-	 * @see #setWebSiteContentTypeId(WebSiteContentType)
-	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebSiteContent_WebSiteContentTypeId()
-	 * @model keys="webSiteContentTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	WebSiteContentType getWebSiteContentTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getWebSiteContentTypeId <em>Web Site Content Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Web Site Content Type Id</em>' reference.
-	 * @see #getWebSiteContentTypeId()
-	 * @generated
-	 */
-	void setWebSiteContentTypeId(WebSiteContentType value);
-
-	/**
-	 * Returns the value of the '<em><b>Web Site Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Web Site Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Web Site Id</em>' reference.
-	 * @see #setWebSiteId(WebSite)
-	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebSiteContent_WebSiteId()
-	 * @model keys="webSiteId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	WebSite getWebSiteId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getWebSiteId <em>Web Site Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Web Site Id</em>' reference.
-	 * @see #getWebSiteId()
-	 * @generated
-	 */
-	void setWebSiteId(WebSite value);
 
 } // WebSiteContent

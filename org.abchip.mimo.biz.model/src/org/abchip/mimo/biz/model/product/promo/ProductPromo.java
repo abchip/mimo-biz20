@@ -31,7 +31,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromo#getCreatedDate <em>Created Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromo#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromo#getLastModifiedDate <em>Last Modified Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromo#getOverrideOrgPartyId <em>Override Org Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromo#getOverrideOrgParty <em>Override Org Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromo#getProductPromoRules <em>Product Promo Rules</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromo#getPromoName <em>Promo Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromo#getPromoText <em>Promo Text</em>}</li>
@@ -179,30 +179,26 @@ public interface ProductPromo extends EntityIdentifiable, EntityInfo {
 	void setLastModifiedDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Override Org Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Override Org Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Override Org Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Override Org Party Id</em>' reference.
-	 * @see #setOverrideOrgPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromo_OverrideOrgPartyId()
+	 * @return the value of the '<em>Override Org Party</em>' reference.
+	 * @see #setOverrideOrgParty(Party)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromo_OverrideOrgParty()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getOverrideOrgPartyId();
+	Party getOverrideOrgParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromo#getOverrideOrgPartyId <em>Override Org Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromo#getOverrideOrgParty <em>Override Org Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Override Org Party Id</em>' reference.
-	 * @see #getOverrideOrgPartyId()
+	 * @param value the new value of the '<em>Override Org Party</em>' reference.
+	 * @see #getOverrideOrgParty()
 	 * @generated
 	 */
-	void setOverrideOrgPartyId(Party value);
+	void setOverrideOrgParty(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Promo Rules</b></em>' reference list.

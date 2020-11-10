@@ -20,7 +20,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayRespMsg#getPaymentGatewayRespMsgId <em>Payment Gateway Resp Msg Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayRespMsg#getPaymentGatewayResponseId <em>Payment Gateway Response Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayRespMsg#getPaymentGatewayResponse <em>Payment Gateway Response</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayRespMsg#getPgrMessage <em>Pgr Message</em>}</li>
  * </ul>
  *
@@ -57,6 +57,28 @@ public interface PaymentGatewayRespMsg extends EntityIdentifiable, EntityInfo {
 	void setPaymentGatewayRespMsgId(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Payment Gateway Response</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Payment Gateway Response</em>' reference.
+	 * @see #setPaymentGatewayResponse(PaymentGatewayResponse)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayRespMsg_PaymentGatewayResponse()
+	 * @model keys="paymentGatewayResponseId"
+	 * @generated
+	 */
+	PaymentGatewayResponse getPaymentGatewayResponse();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayRespMsg#getPaymentGatewayResponse <em>Payment Gateway Response</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Payment Gateway Response</em>' reference.
+	 * @see #getPaymentGatewayResponse()
+	 * @generated
+	 */
+	void setPaymentGatewayResponse(PaymentGatewayResponse value);
+
+	/**
 	 * Returns the value of the '<em><b>Pgr Message</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -81,31 +103,5 @@ public interface PaymentGatewayRespMsg extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setPgrMessage(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Payment Gateway Response Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Gateway Response Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Payment Gateway Response Id</em>' reference.
-	 * @see #setPaymentGatewayResponseId(PaymentGatewayResponse)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayRespMsg_PaymentGatewayResponseId()
-	 * @model keys="paymentGatewayResponseId"
-	 * @generated
-	 */
-	PaymentGatewayResponse getPaymentGatewayResponseId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayRespMsg#getPaymentGatewayResponseId <em>Payment Gateway Response Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Payment Gateway Response Id</em>' reference.
-	 * @see #getPaymentGatewayResponseId()
-	 * @generated
-	 */
-	void setPaymentGatewayResponseId(PaymentGatewayResponse value);
 
 } // PaymentGatewayRespMsg

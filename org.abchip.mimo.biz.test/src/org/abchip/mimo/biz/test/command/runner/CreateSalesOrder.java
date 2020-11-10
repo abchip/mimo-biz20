@@ -105,12 +105,12 @@ public class CreateSalesOrder implements Callable<Long> {
 //		if (productStore.getOrderNumberPrefix() != null)
 //			orderHeader.setOrderId(productStore.getOrderNumberPrefix() + orderId);
 
-		orderHeader.setOrderTypeId(context.createProxy(OrderType.class, "SALES_ORDER"));
-		orderHeader.setProductStoreId(productStore);
-		orderHeader.setSalesChannelEnumId(context.createProxy(Enumeration.class, "UNKNWN_SALES_CHANNEL"));
+		orderHeader.setOrderType(context.createProxy(OrderType.class, "SALES_ORDER"));
+		orderHeader.setProductStore(productStore);
+		orderHeader.setSalesChannelEnum(context.createProxy(Enumeration.class, "UNKNWN_SALES_CHANNEL"));
 		orderHeader.setOrderDate(new Date());
 		orderHeader.setEntryDate(new Date());
-		orderHeader.setStatusId(context.createProxy(StatusItem.class, "ORDER_CREATED"));
+		orderHeader.setStatus(context.createProxy(StatusItem.class, "ORDER_CREATED"));
 		orderHeader.setCurrencyUom(commonDefault.getCurrencyUom());
 		orderHeader.setInvoicePerShipment(Boolean.TRUE);
 		orderHeader.setPriority("2");
@@ -122,8 +122,8 @@ public class CreateSalesOrder implements Callable<Long> {
 		// OrderStatus
 		ResourceWriter<OrderStatus> orderStatusWriter = context.getResourceManager().getResourceWriter(OrderStatus.class);
 		OrderStatus orderStatus = orderStatusWriter.make(true);
-		orderStatus.setOrderId(orderHeader);
-		orderStatus.setStatusId(context.createProxy(StatusItem.class, "ORDER_CREATED"));
+		orderStatus.setOrder(orderHeader);
+		orderStatus.setStatus(context.createProxy(StatusItem.class, "ORDER_CREATED"));
 		orderStatus.setStatusUserLogin(userLogin);
 		orderStatusWriter.create(orderStatus);
 
@@ -134,11 +134,11 @@ public class CreateSalesOrder implements Callable<Long> {
 		// OrderItemShipGroup
 		ResourceWriter<OrderItemShipGroup> orderItemShipGroupWriter = context.getResourceManager().getResourceWriter(OrderItemShipGroup.class);
 		OrderItemShipGroup orderItemShipGroup = orderItemShipGroupWriter.make();
-		orderItemShipGroup.setOrderId(orderHeader);
-		orderItemShipGroup.setShipmentMethodTypeId(context.createProxy(ShipmentMethodType.class, "NO_SHIPPING"));
-		orderItemShipGroup.setCarrierPartyId(context.createProxy(Party.class, "_NA_"));
+		orderItemShipGroup.setOrder(orderHeader);
+		orderItemShipGroup.setShipmentMethodType(context.createProxy(ShipmentMethodType.class, "NO_SHIPPING"));
+		orderItemShipGroup.setCarrierParty(context.createProxy(Party.class, "_NA_"));
 		orderItemShipGroup.setCarrierRoleTypeId("CARRIER");
-		orderItemShipGroup.setContactMechId(party.getPostalAddress());
+		orderItemShipGroup.setContactMech(party.getPostalAddress());
 		orderItemShipGroupWriter.create(orderItemShipGroup);
 		
 		
@@ -150,41 +150,41 @@ public class CreateSalesOrder implements Callable<Long> {
 		// OrderRole
 		ResourceWriter<OrderRole> orderRoleWriter = context.getResourceManager().getResourceWriter(OrderRole.class);
 		OrderRole orderRole = orderRoleWriter.make();
-		orderRole.setOrderId(orderHeader);
-		orderRole.setPartyId(partyDefault.getOrganization());
-		orderRole.setRoleTypeId(context.createProxy(RoleType.class, "BILL_FROM_VENDOR"));
+		orderRole.setOrder(orderHeader);
+		orderRole.setParty(partyDefault.getOrganization());
+		orderRole.setRoleType(context.createProxy(RoleType.class, "BILL_FROM_VENDOR"));
 		orderRoleWriter.create(orderRole);
 
 		orderRole = orderRoleWriter.make();
-		orderRole.setOrderId(orderHeader);
-		orderRole.setPartyId(party);
-		orderRole.setRoleTypeId(context.createProxy(RoleType.class, "SHIP_TO_CUSTOMER"));
+		orderRole.setOrder(orderHeader);
+		orderRole.setParty(party);
+		orderRole.setRoleType(context.createProxy(RoleType.class, "SHIP_TO_CUSTOMER"));
 		orderRoleWriter.create(orderRole);
 
 		orderRole = orderRoleWriter.make();
-		orderRole.setOrderId(orderHeader);
-		orderRole.setPartyId(party);
-		orderRole.setRoleTypeId(context.createProxy(RoleType.class, "PLACING_CUSTOMER"));
+		orderRole.setOrder(orderHeader);
+		orderRole.setParty(party);
+		orderRole.setRoleType(context.createProxy(RoleType.class, "PLACING_CUSTOMER"));
 		orderRoleWriter.create(orderRole);
 
 		orderRole = orderRoleWriter.make();
-		orderRole.setOrderId(orderHeader);
-		orderRole.setPartyId(party);
-		orderRole.setRoleTypeId(context.createProxy(RoleType.class, "BILL_TO_CUSTOMER"));
+		orderRole.setOrder(orderHeader);
+		orderRole.setParty(party);
+		orderRole.setRoleType(context.createProxy(RoleType.class, "BILL_TO_CUSTOMER"));
 		orderRoleWriter.create(orderRole);
 
 		orderRole = orderRoleWriter.make();
-		orderRole.setOrderId(orderHeader);
-		orderRole.setPartyId(party);
-		orderRole.setRoleTypeId(context.createProxy(RoleType.class, "END_USER_CUSTOMER"));
+		orderRole.setOrder(orderHeader);
+		orderRole.setParty(party);
+		orderRole.setRoleType(context.createProxy(RoleType.class, "END_USER_CUSTOMER"));
 		orderRoleWriter.create(orderRole);
 
 		// OrderPaymentPreference
 		ResourceWriter<OrderPaymentPreference> orderPaymentPreferenceWriter = context.getResourceManager().getResourceWriter(OrderPaymentPreference.class);
 		OrderPaymentPreference orderPaymentPreference = orderPaymentPreferenceWriter.make();
-		orderPaymentPreference.setOrderId(orderHeader);
-		orderPaymentPreference.setStatusId(context.createProxy(StatusItem.class, "PAYMENT_NOT_RECEIVED"));
-		orderPaymentPreference.setPaymentMethodTypeId(context.createProxy(PaymentMethodType.class, "EXT_COD"));
+		orderPaymentPreference.setOrder(orderHeader);
+		orderPaymentPreference.setStatus(context.createProxy(StatusItem.class, "PAYMENT_NOT_RECEIVED"));
+		orderPaymentPreference.setPaymentMethodType(context.createProxy(PaymentMethodType.class, "EXT_COD"));
 		orderPaymentPreferenceWriter.create(orderPaymentPreference);
 
 		// Ricalcolo tasse servizio recalcTaxTotal
@@ -206,7 +206,7 @@ public class CreateSalesOrder implements Callable<Long> {
 		// Inventory
 		ResourceReader<OrderItemShipGroupAssoc> orderItemShipGroupAssocReader = context.getResourceManager().getResourceReader(OrderItemShipGroupAssoc.class);
 		ResourceReader<OrderItem> orderItemReader = context.getResourceManager().getResourceReader(OrderItem.class);
-		String filter = "orderId = \"" + orderHeader.getOrderId() + "\"";
+		String filter = "orderId = '" + orderHeader.getOrderId() + "'";
 
 		try (EntityIterator<OrderItemShipGroupAssoc> orderItemShipGroupAssocs = orderItemShipGroupAssocReader.find(filter)) {
 			for (OrderItemShipGroupAssoc orderItemShipGroupAssoc : orderItemShipGroupAssocs) {
@@ -215,9 +215,9 @@ public class CreateSalesOrder implements Callable<Long> {
 
 				// reserve the product
 				ReserveStoreInventory reserveStoreInventory = serviceManager.prepare(ReserveStoreInventory.class);
-				reserveStoreInventory.setProductStoreId(orderHeader.getProductStoreId().getID());
-				reserveStoreInventory.setProductId(orderItem.getProductId().getProductId());
-				reserveStoreInventory.setOrderId(orderItem.getOrderId().getOrderId());
+				reserveStoreInventory.setProductStoreId(orderHeader.getProductStore().getID());
+				reserveStoreInventory.setProductId(orderItem.getProduct().getProductId());
+				reserveStoreInventory.setOrderId(orderItem.getOrder().getOrderId());
 				reserveStoreInventory.setOrderItemSeqId(orderItem.getOrderItemSeqId());
 				reserveStoreInventory.setShipGroupSeqId(orderItemShipGroupAssoc.getShipGroupSeqId());
 				// verificare da dove prenderlo
@@ -230,8 +230,8 @@ public class CreateSalesOrder implements Callable<Long> {
 
 				if (inventoryResponse.onError()) {
 					String invErrMsg = "The product ";
-					invErrMsg += orderItem.getProductId();
-					invErrMsg += " with ID " + orderItem.getProductId() + " is no longer in stock. Please try reducing the quantity or removing the product from this order.";
+					invErrMsg += orderItem.getProduct();
+					invErrMsg += " with ID " + orderItem.getProduct() + " is no longer in stock. Please try reducing the quantity or removing the product from this order.";
 					LOGGER.error(invErrMsg);
 				}
 			}
@@ -243,13 +243,13 @@ public class CreateSalesOrder implements Callable<Long> {
 		ResourceWriter<OrderItem> orderItemWriter = context.getResourceManager().getResourceWriter(OrderItem.class);
 
 		OrderItem orderItem = orderItemWriter.make();
-		orderItem.setOrderId(orderHeader);
+		orderItem.setOrder(orderHeader);
 		orderItem.setOrderItemSeqId(itemSeqiD);
-		orderItem.setOrderItemTypeId(context.createProxy(OrderItemType.class, "PRODUCT_ORDER_ITEM"));
+		orderItem.setOrderItemType(context.createProxy(OrderItemType.class, "PRODUCT_ORDER_ITEM"));
 		orderItem.setProdCatalogId("ABChipTest");
-		orderItem.setProductId(product);
+		orderItem.setProduct(product);
 		orderItem.setItemDescription(product.getProductName());
-		orderItem.setStatusId(context.createProxy(StatusItem.class, "ITEM_CREATED"));
+		orderItem.setStatus(context.createProxy(StatusItem.class, "ITEM_CREATED"));
 		orderItem.setQuantity(new BigDecimal(quantity));
 
 		// price calculation
@@ -272,16 +272,16 @@ public class CreateSalesOrder implements Callable<Long> {
 		// OrderStatus
 		ResourceWriter<OrderStatus> orderStatusWriter = context.getResourceManager().getResourceWriter(OrderStatus.class);
 		OrderStatus orderStatus = orderStatusWriter.make(true);
-		orderStatus.setOrderId(orderHeader);
+		orderStatus.setOrder(orderHeader);
 		orderStatus.setOrderItemSeqId(itemSeqiD);
-		orderStatus.setStatusId(context.createProxy(StatusItem.class, "ITEM_CREATED"));
+		orderStatus.setStatus(context.createProxy(StatusItem.class, "ITEM_CREATED"));
 		orderStatus.setStatusUserLogin(context.createProxy(UserLogin.class, context.getContextDescription().getUser()));
 		orderStatusWriter.create(orderStatus);
 
 		// OrderItemShipGroupAssoc
 		ResourceWriter<OrderItemShipGroupAssoc> orderItemShipGroupAssocWriter = context.getResourceManager().getResourceWriter(OrderItemShipGroupAssoc.class);
 		OrderItemShipGroupAssoc orderItemShipGroupAssoc = orderItemShipGroupAssocWriter.make();
-		orderItemShipGroupAssoc.setOrderId(orderHeader);
+		orderItemShipGroupAssoc.setOrder(orderHeader);
 		orderItemShipGroupAssoc.setOrderItemSeqId(itemSeqiD);
 		orderItemShipGroupAssoc.setShipGroupSeqId(shipGroupSeqId);
 		orderItemShipGroupAssoc.setQuantity(new BigDecimal(quantity));
@@ -292,9 +292,9 @@ public class CreateSalesOrder implements Callable<Long> {
 		if (contactMech != null) {
 			ResourceWriter<OrderContactMech> orderContactMechWriter = context.getResourceManager().getResourceWriter(OrderContactMech.class);
 			OrderContactMech orderContactMech = orderContactMechWriter.make();
-			orderContactMech.setOrderId(orderHeader);
-			orderContactMech.setContactMechPurposeTypeId(context.createProxy(ContactMechPurposeType.class, purposeType));
-			orderContactMech.setContactMechId(contactMech);
+			orderContactMech.setOrder(orderHeader);
+			orderContactMech.setContactMechPurposeType(context.createProxy(ContactMechPurposeType.class, purposeType));
+			orderContactMech.setContactMech(contactMech);
 			orderContactMechWriter.create(orderContactMech);
 		}
 	}

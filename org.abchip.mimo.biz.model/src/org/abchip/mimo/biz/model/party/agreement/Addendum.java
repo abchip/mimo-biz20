@@ -24,7 +24,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Addendum#getAddendumCreationDate <em>Addendum Creation Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Addendum#getAddendumEffectiveDate <em>Addendum Effective Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Addendum#getAddendumText <em>Addendum Text</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Addendum#getAgreementId <em>Agreement Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Addendum#getAgreement <em>Agreement</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Addendum#getAgreementItemSeqId <em>Agreement Item Seq Id</em>}</li>
  * </ul>
  *
@@ -139,6 +139,28 @@ public interface Addendum extends EntityIdentifiable, EntityInfo {
 	void setAddendumText(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Agreement</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Agreement</em>' reference.
+	 * @see #setAgreement(Agreement)
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAddendum_Agreement()
+	 * @model keys="agreementId"
+	 * @generated
+	 */
+	Agreement getAgreement();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.Addendum#getAgreement <em>Agreement</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Agreement</em>' reference.
+	 * @see #getAgreement()
+	 * @generated
+	 */
+	void setAgreement(Agreement value);
+
+	/**
 	 * Returns the value of the '<em><b>Agreement Item Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -163,31 +185,5 @@ public interface Addendum extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setAgreementItemSeqId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Agreement Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Agreement Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Agreement Id</em>' reference.
-	 * @see #setAgreementId(Agreement)
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAddendum_AgreementId()
-	 * @model keys="agreementId"
-	 * @generated
-	 */
-	Agreement getAgreementId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.Addendum#getAgreementId <em>Agreement Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Agreement Id</em>' reference.
-	 * @see #getAgreementId()
-	 * @generated
-	 */
-	void setAgreementId(Agreement value);
 
 } // Addendum

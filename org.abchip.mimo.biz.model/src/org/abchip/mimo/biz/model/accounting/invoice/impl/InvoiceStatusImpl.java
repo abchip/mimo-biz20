@@ -30,10 +30,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceStatusImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceStatusImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceStatusImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceStatusImpl#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceStatusImpl#getInvoiceId <em>Invoice Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceStatusImpl#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceStatusImpl#getInvoice <em>Invoice</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceStatusImpl#getStatusDate <em>Status Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceStatusImpl#getChangeByUserLoginId <em>Change By User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceStatusImpl#getChangeByUserLogin <em>Change By User Login</em>}</li>
  * </ul>
  *
  * @generated
@@ -154,8 +154,8 @@ public class InvoiceStatusImpl extends EntityIdentifiableImpl implements Invoice
 	 * @generated
 	 */
 	@Override
-	public UserLogin getChangeByUserLoginId() {
-		return (UserLogin)eGet(InvoicePackage.Literals.INVOICE_STATUS__CHANGE_BY_USER_LOGIN_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(InvoicePackage.Literals.INVOICE_STATUS__STATUS, true);
 	}
 
 	/**
@@ -164,8 +164,28 @@ public class InvoiceStatusImpl extends EntityIdentifiableImpl implements Invoice
 	 * @generated
 	 */
 	@Override
-	public void setChangeByUserLoginId(UserLogin newChangeByUserLoginId) {
-		eSet(InvoicePackage.Literals.INVOICE_STATUS__CHANGE_BY_USER_LOGIN_ID, newChangeByUserLoginId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(InvoicePackage.Literals.INVOICE_STATUS__STATUS, newStatus);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Invoice getInvoice() {
+		return (Invoice)eGet(InvoicePackage.Literals.INVOICE_STATUS__INVOICE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInvoice(Invoice newInvoice) {
+		eSet(InvoicePackage.Literals.INVOICE_STATUS__INVOICE, newInvoice);
 	}
 
 	/**
@@ -232,8 +252,8 @@ public class InvoiceStatusImpl extends EntityIdentifiableImpl implements Invoice
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(InvoicePackage.Literals.INVOICE_STATUS__STATUS_ID, true);
+	public UserLogin getChangeByUserLogin() {
+		return (UserLogin)eGet(InvoicePackage.Literals.INVOICE_STATUS__CHANGE_BY_USER_LOGIN, true);
 	}
 
 	/**
@@ -242,28 +262,8 @@ public class InvoiceStatusImpl extends EntityIdentifiableImpl implements Invoice
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(InvoicePackage.Literals.INVOICE_STATUS__STATUS_ID, newStatusId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Invoice getInvoiceId() {
-		return (Invoice)eGet(InvoicePackage.Literals.INVOICE_STATUS__INVOICE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInvoiceId(Invoice newInvoiceId) {
-		eSet(InvoicePackage.Literals.INVOICE_STATUS__INVOICE_ID, newInvoiceId);
+	public void setChangeByUserLogin(UserLogin newChangeByUserLogin) {
+		eSet(InvoicePackage.Literals.INVOICE_STATUS__CHANGE_BY_USER_LOGIN, newChangeByUserLogin);
 	}
 
 } //InvoiceStatusImpl

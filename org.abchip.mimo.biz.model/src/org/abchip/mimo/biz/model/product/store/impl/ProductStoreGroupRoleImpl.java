@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupRoleImpl#getProductStoreGroupId <em>Product Store Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupRoleImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupRoleImpl#getProductStoreGroup <em>Product Store Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupRoleImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupRoleImpl#getRoleType <em>Role Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -154,8 +154,8 @@ public class ProductStoreGroupRoleImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLE__PARTY_ID, true);
+	public ProductStoreGroup getProductStoreGroup() {
+		return (ProductStoreGroup)eGet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLE__PRODUCT_STORE_GROUP, true);
 	}
 
 	/**
@@ -164,8 +164,8 @@ public class ProductStoreGroupRoleImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLE__PARTY_ID, newPartyId);
+	public void setProductStoreGroup(ProductStoreGroup newProductStoreGroup) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLE__PRODUCT_STORE_GROUP, newProductStoreGroup);
 	}
 
 	/**
@@ -174,8 +174,8 @@ public class ProductStoreGroupRoleImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLE__ROLE_TYPE_ID, true);
+	public Party getParty() {
+		return (Party)eGet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLE__PARTY, true);
 	}
 
 	/**
@@ -184,8 +184,28 @@ public class ProductStoreGroupRoleImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLE__ROLE_TYPE_ID, newRoleTypeId);
+	public void setParty(Party newParty) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RoleType getRoleType() {
+		return (RoleType)eGet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLE__ROLE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRoleType(RoleType newRoleType) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLE__ROLE_TYPE, newRoleType);
 	}
 
 	/**
@@ -224,26 +244,6 @@ public class ProductStoreGroupRoleImpl extends EntityIdentifiableImpl implements
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductStoreGroup getProductStoreGroupId() {
-		return (ProductStoreGroup)eGet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLE__PRODUCT_STORE_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductStoreGroupId(ProductStoreGroup newProductStoreGroupId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLE__PRODUCT_STORE_GROUP_ID, newProductStoreGroupId);
 	}
 
 } //ProductStoreGroupRoleImpl

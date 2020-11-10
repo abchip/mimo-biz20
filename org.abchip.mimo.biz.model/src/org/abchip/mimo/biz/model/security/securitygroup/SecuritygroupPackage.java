@@ -108,13 +108,13 @@ public interface SecuritygroupPackage extends EPackage {
 	int PROTECTED_VIEW__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Group Id</b></em>' reference.
+	 * The feature id for the '<em><b>Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROTECTED_VIEW__GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PROTECTED_VIEW__GROUP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>View Name Id</b></em>' attribute.
@@ -308,22 +308,22 @@ public interface SecuritygroupPackage extends EPackage {
 	int SECURITY_GROUP_PERMISSION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Group Id</b></em>' reference.
+	 * The feature id for the '<em><b>Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP_PERMISSION__GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SECURITY_GROUP_PERMISSION__GROUP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Permission Id</b></em>' reference.
+	 * The feature id for the '<em><b>Permission</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP_PERMISSION__PERMISSION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int SECURITY_GROUP_PERMISSION__PERMISSION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -554,22 +554,22 @@ public interface SecuritygroupPackage extends EPackage {
 	int USER_LOGIN_SECURITY_GROUP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>User Login Id</b></em>' reference.
+	 * The feature id for the '<em><b>User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN_SECURITY_GROUP__USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int USER_LOGIN_SECURITY_GROUP__USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Group Id</b></em>' reference.
+	 * The feature id for the '<em><b>Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN_SECURITY_GROUP__GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int USER_LOGIN_SECURITY_GROUP__GROUP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -610,15 +610,15 @@ public interface SecuritygroupPackage extends EPackage {
 	EClass getProtectedView();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.securitygroup.ProtectedView#getGroupId <em>Group Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.securitygroup.ProtectedView#getGroup <em>Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Group Id</em>'.
-	 * @see org.abchip.mimo.biz.model.security.securitygroup.ProtectedView#getGroupId()
+	 * @return the meta object for the reference '<em>Group</em>'.
+	 * @see org.abchip.mimo.biz.model.security.securitygroup.ProtectedView#getGroup()
 	 * @see #getProtectedView()
 	 * @generated
 	 */
-	EReference getProtectedView_GroupId();
+	EReference getProtectedView_Group();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.security.securitygroup.ProtectedView#getViewNameId <em>View Name Id</em>}'.
@@ -740,26 +740,26 @@ public interface SecuritygroupPackage extends EPackage {
 	EClass getSecurityGroupPermission();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.securitygroup.SecurityGroupPermission#getGroupId <em>Group Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.securitygroup.SecurityGroupPermission#getGroup <em>Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Group Id</em>'.
-	 * @see org.abchip.mimo.biz.model.security.securitygroup.SecurityGroupPermission#getGroupId()
+	 * @return the meta object for the reference '<em>Group</em>'.
+	 * @see org.abchip.mimo.biz.model.security.securitygroup.SecurityGroupPermission#getGroup()
 	 * @see #getSecurityGroupPermission()
 	 * @generated
 	 */
-	EReference getSecurityGroupPermission_GroupId();
+	EReference getSecurityGroupPermission_Group();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.securitygroup.SecurityGroupPermission#getPermissionId <em>Permission Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.securitygroup.SecurityGroupPermission#getPermission <em>Permission</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Permission Id</em>'.
-	 * @see org.abchip.mimo.biz.model.security.securitygroup.SecurityGroupPermission#getPermissionId()
+	 * @return the meta object for the reference '<em>Permission</em>'.
+	 * @see org.abchip.mimo.biz.model.security.securitygroup.SecurityGroupPermission#getPermission()
 	 * @see #getSecurityGroupPermission()
 	 * @generated
 	 */
-	EReference getSecurityGroupPermission_PermissionId();
+	EReference getSecurityGroupPermission_Permission();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.security.securitygroup.SecurityGroupPermission#getFromDate <em>From Date</em>}'.
@@ -869,26 +869,26 @@ public interface SecuritygroupPackage extends EPackage {
 	EClass getUserLoginSecurityGroup();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup#getUserLoginId <em>User Login Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup#getUserLogin <em>User Login</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>User Login Id</em>'.
-	 * @see org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup#getUserLoginId()
+	 * @return the meta object for the reference '<em>User Login</em>'.
+	 * @see org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup#getUserLogin()
 	 * @see #getUserLoginSecurityGroup()
 	 * @generated
 	 */
-	EReference getUserLoginSecurityGroup_UserLoginId();
+	EReference getUserLoginSecurityGroup_UserLogin();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup#getGroupId <em>Group Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup#getGroup <em>Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Group Id</em>'.
-	 * @see org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup#getGroupId()
+	 * @return the meta object for the reference '<em>Group</em>'.
+	 * @see org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup#getGroup()
 	 * @see #getUserLoginSecurityGroup()
 	 * @generated
 	 */
-	EReference getUserLoginSecurityGroup_GroupId();
+	EReference getUserLoginSecurityGroup_Group();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup#getFromDate <em>From Date</em>}'.
@@ -945,12 +945,12 @@ public interface SecuritygroupPackage extends EPackage {
 		EClass PROTECTED_VIEW = eINSTANCE.getProtectedView();
 
 		/**
-		 * The meta object literal for the '<em><b>Group Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Group</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PROTECTED_VIEW__GROUP_ID = eINSTANCE.getProtectedView_GroupId();
+		EReference PROTECTED_VIEW__GROUP = eINSTANCE.getProtectedView_Group();
 
 		/**
 		 * The meta object literal for the '<em><b>View Name Id</b></em>' attribute feature.
@@ -1045,20 +1045,20 @@ public interface SecuritygroupPackage extends EPackage {
 		EClass SECURITY_GROUP_PERMISSION = eINSTANCE.getSecurityGroupPermission();
 
 		/**
-		 * The meta object literal for the '<em><b>Group Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Group</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SECURITY_GROUP_PERMISSION__GROUP_ID = eINSTANCE.getSecurityGroupPermission_GroupId();
+		EReference SECURITY_GROUP_PERMISSION__GROUP = eINSTANCE.getSecurityGroupPermission_Group();
 
 		/**
-		 * The meta object literal for the '<em><b>Permission Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Permission</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SECURITY_GROUP_PERMISSION__PERMISSION_ID = eINSTANCE.getSecurityGroupPermission_PermissionId();
+		EReference SECURITY_GROUP_PERMISSION__PERMISSION = eINSTANCE.getSecurityGroupPermission_Permission();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -1147,20 +1147,20 @@ public interface SecuritygroupPackage extends EPackage {
 		EClass USER_LOGIN_SECURITY_GROUP = eINSTANCE.getUserLoginSecurityGroup();
 
 		/**
-		 * The meta object literal for the '<em><b>User Login Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>User Login</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference USER_LOGIN_SECURITY_GROUP__USER_LOGIN_ID = eINSTANCE.getUserLoginSecurityGroup_UserLoginId();
+		EReference USER_LOGIN_SECURITY_GROUP__USER_LOGIN = eINSTANCE.getUserLoginSecurityGroup_UserLogin();
 
 		/**
-		 * The meta object literal for the '<em><b>Group Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Group</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference USER_LOGIN_SECURITY_GROUP__GROUP_ID = eINSTANCE.getUserLoginSecurityGroup_GroupId();
+		EReference USER_LOGIN_SECURITY_GROUP__GROUP = eINSTANCE.getUserLoginSecurityGroup_Group();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.

@@ -21,8 +21,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup#getUserLoginId <em>User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup#getGroupId <em>Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup#getUserLogin <em>User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup#getGroup <em>Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -32,6 +32,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface UserLoginSecurityGroup extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>User Login</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>User Login</em>' reference.
+	 * @see #setUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage#getUserLoginSecurityGroup_UserLogin()
+	 * @model keys="userLoginId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	UserLogin getUserLogin();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup#getUserLogin <em>User Login</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>User Login</em>' reference.
+	 * @see #getUserLogin()
+	 * @generated
+	 */
+	void setUserLogin(UserLogin value);
+
+	/**
+	 * Returns the value of the '<em><b>Group</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Group</em>' reference.
+	 * @see #setGroup(SecurityGroup)
+	 * @see org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage#getUserLoginSecurityGroup_Group()
+	 * @model keys="groupId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	SecurityGroup getGroup();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup#getGroup <em>Group</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Group</em>' reference.
+	 * @see #getGroup()
+	 * @generated
+	 */
+	void setGroup(SecurityGroup value);
+
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -60,33 +106,6 @@ public interface UserLoginSecurityGroup extends EntityIdentifiable, EntityInfo {
 	void setFromDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Group Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Group Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Group Id</em>' reference.
-	 * @see #setGroupId(SecurityGroup)
-	 * @see org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage#getUserLoginSecurityGroup_GroupId()
-	 * @model keys="groupId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	SecurityGroup getGroupId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup#getGroupId <em>Group Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Group Id</em>' reference.
-	 * @see #getGroupId()
-	 * @generated
-	 */
-	void setGroupId(SecurityGroup value);
-
-	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -111,32 +130,5 @@ public interface UserLoginSecurityGroup extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>User Login Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>User Login Id</em>' reference.
-	 * @see #setUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage#getUserLoginSecurityGroup_UserLoginId()
-	 * @model keys="userLoginId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	UserLogin getUserLoginId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup#getUserLoginId <em>User Login Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>User Login Id</em>' reference.
-	 * @see #getUserLoginId()
-	 * @generated
-	 */
-	void setUserLoginId(UserLogin value);
 
 } // UserLoginSecurityGroup

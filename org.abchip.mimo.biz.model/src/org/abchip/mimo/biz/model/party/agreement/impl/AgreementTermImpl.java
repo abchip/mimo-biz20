@@ -34,16 +34,16 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl#getAgreementTermId <em>Agreement Term Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl#getAgreementId <em>Agreement Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl#getAgreement <em>Agreement</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl#getAgreementItemSeqId <em>Agreement Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl#getAgreementTermAttributes <em>Agreement Term Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl#getInvoiceItemTypeId <em>Invoice Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl#getInvoiceItemType <em>Invoice Item Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl#getMaxQuantity <em>Max Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl#getMinQuantity <em>Min Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl#getTermDays <em>Term Days</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl#getTermTypeId <em>Term Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl#getTermType <em>Term Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl#getTermValue <em>Term Value</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl#getTextValue <em>Text Value</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl#getThruDate <em>Thru Date</em>}</li>
@@ -238,8 +238,8 @@ public class AgreementTermImpl extends EntityTypedImpl<TermType> implements Agre
 	 * @generated
 	 */
 	@Override
-	public InvoiceItemType getInvoiceItemTypeId() {
-		return (InvoiceItemType)eGet(AgreementPackage.Literals.AGREEMENT_TERM__INVOICE_ITEM_TYPE_ID, true);
+	public InvoiceItemType getInvoiceItemType() {
+		return (InvoiceItemType)eGet(AgreementPackage.Literals.AGREEMENT_TERM__INVOICE_ITEM_TYPE, true);
 	}
 
 	/**
@@ -248,8 +248,8 @@ public class AgreementTermImpl extends EntityTypedImpl<TermType> implements Agre
 	 * @generated
 	 */
 	@Override
-	public void setInvoiceItemTypeId(InvoiceItemType newInvoiceItemTypeId) {
-		eSet(AgreementPackage.Literals.AGREEMENT_TERM__INVOICE_ITEM_TYPE_ID, newInvoiceItemTypeId);
+	public void setInvoiceItemType(InvoiceItemType newInvoiceItemType) {
+		eSet(AgreementPackage.Literals.AGREEMENT_TERM__INVOICE_ITEM_TYPE, newInvoiceItemType);
 	}
 
 	/**
@@ -310,6 +310,26 @@ public class AgreementTermImpl extends EntityTypedImpl<TermType> implements Agre
 	@Override
 	public void setTermDays(long newTermDays) {
 		eSet(AgreementPackage.Literals.AGREEMENT_TERM__TERM_DAYS, newTermDays);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TermType getTermType() {
+		return (TermType)eGet(AgreementPackage.Literals.AGREEMENT_TERM__TERM_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTermType(TermType newTermType) {
+		eSet(AgreementPackage.Literals.AGREEMENT_TERM__TERM_TYPE, newTermType);
 	}
 
 	/**
@@ -416,46 +436,6 @@ public class AgreementTermImpl extends EntityTypedImpl<TermType> implements Agre
 	 * @generated
 	 */
 	@Override
-	public TermType getTermTypeId() {
-		return (TermType)eGet(AgreementPackage.Literals.AGREEMENT_TERM__TERM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTermTypeId(TermType newTermTypeId) {
-		eSet(AgreementPackage.Literals.AGREEMENT_TERM__TERM_TYPE_ID, newTermTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Agreement getAgreementId() {
-		return (Agreement)eGet(AgreementPackage.Literals.AGREEMENT_TERM__AGREEMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAgreementId(Agreement newAgreementId) {
-		eSet(AgreementPackage.Literals.AGREEMENT_TERM__AGREEMENT_ID, newAgreementId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getAgreementTermId() {
 		return (String)eGet(AgreementPackage.Literals.AGREEMENT_TERM__AGREEMENT_TERM_ID, true);
 	}
@@ -468,6 +448,26 @@ public class AgreementTermImpl extends EntityTypedImpl<TermType> implements Agre
 	@Override
 	public void setAgreementTermId(String newAgreementTermId) {
 		eSet(AgreementPackage.Literals.AGREEMENT_TERM__AGREEMENT_TERM_ID, newAgreementTermId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Agreement getAgreement() {
+		return (Agreement)eGet(AgreementPackage.Literals.AGREEMENT_TERM__AGREEMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAgreement(Agreement newAgreement) {
+		eSet(AgreementPackage.Literals.AGREEMENT_TERM__AGREEMENT, newAgreement);
 	}
 
 } //AgreementTermImpl

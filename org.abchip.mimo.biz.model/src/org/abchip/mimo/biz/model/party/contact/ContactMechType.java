@@ -25,7 +25,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMechType#getContactMechTypePurposes <em>Contact Mech Type Purposes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMechType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMechType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMechType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMechType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMechType()
@@ -86,30 +86,26 @@ public interface ContactMechType extends EntityType<ContactMech>, EntityInfo {
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(ContactMechType)
-	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMechType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(ContactMechType)
+	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMechType_ParentType()
 	 * @model keys="contactMechTypeId"
 	 * @generated
 	 */
-	ContactMechType getParentTypeId();
+	ContactMechType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.ContactMechType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.ContactMechType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(ContactMechType value);
+	void setParentType(ContactMechType value);
 
 	/**
 	 * Returns the value of the '<em><b>Contact Mech Type Id</b></em>' attribute.

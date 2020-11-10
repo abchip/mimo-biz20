@@ -29,10 +29,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.DesiredFeatureImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.DesiredFeatureImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.DesiredFeatureImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.DesiredFeatureImpl#getRequirementId <em>Requirement Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.DesiredFeatureImpl#getRequirement <em>Requirement</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.DesiredFeatureImpl#getDesiredFeatureId <em>Desired Feature Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.DesiredFeatureImpl#getOptionalInd <em>Optional Ind</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.DesiredFeatureImpl#getProductFeatureId <em>Product Feature Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.DesiredFeatureImpl#getProductFeature <em>Product Feature</em>}</li>
  * </ul>
  *
  * @generated
@@ -154,6 +154,26 @@ public class DesiredFeatureImpl extends EntityIdentifiableImpl implements Desire
 	 * @generated
 	 */
 	@Override
+	public Requirement getRequirement() {
+		return (Requirement)eGet(RequirementPackage.Literals.DESIRED_FEATURE__REQUIREMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRequirement(Requirement newRequirement) {
+		eSet(RequirementPackage.Literals.DESIRED_FEATURE__REQUIREMENT, newRequirement);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDesiredFeatureId() {
 		return (String)eGet(RequirementPackage.Literals.DESIRED_FEATURE__DESIRED_FEATURE_ID, true);
 	}
@@ -194,8 +214,8 @@ public class DesiredFeatureImpl extends EntityIdentifiableImpl implements Desire
 	 * @generated
 	 */
 	@Override
-	public ProductFeature getProductFeatureId() {
-		return (ProductFeature)eGet(RequirementPackage.Literals.DESIRED_FEATURE__PRODUCT_FEATURE_ID, true);
+	public ProductFeature getProductFeature() {
+		return (ProductFeature)eGet(RequirementPackage.Literals.DESIRED_FEATURE__PRODUCT_FEATURE, true);
 	}
 
 	/**
@@ -204,8 +224,8 @@ public class DesiredFeatureImpl extends EntityIdentifiableImpl implements Desire
 	 * @generated
 	 */
 	@Override
-	public void setProductFeatureId(ProductFeature newProductFeatureId) {
-		eSet(RequirementPackage.Literals.DESIRED_FEATURE__PRODUCT_FEATURE_ID, newProductFeatureId);
+	public void setProductFeature(ProductFeature newProductFeature) {
+		eSet(RequirementPackage.Literals.DESIRED_FEATURE__PRODUCT_FEATURE, newProductFeature);
 	}
 
 	/**
@@ -244,26 +264,6 @@ public class DesiredFeatureImpl extends EntityIdentifiableImpl implements Desire
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Requirement getRequirementId() {
-		return (Requirement)eGet(RequirementPackage.Literals.DESIRED_FEATURE__REQUIREMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRequirementId(Requirement newRequirementId) {
-		eSet(RequirementPackage.Literals.DESIRED_FEATURE__REQUIREMENT_ID, newRequirementId);
 	}
 
 } //DesiredFeatureImpl

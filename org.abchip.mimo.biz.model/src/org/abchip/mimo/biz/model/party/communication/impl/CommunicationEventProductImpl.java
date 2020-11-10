@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventProductImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventProductImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventProductImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventProductImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventProductImpl#getCommunicationEventId <em>Communication Event Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventProductImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventProductImpl#getCommunicationEvent <em>Communication Event</em>}</li>
  * </ul>
  *
  * @generated
@@ -151,8 +151,8 @@ public class CommunicationEventProductImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PRODUCT__PRODUCT_ID, true);
+	public Product getProduct() {
+		return (Product)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PRODUCT__PRODUCT, true);
 	}
 
 	/**
@@ -161,8 +161,8 @@ public class CommunicationEventProductImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setProductId(Product newProductId) {
-		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PRODUCT__PRODUCT_ID, newProductId);
+	public void setProduct(Product newProduct) {
+		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PRODUCT__PRODUCT, newProduct);
 	}
 
 	/**
@@ -171,8 +171,8 @@ public class CommunicationEventProductImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public CommunicationEvent getCommunicationEventId() {
-		return (CommunicationEvent)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PRODUCT__COMMUNICATION_EVENT_ID, true);
+	public CommunicationEvent getCommunicationEvent() {
+		return (CommunicationEvent)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PRODUCT__COMMUNICATION_EVENT, true);
 	}
 
 	/**
@@ -181,8 +181,8 @@ public class CommunicationEventProductImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setCommunicationEventId(CommunicationEvent newCommunicationEventId) {
-		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PRODUCT__COMMUNICATION_EVENT_ID, newCommunicationEventId);
+	public void setCommunicationEvent(CommunicationEvent newCommunicationEvent) {
+		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PRODUCT__COMMUNICATION_EVENT, newCommunicationEvent);
 	}
 
 	/**

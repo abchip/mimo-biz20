@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderWorkEffortImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderWorkEffortImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderWorkEffortImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderWorkEffortImpl#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderWorkEffortImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderWorkEffortImpl#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderWorkEffortImpl#getWorkEffort <em>Work Effort</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class OrderHeaderWorkEffortImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_HEADER_WORK_EFFORT__ORDER_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_HEADER_WORK_EFFORT__ORDER, true);
 	}
 
 	/**
@@ -162,8 +162,8 @@ public class OrderHeaderWorkEffortImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_HEADER_WORK_EFFORT__ORDER_ID, newOrderId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_HEADER_WORK_EFFORT__ORDER, newOrder);
 	}
 
 	/**
@@ -172,8 +172,8 @@ public class OrderHeaderWorkEffortImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(OrderPackage.Literals.ORDER_HEADER_WORK_EFFORT__WORK_EFFORT_ID, true);
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(OrderPackage.Literals.ORDER_HEADER_WORK_EFFORT__WORK_EFFORT, true);
 	}
 
 	/**
@@ -182,8 +182,8 @@ public class OrderHeaderWorkEffortImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(OrderPackage.Literals.ORDER_HEADER_WORK_EFFORT__WORK_EFFORT_ID, newWorkEffortId);
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(OrderPackage.Literals.ORDER_HEADER_WORK_EFFORT__WORK_EFFORT, newWorkEffort);
 	}
 
 	/**

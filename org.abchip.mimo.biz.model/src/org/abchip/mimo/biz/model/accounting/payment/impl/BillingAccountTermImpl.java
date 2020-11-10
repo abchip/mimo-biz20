@@ -34,12 +34,12 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountTermImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountTermImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountTermImpl#getBillingAccountTermId <em>Billing Account Term Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountTermImpl#getBillingAccountId <em>Billing Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountTermImpl#getBillingAccount <em>Billing Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountTermImpl#getBillingAccountTermAttrs <em>Billing Account Term Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountTermImpl#getTermDays <em>Term Days</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountTermImpl#getTermTypeId <em>Term Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountTermImpl#getTermType <em>Term Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountTermImpl#getTermValue <em>Term Value</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountTermImpl#getUomId <em>Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountTermImpl#getUom <em>Uom</em>}</li>
  * </ul>
  *
  * @generated
@@ -180,8 +180,8 @@ public class BillingAccountTermImpl extends EntityIdentifiableImpl implements Bi
 	 * @generated
 	 */
 	@Override
-	public TermType getTermTypeId() {
-		return (TermType)eGet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM__TERM_TYPE_ID, true);
+	public TermType getTermType() {
+		return (TermType)eGet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM__TERM_TYPE, true);
 	}
 
 	/**
@@ -190,8 +190,8 @@ public class BillingAccountTermImpl extends EntityIdentifiableImpl implements Bi
 	 * @generated
 	 */
 	@Override
-	public void setTermTypeId(TermType newTermTypeId) {
-		eSet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM__TERM_TYPE_ID, newTermTypeId);
+	public void setTermType(TermType newTermType) {
+		eSet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM__TERM_TYPE, newTermType);
 	}
 
 	/**
@@ -220,8 +220,8 @@ public class BillingAccountTermImpl extends EntityIdentifiableImpl implements Bi
 	 * @generated
 	 */
 	@Override
-	public Uom getUomId() {
-		return (Uom)eGet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM__UOM_ID, true);
+	public Uom getUom() {
+		return (Uom)eGet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM__UOM, true);
 	}
 
 	/**
@@ -230,8 +230,8 @@ public class BillingAccountTermImpl extends EntityIdentifiableImpl implements Bi
 	 * @generated
 	 */
 	@Override
-	public void setUomId(Uom newUomId) {
-		eSet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM__UOM_ID, newUomId);
+	public void setUom(Uom newUom) {
+		eSet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM__UOM, newUom);
 	}
 
 	/**
@@ -277,26 +277,6 @@ public class BillingAccountTermImpl extends EntityIdentifiableImpl implements Bi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public BillingAccount getBillingAccountId() {
-		return (BillingAccount)eGet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM__BILLING_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBillingAccountId(BillingAccount newBillingAccountId) {
-		eSet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM__BILLING_ACCOUNT_ID, newBillingAccountId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<BillingAccountTermAttr> getBillingAccountTermAttrs() {
@@ -321,6 +301,26 @@ public class BillingAccountTermImpl extends EntityIdentifiableImpl implements Bi
 	@Override
 	public void setBillingAccountTermId(String newBillingAccountTermId) {
 		eSet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM__BILLING_ACCOUNT_TERM_ID, newBillingAccountTermId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BillingAccount getBillingAccount() {
+		return (BillingAccount)eGet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM__BILLING_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBillingAccount(BillingAccount newBillingAccount) {
+		eSet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM__BILLING_ACCOUNT, newBillingAccount);
 	}
 
 } //BillingAccountTermImpl

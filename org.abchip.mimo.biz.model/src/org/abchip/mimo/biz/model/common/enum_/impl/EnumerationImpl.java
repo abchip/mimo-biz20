@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.enum_.impl.EnumerationImpl#getEnumId <em>Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.enum_.impl.EnumerationImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.enum_.impl.EnumerationImpl#getEnumCode <em>Enum Code</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.enum_.impl.EnumerationImpl#getEnumTypeId <em>Enum Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.enum_.impl.EnumerationImpl#getEnumType <em>Enum Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.enum_.impl.EnumerationImpl#getSequenceId <em>Sequence Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.enum_.impl.EnumerationImpl#getUserLoginSecurityQuestions <em>User Login Security Questions</em>}</li>
  * </ul>
@@ -196,6 +196,26 @@ public class EnumerationImpl extends EntityTypedImpl<EnumerationType> implements
 	 * @generated
 	 */
 	@Override
+	public EnumerationType getEnumType() {
+		return (EnumerationType)eGet(EnumPackage.Literals.ENUMERATION__ENUM_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEnumType(EnumerationType newEnumType) {
+		eSet(EnumPackage.Literals.ENUMERATION__ENUM_TYPE, newEnumType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getSequenceId() {
 		return (String)eGet(EnumPackage.Literals.ENUMERATION__SEQUENCE_ID, true);
 	}
@@ -257,26 +277,6 @@ public class EnumerationImpl extends EntityTypedImpl<EnumerationType> implements
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EnumerationType getEnumTypeId() {
-		return (EnumerationType)eGet(EnumPackage.Literals.ENUMERATION__ENUM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setEnumTypeId(EnumerationType newEnumTypeId) {
-		eSet(EnumPackage.Literals.ENUMERATION__ENUM_TYPE_ID, newEnumTypeId);
 	}
 
 	/**

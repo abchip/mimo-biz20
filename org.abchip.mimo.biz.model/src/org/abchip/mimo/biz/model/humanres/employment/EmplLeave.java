@@ -22,12 +22,12 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getLeaveTypeId <em>Leave Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getLeaveType <em>Leave Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getApproverPartyId <em>Approver Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getApproverParty <em>Approver Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getEmplLeaveReasonTypeId <em>Empl Leave Reason Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getEmplLeaveReasonType <em>Empl Leave Reason Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getLeaveStatus <em>Leave Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -38,30 +38,50 @@ import org.abchip.mimo.entity.EntityTyped;
  */
 public interface EmplLeave extends EntityTyped<EmplLeaveType>, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Approver Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Approver Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Approver Party Id</em>' reference.
-	 * @see #setApproverPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmplLeave_ApproverPartyId()
-	 * @model keys="partyId"
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmplLeave_Party()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Party getApproverPartyId();
+	Party getParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getApproverPartyId <em>Approver Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getParty <em>Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Approver Party Id</em>' reference.
-	 * @see #getApproverPartyId()
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
 	 * @generated
 	 */
-	void setApproverPartyId(Party value);
+	void setParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Leave Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Leave Type</em>' reference.
+	 * @see #setLeaveType(EmplLeaveType)
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmplLeave_LeaveType()
+	 * @model keys="leaveTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	EmplLeaveType getLeaveType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getLeaveType <em>Leave Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Leave Type</em>' reference.
+	 * @see #getLeaveType()
+	 * @generated
+	 */
+	void setLeaveType(EmplLeaveType value);
 
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
@@ -90,30 +110,26 @@ public interface EmplLeave extends EntityTyped<EmplLeaveType>, EntityInfo {
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Empl Leave Reason Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Empl Leave Reason Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Empl Leave Reason Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Empl Leave Reason Type Id</em>' reference.
-	 * @see #setEmplLeaveReasonTypeId(EmplLeaveReasonType)
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmplLeave_EmplLeaveReasonTypeId()
+	 * @return the value of the '<em>Empl Leave Reason Type</em>' reference.
+	 * @see #setEmplLeaveReasonType(EmplLeaveReasonType)
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmplLeave_EmplLeaveReasonType()
 	 * @model keys="emplLeaveReasonTypeId"
 	 * @generated
 	 */
-	EmplLeaveReasonType getEmplLeaveReasonTypeId();
+	EmplLeaveReasonType getEmplLeaveReasonType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getEmplLeaveReasonTypeId <em>Empl Leave Reason Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getEmplLeaveReasonType <em>Empl Leave Reason Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Empl Leave Reason Type Id</em>' reference.
-	 * @see #getEmplLeaveReasonTypeId()
+	 * @param value the new value of the '<em>Empl Leave Reason Type</em>' reference.
+	 * @see #getEmplLeaveReasonType()
 	 * @generated
 	 */
-	void setEmplLeaveReasonTypeId(EmplLeaveReasonType value);
+	void setEmplLeaveReasonType(EmplLeaveReasonType value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -143,6 +159,28 @@ public interface EmplLeave extends EntityTyped<EmplLeaveType>, EntityInfo {
 	void setFromDate(Date value);
 
 	/**
+	 * Returns the value of the '<em><b>Approver Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Approver Party</em>' reference.
+	 * @see #setApproverParty(Party)
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmplLeave_ApproverParty()
+	 * @model keys="partyId"
+	 * @generated
+	 */
+	Party getApproverParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getApproverParty <em>Approver Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Approver Party</em>' reference.
+	 * @see #getApproverParty()
+	 * @generated
+	 */
+	void setApproverParty(Party value);
+
+	/**
 	 * Returns the value of the '<em><b>Leave Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -167,60 +205,6 @@ public interface EmplLeave extends EntityTyped<EmplLeaveType>, EntityInfo {
 	 * @generated
 	 */
 	void setLeaveStatus(StatusItem value);
-
-	/**
-	 * Returns the value of the '<em><b>Leave Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Leave Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Leave Type Id</em>' reference.
-	 * @see #setLeaveTypeId(EmplLeaveType)
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmplLeave_LeaveTypeId()
-	 * @model keys="leaveTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	EmplLeaveType getLeaveTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getLeaveTypeId <em>Leave Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Leave Type Id</em>' reference.
-	 * @see #getLeaveTypeId()
-	 * @generated
-	 */
-	void setLeaveTypeId(EmplLeaveType value);
-
-	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmplLeave_PartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave#getPartyId <em>Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
-	 * @generated
-	 */
-	void setPartyId(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.

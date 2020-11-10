@@ -31,31 +31,31 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getClosedDateTime <em>Closed Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCreatedDate <em>Created Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestAttributes <em>Cust Request Attributes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestCategoryId <em>Cust Request Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestCategory <em>Cust Request Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestCommEvents <em>Cust Request Comm Events</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestContents <em>Cust Request Contents</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestDate <em>Cust Request Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestItems <em>Cust Request Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestName <em>Cust Request Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestNotes <em>Cust Request Notes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestTypeId <em>Cust Request Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestType <em>Cust Request Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestWorkEfforts <em>Cust Request Work Efforts</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getFromPartyId <em>From Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getFulfillContactMechId <em>Fulfill Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getFromParty <em>From Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getFulfillContactMech <em>Fulfill Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getInternalComment <em>Internal Comment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getLastModifiedDate <em>Last Modified Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getMaximumAmountUomId <em>Maximum Amount Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getMaximumAmountUom <em>Maximum Amount Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getOpenDateTime <em>Open Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getPriority <em>Priority</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getReason <em>Reason</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getResponseRequiredDate <em>Response Required Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getSalesChannelEnumId <em>Sales Channel Enum Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getSalesChannelEnum <em>Sales Channel Enum</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest()
@@ -142,30 +142,26 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	void setCreatedDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Currency Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Currency Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Currency Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Currency Uom Id</em>' reference.
-	 * @see #setCurrencyUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_CurrencyUomId()
+	 * @return the value of the '<em>Currency Uom</em>' reference.
+	 * @see #setCurrencyUom(Uom)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_CurrencyUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getCurrencyUomId();
+	Uom getCurrencyUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCurrencyUomId <em>Currency Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCurrencyUom <em>Currency Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Currency Uom Id</em>' reference.
-	 * @see #getCurrencyUomId()
+	 * @param value the new value of the '<em>Currency Uom</em>' reference.
+	 * @see #getCurrencyUom()
 	 * @generated
 	 */
-	void setCurrencyUomId(Uom value);
+	void setCurrencyUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Cust Request Attributes</b></em>' reference list.
@@ -184,30 +180,26 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	List<CustRequestAttribute> getCustRequestAttributes();
 
 	/**
-	 * Returns the value of the '<em><b>Cust Request Category Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Cust Request Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cust Request Category Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cust Request Category Id</em>' reference.
-	 * @see #setCustRequestCategoryId(CustRequestCategory)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_CustRequestCategoryId()
+	 * @return the value of the '<em>Cust Request Category</em>' reference.
+	 * @see #setCustRequestCategory(CustRequestCategory)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_CustRequestCategory()
 	 * @model keys="custRequestCategoryId"
 	 * @generated
 	 */
-	CustRequestCategory getCustRequestCategoryId();
+	CustRequestCategory getCustRequestCategory();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestCategoryId <em>Cust Request Category Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestCategory <em>Cust Request Category</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cust Request Category Id</em>' reference.
-	 * @see #getCustRequestCategoryId()
+	 * @param value the new value of the '<em>Cust Request Category</em>' reference.
+	 * @see #getCustRequestCategory()
 	 * @generated
 	 */
-	void setCustRequestCategoryId(CustRequestCategory value);
+	void setCustRequestCategory(CustRequestCategory value);
 
 	/**
 	 * Returns the value of the '<em><b>Cust Request Comm Events</b></em>' reference list.
@@ -350,30 +342,26 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	List<CustRequestNote> getCustRequestNotes();
 
 	/**
-	 * Returns the value of the '<em><b>Cust Request Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Cust Request Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cust Request Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cust Request Type Id</em>' reference.
-	 * @see #setCustRequestTypeId(CustRequestType)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_CustRequestTypeId()
+	 * @return the value of the '<em>Cust Request Type</em>' reference.
+	 * @see #setCustRequestType(CustRequestType)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_CustRequestType()
 	 * @model keys="custRequestTypeId"
 	 * @generated
 	 */
-	CustRequestType getCustRequestTypeId();
+	CustRequestType getCustRequestType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestTypeId <em>Cust Request Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestType <em>Cust Request Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cust Request Type Id</em>' reference.
-	 * @see #getCustRequestTypeId()
+	 * @param value the new value of the '<em>Cust Request Type</em>' reference.
+	 * @see #getCustRequestType()
 	 * @generated
 	 */
-	void setCustRequestTypeId(CustRequestType value);
+	void setCustRequestType(CustRequestType value);
 
 	/**
 	 * Returns the value of the '<em><b>Cust Request Work Efforts</b></em>' reference list.
@@ -418,57 +406,49 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>From Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>From Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>From Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>From Party Id</em>' reference.
-	 * @see #setFromPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_FromPartyId()
+	 * @return the value of the '<em>From Party</em>' reference.
+	 * @see #setFromParty(Party)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_FromParty()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getFromPartyId();
+	Party getFromParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequest#getFromPartyId <em>From Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequest#getFromParty <em>From Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>From Party Id</em>' reference.
-	 * @see #getFromPartyId()
+	 * @param value the new value of the '<em>From Party</em>' reference.
+	 * @see #getFromParty()
 	 * @generated
 	 */
-	void setFromPartyId(Party value);
+	void setFromParty(Party value);
 
 	/**
-	 * Returns the value of the '<em><b>Fulfill Contact Mech Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Fulfill Contact Mech</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fulfill Contact Mech Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fulfill Contact Mech Id</em>' reference.
-	 * @see #setFulfillContactMechId(ContactMech)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_FulfillContactMechId()
+	 * @return the value of the '<em>Fulfill Contact Mech</em>' reference.
+	 * @see #setFulfillContactMech(ContactMech)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_FulfillContactMech()
 	 * @model keys="contactMechId"
 	 *        annotation="mimo-ent-slot help='Field to support a location of a cust request--ie, product literature sent to an address, service call at a localtion, etc.'"
 	 * @generated
 	 */
-	ContactMech getFulfillContactMechId();
+	ContactMech getFulfillContactMech();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequest#getFulfillContactMechId <em>Fulfill Contact Mech Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequest#getFulfillContactMech <em>Fulfill Contact Mech</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fulfill Contact Mech Id</em>' reference.
-	 * @see #getFulfillContactMechId()
+	 * @param value the new value of the '<em>Fulfill Contact Mech</em>' reference.
+	 * @see #getFulfillContactMech()
 	 * @generated
 	 */
-	void setFulfillContactMechId(ContactMech value);
+	void setFulfillContactMech(ContactMech value);
 
 	/**
 	 * Returns the value of the '<em><b>Internal Comment</b></em>' attribute.
@@ -549,30 +529,26 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	void setLastModifiedDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Maximum Amount Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Maximum Amount Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Maximum Amount Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Maximum Amount Uom Id</em>' reference.
-	 * @see #setMaximumAmountUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_MaximumAmountUomId()
+	 * @return the value of the '<em>Maximum Amount Uom</em>' reference.
+	 * @see #setMaximumAmountUom(Uom)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_MaximumAmountUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getMaximumAmountUomId();
+	Uom getMaximumAmountUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequest#getMaximumAmountUomId <em>Maximum Amount Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequest#getMaximumAmountUom <em>Maximum Amount Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Maximum Amount Uom Id</em>' reference.
-	 * @see #getMaximumAmountUomId()
+	 * @param value the new value of the '<em>Maximum Amount Uom</em>' reference.
+	 * @see #getMaximumAmountUom()
 	 * @generated
 	 */
-	void setMaximumAmountUomId(Uom value);
+	void setMaximumAmountUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Open Date Time</b></em>' attribute.
@@ -627,30 +603,26 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	void setPriority(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Store Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Store</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store Id</em>' reference.
-	 * @see #setProductStoreId(ProductStore)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_ProductStoreId()
+	 * @return the value of the '<em>Product Store</em>' reference.
+	 * @see #setProductStore(ProductStore)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_ProductStore()
 	 * @model keys="productStoreId"
 	 * @generated
 	 */
-	ProductStore getProductStoreId();
+	ProductStore getProductStore();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequest#getProductStoreId <em>Product Store Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequest#getProductStore <em>Product Store</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store Id</em>' reference.
-	 * @see #getProductStoreId()
+	 * @param value the new value of the '<em>Product Store</em>' reference.
+	 * @see #getProductStore()
 	 * @generated
 	 */
-	void setProductStoreId(ProductStore value);
+	void setProductStore(ProductStore value);
 
 	/**
 	 * Returns the value of the '<em><b>Reason</b></em>' attribute.
@@ -705,55 +677,47 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	void setResponseRequiredDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Sales Channel Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Sales Channel Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sales Channel Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Sales Channel Enum Id</em>' reference.
-	 * @see #setSalesChannelEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_SalesChannelEnumId()
+	 * @return the value of the '<em>Sales Channel Enum</em>' reference.
+	 * @see #setSalesChannelEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_SalesChannelEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getSalesChannelEnumId();
+	Enumeration getSalesChannelEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequest#getSalesChannelEnumId <em>Sales Channel Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequest#getSalesChannelEnum <em>Sales Channel Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Sales Channel Enum Id</em>' reference.
-	 * @see #getSalesChannelEnumId()
+	 * @param value the new value of the '<em>Sales Channel Enum</em>' reference.
+	 * @see #getSalesChannelEnum()
 	 * @generated
 	 */
-	void setSalesChannelEnumId(Enumeration value);
+	void setSalesChannelEnum(Enumeration value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_StatusId()
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_Status()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getStatusId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequest#getStatusId <em>Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequest#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setStatusId(StatusItem value);
+	void setStatus(StatusItem value);
 
 } // CustRequest

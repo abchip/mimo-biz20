@@ -19,9 +19,9 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemTypeMap#getInvoiceTypeId <em>Invoice Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemTypeMap#getInvoiceType <em>Invoice Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemTypeMap#getInvoiceItemMapKey <em>Invoice Item Map Key</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemTypeMap#getInvoiceItemTypeId <em>Invoice Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemTypeMap#getInvoiceItemType <em>Invoice Item Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemTypeMap()
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface InvoiceItemTypeMap extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Invoice Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Invoice Type</em>' reference.
+	 * @see #setInvoiceType(InvoiceType)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemTypeMap_InvoiceType()
+	 * @model keys="invoiceTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	InvoiceType getInvoiceType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemTypeMap#getInvoiceType <em>Invoice Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Invoice Type</em>' reference.
+	 * @see #getInvoiceType()
+	 * @generated
+	 */
+	void setInvoiceType(InvoiceType value);
+
 	/**
 	 * Returns the value of the '<em><b>Invoice Item Map Key</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -58,56 +81,25 @@ public interface InvoiceItemTypeMap extends EntityIdentifiable, EntityInfo {
 	void setInvoiceItemMapKey(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Invoice Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Invoice Type Id</em>' reference.
-	 * @see #setInvoiceTypeId(InvoiceType)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemTypeMap_InvoiceTypeId()
-	 * @model keys="invoiceTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	InvoiceType getInvoiceTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemTypeMap#getInvoiceTypeId <em>Invoice Type Id</em>}' reference.
+	 * Returns the value of the '<em><b>Invoice Item Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Invoice Type Id</em>' reference.
-	 * @see #getInvoiceTypeId()
-	 * @generated
-	 */
-	void setInvoiceTypeId(InvoiceType value);
-
-	/**
-	 * Returns the value of the '<em><b>Invoice Item Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Item Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Invoice Item Type Id</em>' reference.
-	 * @see #setInvoiceItemTypeId(InvoiceItemType)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemTypeMap_InvoiceItemTypeId()
+	 * @return the value of the '<em>Invoice Item Type</em>' reference.
+	 * @see #setInvoiceItemType(InvoiceItemType)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemTypeMap_InvoiceItemType()
 	 * @model keys="invoiceItemTypeId"
 	 * @generated
 	 */
-	InvoiceItemType getInvoiceItemTypeId();
+	InvoiceItemType getInvoiceItemType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemTypeMap#getInvoiceItemTypeId <em>Invoice Item Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemTypeMap#getInvoiceItemType <em>Invoice Item Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Invoice Item Type Id</em>' reference.
-	 * @see #getInvoiceItemTypeId()
+	 * @param value the new value of the '<em>Invoice Item Type</em>' reference.
+	 * @see #getInvoiceItemType()
 	 * @generated
 	 */
-	void setInvoiceItemTypeId(InvoiceItemType value);
+	void setInvoiceItemType(InvoiceItemType value);
 
 } // InvoiceItemTypeMap

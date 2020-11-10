@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnTypeImpl#getProductFeatureIactnTypeId <em>Product Feature Iactn Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,8 +200,8 @@ public class ProductFeatureIactnTypeImpl extends EntityTypeImpl<ProductFeatureIa
 	 * @generated
 	 */
 	@Override
-	public ProductFeatureIactnType getParentTypeId() {
-		return (ProductFeatureIactnType)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_IACTN_TYPE__PARENT_TYPE_ID, true);
+	public ProductFeatureIactnType getParentType() {
+		return (ProductFeatureIactnType)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_IACTN_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -210,8 +210,8 @@ public class ProductFeatureIactnTypeImpl extends EntityTypeImpl<ProductFeatureIa
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(ProductFeatureIactnType newParentTypeId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_IACTN_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(ProductFeatureIactnType newParentType) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_IACTN_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getCardId <em>Card Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getDeceasedDate <em>Deceased Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getEmploymentStatusEnumId <em>Employment Status Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getEmploymentStatusEnum <em>Employment Status Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getExistingCustomer <em>Existing Customer</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getFirstName <em>First Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getFirstNameLocal <em>First Name Local</em>}</li>
@@ -48,7 +48,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getPassportExpireDate <em>Passport Expire Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getPassportNumber <em>Passport Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getPersonalTitle <em>Personal Title</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getResidenceStatusEnumId <em>Residence Status Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getResidenceStatusEnum <em>Residence Status Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getSalutation <em>Salutation</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getSocialSecurityNumber <em>Social Security Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getSuffix <em>Suffix</em>}</li>
@@ -165,8 +165,8 @@ public class PersonImpl extends PartyImpl implements Person {
 	 * @generated
 	 */
 	@Override
-	public Enumeration getEmploymentStatusEnumId() {
-		return (Enumeration)eGet(PartyPackage.Literals.PERSON__EMPLOYMENT_STATUS_ENUM_ID, true);
+	public Enumeration getEmploymentStatusEnum() {
+		return (Enumeration)eGet(PartyPackage.Literals.PERSON__EMPLOYMENT_STATUS_ENUM, true);
 	}
 
 	/**
@@ -175,8 +175,8 @@ public class PersonImpl extends PartyImpl implements Person {
 	 * @generated
 	 */
 	@Override
-	public void setEmploymentStatusEnumId(Enumeration newEmploymentStatusEnumId) {
-		eSet(PartyPackage.Literals.PERSON__EMPLOYMENT_STATUS_ENUM_ID, newEmploymentStatusEnumId);
+	public void setEmploymentStatusEnum(Enumeration newEmploymentStatusEnum) {
+		eSet(PartyPackage.Literals.PERSON__EMPLOYMENT_STATUS_ENUM, newEmploymentStatusEnum);
 	}
 
 	/**
@@ -565,8 +565,8 @@ public class PersonImpl extends PartyImpl implements Person {
 	 * @generated
 	 */
 	@Override
-	public Enumeration getResidenceStatusEnumId() {
-		return (Enumeration)eGet(PartyPackage.Literals.PERSON__RESIDENCE_STATUS_ENUM_ID, true);
+	public Enumeration getResidenceStatusEnum() {
+		return (Enumeration)eGet(PartyPackage.Literals.PERSON__RESIDENCE_STATUS_ENUM, true);
 	}
 
 	/**
@@ -575,8 +575,8 @@ public class PersonImpl extends PartyImpl implements Person {
 	 * @generated
 	 */
 	@Override
-	public void setResidenceStatusEnumId(Enumeration newResidenceStatusEnumId) {
-		eSet(PartyPackage.Literals.PERSON__RESIDENCE_STATUS_ENUM_ID, newResidenceStatusEnumId);
+	public void setResidenceStatusEnum(Enumeration newResidenceStatusEnum) {
+		eSet(PartyPackage.Literals.PERSON__RESIDENCE_STATUS_ENUM, newResidenceStatusEnum);
 	}
 
 	/**

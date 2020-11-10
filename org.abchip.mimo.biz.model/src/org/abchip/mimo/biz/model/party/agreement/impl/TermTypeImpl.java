@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.TermTypeImpl#getTermTypeId <em>Term Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.TermTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.TermTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.TermTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.TermTypeImpl#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.TermTypeImpl#getTermTypeAttrs <em>Term Type Attrs</em>}</li>
  * </ul>
  *
@@ -203,8 +203,8 @@ public class TermTypeImpl extends EntityTypeImpl<AgreementTerm> implements TermT
 	 * @generated
 	 */
 	@Override
-	public TermType getParentTypeId() {
-		return (TermType)eGet(AgreementPackage.Literals.TERM_TYPE__PARENT_TYPE_ID, true);
+	public TermType getParentType() {
+		return (TermType)eGet(AgreementPackage.Literals.TERM_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -213,8 +213,8 @@ public class TermTypeImpl extends EntityTypeImpl<AgreementTerm> implements TermT
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(TermType newParentTypeId) {
-		eSet(AgreementPackage.Literals.TERM_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(TermType newParentType) {
+		eSet(AgreementPackage.Literals.TERM_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

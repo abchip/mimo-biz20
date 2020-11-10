@@ -36,13 +36,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemChangeImpl#getCancelQuantity <em>Cancel Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemChangeImpl#getChangeComments <em>Change Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemChangeImpl#getChangeDatetime <em>Change Datetime</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemChangeImpl#getChangeTypeEnumId <em>Change Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemChangeImpl#getChangeTypeEnum <em>Change Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemChangeImpl#getChangeUserLogin <em>Change User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemChangeImpl#getItemDescription <em>Item Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemChangeImpl#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemChangeImpl#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemChangeImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemChangeImpl#getQuantity <em>Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemChangeImpl#getReasonEnumId <em>Reason Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemChangeImpl#getReasonEnum <em>Reason Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemChangeImpl#getUnitPrice <em>Unit Price</em>}</li>
  * </ul>
  *
@@ -225,8 +225,8 @@ public class OrderItemChangeImpl extends EntityIdentifiableImpl implements Order
 	 * @generated
 	 */
 	@Override
-	public Enumeration getChangeTypeEnumId() {
-		return (Enumeration)eGet(OrderPackage.Literals.ORDER_ITEM_CHANGE__CHANGE_TYPE_ENUM_ID, true);
+	public Enumeration getChangeTypeEnum() {
+		return (Enumeration)eGet(OrderPackage.Literals.ORDER_ITEM_CHANGE__CHANGE_TYPE_ENUM, true);
 	}
 
 	/**
@@ -235,8 +235,8 @@ public class OrderItemChangeImpl extends EntityIdentifiableImpl implements Order
 	 * @generated
 	 */
 	@Override
-	public void setChangeTypeEnumId(Enumeration newChangeTypeEnumId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_CHANGE__CHANGE_TYPE_ENUM_ID, newChangeTypeEnumId);
+	public void setChangeTypeEnum(Enumeration newChangeTypeEnum) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_CHANGE__CHANGE_TYPE_ENUM, newChangeTypeEnum);
 	}
 
 	/**
@@ -285,8 +285,8 @@ public class OrderItemChangeImpl extends EntityIdentifiableImpl implements Order
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ITEM_CHANGE__ORDER_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ITEM_CHANGE__ORDER, true);
 	}
 
 	/**
@@ -295,8 +295,8 @@ public class OrderItemChangeImpl extends EntityIdentifiableImpl implements Order
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_CHANGE__ORDER_ID, newOrderId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_CHANGE__ORDER, newOrder);
 	}
 
 	/**
@@ -365,8 +365,8 @@ public class OrderItemChangeImpl extends EntityIdentifiableImpl implements Order
 	 * @generated
 	 */
 	@Override
-	public Enumeration getReasonEnumId() {
-		return (Enumeration)eGet(OrderPackage.Literals.ORDER_ITEM_CHANGE__REASON_ENUM_ID, true);
+	public Enumeration getReasonEnum() {
+		return (Enumeration)eGet(OrderPackage.Literals.ORDER_ITEM_CHANGE__REASON_ENUM, true);
 	}
 
 	/**
@@ -375,8 +375,8 @@ public class OrderItemChangeImpl extends EntityIdentifiableImpl implements Order
 	 * @generated
 	 */
 	@Override
-	public void setReasonEnumId(Enumeration newReasonEnumId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_CHANGE__REASON_ENUM_ID, newReasonEnumId);
+	public void setReasonEnum(Enumeration newReasonEnum) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_CHANGE__REASON_ENUM, newReasonEnum);
 	}
 
 	/**

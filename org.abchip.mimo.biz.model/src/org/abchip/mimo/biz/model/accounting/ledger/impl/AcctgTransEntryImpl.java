@@ -40,27 +40,27 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getAcctgTransId <em>Acctg Trans Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getAcctgTrans <em>Acctg Trans</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getAcctgTransEntrySeqId <em>Acctg Trans Entry Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getAcctgTransEntryTypeId <em>Acctg Trans Entry Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getAcctgTransEntryType <em>Acctg Trans Entry Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getAmount <em>Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getDebitCreditFlag <em>Debit Credit Flag</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getDueDate <em>Due Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getGlAccountId <em>Gl Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getGlAccountTypeId <em>Gl Account Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getGlAccount <em>Gl Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getGlAccountType <em>Gl Account Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getGroupId <em>Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getInventoryItemId <em>Inventory Item Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getInventoryItem <em>Inventory Item</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getIsSummary <em>Is Summary</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getOrigAmount <em>Orig Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getOrigCurrencyUomId <em>Orig Currency Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getOrigCurrencyUom <em>Orig Currency Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getReconcileStatusId <em>Reconcile Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getRoleTypeId <em>Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getSettlementTermId <em>Settlement Term Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getReconcileStatus <em>Reconcile Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getRoleType <em>Role Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getSettlementTerm <em>Settlement Term</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getTaxId <em>Tax Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getTheirPartyId <em>Their Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getTheirProductId <em>Their Product Id</em>}</li>
@@ -185,6 +185,26 @@ public class AcctgTransEntryImpl extends EntityTypedImpl<AcctgTransEntryType> im
 	 * @generated
 	 */
 	@Override
+	public AcctgTrans getAcctgTrans() {
+		return (AcctgTrans)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__ACCTG_TRANS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAcctgTrans(AcctgTrans newAcctgTrans) {
+		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__ACCTG_TRANS, newAcctgTrans);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAcctgTransEntrySeqId() {
 		return (String)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__ACCTG_TRANS_ENTRY_SEQ_ID, true);
 	}
@@ -197,6 +217,26 @@ public class AcctgTransEntryImpl extends EntityTypedImpl<AcctgTransEntryType> im
 	@Override
 	public void setAcctgTransEntrySeqId(String newAcctgTransEntrySeqId) {
 		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__ACCTG_TRANS_ENTRY_SEQ_ID, newAcctgTransEntrySeqId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AcctgTransEntryType getAcctgTransEntryType() {
+		return (AcctgTransEntryType)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__ACCTG_TRANS_ENTRY_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAcctgTransEntryType(AcctgTransEntryType newAcctgTransEntryType) {
+		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__ACCTG_TRANS_ENTRY_TYPE, newAcctgTransEntryType);
 	}
 
 	/**
@@ -225,6 +265,26 @@ public class AcctgTransEntryImpl extends EntityTypedImpl<AcctgTransEntryType> im
 	 * @generated
 	 */
 	@Override
+	public Uom getCurrencyUom() {
+		return (Uom)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__CURRENCY_UOM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCurrencyUom(Uom newCurrencyUom) {
+		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__CURRENCY_UOM, newCurrencyUom);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public DebitCreditFlag getDebitCreditFlag() {
 		return (DebitCreditFlag)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__DEBIT_CREDIT_FLAG, true);
 	}
@@ -237,26 +297,6 @@ public class AcctgTransEntryImpl extends EntityTypedImpl<AcctgTransEntryType> im
 	@Override
 	public void setDebitCreditFlag(DebitCreditFlag newDebitCreditFlag) {
 		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__DEBIT_CREDIT_FLAG, newDebitCreditFlag);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Uom getCurrencyUomId() {
-		return (Uom)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__CURRENCY_UOM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCurrencyUomId(Uom newCurrencyUomId) {
-		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__CURRENCY_UOM_ID, newCurrencyUomId);
 	}
 
 	/**
@@ -305,6 +345,46 @@ public class AcctgTransEntryImpl extends EntityTypedImpl<AcctgTransEntryType> im
 	 * @generated
 	 */
 	@Override
+	public GlAccount getGlAccount() {
+		return (GlAccount)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__GL_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGlAccount(GlAccount newGlAccount) {
+		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__GL_ACCOUNT, newGlAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GlAccountType getGlAccountType() {
+		return (GlAccountType)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__GL_ACCOUNT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGlAccountType(GlAccountType newGlAccountType) {
+		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__GL_ACCOUNT_TYPE, newGlAccountType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getGroupId() {
 		return (String)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__GROUP_ID, true);
 	}
@@ -325,8 +405,8 @@ public class AcctgTransEntryImpl extends EntityTypedImpl<AcctgTransEntryType> im
 	 * @generated
 	 */
 	@Override
-	public InventoryItem getInventoryItemId() {
-		return (InventoryItem)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__INVENTORY_ITEM_ID, true);
+	public InventoryItem getInventoryItem() {
+		return (InventoryItem)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__INVENTORY_ITEM, true);
 	}
 
 	/**
@@ -335,8 +415,8 @@ public class AcctgTransEntryImpl extends EntityTypedImpl<AcctgTransEntryType> im
 	 * @generated
 	 */
 	@Override
-	public void setInventoryItemId(InventoryItem newInventoryItemId) {
-		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__INVENTORY_ITEM_ID, newInventoryItemId);
+	public void setInventoryItem(InventoryItem newInventoryItem) {
+		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__INVENTORY_ITEM, newInventoryItem);
 	}
 
 	/**
@@ -405,8 +485,8 @@ public class AcctgTransEntryImpl extends EntityTypedImpl<AcctgTransEntryType> im
 	 * @generated
 	 */
 	@Override
-	public Uom getOrigCurrencyUomId() {
-		return (Uom)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__ORIG_CURRENCY_UOM_ID, true);
+	public Uom getOrigCurrencyUom() {
+		return (Uom)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__ORIG_CURRENCY_UOM, true);
 	}
 
 	/**
@@ -415,8 +495,8 @@ public class AcctgTransEntryImpl extends EntityTypedImpl<AcctgTransEntryType> im
 	 * @generated
 	 */
 	@Override
-	public void setOrigCurrencyUomId(Uom newOrigCurrencyUomId) {
-		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__ORIG_CURRENCY_UOM_ID, newOrigCurrencyUomId);
+	public void setOrigCurrencyUom(Uom newOrigCurrencyUom) {
+		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__ORIG_CURRENCY_UOM, newOrigCurrencyUom);
 	}
 
 	/**
@@ -425,8 +505,8 @@ public class AcctgTransEntryImpl extends EntityTypedImpl<AcctgTransEntryType> im
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__PARTY, true);
 	}
 
 	/**
@@ -435,8 +515,8 @@ public class AcctgTransEntryImpl extends EntityTypedImpl<AcctgTransEntryType> im
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__PARTY, newParty);
 	}
 
 	/**
@@ -465,8 +545,8 @@ public class AcctgTransEntryImpl extends EntityTypedImpl<AcctgTransEntryType> im
 	 * @generated
 	 */
 	@Override
-	public StatusItem getReconcileStatusId() {
-		return (StatusItem)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__RECONCILE_STATUS_ID, true);
+	public StatusItem getReconcileStatus() {
+		return (StatusItem)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__RECONCILE_STATUS, true);
 	}
 
 	/**
@@ -475,8 +555,8 @@ public class AcctgTransEntryImpl extends EntityTypedImpl<AcctgTransEntryType> im
 	 * @generated
 	 */
 	@Override
-	public void setReconcileStatusId(StatusItem newReconcileStatusId) {
-		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__RECONCILE_STATUS_ID, newReconcileStatusId);
+	public void setReconcileStatus(StatusItem newReconcileStatus) {
+		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__RECONCILE_STATUS, newReconcileStatus);
 	}
 
 	/**
@@ -485,8 +565,8 @@ public class AcctgTransEntryImpl extends EntityTypedImpl<AcctgTransEntryType> im
 	 * @generated
 	 */
 	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__ROLE_TYPE_ID, true);
+	public RoleType getRoleType() {
+		return (RoleType)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__ROLE_TYPE, true);
 	}
 
 	/**
@@ -495,8 +575,28 @@ public class AcctgTransEntryImpl extends EntityTypedImpl<AcctgTransEntryType> im
 	 * @generated
 	 */
 	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__ROLE_TYPE_ID, newRoleTypeId);
+	public void setRoleType(RoleType newRoleType) {
+		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__ROLE_TYPE, newRoleType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SettlementTerm getSettlementTerm() {
+		return (SettlementTerm)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__SETTLEMENT_TERM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSettlementTerm(SettlementTerm newSettlementTerm) {
+		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__SETTLEMENT_TERM, newSettlementTerm);
 	}
 
 	/**
@@ -615,106 +715,6 @@ public class AcctgTransEntryImpl extends EntityTypedImpl<AcctgTransEntryType> im
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public AcctgTransEntryType getAcctgTransEntryTypeId() {
-		return (AcctgTransEntryType)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__ACCTG_TRANS_ENTRY_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAcctgTransEntryTypeId(AcctgTransEntryType newAcctgTransEntryTypeId) {
-		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__ACCTG_TRANS_ENTRY_TYPE_ID, newAcctgTransEntryTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public AcctgTrans getAcctgTransId() {
-		return (AcctgTrans)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__ACCTG_TRANS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAcctgTransId(AcctgTrans newAcctgTransId) {
-		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__ACCTG_TRANS_ID, newAcctgTransId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GlAccountType getGlAccountTypeId() {
-		return (GlAccountType)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__GL_ACCOUNT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGlAccountTypeId(GlAccountType newGlAccountTypeId) {
-		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__GL_ACCOUNT_TYPE_ID, newGlAccountTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GlAccount getGlAccountId() {
-		return (GlAccount)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__GL_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGlAccountId(GlAccount newGlAccountId) {
-		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__GL_ACCOUNT_ID, newGlAccountId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SettlementTerm getSettlementTermId() {
-		return (SettlementTerm)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__SETTLEMENT_TERM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSettlementTermId(SettlementTerm newSettlementTermId) {
-		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__SETTLEMENT_TERM_ID, newSettlementTermId);
 	}
 
 } //AcctgTransEntryImpl

@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRoleImpl#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRoleImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRoleImpl#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRoleImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRoleImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRoleImpl#getThruDate <em>Thru Date</em>}</li>
@@ -155,8 +155,8 @@ public class ContentRoleImpl extends EntityIdentifiableImpl implements ContentRo
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(ContentPackage.Literals.CONTENT_ROLE__CONTENT_ID, true);
+	public Content getContent() {
+		return (Content)eGet(ContentPackage.Literals.CONTENT_ROLE__CONTENT, true);
 	}
 
 	/**
@@ -165,8 +165,28 @@ public class ContentRoleImpl extends EntityIdentifiableImpl implements ContentRo
 	 * @generated
 	 */
 	@Override
-	public void setContentId(Content newContentId) {
-		eSet(ContentPackage.Literals.CONTENT_ROLE__CONTENT_ID, newContentId);
+	public void setContent(Content newContent) {
+		eSet(ContentPackage.Literals.CONTENT_ROLE__CONTENT, newContent);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(ContentPackage.Literals.CONTENT_ROLE__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(ContentPackage.Literals.CONTENT_ROLE__PARTY, newParty);
 	}
 
 	/**
@@ -187,26 +207,6 @@ public class ContentRoleImpl extends EntityIdentifiableImpl implements ContentRo
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(ContentPackage.Literals.CONTENT_ROLE__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(ContentPackage.Literals.CONTENT_ROLE__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(ContentPackage.Literals.CONTENT_ROLE__PARTY_ID, newPartyId);
 	}
 
 	/**

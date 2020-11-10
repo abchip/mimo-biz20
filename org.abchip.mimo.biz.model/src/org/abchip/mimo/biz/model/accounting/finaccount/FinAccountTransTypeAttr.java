@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTransTypeAttr#getFinAccountTransTypeId <em>Fin Account Trans Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTransTypeAttr#getFinAccountTransType <em>Fin Account Trans Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTransTypeAttr#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTransTypeAttr#getDescription <em>Description</em>}</li>
  * </ul>
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface FinAccountTransTypeAttr extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Fin Account Trans Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fin Account Trans Type</em>' reference.
+	 * @see #setFinAccountTransType(FinAccountTransType)
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTransTypeAttr_FinAccountTransType()
+	 * @model keys="finAccountTransTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	FinAccountTransType getFinAccountTransType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTransTypeAttr#getFinAccountTransType <em>Fin Account Trans Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Fin Account Trans Type</em>' reference.
+	 * @see #getFinAccountTransType()
+	 * @generated
+	 */
+	void setFinAccountTransType(FinAccountTransType value);
+
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,32 +105,5 @@ public interface FinAccountTransTypeAttr extends EntityIdentifiable, EntityInfo 
 	 * @generated
 	 */
 	void setAttrName(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Fin Account Trans Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fin Account Trans Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fin Account Trans Type Id</em>' reference.
-	 * @see #setFinAccountTransTypeId(FinAccountTransType)
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTransTypeAttr_FinAccountTransTypeId()
-	 * @model keys="finAccountTransTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	FinAccountTransType getFinAccountTransTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTransTypeAttr#getFinAccountTransTypeId <em>Fin Account Trans Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fin Account Trans Type Id</em>' reference.
-	 * @see #getFinAccountTransTypeId()
-	 * @generated
-	 */
-	void setFinAccountTransTypeId(FinAccountTransType value);
 
 } // FinAccountTransTypeAttr

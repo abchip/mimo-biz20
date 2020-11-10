@@ -126,13 +126,13 @@ public interface FacilityPackage extends EPackage {
 	int CONTAINER__CONTAINER_GEO_POINTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Container Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Container Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINER__CONTAINER_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int CONTAINER__CONTAINER_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -144,13 +144,13 @@ public interface FacilityPackage extends EPackage {
 	int CONTAINER__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINER__FACILITY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int CONTAINER__FACILITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Container</em>' class.
@@ -208,22 +208,22 @@ public interface FacilityPackage extends EPackage {
 	int CONTAINER_GEO_POINT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Container Id</b></em>' reference.
+	 * The feature id for the '<em><b>Container</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINER_GEO_POINT__CONTAINER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int CONTAINER_GEO_POINT__CONTAINER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Geo Point Id</b></em>' reference.
+	 * The feature id for the '<em><b>Geo Point</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINER_GEO_POINT__GEO_POINT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int CONTAINER_GEO_POINT__GEO_POINT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -408,31 +408,31 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY__DEFAULT_DAYS_TO_SHIP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Default Dimension Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Default Dimension Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__DEFAULT_DIMENSION_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int FACILITY__DEFAULT_DIMENSION_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Default Inventory Item Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Default Inventory Item Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__DEFAULT_INVENTORY_ITEM_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int FACILITY__DEFAULT_INVENTORY_ITEM_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Default Weight Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Default Weight Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__DEFAULT_WEIGHT_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int FACILITY__DEFAULT_WEIGHT_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -516,31 +516,31 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY__FACILITY_SIZE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
-	 * The feature id for the '<em><b>Facility Size Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility Size Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__FACILITY_SIZE_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
+	int FACILITY__FACILITY_SIZE_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
-	 * The feature id for the '<em><b>Facility Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__FACILITY_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
+	int FACILITY__FACILITY_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
-	 * The feature id for the '<em><b>Geo Point Id</b></em>' reference.
+	 * The feature id for the '<em><b>Geo Point</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__GEO_POINT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
+	int FACILITY__GEO_POINT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Old Square Footage</b></em>' attribute.
@@ -561,40 +561,40 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY__OPENED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
-	 * The feature id for the '<em><b>Owner Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Owner Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__OWNER_PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
+	int FACILITY__OWNER_PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
-	 * The feature id for the '<em><b>Parent Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__PARENT_FACILITY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
+	int FACILITY__PARENT_FACILITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
 
 	/**
-	 * The feature id for the '<em><b>Primary Facility Group Id</b></em>' reference.
+	 * The feature id for the '<em><b>Primary Facility Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__PRIMARY_FACILITY_GROUP_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
+	int FACILITY__PRIMARY_FACILITY_GROUP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
 
 	/**
-	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Store</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__PRODUCT_STORE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
+	int FACILITY__PRODUCT_STORE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
 
 	/**
 	 * The number of structural features of the '<em>Facility</em>' class.
@@ -734,13 +734,13 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_ATTRIBUTE__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FACILITY_ATTRIBUTE__FACILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -825,22 +825,22 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY_CALENDAR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_CALENDAR__FACILITY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int FACILITY_CALENDAR__FACILITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Facility Calendar Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility Calendar Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_CALENDAR__FACILITY_CALENDAR_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int FACILITY_CALENDAR__FACILITY_CALENDAR_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Calendar Id</b></em>' attribute.
@@ -1016,31 +1016,31 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY_CARRIER_SHIPMENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_CARRIER_SHIPMENT__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FACILITY_CARRIER_SHIPMENT__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_CARRIER_SHIPMENT__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int FACILITY_CARRIER_SHIPMENT__FACILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Shipment Method Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Shipment Method Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_CARRIER_SHIPMENT__SHIPMENT_METHOD_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int FACILITY_CARRIER_SHIPMENT__SHIPMENT_METHOD_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' attribute.
@@ -1107,22 +1107,22 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY_CONTACT_MECH__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_CONTACT_MECH__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FACILITY_CONTACT_MECH__FACILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Contact Mech Id</b></em>' reference.
+	 * The feature id for the '<em><b>Contact Mech</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_CONTACT_MECH__CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int FACILITY_CONTACT_MECH__CONTACT_MECH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1216,31 +1216,31 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY_CONTACT_MECH_PURPOSE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Contact Mech Purpose Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Contact Mech Purpose Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_CONTACT_MECH_PURPOSE__CONTACT_MECH_PURPOSE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FACILITY_CONTACT_MECH_PURPOSE__CONTACT_MECH_PURPOSE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_CONTACT_MECH_PURPOSE__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int FACILITY_CONTACT_MECH_PURPOSE__FACILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Contact Mech Id</b></em>' reference.
+	 * The feature id for the '<em><b>Contact Mech</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_CONTACT_MECH_PURPOSE__CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int FACILITY_CONTACT_MECH_PURPOSE__CONTACT_MECH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1316,22 +1316,22 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY_CONTENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_CONTENT__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FACILITY_CONTENT__FACILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Content Id</b></em>' reference.
+	 * The feature id for the '<em><b>Content</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_CONTENT__CONTENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int FACILITY_CONTENT__CONTENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1443,22 +1443,22 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY_GROUP__FACILITY_GROUP_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Facility Group Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility Group Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_GROUP__FACILITY_GROUP_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int FACILITY_GROUP__FACILITY_GROUP_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Primary Parent Group Id</b></em>' reference.
+	 * The feature id for the '<em><b>Primary Parent Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_GROUP__PRIMARY_PARENT_GROUP_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int FACILITY_GROUP__PRIMARY_PARENT_GROUP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Group</em>' class.
@@ -1516,22 +1516,22 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY_GROUP_MEMBER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_GROUP_MEMBER__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FACILITY_GROUP_MEMBER__FACILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Facility Group Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_GROUP_MEMBER__FACILITY_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int FACILITY_GROUP_MEMBER__FACILITY_GROUP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1616,31 +1616,31 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY_GROUP_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Facility Group Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_GROUP_ROLE__FACILITY_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FACILITY_GROUP_ROLE__FACILITY_GROUP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_GROUP_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int FACILITY_GROUP_ROLE__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_GROUP_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int FACILITY_GROUP_ROLE__ROLE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Group Role</em>' class.
@@ -1698,22 +1698,22 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY_GROUP_ROLLUP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Facility Group Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_GROUP_ROLLUP__FACILITY_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FACILITY_GROUP_ROLLUP__FACILITY_GROUP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Parent Facility Group Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Facility Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_GROUP_ROLLUP__PARENT_FACILITY_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int FACILITY_GROUP_ROLLUP__PARENT_FACILITY_GROUP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1880,13 +1880,13 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY_LOCATION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_LOCATION__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FACILITY_LOCATION__FACILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Location Seq Id</b></em>' attribute.
@@ -1916,13 +1916,13 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY_LOCATION__AREA_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Geo Point Id</b></em>' reference.
+	 * The feature id for the '<em><b>Geo Point</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_LOCATION__GEO_POINT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int FACILITY_LOCATION__GEO_POINT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Level Id</b></em>' attribute.
@@ -1934,13 +1934,13 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY_LOCATION__LEVEL_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Location Type Enum Id</b></em>' reference.
+	 * The feature id for the '<em><b>Location Type Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_LOCATION__LOCATION_TYPE_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int FACILITY_LOCATION__LOCATION_TYPE_ENUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Position Id</b></em>' attribute.
@@ -2016,13 +2016,13 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY_LOCATION_GEO_POINT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Geo Point Id</b></em>' reference.
+	 * The feature id for the '<em><b>Geo Point</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_LOCATION_GEO_POINT__GEO_POINT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FACILITY_LOCATION_GEO_POINT__GEO_POINT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Facility Id</b></em>' attribute.
@@ -2116,31 +2116,31 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY_PARTY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_PARTY__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FACILITY_PARTY__FACILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_PARTY__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int FACILITY_PARTY__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_PARTY__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int FACILITY_PARTY__ROLE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -2261,13 +2261,13 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
+	int FACILITY_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -2325,13 +2325,13 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Facility Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_TYPE_ATTR__FACILITY_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FACILITY_TYPE_ATTR__FACILITY_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -2407,22 +2407,22 @@ public interface FacilityPackage extends EPackage {
 	int PRODUCT_FACILITY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FACILITY__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PRODUCT_FACILITY__PRODUCT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FACILITY__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PRODUCT_FACILITY__FACILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Days To Ship</b></em>' attribute.
@@ -2461,22 +2461,22 @@ public interface FacilityPackage extends EPackage {
 	int PRODUCT_FACILITY__REORDER_QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Replenish Method Enum Id</b></em>' reference.
+	 * The feature id for the '<em><b>Replenish Method Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FACILITY__REPLENISH_METHOD_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int PRODUCT_FACILITY__REPLENISH_METHOD_ENUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Requirement Method Enum Id</b></em>' reference.
+	 * The feature id for the '<em><b>Requirement Method Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FACILITY__REQUIREMENT_METHOD_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int PRODUCT_FACILITY__REQUIREMENT_METHOD_ENUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Product Facility</em>' class.
@@ -2534,22 +2534,22 @@ public interface FacilityPackage extends EPackage {
 	int PRODUCT_FACILITY_ASSOC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FACILITY_ASSOC__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int PRODUCT_FACILITY_ASSOC__PRODUCT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FACILITY_ASSOC__FACILITY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int PRODUCT_FACILITY_ASSOC__FACILITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Facility Id To</b></em>' reference.
@@ -2561,13 +2561,13 @@ public interface FacilityPackage extends EPackage {
 	int PRODUCT_FACILITY_ASSOC__FACILITY_ID_TO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Facility Assoc Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility Assoc Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FACILITY_ASSOC__FACILITY_ASSOC_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int PRODUCT_FACILITY_ASSOC__FACILITY_ASSOC_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -2661,22 +2661,22 @@ public interface FacilityPackage extends EPackage {
 	int PRODUCT_FACILITY_LOCATION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FACILITY_LOCATION__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PRODUCT_FACILITY_LOCATION__PRODUCT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FACILITY_LOCATION__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PRODUCT_FACILITY_LOCATION__FACILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Location Seq Id</b></em>' attribute.
@@ -2748,15 +2748,15 @@ public interface FacilityPackage extends EPackage {
 	EReference getContainer_ContainerGeoPoints();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Container#getContainerTypeId <em>Container Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Container#getContainerType <em>Container Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Container Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.Container#getContainerTypeId()
+	 * @return the meta object for the reference '<em>Container Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.Container#getContainerType()
 	 * @see #getContainer()
 	 * @generated
 	 */
-	EReference getContainer_ContainerTypeId();
+	EReference getContainer_ContainerType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.Container#getDescription <em>Description</em>}'.
@@ -2770,15 +2770,15 @@ public interface FacilityPackage extends EPackage {
 	EAttribute getContainer_Description();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Container#getFacilityId <em>Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Container#getFacility <em>Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.Container#getFacilityId()
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.Container#getFacility()
 	 * @see #getContainer()
 	 * @generated
 	 */
-	EReference getContainer_FacilityId();
+	EReference getContainer_Facility();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint <em>Container Geo Point</em>}'.
@@ -2791,26 +2791,26 @@ public interface FacilityPackage extends EPackage {
 	EClass getContainerGeoPoint();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint#getContainerId <em>Container Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint#getContainer <em>Container</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Container Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint#getContainerId()
+	 * @return the meta object for the reference '<em>Container</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint#getContainer()
 	 * @see #getContainerGeoPoint()
 	 * @generated
 	 */
-	EReference getContainerGeoPoint_ContainerId();
+	EReference getContainerGeoPoint_Container();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint#getGeoPointId <em>Geo Point Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint#getGeoPoint <em>Geo Point</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Geo Point Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint#getGeoPointId()
+	 * @return the meta object for the reference '<em>Geo Point</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint#getGeoPoint()
 	 * @see #getContainerGeoPoint()
 	 * @generated
 	 */
-	EReference getContainerGeoPoint_GeoPointId();
+	EReference getContainerGeoPoint_GeoPoint();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint#getFromDate <em>From Date</em>}'.
@@ -2910,37 +2910,37 @@ public interface FacilityPackage extends EPackage {
 	EAttribute getFacility_DefaultDaysToShip();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultDimensionUomId <em>Default Dimension Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultDimensionUom <em>Default Dimension Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Default Dimension Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getDefaultDimensionUomId()
+	 * @return the meta object for the reference '<em>Default Dimension Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getDefaultDimensionUom()
 	 * @see #getFacility()
 	 * @generated
 	 */
-	EReference getFacility_DefaultDimensionUomId();
+	EReference getFacility_DefaultDimensionUom();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultInventoryItemTypeId <em>Default Inventory Item Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultInventoryItemType <em>Default Inventory Item Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Default Inventory Item Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getDefaultInventoryItemTypeId()
+	 * @return the meta object for the reference '<em>Default Inventory Item Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getDefaultInventoryItemType()
 	 * @see #getFacility()
 	 * @generated
 	 */
-	EReference getFacility_DefaultInventoryItemTypeId();
+	EReference getFacility_DefaultInventoryItemType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultWeightUomId <em>Default Weight Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultWeightUom <em>Default Weight Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Default Weight Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getDefaultWeightUomId()
+	 * @return the meta object for the reference '<em>Default Weight Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getDefaultWeightUom()
 	 * @see #getFacility()
 	 * @generated
 	 */
-	EReference getFacility_DefaultWeightUomId();
+	EReference getFacility_DefaultWeightUom();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.Facility#getDescription <em>Description</em>}'.
@@ -3042,37 +3042,37 @@ public interface FacilityPackage extends EPackage {
 	EAttribute getFacility_FacilitySize();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilitySizeUomId <em>Facility Size Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilitySizeUom <em>Facility Size Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Size Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getFacilitySizeUomId()
+	 * @return the meta object for the reference '<em>Facility Size Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getFacilitySizeUom()
 	 * @see #getFacility()
 	 * @generated
 	 */
-	EReference getFacility_FacilitySizeUomId();
+	EReference getFacility_FacilitySizeUom();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityTypeId <em>Facility Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityType <em>Facility Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getFacilityTypeId()
+	 * @return the meta object for the reference '<em>Facility Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getFacilityType()
 	 * @see #getFacility()
 	 * @generated
 	 */
-	EReference getFacility_FacilityTypeId();
+	EReference getFacility_FacilityType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getGeoPointId <em>Geo Point Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getGeoPoint <em>Geo Point</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Geo Point Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getGeoPointId()
+	 * @return the meta object for the reference '<em>Geo Point</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getGeoPoint()
 	 * @see #getFacility()
 	 * @generated
 	 */
-	EReference getFacility_GeoPointId();
+	EReference getFacility_GeoPoint();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.Facility#getOldSquareFootage <em>Old Square Footage</em>}'.
@@ -3097,48 +3097,48 @@ public interface FacilityPackage extends EPackage {
 	EAttribute getFacility_OpenedDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getOwnerPartyId <em>Owner Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getOwnerParty <em>Owner Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Owner Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getOwnerPartyId()
+	 * @return the meta object for the reference '<em>Owner Party</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getOwnerParty()
 	 * @see #getFacility()
 	 * @generated
 	 */
-	EReference getFacility_OwnerPartyId();
+	EReference getFacility_OwnerParty();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getParentFacilityId <em>Parent Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getParentFacility <em>Parent Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getParentFacilityId()
+	 * @return the meta object for the reference '<em>Parent Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getParentFacility()
 	 * @see #getFacility()
 	 * @generated
 	 */
-	EReference getFacility_ParentFacilityId();
+	EReference getFacility_ParentFacility();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getPrimaryFacilityGroupId <em>Primary Facility Group Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getPrimaryFacilityGroup <em>Primary Facility Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Primary Facility Group Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getPrimaryFacilityGroupId()
+	 * @return the meta object for the reference '<em>Primary Facility Group</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getPrimaryFacilityGroup()
 	 * @see #getFacility()
 	 * @generated
 	 */
-	EReference getFacility_PrimaryFacilityGroupId();
+	EReference getFacility_PrimaryFacilityGroup();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getProductStoreId <em>Product Store Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Facility#getProductStore <em>Product Store</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Store Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getProductStoreId()
+	 * @return the meta object for the reference '<em>Product Store</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getProductStore()
 	 * @see #getFacility()
 	 * @generated
 	 */
-	EReference getFacility_ProductStoreId();
+	EReference getFacility_ProductStore();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.facility.FacilityAssocType <em>Assoc Type</em>}'.
@@ -3183,15 +3183,15 @@ public interface FacilityPackage extends EPackage {
 	EClass getFacilityAttribute();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityAttribute#getFacilityId <em>Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityAttribute#getFacility <em>Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityAttribute#getFacilityId()
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityAttribute#getFacility()
 	 * @see #getFacilityAttribute()
 	 * @generated
 	 */
-	EReference getFacilityAttribute_FacilityId();
+	EReference getFacilityAttribute_Facility();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityAttribute#getAttrName <em>Attr Name</em>}'.
@@ -3237,15 +3237,26 @@ public interface FacilityPackage extends EPackage {
 	EClass getFacilityCalendar();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getFacilityId <em>Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getFacility <em>Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getFacilityId()
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getFacility()
 	 * @see #getFacilityCalendar()
 	 * @generated
 	 */
-	EReference getFacilityCalendar_FacilityId();
+	EReference getFacilityCalendar_Facility();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getFacilityCalendarType <em>Facility Calendar Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Facility Calendar Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getFacilityCalendarType()
+	 * @see #getFacilityCalendar()
+	 * @generated
+	 */
+	EReference getFacilityCalendar_FacilityCalendarType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getCalendarId <em>Calendar Id</em>}'.
@@ -3257,17 +3268,6 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getFacilityCalendar_CalendarId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getFacilityCalendarTypeId <em>Facility Calendar Type Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Calendar Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getFacilityCalendarTypeId()
-	 * @see #getFacilityCalendar()
-	 * @generated
-	 */
-	EReference getFacilityCalendar_FacilityCalendarTypeId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getFromDate <em>From Date</em>}'.
@@ -3345,26 +3345,37 @@ public interface FacilityPackage extends EPackage {
 	EClass getFacilityCarrierShipment();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityCarrierShipment#getFacilityId <em>Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityCarrierShipment#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityCarrierShipment#getFacilityId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityCarrierShipment#getParty()
 	 * @see #getFacilityCarrierShipment()
 	 * @generated
 	 */
-	EReference getFacilityCarrierShipment_FacilityId();
+	EReference getFacilityCarrierShipment_Party();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityCarrierShipment#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityCarrierShipment#getFacility <em>Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityCarrierShipment#getPartyId()
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityCarrierShipment#getFacility()
 	 * @see #getFacilityCarrierShipment()
 	 * @generated
 	 */
-	EReference getFacilityCarrierShipment_PartyId();
+	EReference getFacilityCarrierShipment_Facility();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityCarrierShipment#getShipmentMethodType <em>Shipment Method Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Shipment Method Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityCarrierShipment#getShipmentMethodType()
+	 * @see #getFacilityCarrierShipment()
+	 * @generated
+	 */
+	EReference getFacilityCarrierShipment_ShipmentMethodType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityCarrierShipment#getRoleTypeId <em>Role Type Id</em>}'.
@@ -3378,17 +3389,6 @@ public interface FacilityPackage extends EPackage {
 	EAttribute getFacilityCarrierShipment_RoleTypeId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityCarrierShipment#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Shipment Method Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityCarrierShipment#getShipmentMethodTypeId()
-	 * @see #getFacilityCarrierShipment()
-	 * @generated
-	 */
-	EReference getFacilityCarrierShipment_ShipmentMethodTypeId();
-
-	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.facility.FacilityContactMech <em>Contact Mech</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3399,26 +3399,26 @@ public interface FacilityPackage extends EPackage {
 	EClass getFacilityContactMech();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityContactMech#getFacilityId <em>Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityContactMech#getFacility <em>Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityContactMech#getFacilityId()
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityContactMech#getFacility()
 	 * @see #getFacilityContactMech()
 	 * @generated
 	 */
-	EReference getFacilityContactMech_FacilityId();
+	EReference getFacilityContactMech_Facility();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityContactMech#getContactMechId <em>Contact Mech Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityContactMech#getContactMech <em>Contact Mech</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Contact Mech Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityContactMech#getContactMechId()
+	 * @return the meta object for the reference '<em>Contact Mech</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityContactMech#getContactMech()
 	 * @see #getFacilityContactMech()
 	 * @generated
 	 */
-	EReference getFacilityContactMech_ContactMechId();
+	EReference getFacilityContactMech_ContactMech();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityContactMech#getFromDate <em>From Date</em>}'.
@@ -3475,37 +3475,37 @@ public interface FacilityPackage extends EPackage {
 	EClass getFacilityContactMechPurpose();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityContactMechPurpose#getFacilityId <em>Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityContactMechPurpose#getContactMechPurposeType <em>Contact Mech Purpose Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityContactMechPurpose#getFacilityId()
+	 * @return the meta object for the reference '<em>Contact Mech Purpose Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityContactMechPurpose#getContactMechPurposeType()
 	 * @see #getFacilityContactMechPurpose()
 	 * @generated
 	 */
-	EReference getFacilityContactMechPurpose_FacilityId();
+	EReference getFacilityContactMechPurpose_ContactMechPurposeType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityContactMechPurpose#getContactMechId <em>Contact Mech Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityContactMechPurpose#getFacility <em>Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Contact Mech Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityContactMechPurpose#getContactMechId()
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityContactMechPurpose#getFacility()
 	 * @see #getFacilityContactMechPurpose()
 	 * @generated
 	 */
-	EReference getFacilityContactMechPurpose_ContactMechId();
+	EReference getFacilityContactMechPurpose_Facility();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityContactMechPurpose#getContactMechPurposeTypeId <em>Contact Mech Purpose Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityContactMechPurpose#getContactMech <em>Contact Mech</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Contact Mech Purpose Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityContactMechPurpose#getContactMechPurposeTypeId()
+	 * @return the meta object for the reference '<em>Contact Mech</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityContactMechPurpose#getContactMech()
 	 * @see #getFacilityContactMechPurpose()
 	 * @generated
 	 */
-	EReference getFacilityContactMechPurpose_ContactMechPurposeTypeId();
+	EReference getFacilityContactMechPurpose_ContactMech();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityContactMechPurpose#getFromDate <em>From Date</em>}'.
@@ -3540,26 +3540,26 @@ public interface FacilityPackage extends EPackage {
 	EClass getFacilityContent();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityContent#getFacilityId <em>Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityContent#getFacility <em>Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityContent#getFacilityId()
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityContent#getFacility()
 	 * @see #getFacilityContent()
 	 * @generated
 	 */
-	EReference getFacilityContent_FacilityId();
+	EReference getFacilityContent_Facility();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityContent#getContentId <em>Content Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityContent#getContent <em>Content</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Content Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityContent#getContentId()
+	 * @return the meta object for the reference '<em>Content</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityContent#getContent()
 	 * @see #getFacilityContent()
 	 * @generated
 	 */
-	EReference getFacilityContent_ContentId();
+	EReference getFacilityContent_Content();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityContent#getFromDate <em>From Date</em>}'.
@@ -3638,26 +3638,26 @@ public interface FacilityPackage extends EPackage {
 	EAttribute getFacilityGroup_FacilityGroupName();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getFacilityGroupTypeId <em>Facility Group Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getFacilityGroupType <em>Facility Group Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Group Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityGroup#getFacilityGroupTypeId()
+	 * @return the meta object for the reference '<em>Facility Group Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityGroup#getFacilityGroupType()
 	 * @see #getFacilityGroup()
 	 * @generated
 	 */
-	EReference getFacilityGroup_FacilityGroupTypeId();
+	EReference getFacilityGroup_FacilityGroupType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getPrimaryParentGroupId <em>Primary Parent Group Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getPrimaryParentGroup <em>Primary Parent Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Primary Parent Group Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityGroup#getPrimaryParentGroupId()
+	 * @return the meta object for the reference '<em>Primary Parent Group</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityGroup#getPrimaryParentGroup()
 	 * @see #getFacilityGroup()
 	 * @generated
 	 */
-	EReference getFacilityGroup_PrimaryParentGroupId();
+	EReference getFacilityGroup_PrimaryParentGroup();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupMember <em>Group Member</em>}'.
@@ -3670,26 +3670,26 @@ public interface FacilityPackage extends EPackage {
 	EClass getFacilityGroupMember();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupMember#getFacilityId <em>Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupMember#getFacility <em>Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityGroupMember#getFacilityId()
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityGroupMember#getFacility()
 	 * @see #getFacilityGroupMember()
 	 * @generated
 	 */
-	EReference getFacilityGroupMember_FacilityId();
+	EReference getFacilityGroupMember_Facility();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupMember#getFacilityGroupId <em>Facility Group Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupMember#getFacilityGroup <em>Facility Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Group Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityGroupMember#getFacilityGroupId()
+	 * @return the meta object for the reference '<em>Facility Group</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityGroupMember#getFacilityGroup()
 	 * @see #getFacilityGroupMember()
 	 * @generated
 	 */
-	EReference getFacilityGroupMember_FacilityGroupId();
+	EReference getFacilityGroupMember_FacilityGroup();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupMember#getFromDate <em>From Date</em>}'.
@@ -3735,37 +3735,37 @@ public interface FacilityPackage extends EPackage {
 	EClass getFacilityGroupRole();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getFacilityGroupId <em>Facility Group Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getFacilityGroup <em>Facility Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Group Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getFacilityGroupId()
+	 * @return the meta object for the reference '<em>Facility Group</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getFacilityGroup()
 	 * @see #getFacilityGroupRole()
 	 * @generated
 	 */
-	EReference getFacilityGroupRole_FacilityGroupId();
+	EReference getFacilityGroupRole_FacilityGroup();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getParty()
 	 * @see #getFacilityGroupRole()
 	 * @generated
 	 */
-	EReference getFacilityGroupRole_PartyId();
+	EReference getFacilityGroupRole_Party();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getRoleTypeId <em>Role Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getRoleType <em>Role Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Role Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getRoleTypeId()
+	 * @return the meta object for the reference '<em>Role Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityGroupRole#getRoleType()
 	 * @see #getFacilityGroupRole()
 	 * @generated
 	 */
-	EReference getFacilityGroupRole_RoleTypeId();
+	EReference getFacilityGroupRole_RoleType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup <em>Group Rollup</em>}'.
@@ -3778,26 +3778,26 @@ public interface FacilityPackage extends EPackage {
 	EClass getFacilityGroupRollup();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getFacilityGroupId <em>Facility Group Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getFacilityGroup <em>Facility Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Group Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getFacilityGroupId()
+	 * @return the meta object for the reference '<em>Facility Group</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getFacilityGroup()
 	 * @see #getFacilityGroupRollup()
 	 * @generated
 	 */
-	EReference getFacilityGroupRollup_FacilityGroupId();
+	EReference getFacilityGroupRollup_FacilityGroup();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getParentFacilityGroupId <em>Parent Facility Group Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getParentFacilityGroup <em>Parent Facility Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Facility Group Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getParentFacilityGroupId()
+	 * @return the meta object for the reference '<em>Parent Facility Group</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getParentFacilityGroup()
 	 * @see #getFacilityGroupRollup()
 	 * @generated
 	 */
-	EReference getFacilityGroupRollup_ParentFacilityGroupId();
+	EReference getFacilityGroupRollup_ParentFacilityGroup();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup#getFromDate <em>From Date</em>}'.
@@ -3875,15 +3875,15 @@ public interface FacilityPackage extends EPackage {
 	EClass getFacilityLocation();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityLocation#getFacilityId <em>Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityLocation#getFacility <em>Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityLocation#getFacilityId()
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityLocation#getFacility()
 	 * @see #getFacilityLocation()
 	 * @generated
 	 */
-	EReference getFacilityLocation_FacilityId();
+	EReference getFacilityLocation_Facility();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityLocation#getLocationSeqId <em>Location Seq Id</em>}'.
@@ -3919,15 +3919,15 @@ public interface FacilityPackage extends EPackage {
 	EAttribute getFacilityLocation_AreaId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityLocation#getGeoPointId <em>Geo Point Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityLocation#getGeoPoint <em>Geo Point</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Geo Point Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityLocation#getGeoPointId()
+	 * @return the meta object for the reference '<em>Geo Point</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityLocation#getGeoPoint()
 	 * @see #getFacilityLocation()
 	 * @generated
 	 */
-	EReference getFacilityLocation_GeoPointId();
+	EReference getFacilityLocation_GeoPoint();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityLocation#getLevelId <em>Level Id</em>}'.
@@ -3941,15 +3941,15 @@ public interface FacilityPackage extends EPackage {
 	EAttribute getFacilityLocation_LevelId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityLocation#getLocationTypeEnumId <em>Location Type Enum Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityLocation#getLocationTypeEnum <em>Location Type Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Location Type Enum Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityLocation#getLocationTypeEnumId()
+	 * @return the meta object for the reference '<em>Location Type Enum</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityLocation#getLocationTypeEnum()
 	 * @see #getFacilityLocation()
 	 * @generated
 	 */
-	EReference getFacilityLocation_LocationTypeEnumId();
+	EReference getFacilityLocation_LocationTypeEnum();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityLocation#getPositionId <em>Position Id</em>}'.
@@ -3984,6 +3984,17 @@ public interface FacilityPackage extends EPackage {
 	EClass getFacilityLocationGeoPoint();
 
 	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityLocationGeoPoint#getGeoPoint <em>Geo Point</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Geo Point</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityLocationGeoPoint#getGeoPoint()
+	 * @see #getFacilityLocationGeoPoint()
+	 * @generated
+	 */
+	EReference getFacilityLocationGeoPoint_GeoPoint();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityLocationGeoPoint#getFacilityId <em>Facility Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4004,17 +4015,6 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getFacilityLocationGeoPoint_LocationSeqId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityLocationGeoPoint#getGeoPointId <em>Geo Point Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Geo Point Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityLocationGeoPoint#getGeoPointId()
-	 * @see #getFacilityLocationGeoPoint()
-	 * @generated
-	 */
-	EReference getFacilityLocationGeoPoint_GeoPointId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityLocationGeoPoint#getFromDate <em>From Date</em>}'.
@@ -4049,37 +4049,37 @@ public interface FacilityPackage extends EPackage {
 	EClass getFacilityParty();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityParty#getFacilityId <em>Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityParty#getFacility <em>Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityParty#getFacilityId()
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityParty#getFacility()
 	 * @see #getFacilityParty()
 	 * @generated
 	 */
-	EReference getFacilityParty_FacilityId();
+	EReference getFacilityParty_Facility();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityParty#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityParty#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityParty#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityParty#getParty()
 	 * @see #getFacilityParty()
 	 * @generated
 	 */
-	EReference getFacilityParty_PartyId();
+	EReference getFacilityParty_Party();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityParty#getRoleTypeId <em>Role Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityParty#getRoleType <em>Role Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Role Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityParty#getRoleTypeId()
+	 * @return the meta object for the reference '<em>Role Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityParty#getRoleType()
 	 * @see #getFacilityParty()
 	 * @generated
 	 */
-	EReference getFacilityParty_RoleTypeId();
+	EReference getFacilityParty_RoleType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityParty#getFromDate <em>From Date</em>}'.
@@ -4158,15 +4158,15 @@ public interface FacilityPackage extends EPackage {
 	EAttribute getFacilityType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityType#getParentType()
 	 * @see #getFacilityType()
 	 * @generated
 	 */
-	EReference getFacilityType_ParentTypeId();
+	EReference getFacilityType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.facility.FacilityTypeAttr <em>Type Attr</em>}'.
@@ -4179,15 +4179,15 @@ public interface FacilityPackage extends EPackage {
 	EClass getFacilityTypeAttr();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityTypeAttr#getFacilityTypeId <em>Facility Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.FacilityTypeAttr#getFacilityType <em>Facility Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityTypeAttr#getFacilityTypeId()
+	 * @return the meta object for the reference '<em>Facility Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityTypeAttr#getFacilityType()
 	 * @see #getFacilityTypeAttr()
 	 * @generated
 	 */
-	EReference getFacilityTypeAttr_FacilityTypeId();
+	EReference getFacilityTypeAttr_FacilityType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityTypeAttr#getAttrName <em>Attr Name</em>}'.
@@ -4222,26 +4222,26 @@ public interface FacilityPackage extends EPackage {
 	EClass getProductFacility();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacility#getProductId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacility#getProduct()
 	 * @see #getProductFacility()
 	 * @generated
 	 */
-	EReference getProductFacility_ProductId();
+	EReference getProductFacility_Product();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getFacilityId <em>Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getFacility <em>Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacility#getFacilityId()
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacility#getFacility()
 	 * @see #getProductFacility()
 	 * @generated
 	 */
-	EReference getProductFacility_FacilityId();
+	EReference getProductFacility_Facility();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getDaysToShip <em>Days To Ship</em>}'.
@@ -4288,26 +4288,26 @@ public interface FacilityPackage extends EPackage {
 	EAttribute getProductFacility_ReorderQuantity();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getReplenishMethodEnumId <em>Replenish Method Enum Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getReplenishMethodEnum <em>Replenish Method Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Replenish Method Enum Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacility#getReplenishMethodEnumId()
+	 * @return the meta object for the reference '<em>Replenish Method Enum</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacility#getReplenishMethodEnum()
 	 * @see #getProductFacility()
 	 * @generated
 	 */
-	EReference getProductFacility_ReplenishMethodEnumId();
+	EReference getProductFacility_ReplenishMethodEnum();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getRequirementMethodEnumId <em>Requirement Method Enum Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getRequirementMethodEnum <em>Requirement Method Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Requirement Method Enum Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacility#getRequirementMethodEnumId()
+	 * @return the meta object for the reference '<em>Requirement Method Enum</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacility#getRequirementMethodEnum()
 	 * @see #getProductFacility()
 	 * @generated
 	 */
-	EReference getProductFacility_RequirementMethodEnumId();
+	EReference getProductFacility_RequirementMethodEnum();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc <em>Product Facility Assoc</em>}'.
@@ -4320,26 +4320,26 @@ public interface FacilityPackage extends EPackage {
 	EClass getProductFacilityAssoc();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getProductId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getProduct()
 	 * @see #getProductFacilityAssoc()
 	 * @generated
 	 */
-	EReference getProductFacilityAssoc_ProductId();
+	EReference getProductFacilityAssoc_Product();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityId <em>Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacility <em>Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityId()
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacility()
 	 * @see #getProductFacilityAssoc()
 	 * @generated
 	 */
-	EReference getProductFacilityAssoc_FacilityId();
+	EReference getProductFacilityAssoc_Facility();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityIdTo <em>Facility Id To</em>}'.
@@ -4353,15 +4353,15 @@ public interface FacilityPackage extends EPackage {
 	EReference getProductFacilityAssoc_FacilityIdTo();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityAssocTypeId <em>Facility Assoc Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityAssocType <em>Facility Assoc Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Assoc Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityAssocTypeId()
+	 * @return the meta object for the reference '<em>Facility Assoc Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityAssocType()
 	 * @see #getProductFacilityAssoc()
 	 * @generated
 	 */
-	EReference getProductFacilityAssoc_FacilityAssocTypeId();
+	EReference getProductFacilityAssoc_FacilityAssocType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFromDate <em>From Date</em>}'.
@@ -4418,26 +4418,26 @@ public interface FacilityPackage extends EPackage {
 	EClass getProductFacilityLocation();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getProductId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getProduct()
 	 * @see #getProductFacilityLocation()
 	 * @generated
 	 */
-	EReference getProductFacilityLocation_ProductId();
+	EReference getProductFacilityLocation_Product();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getFacilityId <em>Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getFacility <em>Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getFacilityId()
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getFacility()
 	 * @see #getProductFacilityLocation()
 	 * @generated
 	 */
-	EReference getProductFacilityLocation_FacilityId();
+	EReference getProductFacilityLocation_Facility();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation#getLocationSeqId <em>Location Seq Id</em>}'.
@@ -4521,12 +4521,12 @@ public interface FacilityPackage extends EPackage {
 		EReference CONTAINER__CONTAINER_GEO_POINTS = eINSTANCE.getContainer_ContainerGeoPoints();
 
 		/**
-		 * The meta object literal for the '<em><b>Container Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Container Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CONTAINER__CONTAINER_TYPE_ID = eINSTANCE.getContainer_ContainerTypeId();
+		EReference CONTAINER__CONTAINER_TYPE = eINSTANCE.getContainer_ContainerType();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
@@ -4537,12 +4537,12 @@ public interface FacilityPackage extends EPackage {
 		EAttribute CONTAINER__DESCRIPTION = eINSTANCE.getContainer_Description();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CONTAINER__FACILITY_ID = eINSTANCE.getContainer_FacilityId();
+		EReference CONTAINER__FACILITY = eINSTANCE.getContainer_Facility();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerGeoPointImpl <em>Container Geo Point</em>}' class.
@@ -4555,20 +4555,20 @@ public interface FacilityPackage extends EPackage {
 		EClass CONTAINER_GEO_POINT = eINSTANCE.getContainerGeoPoint();
 
 		/**
-		 * The meta object literal for the '<em><b>Container Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Container</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CONTAINER_GEO_POINT__CONTAINER_ID = eINSTANCE.getContainerGeoPoint_ContainerId();
+		EReference CONTAINER_GEO_POINT__CONTAINER = eINSTANCE.getContainerGeoPoint_Container();
 
 		/**
-		 * The meta object literal for the '<em><b>Geo Point Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Geo Point</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CONTAINER_GEO_POINT__GEO_POINT_ID = eINSTANCE.getContainerGeoPoint_GeoPointId();
+		EReference CONTAINER_GEO_POINT__GEO_POINT = eINSTANCE.getContainerGeoPoint_GeoPoint();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -4647,28 +4647,28 @@ public interface FacilityPackage extends EPackage {
 		EAttribute FACILITY__DEFAULT_DAYS_TO_SHIP = eINSTANCE.getFacility_DefaultDaysToShip();
 
 		/**
-		 * The meta object literal for the '<em><b>Default Dimension Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Default Dimension Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY__DEFAULT_DIMENSION_UOM_ID = eINSTANCE.getFacility_DefaultDimensionUomId();
+		EReference FACILITY__DEFAULT_DIMENSION_UOM = eINSTANCE.getFacility_DefaultDimensionUom();
 
 		/**
-		 * The meta object literal for the '<em><b>Default Inventory Item Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Default Inventory Item Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY__DEFAULT_INVENTORY_ITEM_TYPE_ID = eINSTANCE.getFacility_DefaultInventoryItemTypeId();
+		EReference FACILITY__DEFAULT_INVENTORY_ITEM_TYPE = eINSTANCE.getFacility_DefaultInventoryItemType();
 
 		/**
-		 * The meta object literal for the '<em><b>Default Weight Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Default Weight Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY__DEFAULT_WEIGHT_UOM_ID = eINSTANCE.getFacility_DefaultWeightUomId();
+		EReference FACILITY__DEFAULT_WEIGHT_UOM = eINSTANCE.getFacility_DefaultWeightUom();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
@@ -4743,28 +4743,28 @@ public interface FacilityPackage extends EPackage {
 		EAttribute FACILITY__FACILITY_SIZE = eINSTANCE.getFacility_FacilitySize();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Size Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility Size Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY__FACILITY_SIZE_UOM_ID = eINSTANCE.getFacility_FacilitySizeUomId();
+		EReference FACILITY__FACILITY_SIZE_UOM = eINSTANCE.getFacility_FacilitySizeUom();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY__FACILITY_TYPE_ID = eINSTANCE.getFacility_FacilityTypeId();
+		EReference FACILITY__FACILITY_TYPE = eINSTANCE.getFacility_FacilityType();
 
 		/**
-		 * The meta object literal for the '<em><b>Geo Point Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Geo Point</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY__GEO_POINT_ID = eINSTANCE.getFacility_GeoPointId();
+		EReference FACILITY__GEO_POINT = eINSTANCE.getFacility_GeoPoint();
 
 		/**
 		 * The meta object literal for the '<em><b>Old Square Footage</b></em>' attribute feature.
@@ -4783,36 +4783,36 @@ public interface FacilityPackage extends EPackage {
 		EAttribute FACILITY__OPENED_DATE = eINSTANCE.getFacility_OpenedDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Owner Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Owner Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY__OWNER_PARTY_ID = eINSTANCE.getFacility_OwnerPartyId();
+		EReference FACILITY__OWNER_PARTY = eINSTANCE.getFacility_OwnerParty();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY__PARENT_FACILITY_ID = eINSTANCE.getFacility_ParentFacilityId();
+		EReference FACILITY__PARENT_FACILITY = eINSTANCE.getFacility_ParentFacility();
 
 		/**
-		 * The meta object literal for the '<em><b>Primary Facility Group Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Primary Facility Group</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY__PRIMARY_FACILITY_GROUP_ID = eINSTANCE.getFacility_PrimaryFacilityGroupId();
+		EReference FACILITY__PRIMARY_FACILITY_GROUP = eINSTANCE.getFacility_PrimaryFacilityGroup();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Store Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Store</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY__PRODUCT_STORE_ID = eINSTANCE.getFacility_ProductStoreId();
+		EReference FACILITY__PRODUCT_STORE = eINSTANCE.getFacility_ProductStore();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityAssocTypeImpl <em>Assoc Type</em>}' class.
@@ -4851,12 +4851,12 @@ public interface FacilityPackage extends EPackage {
 		EClass FACILITY_ATTRIBUTE = eINSTANCE.getFacilityAttribute();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_ATTRIBUTE__FACILITY_ID = eINSTANCE.getFacilityAttribute_FacilityId();
+		EReference FACILITY_ATTRIBUTE__FACILITY = eINSTANCE.getFacilityAttribute_Facility();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -4893,12 +4893,20 @@ public interface FacilityPackage extends EPackage {
 		EClass FACILITY_CALENDAR = eINSTANCE.getFacilityCalendar();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_CALENDAR__FACILITY_ID = eINSTANCE.getFacilityCalendar_FacilityId();
+		EReference FACILITY_CALENDAR__FACILITY = eINSTANCE.getFacilityCalendar_Facility();
+
+		/**
+		 * The meta object literal for the '<em><b>Facility Calendar Type</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FACILITY_CALENDAR__FACILITY_CALENDAR_TYPE = eINSTANCE.getFacilityCalendar_FacilityCalendarType();
 
 		/**
 		 * The meta object literal for the '<em><b>Calendar Id</b></em>' attribute feature.
@@ -4907,14 +4915,6 @@ public interface FacilityPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute FACILITY_CALENDAR__CALENDAR_ID = eINSTANCE.getFacilityCalendar_CalendarId();
-
-		/**
-		 * The meta object literal for the '<em><b>Facility Calendar Type Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference FACILITY_CALENDAR__FACILITY_CALENDAR_TYPE_ID = eINSTANCE.getFacilityCalendar_FacilityCalendarTypeId();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -4977,20 +4977,28 @@ public interface FacilityPackage extends EPackage {
 		EClass FACILITY_CARRIER_SHIPMENT = eINSTANCE.getFacilityCarrierShipment();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_CARRIER_SHIPMENT__FACILITY_ID = eINSTANCE.getFacilityCarrierShipment_FacilityId();
+		EReference FACILITY_CARRIER_SHIPMENT__PARTY = eINSTANCE.getFacilityCarrierShipment_Party();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_CARRIER_SHIPMENT__PARTY_ID = eINSTANCE.getFacilityCarrierShipment_PartyId();
+		EReference FACILITY_CARRIER_SHIPMENT__FACILITY = eINSTANCE.getFacilityCarrierShipment_Facility();
+
+		/**
+		 * The meta object literal for the '<em><b>Shipment Method Type</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FACILITY_CARRIER_SHIPMENT__SHIPMENT_METHOD_TYPE = eINSTANCE.getFacilityCarrierShipment_ShipmentMethodType();
 
 		/**
 		 * The meta object literal for the '<em><b>Role Type Id</b></em>' attribute feature.
@@ -4999,14 +5007,6 @@ public interface FacilityPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute FACILITY_CARRIER_SHIPMENT__ROLE_TYPE_ID = eINSTANCE.getFacilityCarrierShipment_RoleTypeId();
-
-		/**
-		 * The meta object literal for the '<em><b>Shipment Method Type Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference FACILITY_CARRIER_SHIPMENT__SHIPMENT_METHOD_TYPE_ID = eINSTANCE.getFacilityCarrierShipment_ShipmentMethodTypeId();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContactMechImpl <em>Contact Mech</em>}' class.
@@ -5019,20 +5019,20 @@ public interface FacilityPackage extends EPackage {
 		EClass FACILITY_CONTACT_MECH = eINSTANCE.getFacilityContactMech();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_CONTACT_MECH__FACILITY_ID = eINSTANCE.getFacilityContactMech_FacilityId();
+		EReference FACILITY_CONTACT_MECH__FACILITY = eINSTANCE.getFacilityContactMech_Facility();
 
 		/**
-		 * The meta object literal for the '<em><b>Contact Mech Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Contact Mech</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_CONTACT_MECH__CONTACT_MECH_ID = eINSTANCE.getFacilityContactMech_ContactMechId();
+		EReference FACILITY_CONTACT_MECH__CONTACT_MECH = eINSTANCE.getFacilityContactMech_ContactMech();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -5077,28 +5077,28 @@ public interface FacilityPackage extends EPackage {
 		EClass FACILITY_CONTACT_MECH_PURPOSE = eINSTANCE.getFacilityContactMechPurpose();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Contact Mech Purpose Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_CONTACT_MECH_PURPOSE__FACILITY_ID = eINSTANCE.getFacilityContactMechPurpose_FacilityId();
+		EReference FACILITY_CONTACT_MECH_PURPOSE__CONTACT_MECH_PURPOSE_TYPE = eINSTANCE.getFacilityContactMechPurpose_ContactMechPurposeType();
 
 		/**
-		 * The meta object literal for the '<em><b>Contact Mech Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_CONTACT_MECH_PURPOSE__CONTACT_MECH_ID = eINSTANCE.getFacilityContactMechPurpose_ContactMechId();
+		EReference FACILITY_CONTACT_MECH_PURPOSE__FACILITY = eINSTANCE.getFacilityContactMechPurpose_Facility();
 
 		/**
-		 * The meta object literal for the '<em><b>Contact Mech Purpose Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Contact Mech</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_CONTACT_MECH_PURPOSE__CONTACT_MECH_PURPOSE_TYPE_ID = eINSTANCE.getFacilityContactMechPurpose_ContactMechPurposeTypeId();
+		EReference FACILITY_CONTACT_MECH_PURPOSE__CONTACT_MECH = eINSTANCE.getFacilityContactMechPurpose_ContactMech();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -5127,20 +5127,20 @@ public interface FacilityPackage extends EPackage {
 		EClass FACILITY_CONTENT = eINSTANCE.getFacilityContent();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_CONTENT__FACILITY_ID = eINSTANCE.getFacilityContent_FacilityId();
+		EReference FACILITY_CONTENT__FACILITY = eINSTANCE.getFacilityContent_Facility();
 
 		/**
-		 * The meta object literal for the '<em><b>Content Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Content</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_CONTENT__CONTENT_ID = eINSTANCE.getFacilityContent_ContentId();
+		EReference FACILITY_CONTENT__CONTENT = eINSTANCE.getFacilityContent_Content();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -5201,20 +5201,20 @@ public interface FacilityPackage extends EPackage {
 		EAttribute FACILITY_GROUP__FACILITY_GROUP_NAME = eINSTANCE.getFacilityGroup_FacilityGroupName();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Group Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility Group Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_GROUP__FACILITY_GROUP_TYPE_ID = eINSTANCE.getFacilityGroup_FacilityGroupTypeId();
+		EReference FACILITY_GROUP__FACILITY_GROUP_TYPE = eINSTANCE.getFacilityGroup_FacilityGroupType();
 
 		/**
-		 * The meta object literal for the '<em><b>Primary Parent Group Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Primary Parent Group</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_GROUP__PRIMARY_PARENT_GROUP_ID = eINSTANCE.getFacilityGroup_PrimaryParentGroupId();
+		EReference FACILITY_GROUP__PRIMARY_PARENT_GROUP = eINSTANCE.getFacilityGroup_PrimaryParentGroup();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupMemberImpl <em>Group Member</em>}' class.
@@ -5227,20 +5227,20 @@ public interface FacilityPackage extends EPackage {
 		EClass FACILITY_GROUP_MEMBER = eINSTANCE.getFacilityGroupMember();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_GROUP_MEMBER__FACILITY_ID = eINSTANCE.getFacilityGroupMember_FacilityId();
+		EReference FACILITY_GROUP_MEMBER__FACILITY = eINSTANCE.getFacilityGroupMember_Facility();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Group Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility Group</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_GROUP_MEMBER__FACILITY_GROUP_ID = eINSTANCE.getFacilityGroupMember_FacilityGroupId();
+		EReference FACILITY_GROUP_MEMBER__FACILITY_GROUP = eINSTANCE.getFacilityGroupMember_FacilityGroup();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -5277,28 +5277,28 @@ public interface FacilityPackage extends EPackage {
 		EClass FACILITY_GROUP_ROLE = eINSTANCE.getFacilityGroupRole();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Group Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility Group</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_GROUP_ROLE__FACILITY_GROUP_ID = eINSTANCE.getFacilityGroupRole_FacilityGroupId();
+		EReference FACILITY_GROUP_ROLE__FACILITY_GROUP = eINSTANCE.getFacilityGroupRole_FacilityGroup();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_GROUP_ROLE__PARTY_ID = eINSTANCE.getFacilityGroupRole_PartyId();
+		EReference FACILITY_GROUP_ROLE__PARTY = eINSTANCE.getFacilityGroupRole_Party();
 
 		/**
-		 * The meta object literal for the '<em><b>Role Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Role Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_GROUP_ROLE__ROLE_TYPE_ID = eINSTANCE.getFacilityGroupRole_RoleTypeId();
+		EReference FACILITY_GROUP_ROLE__ROLE_TYPE = eINSTANCE.getFacilityGroupRole_RoleType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRollupImpl <em>Group Rollup</em>}' class.
@@ -5311,20 +5311,20 @@ public interface FacilityPackage extends EPackage {
 		EClass FACILITY_GROUP_ROLLUP = eINSTANCE.getFacilityGroupRollup();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Group Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility Group</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_GROUP_ROLLUP__FACILITY_GROUP_ID = eINSTANCE.getFacilityGroupRollup_FacilityGroupId();
+		EReference FACILITY_GROUP_ROLLUP__FACILITY_GROUP = eINSTANCE.getFacilityGroupRollup_FacilityGroup();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Facility Group Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Facility Group</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_GROUP_ROLLUP__PARENT_FACILITY_GROUP_ID = eINSTANCE.getFacilityGroupRollup_ParentFacilityGroupId();
+		EReference FACILITY_GROUP_ROLLUP__PARENT_FACILITY_GROUP = eINSTANCE.getFacilityGroupRollup_ParentFacilityGroup();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -5387,12 +5387,12 @@ public interface FacilityPackage extends EPackage {
 		EClass FACILITY_LOCATION = eINSTANCE.getFacilityLocation();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_LOCATION__FACILITY_ID = eINSTANCE.getFacilityLocation_FacilityId();
+		EReference FACILITY_LOCATION__FACILITY = eINSTANCE.getFacilityLocation_Facility();
 
 		/**
 		 * The meta object literal for the '<em><b>Location Seq Id</b></em>' attribute feature.
@@ -5419,12 +5419,12 @@ public interface FacilityPackage extends EPackage {
 		EAttribute FACILITY_LOCATION__AREA_ID = eINSTANCE.getFacilityLocation_AreaId();
 
 		/**
-		 * The meta object literal for the '<em><b>Geo Point Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Geo Point</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_LOCATION__GEO_POINT_ID = eINSTANCE.getFacilityLocation_GeoPointId();
+		EReference FACILITY_LOCATION__GEO_POINT = eINSTANCE.getFacilityLocation_GeoPoint();
 
 		/**
 		 * The meta object literal for the '<em><b>Level Id</b></em>' attribute feature.
@@ -5435,12 +5435,12 @@ public interface FacilityPackage extends EPackage {
 		EAttribute FACILITY_LOCATION__LEVEL_ID = eINSTANCE.getFacilityLocation_LevelId();
 
 		/**
-		 * The meta object literal for the '<em><b>Location Type Enum Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Location Type Enum</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_LOCATION__LOCATION_TYPE_ENUM_ID = eINSTANCE.getFacilityLocation_LocationTypeEnumId();
+		EReference FACILITY_LOCATION__LOCATION_TYPE_ENUM = eINSTANCE.getFacilityLocation_LocationTypeEnum();
 
 		/**
 		 * The meta object literal for the '<em><b>Position Id</b></em>' attribute feature.
@@ -5469,6 +5469,14 @@ public interface FacilityPackage extends EPackage {
 		EClass FACILITY_LOCATION_GEO_POINT = eINSTANCE.getFacilityLocationGeoPoint();
 
 		/**
+		 * The meta object literal for the '<em><b>Geo Point</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FACILITY_LOCATION_GEO_POINT__GEO_POINT = eINSTANCE.getFacilityLocationGeoPoint_GeoPoint();
+
+		/**
 		 * The meta object literal for the '<em><b>Facility Id</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5483,14 +5491,6 @@ public interface FacilityPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute FACILITY_LOCATION_GEO_POINT__LOCATION_SEQ_ID = eINSTANCE.getFacilityLocationGeoPoint_LocationSeqId();
-
-		/**
-		 * The meta object literal for the '<em><b>Geo Point Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference FACILITY_LOCATION_GEO_POINT__GEO_POINT_ID = eINSTANCE.getFacilityLocationGeoPoint_GeoPointId();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -5519,28 +5519,28 @@ public interface FacilityPackage extends EPackage {
 		EClass FACILITY_PARTY = eINSTANCE.getFacilityParty();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_PARTY__FACILITY_ID = eINSTANCE.getFacilityParty_FacilityId();
+		EReference FACILITY_PARTY__FACILITY = eINSTANCE.getFacilityParty_Facility();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_PARTY__PARTY_ID = eINSTANCE.getFacilityParty_PartyId();
+		EReference FACILITY_PARTY__PARTY = eINSTANCE.getFacilityParty_Party();
 
 		/**
-		 * The meta object literal for the '<em><b>Role Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Role Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_PARTY__ROLE_TYPE_ID = eINSTANCE.getFacilityParty_RoleTypeId();
+		EReference FACILITY_PARTY__ROLE_TYPE = eINSTANCE.getFacilityParty_RoleType();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -5601,12 +5601,12 @@ public interface FacilityPackage extends EPackage {
 		EAttribute FACILITY_TYPE__HAS_TABLE = eINSTANCE.getFacilityType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_TYPE__PARENT_TYPE_ID = eINSTANCE.getFacilityType_ParentTypeId();
+		EReference FACILITY_TYPE__PARENT_TYPE = eINSTANCE.getFacilityType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityTypeAttrImpl <em>Type Attr</em>}' class.
@@ -5619,12 +5619,12 @@ public interface FacilityPackage extends EPackage {
 		EClass FACILITY_TYPE_ATTR = eINSTANCE.getFacilityTypeAttr();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACILITY_TYPE_ATTR__FACILITY_TYPE_ID = eINSTANCE.getFacilityTypeAttr_FacilityTypeId();
+		EReference FACILITY_TYPE_ATTR__FACILITY_TYPE = eINSTANCE.getFacilityTypeAttr_FacilityType();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -5653,20 +5653,20 @@ public interface FacilityPackage extends EPackage {
 		EClass PRODUCT_FACILITY = eINSTANCE.getProductFacility();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FACILITY__PRODUCT_ID = eINSTANCE.getProductFacility_ProductId();
+		EReference PRODUCT_FACILITY__PRODUCT = eINSTANCE.getProductFacility_Product();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FACILITY__FACILITY_ID = eINSTANCE.getProductFacility_FacilityId();
+		EReference PRODUCT_FACILITY__FACILITY = eINSTANCE.getProductFacility_Facility();
 
 		/**
 		 * The meta object literal for the '<em><b>Days To Ship</b></em>' attribute feature.
@@ -5701,20 +5701,20 @@ public interface FacilityPackage extends EPackage {
 		EAttribute PRODUCT_FACILITY__REORDER_QUANTITY = eINSTANCE.getProductFacility_ReorderQuantity();
 
 		/**
-		 * The meta object literal for the '<em><b>Replenish Method Enum Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Replenish Method Enum</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FACILITY__REPLENISH_METHOD_ENUM_ID = eINSTANCE.getProductFacility_ReplenishMethodEnumId();
+		EReference PRODUCT_FACILITY__REPLENISH_METHOD_ENUM = eINSTANCE.getProductFacility_ReplenishMethodEnum();
 
 		/**
-		 * The meta object literal for the '<em><b>Requirement Method Enum Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Requirement Method Enum</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FACILITY__REQUIREMENT_METHOD_ENUM_ID = eINSTANCE.getProductFacility_RequirementMethodEnumId();
+		EReference PRODUCT_FACILITY__REQUIREMENT_METHOD_ENUM = eINSTANCE.getProductFacility_RequirementMethodEnum();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityAssocImpl <em>Product Facility Assoc</em>}' class.
@@ -5727,20 +5727,20 @@ public interface FacilityPackage extends EPackage {
 		EClass PRODUCT_FACILITY_ASSOC = eINSTANCE.getProductFacilityAssoc();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FACILITY_ASSOC__PRODUCT_ID = eINSTANCE.getProductFacilityAssoc_ProductId();
+		EReference PRODUCT_FACILITY_ASSOC__PRODUCT = eINSTANCE.getProductFacilityAssoc_Product();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FACILITY_ASSOC__FACILITY_ID = eINSTANCE.getProductFacilityAssoc_FacilityId();
+		EReference PRODUCT_FACILITY_ASSOC__FACILITY = eINSTANCE.getProductFacilityAssoc_Facility();
 
 		/**
 		 * The meta object literal for the '<em><b>Facility Id To</b></em>' reference feature.
@@ -5751,12 +5751,12 @@ public interface FacilityPackage extends EPackage {
 		EReference PRODUCT_FACILITY_ASSOC__FACILITY_ID_TO = eINSTANCE.getProductFacilityAssoc_FacilityIdTo();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Assoc Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility Assoc Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FACILITY_ASSOC__FACILITY_ASSOC_TYPE_ID = eINSTANCE.getProductFacilityAssoc_FacilityAssocTypeId();
+		EReference PRODUCT_FACILITY_ASSOC__FACILITY_ASSOC_TYPE = eINSTANCE.getProductFacilityAssoc_FacilityAssocType();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -5801,20 +5801,20 @@ public interface FacilityPackage extends EPackage {
 		EClass PRODUCT_FACILITY_LOCATION = eINSTANCE.getProductFacilityLocation();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FACILITY_LOCATION__PRODUCT_ID = eINSTANCE.getProductFacilityLocation_ProductId();
+		EReference PRODUCT_FACILITY_LOCATION__PRODUCT = eINSTANCE.getProductFacilityLocation_Product();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FACILITY_LOCATION__FACILITY_ID = eINSTANCE.getProductFacilityLocation_FacilityId();
+		EReference PRODUCT_FACILITY_LOCATION__FACILITY = eINSTANCE.getProductFacilityLocation_Facility();
 
 		/**
 		 * The meta object literal for the '<em><b>Location Seq Id</b></em>' attribute feature.

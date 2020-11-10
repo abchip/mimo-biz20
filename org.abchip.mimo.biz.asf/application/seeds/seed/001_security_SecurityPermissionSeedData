@@ -8,33 +8,33 @@
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="OFBTOOLS_VIEW" description="Permission to access the Stock OFBiz Manager Applications."/>
   <contents xsi:type="biz-securitygroup:SecurityGroup" groupId="SUPER" description="Super admin group, has all *_ADMIN permission loaded as seed data" groupName="Super"/>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#OFBTOOLS_VIEW"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#OFBTOOLS_VIEW"/>
   </contents>
   <contents xsi:type="biz-login:UserLogin" userLoginId="system" enabled="false" isSystem="true"/>
   <contents xsi:type="biz-securitygroup:UserLoginSecurityGroup" fromDate="2001-01-01T12:00:00.000+0100">
-    <userLoginId href="UserLogin#system"/>
-    <groupId href="SecurityGroup#SUPER"/>
+    <userLogin href="UserLogin#system"/>
+    <group href="SecurityGroup#SUPER"/>
   </contents>
   <contents xsi:type="biz-login:UserLogin" userLoginId="anonymous" enabled="false"/>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#access"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#access"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#create"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#create"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#read"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#read"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#update"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#update"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#delete"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#delete"/>
   </contents>
 </mimo-ent:EntityContainer>

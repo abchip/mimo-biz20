@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePromoApplImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePromoApplImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePromoApplImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePromoApplImpl#getProductStoreId <em>Product Store Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePromoApplImpl#getProductPromoId <em>Product Promo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePromoApplImpl#getProductStore <em>Product Store</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePromoApplImpl#getProductPromo <em>Product Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePromoApplImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePromoApplImpl#getManualOnly <em>Manual Only</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePromoApplImpl#getSequenceNum <em>Sequence Num</em>}</li>
@@ -156,6 +156,46 @@ public class ProductStorePromoApplImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(StorePackage.Literals.PRODUCT_STORE_PROMO_APPL__PRODUCT_STORE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_PROMO_APPL__PRODUCT_STORE, newProductStore);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductPromo getProductPromo() {
+		return (ProductPromo)eGet(StorePackage.Literals.PRODUCT_STORE_PROMO_APPL__PRODUCT_PROMO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPromo(ProductPromo newProductPromo) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_PROMO_APPL__PRODUCT_PROMO, newProductPromo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(StorePackage.Literals.PRODUCT_STORE_PROMO_APPL__FROM_DATE, true);
 	}
@@ -266,46 +306,6 @@ public class ProductStorePromoApplImpl extends EntityIdentifiableImpl implements
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(StorePackage.Literals.PRODUCT_STORE_PROMO_APPL__PRODUCT_STORE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_PROMO_APPL__PRODUCT_STORE_ID, newProductStoreId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductPromo getProductPromoId() {
-		return (ProductPromo)eGet(StorePackage.Literals.PRODUCT_STORE_PROMO_APPL__PRODUCT_PROMO_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPromoId(ProductPromo newProductPromoId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_PROMO_APPL__PRODUCT_PROMO_ID, newProductPromoId);
 	}
 
 } //ProductStorePromoApplImpl

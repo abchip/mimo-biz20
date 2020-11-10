@@ -32,11 +32,11 @@ import org.abchip.mimo.entity.EntityTyped;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetId <em>Fixed Asset Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getAcquireOrderId <em>Acquire Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getAcquireOrder <em>Acquire Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getAcquireOrderItemSeqId <em>Acquire Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getActualEndOfLife <em>Actual End Of Life</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getCalendarId <em>Calendar Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getClassEnumId <em>Class Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getCalendar <em>Calendar</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getClassEnum <em>Class Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getDateAcquired <em>Date Acquired</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getDateLastServiced <em>Date Last Serviced</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getDateNextService <em>Date Next Service</em>}</li>
@@ -49,19 +49,19 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetName <em>Fixed Asset Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetRegistrations <em>Fixed Asset Registrations</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetStdCosts <em>Fixed Asset Std Costs</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetTypeId <em>Fixed Asset Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getInstanceOfProductId <em>Instance Of Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getLocatedAtFacilityId <em>Located At Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetType <em>Fixed Asset Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getInstanceOfProduct <em>Instance Of Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getLocatedAtFacility <em>Located At Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getLocatedAtLocationSeqId <em>Located At Location Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getParentFixedAssetId <em>Parent Fixed Asset Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getParentFixedAsset <em>Parent Fixed Asset</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getProductionCapacity <em>Production Capacity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getPurchaseCost <em>Purchase Cost</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getPurchaseCostUomId <em>Purchase Cost Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getRoleType <em>Role Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getSalvageValue <em>Salvage Value</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getSerialNumber <em>Serial Number</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getUomId <em>Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getUom <em>Uom</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset()
@@ -69,32 +69,6 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
-	/**
-	 * Returns the value of the '<em><b>Acquire Order Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Acquire Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Acquire Order Id</em>' reference.
-	 * @see #setAcquireOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_AcquireOrderId()
-	 * @model keys="orderId"
-	 * @generated
-	 */
-	OrderHeader getAcquireOrderId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getAcquireOrderId <em>Acquire Order Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Acquire Order Id</em>' reference.
-	 * @see #getAcquireOrderId()
-	 * @generated
-	 */
-	void setAcquireOrderId(OrderHeader value);
-
 	/**
 	 * Returns the value of the '<em><b>Acquire Order Item Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -148,56 +122,48 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	void setActualEndOfLife(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Calendar Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Calendar</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Calendar Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Calendar Id</em>' reference.
-	 * @see #setCalendarId(TechDataCalendar)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_CalendarId()
+	 * @return the value of the '<em>Calendar</em>' reference.
+	 * @see #setCalendar(TechDataCalendar)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_Calendar()
 	 * @model keys="calendarId"
 	 * @generated
 	 */
-	TechDataCalendar getCalendarId();
+	TechDataCalendar getCalendar();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getCalendarId <em>Calendar Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getCalendar <em>Calendar</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Calendar Id</em>' reference.
-	 * @see #getCalendarId()
+	 * @param value the new value of the '<em>Calendar</em>' reference.
+	 * @see #getCalendar()
 	 * @generated
 	 */
-	void setCalendarId(TechDataCalendar value);
+	void setCalendar(TechDataCalendar value);
 
 	/**
-	 * Returns the value of the '<em><b>Class Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Class Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Class Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Class Enum Id</em>' reference.
-	 * @see #setClassEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_ClassEnumId()
+	 * @return the value of the '<em>Class Enum</em>' reference.
+	 * @see #setClassEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_ClassEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getClassEnumId();
+	Enumeration getClassEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getClassEnumId <em>Class Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getClassEnum <em>Class Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Class Enum Id</em>' reference.
-	 * @see #getClassEnumId()
+	 * @param value the new value of the '<em>Class Enum</em>' reference.
+	 * @see #getClassEnum()
 	 * @generated
 	 */
-	void setClassEnumId(Enumeration value);
+	void setClassEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Date Acquired</b></em>' attribute.
@@ -446,56 +412,70 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	List<FixedAssetStdCost> getFixedAssetStdCosts();
 
 	/**
-	 * Returns the value of the '<em><b>Instance Of Product Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Fixed Asset Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Instance Of Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Instance Of Product Id</em>' reference.
-	 * @see #setInstanceOfProductId(Product)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_InstanceOfProductId()
+	 * @return the value of the '<em>Fixed Asset Type</em>' reference.
+	 * @see #setFixedAssetType(FixedAssetType)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_FixedAssetType()
+	 * @model keys="fixedAssetTypeId"
+	 * @generated
+	 */
+	FixedAssetType getFixedAssetType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetType <em>Fixed Asset Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Fixed Asset Type</em>' reference.
+	 * @see #getFixedAssetType()
+	 * @generated
+	 */
+	void setFixedAssetType(FixedAssetType value);
+
+	/**
+	 * Returns the value of the '<em><b>Instance Of Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Instance Of Product</em>' reference.
+	 * @see #setInstanceOfProduct(Product)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_InstanceOfProduct()
 	 * @model keys="productId"
 	 * @generated
 	 */
-	Product getInstanceOfProductId();
+	Product getInstanceOfProduct();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getInstanceOfProductId <em>Instance Of Product Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getInstanceOfProduct <em>Instance Of Product</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Instance Of Product Id</em>' reference.
-	 * @see #getInstanceOfProductId()
+	 * @param value the new value of the '<em>Instance Of Product</em>' reference.
+	 * @see #getInstanceOfProduct()
 	 * @generated
 	 */
-	void setInstanceOfProductId(Product value);
+	void setInstanceOfProduct(Product value);
 
 	/**
-	 * Returns the value of the '<em><b>Located At Facility Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Located At Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Located At Facility Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Located At Facility Id</em>' reference.
-	 * @see #setLocatedAtFacilityId(Facility)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_LocatedAtFacilityId()
+	 * @return the value of the '<em>Located At Facility</em>' reference.
+	 * @see #setLocatedAtFacility(Facility)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_LocatedAtFacility()
 	 * @model keys="facilityId"
 	 * @generated
 	 */
-	Facility getLocatedAtFacilityId();
+	Facility getLocatedAtFacility();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getLocatedAtFacilityId <em>Located At Facility Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getLocatedAtFacility <em>Located At Facility</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Located At Facility Id</em>' reference.
-	 * @see #getLocatedAtFacilityId()
+	 * @param value the new value of the '<em>Located At Facility</em>' reference.
+	 * @see #getLocatedAtFacility()
 	 * @generated
 	 */
-	void setLocatedAtFacilityId(Facility value);
+	void setLocatedAtFacility(Facility value);
 
 	/**
 	 * Returns the value of the '<em><b>Located At Location Seq Id</b></em>' attribute.
@@ -524,30 +504,48 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	void setLocatedAtLocationSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Fixed Asset</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_PartyId()
+	 * @return the value of the '<em>Parent Fixed Asset</em>' reference.
+	 * @see #setParentFixedAsset(FixedAsset)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_ParentFixedAsset()
+	 * @model keys="fixedAssetId"
+	 * @generated
+	 */
+	FixedAsset getParentFixedAsset();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getParentFixedAsset <em>Parent Fixed Asset</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Parent Fixed Asset</em>' reference.
+	 * @see #getParentFixedAsset()
+	 * @generated
+	 */
+	void setParentFixedAsset(FixedAsset value);
+
+	/**
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_Party()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getPartyId();
+	Party getParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getParty <em>Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setParty(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Production Capacity</b></em>' attribute.
@@ -628,30 +626,26 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	void setPurchaseCostUomId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Role Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Role Type Id</em>' reference.
-	 * @see #setRoleTypeId(RoleType)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_RoleTypeId()
+	 * @return the value of the '<em>Role Type</em>' reference.
+	 * @see #setRoleType(RoleType)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_RoleType()
 	 * @model keys="roleTypeId"
 	 * @generated
 	 */
-	RoleType getRoleTypeId();
+	RoleType getRoleType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getRoleTypeId <em>Role Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getRoleType <em>Role Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Role Type Id</em>' reference.
-	 * @see #getRoleTypeId()
+	 * @param value the new value of the '<em>Role Type</em>' reference.
+	 * @see #getRoleType()
 	 * @generated
 	 */
-	void setRoleTypeId(RoleType value);
+	void setRoleType(RoleType value);
 
 	/**
 	 * Returns the value of the '<em><b>Salvage Value</b></em>' attribute.
@@ -706,82 +700,26 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	void setSerialNumber(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Uom Id</em>' reference.
-	 * @see #setUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_UomId()
+	 * @return the value of the '<em>Uom</em>' reference.
+	 * @see #setUom(Uom)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_Uom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getUomId();
+	Uom getUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getUomId <em>Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getUom <em>Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Uom Id</em>' reference.
-	 * @see #getUomId()
+	 * @param value the new value of the '<em>Uom</em>' reference.
+	 * @see #getUom()
 	 * @generated
 	 */
-	void setUomId(Uom value);
-
-	/**
-	 * Returns the value of the '<em><b>Fixed Asset Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fixed Asset Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fixed Asset Type Id</em>' reference.
-	 * @see #setFixedAssetTypeId(FixedAssetType)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_FixedAssetTypeId()
-	 * @model keys="fixedAssetTypeId"
-	 * @generated
-	 */
-	FixedAssetType getFixedAssetTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetTypeId <em>Fixed Asset Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fixed Asset Type Id</em>' reference.
-	 * @see #getFixedAssetTypeId()
-	 * @generated
-	 */
-	void setFixedAssetTypeId(FixedAssetType value);
-
-	/**
-	 * Returns the value of the '<em><b>Parent Fixed Asset Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Fixed Asset Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Fixed Asset Id</em>' reference.
-	 * @see #setParentFixedAssetId(FixedAsset)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_ParentFixedAssetId()
-	 * @model keys="fixedAssetId"
-	 * @generated
-	 */
-	FixedAsset getParentFixedAssetId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getParentFixedAssetId <em>Parent Fixed Asset Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Fixed Asset Id</em>' reference.
-	 * @see #getParentFixedAssetId()
-	 * @generated
-	 */
-	void setParentFixedAssetId(FixedAsset value);
+	void setUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Fixed Asset Id</b></em>' attribute.
@@ -809,5 +747,27 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * @generated
 	 */
 	void setFixedAssetId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Acquire Order</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Acquire Order</em>' reference.
+	 * @see #setAcquireOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_AcquireOrder()
+	 * @model keys="orderId"
+	 * @generated
+	 */
+	OrderHeader getAcquireOrder();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getAcquireOrder <em>Acquire Order</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Acquire Order</em>' reference.
+	 * @see #getAcquireOrder()
+	 * @generated
+	 */
+	void setAcquireOrder(OrderHeader value);
 
 } // FixedAsset

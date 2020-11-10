@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityRoleImpl#getSalesOpportunityId <em>Sales Opportunity Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityRoleImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityRoleImpl#getSalesOpportunity <em>Sales Opportunity</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityRoleImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityRoleImpl#getRoleType <em>Role Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -154,8 +154,8 @@ public class SalesOpportunityRoleImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_ROLE__PARTY_ID, true);
+	public SalesOpportunity getSalesOpportunity() {
+		return (SalesOpportunity)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_ROLE__SALES_OPPORTUNITY, true);
 	}
 
 	/**
@@ -164,8 +164,8 @@ public class SalesOpportunityRoleImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_ROLE__PARTY_ID, newPartyId);
+	public void setSalesOpportunity(SalesOpportunity newSalesOpportunity) {
+		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_ROLE__SALES_OPPORTUNITY, newSalesOpportunity);
 	}
 
 	/**
@@ -174,8 +174,8 @@ public class SalesOpportunityRoleImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_ROLE__ROLE_TYPE_ID, true);
+	public Party getParty() {
+		return (Party)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_ROLE__PARTY, true);
 	}
 
 	/**
@@ -184,8 +184,28 @@ public class SalesOpportunityRoleImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_ROLE__ROLE_TYPE_ID, newRoleTypeId);
+	public void setParty(Party newParty) {
+		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_ROLE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RoleType getRoleType() {
+		return (RoleType)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_ROLE__ROLE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRoleType(RoleType newRoleType) {
+		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_ROLE__ROLE_TYPE, newRoleType);
 	}
 
 	/**
@@ -224,26 +244,6 @@ public class SalesOpportunityRoleImpl extends EntityIdentifiableImpl implements 
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SalesOpportunity getSalesOpportunityId() {
-		return (SalesOpportunity)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_ROLE__SALES_OPPORTUNITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSalesOpportunityId(SalesOpportunity newSalesOpportunityId) {
-		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_ROLE__SALES_OPPORTUNITY_ID, newSalesOpportunityId);
 	}
 
 } //SalesOpportunityRoleImpl

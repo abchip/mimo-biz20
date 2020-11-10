@@ -21,7 +21,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountGroup#getGlAccountGroupId <em>Gl Account Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountGroup#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountGroup#getGlAccountGroupTypeId <em>Gl Account Group Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountGroup#getGlAccountGroupType <em>Gl Account Group Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccountGroup()
@@ -56,30 +56,26 @@ public interface GlAccountGroup extends EntityTyped<GlAccountGroupType>, EntityI
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Gl Account Group Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Gl Account Group Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gl Account Group Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Account Group Type Id</em>' reference.
-	 * @see #setGlAccountGroupTypeId(GlAccountGroupType)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccountGroup_GlAccountGroupTypeId()
+	 * @return the value of the '<em>Gl Account Group Type</em>' reference.
+	 * @see #setGlAccountGroupType(GlAccountGroupType)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccountGroup_GlAccountGroupType()
 	 * @model keys="glAccountGroupTypeId"
 	 * @generated
 	 */
-	GlAccountGroupType getGlAccountGroupTypeId();
+	GlAccountGroupType getGlAccountGroupType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountGroup#getGlAccountGroupTypeId <em>Gl Account Group Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountGroup#getGlAccountGroupType <em>Gl Account Group Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Gl Account Group Type Id</em>' reference.
-	 * @see #getGlAccountGroupTypeId()
+	 * @param value the new value of the '<em>Gl Account Group Type</em>' reference.
+	 * @see #getGlAccountGroupType()
 	 * @generated
 	 */
-	void setGlAccountGroupTypeId(GlAccountGroupType value);
+	void setGlAccountGroupType(GlAccountGroupType value);
 
 	/**
 	 * Returns the value of the '<em><b>Gl Account Group Id</b></em>' attribute.

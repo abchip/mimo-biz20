@@ -24,7 +24,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.EftAccountImpl#getAccountType <em>Account Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.EftAccountImpl#getBankName <em>Bank Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.EftAccountImpl#getCompanyNameOnAccount <em>Company Name On Account</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.EftAccountImpl#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.EftAccountImpl#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.EftAccountImpl#getNameOnAccount <em>Name On Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.EftAccountImpl#getRoutingNumber <em>Routing Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.EftAccountImpl#getYearsAtBank <em>Years At Bank</em>}</li>
@@ -138,8 +138,8 @@ public class EftAccountImpl extends PaymentMethodImpl implements EftAccount {
 	 * @generated
 	 */
 	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(PaymentPackage.Literals.EFT_ACCOUNT__CONTACT_MECH_ID, true);
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(PaymentPackage.Literals.EFT_ACCOUNT__CONTACT_MECH, true);
 	}
 
 	/**
@@ -148,8 +148,8 @@ public class EftAccountImpl extends PaymentMethodImpl implements EftAccount {
 	 * @generated
 	 */
 	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(PaymentPackage.Literals.EFT_ACCOUNT__CONTACT_MECH_ID, newContactMechId);
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(PaymentPackage.Literals.EFT_ACCOUNT__CONTACT_MECH, newContactMech);
 	}
 
 	/**

@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeGlAccountImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeGlAccountImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeGlAccountImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeGlAccountImpl#getFinAccountTypeId <em>Fin Account Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeGlAccountImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeGlAccountImpl#getGlAccountId <em>Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeGlAccountImpl#getFinAccountType <em>Fin Account Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeGlAccountImpl#getOrganizationParty <em>Organization Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeGlAccountImpl#getGlAccount <em>Gl Account</em>}</li>
  * </ul>
  *
  * @generated
@@ -153,8 +153,8 @@ public class FinAccountTypeGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public GlAccount getGlAccountId() {
-		return (GlAccount)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE_GL_ACCOUNT__GL_ACCOUNT_ID, true);
+	public FinAccountType getFinAccountType() {
+		return (FinAccountType)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE_GL_ACCOUNT__FIN_ACCOUNT_TYPE, true);
 	}
 
 	/**
@@ -163,8 +163,48 @@ public class FinAccountTypeGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setGlAccountId(GlAccount newGlAccountId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE_GL_ACCOUNT__GL_ACCOUNT_ID, newGlAccountId);
+	public void setFinAccountType(FinAccountType newFinAccountType) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE_GL_ACCOUNT__FIN_ACCOUNT_TYPE, newFinAccountType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getOrganizationParty() {
+		return (Party)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrganizationParty(Party newOrganizationParty) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY, newOrganizationParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GlAccount getGlAccount() {
+		return (GlAccount)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE_GL_ACCOUNT__GL_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGlAccount(GlAccount newGlAccount) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE_GL_ACCOUNT__GL_ACCOUNT, newGlAccount);
 	}
 
 	/**
@@ -203,46 +243,6 @@ public class FinAccountTypeGlAccountImpl extends EntityIdentifiableImpl implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getOrganizationPartyId() {
-		return (Party)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrganizationPartyId(Party newOrganizationPartyId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY_ID, newOrganizationPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FinAccountType getFinAccountTypeId() {
-		return (FinAccountType)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE_GL_ACCOUNT__FIN_ACCOUNT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFinAccountTypeId(FinAccountType newFinAccountTypeId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE_GL_ACCOUNT__FIN_ACCOUNT_TYPE_ID, newFinAccountTypeId);
 	}
 
 } //FinAccountTypeGlAccountImpl

@@ -23,11 +23,11 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getShoppingListId <em>Shopping List Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getShoppingList <em>Shopping List</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getShoppingListItemSeqId <em>Shopping List Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getConfigId <em>Config Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getModifiedPrice <em>Modified Price</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getQuantityPurchased <em>Quantity Purchased</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getReservLength <em>Reserv Length</em>}</li>
@@ -40,6 +40,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ShoppingListItem extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Shopping List</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Shopping List</em>' reference.
+	 * @see #setShoppingList(ShoppingList)
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingListItem_ShoppingList()
+	 * @model keys="shoppingListId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ShoppingList getShoppingList();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getShoppingList <em>Shopping List</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Shopping List</em>' reference.
+	 * @see #getShoppingList()
+	 * @generated
+	 */
+	void setShoppingList(ShoppingList value);
+
 	/**
 	 * Returns the value of the '<em><b>Config Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -93,30 +116,26 @@ public interface ShoppingListItem extends EntityIdentifiable, EntityInfo {
 	void setModifiedPrice(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingListItem_ProductId()
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingListItem_Product()
 	 * @model keys="productId"
 	 * @generated
 	 */
-	Product getProductId();
+	Product getProduct();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getProductId <em>Product Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getProduct <em>Product</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
 	 * @generated
 	 */
-	void setProductId(Product value);
+	void setProduct(Product value);
 
 	/**
 	 * Returns the value of the '<em><b>Quantity</b></em>' attribute.
@@ -247,33 +266,6 @@ public interface ShoppingListItem extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setReservStart(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Shopping List Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shopping List Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shopping List Id</em>' reference.
-	 * @see #setShoppingListId(ShoppingList)
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingListItem_ShoppingListId()
-	 * @model keys="shoppingListId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ShoppingList getShoppingListId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem#getShoppingListId <em>Shopping List Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shopping List Id</em>' reference.
-	 * @see #getShoppingListId()
-	 * @generated
-	 */
-	void setShoppingListId(ShoppingList value);
 
 	/**
 	 * Returns the value of the '<em><b>Shopping List Item Seq Id</b></em>' attribute.

@@ -34,8 +34,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.impl.CartAbandonedLineImpl#getCartAbandonedLineSeqId <em>Cart Abandoned Line Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.impl.CartAbandonedLineImpl#getVisitId <em>Visit Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.impl.CartAbandonedLineImpl#getConfigId <em>Config Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.impl.CartAbandonedLineImpl#getProdCatalogId <em>Prod Catalog Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.impl.CartAbandonedLineImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.impl.CartAbandonedLineImpl#getProdCatalog <em>Prod Catalog</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.impl.CartAbandonedLineImpl#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.impl.CartAbandonedLineImpl#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.impl.CartAbandonedLineImpl#getReserv2ndPPPerc <em>Reserv2nd PP Perc</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.impl.CartAbandonedLineImpl#getReservLength <em>Reserv Length</em>}</li>
@@ -206,8 +206,8 @@ public class CartAbandonedLineImpl extends EntityIdentifiableImpl implements Car
 	 * @generated
 	 */
 	@Override
-	public ProdCatalog getProdCatalogId() {
-		return (ProdCatalog)eGet(ShoppingcartPackage.Literals.CART_ABANDONED_LINE__PROD_CATALOG_ID, true);
+	public ProdCatalog getProdCatalog() {
+		return (ProdCatalog)eGet(ShoppingcartPackage.Literals.CART_ABANDONED_LINE__PROD_CATALOG, true);
 	}
 
 	/**
@@ -216,8 +216,8 @@ public class CartAbandonedLineImpl extends EntityIdentifiableImpl implements Car
 	 * @generated
 	 */
 	@Override
-	public void setProdCatalogId(ProdCatalog newProdCatalogId) {
-		eSet(ShoppingcartPackage.Literals.CART_ABANDONED_LINE__PROD_CATALOG_ID, newProdCatalogId);
+	public void setProdCatalog(ProdCatalog newProdCatalog) {
+		eSet(ShoppingcartPackage.Literals.CART_ABANDONED_LINE__PROD_CATALOG, newProdCatalog);
 	}
 
 	/**
@@ -226,8 +226,8 @@ public class CartAbandonedLineImpl extends EntityIdentifiableImpl implements Car
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(ShoppingcartPackage.Literals.CART_ABANDONED_LINE__PRODUCT_ID, true);
+	public Product getProduct() {
+		return (Product)eGet(ShoppingcartPackage.Literals.CART_ABANDONED_LINE__PRODUCT, true);
 	}
 
 	/**
@@ -236,8 +236,8 @@ public class CartAbandonedLineImpl extends EntityIdentifiableImpl implements Car
 	 * @generated
 	 */
 	@Override
-	public void setProductId(Product newProductId) {
-		eSet(ShoppingcartPackage.Literals.CART_ABANDONED_LINE__PRODUCT_ID, newProductId);
+	public void setProduct(Product newProduct) {
+		eSet(ShoppingcartPackage.Literals.CART_ABANDONED_LINE__PRODUCT, newProduct);
 	}
 
 	/**

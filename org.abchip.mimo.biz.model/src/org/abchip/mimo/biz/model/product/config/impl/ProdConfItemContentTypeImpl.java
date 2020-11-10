@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentTypeImpl#getConfItemContentTypeId <em>Conf Item Content Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,8 +200,8 @@ public class ProdConfItemContentTypeImpl extends EntityTypeImpl<ProdConfItemCont
 	 * @generated
 	 */
 	@Override
-	public ProdConfItemContentType getParentTypeId() {
-		return (ProdConfItemContentType)eGet(ConfigPackage.Literals.PROD_CONF_ITEM_CONTENT_TYPE__PARENT_TYPE_ID, true);
+	public ProdConfItemContentType getParentType() {
+		return (ProdConfItemContentType)eGet(ConfigPackage.Literals.PROD_CONF_ITEM_CONTENT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -210,8 +210,8 @@ public class ProdConfItemContentTypeImpl extends EntityTypeImpl<ProdConfItemCont
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(ProdConfItemContentType newParentTypeId) {
-		eSet(ConfigPackage.Literals.PROD_CONF_ITEM_CONTENT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(ProdConfItemContentType newParentType) {
+		eSet(ConfigPackage.Literals.PROD_CONF_ITEM_CONTENT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

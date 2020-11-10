@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountAttributeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountAttributeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountAttributeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountAttributeImpl#getFinAccountId <em>Fin Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountAttributeImpl#getFinAccount <em>Fin Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountAttributeImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountAttributeImpl#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountAttributeImpl#getAttrValue <em>Attr Value</em>}</li>
@@ -152,6 +152,26 @@ public class FinAccountAttributeImpl extends EntityIdentifiableImpl implements F
 	 * @generated
 	 */
 	@Override
+	public FinAccount getFinAccount() {
+		return (FinAccount)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_ATTRIBUTE__FIN_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFinAccount(FinAccount newFinAccount) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_ATTRIBUTE__FIN_ACCOUNT, newFinAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrDescription() {
 		return (String)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_ATTRIBUTE__ATTR_DESCRIPTION, true);
 	}
@@ -222,26 +242,6 @@ public class FinAccountAttributeImpl extends EntityIdentifiableImpl implements F
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FinAccount getFinAccountId() {
-		return (FinAccount)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_ATTRIBUTE__FIN_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFinAccountId(FinAccount newFinAccountId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_ATTRIBUTE__FIN_ACCOUNT_ID, newFinAccountId);
 	}
 
 	/**

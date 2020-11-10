@@ -31,8 +31,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistBinImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistBinImpl#getPicklistBinId <em>Picklist Bin Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistBinImpl#getBinLocationNumber <em>Bin Location Number</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistBinImpl#getPicklistId <em>Picklist Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistBinImpl#getPrimaryOrderId <em>Primary Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistBinImpl#getPicklist <em>Picklist</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistBinImpl#getPrimaryOrder <em>Primary Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistBinImpl#getPrimaryShipGroupSeqId <em>Primary Ship Group Seq Id</em>}</li>
  * </ul>
  *
@@ -175,6 +175,46 @@ public class PicklistBinImpl extends EntityIdentifiableImpl implements PicklistB
 	 * @generated
 	 */
 	@Override
+	public Picklist getPicklist() {
+		return (Picklist)eGet(PicklistPackage.Literals.PICKLIST_BIN__PICKLIST, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPicklist(Picklist newPicklist) {
+		eSet(PicklistPackage.Literals.PICKLIST_BIN__PICKLIST, newPicklist);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OrderHeader getPrimaryOrder() {
+		return (OrderHeader)eGet(PicklistPackage.Literals.PICKLIST_BIN__PRIMARY_ORDER, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPrimaryOrder(OrderHeader newPrimaryOrder) {
+		eSet(PicklistPackage.Literals.PICKLIST_BIN__PRIMARY_ORDER, newPrimaryOrder);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getPicklistBinId() {
 		return (String)eGet(PicklistPackage.Literals.PICKLIST_BIN__PICKLIST_BIN_ID, true);
 	}
@@ -187,46 +227,6 @@ public class PicklistBinImpl extends EntityIdentifiableImpl implements PicklistB
 	@Override
 	public void setPicklistBinId(String newPicklistBinId) {
 		eSet(PicklistPackage.Literals.PICKLIST_BIN__PICKLIST_BIN_ID, newPicklistBinId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Picklist getPicklistId() {
-		return (Picklist)eGet(PicklistPackage.Literals.PICKLIST_BIN__PICKLIST_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPicklistId(Picklist newPicklistId) {
-		eSet(PicklistPackage.Literals.PICKLIST_BIN__PICKLIST_ID, newPicklistId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderHeader getPrimaryOrderId() {
-		return (OrderHeader)eGet(PicklistPackage.Literals.PICKLIST_BIN__PRIMARY_ORDER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPrimaryOrderId(OrderHeader newPrimaryOrderId) {
-		eSet(PicklistPackage.Literals.PICKLIST_BIN__PRIMARY_ORDER_ID, newPrimaryOrderId);
 	}
 
 	/**

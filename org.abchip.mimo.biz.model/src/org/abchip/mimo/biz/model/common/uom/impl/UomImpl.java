@@ -37,7 +37,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomImpl#getMainUomConversions <em>Main Uom Conversions</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomImpl#getNumericCode <em>Numeric Code</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomImpl#getUomTypeId <em>Uom Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomImpl#getUomType <em>Uom Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -240,8 +240,8 @@ public class UomImpl extends EntityTypedImpl<UomType> implements Uom {
 	 * @generated
 	 */
 	@Override
-	public UomType getUomTypeId() {
-		return (UomType)eGet(UomPackage.Literals.UOM__UOM_TYPE_ID, true);
+	public UomType getUomType() {
+		return (UomType)eGet(UomPackage.Literals.UOM__UOM_TYPE, true);
 	}
 
 	/**
@@ -250,8 +250,8 @@ public class UomImpl extends EntityTypedImpl<UomType> implements Uom {
 	 * @generated
 	 */
 	@Override
-	public void setUomTypeId(UomType newUomTypeId) {
-		eSet(UomPackage.Literals.UOM__UOM_TYPE_ID, newUomTypeId);
+	public void setUomType(UomType newUomType) {
+		eSet(UomPackage.Literals.UOM__UOM_TYPE, newUomType);
 	}
 
 	/**

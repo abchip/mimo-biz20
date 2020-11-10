@@ -703,7 +703,7 @@ public class MethodPackageImpl extends EPackageImpl implements MethodPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCustomMethod_CustomMethodTypeId() {
+	public EReference getCustomMethod_CustomMethodType() {
 		return (EReference)customMethodEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -773,7 +773,7 @@ public class MethodPackageImpl extends EPackageImpl implements MethodPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCustomMethodType_ParentTypeId() {
+	public EReference getCustomMethodType_ParentType() {
 		return (EReference)customMethodTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -809,7 +809,7 @@ public class MethodPackageImpl extends EPackageImpl implements MethodPackage {
 		customMethodEClass = createEClass(CUSTOM_METHOD);
 		createEAttribute(customMethodEClass, CUSTOM_METHOD__CUSTOM_METHOD_ID);
 		createEAttribute(customMethodEClass, CUSTOM_METHOD__CUSTOM_METHOD_NAME);
-		createEReference(customMethodEClass, CUSTOM_METHOD__CUSTOM_METHOD_TYPE_ID);
+		createEReference(customMethodEClass, CUSTOM_METHOD__CUSTOM_METHOD_TYPE);
 		createEAttribute(customMethodEClass, CUSTOM_METHOD__DESCRIPTION);
 		createEReference(customMethodEClass, CUSTOM_METHOD__FIXED_ASSET_DEP_METHODS);
 
@@ -817,7 +817,7 @@ public class MethodPackageImpl extends EPackageImpl implements MethodPackage {
 		createEAttribute(customMethodTypeEClass, CUSTOM_METHOD_TYPE__CUSTOM_METHOD_TYPE_ID);
 		createEAttribute(customMethodTypeEClass, CUSTOM_METHOD_TYPE__DESCRIPTION);
 		createEAttribute(customMethodTypeEClass, CUSTOM_METHOD_TYPE__HAS_TABLE);
-		createEReference(customMethodTypeEClass, CUSTOM_METHOD_TYPE__PARENT_TYPE_ID);
+		createEReference(customMethodTypeEClass, CUSTOM_METHOD_TYPE__PARENT_TYPE);
 	}
 
 	/**
@@ -869,8 +869,8 @@ public class MethodPackageImpl extends EPackageImpl implements MethodPackage {
 		initEClass(customMethodEClass, CustomMethod.class, "CustomMethod", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCustomMethod_CustomMethodId(), ecorePackage.getEString(), "customMethodId", null, 1, 1, CustomMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustomMethod_CustomMethodName(), ecorePackage.getEString(), "customMethodName", null, 0, 1, CustomMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCustomMethod_CustomMethodTypeId(), this.getCustomMethodType(), null, "customMethodTypeId", null, 0, 1, CustomMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustomMethod_CustomMethodTypeId().getEKeys().add(this.getCustomMethodType_CustomMethodTypeId());
+		initEReference(getCustomMethod_CustomMethodType(), this.getCustomMethodType(), null, "customMethodType", null, 0, 1, CustomMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCustomMethod_CustomMethodType().getEKeys().add(this.getCustomMethodType_CustomMethodTypeId());
 		initEAttribute(getCustomMethod_Description(), ecorePackage.getEString(), "description", null, 0, 1, CustomMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCustomMethod_FixedAssetDepMethods(), theFixedassetPackage.getFixedAssetDepMethod(), null, "fixedAssetDepMethods", null, 0, -1, CustomMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
@@ -878,8 +878,8 @@ public class MethodPackageImpl extends EPackageImpl implements MethodPackage {
 		initEAttribute(getCustomMethodType_CustomMethodTypeId(), ecorePackage.getEString(), "customMethodTypeId", null, 1, 1, CustomMethodType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustomMethodType_Description(), ecorePackage.getEString(), "description", null, 0, 1, CustomMethodType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustomMethodType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 0, 1, CustomMethodType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCustomMethodType_ParentTypeId(), this.getCustomMethodType(), null, "parentTypeId", null, 0, 1, CustomMethodType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustomMethodType_ParentTypeId().getEKeys().add(this.getCustomMethodType_CustomMethodTypeId());
+		initEReference(getCustomMethodType_ParentType(), this.getCustomMethodType(), null, "parentType", null, 0, 1, CustomMethodType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCustomMethodType_ParentType().getEKeys().add(this.getCustomMethodType_CustomMethodTypeId());
 
 		// Create annotations
 		// mimo-ent-frame

@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryLinkImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryLinkImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryLinkImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryLinkImpl#getProductCategoryId <em>Product Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryLinkImpl#getProductCategory <em>Product Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryLinkImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryLinkImpl#getLinkSeqId <em>Link Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryLinkImpl#getComments <em>Comments</em>}</li>
@@ -38,7 +38,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryLinkImpl#getImageTwoUrl <em>Image Two Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryLinkImpl#getImageUrl <em>Image Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryLinkImpl#getLinkInfo <em>Link Info</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryLinkImpl#getLinkTypeEnumId <em>Link Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryLinkImpl#getLinkTypeEnum <em>Link Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryLinkImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryLinkImpl#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryLinkImpl#getTitleText <em>Title Text</em>}</li>
@@ -155,6 +155,26 @@ public class ProductCategoryLinkImpl extends EntityIdentifiableImpl implements P
 	@Override
 	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
 		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductCategory getProductCategory() {
+		return (ProductCategory)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_LINK__PRODUCT_CATEGORY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductCategory(ProductCategory newProductCategory) {
+		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_LINK__PRODUCT_CATEGORY, newProductCategory);
 	}
 
 	/**
@@ -303,6 +323,26 @@ public class ProductCategoryLinkImpl extends EntityIdentifiableImpl implements P
 	 * @generated
 	 */
 	@Override
+	public Enumeration getLinkTypeEnum() {
+		return (Enumeration)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_LINK__LINK_TYPE_ENUM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLinkTypeEnum(Enumeration newLinkTypeEnum) {
+		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_LINK__LINK_TYPE_ENUM, newLinkTypeEnum);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getLinkSeqId() {
 		return (String)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_LINK__LINK_SEQ_ID, true);
 	}
@@ -315,26 +355,6 @@ public class ProductCategoryLinkImpl extends EntityIdentifiableImpl implements P
 	@Override
 	public void setLinkSeqId(String newLinkSeqId) {
 		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_LINK__LINK_SEQ_ID, newLinkSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Enumeration getLinkTypeEnumId() {
-		return (Enumeration)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_LINK__LINK_TYPE_ENUM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setLinkTypeEnumId(Enumeration newLinkTypeEnumId) {
-		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_LINK__LINK_TYPE_ENUM_ID, newLinkTypeEnumId);
 	}
 
 	/**
@@ -433,26 +453,6 @@ public class ProductCategoryLinkImpl extends EntityIdentifiableImpl implements P
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductCategory getProductCategoryId() {
-		return (ProductCategory)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_LINK__PRODUCT_CATEGORY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductCategoryId(ProductCategory newProductCategoryId) {
-		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_LINK__PRODUCT_CATEGORY_ID, newProductCategoryId);
 	}
 
 } //ProductCategoryLinkImpl

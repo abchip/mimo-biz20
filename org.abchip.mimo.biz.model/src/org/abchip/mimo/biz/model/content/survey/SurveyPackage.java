@@ -371,13 +371,13 @@ public interface SurveyPackage extends EPackage {
 	int SURVEY_MULTI_RESP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Survey Id</b></em>' reference.
+	 * The feature id for the '<em><b>Survey</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SURVEY_MULTI_RESP__SURVEY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SURVEY_MULTI_RESP__SURVEY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Survey Multi Resp Id</b></em>' attribute.
@@ -553,13 +553,13 @@ public interface SurveyPackage extends EPackage {
 	int SURVEY_PAGE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Survey Id</b></em>' reference.
+	 * The feature id for the '<em><b>Survey</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SURVEY_PAGE__SURVEY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SURVEY_PAGE__SURVEY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Survey Page Seq Id</b></em>' attribute.
@@ -680,13 +680,13 @@ public interface SurveyPackage extends EPackage {
 	int SURVEY_QUESTION__FORMAT_STRING = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Geo Id</b></em>' reference.
+	 * The feature id for the '<em><b>Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SURVEY_QUESTION__GEO_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int SURVEY_QUESTION__GEO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Hint</b></em>' attribute.
@@ -707,13 +707,13 @@ public interface SurveyPackage extends EPackage {
 	int SURVEY_QUESTION__QUESTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Survey Question Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Survey Question Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SURVEY_QUESTION__SURVEY_QUESTION_CATEGORY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
+	int SURVEY_QUESTION__SURVEY_QUESTION_CATEGORY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Survey Question Options</b></em>' reference list.
@@ -725,13 +725,13 @@ public interface SurveyPackage extends EPackage {
 	int SURVEY_QUESTION__SURVEY_QUESTION_OPTIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
-	 * The feature id for the '<em><b>Survey Question Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Survey Question Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SURVEY_QUESTION__SURVEY_QUESTION_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
+	int SURVEY_QUESTION__SURVEY_QUESTION_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The number of structural features of the '<em>Question</em>' class.
@@ -789,22 +789,22 @@ public interface SurveyPackage extends EPackage {
 	int SURVEY_QUESTION_APPL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Survey Id</b></em>' reference.
+	 * The feature id for the '<em><b>Survey</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SURVEY_QUESTION_APPL__SURVEY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SURVEY_QUESTION_APPL__SURVEY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Survey Question Id</b></em>' reference.
+	 * The feature id for the '<em><b>Survey Question</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SURVEY_QUESTION_APPL__SURVEY_QUESTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int SURVEY_QUESTION_APPL__SURVEY_QUESTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -970,13 +970,13 @@ public interface SurveyPackage extends EPackage {
 	int SURVEY_QUESTION_CATEGORY__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Parent Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SURVEY_QUESTION_CATEGORY__PARENT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int SURVEY_QUESTION_CATEGORY__PARENT_CATEGORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Question Category</em>' class.
@@ -1034,13 +1034,13 @@ public interface SurveyPackage extends EPackage {
 	int SURVEY_QUESTION_OPTION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Survey Question Id</b></em>' reference.
+	 * The feature id for the '<em><b>Survey Question</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SURVEY_QUESTION_OPTION__SURVEY_QUESTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SURVEY_QUESTION_OPTION__SURVEY_QUESTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Survey Option Seq Id</b></em>' attribute.
@@ -1279,13 +1279,13 @@ public interface SurveyPackage extends EPackage {
 	int SURVEY_RESPONSE__LAST_MODIFIED_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SURVEY_RESPONSE__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int SURVEY_RESPONSE__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -1297,13 +1297,13 @@ public interface SurveyPackage extends EPackage {
 	int SURVEY_RESPONSE__ORDER_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SURVEY_RESPONSE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int SURVEY_RESPONSE__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Reference Id</b></em>' attribute.
@@ -1324,22 +1324,22 @@ public interface SurveyPackage extends EPackage {
 	int SURVEY_RESPONSE__RESPONSE_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
-	 * The feature id for the '<em><b>Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SURVEY_RESPONSE__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
+	int SURVEY_RESPONSE__STATUS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
-	 * The feature id for the '<em><b>Survey Id</b></em>' reference.
+	 * The feature id for the '<em><b>Survey</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SURVEY_RESPONSE__SURVEY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
+	int SURVEY_RESPONSE__SURVEY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The number of structural features of the '<em>Response</em>' class.
@@ -1397,22 +1397,22 @@ public interface SurveyPackage extends EPackage {
 	int SURVEY_RESPONSE_ANSWER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Survey Response Id</b></em>' reference.
+	 * The feature id for the '<em><b>Survey Response</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SURVEY_RESPONSE_ANSWER__SURVEY_RESPONSE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SURVEY_RESPONSE_ANSWER__SURVEY_RESPONSE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Survey Question Id</b></em>' reference.
+	 * The feature id for the '<em><b>Survey Question</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SURVEY_RESPONSE_ANSWER__SURVEY_QUESTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int SURVEY_RESPONSE_ANSWER__SURVEY_QUESTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Survey Multi Resp Col Id</b></em>' attribute.
@@ -1460,13 +1460,13 @@ public interface SurveyPackage extends EPackage {
 	int SURVEY_RESPONSE_ANSWER__BOOLEAN_RESPONSE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Content Id</b></em>' reference.
+	 * The feature id for the '<em><b>Content</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SURVEY_RESPONSE_ANSWER__CONTENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int SURVEY_RESPONSE_ANSWER__CONTENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Currency Response</b></em>' attribute.
@@ -1614,22 +1614,22 @@ public interface SurveyPackage extends EPackage {
 	int SURVEY_TRIGGER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Survey Id</b></em>' reference.
+	 * The feature id for the '<em><b>Survey</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SURVEY_TRIGGER__SURVEY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int SURVEY_TRIGGER__SURVEY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Survey Appl Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Survey Appl Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SURVEY_TRIGGER__SURVEY_APPL_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int SURVEY_TRIGGER__SURVEY_APPL_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1866,15 +1866,15 @@ public interface SurveyPackage extends EPackage {
 	EClass getSurveyMultiResp();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyMultiResp#getSurveyId <em>Survey Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyMultiResp#getSurvey <em>Survey</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Survey Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyMultiResp#getSurveyId()
+	 * @return the meta object for the reference '<em>Survey</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyMultiResp#getSurvey()
 	 * @see #getSurveyMultiResp()
 	 * @generated
 	 */
-	EReference getSurveyMultiResp_SurveyId();
+	EReference getSurveyMultiResp_Survey();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.survey.SurveyMultiResp#getSurveyMultiRespId <em>Survey Multi Resp Id</em>}'.
@@ -1974,15 +1974,15 @@ public interface SurveyPackage extends EPackage {
 	EClass getSurveyPage();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyPage#getSurveyId <em>Survey Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyPage#getSurvey <em>Survey</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Survey Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPage#getSurveyId()
+	 * @return the meta object for the reference '<em>Survey</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPage#getSurvey()
 	 * @see #getSurveyPage()
 	 * @generated
 	 */
-	EReference getSurveyPage_SurveyId();
+	EReference getSurveyPage_Survey();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.survey.SurveyPage#getSurveyPageSeqId <em>Survey Page Seq Id</em>}'.
@@ -2072,15 +2072,15 @@ public interface SurveyPackage extends EPackage {
 	EAttribute getSurveyQuestion_FormatString();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getGeoId <em>Geo Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getGeo <em>Geo</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Geo Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getGeoId()
+	 * @return the meta object for the reference '<em>Geo</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getGeo()
 	 * @see #getSurveyQuestion()
 	 * @generated
 	 */
-	EReference getSurveyQuestion_GeoId();
+	EReference getSurveyQuestion_Geo();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getHint <em>Hint</em>}'.
@@ -2105,15 +2105,15 @@ public interface SurveyPackage extends EPackage {
 	EAttribute getSurveyQuestion_Question();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getSurveyQuestionCategoryId <em>Survey Question Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getSurveyQuestionCategory <em>Survey Question Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Survey Question Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getSurveyQuestionCategoryId()
+	 * @return the meta object for the reference '<em>Survey Question Category</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getSurveyQuestionCategory()
 	 * @see #getSurveyQuestion()
 	 * @generated
 	 */
-	EReference getSurveyQuestion_SurveyQuestionCategoryId();
+	EReference getSurveyQuestion_SurveyQuestionCategory();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getSurveyQuestionOptions <em>Survey Question Options</em>}'.
@@ -2127,15 +2127,15 @@ public interface SurveyPackage extends EPackage {
 	EReference getSurveyQuestion_SurveyQuestionOptions();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getSurveyQuestionTypeId <em>Survey Question Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getSurveyQuestionType <em>Survey Question Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Survey Question Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getSurveyQuestionTypeId()
+	 * @return the meta object for the reference '<em>Survey Question Type</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getSurveyQuestionType()
 	 * @see #getSurveyQuestion()
 	 * @generated
 	 */
-	EReference getSurveyQuestion_SurveyQuestionTypeId();
+	EReference getSurveyQuestion_SurveyQuestionType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl <em>Question Appl</em>}'.
@@ -2148,26 +2148,26 @@ public interface SurveyPackage extends EPackage {
 	EClass getSurveyQuestionAppl();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSurveyId <em>Survey Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSurvey <em>Survey</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Survey Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSurveyId()
+	 * @return the meta object for the reference '<em>Survey</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSurvey()
 	 * @see #getSurveyQuestionAppl()
 	 * @generated
 	 */
-	EReference getSurveyQuestionAppl_SurveyId();
+	EReference getSurveyQuestionAppl_Survey();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSurveyQuestionId <em>Survey Question Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSurveyQuestion <em>Survey Question</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Survey Question Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSurveyQuestionId()
+	 * @return the meta object for the reference '<em>Survey Question</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSurveyQuestion()
 	 * @see #getSurveyQuestionAppl()
 	 * @generated
 	 */
-	EReference getSurveyQuestionAppl_SurveyQuestionId();
+	EReference getSurveyQuestionAppl_SurveyQuestion();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getFromDate <em>From Date</em>}'.
@@ -2312,15 +2312,15 @@ public interface SurveyPackage extends EPackage {
 	EAttribute getSurveyQuestionCategory_Description();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionCategory#getParentCategoryId <em>Parent Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionCategory#getParentCategory <em>Parent Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyQuestionCategory#getParentCategoryId()
+	 * @return the meta object for the reference '<em>Parent Category</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyQuestionCategory#getParentCategory()
 	 * @see #getSurveyQuestionCategory()
 	 * @generated
 	 */
-	EReference getSurveyQuestionCategory_ParentCategoryId();
+	EReference getSurveyQuestionCategory_ParentCategory();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionOption <em>Question Option</em>}'.
@@ -2333,15 +2333,15 @@ public interface SurveyPackage extends EPackage {
 	EClass getSurveyQuestionOption();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionOption#getSurveyQuestionId <em>Survey Question Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionOption#getSurveyQuestion <em>Survey Question</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Survey Question Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyQuestionOption#getSurveyQuestionId()
+	 * @return the meta object for the reference '<em>Survey Question</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyQuestionOption#getSurveyQuestion()
 	 * @see #getSurveyQuestionOption()
 	 * @generated
 	 */
-	EReference getSurveyQuestionOption_SurveyQuestionId();
+	EReference getSurveyQuestionOption_SurveyQuestion();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionOption#getSurveyOptionSeqId <em>Survey Option Seq Id</em>}'.
@@ -2507,15 +2507,15 @@ public interface SurveyPackage extends EPackage {
 	EAttribute getSurveyResponse_LastModifiedDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponse#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponse#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyResponse#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyResponse#getOrder()
 	 * @see #getSurveyResponse()
 	 * @generated
 	 */
-	EReference getSurveyResponse_OrderId();
+	EReference getSurveyResponse_Order();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponse#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -2529,15 +2529,15 @@ public interface SurveyPackage extends EPackage {
 	EAttribute getSurveyResponse_OrderItemSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponse#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponse#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyResponse#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyResponse#getParty()
 	 * @see #getSurveyResponse()
 	 * @generated
 	 */
-	EReference getSurveyResponse_PartyId();
+	EReference getSurveyResponse_Party();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponse#getReferenceId <em>Reference Id</em>}'.
@@ -2562,26 +2562,26 @@ public interface SurveyPackage extends EPackage {
 	EAttribute getSurveyResponse_ResponseDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponse#getStatusId <em>Status Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponse#getStatus <em>Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyResponse#getStatusId()
+	 * @return the meta object for the reference '<em>Status</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyResponse#getStatus()
 	 * @see #getSurveyResponse()
 	 * @generated
 	 */
-	EReference getSurveyResponse_StatusId();
+	EReference getSurveyResponse_Status();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponse#getSurveyId <em>Survey Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponse#getSurvey <em>Survey</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Survey Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyResponse#getSurveyId()
+	 * @return the meta object for the reference '<em>Survey</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyResponse#getSurvey()
 	 * @see #getSurveyResponse()
 	 * @generated
 	 */
-	EReference getSurveyResponse_SurveyId();
+	EReference getSurveyResponse_Survey();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer <em>Response Answer</em>}'.
@@ -2594,26 +2594,26 @@ public interface SurveyPackage extends EPackage {
 	EClass getSurveyResponseAnswer();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getSurveyResponseId <em>Survey Response Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getSurveyResponse <em>Survey Response</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Survey Response Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getSurveyResponseId()
+	 * @return the meta object for the reference '<em>Survey Response</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getSurveyResponse()
 	 * @see #getSurveyResponseAnswer()
 	 * @generated
 	 */
-	EReference getSurveyResponseAnswer_SurveyResponseId();
+	EReference getSurveyResponseAnswer_SurveyResponse();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getSurveyQuestionId <em>Survey Question Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getSurveyQuestion <em>Survey Question</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Survey Question Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getSurveyQuestionId()
+	 * @return the meta object for the reference '<em>Survey Question</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getSurveyQuestion()
 	 * @see #getSurveyResponseAnswer()
 	 * @generated
 	 */
-	EReference getSurveyResponseAnswer_SurveyQuestionId();
+	EReference getSurveyResponseAnswer_SurveyQuestion();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getSurveyMultiRespColId <em>Survey Multi Resp Col Id</em>}'.
@@ -2671,15 +2671,15 @@ public interface SurveyPackage extends EPackage {
 	EAttribute getSurveyResponseAnswer_BooleanResponse();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getContentId <em>Content Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getContent <em>Content</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Content Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getContentId()
+	 * @return the meta object for the reference '<em>Content</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getContent()
 	 * @see #getSurveyResponseAnswer()
 	 * @generated
 	 */
-	EReference getSurveyResponseAnswer_ContentId();
+	EReference getSurveyResponseAnswer_Content();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getCurrencyResponse <em>Currency Response</em>}'.
@@ -2802,26 +2802,26 @@ public interface SurveyPackage extends EPackage {
 	EClass getSurveyTrigger();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyTrigger#getSurveyId <em>Survey Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyTrigger#getSurvey <em>Survey</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Survey Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyTrigger#getSurveyId()
+	 * @return the meta object for the reference '<em>Survey</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyTrigger#getSurvey()
 	 * @see #getSurveyTrigger()
 	 * @generated
 	 */
-	EReference getSurveyTrigger_SurveyId();
+	EReference getSurveyTrigger_Survey();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyTrigger#getSurveyApplTypeId <em>Survey Appl Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.survey.SurveyTrigger#getSurveyApplType <em>Survey Appl Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Survey Appl Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyTrigger#getSurveyApplTypeId()
+	 * @return the meta object for the reference '<em>Survey Appl Type</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyTrigger#getSurveyApplType()
 	 * @see #getSurveyTrigger()
 	 * @generated
 	 */
-	EReference getSurveyTrigger_SurveyApplTypeId();
+	EReference getSurveyTrigger_SurveyApplType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.survey.SurveyTrigger#getFromDate <em>From Date</em>}'.
@@ -3026,12 +3026,12 @@ public interface SurveyPackage extends EPackage {
 		EClass SURVEY_MULTI_RESP = eINSTANCE.getSurveyMultiResp();
 
 		/**
-		 * The meta object literal for the '<em><b>Survey Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Survey</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SURVEY_MULTI_RESP__SURVEY_ID = eINSTANCE.getSurveyMultiResp_SurveyId();
+		EReference SURVEY_MULTI_RESP__SURVEY = eINSTANCE.getSurveyMultiResp_Survey();
 
 		/**
 		 * The meta object literal for the '<em><b>Survey Multi Resp Id</b></em>' attribute feature.
@@ -3110,12 +3110,12 @@ public interface SurveyPackage extends EPackage {
 		EClass SURVEY_PAGE = eINSTANCE.getSurveyPage();
 
 		/**
-		 * The meta object literal for the '<em><b>Survey Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Survey</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SURVEY_PAGE__SURVEY_ID = eINSTANCE.getSurveyPage_SurveyId();
+		EReference SURVEY_PAGE__SURVEY = eINSTANCE.getSurveyPage_Survey();
 
 		/**
 		 * The meta object literal for the '<em><b>Survey Page Seq Id</b></em>' attribute feature.
@@ -3184,12 +3184,12 @@ public interface SurveyPackage extends EPackage {
 		EAttribute SURVEY_QUESTION__FORMAT_STRING = eINSTANCE.getSurveyQuestion_FormatString();
 
 		/**
-		 * The meta object literal for the '<em><b>Geo Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Geo</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SURVEY_QUESTION__GEO_ID = eINSTANCE.getSurveyQuestion_GeoId();
+		EReference SURVEY_QUESTION__GEO = eINSTANCE.getSurveyQuestion_Geo();
 
 		/**
 		 * The meta object literal for the '<em><b>Hint</b></em>' attribute feature.
@@ -3208,12 +3208,12 @@ public interface SurveyPackage extends EPackage {
 		EAttribute SURVEY_QUESTION__QUESTION = eINSTANCE.getSurveyQuestion_Question();
 
 		/**
-		 * The meta object literal for the '<em><b>Survey Question Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Survey Question Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SURVEY_QUESTION__SURVEY_QUESTION_CATEGORY_ID = eINSTANCE.getSurveyQuestion_SurveyQuestionCategoryId();
+		EReference SURVEY_QUESTION__SURVEY_QUESTION_CATEGORY = eINSTANCE.getSurveyQuestion_SurveyQuestionCategory();
 
 		/**
 		 * The meta object literal for the '<em><b>Survey Question Options</b></em>' reference list feature.
@@ -3224,12 +3224,12 @@ public interface SurveyPackage extends EPackage {
 		EReference SURVEY_QUESTION__SURVEY_QUESTION_OPTIONS = eINSTANCE.getSurveyQuestion_SurveyQuestionOptions();
 
 		/**
-		 * The meta object literal for the '<em><b>Survey Question Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Survey Question Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SURVEY_QUESTION__SURVEY_QUESTION_TYPE_ID = eINSTANCE.getSurveyQuestion_SurveyQuestionTypeId();
+		EReference SURVEY_QUESTION__SURVEY_QUESTION_TYPE = eINSTANCE.getSurveyQuestion_SurveyQuestionType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionApplImpl <em>Question Appl</em>}' class.
@@ -3242,20 +3242,20 @@ public interface SurveyPackage extends EPackage {
 		EClass SURVEY_QUESTION_APPL = eINSTANCE.getSurveyQuestionAppl();
 
 		/**
-		 * The meta object literal for the '<em><b>Survey Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Survey</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SURVEY_QUESTION_APPL__SURVEY_ID = eINSTANCE.getSurveyQuestionAppl_SurveyId();
+		EReference SURVEY_QUESTION_APPL__SURVEY = eINSTANCE.getSurveyQuestionAppl_Survey();
 
 		/**
-		 * The meta object literal for the '<em><b>Survey Question Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Survey Question</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SURVEY_QUESTION_APPL__SURVEY_QUESTION_ID = eINSTANCE.getSurveyQuestionAppl_SurveyQuestionId();
+		EReference SURVEY_QUESTION_APPL__SURVEY_QUESTION = eINSTANCE.getSurveyQuestionAppl_SurveyQuestion();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -3364,12 +3364,12 @@ public interface SurveyPackage extends EPackage {
 		EAttribute SURVEY_QUESTION_CATEGORY__DESCRIPTION = eINSTANCE.getSurveyQuestionCategory_Description();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SURVEY_QUESTION_CATEGORY__PARENT_CATEGORY_ID = eINSTANCE.getSurveyQuestionCategory_ParentCategoryId();
+		EReference SURVEY_QUESTION_CATEGORY__PARENT_CATEGORY = eINSTANCE.getSurveyQuestionCategory_ParentCategory();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionOptionImpl <em>Question Option</em>}' class.
@@ -3382,12 +3382,12 @@ public interface SurveyPackage extends EPackage {
 		EClass SURVEY_QUESTION_OPTION = eINSTANCE.getSurveyQuestionOption();
 
 		/**
-		 * The meta object literal for the '<em><b>Survey Question Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Survey Question</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SURVEY_QUESTION_OPTION__SURVEY_QUESTION_ID = eINSTANCE.getSurveyQuestionOption_SurveyQuestionId();
+		EReference SURVEY_QUESTION_OPTION__SURVEY_QUESTION = eINSTANCE.getSurveyQuestionOption_SurveyQuestion();
 
 		/**
 		 * The meta object literal for the '<em><b>Survey Option Seq Id</b></em>' attribute feature.
@@ -3514,12 +3514,12 @@ public interface SurveyPackage extends EPackage {
 		EAttribute SURVEY_RESPONSE__LAST_MODIFIED_DATE = eINSTANCE.getSurveyResponse_LastModifiedDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SURVEY_RESPONSE__ORDER_ID = eINSTANCE.getSurveyResponse_OrderId();
+		EReference SURVEY_RESPONSE__ORDER = eINSTANCE.getSurveyResponse_Order();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -3530,12 +3530,12 @@ public interface SurveyPackage extends EPackage {
 		EAttribute SURVEY_RESPONSE__ORDER_ITEM_SEQ_ID = eINSTANCE.getSurveyResponse_OrderItemSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SURVEY_RESPONSE__PARTY_ID = eINSTANCE.getSurveyResponse_PartyId();
+		EReference SURVEY_RESPONSE__PARTY = eINSTANCE.getSurveyResponse_Party();
 
 		/**
 		 * The meta object literal for the '<em><b>Reference Id</b></em>' attribute feature.
@@ -3554,20 +3554,20 @@ public interface SurveyPackage extends EPackage {
 		EAttribute SURVEY_RESPONSE__RESPONSE_DATE = eINSTANCE.getSurveyResponse_ResponseDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Status Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Status</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SURVEY_RESPONSE__STATUS_ID = eINSTANCE.getSurveyResponse_StatusId();
+		EReference SURVEY_RESPONSE__STATUS = eINSTANCE.getSurveyResponse_Status();
 
 		/**
-		 * The meta object literal for the '<em><b>Survey Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Survey</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SURVEY_RESPONSE__SURVEY_ID = eINSTANCE.getSurveyResponse_SurveyId();
+		EReference SURVEY_RESPONSE__SURVEY = eINSTANCE.getSurveyResponse_Survey();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl <em>Response Answer</em>}' class.
@@ -3580,20 +3580,20 @@ public interface SurveyPackage extends EPackage {
 		EClass SURVEY_RESPONSE_ANSWER = eINSTANCE.getSurveyResponseAnswer();
 
 		/**
-		 * The meta object literal for the '<em><b>Survey Response Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Survey Response</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SURVEY_RESPONSE_ANSWER__SURVEY_RESPONSE_ID = eINSTANCE.getSurveyResponseAnswer_SurveyResponseId();
+		EReference SURVEY_RESPONSE_ANSWER__SURVEY_RESPONSE = eINSTANCE.getSurveyResponseAnswer_SurveyResponse();
 
 		/**
-		 * The meta object literal for the '<em><b>Survey Question Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Survey Question</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SURVEY_RESPONSE_ANSWER__SURVEY_QUESTION_ID = eINSTANCE.getSurveyResponseAnswer_SurveyQuestionId();
+		EReference SURVEY_RESPONSE_ANSWER__SURVEY_QUESTION = eINSTANCE.getSurveyResponseAnswer_SurveyQuestion();
 
 		/**
 		 * The meta object literal for the '<em><b>Survey Multi Resp Col Id</b></em>' attribute feature.
@@ -3636,12 +3636,12 @@ public interface SurveyPackage extends EPackage {
 		EAttribute SURVEY_RESPONSE_ANSWER__BOOLEAN_RESPONSE = eINSTANCE.getSurveyResponseAnswer_BooleanResponse();
 
 		/**
-		 * The meta object literal for the '<em><b>Content Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Content</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SURVEY_RESPONSE_ANSWER__CONTENT_ID = eINSTANCE.getSurveyResponseAnswer_ContentId();
+		EReference SURVEY_RESPONSE_ANSWER__CONTENT = eINSTANCE.getSurveyResponseAnswer_Content();
 
 		/**
 		 * The meta object literal for the '<em><b>Currency Response</b></em>' attribute feature.
@@ -3734,20 +3734,20 @@ public interface SurveyPackage extends EPackage {
 		EClass SURVEY_TRIGGER = eINSTANCE.getSurveyTrigger();
 
 		/**
-		 * The meta object literal for the '<em><b>Survey Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Survey</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SURVEY_TRIGGER__SURVEY_ID = eINSTANCE.getSurveyTrigger_SurveyId();
+		EReference SURVEY_TRIGGER__SURVEY = eINSTANCE.getSurveyTrigger_Survey();
 
 		/**
-		 * The meta object literal for the '<em><b>Survey Appl Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Survey Appl Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SURVEY_TRIGGER__SURVEY_APPL_TYPE_ID = eINSTANCE.getSurveyTrigger_SurveyApplTypeId();
+		EReference SURVEY_TRIGGER__SURVEY_APPL_TYPE = eINSTANCE.getSurveyTrigger_SurveyApplType();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.

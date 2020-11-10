@@ -32,17 +32,17 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getAmount <em>Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getEntryDate <em>Entry Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getFinAccountId <em>Fin Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getFinAccount <em>Fin Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getFinAccountTransAttributes <em>Fin Account Trans Attributes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getFinAccountTransTypeId <em>Fin Account Trans Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getGlReconciliationId <em>Gl Reconciliation Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getFinAccountTransType <em>Fin Account Trans Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getGlReconciliation <em>Gl Reconciliation</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getOrderId <em>Order Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getPaymentId <em>Payment Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getPerformedByPartyId <em>Performed By Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getReasonEnumId <em>Reason Enum Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getPayment <em>Payment</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getPerformedByParty <em>Performed By Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getReasonEnum <em>Reason Enum</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getTransactionDate <em>Transaction Date</em>}</li>
  * </ul>
  *
@@ -130,30 +130,26 @@ public interface FinAccountTrans extends EntityTyped<FinAccountTransType>, Entit
 	void setEntryDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Gl Reconciliation Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Fin Account</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gl Reconciliation Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Reconciliation Id</em>' reference.
-	 * @see #setGlReconciliationId(GlReconciliation)
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_GlReconciliationId()
-	 * @model keys="glReconciliationId"
+	 * @return the value of the '<em>Fin Account</em>' reference.
+	 * @see #setFinAccount(FinAccount)
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_FinAccount()
+	 * @model keys="finAccountId"
 	 * @generated
 	 */
-	GlReconciliation getGlReconciliationId();
+	FinAccount getFinAccount();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getGlReconciliationId <em>Gl Reconciliation Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getFinAccount <em>Fin Account</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Gl Reconciliation Id</em>' reference.
-	 * @see #getGlReconciliationId()
+	 * @param value the new value of the '<em>Fin Account</em>' reference.
+	 * @see #getFinAccount()
 	 * @generated
 	 */
-	void setGlReconciliationId(GlReconciliation value);
+	void setFinAccount(FinAccount value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Id</b></em>' attribute.
@@ -209,134 +205,114 @@ public interface FinAccountTrans extends EntityTyped<FinAccountTransType>, Entit
 	void setOrderItemSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_PartyId()
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_Party()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getPartyId();
+	Party getParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getParty <em>Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setParty(Party value);
 
 	/**
-	 * Returns the value of the '<em><b>Payment Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Payment</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Payment Id</em>' reference.
-	 * @see #setPaymentId(Payment)
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_PaymentId()
+	 * @return the value of the '<em>Payment</em>' reference.
+	 * @see #setPayment(Payment)
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_Payment()
 	 * @model keys="paymentId"
 	 * @generated
 	 */
-	Payment getPaymentId();
+	Payment getPayment();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getPaymentId <em>Payment Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getPayment <em>Payment</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Payment Id</em>' reference.
-	 * @see #getPaymentId()
+	 * @param value the new value of the '<em>Payment</em>' reference.
+	 * @see #getPayment()
 	 * @generated
 	 */
-	void setPaymentId(Payment value);
+	void setPayment(Payment value);
 
 	/**
-	 * Returns the value of the '<em><b>Performed By Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Performed By Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Performed By Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Performed By Party Id</em>' reference.
-	 * @see #setPerformedByPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_PerformedByPartyId()
+	 * @return the value of the '<em>Performed By Party</em>' reference.
+	 * @see #setPerformedByParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_PerformedByParty()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getPerformedByPartyId();
+	Party getPerformedByParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getPerformedByPartyId <em>Performed By Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getPerformedByParty <em>Performed By Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Performed By Party Id</em>' reference.
-	 * @see #getPerformedByPartyId()
+	 * @param value the new value of the '<em>Performed By Party</em>' reference.
+	 * @see #getPerformedByParty()
 	 * @generated
 	 */
-	void setPerformedByPartyId(Party value);
+	void setPerformedByParty(Party value);
 
 	/**
-	 * Returns the value of the '<em><b>Reason Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Reason Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Reason Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Reason Enum Id</em>' reference.
-	 * @see #setReasonEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_ReasonEnumId()
+	 * @return the value of the '<em>Reason Enum</em>' reference.
+	 * @see #setReasonEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_ReasonEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getReasonEnumId();
+	Enumeration getReasonEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getReasonEnumId <em>Reason Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getReasonEnum <em>Reason Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Reason Enum Id</em>' reference.
-	 * @see #getReasonEnumId()
+	 * @param value the new value of the '<em>Reason Enum</em>' reference.
+	 * @see #getReasonEnum()
 	 * @generated
 	 */
-	void setReasonEnumId(Enumeration value);
+	void setReasonEnum(Enumeration value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_StatusId()
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_Status()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getStatusId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getStatusId <em>Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setStatusId(StatusItem value);
+	void setStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Transaction Date</b></em>' attribute.
@@ -365,58 +341,6 @@ public interface FinAccountTrans extends EntityTyped<FinAccountTransType>, Entit
 	void setTransactionDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Fin Account Trans Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fin Account Trans Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fin Account Trans Type Id</em>' reference.
-	 * @see #setFinAccountTransTypeId(FinAccountTransType)
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_FinAccountTransTypeId()
-	 * @model keys="finAccountTransTypeId"
-	 * @generated
-	 */
-	FinAccountTransType getFinAccountTransTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getFinAccountTransTypeId <em>Fin Account Trans Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fin Account Trans Type Id</em>' reference.
-	 * @see #getFinAccountTransTypeId()
-	 * @generated
-	 */
-	void setFinAccountTransTypeId(FinAccountTransType value);
-
-	/**
-	 * Returns the value of the '<em><b>Fin Account Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fin Account Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fin Account Id</em>' reference.
-	 * @see #setFinAccountId(FinAccount)
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_FinAccountId()
-	 * @model keys="finAccountId"
-	 * @generated
-	 */
-	FinAccount getFinAccountId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getFinAccountId <em>Fin Account Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fin Account Id</em>' reference.
-	 * @see #getFinAccountId()
-	 * @generated
-	 */
-	void setFinAccountId(FinAccount value);
-
-	/**
 	 * Returns the value of the '<em><b>Fin Account Trans Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTransAttribute}.
 	 * <!-- begin-user-doc -->
@@ -431,6 +355,50 @@ public interface FinAccountTrans extends EntityTyped<FinAccountTransType>, Entit
 	 * @generated
 	 */
 	List<FinAccountTransAttribute> getFinAccountTransAttributes();
+
+	/**
+	 * Returns the value of the '<em><b>Fin Account Trans Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fin Account Trans Type</em>' reference.
+	 * @see #setFinAccountTransType(FinAccountTransType)
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_FinAccountTransType()
+	 * @model keys="finAccountTransTypeId"
+	 * @generated
+	 */
+	FinAccountTransType getFinAccountTransType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getFinAccountTransType <em>Fin Account Trans Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Fin Account Trans Type</em>' reference.
+	 * @see #getFinAccountTransType()
+	 * @generated
+	 */
+	void setFinAccountTransType(FinAccountTransType value);
+
+	/**
+	 * Returns the value of the '<em><b>Gl Reconciliation</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Gl Reconciliation</em>' reference.
+	 * @see #setGlReconciliation(GlReconciliation)
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_GlReconciliation()
+	 * @model keys="glReconciliationId"
+	 * @generated
+	 */
+	GlReconciliation getGlReconciliation();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans#getGlReconciliation <em>Gl Reconciliation</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Gl Reconciliation</em>' reference.
+	 * @see #getGlReconciliation()
+	 * @generated
+	 */
+	void setGlReconciliation(GlReconciliation value);
 
 	/**
 	 * Returns the value of the '<em><b>Fin Account Trans Id</b></em>' attribute.

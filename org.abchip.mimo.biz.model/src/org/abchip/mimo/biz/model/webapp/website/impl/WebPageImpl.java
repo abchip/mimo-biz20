@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebPageImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebPageImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebPageImpl#getWebPageId <em>Web Page Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebPageImpl#getContentId <em>Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebPageImpl#getContent <em>Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebPageImpl#getPageName <em>Page Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebPageImpl#getWebSiteId <em>Web Site Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebPageImpl#getWebSite <em>Web Site</em>}</li>
  * </ul>
  *
  * @generated
@@ -174,8 +174,8 @@ public class WebPageImpl extends EntityIdentifiableImpl implements WebPage {
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(WebsitePackage.Literals.WEB_PAGE__CONTENT_ID, true);
+	public Content getContent() {
+		return (Content)eGet(WebsitePackage.Literals.WEB_PAGE__CONTENT, true);
 	}
 
 	/**
@@ -184,8 +184,8 @@ public class WebPageImpl extends EntityIdentifiableImpl implements WebPage {
 	 * @generated
 	 */
 	@Override
-	public void setContentId(Content newContentId) {
-		eSet(WebsitePackage.Literals.WEB_PAGE__CONTENT_ID, newContentId);
+	public void setContent(Content newContent) {
+		eSet(WebsitePackage.Literals.WEB_PAGE__CONTENT, newContent);
 	}
 
 	/**
@@ -214,8 +214,8 @@ public class WebPageImpl extends EntityIdentifiableImpl implements WebPage {
 	 * @generated
 	 */
 	@Override
-	public WebSite getWebSiteId() {
-		return (WebSite)eGet(WebsitePackage.Literals.WEB_PAGE__WEB_SITE_ID, true);
+	public WebSite getWebSite() {
+		return (WebSite)eGet(WebsitePackage.Literals.WEB_PAGE__WEB_SITE, true);
 	}
 
 	/**
@@ -224,8 +224,8 @@ public class WebPageImpl extends EntityIdentifiableImpl implements WebPage {
 	 * @generated
 	 */
 	@Override
-	public void setWebSiteId(WebSite newWebSiteId) {
-		eSet(WebsitePackage.Literals.WEB_PAGE__WEB_SITE_ID, newWebSiteId);
+	public void setWebSite(WebSite newWebSite) {
+		eSet(WebsitePackage.Literals.WEB_PAGE__WEB_SITE, newWebSite);
 	}
 
 	/**

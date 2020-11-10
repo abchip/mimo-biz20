@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncInclude#getEntitySyncId <em>Entity Sync Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncInclude#getEntitySync <em>Entity Sync</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncInclude#getEntityOrPackage <em>Entity Or Package</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncInclude#getApplEnumId <em>Appl Enum Id</em>}</li>
  * </ul>
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface EntitySyncInclude extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Entity Sync</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Entity Sync</em>' reference.
+	 * @see #setEntitySync(EntitySync)
+	 * @see org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage#getEntitySyncInclude_EntitySync()
+	 * @model keys="entitySyncId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	EntitySync getEntitySync();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncInclude#getEntitySync <em>Entity Sync</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Entity Sync</em>' reference.
+	 * @see #getEntitySync()
+	 * @generated
+	 */
+	void setEntitySync(EntitySync value);
+
 	/**
 	 * Returns the value of the '<em><b>Appl Enum Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,32 +105,5 @@ public interface EntitySyncInclude extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setEntityOrPackage(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Entity Sync Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Entity Sync Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Entity Sync Id</em>' reference.
-	 * @see #setEntitySyncId(EntitySync)
-	 * @see org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage#getEntitySyncInclude_EntitySyncId()
-	 * @model keys="entitySyncId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	EntitySync getEntitySyncId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncInclude#getEntitySyncId <em>Entity Sync Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Entity Sync Id</em>' reference.
-	 * @see #getEntitySyncId()
-	 * @generated
-	 */
-	void setEntitySyncId(EntitySync value);
 
 } // EntitySyncInclude

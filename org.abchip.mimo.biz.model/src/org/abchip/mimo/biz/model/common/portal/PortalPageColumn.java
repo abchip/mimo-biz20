@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.common.portal.PortalPageColumn#getPortalPageId <em>Portal Page Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.portal.PortalPageColumn#getPortalPage <em>Portal Page</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.PortalPageColumn#getColumnSeqId <em>Column Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.PortalPageColumn#getColumnWidthPercentage <em>Column Width Percentage</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.PortalPageColumn#getColumnWidthPixels <em>Column Width Pixels</em>}</li>
@@ -30,6 +30,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface PortalPageColumn extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Portal Page</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Portal Page</em>' reference.
+	 * @see #setPortalPage(PortalPage)
+	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortalPageColumn_PortalPage()
+	 * @model keys="portalPageId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	PortalPage getPortalPage();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.portal.PortalPageColumn#getPortalPage <em>Portal Page</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Portal Page</em>' reference.
+	 * @see #getPortalPage()
+	 * @generated
+	 */
+	void setPortalPage(PortalPage value);
+
 	/**
 	 * Returns the value of the '<em><b>Column Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -109,32 +132,5 @@ public interface PortalPageColumn extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setColumnWidthPixels(long value);
-
-	/**
-	 * Returns the value of the '<em><b>Portal Page Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Portal Page Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Portal Page Id</em>' reference.
-	 * @see #setPortalPageId(PortalPage)
-	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortalPageColumn_PortalPageId()
-	 * @model keys="portalPageId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	PortalPage getPortalPageId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.portal.PortalPageColumn#getPortalPageId <em>Portal Page Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Portal Page Id</em>' reference.
-	 * @see #getPortalPageId()
-	 * @generated
-	 */
-	void setPortalPageId(PortalPage value);
 
 } // PortalPageColumn

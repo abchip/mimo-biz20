@@ -31,13 +31,13 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getCommunicationEventId <em>Communication Event Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getBccString <em>Bcc String</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getCcString <em>Cc String</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getCommunicationEventTypeId <em>Communication Event Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getContactListId <em>Contact List Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getCommunicationEventType <em>Communication Event Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getContactList <em>Contact List</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getContactMechIdFrom <em>Contact Mech Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getContactMechIdTo <em>Contact Mech Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getContactMechTypeId <em>Contact Mech Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getContactMechType <em>Contact Mech Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getContent <em>Content</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getContentMimeTypeId <em>Content Mime Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getContentMimeType <em>Content Mime Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getDatetimeEnded <em>Datetime Ended</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getDatetimeStarted <em>Datetime Started</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getEntryDate <em>Entry Date</em>}</li>
@@ -49,10 +49,10 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getParentCommEventId <em>Parent Comm Event Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getPartyIdFrom <em>Party Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getPartyIdTo <em>Party Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getReasonEnumId <em>Reason Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getReasonEnum <em>Reason Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getRoleTypeIdFrom <em>Role Type Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getRoleTypeIdTo <em>Role Type Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getSubject <em>Subject</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getToString <em>To String</em>}</li>
  * </ul>
@@ -115,30 +115,48 @@ public interface CommunicationEvent extends EntityTyped<CommunicationEventType>,
 	void setCcString(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Contact List Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Communication Event Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact List Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact List Id</em>' reference.
-	 * @see #setContactListId(ContactList)
-	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_ContactListId()
+	 * @return the value of the '<em>Communication Event Type</em>' reference.
+	 * @see #setCommunicationEventType(CommunicationEventType)
+	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_CommunicationEventType()
+	 * @model keys="communicationEventTypeId"
+	 * @generated
+	 */
+	CommunicationEventType getCommunicationEventType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getCommunicationEventType <em>Communication Event Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Communication Event Type</em>' reference.
+	 * @see #getCommunicationEventType()
+	 * @generated
+	 */
+	void setCommunicationEventType(CommunicationEventType value);
+
+	/**
+	 * Returns the value of the '<em><b>Contact List</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Contact List</em>' reference.
+	 * @see #setContactList(ContactList)
+	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_ContactList()
 	 * @model keys="contactListId"
 	 * @generated
 	 */
-	ContactList getContactListId();
+	ContactList getContactList();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getContactListId <em>Contact List Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getContactList <em>Contact List</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact List Id</em>' reference.
-	 * @see #getContactListId()
+	 * @param value the new value of the '<em>Contact List</em>' reference.
+	 * @see #getContactList()
 	 * @generated
 	 */
-	void setContactListId(ContactList value);
+	void setContactList(ContactList value);
 
 	/**
 	 * Returns the value of the '<em><b>Contact Mech Id From</b></em>' reference.
@@ -193,30 +211,26 @@ public interface CommunicationEvent extends EntityTyped<CommunicationEventType>,
 	void setContactMechIdTo(ContactMech value);
 
 	/**
-	 * Returns the value of the '<em><b>Contact Mech Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Contact Mech Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Mech Type Id</em>' reference.
-	 * @see #setContactMechTypeId(ContactMechType)
-	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_ContactMechTypeId()
+	 * @return the value of the '<em>Contact Mech Type</em>' reference.
+	 * @see #setContactMechType(ContactMechType)
+	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_ContactMechType()
 	 * @model keys="contactMechTypeId"
 	 * @generated
 	 */
-	ContactMechType getContactMechTypeId();
+	ContactMechType getContactMechType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getContactMechTypeId <em>Contact Mech Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getContactMechType <em>Contact Mech Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Mech Type Id</em>' reference.
-	 * @see #getContactMechTypeId()
+	 * @param value the new value of the '<em>Contact Mech Type</em>' reference.
+	 * @see #getContactMechType()
 	 * @generated
 	 */
-	void setContactMechTypeId(ContactMechType value);
+	void setContactMechType(ContactMechType value);
 
 	/**
 	 * Returns the value of the '<em><b>Content</b></em>' attribute.
@@ -245,30 +259,26 @@ public interface CommunicationEvent extends EntityTyped<CommunicationEventType>,
 	void setContent(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Content Mime Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Content Mime Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Mime Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Mime Type Id</em>' reference.
-	 * @see #setContentMimeTypeId(MimeType)
-	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_ContentMimeTypeId()
+	 * @return the value of the '<em>Content Mime Type</em>' reference.
+	 * @see #setContentMimeType(MimeType)
+	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_ContentMimeType()
 	 * @model keys="mimeTypeId"
 	 * @generated
 	 */
-	MimeType getContentMimeTypeId();
+	MimeType getContentMimeType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getContentMimeTypeId <em>Content Mime Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getContentMimeType <em>Content Mime Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Mime Type Id</em>' reference.
-	 * @see #getContentMimeTypeId()
+	 * @param value the new value of the '<em>Content Mime Type</em>' reference.
+	 * @see #getContentMimeType()
 	 * @generated
 	 */
-	void setContentMimeTypeId(MimeType value);
+	void setContentMimeType(MimeType value);
 
 	/**
 	 * Returns the value of the '<em><b>Datetime Ended</b></em>' attribute.
@@ -557,30 +567,26 @@ public interface CommunicationEvent extends EntityTyped<CommunicationEventType>,
 	void setPartyIdTo(Party value);
 
 	/**
-	 * Returns the value of the '<em><b>Reason Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Reason Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Reason Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Reason Enum Id</em>' reference.
-	 * @see #setReasonEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_ReasonEnumId()
+	 * @return the value of the '<em>Reason Enum</em>' reference.
+	 * @see #setReasonEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_ReasonEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getReasonEnumId();
+	Enumeration getReasonEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getReasonEnumId <em>Reason Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getReasonEnum <em>Reason Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Reason Enum Id</em>' reference.
-	 * @see #getReasonEnumId()
+	 * @param value the new value of the '<em>Reason Enum</em>' reference.
+	 * @see #getReasonEnum()
 	 * @generated
 	 */
-	void setReasonEnumId(Enumeration value);
+	void setReasonEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Role Type Id From</b></em>' reference.
@@ -635,30 +641,26 @@ public interface CommunicationEvent extends EntityTyped<CommunicationEventType>,
 	void setRoleTypeIdTo(RoleType value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_StatusId()
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_Status()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getStatusId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getStatusId <em>Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setStatusId(StatusItem value);
+	void setStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Subject</b></em>' attribute.
@@ -711,32 +713,6 @@ public interface CommunicationEvent extends EntityTyped<CommunicationEventType>,
 	 * @generated
 	 */
 	void setToString(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Communication Event Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Communication Event Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Communication Event Type Id</em>' reference.
-	 * @see #setCommunicationEventTypeId(CommunicationEventType)
-	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_CommunicationEventTypeId()
-	 * @model keys="communicationEventTypeId"
-	 * @generated
-	 */
-	CommunicationEventType getCommunicationEventTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEvent#getCommunicationEventTypeId <em>Communication Event Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Communication Event Type Id</em>' reference.
-	 * @see #getCommunicationEventTypeId()
-	 * @generated
-	 */
-	void setCommunicationEventTypeId(CommunicationEventType value);
 
 	/**
 	 * Returns the value of the '<em><b>Communication Event Id</b></em>' attribute.

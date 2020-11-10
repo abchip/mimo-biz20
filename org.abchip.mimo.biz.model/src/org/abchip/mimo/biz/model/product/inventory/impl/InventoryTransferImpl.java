@@ -33,17 +33,17 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryTransferImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryTransferImpl#getInventoryTransferId <em>Inventory Transfer Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryTransferImpl#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryTransferImpl#getContainerId <em>Container Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryTransferImpl#getContainer <em>Container</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryTransferImpl#getContainerIdTo <em>Container Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryTransferImpl#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryTransferImpl#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryTransferImpl#getFacilityIdTo <em>Facility Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryTransferImpl#getInventoryItemId <em>Inventory Item Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryTransferImpl#getItemIssuanceId <em>Item Issuance Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryTransferImpl#getInventoryItem <em>Inventory Item</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryTransferImpl#getItemIssuance <em>Item Issuance</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryTransferImpl#getLocationSeqId <em>Location Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryTransferImpl#getLocationSeqIdTo <em>Location Seq Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryTransferImpl#getReceiveDate <em>Receive Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryTransferImpl#getSendDate <em>Send Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryTransferImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryTransferImpl#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @generated
@@ -185,6 +185,26 @@ public class InventoryTransferImpl extends EntityIdentifiableImpl implements Inv
 	 * @generated
 	 */
 	@Override
+	public org.abchip.mimo.biz.model.product.facility.Container getContainer() {
+		return (org.abchip.mimo.biz.model.product.facility.Container)eGet(InventoryPackage.Literals.INVENTORY_TRANSFER__CONTAINER, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContainer(org.abchip.mimo.biz.model.product.facility.Container newContainer) {
+		eSet(InventoryPackage.Literals.INVENTORY_TRANSFER__CONTAINER, newContainer);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getInventoryTransferId() {
 		return (String)eGet(InventoryPackage.Literals.INVENTORY_TRANSFER__INVENTORY_TRANSFER_ID, true);
 	}
@@ -197,26 +217,6 @@ public class InventoryTransferImpl extends EntityIdentifiableImpl implements Inv
 	@Override
 	public void setInventoryTransferId(String newInventoryTransferId) {
 		eSet(InventoryPackage.Literals.INVENTORY_TRANSFER__INVENTORY_TRANSFER_ID, newInventoryTransferId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ItemIssuance getItemIssuanceId() {
-		return (ItemIssuance)eGet(InventoryPackage.Literals.INVENTORY_TRANSFER__ITEM_ISSUANCE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setItemIssuanceId(ItemIssuance newItemIssuanceId) {
-		eSet(InventoryPackage.Literals.INVENTORY_TRANSFER__ITEM_ISSUANCE_ID, newItemIssuanceId);
 	}
 
 	/**
@@ -305,8 +305,8 @@ public class InventoryTransferImpl extends EntityIdentifiableImpl implements Inv
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(InventoryPackage.Literals.INVENTORY_TRANSFER__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(InventoryPackage.Literals.INVENTORY_TRANSFER__STATUS, true);
 	}
 
 	/**
@@ -315,8 +315,8 @@ public class InventoryTransferImpl extends EntityIdentifiableImpl implements Inv
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(InventoryPackage.Literals.INVENTORY_TRANSFER__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(InventoryPackage.Literals.INVENTORY_TRANSFER__STATUS, newStatus);
 	}
 
 	/**
@@ -363,66 +363,6 @@ public class InventoryTransferImpl extends EntityIdentifiableImpl implements Inv
 	 * @generated
 	 */
 	@Override
-	public InventoryItem getInventoryItemId() {
-		return (InventoryItem)eGet(InventoryPackage.Literals.INVENTORY_TRANSFER__INVENTORY_ITEM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInventoryItemId(InventoryItem newInventoryItemId) {
-		eSet(InventoryPackage.Literals.INVENTORY_TRANSFER__INVENTORY_ITEM_ID, newInventoryItemId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(InventoryPackage.Literals.INVENTORY_TRANSFER__FACILITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(InventoryPackage.Literals.INVENTORY_TRANSFER__FACILITY_ID, newFacilityId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public org.abchip.mimo.biz.model.product.facility.Container getContainerId() {
-		return (org.abchip.mimo.biz.model.product.facility.Container)eGet(InventoryPackage.Literals.INVENTORY_TRANSFER__CONTAINER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContainerId(org.abchip.mimo.biz.model.product.facility.Container newContainerId) {
-		eSet(InventoryPackage.Literals.INVENTORY_TRANSFER__CONTAINER_ID, newContainerId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Facility getFacilityIdTo() {
 		return (Facility)eGet(InventoryPackage.Literals.INVENTORY_TRANSFER__FACILITY_ID_TO, true);
 	}
@@ -443,6 +383,46 @@ public class InventoryTransferImpl extends EntityIdentifiableImpl implements Inv
 	 * @generated
 	 */
 	@Override
+	public InventoryItem getInventoryItem() {
+		return (InventoryItem)eGet(InventoryPackage.Literals.INVENTORY_TRANSFER__INVENTORY_ITEM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInventoryItem(InventoryItem newInventoryItem) {
+		eSet(InventoryPackage.Literals.INVENTORY_TRANSFER__INVENTORY_ITEM, newInventoryItem);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ItemIssuance getItemIssuance() {
+		return (ItemIssuance)eGet(InventoryPackage.Literals.INVENTORY_TRANSFER__ITEM_ISSUANCE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setItemIssuance(ItemIssuance newItemIssuance) {
+		eSet(InventoryPackage.Literals.INVENTORY_TRANSFER__ITEM_ISSUANCE, newItemIssuance);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public org.abchip.mimo.biz.model.product.facility.Container getContainerIdTo() {
 		return (org.abchip.mimo.biz.model.product.facility.Container)eGet(InventoryPackage.Literals.INVENTORY_TRANSFER__CONTAINER_ID_TO, true);
 	}
@@ -455,6 +435,26 @@ public class InventoryTransferImpl extends EntityIdentifiableImpl implements Inv
 	@Override
 	public void setContainerIdTo(org.abchip.mimo.biz.model.product.facility.Container newContainerIdTo) {
 		eSet(InventoryPackage.Literals.INVENTORY_TRANSFER__CONTAINER_ID_TO, newContainerIdTo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Facility getFacility() {
+		return (Facility)eGet(InventoryPackage.Literals.INVENTORY_TRANSFER__FACILITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacility(Facility newFacility) {
+		eSet(InventoryPackage.Literals.INVENTORY_TRANSFER__FACILITY, newFacility);
 	}
 
 } //InventoryTransferImpl

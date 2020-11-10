@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeAttrImpl#getOrderAdjustmentTypeId <em>Order Adjustment Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeAttrImpl#getOrderAdjustmentType <em>Order Adjustment Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -152,6 +152,26 @@ public class OrderAdjustmentTypeAttrImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
+	public OrderAdjustmentType getOrderAdjustmentType() {
+		return (OrderAdjustmentType)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT_TYPE_ATTR__ORDER_ADJUSTMENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrderAdjustmentType(OrderAdjustmentType newOrderAdjustmentType) {
+		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT_TYPE_ATTR__ORDER_ADJUSTMENT_TYPE, newOrderAdjustmentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrName() {
 		return (String)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT_TYPE_ATTR__ATTR_NAME, true);
 	}
@@ -222,26 +242,6 @@ public class OrderAdjustmentTypeAttrImpl extends EntityIdentifiableImpl implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderAdjustmentType getOrderAdjustmentTypeId() {
-		return (OrderAdjustmentType)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT_TYPE_ATTR__ORDER_ADJUSTMENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderAdjustmentTypeId(OrderAdjustmentType newOrderAdjustmentTypeId) {
-		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT_TYPE_ATTR__ORDER_ADJUSTMENT_TYPE_ID, newOrderAdjustmentTypeId);
 	}
 
 } //OrderAdjustmentTypeAttrImpl

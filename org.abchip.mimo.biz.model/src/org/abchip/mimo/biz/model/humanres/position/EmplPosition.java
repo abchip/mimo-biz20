@@ -30,15 +30,15 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getBudgetItemSeqId <em>Budget Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getEmplPositionFulfillments <em>Empl Position Fulfillments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getEmplPositionResponsibilities <em>Empl Position Responsibilities</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getEmplPositionTypeId <em>Empl Position Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getEmplPositionType <em>Empl Position Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getEstimatedFromDate <em>Estimated From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getEstimatedThruDate <em>Estimated Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#isExemptFlag <em>Exempt Flag</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#isFulltimeFlag <em>Fulltime Flag</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getReportingToEmplPositionReportingStructs <em>Reporting To Empl Position Reporting Structs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#isSalaryFlag <em>Salary Flag</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#isTemporaryFlag <em>Temporary Flag</em>}</li>
  * </ul>
  *
@@ -178,6 +178,28 @@ public interface EmplPosition extends EntityTyped<EmplPositionType>, EntityInfo 
 	List<EmplPositionResponsibility> getEmplPositionResponsibilities();
 
 	/**
+	 * Returns the value of the '<em><b>Empl Position Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Empl Position Type</em>' reference.
+	 * @see #setEmplPositionType(EmplPositionType)
+	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPosition_EmplPositionType()
+	 * @model keys="emplPositionTypeId"
+	 * @generated
+	 */
+	EmplPositionType getEmplPositionType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getEmplPositionType <em>Empl Position Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Empl Position Type</em>' reference.
+	 * @see #getEmplPositionType()
+	 * @generated
+	 */
+	void setEmplPositionType(EmplPositionType value);
+
+	/**
 	 * Returns the value of the '<em><b>Empl Position Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -203,32 +225,6 @@ public interface EmplPosition extends EntityTyped<EmplPositionType>, EntityInfo 
 	 * @generated
 	 */
 	void setEmplPositionId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Empl Position Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Empl Position Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Empl Position Type Id</em>' reference.
-	 * @see #setEmplPositionTypeId(EmplPositionType)
-	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPosition_EmplPositionTypeId()
-	 * @model keys="emplPositionTypeId"
-	 * @generated
-	 */
-	EmplPositionType getEmplPositionTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getEmplPositionTypeId <em>Empl Position Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Empl Position Type Id</em>' reference.
-	 * @see #getEmplPositionTypeId()
-	 * @generated
-	 */
-	void setEmplPositionTypeId(EmplPositionType value);
 
 	/**
 	 * Returns the value of the '<em><b>Estimated From Date</b></em>' attribute.
@@ -335,30 +331,26 @@ public interface EmplPosition extends EntityTyped<EmplPositionType>, EntityInfo 
 	void setFulltimeFlag(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPosition_PartyId()
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPosition_Party()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getPartyId();
+	Party getParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getParty <em>Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setParty(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Reporting To Empl Position Reporting Structs</b></em>' reference list.
@@ -400,30 +392,26 @@ public interface EmplPosition extends EntityTyped<EmplPositionType>, EntityInfo 
 	void setSalaryFlag(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPosition_StatusId()
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPosition_Status()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getStatusId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getStatusId <em>Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setStatusId(StatusItem value);
+	void setStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Temporary Flag</b></em>' attribute.

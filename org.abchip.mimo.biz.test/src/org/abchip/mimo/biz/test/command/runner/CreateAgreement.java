@@ -85,7 +85,7 @@ public class CreateAgreement implements Callable<Long> {
 
 		agreement.setRoleTypeIdFrom(roleTypeFrom);
 		agreement.setRoleTypeIdTo(roleTypeTo);
-		agreement.setAgreementTypeId(agreementType);
+		agreement.setAgreementType(agreementType);
 		agreement.setAgreementDate(new Date());
 		agreement.setFromDate(new Date());
 		agreement.setDescription("Open new agreement for customer " + party.getID());
@@ -102,9 +102,9 @@ public class CreateAgreement implements Callable<Long> {
 		// AgreementProductAppl
 		ResourceWriter<AgreementProductAppl> agreementProductApplWriter = context.getResourceManager().getResourceWriter(AgreementProductAppl.class);
 		AgreementProductAppl agreementProductAppl = agreementProductApplWriter.make();
-		agreementProductAppl.setAgreementId(agreement);
+		agreementProductAppl.setAgreement(agreement);
 		agreementProductAppl.setAgreementItemSeqId(itemSeqId);
-		agreementProductAppl.setProductId(product);
+		agreementProductAppl.setProduct(product);
 
 		// price calculation
 		CalculateProductPrice calculateProductPrice = serviceManager.prepare(CalculateProductPrice.class);
@@ -133,8 +133,8 @@ public class CreateAgreement implements Callable<Long> {
 		ResourceWriter<AgreementItem> agreementItemWriter = context.getResourceManager().getResourceWriter(AgreementItem.class);
 
 		AgreementItem agreementItem = agreementItemWriter.make();
-		agreementItem.setAgreementId(agreement);
-		agreementItem.setAgreementItemTypeId(agreementType);
+		agreementItem.setAgreement(agreement);
+		agreementItem.setAgreementItemType(agreementType);
 		agreementItem.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 		agreementItem.setAgreementText("Agrement test opened in trial mode");
 		agreementItemWriter.create(agreementItem);
@@ -142,10 +142,10 @@ public class CreateAgreement implements Callable<Long> {
 		ResourceWriter<AgreementTerm> agreementTermWriter = context.getResourceManager().getResourceWriter(AgreementTerm.class);
 		AgreementTerm agreementTerm = agreementTermWriter.make();
 
-		agreementTerm.setTermTypeId(termType);
-		agreementTerm.setAgreementId(agreement);
+		agreementTerm.setTermType(termType);
+		agreementTerm.setAgreement(agreement);
 		agreementTerm.setAgreementItemSeqId(agreementItem.getAgreementItemSeqId());
-		agreementTerm.setInvoiceItemTypeId(invoiceItemType);
+		agreementTerm.setInvoiceItemType(invoiceItemType);
 		Date date1 = new Date();
 
 		Calendar cal = Calendar.getInstance();

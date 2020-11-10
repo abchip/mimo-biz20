@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionResponsibilityImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionResponsibilityImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionResponsibilityImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionResponsibilityImpl#getEmplPositionId <em>Empl Position Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionResponsibilityImpl#getResponsibilityTypeId <em>Responsibility Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionResponsibilityImpl#getEmplPosition <em>Empl Position</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionResponsibilityImpl#getResponsibilityType <em>Responsibility Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionResponsibilityImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionResponsibilityImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionResponsibilityImpl#getThruDate <em>Thru Date</em>}</li>
@@ -155,6 +155,46 @@ public class EmplPositionResponsibilityImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
+	public EmplPosition getEmplPosition() {
+		return (EmplPosition)eGet(PositionPackage.Literals.EMPL_POSITION_RESPONSIBILITY__EMPL_POSITION, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEmplPosition(EmplPosition newEmplPosition) {
+		eSet(PositionPackage.Literals.EMPL_POSITION_RESPONSIBILITY__EMPL_POSITION, newEmplPosition);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ResponsibilityType getResponsibilityType() {
+		return (ResponsibilityType)eGet(PositionPackage.Literals.EMPL_POSITION_RESPONSIBILITY__RESPONSIBILITY_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setResponsibilityType(ResponsibilityType newResponsibilityType) {
+		eSet(PositionPackage.Literals.EMPL_POSITION_RESPONSIBILITY__RESPONSIBILITY_TYPE, newResponsibilityType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getComments() {
 		return (String)eGet(PositionPackage.Literals.EMPL_POSITION_RESPONSIBILITY__COMMENTS, true);
 	}
@@ -175,26 +215,6 @@ public class EmplPositionResponsibilityImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public EmplPosition getEmplPositionId() {
-		return (EmplPosition)eGet(PositionPackage.Literals.EMPL_POSITION_RESPONSIBILITY__EMPL_POSITION_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setEmplPositionId(EmplPosition newEmplPositionId) {
-		eSet(PositionPackage.Literals.EMPL_POSITION_RESPONSIBILITY__EMPL_POSITION_ID, newEmplPositionId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Date getFromDate() {
 		return (Date)eGet(PositionPackage.Literals.EMPL_POSITION_RESPONSIBILITY__FROM_DATE, true);
 	}
@@ -207,26 +227,6 @@ public class EmplPositionResponsibilityImpl extends EntityIdentifiableImpl imple
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(PositionPackage.Literals.EMPL_POSITION_RESPONSIBILITY__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ResponsibilityType getResponsibilityTypeId() {
-		return (ResponsibilityType)eGet(PositionPackage.Literals.EMPL_POSITION_RESPONSIBILITY__RESPONSIBILITY_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setResponsibilityTypeId(ResponsibilityType newResponsibilityTypeId) {
-		eSet(PositionPackage.Literals.EMPL_POSITION_RESPONSIBILITY__RESPONSIBILITY_TYPE_ID, newResponsibilityTypeId);
 	}
 
 	/**

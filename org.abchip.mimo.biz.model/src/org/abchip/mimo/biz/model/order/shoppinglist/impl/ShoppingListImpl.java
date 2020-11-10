@@ -40,7 +40,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getShoppingListId <em>Shopping List Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getCarrierPartyId <em>Carrier Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getCarrierRoleTypeId <em>Carrier Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getIsActive <em>Is Active</em>}</li>
@@ -48,15 +48,15 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getLastAdminModified <em>Last Admin Modified</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getLastOrderedDate <em>Last Ordered Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getListName <em>List Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getParentShoppingListId <em>Parent Shopping List Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getPaymentMethodId <em>Payment Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getProductPromoCodeId <em>Product Promo Code Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getProductStoreId <em>Product Store Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getRecurrenceInfoId <em>Recurrence Info Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getParentShoppingList <em>Parent Shopping List</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getPaymentMethod <em>Payment Method</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getProductPromoCode <em>Product Promo Code</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getProductStore <em>Product Store</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getRecurrenceInfo <em>Recurrence Info</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getShoppingListItems <em>Shopping List Items</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getShoppingListTypeId <em>Shopping List Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getShoppingListType <em>Shopping List Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getShoppingListWorkEfforts <em>Shopping List Work Efforts</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getVisitorId <em>Visitor Id</em>}</li>
  * </ul>
@@ -220,8 +220,8 @@ public class ShoppingListImpl extends EntityTypedImpl<ShoppingListType> implemen
 	 * @generated
 	 */
 	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__CONTACT_MECH_ID, true);
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__CONTACT_MECH, true);
 	}
 
 	/**
@@ -230,8 +230,8 @@ public class ShoppingListImpl extends EntityTypedImpl<ShoppingListType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__CONTACT_MECH_ID, newContactMechId);
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__CONTACT_MECH, newContactMech);
 	}
 
 	/**
@@ -380,8 +380,8 @@ public class ShoppingListImpl extends EntityTypedImpl<ShoppingListType> implemen
 	 * @generated
 	 */
 	@Override
-	public ShoppingList getParentShoppingListId() {
-		return (ShoppingList)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__PARENT_SHOPPING_LIST_ID, true);
+	public ShoppingList getParentShoppingList() {
+		return (ShoppingList)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__PARENT_SHOPPING_LIST, true);
 	}
 
 	/**
@@ -390,8 +390,8 @@ public class ShoppingListImpl extends EntityTypedImpl<ShoppingListType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setParentShoppingListId(ShoppingList newParentShoppingListId) {
-		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__PARENT_SHOPPING_LIST_ID, newParentShoppingListId);
+	public void setParentShoppingList(ShoppingList newParentShoppingList) {
+		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__PARENT_SHOPPING_LIST, newParentShoppingList);
 	}
 
 	/**
@@ -400,8 +400,8 @@ public class ShoppingListImpl extends EntityTypedImpl<ShoppingListType> implemen
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__PARTY, true);
 	}
 
 	/**
@@ -410,8 +410,8 @@ public class ShoppingListImpl extends EntityTypedImpl<ShoppingListType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__PARTY, newParty);
 	}
 
 	/**
@@ -420,8 +420,8 @@ public class ShoppingListImpl extends EntityTypedImpl<ShoppingListType> implemen
 	 * @generated
 	 */
 	@Override
-	public PaymentMethod getPaymentMethodId() {
-		return (PaymentMethod)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__PAYMENT_METHOD_ID, true);
+	public PaymentMethod getPaymentMethod() {
+		return (PaymentMethod)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__PAYMENT_METHOD, true);
 	}
 
 	/**
@@ -430,8 +430,8 @@ public class ShoppingListImpl extends EntityTypedImpl<ShoppingListType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setPaymentMethodId(PaymentMethod newPaymentMethodId) {
-		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__PAYMENT_METHOD_ID, newPaymentMethodId);
+	public void setPaymentMethod(PaymentMethod newPaymentMethod) {
+		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__PAYMENT_METHOD, newPaymentMethod);
 	}
 
 	/**
@@ -440,8 +440,8 @@ public class ShoppingListImpl extends EntityTypedImpl<ShoppingListType> implemen
 	 * @generated
 	 */
 	@Override
-	public ProductPromoCode getProductPromoCodeId() {
-		return (ProductPromoCode)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__PRODUCT_PROMO_CODE_ID, true);
+	public ProductPromoCode getProductPromoCode() {
+		return (ProductPromoCode)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__PRODUCT_PROMO_CODE, true);
 	}
 
 	/**
@@ -450,8 +450,8 @@ public class ShoppingListImpl extends EntityTypedImpl<ShoppingListType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setProductPromoCodeId(ProductPromoCode newProductPromoCodeId) {
-		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__PRODUCT_PROMO_CODE_ID, newProductPromoCodeId);
+	public void setProductPromoCode(ProductPromoCode newProductPromoCode) {
+		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__PRODUCT_PROMO_CODE, newProductPromoCode);
 	}
 
 	/**
@@ -460,8 +460,8 @@ public class ShoppingListImpl extends EntityTypedImpl<ShoppingListType> implemen
 	 * @generated
 	 */
 	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__PRODUCT_STORE_ID, true);
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__PRODUCT_STORE, true);
 	}
 
 	/**
@@ -470,8 +470,8 @@ public class ShoppingListImpl extends EntityTypedImpl<ShoppingListType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__PRODUCT_STORE_ID, newProductStoreId);
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__PRODUCT_STORE, newProductStore);
 	}
 
 	/**
@@ -480,8 +480,8 @@ public class ShoppingListImpl extends EntityTypedImpl<ShoppingListType> implemen
 	 * @generated
 	 */
 	@Override
-	public RecurrenceInfo getRecurrenceInfoId() {
-		return (RecurrenceInfo)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__RECURRENCE_INFO_ID, true);
+	public RecurrenceInfo getRecurrenceInfo() {
+		return (RecurrenceInfo)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__RECURRENCE_INFO, true);
 	}
 
 	/**
@@ -490,8 +490,8 @@ public class ShoppingListImpl extends EntityTypedImpl<ShoppingListType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setRecurrenceInfoId(RecurrenceInfo newRecurrenceInfoId) {
-		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__RECURRENCE_INFO_ID, newRecurrenceInfoId);
+	public void setRecurrenceInfo(RecurrenceInfo newRecurrenceInfo) {
+		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__RECURRENCE_INFO, newRecurrenceInfo);
 	}
 
 	/**
@@ -531,6 +531,26 @@ public class ShoppingListImpl extends EntityTypedImpl<ShoppingListType> implemen
 	 * @generated
 	 */
 	@Override
+	public ShoppingListType getShoppingListType() {
+		return (ShoppingListType)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__SHOPPING_LIST_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setShoppingListType(ShoppingListType newShoppingListType) {
+		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__SHOPPING_LIST_TYPE, newShoppingListType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getShoppingListId() {
 		return (String)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__SHOPPING_LIST_ID, true);
 	}
@@ -543,26 +563,6 @@ public class ShoppingListImpl extends EntityTypedImpl<ShoppingListType> implemen
 	@Override
 	public void setShoppingListId(String newShoppingListId) {
 		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__SHOPPING_LIST_ID, newShoppingListId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ShoppingListType getShoppingListTypeId() {
-		return (ShoppingListType)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__SHOPPING_LIST_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setShoppingListTypeId(ShoppingListType newShoppingListTypeId) {
-		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__SHOPPING_LIST_TYPE_ID, newShoppingListTypeId);
 	}
 
 	/**

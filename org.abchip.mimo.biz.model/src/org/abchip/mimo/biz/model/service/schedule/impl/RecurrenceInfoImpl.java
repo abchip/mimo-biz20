@@ -30,10 +30,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.RecurrenceInfoImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.RecurrenceInfoImpl#getRecurrenceInfoId <em>Recurrence Info Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.RecurrenceInfoImpl#getExceptionDateTimes <em>Exception Date Times</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.RecurrenceInfoImpl#getExceptionRuleId <em>Exception Rule Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.RecurrenceInfoImpl#getExceptionRule <em>Exception Rule</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.RecurrenceInfoImpl#getRecurrenceCount <em>Recurrence Count</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.RecurrenceInfoImpl#getRecurrenceDateTimes <em>Recurrence Date Times</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.RecurrenceInfoImpl#getRecurrenceRuleId <em>Recurrence Rule Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.RecurrenceInfoImpl#getRecurrenceRule <em>Recurrence Rule</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.impl.RecurrenceInfoImpl#getStartDateTime <em>Start Date Time</em>}</li>
  * </ul>
  *
@@ -196,8 +196,8 @@ public class RecurrenceInfoImpl extends EntityIdentifiableImpl implements Recurr
 	 * @generated
 	 */
 	@Override
-	public RecurrenceRule getExceptionRuleId() {
-		return (RecurrenceRule)eGet(SchedulePackage.Literals.RECURRENCE_INFO__EXCEPTION_RULE_ID, true);
+	public RecurrenceRule getExceptionRule() {
+		return (RecurrenceRule)eGet(SchedulePackage.Literals.RECURRENCE_INFO__EXCEPTION_RULE, true);
 	}
 
 	/**
@@ -206,8 +206,8 @@ public class RecurrenceInfoImpl extends EntityIdentifiableImpl implements Recurr
 	 * @generated
 	 */
 	@Override
-	public void setExceptionRuleId(RecurrenceRule newExceptionRuleId) {
-		eSet(SchedulePackage.Literals.RECURRENCE_INFO__EXCEPTION_RULE_ID, newExceptionRuleId);
+	public void setExceptionRule(RecurrenceRule newExceptionRule) {
+		eSet(SchedulePackage.Literals.RECURRENCE_INFO__EXCEPTION_RULE, newExceptionRule);
 	}
 
 	/**
@@ -256,8 +256,8 @@ public class RecurrenceInfoImpl extends EntityIdentifiableImpl implements Recurr
 	 * @generated
 	 */
 	@Override
-	public RecurrenceRule getRecurrenceRuleId() {
-		return (RecurrenceRule)eGet(SchedulePackage.Literals.RECURRENCE_INFO__RECURRENCE_RULE_ID, true);
+	public RecurrenceRule getRecurrenceRule() {
+		return (RecurrenceRule)eGet(SchedulePackage.Literals.RECURRENCE_INFO__RECURRENCE_RULE, true);
 	}
 
 	/**
@@ -266,8 +266,8 @@ public class RecurrenceInfoImpl extends EntityIdentifiableImpl implements Recurr
 	 * @generated
 	 */
 	@Override
-	public void setRecurrenceRuleId(RecurrenceRule newRecurrenceRuleId) {
-		eSet(SchedulePackage.Literals.RECURRENCE_INFO__RECURRENCE_RULE_ID, newRecurrenceRuleId);
+	public void setRecurrenceRule(RecurrenceRule newRecurrenceRule) {
+		eSet(SchedulePackage.Literals.RECURRENCE_INFO__RECURRENCE_RULE, newRecurrenceRule);
 	}
 
 	/**

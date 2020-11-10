@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeImpl#getAgreementTypeAttrs <em>Agreement Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -202,8 +202,8 @@ public class AgreementTypeImpl extends EntityTypeImpl<Agreement> implements Agre
 	 * @generated
 	 */
 	@Override
-	public AgreementType getParentTypeId() {
-		return (AgreementType)eGet(AgreementPackage.Literals.AGREEMENT_TYPE__PARENT_TYPE_ID, true);
+	public AgreementType getParentType() {
+		return (AgreementType)eGet(AgreementPackage.Literals.AGREEMENT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -212,8 +212,8 @@ public class AgreementTypeImpl extends EntityTypeImpl<Agreement> implements Agre
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(AgreementType newParentTypeId) {
-		eSet(AgreementPackage.Literals.AGREEMENT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(AgreementType newParentType) {
+		eSet(AgreementPackage.Literals.AGREEMENT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

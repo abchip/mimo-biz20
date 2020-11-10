@@ -25,19 +25,19 @@ import org.abchip.mimo.biz.model.common.geo.GeoPoint;
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getAddress2 <em>Address2</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getAttnName <em>Attn Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getCity <em>City</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getCityGeoId <em>City Geo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getCountryGeoId <em>Country Geo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getCountyGeoId <em>County Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getCityGeo <em>City Geo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getCountryGeo <em>Country Geo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getCountyGeo <em>County Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getDirections <em>Directions</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getGeoPointId <em>Geo Point Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getGeoPoint <em>Geo Point</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getHouseNumber <em>House Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getHouseNumberExt <em>House Number Ext</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getMunicipalityGeoId <em>Municipality Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getMunicipalityGeo <em>Municipality Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getPostalAddressBoundaries <em>Postal Address Boundaries</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getPostalCode <em>Postal Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getPostalCodeExt <em>Postal Code Ext</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getPostalCodeGeoId <em>Postal Code Geo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getStateProvinceGeoId <em>State Province Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getPostalCodeGeo <em>Postal Code Geo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getStateProvinceGeo <em>State Province Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getToName <em>To Name</em>}</li>
  * </ul>
  *
@@ -151,82 +151,70 @@ public interface PostalAddress extends ContactMech {
 	void setCity(String value);
 
 	/**
-	 * Returns the value of the '<em><b>City Geo Id</b></em>' reference.
+	 * Returns the value of the '<em><b>City Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>City Geo Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>City Geo Id</em>' reference.
-	 * @see #setCityGeoId(Geo)
-	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_CityGeoId()
+	 * @return the value of the '<em>City Geo</em>' reference.
+	 * @see #setCityGeo(Geo)
+	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_CityGeo()
 	 * @model keys="geoId"
 	 * @generated
 	 */
-	Geo getCityGeoId();
+	Geo getCityGeo();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getCityGeoId <em>City Geo Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getCityGeo <em>City Geo</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>City Geo Id</em>' reference.
-	 * @see #getCityGeoId()
+	 * @param value the new value of the '<em>City Geo</em>' reference.
+	 * @see #getCityGeo()
 	 * @generated
 	 */
-	void setCityGeoId(Geo value);
+	void setCityGeo(Geo value);
 
 	/**
-	 * Returns the value of the '<em><b>Country Geo Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Country Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Country Geo Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Country Geo Id</em>' reference.
-	 * @see #setCountryGeoId(Geo)
-	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_CountryGeoId()
+	 * @return the value of the '<em>Country Geo</em>' reference.
+	 * @see #setCountryGeo(Geo)
+	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_CountryGeo()
 	 * @model keys="geoId"
 	 * @generated
 	 */
-	Geo getCountryGeoId();
+	Geo getCountryGeo();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getCountryGeoId <em>Country Geo Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getCountryGeo <em>Country Geo</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Country Geo Id</em>' reference.
-	 * @see #getCountryGeoId()
+	 * @param value the new value of the '<em>Country Geo</em>' reference.
+	 * @see #getCountryGeo()
 	 * @generated
 	 */
-	void setCountryGeoId(Geo value);
+	void setCountryGeo(Geo value);
 
 	/**
-	 * Returns the value of the '<em><b>County Geo Id</b></em>' reference.
+	 * Returns the value of the '<em><b>County Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>County Geo Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>County Geo Id</em>' reference.
-	 * @see #setCountyGeoId(Geo)
-	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_CountyGeoId()
+	 * @return the value of the '<em>County Geo</em>' reference.
+	 * @see #setCountyGeo(Geo)
+	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_CountyGeo()
 	 * @model keys="geoId"
 	 * @generated
 	 */
-	Geo getCountyGeoId();
+	Geo getCountyGeo();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getCountyGeoId <em>County Geo Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getCountyGeo <em>County Geo</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>County Geo Id</em>' reference.
-	 * @see #getCountyGeoId()
+	 * @param value the new value of the '<em>County Geo</em>' reference.
+	 * @see #getCountyGeo()
 	 * @generated
 	 */
-	void setCountyGeoId(Geo value);
+	void setCountyGeo(Geo value);
 
 	/**
 	 * Returns the value of the '<em><b>Directions</b></em>' attribute.
@@ -255,30 +243,26 @@ public interface PostalAddress extends ContactMech {
 	void setDirections(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Geo Point Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Geo Point</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geo Point Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Geo Point Id</em>' reference.
-	 * @see #setGeoPointId(GeoPoint)
-	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_GeoPointId()
+	 * @return the value of the '<em>Geo Point</em>' reference.
+	 * @see #setGeoPoint(GeoPoint)
+	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_GeoPoint()
 	 * @model keys="geoPointId"
 	 * @generated
 	 */
-	GeoPoint getGeoPointId();
+	GeoPoint getGeoPoint();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getGeoPointId <em>Geo Point Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getGeoPoint <em>Geo Point</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Geo Point Id</em>' reference.
-	 * @see #getGeoPointId()
+	 * @param value the new value of the '<em>Geo Point</em>' reference.
+	 * @see #getGeoPoint()
 	 * @generated
 	 */
-	void setGeoPointId(GeoPoint value);
+	void setGeoPoint(GeoPoint value);
 
 	/**
 	 * Returns the value of the '<em><b>House Number</b></em>' attribute.
@@ -333,30 +317,26 @@ public interface PostalAddress extends ContactMech {
 	void setHouseNumberExt(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Municipality Geo Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Municipality Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Municipality Geo Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Municipality Geo Id</em>' reference.
-	 * @see #setMunicipalityGeoId(Geo)
-	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_MunicipalityGeoId()
+	 * @return the value of the '<em>Municipality Geo</em>' reference.
+	 * @see #setMunicipalityGeo(Geo)
+	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_MunicipalityGeo()
 	 * @model keys="geoId"
 	 * @generated
 	 */
-	Geo getMunicipalityGeoId();
+	Geo getMunicipalityGeo();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getMunicipalityGeoId <em>Municipality Geo Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getMunicipalityGeo <em>Municipality Geo</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Municipality Geo Id</em>' reference.
-	 * @see #getMunicipalityGeoId()
+	 * @param value the new value of the '<em>Municipality Geo</em>' reference.
+	 * @see #getMunicipalityGeo()
 	 * @generated
 	 */
-	void setMunicipalityGeoId(Geo value);
+	void setMunicipalityGeo(Geo value);
 
 	/**
 	 * Returns the value of the '<em><b>Postal Address Boundaries</b></em>' reference list.
@@ -427,56 +407,48 @@ public interface PostalAddress extends ContactMech {
 	void setPostalCodeExt(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Postal Code Geo Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Postal Code Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Postal Code Geo Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Postal Code Geo Id</em>' reference.
-	 * @see #setPostalCodeGeoId(Geo)
-	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_PostalCodeGeoId()
+	 * @return the value of the '<em>Postal Code Geo</em>' reference.
+	 * @see #setPostalCodeGeo(Geo)
+	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_PostalCodeGeo()
 	 * @model keys="geoId"
 	 * @generated
 	 */
-	Geo getPostalCodeGeoId();
+	Geo getPostalCodeGeo();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getPostalCodeGeoId <em>Postal Code Geo Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getPostalCodeGeo <em>Postal Code Geo</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Postal Code Geo Id</em>' reference.
-	 * @see #getPostalCodeGeoId()
+	 * @param value the new value of the '<em>Postal Code Geo</em>' reference.
+	 * @see #getPostalCodeGeo()
 	 * @generated
 	 */
-	void setPostalCodeGeoId(Geo value);
+	void setPostalCodeGeo(Geo value);
 
 	/**
-	 * Returns the value of the '<em><b>State Province Geo Id</b></em>' reference.
+	 * Returns the value of the '<em><b>State Province Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>State Province Geo Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>State Province Geo Id</em>' reference.
-	 * @see #setStateProvinceGeoId(Geo)
-	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_StateProvinceGeoId()
+	 * @return the value of the '<em>State Province Geo</em>' reference.
+	 * @see #setStateProvinceGeo(Geo)
+	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_StateProvinceGeo()
 	 * @model keys="geoId"
 	 * @generated
 	 */
-	Geo getStateProvinceGeoId();
+	Geo getStateProvinceGeo();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getStateProvinceGeoId <em>State Province Geo Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PostalAddress#getStateProvinceGeo <em>State Province Geo</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>State Province Geo Id</em>' reference.
-	 * @see #getStateProvinceGeoId()
+	 * @param value the new value of the '<em>State Province Geo</em>' reference.
+	 * @see #getStateProvinceGeo()
 	 * @generated
 	 */
-	void setStateProvinceGeoId(Geo value);
+	void setStateProvinceGeo(Geo value);
 
 	/**
 	 * Returns the value of the '<em><b>To Name</b></em>' attribute.

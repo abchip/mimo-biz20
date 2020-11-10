@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountGroupMemberImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountGroupMemberImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountGroupMemberImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountGroupMemberImpl#getGlAccountId <em>Gl Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountGroupMemberImpl#getGlAccountGroupTypeId <em>Gl Account Group Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountGroupMemberImpl#getGlAccountGroupId <em>Gl Account Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountGroupMemberImpl#getGlAccount <em>Gl Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountGroupMemberImpl#getGlAccountGroupType <em>Gl Account Group Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountGroupMemberImpl#getGlAccountGroup <em>Gl Account Group</em>}</li>
  * </ul>
  *
  * @generated
@@ -153,8 +153,8 @@ public class GlAccountGroupMemberImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public GlAccount getGlAccountId() {
-		return (GlAccount)eGet(LedgerPackage.Literals.GL_ACCOUNT_GROUP_MEMBER__GL_ACCOUNT_ID, true);
+	public GlAccount getGlAccount() {
+		return (GlAccount)eGet(LedgerPackage.Literals.GL_ACCOUNT_GROUP_MEMBER__GL_ACCOUNT, true);
 	}
 
 	/**
@@ -163,8 +163,8 @@ public class GlAccountGroupMemberImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setGlAccountId(GlAccount newGlAccountId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT_GROUP_MEMBER__GL_ACCOUNT_ID, newGlAccountId);
+	public void setGlAccount(GlAccount newGlAccount) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT_GROUP_MEMBER__GL_ACCOUNT, newGlAccount);
 	}
 
 	/**
@@ -173,8 +173,8 @@ public class GlAccountGroupMemberImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public GlAccountGroup getGlAccountGroupId() {
-		return (GlAccountGroup)eGet(LedgerPackage.Literals.GL_ACCOUNT_GROUP_MEMBER__GL_ACCOUNT_GROUP_ID, true);
+	public GlAccountGroupType getGlAccountGroupType() {
+		return (GlAccountGroupType)eGet(LedgerPackage.Literals.GL_ACCOUNT_GROUP_MEMBER__GL_ACCOUNT_GROUP_TYPE, true);
 	}
 
 	/**
@@ -183,8 +183,28 @@ public class GlAccountGroupMemberImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setGlAccountGroupId(GlAccountGroup newGlAccountGroupId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT_GROUP_MEMBER__GL_ACCOUNT_GROUP_ID, newGlAccountGroupId);
+	public void setGlAccountGroupType(GlAccountGroupType newGlAccountGroupType) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT_GROUP_MEMBER__GL_ACCOUNT_GROUP_TYPE, newGlAccountGroupType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GlAccountGroup getGlAccountGroup() {
+		return (GlAccountGroup)eGet(LedgerPackage.Literals.GL_ACCOUNT_GROUP_MEMBER__GL_ACCOUNT_GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGlAccountGroup(GlAccountGroup newGlAccountGroup) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT_GROUP_MEMBER__GL_ACCOUNT_GROUP, newGlAccountGroup);
 	}
 
 	/**
@@ -223,26 +243,6 @@ public class GlAccountGroupMemberImpl extends EntityIdentifiableImpl implements 
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GlAccountGroupType getGlAccountGroupTypeId() {
-		return (GlAccountGroupType)eGet(LedgerPackage.Literals.GL_ACCOUNT_GROUP_MEMBER__GL_ACCOUNT_GROUP_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGlAccountGroupTypeId(GlAccountGroupType newGlAccountGroupTypeId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT_GROUP_MEMBER__GL_ACCOUNT_GROUP_TYPE_ID, newGlAccountGroupTypeId);
 	}
 
 } //GlAccountGroupMemberImpl

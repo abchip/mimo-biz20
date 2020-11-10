@@ -190,31 +190,31 @@ public interface PreferencePackage extends EPackage {
 	int WEB_USER_PREFERENCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Web Preference Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Web Preference Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_USER_PREFERENCE__WEB_PREFERENCE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int WEB_USER_PREFERENCE__WEB_PREFERENCE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>User Login Id</b></em>' reference.
+	 * The feature id for the '<em><b>User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_USER_PREFERENCE__USER_LOGIN_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int WEB_USER_PREFERENCE__USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_USER_PREFERENCE__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int WEB_USER_PREFERENCE__PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Visit Id</b></em>' attribute.
@@ -287,26 +287,37 @@ public interface PreferencePackage extends EPackage {
 	EClass getWebUserPreference();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getUserLoginId <em>User Login Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getWebPreferenceType <em>Web Preference Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>User Login Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.preference.WebUserPreference#getUserLoginId()
+	 * @return the meta object for the reference '<em>Web Preference Type</em>'.
+	 * @see org.abchip.mimo.biz.model.content.preference.WebUserPreference#getWebPreferenceType()
 	 * @see #getWebUserPreference()
 	 * @generated
 	 */
-	EReference getWebUserPreference_UserLoginId();
+	EReference getWebUserPreference_WebPreferenceType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getUserLogin <em>User Login</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.preference.WebUserPreference#getPartyId()
+	 * @return the meta object for the reference '<em>User Login</em>'.
+	 * @see org.abchip.mimo.biz.model.content.preference.WebUserPreference#getUserLogin()
 	 * @see #getWebUserPreference()
 	 * @generated
 	 */
-	EReference getWebUserPreference_PartyId();
+	EReference getWebUserPreference_UserLogin();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getParty <em>Party</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.content.preference.WebUserPreference#getParty()
+	 * @see #getWebUserPreference()
+	 * @generated
+	 */
+	EReference getWebUserPreference_Party();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getVisitId <em>Visit Id</em>}'.
@@ -318,17 +329,6 @@ public interface PreferencePackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getWebUserPreference_VisitId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getWebPreferenceTypeId <em>Web Preference Type Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Web Preference Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.preference.WebUserPreference#getWebPreferenceTypeId()
-	 * @see #getWebUserPreference()
-	 * @generated
-	 */
-	EReference getWebUserPreference_WebPreferenceTypeId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.preference.WebUserPreference#getWebPreferenceValue <em>Web Preference Value</em>}'.
@@ -400,20 +400,28 @@ public interface PreferencePackage extends EPackage {
 		EClass WEB_USER_PREFERENCE = eINSTANCE.getWebUserPreference();
 
 		/**
-		 * The meta object literal for the '<em><b>User Login Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Web Preference Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WEB_USER_PREFERENCE__USER_LOGIN_ID = eINSTANCE.getWebUserPreference_UserLoginId();
+		EReference WEB_USER_PREFERENCE__WEB_PREFERENCE_TYPE = eINSTANCE.getWebUserPreference_WebPreferenceType();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>User Login</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WEB_USER_PREFERENCE__PARTY_ID = eINSTANCE.getWebUserPreference_PartyId();
+		EReference WEB_USER_PREFERENCE__USER_LOGIN = eINSTANCE.getWebUserPreference_UserLogin();
+
+		/**
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference WEB_USER_PREFERENCE__PARTY = eINSTANCE.getWebUserPreference_Party();
 
 		/**
 		 * The meta object literal for the '<em><b>Visit Id</b></em>' attribute feature.
@@ -422,14 +430,6 @@ public interface PreferencePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute WEB_USER_PREFERENCE__VISIT_ID = eINSTANCE.getWebUserPreference_VisitId();
-
-		/**
-		 * The meta object literal for the '<em><b>Web Preference Type Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference WEB_USER_PREFERENCE__WEB_PREFERENCE_TYPE_ID = eINSTANCE.getWebUserPreference_WebPreferenceTypeId();
 
 		/**
 		 * The meta object literal for the '<em><b>Web Preference Value</b></em>' attribute feature.

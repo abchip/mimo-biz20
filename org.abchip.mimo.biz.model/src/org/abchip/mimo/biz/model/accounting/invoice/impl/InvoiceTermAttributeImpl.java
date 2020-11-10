@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceTermAttributeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceTermAttributeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceTermAttributeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceTermAttributeImpl#getInvoiceTermId <em>Invoice Term Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceTermAttributeImpl#getInvoiceTerm <em>Invoice Term</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceTermAttributeImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceTermAttributeImpl#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceTermAttributeImpl#getAttrValue <em>Attr Value</em>}</li>
@@ -152,6 +152,26 @@ public class InvoiceTermAttributeImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
+	public InvoiceTerm getInvoiceTerm() {
+		return (InvoiceTerm)eGet(InvoicePackage.Literals.INVOICE_TERM_ATTRIBUTE__INVOICE_TERM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInvoiceTerm(InvoiceTerm newInvoiceTerm) {
+		eSet(InvoicePackage.Literals.INVOICE_TERM_ATTRIBUTE__INVOICE_TERM, newInvoiceTerm);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrDescription() {
 		return (String)eGet(InvoicePackage.Literals.INVOICE_TERM_ATTRIBUTE__ATTR_DESCRIPTION, true);
 	}
@@ -242,26 +262,6 @@ public class InvoiceTermAttributeImpl extends EntityIdentifiableImpl implements 
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InvoiceTerm getInvoiceTermId() {
-		return (InvoiceTerm)eGet(InvoicePackage.Literals.INVOICE_TERM_ATTRIBUTE__INVOICE_TERM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInvoiceTermId(InvoiceTerm newInvoiceTermId) {
-		eSet(InvoicePackage.Literals.INVOICE_TERM_ATTRIBUTE__INVOICE_TERM_ID, newInvoiceTermId);
 	}
 
 } //InvoiceTermAttributeImpl

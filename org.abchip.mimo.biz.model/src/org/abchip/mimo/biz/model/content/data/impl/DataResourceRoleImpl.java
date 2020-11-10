@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceRoleImpl#getDataResourceId <em>Data Resource Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceRoleImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceRoleImpl#getDataResource <em>Data Resource</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceRoleImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceRoleImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceRoleImpl#getThruDate <em>Thru Date</em>}</li>
@@ -155,8 +155,8 @@ public class DataResourceRoleImpl extends EntityIdentifiableImpl implements Data
 	 * @generated
 	 */
 	@Override
-	public DataResource getDataResourceId() {
-		return (DataResource)eGet(DataPackage.Literals.DATA_RESOURCE_ROLE__DATA_RESOURCE_ID, true);
+	public DataResource getDataResource() {
+		return (DataResource)eGet(DataPackage.Literals.DATA_RESOURCE_ROLE__DATA_RESOURCE, true);
 	}
 
 	/**
@@ -165,8 +165,28 @@ public class DataResourceRoleImpl extends EntityIdentifiableImpl implements Data
 	 * @generated
 	 */
 	@Override
-	public void setDataResourceId(DataResource newDataResourceId) {
-		eSet(DataPackage.Literals.DATA_RESOURCE_ROLE__DATA_RESOURCE_ID, newDataResourceId);
+	public void setDataResource(DataResource newDataResource) {
+		eSet(DataPackage.Literals.DATA_RESOURCE_ROLE__DATA_RESOURCE, newDataResource);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(DataPackage.Literals.DATA_RESOURCE_ROLE__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(DataPackage.Literals.DATA_RESOURCE_ROLE__PARTY, newParty);
 	}
 
 	/**
@@ -187,26 +207,6 @@ public class DataResourceRoleImpl extends EntityIdentifiableImpl implements Data
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(DataPackage.Literals.DATA_RESOURCE_ROLE__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(DataPackage.Literals.DATA_RESOURCE_ROLE__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(DataPackage.Literals.DATA_RESOURCE_ROLE__PARTY_ID, newPartyId);
 	}
 
 	/**

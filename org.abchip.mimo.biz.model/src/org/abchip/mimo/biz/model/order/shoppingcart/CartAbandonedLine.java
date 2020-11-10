@@ -27,8 +27,8 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getCartAbandonedLineSeqId <em>Cart Abandoned Line Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getVisitId <em>Visit Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getConfigId <em>Config Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getProdCatalogId <em>Prod Catalog Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getProdCatalog <em>Prod Catalog</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getReserv2ndPPPerc <em>Reserv2nd PP Perc</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getReservLength <em>Reserv Length</em>}</li>
@@ -100,56 +100,48 @@ public interface CartAbandonedLine extends EntityIdentifiable, EntityInfo {
 	void setConfigId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Prod Catalog Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Prod Catalog</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Prod Catalog Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Prod Catalog Id</em>' reference.
-	 * @see #setProdCatalogId(ProdCatalog)
-	 * @see org.abchip.mimo.biz.model.order.shoppingcart.ShoppingcartPackage#getCartAbandonedLine_ProdCatalogId()
+	 * @return the value of the '<em>Prod Catalog</em>' reference.
+	 * @see #setProdCatalog(ProdCatalog)
+	 * @see org.abchip.mimo.biz.model.order.shoppingcart.ShoppingcartPackage#getCartAbandonedLine_ProdCatalog()
 	 * @model keys="prodCatalogId"
 	 * @generated
 	 */
-	ProdCatalog getProdCatalogId();
+	ProdCatalog getProdCatalog();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getProdCatalogId <em>Prod Catalog Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getProdCatalog <em>Prod Catalog</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Prod Catalog Id</em>' reference.
-	 * @see #getProdCatalogId()
+	 * @param value the new value of the '<em>Prod Catalog</em>' reference.
+	 * @see #getProdCatalog()
 	 * @generated
 	 */
-	void setProdCatalogId(ProdCatalog value);
+	void setProdCatalog(ProdCatalog value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.order.shoppingcart.ShoppingcartPackage#getCartAbandonedLine_ProductId()
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.order.shoppingcart.ShoppingcartPackage#getCartAbandonedLine_Product()
 	 * @model keys="productId"
 	 * @generated
 	 */
-	Product getProductId();
+	Product getProduct();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getProductId <em>Product Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getProduct <em>Product</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
 	 * @generated
 	 */
-	void setProductId(Product value);
+	void setProduct(Product value);
 
 	/**
 	 * Returns the value of the '<em><b>Quantity</b></em>' attribute.

@@ -713,7 +713,7 @@ public class EnumPackageImpl extends EPackageImpl implements EnumPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getEnumeration_EnumTypeId() {
+	public EReference getEnumeration_EnumType() {
 		return (EReference)enumerationEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -783,7 +783,7 @@ public class EnumPackageImpl extends EPackageImpl implements EnumPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getEnumerationType_ParentTypeId() {
+	public EReference getEnumerationType_ParentType() {
 		return (EReference)enumerationTypeEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -820,7 +820,7 @@ public class EnumPackageImpl extends EPackageImpl implements EnumPackage {
 		createEAttribute(enumerationEClass, ENUMERATION__ENUM_ID);
 		createEAttribute(enumerationEClass, ENUMERATION__DESCRIPTION);
 		createEAttribute(enumerationEClass, ENUMERATION__ENUM_CODE);
-		createEReference(enumerationEClass, ENUMERATION__ENUM_TYPE_ID);
+		createEReference(enumerationEClass, ENUMERATION__ENUM_TYPE);
 		createEAttribute(enumerationEClass, ENUMERATION__SEQUENCE_ID);
 		createEReference(enumerationEClass, ENUMERATION__USER_LOGIN_SECURITY_QUESTIONS);
 
@@ -828,7 +828,7 @@ public class EnumPackageImpl extends EPackageImpl implements EnumPackage {
 		createEAttribute(enumerationTypeEClass, ENUMERATION_TYPE__ENUM_TYPE_ID);
 		createEAttribute(enumerationTypeEClass, ENUMERATION_TYPE__DESCRIPTION);
 		createEAttribute(enumerationTypeEClass, ENUMERATION_TYPE__HAS_TABLE);
-		createEReference(enumerationTypeEClass, ENUMERATION_TYPE__PARENT_TYPE_ID);
+		createEReference(enumerationTypeEClass, ENUMERATION_TYPE__PARENT_TYPE);
 	}
 
 	/**
@@ -881,8 +881,8 @@ public class EnumPackageImpl extends EPackageImpl implements EnumPackage {
 		initEAttribute(getEnumeration_EnumId(), ecorePackage.getEString(), "enumId", null, 1, 1, Enumeration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEnumeration_Description(), ecorePackage.getEString(), "description", null, 0, 1, Enumeration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEnumeration_EnumCode(), ecorePackage.getEString(), "enumCode", null, 0, 1, Enumeration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getEnumeration_EnumTypeId(), this.getEnumerationType(), null, "enumTypeId", null, 0, 1, Enumeration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEnumeration_EnumTypeId().getEKeys().add(this.getEnumerationType_EnumTypeId());
+		initEReference(getEnumeration_EnumType(), this.getEnumerationType(), null, "enumType", null, 0, 1, Enumeration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getEnumeration_EnumType().getEKeys().add(this.getEnumerationType_EnumTypeId());
 		initEAttribute(getEnumeration_SequenceId(), ecorePackage.getEString(), "sequenceId", null, 0, 1, Enumeration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEnumeration_UserLoginSecurityQuestions(), theLoginPackage.getUserLoginSecurityQuestion(), null, "userLoginSecurityQuestions", null, 0, -1, Enumeration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
@@ -890,8 +890,8 @@ public class EnumPackageImpl extends EPackageImpl implements EnumPackage {
 		initEAttribute(getEnumerationType_EnumTypeId(), ecorePackage.getEString(), "enumTypeId", null, 1, 1, EnumerationType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEnumerationType_Description(), ecorePackage.getEString(), "description", null, 0, 1, EnumerationType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEnumerationType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 0, 1, EnumerationType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getEnumerationType_ParentTypeId(), this.getEnumerationType(), null, "parentTypeId", null, 0, 1, EnumerationType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEnumerationType_ParentTypeId().getEKeys().add(this.getEnumerationType_EnumTypeId());
+		initEReference(getEnumerationType_ParentType(), this.getEnumerationType(), null, "parentType", null, 0, 1, EnumerationType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getEnumerationType_ParentType().getEKeys().add(this.getEnumerationType_EnumTypeId());
 
 		// Create annotations
 		// mimo-ent-frame

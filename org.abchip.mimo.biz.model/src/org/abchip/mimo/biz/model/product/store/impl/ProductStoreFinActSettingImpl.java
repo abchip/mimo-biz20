@@ -33,8 +33,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getProductStoreId <em>Product Store Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getFinAccountTypeId <em>Fin Account Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getProductStore <em>Product Store</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getFinAccountType <em>Fin Account Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getAccountCodeLength <em>Account Code Length</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getAccountValidDays <em>Account Valid Days</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getAllowAuthToNegative <em>Allow Auth To Negative</em>}</li>
@@ -43,8 +43,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getPinCodeLength <em>Pin Code Length</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getPurchSurveyCopyMe <em>Purch Survey Copy Me</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getPurchSurveySendTo <em>Purch Survey Send To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getPurchaseSurveyId <em>Purchase Survey Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getReplenishMethodEnumId <em>Replenish Method Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getPurchaseSurvey <em>Purchase Survey</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getReplenishMethodEnum <em>Replenish Method Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getReplenishThreshold <em>Replenish Threshold</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getRequirePinCode <em>Require Pin Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getValidateGCFinAcct <em>Validate GC Fin Acct</em>}</li>
@@ -169,6 +169,46 @@ public class ProductStoreFinActSettingImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__PRODUCT_STORE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__PRODUCT_STORE, newProductStore);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FinAccountType getFinAccountType() {
+		return (FinAccountType)eGet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__FIN_ACCOUNT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFinAccountType(FinAccountType newFinAccountType) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__FIN_ACCOUNT_TYPE, newFinAccountType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public long getAccountCodeLength() {
 		return (Long)eGet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__ACCOUNT_CODE_LENGTH, true);
 	}
@@ -241,26 +281,6 @@ public class ProductStoreFinActSettingImpl extends EntityIdentifiableImpl implem
 	@Override
 	public void setAuthValidDays(long newAuthValidDays) {
 		eSet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__AUTH_VALID_DAYS, newAuthValidDays);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FinAccountType getFinAccountTypeId() {
-		return (FinAccountType)eGet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__FIN_ACCOUNT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFinAccountTypeId(FinAccountType newFinAccountTypeId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__FIN_ACCOUNT_TYPE_ID, newFinAccountTypeId);
 	}
 
 	/**
@@ -349,8 +369,8 @@ public class ProductStoreFinActSettingImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public Survey getPurchaseSurveyId() {
-		return (Survey)eGet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__PURCHASE_SURVEY_ID, true);
+	public Survey getPurchaseSurvey() {
+		return (Survey)eGet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__PURCHASE_SURVEY, true);
 	}
 
 	/**
@@ -359,8 +379,8 @@ public class ProductStoreFinActSettingImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setPurchaseSurveyId(Survey newPurchaseSurveyId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__PURCHASE_SURVEY_ID, newPurchaseSurveyId);
+	public void setPurchaseSurvey(Survey newPurchaseSurvey) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__PURCHASE_SURVEY, newPurchaseSurvey);
 	}
 
 	/**
@@ -369,8 +389,8 @@ public class ProductStoreFinActSettingImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public Enumeration getReplenishMethodEnumId() {
-		return (Enumeration)eGet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__REPLENISH_METHOD_ENUM_ID, true);
+	public Enumeration getReplenishMethodEnum() {
+		return (Enumeration)eGet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__REPLENISH_METHOD_ENUM, true);
 	}
 
 	/**
@@ -379,8 +399,8 @@ public class ProductStoreFinActSettingImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setReplenishMethodEnumId(Enumeration newReplenishMethodEnumId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__REPLENISH_METHOD_ENUM_ID, newReplenishMethodEnumId);
+	public void setReplenishMethodEnum(Enumeration newReplenishMethodEnum) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__REPLENISH_METHOD_ENUM, newReplenishMethodEnum);
 	}
 
 	/**
@@ -479,26 +499,6 @@ public class ProductStoreFinActSettingImpl extends EntityIdentifiableImpl implem
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__PRODUCT_STORE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__PRODUCT_STORE_ID, newProductStoreId);
 	}
 
 } //ProductStoreFinActSettingImpl

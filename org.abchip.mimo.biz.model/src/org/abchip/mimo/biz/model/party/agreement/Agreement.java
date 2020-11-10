@@ -28,12 +28,12 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getAgreementAttributes <em>Agreement Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getAgreementDate <em>Agreement Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getAgreementItems <em>Agreement Items</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getAgreementTypeId <em>Agreement Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getAgreementType <em>Agreement Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getPartyIdFrom <em>Party Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getPartyIdTo <em>Party Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getRoleTypeIdFrom <em>Role Type Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getRoleTypeIdTo <em>Role Type Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getTextData <em>Text Data</em>}</li>
@@ -86,6 +86,28 @@ public interface Agreement extends EntityTyped<AgreementType>, EntityInfo {
 	 * @generated
 	 */
 	List<AgreementItem> getAgreementItems();
+
+	/**
+	 * Returns the value of the '<em><b>Agreement Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Agreement Type</em>' reference.
+	 * @see #setAgreementType(AgreementType)
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreement_AgreementType()
+	 * @model keys="agreementTypeId"
+	 * @generated
+	 */
+	AgreementType getAgreementType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getAgreementType <em>Agreement Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Agreement Type</em>' reference.
+	 * @see #getAgreementType()
+	 * @generated
+	 */
+	void setAgreementType(AgreementType value);
 
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
@@ -192,30 +214,26 @@ public interface Agreement extends EntityTyped<AgreementType>, EntityInfo {
 	void setPartyIdTo(Party value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreement_ProductId()
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreement_Product()
 	 * @model keys="productId"
 	 * @generated
 	 */
-	Product getProductId();
+	Product getProduct();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getProductId <em>Product Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getProduct <em>Product</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
 	 * @generated
 	 */
-	void setProductId(Product value);
+	void setProduct(Product value);
 
 	/**
 	 * Returns the value of the '<em><b>Role Type Id From</b></em>' reference.
@@ -320,32 +338,6 @@ public interface Agreement extends EntityTyped<AgreementType>, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Agreement Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Agreement Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Agreement Type Id</em>' reference.
-	 * @see #setAgreementTypeId(AgreementType)
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreement_AgreementTypeId()
-	 * @model keys="agreementTypeId"
-	 * @generated
-	 */
-	AgreementType getAgreementTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getAgreementTypeId <em>Agreement Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Agreement Type Id</em>' reference.
-	 * @see #getAgreementTypeId()
-	 * @generated
-	 */
-	void setAgreementTypeId(AgreementType value);
 
 	/**
 	 * Returns the value of the '<em><b>Agreement Id</b></em>' attribute.

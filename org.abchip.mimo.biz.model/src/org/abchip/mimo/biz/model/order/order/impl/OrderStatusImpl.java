@@ -33,11 +33,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderStatusImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderStatusImpl#getOrderStatusId <em>Order Status Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderStatusImpl#getChangeReason <em>Change Reason</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderStatusImpl#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderStatusImpl#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderStatusImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderStatusImpl#getOrderPaymentPreferenceId <em>Order Payment Preference Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderStatusImpl#getOrderPaymentPreference <em>Order Payment Preference</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderStatusImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderStatusImpl#getStatusDatetime <em>Status Datetime</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderStatusImpl#getStatusId <em>Status Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderStatusImpl#getStatusUserLogin <em>Status User Login</em>}</li>
  * </ul>
  *
@@ -180,8 +180,8 @@ public class OrderStatusImpl extends EntityIdentifiableImpl implements OrderStat
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_STATUS__ORDER_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_STATUS__ORDER, true);
 	}
 
 	/**
@@ -190,8 +190,8 @@ public class OrderStatusImpl extends EntityIdentifiableImpl implements OrderStat
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_STATUS__ORDER_ID, newOrderId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_STATUS__ORDER, newOrder);
 	}
 
 	/**
@@ -220,8 +220,8 @@ public class OrderStatusImpl extends EntityIdentifiableImpl implements OrderStat
 	 * @generated
 	 */
 	@Override
-	public OrderPaymentPreference getOrderPaymentPreferenceId() {
-		return (OrderPaymentPreference)eGet(OrderPackage.Literals.ORDER_STATUS__ORDER_PAYMENT_PREFERENCE_ID, true);
+	public OrderPaymentPreference getOrderPaymentPreference() {
+		return (OrderPaymentPreference)eGet(OrderPackage.Literals.ORDER_STATUS__ORDER_PAYMENT_PREFERENCE, true);
 	}
 
 	/**
@@ -230,8 +230,28 @@ public class OrderStatusImpl extends EntityIdentifiableImpl implements OrderStat
 	 * @generated
 	 */
 	@Override
-	public void setOrderPaymentPreferenceId(OrderPaymentPreference newOrderPaymentPreferenceId) {
-		eSet(OrderPackage.Literals.ORDER_STATUS__ORDER_PAYMENT_PREFERENCE_ID, newOrderPaymentPreferenceId);
+	public void setOrderPaymentPreference(OrderPaymentPreference newOrderPaymentPreference) {
+		eSet(OrderPackage.Literals.ORDER_STATUS__ORDER_PAYMENT_PREFERENCE, newOrderPaymentPreference);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(OrderPackage.Literals.ORDER_STATUS__STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(StatusItem newStatus) {
+		eSet(OrderPackage.Literals.ORDER_STATUS__STATUS, newStatus);
 	}
 
 	/**
@@ -272,26 +292,6 @@ public class OrderStatusImpl extends EntityIdentifiableImpl implements OrderStat
 	@Override
 	public void setStatusDatetime(Date newStatusDatetime) {
 		eSet(OrderPackage.Literals.ORDER_STATUS__STATUS_DATETIME, newStatusDatetime);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(OrderPackage.Literals.ORDER_STATUS__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(OrderPackage.Literals.ORDER_STATUS__STATUS_ID, newStatusId);
 	}
 
 	/**

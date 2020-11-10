@@ -22,15 +22,15 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getReturnId <em>Return Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getTrackingCodeTypeId <em>Tracking Code Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getReturn <em>Return</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getTrackingCodeType <em>Tracking Code Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getAffiliateReferredTimeStamp <em>Affiliate Referred Time Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getHasExported <em>Has Exported</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getIsBillable <em>Is Billable</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getSiteId <em>Site Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getTrackingCodeId <em>Tracking Code Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getTrackingCode <em>Tracking Code</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeOrderReturn()
@@ -38,6 +38,75 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface TrackingCodeOrderReturn extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Return</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Return</em>' reference.
+	 * @see #setReturn(ReturnHeader)
+	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeOrderReturn_Return()
+	 * @model keys="returnId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ReturnHeader getReturn();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getReturn <em>Return</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Return</em>' reference.
+	 * @see #getReturn()
+	 * @generated
+	 */
+	void setReturn(ReturnHeader value);
+
+	/**
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeOrderReturn_Order()
+	 * @model keys="orderId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	OrderHeader getOrder();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getOrder <em>Order</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
+	 * @generated
+	 */
+	void setOrder(OrderHeader value);
+
+	/**
+	 * Returns the value of the '<em><b>Tracking Code Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tracking Code Type</em>' reference.
+	 * @see #setTrackingCodeType(TrackingCodeType)
+	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeOrderReturn_TrackingCodeType()
+	 * @model keys="trackingCodeTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	TrackingCodeType getTrackingCodeType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getTrackingCodeType <em>Tracking Code Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tracking Code Type</em>' reference.
+	 * @see #getTrackingCodeType()
+	 * @generated
+	 */
+	void setTrackingCodeType(TrackingCodeType value);
+
 	/**
 	 * Returns the value of the '<em><b>Affiliate Referred Time Stamp</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -109,33 +178,6 @@ public interface TrackingCodeOrderReturn extends EntityIdentifiable, EntityInfo 
 	void setIsBillable(Boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeOrderReturn_OrderId()
-	 * @model keys="orderId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	OrderHeader getOrderId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getOrderId <em>Order Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
-	 * @generated
-	 */
-	void setOrderId(OrderHeader value);
-
-	/**
 	 * Returns the value of the '<em><b>Order Item Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -160,33 +202,6 @@ public interface TrackingCodeOrderReturn extends EntityIdentifiable, EntityInfo 
 	 * @generated
 	 */
 	void setOrderItemSeqId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Return Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Return Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Return Id</em>' reference.
-	 * @see #setReturnId(ReturnHeader)
-	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeOrderReturn_ReturnId()
-	 * @model keys="returnId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ReturnHeader getReturnId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getReturnId <em>Return Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Return Id</em>' reference.
-	 * @see #getReturnId()
-	 * @generated
-	 */
-	void setReturnId(ReturnHeader value);
 
 	/**
 	 * Returns the value of the '<em><b>Site Id</b></em>' attribute.
@@ -215,56 +230,25 @@ public interface TrackingCodeOrderReturn extends EntityIdentifiable, EntityInfo 
 	void setSiteId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Tracking Code Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Tracking Code</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tracking Code Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tracking Code Id</em>' reference.
-	 * @see #setTrackingCodeId(TrackingCode)
-	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeOrderReturn_TrackingCodeId()
+	 * @return the value of the '<em>Tracking Code</em>' reference.
+	 * @see #setTrackingCode(TrackingCode)
+	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeOrderReturn_TrackingCode()
 	 * @model keys="trackingCodeId"
 	 * @generated
 	 */
-	TrackingCode getTrackingCodeId();
+	TrackingCode getTrackingCode();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getTrackingCodeId <em>Tracking Code Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getTrackingCode <em>Tracking Code</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tracking Code Id</em>' reference.
-	 * @see #getTrackingCodeId()
+	 * @param value the new value of the '<em>Tracking Code</em>' reference.
+	 * @see #getTrackingCode()
 	 * @generated
 	 */
-	void setTrackingCodeId(TrackingCode value);
-
-	/**
-	 * Returns the value of the '<em><b>Tracking Code Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tracking Code Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tracking Code Type Id</em>' reference.
-	 * @see #setTrackingCodeTypeId(TrackingCodeType)
-	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeOrderReturn_TrackingCodeTypeId()
-	 * @model keys="trackingCodeTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	TrackingCodeType getTrackingCodeTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getTrackingCodeTypeId <em>Tracking Code Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tracking Code Type Id</em>' reference.
-	 * @see #getTrackingCodeTypeId()
-	 * @generated
-	 */
-	void setTrackingCodeTypeId(TrackingCodeType value);
+	void setTrackingCode(TrackingCode value);
 
 } // TrackingCodeOrderReturn

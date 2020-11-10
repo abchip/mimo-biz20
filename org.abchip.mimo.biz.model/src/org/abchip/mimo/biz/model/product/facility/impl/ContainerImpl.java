@@ -32,9 +32,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerImpl#getContainerId <em>Container Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerImpl#getContainerGeoPoints <em>Container Geo Points</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerImpl#getContainerTypeId <em>Container Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerImpl#getContainerType <em>Container Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerImpl#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerImpl#getFacility <em>Facility</em>}</li>
  * </ul>
  *
  * @generated
@@ -176,8 +176,8 @@ public class ContainerImpl extends EntityTypedImpl<ContainerType> implements org
 	 * @generated
 	 */
 	@Override
-	public ContainerType getContainerTypeId() {
-		return (ContainerType)eGet(FacilityPackage.Literals.CONTAINER__CONTAINER_TYPE_ID, true);
+	public Facility getFacility() {
+		return (Facility)eGet(FacilityPackage.Literals.CONTAINER__FACILITY, true);
 	}
 
 	/**
@@ -186,28 +186,8 @@ public class ContainerImpl extends EntityTypedImpl<ContainerType> implements org
 	 * @generated
 	 */
 	@Override
-	public void setContainerTypeId(ContainerType newContainerTypeId) {
-		eSet(FacilityPackage.Literals.CONTAINER__CONTAINER_TYPE_ID, newContainerTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(FacilityPackage.Literals.CONTAINER__FACILITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(FacilityPackage.Literals.CONTAINER__FACILITY_ID, newFacilityId);
+	public void setFacility(Facility newFacility) {
+		eSet(FacilityPackage.Literals.CONTAINER__FACILITY, newFacility);
 	}
 
 	/**
@@ -277,6 +257,26 @@ public class ContainerImpl extends EntityTypedImpl<ContainerType> implements org
 	@Override
 	public List<ContainerGeoPoint> getContainerGeoPoints() {
 		return (List<ContainerGeoPoint>)eGet(FacilityPackage.Literals.CONTAINER__CONTAINER_GEO_POINTS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContainerType getContainerType() {
+		return (ContainerType)eGet(FacilityPackage.Literals.CONTAINER__CONTAINER_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContainerType(ContainerType newContainerType) {
+		eSet(FacilityPackage.Literals.CONTAINER__CONTAINER_TYPE, newContainerType);
 	}
 
 } //ContainerImpl

@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderProductPromoCode#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderProductPromoCode#getProductPromoCodeId <em>Product Promo Code Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderProductPromoCode#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderProductPromoCode#getProductPromoCode <em>Product Promo Code</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderProductPromoCode()
@@ -30,57 +30,49 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface OrderProductPromoCode extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderProductPromoCode_OrderId()
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderProductPromoCode_Order()
 	 * @model keys="orderId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	OrderHeader getOrderId();
+	OrderHeader getOrder();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderProductPromoCode#getOrderId <em>Order Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderProductPromoCode#getOrder <em>Order</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
 	 * @generated
 	 */
-	void setOrderId(OrderHeader value);
+	void setOrder(OrderHeader value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Promo Code Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Promo Code</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Promo Code Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Promo Code Id</em>' reference.
-	 * @see #setProductPromoCodeId(ProductPromoCode)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderProductPromoCode_ProductPromoCodeId()
+	 * @return the value of the '<em>Product Promo Code</em>' reference.
+	 * @see #setProductPromoCode(ProductPromoCode)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderProductPromoCode_ProductPromoCode()
 	 * @model keys="productPromoCodeId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ProductPromoCode getProductPromoCodeId();
+	ProductPromoCode getProductPromoCode();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderProductPromoCode#getProductPromoCodeId <em>Product Promo Code Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderProductPromoCode#getProductPromoCode <em>Product Promo Code</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Promo Code Id</em>' reference.
-	 * @see #getProductPromoCodeId()
+	 * @param value the new value of the '<em>Product Promo Code</em>' reference.
+	 * @see #getProductPromoCode()
 	 * @generated
 	 */
-	void setProductPromoCodeId(ProductPromoCode value);
+	void setProductPromoCode(ProductPromoCode value);
 
 } // OrderProductPromoCode

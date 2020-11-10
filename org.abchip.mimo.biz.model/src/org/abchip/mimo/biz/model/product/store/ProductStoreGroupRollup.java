@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroupRollup#getProductStoreGroupId <em>Product Store Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroupRollup#getParentGroupId <em>Parent Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroupRollup#getProductStoreGroup <em>Product Store Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroupRollup#getParentGroup <em>Parent Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroupRollup#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroupRollup#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroupRollup#getThruDate <em>Thru Date</em>}</li>
@@ -32,6 +32,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductStoreGroupRollup extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product Store Group</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Store Group</em>' reference.
+	 * @see #setProductStoreGroup(ProductStoreGroup)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreGroupRollup_ProductStoreGroup()
+	 * @model keys="productStoreGroupId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductStoreGroup getProductStoreGroup();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroupRollup#getProductStoreGroup <em>Product Store Group</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Store Group</em>' reference.
+	 * @see #getProductStoreGroup()
+	 * @generated
+	 */
+	void setProductStoreGroup(ProductStoreGroup value);
+
+	/**
+	 * Returns the value of the '<em><b>Parent Group</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Parent Group</em>' reference.
+	 * @see #setParentGroup(ProductStoreGroup)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreGroupRollup_ParentGroup()
+	 * @model keys="productStoreGroupId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductStoreGroup getParentGroup();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroupRollup#getParentGroup <em>Parent Group</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Parent Group</em>' reference.
+	 * @see #getParentGroup()
+	 * @generated
+	 */
+	void setParentGroup(ProductStoreGroup value);
+
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -110,59 +156,5 @@ public interface ProductStoreGroupRollup extends EntityIdentifiable, EntityInfo 
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Store Group Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Group Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store Group Id</em>' reference.
-	 * @see #setProductStoreGroupId(ProductStoreGroup)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreGroupRollup_ProductStoreGroupId()
-	 * @model keys="productStoreGroupId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductStoreGroup getProductStoreGroupId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroupRollup#getProductStoreGroupId <em>Product Store Group Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store Group Id</em>' reference.
-	 * @see #getProductStoreGroupId()
-	 * @generated
-	 */
-	void setProductStoreGroupId(ProductStoreGroup value);
-
-	/**
-	 * Returns the value of the '<em><b>Parent Group Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Group Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Group Id</em>' reference.
-	 * @see #setParentGroupId(ProductStoreGroup)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreGroupRollup_ParentGroupId()
-	 * @model keys="productStoreGroupId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductStoreGroup getParentGroupId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroupRollup#getParentGroupId <em>Parent Group Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Group Id</em>' reference.
-	 * @see #getParentGroupId()
-	 * @generated
-	 */
-	void setParentGroupId(ProductStoreGroup value);
 
 } // ProductStoreGroupRollup

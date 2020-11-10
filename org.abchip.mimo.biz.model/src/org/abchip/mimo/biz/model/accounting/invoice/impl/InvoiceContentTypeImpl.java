@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContentTypeImpl#getInvoiceContentTypeId <em>Invoice Content Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContentTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContentTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContentTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -199,8 +199,8 @@ public class InvoiceContentTypeImpl extends EntityTypeImpl<InvoiceContent> imple
 	 * @generated
 	 */
 	@Override
-	public InvoiceContentType getParentTypeId() {
-		return (InvoiceContentType)eGet(InvoicePackage.Literals.INVOICE_CONTENT_TYPE__PARENT_TYPE_ID, true);
+	public InvoiceContentType getParentType() {
+		return (InvoiceContentType)eGet(InvoicePackage.Literals.INVOICE_CONTENT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -209,8 +209,8 @@ public class InvoiceContentTypeImpl extends EntityTypeImpl<InvoiceContent> imple
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(InvoiceContentType newParentTypeId) {
-		eSet(InvoicePackage.Literals.INVOICE_CONTENT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(InvoiceContentType newParentType) {
+		eSet(InvoicePackage.Literals.INVOICE_CONTENT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

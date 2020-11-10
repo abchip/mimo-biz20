@@ -31,14 +31,14 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeGlAccountImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeGlAccountImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeGlAccountImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeGlAccountImpl#getFixedAssetTypeId <em>Fixed Asset Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeGlAccountImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeGlAccountImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeGlAccountImpl#getAccDepGlAccountId <em>Acc Dep Gl Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeGlAccountImpl#getAssetGlAccountId <em>Asset Gl Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeGlAccountImpl#getDepGlAccountId <em>Dep Gl Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeGlAccountImpl#getLossGlAccountId <em>Loss Gl Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeGlAccountImpl#getProfitGlAccountId <em>Profit Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeGlAccountImpl#getFixedAssetType <em>Fixed Asset Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeGlAccountImpl#getFixedAsset <em>Fixed Asset</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeGlAccountImpl#getOrganizationParty <em>Organization Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeGlAccountImpl#getAccDepGlAccount <em>Acc Dep Gl Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeGlAccountImpl#getAssetGlAccount <em>Asset Gl Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeGlAccountImpl#getDepGlAccount <em>Dep Gl Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeGlAccountImpl#getLossGlAccount <em>Loss Gl Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeGlAccountImpl#getProfitGlAccount <em>Profit Gl Account</em>}</li>
  * </ul>
  *
  * @generated
@@ -159,8 +159,8 @@ public class FixedAssetTypeGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public GlAccount getAccDepGlAccountId() {
-		return (GlAccount)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__ACC_DEP_GL_ACCOUNT_ID, true);
+	public FixedAssetType getFixedAssetType() {
+		return (FixedAssetType)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__FIXED_ASSET_TYPE, true);
 	}
 
 	/**
@@ -169,8 +169,8 @@ public class FixedAssetTypeGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setAccDepGlAccountId(GlAccount newAccDepGlAccountId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__ACC_DEP_GL_ACCOUNT_ID, newAccDepGlAccountId);
+	public void setFixedAssetType(FixedAssetType newFixedAssetType) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__FIXED_ASSET_TYPE, newFixedAssetType);
 	}
 
 	/**
@@ -179,8 +179,8 @@ public class FixedAssetTypeGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public GlAccount getAssetGlAccountId() {
-		return (GlAccount)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__ASSET_GL_ACCOUNT_ID, true);
+	public FixedAsset getFixedAsset() {
+		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__FIXED_ASSET, true);
 	}
 
 	/**
@@ -189,8 +189,8 @@ public class FixedAssetTypeGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setAssetGlAccountId(GlAccount newAssetGlAccountId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__ASSET_GL_ACCOUNT_ID, newAssetGlAccountId);
+	public void setFixedAsset(FixedAsset newFixedAsset) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__FIXED_ASSET, newFixedAsset);
 	}
 
 	/**
@@ -199,8 +199,8 @@ public class FixedAssetTypeGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public GlAccount getDepGlAccountId() {
-		return (GlAccount)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__DEP_GL_ACCOUNT_ID, true);
+	public Party getOrganizationParty() {
+		return (Party)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY, true);
 	}
 
 	/**
@@ -209,8 +209,8 @@ public class FixedAssetTypeGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setDepGlAccountId(GlAccount newDepGlAccountId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__DEP_GL_ACCOUNT_ID, newDepGlAccountId);
+	public void setOrganizationParty(Party newOrganizationParty) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY, newOrganizationParty);
 	}
 
 	/**
@@ -219,8 +219,8 @@ public class FixedAssetTypeGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public GlAccount getLossGlAccountId() {
-		return (GlAccount)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__LOSS_GL_ACCOUNT_ID, true);
+	public GlAccount getAccDepGlAccount() {
+		return (GlAccount)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__ACC_DEP_GL_ACCOUNT, true);
 	}
 
 	/**
@@ -229,8 +229,8 @@ public class FixedAssetTypeGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setLossGlAccountId(GlAccount newLossGlAccountId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__LOSS_GL_ACCOUNT_ID, newLossGlAccountId);
+	public void setAccDepGlAccount(GlAccount newAccDepGlAccount) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__ACC_DEP_GL_ACCOUNT, newAccDepGlAccount);
 	}
 
 	/**
@@ -239,8 +239,8 @@ public class FixedAssetTypeGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public Party getOrganizationPartyId() {
-		return (Party)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY_ID, true);
+	public GlAccount getAssetGlAccount() {
+		return (GlAccount)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__ASSET_GL_ACCOUNT, true);
 	}
 
 	/**
@@ -249,8 +249,8 @@ public class FixedAssetTypeGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setOrganizationPartyId(Party newOrganizationPartyId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY_ID, newOrganizationPartyId);
+	public void setAssetGlAccount(GlAccount newAssetGlAccount) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__ASSET_GL_ACCOUNT, newAssetGlAccount);
 	}
 
 	/**
@@ -259,8 +259,8 @@ public class FixedAssetTypeGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public GlAccount getProfitGlAccountId() {
-		return (GlAccount)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__PROFIT_GL_ACCOUNT_ID, true);
+	public GlAccount getDepGlAccount() {
+		return (GlAccount)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__DEP_GL_ACCOUNT, true);
 	}
 
 	/**
@@ -269,8 +269,48 @@ public class FixedAssetTypeGlAccountImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setProfitGlAccountId(GlAccount newProfitGlAccountId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__PROFIT_GL_ACCOUNT_ID, newProfitGlAccountId);
+	public void setDepGlAccount(GlAccount newDepGlAccount) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__DEP_GL_ACCOUNT, newDepGlAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GlAccount getLossGlAccount() {
+		return (GlAccount)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__LOSS_GL_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLossGlAccount(GlAccount newLossGlAccount) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__LOSS_GL_ACCOUNT, newLossGlAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GlAccount getProfitGlAccount() {
+		return (GlAccount)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__PROFIT_GL_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProfitGlAccount(GlAccount newProfitGlAccount) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__PROFIT_GL_ACCOUNT, newProfitGlAccount);
 	}
 
 	/**
@@ -309,46 +349,6 @@ public class FixedAssetTypeGlAccountImpl extends EntityIdentifiableImpl implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FixedAssetType getFixedAssetTypeId() {
-		return (FixedAssetType)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__FIXED_ASSET_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFixedAssetTypeId(FixedAssetType newFixedAssetTypeId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__FIXED_ASSET_TYPE_ID, newFixedAssetTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FixedAsset getFixedAssetId() {
-		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__FIXED_ASSET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFixedAssetId(FixedAsset newFixedAssetId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_GL_ACCOUNT__FIXED_ASSET_ID, newFixedAssetId);
 	}
 
 } //FixedAssetTypeGlAccountImpl

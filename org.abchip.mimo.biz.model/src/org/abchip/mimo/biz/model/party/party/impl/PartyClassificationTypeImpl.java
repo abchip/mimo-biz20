@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationTypeImpl#getPartyClassificationTypeId <em>Party Classification Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -199,8 +199,8 @@ public class PartyClassificationTypeImpl extends EntityTypeImpl<PartyClassificat
 	 * @generated
 	 */
 	@Override
-	public PartyClassificationType getParentTypeId() {
-		return (PartyClassificationType)eGet(PartyPackage.Literals.PARTY_CLASSIFICATION_TYPE__PARENT_TYPE_ID, true);
+	public PartyClassificationType getParentType() {
+		return (PartyClassificationType)eGet(PartyPackage.Literals.PARTY_CLASSIFICATION_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -209,8 +209,8 @@ public class PartyClassificationTypeImpl extends EntityTypeImpl<PartyClassificat
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(PartyClassificationType newParentTypeId) {
-		eSet(PartyPackage.Literals.PARTY_CLASSIFICATION_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(PartyClassificationType newParentType) {
+		eSet(PartyPackage.Literals.PARTY_CLASSIFICATION_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

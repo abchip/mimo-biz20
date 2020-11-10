@@ -29,10 +29,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.user.impl.UserPreferenceImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.user.impl.UserPreferenceImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.user.impl.UserPreferenceImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.user.impl.UserPreferenceImpl#getUserLoginId <em>User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.user.impl.UserPreferenceImpl#getUserLogin <em>User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.user.impl.UserPreferenceImpl#getUserPrefTypeId <em>User Pref Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.user.impl.UserPreferenceImpl#getUserPrefDataType <em>User Pref Data Type</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.user.impl.UserPreferenceImpl#getUserPrefGroupTypeId <em>User Pref Group Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.user.impl.UserPreferenceImpl#getUserPrefGroupType <em>User Pref Group Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.user.impl.UserPreferenceImpl#getUserPrefValue <em>User Pref Value</em>}</li>
  * </ul>
  *
@@ -154,8 +154,8 @@ public class UserPreferenceImpl extends EntityTypedImpl<UserPrefGroupType> imple
 	 * @generated
 	 */
 	@Override
-	public UserLogin getUserLoginId() {
-		return (UserLogin)eGet(UserPackage.Literals.USER_PREFERENCE__USER_LOGIN_ID, true);
+	public UserLogin getUserLogin() {
+		return (UserLogin)eGet(UserPackage.Literals.USER_PREFERENCE__USER_LOGIN, true);
 	}
 
 	/**
@@ -164,8 +164,8 @@ public class UserPreferenceImpl extends EntityTypedImpl<UserPrefGroupType> imple
 	 * @generated
 	 */
 	@Override
-	public void setUserLoginId(UserLogin newUserLoginId) {
-		eSet(UserPackage.Literals.USER_PREFERENCE__USER_LOGIN_ID, newUserLoginId);
+	public void setUserLogin(UserLogin newUserLogin) {
+		eSet(UserPackage.Literals.USER_PREFERENCE__USER_LOGIN, newUserLogin);
 	}
 
 	/**
@@ -194,8 +194,8 @@ public class UserPreferenceImpl extends EntityTypedImpl<UserPrefGroupType> imple
 	 * @generated
 	 */
 	@Override
-	public UserPrefGroupType getUserPrefGroupTypeId() {
-		return (UserPrefGroupType)eGet(UserPackage.Literals.USER_PREFERENCE__USER_PREF_GROUP_TYPE_ID, true);
+	public UserPrefGroupType getUserPrefGroupType() {
+		return (UserPrefGroupType)eGet(UserPackage.Literals.USER_PREFERENCE__USER_PREF_GROUP_TYPE, true);
 	}
 
 	/**
@@ -204,8 +204,8 @@ public class UserPreferenceImpl extends EntityTypedImpl<UserPrefGroupType> imple
 	 * @generated
 	 */
 	@Override
-	public void setUserPrefGroupTypeId(UserPrefGroupType newUserPrefGroupTypeId) {
-		eSet(UserPackage.Literals.USER_PREFERENCE__USER_PREF_GROUP_TYPE_ID, newUserPrefGroupTypeId);
+	public void setUserPrefGroupType(UserPrefGroupType newUserPrefGroupType) {
+		eSet(UserPackage.Literals.USER_PREFERENCE__USER_PREF_GROUP_TYPE, newUserPrefGroupType);
 	}
 
 	/**

@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.ValidContactMechRole#getRoleTypeId <em>Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.ValidContactMechRole#getContactMechTypeId <em>Contact Mech Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.ValidContactMechRole#getRoleType <em>Role Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.ValidContactMechRole#getContactMechType <em>Contact Mech Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getValidContactMechRole()
@@ -30,57 +30,49 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface ValidContactMechRole extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Role Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Role Type Id</em>' reference.
-	 * @see #setRoleTypeId(RoleType)
-	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getValidContactMechRole_RoleTypeId()
+	 * @return the value of the '<em>Role Type</em>' reference.
+	 * @see #setRoleType(RoleType)
+	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getValidContactMechRole_RoleType()
 	 * @model keys="roleTypeId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	RoleType getRoleTypeId();
+	RoleType getRoleType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.ValidContactMechRole#getRoleTypeId <em>Role Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.ValidContactMechRole#getRoleType <em>Role Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Role Type Id</em>' reference.
-	 * @see #getRoleTypeId()
+	 * @param value the new value of the '<em>Role Type</em>' reference.
+	 * @see #getRoleType()
 	 * @generated
 	 */
-	void setRoleTypeId(RoleType value);
+	void setRoleType(RoleType value);
 
 	/**
-	 * Returns the value of the '<em><b>Contact Mech Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Contact Mech Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Mech Type Id</em>' reference.
-	 * @see #setContactMechTypeId(ContactMechType)
-	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getValidContactMechRole_ContactMechTypeId()
+	 * @return the value of the '<em>Contact Mech Type</em>' reference.
+	 * @see #setContactMechType(ContactMechType)
+	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getValidContactMechRole_ContactMechType()
 	 * @model keys="contactMechTypeId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ContactMechType getContactMechTypeId();
+	ContactMechType getContactMechType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.ValidContactMechRole#getContactMechTypeId <em>Contact Mech Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.ValidContactMechRole#getContactMechType <em>Contact Mech Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Mech Type Id</em>' reference.
-	 * @see #getContactMechTypeId()
+	 * @param value the new value of the '<em>Contact Mech Type</em>' reference.
+	 * @see #getContactMechType()
 	 * @generated
 	 */
-	void setContactMechTypeId(ContactMechType value);
+	void setContactMechType(ContactMechType value);
 
 } // ValidContactMechRole

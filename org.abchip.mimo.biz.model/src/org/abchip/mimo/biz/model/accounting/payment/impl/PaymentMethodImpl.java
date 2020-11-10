@@ -33,11 +33,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodImpl#getPaymentMethodId <em>Payment Method Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodImpl#getFinAccountId <em>Fin Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodImpl#getFinAccount <em>Fin Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodImpl#getGlAccountId <em>Gl Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodImpl#getPaymentMethodTypeId <em>Payment Method Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodImpl#getGlAccount <em>Gl Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodImpl#getPaymentMethodType <em>Payment Method Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -179,6 +179,26 @@ public class PaymentMethodImpl extends EntityIdentifiableImpl implements Payment
 	 * @generated
 	 */
 	@Override
+	public FinAccount getFinAccount() {
+		return (FinAccount)eGet(PaymentPackage.Literals.PAYMENT_METHOD__FIN_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFinAccount(FinAccount newFinAccount) {
+		eSet(PaymentPackage.Literals.PAYMENT_METHOD__FIN_ACCOUNT, newFinAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(PaymentPackage.Literals.PAYMENT_METHOD__FROM_DATE, true);
 	}
@@ -199,8 +219,8 @@ public class PaymentMethodImpl extends EntityIdentifiableImpl implements Payment
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(PaymentPackage.Literals.PAYMENT_METHOD__PARTY_ID, true);
+	public GlAccount getGlAccount() {
+		return (GlAccount)eGet(PaymentPackage.Literals.PAYMENT_METHOD__GL_ACCOUNT, true);
 	}
 
 	/**
@@ -209,8 +229,48 @@ public class PaymentMethodImpl extends EntityIdentifiableImpl implements Payment
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(PaymentPackage.Literals.PAYMENT_METHOD__PARTY_ID, newPartyId);
+	public void setGlAccount(GlAccount newGlAccount) {
+		eSet(PaymentPackage.Literals.PAYMENT_METHOD__GL_ACCOUNT, newGlAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(PaymentPackage.Literals.PAYMENT_METHOD__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(PaymentPackage.Literals.PAYMENT_METHOD__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PaymentMethodType getPaymentMethodType() {
+		return (PaymentMethodType)eGet(PaymentPackage.Literals.PAYMENT_METHOD__PAYMENT_METHOD_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPaymentMethodType(PaymentMethodType newPaymentMethodType) {
+		eSet(PaymentPackage.Literals.PAYMENT_METHOD__PAYMENT_METHOD_TYPE, newPaymentMethodType);
 	}
 
 	/**
@@ -269,66 +329,6 @@ public class PaymentMethodImpl extends EntityIdentifiableImpl implements Payment
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PaymentMethodType getPaymentMethodTypeId() {
-		return (PaymentMethodType)eGet(PaymentPackage.Literals.PAYMENT_METHOD__PAYMENT_METHOD_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaymentMethodTypeId(PaymentMethodType newPaymentMethodTypeId) {
-		eSet(PaymentPackage.Literals.PAYMENT_METHOD__PAYMENT_METHOD_TYPE_ID, newPaymentMethodTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GlAccount getGlAccountId() {
-		return (GlAccount)eGet(PaymentPackage.Literals.PAYMENT_METHOD__GL_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGlAccountId(GlAccount newGlAccountId) {
-		eSet(PaymentPackage.Literals.PAYMENT_METHOD__GL_ACCOUNT_ID, newGlAccountId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FinAccount getFinAccountId() {
-		return (FinAccount)eGet(PaymentPackage.Literals.PAYMENT_METHOD__FIN_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFinAccountId(FinAccount newFinAccountId) {
-		eSet(PaymentPackage.Literals.PAYMENT_METHOD__FIN_ACCOUNT_ID, newFinAccountId);
 	}
 
 	/**

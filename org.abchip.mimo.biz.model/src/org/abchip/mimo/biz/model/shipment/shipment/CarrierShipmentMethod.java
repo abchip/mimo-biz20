@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentMethod#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentMethod#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentMethod#getShipmentMethodType <em>Shipment Method Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentMethod#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentMethod#getRoleTypeId <em>Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentMethod#getCarrierServiceCode <em>Carrier Service Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentMethod#getSequenceNumber <em>Sequence Number</em>}</li>
@@ -32,6 +32,52 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface CarrierShipmentMethod extends EntityTyped<ShipmentMethodType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Shipment Method Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Shipment Method Type</em>' reference.
+	 * @see #setShipmentMethodType(ShipmentMethodType)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getCarrierShipmentMethod_ShipmentMethodType()
+	 * @model keys="shipmentMethodTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ShipmentMethodType getShipmentMethodType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentMethod#getShipmentMethodType <em>Shipment Method Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Shipment Method Type</em>' reference.
+	 * @see #getShipmentMethodType()
+	 * @generated
+	 */
+	void setShipmentMethodType(ShipmentMethodType value);
+
+	/**
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getCarrierShipmentMethod_Party()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentMethod#getParty <em>Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
+	 * @generated
+	 */
+	void setParty(Party value);
+
 	/**
 	 * Returns the value of the '<em><b>Carrier Service Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -57,33 +103,6 @@ public interface CarrierShipmentMethod extends EntityTyped<ShipmentMethodType>, 
 	 * @generated
 	 */
 	void setCarrierServiceCode(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getCarrierShipmentMethod_PartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentMethod#getPartyId <em>Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
-	 * @generated
-	 */
-	void setPartyId(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Role Type Id</b></em>' attribute.
@@ -138,32 +157,5 @@ public interface CarrierShipmentMethod extends EntityTyped<ShipmentMethodType>, 
 	 * @generated
 	 */
 	void setSequenceNumber(long value);
-
-	/**
-	 * Returns the value of the '<em><b>Shipment Method Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Method Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shipment Method Type Id</em>' reference.
-	 * @see #setShipmentMethodTypeId(ShipmentMethodType)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getCarrierShipmentMethod_ShipmentMethodTypeId()
-	 * @model keys="shipmentMethodTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ShipmentMethodType getShipmentMethodTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentMethod#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shipment Method Type Id</em>' reference.
-	 * @see #getShipmentMethodTypeId()
-	 * @generated
-	 */
-	void setShipmentMethodTypeId(ShipmentMethodType value);
 
 } // CarrierShipmentMethod

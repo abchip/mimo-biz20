@@ -26,7 +26,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.Geo#getGeoCode <em>Geo Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.Geo#getGeoName <em>Geo Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.Geo#getGeoSecCode <em>Geo Sec Code</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.geo.Geo#getGeoTypeId <em>Geo Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.Geo#getGeoType <em>Geo Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.Geo#getMainGeoAssocs <em>Main Geo Assocs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.Geo#getTaxAuthTaxAuthorities <em>Tax Auth Tax Authorities</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.Geo#getWellKnownText <em>Well Known Text</em>}</li>
@@ -142,6 +142,28 @@ public interface Geo extends EntityTyped<GeoType>, EntityInfo {
 	void setGeoSecCode(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Geo Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Geo Type</em>' reference.
+	 * @see #setGeoType(GeoType)
+	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeo_GeoType()
+	 * @model keys="geoTypeId"
+	 * @generated
+	 */
+	GeoType getGeoType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.geo.Geo#getGeoType <em>Geo Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Geo Type</em>' reference.
+	 * @see #getGeoType()
+	 * @generated
+	 */
+	void setGeoType(GeoType value);
+
+	/**
 	 * Returns the value of the '<em><b>Well Known Text</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -166,32 +188,6 @@ public interface Geo extends EntityTyped<GeoType>, EntityInfo {
 	 * @generated
 	 */
 	void setWellKnownText(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Geo Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geo Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Geo Type Id</em>' reference.
-	 * @see #setGeoTypeId(GeoType)
-	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeo_GeoTypeId()
-	 * @model keys="geoTypeId"
-	 * @generated
-	 */
-	GeoType getGeoTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.geo.Geo#getGeoTypeId <em>Geo Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Geo Type Id</em>' reference.
-	 * @see #getGeoTypeId()
-	 * @generated
-	 */
-	void setGeoTypeId(GeoType value);
 
 	/**
 	 * Returns the value of the '<em><b>Main Geo Assocs</b></em>' reference list.

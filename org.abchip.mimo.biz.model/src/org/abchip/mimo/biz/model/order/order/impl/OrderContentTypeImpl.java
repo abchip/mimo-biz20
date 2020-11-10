@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentTypeImpl#getOrderContentTypeId <em>Order Content Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,6 +200,26 @@ public class OrderContentTypeImpl extends EntityTypeImpl<OrderContent> implement
 	 * @generated
 	 */
 	@Override
+	public OrderContentType getParentType() {
+		return (OrderContentType)eGet(OrderPackage.Literals.ORDER_CONTENT_TYPE__PARENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParentType(OrderContentType newParentType) {
+		eSet(OrderPackage.Literals.ORDER_CONTENT_TYPE__PARENT_TYPE, newParentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getOrderContentTypeId() {
 		return (String)eGet(OrderPackage.Literals.ORDER_CONTENT_TYPE__ORDER_CONTENT_TYPE_ID, true);
 	}
@@ -212,26 +232,6 @@ public class OrderContentTypeImpl extends EntityTypeImpl<OrderContent> implement
 	@Override
 	public void setOrderContentTypeId(String newOrderContentTypeId) {
 		eSet(OrderPackage.Literals.ORDER_CONTENT_TYPE__ORDER_CONTENT_TYPE_ID, newOrderContentTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderContentType getParentTypeId() {
-		return (OrderContentType)eGet(OrderPackage.Literals.ORDER_CONTENT_TYPE__PARENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentTypeId(OrderContentType newParentTypeId) {
-		eSet(OrderPackage.Literals.ORDER_CONTENT_TYPE__PARENT_TYPE_ID, newParentTypeId);
 	}
 
 	/**

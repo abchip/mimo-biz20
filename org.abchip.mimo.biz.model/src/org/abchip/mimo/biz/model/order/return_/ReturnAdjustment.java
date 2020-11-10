@@ -41,24 +41,24 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getIncludeInTax <em>Include In Tax</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getLastModifiedDate <em>Last Modified Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getOrderAdjustmentId <em>Order Adjustment Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getOverrideGlAccountId <em>Override Gl Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getPrimaryGeoId <em>Primary Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getOrderAdjustment <em>Order Adjustment</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getOverrideGlAccount <em>Override Gl Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getPrimaryGeo <em>Primary Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getProductFeatureId <em>Product Feature Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getProductPromo <em>Product Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getProductPromoActionSeqId <em>Product Promo Action Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getProductPromoId <em>Product Promo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getProductPromoRuleId <em>Product Promo Rule Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getReturnAdjustmentTypeId <em>Return Adjustment Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getReturnId <em>Return Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getReturn <em>Return</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getReturnAdjustmentType <em>Return Adjustment Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getReturnItemSeqId <em>Return Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getReturnTypeId <em>Return Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getSecondaryGeoId <em>Secondary Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getReturnType <em>Return Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getSecondaryGeo <em>Secondary Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getShipGroupSeqId <em>Ship Group Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getSourcePercentage <em>Source Percentage</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getSourceReferenceId <em>Source Reference Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getTaxAuthPartyId <em>Tax Auth Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getTaxAuthorityRateSeqId <em>Tax Authority Rate Seq Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getTaxAuthorityRateSeq <em>Tax Authority Rate Seq</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment()
@@ -373,84 +373,72 @@ public interface ReturnAdjustment extends EntityTyped<ReturnAdjustmentType>, Ent
 	void setLastModifiedDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Order Adjustment Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Order Adjustment</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Adjustment Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Adjustment Id</em>' reference.
-	 * @see #setOrderAdjustmentId(OrderAdjustment)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_OrderAdjustmentId()
+	 * @return the value of the '<em>Order Adjustment</em>' reference.
+	 * @see #setOrderAdjustment(OrderAdjustment)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_OrderAdjustment()
 	 * @model keys="orderAdjustmentId"
 	 * @generated
 	 */
-	OrderAdjustment getOrderAdjustmentId();
+	OrderAdjustment getOrderAdjustment();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getOrderAdjustmentId <em>Order Adjustment Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getOrderAdjustment <em>Order Adjustment</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Adjustment Id</em>' reference.
-	 * @see #getOrderAdjustmentId()
+	 * @param value the new value of the '<em>Order Adjustment</em>' reference.
+	 * @see #getOrderAdjustment()
 	 * @generated
 	 */
-	void setOrderAdjustmentId(OrderAdjustment value);
+	void setOrderAdjustment(OrderAdjustment value);
 
 	/**
-	 * Returns the value of the '<em><b>Override Gl Account Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Override Gl Account</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Override Gl Account Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Override Gl Account Id</em>' reference.
-	 * @see #setOverrideGlAccountId(GlAccount)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_OverrideGlAccountId()
+	 * @return the value of the '<em>Override Gl Account</em>' reference.
+	 * @see #setOverrideGlAccount(GlAccount)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_OverrideGlAccount()
 	 * @model keys="glAccountId"
 	 *        annotation="mimo-ent-slot help='used to specify the override or actual glAccountId used for the adjustment, avoids problems if configuration changes after initial posting, etc'"
 	 * @generated
 	 */
-	GlAccount getOverrideGlAccountId();
+	GlAccount getOverrideGlAccount();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getOverrideGlAccountId <em>Override Gl Account Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getOverrideGlAccount <em>Override Gl Account</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Override Gl Account Id</em>' reference.
-	 * @see #getOverrideGlAccountId()
+	 * @param value the new value of the '<em>Override Gl Account</em>' reference.
+	 * @see #getOverrideGlAccount()
 	 * @generated
 	 */
-	void setOverrideGlAccountId(GlAccount value);
+	void setOverrideGlAccount(GlAccount value);
 
 	/**
-	 * Returns the value of the '<em><b>Primary Geo Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Primary Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Primary Geo Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Primary Geo Id</em>' reference.
-	 * @see #setPrimaryGeoId(Geo)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_PrimaryGeoId()
+	 * @return the value of the '<em>Primary Geo</em>' reference.
+	 * @see #setPrimaryGeo(Geo)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_PrimaryGeo()
 	 * @model keys="geoId"
 	 *        annotation="mimo-ent-slot help='for tax entries this is the primary jurisdiction Geo (the smallest or most local Geo that this tax is for, usually a state/province, perhaps a county or a city)'"
 	 * @generated
 	 */
-	Geo getPrimaryGeoId();
+	Geo getPrimaryGeo();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getPrimaryGeoId <em>Primary Geo Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getPrimaryGeo <em>Primary Geo</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Primary Geo Id</em>' reference.
-	 * @see #getPrimaryGeoId()
+	 * @param value the new value of the '<em>Primary Geo</em>' reference.
+	 * @see #getPrimaryGeo()
 	 * @generated
 	 */
-	void setPrimaryGeoId(Geo value);
+	void setPrimaryGeo(Geo value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Feature Id</b></em>' attribute.
@@ -479,6 +467,28 @@ public interface ReturnAdjustment extends EntityTyped<ReturnAdjustmentType>, Ent
 	void setProductFeatureId(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Product Promo</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Promo</em>' reference.
+	 * @see #setProductPromo(ProductPromo)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_ProductPromo()
+	 * @model keys="productPromoId"
+	 * @generated
+	 */
+	ProductPromo getProductPromo();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getProductPromo <em>Product Promo</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Promo</em>' reference.
+	 * @see #getProductPromo()
+	 * @generated
+	 */
+	void setProductPromo(ProductPromo value);
+
+	/**
 	 * Returns the value of the '<em><b>Product Promo Action Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -505,32 +515,6 @@ public interface ReturnAdjustment extends EntityTyped<ReturnAdjustmentType>, Ent
 	void setProductPromoActionSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Promo Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Promo Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Promo Id</em>' reference.
-	 * @see #setProductPromoId(ProductPromo)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_ProductPromoId()
-	 * @model keys="productPromoId"
-	 * @generated
-	 */
-	ProductPromo getProductPromoId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getProductPromoId <em>Product Promo Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Promo Id</em>' reference.
-	 * @see #getProductPromoId()
-	 * @generated
-	 */
-	void setProductPromoId(ProductPromo value);
-
-	/**
 	 * Returns the value of the '<em><b>Product Promo Rule Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -555,6 +539,50 @@ public interface ReturnAdjustment extends EntityTyped<ReturnAdjustmentType>, Ent
 	 * @generated
 	 */
 	void setProductPromoRuleId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Return</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Return</em>' reference.
+	 * @see #setReturn(ReturnHeader)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_Return()
+	 * @model keys="returnId"
+	 * @generated
+	 */
+	ReturnHeader getReturn();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getReturn <em>Return</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Return</em>' reference.
+	 * @see #getReturn()
+	 * @generated
+	 */
+	void setReturn(ReturnHeader value);
+
+	/**
+	 * Returns the value of the '<em><b>Return Adjustment Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Return Adjustment Type</em>' reference.
+	 * @see #setReturnAdjustmentType(ReturnAdjustmentType)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_ReturnAdjustmentType()
+	 * @model keys="returnAdjustmentTypeId"
+	 * @generated
+	 */
+	ReturnAdjustmentType getReturnAdjustmentType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getReturnAdjustmentType <em>Return Adjustment Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Return Adjustment Type</em>' reference.
+	 * @see #getReturnAdjustmentType()
+	 * @generated
+	 */
+	void setReturnAdjustmentType(ReturnAdjustmentType value);
 
 	/**
 	 * Returns the value of the '<em><b>Return Adjustment Id</b></em>' attribute.
@@ -584,58 +612,6 @@ public interface ReturnAdjustment extends EntityTyped<ReturnAdjustmentType>, Ent
 	void setReturnAdjustmentId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Return Adjustment Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Return Adjustment Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Return Adjustment Type Id</em>' reference.
-	 * @see #setReturnAdjustmentTypeId(ReturnAdjustmentType)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_ReturnAdjustmentTypeId()
-	 * @model keys="returnAdjustmentTypeId"
-	 * @generated
-	 */
-	ReturnAdjustmentType getReturnAdjustmentTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getReturnAdjustmentTypeId <em>Return Adjustment Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Return Adjustment Type Id</em>' reference.
-	 * @see #getReturnAdjustmentTypeId()
-	 * @generated
-	 */
-	void setReturnAdjustmentTypeId(ReturnAdjustmentType value);
-
-	/**
-	 * Returns the value of the '<em><b>Return Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Return Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Return Id</em>' reference.
-	 * @see #setReturnId(ReturnHeader)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_ReturnId()
-	 * @model keys="returnId"
-	 * @generated
-	 */
-	ReturnHeader getReturnId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getReturnId <em>Return Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Return Id</em>' reference.
-	 * @see #getReturnId()
-	 * @generated
-	 */
-	void setReturnId(ReturnHeader value);
-
-	/**
 	 * Returns the value of the '<em><b>Return Item Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -662,58 +638,50 @@ public interface ReturnAdjustment extends EntityTyped<ReturnAdjustmentType>, Ent
 	void setReturnItemSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Return Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Return Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Return Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Return Type Id</em>' reference.
-	 * @see #setReturnTypeId(ReturnType)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_ReturnTypeId()
+	 * @return the value of the '<em>Return Type</em>' reference.
+	 * @see #setReturnType(ReturnType)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_ReturnType()
 	 * @model keys="returnTypeId"
 	 *        annotation="mimo-ent-slot help='actually used for disbursement type: store credit, cash refund, exchange'"
 	 * @generated
 	 */
-	ReturnType getReturnTypeId();
+	ReturnType getReturnType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getReturnTypeId <em>Return Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getReturnType <em>Return Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Return Type Id</em>' reference.
-	 * @see #getReturnTypeId()
+	 * @param value the new value of the '<em>Return Type</em>' reference.
+	 * @see #getReturnType()
 	 * @generated
 	 */
-	void setReturnTypeId(ReturnType value);
+	void setReturnType(ReturnType value);
 
 	/**
-	 * Returns the value of the '<em><b>Secondary Geo Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Secondary Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Secondary Geo Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Secondary Geo Id</em>' reference.
-	 * @see #setSecondaryGeoId(Geo)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_SecondaryGeoId()
+	 * @return the value of the '<em>Secondary Geo</em>' reference.
+	 * @see #setSecondaryGeo(Geo)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_SecondaryGeo()
 	 * @model keys="geoId"
 	 *        annotation="mimo-ent-slot help='for tax entries this is the secondary jurisdiction Geo (usually a country, or other Geo that the primary is within)'"
 	 * @generated
 	 */
-	Geo getSecondaryGeoId();
+	Geo getSecondaryGeo();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getSecondaryGeoId <em>Secondary Geo Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getSecondaryGeo <em>Secondary Geo</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Secondary Geo Id</em>' reference.
-	 * @see #getSecondaryGeoId()
+	 * @param value the new value of the '<em>Secondary Geo</em>' reference.
+	 * @see #getSecondaryGeo()
 	 * @generated
 	 */
-	void setSecondaryGeoId(Geo value);
+	void setSecondaryGeo(Geo value);
 
 	/**
 	 * Returns the value of the '<em><b>Ship Group Seq Id</b></em>' attribute.
@@ -848,29 +816,25 @@ public interface ReturnAdjustment extends EntityTyped<ReturnAdjustmentType>, Ent
 	void setTaxAuthPartyId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Tax Authority Rate Seq Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Tax Authority Rate Seq</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tax Authority Rate Seq Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tax Authority Rate Seq Id</em>' reference.
-	 * @see #setTaxAuthorityRateSeqId(TaxAuthorityRateProduct)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_TaxAuthorityRateSeqId()
+	 * @return the value of the '<em>Tax Authority Rate Seq</em>' reference.
+	 * @see #setTaxAuthorityRateSeq(TaxAuthorityRateProduct)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_TaxAuthorityRateSeq()
 	 * @model keys="taxAuthorityRateSeqId"
 	 * @generated
 	 */
-	TaxAuthorityRateProduct getTaxAuthorityRateSeqId();
+	TaxAuthorityRateProduct getTaxAuthorityRateSeq();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getTaxAuthorityRateSeqId <em>Tax Authority Rate Seq Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getTaxAuthorityRateSeq <em>Tax Authority Rate Seq</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tax Authority Rate Seq Id</em>' reference.
-	 * @see #getTaxAuthorityRateSeqId()
+	 * @param value the new value of the '<em>Tax Authority Rate Seq</em>' reference.
+	 * @see #getTaxAuthorityRateSeq()
 	 * @generated
 	 */
-	void setTaxAuthorityRateSeqId(TaxAuthorityRateProduct value);
+	void setTaxAuthorityRateSeq(TaxAuthorityRateProduct value);
 
 } // ReturnAdjustment

@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationGroupAssocImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationGroupAssocImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationGroupAssocImpl#getPartyIdTo <em>Party Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationGroupAssocImpl#getPartyInvitationId <em>Party Invitation Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationGroupAssocImpl#getPartyInvitation <em>Party Invitation</em>}</li>
  * </ul>
  *
  * @generated
@@ -171,8 +171,8 @@ public class PartyInvitationGroupAssocImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public PartyInvitation getPartyInvitationId() {
-		return (PartyInvitation)eGet(PartyPackage.Literals.PARTY_INVITATION_GROUP_ASSOC__PARTY_INVITATION_ID, true);
+	public PartyInvitation getPartyInvitation() {
+		return (PartyInvitation)eGet(PartyPackage.Literals.PARTY_INVITATION_GROUP_ASSOC__PARTY_INVITATION, true);
 	}
 
 	/**
@@ -181,8 +181,8 @@ public class PartyInvitationGroupAssocImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setPartyInvitationId(PartyInvitation newPartyInvitationId) {
-		eSet(PartyPackage.Literals.PARTY_INVITATION_GROUP_ASSOC__PARTY_INVITATION_ID, newPartyInvitationId);
+	public void setPartyInvitation(PartyInvitation newPartyInvitation) {
+		eSet(PartyPackage.Literals.PARTY_INVITATION_GROUP_ASSOC__PARTY_INVITATION, newPartyInvitation);
 	}
 
 	/**

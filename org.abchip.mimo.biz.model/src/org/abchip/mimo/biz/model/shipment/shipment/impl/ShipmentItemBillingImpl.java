@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentItemBillingImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentItemBillingImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentItemBillingImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentItemBillingImpl#getShipmentId <em>Shipment Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentItemBillingImpl#getInvoiceId <em>Invoice Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentItemBillingImpl#getShipment <em>Shipment</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentItemBillingImpl#getInvoice <em>Invoice</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentItemBillingImpl#getInvoiceItemSeqId <em>Invoice Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentItemBillingImpl#getShipmentItemSeqId <em>Shipment Item Seq Id</em>}</li>
  * </ul>
@@ -154,8 +154,8 @@ public class ShipmentItemBillingImpl extends EntityIdentifiableImpl implements S
 	 * @generated
 	 */
 	@Override
-	public Invoice getInvoiceId() {
-		return (Invoice)eGet(Shipment_Package.Literals.SHIPMENT_ITEM_BILLING__INVOICE_ID, true);
+	public Shipment getShipment() {
+		return (Shipment)eGet(Shipment_Package.Literals.SHIPMENT_ITEM_BILLING__SHIPMENT, true);
 	}
 
 	/**
@@ -164,8 +164,28 @@ public class ShipmentItemBillingImpl extends EntityIdentifiableImpl implements S
 	 * @generated
 	 */
 	@Override
-	public void setInvoiceId(Invoice newInvoiceId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_ITEM_BILLING__INVOICE_ID, newInvoiceId);
+	public void setShipment(Shipment newShipment) {
+		eSet(Shipment_Package.Literals.SHIPMENT_ITEM_BILLING__SHIPMENT, newShipment);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Invoice getInvoice() {
+		return (Invoice)eGet(Shipment_Package.Literals.SHIPMENT_ITEM_BILLING__INVOICE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInvoice(Invoice newInvoice) {
+		eSet(Shipment_Package.Literals.SHIPMENT_ITEM_BILLING__INVOICE, newInvoice);
 	}
 
 	/**
@@ -186,26 +206,6 @@ public class ShipmentItemBillingImpl extends EntityIdentifiableImpl implements S
 	@Override
 	public void setInvoiceItemSeqId(String newInvoiceItemSeqId) {
 		eSet(Shipment_Package.Literals.SHIPMENT_ITEM_BILLING__INVOICE_ITEM_SEQ_ID, newInvoiceItemSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Shipment getShipmentId() {
-		return (Shipment)eGet(Shipment_Package.Literals.SHIPMENT_ITEM_BILLING__SHIPMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setShipmentId(Shipment newShipmentId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_ITEM_BILLING__SHIPMENT_ID, newShipmentId);
 	}
 
 	/**

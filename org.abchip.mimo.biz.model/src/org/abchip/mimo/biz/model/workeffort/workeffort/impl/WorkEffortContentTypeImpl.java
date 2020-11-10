@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContentTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContentTypeImpl#getWorkEffortContentTypeId <em>Work Effort Content Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContentTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContentTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -179,8 +179,8 @@ public class WorkEffortContentTypeImpl extends EntityTypeImpl<WorkEffortContent>
 	 * @generated
 	 */
 	@Override
-	public WorkEffortContentType getParentTypeId() {
-		return (WorkEffortContentType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_CONTENT_TYPE__PARENT_TYPE_ID, true);
+	public WorkEffortContentType getParentType() {
+		return (WorkEffortContentType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_CONTENT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -189,8 +189,8 @@ public class WorkEffortContentTypeImpl extends EntityTypeImpl<WorkEffortContent>
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(WorkEffortContentType newParentTypeId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_CONTENT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(WorkEffortContentType newParentType) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_CONTENT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

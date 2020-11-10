@@ -23,9 +23,9 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingStatus#getTestingStatusId <em>Testing Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingStatus#getChangeByUserLoginId <em>Change By User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingStatus#getChangeByUserLogin <em>Change By User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingStatus#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingStatus#getStatusDate <em>Status Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingStatus#getStatusId <em>Status Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingStatus#getTestingId <em>Testing Id</em>}</li>
  * </ul>
  *
@@ -34,32 +34,6 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface TestingStatus extends EntityIdentifiable, EntityInfo {
-	/**
-	 * Returns the value of the '<em><b>Change By User Login Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Change By User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Change By User Login Id</em>' reference.
-	 * @see #setChangeByUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingStatus_ChangeByUserLoginId()
-	 * @model keys="userLoginId"
-	 * @generated
-	 */
-	UserLogin getChangeByUserLoginId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.test.TestingStatus#getChangeByUserLoginId <em>Change By User Login Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Change By User Login Id</em>' reference.
-	 * @see #getChangeByUserLoginId()
-	 * @generated
-	 */
-	void setChangeByUserLoginId(UserLogin value);
-
 	/**
 	 * Returns the value of the '<em><b>Status Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -85,32 +59,6 @@ public interface TestingStatus extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setStatusDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingStatus_StatusId()
-	 * @model keys="statusId"
-	 * @generated
-	 */
-	StatusItem getStatusId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.test.TestingStatus#getStatusId <em>Status Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
-	 * @generated
-	 */
-	void setStatusId(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Testing Id</b></em>' attribute.
@@ -164,5 +112,49 @@ public interface TestingStatus extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setTestingStatusId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Change By User Login</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Change By User Login</em>' reference.
+	 * @see #setChangeByUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingStatus_ChangeByUserLogin()
+	 * @model keys="userLoginId"
+	 * @generated
+	 */
+	UserLogin getChangeByUserLogin();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.test.TestingStatus#getChangeByUserLogin <em>Change By User Login</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Change By User Login</em>' reference.
+	 * @see #getChangeByUserLogin()
+	 * @generated
+	 */
+	void setChangeByUserLogin(UserLogin value);
+
+	/**
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingStatus_Status()
+	 * @model keys="statusId"
+	 * @generated
+	 */
+	StatusItem getStatus();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.test.TestingStatus#getStatus <em>Status</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
+	 * @generated
+	 */
+	void setStatus(StatusItem value);
 
 } // TestingStatus

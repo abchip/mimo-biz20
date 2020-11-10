@@ -30,13 +30,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionDatedImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionDatedImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionDatedImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionDatedImpl#getUomId <em>Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionDatedImpl#getUom <em>Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionDatedImpl#getUomIdTo <em>Uom Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionDatedImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionDatedImpl#getConversionFactor <em>Conversion Factor</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionDatedImpl#getCustomMethodId <em>Custom Method Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionDatedImpl#getCustomMethod <em>Custom Method</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionDatedImpl#getDecimalScale <em>Decimal Scale</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionDatedImpl#getPurposeEnumId <em>Purpose Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionDatedImpl#getPurposeEnum <em>Purpose Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionDatedImpl#getRoundingMode <em>Rounding Mode</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionDatedImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -159,6 +159,26 @@ public class UomConversionDatedImpl extends EntityIdentifiableImpl implements Uo
 	 * @generated
 	 */
 	@Override
+	public Uom getUom() {
+		return (Uom)eGet(UomPackage.Literals.UOM_CONVERSION_DATED__UOM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUom(Uom newUom) {
+		eSet(UomPackage.Literals.UOM_CONVERSION_DATED__UOM, newUom);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public double getConversionFactor() {
 		return (Double)eGet(UomPackage.Literals.UOM_CONVERSION_DATED__CONVERSION_FACTOR, true);
 	}
@@ -179,6 +199,26 @@ public class UomConversionDatedImpl extends EntityIdentifiableImpl implements Uo
 	 * @generated
 	 */
 	@Override
+	public CustomMethod getCustomMethod() {
+		return (CustomMethod)eGet(UomPackage.Literals.UOM_CONVERSION_DATED__CUSTOM_METHOD, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCustomMethod(CustomMethod newCustomMethod) {
+		eSet(UomPackage.Literals.UOM_CONVERSION_DATED__CUSTOM_METHOD, newCustomMethod);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public long getDecimalScale() {
 		return (Long)eGet(UomPackage.Literals.UOM_CONVERSION_DATED__DECIMAL_SCALE, true);
 	}
@@ -191,6 +231,26 @@ public class UomConversionDatedImpl extends EntityIdentifiableImpl implements Uo
 	@Override
 	public void setDecimalScale(long newDecimalScale) {
 		eSet(UomPackage.Literals.UOM_CONVERSION_DATED__DECIMAL_SCALE, newDecimalScale);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Enumeration getPurposeEnum() {
+		return (Enumeration)eGet(UomPackage.Literals.UOM_CONVERSION_DATED__PURPOSE_ENUM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPurposeEnum(Enumeration newPurposeEnum) {
+		eSet(UomPackage.Literals.UOM_CONVERSION_DATED__PURPOSE_ENUM, newPurposeEnum);
 	}
 
 	/**
@@ -297,26 +357,6 @@ public class UomConversionDatedImpl extends EntityIdentifiableImpl implements Uo
 	 * @generated
 	 */
 	@Override
-	public Uom getUomId() {
-		return (Uom)eGet(UomPackage.Literals.UOM_CONVERSION_DATED__UOM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setUomId(Uom newUomId) {
-		eSet(UomPackage.Literals.UOM_CONVERSION_DATED__UOM_ID, newUomId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Uom getUomIdTo() {
 		return (Uom)eGet(UomPackage.Literals.UOM_CONVERSION_DATED__UOM_ID_TO, true);
 	}
@@ -329,46 +369,6 @@ public class UomConversionDatedImpl extends EntityIdentifiableImpl implements Uo
 	@Override
 	public void setUomIdTo(Uom newUomIdTo) {
 		eSet(UomPackage.Literals.UOM_CONVERSION_DATED__UOM_ID_TO, newUomIdTo);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CustomMethod getCustomMethodId() {
-		return (CustomMethod)eGet(UomPackage.Literals.UOM_CONVERSION_DATED__CUSTOM_METHOD_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCustomMethodId(CustomMethod newCustomMethodId) {
-		eSet(UomPackage.Literals.UOM_CONVERSION_DATED__CUSTOM_METHOD_ID, newCustomMethodId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Enumeration getPurposeEnumId() {
-		return (Enumeration)eGet(UomPackage.Literals.UOM_CONVERSION_DATED__PURPOSE_ENUM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPurposeEnumId(Enumeration newPurposeEnumId) {
-		eSet(UomPackage.Literals.UOM_CONVERSION_DATED__PURPOSE_ENUM_ID, newPurposeEnumId);
 	}
 
 } //UomConversionDatedImpl

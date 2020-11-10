@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.enum_.impl.EnumerationTypeImpl#getEnumTypeId <em>Enum Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.enum_.impl.EnumerationTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.enum_.impl.EnumerationTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.enum_.impl.EnumerationTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.enum_.impl.EnumerationTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -199,8 +199,8 @@ public class EnumerationTypeImpl extends EntityTypeImpl<Enumeration> implements 
 	 * @generated
 	 */
 	@Override
-	public EnumerationType getParentTypeId() {
-		return (EnumerationType)eGet(EnumPackage.Literals.ENUMERATION_TYPE__PARENT_TYPE_ID, true);
+	public EnumerationType getParentType() {
+		return (EnumerationType)eGet(EnumPackage.Literals.ENUMERATION_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -209,8 +209,8 @@ public class EnumerationTypeImpl extends EntityTypeImpl<Enumeration> implements 
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(EnumerationType newParentTypeId) {
-		eSet(EnumPackage.Literals.ENUMERATION_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(EnumerationType newParentType) {
+		eSet(EnumPackage.Literals.ENUMERATION_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityCategoryImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityCategoryImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityCategoryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityCategoryImpl#getProductCategoryId <em>Product Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityCategoryImpl#getProductCategory <em>Product Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityCategoryImpl#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityCategoryImpl#getTaxAuthPartyId <em>Tax Auth Party Id</em>}</li>
  * </ul>
@@ -151,8 +151,8 @@ public class TaxAuthorityCategoryImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public ProductCategory getProductCategoryId() {
-		return (ProductCategory)eGet(TaxPackage.Literals.TAX_AUTHORITY_CATEGORY__PRODUCT_CATEGORY_ID, true);
+	public ProductCategory getProductCategory() {
+		return (ProductCategory)eGet(TaxPackage.Literals.TAX_AUTHORITY_CATEGORY__PRODUCT_CATEGORY, true);
 	}
 
 	/**
@@ -161,8 +161,8 @@ public class TaxAuthorityCategoryImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setProductCategoryId(ProductCategory newProductCategoryId) {
-		eSet(TaxPackage.Literals.TAX_AUTHORITY_CATEGORY__PRODUCT_CATEGORY_ID, newProductCategoryId);
+	public void setProductCategory(ProductCategory newProductCategory) {
+		eSet(TaxPackage.Literals.TAX_AUTHORITY_CATEGORY__PRODUCT_CATEGORY, newProductCategory);
 	}
 
 	/**

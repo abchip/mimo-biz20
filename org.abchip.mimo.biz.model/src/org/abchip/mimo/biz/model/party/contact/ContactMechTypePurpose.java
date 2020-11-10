@@ -19,8 +19,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMechTypePurpose#getContactMechTypeId <em>Contact Mech Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMechTypePurpose#getContactMechPurposeTypeId <em>Contact Mech Purpose Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMechTypePurpose#getContactMechType <em>Contact Mech Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMechTypePurpose#getContactMechPurposeType <em>Contact Mech Purpose Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMechTypePurpose()
@@ -29,57 +29,49 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface ContactMechTypePurpose extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Contact Mech Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Contact Mech Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Mech Type Id</em>' reference.
-	 * @see #setContactMechTypeId(ContactMechType)
-	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMechTypePurpose_ContactMechTypeId()
+	 * @return the value of the '<em>Contact Mech Type</em>' reference.
+	 * @see #setContactMechType(ContactMechType)
+	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMechTypePurpose_ContactMechType()
 	 * @model keys="contactMechTypeId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ContactMechType getContactMechTypeId();
+	ContactMechType getContactMechType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.ContactMechTypePurpose#getContactMechTypeId <em>Contact Mech Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.ContactMechTypePurpose#getContactMechType <em>Contact Mech Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Mech Type Id</em>' reference.
-	 * @see #getContactMechTypeId()
+	 * @param value the new value of the '<em>Contact Mech Type</em>' reference.
+	 * @see #getContactMechType()
 	 * @generated
 	 */
-	void setContactMechTypeId(ContactMechType value);
+	void setContactMechType(ContactMechType value);
 
 	/**
-	 * Returns the value of the '<em><b>Contact Mech Purpose Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Contact Mech Purpose Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Purpose Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Mech Purpose Type Id</em>' reference.
-	 * @see #setContactMechPurposeTypeId(ContactMechPurposeType)
-	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMechTypePurpose_ContactMechPurposeTypeId()
+	 * @return the value of the '<em>Contact Mech Purpose Type</em>' reference.
+	 * @see #setContactMechPurposeType(ContactMechPurposeType)
+	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMechTypePurpose_ContactMechPurposeType()
 	 * @model keys="contactMechPurposeTypeId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ContactMechPurposeType getContactMechPurposeTypeId();
+	ContactMechPurposeType getContactMechPurposeType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.ContactMechTypePurpose#getContactMechPurposeTypeId <em>Contact Mech Purpose Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.ContactMechTypePurpose#getContactMechPurposeType <em>Contact Mech Purpose Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Mech Purpose Type Id</em>' reference.
-	 * @see #getContactMechPurposeTypeId()
+	 * @param value the new value of the '<em>Contact Mech Purpose Type</em>' reference.
+	 * @see #getContactMechPurposeType()
 	 * @generated
 	 */
-	void setContactMechPurposeTypeId(ContactMechPurposeType value);
+	void setContactMechPurposeType(ContactMechPurposeType value);
 
 } // ContactMechTypePurpose

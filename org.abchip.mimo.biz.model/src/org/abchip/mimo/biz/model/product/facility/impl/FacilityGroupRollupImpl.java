@@ -28,8 +28,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRollupImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRollupImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRollupImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRollupImpl#getFacilityGroupId <em>Facility Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRollupImpl#getParentFacilityGroupId <em>Parent Facility Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRollupImpl#getFacilityGroup <em>Facility Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRollupImpl#getParentFacilityGroup <em>Parent Facility Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRollupImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRollupImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRollupImpl#getThruDate <em>Thru Date</em>}</li>
@@ -154,6 +154,46 @@ public class FacilityGroupRollupImpl extends EntityIdentifiableImpl implements F
 	 * @generated
 	 */
 	@Override
+	public FacilityGroup getFacilityGroup() {
+		return (FacilityGroup)eGet(FacilityPackage.Literals.FACILITY_GROUP_ROLLUP__FACILITY_GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacilityGroup(FacilityGroup newFacilityGroup) {
+		eSet(FacilityPackage.Literals.FACILITY_GROUP_ROLLUP__FACILITY_GROUP, newFacilityGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FacilityGroup getParentFacilityGroup() {
+		return (FacilityGroup)eGet(FacilityPackage.Literals.FACILITY_GROUP_ROLLUP__PARENT_FACILITY_GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParentFacilityGroup(FacilityGroup newParentFacilityGroup) {
+		eSet(FacilityPackage.Literals.FACILITY_GROUP_ROLLUP__PARENT_FACILITY_GROUP, newParentFacilityGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(FacilityPackage.Literals.FACILITY_GROUP_ROLLUP__FROM_DATE, true);
 	}
@@ -244,46 +284,6 @@ public class FacilityGroupRollupImpl extends EntityIdentifiableImpl implements F
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FacilityGroup getFacilityGroupId() {
-		return (FacilityGroup)eGet(FacilityPackage.Literals.FACILITY_GROUP_ROLLUP__FACILITY_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityGroupId(FacilityGroup newFacilityGroupId) {
-		eSet(FacilityPackage.Literals.FACILITY_GROUP_ROLLUP__FACILITY_GROUP_ID, newFacilityGroupId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FacilityGroup getParentFacilityGroupId() {
-		return (FacilityGroup)eGet(FacilityPackage.Literals.FACILITY_GROUP_ROLLUP__PARENT_FACILITY_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentFacilityGroupId(FacilityGroup newParentFacilityGroupId) {
-		eSet(FacilityPackage.Literals.FACILITY_GROUP_ROLLUP__PARENT_FACILITY_GROUP_ID, newParentFacilityGroupId);
 	}
 
 } //FacilityGroupRollupImpl

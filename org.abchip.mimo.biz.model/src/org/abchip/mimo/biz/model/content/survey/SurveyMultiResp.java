@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyMultiResp#getSurveyId <em>Survey Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyMultiResp#getSurvey <em>Survey</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyMultiResp#getSurveyMultiRespId <em>Survey Multi Resp Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyMultiResp#getMultiRespTitle <em>Multi Resp Title</em>}</li>
  * </ul>
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface SurveyMultiResp extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Survey</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Survey</em>' reference.
+	 * @see #setSurvey(Survey)
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyMultiResp_Survey()
+	 * @model keys="surveyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Survey getSurvey();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyMultiResp#getSurvey <em>Survey</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Survey</em>' reference.
+	 * @see #getSurvey()
+	 * @generated
+	 */
+	void setSurvey(Survey value);
+
 	/**
 	 * Returns the value of the '<em><b>Multi Resp Title</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -54,33 +77,6 @@ public interface SurveyMultiResp extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setMultiRespTitle(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Survey Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Survey Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Survey Id</em>' reference.
-	 * @see #setSurveyId(Survey)
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyMultiResp_SurveyId()
-	 * @model keys="surveyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Survey getSurveyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyMultiResp#getSurveyId <em>Survey Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Survey Id</em>' reference.
-	 * @see #getSurveyId()
-	 * @generated
-	 */
-	void setSurveyId(Survey value);
 
 	/**
 	 * Returns the value of the '<em><b>Survey Multi Resp Id</b></em>' attribute.

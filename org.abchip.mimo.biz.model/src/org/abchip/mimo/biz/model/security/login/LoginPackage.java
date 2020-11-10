@@ -226,13 +226,13 @@ public interface LoginPackage extends EPackage {
 	int USER_LOGIN__LAST_TIME_ZONE = ContextPackage.USER_PROFILE_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__PARTY_ID = ContextPackage.USER_PROFILE_FEATURE_COUNT + 11;
+	int USER_LOGIN__PARTY = ContextPackage.USER_PROFILE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Password Hint</b></em>' attribute.
@@ -362,13 +362,13 @@ public interface LoginPackage extends EPackage {
 	int USER_LOGIN_HISTORY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>User Login Id</b></em>' reference.
+	 * The feature id for the '<em><b>User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN_HISTORY__USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int USER_LOGIN_HISTORY__USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -380,22 +380,22 @@ public interface LoginPackage extends EPackage {
 	int USER_LOGIN_HISTORY__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Origin User Login Id</b></em>' reference.
+	 * The feature id for the '<em><b>Origin User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN_HISTORY__ORIGIN_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int USER_LOGIN_HISTORY__ORIGIN_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN_HISTORY__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int USER_LOGIN_HISTORY__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Password Used</b></em>' attribute.
@@ -489,13 +489,13 @@ public interface LoginPackage extends EPackage {
 	int USER_LOGIN_PASSWORD_HISTORY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>User Login Id</b></em>' reference.
+	 * The feature id for the '<em><b>User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN_PASSWORD_HISTORY__USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int USER_LOGIN_PASSWORD_HISTORY__USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -580,22 +580,22 @@ public interface LoginPackage extends EPackage {
 	int USER_LOGIN_SECURITY_QUESTION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Question Enum Id</b></em>' reference.
+	 * The feature id for the '<em><b>Question Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN_SECURITY_QUESTION__QUESTION_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int USER_LOGIN_SECURITY_QUESTION__QUESTION_ENUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>User Login Id</b></em>' reference.
+	 * The feature id for the '<em><b>User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN_SECURITY_QUESTION__USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int USER_LOGIN_SECURITY_QUESTION__USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Security Answer</b></em>' attribute.
@@ -830,15 +830,15 @@ public interface LoginPackage extends EPackage {
 	EAttribute getUserLogin_LastTimeZone();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.login.UserLogin#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.login.UserLogin#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.security.login.UserLogin#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.security.login.UserLogin#getParty()
 	 * @see #getUserLogin()
 	 * @generated
 	 */
-	EReference getUserLogin_PartyId();
+	EReference getUserLogin_Party();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.security.login.UserLogin#getPasswordHint <em>Password Hint</em>}'.
@@ -939,15 +939,15 @@ public interface LoginPackage extends EPackage {
 	EClass getUserLoginHistory();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getUserLoginId <em>User Login Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getUserLogin <em>User Login</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>User Login Id</em>'.
-	 * @see org.abchip.mimo.biz.model.security.login.UserLoginHistory#getUserLoginId()
+	 * @return the meta object for the reference '<em>User Login</em>'.
+	 * @see org.abchip.mimo.biz.model.security.login.UserLoginHistory#getUserLogin()
 	 * @see #getUserLoginHistory()
 	 * @generated
 	 */
-	EReference getUserLoginHistory_UserLoginId();
+	EReference getUserLoginHistory_UserLogin();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getFromDate <em>From Date</em>}'.
@@ -961,26 +961,26 @@ public interface LoginPackage extends EPackage {
 	EAttribute getUserLoginHistory_FromDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getOriginUserLoginId <em>Origin User Login Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getOriginUserLogin <em>Origin User Login</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Origin User Login Id</em>'.
-	 * @see org.abchip.mimo.biz.model.security.login.UserLoginHistory#getOriginUserLoginId()
+	 * @return the meta object for the reference '<em>Origin User Login</em>'.
+	 * @see org.abchip.mimo.biz.model.security.login.UserLoginHistory#getOriginUserLogin()
 	 * @see #getUserLoginHistory()
 	 * @generated
 	 */
-	EReference getUserLoginHistory_OriginUserLoginId();
+	EReference getUserLoginHistory_OriginUserLogin();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.security.login.UserLoginHistory#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.security.login.UserLoginHistory#getParty()
 	 * @see #getUserLoginHistory()
 	 * @generated
 	 */
-	EReference getUserLoginHistory_PartyId();
+	EReference getUserLoginHistory_Party();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getPasswordUsed <em>Password Used</em>}'.
@@ -1037,15 +1037,15 @@ public interface LoginPackage extends EPackage {
 	EClass getUserLoginPasswordHistory();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.login.UserLoginPasswordHistory#getUserLoginId <em>User Login Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.login.UserLoginPasswordHistory#getUserLogin <em>User Login</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>User Login Id</em>'.
-	 * @see org.abchip.mimo.biz.model.security.login.UserLoginPasswordHistory#getUserLoginId()
+	 * @return the meta object for the reference '<em>User Login</em>'.
+	 * @see org.abchip.mimo.biz.model.security.login.UserLoginPasswordHistory#getUserLogin()
 	 * @see #getUserLoginPasswordHistory()
 	 * @generated
 	 */
-	EReference getUserLoginPasswordHistory_UserLoginId();
+	EReference getUserLoginPasswordHistory_UserLogin();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.security.login.UserLoginPasswordHistory#getFromDate <em>From Date</em>}'.
@@ -1091,26 +1091,26 @@ public interface LoginPackage extends EPackage {
 	EClass getUserLoginSecurityQuestion();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion#getQuestionEnumId <em>Question Enum Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion#getQuestionEnum <em>Question Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Question Enum Id</em>'.
-	 * @see org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion#getQuestionEnumId()
+	 * @return the meta object for the reference '<em>Question Enum</em>'.
+	 * @see org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion#getQuestionEnum()
 	 * @see #getUserLoginSecurityQuestion()
 	 * @generated
 	 */
-	EReference getUserLoginSecurityQuestion_QuestionEnumId();
+	EReference getUserLoginSecurityQuestion_QuestionEnum();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion#getUserLoginId <em>User Login Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion#getUserLogin <em>User Login</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>User Login Id</em>'.
-	 * @see org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion#getUserLoginId()
+	 * @return the meta object for the reference '<em>User Login</em>'.
+	 * @see org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion#getUserLogin()
 	 * @see #getUserLoginSecurityQuestion()
 	 * @generated
 	 */
-	EReference getUserLoginSecurityQuestion_UserLoginId();
+	EReference getUserLoginSecurityQuestion_UserLogin();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion#getSecurityAnswer <em>Security Answer</em>}'.
@@ -1287,12 +1287,12 @@ public interface LoginPackage extends EPackage {
 		EAttribute USER_LOGIN__LAST_TIME_ZONE = eINSTANCE.getUserLogin_LastTimeZone();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference USER_LOGIN__PARTY_ID = eINSTANCE.getUserLogin_PartyId();
+		EReference USER_LOGIN__PARTY = eINSTANCE.getUserLogin_Party();
 
 		/**
 		 * The meta object literal for the '<em><b>Password Hint</b></em>' attribute feature.
@@ -1369,12 +1369,12 @@ public interface LoginPackage extends EPackage {
 		EClass USER_LOGIN_HISTORY = eINSTANCE.getUserLoginHistory();
 
 		/**
-		 * The meta object literal for the '<em><b>User Login Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>User Login</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference USER_LOGIN_HISTORY__USER_LOGIN_ID = eINSTANCE.getUserLoginHistory_UserLoginId();
+		EReference USER_LOGIN_HISTORY__USER_LOGIN = eINSTANCE.getUserLoginHistory_UserLogin();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -1385,20 +1385,20 @@ public interface LoginPackage extends EPackage {
 		EAttribute USER_LOGIN_HISTORY__FROM_DATE = eINSTANCE.getUserLoginHistory_FromDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Origin User Login Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Origin User Login</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference USER_LOGIN_HISTORY__ORIGIN_USER_LOGIN_ID = eINSTANCE.getUserLoginHistory_OriginUserLoginId();
+		EReference USER_LOGIN_HISTORY__ORIGIN_USER_LOGIN = eINSTANCE.getUserLoginHistory_OriginUserLogin();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference USER_LOGIN_HISTORY__PARTY_ID = eINSTANCE.getUserLoginHistory_PartyId();
+		EReference USER_LOGIN_HISTORY__PARTY = eINSTANCE.getUserLoginHistory_Party();
 
 		/**
 		 * The meta object literal for the '<em><b>Password Used</b></em>' attribute feature.
@@ -1443,12 +1443,12 @@ public interface LoginPackage extends EPackage {
 		EClass USER_LOGIN_PASSWORD_HISTORY = eINSTANCE.getUserLoginPasswordHistory();
 
 		/**
-		 * The meta object literal for the '<em><b>User Login Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>User Login</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference USER_LOGIN_PASSWORD_HISTORY__USER_LOGIN_ID = eINSTANCE.getUserLoginPasswordHistory_UserLoginId();
+		EReference USER_LOGIN_PASSWORD_HISTORY__USER_LOGIN = eINSTANCE.getUserLoginPasswordHistory_UserLogin();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -1485,20 +1485,20 @@ public interface LoginPackage extends EPackage {
 		EClass USER_LOGIN_SECURITY_QUESTION = eINSTANCE.getUserLoginSecurityQuestion();
 
 		/**
-		 * The meta object literal for the '<em><b>Question Enum Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Question Enum</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference USER_LOGIN_SECURITY_QUESTION__QUESTION_ENUM_ID = eINSTANCE.getUserLoginSecurityQuestion_QuestionEnumId();
+		EReference USER_LOGIN_SECURITY_QUESTION__QUESTION_ENUM = eINSTANCE.getUserLoginSecurityQuestion_QuestionEnum();
 
 		/**
-		 * The meta object literal for the '<em><b>User Login Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>User Login</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference USER_LOGIN_SECURITY_QUESTION__USER_LOGIN_ID = eINSTANCE.getUserLoginSecurityQuestion_UserLoginId();
+		EReference USER_LOGIN_SECURITY_QUESTION__USER_LOGIN = eINSTANCE.getUserLoginSecurityQuestion_UserLogin();
 
 		/**
 		 * The meta object literal for the '<em><b>Security Answer</b></em>' attribute feature.

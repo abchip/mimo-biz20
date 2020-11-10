@@ -21,10 +21,10 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeVisit#getTrackingCodeId <em>Tracking Code Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeVisit#getTrackingCode <em>Tracking Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeVisit#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeVisit#getVisitId <em>Visit Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeVisit#getSourceEnumId <em>Source Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeVisit#getSourceEnum <em>Source Enum</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeVisit()
@@ -32,6 +32,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface TrackingCodeVisit extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Tracking Code</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tracking Code</em>' reference.
+	 * @see #setTrackingCode(TrackingCode)
+	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeVisit_TrackingCode()
+	 * @model keys="trackingCodeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	TrackingCode getTrackingCode();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeVisit#getTrackingCode <em>Tracking Code</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tracking Code</em>' reference.
+	 * @see #getTrackingCode()
+	 * @generated
+	 */
+	void setTrackingCode(TrackingCode value);
+
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -60,59 +83,6 @@ public interface TrackingCodeVisit extends EntityIdentifiable, EntityInfo {
 	void setFromDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Source Enum Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Source Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Source Enum Id</em>' reference.
-	 * @see #setSourceEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeVisit_SourceEnumId()
-	 * @model keys="enumId"
-	 * @generated
-	 */
-	Enumeration getSourceEnumId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeVisit#getSourceEnumId <em>Source Enum Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Source Enum Id</em>' reference.
-	 * @see #getSourceEnumId()
-	 * @generated
-	 */
-	void setSourceEnumId(Enumeration value);
-
-	/**
-	 * Returns the value of the '<em><b>Tracking Code Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tracking Code Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tracking Code Id</em>' reference.
-	 * @see #setTrackingCodeId(TrackingCode)
-	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeVisit_TrackingCodeId()
-	 * @model keys="trackingCodeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	TrackingCode getTrackingCodeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeVisit#getTrackingCodeId <em>Tracking Code Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tracking Code Id</em>' reference.
-	 * @see #getTrackingCodeId()
-	 * @generated
-	 */
-	void setTrackingCodeId(TrackingCode value);
-
-	/**
 	 * Returns the value of the '<em><b>Visit Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -139,5 +109,27 @@ public interface TrackingCodeVisit extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setVisitId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Source Enum</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Source Enum</em>' reference.
+	 * @see #setSourceEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeVisit_SourceEnum()
+	 * @model keys="enumId"
+	 * @generated
+	 */
+	Enumeration getSourceEnum();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeVisit#getSourceEnum <em>Source Enum</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Source Enum</em>' reference.
+	 * @see #getSourceEnum()
+	 * @generated
+	 */
+	void setSourceEnum(Enumeration value);
 
 } // TrackingCodeVisit

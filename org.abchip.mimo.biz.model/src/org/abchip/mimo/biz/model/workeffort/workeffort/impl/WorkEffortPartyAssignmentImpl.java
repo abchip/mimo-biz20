@@ -34,19 +34,19 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getWorkEffort <em>Work Effort</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getRoleType <em>Role Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getAssignedByUserLoginId <em>Assigned By User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getAvailabilityStatusId <em>Availability Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getAssignedByUserLogin <em>Assigned By User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getAvailabilityStatus <em>Availability Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getDelegateReasonEnumId <em>Delegate Reason Enum Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getExpectationEnumId <em>Expectation Enum Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getDelegateReasonEnum <em>Delegate Reason Enum</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getExpectationEnum <em>Expectation Enum</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getMustRsvp <em>Must Rsvp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getStatusDateTime <em>Status Date Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getStatusId <em>Status Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -169,8 +169,8 @@ public class WorkEffortPartyAssignmentImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public UserLogin getAssignedByUserLoginId() {
-		return (UserLogin)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__ASSIGNED_BY_USER_LOGIN_ID, true);
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__WORK_EFFORT, true);
 	}
 
 	/**
@@ -179,8 +179,8 @@ public class WorkEffortPartyAssignmentImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setAssignedByUserLoginId(UserLogin newAssignedByUserLoginId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__ASSIGNED_BY_USER_LOGIN_ID, newAssignedByUserLoginId);
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__WORK_EFFORT, newWorkEffort);
 	}
 
 	/**
@@ -189,8 +189,8 @@ public class WorkEffortPartyAssignmentImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public StatusItem getAvailabilityStatusId() {
-		return (StatusItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__AVAILABILITY_STATUS_ID, true);
+	public Party getParty() {
+		return (Party)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__PARTY, true);
 	}
 
 	/**
@@ -199,8 +199,28 @@ public class WorkEffortPartyAssignmentImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setAvailabilityStatusId(StatusItem newAvailabilityStatusId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__AVAILABILITY_STATUS_ID, newAvailabilityStatusId);
+	public void setParty(Party newParty) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RoleType getRoleType() {
+		return (RoleType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__ROLE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRoleType(RoleType newRoleType) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__ROLE_TYPE, newRoleType);
 	}
 
 	/**
@@ -229,8 +249,8 @@ public class WorkEffortPartyAssignmentImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public Enumeration getDelegateReasonEnumId() {
-		return (Enumeration)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__DELEGATE_REASON_ENUM_ID, true);
+	public Enumeration getDelegateReasonEnum() {
+		return (Enumeration)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__DELEGATE_REASON_ENUM, true);
 	}
 
 	/**
@@ -239,8 +259,8 @@ public class WorkEffortPartyAssignmentImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setDelegateReasonEnumId(Enumeration newDelegateReasonEnumId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__DELEGATE_REASON_ENUM_ID, newDelegateReasonEnumId);
+	public void setDelegateReasonEnum(Enumeration newDelegateReasonEnum) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__DELEGATE_REASON_ENUM, newDelegateReasonEnum);
 	}
 
 	/**
@@ -249,8 +269,8 @@ public class WorkEffortPartyAssignmentImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public Enumeration getExpectationEnumId() {
-		return (Enumeration)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__EXPECTATION_ENUM_ID, true);
+	public Enumeration getExpectationEnum() {
+		return (Enumeration)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__EXPECTATION_ENUM, true);
 	}
 
 	/**
@@ -259,8 +279,8 @@ public class WorkEffortPartyAssignmentImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setExpectationEnumId(Enumeration newExpectationEnumId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__EXPECTATION_ENUM_ID, newExpectationEnumId);
+	public void setExpectationEnum(Enumeration newExpectationEnum) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__EXPECTATION_ENUM, newExpectationEnum);
 	}
 
 	/**
@@ -269,8 +289,8 @@ public class WorkEffortPartyAssignmentImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__FACILITY_ID, true);
+	public Facility getFacility() {
+		return (Facility)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__FACILITY, true);
 	}
 
 	/**
@@ -279,8 +299,8 @@ public class WorkEffortPartyAssignmentImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__FACILITY_ID, newFacilityId);
+	public void setFacility(Facility newFacility) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__FACILITY, newFacility);
 	}
 
 	/**
@@ -309,6 +329,26 @@ public class WorkEffortPartyAssignmentImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(StatusItem newStatus) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__STATUS, newStatus);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__FROM_DATE, true);
 	}
@@ -329,8 +369,8 @@ public class WorkEffortPartyAssignmentImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__PARTY_ID, true);
+	public UserLogin getAssignedByUserLogin() {
+		return (UserLogin)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__ASSIGNED_BY_USER_LOGIN, true);
 	}
 
 	/**
@@ -339,8 +379,8 @@ public class WorkEffortPartyAssignmentImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__PARTY_ID, newPartyId);
+	public void setAssignedByUserLogin(UserLogin newAssignedByUserLogin) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__ASSIGNED_BY_USER_LOGIN, newAssignedByUserLogin);
 	}
 
 	/**
@@ -349,8 +389,8 @@ public class WorkEffortPartyAssignmentImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__ROLE_TYPE_ID, true);
+	public StatusItem getAvailabilityStatus() {
+		return (StatusItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__AVAILABILITY_STATUS, true);
 	}
 
 	/**
@@ -359,8 +399,8 @@ public class WorkEffortPartyAssignmentImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__ROLE_TYPE_ID, newRoleTypeId);
+	public void setAvailabilityStatus(StatusItem newAvailabilityStatus) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__AVAILABILITY_STATUS, newAvailabilityStatus);
 	}
 
 	/**
@@ -381,26 +421,6 @@ public class WorkEffortPartyAssignmentImpl extends EntityIdentifiableImpl implem
 	@Override
 	public void setStatusDateTime(Date newStatusDateTime) {
 		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__STATUS_DATE_TIME, newStatusDateTime);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__STATUS_ID, newStatusId);
 	}
 
 	/**
@@ -459,26 +479,6 @@ public class WorkEffortPartyAssignmentImpl extends EntityIdentifiableImpl implem
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__WORK_EFFORT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__WORK_EFFORT_ID, newWorkEffortId);
 	}
 
 } //WorkEffortPartyAssignmentImpl

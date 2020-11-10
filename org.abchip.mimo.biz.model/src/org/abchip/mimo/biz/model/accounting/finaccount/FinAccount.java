@@ -30,19 +30,19 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getFinAccountId <em>Fin Account Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getActualBalance <em>Actual Balance</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getAvailableBalance <em>Available Balance</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getFinAccountAttributes <em>Fin Account Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getFinAccountCode <em>Fin Account Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getFinAccountName <em>Fin Account Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getFinAccountPin <em>Fin Account Pin</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getFinAccountTypeId <em>Fin Account Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getFinAccountType <em>Fin Account Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#isIsRefundable <em>Is Refundable</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getOrganizationPartyId <em>Organization Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getOwnerPartyId <em>Owner Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getPostToGlAccountId <em>Post To Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getOrganizationParty <em>Organization Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getOwnerParty <em>Owner Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getPostToGlAccount <em>Post To Gl Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getReplenishLevel <em>Replenish Level</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getReplenishPaymentId <em>Replenish Payment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getReplenishPayment <em>Replenish Payment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getStatusId <em>Status Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -107,30 +107,26 @@ public interface FinAccount extends EntityTyped<FinAccountType>, EntityInfo {
 	void setAvailableBalance(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Currency Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Currency Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Currency Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Currency Uom Id</em>' reference.
-	 * @see #setCurrencyUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_CurrencyUomId()
+	 * @return the value of the '<em>Currency Uom</em>' reference.
+	 * @see #setCurrencyUom(Uom)
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_CurrencyUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getCurrencyUomId();
+	Uom getCurrencyUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getCurrencyUomId <em>Currency Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getCurrencyUom <em>Currency Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Currency Uom Id</em>' reference.
-	 * @see #getCurrencyUomId()
+	 * @param value the new value of the '<em>Currency Uom</em>' reference.
+	 * @see #getCurrencyUom()
 	 * @generated
 	 */
-	void setCurrencyUomId(Uom value);
+	void setCurrencyUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Fin Account Attributes</b></em>' reference list.
@@ -229,6 +225,28 @@ public interface FinAccount extends EntityTyped<FinAccountType>, EntityInfo {
 	void setFinAccountPin(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Fin Account Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fin Account Type</em>' reference.
+	 * @see #setFinAccountType(FinAccountType)
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_FinAccountType()
+	 * @model keys="finAccountTypeId"
+	 * @generated
+	 */
+	FinAccountType getFinAccountType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getFinAccountType <em>Fin Account Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Fin Account Type</em>' reference.
+	 * @see #getFinAccountType()
+	 * @generated
+	 */
+	void setFinAccountType(FinAccountType value);
+
+	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -282,84 +300,72 @@ public interface FinAccount extends EntityTyped<FinAccountType>, EntityInfo {
 	void setIsRefundable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Organization Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Organization Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Organization Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Organization Party Id</em>' reference.
-	 * @see #setOrganizationPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_OrganizationPartyId()
+	 * @return the value of the '<em>Organization Party</em>' reference.
+	 * @see #setOrganizationParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_OrganizationParty()
 	 * @model keys="partyId"
 	 *        annotation="mimo-ent-slot help='The internal organization Party that owns (or rather, is liable for) the account.'"
 	 * @generated
 	 */
-	Party getOrganizationPartyId();
+	Party getOrganizationParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getOrganizationPartyId <em>Organization Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getOrganizationParty <em>Organization Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Organization Party Id</em>' reference.
-	 * @see #getOrganizationPartyId()
+	 * @param value the new value of the '<em>Organization Party</em>' reference.
+	 * @see #getOrganizationParty()
 	 * @generated
 	 */
-	void setOrganizationPartyId(Party value);
+	void setOrganizationParty(Party value);
 
 	/**
-	 * Returns the value of the '<em><b>Owner Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Owner Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Owner Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Owner Party Id</em>' reference.
-	 * @see #setOwnerPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_OwnerPartyId()
+	 * @return the value of the '<em>Owner Party</em>' reference.
+	 * @see #setOwnerParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_OwnerParty()
 	 * @model keys="partyId"
 	 *        annotation="mimo-ent-slot help='The customer or third party that owns the account.'"
 	 * @generated
 	 */
-	Party getOwnerPartyId();
+	Party getOwnerParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getOwnerPartyId <em>Owner Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getOwnerParty <em>Owner Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Owner Party Id</em>' reference.
-	 * @see #getOwnerPartyId()
+	 * @param value the new value of the '<em>Owner Party</em>' reference.
+	 * @see #getOwnerParty()
 	 * @generated
 	 */
-	void setOwnerPartyId(Party value);
+	void setOwnerParty(Party value);
 
 	/**
-	 * Returns the value of the '<em><b>Post To Gl Account Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Post To Gl Account</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Post To Gl Account Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Post To Gl Account Id</em>' reference.
-	 * @see #setPostToGlAccountId(GlAccount)
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_PostToGlAccountId()
+	 * @return the value of the '<em>Post To Gl Account</em>' reference.
+	 * @see #setPostToGlAccount(GlAccount)
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_PostToGlAccount()
 	 * @model keys="glAccountId"
 	 * @generated
 	 */
-	GlAccount getPostToGlAccountId();
+	GlAccount getPostToGlAccount();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getPostToGlAccountId <em>Post To Gl Account Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getPostToGlAccount <em>Post To Gl Account</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Post To Gl Account Id</em>' reference.
-	 * @see #getPostToGlAccountId()
+	 * @param value the new value of the '<em>Post To Gl Account</em>' reference.
+	 * @see #getPostToGlAccount()
 	 * @generated
 	 */
-	void setPostToGlAccountId(GlAccount value);
+	void setPostToGlAccount(GlAccount value);
 
 	/**
 	 * Returns the value of the '<em><b>Replenish Level</b></em>' attribute.
@@ -388,30 +394,26 @@ public interface FinAccount extends EntityTyped<FinAccountType>, EntityInfo {
 	void setReplenishLevel(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Replenish Payment Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Replenish Payment</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Replenish Payment Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Replenish Payment Id</em>' reference.
-	 * @see #setReplenishPaymentId(PaymentMethod)
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_ReplenishPaymentId()
+	 * @return the value of the '<em>Replenish Payment</em>' reference.
+	 * @see #setReplenishPayment(PaymentMethod)
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_ReplenishPayment()
 	 * @model keys="paymentMethodId"
 	 * @generated
 	 */
-	PaymentMethod getReplenishPaymentId();
+	PaymentMethod getReplenishPayment();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getReplenishPaymentId <em>Replenish Payment Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getReplenishPayment <em>Replenish Payment</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Replenish Payment Id</em>' reference.
-	 * @see #getReplenishPaymentId()
+	 * @param value the new value of the '<em>Replenish Payment</em>' reference.
+	 * @see #getReplenishPayment()
 	 * @generated
 	 */
-	void setReplenishPaymentId(PaymentMethod value);
+	void setReplenishPayment(PaymentMethod value);
 
 	/**
 	 * Returns the value of the '<em><b>Status Id</b></em>' attribute.
@@ -464,32 +466,6 @@ public interface FinAccount extends EntityTyped<FinAccountType>, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Fin Account Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fin Account Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fin Account Type Id</em>' reference.
-	 * @see #setFinAccountTypeId(FinAccountType)
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_FinAccountTypeId()
-	 * @model keys="finAccountTypeId"
-	 * @generated
-	 */
-	FinAccountType getFinAccountTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getFinAccountTypeId <em>Fin Account Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fin Account Type Id</em>' reference.
-	 * @see #getFinAccountTypeId()
-	 * @generated
-	 */
-	void setFinAccountTypeId(FinAccountType value);
 
 	/**
 	 * Returns the value of the '<em><b>Fin Account Id</b></em>' attribute.

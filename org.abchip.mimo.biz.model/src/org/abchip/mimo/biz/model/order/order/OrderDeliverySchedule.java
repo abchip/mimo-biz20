@@ -24,16 +24,16 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getCartons <em>Cartons</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getEstimatedReadyDate <em>Estimated Ready Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getSkidsPallets <em>Skids Pallets</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalCubicSize <em>Total Cubic Size</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalCubicUomId <em>Total Cubic Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalCubicUom <em>Total Cubic Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalWeight <em>Total Weight</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalWeightUomId <em>Total Weight Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalWeightUom <em>Total Weight Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getUnitsPieces <em>Units Pieces</em>}</li>
  * </ul>
  *
@@ -42,6 +42,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface OrderDeliverySchedule extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderDeliverySchedule_Order()
+	 * @model keys="orderId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	OrderHeader getOrder();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getOrder <em>Order</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
+	 * @generated
+	 */
+	void setOrder(OrderHeader value);
+
 	/**
 	 * Returns the value of the '<em><b>Cartons</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -93,33 +116,6 @@ public interface OrderDeliverySchedule extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setEstimatedReadyDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderDeliverySchedule_OrderId()
-	 * @model keys="orderId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	OrderHeader getOrderId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getOrderId <em>Order Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
-	 * @generated
-	 */
-	void setOrderId(OrderHeader value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -176,30 +172,26 @@ public interface OrderDeliverySchedule extends EntityIdentifiable, EntityInfo {
 	void setSkidsPallets(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderDeliverySchedule_StatusId()
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderDeliverySchedule_Status()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getStatusId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getStatusId <em>Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setStatusId(StatusItem value);
+	void setStatus(StatusItem value);
 
 	/**
 	 * Returns the value of the '<em><b>Total Cubic Size</b></em>' attribute.
@@ -228,30 +220,26 @@ public interface OrderDeliverySchedule extends EntityIdentifiable, EntityInfo {
 	void setTotalCubicSize(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Total Cubic Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Total Cubic Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Total Cubic Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Total Cubic Uom Id</em>' reference.
-	 * @see #setTotalCubicUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderDeliverySchedule_TotalCubicUomId()
+	 * @return the value of the '<em>Total Cubic Uom</em>' reference.
+	 * @see #setTotalCubicUom(Uom)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderDeliverySchedule_TotalCubicUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getTotalCubicUomId();
+	Uom getTotalCubicUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalCubicUomId <em>Total Cubic Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalCubicUom <em>Total Cubic Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Total Cubic Uom Id</em>' reference.
-	 * @see #getTotalCubicUomId()
+	 * @param value the new value of the '<em>Total Cubic Uom</em>' reference.
+	 * @see #getTotalCubicUom()
 	 * @generated
 	 */
-	void setTotalCubicUomId(Uom value);
+	void setTotalCubicUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Total Weight</b></em>' attribute.
@@ -280,30 +268,26 @@ public interface OrderDeliverySchedule extends EntityIdentifiable, EntityInfo {
 	void setTotalWeight(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Total Weight Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Total Weight Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Total Weight Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Total Weight Uom Id</em>' reference.
-	 * @see #setTotalWeightUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderDeliverySchedule_TotalWeightUomId()
+	 * @return the value of the '<em>Total Weight Uom</em>' reference.
+	 * @see #setTotalWeightUom(Uom)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderDeliverySchedule_TotalWeightUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getTotalWeightUomId();
+	Uom getTotalWeightUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalWeightUomId <em>Total Weight Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalWeightUom <em>Total Weight Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Total Weight Uom Id</em>' reference.
-	 * @see #getTotalWeightUomId()
+	 * @param value the new value of the '<em>Total Weight Uom</em>' reference.
+	 * @see #getTotalWeightUom()
 	 * @generated
 	 */
-	void setTotalWeightUomId(Uom value);
+	void setTotalWeightUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Units Pieces</b></em>' attribute.

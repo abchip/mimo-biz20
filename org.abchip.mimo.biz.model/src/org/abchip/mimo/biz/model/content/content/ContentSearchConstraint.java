@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getContentSearchResultId <em>Content Search Result Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getContentSearchResult <em>Content Search Result</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getConstraintSeqId <em>Constraint Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getAnyPrefix <em>Any Prefix</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getAnySuffix <em>Any Suffix</em>}</li>
@@ -37,6 +37,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ContentSearchConstraint extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Content Search Result</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Content Search Result</em>' reference.
+	 * @see #setContentSearchResult(ContentSearchResult)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentSearchConstraint_ContentSearchResult()
+	 * @model keys="contentSearchResultId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ContentSearchResult getContentSearchResult();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getContentSearchResult <em>Content Search Result</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Content Search Result</em>' reference.
+	 * @see #getContentSearchResult()
+	 * @generated
+	 */
+	void setContentSearchResult(ContentSearchResult value);
+
 	/**
 	 * Returns the value of the '<em><b>Constraint Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -142,33 +165,6 @@ public interface ContentSearchConstraint extends EntityIdentifiable, EntityInfo 
 	 * @generated
 	 */
 	void setAnySuffix(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Content Search Result Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Search Result Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Search Result Id</em>' reference.
-	 * @see #setContentSearchResultId(ContentSearchResult)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentSearchConstraint_ContentSearchResultId()
-	 * @model keys="contentSearchResultId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ContentSearchResult getContentSearchResultId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getContentSearchResultId <em>Content Search Result Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Search Result Id</em>' reference.
-	 * @see #getContentSearchResultId()
-	 * @generated
-	 */
-	void setContentSearchResultId(ContentSearchResult value);
 
 	/**
 	 * Returns the value of the '<em><b>High Value</b></em>' attribute.

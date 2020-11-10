@@ -21,10 +21,10 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount#getOrganizationPartyId <em>Organization Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount#getOrganizationParty <em>Organization Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount#getTaxAuthPartyId <em>Tax Auth Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount#getGlAccountId <em>Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount#getGlAccount <em>Gl Account</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthorityGlAccount()
@@ -33,31 +33,27 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface TaxAuthorityGlAccount extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Organization Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Organization Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Organization Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Organization Party Id</em>' reference.
-	 * @see #setOrganizationPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthorityGlAccount_OrganizationPartyId()
+	 * @return the value of the '<em>Organization Party</em>' reference.
+	 * @see #setOrganizationParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthorityGlAccount_OrganizationParty()
 	 * @model keys="partyId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Party getOrganizationPartyId();
+	Party getOrganizationParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount#getOrganizationPartyId <em>Organization Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount#getOrganizationParty <em>Organization Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Organization Party Id</em>' reference.
-	 * @see #getOrganizationPartyId()
+	 * @param value the new value of the '<em>Organization Party</em>' reference.
+	 * @see #getOrganizationParty()
 	 * @generated
 	 */
-	void setOrganizationPartyId(Party value);
+	void setOrganizationParty(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Tax Auth Geo Id</b></em>' attribute.
@@ -116,29 +112,25 @@ public interface TaxAuthorityGlAccount extends EntityIdentifiable, EntityInfo {
 	void setTaxAuthPartyId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Gl Account Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Gl Account</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gl Account Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Account Id</em>' reference.
-	 * @see #setGlAccountId(GlAccount)
-	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthorityGlAccount_GlAccountId()
+	 * @return the value of the '<em>Gl Account</em>' reference.
+	 * @see #setGlAccount(GlAccount)
+	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthorityGlAccount_GlAccount()
 	 * @model keys="glAccountId"
 	 * @generated
 	 */
-	GlAccount getGlAccountId();
+	GlAccount getGlAccount();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount#getGlAccountId <em>Gl Account Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityGlAccount#getGlAccount <em>Gl Account</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Gl Account Id</em>' reference.
-	 * @see #getGlAccountId()
+	 * @param value the new value of the '<em>Gl Account</em>' reference.
+	 * @see #getGlAccount()
 	 * @generated
 	 */
-	void setGlAccountId(GlAccount value);
+	void setGlAccount(GlAccount value);
 
 } // TaxAuthorityGlAccount

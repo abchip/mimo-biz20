@@ -162,13 +162,13 @@ public interface StatusPackage extends EPackage {
 	int STATUS_ITEM__STATUS_CODE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Status Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Status Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_ITEM__STATUS_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int STATUS_ITEM__STATUS_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Item</em>' class.
@@ -262,13 +262,13 @@ public interface StatusPackage extends EPackage {
 	int STATUS_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int STATUS_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -326,13 +326,13 @@ public interface StatusPackage extends EPackage {
 	int STATUS_VALID_CHANGE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_VALID_CHANGE__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int STATUS_VALID_CHANGE__STATUS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Status Id To</b></em>' reference.
@@ -448,15 +448,15 @@ public interface StatusPackage extends EPackage {
 	EAttribute getStatusItem_StatusCode();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.status.StatusItem#getStatusTypeId <em>Status Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.status.StatusItem#getStatusType <em>Status Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Status Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.status.StatusItem#getStatusTypeId()
+	 * @return the meta object for the reference '<em>Status Type</em>'.
+	 * @see org.abchip.mimo.biz.model.common.status.StatusItem#getStatusType()
 	 * @see #getStatusItem()
 	 * @generated
 	 */
-	EReference getStatusItem_StatusTypeId();
+	EReference getStatusItem_StatusType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.common.status.StatusType <em>Type</em>}'.
@@ -502,15 +502,15 @@ public interface StatusPackage extends EPackage {
 	EAttribute getStatusType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.status.StatusType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.status.StatusType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.status.StatusType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.common.status.StatusType#getParentType()
 	 * @see #getStatusType()
 	 * @generated
 	 */
-	EReference getStatusType_ParentTypeId();
+	EReference getStatusType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.common.status.StatusValidChange <em>Valid Change</em>}'.
@@ -523,15 +523,15 @@ public interface StatusPackage extends EPackage {
 	EClass getStatusValidChange();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.status.StatusValidChange#getStatusId <em>Status Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.status.StatusValidChange#getStatus <em>Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.status.StatusValidChange#getStatusId()
+	 * @return the meta object for the reference '<em>Status</em>'.
+	 * @see org.abchip.mimo.biz.model.common.status.StatusValidChange#getStatus()
 	 * @see #getStatusValidChange()
 	 * @generated
 	 */
-	EReference getStatusValidChange_StatusId();
+	EReference getStatusValidChange_Status();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.status.StatusValidChange#getStatusIdTo <em>Status Id To</em>}'.
@@ -647,12 +647,12 @@ public interface StatusPackage extends EPackage {
 		EAttribute STATUS_ITEM__STATUS_CODE = eINSTANCE.getStatusItem_StatusCode();
 
 		/**
-		 * The meta object literal for the '<em><b>Status Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Status Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference STATUS_ITEM__STATUS_TYPE_ID = eINSTANCE.getStatusItem_StatusTypeId();
+		EReference STATUS_ITEM__STATUS_TYPE = eINSTANCE.getStatusItem_StatusType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.common.status.impl.StatusTypeImpl <em>Type</em>}' class.
@@ -689,12 +689,12 @@ public interface StatusPackage extends EPackage {
 		EAttribute STATUS_TYPE__HAS_TABLE = eINSTANCE.getStatusType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference STATUS_TYPE__PARENT_TYPE_ID = eINSTANCE.getStatusType_ParentTypeId();
+		EReference STATUS_TYPE__PARENT_TYPE = eINSTANCE.getStatusType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.common.status.impl.StatusValidChangeImpl <em>Valid Change</em>}' class.
@@ -707,12 +707,12 @@ public interface StatusPackage extends EPackage {
 		EClass STATUS_VALID_CHANGE = eINSTANCE.getStatusValidChange();
 
 		/**
-		 * The meta object literal for the '<em><b>Status Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Status</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference STATUS_VALID_CHANGE__STATUS_ID = eINSTANCE.getStatusValidChange_StatusId();
+		EReference STATUS_VALID_CHANGE__STATUS = eINSTANCE.getStatusValidChange_Status();
 
 		/**
 		 * The meta object literal for the '<em><b>Status Id To</b></em>' reference feature.

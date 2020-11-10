@@ -42,17 +42,17 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getCostComponentId <em>Cost Component Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getCost <em>Cost</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getCostComponentAttributes <em>Cost Component Attributes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getCostComponentCalcId <em>Cost Component Calc Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getCostComponentTypeId <em>Cost Component Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getCostUomId <em>Cost Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getCostComponentCalc <em>Cost Component Calc</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getCostComponentType <em>Cost Component Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getCostUom <em>Cost Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getFixedAsset <em>Fixed Asset</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getGeoId <em>Geo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getProductFeatureId <em>Product Feature Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getGeo <em>Geo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getProductFeature <em>Product Feature</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getThruDate <em>Thru Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentImpl#getWorkEffort <em>Work Effort</em>}</li>
  * </ul>
  *
  * @generated
@@ -205,8 +205,8 @@ public class CostComponentImpl extends EntityTypedImpl<CostComponentType> implem
 	 * @generated
 	 */
 	@Override
-	public Uom getCostUomId() {
-		return (Uom)eGet(CostPackage.Literals.COST_COMPONENT__COST_UOM_ID, true);
+	public CostComponentCalc getCostComponentCalc() {
+		return (CostComponentCalc)eGet(CostPackage.Literals.COST_COMPONENT__COST_COMPONENT_CALC, true);
 	}
 
 	/**
@@ -215,8 +215,8 @@ public class CostComponentImpl extends EntityTypedImpl<CostComponentType> implem
 	 * @generated
 	 */
 	@Override
-	public void setCostUomId(Uom newCostUomId) {
-		eSet(CostPackage.Literals.COST_COMPONENT__COST_UOM_ID, newCostUomId);
+	public void setCostComponentCalc(CostComponentCalc newCostComponentCalc) {
+		eSet(CostPackage.Literals.COST_COMPONENT__COST_COMPONENT_CALC, newCostComponentCalc);
 	}
 
 	/**
@@ -225,8 +225,8 @@ public class CostComponentImpl extends EntityTypedImpl<CostComponentType> implem
 	 * @generated
 	 */
 	@Override
-	public FixedAsset getFixedAssetId() {
-		return (FixedAsset)eGet(CostPackage.Literals.COST_COMPONENT__FIXED_ASSET_ID, true);
+	public CostComponentType getCostComponentType() {
+		return (CostComponentType)eGet(CostPackage.Literals.COST_COMPONENT__COST_COMPONENT_TYPE, true);
 	}
 
 	/**
@@ -235,8 +235,48 @@ public class CostComponentImpl extends EntityTypedImpl<CostComponentType> implem
 	 * @generated
 	 */
 	@Override
-	public void setFixedAssetId(FixedAsset newFixedAssetId) {
-		eSet(CostPackage.Literals.COST_COMPONENT__FIXED_ASSET_ID, newFixedAssetId);
+	public void setCostComponentType(CostComponentType newCostComponentType) {
+		eSet(CostPackage.Literals.COST_COMPONENT__COST_COMPONENT_TYPE, newCostComponentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Uom getCostUom() {
+		return (Uom)eGet(CostPackage.Literals.COST_COMPONENT__COST_UOM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCostUom(Uom newCostUom) {
+		eSet(CostPackage.Literals.COST_COMPONENT__COST_UOM, newCostUom);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FixedAsset getFixedAsset() {
+		return (FixedAsset)eGet(CostPackage.Literals.COST_COMPONENT__FIXED_ASSET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFixedAsset(FixedAsset newFixedAsset) {
+		eSet(CostPackage.Literals.COST_COMPONENT__FIXED_ASSET, newFixedAsset);
 	}
 
 	/**
@@ -265,8 +305,8 @@ public class CostComponentImpl extends EntityTypedImpl<CostComponentType> implem
 	 * @generated
 	 */
 	@Override
-	public Geo getGeoId() {
-		return (Geo)eGet(CostPackage.Literals.COST_COMPONENT__GEO_ID, true);
+	public Geo getGeo() {
+		return (Geo)eGet(CostPackage.Literals.COST_COMPONENT__GEO, true);
 	}
 
 	/**
@@ -275,8 +315,8 @@ public class CostComponentImpl extends EntityTypedImpl<CostComponentType> implem
 	 * @generated
 	 */
 	@Override
-	public void setGeoId(Geo newGeoId) {
-		eSet(CostPackage.Literals.COST_COMPONENT__GEO_ID, newGeoId);
+	public void setGeo(Geo newGeo) {
+		eSet(CostPackage.Literals.COST_COMPONENT__GEO, newGeo);
 	}
 
 	/**
@@ -285,8 +325,8 @@ public class CostComponentImpl extends EntityTypedImpl<CostComponentType> implem
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(CostPackage.Literals.COST_COMPONENT__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(CostPackage.Literals.COST_COMPONENT__PARTY, true);
 	}
 
 	/**
@@ -295,8 +335,8 @@ public class CostComponentImpl extends EntityTypedImpl<CostComponentType> implem
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(CostPackage.Literals.COST_COMPONENT__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(CostPackage.Literals.COST_COMPONENT__PARTY, newParty);
 	}
 
 	/**
@@ -305,8 +345,8 @@ public class CostComponentImpl extends EntityTypedImpl<CostComponentType> implem
 	 * @generated
 	 */
 	@Override
-	public ProductFeature getProductFeatureId() {
-		return (ProductFeature)eGet(CostPackage.Literals.COST_COMPONENT__PRODUCT_FEATURE_ID, true);
+	public Product getProduct() {
+		return (Product)eGet(CostPackage.Literals.COST_COMPONENT__PRODUCT, true);
 	}
 
 	/**
@@ -315,8 +355,8 @@ public class CostComponentImpl extends EntityTypedImpl<CostComponentType> implem
 	 * @generated
 	 */
 	@Override
-	public void setProductFeatureId(ProductFeature newProductFeatureId) {
-		eSet(CostPackage.Literals.COST_COMPONENT__PRODUCT_FEATURE_ID, newProductFeatureId);
+	public void setProduct(Product newProduct) {
+		eSet(CostPackage.Literals.COST_COMPONENT__PRODUCT, newProduct);
 	}
 
 	/**
@@ -325,8 +365,8 @@ public class CostComponentImpl extends EntityTypedImpl<CostComponentType> implem
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(CostPackage.Literals.COST_COMPONENT__PRODUCT_ID, true);
+	public ProductFeature getProductFeature() {
+		return (ProductFeature)eGet(CostPackage.Literals.COST_COMPONENT__PRODUCT_FEATURE, true);
 	}
 
 	/**
@@ -335,8 +375,8 @@ public class CostComponentImpl extends EntityTypedImpl<CostComponentType> implem
 	 * @generated
 	 */
 	@Override
-	public void setProductId(Product newProductId) {
-		eSet(CostPackage.Literals.COST_COMPONENT__PRODUCT_ID, newProductId);
+	public void setProductFeature(ProductFeature newProductFeature) {
+		eSet(CostPackage.Literals.COST_COMPONENT__PRODUCT_FEATURE, newProductFeature);
 	}
 
 	/**
@@ -365,8 +405,8 @@ public class CostComponentImpl extends EntityTypedImpl<CostComponentType> implem
 	 * @generated
 	 */
 	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(CostPackage.Literals.COST_COMPONENT__WORK_EFFORT_ID, true);
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(CostPackage.Literals.COST_COMPONENT__WORK_EFFORT, true);
 	}
 
 	/**
@@ -375,8 +415,8 @@ public class CostComponentImpl extends EntityTypedImpl<CostComponentType> implem
 	 * @generated
 	 */
 	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(CostPackage.Literals.COST_COMPONENT__WORK_EFFORT_ID, newWorkEffortId);
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(CostPackage.Literals.COST_COMPONENT__WORK_EFFORT, newWorkEffort);
 	}
 
 	/**
@@ -415,46 +455,6 @@ public class CostComponentImpl extends EntityTypedImpl<CostComponentType> implem
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CostComponentType getCostComponentTypeId() {
-		return (CostComponentType)eGet(CostPackage.Literals.COST_COMPONENT__COST_COMPONENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCostComponentTypeId(CostComponentType newCostComponentTypeId) {
-		eSet(CostPackage.Literals.COST_COMPONENT__COST_COMPONENT_TYPE_ID, newCostComponentTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CostComponentCalc getCostComponentCalcId() {
-		return (CostComponentCalc)eGet(CostPackage.Literals.COST_COMPONENT__COST_COMPONENT_CALC_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCostComponentCalcId(CostComponentCalc newCostComponentCalcId) {
-		eSet(CostPackage.Literals.COST_COMPONENT__COST_COMPONENT_CALC_ID, newCostComponentCalcId);
 	}
 
 	/**

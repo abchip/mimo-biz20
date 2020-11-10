@@ -36,12 +36,12 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductReviewImpl#getProductReviewId <em>Product Review Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductReviewImpl#getPostedAnonymous <em>Posted Anonymous</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductReviewImpl#getPostedDateTime <em>Posted Date Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductReviewImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductReviewImpl#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductReviewImpl#getProductRating <em>Product Rating</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductReviewImpl#getProductReview <em>Product Review</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductReviewImpl#getProductStoreId <em>Product Store Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductReviewImpl#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductReviewImpl#getUserLoginId <em>User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductReviewImpl#getProductStore <em>Product Store</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductReviewImpl#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductReviewImpl#getUserLogin <em>User Login</em>}</li>
  * </ul>
  *
  * @generated
@@ -183,6 +183,26 @@ public class ProductReviewImpl extends EntityIdentifiableImpl implements Product
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(ProductPackage.Literals.PRODUCT_REVIEW__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(ProductPackage.Literals.PRODUCT_REVIEW__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getProductRating() {
 		return (BigDecimal)eGet(ProductPackage.Literals.PRODUCT_REVIEW__PRODUCT_RATING, true);
 	}
@@ -215,6 +235,66 @@ public class ProductReviewImpl extends EntityIdentifiableImpl implements Product
 	@Override
 	public void setProductReview(String newProductReview) {
 		eSet(ProductPackage.Literals.PRODUCT_REVIEW__PRODUCT_REVIEW, newProductReview);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(ProductPackage.Literals.PRODUCT_REVIEW__PRODUCT_STORE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(ProductPackage.Literals.PRODUCT_REVIEW__PRODUCT_STORE, newProductStore);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(ProductPackage.Literals.PRODUCT_REVIEW__STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(StatusItem newStatus) {
+		eSet(ProductPackage.Literals.PRODUCT_REVIEW__STATUS, newStatus);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UserLogin getUserLogin() {
+		return (UserLogin)eGet(ProductPackage.Literals.PRODUCT_REVIEW__USER_LOGIN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUserLogin(UserLogin newUserLogin) {
+		eSet(ProductPackage.Literals.PRODUCT_REVIEW__USER_LOGIN, newUserLogin);
 	}
 
 	/**
@@ -263,66 +343,6 @@ public class ProductReviewImpl extends EntityIdentifiableImpl implements Product
 	 * @generated
 	 */
 	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(ProductPackage.Literals.PRODUCT_REVIEW__PRODUCT_STORE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(ProductPackage.Literals.PRODUCT_REVIEW__PRODUCT_STORE_ID, newProductStoreId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(ProductPackage.Literals.PRODUCT_REVIEW__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(ProductPackage.Literals.PRODUCT_REVIEW__STATUS_ID, newStatusId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public UserLogin getUserLoginId() {
-		return (UserLogin)eGet(ProductPackage.Literals.PRODUCT_REVIEW__USER_LOGIN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setUserLoginId(UserLogin newUserLoginId) {
-		eSet(ProductPackage.Literals.PRODUCT_REVIEW__USER_LOGIN_ID, newUserLoginId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
 		if (baseClass == EntityInfo.class) {
 			switch (derivedFeatureID) {
@@ -353,26 +373,6 @@ public class ProductReviewImpl extends EntityIdentifiableImpl implements Product
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(ProductPackage.Literals.PRODUCT_REVIEW__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(ProductPackage.Literals.PRODUCT_REVIEW__PRODUCT_ID, newProductId);
 	}
 
 } //ProductReviewImpl

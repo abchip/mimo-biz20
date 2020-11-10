@@ -33,15 +33,15 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getProductPromoId <em>Product Promo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getProductPromo <em>Product Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getProductPromoActionSeqId <em>Product Promo Action Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getProductPromoRuleId <em>Product Promo Rule Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getAmount <em>Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getCustomMethodId <em>Custom Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getOrderAdjustmentTypeId <em>Order Adjustment Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getCustomMethod <em>Custom Method</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getOrderAdjustmentType <em>Order Adjustment Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getPartyId <em>Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getProductPromoActionEnumId <em>Product Promo Action Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getProductPromoActionEnum <em>Product Promo Action Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getServiceName <em>Service Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getUseCartQuantity <em>Use Cart Quantity</em>}</li>
@@ -166,6 +166,26 @@ public class ProductPromoActionImpl extends EntityIdentifiableImpl implements Pr
 	 * @generated
 	 */
 	@Override
+	public ProductPromo getProductPromo() {
+		return (ProductPromo)eGet(PromoPackage.Literals.PRODUCT_PROMO_ACTION__PRODUCT_PROMO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPromo(ProductPromo newProductPromo) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_ACTION__PRODUCT_PROMO, newProductPromo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAmount() {
 		return (BigDecimal)eGet(PromoPackage.Literals.PRODUCT_PROMO_ACTION__AMOUNT, true);
 	}
@@ -186,8 +206,8 @@ public class ProductPromoActionImpl extends EntityIdentifiableImpl implements Pr
 	 * @generated
 	 */
 	@Override
-	public CustomMethod getCustomMethodId() {
-		return (CustomMethod)eGet(PromoPackage.Literals.PRODUCT_PROMO_ACTION__CUSTOM_METHOD_ID, true);
+	public CustomMethod getCustomMethod() {
+		return (CustomMethod)eGet(PromoPackage.Literals.PRODUCT_PROMO_ACTION__CUSTOM_METHOD, true);
 	}
 
 	/**
@@ -196,8 +216,8 @@ public class ProductPromoActionImpl extends EntityIdentifiableImpl implements Pr
 	 * @generated
 	 */
 	@Override
-	public void setCustomMethodId(CustomMethod newCustomMethodId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_ACTION__CUSTOM_METHOD_ID, newCustomMethodId);
+	public void setCustomMethod(CustomMethod newCustomMethod) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_ACTION__CUSTOM_METHOD, newCustomMethod);
 	}
 
 	/**
@@ -206,8 +226,8 @@ public class ProductPromoActionImpl extends EntityIdentifiableImpl implements Pr
 	 * @generated
 	 */
 	@Override
-	public OrderAdjustmentType getOrderAdjustmentTypeId() {
-		return (OrderAdjustmentType)eGet(PromoPackage.Literals.PRODUCT_PROMO_ACTION__ORDER_ADJUSTMENT_TYPE_ID, true);
+	public OrderAdjustmentType getOrderAdjustmentType() {
+		return (OrderAdjustmentType)eGet(PromoPackage.Literals.PRODUCT_PROMO_ACTION__ORDER_ADJUSTMENT_TYPE, true);
 	}
 
 	/**
@@ -216,8 +236,8 @@ public class ProductPromoActionImpl extends EntityIdentifiableImpl implements Pr
 	 * @generated
 	 */
 	@Override
-	public void setOrderAdjustmentTypeId(OrderAdjustmentType newOrderAdjustmentTypeId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_ACTION__ORDER_ADJUSTMENT_TYPE_ID, newOrderAdjustmentTypeId);
+	public void setOrderAdjustmentType(OrderAdjustmentType newOrderAdjustmentType) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_ACTION__ORDER_ADJUSTMENT_TYPE, newOrderAdjustmentType);
 	}
 
 	/**
@@ -266,8 +286,8 @@ public class ProductPromoActionImpl extends EntityIdentifiableImpl implements Pr
 	 * @generated
 	 */
 	@Override
-	public Enumeration getProductPromoActionEnumId() {
-		return (Enumeration)eGet(PromoPackage.Literals.PRODUCT_PROMO_ACTION__PRODUCT_PROMO_ACTION_ENUM_ID, true);
+	public Enumeration getProductPromoActionEnum() {
+		return (Enumeration)eGet(PromoPackage.Literals.PRODUCT_PROMO_ACTION__PRODUCT_PROMO_ACTION_ENUM, true);
 	}
 
 	/**
@@ -276,8 +296,8 @@ public class ProductPromoActionImpl extends EntityIdentifiableImpl implements Pr
 	 * @generated
 	 */
 	@Override
-	public void setProductPromoActionEnumId(Enumeration newProductPromoActionEnumId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_ACTION__PRODUCT_PROMO_ACTION_ENUM_ID, newProductPromoActionEnumId);
+	public void setProductPromoActionEnum(Enumeration newProductPromoActionEnum) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_ACTION__PRODUCT_PROMO_ACTION_ENUM, newProductPromoActionEnum);
 	}
 
 	/**
@@ -416,26 +436,6 @@ public class ProductPromoActionImpl extends EntityIdentifiableImpl implements Pr
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductPromo getProductPromoId() {
-		return (ProductPromo)eGet(PromoPackage.Literals.PRODUCT_PROMO_ACTION__PRODUCT_PROMO_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPromoId(ProductPromo newProductPromoId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_ACTION__PRODUCT_PROMO_ID, newProductPromoId);
 	}
 
 } //ProductPromoActionImpl

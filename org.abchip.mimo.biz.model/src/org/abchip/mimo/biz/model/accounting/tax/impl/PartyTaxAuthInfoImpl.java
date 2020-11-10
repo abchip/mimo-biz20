@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.PartyTaxAuthInfoImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.PartyTaxAuthInfoImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.PartyTaxAuthInfoImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.PartyTaxAuthInfoImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.PartyTaxAuthInfoImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.PartyTaxAuthInfoImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.PartyTaxAuthInfoImpl#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.PartyTaxAuthInfoImpl#getTaxAuthPartyId <em>Tax Auth Party Id</em>}</li>
@@ -156,6 +156,26 @@ public class PartyTaxAuthInfoImpl extends EntityIdentifiableImpl implements Part
 	 * @generated
 	 */
 	@Override
+	public Party getParty() {
+		return (Party)eGet(TaxPackage.Literals.PARTY_TAX_AUTH_INFO__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(TaxPackage.Literals.PARTY_TAX_AUTH_INFO__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(TaxPackage.Literals.PARTY_TAX_AUTH_INFO__FROM_DATE, true);
 	}
@@ -208,26 +228,6 @@ public class PartyTaxAuthInfoImpl extends EntityIdentifiableImpl implements Part
 	@Override
 	public void setIsNexus(boolean newIsNexus) {
 		eSet(TaxPackage.Literals.PARTY_TAX_AUTH_INFO__IS_NEXUS, newIsNexus);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(TaxPackage.Literals.PARTY_TAX_AUTH_INFO__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(TaxPackage.Literals.PARTY_TAX_AUTH_INFO__PARTY_ID, newPartyId);
 	}
 
 	/**

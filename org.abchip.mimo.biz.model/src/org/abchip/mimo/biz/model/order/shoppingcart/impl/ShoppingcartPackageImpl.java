@@ -704,7 +704,7 @@ public class ShoppingcartPackageImpl extends EPackageImpl implements Shoppingcar
 	 * @generated
 	 */
 	@Override
-	public EReference getCartAbandonedLine_ProdCatalogId() {
+	public EReference getCartAbandonedLine_ProdCatalog() {
 		return (EReference)cartAbandonedLineEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -714,7 +714,7 @@ public class ShoppingcartPackageImpl extends EPackageImpl implements Shoppingcar
 	 * @generated
 	 */
 	@Override
-	public EReference getCartAbandonedLine_ProductId() {
+	public EReference getCartAbandonedLine_Product() {
 		return (EReference)cartAbandonedLineEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -841,8 +841,8 @@ public class ShoppingcartPackageImpl extends EPackageImpl implements Shoppingcar
 		createEAttribute(cartAbandonedLineEClass, CART_ABANDONED_LINE__CART_ABANDONED_LINE_SEQ_ID);
 		createEAttribute(cartAbandonedLineEClass, CART_ABANDONED_LINE__VISIT_ID);
 		createEAttribute(cartAbandonedLineEClass, CART_ABANDONED_LINE__CONFIG_ID);
-		createEReference(cartAbandonedLineEClass, CART_ABANDONED_LINE__PROD_CATALOG_ID);
-		createEReference(cartAbandonedLineEClass, CART_ABANDONED_LINE__PRODUCT_ID);
+		createEReference(cartAbandonedLineEClass, CART_ABANDONED_LINE__PROD_CATALOG);
+		createEReference(cartAbandonedLineEClass, CART_ABANDONED_LINE__PRODUCT);
 		createEAttribute(cartAbandonedLineEClass, CART_ABANDONED_LINE__QUANTITY);
 		createEAttribute(cartAbandonedLineEClass, CART_ABANDONED_LINE__RESERV2ND_PP_PERC);
 		createEAttribute(cartAbandonedLineEClass, CART_ABANDONED_LINE__RESERV_LENGTH);
@@ -895,10 +895,10 @@ public class ShoppingcartPackageImpl extends EPackageImpl implements Shoppingcar
 		initEAttribute(getCartAbandonedLine_CartAbandonedLineSeqId(), ecorePackage.getEString(), "cartAbandonedLineSeqId", null, 1, 1, CartAbandonedLine.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCartAbandonedLine_VisitId(), ecorePackage.getEString(), "visitId", null, 1, 1, CartAbandonedLine.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCartAbandonedLine_ConfigId(), ecorePackage.getEString(), "configId", null, 0, 1, CartAbandonedLine.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCartAbandonedLine_ProdCatalogId(), theCatalogPackage.getProdCatalog(), null, "prodCatalogId", null, 0, 1, CartAbandonedLine.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCartAbandonedLine_ProdCatalogId().getEKeys().add(theCatalogPackage.getProdCatalog_ProdCatalogId());
-		initEReference(getCartAbandonedLine_ProductId(), theProductPackage.getProduct(), null, "productId", null, 0, 1, CartAbandonedLine.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCartAbandonedLine_ProductId().getEKeys().add(theProductPackage.getProduct_ProductId());
+		initEReference(getCartAbandonedLine_ProdCatalog(), theCatalogPackage.getProdCatalog(), null, "prodCatalog", null, 0, 1, CartAbandonedLine.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCartAbandonedLine_ProdCatalog().getEKeys().add(theCatalogPackage.getProdCatalog_ProdCatalogId());
+		initEReference(getCartAbandonedLine_Product(), theProductPackage.getProduct(), null, "product", null, 0, 1, CartAbandonedLine.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCartAbandonedLine_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEAttribute(getCartAbandonedLine_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, CartAbandonedLine.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCartAbandonedLine_Reserv2ndPPPerc(), ecorePackage.getEBigDecimal(), "reserv2ndPPPerc", null, 0, 1, CartAbandonedLine.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCartAbandonedLine_ReservLength(), ecorePackage.getEBigDecimal(), "reservLength", null, 0, 1, CartAbandonedLine.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

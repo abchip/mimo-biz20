@@ -20,7 +20,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.config.ProductConfigStats#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.config.ProductConfigStats#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.ProductConfigStats#getConfigId <em>Config Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.ProductConfigStats#getConfigTypeId <em>Config Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.ProductConfigStats#getNumOfConfs <em>Num Of Confs</em>}</li>
@@ -31,6 +31,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductConfigStats extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProductConfigStats_Product()
+	 * @model keys="productId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.config.ProductConfigStats#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
+
 	/**
 	 * Returns the value of the '<em><b>Config Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -111,32 +134,5 @@ public interface ProductConfigStats extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setNumOfConfs(long value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProductConfigStats_ProductId()
-	 * @model keys="productId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Product getProductId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.config.ProductConfigStats#getProductId <em>Product Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
-	 * @generated
-	 */
-	void setProductId(Product value);
 
 } // ProductConfigStats

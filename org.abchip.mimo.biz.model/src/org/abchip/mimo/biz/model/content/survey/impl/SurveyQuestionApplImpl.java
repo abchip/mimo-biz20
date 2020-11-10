@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionApplImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionApplImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionApplImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionApplImpl#getSurveyId <em>Survey Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionApplImpl#getSurveyQuestionId <em>Survey Question Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionApplImpl#getSurvey <em>Survey</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionApplImpl#getSurveyQuestion <em>Survey Question</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionApplImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionApplImpl#getExternalFieldRef <em>External Field Ref</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionApplImpl#getRequiredField <em>Required Field</em>}</li>
@@ -162,6 +162,46 @@ public class SurveyQuestionApplImpl extends EntityIdentifiableImpl implements Su
 	 * @generated
 	 */
 	@Override
+	public Survey getSurvey() {
+		return (Survey)eGet(SurveyPackage.Literals.SURVEY_QUESTION_APPL__SURVEY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSurvey(Survey newSurvey) {
+		eSet(SurveyPackage.Literals.SURVEY_QUESTION_APPL__SURVEY, newSurvey);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SurveyQuestion getSurveyQuestion() {
+		return (SurveyQuestion)eGet(SurveyPackage.Literals.SURVEY_QUESTION_APPL__SURVEY_QUESTION, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSurveyQuestion(SurveyQuestion newSurveyQuestion) {
+		eSet(SurveyPackage.Literals.SURVEY_QUESTION_APPL__SURVEY_QUESTION, newSurveyQuestion);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getExternalFieldRef() {
 		return (String)eGet(SurveyPackage.Literals.SURVEY_QUESTION_APPL__EXTERNAL_FIELD_REF, true);
 	}
@@ -242,26 +282,6 @@ public class SurveyQuestionApplImpl extends EntityIdentifiableImpl implements Su
 	 * @generated
 	 */
 	@Override
-	public Survey getSurveyId() {
-		return (Survey)eGet(SurveyPackage.Literals.SURVEY_QUESTION_APPL__SURVEY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSurveyId(Survey newSurveyId) {
-		eSet(SurveyPackage.Literals.SURVEY_QUESTION_APPL__SURVEY_ID, newSurveyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getSurveyMultiRespColId() {
 		return (String)eGet(SurveyPackage.Literals.SURVEY_QUESTION_APPL__SURVEY_MULTI_RESP_COL_ID, true);
 	}
@@ -314,26 +334,6 @@ public class SurveyQuestionApplImpl extends EntityIdentifiableImpl implements Su
 	@Override
 	public void setSurveyPageSeqId(String newSurveyPageSeqId) {
 		eSet(SurveyPackage.Literals.SURVEY_QUESTION_APPL__SURVEY_PAGE_SEQ_ID, newSurveyPageSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SurveyQuestion getSurveyQuestionId() {
-		return (SurveyQuestion)eGet(SurveyPackage.Literals.SURVEY_QUESTION_APPL__SURVEY_QUESTION_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSurveyQuestionId(SurveyQuestion newSurveyQuestionId) {
-		eSet(SurveyPackage.Literals.SURVEY_QUESTION_APPL__SURVEY_QUESTION_ID, newSurveyQuestionId);
 	}
 
 	/**

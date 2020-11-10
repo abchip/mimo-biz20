@@ -117,13 +117,13 @@ public interface DatasourcePackage extends EPackage {
 	int DATA_SOURCE__DATA_SOURCE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Data Source Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Data Source Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_SOURCE__DATA_SOURCE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int DATA_SOURCE__DATA_SOURCE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -248,15 +248,15 @@ public interface DatasourcePackage extends EPackage {
 	EAttribute getDataSource_DataSourceId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.datasource.DataSource#getDataSourceTypeId <em>Data Source Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.datasource.DataSource#getDataSourceType <em>Data Source Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Data Source Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.datasource.DataSource#getDataSourceTypeId()
+	 * @return the meta object for the reference '<em>Data Source Type</em>'.
+	 * @see org.abchip.mimo.biz.model.common.datasource.DataSource#getDataSourceType()
 	 * @see #getDataSource()
 	 * @generated
 	 */
-	EReference getDataSource_DataSourceTypeId();
+	EReference getDataSource_DataSourceType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.datasource.DataSource#getDescription <em>Description</em>}'.
@@ -342,12 +342,12 @@ public interface DatasourcePackage extends EPackage {
 		EAttribute DATA_SOURCE__DATA_SOURCE_ID = eINSTANCE.getDataSource_DataSourceId();
 
 		/**
-		 * The meta object literal for the '<em><b>Data Source Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Data Source Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATA_SOURCE__DATA_SOURCE_TYPE_ID = eINSTANCE.getDataSource_DataSourceTypeId();
+		EReference DATA_SOURCE__DATA_SOURCE_TYPE = eINSTANCE.getDataSource_DataSourceType();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.

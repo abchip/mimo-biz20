@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestContentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestContentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestContentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestContentImpl#getCustRequestId <em>Cust Request Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestContentImpl#getContentId <em>Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestContentImpl#getCustRequest <em>Cust Request</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestContentImpl#getContent <em>Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestContentImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestContentImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -154,8 +154,8 @@ public class CustRequestContentImpl extends EntityIdentifiableImpl implements Cu
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(RequestPackage.Literals.CUST_REQUEST_CONTENT__CONTENT_ID, true);
+	public CustRequest getCustRequest() {
+		return (CustRequest)eGet(RequestPackage.Literals.CUST_REQUEST_CONTENT__CUST_REQUEST, true);
 	}
 
 	/**
@@ -164,8 +164,8 @@ public class CustRequestContentImpl extends EntityIdentifiableImpl implements Cu
 	 * @generated
 	 */
 	@Override
-	public void setContentId(Content newContentId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_CONTENT__CONTENT_ID, newContentId);
+	public void setCustRequest(CustRequest newCustRequest) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_CONTENT__CUST_REQUEST, newCustRequest);
 	}
 
 	/**
@@ -174,8 +174,8 @@ public class CustRequestContentImpl extends EntityIdentifiableImpl implements Cu
 	 * @generated
 	 */
 	@Override
-	public CustRequest getCustRequestId() {
-		return (CustRequest)eGet(RequestPackage.Literals.CUST_REQUEST_CONTENT__CUST_REQUEST_ID, true);
+	public Content getContent() {
+		return (Content)eGet(RequestPackage.Literals.CUST_REQUEST_CONTENT__CONTENT, true);
 	}
 
 	/**
@@ -184,8 +184,8 @@ public class CustRequestContentImpl extends EntityIdentifiableImpl implements Cu
 	 * @generated
 	 */
 	@Override
-	public void setCustRequestId(CustRequest newCustRequestId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_CONTENT__CUST_REQUEST_ID, newCustRequestId);
+	public void setContent(Content newContent) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_CONTENT__CONTENT, newContent);
 	}
 
 	/**

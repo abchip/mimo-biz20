@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryImpl#getGlAccountCategoryId <em>Gl Account Category Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryImpl#getGlAccountCategoryTypeId <em>Gl Account Category Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryImpl#getGlAccountCategoryType <em>Gl Account Category Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -171,8 +171,8 @@ public class GlAccountCategoryImpl extends EntityTypedImpl<GlAccountCategoryType
 	 * @generated
 	 */
 	@Override
-	public GlAccountCategoryType getGlAccountCategoryTypeId() {
-		return (GlAccountCategoryType)eGet(LedgerPackage.Literals.GL_ACCOUNT_CATEGORY__GL_ACCOUNT_CATEGORY_TYPE_ID, true);
+	public GlAccountCategoryType getGlAccountCategoryType() {
+		return (GlAccountCategoryType)eGet(LedgerPackage.Literals.GL_ACCOUNT_CATEGORY__GL_ACCOUNT_CATEGORY_TYPE, true);
 	}
 
 	/**
@@ -181,8 +181,8 @@ public class GlAccountCategoryImpl extends EntityTypedImpl<GlAccountCategoryType
 	 * @generated
 	 */
 	@Override
-	public void setGlAccountCategoryTypeId(GlAccountCategoryType newGlAccountCategoryTypeId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT_CATEGORY__GL_ACCOUNT_CATEGORY_TYPE_ID, newGlAccountCategoryTypeId);
+	public void setGlAccountCategoryType(GlAccountCategoryType newGlAccountCategoryType) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT_CATEGORY__GL_ACCOUNT_CATEGORY_TYPE, newGlAccountCategoryType);
 	}
 
 	/**

@@ -30,8 +30,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderShipmentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderShipmentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderShipmentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderShipmentImpl#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderShipmentImpl#getShipmentId <em>Shipment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderShipmentImpl#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderShipmentImpl#getShipment <em>Shipment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderShipmentImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderShipmentImpl#getShipGroupSeqId <em>Ship Group Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderShipmentImpl#getShipmentItemSeqId <em>Shipment Item Seq Id</em>}</li>
@@ -157,8 +157,8 @@ public class OrderShipmentImpl extends EntityIdentifiableImpl implements OrderSh
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_SHIPMENT__ORDER_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_SHIPMENT__ORDER, true);
 	}
 
 	/**
@@ -167,8 +167,28 @@ public class OrderShipmentImpl extends EntityIdentifiableImpl implements OrderSh
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_SHIPMENT__ORDER_ID, newOrderId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_SHIPMENT__ORDER, newOrder);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Shipment getShipment() {
+		return (Shipment)eGet(OrderPackage.Literals.ORDER_SHIPMENT__SHIPMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setShipment(Shipment newShipment) {
+		eSet(OrderPackage.Literals.ORDER_SHIPMENT__SHIPMENT, newShipment);
 	}
 
 	/**
@@ -267,26 +287,6 @@ public class OrderShipmentImpl extends EntityIdentifiableImpl implements OrderSh
 	@Override
 	public void setShipGroupSeqId(String newShipGroupSeqId) {
 		eSet(OrderPackage.Literals.ORDER_SHIPMENT__SHIP_GROUP_SEQ_ID, newShipGroupSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Shipment getShipmentId() {
-		return (Shipment)eGet(OrderPackage.Literals.ORDER_SHIPMENT__SHIPMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setShipmentId(Shipment newShipmentId) {
-		eSet(OrderPackage.Literals.ORDER_SHIPMENT__SHIPMENT_ID, newShipmentId);
 	}
 
 	/**

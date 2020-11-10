@@ -29,11 +29,11 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getProductPriceTypeId <em>Product Price Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getProductPricePurposeId <em>Product Price Purpose Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getCurrencyUomId <em>Currency Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getProductStoreGroupId <em>Product Store Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getProductPriceType <em>Product Price Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getProductPricePurpose <em>Product Price Purpose</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getCurrencyUom <em>Currency Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getProductStoreGroup <em>Product Store Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getCreatedDate <em>Created Date</em>}</li>
@@ -44,11 +44,11 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getPriceWithTax <em>Price With Tax</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getPriceWithoutTax <em>Price Without Tax</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getTaxAmount <em>Tax Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getTaxAuthPartyId <em>Tax Auth Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getTaxAuthGeo <em>Tax Auth Geo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getTaxAuthParty <em>Tax Auth Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#isTaxInPrice <em>Tax In Price</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getTaxPercentage <em>Tax Percentage</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getTermUomId <em>Term Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getTermUom <em>Term Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -57,6 +57,121 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductPrice extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_Product()
+	 * @model keys="productId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Price Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Price Type</em>' reference.
+	 * @see #setProductPriceType(ProductPriceType)
+	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_ProductPriceType()
+	 * @model keys="productPriceTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductPriceType getProductPriceType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getProductPriceType <em>Product Price Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Price Type</em>' reference.
+	 * @see #getProductPriceType()
+	 * @generated
+	 */
+	void setProductPriceType(ProductPriceType value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Price Purpose</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Price Purpose</em>' reference.
+	 * @see #setProductPricePurpose(ProductPricePurpose)
+	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_ProductPricePurpose()
+	 * @model keys="productPricePurposeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductPricePurpose getProductPricePurpose();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getProductPricePurpose <em>Product Price Purpose</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Price Purpose</em>' reference.
+	 * @see #getProductPricePurpose()
+	 * @generated
+	 */
+	void setProductPricePurpose(ProductPricePurpose value);
+
+	/**
+	 * Returns the value of the '<em><b>Currency Uom</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Currency Uom</em>' reference.
+	 * @see #setCurrencyUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_CurrencyUom()
+	 * @model keys="uomId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Uom getCurrencyUom();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getCurrencyUom <em>Currency Uom</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Currency Uom</em>' reference.
+	 * @see #getCurrencyUom()
+	 * @generated
+	 */
+	void setCurrencyUom(Uom value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Store Group</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Store Group</em>' reference.
+	 * @see #setProductStoreGroup(ProductStoreGroup)
+	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_ProductStoreGroup()
+	 * @model keys="productStoreGroupId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductStoreGroup getProductStoreGroup();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getProductStoreGroup <em>Product Store Group</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Store Group</em>' reference.
+	 * @see #getProductStoreGroup()
+	 * @generated
+	 */
+	void setProductStoreGroup(ProductStoreGroup value);
+
 	/**
 	 * Returns the value of the '<em><b>Created By User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -108,33 +223,6 @@ public interface ProductPrice extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setCreatedDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Currency Uom Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Currency Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Currency Uom Id</em>' reference.
-	 * @see #setCurrencyUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_CurrencyUomId()
-	 * @model keys="uomId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Uom getCurrencyUomId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getCurrencyUomId <em>Currency Uom Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Currency Uom Id</em>' reference.
-	 * @see #getCurrencyUomId()
-	 * @generated
-	 */
-	void setCurrencyUomId(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Custom Price Calc Service</b></em>' reference.
@@ -323,60 +411,6 @@ public interface ProductPrice extends EntityIdentifiable, EntityInfo {
 	void setPriceWithoutTax(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_ProductId()
-	 * @model keys="productId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Product getProductId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getProductId <em>Product Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
-	 * @generated
-	 */
-	void setProductId(Product value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Store Group Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Group Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store Group Id</em>' reference.
-	 * @see #setProductStoreGroupId(ProductStoreGroup)
-	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_ProductStoreGroupId()
-	 * @model keys="productStoreGroupId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductStoreGroup getProductStoreGroupId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getProductStoreGroupId <em>Product Store Group Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store Group Id</em>' reference.
-	 * @see #getProductStoreGroupId()
-	 * @generated
-	 */
-	void setProductStoreGroupId(ProductStoreGroup value);
-
-	/**
 	 * Returns the value of the '<em><b>Tax Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -401,6 +435,50 @@ public interface ProductPrice extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setTaxAmount(BigDecimal value);
+
+	/**
+	 * Returns the value of the '<em><b>Tax Auth Geo</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tax Auth Geo</em>' reference.
+	 * @see #setTaxAuthGeo(Geo)
+	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_TaxAuthGeo()
+	 * @model keys="geoId"
+	 * @generated
+	 */
+	Geo getTaxAuthGeo();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getTaxAuthGeo <em>Tax Auth Geo</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tax Auth Geo</em>' reference.
+	 * @see #getTaxAuthGeo()
+	 * @generated
+	 */
+	void setTaxAuthGeo(Geo value);
+
+	/**
+	 * Returns the value of the '<em><b>Tax Auth Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tax Auth Party</em>' reference.
+	 * @see #setTaxAuthParty(Party)
+	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_TaxAuthParty()
+	 * @model keys="partyId"
+	 * @generated
+	 */
+	Party getTaxAuthParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getTaxAuthParty <em>Tax Auth Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tax Auth Party</em>' reference.
+	 * @see #getTaxAuthParty()
+	 * @generated
+	 */
+	void setTaxAuthParty(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Tax In Price</b></em>' attribute.
@@ -430,58 +508,6 @@ public interface ProductPrice extends EntityIdentifiable, EntityInfo {
 	void setTaxInPrice(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Tax Auth Geo Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tax Auth Geo Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tax Auth Geo Id</em>' reference.
-	 * @see #setTaxAuthGeoId(Geo)
-	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_TaxAuthGeoId()
-	 * @model keys="geoId"
-	 * @generated
-	 */
-	Geo getTaxAuthGeoId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tax Auth Geo Id</em>' reference.
-	 * @see #getTaxAuthGeoId()
-	 * @generated
-	 */
-	void setTaxAuthGeoId(Geo value);
-
-	/**
-	 * Returns the value of the '<em><b>Tax Auth Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tax Auth Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tax Auth Party Id</em>' reference.
-	 * @see #setTaxAuthPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_TaxAuthPartyId()
-	 * @model keys="partyId"
-	 * @generated
-	 */
-	Party getTaxAuthPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getTaxAuthPartyId <em>Tax Auth Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tax Auth Party Id</em>' reference.
-	 * @see #getTaxAuthPartyId()
-	 * @generated
-	 */
-	void setTaxAuthPartyId(Party value);
-
-	/**
 	 * Returns the value of the '<em><b>Tax Percentage</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -508,31 +534,27 @@ public interface ProductPrice extends EntityIdentifiable, EntityInfo {
 	void setTaxPercentage(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Term Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Term Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Term Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Term Uom Id</em>' reference.
-	 * @see #setTermUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_TermUomId()
+	 * @return the value of the '<em>Term Uom</em>' reference.
+	 * @see #setTermUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_TermUom()
 	 * @model keys="uomId"
 	 *        annotation="mimo-ent-slot help='Mainly used for recurring and usage prices to specify a time/freq measure, or a usage unit measure (bits, minutes, etc)'"
 	 * @generated
 	 */
-	Uom getTermUomId();
+	Uom getTermUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getTermUomId <em>Term Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getTermUom <em>Term Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Term Uom Id</em>' reference.
-	 * @see #getTermUomId()
+	 * @param value the new value of the '<em>Term Uom</em>' reference.
+	 * @see #getTermUom()
 	 * @generated
 	 */
-	void setTermUomId(Uom value);
+	void setTermUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.
@@ -559,59 +581,5 @@ public interface ProductPrice extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Price Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Price Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Price Type Id</em>' reference.
-	 * @see #setProductPriceTypeId(ProductPriceType)
-	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_ProductPriceTypeId()
-	 * @model keys="productPriceTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductPriceType getProductPriceTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getProductPriceTypeId <em>Product Price Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Price Type Id</em>' reference.
-	 * @see #getProductPriceTypeId()
-	 * @generated
-	 */
-	void setProductPriceTypeId(ProductPriceType value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Price Purpose Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Price Purpose Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Price Purpose Id</em>' reference.
-	 * @see #setProductPricePurposeId(ProductPricePurpose)
-	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_ProductPricePurposeId()
-	 * @model keys="productPricePurposeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductPricePurpose getProductPricePurposeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductPrice#getProductPricePurposeId <em>Product Price Purpose Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Price Purpose Id</em>' reference.
-	 * @see #getProductPricePurposeId()
-	 * @generated
-	 */
-	void setProductPricePurposeId(ProductPricePurpose value);
 
 } // ProductPrice

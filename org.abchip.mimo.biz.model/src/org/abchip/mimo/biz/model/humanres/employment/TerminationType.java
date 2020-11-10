@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.TerminationType#getTerminationTypeId <em>Termination Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.TerminationType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.TerminationType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.TerminationType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.TerminationType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getTerminationType()
@@ -83,30 +83,26 @@ public interface TerminationType extends EntityType<Employment>, EntityInfo {
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(TerminationType)
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getTerminationType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(TerminationType)
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getTerminationType_ParentType()
 	 * @model keys="terminationTypeId"
 	 * @generated
 	 */
-	TerminationType getParentTypeId();
+	TerminationType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.TerminationType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.TerminationType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(TerminationType value);
+	void setParentType(TerminationType value);
 
 	/**
 	 * Returns the value of the '<em><b>Termination Type Id</b></em>' attribute.

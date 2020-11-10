@@ -21,8 +21,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionFulfillment#getEmplPositionId <em>Empl Position Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionFulfillment#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionFulfillment#getEmplPosition <em>Empl Position</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionFulfillment#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionFulfillment#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionFulfillment#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionFulfillment#getThruDate <em>Thru Date</em>}</li>
@@ -33,6 +33,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface EmplPositionFulfillment extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Empl Position</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Empl Position</em>' reference.
+	 * @see #setEmplPosition(EmplPosition)
+	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionFulfillment_EmplPosition()
+	 * @model keys="emplPositionId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	EmplPosition getEmplPosition();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionFulfillment#getEmplPosition <em>Empl Position</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Empl Position</em>' reference.
+	 * @see #getEmplPosition()
+	 * @generated
+	 */
+	void setEmplPosition(EmplPosition value);
+
+	/**
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionFulfillment_Party()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionFulfillment#getParty <em>Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
+	 * @generated
+	 */
+	void setParty(Party value);
+
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -60,33 +106,6 @@ public interface EmplPositionFulfillment extends EntityIdentifiable, EntityInfo 
 	void setComments(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Empl Position Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Empl Position Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Empl Position Id</em>' reference.
-	 * @see #setEmplPositionId(EmplPosition)
-	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionFulfillment_EmplPositionId()
-	 * @model keys="emplPositionId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	EmplPosition getEmplPositionId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionFulfillment#getEmplPositionId <em>Empl Position Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Empl Position Id</em>' reference.
-	 * @see #getEmplPositionId()
-	 * @generated
-	 */
-	void setEmplPositionId(EmplPosition value);
-
-	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -112,33 +131,6 @@ public interface EmplPositionFulfillment extends EntityIdentifiable, EntityInfo 
 	 * @generated
 	 */
 	void setFromDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionFulfillment_PartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionFulfillment#getPartyId <em>Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
-	 * @generated
-	 */
-	void setPartyId(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.

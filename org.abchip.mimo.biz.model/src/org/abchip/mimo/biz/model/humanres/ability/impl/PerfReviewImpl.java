@@ -30,15 +30,15 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewImpl#getEmployeePartyId <em>Employee Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewImpl#getEmployeeParty <em>Employee Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewImpl#getEmployeeRoleTypeId <em>Employee Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewImpl#getPerfReviewId <em>Perf Review Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewImpl#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewImpl#getEmplPositionId <em>Empl Position Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewImpl#getEmplPosition <em>Empl Position</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewImpl#getManagerPartyId <em>Manager Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewImpl#getManagerParty <em>Manager Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewImpl#getManagerRoleTypeId <em>Manager Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewImpl#getPaymentId <em>Payment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewImpl#getPayment <em>Payment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfReviewImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -161,6 +161,26 @@ public class PerfReviewImpl extends EntityIdentifiableImpl implements PerfReview
 	 * @generated
 	 */
 	@Override
+	public Party getEmployeeParty() {
+		return (Party)eGet(AbilityPackage.Literals.PERF_REVIEW__EMPLOYEE_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEmployeeParty(Party newEmployeeParty) {
+		eSet(AbilityPackage.Literals.PERF_REVIEW__EMPLOYEE_PARTY, newEmployeeParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getComments() {
 		return (String)eGet(AbilityPackage.Literals.PERF_REVIEW__COMMENTS, true);
 	}
@@ -181,8 +201,8 @@ public class PerfReviewImpl extends EntityIdentifiableImpl implements PerfReview
 	 * @generated
 	 */
 	@Override
-	public EmplPosition getEmplPositionId() {
-		return (EmplPosition)eGet(AbilityPackage.Literals.PERF_REVIEW__EMPL_POSITION_ID, true);
+	public EmplPosition getEmplPosition() {
+		return (EmplPosition)eGet(AbilityPackage.Literals.PERF_REVIEW__EMPL_POSITION, true);
 	}
 
 	/**
@@ -191,28 +211,8 @@ public class PerfReviewImpl extends EntityIdentifiableImpl implements PerfReview
 	 * @generated
 	 */
 	@Override
-	public void setEmplPositionId(EmplPosition newEmplPositionId) {
-		eSet(AbilityPackage.Literals.PERF_REVIEW__EMPL_POSITION_ID, newEmplPositionId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getEmployeePartyId() {
-		return (Party)eGet(AbilityPackage.Literals.PERF_REVIEW__EMPLOYEE_PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setEmployeePartyId(Party newEmployeePartyId) {
-		eSet(AbilityPackage.Literals.PERF_REVIEW__EMPLOYEE_PARTY_ID, newEmployeePartyId);
+	public void setEmplPosition(EmplPosition newEmplPosition) {
+		eSet(AbilityPackage.Literals.PERF_REVIEW__EMPL_POSITION, newEmplPosition);
 	}
 
 	/**
@@ -261,8 +261,8 @@ public class PerfReviewImpl extends EntityIdentifiableImpl implements PerfReview
 	 * @generated
 	 */
 	@Override
-	public Party getManagerPartyId() {
-		return (Party)eGet(AbilityPackage.Literals.PERF_REVIEW__MANAGER_PARTY_ID, true);
+	public Party getManagerParty() {
+		return (Party)eGet(AbilityPackage.Literals.PERF_REVIEW__MANAGER_PARTY, true);
 	}
 
 	/**
@@ -271,8 +271,8 @@ public class PerfReviewImpl extends EntityIdentifiableImpl implements PerfReview
 	 * @generated
 	 */
 	@Override
-	public void setManagerPartyId(Party newManagerPartyId) {
-		eSet(AbilityPackage.Literals.PERF_REVIEW__MANAGER_PARTY_ID, newManagerPartyId);
+	public void setManagerParty(Party newManagerParty) {
+		eSet(AbilityPackage.Literals.PERF_REVIEW__MANAGER_PARTY, newManagerParty);
 	}
 
 	/**
@@ -301,8 +301,8 @@ public class PerfReviewImpl extends EntityIdentifiableImpl implements PerfReview
 	 * @generated
 	 */
 	@Override
-	public Payment getPaymentId() {
-		return (Payment)eGet(AbilityPackage.Literals.PERF_REVIEW__PAYMENT_ID, true);
+	public Payment getPayment() {
+		return (Payment)eGet(AbilityPackage.Literals.PERF_REVIEW__PAYMENT, true);
 	}
 
 	/**
@@ -311,8 +311,8 @@ public class PerfReviewImpl extends EntityIdentifiableImpl implements PerfReview
 	 * @generated
 	 */
 	@Override
-	public void setPaymentId(Payment newPaymentId) {
-		eSet(AbilityPackage.Literals.PERF_REVIEW__PAYMENT_ID, newPaymentId);
+	public void setPayment(Payment newPayment) {
+		eSet(AbilityPackage.Literals.PERF_REVIEW__PAYMENT, newPayment);
 	}
 
 	/**

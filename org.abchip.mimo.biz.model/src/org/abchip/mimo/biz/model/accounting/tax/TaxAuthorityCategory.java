@@ -20,7 +20,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityCategory#getProductCategoryId <em>Product Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityCategory#getProductCategory <em>Product Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityCategory#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityCategory#getTaxAuthPartyId <em>Tax Auth Party Id</em>}</li>
  * </ul>
@@ -31,31 +31,27 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface TaxAuthorityCategory extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Product Category Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Category Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Category Id</em>' reference.
-	 * @see #setProductCategoryId(ProductCategory)
-	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthorityCategory_ProductCategoryId()
+	 * @return the value of the '<em>Product Category</em>' reference.
+	 * @see #setProductCategory(ProductCategory)
+	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthorityCategory_ProductCategory()
 	 * @model keys="productCategoryId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ProductCategory getProductCategoryId();
+	ProductCategory getProductCategory();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityCategory#getProductCategoryId <em>Product Category Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityCategory#getProductCategory <em>Product Category</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Category Id</em>' reference.
-	 * @see #getProductCategoryId()
+	 * @param value the new value of the '<em>Product Category</em>' reference.
+	 * @see #getProductCategory()
 	 * @generated
 	 */
-	void setProductCategoryId(ProductCategory value);
+	void setProductCategory(ProductCategory value);
 
 	/**
 	 * Returns the value of the '<em><b>Tax Auth Geo Id</b></em>' attribute.

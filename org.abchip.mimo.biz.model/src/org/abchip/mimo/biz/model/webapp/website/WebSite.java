@@ -36,11 +36,11 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getHttpsHost <em>Https Host</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getHttpsPort <em>Https Port</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#isIsDefault <em>Is Default</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getSecureContentPrefix <em>Secure Content Prefix</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getSiteName <em>Site Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getStandardContentPrefix <em>Standard Content Prefix</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getVisualThemeSetId <em>Visual Theme Set Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getVisualThemeSet <em>Visual Theme Set</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getWebAnalyticsConfigs <em>Web Analytics Configs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getWebSiteContactLists <em>Web Site Contact Lists</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getWebSitePathAliass <em>Web Site Path Aliass</em>}</li>
@@ -340,30 +340,26 @@ public interface WebSite extends EntityIdentifiable, EntityInfo {
 	void setIsDefault(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Store Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Store</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store Id</em>' reference.
-	 * @see #setProductStoreId(ProductStore)
-	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebSite_ProductStoreId()
+	 * @return the value of the '<em>Product Store</em>' reference.
+	 * @see #setProductStore(ProductStore)
+	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebSite_ProductStore()
 	 * @model keys="productStoreId"
 	 * @generated
 	 */
-	ProductStore getProductStoreId();
+	ProductStore getProductStore();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getProductStoreId <em>Product Store Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getProductStore <em>Product Store</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store Id</em>' reference.
-	 * @see #getProductStoreId()
+	 * @param value the new value of the '<em>Product Store</em>' reference.
+	 * @see #getProductStore()
 	 * @generated
 	 */
-	void setProductStoreId(ProductStore value);
+	void setProductStore(ProductStore value);
 
 	/**
 	 * Returns the value of the '<em><b>Secure Content Prefix</b></em>' attribute.
@@ -444,30 +440,26 @@ public interface WebSite extends EntityIdentifiable, EntityInfo {
 	void setStandardContentPrefix(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Visual Theme Set Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Visual Theme Set</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Visual Theme Set Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Visual Theme Set Id</em>' reference.
-	 * @see #setVisualThemeSetId(VisualThemeSet)
-	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebSite_VisualThemeSetId()
+	 * @return the value of the '<em>Visual Theme Set</em>' reference.
+	 * @see #setVisualThemeSet(VisualThemeSet)
+	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebSite_VisualThemeSet()
 	 * @model keys="visualThemeSetId"
 	 * @generated
 	 */
-	VisualThemeSet getVisualThemeSetId();
+	VisualThemeSet getVisualThemeSet();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getVisualThemeSetId <em>Visual Theme Set Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getVisualThemeSet <em>Visual Theme Set</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Visual Theme Set Id</em>' reference.
-	 * @see #getVisualThemeSetId()
+	 * @param value the new value of the '<em>Visual Theme Set</em>' reference.
+	 * @see #getVisualThemeSet()
 	 * @generated
 	 */
-	void setVisualThemeSetId(VisualThemeSet value);
+	void setVisualThemeSet(VisualThemeSet value);
 
 	/**
 	 * Returns the value of the '<em><b>Web Analytics Configs</b></em>' reference list.

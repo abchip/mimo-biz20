@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionFulfillmentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionFulfillmentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionFulfillmentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionFulfillmentImpl#getEmplPositionId <em>Empl Position Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionFulfillmentImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionFulfillmentImpl#getEmplPosition <em>Empl Position</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionFulfillmentImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionFulfillmentImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionFulfillmentImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionFulfillmentImpl#getThruDate <em>Thru Date</em>}</li>
@@ -155,6 +155,46 @@ public class EmplPositionFulfillmentImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
+	public EmplPosition getEmplPosition() {
+		return (EmplPosition)eGet(PositionPackage.Literals.EMPL_POSITION_FULFILLMENT__EMPL_POSITION, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEmplPosition(EmplPosition newEmplPosition) {
+		eSet(PositionPackage.Literals.EMPL_POSITION_FULFILLMENT__EMPL_POSITION, newEmplPosition);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(PositionPackage.Literals.EMPL_POSITION_FULFILLMENT__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(PositionPackage.Literals.EMPL_POSITION_FULFILLMENT__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getComments() {
 		return (String)eGet(PositionPackage.Literals.EMPL_POSITION_FULFILLMENT__COMMENTS, true);
 	}
@@ -175,26 +215,6 @@ public class EmplPositionFulfillmentImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public EmplPosition getEmplPositionId() {
-		return (EmplPosition)eGet(PositionPackage.Literals.EMPL_POSITION_FULFILLMENT__EMPL_POSITION_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setEmplPositionId(EmplPosition newEmplPositionId) {
-		eSet(PositionPackage.Literals.EMPL_POSITION_FULFILLMENT__EMPL_POSITION_ID, newEmplPositionId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Date getFromDate() {
 		return (Date)eGet(PositionPackage.Literals.EMPL_POSITION_FULFILLMENT__FROM_DATE, true);
 	}
@@ -207,26 +227,6 @@ public class EmplPositionFulfillmentImpl extends EntityIdentifiableImpl implemen
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(PositionPackage.Literals.EMPL_POSITION_FULFILLMENT__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(PositionPackage.Literals.EMPL_POSITION_FULFILLMENT__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(PositionPackage.Literals.EMPL_POSITION_FULFILLMENT__PARTY_ID, newPartyId);
 	}
 
 	/**

@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.ProtectedView#getGroupId <em>Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.ProtectedView#getGroup <em>Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.ProtectedView#getViewNameId <em>View Name Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.ProtectedView#getMaxHits <em>Max Hits</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.ProtectedView#getMaxHitsDuration <em>Max Hits Duration</em>}</li>
@@ -32,31 +32,27 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface ProtectedView extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Group Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Group Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Group Id</em>' reference.
-	 * @see #setGroupId(SecurityGroup)
-	 * @see org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage#getProtectedView_GroupId()
+	 * @return the value of the '<em>Group</em>' reference.
+	 * @see #setGroup(SecurityGroup)
+	 * @see org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage#getProtectedView_Group()
 	 * @model keys="groupId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	SecurityGroup getGroupId();
+	SecurityGroup getGroup();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.securitygroup.ProtectedView#getGroupId <em>Group Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.securitygroup.ProtectedView#getGroup <em>Group</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Group Id</em>' reference.
-	 * @see #getGroupId()
+	 * @param value the new value of the '<em>Group</em>' reference.
+	 * @see #getGroup()
 	 * @generated
 	 */
-	void setGroupId(SecurityGroup value);
+	void setGroup(SecurityGroup value);
 
 	/**
 	 * Returns the value of the '<em><b>Max Hits</b></em>' attribute.

@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentTypeAttr#getPaymentTypeId <em>Payment Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentTypeAttr#getPaymentType <em>Payment Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentTypeAttr#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentTypeAttr#getDescription <em>Description</em>}</li>
  * </ul>
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface PaymentTypeAttr extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Payment Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Payment Type</em>' reference.
+	 * @see #setPaymentType(PaymentType)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentTypeAttr_PaymentType()
+	 * @model keys="paymentTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	PaymentType getPaymentType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentTypeAttr#getPaymentType <em>Payment Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Payment Type</em>' reference.
+	 * @see #getPaymentType()
+	 * @generated
+	 */
+	void setPaymentType(PaymentType value);
+
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,32 +105,5 @@ public interface PaymentTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setAttrName(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Payment Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Payment Type Id</em>' reference.
-	 * @see #setPaymentTypeId(PaymentType)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentTypeAttr_PaymentTypeId()
-	 * @model keys="paymentTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	PaymentType getPaymentTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentTypeAttr#getPaymentTypeId <em>Payment Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Payment Type Id</em>' reference.
-	 * @see #getPaymentTypeId()
-	 * @generated
-	 */
-	void setPaymentTypeId(PaymentType value);
 
 } // PaymentTypeAttr

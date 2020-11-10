@@ -31,11 +31,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListPartyImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListPartyImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListPartyImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListPartyImpl#getContactListId <em>Contact List Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListPartyImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListPartyImpl#getContactList <em>Contact List</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListPartyImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListPartyImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListPartyImpl#getPreferredContactMechId <em>Preferred Contact Mech Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListPartyImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListPartyImpl#getPreferredContactMech <em>Preferred Contact Mech</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListPartyImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListPartyImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -158,8 +158,8 @@ public class ContactListPartyImpl extends EntityIdentifiableImpl implements Cont
 	 * @generated
 	 */
 	@Override
-	public ContactList getContactListId() {
-		return (ContactList)eGet(ContactPackage.Literals.CONTACT_LIST_PARTY__CONTACT_LIST_ID, true);
+	public ContactList getContactList() {
+		return (ContactList)eGet(ContactPackage.Literals.CONTACT_LIST_PARTY__CONTACT_LIST, true);
 	}
 
 	/**
@@ -168,8 +168,28 @@ public class ContactListPartyImpl extends EntityIdentifiableImpl implements Cont
 	 * @generated
 	 */
 	@Override
-	public void setContactListId(ContactList newContactListId) {
-		eSet(ContactPackage.Literals.CONTACT_LIST_PARTY__CONTACT_LIST_ID, newContactListId);
+	public void setContactList(ContactList newContactList) {
+		eSet(ContactPackage.Literals.CONTACT_LIST_PARTY__CONTACT_LIST, newContactList);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(ContactPackage.Literals.CONTACT_LIST_PARTY__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(ContactPackage.Literals.CONTACT_LIST_PARTY__PARTY, newParty);
 	}
 
 	/**
@@ -198,8 +218,8 @@ public class ContactListPartyImpl extends EntityIdentifiableImpl implements Cont
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(ContactPackage.Literals.CONTACT_LIST_PARTY__PARTY_ID, true);
+	public ContactMech getPreferredContactMech() {
+		return (ContactMech)eGet(ContactPackage.Literals.CONTACT_LIST_PARTY__PREFERRED_CONTACT_MECH, true);
 	}
 
 	/**
@@ -208,8 +228,8 @@ public class ContactListPartyImpl extends EntityIdentifiableImpl implements Cont
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(ContactPackage.Literals.CONTACT_LIST_PARTY__PARTY_ID, newPartyId);
+	public void setPreferredContactMech(ContactMech newPreferredContactMech) {
+		eSet(ContactPackage.Literals.CONTACT_LIST_PARTY__PREFERRED_CONTACT_MECH, newPreferredContactMech);
 	}
 
 	/**
@@ -218,8 +238,8 @@ public class ContactListPartyImpl extends EntityIdentifiableImpl implements Cont
 	 * @generated
 	 */
 	@Override
-	public ContactMech getPreferredContactMechId() {
-		return (ContactMech)eGet(ContactPackage.Literals.CONTACT_LIST_PARTY__PREFERRED_CONTACT_MECH_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(ContactPackage.Literals.CONTACT_LIST_PARTY__STATUS, true);
 	}
 
 	/**
@@ -228,28 +248,8 @@ public class ContactListPartyImpl extends EntityIdentifiableImpl implements Cont
 	 * @generated
 	 */
 	@Override
-	public void setPreferredContactMechId(ContactMech newPreferredContactMechId) {
-		eSet(ContactPackage.Literals.CONTACT_LIST_PARTY__PREFERRED_CONTACT_MECH_ID, newPreferredContactMechId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(ContactPackage.Literals.CONTACT_LIST_PARTY__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(ContactPackage.Literals.CONTACT_LIST_PARTY__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(ContactPackage.Literals.CONTACT_LIST_PARTY__STATUS, newStatus);
 	}
 
 	/**

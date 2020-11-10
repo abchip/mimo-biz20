@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentTypeImpl#getContentTypeAttrs <em>Content Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -234,8 +234,8 @@ public class ContentTypeImpl extends EntityTypeImpl<Content> implements ContentT
 	 * @generated
 	 */
 	@Override
-	public ContentType getParentTypeId() {
-		return (ContentType)eGet(ContentPackage.Literals.CONTENT_TYPE__PARENT_TYPE_ID, true);
+	public ContentType getParentType() {
+		return (ContentType)eGet(ContentPackage.Literals.CONTENT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -244,8 +244,8 @@ public class ContentTypeImpl extends EntityTypeImpl<Content> implements ContentT
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(ContentType newParentTypeId) {
-		eSet(ContentPackage.Literals.CONTENT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(ContentType newParentType) {
+		eSet(ContentPackage.Literals.CONTENT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

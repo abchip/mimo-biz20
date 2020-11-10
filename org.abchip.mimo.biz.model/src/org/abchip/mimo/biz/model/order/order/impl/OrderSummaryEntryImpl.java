@@ -31,8 +31,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderSummaryEntryImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderSummaryEntryImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderSummaryEntryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderSummaryEntryImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderSummaryEntryImpl#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderSummaryEntryImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderSummaryEntryImpl#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderSummaryEntryImpl#getEntryDate <em>Entry Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderSummaryEntryImpl#getGrossSales <em>Gross Sales</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderSummaryEntryImpl#getProductCost <em>Product Cost</em>}</li>
@@ -158,6 +158,46 @@ public class OrderSummaryEntryImpl extends EntityIdentifiableImpl implements Ord
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(OrderPackage.Literals.ORDER_SUMMARY_ENTRY__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(OrderPackage.Literals.ORDER_SUMMARY_ENTRY__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Facility getFacility() {
+		return (Facility)eGet(OrderPackage.Literals.ORDER_SUMMARY_ENTRY__FACILITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacility(Facility newFacility) {
+		eSet(OrderPackage.Literals.ORDER_SUMMARY_ENTRY__FACILITY, newFacility);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getEntryDate() {
 		return (Date)eGet(OrderPackage.Literals.ORDER_SUMMARY_ENTRY__ENTRY_DATE, true);
 	}
@@ -170,26 +210,6 @@ public class OrderSummaryEntryImpl extends EntityIdentifiableImpl implements Ord
 	@Override
 	public void setEntryDate(Date newEntryDate) {
 		eSet(OrderPackage.Literals.ORDER_SUMMARY_ENTRY__ENTRY_DATE, newEntryDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(OrderPackage.Literals.ORDER_SUMMARY_ENTRY__FACILITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(OrderPackage.Literals.ORDER_SUMMARY_ENTRY__FACILITY_ID, newFacilityId);
 	}
 
 	/**
@@ -230,26 +250,6 @@ public class OrderSummaryEntryImpl extends EntityIdentifiableImpl implements Ord
 	@Override
 	public void setProductCost(BigDecimal newProductCost) {
 		eSet(OrderPackage.Literals.ORDER_SUMMARY_ENTRY__PRODUCT_COST, newProductCost);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(OrderPackage.Literals.ORDER_SUMMARY_ENTRY__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(OrderPackage.Literals.ORDER_SUMMARY_ENTRY__PRODUCT_ID, newProductId);
 	}
 
 	/**

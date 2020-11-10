@@ -32,11 +32,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetStdCostImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetStdCostImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetStdCostImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetStdCostImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetStdCostImpl#getFixedAssetStdCostTypeId <em>Fixed Asset Std Cost Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetStdCostImpl#getFixedAsset <em>Fixed Asset</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetStdCostImpl#getFixedAssetStdCostType <em>Fixed Asset Std Cost Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetStdCostImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetStdCostImpl#getAmount <em>Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetStdCostImpl#getAmountUomId <em>Amount Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetStdCostImpl#getAmountUom <em>Amount Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetStdCostImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -158,6 +158,46 @@ public class FixedAssetStdCostImpl extends EntityTypedImpl<FixedAssetStdCostType
 	 * @generated
 	 */
 	@Override
+	public FixedAsset getFixedAsset() {
+		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET_STD_COST__FIXED_ASSET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFixedAsset(FixedAsset newFixedAsset) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_STD_COST__FIXED_ASSET, newFixedAsset);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FixedAssetStdCostType getFixedAssetStdCostType() {
+		return (FixedAssetStdCostType)eGet(FixedassetPackage.Literals.FIXED_ASSET_STD_COST__FIXED_ASSET_STD_COST_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFixedAssetStdCostType(FixedAssetStdCostType newFixedAssetStdCostType) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_STD_COST__FIXED_ASSET_STD_COST_TYPE, newFixedAssetStdCostType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAmount() {
 		return (BigDecimal)eGet(FixedassetPackage.Literals.FIXED_ASSET_STD_COST__AMOUNT, true);
 	}
@@ -178,8 +218,8 @@ public class FixedAssetStdCostImpl extends EntityTypedImpl<FixedAssetStdCostType
 	 * @generated
 	 */
 	@Override
-	public Uom getAmountUomId() {
-		return (Uom)eGet(FixedassetPackage.Literals.FIXED_ASSET_STD_COST__AMOUNT_UOM_ID, true);
+	public Uom getAmountUom() {
+		return (Uom)eGet(FixedassetPackage.Literals.FIXED_ASSET_STD_COST__AMOUNT_UOM, true);
 	}
 
 	/**
@@ -188,8 +228,8 @@ public class FixedAssetStdCostImpl extends EntityTypedImpl<FixedAssetStdCostType
 	 * @generated
 	 */
 	@Override
-	public void setAmountUomId(Uom newAmountUomId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_STD_COST__AMOUNT_UOM_ID, newAmountUomId);
+	public void setAmountUom(Uom newAmountUom) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_STD_COST__AMOUNT_UOM, newAmountUom);
 	}
 
 	/**
@@ -268,46 +308,6 @@ public class FixedAssetStdCostImpl extends EntityTypedImpl<FixedAssetStdCostType
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FixedAsset getFixedAssetId() {
-		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET_STD_COST__FIXED_ASSET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFixedAssetId(FixedAsset newFixedAssetId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_STD_COST__FIXED_ASSET_ID, newFixedAssetId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FixedAssetStdCostType getFixedAssetStdCostTypeId() {
-		return (FixedAssetStdCostType)eGet(FixedassetPackage.Literals.FIXED_ASSET_STD_COST__FIXED_ASSET_STD_COST_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFixedAssetStdCostTypeId(FixedAssetStdCostType newFixedAssetStdCostTypeId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_STD_COST__FIXED_ASSET_STD_COST_TYPE_ID, newFixedAssetStdCostTypeId);
 	}
 
 } //FixedAssetStdCostImpl

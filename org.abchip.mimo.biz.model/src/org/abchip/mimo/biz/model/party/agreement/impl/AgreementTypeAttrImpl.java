@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeAttrImpl#getAgreementTypeId <em>Agreement Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeAttrImpl#getAgreementType <em>Agreement Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -151,6 +151,26 @@ public class AgreementTypeAttrImpl extends EntityIdentifiableImpl implements Agr
 	 * @generated
 	 */
 	@Override
+	public AgreementType getAgreementType() {
+		return (AgreementType)eGet(AgreementPackage.Literals.AGREEMENT_TYPE_ATTR__AGREEMENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAgreementType(AgreementType newAgreementType) {
+		eSet(AgreementPackage.Literals.AGREEMENT_TYPE_ATTR__AGREEMENT_TYPE, newAgreementType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(AgreementPackage.Literals.AGREEMENT_TYPE_ATTR__DESCRIPTION, true);
 	}
@@ -221,26 +241,6 @@ public class AgreementTypeAttrImpl extends EntityIdentifiableImpl implements Agr
 	@Override
 	public void setAttrName(String newAttrName) {
 		eSet(AgreementPackage.Literals.AGREEMENT_TYPE_ATTR__ATTR_NAME, newAttrName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public AgreementType getAgreementTypeId() {
-		return (AgreementType)eGet(AgreementPackage.Literals.AGREEMENT_TYPE_ATTR__AGREEMENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAgreementTypeId(AgreementType newAgreementTypeId) {
-		eSet(AgreementPackage.Literals.AGREEMENT_TYPE_ATTR__AGREEMENT_TYPE_ID, newAgreementTypeId);
 	}
 
 } //AgreementTypeAttrImpl

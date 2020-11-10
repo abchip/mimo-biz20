@@ -22,44 +22,44 @@
       xsi:type="biz-enum:EnumerationType"
       enumTypeId="OAuth2"
       description="Login Method Type"
-      parentTypeId="ppLoginMethType"/>
+      parentType="ppLoginMethType"/>
   <contents
       xsi:type="biz-enum:EnumerationType"
       enumTypeId="GitHub"
       description="GitHub Login"
-      parentTypeId="ppLoginProvider"/>
+      parentType="ppLoginProvider"/>
   <contents
       xsi:type="biz-passport:ThirdPartyLogin"
       loginMethTypeId="OAuth2"
       loginProviderId="GitHub"
       fromDate="2019-01-01T00:00:00.000+0100">
-    <productStoreId
+    <productStore
         href="abchip-net.xmi#8000"/>
   </contents>
   <contents
       xsi:type="biz-enum:EnumerationType"
       enumTypeId="LinkedIn"
       description="LinkedIn Login"
-      parentTypeId="ppLoginProvider"/>
+      parentType="ppLoginProvider"/>
   <contents
       xsi:type="biz-passport:ThirdPartyLogin"
       loginMethTypeId="OAuth2"
       loginProviderId="LinkedIn"
       fromDate="2019-01-01T00:00:00.000+0100">
-    <productStoreId
+    <productStore
         href="abchip-net.xmi#8000"/>
   </contents>
   <contents
       xsi:type="biz-enum:EnumerationType"
       enumTypeId="Google"
       description="Google Login"
-      parentTypeId="ppLoginProvider"/>
+      parentType="ppLoginProvider"/>
   <contents
       xsi:type="biz-passport:ThirdPartyLogin"
       loginMethTypeId="OAuth2"
       loginProviderId="Google"
       fromDate="2019-01-01T00:00:00.000+0100">
-    <productStoreId
+    <productStore
         href="abchip-net.xmi#8000"/>
   </contents>
 </mimo-ent:EntityContainer>

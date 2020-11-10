@@ -712,7 +712,7 @@ public class IssuancePackageImpl extends EPackageImpl implements IssuancePackage
 	 * @generated
 	 */
 	@Override
-	public EReference getItemIssuance_InventoryItemId() {
+	public EReference getItemIssuance_InventoryItem() {
 		return (EReference)itemIssuanceEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -722,7 +722,7 @@ public class IssuancePackageImpl extends EPackageImpl implements IssuancePackage
 	 * @generated
 	 */
 	@Override
-	public EReference getItemIssuance_IssuedByUserLoginId() {
+	public EReference getItemIssuance_IssuedByUserLogin() {
 		return (EReference)itemIssuanceEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -752,7 +752,7 @@ public class IssuancePackageImpl extends EPackageImpl implements IssuancePackage
 	 * @generated
 	 */
 	@Override
-	public EReference getItemIssuance_OrderId() {
+	public EReference getItemIssuance_Order() {
 		return (EReference)itemIssuanceEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -792,7 +792,7 @@ public class IssuancePackageImpl extends EPackageImpl implements IssuancePackage
 	 * @generated
 	 */
 	@Override
-	public EReference getItemIssuance_ShipmentId() {
+	public EReference getItemIssuance_Shipment() {
 		return (EReference)itemIssuanceEClass.getEStructuralFeatures().get(11);
 	}
 
@@ -822,7 +822,7 @@ public class IssuancePackageImpl extends EPackageImpl implements IssuancePackage
 	 * @generated
 	 */
 	@Override
-	public EReference getItemIssuanceRole_ItemIssuanceId() {
+	public EReference getItemIssuanceRole_ItemIssuance() {
 		return (EReference)itemIssuanceRoleEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -832,7 +832,7 @@ public class IssuancePackageImpl extends EPackageImpl implements IssuancePackage
 	 * @generated
 	 */
 	@Override
-	public EReference getItemIssuanceRole_PartyId() {
+	public EReference getItemIssuanceRole_Party() {
 		return (EReference)itemIssuanceRoleEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -879,20 +879,20 @@ public class IssuancePackageImpl extends EPackageImpl implements IssuancePackage
 		createEAttribute(itemIssuanceEClass, ITEM_ISSUANCE__ITEM_ISSUANCE_ID);
 		createEAttribute(itemIssuanceEClass, ITEM_ISSUANCE__CANCEL_QUANTITY);
 		createEAttribute(itemIssuanceEClass, ITEM_ISSUANCE__FIXED_ASSET_ID);
-		createEReference(itemIssuanceEClass, ITEM_ISSUANCE__INVENTORY_ITEM_ID);
-		createEReference(itemIssuanceEClass, ITEM_ISSUANCE__ISSUED_BY_USER_LOGIN_ID);
+		createEReference(itemIssuanceEClass, ITEM_ISSUANCE__INVENTORY_ITEM);
+		createEReference(itemIssuanceEClass, ITEM_ISSUANCE__ISSUED_BY_USER_LOGIN);
 		createEAttribute(itemIssuanceEClass, ITEM_ISSUANCE__ISSUED_DATE_TIME);
 		createEAttribute(itemIssuanceEClass, ITEM_ISSUANCE__MAINT_HIST_SEQ_ID);
-		createEReference(itemIssuanceEClass, ITEM_ISSUANCE__ORDER_ID);
+		createEReference(itemIssuanceEClass, ITEM_ISSUANCE__ORDER);
 		createEAttribute(itemIssuanceEClass, ITEM_ISSUANCE__ORDER_ITEM_SEQ_ID);
 		createEAttribute(itemIssuanceEClass, ITEM_ISSUANCE__QUANTITY);
 		createEAttribute(itemIssuanceEClass, ITEM_ISSUANCE__SHIP_GROUP_SEQ_ID);
-		createEReference(itemIssuanceEClass, ITEM_ISSUANCE__SHIPMENT_ID);
+		createEReference(itemIssuanceEClass, ITEM_ISSUANCE__SHIPMENT);
 		createEAttribute(itemIssuanceEClass, ITEM_ISSUANCE__SHIPMENT_ITEM_SEQ_ID);
 
 		itemIssuanceRoleEClass = createEClass(ITEM_ISSUANCE_ROLE);
-		createEReference(itemIssuanceRoleEClass, ITEM_ISSUANCE_ROLE__ITEM_ISSUANCE_ID);
-		createEReference(itemIssuanceRoleEClass, ITEM_ISSUANCE_ROLE__PARTY_ID);
+		createEReference(itemIssuanceRoleEClass, ITEM_ISSUANCE_ROLE__ITEM_ISSUANCE);
+		createEReference(itemIssuanceRoleEClass, ITEM_ISSUANCE_ROLE__PARTY);
 		createEAttribute(itemIssuanceRoleEClass, ITEM_ISSUANCE_ROLE__ROLE_TYPE_ID);
 	}
 
@@ -942,26 +942,26 @@ public class IssuancePackageImpl extends EPackageImpl implements IssuancePackage
 		initEAttribute(getItemIssuance_ItemIssuanceId(), ecorePackage.getEString(), "itemIssuanceId", null, 1, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getItemIssuance_CancelQuantity(), ecorePackage.getEBigDecimal(), "cancelQuantity", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getItemIssuance_FixedAssetId(), ecorePackage.getEString(), "fixedAssetId", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getItemIssuance_InventoryItemId(), theInventoryPackage.getInventoryItem(), null, "inventoryItemId", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getItemIssuance_InventoryItemId().getEKeys().add(theInventoryPackage.getInventoryItem_InventoryItemId());
-		initEReference(getItemIssuance_IssuedByUserLoginId(), theLoginPackage.getUserLogin(), null, "issuedByUserLoginId", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getItemIssuance_IssuedByUserLoginId().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
+		initEReference(getItemIssuance_InventoryItem(), theInventoryPackage.getInventoryItem(), null, "inventoryItem", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getItemIssuance_InventoryItem().getEKeys().add(theInventoryPackage.getInventoryItem_InventoryItemId());
+		initEReference(getItemIssuance_IssuedByUserLogin(), theLoginPackage.getUserLogin(), null, "issuedByUserLogin", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getItemIssuance_IssuedByUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEAttribute(getItemIssuance_IssuedDateTime(), ecorePackage.getEDate(), "issuedDateTime", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getItemIssuance_MaintHistSeqId(), ecorePackage.getEString(), "maintHistSeqId", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getItemIssuance_OrderId(), theOrderPackage.getOrderHeader(), null, "orderId", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getItemIssuance_OrderId().getEKeys().add(theOrderPackage.getOrderHeader_OrderId());
+		initEReference(getItemIssuance_Order(), theOrderPackage.getOrderHeader(), null, "order", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getItemIssuance_Order().getEKeys().add(theOrderPackage.getOrderHeader_OrderId());
 		initEAttribute(getItemIssuance_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getItemIssuance_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getItemIssuance_ShipGroupSeqId(), ecorePackage.getEString(), "shipGroupSeqId", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getItemIssuance_ShipmentId(), theShipment_Package.getShipment(), null, "shipmentId", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getItemIssuance_ShipmentId().getEKeys().add(theShipment_Package.getShipment_ShipmentId());
+		initEReference(getItemIssuance_Shipment(), theShipment_Package.getShipment(), null, "shipment", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getItemIssuance_Shipment().getEKeys().add(theShipment_Package.getShipment_ShipmentId());
 		initEAttribute(getItemIssuance_ShipmentItemSeqId(), ecorePackage.getEString(), "shipmentItemSeqId", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(itemIssuanceRoleEClass, ItemIssuanceRole.class, "ItemIssuanceRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getItemIssuanceRole_ItemIssuanceId(), this.getItemIssuance(), null, "itemIssuanceId", null, 1, 1, ItemIssuanceRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getItemIssuanceRole_ItemIssuanceId().getEKeys().add(this.getItemIssuance_ItemIssuanceId());
-		initEReference(getItemIssuanceRole_PartyId(), thePartyPackage_1.getParty(), null, "partyId", null, 1, 1, ItemIssuanceRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getItemIssuanceRole_PartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getItemIssuanceRole_ItemIssuance(), this.getItemIssuance(), null, "itemIssuance", null, 1, 1, ItemIssuanceRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getItemIssuanceRole_ItemIssuance().getEKeys().add(this.getItemIssuance_ItemIssuanceId());
+		initEReference(getItemIssuanceRole_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, ItemIssuanceRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getItemIssuanceRole_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getItemIssuanceRole_RoleTypeId(), ecorePackage.getEString(), "roleTypeId", null, 1, 1, ItemIssuanceRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
@@ -1051,13 +1051,13 @@ public class IssuancePackageImpl extends EPackageImpl implements IssuancePackage
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
 		addAnnotation
-		  (getItemIssuanceRole_ItemIssuanceId(),
+		  (getItemIssuanceRole_ItemIssuance(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getItemIssuanceRole_PartyId(),
+		  (getItemIssuanceRole_Party(),
 		   source,
 		   new String[] {
 			   "key", "true"

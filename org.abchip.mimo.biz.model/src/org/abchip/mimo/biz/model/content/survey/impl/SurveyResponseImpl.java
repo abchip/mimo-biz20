@@ -34,13 +34,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseImpl#getSurveyResponseId <em>Survey Response Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseImpl#getGeneralFeedback <em>General Feedback</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseImpl#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseImpl#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseImpl#getReferenceId <em>Reference Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseImpl#getResponseDate <em>Response Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseImpl#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseImpl#getSurveyId <em>Survey Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseImpl#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseImpl#getSurvey <em>Survey</em>}</li>
  * </ul>
  *
  * @generated
@@ -202,8 +202,8 @@ public class SurveyResponseImpl extends EntityIdentifiableImpl implements Survey
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(SurveyPackage.Literals.SURVEY_RESPONSE__ORDER_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(SurveyPackage.Literals.SURVEY_RESPONSE__ORDER, true);
 	}
 
 	/**
@@ -212,8 +212,8 @@ public class SurveyResponseImpl extends EntityIdentifiableImpl implements Survey
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(SurveyPackage.Literals.SURVEY_RESPONSE__ORDER_ID, newOrderId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(SurveyPackage.Literals.SURVEY_RESPONSE__ORDER, newOrder);
 	}
 
 	/**
@@ -242,8 +242,8 @@ public class SurveyResponseImpl extends EntityIdentifiableImpl implements Survey
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(SurveyPackage.Literals.SURVEY_RESPONSE__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(SurveyPackage.Literals.SURVEY_RESPONSE__PARTY, true);
 	}
 
 	/**
@@ -252,8 +252,8 @@ public class SurveyResponseImpl extends EntityIdentifiableImpl implements Survey
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(SurveyPackage.Literals.SURVEY_RESPONSE__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(SurveyPackage.Literals.SURVEY_RESPONSE__PARTY, newParty);
 	}
 
 	/**
@@ -302,8 +302,8 @@ public class SurveyResponseImpl extends EntityIdentifiableImpl implements Survey
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(SurveyPackage.Literals.SURVEY_RESPONSE__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(SurveyPackage.Literals.SURVEY_RESPONSE__STATUS, true);
 	}
 
 	/**
@@ -312,8 +312,8 @@ public class SurveyResponseImpl extends EntityIdentifiableImpl implements Survey
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(SurveyPackage.Literals.SURVEY_RESPONSE__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(SurveyPackage.Literals.SURVEY_RESPONSE__STATUS, newStatus);
 	}
 
 	/**
@@ -322,8 +322,8 @@ public class SurveyResponseImpl extends EntityIdentifiableImpl implements Survey
 	 * @generated
 	 */
 	@Override
-	public Survey getSurveyId() {
-		return (Survey)eGet(SurveyPackage.Literals.SURVEY_RESPONSE__SURVEY_ID, true);
+	public Survey getSurvey() {
+		return (Survey)eGet(SurveyPackage.Literals.SURVEY_RESPONSE__SURVEY, true);
 	}
 
 	/**
@@ -332,8 +332,8 @@ public class SurveyResponseImpl extends EntityIdentifiableImpl implements Survey
 	 * @generated
 	 */
 	@Override
-	public void setSurveyId(Survey newSurveyId) {
-		eSet(SurveyPackage.Literals.SURVEY_RESPONSE__SURVEY_ID, newSurveyId);
+	public void setSurvey(Survey newSurvey) {
+		eSet(SurveyPackage.Literals.SURVEY_RESPONSE__SURVEY, newSurvey);
 	}
 
 	/**

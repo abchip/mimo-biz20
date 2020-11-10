@@ -37,21 +37,21 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getReturnId <em>Return Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getReturn <em>Return</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getReturnItemSeqId <em>Return Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getExpectedItemStatus <em>Expected Item Status</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getReceivedQuantity <em>Received Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getReturnItemResponseId <em>Return Item Response Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getReturnItemTypeId <em>Return Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getReturnItemResponse <em>Return Item Response</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getReturnItemType <em>Return Item Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getReturnPrice <em>Return Price</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getReturnQuantity <em>Return Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getReturnReasonId <em>Return Reason Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getReturnTypeId <em>Return Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getReturnReason <em>Return Reason</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getReturnType <em>Return Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @generated
@@ -173,6 +173,26 @@ public class ReturnItemImpl extends EntityTypedImpl<ReturnItemType> implements R
 	 * @generated
 	 */
 	@Override
+	public ReturnHeader getReturn() {
+		return (ReturnHeader)eGet(ReturnPackage.Literals.RETURN_ITEM__RETURN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setReturn(ReturnHeader newReturn) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM__RETURN, newReturn);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(ReturnPackage.Literals.RETURN_ITEM__DESCRIPTION, true);
 	}
@@ -213,8 +233,8 @@ public class ReturnItemImpl extends EntityTypedImpl<ReturnItemType> implements R
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(ReturnPackage.Literals.RETURN_ITEM__ORDER_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(ReturnPackage.Literals.RETURN_ITEM__ORDER, true);
 	}
 
 	/**
@@ -223,8 +243,8 @@ public class ReturnItemImpl extends EntityTypedImpl<ReturnItemType> implements R
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM__ORDER_ID, newOrderId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM__ORDER, newOrder);
 	}
 
 	/**
@@ -253,8 +273,8 @@ public class ReturnItemImpl extends EntityTypedImpl<ReturnItemType> implements R
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(ReturnPackage.Literals.RETURN_ITEM__PRODUCT_ID, true);
+	public Product getProduct() {
+		return (Product)eGet(ReturnPackage.Literals.RETURN_ITEM__PRODUCT, true);
 	}
 
 	/**
@@ -263,8 +283,8 @@ public class ReturnItemImpl extends EntityTypedImpl<ReturnItemType> implements R
 	 * @generated
 	 */
 	@Override
-	public void setProductId(Product newProductId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM__PRODUCT_ID, newProductId);
+	public void setProduct(Product newProduct) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM__PRODUCT, newProduct);
 	}
 
 	/**
@@ -293,8 +313,8 @@ public class ReturnItemImpl extends EntityTypedImpl<ReturnItemType> implements R
 	 * @generated
 	 */
 	@Override
-	public ReturnHeader getReturnId() {
-		return (ReturnHeader)eGet(ReturnPackage.Literals.RETURN_ITEM__RETURN_ID, true);
+	public ReturnItemResponse getReturnItemResponse() {
+		return (ReturnItemResponse)eGet(ReturnPackage.Literals.RETURN_ITEM__RETURN_ITEM_RESPONSE, true);
 	}
 
 	/**
@@ -303,8 +323,8 @@ public class ReturnItemImpl extends EntityTypedImpl<ReturnItemType> implements R
 	 * @generated
 	 */
 	@Override
-	public void setReturnId(ReturnHeader newReturnId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM__RETURN_ID, newReturnId);
+	public void setReturnItemResponse(ReturnItemResponse newReturnItemResponse) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM__RETURN_ITEM_RESPONSE, newReturnItemResponse);
 	}
 
 	/**
@@ -313,8 +333,8 @@ public class ReturnItemImpl extends EntityTypedImpl<ReturnItemType> implements R
 	 * @generated
 	 */
 	@Override
-	public ReturnItemResponse getReturnItemResponseId() {
-		return (ReturnItemResponse)eGet(ReturnPackage.Literals.RETURN_ITEM__RETURN_ITEM_RESPONSE_ID, true);
+	public ReturnItemType getReturnItemType() {
+		return (ReturnItemType)eGet(ReturnPackage.Literals.RETURN_ITEM__RETURN_ITEM_TYPE, true);
 	}
 
 	/**
@@ -323,8 +343,8 @@ public class ReturnItemImpl extends EntityTypedImpl<ReturnItemType> implements R
 	 * @generated
 	 */
 	@Override
-	public void setReturnItemResponseId(ReturnItemResponse newReturnItemResponseId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM__RETURN_ITEM_RESPONSE_ID, newReturnItemResponseId);
+	public void setReturnItemType(ReturnItemType newReturnItemType) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM__RETURN_ITEM_TYPE, newReturnItemType);
 	}
 
 	/**
@@ -345,26 +365,6 @@ public class ReturnItemImpl extends EntityTypedImpl<ReturnItemType> implements R
 	@Override
 	public void setReturnItemSeqId(String newReturnItemSeqId) {
 		eSet(ReturnPackage.Literals.RETURN_ITEM__RETURN_ITEM_SEQ_ID, newReturnItemSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ReturnItemType getReturnItemTypeId() {
-		return (ReturnItemType)eGet(ReturnPackage.Literals.RETURN_ITEM__RETURN_ITEM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setReturnItemTypeId(ReturnItemType newReturnItemTypeId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM__RETURN_ITEM_TYPE_ID, newReturnItemTypeId);
 	}
 
 	/**
@@ -413,8 +413,8 @@ public class ReturnItemImpl extends EntityTypedImpl<ReturnItemType> implements R
 	 * @generated
 	 */
 	@Override
-	public ReturnReason getReturnReasonId() {
-		return (ReturnReason)eGet(ReturnPackage.Literals.RETURN_ITEM__RETURN_REASON_ID, true);
+	public ReturnReason getReturnReason() {
+		return (ReturnReason)eGet(ReturnPackage.Literals.RETURN_ITEM__RETURN_REASON, true);
 	}
 
 	/**
@@ -423,8 +423,8 @@ public class ReturnItemImpl extends EntityTypedImpl<ReturnItemType> implements R
 	 * @generated
 	 */
 	@Override
-	public void setReturnReasonId(ReturnReason newReturnReasonId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM__RETURN_REASON_ID, newReturnReasonId);
+	public void setReturnReason(ReturnReason newReturnReason) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM__RETURN_REASON, newReturnReason);
 	}
 
 	/**
@@ -433,8 +433,8 @@ public class ReturnItemImpl extends EntityTypedImpl<ReturnItemType> implements R
 	 * @generated
 	 */
 	@Override
-	public ReturnType getReturnTypeId() {
-		return (ReturnType)eGet(ReturnPackage.Literals.RETURN_ITEM__RETURN_TYPE_ID, true);
+	public ReturnType getReturnType() {
+		return (ReturnType)eGet(ReturnPackage.Literals.RETURN_ITEM__RETURN_TYPE, true);
 	}
 
 	/**
@@ -443,8 +443,8 @@ public class ReturnItemImpl extends EntityTypedImpl<ReturnItemType> implements R
 	 * @generated
 	 */
 	@Override
-	public void setReturnTypeId(ReturnType newReturnTypeId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM__RETURN_TYPE_ID, newReturnTypeId);
+	public void setReturnType(ReturnType newReturnType) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM__RETURN_TYPE, newReturnType);
 	}
 
 	/**
@@ -453,8 +453,8 @@ public class ReturnItemImpl extends EntityTypedImpl<ReturnItemType> implements R
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(ReturnPackage.Literals.RETURN_ITEM__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(ReturnPackage.Literals.RETURN_ITEM__STATUS, true);
 	}
 
 	/**
@@ -463,8 +463,8 @@ public class ReturnItemImpl extends EntityTypedImpl<ReturnItemType> implements R
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM__STATUS, newStatus);
 	}
 
 	/**

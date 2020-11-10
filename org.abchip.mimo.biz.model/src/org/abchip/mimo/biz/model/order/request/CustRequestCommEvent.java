@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestCommEvent#getCustRequestId <em>Cust Request Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestCommEvent#getCommunicationEventId <em>Communication Event Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestCommEvent#getCustRequest <em>Cust Request</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestCommEvent#getCommunicationEvent <em>Communication Event</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestCommEvent()
@@ -30,57 +30,49 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface CustRequestCommEvent extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Communication Event Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Communication Event Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Communication Event Id</em>' reference.
-	 * @see #setCommunicationEventId(CommunicationEvent)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestCommEvent_CommunicationEventId()
-	 * @model keys="communicationEventId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	CommunicationEvent getCommunicationEventId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestCommEvent#getCommunicationEventId <em>Communication Event Id</em>}' reference.
+	 * Returns the value of the '<em><b>Cust Request</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Communication Event Id</em>' reference.
-	 * @see #getCommunicationEventId()
-	 * @generated
-	 */
-	void setCommunicationEventId(CommunicationEvent value);
-
-	/**
-	 * Returns the value of the '<em><b>Cust Request Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cust Request Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cust Request Id</em>' reference.
-	 * @see #setCustRequestId(CustRequest)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestCommEvent_CustRequestId()
+	 * @return the value of the '<em>Cust Request</em>' reference.
+	 * @see #setCustRequest(CustRequest)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestCommEvent_CustRequest()
 	 * @model keys="custRequestId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	CustRequest getCustRequestId();
+	CustRequest getCustRequest();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestCommEvent#getCustRequestId <em>Cust Request Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestCommEvent#getCustRequest <em>Cust Request</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cust Request Id</em>' reference.
-	 * @see #getCustRequestId()
+	 * @param value the new value of the '<em>Cust Request</em>' reference.
+	 * @see #getCustRequest()
 	 * @generated
 	 */
-	void setCustRequestId(CustRequest value);
+	void setCustRequest(CustRequest value);
+
+	/**
+	 * Returns the value of the '<em><b>Communication Event</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Communication Event</em>' reference.
+	 * @see #setCommunicationEvent(CommunicationEvent)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestCommEvent_CommunicationEvent()
+	 * @model keys="communicationEventId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	CommunicationEvent getCommunicationEvent();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestCommEvent#getCommunicationEvent <em>Communication Event</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Communication Event</em>' reference.
+	 * @see #getCommunicationEvent()
+	 * @generated
+	 */
+	void setCommunicationEvent(CommunicationEvent value);
 
 } // CustRequestCommEvent

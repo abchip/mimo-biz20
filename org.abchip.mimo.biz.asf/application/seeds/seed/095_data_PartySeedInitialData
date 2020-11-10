@@ -3,6 +3,6 @@
   <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="SENDEMAIL" description="Every 15 Minutes" integer1="12" integer2="15" tempExprTypeId="FREQUENCY"/>
   <contents xsi:type="biz-schedule:JobSandbox" jobId="SENDEMAIL" jobName="Send Email" maxRecurrenceCount="-1" poolId="pool" runTime="2000-01-01T00:00:00.000+0100" serviceName="sendEmailDated">
     <runAsUser href="UserLogin#system"/>
-    <tempExprId href="TemporalExpression#SENDEMAIL"/>
+    <tempExpr href="TemporalExpression#SENDEMAIL"/>
   </contents>
 </mimo-ent:EntityContainer>

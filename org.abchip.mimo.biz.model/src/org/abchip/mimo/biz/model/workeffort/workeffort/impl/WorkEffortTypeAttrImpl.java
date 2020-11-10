@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTypeAttrImpl#getWorkEffortTypeId <em>Work Effort Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTypeAttrImpl#getWorkEffortType <em>Work Effort Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -152,6 +152,26 @@ public class WorkEffortTypeAttrImpl extends EntityIdentifiableImpl implements Wo
 	 * @generated
 	 */
 	@Override
+	public WorkEffortType getWorkEffortType() {
+		return (WorkEffortType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_TYPE_ATTR__WORK_EFFORT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWorkEffortType(WorkEffortType newWorkEffortType) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_TYPE_ATTR__WORK_EFFORT_TYPE, newWorkEffortType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrName() {
 		return (String)eGet(WorkeffortPackage.Literals.WORK_EFFORT_TYPE_ATTR__ATTR_NAME, true);
 	}
@@ -222,26 +242,6 @@ public class WorkEffortTypeAttrImpl extends EntityIdentifiableImpl implements Wo
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffortType getWorkEffortTypeId() {
-		return (WorkEffortType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_TYPE_ATTR__WORK_EFFORT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortTypeId(WorkEffortType newWorkEffortTypeId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_TYPE_ATTR__WORK_EFFORT_TYPE_ID, newWorkEffortTypeId);
 	}
 
 } //WorkEffortTypeAttrImpl

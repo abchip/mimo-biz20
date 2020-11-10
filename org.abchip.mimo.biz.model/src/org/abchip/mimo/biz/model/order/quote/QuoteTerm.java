@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteTerm#getQuoteId <em>Quote Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteTerm#getTermTypeId <em>Term Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteTerm#getQuote <em>Quote</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteTerm#getTermType <em>Term Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteTerm#getQuoteItemSeqId <em>Quote Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteTerm#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteTerm#getTermDays <em>Term Days</em>}</li>
@@ -35,6 +35,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface QuoteTerm extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Quote</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Quote</em>' reference.
+	 * @see #setQuote(Quote)
+	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteTerm_Quote()
+	 * @model keys="quoteId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Quote getQuote();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteTerm#getQuote <em>Quote</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Quote</em>' reference.
+	 * @see #getQuote()
+	 * @generated
+	 */
+	void setQuote(Quote value);
+
+	/**
+	 * Returns the value of the '<em><b>Term Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Term Type</em>' reference.
+	 * @see #setTermType(TermType)
+	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteTerm_TermType()
+	 * @model keys="termTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	TermType getTermType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteTerm#getTermType <em>Term Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Term Type</em>' reference.
+	 * @see #getTermType()
+	 * @generated
+	 */
+	void setTermType(TermType value);
+
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -60,33 +106,6 @@ public interface QuoteTerm extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setDescription(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Quote Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Quote Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Quote Id</em>' reference.
-	 * @see #setQuoteId(Quote)
-	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteTerm_QuoteId()
-	 * @model keys="quoteId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Quote getQuoteId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteTerm#getQuoteId <em>Quote Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Quote Id</em>' reference.
-	 * @see #getQuoteId()
-	 * @generated
-	 */
-	void setQuoteId(Quote value);
 
 	/**
 	 * Returns the value of the '<em><b>Quote Item Seq Id</b></em>' attribute.
@@ -141,33 +160,6 @@ public interface QuoteTerm extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setTermDays(long value);
-
-	/**
-	 * Returns the value of the '<em><b>Term Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Term Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Term Type Id</em>' reference.
-	 * @see #setTermTypeId(TermType)
-	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteTerm_TermTypeId()
-	 * @model keys="termTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	TermType getTermTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteTerm#getTermTypeId <em>Term Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Term Type Id</em>' reference.
-	 * @see #getTermTypeId()
-	 * @generated
-	 */
-	void setTermTypeId(TermType value);
 
 	/**
 	 * Returns the value of the '<em><b>Term Value</b></em>' attribute.

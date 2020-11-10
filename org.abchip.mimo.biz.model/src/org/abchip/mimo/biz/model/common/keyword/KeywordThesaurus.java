@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.common.keyword.KeywordThesaurus#getAlternateKeyword <em>Alternate Keyword</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.keyword.KeywordThesaurus#getEnteredKeyword <em>Entered Keyword</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.keyword.KeywordThesaurus#getRelationshipEnumId <em>Relationship Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.keyword.KeywordThesaurus#getRelationshipEnum <em>Relationship Enum</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.common.keyword.KeywordPackage#getKeywordThesaurus()
@@ -87,29 +87,25 @@ public interface KeywordThesaurus extends EntityIdentifiable, EntityInfo {
 	void setEnteredKeyword(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Relationship Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Relationship Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Relationship Enum Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Relationship Enum Id</em>' reference.
-	 * @see #setRelationshipEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.common.keyword.KeywordPackage#getKeywordThesaurus_RelationshipEnumId()
+	 * @return the value of the '<em>Relationship Enum</em>' reference.
+	 * @see #setRelationshipEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.common.keyword.KeywordPackage#getKeywordThesaurus_RelationshipEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getRelationshipEnumId();
+	Enumeration getRelationshipEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.keyword.KeywordThesaurus#getRelationshipEnumId <em>Relationship Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.keyword.KeywordThesaurus#getRelationshipEnum <em>Relationship Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Relationship Enum Id</em>' reference.
-	 * @see #getRelationshipEnumId()
+	 * @param value the new value of the '<em>Relationship Enum</em>' reference.
+	 * @see #getRelationshipEnum()
 	 * @generated
 	 */
-	void setRelationshipEnumId(Enumeration value);
+	void setRelationshipEnum(Enumeration value);
 
 } // KeywordThesaurus

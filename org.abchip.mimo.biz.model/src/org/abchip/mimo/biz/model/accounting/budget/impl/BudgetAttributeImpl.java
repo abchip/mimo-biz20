@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetAttributeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetAttributeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetAttributeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetAttributeImpl#getBudgetId <em>Budget Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetAttributeImpl#getBudget <em>Budget</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetAttributeImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetAttributeImpl#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetAttributeImpl#getAttrValue <em>Attr Value</em>}</li>
@@ -152,6 +152,26 @@ public class BudgetAttributeImpl extends EntityIdentifiableImpl implements Budge
 	 * @generated
 	 */
 	@Override
+	public Budget getBudget() {
+		return (Budget)eGet(BudgetPackage.Literals.BUDGET_ATTRIBUTE__BUDGET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBudget(Budget newBudget) {
+		eSet(BudgetPackage.Literals.BUDGET_ATTRIBUTE__BUDGET, newBudget);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrDescription() {
 		return (String)eGet(BudgetPackage.Literals.BUDGET_ATTRIBUTE__ATTR_DESCRIPTION, true);
 	}
@@ -222,26 +242,6 @@ public class BudgetAttributeImpl extends EntityIdentifiableImpl implements Budge
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Budget getBudgetId() {
-		return (Budget)eGet(BudgetPackage.Literals.BUDGET_ATTRIBUTE__BUDGET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBudgetId(Budget newBudgetId) {
-		eSet(BudgetPackage.Literals.BUDGET_ATTRIBUTE__BUDGET_ID, newBudgetId);
 	}
 
 	/**

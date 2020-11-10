@@ -72,24 +72,6 @@ public interface SecurityPackage extends EPackage {
 	int CHECK_EXTERNAL_LOGIN_USER = 0;
 
 	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHECK_EXTERNAL_LOGIN_USER__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHECK_EXTERNAL_LOGIN_USER__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -99,13 +81,13 @@ public interface SecurityPackage extends EPackage {
 	int CHECK_EXTERNAL_LOGIN_USER__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHECK_EXTERNAL_LOGIN_USER__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
+	int CHECK_EXTERNAL_LOGIN_USER__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Access Token</b></em>' attribute.
@@ -219,24 +201,6 @@ public interface SecurityPackage extends EPackage {
 	int USER_CREDENTIAL_FROM_EXTERNAL_ID = 2;
 
 	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER_CREDENTIAL_FROM_EXTERNAL_ID__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER_CREDENTIAL_FROM_EXTERNAL_ID__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -246,13 +210,13 @@ public interface SecurityPackage extends EPackage {
 	int USER_CREDENTIAL_FROM_EXTERNAL_ID__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_CREDENTIAL_FROM_EXTERNAL_ID__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
+	int USER_CREDENTIAL_FROM_EXTERNAL_ID__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>User Id</b></em>' attribute.

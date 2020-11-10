@@ -31,8 +31,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementBudgetAllocationImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementBudgetAllocationImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementBudgetAllocationImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementBudgetAllocationImpl#getBudgetId <em>Budget Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementBudgetAllocationImpl#getRequirementId <em>Requirement Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementBudgetAllocationImpl#getBudget <em>Budget</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementBudgetAllocationImpl#getRequirement <em>Requirement</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementBudgetAllocationImpl#getBudgetItemSeqId <em>Budget Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementBudgetAllocationImpl#getAmount <em>Amount</em>}</li>
  * </ul>
@@ -156,6 +156,46 @@ public class RequirementBudgetAllocationImpl extends EntityIdentifiableImpl impl
 	 * @generated
 	 */
 	@Override
+	public Budget getBudget() {
+		return (Budget)eGet(RequirementPackage.Literals.REQUIREMENT_BUDGET_ALLOCATION__BUDGET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBudget(Budget newBudget) {
+		eSet(RequirementPackage.Literals.REQUIREMENT_BUDGET_ALLOCATION__BUDGET, newBudget);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Requirement getRequirement() {
+		return (Requirement)eGet(RequirementPackage.Literals.REQUIREMENT_BUDGET_ALLOCATION__REQUIREMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRequirement(Requirement newRequirement) {
+		eSet(RequirementPackage.Literals.REQUIREMENT_BUDGET_ALLOCATION__REQUIREMENT, newRequirement);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAmount() {
 		return (BigDecimal)eGet(RequirementPackage.Literals.REQUIREMENT_BUDGET_ALLOCATION__AMOUNT, true);
 	}
@@ -214,26 +254,6 @@ public class RequirementBudgetAllocationImpl extends EntityIdentifiableImpl impl
 	 * @generated
 	 */
 	@Override
-	public Budget getBudgetId() {
-		return (Budget)eGet(RequirementPackage.Literals.REQUIREMENT_BUDGET_ALLOCATION__BUDGET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBudgetId(Budget newBudgetId) {
-		eSet(RequirementPackage.Literals.REQUIREMENT_BUDGET_ALLOCATION__BUDGET_ID, newBudgetId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getBudgetItemSeqId() {
 		return (String)eGet(RequirementPackage.Literals.REQUIREMENT_BUDGET_ALLOCATION__BUDGET_ITEM_SEQ_ID, true);
 	}
@@ -246,26 +266,6 @@ public class RequirementBudgetAllocationImpl extends EntityIdentifiableImpl impl
 	@Override
 	public void setBudgetItemSeqId(String newBudgetItemSeqId) {
 		eSet(RequirementPackage.Literals.REQUIREMENT_BUDGET_ALLOCATION__BUDGET_ITEM_SEQ_ID, newBudgetItemSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Requirement getRequirementId() {
-		return (Requirement)eGet(RequirementPackage.Literals.REQUIREMENT_BUDGET_ALLOCATION__REQUIREMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRequirementId(Requirement newRequirementId) {
-		eSet(RequirementPackage.Literals.REQUIREMENT_BUDGET_ALLOCATION__REQUIREMENT_ID, newRequirementId);
 	}
 
 } //RequirementBudgetAllocationImpl

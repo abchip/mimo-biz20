@@ -22,8 +22,8 @@ import org.abchip.mimo.entity.EntityTyped;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.Deduction#getDeductionId <em>Deduction Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.Deduction#getAmount <em>Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.Deduction#getDeductionTypeId <em>Deduction Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.Deduction#getPaymentId <em>Payment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.Deduction#getDeductionType <em>Deduction Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.Deduction#getPayment <em>Payment</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getDeduction()
@@ -58,6 +58,50 @@ public interface Deduction extends EntityTyped<DeductionType>, EntityInfo {
 	void setAmount(BigDecimal value);
 
 	/**
+	 * Returns the value of the '<em><b>Deduction Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Deduction Type</em>' reference.
+	 * @see #setDeductionType(DeductionType)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getDeduction_DeductionType()
+	 * @model keys="deductionTypeId"
+	 * @generated
+	 */
+	DeductionType getDeductionType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.Deduction#getDeductionType <em>Deduction Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Deduction Type</em>' reference.
+	 * @see #getDeductionType()
+	 * @generated
+	 */
+	void setDeductionType(DeductionType value);
+
+	/**
+	 * Returns the value of the '<em><b>Payment</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Payment</em>' reference.
+	 * @see #setPayment(Payment)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getDeduction_Payment()
+	 * @model keys="paymentId"
+	 * @generated
+	 */
+	Payment getPayment();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.Deduction#getPayment <em>Payment</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Payment</em>' reference.
+	 * @see #getPayment()
+	 * @generated
+	 */
+	void setPayment(Payment value);
+
+	/**
 	 * Returns the value of the '<em><b>Deduction Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -83,57 +127,5 @@ public interface Deduction extends EntityTyped<DeductionType>, EntityInfo {
 	 * @generated
 	 */
 	void setDeductionId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Deduction Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Deduction Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Deduction Type Id</em>' reference.
-	 * @see #setDeductionTypeId(DeductionType)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getDeduction_DeductionTypeId()
-	 * @model keys="deductionTypeId"
-	 * @generated
-	 */
-	DeductionType getDeductionTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.Deduction#getDeductionTypeId <em>Deduction Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Deduction Type Id</em>' reference.
-	 * @see #getDeductionTypeId()
-	 * @generated
-	 */
-	void setDeductionTypeId(DeductionType value);
-
-	/**
-	 * Returns the value of the '<em><b>Payment Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Payment Id</em>' reference.
-	 * @see #setPaymentId(Payment)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getDeduction_PaymentId()
-	 * @model keys="paymentId"
-	 * @generated
-	 */
-	Payment getPaymentId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.Deduction#getPaymentId <em>Payment Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Payment Id</em>' reference.
-	 * @see #getPaymentId()
-	 * @generated
-	 */
-	void setPaymentId(Payment value);
 
 } // Deduction

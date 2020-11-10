@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemSurveyImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemSurveyImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemSurveyImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemSurveyImpl#getShoppingListId <em>Shopping List Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemSurveyImpl#getSurveyResponseId <em>Survey Response Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemSurveyImpl#getShoppingList <em>Shopping List</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemSurveyImpl#getSurveyResponse <em>Survey Response</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListItemSurveyImpl#getShoppingListItemSeqId <em>Shopping List Item Seq Id</em>}</li>
  * </ul>
  *
@@ -153,8 +153,8 @@ public class ShoppingListItemSurveyImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public ShoppingList getShoppingListId() {
-		return (ShoppingList)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST_ITEM_SURVEY__SHOPPING_LIST_ID, true);
+	public ShoppingList getShoppingList() {
+		return (ShoppingList)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST_ITEM_SURVEY__SHOPPING_LIST, true);
 	}
 
 	/**
@@ -163,8 +163,28 @@ public class ShoppingListItemSurveyImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setShoppingListId(ShoppingList newShoppingListId) {
-		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST_ITEM_SURVEY__SHOPPING_LIST_ID, newShoppingListId);
+	public void setShoppingList(ShoppingList newShoppingList) {
+		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST_ITEM_SURVEY__SHOPPING_LIST, newShoppingList);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SurveyResponse getSurveyResponse() {
+		return (SurveyResponse)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST_ITEM_SURVEY__SURVEY_RESPONSE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSurveyResponse(SurveyResponse newSurveyResponse) {
+		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST_ITEM_SURVEY__SURVEY_RESPONSE, newSurveyResponse);
 	}
 
 	/**
@@ -223,26 +243,6 @@ public class ShoppingListItemSurveyImpl extends EntityIdentifiableImpl implement
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SurveyResponse getSurveyResponseId() {
-		return (SurveyResponse)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST_ITEM_SURVEY__SURVEY_RESPONSE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSurveyResponseId(SurveyResponse newSurveyResponseId) {
-		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST_ITEM_SURVEY__SURVEY_RESPONSE_ID, newSurveyResponseId);
 	}
 
 } //ShoppingListItemSurveyImpl

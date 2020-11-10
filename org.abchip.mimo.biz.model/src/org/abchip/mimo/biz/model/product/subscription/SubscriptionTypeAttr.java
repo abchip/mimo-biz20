@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionTypeAttr#getSubscriptionTypeId <em>Subscription Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionTypeAttr#getSubscriptionType <em>Subscription Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionTypeAttr#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionTypeAttr#getDescription <em>Description</em>}</li>
  * </ul>
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface SubscriptionTypeAttr extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Subscription Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Subscription Type</em>' reference.
+	 * @see #setSubscriptionType(SubscriptionType)
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionTypeAttr_SubscriptionType()
+	 * @model keys="subscriptionTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	SubscriptionType getSubscriptionType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionTypeAttr#getSubscriptionType <em>Subscription Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Subscription Type</em>' reference.
+	 * @see #getSubscriptionType()
+	 * @generated
+	 */
+	void setSubscriptionType(SubscriptionType value);
+
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,32 +105,5 @@ public interface SubscriptionTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setAttrName(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Subscription Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Subscription Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Subscription Type Id</em>' reference.
-	 * @see #setSubscriptionTypeId(SubscriptionType)
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionTypeAttr_SubscriptionTypeId()
-	 * @model keys="subscriptionTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	SubscriptionType getSubscriptionTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionTypeAttr#getSubscriptionTypeId <em>Subscription Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Subscription Type Id</em>' reference.
-	 * @see #getSubscriptionTypeId()
-	 * @generated
-	 */
-	void setSubscriptionTypeId(SubscriptionType value);
 
 } // SubscriptionTypeAttr

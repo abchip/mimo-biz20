@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceNoteImpl#getInvoiceId <em>Invoice Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceNoteImpl#getInvoice <em>Invoice</em>}</li>
  * </ul>
  *
  * @generated
@@ -52,8 +52,8 @@ public class InvoiceNoteImpl extends BizEntityNoteImpl implements InvoiceNote {
 	 * @generated
 	 */
 	@Override
-	public Invoice getInvoiceId() {
-		return (Invoice)eGet(InvoicePackage.Literals.INVOICE_NOTE__INVOICE_ID, true);
+	public Invoice getInvoice() {
+		return (Invoice)eGet(InvoicePackage.Literals.INVOICE_NOTE__INVOICE, true);
 	}
 
 	/**
@@ -62,8 +62,8 @@ public class InvoiceNoteImpl extends BizEntityNoteImpl implements InvoiceNote {
 	 * @generated
 	 */
 	@Override
-	public void setInvoiceId(Invoice newInvoiceId) {
-		eSet(InvoicePackage.Literals.INVOICE_NOTE__INVOICE_ID, newInvoiceId);
+	public void setInvoice(Invoice newInvoice) {
+		eSet(InvoicePackage.Literals.INVOICE_NOTE__INVOICE, newInvoice);
 	}
 
 } //InvoiceNoteImpl

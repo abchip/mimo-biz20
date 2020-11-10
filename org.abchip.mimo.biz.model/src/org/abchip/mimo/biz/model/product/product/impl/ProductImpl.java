@@ -49,7 +49,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getAmountUomTypeId <em>Amount Uom Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getAmountUomType <em>Amount Uom Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getAutoCreateKeywords <em>Auto Create Keywords</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getBillOfMaterialLevel <em>Bill Of Material Level</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getBrandName <em>Brand Name</em>}</li>
@@ -59,20 +59,20 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getConfigId <em>Config Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getCreatedDate <em>Created Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getDefaultShipmentBoxTypeId <em>Default Shipment Box Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getDepthUomId <em>Depth Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getDefaultShipmentBoxType <em>Default Shipment Box Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getDepthUom <em>Depth Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getDetailImageUrl <em>Detail Image Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getDetailScreen <em>Detail Screen</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getDiameterUomId <em>Diameter Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getDiameterUom <em>Diameter Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getFixedAmount <em>Fixed Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getHeightUomId <em>Height Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getHeightUom <em>Height Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#isInShippingBox <em>In Shipping Box</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getIncludeInPromotions <em>Include In Promotions</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getInternalName <em>Internal Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getIntroductionDate <em>Introduction Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getInventoryItemTypeId <em>Inventory Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getInventoryItemType <em>Inventory Item Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getInventoryMessage <em>Inventory Message</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#isIsVariant <em>Is Variant</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#isIsVirtual <em>Is Virtual</em>}</li>
@@ -83,11 +83,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getLotIdFilledIn <em>Lot Id Filled In</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getMediumImageUrl <em>Medium Image Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getOrderDecimalQuantity <em>Order Decimal Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getOriginGeoId <em>Origin Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getOriginGeo <em>Origin Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getOriginalImageUrl <em>Original Image Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getPiecesIncluded <em>Pieces Included</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getPriceDetailText <em>Price Detail Text</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getPrimaryProductCategoryId <em>Primary Product Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getPrimaryProductCategory <em>Primary Product Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductAttributes <em>Product Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductCostComponentCalcs <em>Product Cost Component Calcs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductDepth <em>Product Depth</em>}</li>
@@ -101,16 +101,16 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductName <em>Product Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductRating <em>Product Rating</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductSubscriptionResources <em>Product Subscription Resources</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductTypeId <em>Product Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductType <em>Product Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductWeight <em>Product Weight</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductWidth <em>Product Width</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getQuantityIncluded <em>Quantity Included</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getQuantityUomId <em>Quantity Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getQuantityUom <em>Quantity Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getRatingTypeEnum <em>Rating Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getReleaseDate <em>Release Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getRequireAmount <em>Require Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getRequireInventory <em>Require Inventory</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getRequirementMethodEnumId <em>Requirement Method Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getRequirementMethodEnum <em>Requirement Method Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getReserv2ndPPPerc <em>Reserv2nd PP Perc</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getReservMaxPersons <em>Reserv Max Persons</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getReservNthPPPerc <em>Reserv Nth PP Perc</em>}</li>
@@ -125,8 +125,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getSupportDiscontinuationDate <em>Support Discontinuation Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getTaxable <em>Taxable</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getVirtualVariantMethodEnum <em>Virtual Variant Method Enum</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getWeightUomId <em>Weight Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getWidthUomId <em>Width Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getWeightUom <em>Weight Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getWidthUom <em>Width Uom</em>}</li>
  * </ul>
  *
  * @generated
@@ -240,26 +240,6 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	@Override
 	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
 		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public UomType getAmountUomTypeId() {
-		return (UomType)eGet(ProductPackage.Literals.PRODUCT__AMOUNT_UOM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAmountUomTypeId(UomType newAmountUomTypeId) {
-		eSet(ProductPackage.Literals.PRODUCT__AMOUNT_UOM_TYPE_ID, newAmountUomTypeId);
 	}
 
 	/**
@@ -439,8 +419,8 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * @generated
 	 */
 	@Override
-	public ShipmentBoxType getDefaultShipmentBoxTypeId() {
-		return (ShipmentBoxType)eGet(ProductPackage.Literals.PRODUCT__DEFAULT_SHIPMENT_BOX_TYPE_ID, true);
+	public ShipmentBoxType getDefaultShipmentBoxType() {
+		return (ShipmentBoxType)eGet(ProductPackage.Literals.PRODUCT__DEFAULT_SHIPMENT_BOX_TYPE, true);
 	}
 
 	/**
@@ -449,8 +429,8 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * @generated
 	 */
 	@Override
-	public void setDefaultShipmentBoxTypeId(ShipmentBoxType newDefaultShipmentBoxTypeId) {
-		eSet(ProductPackage.Literals.PRODUCT__DEFAULT_SHIPMENT_BOX_TYPE_ID, newDefaultShipmentBoxTypeId);
+	public void setDefaultShipmentBoxType(ShipmentBoxType newDefaultShipmentBoxType) {
+		eSet(ProductPackage.Literals.PRODUCT__DEFAULT_SHIPMENT_BOX_TYPE, newDefaultShipmentBoxType);
 	}
 
 	/**
@@ -459,8 +439,8 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * @generated
 	 */
 	@Override
-	public Uom getDepthUomId() {
-		return (Uom)eGet(ProductPackage.Literals.PRODUCT__DEPTH_UOM_ID, true);
+	public Uom getDepthUom() {
+		return (Uom)eGet(ProductPackage.Literals.PRODUCT__DEPTH_UOM, true);
 	}
 
 	/**
@@ -469,8 +449,8 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * @generated
 	 */
 	@Override
-	public void setDepthUomId(Uom newDepthUomId) {
-		eSet(ProductPackage.Literals.PRODUCT__DEPTH_UOM_ID, newDepthUomId);
+	public void setDepthUom(Uom newDepthUom) {
+		eSet(ProductPackage.Literals.PRODUCT__DEPTH_UOM, newDepthUom);
 	}
 
 	/**
@@ -539,8 +519,8 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * @generated
 	 */
 	@Override
-	public Uom getDiameterUomId() {
-		return (Uom)eGet(ProductPackage.Literals.PRODUCT__DIAMETER_UOM_ID, true);
+	public Uom getDiameterUom() {
+		return (Uom)eGet(ProductPackage.Literals.PRODUCT__DIAMETER_UOM, true);
 	}
 
 	/**
@@ -549,8 +529,28 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * @generated
 	 */
 	@Override
-	public void setDiameterUomId(Uom newDiameterUomId) {
-		eSet(ProductPackage.Literals.PRODUCT__DIAMETER_UOM_ID, newDiameterUomId);
+	public void setDiameterUom(Uom newDiameterUom) {
+		eSet(ProductPackage.Literals.PRODUCT__DIAMETER_UOM, newDiameterUom);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Facility getFacility() {
+		return (Facility)eGet(ProductPackage.Literals.PRODUCT__FACILITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacility(Facility newFacility) {
+		eSet(ProductPackage.Literals.PRODUCT__FACILITY, newFacility);
 	}
 
 	/**
@@ -571,6 +571,26 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	@Override
 	public void setFixedAmount(BigDecimal newFixedAmount) {
 		eSet(ProductPackage.Literals.PRODUCT__FIXED_AMOUNT, newFixedAmount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Uom getHeightUom() {
+		return (Uom)eGet(ProductPackage.Literals.PRODUCT__HEIGHT_UOM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setHeightUom(Uom newHeightUom) {
+		eSet(ProductPackage.Literals.PRODUCT__HEIGHT_UOM, newHeightUom);
 	}
 
 	/**
@@ -619,26 +639,6 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * @generated
 	 */
 	@Override
-	public Uom getHeightUomId() {
-		return (Uom)eGet(ProductPackage.Literals.PRODUCT__HEIGHT_UOM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setHeightUomId(Uom newHeightUomId) {
-		eSet(ProductPackage.Literals.PRODUCT__HEIGHT_UOM_ID, newHeightUomId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getInternalName() {
 		return (String)eGet(ProductPackage.Literals.PRODUCT__INTERNAL_NAME, true);
 	}
@@ -671,6 +671,26 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	@Override
 	public void setIntroductionDate(Date newIntroductionDate) {
 		eSet(ProductPackage.Literals.PRODUCT__INTRODUCTION_DATE, newIntroductionDate);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InventoryItemType getInventoryItemType() {
+		return (InventoryItemType)eGet(ProductPackage.Literals.PRODUCT__INVENTORY_ITEM_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInventoryItemType(InventoryItemType newInventoryItemType) {
+		eSet(ProductPackage.Literals.PRODUCT__INVENTORY_ITEM_TYPE, newInventoryItemType);
 	}
 
 	/**
@@ -879,8 +899,8 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * @generated
 	 */
 	@Override
-	public Geo getOriginGeoId() {
-		return (Geo)eGet(ProductPackage.Literals.PRODUCT__ORIGIN_GEO_ID, true);
+	public Geo getOriginGeo() {
+		return (Geo)eGet(ProductPackage.Literals.PRODUCT__ORIGIN_GEO, true);
 	}
 
 	/**
@@ -889,8 +909,8 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * @generated
 	 */
 	@Override
-	public void setOriginGeoId(Geo newOriginGeoId) {
-		eSet(ProductPackage.Literals.PRODUCT__ORIGIN_GEO_ID, newOriginGeoId);
+	public void setOriginGeo(Geo newOriginGeo) {
+		eSet(ProductPackage.Literals.PRODUCT__ORIGIN_GEO, newOriginGeo);
 	}
 
 	/**
@@ -951,6 +971,26 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	@Override
 	public void setPriceDetailText(String newPriceDetailText) {
 		eSet(ProductPackage.Literals.PRODUCT__PRICE_DETAIL_TEXT, newPriceDetailText);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductCategory getPrimaryProductCategory() {
+		return (ProductCategory)eGet(ProductPackage.Literals.PRODUCT__PRIMARY_PRODUCT_CATEGORY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPrimaryProductCategory(ProductCategory newPrimaryProductCategory) {
+		eSet(ProductPackage.Literals.PRODUCT__PRIMARY_PRODUCT_CATEGORY, newPrimaryProductCategory);
 	}
 
 	/**
@@ -1125,6 +1165,26 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * @generated
 	 */
 	@Override
+	public ProductType getProductType() {
+		return (ProductType)eGet(ProductPackage.Literals.PRODUCT__PRODUCT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductType(ProductType newProductType) {
+		eSet(ProductPackage.Literals.PRODUCT__PRODUCT_TYPE, newProductType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getProductWeight() {
 		return (BigDecimal)eGet(ProductPackage.Literals.PRODUCT__PRODUCT_WEIGHT, true);
 	}
@@ -1185,8 +1245,8 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * @generated
 	 */
 	@Override
-	public Uom getQuantityUomId() {
-		return (Uom)eGet(ProductPackage.Literals.PRODUCT__QUANTITY_UOM_ID, true);
+	public Uom getQuantityUom() {
+		return (Uom)eGet(ProductPackage.Literals.PRODUCT__QUANTITY_UOM, true);
 	}
 
 	/**
@@ -1195,8 +1255,8 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * @generated
 	 */
 	@Override
-	public void setQuantityUomId(Uom newQuantityUomId) {
-		eSet(ProductPackage.Literals.PRODUCT__QUANTITY_UOM_ID, newQuantityUomId);
+	public void setQuantityUom(Uom newQuantityUom) {
+		eSet(ProductPackage.Literals.PRODUCT__QUANTITY_UOM, newQuantityUom);
 	}
 
 	/**
@@ -1285,8 +1345,8 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * @generated
 	 */
 	@Override
-	public Enumeration getRequirementMethodEnumId() {
-		return (Enumeration)eGet(ProductPackage.Literals.PRODUCT__REQUIREMENT_METHOD_ENUM_ID, true);
+	public Enumeration getRequirementMethodEnum() {
+		return (Enumeration)eGet(ProductPackage.Literals.PRODUCT__REQUIREMENT_METHOD_ENUM, true);
 	}
 
 	/**
@@ -1295,8 +1355,8 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * @generated
 	 */
 	@Override
-	public void setRequirementMethodEnumId(Enumeration newRequirementMethodEnumId) {
-		eSet(ProductPackage.Literals.PRODUCT__REQUIREMENT_METHOD_ENUM_ID, newRequirementMethodEnumId);
+	public void setRequirementMethodEnum(Enumeration newRequirementMethodEnum) {
+		eSet(ProductPackage.Literals.PRODUCT__REQUIREMENT_METHOD_ENUM, newRequirementMethodEnum);
 	}
 
 	/**
@@ -1585,8 +1645,8 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * @generated
 	 */
 	@Override
-	public Uom getWeightUomId() {
-		return (Uom)eGet(ProductPackage.Literals.PRODUCT__WEIGHT_UOM_ID, true);
+	public Uom getWeightUom() {
+		return (Uom)eGet(ProductPackage.Literals.PRODUCT__WEIGHT_UOM, true);
 	}
 
 	/**
@@ -1595,8 +1655,8 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * @generated
 	 */
 	@Override
-	public void setWeightUomId(Uom newWeightUomId) {
-		eSet(ProductPackage.Literals.PRODUCT__WEIGHT_UOM_ID, newWeightUomId);
+	public void setWeightUom(Uom newWeightUom) {
+		eSet(ProductPackage.Literals.PRODUCT__WEIGHT_UOM, newWeightUom);
 	}
 
 	/**
@@ -1605,8 +1665,8 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * @generated
 	 */
 	@Override
-	public Uom getWidthUomId() {
-		return (Uom)eGet(ProductPackage.Literals.PRODUCT__WIDTH_UOM_ID, true);
+	public Uom getWidthUom() {
+		return (Uom)eGet(ProductPackage.Literals.PRODUCT__WIDTH_UOM, true);
 	}
 
 	/**
@@ -1615,8 +1675,8 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * @generated
 	 */
 	@Override
-	public void setWidthUomId(Uom newWidthUomId) {
-		eSet(ProductPackage.Literals.PRODUCT__WIDTH_UOM_ID, newWidthUomId);
+	public void setWidthUom(Uom newWidthUom) {
+		eSet(ProductPackage.Literals.PRODUCT__WIDTH_UOM, newWidthUom);
 	}
 
 	/**
@@ -1662,46 +1722,6 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public ProductType getProductTypeId() {
-		return (ProductType)eGet(ProductPackage.Literals.PRODUCT__PRODUCT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductTypeId(ProductType newProductTypeId) {
-		eSet(ProductPackage.Literals.PRODUCT__PRODUCT_TYPE_ID, newProductTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductCategory getPrimaryProductCategoryId() {
-		return (ProductCategory)eGet(ProductPackage.Literals.PRODUCT__PRIMARY_PRODUCT_CATEGORY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPrimaryProductCategoryId(ProductCategory newPrimaryProductCategoryId) {
-		eSet(ProductPackage.Literals.PRODUCT__PRIMARY_PRODUCT_CATEGORY_ID, newPrimaryProductCategoryId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<ProductAttribute> getProductAttributes() {
@@ -1725,46 +1745,6 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * @generated
 	 */
 	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(ProductPackage.Literals.PRODUCT__FACILITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(ProductPackage.Literals.PRODUCT__FACILITY_ID, newFacilityId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InventoryItemType getInventoryItemTypeId() {
-		return (InventoryItemType)eGet(ProductPackage.Literals.PRODUCT__INVENTORY_ITEM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInventoryItemTypeId(InventoryItemType newInventoryItemTypeId) {
-		eSet(ProductPackage.Literals.PRODUCT__INVENTORY_ITEM_TYPE_ID, newInventoryItemTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getProductId() {
 		return (String)eGet(ProductPackage.Literals.PRODUCT__PRODUCT_ID, true);
 	}
@@ -1777,6 +1757,26 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	@Override
 	public void setProductId(String newProductId) {
 		eSet(ProductPackage.Literals.PRODUCT__PRODUCT_ID, newProductId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UomType getAmountUomType() {
+		return (UomType)eGet(ProductPackage.Literals.PRODUCT__AMOUNT_UOM_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAmountUomType(UomType newAmountUomType) {
+		eSet(ProductPackage.Literals.PRODUCT__AMOUNT_UOM_TYPE, newAmountUomType);
 	}
 
 } //ProductImpl

@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.common.method.CustomMethodType#getCustomMethodTypeId <em>Custom Method Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.method.CustomMethodType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.method.CustomMethodType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.method.CustomMethodType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.method.CustomMethodType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.common.method.MethodPackage#getCustomMethodType()
@@ -83,30 +83,26 @@ public interface CustomMethodType extends EntityType<CustomMethod>, EntityInfo {
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(CustomMethodType)
-	 * @see org.abchip.mimo.biz.model.common.method.MethodPackage#getCustomMethodType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(CustomMethodType)
+	 * @see org.abchip.mimo.biz.model.common.method.MethodPackage#getCustomMethodType_ParentType()
 	 * @model keys="customMethodTypeId"
 	 * @generated
 	 */
-	CustomMethodType getParentTypeId();
+	CustomMethodType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.method.CustomMethodType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.method.CustomMethodType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(CustomMethodType value);
+	void setParentType(CustomMethodType value);
 
 	/**
 	 * Returns the value of the '<em><b>Custom Method Type Id</b></em>' attribute.

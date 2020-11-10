@@ -35,7 +35,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.UnemploymentClaimImpl#getPartyIdTo <em>Party Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.UnemploymentClaimImpl#getRoleTypeIdFrom <em>Role Type Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.UnemploymentClaimImpl#getRoleTypeIdTo <em>Role Type Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.UnemploymentClaimImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.UnemploymentClaimImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.UnemploymentClaimImpl#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.UnemploymentClaimImpl#getUnemploymentClaimDate <em>Unemployment Claim Date</em>}</li>
  * </ul>
@@ -279,8 +279,8 @@ public class UnemploymentClaimImpl extends EntityIdentifiableImpl implements Une
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(EmploymentPackage.Literals.UNEMPLOYMENT_CLAIM__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(EmploymentPackage.Literals.UNEMPLOYMENT_CLAIM__STATUS, true);
 	}
 
 	/**
@@ -289,8 +289,8 @@ public class UnemploymentClaimImpl extends EntityIdentifiableImpl implements Une
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(EmploymentPackage.Literals.UNEMPLOYMENT_CLAIM__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(EmploymentPackage.Literals.UNEMPLOYMENT_CLAIM__STATUS, newStatus);
 	}
 
 	/**

@@ -26,7 +26,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getSalesOpportunityHistoryId <em>Sales Opportunity History Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getChangeNote <em>Change Note</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getEstimatedAmount <em>Estimated Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getEstimatedCloseDate <em>Estimated Close Date</em>}</li>
@@ -34,8 +34,8 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getModifiedByUserLogin <em>Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getModifiedTimestamp <em>Modified Timestamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getNextStep <em>Next Step</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getOpportunityStageId <em>Opportunity Stage Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getSalesOpportunityId <em>Sales Opportunity Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getOpportunityStage <em>Opportunity Stage</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getSalesOpportunity <em>Sales Opportunity</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityHistory()
@@ -70,30 +70,26 @@ public interface SalesOpportunityHistory extends EntityIdentifiable, EntityInfo 
 	void setChangeNote(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Currency Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Currency Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Currency Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Currency Uom Id</em>' reference.
-	 * @see #setCurrencyUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityHistory_CurrencyUomId()
+	 * @return the value of the '<em>Currency Uom</em>' reference.
+	 * @see #setCurrencyUom(Uom)
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityHistory_CurrencyUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getCurrencyUomId();
+	Uom getCurrencyUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getCurrencyUomId <em>Currency Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getCurrencyUom <em>Currency Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Currency Uom Id</em>' reference.
-	 * @see #getCurrencyUomId()
+	 * @param value the new value of the '<em>Currency Uom</em>' reference.
+	 * @see #getCurrencyUom()
 	 * @generated
 	 */
-	void setCurrencyUomId(Uom value);
+	void setCurrencyUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
@@ -278,30 +274,48 @@ public interface SalesOpportunityHistory extends EntityIdentifiable, EntityInfo 
 	void setNextStep(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Opportunity Stage Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Opportunity Stage</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Opportunity Stage Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Opportunity Stage Id</em>' reference.
-	 * @see #setOpportunityStageId(SalesOpportunityStage)
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityHistory_OpportunityStageId()
+	 * @return the value of the '<em>Opportunity Stage</em>' reference.
+	 * @see #setOpportunityStage(SalesOpportunityStage)
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityHistory_OpportunityStage()
 	 * @model keys="opportunityStageId"
 	 * @generated
 	 */
-	SalesOpportunityStage getOpportunityStageId();
+	SalesOpportunityStage getOpportunityStage();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getOpportunityStageId <em>Opportunity Stage Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getOpportunityStage <em>Opportunity Stage</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Opportunity Stage Id</em>' reference.
-	 * @see #getOpportunityStageId()
+	 * @param value the new value of the '<em>Opportunity Stage</em>' reference.
+	 * @see #getOpportunityStage()
 	 * @generated
 	 */
-	void setOpportunityStageId(SalesOpportunityStage value);
+	void setOpportunityStage(SalesOpportunityStage value);
+
+	/**
+	 * Returns the value of the '<em><b>Sales Opportunity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Sales Opportunity</em>' reference.
+	 * @see #setSalesOpportunity(SalesOpportunity)
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityHistory_SalesOpportunity()
+	 * @model keys="salesOpportunityId"
+	 * @generated
+	 */
+	SalesOpportunity getSalesOpportunity();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getSalesOpportunity <em>Sales Opportunity</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Sales Opportunity</em>' reference.
+	 * @see #getSalesOpportunity()
+	 * @generated
+	 */
+	void setSalesOpportunity(SalesOpportunity value);
 
 	/**
 	 * Returns the value of the '<em><b>Sales Opportunity History Id</b></em>' attribute.
@@ -329,31 +343,5 @@ public interface SalesOpportunityHistory extends EntityIdentifiable, EntityInfo 
 	 * @generated
 	 */
 	void setSalesOpportunityHistoryId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Sales Opportunity Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sales Opportunity Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Sales Opportunity Id</em>' reference.
-	 * @see #setSalesOpportunityId(SalesOpportunity)
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityHistory_SalesOpportunityId()
-	 * @model keys="salesOpportunityId"
-	 * @generated
-	 */
-	SalesOpportunity getSalesOpportunityId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getSalesOpportunityId <em>Sales Opportunity Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Sales Opportunity Id</em>' reference.
-	 * @see #getSalesOpportunityId()
-	 * @generated
-	 */
-	void setSalesOpportunityId(SalesOpportunity value);
 
 } // SalesOpportunityHistory

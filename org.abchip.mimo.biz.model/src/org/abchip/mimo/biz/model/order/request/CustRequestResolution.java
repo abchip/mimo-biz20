@@ -20,7 +20,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestResolution#getCustRequestResolutionId <em>Cust Request Resolution Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestResolution#getCustRequestTypeId <em>Cust Request Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestResolution#getCustRequestType <em>Cust Request Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequestResolution#getDescription <em>Description</em>}</li>
  * </ul>
  *
@@ -57,30 +57,26 @@ public interface CustRequestResolution extends EntityIdentifiable, EntityInfo {
 	void setCustRequestResolutionId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Cust Request Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Cust Request Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cust Request Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cust Request Type Id</em>' reference.
-	 * @see #setCustRequestTypeId(CustRequestType)
-	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestResolution_CustRequestTypeId()
+	 * @return the value of the '<em>Cust Request Type</em>' reference.
+	 * @see #setCustRequestType(CustRequestType)
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestResolution_CustRequestType()
 	 * @model keys="custRequestTypeId"
 	 * @generated
 	 */
-	CustRequestType getCustRequestTypeId();
+	CustRequestType getCustRequestType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestResolution#getCustRequestTypeId <em>Cust Request Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.request.CustRequestResolution#getCustRequestType <em>Cust Request Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cust Request Type Id</em>' reference.
-	 * @see #getCustRequestTypeId()
+	 * @param value the new value of the '<em>Cust Request Type</em>' reference.
+	 * @see #getCustRequestType()
 	 * @generated
 	 */
-	void setCustRequestTypeId(CustRequestType value);
+	void setCustRequestType(CustRequestType value);
 
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.

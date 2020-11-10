@@ -39,14 +39,14 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardFulfillmentImpl#getCardNumber <em>Card Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardFulfillmentImpl#getFulfillmentDate <em>Fulfillment Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardFulfillmentImpl#getMerchantId <em>Merchant Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardFulfillmentImpl#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardFulfillmentImpl#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardFulfillmentImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardFulfillmentImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardFulfillmentImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardFulfillmentImpl#getPinNumber <em>Pin Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardFulfillmentImpl#getReferenceNum <em>Reference Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardFulfillmentImpl#getResponseCode <em>Response Code</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardFulfillmentImpl#getSurveyResponseId <em>Survey Response Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardFulfillmentImpl#getTypeEnumId <em>Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardFulfillmentImpl#getSurveyResponse <em>Survey Response</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardFulfillmentImpl#getTypeEnum <em>Type Enum</em>}</li>
  * </ul>
  *
  * @generated
@@ -287,8 +287,8 @@ public class GiftCardFulfillmentImpl extends EntityIdentifiableImpl implements G
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(PaymentPackage.Literals.GIFT_CARD_FULFILLMENT__ORDER_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(PaymentPackage.Literals.GIFT_CARD_FULFILLMENT__ORDER, true);
 	}
 
 	/**
@@ -297,8 +297,8 @@ public class GiftCardFulfillmentImpl extends EntityIdentifiableImpl implements G
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(PaymentPackage.Literals.GIFT_CARD_FULFILLMENT__ORDER_ID, newOrderId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(PaymentPackage.Literals.GIFT_CARD_FULFILLMENT__ORDER, newOrder);
 	}
 
 	/**
@@ -327,8 +327,8 @@ public class GiftCardFulfillmentImpl extends EntityIdentifiableImpl implements G
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(PaymentPackage.Literals.GIFT_CARD_FULFILLMENT__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(PaymentPackage.Literals.GIFT_CARD_FULFILLMENT__PARTY, true);
 	}
 
 	/**
@@ -337,8 +337,8 @@ public class GiftCardFulfillmentImpl extends EntityIdentifiableImpl implements G
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(PaymentPackage.Literals.GIFT_CARD_FULFILLMENT__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(PaymentPackage.Literals.GIFT_CARD_FULFILLMENT__PARTY, newParty);
 	}
 
 	/**
@@ -407,8 +407,8 @@ public class GiftCardFulfillmentImpl extends EntityIdentifiableImpl implements G
 	 * @generated
 	 */
 	@Override
-	public SurveyResponse getSurveyResponseId() {
-		return (SurveyResponse)eGet(PaymentPackage.Literals.GIFT_CARD_FULFILLMENT__SURVEY_RESPONSE_ID, true);
+	public SurveyResponse getSurveyResponse() {
+		return (SurveyResponse)eGet(PaymentPackage.Literals.GIFT_CARD_FULFILLMENT__SURVEY_RESPONSE, true);
 	}
 
 	/**
@@ -417,8 +417,8 @@ public class GiftCardFulfillmentImpl extends EntityIdentifiableImpl implements G
 	 * @generated
 	 */
 	@Override
-	public void setSurveyResponseId(SurveyResponse newSurveyResponseId) {
-		eSet(PaymentPackage.Literals.GIFT_CARD_FULFILLMENT__SURVEY_RESPONSE_ID, newSurveyResponseId);
+	public void setSurveyResponse(SurveyResponse newSurveyResponse) {
+		eSet(PaymentPackage.Literals.GIFT_CARD_FULFILLMENT__SURVEY_RESPONSE, newSurveyResponse);
 	}
 
 	/**
@@ -427,8 +427,8 @@ public class GiftCardFulfillmentImpl extends EntityIdentifiableImpl implements G
 	 * @generated
 	 */
 	@Override
-	public Enumeration getTypeEnumId() {
-		return (Enumeration)eGet(PaymentPackage.Literals.GIFT_CARD_FULFILLMENT__TYPE_ENUM_ID, true);
+	public Enumeration getTypeEnum() {
+		return (Enumeration)eGet(PaymentPackage.Literals.GIFT_CARD_FULFILLMENT__TYPE_ENUM, true);
 	}
 
 	/**
@@ -437,8 +437,8 @@ public class GiftCardFulfillmentImpl extends EntityIdentifiableImpl implements G
 	 * @generated
 	 */
 	@Override
-	public void setTypeEnumId(Enumeration newTypeEnumId) {
-		eSet(PaymentPackage.Literals.GIFT_CARD_FULFILLMENT__TYPE_ENUM_ID, newTypeEnumId);
+	public void setTypeEnum(Enumeration newTypeEnum) {
+		eSet(PaymentPackage.Literals.GIFT_CARD_FULFILLMENT__TYPE_ENUM, newTypeEnum);
 	}
 
 	/**

@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupTypeImpl#getPaymentGroupTypeId <em>Payment Group Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -199,8 +199,8 @@ public class PaymentGroupTypeImpl extends EntityTypeImpl<PaymentGroup> implement
 	 * @generated
 	 */
 	@Override
-	public PaymentGroupType getParentTypeId() {
-		return (PaymentGroupType)eGet(PaymentPackage.Literals.PAYMENT_GROUP_TYPE__PARENT_TYPE_ID, true);
+	public PaymentGroupType getParentType() {
+		return (PaymentGroupType)eGet(PaymentPackage.Literals.PAYMENT_GROUP_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -209,8 +209,8 @@ public class PaymentGroupTypeImpl extends EntityTypeImpl<PaymentGroup> implement
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(PaymentGroupType newParentTypeId) {
-		eSet(PaymentPackage.Literals.PAYMENT_GROUP_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(PaymentGroupType newParentType) {
+		eSet(PaymentPackage.Literals.PAYMENT_GROUP_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

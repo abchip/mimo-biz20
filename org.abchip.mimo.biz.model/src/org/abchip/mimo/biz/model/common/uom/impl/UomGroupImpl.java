@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomGroupImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomGroupImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomGroupImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomGroupImpl#getUomId <em>Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomGroupImpl#getUom <em>Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomGroupImpl#getUomGroupId <em>Uom Group Id</em>}</li>
  * </ul>
  *
@@ -150,6 +150,26 @@ public class UomGroupImpl extends EntityIdentifiableImpl implements UomGroup {
 	 * @generated
 	 */
 	@Override
+	public Uom getUom() {
+		return (Uom)eGet(UomPackage.Literals.UOM_GROUP__UOM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUom(Uom newUom) {
+		eSet(UomPackage.Literals.UOM_GROUP__UOM, newUom);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getUomGroupId() {
 		return (String)eGet(UomPackage.Literals.UOM_GROUP__UOM_GROUP_ID, true);
 	}
@@ -200,26 +220,6 @@ public class UomGroupImpl extends EntityIdentifiableImpl implements UomGroup {
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Uom getUomId() {
-		return (Uom)eGet(UomPackage.Literals.UOM_GROUP__UOM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setUomId(Uom newUomId) {
-		eSet(UomPackage.Literals.UOM_GROUP__UOM_ID, newUomId);
 	}
 
 } //UomGroupImpl

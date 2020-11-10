@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourcePurposeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourcePurposeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourcePurposeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourcePurposeImpl#getDataResourceId <em>Data Resource Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourcePurposeImpl#getContentPurposeTypeId <em>Content Purpose Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourcePurposeImpl#getDataResource <em>Data Resource</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourcePurposeImpl#getContentPurposeType <em>Content Purpose Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class DataResourcePurposeImpl extends EntityIdentifiableImpl implements D
 	 * @generated
 	 */
 	@Override
-	public ContentPurposeType getContentPurposeTypeId() {
-		return (ContentPurposeType)eGet(DataPackage.Literals.DATA_RESOURCE_PURPOSE__CONTENT_PURPOSE_TYPE_ID, true);
+	public DataResource getDataResource() {
+		return (DataResource)eGet(DataPackage.Literals.DATA_RESOURCE_PURPOSE__DATA_RESOURCE, true);
 	}
 
 	/**
@@ -162,8 +162,28 @@ public class DataResourcePurposeImpl extends EntityIdentifiableImpl implements D
 	 * @generated
 	 */
 	@Override
-	public void setContentPurposeTypeId(ContentPurposeType newContentPurposeTypeId) {
-		eSet(DataPackage.Literals.DATA_RESOURCE_PURPOSE__CONTENT_PURPOSE_TYPE_ID, newContentPurposeTypeId);
+	public void setDataResource(DataResource newDataResource) {
+		eSet(DataPackage.Literals.DATA_RESOURCE_PURPOSE__DATA_RESOURCE, newDataResource);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContentPurposeType getContentPurposeType() {
+		return (ContentPurposeType)eGet(DataPackage.Literals.DATA_RESOURCE_PURPOSE__CONTENT_PURPOSE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContentPurposeType(ContentPurposeType newContentPurposeType) {
+		eSet(DataPackage.Literals.DATA_RESOURCE_PURPOSE__CONTENT_PURPOSE_TYPE, newContentPurposeType);
 	}
 
 	/**
@@ -202,26 +222,6 @@ public class DataResourcePurposeImpl extends EntityIdentifiableImpl implements D
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DataResource getDataResourceId() {
-		return (DataResource)eGet(DataPackage.Literals.DATA_RESOURCE_PURPOSE__DATA_RESOURCE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDataResourceId(DataResource newDataResourceId) {
-		eSet(DataPackage.Literals.DATA_RESOURCE_PURPOSE__DATA_RESOURCE_ID, newDataResourceId);
 	}
 
 } //DataResourcePurposeImpl

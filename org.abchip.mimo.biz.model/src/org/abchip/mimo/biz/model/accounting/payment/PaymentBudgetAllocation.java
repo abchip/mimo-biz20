@@ -21,8 +21,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentBudgetAllocation#getBudgetId <em>Budget Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentBudgetAllocation#getPaymentId <em>Payment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentBudgetAllocation#getBudget <em>Budget</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentBudgetAllocation#getPayment <em>Payment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentBudgetAllocation#getBudgetItemSeqId <em>Budget Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentBudgetAllocation#getAmount <em>Amount</em>}</li>
  * </ul>
@@ -32,6 +32,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface PaymentBudgetAllocation extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Budget</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Budget</em>' reference.
+	 * @see #setBudget(Budget)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentBudgetAllocation_Budget()
+	 * @model keys="budgetId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Budget getBudget();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentBudgetAllocation#getBudget <em>Budget</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Budget</em>' reference.
+	 * @see #getBudget()
+	 * @generated
+	 */
+	void setBudget(Budget value);
+
+	/**
+	 * Returns the value of the '<em><b>Payment</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Payment</em>' reference.
+	 * @see #setPayment(Payment)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentBudgetAllocation_Payment()
+	 * @model keys="paymentId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Payment getPayment();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentBudgetAllocation#getPayment <em>Payment</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Payment</em>' reference.
+	 * @see #getPayment()
+	 * @generated
+	 */
+	void setPayment(Payment value);
+
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -85,59 +131,5 @@ public interface PaymentBudgetAllocation extends EntityIdentifiable, EntityInfo 
 	 * @generated
 	 */
 	void setBudgetItemSeqId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Budget Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Budget Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Budget Id</em>' reference.
-	 * @see #setBudgetId(Budget)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentBudgetAllocation_BudgetId()
-	 * @model keys="budgetId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Budget getBudgetId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentBudgetAllocation#getBudgetId <em>Budget Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Budget Id</em>' reference.
-	 * @see #getBudgetId()
-	 * @generated
-	 */
-	void setBudgetId(Budget value);
-
-	/**
-	 * Returns the value of the '<em><b>Payment Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Payment Id</em>' reference.
-	 * @see #setPaymentId(Payment)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentBudgetAllocation_PaymentId()
-	 * @model keys="paymentId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Payment getPaymentId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentBudgetAllocation#getPaymentId <em>Payment Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Payment Id</em>' reference.
-	 * @see #getPaymentId()
-	 * @generated
-	 */
-	void setPaymentId(Payment value);
 
 } // PaymentBudgetAllocation

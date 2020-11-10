@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.reservations.impl.AccommodationSpotImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.reservations.impl.AccommodationSpotImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.reservations.impl.AccommodationSpotImpl#getAccommodationSpotId <em>Accommodation Spot Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.reservations.impl.AccommodationSpotImpl#getAccommodationClassId <em>Accommodation Class Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.reservations.impl.AccommodationSpotImpl#getAccommodationClass <em>Accommodation Class</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.reservations.impl.AccommodationSpotImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.reservations.impl.AccommodationSpotImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.reservations.impl.AccommodationSpotImpl#getFixedAsset <em>Fixed Asset</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.reservations.impl.AccommodationSpotImpl#getNumberOfSpaces <em>Number Of Spaces</em>}</li>
  * </ul>
  *
@@ -155,26 +155,6 @@ public class AccommodationSpotImpl extends EntityIdentifiableImpl implements Acc
 	 * @generated
 	 */
 	@Override
-	public AccommodationClass getAccommodationClassId() {
-		return (AccommodationClass)eGet(ReservationsPackage.Literals.ACCOMMODATION_SPOT__ACCOMMODATION_CLASS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAccommodationClassId(AccommodationClass newAccommodationClassId) {
-		eSet(ReservationsPackage.Literals.ACCOMMODATION_SPOT__ACCOMMODATION_CLASS_ID, newAccommodationClassId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getAccommodationSpotId() {
 		return (String)eGet(ReservationsPackage.Literals.ACCOMMODATION_SPOT__ACCOMMODATION_SPOT_ID, true);
 	}
@@ -187,6 +167,26 @@ public class AccommodationSpotImpl extends EntityIdentifiableImpl implements Acc
 	@Override
 	public void setAccommodationSpotId(String newAccommodationSpotId) {
 		eSet(ReservationsPackage.Literals.ACCOMMODATION_SPOT__ACCOMMODATION_SPOT_ID, newAccommodationSpotId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AccommodationClass getAccommodationClass() {
+		return (AccommodationClass)eGet(ReservationsPackage.Literals.ACCOMMODATION_SPOT__ACCOMMODATION_CLASS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAccommodationClass(AccommodationClass newAccommodationClass) {
+		eSet(ReservationsPackage.Literals.ACCOMMODATION_SPOT__ACCOMMODATION_CLASS, newAccommodationClass);
 	}
 
 	/**
@@ -215,8 +215,8 @@ public class AccommodationSpotImpl extends EntityIdentifiableImpl implements Acc
 	 * @generated
 	 */
 	@Override
-	public FixedAsset getFixedAssetId() {
-		return (FixedAsset)eGet(ReservationsPackage.Literals.ACCOMMODATION_SPOT__FIXED_ASSET_ID, true);
+	public FixedAsset getFixedAsset() {
+		return (FixedAsset)eGet(ReservationsPackage.Literals.ACCOMMODATION_SPOT__FIXED_ASSET, true);
 	}
 
 	/**
@@ -225,8 +225,8 @@ public class AccommodationSpotImpl extends EntityIdentifiableImpl implements Acc
 	 * @generated
 	 */
 	@Override
-	public void setFixedAssetId(FixedAsset newFixedAssetId) {
-		eSet(ReservationsPackage.Literals.ACCOMMODATION_SPOT__FIXED_ASSET_ID, newFixedAssetId);
+	public void setFixedAsset(FixedAsset newFixedAsset) {
+		eSet(ReservationsPackage.Literals.ACCOMMODATION_SPOT__FIXED_ASSET, newFixedAsset);
 	}
 
 	/**

@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomGroup#getUomId <em>Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomGroup#getUom <em>Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomGroup#getUomGroupId <em>Uom Group Id</em>}</li>
  * </ul>
  *
@@ -28,6 +28,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface UomGroup extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Uom</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Uom</em>' reference.
+	 * @see #setUom(Uom)
+	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUomGroup_Uom()
+	 * @model keys="uomId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Uom getUom();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.uom.UomGroup#getUom <em>Uom</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Uom</em>' reference.
+	 * @see #getUom()
+	 * @generated
+	 */
+	void setUom(Uom value);
+
 	/**
 	 * Returns the value of the '<em><b>Uom Group Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -55,32 +78,5 @@ public interface UomGroup extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setUomGroupId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Uom Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uom Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Uom Id</em>' reference.
-	 * @see #setUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUomGroup_UomId()
-	 * @model keys="uomId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Uom getUomId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.uom.UomGroup#getUomId <em>Uom Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Uom Id</em>' reference.
-	 * @see #getUomId()
-	 * @generated
-	 */
-	void setUomId(Uom value);
 
 } // UomGroup

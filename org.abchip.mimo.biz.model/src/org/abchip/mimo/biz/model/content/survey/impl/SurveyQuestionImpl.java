@@ -36,12 +36,12 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionImpl#getEnumTypeId <em>Enum Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionImpl#getFormatString <em>Format String</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionImpl#getGeoId <em>Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionImpl#getGeo <em>Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionImpl#getHint <em>Hint</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionImpl#getQuestion <em>Question</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionImpl#getSurveyQuestionCategoryId <em>Survey Question Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionImpl#getSurveyQuestionCategory <em>Survey Question Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionImpl#getSurveyQuestionOptions <em>Survey Question Options</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionImpl#getSurveyQuestionTypeId <em>Survey Question Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionImpl#getSurveyQuestionType <em>Survey Question Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -223,8 +223,8 @@ public class SurveyQuestionImpl extends EntityTypedImpl<SurveyQuestionType> impl
 	 * @generated
 	 */
 	@Override
-	public Geo getGeoId() {
-		return (Geo)eGet(SurveyPackage.Literals.SURVEY_QUESTION__GEO_ID, true);
+	public Geo getGeo() {
+		return (Geo)eGet(SurveyPackage.Literals.SURVEY_QUESTION__GEO, true);
 	}
 
 	/**
@@ -233,8 +233,8 @@ public class SurveyQuestionImpl extends EntityTypedImpl<SurveyQuestionType> impl
 	 * @generated
 	 */
 	@Override
-	public void setGeoId(Geo newGeoId) {
-		eSet(SurveyPackage.Literals.SURVEY_QUESTION__GEO_ID, newGeoId);
+	public void setGeo(Geo newGeo) {
+		eSet(SurveyPackage.Literals.SURVEY_QUESTION__GEO, newGeo);
 	}
 
 	/**
@@ -283,8 +283,8 @@ public class SurveyQuestionImpl extends EntityTypedImpl<SurveyQuestionType> impl
 	 * @generated
 	 */
 	@Override
-	public SurveyQuestionCategory getSurveyQuestionCategoryId() {
-		return (SurveyQuestionCategory)eGet(SurveyPackage.Literals.SURVEY_QUESTION__SURVEY_QUESTION_CATEGORY_ID, true);
+	public SurveyQuestionCategory getSurveyQuestionCategory() {
+		return (SurveyQuestionCategory)eGet(SurveyPackage.Literals.SURVEY_QUESTION__SURVEY_QUESTION_CATEGORY, true);
 	}
 
 	/**
@@ -293,8 +293,8 @@ public class SurveyQuestionImpl extends EntityTypedImpl<SurveyQuestionType> impl
 	 * @generated
 	 */
 	@Override
-	public void setSurveyQuestionCategoryId(SurveyQuestionCategory newSurveyQuestionCategoryId) {
-		eSet(SurveyPackage.Literals.SURVEY_QUESTION__SURVEY_QUESTION_CATEGORY_ID, newSurveyQuestionCategoryId);
+	public void setSurveyQuestionCategory(SurveyQuestionCategory newSurveyQuestionCategory) {
+		eSet(SurveyPackage.Literals.SURVEY_QUESTION__SURVEY_QUESTION_CATEGORY, newSurveyQuestionCategory);
 	}
 
 	/**
@@ -306,6 +306,26 @@ public class SurveyQuestionImpl extends EntityTypedImpl<SurveyQuestionType> impl
 	@Override
 	public List<SurveyQuestionOption> getSurveyQuestionOptions() {
 		return (List<SurveyQuestionOption>)eGet(SurveyPackage.Literals.SURVEY_QUESTION__SURVEY_QUESTION_OPTIONS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SurveyQuestionType getSurveyQuestionType() {
+		return (SurveyQuestionType)eGet(SurveyPackage.Literals.SURVEY_QUESTION__SURVEY_QUESTION_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSurveyQuestionType(SurveyQuestionType newSurveyQuestionType) {
+		eSet(SurveyPackage.Literals.SURVEY_QUESTION__SURVEY_QUESTION_TYPE, newSurveyQuestionType);
 	}
 
 	/**
@@ -326,26 +346,6 @@ public class SurveyQuestionImpl extends EntityTypedImpl<SurveyQuestionType> impl
 	@Override
 	public void setSurveyQuestionId(String newSurveyQuestionId) {
 		eSet(SurveyPackage.Literals.SURVEY_QUESTION__SURVEY_QUESTION_ID, newSurveyQuestionId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SurveyQuestionType getSurveyQuestionTypeId() {
-		return (SurveyQuestionType)eGet(SurveyPackage.Literals.SURVEY_QUESTION__SURVEY_QUESTION_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSurveyQuestionTypeId(SurveyQuestionType newSurveyQuestionTypeId) {
-		eSet(SurveyPackage.Literals.SURVEY_QUESTION__SURVEY_QUESTION_TYPE_ID, newSurveyQuestionTypeId);
 	}
 
 	/**

@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceAttributeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceAttributeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceAttributeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceAttributeImpl#getDataResourceId <em>Data Resource Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceAttributeImpl#getDataResource <em>Data Resource</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceAttributeImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceAttributeImpl#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceAttributeImpl#getAttrValue <em>Attr Value</em>}</li>
@@ -153,6 +153,26 @@ public class DataResourceAttributeImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
+	public DataResource getDataResource() {
+		return (DataResource)eGet(DataPackage.Literals.DATA_RESOURCE_ATTRIBUTE__DATA_RESOURCE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDataResource(DataResource newDataResource) {
+		eSet(DataPackage.Literals.DATA_RESOURCE_ATTRIBUTE__DATA_RESOURCE, newDataResource);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrDescription() {
 		return (String)eGet(DataPackage.Literals.DATA_RESOURCE_ATTRIBUTE__ATTR_DESCRIPTION, true);
 	}
@@ -243,26 +263,6 @@ public class DataResourceAttributeImpl extends EntityIdentifiableImpl implements
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DataResource getDataResourceId() {
-		return (DataResource)eGet(DataPackage.Literals.DATA_RESOURCE_ATTRIBUTE__DATA_RESOURCE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDataResourceId(DataResource newDataResourceId) {
-		eSet(DataPackage.Literals.DATA_RESOURCE_ATTRIBUTE__DATA_RESOURCE_ID, newDataResourceId);
 	}
 
 } //DataResourceAttributeImpl

@@ -21,8 +21,8 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PartySkill#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PartySkill#getSkillTypeId <em>Skill Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PartySkill#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PartySkill#getSkillType <em>Skill Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PartySkill#getRating <em>Rating</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PartySkill#getSkillLevel <em>Skill Level</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.PartySkill#getStartedUsingDate <em>Started Using Date</em>}</li>
@@ -35,31 +35,50 @@ import org.abchip.mimo.entity.EntityTyped;
  */
 public interface PartySkill extends EntityTyped<SkillType>, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPartySkill_PartyId()
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPartySkill_Party()
 	 * @model keys="partyId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Party getPartyId();
+	Party getParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PartySkill#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PartySkill#getParty <em>Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Skill Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Skill Type</em>' reference.
+	 * @see #setSkillType(SkillType)
+	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPartySkill_SkillType()
+	 * @model keys="skillTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	SkillType getSkillType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PartySkill#getSkillType <em>Skill Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Skill Type</em>' reference.
+	 * @see #getSkillType()
+	 * @generated
+	 */
+	void setSkillType(SkillType value);
 
 	/**
 	 * Returns the value of the '<em><b>Rating</b></em>' attribute.
@@ -112,33 +131,6 @@ public interface PartySkill extends EntityTyped<SkillType>, EntityInfo {
 	 * @generated
 	 */
 	void setSkillLevel(long value);
-
-	/**
-	 * Returns the value of the '<em><b>Skill Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Skill Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Skill Type Id</em>' reference.
-	 * @see #setSkillTypeId(SkillType)
-	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPartySkill_SkillTypeId()
-	 * @model keys="skillTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	SkillType getSkillTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PartySkill#getSkillTypeId <em>Skill Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Skill Type Id</em>' reference.
-	 * @see #getSkillTypeId()
-	 * @generated
-	 */
-	void setSkillTypeId(SkillType value);
 
 	/**
 	 * Returns the value of the '<em><b>Started Using Date</b></em>' attribute.

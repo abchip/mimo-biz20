@@ -38,11 +38,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getProductPriceTypeId <em>Product Price Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getProductPricePurposeId <em>Product Price Purpose Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getProductStoreGroupId <em>Product Store Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getProductPriceType <em>Product Price Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getProductPricePurpose <em>Product Price Purpose</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getCurrencyUom <em>Currency Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getProductStoreGroup <em>Product Store Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getCreatedDate <em>Created Date</em>}</li>
@@ -53,11 +53,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getPriceWithTax <em>Price With Tax</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getPriceWithoutTax <em>Price Without Tax</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getTaxAmount <em>Tax Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getTaxAuthPartyId <em>Tax Auth Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getTaxAuthGeo <em>Tax Auth Geo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getTaxAuthParty <em>Tax Auth Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#isTaxInPrice <em>Tax In Price</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getTaxPercentage <em>Tax Percentage</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getTermUomId <em>Term Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getTermUom <em>Term Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductPriceImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -180,6 +180,106 @@ public class ProductPriceImpl extends EntityIdentifiableImpl implements ProductP
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(PricePackage.Literals.PRODUCT_PRICE__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(PricePackage.Literals.PRODUCT_PRICE__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductPriceType getProductPriceType() {
+		return (ProductPriceType)eGet(PricePackage.Literals.PRODUCT_PRICE__PRODUCT_PRICE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPriceType(ProductPriceType newProductPriceType) {
+		eSet(PricePackage.Literals.PRODUCT_PRICE__PRODUCT_PRICE_TYPE, newProductPriceType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductPricePurpose getProductPricePurpose() {
+		return (ProductPricePurpose)eGet(PricePackage.Literals.PRODUCT_PRICE__PRODUCT_PRICE_PURPOSE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPricePurpose(ProductPricePurpose newProductPricePurpose) {
+		eSet(PricePackage.Literals.PRODUCT_PRICE__PRODUCT_PRICE_PURPOSE, newProductPricePurpose);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Uom getCurrencyUom() {
+		return (Uom)eGet(PricePackage.Literals.PRODUCT_PRICE__CURRENCY_UOM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCurrencyUom(Uom newCurrencyUom) {
+		eSet(PricePackage.Literals.PRODUCT_PRICE__CURRENCY_UOM, newCurrencyUom);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductStoreGroup getProductStoreGroup() {
+		return (ProductStoreGroup)eGet(PricePackage.Literals.PRODUCT_PRICE__PRODUCT_STORE_GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductStoreGroup(ProductStoreGroup newProductStoreGroup) {
+		eSet(PricePackage.Literals.PRODUCT_PRICE__PRODUCT_STORE_GROUP, newProductStoreGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public UserLogin getCreatedByUserLogin() {
 		return (UserLogin)eGet(PricePackage.Literals.PRODUCT_PRICE__CREATED_BY_USER_LOGIN, true);
 	}
@@ -212,26 +312,6 @@ public class ProductPriceImpl extends EntityIdentifiableImpl implements ProductP
 	@Override
 	public void setCreatedDate(Date newCreatedDate) {
 		eSet(PricePackage.Literals.PRODUCT_PRICE__CREATED_DATE, newCreatedDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Uom getCurrencyUomId() {
-		return (Uom)eGet(PricePackage.Literals.PRODUCT_PRICE__CURRENCY_UOM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCurrencyUomId(Uom newCurrencyUomId) {
-		eSet(PricePackage.Literals.PRODUCT_PRICE__CURRENCY_UOM_ID, newCurrencyUomId);
 	}
 
 	/**
@@ -380,46 +460,6 @@ public class ProductPriceImpl extends EntityIdentifiableImpl implements ProductP
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(PricePackage.Literals.PRODUCT_PRICE__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(PricePackage.Literals.PRODUCT_PRICE__PRODUCT_ID, newProductId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductStoreGroup getProductStoreGroupId() {
-		return (ProductStoreGroup)eGet(PricePackage.Literals.PRODUCT_PRICE__PRODUCT_STORE_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductStoreGroupId(ProductStoreGroup newProductStoreGroupId) {
-		eSet(PricePackage.Literals.PRODUCT_PRICE__PRODUCT_STORE_GROUP_ID, newProductStoreGroupId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public BigDecimal getTaxAmount() {
 		return (BigDecimal)eGet(PricePackage.Literals.PRODUCT_PRICE__TAX_AMOUNT, true);
 	}
@@ -432,6 +472,46 @@ public class ProductPriceImpl extends EntityIdentifiableImpl implements ProductP
 	@Override
 	public void setTaxAmount(BigDecimal newTaxAmount) {
 		eSet(PricePackage.Literals.PRODUCT_PRICE__TAX_AMOUNT, newTaxAmount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Geo getTaxAuthGeo() {
+		return (Geo)eGet(PricePackage.Literals.PRODUCT_PRICE__TAX_AUTH_GEO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTaxAuthGeo(Geo newTaxAuthGeo) {
+		eSet(PricePackage.Literals.PRODUCT_PRICE__TAX_AUTH_GEO, newTaxAuthGeo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getTaxAuthParty() {
+		return (Party)eGet(PricePackage.Literals.PRODUCT_PRICE__TAX_AUTH_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTaxAuthParty(Party newTaxAuthParty) {
+		eSet(PricePackage.Literals.PRODUCT_PRICE__TAX_AUTH_PARTY, newTaxAuthParty);
 	}
 
 	/**
@@ -460,46 +540,6 @@ public class ProductPriceImpl extends EntityIdentifiableImpl implements ProductP
 	 * @generated
 	 */
 	@Override
-	public Geo getTaxAuthGeoId() {
-		return (Geo)eGet(PricePackage.Literals.PRODUCT_PRICE__TAX_AUTH_GEO_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTaxAuthGeoId(Geo newTaxAuthGeoId) {
-		eSet(PricePackage.Literals.PRODUCT_PRICE__TAX_AUTH_GEO_ID, newTaxAuthGeoId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getTaxAuthPartyId() {
-		return (Party)eGet(PricePackage.Literals.PRODUCT_PRICE__TAX_AUTH_PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTaxAuthPartyId(Party newTaxAuthPartyId) {
-		eSet(PricePackage.Literals.PRODUCT_PRICE__TAX_AUTH_PARTY_ID, newTaxAuthPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public BigDecimal getTaxPercentage() {
 		return (BigDecimal)eGet(PricePackage.Literals.PRODUCT_PRICE__TAX_PERCENTAGE, true);
 	}
@@ -520,8 +560,8 @@ public class ProductPriceImpl extends EntityIdentifiableImpl implements ProductP
 	 * @generated
 	 */
 	@Override
-	public Uom getTermUomId() {
-		return (Uom)eGet(PricePackage.Literals.PRODUCT_PRICE__TERM_UOM_ID, true);
+	public Uom getTermUom() {
+		return (Uom)eGet(PricePackage.Literals.PRODUCT_PRICE__TERM_UOM, true);
 	}
 
 	/**
@@ -530,8 +570,8 @@ public class ProductPriceImpl extends EntityIdentifiableImpl implements ProductP
 	 * @generated
 	 */
 	@Override
-	public void setTermUomId(Uom newTermUomId) {
-		eSet(PricePackage.Literals.PRODUCT_PRICE__TERM_UOM_ID, newTermUomId);
+	public void setTermUom(Uom newTermUom) {
+		eSet(PricePackage.Literals.PRODUCT_PRICE__TERM_UOM, newTermUom);
 	}
 
 	/**
@@ -590,46 +630,6 @@ public class ProductPriceImpl extends EntityIdentifiableImpl implements ProductP
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductPriceType getProductPriceTypeId() {
-		return (ProductPriceType)eGet(PricePackage.Literals.PRODUCT_PRICE__PRODUCT_PRICE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPriceTypeId(ProductPriceType newProductPriceTypeId) {
-		eSet(PricePackage.Literals.PRODUCT_PRICE__PRODUCT_PRICE_TYPE_ID, newProductPriceTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductPricePurpose getProductPricePurposeId() {
-		return (ProductPricePurpose)eGet(PricePackage.Literals.PRODUCT_PRICE__PRODUCT_PRICE_PURPOSE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPricePurposeId(ProductPricePurpose newProductPricePurposeId) {
-		eSet(PricePackage.Literals.PRODUCT_PRICE__PRODUCT_PRICE_PURPOSE_ID, newProductPricePurposeId);
 	}
 
 } //ProductPriceImpl

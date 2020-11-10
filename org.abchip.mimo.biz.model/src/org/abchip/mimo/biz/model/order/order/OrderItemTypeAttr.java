@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemTypeAttr#getOrderItemTypeId <em>Order Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemTypeAttr#getOrderItemType <em>Order Item Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemTypeAttr#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemTypeAttr#getDescription <em>Description</em>}</li>
  * </ul>
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface OrderItemTypeAttr extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Order Item Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Order Item Type</em>' reference.
+	 * @see #setOrderItemType(OrderItemType)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemTypeAttr_OrderItemType()
+	 * @model keys="orderItemTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	OrderItemType getOrderItemType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemTypeAttr#getOrderItemType <em>Order Item Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Order Item Type</em>' reference.
+	 * @see #getOrderItemType()
+	 * @generated
+	 */
+	void setOrderItemType(OrderItemType value);
+
 	/**
 	 * Returns the value of the '<em><b>Attr Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,32 +105,5 @@ public interface OrderItemTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setDescription(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Order Item Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Item Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Item Type Id</em>' reference.
-	 * @see #setOrderItemTypeId(OrderItemType)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemTypeAttr_OrderItemTypeId()
-	 * @model keys="orderItemTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	OrderItemType getOrderItemTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemTypeAttr#getOrderItemTypeId <em>Order Item Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Item Type Id</em>' reference.
-	 * @see #getOrderItemTypeId()
-	 * @generated
-	 */
-	void setOrderItemTypeId(OrderItemType value);
 
 } // OrderItemTypeAttr

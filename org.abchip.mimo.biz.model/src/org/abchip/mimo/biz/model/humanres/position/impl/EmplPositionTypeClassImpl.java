@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeClassImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeClassImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeClassImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeClassImpl#getEmplPositionTypeId <em>Empl Position Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeClassImpl#getEmplPositionClassTypeId <em>Empl Position Class Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeClassImpl#getEmplPositionType <em>Empl Position Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeClassImpl#getEmplPositionClassType <em>Empl Position Class Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeClassImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeClassImpl#getStandardHoursPerWeek <em>Standard Hours Per Week</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeClassImpl#getThruDate <em>Thru Date</em>}</li>
@@ -155,8 +155,8 @@ public class EmplPositionTypeClassImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public EmplPositionClassType getEmplPositionClassTypeId() {
-		return (EmplPositionClassType)eGet(PositionPackage.Literals.EMPL_POSITION_TYPE_CLASS__EMPL_POSITION_CLASS_TYPE_ID, true);
+	public EmplPositionType getEmplPositionType() {
+		return (EmplPositionType)eGet(PositionPackage.Literals.EMPL_POSITION_TYPE_CLASS__EMPL_POSITION_TYPE, true);
 	}
 
 	/**
@@ -165,8 +165,8 @@ public class EmplPositionTypeClassImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setEmplPositionClassTypeId(EmplPositionClassType newEmplPositionClassTypeId) {
-		eSet(PositionPackage.Literals.EMPL_POSITION_TYPE_CLASS__EMPL_POSITION_CLASS_TYPE_ID, newEmplPositionClassTypeId);
+	public void setEmplPositionType(EmplPositionType newEmplPositionType) {
+		eSet(PositionPackage.Literals.EMPL_POSITION_TYPE_CLASS__EMPL_POSITION_TYPE, newEmplPositionType);
 	}
 
 	/**
@@ -175,8 +175,8 @@ public class EmplPositionTypeClassImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public EmplPositionType getEmplPositionTypeId() {
-		return (EmplPositionType)eGet(PositionPackage.Literals.EMPL_POSITION_TYPE_CLASS__EMPL_POSITION_TYPE_ID, true);
+	public EmplPositionClassType getEmplPositionClassType() {
+		return (EmplPositionClassType)eGet(PositionPackage.Literals.EMPL_POSITION_TYPE_CLASS__EMPL_POSITION_CLASS_TYPE, true);
 	}
 
 	/**
@@ -185,8 +185,8 @@ public class EmplPositionTypeClassImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setEmplPositionTypeId(EmplPositionType newEmplPositionTypeId) {
-		eSet(PositionPackage.Literals.EMPL_POSITION_TYPE_CLASS__EMPL_POSITION_TYPE_ID, newEmplPositionTypeId);
+	public void setEmplPositionClassType(EmplPositionClassType newEmplPositionClassType) {
+		eSet(PositionPackage.Literals.EMPL_POSITION_TYPE_CLASS__EMPL_POSITION_CLASS_TYPE, newEmplPositionClassType);
 	}
 
 	/**

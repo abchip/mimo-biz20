@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getWorkEffortSearchResultId <em>Work Effort Search Result Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getWorkEffortSearchResult <em>Work Effort Search Result</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getConstraintSeqId <em>Constraint Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getAnyPrefix <em>Any Prefix</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getAnySuffix <em>Any Suffix</em>}</li>
@@ -37,6 +37,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface WorkEffortSearchConstraint extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Work Effort Search Result</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Work Effort Search Result</em>' reference.
+	 * @see #setWorkEffortSearchResult(WorkEffortSearchResult)
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortSearchConstraint_WorkEffortSearchResult()
+	 * @model keys="workEffortSearchResultId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	WorkEffortSearchResult getWorkEffortSearchResult();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getWorkEffortSearchResult <em>Work Effort Search Result</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Work Effort Search Result</em>' reference.
+	 * @see #getWorkEffortSearchResult()
+	 * @generated
+	 */
+	void setWorkEffortSearchResult(WorkEffortSearchResult value);
+
 	/**
 	 * Returns the value of the '<em><b>Constraint Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -286,32 +309,5 @@ public interface WorkEffortSearchConstraint extends EntityIdentifiable, EntityIn
 	 * @generated
 	 */
 	void setRemoveStems(Boolean value);
-
-	/**
-	 * Returns the value of the '<em><b>Work Effort Search Result Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Work Effort Search Result Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Work Effort Search Result Id</em>' reference.
-	 * @see #setWorkEffortSearchResultId(WorkEffortSearchResult)
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortSearchConstraint_WorkEffortSearchResultId()
-	 * @model keys="workEffortSearchResultId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	WorkEffortSearchResult getWorkEffortSearchResultId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getWorkEffortSearchResultId <em>Work Effort Search Result Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Work Effort Search Result Id</em>' reference.
-	 * @see #getWorkEffortSearchResultId()
-	 * @generated
-	 */
-	void setWorkEffortSearchResultId(WorkEffortSearchResult value);
 
 } // WorkEffortSearchConstraint

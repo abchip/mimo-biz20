@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/model/security/securitygroup" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="007_entityext_EntityExtSecurityGroupDemoData">
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FULLADMIN"/>
-    <permissionId href="SecurityPermission#ENTITY_SYNC_ADMIN"/>
+    <group href="SecurityGroup#FULLADMIN"/>
+    <permission href="SecurityPermission#ENTITY_SYNC_ADMIN"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#FLEXADMIN"/>
-    <permissionId href="SecurityPermission#ENTITY_SYNC_ADMIN"/>
+    <group href="SecurityGroup#FLEXADMIN"/>
+    <permission href="SecurityPermission#ENTITY_SYNC_ADMIN"/>
   </contents>
 </mimo-ent:EntityContainer>

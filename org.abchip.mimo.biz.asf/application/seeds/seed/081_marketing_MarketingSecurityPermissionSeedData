@@ -15,11 +15,11 @@
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="SFA_ROLE_VIEW" description="Limited view operations in the SFA Manager."/>
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="SFA_ROLE_UPDATE" description="Limited update operations in the SFA Manager."/>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#MARKETING_ADMIN"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#MARKETING_ADMIN"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#SFA_ADMIN"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#SFA_ADMIN"/>
   </contents>
 </mimo-ent:EntityContainer>

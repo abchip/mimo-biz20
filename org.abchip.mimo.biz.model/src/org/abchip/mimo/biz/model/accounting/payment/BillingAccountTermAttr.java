@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTermAttr#getBillingAccountTermId <em>Billing Account Term Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTermAttr#getBillingAccountTerm <em>Billing Account Term</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTermAttr#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTermAttr#getAttrValue <em>Attr Value</em>}</li>
  * </ul>
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface BillingAccountTermAttr extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Billing Account Term</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Billing Account Term</em>' reference.
+	 * @see #setBillingAccountTerm(BillingAccountTerm)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccountTermAttr_BillingAccountTerm()
+	 * @model keys="billingAccountTermId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	BillingAccountTerm getBillingAccountTerm();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTermAttr#getBillingAccountTerm <em>Billing Account Term</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Billing Account Term</em>' reference.
+	 * @see #getBillingAccountTerm()
+	 * @generated
+	 */
+	void setBillingAccountTerm(BillingAccountTerm value);
+
 	/**
 	 * Returns the value of the '<em><b>Attr Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,32 +105,5 @@ public interface BillingAccountTermAttr extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setAttrValue(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Billing Account Term Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Billing Account Term Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Billing Account Term Id</em>' reference.
-	 * @see #setBillingAccountTermId(BillingAccountTerm)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccountTermAttr_BillingAccountTermId()
-	 * @model keys="billingAccountTermId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	BillingAccountTerm getBillingAccountTermId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTermAttr#getBillingAccountTermId <em>Billing Account Term Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Billing Account Term Id</em>' reference.
-	 * @see #getBillingAccountTermId()
-	 * @generated
-	 */
-	void setBillingAccountTermId(BillingAccountTerm value);
 
 } // BillingAccountTermAttr

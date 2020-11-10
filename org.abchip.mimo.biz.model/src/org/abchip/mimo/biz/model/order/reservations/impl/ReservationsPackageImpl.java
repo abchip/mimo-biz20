@@ -684,7 +684,7 @@ public class ReservationsPackageImpl extends EPackageImpl implements Reservation
 	 * @generated
 	 */
 	@Override
-	public EReference getAccommodationSpot_AccommodationClassId() {
+	public EReference getAccommodationSpot_AccommodationClass() {
 		return (EReference)accommodationSpotEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -704,7 +704,7 @@ public class ReservationsPackageImpl extends EPackageImpl implements Reservation
 	 * @generated
 	 */
 	@Override
-	public EReference getAccommodationSpot_FixedAssetId() {
+	public EReference getAccommodationSpot_FixedAsset() {
 		return (EReference)accommodationSpotEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -749,9 +749,9 @@ public class ReservationsPackageImpl extends EPackageImpl implements Reservation
 		// Create classes and their features
 		accommodationSpotEClass = createEClass(ACCOMMODATION_SPOT);
 		createEAttribute(accommodationSpotEClass, ACCOMMODATION_SPOT__ACCOMMODATION_SPOT_ID);
-		createEReference(accommodationSpotEClass, ACCOMMODATION_SPOT__ACCOMMODATION_CLASS_ID);
+		createEReference(accommodationSpotEClass, ACCOMMODATION_SPOT__ACCOMMODATION_CLASS);
 		createEAttribute(accommodationSpotEClass, ACCOMMODATION_SPOT__DESCRIPTION);
-		createEReference(accommodationSpotEClass, ACCOMMODATION_SPOT__FIXED_ASSET_ID);
+		createEReference(accommodationSpotEClass, ACCOMMODATION_SPOT__FIXED_ASSET);
 		createEAttribute(accommodationSpotEClass, ACCOMMODATION_SPOT__NUMBER_OF_SPACES);
 	}
 
@@ -793,11 +793,11 @@ public class ReservationsPackageImpl extends EPackageImpl implements Reservation
 		// Initialize classes and features; add operations and parameters
 		initEClass(accommodationSpotEClass, AccommodationSpot.class, "AccommodationSpot", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAccommodationSpot_AccommodationSpotId(), ecorePackage.getEString(), "accommodationSpotId", null, 1, 1, AccommodationSpot.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAccommodationSpot_AccommodationClassId(), theFixedassetPackage.getAccommodationClass(), null, "accommodationClassId", null, 0, 1, AccommodationSpot.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAccommodationSpot_AccommodationClassId().getEKeys().add(theFixedassetPackage.getAccommodationClass_AccommodationClassId());
+		initEReference(getAccommodationSpot_AccommodationClass(), theFixedassetPackage.getAccommodationClass(), null, "accommodationClass", null, 0, 1, AccommodationSpot.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getAccommodationSpot_AccommodationClass().getEKeys().add(theFixedassetPackage.getAccommodationClass_AccommodationClassId());
 		initEAttribute(getAccommodationSpot_Description(), ecorePackage.getEString(), "description", null, 0, 1, AccommodationSpot.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAccommodationSpot_FixedAssetId(), theFixedassetPackage.getFixedAsset(), null, "fixedAssetId", null, 0, 1, AccommodationSpot.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAccommodationSpot_FixedAssetId().getEKeys().add(theFixedassetPackage.getFixedAsset_FixedAssetId());
+		initEReference(getAccommodationSpot_FixedAsset(), theFixedassetPackage.getFixedAsset(), null, "fixedAsset", null, 0, 1, AccommodationSpot.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getAccommodationSpot_FixedAsset().getEKeys().add(theFixedassetPackage.getFixedAsset_FixedAssetId());
 		initEAttribute(getAccommodationSpot_NumberOfSpaces(), ecorePackage.getELong(), "numberOfSpaces", null, 0, 1, AccommodationSpot.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource

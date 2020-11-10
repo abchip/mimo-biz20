@@ -32,6 +32,18 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
 
 public class EntityUtils {
 
+	public static Slot getSlot(Frame<?> frame, String field) {
+
+		Slot slot = frame.getSlot(field);
+		if (slot == null && field.endsWith("Id")) {
+			slot = frame.getSlot(field.substring(0, field.length() - 2));
+			if (slot != null && slot.getDomain() == null)
+				slot = null;
+		}
+
+		return slot;
+	}
+
 	// from entity -> ofbiz
 	public static GenericValue toBizEntity(Delegator delegator, EntityIdentifiable entity) throws GeneralException {
 		return toBizEntity(delegator, entity.isa(), entity);
@@ -46,13 +58,16 @@ public class EntityUtils {
 		Iterator<ModelField> fieldIterator = genericValue.getModelEntity().getFieldsIterator();
 		while (fieldIterator.hasNext()) {
 			ModelField field = fieldIterator.next();
+			Slot slot = EntityUtils.getSlot(frame, field.getName());
+			if (slot == null)
+				continue;
 
-			Object value = frame.getValue(entity, field.getName(), false, false);
+			Object value = frame.getValue(entity, slot, false, false);
 			if (UtilValidate.isEmpty(value))
 				continue;
 
 			ModelFieldType type = modelHelper.getModelFieldType(field.getType());
-			value = toBizValue(type.getJavaType(), frame.getSlot(field.getName()), value);
+			value = toBizValue(type.getJavaType(), slot, value);
 			genericValue.set(field.getName(), value);
 		}
 
@@ -97,13 +112,13 @@ public class EntityUtils {
 			if (UtilValidate.isEmpty(value))
 				continue;
 
-			Slot slot = frame.getSlot(entry.getKey());
+			Slot slot = EntityUtils.getSlot(frame, entry.getKey());
 			if (slot == null)
 				continue;
 
 			value = toValue(slot, value);
 
-			frame.setValue(entity, slot.getName(), value);
+			frame.setValue(entity, slot, value);
 		}
 	}
 

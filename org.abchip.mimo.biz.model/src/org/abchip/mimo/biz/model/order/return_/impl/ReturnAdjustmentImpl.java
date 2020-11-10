@@ -51,24 +51,24 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getIncludeInTax <em>Include In Tax</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getOrderAdjustmentId <em>Order Adjustment Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getOverrideGlAccountId <em>Override Gl Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getPrimaryGeoId <em>Primary Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getOrderAdjustment <em>Order Adjustment</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getOverrideGlAccount <em>Override Gl Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getPrimaryGeo <em>Primary Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getProductFeatureId <em>Product Feature Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getProductPromo <em>Product Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getProductPromoActionSeqId <em>Product Promo Action Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getProductPromoId <em>Product Promo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getProductPromoRuleId <em>Product Promo Rule Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getReturnAdjustmentTypeId <em>Return Adjustment Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getReturnId <em>Return Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getReturn <em>Return</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getReturnAdjustmentType <em>Return Adjustment Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getReturnItemSeqId <em>Return Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getReturnTypeId <em>Return Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getSecondaryGeoId <em>Secondary Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getReturnType <em>Return Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getSecondaryGeo <em>Secondary Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getShipGroupSeqId <em>Ship Group Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getSourcePercentage <em>Source Percentage</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getSourceReferenceId <em>Source Reference Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getTaxAuthPartyId <em>Tax Auth Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getTaxAuthorityRateSeqId <em>Tax Authority Rate Seq Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getTaxAuthorityRateSeq <em>Tax Authority Rate Seq</em>}</li>
  * </ul>
  *
  * @generated
@@ -430,8 +430,8 @@ public class ReturnAdjustmentImpl extends EntityTypedImpl<ReturnAdjustmentType> 
 	 * @generated
 	 */
 	@Override
-	public OrderAdjustment getOrderAdjustmentId() {
-		return (OrderAdjustment)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__ORDER_ADJUSTMENT_ID, true);
+	public OrderAdjustment getOrderAdjustment() {
+		return (OrderAdjustment)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__ORDER_ADJUSTMENT, true);
 	}
 
 	/**
@@ -440,8 +440,8 @@ public class ReturnAdjustmentImpl extends EntityTypedImpl<ReturnAdjustmentType> 
 	 * @generated
 	 */
 	@Override
-	public void setOrderAdjustmentId(OrderAdjustment newOrderAdjustmentId) {
-		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__ORDER_ADJUSTMENT_ID, newOrderAdjustmentId);
+	public void setOrderAdjustment(OrderAdjustment newOrderAdjustment) {
+		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__ORDER_ADJUSTMENT, newOrderAdjustment);
 	}
 
 	/**
@@ -450,8 +450,8 @@ public class ReturnAdjustmentImpl extends EntityTypedImpl<ReturnAdjustmentType> 
 	 * @generated
 	 */
 	@Override
-	public GlAccount getOverrideGlAccountId() {
-		return (GlAccount)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__OVERRIDE_GL_ACCOUNT_ID, true);
+	public GlAccount getOverrideGlAccount() {
+		return (GlAccount)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__OVERRIDE_GL_ACCOUNT, true);
 	}
 
 	/**
@@ -460,8 +460,8 @@ public class ReturnAdjustmentImpl extends EntityTypedImpl<ReturnAdjustmentType> 
 	 * @generated
 	 */
 	@Override
-	public void setOverrideGlAccountId(GlAccount newOverrideGlAccountId) {
-		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__OVERRIDE_GL_ACCOUNT_ID, newOverrideGlAccountId);
+	public void setOverrideGlAccount(GlAccount newOverrideGlAccount) {
+		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__OVERRIDE_GL_ACCOUNT, newOverrideGlAccount);
 	}
 
 	/**
@@ -470,8 +470,8 @@ public class ReturnAdjustmentImpl extends EntityTypedImpl<ReturnAdjustmentType> 
 	 * @generated
 	 */
 	@Override
-	public Geo getPrimaryGeoId() {
-		return (Geo)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__PRIMARY_GEO_ID, true);
+	public Geo getPrimaryGeo() {
+		return (Geo)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__PRIMARY_GEO, true);
 	}
 
 	/**
@@ -480,8 +480,8 @@ public class ReturnAdjustmentImpl extends EntityTypedImpl<ReturnAdjustmentType> 
 	 * @generated
 	 */
 	@Override
-	public void setPrimaryGeoId(Geo newPrimaryGeoId) {
-		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__PRIMARY_GEO_ID, newPrimaryGeoId);
+	public void setPrimaryGeo(Geo newPrimaryGeo) {
+		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__PRIMARY_GEO, newPrimaryGeo);
 	}
 
 	/**
@@ -510,6 +510,26 @@ public class ReturnAdjustmentImpl extends EntityTypedImpl<ReturnAdjustmentType> 
 	 * @generated
 	 */
 	@Override
+	public ProductPromo getProductPromo() {
+		return (ProductPromo)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__PRODUCT_PROMO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPromo(ProductPromo newProductPromo) {
+		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__PRODUCT_PROMO, newProductPromo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getProductPromoActionSeqId() {
 		return (String)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__PRODUCT_PROMO_ACTION_SEQ_ID, true);
 	}
@@ -522,26 +542,6 @@ public class ReturnAdjustmentImpl extends EntityTypedImpl<ReturnAdjustmentType> 
 	@Override
 	public void setProductPromoActionSeqId(String newProductPromoActionSeqId) {
 		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__PRODUCT_PROMO_ACTION_SEQ_ID, newProductPromoActionSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductPromo getProductPromoId() {
-		return (ProductPromo)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__PRODUCT_PROMO_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPromoId(ProductPromo newProductPromoId) {
-		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__PRODUCT_PROMO_ID, newProductPromoId);
 	}
 
 	/**
@@ -570,6 +570,46 @@ public class ReturnAdjustmentImpl extends EntityTypedImpl<ReturnAdjustmentType> 
 	 * @generated
 	 */
 	@Override
+	public ReturnHeader getReturn() {
+		return (ReturnHeader)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__RETURN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setReturn(ReturnHeader newReturn) {
+		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__RETURN, newReturn);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ReturnAdjustmentType getReturnAdjustmentType() {
+		return (ReturnAdjustmentType)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__RETURN_ADJUSTMENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setReturnAdjustmentType(ReturnAdjustmentType newReturnAdjustmentType) {
+		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__RETURN_ADJUSTMENT_TYPE, newReturnAdjustmentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getReturnAdjustmentId() {
 		return (String)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__RETURN_ADJUSTMENT_ID, true);
 	}
@@ -582,46 +622,6 @@ public class ReturnAdjustmentImpl extends EntityTypedImpl<ReturnAdjustmentType> 
 	@Override
 	public void setReturnAdjustmentId(String newReturnAdjustmentId) {
 		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__RETURN_ADJUSTMENT_ID, newReturnAdjustmentId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ReturnAdjustmentType getReturnAdjustmentTypeId() {
-		return (ReturnAdjustmentType)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__RETURN_ADJUSTMENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setReturnAdjustmentTypeId(ReturnAdjustmentType newReturnAdjustmentTypeId) {
-		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__RETURN_ADJUSTMENT_TYPE_ID, newReturnAdjustmentTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ReturnHeader getReturnId() {
-		return (ReturnHeader)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__RETURN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setReturnId(ReturnHeader newReturnId) {
-		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__RETURN_ID, newReturnId);
 	}
 
 	/**
@@ -650,8 +650,8 @@ public class ReturnAdjustmentImpl extends EntityTypedImpl<ReturnAdjustmentType> 
 	 * @generated
 	 */
 	@Override
-	public ReturnType getReturnTypeId() {
-		return (ReturnType)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__RETURN_TYPE_ID, true);
+	public ReturnType getReturnType() {
+		return (ReturnType)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__RETURN_TYPE, true);
 	}
 
 	/**
@@ -660,8 +660,8 @@ public class ReturnAdjustmentImpl extends EntityTypedImpl<ReturnAdjustmentType> 
 	 * @generated
 	 */
 	@Override
-	public void setReturnTypeId(ReturnType newReturnTypeId) {
-		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__RETURN_TYPE_ID, newReturnTypeId);
+	public void setReturnType(ReturnType newReturnType) {
+		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__RETURN_TYPE, newReturnType);
 	}
 
 	/**
@@ -670,8 +670,8 @@ public class ReturnAdjustmentImpl extends EntityTypedImpl<ReturnAdjustmentType> 
 	 * @generated
 	 */
 	@Override
-	public Geo getSecondaryGeoId() {
-		return (Geo)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__SECONDARY_GEO_ID, true);
+	public Geo getSecondaryGeo() {
+		return (Geo)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__SECONDARY_GEO, true);
 	}
 
 	/**
@@ -680,8 +680,8 @@ public class ReturnAdjustmentImpl extends EntityTypedImpl<ReturnAdjustmentType> 
 	 * @generated
 	 */
 	@Override
-	public void setSecondaryGeoId(Geo newSecondaryGeoId) {
-		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__SECONDARY_GEO_ID, newSecondaryGeoId);
+	public void setSecondaryGeo(Geo newSecondaryGeo) {
+		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__SECONDARY_GEO, newSecondaryGeo);
 	}
 
 	/**
@@ -790,8 +790,8 @@ public class ReturnAdjustmentImpl extends EntityTypedImpl<ReturnAdjustmentType> 
 	 * @generated
 	 */
 	@Override
-	public TaxAuthorityRateProduct getTaxAuthorityRateSeqId() {
-		return (TaxAuthorityRateProduct)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__TAX_AUTHORITY_RATE_SEQ_ID, true);
+	public TaxAuthorityRateProduct getTaxAuthorityRateSeq() {
+		return (TaxAuthorityRateProduct)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__TAX_AUTHORITY_RATE_SEQ, true);
 	}
 
 	/**
@@ -800,8 +800,8 @@ public class ReturnAdjustmentImpl extends EntityTypedImpl<ReturnAdjustmentType> 
 	 * @generated
 	 */
 	@Override
-	public void setTaxAuthorityRateSeqId(TaxAuthorityRateProduct newTaxAuthorityRateSeqId) {
-		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__TAX_AUTHORITY_RATE_SEQ_ID, newTaxAuthorityRateSeqId);
+	public void setTaxAuthorityRateSeq(TaxAuthorityRateProduct newTaxAuthorityRateSeq) {
+		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__TAX_AUTHORITY_RATE_SEQ, newTaxAuthorityRateSeq);
 	}
 
 	/**

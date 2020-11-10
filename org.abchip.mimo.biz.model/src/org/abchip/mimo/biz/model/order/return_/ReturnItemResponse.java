@@ -28,11 +28,11 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getReturnItemResponseId <em>Return Item Response Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getBillingAccountId <em>Billing Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getFinAccountTransId <em>Fin Account Trans Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getOrderPaymentPreferenceId <em>Order Payment Preference Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getPaymentId <em>Payment Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getReplacementOrderId <em>Replacement Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getBillingAccount <em>Billing Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getFinAccountTrans <em>Fin Account Trans</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getOrderPaymentPreference <em>Order Payment Preference</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getPayment <em>Payment</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getReplacementOrder <em>Replacement Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getResponseAmount <em>Response Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getResponseDate <em>Response Date</em>}</li>
  * </ul>
@@ -42,136 +42,6 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ReturnItemResponse extends EntityIdentifiable, EntityInfo {
-	/**
-	 * Returns the value of the '<em><b>Billing Account Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Billing Account Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Billing Account Id</em>' reference.
-	 * @see #setBillingAccountId(BillingAccount)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemResponse_BillingAccountId()
-	 * @model keys="billingAccountId"
-	 * @generated
-	 */
-	BillingAccount getBillingAccountId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getBillingAccountId <em>Billing Account Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Billing Account Id</em>' reference.
-	 * @see #getBillingAccountId()
-	 * @generated
-	 */
-	void setBillingAccountId(BillingAccount value);
-
-	/**
-	 * Returns the value of the '<em><b>Fin Account Trans Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fin Account Trans Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fin Account Trans Id</em>' reference.
-	 * @see #setFinAccountTransId(FinAccountTrans)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemResponse_FinAccountTransId()
-	 * @model keys="finAccountTransId"
-	 * @generated
-	 */
-	FinAccountTrans getFinAccountTransId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getFinAccountTransId <em>Fin Account Trans Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fin Account Trans Id</em>' reference.
-	 * @see #getFinAccountTransId()
-	 * @generated
-	 */
-	void setFinAccountTransId(FinAccountTrans value);
-
-	/**
-	 * Returns the value of the '<em><b>Order Payment Preference Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Payment Preference Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Payment Preference Id</em>' reference.
-	 * @see #setOrderPaymentPreferenceId(OrderPaymentPreference)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemResponse_OrderPaymentPreferenceId()
-	 * @model keys="orderPaymentPreferenceId"
-	 * @generated
-	 */
-	OrderPaymentPreference getOrderPaymentPreferenceId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getOrderPaymentPreferenceId <em>Order Payment Preference Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Payment Preference Id</em>' reference.
-	 * @see #getOrderPaymentPreferenceId()
-	 * @generated
-	 */
-	void setOrderPaymentPreferenceId(OrderPaymentPreference value);
-
-	/**
-	 * Returns the value of the '<em><b>Payment Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Payment Id</em>' reference.
-	 * @see #setPaymentId(Payment)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemResponse_PaymentId()
-	 * @model keys="paymentId"
-	 * @generated
-	 */
-	Payment getPaymentId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getPaymentId <em>Payment Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Payment Id</em>' reference.
-	 * @see #getPaymentId()
-	 * @generated
-	 */
-	void setPaymentId(Payment value);
-
-	/**
-	 * Returns the value of the '<em><b>Replacement Order Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Replacement Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Replacement Order Id</em>' reference.
-	 * @see #setReplacementOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemResponse_ReplacementOrderId()
-	 * @model keys="orderId"
-	 * @generated
-	 */
-	OrderHeader getReplacementOrderId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getReplacementOrderId <em>Replacement Order Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Replacement Order Id</em>' reference.
-	 * @see #getReplacementOrderId()
-	 * @generated
-	 */
-	void setReplacementOrderId(OrderHeader value);
-
 	/**
 	 * Returns the value of the '<em><b>Response Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -250,5 +120,115 @@ public interface ReturnItemResponse extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setReturnItemResponseId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Billing Account</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Billing Account</em>' reference.
+	 * @see #setBillingAccount(BillingAccount)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemResponse_BillingAccount()
+	 * @model keys="billingAccountId"
+	 * @generated
+	 */
+	BillingAccount getBillingAccount();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getBillingAccount <em>Billing Account</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Billing Account</em>' reference.
+	 * @see #getBillingAccount()
+	 * @generated
+	 */
+	void setBillingAccount(BillingAccount value);
+
+	/**
+	 * Returns the value of the '<em><b>Fin Account Trans</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fin Account Trans</em>' reference.
+	 * @see #setFinAccountTrans(FinAccountTrans)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemResponse_FinAccountTrans()
+	 * @model keys="finAccountTransId"
+	 * @generated
+	 */
+	FinAccountTrans getFinAccountTrans();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getFinAccountTrans <em>Fin Account Trans</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Fin Account Trans</em>' reference.
+	 * @see #getFinAccountTrans()
+	 * @generated
+	 */
+	void setFinAccountTrans(FinAccountTrans value);
+
+	/**
+	 * Returns the value of the '<em><b>Order Payment Preference</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Order Payment Preference</em>' reference.
+	 * @see #setOrderPaymentPreference(OrderPaymentPreference)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemResponse_OrderPaymentPreference()
+	 * @model keys="orderPaymentPreferenceId"
+	 * @generated
+	 */
+	OrderPaymentPreference getOrderPaymentPreference();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getOrderPaymentPreference <em>Order Payment Preference</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Order Payment Preference</em>' reference.
+	 * @see #getOrderPaymentPreference()
+	 * @generated
+	 */
+	void setOrderPaymentPreference(OrderPaymentPreference value);
+
+	/**
+	 * Returns the value of the '<em><b>Payment</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Payment</em>' reference.
+	 * @see #setPayment(Payment)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemResponse_Payment()
+	 * @model keys="paymentId"
+	 * @generated
+	 */
+	Payment getPayment();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getPayment <em>Payment</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Payment</em>' reference.
+	 * @see #getPayment()
+	 * @generated
+	 */
+	void setPayment(Payment value);
+
+	/**
+	 * Returns the value of the '<em><b>Replacement Order</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Replacement Order</em>' reference.
+	 * @see #setReplacementOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemResponse_ReplacementOrder()
+	 * @model keys="orderId"
+	 * @generated
+	 */
+	OrderHeader getReplacementOrder();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItemResponse#getReplacementOrder <em>Replacement Order</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Replacement Order</em>' reference.
+	 * @see #getReplacementOrder()
+	 * @generated
+	 */
+	void setReplacementOrder(OrderHeader value);
 
 } // ReturnItemResponse

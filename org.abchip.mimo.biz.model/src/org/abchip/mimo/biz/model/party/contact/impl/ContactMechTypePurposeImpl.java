@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ContactMechTypePurposeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ContactMechTypePurposeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ContactMechTypePurposeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ContactMechTypePurposeImpl#getContactMechTypeId <em>Contact Mech Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ContactMechTypePurposeImpl#getContactMechPurposeTypeId <em>Contact Mech Purpose Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ContactMechTypePurposeImpl#getContactMechType <em>Contact Mech Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.ContactMechTypePurposeImpl#getContactMechPurposeType <em>Contact Mech Purpose Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -151,8 +151,8 @@ public class ContactMechTypePurposeImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public ContactMechType getContactMechTypeId() {
-		return (ContactMechType)eGet(ContactPackage.Literals.CONTACT_MECH_TYPE_PURPOSE__CONTACT_MECH_TYPE_ID, true);
+	public ContactMechType getContactMechType() {
+		return (ContactMechType)eGet(ContactPackage.Literals.CONTACT_MECH_TYPE_PURPOSE__CONTACT_MECH_TYPE, true);
 	}
 
 	/**
@@ -161,8 +161,8 @@ public class ContactMechTypePurposeImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setContactMechTypeId(ContactMechType newContactMechTypeId) {
-		eSet(ContactPackage.Literals.CONTACT_MECH_TYPE_PURPOSE__CONTACT_MECH_TYPE_ID, newContactMechTypeId);
+	public void setContactMechType(ContactMechType newContactMechType) {
+		eSet(ContactPackage.Literals.CONTACT_MECH_TYPE_PURPOSE__CONTACT_MECH_TYPE, newContactMechType);
 	}
 
 	/**
@@ -171,8 +171,8 @@ public class ContactMechTypePurposeImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public ContactMechPurposeType getContactMechPurposeTypeId() {
-		return (ContactMechPurposeType)eGet(ContactPackage.Literals.CONTACT_MECH_TYPE_PURPOSE__CONTACT_MECH_PURPOSE_TYPE_ID, true);
+	public ContactMechPurposeType getContactMechPurposeType() {
+		return (ContactMechPurposeType)eGet(ContactPackage.Literals.CONTACT_MECH_TYPE_PURPOSE__CONTACT_MECH_PURPOSE_TYPE, true);
 	}
 
 	/**
@@ -181,8 +181,8 @@ public class ContactMechTypePurposeImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setContactMechPurposeTypeId(ContactMechPurposeType newContactMechPurposeTypeId) {
-		eSet(ContactPackage.Literals.CONTACT_MECH_TYPE_PURPOSE__CONTACT_MECH_PURPOSE_TYPE_ID, newContactMechPurposeTypeId);
+	public void setContactMechPurposeType(ContactMechPurposeType newContactMechPurposeType) {
+		eSet(ContactPackage.Literals.CONTACT_MECH_TYPE_PURPOSE__CONTACT_MECH_PURPOSE_TYPE, newContactMechPurposeType);
 	}
 
 	/**

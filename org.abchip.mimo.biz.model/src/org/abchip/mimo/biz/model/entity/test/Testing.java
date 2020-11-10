@@ -28,7 +28,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.Testing#getTestingItems <em>Testing Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.Testing#getTestingName <em>Testing Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.Testing#getTestingSize <em>Testing Size</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.test.Testing#getTestingTypeId <em>Testing Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.test.Testing#getTestingType <em>Testing Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTesting()
@@ -211,29 +211,25 @@ public interface Testing extends EntityTyped<TestingType>, EntityInfo {
 	void setTestingSize(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Testing Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Testing Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Testing Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Testing Type Id</em>' reference.
-	 * @see #setTestingTypeId(TestingType)
-	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTesting_TestingTypeId()
+	 * @return the value of the '<em>Testing Type</em>' reference.
+	 * @see #setTestingType(TestingType)
+	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTesting_TestingType()
 	 * @model keys="testingTypeId"
 	 * @generated
 	 */
-	TestingType getTestingTypeId();
+	TestingType getTestingType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.test.Testing#getTestingTypeId <em>Testing Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.test.Testing#getTestingType <em>Testing Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Testing Type Id</em>' reference.
-	 * @see #getTestingTypeId()
+	 * @param value the new value of the '<em>Testing Type</em>' reference.
+	 * @see #getTestingType()
 	 * @generated
 	 */
-	void setTestingTypeId(TestingType value);
+	void setTestingType(TestingType value);
 
 } // Testing

@@ -40,25 +40,25 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getInvoiceId <em>Invoice Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getInvoice <em>Invoice</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getInvoiceItemSeqId <em>Invoice Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getAmount <em>Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getInventoryItemId <em>Inventory Item Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getInvoiceItemTypeId <em>Invoice Item Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getOverrideGlAccountId <em>Override Gl Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getOverrideOrgPartyId <em>Override Org Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getInventoryItem <em>Inventory Item</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getInvoiceItemType <em>Invoice Item Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getOverrideGlAccount <em>Override Gl Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getOverrideOrgParty <em>Override Org Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getParentInvoiceId <em>Parent Invoice Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getParentInvoiceItemSeqId <em>Parent Invoice Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getProductFeatureId <em>Product Feature Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getProductFeature <em>Product Feature</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getQuantity <em>Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getSalesOpportunityId <em>Sales Opportunity Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getTaxAuthPartyId <em>Tax Auth Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getTaxAuthorityRateSeqId <em>Tax Authority Rate Seq Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getSalesOpportunity <em>Sales Opportunity</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getTaxAuthGeo <em>Tax Auth Geo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getTaxAuthParty <em>Tax Auth Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getTaxAuthorityRateSeq <em>Tax Authority Rate Seq</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#isTaxableFlag <em>Taxable Flag</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getUomId <em>Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl#getUom <em>Uom</em>}</li>
  * </ul>
  *
  * @generated
@@ -179,6 +179,26 @@ public class InvoiceItemImpl extends EntityTypedImpl<InvoiceItemType> implements
 	 * @generated
 	 */
 	@Override
+	public Invoice getInvoice() {
+		return (Invoice)eGet(InvoicePackage.Literals.INVOICE_ITEM__INVOICE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInvoice(Invoice newInvoice) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM__INVOICE, newInvoice);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAmount() {
 		return (BigDecimal)eGet(InvoicePackage.Literals.INVOICE_ITEM__AMOUNT, true);
 	}
@@ -219,8 +239,8 @@ public class InvoiceItemImpl extends EntityTypedImpl<InvoiceItemType> implements
 	 * @generated
 	 */
 	@Override
-	public InventoryItem getInventoryItemId() {
-		return (InventoryItem)eGet(InvoicePackage.Literals.INVOICE_ITEM__INVENTORY_ITEM_ID, true);
+	public InventoryItem getInventoryItem() {
+		return (InventoryItem)eGet(InvoicePackage.Literals.INVOICE_ITEM__INVENTORY_ITEM, true);
 	}
 
 	/**
@@ -229,8 +249,68 @@ public class InvoiceItemImpl extends EntityTypedImpl<InvoiceItemType> implements
 	 * @generated
 	 */
 	@Override
-	public void setInventoryItemId(InventoryItem newInventoryItemId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM__INVENTORY_ITEM_ID, newInventoryItemId);
+	public void setInventoryItem(InventoryItem newInventoryItem) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM__INVENTORY_ITEM, newInventoryItem);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public InvoiceItemType getInvoiceItemType() {
+		return (InvoiceItemType)eGet(InvoicePackage.Literals.INVOICE_ITEM__INVOICE_ITEM_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInvoiceItemType(InvoiceItemType newInvoiceItemType) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM__INVOICE_ITEM_TYPE, newInvoiceItemType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GlAccount getOverrideGlAccount() {
+		return (GlAccount)eGet(InvoicePackage.Literals.INVOICE_ITEM__OVERRIDE_GL_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOverrideGlAccount(GlAccount newOverrideGlAccount) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM__OVERRIDE_GL_ACCOUNT, newOverrideGlAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getOverrideOrgParty() {
+		return (Party)eGet(InvoicePackage.Literals.INVOICE_ITEM__OVERRIDE_ORG_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOverrideOrgParty(Party newOverrideOrgParty) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM__OVERRIDE_ORG_PARTY, newOverrideOrgParty);
 	}
 
 	/**
@@ -251,46 +331,6 @@ public class InvoiceItemImpl extends EntityTypedImpl<InvoiceItemType> implements
 	@Override
 	public void setInvoiceItemSeqId(String newInvoiceItemSeqId) {
 		eSet(InvoicePackage.Literals.INVOICE_ITEM__INVOICE_ITEM_SEQ_ID, newInvoiceItemSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GlAccount getOverrideGlAccountId() {
-		return (GlAccount)eGet(InvoicePackage.Literals.INVOICE_ITEM__OVERRIDE_GL_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOverrideGlAccountId(GlAccount newOverrideGlAccountId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM__OVERRIDE_GL_ACCOUNT_ID, newOverrideGlAccountId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getOverrideOrgPartyId() {
-		return (Party)eGet(InvoicePackage.Literals.INVOICE_ITEM__OVERRIDE_ORG_PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOverrideOrgPartyId(Party newOverrideOrgPartyId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM__OVERRIDE_ORG_PARTY_ID, newOverrideOrgPartyId);
 	}
 
 	/**
@@ -339,8 +379,8 @@ public class InvoiceItemImpl extends EntityTypedImpl<InvoiceItemType> implements
 	 * @generated
 	 */
 	@Override
-	public ProductFeature getProductFeatureId() {
-		return (ProductFeature)eGet(InvoicePackage.Literals.INVOICE_ITEM__PRODUCT_FEATURE_ID, true);
+	public Product getProduct() {
+		return (Product)eGet(InvoicePackage.Literals.INVOICE_ITEM__PRODUCT, true);
 	}
 
 	/**
@@ -349,8 +389,8 @@ public class InvoiceItemImpl extends EntityTypedImpl<InvoiceItemType> implements
 	 * @generated
 	 */
 	@Override
-	public void setProductFeatureId(ProductFeature newProductFeatureId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM__PRODUCT_FEATURE_ID, newProductFeatureId);
+	public void setProduct(Product newProduct) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM__PRODUCT, newProduct);
 	}
 
 	/**
@@ -359,8 +399,8 @@ public class InvoiceItemImpl extends EntityTypedImpl<InvoiceItemType> implements
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(InvoicePackage.Literals.INVOICE_ITEM__PRODUCT_ID, true);
+	public ProductFeature getProductFeature() {
+		return (ProductFeature)eGet(InvoicePackage.Literals.INVOICE_ITEM__PRODUCT_FEATURE, true);
 	}
 
 	/**
@@ -369,8 +409,8 @@ public class InvoiceItemImpl extends EntityTypedImpl<InvoiceItemType> implements
 	 * @generated
 	 */
 	@Override
-	public void setProductId(Product newProductId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM__PRODUCT_ID, newProductId);
+	public void setProductFeature(ProductFeature newProductFeature) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM__PRODUCT_FEATURE, newProductFeature);
 	}
 
 	/**
@@ -399,6 +439,86 @@ public class InvoiceItemImpl extends EntityTypedImpl<InvoiceItemType> implements
 	 * @generated
 	 */
 	@Override
+	public SalesOpportunity getSalesOpportunity() {
+		return (SalesOpportunity)eGet(InvoicePackage.Literals.INVOICE_ITEM__SALES_OPPORTUNITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSalesOpportunity(SalesOpportunity newSalesOpportunity) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM__SALES_OPPORTUNITY, newSalesOpportunity);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Geo getTaxAuthGeo() {
+		return (Geo)eGet(InvoicePackage.Literals.INVOICE_ITEM__TAX_AUTH_GEO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTaxAuthGeo(Geo newTaxAuthGeo) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM__TAX_AUTH_GEO, newTaxAuthGeo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getTaxAuthParty() {
+		return (Party)eGet(InvoicePackage.Literals.INVOICE_ITEM__TAX_AUTH_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTaxAuthParty(Party newTaxAuthParty) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM__TAX_AUTH_PARTY, newTaxAuthParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TaxAuthorityRateProduct getTaxAuthorityRateSeq() {
+		return (TaxAuthorityRateProduct)eGet(InvoicePackage.Literals.INVOICE_ITEM__TAX_AUTHORITY_RATE_SEQ, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTaxAuthorityRateSeq(TaxAuthorityRateProduct newTaxAuthorityRateSeq) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM__TAX_AUTHORITY_RATE_SEQ, newTaxAuthorityRateSeq);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean isTaxableFlag() {
 		return (Boolean)eGet(InvoicePackage.Literals.INVOICE_ITEM__TAXABLE_FLAG, true);
 	}
@@ -419,8 +539,8 @@ public class InvoiceItemImpl extends EntityTypedImpl<InvoiceItemType> implements
 	 * @generated
 	 */
 	@Override
-	public SalesOpportunity getSalesOpportunityId() {
-		return (SalesOpportunity)eGet(InvoicePackage.Literals.INVOICE_ITEM__SALES_OPPORTUNITY_ID, true);
+	public Uom getUom() {
+		return (Uom)eGet(InvoicePackage.Literals.INVOICE_ITEM__UOM, true);
 	}
 
 	/**
@@ -429,88 +549,8 @@ public class InvoiceItemImpl extends EntityTypedImpl<InvoiceItemType> implements
 	 * @generated
 	 */
 	@Override
-	public void setSalesOpportunityId(SalesOpportunity newSalesOpportunityId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM__SALES_OPPORTUNITY_ID, newSalesOpportunityId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Geo getTaxAuthGeoId() {
-		return (Geo)eGet(InvoicePackage.Literals.INVOICE_ITEM__TAX_AUTH_GEO_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTaxAuthGeoId(Geo newTaxAuthGeoId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM__TAX_AUTH_GEO_ID, newTaxAuthGeoId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getTaxAuthPartyId() {
-		return (Party)eGet(InvoicePackage.Literals.INVOICE_ITEM__TAX_AUTH_PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTaxAuthPartyId(Party newTaxAuthPartyId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM__TAX_AUTH_PARTY_ID, newTaxAuthPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public TaxAuthorityRateProduct getTaxAuthorityRateSeqId() {
-		return (TaxAuthorityRateProduct)eGet(InvoicePackage.Literals.INVOICE_ITEM__TAX_AUTHORITY_RATE_SEQ_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTaxAuthorityRateSeqId(TaxAuthorityRateProduct newTaxAuthorityRateSeqId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM__TAX_AUTHORITY_RATE_SEQ_ID, newTaxAuthorityRateSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Uom getUomId() {
-		return (Uom)eGet(InvoicePackage.Literals.INVOICE_ITEM__UOM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setUomId(Uom newUomId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM__UOM_ID, newUomId);
+	public void setUom(Uom newUom) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM__UOM, newUom);
 	}
 
 	/**
@@ -549,46 +589,6 @@ public class InvoiceItemImpl extends EntityTypedImpl<InvoiceItemType> implements
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public InvoiceItemType getInvoiceItemTypeId() {
-		return (InvoiceItemType)eGet(InvoicePackage.Literals.INVOICE_ITEM__INVOICE_ITEM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInvoiceItemTypeId(InvoiceItemType newInvoiceItemTypeId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM__INVOICE_ITEM_TYPE_ID, newInvoiceItemTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Invoice getInvoiceId() {
-		return (Invoice)eGet(InvoicePackage.Literals.INVOICE_ITEM__INVOICE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInvoiceId(Invoice newInvoiceId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM__INVOICE_ID, newInvoiceId);
 	}
 
 } //InvoiceItemImpl

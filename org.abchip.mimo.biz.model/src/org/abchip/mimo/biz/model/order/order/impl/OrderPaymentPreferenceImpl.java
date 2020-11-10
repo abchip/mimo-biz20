@@ -40,24 +40,24 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getBillingPostalCode <em>Billing Postal Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getCreatedDate <em>Created Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getFinAccountId <em>Fin Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getFinAccount <em>Fin Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getManualAuthCode <em>Manual Auth Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getManualRefNum <em>Manual Ref Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getMaxAmount <em>Max Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getNeedsNsfRetry <em>Needs Nsf Retry</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getOverflowFlag <em>Overflow Flag</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getPaymentMethodId <em>Payment Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getPaymentMethodTypeId <em>Payment Method Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getPaymentMethod <em>Payment Method</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getPaymentMethodType <em>Payment Method Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getPresentFlag <em>Present Flag</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getProcessAttempt <em>Process Attempt</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getProductPricePurposeId <em>Product Price Purpose Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getProductPricePurpose <em>Product Price Purpose</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getSecurityCode <em>Security Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getShipGroupSeqId <em>Ship Group Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getSwipedFlag <em>Swiped Flag</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl#getTrack2 <em>Track2</em>}</li>
  * </ul>
@@ -241,8 +241,8 @@ public class OrderPaymentPreferenceImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public FinAccount getFinAccountId() {
-		return (FinAccount)eGet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__FIN_ACCOUNT_ID, true);
+	public FinAccount getFinAccount() {
+		return (FinAccount)eGet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__FIN_ACCOUNT, true);
 	}
 
 	/**
@@ -251,8 +251,8 @@ public class OrderPaymentPreferenceImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setFinAccountId(FinAccount newFinAccountId) {
-		eSet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__FIN_ACCOUNT_ID, newFinAccountId);
+	public void setFinAccount(FinAccount newFinAccount) {
+		eSet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__FIN_ACCOUNT, newFinAccount);
 	}
 
 	/**
@@ -381,8 +381,8 @@ public class OrderPaymentPreferenceImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__ORDER_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__ORDER, true);
 	}
 
 	/**
@@ -391,8 +391,8 @@ public class OrderPaymentPreferenceImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__ORDER_ID, newOrderId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__ORDER, newOrder);
 	}
 
 	/**
@@ -441,6 +441,46 @@ public class OrderPaymentPreferenceImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
+	public PaymentMethod getPaymentMethod() {
+		return (PaymentMethod)eGet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPaymentMethod(PaymentMethod newPaymentMethod) {
+		eSet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD, newPaymentMethod);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PaymentMethodType getPaymentMethodType() {
+		return (PaymentMethodType)eGet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPaymentMethodType(PaymentMethodType newPaymentMethodType) {
+		eSet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD_TYPE, newPaymentMethodType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getOrderPaymentPreferenceId() {
 		return (String)eGet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__ORDER_PAYMENT_PREFERENCE_ID, true);
 	}
@@ -453,46 +493,6 @@ public class OrderPaymentPreferenceImpl extends EntityIdentifiableImpl implement
 	@Override
 	public void setOrderPaymentPreferenceId(String newOrderPaymentPreferenceId) {
 		eSet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__ORDER_PAYMENT_PREFERENCE_ID, newOrderPaymentPreferenceId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PaymentMethod getPaymentMethodId() {
-		return (PaymentMethod)eGet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaymentMethodId(PaymentMethod newPaymentMethodId) {
-		eSet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD_ID, newPaymentMethodId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PaymentMethodType getPaymentMethodTypeId() {
-		return (PaymentMethodType)eGet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaymentMethodTypeId(PaymentMethodType newPaymentMethodTypeId) {
-		eSet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD_TYPE_ID, newPaymentMethodTypeId);
 	}
 
 	/**
@@ -541,8 +541,8 @@ public class OrderPaymentPreferenceImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public ProductPricePurpose getProductPricePurposeId() {
-		return (ProductPricePurpose)eGet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__PRODUCT_PRICE_PURPOSE_ID, true);
+	public ProductPricePurpose getProductPricePurpose() {
+		return (ProductPricePurpose)eGet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__PRODUCT_PRICE_PURPOSE, true);
 	}
 
 	/**
@@ -551,8 +551,8 @@ public class OrderPaymentPreferenceImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setProductPricePurposeId(ProductPricePurpose newProductPricePurposeId) {
-		eSet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__PRODUCT_PRICE_PURPOSE_ID, newProductPricePurposeId);
+	public void setProductPricePurpose(ProductPricePurpose newProductPricePurpose) {
+		eSet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__PRODUCT_PRICE_PURPOSE, newProductPricePurpose);
 	}
 
 	/**
@@ -601,8 +601,8 @@ public class OrderPaymentPreferenceImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__STATUS, true);
 	}
 
 	/**
@@ -611,8 +611,8 @@ public class OrderPaymentPreferenceImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(OrderPackage.Literals.ORDER_PAYMENT_PREFERENCE__STATUS, newStatus);
 	}
 
 	/**

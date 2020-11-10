@@ -31,11 +31,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnStatusImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnStatusImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnStatusImpl#getReturnStatusId <em>Return Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnStatusImpl#getChangeByUserLoginId <em>Change By User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnStatusImpl#getReturnId <em>Return Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnStatusImpl#getChangeByUserLogin <em>Change By User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnStatusImpl#getReturn <em>Return</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnStatusImpl#getReturnItemSeqId <em>Return Item Seq Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnStatusImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnStatusImpl#getStatusDatetime <em>Status Datetime</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnStatusImpl#getStatusId <em>Status Id</em>}</li>
  * </ul>
  *
  * @generated
@@ -157,46 +157,6 @@ public class ReturnStatusImpl extends EntityIdentifiableImpl implements ReturnSt
 	 * @generated
 	 */
 	@Override
-	public UserLogin getChangeByUserLoginId() {
-		return (UserLogin)eGet(ReturnPackage.Literals.RETURN_STATUS__CHANGE_BY_USER_LOGIN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setChangeByUserLoginId(UserLogin newChangeByUserLoginId) {
-		eSet(ReturnPackage.Literals.RETURN_STATUS__CHANGE_BY_USER_LOGIN_ID, newChangeByUserLoginId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ReturnHeader getReturnId() {
-		return (ReturnHeader)eGet(ReturnPackage.Literals.RETURN_STATUS__RETURN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setReturnId(ReturnHeader newReturnId) {
-		eSet(ReturnPackage.Literals.RETURN_STATUS__RETURN_ID, newReturnId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getReturnItemSeqId() {
 		return (String)eGet(ReturnPackage.Literals.RETURN_STATUS__RETURN_ITEM_SEQ_ID, true);
 	}
@@ -209,6 +169,26 @@ public class ReturnStatusImpl extends EntityIdentifiableImpl implements ReturnSt
 	@Override
 	public void setReturnItemSeqId(String newReturnItemSeqId) {
 		eSet(ReturnPackage.Literals.RETURN_STATUS__RETURN_ITEM_SEQ_ID, newReturnItemSeqId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(ReturnPackage.Literals.RETURN_STATUS__STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(StatusItem newStatus) {
+		eSet(ReturnPackage.Literals.RETURN_STATUS__STATUS, newStatus);
 	}
 
 	/**
@@ -237,6 +217,46 @@ public class ReturnStatusImpl extends EntityIdentifiableImpl implements ReturnSt
 	 * @generated
 	 */
 	@Override
+	public UserLogin getChangeByUserLogin() {
+		return (UserLogin)eGet(ReturnPackage.Literals.RETURN_STATUS__CHANGE_BY_USER_LOGIN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setChangeByUserLogin(UserLogin newChangeByUserLogin) {
+		eSet(ReturnPackage.Literals.RETURN_STATUS__CHANGE_BY_USER_LOGIN, newChangeByUserLogin);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ReturnHeader getReturn() {
+		return (ReturnHeader)eGet(ReturnPackage.Literals.RETURN_STATUS__RETURN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setReturn(ReturnHeader newReturn) {
+		eSet(ReturnPackage.Literals.RETURN_STATUS__RETURN, newReturn);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getStatusDatetime() {
 		return (Date)eGet(ReturnPackage.Literals.RETURN_STATUS__STATUS_DATETIME, true);
 	}
@@ -249,26 +269,6 @@ public class ReturnStatusImpl extends EntityIdentifiableImpl implements ReturnSt
 	@Override
 	public void setStatusDatetime(Date newStatusDatetime) {
 		eSet(ReturnPackage.Literals.RETURN_STATUS__STATUS_DATETIME, newStatusDatetime);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(ReturnPackage.Literals.RETURN_STATUS__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(ReturnPackage.Literals.RETURN_STATUS__STATUS_ID, newStatusId);
 	}
 
 	/**

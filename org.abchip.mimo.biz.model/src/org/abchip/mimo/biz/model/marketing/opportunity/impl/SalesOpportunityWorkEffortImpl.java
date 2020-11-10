@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityWorkEffortImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityWorkEffortImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityWorkEffortImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityWorkEffortImpl#getSalesOpportunityId <em>Sales Opportunity Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityWorkEffortImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityWorkEffortImpl#getSalesOpportunity <em>Sales Opportunity</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityWorkEffortImpl#getWorkEffort <em>Work Effort</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class SalesOpportunityWorkEffortImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public SalesOpportunity getSalesOpportunityId() {
-		return (SalesOpportunity)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_WORK_EFFORT__SALES_OPPORTUNITY_ID, true);
+	public SalesOpportunity getSalesOpportunity() {
+		return (SalesOpportunity)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_WORK_EFFORT__SALES_OPPORTUNITY, true);
 	}
 
 	/**
@@ -162,8 +162,8 @@ public class SalesOpportunityWorkEffortImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setSalesOpportunityId(SalesOpportunity newSalesOpportunityId) {
-		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_WORK_EFFORT__SALES_OPPORTUNITY_ID, newSalesOpportunityId);
+	public void setSalesOpportunity(SalesOpportunity newSalesOpportunity) {
+		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_WORK_EFFORT__SALES_OPPORTUNITY, newSalesOpportunity);
 	}
 
 	/**
@@ -172,8 +172,8 @@ public class SalesOpportunityWorkEffortImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_WORK_EFFORT__WORK_EFFORT_ID, true);
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_WORK_EFFORT__WORK_EFFORT, true);
 	}
 
 	/**
@@ -182,8 +182,8 @@ public class SalesOpportunityWorkEffortImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_WORK_EFFORT__WORK_EFFORT_ID, newWorkEffortId);
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_WORK_EFFORT__WORK_EFFORT, newWorkEffort);
 	}
 
 	/**

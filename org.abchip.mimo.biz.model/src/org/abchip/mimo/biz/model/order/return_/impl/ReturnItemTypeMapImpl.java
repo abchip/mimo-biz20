@@ -29,9 +29,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemTypeMapImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemTypeMapImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemTypeMapImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemTypeMapImpl#getReturnHeaderTypeId <em>Return Header Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemTypeMapImpl#getReturnHeaderType <em>Return Header Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemTypeMapImpl#getReturnItemMapKey <em>Return Item Map Key</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemTypeMapImpl#getReturnItemTypeId <em>Return Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemTypeMapImpl#getReturnItemType <em>Return Item Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -153,8 +153,8 @@ public class ReturnItemTypeMapImpl extends EntityIdentifiableImpl implements Ret
 	 * @generated
 	 */
 	@Override
-	public ReturnHeaderType getReturnHeaderTypeId() {
-		return (ReturnHeaderType)eGet(ReturnPackage.Literals.RETURN_ITEM_TYPE_MAP__RETURN_HEADER_TYPE_ID, true);
+	public ReturnHeaderType getReturnHeaderType() {
+		return (ReturnHeaderType)eGet(ReturnPackage.Literals.RETURN_ITEM_TYPE_MAP__RETURN_HEADER_TYPE, true);
 	}
 
 	/**
@@ -163,8 +163,8 @@ public class ReturnItemTypeMapImpl extends EntityIdentifiableImpl implements Ret
 	 * @generated
 	 */
 	@Override
-	public void setReturnHeaderTypeId(ReturnHeaderType newReturnHeaderTypeId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM_TYPE_MAP__RETURN_HEADER_TYPE_ID, newReturnHeaderTypeId);
+	public void setReturnHeaderType(ReturnHeaderType newReturnHeaderType) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM_TYPE_MAP__RETURN_HEADER_TYPE, newReturnHeaderType);
 	}
 
 	/**
@@ -193,8 +193,8 @@ public class ReturnItemTypeMapImpl extends EntityIdentifiableImpl implements Ret
 	 * @generated
 	 */
 	@Override
-	public ReturnItemType getReturnItemTypeId() {
-		return (ReturnItemType)eGet(ReturnPackage.Literals.RETURN_ITEM_TYPE_MAP__RETURN_ITEM_TYPE_ID, true);
+	public ReturnItemType getReturnItemType() {
+		return (ReturnItemType)eGet(ReturnPackage.Literals.RETURN_ITEM_TYPE_MAP__RETURN_ITEM_TYPE, true);
 	}
 
 	/**
@@ -203,8 +203,8 @@ public class ReturnItemTypeMapImpl extends EntityIdentifiableImpl implements Ret
 	 * @generated
 	 */
 	@Override
-	public void setReturnItemTypeId(ReturnItemType newReturnItemTypeId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM_TYPE_MAP__RETURN_ITEM_TYPE_ID, newReturnItemTypeId);
+	public void setReturnItemType(ReturnItemType newReturnItemType) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM_TYPE_MAP__RETURN_ITEM_TYPE, newReturnItemType);
 	}
 
 	/**

@@ -19,10 +19,10 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreementId <em>Agreement Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreement <em>Agreement</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreementItemSeqId <em>Agreement Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreementImage <em>Agreement Image</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreementItemTypeId <em>Agreement Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreementItemType <em>Agreement Item Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreementText <em>Agreement Text</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementItem#getCurrencyUomId <em>Currency Uom Id</em>}</li>
  * </ul>
@@ -32,6 +32,29 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface AgreementItem extends EntityTyped<AgreementItemType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Agreement</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Agreement</em>' reference.
+	 * @see #setAgreement(Agreement)
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementItem_Agreement()
+	 * @model keys="agreementId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Agreement getAgreement();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreement <em>Agreement</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Agreement</em>' reference.
+	 * @see #getAgreement()
+	 * @generated
+	 */
+	void setAgreement(Agreement value);
+
 	/**
 	 * Returns the value of the '<em><b>Agreement Image</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -57,6 +80,28 @@ public interface AgreementItem extends EntityTyped<AgreementItemType>, EntityInf
 	 * @generated
 	 */
 	void setAgreementImage(Object value);
+
+	/**
+	 * Returns the value of the '<em><b>Agreement Item Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Agreement Item Type</em>' reference.
+	 * @see #setAgreementItemType(AgreementItemType)
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementItem_AgreementItemType()
+	 * @model keys="agreementItemTypeId"
+	 * @generated
+	 */
+	AgreementItemType getAgreementItemType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreementItemType <em>Agreement Item Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Agreement Item Type</em>' reference.
+	 * @see #getAgreementItemType()
+	 * @generated
+	 */
+	void setAgreementItemType(AgreementItemType value);
 
 	/**
 	 * Returns the value of the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -137,58 +182,5 @@ public interface AgreementItem extends EntityTyped<AgreementItemType>, EntityInf
 	 * @generated
 	 */
 	void setCurrencyUomId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Agreement Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Agreement Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Agreement Id</em>' reference.
-	 * @see #setAgreementId(Agreement)
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementItem_AgreementId()
-	 * @model keys="agreementId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Agreement getAgreementId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreementId <em>Agreement Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Agreement Id</em>' reference.
-	 * @see #getAgreementId()
-	 * @generated
-	 */
-	void setAgreementId(Agreement value);
-
-	/**
-	 * Returns the value of the '<em><b>Agreement Item Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Agreement Item Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Agreement Item Type Id</em>' reference.
-	 * @see #setAgreementItemTypeId(AgreementItemType)
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementItem_AgreementItemTypeId()
-	 * @model keys="agreementItemTypeId"
-	 * @generated
-	 */
-	AgreementItemType getAgreementItemTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreementItemTypeId <em>Agreement Item Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Agreement Item Type Id</em>' reference.
-	 * @see #getAgreementItemTypeId()
-	 * @generated
-	 */
-	void setAgreementItemTypeId(AgreementItemType value);
 
 } // AgreementItem

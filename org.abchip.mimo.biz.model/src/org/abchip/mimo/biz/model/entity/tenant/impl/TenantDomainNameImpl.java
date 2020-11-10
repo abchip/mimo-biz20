@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantDomainNameImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantDomainNameImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantDomainNameImpl#getDomainName <em>Domain Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantDomainNameImpl#getTenantId <em>Tenant Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantDomainNameImpl#getTenant <em>Tenant</em>}</li>
  * </ul>
  *
  * @generated
@@ -170,8 +170,8 @@ public class TenantDomainNameImpl extends EntityIdentifiableImpl implements Tena
 	 * @generated
 	 */
 	@Override
-	public Tenant getTenantId() {
-		return (Tenant)eGet(TenantPackage.Literals.TENANT_DOMAIN_NAME__TENANT_ID, true);
+	public Tenant getTenant() {
+		return (Tenant)eGet(TenantPackage.Literals.TENANT_DOMAIN_NAME__TENANT, true);
 	}
 
 	/**
@@ -180,8 +180,8 @@ public class TenantDomainNameImpl extends EntityIdentifiableImpl implements Tena
 	 * @generated
 	 */
 	@Override
-	public void setTenantId(Tenant newTenantId) {
-		eSet(TenantPackage.Literals.TENANT_DOMAIN_NAME__TENANT_ID, newTenantId);
+	public void setTenant(Tenant newTenant) {
+		eSet(TenantPackage.Literals.TENANT_DOMAIN_NAME__TENANT, newTenant);
 	}
 
 	/**

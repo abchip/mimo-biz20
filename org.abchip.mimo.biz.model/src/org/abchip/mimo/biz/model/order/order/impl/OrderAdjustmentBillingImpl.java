@@ -31,8 +31,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentBillingImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentBillingImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentBillingImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentBillingImpl#getOrderAdjustmentId <em>Order Adjustment Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentBillingImpl#getInvoiceId <em>Invoice Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentBillingImpl#getOrderAdjustment <em>Order Adjustment</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentBillingImpl#getInvoice <em>Invoice</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentBillingImpl#getInvoiceItemSeqId <em>Invoice Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentBillingImpl#getAmount <em>Amount</em>}</li>
  * </ul>
@@ -156,6 +156,46 @@ public class OrderAdjustmentBillingImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
+	public OrderAdjustment getOrderAdjustment() {
+		return (OrderAdjustment)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT_BILLING__ORDER_ADJUSTMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrderAdjustment(OrderAdjustment newOrderAdjustment) {
+		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT_BILLING__ORDER_ADJUSTMENT, newOrderAdjustment);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Invoice getInvoice() {
+		return (Invoice)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT_BILLING__INVOICE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInvoice(Invoice newInvoice) {
+		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT_BILLING__INVOICE, newInvoice);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAmount() {
 		return (BigDecimal)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT_BILLING__AMOUNT, true);
 	}
@@ -214,26 +254,6 @@ public class OrderAdjustmentBillingImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public Invoice getInvoiceId() {
-		return (Invoice)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT_BILLING__INVOICE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInvoiceId(Invoice newInvoiceId) {
-		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT_BILLING__INVOICE_ID, newInvoiceId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getInvoiceItemSeqId() {
 		return (String)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT_BILLING__INVOICE_ITEM_SEQ_ID, true);
 	}
@@ -246,26 +266,6 @@ public class OrderAdjustmentBillingImpl extends EntityIdentifiableImpl implement
 	@Override
 	public void setInvoiceItemSeqId(String newInvoiceItemSeqId) {
 		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT_BILLING__INVOICE_ITEM_SEQ_ID, newInvoiceItemSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderAdjustment getOrderAdjustmentId() {
-		return (OrderAdjustment)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT_BILLING__ORDER_ADJUSTMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderAdjustmentId(OrderAdjustment newOrderAdjustmentId) {
-		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT_BILLING__ORDER_ADJUSTMENT_ID, newOrderAdjustmentId);
 	}
 
 } //OrderAdjustmentBillingImpl

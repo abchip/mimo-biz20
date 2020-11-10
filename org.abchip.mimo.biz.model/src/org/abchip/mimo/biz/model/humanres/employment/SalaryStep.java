@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.SalaryStep#getPayGradeId <em>Pay Grade Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.SalaryStep#getPayGrade <em>Pay Grade</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.SalaryStep#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.SalaryStep#getSalaryStepSeqId <em>Salary Step Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.SalaryStep#getAmount <em>Amount</em>}</li>
@@ -37,6 +37,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface SalaryStep extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Pay Grade</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Pay Grade</em>' reference.
+	 * @see #setPayGrade(PayGrade)
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getSalaryStep_PayGrade()
+	 * @model keys="payGradeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	PayGrade getPayGrade();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.SalaryStep#getPayGrade <em>Pay Grade</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Pay Grade</em>' reference.
+	 * @see #getPayGrade()
+	 * @generated
+	 */
+	void setPayGrade(PayGrade value);
+
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -167,33 +190,6 @@ public interface SalaryStep extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setLastModifiedByUserLogin(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Pay Grade Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Pay Grade Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Pay Grade Id</em>' reference.
-	 * @see #setPayGradeId(PayGrade)
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getSalaryStep_PayGradeId()
-	 * @model keys="payGradeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	PayGrade getPayGradeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.SalaryStep#getPayGradeId <em>Pay Grade Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Pay Grade Id</em>' reference.
-	 * @see #getPayGradeId()
-	 * @generated
-	 */
-	void setPayGradeId(PayGrade value);
 
 	/**
 	 * Returns the value of the '<em><b>Salary Step Seq Id</b></em>' attribute.

@@ -33,9 +33,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupImpl#getProductStoreGroupId <em>Product Store Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupImpl#getCurrentProductStoreGroupRollups <em>Current Product Store Group Rollups</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupImpl#getPrimaryParentGroupId <em>Primary Parent Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupImpl#getPrimaryParentGroup <em>Primary Parent Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupImpl#getProductStoreGroupName <em>Product Store Group Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupImpl#getProductStoreGroupTypeId <em>Product Store Group Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupImpl#getProductStoreGroupType <em>Product Store Group Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -177,6 +177,26 @@ public class ProductStoreGroupImpl extends EntityTypedImpl<ProductStoreGroupType
 	 * @generated
 	 */
 	@Override
+	public ProductStoreGroup getPrimaryParentGroup() {
+		return (ProductStoreGroup)eGet(StorePackage.Literals.PRODUCT_STORE_GROUP__PRIMARY_PARENT_GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPrimaryParentGroup(ProductStoreGroup newPrimaryParentGroup) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_GROUP__PRIMARY_PARENT_GROUP, newPrimaryParentGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getProductStoreGroupName() {
 		return (String)eGet(StorePackage.Literals.PRODUCT_STORE_GROUP__PRODUCT_STORE_GROUP_NAME, true);
 	}
@@ -197,8 +217,8 @@ public class ProductStoreGroupImpl extends EntityTypedImpl<ProductStoreGroupType
 	 * @generated
 	 */
 	@Override
-	public ProductStoreGroupType getProductStoreGroupTypeId() {
-		return (ProductStoreGroupType)eGet(StorePackage.Literals.PRODUCT_STORE_GROUP__PRODUCT_STORE_GROUP_TYPE_ID, true);
+	public ProductStoreGroupType getProductStoreGroupType() {
+		return (ProductStoreGroupType)eGet(StorePackage.Literals.PRODUCT_STORE_GROUP__PRODUCT_STORE_GROUP_TYPE, true);
 	}
 
 	/**
@@ -207,8 +227,8 @@ public class ProductStoreGroupImpl extends EntityTypedImpl<ProductStoreGroupType
 	 * @generated
 	 */
 	@Override
-	public void setProductStoreGroupTypeId(ProductStoreGroupType newProductStoreGroupTypeId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_GROUP__PRODUCT_STORE_GROUP_TYPE_ID, newProductStoreGroupTypeId);
+	public void setProductStoreGroupType(ProductStoreGroupType newProductStoreGroupType) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_GROUP__PRODUCT_STORE_GROUP_TYPE, newProductStoreGroupType);
 	}
 
 	/**
@@ -247,26 +267,6 @@ public class ProductStoreGroupImpl extends EntityTypedImpl<ProductStoreGroupType
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductStoreGroup getPrimaryParentGroupId() {
-		return (ProductStoreGroup)eGet(StorePackage.Literals.PRODUCT_STORE_GROUP__PRIMARY_PARENT_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPrimaryParentGroupId(ProductStoreGroup newPrimaryParentGroupId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_GROUP__PRIMARY_PARENT_GROUP_ID, newPrimaryParentGroupId);
 	}
 
 	/**

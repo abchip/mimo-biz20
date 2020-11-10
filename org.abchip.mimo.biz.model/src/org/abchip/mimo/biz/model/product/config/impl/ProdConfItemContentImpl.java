@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentImpl#getConfigItemId <em>Config Item Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentImpl#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentImpl#getConfItemContentTypeId <em>Conf Item Content Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentImpl#getConfigItem <em>Config Item</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentImpl#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentImpl#getConfItemContentType <em>Conf Item Content Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -156,8 +156,8 @@ public class ProdConfItemContentImpl extends EntityTypedImpl<ProdConfItemContent
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(ConfigPackage.Literals.PROD_CONF_ITEM_CONTENT__CONTENT_ID, true);
+	public ProductConfigItem getConfigItem() {
+		return (ProductConfigItem)eGet(ConfigPackage.Literals.PROD_CONF_ITEM_CONTENT__CONFIG_ITEM, true);
 	}
 
 	/**
@@ -166,8 +166,48 @@ public class ProdConfItemContentImpl extends EntityTypedImpl<ProdConfItemContent
 	 * @generated
 	 */
 	@Override
-	public void setContentId(Content newContentId) {
-		eSet(ConfigPackage.Literals.PROD_CONF_ITEM_CONTENT__CONTENT_ID, newContentId);
+	public void setConfigItem(ProductConfigItem newConfigItem) {
+		eSet(ConfigPackage.Literals.PROD_CONF_ITEM_CONTENT__CONFIG_ITEM, newConfigItem);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Content getContent() {
+		return (Content)eGet(ConfigPackage.Literals.PROD_CONF_ITEM_CONTENT__CONTENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContent(Content newContent) {
+		eSet(ConfigPackage.Literals.PROD_CONF_ITEM_CONTENT__CONTENT, newContent);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProdConfItemContentType getConfItemContentType() {
+		return (ProdConfItemContentType)eGet(ConfigPackage.Literals.PROD_CONF_ITEM_CONTENT__CONF_ITEM_CONTENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setConfItemContentType(ProdConfItemContentType newConfItemContentType) {
+		eSet(ConfigPackage.Literals.PROD_CONF_ITEM_CONTENT__CONF_ITEM_CONTENT_TYPE, newConfItemContentType);
 	}
 
 	/**
@@ -246,46 +286,6 @@ public class ProdConfItemContentImpl extends EntityTypedImpl<ProdConfItemContent
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductConfigItem getConfigItemId() {
-		return (ProductConfigItem)eGet(ConfigPackage.Literals.PROD_CONF_ITEM_CONTENT__CONFIG_ITEM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setConfigItemId(ProductConfigItem newConfigItemId) {
-		eSet(ConfigPackage.Literals.PROD_CONF_ITEM_CONTENT__CONFIG_ITEM_ID, newConfigItemId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProdConfItemContentType getConfItemContentTypeId() {
-		return (ProdConfItemContentType)eGet(ConfigPackage.Literals.PROD_CONF_ITEM_CONTENT__CONF_ITEM_CONTENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setConfItemContentTypeId(ProdConfItemContentType newConfItemContentTypeId) {
-		eSet(ConfigPackage.Literals.PROD_CONF_ITEM_CONTENT__CONF_ITEM_CONTENT_TYPE_ID, newConfItemContentTypeId);
 	}
 
 } //ProdConfItemContentImpl

@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPurposeTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPurposeTypeImpl#getWorkEffortPurposeTypeId <em>Work Effort Purpose Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPurposeTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPurposeTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPurposeTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -171,8 +171,8 @@ public class WorkEffortPurposeTypeImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public WorkEffortPurposeType getParentTypeId() {
-		return (WorkEffortPurposeType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PURPOSE_TYPE__PARENT_TYPE_ID, true);
+	public WorkEffortPurposeType getParentType() {
+		return (WorkEffortPurposeType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PURPOSE_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -181,8 +181,8 @@ public class WorkEffortPurposeTypeImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(WorkEffortPurposeType newParentTypeId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PURPOSE_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(WorkEffortPurposeType newParentType) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PURPOSE_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

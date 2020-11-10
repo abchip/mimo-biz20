@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyIdentificationImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyIdentificationImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyIdentificationImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyIdentificationImpl#getPartyIdentificationTypeId <em>Party Identification Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyIdentificationImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyIdentificationImpl#getPartyIdentificationType <em>Party Identification Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyIdentificationImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyIdentificationImpl#getIdValue <em>Id Value</em>}</li>
  * </ul>
  *
@@ -152,6 +152,46 @@ public class PartyIdentificationImpl extends EntityTypedImpl<PartyIdentification
 	 * @generated
 	 */
 	@Override
+	public PartyIdentificationType getPartyIdentificationType() {
+		return (PartyIdentificationType)eGet(PartyPackage.Literals.PARTY_IDENTIFICATION__PARTY_IDENTIFICATION_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPartyIdentificationType(PartyIdentificationType newPartyIdentificationType) {
+		eSet(PartyPackage.Literals.PARTY_IDENTIFICATION__PARTY_IDENTIFICATION_TYPE, newPartyIdentificationType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(PartyPackage.Literals.PARTY_IDENTIFICATION__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(PartyPackage.Literals.PARTY_IDENTIFICATION__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getIdValue() {
 		return (String)eGet(PartyPackage.Literals.PARTY_IDENTIFICATION__ID_VALUE, true);
 	}
@@ -202,46 +242,6 @@ public class PartyIdentificationImpl extends EntityTypedImpl<PartyIdentification
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PartyIdentificationType getPartyIdentificationTypeId() {
-		return (PartyIdentificationType)eGet(PartyPackage.Literals.PARTY_IDENTIFICATION__PARTY_IDENTIFICATION_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyIdentificationTypeId(PartyIdentificationType newPartyIdentificationTypeId) {
-		eSet(PartyPackage.Literals.PARTY_IDENTIFICATION__PARTY_IDENTIFICATION_TYPE_ID, newPartyIdentificationTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(PartyPackage.Literals.PARTY_IDENTIFICATION__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(PartyPackage.Literals.PARTY_IDENTIFICATION__PARTY_ID, newPartyId);
 	}
 
 } //PartyIdentificationImpl

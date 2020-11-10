@@ -22,9 +22,9 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.RequirementStatus#getRequirementId <em>Requirement Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.RequirementStatus#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.RequirementStatus#getChangeByUserLoginId <em>Change By User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.RequirementStatus#getRequirement <em>Requirement</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.RequirementStatus#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.RequirementStatus#getChangeByUserLogin <em>Change By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.RequirementStatus#getStatusDate <em>Status Date</em>}</li>
  * </ul>
  *
@@ -34,57 +34,72 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface RequirementStatus extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Change By User Login Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Change By User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Change By User Login Id</em>' reference.
-	 * @see #setChangeByUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementStatus_ChangeByUserLoginId()
-	 * @model keys="userLoginId"
-	 * @generated
-	 */
-	UserLogin getChangeByUserLoginId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.RequirementStatus#getChangeByUserLoginId <em>Change By User Login Id</em>}' reference.
+	 * Returns the value of the '<em><b>Requirement</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Change By User Login Id</em>' reference.
-	 * @see #getChangeByUserLoginId()
-	 * @generated
-	 */
-	void setChangeByUserLoginId(UserLogin value);
-
-	/**
-	 * Returns the value of the '<em><b>Requirement Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Requirement Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Requirement Id</em>' reference.
-	 * @see #setRequirementId(Requirement)
-	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementStatus_RequirementId()
+	 * @return the value of the '<em>Requirement</em>' reference.
+	 * @see #setRequirement(Requirement)
+	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementStatus_Requirement()
 	 * @model keys="requirementId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Requirement getRequirementId();
+	Requirement getRequirement();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.RequirementStatus#getRequirementId <em>Requirement Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.RequirementStatus#getRequirement <em>Requirement</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Requirement Id</em>' reference.
-	 * @see #getRequirementId()
+	 * @param value the new value of the '<em>Requirement</em>' reference.
+	 * @see #getRequirement()
 	 * @generated
 	 */
-	void setRequirementId(Requirement value);
+	void setRequirement(Requirement value);
+
+	/**
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementStatus_Status()
+	 * @model keys="statusId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	StatusItem getStatus();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.RequirementStatus#getStatus <em>Status</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
+	 * @generated
+	 */
+	void setStatus(StatusItem value);
+
+	/**
+	 * Returns the value of the '<em><b>Change By User Login</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Change By User Login</em>' reference.
+	 * @see #setChangeByUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementStatus_ChangeByUserLogin()
+	 * @model keys="userLoginId"
+	 * @generated
+	 */
+	UserLogin getChangeByUserLogin();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.RequirementStatus#getChangeByUserLogin <em>Change By User Login</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Change By User Login</em>' reference.
+	 * @see #getChangeByUserLogin()
+	 * @generated
+	 */
+	void setChangeByUserLogin(UserLogin value);
 
 	/**
 	 * Returns the value of the '<em><b>Status Date</b></em>' attribute.
@@ -111,32 +126,5 @@ public interface RequirementStatus extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setStatusDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementStatus_StatusId()
-	 * @model keys="statusId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	StatusItem getStatusId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.RequirementStatus#getStatusId <em>Status Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
-	 * @generated
-	 */
-	void setStatusId(StatusItem value);
 
 } // RequirementStatus

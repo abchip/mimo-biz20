@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeaveType#getLeaveTypeId <em>Leave Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeaveType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeaveType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeaveType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeaveType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmplLeaveType()
@@ -83,6 +83,28 @@ public interface EmplLeaveType extends EntityType<EmplLeave>, EntityInfo {
 	void setHasTable(boolean value);
 
 	/**
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(EmplLeaveType)
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmplLeaveType_ParentType()
+	 * @model keys="leaveTypeId"
+	 * @generated
+	 */
+	EmplLeaveType getParentType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeaveType#getParentType <em>Parent Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
+	 * @generated
+	 */
+	void setParentType(EmplLeaveType value);
+
+	/**
 	 * Returns the value of the '<em><b>Leave Type Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -108,31 +130,5 @@ public interface EmplLeaveType extends EntityType<EmplLeave>, EntityInfo {
 	 * @generated
 	 */
 	void setLeaveTypeId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(EmplLeaveType)
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmplLeaveType_ParentTypeId()
-	 * @model keys="leaveTypeId"
-	 * @generated
-	 */
-	EmplLeaveType getParentTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeaveType#getParentTypeId <em>Parent Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
-	 * @generated
-	 */
-	void setParentTypeId(EmplLeaveType value);
 
 } // EmplLeaveType

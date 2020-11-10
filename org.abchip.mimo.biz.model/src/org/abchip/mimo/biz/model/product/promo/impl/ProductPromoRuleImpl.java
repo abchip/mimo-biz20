@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoRuleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoRuleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoRuleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoRuleImpl#getProductPromoId <em>Product Promo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoRuleImpl#getProductPromo <em>Product Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoRuleImpl#getProductPromoRuleId <em>Product Promo Rule Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoRuleImpl#getRuleName <em>Rule Name</em>}</li>
  * </ul>
@@ -152,6 +152,26 @@ public class ProductPromoRuleImpl extends EntityIdentifiableImpl implements Prod
 	 * @generated
 	 */
 	@Override
+	public ProductPromo getProductPromo() {
+		return (ProductPromo)eGet(PromoPackage.Literals.PRODUCT_PROMO_RULE__PRODUCT_PROMO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPromo(ProductPromo newProductPromo) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_RULE__PRODUCT_PROMO, newProductPromo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getProductPromoRuleId() {
 		return (String)eGet(PromoPackage.Literals.PRODUCT_PROMO_RULE__PRODUCT_PROMO_RULE_ID, true);
 	}
@@ -222,26 +242,6 @@ public class ProductPromoRuleImpl extends EntityIdentifiableImpl implements Prod
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductPromo getProductPromoId() {
-		return (ProductPromo)eGet(PromoPackage.Literals.PRODUCT_PROMO_RULE__PRODUCT_PROMO_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPromoId(ProductPromo newProductPromoId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_RULE__PRODUCT_PROMO_ID, newProductPromoId);
 	}
 
 } //ProductPromoRuleImpl

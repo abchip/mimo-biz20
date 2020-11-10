@@ -21,7 +21,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getGeoId <em>Geo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getAddressFormat <em>Address Format</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getGeoAssocTypeId <em>Geo Assoc Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getGeoAssocType <em>Geo Assoc Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getHasPostalCodeExt <em>Has Postal Code Ext</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getPostalCodeRegex <em>Postal Code Regex</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getRequirePostalCode <em>Require Postal Code</em>}</li>
@@ -59,6 +59,28 @@ public interface CountryAddressFormat extends EntityTyped<GeoAssocType>, EntityI
 	 * @generated
 	 */
 	void setAddressFormat(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Geo Assoc Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Geo Assoc Type</em>' reference.
+	 * @see #setGeoAssocType(GeoAssocType)
+	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getCountryAddressFormat_GeoAssocType()
+	 * @model keys="geoAssocTypeId"
+	 * @generated
+	 */
+	GeoAssocType getGeoAssocType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getGeoAssocType <em>Geo Assoc Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Geo Assoc Type</em>' reference.
+	 * @see #getGeoAssocType()
+	 * @generated
+	 */
+	void setGeoAssocType(GeoAssocType value);
 
 	/**
 	 * Returns the value of the '<em><b>Postal Code Regex</b></em>' attribute.
@@ -155,32 +177,6 @@ public interface CountryAddressFormat extends EntityTyped<GeoAssocType>, EntityI
 	 * @generated
 	 */
 	void setRequireStateProvinceId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Geo Assoc Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geo Assoc Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Geo Assoc Type Id</em>' reference.
-	 * @see #setGeoAssocTypeId(GeoAssocType)
-	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getCountryAddressFormat_GeoAssocTypeId()
-	 * @model keys="geoAssocTypeId"
-	 * @generated
-	 */
-	GeoAssocType getGeoAssocTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getGeoAssocTypeId <em>Geo Assoc Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Geo Assoc Type Id</em>' reference.
-	 * @see #getGeoAssocTypeId()
-	 * @generated
-	 */
-	void setGeoAssocTypeId(GeoAssocType value);
 
 	/**
 	 * Returns the value of the '<em><b>Has Postal Code Ext</b></em>' attribute.

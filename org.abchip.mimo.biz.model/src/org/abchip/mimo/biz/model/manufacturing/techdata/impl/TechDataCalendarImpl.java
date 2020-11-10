@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarImpl#getCalendarId <em>Calendar Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarImpl#getCalendarWeekId <em>Calendar Week Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarImpl#getCalendarWeek <em>Calendar Week</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarImpl#getTechDataCalendarExcDaies <em>Tech Data Calendar Exc Daies</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarImpl#getTechDataCalendarExcWeeks <em>Tech Data Calendar Exc Weeks</em>}</li>
@@ -177,8 +177,8 @@ public class TechDataCalendarImpl extends EntityIdentifiableImpl implements Tech
 	 * @generated
 	 */
 	@Override
-	public TechDataCalendarWeek getCalendarWeekId() {
-		return (TechDataCalendarWeek)eGet(TechdataPackage.Literals.TECH_DATA_CALENDAR__CALENDAR_WEEK_ID, true);
+	public TechDataCalendarWeek getCalendarWeek() {
+		return (TechDataCalendarWeek)eGet(TechdataPackage.Literals.TECH_DATA_CALENDAR__CALENDAR_WEEK, true);
 	}
 
 	/**
@@ -187,8 +187,8 @@ public class TechDataCalendarImpl extends EntityIdentifiableImpl implements Tech
 	 * @generated
 	 */
 	@Override
-	public void setCalendarWeekId(TechDataCalendarWeek newCalendarWeekId) {
-		eSet(TechdataPackage.Literals.TECH_DATA_CALENDAR__CALENDAR_WEEK_ID, newCalendarWeekId);
+	public void setCalendarWeek(TechDataCalendarWeek newCalendarWeek) {
+		eSet(TechdataPackage.Literals.TECH_DATA_CALENDAR__CALENDAR_WEEK, newCalendarWeek);
 	}
 
 	/**

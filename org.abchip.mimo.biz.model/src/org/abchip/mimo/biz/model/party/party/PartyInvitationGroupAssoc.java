@@ -20,7 +20,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyInvitationGroupAssoc#getPartyIdTo <em>Party Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyInvitationGroupAssoc#getPartyInvitationId <em>Party Invitation Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyInvitationGroupAssoc#getPartyInvitation <em>Party Invitation</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyInvitationGroupAssoc()
@@ -56,30 +56,26 @@ public interface PartyInvitationGroupAssoc extends EntityIdentifiable, EntityInf
 	void setPartyIdTo(PartyGroup value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Invitation Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party Invitation</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Invitation Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Invitation Id</em>' reference.
-	 * @see #setPartyInvitationId(PartyInvitation)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyInvitationGroupAssoc_PartyInvitationId()
+	 * @return the value of the '<em>Party Invitation</em>' reference.
+	 * @see #setPartyInvitation(PartyInvitation)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyInvitationGroupAssoc_PartyInvitation()
 	 * @model keys="partyInvitationId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	PartyInvitation getPartyInvitationId();
+	PartyInvitation getPartyInvitation();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyInvitationGroupAssoc#getPartyInvitationId <em>Party Invitation Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyInvitationGroupAssoc#getPartyInvitation <em>Party Invitation</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Invitation Id</em>' reference.
-	 * @see #getPartyInvitationId()
+	 * @param value the new value of the '<em>Party Invitation</em>' reference.
+	 * @see #getPartyInvitation()
 	 * @generated
 	 */
-	void setPartyInvitationId(PartyInvitation value);
+	void setPartyInvitation(PartyInvitation value);
 
 } // PartyInvitationGroupAssoc

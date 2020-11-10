@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2LinkedInImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2LinkedInImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2LinkedInImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2LinkedInImpl#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2LinkedInImpl#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2LinkedInImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2LinkedInImpl#getApiKey <em>Api Key</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2LinkedInImpl#getIconUrl <em>Icon Url</em>}</li>
@@ -158,8 +158,8 @@ public class OAuth2LinkedInImpl extends EntityIdentifiableImpl implements OAuth2
 	 * @generated
 	 */
 	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(PassportPackage.Literals.OAUTH2_LINKED_IN__PRODUCT_STORE_ID, true);
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(PassportPackage.Literals.OAUTH2_LINKED_IN__PRODUCT_STORE, true);
 	}
 
 	/**
@@ -168,8 +168,8 @@ public class OAuth2LinkedInImpl extends EntityIdentifiableImpl implements OAuth2
 	 * @generated
 	 */
 	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(PassportPackage.Literals.OAUTH2_LINKED_IN__PRODUCT_STORE_ID, newProductStoreId);
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(PassportPackage.Literals.OAUTH2_LINKED_IN__PRODUCT_STORE, newProductStore);
 	}
 
 	/**

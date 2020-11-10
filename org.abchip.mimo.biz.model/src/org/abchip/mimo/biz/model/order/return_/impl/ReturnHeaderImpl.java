@@ -41,22 +41,22 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getReturnId <em>Return Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getBillingAccountId <em>Billing Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getBillingAccount <em>Billing Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getCommunicationEventReturns <em>Communication Event Returns</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getCreatedBy <em>Created By</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getDestinationFacilityId <em>Destination Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getCurrencyUom <em>Currency Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getDestinationFacility <em>Destination Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getEntryDate <em>Entry Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getFinAccountId <em>Fin Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getFromPartyId <em>From Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getFinAccount <em>Fin Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getFromParty <em>From Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getNeedsInventoryReceive <em>Needs Inventory Receive</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getOriginContactMechId <em>Origin Contact Mech Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getPaymentMethodId <em>Payment Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getReturnHeaderTypeId <em>Return Header Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getOriginContactMech <em>Origin Contact Mech</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getPaymentMethod <em>Payment Method</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getReturnHeaderType <em>Return Header Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getReturnItems <em>Return Items</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getSupplierRmaId <em>Supplier Rma Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getToPartyId <em>To Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getToParty <em>To Party</em>}</li>
  * </ul>
  *
  * @generated
@@ -177,26 +177,6 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public BillingAccount getBillingAccountId() {
-		return (BillingAccount)eGet(ReturnPackage.Literals.RETURN_HEADER__BILLING_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBillingAccountId(BillingAccount newBillingAccountId) {
-		eSet(ReturnPackage.Literals.RETURN_HEADER__BILLING_ACCOUNT_ID, newBillingAccountId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<CommunicationEventReturn> getCommunicationEventReturns() {
@@ -229,8 +209,8 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * @generated
 	 */
 	@Override
-	public Uom getCurrencyUomId() {
-		return (Uom)eGet(ReturnPackage.Literals.RETURN_HEADER__CURRENCY_UOM_ID, true);
+	public Uom getCurrencyUom() {
+		return (Uom)eGet(ReturnPackage.Literals.RETURN_HEADER__CURRENCY_UOM, true);
 	}
 
 	/**
@@ -239,8 +219,8 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setCurrencyUomId(Uom newCurrencyUomId) {
-		eSet(ReturnPackage.Literals.RETURN_HEADER__CURRENCY_UOM_ID, newCurrencyUomId);
+	public void setCurrencyUom(Uom newCurrencyUom) {
+		eSet(ReturnPackage.Literals.RETURN_HEADER__CURRENCY_UOM, newCurrencyUom);
 	}
 
 	/**
@@ -249,8 +229,8 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * @generated
 	 */
 	@Override
-	public Facility getDestinationFacilityId() {
-		return (Facility)eGet(ReturnPackage.Literals.RETURN_HEADER__DESTINATION_FACILITY_ID, true);
+	public Facility getDestinationFacility() {
+		return (Facility)eGet(ReturnPackage.Literals.RETURN_HEADER__DESTINATION_FACILITY, true);
 	}
 
 	/**
@@ -259,8 +239,8 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setDestinationFacilityId(Facility newDestinationFacilityId) {
-		eSet(ReturnPackage.Literals.RETURN_HEADER__DESTINATION_FACILITY_ID, newDestinationFacilityId);
+	public void setDestinationFacility(Facility newDestinationFacility) {
+		eSet(ReturnPackage.Literals.RETURN_HEADER__DESTINATION_FACILITY, newDestinationFacility);
 	}
 
 	/**
@@ -289,8 +269,8 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * @generated
 	 */
 	@Override
-	public FinAccount getFinAccountId() {
-		return (FinAccount)eGet(ReturnPackage.Literals.RETURN_HEADER__FIN_ACCOUNT_ID, true);
+	public FinAccount getFinAccount() {
+		return (FinAccount)eGet(ReturnPackage.Literals.RETURN_HEADER__FIN_ACCOUNT, true);
 	}
 
 	/**
@@ -299,8 +279,8 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setFinAccountId(FinAccount newFinAccountId) {
-		eSet(ReturnPackage.Literals.RETURN_HEADER__FIN_ACCOUNT_ID, newFinAccountId);
+	public void setFinAccount(FinAccount newFinAccount) {
+		eSet(ReturnPackage.Literals.RETURN_HEADER__FIN_ACCOUNT, newFinAccount);
 	}
 
 	/**
@@ -309,8 +289,8 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * @generated
 	 */
 	@Override
-	public Party getFromPartyId() {
-		return (Party)eGet(ReturnPackage.Literals.RETURN_HEADER__FROM_PARTY_ID, true);
+	public Party getFromParty() {
+		return (Party)eGet(ReturnPackage.Literals.RETURN_HEADER__FROM_PARTY, true);
 	}
 
 	/**
@@ -319,8 +299,8 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setFromPartyId(Party newFromPartyId) {
-		eSet(ReturnPackage.Literals.RETURN_HEADER__FROM_PARTY_ID, newFromPartyId);
+	public void setFromParty(Party newFromParty) {
+		eSet(ReturnPackage.Literals.RETURN_HEADER__FROM_PARTY, newFromParty);
 	}
 
 	/**
@@ -349,8 +329,8 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * @generated
 	 */
 	@Override
-	public ContactMech getOriginContactMechId() {
-		return (ContactMech)eGet(ReturnPackage.Literals.RETURN_HEADER__ORIGIN_CONTACT_MECH_ID, true);
+	public ContactMech getOriginContactMech() {
+		return (ContactMech)eGet(ReturnPackage.Literals.RETURN_HEADER__ORIGIN_CONTACT_MECH, true);
 	}
 
 	/**
@@ -359,8 +339,8 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setOriginContactMechId(ContactMech newOriginContactMechId) {
-		eSet(ReturnPackage.Literals.RETURN_HEADER__ORIGIN_CONTACT_MECH_ID, newOriginContactMechId);
+	public void setOriginContactMech(ContactMech newOriginContactMech) {
+		eSet(ReturnPackage.Literals.RETURN_HEADER__ORIGIN_CONTACT_MECH, newOriginContactMech);
 	}
 
 	/**
@@ -369,8 +349,8 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * @generated
 	 */
 	@Override
-	public PaymentMethod getPaymentMethodId() {
-		return (PaymentMethod)eGet(ReturnPackage.Literals.RETURN_HEADER__PAYMENT_METHOD_ID, true);
+	public PaymentMethod getPaymentMethod() {
+		return (PaymentMethod)eGet(ReturnPackage.Literals.RETURN_HEADER__PAYMENT_METHOD, true);
 	}
 
 	/**
@@ -379,8 +359,8 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setPaymentMethodId(PaymentMethod newPaymentMethodId) {
-		eSet(ReturnPackage.Literals.RETURN_HEADER__PAYMENT_METHOD_ID, newPaymentMethodId);
+	public void setPaymentMethod(PaymentMethod newPaymentMethod) {
+		eSet(ReturnPackage.Literals.RETURN_HEADER__PAYMENT_METHOD, newPaymentMethod);
 	}
 
 	/**
@@ -389,8 +369,8 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * @generated
 	 */
 	@Override
-	public ReturnHeaderType getReturnHeaderTypeId() {
-		return (ReturnHeaderType)eGet(ReturnPackage.Literals.RETURN_HEADER__RETURN_HEADER_TYPE_ID, true);
+	public ReturnHeaderType getReturnHeaderType() {
+		return (ReturnHeaderType)eGet(ReturnPackage.Literals.RETURN_HEADER__RETURN_HEADER_TYPE, true);
 	}
 
 	/**
@@ -399,8 +379,8 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setReturnHeaderTypeId(ReturnHeaderType newReturnHeaderTypeId) {
-		eSet(ReturnPackage.Literals.RETURN_HEADER__RETURN_HEADER_TYPE_ID, newReturnHeaderTypeId);
+	public void setReturnHeaderType(ReturnHeaderType newReturnHeaderType) {
+		eSet(ReturnPackage.Literals.RETURN_HEADER__RETURN_HEADER_TYPE, newReturnHeaderType);
 	}
 
 	/**
@@ -412,6 +392,26 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	@Override
 	public List<ReturnItem> getReturnItems() {
 		return (List<ReturnItem>)eGet(ReturnPackage.Literals.RETURN_HEADER__RETURN_ITEMS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(ReturnPackage.Literals.RETURN_HEADER__STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(StatusItem newStatus) {
+		eSet(ReturnPackage.Literals.RETURN_HEADER__STATUS, newStatus);
 	}
 
 	/**
@@ -440,8 +440,8 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(ReturnPackage.Literals.RETURN_HEADER__STATUS_ID, true);
+	public BillingAccount getBillingAccount() {
+		return (BillingAccount)eGet(ReturnPackage.Literals.RETURN_HEADER__BILLING_ACCOUNT, true);
 	}
 
 	/**
@@ -450,8 +450,8 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(ReturnPackage.Literals.RETURN_HEADER__STATUS_ID, newStatusId);
+	public void setBillingAccount(BillingAccount newBillingAccount) {
+		eSet(ReturnPackage.Literals.RETURN_HEADER__BILLING_ACCOUNT, newBillingAccount);
 	}
 
 	/**
@@ -480,8 +480,8 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * @generated
 	 */
 	@Override
-	public Party getToPartyId() {
-		return (Party)eGet(ReturnPackage.Literals.RETURN_HEADER__TO_PARTY_ID, true);
+	public Party getToParty() {
+		return (Party)eGet(ReturnPackage.Literals.RETURN_HEADER__TO_PARTY, true);
 	}
 
 	/**
@@ -490,8 +490,8 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setToPartyId(Party newToPartyId) {
-		eSet(ReturnPackage.Literals.RETURN_HEADER__TO_PARTY_ID, newToPartyId);
+	public void setToParty(Party newToParty) {
+		eSet(ReturnPackage.Literals.RETURN_HEADER__TO_PARTY, newToParty);
 	}
 
 	/**

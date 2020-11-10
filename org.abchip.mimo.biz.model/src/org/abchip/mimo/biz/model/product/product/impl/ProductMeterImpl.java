@@ -30,10 +30,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMeterImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMeterImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMeterImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMeterImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMeterImpl#getProductMeterTypeId <em>Product Meter Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMeterImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMeterImpl#getProductMeterType <em>Product Meter Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMeterImpl#getMeterName <em>Meter Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMeterImpl#getMeterUomId <em>Meter Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMeterImpl#getMeterUom <em>Meter Uom</em>}</li>
  * </ul>
  *
  * @generated
@@ -155,6 +155,46 @@ public class ProductMeterImpl extends EntityTypedImpl<ProductMeterType> implemen
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(ProductPackage.Literals.PRODUCT_METER__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(ProductPackage.Literals.PRODUCT_METER__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductMeterType getProductMeterType() {
+		return (ProductMeterType)eGet(ProductPackage.Literals.PRODUCT_METER__PRODUCT_METER_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductMeterType(ProductMeterType newProductMeterType) {
+		eSet(ProductPackage.Literals.PRODUCT_METER__PRODUCT_METER_TYPE, newProductMeterType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getMeterName() {
 		return (String)eGet(ProductPackage.Literals.PRODUCT_METER__METER_NAME, true);
 	}
@@ -175,8 +215,8 @@ public class ProductMeterImpl extends EntityTypedImpl<ProductMeterType> implemen
 	 * @generated
 	 */
 	@Override
-	public Uom getMeterUomId() {
-		return (Uom)eGet(ProductPackage.Literals.PRODUCT_METER__METER_UOM_ID, true);
+	public Uom getMeterUom() {
+		return (Uom)eGet(ProductPackage.Literals.PRODUCT_METER__METER_UOM, true);
 	}
 
 	/**
@@ -185,8 +225,8 @@ public class ProductMeterImpl extends EntityTypedImpl<ProductMeterType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setMeterUomId(Uom newMeterUomId) {
-		eSet(ProductPackage.Literals.PRODUCT_METER__METER_UOM_ID, newMeterUomId);
+	public void setMeterUom(Uom newMeterUom) {
+		eSet(ProductPackage.Literals.PRODUCT_METER__METER_UOM, newMeterUom);
 	}
 
 	/**
@@ -225,46 +265,6 @@ public class ProductMeterImpl extends EntityTypedImpl<ProductMeterType> implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(ProductPackage.Literals.PRODUCT_METER__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(ProductPackage.Literals.PRODUCT_METER__PRODUCT_ID, newProductId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductMeterType getProductMeterTypeId() {
-		return (ProductMeterType)eGet(ProductPackage.Literals.PRODUCT_METER__PRODUCT_METER_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductMeterTypeId(ProductMeterType newProductMeterTypeId) {
-		eSet(ProductPackage.Literals.PRODUCT_METER__PRODUCT_METER_TYPE_ID, newProductMeterTypeId);
 	}
 
 } //ProductMeterImpl

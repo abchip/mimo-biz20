@@ -31,7 +31,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentTimeEstimate#getRoleTypeId <em>Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentTimeEstimate#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentTimeEstimate#getLeadTime <em>Lead Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentTimeEstimate#getLeadTimeUomId <em>Lead Time Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentTimeEstimate#getLeadTimeUom <em>Lead Time Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentTimeEstimate#getSequenceNumber <em>Sequence Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentTimeEstimate#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -149,30 +149,26 @@ public interface ShipmentTimeEstimate extends EntityIdentifiable, EntityInfo {
 	void setLeadTime(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Lead Time Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Lead Time Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Lead Time Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Lead Time Uom Id</em>' reference.
-	 * @see #setLeadTimeUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentTimeEstimate_LeadTimeUomId()
+	 * @return the value of the '<em>Lead Time Uom</em>' reference.
+	 * @see #setLeadTimeUom(Uom)
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentTimeEstimate_LeadTimeUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getLeadTimeUomId();
+	Uom getLeadTimeUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentTimeEstimate#getLeadTimeUomId <em>Lead Time Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentTimeEstimate#getLeadTimeUom <em>Lead Time Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Lead Time Uom Id</em>' reference.
-	 * @see #getLeadTimeUomId()
+	 * @param value the new value of the '<em>Lead Time Uom</em>' reference.
+	 * @see #getLeadTimeUom()
 	 * @generated
 	 */
-	void setLeadTimeUomId(Uom value);
+	void setLeadTimeUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Party Id</b></em>' attribute.

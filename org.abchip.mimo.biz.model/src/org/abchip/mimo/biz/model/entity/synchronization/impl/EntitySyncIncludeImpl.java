@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncIncludeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncIncludeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncIncludeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncIncludeImpl#getEntitySyncId <em>Entity Sync Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncIncludeImpl#getEntitySync <em>Entity Sync</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncIncludeImpl#getEntityOrPackage <em>Entity Or Package</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncIncludeImpl#getApplEnumId <em>Appl Enum Id</em>}</li>
  * </ul>
@@ -151,6 +151,26 @@ public class EntitySyncIncludeImpl extends EntityIdentifiableImpl implements Ent
 	 * @generated
 	 */
 	@Override
+	public EntitySync getEntitySync() {
+		return (EntitySync)eGet(SynchronizationPackage.Literals.ENTITY_SYNC_INCLUDE__ENTITY_SYNC, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEntitySync(EntitySync newEntitySync) {
+		eSet(SynchronizationPackage.Literals.ENTITY_SYNC_INCLUDE__ENTITY_SYNC, newEntitySync);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getApplEnumId() {
 		return (String)eGet(SynchronizationPackage.Literals.ENTITY_SYNC_INCLUDE__APPL_ENUM_ID, true);
 	}
@@ -221,26 +241,6 @@ public class EntitySyncIncludeImpl extends EntityIdentifiableImpl implements Ent
 	@Override
 	public void setEntityOrPackage(String newEntityOrPackage) {
 		eSet(SynchronizationPackage.Literals.ENTITY_SYNC_INCLUDE__ENTITY_OR_PACKAGE, newEntityOrPackage);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EntitySync getEntitySyncId() {
-		return (EntitySync)eGet(SynchronizationPackage.Literals.ENTITY_SYNC_INCLUDE__ENTITY_SYNC_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setEntitySyncId(EntitySync newEntitySyncId) {
-		eSet(SynchronizationPackage.Literals.ENTITY_SYNC_INCLUDE__ENTITY_SYNC_ID, newEntitySyncId);
 	}
 
 } //EntitySyncIncludeImpl

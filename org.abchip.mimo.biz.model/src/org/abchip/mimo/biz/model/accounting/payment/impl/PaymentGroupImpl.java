@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupImpl#getPaymentGroupId <em>Payment Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupImpl#getPaymentGroupMembers <em>Payment Group Members</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupImpl#getPaymentGroupName <em>Payment Group Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupImpl#getPaymentGroupTypeId <em>Payment Group Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupImpl#getPaymentGroupType <em>Payment Group Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -174,8 +174,8 @@ public class PaymentGroupImpl extends EntityTypedImpl<PaymentGroupType> implemen
 	 * @generated
 	 */
 	@Override
-	public PaymentGroupType getPaymentGroupTypeId() {
-		return (PaymentGroupType)eGet(PaymentPackage.Literals.PAYMENT_GROUP__PAYMENT_GROUP_TYPE_ID, true);
+	public PaymentGroupType getPaymentGroupType() {
+		return (PaymentGroupType)eGet(PaymentPackage.Literals.PAYMENT_GROUP__PAYMENT_GROUP_TYPE, true);
 	}
 
 	/**
@@ -184,8 +184,8 @@ public class PaymentGroupImpl extends EntityTypedImpl<PaymentGroupType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setPaymentGroupTypeId(PaymentGroupType newPaymentGroupTypeId) {
-		eSet(PaymentPackage.Literals.PAYMENT_GROUP__PAYMENT_GROUP_TYPE_ID, newPaymentGroupTypeId);
+	public void setPaymentGroupType(PaymentGroupType newPaymentGroupType) {
+		eSet(PaymentPackage.Literals.PAYMENT_GROUP__PAYMENT_GROUP_TYPE, newPaymentGroupType);
 	}
 
 	/**

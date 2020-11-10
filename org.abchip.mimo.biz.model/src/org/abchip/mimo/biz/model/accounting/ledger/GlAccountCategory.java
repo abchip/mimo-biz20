@@ -21,7 +21,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountCategory#getGlAccountCategoryId <em>Gl Account Category Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountCategory#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountCategory#getGlAccountCategoryTypeId <em>Gl Account Category Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountCategory#getGlAccountCategoryType <em>Gl Account Category Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccountCategory()
@@ -56,30 +56,26 @@ public interface GlAccountCategory extends EntityTyped<GlAccountCategoryType>, E
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Gl Account Category Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Gl Account Category Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gl Account Category Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Account Category Type Id</em>' reference.
-	 * @see #setGlAccountCategoryTypeId(GlAccountCategoryType)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccountCategory_GlAccountCategoryTypeId()
+	 * @return the value of the '<em>Gl Account Category Type</em>' reference.
+	 * @see #setGlAccountCategoryType(GlAccountCategoryType)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccountCategory_GlAccountCategoryType()
 	 * @model keys="glAccountCategoryTypeId"
 	 * @generated
 	 */
-	GlAccountCategoryType getGlAccountCategoryTypeId();
+	GlAccountCategoryType getGlAccountCategoryType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountCategory#getGlAccountCategoryTypeId <em>Gl Account Category Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountCategory#getGlAccountCategoryType <em>Gl Account Category Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Gl Account Category Type Id</em>' reference.
-	 * @see #getGlAccountCategoryTypeId()
+	 * @param value the new value of the '<em>Gl Account Category Type</em>' reference.
+	 * @see #getGlAccountCategoryType()
 	 * @generated
 	 */
-	void setGlAccountCategoryTypeId(GlAccountCategoryType value);
+	void setGlAccountCategoryType(GlAccountCategoryType value);
 
 	/**
 	 * Returns the value of the '<em><b>Gl Account Category Id</b></em>' attribute.

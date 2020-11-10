@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogRoleImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogRoleImpl#getProdCatalogId <em>Prod Catalog Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogRoleImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogRoleImpl#getRoleType <em>Role Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogRoleImpl#getProdCatalog <em>Prod Catalog</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogRoleImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogRoleImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogRoleImpl#getThruDate <em>Thru Date</em>}</li>
@@ -157,6 +157,66 @@ public class ProdCatalogRoleImpl extends EntityIdentifiableImpl implements ProdC
 	 * @generated
 	 */
 	@Override
+	public Party getParty() {
+		return (Party)eGet(CatalogPackage.Literals.PROD_CATALOG_ROLE__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(CatalogPackage.Literals.PROD_CATALOG_ROLE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RoleType getRoleType() {
+		return (RoleType)eGet(CatalogPackage.Literals.PROD_CATALOG_ROLE__ROLE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRoleType(RoleType newRoleType) {
+		eSet(CatalogPackage.Literals.PROD_CATALOG_ROLE__ROLE_TYPE, newRoleType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProdCatalog getProdCatalog() {
+		return (ProdCatalog)eGet(CatalogPackage.Literals.PROD_CATALOG_ROLE__PROD_CATALOG, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProdCatalog(ProdCatalog newProdCatalog) {
+		eSet(CatalogPackage.Literals.PROD_CATALOG_ROLE__PROD_CATALOG, newProdCatalog);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(CatalogPackage.Literals.PROD_CATALOG_ROLE__FROM_DATE, true);
 	}
@@ -169,46 +229,6 @@ public class ProdCatalogRoleImpl extends EntityIdentifiableImpl implements ProdC
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(CatalogPackage.Literals.PROD_CATALOG_ROLE__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(CatalogPackage.Literals.PROD_CATALOG_ROLE__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(CatalogPackage.Literals.PROD_CATALOG_ROLE__PARTY_ID, newPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(CatalogPackage.Literals.PROD_CATALOG_ROLE__ROLE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(CatalogPackage.Literals.PROD_CATALOG_ROLE__ROLE_TYPE_ID, newRoleTypeId);
 	}
 
 	/**
@@ -287,26 +307,6 @@ public class ProdCatalogRoleImpl extends EntityIdentifiableImpl implements ProdC
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProdCatalog getProdCatalogId() {
-		return (ProdCatalog)eGet(CatalogPackage.Literals.PROD_CATALOG_ROLE__PROD_CATALOG_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProdCatalogId(ProdCatalog newProdCatalogId) {
-		eSet(CatalogPackage.Literals.PROD_CATALOG_ROLE__PROD_CATALOG_ID, newProdCatalogId);
 	}
 
 } //ProdCatalogRoleImpl

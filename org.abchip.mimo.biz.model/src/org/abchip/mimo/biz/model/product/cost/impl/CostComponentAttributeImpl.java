@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentAttributeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentAttributeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentAttributeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentAttributeImpl#getCostComponentId <em>Cost Component Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentAttributeImpl#getCostComponent <em>Cost Component</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentAttributeImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentAttributeImpl#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentAttributeImpl#getAttrValue <em>Attr Value</em>}</li>
@@ -153,6 +153,26 @@ public class CostComponentAttributeImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
+	public CostComponent getCostComponent() {
+		return (CostComponent)eGet(CostPackage.Literals.COST_COMPONENT_ATTRIBUTE__COST_COMPONENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCostComponent(CostComponent newCostComponent) {
+		eSet(CostPackage.Literals.COST_COMPONENT_ATTRIBUTE__COST_COMPONENT, newCostComponent);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrDescription() {
 		return (String)eGet(CostPackage.Literals.COST_COMPONENT_ATTRIBUTE__ATTR_DESCRIPTION, true);
 	}
@@ -223,26 +243,6 @@ public class CostComponentAttributeImpl extends EntityIdentifiableImpl implement
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CostComponent getCostComponentId() {
-		return (CostComponent)eGet(CostPackage.Literals.COST_COMPONENT_ATTRIBUTE__COST_COMPONENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCostComponentId(CostComponent newCostComponentId) {
-		eSet(CostPackage.Literals.COST_COMPONENT_ATTRIBUTE__COST_COMPONENT_ID, newCostComponentId);
 	}
 
 	/**

@@ -713,7 +713,7 @@ public class UserPackageImpl extends EPackageImpl implements UserPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getUserPreference_UserLoginId() {
+	public EReference getUserPreference_UserLogin() {
 		return (EReference)userPreferenceEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -743,7 +743,7 @@ public class UserPackageImpl extends EPackageImpl implements UserPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getUserPreference_UserPrefGroupTypeId() {
+	public EReference getUserPreference_UserPrefGroupType() {
 		return (EReference)userPreferenceEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -791,10 +791,10 @@ public class UserPackageImpl extends EPackageImpl implements UserPackage {
 		createEAttribute(userPrefGroupTypeEClass, USER_PREF_GROUP_TYPE__DESCRIPTION);
 
 		userPreferenceEClass = createEClass(USER_PREFERENCE);
-		createEReference(userPreferenceEClass, USER_PREFERENCE__USER_LOGIN_ID);
+		createEReference(userPreferenceEClass, USER_PREFERENCE__USER_LOGIN);
 		createEAttribute(userPreferenceEClass, USER_PREFERENCE__USER_PREF_TYPE_ID);
 		createEAttribute(userPreferenceEClass, USER_PREFERENCE__USER_PREF_DATA_TYPE);
-		createEReference(userPreferenceEClass, USER_PREFERENCE__USER_PREF_GROUP_TYPE_ID);
+		createEReference(userPreferenceEClass, USER_PREFERENCE__USER_PREF_GROUP_TYPE);
 		createEAttribute(userPreferenceEClass, USER_PREFERENCE__USER_PREF_VALUE);
 	}
 
@@ -849,12 +849,12 @@ public class UserPackageImpl extends EPackageImpl implements UserPackage {
 		initEAttribute(getUserPrefGroupType_Description(), ecorePackage.getEString(), "description", null, 0, 1, UserPrefGroupType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(userPreferenceEClass, UserPreference.class, "UserPreference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getUserPreference_UserLoginId(), theLoginPackage.getUserLogin(), null, "userLoginId", null, 1, 1, UserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getUserPreference_UserLoginId().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
+		initEReference(getUserPreference_UserLogin(), theLoginPackage.getUserLogin(), null, "userLogin", null, 1, 1, UserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getUserPreference_UserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEAttribute(getUserPreference_UserPrefTypeId(), ecorePackage.getEString(), "userPrefTypeId", null, 1, 1, UserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getUserPreference_UserPrefDataType(), ecorePackage.getEString(), "userPrefDataType", null, 0, 1, UserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getUserPreference_UserPrefGroupTypeId(), this.getUserPrefGroupType(), null, "userPrefGroupTypeId", null, 0, 1, UserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getUserPreference_UserPrefGroupTypeId().getEKeys().add(this.getUserPrefGroupType_UserPrefGroupTypeId());
+		initEReference(getUserPreference_UserPrefGroupType(), this.getUserPrefGroupType(), null, "userPrefGroupType", null, 0, 1, UserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getUserPreference_UserPrefGroupType().getEKeys().add(this.getUserPrefGroupType_UserPrefGroupTypeId());
 		initEAttribute(getUserPreference_UserPrefValue(), ecorePackage.getEString(), "userPrefValue", null, 0, 1, UserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create annotations
@@ -940,7 +940,7 @@ public class UserPackageImpl extends EPackageImpl implements UserPackage {
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
 		addAnnotation
-		  (getUserPreference_UserLoginId(),
+		  (getUserPreference_UserLogin(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -959,7 +959,7 @@ public class UserPackageImpl extends EPackageImpl implements UserPackage {
 			   "help", "The java data type of this preference (empty = java.lang.String)"
 		   });
 		addAnnotation
-		  (getUserPreference_UserPrefGroupTypeId(),
+		  (getUserPreference_UserPrefGroupType(),
 		   source,
 		   new String[] {
 			   "help", "Used to assemble groups of preferences"

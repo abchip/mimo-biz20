@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryTypeImpl#getProdCatalogCategoryTypeId <em>Prod Catalog Category Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -179,8 +179,8 @@ public class ProdCatalogCategoryTypeImpl extends EntityTypeImpl<ProdCatalogCateg
 	 * @generated
 	 */
 	@Override
-	public ProdCatalogCategoryType getParentTypeId() {
-		return (ProdCatalogCategoryType)eGet(CatalogPackage.Literals.PROD_CATALOG_CATEGORY_TYPE__PARENT_TYPE_ID, true);
+	public ProdCatalogCategoryType getParentType() {
+		return (ProdCatalogCategoryType)eGet(CatalogPackage.Literals.PROD_CATALOG_CATEGORY_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -189,8 +189,8 @@ public class ProdCatalogCategoryTypeImpl extends EntityTypeImpl<ProdCatalogCateg
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(ProdCatalogCategoryType newParentTypeId) {
-		eSet(CatalogPackage.Literals.PROD_CATALOG_CATEGORY_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(ProdCatalogCategoryType newParentType) {
+		eSet(CatalogPackage.Literals.PROD_CATALOG_CATEGORY_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

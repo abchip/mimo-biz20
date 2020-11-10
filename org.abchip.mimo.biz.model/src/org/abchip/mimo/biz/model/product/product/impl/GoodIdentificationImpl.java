@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.GoodIdentificationImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.GoodIdentificationImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.GoodIdentificationImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.GoodIdentificationImpl#getGoodIdentificationTypeId <em>Good Identification Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.GoodIdentificationImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.GoodIdentificationImpl#getGoodIdentificationType <em>Good Identification Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.GoodIdentificationImpl#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.GoodIdentificationImpl#getIdValue <em>Id Value</em>}</li>
  * </ul>
  *
@@ -153,6 +153,46 @@ public class GoodIdentificationImpl extends EntityTypedImpl<GoodIdentificationTy
 	 * @generated
 	 */
 	@Override
+	public GoodIdentificationType getGoodIdentificationType() {
+		return (GoodIdentificationType)eGet(ProductPackage.Literals.GOOD_IDENTIFICATION__GOOD_IDENTIFICATION_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGoodIdentificationType(GoodIdentificationType newGoodIdentificationType) {
+		eSet(ProductPackage.Literals.GOOD_IDENTIFICATION__GOOD_IDENTIFICATION_TYPE, newGoodIdentificationType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Product getProduct() {
+		return (Product)eGet(ProductPackage.Literals.GOOD_IDENTIFICATION__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(ProductPackage.Literals.GOOD_IDENTIFICATION__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getIdValue() {
 		return (String)eGet(ProductPackage.Literals.GOOD_IDENTIFICATION__ID_VALUE, true);
 	}
@@ -203,46 +243,6 @@ public class GoodIdentificationImpl extends EntityTypedImpl<GoodIdentificationTy
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GoodIdentificationType getGoodIdentificationTypeId() {
-		return (GoodIdentificationType)eGet(ProductPackage.Literals.GOOD_IDENTIFICATION__GOOD_IDENTIFICATION_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGoodIdentificationTypeId(GoodIdentificationType newGoodIdentificationTypeId) {
-		eSet(ProductPackage.Literals.GOOD_IDENTIFICATION__GOOD_IDENTIFICATION_TYPE_ID, newGoodIdentificationTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(ProductPackage.Literals.GOOD_IDENTIFICATION__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(ProductPackage.Literals.GOOD_IDENTIFICATION__PRODUCT_ID, newProductId);
 	}
 
 } //GoodIdentificationImpl

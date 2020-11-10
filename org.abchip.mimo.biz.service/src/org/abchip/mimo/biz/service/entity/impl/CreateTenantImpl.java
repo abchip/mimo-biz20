@@ -63,7 +63,7 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 4;
+	protected static final int ESTATIC_FEATURE_COUNT = 2;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -150,14 +150,14 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 		// TenantDomainName
 		ResourceWriter<TenantDomainName> tenantDomainNameWriter = context.getResourceManager().getResourceWriter(TenantDomainName.class);
 		TenantDomainName tenantDomainName = tenantDomainNameWriter.make();
-		tenantDomainName.setTenantId(tenant);
+		tenantDomainName.setTenant(tenant);
 		tenantDomainName.setDomainName(this.getTenantId() + ".abchip.net");
 		tenantDomainNameWriter.create(tenantDomainName, this.isUpdate());
 
 		// TenantDataSource
 		ResourceWriter<TenantDataSource> tenantDataSourceWriter = context.getResourceManager().getResourceWriter(TenantDataSource.class);
 		TenantDataSource tenantDataSource = tenantDataSourceWriter.make();
-		tenantDataSource.setTenantId(tenant);
+		tenantDataSource.setTenant(tenant);
 		tenantDataSource.setEntityGroupName("org.apache.ofbiz");
 
 		switch (this.getDbType()) {
@@ -205,8 +205,8 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 		// UserLoginSecurityGroup
 		ResourceWriter<UserLoginSecurityGroup> userLoginSecurityGroupWriter = context.getResourceManager().getResourceWriter(UserLoginSecurityGroup.class, this.getTenantId());
 		UserLoginSecurityGroup userLoginSecurityGroup = userLoginSecurityGroupWriter.make();
-		userLoginSecurityGroup.setUserLoginId(userLogin);
-		userLoginSecurityGroup.setGroupId(context.createProxy(SecurityGroup.class, "SUPER", this.getTenant()));
+		userLoginSecurityGroup.setUserLogin(userLogin);
+		userLoginSecurityGroup.setGroup(context.createProxy(SecurityGroup.class, "SUPER", this.getTenant()));
 		userLoginSecurityGroup.setFromDate(new Date());
 		userLoginSecurityGroupWriter.create(userLoginSecurityGroup, this.isUpdate());
 

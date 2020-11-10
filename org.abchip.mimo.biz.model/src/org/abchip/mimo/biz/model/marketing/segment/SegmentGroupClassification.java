@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupClassification#getSegmentGroupId <em>Segment Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupClassification#getPartyClassificationGroupId <em>Party Classification Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupClassification#getSegmentGroup <em>Segment Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupClassification#getPartyClassificationGroup <em>Party Classification Group</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupClassification()
@@ -30,57 +30,49 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface SegmentGroupClassification extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Party Classification Group Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Classification Group Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Classification Group Id</em>' reference.
-	 * @see #setPartyClassificationGroupId(PartyClassificationGroup)
-	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupClassification_PartyClassificationGroupId()
-	 * @model keys="partyClassificationGroupId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	PartyClassificationGroup getPartyClassificationGroupId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupClassification#getPartyClassificationGroupId <em>Party Classification Group Id</em>}' reference.
+	 * Returns the value of the '<em><b>Segment Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Classification Group Id</em>' reference.
-	 * @see #getPartyClassificationGroupId()
-	 * @generated
-	 */
-	void setPartyClassificationGroupId(PartyClassificationGroup value);
-
-	/**
-	 * Returns the value of the '<em><b>Segment Group Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Segment Group Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Segment Group Id</em>' reference.
-	 * @see #setSegmentGroupId(SegmentGroup)
-	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupClassification_SegmentGroupId()
+	 * @return the value of the '<em>Segment Group</em>' reference.
+	 * @see #setSegmentGroup(SegmentGroup)
+	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupClassification_SegmentGroup()
 	 * @model keys="segmentGroupId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	SegmentGroup getSegmentGroupId();
+	SegmentGroup getSegmentGroup();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupClassification#getSegmentGroupId <em>Segment Group Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupClassification#getSegmentGroup <em>Segment Group</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Segment Group Id</em>' reference.
-	 * @see #getSegmentGroupId()
+	 * @param value the new value of the '<em>Segment Group</em>' reference.
+	 * @see #getSegmentGroup()
 	 * @generated
 	 */
-	void setSegmentGroupId(SegmentGroup value);
+	void setSegmentGroup(SegmentGroup value);
+
+	/**
+	 * Returns the value of the '<em><b>Party Classification Group</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party Classification Group</em>' reference.
+	 * @see #setPartyClassificationGroup(PartyClassificationGroup)
+	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupClassification_PartyClassificationGroup()
+	 * @model keys="partyClassificationGroupId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	PartyClassificationGroup getPartyClassificationGroup();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupClassification#getPartyClassificationGroup <em>Party Classification Group</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party Classification Group</em>' reference.
+	 * @see #getPartyClassificationGroup()
+	 * @generated
+	 */
+	void setPartyClassificationGroup(PartyClassificationGroup value);
 
 } // SegmentGroupClassification

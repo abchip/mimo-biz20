@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeImpl#isHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeImpl#getOrderAdjustmentTypeAttrs <em>Order Adjustment Type Attrs</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -214,6 +214,26 @@ public class OrderAdjustmentTypeImpl extends EntityTypeImpl<OrderAdjustment> imp
 	 * @generated
 	 */
 	@Override
+	public OrderAdjustmentType getParentType() {
+		return (OrderAdjustmentType)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT_TYPE__PARENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParentType(OrderAdjustmentType newParentType) {
+		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT_TYPE__PARENT_TYPE, newParentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getOrderAdjustmentTypeId() {
 		return (String)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT_TYPE__ORDER_ADJUSTMENT_TYPE_ID, true);
 	}
@@ -226,26 +246,6 @@ public class OrderAdjustmentTypeImpl extends EntityTypeImpl<OrderAdjustment> imp
 	@Override
 	public void setOrderAdjustmentTypeId(String newOrderAdjustmentTypeId) {
 		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT_TYPE__ORDER_ADJUSTMENT_TYPE_ID, newOrderAdjustmentTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderAdjustmentType getParentTypeId() {
-		return (OrderAdjustmentType)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT_TYPE__PARENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentTypeId(OrderAdjustmentType newParentTypeId) {
-		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT_TYPE__PARENT_TYPE_ID, newParentTypeId);
 	}
 
 	/**

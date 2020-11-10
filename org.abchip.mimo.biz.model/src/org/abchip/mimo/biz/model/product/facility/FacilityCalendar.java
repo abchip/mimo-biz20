@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getFacilityId <em>Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getFacilityCalendarTypeId <em>Facility Calendar Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getFacility <em>Facility</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getFacilityCalendarType <em>Facility Calendar Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getCalendarId <em>Calendar Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getThruDate <em>Thru Date</em>}</li>
@@ -32,6 +32,52 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface FacilityCalendar extends EntityTyped<FacilityCalendarType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Facility</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Facility</em>' reference.
+	 * @see #setFacility(Facility)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityCalendar_Facility()
+	 * @model keys="facilityId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Facility getFacility();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getFacility <em>Facility</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Facility</em>' reference.
+	 * @see #getFacility()
+	 * @generated
+	 */
+	void setFacility(Facility value);
+
+	/**
+	 * Returns the value of the '<em><b>Facility Calendar Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Facility Calendar Type</em>' reference.
+	 * @see #setFacilityCalendarType(FacilityCalendarType)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityCalendar_FacilityCalendarType()
+	 * @model keys="facilityCalendarTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	FacilityCalendarType getFacilityCalendarType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getFacilityCalendarType <em>Facility Calendar Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Facility Calendar Type</em>' reference.
+	 * @see #getFacilityCalendarType()
+	 * @generated
+	 */
+	void setFacilityCalendarType(FacilityCalendarType value);
+
 	/**
 	 * Returns the value of the '<em><b>Calendar Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -112,59 +158,5 @@ public interface FacilityCalendar extends EntityTyped<FacilityCalendarType>, Ent
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Facility Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facility Id</em>' reference.
-	 * @see #setFacilityId(Facility)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityCalendar_FacilityId()
-	 * @model keys="facilityId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Facility getFacilityId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getFacilityId <em>Facility Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Facility Id</em>' reference.
-	 * @see #getFacilityId()
-	 * @generated
-	 */
-	void setFacilityId(Facility value);
-
-	/**
-	 * Returns the value of the '<em><b>Facility Calendar Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Calendar Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facility Calendar Type Id</em>' reference.
-	 * @see #setFacilityCalendarTypeId(FacilityCalendarType)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityCalendar_FacilityCalendarTypeId()
-	 * @model keys="facilityCalendarTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	FacilityCalendarType getFacilityCalendarTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityCalendar#getFacilityCalendarTypeId <em>Facility Calendar Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Facility Calendar Type Id</em>' reference.
-	 * @see #getFacilityCalendarTypeId()
-	 * @generated
-	 */
-	void setFacilityCalendarTypeId(FacilityCalendarType value);
 
 } // FacilityCalendar

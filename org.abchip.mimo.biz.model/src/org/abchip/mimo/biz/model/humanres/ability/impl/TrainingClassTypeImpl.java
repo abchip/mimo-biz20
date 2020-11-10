@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.TrainingClassTypeImpl#getTrainingClassTypeId <em>Training Class Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.TrainingClassTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.TrainingClassTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.TrainingClassTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.TrainingClassTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,8 +200,8 @@ public class TrainingClassTypeImpl extends EntityTypeImpl<PersonTraining> implem
 	 * @generated
 	 */
 	@Override
-	public TrainingClassType getParentTypeId() {
-		return (TrainingClassType)eGet(AbilityPackage.Literals.TRAINING_CLASS_TYPE__PARENT_TYPE_ID, true);
+	public TrainingClassType getParentType() {
+		return (TrainingClassType)eGet(AbilityPackage.Literals.TRAINING_CLASS_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -210,8 +210,8 @@ public class TrainingClassTypeImpl extends EntityTypeImpl<PersonTraining> implem
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(TrainingClassType newParentTypeId) {
-		eSet(AbilityPackage.Literals.TRAINING_CLASS_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(TrainingClassType newParentType) {
+		eSet(AbilityPackage.Literals.TRAINING_CLASS_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

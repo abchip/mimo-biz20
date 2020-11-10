@@ -24,8 +24,8 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductFeaturePrice#getProductPriceTypeId <em>Product Price Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductFeaturePrice#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductFeaturePrice#getProductPriceType <em>Product Price Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductFeaturePrice#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductFeaturePrice#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductFeaturePrice#getProductFeatureId <em>Product Feature Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.ProductFeaturePrice#getCreatedByUserLogin <em>Created By User Login</em>}</li>
@@ -41,6 +41,52 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface ProductFeaturePrice extends EntityTyped<ProductPriceType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product Price Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Price Type</em>' reference.
+	 * @see #setProductPriceType(ProductPriceType)
+	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductFeaturePrice_ProductPriceType()
+	 * @model keys="productPriceTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductPriceType getProductPriceType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductFeaturePrice#getProductPriceType <em>Product Price Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Price Type</em>' reference.
+	 * @see #getProductPriceType()
+	 * @generated
+	 */
+	void setProductPriceType(ProductPriceType value);
+
+	/**
+	 * Returns the value of the '<em><b>Currency Uom</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Currency Uom</em>' reference.
+	 * @see #setCurrencyUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductFeaturePrice_CurrencyUom()
+	 * @model keys="uomId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Uom getCurrencyUom();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductFeaturePrice#getCurrencyUom <em>Currency Uom</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Currency Uom</em>' reference.
+	 * @see #getCurrencyUom()
+	 * @generated
+	 */
+	void setCurrencyUom(Uom value);
+
 	/**
 	 * Returns the value of the '<em><b>Created By User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -92,33 +138,6 @@ public interface ProductFeaturePrice extends EntityTyped<ProductPriceType>, Enti
 	 * @generated
 	 */
 	void setCreatedDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Currency Uom Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Currency Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Currency Uom Id</em>' reference.
-	 * @see #setCurrencyUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductFeaturePrice_CurrencyUomId()
-	 * @model keys="uomId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Uom getCurrencyUomId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductFeaturePrice#getCurrencyUomId <em>Currency Uom Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Currency Uom Id</em>' reference.
-	 * @see #getCurrencyUomId()
-	 * @generated
-	 */
-	void setCurrencyUomId(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -278,32 +297,5 @@ public interface ProductFeaturePrice extends EntityTyped<ProductPriceType>, Enti
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Price Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Price Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Price Type Id</em>' reference.
-	 * @see #setProductPriceTypeId(ProductPriceType)
-	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductFeaturePrice_ProductPriceTypeId()
-	 * @model keys="productPriceTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductPriceType getProductPriceTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.price.ProductFeaturePrice#getProductPriceTypeId <em>Product Price Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Price Type Id</em>' reference.
-	 * @see #getProductPriceTypeId()
-	 * @generated
-	 */
-	void setProductPriceTypeId(ProductPriceType value);
 
 } // ProductFeaturePrice

@@ -43,28 +43,28 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getDataResourceId <em>Data Resource Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getCharacterSetId <em>Character Set Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getCharacterSet <em>Character Set</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getCreatedDate <em>Created Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getDataCategoryId <em>Data Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getDataCategory <em>Data Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getDataResourceAttributes <em>Data Resource Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getDataResourceMetaDatas <em>Data Resource Meta Datas</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getDataResourceName <em>Data Resource Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getDataResourcePurposes <em>Data Resource Purposes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getDataResourceTypeId <em>Data Resource Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getDataSourceId <em>Data Source Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getDataTemplateTypeId <em>Data Template Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getDataResourceType <em>Data Resource Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getDataSource <em>Data Source</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getDataTemplateType <em>Data Template Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#isIsPublic <em>Is Public</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getLocaleString <em>Locale String</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getMimeTypeId <em>Mime Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getMimeType <em>Mime Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getObjectInfo <em>Object Info</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getProductFeatureDataResources <em>Product Feature Data Resources</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getRelatedDetailId <em>Related Detail Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getSurveyId <em>Survey Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getSurveyResponseId <em>Survey Response Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getSurvey <em>Survey</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl#getSurveyResponse <em>Survey Response</em>}</li>
  * </ul>
  *
  * @generated
@@ -186,26 +186,6 @@ public class DataResourceImpl extends EntityTypedImpl<DataResourceType> implemen
 	 * @generated
 	 */
 	@Override
-	public CharacterSet getCharacterSetId() {
-		return (CharacterSet)eGet(DataPackage.Literals.DATA_RESOURCE__CHARACTER_SET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCharacterSetId(CharacterSet newCharacterSetId) {
-		eSet(DataPackage.Literals.DATA_RESOURCE__CHARACTER_SET_ID, newCharacterSetId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public UserLogin getCreatedByUserLogin() {
 		return (UserLogin)eGet(DataPackage.Literals.DATA_RESOURCE__CREATED_BY_USER_LOGIN, true);
 	}
@@ -246,8 +226,8 @@ public class DataResourceImpl extends EntityTypedImpl<DataResourceType> implemen
 	 * @generated
 	 */
 	@Override
-	public DataCategory getDataCategoryId() {
-		return (DataCategory)eGet(DataPackage.Literals.DATA_RESOURCE__DATA_CATEGORY_ID, true);
+	public DataCategory getDataCategory() {
+		return (DataCategory)eGet(DataPackage.Literals.DATA_RESOURCE__DATA_CATEGORY, true);
 	}
 
 	/**
@@ -256,8 +236,8 @@ public class DataResourceImpl extends EntityTypedImpl<DataResourceType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setDataCategoryId(DataCategory newDataCategoryId) {
-		eSet(DataPackage.Literals.DATA_RESOURCE__DATA_CATEGORY_ID, newDataCategoryId);
+	public void setDataCategory(DataCategory newDataCategory) {
+		eSet(DataPackage.Literals.DATA_RESOURCE__DATA_CATEGORY, newDataCategory);
 	}
 
 	/**
@@ -308,6 +288,26 @@ public class DataResourceImpl extends EntityTypedImpl<DataResourceType> implemen
 	 * @generated
 	 */
 	@Override
+	public CharacterSet getCharacterSet() {
+		return (CharacterSet)eGet(DataPackage.Literals.DATA_RESOURCE__CHARACTER_SET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCharacterSet(CharacterSet newCharacterSet) {
+		eSet(DataPackage.Literals.DATA_RESOURCE__CHARACTER_SET, newCharacterSet);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDataResourceName() {
 		return (String)eGet(DataPackage.Literals.DATA_RESOURCE__DATA_RESOURCE_NAME, true);
 	}
@@ -339,6 +339,66 @@ public class DataResourceImpl extends EntityTypedImpl<DataResourceType> implemen
 	 * @generated
 	 */
 	@Override
+	public DataResourceType getDataResourceType() {
+		return (DataResourceType)eGet(DataPackage.Literals.DATA_RESOURCE__DATA_RESOURCE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDataResourceType(DataResourceType newDataResourceType) {
+		eSet(DataPackage.Literals.DATA_RESOURCE__DATA_RESOURCE_TYPE, newDataResourceType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DataSource getDataSource() {
+		return (DataSource)eGet(DataPackage.Literals.DATA_RESOURCE__DATA_SOURCE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDataSource(DataSource newDataSource) {
+		eSet(DataPackage.Literals.DATA_RESOURCE__DATA_SOURCE, newDataSource);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DataTemplateType getDataTemplateType() {
+		return (DataTemplateType)eGet(DataPackage.Literals.DATA_RESOURCE__DATA_TEMPLATE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDataTemplateType(DataTemplateType newDataTemplateType) {
+		eSet(DataPackage.Literals.DATA_RESOURCE__DATA_TEMPLATE_TYPE, newDataTemplateType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean isIsPublic() {
 		return (Boolean)eGet(DataPackage.Literals.DATA_RESOURCE__IS_PUBLIC, true);
 	}
@@ -351,66 +411,6 @@ public class DataResourceImpl extends EntityTypedImpl<DataResourceType> implemen
 	@Override
 	public void setIsPublic(boolean newIsPublic) {
 		eSet(DataPackage.Literals.DATA_RESOURCE__IS_PUBLIC, newIsPublic);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DataResourceType getDataResourceTypeId() {
-		return (DataResourceType)eGet(DataPackage.Literals.DATA_RESOURCE__DATA_RESOURCE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDataResourceTypeId(DataResourceType newDataResourceTypeId) {
-		eSet(DataPackage.Literals.DATA_RESOURCE__DATA_RESOURCE_TYPE_ID, newDataResourceTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DataSource getDataSourceId() {
-		return (DataSource)eGet(DataPackage.Literals.DATA_RESOURCE__DATA_SOURCE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDataSourceId(DataSource newDataSourceId) {
-		eSet(DataPackage.Literals.DATA_RESOURCE__DATA_SOURCE_ID, newDataSourceId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DataTemplateType getDataTemplateTypeId() {
-		return (DataTemplateType)eGet(DataPackage.Literals.DATA_RESOURCE__DATA_TEMPLATE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDataTemplateTypeId(DataTemplateType newDataTemplateTypeId) {
-		eSet(DataPackage.Literals.DATA_RESOURCE__DATA_TEMPLATE_TYPE_ID, newDataTemplateTypeId);
 	}
 
 	/**
@@ -479,8 +479,8 @@ public class DataResourceImpl extends EntityTypedImpl<DataResourceType> implemen
 	 * @generated
 	 */
 	@Override
-	public MimeType getMimeTypeId() {
-		return (MimeType)eGet(DataPackage.Literals.DATA_RESOURCE__MIME_TYPE_ID, true);
+	public MimeType getMimeType() {
+		return (MimeType)eGet(DataPackage.Literals.DATA_RESOURCE__MIME_TYPE, true);
 	}
 
 	/**
@@ -489,8 +489,8 @@ public class DataResourceImpl extends EntityTypedImpl<DataResourceType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setMimeTypeId(MimeType newMimeTypeId) {
-		eSet(DataPackage.Literals.DATA_RESOURCE__MIME_TYPE_ID, newMimeTypeId);
+	public void setMimeType(MimeType newMimeType) {
+		eSet(DataPackage.Literals.DATA_RESOURCE__MIME_TYPE, newMimeType);
 	}
 
 	/**
@@ -550,8 +550,8 @@ public class DataResourceImpl extends EntityTypedImpl<DataResourceType> implemen
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(DataPackage.Literals.DATA_RESOURCE__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(DataPackage.Literals.DATA_RESOURCE__STATUS, true);
 	}
 
 	/**
@@ -560,8 +560,8 @@ public class DataResourceImpl extends EntityTypedImpl<DataResourceType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(DataPackage.Literals.DATA_RESOURCE__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(DataPackage.Literals.DATA_RESOURCE__STATUS, newStatus);
 	}
 
 	/**
@@ -570,8 +570,8 @@ public class DataResourceImpl extends EntityTypedImpl<DataResourceType> implemen
 	 * @generated
 	 */
 	@Override
-	public Survey getSurveyId() {
-		return (Survey)eGet(DataPackage.Literals.DATA_RESOURCE__SURVEY_ID, true);
+	public Survey getSurvey() {
+		return (Survey)eGet(DataPackage.Literals.DATA_RESOURCE__SURVEY, true);
 	}
 
 	/**
@@ -580,8 +580,8 @@ public class DataResourceImpl extends EntityTypedImpl<DataResourceType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setSurveyId(Survey newSurveyId) {
-		eSet(DataPackage.Literals.DATA_RESOURCE__SURVEY_ID, newSurveyId);
+	public void setSurvey(Survey newSurvey) {
+		eSet(DataPackage.Literals.DATA_RESOURCE__SURVEY, newSurvey);
 	}
 
 	/**
@@ -590,8 +590,8 @@ public class DataResourceImpl extends EntityTypedImpl<DataResourceType> implemen
 	 * @generated
 	 */
 	@Override
-	public SurveyResponse getSurveyResponseId() {
-		return (SurveyResponse)eGet(DataPackage.Literals.DATA_RESOURCE__SURVEY_RESPONSE_ID, true);
+	public SurveyResponse getSurveyResponse() {
+		return (SurveyResponse)eGet(DataPackage.Literals.DATA_RESOURCE__SURVEY_RESPONSE, true);
 	}
 
 	/**
@@ -600,8 +600,8 @@ public class DataResourceImpl extends EntityTypedImpl<DataResourceType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setSurveyResponseId(SurveyResponse newSurveyResponseId) {
-		eSet(DataPackage.Literals.DATA_RESOURCE__SURVEY_RESPONSE_ID, newSurveyResponseId);
+	public void setSurveyResponse(SurveyResponse newSurveyResponse) {
+		eSet(DataPackage.Literals.DATA_RESOURCE__SURVEY_RESPONSE, newSurveyResponse);
 	}
 
 	/**

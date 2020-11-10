@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebAnalyticsConfigImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebAnalyticsConfigImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebAnalyticsConfigImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebAnalyticsConfigImpl#getWebAnalyticsTypeId <em>Web Analytics Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebAnalyticsConfigImpl#getWebSiteId <em>Web Site Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebAnalyticsConfigImpl#getWebAnalyticsType <em>Web Analytics Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebAnalyticsConfigImpl#getWebSite <em>Web Site</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebAnalyticsConfigImpl#getWebAnalyticsCode <em>Web Analytics Code</em>}</li>
  * </ul>
  *
@@ -153,6 +153,46 @@ public class WebAnalyticsConfigImpl extends EntityTypedImpl<WebAnalyticsType> im
 	 * @generated
 	 */
 	@Override
+	public WebAnalyticsType getWebAnalyticsType() {
+		return (WebAnalyticsType)eGet(WebsitePackage.Literals.WEB_ANALYTICS_CONFIG__WEB_ANALYTICS_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWebAnalyticsType(WebAnalyticsType newWebAnalyticsType) {
+		eSet(WebsitePackage.Literals.WEB_ANALYTICS_CONFIG__WEB_ANALYTICS_TYPE, newWebAnalyticsType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public WebSite getWebSite() {
+		return (WebSite)eGet(WebsitePackage.Literals.WEB_ANALYTICS_CONFIG__WEB_SITE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWebSite(WebSite newWebSite) {
+		eSet(WebsitePackage.Literals.WEB_ANALYTICS_CONFIG__WEB_SITE, newWebSite);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getWebAnalyticsCode() {
 		return (String)eGet(WebsitePackage.Literals.WEB_ANALYTICS_CONFIG__WEB_ANALYTICS_CODE, true);
 	}
@@ -203,46 +243,6 @@ public class WebAnalyticsConfigImpl extends EntityTypedImpl<WebAnalyticsType> im
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WebAnalyticsType getWebAnalyticsTypeId() {
-		return (WebAnalyticsType)eGet(WebsitePackage.Literals.WEB_ANALYTICS_CONFIG__WEB_ANALYTICS_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWebAnalyticsTypeId(WebAnalyticsType newWebAnalyticsTypeId) {
-		eSet(WebsitePackage.Literals.WEB_ANALYTICS_CONFIG__WEB_ANALYTICS_TYPE_ID, newWebAnalyticsTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WebSite getWebSiteId() {
-		return (WebSite)eGet(WebsitePackage.Literals.WEB_ANALYTICS_CONFIG__WEB_SITE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWebSiteId(WebSite newWebSiteId) {
-		eSet(WebsitePackage.Literals.WEB_ANALYTICS_CONFIG__WEB_SITE_ID, newWebSiteId);
 	}
 
 } //WebAnalyticsConfigImpl

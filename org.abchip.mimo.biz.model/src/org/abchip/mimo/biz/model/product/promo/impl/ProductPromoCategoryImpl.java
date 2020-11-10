@@ -30,14 +30,14 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#getProductPromoId <em>Product Promo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#getProductCategoryId <em>Product Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#getProductPromo <em>Product Promo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#getProductCategory <em>Product Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#getAndGroupId <em>And Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#getProductPromoActionSeqId <em>Product Promo Action Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#getProductPromoCondSeqId <em>Product Promo Cond Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#getProductPromoRuleId <em>Product Promo Rule Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#getIncludeSubCategories <em>Include Sub Categories</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#getProductPromoApplEnumId <em>Product Promo Appl Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#getProductPromoApplEnum <em>Product Promo Appl Enum</em>}</li>
  * </ul>
  *
  * @generated
@@ -159,6 +159,46 @@ public class ProductPromoCategoryImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
+	public ProductPromo getProductPromo() {
+		return (ProductPromo)eGet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPromo(ProductPromo newProductPromo) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO, newProductPromo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductCategory getProductCategory() {
+		return (ProductCategory)eGet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__PRODUCT_CATEGORY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductCategory(ProductCategory newProductCategory) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__PRODUCT_CATEGORY, newProductCategory);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAndGroupId() {
 		return (String)eGet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__AND_GROUP_ID, true);
 	}
@@ -191,26 +231,6 @@ public class ProductPromoCategoryImpl extends EntityIdentifiableImpl implements 
 	@Override
 	public void setProductPromoActionSeqId(String newProductPromoActionSeqId) {
 		eSet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO_ACTION_SEQ_ID, newProductPromoActionSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Enumeration getProductPromoApplEnumId() {
-		return (Enumeration)eGet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO_APPL_ENUM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPromoApplEnumId(Enumeration newProductPromoApplEnumId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO_APPL_ENUM_ID, newProductPromoApplEnumId);
 	}
 
 	/**
@@ -317,8 +337,8 @@ public class ProductPromoCategoryImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public ProductPromo getProductPromoId() {
-		return (ProductPromo)eGet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO_ID, true);
+	public Enumeration getProductPromoApplEnum() {
+		return (Enumeration)eGet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO_APPL_ENUM, true);
 	}
 
 	/**
@@ -327,28 +347,8 @@ public class ProductPromoCategoryImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setProductPromoId(ProductPromo newProductPromoId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO_ID, newProductPromoId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductCategory getProductCategoryId() {
-		return (ProductCategory)eGet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__PRODUCT_CATEGORY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductCategoryId(ProductCategory newProductCategoryId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__PRODUCT_CATEGORY_ID, newProductCategoryId);
+	public void setProductPromoApplEnum(Enumeration newProductPromoApplEnum) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO_APPL_ENUM, newProductPromoApplEnum);
 	}
 
 } //ProductPromoCategoryImpl

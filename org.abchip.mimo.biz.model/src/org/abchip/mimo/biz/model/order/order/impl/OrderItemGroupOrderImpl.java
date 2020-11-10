@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemGroupOrderImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemGroupOrderImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemGroupOrderImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemGroupOrderImpl#getGroupOrderId <em>Group Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemGroupOrderImpl#getGroupOrder <em>Group Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemGroupOrderImpl#getOrderId <em>Order Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemGroupOrderImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  * </ul>
@@ -152,8 +152,8 @@ public class OrderItemGroupOrderImpl extends EntityIdentifiableImpl implements O
 	 * @generated
 	 */
 	@Override
-	public ProductGroupOrder getGroupOrderId() {
-		return (ProductGroupOrder)eGet(OrderPackage.Literals.ORDER_ITEM_GROUP_ORDER__GROUP_ORDER_ID, true);
+	public ProductGroupOrder getGroupOrder() {
+		return (ProductGroupOrder)eGet(OrderPackage.Literals.ORDER_ITEM_GROUP_ORDER__GROUP_ORDER, true);
 	}
 
 	/**
@@ -162,8 +162,8 @@ public class OrderItemGroupOrderImpl extends EntityIdentifiableImpl implements O
 	 * @generated
 	 */
 	@Override
-	public void setGroupOrderId(ProductGroupOrder newGroupOrderId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_GROUP_ORDER__GROUP_ORDER_ID, newGroupOrderId);
+	public void setGroupOrder(ProductGroupOrder newGroupOrder) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_GROUP_ORDER__GROUP_ORDER, newGroupOrder);
 	}
 
 	/**

@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderTypeImpl#getReturnHeaderTypeId <em>Return Header Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -179,8 +179,8 @@ public class ReturnHeaderTypeImpl extends EntityTypeImpl<ReturnHeader> implement
 	 * @generated
 	 */
 	@Override
-	public ReturnHeaderType getParentTypeId() {
-		return (ReturnHeaderType)eGet(ReturnPackage.Literals.RETURN_HEADER_TYPE__PARENT_TYPE_ID, true);
+	public ReturnHeaderType getParentType() {
+		return (ReturnHeaderType)eGet(ReturnPackage.Literals.RETURN_HEADER_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -189,8 +189,8 @@ public class ReturnHeaderTypeImpl extends EntityTypeImpl<ReturnHeader> implement
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(ReturnHeaderType newParentTypeId) {
-		eSet(ReturnPackage.Literals.RETURN_HEADER_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(ReturnHeaderType newParentType) {
+		eSet(ReturnPackage.Literals.RETURN_HEADER_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

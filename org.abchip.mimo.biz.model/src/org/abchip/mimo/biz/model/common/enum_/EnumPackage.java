@@ -135,13 +135,13 @@ public interface EnumPackage extends EPackage {
 	int ENUMERATION__ENUM_CODE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Enum Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Enum Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION__ENUM_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int ENUMERATION__ENUM_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Id</b></em>' attribute.
@@ -253,13 +253,13 @@ public interface EnumPackage extends EPackage {
 	int ENUMERATION_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int ENUMERATION_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Enumeration Type</em>' class.
@@ -315,15 +315,15 @@ public interface EnumPackage extends EPackage {
 	EAttribute getEnumeration_EnumCode();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.enum_.Enumeration#getEnumTypeId <em>Enum Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.enum_.Enumeration#getEnumType <em>Enum Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Enum Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.enum_.Enumeration#getEnumTypeId()
+	 * @return the meta object for the reference '<em>Enum Type</em>'.
+	 * @see org.abchip.mimo.biz.model.common.enum_.Enumeration#getEnumType()
 	 * @see #getEnumeration()
 	 * @generated
 	 */
-	EReference getEnumeration_EnumTypeId();
+	EReference getEnumeration_EnumType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.enum_.Enumeration#getSequenceId <em>Sequence Id</em>}'.
@@ -391,15 +391,15 @@ public interface EnumPackage extends EPackage {
 	EAttribute getEnumerationType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.enum_.EnumerationType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.enum_.EnumerationType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.enum_.EnumerationType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.common.enum_.EnumerationType#getParentType()
 	 * @see #getEnumerationType()
 	 * @generated
 	 */
-	EReference getEnumerationType_ParentTypeId();
+	EReference getEnumerationType_ParentType();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -458,12 +458,12 @@ public interface EnumPackage extends EPackage {
 		EAttribute ENUMERATION__ENUM_CODE = eINSTANCE.getEnumeration_EnumCode();
 
 		/**
-		 * The meta object literal for the '<em><b>Enum Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Enum Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ENUMERATION__ENUM_TYPE_ID = eINSTANCE.getEnumeration_EnumTypeId();
+		EReference ENUMERATION__ENUM_TYPE = eINSTANCE.getEnumeration_EnumType();
 
 		/**
 		 * The meta object literal for the '<em><b>Sequence Id</b></em>' attribute feature.
@@ -516,12 +516,12 @@ public interface EnumPackage extends EPackage {
 		EAttribute ENUMERATION_TYPE__HAS_TABLE = eINSTANCE.getEnumerationType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ENUMERATION_TYPE__PARENT_TYPE_ID = eINSTANCE.getEnumerationType_ParentTypeId();
+		EReference ENUMERATION_TYPE__PARENT_TYPE = eINSTANCE.getEnumerationType_ParentType();
 
 	}
 

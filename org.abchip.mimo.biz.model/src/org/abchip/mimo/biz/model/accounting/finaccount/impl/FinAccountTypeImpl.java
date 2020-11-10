@@ -38,8 +38,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeImpl#getFinAccountTypeGlAccounts <em>Fin Account Type Gl Accounts</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeImpl#isHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeImpl#getIsRefundable <em>Is Refundable</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeImpl#getReplenishEnumId <em>Replenish Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeImpl#getParentType <em>Parent Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeImpl#getReplenishEnum <em>Replenish Enum</em>}</li>
  * </ul>
  *
  * @generated
@@ -249,8 +249,8 @@ public class FinAccountTypeImpl extends EntityTypeImpl<FinAccount> implements Fi
 	 * @generated
 	 */
 	@Override
-	public Enumeration getReplenishEnumId() {
-		return (Enumeration)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE__REPLENISH_ENUM_ID, true);
+	public FinAccountType getParentType() {
+		return (FinAccountType)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -259,8 +259,28 @@ public class FinAccountTypeImpl extends EntityTypeImpl<FinAccount> implements Fi
 	 * @generated
 	 */
 	@Override
-	public void setReplenishEnumId(Enumeration newReplenishEnumId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE__REPLENISH_ENUM_ID, newReplenishEnumId);
+	public void setParentType(FinAccountType newParentType) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE__PARENT_TYPE, newParentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Enumeration getReplenishEnum() {
+		return (Enumeration)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE__REPLENISH_ENUM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setReplenishEnum(Enumeration newReplenishEnum) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE__REPLENISH_ENUM, newReplenishEnum);
 	}
 
 	/**
@@ -299,26 +319,6 @@ public class FinAccountTypeImpl extends EntityTypeImpl<FinAccount> implements Fi
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FinAccountType getParentTypeId() {
-		return (FinAccountType)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE__PARENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentTypeId(FinAccountType newParentTypeId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE__PARENT_TYPE_ID, newParentTypeId);
 	}
 
 	/**

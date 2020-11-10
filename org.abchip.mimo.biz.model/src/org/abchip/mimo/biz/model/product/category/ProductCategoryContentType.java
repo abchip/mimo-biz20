@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryContentType#getProdCatContentTypeId <em>Prod Cat Content Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryContentType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryContentType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryContentType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryContentType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryContentType()
@@ -83,30 +83,26 @@ public interface ProductCategoryContentType extends EntityType<ProductCategoryCo
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(ProductCategoryContentType)
-	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryContentType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(ProductCategoryContentType)
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryContentType_ParentType()
 	 * @model keys="prodCatContentTypeId"
 	 * @generated
 	 */
-	ProductCategoryContentType getParentTypeId();
+	ProductCategoryContentType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryContentType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryContentType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(ProductCategoryContentType value);
+	void setParentType(ProductCategoryContentType value);
 
 	/**
 	 * Returns the value of the '<em><b>Prod Cat Content Type Id</b></em>' attribute.

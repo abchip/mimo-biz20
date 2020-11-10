@@ -33,12 +33,12 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl#getInvoiceItemTypeId <em>Invoice Item Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl#getDefaultGlAccountId <em>Default Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl#getDefaultGlAccount <em>Default Gl Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl#isHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl#getInvoiceItemTypeAttrs <em>Invoice Item Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl#getInvoiceItemTypeGlAccounts <em>Invoice Item Type Gl Accounts</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -166,26 +166,6 @@ public class InvoiceItemTypeImpl extends EntityTypeImpl<InvoiceItem> implements 
 	 * @generated
 	 */
 	@Override
-	public GlAccount getDefaultGlAccountId() {
-		return (GlAccount)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE__DEFAULT_GL_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDefaultGlAccountId(GlAccount newDefaultGlAccountId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM_TYPE__DEFAULT_GL_ACCOUNT_ID, newDefaultGlAccountId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getDescription() {
 		return (String)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE__DESCRIPTION, true);
 	}
@@ -248,8 +228,8 @@ public class InvoiceItemTypeImpl extends EntityTypeImpl<InvoiceItem> implements 
 	 * @generated
 	 */
 	@Override
-	public InvoiceItemType getParentTypeId() {
-		return (InvoiceItemType)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE__PARENT_TYPE_ID, true);
+	public InvoiceItemType getParentType() {
+		return (InvoiceItemType)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -258,8 +238,8 @@ public class InvoiceItemTypeImpl extends EntityTypeImpl<InvoiceItem> implements 
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(InvoiceItemType newParentTypeId) {
-		eSet(InvoicePackage.Literals.INVOICE_ITEM_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(InvoiceItemType newParentType) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**
@@ -318,6 +298,26 @@ public class InvoiceItemTypeImpl extends EntityTypeImpl<InvoiceItem> implements 
 	@Override
 	public void setInvoiceItemTypeId(String newInvoiceItemTypeId) {
 		eSet(InvoicePackage.Literals.INVOICE_ITEM_TYPE__INVOICE_ITEM_TYPE_ID, newInvoiceItemTypeId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GlAccount getDefaultGlAccount() {
+		return (GlAccount)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE__DEFAULT_GL_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDefaultGlAccount(GlAccount newDefaultGlAccount) {
+		eSet(InvoicePackage.Literals.INVOICE_ITEM_TYPE__DEFAULT_GL_ACCOUNT, newDefaultGlAccount);
 	}
 
 } //InvoiceItemTypeImpl

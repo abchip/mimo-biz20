@@ -24,7 +24,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentType#getCostComponentTypeAttrs <em>Cost Component Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponentType()
@@ -85,30 +85,26 @@ public interface CostComponentType extends EntityType<CostComponent>, EntityInfo
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(CostComponentType)
-	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponentType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(CostComponentType)
+	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponentType_ParentType()
 	 * @model keys="costComponentTypeId"
 	 * @generated
 	 */
-	CostComponentType getParentTypeId();
+	CostComponentType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.cost.CostComponentType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.cost.CostComponentType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(CostComponentType value);
+	void setParentType(CostComponentType value);
 
 	/**
 	 * Returns the value of the '<em><b>Cost Component Type Id</b></em>' attribute.

@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRoleImpl#getFacilityGroupId <em>Facility Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRoleImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRoleImpl#getFacilityGroup <em>Facility Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRoleImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupRoleImpl#getRoleType <em>Role Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -154,8 +154,8 @@ public class FacilityGroupRoleImpl extends EntityIdentifiableImpl implements Fac
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(FacilityPackage.Literals.FACILITY_GROUP_ROLE__PARTY_ID, true);
+	public FacilityGroup getFacilityGroup() {
+		return (FacilityGroup)eGet(FacilityPackage.Literals.FACILITY_GROUP_ROLE__FACILITY_GROUP, true);
 	}
 
 	/**
@@ -164,8 +164,8 @@ public class FacilityGroupRoleImpl extends EntityIdentifiableImpl implements Fac
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(FacilityPackage.Literals.FACILITY_GROUP_ROLE__PARTY_ID, newPartyId);
+	public void setFacilityGroup(FacilityGroup newFacilityGroup) {
+		eSet(FacilityPackage.Literals.FACILITY_GROUP_ROLE__FACILITY_GROUP, newFacilityGroup);
 	}
 
 	/**
@@ -174,8 +174,8 @@ public class FacilityGroupRoleImpl extends EntityIdentifiableImpl implements Fac
 	 * @generated
 	 */
 	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(FacilityPackage.Literals.FACILITY_GROUP_ROLE__ROLE_TYPE_ID, true);
+	public Party getParty() {
+		return (Party)eGet(FacilityPackage.Literals.FACILITY_GROUP_ROLE__PARTY, true);
 	}
 
 	/**
@@ -184,8 +184,28 @@ public class FacilityGroupRoleImpl extends EntityIdentifiableImpl implements Fac
 	 * @generated
 	 */
 	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(FacilityPackage.Literals.FACILITY_GROUP_ROLE__ROLE_TYPE_ID, newRoleTypeId);
+	public void setParty(Party newParty) {
+		eSet(FacilityPackage.Literals.FACILITY_GROUP_ROLE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RoleType getRoleType() {
+		return (RoleType)eGet(FacilityPackage.Literals.FACILITY_GROUP_ROLE__ROLE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRoleType(RoleType newRoleType) {
+		eSet(FacilityPackage.Literals.FACILITY_GROUP_ROLE__ROLE_TYPE, newRoleType);
 	}
 
 	/**
@@ -224,26 +244,6 @@ public class FacilityGroupRoleImpl extends EntityIdentifiableImpl implements Fac
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FacilityGroup getFacilityGroupId() {
-		return (FacilityGroup)eGet(FacilityPackage.Literals.FACILITY_GROUP_ROLE__FACILITY_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityGroupId(FacilityGroup newFacilityGroupId) {
-		eSet(FacilityPackage.Literals.FACILITY_GROUP_ROLE__FACILITY_GROUP_ID, newFacilityGroupId);
 	}
 
 } //FacilityGroupRoleImpl

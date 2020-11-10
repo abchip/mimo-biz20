@@ -36,7 +36,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoImpl#getGeoCode <em>Geo Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoImpl#getGeoName <em>Geo Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoImpl#getGeoSecCode <em>Geo Sec Code</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoImpl#getGeoTypeId <em>Geo Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoImpl#getGeoType <em>Geo Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoImpl#getMainGeoAssocs <em>Main Geo Assocs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoImpl#getTaxAuthTaxAuthorities <em>Tax Auth Tax Authorities</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoImpl#getWellKnownText <em>Well Known Text</em>}</li>
@@ -240,6 +240,26 @@ public class GeoImpl extends EntityTypedImpl<GeoType> implements Geo {
 	 * @generated
 	 */
 	@Override
+	public GeoType getGeoType() {
+		return (GeoType)eGet(GeoPackage.Literals.GEO__GEO_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGeoType(GeoType newGeoType) {
+		eSet(GeoPackage.Literals.GEO__GEO_TYPE, newGeoType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getWellKnownText() {
 		return (String)eGet(GeoPackage.Literals.GEO__WELL_KNOWN_TEXT, true);
 	}
@@ -290,26 +310,6 @@ public class GeoImpl extends EntityTypedImpl<GeoType> implements Geo {
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GeoType getGeoTypeId() {
-		return (GeoType)eGet(GeoPackage.Literals.GEO__GEO_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGeoTypeId(GeoType newGeoTypeId) {
-		eSet(GeoPackage.Literals.GEO__GEO_TYPE_ID, newGeoTypeId);
 	}
 
 	/**

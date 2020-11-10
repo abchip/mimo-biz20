@@ -90,7 +90,7 @@ public class ExportPartyVcardServlet extends BaseServlet {
 			vcard.addEmail(new Email("nome.cognome@gmail.com"));
 		} else {
 			// Party or PartyGroup String fullName = "";
-			switch (partyEntity.getPartyTypeId().getPartyTypeId()) {
+			switch (partyEntity.getPartyType().getPartyTypeId()) {
 			case "PERSON":
 				Person personEntity = personReader.lookup(partyId);
 				if (personEntity.getFirstName() != null && !personEntity.getFirstName().isEmpty()) {
@@ -143,11 +143,11 @@ public class ExportPartyVcardServlet extends BaseServlet {
 		if (postalAddress.getPostalCode() != null && !postalAddress.getPostalCode().isEmpty())
 			address.setPostalCode(postalAddress.getPostalCode());
 		// StateProvinceGeo per decodifica
-		if (postalAddress.getStateProvinceGeoId() != null)
-			address.setRegion(postalAddress.getStateProvinceGeoId().getGeoId());
+		if (postalAddress.getStateProvinceGeo() != null)
+			address.setRegion(postalAddress.getStateProvinceGeo().getGeoId());
 		// CountryGeo per decodifica
-		if (postalAddress.getCountryGeoId() != null)
-			address.setCountry(postalAddress.getCountryGeoId().getGeoId());
+		if (postalAddress.getCountryGeo() != null)
+			address.setCountry(postalAddress.getCountryGeo().getGeoId());
 
 		address.getTypes().add(AddressType.WORK);
 		vcard.addAddress(address);

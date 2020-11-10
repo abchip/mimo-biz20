@@ -30,9 +30,9 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getIdCode <em>Id Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getMainProductFeatureIactns <em>Main Product Feature Iactns</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getNumberSpecified <em>Number Specified</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getProductFeatureCategoryId <em>Product Feature Category Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getProductFeatureTypeId <em>Product Feature Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getUomId <em>Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getProductFeatureCategory <em>Product Feature Category</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getProductFeatureType <em>Product Feature Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getUom <em>Uom</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeature()
@@ -213,82 +213,70 @@ public interface ProductFeature extends EntityTyped<ProductFeatureType>, EntityI
 	void setNumberSpecified(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Uom Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Uom Id</em>' reference.
-	 * @see #setUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeature_UomId()
-	 * @model keys="uomId"
-	 * @generated
-	 */
-	Uom getUomId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getUomId <em>Uom Id</em>}' reference.
+	 * Returns the value of the '<em><b>Product Feature Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Uom Id</em>' reference.
-	 * @see #getUomId()
-	 * @generated
-	 */
-	void setUomId(Uom value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Feature Category Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Feature Category Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Feature Category Id</em>' reference.
-	 * @see #setProductFeatureCategoryId(ProductFeatureCategory)
-	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeature_ProductFeatureCategoryId()
+	 * @return the value of the '<em>Product Feature Category</em>' reference.
+	 * @see #setProductFeatureCategory(ProductFeatureCategory)
+	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeature_ProductFeatureCategory()
 	 * @model keys="productFeatureCategoryId"
 	 * @generated
 	 */
-	ProductFeatureCategory getProductFeatureCategoryId();
+	ProductFeatureCategory getProductFeatureCategory();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getProductFeatureCategoryId <em>Product Feature Category Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getProductFeatureCategory <em>Product Feature Category</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Feature Category Id</em>' reference.
-	 * @see #getProductFeatureCategoryId()
+	 * @param value the new value of the '<em>Product Feature Category</em>' reference.
+	 * @see #getProductFeatureCategory()
 	 * @generated
 	 */
-	void setProductFeatureCategoryId(ProductFeatureCategory value);
+	void setProductFeatureCategory(ProductFeatureCategory value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Feature Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Feature Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Feature Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Feature Type Id</em>' reference.
-	 * @see #setProductFeatureTypeId(ProductFeatureType)
-	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeature_ProductFeatureTypeId()
+	 * @return the value of the '<em>Product Feature Type</em>' reference.
+	 * @see #setProductFeatureType(ProductFeatureType)
+	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeature_ProductFeatureType()
 	 * @model keys="productFeatureTypeId"
 	 * @generated
 	 */
-	ProductFeatureType getProductFeatureTypeId();
+	ProductFeatureType getProductFeatureType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getProductFeatureTypeId <em>Product Feature Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getProductFeatureType <em>Product Feature Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Feature Type Id</em>' reference.
-	 * @see #getProductFeatureTypeId()
+	 * @param value the new value of the '<em>Product Feature Type</em>' reference.
+	 * @see #getProductFeatureType()
 	 * @generated
 	 */
-	void setProductFeatureTypeId(ProductFeatureType value);
+	void setProductFeatureType(ProductFeatureType value);
+
+	/**
+	 * Returns the value of the '<em><b>Uom</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Uom</em>' reference.
+	 * @see #setUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeature_Uom()
+	 * @model keys="uomId"
+	 * @generated
+	 */
+	Uom getUom();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getUom <em>Uom</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Uom</em>' reference.
+	 * @see #getUom()
+	 * @generated
+	 */
+	void setUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Feature Id</b></em>' attribute.

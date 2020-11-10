@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountClassImpl#getGlAccountClassId <em>Gl Account Class Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountClassImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountClassImpl#getIsAssetClass <em>Is Asset Class</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountClassImpl#getParentClassId <em>Parent Class Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountClassImpl#getParentClass <em>Parent Class</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountClassImpl#getSequenceNum <em>Sequence Num</em>}</li>
  * </ul>
  *
@@ -192,8 +192,8 @@ public class GlAccountClassImpl extends EntityIdentifiableImpl implements GlAcco
 	 * @generated
 	 */
 	@Override
-	public GlAccountClass getParentClassId() {
-		return (GlAccountClass)eGet(LedgerPackage.Literals.GL_ACCOUNT_CLASS__PARENT_CLASS_ID, true);
+	public GlAccountClass getParentClass() {
+		return (GlAccountClass)eGet(LedgerPackage.Literals.GL_ACCOUNT_CLASS__PARENT_CLASS, true);
 	}
 
 	/**
@@ -202,8 +202,8 @@ public class GlAccountClassImpl extends EntityIdentifiableImpl implements GlAcco
 	 * @generated
 	 */
 	@Override
-	public void setParentClassId(GlAccountClass newParentClassId) {
-		eSet(LedgerPackage.Literals.GL_ACCOUNT_CLASS__PARENT_CLASS_ID, newParentClassId);
+	public void setParentClass(GlAccountClass newParentClass) {
+		eSet(LedgerPackage.Literals.GL_ACCOUNT_CLASS__PARENT_CLASS, newParentClass);
 	}
 
 	/**

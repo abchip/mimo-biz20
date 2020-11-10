@@ -38,15 +38,15 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getContactListName <em>Contact List Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getContactListParties <em>Contact List Parties</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getContactListTypeId <em>Contact List Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getContactMechTypeId <em>Contact Mech Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getContactListType <em>Contact List Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getContactMechType <em>Contact Mech Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getIsPublic <em>Is Public</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getMarketingCampaignId <em>Marketing Campaign Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getMarketingCampaign <em>Marketing Campaign</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getOptOutScreen <em>Opt Out Screen</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getOwnerPartyId <em>Owner Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getOwnerParty <em>Owner Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getSingleUse <em>Single Use</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getVerifyEmailFrom <em>Verify Email From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getVerifyEmailScreen <em>Verify Email Screen</em>}</li>
@@ -244,8 +244,8 @@ public class ContactListImpl extends EntityTypedImpl<ContactListType> implements
 	 * @generated
 	 */
 	@Override
-	public ContactListType getContactListTypeId() {
-		return (ContactListType)eGet(ContactPackage.Literals.CONTACT_LIST__CONTACT_LIST_TYPE_ID, true);
+	public ContactListType getContactListType() {
+		return (ContactListType)eGet(ContactPackage.Literals.CONTACT_LIST__CONTACT_LIST_TYPE, true);
 	}
 
 	/**
@@ -254,8 +254,8 @@ public class ContactListImpl extends EntityTypedImpl<ContactListType> implements
 	 * @generated
 	 */
 	@Override
-	public void setContactListTypeId(ContactListType newContactListTypeId) {
-		eSet(ContactPackage.Literals.CONTACT_LIST__CONTACT_LIST_TYPE_ID, newContactListTypeId);
+	public void setContactListType(ContactListType newContactListType) {
+		eSet(ContactPackage.Literals.CONTACT_LIST__CONTACT_LIST_TYPE, newContactListType);
 	}
 
 	/**
@@ -264,8 +264,8 @@ public class ContactListImpl extends EntityTypedImpl<ContactListType> implements
 	 * @generated
 	 */
 	@Override
-	public ContactMechType getContactMechTypeId() {
-		return (ContactMechType)eGet(ContactPackage.Literals.CONTACT_LIST__CONTACT_MECH_TYPE_ID, true);
+	public ContactMechType getContactMechType() {
+		return (ContactMechType)eGet(ContactPackage.Literals.CONTACT_LIST__CONTACT_MECH_TYPE, true);
 	}
 
 	/**
@@ -274,8 +274,8 @@ public class ContactListImpl extends EntityTypedImpl<ContactListType> implements
 	 * @generated
 	 */
 	@Override
-	public void setContactMechTypeId(ContactMechType newContactMechTypeId) {
-		eSet(ContactPackage.Literals.CONTACT_LIST__CONTACT_MECH_TYPE_ID, newContactMechTypeId);
+	public void setContactMechType(ContactMechType newContactMechType) {
+		eSet(ContactPackage.Literals.CONTACT_LIST__CONTACT_MECH_TYPE, newContactMechType);
 	}
 
 	/**
@@ -364,8 +364,8 @@ public class ContactListImpl extends EntityTypedImpl<ContactListType> implements
 	 * @generated
 	 */
 	@Override
-	public MarketingCampaign getMarketingCampaignId() {
-		return (MarketingCampaign)eGet(ContactPackage.Literals.CONTACT_LIST__MARKETING_CAMPAIGN_ID, true);
+	public MarketingCampaign getMarketingCampaign() {
+		return (MarketingCampaign)eGet(ContactPackage.Literals.CONTACT_LIST__MARKETING_CAMPAIGN, true);
 	}
 
 	/**
@@ -374,8 +374,8 @@ public class ContactListImpl extends EntityTypedImpl<ContactListType> implements
 	 * @generated
 	 */
 	@Override
-	public void setMarketingCampaignId(MarketingCampaign newMarketingCampaignId) {
-		eSet(ContactPackage.Literals.CONTACT_LIST__MARKETING_CAMPAIGN_ID, newMarketingCampaignId);
+	public void setMarketingCampaign(MarketingCampaign newMarketingCampaign) {
+		eSet(ContactPackage.Literals.CONTACT_LIST__MARKETING_CAMPAIGN, newMarketingCampaign);
 	}
 
 	/**
@@ -404,8 +404,8 @@ public class ContactListImpl extends EntityTypedImpl<ContactListType> implements
 	 * @generated
 	 */
 	@Override
-	public Party getOwnerPartyId() {
-		return (Party)eGet(ContactPackage.Literals.CONTACT_LIST__OWNER_PARTY_ID, true);
+	public Party getOwnerParty() {
+		return (Party)eGet(ContactPackage.Literals.CONTACT_LIST__OWNER_PARTY, true);
 	}
 
 	/**
@@ -414,8 +414,8 @@ public class ContactListImpl extends EntityTypedImpl<ContactListType> implements
 	 * @generated
 	 */
 	@Override
-	public void setOwnerPartyId(Party newOwnerPartyId) {
-		eSet(ContactPackage.Literals.CONTACT_LIST__OWNER_PARTY_ID, newOwnerPartyId);
+	public void setOwnerParty(Party newOwnerParty) {
+		eSet(ContactPackage.Literals.CONTACT_LIST__OWNER_PARTY, newOwnerParty);
 	}
 
 	/**

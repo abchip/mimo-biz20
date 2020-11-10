@@ -23,8 +23,8 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentRevisionItem#getContentId <em>Content Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentRevisionItem#getContentRevisionSeqId <em>Content Revision Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentRevisionItem#getItemContentId <em>Item Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentRevisionItem#getNewDataResourceId <em>New Data Resource Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentRevisionItem#getOldDataResourceId <em>Old Data Resource Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentRevisionItem#getNewDataResource <em>New Data Resource</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentRevisionItem#getOldDataResource <em>Old Data Resource</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentRevisionItem()
@@ -117,55 +117,47 @@ public interface ContentRevisionItem extends EntityIdentifiable, EntityInfo {
 	void setItemContentId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>New Data Resource Id</b></em>' reference.
+	 * Returns the value of the '<em><b>New Data Resource</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>New Data Resource Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>New Data Resource Id</em>' reference.
-	 * @see #setNewDataResourceId(DataResource)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentRevisionItem_NewDataResourceId()
+	 * @return the value of the '<em>New Data Resource</em>' reference.
+	 * @see #setNewDataResource(DataResource)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentRevisionItem_NewDataResource()
 	 * @model keys="dataResourceId"
 	 * @generated
 	 */
-	DataResource getNewDataResourceId();
+	DataResource getNewDataResource();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentRevisionItem#getNewDataResourceId <em>New Data Resource Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentRevisionItem#getNewDataResource <em>New Data Resource</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>New Data Resource Id</em>' reference.
-	 * @see #getNewDataResourceId()
+	 * @param value the new value of the '<em>New Data Resource</em>' reference.
+	 * @see #getNewDataResource()
 	 * @generated
 	 */
-	void setNewDataResourceId(DataResource value);
+	void setNewDataResource(DataResource value);
 
 	/**
-	 * Returns the value of the '<em><b>Old Data Resource Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Old Data Resource</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Old Data Resource Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Old Data Resource Id</em>' reference.
-	 * @see #setOldDataResourceId(DataResource)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentRevisionItem_OldDataResourceId()
+	 * @return the value of the '<em>Old Data Resource</em>' reference.
+	 * @see #setOldDataResource(DataResource)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentRevisionItem_OldDataResource()
 	 * @model keys="dataResourceId"
 	 * @generated
 	 */
-	DataResource getOldDataResourceId();
+	DataResource getOldDataResource();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentRevisionItem#getOldDataResourceId <em>Old Data Resource Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentRevisionItem#getOldDataResource <em>Old Data Resource</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Old Data Resource Id</em>' reference.
-	 * @see #getOldDataResourceId()
+	 * @param value the new value of the '<em>Old Data Resource</em>' reference.
+	 * @see #getOldDataResource()
 	 * @generated
 	 */
-	void setOldDataResourceId(DataResource value);
+	void setOldDataResource(DataResource value);
 
 } // ContentRevisionItem

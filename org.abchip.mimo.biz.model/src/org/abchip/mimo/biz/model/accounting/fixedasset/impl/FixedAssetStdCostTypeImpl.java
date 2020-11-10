@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetStdCostTypeImpl#getFixedAssetStdCostTypeId <em>Fixed Asset Std Cost Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetStdCostTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetStdCostTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetStdCostTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetStdCostTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -199,8 +199,8 @@ public class FixedAssetStdCostTypeImpl extends EntityTypeImpl<FixedAssetStdCost>
 	 * @generated
 	 */
 	@Override
-	public FixedAssetStdCostType getParentTypeId() {
-		return (FixedAssetStdCostType)eGet(FixedassetPackage.Literals.FIXED_ASSET_STD_COST_TYPE__PARENT_TYPE_ID, true);
+	public FixedAssetStdCostType getParentType() {
+		return (FixedAssetStdCostType)eGet(FixedassetPackage.Literals.FIXED_ASSET_STD_COST_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -209,8 +209,8 @@ public class FixedAssetStdCostTypeImpl extends EntityTypeImpl<FixedAssetStdCost>
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(FixedAssetStdCostType newParentTypeId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_STD_COST_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(FixedAssetStdCostType newParentType) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_STD_COST_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

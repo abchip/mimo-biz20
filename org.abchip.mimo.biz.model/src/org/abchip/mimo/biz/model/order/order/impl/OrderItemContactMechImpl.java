@@ -30,10 +30,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemContactMechImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemContactMechImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemContactMechImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemContactMechImpl#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemContactMechImpl#getContactMechPurposeTypeId <em>Contact Mech Purpose Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemContactMechImpl#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemContactMechImpl#getContactMechPurposeType <em>Contact Mech Purpose Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemContactMechImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemContactMechImpl#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemContactMechImpl#getContactMech <em>Contact Mech</em>}</li>
  * </ul>
  *
  * @generated
@@ -155,8 +155,8 @@ public class OrderItemContactMechImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(OrderPackage.Literals.ORDER_ITEM_CONTACT_MECH__CONTACT_MECH_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ITEM_CONTACT_MECH__ORDER, true);
 	}
 
 	/**
@@ -165,8 +165,28 @@ public class OrderItemContactMechImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_CONTACT_MECH__CONTACT_MECH_ID, newContactMechId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_CONTACT_MECH__ORDER, newOrder);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContactMechPurposeType getContactMechPurposeType() {
+		return (ContactMechPurposeType)eGet(OrderPackage.Literals.ORDER_ITEM_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContactMechPurposeType(ContactMechPurposeType newContactMechPurposeType) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE, newContactMechPurposeType);
 	}
 
 	/**
@@ -213,46 +233,6 @@ public class OrderItemContactMechImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public ContactMechPurposeType getContactMechPurposeTypeId() {
-		return (ContactMechPurposeType)eGet(OrderPackage.Literals.ORDER_ITEM_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContactMechPurposeTypeId(ContactMechPurposeType newContactMechPurposeTypeId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE_ID, newContactMechPurposeTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ITEM_CONTACT_MECH__ORDER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_CONTACT_MECH__ORDER_ID, newOrderId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getOrderItemSeqId() {
 		return (String)eGet(OrderPackage.Literals.ORDER_ITEM_CONTACT_MECH__ORDER_ITEM_SEQ_ID, true);
 	}
@@ -265,6 +245,26 @@ public class OrderItemContactMechImpl extends EntityIdentifiableImpl implements 
 	@Override
 	public void setOrderItemSeqId(String newOrderItemSeqId) {
 		eSet(OrderPackage.Literals.ORDER_ITEM_CONTACT_MECH__ORDER_ITEM_SEQ_ID, newOrderItemSeqId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(OrderPackage.Literals.ORDER_ITEM_CONTACT_MECH__CONTACT_MECH, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_CONTACT_MECH__CONTACT_MECH, newContactMech);
 	}
 
 } //OrderItemContactMechImpl

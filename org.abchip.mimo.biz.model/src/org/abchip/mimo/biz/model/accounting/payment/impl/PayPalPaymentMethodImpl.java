@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PayPalPaymentMethodImpl#getPaymentMethodId <em>Payment Method Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PayPalPaymentMethodImpl#getAvsAddr <em>Avs Addr</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PayPalPaymentMethodImpl#getAvsZip <em>Avs Zip</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PayPalPaymentMethodImpl#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PayPalPaymentMethodImpl#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PayPalPaymentMethodImpl#getCorrelationId <em>Correlation Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PayPalPaymentMethodImpl#getExpressCheckoutToken <em>Express Checkout Token</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PayPalPaymentMethodImpl#getPayerId <em>Payer Id</em>}</li>
@@ -149,26 +149,6 @@ public class PayPalPaymentMethodImpl extends EntityIdentifiableImpl implements P
 	@Override
 	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
 		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(PaymentPackage.Literals.PAY_PAL_PAYMENT_METHOD__CONTACT_MECH_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(PaymentPackage.Literals.PAY_PAL_PAYMENT_METHOD__CONTACT_MECH_ID, newContactMechId);
 	}
 
 	/**
@@ -309,6 +289,26 @@ public class PayPalPaymentMethodImpl extends EntityIdentifiableImpl implements P
 	@Override
 	public void setAvsZip(Boolean newAvsZip) {
 		eSet(PaymentPackage.Literals.PAY_PAL_PAYMENT_METHOD__AVS_ZIP, newAvsZip);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(PaymentPackage.Literals.PAY_PAL_PAYMENT_METHOD__CONTACT_MECH, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(PaymentPackage.Literals.PAY_PAL_PAYMENT_METHOD__CONTACT_MECH, newContactMech);
 	}
 
 	/**

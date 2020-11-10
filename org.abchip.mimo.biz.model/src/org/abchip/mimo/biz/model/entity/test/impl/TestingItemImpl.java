@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingItemImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingItemImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingItemImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingItemImpl#getTestingId <em>Testing Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingItemImpl#getTesting <em>Testing</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingItemImpl#getTestingSeqId <em>Testing Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingItemImpl#getTestingHistory <em>Testing History</em>}</li>
  * </ul>
@@ -151,6 +151,26 @@ public class TestingItemImpl extends EntityIdentifiableImpl implements TestingIt
 	 * @generated
 	 */
 	@Override
+	public Testing getTesting() {
+		return (Testing)eGet(TestPackage.Literals.TESTING_ITEM__TESTING, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTesting(Testing newTesting) {
+		eSet(TestPackage.Literals.TESTING_ITEM__TESTING, newTesting);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getTestingHistory() {
 		return (String)eGet(TestPackage.Literals.TESTING_ITEM__TESTING_HISTORY, true);
 	}
@@ -201,26 +221,6 @@ public class TestingItemImpl extends EntityIdentifiableImpl implements TestingIt
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Testing getTestingId() {
-		return (Testing)eGet(TestPackage.Literals.TESTING_ITEM__TESTING_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTestingId(Testing newTestingId) {
-		eSet(TestPackage.Literals.TESTING_ITEM__TESTING_ID, newTestingId);
 	}
 
 	/**

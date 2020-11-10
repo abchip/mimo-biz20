@@ -21,7 +21,7 @@ import org.abchip.mimo.entity.EntityType;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemType#getReturnItemTypeId <em>Return Item Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemType#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItemType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemType()
@@ -56,30 +56,26 @@ public interface ReturnItemType extends EntityType<ReturnItem>, EntityInfo {
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(ReturnItemType)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(ReturnItemType)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemType_ParentType()
 	 * @model keys="returnItemTypeId"
 	 * @generated
 	 */
-	ReturnItemType getParentTypeId();
+	ReturnItemType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItemType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItemType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(ReturnItemType value);
+	void setParentType(ReturnItemType value);
 
 	/**
 	 * Returns the value of the '<em><b>Return Item Type Id</b></em>' attribute.

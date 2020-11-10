@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransAttributeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransAttributeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransAttributeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransAttributeImpl#getAcctgTransId <em>Acctg Trans Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransAttributeImpl#getAcctgTrans <em>Acctg Trans</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransAttributeImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransAttributeImpl#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransAttributeImpl#getAttrValue <em>Attr Value</em>}</li>
@@ -152,6 +152,26 @@ public class AcctgTransAttributeImpl extends EntityIdentifiableImpl implements A
 	 * @generated
 	 */
 	@Override
+	public AcctgTrans getAcctgTrans() {
+		return (AcctgTrans)eGet(LedgerPackage.Literals.ACCTG_TRANS_ATTRIBUTE__ACCTG_TRANS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAcctgTrans(AcctgTrans newAcctgTrans) {
+		eSet(LedgerPackage.Literals.ACCTG_TRANS_ATTRIBUTE__ACCTG_TRANS, newAcctgTrans);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrDescription() {
 		return (String)eGet(LedgerPackage.Literals.ACCTG_TRANS_ATTRIBUTE__ATTR_DESCRIPTION, true);
 	}
@@ -222,26 +242,6 @@ public class AcctgTransAttributeImpl extends EntityIdentifiableImpl implements A
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public AcctgTrans getAcctgTransId() {
-		return (AcctgTrans)eGet(LedgerPackage.Literals.ACCTG_TRANS_ATTRIBUTE__ACCTG_TRANS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAcctgTransId(AcctgTrans newAcctgTransId) {
-		eSet(LedgerPackage.Literals.ACCTG_TRANS_ATTRIBUTE__ACCTG_TRANS_ID, newAcctgTransId);
 	}
 
 	/**

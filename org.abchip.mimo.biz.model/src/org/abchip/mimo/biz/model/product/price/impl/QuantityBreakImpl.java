@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.QuantityBreakImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.QuantityBreakImpl#getQuantityBreakId <em>Quantity Break Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.QuantityBreakImpl#getFromQuantity <em>From Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.QuantityBreakImpl#getQuantityBreakTypeId <em>Quantity Break Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.QuantityBreakImpl#getQuantityBreakType <em>Quantity Break Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.QuantityBreakImpl#getThruQuantity <em>Thru Quantity</em>}</li>
  * </ul>
  *
@@ -174,6 +174,26 @@ public class QuantityBreakImpl extends EntityTypedImpl<QuantityBreakType> implem
 	 * @generated
 	 */
 	@Override
+	public QuantityBreakType getQuantityBreakType() {
+		return (QuantityBreakType)eGet(PricePackage.Literals.QUANTITY_BREAK__QUANTITY_BREAK_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setQuantityBreakType(QuantityBreakType newQuantityBreakType) {
+		eSet(PricePackage.Literals.QUANTITY_BREAK__QUANTITY_BREAK_TYPE, newQuantityBreakType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getQuantityBreakId() {
 		return (String)eGet(PricePackage.Literals.QUANTITY_BREAK__QUANTITY_BREAK_ID, true);
 	}
@@ -244,26 +264,6 @@ public class QuantityBreakImpl extends EntityTypedImpl<QuantityBreakType> implem
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public QuantityBreakType getQuantityBreakTypeId() {
-		return (QuantityBreakType)eGet(PricePackage.Literals.QUANTITY_BREAK__QUANTITY_BREAK_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setQuantityBreakTypeId(QuantityBreakType newQuantityBreakTypeId) {
-		eSet(PricePackage.Literals.QUANTITY_BREAK__QUANTITY_BREAK_TYPE_ID, newQuantityBreakTypeId);
 	}
 
 } //QuantityBreakImpl

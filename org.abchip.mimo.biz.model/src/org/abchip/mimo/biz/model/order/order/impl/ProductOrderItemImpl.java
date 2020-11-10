@@ -29,11 +29,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.ProductOrderItemImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.ProductOrderItemImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.ProductOrderItemImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.ProductOrderItemImpl#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.ProductOrderItemImpl#getEngagementId <em>Engagement Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.ProductOrderItemImpl#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.ProductOrderItemImpl#getEngagement <em>Engagement</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.ProductOrderItemImpl#getEngagementItemSeqId <em>Engagement Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.ProductOrderItemImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.ProductOrderItemImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.ProductOrderItemImpl#getProduct <em>Product</em>}</li>
  * </ul>
  *
  * @generated
@@ -155,8 +155,8 @@ public class ProductOrderItemImpl extends EntityIdentifiableImpl implements Prod
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getEngagementId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.PRODUCT_ORDER_ITEM__ENGAGEMENT_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.PRODUCT_ORDER_ITEM__ORDER, true);
 	}
 
 	/**
@@ -165,8 +165,28 @@ public class ProductOrderItemImpl extends EntityIdentifiableImpl implements Prod
 	 * @generated
 	 */
 	@Override
-	public void setEngagementId(OrderHeader newEngagementId) {
-		eSet(OrderPackage.Literals.PRODUCT_ORDER_ITEM__ENGAGEMENT_ID, newEngagementId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.PRODUCT_ORDER_ITEM__ORDER, newOrder);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OrderHeader getEngagement() {
+		return (OrderHeader)eGet(OrderPackage.Literals.PRODUCT_ORDER_ITEM__ENGAGEMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEngagement(OrderHeader newEngagement) {
+		eSet(OrderPackage.Literals.PRODUCT_ORDER_ITEM__ENGAGEMENT, newEngagement);
 	}
 
 	/**
@@ -195,26 +215,6 @@ public class ProductOrderItemImpl extends EntityIdentifiableImpl implements Prod
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.PRODUCT_ORDER_ITEM__ORDER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.PRODUCT_ORDER_ITEM__ORDER_ID, newOrderId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getOrderItemSeqId() {
 		return (String)eGet(OrderPackage.Literals.PRODUCT_ORDER_ITEM__ORDER_ITEM_SEQ_ID, true);
 	}
@@ -235,8 +235,8 @@ public class ProductOrderItemImpl extends EntityIdentifiableImpl implements Prod
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(OrderPackage.Literals.PRODUCT_ORDER_ITEM__PRODUCT_ID, true);
+	public Product getProduct() {
+		return (Product)eGet(OrderPackage.Literals.PRODUCT_ORDER_ITEM__PRODUCT, true);
 	}
 
 	/**
@@ -245,8 +245,8 @@ public class ProductOrderItemImpl extends EntityIdentifiableImpl implements Prod
 	 * @generated
 	 */
 	@Override
-	public void setProductId(Product newProductId) {
-		eSet(OrderPackage.Literals.PRODUCT_ORDER_ITEM__PRODUCT_ID, newProductId);
+	public void setProduct(Product newProduct) {
+		eSet(OrderPackage.Literals.PRODUCT_ORDER_ITEM__PRODUCT, newProduct);
 	}
 
 	/**

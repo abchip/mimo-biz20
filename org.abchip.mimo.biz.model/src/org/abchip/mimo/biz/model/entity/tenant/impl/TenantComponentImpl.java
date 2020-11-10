@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantComponentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantComponentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantComponentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantComponentImpl#getTenantId <em>Tenant Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantComponentImpl#getTenant <em>Tenant</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantComponentImpl#getComponentName <em>Component Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantComponentImpl#getSequenceNum <em>Sequence Num</em>}</li>
  * </ul>
@@ -152,6 +152,26 @@ public class TenantComponentImpl extends EntityIdentifiableImpl implements Tenan
 	 * @generated
 	 */
 	@Override
+	public Tenant getTenant() {
+		return (Tenant)eGet(TenantPackage.Literals.TENANT_COMPONENT__TENANT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTenant(Tenant newTenant) {
+		eSet(TenantPackage.Literals.TENANT_COMPONENT__TENANT, newTenant);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Component getComponentName() {
 		return (Component)eGet(TenantPackage.Literals.TENANT_COMPONENT__COMPONENT_NAME, true);
 	}
@@ -222,26 +242,6 @@ public class TenantComponentImpl extends EntityIdentifiableImpl implements Tenan
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Tenant getTenantId() {
-		return (Tenant)eGet(TenantPackage.Literals.TENANT_COMPONENT__TENANT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTenantId(Tenant newTenantId) {
-		eSet(TenantPackage.Literals.TENANT_COMPONENT__TENANT_ID, newTenantId);
 	}
 
 } //TenantComponentImpl

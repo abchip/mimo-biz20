@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListWorkEffort#getShoppingListId <em>Shopping List Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListWorkEffort#getWorkEffortId <em>Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListWorkEffort#getShoppingList <em>Shopping List</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListWorkEffort#getWorkEffort <em>Work Effort</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingListWorkEffort()
@@ -30,57 +30,49 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface ShoppingListWorkEffort extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Shopping List Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Shopping List</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shopping List Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shopping List Id</em>' reference.
-	 * @see #setShoppingListId(ShoppingList)
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingListWorkEffort_ShoppingListId()
+	 * @return the value of the '<em>Shopping List</em>' reference.
+	 * @see #setShoppingList(ShoppingList)
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingListWorkEffort_ShoppingList()
 	 * @model keys="shoppingListId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ShoppingList getShoppingListId();
+	ShoppingList getShoppingList();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListWorkEffort#getShoppingListId <em>Shopping List Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListWorkEffort#getShoppingList <em>Shopping List</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Shopping List Id</em>' reference.
-	 * @see #getShoppingListId()
+	 * @param value the new value of the '<em>Shopping List</em>' reference.
+	 * @see #getShoppingList()
 	 * @generated
 	 */
-	void setShoppingListId(ShoppingList value);
+	void setShoppingList(ShoppingList value);
 
 	/**
-	 * Returns the value of the '<em><b>Work Effort Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Work Effort Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Work Effort Id</em>' reference.
-	 * @see #setWorkEffortId(WorkEffort)
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingListWorkEffort_WorkEffortId()
+	 * @return the value of the '<em>Work Effort</em>' reference.
+	 * @see #setWorkEffort(WorkEffort)
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingListWorkEffort_WorkEffort()
 	 * @model keys="workEffortId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	WorkEffort getWorkEffortId();
+	WorkEffort getWorkEffort();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListWorkEffort#getWorkEffortId <em>Work Effort Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListWorkEffort#getWorkEffort <em>Work Effort</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Work Effort Id</em>' reference.
-	 * @see #getWorkEffortId()
+	 * @param value the new value of the '<em>Work Effort</em>' reference.
+	 * @see #getWorkEffort()
 	 * @generated
 	 */
-	void setWorkEffortId(WorkEffort value);
+	void setWorkEffort(WorkEffort value);
 
 } // ShoppingListWorkEffort

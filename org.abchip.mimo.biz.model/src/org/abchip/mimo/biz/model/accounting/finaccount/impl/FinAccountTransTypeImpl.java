@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransTypeImpl#getFinAccountTransTypeAttrs <em>Fin Account Trans Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -213,8 +213,8 @@ public class FinAccountTransTypeImpl extends EntityTypeImpl<FinAccountTrans> imp
 	 * @generated
 	 */
 	@Override
-	public FinAccountTransType getParentTypeId() {
-		return (FinAccountTransType)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS_TYPE__PARENT_TYPE_ID, true);
+	public FinAccountTransType getParentType() {
+		return (FinAccountTransType)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -223,8 +223,8 @@ public class FinAccountTransTypeImpl extends EntityTypeImpl<FinAccountTrans> imp
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(FinAccountTransType newParentTypeId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(FinAccountTransType newParentType) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

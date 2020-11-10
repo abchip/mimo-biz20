@@ -23,7 +23,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getJobId <em>Job Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getAuthUserLoginId <em>Auth User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getAuthUserLogin <em>Auth User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getCancelDateTime <em>Cancel Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getCurrentRecurrenceCount <em>Current Recurrence Count</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getCurrentRetryCount <em>Current Retry Count</em>}</li>
@@ -36,15 +36,15 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getParentJobId <em>Parent Job Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getPoolId <em>Pool Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getPreviousJobId <em>Previous Job Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getRecurrenceInfoId <em>Recurrence Info Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getRecurrenceInfo <em>Recurrence Info</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getRunAsUser <em>Run As User</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getRunByInstanceId <em>Run By Instance Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getRunTime <em>Run Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getRuntimeDataId <em>Runtime Data Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getRuntimeData <em>Runtime Data</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getServiceName <em>Service Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getStartDateTime <em>Start Date Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getTempExprId <em>Temp Expr Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getTempExpr <em>Temp Expr</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox()
@@ -80,30 +80,26 @@ public interface JobSandbox extends EntityIdentifiable, EntityInfo {
 	void setJobId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Auth User Login Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Auth User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Auth User Login Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Auth User Login Id</em>' reference.
-	 * @see #setAuthUserLoginId(UserLogin)
-	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_AuthUserLoginId()
+	 * @return the value of the '<em>Auth User Login</em>' reference.
+	 * @see #setAuthUserLogin(UserLogin)
+	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_AuthUserLogin()
 	 * @model keys="userLoginId"
 	 * @generated
 	 */
-	UserLogin getAuthUserLoginId();
+	UserLogin getAuthUserLogin();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getAuthUserLoginId <em>Auth User Login Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getAuthUserLogin <em>Auth User Login</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Auth User Login Id</em>' reference.
-	 * @see #getAuthUserLoginId()
+	 * @param value the new value of the '<em>Auth User Login</em>' reference.
+	 * @see #getAuthUserLogin()
 	 * @generated
 	 */
-	void setAuthUserLoginId(UserLogin value);
+	void setAuthUserLogin(UserLogin value);
 
 	/**
 	 * Returns the value of the '<em><b>Cancel Date Time</b></em>' attribute.
@@ -418,31 +414,27 @@ public interface JobSandbox extends EntityIdentifiable, EntityInfo {
 	void setPreviousJobId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Recurrence Info Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Recurrence Info</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Recurrence Info Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Recurrence Info Id</em>' reference.
-	 * @see #setRecurrenceInfoId(RecurrenceInfo)
-	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_RecurrenceInfoId()
+	 * @return the value of the '<em>Recurrence Info</em>' reference.
+	 * @see #setRecurrenceInfo(RecurrenceInfo)
+	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_RecurrenceInfo()
 	 * @model keys="recurrenceInfoId"
 	 *        annotation="mimo-ent-slot help='Deprecated - use tempExprId instead'"
 	 * @generated
 	 */
-	RecurrenceInfo getRecurrenceInfoId();
+	RecurrenceInfo getRecurrenceInfo();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getRecurrenceInfoId <em>Recurrence Info Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getRecurrenceInfo <em>Recurrence Info</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Recurrence Info Id</em>' reference.
-	 * @see #getRecurrenceInfoId()
+	 * @param value the new value of the '<em>Recurrence Info</em>' reference.
+	 * @see #getRecurrenceInfo()
 	 * @generated
 	 */
-	void setRecurrenceInfoId(RecurrenceInfo value);
+	void setRecurrenceInfo(RecurrenceInfo value);
 
 	/**
 	 * Returns the value of the '<em><b>Run As User</b></em>' reference.
@@ -523,30 +515,26 @@ public interface JobSandbox extends EntityIdentifiable, EntityInfo {
 	void setRunTime(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Runtime Data Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Runtime Data</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Runtime Data Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Runtime Data Id</em>' reference.
-	 * @see #setRuntimeDataId(RuntimeData)
-	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_RuntimeDataId()
+	 * @return the value of the '<em>Runtime Data</em>' reference.
+	 * @see #setRuntimeData(RuntimeData)
+	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_RuntimeData()
 	 * @model keys="runtimeDataId"
 	 * @generated
 	 */
-	RuntimeData getRuntimeDataId();
+	RuntimeData getRuntimeData();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getRuntimeDataId <em>Runtime Data Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getRuntimeData <em>Runtime Data</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Runtime Data Id</em>' reference.
-	 * @see #getRuntimeDataId()
+	 * @param value the new value of the '<em>Runtime Data</em>' reference.
+	 * @see #getRuntimeData()
 	 * @generated
 	 */
-	void setRuntimeDataId(RuntimeData value);
+	void setRuntimeData(RuntimeData value);
 
 	/**
 	 * Returns the value of the '<em><b>Service Name</b></em>' attribute.
@@ -601,56 +589,48 @@ public interface JobSandbox extends EntityIdentifiable, EntityInfo {
 	void setStartDateTime(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_StatusId()
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_Status()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getStatusId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getStatusId <em>Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setStatusId(StatusItem value);
+	void setStatus(StatusItem value);
 
 	/**
-	 * Returns the value of the '<em><b>Temp Expr Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Temp Expr</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Temp Expr Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Temp Expr Id</em>' reference.
-	 * @see #setTempExprId(TemporalExpression)
-	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_TempExprId()
+	 * @return the value of the '<em>Temp Expr</em>' reference.
+	 * @see #setTempExpr(TemporalExpression)
+	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_TempExpr()
 	 * @model keys="tempExprId"
 	 *        annotation="mimo-ent-slot help='Temporal expression id'"
 	 * @generated
 	 */
-	TemporalExpression getTempExprId();
+	TemporalExpression getTempExpr();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getTempExprId <em>Temp Expr Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.service.schedule.JobSandbox#getTempExpr <em>Temp Expr</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Temp Expr Id</em>' reference.
-	 * @see #getTempExprId()
+	 * @param value the new value of the '<em>Temp Expr</em>' reference.
+	 * @see #getTempExpr()
 	 * @generated
 	 */
-	void setTempExprId(TemporalExpression value);
+	void setTempExpr(TemporalExpression value);
 
 } // JobSandbox

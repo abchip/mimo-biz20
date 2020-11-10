@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.SecurityGroupPermissionImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.SecurityGroupPermissionImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.SecurityGroupPermissionImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.SecurityGroupPermissionImpl#getGroupId <em>Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.SecurityGroupPermissionImpl#getPermissionId <em>Permission Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.SecurityGroupPermissionImpl#getGroup <em>Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.SecurityGroupPermissionImpl#getPermission <em>Permission</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.SecurityGroupPermissionImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.SecurityGroupPermissionImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -155,6 +155,46 @@ public class SecurityGroupPermissionImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
+	public SecurityGroup getGroup() {
+		return (SecurityGroup)eGet(SecuritygroupPackage.Literals.SECURITY_GROUP_PERMISSION__GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGroup(SecurityGroup newGroup) {
+		eSet(SecuritygroupPackage.Literals.SECURITY_GROUP_PERMISSION__GROUP, newGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SecurityPermission getPermission() {
+		return (SecurityPermission)eGet(SecuritygroupPackage.Literals.SECURITY_GROUP_PERMISSION__PERMISSION, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPermission(SecurityPermission newPermission) {
+		eSet(SecuritygroupPackage.Literals.SECURITY_GROUP_PERMISSION__PERMISSION, newPermission);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(SecuritygroupPackage.Literals.SECURITY_GROUP_PERMISSION__FROM_DATE, true);
 	}
@@ -167,46 +207,6 @@ public class SecurityGroupPermissionImpl extends EntityIdentifiableImpl implemen
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(SecuritygroupPackage.Literals.SECURITY_GROUP_PERMISSION__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SecurityGroup getGroupId() {
-		return (SecurityGroup)eGet(SecuritygroupPackage.Literals.SECURITY_GROUP_PERMISSION__GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGroupId(SecurityGroup newGroupId) {
-		eSet(SecuritygroupPackage.Literals.SECURITY_GROUP_PERMISSION__GROUP_ID, newGroupId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SecurityPermission getPermissionId() {
-		return (SecurityPermission)eGet(SecuritygroupPackage.Literals.SECURITY_GROUP_PERMISSION__PERMISSION_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPermissionId(SecurityPermission newPermissionId) {
-		eSet(SecuritygroupPackage.Literals.SECURITY_GROUP_PERMISSION__PERMISSION_ID, newPermissionId);
 	}
 
 	/**

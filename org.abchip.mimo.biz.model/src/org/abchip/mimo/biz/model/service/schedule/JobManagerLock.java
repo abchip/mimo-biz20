@@ -28,7 +28,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobManagerLock#getCreatedDate <em>Created Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobManagerLock#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobManagerLock#getLastModifiedDate <em>Last Modified Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobManagerLock#getReasonEnumId <em>Reason Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobManagerLock#getReasonEnum <em>Reason Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.service.schedule.JobManagerLock#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -223,30 +223,26 @@ public interface JobManagerLock extends EntityIdentifiable, EntityInfo {
 	void setLastModifiedDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Reason Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Reason Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Reason Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Reason Enum Id</em>' reference.
-	 * @see #setReasonEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobManagerLock_ReasonEnumId()
+	 * @return the value of the '<em>Reason Enum</em>' reference.
+	 * @see #setReasonEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobManagerLock_ReasonEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getReasonEnumId();
+	Enumeration getReasonEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.service.schedule.JobManagerLock#getReasonEnumId <em>Reason Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.service.schedule.JobManagerLock#getReasonEnum <em>Reason Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Reason Enum Id</em>' reference.
-	 * @see #getReasonEnumId()
+	 * @param value the new value of the '<em>Reason Enum</em>' reference.
+	 * @see #getReasonEnum()
 	 * @generated
 	 */
-	void setReasonEnumId(Enumeration value);
+	void setReasonEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.

@@ -32,11 +32,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.CustomTimePeriodImpl#getCustomTimePeriodId <em>Custom Time Period Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.CustomTimePeriodImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.CustomTimePeriodImpl#getIsClosed <em>Is Closed</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.CustomTimePeriodImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.CustomTimePeriodImpl#getParentPeriodId <em>Parent Period Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.CustomTimePeriodImpl#getOrganizationParty <em>Organization Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.CustomTimePeriodImpl#getParentPeriod <em>Parent Period</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.CustomTimePeriodImpl#getPeriodName <em>Period Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.CustomTimePeriodImpl#getPeriodNum <em>Period Num</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.CustomTimePeriodImpl#getPeriodTypeId <em>Period Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.CustomTimePeriodImpl#getPeriodType <em>Period Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.CustomTimePeriodImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -198,8 +198,8 @@ public class CustomTimePeriodImpl extends EntityTypedImpl<PeriodType> implements
 	 * @generated
 	 */
 	@Override
-	public Party getOrganizationPartyId() {
-		return (Party)eGet(PeriodPackage.Literals.CUSTOM_TIME_PERIOD__ORGANIZATION_PARTY_ID, true);
+	public Party getOrganizationParty() {
+		return (Party)eGet(PeriodPackage.Literals.CUSTOM_TIME_PERIOD__ORGANIZATION_PARTY, true);
 	}
 
 	/**
@@ -208,8 +208,28 @@ public class CustomTimePeriodImpl extends EntityTypedImpl<PeriodType> implements
 	 * @generated
 	 */
 	@Override
-	public void setOrganizationPartyId(Party newOrganizationPartyId) {
-		eSet(PeriodPackage.Literals.CUSTOM_TIME_PERIOD__ORGANIZATION_PARTY_ID, newOrganizationPartyId);
+	public void setOrganizationParty(Party newOrganizationParty) {
+		eSet(PeriodPackage.Literals.CUSTOM_TIME_PERIOD__ORGANIZATION_PARTY, newOrganizationParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CustomTimePeriod getParentPeriod() {
+		return (CustomTimePeriod)eGet(PeriodPackage.Literals.CUSTOM_TIME_PERIOD__PARENT_PERIOD, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParentPeriod(CustomTimePeriod newParentPeriod) {
+		eSet(PeriodPackage.Literals.CUSTOM_TIME_PERIOD__PARENT_PERIOD, newParentPeriod);
 	}
 
 	/**
@@ -250,6 +270,26 @@ public class CustomTimePeriodImpl extends EntityTypedImpl<PeriodType> implements
 	@Override
 	public void setPeriodNum(long newPeriodNum) {
 		eSet(PeriodPackage.Literals.CUSTOM_TIME_PERIOD__PERIOD_NUM, newPeriodNum);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PeriodType getPeriodType() {
+		return (PeriodType)eGet(PeriodPackage.Literals.CUSTOM_TIME_PERIOD__PERIOD_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPeriodType(PeriodType newPeriodType) {
+		eSet(PeriodPackage.Literals.CUSTOM_TIME_PERIOD__PERIOD_TYPE, newPeriodType);
 	}
 
 	/**
@@ -308,46 +348,6 @@ public class CustomTimePeriodImpl extends EntityTypedImpl<PeriodType> implements
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CustomTimePeriod getParentPeriodId() {
-		return (CustomTimePeriod)eGet(PeriodPackage.Literals.CUSTOM_TIME_PERIOD__PARENT_PERIOD_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentPeriodId(CustomTimePeriod newParentPeriodId) {
-		eSet(PeriodPackage.Literals.CUSTOM_TIME_PERIOD__PARENT_PERIOD_ID, newParentPeriodId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PeriodType getPeriodTypeId() {
-		return (PeriodType)eGet(PeriodPackage.Literals.CUSTOM_TIME_PERIOD__PERIOD_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPeriodTypeId(PeriodType newPeriodTypeId) {
-		eSet(PeriodPackage.Literals.CUSTOM_TIME_PERIOD__PERIOD_TYPE_ID, newPeriodTypeId);
 	}
 
 	/**

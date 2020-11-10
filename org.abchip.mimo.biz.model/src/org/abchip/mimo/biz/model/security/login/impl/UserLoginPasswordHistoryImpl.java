@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginPasswordHistoryImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginPasswordHistoryImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginPasswordHistoryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginPasswordHistoryImpl#getUserLoginId <em>User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginPasswordHistoryImpl#getUserLogin <em>User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginPasswordHistoryImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginPasswordHistoryImpl#getCurrentPassword <em>Current Password</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginPasswordHistoryImpl#getThruDate <em>Thru Date</em>}</li>
@@ -154,6 +154,26 @@ public class UserLoginPasswordHistoryImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
+	public UserLogin getUserLogin() {
+		return (UserLogin)eGet(LoginPackage.Literals.USER_LOGIN_PASSWORD_HISTORY__USER_LOGIN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUserLogin(UserLogin newUserLogin) {
+		eSet(LoginPackage.Literals.USER_LOGIN_PASSWORD_HISTORY__USER_LOGIN, newUserLogin);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getCurrentPassword() {
 		return (String)eGet(LoginPackage.Literals.USER_LOGIN_PASSWORD_HISTORY__CURRENT_PASSWORD, true);
 	}
@@ -244,26 +264,6 @@ public class UserLoginPasswordHistoryImpl extends EntityIdentifiableImpl impleme
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public UserLogin getUserLoginId() {
-		return (UserLogin)eGet(LoginPackage.Literals.USER_LOGIN_PASSWORD_HISTORY__USER_LOGIN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setUserLoginId(UserLogin newUserLoginId) {
-		eSet(LoginPackage.Literals.USER_LOGIN_PASSWORD_HISTORY__USER_LOGIN_ID, newUserLoginId);
 	}
 
 } //UserLoginPasswordHistoryImpl

@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodTypeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodTypeImpl#getPaymentMethodTypeId <em>Payment Method Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodTypeImpl#getDefaultGlAccountId <em>Default Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodTypeImpl#getDefaultGlAccount <em>Default Gl Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodTypeImpl#getPaymentMethodTypeGlAccounts <em>Payment Method Type Gl Accounts</em>}</li>
  * </ul>
@@ -231,26 +231,6 @@ public class PaymentMethodTypeImpl extends EntityTypeImpl<PaymentGatewayResponse
 	 * @generated
 	 */
 	@Override
-	public GlAccount getDefaultGlAccountId() {
-		return (GlAccount)eGet(PaymentPackage.Literals.PAYMENT_METHOD_TYPE__DEFAULT_GL_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDefaultGlAccountId(GlAccount newDefaultGlAccountId) {
-		eSet(PaymentPackage.Literals.PAYMENT_METHOD_TYPE__DEFAULT_GL_ACCOUNT_ID, newDefaultGlAccountId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getPaymentMethodTypeId() {
 		return (String)eGet(PaymentPackage.Literals.PAYMENT_METHOD_TYPE__PAYMENT_METHOD_TYPE_ID, true);
 	}
@@ -263,6 +243,26 @@ public class PaymentMethodTypeImpl extends EntityTypeImpl<PaymentGatewayResponse
 	@Override
 	public void setPaymentMethodTypeId(String newPaymentMethodTypeId) {
 		eSet(PaymentPackage.Literals.PAYMENT_METHOD_TYPE__PAYMENT_METHOD_TYPE_ID, newPaymentMethodTypeId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GlAccount getDefaultGlAccount() {
+		return (GlAccount)eGet(PaymentPackage.Literals.PAYMENT_METHOD_TYPE__DEFAULT_GL_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDefaultGlAccount(GlAccount newDefaultGlAccount) {
+		eSet(PaymentPackage.Literals.PAYMENT_METHOD_TYPE__DEFAULT_GL_ACCOUNT, newDefaultGlAccount);
 	}
 
 } //PaymentMethodTypeImpl

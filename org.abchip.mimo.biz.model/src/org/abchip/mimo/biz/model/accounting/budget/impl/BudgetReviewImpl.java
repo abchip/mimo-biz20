@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetReviewImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetReviewImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetReviewImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetReviewImpl#getBudgetId <em>Budget Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetReviewImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetReviewImpl#getBudgetReviewResultTypeId <em>Budget Review Result Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetReviewImpl#getBudget <em>Budget</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetReviewImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetReviewImpl#getBudgetReviewResultType <em>Budget Review Result Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetReviewImpl#getBudgetReviewId <em>Budget Review Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetReviewImpl#getReviewDate <em>Review Date</em>}</li>
  * </ul>
@@ -155,6 +155,66 @@ public class BudgetReviewImpl extends EntityTypedImpl<BudgetReviewResultType> im
 	 * @generated
 	 */
 	@Override
+	public Budget getBudget() {
+		return (Budget)eGet(BudgetPackage.Literals.BUDGET_REVIEW__BUDGET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBudget(Budget newBudget) {
+		eSet(BudgetPackage.Literals.BUDGET_REVIEW__BUDGET, newBudget);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(BudgetPackage.Literals.BUDGET_REVIEW__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(BudgetPackage.Literals.BUDGET_REVIEW__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BudgetReviewResultType getBudgetReviewResultType() {
+		return (BudgetReviewResultType)eGet(BudgetPackage.Literals.BUDGET_REVIEW__BUDGET_REVIEW_RESULT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBudgetReviewResultType(BudgetReviewResultType newBudgetReviewResultType) {
+		eSet(BudgetPackage.Literals.BUDGET_REVIEW__BUDGET_REVIEW_RESULT_TYPE, newBudgetReviewResultType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getBudgetReviewId() {
 		return (String)eGet(BudgetPackage.Literals.BUDGET_REVIEW__BUDGET_REVIEW_ID, true);
 	}
@@ -167,26 +227,6 @@ public class BudgetReviewImpl extends EntityTypedImpl<BudgetReviewResultType> im
 	@Override
 	public void setBudgetReviewId(String newBudgetReviewId) {
 		eSet(BudgetPackage.Literals.BUDGET_REVIEW__BUDGET_REVIEW_ID, newBudgetReviewId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(BudgetPackage.Literals.BUDGET_REVIEW__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(BudgetPackage.Literals.BUDGET_REVIEW__PARTY_ID, newPartyId);
 	}
 
 	/**
@@ -245,46 +285,6 @@ public class BudgetReviewImpl extends EntityTypedImpl<BudgetReviewResultType> im
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Budget getBudgetId() {
-		return (Budget)eGet(BudgetPackage.Literals.BUDGET_REVIEW__BUDGET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBudgetId(Budget newBudgetId) {
-		eSet(BudgetPackage.Literals.BUDGET_REVIEW__BUDGET_ID, newBudgetId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public BudgetReviewResultType getBudgetReviewResultTypeId() {
-		return (BudgetReviewResultType)eGet(BudgetPackage.Literals.BUDGET_REVIEW__BUDGET_REVIEW_RESULT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBudgetReviewResultTypeId(BudgetReviewResultType newBudgetReviewResultTypeId) {
-		eSet(BudgetPackage.Literals.BUDGET_REVIEW__BUDGET_REVIEW_RESULT_TYPE_ID, newBudgetReviewResultTypeId);
 	}
 
 } //BudgetReviewImpl

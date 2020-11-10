@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.TerminationTypeImpl#getTerminationTypeId <em>Termination Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.TerminationTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.TerminationTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.TerminationTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.TerminationTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,8 +200,8 @@ public class TerminationTypeImpl extends EntityTypeImpl<Employment> implements T
 	 * @generated
 	 */
 	@Override
-	public TerminationType getParentTypeId() {
-		return (TerminationType)eGet(EmploymentPackage.Literals.TERMINATION_TYPE__PARENT_TYPE_ID, true);
+	public TerminationType getParentType() {
+		return (TerminationType)eGet(EmploymentPackage.Literals.TERMINATION_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -210,8 +210,8 @@ public class TerminationTypeImpl extends EntityTypeImpl<Employment> implements T
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(TerminationType newParentTypeId) {
-		eSet(EmploymentPackage.Literals.TERMINATION_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(TerminationType newParentType) {
+		eSet(EmploymentPackage.Literals.TERMINATION_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

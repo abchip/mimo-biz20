@@ -15,23 +15,23 @@
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="IMAGE_MANAGEMENT_APPROVE" description="Approve photos in the Image Management."/>
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="IMAGE_MANAGEMENT_UPLOAD" description="Upload photos in the Image Management."/>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#CATALOG_ADMIN"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#CATALOG_ADMIN"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#CATALOG_PRICE_MAINT"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#CATALOG_PRICE_MAINT"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#CATALOG_VIEW_ALLOW"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#CATALOG_VIEW_ALLOW"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#CATALOG_PURCHASE_ALLOW"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#CATALOG_PURCHASE_ALLOW"/>
   </contents>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#IMAGE_MANAGEMENT_ADMIN"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#IMAGE_MANAGEMENT_ADMIN"/>
   </contents>
 </mimo-ent:EntityContainer>

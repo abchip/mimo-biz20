@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyNameHistoryImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyNameHistoryImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyNameHistoryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyNameHistoryImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyNameHistoryImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyNameHistoryImpl#getChangeDate <em>Change Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyNameHistoryImpl#getFirstName <em>First Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyNameHistoryImpl#getGroupName <em>Group Name</em>}</li>
@@ -148,6 +148,26 @@ public class PartyNameHistoryImpl extends EntityIdentifiableImpl implements Part
 	@Override
 	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
 		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(PartyPackage.Literals.PARTY_NAME_HISTORY__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(PartyPackage.Literals.PARTY_NAME_HISTORY__PARTY, newParty);
 	}
 
 	/**
@@ -326,26 +346,6 @@ public class PartyNameHistoryImpl extends EntityIdentifiableImpl implements Part
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(PartyPackage.Literals.PARTY_NAME_HISTORY__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(PartyPackage.Literals.PARTY_NAME_HISTORY__PARTY_ID, newPartyId);
 	}
 
 } //PartyNameHistoryImpl

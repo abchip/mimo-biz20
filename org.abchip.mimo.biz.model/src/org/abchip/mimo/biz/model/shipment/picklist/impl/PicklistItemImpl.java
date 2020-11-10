@@ -33,12 +33,12 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistItemImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistItemImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistItemImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistItemImpl#getPicklistBinId <em>Picklist Bin Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistItemImpl#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistItemImpl#getInventoryItemId <em>Inventory Item Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistItemImpl#getPicklistBin <em>Picklist Bin</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistItemImpl#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistItemImpl#getInventoryItem <em>Inventory Item</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistItemImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistItemImpl#getShipGroupSeqId <em>Ship Group Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistItemImpl#getItemStatusId <em>Item Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistItemImpl#getItemStatus <em>Item Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistItemImpl#getQuantity <em>Quantity</em>}</li>
  * </ul>
  *
@@ -161,8 +161,8 @@ public class PicklistItemImpl extends EntityIdentifiableImpl implements Picklist
 	 * @generated
 	 */
 	@Override
-	public InventoryItem getInventoryItemId() {
-		return (InventoryItem)eGet(PicklistPackage.Literals.PICKLIST_ITEM__INVENTORY_ITEM_ID, true);
+	public PicklistBin getPicklistBin() {
+		return (PicklistBin)eGet(PicklistPackage.Literals.PICKLIST_ITEM__PICKLIST_BIN, true);
 	}
 
 	/**
@@ -171,8 +171,8 @@ public class PicklistItemImpl extends EntityIdentifiableImpl implements Picklist
 	 * @generated
 	 */
 	@Override
-	public void setInventoryItemId(InventoryItem newInventoryItemId) {
-		eSet(PicklistPackage.Literals.PICKLIST_ITEM__INVENTORY_ITEM_ID, newInventoryItemId);
+	public void setPicklistBin(PicklistBin newPicklistBin) {
+		eSet(PicklistPackage.Literals.PICKLIST_ITEM__PICKLIST_BIN, newPicklistBin);
 	}
 
 	/**
@@ -181,8 +181,8 @@ public class PicklistItemImpl extends EntityIdentifiableImpl implements Picklist
 	 * @generated
 	 */
 	@Override
-	public StatusItem getItemStatusId() {
-		return (StatusItem)eGet(PicklistPackage.Literals.PICKLIST_ITEM__ITEM_STATUS_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(PicklistPackage.Literals.PICKLIST_ITEM__ORDER, true);
 	}
 
 	/**
@@ -191,8 +191,8 @@ public class PicklistItemImpl extends EntityIdentifiableImpl implements Picklist
 	 * @generated
 	 */
 	@Override
-	public void setItemStatusId(StatusItem newItemStatusId) {
-		eSet(PicklistPackage.Literals.PICKLIST_ITEM__ITEM_STATUS_ID, newItemStatusId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(PicklistPackage.Literals.PICKLIST_ITEM__ORDER, newOrder);
 	}
 
 	/**
@@ -201,8 +201,8 @@ public class PicklistItemImpl extends EntityIdentifiableImpl implements Picklist
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(PicklistPackage.Literals.PICKLIST_ITEM__ORDER_ID, true);
+	public InventoryItem getInventoryItem() {
+		return (InventoryItem)eGet(PicklistPackage.Literals.PICKLIST_ITEM__INVENTORY_ITEM, true);
 	}
 
 	/**
@@ -211,8 +211,8 @@ public class PicklistItemImpl extends EntityIdentifiableImpl implements Picklist
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(PicklistPackage.Literals.PICKLIST_ITEM__ORDER_ID, newOrderId);
+	public void setInventoryItem(InventoryItem newInventoryItem) {
+		eSet(PicklistPackage.Literals.PICKLIST_ITEM__INVENTORY_ITEM, newInventoryItem);
 	}
 
 	/**
@@ -233,26 +233,6 @@ public class PicklistItemImpl extends EntityIdentifiableImpl implements Picklist
 	@Override
 	public void setOrderItemSeqId(String newOrderItemSeqId) {
 		eSet(PicklistPackage.Literals.PICKLIST_ITEM__ORDER_ITEM_SEQ_ID, newOrderItemSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PicklistBin getPicklistBinId() {
-		return (PicklistBin)eGet(PicklistPackage.Literals.PICKLIST_ITEM__PICKLIST_BIN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPicklistBinId(PicklistBin newPicklistBinId) {
-		eSet(PicklistPackage.Literals.PICKLIST_ITEM__PICKLIST_BIN_ID, newPicklistBinId);
 	}
 
 	/**
@@ -331,6 +311,26 @@ public class PicklistItemImpl extends EntityIdentifiableImpl implements Picklist
 	@Override
 	public void setShipGroupSeqId(String newShipGroupSeqId) {
 		eSet(PicklistPackage.Literals.PICKLIST_ITEM__SHIP_GROUP_SEQ_ID, newShipGroupSeqId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StatusItem getItemStatus() {
+		return (StatusItem)eGet(PicklistPackage.Literals.PICKLIST_ITEM__ITEM_STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setItemStatus(StatusItem newItemStatus) {
+		eSet(PicklistPackage.Literals.PICKLIST_ITEM__ITEM_STATUS, newItemStatus);
 	}
 
 } //PicklistItemImpl

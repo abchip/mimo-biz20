@@ -20,10 +20,10 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetScenarioApplication#getBudgetScenarioId <em>Budget Scenario Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetScenarioApplication#getBudgetScenario <em>Budget Scenario</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetScenarioApplication#getBudgetScenarioApplicId <em>Budget Scenario Applic Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetScenarioApplication#getAmountChange <em>Amount Change</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetScenarioApplication#getBudgetId <em>Budget Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetScenarioApplication#getBudget <em>Budget</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetScenarioApplication#getBudgetItemSeqId <em>Budget Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetScenarioApplication#getPercentageChange <em>Percentage Change</em>}</li>
  * </ul>
@@ -33,6 +33,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface BudgetScenarioApplication extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Budget Scenario</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Budget Scenario</em>' reference.
+	 * @see #setBudgetScenario(BudgetScenario)
+	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetScenarioApplication_BudgetScenario()
+	 * @model keys="budgetScenarioId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	BudgetScenario getBudgetScenario();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetScenarioApplication#getBudgetScenario <em>Budget Scenario</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Budget Scenario</em>' reference.
+	 * @see #getBudgetScenario()
+	 * @generated
+	 */
+	void setBudgetScenario(BudgetScenario value);
+
 	/**
 	 * Returns the value of the '<em><b>Amount Change</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -58,6 +81,28 @@ public interface BudgetScenarioApplication extends EntityIdentifiable, EntityInf
 	 * @generated
 	 */
 	void setAmountChange(BigDecimal value);
+
+	/**
+	 * Returns the value of the '<em><b>Budget</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Budget</em>' reference.
+	 * @see #setBudget(Budget)
+	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetScenarioApplication_Budget()
+	 * @model keys="budgetId"
+	 * @generated
+	 */
+	Budget getBudget();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetScenarioApplication#getBudget <em>Budget</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Budget</em>' reference.
+	 * @see #getBudget()
+	 * @generated
+	 */
+	void setBudget(Budget value);
 
 	/**
 	 * Returns the value of the '<em><b>Budget Item Seq Id</b></em>' attribute.
@@ -138,58 +183,5 @@ public interface BudgetScenarioApplication extends EntityIdentifiable, EntityInf
 	 * @generated
 	 */
 	void setPercentageChange(BigDecimal value);
-
-	/**
-	 * Returns the value of the '<em><b>Budget Scenario Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Budget Scenario Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Budget Scenario Id</em>' reference.
-	 * @see #setBudgetScenarioId(BudgetScenario)
-	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetScenarioApplication_BudgetScenarioId()
-	 * @model keys="budgetScenarioId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	BudgetScenario getBudgetScenarioId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetScenarioApplication#getBudgetScenarioId <em>Budget Scenario Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Budget Scenario Id</em>' reference.
-	 * @see #getBudgetScenarioId()
-	 * @generated
-	 */
-	void setBudgetScenarioId(BudgetScenario value);
-
-	/**
-	 * Returns the value of the '<em><b>Budget Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Budget Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Budget Id</em>' reference.
-	 * @see #setBudgetId(Budget)
-	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetScenarioApplication_BudgetId()
-	 * @model keys="budgetId"
-	 * @generated
-	 */
-	Budget getBudgetId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetScenarioApplication#getBudgetId <em>Budget Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Budget Id</em>' reference.
-	 * @see #getBudgetId()
-	 * @generated
-	 */
-	void setBudgetId(Budget value);
 
 } // BudgetScenarioApplication

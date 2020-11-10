@@ -19,9 +19,9 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.common.geo.GeoAssoc#getGeoId <em>Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.GeoAssoc#getGeo <em>Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.GeoAssoc#getGeoIdTo <em>Geo Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.geo.GeoAssoc#getGeoAssocTypeId <em>Geo Assoc Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.GeoAssoc#getGeoAssocType <em>Geo Assoc Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoAssoc()
@@ -30,31 +30,27 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface GeoAssoc extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Geo Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geo Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Geo Id</em>' reference.
-	 * @see #setGeoId(Geo)
-	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoAssoc_GeoId()
+	 * @return the value of the '<em>Geo</em>' reference.
+	 * @see #setGeo(Geo)
+	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoAssoc_Geo()
 	 * @model keys="geoId" required="true"
 	 *        annotation="mimo-ent-slot key='true' help='The enclosed geo'"
 	 * @generated
 	 */
-	Geo getGeoId();
+	Geo getGeo();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.geo.GeoAssoc#getGeoId <em>Geo Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.geo.GeoAssoc#getGeo <em>Geo</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Geo Id</em>' reference.
-	 * @see #getGeoId()
+	 * @param value the new value of the '<em>Geo</em>' reference.
+	 * @see #getGeo()
 	 * @generated
 	 */
-	void setGeoId(Geo value);
+	void setGeo(Geo value);
 
 	/**
 	 * Returns the value of the '<em><b>Geo Id To</b></em>' reference.
@@ -84,29 +80,25 @@ public interface GeoAssoc extends EntityIdentifiable, EntityInfo {
 	void setGeoIdTo(Geo value);
 
 	/**
-	 * Returns the value of the '<em><b>Geo Assoc Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Geo Assoc Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geo Assoc Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Geo Assoc Type Id</em>' reference.
-	 * @see #setGeoAssocTypeId(GeoAssocType)
-	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoAssoc_GeoAssocTypeId()
+	 * @return the value of the '<em>Geo Assoc Type</em>' reference.
+	 * @see #setGeoAssocType(GeoAssocType)
+	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoAssoc_GeoAssocType()
 	 * @model keys="geoAssocTypeId"
 	 * @generated
 	 */
-	GeoAssocType getGeoAssocTypeId();
+	GeoAssocType getGeoAssocType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.geo.GeoAssoc#getGeoAssocTypeId <em>Geo Assoc Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.geo.GeoAssoc#getGeoAssocType <em>Geo Assoc Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Geo Assoc Type Id</em>' reference.
-	 * @see #getGeoAssocTypeId()
+	 * @param value the new value of the '<em>Geo Assoc Type</em>' reference.
+	 * @see #getGeoAssocType()
 	 * @generated
 	 */
-	void setGeoAssocTypeId(GeoAssocType value);
+	void setGeoAssocType(GeoAssocType value);
 
 } // GeoAssoc

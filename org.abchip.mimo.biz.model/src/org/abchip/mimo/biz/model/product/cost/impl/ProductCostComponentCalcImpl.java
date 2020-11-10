@@ -30,10 +30,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.ProductCostComponentCalcImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.ProductCostComponentCalcImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.ProductCostComponentCalcImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.ProductCostComponentCalcImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.ProductCostComponentCalcImpl#getCostComponentTypeId <em>Cost Component Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.ProductCostComponentCalcImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.ProductCostComponentCalcImpl#getCostComponentType <em>Cost Component Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.ProductCostComponentCalcImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.ProductCostComponentCalcImpl#getCostComponentCalcId <em>Cost Component Calc Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.ProductCostComponentCalcImpl#getCostComponentCalc <em>Cost Component Calc</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.ProductCostComponentCalcImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.ProductCostComponentCalcImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -157,6 +157,46 @@ public class ProductCostComponentCalcImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(CostPackage.Literals.PRODUCT_COST_COMPONENT_CALC__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(CostPackage.Literals.PRODUCT_COST_COMPONENT_CALC__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CostComponentType getCostComponentType() {
+		return (CostComponentType)eGet(CostPackage.Literals.PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCostComponentType(CostComponentType newCostComponentType) {
+		eSet(CostPackage.Literals.PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_TYPE, newCostComponentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(CostPackage.Literals.PRODUCT_COST_COMPONENT_CALC__FROM_DATE, true);
 	}
@@ -177,8 +217,8 @@ public class ProductCostComponentCalcImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(CostPackage.Literals.PRODUCT_COST_COMPONENT_CALC__PRODUCT_ID, true);
+	public CostComponentCalc getCostComponentCalc() {
+		return (CostComponentCalc)eGet(CostPackage.Literals.PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_CALC, true);
 	}
 
 	/**
@@ -187,8 +227,8 @@ public class ProductCostComponentCalcImpl extends EntityIdentifiableImpl impleme
 	 * @generated
 	 */
 	@Override
-	public void setProductId(Product newProductId) {
-		eSet(CostPackage.Literals.PRODUCT_COST_COMPONENT_CALC__PRODUCT_ID, newProductId);
+	public void setCostComponentCalc(CostComponentCalc newCostComponentCalc) {
+		eSet(CostPackage.Literals.PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_CALC, newCostComponentCalc);
 	}
 
 	/**
@@ -267,46 +307,6 @@ public class ProductCostComponentCalcImpl extends EntityIdentifiableImpl impleme
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CostComponentType getCostComponentTypeId() {
-		return (CostComponentType)eGet(CostPackage.Literals.PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCostComponentTypeId(CostComponentType newCostComponentTypeId) {
-		eSet(CostPackage.Literals.PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_TYPE_ID, newCostComponentTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CostComponentCalc getCostComponentCalcId() {
-		return (CostComponentCalc)eGet(CostPackage.Literals.PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_CALC_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCostComponentCalcId(CostComponentCalc newCostComponentCalcId) {
-		eSet(CostPackage.Literals.PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_CALC_ID, newCostComponentCalcId);
 	}
 
 } //ProductCostComponentCalcImpl

@@ -41,9 +41,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureImpl#getIdCode <em>Id Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureImpl#getMainProductFeatureIactns <em>Main Product Feature Iactns</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureImpl#getNumberSpecified <em>Number Specified</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureImpl#getProductFeatureCategoryId <em>Product Feature Category Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureImpl#getProductFeatureTypeId <em>Product Feature Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureImpl#getUomId <em>Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureImpl#getProductFeatureCategory <em>Product Feature Category</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureImpl#getProductFeatureType <em>Product Feature Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureImpl#getUom <em>Uom</em>}</li>
  * </ul>
  *
  * @generated
@@ -296,8 +296,8 @@ public class ProductFeatureImpl extends EntityTypedImpl<ProductFeatureType> impl
 	 * @generated
 	 */
 	@Override
-	public Uom getUomId() {
-		return (Uom)eGet(FeaturePackage.Literals.PRODUCT_FEATURE__UOM_ID, true);
+	public ProductFeatureCategory getProductFeatureCategory() {
+		return (ProductFeatureCategory)eGet(FeaturePackage.Literals.PRODUCT_FEATURE__PRODUCT_FEATURE_CATEGORY, true);
 	}
 
 	/**
@@ -306,8 +306,48 @@ public class ProductFeatureImpl extends EntityTypedImpl<ProductFeatureType> impl
 	 * @generated
 	 */
 	@Override
-	public void setUomId(Uom newUomId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE__UOM_ID, newUomId);
+	public void setProductFeatureCategory(ProductFeatureCategory newProductFeatureCategory) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE__PRODUCT_FEATURE_CATEGORY, newProductFeatureCategory);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductFeatureType getProductFeatureType() {
+		return (ProductFeatureType)eGet(FeaturePackage.Literals.PRODUCT_FEATURE__PRODUCT_FEATURE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductFeatureType(ProductFeatureType newProductFeatureType) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE__PRODUCT_FEATURE_TYPE, newProductFeatureType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Uom getUom() {
+		return (Uom)eGet(FeaturePackage.Literals.PRODUCT_FEATURE__UOM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUom(Uom newUom) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE__UOM, newUom);
 	}
 
 	/**
@@ -346,46 +386,6 @@ public class ProductFeatureImpl extends EntityTypedImpl<ProductFeatureType> impl
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductFeatureCategory getProductFeatureCategoryId() {
-		return (ProductFeatureCategory)eGet(FeaturePackage.Literals.PRODUCT_FEATURE__PRODUCT_FEATURE_CATEGORY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductFeatureCategoryId(ProductFeatureCategory newProductFeatureCategoryId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE__PRODUCT_FEATURE_CATEGORY_ID, newProductFeatureCategoryId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductFeatureType getProductFeatureTypeId() {
-		return (ProductFeatureType)eGet(FeaturePackage.Literals.PRODUCT_FEATURE__PRODUCT_FEATURE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductFeatureTypeId(ProductFeatureType newProductFeatureTypeId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE__PRODUCT_FEATURE_TYPE_ID, newProductFeatureTypeId);
 	}
 
 	/**

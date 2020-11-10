@@ -28,19 +28,19 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getAddress2 <em>Address2</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getAttnName <em>Attn Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getCity <em>City</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getCityGeoId <em>City Geo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getCountryGeoId <em>Country Geo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getCountyGeoId <em>County Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getCityGeo <em>City Geo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getCountryGeo <em>Country Geo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getCountyGeo <em>County Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getDirections <em>Directions</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getGeoPointId <em>Geo Point Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getGeoPoint <em>Geo Point</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getHouseNumber <em>House Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getHouseNumberExt <em>House Number Ext</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getMunicipalityGeoId <em>Municipality Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getMunicipalityGeo <em>Municipality Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getPostalAddressBoundaries <em>Postal Address Boundaries</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getPostalCode <em>Postal Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getPostalCodeExt <em>Postal Code Ext</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getPostalCodeGeoId <em>Postal Code Geo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getStateProvinceGeoId <em>State Province Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getPostalCodeGeo <em>Postal Code Geo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getStateProvinceGeo <em>State Province Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PostalAddressImpl#getToName <em>To Name</em>}</li>
  * </ul>
  *
@@ -153,8 +153,8 @@ public class PostalAddressImpl extends ContactMechImpl implements PostalAddress 
 	 * @generated
 	 */
 	@Override
-	public Geo getCityGeoId() {
-		return (Geo)eGet(ContactPackage.Literals.POSTAL_ADDRESS__CITY_GEO_ID, true);
+	public Geo getCityGeo() {
+		return (Geo)eGet(ContactPackage.Literals.POSTAL_ADDRESS__CITY_GEO, true);
 	}
 
 	/**
@@ -163,8 +163,8 @@ public class PostalAddressImpl extends ContactMechImpl implements PostalAddress 
 	 * @generated
 	 */
 	@Override
-	public void setCityGeoId(Geo newCityGeoId) {
-		eSet(ContactPackage.Literals.POSTAL_ADDRESS__CITY_GEO_ID, newCityGeoId);
+	public void setCityGeo(Geo newCityGeo) {
+		eSet(ContactPackage.Literals.POSTAL_ADDRESS__CITY_GEO, newCityGeo);
 	}
 
 	/**
@@ -173,8 +173,8 @@ public class PostalAddressImpl extends ContactMechImpl implements PostalAddress 
 	 * @generated
 	 */
 	@Override
-	public Geo getCountryGeoId() {
-		return (Geo)eGet(ContactPackage.Literals.POSTAL_ADDRESS__COUNTRY_GEO_ID, true);
+	public Geo getCountryGeo() {
+		return (Geo)eGet(ContactPackage.Literals.POSTAL_ADDRESS__COUNTRY_GEO, true);
 	}
 
 	/**
@@ -183,8 +183,8 @@ public class PostalAddressImpl extends ContactMechImpl implements PostalAddress 
 	 * @generated
 	 */
 	@Override
-	public void setCountryGeoId(Geo newCountryGeoId) {
-		eSet(ContactPackage.Literals.POSTAL_ADDRESS__COUNTRY_GEO_ID, newCountryGeoId);
+	public void setCountryGeo(Geo newCountryGeo) {
+		eSet(ContactPackage.Literals.POSTAL_ADDRESS__COUNTRY_GEO, newCountryGeo);
 	}
 
 	/**
@@ -193,8 +193,8 @@ public class PostalAddressImpl extends ContactMechImpl implements PostalAddress 
 	 * @generated
 	 */
 	@Override
-	public Geo getCountyGeoId() {
-		return (Geo)eGet(ContactPackage.Literals.POSTAL_ADDRESS__COUNTY_GEO_ID, true);
+	public Geo getCountyGeo() {
+		return (Geo)eGet(ContactPackage.Literals.POSTAL_ADDRESS__COUNTY_GEO, true);
 	}
 
 	/**
@@ -203,8 +203,8 @@ public class PostalAddressImpl extends ContactMechImpl implements PostalAddress 
 	 * @generated
 	 */
 	@Override
-	public void setCountyGeoId(Geo newCountyGeoId) {
-		eSet(ContactPackage.Literals.POSTAL_ADDRESS__COUNTY_GEO_ID, newCountyGeoId);
+	public void setCountyGeo(Geo newCountyGeo) {
+		eSet(ContactPackage.Literals.POSTAL_ADDRESS__COUNTY_GEO, newCountyGeo);
 	}
 
 	/**
@@ -233,8 +233,8 @@ public class PostalAddressImpl extends ContactMechImpl implements PostalAddress 
 	 * @generated
 	 */
 	@Override
-	public GeoPoint getGeoPointId() {
-		return (GeoPoint)eGet(ContactPackage.Literals.POSTAL_ADDRESS__GEO_POINT_ID, true);
+	public GeoPoint getGeoPoint() {
+		return (GeoPoint)eGet(ContactPackage.Literals.POSTAL_ADDRESS__GEO_POINT, true);
 	}
 
 	/**
@@ -243,8 +243,8 @@ public class PostalAddressImpl extends ContactMechImpl implements PostalAddress 
 	 * @generated
 	 */
 	@Override
-	public void setGeoPointId(GeoPoint newGeoPointId) {
-		eSet(ContactPackage.Literals.POSTAL_ADDRESS__GEO_POINT_ID, newGeoPointId);
+	public void setGeoPoint(GeoPoint newGeoPoint) {
+		eSet(ContactPackage.Literals.POSTAL_ADDRESS__GEO_POINT, newGeoPoint);
 	}
 
 	/**
@@ -293,8 +293,8 @@ public class PostalAddressImpl extends ContactMechImpl implements PostalAddress 
 	 * @generated
 	 */
 	@Override
-	public Geo getMunicipalityGeoId() {
-		return (Geo)eGet(ContactPackage.Literals.POSTAL_ADDRESS__MUNICIPALITY_GEO_ID, true);
+	public Geo getMunicipalityGeo() {
+		return (Geo)eGet(ContactPackage.Literals.POSTAL_ADDRESS__MUNICIPALITY_GEO, true);
 	}
 
 	/**
@@ -303,8 +303,8 @@ public class PostalAddressImpl extends ContactMechImpl implements PostalAddress 
 	 * @generated
 	 */
 	@Override
-	public void setMunicipalityGeoId(Geo newMunicipalityGeoId) {
-		eSet(ContactPackage.Literals.POSTAL_ADDRESS__MUNICIPALITY_GEO_ID, newMunicipalityGeoId);
+	public void setMunicipalityGeo(Geo newMunicipalityGeo) {
+		eSet(ContactPackage.Literals.POSTAL_ADDRESS__MUNICIPALITY_GEO, newMunicipalityGeo);
 	}
 
 	/**
@@ -364,8 +364,8 @@ public class PostalAddressImpl extends ContactMechImpl implements PostalAddress 
 	 * @generated
 	 */
 	@Override
-	public Geo getPostalCodeGeoId() {
-		return (Geo)eGet(ContactPackage.Literals.POSTAL_ADDRESS__POSTAL_CODE_GEO_ID, true);
+	public Geo getPostalCodeGeo() {
+		return (Geo)eGet(ContactPackage.Literals.POSTAL_ADDRESS__POSTAL_CODE_GEO, true);
 	}
 
 	/**
@@ -374,8 +374,8 @@ public class PostalAddressImpl extends ContactMechImpl implements PostalAddress 
 	 * @generated
 	 */
 	@Override
-	public void setPostalCodeGeoId(Geo newPostalCodeGeoId) {
-		eSet(ContactPackage.Literals.POSTAL_ADDRESS__POSTAL_CODE_GEO_ID, newPostalCodeGeoId);
+	public void setPostalCodeGeo(Geo newPostalCodeGeo) {
+		eSet(ContactPackage.Literals.POSTAL_ADDRESS__POSTAL_CODE_GEO, newPostalCodeGeo);
 	}
 
 	/**
@@ -384,8 +384,8 @@ public class PostalAddressImpl extends ContactMechImpl implements PostalAddress 
 	 * @generated
 	 */
 	@Override
-	public Geo getStateProvinceGeoId() {
-		return (Geo)eGet(ContactPackage.Literals.POSTAL_ADDRESS__STATE_PROVINCE_GEO_ID, true);
+	public Geo getStateProvinceGeo() {
+		return (Geo)eGet(ContactPackage.Literals.POSTAL_ADDRESS__STATE_PROVINCE_GEO, true);
 	}
 
 	/**
@@ -394,8 +394,8 @@ public class PostalAddressImpl extends ContactMechImpl implements PostalAddress 
 	 * @generated
 	 */
 	@Override
-	public void setStateProvinceGeoId(Geo newStateProvinceGeoId) {
-		eSet(ContactPackage.Literals.POSTAL_ADDRESS__STATE_PROVINCE_GEO_ID, newStateProvinceGeoId);
+	public void setStateProvinceGeo(Geo newStateProvinceGeo) {
+		eSet(ContactPackage.Literals.POSTAL_ADDRESS__STATE_PROVINCE_GEO, newStateProvinceGeo);
 	}
 
 	/**

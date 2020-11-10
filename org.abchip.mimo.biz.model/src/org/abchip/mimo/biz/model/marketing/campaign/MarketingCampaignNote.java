@@ -18,7 +18,7 @@ import org.abchip.mimo.biz.BizEntityNote;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignNote#getMarketingCampaignId <em>Marketing Campaign Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignNote#getMarketingCampaign <em>Marketing Campaign</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage#getMarketingCampaignNote()
@@ -27,30 +27,26 @@ import org.abchip.mimo.biz.BizEntityNote;
  */
 public interface MarketingCampaignNote extends BizEntityNote {
 	/**
-	 * Returns the value of the '<em><b>Marketing Campaign Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Marketing Campaign</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Marketing Campaign Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Marketing Campaign Id</em>' reference.
-	 * @see #setMarketingCampaignId(MarketingCampaign)
-	 * @see org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage#getMarketingCampaignNote_MarketingCampaignId()
+	 * @return the value of the '<em>Marketing Campaign</em>' reference.
+	 * @see #setMarketingCampaign(MarketingCampaign)
+	 * @see org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage#getMarketingCampaignNote_MarketingCampaign()
 	 * @model keys="marketingCampaignId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	MarketingCampaign getMarketingCampaignId();
+	MarketingCampaign getMarketingCampaign();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignNote#getMarketingCampaignId <em>Marketing Campaign Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignNote#getMarketingCampaign <em>Marketing Campaign</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Marketing Campaign Id</em>' reference.
-	 * @see #getMarketingCampaignId()
+	 * @param value the new value of the '<em>Marketing Campaign</em>' reference.
+	 * @see #getMarketingCampaign()
 	 * @generated
 	 */
-	void setMarketingCampaignId(MarketingCampaign value);
+	void setMarketingCampaign(MarketingCampaign value);
 
 } // MarketingCampaignNote

@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestAttributeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestAttributeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestAttributeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestAttributeImpl#getCustRequestId <em>Cust Request Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestAttributeImpl#getCustRequest <em>Cust Request</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestAttributeImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestAttributeImpl#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestAttributeImpl#getAttrValue <em>Attr Value</em>}</li>
@@ -153,6 +153,26 @@ public class CustRequestAttributeImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
+	public CustRequest getCustRequest() {
+		return (CustRequest)eGet(RequestPackage.Literals.CUST_REQUEST_ATTRIBUTE__CUST_REQUEST, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCustRequest(CustRequest newCustRequest) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_ATTRIBUTE__CUST_REQUEST, newCustRequest);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrDescription() {
 		return (String)eGet(RequestPackage.Literals.CUST_REQUEST_ATTRIBUTE__ATTR_DESCRIPTION, true);
 	}
@@ -243,26 +263,6 @@ public class CustRequestAttributeImpl extends EntityIdentifiableImpl implements 
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CustRequest getCustRequestId() {
-		return (CustRequest)eGet(RequestPackage.Literals.CUST_REQUEST_ATTRIBUTE__CUST_REQUEST_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCustRequestId(CustRequest newCustRequestId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_ATTRIBUTE__CUST_REQUEST_ID, newCustRequestId);
 	}
 
 } //CustRequestAttributeImpl

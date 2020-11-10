@@ -24,7 +24,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityType#getFacilityTypeAttrs <em>Facility Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityType()
@@ -101,30 +101,26 @@ public interface FacilityType extends EntityType<Facility>, EntityInfo {
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(FacilityType)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(FacilityType)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityType_ParentType()
 	 * @model keys="facilityTypeId"
 	 * @generated
 	 */
-	FacilityType getParentTypeId();
+	FacilityType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.FacilityType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(FacilityType value);
+	void setParentType(FacilityType value);
 
 	/**
 	 * Returns the value of the '<em><b>Facility Type Id</b></em>' attribute.

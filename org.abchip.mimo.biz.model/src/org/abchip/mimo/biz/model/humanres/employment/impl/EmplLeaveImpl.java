@@ -31,12 +31,12 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveImpl#getLeaveTypeId <em>Leave Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveImpl#getLeaveType <em>Leave Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveImpl#getApproverPartyId <em>Approver Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveImpl#getApproverParty <em>Approver Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveImpl#getEmplLeaveReasonTypeId <em>Empl Leave Reason Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveImpl#getEmplLeaveReasonType <em>Empl Leave Reason Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveImpl#getLeaveStatus <em>Leave Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -160,8 +160,8 @@ public class EmplLeaveImpl extends EntityTypedImpl<EmplLeaveType> implements Emp
 	 * @generated
 	 */
 	@Override
-	public Party getApproverPartyId() {
-		return (Party)eGet(EmploymentPackage.Literals.EMPL_LEAVE__APPROVER_PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(EmploymentPackage.Literals.EMPL_LEAVE__PARTY, true);
 	}
 
 	/**
@@ -170,8 +170,28 @@ public class EmplLeaveImpl extends EntityTypedImpl<EmplLeaveType> implements Emp
 	 * @generated
 	 */
 	@Override
-	public void setApproverPartyId(Party newApproverPartyId) {
-		eSet(EmploymentPackage.Literals.EMPL_LEAVE__APPROVER_PARTY_ID, newApproverPartyId);
+	public void setParty(Party newParty) {
+		eSet(EmploymentPackage.Literals.EMPL_LEAVE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EmplLeaveType getLeaveType() {
+		return (EmplLeaveType)eGet(EmploymentPackage.Literals.EMPL_LEAVE__LEAVE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLeaveType(EmplLeaveType newLeaveType) {
+		eSet(EmploymentPackage.Literals.EMPL_LEAVE__LEAVE_TYPE, newLeaveType);
 	}
 
 	/**
@@ -200,8 +220,8 @@ public class EmplLeaveImpl extends EntityTypedImpl<EmplLeaveType> implements Emp
 	 * @generated
 	 */
 	@Override
-	public EmplLeaveReasonType getEmplLeaveReasonTypeId() {
-		return (EmplLeaveReasonType)eGet(EmploymentPackage.Literals.EMPL_LEAVE__EMPL_LEAVE_REASON_TYPE_ID, true);
+	public EmplLeaveReasonType getEmplLeaveReasonType() {
+		return (EmplLeaveReasonType)eGet(EmploymentPackage.Literals.EMPL_LEAVE__EMPL_LEAVE_REASON_TYPE, true);
 	}
 
 	/**
@@ -210,8 +230,8 @@ public class EmplLeaveImpl extends EntityTypedImpl<EmplLeaveType> implements Emp
 	 * @generated
 	 */
 	@Override
-	public void setEmplLeaveReasonTypeId(EmplLeaveReasonType newEmplLeaveReasonTypeId) {
-		eSet(EmploymentPackage.Literals.EMPL_LEAVE__EMPL_LEAVE_REASON_TYPE_ID, newEmplLeaveReasonTypeId);
+	public void setEmplLeaveReasonType(EmplLeaveReasonType newEmplLeaveReasonType) {
+		eSet(EmploymentPackage.Literals.EMPL_LEAVE__EMPL_LEAVE_REASON_TYPE, newEmplLeaveReasonType);
 	}
 
 	/**
@@ -240,6 +260,26 @@ public class EmplLeaveImpl extends EntityTypedImpl<EmplLeaveType> implements Emp
 	 * @generated
 	 */
 	@Override
+	public Party getApproverParty() {
+		return (Party)eGet(EmploymentPackage.Literals.EMPL_LEAVE__APPROVER_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setApproverParty(Party newApproverParty) {
+		eSet(EmploymentPackage.Literals.EMPL_LEAVE__APPROVER_PARTY, newApproverParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public StatusItem getLeaveStatus() {
 		return (StatusItem)eGet(EmploymentPackage.Literals.EMPL_LEAVE__LEAVE_STATUS, true);
 	}
@@ -252,46 +292,6 @@ public class EmplLeaveImpl extends EntityTypedImpl<EmplLeaveType> implements Emp
 	@Override
 	public void setLeaveStatus(StatusItem newLeaveStatus) {
 		eSet(EmploymentPackage.Literals.EMPL_LEAVE__LEAVE_STATUS, newLeaveStatus);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EmplLeaveType getLeaveTypeId() {
-		return (EmplLeaveType)eGet(EmploymentPackage.Literals.EMPL_LEAVE__LEAVE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setLeaveTypeId(EmplLeaveType newLeaveTypeId) {
-		eSet(EmploymentPackage.Literals.EMPL_LEAVE__LEAVE_TYPE_ID, newLeaveTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(EmploymentPackage.Literals.EMPL_LEAVE__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(EmploymentPackage.Literals.EMPL_LEAVE__PARTY_ID, newPartyId);
 	}
 
 	/**

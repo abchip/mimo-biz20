@@ -3,7 +3,7 @@
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="SETUP_ADMIN" description="ALL OFBiz Setup operations."/>
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="SETUP_VIEW" description="OFBiz Setup View permission."/>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#SETUP_ADMIN"/>
+    <group href="SecurityGroup#SUPER"/>
+    <permission href="SecurityPermission#SETUP_ADMIN"/>
   </contents>
 </mimo-ent:EntityContainer>

@@ -22,7 +22,7 @@ import org.abchip.mimo.biz.model.party.contact.ContactMech;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.EftAccount#getAccountType <em>Account Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.EftAccount#getBankName <em>Bank Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.EftAccount#getCompanyNameOnAccount <em>Company Name On Account</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.EftAccount#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.EftAccount#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.EftAccount#getNameOnAccount <em>Name On Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.EftAccount#getRoutingNumber <em>Routing Number</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.EftAccount#getYearsAtBank <em>Years At Bank</em>}</li>
@@ -138,30 +138,26 @@ public interface EftAccount extends PaymentMethod {
 	void setCompanyNameOnAccount(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Contact Mech Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Contact Mech</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #setContactMechId(ContactMech)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getEftAccount_ContactMechId()
+	 * @return the value of the '<em>Contact Mech</em>' reference.
+	 * @see #setContactMech(ContactMech)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getEftAccount_ContactMech()
 	 * @model keys="contactMechId"
 	 * @generated
 	 */
-	ContactMech getContactMechId();
+	ContactMech getContactMech();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.EftAccount#getContactMechId <em>Contact Mech Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.EftAccount#getContactMech <em>Contact Mech</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Mech Id</em>' reference.
-	 * @see #getContactMechId()
+	 * @param value the new value of the '<em>Contact Mech</em>' reference.
+	 * @see #getContactMech()
 	 * @generated
 	 */
-	void setContactMechId(ContactMech value);
+	void setContactMech(ContactMech value);
 
 	/**
 	 * Returns the value of the '<em><b>Name On Account</b></em>' attribute.

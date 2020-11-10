@@ -7,10 +7,10 @@
   <contents xsi:type="biz-agreement:AgreementItemType" agreementItemTypeId="AGREEMENT_COMMISSION" description="Commission Rate"/>
   <contents xsi:type="biz-agreement:AgreementType" agreementTypeId="PRODUCT_AGREEMENT" description="Product"/>
   <contents xsi:type="biz-agreement:AgreementType" agreementTypeId="PURCHASE_AGREEMENT" description="Purchase">
-    <parentTypeId href="AgreementType#PRODUCT_AGREEMENT"/>
+    <parentType href="AgreementType#PRODUCT_AGREEMENT"/>
   </contents>
   <contents xsi:type="biz-agreement:AgreementType" agreementTypeId="SALES_AGREEMENT" description="Sales">
-    <parentTypeId href="AgreementType#PRODUCT_AGREEMENT"/>
+    <parentType href="AgreementType#PRODUCT_AGREEMENT"/>
   </contents>
   <contents xsi:type="biz-agreement:AgreementType" agreementTypeId="EMPLOYMENT_AGREEMENT" description="Employment"/>
   <contents xsi:type="biz-agreement:AgreementType" agreementTypeId="OTHER_AGREEMENT" description="Other"/>

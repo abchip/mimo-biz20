@@ -9,17 +9,16 @@
 package org.abchip.mimo.biz.asf.plugins;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import org.abchip.mimo.biz.asf.plugins.entity.EntityUtils;
 import org.abchip.mimo.biz.asf.plugins.entity.ModelUtils;
-import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.biz.asf.plugins.entity.ServiceUtils;
 import org.abchip.mimo.context.Context;
-import org.abchip.mimo.context.ContextDescription;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
@@ -65,8 +64,6 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	private ModelEntity modelEntity = null;
 	private ModelFieldTypeReader modelHelper;
 
-	private GenericValue userLogin = null;
-
 	public OFBizResourceImpl(Context context, String tenantId, Frame<E> frame) {
 		super(context, tenantId);
 
@@ -101,7 +98,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 				ModelService service = dispatcher.getDispatchContext().getModelService(serviceName);
 
 				try {
-					Map<String, Object> context = toBizContext(delegator, service, entity);
+					Map<String, Object> context = ServiceUtils.toBizContext(this.getContext(), this.getTenant(), delegator, service, entity);
 					context = dispatcher.runSync(serviceName, context);
 					if (ServiceUtil.isError(context))
 						throw new ResourceException(ServiceUtil.getErrorMessage(context));
@@ -176,7 +173,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		Delegator delegator = ContextUtils.getDelegator(tenantId, false);
 
-		DynamicViewEntity dynamicViewEntity = buildDynamicView(delegator, this.modelEntity);
+		DynamicViewEntity dynamicViewEntity = buildDynamicView(delegator);
 
 		EntityQuery eq = EntityQuery.use(delegator);
 		eq = eq.from(dynamicViewEntity);
@@ -189,6 +186,8 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			ModelField pkField = pkFields.get(i);
 			ModelFieldType type = modelHelper.getModelFieldType(pkField.getType());
 			Slot slot = this.getFrame().getSlot(pkField.getName());
+			if (slot == null)
+				"".toString();
 			try {
 				Object value = EntityUtils.toBizValue(type.getJavaType(), slot, key);
 				primaryKey.set(slot.getName(), value);
@@ -247,32 +246,30 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		EntityQuery eq = EntityQuery.use(delegator);
 
+		DynamicViewEntity dynamicViewEntity = buildDynamicView(delegator);
+
 		// SELECT
-		if (fields != null)
-			eq = eq.select(fields.split(","));
-		else if (proxy)
+		if (fields != null) {
+			OFBizSelectAnalyzer analyzer = analyzeSelect(delegator, this.getFrame(), fields);
+			appendEntities(delegator, dynamicViewEntity, analyzer.getListEntities());
+
+			fields = analyzer.getStringResult();
+			if (fields != null && !fields.isEmpty()) {
+				Set<String> fieldSet = new HashSet<String>(this.modelEntity.getPkFieldNames());
+				for (String field : fields.split(",")) {
+					fieldSet.add(field);
+				}
+				eq = eq.select(fieldSet);
+			}
+		} else if (proxy)
 			eq = eq.select(new HashSet<String>(this.modelEntity.getPkFieldNames()));
 
-		DynamicViewEntity dynamicViewEntity = buildDynamicView(delegator, this.modelEntity);
-
+		// WHERE
 		if (filter != null && !filter.isEmpty()) {
-			OFBizFilterAnalyzer analyzer = analyzeFilter(delegator, this.modelEntity.getEntityName(), filter);
+			OFBizWhereAnalyzer analyzer = analyzeFilter(delegator, this.getFrame(), filter);
+			appendEntities(delegator, dynamicViewEntity, analyzer.getListEntities());
 
-			for (String linkedName : analyzer.getListEntities()) {
-				ModelEntity linkedEntity = delegator.getModelEntity(linkedName);
-				dynamicViewEntity.addMemberEntity(linkedEntity.getEntityName(), linkedEntity.getEntityName());
-				Iterator<ModelField> fieldIterator = linkedEntity.getFieldsIterator();
-				while (fieldIterator.hasNext()) {
-					ModelField field = fieldIterator.next();
-					dynamicViewEntity.addAlias(linkedEntity.getEntityName(), field.getName());
-				}
-
-				dynamicViewEntity.addViewLink(this.modelEntity.getEntityName(), linkedEntity.getEntityName(), Boolean.TRUE,
-						ModelKeyMap.makeKeyMapList(this.modelEntity.getFirstPkFieldName(), linkedEntity.getFirstPkFieldName()));
-			}
-
-			// WHERE
-			filter = analyzer.getStringFilter();
+			filter = analyzer.getStringResult();
 			if (filter != null && !filter.isEmpty())
 				eq = eq.where(EntityCondition.makeConditionWhere(filter));
 		}
@@ -331,14 +328,14 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		}
 
 		Delegator delegator = ContextUtils.getDelegator(tenantId, false);
+		LocalDispatcher dispatcher = ContextUtils.getLocalDispatcher(delegator);
 
-		String serviceName = "update" + this.getFrame().getName();
 		try {
-			LocalDispatcher dispatcher = ContextUtils.getLocalDispatcher(delegator);
+			String serviceName = "update" + this.getFrame().getName();
 			ModelService service = dispatcher.getDispatchContext().getModelService(serviceName);
 
 			try {
-				Map<String, Object> context = toBizContext(delegator, service, entity);
+				Map<String, Object> context = ServiceUtils.toBizContext(this.getContext(), this.getTenant(), delegator, service, entity);
 				context = dispatcher.runSync(serviceName, context);
 				if (ServiceUtil.isError(context))
 					throw new ResourceException(ServiceUtil.getErrorMessage(context));
@@ -381,14 +378,14 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		}
 
 		Delegator delegator = ContextUtils.getDelegator(tenantId, false);
+		LocalDispatcher dispatcher = ContextUtils.getLocalDispatcher(delegator);
 
-		String serviceName = "delete" + this.getFrame().getName();
 		try {
-			LocalDispatcher dispatcher = ContextUtils.getLocalDispatcher(delegator);
+			String serviceName = "delete" + this.getFrame().getName();
 			ModelService service = dispatcher.getDispatchContext().getModelService(serviceName);
 
 			try {
-				Map<String, Object> context = toBizContext(delegator, service, entity);
+				Map<String, Object> context = ServiceUtils.toBizContext(this.getContext(), this.getTenant(), delegator, service, entity);
 				context = dispatcher.runSync(serviceName, context);
 				if (ServiceUtil.isError(context))
 					throw new ResourceException(ServiceUtil.getErrorMessage(context));
@@ -466,7 +463,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			doDelete(delegator, ako, entity);
 	}
 
-	private DynamicViewEntity buildDynamicView(Delegator delegator, ModelEntity modelEntity) {
+	private DynamicViewEntity buildDynamicView(Delegator delegator) {
 
 		DynamicViewEntity dynamicViewEntity = new DynamicViewEntity();
 		dynamicViewEntity.addMemberEntity(modelEntity.getEntityName(), modelEntity.getEntityName());
@@ -480,65 +477,73 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		return dynamicViewEntity;
 	}
 
-	private void addSuperEntity(Delegator delegator, DynamicViewEntity dynamicView, ModelEntity modelEntity) {
+	private void addSuperEntity(Delegator delegator, DynamicViewEntity dynamicViewEntity, ModelEntity modelEntity) {
 
 		String superEntity = ModelUtils.getSuperEntity(delegator, modelEntity.getEntityName());
 		if (superEntity == null)
 			return;
 
-		dynamicView.addMemberEntity(superEntity, superEntity);
+		dynamicViewEntity.addMemberEntity(superEntity, superEntity);
 
 		ModelEntity modelSuperEntity = delegator.getModelEntity(superEntity);
 		Iterator<ModelField> fieldIterator = modelSuperEntity.getFieldsIterator();
 		while (fieldIterator.hasNext()) {
 			ModelField field = fieldIterator.next();
-			dynamicView.addAlias(superEntity, field.getName());
+			dynamicViewEntity.addAlias(superEntity, field.getName());
 		}
-		dynamicView.addViewLink(modelEntity.getEntityName(), superEntity, Boolean.TRUE, ModelKeyMap.makeKeyMapList(modelEntity.getFirstPkFieldName(), modelSuperEntity.getFirstPkFieldName()));
+		dynamicViewEntity.addViewLink(modelEntity.getEntityName(), superEntity, Boolean.TRUE,
+				ModelKeyMap.makeKeyMapList(modelEntity.getFirstPkFieldName(), modelSuperEntity.getFirstPkFieldName()));
 
-		addSuperEntity(delegator, dynamicView, modelSuperEntity);
+		addSuperEntity(delegator, dynamicViewEntity, modelSuperEntity);
 	}
 
-	private OFBizFilterAnalyzer analyzeFilter(Delegator delegator, String frame, String filter) {
+	private void appendEntities(Delegator delegator, DynamicViewEntity dynamicViewEntity, List<String> listEntities) {
+		for (String linkedName : listEntities) {
+			ModelEntity linkedEntity = delegator.getModelEntity(linkedName);
+			dynamicViewEntity.addMemberEntity(linkedEntity.getEntityName(), linkedEntity.getEntityName());
+			Iterator<ModelField> fieldIterator = linkedEntity.getFieldsIterator();
+			while (fieldIterator.hasNext()) {
+				ModelField field = fieldIterator.next();
+				dynamicViewEntity.addAlias(linkedEntity.getEntityName(), field.getName());
+			}
 
-		ANTLRInputStream input = new ANTLRInputStream(filter);
+			dynamicViewEntity.addViewLink(this.modelEntity.getEntityName(), linkedEntity.getEntityName(), Boolean.TRUE,
+					ModelKeyMap.makeKeyMapList(this.modelEntity.getFirstPkFieldName(), linkedEntity.getFirstPkFieldName()));
+		}
+	}
+
+	private OFBizSelectAnalyzer analyzeSelect(Delegator delegator, Frame<?> frame, String fields) {
+
+		String sql = "SELECT " + fields;
+
+		ANTLRInputStream input = new ANTLRInputStream(sql);
+		SQLiteLexer SQLiteLexer = new SQLiteLexer(input);
+		CommonTokenStream tokens = new CommonTokenStream(SQLiteLexer);
+		SQLiteParser parser = new SQLiteParser(tokens);
+
+		ParseTree tree = parser.select_stmt();
+		ParseTreeWalker walker = new ParseTreeWalker();
+		OFBizSelectAnalyzer analyzer = new OFBizSelectAnalyzer(delegator, frame);
+		walker.walk(analyzer, tree);
+
+		return analyzer;
+	}
+
+	private OFBizWhereAnalyzer analyzeFilter(Delegator delegator, Frame<?> frame, String filter) {
+
+		String sql = filter;
+
+		ANTLRInputStream input = new ANTLRInputStream(sql);
 		SQLiteLexer SQLiteLexer = new SQLiteLexer(input);
 		CommonTokenStream tokens = new CommonTokenStream(SQLiteLexer);
 		SQLiteParser parser = new SQLiteParser(tokens);
 
 		ParseTree tree = parser.expr();
 		ParseTreeWalker walker = new ParseTreeWalker();
-		OFBizFilterAnalyzer analyzer = new OFBizFilterAnalyzer(delegator, frame);
+		OFBizWhereAnalyzer analyzer = new OFBizWhereAnalyzer(delegator, frame);
 		walker.walk(analyzer, tree);
 
 		return analyzer;
-	}
-
-	private Map<String, Object> toBizContext(Delegator delegator, ModelService service, E entity) throws GeneralException {
-
-		Map<String, Object> context = new HashMap<String, Object>();
-		ContextDescription contextDescription = this.getContext().getContextDescription();
-
-		context.put("userLogin", getUserLogin(delegator));
-		context.put("locale", contextDescription.getLocale());
-
-		for (Slot slot : getFrame().getSlots()) {
-			if (slot.isTransient())
-				continue;
-
-			ModelParam modelParam = service.getParam(slot.getName());
-			if (modelParam == null)
-				continue;
-
-			Object value = getFrame().getValue(entity, slot.getName(), false, false);
-			value = EntityUtils.toBizValue(modelParam.getType(), slot, value);
-			if (value == null)
-				continue;
-
-			context.put(slot.getName(), value);
-		}
-
-		return context;
 	}
 
 	private void completeEntity(ModelService service, E entity, Map<String, Object> context) {
@@ -584,12 +589,5 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			sb.append(genericValue.get(curPk.getName()));
 		}
 		return sb.toString();
-	}
-
-	private GenericValue getUserLogin(Delegator delegator) throws GeneralException {
-		if (this.userLogin == null)
-			this.userLogin = EntityUtils.toBizEntity(delegator, this.getContext().createProxy(UserLogin.class, this.getContext().getContextDescription().getUser()));
-
-		return userLogin;
 	}
 }

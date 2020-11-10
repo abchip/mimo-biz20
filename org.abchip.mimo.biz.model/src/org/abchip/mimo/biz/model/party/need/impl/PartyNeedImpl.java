@@ -34,16 +34,16 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getRoleType <em>Role Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getPartyNeedId <em>Party Need Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getCommunicationEventId <em>Communication Event Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getCommunicationEvent <em>Communication Event</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getDatetimeRecorded <em>Datetime Recorded</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getNeedTypeId <em>Need Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getPartyTypeId <em>Party Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getProductCategoryId <em>Product Category Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getNeedType <em>Need Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getPartyType <em>Party Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getProductCategory <em>Product Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl#getVisitId <em>Visit Id</em>}</li>
  * </ul>
  *
@@ -165,6 +165,46 @@ public class PartyNeedImpl extends EntityTypedImpl<NeedType> implements PartyNee
 	 * @generated
 	 */
 	@Override
+	public Party getParty() {
+		return (Party)eGet(NeedPackage.Literals.PARTY_NEED__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(NeedPackage.Literals.PARTY_NEED__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RoleType getRoleType() {
+		return (RoleType)eGet(NeedPackage.Literals.PARTY_NEED__ROLE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRoleType(RoleType newRoleType) {
+		eSet(NeedPackage.Literals.PARTY_NEED__ROLE_TYPE, newRoleType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getDatetimeRecorded() {
 		return (Date)eGet(NeedPackage.Literals.PARTY_NEED__DATETIME_RECORDED, true);
 	}
@@ -205,8 +245,8 @@ public class PartyNeedImpl extends EntityTypedImpl<NeedType> implements PartyNee
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(NeedPackage.Literals.PARTY_NEED__PARTY_ID, true);
+	public NeedType getNeedType() {
+		return (NeedType)eGet(NeedPackage.Literals.PARTY_NEED__NEED_TYPE, true);
 	}
 
 	/**
@@ -215,8 +255,68 @@ public class PartyNeedImpl extends EntityTypedImpl<NeedType> implements PartyNee
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(NeedPackage.Literals.PARTY_NEED__PARTY_ID, newPartyId);
+	public void setNeedType(NeedType newNeedType) {
+		eSet(NeedPackage.Literals.PARTY_NEED__NEED_TYPE, newNeedType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PartyType getPartyType() {
+		return (PartyType)eGet(NeedPackage.Literals.PARTY_NEED__PARTY_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPartyType(PartyType newPartyType) {
+		eSet(NeedPackage.Literals.PARTY_NEED__PARTY_TYPE, newPartyType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Product getProduct() {
+		return (Product)eGet(NeedPackage.Literals.PARTY_NEED__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(NeedPackage.Literals.PARTY_NEED__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductCategory getProductCategory() {
+		return (ProductCategory)eGet(NeedPackage.Literals.PARTY_NEED__PRODUCT_CATEGORY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductCategory(ProductCategory newProductCategory) {
+		eSet(NeedPackage.Literals.PARTY_NEED__PRODUCT_CATEGORY, newProductCategory);
 	}
 
 	/**
@@ -245,8 +345,8 @@ public class PartyNeedImpl extends EntityTypedImpl<NeedType> implements PartyNee
 	 * @generated
 	 */
 	@Override
-	public PartyType getPartyTypeId() {
-		return (PartyType)eGet(NeedPackage.Literals.PARTY_NEED__PARTY_TYPE_ID, true);
+	public CommunicationEvent getCommunicationEvent() {
+		return (CommunicationEvent)eGet(NeedPackage.Literals.PARTY_NEED__COMMUNICATION_EVENT, true);
 	}
 
 	/**
@@ -255,68 +355,8 @@ public class PartyNeedImpl extends EntityTypedImpl<NeedType> implements PartyNee
 	 * @generated
 	 */
 	@Override
-	public void setPartyTypeId(PartyType newPartyTypeId) {
-		eSet(NeedPackage.Literals.PARTY_NEED__PARTY_TYPE_ID, newPartyTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductCategory getProductCategoryId() {
-		return (ProductCategory)eGet(NeedPackage.Literals.PARTY_NEED__PRODUCT_CATEGORY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductCategoryId(ProductCategory newProductCategoryId) {
-		eSet(NeedPackage.Literals.PARTY_NEED__PRODUCT_CATEGORY_ID, newProductCategoryId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(NeedPackage.Literals.PARTY_NEED__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(NeedPackage.Literals.PARTY_NEED__PRODUCT_ID, newProductId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(NeedPackage.Literals.PARTY_NEED__ROLE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(NeedPackage.Literals.PARTY_NEED__ROLE_TYPE_ID, newRoleTypeId);
+	public void setCommunicationEvent(CommunicationEvent newCommunicationEvent) {
+		eSet(NeedPackage.Literals.PARTY_NEED__COMMUNICATION_EVENT, newCommunicationEvent);
 	}
 
 	/**
@@ -375,46 +415,6 @@ public class PartyNeedImpl extends EntityTypedImpl<NeedType> implements PartyNee
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NeedType getNeedTypeId() {
-		return (NeedType)eGet(NeedPackage.Literals.PARTY_NEED__NEED_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setNeedTypeId(NeedType newNeedTypeId) {
-		eSet(NeedPackage.Literals.PARTY_NEED__NEED_TYPE_ID, newNeedTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CommunicationEvent getCommunicationEventId() {
-		return (CommunicationEvent)eGet(NeedPackage.Literals.PARTY_NEED__COMMUNICATION_EVENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCommunicationEventId(CommunicationEvent newCommunicationEventId) {
-		eSet(NeedPackage.Literals.PARTY_NEED__COMMUNICATION_EVENT_ID, newCommunicationEventId);
 	}
 
 } //PartyNeedImpl

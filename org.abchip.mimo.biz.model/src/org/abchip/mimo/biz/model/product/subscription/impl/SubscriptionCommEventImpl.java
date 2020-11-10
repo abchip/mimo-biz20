@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionCommEventImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionCommEventImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionCommEventImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionCommEventImpl#getCommunicationEventId <em>Communication Event Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionCommEventImpl#getSubscriptionId <em>Subscription Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionCommEventImpl#getCommunicationEvent <em>Communication Event</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionCommEventImpl#getSubscription <em>Subscription</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class SubscriptionCommEventImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public CommunicationEvent getCommunicationEventId() {
-		return (CommunicationEvent)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_COMM_EVENT__COMMUNICATION_EVENT_ID, true);
+	public CommunicationEvent getCommunicationEvent() {
+		return (CommunicationEvent)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_COMM_EVENT__COMMUNICATION_EVENT, true);
 	}
 
 	/**
@@ -162,8 +162,8 @@ public class SubscriptionCommEventImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setCommunicationEventId(CommunicationEvent newCommunicationEventId) {
-		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_COMM_EVENT__COMMUNICATION_EVENT_ID, newCommunicationEventId);
+	public void setCommunicationEvent(CommunicationEvent newCommunicationEvent) {
+		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_COMM_EVENT__COMMUNICATION_EVENT, newCommunicationEvent);
 	}
 
 	/**
@@ -172,8 +172,8 @@ public class SubscriptionCommEventImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public Subscription getSubscriptionId() {
-		return (Subscription)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_COMM_EVENT__SUBSCRIPTION_ID, true);
+	public Subscription getSubscription() {
+		return (Subscription)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_COMM_EVENT__SUBSCRIPTION, true);
 	}
 
 	/**
@@ -182,8 +182,8 @@ public class SubscriptionCommEventImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setSubscriptionId(Subscription newSubscriptionId) {
-		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_COMM_EVENT__SUBSCRIPTION_ID, newSubscriptionId);
+	public void setSubscription(Subscription newSubscription) {
+		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_COMM_EVENT__SUBSCRIPTION, newSubscription);
 	}
 
 	/**

@@ -38,7 +38,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoImpl#getCreatedDate <em>Created Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoImpl#getOverrideOrgPartyId <em>Override Org Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoImpl#getOverrideOrgParty <em>Override Org Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoImpl#getProductPromoRules <em>Product Promo Rules</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoImpl#getPromoName <em>Promo Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoImpl#getPromoText <em>Promo Text</em>}</li>
@@ -269,8 +269,8 @@ public class ProductPromoImpl extends EntityIdentifiableImpl implements ProductP
 	 * @generated
 	 */
 	@Override
-	public Party getOverrideOrgPartyId() {
-		return (Party)eGet(PromoPackage.Literals.PRODUCT_PROMO__OVERRIDE_ORG_PARTY_ID, true);
+	public Party getOverrideOrgParty() {
+		return (Party)eGet(PromoPackage.Literals.PRODUCT_PROMO__OVERRIDE_ORG_PARTY, true);
 	}
 
 	/**
@@ -279,8 +279,8 @@ public class ProductPromoImpl extends EntityIdentifiableImpl implements ProductP
 	 * @generated
 	 */
 	@Override
-	public void setOverrideOrgPartyId(Party newOverrideOrgPartyId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO__OVERRIDE_ORG_PARTY_ID, newOverrideOrgPartyId);
+	public void setOverrideOrgParty(Party newOverrideOrgParty) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO__OVERRIDE_ORG_PARTY, newOverrideOrgParty);
 	}
 
 	/**

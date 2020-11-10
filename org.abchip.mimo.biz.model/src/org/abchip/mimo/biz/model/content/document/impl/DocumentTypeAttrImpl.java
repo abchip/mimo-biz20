@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeAttrImpl#getDocumentTypeId <em>Document Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeAttrImpl#getDocumentType <em>Document Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -152,6 +152,26 @@ public class DocumentTypeAttrImpl extends EntityIdentifiableImpl implements Docu
 	 * @generated
 	 */
 	@Override
+	public DocumentType getDocumentType() {
+		return (DocumentType)eGet(DocumentPackage.Literals.DOCUMENT_TYPE_ATTR__DOCUMENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDocumentType(DocumentType newDocumentType) {
+		eSet(DocumentPackage.Literals.DOCUMENT_TYPE_ATTR__DOCUMENT_TYPE, newDocumentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrName() {
 		return (String)eGet(DocumentPackage.Literals.DOCUMENT_TYPE_ATTR__ATTR_NAME, true);
 	}
@@ -222,26 +242,6 @@ public class DocumentTypeAttrImpl extends EntityIdentifiableImpl implements Docu
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DocumentType getDocumentTypeId() {
-		return (DocumentType)eGet(DocumentPackage.Literals.DOCUMENT_TYPE_ATTR__DOCUMENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDocumentTypeId(DocumentType newDocumentTypeId) {
-		eSet(DocumentPackage.Literals.DOCUMENT_TYPE_ATTR__DOCUMENT_TYPE_ID, newDocumentTypeId);
 	}
 
 } //DocumentTypeAttrImpl

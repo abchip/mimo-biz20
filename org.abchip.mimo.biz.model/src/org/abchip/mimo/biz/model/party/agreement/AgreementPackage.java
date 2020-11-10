@@ -144,13 +144,13 @@ public interface AgreementPackage extends EPackage {
 	int ADDENDUM__ADDENDUM_TEXT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
+	 * The feature id for the '<em><b>Agreement</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADDENDUM__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int ADDENDUM__AGREEMENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -253,13 +253,13 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT__AGREEMENT_ITEMS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Agreement Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Agreement Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__AGREEMENT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int AGREEMENT__AGREEMENT_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -298,13 +298,13 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT__PARTY_ID_TO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
+	int AGREEMENT__PRODUCT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id From</b></em>' reference.
@@ -398,13 +398,13 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
+	 * The feature id for the '<em><b>Agreement</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ATTRIBUTE__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int AGREEMENT_ATTRIBUTE__AGREEMENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -489,31 +489,31 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_CONTENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
+	 * The feature id for the '<em><b>Agreement</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT__AGREEMENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int AGREEMENT_CONTENT__AGREEMENT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Content Id</b></em>' reference.
+	 * The feature id for the '<em><b>Content</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT__CONTENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int AGREEMENT_CONTENT__CONTENT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Agreement Content Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Agreement Content Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT__AGREEMENT_CONTENT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int AGREEMENT_CONTENT__AGREEMENT_CONTENT_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -634,13 +634,13 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_CONTENT_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int AGREEMENT_CONTENT_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Content Type</em>' class.
@@ -834,22 +834,22 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_FACILITY_APPL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
+	 * The feature id for the '<em><b>Agreement</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_FACILITY_APPL__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int AGREEMENT_FACILITY_APPL__AGREEMENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_FACILITY_APPL__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int AGREEMENT_FACILITY_APPL__FACILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -916,22 +916,22 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_GEOGRAPHICAL_APPLIC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
+	 * The feature id for the '<em><b>Agreement</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_GEOGRAPHICAL_APPLIC__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int AGREEMENT_GEOGRAPHICAL_APPLIC__AGREEMENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Geo Id</b></em>' reference.
+	 * The feature id for the '<em><b>Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_GEOGRAPHICAL_APPLIC__GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int AGREEMENT_GEOGRAPHICAL_APPLIC__GEO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -998,13 +998,13 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_ITEM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
+	 * The feature id for the '<em><b>Agreement</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM__AGREEMENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int AGREEMENT_ITEM__AGREEMENT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -1025,13 +1025,13 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_ITEM__AGREEMENT_IMAGE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Agreement Item Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Agreement Item Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM__AGREEMENT_ITEM_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int AGREEMENT_ITEM__AGREEMENT_ITEM_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Text</b></em>' attribute.
@@ -1252,13 +1252,13 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_ITEM_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
+	int AGREEMENT_ITEM_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Item Type</em>' class.
@@ -1316,13 +1316,13 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_ITEM_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Agreement Item Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Agreement Item Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE_ATTR__AGREEMENT_ITEM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int AGREEMENT_ITEM_TYPE_ATTR__AGREEMENT_ITEM_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1398,22 +1398,22 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_PARTY_APPLIC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
+	 * The feature id for the '<em><b>Agreement</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PARTY_APPLIC__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int AGREEMENT_PARTY_APPLIC__AGREEMENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PARTY_APPLIC__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int AGREEMENT_PARTY_APPLIC__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -1480,22 +1480,22 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_PRODUCT_APPL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
+	 * The feature id for the '<em><b>Agreement</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PRODUCT_APPL__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int AGREEMENT_PRODUCT_APPL__AGREEMENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PRODUCT_APPL__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int AGREEMENT_PRODUCT_APPL__PRODUCT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -1571,22 +1571,22 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_PROMO_APPL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Promo Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Promo</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PROMO_APPL__PRODUCT_PROMO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int AGREEMENT_PROMO_APPL__PRODUCT_PROMO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
+	 * The feature id for the '<em><b>Agreement</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PROMO_APPL__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int AGREEMENT_PROMO_APPL__AGREEMENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -1680,31 +1680,31 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
+	 * The feature id for the '<em><b>Agreement</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ROLE__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int AGREEMENT_ROLE__AGREEMENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int AGREEMENT_ROLE__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int AGREEMENT_ROLE__ROLE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Role</em>' class.
@@ -1771,13 +1771,13 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_TERM__AGREEMENT_TERM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
+	 * The feature id for the '<em><b>Agreement</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__AGREEMENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int AGREEMENT_TERM__AGREEMENT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -1816,13 +1816,13 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_TERM__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Invoice Item Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Invoice Item Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__INVOICE_ITEM_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int AGREEMENT_TERM__INVOICE_ITEM_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Max Quantity</b></em>' attribute.
@@ -1852,13 +1852,13 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_TERM__TERM_DAYS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
-	 * The feature id for the '<em><b>Term Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Term Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__TERM_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
+	int AGREEMENT_TERM__TERM_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Term Value</b></em>' attribute.
@@ -1943,13 +1943,13 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_TERM_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Agreement Term Id</b></em>' reference.
+	 * The feature id for the '<em><b>Agreement Term</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM_ATTRIBUTE__AGREEMENT_TERM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int AGREEMENT_TERM_ATTRIBUTE__AGREEMENT_TERM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -2079,13 +2079,13 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
+	int AGREEMENT_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -2143,13 +2143,13 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Agreement Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Agreement Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE_ATTR__AGREEMENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int AGREEMENT_TYPE_ATTR__AGREEMENT_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -2225,22 +2225,22 @@ public interface AgreementPackage extends EPackage {
 	int AGREEMENT_WORK_EFFORT_APPLIC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
+	 * The feature id for the '<em><b>Agreement</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_WORK_EFFORT_APPLIC__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int AGREEMENT_WORK_EFFORT_APPLIC__AGREEMENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_WORK_EFFORT_APPLIC__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int AGREEMENT_WORK_EFFORT_APPLIC__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -2343,13 +2343,13 @@ public interface AgreementPackage extends EPackage {
 	int TERM_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int TERM_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Term Type Attrs</b></em>' reference list.
@@ -2416,13 +2416,13 @@ public interface AgreementPackage extends EPackage {
 	int TERM_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Term Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Term Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE_ATTR__TERM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int TERM_TYPE_ATTR__TERM_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -2507,15 +2507,15 @@ public interface AgreementPackage extends EPackage {
 	EAttribute getAddendum_AddendumText();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.Addendum#getAgreementId <em>Agreement Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.Addendum#getAgreement <em>Agreement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Agreement Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.Addendum#getAgreementId()
+	 * @return the meta object for the reference '<em>Agreement</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.Addendum#getAgreement()
 	 * @see #getAddendum()
 	 * @generated
 	 */
-	EReference getAddendum_AgreementId();
+	EReference getAddendum_Agreement();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.Addendum#getAgreementItemSeqId <em>Agreement Item Seq Id</em>}'.
@@ -2583,15 +2583,15 @@ public interface AgreementPackage extends EPackage {
 	EReference getAgreement_AgreementItems();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getAgreementTypeId <em>Agreement Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getAgreementType <em>Agreement Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Agreement Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.Agreement#getAgreementTypeId()
+	 * @return the meta object for the reference '<em>Agreement Type</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.Agreement#getAgreementType()
 	 * @see #getAgreement()
 	 * @generated
 	 */
-	EReference getAgreement_AgreementTypeId();
+	EReference getAgreement_AgreementType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getDescription <em>Description</em>}'.
@@ -2638,15 +2638,15 @@ public interface AgreementPackage extends EPackage {
 	EReference getAgreement_PartyIdTo();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.Agreement#getProductId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.Agreement#getProduct()
 	 * @see #getAgreement()
 	 * @generated
 	 */
-	EReference getAgreement_ProductId();
+	EReference getAgreement_Product();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.Agreement#getRoleTypeIdFrom <em>Role Type Id From</em>}'.
@@ -2703,15 +2703,15 @@ public interface AgreementPackage extends EPackage {
 	EClass getAgreementAttribute();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementAttribute#getAgreementId <em>Agreement Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementAttribute#getAgreement <em>Agreement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Agreement Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementAttribute#getAgreementId()
+	 * @return the meta object for the reference '<em>Agreement</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementAttribute#getAgreement()
 	 * @see #getAgreementAttribute()
 	 * @generated
 	 */
-	EReference getAgreementAttribute_AgreementId();
+	EReference getAgreementAttribute_Agreement();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementAttribute#getAttrName <em>Attr Name</em>}'.
@@ -2757,26 +2757,37 @@ public interface AgreementPackage extends EPackage {
 	EClass getAgreementContent();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementContent#getContentId <em>Content Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementContent#getAgreement <em>Agreement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Content Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementContent#getContentId()
+	 * @return the meta object for the reference '<em>Agreement</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementContent#getAgreement()
 	 * @see #getAgreementContent()
 	 * @generated
 	 */
-	EReference getAgreementContent_ContentId();
+	EReference getAgreementContent_Agreement();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementContent#getAgreementId <em>Agreement Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementContent#getContent <em>Content</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Agreement Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementContent#getAgreementId()
+	 * @return the meta object for the reference '<em>Content</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementContent#getContent()
 	 * @see #getAgreementContent()
 	 * @generated
 	 */
-	EReference getAgreementContent_AgreementId();
+	EReference getAgreementContent_Content();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementContent#getAgreementContentType <em>Agreement Content Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Agreement Content Type</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementContent#getAgreementContentType()
+	 * @see #getAgreementContent()
+	 * @generated
+	 */
+	EReference getAgreementContent_AgreementContentType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementContent#getAgreementItemSeqId <em>Agreement Item Seq Id</em>}'.
@@ -2788,17 +2799,6 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getAgreementContent_AgreementItemSeqId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementContent#getAgreementContentTypeId <em>Agreement Content Type Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Agreement Content Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementContent#getAgreementContentTypeId()
-	 * @see #getAgreementContent()
-	 * @generated
-	 */
-	EReference getAgreementContent_AgreementContentTypeId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementContent#getFromDate <em>From Date</em>}'.
@@ -2866,15 +2866,15 @@ public interface AgreementPackage extends EPackage {
 	EAttribute getAgreementContentType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementContentType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementContentType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementContentType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementContentType#getParentType()
 	 * @see #getAgreementContentType()
 	 * @generated
 	 */
-	EReference getAgreementContentType_ParentTypeId();
+	EReference getAgreementContentType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.party.agreement.AgreementEmploymentAppl <em>Employment Appl</em>}'.
@@ -2996,15 +2996,26 @@ public interface AgreementPackage extends EPackage {
 	EClass getAgreementFacilityAppl();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementFacilityAppl#getAgreementId <em>Agreement Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementFacilityAppl#getAgreement <em>Agreement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Agreement Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementFacilityAppl#getAgreementId()
+	 * @return the meta object for the reference '<em>Agreement</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementFacilityAppl#getAgreement()
 	 * @see #getAgreementFacilityAppl()
 	 * @generated
 	 */
-	EReference getAgreementFacilityAppl_AgreementId();
+	EReference getAgreementFacilityAppl_Agreement();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementFacilityAppl#getFacility <em>Facility</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementFacilityAppl#getFacility()
+	 * @see #getAgreementFacilityAppl()
+	 * @generated
+	 */
+	EReference getAgreementFacilityAppl_Facility();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementFacilityAppl#getAgreementItemSeqId <em>Agreement Item Seq Id</em>}'.
@@ -3018,17 +3029,6 @@ public interface AgreementPackage extends EPackage {
 	EAttribute getAgreementFacilityAppl_AgreementItemSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementFacilityAppl#getFacilityId <em>Facility Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementFacilityAppl#getFacilityId()
-	 * @see #getAgreementFacilityAppl()
-	 * @generated
-	 */
-	EReference getAgreementFacilityAppl_FacilityId();
-
-	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.party.agreement.AgreementGeographicalApplic <em>Geographical Applic</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3039,15 +3039,26 @@ public interface AgreementPackage extends EPackage {
 	EClass getAgreementGeographicalApplic();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementGeographicalApplic#getAgreementId <em>Agreement Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementGeographicalApplic#getAgreement <em>Agreement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Agreement Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementGeographicalApplic#getAgreementId()
+	 * @return the meta object for the reference '<em>Agreement</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementGeographicalApplic#getAgreement()
 	 * @see #getAgreementGeographicalApplic()
 	 * @generated
 	 */
-	EReference getAgreementGeographicalApplic_AgreementId();
+	EReference getAgreementGeographicalApplic_Agreement();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementGeographicalApplic#getGeo <em>Geo</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Geo</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementGeographicalApplic#getGeo()
+	 * @see #getAgreementGeographicalApplic()
+	 * @generated
+	 */
+	EReference getAgreementGeographicalApplic_Geo();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementGeographicalApplic#getAgreementItemSeqId <em>Agreement Item Seq Id</em>}'.
@@ -3061,17 +3072,6 @@ public interface AgreementPackage extends EPackage {
 	EAttribute getAgreementGeographicalApplic_AgreementItemSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementGeographicalApplic#getGeoId <em>Geo Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Geo Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementGeographicalApplic#getGeoId()
-	 * @see #getAgreementGeographicalApplic()
-	 * @generated
-	 */
-	EReference getAgreementGeographicalApplic_GeoId();
-
-	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.party.agreement.AgreementItem <em>Item</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3082,15 +3082,15 @@ public interface AgreementPackage extends EPackage {
 	EClass getAgreementItem();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreementId <em>Agreement Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreement <em>Agreement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Agreement Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreementId()
+	 * @return the meta object for the reference '<em>Agreement</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreement()
 	 * @see #getAgreementItem()
 	 * @generated
 	 */
-	EReference getAgreementItem_AgreementId();
+	EReference getAgreementItem_Agreement();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreementItemSeqId <em>Agreement Item Seq Id</em>}'.
@@ -3115,15 +3115,15 @@ public interface AgreementPackage extends EPackage {
 	EAttribute getAgreementItem_AgreementImage();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreementItemTypeId <em>Agreement Item Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreementItemType <em>Agreement Item Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Agreement Item Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreementItemTypeId()
+	 * @return the meta object for the reference '<em>Agreement Item Type</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreementItemType()
 	 * @see #getAgreementItem()
 	 * @generated
 	 */
-	EReference getAgreementItem_AgreementItemTypeId();
+	EReference getAgreementItem_AgreementItemType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementItem#getAgreementText <em>Agreement Text</em>}'.
@@ -3267,15 +3267,15 @@ public interface AgreementPackage extends EPackage {
 	EAttribute getAgreementItemType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementItemType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementItemType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementItemType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementItemType#getParentType()
 	 * @see #getAgreementItemType()
 	 * @generated
 	 */
-	EReference getAgreementItemType_ParentTypeId();
+	EReference getAgreementItemType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.party.agreement.AgreementItemTypeAttr <em>Item Type Attr</em>}'.
@@ -3288,15 +3288,15 @@ public interface AgreementPackage extends EPackage {
 	EClass getAgreementItemTypeAttr();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementItemTypeAttr#getAgreementItemTypeId <em>Agreement Item Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementItemTypeAttr#getAgreementItemType <em>Agreement Item Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Agreement Item Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementItemTypeAttr#getAgreementItemTypeId()
+	 * @return the meta object for the reference '<em>Agreement Item Type</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementItemTypeAttr#getAgreementItemType()
 	 * @see #getAgreementItemTypeAttr()
 	 * @generated
 	 */
-	EReference getAgreementItemTypeAttr_AgreementItemTypeId();
+	EReference getAgreementItemTypeAttr_AgreementItemType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementItemTypeAttr#getAttrName <em>Attr Name</em>}'.
@@ -3331,15 +3331,26 @@ public interface AgreementPackage extends EPackage {
 	EClass getAgreementPartyApplic();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementPartyApplic#getAgreementId <em>Agreement Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementPartyApplic#getAgreement <em>Agreement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Agreement Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPartyApplic#getAgreementId()
+	 * @return the meta object for the reference '<em>Agreement</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPartyApplic#getAgreement()
 	 * @see #getAgreementPartyApplic()
 	 * @generated
 	 */
-	EReference getAgreementPartyApplic_AgreementId();
+	EReference getAgreementPartyApplic_Agreement();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementPartyApplic#getParty <em>Party</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPartyApplic#getParty()
+	 * @see #getAgreementPartyApplic()
+	 * @generated
+	 */
+	EReference getAgreementPartyApplic_Party();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementPartyApplic#getAgreementItemSeqId <em>Agreement Item Seq Id</em>}'.
@@ -3353,17 +3364,6 @@ public interface AgreementPackage extends EPackage {
 	EAttribute getAgreementPartyApplic_AgreementItemSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementPartyApplic#getPartyId <em>Party Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPartyApplic#getPartyId()
-	 * @see #getAgreementPartyApplic()
-	 * @generated
-	 */
-	EReference getAgreementPartyApplic_PartyId();
-
-	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.party.agreement.AgreementProductAppl <em>Product Appl</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3374,15 +3374,26 @@ public interface AgreementPackage extends EPackage {
 	EClass getAgreementProductAppl();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementProductAppl#getAgreementId <em>Agreement Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementProductAppl#getAgreement <em>Agreement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Agreement Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementProductAppl#getAgreementId()
+	 * @return the meta object for the reference '<em>Agreement</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementProductAppl#getAgreement()
 	 * @see #getAgreementProductAppl()
 	 * @generated
 	 */
-	EReference getAgreementProductAppl_AgreementId();
+	EReference getAgreementProductAppl_Agreement();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementProductAppl#getProduct <em>Product</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementProductAppl#getProduct()
+	 * @see #getAgreementProductAppl()
+	 * @generated
+	 */
+	EReference getAgreementProductAppl_Product();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementProductAppl#getAgreementItemSeqId <em>Agreement Item Seq Id</em>}'.
@@ -3394,17 +3405,6 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getAgreementProductAppl_AgreementItemSeqId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementProductAppl#getProductId <em>Product Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementProductAppl#getProductId()
-	 * @see #getAgreementProductAppl()
-	 * @generated
-	 */
-	EReference getAgreementProductAppl_ProductId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementProductAppl#getPrice <em>Price</em>}'.
@@ -3428,15 +3428,26 @@ public interface AgreementPackage extends EPackage {
 	EClass getAgreementPromoAppl();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementPromoAppl#getAgreementId <em>Agreement Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementPromoAppl#getProductPromo <em>Product Promo</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Agreement Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPromoAppl#getAgreementId()
+	 * @return the meta object for the reference '<em>Product Promo</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPromoAppl#getProductPromo()
 	 * @see #getAgreementPromoAppl()
 	 * @generated
 	 */
-	EReference getAgreementPromoAppl_AgreementId();
+	EReference getAgreementPromoAppl_ProductPromo();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementPromoAppl#getAgreement <em>Agreement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Agreement</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPromoAppl#getAgreement()
+	 * @see #getAgreementPromoAppl()
+	 * @generated
+	 */
+	EReference getAgreementPromoAppl_Agreement();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementPromoAppl#getAgreementItemSeqId <em>Agreement Item Seq Id</em>}'.
@@ -3448,17 +3459,6 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getAgreementPromoAppl_AgreementItemSeqId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementPromoAppl#getProductPromoId <em>Product Promo Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Promo Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPromoAppl#getProductPromoId()
-	 * @see #getAgreementPromoAppl()
-	 * @generated
-	 */
-	EReference getAgreementPromoAppl_ProductPromoId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementPromoAppl#getFromDate <em>From Date</em>}'.
@@ -3504,37 +3504,37 @@ public interface AgreementPackage extends EPackage {
 	EClass getAgreementRole();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementRole#getAgreementId <em>Agreement Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementRole#getAgreement <em>Agreement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Agreement Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementRole#getAgreementId()
+	 * @return the meta object for the reference '<em>Agreement</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementRole#getAgreement()
 	 * @see #getAgreementRole()
 	 * @generated
 	 */
-	EReference getAgreementRole_AgreementId();
+	EReference getAgreementRole_Agreement();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementRole#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementRole#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementRole#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementRole#getParty()
 	 * @see #getAgreementRole()
 	 * @generated
 	 */
-	EReference getAgreementRole_PartyId();
+	EReference getAgreementRole_Party();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementRole#getRoleTypeId <em>Role Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementRole#getRoleType <em>Role Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Role Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementRole#getRoleTypeId()
+	 * @return the meta object for the reference '<em>Role Type</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementRole#getRoleType()
 	 * @see #getAgreementRole()
 	 * @generated
 	 */
-	EReference getAgreementRole_RoleTypeId();
+	EReference getAgreementRole_RoleType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm <em>Term</em>}'.
@@ -3558,15 +3558,15 @@ public interface AgreementPackage extends EPackage {
 	EAttribute getAgreementTerm_AgreementTermId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getAgreementId <em>Agreement Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getAgreement <em>Agreement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Agreement Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getAgreementId()
+	 * @return the meta object for the reference '<em>Agreement</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getAgreement()
 	 * @see #getAgreementTerm()
 	 * @generated
 	 */
-	EReference getAgreementTerm_AgreementId();
+	EReference getAgreementTerm_Agreement();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getAgreementItemSeqId <em>Agreement Item Seq Id</em>}'.
@@ -3613,15 +3613,15 @@ public interface AgreementPackage extends EPackage {
 	EAttribute getAgreementTerm_FromDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getInvoiceItemTypeId <em>Invoice Item Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getInvoiceItemType <em>Invoice Item Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Invoice Item Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getInvoiceItemTypeId()
+	 * @return the meta object for the reference '<em>Invoice Item Type</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getInvoiceItemType()
 	 * @see #getAgreementTerm()
 	 * @generated
 	 */
-	EReference getAgreementTerm_InvoiceItemTypeId();
+	EReference getAgreementTerm_InvoiceItemType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getMaxQuantity <em>Max Quantity</em>}'.
@@ -3657,15 +3657,15 @@ public interface AgreementPackage extends EPackage {
 	EAttribute getAgreementTerm_TermDays();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getTermTypeId <em>Term Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getTermType <em>Term Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Term Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getTermTypeId()
+	 * @return the meta object for the reference '<em>Term Type</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getTermType()
 	 * @see #getAgreementTerm()
 	 * @generated
 	 */
-	EReference getAgreementTerm_TermTypeId();
+	EReference getAgreementTerm_TermType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTerm#getTermValue <em>Term Value</em>}'.
@@ -3711,15 +3711,15 @@ public interface AgreementPackage extends EPackage {
 	EClass getAgreementTermAttribute();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTermAttribute#getAgreementTermId <em>Agreement Term Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTermAttribute#getAgreementTerm <em>Agreement Term</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Agreement Term Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementTermAttribute#getAgreementTermId()
+	 * @return the meta object for the reference '<em>Agreement Term</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementTermAttribute#getAgreementTerm()
 	 * @see #getAgreementTermAttribute()
 	 * @generated
 	 */
-	EReference getAgreementTermAttribute_AgreementTermId();
+	EReference getAgreementTermAttribute_AgreementTerm();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTermAttribute#getAttrName <em>Attr Name</em>}'.
@@ -3809,15 +3809,15 @@ public interface AgreementPackage extends EPackage {
 	EAttribute getAgreementType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementType#getParentType()
 	 * @see #getAgreementType()
 	 * @generated
 	 */
-	EReference getAgreementType_ParentTypeId();
+	EReference getAgreementType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTypeAttr <em>Type Attr</em>}'.
@@ -3830,15 +3830,15 @@ public interface AgreementPackage extends EPackage {
 	EClass getAgreementTypeAttr();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTypeAttr#getAgreementTypeId <em>Agreement Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTypeAttr#getAgreementType <em>Agreement Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Agreement Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementTypeAttr#getAgreementTypeId()
+	 * @return the meta object for the reference '<em>Agreement Type</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementTypeAttr#getAgreementType()
 	 * @see #getAgreementTypeAttr()
 	 * @generated
 	 */
-	EReference getAgreementTypeAttr_AgreementTypeId();
+	EReference getAgreementTypeAttr_AgreementType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementTypeAttr#getAttrName <em>Attr Name</em>}'.
@@ -3873,15 +3873,26 @@ public interface AgreementPackage extends EPackage {
 	EClass getAgreementWorkEffortApplic();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementWorkEffortApplic#getAgreementId <em>Agreement Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementWorkEffortApplic#getAgreement <em>Agreement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Agreement Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementWorkEffortApplic#getAgreementId()
+	 * @return the meta object for the reference '<em>Agreement</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementWorkEffortApplic#getAgreement()
 	 * @see #getAgreementWorkEffortApplic()
 	 * @generated
 	 */
-	EReference getAgreementWorkEffortApplic_AgreementId();
+	EReference getAgreementWorkEffortApplic_Agreement();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementWorkEffortApplic#getWorkEffort <em>Work Effort</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementWorkEffortApplic#getWorkEffort()
+	 * @see #getAgreementWorkEffortApplic()
+	 * @generated
+	 */
+	EReference getAgreementWorkEffortApplic_WorkEffort();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementWorkEffortApplic#getAgreementItemSeqId <em>Agreement Item Seq Id</em>}'.
@@ -3893,17 +3904,6 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getAgreementWorkEffortApplic_AgreementItemSeqId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.AgreementWorkEffortApplic#getWorkEffortId <em>Work Effort Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementWorkEffortApplic#getWorkEffortId()
-	 * @see #getAgreementWorkEffortApplic()
-	 * @generated
-	 */
-	EReference getAgreementWorkEffortApplic_WorkEffortId();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.party.agreement.TermType <em>Term Type</em>}'.
@@ -3949,15 +3949,15 @@ public interface AgreementPackage extends EPackage {
 	EAttribute getTermType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.TermType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.TermType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.TermType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.TermType#getParentType()
 	 * @see #getTermType()
 	 * @generated
 	 */
-	EReference getTermType_ParentTypeId();
+	EReference getTermType_ParentType();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.party.agreement.TermType#getTermTypeAttrs <em>Term Type Attrs</em>}'.
@@ -3981,15 +3981,15 @@ public interface AgreementPackage extends EPackage {
 	EClass getTermTypeAttr();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.TermTypeAttr#getTermTypeId <em>Term Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.agreement.TermTypeAttr#getTermType <em>Term Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Term Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.TermTypeAttr#getTermTypeId()
+	 * @return the meta object for the reference '<em>Term Type</em>'.
+	 * @see org.abchip.mimo.biz.model.party.agreement.TermTypeAttr#getTermType()
 	 * @see #getTermTypeAttr()
 	 * @generated
 	 */
-	EReference getTermTypeAttr_TermTypeId();
+	EReference getTermTypeAttr_TermType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.TermTypeAttr#getAttrName <em>Attr Name</em>}'.
@@ -4078,12 +4078,12 @@ public interface AgreementPackage extends EPackage {
 		EAttribute ADDENDUM__ADDENDUM_TEXT = eINSTANCE.getAddendum_AddendumText();
 
 		/**
-		 * The meta object literal for the '<em><b>Agreement Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Agreement</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ADDENDUM__AGREEMENT_ID = eINSTANCE.getAddendum_AgreementId();
+		EReference ADDENDUM__AGREEMENT = eINSTANCE.getAddendum_Agreement();
 
 		/**
 		 * The meta object literal for the '<em><b>Agreement Item Seq Id</b></em>' attribute feature.
@@ -4136,12 +4136,12 @@ public interface AgreementPackage extends EPackage {
 		EReference AGREEMENT__AGREEMENT_ITEMS = eINSTANCE.getAgreement_AgreementItems();
 
 		/**
-		 * The meta object literal for the '<em><b>Agreement Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Agreement Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT__AGREEMENT_TYPE_ID = eINSTANCE.getAgreement_AgreementTypeId();
+		EReference AGREEMENT__AGREEMENT_TYPE = eINSTANCE.getAgreement_AgreementType();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
@@ -4176,12 +4176,12 @@ public interface AgreementPackage extends EPackage {
 		EReference AGREEMENT__PARTY_ID_TO = eINSTANCE.getAgreement_PartyIdTo();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT__PRODUCT_ID = eINSTANCE.getAgreement_ProductId();
+		EReference AGREEMENT__PRODUCT = eINSTANCE.getAgreement_Product();
 
 		/**
 		 * The meta object literal for the '<em><b>Role Type Id From</b></em>' reference feature.
@@ -4226,12 +4226,12 @@ public interface AgreementPackage extends EPackage {
 		EClass AGREEMENT_ATTRIBUTE = eINSTANCE.getAgreementAttribute();
 
 		/**
-		 * The meta object literal for the '<em><b>Agreement Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Agreement</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_ATTRIBUTE__AGREEMENT_ID = eINSTANCE.getAgreementAttribute_AgreementId();
+		EReference AGREEMENT_ATTRIBUTE__AGREEMENT = eINSTANCE.getAgreementAttribute_Agreement();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -4268,20 +4268,28 @@ public interface AgreementPackage extends EPackage {
 		EClass AGREEMENT_CONTENT = eINSTANCE.getAgreementContent();
 
 		/**
-		 * The meta object literal for the '<em><b>Content Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Agreement</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_CONTENT__CONTENT_ID = eINSTANCE.getAgreementContent_ContentId();
+		EReference AGREEMENT_CONTENT__AGREEMENT = eINSTANCE.getAgreementContent_Agreement();
 
 		/**
-		 * The meta object literal for the '<em><b>Agreement Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Content</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_CONTENT__AGREEMENT_ID = eINSTANCE.getAgreementContent_AgreementId();
+		EReference AGREEMENT_CONTENT__CONTENT = eINSTANCE.getAgreementContent_Content();
+
+		/**
+		 * The meta object literal for the '<em><b>Agreement Content Type</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference AGREEMENT_CONTENT__AGREEMENT_CONTENT_TYPE = eINSTANCE.getAgreementContent_AgreementContentType();
 
 		/**
 		 * The meta object literal for the '<em><b>Agreement Item Seq Id</b></em>' attribute feature.
@@ -4290,14 +4298,6 @@ public interface AgreementPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute AGREEMENT_CONTENT__AGREEMENT_ITEM_SEQ_ID = eINSTANCE.getAgreementContent_AgreementItemSeqId();
-
-		/**
-		 * The meta object literal for the '<em><b>Agreement Content Type Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference AGREEMENT_CONTENT__AGREEMENT_CONTENT_TYPE_ID = eINSTANCE.getAgreementContent_AgreementContentTypeId();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -4350,12 +4350,12 @@ public interface AgreementPackage extends EPackage {
 		EAttribute AGREEMENT_CONTENT_TYPE__HAS_TABLE = eINSTANCE.getAgreementContentType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_CONTENT_TYPE__PARENT_TYPE_ID = eINSTANCE.getAgreementContentType_ParentTypeId();
+		EReference AGREEMENT_CONTENT_TYPE__PARENT_TYPE = eINSTANCE.getAgreementContentType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementEmploymentApplImpl <em>Employment Appl</em>}' class.
@@ -4450,12 +4450,20 @@ public interface AgreementPackage extends EPackage {
 		EClass AGREEMENT_FACILITY_APPL = eINSTANCE.getAgreementFacilityAppl();
 
 		/**
-		 * The meta object literal for the '<em><b>Agreement Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Agreement</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_FACILITY_APPL__AGREEMENT_ID = eINSTANCE.getAgreementFacilityAppl_AgreementId();
+		EReference AGREEMENT_FACILITY_APPL__AGREEMENT = eINSTANCE.getAgreementFacilityAppl_Agreement();
+
+		/**
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference AGREEMENT_FACILITY_APPL__FACILITY = eINSTANCE.getAgreementFacilityAppl_Facility();
 
 		/**
 		 * The meta object literal for the '<em><b>Agreement Item Seq Id</b></em>' attribute feature.
@@ -4464,14 +4472,6 @@ public interface AgreementPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute AGREEMENT_FACILITY_APPL__AGREEMENT_ITEM_SEQ_ID = eINSTANCE.getAgreementFacilityAppl_AgreementItemSeqId();
-
-		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference AGREEMENT_FACILITY_APPL__FACILITY_ID = eINSTANCE.getAgreementFacilityAppl_FacilityId();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementGeographicalApplicImpl <em>Geographical Applic</em>}' class.
@@ -4484,12 +4484,20 @@ public interface AgreementPackage extends EPackage {
 		EClass AGREEMENT_GEOGRAPHICAL_APPLIC = eINSTANCE.getAgreementGeographicalApplic();
 
 		/**
-		 * The meta object literal for the '<em><b>Agreement Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Agreement</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_GEOGRAPHICAL_APPLIC__AGREEMENT_ID = eINSTANCE.getAgreementGeographicalApplic_AgreementId();
+		EReference AGREEMENT_GEOGRAPHICAL_APPLIC__AGREEMENT = eINSTANCE.getAgreementGeographicalApplic_Agreement();
+
+		/**
+		 * The meta object literal for the '<em><b>Geo</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference AGREEMENT_GEOGRAPHICAL_APPLIC__GEO = eINSTANCE.getAgreementGeographicalApplic_Geo();
 
 		/**
 		 * The meta object literal for the '<em><b>Agreement Item Seq Id</b></em>' attribute feature.
@@ -4498,14 +4506,6 @@ public interface AgreementPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute AGREEMENT_GEOGRAPHICAL_APPLIC__AGREEMENT_ITEM_SEQ_ID = eINSTANCE.getAgreementGeographicalApplic_AgreementItemSeqId();
-
-		/**
-		 * The meta object literal for the '<em><b>Geo Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference AGREEMENT_GEOGRAPHICAL_APPLIC__GEO_ID = eINSTANCE.getAgreementGeographicalApplic_GeoId();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementItemImpl <em>Item</em>}' class.
@@ -4518,12 +4518,12 @@ public interface AgreementPackage extends EPackage {
 		EClass AGREEMENT_ITEM = eINSTANCE.getAgreementItem();
 
 		/**
-		 * The meta object literal for the '<em><b>Agreement Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Agreement</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_ITEM__AGREEMENT_ID = eINSTANCE.getAgreementItem_AgreementId();
+		EReference AGREEMENT_ITEM__AGREEMENT = eINSTANCE.getAgreementItem_Agreement();
 
 		/**
 		 * The meta object literal for the '<em><b>Agreement Item Seq Id</b></em>' attribute feature.
@@ -4542,12 +4542,12 @@ public interface AgreementPackage extends EPackage {
 		EAttribute AGREEMENT_ITEM__AGREEMENT_IMAGE = eINSTANCE.getAgreementItem_AgreementImage();
 
 		/**
-		 * The meta object literal for the '<em><b>Agreement Item Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Agreement Item Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_ITEM__AGREEMENT_ITEM_TYPE_ID = eINSTANCE.getAgreementItem_AgreementItemTypeId();
+		EReference AGREEMENT_ITEM__AGREEMENT_ITEM_TYPE = eINSTANCE.getAgreementItem_AgreementItemType();
 
 		/**
 		 * The meta object literal for the '<em><b>Agreement Text</b></em>' attribute feature.
@@ -4658,12 +4658,12 @@ public interface AgreementPackage extends EPackage {
 		EAttribute AGREEMENT_ITEM_TYPE__HAS_TABLE = eINSTANCE.getAgreementItemType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_ITEM_TYPE__PARENT_TYPE_ID = eINSTANCE.getAgreementItemType_ParentTypeId();
+		EReference AGREEMENT_ITEM_TYPE__PARENT_TYPE = eINSTANCE.getAgreementItemType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementItemTypeAttrImpl <em>Item Type Attr</em>}' class.
@@ -4676,12 +4676,12 @@ public interface AgreementPackage extends EPackage {
 		EClass AGREEMENT_ITEM_TYPE_ATTR = eINSTANCE.getAgreementItemTypeAttr();
 
 		/**
-		 * The meta object literal for the '<em><b>Agreement Item Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Agreement Item Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_ITEM_TYPE_ATTR__AGREEMENT_ITEM_TYPE_ID = eINSTANCE.getAgreementItemTypeAttr_AgreementItemTypeId();
+		EReference AGREEMENT_ITEM_TYPE_ATTR__AGREEMENT_ITEM_TYPE = eINSTANCE.getAgreementItemTypeAttr_AgreementItemType();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -4710,12 +4710,20 @@ public interface AgreementPackage extends EPackage {
 		EClass AGREEMENT_PARTY_APPLIC = eINSTANCE.getAgreementPartyApplic();
 
 		/**
-		 * The meta object literal for the '<em><b>Agreement Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Agreement</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_PARTY_APPLIC__AGREEMENT_ID = eINSTANCE.getAgreementPartyApplic_AgreementId();
+		EReference AGREEMENT_PARTY_APPLIC__AGREEMENT = eINSTANCE.getAgreementPartyApplic_Agreement();
+
+		/**
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference AGREEMENT_PARTY_APPLIC__PARTY = eINSTANCE.getAgreementPartyApplic_Party();
 
 		/**
 		 * The meta object literal for the '<em><b>Agreement Item Seq Id</b></em>' attribute feature.
@@ -4724,14 +4732,6 @@ public interface AgreementPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute AGREEMENT_PARTY_APPLIC__AGREEMENT_ITEM_SEQ_ID = eINSTANCE.getAgreementPartyApplic_AgreementItemSeqId();
-
-		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference AGREEMENT_PARTY_APPLIC__PARTY_ID = eINSTANCE.getAgreementPartyApplic_PartyId();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementProductApplImpl <em>Product Appl</em>}' class.
@@ -4744,12 +4744,20 @@ public interface AgreementPackage extends EPackage {
 		EClass AGREEMENT_PRODUCT_APPL = eINSTANCE.getAgreementProductAppl();
 
 		/**
-		 * The meta object literal for the '<em><b>Agreement Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Agreement</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_PRODUCT_APPL__AGREEMENT_ID = eINSTANCE.getAgreementProductAppl_AgreementId();
+		EReference AGREEMENT_PRODUCT_APPL__AGREEMENT = eINSTANCE.getAgreementProductAppl_Agreement();
+
+		/**
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference AGREEMENT_PRODUCT_APPL__PRODUCT = eINSTANCE.getAgreementProductAppl_Product();
 
 		/**
 		 * The meta object literal for the '<em><b>Agreement Item Seq Id</b></em>' attribute feature.
@@ -4758,14 +4766,6 @@ public interface AgreementPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute AGREEMENT_PRODUCT_APPL__AGREEMENT_ITEM_SEQ_ID = eINSTANCE.getAgreementProductAppl_AgreementItemSeqId();
-
-		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference AGREEMENT_PRODUCT_APPL__PRODUCT_ID = eINSTANCE.getAgreementProductAppl_ProductId();
 
 		/**
 		 * The meta object literal for the '<em><b>Price</b></em>' attribute feature.
@@ -4786,12 +4786,20 @@ public interface AgreementPackage extends EPackage {
 		EClass AGREEMENT_PROMO_APPL = eINSTANCE.getAgreementPromoAppl();
 
 		/**
-		 * The meta object literal for the '<em><b>Agreement Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Promo</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_PROMO_APPL__AGREEMENT_ID = eINSTANCE.getAgreementPromoAppl_AgreementId();
+		EReference AGREEMENT_PROMO_APPL__PRODUCT_PROMO = eINSTANCE.getAgreementPromoAppl_ProductPromo();
+
+		/**
+		 * The meta object literal for the '<em><b>Agreement</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference AGREEMENT_PROMO_APPL__AGREEMENT = eINSTANCE.getAgreementPromoAppl_Agreement();
 
 		/**
 		 * The meta object literal for the '<em><b>Agreement Item Seq Id</b></em>' attribute feature.
@@ -4800,14 +4808,6 @@ public interface AgreementPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute AGREEMENT_PROMO_APPL__AGREEMENT_ITEM_SEQ_ID = eINSTANCE.getAgreementPromoAppl_AgreementItemSeqId();
-
-		/**
-		 * The meta object literal for the '<em><b>Product Promo Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference AGREEMENT_PROMO_APPL__PRODUCT_PROMO_ID = eINSTANCE.getAgreementPromoAppl_ProductPromoId();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -4844,28 +4844,28 @@ public interface AgreementPackage extends EPackage {
 		EClass AGREEMENT_ROLE = eINSTANCE.getAgreementRole();
 
 		/**
-		 * The meta object literal for the '<em><b>Agreement Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Agreement</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_ROLE__AGREEMENT_ID = eINSTANCE.getAgreementRole_AgreementId();
+		EReference AGREEMENT_ROLE__AGREEMENT = eINSTANCE.getAgreementRole_Agreement();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_ROLE__PARTY_ID = eINSTANCE.getAgreementRole_PartyId();
+		EReference AGREEMENT_ROLE__PARTY = eINSTANCE.getAgreementRole_Party();
 
 		/**
-		 * The meta object literal for the '<em><b>Role Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Role Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_ROLE__ROLE_TYPE_ID = eINSTANCE.getAgreementRole_RoleTypeId();
+		EReference AGREEMENT_ROLE__ROLE_TYPE = eINSTANCE.getAgreementRole_RoleType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl <em>Term</em>}' class.
@@ -4886,12 +4886,12 @@ public interface AgreementPackage extends EPackage {
 		EAttribute AGREEMENT_TERM__AGREEMENT_TERM_ID = eINSTANCE.getAgreementTerm_AgreementTermId();
 
 		/**
-		 * The meta object literal for the '<em><b>Agreement Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Agreement</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_TERM__AGREEMENT_ID = eINSTANCE.getAgreementTerm_AgreementId();
+		EReference AGREEMENT_TERM__AGREEMENT = eINSTANCE.getAgreementTerm_Agreement();
 
 		/**
 		 * The meta object literal for the '<em><b>Agreement Item Seq Id</b></em>' attribute feature.
@@ -4926,12 +4926,12 @@ public interface AgreementPackage extends EPackage {
 		EAttribute AGREEMENT_TERM__FROM_DATE = eINSTANCE.getAgreementTerm_FromDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Invoice Item Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Invoice Item Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_TERM__INVOICE_ITEM_TYPE_ID = eINSTANCE.getAgreementTerm_InvoiceItemTypeId();
+		EReference AGREEMENT_TERM__INVOICE_ITEM_TYPE = eINSTANCE.getAgreementTerm_InvoiceItemType();
 
 		/**
 		 * The meta object literal for the '<em><b>Max Quantity</b></em>' attribute feature.
@@ -4958,12 +4958,12 @@ public interface AgreementPackage extends EPackage {
 		EAttribute AGREEMENT_TERM__TERM_DAYS = eINSTANCE.getAgreementTerm_TermDays();
 
 		/**
-		 * The meta object literal for the '<em><b>Term Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Term Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_TERM__TERM_TYPE_ID = eINSTANCE.getAgreementTerm_TermTypeId();
+		EReference AGREEMENT_TERM__TERM_TYPE = eINSTANCE.getAgreementTerm_TermType();
 
 		/**
 		 * The meta object literal for the '<em><b>Term Value</b></em>' attribute feature.
@@ -5000,12 +5000,12 @@ public interface AgreementPackage extends EPackage {
 		EClass AGREEMENT_TERM_ATTRIBUTE = eINSTANCE.getAgreementTermAttribute();
 
 		/**
-		 * The meta object literal for the '<em><b>Agreement Term Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Agreement Term</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_TERM_ATTRIBUTE__AGREEMENT_TERM_ID = eINSTANCE.getAgreementTermAttribute_AgreementTermId();
+		EReference AGREEMENT_TERM_ATTRIBUTE__AGREEMENT_TERM = eINSTANCE.getAgreementTermAttribute_AgreementTerm();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -5074,12 +5074,12 @@ public interface AgreementPackage extends EPackage {
 		EAttribute AGREEMENT_TYPE__HAS_TABLE = eINSTANCE.getAgreementType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_TYPE__PARENT_TYPE_ID = eINSTANCE.getAgreementType_ParentTypeId();
+		EReference AGREEMENT_TYPE__PARENT_TYPE = eINSTANCE.getAgreementType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeAttrImpl <em>Type Attr</em>}' class.
@@ -5092,12 +5092,12 @@ public interface AgreementPackage extends EPackage {
 		EClass AGREEMENT_TYPE_ATTR = eINSTANCE.getAgreementTypeAttr();
 
 		/**
-		 * The meta object literal for the '<em><b>Agreement Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Agreement Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_TYPE_ATTR__AGREEMENT_TYPE_ID = eINSTANCE.getAgreementTypeAttr_AgreementTypeId();
+		EReference AGREEMENT_TYPE_ATTR__AGREEMENT_TYPE = eINSTANCE.getAgreementTypeAttr_AgreementType();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -5126,12 +5126,20 @@ public interface AgreementPackage extends EPackage {
 		EClass AGREEMENT_WORK_EFFORT_APPLIC = eINSTANCE.getAgreementWorkEffortApplic();
 
 		/**
-		 * The meta object literal for the '<em><b>Agreement Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Agreement</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AGREEMENT_WORK_EFFORT_APPLIC__AGREEMENT_ID = eINSTANCE.getAgreementWorkEffortApplic_AgreementId();
+		EReference AGREEMENT_WORK_EFFORT_APPLIC__AGREEMENT = eINSTANCE.getAgreementWorkEffortApplic_Agreement();
+
+		/**
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference AGREEMENT_WORK_EFFORT_APPLIC__WORK_EFFORT = eINSTANCE.getAgreementWorkEffortApplic_WorkEffort();
 
 		/**
 		 * The meta object literal for the '<em><b>Agreement Item Seq Id</b></em>' attribute feature.
@@ -5140,14 +5148,6 @@ public interface AgreementPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute AGREEMENT_WORK_EFFORT_APPLIC__AGREEMENT_ITEM_SEQ_ID = eINSTANCE.getAgreementWorkEffortApplic_AgreementItemSeqId();
-
-		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference AGREEMENT_WORK_EFFORT_APPLIC__WORK_EFFORT_ID = eINSTANCE.getAgreementWorkEffortApplic_WorkEffortId();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.TermTypeImpl <em>Term Type</em>}' class.
@@ -5184,12 +5184,12 @@ public interface AgreementPackage extends EPackage {
 		EAttribute TERM_TYPE__HAS_TABLE = eINSTANCE.getTermType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TERM_TYPE__PARENT_TYPE_ID = eINSTANCE.getTermType_ParentTypeId();
+		EReference TERM_TYPE__PARENT_TYPE = eINSTANCE.getTermType_ParentType();
 
 		/**
 		 * The meta object literal for the '<em><b>Term Type Attrs</b></em>' reference list feature.
@@ -5210,12 +5210,12 @@ public interface AgreementPackage extends EPackage {
 		EClass TERM_TYPE_ATTR = eINSTANCE.getTermTypeAttr();
 
 		/**
-		 * The meta object literal for the '<em><b>Term Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Term Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TERM_TYPE_ATTR__TERM_TYPE_ID = eINSTANCE.getTermTypeAttr_TermTypeId();
+		EReference TERM_TYPE_ATTR__TERM_TYPE = eINSTANCE.getTermTypeAttr_TermType();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.

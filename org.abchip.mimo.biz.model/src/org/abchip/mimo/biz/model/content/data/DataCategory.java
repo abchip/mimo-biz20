@@ -21,7 +21,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.DataCategory#getDataCategoryId <em>Data Category Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.DataCategory#getCategoryName <em>Category Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.DataCategory#getParentCategoryId <em>Parent Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.DataCategory#getParentCategory <em>Parent Category</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataCategory()
@@ -56,6 +56,28 @@ public interface DataCategory extends EntityIdentifiable, EntityInfo {
 	void setCategoryName(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Parent Category</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Parent Category</em>' reference.
+	 * @see #setParentCategory(DataCategory)
+	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataCategory_ParentCategory()
+	 * @model keys="dataCategoryId"
+	 * @generated
+	 */
+	DataCategory getParentCategory();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.data.DataCategory#getParentCategory <em>Parent Category</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Parent Category</em>' reference.
+	 * @see #getParentCategory()
+	 * @generated
+	 */
+	void setParentCategory(DataCategory value);
+
+	/**
 	 * Returns the value of the '<em><b>Data Category Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -81,31 +103,5 @@ public interface DataCategory extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setDataCategoryId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Parent Category Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Category Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Category Id</em>' reference.
-	 * @see #setParentCategoryId(DataCategory)
-	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataCategory_ParentCategoryId()
-	 * @model keys="dataCategoryId"
-	 * @generated
-	 */
-	DataCategory getParentCategoryId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.data.DataCategory#getParentCategoryId <em>Parent Category Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Category Id</em>' reference.
-	 * @see #getParentCategoryId()
-	 * @generated
-	 */
-	void setParentCategoryId(DataCategory value);
 
 } // DataCategory

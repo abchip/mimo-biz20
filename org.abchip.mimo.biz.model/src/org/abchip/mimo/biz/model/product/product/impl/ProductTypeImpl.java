@@ -35,7 +35,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#isHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#getIsDigital <em>Is Digital</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#getIsPhysical <em>Is Physical</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#getProductTypeAttrs <em>Product Type Attrs</em>}</li>
  * </ul>
  *
@@ -245,8 +245,8 @@ public class ProductTypeImpl extends EntityTypeImpl<Product> implements ProductT
 	 * @generated
 	 */
 	@Override
-	public ProductType getParentTypeId() {
-		return (ProductType)eGet(ProductPackage.Literals.PRODUCT_TYPE__PARENT_TYPE_ID, true);
+	public ProductType getParentType() {
+		return (ProductType)eGet(ProductPackage.Literals.PRODUCT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -255,8 +255,8 @@ public class ProductTypeImpl extends EntityTypeImpl<Product> implements ProductT
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(ProductType newParentTypeId) {
-		eSet(ProductPackage.Literals.PRODUCT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(ProductType newParentType) {
+		eSet(ProductPackage.Literals.PRODUCT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

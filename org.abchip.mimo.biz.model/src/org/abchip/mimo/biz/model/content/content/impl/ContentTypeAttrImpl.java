@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentTypeAttrImpl#getContentTypeId <em>Content Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentTypeAttrImpl#getContentType <em>Content Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -152,6 +152,26 @@ public class ContentTypeAttrImpl extends EntityIdentifiableImpl implements Conte
 	 * @generated
 	 */
 	@Override
+	public ContentType getContentType() {
+		return (ContentType)eGet(ContentPackage.Literals.CONTENT_TYPE_ATTR__CONTENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContentType(ContentType newContentType) {
+		eSet(ContentPackage.Literals.CONTENT_TYPE_ATTR__CONTENT_TYPE, newContentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrName() {
 		return (String)eGet(ContentPackage.Literals.CONTENT_TYPE_ATTR__ATTR_NAME, true);
 	}
@@ -164,26 +184,6 @@ public class ContentTypeAttrImpl extends EntityIdentifiableImpl implements Conte
 	@Override
 	public void setAttrName(String newAttrName) {
 		eSet(ContentPackage.Literals.CONTENT_TYPE_ATTR__ATTR_NAME, newAttrName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ContentType getContentTypeId() {
-		return (ContentType)eGet(ContentPackage.Literals.CONTENT_TYPE_ATTR__CONTENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContentTypeId(ContentType newContentTypeId) {
-		eSet(ContentPackage.Literals.CONTENT_TYPE_ATTR__CONTENT_TYPE_ID, newContentTypeId);
 	}
 
 	/**

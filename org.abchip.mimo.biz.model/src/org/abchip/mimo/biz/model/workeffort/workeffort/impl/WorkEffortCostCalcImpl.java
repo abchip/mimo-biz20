@@ -30,10 +30,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortCostCalcImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortCostCalcImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortCostCalcImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortCostCalcImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortCostCalcImpl#getCostComponentTypeId <em>Cost Component Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortCostCalcImpl#getWorkEffort <em>Work Effort</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortCostCalcImpl#getCostComponentType <em>Cost Component Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortCostCalcImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortCostCalcImpl#getCostComponentCalcId <em>Cost Component Calc Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortCostCalcImpl#getCostComponentCalc <em>Cost Component Calc</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortCostCalcImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -156,8 +156,8 @@ public class WorkEffortCostCalcImpl extends EntityIdentifiableImpl implements Wo
 	 * @generated
 	 */
 	@Override
-	public CostComponentCalc getCostComponentCalcId() {
-		return (CostComponentCalc)eGet(WorkeffortPackage.Literals.WORK_EFFORT_COST_CALC__COST_COMPONENT_CALC_ID, true);
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_COST_CALC__WORK_EFFORT, true);
 	}
 
 	/**
@@ -166,8 +166,8 @@ public class WorkEffortCostCalcImpl extends EntityIdentifiableImpl implements Wo
 	 * @generated
 	 */
 	@Override
-	public void setCostComponentCalcId(CostComponentCalc newCostComponentCalcId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_COST_CALC__COST_COMPONENT_CALC_ID, newCostComponentCalcId);
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_COST_CALC__WORK_EFFORT, newWorkEffort);
 	}
 
 	/**
@@ -176,8 +176,8 @@ public class WorkEffortCostCalcImpl extends EntityIdentifiableImpl implements Wo
 	 * @generated
 	 */
 	@Override
-	public CostComponentType getCostComponentTypeId() {
-		return (CostComponentType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_COST_CALC__COST_COMPONENT_TYPE_ID, true);
+	public CostComponentType getCostComponentType() {
+		return (CostComponentType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_COST_CALC__COST_COMPONENT_TYPE, true);
 	}
 
 	/**
@@ -186,8 +186,8 @@ public class WorkEffortCostCalcImpl extends EntityIdentifiableImpl implements Wo
 	 * @generated
 	 */
 	@Override
-	public void setCostComponentTypeId(CostComponentType newCostComponentTypeId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_COST_CALC__COST_COMPONENT_TYPE_ID, newCostComponentTypeId);
+	public void setCostComponentType(CostComponentType newCostComponentType) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_COST_CALC__COST_COMPONENT_TYPE, newCostComponentType);
 	}
 
 	/**
@@ -208,6 +208,26 @@ public class WorkEffortCostCalcImpl extends EntityIdentifiableImpl implements Wo
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(WorkeffortPackage.Literals.WORK_EFFORT_COST_CALC__FROM_DATE, newFromDate);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CostComponentCalc getCostComponentCalc() {
+		return (CostComponentCalc)eGet(WorkeffortPackage.Literals.WORK_EFFORT_COST_CALC__COST_COMPONENT_CALC, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCostComponentCalc(CostComponentCalc newCostComponentCalc) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_COST_CALC__COST_COMPONENT_CALC, newCostComponentCalc);
 	}
 
 	/**
@@ -266,26 +286,6 @@ public class WorkEffortCostCalcImpl extends EntityIdentifiableImpl implements Wo
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_COST_CALC__WORK_EFFORT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_COST_CALC__WORK_EFFORT_ID, newWorkEffortId);
 	}
 
 } //WorkEffortCostCalcImpl

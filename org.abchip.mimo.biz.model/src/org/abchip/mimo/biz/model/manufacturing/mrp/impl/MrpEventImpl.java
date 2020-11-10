@@ -30,12 +30,12 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getMrpEventTypeId <em>Mrp Event Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getMrpEventType <em>Mrp Event Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getEventDate <em>Event Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getMrpId <em>Mrp Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getEventName <em>Event Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getFacilityIdTo <em>Facility Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getIsLate <em>Is Late</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getQuantity <em>Quantity</em>}</li>
@@ -160,6 +160,46 @@ public class MrpEventImpl extends EntityTypedImpl<MrpEventType> implements MrpEv
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(MrpPackage.Literals.MRP_EVENT__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(MrpPackage.Literals.MRP_EVENT__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public MrpEventType getMrpEventType() {
+		return (MrpEventType)eGet(MrpPackage.Literals.MRP_EVENT__MRP_EVENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMrpEventType(MrpEventType newMrpEventType) {
+		eSet(MrpPackage.Literals.MRP_EVENT__MRP_EVENT_TYPE, newMrpEventType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getMrpId() {
 		return (String)eGet(MrpPackage.Literals.MRP_EVENT__MRP_ID, true);
 	}
@@ -172,26 +212,6 @@ public class MrpEventImpl extends EntityTypedImpl<MrpEventType> implements MrpEv
 	@Override
 	public void setMrpId(String newMrpId) {
 		eSet(MrpPackage.Literals.MRP_EVENT__MRP_ID, newMrpId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(MrpPackage.Literals.MRP_EVENT__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(MrpPackage.Literals.MRP_EVENT__PRODUCT_ID, newProductId);
 	}
 
 	/**
@@ -220,26 +240,6 @@ public class MrpEventImpl extends EntityTypedImpl<MrpEventType> implements MrpEv
 	 * @generated
 	 */
 	@Override
-	public MrpEventType getMrpEventTypeId() {
-		return (MrpEventType)eGet(MrpPackage.Literals.MRP_EVENT__MRP_EVENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setMrpEventTypeId(MrpEventType newMrpEventTypeId) {
-		eSet(MrpPackage.Literals.MRP_EVENT__MRP_EVENT_TYPE_ID, newMrpEventTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getEventName() {
 		return (String)eGet(MrpPackage.Literals.MRP_EVENT__EVENT_NAME, true);
 	}
@@ -260,8 +260,8 @@ public class MrpEventImpl extends EntityTypedImpl<MrpEventType> implements MrpEv
 	 * @generated
 	 */
 	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(MrpPackage.Literals.MRP_EVENT__FACILITY_ID, true);
+	public Facility getFacility() {
+		return (Facility)eGet(MrpPackage.Literals.MRP_EVENT__FACILITY, true);
 	}
 
 	/**
@@ -270,8 +270,8 @@ public class MrpEventImpl extends EntityTypedImpl<MrpEventType> implements MrpEv
 	 * @generated
 	 */
 	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(MrpPackage.Literals.MRP_EVENT__FACILITY_ID, newFacilityId);
+	public void setFacility(Facility newFacility) {
+		eSet(MrpPackage.Literals.MRP_EVENT__FACILITY, newFacility);
 	}
 
 	/**

@@ -21,7 +21,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayConfig#getPaymentGatewayConfigId <em>Payment Gateway Config Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayConfig#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayConfig#getPaymentGatewayConfigTypeId <em>Payment Gateway Config Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayConfig#getPaymentGatewayConfigType <em>Payment Gateway Config Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayConfig()
@@ -56,30 +56,26 @@ public interface PaymentGatewayConfig extends EntityTyped<PaymentGatewayConfigTy
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Payment Gateway Config Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Payment Gateway Config Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Gateway Config Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Payment Gateway Config Type Id</em>' reference.
-	 * @see #setPaymentGatewayConfigTypeId(PaymentGatewayConfigType)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayConfig_PaymentGatewayConfigTypeId()
+	 * @return the value of the '<em>Payment Gateway Config Type</em>' reference.
+	 * @see #setPaymentGatewayConfigType(PaymentGatewayConfigType)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayConfig_PaymentGatewayConfigType()
 	 * @model keys="paymentGatewayConfigTypeId"
 	 * @generated
 	 */
-	PaymentGatewayConfigType getPaymentGatewayConfigTypeId();
+	PaymentGatewayConfigType getPaymentGatewayConfigType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayConfig#getPaymentGatewayConfigTypeId <em>Payment Gateway Config Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayConfig#getPaymentGatewayConfigType <em>Payment Gateway Config Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Payment Gateway Config Type Id</em>' reference.
-	 * @see #getPaymentGatewayConfigTypeId()
+	 * @param value the new value of the '<em>Payment Gateway Config Type</em>' reference.
+	 * @see #getPaymentGatewayConfigType()
 	 * @generated
 	 */
-	void setPaymentGatewayConfigTypeId(PaymentGatewayConfigType value);
+	void setPaymentGatewayConfigType(PaymentGatewayConfigType value);
 
 	/**
 	 * Returns the value of the '<em><b>Payment Gateway Config Id</b></em>' attribute.

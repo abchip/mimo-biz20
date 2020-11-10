@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.entity.group.impl.EntityGroupEntryImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.group.impl.EntityGroupEntryImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.group.impl.EntityGroupEntryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.group.impl.EntityGroupEntryImpl#getEntityGroupId <em>Entity Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.group.impl.EntityGroupEntryImpl#getEntityGroup <em>Entity Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.group.impl.EntityGroupEntryImpl#getEntityOrPackage <em>Entity Or Package</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.group.impl.EntityGroupEntryImpl#getApplEnumId <em>Appl Enum Id</em>}</li>
  * </ul>
@@ -151,6 +151,26 @@ public class EntityGroupEntryImpl extends EntityIdentifiableImpl implements Enti
 	 * @generated
 	 */
 	@Override
+	public EntityGroup getEntityGroup() {
+		return (EntityGroup)eGet(GroupPackage.Literals.ENTITY_GROUP_ENTRY__ENTITY_GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEntityGroup(EntityGroup newEntityGroup) {
+		eSet(GroupPackage.Literals.ENTITY_GROUP_ENTRY__ENTITY_GROUP, newEntityGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getApplEnumId() {
 		return (String)eGet(GroupPackage.Literals.ENTITY_GROUP_ENTRY__APPL_ENUM_ID, true);
 	}
@@ -201,26 +221,6 @@ public class EntityGroupEntryImpl extends EntityIdentifiableImpl implements Enti
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EntityGroup getEntityGroupId() {
-		return (EntityGroup)eGet(GroupPackage.Literals.ENTITY_GROUP_ENTRY__ENTITY_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setEntityGroupId(EntityGroup newEntityGroupId) {
-		eSet(GroupPackage.Literals.ENTITY_GROUP_ENTRY__ENTITY_GROUP_ID, newEntityGroupId);
 	}
 
 	/**

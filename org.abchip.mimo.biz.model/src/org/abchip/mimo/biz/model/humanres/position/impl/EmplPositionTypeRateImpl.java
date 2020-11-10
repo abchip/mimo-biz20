@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeRateImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeRateImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeRateImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeRateImpl#getEmplPositionTypeId <em>Empl Position Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeRateImpl#getRateTypeId <em>Rate Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeRateImpl#getEmplPositionType <em>Empl Position Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeRateImpl#getRateType <em>Rate Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeRateImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeRateImpl#getPayGradeId <em>Pay Grade Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeRateImpl#getSalaryStepSeqId <em>Salary Step Seq Id</em>}</li>
@@ -156,8 +156,8 @@ public class EmplPositionTypeRateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public EmplPositionType getEmplPositionTypeId() {
-		return (EmplPositionType)eGet(PositionPackage.Literals.EMPL_POSITION_TYPE_RATE__EMPL_POSITION_TYPE_ID, true);
+	public EmplPositionType getEmplPositionType() {
+		return (EmplPositionType)eGet(PositionPackage.Literals.EMPL_POSITION_TYPE_RATE__EMPL_POSITION_TYPE, true);
 	}
 
 	/**
@@ -166,8 +166,28 @@ public class EmplPositionTypeRateImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setEmplPositionTypeId(EmplPositionType newEmplPositionTypeId) {
-		eSet(PositionPackage.Literals.EMPL_POSITION_TYPE_RATE__EMPL_POSITION_TYPE_ID, newEmplPositionTypeId);
+	public void setEmplPositionType(EmplPositionType newEmplPositionType) {
+		eSet(PositionPackage.Literals.EMPL_POSITION_TYPE_RATE__EMPL_POSITION_TYPE, newEmplPositionType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RateType getRateType() {
+		return (RateType)eGet(PositionPackage.Literals.EMPL_POSITION_TYPE_RATE__RATE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRateType(RateType newRateType) {
+		eSet(PositionPackage.Literals.EMPL_POSITION_TYPE_RATE__RATE_TYPE, newRateType);
 	}
 
 	/**
@@ -208,26 +228,6 @@ public class EmplPositionTypeRateImpl extends EntityIdentifiableImpl implements 
 	@Override
 	public void setPayGradeId(String newPayGradeId) {
 		eSet(PositionPackage.Literals.EMPL_POSITION_TYPE_RATE__PAY_GRADE_ID, newPayGradeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public RateType getRateTypeId() {
-		return (RateType)eGet(PositionPackage.Literals.EMPL_POSITION_TYPE_RATE__RATE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRateTypeId(RateType newRateTypeId) {
-		eSet(PositionPackage.Literals.EMPL_POSITION_TYPE_RATE__RATE_TYPE_ID, newRateTypeId);
 	}
 
 	/**

@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementContentType#getAgreementContentTypeId <em>Agreement Content Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementContentType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementContentType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementContentType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.AgreementContentType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementContentType()
@@ -83,30 +83,26 @@ public interface AgreementContentType extends EntityType<AgreementContent>, Enti
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(AgreementContentType)
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementContentType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(AgreementContentType)
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementContentType_ParentType()
 	 * @model keys="agreementContentTypeId"
 	 * @generated
 	 */
-	AgreementContentType getParentTypeId();
+	AgreementContentType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.AgreementContentType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.agreement.AgreementContentType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(AgreementContentType value);
+	void setParentType(AgreementContentType value);
 
 	/**
 	 * Returns the value of the '<em><b>Agreement Content Type Id</b></em>' attribute.

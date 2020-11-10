@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderBlacklist#getOrderBlacklistTypeId <em>Order Blacklist Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderBlacklist#getOrderBlacklistType <em>Order Blacklist Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderBlacklist#getBlacklistString <em>Blacklist String</em>}</li>
  * </ul>
  *
@@ -28,6 +28,29 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface OrderBlacklist extends EntityTyped<OrderBlacklistType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Order Blacklist Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Order Blacklist Type</em>' reference.
+	 * @see #setOrderBlacklistType(OrderBlacklistType)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderBlacklist_OrderBlacklistType()
+	 * @model keys="orderBlacklistTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	OrderBlacklistType getOrderBlacklistType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderBlacklist#getOrderBlacklistType <em>Order Blacklist Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Order Blacklist Type</em>' reference.
+	 * @see #getOrderBlacklistType()
+	 * @generated
+	 */
+	void setOrderBlacklistType(OrderBlacklistType value);
+
 	/**
 	 * Returns the value of the '<em><b>Blacklist String</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -55,32 +78,5 @@ public interface OrderBlacklist extends EntityTyped<OrderBlacklistType>, EntityI
 	 * @generated
 	 */
 	void setBlacklistString(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Order Blacklist Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Blacklist Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Blacklist Type Id</em>' reference.
-	 * @see #setOrderBlacklistTypeId(OrderBlacklistType)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderBlacklist_OrderBlacklistTypeId()
-	 * @model keys="orderBlacklistTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	OrderBlacklistType getOrderBlacklistTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderBlacklist#getOrderBlacklistTypeId <em>Order Blacklist Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Blacklist Type Id</em>' reference.
-	 * @see #getOrderBlacklistTypeId()
-	 * @generated
-	 */
-	void setOrderBlacklistTypeId(OrderBlacklistType value);
 
 } // OrderBlacklist

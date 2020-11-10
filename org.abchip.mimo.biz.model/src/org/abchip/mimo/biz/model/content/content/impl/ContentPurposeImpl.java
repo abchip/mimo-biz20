@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeImpl#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeImpl#getContentPurposeTypeId <em>Content Purpose Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeImpl#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeImpl#getContentPurposeType <em>Content Purpose Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentPurposeImpl#getSequenceNum <em>Sequence Num</em>}</li>
  * </ul>
  *
@@ -153,8 +153,8 @@ public class ContentPurposeImpl extends EntityTypedImpl<ContentPurposeType> impl
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(ContentPackage.Literals.CONTENT_PURPOSE__CONTENT_ID, true);
+	public Content getContent() {
+		return (Content)eGet(ContentPackage.Literals.CONTENT_PURPOSE__CONTENT, true);
 	}
 
 	/**
@@ -163,8 +163,8 @@ public class ContentPurposeImpl extends EntityTypedImpl<ContentPurposeType> impl
 	 * @generated
 	 */
 	@Override
-	public void setContentId(Content newContentId) {
-		eSet(ContentPackage.Literals.CONTENT_PURPOSE__CONTENT_ID, newContentId);
+	public void setContent(Content newContent) {
+		eSet(ContentPackage.Literals.CONTENT_PURPOSE__CONTENT, newContent);
 	}
 
 	/**
@@ -173,8 +173,8 @@ public class ContentPurposeImpl extends EntityTypedImpl<ContentPurposeType> impl
 	 * @generated
 	 */
 	@Override
-	public ContentPurposeType getContentPurposeTypeId() {
-		return (ContentPurposeType)eGet(ContentPackage.Literals.CONTENT_PURPOSE__CONTENT_PURPOSE_TYPE_ID, true);
+	public ContentPurposeType getContentPurposeType() {
+		return (ContentPurposeType)eGet(ContentPackage.Literals.CONTENT_PURPOSE__CONTENT_PURPOSE_TYPE, true);
 	}
 
 	/**
@@ -183,8 +183,8 @@ public class ContentPurposeImpl extends EntityTypedImpl<ContentPurposeType> impl
 	 * @generated
 	 */
 	@Override
-	public void setContentPurposeTypeId(ContentPurposeType newContentPurposeTypeId) {
-		eSet(ContentPackage.Literals.CONTENT_PURPOSE__CONTENT_PURPOSE_TYPE_ID, newContentPurposeTypeId);
+	public void setContentPurposeType(ContentPurposeType newContentPurposeType) {
+		eSet(ContentPackage.Literals.CONTENT_PURPOSE__CONTENT_PURPOSE_TYPE, newContentPurposeType);
 	}
 
 	/**

@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetTypeAttr#getBudgetTypeId <em>Budget Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetTypeAttr#getBudgetType <em>Budget Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetTypeAttr#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetTypeAttr#getDescription <em>Description</em>}</li>
  * </ul>
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface BudgetTypeAttr extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Budget Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Budget Type</em>' reference.
+	 * @see #setBudgetType(BudgetType)
+	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetTypeAttr_BudgetType()
+	 * @model keys="budgetTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	BudgetType getBudgetType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetTypeAttr#getBudgetType <em>Budget Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Budget Type</em>' reference.
+	 * @see #getBudgetType()
+	 * @generated
+	 */
+	void setBudgetType(BudgetType value);
+
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -82,32 +105,5 @@ public interface BudgetTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setAttrName(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Budget Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Budget Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Budget Type Id</em>' reference.
-	 * @see #setBudgetTypeId(BudgetType)
-	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetTypeAttr_BudgetTypeId()
-	 * @model keys="budgetTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	BudgetType getBudgetTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetTypeAttr#getBudgetTypeId <em>Budget Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Budget Type Id</em>' reference.
-	 * @see #getBudgetTypeId()
-	 * @generated
-	 */
-	void setBudgetTypeId(BudgetType value);
 
 } // BudgetTypeAttr

@@ -24,7 +24,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventPrpTyp#getCommunicationEventPurposes <em>Communication Event Purposes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventPrpTyp#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventPrpTyp#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventPrpTyp#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventPrpTyp#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventPrpTyp()
@@ -85,30 +85,26 @@ public interface CommunicationEventPrpTyp extends EntityType<CommunicationEventP
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(CommunicationEventPrpTyp)
-	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventPrpTyp_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(CommunicationEventPrpTyp)
+	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventPrpTyp_ParentType()
 	 * @model keys="communicationEventPrpTypId"
 	 * @generated
 	 */
-	CommunicationEventPrpTyp getParentTypeId();
+	CommunicationEventPrpTyp getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventPrpTyp#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventPrpTyp#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(CommunicationEventPrpTyp value);
+	void setParentType(CommunicationEventPrpTyp value);
 
 	/**
 	 * Returns the value of the '<em><b>Communication Event Prp Typ Id</b></em>' attribute.

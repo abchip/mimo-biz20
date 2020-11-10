@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceTypeAttrImpl#getDataResourceTypeId <em>Data Resource Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceTypeAttrImpl#getDataResourceType <em>Data Resource Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -152,6 +152,26 @@ public class DataResourceTypeAttrImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
+	public DataResourceType getDataResourceType() {
+		return (DataResourceType)eGet(DataPackage.Literals.DATA_RESOURCE_TYPE_ATTR__DATA_RESOURCE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDataResourceType(DataResourceType newDataResourceType) {
+		eSet(DataPackage.Literals.DATA_RESOURCE_TYPE_ATTR__DATA_RESOURCE_TYPE, newDataResourceType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrName() {
 		return (String)eGet(DataPackage.Literals.DATA_RESOURCE_TYPE_ATTR__ATTR_NAME, true);
 	}
@@ -164,26 +184,6 @@ public class DataResourceTypeAttrImpl extends EntityIdentifiableImpl implements 
 	@Override
 	public void setAttrName(String newAttrName) {
 		eSet(DataPackage.Literals.DATA_RESOURCE_TYPE_ATTR__ATTR_NAME, newAttrName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DataResourceType getDataResourceTypeId() {
-		return (DataResourceType)eGet(DataPackage.Literals.DATA_RESOURCE_TYPE_ATTR__DATA_RESOURCE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDataResourceTypeId(DataResourceType newDataResourceTypeId) {
-		eSet(DataPackage.Literals.DATA_RESOURCE_TYPE_ATTR__DATA_RESOURCE_TYPE_ID, newDataResourceTypeId);
 	}
 
 	/**

@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransTypeAttrImpl#getAcctgTransTypeId <em>Acctg Trans Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransTypeAttrImpl#getAcctgTransType <em>Acctg Trans Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -151,6 +151,26 @@ public class AcctgTransTypeAttrImpl extends EntityIdentifiableImpl implements Ac
 	 * @generated
 	 */
 	@Override
+	public AcctgTransType getAcctgTransType() {
+		return (AcctgTransType)eGet(LedgerPackage.Literals.ACCTG_TRANS_TYPE_ATTR__ACCTG_TRANS_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAcctgTransType(AcctgTransType newAcctgTransType) {
+		eSet(LedgerPackage.Literals.ACCTG_TRANS_TYPE_ATTR__ACCTG_TRANS_TYPE, newAcctgTransType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(LedgerPackage.Literals.ACCTG_TRANS_TYPE_ATTR__DESCRIPTION, true);
 	}
@@ -221,26 +241,6 @@ public class AcctgTransTypeAttrImpl extends EntityIdentifiableImpl implements Ac
 	@Override
 	public void setAttrName(String newAttrName) {
 		eSet(LedgerPackage.Literals.ACCTG_TRANS_TYPE_ATTR__ATTR_NAME, newAttrName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public AcctgTransType getAcctgTransTypeId() {
-		return (AcctgTransType)eGet(LedgerPackage.Literals.ACCTG_TRANS_TYPE_ATTR__ACCTG_TRANS_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAcctgTransTypeId(AcctgTransType newAcctgTransTypeId) {
-		eSet(LedgerPackage.Literals.ACCTG_TRANS_TYPE_ATTR__ACCTG_TRANS_TYPE_ID, newAcctgTransTypeId);
 	}
 
 } //AcctgTransTypeAttrImpl

@@ -32,13 +32,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemBillingImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemBillingImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemBillingImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemBillingImpl#getReturnId <em>Return Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemBillingImpl#getInvoiceId <em>Invoice Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemBillingImpl#getReturn <em>Return</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemBillingImpl#getInvoice <em>Invoice</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemBillingImpl#getInvoiceItemSeqId <em>Invoice Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemBillingImpl#getReturnItemSeqId <em>Return Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemBillingImpl#getAmount <em>Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemBillingImpl#getQuantity <em>Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemBillingImpl#getShipmentReceiptId <em>Shipment Receipt Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemBillingImpl#getShipmentReceipt <em>Shipment Receipt</em>}</li>
  * </ul>
  *
  * @generated
@@ -160,6 +160,46 @@ public class ReturnItemBillingImpl extends EntityIdentifiableImpl implements Ret
 	 * @generated
 	 */
 	@Override
+	public ReturnHeader getReturn() {
+		return (ReturnHeader)eGet(ReturnPackage.Literals.RETURN_ITEM_BILLING__RETURN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setReturn(ReturnHeader newReturn) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM_BILLING__RETURN, newReturn);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Invoice getInvoice() {
+		return (Invoice)eGet(ReturnPackage.Literals.RETURN_ITEM_BILLING__INVOICE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInvoice(Invoice newInvoice) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM_BILLING__INVOICE, newInvoice);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAmount() {
 		return (BigDecimal)eGet(ReturnPackage.Literals.RETURN_ITEM_BILLING__AMOUNT, true);
 	}
@@ -172,26 +212,6 @@ public class ReturnItemBillingImpl extends EntityIdentifiableImpl implements Ret
 	@Override
 	public void setAmount(BigDecimal newAmount) {
 		eSet(ReturnPackage.Literals.RETURN_ITEM_BILLING__AMOUNT, newAmount);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Invoice getInvoiceId() {
-		return (Invoice)eGet(ReturnPackage.Literals.RETURN_ITEM_BILLING__INVOICE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInvoiceId(Invoice newInvoiceId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM_BILLING__INVOICE_ID, newInvoiceId);
 	}
 
 	/**
@@ -240,8 +260,8 @@ public class ReturnItemBillingImpl extends EntityIdentifiableImpl implements Ret
 	 * @generated
 	 */
 	@Override
-	public ReturnHeader getReturnId() {
-		return (ReturnHeader)eGet(ReturnPackage.Literals.RETURN_ITEM_BILLING__RETURN_ID, true);
+	public ShipmentReceipt getShipmentReceipt() {
+		return (ShipmentReceipt)eGet(ReturnPackage.Literals.RETURN_ITEM_BILLING__SHIPMENT_RECEIPT, true);
 	}
 
 	/**
@@ -250,8 +270,8 @@ public class ReturnItemBillingImpl extends EntityIdentifiableImpl implements Ret
 	 * @generated
 	 */
 	@Override
-	public void setReturnId(ReturnHeader newReturnId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM_BILLING__RETURN_ID, newReturnId);
+	public void setShipmentReceipt(ShipmentReceipt newShipmentReceipt) {
+		eSet(ReturnPackage.Literals.RETURN_ITEM_BILLING__SHIPMENT_RECEIPT, newShipmentReceipt);
 	}
 
 	/**
@@ -272,26 +292,6 @@ public class ReturnItemBillingImpl extends EntityIdentifiableImpl implements Ret
 	@Override
 	public void setReturnItemSeqId(String newReturnItemSeqId) {
 		eSet(ReturnPackage.Literals.RETURN_ITEM_BILLING__RETURN_ITEM_SEQ_ID, newReturnItemSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ShipmentReceipt getShipmentReceiptId() {
-		return (ShipmentReceipt)eGet(ReturnPackage.Literals.RETURN_ITEM_BILLING__SHIPMENT_RECEIPT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setShipmentReceiptId(ShipmentReceipt newShipmentReceiptId) {
-		eSet(ReturnPackage.Literals.RETURN_ITEM_BILLING__SHIPMENT_RECEIPT_ID, newShipmentReceiptId);
 	}
 
 	/**

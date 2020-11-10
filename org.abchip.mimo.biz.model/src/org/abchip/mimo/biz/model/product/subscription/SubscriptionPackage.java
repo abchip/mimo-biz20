@@ -108,22 +108,22 @@ public interface SubscriptionPackage extends EPackage {
 	int PRODUCT_SUBSCRIPTION_RESOURCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__PRODUCT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Subscription Resource Id</b></em>' reference.
+	 * The feature id for the '<em><b>Subscription Resource</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__SUBSCRIPTION_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__SUBSCRIPTION_RESOURCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -153,13 +153,13 @@ public interface SubscriptionPackage extends EPackage {
 	int PRODUCT_SUBSCRIPTION_RESOURCE__AVAILABLE_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Available Time Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Available Time Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__AVAILABLE_TIME_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__AVAILABLE_TIME_UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Cancl Autm Ext Time</b></em>' attribute.
@@ -171,13 +171,13 @@ public interface SubscriptionPackage extends EPackage {
 	int PRODUCT_SUBSCRIPTION_RESOURCE__CANCL_AUTM_EXT_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Cancl Autm Ext Time Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Cancl Autm Ext Time Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__CANCL_AUTM_EXT_TIME_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__CANCL_AUTM_EXT_TIME_UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Grace Period On Expiry</b></em>' attribute.
@@ -189,13 +189,13 @@ public interface SubscriptionPackage extends EPackage {
 	int PRODUCT_SUBSCRIPTION_RESOURCE__GRACE_PERIOD_ON_EXPIRY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
-	 * The feature id for the '<em><b>Grace Period On Expiry Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Grace Period On Expiry Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__GRACE_PERIOD_ON_EXPIRY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__GRACE_PERIOD_ON_EXPIRY_UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Max Life Time</b></em>' attribute.
@@ -207,13 +207,13 @@ public interface SubscriptionPackage extends EPackage {
 	int PRODUCT_SUBSCRIPTION_RESOURCE__MAX_LIFE_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
-	 * The feature id for the '<em><b>Max Life Time Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Max Life Time Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__MAX_LIFE_TIME_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__MAX_LIFE_TIME_UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Purchase From Date</b></em>' attribute.
@@ -252,13 +252,13 @@ public interface SubscriptionPackage extends EPackage {
 	int PRODUCT_SUBSCRIPTION_RESOURCE__USE_COUNT_LIMIT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
-	 * The feature id for the '<em><b>Use Role Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Use Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__USE_ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__USE_ROLE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Use Time</b></em>' attribute.
@@ -270,13 +270,13 @@ public interface SubscriptionPackage extends EPackage {
 	int PRODUCT_SUBSCRIPTION_RESOURCE__USE_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
-	 * The feature id for the '<em><b>Use Time Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Use Time Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__USE_TIME_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__USE_TIME_UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
 
 	/**
 	 * The number of structural features of the '<em>Product Subscription Resource</em>' class.
@@ -361,13 +361,13 @@ public interface SubscriptionPackage extends EPackage {
 	int SUBSCRIPTION__AVAILABLE_TIME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Available Time Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Available Time Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__AVAILABLE_TIME_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int SUBSCRIPTION__AVAILABLE_TIME_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Cancl Autm Ext Time</b></em>' attribute.
@@ -379,13 +379,13 @@ public interface SubscriptionPackage extends EPackage {
 	int SUBSCRIPTION__CANCL_AUTM_EXT_TIME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Cancl Autm Ext Time Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Cancl Autm Ext Time Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__CANCL_AUTM_EXT_TIME_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int SUBSCRIPTION__CANCL_AUTM_EXT_TIME_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Communication Event Id</b></em>' attribute.
@@ -397,13 +397,13 @@ public interface SubscriptionPackage extends EPackage {
 	int SUBSCRIPTION__COMMUNICATION_EVENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Contact Mech Id</b></em>' reference.
+	 * The feature id for the '<em><b>Contact Mech</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__CONTACT_MECH_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
+	int SUBSCRIPTION__CONTACT_MECH = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -451,22 +451,22 @@ public interface SubscriptionPackage extends EPackage {
 	int SUBSCRIPTION__GRACE_PERIOD_ON_EXPIRY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
-	 * The feature id for the '<em><b>Grace Period On Expiry Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Grace Period On Expiry Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__GRACE_PERIOD_ON_EXPIRY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
+	int SUBSCRIPTION__GRACE_PERIOD_ON_EXPIRY_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
-	 * The feature id for the '<em><b>Inventory Item Id</b></em>' reference.
+	 * The feature id for the '<em><b>Inventory Item</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__INVENTORY_ITEM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
+	int SUBSCRIPTION__INVENTORY_ITEM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Max Life Time</b></em>' attribute.
@@ -478,31 +478,31 @@ public interface SubscriptionPackage extends EPackage {
 	int SUBSCRIPTION__MAX_LIFE_TIME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
-	 * The feature id for the '<em><b>Max Life Time Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Max Life Time Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__MAX_LIFE_TIME_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
+	int SUBSCRIPTION__MAX_LIFE_TIME_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
-	 * The feature id for the '<em><b>Need Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Need Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__NEED_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
+	int SUBSCRIPTION__NEED_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__ORDER_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
+	int SUBSCRIPTION__ORDER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -514,31 +514,31 @@ public interface SubscriptionPackage extends EPackage {
 	int SUBSCRIPTION__ORDER_ITEM_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
-	 * The feature id for the '<em><b>Originated From Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Originated From Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__ORIGINATED_FROM_PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
+	int SUBSCRIPTION__ORIGINATED_FROM_PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
-	 * The feature id for the '<em><b>Originated From Role Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Originated From Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__ORIGINATED_FROM_ROLE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
+	int SUBSCRIPTION__ORIGINATED_FROM_ROLE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
+	int SUBSCRIPTION__PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Party Need Id</b></em>' attribute.
@@ -550,22 +550,22 @@ public interface SubscriptionPackage extends EPackage {
 	int SUBSCRIPTION__PARTY_NEED_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
 
 	/**
-	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
+	int SUBSCRIPTION__PRODUCT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
+	int SUBSCRIPTION__PRODUCT_CATEGORY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Purchase From Date</b></em>' attribute.
@@ -586,13 +586,13 @@ public interface SubscriptionPackage extends EPackage {
 	int SUBSCRIPTION__PURCHASE_THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
 
 	/**
-	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__ROLE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 32;
+	int SUBSCRIPTION__ROLE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 32;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Attributes</b></em>' reference list.
@@ -613,22 +613,22 @@ public interface SubscriptionPackage extends EPackage {
 	int SUBSCRIPTION__SUBSCRIPTION_COMM_EVENTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 34;
 
 	/**
-	 * The feature id for the '<em><b>Subscription Resource Id</b></em>' reference.
+	 * The feature id for the '<em><b>Subscription Resource</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__SUBSCRIPTION_RESOURCE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 35;
+	int SUBSCRIPTION__SUBSCRIPTION_RESOURCE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 35;
 
 	/**
-	 * The feature id for the '<em><b>Subscription Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Subscription Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__SUBSCRIPTION_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 36;
+	int SUBSCRIPTION__SUBSCRIPTION_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 36;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -658,13 +658,13 @@ public interface SubscriptionPackage extends EPackage {
 	int SUBSCRIPTION__USE_TIME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 39;
 
 	/**
-	 * The feature id for the '<em><b>Use Time Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Use Time Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__USE_TIME_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 40;
+	int SUBSCRIPTION__USE_TIME_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 40;
 
 	/**
 	 * The number of structural features of the '<em>Subscription</em>' class.
@@ -813,13 +813,13 @@ public interface SubscriptionPackage extends EPackage {
 	int SUBSCRIPTION_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Subscription Id</b></em>' reference.
+	 * The feature id for the '<em><b>Subscription</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_ATTRIBUTE__SUBSCRIPTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SUBSCRIPTION_ATTRIBUTE__SUBSCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -904,22 +904,22 @@ public interface SubscriptionPackage extends EPackage {
 	int SUBSCRIPTION_COMM_EVENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Communication Event Id</b></em>' reference.
+	 * The feature id for the '<em><b>Communication Event</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_COMM_EVENT__COMMUNICATION_EVENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SUBSCRIPTION_COMM_EVENT__COMMUNICATION_EVENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Subscription Id</b></em>' reference.
+	 * The feature id for the '<em><b>Subscription</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_COMM_EVENT__SUBSCRIPTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int SUBSCRIPTION_COMM_EVENT__SUBSCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Comm Event</em>' class.
@@ -977,22 +977,22 @@ public interface SubscriptionPackage extends EPackage {
 	int SUBSCRIPTION_FULFILLMENT_PIECE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Subscription Id</b></em>' reference.
+	 * The feature id for the '<em><b>Subscription</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Subscription Activity Id</b></em>' reference.
+	 * The feature id for the '<em><b>Subscription Activity</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION_ACTIVITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION_ACTIVITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Fulfillment Piece</em>' class.
@@ -1059,13 +1059,13 @@ public interface SubscriptionPackage extends EPackage {
 	int SUBSCRIPTION_RESOURCE__SUBSCRIPTION_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Content Id</b></em>' reference.
+	 * The feature id for the '<em><b>Content</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_RESOURCE__CONTENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int SUBSCRIPTION_RESOURCE__CONTENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1077,13 +1077,13 @@ public interface SubscriptionPackage extends EPackage {
 	int SUBSCRIPTION_RESOURCE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Resource Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Resource</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_RESOURCE__PARENT_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int SUBSCRIPTION_RESOURCE__PARENT_RESOURCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Service Name On Expiry</b></em>' attribute.
@@ -1095,13 +1095,13 @@ public interface SubscriptionPackage extends EPackage {
 	int SUBSCRIPTION_RESOURCE__SERVICE_NAME_ON_EXPIRY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Web Site Id</b></em>' reference.
+	 * The feature id for the '<em><b>Web Site</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_RESOURCE__WEB_SITE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int SUBSCRIPTION_RESOURCE__WEB_SITE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Resource</em>' class.
@@ -1195,13 +1195,13 @@ public interface SubscriptionPackage extends EPackage {
 	int SUBSCRIPTION_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int SUBSCRIPTION_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Type Attrs</b></em>' reference list.
@@ -1268,13 +1268,13 @@ public interface SubscriptionPackage extends EPackage {
 	int SUBSCRIPTION_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Subscription Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Subscription Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE_ATTR__SUBSCRIPTION_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SUBSCRIPTION_TYPE_ATTR__SUBSCRIPTION_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1315,26 +1315,26 @@ public interface SubscriptionPackage extends EPackage {
 	EClass getProductSubscriptionResource();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getProductId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getProduct()
 	 * @see #getProductSubscriptionResource()
 	 * @generated
 	 */
-	EReference getProductSubscriptionResource_ProductId();
+	EReference getProductSubscriptionResource_Product();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getSubscriptionResourceId <em>Subscription Resource Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getSubscriptionResource <em>Subscription Resource</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Subscription Resource Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getSubscriptionResourceId()
+	 * @return the meta object for the reference '<em>Subscription Resource</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getSubscriptionResource()
 	 * @see #getProductSubscriptionResource()
 	 * @generated
 	 */
-	EReference getProductSubscriptionResource_SubscriptionResourceId();
+	EReference getProductSubscriptionResource_SubscriptionResource();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getFromDate <em>From Date</em>}'.
@@ -1370,15 +1370,15 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getProductSubscriptionResource_AvailableTime();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getAvailableTimeUomId <em>Available Time Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getAvailableTimeUom <em>Available Time Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Available Time Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getAvailableTimeUomId()
+	 * @return the meta object for the reference '<em>Available Time Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getAvailableTimeUom()
 	 * @see #getProductSubscriptionResource()
 	 * @generated
 	 */
-	EReference getProductSubscriptionResource_AvailableTimeUomId();
+	EReference getProductSubscriptionResource_AvailableTimeUom();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getCanclAutmExtTime <em>Cancl Autm Ext Time</em>}'.
@@ -1392,15 +1392,15 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getProductSubscriptionResource_CanclAutmExtTime();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getCanclAutmExtTimeUomId <em>Cancl Autm Ext Time Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getCanclAutmExtTimeUom <em>Cancl Autm Ext Time Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Cancl Autm Ext Time Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getCanclAutmExtTimeUomId()
+	 * @return the meta object for the reference '<em>Cancl Autm Ext Time Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getCanclAutmExtTimeUom()
 	 * @see #getProductSubscriptionResource()
 	 * @generated
 	 */
-	EReference getProductSubscriptionResource_CanclAutmExtTimeUomId();
+	EReference getProductSubscriptionResource_CanclAutmExtTimeUom();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getGracePeriodOnExpiry <em>Grace Period On Expiry</em>}'.
@@ -1414,15 +1414,15 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getProductSubscriptionResource_GracePeriodOnExpiry();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getGracePeriodOnExpiryUomId <em>Grace Period On Expiry Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getGracePeriodOnExpiryUom <em>Grace Period On Expiry Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Grace Period On Expiry Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getGracePeriodOnExpiryUomId()
+	 * @return the meta object for the reference '<em>Grace Period On Expiry Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getGracePeriodOnExpiryUom()
 	 * @see #getProductSubscriptionResource()
 	 * @generated
 	 */
-	EReference getProductSubscriptionResource_GracePeriodOnExpiryUomId();
+	EReference getProductSubscriptionResource_GracePeriodOnExpiryUom();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getMaxLifeTime <em>Max Life Time</em>}'.
@@ -1436,15 +1436,15 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getProductSubscriptionResource_MaxLifeTime();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getMaxLifeTimeUomId <em>Max Life Time Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getMaxLifeTimeUom <em>Max Life Time Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Max Life Time Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getMaxLifeTimeUomId()
+	 * @return the meta object for the reference '<em>Max Life Time Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getMaxLifeTimeUom()
 	 * @see #getProductSubscriptionResource()
 	 * @generated
 	 */
-	EReference getProductSubscriptionResource_MaxLifeTimeUomId();
+	EReference getProductSubscriptionResource_MaxLifeTimeUom();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getPurchaseFromDate <em>Purchase From Date</em>}'.
@@ -1491,15 +1491,15 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getProductSubscriptionResource_UseCountLimit();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getUseRoleTypeId <em>Use Role Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getUseRoleType <em>Use Role Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Use Role Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getUseRoleTypeId()
+	 * @return the meta object for the reference '<em>Use Role Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getUseRoleType()
 	 * @see #getProductSubscriptionResource()
 	 * @generated
 	 */
-	EReference getProductSubscriptionResource_UseRoleTypeId();
+	EReference getProductSubscriptionResource_UseRoleType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getUseTime <em>Use Time</em>}'.
@@ -1513,15 +1513,15 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getProductSubscriptionResource_UseTime();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getUseTimeUomId <em>Use Time Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getUseTimeUom <em>Use Time Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Use Time Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getUseTimeUomId()
+	 * @return the meta object for the reference '<em>Use Time Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource#getUseTimeUom()
 	 * @see #getProductSubscriptionResource()
 	 * @generated
 	 */
-	EReference getProductSubscriptionResource_UseTimeUomId();
+	EReference getProductSubscriptionResource_UseTimeUom();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.subscription.Subscription <em>Subscription</em>}'.
@@ -1567,15 +1567,15 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getSubscription_AvailableTime();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getAvailableTimeUomId <em>Available Time Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getAvailableTimeUom <em>Available Time Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Available Time Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getAvailableTimeUomId()
+	 * @return the meta object for the reference '<em>Available Time Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getAvailableTimeUom()
 	 * @see #getSubscription()
 	 * @generated
 	 */
-	EReference getSubscription_AvailableTimeUomId();
+	EReference getSubscription_AvailableTimeUom();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getCanclAutmExtTime <em>Cancl Autm Ext Time</em>}'.
@@ -1589,15 +1589,15 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getSubscription_CanclAutmExtTime();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getCanclAutmExtTimeUomId <em>Cancl Autm Ext Time Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getCanclAutmExtTimeUom <em>Cancl Autm Ext Time Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Cancl Autm Ext Time Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getCanclAutmExtTimeUomId()
+	 * @return the meta object for the reference '<em>Cancl Autm Ext Time Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getCanclAutmExtTimeUom()
 	 * @see #getSubscription()
 	 * @generated
 	 */
-	EReference getSubscription_CanclAutmExtTimeUomId();
+	EReference getSubscription_CanclAutmExtTimeUom();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getCommunicationEventId <em>Communication Event Id</em>}'.
@@ -1611,15 +1611,15 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getSubscription_CommunicationEventId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getContactMechId <em>Contact Mech Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getContactMech <em>Contact Mech</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Contact Mech Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getContactMechId()
+	 * @return the meta object for the reference '<em>Contact Mech</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getContactMech()
 	 * @see #getSubscription()
 	 * @generated
 	 */
-	EReference getSubscription_ContactMechId();
+	EReference getSubscription_ContactMech();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getDescription <em>Description</em>}'.
@@ -1677,26 +1677,26 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getSubscription_GracePeriodOnExpiry();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getGracePeriodOnExpiryUomId <em>Grace Period On Expiry Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getGracePeriodOnExpiryUom <em>Grace Period On Expiry Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Grace Period On Expiry Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getGracePeriodOnExpiryUomId()
+	 * @return the meta object for the reference '<em>Grace Period On Expiry Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getGracePeriodOnExpiryUom()
 	 * @see #getSubscription()
 	 * @generated
 	 */
-	EReference getSubscription_GracePeriodOnExpiryUomId();
+	EReference getSubscription_GracePeriodOnExpiryUom();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getInventoryItemId <em>Inventory Item Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getInventoryItem <em>Inventory Item</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Inventory Item Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getInventoryItemId()
+	 * @return the meta object for the reference '<em>Inventory Item</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getInventoryItem()
 	 * @see #getSubscription()
 	 * @generated
 	 */
-	EReference getSubscription_InventoryItemId();
+	EReference getSubscription_InventoryItem();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getMaxLifeTime <em>Max Life Time</em>}'.
@@ -1710,37 +1710,37 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getSubscription_MaxLifeTime();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getMaxLifeTimeUomId <em>Max Life Time Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getMaxLifeTimeUom <em>Max Life Time Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Max Life Time Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getMaxLifeTimeUomId()
+	 * @return the meta object for the reference '<em>Max Life Time Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getMaxLifeTimeUom()
 	 * @see #getSubscription()
 	 * @generated
 	 */
-	EReference getSubscription_MaxLifeTimeUomId();
+	EReference getSubscription_MaxLifeTimeUom();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getNeedTypeId <em>Need Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getNeedType <em>Need Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Need Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getNeedTypeId()
+	 * @return the meta object for the reference '<em>Need Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getNeedType()
 	 * @see #getSubscription()
 	 * @generated
 	 */
-	EReference getSubscription_NeedTypeId();
+	EReference getSubscription_NeedType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getOrder()
 	 * @see #getSubscription()
 	 * @generated
 	 */
-	EReference getSubscription_OrderId();
+	EReference getSubscription_Order();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -1754,37 +1754,37 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getSubscription_OrderItemSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getOriginatedFromPartyId <em>Originated From Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getOriginatedFromParty <em>Originated From Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Originated From Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getOriginatedFromPartyId()
+	 * @return the meta object for the reference '<em>Originated From Party</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getOriginatedFromParty()
 	 * @see #getSubscription()
 	 * @generated
 	 */
-	EReference getSubscription_OriginatedFromPartyId();
+	EReference getSubscription_OriginatedFromParty();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getOriginatedFromRoleTypeId <em>Originated From Role Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getOriginatedFromRoleType <em>Originated From Role Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Originated From Role Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getOriginatedFromRoleTypeId()
+	 * @return the meta object for the reference '<em>Originated From Role Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getOriginatedFromRoleType()
 	 * @see #getSubscription()
 	 * @generated
 	 */
-	EReference getSubscription_OriginatedFromRoleTypeId();
+	EReference getSubscription_OriginatedFromRoleType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getParty()
 	 * @see #getSubscription()
 	 * @generated
 	 */
-	EReference getSubscription_PartyId();
+	EReference getSubscription_Party();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getPartyNeedId <em>Party Need Id</em>}'.
@@ -1798,26 +1798,26 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getSubscription_PartyNeedId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getProductCategoryId <em>Product Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getProductCategoryId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getProduct()
 	 * @see #getSubscription()
 	 * @generated
 	 */
-	EReference getSubscription_ProductCategoryId();
+	EReference getSubscription_Product();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getProductCategory <em>Product Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getProductId()
+	 * @return the meta object for the reference '<em>Product Category</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getProductCategory()
 	 * @see #getSubscription()
 	 * @generated
 	 */
-	EReference getSubscription_ProductId();
+	EReference getSubscription_ProductCategory();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getPurchaseFromDate <em>Purchase From Date</em>}'.
@@ -1842,15 +1842,15 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getSubscription_PurchaseThruDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getRoleTypeId <em>Role Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getRoleType <em>Role Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Role Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getRoleTypeId()
+	 * @return the meta object for the reference '<em>Role Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getRoleType()
 	 * @see #getSubscription()
 	 * @generated
 	 */
-	EReference getSubscription_RoleTypeId();
+	EReference getSubscription_RoleType();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getSubscriptionAttributes <em>Subscription Attributes</em>}'.
@@ -1875,26 +1875,26 @@ public interface SubscriptionPackage extends EPackage {
 	EReference getSubscription_SubscriptionCommEvents();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getSubscriptionResourceId <em>Subscription Resource Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getSubscriptionResource <em>Subscription Resource</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Subscription Resource Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getSubscriptionResourceId()
+	 * @return the meta object for the reference '<em>Subscription Resource</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getSubscriptionResource()
 	 * @see #getSubscription()
 	 * @generated
 	 */
-	EReference getSubscription_SubscriptionResourceId();
+	EReference getSubscription_SubscriptionResource();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getSubscriptionTypeId <em>Subscription Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getSubscriptionType <em>Subscription Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Subscription Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getSubscriptionTypeId()
+	 * @return the meta object for the reference '<em>Subscription Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getSubscriptionType()
 	 * @see #getSubscription()
 	 * @generated
 	 */
-	EReference getSubscription_SubscriptionTypeId();
+	EReference getSubscription_SubscriptionType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getThruDate <em>Thru Date</em>}'.
@@ -1930,15 +1930,15 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getSubscription_UseTime();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getUseTimeUomId <em>Use Time Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getUseTimeUom <em>Use Time Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Use Time Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getUseTimeUomId()
+	 * @return the meta object for the reference '<em>Use Time Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getUseTimeUom()
 	 * @see #getSubscription()
 	 * @generated
 	 */
-	EReference getSubscription_UseTimeUomId();
+	EReference getSubscription_UseTimeUom();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionActivity <em>Activity</em>}'.
@@ -2005,15 +2005,15 @@ public interface SubscriptionPackage extends EPackage {
 	EClass getSubscriptionAttribute();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionAttribute#getSubscriptionId <em>Subscription Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionAttribute#getSubscription <em>Subscription</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Subscription Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionAttribute#getSubscriptionId()
+	 * @return the meta object for the reference '<em>Subscription</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionAttribute#getSubscription()
 	 * @see #getSubscriptionAttribute()
 	 * @generated
 	 */
-	EReference getSubscriptionAttribute_SubscriptionId();
+	EReference getSubscriptionAttribute_Subscription();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionAttribute#getAttrName <em>Attr Name</em>}'.
@@ -2059,26 +2059,26 @@ public interface SubscriptionPackage extends EPackage {
 	EClass getSubscriptionCommEvent();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionCommEvent#getSubscriptionId <em>Subscription Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionCommEvent#getCommunicationEvent <em>Communication Event</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Subscription Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionCommEvent#getSubscriptionId()
+	 * @return the meta object for the reference '<em>Communication Event</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionCommEvent#getCommunicationEvent()
 	 * @see #getSubscriptionCommEvent()
 	 * @generated
 	 */
-	EReference getSubscriptionCommEvent_SubscriptionId();
+	EReference getSubscriptionCommEvent_CommunicationEvent();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionCommEvent#getCommunicationEventId <em>Communication Event Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionCommEvent#getSubscription <em>Subscription</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Communication Event Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionCommEvent#getCommunicationEventId()
+	 * @return the meta object for the reference '<em>Subscription</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionCommEvent#getSubscription()
 	 * @see #getSubscriptionCommEvent()
 	 * @generated
 	 */
-	EReference getSubscriptionCommEvent_CommunicationEventId();
+	EReference getSubscriptionCommEvent_Subscription();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionFulfillmentPiece <em>Fulfillment Piece</em>}'.
@@ -2091,26 +2091,26 @@ public interface SubscriptionPackage extends EPackage {
 	EClass getSubscriptionFulfillmentPiece();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionFulfillmentPiece#getSubscriptionActivityId <em>Subscription Activity Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionFulfillmentPiece#getSubscription <em>Subscription</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Subscription Activity Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionFulfillmentPiece#getSubscriptionActivityId()
+	 * @return the meta object for the reference '<em>Subscription</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionFulfillmentPiece#getSubscription()
 	 * @see #getSubscriptionFulfillmentPiece()
 	 * @generated
 	 */
-	EReference getSubscriptionFulfillmentPiece_SubscriptionActivityId();
+	EReference getSubscriptionFulfillmentPiece_Subscription();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionFulfillmentPiece#getSubscriptionId <em>Subscription Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionFulfillmentPiece#getSubscriptionActivity <em>Subscription Activity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Subscription Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionFulfillmentPiece#getSubscriptionId()
+	 * @return the meta object for the reference '<em>Subscription Activity</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionFulfillmentPiece#getSubscriptionActivity()
 	 * @see #getSubscriptionFulfillmentPiece()
 	 * @generated
 	 */
-	EReference getSubscriptionFulfillmentPiece_SubscriptionId();
+	EReference getSubscriptionFulfillmentPiece_SubscriptionActivity();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionResource <em>Resource</em>}'.
@@ -2134,15 +2134,15 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getSubscriptionResource_SubscriptionResourceId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionResource#getContentId <em>Content Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionResource#getContent <em>Content</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Content Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionResource#getContentId()
+	 * @return the meta object for the reference '<em>Content</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionResource#getContent()
 	 * @see #getSubscriptionResource()
 	 * @generated
 	 */
-	EReference getSubscriptionResource_ContentId();
+	EReference getSubscriptionResource_Content();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionResource#getDescription <em>Description</em>}'.
@@ -2156,15 +2156,15 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getSubscriptionResource_Description();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionResource#getParentResourceId <em>Parent Resource Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionResource#getParentResource <em>Parent Resource</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Resource Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionResource#getParentResourceId()
+	 * @return the meta object for the reference '<em>Parent Resource</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionResource#getParentResource()
 	 * @see #getSubscriptionResource()
 	 * @generated
 	 */
-	EReference getSubscriptionResource_ParentResourceId();
+	EReference getSubscriptionResource_ParentResource();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionResource#getServiceNameOnExpiry <em>Service Name On Expiry</em>}'.
@@ -2178,15 +2178,15 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getSubscriptionResource_ServiceNameOnExpiry();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionResource#getWebSiteId <em>Web Site Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionResource#getWebSite <em>Web Site</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Web Site Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionResource#getWebSiteId()
+	 * @return the meta object for the reference '<em>Web Site</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionResource#getWebSite()
 	 * @see #getSubscriptionResource()
 	 * @generated
 	 */
-	EReference getSubscriptionResource_WebSiteId();
+	EReference getSubscriptionResource_WebSite();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionType <em>Type</em>}'.
@@ -2232,15 +2232,15 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getSubscriptionType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionType#getParentType()
 	 * @see #getSubscriptionType()
 	 * @generated
 	 */
-	EReference getSubscriptionType_ParentTypeId();
+	EReference getSubscriptionType_ParentType();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionType#getSubscriptionTypeAttrs <em>Subscription Type Attrs</em>}'.
@@ -2264,15 +2264,15 @@ public interface SubscriptionPackage extends EPackage {
 	EClass getSubscriptionTypeAttr();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionTypeAttr#getSubscriptionTypeId <em>Subscription Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionTypeAttr#getSubscriptionType <em>Subscription Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Subscription Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionTypeAttr#getSubscriptionTypeId()
+	 * @return the meta object for the reference '<em>Subscription Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionTypeAttr#getSubscriptionType()
 	 * @see #getSubscriptionTypeAttr()
 	 * @generated
 	 */
-	EReference getSubscriptionTypeAttr_SubscriptionTypeId();
+	EReference getSubscriptionTypeAttr_SubscriptionType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionTypeAttr#getAttrName <em>Attr Name</em>}'.
@@ -2329,20 +2329,20 @@ public interface SubscriptionPackage extends EPackage {
 		EClass PRODUCT_SUBSCRIPTION_RESOURCE = eINSTANCE.getProductSubscriptionResource();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_SUBSCRIPTION_RESOURCE__PRODUCT_ID = eINSTANCE.getProductSubscriptionResource_ProductId();
+		EReference PRODUCT_SUBSCRIPTION_RESOURCE__PRODUCT = eINSTANCE.getProductSubscriptionResource_Product();
 
 		/**
-		 * The meta object literal for the '<em><b>Subscription Resource Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Subscription Resource</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_SUBSCRIPTION_RESOURCE__SUBSCRIPTION_RESOURCE_ID = eINSTANCE.getProductSubscriptionResource_SubscriptionResourceId();
+		EReference PRODUCT_SUBSCRIPTION_RESOURCE__SUBSCRIPTION_RESOURCE = eINSTANCE.getProductSubscriptionResource_SubscriptionResource();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -2369,12 +2369,12 @@ public interface SubscriptionPackage extends EPackage {
 		EAttribute PRODUCT_SUBSCRIPTION_RESOURCE__AVAILABLE_TIME = eINSTANCE.getProductSubscriptionResource_AvailableTime();
 
 		/**
-		 * The meta object literal for the '<em><b>Available Time Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Available Time Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_SUBSCRIPTION_RESOURCE__AVAILABLE_TIME_UOM_ID = eINSTANCE.getProductSubscriptionResource_AvailableTimeUomId();
+		EReference PRODUCT_SUBSCRIPTION_RESOURCE__AVAILABLE_TIME_UOM = eINSTANCE.getProductSubscriptionResource_AvailableTimeUom();
 
 		/**
 		 * The meta object literal for the '<em><b>Cancl Autm Ext Time</b></em>' attribute feature.
@@ -2385,12 +2385,12 @@ public interface SubscriptionPackage extends EPackage {
 		EAttribute PRODUCT_SUBSCRIPTION_RESOURCE__CANCL_AUTM_EXT_TIME = eINSTANCE.getProductSubscriptionResource_CanclAutmExtTime();
 
 		/**
-		 * The meta object literal for the '<em><b>Cancl Autm Ext Time Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Cancl Autm Ext Time Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_SUBSCRIPTION_RESOURCE__CANCL_AUTM_EXT_TIME_UOM_ID = eINSTANCE.getProductSubscriptionResource_CanclAutmExtTimeUomId();
+		EReference PRODUCT_SUBSCRIPTION_RESOURCE__CANCL_AUTM_EXT_TIME_UOM = eINSTANCE.getProductSubscriptionResource_CanclAutmExtTimeUom();
 
 		/**
 		 * The meta object literal for the '<em><b>Grace Period On Expiry</b></em>' attribute feature.
@@ -2401,12 +2401,12 @@ public interface SubscriptionPackage extends EPackage {
 		EAttribute PRODUCT_SUBSCRIPTION_RESOURCE__GRACE_PERIOD_ON_EXPIRY = eINSTANCE.getProductSubscriptionResource_GracePeriodOnExpiry();
 
 		/**
-		 * The meta object literal for the '<em><b>Grace Period On Expiry Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Grace Period On Expiry Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_SUBSCRIPTION_RESOURCE__GRACE_PERIOD_ON_EXPIRY_UOM_ID = eINSTANCE.getProductSubscriptionResource_GracePeriodOnExpiryUomId();
+		EReference PRODUCT_SUBSCRIPTION_RESOURCE__GRACE_PERIOD_ON_EXPIRY_UOM = eINSTANCE.getProductSubscriptionResource_GracePeriodOnExpiryUom();
 
 		/**
 		 * The meta object literal for the '<em><b>Max Life Time</b></em>' attribute feature.
@@ -2417,12 +2417,12 @@ public interface SubscriptionPackage extends EPackage {
 		EAttribute PRODUCT_SUBSCRIPTION_RESOURCE__MAX_LIFE_TIME = eINSTANCE.getProductSubscriptionResource_MaxLifeTime();
 
 		/**
-		 * The meta object literal for the '<em><b>Max Life Time Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Max Life Time Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_SUBSCRIPTION_RESOURCE__MAX_LIFE_TIME_UOM_ID = eINSTANCE.getProductSubscriptionResource_MaxLifeTimeUomId();
+		EReference PRODUCT_SUBSCRIPTION_RESOURCE__MAX_LIFE_TIME_UOM = eINSTANCE.getProductSubscriptionResource_MaxLifeTimeUom();
 
 		/**
 		 * The meta object literal for the '<em><b>Purchase From Date</b></em>' attribute feature.
@@ -2457,12 +2457,12 @@ public interface SubscriptionPackage extends EPackage {
 		EAttribute PRODUCT_SUBSCRIPTION_RESOURCE__USE_COUNT_LIMIT = eINSTANCE.getProductSubscriptionResource_UseCountLimit();
 
 		/**
-		 * The meta object literal for the '<em><b>Use Role Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Use Role Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_SUBSCRIPTION_RESOURCE__USE_ROLE_TYPE_ID = eINSTANCE.getProductSubscriptionResource_UseRoleTypeId();
+		EReference PRODUCT_SUBSCRIPTION_RESOURCE__USE_ROLE_TYPE = eINSTANCE.getProductSubscriptionResource_UseRoleType();
 
 		/**
 		 * The meta object literal for the '<em><b>Use Time</b></em>' attribute feature.
@@ -2473,12 +2473,12 @@ public interface SubscriptionPackage extends EPackage {
 		EAttribute PRODUCT_SUBSCRIPTION_RESOURCE__USE_TIME = eINSTANCE.getProductSubscriptionResource_UseTime();
 
 		/**
-		 * The meta object literal for the '<em><b>Use Time Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Use Time Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_SUBSCRIPTION_RESOURCE__USE_TIME_UOM_ID = eINSTANCE.getProductSubscriptionResource_UseTimeUomId();
+		EReference PRODUCT_SUBSCRIPTION_RESOURCE__USE_TIME_UOM = eINSTANCE.getProductSubscriptionResource_UseTimeUom();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionImpl <em>Subscription</em>}' class.
@@ -2515,12 +2515,12 @@ public interface SubscriptionPackage extends EPackage {
 		EAttribute SUBSCRIPTION__AVAILABLE_TIME = eINSTANCE.getSubscription_AvailableTime();
 
 		/**
-		 * The meta object literal for the '<em><b>Available Time Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Available Time Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION__AVAILABLE_TIME_UOM_ID = eINSTANCE.getSubscription_AvailableTimeUomId();
+		EReference SUBSCRIPTION__AVAILABLE_TIME_UOM = eINSTANCE.getSubscription_AvailableTimeUom();
 
 		/**
 		 * The meta object literal for the '<em><b>Cancl Autm Ext Time</b></em>' attribute feature.
@@ -2531,12 +2531,12 @@ public interface SubscriptionPackage extends EPackage {
 		EAttribute SUBSCRIPTION__CANCL_AUTM_EXT_TIME = eINSTANCE.getSubscription_CanclAutmExtTime();
 
 		/**
-		 * The meta object literal for the '<em><b>Cancl Autm Ext Time Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Cancl Autm Ext Time Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION__CANCL_AUTM_EXT_TIME_UOM_ID = eINSTANCE.getSubscription_CanclAutmExtTimeUomId();
+		EReference SUBSCRIPTION__CANCL_AUTM_EXT_TIME_UOM = eINSTANCE.getSubscription_CanclAutmExtTimeUom();
 
 		/**
 		 * The meta object literal for the '<em><b>Communication Event Id</b></em>' attribute feature.
@@ -2547,12 +2547,12 @@ public interface SubscriptionPackage extends EPackage {
 		EAttribute SUBSCRIPTION__COMMUNICATION_EVENT_ID = eINSTANCE.getSubscription_CommunicationEventId();
 
 		/**
-		 * The meta object literal for the '<em><b>Contact Mech Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Contact Mech</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION__CONTACT_MECH_ID = eINSTANCE.getSubscription_ContactMechId();
+		EReference SUBSCRIPTION__CONTACT_MECH = eINSTANCE.getSubscription_ContactMech();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
@@ -2595,20 +2595,20 @@ public interface SubscriptionPackage extends EPackage {
 		EAttribute SUBSCRIPTION__GRACE_PERIOD_ON_EXPIRY = eINSTANCE.getSubscription_GracePeriodOnExpiry();
 
 		/**
-		 * The meta object literal for the '<em><b>Grace Period On Expiry Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Grace Period On Expiry Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION__GRACE_PERIOD_ON_EXPIRY_UOM_ID = eINSTANCE.getSubscription_GracePeriodOnExpiryUomId();
+		EReference SUBSCRIPTION__GRACE_PERIOD_ON_EXPIRY_UOM = eINSTANCE.getSubscription_GracePeriodOnExpiryUom();
 
 		/**
-		 * The meta object literal for the '<em><b>Inventory Item Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Inventory Item</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION__INVENTORY_ITEM_ID = eINSTANCE.getSubscription_InventoryItemId();
+		EReference SUBSCRIPTION__INVENTORY_ITEM = eINSTANCE.getSubscription_InventoryItem();
 
 		/**
 		 * The meta object literal for the '<em><b>Max Life Time</b></em>' attribute feature.
@@ -2619,28 +2619,28 @@ public interface SubscriptionPackage extends EPackage {
 		EAttribute SUBSCRIPTION__MAX_LIFE_TIME = eINSTANCE.getSubscription_MaxLifeTime();
 
 		/**
-		 * The meta object literal for the '<em><b>Max Life Time Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Max Life Time Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION__MAX_LIFE_TIME_UOM_ID = eINSTANCE.getSubscription_MaxLifeTimeUomId();
+		EReference SUBSCRIPTION__MAX_LIFE_TIME_UOM = eINSTANCE.getSubscription_MaxLifeTimeUom();
 
 		/**
-		 * The meta object literal for the '<em><b>Need Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Need Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION__NEED_TYPE_ID = eINSTANCE.getSubscription_NeedTypeId();
+		EReference SUBSCRIPTION__NEED_TYPE = eINSTANCE.getSubscription_NeedType();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION__ORDER_ID = eINSTANCE.getSubscription_OrderId();
+		EReference SUBSCRIPTION__ORDER = eINSTANCE.getSubscription_Order();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -2651,28 +2651,28 @@ public interface SubscriptionPackage extends EPackage {
 		EAttribute SUBSCRIPTION__ORDER_ITEM_SEQ_ID = eINSTANCE.getSubscription_OrderItemSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>Originated From Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Originated From Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION__ORIGINATED_FROM_PARTY_ID = eINSTANCE.getSubscription_OriginatedFromPartyId();
+		EReference SUBSCRIPTION__ORIGINATED_FROM_PARTY = eINSTANCE.getSubscription_OriginatedFromParty();
 
 		/**
-		 * The meta object literal for the '<em><b>Originated From Role Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Originated From Role Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION__ORIGINATED_FROM_ROLE_TYPE_ID = eINSTANCE.getSubscription_OriginatedFromRoleTypeId();
+		EReference SUBSCRIPTION__ORIGINATED_FROM_ROLE_TYPE = eINSTANCE.getSubscription_OriginatedFromRoleType();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION__PARTY_ID = eINSTANCE.getSubscription_PartyId();
+		EReference SUBSCRIPTION__PARTY = eINSTANCE.getSubscription_Party();
 
 		/**
 		 * The meta object literal for the '<em><b>Party Need Id</b></em>' attribute feature.
@@ -2683,20 +2683,20 @@ public interface SubscriptionPackage extends EPackage {
 		EAttribute SUBSCRIPTION__PARTY_NEED_ID = eINSTANCE.getSubscription_PartyNeedId();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION__PRODUCT_CATEGORY_ID = eINSTANCE.getSubscription_ProductCategoryId();
+		EReference SUBSCRIPTION__PRODUCT = eINSTANCE.getSubscription_Product();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION__PRODUCT_ID = eINSTANCE.getSubscription_ProductId();
+		EReference SUBSCRIPTION__PRODUCT_CATEGORY = eINSTANCE.getSubscription_ProductCategory();
 
 		/**
 		 * The meta object literal for the '<em><b>Purchase From Date</b></em>' attribute feature.
@@ -2715,12 +2715,12 @@ public interface SubscriptionPackage extends EPackage {
 		EAttribute SUBSCRIPTION__PURCHASE_THRU_DATE = eINSTANCE.getSubscription_PurchaseThruDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Role Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Role Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION__ROLE_TYPE_ID = eINSTANCE.getSubscription_RoleTypeId();
+		EReference SUBSCRIPTION__ROLE_TYPE = eINSTANCE.getSubscription_RoleType();
 
 		/**
 		 * The meta object literal for the '<em><b>Subscription Attributes</b></em>' reference list feature.
@@ -2739,20 +2739,20 @@ public interface SubscriptionPackage extends EPackage {
 		EReference SUBSCRIPTION__SUBSCRIPTION_COMM_EVENTS = eINSTANCE.getSubscription_SubscriptionCommEvents();
 
 		/**
-		 * The meta object literal for the '<em><b>Subscription Resource Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Subscription Resource</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION__SUBSCRIPTION_RESOURCE_ID = eINSTANCE.getSubscription_SubscriptionResourceId();
+		EReference SUBSCRIPTION__SUBSCRIPTION_RESOURCE = eINSTANCE.getSubscription_SubscriptionResource();
 
 		/**
-		 * The meta object literal for the '<em><b>Subscription Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Subscription Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION__SUBSCRIPTION_TYPE_ID = eINSTANCE.getSubscription_SubscriptionTypeId();
+		EReference SUBSCRIPTION__SUBSCRIPTION_TYPE = eINSTANCE.getSubscription_SubscriptionType();
 
 		/**
 		 * The meta object literal for the '<em><b>Thru Date</b></em>' attribute feature.
@@ -2779,12 +2779,12 @@ public interface SubscriptionPackage extends EPackage {
 		EAttribute SUBSCRIPTION__USE_TIME = eINSTANCE.getSubscription_UseTime();
 
 		/**
-		 * The meta object literal for the '<em><b>Use Time Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Use Time Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION__USE_TIME_UOM_ID = eINSTANCE.getSubscription_UseTimeUomId();
+		EReference SUBSCRIPTION__USE_TIME_UOM = eINSTANCE.getSubscription_UseTimeUom();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionActivityImpl <em>Activity</em>}' class.
@@ -2839,12 +2839,12 @@ public interface SubscriptionPackage extends EPackage {
 		EClass SUBSCRIPTION_ATTRIBUTE = eINSTANCE.getSubscriptionAttribute();
 
 		/**
-		 * The meta object literal for the '<em><b>Subscription Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Subscription</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION_ATTRIBUTE__SUBSCRIPTION_ID = eINSTANCE.getSubscriptionAttribute_SubscriptionId();
+		EReference SUBSCRIPTION_ATTRIBUTE__SUBSCRIPTION = eINSTANCE.getSubscriptionAttribute_Subscription();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -2881,20 +2881,20 @@ public interface SubscriptionPackage extends EPackage {
 		EClass SUBSCRIPTION_COMM_EVENT = eINSTANCE.getSubscriptionCommEvent();
 
 		/**
-		 * The meta object literal for the '<em><b>Subscription Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Communication Event</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION_COMM_EVENT__SUBSCRIPTION_ID = eINSTANCE.getSubscriptionCommEvent_SubscriptionId();
+		EReference SUBSCRIPTION_COMM_EVENT__COMMUNICATION_EVENT = eINSTANCE.getSubscriptionCommEvent_CommunicationEvent();
 
 		/**
-		 * The meta object literal for the '<em><b>Communication Event Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Subscription</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION_COMM_EVENT__COMMUNICATION_EVENT_ID = eINSTANCE.getSubscriptionCommEvent_CommunicationEventId();
+		EReference SUBSCRIPTION_COMM_EVENT__SUBSCRIPTION = eINSTANCE.getSubscriptionCommEvent_Subscription();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionFulfillmentPieceImpl <em>Fulfillment Piece</em>}' class.
@@ -2907,20 +2907,20 @@ public interface SubscriptionPackage extends EPackage {
 		EClass SUBSCRIPTION_FULFILLMENT_PIECE = eINSTANCE.getSubscriptionFulfillmentPiece();
 
 		/**
-		 * The meta object literal for the '<em><b>Subscription Activity Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Subscription</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION_ACTIVITY_ID = eINSTANCE.getSubscriptionFulfillmentPiece_SubscriptionActivityId();
+		EReference SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION = eINSTANCE.getSubscriptionFulfillmentPiece_Subscription();
 
 		/**
-		 * The meta object literal for the '<em><b>Subscription Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Subscription Activity</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION_ID = eINSTANCE.getSubscriptionFulfillmentPiece_SubscriptionId();
+		EReference SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION_ACTIVITY = eINSTANCE.getSubscriptionFulfillmentPiece_SubscriptionActivity();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionResourceImpl <em>Resource</em>}' class.
@@ -2941,12 +2941,12 @@ public interface SubscriptionPackage extends EPackage {
 		EAttribute SUBSCRIPTION_RESOURCE__SUBSCRIPTION_RESOURCE_ID = eINSTANCE.getSubscriptionResource_SubscriptionResourceId();
 
 		/**
-		 * The meta object literal for the '<em><b>Content Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Content</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION_RESOURCE__CONTENT_ID = eINSTANCE.getSubscriptionResource_ContentId();
+		EReference SUBSCRIPTION_RESOURCE__CONTENT = eINSTANCE.getSubscriptionResource_Content();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
@@ -2957,12 +2957,12 @@ public interface SubscriptionPackage extends EPackage {
 		EAttribute SUBSCRIPTION_RESOURCE__DESCRIPTION = eINSTANCE.getSubscriptionResource_Description();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Resource Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Resource</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION_RESOURCE__PARENT_RESOURCE_ID = eINSTANCE.getSubscriptionResource_ParentResourceId();
+		EReference SUBSCRIPTION_RESOURCE__PARENT_RESOURCE = eINSTANCE.getSubscriptionResource_ParentResource();
 
 		/**
 		 * The meta object literal for the '<em><b>Service Name On Expiry</b></em>' attribute feature.
@@ -2973,12 +2973,12 @@ public interface SubscriptionPackage extends EPackage {
 		EAttribute SUBSCRIPTION_RESOURCE__SERVICE_NAME_ON_EXPIRY = eINSTANCE.getSubscriptionResource_ServiceNameOnExpiry();
 
 		/**
-		 * The meta object literal for the '<em><b>Web Site Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Web Site</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION_RESOURCE__WEB_SITE_ID = eINSTANCE.getSubscriptionResource_WebSiteId();
+		EReference SUBSCRIPTION_RESOURCE__WEB_SITE = eINSTANCE.getSubscriptionResource_WebSite();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionTypeImpl <em>Type</em>}' class.
@@ -3015,12 +3015,12 @@ public interface SubscriptionPackage extends EPackage {
 		EAttribute SUBSCRIPTION_TYPE__HAS_TABLE = eINSTANCE.getSubscriptionType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION_TYPE__PARENT_TYPE_ID = eINSTANCE.getSubscriptionType_ParentTypeId();
+		EReference SUBSCRIPTION_TYPE__PARENT_TYPE = eINSTANCE.getSubscriptionType_ParentType();
 
 		/**
 		 * The meta object literal for the '<em><b>Subscription Type Attrs</b></em>' reference list feature.
@@ -3041,12 +3041,12 @@ public interface SubscriptionPackage extends EPackage {
 		EClass SUBSCRIPTION_TYPE_ATTR = eINSTANCE.getSubscriptionTypeAttr();
 
 		/**
-		 * The meta object literal for the '<em><b>Subscription Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Subscription Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SUBSCRIPTION_TYPE_ATTR__SUBSCRIPTION_TYPE_ID = eINSTANCE.getSubscriptionTypeAttr_SubscriptionTypeId();
+		EReference SUBSCRIPTION_TYPE_ATTR__SUBSCRIPTION_TYPE = eINSTANCE.getSubscriptionTypeAttr_SubscriptionType();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.

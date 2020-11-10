@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureDataResource#getDataResourceId <em>Data Resource Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureDataResource#getProductFeatureId <em>Product Feature Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureDataResource#getDataResource <em>Data Resource</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureDataResource#getProductFeature <em>Product Feature</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureDataResource()
@@ -30,57 +30,49 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface ProductFeatureDataResource extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Data Resource Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Data Resource</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Data Resource Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Data Resource Id</em>' reference.
-	 * @see #setDataResourceId(DataResource)
-	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureDataResource_DataResourceId()
+	 * @return the value of the '<em>Data Resource</em>' reference.
+	 * @see #setDataResource(DataResource)
+	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureDataResource_DataResource()
 	 * @model keys="dataResourceId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	DataResource getDataResourceId();
+	DataResource getDataResource();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureDataResource#getDataResourceId <em>Data Resource Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureDataResource#getDataResource <em>Data Resource</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Data Resource Id</em>' reference.
-	 * @see #getDataResourceId()
+	 * @param value the new value of the '<em>Data Resource</em>' reference.
+	 * @see #getDataResource()
 	 * @generated
 	 */
-	void setDataResourceId(DataResource value);
+	void setDataResource(DataResource value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Feature Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Feature</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Feature Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Feature Id</em>' reference.
-	 * @see #setProductFeatureId(ProductFeature)
-	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureDataResource_ProductFeatureId()
+	 * @return the value of the '<em>Product Feature</em>' reference.
+	 * @see #setProductFeature(ProductFeature)
+	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureDataResource_ProductFeature()
 	 * @model keys="productFeatureId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ProductFeature getProductFeatureId();
+	ProductFeature getProductFeature();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureDataResource#getProductFeatureId <em>Product Feature Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureDataResource#getProductFeature <em>Product Feature</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Feature Id</em>' reference.
-	 * @see #getProductFeatureId()
+	 * @param value the new value of the '<em>Product Feature</em>' reference.
+	 * @see #getProductFeature()
 	 * @generated
 	 */
-	void setProductFeatureId(ProductFeature value);
+	void setProductFeature(ProductFeature value);
 
 } // ProductFeatureDataResource

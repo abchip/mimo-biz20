@@ -21,9 +21,9 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGlAccountTypeMap#getPaymentTypeId <em>Payment Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGlAccountTypeMap#getOrganizationPartyId <em>Organization Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGlAccountTypeMap#getGlAccountTypeId <em>Gl Account Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGlAccountTypeMap#getPaymentType <em>Payment Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGlAccountTypeMap#getOrganizationParty <em>Organization Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGlAccountTypeMap#getGlAccountType <em>Gl Account Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGlAccountTypeMap()
@@ -32,83 +32,71 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface PaymentGlAccountTypeMap extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Organization Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Organization Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Organization Party Id</em>' reference.
-	 * @see #setOrganizationPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGlAccountTypeMap_OrganizationPartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getOrganizationPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGlAccountTypeMap#getOrganizationPartyId <em>Organization Party Id</em>}' reference.
+	 * Returns the value of the '<em><b>Payment Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Organization Party Id</em>' reference.
-	 * @see #getOrganizationPartyId()
-	 * @generated
-	 */
-	void setOrganizationPartyId(Party value);
-
-	/**
-	 * Returns the value of the '<em><b>Payment Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Payment Type Id</em>' reference.
-	 * @see #setPaymentTypeId(PaymentType)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGlAccountTypeMap_PaymentTypeId()
+	 * @return the value of the '<em>Payment Type</em>' reference.
+	 * @see #setPaymentType(PaymentType)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGlAccountTypeMap_PaymentType()
 	 * @model keys="paymentTypeId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	PaymentType getPaymentTypeId();
+	PaymentType getPaymentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGlAccountTypeMap#getPaymentTypeId <em>Payment Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGlAccountTypeMap#getPaymentType <em>Payment Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Payment Type Id</em>' reference.
-	 * @see #getPaymentTypeId()
+	 * @param value the new value of the '<em>Payment Type</em>' reference.
+	 * @see #getPaymentType()
 	 * @generated
 	 */
-	void setPaymentTypeId(PaymentType value);
+	void setPaymentType(PaymentType value);
 
 	/**
-	 * Returns the value of the '<em><b>Gl Account Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Organization Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gl Account Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Account Type Id</em>' reference.
-	 * @see #setGlAccountTypeId(GlAccountType)
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGlAccountTypeMap_GlAccountTypeId()
+	 * @return the value of the '<em>Organization Party</em>' reference.
+	 * @see #setOrganizationParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGlAccountTypeMap_OrganizationParty()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getOrganizationParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGlAccountTypeMap#getOrganizationParty <em>Organization Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Organization Party</em>' reference.
+	 * @see #getOrganizationParty()
+	 * @generated
+	 */
+	void setOrganizationParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Gl Account Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Gl Account Type</em>' reference.
+	 * @see #setGlAccountType(GlAccountType)
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGlAccountTypeMap_GlAccountType()
 	 * @model keys="glAccountTypeId"
 	 * @generated
 	 */
-	GlAccountType getGlAccountTypeId();
+	GlAccountType getGlAccountType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGlAccountTypeMap#getGlAccountTypeId <em>Gl Account Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGlAccountTypeMap#getGlAccountType <em>Gl Account Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Gl Account Type Id</em>' reference.
-	 * @see #getGlAccountTypeId()
+	 * @param value the new value of the '<em>Gl Account Type</em>' reference.
+	 * @see #getGlAccountType()
 	 * @generated
 	 */
-	void setGlAccountTypeId(GlAccountType value);
+	void setGlAccountType(GlAccountType value);
 
 } // PaymentGlAccountTypeMap

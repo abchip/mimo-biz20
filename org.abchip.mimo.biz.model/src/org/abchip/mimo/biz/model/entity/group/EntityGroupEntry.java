@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.entity.group.EntityGroupEntry#getEntityGroupId <em>Entity Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.group.EntityGroupEntry#getEntityGroup <em>Entity Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.group.EntityGroupEntry#getEntityOrPackage <em>Entity Or Package</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.group.EntityGroupEntry#getApplEnumId <em>Appl Enum Id</em>}</li>
  * </ul>
@@ -29,6 +29,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface EntityGroupEntry extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Entity Group</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Entity Group</em>' reference.
+	 * @see #setEntityGroup(EntityGroup)
+	 * @see org.abchip.mimo.biz.model.entity.group.GroupPackage#getEntityGroupEntry_EntityGroup()
+	 * @model keys="entityGroupId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	EntityGroup getEntityGroup();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.group.EntityGroupEntry#getEntityGroup <em>Entity Group</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Entity Group</em>' reference.
+	 * @see #getEntityGroup()
+	 * @generated
+	 */
+	void setEntityGroup(EntityGroup value);
+
 	/**
 	 * Returns the value of the '<em><b>Appl Enum Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -54,33 +77,6 @@ public interface EntityGroupEntry extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setApplEnumId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Entity Group Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Entity Group Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Entity Group Id</em>' reference.
-	 * @see #setEntityGroupId(EntityGroup)
-	 * @see org.abchip.mimo.biz.model.entity.group.GroupPackage#getEntityGroupEntry_EntityGroupId()
-	 * @model keys="entityGroupId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	EntityGroup getEntityGroupId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.group.EntityGroupEntry#getEntityGroupId <em>Entity Group Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Entity Group Id</em>' reference.
-	 * @see #getEntityGroupId()
-	 * @generated
-	 */
-	void setEntityGroupId(EntityGroup value);
 
 	/**
 	 * Returns the value of the '<em><b>Entity Or Package</b></em>' attribute.

@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentImpl#getPaymentId <em>Payment Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentImpl#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentImpl#getPaymentContentTypeId <em>Payment Content Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentImpl#getPayment <em>Payment</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentImpl#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentImpl#getPaymentContentType <em>Payment Content Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -155,8 +155,8 @@ public class PaymentContentImpl extends EntityTypedImpl<PaymentContentType> impl
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(PaymentPackage.Literals.PAYMENT_CONTENT__CONTENT_ID, true);
+	public Payment getPayment() {
+		return (Payment)eGet(PaymentPackage.Literals.PAYMENT_CONTENT__PAYMENT, true);
 	}
 
 	/**
@@ -165,8 +165,48 @@ public class PaymentContentImpl extends EntityTypedImpl<PaymentContentType> impl
 	 * @generated
 	 */
 	@Override
-	public void setContentId(Content newContentId) {
-		eSet(PaymentPackage.Literals.PAYMENT_CONTENT__CONTENT_ID, newContentId);
+	public void setPayment(Payment newPayment) {
+		eSet(PaymentPackage.Literals.PAYMENT_CONTENT__PAYMENT, newPayment);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Content getContent() {
+		return (Content)eGet(PaymentPackage.Literals.PAYMENT_CONTENT__CONTENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContent(Content newContent) {
+		eSet(PaymentPackage.Literals.PAYMENT_CONTENT__CONTENT, newContent);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PaymentContentType getPaymentContentType() {
+		return (PaymentContentType)eGet(PaymentPackage.Literals.PAYMENT_CONTENT__PAYMENT_CONTENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPaymentContentType(PaymentContentType newPaymentContentType) {
+		eSet(PaymentPackage.Literals.PAYMENT_CONTENT__PAYMENT_CONTENT_TYPE, newPaymentContentType);
 	}
 
 	/**
@@ -245,46 +285,6 @@ public class PaymentContentImpl extends EntityTypedImpl<PaymentContentType> impl
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Payment getPaymentId() {
-		return (Payment)eGet(PaymentPackage.Literals.PAYMENT_CONTENT__PAYMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaymentId(Payment newPaymentId) {
-		eSet(PaymentPackage.Literals.PAYMENT_CONTENT__PAYMENT_ID, newPaymentId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PaymentContentType getPaymentContentTypeId() {
-		return (PaymentContentType)eGet(PaymentPackage.Literals.PAYMENT_CONTENT__PAYMENT_CONTENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaymentContentTypeId(PaymentContentType newPaymentContentTypeId) {
-		eSet(PaymentPackage.Literals.PAYMENT_CONTENT__PAYMENT_CONTENT_TYPE_ID, newPaymentContentTypeId);
 	}
 
 } //PaymentContentImpl

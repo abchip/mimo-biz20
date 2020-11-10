@@ -20,9 +20,9 @@ import org.abchip.mimo.entity.EntityTyped;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getAccommodationMapId <em>Accommodation Map Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getAccommodationClassId <em>Accommodation Class Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getAccommodationMapTypeId <em>Accommodation Map Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getFixedAssetId <em>Fixed Asset Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getAccommodationClass <em>Accommodation Class</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getAccommodationMapType <em>Accommodation Map Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getFixedAsset <em>Fixed Asset</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getNumberOfSpaces <em>Number Of Spaces</em>}</li>
  * </ul>
  *
@@ -59,6 +59,72 @@ public interface AccommodationMap extends EntityTyped<AccommodationMapType>, Ent
 	void setAccommodationMapId(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Accommodation Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Accommodation Class</em>' reference.
+	 * @see #setAccommodationClass(AccommodationClass)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getAccommodationMap_AccommodationClass()
+	 * @model keys="accommodationClassId"
+	 * @generated
+	 */
+	AccommodationClass getAccommodationClass();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getAccommodationClass <em>Accommodation Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Accommodation Class</em>' reference.
+	 * @see #getAccommodationClass()
+	 * @generated
+	 */
+	void setAccommodationClass(AccommodationClass value);
+
+	/**
+	 * Returns the value of the '<em><b>Accommodation Map Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Accommodation Map Type</em>' reference.
+	 * @see #setAccommodationMapType(AccommodationMapType)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getAccommodationMap_AccommodationMapType()
+	 * @model keys="accommodationMapTypeId"
+	 * @generated
+	 */
+	AccommodationMapType getAccommodationMapType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getAccommodationMapType <em>Accommodation Map Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Accommodation Map Type</em>' reference.
+	 * @see #getAccommodationMapType()
+	 * @generated
+	 */
+	void setAccommodationMapType(AccommodationMapType value);
+
+	/**
+	 * Returns the value of the '<em><b>Fixed Asset</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fixed Asset</em>' reference.
+	 * @see #setFixedAsset(FixedAsset)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getAccommodationMap_FixedAsset()
+	 * @model keys="fixedAssetId"
+	 * @generated
+	 */
+	FixedAsset getFixedAsset();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getFixedAsset <em>Fixed Asset</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Fixed Asset</em>' reference.
+	 * @see #getFixedAsset()
+	 * @generated
+	 */
+	void setFixedAsset(FixedAsset value);
+
+	/**
 	 * Returns the value of the '<em><b>Number Of Spaces</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -83,83 +149,5 @@ public interface AccommodationMap extends EntityTyped<AccommodationMapType>, Ent
 	 * @generated
 	 */
 	void setNumberOfSpaces(long value);
-
-	/**
-	 * Returns the value of the '<em><b>Accommodation Class Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Accommodation Class Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Accommodation Class Id</em>' reference.
-	 * @see #setAccommodationClassId(AccommodationClass)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getAccommodationMap_AccommodationClassId()
-	 * @model keys="accommodationClassId"
-	 * @generated
-	 */
-	AccommodationClass getAccommodationClassId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getAccommodationClassId <em>Accommodation Class Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Accommodation Class Id</em>' reference.
-	 * @see #getAccommodationClassId()
-	 * @generated
-	 */
-	void setAccommodationClassId(AccommodationClass value);
-
-	/**
-	 * Returns the value of the '<em><b>Fixed Asset Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fixed Asset Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fixed Asset Id</em>' reference.
-	 * @see #setFixedAssetId(FixedAsset)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getAccommodationMap_FixedAssetId()
-	 * @model keys="fixedAssetId"
-	 * @generated
-	 */
-	FixedAsset getFixedAssetId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getFixedAssetId <em>Fixed Asset Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fixed Asset Id</em>' reference.
-	 * @see #getFixedAssetId()
-	 * @generated
-	 */
-	void setFixedAssetId(FixedAsset value);
-
-	/**
-	 * Returns the value of the '<em><b>Accommodation Map Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Accommodation Map Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Accommodation Map Type Id</em>' reference.
-	 * @see #setAccommodationMapTypeId(AccommodationMapType)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getAccommodationMap_AccommodationMapTypeId()
-	 * @model keys="accommodationMapTypeId"
-	 * @generated
-	 */
-	AccommodationMapType getAccommodationMapTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getAccommodationMapTypeId <em>Accommodation Map Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Accommodation Map Type Id</em>' reference.
-	 * @see #getAccommodationMapTypeId()
-	 * @generated
-	 */
-	void setAccommodationMapTypeId(AccommodationMapType value);
 
 } // AccommodationMap

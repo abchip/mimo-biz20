@@ -36,13 +36,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentApplicationImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentApplicationImpl#getPaymentApplicationId <em>Payment Application Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentApplicationImpl#getAmountApplied <em>Amount Applied</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentApplicationImpl#getBillingAccountId <em>Billing Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentApplicationImpl#getInvoiceId <em>Invoice Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentApplicationImpl#getBillingAccount <em>Billing Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentApplicationImpl#getInvoice <em>Invoice</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentApplicationImpl#getInvoiceItemSeqId <em>Invoice Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentApplicationImpl#getOverrideGlAccountId <em>Override Gl Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentApplicationImpl#getPaymentId <em>Payment Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentApplicationImpl#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentApplicationImpl#getToPaymentId <em>To Payment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentApplicationImpl#getOverrideGlAccount <em>Override Gl Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentApplicationImpl#getPayment <em>Payment</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentApplicationImpl#getTaxAuthGeo <em>Tax Auth Geo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentApplicationImpl#getToPayment <em>To Payment</em>}</li>
  * </ul>
  *
  * @generated
@@ -183,6 +183,46 @@ public class PaymentApplicationImpl extends EntityIdentifiableImpl implements Pa
 	 * @generated
 	 */
 	@Override
+	public BillingAccount getBillingAccount() {
+		return (BillingAccount)eGet(PaymentPackage.Literals.PAYMENT_APPLICATION__BILLING_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBillingAccount(BillingAccount newBillingAccount) {
+		eSet(PaymentPackage.Literals.PAYMENT_APPLICATION__BILLING_ACCOUNT, newBillingAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Invoice getInvoice() {
+		return (Invoice)eGet(PaymentPackage.Literals.PAYMENT_APPLICATION__INVOICE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setInvoice(Invoice newInvoice) {
+		eSet(PaymentPackage.Literals.PAYMENT_APPLICATION__INVOICE, newInvoice);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getInvoiceItemSeqId() {
 		return (String)eGet(PaymentPackage.Literals.PAYMENT_APPLICATION__INVOICE_ITEM_SEQ_ID, true);
 	}
@@ -203,6 +243,86 @@ public class PaymentApplicationImpl extends EntityIdentifiableImpl implements Pa
 	 * @generated
 	 */
 	@Override
+	public GlAccount getOverrideGlAccount() {
+		return (GlAccount)eGet(PaymentPackage.Literals.PAYMENT_APPLICATION__OVERRIDE_GL_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOverrideGlAccount(GlAccount newOverrideGlAccount) {
+		eSet(PaymentPackage.Literals.PAYMENT_APPLICATION__OVERRIDE_GL_ACCOUNT, newOverrideGlAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Payment getPayment() {
+		return (Payment)eGet(PaymentPackage.Literals.PAYMENT_APPLICATION__PAYMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPayment(Payment newPayment) {
+		eSet(PaymentPackage.Literals.PAYMENT_APPLICATION__PAYMENT, newPayment);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Geo getTaxAuthGeo() {
+		return (Geo)eGet(PaymentPackage.Literals.PAYMENT_APPLICATION__TAX_AUTH_GEO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTaxAuthGeo(Geo newTaxAuthGeo) {
+		eSet(PaymentPackage.Literals.PAYMENT_APPLICATION__TAX_AUTH_GEO, newTaxAuthGeo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Payment getToPayment() {
+		return (Payment)eGet(PaymentPackage.Literals.PAYMENT_APPLICATION__TO_PAYMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setToPayment(Payment newToPayment) {
+		eSet(PaymentPackage.Literals.PAYMENT_APPLICATION__TO_PAYMENT, newToPayment);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getPaymentApplicationId() {
 		return (String)eGet(PaymentPackage.Literals.PAYMENT_APPLICATION__PAYMENT_APPLICATION_ID, true);
 	}
@@ -215,106 +335,6 @@ public class PaymentApplicationImpl extends EntityIdentifiableImpl implements Pa
 	@Override
 	public void setPaymentApplicationId(String newPaymentApplicationId) {
 		eSet(PaymentPackage.Literals.PAYMENT_APPLICATION__PAYMENT_APPLICATION_ID, newPaymentApplicationId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Geo getTaxAuthGeoId() {
-		return (Geo)eGet(PaymentPackage.Literals.PAYMENT_APPLICATION__TAX_AUTH_GEO_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTaxAuthGeoId(Geo newTaxAuthGeoId) {
-		eSet(PaymentPackage.Literals.PAYMENT_APPLICATION__TAX_AUTH_GEO_ID, newTaxAuthGeoId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Payment getPaymentId() {
-		return (Payment)eGet(PaymentPackage.Literals.PAYMENT_APPLICATION__PAYMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaymentId(Payment newPaymentId) {
-		eSet(PaymentPackage.Literals.PAYMENT_APPLICATION__PAYMENT_ID, newPaymentId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Invoice getInvoiceId() {
-		return (Invoice)eGet(PaymentPackage.Literals.PAYMENT_APPLICATION__INVOICE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setInvoiceId(Invoice newInvoiceId) {
-		eSet(PaymentPackage.Literals.PAYMENT_APPLICATION__INVOICE_ID, newInvoiceId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public BillingAccount getBillingAccountId() {
-		return (BillingAccount)eGet(PaymentPackage.Literals.PAYMENT_APPLICATION__BILLING_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBillingAccountId(BillingAccount newBillingAccountId) {
-		eSet(PaymentPackage.Literals.PAYMENT_APPLICATION__BILLING_ACCOUNT_ID, newBillingAccountId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Payment getToPaymentId() {
-		return (Payment)eGet(PaymentPackage.Literals.PAYMENT_APPLICATION__TO_PAYMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setToPaymentId(Payment newToPaymentId) {
-		eSet(PaymentPackage.Literals.PAYMENT_APPLICATION__TO_PAYMENT_ID, newToPaymentId);
 	}
 
 	/**
@@ -353,26 +373,6 @@ public class PaymentApplicationImpl extends EntityIdentifiableImpl implements Pa
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GlAccount getOverrideGlAccountId() {
-		return (GlAccount)eGet(PaymentPackage.Literals.PAYMENT_APPLICATION__OVERRIDE_GL_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOverrideGlAccountId(GlAccount newOverrideGlAccountId) {
-		eSet(PaymentPackage.Literals.PAYMENT_APPLICATION__OVERRIDE_GL_ACCOUNT_ID, newOverrideGlAccountId);
 	}
 
 } //PaymentApplicationImpl

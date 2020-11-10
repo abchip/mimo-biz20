@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeImpl#getCostComponentTypeAttrs <em>Cost Component Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -203,8 +203,8 @@ public class CostComponentTypeImpl extends EntityTypeImpl<CostComponent> impleme
 	 * @generated
 	 */
 	@Override
-	public CostComponentType getParentTypeId() {
-		return (CostComponentType)eGet(CostPackage.Literals.COST_COMPONENT_TYPE__PARENT_TYPE_ID, true);
+	public CostComponentType getParentType() {
+		return (CostComponentType)eGet(CostPackage.Literals.COST_COMPONENT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -213,8 +213,8 @@ public class CostComponentTypeImpl extends EntityTypeImpl<CostComponent> impleme
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(CostComponentType newParentTypeId) {
-		eSet(CostPackage.Literals.COST_COMPONENT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(CostComponentType newParentType) {
+		eSet(CostPackage.Literals.COST_COMPONENT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

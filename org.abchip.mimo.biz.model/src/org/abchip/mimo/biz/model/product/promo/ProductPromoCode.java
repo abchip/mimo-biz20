@@ -28,9 +28,9 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCode#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCode#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCode#getLastModifiedDate <em>Last Modified Date</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCode#getProductPromo <em>Product Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCode#getProductPromoCodeEmails <em>Product Promo Code Emails</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCode#getProductPromoCodeParties <em>Product Promo Code Parties</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCode#getProductPromoId <em>Product Promo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCode#isRequireEmailOrParty <em>Require Email Or Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCode#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCode#getUseLimitPerCode <em>Use Limit Per Code</em>}</li>
@@ -172,6 +172,28 @@ public interface ProductPromoCode extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setLastModifiedDate(Date value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Promo</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Promo</em>' reference.
+	 * @see #setProductPromo(ProductPromo)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCode_ProductPromo()
+	 * @model keys="productPromoId"
+	 * @generated
+	 */
+	ProductPromo getProductPromo();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCode#getProductPromo <em>Product Promo</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Promo</em>' reference.
+	 * @see #getProductPromo()
+	 * @generated
+	 */
+	void setProductPromo(ProductPromo value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Promo Code Emails</b></em>' reference list.
@@ -335,32 +357,6 @@ public interface ProductPromoCode extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setUserEntered(boolean value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Promo Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Promo Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Promo Id</em>' reference.
-	 * @see #setProductPromoId(ProductPromo)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCode_ProductPromoId()
-	 * @model keys="productPromoId"
-	 * @generated
-	 */
-	ProductPromo getProductPromoId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCode#getProductPromoId <em>Product Promo Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Promo Id</em>' reference.
-	 * @see #getProductPromoId()
-	 * @generated
-	 */
-	void setProductPromoId(ProductPromo value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Promo Code Id</b></em>' attribute.

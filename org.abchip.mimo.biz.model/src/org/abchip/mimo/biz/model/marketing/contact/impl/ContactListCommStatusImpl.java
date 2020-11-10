@@ -33,13 +33,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListCommStatusImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListCommStatusImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListCommStatusImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListCommStatusImpl#getContactListId <em>Contact List Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListCommStatusImpl#getCommunicationEventId <em>Communication Event Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListCommStatusImpl#getContactMechId <em>Contact Mech Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListCommStatusImpl#getChangeByUserLoginId <em>Change By User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListCommStatusImpl#getContactList <em>Contact List</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListCommStatusImpl#getCommunicationEvent <em>Communication Event</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListCommStatusImpl#getContactMech <em>Contact Mech</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListCommStatusImpl#getChangeByUserLogin <em>Change By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListCommStatusImpl#getMessageId <em>Message Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListCommStatusImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListCommStatusImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListCommStatusImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListCommStatusImpl#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @generated
@@ -161,8 +161,8 @@ public class ContactListCommStatusImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public UserLogin getChangeByUserLoginId() {
-		return (UserLogin)eGet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__CHANGE_BY_USER_LOGIN_ID, true);
+	public ContactList getContactList() {
+		return (ContactList)eGet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__CONTACT_LIST, true);
 	}
 
 	/**
@@ -171,8 +171,8 @@ public class ContactListCommStatusImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setChangeByUserLoginId(UserLogin newChangeByUserLoginId) {
-		eSet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__CHANGE_BY_USER_LOGIN_ID, newChangeByUserLoginId);
+	public void setContactList(ContactList newContactList) {
+		eSet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__CONTACT_LIST, newContactList);
 	}
 
 	/**
@@ -181,8 +181,8 @@ public class ContactListCommStatusImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public CommunicationEvent getCommunicationEventId() {
-		return (CommunicationEvent)eGet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__COMMUNICATION_EVENT_ID, true);
+	public CommunicationEvent getCommunicationEvent() {
+		return (CommunicationEvent)eGet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__COMMUNICATION_EVENT, true);
 	}
 
 	/**
@@ -191,8 +191,8 @@ public class ContactListCommStatusImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setCommunicationEventId(CommunicationEvent newCommunicationEventId) {
-		eSet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__COMMUNICATION_EVENT_ID, newCommunicationEventId);
+	public void setCommunicationEvent(CommunicationEvent newCommunicationEvent) {
+		eSet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__COMMUNICATION_EVENT, newCommunicationEvent);
 	}
 
 	/**
@@ -201,8 +201,8 @@ public class ContactListCommStatusImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public ContactList getContactListId() {
-		return (ContactList)eGet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__CONTACT_LIST_ID, true);
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__CONTACT_MECH, true);
 	}
 
 	/**
@@ -211,8 +211,8 @@ public class ContactListCommStatusImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setContactListId(ContactList newContactListId) {
-		eSet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__CONTACT_LIST_ID, newContactListId);
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__CONTACT_MECH, newContactMech);
 	}
 
 	/**
@@ -221,8 +221,8 @@ public class ContactListCommStatusImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__CONTACT_MECH_ID, true);
+	public UserLogin getChangeByUserLogin() {
+		return (UserLogin)eGet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__CHANGE_BY_USER_LOGIN, true);
 	}
 
 	/**
@@ -231,8 +231,8 @@ public class ContactListCommStatusImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__CONTACT_MECH_ID, newContactMechId);
+	public void setChangeByUserLogin(UserLogin newChangeByUserLogin) {
+		eSet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__CHANGE_BY_USER_LOGIN, newChangeByUserLogin);
 	}
 
 	/**
@@ -261,8 +261,8 @@ public class ContactListCommStatusImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__PARTY, true);
 	}
 
 	/**
@@ -271,8 +271,8 @@ public class ContactListCommStatusImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__PARTY, newParty);
 	}
 
 	/**
@@ -281,8 +281,8 @@ public class ContactListCommStatusImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__STATUS, true);
 	}
 
 	/**
@@ -291,8 +291,8 @@ public class ContactListCommStatusImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(ContactPackage.Literals.CONTACT_LIST_COMM_STATUS__STATUS, newStatus);
 	}
 
 	/**

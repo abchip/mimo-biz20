@@ -22,8 +22,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistBin#getPicklistBinId <em>Picklist Bin Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistBin#getBinLocationNumber <em>Bin Location Number</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistBin#getPicklistId <em>Picklist Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistBin#getPrimaryOrderId <em>Primary Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistBin#getPicklist <em>Picklist</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistBin#getPrimaryOrder <em>Primary Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistBin#getPrimaryShipGroupSeqId <em>Primary Ship Group Seq Id</em>}</li>
  * </ul>
  *
@@ -59,6 +59,50 @@ public interface PicklistBin extends EntityIdentifiable, EntityInfo {
 	void setBinLocationNumber(long value);
 
 	/**
+	 * Returns the value of the '<em><b>Picklist</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Picklist</em>' reference.
+	 * @see #setPicklist(Picklist)
+	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistBin_Picklist()
+	 * @model keys="picklistId"
+	 * @generated
+	 */
+	Picklist getPicklist();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistBin#getPicklist <em>Picklist</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Picklist</em>' reference.
+	 * @see #getPicklist()
+	 * @generated
+	 */
+	void setPicklist(Picklist value);
+
+	/**
+	 * Returns the value of the '<em><b>Primary Order</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Primary Order</em>' reference.
+	 * @see #setPrimaryOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistBin_PrimaryOrder()
+	 * @model keys="orderId"
+	 * @generated
+	 */
+	OrderHeader getPrimaryOrder();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistBin#getPrimaryOrder <em>Primary Order</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Primary Order</em>' reference.
+	 * @see #getPrimaryOrder()
+	 * @generated
+	 */
+	void setPrimaryOrder(OrderHeader value);
+
+	/**
 	 * Returns the value of the '<em><b>Picklist Bin Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -84,58 +128,6 @@ public interface PicklistBin extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setPicklistBinId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Picklist Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Picklist Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Picklist Id</em>' reference.
-	 * @see #setPicklistId(Picklist)
-	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistBin_PicklistId()
-	 * @model keys="picklistId"
-	 * @generated
-	 */
-	Picklist getPicklistId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistBin#getPicklistId <em>Picklist Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Picklist Id</em>' reference.
-	 * @see #getPicklistId()
-	 * @generated
-	 */
-	void setPicklistId(Picklist value);
-
-	/**
-	 * Returns the value of the '<em><b>Primary Order Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Primary Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Primary Order Id</em>' reference.
-	 * @see #setPrimaryOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistBin_PrimaryOrderId()
-	 * @model keys="orderId"
-	 * @generated
-	 */
-	OrderHeader getPrimaryOrderId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.picklist.PicklistBin#getPrimaryOrderId <em>Primary Order Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Primary Order Id</em>' reference.
-	 * @see #getPrimaryOrderId()
-	 * @generated
-	 */
-	void setPrimaryOrderId(OrderHeader value);
 
 	/**
 	 * Returns the value of the '<em><b>Primary Ship Group Seq Id</b></em>' attribute.

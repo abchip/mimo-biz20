@@ -70,7 +70,7 @@ public class CreateProduct implements Callable<Long> {
 		product.setInternalName(name);
 		product.setProductName(name + " sales product");
 		product.setDescription("Sales product");
-		product.setProductTypeId(context.createProxy(ProductType.class, "DIGITAL_GOOD"));
+		product.setProductType(context.createProxy(ProductType.class, "DIGITAL_GOOD"));
 		product.setTaxable(true);
 		product.setReturnable(true);
 		productWriter.create(product);
@@ -78,14 +78,14 @@ public class CreateProduct implements Callable<Long> {
 		// ProductPrice
 		ResourceWriter<ProductPrice> productPriceWriter = context.getResourceManager().getResourceWriter(ProductPrice.class);
 		ProductPrice productPrice = productPriceWriter.make();
-		productPrice.setProductId(product);
+		productPrice.setProduct(product);
 		productPrice.setPrice(new BigDecimal(1));
 		productPrice.setTaxInPrice(true);
 		productPrice.setFromDate(new Date());
-		productPrice.setProductPriceTypeId(context.createProxy(ProductPriceType.class, "DEFAULT_PRICE"));
-		productPrice.setProductPricePurposeId(context.createProxy(ProductPricePurpose.class, "PURCHASE"));
-		productPrice.setCurrencyUomId(commonDefault.getCurrencyUom());
-		productPrice.setProductStoreGroupId(context.createProxy(ProductStoreGroup.class, "_NA_"));
+		productPrice.setProductPriceType(context.createProxy(ProductPriceType.class, "DEFAULT_PRICE"));
+		productPrice.setProductPricePurpose(context.createProxy(ProductPricePurpose.class, "PURCHASE"));
+		productPrice.setCurrencyUom(commonDefault.getCurrencyUom());
+		productPrice.setProductStoreGroup(context.createProxy(ProductStoreGroup.class, "_NA_"));
 		productPriceWriter.create(productPrice);
 	}
 
@@ -98,7 +98,7 @@ public class CreateProduct implements Callable<Long> {
 		product.setInternalName(name);
 		product.setProductName(name + " purchase product");
 		product.setDescription("Purchase product");
-		product.setProductTypeId(context.createProxy(ProductType.class, "FINISHED_GOOD"));
+		product.setProductType(context.createProxy(ProductType.class, "FINISHED_GOOD"));
 		product.setTaxable(true);
 		product.setReturnable(true);
 		productWriter.create(product);
@@ -112,13 +112,13 @@ public class CreateProduct implements Callable<Long> {
 		for (Party party : parties) {
 			// SupplierProduct
 			SupplierProduct supplierProduct = supplierProductWriter.make();
-			supplierProduct.setProductId(product);
-			supplierProduct.setPartyId(party);
+			supplierProduct.setProduct(product);
+			supplierProduct.setParty(party);
 			supplierProduct.setAvailableFromDate(new Date());
-			supplierProduct.setSupplierPrefOrderId(context.createProxy(SupplierPrefOrder.class, "10_MAIN_SUPPL"));
+			supplierProduct.setSupplierPrefOrder(context.createProxy(SupplierPrefOrder.class, "10_MAIN_SUPPL"));
 			supplierProduct.setMinimumOrderQuantity(new BigDecimal(1));
 			supplierProduct.setLastPrice(new BigDecimal(1));
-			supplierProduct.setCurrencyUomId(commonDefault.getCurrencyUom());
+			supplierProduct.setCurrencyUom(commonDefault.getCurrencyUom());
 			supplierProduct.setCanDropShip(false);
 			supplierProduct.setSupplierProductId(party.getID() + "-" + product.getID());
 			supplierProductWriter.create(supplierProduct);
@@ -127,8 +127,8 @@ public class CreateProduct implements Callable<Long> {
 		try (EntityIterator<Facility> facilities = facilityReader.find()) {
 			for (Facility facility : facilities) {
 				ProductFacility productFacility = productFacilityWriter.make();
-				productFacility.setProductId(product);
-				productFacility.setFacilityId(facility);
+				productFacility.setProduct(product);
+				productFacility.setFacility(facility);
 				productFacility.setMinimumStock(new BigDecimal(1));
 				productFacility.setReorderQuantity(new BigDecimal(1));
 				productFacility.setDaysToShip(1);

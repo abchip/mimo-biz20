@@ -33,11 +33,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoPointImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoPointImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoPointImpl#getGeoPointId <em>Geo Point Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoPointImpl#getDataSourceId <em>Data Source Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoPointImpl#getDataSource <em>Data Source</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoPointImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoPointImpl#getElevation <em>Elevation</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoPointImpl#getElevationUomId <em>Elevation Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoPointImpl#getGeoPointTypeEnumId <em>Geo Point Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoPointImpl#getElevationUom <em>Elevation Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoPointImpl#getGeoPointTypeEnum <em>Geo Point Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoPointImpl#getInformation <em>Information</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoPointImpl#getLatitude <em>Latitude</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoPointImpl#getLongitude <em>Longitude</em>}</li>
@@ -201,8 +201,8 @@ public class GeoPointImpl extends EntityIdentifiableImpl implements GeoPoint {
 	 * @generated
 	 */
 	@Override
-	public Uom getElevationUomId() {
-		return (Uom)eGet(GeoPackage.Literals.GEO_POINT__ELEVATION_UOM_ID, true);
+	public Uom getElevationUom() {
+		return (Uom)eGet(GeoPackage.Literals.GEO_POINT__ELEVATION_UOM, true);
 	}
 
 	/**
@@ -211,8 +211,28 @@ public class GeoPointImpl extends EntityIdentifiableImpl implements GeoPoint {
 	 * @generated
 	 */
 	@Override
-	public void setElevationUomId(Uom newElevationUomId) {
-		eSet(GeoPackage.Literals.GEO_POINT__ELEVATION_UOM_ID, newElevationUomId);
+	public void setElevationUom(Uom newElevationUom) {
+		eSet(GeoPackage.Literals.GEO_POINT__ELEVATION_UOM, newElevationUom);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Enumeration getGeoPointTypeEnum() {
+		return (Enumeration)eGet(GeoPackage.Literals.GEO_POINT__GEO_POINT_TYPE_ENUM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGeoPointTypeEnum(Enumeration newGeoPointTypeEnum) {
+		eSet(GeoPackage.Literals.GEO_POINT__GEO_POINT_TYPE_ENUM, newGeoPointTypeEnum);
 	}
 
 	/**
@@ -233,6 +253,26 @@ public class GeoPointImpl extends EntityIdentifiableImpl implements GeoPoint {
 	@Override
 	public void setGeoPointId(String newGeoPointId) {
 		eSet(GeoPackage.Literals.GEO_POINT__GEO_POINT_ID, newGeoPointId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DataSource getDataSource() {
+		return (DataSource)eGet(GeoPackage.Literals.GEO_POINT__DATA_SOURCE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDataSource(DataSource newDataSource) {
+		eSet(GeoPackage.Literals.GEO_POINT__DATA_SOURCE, newDataSource);
 	}
 
 	/**
@@ -331,46 +371,6 @@ public class GeoPointImpl extends EntityIdentifiableImpl implements GeoPoint {
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DataSource getDataSourceId() {
-		return (DataSource)eGet(GeoPackage.Literals.GEO_POINT__DATA_SOURCE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDataSourceId(DataSource newDataSourceId) {
-		eSet(GeoPackage.Literals.GEO_POINT__DATA_SOURCE_ID, newDataSourceId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Enumeration getGeoPointTypeEnumId() {
-		return (Enumeration)eGet(GeoPackage.Literals.GEO_POINT__GEO_POINT_TYPE_ENUM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGeoPointTypeEnumId(Enumeration newGeoPointTypeEnumId) {
-		eSet(GeoPackage.Literals.GEO_POINT__GEO_POINT_TYPE_ENUM_ID, newGeoPointTypeEnumId);
 	}
 
 } //GeoPointImpl

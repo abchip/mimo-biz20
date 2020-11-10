@@ -2,14 +2,14 @@
 <mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-portal="http://www.abchip.org/mimo/biz/model/common/portal" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/common/portal http://www.abchip.org/mimo/biz/model/common#//portal http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="083_marketing_SfaPortletData">
   <contents xsi:type="biz-portal:PortalPage" portalPageId="SFA_MAIN" description="The SFA main page" ownerUserLoginId="_NA_" portalPageName="Main"/>
   <contents xsi:type="biz-portal:PortalPageColumn" columnSeqId="00001">
-    <portalPageId href="PortalPage#SFA_MAIN"/>
+    <portalPage href="PortalPage#SFA_MAIN"/>
   </contents>
   <contents xsi:type="biz-portal:PortalPagePortlet" portletSeqId="00001" columnSeqId="00001">
-    <portalPageId href="PortalPage#SFA_MAIN"/>
-    <portalPortletId href="PortalPortlet#MyCommunications"/>
+    <portalPage href="PortalPage#SFA_MAIN"/>
+    <portalPortlet href="PortalPortlet#MyCommunications"/>
   </contents>
   <contents xsi:type="biz-portal:PortalPagePortlet" portletSeqId="00001" columnSeqId="00001" sequenceNum="1">
-    <portalPageId href="PortalPage#SFA_MAIN"/>
-    <portalPortletId href="PortalPortlet#Calendar"/>
+    <portalPage href="PortalPage#SFA_MAIN"/>
+    <portalPortlet href="PortalPortlet#Calendar"/>
   </contents>
 </mimo-ent:EntityContainer>

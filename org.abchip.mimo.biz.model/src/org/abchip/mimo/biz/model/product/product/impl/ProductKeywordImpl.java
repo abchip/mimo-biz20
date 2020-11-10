@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductKeywordImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductKeywordImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductKeywordImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductKeywordImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductKeywordImpl#getKeywordTypeId <em>Keyword Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductKeywordImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductKeywordImpl#getKeywordType <em>Keyword Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductKeywordImpl#getKeyword <em>Keyword</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductKeywordImpl#getRelevancyWeight <em>Relevancy Weight</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductKeywordImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductKeywordImpl#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @generated
@@ -156,6 +156,46 @@ public class ProductKeywordImpl extends EntityIdentifiableImpl implements Produc
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(ProductPackage.Literals.PRODUCT_KEYWORD__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(ProductPackage.Literals.PRODUCT_KEYWORD__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Enumeration getKeywordType() {
+		return (Enumeration)eGet(ProductPackage.Literals.PRODUCT_KEYWORD__KEYWORD_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setKeywordType(Enumeration newKeywordType) {
+		eSet(ProductPackage.Literals.PRODUCT_KEYWORD__KEYWORD_TYPE, newKeywordType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getKeyword() {
 		return (String)eGet(ProductPackage.Literals.PRODUCT_KEYWORD__KEYWORD, true);
 	}
@@ -168,26 +208,6 @@ public class ProductKeywordImpl extends EntityIdentifiableImpl implements Produc
 	@Override
 	public void setKeyword(String newKeyword) {
 		eSet(ProductPackage.Literals.PRODUCT_KEYWORD__KEYWORD, newKeyword);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Enumeration getKeywordTypeId() {
-		return (Enumeration)eGet(ProductPackage.Literals.PRODUCT_KEYWORD__KEYWORD_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setKeywordTypeId(Enumeration newKeywordTypeId) {
-		eSet(ProductPackage.Literals.PRODUCT_KEYWORD__KEYWORD_TYPE_ID, newKeywordTypeId);
 	}
 
 	/**
@@ -216,8 +236,8 @@ public class ProductKeywordImpl extends EntityIdentifiableImpl implements Produc
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(ProductPackage.Literals.PRODUCT_KEYWORD__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(ProductPackage.Literals.PRODUCT_KEYWORD__STATUS, true);
 	}
 
 	/**
@@ -226,8 +246,8 @@ public class ProductKeywordImpl extends EntityIdentifiableImpl implements Produc
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(ProductPackage.Literals.PRODUCT_KEYWORD__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(ProductPackage.Literals.PRODUCT_KEYWORD__STATUS, newStatus);
 	}
 
 	/**
@@ -266,26 +286,6 @@ public class ProductKeywordImpl extends EntityIdentifiableImpl implements Produc
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(ProductPackage.Literals.PRODUCT_KEYWORD__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(ProductPackage.Literals.PRODUCT_KEYWORD__PRODUCT_ID, newProductId);
 	}
 
 } //ProductKeywordImpl

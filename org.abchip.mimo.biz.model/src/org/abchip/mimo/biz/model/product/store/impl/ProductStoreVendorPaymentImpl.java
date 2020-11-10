@@ -31,10 +31,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorPaymentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorPaymentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorPaymentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorPaymentImpl#getProductStoreId <em>Product Store Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorPaymentImpl#getVendorPartyId <em>Vendor Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorPaymentImpl#getPaymentMethodTypeId <em>Payment Method Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorPaymentImpl#getCreditCardEnumId <em>Credit Card Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorPaymentImpl#getProductStore <em>Product Store</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorPaymentImpl#getVendorParty <em>Vendor Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorPaymentImpl#getPaymentMethodType <em>Payment Method Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreVendorPaymentImpl#getCreditCardEnum <em>Credit Card Enum</em>}</li>
  * </ul>
  *
  * @generated
@@ -156,8 +156,8 @@ public class ProductStoreVendorPaymentImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public Enumeration getCreditCardEnumId() {
-		return (Enumeration)eGet(StorePackage.Literals.PRODUCT_STORE_VENDOR_PAYMENT__CREDIT_CARD_ENUM_ID, true);
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(StorePackage.Literals.PRODUCT_STORE_VENDOR_PAYMENT__PRODUCT_STORE, true);
 	}
 
 	/**
@@ -166,8 +166,68 @@ public class ProductStoreVendorPaymentImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setCreditCardEnumId(Enumeration newCreditCardEnumId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_VENDOR_PAYMENT__CREDIT_CARD_ENUM_ID, newCreditCardEnumId);
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_VENDOR_PAYMENT__PRODUCT_STORE, newProductStore);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getVendorParty() {
+		return (Party)eGet(StorePackage.Literals.PRODUCT_STORE_VENDOR_PAYMENT__VENDOR_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setVendorParty(Party newVendorParty) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_VENDOR_PAYMENT__VENDOR_PARTY, newVendorParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PaymentMethodType getPaymentMethodType() {
+		return (PaymentMethodType)eGet(StorePackage.Literals.PRODUCT_STORE_VENDOR_PAYMENT__PAYMENT_METHOD_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPaymentMethodType(PaymentMethodType newPaymentMethodType) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_VENDOR_PAYMENT__PAYMENT_METHOD_TYPE, newPaymentMethodType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Enumeration getCreditCardEnum() {
+		return (Enumeration)eGet(StorePackage.Literals.PRODUCT_STORE_VENDOR_PAYMENT__CREDIT_CARD_ENUM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreditCardEnum(Enumeration newCreditCardEnum) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_VENDOR_PAYMENT__CREDIT_CARD_ENUM, newCreditCardEnum);
 	}
 
 	/**
@@ -206,66 +266,6 @@ public class ProductStoreVendorPaymentImpl extends EntityIdentifiableImpl implem
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PaymentMethodType getPaymentMethodTypeId() {
-		return (PaymentMethodType)eGet(StorePackage.Literals.PRODUCT_STORE_VENDOR_PAYMENT__PAYMENT_METHOD_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaymentMethodTypeId(PaymentMethodType newPaymentMethodTypeId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_VENDOR_PAYMENT__PAYMENT_METHOD_TYPE_ID, newPaymentMethodTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getVendorPartyId() {
-		return (Party)eGet(StorePackage.Literals.PRODUCT_STORE_VENDOR_PAYMENT__VENDOR_PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setVendorPartyId(Party newVendorPartyId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_VENDOR_PAYMENT__VENDOR_PARTY_ID, newVendorPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(StorePackage.Literals.PRODUCT_STORE_VENDOR_PAYMENT__PRODUCT_STORE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_VENDOR_PAYMENT__PRODUCT_STORE_ID, newProductStoreId);
 	}
 
 } //ProductStoreVendorPaymentImpl

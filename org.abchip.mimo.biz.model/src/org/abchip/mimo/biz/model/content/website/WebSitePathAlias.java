@@ -22,11 +22,11 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getWebSiteId <em>Web Site Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getWebSite <em>Web Site</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getPathAlias <em>Path Alias</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getAliasTo <em>Alias To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getContentId <em>Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getContent <em>Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getMapKey <em>Map Key</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -36,6 +36,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface WebSitePathAlias extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Web Site</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Web Site</em>' reference.
+	 * @see #setWebSite(WebSite)
+	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebSitePathAlias_WebSite()
+	 * @model keys="webSiteId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	WebSite getWebSite();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getWebSite <em>Web Site</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Web Site</em>' reference.
+	 * @see #getWebSite()
+	 * @generated
+	 */
+	void setWebSite(WebSite value);
+
 	/**
 	 * Returns the value of the '<em><b>Alias To</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -63,30 +86,26 @@ public interface WebSitePathAlias extends EntityIdentifiable, EntityInfo {
 	void setAliasTo(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Content</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Id</em>' reference.
-	 * @see #setContentId(Content)
-	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebSitePathAlias_ContentId()
+	 * @return the value of the '<em>Content</em>' reference.
+	 * @see #setContent(Content)
+	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebSitePathAlias_Content()
 	 * @model keys="contentId"
 	 * @generated
 	 */
-	Content getContentId();
+	Content getContent();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getContentId <em>Content Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getContent <em>Content</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Id</em>' reference.
-	 * @see #getContentId()
+	 * @param value the new value of the '<em>Content</em>' reference.
+	 * @see #getContent()
 	 * @generated
 	 */
-	void setContentId(Content value);
+	void setContent(Content value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -194,32 +213,5 @@ public interface WebSitePathAlias extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Web Site Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Web Site Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Web Site Id</em>' reference.
-	 * @see #setWebSiteId(WebSite)
-	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebSitePathAlias_WebSiteId()
-	 * @model keys="webSiteId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	WebSite getWebSiteId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getWebSiteId <em>Web Site Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Web Site Id</em>' reference.
-	 * @see #getWebSiteId()
-	 * @generated
-	 */
-	void setWebSiteId(WebSite value);
 
 } // WebSitePathAlias

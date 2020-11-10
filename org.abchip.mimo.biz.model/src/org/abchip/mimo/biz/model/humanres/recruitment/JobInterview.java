@@ -23,13 +23,13 @@ import org.abchip.mimo.entity.EntityTyped;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getJobInterviewId <em>Job Interview Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getGradeSecuredEnumId <em>Grade Secured Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getGradeSecuredEnum <em>Grade Secured Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getJobInterviewDate <em>Job Interview Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getJobInterviewResult <em>Job Interview Result</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getJobInterviewTypeId <em>Job Interview Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getJobIntervieweePartyId <em>Job Interviewee Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getJobInterviewerPartyId <em>Job Interviewer Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getJobRequisitionId <em>Job Requisition Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getJobInterviewType <em>Job Interview Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getJobIntervieweeParty <em>Job Interviewee Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getJobInterviewerParty <em>Job Interviewer Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getJobRequisition <em>Job Requisition</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage#getJobInterview()
@@ -37,32 +37,6 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface JobInterview extends EntityTyped<JobInterviewType>, EntityInfo {
-	/**
-	 * Returns the value of the '<em><b>Grade Secured Enum Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Grade Secured Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Grade Secured Enum Id</em>' reference.
-	 * @see #setGradeSecuredEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage#getJobInterview_GradeSecuredEnumId()
-	 * @model keys="enumId"
-	 * @generated
-	 */
-	Enumeration getGradeSecuredEnumId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getGradeSecuredEnumId <em>Grade Secured Enum Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Grade Secured Enum Id</em>' reference.
-	 * @see #getGradeSecuredEnumId()
-	 * @generated
-	 */
-	void setGradeSecuredEnumId(Enumeration value);
-
 	/**
 	 * Returns the value of the '<em><b>Job Interview Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -117,6 +91,28 @@ public interface JobInterview extends EntityTyped<JobInterviewType>, EntityInfo 
 	void setJobInterviewId(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Grade Secured Enum</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Grade Secured Enum</em>' reference.
+	 * @see #setGradeSecuredEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage#getJobInterview_GradeSecuredEnum()
+	 * @model keys="enumId"
+	 * @generated
+	 */
+	Enumeration getGradeSecuredEnum();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getGradeSecuredEnum <em>Grade Secured Enum</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Grade Secured Enum</em>' reference.
+	 * @see #getGradeSecuredEnum()
+	 * @generated
+	 */
+	void setGradeSecuredEnum(Enumeration value);
+
+	/**
 	 * Returns the value of the '<em><b>Job Interview Result</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -143,107 +139,91 @@ public interface JobInterview extends EntityTyped<JobInterviewType>, EntityInfo 
 	void setJobInterviewResult(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Job Interview Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Job Interview Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Job Interview Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Job Interview Type Id</em>' reference.
-	 * @see #setJobInterviewTypeId(JobInterviewType)
-	 * @see org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage#getJobInterview_JobInterviewTypeId()
+	 * @return the value of the '<em>Job Interview Type</em>' reference.
+	 * @see #setJobInterviewType(JobInterviewType)
+	 * @see org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage#getJobInterview_JobInterviewType()
 	 * @model keys="jobInterviewTypeId"
 	 * @generated
 	 */
-	JobInterviewType getJobInterviewTypeId();
+	JobInterviewType getJobInterviewType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getJobInterviewTypeId <em>Job Interview Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getJobInterviewType <em>Job Interview Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Job Interview Type Id</em>' reference.
-	 * @see #getJobInterviewTypeId()
+	 * @param value the new value of the '<em>Job Interview Type</em>' reference.
+	 * @see #getJobInterviewType()
 	 * @generated
 	 */
-	void setJobInterviewTypeId(JobInterviewType value);
+	void setJobInterviewType(JobInterviewType value);
 
 	/**
-	 * Returns the value of the '<em><b>Job Interviewee Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Job Interviewee Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Job Interviewee Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Job Interviewee Party Id</em>' reference.
-	 * @see #setJobIntervieweePartyId(Party)
-	 * @see org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage#getJobInterview_JobIntervieweePartyId()
+	 * @return the value of the '<em>Job Interviewee Party</em>' reference.
+	 * @see #setJobIntervieweeParty(Party)
+	 * @see org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage#getJobInterview_JobIntervieweeParty()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getJobIntervieweePartyId();
+	Party getJobIntervieweeParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getJobIntervieweePartyId <em>Job Interviewee Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getJobIntervieweeParty <em>Job Interviewee Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Job Interviewee Party Id</em>' reference.
-	 * @see #getJobIntervieweePartyId()
+	 * @param value the new value of the '<em>Job Interviewee Party</em>' reference.
+	 * @see #getJobIntervieweeParty()
 	 * @generated
 	 */
-	void setJobIntervieweePartyId(Party value);
+	void setJobIntervieweeParty(Party value);
 
 	/**
-	 * Returns the value of the '<em><b>Job Interviewer Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Job Interviewer Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Job Interviewer Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Job Interviewer Party Id</em>' reference.
-	 * @see #setJobInterviewerPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage#getJobInterview_JobInterviewerPartyId()
+	 * @return the value of the '<em>Job Interviewer Party</em>' reference.
+	 * @see #setJobInterviewerParty(Party)
+	 * @see org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage#getJobInterview_JobInterviewerParty()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getJobInterviewerPartyId();
+	Party getJobInterviewerParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getJobInterviewerPartyId <em>Job Interviewer Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getJobInterviewerParty <em>Job Interviewer Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Job Interviewer Party Id</em>' reference.
-	 * @see #getJobInterviewerPartyId()
+	 * @param value the new value of the '<em>Job Interviewer Party</em>' reference.
+	 * @see #getJobInterviewerParty()
 	 * @generated
 	 */
-	void setJobInterviewerPartyId(Party value);
+	void setJobInterviewerParty(Party value);
 
 	/**
-	 * Returns the value of the '<em><b>Job Requisition Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Job Requisition</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Job Requisition Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Job Requisition Id</em>' reference.
-	 * @see #setJobRequisitionId(JobRequisition)
-	 * @see org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage#getJobInterview_JobRequisitionId()
+	 * @return the value of the '<em>Job Requisition</em>' reference.
+	 * @see #setJobRequisition(JobRequisition)
+	 * @see org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage#getJobInterview_JobRequisition()
 	 * @model keys="jobRequisitionId"
 	 * @generated
 	 */
-	JobRequisition getJobRequisitionId();
+	JobRequisition getJobRequisition();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getJobRequisitionId <em>Job Requisition Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.recruitment.JobInterview#getJobRequisition <em>Job Requisition</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Job Requisition Id</em>' reference.
-	 * @see #getJobRequisitionId()
+	 * @param value the new value of the '<em>Job Requisition</em>' reference.
+	 * @see #getJobRequisition()
 	 * @generated
 	 */
-	void setJobRequisitionId(JobRequisition value);
+	void setJobRequisition(JobRequisition value);
 
 } // JobInterview

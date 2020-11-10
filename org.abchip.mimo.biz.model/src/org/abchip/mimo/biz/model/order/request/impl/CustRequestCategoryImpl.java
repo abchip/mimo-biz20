@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestCategoryImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestCategoryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestCategoryImpl#getCustRequestCategoryId <em>Cust Request Category Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestCategoryImpl#getCustRequestTypeId <em>Cust Request Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestCategoryImpl#getCustRequestType <em>Cust Request Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestCategoryImpl#getDescription <em>Description</em>}</li>
  * </ul>
  *
@@ -172,8 +172,8 @@ public class CustRequestCategoryImpl extends EntityIdentifiableImpl implements C
 	 * @generated
 	 */
 	@Override
-	public CustRequestType getCustRequestTypeId() {
-		return (CustRequestType)eGet(RequestPackage.Literals.CUST_REQUEST_CATEGORY__CUST_REQUEST_TYPE_ID, true);
+	public CustRequestType getCustRequestType() {
+		return (CustRequestType)eGet(RequestPackage.Literals.CUST_REQUEST_CATEGORY__CUST_REQUEST_TYPE, true);
 	}
 
 	/**
@@ -182,8 +182,8 @@ public class CustRequestCategoryImpl extends EntityIdentifiableImpl implements C
 	 * @generated
 	 */
 	@Override
-	public void setCustRequestTypeId(CustRequestType newCustRequestTypeId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_CATEGORY__CUST_REQUEST_TYPE_ID, newCustRequestTypeId);
+	public void setCustRequestType(CustRequestType newCustRequestType) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_CATEGORY__CUST_REQUEST_TYPE, newCustRequestType);
 	}
 
 	/**

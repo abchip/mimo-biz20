@@ -21,8 +21,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.WebSiteContactList#getWebSiteId <em>Web Site Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.WebSiteContactList#getContactListId <em>Contact List Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.WebSiteContactList#getWebSite <em>Web Site</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.WebSiteContactList#getContactList <em>Contact List</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.WebSiteContactList#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.WebSiteContactList#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -33,31 +33,50 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface WebSiteContactList extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Contact List Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Web Site</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact List Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact List Id</em>' reference.
-	 * @see #setContactListId(ContactList)
-	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getWebSiteContactList_ContactListId()
+	 * @return the value of the '<em>Web Site</em>' reference.
+	 * @see #setWebSite(WebSite)
+	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getWebSiteContactList_WebSite()
+	 * @model keys="webSiteId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	WebSite getWebSite();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.WebSiteContactList#getWebSite <em>Web Site</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Web Site</em>' reference.
+	 * @see #getWebSite()
+	 * @generated
+	 */
+	void setWebSite(WebSite value);
+
+	/**
+	 * Returns the value of the '<em><b>Contact List</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Contact List</em>' reference.
+	 * @see #setContactList(ContactList)
+	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getWebSiteContactList_ContactList()
 	 * @model keys="contactListId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ContactList getContactListId();
+	ContactList getContactList();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.WebSiteContactList#getContactListId <em>Contact List Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.WebSiteContactList#getContactList <em>Contact List</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact List Id</em>' reference.
-	 * @see #getContactListId()
+	 * @param value the new value of the '<em>Contact List</em>' reference.
+	 * @see #getContactList()
 	 * @generated
 	 */
-	void setContactListId(ContactList value);
+	void setContactList(ContactList value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -111,32 +130,5 @@ public interface WebSiteContactList extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Web Site Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Web Site Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Web Site Id</em>' reference.
-	 * @see #setWebSiteId(WebSite)
-	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getWebSiteContactList_WebSiteId()
-	 * @model keys="webSiteId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	WebSite getWebSiteId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.WebSiteContactList#getWebSiteId <em>Web Site Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Web Site Id</em>' reference.
-	 * @see #getWebSiteId()
-	 * @generated
-	 */
-	void setWebSiteId(WebSite value);
 
 } // WebSiteContactList

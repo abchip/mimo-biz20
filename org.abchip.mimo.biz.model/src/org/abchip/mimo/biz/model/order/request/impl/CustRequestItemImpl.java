@@ -33,14 +33,14 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getCustRequestId <em>Cust Request Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getCustRequest <em>Cust Request</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getCustRequestItemSeqId <em>Cust Request Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getConfigId <em>Config Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getCustRequestResolutionId <em>Cust Request Resolution Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getCustRequestResolution <em>Cust Request Resolution</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getMaximumAmount <em>Maximum Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getPriority <em>Priority</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getRequiredByDate <em>Required By Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getReservLength <em>Reserv Length</em>}</li>
@@ -48,7 +48,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getReservStart <em>Reserv Start</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getSelectedAmount <em>Selected Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getSequenceNum <em>Sequence Num</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl#getStory <em>Story</em>}</li>
  * </ul>
  *
@@ -171,6 +171,26 @@ public class CustRequestItemImpl extends EntityIdentifiableImpl implements CustR
 	 * @generated
 	 */
 	@Override
+	public CustRequest getCustRequest() {
+		return (CustRequest)eGet(RequestPackage.Literals.CUST_REQUEST_ITEM__CUST_REQUEST, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCustRequest(CustRequest newCustRequest) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_ITEM__CUST_REQUEST, newCustRequest);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getConfigId() {
 		return (String)eGet(RequestPackage.Literals.CUST_REQUEST_ITEM__CONFIG_ID, true);
 	}
@@ -191,8 +211,8 @@ public class CustRequestItemImpl extends EntityIdentifiableImpl implements CustR
 	 * @generated
 	 */
 	@Override
-	public CustRequest getCustRequestId() {
-		return (CustRequest)eGet(RequestPackage.Literals.CUST_REQUEST_ITEM__CUST_REQUEST_ID, true);
+	public CustRequestResolution getCustRequestResolution() {
+		return (CustRequestResolution)eGet(RequestPackage.Literals.CUST_REQUEST_ITEM__CUST_REQUEST_RESOLUTION, true);
 	}
 
 	/**
@@ -201,8 +221,8 @@ public class CustRequestItemImpl extends EntityIdentifiableImpl implements CustR
 	 * @generated
 	 */
 	@Override
-	public void setCustRequestId(CustRequest newCustRequestId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_ITEM__CUST_REQUEST_ID, newCustRequestId);
+	public void setCustRequestResolution(CustRequestResolution newCustRequestResolution) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_ITEM__CUST_REQUEST_RESOLUTION, newCustRequestResolution);
 	}
 
 	/**
@@ -223,26 +243,6 @@ public class CustRequestItemImpl extends EntityIdentifiableImpl implements CustR
 	@Override
 	public void setCustRequestItemSeqId(String newCustRequestItemSeqId) {
 		eSet(RequestPackage.Literals.CUST_REQUEST_ITEM__CUST_REQUEST_ITEM_SEQ_ID, newCustRequestItemSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CustRequestResolution getCustRequestResolutionId() {
-		return (CustRequestResolution)eGet(RequestPackage.Literals.CUST_REQUEST_ITEM__CUST_REQUEST_RESOLUTION_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCustRequestResolutionId(CustRequestResolution newCustRequestResolutionId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_ITEM__CUST_REQUEST_RESOLUTION_ID, newCustRequestResolutionId);
 	}
 
 	/**
@@ -311,8 +311,8 @@ public class CustRequestItemImpl extends EntityIdentifiableImpl implements CustR
 	 * @generated
 	 */
 	@Override
-	public Product getProductId() {
-		return (Product)eGet(RequestPackage.Literals.CUST_REQUEST_ITEM__PRODUCT_ID, true);
+	public Product getProduct() {
+		return (Product)eGet(RequestPackage.Literals.CUST_REQUEST_ITEM__PRODUCT, true);
 	}
 
 	/**
@@ -321,8 +321,8 @@ public class CustRequestItemImpl extends EntityIdentifiableImpl implements CustR
 	 * @generated
 	 */
 	@Override
-	public void setProductId(Product newProductId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_ITEM__PRODUCT_ID, newProductId);
+	public void setProduct(Product newProduct) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_ITEM__PRODUCT, newProduct);
 	}
 
 	/**
@@ -471,8 +471,8 @@ public class CustRequestItemImpl extends EntityIdentifiableImpl implements CustR
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(RequestPackage.Literals.CUST_REQUEST_ITEM__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(RequestPackage.Literals.CUST_REQUEST_ITEM__STATUS, true);
 	}
 
 	/**
@@ -481,8 +481,8 @@ public class CustRequestItemImpl extends EntityIdentifiableImpl implements CustR
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_ITEM__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_ITEM__STATUS, newStatus);
 	}
 
 	/**

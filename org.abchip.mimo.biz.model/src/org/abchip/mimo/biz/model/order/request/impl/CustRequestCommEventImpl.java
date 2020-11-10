@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestCommEventImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestCommEventImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestCommEventImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestCommEventImpl#getCustRequestId <em>Cust Request Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestCommEventImpl#getCommunicationEventId <em>Communication Event Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestCommEventImpl#getCustRequest <em>Cust Request</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestCommEventImpl#getCommunicationEvent <em>Communication Event</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class CustRequestCommEventImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public CommunicationEvent getCommunicationEventId() {
-		return (CommunicationEvent)eGet(RequestPackage.Literals.CUST_REQUEST_COMM_EVENT__COMMUNICATION_EVENT_ID, true);
+	public CustRequest getCustRequest() {
+		return (CustRequest)eGet(RequestPackage.Literals.CUST_REQUEST_COMM_EVENT__CUST_REQUEST, true);
 	}
 
 	/**
@@ -162,8 +162,28 @@ public class CustRequestCommEventImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setCommunicationEventId(CommunicationEvent newCommunicationEventId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_COMM_EVENT__COMMUNICATION_EVENT_ID, newCommunicationEventId);
+	public void setCustRequest(CustRequest newCustRequest) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_COMM_EVENT__CUST_REQUEST, newCustRequest);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CommunicationEvent getCommunicationEvent() {
+		return (CommunicationEvent)eGet(RequestPackage.Literals.CUST_REQUEST_COMM_EVENT__COMMUNICATION_EVENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCommunicationEvent(CommunicationEvent newCommunicationEvent) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_COMM_EVENT__COMMUNICATION_EVENT, newCommunicationEvent);
 	}
 
 	/**
@@ -202,26 +222,6 @@ public class CustRequestCommEventImpl extends EntityIdentifiableImpl implements 
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CustRequest getCustRequestId() {
-		return (CustRequest)eGet(RequestPackage.Literals.CUST_REQUEST_COMM_EVENT__CUST_REQUEST_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCustRequestId(CustRequest newCustRequestId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_COMM_EVENT__CUST_REQUEST_ID, newCustRequestId);
 	}
 
 } //CustRequestCommEventImpl

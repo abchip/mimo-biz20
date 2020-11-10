@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContentType#getConfItemContentTypeId <em>Conf Item Content Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContentType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContentType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContentType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContentType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProdConfItemContentType()
@@ -83,30 +83,26 @@ public interface ProdConfItemContentType extends EntityType<ProdConfItemContent>
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(ProdConfItemContentType)
-	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProdConfItemContentType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(ProdConfItemContentType)
+	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProdConfItemContentType_ParentType()
 	 * @model keys="confItemContentTypeId"
 	 * @generated
 	 */
-	ProdConfItemContentType getParentTypeId();
+	ProdConfItemContentType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContentType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.config.ProdConfItemContentType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(ProdConfItemContentType value);
+	void setParentType(ProdConfItemContentType value);
 
 	/**
 	 * Returns the value of the '<em><b>Conf Item Content Type Id</b></em>' attribute.

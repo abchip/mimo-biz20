@@ -30,10 +30,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommEventContentAssocImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommEventContentAssocImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommEventContentAssocImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommEventContentAssocImpl#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommEventContentAssocImpl#getCommunicationEventId <em>Communication Event Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommEventContentAssocImpl#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommEventContentAssocImpl#getCommunicationEvent <em>Communication Event</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommEventContentAssocImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommEventContentAssocImpl#getCommContentAssocTypeId <em>Comm Content Assoc Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommEventContentAssocImpl#getCommContentAssocType <em>Comm Content Assoc Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommEventContentAssocImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommEventContentAssocImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -156,8 +156,8 @@ public class CommEventContentAssocImpl extends EntityTypedImpl<CommContentAssocT
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(CommunicationPackage.Literals.COMM_EVENT_CONTENT_ASSOC__CONTENT_ID, true);
+	public Content getContent() {
+		return (Content)eGet(CommunicationPackage.Literals.COMM_EVENT_CONTENT_ASSOC__CONTENT, true);
 	}
 
 	/**
@@ -166,8 +166,28 @@ public class CommEventContentAssocImpl extends EntityTypedImpl<CommContentAssocT
 	 * @generated
 	 */
 	@Override
-	public void setContentId(Content newContentId) {
-		eSet(CommunicationPackage.Literals.COMM_EVENT_CONTENT_ASSOC__CONTENT_ID, newContentId);
+	public void setContent(Content newContent) {
+		eSet(CommunicationPackage.Literals.COMM_EVENT_CONTENT_ASSOC__CONTENT, newContent);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CommunicationEvent getCommunicationEvent() {
+		return (CommunicationEvent)eGet(CommunicationPackage.Literals.COMM_EVENT_CONTENT_ASSOC__COMMUNICATION_EVENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCommunicationEvent(CommunicationEvent newCommunicationEvent) {
+		eSet(CommunicationPackage.Literals.COMM_EVENT_CONTENT_ASSOC__COMMUNICATION_EVENT, newCommunicationEvent);
 	}
 
 	/**
@@ -188,6 +208,26 @@ public class CommEventContentAssocImpl extends EntityTypedImpl<CommContentAssocT
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(CommunicationPackage.Literals.COMM_EVENT_CONTENT_ASSOC__FROM_DATE, newFromDate);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CommContentAssocType getCommContentAssocType() {
+		return (CommContentAssocType)eGet(CommunicationPackage.Literals.COMM_EVENT_CONTENT_ASSOC__COMM_CONTENT_ASSOC_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCommContentAssocType(CommContentAssocType newCommContentAssocType) {
+		eSet(CommunicationPackage.Literals.COMM_EVENT_CONTENT_ASSOC__COMM_CONTENT_ASSOC_TYPE, newCommContentAssocType);
 	}
 
 	/**
@@ -266,46 +306,6 @@ public class CommEventContentAssocImpl extends EntityTypedImpl<CommContentAssocT
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CommunicationEvent getCommunicationEventId() {
-		return (CommunicationEvent)eGet(CommunicationPackage.Literals.COMM_EVENT_CONTENT_ASSOC__COMMUNICATION_EVENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCommunicationEventId(CommunicationEvent newCommunicationEventId) {
-		eSet(CommunicationPackage.Literals.COMM_EVENT_CONTENT_ASSOC__COMMUNICATION_EVENT_ID, newCommunicationEventId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CommContentAssocType getCommContentAssocTypeId() {
-		return (CommContentAssocType)eGet(CommunicationPackage.Literals.COMM_EVENT_CONTENT_ASSOC__COMM_CONTENT_ASSOC_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCommContentAssocTypeId(CommContentAssocType newCommContentAssocTypeId) {
-		eSet(CommunicationPackage.Literals.COMM_EVENT_CONTENT_ASSOC__COMM_CONTENT_ASSOC_TYPE_ID, newCommContentAssocTypeId);
 	}
 
 } //CommEventContentAssocImpl

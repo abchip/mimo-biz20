@@ -32,18 +32,18 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getProductContentTypeId <em>Product Content Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getProductContentType <em>Product Content Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getPurchaseFromDate <em>Purchase From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getPurchaseThruDate <em>Purchase Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getUseCountLimit <em>Use Count Limit</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getUseRoleTypeId <em>Use Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getUseRoleType <em>Use Role Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getUseTime <em>Use Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getUseTimeUomId <em>Use Time Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductContentImpl#getUseTimeUom <em>Use Time Uom</em>}</li>
  * </ul>
  *
  * @generated
@@ -165,8 +165,8 @@ public class ProductContentImpl extends EntityTypedImpl<ProductContentType> impl
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(ProductPackage.Literals.PRODUCT_CONTENT__CONTENT_ID, true);
+	public Product getProduct() {
+		return (Product)eGet(ProductPackage.Literals.PRODUCT_CONTENT__PRODUCT, true);
 	}
 
 	/**
@@ -175,8 +175,48 @@ public class ProductContentImpl extends EntityTypedImpl<ProductContentType> impl
 	 * @generated
 	 */
 	@Override
-	public void setContentId(Content newContentId) {
-		eSet(ProductPackage.Literals.PRODUCT_CONTENT__CONTENT_ID, newContentId);
+	public void setProduct(Product newProduct) {
+		eSet(ProductPackage.Literals.PRODUCT_CONTENT__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Content getContent() {
+		return (Content)eGet(ProductPackage.Literals.PRODUCT_CONTENT__CONTENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContent(Content newContent) {
+		eSet(ProductPackage.Literals.PRODUCT_CONTENT__CONTENT, newContent);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductContentType getProductContentType() {
+		return (ProductContentType)eGet(ProductPackage.Literals.PRODUCT_CONTENT__PRODUCT_CONTENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductContentType(ProductContentType newProductContentType) {
+		eSet(ProductPackage.Literals.PRODUCT_CONTENT__PRODUCT_CONTENT_TYPE, newProductContentType);
 	}
 
 	/**
@@ -305,8 +345,8 @@ public class ProductContentImpl extends EntityTypedImpl<ProductContentType> impl
 	 * @generated
 	 */
 	@Override
-	public RoleType getUseRoleTypeId() {
-		return (RoleType)eGet(ProductPackage.Literals.PRODUCT_CONTENT__USE_ROLE_TYPE_ID, true);
+	public RoleType getUseRoleType() {
+		return (RoleType)eGet(ProductPackage.Literals.PRODUCT_CONTENT__USE_ROLE_TYPE, true);
 	}
 
 	/**
@@ -315,8 +355,8 @@ public class ProductContentImpl extends EntityTypedImpl<ProductContentType> impl
 	 * @generated
 	 */
 	@Override
-	public void setUseRoleTypeId(RoleType newUseRoleTypeId) {
-		eSet(ProductPackage.Literals.PRODUCT_CONTENT__USE_ROLE_TYPE_ID, newUseRoleTypeId);
+	public void setUseRoleType(RoleType newUseRoleType) {
+		eSet(ProductPackage.Literals.PRODUCT_CONTENT__USE_ROLE_TYPE, newUseRoleType);
 	}
 
 	/**
@@ -345,8 +385,8 @@ public class ProductContentImpl extends EntityTypedImpl<ProductContentType> impl
 	 * @generated
 	 */
 	@Override
-	public Uom getUseTimeUomId() {
-		return (Uom)eGet(ProductPackage.Literals.PRODUCT_CONTENT__USE_TIME_UOM_ID, true);
+	public Uom getUseTimeUom() {
+		return (Uom)eGet(ProductPackage.Literals.PRODUCT_CONTENT__USE_TIME_UOM, true);
 	}
 
 	/**
@@ -355,8 +395,8 @@ public class ProductContentImpl extends EntityTypedImpl<ProductContentType> impl
 	 * @generated
 	 */
 	@Override
-	public void setUseTimeUomId(Uom newUseTimeUomId) {
-		eSet(ProductPackage.Literals.PRODUCT_CONTENT__USE_TIME_UOM_ID, newUseTimeUomId);
+	public void setUseTimeUom(Uom newUseTimeUom) {
+		eSet(ProductPackage.Literals.PRODUCT_CONTENT__USE_TIME_UOM, newUseTimeUom);
 	}
 
 	/**
@@ -395,46 +435,6 @@ public class ProductContentImpl extends EntityTypedImpl<ProductContentType> impl
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(ProductPackage.Literals.PRODUCT_CONTENT__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(ProductPackage.Literals.PRODUCT_CONTENT__PRODUCT_ID, newProductId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductContentType getProductContentTypeId() {
-		return (ProductContentType)eGet(ProductPackage.Literals.PRODUCT_CONTENT__PRODUCT_CONTENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductContentTypeId(ProductContentType newProductContentTypeId) {
-		eSet(ProductPackage.Literals.PRODUCT_CONTENT__PRODUCT_CONTENT_TYPE_ID, newProductContentTypeId);
 	}
 
 } //ProductContentImpl

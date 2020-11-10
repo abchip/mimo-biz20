@@ -30,12 +30,12 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoProductImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoProductImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoProductImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoProductImpl#getProductPromoId <em>Product Promo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoProductImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoProductImpl#getProductPromo <em>Product Promo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoProductImpl#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoProductImpl#getProductPromoActionSeqId <em>Product Promo Action Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoProductImpl#getProductPromoCondSeqId <em>Product Promo Cond Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoProductImpl#getProductPromoRuleId <em>Product Promo Rule Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoProductImpl#getProductPromoApplEnumId <em>Product Promo Appl Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoProductImpl#getProductPromoApplEnum <em>Product Promo Appl Enum</em>}</li>
  * </ul>
  *
  * @generated
@@ -157,6 +157,46 @@ public class ProductPromoProductImpl extends EntityIdentifiableImpl implements P
 	 * @generated
 	 */
 	@Override
+	public ProductPromo getProductPromo() {
+		return (ProductPromo)eGet(PromoPackage.Literals.PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPromo(ProductPromo newProductPromo) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO, newProductPromo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Product getProduct() {
+		return (Product)eGet(PromoPackage.Literals.PRODUCT_PROMO_PRODUCT__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_PRODUCT__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getProductPromoActionSeqId() {
 		return (String)eGet(PromoPackage.Literals.PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO_ACTION_SEQ_ID, true);
 	}
@@ -169,26 +209,6 @@ public class ProductPromoProductImpl extends EntityIdentifiableImpl implements P
 	@Override
 	public void setProductPromoActionSeqId(String newProductPromoActionSeqId) {
 		eSet(PromoPackage.Literals.PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO_ACTION_SEQ_ID, newProductPromoActionSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Enumeration getProductPromoApplEnumId() {
-		return (Enumeration)eGet(PromoPackage.Literals.PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO_APPL_ENUM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPromoApplEnumId(Enumeration newProductPromoApplEnumId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO_APPL_ENUM_ID, newProductPromoApplEnumId);
 	}
 
 	/**
@@ -275,8 +295,8 @@ public class ProductPromoProductImpl extends EntityIdentifiableImpl implements P
 	 * @generated
 	 */
 	@Override
-	public ProductPromo getProductPromoId() {
-		return (ProductPromo)eGet(PromoPackage.Literals.PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO_ID, true);
+	public Enumeration getProductPromoApplEnum() {
+		return (Enumeration)eGet(PromoPackage.Literals.PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO_APPL_ENUM, true);
 	}
 
 	/**
@@ -285,28 +305,8 @@ public class ProductPromoProductImpl extends EntityIdentifiableImpl implements P
 	 * @generated
 	 */
 	@Override
-	public void setProductPromoId(ProductPromo newProductPromoId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO_ID, newProductPromoId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(PromoPackage.Literals.PRODUCT_PROMO_PRODUCT__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_PRODUCT__PRODUCT_ID, newProductId);
+	public void setProductPromoApplEnum(Enumeration newProductPromoApplEnum) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO_APPL_ENUM, newProductPromoApplEnum);
 	}
 
 } //ProductPromoProductImpl

@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.theme.impl.VisualThemeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.theme.impl.VisualThemeImpl#getVisualThemeId <em>Visual Theme Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.theme.impl.VisualThemeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.theme.impl.VisualThemeImpl#getVisualThemeSetId <em>Visual Theme Set Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.theme.impl.VisualThemeImpl#getVisualThemeSet <em>Visual Theme Set</em>}</li>
  * </ul>
  *
  * @generated
@@ -171,8 +171,8 @@ public class VisualThemeImpl extends EntityIdentifiableImpl implements VisualThe
 	 * @generated
 	 */
 	@Override
-	public VisualThemeSet getVisualThemeSetId() {
-		return (VisualThemeSet)eGet(ThemePackage.Literals.VISUAL_THEME__VISUAL_THEME_SET_ID, true);
+	public VisualThemeSet getVisualThemeSet() {
+		return (VisualThemeSet)eGet(ThemePackage.Literals.VISUAL_THEME__VISUAL_THEME_SET, true);
 	}
 
 	/**
@@ -181,8 +181,8 @@ public class VisualThemeImpl extends EntityIdentifiableImpl implements VisualThe
 	 * @generated
 	 */
 	@Override
-	public void setVisualThemeSetId(VisualThemeSet newVisualThemeSetId) {
-		eSet(ThemePackage.Literals.VISUAL_THEME__VISUAL_THEME_SET_ID, newVisualThemeSetId);
+	public void setVisualThemeSet(VisualThemeSet newVisualThemeSet) {
+		eSet(ThemePackage.Literals.VISUAL_THEME__VISUAL_THEME_SET, newVisualThemeSet);
 	}
 
 	/**

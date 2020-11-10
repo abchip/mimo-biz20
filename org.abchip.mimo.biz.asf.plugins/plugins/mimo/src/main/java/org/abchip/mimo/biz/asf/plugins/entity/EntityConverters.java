@@ -52,9 +52,9 @@ public class EntityConverters implements ConverterLoader {
 			super(EntityIdentifiable.class, GenericValue.class);
 		}
 
-		public GenericValue convert(EntityIdentifiable obj) throws ConversionException {
+		public GenericValue convert(EntityIdentifiable entity) throws ConversionException {
 
-			Resource<?> resource = obj.getResource();
+			Resource<?> resource = entity.getResource();
 			if (resource == null)
 				return null;
 
@@ -68,7 +68,7 @@ public class EntityConverters implements ConverterLoader {
 				return null;
 
 			try {
-				GenericValue genericValue = EntityUtils.toBizEntity(delegator, obj);
+				GenericValue genericValue = EntityUtils.toBizEntity(delegator, entity);
 				return genericValue;
 			} catch (GeneralException e) {
 				return null;

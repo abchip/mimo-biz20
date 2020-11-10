@@ -34,8 +34,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupImpl#getCurrentFacilityGroupRollups <em>Current Facility Group Rollups</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupImpl#getFacilityGroupName <em>Facility Group Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupImpl#getFacilityGroupTypeId <em>Facility Group Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupImpl#getPrimaryParentGroupId <em>Primary Parent Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupImpl#getFacilityGroupType <em>Facility Group Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupImpl#getPrimaryParentGroup <em>Primary Parent Group</em>}</li>
  * </ul>
  *
  * @generated
@@ -197,8 +197,8 @@ public class FacilityGroupImpl extends EntityTypedImpl<FacilityGroupType> implem
 	 * @generated
 	 */
 	@Override
-	public FacilityGroupType getFacilityGroupTypeId() {
-		return (FacilityGroupType)eGet(FacilityPackage.Literals.FACILITY_GROUP__FACILITY_GROUP_TYPE_ID, true);
+	public FacilityGroupType getFacilityGroupType() {
+		return (FacilityGroupType)eGet(FacilityPackage.Literals.FACILITY_GROUP__FACILITY_GROUP_TYPE, true);
 	}
 
 	/**
@@ -207,8 +207,8 @@ public class FacilityGroupImpl extends EntityTypedImpl<FacilityGroupType> implem
 	 * @generated
 	 */
 	@Override
-	public void setFacilityGroupTypeId(FacilityGroupType newFacilityGroupTypeId) {
-		eSet(FacilityPackage.Literals.FACILITY_GROUP__FACILITY_GROUP_TYPE_ID, newFacilityGroupTypeId);
+	public void setFacilityGroupType(FacilityGroupType newFacilityGroupType) {
+		eSet(FacilityPackage.Literals.FACILITY_GROUP__FACILITY_GROUP_TYPE, newFacilityGroupType);
 	}
 
 	/**
@@ -217,8 +217,8 @@ public class FacilityGroupImpl extends EntityTypedImpl<FacilityGroupType> implem
 	 * @generated
 	 */
 	@Override
-	public FacilityGroup getPrimaryParentGroupId() {
-		return (FacilityGroup)eGet(FacilityPackage.Literals.FACILITY_GROUP__PRIMARY_PARENT_GROUP_ID, true);
+	public FacilityGroup getPrimaryParentGroup() {
+		return (FacilityGroup)eGet(FacilityPackage.Literals.FACILITY_GROUP__PRIMARY_PARENT_GROUP, true);
 	}
 
 	/**
@@ -227,8 +227,8 @@ public class FacilityGroupImpl extends EntityTypedImpl<FacilityGroupType> implem
 	 * @generated
 	 */
 	@Override
-	public void setPrimaryParentGroupId(FacilityGroup newPrimaryParentGroupId) {
-		eSet(FacilityPackage.Literals.FACILITY_GROUP__PRIMARY_PARENT_GROUP_ID, newPrimaryParentGroupId);
+	public void setPrimaryParentGroup(FacilityGroup newPrimaryParentGroup) {
+		eSet(FacilityPackage.Literals.FACILITY_GROUP__PRIMARY_PARENT_GROUP, newPrimaryParentGroup);
 	}
 
 	/**

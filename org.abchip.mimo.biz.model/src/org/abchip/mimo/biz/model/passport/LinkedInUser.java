@@ -23,7 +23,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.passport.LinkedInUser#getLinkedInUserId <em>Linked In User Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.LinkedInUser#getAccessToken <em>Access Token</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.LinkedInUser#getEnvPrefix <em>Env Prefix</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.passport.LinkedInUser#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.passport.LinkedInUser#getProductStore <em>Product Store</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.passport.PassportPackage#getLinkedInUser()
@@ -111,29 +111,25 @@ public interface LinkedInUser extends EntityIdentifiable, EntityInfo {
 	void setEnvPrefix(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Store Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Store</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store Id</em>' reference.
-	 * @see #setProductStoreId(ProductStore)
-	 * @see org.abchip.mimo.biz.model.passport.PassportPackage#getLinkedInUser_ProductStoreId()
+	 * @return the value of the '<em>Product Store</em>' reference.
+	 * @see #setProductStore(ProductStore)
+	 * @see org.abchip.mimo.biz.model.passport.PassportPackage#getLinkedInUser_ProductStore()
 	 * @model keys="productStoreId"
 	 * @generated
 	 */
-	ProductStore getProductStoreId();
+	ProductStore getProductStore();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.passport.LinkedInUser#getProductStoreId <em>Product Store Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.passport.LinkedInUser#getProductStore <em>Product Store</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store Id</em>' reference.
-	 * @see #getProductStoreId()
+	 * @param value the new value of the '<em>Product Store</em>' reference.
+	 * @see #getProductStore()
 	 * @generated
 	 */
-	void setProductStoreId(ProductStore value);
+	void setProductStore(ProductStore value);
 
 } // LinkedInUser

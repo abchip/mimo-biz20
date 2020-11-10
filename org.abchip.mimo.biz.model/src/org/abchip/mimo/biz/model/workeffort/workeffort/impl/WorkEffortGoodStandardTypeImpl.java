@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardTypeImpl#getWorkEffortGoodStdTypeId <em>Work Effort Good Std Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,8 +200,8 @@ public class WorkEffortGoodStandardTypeImpl extends EntityTypeImpl<WorkEffortGoo
 	 * @generated
 	 */
 	@Override
-	public WorkEffortGoodStandardType getParentTypeId() {
-		return (WorkEffortGoodStandardType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD_TYPE__PARENT_TYPE_ID, true);
+	public WorkEffortGoodStandardType getParentType() {
+		return (WorkEffortGoodStandardType)eGet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -210,8 +210,8 @@ public class WorkEffortGoodStandardTypeImpl extends EntityTypeImpl<WorkEffortGoo
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(WorkEffortGoodStandardType newParentTypeId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(WorkEffortGoodStandardType newParentType) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_GOOD_STANDARD_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

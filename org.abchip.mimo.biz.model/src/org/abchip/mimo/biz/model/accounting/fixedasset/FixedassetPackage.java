@@ -126,13 +126,13 @@ public interface FixedassetPackage extends EPackage {
 	int ACCOMMODATION_CLASS__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Parent Class Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Class</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ACCOMMODATION_CLASS__PARENT_CLASS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int ACCOMMODATION_CLASS__PARENT_CLASS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Accommodation Class</em>' class.
@@ -199,31 +199,31 @@ public interface FixedassetPackage extends EPackage {
 	int ACCOMMODATION_MAP__ACCOMMODATION_MAP_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Accommodation Class Id</b></em>' reference.
+	 * The feature id for the '<em><b>Accommodation Class</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ACCOMMODATION_MAP__ACCOMMODATION_CLASS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int ACCOMMODATION_MAP__ACCOMMODATION_CLASS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Accommodation Map Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Accommodation Map Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ACCOMMODATION_MAP__ACCOMMODATION_MAP_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int ACCOMMODATION_MAP__ACCOMMODATION_MAP_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ACCOMMODATION_MAP__FIXED_ASSET_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int ACCOMMODATION_MAP__FIXED_ASSET = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Number Of Spaces</b></em>' attribute.
@@ -381,13 +381,13 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET__FIXED_ASSET_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Acquire Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Acquire Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__ACQUIRE_ORDER_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int FIXED_ASSET__ACQUIRE_ORDER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Acquire Order Item Seq Id</b></em>' attribute.
@@ -408,22 +408,22 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET__ACTUAL_END_OF_LIFE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Calendar Id</b></em>' reference.
+	 * The feature id for the '<em><b>Calendar</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__CALENDAR_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int FIXED_ASSET__CALENDAR = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Class Enum Id</b></em>' reference.
+	 * The feature id for the '<em><b>Class Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__CLASS_ENUM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int FIXED_ASSET__CLASS_ENUM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Date Acquired</b></em>' attribute.
@@ -534,31 +534,31 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET__FIXED_ASSET_STD_COSTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__FIXED_ASSET_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
+	int FIXED_ASSET__FIXED_ASSET_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
-	 * The feature id for the '<em><b>Instance Of Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Instance Of Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__INSTANCE_OF_PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
+	int FIXED_ASSET__INSTANCE_OF_PRODUCT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
-	 * The feature id for the '<em><b>Located At Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Located At Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__LOCATED_AT_FACILITY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
+	int FIXED_ASSET__LOCATED_AT_FACILITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Located At Location Seq Id</b></em>' attribute.
@@ -570,22 +570,22 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET__LOCATED_AT_LOCATION_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
 
 	/**
-	 * The feature id for the '<em><b>Parent Fixed Asset Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Fixed Asset</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__PARENT_FIXED_ASSET_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
+	int FIXED_ASSET__PARENT_FIXED_ASSET = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
+	int FIXED_ASSET__PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Production Capacity</b></em>' attribute.
@@ -615,13 +615,13 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET__PURCHASE_COST_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
 
 	/**
-	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__ROLE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
+	int FIXED_ASSET__ROLE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Salvage Value</b></em>' attribute.
@@ -642,13 +642,13 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET__SERIAL_NUMBER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 33;
 
 	/**
-	 * The feature id for the '<em><b>Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 34;
+	int FIXED_ASSET__UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 34;
 
 	/**
 	 * The number of structural features of the '<em>Fixed Asset</em>' class.
@@ -706,13 +706,13 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_ATTRIBUTE__FIXED_ASSET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FIXED_ASSET_ATTRIBUTE__FIXED_ASSET = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -797,22 +797,22 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_DEP_METHOD__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Depreciation Custom Method Id</b></em>' reference.
+	 * The feature id for the '<em><b>Depreciation Custom Method</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_DEP_METHOD__DEPRECIATION_CUSTOM_METHOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FIXED_ASSET_DEP_METHOD__DEPRECIATION_CUSTOM_METHOD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_DEP_METHOD__FIXED_ASSET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int FIXED_ASSET_DEP_METHOD__FIXED_ASSET = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -888,22 +888,22 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_GEO_POINT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_GEO_POINT__FIXED_ASSET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FIXED_ASSET_GEO_POINT__FIXED_ASSET = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Geo Point Id</b></em>' reference.
+	 * The feature id for the '<em><b>Geo Point</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_GEO_POINT__GEO_POINT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int FIXED_ASSET_GEO_POINT__GEO_POINT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -979,22 +979,22 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_IDENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_IDENT__FIXED_ASSET_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int FIXED_ASSET_IDENT__FIXED_ASSET = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Ident Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset Ident Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_IDENT__FIXED_ASSET_IDENT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int FIXED_ASSET_IDENT__FIXED_ASSET_IDENT_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Id Value</b></em>' attribute.
@@ -1143,13 +1143,13 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_MAINT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_MAINT__FIXED_ASSET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FIXED_ASSET_MAINT__FIXED_ASSET = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Maint Hist Seq Id</b></em>' attribute.
@@ -1161,13 +1161,13 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_MAINT__MAINT_HIST_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Interval Meter Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Interval Meter Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_MAINT__INTERVAL_METER_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int FIXED_ASSET_MAINT__INTERVAL_METER_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Interval Quantity</b></em>' attribute.
@@ -1179,13 +1179,13 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_MAINT__INTERVAL_QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Interval Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Interval Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_MAINT__INTERVAL_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int FIXED_ASSET_MAINT__INTERVAL_UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Product Maint Seq Id</b></em>' attribute.
@@ -1197,40 +1197,40 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_MAINT__PRODUCT_MAINT_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Product Maint Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Maint Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_MAINT__PRODUCT_MAINT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int FIXED_ASSET_MAINT__PRODUCT_MAINT_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Purchase Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Purchase Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_MAINT__PURCHASE_ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int FIXED_ASSET_MAINT__PURCHASE_ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
-	 * The feature id for the '<em><b>Schedule Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Schedule Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_MAINT__SCHEDULE_WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
+	int FIXED_ASSET_MAINT__SCHEDULE_WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
-	 * The feature id for the '<em><b>Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_MAINT__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
+	int FIXED_ASSET_MAINT__STATUS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The number of structural features of the '<em>Fixed Asset Maint</em>' class.
@@ -1288,22 +1288,22 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_MAINT_ORDER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_MAINT_ORDER__FIXED_ASSET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FIXED_ASSET_MAINT_ORDER__FIXED_ASSET = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_MAINT_ORDER__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int FIXED_ASSET_MAINT_ORDER__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Maint Hist Seq Id</b></em>' attribute.
@@ -1379,13 +1379,13 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_METER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Meter Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Meter Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_METER__PRODUCT_METER_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FIXED_ASSET_METER__PRODUCT_METER_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' attribute.
@@ -1497,31 +1497,31 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_PRODUCT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_PRODUCT__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int FIXED_ASSET_PRODUCT__PRODUCT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_PRODUCT__FIXED_ASSET_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int FIXED_ASSET_PRODUCT__FIXED_ASSET = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Product Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset Product Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_PRODUCT__FIXED_ASSET_PRODUCT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int FIXED_ASSET_PRODUCT__FIXED_ASSET_PRODUCT_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1551,13 +1551,13 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_PRODUCT__QUANTITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Quantity Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Quantity Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_PRODUCT__QUANTITY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int FIXED_ASSET_PRODUCT__QUANTITY_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -1715,13 +1715,13 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_REGISTRATION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_REGISTRATION__FIXED_ASSET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FIXED_ASSET_REGISTRATION__FIXED_ASSET = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1733,13 +1733,13 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_REGISTRATION__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Gov Agency Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Gov Agency Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_REGISTRATION__GOV_AGENCY_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int FIXED_ASSET_REGISTRATION__GOV_AGENCY_PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>License Number</b></em>' attribute.
@@ -1833,22 +1833,22 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_STD_COST__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_STD_COST__FIXED_ASSET_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int FIXED_ASSET_STD_COST__FIXED_ASSET = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Std Cost Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset Std Cost Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_STD_COST__FIXED_ASSET_STD_COST_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int FIXED_ASSET_STD_COST__FIXED_ASSET_STD_COST_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1869,13 +1869,13 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_STD_COST__AMOUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Amount Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Amount Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_STD_COST__AMOUNT_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int FIXED_ASSET_STD_COST__AMOUNT_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -1978,13 +1978,13 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_STD_COST_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_STD_COST_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int FIXED_ASSET_STD_COST_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Fixed Asset Std Cost Type</em>' class.
@@ -2087,13 +2087,13 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
+	int FIXED_ASSET_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Fixed Asset Type</em>' class.
@@ -2151,13 +2151,13 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_TYPE_ATTR__FIXED_ASSET_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FIXED_ASSET_TYPE_ATTR__FIXED_ASSET_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -2233,76 +2233,76 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET_TYPE_GL_ACCOUNT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_TYPE_GL_ACCOUNT__FIXED_ASSET_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int FIXED_ASSET_TYPE_GL_ACCOUNT__FIXED_ASSET_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_TYPE_GL_ACCOUNT__FIXED_ASSET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int FIXED_ASSET_TYPE_GL_ACCOUNT__FIXED_ASSET = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Organization Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Organization Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int FIXED_ASSET_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Acc Dep Gl Account Id</b></em>' reference.
+	 * The feature id for the '<em><b>Acc Dep Gl Account</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_TYPE_GL_ACCOUNT__ACC_DEP_GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int FIXED_ASSET_TYPE_GL_ACCOUNT__ACC_DEP_GL_ACCOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Asset Gl Account Id</b></em>' reference.
+	 * The feature id for the '<em><b>Asset Gl Account</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_TYPE_GL_ACCOUNT__ASSET_GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int FIXED_ASSET_TYPE_GL_ACCOUNT__ASSET_GL_ACCOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Dep Gl Account Id</b></em>' reference.
+	 * The feature id for the '<em><b>Dep Gl Account</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_TYPE_GL_ACCOUNT__DEP_GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int FIXED_ASSET_TYPE_GL_ACCOUNT__DEP_GL_ACCOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Loss Gl Account Id</b></em>' reference.
+	 * The feature id for the '<em><b>Loss Gl Account</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_TYPE_GL_ACCOUNT__LOSS_GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int FIXED_ASSET_TYPE_GL_ACCOUNT__LOSS_GL_ACCOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Profit Gl Account Id</b></em>' reference.
+	 * The feature id for the '<em><b>Profit Gl Account</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_TYPE_GL_ACCOUNT__PROFIT_GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int FIXED_ASSET_TYPE_GL_ACCOUNT__PROFIT_GL_ACCOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Fixed Asset Type Gl Account</em>' class.
@@ -2360,31 +2360,31 @@ public interface FixedassetPackage extends EPackage {
 	int PARTY_FIXED_ASSET_ASSIGNMENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_FIXED_ASSET_ASSIGNMENT__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PARTY_FIXED_ASSET_ASSIGNMENT__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_FIXED_ASSET_ASSIGNMENT__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PARTY_FIXED_ASSET_ASSIGNMENT__ROLE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fixed Asset</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_FIXED_ASSET_ASSIGNMENT__FIXED_ASSET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int PARTY_FIXED_ASSET_ASSIGNMENT__FIXED_ASSET = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -2414,13 +2414,13 @@ public interface FixedassetPackage extends EPackage {
 	int PARTY_FIXED_ASSET_ASSIGNMENT__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_FIXED_ASSET_ASSIGNMENT__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int PARTY_FIXED_ASSET_ASSIGNMENT__STATUS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -2474,15 +2474,15 @@ public interface FixedassetPackage extends EPackage {
 	EAttribute getAccommodationClass_Description();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationClass#getParentClassId <em>Parent Class Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationClass#getParentClass <em>Parent Class</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Class Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationClass#getParentClassId()
+	 * @return the meta object for the reference '<em>Parent Class</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationClass#getParentClass()
 	 * @see #getAccommodationClass()
 	 * @generated
 	 */
-	EReference getAccommodationClass_ParentClassId();
+	EReference getAccommodationClass_ParentClass();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap <em>Accommodation Map</em>}'.
@@ -2506,37 +2506,37 @@ public interface FixedassetPackage extends EPackage {
 	EAttribute getAccommodationMap_AccommodationMapId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getAccommodationClassId <em>Accommodation Class Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getAccommodationClass <em>Accommodation Class</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Accommodation Class Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getAccommodationClassId()
+	 * @return the meta object for the reference '<em>Accommodation Class</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getAccommodationClass()
 	 * @see #getAccommodationMap()
 	 * @generated
 	 */
-	EReference getAccommodationMap_AccommodationClassId();
+	EReference getAccommodationMap_AccommodationClass();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getAccommodationMapTypeId <em>Accommodation Map Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getAccommodationMapType <em>Accommodation Map Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Accommodation Map Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getAccommodationMapTypeId()
+	 * @return the meta object for the reference '<em>Accommodation Map Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getAccommodationMapType()
 	 * @see #getAccommodationMap()
 	 * @generated
 	 */
-	EReference getAccommodationMap_AccommodationMapTypeId();
+	EReference getAccommodationMap_AccommodationMapType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getFixedAssetId <em>Fixed Asset Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getFixedAsset <em>Fixed Asset</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getFixedAssetId()
+	 * @return the meta object for the reference '<em>Fixed Asset</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getFixedAsset()
 	 * @see #getAccommodationMap()
 	 * @generated
 	 */
-	EReference getAccommodationMap_FixedAssetId();
+	EReference getAccommodationMap_FixedAsset();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap#getNumberOfSpaces <em>Number Of Spaces</em>}'.
@@ -2603,15 +2603,15 @@ public interface FixedassetPackage extends EPackage {
 	EAttribute getFixedAsset_FixedAssetId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getAcquireOrderId <em>Acquire Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getAcquireOrder <em>Acquire Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Acquire Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getAcquireOrderId()
+	 * @return the meta object for the reference '<em>Acquire Order</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getAcquireOrder()
 	 * @see #getFixedAsset()
 	 * @generated
 	 */
-	EReference getFixedAsset_AcquireOrderId();
+	EReference getFixedAsset_AcquireOrder();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getAcquireOrderItemSeqId <em>Acquire Order Item Seq Id</em>}'.
@@ -2636,26 +2636,26 @@ public interface FixedassetPackage extends EPackage {
 	EAttribute getFixedAsset_ActualEndOfLife();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getCalendarId <em>Calendar Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getCalendar <em>Calendar</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Calendar Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getCalendarId()
+	 * @return the meta object for the reference '<em>Calendar</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getCalendar()
 	 * @see #getFixedAsset()
 	 * @generated
 	 */
-	EReference getFixedAsset_CalendarId();
+	EReference getFixedAsset_Calendar();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getClassEnumId <em>Class Enum Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getClassEnum <em>Class Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Class Enum Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getClassEnumId()
+	 * @return the meta object for the reference '<em>Class Enum</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getClassEnum()
 	 * @see #getFixedAsset()
 	 * @generated
 	 */
-	EReference getFixedAsset_ClassEnumId();
+	EReference getFixedAsset_ClassEnum();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getDateAcquired <em>Date Acquired</em>}'.
@@ -2790,37 +2790,37 @@ public interface FixedassetPackage extends EPackage {
 	EReference getFixedAsset_FixedAssetStdCosts();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetTypeId <em>Fixed Asset Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetType <em>Fixed Asset Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetTypeId()
+	 * @return the meta object for the reference '<em>Fixed Asset Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetType()
 	 * @see #getFixedAsset()
 	 * @generated
 	 */
-	EReference getFixedAsset_FixedAssetTypeId();
+	EReference getFixedAsset_FixedAssetType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getInstanceOfProductId <em>Instance Of Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getInstanceOfProduct <em>Instance Of Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Instance Of Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getInstanceOfProductId()
+	 * @return the meta object for the reference '<em>Instance Of Product</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getInstanceOfProduct()
 	 * @see #getFixedAsset()
 	 * @generated
 	 */
-	EReference getFixedAsset_InstanceOfProductId();
+	EReference getFixedAsset_InstanceOfProduct();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getLocatedAtFacilityId <em>Located At Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getLocatedAtFacility <em>Located At Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Located At Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getLocatedAtFacilityId()
+	 * @return the meta object for the reference '<em>Located At Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getLocatedAtFacility()
 	 * @see #getFixedAsset()
 	 * @generated
 	 */
-	EReference getFixedAsset_LocatedAtFacilityId();
+	EReference getFixedAsset_LocatedAtFacility();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getLocatedAtLocationSeqId <em>Located At Location Seq Id</em>}'.
@@ -2834,26 +2834,26 @@ public interface FixedassetPackage extends EPackage {
 	EAttribute getFixedAsset_LocatedAtLocationSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getParentFixedAssetId <em>Parent Fixed Asset Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getParentFixedAsset <em>Parent Fixed Asset</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Fixed Asset Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getParentFixedAssetId()
+	 * @return the meta object for the reference '<em>Parent Fixed Asset</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getParentFixedAsset()
 	 * @see #getFixedAsset()
 	 * @generated
 	 */
-	EReference getFixedAsset_ParentFixedAssetId();
+	EReference getFixedAsset_ParentFixedAsset();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getParty()
 	 * @see #getFixedAsset()
 	 * @generated
 	 */
-	EReference getFixedAsset_PartyId();
+	EReference getFixedAsset_Party();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getProductionCapacity <em>Production Capacity</em>}'.
@@ -2889,15 +2889,15 @@ public interface FixedassetPackage extends EPackage {
 	EAttribute getFixedAsset_PurchaseCostUomId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getRoleTypeId <em>Role Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getRoleType <em>Role Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Role Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getRoleTypeId()
+	 * @return the meta object for the reference '<em>Role Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getRoleType()
 	 * @see #getFixedAsset()
 	 * @generated
 	 */
-	EReference getFixedAsset_RoleTypeId();
+	EReference getFixedAsset_RoleType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getSalvageValue <em>Salvage Value</em>}'.
@@ -2922,15 +2922,15 @@ public interface FixedassetPackage extends EPackage {
 	EAttribute getFixedAsset_SerialNumber();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getUomId <em>Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getUom <em>Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getUomId()
+	 * @return the meta object for the reference '<em>Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getUom()
 	 * @see #getFixedAsset()
 	 * @generated
 	 */
-	EReference getFixedAsset_UomId();
+	EReference getFixedAsset_Uom();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetAttribute <em>Fixed Asset Attribute</em>}'.
@@ -2943,15 +2943,15 @@ public interface FixedassetPackage extends EPackage {
 	EClass getFixedAssetAttribute();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetAttribute#getFixedAssetId <em>Fixed Asset Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetAttribute#getFixedAsset <em>Fixed Asset</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetAttribute#getFixedAssetId()
+	 * @return the meta object for the reference '<em>Fixed Asset</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetAttribute#getFixedAsset()
 	 * @see #getFixedAssetAttribute()
 	 * @generated
 	 */
-	EReference getFixedAssetAttribute_FixedAssetId();
+	EReference getFixedAssetAttribute_FixedAsset();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetAttribute#getAttrName <em>Attr Name</em>}'.
@@ -2997,26 +2997,26 @@ public interface FixedassetPackage extends EPackage {
 	EClass getFixedAssetDepMethod();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod#getDepreciationCustomMethodId <em>Depreciation Custom Method Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod#getDepreciationCustomMethod <em>Depreciation Custom Method</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Depreciation Custom Method Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod#getDepreciationCustomMethodId()
+	 * @return the meta object for the reference '<em>Depreciation Custom Method</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod#getDepreciationCustomMethod()
 	 * @see #getFixedAssetDepMethod()
 	 * @generated
 	 */
-	EReference getFixedAssetDepMethod_DepreciationCustomMethodId();
+	EReference getFixedAssetDepMethod_DepreciationCustomMethod();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod#getFixedAssetId <em>Fixed Asset Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod#getFixedAsset <em>Fixed Asset</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod#getFixedAssetId()
+	 * @return the meta object for the reference '<em>Fixed Asset</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod#getFixedAsset()
 	 * @see #getFixedAssetDepMethod()
 	 * @generated
 	 */
-	EReference getFixedAssetDepMethod_FixedAssetId();
+	EReference getFixedAssetDepMethod_FixedAsset();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod#getFromDate <em>From Date</em>}'.
@@ -3051,26 +3051,26 @@ public interface FixedassetPackage extends EPackage {
 	EClass getFixedAssetGeoPoint();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetGeoPoint#getFixedAssetId <em>Fixed Asset Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetGeoPoint#getFixedAsset <em>Fixed Asset</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetGeoPoint#getFixedAssetId()
+	 * @return the meta object for the reference '<em>Fixed Asset</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetGeoPoint#getFixedAsset()
 	 * @see #getFixedAssetGeoPoint()
 	 * @generated
 	 */
-	EReference getFixedAssetGeoPoint_FixedAssetId();
+	EReference getFixedAssetGeoPoint_FixedAsset();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetGeoPoint#getGeoPointId <em>Geo Point Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetGeoPoint#getGeoPoint <em>Geo Point</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Geo Point Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetGeoPoint#getGeoPointId()
+	 * @return the meta object for the reference '<em>Geo Point</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetGeoPoint#getGeoPoint()
 	 * @see #getFixedAssetGeoPoint()
 	 * @generated
 	 */
-	EReference getFixedAssetGeoPoint_GeoPointId();
+	EReference getFixedAssetGeoPoint_GeoPoint();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetGeoPoint#getFromDate <em>From Date</em>}'.
@@ -3105,26 +3105,26 @@ public interface FixedassetPackage extends EPackage {
 	EClass getFixedAssetIdent();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetIdent#getFixedAssetId <em>Fixed Asset Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetIdent#getFixedAsset <em>Fixed Asset</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetIdent#getFixedAssetId()
+	 * @return the meta object for the reference '<em>Fixed Asset</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetIdent#getFixedAsset()
 	 * @see #getFixedAssetIdent()
 	 * @generated
 	 */
-	EReference getFixedAssetIdent_FixedAssetId();
+	EReference getFixedAssetIdent_FixedAsset();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetIdent#getFixedAssetIdentTypeId <em>Fixed Asset Ident Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetIdent#getFixedAssetIdentType <em>Fixed Asset Ident Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Ident Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetIdent#getFixedAssetIdentTypeId()
+	 * @return the meta object for the reference '<em>Fixed Asset Ident Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetIdent#getFixedAssetIdentType()
 	 * @see #getFixedAssetIdent()
 	 * @generated
 	 */
-	EReference getFixedAssetIdent_FixedAssetIdentTypeId();
+	EReference getFixedAssetIdent_FixedAssetIdentType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetIdent#getIdValue <em>Id Value</em>}'.
@@ -3180,15 +3180,15 @@ public interface FixedassetPackage extends EPackage {
 	EClass getFixedAssetMaint();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getFixedAssetId <em>Fixed Asset Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getFixedAsset <em>Fixed Asset</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getFixedAssetId()
+	 * @return the meta object for the reference '<em>Fixed Asset</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getFixedAsset()
 	 * @see #getFixedAssetMaint()
 	 * @generated
 	 */
-	EReference getFixedAssetMaint_FixedAssetId();
+	EReference getFixedAssetMaint_FixedAsset();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getMaintHistSeqId <em>Maint Hist Seq Id</em>}'.
@@ -3202,15 +3202,15 @@ public interface FixedassetPackage extends EPackage {
 	EAttribute getFixedAssetMaint_MaintHistSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getIntervalMeterTypeId <em>Interval Meter Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getIntervalMeterType <em>Interval Meter Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Interval Meter Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getIntervalMeterTypeId()
+	 * @return the meta object for the reference '<em>Interval Meter Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getIntervalMeterType()
 	 * @see #getFixedAssetMaint()
 	 * @generated
 	 */
-	EReference getFixedAssetMaint_IntervalMeterTypeId();
+	EReference getFixedAssetMaint_IntervalMeterType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getIntervalQuantity <em>Interval Quantity</em>}'.
@@ -3224,15 +3224,15 @@ public interface FixedassetPackage extends EPackage {
 	EAttribute getFixedAssetMaint_IntervalQuantity();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getIntervalUomId <em>Interval Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getIntervalUom <em>Interval Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Interval Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getIntervalUomId()
+	 * @return the meta object for the reference '<em>Interval Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getIntervalUom()
 	 * @see #getFixedAssetMaint()
 	 * @generated
 	 */
-	EReference getFixedAssetMaint_IntervalUomId();
+	EReference getFixedAssetMaint_IntervalUom();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getProductMaintSeqId <em>Product Maint Seq Id</em>}'.
@@ -3246,48 +3246,48 @@ public interface FixedassetPackage extends EPackage {
 	EAttribute getFixedAssetMaint_ProductMaintSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getProductMaintTypeId <em>Product Maint Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getProductMaintType <em>Product Maint Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Maint Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getProductMaintTypeId()
+	 * @return the meta object for the reference '<em>Product Maint Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getProductMaintType()
 	 * @see #getFixedAssetMaint()
 	 * @generated
 	 */
-	EReference getFixedAssetMaint_ProductMaintTypeId();
+	EReference getFixedAssetMaint_ProductMaintType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getPurchaseOrderId <em>Purchase Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getPurchaseOrder <em>Purchase Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Purchase Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getPurchaseOrderId()
+	 * @return the meta object for the reference '<em>Purchase Order</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getPurchaseOrder()
 	 * @see #getFixedAssetMaint()
 	 * @generated
 	 */
-	EReference getFixedAssetMaint_PurchaseOrderId();
+	EReference getFixedAssetMaint_PurchaseOrder();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getScheduleWorkEffortId <em>Schedule Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getScheduleWorkEffort <em>Schedule Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Schedule Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getScheduleWorkEffortId()
+	 * @return the meta object for the reference '<em>Schedule Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getScheduleWorkEffort()
 	 * @see #getFixedAssetMaint()
 	 * @generated
 	 */
-	EReference getFixedAssetMaint_ScheduleWorkEffortId();
+	EReference getFixedAssetMaint_ScheduleWorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getStatusId <em>Status Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getStatus <em>Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getStatusId()
+	 * @return the meta object for the reference '<em>Status</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getStatus()
 	 * @see #getFixedAssetMaint()
 	 * @generated
 	 */
-	EReference getFixedAssetMaint_StatusId();
+	EReference getFixedAssetMaint_Status();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder <em>Fixed Asset Maint Order</em>}'.
@@ -3300,15 +3300,26 @@ public interface FixedassetPackage extends EPackage {
 	EClass getFixedAssetMaintOrder();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getFixedAssetId <em>Fixed Asset Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getFixedAsset <em>Fixed Asset</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getFixedAssetId()
+	 * @return the meta object for the reference '<em>Fixed Asset</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getFixedAsset()
 	 * @see #getFixedAssetMaintOrder()
 	 * @generated
 	 */
-	EReference getFixedAssetMaintOrder_FixedAssetId();
+	EReference getFixedAssetMaintOrder_FixedAsset();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getOrder <em>Order</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getOrder()
+	 * @see #getFixedAssetMaintOrder()
+	 * @generated
+	 */
+	EReference getFixedAssetMaintOrder_Order();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getMaintHistSeqId <em>Maint Hist Seq Id</em>}'.
@@ -3320,17 +3331,6 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getFixedAssetMaintOrder_MaintHistSeqId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getOrderId <em>Order Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getOrderId()
-	 * @see #getFixedAssetMaintOrder()
-	 * @generated
-	 */
-	EReference getFixedAssetMaintOrder_OrderId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaintOrder#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -3354,6 +3354,17 @@ public interface FixedassetPackage extends EPackage {
 	EClass getFixedAssetMeter();
 
 	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMeter#getProductMeterType <em>Product Meter Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Product Meter Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMeter#getProductMeterType()
+	 * @see #getFixedAssetMeter()
+	 * @generated
+	 */
+	EReference getFixedAssetMeter_ProductMeterType();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMeter#getFixedAssetId <em>Fixed Asset Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3363,17 +3374,6 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getFixedAssetMeter_FixedAssetId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMeter#getProductMeterTypeId <em>Product Meter Type Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Meter Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMeter#getProductMeterTypeId()
-	 * @see #getFixedAssetMeter()
-	 * @generated
-	 */
-	EReference getFixedAssetMeter_ProductMeterTypeId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMeter#getReadingDate <em>Reading Date</em>}'.
@@ -3441,37 +3441,37 @@ public interface FixedassetPackage extends EPackage {
 	EClass getFixedAssetProduct();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetProduct#getFixedAssetId <em>Fixed Asset Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetProduct#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetProduct#getFixedAssetId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetProduct#getProduct()
 	 * @see #getFixedAssetProduct()
 	 * @generated
 	 */
-	EReference getFixedAssetProduct_FixedAssetId();
+	EReference getFixedAssetProduct_Product();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetProduct#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetProduct#getFixedAsset <em>Fixed Asset</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetProduct#getProductId()
+	 * @return the meta object for the reference '<em>Fixed Asset</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetProduct#getFixedAsset()
 	 * @see #getFixedAssetProduct()
 	 * @generated
 	 */
-	EReference getFixedAssetProduct_ProductId();
+	EReference getFixedAssetProduct_FixedAsset();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetProduct#getFixedAssetProductTypeId <em>Fixed Asset Product Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetProduct#getFixedAssetProductType <em>Fixed Asset Product Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Product Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetProduct#getFixedAssetProductTypeId()
+	 * @return the meta object for the reference '<em>Fixed Asset Product Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetProduct#getFixedAssetProductType()
 	 * @see #getFixedAssetProduct()
 	 * @generated
 	 */
-	EReference getFixedAssetProduct_FixedAssetProductTypeId();
+	EReference getFixedAssetProduct_FixedAssetProductType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetProduct#getFromDate <em>From Date</em>}'.
@@ -3507,15 +3507,15 @@ public interface FixedassetPackage extends EPackage {
 	EAttribute getFixedAssetProduct_Quantity();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetProduct#getQuantityUomId <em>Quantity Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetProduct#getQuantityUom <em>Quantity Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Quantity Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetProduct#getQuantityUomId()
+	 * @return the meta object for the reference '<em>Quantity Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetProduct#getQuantityUom()
 	 * @see #getFixedAssetProduct()
 	 * @generated
 	 */
-	EReference getFixedAssetProduct_QuantityUomId();
+	EReference getFixedAssetProduct_QuantityUom();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetProduct#getSequenceNum <em>Sequence Num</em>}'.
@@ -3582,15 +3582,15 @@ public interface FixedassetPackage extends EPackage {
 	EClass getFixedAssetRegistration();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetRegistration#getFixedAssetId <em>Fixed Asset Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetRegistration#getFixedAsset <em>Fixed Asset</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetRegistration#getFixedAssetId()
+	 * @return the meta object for the reference '<em>Fixed Asset</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetRegistration#getFixedAsset()
 	 * @see #getFixedAssetRegistration()
 	 * @generated
 	 */
-	EReference getFixedAssetRegistration_FixedAssetId();
+	EReference getFixedAssetRegistration_FixedAsset();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetRegistration#getFromDate <em>From Date</em>}'.
@@ -3604,15 +3604,15 @@ public interface FixedassetPackage extends EPackage {
 	EAttribute getFixedAssetRegistration_FromDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetRegistration#getGovAgencyPartyId <em>Gov Agency Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetRegistration#getGovAgencyParty <em>Gov Agency Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Gov Agency Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetRegistration#getGovAgencyPartyId()
+	 * @return the meta object for the reference '<em>Gov Agency Party</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetRegistration#getGovAgencyParty()
 	 * @see #getFixedAssetRegistration()
 	 * @generated
 	 */
-	EReference getFixedAssetRegistration_GovAgencyPartyId();
+	EReference getFixedAssetRegistration_GovAgencyParty();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetRegistration#getLicenseNumber <em>License Number</em>}'.
@@ -3669,26 +3669,26 @@ public interface FixedassetPackage extends EPackage {
 	EClass getFixedAssetStdCost();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCost#getFixedAssetId <em>Fixed Asset Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCost#getFixedAsset <em>Fixed Asset</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCost#getFixedAssetId()
+	 * @return the meta object for the reference '<em>Fixed Asset</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCost#getFixedAsset()
 	 * @see #getFixedAssetStdCost()
 	 * @generated
 	 */
-	EReference getFixedAssetStdCost_FixedAssetId();
+	EReference getFixedAssetStdCost_FixedAsset();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCost#getFixedAssetStdCostTypeId <em>Fixed Asset Std Cost Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCost#getFixedAssetStdCostType <em>Fixed Asset Std Cost Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Std Cost Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCost#getFixedAssetStdCostTypeId()
+	 * @return the meta object for the reference '<em>Fixed Asset Std Cost Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCost#getFixedAssetStdCostType()
 	 * @see #getFixedAssetStdCost()
 	 * @generated
 	 */
-	EReference getFixedAssetStdCost_FixedAssetStdCostTypeId();
+	EReference getFixedAssetStdCost_FixedAssetStdCostType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCost#getFromDate <em>From Date</em>}'.
@@ -3713,15 +3713,15 @@ public interface FixedassetPackage extends EPackage {
 	EAttribute getFixedAssetStdCost_Amount();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCost#getAmountUomId <em>Amount Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCost#getAmountUom <em>Amount Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Amount Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCost#getAmountUomId()
+	 * @return the meta object for the reference '<em>Amount Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCost#getAmountUom()
 	 * @see #getFixedAssetStdCost()
 	 * @generated
 	 */
-	EReference getFixedAssetStdCost_AmountUomId();
+	EReference getFixedAssetStdCost_AmountUom();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCost#getThruDate <em>Thru Date</em>}'.
@@ -3778,15 +3778,15 @@ public interface FixedassetPackage extends EPackage {
 	EAttribute getFixedAssetStdCostType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCostType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCostType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCostType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCostType#getParentType()
 	 * @see #getFixedAssetStdCostType()
 	 * @generated
 	 */
-	EReference getFixedAssetStdCostType_ParentTypeId();
+	EReference getFixedAssetStdCostType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetType <em>Fixed Asset Type</em>}'.
@@ -3843,15 +3843,15 @@ public interface FixedassetPackage extends EPackage {
 	EAttribute getFixedAssetType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetType#getParentType()
 	 * @see #getFixedAssetType()
 	 * @generated
 	 */
-	EReference getFixedAssetType_ParentTypeId();
+	EReference getFixedAssetType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeAttr <em>Fixed Asset Type Attr</em>}'.
@@ -3864,15 +3864,15 @@ public interface FixedassetPackage extends EPackage {
 	EClass getFixedAssetTypeAttr();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeAttr#getFixedAssetTypeId <em>Fixed Asset Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeAttr#getFixedAssetType <em>Fixed Asset Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeAttr#getFixedAssetTypeId()
+	 * @return the meta object for the reference '<em>Fixed Asset Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeAttr#getFixedAssetType()
 	 * @see #getFixedAssetTypeAttr()
 	 * @generated
 	 */
-	EReference getFixedAssetTypeAttr_FixedAssetTypeId();
+	EReference getFixedAssetTypeAttr_FixedAssetType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeAttr#getAttrName <em>Attr Name</em>}'.
@@ -3907,92 +3907,92 @@ public interface FixedassetPackage extends EPackage {
 	EClass getFixedAssetTypeGlAccount();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getFixedAssetTypeId <em>Fixed Asset Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getFixedAssetType <em>Fixed Asset Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getFixedAssetTypeId()
+	 * @return the meta object for the reference '<em>Fixed Asset Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getFixedAssetType()
 	 * @see #getFixedAssetTypeGlAccount()
 	 * @generated
 	 */
-	EReference getFixedAssetTypeGlAccount_FixedAssetTypeId();
+	EReference getFixedAssetTypeGlAccount_FixedAssetType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getFixedAssetId <em>Fixed Asset Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getFixedAsset <em>Fixed Asset</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getFixedAssetId()
+	 * @return the meta object for the reference '<em>Fixed Asset</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getFixedAsset()
 	 * @see #getFixedAssetTypeGlAccount()
 	 * @generated
 	 */
-	EReference getFixedAssetTypeGlAccount_FixedAssetId();
+	EReference getFixedAssetTypeGlAccount_FixedAsset();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getOrganizationPartyId <em>Organization Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getOrganizationParty <em>Organization Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Organization Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getOrganizationPartyId()
+	 * @return the meta object for the reference '<em>Organization Party</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getOrganizationParty()
 	 * @see #getFixedAssetTypeGlAccount()
 	 * @generated
 	 */
-	EReference getFixedAssetTypeGlAccount_OrganizationPartyId();
+	EReference getFixedAssetTypeGlAccount_OrganizationParty();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getAccDepGlAccountId <em>Acc Dep Gl Account Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getAccDepGlAccount <em>Acc Dep Gl Account</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Acc Dep Gl Account Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getAccDepGlAccountId()
+	 * @return the meta object for the reference '<em>Acc Dep Gl Account</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getAccDepGlAccount()
 	 * @see #getFixedAssetTypeGlAccount()
 	 * @generated
 	 */
-	EReference getFixedAssetTypeGlAccount_AccDepGlAccountId();
+	EReference getFixedAssetTypeGlAccount_AccDepGlAccount();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getAssetGlAccountId <em>Asset Gl Account Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getAssetGlAccount <em>Asset Gl Account</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Asset Gl Account Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getAssetGlAccountId()
+	 * @return the meta object for the reference '<em>Asset Gl Account</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getAssetGlAccount()
 	 * @see #getFixedAssetTypeGlAccount()
 	 * @generated
 	 */
-	EReference getFixedAssetTypeGlAccount_AssetGlAccountId();
+	EReference getFixedAssetTypeGlAccount_AssetGlAccount();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getDepGlAccountId <em>Dep Gl Account Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getDepGlAccount <em>Dep Gl Account</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Dep Gl Account Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getDepGlAccountId()
+	 * @return the meta object for the reference '<em>Dep Gl Account</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getDepGlAccount()
 	 * @see #getFixedAssetTypeGlAccount()
 	 * @generated
 	 */
-	EReference getFixedAssetTypeGlAccount_DepGlAccountId();
+	EReference getFixedAssetTypeGlAccount_DepGlAccount();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getLossGlAccountId <em>Loss Gl Account Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getLossGlAccount <em>Loss Gl Account</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Loss Gl Account Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getLossGlAccountId()
+	 * @return the meta object for the reference '<em>Loss Gl Account</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getLossGlAccount()
 	 * @see #getFixedAssetTypeGlAccount()
 	 * @generated
 	 */
-	EReference getFixedAssetTypeGlAccount_LossGlAccountId();
+	EReference getFixedAssetTypeGlAccount_LossGlAccount();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getProfitGlAccountId <em>Profit Gl Account Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getProfitGlAccount <em>Profit Gl Account</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Profit Gl Account Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getProfitGlAccountId()
+	 * @return the meta object for the reference '<em>Profit Gl Account</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount#getProfitGlAccount()
 	 * @see #getFixedAssetTypeGlAccount()
 	 * @generated
 	 */
-	EReference getFixedAssetTypeGlAccount_ProfitGlAccountId();
+	EReference getFixedAssetTypeGlAccount_ProfitGlAccount();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.accounting.fixedasset.PartyFixedAssetAssignment <em>Party Fixed Asset Assignment</em>}'.
@@ -4005,37 +4005,37 @@ public interface FixedassetPackage extends EPackage {
 	EClass getPartyFixedAssetAssignment();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.PartyFixedAssetAssignment#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.PartyFixedAssetAssignment#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.PartyFixedAssetAssignment#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.PartyFixedAssetAssignment#getParty()
 	 * @see #getPartyFixedAssetAssignment()
 	 * @generated
 	 */
-	EReference getPartyFixedAssetAssignment_PartyId();
+	EReference getPartyFixedAssetAssignment_Party();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.PartyFixedAssetAssignment#getRoleTypeId <em>Role Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.PartyFixedAssetAssignment#getRoleType <em>Role Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Role Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.PartyFixedAssetAssignment#getRoleTypeId()
+	 * @return the meta object for the reference '<em>Role Type</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.PartyFixedAssetAssignment#getRoleType()
 	 * @see #getPartyFixedAssetAssignment()
 	 * @generated
 	 */
-	EReference getPartyFixedAssetAssignment_RoleTypeId();
+	EReference getPartyFixedAssetAssignment_RoleType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.PartyFixedAssetAssignment#getFixedAssetId <em>Fixed Asset Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.PartyFixedAssetAssignment#getFixedAsset <em>Fixed Asset</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fixed Asset Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.PartyFixedAssetAssignment#getFixedAssetId()
+	 * @return the meta object for the reference '<em>Fixed Asset</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.PartyFixedAssetAssignment#getFixedAsset()
 	 * @see #getPartyFixedAssetAssignment()
 	 * @generated
 	 */
-	EReference getPartyFixedAssetAssignment_FixedAssetId();
+	EReference getPartyFixedAssetAssignment_FixedAsset();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.PartyFixedAssetAssignment#getFromDate <em>From Date</em>}'.
@@ -4071,15 +4071,15 @@ public interface FixedassetPackage extends EPackage {
 	EAttribute getPartyFixedAssetAssignment_Comments();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.PartyFixedAssetAssignment#getStatusId <em>Status Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.PartyFixedAssetAssignment#getStatus <em>Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.PartyFixedAssetAssignment#getStatusId()
+	 * @return the meta object for the reference '<em>Status</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.PartyFixedAssetAssignment#getStatus()
 	 * @see #getPartyFixedAssetAssignment()
 	 * @generated
 	 */
-	EReference getPartyFixedAssetAssignment_StatusId();
+	EReference getPartyFixedAssetAssignment_Status();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.PartyFixedAssetAssignment#getThruDate <em>Thru Date</em>}'.
@@ -4141,12 +4141,12 @@ public interface FixedassetPackage extends EPackage {
 		EAttribute ACCOMMODATION_CLASS__DESCRIPTION = eINSTANCE.getAccommodationClass_Description();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Class Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Class</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ACCOMMODATION_CLASS__PARENT_CLASS_ID = eINSTANCE.getAccommodationClass_ParentClassId();
+		EReference ACCOMMODATION_CLASS__PARENT_CLASS = eINSTANCE.getAccommodationClass_ParentClass();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.AccommodationMapImpl <em>Accommodation Map</em>}' class.
@@ -4167,28 +4167,28 @@ public interface FixedassetPackage extends EPackage {
 		EAttribute ACCOMMODATION_MAP__ACCOMMODATION_MAP_ID = eINSTANCE.getAccommodationMap_AccommodationMapId();
 
 		/**
-		 * The meta object literal for the '<em><b>Accommodation Class Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Accommodation Class</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ACCOMMODATION_MAP__ACCOMMODATION_CLASS_ID = eINSTANCE.getAccommodationMap_AccommodationClassId();
+		EReference ACCOMMODATION_MAP__ACCOMMODATION_CLASS = eINSTANCE.getAccommodationMap_AccommodationClass();
 
 		/**
-		 * The meta object literal for the '<em><b>Accommodation Map Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Accommodation Map Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ACCOMMODATION_MAP__ACCOMMODATION_MAP_TYPE_ID = eINSTANCE.getAccommodationMap_AccommodationMapTypeId();
+		EReference ACCOMMODATION_MAP__ACCOMMODATION_MAP_TYPE = eINSTANCE.getAccommodationMap_AccommodationMapType();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ACCOMMODATION_MAP__FIXED_ASSET_ID = eINSTANCE.getAccommodationMap_FixedAssetId();
+		EReference ACCOMMODATION_MAP__FIXED_ASSET = eINSTANCE.getAccommodationMap_FixedAsset();
 
 		/**
 		 * The meta object literal for the '<em><b>Number Of Spaces</b></em>' attribute feature.
@@ -4243,12 +4243,12 @@ public interface FixedassetPackage extends EPackage {
 		EAttribute FIXED_ASSET__FIXED_ASSET_ID = eINSTANCE.getFixedAsset_FixedAssetId();
 
 		/**
-		 * The meta object literal for the '<em><b>Acquire Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Acquire Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET__ACQUIRE_ORDER_ID = eINSTANCE.getFixedAsset_AcquireOrderId();
+		EReference FIXED_ASSET__ACQUIRE_ORDER = eINSTANCE.getFixedAsset_AcquireOrder();
 
 		/**
 		 * The meta object literal for the '<em><b>Acquire Order Item Seq Id</b></em>' attribute feature.
@@ -4267,20 +4267,20 @@ public interface FixedassetPackage extends EPackage {
 		EAttribute FIXED_ASSET__ACTUAL_END_OF_LIFE = eINSTANCE.getFixedAsset_ActualEndOfLife();
 
 		/**
-		 * The meta object literal for the '<em><b>Calendar Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Calendar</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET__CALENDAR_ID = eINSTANCE.getFixedAsset_CalendarId();
+		EReference FIXED_ASSET__CALENDAR = eINSTANCE.getFixedAsset_Calendar();
 
 		/**
-		 * The meta object literal for the '<em><b>Class Enum Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Class Enum</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET__CLASS_ENUM_ID = eINSTANCE.getFixedAsset_ClassEnumId();
+		EReference FIXED_ASSET__CLASS_ENUM = eINSTANCE.getFixedAsset_ClassEnum();
 
 		/**
 		 * The meta object literal for the '<em><b>Date Acquired</b></em>' attribute feature.
@@ -4379,28 +4379,28 @@ public interface FixedassetPackage extends EPackage {
 		EReference FIXED_ASSET__FIXED_ASSET_STD_COSTS = eINSTANCE.getFixedAsset_FixedAssetStdCosts();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET__FIXED_ASSET_TYPE_ID = eINSTANCE.getFixedAsset_FixedAssetTypeId();
+		EReference FIXED_ASSET__FIXED_ASSET_TYPE = eINSTANCE.getFixedAsset_FixedAssetType();
 
 		/**
-		 * The meta object literal for the '<em><b>Instance Of Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Instance Of Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET__INSTANCE_OF_PRODUCT_ID = eINSTANCE.getFixedAsset_InstanceOfProductId();
+		EReference FIXED_ASSET__INSTANCE_OF_PRODUCT = eINSTANCE.getFixedAsset_InstanceOfProduct();
 
 		/**
-		 * The meta object literal for the '<em><b>Located At Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Located At Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET__LOCATED_AT_FACILITY_ID = eINSTANCE.getFixedAsset_LocatedAtFacilityId();
+		EReference FIXED_ASSET__LOCATED_AT_FACILITY = eINSTANCE.getFixedAsset_LocatedAtFacility();
 
 		/**
 		 * The meta object literal for the '<em><b>Located At Location Seq Id</b></em>' attribute feature.
@@ -4411,20 +4411,20 @@ public interface FixedassetPackage extends EPackage {
 		EAttribute FIXED_ASSET__LOCATED_AT_LOCATION_SEQ_ID = eINSTANCE.getFixedAsset_LocatedAtLocationSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Fixed Asset Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Fixed Asset</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET__PARENT_FIXED_ASSET_ID = eINSTANCE.getFixedAsset_ParentFixedAssetId();
+		EReference FIXED_ASSET__PARENT_FIXED_ASSET = eINSTANCE.getFixedAsset_ParentFixedAsset();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET__PARTY_ID = eINSTANCE.getFixedAsset_PartyId();
+		EReference FIXED_ASSET__PARTY = eINSTANCE.getFixedAsset_Party();
 
 		/**
 		 * The meta object literal for the '<em><b>Production Capacity</b></em>' attribute feature.
@@ -4451,12 +4451,12 @@ public interface FixedassetPackage extends EPackage {
 		EAttribute FIXED_ASSET__PURCHASE_COST_UOM_ID = eINSTANCE.getFixedAsset_PurchaseCostUomId();
 
 		/**
-		 * The meta object literal for the '<em><b>Role Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Role Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET__ROLE_TYPE_ID = eINSTANCE.getFixedAsset_RoleTypeId();
+		EReference FIXED_ASSET__ROLE_TYPE = eINSTANCE.getFixedAsset_RoleType();
 
 		/**
 		 * The meta object literal for the '<em><b>Salvage Value</b></em>' attribute feature.
@@ -4475,12 +4475,12 @@ public interface FixedassetPackage extends EPackage {
 		EAttribute FIXED_ASSET__SERIAL_NUMBER = eINSTANCE.getFixedAsset_SerialNumber();
 
 		/**
-		 * The meta object literal for the '<em><b>Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET__UOM_ID = eINSTANCE.getFixedAsset_UomId();
+		EReference FIXED_ASSET__UOM = eINSTANCE.getFixedAsset_Uom();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetAttributeImpl <em>Fixed Asset Attribute</em>}' class.
@@ -4493,12 +4493,12 @@ public interface FixedassetPackage extends EPackage {
 		EClass FIXED_ASSET_ATTRIBUTE = eINSTANCE.getFixedAssetAttribute();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_ATTRIBUTE__FIXED_ASSET_ID = eINSTANCE.getFixedAssetAttribute_FixedAssetId();
+		EReference FIXED_ASSET_ATTRIBUTE__FIXED_ASSET = eINSTANCE.getFixedAssetAttribute_FixedAsset();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -4535,20 +4535,20 @@ public interface FixedassetPackage extends EPackage {
 		EClass FIXED_ASSET_DEP_METHOD = eINSTANCE.getFixedAssetDepMethod();
 
 		/**
-		 * The meta object literal for the '<em><b>Depreciation Custom Method Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Depreciation Custom Method</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_DEP_METHOD__DEPRECIATION_CUSTOM_METHOD_ID = eINSTANCE.getFixedAssetDepMethod_DepreciationCustomMethodId();
+		EReference FIXED_ASSET_DEP_METHOD__DEPRECIATION_CUSTOM_METHOD = eINSTANCE.getFixedAssetDepMethod_DepreciationCustomMethod();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_DEP_METHOD__FIXED_ASSET_ID = eINSTANCE.getFixedAssetDepMethod_FixedAssetId();
+		EReference FIXED_ASSET_DEP_METHOD__FIXED_ASSET = eINSTANCE.getFixedAssetDepMethod_FixedAsset();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -4577,20 +4577,20 @@ public interface FixedassetPackage extends EPackage {
 		EClass FIXED_ASSET_GEO_POINT = eINSTANCE.getFixedAssetGeoPoint();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_GEO_POINT__FIXED_ASSET_ID = eINSTANCE.getFixedAssetGeoPoint_FixedAssetId();
+		EReference FIXED_ASSET_GEO_POINT__FIXED_ASSET = eINSTANCE.getFixedAssetGeoPoint_FixedAsset();
 
 		/**
-		 * The meta object literal for the '<em><b>Geo Point Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Geo Point</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_GEO_POINT__GEO_POINT_ID = eINSTANCE.getFixedAssetGeoPoint_GeoPointId();
+		EReference FIXED_ASSET_GEO_POINT__GEO_POINT = eINSTANCE.getFixedAssetGeoPoint_GeoPoint();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -4619,20 +4619,20 @@ public interface FixedassetPackage extends EPackage {
 		EClass FIXED_ASSET_IDENT = eINSTANCE.getFixedAssetIdent();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_IDENT__FIXED_ASSET_ID = eINSTANCE.getFixedAssetIdent_FixedAssetId();
+		EReference FIXED_ASSET_IDENT__FIXED_ASSET = eINSTANCE.getFixedAssetIdent_FixedAsset();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Ident Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset Ident Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_IDENT__FIXED_ASSET_IDENT_TYPE_ID = eINSTANCE.getFixedAssetIdent_FixedAssetIdentTypeId();
+		EReference FIXED_ASSET_IDENT__FIXED_ASSET_IDENT_TYPE = eINSTANCE.getFixedAssetIdent_FixedAssetIdentType();
 
 		/**
 		 * The meta object literal for the '<em><b>Id Value</b></em>' attribute feature.
@@ -4679,12 +4679,12 @@ public interface FixedassetPackage extends EPackage {
 		EClass FIXED_ASSET_MAINT = eINSTANCE.getFixedAssetMaint();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_MAINT__FIXED_ASSET_ID = eINSTANCE.getFixedAssetMaint_FixedAssetId();
+		EReference FIXED_ASSET_MAINT__FIXED_ASSET = eINSTANCE.getFixedAssetMaint_FixedAsset();
 
 		/**
 		 * The meta object literal for the '<em><b>Maint Hist Seq Id</b></em>' attribute feature.
@@ -4695,12 +4695,12 @@ public interface FixedassetPackage extends EPackage {
 		EAttribute FIXED_ASSET_MAINT__MAINT_HIST_SEQ_ID = eINSTANCE.getFixedAssetMaint_MaintHistSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>Interval Meter Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Interval Meter Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_MAINT__INTERVAL_METER_TYPE_ID = eINSTANCE.getFixedAssetMaint_IntervalMeterTypeId();
+		EReference FIXED_ASSET_MAINT__INTERVAL_METER_TYPE = eINSTANCE.getFixedAssetMaint_IntervalMeterType();
 
 		/**
 		 * The meta object literal for the '<em><b>Interval Quantity</b></em>' attribute feature.
@@ -4711,12 +4711,12 @@ public interface FixedassetPackage extends EPackage {
 		EAttribute FIXED_ASSET_MAINT__INTERVAL_QUANTITY = eINSTANCE.getFixedAssetMaint_IntervalQuantity();
 
 		/**
-		 * The meta object literal for the '<em><b>Interval Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Interval Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_MAINT__INTERVAL_UOM_ID = eINSTANCE.getFixedAssetMaint_IntervalUomId();
+		EReference FIXED_ASSET_MAINT__INTERVAL_UOM = eINSTANCE.getFixedAssetMaint_IntervalUom();
 
 		/**
 		 * The meta object literal for the '<em><b>Product Maint Seq Id</b></em>' attribute feature.
@@ -4727,36 +4727,36 @@ public interface FixedassetPackage extends EPackage {
 		EAttribute FIXED_ASSET_MAINT__PRODUCT_MAINT_SEQ_ID = eINSTANCE.getFixedAssetMaint_ProductMaintSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Maint Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Maint Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_MAINT__PRODUCT_MAINT_TYPE_ID = eINSTANCE.getFixedAssetMaint_ProductMaintTypeId();
+		EReference FIXED_ASSET_MAINT__PRODUCT_MAINT_TYPE = eINSTANCE.getFixedAssetMaint_ProductMaintType();
 
 		/**
-		 * The meta object literal for the '<em><b>Purchase Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Purchase Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_MAINT__PURCHASE_ORDER_ID = eINSTANCE.getFixedAssetMaint_PurchaseOrderId();
+		EReference FIXED_ASSET_MAINT__PURCHASE_ORDER = eINSTANCE.getFixedAssetMaint_PurchaseOrder();
 
 		/**
-		 * The meta object literal for the '<em><b>Schedule Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Schedule Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_MAINT__SCHEDULE_WORK_EFFORT_ID = eINSTANCE.getFixedAssetMaint_ScheduleWorkEffortId();
+		EReference FIXED_ASSET_MAINT__SCHEDULE_WORK_EFFORT = eINSTANCE.getFixedAssetMaint_ScheduleWorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>Status Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Status</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_MAINT__STATUS_ID = eINSTANCE.getFixedAssetMaint_StatusId();
+		EReference FIXED_ASSET_MAINT__STATUS = eINSTANCE.getFixedAssetMaint_Status();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintOrderImpl <em>Fixed Asset Maint Order</em>}' class.
@@ -4769,12 +4769,20 @@ public interface FixedassetPackage extends EPackage {
 		EClass FIXED_ASSET_MAINT_ORDER = eINSTANCE.getFixedAssetMaintOrder();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_MAINT_ORDER__FIXED_ASSET_ID = eINSTANCE.getFixedAssetMaintOrder_FixedAssetId();
+		EReference FIXED_ASSET_MAINT_ORDER__FIXED_ASSET = eINSTANCE.getFixedAssetMaintOrder_FixedAsset();
+
+		/**
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FIXED_ASSET_MAINT_ORDER__ORDER = eINSTANCE.getFixedAssetMaintOrder_Order();
 
 		/**
 		 * The meta object literal for the '<em><b>Maint Hist Seq Id</b></em>' attribute feature.
@@ -4783,14 +4791,6 @@ public interface FixedassetPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute FIXED_ASSET_MAINT_ORDER__MAINT_HIST_SEQ_ID = eINSTANCE.getFixedAssetMaintOrder_MaintHistSeqId();
-
-		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference FIXED_ASSET_MAINT_ORDER__ORDER_ID = eINSTANCE.getFixedAssetMaintOrder_OrderId();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -4811,20 +4811,20 @@ public interface FixedassetPackage extends EPackage {
 		EClass FIXED_ASSET_METER = eINSTANCE.getFixedAssetMeter();
 
 		/**
+		 * The meta object literal for the '<em><b>Product Meter Type</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FIXED_ASSET_METER__PRODUCT_METER_TYPE = eINSTANCE.getFixedAssetMeter_ProductMeterType();
+
+		/**
 		 * The meta object literal for the '<em><b>Fixed Asset Id</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute FIXED_ASSET_METER__FIXED_ASSET_ID = eINSTANCE.getFixedAssetMeter_FixedAssetId();
-
-		/**
-		 * The meta object literal for the '<em><b>Product Meter Type Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference FIXED_ASSET_METER__PRODUCT_METER_TYPE_ID = eINSTANCE.getFixedAssetMeter_ProductMeterTypeId();
 
 		/**
 		 * The meta object literal for the '<em><b>Reading Date</b></em>' attribute feature.
@@ -4877,28 +4877,28 @@ public interface FixedassetPackage extends EPackage {
 		EClass FIXED_ASSET_PRODUCT = eINSTANCE.getFixedAssetProduct();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_PRODUCT__FIXED_ASSET_ID = eINSTANCE.getFixedAssetProduct_FixedAssetId();
+		EReference FIXED_ASSET_PRODUCT__PRODUCT = eINSTANCE.getFixedAssetProduct_Product();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_PRODUCT__PRODUCT_ID = eINSTANCE.getFixedAssetProduct_ProductId();
+		EReference FIXED_ASSET_PRODUCT__FIXED_ASSET = eINSTANCE.getFixedAssetProduct_FixedAsset();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Product Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset Product Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_PRODUCT__FIXED_ASSET_PRODUCT_TYPE_ID = eINSTANCE.getFixedAssetProduct_FixedAssetProductTypeId();
+		EReference FIXED_ASSET_PRODUCT__FIXED_ASSET_PRODUCT_TYPE = eINSTANCE.getFixedAssetProduct_FixedAssetProductType();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -4925,12 +4925,12 @@ public interface FixedassetPackage extends EPackage {
 		EAttribute FIXED_ASSET_PRODUCT__QUANTITY = eINSTANCE.getFixedAssetProduct_Quantity();
 
 		/**
-		 * The meta object literal for the '<em><b>Quantity Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Quantity Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_PRODUCT__QUANTITY_UOM_ID = eINSTANCE.getFixedAssetProduct_QuantityUomId();
+		EReference FIXED_ASSET_PRODUCT__QUANTITY_UOM = eINSTANCE.getFixedAssetProduct_QuantityUom();
 
 		/**
 		 * The meta object literal for the '<em><b>Sequence Num</b></em>' attribute feature.
@@ -4985,12 +4985,12 @@ public interface FixedassetPackage extends EPackage {
 		EClass FIXED_ASSET_REGISTRATION = eINSTANCE.getFixedAssetRegistration();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_REGISTRATION__FIXED_ASSET_ID = eINSTANCE.getFixedAssetRegistration_FixedAssetId();
+		EReference FIXED_ASSET_REGISTRATION__FIXED_ASSET = eINSTANCE.getFixedAssetRegistration_FixedAsset();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -5001,12 +5001,12 @@ public interface FixedassetPackage extends EPackage {
 		EAttribute FIXED_ASSET_REGISTRATION__FROM_DATE = eINSTANCE.getFixedAssetRegistration_FromDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Gov Agency Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Gov Agency Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_REGISTRATION__GOV_AGENCY_PARTY_ID = eINSTANCE.getFixedAssetRegistration_GovAgencyPartyId();
+		EReference FIXED_ASSET_REGISTRATION__GOV_AGENCY_PARTY = eINSTANCE.getFixedAssetRegistration_GovAgencyParty();
 
 		/**
 		 * The meta object literal for the '<em><b>License Number</b></em>' attribute feature.
@@ -5051,20 +5051,20 @@ public interface FixedassetPackage extends EPackage {
 		EClass FIXED_ASSET_STD_COST = eINSTANCE.getFixedAssetStdCost();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_STD_COST__FIXED_ASSET_ID = eINSTANCE.getFixedAssetStdCost_FixedAssetId();
+		EReference FIXED_ASSET_STD_COST__FIXED_ASSET = eINSTANCE.getFixedAssetStdCost_FixedAsset();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Std Cost Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset Std Cost Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_STD_COST__FIXED_ASSET_STD_COST_TYPE_ID = eINSTANCE.getFixedAssetStdCost_FixedAssetStdCostTypeId();
+		EReference FIXED_ASSET_STD_COST__FIXED_ASSET_STD_COST_TYPE = eINSTANCE.getFixedAssetStdCost_FixedAssetStdCostType();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -5083,12 +5083,12 @@ public interface FixedassetPackage extends EPackage {
 		EAttribute FIXED_ASSET_STD_COST__AMOUNT = eINSTANCE.getFixedAssetStdCost_Amount();
 
 		/**
-		 * The meta object literal for the '<em><b>Amount Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Amount Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_STD_COST__AMOUNT_UOM_ID = eINSTANCE.getFixedAssetStdCost_AmountUomId();
+		EReference FIXED_ASSET_STD_COST__AMOUNT_UOM = eINSTANCE.getFixedAssetStdCost_AmountUom();
 
 		/**
 		 * The meta object literal for the '<em><b>Thru Date</b></em>' attribute feature.
@@ -5133,12 +5133,12 @@ public interface FixedassetPackage extends EPackage {
 		EAttribute FIXED_ASSET_STD_COST_TYPE__HAS_TABLE = eINSTANCE.getFixedAssetStdCostType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_STD_COST_TYPE__PARENT_TYPE_ID = eINSTANCE.getFixedAssetStdCostType_ParentTypeId();
+		EReference FIXED_ASSET_STD_COST_TYPE__PARENT_TYPE = eINSTANCE.getFixedAssetStdCostType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeImpl <em>Fixed Asset Type</em>}' class.
@@ -5183,12 +5183,12 @@ public interface FixedassetPackage extends EPackage {
 		EAttribute FIXED_ASSET_TYPE__HAS_TABLE = eINSTANCE.getFixedAssetType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_TYPE__PARENT_TYPE_ID = eINSTANCE.getFixedAssetType_ParentTypeId();
+		EReference FIXED_ASSET_TYPE__PARENT_TYPE = eINSTANCE.getFixedAssetType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeAttrImpl <em>Fixed Asset Type Attr</em>}' class.
@@ -5201,12 +5201,12 @@ public interface FixedassetPackage extends EPackage {
 		EClass FIXED_ASSET_TYPE_ATTR = eINSTANCE.getFixedAssetTypeAttr();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_TYPE_ATTR__FIXED_ASSET_TYPE_ID = eINSTANCE.getFixedAssetTypeAttr_FixedAssetTypeId();
+		EReference FIXED_ASSET_TYPE_ATTR__FIXED_ASSET_TYPE = eINSTANCE.getFixedAssetTypeAttr_FixedAssetType();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -5235,68 +5235,68 @@ public interface FixedassetPackage extends EPackage {
 		EClass FIXED_ASSET_TYPE_GL_ACCOUNT = eINSTANCE.getFixedAssetTypeGlAccount();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_TYPE_GL_ACCOUNT__FIXED_ASSET_TYPE_ID = eINSTANCE.getFixedAssetTypeGlAccount_FixedAssetTypeId();
+		EReference FIXED_ASSET_TYPE_GL_ACCOUNT__FIXED_ASSET_TYPE = eINSTANCE.getFixedAssetTypeGlAccount_FixedAssetType();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_TYPE_GL_ACCOUNT__FIXED_ASSET_ID = eINSTANCE.getFixedAssetTypeGlAccount_FixedAssetId();
+		EReference FIXED_ASSET_TYPE_GL_ACCOUNT__FIXED_ASSET = eINSTANCE.getFixedAssetTypeGlAccount_FixedAsset();
 
 		/**
-		 * The meta object literal for the '<em><b>Organization Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Organization Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY_ID = eINSTANCE.getFixedAssetTypeGlAccount_OrganizationPartyId();
+		EReference FIXED_ASSET_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY = eINSTANCE.getFixedAssetTypeGlAccount_OrganizationParty();
 
 		/**
-		 * The meta object literal for the '<em><b>Acc Dep Gl Account Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Acc Dep Gl Account</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_TYPE_GL_ACCOUNT__ACC_DEP_GL_ACCOUNT_ID = eINSTANCE.getFixedAssetTypeGlAccount_AccDepGlAccountId();
+		EReference FIXED_ASSET_TYPE_GL_ACCOUNT__ACC_DEP_GL_ACCOUNT = eINSTANCE.getFixedAssetTypeGlAccount_AccDepGlAccount();
 
 		/**
-		 * The meta object literal for the '<em><b>Asset Gl Account Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Asset Gl Account</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_TYPE_GL_ACCOUNT__ASSET_GL_ACCOUNT_ID = eINSTANCE.getFixedAssetTypeGlAccount_AssetGlAccountId();
+		EReference FIXED_ASSET_TYPE_GL_ACCOUNT__ASSET_GL_ACCOUNT = eINSTANCE.getFixedAssetTypeGlAccount_AssetGlAccount();
 
 		/**
-		 * The meta object literal for the '<em><b>Dep Gl Account Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Dep Gl Account</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_TYPE_GL_ACCOUNT__DEP_GL_ACCOUNT_ID = eINSTANCE.getFixedAssetTypeGlAccount_DepGlAccountId();
+		EReference FIXED_ASSET_TYPE_GL_ACCOUNT__DEP_GL_ACCOUNT = eINSTANCE.getFixedAssetTypeGlAccount_DepGlAccount();
 
 		/**
-		 * The meta object literal for the '<em><b>Loss Gl Account Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Loss Gl Account</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_TYPE_GL_ACCOUNT__LOSS_GL_ACCOUNT_ID = eINSTANCE.getFixedAssetTypeGlAccount_LossGlAccountId();
+		EReference FIXED_ASSET_TYPE_GL_ACCOUNT__LOSS_GL_ACCOUNT = eINSTANCE.getFixedAssetTypeGlAccount_LossGlAccount();
 
 		/**
-		 * The meta object literal for the '<em><b>Profit Gl Account Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Profit Gl Account</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FIXED_ASSET_TYPE_GL_ACCOUNT__PROFIT_GL_ACCOUNT_ID = eINSTANCE.getFixedAssetTypeGlAccount_ProfitGlAccountId();
+		EReference FIXED_ASSET_TYPE_GL_ACCOUNT__PROFIT_GL_ACCOUNT = eINSTANCE.getFixedAssetTypeGlAccount_ProfitGlAccount();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.PartyFixedAssetAssignmentImpl <em>Party Fixed Asset Assignment</em>}' class.
@@ -5309,28 +5309,28 @@ public interface FixedassetPackage extends EPackage {
 		EClass PARTY_FIXED_ASSET_ASSIGNMENT = eINSTANCE.getPartyFixedAssetAssignment();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PARTY_FIXED_ASSET_ASSIGNMENT__PARTY_ID = eINSTANCE.getPartyFixedAssetAssignment_PartyId();
+		EReference PARTY_FIXED_ASSET_ASSIGNMENT__PARTY = eINSTANCE.getPartyFixedAssetAssignment_Party();
 
 		/**
-		 * The meta object literal for the '<em><b>Role Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Role Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PARTY_FIXED_ASSET_ASSIGNMENT__ROLE_TYPE_ID = eINSTANCE.getPartyFixedAssetAssignment_RoleTypeId();
+		EReference PARTY_FIXED_ASSET_ASSIGNMENT__ROLE_TYPE = eINSTANCE.getPartyFixedAssetAssignment_RoleType();
 
 		/**
-		 * The meta object literal for the '<em><b>Fixed Asset Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fixed Asset</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PARTY_FIXED_ASSET_ASSIGNMENT__FIXED_ASSET_ID = eINSTANCE.getPartyFixedAssetAssignment_FixedAssetId();
+		EReference PARTY_FIXED_ASSET_ASSIGNMENT__FIXED_ASSET = eINSTANCE.getPartyFixedAssetAssignment_FixedAsset();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -5357,12 +5357,12 @@ public interface FixedassetPackage extends EPackage {
 		EAttribute PARTY_FIXED_ASSET_ASSIGNMENT__COMMENTS = eINSTANCE.getPartyFixedAssetAssignment_Comments();
 
 		/**
-		 * The meta object literal for the '<em><b>Status Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Status</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PARTY_FIXED_ASSET_ASSIGNMENT__STATUS_ID = eINSTANCE.getPartyFixedAssetAssignment_StatusId();
+		EReference PARTY_FIXED_ASSET_ASSIGNMENT__STATUS = eINSTANCE.getPartyFixedAssetAssignment_Status();
 
 		/**
 		 * The meta object literal for the '<em><b>Thru Date</b></em>' attribute feature.

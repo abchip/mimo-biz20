@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryTypeImpl#getAcctgTransEntryTypeId <em>Acctg Trans Entry Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -199,8 +199,8 @@ public class AcctgTransEntryTypeImpl extends EntityTypeImpl<AcctgTransEntry> imp
 	 * @generated
 	 */
 	@Override
-	public AcctgTransEntryType getParentTypeId() {
-		return (AcctgTransEntryType)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY_TYPE__PARENT_TYPE_ID, true);
+	public AcctgTransEntryType getParentType() {
+		return (AcctgTransEntryType)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -209,8 +209,8 @@ public class AcctgTransEntryTypeImpl extends EntityTypeImpl<AcctgTransEntry> imp
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(AcctgTransEntryType newParentTypeId) {
-		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(AcctgTransEntryType newParentType) {
+		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

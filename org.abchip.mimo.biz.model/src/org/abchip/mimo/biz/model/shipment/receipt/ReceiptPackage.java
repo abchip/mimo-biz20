@@ -199,13 +199,13 @@ public interface ReceiptPackage extends EPackage {
 	int SHIPMENT_RECEIPT__DATETIME_RECEIVED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Inventory Item Id</b></em>' reference.
+	 * The feature id for the '<em><b>Inventory Item</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__INVENTORY_ITEM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int SHIPMENT_RECEIPT__INVENTORY_ITEM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Item Description</b></em>' attribute.
@@ -217,13 +217,13 @@ public interface ReceiptPackage extends EPackage {
 	int SHIPMENT_RECEIPT__ITEM_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int SHIPMENT_RECEIPT__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -235,13 +235,13 @@ public interface ReceiptPackage extends EPackage {
 	int SHIPMENT_RECEIPT__ORDER_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int SHIPMENT_RECEIPT__PRODUCT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Quantity Accepted</b></em>' attribute.
@@ -262,22 +262,22 @@ public interface ReceiptPackage extends EPackage {
 	int SHIPMENT_RECEIPT__QUANTITY_REJECTED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
-	 * The feature id for the '<em><b>Received By User Login Id</b></em>' reference.
+	 * The feature id for the '<em><b>Received By User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__RECEIVED_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
+	int SHIPMENT_RECEIPT__RECEIVED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
-	 * The feature id for the '<em><b>Rejection Id</b></em>' reference.
+	 * The feature id for the '<em><b>Rejection</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__REJECTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
+	int SHIPMENT_RECEIPT__REJECTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Return Id</b></em>' attribute.
@@ -298,13 +298,13 @@ public interface ReceiptPackage extends EPackage {
 	int SHIPMENT_RECEIPT__RETURN_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
-	 * The feature id for the '<em><b>Shipment Id</b></em>' reference.
+	 * The feature id for the '<em><b>Shipment</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__SHIPMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
+	int SHIPMENT_RECEIPT__SHIPMENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Item Seq Id</b></em>' attribute.
@@ -380,22 +380,22 @@ public interface ReceiptPackage extends EPackage {
 	int SHIPMENT_RECEIPT_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Receipt Id</b></em>' reference.
+	 * The feature id for the '<em><b>Receipt</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT_ROLE__RECEIPT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SHIPMENT_RECEIPT_ROLE__RECEIPT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int SHIPMENT_RECEIPT_ROLE__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' attribute.
@@ -481,15 +481,15 @@ public interface ReceiptPackage extends EPackage {
 	EAttribute getShipmentReceipt_DatetimeReceived();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getInventoryItemId <em>Inventory Item Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getInventoryItem <em>Inventory Item</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Inventory Item Id</em>'.
-	 * @see org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getInventoryItemId()
+	 * @return the meta object for the reference '<em>Inventory Item</em>'.
+	 * @see org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getInventoryItem()
 	 * @see #getShipmentReceipt()
 	 * @generated
 	 */
-	EReference getShipmentReceipt_InventoryItemId();
+	EReference getShipmentReceipt_InventoryItem();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getItemDescription <em>Item Description</em>}'.
@@ -503,15 +503,15 @@ public interface ReceiptPackage extends EPackage {
 	EAttribute getShipmentReceipt_ItemDescription();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getOrder()
 	 * @see #getShipmentReceipt()
 	 * @generated
 	 */
-	EReference getShipmentReceipt_OrderId();
+	EReference getShipmentReceipt_Order();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -525,15 +525,15 @@ public interface ReceiptPackage extends EPackage {
 	EAttribute getShipmentReceipt_OrderItemSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getProductId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getProduct()
 	 * @see #getShipmentReceipt()
 	 * @generated
 	 */
-	EReference getShipmentReceipt_ProductId();
+	EReference getShipmentReceipt_Product();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getQuantityAccepted <em>Quantity Accepted</em>}'.
@@ -558,26 +558,26 @@ public interface ReceiptPackage extends EPackage {
 	EAttribute getShipmentReceipt_QuantityRejected();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getReceivedByUserLoginId <em>Received By User Login Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getReceivedByUserLogin <em>Received By User Login</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Received By User Login Id</em>'.
-	 * @see org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getReceivedByUserLoginId()
+	 * @return the meta object for the reference '<em>Received By User Login</em>'.
+	 * @see org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getReceivedByUserLogin()
 	 * @see #getShipmentReceipt()
 	 * @generated
 	 */
-	EReference getShipmentReceipt_ReceivedByUserLoginId();
+	EReference getShipmentReceipt_ReceivedByUserLogin();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getRejectionId <em>Rejection Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getRejection <em>Rejection</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Rejection Id</em>'.
-	 * @see org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getRejectionId()
+	 * @return the meta object for the reference '<em>Rejection</em>'.
+	 * @see org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getRejection()
 	 * @see #getShipmentReceipt()
 	 * @generated
 	 */
-	EReference getShipmentReceipt_RejectionId();
+	EReference getShipmentReceipt_Rejection();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getReturnId <em>Return Id</em>}'.
@@ -602,15 +602,15 @@ public interface ReceiptPackage extends EPackage {
 	EAttribute getShipmentReceipt_ReturnItemSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getShipmentId <em>Shipment Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getShipment <em>Shipment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Shipment Id</em>'.
-	 * @see org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getShipmentId()
+	 * @return the meta object for the reference '<em>Shipment</em>'.
+	 * @see org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getShipment()
 	 * @see #getShipmentReceipt()
 	 * @generated
 	 */
-	EReference getShipmentReceipt_ShipmentId();
+	EReference getShipmentReceipt_Shipment();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt#getShipmentItemSeqId <em>Shipment Item Seq Id</em>}'.
@@ -645,26 +645,26 @@ public interface ReceiptPackage extends EPackage {
 	EClass getShipmentReceiptRole();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceiptRole#getReceiptId <em>Receipt Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceiptRole#getReceipt <em>Receipt</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Receipt Id</em>'.
-	 * @see org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceiptRole#getReceiptId()
+	 * @return the meta object for the reference '<em>Receipt</em>'.
+	 * @see org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceiptRole#getReceipt()
 	 * @see #getShipmentReceiptRole()
 	 * @generated
 	 */
-	EReference getShipmentReceiptRole_ReceiptId();
+	EReference getShipmentReceiptRole_Receipt();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceiptRole#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceiptRole#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceiptRole#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceiptRole#getParty()
 	 * @see #getShipmentReceiptRole()
 	 * @generated
 	 */
-	EReference getShipmentReceiptRole_PartyId();
+	EReference getShipmentReceiptRole_Party();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceiptRole#getRoleTypeId <em>Role Type Id</em>}'.
@@ -752,12 +752,12 @@ public interface ReceiptPackage extends EPackage {
 		EAttribute SHIPMENT_RECEIPT__DATETIME_RECEIVED = eINSTANCE.getShipmentReceipt_DatetimeReceived();
 
 		/**
-		 * The meta object literal for the '<em><b>Inventory Item Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Inventory Item</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHIPMENT_RECEIPT__INVENTORY_ITEM_ID = eINSTANCE.getShipmentReceipt_InventoryItemId();
+		EReference SHIPMENT_RECEIPT__INVENTORY_ITEM = eINSTANCE.getShipmentReceipt_InventoryItem();
 
 		/**
 		 * The meta object literal for the '<em><b>Item Description</b></em>' attribute feature.
@@ -768,12 +768,12 @@ public interface ReceiptPackage extends EPackage {
 		EAttribute SHIPMENT_RECEIPT__ITEM_DESCRIPTION = eINSTANCE.getShipmentReceipt_ItemDescription();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHIPMENT_RECEIPT__ORDER_ID = eINSTANCE.getShipmentReceipt_OrderId();
+		EReference SHIPMENT_RECEIPT__ORDER = eINSTANCE.getShipmentReceipt_Order();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -784,12 +784,12 @@ public interface ReceiptPackage extends EPackage {
 		EAttribute SHIPMENT_RECEIPT__ORDER_ITEM_SEQ_ID = eINSTANCE.getShipmentReceipt_OrderItemSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHIPMENT_RECEIPT__PRODUCT_ID = eINSTANCE.getShipmentReceipt_ProductId();
+		EReference SHIPMENT_RECEIPT__PRODUCT = eINSTANCE.getShipmentReceipt_Product();
 
 		/**
 		 * The meta object literal for the '<em><b>Quantity Accepted</b></em>' attribute feature.
@@ -808,20 +808,20 @@ public interface ReceiptPackage extends EPackage {
 		EAttribute SHIPMENT_RECEIPT__QUANTITY_REJECTED = eINSTANCE.getShipmentReceipt_QuantityRejected();
 
 		/**
-		 * The meta object literal for the '<em><b>Received By User Login Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Received By User Login</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHIPMENT_RECEIPT__RECEIVED_BY_USER_LOGIN_ID = eINSTANCE.getShipmentReceipt_ReceivedByUserLoginId();
+		EReference SHIPMENT_RECEIPT__RECEIVED_BY_USER_LOGIN = eINSTANCE.getShipmentReceipt_ReceivedByUserLogin();
 
 		/**
-		 * The meta object literal for the '<em><b>Rejection Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Rejection</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHIPMENT_RECEIPT__REJECTION_ID = eINSTANCE.getShipmentReceipt_RejectionId();
+		EReference SHIPMENT_RECEIPT__REJECTION = eINSTANCE.getShipmentReceipt_Rejection();
 
 		/**
 		 * The meta object literal for the '<em><b>Return Id</b></em>' attribute feature.
@@ -840,12 +840,12 @@ public interface ReceiptPackage extends EPackage {
 		EAttribute SHIPMENT_RECEIPT__RETURN_ITEM_SEQ_ID = eINSTANCE.getShipmentReceipt_ReturnItemSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>Shipment Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Shipment</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHIPMENT_RECEIPT__SHIPMENT_ID = eINSTANCE.getShipmentReceipt_ShipmentId();
+		EReference SHIPMENT_RECEIPT__SHIPMENT = eINSTANCE.getShipmentReceipt_Shipment();
 
 		/**
 		 * The meta object literal for the '<em><b>Shipment Item Seq Id</b></em>' attribute feature.
@@ -874,20 +874,20 @@ public interface ReceiptPackage extends EPackage {
 		EClass SHIPMENT_RECEIPT_ROLE = eINSTANCE.getShipmentReceiptRole();
 
 		/**
-		 * The meta object literal for the '<em><b>Receipt Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Receipt</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHIPMENT_RECEIPT_ROLE__RECEIPT_ID = eINSTANCE.getShipmentReceiptRole_ReceiptId();
+		EReference SHIPMENT_RECEIPT_ROLE__RECEIPT = eINSTANCE.getShipmentReceiptRole_Receipt();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SHIPMENT_RECEIPT_ROLE__PARTY_ID = eINSTANCE.getShipmentReceiptRole_PartyId();
+		EReference SHIPMENT_RECEIPT_ROLE__PARTY = eINSTANCE.getShipmentReceiptRole_Party();
 
 		/**
 		 * The meta object literal for the '<em><b>Role Type Id</b></em>' attribute feature.

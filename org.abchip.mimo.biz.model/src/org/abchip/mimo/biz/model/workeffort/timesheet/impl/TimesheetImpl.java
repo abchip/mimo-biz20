@@ -31,12 +31,12 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimesheetImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimesheetImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimesheetImpl#getTimesheetId <em>Timesheet Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimesheetImpl#getApprovedByUserLoginId <em>Approved By User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimesheetImpl#getClientPartyId <em>Client Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimesheetImpl#getApprovedByUserLogin <em>Approved By User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimesheetImpl#getClientParty <em>Client Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimesheetImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimesheetImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimesheetImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimesheetImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimesheetImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimesheetImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimesheetImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -159,46 +159,6 @@ public class TimesheetImpl extends EntityIdentifiableImpl implements Timesheet {
 	 * @generated
 	 */
 	@Override
-	public UserLogin getApprovedByUserLoginId() {
-		return (UserLogin)eGet(TimesheetPackage.Literals.TIMESHEET__APPROVED_BY_USER_LOGIN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setApprovedByUserLoginId(UserLogin newApprovedByUserLoginId) {
-		eSet(TimesheetPackage.Literals.TIMESHEET__APPROVED_BY_USER_LOGIN_ID, newApprovedByUserLoginId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getClientPartyId() {
-		return (Party)eGet(TimesheetPackage.Literals.TIMESHEET__CLIENT_PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setClientPartyId(Party newClientPartyId) {
-		eSet(TimesheetPackage.Literals.TIMESHEET__CLIENT_PARTY_ID, newClientPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getComments() {
 		return (String)eGet(TimesheetPackage.Literals.TIMESHEET__COMMENTS, true);
 	}
@@ -239,8 +199,8 @@ public class TimesheetImpl extends EntityIdentifiableImpl implements Timesheet {
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(TimesheetPackage.Literals.TIMESHEET__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(TimesheetPackage.Literals.TIMESHEET__PARTY, true);
 	}
 
 	/**
@@ -249,8 +209,8 @@ public class TimesheetImpl extends EntityIdentifiableImpl implements Timesheet {
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(TimesheetPackage.Literals.TIMESHEET__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(TimesheetPackage.Literals.TIMESHEET__PARTY, newParty);
 	}
 
 	/**
@@ -259,8 +219,8 @@ public class TimesheetImpl extends EntityIdentifiableImpl implements Timesheet {
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(TimesheetPackage.Literals.TIMESHEET__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(TimesheetPackage.Literals.TIMESHEET__STATUS, true);
 	}
 
 	/**
@@ -269,8 +229,8 @@ public class TimesheetImpl extends EntityIdentifiableImpl implements Timesheet {
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(TimesheetPackage.Literals.TIMESHEET__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(TimesheetPackage.Literals.TIMESHEET__STATUS, newStatus);
 	}
 
 	/**
@@ -349,6 +309,46 @@ public class TimesheetImpl extends EntityIdentifiableImpl implements Timesheet {
 	@Override
 	public void setTimesheetId(String newTimesheetId) {
 		eSet(TimesheetPackage.Literals.TIMESHEET__TIMESHEET_ID, newTimesheetId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UserLogin getApprovedByUserLogin() {
+		return (UserLogin)eGet(TimesheetPackage.Literals.TIMESHEET__APPROVED_BY_USER_LOGIN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setApprovedByUserLogin(UserLogin newApprovedByUserLogin) {
+		eSet(TimesheetPackage.Literals.TIMESHEET__APPROVED_BY_USER_LOGIN, newApprovedByUserLogin);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getClientParty() {
+		return (Party)eGet(TimesheetPackage.Literals.TIMESHEET__CLIENT_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setClientParty(Party newClientParty) {
+		eSet(TimesheetPackage.Literals.TIMESHEET__CLIENT_PARTY, newClientParty);
 	}
 
 } //TimesheetImpl

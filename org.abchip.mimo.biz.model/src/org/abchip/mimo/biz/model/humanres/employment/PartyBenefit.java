@@ -26,14 +26,14 @@ import org.abchip.mimo.entity.EntityTyped;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PartyBenefit#getPartyIdTo <em>Party Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PartyBenefit#getPartyIdFrom <em>Party Id From</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PartyBenefit#getBenefitTypeId <em>Benefit Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PartyBenefit#getBenefitType <em>Benefit Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PartyBenefit#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PartyBenefit#getRoleTypeIdFrom <em>Role Type Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PartyBenefit#getRoleTypeIdTo <em>Role Type Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PartyBenefit#getActualEmployerPaidPercent <em>Actual Employer Paid Percent</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PartyBenefit#getAvailableTime <em>Available Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PartyBenefit#getCost <em>Cost</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PartyBenefit#getPeriodTypeId <em>Period Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PartyBenefit#getPeriodType <em>Period Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PartyBenefit#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -95,33 +95,6 @@ public interface PartyBenefit extends EntityTyped<BenefitType>, EntityInfo {
 	void setAvailableTime(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Benefit Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Benefit Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Benefit Type Id</em>' reference.
-	 * @see #setBenefitTypeId(BenefitType)
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPartyBenefit_BenefitTypeId()
-	 * @model keys="benefitTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	BenefitType getBenefitTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.PartyBenefit#getBenefitTypeId <em>Benefit Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Benefit Type Id</em>' reference.
-	 * @see #getBenefitTypeId()
-	 * @generated
-	 */
-	void setBenefitTypeId(BenefitType value);
-
-	/**
 	 * Returns the value of the '<em><b>Cost</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -146,6 +119,28 @@ public interface PartyBenefit extends EntityTyped<BenefitType>, EntityInfo {
 	 * @generated
 	 */
 	void setCost(BigDecimal value);
+
+	/**
+	 * Returns the value of the '<em><b>Period Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Period Type</em>' reference.
+	 * @see #setPeriodType(PeriodType)
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPartyBenefit_PeriodType()
+	 * @model keys="periodTypeId"
+	 * @generated
+	 */
+	PeriodType getPeriodType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.PartyBenefit#getPeriodType <em>Period Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Period Type</em>' reference.
+	 * @see #getPeriodType()
+	 * @generated
+	 */
+	void setPeriodType(PeriodType value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -202,6 +197,29 @@ public interface PartyBenefit extends EntityTyped<BenefitType>, EntityInfo {
 	void setPartyIdFrom(Party value);
 
 	/**
+	 * Returns the value of the '<em><b>Benefit Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Benefit Type</em>' reference.
+	 * @see #setBenefitType(BenefitType)
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPartyBenefit_BenefitType()
+	 * @model keys="benefitTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	BenefitType getBenefitType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.PartyBenefit#getBenefitType <em>Benefit Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Benefit Type</em>' reference.
+	 * @see #getBenefitType()
+	 * @generated
+	 */
+	void setBenefitType(BenefitType value);
+
+	/**
 	 * Returns the value of the '<em><b>Party Id To</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -227,32 +245,6 @@ public interface PartyBenefit extends EntityTyped<BenefitType>, EntityInfo {
 	 * @generated
 	 */
 	void setPartyIdTo(Party value);
-
-	/**
-	 * Returns the value of the '<em><b>Period Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Period Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Period Type Id</em>' reference.
-	 * @see #setPeriodTypeId(PeriodType)
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPartyBenefit_PeriodTypeId()
-	 * @model keys="periodTypeId"
-	 * @generated
-	 */
-	PeriodType getPeriodTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.PartyBenefit#getPeriodTypeId <em>Period Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Period Type Id</em>' reference.
-	 * @see #getPeriodTypeId()
-	 * @generated
-	 */
-	void setPeriodTypeId(PeriodType value);
 
 	/**
 	 * Returns the value of the '<em><b>Role Type Id From</b></em>' attribute.

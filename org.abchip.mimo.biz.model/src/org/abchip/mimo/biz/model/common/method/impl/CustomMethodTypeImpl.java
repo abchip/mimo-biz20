@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.method.impl.CustomMethodTypeImpl#getCustomMethodTypeId <em>Custom Method Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.method.impl.CustomMethodTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.method.impl.CustomMethodTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.method.impl.CustomMethodTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.method.impl.CustomMethodTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -199,8 +199,8 @@ public class CustomMethodTypeImpl extends EntityTypeImpl<CustomMethod> implement
 	 * @generated
 	 */
 	@Override
-	public CustomMethodType getParentTypeId() {
-		return (CustomMethodType)eGet(MethodPackage.Literals.CUSTOM_METHOD_TYPE__PARENT_TYPE_ID, true);
+	public CustomMethodType getParentType() {
+		return (CustomMethodType)eGet(MethodPackage.Literals.CUSTOM_METHOD_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -209,8 +209,8 @@ public class CustomMethodTypeImpl extends EntityTypeImpl<CustomMethod> implement
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(CustomMethodType newParentTypeId) {
-		eSet(MethodPackage.Literals.CUSTOM_METHOD_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(CustomMethodType newParentType) {
+		eSet(MethodPackage.Literals.CUSTOM_METHOD_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

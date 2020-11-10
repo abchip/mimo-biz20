@@ -109,22 +109,22 @@ public interface OrderPackage extends EPackage {
 	int COMMUNICATION_EVENT_ORDER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_ORDER__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int COMMUNICATION_EVENT_ORDER__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Communication Event Id</b></em>' reference.
+	 * The feature id for the '<em><b>Communication Event</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_ORDER__COMMUNICATION_EVENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int COMMUNICATION_EVENT_ORDER__COMMUNICATION_EVENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Communication Event Order</em>' class.
@@ -335,31 +335,31 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ADJUSTMENT__OLD_PERCENTAGE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
+	 * The feature id for the '<em><b>Order</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORDER_ADJUSTMENT__ORDER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
+
+	/**
 	 * The feature id for the '<em><b>Order Adjustment Attributes</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ADJUSTMENT__ORDER_ADJUSTMENT_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
+	int ORDER_ADJUSTMENT__ORDER_ADJUSTMENT_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
-	 * The feature id for the '<em><b>Order Adjustment Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order Adjustment Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ADJUSTMENT__ORDER_ADJUSTMENT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
-
-	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDER_ADJUSTMENT__ORDER_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
+	int ORDER_ADJUSTMENT__ORDER_ADJUSTMENT_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -371,31 +371,31 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ADJUSTMENT__ORDER_ITEM_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
-	 * The feature id for the '<em><b>Original Adjustment Id</b></em>' reference.
+	 * The feature id for the '<em><b>Original Adjustment</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ADJUSTMENT__ORIGINAL_ADJUSTMENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
+	int ORDER_ADJUSTMENT__ORIGINAL_ADJUSTMENT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
 
 	/**
-	 * The feature id for the '<em><b>Override Gl Account Id</b></em>' reference.
+	 * The feature id for the '<em><b>Override Gl Account</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ADJUSTMENT__OVERRIDE_GL_ACCOUNT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
+	int ORDER_ADJUSTMENT__OVERRIDE_GL_ACCOUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
 
 	/**
-	 * The feature id for the '<em><b>Primary Geo Id</b></em>' reference.
+	 * The feature id for the '<em><b>Primary Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ADJUSTMENT__PRIMARY_GEO_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
+	int ORDER_ADJUSTMENT__PRIMARY_GEO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Product Feature Id</b></em>' attribute.
@@ -407,22 +407,22 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ADJUSTMENT__PRODUCT_FEATURE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
 
 	/**
+	 * The feature id for the '<em><b>Product Promo</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORDER_ADJUSTMENT__PRODUCT_PROMO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
+
+	/**
 	 * The feature id for the '<em><b>Product Promo Action Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ADJUSTMENT__PRODUCT_PROMO_ACTION_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
-
-	/**
-	 * The feature id for the '<em><b>Product Promo Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDER_ADJUSTMENT__PRODUCT_PROMO_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
+	int ORDER_ADJUSTMENT__PRODUCT_PROMO_ACTION_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Rule Id</b></em>' attribute.
@@ -443,13 +443,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ADJUSTMENT__RECURRING_AMOUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 32;
 
 	/**
-	 * The feature id for the '<em><b>Secondary Geo Id</b></em>' reference.
+	 * The feature id for the '<em><b>Secondary Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ADJUSTMENT__SECONDARY_GEO_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 33;
+	int ORDER_ADJUSTMENT__SECONDARY_GEO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 33;
 
 	/**
 	 * The feature id for the '<em><b>Ship Group Seq Id</b></em>' attribute.
@@ -497,13 +497,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ADJUSTMENT__TAX_AUTH_PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 38;
 
 	/**
-	 * The feature id for the '<em><b>Tax Authority Rate Seq Id</b></em>' reference.
+	 * The feature id for the '<em><b>Tax Authority Rate Seq</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ADJUSTMENT__TAX_AUTHORITY_RATE_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 39;
+	int ORDER_ADJUSTMENT__TAX_AUTHORITY_RATE_SEQ = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 39;
 
 	/**
 	 * The number of structural features of the '<em>Adjustment</em>' class.
@@ -561,13 +561,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ADJUSTMENT_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Adjustment Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order Adjustment</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ADJUSTMENT_ATTRIBUTE__ORDER_ADJUSTMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_ADJUSTMENT_ATTRIBUTE__ORDER_ADJUSTMENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -652,22 +652,22 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ADJUSTMENT_BILLING__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Adjustment Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order Adjustment</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ADJUSTMENT_BILLING__ORDER_ADJUSTMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_ADJUSTMENT_BILLING__ORDER_ADJUSTMENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Invoice Id</b></em>' reference.
+	 * The feature id for the '<em><b>Invoice</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ADJUSTMENT_BILLING__INVOICE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int ORDER_ADJUSTMENT_BILLING__INVOICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Seq Id</b></em>' attribute.
@@ -788,13 +788,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ADJUSTMENT_TYPE__ORDER_ADJUSTMENT_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ADJUSTMENT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
+	int ORDER_ADJUSTMENT_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Adjustment Type</em>' class.
@@ -852,13 +852,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ADJUSTMENT_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Adjustment Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order Adjustment Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ADJUSTMENT_TYPE_ATTR__ORDER_ADJUSTMENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_ADJUSTMENT_TYPE_ATTR__ORDER_ADJUSTMENT_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -934,13 +934,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ATTRIBUTE__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_ATTRIBUTE__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1025,13 +1025,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_BLACKLIST__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Blacklist Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order Blacklist Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_BLACKLIST__ORDER_BLACKLIST_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int ORDER_BLACKLIST__ORDER_BLACKLIST_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Blacklist String</b></em>' attribute.
@@ -1180,31 +1180,31 @@ public interface OrderPackage extends EPackage {
 	int ORDER_CONTACT_MECH__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_CONTACT_MECH__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_CONTACT_MECH__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Contact Mech Id</b></em>' reference.
+	 * The feature id for the '<em><b>Contact Mech</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_CONTACT_MECH__CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int ORDER_CONTACT_MECH__CONTACT_MECH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Contact Mech Purpose Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Contact Mech Purpose Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int ORDER_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Contact Mech</em>' class.
@@ -1262,31 +1262,31 @@ public interface OrderPackage extends EPackage {
 	int ORDER_CONTENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_CONTENT__ORDER_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int ORDER_CONTENT__ORDER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Content Id</b></em>' reference.
+	 * The feature id for the '<em><b>Content</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_CONTENT__CONTENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int ORDER_CONTENT__CONTENT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Order Content Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order Content Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_CONTENT__ORDER_CONTENT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int ORDER_CONTENT__ORDER_CONTENT_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1407,13 +1407,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_CONTENT_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_CONTENT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int ORDER_CONTENT_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Content Type</em>' class.
@@ -1471,13 +1471,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_DELIVERY_SCHEDULE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_DELIVERY_SCHEDULE__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_DELIVERY_SCHEDULE__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -1516,13 +1516,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_DELIVERY_SCHEDULE__SKIDS_PALLETS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_DELIVERY_SCHEDULE__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int ORDER_DELIVERY_SCHEDULE__STATUS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Total Cubic Size</b></em>' attribute.
@@ -1534,13 +1534,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_DELIVERY_SCHEDULE__TOTAL_CUBIC_SIZE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Total Cubic Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Total Cubic Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_DELIVERY_SCHEDULE__TOTAL_CUBIC_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int ORDER_DELIVERY_SCHEDULE__TOTAL_CUBIC_UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Total Weight</b></em>' attribute.
@@ -1552,13 +1552,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_DELIVERY_SCHEDULE__TOTAL_WEIGHT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
-	 * The feature id for the '<em><b>Total Weight Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Total Weight Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_DELIVERY_SCHEDULE__TOTAL_WEIGHT_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
+	int ORDER_DELIVERY_SCHEDULE__TOTAL_WEIGHT_UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Units Pieces</b></em>' attribute.
@@ -1643,22 +1643,22 @@ public interface OrderPackage extends EPackage {
 	int ORDER_HEADER__AGREEMENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Auto Order Shopping List Id</b></em>' reference.
+	 * The feature id for the '<em><b>Auto Order Shopping List</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_HEADER__AUTO_ORDER_SHOPPING_LIST_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int ORDER_HEADER__AUTO_ORDER_SHOPPING_LIST = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Billing Account Id</b></em>' reference.
+	 * The feature id for the '<em><b>Billing Account</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_HEADER__BILLING_ACCOUNT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int ORDER_HEADER__BILLING_ACCOUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Communication Event Orders</b></em>' reference list.
@@ -1859,22 +1859,22 @@ public interface OrderPackage extends EPackage {
 	int ORDER_HEADER__ORDER_PRODUCT_PROMO_CODES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
 
 	/**
-	 * The feature id for the '<em><b>Order Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_HEADER__ORDER_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
+	int ORDER_HEADER__ORDER_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
 
 	/**
-	 * The feature id for the '<em><b>Origin Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Origin Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_HEADER__ORIGIN_FACILITY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
+	int ORDER_HEADER__ORIGIN_FACILITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Pick Sheet Printed Date</b></em>' attribute.
@@ -1904,13 +1904,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_HEADER__PRODUCT_PROMO_USES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 34;
 
 	/**
-	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Store</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_HEADER__PRODUCT_STORE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 35;
+	int ORDER_HEADER__PRODUCT_STORE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 35;
 
 	/**
 	 * The feature id for the '<em><b>Remaining Sub Total</b></em>' attribute.
@@ -1922,31 +1922,31 @@ public interface OrderPackage extends EPackage {
 	int ORDER_HEADER__REMAINING_SUB_TOTAL = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 36;
 
 	/**
-	 * The feature id for the '<em><b>Sales Channel Enum Id</b></em>' reference.
+	 * The feature id for the '<em><b>Sales Channel Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_HEADER__SALES_CHANNEL_ENUM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 37;
+	int ORDER_HEADER__SALES_CHANNEL_ENUM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 37;
 
 	/**
-	 * The feature id for the '<em><b>Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_HEADER__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 38;
+	int ORDER_HEADER__STATUS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 38;
 
 	/**
-	 * The feature id for the '<em><b>Sync Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Sync Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_HEADER__SYNC_STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 39;
+	int ORDER_HEADER__SYNC_STATUS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 39;
 
 	/**
 	 * The feature id for the '<em><b>Terminal Id</b></em>' attribute.
@@ -1985,13 +1985,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_HEADER__VISIT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 43;
 
 	/**
-	 * The feature id for the '<em><b>Web Site Id</b></em>' reference.
+	 * The feature id for the '<em><b>Web Site</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_HEADER__WEB_SITE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 44;
+	int ORDER_HEADER__WEB_SITE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 44;
 
 	/**
 	 * The number of structural features of the '<em>Header</em>' class.
@@ -2058,13 +2058,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_HEADER_NOTE__NOTE_ID = BizPackage.BIZ_ENTITY_NOTE__NOTE_ID;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_HEADER_NOTE__ORDER_ID = BizPackage.BIZ_ENTITY_NOTE_FEATURE_COUNT + 0;
+	int ORDER_HEADER_NOTE__ORDER = BizPackage.BIZ_ENTITY_NOTE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Internal Note</b></em>' attribute.
@@ -2131,22 +2131,22 @@ public interface OrderPackage extends EPackage {
 	int ORDER_HEADER_WORK_EFFORT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_HEADER_WORK_EFFORT__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_HEADER_WORK_EFFORT__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_HEADER_WORK_EFFORT__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int ORDER_HEADER_WORK_EFFORT__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Header Work Effort</em>' class.
@@ -2204,13 +2204,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM__ORDER_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int ORDER_ITEM__ORDER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -2267,13 +2267,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM__CANCEL_QUANTITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Change By User Login Id</b></em>' reference.
+	 * The feature id for the '<em><b>Change By User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM__CHANGE_BY_USER_LOGIN_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
+	int ORDER_ITEM__CHANGE_BY_USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -2348,13 +2348,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM__EXTERNAL_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
-	 * The feature id for the '<em><b>From Inventory Item Id</b></em>' reference.
+	 * The feature id for the '<em><b>From Inventory Item</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM__FROM_INVENTORY_ITEM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
+	int ORDER_ITEM__FROM_INVENTORY_ITEM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Is Item Group Primary</b></em>' attribute.
@@ -2402,22 +2402,22 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM__ORDER_ITEM_GROUP_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
 
 	/**
-	 * The feature id for the '<em><b>Order Item Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order Item Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM__ORDER_ITEM_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
+	int ORDER_ITEM__ORDER_ITEM_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
 
 	/**
-	 * The feature id for the '<em><b>Override Gl Account Id</b></em>' reference.
+	 * The feature id for the '<em><b>Override Gl Account</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM__OVERRIDE_GL_ACCOUNT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
+	int ORDER_ITEM__OVERRIDE_GL_ACCOUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Prod Catalog Id</b></em>' attribute.
@@ -2429,13 +2429,22 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM__PROD_CATALOG_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
 
 	/**
+	 * The feature id for the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORDER_ITEM__PRODUCT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
+
+	/**
 	 * The feature id for the '<em><b>Product Category Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
+	int ORDER_ITEM__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Product Feature Id</b></em>' attribute.
@@ -2444,16 +2453,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM__PRODUCT_FEATURE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
-
-	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDER_ITEM__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
+	int ORDER_ITEM__PRODUCT_FEATURE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -2483,13 +2483,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM__QUOTE_ITEM_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 34;
 
 	/**
-	 * The feature id for the '<em><b>Recurring Freq Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Recurring Freq Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM__RECURRING_FREQ_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 35;
+	int ORDER_ITEM__RECURRING_FREQ_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 35;
 
 	/**
 	 * The feature id for the '<em><b>Reserve After Date</b></em>' attribute.
@@ -2501,13 +2501,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM__RESERVE_AFTER_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 36;
 
 	/**
-	 * The feature id for the '<em><b>Sales Opportunity Id</b></em>' reference.
+	 * The feature id for the '<em><b>Sales Opportunity</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM__SALES_OPPORTUNITY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 37;
+	int ORDER_ITEM__SALES_OPPORTUNITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 37;
 
 	/**
 	 * The feature id for the '<em><b>Selected Amount</b></em>' attribute.
@@ -2555,13 +2555,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM__SHOPPING_LIST_ITEM_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 42;
 
 	/**
-	 * The feature id for the '<em><b>Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 43;
+	int ORDER_ITEM__STATUS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 43;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Id</b></em>' attribute.
@@ -2582,13 +2582,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM__SUPPLIER_PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 45;
 
 	/**
-	 * The feature id for the '<em><b>Sync Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Sync Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM__SYNC_STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 46;
+	int ORDER_ITEM__SYNC_STATUS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 46;
 
 	/**
 	 * The feature id for the '<em><b>Unit Average Cost</b></em>' attribute.
@@ -2682,31 +2682,31 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_ASSOC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Item Assoc Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order Item Assoc Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_ASSOC__ORDER_ITEM_ASSOC_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int ORDER_ITEM_ASSOC__ORDER_ITEM_ASSOC_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_ASSOC__ORDER_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int ORDER_ITEM_ASSOC__ORDER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>To Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>To Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_ASSOC__TO_ORDER_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int ORDER_ITEM_ASSOC__TO_ORDER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -2845,13 +2845,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_ASSOC_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_ASSOC_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int ORDER_ITEM_ASSOC_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Item Assoc Type</em>' class.
@@ -3009,22 +3009,22 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_BILLING__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_BILLING__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_ITEM_BILLING__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Invoice Id</b></em>' reference.
+	 * The feature id for the '<em><b>Invoice</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_BILLING__INVOICE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int ORDER_ITEM_BILLING__INVOICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Seq Id</b></em>' attribute.
@@ -3054,13 +3054,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_BILLING__AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Item Issuance Id</b></em>' reference.
+	 * The feature id for the '<em><b>Item Issuance</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_BILLING__ITEM_ISSUANCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int ORDER_ITEM_BILLING__ITEM_ISSUANCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -3072,13 +3072,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_BILLING__QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Shipment Receipt Id</b></em>' reference.
+	 * The feature id for the '<em><b>Shipment Receipt</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_BILLING__SHIPMENT_RECEIPT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int ORDER_ITEM_BILLING__SHIPMENT_RECEIPT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Item Billing</em>' class.
@@ -3172,13 +3172,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_CHANGE__CHANGE_DATETIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Change Type Enum Id</b></em>' reference.
+	 * The feature id for the '<em><b>Change Type Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_CHANGE__CHANGE_TYPE_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int ORDER_ITEM_CHANGE__CHANGE_TYPE_ENUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Change User Login</b></em>' reference.
@@ -3199,13 +3199,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_CHANGE__ITEM_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_CHANGE__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int ORDER_ITEM_CHANGE__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -3226,13 +3226,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_CHANGE__QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
-	 * The feature id for the '<em><b>Reason Enum Id</b></em>' reference.
+	 * The feature id for the '<em><b>Reason Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_CHANGE__REASON_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
+	int ORDER_ITEM_CHANGE__REASON_ENUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Unit Price</b></em>' attribute.
@@ -3299,22 +3299,22 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_CONTACT_MECH__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_CONTACT_MECH__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_ITEM_CONTACT_MECH__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Contact Mech Purpose Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Contact Mech Purpose Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int ORDER_ITEM_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -3326,13 +3326,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_CONTACT_MECH__ORDER_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Contact Mech Id</b></em>' reference.
+	 * The feature id for the '<em><b>Contact Mech</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_CONTACT_MECH__CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int ORDER_ITEM_CONTACT_MECH__CONTACT_MECH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Item Contact Mech</em>' class.
@@ -3390,13 +3390,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_GROUP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_GROUP__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_ITEM_GROUP__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Group Seq Id</b></em>' attribute.
@@ -3481,13 +3481,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_GROUP_ORDER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Group Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Group Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_GROUP_ORDER__GROUP_ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_ITEM_GROUP_ORDER__GROUP_ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Order Id</b></em>' attribute.
@@ -3590,13 +3590,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_PRICE_INFO__MODIFY_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_PRICE_INFO__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int ORDER_ITEM_PRICE_INFO__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -3617,13 +3617,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_PRICE_INFO__PRODUCT_PRICE_ACTION_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Product Price Rule Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Price Rule</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_PRICE_INFO__PRODUCT_PRICE_RULE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int ORDER_ITEM_PRICE_INFO__PRODUCT_PRICE_RULE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Rate Code</b></em>' attribute.
@@ -3690,31 +3690,31 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_ROLE__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_ITEM_ROLE__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int ORDER_ITEM_ROLE__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int ORDER_ITEM_ROLE__ROLE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -3781,13 +3781,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_SHIP_GROUP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_SHIP_GROUP__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_ITEM_SHIP_GROUP__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Ship Group Seq Id</b></em>' attribute.
@@ -3799,13 +3799,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_SHIP_GROUP__SHIP_GROUP_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Carrier Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Carrier Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_SHIP_GROUP__CARRIER_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int ORDER_ITEM_SHIP_GROUP__CARRIER_PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Carrier Role Type Id</b></em>' attribute.
@@ -3817,13 +3817,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_SHIP_GROUP__CARRIER_ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Contact Mech Id</b></em>' reference.
+	 * The feature id for the '<em><b>Contact Mech</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_SHIP_GROUP__CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int ORDER_ITEM_SHIP_GROUP__CONTACT_MECH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Delivery Date</b></em>' attribute.
@@ -3844,13 +3844,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_SHIP_GROUP__ESTIMATED_SHIP_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_SHIP_GROUP__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int ORDER_ITEM_SHIP_GROUP__FACILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Gift Message</b></em>' attribute.
@@ -3898,13 +3898,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_SHIP_GROUP__SHIP_BY_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
-	 * The feature id for the '<em><b>Shipment Method Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Shipment Method Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_SHIP_GROUP__SHIPMENT_METHOD_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
+	int ORDER_ITEM_SHIP_GROUP__SHIPMENT_METHOD_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Shipping Instructions</b></em>' attribute.
@@ -3916,31 +3916,31 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_SHIP_GROUP__SHIPPING_INSTRUCTIONS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
-	 * The feature id for the '<em><b>Supplier Agreement Id</b></em>' reference.
+	 * The feature id for the '<em><b>Supplier Agreement</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_SHIP_GROUP__SUPPLIER_AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
+	int ORDER_ITEM_SHIP_GROUP__SUPPLIER_AGREEMENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
-	 * The feature id for the '<em><b>Supplier Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Supplier Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_SHIP_GROUP__SUPPLIER_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
+	int ORDER_ITEM_SHIP_GROUP__SUPPLIER_PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
-	 * The feature id for the '<em><b>Telecom Contact Mech Id</b></em>' reference.
+	 * The feature id for the '<em><b>Telecom Contact Mech</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_SHIP_GROUP__TELECOM_CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
+	int ORDER_ITEM_SHIP_GROUP__TELECOM_CONTACT_MECH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Tracking Number</b></em>' attribute.
@@ -3952,13 +3952,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_SHIP_GROUP__TRACKING_NUMBER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
 
 	/**
-	 * The feature id for the '<em><b>Vendor Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Vendor Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_SHIP_GROUP__VENDOR_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 23;
+	int ORDER_ITEM_SHIP_GROUP__VENDOR_PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 23;
 
 	/**
 	 * The number of structural features of the '<em>Item Ship Group</em>' class.
@@ -4016,13 +4016,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_SHIP_GROUP_ASSOC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_SHIP_GROUP_ASSOC__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_ITEM_SHIP_GROUP_ASSOC__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -4116,22 +4116,22 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_SHIP_GRP_INV_RES__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_SHIP_GRP_INV_RES__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_ITEM_SHIP_GRP_INV_RES__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Inventory Item Id</b></em>' reference.
+	 * The feature id for the '<em><b>Inventory Item</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_SHIP_GRP_INV_RES__INVENTORY_ITEM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int ORDER_ITEM_SHIP_GRP_INV_RES__INVENTORY_ITEM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -4342,13 +4342,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_TYPE__ORDER_ITEM_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
+	int ORDER_ITEM_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Item Type</em>' class.
@@ -4406,13 +4406,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ITEM_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Item Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order Item Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ITEM_TYPE_ATTR__ORDER_ITEM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_ITEM_TYPE_ATTR__ORDER_ITEM_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -4524,13 +4524,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_NOTIFICATION__NOTIFICATION_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_NOTIFICATION__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int ORDER_NOTIFICATION__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Notification</em>' class.
@@ -4624,13 +4624,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_PAYMENT_PREFERENCE__CREATED_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Fin Account Id</b></em>' reference.
+	 * The feature id for the '<em><b>Fin Account</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_PAYMENT_PREFERENCE__FIN_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int ORDER_PAYMENT_PREFERENCE__FIN_ACCOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' attribute.
@@ -4687,13 +4687,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_PAYMENT_PREFERENCE__NEEDS_NSF_RETRY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_PAYMENT_PREFERENCE__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
+	int ORDER_PAYMENT_PREFERENCE__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -4714,22 +4714,22 @@ public interface OrderPackage extends EPackage {
 	int ORDER_PAYMENT_PREFERENCE__OVERFLOW_FLAG = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
-	 * The feature id for the '<em><b>Payment Method Id</b></em>' reference.
+	 * The feature id for the '<em><b>Payment Method</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
+	int ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
-	 * The feature id for the '<em><b>Payment Method Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Payment Method Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
+	int ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Present Flag</b></em>' attribute.
@@ -4750,13 +4750,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_PAYMENT_PREFERENCE__PROCESS_ATTEMPT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
-	 * The feature id for the '<em><b>Product Price Purpose Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Price Purpose</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_PAYMENT_PREFERENCE__PRODUCT_PRICE_PURPOSE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
+	int ORDER_PAYMENT_PREFERENCE__PRODUCT_PRICE_PURPOSE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Security Code</b></em>' attribute.
@@ -4777,13 +4777,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_PAYMENT_PREFERENCE__SHIP_GROUP_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 24;
 
 	/**
-	 * The feature id for the '<em><b>Status Id</b></em>' reference.
+	 * The feature id for the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_PAYMENT_PREFERENCE__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 25;
+	int ORDER_PAYMENT_PREFERENCE__STATUS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Swiped Flag</b></em>' attribute.
@@ -4859,22 +4859,22 @@ public interface OrderPackage extends EPackage {
 	int ORDER_PRODUCT_PROMO_CODE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_PRODUCT_PROMO_CODE__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_PRODUCT_PROMO_CODE__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Product Promo Code Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Promo Code</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_PRODUCT_PROMO_CODE__PRODUCT_PROMO_CODE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int ORDER_PRODUCT_PROMO_CODE__PRODUCT_PROMO_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Product Promo Code</em>' class.
@@ -4932,31 +4932,31 @@ public interface OrderPackage extends EPackage {
 	int ORDER_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ROLE__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_ROLE__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int ORDER_ROLE__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int ORDER_ROLE__ROLE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Role</em>' class.
@@ -5014,22 +5014,22 @@ public interface OrderPackage extends EPackage {
 	int ORDER_SHIPMENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_SHIPMENT__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_SHIPMENT__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Shipment Id</b></em>' reference.
+	 * The feature id for the '<em><b>Shipment</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_SHIPMENT__SHIPMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int ORDER_SHIPMENT__SHIPMENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -5141,13 +5141,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_STATUS__CHANGE_REASON = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_STATUS__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int ORDER_STATUS__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -5159,13 +5159,22 @@ public interface OrderPackage extends EPackage {
 	int ORDER_STATUS__ORDER_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Order Payment Preference Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order Payment Preference</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_STATUS__ORDER_PAYMENT_PREFERENCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int ORDER_STATUS__ORDER_PAYMENT_PREFERENCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+
+	/**
+	 * The feature id for the '<em><b>Status</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORDER_STATUS__STATUS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Status Datetime</b></em>' attribute.
@@ -5174,16 +5183,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_STATUS__STATUS_DATETIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
-
-	/**
-	 * The feature id for the '<em><b>Status Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDER_STATUS__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int ORDER_STATUS__STATUS_DATETIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Status User Login</b></em>' reference.
@@ -5250,22 +5250,22 @@ public interface OrderPackage extends EPackage {
 	int ORDER_SUMMARY_ENTRY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_SUMMARY_ENTRY__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_SUMMARY_ENTRY__PRODUCT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * The feature id for the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_SUMMARY_ENTRY__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int ORDER_SUMMARY_ENTRY__FACILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Entry Date</b></em>' attribute.
@@ -5359,22 +5359,22 @@ public interface OrderPackage extends EPackage {
 	int ORDER_TERM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_TERM__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_TERM__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Term Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Term Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_TERM__TERM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int ORDER_TERM__TERM_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -5422,13 +5422,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_TERM__TEXT_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_TERM__UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int ORDER_TERM__UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Term</em>' class.
@@ -5640,13 +5640,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_TYPE__ORDER_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
+	int ORDER_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -5704,13 +5704,13 @@ public interface OrderPackage extends EPackage {
 	int ORDER_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER_TYPE_ATTR__ORDER_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int ORDER_TYPE_ATTR__ORDER_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -5786,22 +5786,22 @@ public interface OrderPackage extends EPackage {
 	int PRODUCT_ORDER_ITEM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_ORDER_ITEM__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PRODUCT_ORDER_ITEM__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Engagement Id</b></em>' reference.
+	 * The feature id for the '<em><b>Engagement</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_ORDER_ITEM__ENGAGEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PRODUCT_ORDER_ITEM__ENGAGEMENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Engagement Item Seq Id</b></em>' attribute.
@@ -5822,13 +5822,13 @@ public interface OrderPackage extends EPackage {
 	int PRODUCT_ORDER_ITEM__ORDER_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_ORDER_ITEM__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int PRODUCT_ORDER_ITEM__PRODUCT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Product Order Item</em>' class.
@@ -5886,22 +5886,22 @@ public interface OrderPackage extends EPackage {
 	int WORK_ORDER_ITEM_FULFILLMENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Order Id</b></em>' reference.
+	 * The feature id for the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_ORDER_ITEM_FULFILLMENT__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WORK_ORDER_ITEM_FULFILLMENT__ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_ORDER_ITEM_FULFILLMENT__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int WORK_ORDER_ITEM_FULFILLMENT__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -5942,26 +5942,26 @@ public interface OrderPackage extends EPackage {
 	EClass getCommunicationEventOrder();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.CommunicationEventOrder#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.CommunicationEventOrder#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.CommunicationEventOrder#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.CommunicationEventOrder#getOrder()
 	 * @see #getCommunicationEventOrder()
 	 * @generated
 	 */
-	EReference getCommunicationEventOrder_OrderId();
+	EReference getCommunicationEventOrder_Order();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.CommunicationEventOrder#getCommunicationEventId <em>Communication Event Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.CommunicationEventOrder#getCommunicationEvent <em>Communication Event</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Communication Event Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.CommunicationEventOrder#getCommunicationEventId()
+	 * @return the meta object for the reference '<em>Communication Event</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.CommunicationEventOrder#getCommunicationEvent()
 	 * @see #getCommunicationEventOrder()
 	 * @generated
 	 */
-	EReference getCommunicationEventOrder_CommunicationEventId();
+	EReference getCommunicationEventOrder_CommunicationEvent();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment <em>Adjustment</em>}'.
@@ -6161,6 +6161,17 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderAdjustment_OldPercentage();
 
 	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getOrder <em>Order</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#getOrder()
+	 * @see #getOrderAdjustment()
+	 * @generated
+	 */
+	EReference getOrderAdjustment_Order();
+
+	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getOrderAdjustmentAttributes <em>Order Adjustment Attributes</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6172,26 +6183,15 @@ public interface OrderPackage extends EPackage {
 	EReference getOrderAdjustment_OrderAdjustmentAttributes();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getOrderAdjustmentTypeId <em>Order Adjustment Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getOrderAdjustmentType <em>Order Adjustment Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Adjustment Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#getOrderAdjustmentTypeId()
+	 * @return the meta object for the reference '<em>Order Adjustment Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#getOrderAdjustmentType()
 	 * @see #getOrderAdjustment()
 	 * @generated
 	 */
-	EReference getOrderAdjustment_OrderAdjustmentTypeId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getOrderId <em>Order Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#getOrderId()
-	 * @see #getOrderAdjustment()
-	 * @generated
-	 */
-	EReference getOrderAdjustment_OrderId();
+	EReference getOrderAdjustment_OrderAdjustmentType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -6205,37 +6205,37 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderAdjustment_OrderItemSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getOriginalAdjustmentId <em>Original Adjustment Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getOriginalAdjustment <em>Original Adjustment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Original Adjustment Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#getOriginalAdjustmentId()
+	 * @return the meta object for the reference '<em>Original Adjustment</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#getOriginalAdjustment()
 	 * @see #getOrderAdjustment()
 	 * @generated
 	 */
-	EReference getOrderAdjustment_OriginalAdjustmentId();
+	EReference getOrderAdjustment_OriginalAdjustment();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getOverrideGlAccountId <em>Override Gl Account Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getOverrideGlAccount <em>Override Gl Account</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Override Gl Account Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#getOverrideGlAccountId()
+	 * @return the meta object for the reference '<em>Override Gl Account</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#getOverrideGlAccount()
 	 * @see #getOrderAdjustment()
 	 * @generated
 	 */
-	EReference getOrderAdjustment_OverrideGlAccountId();
+	EReference getOrderAdjustment_OverrideGlAccount();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getPrimaryGeoId <em>Primary Geo Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getPrimaryGeo <em>Primary Geo</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Primary Geo Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#getPrimaryGeoId()
+	 * @return the meta object for the reference '<em>Primary Geo</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#getPrimaryGeo()
 	 * @see #getOrderAdjustment()
 	 * @generated
 	 */
-	EReference getOrderAdjustment_PrimaryGeoId();
+	EReference getOrderAdjustment_PrimaryGeo();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getProductFeatureId <em>Product Feature Id</em>}'.
@@ -6249,6 +6249,17 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderAdjustment_ProductFeatureId();
 
 	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getProductPromo <em>Product Promo</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Product Promo</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#getProductPromo()
+	 * @see #getOrderAdjustment()
+	 * @generated
+	 */
+	EReference getOrderAdjustment_ProductPromo();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getProductPromoActionSeqId <em>Product Promo Action Seq Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6258,17 +6269,6 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getOrderAdjustment_ProductPromoActionSeqId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getProductPromoId <em>Product Promo Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Promo Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#getProductPromoId()
-	 * @see #getOrderAdjustment()
-	 * @generated
-	 */
-	EReference getOrderAdjustment_ProductPromoId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getProductPromoRuleId <em>Product Promo Rule Id</em>}'.
@@ -6293,15 +6293,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderAdjustment_RecurringAmount();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getSecondaryGeoId <em>Secondary Geo Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getSecondaryGeo <em>Secondary Geo</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Secondary Geo Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#getSecondaryGeoId()
+	 * @return the meta object for the reference '<em>Secondary Geo</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#getSecondaryGeo()
 	 * @see #getOrderAdjustment()
 	 * @generated
 	 */
-	EReference getOrderAdjustment_SecondaryGeoId();
+	EReference getOrderAdjustment_SecondaryGeo();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getShipGroupSeqId <em>Ship Group Seq Id</em>}'.
@@ -6359,15 +6359,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderAdjustment_TaxAuthPartyId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getTaxAuthorityRateSeqId <em>Tax Authority Rate Seq Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getTaxAuthorityRateSeq <em>Tax Authority Rate Seq</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Tax Authority Rate Seq Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#getTaxAuthorityRateSeqId()
+	 * @return the meta object for the reference '<em>Tax Authority Rate Seq</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#getTaxAuthorityRateSeq()
 	 * @see #getOrderAdjustment()
 	 * @generated
 	 */
-	EReference getOrderAdjustment_TaxAuthorityRateSeqId();
+	EReference getOrderAdjustment_TaxAuthorityRateSeq();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentAttribute <em>Adjustment Attribute</em>}'.
@@ -6380,15 +6380,15 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderAdjustmentAttribute();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentAttribute#getOrderAdjustmentId <em>Order Adjustment Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentAttribute#getOrderAdjustment <em>Order Adjustment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Adjustment Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustmentAttribute#getOrderAdjustmentId()
+	 * @return the meta object for the reference '<em>Order Adjustment</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustmentAttribute#getOrderAdjustment()
 	 * @see #getOrderAdjustmentAttribute()
 	 * @generated
 	 */
-	EReference getOrderAdjustmentAttribute_OrderAdjustmentId();
+	EReference getOrderAdjustmentAttribute_OrderAdjustment();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentAttribute#getAttrName <em>Attr Name</em>}'.
@@ -6434,26 +6434,26 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderAdjustmentBilling();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling#getOrderAdjustmentId <em>Order Adjustment Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling#getOrderAdjustment <em>Order Adjustment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Adjustment Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling#getOrderAdjustmentId()
+	 * @return the meta object for the reference '<em>Order Adjustment</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling#getOrderAdjustment()
 	 * @see #getOrderAdjustmentBilling()
 	 * @generated
 	 */
-	EReference getOrderAdjustmentBilling_OrderAdjustmentId();
+	EReference getOrderAdjustmentBilling_OrderAdjustment();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling#getInvoiceId <em>Invoice Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling#getInvoice <em>Invoice</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Invoice Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling#getInvoiceId()
+	 * @return the meta object for the reference '<em>Invoice</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling#getInvoice()
 	 * @see #getOrderAdjustmentBilling()
 	 * @generated
 	 */
-	EReference getOrderAdjustmentBilling_InvoiceId();
+	EReference getOrderAdjustmentBilling_Invoice();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling#getInvoiceItemSeqId <em>Invoice Item Seq Id</em>}'.
@@ -6532,15 +6532,15 @@ public interface OrderPackage extends EPackage {
 	EReference getOrderAdjustmentType_OrderAdjustmentTypeAttrs();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustmentType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustmentType#getParentType()
 	 * @see #getOrderAdjustmentType()
 	 * @generated
 	 */
-	EReference getOrderAdjustmentType_ParentTypeId();
+	EReference getOrderAdjustmentType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentTypeAttr <em>Adjustment Type Attr</em>}'.
@@ -6553,15 +6553,15 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderAdjustmentTypeAttr();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentTypeAttr#getOrderAdjustmentTypeId <em>Order Adjustment Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentTypeAttr#getOrderAdjustmentType <em>Order Adjustment Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Adjustment Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustmentTypeAttr#getOrderAdjustmentTypeId()
+	 * @return the meta object for the reference '<em>Order Adjustment Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustmentTypeAttr#getOrderAdjustmentType()
 	 * @see #getOrderAdjustmentTypeAttr()
 	 * @generated
 	 */
-	EReference getOrderAdjustmentTypeAttr_OrderAdjustmentTypeId();
+	EReference getOrderAdjustmentTypeAttr_OrderAdjustmentType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentTypeAttr#getAttrName <em>Attr Name</em>}'.
@@ -6596,15 +6596,15 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderAttribute();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAttribute#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderAttribute#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderAttribute#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderAttribute#getOrder()
 	 * @see #getOrderAttribute()
 	 * @generated
 	 */
-	EReference getOrderAttribute_OrderId();
+	EReference getOrderAttribute_Order();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderAttribute#getAttrName <em>Attr Name</em>}'.
@@ -6650,6 +6650,17 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderBlacklist();
 
 	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderBlacklist#getOrderBlacklistType <em>Order Blacklist Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Order Blacklist Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderBlacklist#getOrderBlacklistType()
+	 * @see #getOrderBlacklist()
+	 * @generated
+	 */
+	EReference getOrderBlacklist_OrderBlacklistType();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderBlacklist#getBlacklistString <em>Blacklist String</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6659,17 +6670,6 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getOrderBlacklist_BlacklistString();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderBlacklist#getOrderBlacklistTypeId <em>Order Blacklist Type Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Blacklist Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderBlacklist#getOrderBlacklistTypeId()
-	 * @see #getOrderBlacklist()
-	 * @generated
-	 */
-	EReference getOrderBlacklist_OrderBlacklistTypeId();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderBlacklistType <em>Blacklist Type</em>}'.
@@ -6714,37 +6714,37 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderContactMech();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderContactMech#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderContactMech#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderContactMech#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderContactMech#getOrder()
 	 * @see #getOrderContactMech()
 	 * @generated
 	 */
-	EReference getOrderContactMech_OrderId();
+	EReference getOrderContactMech_Order();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderContactMech#getContactMechPurposeTypeId <em>Contact Mech Purpose Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderContactMech#getContactMech <em>Contact Mech</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Contact Mech Purpose Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderContactMech#getContactMechPurposeTypeId()
+	 * @return the meta object for the reference '<em>Contact Mech</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderContactMech#getContactMech()
 	 * @see #getOrderContactMech()
 	 * @generated
 	 */
-	EReference getOrderContactMech_ContactMechPurposeTypeId();
+	EReference getOrderContactMech_ContactMech();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderContactMech#getContactMechId <em>Contact Mech Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderContactMech#getContactMechPurposeType <em>Contact Mech Purpose Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Contact Mech Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderContactMech#getContactMechId()
+	 * @return the meta object for the reference '<em>Contact Mech Purpose Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderContactMech#getContactMechPurposeType()
 	 * @see #getOrderContactMech()
 	 * @generated
 	 */
-	EReference getOrderContactMech_ContactMechId();
+	EReference getOrderContactMech_ContactMechPurposeType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderContent <em>Content</em>}'.
@@ -6757,26 +6757,37 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderContent();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderContent#getContentId <em>Content Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderContent#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Content Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderContent#getContentId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderContent#getOrder()
 	 * @see #getOrderContent()
 	 * @generated
 	 */
-	EReference getOrderContent_ContentId();
+	EReference getOrderContent_Order();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderContent#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderContent#getContent <em>Content</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderContent#getOrderId()
+	 * @return the meta object for the reference '<em>Content</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderContent#getContent()
 	 * @see #getOrderContent()
 	 * @generated
 	 */
-	EReference getOrderContent_OrderId();
+	EReference getOrderContent_Content();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderContent#getOrderContentType <em>Order Content Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Order Content Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderContent#getOrderContentType()
+	 * @see #getOrderContent()
+	 * @generated
+	 */
+	EReference getOrderContent_OrderContentType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderContent#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -6788,17 +6799,6 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getOrderContent_OrderItemSeqId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderContent#getOrderContentTypeId <em>Order Content Type Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Content Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderContent#getOrderContentTypeId()
-	 * @see #getOrderContent()
-	 * @generated
-	 */
-	EReference getOrderContent_OrderContentTypeId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderContent#getFromDate <em>From Date</em>}'.
@@ -6866,15 +6866,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderContentType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderContentType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderContentType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderContentType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderContentType#getParentType()
 	 * @see #getOrderContentType()
 	 * @generated
 	 */
-	EReference getOrderContentType_ParentTypeId();
+	EReference getOrderContentType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule <em>Delivery Schedule</em>}'.
@@ -6887,15 +6887,15 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderDeliverySchedule();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getOrder()
 	 * @see #getOrderDeliverySchedule()
 	 * @generated
 	 */
-	EReference getOrderDeliverySchedule_OrderId();
+	EReference getOrderDeliverySchedule_Order();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -6942,15 +6942,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderDeliverySchedule_SkidsPallets();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getStatusId <em>Status Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getStatus <em>Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getStatusId()
+	 * @return the meta object for the reference '<em>Status</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getStatus()
 	 * @see #getOrderDeliverySchedule()
 	 * @generated
 	 */
-	EReference getOrderDeliverySchedule_StatusId();
+	EReference getOrderDeliverySchedule_Status();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalCubicSize <em>Total Cubic Size</em>}'.
@@ -6964,15 +6964,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderDeliverySchedule_TotalCubicSize();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalCubicUomId <em>Total Cubic Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalCubicUom <em>Total Cubic Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Total Cubic Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalCubicUomId()
+	 * @return the meta object for the reference '<em>Total Cubic Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalCubicUom()
 	 * @see #getOrderDeliverySchedule()
 	 * @generated
 	 */
-	EReference getOrderDeliverySchedule_TotalCubicUomId();
+	EReference getOrderDeliverySchedule_TotalCubicUom();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalWeight <em>Total Weight</em>}'.
@@ -6986,15 +6986,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderDeliverySchedule_TotalWeight();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalWeightUomId <em>Total Weight Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalWeightUom <em>Total Weight Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Total Weight Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalWeightUomId()
+	 * @return the meta object for the reference '<em>Total Weight Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getTotalWeightUom()
 	 * @see #getOrderDeliverySchedule()
 	 * @generated
 	 */
-	EReference getOrderDeliverySchedule_TotalWeightUomId();
+	EReference getOrderDeliverySchedule_TotalWeightUom();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule#getUnitsPieces <em>Units Pieces</em>}'.
@@ -7040,26 +7040,26 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderHeader_AgreementId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getAutoOrderShoppingListId <em>Auto Order Shopping List Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getAutoOrderShoppingList <em>Auto Order Shopping List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Auto Order Shopping List Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#getAutoOrderShoppingListId()
+	 * @return the meta object for the reference '<em>Auto Order Shopping List</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#getAutoOrderShoppingList()
 	 * @see #getOrderHeader()
 	 * @generated
 	 */
-	EReference getOrderHeader_AutoOrderShoppingListId();
+	EReference getOrderHeader_AutoOrderShoppingList();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getBillingAccountId <em>Billing Account Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getBillingAccount <em>Billing Account</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Billing Account Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#getBillingAccountId()
+	 * @return the meta object for the reference '<em>Billing Account</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#getBillingAccount()
 	 * @see #getOrderHeader()
 	 * @generated
 	 */
-	EReference getOrderHeader_BillingAccountId();
+	EReference getOrderHeader_BillingAccount();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getCommunicationEventOrders <em>Communication Event Orders</em>}'.
@@ -7304,26 +7304,26 @@ public interface OrderPackage extends EPackage {
 	EReference getOrderHeader_OrderProductPromoCodes();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getOrderTypeId <em>Order Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getOrderType <em>Order Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#getOrderTypeId()
+	 * @return the meta object for the reference '<em>Order Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#getOrderType()
 	 * @see #getOrderHeader()
 	 * @generated
 	 */
-	EReference getOrderHeader_OrderTypeId();
+	EReference getOrderHeader_OrderType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getOriginFacilityId <em>Origin Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getOriginFacility <em>Origin Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Origin Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#getOriginFacilityId()
+	 * @return the meta object for the reference '<em>Origin Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#getOriginFacility()
 	 * @see #getOrderHeader()
 	 * @generated
 	 */
-	EReference getOrderHeader_OriginFacilityId();
+	EReference getOrderHeader_OriginFacility();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getPickSheetPrintedDate <em>Pick Sheet Printed Date</em>}'.
@@ -7359,15 +7359,15 @@ public interface OrderPackage extends EPackage {
 	EReference getOrderHeader_ProductPromoUses();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getProductStoreId <em>Product Store Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getProductStore <em>Product Store</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Store Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#getProductStoreId()
+	 * @return the meta object for the reference '<em>Product Store</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#getProductStore()
 	 * @see #getOrderHeader()
 	 * @generated
 	 */
-	EReference getOrderHeader_ProductStoreId();
+	EReference getOrderHeader_ProductStore();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getRemainingSubTotal <em>Remaining Sub Total</em>}'.
@@ -7381,37 +7381,37 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderHeader_RemainingSubTotal();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getSalesChannelEnumId <em>Sales Channel Enum Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getSalesChannelEnum <em>Sales Channel Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Sales Channel Enum Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#getSalesChannelEnumId()
+	 * @return the meta object for the reference '<em>Sales Channel Enum</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#getSalesChannelEnum()
 	 * @see #getOrderHeader()
 	 * @generated
 	 */
-	EReference getOrderHeader_SalesChannelEnumId();
+	EReference getOrderHeader_SalesChannelEnum();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getStatusId <em>Status Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getStatus <em>Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#getStatusId()
+	 * @return the meta object for the reference '<em>Status</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#getStatus()
 	 * @see #getOrderHeader()
 	 * @generated
 	 */
-	EReference getOrderHeader_StatusId();
+	EReference getOrderHeader_Status();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getSyncStatusId <em>Sync Status Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getSyncStatus <em>Sync Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Sync Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#getSyncStatusId()
+	 * @return the meta object for the reference '<em>Sync Status</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#getSyncStatus()
 	 * @see #getOrderHeader()
 	 * @generated
 	 */
-	EReference getOrderHeader_SyncStatusId();
+	EReference getOrderHeader_SyncStatus();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getTerminalId <em>Terminal Id</em>}'.
@@ -7458,15 +7458,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderHeader_VisitId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getWebSiteId <em>Web Site Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getWebSite <em>Web Site</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Web Site Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#getWebSiteId()
+	 * @return the meta object for the reference '<em>Web Site</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#getWebSite()
 	 * @see #getOrderHeader()
 	 * @generated
 	 */
-	EReference getOrderHeader_WebSiteId();
+	EReference getOrderHeader_WebSite();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderHeaderNote <em>Header Note</em>}'.
@@ -7479,15 +7479,15 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderHeaderNote();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeaderNote#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeaderNote#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderHeaderNote#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderHeaderNote#getOrder()
 	 * @see #getOrderHeaderNote()
 	 * @generated
 	 */
-	EReference getOrderHeaderNote_OrderId();
+	EReference getOrderHeaderNote_Order();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderHeaderNote#getInternalNote <em>Internal Note</em>}'.
@@ -7511,26 +7511,26 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderHeaderWorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeaderWorkEffort#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeaderWorkEffort#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderHeaderWorkEffort#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderHeaderWorkEffort#getOrder()
 	 * @see #getOrderHeaderWorkEffort()
 	 * @generated
 	 */
-	EReference getOrderHeaderWorkEffort_OrderId();
+	EReference getOrderHeaderWorkEffort_Order();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeaderWorkEffort#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderHeaderWorkEffort#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderHeaderWorkEffort#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderHeaderWorkEffort#getWorkEffort()
 	 * @see #getOrderHeaderWorkEffort()
 	 * @generated
 	 */
-	EReference getOrderHeaderWorkEffort_WorkEffortId();
+	EReference getOrderHeaderWorkEffort_WorkEffort();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderItem <em>Item</em>}'.
@@ -7543,15 +7543,15 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderItem();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getOrder()
 	 * @see #getOrderItem()
 	 * @generated
 	 */
-	EReference getOrderItem_OrderId();
+	EReference getOrderItem_Order();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -7620,15 +7620,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItem_CancelQuantity();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getChangeByUserLoginId <em>Change By User Login Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getChangeByUserLogin <em>Change By User Login</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Change By User Login Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getChangeByUserLoginId()
+	 * @return the meta object for the reference '<em>Change By User Login</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getChangeByUserLogin()
 	 * @see #getOrderItem()
 	 * @generated
 	 */
-	EReference getOrderItem_ChangeByUserLoginId();
+	EReference getOrderItem_ChangeByUserLogin();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getComments <em>Comments</em>}'.
@@ -7719,15 +7719,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItem_ExternalId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getFromInventoryItemId <em>From Inventory Item Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getFromInventoryItem <em>From Inventory Item</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>From Inventory Item Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getFromInventoryItemId()
+	 * @return the meta object for the reference '<em>From Inventory Item</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getFromInventoryItem()
 	 * @see #getOrderItem()
 	 * @generated
 	 */
-	EReference getOrderItem_FromInventoryItemId();
+	EReference getOrderItem_FromInventoryItem();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getIsItemGroupPrimary <em>Is Item Group Primary</em>}'.
@@ -7785,26 +7785,26 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItem_OrderItemGroupSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOrderItemTypeId <em>Order Item Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOrderItemType <em>Order Item Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Item Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getOrderItemTypeId()
+	 * @return the meta object for the reference '<em>Order Item Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getOrderItemType()
 	 * @see #getOrderItem()
 	 * @generated
 	 */
-	EReference getOrderItem_OrderItemTypeId();
+	EReference getOrderItem_OrderItemType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOverrideGlAccountId <em>Override Gl Account Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOverrideGlAccount <em>Override Gl Account</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Override Gl Account Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getOverrideGlAccountId()
+	 * @return the meta object for the reference '<em>Override Gl Account</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getOverrideGlAccount()
 	 * @see #getOrderItem()
 	 * @generated
 	 */
-	EReference getOrderItem_OverrideGlAccountId();
+	EReference getOrderItem_OverrideGlAccount();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getProdCatalogId <em>Prod Catalog Id</em>}'.
@@ -7816,6 +7816,17 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getOrderItem_ProdCatalogId();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getProduct <em>Product</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getProduct()
+	 * @see #getOrderItem()
+	 * @generated
+	 */
+	EReference getOrderItem_Product();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getProductCategoryId <em>Product Category Id</em>}'.
@@ -7838,17 +7849,6 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getOrderItem_ProductFeatureId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getProductId <em>Product Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getProductId()
-	 * @see #getOrderItem()
-	 * @generated
-	 */
-	EReference getOrderItem_ProductId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getQuantity <em>Quantity</em>}'.
@@ -7884,15 +7884,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItem_QuoteItemSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getRecurringFreqUomId <em>Recurring Freq Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getRecurringFreqUom <em>Recurring Freq Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Recurring Freq Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getRecurringFreqUomId()
+	 * @return the meta object for the reference '<em>Recurring Freq Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getRecurringFreqUom()
 	 * @see #getOrderItem()
 	 * @generated
 	 */
-	EReference getOrderItem_RecurringFreqUomId();
+	EReference getOrderItem_RecurringFreqUom();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getReserveAfterDate <em>Reserve After Date</em>}'.
@@ -7906,15 +7906,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItem_ReserveAfterDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getSalesOpportunityId <em>Sales Opportunity Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getSalesOpportunity <em>Sales Opportunity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Sales Opportunity Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getSalesOpportunityId()
+	 * @return the meta object for the reference '<em>Sales Opportunity</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getSalesOpportunity()
 	 * @see #getOrderItem()
 	 * @generated
 	 */
-	EReference getOrderItem_SalesOpportunityId();
+	EReference getOrderItem_SalesOpportunity();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getSelectedAmount <em>Selected Amount</em>}'.
@@ -7972,15 +7972,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItem_ShoppingListItemSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getStatusId <em>Status Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getStatus <em>Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getStatusId()
+	 * @return the meta object for the reference '<em>Status</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getStatus()
 	 * @see #getOrderItem()
 	 * @generated
 	 */
-	EReference getOrderItem_StatusId();
+	EReference getOrderItem_Status();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getSubscriptionId <em>Subscription Id</em>}'.
@@ -8005,15 +8005,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItem_SupplierProductId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getSyncStatusId <em>Sync Status Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getSyncStatus <em>Sync Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Sync Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getSyncStatusId()
+	 * @return the meta object for the reference '<em>Sync Status</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getSyncStatus()
 	 * @see #getOrderItem()
 	 * @generated
 	 */
-	EReference getOrderItem_SyncStatusId();
+	EReference getOrderItem_SyncStatus();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getUnitAverageCost <em>Unit Average Cost</em>}'.
@@ -8070,15 +8070,37 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderItemAssoc();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemAssoc#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemAssoc#getOrderItemAssocType <em>Order Item Assoc Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemAssoc#getOrderId()
+	 * @return the meta object for the reference '<em>Order Item Assoc Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemAssoc#getOrderItemAssocType()
 	 * @see #getOrderItemAssoc()
 	 * @generated
 	 */
-	EReference getOrderItemAssoc_OrderId();
+	EReference getOrderItemAssoc_OrderItemAssocType();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemAssoc#getOrder <em>Order</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemAssoc#getOrder()
+	 * @see #getOrderItemAssoc()
+	 * @generated
+	 */
+	EReference getOrderItemAssoc_Order();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemAssoc#getToOrder <em>To Order</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>To Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemAssoc#getToOrder()
+	 * @see #getOrderItemAssoc()
+	 * @generated
+	 */
+	EReference getOrderItemAssoc_ToOrder();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemAssoc#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -8103,17 +8125,6 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemAssoc_ShipGroupSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemAssoc#getToOrderId <em>To Order Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>To Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemAssoc#getToOrderId()
-	 * @see #getOrderItemAssoc()
-	 * @generated
-	 */
-	EReference getOrderItemAssoc_ToOrderId();
-
-	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemAssoc#getToOrderItemSeqId <em>To Order Item Seq Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8134,17 +8145,6 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getOrderItemAssoc_ToShipGroupSeqId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemAssoc#getOrderItemAssocTypeId <em>Order Item Assoc Type Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Item Assoc Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemAssoc#getOrderItemAssocTypeId()
-	 * @see #getOrderItemAssoc()
-	 * @generated
-	 */
-	EReference getOrderItemAssoc_OrderItemAssocTypeId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemAssoc#getQuantity <em>Quantity</em>}'.
@@ -8201,15 +8201,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemAssocType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemAssocType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemAssocType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemAssocType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemAssocType#getParentType()
 	 * @see #getOrderItemAssocType()
 	 * @generated
 	 */
-	EReference getOrderItemAssocType_ParentTypeId();
+	EReference getOrderItemAssocType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderItemAttribute <em>Item Attribute</em>}'.
@@ -8287,15 +8287,26 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderItemBilling();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemBilling#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemBilling#getOrder()
 	 * @see #getOrderItemBilling()
 	 * @generated
 	 */
-	EReference getOrderItemBilling_OrderId();
+	EReference getOrderItemBilling_Order();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getInvoice <em>Invoice</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Invoice</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemBilling#getInvoice()
+	 * @see #getOrderItemBilling()
+	 * @generated
+	 */
+	EReference getOrderItemBilling_Invoice();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -8307,17 +8318,6 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getOrderItemBilling_OrderItemSeqId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getInvoiceId <em>Invoice Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Invoice Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemBilling#getInvoiceId()
-	 * @see #getOrderItemBilling()
-	 * @generated
-	 */
-	EReference getOrderItemBilling_InvoiceId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getInvoiceItemSeqId <em>Invoice Item Seq Id</em>}'.
@@ -8342,15 +8342,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemBilling_Amount();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getItemIssuanceId <em>Item Issuance Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getItemIssuance <em>Item Issuance</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Item Issuance Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemBilling#getItemIssuanceId()
+	 * @return the meta object for the reference '<em>Item Issuance</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemBilling#getItemIssuance()
 	 * @see #getOrderItemBilling()
 	 * @generated
 	 */
-	EReference getOrderItemBilling_ItemIssuanceId();
+	EReference getOrderItemBilling_ItemIssuance();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getQuantity <em>Quantity</em>}'.
@@ -8364,15 +8364,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemBilling_Quantity();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getShipmentReceiptId <em>Shipment Receipt Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemBilling#getShipmentReceipt <em>Shipment Receipt</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Shipment Receipt Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemBilling#getShipmentReceiptId()
+	 * @return the meta object for the reference '<em>Shipment Receipt</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemBilling#getShipmentReceipt()
 	 * @see #getOrderItemBilling()
 	 * @generated
 	 */
-	EReference getOrderItemBilling_ShipmentReceiptId();
+	EReference getOrderItemBilling_ShipmentReceipt();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderItemChange <em>Item Change</em>}'.
@@ -8429,15 +8429,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemChange_ChangeDatetime();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getChangeTypeEnumId <em>Change Type Enum Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getChangeTypeEnum <em>Change Type Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Change Type Enum Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemChange#getChangeTypeEnumId()
+	 * @return the meta object for the reference '<em>Change Type Enum</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemChange#getChangeTypeEnum()
 	 * @see #getOrderItemChange()
 	 * @generated
 	 */
-	EReference getOrderItemChange_ChangeTypeEnumId();
+	EReference getOrderItemChange_ChangeTypeEnum();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getChangeUserLogin <em>Change User Login</em>}'.
@@ -8462,15 +8462,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemChange_ItemDescription();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemChange#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemChange#getOrder()
 	 * @see #getOrderItemChange()
 	 * @generated
 	 */
-	EReference getOrderItemChange_OrderId();
+	EReference getOrderItemChange_Order();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -8495,15 +8495,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemChange_Quantity();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getReasonEnumId <em>Reason Enum Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getReasonEnum <em>Reason Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Reason Enum Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemChange#getReasonEnumId()
+	 * @return the meta object for the reference '<em>Reason Enum</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemChange#getReasonEnum()
 	 * @see #getOrderItemChange()
 	 * @generated
 	 */
-	EReference getOrderItemChange_ReasonEnumId();
+	EReference getOrderItemChange_ReasonEnum();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemChange#getUnitPrice <em>Unit Price</em>}'.
@@ -8527,15 +8527,26 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderItemContactMech();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getOrder()
 	 * @see #getOrderItemContactMech()
 	 * @generated
 	 */
-	EReference getOrderItemContactMech_OrderId();
+	EReference getOrderItemContactMech_Order();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getContactMechPurposeType <em>Contact Mech Purpose Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Contact Mech Purpose Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getContactMechPurposeType()
+	 * @see #getOrderItemContactMech()
+	 * @generated
+	 */
+	EReference getOrderItemContactMech_ContactMechPurposeType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -8549,26 +8560,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemContactMech_OrderItemSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getContactMechPurposeTypeId <em>Contact Mech Purpose Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getContactMech <em>Contact Mech</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Contact Mech Purpose Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getContactMechPurposeTypeId()
+	 * @return the meta object for the reference '<em>Contact Mech</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getContactMech()
 	 * @see #getOrderItemContactMech()
 	 * @generated
 	 */
-	EReference getOrderItemContactMech_ContactMechPurposeTypeId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getContactMechId <em>Contact Mech Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Contact Mech Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemContactMech#getContactMechId()
-	 * @see #getOrderItemContactMech()
-	 * @generated
-	 */
-	EReference getOrderItemContactMech_ContactMechId();
+	EReference getOrderItemContactMech_ContactMech();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderItemGroup <em>Item Group</em>}'.
@@ -8581,15 +8581,15 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderItemGroup();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemGroup#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemGroup#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemGroup#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemGroup#getOrder()
 	 * @see #getOrderItemGroup()
 	 * @generated
 	 */
-	EReference getOrderItemGroup_OrderId();
+	EReference getOrderItemGroup_Order();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemGroup#getOrderItemGroupSeqId <em>Order Item Group Seq Id</em>}'.
@@ -8635,6 +8635,17 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderItemGroupOrder();
 
 	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemGroupOrder#getGroupOrder <em>Group Order</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Group Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemGroupOrder#getGroupOrder()
+	 * @see #getOrderItemGroupOrder()
+	 * @generated
+	 */
+	EReference getOrderItemGroupOrder_GroupOrder();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemGroupOrder#getOrderId <em>Order Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8655,17 +8666,6 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getOrderItemGroupOrder_OrderItemSeqId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemGroupOrder#getGroupOrderId <em>Group Order Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Group Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemGroupOrder#getGroupOrderId()
-	 * @see #getOrderItemGroupOrder()
-	 * @generated
-	 */
-	EReference getOrderItemGroupOrder_GroupOrderId();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo <em>Item Price Info</em>}'.
@@ -8711,15 +8711,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemPriceInfo_ModifyAmount();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getOrder()
 	 * @see #getOrderItemPriceInfo()
 	 * @generated
 	 */
-	EReference getOrderItemPriceInfo_OrderId();
+	EReference getOrderItemPriceInfo_Order();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -8744,15 +8744,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemPriceInfo_ProductPriceActionSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getProductPriceRuleId <em>Product Price Rule Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getProductPriceRule <em>Product Price Rule</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Price Rule Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getProductPriceRuleId()
+	 * @return the meta object for the reference '<em>Product Price Rule</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getProductPriceRule()
 	 * @see #getOrderItemPriceInfo()
 	 * @generated
 	 */
-	EReference getOrderItemPriceInfo_ProductPriceRuleId();
+	EReference getOrderItemPriceInfo_ProductPriceRule();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo#getRateCode <em>Rate Code</em>}'.
@@ -8776,15 +8776,37 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderItemRole();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemRole#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemRole#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemRole#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemRole#getOrder()
 	 * @see #getOrderItemRole()
 	 * @generated
 	 */
-	EReference getOrderItemRole_OrderId();
+	EReference getOrderItemRole_Order();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemRole#getParty <em>Party</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemRole#getParty()
+	 * @see #getOrderItemRole()
+	 * @generated
+	 */
+	EReference getOrderItemRole_Party();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemRole#getRoleType <em>Role Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Role Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemRole#getRoleType()
+	 * @see #getOrderItemRole()
+	 * @generated
+	 */
+	EReference getOrderItemRole_RoleType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemRole#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -8798,28 +8820,6 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemRole_OrderItemSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemRole#getPartyId <em>Party Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemRole#getPartyId()
-	 * @see #getOrderItemRole()
-	 * @generated
-	 */
-	EReference getOrderItemRole_PartyId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemRole#getRoleTypeId <em>Role Type Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Role Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemRole#getRoleTypeId()
-	 * @see #getOrderItemRole()
-	 * @generated
-	 */
-	EReference getOrderItemRole_RoleTypeId();
-
-	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup <em>Item Ship Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8830,15 +8830,15 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderItemShipGroup();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getOrder()
 	 * @see #getOrderItemShipGroup()
 	 * @generated
 	 */
-	EReference getOrderItemShipGroup_OrderId();
+	EReference getOrderItemShipGroup_Order();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getShipGroupSeqId <em>Ship Group Seq Id</em>}'.
@@ -8852,15 +8852,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemShipGroup_ShipGroupSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getCarrierPartyId <em>Carrier Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getCarrierParty <em>Carrier Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Carrier Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getCarrierPartyId()
+	 * @return the meta object for the reference '<em>Carrier Party</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getCarrierParty()
 	 * @see #getOrderItemShipGroup()
 	 * @generated
 	 */
-	EReference getOrderItemShipGroup_CarrierPartyId();
+	EReference getOrderItemShipGroup_CarrierParty();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getCarrierRoleTypeId <em>Carrier Role Type Id</em>}'.
@@ -8874,15 +8874,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemShipGroup_CarrierRoleTypeId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getContactMechId <em>Contact Mech Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getContactMech <em>Contact Mech</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Contact Mech Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getContactMechId()
+	 * @return the meta object for the reference '<em>Contact Mech</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getContactMech()
 	 * @see #getOrderItemShipGroup()
 	 * @generated
 	 */
-	EReference getOrderItemShipGroup_ContactMechId();
+	EReference getOrderItemShipGroup_ContactMech();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getEstimatedDeliveryDate <em>Estimated Delivery Date</em>}'.
@@ -8907,15 +8907,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemShipGroup_EstimatedShipDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getFacilityId <em>Facility Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getFacility <em>Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getFacilityId()
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getFacility()
 	 * @see #getOrderItemShipGroup()
 	 * @generated
 	 */
-	EReference getOrderItemShipGroup_FacilityId();
+	EReference getOrderItemShipGroup_Facility();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getGiftMessage <em>Gift Message</em>}'.
@@ -8973,15 +8973,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemShipGroup_ShipByDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getShipmentMethodType <em>Shipment Method Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Shipment Method Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getShipmentMethodTypeId()
+	 * @return the meta object for the reference '<em>Shipment Method Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getShipmentMethodType()
 	 * @see #getOrderItemShipGroup()
 	 * @generated
 	 */
-	EReference getOrderItemShipGroup_ShipmentMethodTypeId();
+	EReference getOrderItemShipGroup_ShipmentMethodType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getShippingInstructions <em>Shipping Instructions</em>}'.
@@ -8995,37 +8995,37 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemShipGroup_ShippingInstructions();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getSupplierAgreementId <em>Supplier Agreement Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getSupplierAgreement <em>Supplier Agreement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Supplier Agreement Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getSupplierAgreementId()
+	 * @return the meta object for the reference '<em>Supplier Agreement</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getSupplierAgreement()
 	 * @see #getOrderItemShipGroup()
 	 * @generated
 	 */
-	EReference getOrderItemShipGroup_SupplierAgreementId();
+	EReference getOrderItemShipGroup_SupplierAgreement();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getSupplierPartyId <em>Supplier Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getSupplierParty <em>Supplier Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Supplier Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getSupplierPartyId()
+	 * @return the meta object for the reference '<em>Supplier Party</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getSupplierParty()
 	 * @see #getOrderItemShipGroup()
 	 * @generated
 	 */
-	EReference getOrderItemShipGroup_SupplierPartyId();
+	EReference getOrderItemShipGroup_SupplierParty();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getTelecomContactMechId <em>Telecom Contact Mech Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getTelecomContactMech <em>Telecom Contact Mech</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Telecom Contact Mech Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getTelecomContactMechId()
+	 * @return the meta object for the reference '<em>Telecom Contact Mech</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getTelecomContactMech()
 	 * @see #getOrderItemShipGroup()
 	 * @generated
 	 */
-	EReference getOrderItemShipGroup_TelecomContactMechId();
+	EReference getOrderItemShipGroup_TelecomContactMech();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getTrackingNumber <em>Tracking Number</em>}'.
@@ -9039,15 +9039,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemShipGroup_TrackingNumber();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getVendorPartyId <em>Vendor Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getVendorParty <em>Vendor Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Vendor Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getVendorPartyId()
+	 * @return the meta object for the reference '<em>Vendor Party</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getVendorParty()
 	 * @see #getOrderItemShipGroup()
 	 * @generated
 	 */
-	EReference getOrderItemShipGroup_VendorPartyId();
+	EReference getOrderItemShipGroup_VendorParty();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroupAssoc <em>Item Ship Group Assoc</em>}'.
@@ -9060,15 +9060,15 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderItemShipGroupAssoc();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroupAssoc#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroupAssoc#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroupAssoc#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroupAssoc#getOrder()
 	 * @see #getOrderItemShipGroupAssoc()
 	 * @generated
 	 */
-	EReference getOrderItemShipGroupAssoc_OrderId();
+	EReference getOrderItemShipGroupAssoc_Order();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroupAssoc#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -9125,15 +9125,26 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderItemShipGrpInvRes();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGrpInvRes#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGrpInvRes#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGrpInvRes#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGrpInvRes#getOrder()
 	 * @see #getOrderItemShipGrpInvRes()
 	 * @generated
 	 */
-	EReference getOrderItemShipGrpInvRes_OrderId();
+	EReference getOrderItemShipGrpInvRes_Order();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGrpInvRes#getInventoryItem <em>Inventory Item</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Inventory Item</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGrpInvRes#getInventoryItem()
+	 * @see #getOrderItemShipGrpInvRes()
+	 * @generated
+	 */
+	EReference getOrderItemShipGrpInvRes_InventoryItem();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGrpInvRes#getShipGroupSeqId <em>Ship Group Seq Id</em>}'.
@@ -9156,17 +9167,6 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getOrderItemShipGrpInvRes_OrderItemSeqId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGrpInvRes#getInventoryItemId <em>Inventory Item Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Inventory Item Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGrpInvRes#getInventoryItemId()
-	 * @see #getOrderItemShipGrpInvRes()
-	 * @generated
-	 */
-	EReference getOrderItemShipGrpInvRes_InventoryItemId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGrpInvRes#getCreatedDatetime <em>Created Datetime</em>}'.
@@ -9333,15 +9333,15 @@ public interface OrderPackage extends EPackage {
 	EReference getOrderItemType_OrderItemTypeAttrs();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemType#getParentType()
 	 * @see #getOrderItemType()
 	 * @generated
 	 */
-	EReference getOrderItemType_ParentTypeId();
+	EReference getOrderItemType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderItemTypeAttr <em>Item Type Attr</em>}'.
@@ -9354,15 +9354,15 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderItemTypeAttr();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemTypeAttr#getOrderItemTypeId <em>Order Item Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderItemTypeAttr#getOrderItemType <em>Order Item Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Item Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemTypeAttr#getOrderItemTypeId()
+	 * @return the meta object for the reference '<em>Order Item Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemTypeAttr#getOrderItemType()
 	 * @see #getOrderItemTypeAttr()
 	 * @generated
 	 */
-	EReference getOrderItemTypeAttr_OrderItemTypeId();
+	EReference getOrderItemTypeAttr_OrderItemType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemTypeAttr#getAttrName <em>Attr Name</em>}'.
@@ -9441,15 +9441,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderNotification_NotificationDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderNotification#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderNotification#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderNotification#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderNotification#getOrder()
 	 * @see #getOrderNotification()
 	 * @generated
 	 */
-	EReference getOrderNotification_OrderId();
+	EReference getOrderNotification_Order();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference <em>Payment Preference</em>}'.
@@ -9506,15 +9506,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderPaymentPreference_CreatedDate();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getFinAccountId <em>Fin Account Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getFinAccount <em>Fin Account</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Fin Account Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getFinAccountId()
+	 * @return the meta object for the reference '<em>Fin Account</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getFinAccount()
 	 * @see #getOrderPaymentPreference()
 	 * @generated
 	 */
-	EReference getOrderPaymentPreference_FinAccountId();
+	EReference getOrderPaymentPreference_FinAccount();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}'.
@@ -9583,15 +9583,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderPaymentPreference_NeedsNsfRetry();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getOrder()
 	 * @see #getOrderPaymentPreference()
 	 * @generated
 	 */
-	EReference getOrderPaymentPreference_OrderId();
+	EReference getOrderPaymentPreference_Order();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -9616,26 +9616,26 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderPaymentPreference_OverflowFlag();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getPaymentMethodId <em>Payment Method Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getPaymentMethod <em>Payment Method</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Payment Method Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getPaymentMethodId()
+	 * @return the meta object for the reference '<em>Payment Method</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getPaymentMethod()
 	 * @see #getOrderPaymentPreference()
 	 * @generated
 	 */
-	EReference getOrderPaymentPreference_PaymentMethodId();
+	EReference getOrderPaymentPreference_PaymentMethod();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getPaymentMethodTypeId <em>Payment Method Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getPaymentMethodType <em>Payment Method Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Payment Method Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getPaymentMethodTypeId()
+	 * @return the meta object for the reference '<em>Payment Method Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getPaymentMethodType()
 	 * @see #getOrderPaymentPreference()
 	 * @generated
 	 */
-	EReference getOrderPaymentPreference_PaymentMethodTypeId();
+	EReference getOrderPaymentPreference_PaymentMethodType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getPresentFlag <em>Present Flag</em>}'.
@@ -9660,15 +9660,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderPaymentPreference_ProcessAttempt();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getProductPricePurposeId <em>Product Price Purpose Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getProductPricePurpose <em>Product Price Purpose</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Price Purpose Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getProductPricePurposeId()
+	 * @return the meta object for the reference '<em>Product Price Purpose</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getProductPricePurpose()
 	 * @see #getOrderPaymentPreference()
 	 * @generated
 	 */
-	EReference getOrderPaymentPreference_ProductPricePurposeId();
+	EReference getOrderPaymentPreference_ProductPricePurpose();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getSecurityCode <em>Security Code</em>}'.
@@ -9693,15 +9693,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderPaymentPreference_ShipGroupSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getStatusId <em>Status Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getStatus <em>Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getStatusId()
+	 * @return the meta object for the reference '<em>Status</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getStatus()
 	 * @see #getOrderPaymentPreference()
 	 * @generated
 	 */
-	EReference getOrderPaymentPreference_StatusId();
+	EReference getOrderPaymentPreference_Status();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getSwipedFlag <em>Swiped Flag</em>}'.
@@ -9736,26 +9736,26 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderProductPromoCode();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderProductPromoCode#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderProductPromoCode#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderProductPromoCode#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderProductPromoCode#getOrder()
 	 * @see #getOrderProductPromoCode()
 	 * @generated
 	 */
-	EReference getOrderProductPromoCode_OrderId();
+	EReference getOrderProductPromoCode_Order();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderProductPromoCode#getProductPromoCodeId <em>Product Promo Code Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderProductPromoCode#getProductPromoCode <em>Product Promo Code</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Promo Code Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderProductPromoCode#getProductPromoCodeId()
+	 * @return the meta object for the reference '<em>Product Promo Code</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderProductPromoCode#getProductPromoCode()
 	 * @see #getOrderProductPromoCode()
 	 * @generated
 	 */
-	EReference getOrderProductPromoCode_ProductPromoCodeId();
+	EReference getOrderProductPromoCode_ProductPromoCode();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderRole <em>Role</em>}'.
@@ -9768,37 +9768,37 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderRole();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderRole#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderRole#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderRole#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderRole#getOrder()
 	 * @see #getOrderRole()
 	 * @generated
 	 */
-	EReference getOrderRole_OrderId();
+	EReference getOrderRole_Order();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderRole#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderRole#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderRole#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderRole#getParty()
 	 * @see #getOrderRole()
 	 * @generated
 	 */
-	EReference getOrderRole_PartyId();
+	EReference getOrderRole_Party();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderRole#getRoleTypeId <em>Role Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderRole#getRoleType <em>Role Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Role Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderRole#getRoleTypeId()
+	 * @return the meta object for the reference '<em>Role Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderRole#getRoleType()
 	 * @see #getOrderRole()
 	 * @generated
 	 */
-	EReference getOrderRole_RoleTypeId();
+	EReference getOrderRole_RoleType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderShipment <em>Shipment</em>}'.
@@ -9811,15 +9811,26 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderShipment();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderShipment#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderShipment#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderShipment#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderShipment#getOrder()
 	 * @see #getOrderShipment()
 	 * @generated
 	 */
-	EReference getOrderShipment_OrderId();
+	EReference getOrderShipment_Order();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderShipment#getShipment <em>Shipment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Shipment</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderShipment#getShipment()
+	 * @see #getOrderShipment()
+	 * @generated
+	 */
+	EReference getOrderShipment_Shipment();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderShipment#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -9842,17 +9853,6 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getOrderShipment_ShipGroupSeqId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderShipment#getShipmentId <em>Shipment Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Shipment Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderShipment#getShipmentId()
-	 * @see #getOrderShipment()
-	 * @generated
-	 */
-	EReference getOrderShipment_ShipmentId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderShipment#getShipmentItemSeqId <em>Shipment Item Seq Id</em>}'.
@@ -9909,15 +9909,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderStatus_ChangeReason();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderStatus#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderStatus#getOrder()
 	 * @see #getOrderStatus()
 	 * @generated
 	 */
-	EReference getOrderStatus_OrderId();
+	EReference getOrderStatus_Order();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -9931,15 +9931,26 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderStatus_OrderItemSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getOrderPaymentPreferenceId <em>Order Payment Preference Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getOrderPaymentPreference <em>Order Payment Preference</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Payment Preference Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderStatus#getOrderPaymentPreferenceId()
+	 * @return the meta object for the reference '<em>Order Payment Preference</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderStatus#getOrderPaymentPreference()
 	 * @see #getOrderStatus()
 	 * @generated
 	 */
-	EReference getOrderStatus_OrderPaymentPreferenceId();
+	EReference getOrderStatus_OrderPaymentPreference();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getStatus <em>Status</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Status</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderStatus#getStatus()
+	 * @see #getOrderStatus()
+	 * @generated
+	 */
+	EReference getOrderStatus_Status();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getStatusDatetime <em>Status Datetime</em>}'.
@@ -9951,17 +9962,6 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getOrderStatus_StatusDatetime();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getStatusId <em>Status Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderStatus#getStatusId()
-	 * @see #getOrderStatus()
-	 * @generated
-	 */
-	EReference getOrderStatus_StatusId();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderStatus#getStatusUserLogin <em>Status User Login</em>}'.
@@ -9985,6 +9985,28 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderSummaryEntry();
 
 	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getProduct <em>Product</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getProduct()
+	 * @see #getOrderSummaryEntry()
+	 * @generated
+	 */
+	EReference getOrderSummaryEntry_Product();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getFacility <em>Facility</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Facility</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getFacility()
+	 * @see #getOrderSummaryEntry()
+	 * @generated
+	 */
+	EReference getOrderSummaryEntry_Facility();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getEntryDate <em>Entry Date</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -9994,28 +10016,6 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getOrderSummaryEntry_EntryDate();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getProductId <em>Product Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getProductId()
-	 * @see #getOrderSummaryEntry()
-	 * @generated
-	 */
-	EReference getOrderSummaryEntry_ProductId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getFacilityId <em>Facility Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getFacilityId()
-	 * @see #getOrderSummaryEntry()
-	 * @generated
-	 */
-	EReference getOrderSummaryEntry_FacilityId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderSummaryEntry#getGrossSales <em>Gross Sales</em>}'.
@@ -10061,26 +10061,26 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderTerm();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderTerm#getTermTypeId <em>Term Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderTerm#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Term Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderTerm#getTermTypeId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderTerm#getOrder()
 	 * @see #getOrderTerm()
 	 * @generated
 	 */
-	EReference getOrderTerm_TermTypeId();
+	EReference getOrderTerm_Order();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderTerm#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderTerm#getTermType <em>Term Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderTerm#getOrderId()
+	 * @return the meta object for the reference '<em>Term Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderTerm#getTermType()
 	 * @see #getOrderTerm()
 	 * @generated
 	 */
-	EReference getOrderTerm_OrderId();
+	EReference getOrderTerm_TermType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderTerm#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -10138,15 +10138,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderTerm_TextValue();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderTerm#getUomId <em>Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderTerm#getUom <em>Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderTerm#getUomId()
+	 * @return the meta object for the reference '<em>Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderTerm#getUom()
 	 * @see #getOrderTerm()
 	 * @generated
 	 */
-	EReference getOrderTerm_UomId();
+	EReference getOrderTerm_Uom();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderTermAttribute <em>Term Attribute</em>}'.
@@ -10279,15 +10279,15 @@ public interface OrderPackage extends EPackage {
 	EReference getOrderType_OrderTypeAttrs();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderType#getParentType()
 	 * @see #getOrderType()
 	 * @generated
 	 */
-	EReference getOrderType_ParentTypeId();
+	EReference getOrderType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.OrderTypeAttr <em>Type Attr</em>}'.
@@ -10300,15 +10300,15 @@ public interface OrderPackage extends EPackage {
 	EClass getOrderTypeAttr();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderTypeAttr#getOrderTypeId <em>Order Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.OrderTypeAttr#getOrderType <em>Order Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderTypeAttr#getOrderTypeId()
+	 * @return the meta object for the reference '<em>Order Type</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.OrderTypeAttr#getOrderType()
 	 * @see #getOrderTypeAttr()
 	 * @generated
 	 */
-	EReference getOrderTypeAttr_OrderTypeId();
+	EReference getOrderTypeAttr_OrderType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderTypeAttr#getAttrName <em>Attr Name</em>}'.
@@ -10343,15 +10343,26 @@ public interface OrderPackage extends EPackage {
 	EClass getProductOrderItem();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.ProductOrderItem#getOrderId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.ProductOrderItem#getOrder()
 	 * @see #getProductOrderItem()
 	 * @generated
 	 */
-	EReference getProductOrderItem_OrderId();
+	EReference getProductOrderItem_Order();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getEngagement <em>Engagement</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Engagement</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.ProductOrderItem#getEngagement()
+	 * @see #getProductOrderItem()
+	 * @generated
+	 */
+	EReference getProductOrderItem_Engagement();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -10365,15 +10376,15 @@ public interface OrderPackage extends EPackage {
 	EAttribute getProductOrderItem_OrderItemSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getEngagementId <em>Engagement Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Engagement Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.ProductOrderItem#getEngagementId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.ProductOrderItem#getProduct()
 	 * @see #getProductOrderItem()
 	 * @generated
 	 */
-	EReference getProductOrderItem_EngagementId();
+	EReference getProductOrderItem_Product();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getEngagementItemSeqId <em>Engagement Item Seq Id</em>}'.
@@ -10387,17 +10398,6 @@ public interface OrderPackage extends EPackage {
 	EAttribute getProductOrderItem_EngagementItemSeqId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.ProductOrderItem#getProductId <em>Product Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.ProductOrderItem#getProductId()
-	 * @see #getProductOrderItem()
-	 * @generated
-	 */
-	EReference getProductOrderItem_ProductId();
-
-	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.order.order.WorkOrderItemFulfillment <em>Work Order Item Fulfillment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10408,26 +10408,26 @@ public interface OrderPackage extends EPackage {
 	EClass getWorkOrderItemFulfillment();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.WorkOrderItemFulfillment#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.WorkOrderItemFulfillment#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.WorkOrderItemFulfillment#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Order</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.WorkOrderItemFulfillment#getOrder()
 	 * @see #getWorkOrderItemFulfillment()
 	 * @generated
 	 */
-	EReference getWorkOrderItemFulfillment_WorkEffortId();
+	EReference getWorkOrderItemFulfillment_Order();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.WorkOrderItemFulfillment#getOrderId <em>Order Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.order.WorkOrderItemFulfillment#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Order Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.WorkOrderItemFulfillment#getOrderId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.order.order.WorkOrderItemFulfillment#getWorkEffort()
 	 * @see #getWorkOrderItemFulfillment()
 	 * @generated
 	 */
-	EReference getWorkOrderItemFulfillment_OrderId();
+	EReference getWorkOrderItemFulfillment_WorkEffort();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.WorkOrderItemFulfillment#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
@@ -10484,20 +10484,20 @@ public interface OrderPackage extends EPackage {
 		EClass COMMUNICATION_EVENT_ORDER = eINSTANCE.getCommunicationEventOrder();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COMMUNICATION_EVENT_ORDER__ORDER_ID = eINSTANCE.getCommunicationEventOrder_OrderId();
+		EReference COMMUNICATION_EVENT_ORDER__ORDER = eINSTANCE.getCommunicationEventOrder_Order();
 
 		/**
-		 * The meta object literal for the '<em><b>Communication Event Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Communication Event</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COMMUNICATION_EVENT_ORDER__COMMUNICATION_EVENT_ID = eINSTANCE.getCommunicationEventOrder_CommunicationEventId();
+		EReference COMMUNICATION_EVENT_ORDER__COMMUNICATION_EVENT = eINSTANCE.getCommunicationEventOrder_CommunicationEvent();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl <em>Adjustment</em>}' class.
@@ -10646,6 +10646,14 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ADJUSTMENT__OLD_PERCENTAGE = eINSTANCE.getOrderAdjustment_OldPercentage();
 
 		/**
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORDER_ADJUSTMENT__ORDER = eINSTANCE.getOrderAdjustment_Order();
+
+		/**
 		 * The meta object literal for the '<em><b>Order Adjustment Attributes</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -10654,20 +10662,12 @@ public interface OrderPackage extends EPackage {
 		EReference ORDER_ADJUSTMENT__ORDER_ADJUSTMENT_ATTRIBUTES = eINSTANCE.getOrderAdjustment_OrderAdjustmentAttributes();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Adjustment Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order Adjustment Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ADJUSTMENT__ORDER_ADJUSTMENT_TYPE_ID = eINSTANCE.getOrderAdjustment_OrderAdjustmentTypeId();
-
-		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ORDER_ADJUSTMENT__ORDER_ID = eINSTANCE.getOrderAdjustment_OrderId();
+		EReference ORDER_ADJUSTMENT__ORDER_ADJUSTMENT_TYPE = eINSTANCE.getOrderAdjustment_OrderAdjustmentType();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -10678,28 +10678,28 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ADJUSTMENT__ORDER_ITEM_SEQ_ID = eINSTANCE.getOrderAdjustment_OrderItemSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>Original Adjustment Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Original Adjustment</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ADJUSTMENT__ORIGINAL_ADJUSTMENT_ID = eINSTANCE.getOrderAdjustment_OriginalAdjustmentId();
+		EReference ORDER_ADJUSTMENT__ORIGINAL_ADJUSTMENT = eINSTANCE.getOrderAdjustment_OriginalAdjustment();
 
 		/**
-		 * The meta object literal for the '<em><b>Override Gl Account Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Override Gl Account</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ADJUSTMENT__OVERRIDE_GL_ACCOUNT_ID = eINSTANCE.getOrderAdjustment_OverrideGlAccountId();
+		EReference ORDER_ADJUSTMENT__OVERRIDE_GL_ACCOUNT = eINSTANCE.getOrderAdjustment_OverrideGlAccount();
 
 		/**
-		 * The meta object literal for the '<em><b>Primary Geo Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Primary Geo</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ADJUSTMENT__PRIMARY_GEO_ID = eINSTANCE.getOrderAdjustment_PrimaryGeoId();
+		EReference ORDER_ADJUSTMENT__PRIMARY_GEO = eINSTANCE.getOrderAdjustment_PrimaryGeo();
 
 		/**
 		 * The meta object literal for the '<em><b>Product Feature Id</b></em>' attribute feature.
@@ -10710,20 +10710,20 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ADJUSTMENT__PRODUCT_FEATURE_ID = eINSTANCE.getOrderAdjustment_ProductFeatureId();
 
 		/**
+		 * The meta object literal for the '<em><b>Product Promo</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORDER_ADJUSTMENT__PRODUCT_PROMO = eINSTANCE.getOrderAdjustment_ProductPromo();
+
+		/**
 		 * The meta object literal for the '<em><b>Product Promo Action Seq Id</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute ORDER_ADJUSTMENT__PRODUCT_PROMO_ACTION_SEQ_ID = eINSTANCE.getOrderAdjustment_ProductPromoActionSeqId();
-
-		/**
-		 * The meta object literal for the '<em><b>Product Promo Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ORDER_ADJUSTMENT__PRODUCT_PROMO_ID = eINSTANCE.getOrderAdjustment_ProductPromoId();
 
 		/**
 		 * The meta object literal for the '<em><b>Product Promo Rule Id</b></em>' attribute feature.
@@ -10742,12 +10742,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ADJUSTMENT__RECURRING_AMOUNT = eINSTANCE.getOrderAdjustment_RecurringAmount();
 
 		/**
-		 * The meta object literal for the '<em><b>Secondary Geo Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Secondary Geo</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ADJUSTMENT__SECONDARY_GEO_ID = eINSTANCE.getOrderAdjustment_SecondaryGeoId();
+		EReference ORDER_ADJUSTMENT__SECONDARY_GEO = eINSTANCE.getOrderAdjustment_SecondaryGeo();
 
 		/**
 		 * The meta object literal for the '<em><b>Ship Group Seq Id</b></em>' attribute feature.
@@ -10790,12 +10790,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ADJUSTMENT__TAX_AUTH_PARTY_ID = eINSTANCE.getOrderAdjustment_TaxAuthPartyId();
 
 		/**
-		 * The meta object literal for the '<em><b>Tax Authority Rate Seq Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Tax Authority Rate Seq</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ADJUSTMENT__TAX_AUTHORITY_RATE_SEQ_ID = eINSTANCE.getOrderAdjustment_TaxAuthorityRateSeqId();
+		EReference ORDER_ADJUSTMENT__TAX_AUTHORITY_RATE_SEQ = eINSTANCE.getOrderAdjustment_TaxAuthorityRateSeq();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentAttributeImpl <em>Adjustment Attribute</em>}' class.
@@ -10808,12 +10808,12 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_ADJUSTMENT_ATTRIBUTE = eINSTANCE.getOrderAdjustmentAttribute();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Adjustment Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order Adjustment</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ADJUSTMENT_ATTRIBUTE__ORDER_ADJUSTMENT_ID = eINSTANCE.getOrderAdjustmentAttribute_OrderAdjustmentId();
+		EReference ORDER_ADJUSTMENT_ATTRIBUTE__ORDER_ADJUSTMENT = eINSTANCE.getOrderAdjustmentAttribute_OrderAdjustment();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -10850,20 +10850,20 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_ADJUSTMENT_BILLING = eINSTANCE.getOrderAdjustmentBilling();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Adjustment Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order Adjustment</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ADJUSTMENT_BILLING__ORDER_ADJUSTMENT_ID = eINSTANCE.getOrderAdjustmentBilling_OrderAdjustmentId();
+		EReference ORDER_ADJUSTMENT_BILLING__ORDER_ADJUSTMENT = eINSTANCE.getOrderAdjustmentBilling_OrderAdjustment();
 
 		/**
-		 * The meta object literal for the '<em><b>Invoice Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Invoice</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ADJUSTMENT_BILLING__INVOICE_ID = eINSTANCE.getOrderAdjustmentBilling_InvoiceId();
+		EReference ORDER_ADJUSTMENT_BILLING__INVOICE = eINSTANCE.getOrderAdjustmentBilling_Invoice();
 
 		/**
 		 * The meta object literal for the '<em><b>Invoice Item Seq Id</b></em>' attribute feature.
@@ -10924,12 +10924,12 @@ public interface OrderPackage extends EPackage {
 		EReference ORDER_ADJUSTMENT_TYPE__ORDER_ADJUSTMENT_TYPE_ATTRS = eINSTANCE.getOrderAdjustmentType_OrderAdjustmentTypeAttrs();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ADJUSTMENT_TYPE__PARENT_TYPE_ID = eINSTANCE.getOrderAdjustmentType_ParentTypeId();
+		EReference ORDER_ADJUSTMENT_TYPE__PARENT_TYPE = eINSTANCE.getOrderAdjustmentType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeAttrImpl <em>Adjustment Type Attr</em>}' class.
@@ -10942,12 +10942,12 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_ADJUSTMENT_TYPE_ATTR = eINSTANCE.getOrderAdjustmentTypeAttr();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Adjustment Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order Adjustment Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ADJUSTMENT_TYPE_ATTR__ORDER_ADJUSTMENT_TYPE_ID = eINSTANCE.getOrderAdjustmentTypeAttr_OrderAdjustmentTypeId();
+		EReference ORDER_ADJUSTMENT_TYPE_ATTR__ORDER_ADJUSTMENT_TYPE = eINSTANCE.getOrderAdjustmentTypeAttr_OrderAdjustmentType();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -10976,12 +10976,12 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_ATTRIBUTE = eINSTANCE.getOrderAttribute();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ATTRIBUTE__ORDER_ID = eINSTANCE.getOrderAttribute_OrderId();
+		EReference ORDER_ATTRIBUTE__ORDER = eINSTANCE.getOrderAttribute_Order();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -11018,20 +11018,20 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_BLACKLIST = eINSTANCE.getOrderBlacklist();
 
 		/**
+		 * The meta object literal for the '<em><b>Order Blacklist Type</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORDER_BLACKLIST__ORDER_BLACKLIST_TYPE = eINSTANCE.getOrderBlacklist_OrderBlacklistType();
+
+		/**
 		 * The meta object literal for the '<em><b>Blacklist String</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute ORDER_BLACKLIST__BLACKLIST_STRING = eINSTANCE.getOrderBlacklist_BlacklistString();
-
-		/**
-		 * The meta object literal for the '<em><b>Order Blacklist Type Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ORDER_BLACKLIST__ORDER_BLACKLIST_TYPE_ID = eINSTANCE.getOrderBlacklist_OrderBlacklistTypeId();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderBlacklistTypeImpl <em>Blacklist Type</em>}' class.
@@ -11070,28 +11070,28 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_CONTACT_MECH = eINSTANCE.getOrderContactMech();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_CONTACT_MECH__ORDER_ID = eINSTANCE.getOrderContactMech_OrderId();
+		EReference ORDER_CONTACT_MECH__ORDER = eINSTANCE.getOrderContactMech_Order();
 
 		/**
-		 * The meta object literal for the '<em><b>Contact Mech Purpose Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Contact Mech</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE_ID = eINSTANCE.getOrderContactMech_ContactMechPurposeTypeId();
+		EReference ORDER_CONTACT_MECH__CONTACT_MECH = eINSTANCE.getOrderContactMech_ContactMech();
 
 		/**
-		 * The meta object literal for the '<em><b>Contact Mech Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Contact Mech Purpose Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_CONTACT_MECH__CONTACT_MECH_ID = eINSTANCE.getOrderContactMech_ContactMechId();
+		EReference ORDER_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE = eINSTANCE.getOrderContactMech_ContactMechPurposeType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentImpl <em>Content</em>}' class.
@@ -11104,20 +11104,28 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_CONTENT = eINSTANCE.getOrderContent();
 
 		/**
-		 * The meta object literal for the '<em><b>Content Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_CONTENT__CONTENT_ID = eINSTANCE.getOrderContent_ContentId();
+		EReference ORDER_CONTENT__ORDER = eINSTANCE.getOrderContent_Order();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Content</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_CONTENT__ORDER_ID = eINSTANCE.getOrderContent_OrderId();
+		EReference ORDER_CONTENT__CONTENT = eINSTANCE.getOrderContent_Content();
+
+		/**
+		 * The meta object literal for the '<em><b>Order Content Type</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORDER_CONTENT__ORDER_CONTENT_TYPE = eINSTANCE.getOrderContent_OrderContentType();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -11126,14 +11134,6 @@ public interface OrderPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ORDER_CONTENT__ORDER_ITEM_SEQ_ID = eINSTANCE.getOrderContent_OrderItemSeqId();
-
-		/**
-		 * The meta object literal for the '<em><b>Order Content Type Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ORDER_CONTENT__ORDER_CONTENT_TYPE_ID = eINSTANCE.getOrderContent_OrderContentTypeId();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -11186,12 +11186,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_CONTENT_TYPE__HAS_TABLE = eINSTANCE.getOrderContentType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_CONTENT_TYPE__PARENT_TYPE_ID = eINSTANCE.getOrderContentType_ParentTypeId();
+		EReference ORDER_CONTENT_TYPE__PARENT_TYPE = eINSTANCE.getOrderContentType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderDeliveryScheduleImpl <em>Delivery Schedule</em>}' class.
@@ -11204,12 +11204,12 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_DELIVERY_SCHEDULE = eINSTANCE.getOrderDeliverySchedule();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_DELIVERY_SCHEDULE__ORDER_ID = eINSTANCE.getOrderDeliverySchedule_OrderId();
+		EReference ORDER_DELIVERY_SCHEDULE__ORDER = eINSTANCE.getOrderDeliverySchedule_Order();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -11244,12 +11244,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_DELIVERY_SCHEDULE__SKIDS_PALLETS = eINSTANCE.getOrderDeliverySchedule_SkidsPallets();
 
 		/**
-		 * The meta object literal for the '<em><b>Status Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Status</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_DELIVERY_SCHEDULE__STATUS_ID = eINSTANCE.getOrderDeliverySchedule_StatusId();
+		EReference ORDER_DELIVERY_SCHEDULE__STATUS = eINSTANCE.getOrderDeliverySchedule_Status();
 
 		/**
 		 * The meta object literal for the '<em><b>Total Cubic Size</b></em>' attribute feature.
@@ -11260,12 +11260,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_DELIVERY_SCHEDULE__TOTAL_CUBIC_SIZE = eINSTANCE.getOrderDeliverySchedule_TotalCubicSize();
 
 		/**
-		 * The meta object literal for the '<em><b>Total Cubic Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Total Cubic Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_DELIVERY_SCHEDULE__TOTAL_CUBIC_UOM_ID = eINSTANCE.getOrderDeliverySchedule_TotalCubicUomId();
+		EReference ORDER_DELIVERY_SCHEDULE__TOTAL_CUBIC_UOM = eINSTANCE.getOrderDeliverySchedule_TotalCubicUom();
 
 		/**
 		 * The meta object literal for the '<em><b>Total Weight</b></em>' attribute feature.
@@ -11276,12 +11276,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_DELIVERY_SCHEDULE__TOTAL_WEIGHT = eINSTANCE.getOrderDeliverySchedule_TotalWeight();
 
 		/**
-		 * The meta object literal for the '<em><b>Total Weight Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Total Weight Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_DELIVERY_SCHEDULE__TOTAL_WEIGHT_UOM_ID = eINSTANCE.getOrderDeliverySchedule_TotalWeightUomId();
+		EReference ORDER_DELIVERY_SCHEDULE__TOTAL_WEIGHT_UOM = eINSTANCE.getOrderDeliverySchedule_TotalWeightUom();
 
 		/**
 		 * The meta object literal for the '<em><b>Units Pieces</b></em>' attribute feature.
@@ -11318,20 +11318,20 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_HEADER__AGREEMENT_ID = eINSTANCE.getOrderHeader_AgreementId();
 
 		/**
-		 * The meta object literal for the '<em><b>Auto Order Shopping List Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Auto Order Shopping List</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_HEADER__AUTO_ORDER_SHOPPING_LIST_ID = eINSTANCE.getOrderHeader_AutoOrderShoppingListId();
+		EReference ORDER_HEADER__AUTO_ORDER_SHOPPING_LIST = eINSTANCE.getOrderHeader_AutoOrderShoppingList();
 
 		/**
-		 * The meta object literal for the '<em><b>Billing Account Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Billing Account</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_HEADER__BILLING_ACCOUNT_ID = eINSTANCE.getOrderHeader_BillingAccountId();
+		EReference ORDER_HEADER__BILLING_ACCOUNT = eINSTANCE.getOrderHeader_BillingAccount();
 
 		/**
 		 * The meta object literal for the '<em><b>Communication Event Orders</b></em>' reference list feature.
@@ -11510,20 +11510,20 @@ public interface OrderPackage extends EPackage {
 		EReference ORDER_HEADER__ORDER_PRODUCT_PROMO_CODES = eINSTANCE.getOrderHeader_OrderProductPromoCodes();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_HEADER__ORDER_TYPE_ID = eINSTANCE.getOrderHeader_OrderTypeId();
+		EReference ORDER_HEADER__ORDER_TYPE = eINSTANCE.getOrderHeader_OrderType();
 
 		/**
-		 * The meta object literal for the '<em><b>Origin Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Origin Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_HEADER__ORIGIN_FACILITY_ID = eINSTANCE.getOrderHeader_OriginFacilityId();
+		EReference ORDER_HEADER__ORIGIN_FACILITY = eINSTANCE.getOrderHeader_OriginFacility();
 
 		/**
 		 * The meta object literal for the '<em><b>Pick Sheet Printed Date</b></em>' attribute feature.
@@ -11550,12 +11550,12 @@ public interface OrderPackage extends EPackage {
 		EReference ORDER_HEADER__PRODUCT_PROMO_USES = eINSTANCE.getOrderHeader_ProductPromoUses();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Store Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Store</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_HEADER__PRODUCT_STORE_ID = eINSTANCE.getOrderHeader_ProductStoreId();
+		EReference ORDER_HEADER__PRODUCT_STORE = eINSTANCE.getOrderHeader_ProductStore();
 
 		/**
 		 * The meta object literal for the '<em><b>Remaining Sub Total</b></em>' attribute feature.
@@ -11566,28 +11566,28 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_HEADER__REMAINING_SUB_TOTAL = eINSTANCE.getOrderHeader_RemainingSubTotal();
 
 		/**
-		 * The meta object literal for the '<em><b>Sales Channel Enum Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Sales Channel Enum</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_HEADER__SALES_CHANNEL_ENUM_ID = eINSTANCE.getOrderHeader_SalesChannelEnumId();
+		EReference ORDER_HEADER__SALES_CHANNEL_ENUM = eINSTANCE.getOrderHeader_SalesChannelEnum();
 
 		/**
-		 * The meta object literal for the '<em><b>Status Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Status</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_HEADER__STATUS_ID = eINSTANCE.getOrderHeader_StatusId();
+		EReference ORDER_HEADER__STATUS = eINSTANCE.getOrderHeader_Status();
 
 		/**
-		 * The meta object literal for the '<em><b>Sync Status Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Sync Status</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_HEADER__SYNC_STATUS_ID = eINSTANCE.getOrderHeader_SyncStatusId();
+		EReference ORDER_HEADER__SYNC_STATUS = eINSTANCE.getOrderHeader_SyncStatus();
 
 		/**
 		 * The meta object literal for the '<em><b>Terminal Id</b></em>' attribute feature.
@@ -11622,12 +11622,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_HEADER__VISIT_ID = eINSTANCE.getOrderHeader_VisitId();
 
 		/**
-		 * The meta object literal for the '<em><b>Web Site Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Web Site</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_HEADER__WEB_SITE_ID = eINSTANCE.getOrderHeader_WebSiteId();
+		EReference ORDER_HEADER__WEB_SITE = eINSTANCE.getOrderHeader_WebSite();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderHeaderNoteImpl <em>Header Note</em>}' class.
@@ -11640,12 +11640,12 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_HEADER_NOTE = eINSTANCE.getOrderHeaderNote();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_HEADER_NOTE__ORDER_ID = eINSTANCE.getOrderHeaderNote_OrderId();
+		EReference ORDER_HEADER_NOTE__ORDER = eINSTANCE.getOrderHeaderNote_Order();
 
 		/**
 		 * The meta object literal for the '<em><b>Internal Note</b></em>' attribute feature.
@@ -11666,20 +11666,20 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_HEADER_WORK_EFFORT = eINSTANCE.getOrderHeaderWorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_HEADER_WORK_EFFORT__ORDER_ID = eINSTANCE.getOrderHeaderWorkEffort_OrderId();
+		EReference ORDER_HEADER_WORK_EFFORT__ORDER = eINSTANCE.getOrderHeaderWorkEffort_Order();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_HEADER_WORK_EFFORT__WORK_EFFORT_ID = eINSTANCE.getOrderHeaderWorkEffort_WorkEffortId();
+		EReference ORDER_HEADER_WORK_EFFORT__WORK_EFFORT = eINSTANCE.getOrderHeaderWorkEffort_WorkEffort();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemImpl <em>Item</em>}' class.
@@ -11692,12 +11692,12 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_ITEM = eINSTANCE.getOrderItem();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM__ORDER_ID = eINSTANCE.getOrderItem_OrderId();
+		EReference ORDER_ITEM__ORDER = eINSTANCE.getOrderItem_Order();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -11748,12 +11748,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM__CANCEL_QUANTITY = eINSTANCE.getOrderItem_CancelQuantity();
 
 		/**
-		 * The meta object literal for the '<em><b>Change By User Login Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Change By User Login</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM__CHANGE_BY_USER_LOGIN_ID = eINSTANCE.getOrderItem_ChangeByUserLoginId();
+		EReference ORDER_ITEM__CHANGE_BY_USER_LOGIN = eINSTANCE.getOrderItem_ChangeByUserLogin();
 
 		/**
 		 * The meta object literal for the '<em><b>Comments</b></em>' attribute feature.
@@ -11820,12 +11820,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM__EXTERNAL_ID = eINSTANCE.getOrderItem_ExternalId();
 
 		/**
-		 * The meta object literal for the '<em><b>From Inventory Item Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>From Inventory Item</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM__FROM_INVENTORY_ITEM_ID = eINSTANCE.getOrderItem_FromInventoryItemId();
+		EReference ORDER_ITEM__FROM_INVENTORY_ITEM = eINSTANCE.getOrderItem_FromInventoryItem();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Item Group Primary</b></em>' attribute feature.
@@ -11868,20 +11868,20 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM__ORDER_ITEM_GROUP_SEQ_ID = eINSTANCE.getOrderItem_OrderItemGroupSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Item Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order Item Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM__ORDER_ITEM_TYPE_ID = eINSTANCE.getOrderItem_OrderItemTypeId();
+		EReference ORDER_ITEM__ORDER_ITEM_TYPE = eINSTANCE.getOrderItem_OrderItemType();
 
 		/**
-		 * The meta object literal for the '<em><b>Override Gl Account Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Override Gl Account</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM__OVERRIDE_GL_ACCOUNT_ID = eINSTANCE.getOrderItem_OverrideGlAccountId();
+		EReference ORDER_ITEM__OVERRIDE_GL_ACCOUNT = eINSTANCE.getOrderItem_OverrideGlAccount();
 
 		/**
 		 * The meta object literal for the '<em><b>Prod Catalog Id</b></em>' attribute feature.
@@ -11890,6 +11890,14 @@ public interface OrderPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ORDER_ITEM__PROD_CATALOG_ID = eINSTANCE.getOrderItem_ProdCatalogId();
+
+		/**
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORDER_ITEM__PRODUCT = eINSTANCE.getOrderItem_Product();
 
 		/**
 		 * The meta object literal for the '<em><b>Product Category Id</b></em>' attribute feature.
@@ -11906,14 +11914,6 @@ public interface OrderPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ORDER_ITEM__PRODUCT_FEATURE_ID = eINSTANCE.getOrderItem_ProductFeatureId();
-
-		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ORDER_ITEM__PRODUCT_ID = eINSTANCE.getOrderItem_ProductId();
 
 		/**
 		 * The meta object literal for the '<em><b>Quantity</b></em>' attribute feature.
@@ -11940,12 +11940,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM__QUOTE_ITEM_SEQ_ID = eINSTANCE.getOrderItem_QuoteItemSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>Recurring Freq Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Recurring Freq Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM__RECURRING_FREQ_UOM_ID = eINSTANCE.getOrderItem_RecurringFreqUomId();
+		EReference ORDER_ITEM__RECURRING_FREQ_UOM = eINSTANCE.getOrderItem_RecurringFreqUom();
 
 		/**
 		 * The meta object literal for the '<em><b>Reserve After Date</b></em>' attribute feature.
@@ -11956,12 +11956,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM__RESERVE_AFTER_DATE = eINSTANCE.getOrderItem_ReserveAfterDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Sales Opportunity Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Sales Opportunity</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM__SALES_OPPORTUNITY_ID = eINSTANCE.getOrderItem_SalesOpportunityId();
+		EReference ORDER_ITEM__SALES_OPPORTUNITY = eINSTANCE.getOrderItem_SalesOpportunity();
 
 		/**
 		 * The meta object literal for the '<em><b>Selected Amount</b></em>' attribute feature.
@@ -12004,12 +12004,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM__SHOPPING_LIST_ITEM_SEQ_ID = eINSTANCE.getOrderItem_ShoppingListItemSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>Status Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Status</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM__STATUS_ID = eINSTANCE.getOrderItem_StatusId();
+		EReference ORDER_ITEM__STATUS = eINSTANCE.getOrderItem_Status();
 
 		/**
 		 * The meta object literal for the '<em><b>Subscription Id</b></em>' attribute feature.
@@ -12028,12 +12028,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM__SUPPLIER_PRODUCT_ID = eINSTANCE.getOrderItem_SupplierProductId();
 
 		/**
-		 * The meta object literal for the '<em><b>Sync Status Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Sync Status</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM__SYNC_STATUS_ID = eINSTANCE.getOrderItem_SyncStatusId();
+		EReference ORDER_ITEM__SYNC_STATUS = eINSTANCE.getOrderItem_SyncStatus();
 
 		/**
 		 * The meta object literal for the '<em><b>Unit Average Cost</b></em>' attribute feature.
@@ -12078,12 +12078,28 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_ITEM_ASSOC = eINSTANCE.getOrderItemAssoc();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order Item Assoc Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_ASSOC__ORDER_ID = eINSTANCE.getOrderItemAssoc_OrderId();
+		EReference ORDER_ITEM_ASSOC__ORDER_ITEM_ASSOC_TYPE = eINSTANCE.getOrderItemAssoc_OrderItemAssocType();
+
+		/**
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORDER_ITEM_ASSOC__ORDER = eINSTANCE.getOrderItemAssoc_Order();
+
+		/**
+		 * The meta object literal for the '<em><b>To Order</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORDER_ITEM_ASSOC__TO_ORDER = eINSTANCE.getOrderItemAssoc_ToOrder();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -12102,14 +12118,6 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM_ASSOC__SHIP_GROUP_SEQ_ID = eINSTANCE.getOrderItemAssoc_ShipGroupSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>To Order Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ORDER_ITEM_ASSOC__TO_ORDER_ID = eINSTANCE.getOrderItemAssoc_ToOrderId();
-
-		/**
 		 * The meta object literal for the '<em><b>To Order Item Seq Id</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -12124,14 +12132,6 @@ public interface OrderPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ORDER_ITEM_ASSOC__TO_SHIP_GROUP_SEQ_ID = eINSTANCE.getOrderItemAssoc_ToShipGroupSeqId();
-
-		/**
-		 * The meta object literal for the '<em><b>Order Item Assoc Type Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ORDER_ITEM_ASSOC__ORDER_ITEM_ASSOC_TYPE_ID = eINSTANCE.getOrderItemAssoc_OrderItemAssocTypeId();
 
 		/**
 		 * The meta object literal for the '<em><b>Quantity</b></em>' attribute feature.
@@ -12176,12 +12176,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM_ASSOC_TYPE__HAS_TABLE = eINSTANCE.getOrderItemAssocType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_ASSOC_TYPE__PARENT_TYPE_ID = eINSTANCE.getOrderItemAssocType_ParentTypeId();
+		EReference ORDER_ITEM_ASSOC_TYPE__PARENT_TYPE = eINSTANCE.getOrderItemAssocType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAttributeImpl <em>Item Attribute</em>}' class.
@@ -12244,12 +12244,20 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_ITEM_BILLING = eINSTANCE.getOrderItemBilling();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_BILLING__ORDER_ID = eINSTANCE.getOrderItemBilling_OrderId();
+		EReference ORDER_ITEM_BILLING__ORDER = eINSTANCE.getOrderItemBilling_Order();
+
+		/**
+		 * The meta object literal for the '<em><b>Invoice</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORDER_ITEM_BILLING__INVOICE = eINSTANCE.getOrderItemBilling_Invoice();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -12258,14 +12266,6 @@ public interface OrderPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ORDER_ITEM_BILLING__ORDER_ITEM_SEQ_ID = eINSTANCE.getOrderItemBilling_OrderItemSeqId();
-
-		/**
-		 * The meta object literal for the '<em><b>Invoice Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ORDER_ITEM_BILLING__INVOICE_ID = eINSTANCE.getOrderItemBilling_InvoiceId();
 
 		/**
 		 * The meta object literal for the '<em><b>Invoice Item Seq Id</b></em>' attribute feature.
@@ -12284,12 +12284,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM_BILLING__AMOUNT = eINSTANCE.getOrderItemBilling_Amount();
 
 		/**
-		 * The meta object literal for the '<em><b>Item Issuance Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Item Issuance</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_BILLING__ITEM_ISSUANCE_ID = eINSTANCE.getOrderItemBilling_ItemIssuanceId();
+		EReference ORDER_ITEM_BILLING__ITEM_ISSUANCE = eINSTANCE.getOrderItemBilling_ItemIssuance();
 
 		/**
 		 * The meta object literal for the '<em><b>Quantity</b></em>' attribute feature.
@@ -12300,12 +12300,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM_BILLING__QUANTITY = eINSTANCE.getOrderItemBilling_Quantity();
 
 		/**
-		 * The meta object literal for the '<em><b>Shipment Receipt Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Shipment Receipt</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_BILLING__SHIPMENT_RECEIPT_ID = eINSTANCE.getOrderItemBilling_ShipmentReceiptId();
+		EReference ORDER_ITEM_BILLING__SHIPMENT_RECEIPT = eINSTANCE.getOrderItemBilling_ShipmentReceipt();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemChangeImpl <em>Item Change</em>}' class.
@@ -12350,12 +12350,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM_CHANGE__CHANGE_DATETIME = eINSTANCE.getOrderItemChange_ChangeDatetime();
 
 		/**
-		 * The meta object literal for the '<em><b>Change Type Enum Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Change Type Enum</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_CHANGE__CHANGE_TYPE_ENUM_ID = eINSTANCE.getOrderItemChange_ChangeTypeEnumId();
+		EReference ORDER_ITEM_CHANGE__CHANGE_TYPE_ENUM = eINSTANCE.getOrderItemChange_ChangeTypeEnum();
 
 		/**
 		 * The meta object literal for the '<em><b>Change User Login</b></em>' reference feature.
@@ -12374,12 +12374,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM_CHANGE__ITEM_DESCRIPTION = eINSTANCE.getOrderItemChange_ItemDescription();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_CHANGE__ORDER_ID = eINSTANCE.getOrderItemChange_OrderId();
+		EReference ORDER_ITEM_CHANGE__ORDER = eINSTANCE.getOrderItemChange_Order();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -12398,12 +12398,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM_CHANGE__QUANTITY = eINSTANCE.getOrderItemChange_Quantity();
 
 		/**
-		 * The meta object literal for the '<em><b>Reason Enum Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Reason Enum</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_CHANGE__REASON_ENUM_ID = eINSTANCE.getOrderItemChange_ReasonEnumId();
+		EReference ORDER_ITEM_CHANGE__REASON_ENUM = eINSTANCE.getOrderItemChange_ReasonEnum();
 
 		/**
 		 * The meta object literal for the '<em><b>Unit Price</b></em>' attribute feature.
@@ -12424,12 +12424,20 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_ITEM_CONTACT_MECH = eINSTANCE.getOrderItemContactMech();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_CONTACT_MECH__ORDER_ID = eINSTANCE.getOrderItemContactMech_OrderId();
+		EReference ORDER_ITEM_CONTACT_MECH__ORDER = eINSTANCE.getOrderItemContactMech_Order();
+
+		/**
+		 * The meta object literal for the '<em><b>Contact Mech Purpose Type</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORDER_ITEM_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE = eINSTANCE.getOrderItemContactMech_ContactMechPurposeType();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -12440,20 +12448,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM_CONTACT_MECH__ORDER_ITEM_SEQ_ID = eINSTANCE.getOrderItemContactMech_OrderItemSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>Contact Mech Purpose Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Contact Mech</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE_ID = eINSTANCE.getOrderItemContactMech_ContactMechPurposeTypeId();
-
-		/**
-		 * The meta object literal for the '<em><b>Contact Mech Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ORDER_ITEM_CONTACT_MECH__CONTACT_MECH_ID = eINSTANCE.getOrderItemContactMech_ContactMechId();
+		EReference ORDER_ITEM_CONTACT_MECH__CONTACT_MECH = eINSTANCE.getOrderItemContactMech_ContactMech();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemGroupImpl <em>Item Group</em>}' class.
@@ -12466,12 +12466,12 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_ITEM_GROUP = eINSTANCE.getOrderItemGroup();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_GROUP__ORDER_ID = eINSTANCE.getOrderItemGroup_OrderId();
+		EReference ORDER_ITEM_GROUP__ORDER = eINSTANCE.getOrderItemGroup_Order();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Group Seq Id</b></em>' attribute feature.
@@ -12508,6 +12508,14 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_ITEM_GROUP_ORDER = eINSTANCE.getOrderItemGroupOrder();
 
 		/**
+		 * The meta object literal for the '<em><b>Group Order</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORDER_ITEM_GROUP_ORDER__GROUP_ORDER = eINSTANCE.getOrderItemGroupOrder_GroupOrder();
+
+		/**
 		 * The meta object literal for the '<em><b>Order Id</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -12522,14 +12530,6 @@ public interface OrderPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ORDER_ITEM_GROUP_ORDER__ORDER_ITEM_SEQ_ID = eINSTANCE.getOrderItemGroupOrder_OrderItemSeqId();
-
-		/**
-		 * The meta object literal for the '<em><b>Group Order Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ORDER_ITEM_GROUP_ORDER__GROUP_ORDER_ID = eINSTANCE.getOrderItemGroupOrder_GroupOrderId();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemPriceInfoImpl <em>Item Price Info</em>}' class.
@@ -12566,12 +12566,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM_PRICE_INFO__MODIFY_AMOUNT = eINSTANCE.getOrderItemPriceInfo_ModifyAmount();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_PRICE_INFO__ORDER_ID = eINSTANCE.getOrderItemPriceInfo_OrderId();
+		EReference ORDER_ITEM_PRICE_INFO__ORDER = eINSTANCE.getOrderItemPriceInfo_Order();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -12590,12 +12590,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM_PRICE_INFO__PRODUCT_PRICE_ACTION_SEQ_ID = eINSTANCE.getOrderItemPriceInfo_ProductPriceActionSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Price Rule Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Price Rule</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_PRICE_INFO__PRODUCT_PRICE_RULE_ID = eINSTANCE.getOrderItemPriceInfo_ProductPriceRuleId();
+		EReference ORDER_ITEM_PRICE_INFO__PRODUCT_PRICE_RULE = eINSTANCE.getOrderItemPriceInfo_ProductPriceRule();
 
 		/**
 		 * The meta object literal for the '<em><b>Rate Code</b></em>' attribute feature.
@@ -12616,12 +12616,28 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_ITEM_ROLE = eINSTANCE.getOrderItemRole();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_ROLE__ORDER_ID = eINSTANCE.getOrderItemRole_OrderId();
+		EReference ORDER_ITEM_ROLE__ORDER = eINSTANCE.getOrderItemRole_Order();
+
+		/**
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORDER_ITEM_ROLE__PARTY = eINSTANCE.getOrderItemRole_Party();
+
+		/**
+		 * The meta object literal for the '<em><b>Role Type</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORDER_ITEM_ROLE__ROLE_TYPE = eINSTANCE.getOrderItemRole_RoleType();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -12630,22 +12646,6 @@ public interface OrderPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ORDER_ITEM_ROLE__ORDER_ITEM_SEQ_ID = eINSTANCE.getOrderItemRole_OrderItemSeqId();
-
-		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ORDER_ITEM_ROLE__PARTY_ID = eINSTANCE.getOrderItemRole_PartyId();
-
-		/**
-		 * The meta object literal for the '<em><b>Role Type Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ORDER_ITEM_ROLE__ROLE_TYPE_ID = eINSTANCE.getOrderItemRole_RoleTypeId();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl <em>Item Ship Group</em>}' class.
@@ -12658,12 +12658,12 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_ITEM_SHIP_GROUP = eINSTANCE.getOrderItemShipGroup();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_SHIP_GROUP__ORDER_ID = eINSTANCE.getOrderItemShipGroup_OrderId();
+		EReference ORDER_ITEM_SHIP_GROUP__ORDER = eINSTANCE.getOrderItemShipGroup_Order();
 
 		/**
 		 * The meta object literal for the '<em><b>Ship Group Seq Id</b></em>' attribute feature.
@@ -12674,12 +12674,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM_SHIP_GROUP__SHIP_GROUP_SEQ_ID = eINSTANCE.getOrderItemShipGroup_ShipGroupSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>Carrier Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Carrier Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_SHIP_GROUP__CARRIER_PARTY_ID = eINSTANCE.getOrderItemShipGroup_CarrierPartyId();
+		EReference ORDER_ITEM_SHIP_GROUP__CARRIER_PARTY = eINSTANCE.getOrderItemShipGroup_CarrierParty();
 
 		/**
 		 * The meta object literal for the '<em><b>Carrier Role Type Id</b></em>' attribute feature.
@@ -12690,12 +12690,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM_SHIP_GROUP__CARRIER_ROLE_TYPE_ID = eINSTANCE.getOrderItemShipGroup_CarrierRoleTypeId();
 
 		/**
-		 * The meta object literal for the '<em><b>Contact Mech Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Contact Mech</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_SHIP_GROUP__CONTACT_MECH_ID = eINSTANCE.getOrderItemShipGroup_ContactMechId();
+		EReference ORDER_ITEM_SHIP_GROUP__CONTACT_MECH = eINSTANCE.getOrderItemShipGroup_ContactMech();
 
 		/**
 		 * The meta object literal for the '<em><b>Estimated Delivery Date</b></em>' attribute feature.
@@ -12714,12 +12714,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM_SHIP_GROUP__ESTIMATED_SHIP_DATE = eINSTANCE.getOrderItemShipGroup_EstimatedShipDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_SHIP_GROUP__FACILITY_ID = eINSTANCE.getOrderItemShipGroup_FacilityId();
+		EReference ORDER_ITEM_SHIP_GROUP__FACILITY = eINSTANCE.getOrderItemShipGroup_Facility();
 
 		/**
 		 * The meta object literal for the '<em><b>Gift Message</b></em>' attribute feature.
@@ -12762,12 +12762,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM_SHIP_GROUP__SHIP_BY_DATE = eINSTANCE.getOrderItemShipGroup_ShipByDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Shipment Method Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Shipment Method Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_SHIP_GROUP__SHIPMENT_METHOD_TYPE_ID = eINSTANCE.getOrderItemShipGroup_ShipmentMethodTypeId();
+		EReference ORDER_ITEM_SHIP_GROUP__SHIPMENT_METHOD_TYPE = eINSTANCE.getOrderItemShipGroup_ShipmentMethodType();
 
 		/**
 		 * The meta object literal for the '<em><b>Shipping Instructions</b></em>' attribute feature.
@@ -12778,28 +12778,28 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM_SHIP_GROUP__SHIPPING_INSTRUCTIONS = eINSTANCE.getOrderItemShipGroup_ShippingInstructions();
 
 		/**
-		 * The meta object literal for the '<em><b>Supplier Agreement Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Supplier Agreement</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_SHIP_GROUP__SUPPLIER_AGREEMENT_ID = eINSTANCE.getOrderItemShipGroup_SupplierAgreementId();
+		EReference ORDER_ITEM_SHIP_GROUP__SUPPLIER_AGREEMENT = eINSTANCE.getOrderItemShipGroup_SupplierAgreement();
 
 		/**
-		 * The meta object literal for the '<em><b>Supplier Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Supplier Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_SHIP_GROUP__SUPPLIER_PARTY_ID = eINSTANCE.getOrderItemShipGroup_SupplierPartyId();
+		EReference ORDER_ITEM_SHIP_GROUP__SUPPLIER_PARTY = eINSTANCE.getOrderItemShipGroup_SupplierParty();
 
 		/**
-		 * The meta object literal for the '<em><b>Telecom Contact Mech Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Telecom Contact Mech</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_SHIP_GROUP__TELECOM_CONTACT_MECH_ID = eINSTANCE.getOrderItemShipGroup_TelecomContactMechId();
+		EReference ORDER_ITEM_SHIP_GROUP__TELECOM_CONTACT_MECH = eINSTANCE.getOrderItemShipGroup_TelecomContactMech();
 
 		/**
 		 * The meta object literal for the '<em><b>Tracking Number</b></em>' attribute feature.
@@ -12810,12 +12810,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_ITEM_SHIP_GROUP__TRACKING_NUMBER = eINSTANCE.getOrderItemShipGroup_TrackingNumber();
 
 		/**
-		 * The meta object literal for the '<em><b>Vendor Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Vendor Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_SHIP_GROUP__VENDOR_PARTY_ID = eINSTANCE.getOrderItemShipGroup_VendorPartyId();
+		EReference ORDER_ITEM_SHIP_GROUP__VENDOR_PARTY = eINSTANCE.getOrderItemShipGroup_VendorParty();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupAssocImpl <em>Item Ship Group Assoc</em>}' class.
@@ -12828,12 +12828,12 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_ITEM_SHIP_GROUP_ASSOC = eINSTANCE.getOrderItemShipGroupAssoc();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_SHIP_GROUP_ASSOC__ORDER_ID = eINSTANCE.getOrderItemShipGroupAssoc_OrderId();
+		EReference ORDER_ITEM_SHIP_GROUP_ASSOC__ORDER = eINSTANCE.getOrderItemShipGroupAssoc_Order();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -12878,12 +12878,20 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_ITEM_SHIP_GRP_INV_RES = eINSTANCE.getOrderItemShipGrpInvRes();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_SHIP_GRP_INV_RES__ORDER_ID = eINSTANCE.getOrderItemShipGrpInvRes_OrderId();
+		EReference ORDER_ITEM_SHIP_GRP_INV_RES__ORDER = eINSTANCE.getOrderItemShipGrpInvRes_Order();
+
+		/**
+		 * The meta object literal for the '<em><b>Inventory Item</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORDER_ITEM_SHIP_GRP_INV_RES__INVENTORY_ITEM = eINSTANCE.getOrderItemShipGrpInvRes_InventoryItem();
 
 		/**
 		 * The meta object literal for the '<em><b>Ship Group Seq Id</b></em>' attribute feature.
@@ -12900,14 +12908,6 @@ public interface OrderPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ORDER_ITEM_SHIP_GRP_INV_RES__ORDER_ITEM_SEQ_ID = eINSTANCE.getOrderItemShipGrpInvRes_OrderItemSeqId();
-
-		/**
-		 * The meta object literal for the '<em><b>Inventory Item Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ORDER_ITEM_SHIP_GRP_INV_RES__INVENTORY_ITEM_ID = eINSTANCE.getOrderItemShipGrpInvRes_InventoryItemId();
 
 		/**
 		 * The meta object literal for the '<em><b>Created Datetime</b></em>' attribute feature.
@@ -13032,12 +13032,12 @@ public interface OrderPackage extends EPackage {
 		EReference ORDER_ITEM_TYPE__ORDER_ITEM_TYPE_ATTRS = eINSTANCE.getOrderItemType_OrderItemTypeAttrs();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_TYPE__PARENT_TYPE_ID = eINSTANCE.getOrderItemType_ParentTypeId();
+		EReference ORDER_ITEM_TYPE__PARENT_TYPE = eINSTANCE.getOrderItemType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemTypeAttrImpl <em>Item Type Attr</em>}' class.
@@ -13050,12 +13050,12 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_ITEM_TYPE_ATTR = eINSTANCE.getOrderItemTypeAttr();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Item Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order Item Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ITEM_TYPE_ATTR__ORDER_ITEM_TYPE_ID = eINSTANCE.getOrderItemTypeAttr_OrderItemTypeId();
+		EReference ORDER_ITEM_TYPE_ATTR__ORDER_ITEM_TYPE = eINSTANCE.getOrderItemTypeAttr_OrderItemType();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -13116,12 +13116,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_NOTIFICATION__NOTIFICATION_DATE = eINSTANCE.getOrderNotification_NotificationDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_NOTIFICATION__ORDER_ID = eINSTANCE.getOrderNotification_OrderId();
+		EReference ORDER_NOTIFICATION__ORDER = eINSTANCE.getOrderNotification_Order();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderPaymentPreferenceImpl <em>Payment Preference</em>}' class.
@@ -13166,12 +13166,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_PAYMENT_PREFERENCE__CREATED_DATE = eINSTANCE.getOrderPaymentPreference_CreatedDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Fin Account Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Fin Account</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_PAYMENT_PREFERENCE__FIN_ACCOUNT_ID = eINSTANCE.getOrderPaymentPreference_FinAccountId();
+		EReference ORDER_PAYMENT_PREFERENCE__FIN_ACCOUNT = eINSTANCE.getOrderPaymentPreference_FinAccount();
 
 		/**
 		 * The meta object literal for the '<em><b>Last Modified By User Login</b></em>' attribute feature.
@@ -13222,12 +13222,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_PAYMENT_PREFERENCE__NEEDS_NSF_RETRY = eINSTANCE.getOrderPaymentPreference_NeedsNsfRetry();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_PAYMENT_PREFERENCE__ORDER_ID = eINSTANCE.getOrderPaymentPreference_OrderId();
+		EReference ORDER_PAYMENT_PREFERENCE__ORDER = eINSTANCE.getOrderPaymentPreference_Order();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -13246,20 +13246,20 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_PAYMENT_PREFERENCE__OVERFLOW_FLAG = eINSTANCE.getOrderPaymentPreference_OverflowFlag();
 
 		/**
-		 * The meta object literal for the '<em><b>Payment Method Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Payment Method</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD_ID = eINSTANCE.getOrderPaymentPreference_PaymentMethodId();
+		EReference ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD = eINSTANCE.getOrderPaymentPreference_PaymentMethod();
 
 		/**
-		 * The meta object literal for the '<em><b>Payment Method Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Payment Method Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD_TYPE_ID = eINSTANCE.getOrderPaymentPreference_PaymentMethodTypeId();
+		EReference ORDER_PAYMENT_PREFERENCE__PAYMENT_METHOD_TYPE = eINSTANCE.getOrderPaymentPreference_PaymentMethodType();
 
 		/**
 		 * The meta object literal for the '<em><b>Present Flag</b></em>' attribute feature.
@@ -13278,12 +13278,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_PAYMENT_PREFERENCE__PROCESS_ATTEMPT = eINSTANCE.getOrderPaymentPreference_ProcessAttempt();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Price Purpose Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Price Purpose</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_PAYMENT_PREFERENCE__PRODUCT_PRICE_PURPOSE_ID = eINSTANCE.getOrderPaymentPreference_ProductPricePurposeId();
+		EReference ORDER_PAYMENT_PREFERENCE__PRODUCT_PRICE_PURPOSE = eINSTANCE.getOrderPaymentPreference_ProductPricePurpose();
 
 		/**
 		 * The meta object literal for the '<em><b>Security Code</b></em>' attribute feature.
@@ -13302,12 +13302,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_PAYMENT_PREFERENCE__SHIP_GROUP_SEQ_ID = eINSTANCE.getOrderPaymentPreference_ShipGroupSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>Status Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Status</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_PAYMENT_PREFERENCE__STATUS_ID = eINSTANCE.getOrderPaymentPreference_StatusId();
+		EReference ORDER_PAYMENT_PREFERENCE__STATUS = eINSTANCE.getOrderPaymentPreference_Status();
 
 		/**
 		 * The meta object literal for the '<em><b>Swiped Flag</b></em>' attribute feature.
@@ -13336,20 +13336,20 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_PRODUCT_PROMO_CODE = eINSTANCE.getOrderProductPromoCode();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_PRODUCT_PROMO_CODE__ORDER_ID = eINSTANCE.getOrderProductPromoCode_OrderId();
+		EReference ORDER_PRODUCT_PROMO_CODE__ORDER = eINSTANCE.getOrderProductPromoCode_Order();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Promo Code Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Promo Code</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_PRODUCT_PROMO_CODE__PRODUCT_PROMO_CODE_ID = eINSTANCE.getOrderProductPromoCode_ProductPromoCodeId();
+		EReference ORDER_PRODUCT_PROMO_CODE__PRODUCT_PROMO_CODE = eINSTANCE.getOrderProductPromoCode_ProductPromoCode();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderRoleImpl <em>Role</em>}' class.
@@ -13362,28 +13362,28 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_ROLE = eINSTANCE.getOrderRole();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ROLE__ORDER_ID = eINSTANCE.getOrderRole_OrderId();
+		EReference ORDER_ROLE__ORDER = eINSTANCE.getOrderRole_Order();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ROLE__PARTY_ID = eINSTANCE.getOrderRole_PartyId();
+		EReference ORDER_ROLE__PARTY = eINSTANCE.getOrderRole_Party();
 
 		/**
-		 * The meta object literal for the '<em><b>Role Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Role Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_ROLE__ROLE_TYPE_ID = eINSTANCE.getOrderRole_RoleTypeId();
+		EReference ORDER_ROLE__ROLE_TYPE = eINSTANCE.getOrderRole_RoleType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderShipmentImpl <em>Shipment</em>}' class.
@@ -13396,12 +13396,20 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_SHIPMENT = eINSTANCE.getOrderShipment();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_SHIPMENT__ORDER_ID = eINSTANCE.getOrderShipment_OrderId();
+		EReference ORDER_SHIPMENT__ORDER = eINSTANCE.getOrderShipment_Order();
+
+		/**
+		 * The meta object literal for the '<em><b>Shipment</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORDER_SHIPMENT__SHIPMENT = eINSTANCE.getOrderShipment_Shipment();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -13418,14 +13426,6 @@ public interface OrderPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ORDER_SHIPMENT__SHIP_GROUP_SEQ_ID = eINSTANCE.getOrderShipment_ShipGroupSeqId();
-
-		/**
-		 * The meta object literal for the '<em><b>Shipment Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ORDER_SHIPMENT__SHIPMENT_ID = eINSTANCE.getOrderShipment_ShipmentId();
 
 		/**
 		 * The meta object literal for the '<em><b>Shipment Item Seq Id</b></em>' attribute feature.
@@ -13470,12 +13470,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_STATUS__CHANGE_REASON = eINSTANCE.getOrderStatus_ChangeReason();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_STATUS__ORDER_ID = eINSTANCE.getOrderStatus_OrderId();
+		EReference ORDER_STATUS__ORDER = eINSTANCE.getOrderStatus_Order();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -13486,12 +13486,20 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_STATUS__ORDER_ITEM_SEQ_ID = eINSTANCE.getOrderStatus_OrderItemSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Payment Preference Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order Payment Preference</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_STATUS__ORDER_PAYMENT_PREFERENCE_ID = eINSTANCE.getOrderStatus_OrderPaymentPreferenceId();
+		EReference ORDER_STATUS__ORDER_PAYMENT_PREFERENCE = eINSTANCE.getOrderStatus_OrderPaymentPreference();
+
+		/**
+		 * The meta object literal for the '<em><b>Status</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORDER_STATUS__STATUS = eINSTANCE.getOrderStatus_Status();
 
 		/**
 		 * The meta object literal for the '<em><b>Status Datetime</b></em>' attribute feature.
@@ -13500,14 +13508,6 @@ public interface OrderPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ORDER_STATUS__STATUS_DATETIME = eINSTANCE.getOrderStatus_StatusDatetime();
-
-		/**
-		 * The meta object literal for the '<em><b>Status Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ORDER_STATUS__STATUS_ID = eINSTANCE.getOrderStatus_StatusId();
 
 		/**
 		 * The meta object literal for the '<em><b>Status User Login</b></em>' reference feature.
@@ -13528,28 +13528,28 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_SUMMARY_ENTRY = eINSTANCE.getOrderSummaryEntry();
 
 		/**
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORDER_SUMMARY_ENTRY__PRODUCT = eINSTANCE.getOrderSummaryEntry_Product();
+
+		/**
+		 * The meta object literal for the '<em><b>Facility</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORDER_SUMMARY_ENTRY__FACILITY = eINSTANCE.getOrderSummaryEntry_Facility();
+
+		/**
 		 * The meta object literal for the '<em><b>Entry Date</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute ORDER_SUMMARY_ENTRY__ENTRY_DATE = eINSTANCE.getOrderSummaryEntry_EntryDate();
-
-		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ORDER_SUMMARY_ENTRY__PRODUCT_ID = eINSTANCE.getOrderSummaryEntry_ProductId();
-
-		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ORDER_SUMMARY_ENTRY__FACILITY_ID = eINSTANCE.getOrderSummaryEntry_FacilityId();
 
 		/**
 		 * The meta object literal for the '<em><b>Gross Sales</b></em>' attribute feature.
@@ -13586,20 +13586,20 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_TERM = eINSTANCE.getOrderTerm();
 
 		/**
-		 * The meta object literal for the '<em><b>Term Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_TERM__TERM_TYPE_ID = eINSTANCE.getOrderTerm_TermTypeId();
+		EReference ORDER_TERM__ORDER = eINSTANCE.getOrderTerm_Order();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Term Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_TERM__ORDER_ID = eINSTANCE.getOrderTerm_OrderId();
+		EReference ORDER_TERM__TERM_TYPE = eINSTANCE.getOrderTerm_TermType();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -13642,12 +13642,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute ORDER_TERM__TEXT_VALUE = eINSTANCE.getOrderTerm_TextValue();
 
 		/**
-		 * The meta object literal for the '<em><b>Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_TERM__UOM_ID = eINSTANCE.getOrderTerm_UomId();
+		EReference ORDER_TERM__UOM = eINSTANCE.getOrderTerm_Uom();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderTermAttributeImpl <em>Term Attribute</em>}' class.
@@ -13750,12 +13750,12 @@ public interface OrderPackage extends EPackage {
 		EReference ORDER_TYPE__ORDER_TYPE_ATTRS = eINSTANCE.getOrderType_OrderTypeAttrs();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_TYPE__PARENT_TYPE_ID = eINSTANCE.getOrderType_ParentTypeId();
+		EReference ORDER_TYPE__PARENT_TYPE = eINSTANCE.getOrderType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeAttrImpl <em>Type Attr</em>}' class.
@@ -13768,12 +13768,12 @@ public interface OrderPackage extends EPackage {
 		EClass ORDER_TYPE_ATTR = eINSTANCE.getOrderTypeAttr();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDER_TYPE_ATTR__ORDER_TYPE_ID = eINSTANCE.getOrderTypeAttr_OrderTypeId();
+		EReference ORDER_TYPE_ATTR__ORDER_TYPE = eINSTANCE.getOrderTypeAttr_OrderType();
 
 		/**
 		 * The meta object literal for the '<em><b>Attr Name</b></em>' attribute feature.
@@ -13802,12 +13802,20 @@ public interface OrderPackage extends EPackage {
 		EClass PRODUCT_ORDER_ITEM = eINSTANCE.getProductOrderItem();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_ORDER_ITEM__ORDER_ID = eINSTANCE.getProductOrderItem_OrderId();
+		EReference PRODUCT_ORDER_ITEM__ORDER = eINSTANCE.getProductOrderItem_Order();
+
+		/**
+		 * The meta object literal for the '<em><b>Engagement</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_ORDER_ITEM__ENGAGEMENT = eINSTANCE.getProductOrderItem_Engagement();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
@@ -13818,12 +13826,12 @@ public interface OrderPackage extends EPackage {
 		EAttribute PRODUCT_ORDER_ITEM__ORDER_ITEM_SEQ_ID = eINSTANCE.getProductOrderItem_OrderItemSeqId();
 
 		/**
-		 * The meta object literal for the '<em><b>Engagement Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_ORDER_ITEM__ENGAGEMENT_ID = eINSTANCE.getProductOrderItem_EngagementId();
+		EReference PRODUCT_ORDER_ITEM__PRODUCT = eINSTANCE.getProductOrderItem_Product();
 
 		/**
 		 * The meta object literal for the '<em><b>Engagement Item Seq Id</b></em>' attribute feature.
@@ -13832,14 +13840,6 @@ public interface OrderPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PRODUCT_ORDER_ITEM__ENGAGEMENT_ITEM_SEQ_ID = eINSTANCE.getProductOrderItem_EngagementItemSeqId();
-
-		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PRODUCT_ORDER_ITEM__PRODUCT_ID = eINSTANCE.getProductOrderItem_ProductId();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.order.order.impl.WorkOrderItemFulfillmentImpl <em>Work Order Item Fulfillment</em>}' class.
@@ -13852,20 +13852,20 @@ public interface OrderPackage extends EPackage {
 		EClass WORK_ORDER_ITEM_FULFILLMENT = eINSTANCE.getWorkOrderItemFulfillment();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_ORDER_ITEM_FULFILLMENT__WORK_EFFORT_ID = eINSTANCE.getWorkOrderItemFulfillment_WorkEffortId();
+		EReference WORK_ORDER_ITEM_FULFILLMENT__ORDER = eINSTANCE.getWorkOrderItemFulfillment_Order();
 
 		/**
-		 * The meta object literal for the '<em><b>Order Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WORK_ORDER_ITEM_FULFILLMENT__ORDER_ID = eINSTANCE.getWorkOrderItemFulfillment_OrderId();
+		EReference WORK_ORDER_ITEM_FULFILLMENT__WORK_EFFORT = eINSTANCE.getWorkOrderItemFulfillment_WorkEffort();
 
 		/**
 		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.

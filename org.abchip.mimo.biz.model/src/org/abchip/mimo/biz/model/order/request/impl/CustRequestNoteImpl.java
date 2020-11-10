@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestNoteImpl#getCustRequestId <em>Cust Request Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestNoteImpl#getCustRequest <em>Cust Request</em>}</li>
  * </ul>
  *
  * @generated
@@ -53,8 +53,8 @@ public class CustRequestNoteImpl extends BizEntityNoteImpl implements CustReques
 	 * @generated
 	 */
 	@Override
-	public CustRequest getCustRequestId() {
-		return (CustRequest)eGet(RequestPackage.Literals.CUST_REQUEST_NOTE__CUST_REQUEST_ID, true);
+	public CustRequest getCustRequest() {
+		return (CustRequest)eGet(RequestPackage.Literals.CUST_REQUEST_NOTE__CUST_REQUEST, true);
 	}
 
 	/**
@@ -63,8 +63,8 @@ public class CustRequestNoteImpl extends BizEntityNoteImpl implements CustReques
 	 * @generated
 	 */
 	@Override
-	public void setCustRequestId(CustRequest newCustRequestId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_NOTE__CUST_REQUEST_ID, newCustRequestId);
+	public void setCustRequest(CustRequest newCustRequest) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_NOTE__CUST_REQUEST, newCustRequest);
 	}
 
 } //CustRequestNoteImpl

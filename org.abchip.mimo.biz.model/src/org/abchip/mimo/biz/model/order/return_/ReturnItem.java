@@ -23,21 +23,21 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnId <em>Return Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturn <em>Return</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnItemSeqId <em>Return Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getExpectedItemStatus <em>Expected Item Status</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReceivedQuantity <em>Received Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnItemResponseId <em>Return Item Response Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnItemTypeId <em>Return Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnItemResponse <em>Return Item Response</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnItemType <em>Return Item Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnPrice <em>Return Price</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnQuantity <em>Return Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnReasonId <em>Return Reason Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnTypeId <em>Return Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnReason <em>Return Reason</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnType <em>Return Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem()
@@ -45,6 +45,29 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface ReturnItem extends EntityTyped<ReturnItemType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Return</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Return</em>' reference.
+	 * @see #setReturn(ReturnHeader)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_Return()
+	 * @model keys="returnId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ReturnHeader getReturn();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturn <em>Return</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Return</em>' reference.
+	 * @see #getReturn()
+	 * @generated
+	 */
+	void setReturn(ReturnHeader value);
+
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -98,30 +121,26 @@ public interface ReturnItem extends EntityTyped<ReturnItemType>, EntityInfo {
 	void setExpectedItemStatus(StatusItem value);
 
 	/**
-	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Id</em>' reference.
-	 * @see #setOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_OrderId()
+	 * @return the value of the '<em>Order</em>' reference.
+	 * @see #setOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_Order()
 	 * @model keys="orderId"
 	 * @generated
 	 */
-	OrderHeader getOrderId();
+	OrderHeader getOrder();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getOrderId <em>Order Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getOrder <em>Order</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Id</em>' reference.
-	 * @see #getOrderId()
+	 * @param value the new value of the '<em>Order</em>' reference.
+	 * @see #getOrder()
 	 * @generated
 	 */
-	void setOrderId(OrderHeader value);
+	void setOrder(OrderHeader value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -150,31 +169,27 @@ public interface ReturnItem extends EntityTyped<ReturnItemType>, EntityInfo {
 	void setOrderItemSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_ProductId()
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_Product()
 	 * @model keys="productId"
 	 *        annotation="mimo-ent-slot help='we need this field to be able to figure out net sales of a product'"
 	 * @generated
 	 */
-	Product getProductId();
+	Product getProduct();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getProductId <em>Product Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getProduct <em>Product</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
 	 * @generated
 	 */
-	void setProductId(Product value);
+	void setProduct(Product value);
 
 	/**
 	 * Returns the value of the '<em><b>Received Quantity</b></em>' attribute.
@@ -204,57 +219,49 @@ public interface ReturnItem extends EntityTyped<ReturnItemType>, EntityInfo {
 	void setReceivedQuantity(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Return Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Return Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Return Id</em>' reference.
-	 * @see #setReturnId(ReturnHeader)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_ReturnId()
-	 * @model keys="returnId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ReturnHeader getReturnId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnId <em>Return Id</em>}' reference.
+	 * Returns the value of the '<em><b>Return Item Response</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Return Id</em>' reference.
-	 * @see #getReturnId()
-	 * @generated
-	 */
-	void setReturnId(ReturnHeader value);
-
-	/**
-	 * Returns the value of the '<em><b>Return Item Response Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Return Item Response Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Return Item Response Id</em>' reference.
-	 * @see #setReturnItemResponseId(ReturnItemResponse)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_ReturnItemResponseId()
+	 * @return the value of the '<em>Return Item Response</em>' reference.
+	 * @see #setReturnItemResponse(ReturnItemResponse)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_ReturnItemResponse()
 	 * @model keys="returnItemResponseId"
 	 * @generated
 	 */
-	ReturnItemResponse getReturnItemResponseId();
+	ReturnItemResponse getReturnItemResponse();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnItemResponseId <em>Return Item Response Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnItemResponse <em>Return Item Response</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Return Item Response Id</em>' reference.
-	 * @see #getReturnItemResponseId()
+	 * @param value the new value of the '<em>Return Item Response</em>' reference.
+	 * @see #getReturnItemResponse()
 	 * @generated
 	 */
-	void setReturnItemResponseId(ReturnItemResponse value);
+	void setReturnItemResponse(ReturnItemResponse value);
+
+	/**
+	 * Returns the value of the '<em><b>Return Item Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Return Item Type</em>' reference.
+	 * @see #setReturnItemType(ReturnItemType)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_ReturnItemType()
+	 * @model keys="returnItemTypeId"
+	 *        annotation="mimo-ent-slot help='what is returned: a product, a service, etc'"
+	 * @generated
+	 */
+	ReturnItemType getReturnItemType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnItemType <em>Return Item Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Return Item Type</em>' reference.
+	 * @see #getReturnItemType()
+	 * @generated
+	 */
+	void setReturnItemType(ReturnItemType value);
 
 	/**
 	 * Returns the value of the '<em><b>Return Item Seq Id</b></em>' attribute.
@@ -283,33 +290,6 @@ public interface ReturnItem extends EntityTyped<ReturnItemType>, EntityInfo {
 	 * @generated
 	 */
 	void setReturnItemSeqId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Return Item Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Return Item Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Return Item Type Id</em>' reference.
-	 * @see #setReturnItemTypeId(ReturnItemType)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_ReturnItemTypeId()
-	 * @model keys="returnItemTypeId"
-	 *        annotation="mimo-ent-slot help='what is returned: a product, a service, etc'"
-	 * @generated
-	 */
-	ReturnItemType getReturnItemTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnItemTypeId <em>Return Item Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Return Item Type Id</em>' reference.
-	 * @see #getReturnItemTypeId()
-	 * @generated
-	 */
-	void setReturnItemTypeId(ReturnItemType value);
 
 	/**
 	 * Returns the value of the '<em><b>Return Price</b></em>' attribute.
@@ -366,83 +346,71 @@ public interface ReturnItem extends EntityTyped<ReturnItemType>, EntityInfo {
 	void setReturnQuantity(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Return Reason Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Return Reason</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Return Reason Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Return Reason Id</em>' reference.
-	 * @see #setReturnReasonId(ReturnReason)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_ReturnReasonId()
+	 * @return the value of the '<em>Return Reason</em>' reference.
+	 * @see #setReturnReason(ReturnReason)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_ReturnReason()
 	 * @model keys="returnReasonId"
 	 *        annotation="mimo-ent-slot audit='true' help='why item is returned: did not like, wrong item, damaged, etc. etc.'"
 	 * @generated
 	 */
-	ReturnReason getReturnReasonId();
+	ReturnReason getReturnReason();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnReasonId <em>Return Reason Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnReason <em>Return Reason</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Return Reason Id</em>' reference.
-	 * @see #getReturnReasonId()
+	 * @param value the new value of the '<em>Return Reason</em>' reference.
+	 * @see #getReturnReason()
 	 * @generated
 	 */
-	void setReturnReasonId(ReturnReason value);
+	void setReturnReason(ReturnReason value);
 
 	/**
-	 * Returns the value of the '<em><b>Return Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Return Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Return Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Return Type Id</em>' reference.
-	 * @see #setReturnTypeId(ReturnType)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_ReturnTypeId()
+	 * @return the value of the '<em>Return Type</em>' reference.
+	 * @see #setReturnType(ReturnType)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_ReturnType()
 	 * @model keys="returnTypeId"
 	 *        annotation="mimo-ent-slot audit='true' help='actually used for disbursement type: store credit, cash refund, exchange'"
 	 * @generated
 	 */
-	ReturnType getReturnTypeId();
+	ReturnType getReturnType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnTypeId <em>Return Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getReturnType <em>Return Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Return Type Id</em>' reference.
-	 * @see #getReturnTypeId()
+	 * @param value the new value of the '<em>Return Type</em>' reference.
+	 * @see #getReturnType()
 	 * @generated
 	 */
-	void setReturnTypeId(ReturnType value);
+	void setReturnType(ReturnType value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_StatusId()
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_Status()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getStatusId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getStatusId <em>Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnItem#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setStatusId(StatusItem value);
+	void setStatus(StatusItem value);
 
 } // ReturnItem

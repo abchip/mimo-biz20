@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTermImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTermImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTermImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTermImpl#getQuoteId <em>Quote Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTermImpl#getTermTypeId <em>Term Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTermImpl#getQuote <em>Quote</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTermImpl#getTermType <em>Term Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTermImpl#getQuoteItemSeqId <em>Quote Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTermImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTermImpl#getTermDays <em>Term Days</em>}</li>
@@ -158,6 +158,46 @@ public class QuoteTermImpl extends EntityIdentifiableImpl implements QuoteTerm {
 	 * @generated
 	 */
 	@Override
+	public Quote getQuote() {
+		return (Quote)eGet(QuotePackage.Literals.QUOTE_TERM__QUOTE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setQuote(Quote newQuote) {
+		eSet(QuotePackage.Literals.QUOTE_TERM__QUOTE, newQuote);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TermType getTermType() {
+		return (TermType)eGet(QuotePackage.Literals.QUOTE_TERM__TERM_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTermType(TermType newTermType) {
+		eSet(QuotePackage.Literals.QUOTE_TERM__TERM_TYPE, newTermType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(QuotePackage.Literals.QUOTE_TERM__DESCRIPTION, true);
 	}
@@ -170,26 +210,6 @@ public class QuoteTermImpl extends EntityIdentifiableImpl implements QuoteTerm {
 	@Override
 	public void setDescription(String newDescription) {
 		eSet(QuotePackage.Literals.QUOTE_TERM__DESCRIPTION, newDescription);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Quote getQuoteId() {
-		return (Quote)eGet(QuotePackage.Literals.QUOTE_TERM__QUOTE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setQuoteId(Quote newQuoteId) {
-		eSet(QuotePackage.Literals.QUOTE_TERM__QUOTE_ID, newQuoteId);
 	}
 
 	/**
@@ -230,26 +250,6 @@ public class QuoteTermImpl extends EntityIdentifiableImpl implements QuoteTerm {
 	@Override
 	public void setTermDays(long newTermDays) {
 		eSet(QuotePackage.Literals.QUOTE_TERM__TERM_DAYS, newTermDays);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public TermType getTermTypeId() {
-		return (TermType)eGet(QuotePackage.Literals.QUOTE_TERM__TERM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTermTypeId(TermType newTermTypeId) {
-		eSet(QuotePackage.Literals.QUOTE_TERM__TERM_TYPE_ID, newTermTypeId);
 	}
 
 	/**

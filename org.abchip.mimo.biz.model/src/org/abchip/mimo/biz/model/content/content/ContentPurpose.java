@@ -19,8 +19,8 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentPurpose#getContentId <em>Content Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentPurpose#getContentPurposeTypeId <em>Content Purpose Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentPurpose#getContent <em>Content</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentPurpose#getContentPurposeType <em>Content Purpose Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentPurpose#getSequenceNum <em>Sequence Num</em>}</li>
  * </ul>
  *
@@ -30,58 +30,50 @@ import org.abchip.mimo.entity.EntityTyped;
  */
 public interface ContentPurpose extends EntityTyped<ContentPurposeType>, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Content</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Id</em>' reference.
-	 * @see #setContentId(Content)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurpose_ContentId()
+	 * @return the value of the '<em>Content</em>' reference.
+	 * @see #setContent(Content)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurpose_Content()
 	 * @model keys="contentId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Content getContentId();
+	Content getContent();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentPurpose#getContentId <em>Content Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentPurpose#getContent <em>Content</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Id</em>' reference.
-	 * @see #getContentId()
+	 * @param value the new value of the '<em>Content</em>' reference.
+	 * @see #getContent()
 	 * @generated
 	 */
-	void setContentId(Content value);
+	void setContent(Content value);
 
 	/**
-	 * Returns the value of the '<em><b>Content Purpose Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Content Purpose Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Purpose Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Purpose Type Id</em>' reference.
-	 * @see #setContentPurposeTypeId(ContentPurposeType)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurpose_ContentPurposeTypeId()
+	 * @return the value of the '<em>Content Purpose Type</em>' reference.
+	 * @see #setContentPurposeType(ContentPurposeType)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurpose_ContentPurposeType()
 	 * @model keys="contentPurposeTypeId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ContentPurposeType getContentPurposeTypeId();
+	ContentPurposeType getContentPurposeType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentPurpose#getContentPurposeTypeId <em>Content Purpose Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentPurpose#getContentPurposeType <em>Content Purpose Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Purpose Type Id</em>' reference.
-	 * @see #getContentPurposeTypeId()
+	 * @param value the new value of the '<em>Content Purpose Type</em>' reference.
+	 * @see #getContentPurposeType()
 	 * @generated
 	 */
-	void setContentPurposeTypeId(ContentPurposeType value);
+	void setContentPurposeType(ContentPurposeType value);
 
 	/**
 	 * Returns the value of the '<em><b>Sequence Num</b></em>' attribute.

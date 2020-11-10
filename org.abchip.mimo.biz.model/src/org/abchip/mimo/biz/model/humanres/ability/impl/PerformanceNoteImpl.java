@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerformanceNoteImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerformanceNoteImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerformanceNoteImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerformanceNoteImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerformanceNoteImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerformanceNoteImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerformanceNoteImpl#getRoleTypeId <em>Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerformanceNoteImpl#getComments <em>Comments</em>}</li>
@@ -155,6 +155,26 @@ public class PerformanceNoteImpl extends EntityIdentifiableImpl implements Perfo
 	 * @generated
 	 */
 	@Override
+	public Party getParty() {
+		return (Party)eGet(AbilityPackage.Literals.PERFORMANCE_NOTE__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(AbilityPackage.Literals.PERFORMANCE_NOTE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getComments() {
 		return (String)eGet(AbilityPackage.Literals.PERFORMANCE_NOTE__COMMENTS, true);
 	}
@@ -207,26 +227,6 @@ public class PerformanceNoteImpl extends EntityIdentifiableImpl implements Perfo
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(AbilityPackage.Literals.PERFORMANCE_NOTE__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(AbilityPackage.Literals.PERFORMANCE_NOTE__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(AbilityPackage.Literals.PERFORMANCE_NOTE__PARTY_ID, newPartyId);
 	}
 
 	/**

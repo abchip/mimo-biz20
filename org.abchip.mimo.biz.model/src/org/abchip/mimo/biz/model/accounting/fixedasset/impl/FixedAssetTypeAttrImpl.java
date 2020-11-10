@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeAttrImpl#getFixedAssetTypeId <em>Fixed Asset Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeAttrImpl#getFixedAssetType <em>Fixed Asset Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeAttrImpl#getDescription <em>Description</em>}</li>
  * </ul>
@@ -151,6 +151,26 @@ public class FixedAssetTypeAttrImpl extends EntityIdentifiableImpl implements Fi
 	 * @generated
 	 */
 	@Override
+	public FixedAssetType getFixedAssetType() {
+		return (FixedAssetType)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_ATTR__FIXED_ASSET_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFixedAssetType(FixedAssetType newFixedAssetType) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_ATTR__FIXED_ASSET_TYPE, newFixedAssetType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_ATTR__DESCRIPTION, true);
 	}
@@ -221,26 +241,6 @@ public class FixedAssetTypeAttrImpl extends EntityIdentifiableImpl implements Fi
 	@Override
 	public void setAttrName(String newAttrName) {
 		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_ATTR__ATTR_NAME, newAttrName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FixedAssetType getFixedAssetTypeId() {
-		return (FixedAssetType)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_ATTR__FIXED_ASSET_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFixedAssetTypeId(FixedAssetType newFixedAssetTypeId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE_ATTR__FIXED_ASSET_TYPE_ID, newFixedAssetTypeId);
 	}
 
 } //FixedAssetTypeAttrImpl

@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogInvFacilityImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogInvFacilityImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogInvFacilityImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogInvFacilityImpl#getProdCatalogId <em>Prod Catalog Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogInvFacilityImpl#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogInvFacilityImpl#getProdCatalog <em>Prod Catalog</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogInvFacilityImpl#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogInvFacilityImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogInvFacilityImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogInvFacilityImpl#getThruDate <em>Thru Date</em>}</li>
@@ -155,8 +155,8 @@ public class ProdCatalogInvFacilityImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(CatalogPackage.Literals.PROD_CATALOG_INV_FACILITY__FACILITY_ID, true);
+	public ProdCatalog getProdCatalog() {
+		return (ProdCatalog)eGet(CatalogPackage.Literals.PROD_CATALOG_INV_FACILITY__PROD_CATALOG, true);
 	}
 
 	/**
@@ -165,8 +165,28 @@ public class ProdCatalogInvFacilityImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(CatalogPackage.Literals.PROD_CATALOG_INV_FACILITY__FACILITY_ID, newFacilityId);
+	public void setProdCatalog(ProdCatalog newProdCatalog) {
+		eSet(CatalogPackage.Literals.PROD_CATALOG_INV_FACILITY__PROD_CATALOG, newProdCatalog);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Facility getFacility() {
+		return (Facility)eGet(CatalogPackage.Literals.PROD_CATALOG_INV_FACILITY__FACILITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacility(Facility newFacility) {
+		eSet(CatalogPackage.Literals.PROD_CATALOG_INV_FACILITY__FACILITY, newFacility);
 	}
 
 	/**
@@ -265,26 +285,6 @@ public class ProdCatalogInvFacilityImpl extends EntityIdentifiableImpl implement
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProdCatalog getProdCatalogId() {
-		return (ProdCatalog)eGet(CatalogPackage.Literals.PROD_CATALOG_INV_FACILITY__PROD_CATALOG_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProdCatalogId(ProdCatalog newProdCatalogId) {
-		eSet(CatalogPackage.Literals.PROD_CATALOG_INV_FACILITY__PROD_CATALOG_ID, newProdCatalogId);
 	}
 
 } //ProdCatalogInvFacilityImpl

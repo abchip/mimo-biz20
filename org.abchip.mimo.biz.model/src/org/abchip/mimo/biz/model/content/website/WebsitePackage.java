@@ -108,22 +108,22 @@ public interface WebsitePackage extends EPackage {
 	int WEB_ANALYTICS_CONFIG__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Web Analytics Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Web Analytics Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_ANALYTICS_CONFIG__WEB_ANALYTICS_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int WEB_ANALYTICS_CONFIG__WEB_ANALYTICS_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Web Site Id</b></em>' reference.
+	 * The feature id for the '<em><b>Web Site</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_ANALYTICS_CONFIG__WEB_SITE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int WEB_ANALYTICS_CONFIG__WEB_SITE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Web Analytics Code</b></em>' attribute.
@@ -226,13 +226,13 @@ public interface WebsitePackage extends EPackage {
 	int WEB_ANALYTICS_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_ANALYTICS_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int WEB_ANALYTICS_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Web Analytics Type</em>' class.
@@ -290,31 +290,31 @@ public interface WebsitePackage extends EPackage {
 	int WEB_SITE_CONTENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Web Site Id</b></em>' reference.
+	 * The feature id for the '<em><b>Web Site</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_CONTENT__WEB_SITE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int WEB_SITE_CONTENT__WEB_SITE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Content Id</b></em>' reference.
+	 * The feature id for the '<em><b>Content</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_CONTENT__CONTENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int WEB_SITE_CONTENT__CONTENT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Web Site Content Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Web Site Content Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_CONTENT__WEB_SITE_CONTENT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int WEB_SITE_CONTENT__WEB_SITE_CONTENT_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -426,13 +426,13 @@ public interface WebsitePackage extends EPackage {
 	int WEB_SITE_CONTENT_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_CONTENT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int WEB_SITE_CONTENT_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Web Site Content Type</em>' class.
@@ -490,13 +490,13 @@ public interface WebsitePackage extends EPackage {
 	int WEB_SITE_PATH_ALIAS__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Web Site Id</b></em>' reference.
+	 * The feature id for the '<em><b>Web Site</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_PATH_ALIAS__WEB_SITE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int WEB_SITE_PATH_ALIAS__WEB_SITE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -526,13 +526,13 @@ public interface WebsitePackage extends EPackage {
 	int WEB_SITE_PATH_ALIAS__ALIAS_TO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Content Id</b></em>' reference.
+	 * The feature id for the '<em><b>Content</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_PATH_ALIAS__CONTENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int WEB_SITE_PATH_ALIAS__CONTENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Map Key</b></em>' attribute.
@@ -718,26 +718,26 @@ public interface WebsitePackage extends EPackage {
 	EClass getWebAnalyticsConfig();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig#getWebSiteId <em>Web Site Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig#getWebAnalyticsType <em>Web Analytics Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Web Site Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig#getWebSiteId()
+	 * @return the meta object for the reference '<em>Web Analytics Type</em>'.
+	 * @see org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig#getWebAnalyticsType()
 	 * @see #getWebAnalyticsConfig()
 	 * @generated
 	 */
-	EReference getWebAnalyticsConfig_WebSiteId();
+	EReference getWebAnalyticsConfig_WebAnalyticsType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig#getWebAnalyticsTypeId <em>Web Analytics Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig#getWebSite <em>Web Site</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Web Analytics Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig#getWebAnalyticsTypeId()
+	 * @return the meta object for the reference '<em>Web Site</em>'.
+	 * @see org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig#getWebSite()
 	 * @see #getWebAnalyticsConfig()
 	 * @generated
 	 */
-	EReference getWebAnalyticsConfig_WebAnalyticsTypeId();
+	EReference getWebAnalyticsConfig_WebSite();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig#getWebAnalyticsCode <em>Web Analytics Code</em>}'.
@@ -794,15 +794,15 @@ public interface WebsitePackage extends EPackage {
 	EAttribute getWebAnalyticsType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.website.WebAnalyticsType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.website.WebAnalyticsType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.website.WebAnalyticsType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.content.website.WebAnalyticsType#getParentType()
 	 * @see #getWebAnalyticsType()
 	 * @generated
 	 */
-	EReference getWebAnalyticsType_ParentTypeId();
+	EReference getWebAnalyticsType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.content.website.WebSiteContent <em>Web Site Content</em>}'.
@@ -815,37 +815,37 @@ public interface WebsitePackage extends EPackage {
 	EClass getWebSiteContent();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getWebSiteId <em>Web Site Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getWebSite <em>Web Site</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Web Site Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.website.WebSiteContent#getWebSiteId()
+	 * @return the meta object for the reference '<em>Web Site</em>'.
+	 * @see org.abchip.mimo.biz.model.content.website.WebSiteContent#getWebSite()
 	 * @see #getWebSiteContent()
 	 * @generated
 	 */
-	EReference getWebSiteContent_WebSiteId();
+	EReference getWebSiteContent_WebSite();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getContentId <em>Content Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getContent <em>Content</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Content Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.website.WebSiteContent#getContentId()
+	 * @return the meta object for the reference '<em>Content</em>'.
+	 * @see org.abchip.mimo.biz.model.content.website.WebSiteContent#getContent()
 	 * @see #getWebSiteContent()
 	 * @generated
 	 */
-	EReference getWebSiteContent_ContentId();
+	EReference getWebSiteContent_Content();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getWebSiteContentTypeId <em>Web Site Content Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getWebSiteContentType <em>Web Site Content Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Web Site Content Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.website.WebSiteContent#getWebSiteContentTypeId()
+	 * @return the meta object for the reference '<em>Web Site Content Type</em>'.
+	 * @see org.abchip.mimo.biz.model.content.website.WebSiteContent#getWebSiteContentType()
 	 * @see #getWebSiteContent()
 	 * @generated
 	 */
-	EReference getWebSiteContent_WebSiteContentTypeId();
+	EReference getWebSiteContent_WebSiteContentType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.website.WebSiteContent#getFromDate <em>From Date</em>}'.
@@ -913,15 +913,15 @@ public interface WebsitePackage extends EPackage {
 	EAttribute getWebSiteContentType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.website.WebSiteContentType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.website.WebSiteContentType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.website.WebSiteContentType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.content.website.WebSiteContentType#getParentType()
 	 * @see #getWebSiteContentType()
 	 * @generated
 	 */
-	EReference getWebSiteContentType_ParentTypeId();
+	EReference getWebSiteContentType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias <em>Web Site Path Alias</em>}'.
@@ -934,15 +934,15 @@ public interface WebsitePackage extends EPackage {
 	EClass getWebSitePathAlias();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getWebSiteId <em>Web Site Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getWebSite <em>Web Site</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Web Site Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getWebSiteId()
+	 * @return the meta object for the reference '<em>Web Site</em>'.
+	 * @see org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getWebSite()
 	 * @see #getWebSitePathAlias()
 	 * @generated
 	 */
-	EReference getWebSitePathAlias_WebSiteId();
+	EReference getWebSitePathAlias_WebSite();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getPathAlias <em>Path Alias</em>}'.
@@ -978,15 +978,15 @@ public interface WebsitePackage extends EPackage {
 	EAttribute getWebSitePathAlias_AliasTo();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getContentId <em>Content Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getContent <em>Content</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Content Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getContentId()
+	 * @return the meta object for the reference '<em>Content</em>'.
+	 * @see org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getContent()
 	 * @see #getWebSitePathAlias()
 	 * @generated
 	 */
-	EReference getWebSitePathAlias_ContentId();
+	EReference getWebSitePathAlias_Content();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias#getMapKey <em>Map Key</em>}'.
@@ -1163,20 +1163,20 @@ public interface WebsitePackage extends EPackage {
 		EClass WEB_ANALYTICS_CONFIG = eINSTANCE.getWebAnalyticsConfig();
 
 		/**
-		 * The meta object literal for the '<em><b>Web Site Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Web Analytics Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WEB_ANALYTICS_CONFIG__WEB_SITE_ID = eINSTANCE.getWebAnalyticsConfig_WebSiteId();
+		EReference WEB_ANALYTICS_CONFIG__WEB_ANALYTICS_TYPE = eINSTANCE.getWebAnalyticsConfig_WebAnalyticsType();
 
 		/**
-		 * The meta object literal for the '<em><b>Web Analytics Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Web Site</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WEB_ANALYTICS_CONFIG__WEB_ANALYTICS_TYPE_ID = eINSTANCE.getWebAnalyticsConfig_WebAnalyticsTypeId();
+		EReference WEB_ANALYTICS_CONFIG__WEB_SITE = eINSTANCE.getWebAnalyticsConfig_WebSite();
 
 		/**
 		 * The meta object literal for the '<em><b>Web Analytics Code</b></em>' attribute feature.
@@ -1221,12 +1221,12 @@ public interface WebsitePackage extends EPackage {
 		EAttribute WEB_ANALYTICS_TYPE__HAS_TABLE = eINSTANCE.getWebAnalyticsType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WEB_ANALYTICS_TYPE__PARENT_TYPE_ID = eINSTANCE.getWebAnalyticsType_ParentTypeId();
+		EReference WEB_ANALYTICS_TYPE__PARENT_TYPE = eINSTANCE.getWebAnalyticsType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentImpl <em>Web Site Content</em>}' class.
@@ -1239,28 +1239,28 @@ public interface WebsitePackage extends EPackage {
 		EClass WEB_SITE_CONTENT = eINSTANCE.getWebSiteContent();
 
 		/**
-		 * The meta object literal for the '<em><b>Web Site Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Web Site</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WEB_SITE_CONTENT__WEB_SITE_ID = eINSTANCE.getWebSiteContent_WebSiteId();
+		EReference WEB_SITE_CONTENT__WEB_SITE = eINSTANCE.getWebSiteContent_WebSite();
 
 		/**
-		 * The meta object literal for the '<em><b>Content Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Content</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WEB_SITE_CONTENT__CONTENT_ID = eINSTANCE.getWebSiteContent_ContentId();
+		EReference WEB_SITE_CONTENT__CONTENT = eINSTANCE.getWebSiteContent_Content();
 
 		/**
-		 * The meta object literal for the '<em><b>Web Site Content Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Web Site Content Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WEB_SITE_CONTENT__WEB_SITE_CONTENT_TYPE_ID = eINSTANCE.getWebSiteContent_WebSiteContentTypeId();
+		EReference WEB_SITE_CONTENT__WEB_SITE_CONTENT_TYPE = eINSTANCE.getWebSiteContent_WebSiteContentType();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -1313,12 +1313,12 @@ public interface WebsitePackage extends EPackage {
 		EAttribute WEB_SITE_CONTENT_TYPE__HAS_TABLE = eINSTANCE.getWebSiteContentType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WEB_SITE_CONTENT_TYPE__PARENT_TYPE_ID = eINSTANCE.getWebSiteContentType_ParentTypeId();
+		EReference WEB_SITE_CONTENT_TYPE__PARENT_TYPE = eINSTANCE.getWebSiteContentType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.content.website.impl.WebSitePathAliasImpl <em>Web Site Path Alias</em>}' class.
@@ -1331,12 +1331,12 @@ public interface WebsitePackage extends EPackage {
 		EClass WEB_SITE_PATH_ALIAS = eINSTANCE.getWebSitePathAlias();
 
 		/**
-		 * The meta object literal for the '<em><b>Web Site Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Web Site</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WEB_SITE_PATH_ALIAS__WEB_SITE_ID = eINSTANCE.getWebSitePathAlias_WebSiteId();
+		EReference WEB_SITE_PATH_ALIAS__WEB_SITE = eINSTANCE.getWebSitePathAlias_WebSite();
 
 		/**
 		 * The meta object literal for the '<em><b>Path Alias</b></em>' attribute feature.
@@ -1363,12 +1363,12 @@ public interface WebsitePackage extends EPackage {
 		EAttribute WEB_SITE_PATH_ALIAS__ALIAS_TO = eINSTANCE.getWebSitePathAlias_AliasTo();
 
 		/**
-		 * The meta object literal for the '<em><b>Content Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Content</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WEB_SITE_PATH_ALIAS__CONTENT_ID = eINSTANCE.getWebSitePathAlias_ContentId();
+		EReference WEB_SITE_PATH_ALIAS__CONTENT = eINSTANCE.getWebSitePathAlias_Content();
 
 		/**
 		 * The meta object literal for the '<em><b>Map Key</b></em>' attribute feature.

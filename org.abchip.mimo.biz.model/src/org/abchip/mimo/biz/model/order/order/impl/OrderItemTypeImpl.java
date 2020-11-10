@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemTypeImpl#isHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemTypeImpl#getOrderItemTypeAttrs <em>Order Item Type Attrs</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -214,6 +214,26 @@ public class OrderItemTypeImpl extends EntityTypeImpl<OrderItem> implements Orde
 	 * @generated
 	 */
 	@Override
+	public OrderItemType getParentType() {
+		return (OrderItemType)eGet(OrderPackage.Literals.ORDER_ITEM_TYPE__PARENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParentType(OrderItemType newParentType) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_TYPE__PARENT_TYPE, newParentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getOrderItemTypeId() {
 		return (String)eGet(OrderPackage.Literals.ORDER_ITEM_TYPE__ORDER_ITEM_TYPE_ID, true);
 	}
@@ -226,26 +246,6 @@ public class OrderItemTypeImpl extends EntityTypeImpl<OrderItem> implements Orde
 	@Override
 	public void setOrderItemTypeId(String newOrderItemTypeId) {
 		eSet(OrderPackage.Literals.ORDER_ITEM_TYPE__ORDER_ITEM_TYPE_ID, newOrderItemTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderItemType getParentTypeId() {
-		return (OrderItemType)eGet(OrderPackage.Literals.ORDER_ITEM_TYPE__PARENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentTypeId(OrderItemType newParentTypeId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_TYPE__PARENT_TYPE_ID, newParentTypeId);
 	}
 
 	/**

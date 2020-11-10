@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeClass#getEmplPositionTypeId <em>Empl Position Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeClass#getEmplPositionClassTypeId <em>Empl Position Class Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeClass#getEmplPositionType <em>Empl Position Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeClass#getEmplPositionClassType <em>Empl Position Class Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeClass#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeClass#getStandardHoursPerWeek <em>Standard Hours Per Week</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeClass#getThruDate <em>Thru Date</em>}</li>
@@ -33,58 +33,50 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface EmplPositionTypeClass extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Empl Position Class Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Empl Position Class Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Empl Position Class Type Id</em>' reference.
-	 * @see #setEmplPositionClassTypeId(EmplPositionClassType)
-	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionTypeClass_EmplPositionClassTypeId()
-	 * @model keys="emplPositionClassTypeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	EmplPositionClassType getEmplPositionClassTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeClass#getEmplPositionClassTypeId <em>Empl Position Class Type Id</em>}' reference.
+	 * Returns the value of the '<em><b>Empl Position Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Empl Position Class Type Id</em>' reference.
-	 * @see #getEmplPositionClassTypeId()
-	 * @generated
-	 */
-	void setEmplPositionClassTypeId(EmplPositionClassType value);
-
-	/**
-	 * Returns the value of the '<em><b>Empl Position Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Empl Position Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Empl Position Type Id</em>' reference.
-	 * @see #setEmplPositionTypeId(EmplPositionType)
-	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionTypeClass_EmplPositionTypeId()
+	 * @return the value of the '<em>Empl Position Type</em>' reference.
+	 * @see #setEmplPositionType(EmplPositionType)
+	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionTypeClass_EmplPositionType()
 	 * @model keys="emplPositionTypeId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	EmplPositionType getEmplPositionTypeId();
+	EmplPositionType getEmplPositionType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeClass#getEmplPositionTypeId <em>Empl Position Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeClass#getEmplPositionType <em>Empl Position Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Empl Position Type Id</em>' reference.
-	 * @see #getEmplPositionTypeId()
+	 * @param value the new value of the '<em>Empl Position Type</em>' reference.
+	 * @see #getEmplPositionType()
 	 * @generated
 	 */
-	void setEmplPositionTypeId(EmplPositionType value);
+	void setEmplPositionType(EmplPositionType value);
+
+	/**
+	 * Returns the value of the '<em><b>Empl Position Class Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Empl Position Class Type</em>' reference.
+	 * @see #setEmplPositionClassType(EmplPositionClassType)
+	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionTypeClass_EmplPositionClassType()
+	 * @model keys="emplPositionClassTypeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	EmplPositionClassType getEmplPositionClassType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeClass#getEmplPositionClassType <em>Empl Position Class Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Empl Position Class Type</em>' reference.
+	 * @see #getEmplPositionClassType()
+	 * @generated
+	 */
+	void setEmplPositionClassType(EmplPositionClassType value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.

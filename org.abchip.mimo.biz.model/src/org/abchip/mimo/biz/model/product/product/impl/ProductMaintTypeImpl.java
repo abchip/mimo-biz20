@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintTypeImpl#getProductMaintTypeId <em>Product Maint Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -179,8 +179,8 @@ public class ProductMaintTypeImpl extends EntityTypeImpl<ProductMaint> implement
 	 * @generated
 	 */
 	@Override
-	public ProductMaintType getParentTypeId() {
-		return (ProductMaintType)eGet(ProductPackage.Literals.PRODUCT_MAINT_TYPE__PARENT_TYPE_ID, true);
+	public ProductMaintType getParentType() {
+		return (ProductMaintType)eGet(ProductPackage.Literals.PRODUCT_MAINT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -189,8 +189,8 @@ public class ProductMaintTypeImpl extends EntityTypeImpl<ProductMaint> implement
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(ProductMaintType newParentTypeId) {
-		eSet(ProductPackage.Literals.PRODUCT_MAINT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(ProductMaintType newParentType) {
+		eSet(ProductPackage.Literals.PRODUCT_MAINT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

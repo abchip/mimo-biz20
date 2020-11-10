@@ -29,25 +29,25 @@ import org.abchip.mimo.entity.EntityTyped;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getInvoiceId <em>Invoice Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getInvoice <em>Invoice</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getInvoiceItemSeqId <em>Invoice Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getAmount <em>Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getInventoryItemId <em>Inventory Item Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getInvoiceItemTypeId <em>Invoice Item Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getOverrideGlAccountId <em>Override Gl Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getOverrideOrgPartyId <em>Override Org Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getInventoryItem <em>Inventory Item</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getInvoiceItemType <em>Invoice Item Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getOverrideGlAccount <em>Override Gl Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getOverrideOrgParty <em>Override Org Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getParentInvoiceId <em>Parent Invoice Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getParentInvoiceItemSeqId <em>Parent Invoice Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getProductFeatureId <em>Product Feature Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getProductFeature <em>Product Feature</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getQuantity <em>Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getSalesOpportunityId <em>Sales Opportunity Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getTaxAuthPartyId <em>Tax Auth Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getTaxAuthorityRateSeqId <em>Tax Authority Rate Seq Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getSalesOpportunity <em>Sales Opportunity</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getTaxAuthGeo <em>Tax Auth Geo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getTaxAuthParty <em>Tax Auth Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getTaxAuthorityRateSeq <em>Tax Authority Rate Seq</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#isTaxableFlag <em>Taxable Flag</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getUomId <em>Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getUom <em>Uom</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem()
@@ -55,6 +55,29 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface InvoiceItem extends EntityTyped<InvoiceItemType>, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Invoice</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Invoice</em>' reference.
+	 * @see #setInvoice(Invoice)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_Invoice()
+	 * @model keys="invoiceId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Invoice getInvoice();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getInvoice <em>Invoice</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Invoice</em>' reference.
+	 * @see #getInvoice()
+	 * @generated
+	 */
+	void setInvoice(Invoice value);
+
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -108,30 +131,94 @@ public interface InvoiceItem extends EntityTyped<InvoiceItemType>, EntityInfo {
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Inventory Item Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Inventory Item</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Inventory Item Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Inventory Item Id</em>' reference.
-	 * @see #setInventoryItemId(InventoryItem)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_InventoryItemId()
+	 * @return the value of the '<em>Inventory Item</em>' reference.
+	 * @see #setInventoryItem(InventoryItem)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_InventoryItem()
 	 * @model keys="inventoryItemId"
 	 * @generated
 	 */
-	InventoryItem getInventoryItemId();
+	InventoryItem getInventoryItem();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getInventoryItemId <em>Inventory Item Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getInventoryItem <em>Inventory Item</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Inventory Item Id</em>' reference.
-	 * @see #getInventoryItemId()
+	 * @param value the new value of the '<em>Inventory Item</em>' reference.
+	 * @see #getInventoryItem()
 	 * @generated
 	 */
-	void setInventoryItemId(InventoryItem value);
+	void setInventoryItem(InventoryItem value);
+
+	/**
+	 * Returns the value of the '<em><b>Invoice Item Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Invoice Item Type</em>' reference.
+	 * @see #setInvoiceItemType(InvoiceItemType)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_InvoiceItemType()
+	 * @model keys="invoiceItemTypeId"
+	 * @generated
+	 */
+	InvoiceItemType getInvoiceItemType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getInvoiceItemType <em>Invoice Item Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Invoice Item Type</em>' reference.
+	 * @see #getInvoiceItemType()
+	 * @generated
+	 */
+	void setInvoiceItemType(InvoiceItemType value);
+
+	/**
+	 * Returns the value of the '<em><b>Override Gl Account</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Override Gl Account</em>' reference.
+	 * @see #setOverrideGlAccount(GlAccount)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_OverrideGlAccount()
+	 * @model keys="glAccountId"
+	 *        annotation="mimo-ent-slot help='used to specify the override or actual glAccountId used for the invoice, avoids problems if configuration changes after initial posting, etc'"
+	 * @generated
+	 */
+	GlAccount getOverrideGlAccount();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getOverrideGlAccount <em>Override Gl Account</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Override Gl Account</em>' reference.
+	 * @see #getOverrideGlAccount()
+	 * @generated
+	 */
+	void setOverrideGlAccount(GlAccount value);
+
+	/**
+	 * Returns the value of the '<em><b>Override Org Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Override Org Party</em>' reference.
+	 * @see #setOverrideOrgParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_OverrideOrgParty()
+	 * @model keys="partyId"
+	 *        annotation="mimo-ent-slot help='Used to specify the organization override rather than using the payToPartyId'"
+	 * @generated
+	 */
+	Party getOverrideOrgParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getOverrideOrgParty <em>Override Org Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Override Org Party</em>' reference.
+	 * @see #getOverrideOrgParty()
+	 * @generated
+	 */
+	void setOverrideOrgParty(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Invoice Item Seq Id</b></em>' attribute.
@@ -160,60 +247,6 @@ public interface InvoiceItem extends EntityTyped<InvoiceItemType>, EntityInfo {
 	 * @generated
 	 */
 	void setInvoiceItemSeqId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Override Gl Account Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Override Gl Account Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Override Gl Account Id</em>' reference.
-	 * @see #setOverrideGlAccountId(GlAccount)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_OverrideGlAccountId()
-	 * @model keys="glAccountId"
-	 *        annotation="mimo-ent-slot help='used to specify the override or actual glAccountId used for the invoice, avoids problems if configuration changes after initial posting, etc'"
-	 * @generated
-	 */
-	GlAccount getOverrideGlAccountId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getOverrideGlAccountId <em>Override Gl Account Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Override Gl Account Id</em>' reference.
-	 * @see #getOverrideGlAccountId()
-	 * @generated
-	 */
-	void setOverrideGlAccountId(GlAccount value);
-
-	/**
-	 * Returns the value of the '<em><b>Override Org Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Override Org Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Override Org Party Id</em>' reference.
-	 * @see #setOverrideOrgPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_OverrideOrgPartyId()
-	 * @model keys="partyId"
-	 *        annotation="mimo-ent-slot help='Used to specify the organization override rather than using the payToPartyId'"
-	 * @generated
-	 */
-	Party getOverrideOrgPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getOverrideOrgPartyId <em>Override Org Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Override Org Party Id</em>' reference.
-	 * @see #getOverrideOrgPartyId()
-	 * @generated
-	 */
-	void setOverrideOrgPartyId(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Parent Invoice Id</b></em>' attribute.
@@ -268,56 +301,48 @@ public interface InvoiceItem extends EntityTyped<InvoiceItemType>, EntityInfo {
 	void setParentInvoiceItemSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Feature Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Feature Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Feature Id</em>' reference.
-	 * @see #setProductFeatureId(ProductFeature)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_ProductFeatureId()
-	 * @model keys="productFeatureId"
-	 * @generated
-	 */
-	ProductFeature getProductFeatureId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getProductFeatureId <em>Product Feature Id</em>}' reference.
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Feature Id</em>' reference.
-	 * @see #getProductFeatureId()
-	 * @generated
-	 */
-	void setProductFeatureId(ProductFeature value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_ProductId()
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_Product()
 	 * @model keys="productId"
 	 * @generated
 	 */
-	Product getProductId();
+	Product getProduct();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getProductId <em>Product Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getProduct <em>Product</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
 	 * @generated
 	 */
-	void setProductId(Product value);
+	void setProduct(Product value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Feature</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Feature</em>' reference.
+	 * @see #setProductFeature(ProductFeature)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_ProductFeature()
+	 * @model keys="productFeatureId"
+	 * @generated
+	 */
+	ProductFeature getProductFeature();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getProductFeature <em>Product Feature</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Feature</em>' reference.
+	 * @see #getProductFeature()
+	 * @generated
+	 */
+	void setProductFeature(ProductFeature value);
 
 	/**
 	 * Returns the value of the '<em><b>Quantity</b></em>' attribute.
@@ -346,6 +371,94 @@ public interface InvoiceItem extends EntityTyped<InvoiceItemType>, EntityInfo {
 	void setQuantity(BigDecimal value);
 
 	/**
+	 * Returns the value of the '<em><b>Sales Opportunity</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Sales Opportunity</em>' reference.
+	 * @see #setSalesOpportunity(SalesOpportunity)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_SalesOpportunity()
+	 * @model keys="salesOpportunityId"
+	 * @generated
+	 */
+	SalesOpportunity getSalesOpportunity();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getSalesOpportunity <em>Sales Opportunity</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Sales Opportunity</em>' reference.
+	 * @see #getSalesOpportunity()
+	 * @generated
+	 */
+	void setSalesOpportunity(SalesOpportunity value);
+
+	/**
+	 * Returns the value of the '<em><b>Tax Auth Geo</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tax Auth Geo</em>' reference.
+	 * @see #setTaxAuthGeo(Geo)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_TaxAuthGeo()
+	 * @model keys="geoId"
+	 * @generated
+	 */
+	Geo getTaxAuthGeo();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getTaxAuthGeo <em>Tax Auth Geo</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tax Auth Geo</em>' reference.
+	 * @see #getTaxAuthGeo()
+	 * @generated
+	 */
+	void setTaxAuthGeo(Geo value);
+
+	/**
+	 * Returns the value of the '<em><b>Tax Auth Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tax Auth Party</em>' reference.
+	 * @see #setTaxAuthParty(Party)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_TaxAuthParty()
+	 * @model keys="partyId"
+	 * @generated
+	 */
+	Party getTaxAuthParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getTaxAuthParty <em>Tax Auth Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tax Auth Party</em>' reference.
+	 * @see #getTaxAuthParty()
+	 * @generated
+	 */
+	void setTaxAuthParty(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Tax Authority Rate Seq</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tax Authority Rate Seq</em>' reference.
+	 * @see #setTaxAuthorityRateSeq(TaxAuthorityRateProduct)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_TaxAuthorityRateSeq()
+	 * @model keys="taxAuthorityRateSeqId"
+	 * @generated
+	 */
+	TaxAuthorityRateProduct getTaxAuthorityRateSeq();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getTaxAuthorityRateSeq <em>Tax Authority Rate Seq</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tax Authority Rate Seq</em>' reference.
+	 * @see #getTaxAuthorityRateSeq()
+	 * @generated
+	 */
+	void setTaxAuthorityRateSeq(TaxAuthorityRateProduct value);
+
+	/**
 	 * Returns the value of the '<em><b>Taxable Flag</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -372,186 +485,25 @@ public interface InvoiceItem extends EntityTyped<InvoiceItemType>, EntityInfo {
 	void setTaxableFlag(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Sales Opportunity Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sales Opportunity Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Sales Opportunity Id</em>' reference.
-	 * @see #setSalesOpportunityId(SalesOpportunity)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_SalesOpportunityId()
-	 * @model keys="salesOpportunityId"
-	 * @generated
-	 */
-	SalesOpportunity getSalesOpportunityId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getSalesOpportunityId <em>Sales Opportunity Id</em>}' reference.
+	 * Returns the value of the '<em><b>Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Sales Opportunity Id</em>' reference.
-	 * @see #getSalesOpportunityId()
-	 * @generated
-	 */
-	void setSalesOpportunityId(SalesOpportunity value);
-
-	/**
-	 * Returns the value of the '<em><b>Tax Auth Geo Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tax Auth Geo Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tax Auth Geo Id</em>' reference.
-	 * @see #setTaxAuthGeoId(Geo)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_TaxAuthGeoId()
-	 * @model keys="geoId"
-	 * @generated
-	 */
-	Geo getTaxAuthGeoId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tax Auth Geo Id</em>' reference.
-	 * @see #getTaxAuthGeoId()
-	 * @generated
-	 */
-	void setTaxAuthGeoId(Geo value);
-
-	/**
-	 * Returns the value of the '<em><b>Tax Auth Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tax Auth Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tax Auth Party Id</em>' reference.
-	 * @see #setTaxAuthPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_TaxAuthPartyId()
-	 * @model keys="partyId"
-	 * @generated
-	 */
-	Party getTaxAuthPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getTaxAuthPartyId <em>Tax Auth Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tax Auth Party Id</em>' reference.
-	 * @see #getTaxAuthPartyId()
-	 * @generated
-	 */
-	void setTaxAuthPartyId(Party value);
-
-	/**
-	 * Returns the value of the '<em><b>Tax Authority Rate Seq Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tax Authority Rate Seq Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tax Authority Rate Seq Id</em>' reference.
-	 * @see #setTaxAuthorityRateSeqId(TaxAuthorityRateProduct)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_TaxAuthorityRateSeqId()
-	 * @model keys="taxAuthorityRateSeqId"
-	 * @generated
-	 */
-	TaxAuthorityRateProduct getTaxAuthorityRateSeqId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getTaxAuthorityRateSeqId <em>Tax Authority Rate Seq Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tax Authority Rate Seq Id</em>' reference.
-	 * @see #getTaxAuthorityRateSeqId()
-	 * @generated
-	 */
-	void setTaxAuthorityRateSeqId(TaxAuthorityRateProduct value);
-
-	/**
-	 * Returns the value of the '<em><b>Uom Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Uom Id</em>' reference.
-	 * @see #setUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_UomId()
+	 * @return the value of the '<em>Uom</em>' reference.
+	 * @see #setUom(Uom)
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_Uom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getUomId();
+	Uom getUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getUomId <em>Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getUom <em>Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Uom Id</em>' reference.
-	 * @see #getUomId()
+	 * @param value the new value of the '<em>Uom</em>' reference.
+	 * @see #getUom()
 	 * @generated
 	 */
-	void setUomId(Uom value);
-
-	/**
-	 * Returns the value of the '<em><b>Invoice Item Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Item Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Invoice Item Type Id</em>' reference.
-	 * @see #setInvoiceItemTypeId(InvoiceItemType)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_InvoiceItemTypeId()
-	 * @model keys="invoiceItemTypeId"
-	 * @generated
-	 */
-	InvoiceItemType getInvoiceItemTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getInvoiceItemTypeId <em>Invoice Item Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Invoice Item Type Id</em>' reference.
-	 * @see #getInvoiceItemTypeId()
-	 * @generated
-	 */
-	void setInvoiceItemTypeId(InvoiceItemType value);
-
-	/**
-	 * Returns the value of the '<em><b>Invoice Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Invoice Id</em>' reference.
-	 * @see #setInvoiceId(Invoice)
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_InvoiceId()
-	 * @model keys="invoiceId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Invoice getInvoiceId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem#getInvoiceId <em>Invoice Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Invoice Id</em>' reference.
-	 * @see #getInvoiceId()
-	 * @generated
-	 */
-	void setInvoiceId(Invoice value);
+	void setUom(Uom value);
 
 } // InvoiceItem

@@ -41,15 +41,15 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getBudgetItemSeqId <em>Budget Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getEmplPositionFulfillments <em>Empl Position Fulfillments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getEmplPositionResponsibilities <em>Empl Position Responsibilities</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getEmplPositionTypeId <em>Empl Position Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getEmplPositionType <em>Empl Position Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getEstimatedFromDate <em>Estimated From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getEstimatedThruDate <em>Estimated Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#isExemptFlag <em>Exempt Flag</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#isFulltimeFlag <em>Fulltime Flag</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getReportingToEmplPositionReportingStructs <em>Reporting To Empl Position Reporting Structs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#isSalaryFlag <em>Salary Flag</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#isTemporaryFlag <em>Temporary Flag</em>}</li>
  * </ul>
  *
@@ -274,6 +274,26 @@ public class EmplPositionImpl extends EntityTypedImpl<EmplPositionType> implemen
 	 * @generated
 	 */
 	@Override
+	public EmplPositionType getEmplPositionType() {
+		return (EmplPositionType)eGet(PositionPackage.Literals.EMPL_POSITION__EMPL_POSITION_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEmplPositionType(EmplPositionType newEmplPositionType) {
+		eSet(PositionPackage.Literals.EMPL_POSITION__EMPL_POSITION_TYPE, newEmplPositionType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEmplPositionId() {
 		return (String)eGet(PositionPackage.Literals.EMPL_POSITION__EMPL_POSITION_ID, true);
 	}
@@ -286,26 +306,6 @@ public class EmplPositionImpl extends EntityTypedImpl<EmplPositionType> implemen
 	@Override
 	public void setEmplPositionId(String newEmplPositionId) {
 		eSet(PositionPackage.Literals.EMPL_POSITION__EMPL_POSITION_ID, newEmplPositionId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EmplPositionType getEmplPositionTypeId() {
-		return (EmplPositionType)eGet(PositionPackage.Literals.EMPL_POSITION__EMPL_POSITION_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setEmplPositionTypeId(EmplPositionType newEmplPositionTypeId) {
-		eSet(PositionPackage.Literals.EMPL_POSITION__EMPL_POSITION_TYPE_ID, newEmplPositionTypeId);
 	}
 
 	/**
@@ -394,8 +394,8 @@ public class EmplPositionImpl extends EntityTypedImpl<EmplPositionType> implemen
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(PositionPackage.Literals.EMPL_POSITION__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(PositionPackage.Literals.EMPL_POSITION__PARTY, true);
 	}
 
 	/**
@@ -404,8 +404,8 @@ public class EmplPositionImpl extends EntityTypedImpl<EmplPositionType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(PositionPackage.Literals.EMPL_POSITION__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(PositionPackage.Literals.EMPL_POSITION__PARTY, newParty);
 	}
 
 	/**
@@ -445,8 +445,8 @@ public class EmplPositionImpl extends EntityTypedImpl<EmplPositionType> implemen
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(PositionPackage.Literals.EMPL_POSITION__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(PositionPackage.Literals.EMPL_POSITION__STATUS, true);
 	}
 
 	/**
@@ -455,8 +455,8 @@ public class EmplPositionImpl extends EntityTypedImpl<EmplPositionType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(PositionPackage.Literals.EMPL_POSITION__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(PositionPackage.Literals.EMPL_POSITION__STATUS, newStatus);
 	}
 
 	/**

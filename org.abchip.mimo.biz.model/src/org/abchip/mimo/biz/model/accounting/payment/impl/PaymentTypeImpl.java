@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentTypeImpl#getPaymentTypeId <em>Payment Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentTypeImpl#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentTypeImpl#getPaymentGlAccountTypeMaps <em>Payment Gl Account Type Maps</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentTypeImpl#getPaymentTypeAttrs <em>Payment Type Attrs</em>}</li>
  * </ul>
@@ -204,8 +204,8 @@ public class PaymentTypeImpl extends EntityTypeImpl<Payment> implements PaymentT
 	 * @generated
 	 */
 	@Override
-	public PaymentType getParentTypeId() {
-		return (PaymentType)eGet(PaymentPackage.Literals.PAYMENT_TYPE__PARENT_TYPE_ID, true);
+	public PaymentType getParentType() {
+		return (PaymentType)eGet(PaymentPackage.Literals.PAYMENT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -214,8 +214,8 @@ public class PaymentTypeImpl extends EntityTypeImpl<Payment> implements PaymentT
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(PaymentType newParentTypeId) {
-		eSet(PaymentPackage.Literals.PAYMENT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(PaymentType newParentType) {
+		eSet(PaymentPackage.Literals.PAYMENT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

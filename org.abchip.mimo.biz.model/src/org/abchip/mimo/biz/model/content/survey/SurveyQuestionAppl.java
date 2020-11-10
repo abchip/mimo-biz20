@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSurveyId <em>Survey Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSurveyQuestionId <em>Survey Question Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSurvey <em>Survey</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSurveyQuestion <em>Survey Question</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getExternalFieldRef <em>External Field Ref</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getRequiredField <em>Required Field</em>}</li>
@@ -39,6 +39,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface SurveyQuestionAppl extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Survey</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Survey</em>' reference.
+	 * @see #setSurvey(Survey)
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestionAppl_Survey()
+	 * @model keys="surveyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Survey getSurvey();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSurvey <em>Survey</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Survey</em>' reference.
+	 * @see #getSurvey()
+	 * @generated
+	 */
+	void setSurvey(Survey value);
+
+	/**
+	 * Returns the value of the '<em><b>Survey Question</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Survey Question</em>' reference.
+	 * @see #setSurveyQuestion(SurveyQuestion)
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestionAppl_SurveyQuestion()
+	 * @model keys="surveyQuestionId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	SurveyQuestion getSurveyQuestion();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSurveyQuestion <em>Survey Question</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Survey Question</em>' reference.
+	 * @see #getSurveyQuestion()
+	 * @generated
+	 */
+	void setSurveyQuestion(SurveyQuestion value);
+
 	/**
 	 * Returns the value of the '<em><b>External Field Ref</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -142,33 +188,6 @@ public interface SurveyQuestionAppl extends EntityIdentifiable, EntityInfo {
 	void setSequenceNum(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Survey Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Survey Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Survey Id</em>' reference.
-	 * @see #setSurveyId(Survey)
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestionAppl_SurveyId()
-	 * @model keys="surveyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Survey getSurveyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSurveyId <em>Survey Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Survey Id</em>' reference.
-	 * @see #getSurveyId()
-	 * @generated
-	 */
-	void setSurveyId(Survey value);
-
-	/**
 	 * Returns the value of the '<em><b>Survey Multi Resp Col Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -246,33 +265,6 @@ public interface SurveyQuestionAppl extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setSurveyPageSeqId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Survey Question Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Survey Question Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Survey Question Id</em>' reference.
-	 * @see #setSurveyQuestionId(SurveyQuestion)
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestionAppl_SurveyQuestionId()
-	 * @model keys="surveyQuestionId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	SurveyQuestion getSurveyQuestionId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSurveyQuestionId <em>Survey Question Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Survey Question Id</em>' reference.
-	 * @see #getSurveyQuestionId()
-	 * @generated
-	 */
-	void setSurveyQuestionId(SurveyQuestion value);
 
 	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.

@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.datasource.impl.DataSourceImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.datasource.impl.DataSourceImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.datasource.impl.DataSourceImpl#getDataSourceId <em>Data Source Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.datasource.impl.DataSourceImpl#getDataSourceTypeId <em>Data Source Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.datasource.impl.DataSourceImpl#getDataSourceType <em>Data Source Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.datasource.impl.DataSourceImpl#getDescription <em>Description</em>}</li>
  * </ul>
  *
@@ -171,6 +171,26 @@ public class DataSourceImpl extends EntityTypedImpl<DataSourceType> implements D
 	 * @generated
 	 */
 	@Override
+	public DataSourceType getDataSourceType() {
+		return (DataSourceType)eGet(DatasourcePackage.Literals.DATA_SOURCE__DATA_SOURCE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDataSourceType(DataSourceType newDataSourceType) {
+		eSet(DatasourcePackage.Literals.DATA_SOURCE__DATA_SOURCE_TYPE, newDataSourceType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(DatasourcePackage.Literals.DATA_SOURCE__DESCRIPTION, true);
 	}
@@ -221,26 +241,6 @@ public class DataSourceImpl extends EntityTypedImpl<DataSourceType> implements D
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DataSourceType getDataSourceTypeId() {
-		return (DataSourceType)eGet(DatasourcePackage.Literals.DATA_SOURCE__DATA_SOURCE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDataSourceTypeId(DataSourceType newDataSourceTypeId) {
-		eSet(DatasourcePackage.Literals.DATA_SOURCE__DATA_SOURCE_TYPE_ID, newDataSourceTypeId);
 	}
 
 } //DataSourceImpl

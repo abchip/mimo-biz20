@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlJournalImpl#getGlJournalId <em>Gl Journal Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlJournalImpl#getGlJournalName <em>Gl Journal Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlJournalImpl#getIsPosted <em>Is Posted</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlJournalImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlJournalImpl#getOrganizationParty <em>Organization Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlJournalImpl#getPostedDate <em>Posted Date</em>}</li>
  * </ul>
  *
@@ -193,8 +193,8 @@ public class GlJournalImpl extends EntityIdentifiableImpl implements GlJournal {
 	 * @generated
 	 */
 	@Override
-	public Party getOrganizationPartyId() {
-		return (Party)eGet(LedgerPackage.Literals.GL_JOURNAL__ORGANIZATION_PARTY_ID, true);
+	public Party getOrganizationParty() {
+		return (Party)eGet(LedgerPackage.Literals.GL_JOURNAL__ORGANIZATION_PARTY, true);
 	}
 
 	/**
@@ -203,8 +203,8 @@ public class GlJournalImpl extends EntityIdentifiableImpl implements GlJournal {
 	 * @generated
 	 */
 	@Override
-	public void setOrganizationPartyId(Party newOrganizationPartyId) {
-		eSet(LedgerPackage.Literals.GL_JOURNAL__ORGANIZATION_PARTY_ID, newOrganizationPartyId);
+	public void setOrganizationParty(Party newOrganizationParty) {
+		eSet(LedgerPackage.Literals.GL_JOURNAL__ORGANIZATION_PARTY, newOrganizationParty);
 	}
 
 	/**

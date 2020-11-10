@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.screen.impl.CustomScreenImpl#getCustomScreenId <em>Custom Screen Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.screen.impl.CustomScreenImpl#getCustomScreenLocation <em>Custom Screen Location</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.screen.impl.CustomScreenImpl#getCustomScreenName <em>Custom Screen Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.screen.impl.CustomScreenImpl#getCustomScreenTypeId <em>Custom Screen Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.screen.impl.CustomScreenImpl#getCustomScreenType <em>Custom Screen Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.screen.impl.CustomScreenImpl#getDescription <em>Description</em>}</li>
  * </ul>
  *
@@ -214,8 +214,8 @@ public class CustomScreenImpl extends EntityTypedImpl<CustomScreenType> implemen
 	 * @generated
 	 */
 	@Override
-	public CustomScreenType getCustomScreenTypeId() {
-		return (CustomScreenType)eGet(ScreenPackage.Literals.CUSTOM_SCREEN__CUSTOM_SCREEN_TYPE_ID, true);
+	public CustomScreenType getCustomScreenType() {
+		return (CustomScreenType)eGet(ScreenPackage.Literals.CUSTOM_SCREEN__CUSTOM_SCREEN_TYPE, true);
 	}
 
 	/**
@@ -224,8 +224,8 @@ public class CustomScreenImpl extends EntityTypedImpl<CustomScreenType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setCustomScreenTypeId(CustomScreenType newCustomScreenTypeId) {
-		eSet(ScreenPackage.Literals.CUSTOM_SCREEN__CUSTOM_SCREEN_TYPE_ID, newCustomScreenTypeId);
+	public void setCustomScreenType(CustomScreenType newCustomScreenType) {
+		eSet(ScreenPackage.Literals.CUSTOM_SCREEN__CUSTOM_SCREEN_TYPE, newCustomScreenType);
 	}
 
 	/**

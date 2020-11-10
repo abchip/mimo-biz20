@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupGeoImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupGeoImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupGeoImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupGeoImpl#getSegmentGroupId <em>Segment Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupGeoImpl#getGeoId <em>Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupGeoImpl#getSegmentGroup <em>Segment Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupGeoImpl#getGeo <em>Geo</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class SegmentGroupGeoImpl extends EntityIdentifiableImpl implements Segme
 	 * @generated
 	 */
 	@Override
-	public Geo getGeoId() {
-		return (Geo)eGet(SegmentPackage.Literals.SEGMENT_GROUP_GEO__GEO_ID, true);
+	public SegmentGroup getSegmentGroup() {
+		return (SegmentGroup)eGet(SegmentPackage.Literals.SEGMENT_GROUP_GEO__SEGMENT_GROUP, true);
 	}
 
 	/**
@@ -162,8 +162,28 @@ public class SegmentGroupGeoImpl extends EntityIdentifiableImpl implements Segme
 	 * @generated
 	 */
 	@Override
-	public void setGeoId(Geo newGeoId) {
-		eSet(SegmentPackage.Literals.SEGMENT_GROUP_GEO__GEO_ID, newGeoId);
+	public void setSegmentGroup(SegmentGroup newSegmentGroup) {
+		eSet(SegmentPackage.Literals.SEGMENT_GROUP_GEO__SEGMENT_GROUP, newSegmentGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Geo getGeo() {
+		return (Geo)eGet(SegmentPackage.Literals.SEGMENT_GROUP_GEO__GEO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGeo(Geo newGeo) {
+		eSet(SegmentPackage.Literals.SEGMENT_GROUP_GEO__GEO, newGeo);
 	}
 
 	/**
@@ -202,26 +222,6 @@ public class SegmentGroupGeoImpl extends EntityIdentifiableImpl implements Segme
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SegmentGroup getSegmentGroupId() {
-		return (SegmentGroup)eGet(SegmentPackage.Literals.SEGMENT_GROUP_GEO__SEGMENT_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSegmentGroupId(SegmentGroup newSegmentGroupId) {
-		eSet(SegmentPackage.Literals.SEGMENT_GROUP_GEO__SEGMENT_GROUP_ID, newSegmentGroupId);
 	}
 
 } //SegmentGroupGeoImpl

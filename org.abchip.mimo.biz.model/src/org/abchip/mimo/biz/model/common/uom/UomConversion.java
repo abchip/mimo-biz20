@@ -20,10 +20,10 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversion#getUomId <em>Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversion#getUom <em>Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversion#getUomIdTo <em>Uom Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversion#getConversionFactor <em>Conversion Factor</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversion#getCustomMethodId <em>Custom Method Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversion#getCustomMethod <em>Custom Method</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversion#getDecimalScale <em>Decimal Scale</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.UomConversion#getRoundingMode <em>Rounding Mode</em>}</li>
  * </ul>
@@ -33,6 +33,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface UomConversion extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Uom</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Uom</em>' reference.
+	 * @see #setUom(Uom)
+	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUomConversion_Uom()
+	 * @model keys="uomId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Uom getUom();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.uom.UomConversion#getUom <em>Uom</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Uom</em>' reference.
+	 * @see #getUom()
+	 * @generated
+	 */
+	void setUom(Uom value);
+
 	/**
 	 * Returns the value of the '<em><b>Conversion Factor</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -58,6 +81,28 @@ public interface UomConversion extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setConversionFactor(double value);
+
+	/**
+	 * Returns the value of the '<em><b>Custom Method</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Custom Method</em>' reference.
+	 * @see #setCustomMethod(CustomMethod)
+	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUomConversion_CustomMethod()
+	 * @model keys="customMethodId"
+	 * @generated
+	 */
+	CustomMethod getCustomMethod();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.uom.UomConversion#getCustomMethod <em>Custom Method</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Custom Method</em>' reference.
+	 * @see #getCustomMethod()
+	 * @generated
+	 */
+	void setCustomMethod(CustomMethod value);
 
 	/**
 	 * Returns the value of the '<em><b>Decimal Scale</b></em>' attribute.
@@ -112,33 +157,6 @@ public interface UomConversion extends EntityIdentifiable, EntityInfo {
 	void setRoundingMode(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Uom Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uom Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Uom Id</em>' reference.
-	 * @see #setUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUomConversion_UomId()
-	 * @model keys="uomId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Uom getUomId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.uom.UomConversion#getUomId <em>Uom Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Uom Id</em>' reference.
-	 * @see #getUomId()
-	 * @generated
-	 */
-	void setUomId(Uom value);
-
-	/**
 	 * Returns the value of the '<em><b>Uom Id To</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -164,31 +182,5 @@ public interface UomConversion extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setUomIdTo(Uom value);
-
-	/**
-	 * Returns the value of the '<em><b>Custom Method Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Custom Method Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Custom Method Id</em>' reference.
-	 * @see #setCustomMethodId(CustomMethod)
-	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUomConversion_CustomMethodId()
-	 * @model keys="customMethodId"
-	 * @generated
-	 */
-	CustomMethod getCustomMethodId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.uom.UomConversion#getCustomMethodId <em>Custom Method Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Custom Method Id</em>' reference.
-	 * @see #getCustomMethodId()
-	 * @generated
-	 */
-	void setCustomMethodId(CustomMethod value);
 
 } // UomConversion

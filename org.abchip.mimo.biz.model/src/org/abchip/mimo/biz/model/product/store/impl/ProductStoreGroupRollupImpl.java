@@ -28,8 +28,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupRollupImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupRollupImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupRollupImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupRollupImpl#getProductStoreGroupId <em>Product Store Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupRollupImpl#getParentGroupId <em>Parent Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupRollupImpl#getProductStoreGroup <em>Product Store Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupRollupImpl#getParentGroup <em>Parent Group</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupRollupImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupRollupImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupRollupImpl#getThruDate <em>Thru Date</em>}</li>
@@ -154,6 +154,46 @@ public class ProductStoreGroupRollupImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
+	public ProductStoreGroup getProductStoreGroup() {
+		return (ProductStoreGroup)eGet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLLUP__PRODUCT_STORE_GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductStoreGroup(ProductStoreGroup newProductStoreGroup) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLLUP__PRODUCT_STORE_GROUP, newProductStoreGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductStoreGroup getParentGroup() {
+		return (ProductStoreGroup)eGet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLLUP__PARENT_GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParentGroup(ProductStoreGroup newParentGroup) {
+		eSet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLLUP__PARENT_GROUP, newParentGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLLUP__FROM_DATE, true);
 	}
@@ -244,46 +284,6 @@ public class ProductStoreGroupRollupImpl extends EntityIdentifiableImpl implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductStoreGroup getProductStoreGroupId() {
-		return (ProductStoreGroup)eGet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLLUP__PRODUCT_STORE_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductStoreGroupId(ProductStoreGroup newProductStoreGroupId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLLUP__PRODUCT_STORE_GROUP_ID, newProductStoreGroupId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductStoreGroup getParentGroupId() {
-		return (ProductStoreGroup)eGet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLLUP__PARENT_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentGroupId(ProductStoreGroup newParentGroupId) {
-		eSet(StorePackage.Literals.PRODUCT_STORE_GROUP_ROLLUP__PARENT_GROUP_ID, newParentGroupId);
 	}
 
 } //ProductStoreGroupRollupImpl

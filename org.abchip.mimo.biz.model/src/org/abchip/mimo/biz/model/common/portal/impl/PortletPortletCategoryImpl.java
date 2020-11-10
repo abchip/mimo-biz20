@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortletPortletCategoryImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortletPortletCategoryImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortletPortletCategoryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortletPortletCategoryImpl#getPortalPortletId <em>Portal Portlet Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortletPortletCategoryImpl#getPortletCategoryId <em>Portlet Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortletPortletCategoryImpl#getPortalPortlet <em>Portal Portlet</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortletPortletCategoryImpl#getPortletCategory <em>Portlet Category</em>}</li>
  * </ul>
  *
  * @generated
@@ -151,8 +151,8 @@ public class PortletPortletCategoryImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public PortalPortlet getPortalPortletId() {
-		return (PortalPortlet)eGet(PortalPackage.Literals.PORTLET_PORTLET_CATEGORY__PORTAL_PORTLET_ID, true);
+	public PortalPortlet getPortalPortlet() {
+		return (PortalPortlet)eGet(PortalPackage.Literals.PORTLET_PORTLET_CATEGORY__PORTAL_PORTLET, true);
 	}
 
 	/**
@@ -161,8 +161,8 @@ public class PortletPortletCategoryImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setPortalPortletId(PortalPortlet newPortalPortletId) {
-		eSet(PortalPackage.Literals.PORTLET_PORTLET_CATEGORY__PORTAL_PORTLET_ID, newPortalPortletId);
+	public void setPortalPortlet(PortalPortlet newPortalPortlet) {
+		eSet(PortalPackage.Literals.PORTLET_PORTLET_CATEGORY__PORTAL_PORTLET, newPortalPortlet);
 	}
 
 	/**
@@ -171,8 +171,8 @@ public class PortletPortletCategoryImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public PortletCategory getPortletCategoryId() {
-		return (PortletCategory)eGet(PortalPackage.Literals.PORTLET_PORTLET_CATEGORY__PORTLET_CATEGORY_ID, true);
+	public PortletCategory getPortletCategory() {
+		return (PortletCategory)eGet(PortalPackage.Literals.PORTLET_PORTLET_CATEGORY__PORTLET_CATEGORY, true);
 	}
 
 	/**
@@ -181,8 +181,8 @@ public class PortletPortletCategoryImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setPortletCategoryId(PortletCategory newPortletCategoryId) {
-		eSet(PortalPackage.Literals.PORTLET_PORTLET_CATEGORY__PORTLET_CATEGORY_ID, newPortletCategoryId);
+	public void setPortletCategory(PortletCategory newPortletCategory) {
+		eSet(PortalPackage.Literals.PORTLET_PORTLET_CATEGORY__PORTLET_CATEGORY, newPortletCategory);
 	}
 
 	/**

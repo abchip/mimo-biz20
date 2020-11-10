@@ -713,7 +713,7 @@ public class ScreenPackageImpl extends EPackageImpl implements ScreenPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCustomScreen_CustomScreenTypeId() {
+	public EReference getCustomScreen_CustomScreenType() {
 		return (EReference)customScreenEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -810,7 +810,7 @@ public class ScreenPackageImpl extends EPackageImpl implements ScreenPackage {
 		createEAttribute(customScreenEClass, CUSTOM_SCREEN__CUSTOM_SCREEN_ID);
 		createEAttribute(customScreenEClass, CUSTOM_SCREEN__CUSTOM_SCREEN_LOCATION);
 		createEAttribute(customScreenEClass, CUSTOM_SCREEN__CUSTOM_SCREEN_NAME);
-		createEReference(customScreenEClass, CUSTOM_SCREEN__CUSTOM_SCREEN_TYPE_ID);
+		createEReference(customScreenEClass, CUSTOM_SCREEN__CUSTOM_SCREEN_TYPE);
 		createEAttribute(customScreenEClass, CUSTOM_SCREEN__DESCRIPTION);
 
 		customScreenTypeEClass = createEClass(CUSTOM_SCREEN_TYPE);
@@ -869,8 +869,8 @@ public class ScreenPackageImpl extends EPackageImpl implements ScreenPackage {
 		initEAttribute(getCustomScreen_CustomScreenId(), ecorePackage.getEString(), "customScreenId", null, 1, 1, CustomScreen.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustomScreen_CustomScreenLocation(), ecorePackage.getEString(), "customScreenLocation", null, 0, 1, CustomScreen.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustomScreen_CustomScreenName(), ecorePackage.getEString(), "customScreenName", null, 0, 1, CustomScreen.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCustomScreen_CustomScreenTypeId(), this.getCustomScreenType(), null, "customScreenTypeId", null, 0, 1, CustomScreen.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustomScreen_CustomScreenTypeId().getEKeys().add(this.getCustomScreenType_CustomScreenTypeId());
+		initEReference(getCustomScreen_CustomScreenType(), this.getCustomScreenType(), null, "customScreenType", null, 0, 1, CustomScreen.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getCustomScreen_CustomScreenType().getEKeys().add(this.getCustomScreenType_CustomScreenTypeId());
 		initEAttribute(getCustomScreen_Description(), ecorePackage.getEString(), "description", null, 0, 1, CustomScreen.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(customScreenTypeEClass, CustomScreenType.class, "CustomScreenType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

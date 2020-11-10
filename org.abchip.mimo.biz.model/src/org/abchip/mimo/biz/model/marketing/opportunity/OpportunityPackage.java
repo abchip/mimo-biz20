@@ -135,31 +135,31 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_FORECAST__CLOSED_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Created By User Login Id</b></em>' reference.
+	 * The feature id for the '<em><b>Created By User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__CREATED_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int SALES_FORECAST__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Currency Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__CURRENCY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int SALES_FORECAST__CURRENCY_UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Custom Time Period Id</b></em>' reference.
+	 * The feature id for the '<em><b>Custom Time Period</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__CUSTOM_TIME_PERIOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int SALES_FORECAST__CUSTOM_TIME_PERIOD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Forecast Amount</b></em>' attribute.
@@ -171,40 +171,40 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_FORECAST__FORECAST_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Internal Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Internal Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__INTERNAL_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int SALES_FORECAST__INTERNAL_PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
-	 * The feature id for the '<em><b>Modified By User Login Id</b></em>' reference.
+	 * The feature id for the '<em><b>Modified By User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__MODIFIED_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
+	int SALES_FORECAST__MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
-	 * The feature id for the '<em><b>Organization Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Organization Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
+	int SALES_FORECAST__ORGANIZATION_PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
-	 * The feature id for the '<em><b>Parent Sales Forecast Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Sales Forecast</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__PARENT_SALES_FORECAST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
+	int SALES_FORECAST__PARENT_SALES_FORECAST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Percent Of Quota Closed</b></em>' attribute.
@@ -307,13 +307,13 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_FORECAST_DETAIL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Sales Forecast Id</b></em>' reference.
+	 * The feature id for the '<em><b>Sales Forecast</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_DETAIL__SALES_FORECAST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SALES_FORECAST_DETAIL__SALES_FORECAST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Sales Forecast Detail Id</b></em>' attribute.
@@ -334,22 +334,22 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_FORECAST_DETAIL__AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_DETAIL__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int SALES_FORECAST_DETAIL__PRODUCT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_DETAIL__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int SALES_FORECAST_DETAIL__PRODUCT_CATEGORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -361,13 +361,13 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_FORECAST_DETAIL__QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Quantity Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Quantity Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_DETAIL__QUANTITY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int SALES_FORECAST_DETAIL__QUANTITY_UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Sales Forecast Detail</em>' class.
@@ -461,22 +461,22 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_FORECAST_HISTORY__CLOSED_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Currency Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__CURRENCY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int SALES_FORECAST_HISTORY__CURRENCY_UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Custom Time Period Id</b></em>' reference.
+	 * The feature id for the '<em><b>Custom Time Period</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__CUSTOM_TIME_PERIOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int SALES_FORECAST_HISTORY__CUSTOM_TIME_PERIOD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Forecast Amount</b></em>' attribute.
@@ -488,22 +488,22 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_FORECAST_HISTORY__FORECAST_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Internal Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Internal Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__INTERNAL_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int SALES_FORECAST_HISTORY__INTERNAL_PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
-	 * The feature id for the '<em><b>Modified By User Login Id</b></em>' reference.
+	 * The feature id for the '<em><b>Modified By User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__MODIFIED_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
+	int SALES_FORECAST_HISTORY__MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Modified Timestamp</b></em>' attribute.
@@ -515,13 +515,13 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_FORECAST_HISTORY__MODIFIED_TIMESTAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
-	 * The feature id for the '<em><b>Organization Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Organization Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
+	int SALES_FORECAST_HISTORY__ORGANIZATION_PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Parent Sales Forecast Id</b></em>' attribute.
@@ -560,13 +560,13 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_FORECAST_HISTORY__QUOTA_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
-	 * The feature id for the '<em><b>Sales Forecast Id</b></em>' reference.
+	 * The feature id for the '<em><b>Sales Forecast</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__SALES_FORECAST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
+	int SALES_FORECAST_HISTORY__SALES_FORECAST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>Sales Forecast History</em>' class.
@@ -642,13 +642,13 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_OPPORTUNITY__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Currency Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__CURRENCY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int SALES_OPPORTUNITY__CURRENCY_UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Data Source Id</b></em>' attribute.
@@ -696,13 +696,13 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_OPPORTUNITY__ESTIMATED_PROBABILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
-	 * The feature id for the '<em><b>Marketing Campaign Id</b></em>' reference.
+	 * The feature id for the '<em><b>Marketing Campaign</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__MARKETING_CAMPAIGN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
+	int SALES_OPPORTUNITY__MARKETING_CAMPAIGN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Next Step</b></em>' attribute.
@@ -732,13 +732,13 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_OPPORTUNITY__OPPORTUNITY_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
-	 * The feature id for the '<em><b>Opportunity Stage Id</b></em>' reference.
+	 * The feature id for the '<em><b>Opportunity Stage</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__OPPORTUNITY_STAGE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
+	int SALES_OPPORTUNITY__OPPORTUNITY_STAGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Sales Opportunity Competitors</b></em>' reference list.
@@ -777,13 +777,13 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_OPPORTUNITY__SALES_OPPORTUNITY_WORK_EFFORTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
-	 * The feature id for the '<em><b>Type Enum Id</b></em>' reference.
+	 * The feature id for the '<em><b>Type Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__TYPE_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
+	int SALES_OPPORTUNITY__TYPE_ENUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
 	 * The number of structural features of the '<em>Sales Opportunity</em>' class.
@@ -841,13 +841,13 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_OPPORTUNITY_COMPETITOR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Sales Opportunity Id</b></em>' reference.
+	 * The feature id for the '<em><b>Sales Opportunity</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_COMPETITOR__SALES_OPPORTUNITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SALES_OPPORTUNITY_COMPETITOR__SALES_OPPORTUNITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Competitor Party Id</b></em>' attribute.
@@ -959,13 +959,13 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_OPPORTUNITY_HISTORY__CHANGE_NOTE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Currency Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY__CURRENCY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int SALES_OPPORTUNITY_HISTORY__CURRENCY_UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1031,22 +1031,22 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_OPPORTUNITY_HISTORY__NEXT_STEP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
-	 * The feature id for the '<em><b>Opportunity Stage Id</b></em>' reference.
+	 * The feature id for the '<em><b>Opportunity Stage</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY__OPPORTUNITY_STAGE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
+	int SALES_OPPORTUNITY_HISTORY__OPPORTUNITY_STAGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
-	 * The feature id for the '<em><b>Sales Opportunity Id</b></em>' reference.
+	 * The feature id for the '<em><b>Sales Opportunity</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY__SALES_OPPORTUNITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
+	int SALES_OPPORTUNITY_HISTORY__SALES_OPPORTUNITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The number of structural features of the '<em>Sales Opportunity History</em>' class.
@@ -1104,22 +1104,22 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_OPPORTUNITY_QUOTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Sales Opportunity Id</b></em>' reference.
+	 * The feature id for the '<em><b>Sales Opportunity</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_QUOTE__SALES_OPPORTUNITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SALES_OPPORTUNITY_QUOTE__SALES_OPPORTUNITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Quote Id</b></em>' reference.
+	 * The feature id for the '<em><b>Quote</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_QUOTE__QUOTE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int SALES_OPPORTUNITY_QUOTE__QUOTE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Sales Opportunity Quote</em>' class.
@@ -1177,31 +1177,31 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_OPPORTUNITY_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Sales Opportunity Id</b></em>' reference.
+	 * The feature id for the '<em><b>Sales Opportunity</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_ROLE__SALES_OPPORTUNITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SALES_OPPORTUNITY_ROLE__SALES_OPPORTUNITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int SALES_OPPORTUNITY_ROLE__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int SALES_OPPORTUNITY_ROLE__ROLE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Sales Opportunity Role</em>' class.
@@ -1350,13 +1350,13 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_OPPORTUNITY_TRCK_CODE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Sales Opportunity Id</b></em>' reference.
+	 * The feature id for the '<em><b>Sales Opportunity</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_TRCK_CODE__SALES_OPPORTUNITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SALES_OPPORTUNITY_TRCK_CODE__SALES_OPPORTUNITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Tracking Code Id</b></em>' attribute.
@@ -1432,22 +1432,22 @@ public interface OpportunityPackage extends EPackage {
 	int SALES_OPPORTUNITY_WORK_EFFORT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Sales Opportunity Id</b></em>' reference.
+	 * The feature id for the '<em><b>Sales Opportunity</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_WORK_EFFORT__SALES_OPPORTUNITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SALES_OPPORTUNITY_WORK_EFFORT__SALES_OPPORTUNITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
+	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_WORK_EFFORT__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int SALES_OPPORTUNITY_WORK_EFFORT__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Sales Opportunity Work Effort</em>' class.
@@ -1503,37 +1503,37 @@ public interface OpportunityPackage extends EPackage {
 	EAttribute getSalesForecast_ClosedAmount();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getCreatedByUserLoginId <em>Created By User Login Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getCreatedByUserLogin <em>Created By User Login</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Created By User Login Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getCreatedByUserLoginId()
+	 * @return the meta object for the reference '<em>Created By User Login</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getCreatedByUserLogin()
 	 * @see #getSalesForecast()
 	 * @generated
 	 */
-	EReference getSalesForecast_CreatedByUserLoginId();
+	EReference getSalesForecast_CreatedByUserLogin();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getCurrencyUomId <em>Currency Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getCurrencyUom <em>Currency Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Currency Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getCurrencyUomId()
+	 * @return the meta object for the reference '<em>Currency Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getCurrencyUom()
 	 * @see #getSalesForecast()
 	 * @generated
 	 */
-	EReference getSalesForecast_CurrencyUomId();
+	EReference getSalesForecast_CurrencyUom();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getCustomTimePeriodId <em>Custom Time Period Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getCustomTimePeriod <em>Custom Time Period</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Custom Time Period Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getCustomTimePeriodId()
+	 * @return the meta object for the reference '<em>Custom Time Period</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getCustomTimePeriod()
 	 * @see #getSalesForecast()
 	 * @generated
 	 */
-	EReference getSalesForecast_CustomTimePeriodId();
+	EReference getSalesForecast_CustomTimePeriod();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getForecastAmount <em>Forecast Amount</em>}'.
@@ -1547,48 +1547,48 @@ public interface OpportunityPackage extends EPackage {
 	EAttribute getSalesForecast_ForecastAmount();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getInternalPartyId <em>Internal Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getInternalParty <em>Internal Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getInternalPartyId()
+	 * @return the meta object for the reference '<em>Internal Party</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getInternalParty()
 	 * @see #getSalesForecast()
 	 * @generated
 	 */
-	EReference getSalesForecast_InternalPartyId();
+	EReference getSalesForecast_InternalParty();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getModifiedByUserLoginId <em>Modified By User Login Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getModifiedByUserLogin <em>Modified By User Login</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Modified By User Login Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getModifiedByUserLoginId()
+	 * @return the meta object for the reference '<em>Modified By User Login</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getModifiedByUserLogin()
 	 * @see #getSalesForecast()
 	 * @generated
 	 */
-	EReference getSalesForecast_ModifiedByUserLoginId();
+	EReference getSalesForecast_ModifiedByUserLogin();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getOrganizationPartyId <em>Organization Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getOrganizationParty <em>Organization Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Organization Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getOrganizationPartyId()
+	 * @return the meta object for the reference '<em>Organization Party</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getOrganizationParty()
 	 * @see #getSalesForecast()
 	 * @generated
 	 */
-	EReference getSalesForecast_OrganizationPartyId();
+	EReference getSalesForecast_OrganizationParty();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getParentSalesForecastId <em>Parent Sales Forecast Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getParentSalesForecast <em>Parent Sales Forecast</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Sales Forecast Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getParentSalesForecastId()
+	 * @return the meta object for the reference '<em>Parent Sales Forecast</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getParentSalesForecast()
 	 * @see #getSalesForecast()
 	 * @generated
 	 */
-	EReference getSalesForecast_ParentSalesForecastId();
+	EReference getSalesForecast_ParentSalesForecast();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast#getPercentOfQuotaClosed <em>Percent Of Quota Closed</em>}'.
@@ -1656,15 +1656,15 @@ public interface OpportunityPackage extends EPackage {
 	EClass getSalesForecastDetail();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getSalesForecastId <em>Sales Forecast Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getSalesForecast <em>Sales Forecast</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Sales Forecast Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getSalesForecastId()
+	 * @return the meta object for the reference '<em>Sales Forecast</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getSalesForecast()
 	 * @see #getSalesForecastDetail()
 	 * @generated
 	 */
-	EReference getSalesForecastDetail_SalesForecastId();
+	EReference getSalesForecastDetail_SalesForecast();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getSalesForecastDetailId <em>Sales Forecast Detail Id</em>}'.
@@ -1689,26 +1689,26 @@ public interface OpportunityPackage extends EPackage {
 	EAttribute getSalesForecastDetail_Amount();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getProductCategoryId <em>Product Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getProductCategoryId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getProduct()
 	 * @see #getSalesForecastDetail()
 	 * @generated
 	 */
-	EReference getSalesForecastDetail_ProductCategoryId();
+	EReference getSalesForecastDetail_Product();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getProductCategory <em>Product Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getProductId()
+	 * @return the meta object for the reference '<em>Product Category</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getProductCategory()
 	 * @see #getSalesForecastDetail()
 	 * @generated
 	 */
-	EReference getSalesForecastDetail_ProductId();
+	EReference getSalesForecastDetail_ProductCategory();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getQuantity <em>Quantity</em>}'.
@@ -1722,15 +1722,15 @@ public interface OpportunityPackage extends EPackage {
 	EAttribute getSalesForecastDetail_Quantity();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getQuantityUomId <em>Quantity Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getQuantityUom <em>Quantity Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Quantity Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getQuantityUomId()
+	 * @return the meta object for the reference '<em>Quantity Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail#getQuantityUom()
 	 * @see #getSalesForecastDetail()
 	 * @generated
 	 */
-	EReference getSalesForecastDetail_QuantityUomId();
+	EReference getSalesForecastDetail_QuantityUom();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory <em>Sales Forecast History</em>}'.
@@ -1787,26 +1787,26 @@ public interface OpportunityPackage extends EPackage {
 	EAttribute getSalesForecastHistory_ClosedAmount();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getCurrencyUomId <em>Currency Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getCurrencyUom <em>Currency Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Currency Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getCurrencyUomId()
+	 * @return the meta object for the reference '<em>Currency Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getCurrencyUom()
 	 * @see #getSalesForecastHistory()
 	 * @generated
 	 */
-	EReference getSalesForecastHistory_CurrencyUomId();
+	EReference getSalesForecastHistory_CurrencyUom();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getCustomTimePeriodId <em>Custom Time Period Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getCustomTimePeriod <em>Custom Time Period</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Custom Time Period Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getCustomTimePeriodId()
+	 * @return the meta object for the reference '<em>Custom Time Period</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getCustomTimePeriod()
 	 * @see #getSalesForecastHistory()
 	 * @generated
 	 */
-	EReference getSalesForecastHistory_CustomTimePeriodId();
+	EReference getSalesForecastHistory_CustomTimePeriod();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getForecastAmount <em>Forecast Amount</em>}'.
@@ -1820,26 +1820,26 @@ public interface OpportunityPackage extends EPackage {
 	EAttribute getSalesForecastHistory_ForecastAmount();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getInternalPartyId <em>Internal Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getInternalParty <em>Internal Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Internal Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getInternalPartyId()
+	 * @return the meta object for the reference '<em>Internal Party</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getInternalParty()
 	 * @see #getSalesForecastHistory()
 	 * @generated
 	 */
-	EReference getSalesForecastHistory_InternalPartyId();
+	EReference getSalesForecastHistory_InternalParty();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getModifiedByUserLoginId <em>Modified By User Login Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getModifiedByUserLogin <em>Modified By User Login</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Modified By User Login Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getModifiedByUserLoginId()
+	 * @return the meta object for the reference '<em>Modified By User Login</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getModifiedByUserLogin()
 	 * @see #getSalesForecastHistory()
 	 * @generated
 	 */
-	EReference getSalesForecastHistory_ModifiedByUserLoginId();
+	EReference getSalesForecastHistory_ModifiedByUserLogin();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getModifiedTimestamp <em>Modified Timestamp</em>}'.
@@ -1853,15 +1853,15 @@ public interface OpportunityPackage extends EPackage {
 	EAttribute getSalesForecastHistory_ModifiedTimestamp();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getOrganizationPartyId <em>Organization Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getOrganizationParty <em>Organization Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Organization Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getOrganizationPartyId()
+	 * @return the meta object for the reference '<em>Organization Party</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getOrganizationParty()
 	 * @see #getSalesForecastHistory()
 	 * @generated
 	 */
-	EReference getSalesForecastHistory_OrganizationPartyId();
+	EReference getSalesForecastHistory_OrganizationParty();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getParentSalesForecastId <em>Parent Sales Forecast Id</em>}'.
@@ -1908,15 +1908,15 @@ public interface OpportunityPackage extends EPackage {
 	EAttribute getSalesForecastHistory_QuotaAmount();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getSalesForecastId <em>Sales Forecast Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getSalesForecast <em>Sales Forecast</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Sales Forecast Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getSalesForecastId()
+	 * @return the meta object for the reference '<em>Sales Forecast</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastHistory#getSalesForecast()
 	 * @see #getSalesForecastHistory()
 	 * @generated
 	 */
-	EReference getSalesForecastHistory_SalesForecastId();
+	EReference getSalesForecastHistory_SalesForecast();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity <em>Sales Opportunity</em>}'.
@@ -1951,15 +1951,15 @@ public interface OpportunityPackage extends EPackage {
 	EReference getSalesOpportunity_CreatedByUserLogin();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getCurrencyUomId <em>Currency Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getCurrencyUom <em>Currency Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Currency Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getCurrencyUomId()
+	 * @return the meta object for the reference '<em>Currency Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getCurrencyUom()
 	 * @see #getSalesOpportunity()
 	 * @generated
 	 */
-	EReference getSalesOpportunity_CurrencyUomId();
+	EReference getSalesOpportunity_CurrencyUom();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getDataSourceId <em>Data Source Id</em>}'.
@@ -2017,15 +2017,15 @@ public interface OpportunityPackage extends EPackage {
 	EAttribute getSalesOpportunity_EstimatedProbability();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getMarketingCampaignId <em>Marketing Campaign Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getMarketingCampaign <em>Marketing Campaign</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Marketing Campaign Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getMarketingCampaignId()
+	 * @return the meta object for the reference '<em>Marketing Campaign</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getMarketingCampaign()
 	 * @see #getSalesOpportunity()
 	 * @generated
 	 */
-	EReference getSalesOpportunity_MarketingCampaignId();
+	EReference getSalesOpportunity_MarketingCampaign();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getNextStep <em>Next Step</em>}'.
@@ -2061,15 +2061,15 @@ public interface OpportunityPackage extends EPackage {
 	EAttribute getSalesOpportunity_OpportunityName();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getOpportunityStageId <em>Opportunity Stage Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getOpportunityStage <em>Opportunity Stage</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Opportunity Stage Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getOpportunityStageId()
+	 * @return the meta object for the reference '<em>Opportunity Stage</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getOpportunityStage()
 	 * @see #getSalesOpportunity()
 	 * @generated
 	 */
-	EReference getSalesOpportunity_OpportunityStageId();
+	EReference getSalesOpportunity_OpportunityStage();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getSalesOpportunityCompetitors <em>Sales Opportunity Competitors</em>}'.
@@ -2116,15 +2116,15 @@ public interface OpportunityPackage extends EPackage {
 	EReference getSalesOpportunity_SalesOpportunityWorkEfforts();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getTypeEnumId <em>Type Enum Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getTypeEnum <em>Type Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Type Enum Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getTypeEnumId()
+	 * @return the meta object for the reference '<em>Type Enum</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getTypeEnum()
 	 * @see #getSalesOpportunity()
 	 * @generated
 	 */
-	EReference getSalesOpportunity_TypeEnumId();
+	EReference getSalesOpportunity_TypeEnum();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityCompetitor <em>Sales Opportunity Competitor</em>}'.
@@ -2137,15 +2137,15 @@ public interface OpportunityPackage extends EPackage {
 	EClass getSalesOpportunityCompetitor();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityCompetitor#getSalesOpportunityId <em>Sales Opportunity Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityCompetitor#getSalesOpportunity <em>Sales Opportunity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Sales Opportunity Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityCompetitor#getSalesOpportunityId()
+	 * @return the meta object for the reference '<em>Sales Opportunity</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityCompetitor#getSalesOpportunity()
 	 * @see #getSalesOpportunityCompetitor()
 	 * @generated
 	 */
-	EReference getSalesOpportunityCompetitor_SalesOpportunityId();
+	EReference getSalesOpportunityCompetitor_SalesOpportunity();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityCompetitor#getCompetitorPartyId <em>Competitor Party Id</em>}'.
@@ -2224,15 +2224,15 @@ public interface OpportunityPackage extends EPackage {
 	EAttribute getSalesOpportunityHistory_ChangeNote();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getCurrencyUomId <em>Currency Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getCurrencyUom <em>Currency Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Currency Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getCurrencyUomId()
+	 * @return the meta object for the reference '<em>Currency Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getCurrencyUom()
 	 * @see #getSalesOpportunityHistory()
 	 * @generated
 	 */
-	EReference getSalesOpportunityHistory_CurrencyUomId();
+	EReference getSalesOpportunityHistory_CurrencyUom();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getDescription <em>Description</em>}'.
@@ -2312,26 +2312,26 @@ public interface OpportunityPackage extends EPackage {
 	EAttribute getSalesOpportunityHistory_NextStep();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getOpportunityStageId <em>Opportunity Stage Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getOpportunityStage <em>Opportunity Stage</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Opportunity Stage Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getOpportunityStageId()
+	 * @return the meta object for the reference '<em>Opportunity Stage</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getOpportunityStage()
 	 * @see #getSalesOpportunityHistory()
 	 * @generated
 	 */
-	EReference getSalesOpportunityHistory_OpportunityStageId();
+	EReference getSalesOpportunityHistory_OpportunityStage();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getSalesOpportunityId <em>Sales Opportunity Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getSalesOpportunity <em>Sales Opportunity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Sales Opportunity Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getSalesOpportunityId()
+	 * @return the meta object for the reference '<em>Sales Opportunity</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityHistory#getSalesOpportunity()
 	 * @see #getSalesOpportunityHistory()
 	 * @generated
 	 */
-	EReference getSalesOpportunityHistory_SalesOpportunityId();
+	EReference getSalesOpportunityHistory_SalesOpportunity();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityQuote <em>Sales Opportunity Quote</em>}'.
@@ -2344,26 +2344,26 @@ public interface OpportunityPackage extends EPackage {
 	EClass getSalesOpportunityQuote();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityQuote#getSalesOpportunityId <em>Sales Opportunity Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityQuote#getSalesOpportunity <em>Sales Opportunity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Sales Opportunity Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityQuote#getSalesOpportunityId()
+	 * @return the meta object for the reference '<em>Sales Opportunity</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityQuote#getSalesOpportunity()
 	 * @see #getSalesOpportunityQuote()
 	 * @generated
 	 */
-	EReference getSalesOpportunityQuote_SalesOpportunityId();
+	EReference getSalesOpportunityQuote_SalesOpportunity();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityQuote#getQuoteId <em>Quote Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityQuote#getQuote <em>Quote</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Quote Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityQuote#getQuoteId()
+	 * @return the meta object for the reference '<em>Quote</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityQuote#getQuote()
 	 * @see #getSalesOpportunityQuote()
 	 * @generated
 	 */
-	EReference getSalesOpportunityQuote_QuoteId();
+	EReference getSalesOpportunityQuote_Quote();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityRole <em>Sales Opportunity Role</em>}'.
@@ -2376,37 +2376,37 @@ public interface OpportunityPackage extends EPackage {
 	EClass getSalesOpportunityRole();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityRole#getSalesOpportunityId <em>Sales Opportunity Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityRole#getSalesOpportunity <em>Sales Opportunity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Sales Opportunity Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityRole#getSalesOpportunityId()
+	 * @return the meta object for the reference '<em>Sales Opportunity</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityRole#getSalesOpportunity()
 	 * @see #getSalesOpportunityRole()
 	 * @generated
 	 */
-	EReference getSalesOpportunityRole_SalesOpportunityId();
+	EReference getSalesOpportunityRole_SalesOpportunity();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityRole#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityRole#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityRole#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityRole#getParty()
 	 * @see #getSalesOpportunityRole()
 	 * @generated
 	 */
-	EReference getSalesOpportunityRole_PartyId();
+	EReference getSalesOpportunityRole_Party();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityRole#getRoleTypeId <em>Role Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityRole#getRoleType <em>Role Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Role Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityRole#getRoleTypeId()
+	 * @return the meta object for the reference '<em>Role Type</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityRole#getRoleType()
 	 * @see #getSalesOpportunityRole()
 	 * @generated
 	 */
-	EReference getSalesOpportunityRole_RoleTypeId();
+	EReference getSalesOpportunityRole_RoleType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityStage <em>Sales Opportunity Stage</em>}'.
@@ -2473,15 +2473,15 @@ public interface OpportunityPackage extends EPackage {
 	EClass getSalesOpportunityTrckCode();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityTrckCode#getSalesOpportunityId <em>Sales Opportunity Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityTrckCode#getSalesOpportunity <em>Sales Opportunity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Sales Opportunity Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityTrckCode#getSalesOpportunityId()
+	 * @return the meta object for the reference '<em>Sales Opportunity</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityTrckCode#getSalesOpportunity()
 	 * @see #getSalesOpportunityTrckCode()
 	 * @generated
 	 */
-	EReference getSalesOpportunityTrckCode_SalesOpportunityId();
+	EReference getSalesOpportunityTrckCode_SalesOpportunity();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityTrckCode#getTrackingCodeId <em>Tracking Code Id</em>}'.
@@ -2516,26 +2516,26 @@ public interface OpportunityPackage extends EPackage {
 	EClass getSalesOpportunityWorkEffort();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityWorkEffort#getSalesOpportunityId <em>Sales Opportunity Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityWorkEffort#getSalesOpportunity <em>Sales Opportunity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Sales Opportunity Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityWorkEffort#getSalesOpportunityId()
+	 * @return the meta object for the reference '<em>Sales Opportunity</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityWorkEffort#getSalesOpportunity()
 	 * @see #getSalesOpportunityWorkEffort()
 	 * @generated
 	 */
-	EReference getSalesOpportunityWorkEffort_SalesOpportunityId();
+	EReference getSalesOpportunityWorkEffort_SalesOpportunity();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityWorkEffort#getWorkEffortId <em>Work Effort Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityWorkEffort#getWorkEffort <em>Work Effort</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Work Effort Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityWorkEffort#getWorkEffortId()
+	 * @return the meta object for the reference '<em>Work Effort</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityWorkEffort#getWorkEffort()
 	 * @see #getSalesOpportunityWorkEffort()
 	 * @generated
 	 */
-	EReference getSalesOpportunityWorkEffort_WorkEffortId();
+	EReference getSalesOpportunityWorkEffort_WorkEffort();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -2594,28 +2594,28 @@ public interface OpportunityPackage extends EPackage {
 		EAttribute SALES_FORECAST__CLOSED_AMOUNT = eINSTANCE.getSalesForecast_ClosedAmount();
 
 		/**
-		 * The meta object literal for the '<em><b>Created By User Login Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Created By User Login</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_FORECAST__CREATED_BY_USER_LOGIN_ID = eINSTANCE.getSalesForecast_CreatedByUserLoginId();
+		EReference SALES_FORECAST__CREATED_BY_USER_LOGIN = eINSTANCE.getSalesForecast_CreatedByUserLogin();
 
 		/**
-		 * The meta object literal for the '<em><b>Currency Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Currency Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_FORECAST__CURRENCY_UOM_ID = eINSTANCE.getSalesForecast_CurrencyUomId();
+		EReference SALES_FORECAST__CURRENCY_UOM = eINSTANCE.getSalesForecast_CurrencyUom();
 
 		/**
-		 * The meta object literal for the '<em><b>Custom Time Period Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Custom Time Period</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_FORECAST__CUSTOM_TIME_PERIOD_ID = eINSTANCE.getSalesForecast_CustomTimePeriodId();
+		EReference SALES_FORECAST__CUSTOM_TIME_PERIOD = eINSTANCE.getSalesForecast_CustomTimePeriod();
 
 		/**
 		 * The meta object literal for the '<em><b>Forecast Amount</b></em>' attribute feature.
@@ -2626,36 +2626,36 @@ public interface OpportunityPackage extends EPackage {
 		EAttribute SALES_FORECAST__FORECAST_AMOUNT = eINSTANCE.getSalesForecast_ForecastAmount();
 
 		/**
-		 * The meta object literal for the '<em><b>Internal Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Internal Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_FORECAST__INTERNAL_PARTY_ID = eINSTANCE.getSalesForecast_InternalPartyId();
+		EReference SALES_FORECAST__INTERNAL_PARTY = eINSTANCE.getSalesForecast_InternalParty();
 
 		/**
-		 * The meta object literal for the '<em><b>Modified By User Login Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Modified By User Login</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_FORECAST__MODIFIED_BY_USER_LOGIN_ID = eINSTANCE.getSalesForecast_ModifiedByUserLoginId();
+		EReference SALES_FORECAST__MODIFIED_BY_USER_LOGIN = eINSTANCE.getSalesForecast_ModifiedByUserLogin();
 
 		/**
-		 * The meta object literal for the '<em><b>Organization Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Organization Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_FORECAST__ORGANIZATION_PARTY_ID = eINSTANCE.getSalesForecast_OrganizationPartyId();
+		EReference SALES_FORECAST__ORGANIZATION_PARTY = eINSTANCE.getSalesForecast_OrganizationParty();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Sales Forecast Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Sales Forecast</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_FORECAST__PARENT_SALES_FORECAST_ID = eINSTANCE.getSalesForecast_ParentSalesForecastId();
+		EReference SALES_FORECAST__PARENT_SALES_FORECAST = eINSTANCE.getSalesForecast_ParentSalesForecast();
 
 		/**
 		 * The meta object literal for the '<em><b>Percent Of Quota Closed</b></em>' attribute feature.
@@ -2708,12 +2708,12 @@ public interface OpportunityPackage extends EPackage {
 		EClass SALES_FORECAST_DETAIL = eINSTANCE.getSalesForecastDetail();
 
 		/**
-		 * The meta object literal for the '<em><b>Sales Forecast Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Sales Forecast</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_FORECAST_DETAIL__SALES_FORECAST_ID = eINSTANCE.getSalesForecastDetail_SalesForecastId();
+		EReference SALES_FORECAST_DETAIL__SALES_FORECAST = eINSTANCE.getSalesForecastDetail_SalesForecast();
 
 		/**
 		 * The meta object literal for the '<em><b>Sales Forecast Detail Id</b></em>' attribute feature.
@@ -2732,20 +2732,20 @@ public interface OpportunityPackage extends EPackage {
 		EAttribute SALES_FORECAST_DETAIL__AMOUNT = eINSTANCE.getSalesForecastDetail_Amount();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_FORECAST_DETAIL__PRODUCT_CATEGORY_ID = eINSTANCE.getSalesForecastDetail_ProductCategoryId();
+		EReference SALES_FORECAST_DETAIL__PRODUCT = eINSTANCE.getSalesForecastDetail_Product();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_FORECAST_DETAIL__PRODUCT_ID = eINSTANCE.getSalesForecastDetail_ProductId();
+		EReference SALES_FORECAST_DETAIL__PRODUCT_CATEGORY = eINSTANCE.getSalesForecastDetail_ProductCategory();
 
 		/**
 		 * The meta object literal for the '<em><b>Quantity</b></em>' attribute feature.
@@ -2756,12 +2756,12 @@ public interface OpportunityPackage extends EPackage {
 		EAttribute SALES_FORECAST_DETAIL__QUANTITY = eINSTANCE.getSalesForecastDetail_Quantity();
 
 		/**
-		 * The meta object literal for the '<em><b>Quantity Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Quantity Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_FORECAST_DETAIL__QUANTITY_UOM_ID = eINSTANCE.getSalesForecastDetail_QuantityUomId();
+		EReference SALES_FORECAST_DETAIL__QUANTITY_UOM = eINSTANCE.getSalesForecastDetail_QuantityUom();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastHistoryImpl <em>Sales Forecast History</em>}' class.
@@ -2806,20 +2806,20 @@ public interface OpportunityPackage extends EPackage {
 		EAttribute SALES_FORECAST_HISTORY__CLOSED_AMOUNT = eINSTANCE.getSalesForecastHistory_ClosedAmount();
 
 		/**
-		 * The meta object literal for the '<em><b>Currency Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Currency Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_FORECAST_HISTORY__CURRENCY_UOM_ID = eINSTANCE.getSalesForecastHistory_CurrencyUomId();
+		EReference SALES_FORECAST_HISTORY__CURRENCY_UOM = eINSTANCE.getSalesForecastHistory_CurrencyUom();
 
 		/**
-		 * The meta object literal for the '<em><b>Custom Time Period Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Custom Time Period</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_FORECAST_HISTORY__CUSTOM_TIME_PERIOD_ID = eINSTANCE.getSalesForecastHistory_CustomTimePeriodId();
+		EReference SALES_FORECAST_HISTORY__CUSTOM_TIME_PERIOD = eINSTANCE.getSalesForecastHistory_CustomTimePeriod();
 
 		/**
 		 * The meta object literal for the '<em><b>Forecast Amount</b></em>' attribute feature.
@@ -2830,20 +2830,20 @@ public interface OpportunityPackage extends EPackage {
 		EAttribute SALES_FORECAST_HISTORY__FORECAST_AMOUNT = eINSTANCE.getSalesForecastHistory_ForecastAmount();
 
 		/**
-		 * The meta object literal for the '<em><b>Internal Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Internal Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_FORECAST_HISTORY__INTERNAL_PARTY_ID = eINSTANCE.getSalesForecastHistory_InternalPartyId();
+		EReference SALES_FORECAST_HISTORY__INTERNAL_PARTY = eINSTANCE.getSalesForecastHistory_InternalParty();
 
 		/**
-		 * The meta object literal for the '<em><b>Modified By User Login Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Modified By User Login</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_FORECAST_HISTORY__MODIFIED_BY_USER_LOGIN_ID = eINSTANCE.getSalesForecastHistory_ModifiedByUserLoginId();
+		EReference SALES_FORECAST_HISTORY__MODIFIED_BY_USER_LOGIN = eINSTANCE.getSalesForecastHistory_ModifiedByUserLogin();
 
 		/**
 		 * The meta object literal for the '<em><b>Modified Timestamp</b></em>' attribute feature.
@@ -2854,12 +2854,12 @@ public interface OpportunityPackage extends EPackage {
 		EAttribute SALES_FORECAST_HISTORY__MODIFIED_TIMESTAMP = eINSTANCE.getSalesForecastHistory_ModifiedTimestamp();
 
 		/**
-		 * The meta object literal for the '<em><b>Organization Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Organization Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_FORECAST_HISTORY__ORGANIZATION_PARTY_ID = eINSTANCE.getSalesForecastHistory_OrganizationPartyId();
+		EReference SALES_FORECAST_HISTORY__ORGANIZATION_PARTY = eINSTANCE.getSalesForecastHistory_OrganizationParty();
 
 		/**
 		 * The meta object literal for the '<em><b>Parent Sales Forecast Id</b></em>' attribute feature.
@@ -2894,12 +2894,12 @@ public interface OpportunityPackage extends EPackage {
 		EAttribute SALES_FORECAST_HISTORY__QUOTA_AMOUNT = eINSTANCE.getSalesForecastHistory_QuotaAmount();
 
 		/**
-		 * The meta object literal for the '<em><b>Sales Forecast Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Sales Forecast</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_FORECAST_HISTORY__SALES_FORECAST_ID = eINSTANCE.getSalesForecastHistory_SalesForecastId();
+		EReference SALES_FORECAST_HISTORY__SALES_FORECAST = eINSTANCE.getSalesForecastHistory_SalesForecast();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl <em>Sales Opportunity</em>}' class.
@@ -2928,12 +2928,12 @@ public interface OpportunityPackage extends EPackage {
 		EReference SALES_OPPORTUNITY__CREATED_BY_USER_LOGIN = eINSTANCE.getSalesOpportunity_CreatedByUserLogin();
 
 		/**
-		 * The meta object literal for the '<em><b>Currency Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Currency Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_OPPORTUNITY__CURRENCY_UOM_ID = eINSTANCE.getSalesOpportunity_CurrencyUomId();
+		EReference SALES_OPPORTUNITY__CURRENCY_UOM = eINSTANCE.getSalesOpportunity_CurrencyUom();
 
 		/**
 		 * The meta object literal for the '<em><b>Data Source Id</b></em>' attribute feature.
@@ -2976,12 +2976,12 @@ public interface OpportunityPackage extends EPackage {
 		EAttribute SALES_OPPORTUNITY__ESTIMATED_PROBABILITY = eINSTANCE.getSalesOpportunity_EstimatedProbability();
 
 		/**
-		 * The meta object literal for the '<em><b>Marketing Campaign Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Marketing Campaign</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_OPPORTUNITY__MARKETING_CAMPAIGN_ID = eINSTANCE.getSalesOpportunity_MarketingCampaignId();
+		EReference SALES_OPPORTUNITY__MARKETING_CAMPAIGN = eINSTANCE.getSalesOpportunity_MarketingCampaign();
 
 		/**
 		 * The meta object literal for the '<em><b>Next Step</b></em>' attribute feature.
@@ -3008,12 +3008,12 @@ public interface OpportunityPackage extends EPackage {
 		EAttribute SALES_OPPORTUNITY__OPPORTUNITY_NAME = eINSTANCE.getSalesOpportunity_OpportunityName();
 
 		/**
-		 * The meta object literal for the '<em><b>Opportunity Stage Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Opportunity Stage</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_OPPORTUNITY__OPPORTUNITY_STAGE_ID = eINSTANCE.getSalesOpportunity_OpportunityStageId();
+		EReference SALES_OPPORTUNITY__OPPORTUNITY_STAGE = eINSTANCE.getSalesOpportunity_OpportunityStage();
 
 		/**
 		 * The meta object literal for the '<em><b>Sales Opportunity Competitors</b></em>' reference list feature.
@@ -3048,12 +3048,12 @@ public interface OpportunityPackage extends EPackage {
 		EReference SALES_OPPORTUNITY__SALES_OPPORTUNITY_WORK_EFFORTS = eINSTANCE.getSalesOpportunity_SalesOpportunityWorkEfforts();
 
 		/**
-		 * The meta object literal for the '<em><b>Type Enum Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Type Enum</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_OPPORTUNITY__TYPE_ENUM_ID = eINSTANCE.getSalesOpportunity_TypeEnumId();
+		EReference SALES_OPPORTUNITY__TYPE_ENUM = eINSTANCE.getSalesOpportunity_TypeEnum();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityCompetitorImpl <em>Sales Opportunity Competitor</em>}' class.
@@ -3066,12 +3066,12 @@ public interface OpportunityPackage extends EPackage {
 		EClass SALES_OPPORTUNITY_COMPETITOR = eINSTANCE.getSalesOpportunityCompetitor();
 
 		/**
-		 * The meta object literal for the '<em><b>Sales Opportunity Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Sales Opportunity</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_OPPORTUNITY_COMPETITOR__SALES_OPPORTUNITY_ID = eINSTANCE.getSalesOpportunityCompetitor_SalesOpportunityId();
+		EReference SALES_OPPORTUNITY_COMPETITOR__SALES_OPPORTUNITY = eINSTANCE.getSalesOpportunityCompetitor_SalesOpportunity();
 
 		/**
 		 * The meta object literal for the '<em><b>Competitor Party Id</b></em>' attribute feature.
@@ -3132,12 +3132,12 @@ public interface OpportunityPackage extends EPackage {
 		EAttribute SALES_OPPORTUNITY_HISTORY__CHANGE_NOTE = eINSTANCE.getSalesOpportunityHistory_ChangeNote();
 
 		/**
-		 * The meta object literal for the '<em><b>Currency Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Currency Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_OPPORTUNITY_HISTORY__CURRENCY_UOM_ID = eINSTANCE.getSalesOpportunityHistory_CurrencyUomId();
+		EReference SALES_OPPORTUNITY_HISTORY__CURRENCY_UOM = eINSTANCE.getSalesOpportunityHistory_CurrencyUom();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
@@ -3196,20 +3196,20 @@ public interface OpportunityPackage extends EPackage {
 		EAttribute SALES_OPPORTUNITY_HISTORY__NEXT_STEP = eINSTANCE.getSalesOpportunityHistory_NextStep();
 
 		/**
-		 * The meta object literal for the '<em><b>Opportunity Stage Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Opportunity Stage</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_OPPORTUNITY_HISTORY__OPPORTUNITY_STAGE_ID = eINSTANCE.getSalesOpportunityHistory_OpportunityStageId();
+		EReference SALES_OPPORTUNITY_HISTORY__OPPORTUNITY_STAGE = eINSTANCE.getSalesOpportunityHistory_OpportunityStage();
 
 		/**
-		 * The meta object literal for the '<em><b>Sales Opportunity Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Sales Opportunity</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_OPPORTUNITY_HISTORY__SALES_OPPORTUNITY_ID = eINSTANCE.getSalesOpportunityHistory_SalesOpportunityId();
+		EReference SALES_OPPORTUNITY_HISTORY__SALES_OPPORTUNITY = eINSTANCE.getSalesOpportunityHistory_SalesOpportunity();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityQuoteImpl <em>Sales Opportunity Quote</em>}' class.
@@ -3222,20 +3222,20 @@ public interface OpportunityPackage extends EPackage {
 		EClass SALES_OPPORTUNITY_QUOTE = eINSTANCE.getSalesOpportunityQuote();
 
 		/**
-		 * The meta object literal for the '<em><b>Sales Opportunity Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Sales Opportunity</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_OPPORTUNITY_QUOTE__SALES_OPPORTUNITY_ID = eINSTANCE.getSalesOpportunityQuote_SalesOpportunityId();
+		EReference SALES_OPPORTUNITY_QUOTE__SALES_OPPORTUNITY = eINSTANCE.getSalesOpportunityQuote_SalesOpportunity();
 
 		/**
-		 * The meta object literal for the '<em><b>Quote Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Quote</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_OPPORTUNITY_QUOTE__QUOTE_ID = eINSTANCE.getSalesOpportunityQuote_QuoteId();
+		EReference SALES_OPPORTUNITY_QUOTE__QUOTE = eINSTANCE.getSalesOpportunityQuote_Quote();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityRoleImpl <em>Sales Opportunity Role</em>}' class.
@@ -3248,28 +3248,28 @@ public interface OpportunityPackage extends EPackage {
 		EClass SALES_OPPORTUNITY_ROLE = eINSTANCE.getSalesOpportunityRole();
 
 		/**
-		 * The meta object literal for the '<em><b>Sales Opportunity Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Sales Opportunity</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_OPPORTUNITY_ROLE__SALES_OPPORTUNITY_ID = eINSTANCE.getSalesOpportunityRole_SalesOpportunityId();
+		EReference SALES_OPPORTUNITY_ROLE__SALES_OPPORTUNITY = eINSTANCE.getSalesOpportunityRole_SalesOpportunity();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_OPPORTUNITY_ROLE__PARTY_ID = eINSTANCE.getSalesOpportunityRole_PartyId();
+		EReference SALES_OPPORTUNITY_ROLE__PARTY = eINSTANCE.getSalesOpportunityRole_Party();
 
 		/**
-		 * The meta object literal for the '<em><b>Role Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Role Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_OPPORTUNITY_ROLE__ROLE_TYPE_ID = eINSTANCE.getSalesOpportunityRole_RoleTypeId();
+		EReference SALES_OPPORTUNITY_ROLE__ROLE_TYPE = eINSTANCE.getSalesOpportunityRole_RoleType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityStageImpl <em>Sales Opportunity Stage</em>}' class.
@@ -3324,12 +3324,12 @@ public interface OpportunityPackage extends EPackage {
 		EClass SALES_OPPORTUNITY_TRCK_CODE = eINSTANCE.getSalesOpportunityTrckCode();
 
 		/**
-		 * The meta object literal for the '<em><b>Sales Opportunity Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Sales Opportunity</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_OPPORTUNITY_TRCK_CODE__SALES_OPPORTUNITY_ID = eINSTANCE.getSalesOpportunityTrckCode_SalesOpportunityId();
+		EReference SALES_OPPORTUNITY_TRCK_CODE__SALES_OPPORTUNITY = eINSTANCE.getSalesOpportunityTrckCode_SalesOpportunity();
 
 		/**
 		 * The meta object literal for the '<em><b>Tracking Code Id</b></em>' attribute feature.
@@ -3358,20 +3358,20 @@ public interface OpportunityPackage extends EPackage {
 		EClass SALES_OPPORTUNITY_WORK_EFFORT = eINSTANCE.getSalesOpportunityWorkEffort();
 
 		/**
-		 * The meta object literal for the '<em><b>Sales Opportunity Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Sales Opportunity</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_OPPORTUNITY_WORK_EFFORT__SALES_OPPORTUNITY_ID = eINSTANCE.getSalesOpportunityWorkEffort_SalesOpportunityId();
+		EReference SALES_OPPORTUNITY_WORK_EFFORT__SALES_OPPORTUNITY = eINSTANCE.getSalesOpportunityWorkEffort_SalesOpportunity();
 
 		/**
-		 * The meta object literal for the '<em><b>Work Effort Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Work Effort</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SALES_OPPORTUNITY_WORK_EFFORT__WORK_EFFORT_ID = eINSTANCE.getSalesOpportunityWorkEffort_WorkEffortId();
+		EReference SALES_OPPORTUNITY_WORK_EFFORT__WORK_EFFORT = eINSTANCE.getSalesOpportunityWorkEffort_WorkEffort();
 
 	}
 

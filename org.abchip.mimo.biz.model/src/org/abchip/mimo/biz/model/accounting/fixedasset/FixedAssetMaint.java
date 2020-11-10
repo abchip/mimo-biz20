@@ -26,16 +26,16 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getFixedAssetId <em>Fixed Asset Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getFixedAsset <em>Fixed Asset</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getMaintHistSeqId <em>Maint Hist Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getIntervalMeterTypeId <em>Interval Meter Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getIntervalMeterType <em>Interval Meter Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getIntervalQuantity <em>Interval Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getIntervalUomId <em>Interval Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getIntervalUom <em>Interval Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getProductMaintSeqId <em>Product Maint Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getProductMaintTypeId <em>Product Maint Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getPurchaseOrderId <em>Purchase Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getScheduleWorkEffortId <em>Schedule Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getProductMaintType <em>Product Maint Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getPurchaseOrder <em>Purchase Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getScheduleWorkEffort <em>Schedule Work Effort</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint()
@@ -44,31 +44,27 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface FixedAssetMaint extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Interval Meter Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Fixed Asset</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Interval Meter Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Interval Meter Type Id</em>' reference.
-	 * @see #setIntervalMeterTypeId(ProductMeterType)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_IntervalMeterTypeId()
-	 * @model keys="productMeterTypeId"
-	 *        annotation="mimo-ent-slot help='Meter Type for intervalQuantity; if used intervalUomId is generally not used (ie one or the other)'"
+	 * @return the value of the '<em>Fixed Asset</em>' reference.
+	 * @see #setFixedAsset(FixedAsset)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_FixedAsset()
+	 * @model keys="fixedAssetId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ProductMeterType getIntervalMeterTypeId();
+	FixedAsset getFixedAsset();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getIntervalMeterTypeId <em>Interval Meter Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getFixedAsset <em>Fixed Asset</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Interval Meter Type Id</em>' reference.
-	 * @see #getIntervalMeterTypeId()
+	 * @param value the new value of the '<em>Fixed Asset</em>' reference.
+	 * @see #getFixedAsset()
 	 * @generated
 	 */
-	void setIntervalMeterTypeId(ProductMeterType value);
+	void setFixedAsset(FixedAsset value);
 
 	/**
 	 * Returns the value of the '<em><b>Interval Quantity</b></em>' attribute.
@@ -97,31 +93,27 @@ public interface FixedAssetMaint extends EntityIdentifiable, EntityInfo {
 	void setIntervalQuantity(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Interval Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Interval Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Interval Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Interval Uom Id</em>' reference.
-	 * @see #setIntervalUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_IntervalUomId()
+	 * @return the value of the '<em>Interval Uom</em>' reference.
+	 * @see #setIntervalUom(Uom)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_IntervalUom()
 	 * @model keys="uomId"
 	 *        annotation="mimo-ent-slot help='UOM for intervalQuantity; if used intervalMeterTypeId is generally not used (ie one or the other); if a meter reading is done as well that is not tied to the interval it should be tracked in a FixedAssetMeter record'"
 	 * @generated
 	 */
-	Uom getIntervalUomId();
+	Uom getIntervalUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getIntervalUomId <em>Interval Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getIntervalUom <em>Interval Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Interval Uom Id</em>' reference.
-	 * @see #getIntervalUomId()
+	 * @param value the new value of the '<em>Interval Uom</em>' reference.
+	 * @see #getIntervalUom()
 	 * @generated
 	 */
-	void setIntervalUomId(Uom value);
+	void setIntervalUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Maint Hist Seq Id</b></em>' attribute.
@@ -152,6 +144,29 @@ public interface FixedAssetMaint extends EntityIdentifiable, EntityInfo {
 	void setMaintHistSeqId(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Interval Meter Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Interval Meter Type</em>' reference.
+	 * @see #setIntervalMeterType(ProductMeterType)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_IntervalMeterType()
+	 * @model keys="productMeterTypeId"
+	 *        annotation="mimo-ent-slot help='Meter Type for intervalQuantity; if used intervalUomId is generally not used (ie one or the other)'"
+	 * @generated
+	 */
+	ProductMeterType getIntervalMeterType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getIntervalMeterType <em>Interval Meter Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Interval Meter Type</em>' reference.
+	 * @see #getIntervalMeterType()
+	 * @generated
+	 */
+	void setIntervalMeterType(ProductMeterType value);
+
+	/**
 	 * Returns the value of the '<em><b>Product Maint Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -179,136 +194,93 @@ public interface FixedAssetMaint extends EntityIdentifiable, EntityInfo {
 	void setProductMaintSeqId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Maint Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Product Maint Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Maint Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Maint Type Id</em>' reference.
-	 * @see #setProductMaintTypeId(ProductMaintType)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_ProductMaintTypeId()
+	 * @return the value of the '<em>Product Maint Type</em>' reference.
+	 * @see #setProductMaintType(ProductMaintType)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_ProductMaintType()
 	 * @model keys="productMaintTypeId"
 	 *        annotation="mimo-ent-slot help='If productMaintSeqId is known can lookup using that and the FixedAsset.productId; for un-scheduled maintenance is filled in directly'"
 	 * @generated
 	 */
-	ProductMaintType getProductMaintTypeId();
+	ProductMaintType getProductMaintType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getProductMaintTypeId <em>Product Maint Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getProductMaintType <em>Product Maint Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Maint Type Id</em>' reference.
-	 * @see #getProductMaintTypeId()
+	 * @param value the new value of the '<em>Product Maint Type</em>' reference.
+	 * @see #getProductMaintType()
 	 * @generated
 	 */
-	void setProductMaintTypeId(ProductMaintType value);
+	void setProductMaintType(ProductMaintType value);
 
 	/**
-	 * Returns the value of the '<em><b>Purchase Order Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Purchase Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Purchase Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Purchase Order Id</em>' reference.
-	 * @see #setPurchaseOrderId(OrderHeader)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_PurchaseOrderId()
+	 * @return the value of the '<em>Purchase Order</em>' reference.
+	 * @see #setPurchaseOrder(OrderHeader)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_PurchaseOrder()
 	 * @model keys="orderId"
 	 * @generated
 	 */
-	OrderHeader getPurchaseOrderId();
+	OrderHeader getPurchaseOrder();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getPurchaseOrderId <em>Purchase Order Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getPurchaseOrder <em>Purchase Order</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Purchase Order Id</em>' reference.
-	 * @see #getPurchaseOrderId()
+	 * @param value the new value of the '<em>Purchase Order</em>' reference.
+	 * @see #getPurchaseOrder()
 	 * @generated
 	 */
-	void setPurchaseOrderId(OrderHeader value);
+	void setPurchaseOrder(OrderHeader value);
 
 	/**
-	 * Returns the value of the '<em><b>Schedule Work Effort Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Schedule Work Effort</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Schedule Work Effort Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Schedule Work Effort Id</em>' reference.
-	 * @see #setScheduleWorkEffortId(WorkEffort)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_ScheduleWorkEffortId()
+	 * @return the value of the '<em>Schedule Work Effort</em>' reference.
+	 * @see #setScheduleWorkEffort(WorkEffort)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_ScheduleWorkEffort()
 	 * @model keys="workEffortId"
 	 *        annotation="mimo-ent-slot help='Has field for estimated/actual start and finish dates, etc'"
 	 * @generated
 	 */
-	WorkEffort getScheduleWorkEffortId();
+	WorkEffort getScheduleWorkEffort();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getScheduleWorkEffortId <em>Schedule Work Effort Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getScheduleWorkEffort <em>Schedule Work Effort</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Schedule Work Effort Id</em>' reference.
-	 * @see #getScheduleWorkEffortId()
+	 * @param value the new value of the '<em>Schedule Work Effort</em>' reference.
+	 * @see #getScheduleWorkEffort()
 	 * @generated
 	 */
-	void setScheduleWorkEffortId(WorkEffort value);
+	void setScheduleWorkEffort(WorkEffort value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_StatusId()
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_Status()
 	 * @model keys="statusId"
 	 * @generated
 	 */
-	StatusItem getStatusId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getStatusId <em>Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setStatusId(StatusItem value);
-
-	/**
-	 * Returns the value of the '<em><b>Fixed Asset Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fixed Asset Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fixed Asset Id</em>' reference.
-	 * @see #setFixedAssetId(FixedAsset)
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_FixedAssetId()
-	 * @model keys="fixedAssetId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	FixedAsset getFixedAssetId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint#getFixedAssetId <em>Fixed Asset Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fixed Asset Id</em>' reference.
-	 * @see #getFixedAssetId()
-	 * @generated
-	 */
-	void setFixedAssetId(FixedAsset value);
+	void setStatus(StatusItem value);
 
 } // FixedAssetMaint

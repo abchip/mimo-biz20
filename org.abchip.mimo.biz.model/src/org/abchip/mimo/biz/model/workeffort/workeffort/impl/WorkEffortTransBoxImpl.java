@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTransBoxImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTransBoxImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTransBoxImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTransBoxImpl#getProcessWorkEffortId <em>Process Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTransBoxImpl#getProcessWorkEffort <em>Process Work Effort</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTransBoxImpl#getToActivityId <em>To Activity Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTransBoxImpl#getTransitionId <em>Transition Id</em>}</li>
  * </ul>
@@ -152,8 +152,8 @@ public class WorkEffortTransBoxImpl extends EntityIdentifiableImpl implements Wo
 	 * @generated
 	 */
 	@Override
-	public WorkEffort getProcessWorkEffortId() {
-		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_TRANS_BOX__PROCESS_WORK_EFFORT_ID, true);
+	public WorkEffort getProcessWorkEffort() {
+		return (WorkEffort)eGet(WorkeffortPackage.Literals.WORK_EFFORT_TRANS_BOX__PROCESS_WORK_EFFORT, true);
 	}
 
 	/**
@@ -162,8 +162,8 @@ public class WorkEffortTransBoxImpl extends EntityIdentifiableImpl implements Wo
 	 * @generated
 	 */
 	@Override
-	public void setProcessWorkEffortId(WorkEffort newProcessWorkEffortId) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_TRANS_BOX__PROCESS_WORK_EFFORT_ID, newProcessWorkEffortId);
+	public void setProcessWorkEffort(WorkEffort newProcessWorkEffort) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_TRANS_BOX__PROCESS_WORK_EFFORT, newProcessWorkEffort);
 	}
 
 	/**

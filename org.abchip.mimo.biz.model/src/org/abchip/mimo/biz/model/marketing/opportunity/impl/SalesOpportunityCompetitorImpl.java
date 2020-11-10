@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityCompetitorImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityCompetitorImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityCompetitorImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityCompetitorImpl#getSalesOpportunityId <em>Sales Opportunity Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityCompetitorImpl#getSalesOpportunity <em>Sales Opportunity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityCompetitorImpl#getCompetitorPartyId <em>Competitor Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityCompetitorImpl#getPositionEnumId <em>Position Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityCompetitorImpl#getStrengths <em>Strengths</em>}</li>
@@ -154,6 +154,26 @@ public class SalesOpportunityCompetitorImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
+	public SalesOpportunity getSalesOpportunity() {
+		return (SalesOpportunity)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_COMPETITOR__SALES_OPPORTUNITY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSalesOpportunity(SalesOpportunity newSalesOpportunity) {
+		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_COMPETITOR__SALES_OPPORTUNITY, newSalesOpportunity);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getCompetitorPartyId() {
 		return (String)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_COMPETITOR__COMPETITOR_PARTY_ID, true);
 	}
@@ -186,26 +206,6 @@ public class SalesOpportunityCompetitorImpl extends EntityIdentifiableImpl imple
 	@Override
 	public void setPositionEnumId(String newPositionEnumId) {
 		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_COMPETITOR__POSITION_ENUM_ID, newPositionEnumId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SalesOpportunity getSalesOpportunityId() {
-		return (SalesOpportunity)eGet(OpportunityPackage.Literals.SALES_OPPORTUNITY_COMPETITOR__SALES_OPPORTUNITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSalesOpportunityId(SalesOpportunity newSalesOpportunityId) {
-		eSet(OpportunityPackage.Literals.SALES_OPPORTUNITY_COMPETITOR__SALES_OPPORTUNITY_ID, newSalesOpportunityId);
 	}
 
 	/**

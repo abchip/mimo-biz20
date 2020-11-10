@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceRoleImpl#getItemIssuanceId <em>Item Issuance Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceRoleImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceRoleImpl#getItemIssuance <em>Item Issuance</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceRoleImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.impl.ItemIssuanceRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
  * </ul>
  *
@@ -153,8 +153,8 @@ public class ItemIssuanceRoleImpl extends EntityIdentifiableImpl implements Item
 	 * @generated
 	 */
 	@Override
-	public ItemIssuance getItemIssuanceId() {
-		return (ItemIssuance)eGet(IssuancePackage.Literals.ITEM_ISSUANCE_ROLE__ITEM_ISSUANCE_ID, true);
+	public ItemIssuance getItemIssuance() {
+		return (ItemIssuance)eGet(IssuancePackage.Literals.ITEM_ISSUANCE_ROLE__ITEM_ISSUANCE, true);
 	}
 
 	/**
@@ -163,8 +163,8 @@ public class ItemIssuanceRoleImpl extends EntityIdentifiableImpl implements Item
 	 * @generated
 	 */
 	@Override
-	public void setItemIssuanceId(ItemIssuance newItemIssuanceId) {
-		eSet(IssuancePackage.Literals.ITEM_ISSUANCE_ROLE__ITEM_ISSUANCE_ID, newItemIssuanceId);
+	public void setItemIssuance(ItemIssuance newItemIssuance) {
+		eSet(IssuancePackage.Literals.ITEM_ISSUANCE_ROLE__ITEM_ISSUANCE, newItemIssuance);
 	}
 
 	/**
@@ -173,8 +173,8 @@ public class ItemIssuanceRoleImpl extends EntityIdentifiableImpl implements Item
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(IssuancePackage.Literals.ITEM_ISSUANCE_ROLE__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(IssuancePackage.Literals.ITEM_ISSUANCE_ROLE__PARTY, true);
 	}
 
 	/**
@@ -183,8 +183,8 @@ public class ItemIssuanceRoleImpl extends EntityIdentifiableImpl implements Item
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(IssuancePackage.Literals.ITEM_ISSUANCE_ROLE__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(IssuancePackage.Literals.ITEM_ISSUANCE_ROLE__PARTY, newParty);
 	}
 
 	/**

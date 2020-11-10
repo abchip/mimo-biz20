@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductFeatureImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductFeatureImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductFeatureImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductFeatureImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductFeatureImpl#getProductFeatureId <em>Product Feature Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductFeatureImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductFeatureImpl#getProductFeature <em>Product Feature</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductFeatureImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductFeatureImpl#getIdCode <em>Id Code</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductFeatureImpl#getUomId <em>Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductFeatureImpl#getUom <em>Uom</em>}</li>
  * </ul>
  *
  * @generated
@@ -156,6 +156,46 @@ public class SupplierProductFeatureImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
+	public Party getParty() {
+		return (Party)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT_FEATURE__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(SupplierPackage.Literals.SUPPLIER_PRODUCT_FEATURE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductFeature getProductFeature() {
+		return (ProductFeature)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT_FEATURE__PRODUCT_FEATURE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductFeature(ProductFeature newProductFeature) {
+		eSet(SupplierPackage.Literals.SUPPLIER_PRODUCT_FEATURE__PRODUCT_FEATURE, newProductFeature);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDescription() {
 		return (String)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT_FEATURE__DESCRIPTION, true);
 	}
@@ -196,8 +236,8 @@ public class SupplierProductFeatureImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT_FEATURE__PARTY_ID, true);
+	public Uom getUom() {
+		return (Uom)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT_FEATURE__UOM, true);
 	}
 
 	/**
@@ -206,28 +246,8 @@ public class SupplierProductFeatureImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(SupplierPackage.Literals.SUPPLIER_PRODUCT_FEATURE__PARTY_ID, newPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Uom getUomId() {
-		return (Uom)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT_FEATURE__UOM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setUomId(Uom newUomId) {
-		eSet(SupplierPackage.Literals.SUPPLIER_PRODUCT_FEATURE__UOM_ID, newUomId);
+	public void setUom(Uom newUom) {
+		eSet(SupplierPackage.Literals.SUPPLIER_PRODUCT_FEATURE__UOM, newUom);
 	}
 
 	/**
@@ -266,26 +286,6 @@ public class SupplierProductFeatureImpl extends EntityIdentifiableImpl implement
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductFeature getProductFeatureId() {
-		return (ProductFeature)eGet(SupplierPackage.Literals.SUPPLIER_PRODUCT_FEATURE__PRODUCT_FEATURE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductFeatureId(ProductFeature newProductFeatureId) {
-		eSet(SupplierPackage.Literals.SUPPLIER_PRODUCT_FEATURE__PRODUCT_FEATURE_ID, newProductFeatureId);
 	}
 
 } //SupplierProductFeatureImpl

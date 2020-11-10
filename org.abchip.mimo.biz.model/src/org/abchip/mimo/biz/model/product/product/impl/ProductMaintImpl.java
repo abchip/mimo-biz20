@@ -34,14 +34,14 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintImpl#getProductId <em>Product Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintImpl#getProduct <em>Product</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintImpl#getProductMaintSeqId <em>Product Maint Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintImpl#getIntervalMeterTypeId <em>Interval Meter Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintImpl#getIntervalMeterType <em>Interval Meter Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintImpl#getIntervalQuantity <em>Interval Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintImpl#getIntervalUomId <em>Interval Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintImpl#getIntervalUom <em>Interval Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintImpl#getMaintName <em>Maint Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintImpl#getMaintTemplateWorkEffortId <em>Maint Template Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintImpl#getProductMaintTypeId <em>Product Maint Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintImpl#getMaintTemplateWorkEffort <em>Maint Template Work Effort</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintImpl#getProductMaintType <em>Product Maint Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductMaintImpl#getRepeatCount <em>Repeat Count</em>}</li>
  * </ul>
  *
@@ -164,6 +164,26 @@ public class ProductMaintImpl extends EntityTypedImpl<ProductMaintType> implemen
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(ProductPackage.Literals.PRODUCT_MAINT__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(ProductPackage.Literals.PRODUCT_MAINT__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getIntervalQuantity() {
 		return (BigDecimal)eGet(ProductPackage.Literals.PRODUCT_MAINT__INTERVAL_QUANTITY, true);
 	}
@@ -184,8 +204,8 @@ public class ProductMaintImpl extends EntityTypedImpl<ProductMaintType> implemen
 	 * @generated
 	 */
 	@Override
-	public Uom getIntervalUomId() {
-		return (Uom)eGet(ProductPackage.Literals.PRODUCT_MAINT__INTERVAL_UOM_ID, true);
+	public Uom getIntervalUom() {
+		return (Uom)eGet(ProductPackage.Literals.PRODUCT_MAINT__INTERVAL_UOM, true);
 	}
 
 	/**
@@ -194,8 +214,8 @@ public class ProductMaintImpl extends EntityTypedImpl<ProductMaintType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setIntervalUomId(Uom newIntervalUomId) {
-		eSet(ProductPackage.Literals.PRODUCT_MAINT__INTERVAL_UOM_ID, newIntervalUomId);
+	public void setIntervalUom(Uom newIntervalUom) {
+		eSet(ProductPackage.Literals.PRODUCT_MAINT__INTERVAL_UOM, newIntervalUom);
 	}
 
 	/**
@@ -224,8 +244,8 @@ public class ProductMaintImpl extends EntityTypedImpl<ProductMaintType> implemen
 	 * @generated
 	 */
 	@Override
-	public WorkEffort getMaintTemplateWorkEffortId() {
-		return (WorkEffort)eGet(ProductPackage.Literals.PRODUCT_MAINT__MAINT_TEMPLATE_WORK_EFFORT_ID, true);
+	public WorkEffort getMaintTemplateWorkEffort() {
+		return (WorkEffort)eGet(ProductPackage.Literals.PRODUCT_MAINT__MAINT_TEMPLATE_WORK_EFFORT, true);
 	}
 
 	/**
@@ -234,8 +254,28 @@ public class ProductMaintImpl extends EntityTypedImpl<ProductMaintType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setMaintTemplateWorkEffortId(WorkEffort newMaintTemplateWorkEffortId) {
-		eSet(ProductPackage.Literals.PRODUCT_MAINT__MAINT_TEMPLATE_WORK_EFFORT_ID, newMaintTemplateWorkEffortId);
+	public void setMaintTemplateWorkEffort(WorkEffort newMaintTemplateWorkEffort) {
+		eSet(ProductPackage.Literals.PRODUCT_MAINT__MAINT_TEMPLATE_WORK_EFFORT, newMaintTemplateWorkEffort);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductMaintType getProductMaintType() {
+		return (ProductMaintType)eGet(ProductPackage.Literals.PRODUCT_MAINT__PRODUCT_MAINT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductMaintType(ProductMaintType newProductMaintType) {
+		eSet(ProductPackage.Literals.PRODUCT_MAINT__PRODUCT_MAINT_TYPE, newProductMaintType);
 	}
 
 	/**
@@ -256,6 +296,26 @@ public class ProductMaintImpl extends EntityTypedImpl<ProductMaintType> implemen
 	@Override
 	public void setProductMaintSeqId(String newProductMaintSeqId) {
 		eSet(ProductPackage.Literals.PRODUCT_MAINT__PRODUCT_MAINT_SEQ_ID, newProductMaintSeqId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductMeterType getIntervalMeterType() {
+		return (ProductMeterType)eGet(ProductPackage.Literals.PRODUCT_MAINT__INTERVAL_METER_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setIntervalMeterType(ProductMeterType newIntervalMeterType) {
+		eSet(ProductPackage.Literals.PRODUCT_MAINT__INTERVAL_METER_TYPE, newIntervalMeterType);
 	}
 
 	/**
@@ -314,66 +374,6 @@ public class ProductMaintImpl extends EntityTypedImpl<ProductMaintType> implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(ProductPackage.Literals.PRODUCT_MAINT__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(ProductPackage.Literals.PRODUCT_MAINT__PRODUCT_ID, newProductId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductMaintType getProductMaintTypeId() {
-		return (ProductMaintType)eGet(ProductPackage.Literals.PRODUCT_MAINT__PRODUCT_MAINT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductMaintTypeId(ProductMaintType newProductMaintTypeId) {
-		eSet(ProductPackage.Literals.PRODUCT_MAINT__PRODUCT_MAINT_TYPE_ID, newProductMaintTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductMeterType getIntervalMeterTypeId() {
-		return (ProductMeterType)eGet(ProductPackage.Literals.PRODUCT_MAINT__INTERVAL_METER_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setIntervalMeterTypeId(ProductMeterType newIntervalMeterTypeId) {
-		eSet(ProductPackage.Literals.PRODUCT_MAINT__INTERVAL_METER_TYPE_ID, newIntervalMeterTypeId);
 	}
 
 } //ProductMaintImpl

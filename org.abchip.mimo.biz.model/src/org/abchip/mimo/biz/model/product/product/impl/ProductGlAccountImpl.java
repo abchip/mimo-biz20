@@ -31,10 +31,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGlAccountImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGlAccountImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGlAccountImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGlAccountImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGlAccountImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGlAccountImpl#getGlAccountTypeId <em>Gl Account Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGlAccountImpl#getGlAccountId <em>Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGlAccountImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGlAccountImpl#getOrganizationParty <em>Organization Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGlAccountImpl#getGlAccountType <em>Gl Account Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductGlAccountImpl#getGlAccount <em>Gl Account</em>}</li>
  * </ul>
  *
  * @generated
@@ -156,8 +156,8 @@ public class ProductGlAccountImpl extends EntityIdentifiableImpl implements Prod
 	 * @generated
 	 */
 	@Override
-	public GlAccount getGlAccountId() {
-		return (GlAccount)eGet(ProductPackage.Literals.PRODUCT_GL_ACCOUNT__GL_ACCOUNT_ID, true);
+	public Product getProduct() {
+		return (Product)eGet(ProductPackage.Literals.PRODUCT_GL_ACCOUNT__PRODUCT, true);
 	}
 
 	/**
@@ -166,8 +166,68 @@ public class ProductGlAccountImpl extends EntityIdentifiableImpl implements Prod
 	 * @generated
 	 */
 	@Override
-	public void setGlAccountId(GlAccount newGlAccountId) {
-		eSet(ProductPackage.Literals.PRODUCT_GL_ACCOUNT__GL_ACCOUNT_ID, newGlAccountId);
+	public void setProduct(Product newProduct) {
+		eSet(ProductPackage.Literals.PRODUCT_GL_ACCOUNT__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getOrganizationParty() {
+		return (Party)eGet(ProductPackage.Literals.PRODUCT_GL_ACCOUNT__ORGANIZATION_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrganizationParty(Party newOrganizationParty) {
+		eSet(ProductPackage.Literals.PRODUCT_GL_ACCOUNT__ORGANIZATION_PARTY, newOrganizationParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GlAccountType getGlAccountType() {
+		return (GlAccountType)eGet(ProductPackage.Literals.PRODUCT_GL_ACCOUNT__GL_ACCOUNT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGlAccountType(GlAccountType newGlAccountType) {
+		eSet(ProductPackage.Literals.PRODUCT_GL_ACCOUNT__GL_ACCOUNT_TYPE, newGlAccountType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GlAccount getGlAccount() {
+		return (GlAccount)eGet(ProductPackage.Literals.PRODUCT_GL_ACCOUNT__GL_ACCOUNT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGlAccount(GlAccount newGlAccount) {
+		eSet(ProductPackage.Literals.PRODUCT_GL_ACCOUNT__GL_ACCOUNT, newGlAccount);
 	}
 
 	/**
@@ -206,66 +266,6 @@ public class ProductGlAccountImpl extends EntityIdentifiableImpl implements Prod
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GlAccountType getGlAccountTypeId() {
-		return (GlAccountType)eGet(ProductPackage.Literals.PRODUCT_GL_ACCOUNT__GL_ACCOUNT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGlAccountTypeId(GlAccountType newGlAccountTypeId) {
-		eSet(ProductPackage.Literals.PRODUCT_GL_ACCOUNT__GL_ACCOUNT_TYPE_ID, newGlAccountTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getOrganizationPartyId() {
-		return (Party)eGet(ProductPackage.Literals.PRODUCT_GL_ACCOUNT__ORGANIZATION_PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrganizationPartyId(Party newOrganizationPartyId) {
-		eSet(ProductPackage.Literals.PRODUCT_GL_ACCOUNT__ORGANIZATION_PARTY_ID, newOrganizationPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(ProductPackage.Literals.PRODUCT_GL_ACCOUNT__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(ProductPackage.Literals.PRODUCT_GL_ACCOUNT__PRODUCT_ID, newProductId);
 	}
 
 } //ProductGlAccountImpl

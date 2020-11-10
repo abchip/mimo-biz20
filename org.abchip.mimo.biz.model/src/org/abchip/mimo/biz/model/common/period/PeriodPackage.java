@@ -135,22 +135,22 @@ public interface PeriodPackage extends EPackage {
 	int CUSTOM_TIME_PERIOD__IS_CLOSED = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Organization Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Organization Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_TIME_PERIOD__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int CUSTOM_TIME_PERIOD__ORGANIZATION_PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Parent Period Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Period</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_TIME_PERIOD__PARENT_PERIOD_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int CUSTOM_TIME_PERIOD__PARENT_PERIOD = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Period Name</b></em>' attribute.
@@ -171,13 +171,13 @@ public interface PeriodPackage extends EPackage {
 	int CUSTOM_TIME_PERIOD__PERIOD_NUM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Period Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Period Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_TIME_PERIOD__PERIOD_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
+	int CUSTOM_TIME_PERIOD__PERIOD_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -280,13 +280,13 @@ public interface PeriodPackage extends EPackage {
 	int PERIOD_TYPE__PERIOD_LENGTH = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PERIOD_TYPE__UOM_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int PERIOD_TYPE__UOM = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -342,26 +342,26 @@ public interface PeriodPackage extends EPackage {
 	EAttribute getCustomTimePeriod_IsClosed();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getOrganizationPartyId <em>Organization Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getOrganizationParty <em>Organization Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Organization Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getOrganizationPartyId()
+	 * @return the meta object for the reference '<em>Organization Party</em>'.
+	 * @see org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getOrganizationParty()
 	 * @see #getCustomTimePeriod()
 	 * @generated
 	 */
-	EReference getCustomTimePeriod_OrganizationPartyId();
+	EReference getCustomTimePeriod_OrganizationParty();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getParentPeriodId <em>Parent Period Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getParentPeriod <em>Parent Period</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Period Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getParentPeriodId()
+	 * @return the meta object for the reference '<em>Parent Period</em>'.
+	 * @see org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getParentPeriod()
 	 * @see #getCustomTimePeriod()
 	 * @generated
 	 */
-	EReference getCustomTimePeriod_ParentPeriodId();
+	EReference getCustomTimePeriod_ParentPeriod();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getPeriodName <em>Period Name</em>}'.
@@ -386,15 +386,15 @@ public interface PeriodPackage extends EPackage {
 	EAttribute getCustomTimePeriod_PeriodNum();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getPeriodTypeId <em>Period Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getPeriodType <em>Period Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Period Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getPeriodTypeId()
+	 * @return the meta object for the reference '<em>Period Type</em>'.
+	 * @see org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getPeriodType()
 	 * @see #getCustomTimePeriod()
 	 * @generated
 	 */
-	EReference getCustomTimePeriod_PeriodTypeId();
+	EReference getCustomTimePeriod_PeriodType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getThruDate <em>Thru Date</em>}'.
@@ -451,15 +451,15 @@ public interface PeriodPackage extends EPackage {
 	EAttribute getPeriodType_PeriodLength();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.period.PeriodType#getUomId <em>Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.period.PeriodType#getUom <em>Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.period.PeriodType#getUomId()
+	 * @return the meta object for the reference '<em>Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.common.period.PeriodType#getUom()
 	 * @see #getPeriodType()
 	 * @generated
 	 */
-	EReference getPeriodType_UomId();
+	EReference getPeriodType_Uom();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -518,20 +518,20 @@ public interface PeriodPackage extends EPackage {
 		EAttribute CUSTOM_TIME_PERIOD__IS_CLOSED = eINSTANCE.getCustomTimePeriod_IsClosed();
 
 		/**
-		 * The meta object literal for the '<em><b>Organization Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Organization Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CUSTOM_TIME_PERIOD__ORGANIZATION_PARTY_ID = eINSTANCE.getCustomTimePeriod_OrganizationPartyId();
+		EReference CUSTOM_TIME_PERIOD__ORGANIZATION_PARTY = eINSTANCE.getCustomTimePeriod_OrganizationParty();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Period Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Period</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CUSTOM_TIME_PERIOD__PARENT_PERIOD_ID = eINSTANCE.getCustomTimePeriod_ParentPeriodId();
+		EReference CUSTOM_TIME_PERIOD__PARENT_PERIOD = eINSTANCE.getCustomTimePeriod_ParentPeriod();
 
 		/**
 		 * The meta object literal for the '<em><b>Period Name</b></em>' attribute feature.
@@ -550,12 +550,12 @@ public interface PeriodPackage extends EPackage {
 		EAttribute CUSTOM_TIME_PERIOD__PERIOD_NUM = eINSTANCE.getCustomTimePeriod_PeriodNum();
 
 		/**
-		 * The meta object literal for the '<em><b>Period Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Period Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CUSTOM_TIME_PERIOD__PERIOD_TYPE_ID = eINSTANCE.getCustomTimePeriod_PeriodTypeId();
+		EReference CUSTOM_TIME_PERIOD__PERIOD_TYPE = eINSTANCE.getCustomTimePeriod_PeriodType();
 
 		/**
 		 * The meta object literal for the '<em><b>Thru Date</b></em>' attribute feature.
@@ -600,12 +600,12 @@ public interface PeriodPackage extends EPackage {
 		EAttribute PERIOD_TYPE__PERIOD_LENGTH = eINSTANCE.getPeriodType_PeriodLength();
 
 		/**
-		 * The meta object literal for the '<em><b>Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PERIOD_TYPE__UOM_ID = eINSTANCE.getPeriodType_UomId();
+		EReference PERIOD_TYPE__UOM = eINSTANCE.getPeriodType_Uom();
 
 	}
 

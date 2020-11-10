@@ -20,8 +20,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuanceRole#getItemIssuanceId <em>Item Issuance Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuanceRole#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuanceRole#getItemIssuance <em>Item Issuance</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuanceRole#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuanceRole#getRoleTypeId <em>Role Type Id</em>}</li>
  * </ul>
  *
@@ -31,58 +31,50 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface ItemIssuanceRole extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Item Issuance Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Item Issuance</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Item Issuance Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Item Issuance Id</em>' reference.
-	 * @see #setItemIssuanceId(ItemIssuance)
-	 * @see org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage#getItemIssuanceRole_ItemIssuanceId()
+	 * @return the value of the '<em>Item Issuance</em>' reference.
+	 * @see #setItemIssuance(ItemIssuance)
+	 * @see org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage#getItemIssuanceRole_ItemIssuance()
 	 * @model keys="itemIssuanceId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ItemIssuance getItemIssuanceId();
+	ItemIssuance getItemIssuance();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuanceRole#getItemIssuanceId <em>Item Issuance Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuanceRole#getItemIssuance <em>Item Issuance</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Item Issuance Id</em>' reference.
-	 * @see #getItemIssuanceId()
+	 * @param value the new value of the '<em>Item Issuance</em>' reference.
+	 * @see #getItemIssuance()
 	 * @generated
 	 */
-	void setItemIssuanceId(ItemIssuance value);
+	void setItemIssuance(ItemIssuance value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage#getItemIssuanceRole_PartyId()
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage#getItemIssuanceRole_Party()
 	 * @model keys="partyId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Party getPartyId();
+	Party getParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuanceRole#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.issuance.ItemIssuanceRole#getParty <em>Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setParty(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Role Type Id</b></em>' attribute.

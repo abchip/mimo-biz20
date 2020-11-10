@@ -34,10 +34,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupImpl#getSegmentGroupId <em>Segment Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupImpl#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupImpl#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupImpl#getSegmentGroupClassifications <em>Segment Group Classifications</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupImpl#getSegmentGroupGeos <em>Segment Group Geos</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupImpl#getSegmentGroupTypeId <em>Segment Group Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupImpl#getSegmentGroupType <em>Segment Group Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -179,8 +179,8 @@ public class SegmentGroupImpl extends EntityTypedImpl<SegmentGroupType> implemen
 	 * @generated
 	 */
 	@Override
-	public ProductStore getProductStoreId() {
-		return (ProductStore)eGet(SegmentPackage.Literals.SEGMENT_GROUP__PRODUCT_STORE_ID, true);
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(SegmentPackage.Literals.SEGMENT_GROUP__PRODUCT_STORE, true);
 	}
 
 	/**
@@ -189,8 +189,8 @@ public class SegmentGroupImpl extends EntityTypedImpl<SegmentGroupType> implemen
 	 * @generated
 	 */
 	@Override
-	public void setProductStoreId(ProductStore newProductStoreId) {
-		eSet(SegmentPackage.Literals.SEGMENT_GROUP__PRODUCT_STORE_ID, newProductStoreId);
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(SegmentPackage.Literals.SEGMENT_GROUP__PRODUCT_STORE, newProductStore);
 	}
 
 	/**
@@ -221,6 +221,26 @@ public class SegmentGroupImpl extends EntityTypedImpl<SegmentGroupType> implemen
 	 * @generated
 	 */
 	@Override
+	public SegmentGroupType getSegmentGroupType() {
+		return (SegmentGroupType)eGet(SegmentPackage.Literals.SEGMENT_GROUP__SEGMENT_GROUP_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSegmentGroupType(SegmentGroupType newSegmentGroupType) {
+		eSet(SegmentPackage.Literals.SEGMENT_GROUP__SEGMENT_GROUP_TYPE, newSegmentGroupType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getSegmentGroupId() {
 		return (String)eGet(SegmentPackage.Literals.SEGMENT_GROUP__SEGMENT_GROUP_ID, true);
 	}
@@ -233,26 +253,6 @@ public class SegmentGroupImpl extends EntityTypedImpl<SegmentGroupType> implemen
 	@Override
 	public void setSegmentGroupId(String newSegmentGroupId) {
 		eSet(SegmentPackage.Literals.SEGMENT_GROUP__SEGMENT_GROUP_ID, newSegmentGroupId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SegmentGroupType getSegmentGroupTypeId() {
-		return (SegmentGroupType)eGet(SegmentPackage.Literals.SEGMENT_GROUP__SEGMENT_GROUP_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSegmentGroupTypeId(SegmentGroupType newSegmentGroupTypeId) {
-		eSet(SegmentPackage.Literals.SEGMENT_GROUP__SEGMENT_GROUP_TYPE_ID, newSegmentGroupTypeId);
 	}
 
 	/**

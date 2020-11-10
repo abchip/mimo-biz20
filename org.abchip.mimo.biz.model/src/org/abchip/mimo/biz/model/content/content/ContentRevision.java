@@ -20,10 +20,10 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentRevision#getContentId <em>Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentRevision#getContent <em>Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentRevision#getContentRevisionSeqId <em>Content Revision Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentRevision#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentRevision#getCommittedByPartyId <em>Committed By Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentRevision#getCommittedByParty <em>Committed By Party</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentRevision()
@@ -31,6 +31,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ContentRevision extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Content</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Content</em>' reference.
+	 * @see #setContent(Content)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentRevision_Content()
+	 * @model keys="contentId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Content getContent();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentRevision#getContent <em>Content</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Content</em>' reference.
+	 * @see #getContent()
+	 * @generated
+	 */
+	void setContent(Content value);
+
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -58,57 +81,26 @@ public interface ContentRevision extends EntityIdentifiable, EntityInfo {
 	void setComments(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Committed By Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Committed By Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Committed By Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Committed By Party Id</em>' reference.
-	 * @see #setCommittedByPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentRevision_CommittedByPartyId()
+	 * @return the value of the '<em>Committed By Party</em>' reference.
+	 * @see #setCommittedByParty(Party)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentRevision_CommittedByParty()
 	 * @model keys="partyId"
 	 * @generated
 	 */
-	Party getCommittedByPartyId();
+	Party getCommittedByParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentRevision#getCommittedByPartyId <em>Committed By Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentRevision#getCommittedByParty <em>Committed By Party</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Committed By Party Id</em>' reference.
-	 * @see #getCommittedByPartyId()
+	 * @param value the new value of the '<em>Committed By Party</em>' reference.
+	 * @see #getCommittedByParty()
 	 * @generated
 	 */
-	void setCommittedByPartyId(Party value);
-
-	/**
-	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Id</em>' reference.
-	 * @see #setContentId(Content)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentRevision_ContentId()
-	 * @model keys="contentId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Content getContentId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentRevision#getContentId <em>Content Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Id</em>' reference.
-	 * @see #getContentId()
-	 * @generated
-	 */
-	void setContentId(Content value);
+	void setCommittedByParty(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Content Revision Seq Id</b></em>' attribute.

@@ -632,13 +632,13 @@ public interface TestPackage extends EPackage {
 	int TESTING__TESTING_SIZE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
-	 * The feature id for the '<em><b>Testing Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Testing Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING__TESTING_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
+	int TESTING__TESTING_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Testing</em>' class.
@@ -796,13 +796,13 @@ public interface TestPackage extends EPackage {
 	int TESTING_ITEM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Testing Id</b></em>' reference.
+	 * The feature id for the '<em><b>Testing</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_ITEM__TESTING_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int TESTING_ITEM__TESTING = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Testing Seq Id</b></em>' attribute.
@@ -896,13 +896,13 @@ public interface TestPackage extends EPackage {
 	int TESTING_NODE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Primary Parent Node Id</b></em>' reference.
+	 * The feature id for the '<em><b>Primary Parent Node</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE__PRIMARY_PARENT_NODE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int TESTING_NODE__PRIMARY_PARENT_NODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Testing Node Members</b></em>' reference list.
@@ -969,22 +969,22 @@ public interface TestPackage extends EPackage {
 	int TESTING_NODE_MEMBER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Testing Id</b></em>' reference.
+	 * The feature id for the '<em><b>Testing</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE_MEMBER__TESTING_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int TESTING_NODE_MEMBER__TESTING = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Testing Node Id</b></em>' reference.
+	 * The feature id for the '<em><b>Testing Node</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE_MEMBER__TESTING_NODE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int TESTING_NODE_MEMBER__TESTING_NODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1160,13 +1160,22 @@ public interface TestPackage extends EPackage {
 	int TESTING_STATUS__TESTING_STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Change By User Login Id</b></em>' reference.
+	 * The feature id for the '<em><b>Change By User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_STATUS__CHANGE_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int TESTING_STATUS__CHANGE_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Status</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TESTING_STATUS__STATUS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Status Date</b></em>' attribute.
@@ -1175,16 +1184,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_STATUS__STATUS_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
-
-	/**
-	 * The feature id for the '<em><b>Status Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TESTING_STATUS__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int TESTING_STATUS__STATUS_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Testing Id</b></em>' attribute.
@@ -1897,15 +1897,15 @@ public interface TestPackage extends EPackage {
 	EAttribute getTesting_TestingSize();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.test.Testing#getTestingTypeId <em>Testing Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.test.Testing#getTestingType <em>Testing Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Testing Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.entity.test.Testing#getTestingTypeId()
+	 * @return the meta object for the reference '<em>Testing Type</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.Testing#getTestingType()
 	 * @see #getTesting()
 	 * @generated
 	 */
-	EReference getTesting_TestingTypeId();
+	EReference getTesting_TestingType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.entity.test.TestingCrypto <em>Testing Crypto</em>}'.
@@ -1983,15 +1983,15 @@ public interface TestPackage extends EPackage {
 	EClass getTestingItem();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.test.TestingItem#getTestingId <em>Testing Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.test.TestingItem#getTesting <em>Testing</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Testing Id</em>'.
-	 * @see org.abchip.mimo.biz.model.entity.test.TestingItem#getTestingId()
+	 * @return the meta object for the reference '<em>Testing</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestingItem#getTesting()
 	 * @see #getTestingItem()
 	 * @generated
 	 */
-	EReference getTestingItem_TestingId();
+	EReference getTestingItem_Testing();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestingItem#getTestingSeqId <em>Testing Seq Id</em>}'.
@@ -2048,15 +2048,15 @@ public interface TestPackage extends EPackage {
 	EAttribute getTestingNode_Description();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.test.TestingNode#getPrimaryParentNodeId <em>Primary Parent Node Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.test.TestingNode#getPrimaryParentNode <em>Primary Parent Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Primary Parent Node Id</em>'.
-	 * @see org.abchip.mimo.biz.model.entity.test.TestingNode#getPrimaryParentNodeId()
+	 * @return the meta object for the reference '<em>Primary Parent Node</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestingNode#getPrimaryParentNode()
 	 * @see #getTestingNode()
 	 * @generated
 	 */
-	EReference getTestingNode_PrimaryParentNodeId();
+	EReference getTestingNode_PrimaryParentNode();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.entity.test.TestingNode#getTestingNodeMembers <em>Testing Node Members</em>}'.
@@ -2080,26 +2080,26 @@ public interface TestPackage extends EPackage {
 	EClass getTestingNodeMember();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.test.TestingNodeMember#getTestingNodeId <em>Testing Node Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.test.TestingNodeMember#getTesting <em>Testing</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Testing Node Id</em>'.
-	 * @see org.abchip.mimo.biz.model.entity.test.TestingNodeMember#getTestingNodeId()
+	 * @return the meta object for the reference '<em>Testing</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestingNodeMember#getTesting()
 	 * @see #getTestingNodeMember()
 	 * @generated
 	 */
-	EReference getTestingNodeMember_TestingNodeId();
+	EReference getTestingNodeMember_Testing();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.test.TestingNodeMember#getTestingId <em>Testing Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.test.TestingNodeMember#getTestingNode <em>Testing Node</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Testing Id</em>'.
-	 * @see org.abchip.mimo.biz.model.entity.test.TestingNodeMember#getTestingId()
+	 * @return the meta object for the reference '<em>Testing Node</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestingNodeMember#getTestingNode()
 	 * @see #getTestingNodeMember()
 	 * @generated
 	 */
-	EReference getTestingNodeMember_TestingId();
+	EReference getTestingNodeMember_TestingNode();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestingNodeMember#getFromDate <em>From Date</em>}'.
@@ -2199,15 +2199,26 @@ public interface TestPackage extends EPackage {
 	EAttribute getTestingStatus_TestingStatusId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.test.TestingStatus#getChangeByUserLoginId <em>Change By User Login Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.test.TestingStatus#getChangeByUserLogin <em>Change By User Login</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Change By User Login Id</em>'.
-	 * @see org.abchip.mimo.biz.model.entity.test.TestingStatus#getChangeByUserLoginId()
+	 * @return the meta object for the reference '<em>Change By User Login</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestingStatus#getChangeByUserLogin()
 	 * @see #getTestingStatus()
 	 * @generated
 	 */
-	EReference getTestingStatus_ChangeByUserLoginId();
+	EReference getTestingStatus_ChangeByUserLogin();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.test.TestingStatus#getStatus <em>Status</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Status</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestingStatus#getStatus()
+	 * @see #getTestingStatus()
+	 * @generated
+	 */
+	EReference getTestingStatus_Status();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestingStatus#getStatusDate <em>Status Date</em>}'.
@@ -2219,17 +2230,6 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getTestingStatus_StatusDate();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.entity.test.TestingStatus#getStatusId <em>Status Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Status Id</em>'.
-	 * @see org.abchip.mimo.biz.model.entity.test.TestingStatus#getStatusId()
-	 * @see #getTestingStatus()
-	 * @generated
-	 */
-	EReference getTestingStatus_StatusId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestingStatus#getTestingId <em>Testing Id</em>}'.
@@ -2727,12 +2727,12 @@ public interface TestPackage extends EPackage {
 		EAttribute TESTING__TESTING_SIZE = eINSTANCE.getTesting_TestingSize();
 
 		/**
-		 * The meta object literal for the '<em><b>Testing Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Testing Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TESTING__TESTING_TYPE_ID = eINSTANCE.getTesting_TestingTypeId();
+		EReference TESTING__TESTING_TYPE = eINSTANCE.getTesting_TestingType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.entity.test.impl.TestingCryptoImpl <em>Testing Crypto</em>}' class.
@@ -2795,12 +2795,12 @@ public interface TestPackage extends EPackage {
 		EClass TESTING_ITEM = eINSTANCE.getTestingItem();
 
 		/**
-		 * The meta object literal for the '<em><b>Testing Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Testing</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TESTING_ITEM__TESTING_ID = eINSTANCE.getTestingItem_TestingId();
+		EReference TESTING_ITEM__TESTING = eINSTANCE.getTestingItem_Testing();
 
 		/**
 		 * The meta object literal for the '<em><b>Testing Seq Id</b></em>' attribute feature.
@@ -2845,12 +2845,12 @@ public interface TestPackage extends EPackage {
 		EAttribute TESTING_NODE__DESCRIPTION = eINSTANCE.getTestingNode_Description();
 
 		/**
-		 * The meta object literal for the '<em><b>Primary Parent Node Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Primary Parent Node</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TESTING_NODE__PRIMARY_PARENT_NODE_ID = eINSTANCE.getTestingNode_PrimaryParentNodeId();
+		EReference TESTING_NODE__PRIMARY_PARENT_NODE = eINSTANCE.getTestingNode_PrimaryParentNode();
 
 		/**
 		 * The meta object literal for the '<em><b>Testing Node Members</b></em>' reference list feature.
@@ -2871,20 +2871,20 @@ public interface TestPackage extends EPackage {
 		EClass TESTING_NODE_MEMBER = eINSTANCE.getTestingNodeMember();
 
 		/**
-		 * The meta object literal for the '<em><b>Testing Node Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Testing</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TESTING_NODE_MEMBER__TESTING_NODE_ID = eINSTANCE.getTestingNodeMember_TestingNodeId();
+		EReference TESTING_NODE_MEMBER__TESTING = eINSTANCE.getTestingNodeMember_Testing();
 
 		/**
-		 * The meta object literal for the '<em><b>Testing Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Testing Node</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TESTING_NODE_MEMBER__TESTING_ID = eINSTANCE.getTestingNodeMember_TestingId();
+		EReference TESTING_NODE_MEMBER__TESTING_NODE = eINSTANCE.getTestingNodeMember_TestingNode();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -2963,12 +2963,20 @@ public interface TestPackage extends EPackage {
 		EAttribute TESTING_STATUS__TESTING_STATUS_ID = eINSTANCE.getTestingStatus_TestingStatusId();
 
 		/**
-		 * The meta object literal for the '<em><b>Change By User Login Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Change By User Login</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TESTING_STATUS__CHANGE_BY_USER_LOGIN_ID = eINSTANCE.getTestingStatus_ChangeByUserLoginId();
+		EReference TESTING_STATUS__CHANGE_BY_USER_LOGIN = eINSTANCE.getTestingStatus_ChangeByUserLogin();
+
+		/**
+		 * The meta object literal for the '<em><b>Status</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TESTING_STATUS__STATUS = eINSTANCE.getTestingStatus_Status();
 
 		/**
 		 * The meta object literal for the '<em><b>Status Date</b></em>' attribute feature.
@@ -2977,14 +2985,6 @@ public interface TestPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute TESTING_STATUS__STATUS_DATE = eINSTANCE.getTestingStatus_StatusDate();
-
-		/**
-		 * The meta object literal for the '<em><b>Status Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference TESTING_STATUS__STATUS_ID = eINSTANCE.getTestingStatus_StatusId();
 
 		/**
 		 * The meta object literal for the '<em><b>Testing Id</b></em>' attribute feature.

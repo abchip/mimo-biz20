@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingNode#getTestingNodeId <em>Testing Node Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingNode#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingNode#getPrimaryParentNodeId <em>Primary Parent Node Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingNode#getPrimaryParentNode <em>Primary Parent Node</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingNode#getTestingNodeMembers <em>Testing Node Members</em>}</li>
  * </ul>
  *
@@ -58,30 +58,26 @@ public interface TestingNode extends EntityIdentifiable, EntityInfo {
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Primary Parent Node Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Primary Parent Node</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Primary Parent Node Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Primary Parent Node Id</em>' reference.
-	 * @see #setPrimaryParentNodeId(TestingNode)
-	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingNode_PrimaryParentNodeId()
+	 * @return the value of the '<em>Primary Parent Node</em>' reference.
+	 * @see #setPrimaryParentNode(TestingNode)
+	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingNode_PrimaryParentNode()
 	 * @model keys="testingNodeId"
 	 * @generated
 	 */
-	TestingNode getPrimaryParentNodeId();
+	TestingNode getPrimaryParentNode();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.test.TestingNode#getPrimaryParentNodeId <em>Primary Parent Node Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.test.TestingNode#getPrimaryParentNode <em>Primary Parent Node</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Primary Parent Node Id</em>' reference.
-	 * @see #getPrimaryParentNodeId()
+	 * @param value the new value of the '<em>Primary Parent Node</em>' reference.
+	 * @see #getPrimaryParentNode()
 	 * @generated
 	 */
-	void setPrimaryParentNodeId(TestingNode value);
+	void setPrimaryParentNode(TestingNode value);
 
 	/**
 	 * Returns the value of the '<em><b>Testing Node Members</b></em>' reference list.

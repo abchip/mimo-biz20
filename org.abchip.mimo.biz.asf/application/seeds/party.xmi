@@ -12,22 +12,22 @@
       xsi:type="biz-party:PartyGroup"
       partyId="ITA_ADE"
       groupName="Agenzia delle Entrata">
-    <partyTypeId
+    <partyType
         href="seed-initial.xmi#PARTY_GROUP"/>
-    <statusId
+    <status
         href="seed-initial.xmi#PARTY_ENABLED"/>
   </contents>
   <contents
       xsi:type="biz-party:PartyRole"
-      partyId="ITA_ADE">
-    <roleTypeId
+      party="ITA_ADE">
+    <roleType
         href="seed-initial.xmi#TAX_AUTHORITY"/>
   </contents>
   <contents
       xsi:type="biz-tax:TaxAuthority"
-      taxAuthPartyId="ITA_ADE"
+      taxAuthParty="ITA_ADE"
       taxIdFormatPattern="^(IT-?)?[0-9]{11}$">
-    <taxAuthGeoId
+    <taxAuthGeo
         href="seed-initial.xmi#ITA"/>
   </contents>
 </mimo-ent:EntityContainer>

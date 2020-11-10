@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupClassificationImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupClassificationImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupClassificationImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupClassificationImpl#getSegmentGroupId <em>Segment Group Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupClassificationImpl#getPartyClassificationGroupId <em>Party Classification Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupClassificationImpl#getSegmentGroup <em>Segment Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupClassificationImpl#getPartyClassificationGroup <em>Party Classification Group</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class SegmentGroupClassificationImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public PartyClassificationGroup getPartyClassificationGroupId() {
-		return (PartyClassificationGroup)eGet(SegmentPackage.Literals.SEGMENT_GROUP_CLASSIFICATION__PARTY_CLASSIFICATION_GROUP_ID, true);
+	public SegmentGroup getSegmentGroup() {
+		return (SegmentGroup)eGet(SegmentPackage.Literals.SEGMENT_GROUP_CLASSIFICATION__SEGMENT_GROUP, true);
 	}
 
 	/**
@@ -162,8 +162,28 @@ public class SegmentGroupClassificationImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setPartyClassificationGroupId(PartyClassificationGroup newPartyClassificationGroupId) {
-		eSet(SegmentPackage.Literals.SEGMENT_GROUP_CLASSIFICATION__PARTY_CLASSIFICATION_GROUP_ID, newPartyClassificationGroupId);
+	public void setSegmentGroup(SegmentGroup newSegmentGroup) {
+		eSet(SegmentPackage.Literals.SEGMENT_GROUP_CLASSIFICATION__SEGMENT_GROUP, newSegmentGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PartyClassificationGroup getPartyClassificationGroup() {
+		return (PartyClassificationGroup)eGet(SegmentPackage.Literals.SEGMENT_GROUP_CLASSIFICATION__PARTY_CLASSIFICATION_GROUP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPartyClassificationGroup(PartyClassificationGroup newPartyClassificationGroup) {
+		eSet(SegmentPackage.Literals.SEGMENT_GROUP_CLASSIFICATION__PARTY_CLASSIFICATION_GROUP, newPartyClassificationGroup);
 	}
 
 	/**
@@ -202,26 +222,6 @@ public class SegmentGroupClassificationImpl extends EntityIdentifiableImpl imple
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SegmentGroup getSegmentGroupId() {
-		return (SegmentGroup)eGet(SegmentPackage.Literals.SEGMENT_GROUP_CLASSIFICATION__SEGMENT_GROUP_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSegmentGroupId(SegmentGroup newSegmentGroupId) {
-		eSet(SegmentPackage.Literals.SEGMENT_GROUP_CLASSIFICATION__SEGMENT_GROUP_ID, newSegmentGroupId);
 	}
 
 } //SegmentGroupClassificationImpl

@@ -19,8 +19,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionFulfillmentPiece#getSubscriptionId <em>Subscription Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionFulfillmentPiece#getSubscriptionActivityId <em>Subscription Activity Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionFulfillmentPiece#getSubscription <em>Subscription</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionFulfillmentPiece#getSubscriptionActivity <em>Subscription Activity</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionFulfillmentPiece()
@@ -29,57 +29,49 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface SubscriptionFulfillmentPiece extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Subscription Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Subscription</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Subscription Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Subscription Id</em>' reference.
-	 * @see #setSubscriptionId(Subscription)
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionFulfillmentPiece_SubscriptionId()
+	 * @return the value of the '<em>Subscription</em>' reference.
+	 * @see #setSubscription(Subscription)
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionFulfillmentPiece_Subscription()
 	 * @model keys="subscriptionId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Subscription getSubscriptionId();
+	Subscription getSubscription();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionFulfillmentPiece#getSubscriptionId <em>Subscription Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionFulfillmentPiece#getSubscription <em>Subscription</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Subscription Id</em>' reference.
-	 * @see #getSubscriptionId()
+	 * @param value the new value of the '<em>Subscription</em>' reference.
+	 * @see #getSubscription()
 	 * @generated
 	 */
-	void setSubscriptionId(Subscription value);
+	void setSubscription(Subscription value);
 
 	/**
-	 * Returns the value of the '<em><b>Subscription Activity Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Subscription Activity</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Subscription Activity Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Subscription Activity Id</em>' reference.
-	 * @see #setSubscriptionActivityId(SubscriptionActivity)
-	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionFulfillmentPiece_SubscriptionActivityId()
+	 * @return the value of the '<em>Subscription Activity</em>' reference.
+	 * @see #setSubscriptionActivity(SubscriptionActivity)
+	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionFulfillmentPiece_SubscriptionActivity()
 	 * @model keys="subscriptionActivityId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	SubscriptionActivity getSubscriptionActivityId();
+	SubscriptionActivity getSubscriptionActivity();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionFulfillmentPiece#getSubscriptionActivityId <em>Subscription Activity Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.SubscriptionFulfillmentPiece#getSubscriptionActivity <em>Subscription Activity</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Subscription Activity Id</em>' reference.
-	 * @see #getSubscriptionActivityId()
+	 * @param value the new value of the '<em>Subscription Activity</em>' reference.
+	 * @see #getSubscriptionActivity()
 	 * @generated
 	 */
-	void setSubscriptionActivityId(SubscriptionActivity value);
+	void setSubscriptionActivity(SubscriptionActivity value);
 
 } // SubscriptionFulfillmentPiece

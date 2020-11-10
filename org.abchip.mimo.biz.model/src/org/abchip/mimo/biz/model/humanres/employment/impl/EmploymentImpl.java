@@ -35,8 +35,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentImpl#getRoleTypeIdFrom <em>Role Type Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentImpl#getRoleTypeIdTo <em>Role Type Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentImpl#getTerminationReasonId <em>Termination Reason Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentImpl#getTerminationTypeId <em>Termination Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentImpl#getTerminationReason <em>Termination Reason</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentImpl#getTerminationType <em>Termination Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -259,8 +259,8 @@ public class EmploymentImpl extends EntityTypedImpl<TerminationType> implements 
 	 * @generated
 	 */
 	@Override
-	public TerminationReason getTerminationReasonId() {
-		return (TerminationReason)eGet(EmploymentPackage.Literals.EMPLOYMENT__TERMINATION_REASON_ID, true);
+	public TerminationReason getTerminationReason() {
+		return (TerminationReason)eGet(EmploymentPackage.Literals.EMPLOYMENT__TERMINATION_REASON, true);
 	}
 
 	/**
@@ -269,8 +269,8 @@ public class EmploymentImpl extends EntityTypedImpl<TerminationType> implements 
 	 * @generated
 	 */
 	@Override
-	public void setTerminationReasonId(TerminationReason newTerminationReasonId) {
-		eSet(EmploymentPackage.Literals.EMPLOYMENT__TERMINATION_REASON_ID, newTerminationReasonId);
+	public void setTerminationReason(TerminationReason newTerminationReason) {
+		eSet(EmploymentPackage.Literals.EMPLOYMENT__TERMINATION_REASON, newTerminationReason);
 	}
 
 	/**
@@ -279,8 +279,8 @@ public class EmploymentImpl extends EntityTypedImpl<TerminationType> implements 
 	 * @generated
 	 */
 	@Override
-	public TerminationType getTerminationTypeId() {
-		return (TerminationType)eGet(EmploymentPackage.Literals.EMPLOYMENT__TERMINATION_TYPE_ID, true);
+	public TerminationType getTerminationType() {
+		return (TerminationType)eGet(EmploymentPackage.Literals.EMPLOYMENT__TERMINATION_TYPE, true);
 	}
 
 	/**
@@ -289,8 +289,8 @@ public class EmploymentImpl extends EntityTypedImpl<TerminationType> implements 
 	 * @generated
 	 */
 	@Override
-	public void setTerminationTypeId(TerminationType newTerminationTypeId) {
-		eSet(EmploymentPackage.Literals.EMPLOYMENT__TERMINATION_TYPE_ID, newTerminationTypeId);
+	public void setTerminationType(TerminationType newTerminationType) {
+		eSet(EmploymentPackage.Literals.EMPLOYMENT__TERMINATION_TYPE, newTerminationType);
 	}
 
 	/**

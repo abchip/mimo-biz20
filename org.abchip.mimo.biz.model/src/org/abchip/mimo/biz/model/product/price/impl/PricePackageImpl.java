@@ -779,17 +779,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getProductFeaturePrice_ProductFeatureId() {
-		return (EAttribute)productFeaturePriceEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getProductFeaturePrice_ProductPriceTypeId() {
+	public EReference getProductFeaturePrice_ProductPriceType() {
 		return (EReference)productFeaturePriceEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -799,8 +789,18 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductFeaturePrice_CurrencyUomId() {
+	public EReference getProductFeaturePrice_CurrencyUom() {
 		return (EReference)productFeaturePriceEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getProductFeaturePrice_ProductFeatureId() {
+		return (EAttribute)productFeaturePriceEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -889,7 +889,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductPaymentMethodType_ProductId() {
+	public EReference getProductPaymentMethodType_Product() {
 		return (EReference)productPaymentMethodTypeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -899,7 +899,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductPaymentMethodType_PaymentMethodTypeId() {
+	public EReference getProductPaymentMethodType_PaymentMethodType() {
 		return (EReference)productPaymentMethodTypeEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -909,7 +909,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductPaymentMethodType_ProductPricePurposeId() {
+	public EReference getProductPaymentMethodType_ProductPricePurpose() {
 		return (EReference)productPaymentMethodTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -959,7 +959,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductPrice_ProductId() {
+	public EReference getProductPrice_Product() {
 		return (EReference)productPriceEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -969,7 +969,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductPrice_ProductPriceTypeId() {
+	public EReference getProductPrice_ProductPriceType() {
 		return (EReference)productPriceEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -979,7 +979,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductPrice_ProductPricePurposeId() {
+	public EReference getProductPrice_ProductPricePurpose() {
 		return (EReference)productPriceEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -989,7 +989,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductPrice_CurrencyUomId() {
+	public EReference getProductPrice_CurrencyUom() {
 		return (EReference)productPriceEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -999,7 +999,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductPrice_ProductStoreGroupId() {
+	public EReference getProductPrice_ProductStoreGroup() {
 		return (EReference)productPriceEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -1109,7 +1109,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductPrice_TaxAuthGeoId() {
+	public EReference getProductPrice_TaxAuthGeo() {
 		return (EReference)productPriceEClass.getEStructuralFeatures().get(15);
 	}
 
@@ -1119,7 +1119,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductPrice_TaxAuthPartyId() {
+	public EReference getProductPrice_TaxAuthParty() {
 		return (EReference)productPriceEClass.getEStructuralFeatures().get(16);
 	}
 
@@ -1149,7 +1149,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductPrice_TermUomId() {
+	public EReference getProductPrice_TermUom() {
 		return (EReference)productPriceEClass.getEStructuralFeatures().get(19);
 	}
 
@@ -1179,7 +1179,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductPriceAction_ProductPriceRuleId() {
+	public EReference getProductPriceAction_ProductPriceRule() {
 		return (EReference)productPriceActionEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1209,7 +1209,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductPriceAction_ProductPriceActionTypeId() {
+	public EReference getProductPriceAction_ProductPriceActionType() {
 		return (EReference)productPriceActionEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1459,7 +1459,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductPriceCond_ProductPriceRuleId() {
+	public EReference getProductPriceCond_ProductPriceRule() {
 		return (EReference)productPriceCondEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1489,7 +1489,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductPriceCond_InputParamEnumId() {
+	public EReference getProductPriceCond_InputParamEnum() {
 		return (EReference)productPriceCondEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1499,7 +1499,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductPriceCond_OperatorEnumId() {
+	public EReference getProductPriceCond_OperatorEnum() {
 		return (EReference)productPriceCondEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -1689,7 +1689,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getQuantityBreak_QuantityBreakTypeId() {
+	public EReference getQuantityBreak_QuantityBreakType() {
 		return (EReference)quantityBreakEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -1793,8 +1793,8 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 
 		// Create classes and their features
 		productFeaturePriceEClass = createEClass(PRODUCT_FEATURE_PRICE);
-		createEReference(productFeaturePriceEClass, PRODUCT_FEATURE_PRICE__PRODUCT_PRICE_TYPE_ID);
-		createEReference(productFeaturePriceEClass, PRODUCT_FEATURE_PRICE__CURRENCY_UOM_ID);
+		createEReference(productFeaturePriceEClass, PRODUCT_FEATURE_PRICE__PRODUCT_PRICE_TYPE);
+		createEReference(productFeaturePriceEClass, PRODUCT_FEATURE_PRICE__CURRENCY_UOM);
 		createEAttribute(productFeaturePriceEClass, PRODUCT_FEATURE_PRICE__FROM_DATE);
 		createEAttribute(productFeaturePriceEClass, PRODUCT_FEATURE_PRICE__PRODUCT_FEATURE_ID);
 		createEReference(productFeaturePriceEClass, PRODUCT_FEATURE_PRICE__CREATED_BY_USER_LOGIN);
@@ -1805,19 +1805,19 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 		createEAttribute(productFeaturePriceEClass, PRODUCT_FEATURE_PRICE__THRU_DATE);
 
 		productPaymentMethodTypeEClass = createEClass(PRODUCT_PAYMENT_METHOD_TYPE);
-		createEReference(productPaymentMethodTypeEClass, PRODUCT_PAYMENT_METHOD_TYPE__PRODUCT_ID);
-		createEReference(productPaymentMethodTypeEClass, PRODUCT_PAYMENT_METHOD_TYPE__PAYMENT_METHOD_TYPE_ID);
-		createEReference(productPaymentMethodTypeEClass, PRODUCT_PAYMENT_METHOD_TYPE__PRODUCT_PRICE_PURPOSE_ID);
+		createEReference(productPaymentMethodTypeEClass, PRODUCT_PAYMENT_METHOD_TYPE__PRODUCT);
+		createEReference(productPaymentMethodTypeEClass, PRODUCT_PAYMENT_METHOD_TYPE__PAYMENT_METHOD_TYPE);
+		createEReference(productPaymentMethodTypeEClass, PRODUCT_PAYMENT_METHOD_TYPE__PRODUCT_PRICE_PURPOSE);
 		createEAttribute(productPaymentMethodTypeEClass, PRODUCT_PAYMENT_METHOD_TYPE__FROM_DATE);
 		createEAttribute(productPaymentMethodTypeEClass, PRODUCT_PAYMENT_METHOD_TYPE__SEQUENCE_NUM);
 		createEAttribute(productPaymentMethodTypeEClass, PRODUCT_PAYMENT_METHOD_TYPE__THRU_DATE);
 
 		productPriceEClass = createEClass(PRODUCT_PRICE);
-		createEReference(productPriceEClass, PRODUCT_PRICE__PRODUCT_ID);
-		createEReference(productPriceEClass, PRODUCT_PRICE__PRODUCT_PRICE_TYPE_ID);
-		createEReference(productPriceEClass, PRODUCT_PRICE__PRODUCT_PRICE_PURPOSE_ID);
-		createEReference(productPriceEClass, PRODUCT_PRICE__CURRENCY_UOM_ID);
-		createEReference(productPriceEClass, PRODUCT_PRICE__PRODUCT_STORE_GROUP_ID);
+		createEReference(productPriceEClass, PRODUCT_PRICE__PRODUCT);
+		createEReference(productPriceEClass, PRODUCT_PRICE__PRODUCT_PRICE_TYPE);
+		createEReference(productPriceEClass, PRODUCT_PRICE__PRODUCT_PRICE_PURPOSE);
+		createEReference(productPriceEClass, PRODUCT_PRICE__CURRENCY_UOM);
+		createEReference(productPriceEClass, PRODUCT_PRICE__PRODUCT_STORE_GROUP);
 		createEAttribute(productPriceEClass, PRODUCT_PRICE__FROM_DATE);
 		createEReference(productPriceEClass, PRODUCT_PRICE__CREATED_BY_USER_LOGIN);
 		createEAttribute(productPriceEClass, PRODUCT_PRICE__CREATED_DATE);
@@ -1828,18 +1828,18 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 		createEAttribute(productPriceEClass, PRODUCT_PRICE__PRICE_WITH_TAX);
 		createEAttribute(productPriceEClass, PRODUCT_PRICE__PRICE_WITHOUT_TAX);
 		createEAttribute(productPriceEClass, PRODUCT_PRICE__TAX_AMOUNT);
-		createEReference(productPriceEClass, PRODUCT_PRICE__TAX_AUTH_GEO_ID);
-		createEReference(productPriceEClass, PRODUCT_PRICE__TAX_AUTH_PARTY_ID);
+		createEReference(productPriceEClass, PRODUCT_PRICE__TAX_AUTH_GEO);
+		createEReference(productPriceEClass, PRODUCT_PRICE__TAX_AUTH_PARTY);
 		createEAttribute(productPriceEClass, PRODUCT_PRICE__TAX_IN_PRICE);
 		createEAttribute(productPriceEClass, PRODUCT_PRICE__TAX_PERCENTAGE);
-		createEReference(productPriceEClass, PRODUCT_PRICE__TERM_UOM_ID);
+		createEReference(productPriceEClass, PRODUCT_PRICE__TERM_UOM);
 		createEAttribute(productPriceEClass, PRODUCT_PRICE__THRU_DATE);
 
 		productPriceActionEClass = createEClass(PRODUCT_PRICE_ACTION);
-		createEReference(productPriceActionEClass, PRODUCT_PRICE_ACTION__PRODUCT_PRICE_RULE_ID);
+		createEReference(productPriceActionEClass, PRODUCT_PRICE_ACTION__PRODUCT_PRICE_RULE);
 		createEAttribute(productPriceActionEClass, PRODUCT_PRICE_ACTION__PRODUCT_PRICE_ACTION_SEQ_ID);
 		createEAttribute(productPriceActionEClass, PRODUCT_PRICE_ACTION__AMOUNT);
-		createEReference(productPriceActionEClass, PRODUCT_PRICE_ACTION__PRODUCT_PRICE_ACTION_TYPE_ID);
+		createEReference(productPriceActionEClass, PRODUCT_PRICE_ACTION__PRODUCT_PRICE_ACTION_TYPE);
 		createEAttribute(productPriceActionEClass, PRODUCT_PRICE_ACTION__RATE_CODE);
 
 		productPriceActionTypeEClass = createEClass(PRODUCT_PRICE_ACTION_TYPE);
@@ -1868,11 +1868,11 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 		createEAttribute(productPriceChangeEClass, PRODUCT_PRICE_CHANGE__THRU_DATE);
 
 		productPriceCondEClass = createEClass(PRODUCT_PRICE_COND);
-		createEReference(productPriceCondEClass, PRODUCT_PRICE_COND__PRODUCT_PRICE_RULE_ID);
+		createEReference(productPriceCondEClass, PRODUCT_PRICE_COND__PRODUCT_PRICE_RULE);
 		createEAttribute(productPriceCondEClass, PRODUCT_PRICE_COND__PRODUCT_PRICE_COND_SEQ_ID);
 		createEAttribute(productPriceCondEClass, PRODUCT_PRICE_COND__COND_VALUE);
-		createEReference(productPriceCondEClass, PRODUCT_PRICE_COND__INPUT_PARAM_ENUM_ID);
-		createEReference(productPriceCondEClass, PRODUCT_PRICE_COND__OPERATOR_ENUM_ID);
+		createEReference(productPriceCondEClass, PRODUCT_PRICE_COND__INPUT_PARAM_ENUM);
+		createEReference(productPriceCondEClass, PRODUCT_PRICE_COND__OPERATOR_ENUM);
 
 		productPricePurposeEClass = createEClass(PRODUCT_PRICE_PURPOSE);
 		createEAttribute(productPricePurposeEClass, PRODUCT_PRICE_PURPOSE__PRODUCT_PRICE_PURPOSE_ID);
@@ -1895,7 +1895,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 		quantityBreakEClass = createEClass(QUANTITY_BREAK);
 		createEAttribute(quantityBreakEClass, QUANTITY_BREAK__QUANTITY_BREAK_ID);
 		createEAttribute(quantityBreakEClass, QUANTITY_BREAK__FROM_QUANTITY);
-		createEReference(quantityBreakEClass, QUANTITY_BREAK__QUANTITY_BREAK_TYPE_ID);
+		createEReference(quantityBreakEClass, QUANTITY_BREAK__QUANTITY_BREAK_TYPE);
 		createEAttribute(quantityBreakEClass, QUANTITY_BREAK__THRU_QUANTITY);
 
 		quantityBreakTypeEClass = createEClass(QUANTITY_BREAK_TYPE);
@@ -2010,10 +2010,10 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(productFeaturePriceEClass, ProductFeaturePrice.class, "ProductFeaturePrice", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProductFeaturePrice_ProductPriceTypeId(), this.getProductPriceType(), null, "productPriceTypeId", null, 1, 1, ProductFeaturePrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeaturePrice_ProductPriceTypeId().getEKeys().add(this.getProductPriceType_ProductPriceTypeId());
-		initEReference(getProductFeaturePrice_CurrencyUomId(), theUomPackage.getUom(), null, "currencyUomId", null, 1, 1, ProductFeaturePrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeaturePrice_CurrencyUomId().getEKeys().add(theUomPackage.getUom_UomId());
+		initEReference(getProductFeaturePrice_ProductPriceType(), this.getProductPriceType(), null, "productPriceType", null, 1, 1, ProductFeaturePrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductFeaturePrice_ProductPriceType().getEKeys().add(this.getProductPriceType_ProductPriceTypeId());
+		initEReference(getProductFeaturePrice_CurrencyUom(), theUomPackage.getUom(), null, "currencyUom", null, 1, 1, ProductFeaturePrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductFeaturePrice_CurrencyUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEAttribute(getProductFeaturePrice_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductFeaturePrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFeaturePrice_ProductFeatureId(), ecorePackage.getEString(), "productFeatureId", null, 1, 1, ProductFeaturePrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductFeaturePrice_CreatedByUserLogin(), theLoginPackage.getUserLogin(), null, "createdByUserLogin", null, 0, 1, ProductFeaturePrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2026,27 +2026,27 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 		initEAttribute(getProductFeaturePrice_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductFeaturePrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productPaymentMethodTypeEClass, ProductPaymentMethodType.class, "ProductPaymentMethodType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProductPaymentMethodType_ProductId(), theProductPackage.getProduct(), null, "productId", null, 1, 1, ProductPaymentMethodType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductPaymentMethodType_ProductId().getEKeys().add(theProductPackage.getProduct_ProductId());
-		initEReference(getProductPaymentMethodType_PaymentMethodTypeId(), thePaymentPackage.getPaymentMethodType(), null, "paymentMethodTypeId", null, 1, 1, ProductPaymentMethodType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductPaymentMethodType_PaymentMethodTypeId().getEKeys().add(thePaymentPackage.getPaymentMethodType_PaymentMethodTypeId());
-		initEReference(getProductPaymentMethodType_ProductPricePurposeId(), this.getProductPricePurpose(), null, "productPricePurposeId", null, 1, 1, ProductPaymentMethodType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductPaymentMethodType_ProductPricePurposeId().getEKeys().add(this.getProductPricePurpose_ProductPricePurposeId());
+		initEReference(getProductPaymentMethodType_Product(), theProductPackage.getProduct(), null, "product", null, 1, 1, ProductPaymentMethodType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductPaymentMethodType_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
+		initEReference(getProductPaymentMethodType_PaymentMethodType(), thePaymentPackage.getPaymentMethodType(), null, "paymentMethodType", null, 1, 1, ProductPaymentMethodType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductPaymentMethodType_PaymentMethodType().getEKeys().add(thePaymentPackage.getPaymentMethodType_PaymentMethodTypeId());
+		initEReference(getProductPaymentMethodType_ProductPricePurpose(), this.getProductPricePurpose(), null, "productPricePurpose", null, 1, 1, ProductPaymentMethodType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductPaymentMethodType_ProductPricePurpose().getEKeys().add(this.getProductPricePurpose_ProductPricePurposeId());
 		initEAttribute(getProductPaymentMethodType_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductPaymentMethodType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductPaymentMethodType_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, ProductPaymentMethodType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductPaymentMethodType_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductPaymentMethodType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productPriceEClass, ProductPrice.class, "ProductPrice", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProductPrice_ProductId(), theProductPackage.getProduct(), null, "productId", null, 1, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductPrice_ProductId().getEKeys().add(theProductPackage.getProduct_ProductId());
-		initEReference(getProductPrice_ProductPriceTypeId(), this.getProductPriceType(), null, "productPriceTypeId", null, 1, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductPrice_ProductPriceTypeId().getEKeys().add(this.getProductPriceType_ProductPriceTypeId());
-		initEReference(getProductPrice_ProductPricePurposeId(), this.getProductPricePurpose(), null, "productPricePurposeId", null, 1, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductPrice_ProductPricePurposeId().getEKeys().add(this.getProductPricePurpose_ProductPricePurposeId());
-		initEReference(getProductPrice_CurrencyUomId(), theUomPackage.getUom(), null, "currencyUomId", null, 1, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductPrice_CurrencyUomId().getEKeys().add(theUomPackage.getUom_UomId());
-		initEReference(getProductPrice_ProductStoreGroupId(), theStorePackage.getProductStoreGroup(), null, "productStoreGroupId", null, 1, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductPrice_ProductStoreGroupId().getEKeys().add(theStorePackage.getProductStoreGroup_ProductStoreGroupId());
+		initEReference(getProductPrice_Product(), theProductPackage.getProduct(), null, "product", null, 1, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductPrice_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
+		initEReference(getProductPrice_ProductPriceType(), this.getProductPriceType(), null, "productPriceType", null, 1, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductPrice_ProductPriceType().getEKeys().add(this.getProductPriceType_ProductPriceTypeId());
+		initEReference(getProductPrice_ProductPricePurpose(), this.getProductPricePurpose(), null, "productPricePurpose", null, 1, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductPrice_ProductPricePurpose().getEKeys().add(this.getProductPricePurpose_ProductPricePurposeId());
+		initEReference(getProductPrice_CurrencyUom(), theUomPackage.getUom(), null, "currencyUom", null, 1, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductPrice_CurrencyUom().getEKeys().add(theUomPackage.getUom_UomId());
+		initEReference(getProductPrice_ProductStoreGroup(), theStorePackage.getProductStoreGroup(), null, "productStoreGroup", null, 1, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductPrice_ProductStoreGroup().getEKeys().add(theStorePackage.getProductStoreGroup_ProductStoreGroupId());
 		initEAttribute(getProductPrice_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductPrice_CreatedByUserLogin(), theLoginPackage.getUserLogin(), null, "createdByUserLogin", null, 0, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getProductPrice_CreatedByUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
@@ -2060,23 +2060,23 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 		initEAttribute(getProductPrice_PriceWithTax(), ecorePackage.getEBigDecimal(), "priceWithTax", null, 0, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductPrice_PriceWithoutTax(), ecorePackage.getEBigDecimal(), "priceWithoutTax", null, 0, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductPrice_TaxAmount(), ecorePackage.getEBigDecimal(), "taxAmount", null, 0, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getProductPrice_TaxAuthGeoId(), theGeoPackage.getGeo(), null, "taxAuthGeoId", null, 0, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductPrice_TaxAuthGeoId().getEKeys().add(theGeoPackage.getGeo_GeoId());
-		initEReference(getProductPrice_TaxAuthPartyId(), thePartyPackage_1.getParty(), null, "taxAuthPartyId", null, 0, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductPrice_TaxAuthPartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
+		initEReference(getProductPrice_TaxAuthGeo(), theGeoPackage.getGeo(), null, "taxAuthGeo", null, 0, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductPrice_TaxAuthGeo().getEKeys().add(theGeoPackage.getGeo_GeoId());
+		initEReference(getProductPrice_TaxAuthParty(), thePartyPackage_1.getParty(), null, "taxAuthParty", null, 0, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductPrice_TaxAuthParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getProductPrice_TaxInPrice(), ecorePackage.getEBoolean(), "taxInPrice", null, 1, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductPrice_TaxPercentage(), ecorePackage.getEBigDecimal(), "taxPercentage", null, 0, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getProductPrice_TermUomId(), theUomPackage.getUom(), null, "termUomId", null, 0, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductPrice_TermUomId().getEKeys().add(theUomPackage.getUom_UomId());
+		initEReference(getProductPrice_TermUom(), theUomPackage.getUom(), null, "termUom", null, 0, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductPrice_TermUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEAttribute(getProductPrice_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productPriceActionEClass, ProductPriceAction.class, "ProductPriceAction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProductPriceAction_ProductPriceRuleId(), this.getProductPriceRule(), null, "productPriceRuleId", null, 1, 1, ProductPriceAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductPriceAction_ProductPriceRuleId().getEKeys().add(this.getProductPriceRule_ProductPriceRuleId());
+		initEReference(getProductPriceAction_ProductPriceRule(), this.getProductPriceRule(), null, "productPriceRule", null, 1, 1, ProductPriceAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductPriceAction_ProductPriceRule().getEKeys().add(this.getProductPriceRule_ProductPriceRuleId());
 		initEAttribute(getProductPriceAction_ProductPriceActionSeqId(), ecorePackage.getEString(), "productPriceActionSeqId", null, 1, 1, ProductPriceAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductPriceAction_Amount(), ecorePackage.getEBigDecimal(), "amount", null, 0, 1, ProductPriceAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getProductPriceAction_ProductPriceActionTypeId(), this.getProductPriceActionType(), null, "productPriceActionTypeId", null, 0, 1, ProductPriceAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductPriceAction_ProductPriceActionTypeId().getEKeys().add(this.getProductPriceActionType_ProductPriceActionTypeId());
+		initEReference(getProductPriceAction_ProductPriceActionType(), this.getProductPriceActionType(), null, "productPriceActionType", null, 0, 1, ProductPriceAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductPriceAction_ProductPriceActionType().getEKeys().add(this.getProductPriceActionType_ProductPriceActionTypeId());
 		initEAttribute(getProductPriceAction_RateCode(), ecorePackage.getEString(), "rateCode", null, 0, 1, ProductPriceAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productPriceActionTypeEClass, ProductPriceActionType.class, "ProductPriceActionType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -2106,14 +2106,14 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 		initEAttribute(getProductPriceChange_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductPriceChange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productPriceCondEClass, ProductPriceCond.class, "ProductPriceCond", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProductPriceCond_ProductPriceRuleId(), this.getProductPriceRule(), null, "productPriceRuleId", null, 1, 1, ProductPriceCond.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductPriceCond_ProductPriceRuleId().getEKeys().add(this.getProductPriceRule_ProductPriceRuleId());
+		initEReference(getProductPriceCond_ProductPriceRule(), this.getProductPriceRule(), null, "productPriceRule", null, 1, 1, ProductPriceCond.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductPriceCond_ProductPriceRule().getEKeys().add(this.getProductPriceRule_ProductPriceRuleId());
 		initEAttribute(getProductPriceCond_ProductPriceCondSeqId(), ecorePackage.getEString(), "productPriceCondSeqId", null, 1, 1, ProductPriceCond.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductPriceCond_CondValue(), ecorePackage.getEString(), "condValue", null, 0, 1, ProductPriceCond.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getProductPriceCond_InputParamEnumId(), theEnumPackage.getEnumeration(), null, "inputParamEnumId", null, 0, 1, ProductPriceCond.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductPriceCond_InputParamEnumId().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
-		initEReference(getProductPriceCond_OperatorEnumId(), theEnumPackage.getEnumeration(), null, "operatorEnumId", null, 0, 1, ProductPriceCond.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductPriceCond_OperatorEnumId().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
+		initEReference(getProductPriceCond_InputParamEnum(), theEnumPackage.getEnumeration(), null, "inputParamEnum", null, 0, 1, ProductPriceCond.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductPriceCond_InputParamEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
+		initEReference(getProductPriceCond_OperatorEnum(), theEnumPackage.getEnumeration(), null, "operatorEnum", null, 0, 1, ProductPriceCond.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductPriceCond_OperatorEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 
 		initEClass(productPricePurposeEClass, ProductPricePurpose.class, "ProductPricePurpose", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getProductPricePurpose_ProductPricePurposeId(), ecorePackage.getEString(), "productPricePurposeId", null, 1, 1, ProductPricePurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2136,8 +2136,8 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 		initEClass(quantityBreakEClass, QuantityBreak.class, "QuantityBreak", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getQuantityBreak_QuantityBreakId(), ecorePackage.getEString(), "quantityBreakId", null, 1, 1, QuantityBreak.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuantityBreak_FromQuantity(), ecorePackage.getEBigDecimal(), "fromQuantity", null, 0, 1, QuantityBreak.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getQuantityBreak_QuantityBreakTypeId(), this.getQuantityBreakType(), null, "quantityBreakTypeId", null, 0, 1, QuantityBreak.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getQuantityBreak_QuantityBreakTypeId().getEKeys().add(this.getQuantityBreakType_QuantityBreakTypeId());
+		initEReference(getQuantityBreak_QuantityBreakType(), this.getQuantityBreakType(), null, "quantityBreakType", null, 0, 1, QuantityBreak.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getQuantityBreak_QuantityBreakType().getEKeys().add(this.getQuantityBreakType_QuantityBreakTypeId());
 		initEAttribute(getQuantityBreak_ThruQuantity(), ecorePackage.getEBigDecimal(), "thruQuantity", null, 0, 1, QuantityBreak.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(quantityBreakTypeEClass, QuantityBreakType.class, "QuantityBreakType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -2436,13 +2436,13 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
 		addAnnotation
-		  (getProductFeaturePrice_ProductPriceTypeId(),
+		  (getProductFeaturePrice_ProductPriceType(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductFeaturePrice_CurrencyUomId(),
+		  (getProductFeaturePrice_CurrencyUom(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2460,19 +2460,19 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductPaymentMethodType_ProductId(),
+		  (getProductPaymentMethodType_Product(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductPaymentMethodType_PaymentMethodTypeId(),
+		  (getProductPaymentMethodType_PaymentMethodType(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductPaymentMethodType_ProductPricePurposeId(),
+		  (getProductPaymentMethodType_ProductPricePurpose(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2484,31 +2484,31 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductPrice_ProductId(),
+		  (getProductPrice_Product(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductPrice_ProductPriceTypeId(),
+		  (getProductPrice_ProductPriceType(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductPrice_ProductPricePurposeId(),
+		  (getProductPrice_ProductPricePurpose(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductPrice_CurrencyUomId(),
+		  (getProductPrice_CurrencyUom(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductPrice_ProductStoreGroupId(),
+		  (getProductPrice_ProductStoreGroup(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2544,13 +2544,13 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 			   "help", "If Y the price field has tax included for the given taxAuthPartyId/taxAuthGeoId at the taxPercentage."
 		   });
 		addAnnotation
-		  (getProductPrice_TermUomId(),
+		  (getProductPrice_TermUom(),
 		   source,
 		   new String[] {
 			   "help", "Mainly used for recurring and usage prices to specify a time/freq measure, or a usage unit measure (bits, minutes, etc)"
 		   });
 		addAnnotation
-		  (getProductPriceAction_ProductPriceRuleId(),
+		  (getProductPriceAction_ProductPriceRule(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -2562,7 +2562,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductPriceCond_ProductPriceRuleId(),
+		  (getProductPriceCond_ProductPriceRule(),
 		   source,
 		   new String[] {
 			   "key", "true"

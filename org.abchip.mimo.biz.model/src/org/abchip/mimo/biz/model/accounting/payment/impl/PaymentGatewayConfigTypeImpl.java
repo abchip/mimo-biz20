@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayConfigTypeImpl#getPaymentGatewayConfigTypeId <em>Payment Gateway Config Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayConfigTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayConfigTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayConfigTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayConfigTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -199,8 +199,8 @@ public class PaymentGatewayConfigTypeImpl extends EntityTypeImpl<PaymentGatewayC
 	 * @generated
 	 */
 	@Override
-	public PaymentGatewayConfigType getParentTypeId() {
-		return (PaymentGatewayConfigType)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_CONFIG_TYPE__PARENT_TYPE_ID, true);
+	public PaymentGatewayConfigType getParentType() {
+		return (PaymentGatewayConfigType)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_CONFIG_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -209,8 +209,8 @@ public class PaymentGatewayConfigTypeImpl extends EntityTypeImpl<PaymentGatewayC
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(PaymentGatewayConfigType newParentTypeId) {
-		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_CONFIG_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(PaymentGatewayConfigType newParentType) {
+		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_CONFIG_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

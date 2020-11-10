@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemWorkEffortImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemWorkEffortImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemWorkEffortImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemWorkEffortImpl#getCustRequestId <em>Cust Request Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemWorkEffortImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemWorkEffortImpl#getCustRequest <em>Cust Request</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemWorkEffortImpl#getWorkEffort <em>Work Effort</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemWorkEffortImpl#getCustRequestItemSeqId <em>Cust Request Item Seq Id</em>}</li>
  * </ul>
  *
@@ -153,8 +153,8 @@ public class CustRequestItemWorkEffortImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public CustRequest getCustRequestId() {
-		return (CustRequest)eGet(RequestPackage.Literals.CUST_REQUEST_ITEM_WORK_EFFORT__CUST_REQUEST_ID, true);
+	public CustRequest getCustRequest() {
+		return (CustRequest)eGet(RequestPackage.Literals.CUST_REQUEST_ITEM_WORK_EFFORT__CUST_REQUEST, true);
 	}
 
 	/**
@@ -163,8 +163,28 @@ public class CustRequestItemWorkEffortImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
-	public void setCustRequestId(CustRequest newCustRequestId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_ITEM_WORK_EFFORT__CUST_REQUEST_ID, newCustRequestId);
+	public void setCustRequest(CustRequest newCustRequest) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_ITEM_WORK_EFFORT__CUST_REQUEST, newCustRequest);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(RequestPackage.Literals.CUST_REQUEST_ITEM_WORK_EFFORT__WORK_EFFORT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(RequestPackage.Literals.CUST_REQUEST_ITEM_WORK_EFFORT__WORK_EFFORT, newWorkEffort);
 	}
 
 	/**
@@ -223,26 +243,6 @@ public class CustRequestItemWorkEffortImpl extends EntityIdentifiableImpl implem
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(RequestPackage.Literals.CUST_REQUEST_ITEM_WORK_EFFORT__WORK_EFFORT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(RequestPackage.Literals.CUST_REQUEST_ITEM_WORK_EFFORT__WORK_EFFORT_ID, newWorkEffortId);
 	}
 
 } //CustRequestItemWorkEffortImpl

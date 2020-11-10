@@ -30,8 +30,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistRoleImpl#getPicklistId <em>Picklist Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistRoleImpl#getPicklist <em>Picklist</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistRoleImpl#getRoleType <em>Role Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistRoleImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistRoleImpl#getPartyId <em>Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistRoleImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
@@ -158,6 +158,46 @@ public class PicklistRoleImpl extends EntityIdentifiableImpl implements Picklist
 	 * @generated
 	 */
 	@Override
+	public Picklist getPicklist() {
+		return (Picklist)eGet(PicklistPackage.Literals.PICKLIST_ROLE__PICKLIST, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPicklist(Picklist newPicklist) {
+		eSet(PicklistPackage.Literals.PICKLIST_ROLE__PICKLIST, newPicklist);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RoleType getRoleType() {
+		return (RoleType)eGet(PicklistPackage.Literals.PICKLIST_ROLE__ROLE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRoleType(RoleType newRoleType) {
+		eSet(PicklistPackage.Literals.PICKLIST_ROLE__ROLE_TYPE, newRoleType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public UserLogin getCreatedByUserLogin() {
 		return (UserLogin)eGet(PicklistPackage.Literals.PICKLIST_ROLE__CREATED_BY_USER_LOGIN, true);
 	}
@@ -230,46 +270,6 @@ public class PicklistRoleImpl extends EntityIdentifiableImpl implements Picklist
 	@Override
 	public void setPartyId(String newPartyId) {
 		eSet(PicklistPackage.Literals.PICKLIST_ROLE__PARTY_ID, newPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Picklist getPicklistId() {
-		return (Picklist)eGet(PicklistPackage.Literals.PICKLIST_ROLE__PICKLIST_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPicklistId(Picklist newPicklistId) {
-		eSet(PicklistPackage.Literals.PICKLIST_ROLE__PICKLIST_ID, newPicklistId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(PicklistPackage.Literals.PICKLIST_ROLE__ROLE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(PicklistPackage.Literals.PICKLIST_ROLE__ROLE_TYPE_ID, newRoleTypeId);
 	}
 
 	/**

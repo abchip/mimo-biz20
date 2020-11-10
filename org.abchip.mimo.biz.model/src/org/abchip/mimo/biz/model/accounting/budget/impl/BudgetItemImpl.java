@@ -31,10 +31,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemImpl#getBudgetId <em>Budget Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemImpl#getBudget <em>Budget</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemImpl#getBudgetItemSeqId <em>Budget Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemImpl#getAmount <em>Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemImpl#getBudgetItemTypeId <em>Budget Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemImpl#getBudgetItemType <em>Budget Item Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemImpl#getJustification <em>Justification</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemImpl#getPurpose <em>Purpose</em>}</li>
  * </ul>
@@ -157,6 +157,26 @@ public class BudgetItemImpl extends EntityTypedImpl<BudgetItemType> implements B
 	 * @generated
 	 */
 	@Override
+	public Budget getBudget() {
+		return (Budget)eGet(BudgetPackage.Literals.BUDGET_ITEM__BUDGET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBudget(Budget newBudget) {
+		eSet(BudgetPackage.Literals.BUDGET_ITEM__BUDGET, newBudget);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAmount() {
 		return (BigDecimal)eGet(BudgetPackage.Literals.BUDGET_ITEM__AMOUNT, true);
 	}
@@ -169,6 +189,26 @@ public class BudgetItemImpl extends EntityTypedImpl<BudgetItemType> implements B
 	@Override
 	public void setAmount(BigDecimal newAmount) {
 		eSet(BudgetPackage.Literals.BUDGET_ITEM__AMOUNT, newAmount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BudgetItemType getBudgetItemType() {
+		return (BudgetItemType)eGet(BudgetPackage.Literals.BUDGET_ITEM__BUDGET_ITEM_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBudgetItemType(BudgetItemType newBudgetItemType) {
+		eSet(BudgetPackage.Literals.BUDGET_ITEM__BUDGET_ITEM_TYPE, newBudgetItemType);
 	}
 
 	/**
@@ -267,46 +307,6 @@ public class BudgetItemImpl extends EntityTypedImpl<BudgetItemType> implements B
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Budget getBudgetId() {
-		return (Budget)eGet(BudgetPackage.Literals.BUDGET_ITEM__BUDGET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBudgetId(Budget newBudgetId) {
-		eSet(BudgetPackage.Literals.BUDGET_ITEM__BUDGET_ID, newBudgetId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public BudgetItemType getBudgetItemTypeId() {
-		return (BudgetItemType)eGet(BudgetPackage.Literals.BUDGET_ITEM__BUDGET_ITEM_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBudgetItemTypeId(BudgetItemType newBudgetItemTypeId) {
-		eSet(BudgetPackage.Literals.BUDGET_ITEM__BUDGET_ITEM_TYPE_ID, newBudgetItemTypeId);
 	}
 
 } //BudgetItemImpl

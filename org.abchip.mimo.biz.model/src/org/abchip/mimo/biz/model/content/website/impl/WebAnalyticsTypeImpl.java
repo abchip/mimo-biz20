@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebAnalyticsTypeImpl#getWebAnalyticsTypeId <em>Web Analytics Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebAnalyticsTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebAnalyticsTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebAnalyticsTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebAnalyticsTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,8 +200,8 @@ public class WebAnalyticsTypeImpl extends EntityTypeImpl<WebAnalyticsConfig> imp
 	 * @generated
 	 */
 	@Override
-	public WebAnalyticsType getParentTypeId() {
-		return (WebAnalyticsType)eGet(WebsitePackage.Literals.WEB_ANALYTICS_TYPE__PARENT_TYPE_ID, true);
+	public WebAnalyticsType getParentType() {
+		return (WebAnalyticsType)eGet(WebsitePackage.Literals.WEB_ANALYTICS_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -210,8 +210,8 @@ public class WebAnalyticsTypeImpl extends EntityTypeImpl<WebAnalyticsConfig> imp
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(WebAnalyticsType newParentTypeId) {
-		eSet(WebsitePackage.Literals.WEB_ANALYTICS_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(WebAnalyticsType newParentType) {
+		eSet(WebsitePackage.Literals.WEB_ANALYTICS_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

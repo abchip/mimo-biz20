@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureDataResourceImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureDataResourceImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureDataResourceImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureDataResourceImpl#getDataResourceId <em>Data Resource Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureDataResourceImpl#getProductFeatureId <em>Product Feature Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureDataResourceImpl#getDataResource <em>Data Resource</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureDataResourceImpl#getProductFeature <em>Product Feature</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class ProductFeatureDataResourceImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public DataResource getDataResourceId() {
-		return (DataResource)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_DATA_RESOURCE__DATA_RESOURCE_ID, true);
+	public DataResource getDataResource() {
+		return (DataResource)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_DATA_RESOURCE__DATA_RESOURCE, true);
 	}
 
 	/**
@@ -162,8 +162,8 @@ public class ProductFeatureDataResourceImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setDataResourceId(DataResource newDataResourceId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_DATA_RESOURCE__DATA_RESOURCE_ID, newDataResourceId);
+	public void setDataResource(DataResource newDataResource) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_DATA_RESOURCE__DATA_RESOURCE, newDataResource);
 	}
 
 	/**
@@ -172,8 +172,8 @@ public class ProductFeatureDataResourceImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public ProductFeature getProductFeatureId() {
-		return (ProductFeature)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_DATA_RESOURCE__PRODUCT_FEATURE_ID, true);
+	public ProductFeature getProductFeature() {
+		return (ProductFeature)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_DATA_RESOURCE__PRODUCT_FEATURE, true);
 	}
 
 	/**
@@ -182,8 +182,8 @@ public class ProductFeatureDataResourceImpl extends EntityIdentifiableImpl imple
 	 * @generated
 	 */
 	@Override
-	public void setProductFeatureId(ProductFeature newProductFeatureId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_DATA_RESOURCE__PRODUCT_FEATURE_ID, newProductFeatureId);
+	public void setProductFeature(ProductFeature newProductFeature) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_DATA_RESOURCE__PRODUCT_FEATURE, newProductFeature);
 	}
 
 	/**

@@ -54,25 +54,25 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getOldAmountPerQuantity <em>Old Amount Per Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getOldPercentage <em>Old Percentage</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getOrderAdjustmentAttributes <em>Order Adjustment Attributes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getOrderAdjustmentTypeId <em>Order Adjustment Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getOrderAdjustmentType <em>Order Adjustment Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getOriginalAdjustmentId <em>Original Adjustment Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getOverrideGlAccountId <em>Override Gl Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getPrimaryGeoId <em>Primary Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getOriginalAdjustment <em>Original Adjustment</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getOverrideGlAccount <em>Override Gl Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getPrimaryGeo <em>Primary Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getProductFeatureId <em>Product Feature Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getProductPromo <em>Product Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getProductPromoActionSeqId <em>Product Promo Action Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getProductPromoId <em>Product Promo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getProductPromoRuleId <em>Product Promo Rule Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getRecurringAmount <em>Recurring Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getSecondaryGeoId <em>Secondary Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getSecondaryGeo <em>Secondary Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getShipGroupSeqId <em>Ship Group Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getSourcePercentage <em>Source Percentage</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getSourceReferenceId <em>Source Reference Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getTaxAuthPartyId <em>Tax Auth Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getTaxAuthorityRateSeqId <em>Tax Authority Rate Seq Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getTaxAuthorityRateSeq <em>Tax Authority Rate Seq</em>}</li>
  * </ul>
  *
  * @generated
@@ -513,10 +513,50 @@ public class OrderAdjustmentImpl extends EntityTypedImpl<OrderAdjustmentType> im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__ORDER, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__ORDER, newOrder);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<OrderAdjustmentAttribute> getOrderAdjustmentAttributes() {
 		return (List<OrderAdjustmentAttribute>)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__ORDER_ADJUSTMENT_ATTRIBUTES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OrderAdjustmentType getOrderAdjustmentType() {
+		return (OrderAdjustmentType)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__ORDER_ADJUSTMENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrderAdjustmentType(OrderAdjustmentType newOrderAdjustmentType) {
+		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__ORDER_ADJUSTMENT_TYPE, newOrderAdjustmentType);
 	}
 
 	/**
@@ -545,46 +585,6 @@ public class OrderAdjustmentImpl extends EntityTypedImpl<OrderAdjustmentType> im
 	 * @generated
 	 */
 	@Override
-	public OrderAdjustmentType getOrderAdjustmentTypeId() {
-		return (OrderAdjustmentType)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__ORDER_ADJUSTMENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderAdjustmentTypeId(OrderAdjustmentType newOrderAdjustmentTypeId) {
-		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__ORDER_ADJUSTMENT_TYPE_ID, newOrderAdjustmentTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__ORDER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__ORDER_ID, newOrderId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getOrderItemSeqId() {
 		return (String)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__ORDER_ITEM_SEQ_ID, true);
 	}
@@ -605,8 +605,8 @@ public class OrderAdjustmentImpl extends EntityTypedImpl<OrderAdjustmentType> im
 	 * @generated
 	 */
 	@Override
-	public OrderAdjustment getOriginalAdjustmentId() {
-		return (OrderAdjustment)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__ORIGINAL_ADJUSTMENT_ID, true);
+	public OrderAdjustment getOriginalAdjustment() {
+		return (OrderAdjustment)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__ORIGINAL_ADJUSTMENT, true);
 	}
 
 	/**
@@ -615,8 +615,8 @@ public class OrderAdjustmentImpl extends EntityTypedImpl<OrderAdjustmentType> im
 	 * @generated
 	 */
 	@Override
-	public void setOriginalAdjustmentId(OrderAdjustment newOriginalAdjustmentId) {
-		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__ORIGINAL_ADJUSTMENT_ID, newOriginalAdjustmentId);
+	public void setOriginalAdjustment(OrderAdjustment newOriginalAdjustment) {
+		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__ORIGINAL_ADJUSTMENT, newOriginalAdjustment);
 	}
 
 	/**
@@ -625,8 +625,8 @@ public class OrderAdjustmentImpl extends EntityTypedImpl<OrderAdjustmentType> im
 	 * @generated
 	 */
 	@Override
-	public GlAccount getOverrideGlAccountId() {
-		return (GlAccount)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__OVERRIDE_GL_ACCOUNT_ID, true);
+	public GlAccount getOverrideGlAccount() {
+		return (GlAccount)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__OVERRIDE_GL_ACCOUNT, true);
 	}
 
 	/**
@@ -635,8 +635,8 @@ public class OrderAdjustmentImpl extends EntityTypedImpl<OrderAdjustmentType> im
 	 * @generated
 	 */
 	@Override
-	public void setOverrideGlAccountId(GlAccount newOverrideGlAccountId) {
-		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__OVERRIDE_GL_ACCOUNT_ID, newOverrideGlAccountId);
+	public void setOverrideGlAccount(GlAccount newOverrideGlAccount) {
+		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__OVERRIDE_GL_ACCOUNT, newOverrideGlAccount);
 	}
 
 	/**
@@ -645,8 +645,8 @@ public class OrderAdjustmentImpl extends EntityTypedImpl<OrderAdjustmentType> im
 	 * @generated
 	 */
 	@Override
-	public Geo getPrimaryGeoId() {
-		return (Geo)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__PRIMARY_GEO_ID, true);
+	public Geo getPrimaryGeo() {
+		return (Geo)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__PRIMARY_GEO, true);
 	}
 
 	/**
@@ -655,8 +655,8 @@ public class OrderAdjustmentImpl extends EntityTypedImpl<OrderAdjustmentType> im
 	 * @generated
 	 */
 	@Override
-	public void setPrimaryGeoId(Geo newPrimaryGeoId) {
-		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__PRIMARY_GEO_ID, newPrimaryGeoId);
+	public void setPrimaryGeo(Geo newPrimaryGeo) {
+		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__PRIMARY_GEO, newPrimaryGeo);
 	}
 
 	/**
@@ -685,6 +685,26 @@ public class OrderAdjustmentImpl extends EntityTypedImpl<OrderAdjustmentType> im
 	 * @generated
 	 */
 	@Override
+	public ProductPromo getProductPromo() {
+		return (ProductPromo)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__PRODUCT_PROMO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPromo(ProductPromo newProductPromo) {
+		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__PRODUCT_PROMO, newProductPromo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getProductPromoActionSeqId() {
 		return (String)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__PRODUCT_PROMO_ACTION_SEQ_ID, true);
 	}
@@ -697,26 +717,6 @@ public class OrderAdjustmentImpl extends EntityTypedImpl<OrderAdjustmentType> im
 	@Override
 	public void setProductPromoActionSeqId(String newProductPromoActionSeqId) {
 		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__PRODUCT_PROMO_ACTION_SEQ_ID, newProductPromoActionSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductPromo getProductPromoId() {
-		return (ProductPromo)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__PRODUCT_PROMO_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPromoId(ProductPromo newProductPromoId) {
-		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__PRODUCT_PROMO_ID, newProductPromoId);
 	}
 
 	/**
@@ -765,8 +765,8 @@ public class OrderAdjustmentImpl extends EntityTypedImpl<OrderAdjustmentType> im
 	 * @generated
 	 */
 	@Override
-	public Geo getSecondaryGeoId() {
-		return (Geo)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__SECONDARY_GEO_ID, true);
+	public Geo getSecondaryGeo() {
+		return (Geo)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__SECONDARY_GEO, true);
 	}
 
 	/**
@@ -775,8 +775,8 @@ public class OrderAdjustmentImpl extends EntityTypedImpl<OrderAdjustmentType> im
 	 * @generated
 	 */
 	@Override
-	public void setSecondaryGeoId(Geo newSecondaryGeoId) {
-		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__SECONDARY_GEO_ID, newSecondaryGeoId);
+	public void setSecondaryGeo(Geo newSecondaryGeo) {
+		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__SECONDARY_GEO, newSecondaryGeo);
 	}
 
 	/**
@@ -885,8 +885,8 @@ public class OrderAdjustmentImpl extends EntityTypedImpl<OrderAdjustmentType> im
 	 * @generated
 	 */
 	@Override
-	public TaxAuthorityRateProduct getTaxAuthorityRateSeqId() {
-		return (TaxAuthorityRateProduct)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__TAX_AUTHORITY_RATE_SEQ_ID, true);
+	public TaxAuthorityRateProduct getTaxAuthorityRateSeq() {
+		return (TaxAuthorityRateProduct)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__TAX_AUTHORITY_RATE_SEQ, true);
 	}
 
 	/**
@@ -895,8 +895,8 @@ public class OrderAdjustmentImpl extends EntityTypedImpl<OrderAdjustmentType> im
 	 * @generated
 	 */
 	@Override
-	public void setTaxAuthorityRateSeqId(TaxAuthorityRateProduct newTaxAuthorityRateSeqId) {
-		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__TAX_AUTHORITY_RATE_SEQ_ID, newTaxAuthorityRateSeqId);
+	public void setTaxAuthorityRateSeq(TaxAuthorityRateProduct newTaxAuthorityRateSeq) {
+		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__TAX_AUTHORITY_RATE_SEQ, newTaxAuthorityRateSeq);
 	}
 
 	/**

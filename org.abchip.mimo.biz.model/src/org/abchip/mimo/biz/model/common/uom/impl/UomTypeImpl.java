@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomTypeImpl#getUomTypeId <em>Uom Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -199,8 +199,8 @@ public class UomTypeImpl extends EntityTypeImpl<Uom> implements UomType {
 	 * @generated
 	 */
 	@Override
-	public UomType getParentTypeId() {
-		return (UomType)eGet(UomPackage.Literals.UOM_TYPE__PARENT_TYPE_ID, true);
+	public UomType getParentType() {
+		return (UomType)eGet(UomPackage.Literals.UOM_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -209,8 +209,8 @@ public class UomTypeImpl extends EntityTypeImpl<Uom> implements UomType {
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(UomType newParentTypeId) {
-		eSet(UomPackage.Literals.UOM_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(UomType newParentType) {
+		eSet(UomPackage.Literals.UOM_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

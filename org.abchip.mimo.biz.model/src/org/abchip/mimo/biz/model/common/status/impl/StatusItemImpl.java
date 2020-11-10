@@ -37,7 +37,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusItemImpl#getSequenceId <em>Sequence Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusItemImpl#getShipmentStatuss <em>Shipment Statuss</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusItemImpl#getStatusCode <em>Status Code</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusItemImpl#getStatusTypeId <em>Status Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusItemImpl#getStatusType <em>Status Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -240,8 +240,8 @@ public class StatusItemImpl extends EntityTypedImpl<StatusType> implements Statu
 	 * @generated
 	 */
 	@Override
-	public StatusType getStatusTypeId() {
-		return (StatusType)eGet(StatusPackage.Literals.STATUS_ITEM__STATUS_TYPE_ID, true);
+	public StatusType getStatusType() {
+		return (StatusType)eGet(StatusPackage.Literals.STATUS_ITEM__STATUS_TYPE, true);
 	}
 
 	/**
@@ -250,8 +250,8 @@ public class StatusItemImpl extends EntityTypedImpl<StatusType> implements Statu
 	 * @generated
 	 */
 	@Override
-	public void setStatusTypeId(StatusType newStatusTypeId) {
-		eSet(StatusPackage.Literals.STATUS_ITEM__STATUS_TYPE_ID, newStatusTypeId);
+	public void setStatusType(StatusType newStatusType) {
+		eSet(StatusPackage.Literals.STATUS_ITEM__STATUS_TYPE, newStatusType);
 	}
 
 	/**

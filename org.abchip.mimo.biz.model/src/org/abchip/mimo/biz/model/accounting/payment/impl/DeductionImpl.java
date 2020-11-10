@@ -33,8 +33,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.DeductionImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.DeductionImpl#getDeductionId <em>Deduction Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.DeductionImpl#getAmount <em>Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.DeductionImpl#getDeductionTypeId <em>Deduction Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.DeductionImpl#getPaymentId <em>Payment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.DeductionImpl#getDeductionType <em>Deduction Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.DeductionImpl#getPayment <em>Payment</em>}</li>
  * </ul>
  *
  * @generated
@@ -175,6 +175,46 @@ public class DeductionImpl extends EntityTypedImpl<DeductionType> implements Ded
 	 * @generated
 	 */
 	@Override
+	public DeductionType getDeductionType() {
+		return (DeductionType)eGet(PaymentPackage.Literals.DEDUCTION__DEDUCTION_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDeductionType(DeductionType newDeductionType) {
+		eSet(PaymentPackage.Literals.DEDUCTION__DEDUCTION_TYPE, newDeductionType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Payment getPayment() {
+		return (Payment)eGet(PaymentPackage.Literals.DEDUCTION__PAYMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPayment(Payment newPayment) {
+		eSet(PaymentPackage.Literals.DEDUCTION__PAYMENT, newPayment);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getDeductionId() {
 		return (String)eGet(PaymentPackage.Literals.DEDUCTION__DEDUCTION_ID, true);
 	}
@@ -187,46 +227,6 @@ public class DeductionImpl extends EntityTypedImpl<DeductionType> implements Ded
 	@Override
 	public void setDeductionId(String newDeductionId) {
 		eSet(PaymentPackage.Literals.DEDUCTION__DEDUCTION_ID, newDeductionId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DeductionType getDeductionTypeId() {
-		return (DeductionType)eGet(PaymentPackage.Literals.DEDUCTION__DEDUCTION_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDeductionTypeId(DeductionType newDeductionTypeId) {
-		eSet(PaymentPackage.Literals.DEDUCTION__DEDUCTION_TYPE_ID, newDeductionTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Payment getPaymentId() {
-		return (Payment)eGet(PaymentPackage.Literals.DEDUCTION__PAYMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPaymentId(Payment newPaymentId) {
-		eSet(PaymentPackage.Literals.DEDUCTION__PAYMENT_ID, newPaymentId);
 	}
 
 	/**

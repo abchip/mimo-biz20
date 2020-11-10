@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContentImpl#getFacilityId <em>Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContentImpl#getContentId <em>Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContentImpl#getFacility <em>Facility</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContentImpl#getContent <em>Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContentImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityContentImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -154,8 +154,8 @@ public class FacilityContentImpl extends EntityIdentifiableImpl implements Facil
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(FacilityPackage.Literals.FACILITY_CONTENT__CONTENT_ID, true);
+	public Facility getFacility() {
+		return (Facility)eGet(FacilityPackage.Literals.FACILITY_CONTENT__FACILITY, true);
 	}
 
 	/**
@@ -164,8 +164,28 @@ public class FacilityContentImpl extends EntityIdentifiableImpl implements Facil
 	 * @generated
 	 */
 	@Override
-	public void setContentId(Content newContentId) {
-		eSet(FacilityPackage.Literals.FACILITY_CONTENT__CONTENT_ID, newContentId);
+	public void setFacility(Facility newFacility) {
+		eSet(FacilityPackage.Literals.FACILITY_CONTENT__FACILITY, newFacility);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Content getContent() {
+		return (Content)eGet(FacilityPackage.Literals.FACILITY_CONTENT__CONTENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContent(Content newContent) {
+		eSet(FacilityPackage.Literals.FACILITY_CONTENT__CONTENT, newContent);
 	}
 
 	/**
@@ -244,26 +264,6 @@ public class FacilityContentImpl extends EntityIdentifiableImpl implements Facil
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Facility getFacilityId() {
-		return (Facility)eGet(FacilityPackage.Literals.FACILITY_CONTENT__FACILITY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFacilityId(Facility newFacilityId) {
-		eSet(FacilityPackage.Literals.FACILITY_CONTENT__FACILITY_ID, newFacilityId);
 	}
 
 } //FacilityContentImpl

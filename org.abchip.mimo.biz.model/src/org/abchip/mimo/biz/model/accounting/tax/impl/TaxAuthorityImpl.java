@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityImpl#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityImpl#getTaxAuthPartyId <em>Tax Auth Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityImpl#getTaxAuthGeo <em>Tax Auth Geo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityImpl#getTaxAuthParty <em>Tax Auth Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityImpl#isIncludeTaxInPrice <em>Include Tax In Price</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityImpl#isRequireTaxIdForExemption <em>Require Tax Id For Exemption</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityImpl#getTaxIdFormatPattern <em>Tax Id Format Pattern</em>}</li>
@@ -154,6 +154,46 @@ public class TaxAuthorityImpl extends EntityIdentifiableImpl implements TaxAutho
 	 * @generated
 	 */
 	@Override
+	public Geo getTaxAuthGeo() {
+		return (Geo)eGet(TaxPackage.Literals.TAX_AUTHORITY__TAX_AUTH_GEO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTaxAuthGeo(Geo newTaxAuthGeo) {
+		eSet(TaxPackage.Literals.TAX_AUTHORITY__TAX_AUTH_GEO, newTaxAuthGeo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getTaxAuthParty() {
+		return (Party)eGet(TaxPackage.Literals.TAX_AUTHORITY__TAX_AUTH_PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTaxAuthParty(Party newTaxAuthParty) {
+		eSet(TaxPackage.Literals.TAX_AUTHORITY__TAX_AUTH_PARTY, newTaxAuthParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean isIncludeTaxInPrice() {
 		return (Boolean)eGet(TaxPackage.Literals.TAX_AUTHORITY__INCLUDE_TAX_IN_PRICE, true);
 	}
@@ -186,46 +226,6 @@ public class TaxAuthorityImpl extends EntityIdentifiableImpl implements TaxAutho
 	@Override
 	public void setRequireTaxIdForExemption(boolean newRequireTaxIdForExemption) {
 		eSet(TaxPackage.Literals.TAX_AUTHORITY__REQUIRE_TAX_ID_FOR_EXEMPTION, newRequireTaxIdForExemption);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Geo getTaxAuthGeoId() {
-		return (Geo)eGet(TaxPackage.Literals.TAX_AUTHORITY__TAX_AUTH_GEO_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTaxAuthGeoId(Geo newTaxAuthGeoId) {
-		eSet(TaxPackage.Literals.TAX_AUTHORITY__TAX_AUTH_GEO_ID, newTaxAuthGeoId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getTaxAuthPartyId() {
-		return (Party)eGet(TaxPackage.Literals.TAX_AUTHORITY__TAX_AUTH_PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTaxAuthPartyId(Party newTaxAuthPartyId) {
-		eSet(TaxPackage.Literals.TAX_AUTHORITY__TAX_AUTH_PARTY_ID, newTaxAuthPartyId);
 	}
 
 	/**

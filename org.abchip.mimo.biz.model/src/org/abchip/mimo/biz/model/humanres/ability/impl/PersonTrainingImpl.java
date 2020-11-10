@@ -32,15 +32,15 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PersonTrainingImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PersonTrainingImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PersonTrainingImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PersonTrainingImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PersonTrainingImpl#getTrainingClassTypeId <em>Training Class Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PersonTrainingImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PersonTrainingImpl#getTrainingClassType <em>Training Class Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PersonTrainingImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PersonTrainingImpl#getApprovalStatus <em>Approval Status</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PersonTrainingImpl#getApproverId <em>Approver Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PersonTrainingImpl#getApprover <em>Approver</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PersonTrainingImpl#getReason <em>Reason</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PersonTrainingImpl#getThruDate <em>Thru Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PersonTrainingImpl#getTrainingRequestId <em>Training Request Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PersonTrainingImpl#getWorkEffortId <em>Work Effort Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PersonTrainingImpl#getTrainingRequest <em>Training Request</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PersonTrainingImpl#getWorkEffort <em>Work Effort</em>}</li>
  * </ul>
  *
  * @generated
@@ -162,6 +162,46 @@ public class PersonTrainingImpl extends EntityTypedImpl<TrainingClassType> imple
 	 * @generated
 	 */
 	@Override
+	public Party getParty() {
+		return (Party)eGet(AbilityPackage.Literals.PERSON_TRAINING__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(AbilityPackage.Literals.PERSON_TRAINING__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TrainingClassType getTrainingClassType() {
+		return (TrainingClassType)eGet(AbilityPackage.Literals.PERSON_TRAINING__TRAINING_CLASS_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTrainingClassType(TrainingClassType newTrainingClassType) {
+		eSet(AbilityPackage.Literals.PERSON_TRAINING__TRAINING_CLASS_TYPE, newTrainingClassType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getApprovalStatus() {
 		return (String)eGet(AbilityPackage.Literals.PERSON_TRAINING__APPROVAL_STATUS, true);
 	}
@@ -182,8 +222,8 @@ public class PersonTrainingImpl extends EntityTypedImpl<TrainingClassType> imple
 	 * @generated
 	 */
 	@Override
-	public Person getApproverId() {
-		return (Person)eGet(AbilityPackage.Literals.PERSON_TRAINING__APPROVER_ID, true);
+	public Person getApprover() {
+		return (Person)eGet(AbilityPackage.Literals.PERSON_TRAINING__APPROVER, true);
 	}
 
 	/**
@@ -192,8 +232,8 @@ public class PersonTrainingImpl extends EntityTypedImpl<TrainingClassType> imple
 	 * @generated
 	 */
 	@Override
-	public void setApproverId(Person newApproverId) {
-		eSet(AbilityPackage.Literals.PERSON_TRAINING__APPROVER_ID, newApproverId);
+	public void setApprover(Person newApprover) {
+		eSet(AbilityPackage.Literals.PERSON_TRAINING__APPROVER, newApprover);
 	}
 
 	/**
@@ -214,26 +254,6 @@ public class PersonTrainingImpl extends EntityTypedImpl<TrainingClassType> imple
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(AbilityPackage.Literals.PERSON_TRAINING__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(AbilityPackage.Literals.PERSON_TRAINING__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(AbilityPackage.Literals.PERSON_TRAINING__PARTY_ID, newPartyId);
 	}
 
 	/**
@@ -282,8 +302,8 @@ public class PersonTrainingImpl extends EntityTypedImpl<TrainingClassType> imple
 	 * @generated
 	 */
 	@Override
-	public TrainingClassType getTrainingClassTypeId() {
-		return (TrainingClassType)eGet(AbilityPackage.Literals.PERSON_TRAINING__TRAINING_CLASS_TYPE_ID, true);
+	public TrainingRequest getTrainingRequest() {
+		return (TrainingRequest)eGet(AbilityPackage.Literals.PERSON_TRAINING__TRAINING_REQUEST, true);
 	}
 
 	/**
@@ -292,8 +312,8 @@ public class PersonTrainingImpl extends EntityTypedImpl<TrainingClassType> imple
 	 * @generated
 	 */
 	@Override
-	public void setTrainingClassTypeId(TrainingClassType newTrainingClassTypeId) {
-		eSet(AbilityPackage.Literals.PERSON_TRAINING__TRAINING_CLASS_TYPE_ID, newTrainingClassTypeId);
+	public void setTrainingRequest(TrainingRequest newTrainingRequest) {
+		eSet(AbilityPackage.Literals.PERSON_TRAINING__TRAINING_REQUEST, newTrainingRequest);
 	}
 
 	/**
@@ -302,8 +322,8 @@ public class PersonTrainingImpl extends EntityTypedImpl<TrainingClassType> imple
 	 * @generated
 	 */
 	@Override
-	public TrainingRequest getTrainingRequestId() {
-		return (TrainingRequest)eGet(AbilityPackage.Literals.PERSON_TRAINING__TRAINING_REQUEST_ID, true);
+	public WorkEffort getWorkEffort() {
+		return (WorkEffort)eGet(AbilityPackage.Literals.PERSON_TRAINING__WORK_EFFORT, true);
 	}
 
 	/**
@@ -312,28 +332,8 @@ public class PersonTrainingImpl extends EntityTypedImpl<TrainingClassType> imple
 	 * @generated
 	 */
 	@Override
-	public void setTrainingRequestId(TrainingRequest newTrainingRequestId) {
-		eSet(AbilityPackage.Literals.PERSON_TRAINING__TRAINING_REQUEST_ID, newTrainingRequestId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WorkEffort getWorkEffortId() {
-		return (WorkEffort)eGet(AbilityPackage.Literals.PERSON_TRAINING__WORK_EFFORT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWorkEffortId(WorkEffort newWorkEffortId) {
-		eSet(AbilityPackage.Literals.PERSON_TRAINING__WORK_EFFORT_ID, newWorkEffortId);
+	public void setWorkEffort(WorkEffort newWorkEffort) {
+		eSet(AbilityPackage.Literals.PERSON_TRAINING__WORK_EFFORT, newWorkEffort);
 	}
 
 	/**

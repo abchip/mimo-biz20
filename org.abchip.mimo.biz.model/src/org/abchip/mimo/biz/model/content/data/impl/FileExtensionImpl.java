@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.FileExtensionImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.FileExtensionImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.FileExtensionImpl#getFileExtensionId <em>File Extension Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.FileExtensionImpl#getMimeTypeId <em>Mime Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.FileExtensionImpl#getMimeType <em>Mime Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -171,8 +171,8 @@ public class FileExtensionImpl extends EntityTypedImpl<MimeType> implements File
 	 * @generated
 	 */
 	@Override
-	public MimeType getMimeTypeId() {
-		return (MimeType)eGet(DataPackage.Literals.FILE_EXTENSION__MIME_TYPE_ID, true);
+	public MimeType getMimeType() {
+		return (MimeType)eGet(DataPackage.Literals.FILE_EXTENSION__MIME_TYPE, true);
 	}
 
 	/**
@@ -181,8 +181,8 @@ public class FileExtensionImpl extends EntityTypedImpl<MimeType> implements File
 	 * @generated
 	 */
 	@Override
-	public void setMimeTypeId(MimeType newMimeTypeId) {
-		eSet(DataPackage.Literals.FILE_EXTENSION__MIME_TYPE_ID, newMimeTypeId);
+	public void setMimeType(MimeType newMimeType) {
+		eSet(DataPackage.Literals.FILE_EXTENSION__MIME_TYPE, newMimeType);
 	}
 
 	/**

@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyIdentificationType#getPartyIdentificationTypeId <em>Party Identification Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyIdentificationType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyIdentificationType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyIdentificationType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyIdentificationType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyIdentificationType()
@@ -83,30 +83,26 @@ public interface PartyIdentificationType extends EntityType<PartyIdentification>
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(PartyIdentificationType)
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyIdentificationType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(PartyIdentificationType)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyIdentificationType_ParentType()
 	 * @model keys="partyIdentificationTypeId"
 	 * @generated
 	 */
-	PartyIdentificationType getParentTypeId();
+	PartyIdentificationType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyIdentificationType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyIdentificationType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(PartyIdentificationType value);
+	void setParentType(PartyIdentificationType value);
 
 	/**
 	 * Returns the value of the '<em><b>Party Identification Type Id</b></em>' attribute.

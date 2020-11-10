@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeImpl#getTestingNodeId <em>Testing Node Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeImpl#getPrimaryParentNodeId <em>Primary Parent Node Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeImpl#getPrimaryParentNode <em>Primary Parent Node</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeImpl#getTestingNodeMembers <em>Testing Node Members</em>}</li>
  * </ul>
  *
@@ -173,8 +173,8 @@ public class TestingNodeImpl extends EntityIdentifiableImpl implements TestingNo
 	 * @generated
 	 */
 	@Override
-	public TestingNode getPrimaryParentNodeId() {
-		return (TestingNode)eGet(TestPackage.Literals.TESTING_NODE__PRIMARY_PARENT_NODE_ID, true);
+	public TestingNode getPrimaryParentNode() {
+		return (TestingNode)eGet(TestPackage.Literals.TESTING_NODE__PRIMARY_PARENT_NODE, true);
 	}
 
 	/**
@@ -183,8 +183,8 @@ public class TestingNodeImpl extends EntityIdentifiableImpl implements TestingNo
 	 * @generated
 	 */
 	@Override
-	public void setPrimaryParentNodeId(TestingNode newPrimaryParentNodeId) {
-		eSet(TestPackage.Literals.TESTING_NODE__PRIMARY_PARENT_NODE_ID, newPrimaryParentNodeId);
+	public void setPrimaryParentNode(TestingNode newPrimaryParentNode) {
+		eSet(TestPackage.Literals.TESTING_NODE__PRIMARY_PARENT_NODE, newPrimaryParentNode);
 	}
 
 	/**

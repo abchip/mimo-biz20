@@ -30,10 +30,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.RespondingPartyImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.RespondingPartyImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.RespondingPartyImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.RespondingPartyImpl#getCustRequestId <em>Cust Request Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.RespondingPartyImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.RespondingPartyImpl#getCustRequest <em>Cust Request</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.RespondingPartyImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.RespondingPartyImpl#getRespondingPartySeqId <em>Responding Party Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.RespondingPartyImpl#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.RespondingPartyImpl#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.RespondingPartyImpl#getDateSent <em>Date Sent</em>}</li>
  * </ul>
  *
@@ -156,8 +156,8 @@ public class RespondingPartyImpl extends EntityIdentifiableImpl implements Respo
 	 * @generated
 	 */
 	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(RequestPackage.Literals.RESPONDING_PARTY__CONTACT_MECH_ID, true);
+	public CustRequest getCustRequest() {
+		return (CustRequest)eGet(RequestPackage.Literals.RESPONDING_PARTY__CUST_REQUEST, true);
 	}
 
 	/**
@@ -166,8 +166,8 @@ public class RespondingPartyImpl extends EntityIdentifiableImpl implements Respo
 	 * @generated
 	 */
 	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(RequestPackage.Literals.RESPONDING_PARTY__CONTACT_MECH_ID, newContactMechId);
+	public void setCustRequest(CustRequest newCustRequest) {
+		eSet(RequestPackage.Literals.RESPONDING_PARTY__CUST_REQUEST, newCustRequest);
 	}
 
 	/**
@@ -176,8 +176,8 @@ public class RespondingPartyImpl extends EntityIdentifiableImpl implements Respo
 	 * @generated
 	 */
 	@Override
-	public CustRequest getCustRequestId() {
-		return (CustRequest)eGet(RequestPackage.Literals.RESPONDING_PARTY__CUST_REQUEST_ID, true);
+	public Party getParty() {
+		return (Party)eGet(RequestPackage.Literals.RESPONDING_PARTY__PARTY, true);
 	}
 
 	/**
@@ -186,8 +186,8 @@ public class RespondingPartyImpl extends EntityIdentifiableImpl implements Respo
 	 * @generated
 	 */
 	@Override
-	public void setCustRequestId(CustRequest newCustRequestId) {
-		eSet(RequestPackage.Literals.RESPONDING_PARTY__CUST_REQUEST_ID, newCustRequestId);
+	public void setParty(Party newParty) {
+		eSet(RequestPackage.Literals.RESPONDING_PARTY__PARTY, newParty);
 	}
 
 	/**
@@ -254,26 +254,6 @@ public class RespondingPartyImpl extends EntityIdentifiableImpl implements Respo
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(RequestPackage.Literals.RESPONDING_PARTY__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(RequestPackage.Literals.RESPONDING_PARTY__PARTY_ID, newPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getRespondingPartySeqId() {
 		return (String)eGet(RequestPackage.Literals.RESPONDING_PARTY__RESPONDING_PARTY_SEQ_ID, true);
 	}
@@ -286,6 +266,26 @@ public class RespondingPartyImpl extends EntityIdentifiableImpl implements Respo
 	@Override
 	public void setRespondingPartySeqId(String newRespondingPartySeqId) {
 		eSet(RequestPackage.Literals.RESPONDING_PARTY__RESPONDING_PARTY_SEQ_ID, newRespondingPartySeqId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(RequestPackage.Literals.RESPONDING_PARTY__CONTACT_MECH, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(RequestPackage.Literals.RESPONDING_PARTY__CONTACT_MECH, newContactMech);
 	}
 
 } //RespondingPartyImpl

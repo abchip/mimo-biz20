@@ -34,14 +34,14 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PartyBenefitImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PartyBenefitImpl#getPartyIdTo <em>Party Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PartyBenefitImpl#getPartyIdFrom <em>Party Id From</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PartyBenefitImpl#getBenefitTypeId <em>Benefit Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PartyBenefitImpl#getBenefitType <em>Benefit Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PartyBenefitImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PartyBenefitImpl#getRoleTypeIdFrom <em>Role Type Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PartyBenefitImpl#getRoleTypeIdTo <em>Role Type Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PartyBenefitImpl#getActualEmployerPaidPercent <em>Actual Employer Paid Percent</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PartyBenefitImpl#getAvailableTime <em>Available Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PartyBenefitImpl#getCost <em>Cost</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PartyBenefitImpl#getPeriodTypeId <em>Period Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PartyBenefitImpl#getPeriodType <em>Period Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PartyBenefitImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
@@ -204,26 +204,6 @@ public class PartyBenefitImpl extends EntityTypedImpl<BenefitType> implements Pa
 	 * @generated
 	 */
 	@Override
-	public BenefitType getBenefitTypeId() {
-		return (BenefitType)eGet(EmploymentPackage.Literals.PARTY_BENEFIT__BENEFIT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBenefitTypeId(BenefitType newBenefitTypeId) {
-		eSet(EmploymentPackage.Literals.PARTY_BENEFIT__BENEFIT_TYPE_ID, newBenefitTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public BigDecimal getCost() {
 		return (BigDecimal)eGet(EmploymentPackage.Literals.PARTY_BENEFIT__COST, true);
 	}
@@ -236,6 +216,26 @@ public class PartyBenefitImpl extends EntityTypedImpl<BenefitType> implements Pa
 	@Override
 	public void setCost(BigDecimal newCost) {
 		eSet(EmploymentPackage.Literals.PARTY_BENEFIT__COST, newCost);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PeriodType getPeriodType() {
+		return (PeriodType)eGet(EmploymentPackage.Literals.PARTY_BENEFIT__PERIOD_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPeriodType(PeriodType newPeriodType) {
+		eSet(EmploymentPackage.Literals.PARTY_BENEFIT__PERIOD_TYPE, newPeriodType);
 	}
 
 	/**
@@ -284,6 +284,26 @@ public class PartyBenefitImpl extends EntityTypedImpl<BenefitType> implements Pa
 	 * @generated
 	 */
 	@Override
+	public BenefitType getBenefitType() {
+		return (BenefitType)eGet(EmploymentPackage.Literals.PARTY_BENEFIT__BENEFIT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBenefitType(BenefitType newBenefitType) {
+		eSet(EmploymentPackage.Literals.PARTY_BENEFIT__BENEFIT_TYPE, newBenefitType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Party getPartyIdTo() {
 		return (Party)eGet(EmploymentPackage.Literals.PARTY_BENEFIT__PARTY_ID_TO, true);
 	}
@@ -296,26 +316,6 @@ public class PartyBenefitImpl extends EntityTypedImpl<BenefitType> implements Pa
 	@Override
 	public void setPartyIdTo(Party newPartyIdTo) {
 		eSet(EmploymentPackage.Literals.PARTY_BENEFIT__PARTY_ID_TO, newPartyIdTo);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PeriodType getPeriodTypeId() {
-		return (PeriodType)eGet(EmploymentPackage.Literals.PARTY_BENEFIT__PERIOD_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPeriodTypeId(PeriodType newPeriodTypeId) {
-		eSet(EmploymentPackage.Literals.PARTY_BENEFIT__PERIOD_TYPE_ID, newPeriodTypeId);
 	}
 
 	/**

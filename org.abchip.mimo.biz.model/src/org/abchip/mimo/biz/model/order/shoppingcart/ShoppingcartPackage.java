@@ -135,22 +135,22 @@ public interface ShoppingcartPackage extends EPackage {
 	int CART_ABANDONED_LINE__CONFIG_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Prod Catalog Id</b></em>' reference.
+	 * The feature id for the '<em><b>Prod Catalog</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__PROD_CATALOG_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int CART_ABANDONED_LINE__PROD_CATALOG = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int CART_ABANDONED_LINE__PRODUCT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -287,26 +287,26 @@ public interface ShoppingcartPackage extends EPackage {
 	EAttribute getCartAbandonedLine_ConfigId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getProdCatalogId <em>Prod Catalog Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getProdCatalog <em>Prod Catalog</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Prod Catalog Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getProdCatalogId()
+	 * @return the meta object for the reference '<em>Prod Catalog</em>'.
+	 * @see org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getProdCatalog()
 	 * @see #getCartAbandonedLine()
 	 * @generated
 	 */
-	EReference getCartAbandonedLine_ProdCatalogId();
+	EReference getCartAbandonedLine_ProdCatalog();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getProductId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getProduct()
 	 * @see #getCartAbandonedLine()
 	 * @generated
 	 */
-	EReference getCartAbandonedLine_ProductId();
+	EReference getCartAbandonedLine_Product();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getQuantity <em>Quantity</em>}'.
@@ -464,20 +464,20 @@ public interface ShoppingcartPackage extends EPackage {
 		EAttribute CART_ABANDONED_LINE__CONFIG_ID = eINSTANCE.getCartAbandonedLine_ConfigId();
 
 		/**
-		 * The meta object literal for the '<em><b>Prod Catalog Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Prod Catalog</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CART_ABANDONED_LINE__PROD_CATALOG_ID = eINSTANCE.getCartAbandonedLine_ProdCatalogId();
+		EReference CART_ABANDONED_LINE__PROD_CATALOG = eINSTANCE.getCartAbandonedLine_ProdCatalog();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CART_ABANDONED_LINE__PRODUCT_ID = eINSTANCE.getCartAbandonedLine_ProductId();
+		EReference CART_ABANDONED_LINE__PRODUCT = eINSTANCE.getCartAbandonedLine_Product();
 
 		/**
 		 * The meta object literal for the '<em><b>Quantity</b></em>' attribute feature.

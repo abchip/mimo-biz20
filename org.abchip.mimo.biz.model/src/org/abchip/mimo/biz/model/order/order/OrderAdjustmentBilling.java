@@ -21,8 +21,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling#getOrderAdjustmentId <em>Order Adjustment Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling#getInvoiceId <em>Invoice Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling#getOrderAdjustment <em>Order Adjustment</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling#getInvoice <em>Invoice</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling#getInvoiceItemSeqId <em>Invoice Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling#getAmount <em>Amount</em>}</li>
  * </ul>
@@ -32,6 +32,52 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface OrderAdjustmentBilling extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Order Adjustment</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Order Adjustment</em>' reference.
+	 * @see #setOrderAdjustment(OrderAdjustment)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustmentBilling_OrderAdjustment()
+	 * @model keys="orderAdjustmentId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	OrderAdjustment getOrderAdjustment();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling#getOrderAdjustment <em>Order Adjustment</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Order Adjustment</em>' reference.
+	 * @see #getOrderAdjustment()
+	 * @generated
+	 */
+	void setOrderAdjustment(OrderAdjustment value);
+
+	/**
+	 * Returns the value of the '<em><b>Invoice</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Invoice</em>' reference.
+	 * @see #setInvoice(Invoice)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustmentBilling_Invoice()
+	 * @model keys="invoiceId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Invoice getInvoice();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling#getInvoice <em>Invoice</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Invoice</em>' reference.
+	 * @see #getInvoice()
+	 * @generated
+	 */
+	void setInvoice(Invoice value);
+
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -57,33 +103,6 @@ public interface OrderAdjustmentBilling extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setAmount(BigDecimal value);
-
-	/**
-	 * Returns the value of the '<em><b>Invoice Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Invoice Id</em>' reference.
-	 * @see #setInvoiceId(Invoice)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustmentBilling_InvoiceId()
-	 * @model keys="invoiceId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Invoice getInvoiceId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling#getInvoiceId <em>Invoice Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Invoice Id</em>' reference.
-	 * @see #getInvoiceId()
-	 * @generated
-	 */
-	void setInvoiceId(Invoice value);
 
 	/**
 	 * Returns the value of the '<em><b>Invoice Item Seq Id</b></em>' attribute.
@@ -112,32 +131,5 @@ public interface OrderAdjustmentBilling extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setInvoiceItemSeqId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Order Adjustment Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Adjustment Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order Adjustment Id</em>' reference.
-	 * @see #setOrderAdjustmentId(OrderAdjustment)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustmentBilling_OrderAdjustmentId()
-	 * @model keys="orderAdjustmentId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	OrderAdjustment getOrderAdjustmentId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling#getOrderAdjustmentId <em>Order Adjustment Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Order Adjustment Id</em>' reference.
-	 * @see #getOrderAdjustmentId()
-	 * @generated
-	 */
-	void setOrderAdjustmentId(OrderAdjustment value);
 
 } // OrderAdjustmentBilling

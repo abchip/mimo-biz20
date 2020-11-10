@@ -126,13 +126,13 @@ public interface ThemePackage extends EPackage {
 	int VISUAL_THEME__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Visual Theme Set Id</b></em>' reference.
+	 * The feature id for the '<em><b>Visual Theme Set</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME__VISUAL_THEME_SET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int VISUAL_THEME__VISUAL_THEME_SET = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Visual Theme</em>' class.
@@ -190,22 +190,22 @@ public interface ThemePackage extends EPackage {
 	int VISUAL_THEME_RESOURCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Visual Theme Id</b></em>' reference.
+	 * The feature id for the '<em><b>Visual Theme</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME_RESOURCE__VISUAL_THEME_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int VISUAL_THEME_RESOURCE__VISUAL_THEME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Resource Type Enum Id</b></em>' reference.
+	 * The feature id for the '<em><b>Resource Type Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME_RESOURCE__RESOURCE_TYPE_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int VISUAL_THEME_RESOURCE__RESOURCE_TYPE_ENUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Id</b></em>' attribute.
@@ -341,15 +341,15 @@ public interface ThemePackage extends EPackage {
 	EAttribute getVisualTheme_Description();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.theme.VisualTheme#getVisualThemeSetId <em>Visual Theme Set Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.theme.VisualTheme#getVisualThemeSet <em>Visual Theme Set</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Visual Theme Set Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.theme.VisualTheme#getVisualThemeSetId()
+	 * @return the meta object for the reference '<em>Visual Theme Set</em>'.
+	 * @see org.abchip.mimo.biz.model.common.theme.VisualTheme#getVisualThemeSet()
 	 * @see #getVisualTheme()
 	 * @generated
 	 */
-	EReference getVisualTheme_VisualThemeSetId();
+	EReference getVisualTheme_VisualThemeSet();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.common.theme.VisualThemeResource <em>Visual Theme Resource</em>}'.
@@ -362,26 +362,26 @@ public interface ThemePackage extends EPackage {
 	EClass getVisualThemeResource();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.theme.VisualThemeResource#getVisualThemeId <em>Visual Theme Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.theme.VisualThemeResource#getVisualTheme <em>Visual Theme</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Visual Theme Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.theme.VisualThemeResource#getVisualThemeId()
+	 * @return the meta object for the reference '<em>Visual Theme</em>'.
+	 * @see org.abchip.mimo.biz.model.common.theme.VisualThemeResource#getVisualTheme()
 	 * @see #getVisualThemeResource()
 	 * @generated
 	 */
-	EReference getVisualThemeResource_VisualThemeId();
+	EReference getVisualThemeResource_VisualTheme();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.theme.VisualThemeResource#getResourceTypeEnumId <em>Resource Type Enum Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.theme.VisualThemeResource#getResourceTypeEnum <em>Resource Type Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Resource Type Enum Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.theme.VisualThemeResource#getResourceTypeEnumId()
+	 * @return the meta object for the reference '<em>Resource Type Enum</em>'.
+	 * @see org.abchip.mimo.biz.model.common.theme.VisualThemeResource#getResourceTypeEnum()
 	 * @see #getVisualThemeResource()
 	 * @generated
 	 */
-	EReference getVisualThemeResource_ResourceTypeEnumId();
+	EReference getVisualThemeResource_ResourceTypeEnum();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.theme.VisualThemeResource#getSequenceId <em>Sequence Id</em>}'.
@@ -486,12 +486,12 @@ public interface ThemePackage extends EPackage {
 		EAttribute VISUAL_THEME__DESCRIPTION = eINSTANCE.getVisualTheme_Description();
 
 		/**
-		 * The meta object literal for the '<em><b>Visual Theme Set Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Visual Theme Set</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference VISUAL_THEME__VISUAL_THEME_SET_ID = eINSTANCE.getVisualTheme_VisualThemeSetId();
+		EReference VISUAL_THEME__VISUAL_THEME_SET = eINSTANCE.getVisualTheme_VisualThemeSet();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.common.theme.impl.VisualThemeResourceImpl <em>Visual Theme Resource</em>}' class.
@@ -504,20 +504,20 @@ public interface ThemePackage extends EPackage {
 		EClass VISUAL_THEME_RESOURCE = eINSTANCE.getVisualThemeResource();
 
 		/**
-		 * The meta object literal for the '<em><b>Visual Theme Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Visual Theme</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference VISUAL_THEME_RESOURCE__VISUAL_THEME_ID = eINSTANCE.getVisualThemeResource_VisualThemeId();
+		EReference VISUAL_THEME_RESOURCE__VISUAL_THEME = eINSTANCE.getVisualThemeResource_VisualTheme();
 
 		/**
-		 * The meta object literal for the '<em><b>Resource Type Enum Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Resource Type Enum</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference VISUAL_THEME_RESOURCE__RESOURCE_TYPE_ENUM_ID = eINSTANCE.getVisualThemeResource_ResourceTypeEnumId();
+		EReference VISUAL_THEME_RESOURCE__RESOURCE_TYPE_ENUM = eINSTANCE.getVisualThemeResource_ResourceTypeEnum();
 
 		/**
 		 * The meta object literal for the '<em><b>Sequence Id</b></em>' attribute feature.

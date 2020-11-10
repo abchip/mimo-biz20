@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyTriggerImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyTriggerImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyTriggerImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyTriggerImpl#getSurveyId <em>Survey Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyTriggerImpl#getSurveyApplTypeId <em>Survey Appl Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyTriggerImpl#getSurvey <em>Survey</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyTriggerImpl#getSurveyApplType <em>Survey Appl Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyTriggerImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyTriggerImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -154,6 +154,46 @@ public class SurveyTriggerImpl extends EntityTypedImpl<SurveyApplType> implement
 	 * @generated
 	 */
 	@Override
+	public Survey getSurvey() {
+		return (Survey)eGet(SurveyPackage.Literals.SURVEY_TRIGGER__SURVEY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSurvey(Survey newSurvey) {
+		eSet(SurveyPackage.Literals.SURVEY_TRIGGER__SURVEY, newSurvey);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SurveyApplType getSurveyApplType() {
+		return (SurveyApplType)eGet(SurveyPackage.Literals.SURVEY_TRIGGER__SURVEY_APPL_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSurveyApplType(SurveyApplType newSurveyApplType) {
+		eSet(SurveyPackage.Literals.SURVEY_TRIGGER__SURVEY_APPL_TYPE, newSurveyApplType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(SurveyPackage.Literals.SURVEY_TRIGGER__FROM_DATE, true);
 	}
@@ -166,46 +206,6 @@ public class SurveyTriggerImpl extends EntityTypedImpl<SurveyApplType> implement
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(SurveyPackage.Literals.SURVEY_TRIGGER__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SurveyApplType getSurveyApplTypeId() {
-		return (SurveyApplType)eGet(SurveyPackage.Literals.SURVEY_TRIGGER__SURVEY_APPL_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSurveyApplTypeId(SurveyApplType newSurveyApplTypeId) {
-		eSet(SurveyPackage.Literals.SURVEY_TRIGGER__SURVEY_APPL_TYPE_ID, newSurveyApplTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Survey getSurveyId() {
-		return (Survey)eGet(SurveyPackage.Literals.SURVEY_TRIGGER__SURVEY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSurveyId(Survey newSurveyId) {
-		eSet(SurveyPackage.Literals.SURVEY_TRIGGER__SURVEY_ID, newSurveyId);
 	}
 
 	/**

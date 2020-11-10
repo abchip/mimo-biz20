@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoTypeImpl#getGeoTypeId <em>Geo Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -199,8 +199,8 @@ public class GeoTypeImpl extends EntityTypeImpl<Geo> implements GeoType {
 	 * @generated
 	 */
 	@Override
-	public GeoType getParentTypeId() {
-		return (GeoType)eGet(GeoPackage.Literals.GEO_TYPE__PARENT_TYPE_ID, true);
+	public GeoType getParentType() {
+		return (GeoType)eGet(GeoPackage.Literals.GEO_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -209,8 +209,8 @@ public class GeoTypeImpl extends EntityTypeImpl<Geo> implements GeoType {
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(GeoType newParentTypeId) {
-		eSet(GeoPackage.Literals.GEO_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(GeoType newParentType) {
+		eSet(GeoPackage.Literals.GEO_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

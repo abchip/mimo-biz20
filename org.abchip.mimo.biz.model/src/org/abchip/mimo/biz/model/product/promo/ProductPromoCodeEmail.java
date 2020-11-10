@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCodeEmail#getProductPromoCodeId <em>Product Promo Code Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCodeEmail#getProductPromoCode <em>Product Promo Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCodeEmail#getEmailAddress <em>Email Address</em>}</li>
  * </ul>
  *
@@ -28,6 +28,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductPromoCodeEmail extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product Promo Code</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Promo Code</em>' reference.
+	 * @see #setProductPromoCode(ProductPromoCode)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCodeEmail_ProductPromoCode()
+	 * @model keys="productPromoCodeId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductPromoCode getProductPromoCode();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCodeEmail#getProductPromoCode <em>Product Promo Code</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Promo Code</em>' reference.
+	 * @see #getProductPromoCode()
+	 * @generated
+	 */
+	void setProductPromoCode(ProductPromoCode value);
+
 	/**
 	 * Returns the value of the '<em><b>Email Address</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -55,32 +78,5 @@ public interface ProductPromoCodeEmail extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setEmailAddress(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Promo Code Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Promo Code Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Promo Code Id</em>' reference.
-	 * @see #setProductPromoCodeId(ProductPromoCode)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCodeEmail_ProductPromoCodeId()
-	 * @model keys="productPromoCodeId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductPromoCode getProductPromoCodeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCodeEmail#getProductPromoCodeId <em>Product Promo Code Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Promo Code Id</em>' reference.
-	 * @see #getProductPromoCodeId()
-	 * @generated
-	 */
-	void setProductPromoCodeId(ProductPromoCode value);
 
 } // ProductPromoCodeEmail

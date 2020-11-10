@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptRoleImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptRoleImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptRoleImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptRoleImpl#getReceiptId <em>Receipt Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptRoleImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptRoleImpl#getReceipt <em>Receipt</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptRoleImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptRoleImpl#getRoleTypeId <em>Role Type Id</em>}</li>
  * </ul>
  *
@@ -153,8 +153,8 @@ public class ShipmentReceiptRoleImpl extends EntityIdentifiableImpl implements S
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(ReceiptPackage.Literals.SHIPMENT_RECEIPT_ROLE__PARTY_ID, true);
+	public ShipmentReceipt getReceipt() {
+		return (ShipmentReceipt)eGet(ReceiptPackage.Literals.SHIPMENT_RECEIPT_ROLE__RECEIPT, true);
 	}
 
 	/**
@@ -163,8 +163,8 @@ public class ShipmentReceiptRoleImpl extends EntityIdentifiableImpl implements S
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(ReceiptPackage.Literals.SHIPMENT_RECEIPT_ROLE__PARTY_ID, newPartyId);
+	public void setReceipt(ShipmentReceipt newReceipt) {
+		eSet(ReceiptPackage.Literals.SHIPMENT_RECEIPT_ROLE__RECEIPT, newReceipt);
 	}
 
 	/**
@@ -173,8 +173,8 @@ public class ShipmentReceiptRoleImpl extends EntityIdentifiableImpl implements S
 	 * @generated
 	 */
 	@Override
-	public ShipmentReceipt getReceiptId() {
-		return (ShipmentReceipt)eGet(ReceiptPackage.Literals.SHIPMENT_RECEIPT_ROLE__RECEIPT_ID, true);
+	public Party getParty() {
+		return (Party)eGet(ReceiptPackage.Literals.SHIPMENT_RECEIPT_ROLE__PARTY, true);
 	}
 
 	/**
@@ -183,8 +183,8 @@ public class ShipmentReceiptRoleImpl extends EntityIdentifiableImpl implements S
 	 * @generated
 	 */
 	@Override
-	public void setReceiptId(ShipmentReceipt newReceiptId) {
-		eSet(ReceiptPackage.Literals.SHIPMENT_RECEIPT_ROLE__RECEIPT_ID, newReceiptId);
+	public void setParty(Party newParty) {
+		eSet(ReceiptPackage.Literals.SHIPMENT_RECEIPT_ROLE__PARTY, newParty);
 	}
 
 	/**

@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeImpl#getQuoteTypeId <em>Quote Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeImpl#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeImpl#getQuoteTypeAttrs <em>Quote Type Attrs</em>}</li>
  * </ul>
  *
@@ -203,8 +203,8 @@ public class QuoteTypeImpl extends EntityTypeImpl<Quote> implements QuoteType {
 	 * @generated
 	 */
 	@Override
-	public QuoteType getParentTypeId() {
-		return (QuoteType)eGet(QuotePackage.Literals.QUOTE_TYPE__PARENT_TYPE_ID, true);
+	public QuoteType getParentType() {
+		return (QuoteType)eGet(QuotePackage.Literals.QUOTE_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -213,8 +213,8 @@ public class QuoteTypeImpl extends EntityTypeImpl<Quote> implements QuoteType {
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(QuoteType newParentTypeId) {
-		eSet(QuotePackage.Literals.QUOTE_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(QuoteType newParentType) {
+		eSet(QuotePackage.Literals.QUOTE_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

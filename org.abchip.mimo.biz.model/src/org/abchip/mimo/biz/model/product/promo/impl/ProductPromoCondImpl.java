@@ -30,13 +30,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCondImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCondImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCondImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCondImpl#getProductPromoId <em>Product Promo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCondImpl#getProductPromo <em>Product Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCondImpl#getProductPromoCondSeqId <em>Product Promo Cond Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCondImpl#getProductPromoRuleId <em>Product Promo Rule Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCondImpl#getCondValue <em>Cond Value</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCondImpl#getCustomMethodId <em>Custom Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCondImpl#getInputParamEnumId <em>Input Param Enum Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCondImpl#getOperatorEnumId <em>Operator Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCondImpl#getCustomMethod <em>Custom Method</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCondImpl#getInputParamEnum <em>Input Param Enum</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCondImpl#getOperatorEnum <em>Operator Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCondImpl#getOtherValue <em>Other Value</em>}</li>
  * </ul>
  *
@@ -159,6 +159,26 @@ public class ProductPromoCondImpl extends EntityIdentifiableImpl implements Prod
 	 * @generated
 	 */
 	@Override
+	public ProductPromo getProductPromo() {
+		return (ProductPromo)eGet(PromoPackage.Literals.PRODUCT_PROMO_COND__PRODUCT_PROMO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPromo(ProductPromo newProductPromo) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_COND__PRODUCT_PROMO, newProductPromo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getCondValue() {
 		return (String)eGet(PromoPackage.Literals.PRODUCT_PROMO_COND__COND_VALUE, true);
 	}
@@ -179,8 +199,8 @@ public class ProductPromoCondImpl extends EntityIdentifiableImpl implements Prod
 	 * @generated
 	 */
 	@Override
-	public CustomMethod getCustomMethodId() {
-		return (CustomMethod)eGet(PromoPackage.Literals.PRODUCT_PROMO_COND__CUSTOM_METHOD_ID, true);
+	public CustomMethod getCustomMethod() {
+		return (CustomMethod)eGet(PromoPackage.Literals.PRODUCT_PROMO_COND__CUSTOM_METHOD, true);
 	}
 
 	/**
@@ -189,8 +209,8 @@ public class ProductPromoCondImpl extends EntityIdentifiableImpl implements Prod
 	 * @generated
 	 */
 	@Override
-	public void setCustomMethodId(CustomMethod newCustomMethodId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_COND__CUSTOM_METHOD_ID, newCustomMethodId);
+	public void setCustomMethod(CustomMethod newCustomMethod) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_COND__CUSTOM_METHOD, newCustomMethod);
 	}
 
 	/**
@@ -199,8 +219,8 @@ public class ProductPromoCondImpl extends EntityIdentifiableImpl implements Prod
 	 * @generated
 	 */
 	@Override
-	public Enumeration getInputParamEnumId() {
-		return (Enumeration)eGet(PromoPackage.Literals.PRODUCT_PROMO_COND__INPUT_PARAM_ENUM_ID, true);
+	public Enumeration getInputParamEnum() {
+		return (Enumeration)eGet(PromoPackage.Literals.PRODUCT_PROMO_COND__INPUT_PARAM_ENUM, true);
 	}
 
 	/**
@@ -209,8 +229,8 @@ public class ProductPromoCondImpl extends EntityIdentifiableImpl implements Prod
 	 * @generated
 	 */
 	@Override
-	public void setInputParamEnumId(Enumeration newInputParamEnumId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_COND__INPUT_PARAM_ENUM_ID, newInputParamEnumId);
+	public void setInputParamEnum(Enumeration newInputParamEnum) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_COND__INPUT_PARAM_ENUM, newInputParamEnum);
 	}
 
 	/**
@@ -219,8 +239,8 @@ public class ProductPromoCondImpl extends EntityIdentifiableImpl implements Prod
 	 * @generated
 	 */
 	@Override
-	public Enumeration getOperatorEnumId() {
-		return (Enumeration)eGet(PromoPackage.Literals.PRODUCT_PROMO_COND__OPERATOR_ENUM_ID, true);
+	public Enumeration getOperatorEnum() {
+		return (Enumeration)eGet(PromoPackage.Literals.PRODUCT_PROMO_COND__OPERATOR_ENUM, true);
 	}
 
 	/**
@@ -229,8 +249,8 @@ public class ProductPromoCondImpl extends EntityIdentifiableImpl implements Prod
 	 * @generated
 	 */
 	@Override
-	public void setOperatorEnumId(Enumeration newOperatorEnumId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_COND__OPERATOR_ENUM_ID, newOperatorEnumId);
+	public void setOperatorEnum(Enumeration newOperatorEnum) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_COND__OPERATOR_ENUM, newOperatorEnum);
 	}
 
 	/**
@@ -329,26 +349,6 @@ public class ProductPromoCondImpl extends EntityIdentifiableImpl implements Prod
 	@Override
 	public void setProductPromoRuleId(String newProductPromoRuleId) {
 		eSet(PromoPackage.Literals.PRODUCT_PROMO_COND__PRODUCT_PROMO_RULE_ID, newProductPromoRuleId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductPromo getProductPromoId() {
-		return (ProductPromo)eGet(PromoPackage.Literals.PRODUCT_PROMO_COND__PRODUCT_PROMO_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPromoId(ProductPromo newProductPromoId) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_COND__PRODUCT_PROMO_ID, newProductPromoId);
 	}
 
 } //ProductPromoCondImpl

@@ -33,12 +33,12 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentApprovalImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentApprovalImpl#getContentApprovalId <em>Content Approval Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentApprovalImpl#getApprovalDate <em>Approval Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentApprovalImpl#getApprovalStatusId <em>Approval Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentApprovalImpl#getApprovalStatus <em>Approval Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentApprovalImpl#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentApprovalImpl#getContentId <em>Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentApprovalImpl#getContent <em>Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentApprovalImpl#getContentRevisionSeqId <em>Content Revision Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentApprovalImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentApprovalImpl#getRoleTypeId <em>Role Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentApprovalImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentApprovalImpl#getRoleType <em>Role Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentApprovalImpl#getSequenceNum <em>Sequence Num</em>}</li>
  * </ul>
  *
@@ -181,8 +181,8 @@ public class ContentApprovalImpl extends EntityIdentifiableImpl implements Conte
 	 * @generated
 	 */
 	@Override
-	public StatusItem getApprovalStatusId() {
-		return (StatusItem)eGet(ContentPackage.Literals.CONTENT_APPROVAL__APPROVAL_STATUS_ID, true);
+	public StatusItem getApprovalStatus() {
+		return (StatusItem)eGet(ContentPackage.Literals.CONTENT_APPROVAL__APPROVAL_STATUS, true);
 	}
 
 	/**
@@ -191,8 +191,8 @@ public class ContentApprovalImpl extends EntityIdentifiableImpl implements Conte
 	 * @generated
 	 */
 	@Override
-	public void setApprovalStatusId(StatusItem newApprovalStatusId) {
-		eSet(ContentPackage.Literals.CONTENT_APPROVAL__APPROVAL_STATUS_ID, newApprovalStatusId);
+	public void setApprovalStatus(StatusItem newApprovalStatus) {
+		eSet(ContentPackage.Literals.CONTENT_APPROVAL__APPROVAL_STATUS, newApprovalStatus);
 	}
 
 	/**
@@ -221,6 +221,26 @@ public class ContentApprovalImpl extends EntityIdentifiableImpl implements Conte
 	 * @generated
 	 */
 	@Override
+	public Content getContent() {
+		return (Content)eGet(ContentPackage.Literals.CONTENT_APPROVAL__CONTENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContent(Content newContent) {
+		eSet(ContentPackage.Literals.CONTENT_APPROVAL__CONTENT, newContent);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getContentApprovalId() {
 		return (String)eGet(ContentPackage.Literals.CONTENT_APPROVAL__CONTENT_APPROVAL_ID, true);
 	}
@@ -233,26 +253,6 @@ public class ContentApprovalImpl extends EntityIdentifiableImpl implements Conte
 	@Override
 	public void setContentApprovalId(String newContentApprovalId) {
 		eSet(ContentPackage.Literals.CONTENT_APPROVAL__CONTENT_APPROVAL_ID, newContentApprovalId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Content getContentId() {
-		return (Content)eGet(ContentPackage.Literals.CONTENT_APPROVAL__CONTENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContentId(Content newContentId) {
-		eSet(ContentPackage.Literals.CONTENT_APPROVAL__CONTENT_ID, newContentId);
 	}
 
 	/**
@@ -281,8 +281,8 @@ public class ContentApprovalImpl extends EntityIdentifiableImpl implements Conte
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(ContentPackage.Literals.CONTENT_APPROVAL__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(ContentPackage.Literals.CONTENT_APPROVAL__PARTY, true);
 	}
 
 	/**
@@ -291,8 +291,8 @@ public class ContentApprovalImpl extends EntityIdentifiableImpl implements Conte
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(ContentPackage.Literals.CONTENT_APPROVAL__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(ContentPackage.Literals.CONTENT_APPROVAL__PARTY, newParty);
 	}
 
 	/**
@@ -301,8 +301,8 @@ public class ContentApprovalImpl extends EntityIdentifiableImpl implements Conte
 	 * @generated
 	 */
 	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(ContentPackage.Literals.CONTENT_APPROVAL__ROLE_TYPE_ID, true);
+	public RoleType getRoleType() {
+		return (RoleType)eGet(ContentPackage.Literals.CONTENT_APPROVAL__ROLE_TYPE, true);
 	}
 
 	/**
@@ -311,8 +311,8 @@ public class ContentApprovalImpl extends EntityIdentifiableImpl implements Conte
 	 * @generated
 	 */
 	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(ContentPackage.Literals.CONTENT_APPROVAL__ROLE_TYPE_ID, newRoleTypeId);
+	public void setRoleType(RoleType newRoleType) {
+		eSet(ContentPackage.Literals.CONTENT_APPROVAL__ROLE_TYPE, newRoleType);
 	}
 
 	/**

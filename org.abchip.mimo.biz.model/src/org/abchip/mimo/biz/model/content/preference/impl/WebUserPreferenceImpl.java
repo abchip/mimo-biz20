@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.preference.impl.WebUserPreferenceImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.preference.impl.WebUserPreferenceImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.preference.impl.WebUserPreferenceImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.preference.impl.WebUserPreferenceImpl#getWebPreferenceTypeId <em>Web Preference Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.preference.impl.WebUserPreferenceImpl#getUserLoginId <em>User Login Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.preference.impl.WebUserPreferenceImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.preference.impl.WebUserPreferenceImpl#getWebPreferenceType <em>Web Preference Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.preference.impl.WebUserPreferenceImpl#getUserLogin <em>User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.preference.impl.WebUserPreferenceImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.preference.impl.WebUserPreferenceImpl#getVisitId <em>Visit Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.preference.impl.WebUserPreferenceImpl#getWebPreferenceValue <em>Web Preference Value</em>}</li>
  * </ul>
@@ -156,8 +156,8 @@ public class WebUserPreferenceImpl extends EntityTypedImpl<WebPreferenceType> im
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(PreferencePackage.Literals.WEB_USER_PREFERENCE__PARTY_ID, true);
+	public WebPreferenceType getWebPreferenceType() {
+		return (WebPreferenceType)eGet(PreferencePackage.Literals.WEB_USER_PREFERENCE__WEB_PREFERENCE_TYPE, true);
 	}
 
 	/**
@@ -166,8 +166,8 @@ public class WebUserPreferenceImpl extends EntityTypedImpl<WebPreferenceType> im
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(PreferencePackage.Literals.WEB_USER_PREFERENCE__PARTY_ID, newPartyId);
+	public void setWebPreferenceType(WebPreferenceType newWebPreferenceType) {
+		eSet(PreferencePackage.Literals.WEB_USER_PREFERENCE__WEB_PREFERENCE_TYPE, newWebPreferenceType);
 	}
 
 	/**
@@ -176,8 +176,8 @@ public class WebUserPreferenceImpl extends EntityTypedImpl<WebPreferenceType> im
 	 * @generated
 	 */
 	@Override
-	public UserLogin getUserLoginId() {
-		return (UserLogin)eGet(PreferencePackage.Literals.WEB_USER_PREFERENCE__USER_LOGIN_ID, true);
+	public UserLogin getUserLogin() {
+		return (UserLogin)eGet(PreferencePackage.Literals.WEB_USER_PREFERENCE__USER_LOGIN, true);
 	}
 
 	/**
@@ -186,8 +186,28 @@ public class WebUserPreferenceImpl extends EntityTypedImpl<WebPreferenceType> im
 	 * @generated
 	 */
 	@Override
-	public void setUserLoginId(UserLogin newUserLoginId) {
-		eSet(PreferencePackage.Literals.WEB_USER_PREFERENCE__USER_LOGIN_ID, newUserLoginId);
+	public void setUserLogin(UserLogin newUserLogin) {
+		eSet(PreferencePackage.Literals.WEB_USER_PREFERENCE__USER_LOGIN, newUserLogin);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(PreferencePackage.Literals.WEB_USER_PREFERENCE__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(PreferencePackage.Literals.WEB_USER_PREFERENCE__PARTY, newParty);
 	}
 
 	/**
@@ -208,26 +228,6 @@ public class WebUserPreferenceImpl extends EntityTypedImpl<WebPreferenceType> im
 	@Override
 	public void setVisitId(String newVisitId) {
 		eSet(PreferencePackage.Literals.WEB_USER_PREFERENCE__VISIT_ID, newVisitId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public WebPreferenceType getWebPreferenceTypeId() {
-		return (WebPreferenceType)eGet(PreferencePackage.Literals.WEB_USER_PREFERENCE__WEB_PREFERENCE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setWebPreferenceTypeId(WebPreferenceType newWebPreferenceTypeId) {
-		eSet(PreferencePackage.Literals.WEB_USER_PREFERENCE__WEB_PREFERENCE_TYPE_ID, newWebPreferenceTypeId);
 	}
 
 	/**

@@ -38,7 +38,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getAmountUomTypeId <em>Amount Uom Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getAmountUomType <em>Amount Uom Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getAutoCreateKeywords <em>Auto Create Keywords</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getBillOfMaterialLevel <em>Bill Of Material Level</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getBrandName <em>Brand Name</em>}</li>
@@ -48,20 +48,20 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getConfigId <em>Config Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getCreatedDate <em>Created Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getDefaultShipmentBoxTypeId <em>Default Shipment Box Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getDepthUomId <em>Depth Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getDefaultShipmentBoxType <em>Default Shipment Box Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getDepthUom <em>Depth Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getDetailImageUrl <em>Detail Image Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getDetailScreen <em>Detail Screen</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getDiameterUomId <em>Diameter Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getDiameterUom <em>Diameter Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getFacility <em>Facility</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getFixedAmount <em>Fixed Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getHeightUomId <em>Height Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getHeightUom <em>Height Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#isInShippingBox <em>In Shipping Box</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getIncludeInPromotions <em>Include In Promotions</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getInternalName <em>Internal Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getIntroductionDate <em>Introduction Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getInventoryItemTypeId <em>Inventory Item Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getInventoryItemType <em>Inventory Item Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getInventoryMessage <em>Inventory Message</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#isIsVariant <em>Is Variant</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#isIsVirtual <em>Is Virtual</em>}</li>
@@ -72,11 +72,11 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getLotIdFilledIn <em>Lot Id Filled In</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getMediumImageUrl <em>Medium Image Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getOrderDecimalQuantity <em>Order Decimal Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getOriginGeoId <em>Origin Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getOriginGeo <em>Origin Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getOriginalImageUrl <em>Original Image Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getPiecesIncluded <em>Pieces Included</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getPriceDetailText <em>Price Detail Text</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getPrimaryProductCategoryId <em>Primary Product Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getPrimaryProductCategory <em>Primary Product Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductAttributes <em>Product Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductCostComponentCalcs <em>Product Cost Component Calcs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductDepth <em>Product Depth</em>}</li>
@@ -90,16 +90,16 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductName <em>Product Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductRating <em>Product Rating</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductSubscriptionResources <em>Product Subscription Resources</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductTypeId <em>Product Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductType <em>Product Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductWeight <em>Product Weight</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductWidth <em>Product Width</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getQuantityIncluded <em>Quantity Included</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getQuantityUomId <em>Quantity Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getQuantityUom <em>Quantity Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getRatingTypeEnum <em>Rating Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getReleaseDate <em>Release Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getRequireAmount <em>Require Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getRequireInventory <em>Require Inventory</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getRequirementMethodEnumId <em>Requirement Method Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getRequirementMethodEnum <em>Requirement Method Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getReserv2ndPPPerc <em>Reserv2nd PP Perc</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getReservMaxPersons <em>Reserv Max Persons</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getReservNthPPPerc <em>Reserv Nth PP Perc</em>}</li>
@@ -114,8 +114,8 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getSupportDiscontinuationDate <em>Support Discontinuation Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getTaxable <em>Taxable</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getVirtualVariantMethodEnum <em>Virtual Variant Method Enum</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getWeightUomId <em>Weight Uom Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getWidthUomId <em>Width Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getWeightUom <em>Weight Uom</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getWidthUom <em>Width Uom</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct()
@@ -123,32 +123,6 @@ import org.abchip.mimo.entity.EntityTyped;
  * @generated
  */
 public interface Product extends EntityTyped<ProductType>, EntityInfo {
-	/**
-	 * Returns the value of the '<em><b>Amount Uom Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Amount Uom Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Amount Uom Type Id</em>' reference.
-	 * @see #setAmountUomTypeId(UomType)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_AmountUomTypeId()
-	 * @model keys="uomTypeId"
-	 * @generated
-	 */
-	UomType getAmountUomTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getAmountUomTypeId <em>Amount Uom Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Amount Uom Type Id</em>' reference.
-	 * @see #getAmountUomTypeId()
-	 * @generated
-	 */
-	void setAmountUomTypeId(UomType value);
-
 	/**
 	 * Returns the value of the '<em><b>Auto Create Keywords</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -367,56 +341,48 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	void setCreatedDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Default Shipment Box Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Default Shipment Box Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Default Shipment Box Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Default Shipment Box Type Id</em>' reference.
-	 * @see #setDefaultShipmentBoxTypeId(ShipmentBoxType)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_DefaultShipmentBoxTypeId()
+	 * @return the value of the '<em>Default Shipment Box Type</em>' reference.
+	 * @see #setDefaultShipmentBoxType(ShipmentBoxType)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_DefaultShipmentBoxType()
 	 * @model keys="shipmentBoxTypeId"
 	 * @generated
 	 */
-	ShipmentBoxType getDefaultShipmentBoxTypeId();
+	ShipmentBoxType getDefaultShipmentBoxType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getDefaultShipmentBoxTypeId <em>Default Shipment Box Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getDefaultShipmentBoxType <em>Default Shipment Box Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Default Shipment Box Type Id</em>' reference.
-	 * @see #getDefaultShipmentBoxTypeId()
+	 * @param value the new value of the '<em>Default Shipment Box Type</em>' reference.
+	 * @see #getDefaultShipmentBoxType()
 	 * @generated
 	 */
-	void setDefaultShipmentBoxTypeId(ShipmentBoxType value);
+	void setDefaultShipmentBoxType(ShipmentBoxType value);
 
 	/**
-	 * Returns the value of the '<em><b>Depth Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Depth Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Depth Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Depth Uom Id</em>' reference.
-	 * @see #setDepthUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_DepthUomId()
+	 * @return the value of the '<em>Depth Uom</em>' reference.
+	 * @see #setDepthUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_DepthUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getDepthUomId();
+	Uom getDepthUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getDepthUomId <em>Depth Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getDepthUom <em>Depth Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Depth Uom Id</em>' reference.
-	 * @see #getDepthUomId()
+	 * @param value the new value of the '<em>Depth Uom</em>' reference.
+	 * @see #getDepthUom()
 	 * @generated
 	 */
-	void setDepthUomId(Uom value);
+	void setDepthUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
@@ -497,30 +463,48 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	void setDetailScreen(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Diameter Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Diameter Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Diameter Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Diameter Uom Id</em>' reference.
-	 * @see #setDiameterUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_DiameterUomId()
+	 * @return the value of the '<em>Diameter Uom</em>' reference.
+	 * @see #setDiameterUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_DiameterUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getDiameterUomId();
+	Uom getDiameterUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getDiameterUomId <em>Diameter Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getDiameterUom <em>Diameter Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Diameter Uom Id</em>' reference.
-	 * @see #getDiameterUomId()
+	 * @param value the new value of the '<em>Diameter Uom</em>' reference.
+	 * @see #getDiameterUom()
 	 * @generated
 	 */
-	void setDiameterUomId(Uom value);
+	void setDiameterUom(Uom value);
+
+	/**
+	 * Returns the value of the '<em><b>Facility</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Facility</em>' reference.
+	 * @see #setFacility(Facility)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_Facility()
+	 * @model keys="facilityId"
+	 * @generated
+	 */
+	Facility getFacility();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getFacility <em>Facility</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Facility</em>' reference.
+	 * @see #getFacility()
+	 * @generated
+	 */
+	void setFacility(Facility value);
 
 	/**
 	 * Returns the value of the '<em><b>Fixed Amount</b></em>' attribute.
@@ -548,6 +532,28 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @generated
 	 */
 	void setFixedAmount(BigDecimal value);
+
+	/**
+	 * Returns the value of the '<em><b>Height Uom</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Height Uom</em>' reference.
+	 * @see #setHeightUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_HeightUom()
+	 * @model keys="uomId"
+	 * @generated
+	 */
+	Uom getHeightUom();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getHeightUom <em>Height Uom</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Height Uom</em>' reference.
+	 * @see #getHeightUom()
+	 * @generated
+	 */
+	void setHeightUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>In Shipping Box</b></em>' attribute.
@@ -596,32 +602,6 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @generated
 	 */
 	void setIncludeInPromotions(Boolean value);
-
-	/**
-	 * Returns the value of the '<em><b>Height Uom Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Height Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Height Uom Id</em>' reference.
-	 * @see #setHeightUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_HeightUomId()
-	 * @model keys="uomId"
-	 * @generated
-	 */
-	Uom getHeightUomId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getHeightUomId <em>Height Uom Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Height Uom Id</em>' reference.
-	 * @see #getHeightUomId()
-	 * @generated
-	 */
-	void setHeightUomId(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Internal Name</b></em>' attribute.
@@ -674,6 +654,28 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @generated
 	 */
 	void setIntroductionDate(Date value);
+
+	/**
+	 * Returns the value of the '<em><b>Inventory Item Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Inventory Item Type</em>' reference.
+	 * @see #setInventoryItemType(InventoryItemType)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_InventoryItemType()
+	 * @model keys="inventoryItemTypeId"
+	 * @generated
+	 */
+	InventoryItemType getInventoryItemType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getInventoryItemType <em>Inventory Item Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Inventory Item Type</em>' reference.
+	 * @see #getInventoryItemType()
+	 * @generated
+	 */
+	void setInventoryItemType(InventoryItemType value);
 
 	/**
 	 * Returns the value of the '<em><b>Inventory Message</b></em>' attribute.
@@ -933,30 +935,26 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	void setOrderDecimalQuantity(Boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Origin Geo Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Origin Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Origin Geo Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Origin Geo Id</em>' reference.
-	 * @see #setOriginGeoId(Geo)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_OriginGeoId()
+	 * @return the value of the '<em>Origin Geo</em>' reference.
+	 * @see #setOriginGeo(Geo)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_OriginGeo()
 	 * @model keys="geoId"
 	 * @generated
 	 */
-	Geo getOriginGeoId();
+	Geo getOriginGeo();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getOriginGeoId <em>Origin Geo Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getOriginGeo <em>Origin Geo</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Origin Geo Id</em>' reference.
-	 * @see #getOriginGeoId()
+	 * @param value the new value of the '<em>Origin Geo</em>' reference.
+	 * @see #getOriginGeo()
 	 * @generated
 	 */
-	void setOriginGeoId(Geo value);
+	void setOriginGeo(Geo value);
 
 	/**
 	 * Returns the value of the '<em><b>Original Image Url</b></em>' attribute.
@@ -1035,6 +1033,29 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @generated
 	 */
 	void setPriceDetailText(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Primary Product Category</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Primary Product Category</em>' reference.
+	 * @see #setPrimaryProductCategory(ProductCategory)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_PrimaryProductCategory()
+	 * @model keys="productCategoryId"
+	 *        annotation="mimo-ent-slot help='The primary category ; it should be one of the productCategoryId already setup in ProductCategoryMember'"
+	 * @generated
+	 */
+	ProductCategory getPrimaryProductCategory();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getPrimaryProductCategory <em>Primary Product Category</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Primary Product Category</em>' reference.
+	 * @see #getPrimaryProductCategory()
+	 * @generated
+	 */
+	void setPrimaryProductCategory(ProductCategory value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Depth</b></em>' attribute.
@@ -1257,6 +1278,28 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	List<ProductSubscriptionResource> getProductSubscriptionResources();
 
 	/**
+	 * Returns the value of the '<em><b>Product Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Type</em>' reference.
+	 * @see #setProductType(ProductType)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductType()
+	 * @model keys="productTypeId"
+	 * @generated
+	 */
+	ProductType getProductType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getProductType <em>Product Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Type</em>' reference.
+	 * @see #getProductType()
+	 * @generated
+	 */
+	void setProductType(ProductType value);
+
+	/**
 	 * Returns the value of the '<em><b>Product Weight</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -1336,30 +1379,26 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	void setQuantityIncluded(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Quantity Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Quantity Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Quantity Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Quantity Uom Id</em>' reference.
-	 * @see #setQuantityUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_QuantityUomId()
+	 * @return the value of the '<em>Quantity Uom</em>' reference.
+	 * @see #setQuantityUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_QuantityUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getQuantityUomId();
+	Uom getQuantityUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getQuantityUomId <em>Quantity Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getQuantityUom <em>Quantity Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Quantity Uom Id</em>' reference.
-	 * @see #getQuantityUomId()
+	 * @param value the new value of the '<em>Quantity Uom</em>' reference.
+	 * @see #getQuantityUom()
 	 * @generated
 	 */
-	void setQuantityUomId(Uom value);
+	void setQuantityUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Rating Type Enum</b></em>' reference.
@@ -1458,30 +1497,26 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	void setRequireInventory(Boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Requirement Method Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Requirement Method Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Requirement Method Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Requirement Method Enum Id</em>' reference.
-	 * @see #setRequirementMethodEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_RequirementMethodEnumId()
+	 * @return the value of the '<em>Requirement Method Enum</em>' reference.
+	 * @see #setRequirementMethodEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_RequirementMethodEnum()
 	 * @model keys="enumId"
 	 * @generated
 	 */
-	Enumeration getRequirementMethodEnumId();
+	Enumeration getRequirementMethodEnum();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getRequirementMethodEnumId <em>Requirement Method Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getRequirementMethodEnum <em>Requirement Method Enum</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Requirement Method Enum Id</em>' reference.
-	 * @see #getRequirementMethodEnumId()
+	 * @param value the new value of the '<em>Requirement Method Enum</em>' reference.
+	 * @see #getRequirementMethodEnum()
 	 * @generated
 	 */
-	void setRequirementMethodEnumId(Enumeration value);
+	void setRequirementMethodEnum(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Reserv2nd PP Perc</b></em>' attribute.
@@ -1841,109 +1876,48 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	void setVirtualVariantMethodEnum(Enumeration value);
 
 	/**
-	 * Returns the value of the '<em><b>Weight Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Weight Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Weight Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Weight Uom Id</em>' reference.
-	 * @see #setWeightUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_WeightUomId()
+	 * @return the value of the '<em>Weight Uom</em>' reference.
+	 * @see #setWeightUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_WeightUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getWeightUomId();
+	Uom getWeightUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getWeightUomId <em>Weight Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getWeightUom <em>Weight Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Weight Uom Id</em>' reference.
-	 * @see #getWeightUomId()
+	 * @param value the new value of the '<em>Weight Uom</em>' reference.
+	 * @see #getWeightUom()
 	 * @generated
 	 */
-	void setWeightUomId(Uom value);
+	void setWeightUom(Uom value);
 
 	/**
-	 * Returns the value of the '<em><b>Width Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Width Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Width Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Width Uom Id</em>' reference.
-	 * @see #setWidthUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_WidthUomId()
+	 * @return the value of the '<em>Width Uom</em>' reference.
+	 * @see #setWidthUom(Uom)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_WidthUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getWidthUomId();
+	Uom getWidthUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getWidthUomId <em>Width Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getWidthUom <em>Width Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Width Uom Id</em>' reference.
-	 * @see #getWidthUomId()
+	 * @param value the new value of the '<em>Width Uom</em>' reference.
+	 * @see #getWidthUom()
 	 * @generated
 	 */
-	void setWidthUomId(Uom value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Type Id</em>' reference.
-	 * @see #setProductTypeId(ProductType)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductTypeId()
-	 * @model keys="productTypeId"
-	 * @generated
-	 */
-	ProductType getProductTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getProductTypeId <em>Product Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Type Id</em>' reference.
-	 * @see #getProductTypeId()
-	 * @generated
-	 */
-	void setProductTypeId(ProductType value);
-
-	/**
-	 * Returns the value of the '<em><b>Primary Product Category Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Primary Product Category Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Primary Product Category Id</em>' reference.
-	 * @see #setPrimaryProductCategoryId(ProductCategory)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_PrimaryProductCategoryId()
-	 * @model keys="productCategoryId"
-	 *        annotation="mimo-ent-slot help='The primary category ; it should be one of the productCategoryId already setup in ProductCategoryMember'"
-	 * @generated
-	 */
-	ProductCategory getPrimaryProductCategoryId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getPrimaryProductCategoryId <em>Primary Product Category Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Primary Product Category Id</em>' reference.
-	 * @see #getPrimaryProductCategoryId()
-	 * @generated
-	 */
-	void setPrimaryProductCategoryId(ProductCategory value);
+	void setWidthUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Attributes</b></em>' reference list.
@@ -1975,58 +1949,6 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	List<ProductCostComponentCalc> getProductCostComponentCalcs();
 
 	/**
-	 * Returns the value of the '<em><b>Facility Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facility Id</em>' reference.
-	 * @see #setFacilityId(Facility)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_FacilityId()
-	 * @model keys="facilityId"
-	 * @generated
-	 */
-	Facility getFacilityId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getFacilityId <em>Facility Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Facility Id</em>' reference.
-	 * @see #getFacilityId()
-	 * @generated
-	 */
-	void setFacilityId(Facility value);
-
-	/**
-	 * Returns the value of the '<em><b>Inventory Item Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Inventory Item Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Inventory Item Type Id</em>' reference.
-	 * @see #setInventoryItemTypeId(InventoryItemType)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_InventoryItemTypeId()
-	 * @model keys="inventoryItemTypeId"
-	 * @generated
-	 */
-	InventoryItemType getInventoryItemTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getInventoryItemTypeId <em>Inventory Item Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Inventory Item Type Id</em>' reference.
-	 * @see #getInventoryItemTypeId()
-	 * @generated
-	 */
-	void setInventoryItemTypeId(InventoryItemType value);
-
-	/**
 	 * Returns the value of the '<em><b>Product Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -2052,5 +1974,27 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @generated
 	 */
 	void setProductId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Amount Uom Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Amount Uom Type</em>' reference.
+	 * @see #setAmountUomType(UomType)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_AmountUomType()
+	 * @model keys="uomTypeId"
+	 * @generated
+	 */
+	UomType getAmountUomType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getAmountUomType <em>Amount Uom Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Amount Uom Type</em>' reference.
+	 * @see #getAmountUomType()
+	 * @generated
+	 */
+	void setAmountUomType(UomType value);
 
 } // Product

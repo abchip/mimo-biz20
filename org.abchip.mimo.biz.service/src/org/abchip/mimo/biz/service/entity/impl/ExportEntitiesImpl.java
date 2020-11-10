@@ -52,7 +52,7 @@ public class ExportEntitiesImpl extends ServiceRequestImpl<ServiceResponse> impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 4;
+	protected static final int ESTATIC_FEATURE_COUNT = 2;
 
 	/**
 	 * <!-- begin-user-doc -->

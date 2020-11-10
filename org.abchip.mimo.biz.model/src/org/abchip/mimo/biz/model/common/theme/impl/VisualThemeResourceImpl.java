@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.theme.impl.VisualThemeResourceImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.theme.impl.VisualThemeResourceImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.theme.impl.VisualThemeResourceImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.theme.impl.VisualThemeResourceImpl#getVisualThemeId <em>Visual Theme Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.theme.impl.VisualThemeResourceImpl#getResourceTypeEnumId <em>Resource Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.theme.impl.VisualThemeResourceImpl#getVisualTheme <em>Visual Theme</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.theme.impl.VisualThemeResourceImpl#getResourceTypeEnum <em>Resource Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.theme.impl.VisualThemeResourceImpl#getSequenceId <em>Sequence Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.theme.impl.VisualThemeResourceImpl#getResourceValue <em>Resource Value</em>}</li>
  * </ul>
@@ -153,6 +153,46 @@ public class VisualThemeResourceImpl extends EntityIdentifiableImpl implements V
 	 * @generated
 	 */
 	@Override
+	public VisualTheme getVisualTheme() {
+		return (VisualTheme)eGet(ThemePackage.Literals.VISUAL_THEME_RESOURCE__VISUAL_THEME, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setVisualTheme(VisualTheme newVisualTheme) {
+		eSet(ThemePackage.Literals.VISUAL_THEME_RESOURCE__VISUAL_THEME, newVisualTheme);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Enumeration getResourceTypeEnum() {
+		return (Enumeration)eGet(ThemePackage.Literals.VISUAL_THEME_RESOURCE__RESOURCE_TYPE_ENUM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setResourceTypeEnum(Enumeration newResourceTypeEnum) {
+		eSet(ThemePackage.Literals.VISUAL_THEME_RESOURCE__RESOURCE_TYPE_ENUM, newResourceTypeEnum);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getResourceValue() {
 		return (String)eGet(ThemePackage.Literals.VISUAL_THEME_RESOURCE__RESOURCE_VALUE, true);
 	}
@@ -223,46 +263,6 @@ public class VisualThemeResourceImpl extends EntityIdentifiableImpl implements V
 	@Override
 	public void setSequenceId(String newSequenceId) {
 		eSet(ThemePackage.Literals.VISUAL_THEME_RESOURCE__SEQUENCE_ID, newSequenceId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public VisualTheme getVisualThemeId() {
-		return (VisualTheme)eGet(ThemePackage.Literals.VISUAL_THEME_RESOURCE__VISUAL_THEME_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setVisualThemeId(VisualTheme newVisualThemeId) {
-		eSet(ThemePackage.Literals.VISUAL_THEME_RESOURCE__VISUAL_THEME_ID, newVisualThemeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Enumeration getResourceTypeEnumId() {
-		return (Enumeration)eGet(ThemePackage.Literals.VISUAL_THEME_RESOURCE__RESOURCE_TYPE_ENUM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setResourceTypeEnumId(Enumeration newResourceTypeEnumId) {
-		eSet(ThemePackage.Literals.VISUAL_THEME_RESOURCE__RESOURCE_TYPE_ENUM_ID, newResourceTypeEnumId);
 	}
 
 } //VisualThemeResourceImpl

@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentMethodImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentMethodImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentMethodImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentMethodImpl#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentMethodImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentMethodImpl#getShipmentMethodType <em>Shipment Method Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentMethodImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentMethodImpl#getRoleTypeId <em>Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentMethodImpl#getCarrierServiceCode <em>Carrier Service Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentMethodImpl#getSequenceNumber <em>Sequence Number</em>}</li>
@@ -155,6 +155,46 @@ public class CarrierShipmentMethodImpl extends EntityTypedImpl<ShipmentMethodTyp
 	 * @generated
 	 */
 	@Override
+	public ShipmentMethodType getShipmentMethodType() {
+		return (ShipmentMethodType)eGet(Shipment_Package.Literals.CARRIER_SHIPMENT_METHOD__SHIPMENT_METHOD_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setShipmentMethodType(ShipmentMethodType newShipmentMethodType) {
+		eSet(Shipment_Package.Literals.CARRIER_SHIPMENT_METHOD__SHIPMENT_METHOD_TYPE, newShipmentMethodType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(Shipment_Package.Literals.CARRIER_SHIPMENT_METHOD__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(Shipment_Package.Literals.CARRIER_SHIPMENT_METHOD__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getCarrierServiceCode() {
 		return (String)eGet(Shipment_Package.Literals.CARRIER_SHIPMENT_METHOD__CARRIER_SERVICE_CODE, true);
 	}
@@ -167,26 +207,6 @@ public class CarrierShipmentMethodImpl extends EntityTypedImpl<ShipmentMethodTyp
 	@Override
 	public void setCarrierServiceCode(String newCarrierServiceCode) {
 		eSet(Shipment_Package.Literals.CARRIER_SHIPMENT_METHOD__CARRIER_SERVICE_CODE, newCarrierServiceCode);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(Shipment_Package.Literals.CARRIER_SHIPMENT_METHOD__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(Shipment_Package.Literals.CARRIER_SHIPMENT_METHOD__PARTY_ID, newPartyId);
 	}
 
 	/**
@@ -265,26 +285,6 @@ public class CarrierShipmentMethodImpl extends EntityTypedImpl<ShipmentMethodTyp
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ShipmentMethodType getShipmentMethodTypeId() {
-		return (ShipmentMethodType)eGet(Shipment_Package.Literals.CARRIER_SHIPMENT_METHOD__SHIPMENT_METHOD_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setShipmentMethodTypeId(ShipmentMethodType newShipmentMethodTypeId) {
-		eSet(Shipment_Package.Literals.CARRIER_SHIPMENT_METHOD__SHIPMENT_METHOD_TYPE_ID, newShipmentMethodTypeId);
 	}
 
 } //CarrierShipmentMethodImpl

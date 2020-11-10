@@ -22,11 +22,11 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getContentPurposeTypeId <em>Content Purpose Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getContentOperationId <em>Content Operation Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getRoleTypeId <em>Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getPrivilegeEnumId <em>Privilege Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getContentPurposeType <em>Content Purpose Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getContentOperation <em>Content Operation</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getRoleType <em>Role Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getPrivilegeEnum <em>Privilege Enum</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurposeOperation()
@@ -35,138 +35,118 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface ContentPurposeOperation extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Content Operation Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Operation Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Operation Id</em>' reference.
-	 * @see #setContentOperationId(ContentOperation)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurposeOperation_ContentOperationId()
-	 * @model keys="contentOperationId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ContentOperation getContentOperationId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getContentOperationId <em>Content Operation Id</em>}' reference.
+	 * Returns the value of the '<em><b>Content Purpose Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Operation Id</em>' reference.
-	 * @see #getContentOperationId()
-	 * @generated
-	 */
-	void setContentOperationId(ContentOperation value);
-
-	/**
-	 * Returns the value of the '<em><b>Content Purpose Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Purpose Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Content Purpose Type Id</em>' reference.
-	 * @see #setContentPurposeTypeId(ContentPurposeType)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurposeOperation_ContentPurposeTypeId()
+	 * @return the value of the '<em>Content Purpose Type</em>' reference.
+	 * @see #setContentPurposeType(ContentPurposeType)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurposeOperation_ContentPurposeType()
 	 * @model keys="contentPurposeTypeId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ContentPurposeType getContentPurposeTypeId();
+	ContentPurposeType getContentPurposeType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getContentPurposeTypeId <em>Content Purpose Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getContentPurposeType <em>Content Purpose Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Content Purpose Type Id</em>' reference.
-	 * @see #getContentPurposeTypeId()
+	 * @param value the new value of the '<em>Content Purpose Type</em>' reference.
+	 * @see #getContentPurposeType()
 	 * @generated
 	 */
-	void setContentPurposeTypeId(ContentPurposeType value);
+	void setContentPurposeType(ContentPurposeType value);
 
 	/**
-	 * Returns the value of the '<em><b>Privilege Enum Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Content Operation</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Privilege Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Privilege Enum Id</em>' reference.
-	 * @see #setPrivilegeEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurposeOperation_PrivilegeEnumId()
-	 * @model keys="enumId" required="true"
+	 * @return the value of the '<em>Content Operation</em>' reference.
+	 * @see #setContentOperation(ContentOperation)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurposeOperation_ContentOperation()
+	 * @model keys="contentOperationId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Enumeration getPrivilegeEnumId();
+	ContentOperation getContentOperation();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getPrivilegeEnumId <em>Privilege Enum Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getContentOperation <em>Content Operation</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Privilege Enum Id</em>' reference.
-	 * @see #getPrivilegeEnumId()
+	 * @param value the new value of the '<em>Content Operation</em>' reference.
+	 * @see #getContentOperation()
 	 * @generated
 	 */
-	void setPrivilegeEnumId(Enumeration value);
+	void setContentOperation(ContentOperation value);
 
 	/**
-	 * Returns the value of the '<em><b>Role Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Role Type Id</em>' reference.
-	 * @see #setRoleTypeId(RoleType)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurposeOperation_RoleTypeId()
+	 * @return the value of the '<em>Role Type</em>' reference.
+	 * @see #setRoleType(RoleType)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurposeOperation_RoleType()
 	 * @model keys="roleTypeId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	RoleType getRoleTypeId();
+	RoleType getRoleType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getRoleTypeId <em>Role Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getRoleType <em>Role Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Role Type Id</em>' reference.
-	 * @see #getRoleTypeId()
+	 * @param value the new value of the '<em>Role Type</em>' reference.
+	 * @see #getRoleType()
 	 * @generated
 	 */
-	void setRoleTypeId(RoleType value);
+	void setRoleType(RoleType value);
 
 	/**
-	 * Returns the value of the '<em><b>Status Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Status</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Status Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Status Id</em>' reference.
-	 * @see #setStatusId(StatusItem)
-	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurposeOperation_StatusId()
+	 * @return the value of the '<em>Status</em>' reference.
+	 * @see #setStatus(StatusItem)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurposeOperation_Status()
 	 * @model keys="statusId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	StatusItem getStatusId();
+	StatusItem getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getStatusId <em>Status Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getStatus <em>Status</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Status Id</em>' reference.
-	 * @see #getStatusId()
+	 * @param value the new value of the '<em>Status</em>' reference.
+	 * @see #getStatus()
 	 * @generated
 	 */
-	void setStatusId(StatusItem value);
+	void setStatus(StatusItem value);
+
+	/**
+	 * Returns the value of the '<em><b>Privilege Enum</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Privilege Enum</em>' reference.
+	 * @see #setPrivilegeEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurposeOperation_PrivilegeEnum()
+	 * @model keys="enumId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Enumeration getPrivilegeEnum();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentPurposeOperation#getPrivilegeEnum <em>Privilege Enum</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Privilege Enum</em>' reference.
+	 * @see #getPrivilegeEnum()
+	 * @generated
+	 */
+	void setPrivilegeEnum(Enumeration value);
 
 } // ContentPurposeOperation

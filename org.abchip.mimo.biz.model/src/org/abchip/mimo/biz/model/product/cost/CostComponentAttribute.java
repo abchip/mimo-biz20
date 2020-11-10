@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentAttribute#getCostComponentId <em>Cost Component Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentAttribute#getCostComponent <em>Cost Component</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentAttribute#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentAttribute#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.CostComponentAttribute#getAttrValue <em>Attr Value</em>}</li>
@@ -30,6 +30,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface CostComponentAttribute extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Cost Component</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Cost Component</em>' reference.
+	 * @see #setCostComponent(CostComponent)
+	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponentAttribute_CostComponent()
+	 * @model keys="costComponentId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	CostComponent getCostComponent();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.cost.CostComponentAttribute#getCostComponent <em>Cost Component</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Cost Component</em>' reference.
+	 * @see #getCostComponent()
+	 * @generated
+	 */
+	void setCostComponent(CostComponent value);
+
 	/**
 	 * Returns the value of the '<em><b>Attr Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -81,33 +104,6 @@ public interface CostComponentAttribute extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setAttrValue(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Cost Component Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cost Component Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cost Component Id</em>' reference.
-	 * @see #setCostComponentId(CostComponent)
-	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponentAttribute_CostComponentId()
-	 * @model keys="costComponentId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	CostComponent getCostComponentId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.cost.CostComponentAttribute#getCostComponentId <em>Cost Component Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Cost Component Id</em>' reference.
-	 * @see #getCostComponentId()
-	 * @generated
-	 */
-	void setCostComponentId(CostComponent value);
 
 	/**
 	 * Returns the value of the '<em><b>Attr Name</b></em>' attribute.

@@ -29,22 +29,22 @@ import org.abchip.mimo.entity.EntityInfo;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getSalesOpportunityId <em>Sales Opportunity Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getCreatedByUserLogin <em>Created By User Login</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getDataSourceId <em>Data Source Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getEstimatedAmount <em>Estimated Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getEstimatedCloseDate <em>Estimated Close Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getEstimatedProbability <em>Estimated Probability</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getMarketingCampaignId <em>Marketing Campaign Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getMarketingCampaign <em>Marketing Campaign</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getNextStep <em>Next Step</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getNextStepDate <em>Next Step Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getOpportunityName <em>Opportunity Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getOpportunityStageId <em>Opportunity Stage Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getOpportunityStage <em>Opportunity Stage</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getSalesOpportunityCompetitors <em>Sales Opportunity Competitors</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getSalesOpportunityQuotes <em>Sales Opportunity Quotes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getSalesOpportunityTrckCodes <em>Sales Opportunity Trck Codes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getSalesOpportunityWorkEfforts <em>Sales Opportunity Work Efforts</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getTypeEnumId <em>Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getTypeEnum <em>Type Enum</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunity()
@@ -79,30 +79,26 @@ public interface SalesOpportunity extends EntityIdentifiable, EntityInfo {
 	void setCreatedByUserLogin(UserLogin value);
 
 	/**
-	 * Returns the value of the '<em><b>Currency Uom Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Currency Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Currency Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Currency Uom Id</em>' reference.
-	 * @see #setCurrencyUomId(Uom)
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunity_CurrencyUomId()
+	 * @return the value of the '<em>Currency Uom</em>' reference.
+	 * @see #setCurrencyUom(Uom)
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunity_CurrencyUom()
 	 * @model keys="uomId"
 	 * @generated
 	 */
-	Uom getCurrencyUomId();
+	Uom getCurrencyUom();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getCurrencyUomId <em>Currency Uom Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getCurrencyUom <em>Currency Uom</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Currency Uom Id</em>' reference.
-	 * @see #getCurrencyUomId()
+	 * @param value the new value of the '<em>Currency Uom</em>' reference.
+	 * @see #getCurrencyUom()
 	 * @generated
 	 */
-	void setCurrencyUomId(Uom value);
+	void setCurrencyUom(Uom value);
 
 	/**
 	 * Returns the value of the '<em><b>Data Source Id</b></em>' attribute.
@@ -235,30 +231,26 @@ public interface SalesOpportunity extends EntityIdentifiable, EntityInfo {
 	void setEstimatedProbability(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Marketing Campaign Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Marketing Campaign</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Marketing Campaign Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Marketing Campaign Id</em>' reference.
-	 * @see #setMarketingCampaignId(MarketingCampaign)
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunity_MarketingCampaignId()
+	 * @return the value of the '<em>Marketing Campaign</em>' reference.
+	 * @see #setMarketingCampaign(MarketingCampaign)
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunity_MarketingCampaign()
 	 * @model keys="marketingCampaignId"
 	 * @generated
 	 */
-	MarketingCampaign getMarketingCampaignId();
+	MarketingCampaign getMarketingCampaign();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getMarketingCampaignId <em>Marketing Campaign Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getMarketingCampaign <em>Marketing Campaign</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Marketing Campaign Id</em>' reference.
-	 * @see #getMarketingCampaignId()
+	 * @param value the new value of the '<em>Marketing Campaign</em>' reference.
+	 * @see #getMarketingCampaign()
 	 * @generated
 	 */
-	void setMarketingCampaignId(MarketingCampaign value);
+	void setMarketingCampaign(MarketingCampaign value);
 
 	/**
 	 * Returns the value of the '<em><b>Next Step</b></em>' attribute.
@@ -339,30 +331,26 @@ public interface SalesOpportunity extends EntityIdentifiable, EntityInfo {
 	void setOpportunityName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Opportunity Stage Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Opportunity Stage</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Opportunity Stage Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Opportunity Stage Id</em>' reference.
-	 * @see #setOpportunityStageId(SalesOpportunityStage)
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunity_OpportunityStageId()
+	 * @return the value of the '<em>Opportunity Stage</em>' reference.
+	 * @see #setOpportunityStage(SalesOpportunityStage)
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunity_OpportunityStage()
 	 * @model keys="opportunityStageId"
 	 * @generated
 	 */
-	SalesOpportunityStage getOpportunityStageId();
+	SalesOpportunityStage getOpportunityStage();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getOpportunityStageId <em>Opportunity Stage Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getOpportunityStage <em>Opportunity Stage</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Opportunity Stage Id</em>' reference.
-	 * @see #getOpportunityStageId()
+	 * @param value the new value of the '<em>Opportunity Stage</em>' reference.
+	 * @see #getOpportunityStage()
 	 * @generated
 	 */
-	void setOpportunityStageId(SalesOpportunityStage value);
+	void setOpportunityStage(SalesOpportunityStage value);
 
 	/**
 	 * Returns the value of the '<em><b>Sales Opportunity Competitors</b></em>' reference list.
@@ -429,6 +417,28 @@ public interface SalesOpportunity extends EntityIdentifiable, EntityInfo {
 	List<SalesOpportunityWorkEffort> getSalesOpportunityWorkEfforts();
 
 	/**
+	 * Returns the value of the '<em><b>Type Enum</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Type Enum</em>' reference.
+	 * @see #setTypeEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunity_TypeEnum()
+	 * @model keys="enumId"
+	 * @generated
+	 */
+	Enumeration getTypeEnum();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getTypeEnum <em>Type Enum</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Type Enum</em>' reference.
+	 * @see #getTypeEnum()
+	 * @generated
+	 */
+	void setTypeEnum(Enumeration value);
+
+	/**
 	 * Returns the value of the '<em><b>Sales Opportunity Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -454,31 +464,5 @@ public interface SalesOpportunity extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setSalesOpportunityId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Type Enum Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Type Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Type Enum Id</em>' reference.
-	 * @see #setTypeEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunity_TypeEnumId()
-	 * @model keys="enumId"
-	 * @generated
-	 */
-	Enumeration getTypeEnumId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity#getTypeEnumId <em>Type Enum Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Type Enum Id</em>' reference.
-	 * @see #getTypeEnumId()
-	 * @generated
-	 */
-	void setTypeEnumId(Enumeration value);
 
 } // SalesOpportunity

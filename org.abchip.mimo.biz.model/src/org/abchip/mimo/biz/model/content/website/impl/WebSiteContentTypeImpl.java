@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentTypeImpl#getWebSiteContentTypeId <em>Web Site Content Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -200,8 +200,8 @@ public class WebSiteContentTypeImpl extends EntityTypeImpl<WebSiteContent> imple
 	 * @generated
 	 */
 	@Override
-	public WebSiteContentType getParentTypeId() {
-		return (WebSiteContentType)eGet(WebsitePackage.Literals.WEB_SITE_CONTENT_TYPE__PARENT_TYPE_ID, true);
+	public WebSiteContentType getParentType() {
+		return (WebSiteContentType)eGet(WebsitePackage.Literals.WEB_SITE_CONTENT_TYPE__PARENT_TYPE, true);
 	}
 
 	/**
@@ -210,8 +210,8 @@ public class WebSiteContentTypeImpl extends EntityTypeImpl<WebSiteContent> imple
 	 * @generated
 	 */
 	@Override
-	public void setParentTypeId(WebSiteContentType newParentTypeId) {
-		eSet(WebsitePackage.Literals.WEB_SITE_CONTENT_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	public void setParentType(WebSiteContentType newParentType) {
+		eSet(WebsitePackage.Literals.WEB_SITE_CONTENT_TYPE__PARENT_TYPE, newParentType);
 	}
 
 	/**

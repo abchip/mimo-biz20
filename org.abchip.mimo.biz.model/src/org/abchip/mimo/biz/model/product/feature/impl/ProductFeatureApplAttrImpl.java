@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplAttrImpl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplAttrImpl#getProductFeatureId <em>Product Feature Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplAttrImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplAttrImpl#getProductFeature <em>Product Feature</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplAttrImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplAttrImpl#getAttrValue <em>Attr Value</em>}</li>
@@ -155,6 +155,46 @@ public class ProductFeatureApplAttrImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
+	public Product getProduct() {
+		return (Product)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL_ATTR__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL_ATTR__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductFeature getProductFeature() {
+		return (ProductFeature)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL_ATTR__PRODUCT_FEATURE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductFeature(ProductFeature newProductFeature) {
+		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL_ATTR__PRODUCT_FEATURE, newProductFeature);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrName() {
 		return (String)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL_ATTR__ATTR_NAME, true);
 	}
@@ -245,46 +285,6 @@ public class ProductFeatureApplAttrImpl extends EntityIdentifiableImpl implement
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL_ATTR__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Product getProductId() {
-		return (Product)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL_ATTR__PRODUCT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductId(Product newProductId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL_ATTR__PRODUCT_ID, newProductId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductFeature getProductFeatureId() {
-		return (ProductFeature)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL_ATTR__PRODUCT_FEATURE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductFeatureId(ProductFeature newProductFeatureId) {
-		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_APPL_ATTR__PRODUCT_FEATURE_ID, newProductFeatureId);
 	}
 
 } //ProductFeatureApplAttrImpl

@@ -27,13 +27,13 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getProductStoreSurveyId <em>Product Store Survey Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getGroupName <em>Group Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getProductCategoryId <em>Product Category Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getProductId <em>Product Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getProductStoreId <em>Product Store Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getProductCategory <em>Product Category</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getProductStore <em>Product Store</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getResultTemplate <em>Result Template</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getSequenceNum <em>Sequence Num</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getSurveyApplTypeId <em>Survey Appl Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getSurveyId <em>Survey Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getSurvey <em>Survey</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getSurveyApplType <em>Survey Appl Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getSurveyTemplate <em>Survey Template</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -94,6 +94,72 @@ public interface ProductStoreSurveyAppl extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setGroupName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product</em>' reference.
+	 * @see #setProduct(Product)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreSurveyAppl_Product()
+	 * @model keys="productId"
+	 * @generated
+	 */
+	Product getProduct();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getProduct <em>Product</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @see #getProduct()
+	 * @generated
+	 */
+	void setProduct(Product value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Category</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Category</em>' reference.
+	 * @see #setProductCategory(ProductCategory)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreSurveyAppl_ProductCategory()
+	 * @model keys="productCategoryId"
+	 * @generated
+	 */
+	ProductCategory getProductCategory();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getProductCategory <em>Product Category</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Category</em>' reference.
+	 * @see #getProductCategory()
+	 * @generated
+	 */
+	void setProductCategory(ProductCategory value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Store</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Store</em>' reference.
+	 * @see #setProductStore(ProductStore)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreSurveyAppl_ProductStore()
+	 * @model keys="productStoreId"
+	 * @generated
+	 */
+	ProductStore getProductStore();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getProductStore <em>Product Store</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Store</em>' reference.
+	 * @see #getProductStore()
+	 * @generated
+	 */
+	void setProductStore(ProductStore value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Store Survey Id</b></em>' attribute.
@@ -175,56 +241,48 @@ public interface ProductStoreSurveyAppl extends EntityIdentifiable, EntityInfo {
 	void setSequenceNum(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Survey Appl Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Survey Appl Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Survey Appl Type Id</em>' reference.
-	 * @see #setSurveyApplTypeId(SurveyApplType)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreSurveyAppl_SurveyApplTypeId()
-	 * @model keys="surveyApplTypeId"
-	 * @generated
-	 */
-	SurveyApplType getSurveyApplTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getSurveyApplTypeId <em>Survey Appl Type Id</em>}' reference.
+	 * Returns the value of the '<em><b>Survey</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Survey Appl Type Id</em>' reference.
-	 * @see #getSurveyApplTypeId()
-	 * @generated
-	 */
-	void setSurveyApplTypeId(SurveyApplType value);
-
-	/**
-	 * Returns the value of the '<em><b>Survey Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Survey Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Survey Id</em>' reference.
-	 * @see #setSurveyId(Survey)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreSurveyAppl_SurveyId()
+	 * @return the value of the '<em>Survey</em>' reference.
+	 * @see #setSurvey(Survey)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreSurveyAppl_Survey()
 	 * @model keys="surveyId"
 	 * @generated
 	 */
-	Survey getSurveyId();
+	Survey getSurvey();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getSurveyId <em>Survey Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getSurvey <em>Survey</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Survey Id</em>' reference.
-	 * @see #getSurveyId()
+	 * @param value the new value of the '<em>Survey</em>' reference.
+	 * @see #getSurvey()
 	 * @generated
 	 */
-	void setSurveyId(Survey value);
+	void setSurvey(Survey value);
+
+	/**
+	 * Returns the value of the '<em><b>Survey Appl Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Survey Appl Type</em>' reference.
+	 * @see #setSurveyApplType(SurveyApplType)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreSurveyAppl_SurveyApplType()
+	 * @model keys="surveyApplTypeId"
+	 * @generated
+	 */
+	SurveyApplType getSurveyApplType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getSurveyApplType <em>Survey Appl Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Survey Appl Type</em>' reference.
+	 * @see #getSurveyApplType()
+	 * @generated
+	 */
+	void setSurveyApplType(SurveyApplType value);
 
 	/**
 	 * Returns the value of the '<em><b>Survey Template</b></em>' attribute.
@@ -277,83 +335,5 @@ public interface ProductStoreSurveyAppl extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setThruDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Store Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store Id</em>' reference.
-	 * @see #setProductStoreId(ProductStore)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreSurveyAppl_ProductStoreId()
-	 * @model keys="productStoreId"
-	 * @generated
-	 */
-	ProductStore getProductStoreId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getProductStoreId <em>Product Store Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store Id</em>' reference.
-	 * @see #getProductStoreId()
-	 * @generated
-	 */
-	void setProductStoreId(ProductStore value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Id</em>' reference.
-	 * @see #setProductId(Product)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreSurveyAppl_ProductId()
-	 * @model keys="productId"
-	 * @generated
-	 */
-	Product getProductId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getProductId <em>Product Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Id</em>' reference.
-	 * @see #getProductId()
-	 * @generated
-	 */
-	void setProductId(Product value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Category Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Category Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Category Id</em>' reference.
-	 * @see #setProductCategoryId(ProductCategory)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreSurveyAppl_ProductCategoryId()
-	 * @model keys="productCategoryId"
-	 * @generated
-	 */
-	ProductCategory getProductCategoryId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl#getProductCategoryId <em>Product Category Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Category Id</em>' reference.
-	 * @see #getProductCategoryId()
-	 * @generated
-	 */
-	void setProductCategoryId(ProductCategory value);
 
 } // ProductStoreSurveyAppl

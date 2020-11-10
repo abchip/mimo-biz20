@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountTermAttrImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountTermAttrImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountTermAttrImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountTermAttrImpl#getBillingAccountTermId <em>Billing Account Term Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountTermAttrImpl#getBillingAccountTerm <em>Billing Account Term</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountTermAttrImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.BillingAccountTermAttrImpl#getAttrValue <em>Attr Value</em>}</li>
  * </ul>
@@ -151,6 +151,26 @@ public class BillingAccountTermAttrImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
+	public BillingAccountTerm getBillingAccountTerm() {
+		return (BillingAccountTerm)eGet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM_ATTR__BILLING_ACCOUNT_TERM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBillingAccountTerm(BillingAccountTerm newBillingAccountTerm) {
+		eSet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM_ATTR__BILLING_ACCOUNT_TERM, newBillingAccountTerm);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAttrName() {
 		return (String)eGet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM_ATTR__ATTR_NAME, true);
 	}
@@ -221,26 +241,6 @@ public class BillingAccountTermAttrImpl extends EntityIdentifiableImpl implement
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public BillingAccountTerm getBillingAccountTermId() {
-		return (BillingAccountTerm)eGet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM_ATTR__BILLING_ACCOUNT_TERM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBillingAccountTermId(BillingAccountTerm newBillingAccountTermId) {
-		eSet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM_ATTR__BILLING_ACCOUNT_TERM_ID, newBillingAccountTermId);
 	}
 
 } //BillingAccountTermAttrImpl

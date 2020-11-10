@@ -39,13 +39,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getCommunicationEventId <em>Communication Event Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getBccString <em>Bcc String</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getCcString <em>Cc String</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getCommunicationEventTypeId <em>Communication Event Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getContactListId <em>Contact List Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getCommunicationEventType <em>Communication Event Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getContactList <em>Contact List</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getContactMechIdFrom <em>Contact Mech Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getContactMechIdTo <em>Contact Mech Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getContactMechTypeId <em>Contact Mech Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getContactMechType <em>Contact Mech Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getContent <em>Content</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getContentMimeTypeId <em>Content Mime Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getContentMimeType <em>Content Mime Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getDatetimeEnded <em>Datetime Ended</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getDatetimeStarted <em>Datetime Started</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getEntryDate <em>Entry Date</em>}</li>
@@ -57,10 +57,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getParentCommEventId <em>Parent Comm Event Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getPartyIdFrom <em>Party Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getPartyIdTo <em>Party Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getReasonEnumId <em>Reason Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getReasonEnum <em>Reason Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getRoleTypeIdFrom <em>Role Type Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getRoleTypeIdTo <em>Role Type Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getSubject <em>Subject</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl#getToString <em>To String</em>}</li>
  * </ul>
@@ -223,8 +223,8 @@ public class CommunicationEventImpl extends EntityTypedImpl<CommunicationEventTy
 	 * @generated
 	 */
 	@Override
-	public ContactList getContactListId() {
-		return (ContactList)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT__CONTACT_LIST_ID, true);
+	public CommunicationEventType getCommunicationEventType() {
+		return (CommunicationEventType)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT__COMMUNICATION_EVENT_TYPE, true);
 	}
 
 	/**
@@ -233,8 +233,28 @@ public class CommunicationEventImpl extends EntityTypedImpl<CommunicationEventTy
 	 * @generated
 	 */
 	@Override
-	public void setContactListId(ContactList newContactListId) {
-		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT__CONTACT_LIST_ID, newContactListId);
+	public void setCommunicationEventType(CommunicationEventType newCommunicationEventType) {
+		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT__COMMUNICATION_EVENT_TYPE, newCommunicationEventType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContactList getContactList() {
+		return (ContactList)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT__CONTACT_LIST, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContactList(ContactList newContactList) {
+		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT__CONTACT_LIST, newContactList);
 	}
 
 	/**
@@ -283,8 +303,8 @@ public class CommunicationEventImpl extends EntityTypedImpl<CommunicationEventTy
 	 * @generated
 	 */
 	@Override
-	public ContactMechType getContactMechTypeId() {
-		return (ContactMechType)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT__CONTACT_MECH_TYPE_ID, true);
+	public ContactMechType getContactMechType() {
+		return (ContactMechType)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT__CONTACT_MECH_TYPE, true);
 	}
 
 	/**
@@ -293,8 +313,8 @@ public class CommunicationEventImpl extends EntityTypedImpl<CommunicationEventTy
 	 * @generated
 	 */
 	@Override
-	public void setContactMechTypeId(ContactMechType newContactMechTypeId) {
-		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT__CONTACT_MECH_TYPE_ID, newContactMechTypeId);
+	public void setContactMechType(ContactMechType newContactMechType) {
+		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT__CONTACT_MECH_TYPE, newContactMechType);
 	}
 
 	/**
@@ -323,8 +343,8 @@ public class CommunicationEventImpl extends EntityTypedImpl<CommunicationEventTy
 	 * @generated
 	 */
 	@Override
-	public MimeType getContentMimeTypeId() {
-		return (MimeType)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT__CONTENT_MIME_TYPE_ID, true);
+	public MimeType getContentMimeType() {
+		return (MimeType)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT__CONTENT_MIME_TYPE, true);
 	}
 
 	/**
@@ -333,8 +353,8 @@ public class CommunicationEventImpl extends EntityTypedImpl<CommunicationEventTy
 	 * @generated
 	 */
 	@Override
-	public void setContentMimeTypeId(MimeType newContentMimeTypeId) {
-		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT__CONTENT_MIME_TYPE_ID, newContentMimeTypeId);
+	public void setContentMimeType(MimeType newContentMimeType) {
+		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT__CONTENT_MIME_TYPE, newContentMimeType);
 	}
 
 	/**
@@ -563,8 +583,8 @@ public class CommunicationEventImpl extends EntityTypedImpl<CommunicationEventTy
 	 * @generated
 	 */
 	@Override
-	public Enumeration getReasonEnumId() {
-		return (Enumeration)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT__REASON_ENUM_ID, true);
+	public Enumeration getReasonEnum() {
+		return (Enumeration)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT__REASON_ENUM, true);
 	}
 
 	/**
@@ -573,8 +593,8 @@ public class CommunicationEventImpl extends EntityTypedImpl<CommunicationEventTy
 	 * @generated
 	 */
 	@Override
-	public void setReasonEnumId(Enumeration newReasonEnumId) {
-		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT__REASON_ENUM_ID, newReasonEnumId);
+	public void setReasonEnum(Enumeration newReasonEnum) {
+		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT__REASON_ENUM, newReasonEnum);
 	}
 
 	/**
@@ -623,8 +643,8 @@ public class CommunicationEventImpl extends EntityTypedImpl<CommunicationEventTy
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT__STATUS, true);
 	}
 
 	/**
@@ -633,8 +653,8 @@ public class CommunicationEventImpl extends EntityTypedImpl<CommunicationEventTy
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT__STATUS, newStatus);
 	}
 
 	/**
@@ -713,26 +733,6 @@ public class CommunicationEventImpl extends EntityTypedImpl<CommunicationEventTy
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CommunicationEventType getCommunicationEventTypeId() {
-		return (CommunicationEventType)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT__COMMUNICATION_EVENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCommunicationEventTypeId(CommunicationEventType newCommunicationEventTypeId) {
-		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT__COMMUNICATION_EVENT_TYPE_ID, newCommunicationEventTypeId);
 	}
 
 	/**

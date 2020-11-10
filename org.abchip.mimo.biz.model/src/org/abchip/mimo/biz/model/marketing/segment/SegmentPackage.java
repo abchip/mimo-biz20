@@ -126,13 +126,13 @@ public interface SegmentPackage extends EPackage {
 	int SEGMENT_GROUP__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Store</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP__PRODUCT_STORE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int SEGMENT_GROUP__PRODUCT_STORE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Segment Group Classifications</b></em>' reference list.
@@ -153,13 +153,13 @@ public interface SegmentPackage extends EPackage {
 	int SEGMENT_GROUP__SEGMENT_GROUP_GEOS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Segment Group Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Segment Group Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP__SEGMENT_GROUP_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int SEGMENT_GROUP__SEGMENT_GROUP_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Group</em>' class.
@@ -217,22 +217,22 @@ public interface SegmentPackage extends EPackage {
 	int SEGMENT_GROUP_CLASSIFICATION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Segment Group Id</b></em>' reference.
+	 * The feature id for the '<em><b>Segment Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_CLASSIFICATION__SEGMENT_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SEGMENT_GROUP_CLASSIFICATION__SEGMENT_GROUP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Party Classification Group Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party Classification Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_CLASSIFICATION__PARTY_CLASSIFICATION_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int SEGMENT_GROUP_CLASSIFICATION__PARTY_CLASSIFICATION_GROUP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Group Classification</em>' class.
@@ -290,22 +290,22 @@ public interface SegmentPackage extends EPackage {
 	int SEGMENT_GROUP_GEO__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Segment Group Id</b></em>' reference.
+	 * The feature id for the '<em><b>Segment Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_GEO__SEGMENT_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SEGMENT_GROUP_GEO__SEGMENT_GROUP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Geo Id</b></em>' reference.
+	 * The feature id for the '<em><b>Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_GEO__GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int SEGMENT_GROUP_GEO__GEO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Group Geo</em>' class.
@@ -363,31 +363,31 @@ public interface SegmentPackage extends EPackage {
 	int SEGMENT_GROUP_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Segment Group Id</b></em>' reference.
+	 * The feature id for the '<em><b>Segment Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_ROLE__SEGMENT_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SEGMENT_GROUP_ROLE__SEGMENT_GROUP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' reference.
+	 * The feature id for the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int SEGMENT_GROUP_ROLE__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Role Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int SEGMENT_GROUP_ROLE__ROLE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Group Role</em>' class.
@@ -514,15 +514,15 @@ public interface SegmentPackage extends EPackage {
 	EAttribute getSegmentGroup_Description();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroup#getProductStoreId <em>Product Store Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroup#getProductStore <em>Product Store</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Store Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentGroup#getProductStoreId()
+	 * @return the meta object for the reference '<em>Product Store</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentGroup#getProductStore()
 	 * @see #getSegmentGroup()
 	 * @generated
 	 */
-	EReference getSegmentGroup_ProductStoreId();
+	EReference getSegmentGroup_ProductStore();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroup#getSegmentGroupClassifications <em>Segment Group Classifications</em>}'.
@@ -547,15 +547,15 @@ public interface SegmentPackage extends EPackage {
 	EReference getSegmentGroup_SegmentGroupGeos();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroup#getSegmentGroupTypeId <em>Segment Group Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroup#getSegmentGroupType <em>Segment Group Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Segment Group Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentGroup#getSegmentGroupTypeId()
+	 * @return the meta object for the reference '<em>Segment Group Type</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentGroup#getSegmentGroupType()
 	 * @see #getSegmentGroup()
 	 * @generated
 	 */
-	EReference getSegmentGroup_SegmentGroupTypeId();
+	EReference getSegmentGroup_SegmentGroupType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupClassification <em>Group Classification</em>}'.
@@ -568,26 +568,26 @@ public interface SegmentPackage extends EPackage {
 	EClass getSegmentGroupClassification();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupClassification#getSegmentGroupId <em>Segment Group Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupClassification#getSegmentGroup <em>Segment Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Segment Group Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentGroupClassification#getSegmentGroupId()
+	 * @return the meta object for the reference '<em>Segment Group</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentGroupClassification#getSegmentGroup()
 	 * @see #getSegmentGroupClassification()
 	 * @generated
 	 */
-	EReference getSegmentGroupClassification_SegmentGroupId();
+	EReference getSegmentGroupClassification_SegmentGroup();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupClassification#getPartyClassificationGroupId <em>Party Classification Group Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupClassification#getPartyClassificationGroup <em>Party Classification Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Classification Group Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentGroupClassification#getPartyClassificationGroupId()
+	 * @return the meta object for the reference '<em>Party Classification Group</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentGroupClassification#getPartyClassificationGroup()
 	 * @see #getSegmentGroupClassification()
 	 * @generated
 	 */
-	EReference getSegmentGroupClassification_PartyClassificationGroupId();
+	EReference getSegmentGroupClassification_PartyClassificationGroup();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupGeo <em>Group Geo</em>}'.
@@ -600,26 +600,26 @@ public interface SegmentPackage extends EPackage {
 	EClass getSegmentGroupGeo();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupGeo#getSegmentGroupId <em>Segment Group Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupGeo#getSegmentGroup <em>Segment Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Segment Group Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentGroupGeo#getSegmentGroupId()
+	 * @return the meta object for the reference '<em>Segment Group</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentGroupGeo#getSegmentGroup()
 	 * @see #getSegmentGroupGeo()
 	 * @generated
 	 */
-	EReference getSegmentGroupGeo_SegmentGroupId();
+	EReference getSegmentGroupGeo_SegmentGroup();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupGeo#getGeoId <em>Geo Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupGeo#getGeo <em>Geo</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Geo Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentGroupGeo#getGeoId()
+	 * @return the meta object for the reference '<em>Geo</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentGroupGeo#getGeo()
 	 * @see #getSegmentGroupGeo()
 	 * @generated
 	 */
-	EReference getSegmentGroupGeo_GeoId();
+	EReference getSegmentGroupGeo_Geo();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole <em>Group Role</em>}'.
@@ -632,37 +632,37 @@ public interface SegmentPackage extends EPackage {
 	EClass getSegmentGroupRole();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getSegmentGroupId <em>Segment Group Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getSegmentGroup <em>Segment Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Segment Group Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getSegmentGroupId()
+	 * @return the meta object for the reference '<em>Segment Group</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getSegmentGroup()
 	 * @see #getSegmentGroupRole()
 	 * @generated
 	 */
-	EReference getSegmentGroupRole_SegmentGroupId();
+	EReference getSegmentGroupRole_SegmentGroup();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getParty <em>Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getPartyId()
+	 * @return the meta object for the reference '<em>Party</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getParty()
 	 * @see #getSegmentGroupRole()
 	 * @generated
 	 */
-	EReference getSegmentGroupRole_PartyId();
+	EReference getSegmentGroupRole_Party();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getRoleTypeId <em>Role Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getRoleType <em>Role Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Role Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getRoleTypeId()
+	 * @return the meta object for the reference '<em>Role Type</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentGroupRole#getRoleType()
 	 * @see #getSegmentGroupRole()
 	 * @generated
 	 */
-	EReference getSegmentGroupRole_RoleTypeId();
+	EReference getSegmentGroupRole_RoleType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupType <em>Group Type</em>}'.
@@ -745,12 +745,12 @@ public interface SegmentPackage extends EPackage {
 		EAttribute SEGMENT_GROUP__DESCRIPTION = eINSTANCE.getSegmentGroup_Description();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Store Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Store</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SEGMENT_GROUP__PRODUCT_STORE_ID = eINSTANCE.getSegmentGroup_ProductStoreId();
+		EReference SEGMENT_GROUP__PRODUCT_STORE = eINSTANCE.getSegmentGroup_ProductStore();
 
 		/**
 		 * The meta object literal for the '<em><b>Segment Group Classifications</b></em>' reference list feature.
@@ -769,12 +769,12 @@ public interface SegmentPackage extends EPackage {
 		EReference SEGMENT_GROUP__SEGMENT_GROUP_GEOS = eINSTANCE.getSegmentGroup_SegmentGroupGeos();
 
 		/**
-		 * The meta object literal for the '<em><b>Segment Group Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Segment Group Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SEGMENT_GROUP__SEGMENT_GROUP_TYPE_ID = eINSTANCE.getSegmentGroup_SegmentGroupTypeId();
+		EReference SEGMENT_GROUP__SEGMENT_GROUP_TYPE = eINSTANCE.getSegmentGroup_SegmentGroupType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupClassificationImpl <em>Group Classification</em>}' class.
@@ -787,20 +787,20 @@ public interface SegmentPackage extends EPackage {
 		EClass SEGMENT_GROUP_CLASSIFICATION = eINSTANCE.getSegmentGroupClassification();
 
 		/**
-		 * The meta object literal for the '<em><b>Segment Group Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Segment Group</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SEGMENT_GROUP_CLASSIFICATION__SEGMENT_GROUP_ID = eINSTANCE.getSegmentGroupClassification_SegmentGroupId();
+		EReference SEGMENT_GROUP_CLASSIFICATION__SEGMENT_GROUP = eINSTANCE.getSegmentGroupClassification_SegmentGroup();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Classification Group Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party Classification Group</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SEGMENT_GROUP_CLASSIFICATION__PARTY_CLASSIFICATION_GROUP_ID = eINSTANCE.getSegmentGroupClassification_PartyClassificationGroupId();
+		EReference SEGMENT_GROUP_CLASSIFICATION__PARTY_CLASSIFICATION_GROUP = eINSTANCE.getSegmentGroupClassification_PartyClassificationGroup();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupGeoImpl <em>Group Geo</em>}' class.
@@ -813,20 +813,20 @@ public interface SegmentPackage extends EPackage {
 		EClass SEGMENT_GROUP_GEO = eINSTANCE.getSegmentGroupGeo();
 
 		/**
-		 * The meta object literal for the '<em><b>Segment Group Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Segment Group</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SEGMENT_GROUP_GEO__SEGMENT_GROUP_ID = eINSTANCE.getSegmentGroupGeo_SegmentGroupId();
+		EReference SEGMENT_GROUP_GEO__SEGMENT_GROUP = eINSTANCE.getSegmentGroupGeo_SegmentGroup();
 
 		/**
-		 * The meta object literal for the '<em><b>Geo Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Geo</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SEGMENT_GROUP_GEO__GEO_ID = eINSTANCE.getSegmentGroupGeo_GeoId();
+		EReference SEGMENT_GROUP_GEO__GEO = eINSTANCE.getSegmentGroupGeo_Geo();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupRoleImpl <em>Group Role</em>}' class.
@@ -839,28 +839,28 @@ public interface SegmentPackage extends EPackage {
 		EClass SEGMENT_GROUP_ROLE = eINSTANCE.getSegmentGroupRole();
 
 		/**
-		 * The meta object literal for the '<em><b>Segment Group Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Segment Group</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SEGMENT_GROUP_ROLE__SEGMENT_GROUP_ID = eINSTANCE.getSegmentGroupRole_SegmentGroupId();
+		EReference SEGMENT_GROUP_ROLE__SEGMENT_GROUP = eINSTANCE.getSegmentGroupRole_SegmentGroup();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SEGMENT_GROUP_ROLE__PARTY_ID = eINSTANCE.getSegmentGroupRole_PartyId();
+		EReference SEGMENT_GROUP_ROLE__PARTY = eINSTANCE.getSegmentGroupRole_Party();
 
 		/**
-		 * The meta object literal for the '<em><b>Role Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Role Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SEGMENT_GROUP_ROLE__ROLE_TYPE_ID = eINSTANCE.getSegmentGroupRole_RoleTypeId();
+		EReference SEGMENT_GROUP_ROLE__ROLE_TYPE = eINSTANCE.getSegmentGroupRole_RoleType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupTypeImpl <em>Group Type</em>}' class.

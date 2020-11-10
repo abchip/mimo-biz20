@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartySkillImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartySkillImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartySkillImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartySkillImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartySkillImpl#getSkillTypeId <em>Skill Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartySkillImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartySkillImpl#getSkillType <em>Skill Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartySkillImpl#getRating <em>Rating</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartySkillImpl#getSkillLevel <em>Skill Level</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PartySkillImpl#getStartedUsingDate <em>Started Using Date</em>}</li>
@@ -156,8 +156,8 @@ public class PartySkillImpl extends EntityTypedImpl<SkillType> implements PartyS
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(AbilityPackage.Literals.PARTY_SKILL__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(AbilityPackage.Literals.PARTY_SKILL__PARTY, true);
 	}
 
 	/**
@@ -166,8 +166,28 @@ public class PartySkillImpl extends EntityTypedImpl<SkillType> implements PartyS
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(AbilityPackage.Literals.PARTY_SKILL__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(AbilityPackage.Literals.PARTY_SKILL__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SkillType getSkillType() {
+		return (SkillType)eGet(AbilityPackage.Literals.PARTY_SKILL__SKILL_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSkillType(SkillType newSkillType) {
+		eSet(AbilityPackage.Literals.PARTY_SKILL__SKILL_TYPE, newSkillType);
 	}
 
 	/**
@@ -208,26 +228,6 @@ public class PartySkillImpl extends EntityTypedImpl<SkillType> implements PartyS
 	@Override
 	public void setSkillLevel(long newSkillLevel) {
 		eSet(AbilityPackage.Literals.PARTY_SKILL__SKILL_LEVEL, newSkillLevel);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SkillType getSkillTypeId() {
-		return (SkillType)eGet(AbilityPackage.Literals.PARTY_SKILL__SKILL_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSkillTypeId(SkillType newSkillTypeId) {
-		eSet(AbilityPackage.Literals.PARTY_SKILL__SKILL_TYPE_ID, newSkillTypeId);
 	}
 
 	/**

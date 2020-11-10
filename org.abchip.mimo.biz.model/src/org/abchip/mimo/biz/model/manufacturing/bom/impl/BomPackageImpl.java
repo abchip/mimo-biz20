@@ -704,7 +704,7 @@ public class BomPackageImpl extends EPackageImpl implements BomPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductManufacturingRule_ProductFeature() {
+	public EReference getProductManufacturingRule_Product() {
 		return (EReference)productManufacturingRuleEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -714,7 +714,7 @@ public class BomPackageImpl extends EPackageImpl implements BomPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getProductManufacturingRule_ProductId() {
+	public EReference getProductManufacturingRule_ProductFeature() {
 		return (EReference)productManufacturingRuleEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -821,8 +821,8 @@ public class BomPackageImpl extends EPackageImpl implements BomPackage {
 		createEAttribute(productManufacturingRuleEClass, PRODUCT_MANUFACTURING_RULE__RULE_ID);
 		createEAttribute(productManufacturingRuleEClass, PRODUCT_MANUFACTURING_RULE__DESCRIPTION);
 		createEAttribute(productManufacturingRuleEClass, PRODUCT_MANUFACTURING_RULE__FROM_DATE);
+		createEReference(productManufacturingRuleEClass, PRODUCT_MANUFACTURING_RULE__PRODUCT);
 		createEReference(productManufacturingRuleEClass, PRODUCT_MANUFACTURING_RULE__PRODUCT_FEATURE);
-		createEReference(productManufacturingRuleEClass, PRODUCT_MANUFACTURING_RULE__PRODUCT_ID);
 		createEReference(productManufacturingRuleEClass, PRODUCT_MANUFACTURING_RULE__PRODUCT_ID_FOR);
 		createEReference(productManufacturingRuleEClass, PRODUCT_MANUFACTURING_RULE__PRODUCT_ID_IN);
 		createEReference(productManufacturingRuleEClass, PRODUCT_MANUFACTURING_RULE__PRODUCT_ID_IN_SUBST);
@@ -857,8 +857,8 @@ public class BomPackageImpl extends EPackageImpl implements BomPackage {
 
 		// Obtain other dependent packages
 		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
-		FeaturePackage theFeaturePackage = (FeaturePackage)EPackage.Registry.INSTANCE.getEPackage(FeaturePackage.eNS_URI);
 		ProductPackage theProductPackage = (ProductPackage)EPackage.Registry.INSTANCE.getEPackage(ProductPackage.eNS_URI);
+		FeaturePackage theFeaturePackage = (FeaturePackage)EPackage.Registry.INSTANCE.getEPackage(FeaturePackage.eNS_URI);
 
 		// Create type parameters
 
@@ -873,10 +873,10 @@ public class BomPackageImpl extends EPackageImpl implements BomPackage {
 		initEAttribute(getProductManufacturingRule_RuleId(), ecorePackage.getEString(), "ruleId", null, 1, 1, ProductManufacturingRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductManufacturingRule_Description(), ecorePackage.getEString(), "description", null, 0, 1, ProductManufacturingRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductManufacturingRule_FromDate(), ecorePackage.getEDate(), "fromDate", null, 0, 1, ProductManufacturingRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProductManufacturingRule_Product(), theProductPackage.getProduct(), null, "product", null, 0, 1, ProductManufacturingRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductManufacturingRule_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEReference(getProductManufacturingRule_ProductFeature(), theFeaturePackage.getProductFeature(), null, "productFeature", null, 0, 1, ProductManufacturingRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getProductManufacturingRule_ProductFeature().getEKeys().add(theFeaturePackage.getProductFeature_ProductFeatureId());
-		initEReference(getProductManufacturingRule_ProductId(), theProductPackage.getProduct(), null, "productId", null, 0, 1, ProductManufacturingRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductManufacturingRule_ProductId().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEReference(getProductManufacturingRule_ProductIdFor(), theProductPackage.getProduct(), null, "productIdFor", null, 0, 1, ProductManufacturingRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getProductManufacturingRule_ProductIdFor().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEReference(getProductManufacturingRule_ProductIdIn(), theProductPackage.getProduct(), null, "productIdIn", null, 0, 1, ProductManufacturingRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

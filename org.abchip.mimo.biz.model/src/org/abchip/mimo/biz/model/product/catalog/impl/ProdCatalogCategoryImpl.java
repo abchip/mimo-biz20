@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryImpl#getProdCatalogId <em>Prod Catalog Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryImpl#getProductCategoryId <em>Product Category Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryImpl#getProdCatalogCategoryTypeId <em>Prod Catalog Category Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryImpl#getProdCatalog <em>Prod Catalog</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryImpl#getProductCategory <em>Product Category</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryImpl#getProdCatalogCategoryType <em>Prod Catalog Category Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryImpl#getThruDate <em>Thru Date</em>}</li>
@@ -157,6 +157,66 @@ public class ProdCatalogCategoryImpl extends EntityTypedImpl<ProdCatalogCategory
 	 * @generated
 	 */
 	@Override
+	public ProdCatalog getProdCatalog() {
+		return (ProdCatalog)eGet(CatalogPackage.Literals.PROD_CATALOG_CATEGORY__PROD_CATALOG, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProdCatalog(ProdCatalog newProdCatalog) {
+		eSet(CatalogPackage.Literals.PROD_CATALOG_CATEGORY__PROD_CATALOG, newProdCatalog);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductCategory getProductCategory() {
+		return (ProductCategory)eGet(CatalogPackage.Literals.PROD_CATALOG_CATEGORY__PRODUCT_CATEGORY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductCategory(ProductCategory newProductCategory) {
+		eSet(CatalogPackage.Literals.PROD_CATALOG_CATEGORY__PRODUCT_CATEGORY, newProductCategory);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProdCatalogCategoryType getProdCatalogCategoryType() {
+		return (ProdCatalogCategoryType)eGet(CatalogPackage.Literals.PROD_CATALOG_CATEGORY__PROD_CATALOG_CATEGORY_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProdCatalogCategoryType(ProdCatalogCategoryType newProdCatalogCategoryType) {
+		eSet(CatalogPackage.Literals.PROD_CATALOG_CATEGORY__PROD_CATALOG_CATEGORY_TYPE, newProdCatalogCategoryType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(CatalogPackage.Literals.PROD_CATALOG_CATEGORY__FROM_DATE, true);
 	}
@@ -169,26 +229,6 @@ public class ProdCatalogCategoryImpl extends EntityTypedImpl<ProdCatalogCategory
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(CatalogPackage.Literals.PROD_CATALOG_CATEGORY__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductCategory getProductCategoryId() {
-		return (ProductCategory)eGet(CatalogPackage.Literals.PROD_CATALOG_CATEGORY__PRODUCT_CATEGORY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductCategoryId(ProductCategory newProductCategoryId) {
-		eSet(CatalogPackage.Literals.PROD_CATALOG_CATEGORY__PRODUCT_CATEGORY_ID, newProductCategoryId);
 	}
 
 	/**
@@ -267,46 +307,6 @@ public class ProdCatalogCategoryImpl extends EntityTypedImpl<ProdCatalogCategory
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProdCatalog getProdCatalogId() {
-		return (ProdCatalog)eGet(CatalogPackage.Literals.PROD_CATALOG_CATEGORY__PROD_CATALOG_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProdCatalogId(ProdCatalog newProdCatalogId) {
-		eSet(CatalogPackage.Literals.PROD_CATALOG_CATEGORY__PROD_CATALOG_ID, newProdCatalogId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProdCatalogCategoryType getProdCatalogCategoryTypeId() {
-		return (ProdCatalogCategoryType)eGet(CatalogPackage.Literals.PROD_CATALOG_CATEGORY__PROD_CATALOG_CATEGORY_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProdCatalogCategoryTypeId(ProdCatalogCategoryType newProdCatalogCategoryTypeId) {
-		eSet(CatalogPackage.Literals.PROD_CATALOG_CATEGORY__PROD_CATALOG_CATEGORY_TYPE_ID, newProdCatalogCategoryTypeId);
 	}
 
 } //ProdCatalogCategoryImpl

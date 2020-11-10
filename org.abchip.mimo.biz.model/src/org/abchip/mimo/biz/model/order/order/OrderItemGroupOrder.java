@@ -20,7 +20,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemGroupOrder#getGroupOrderId <em>Group Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemGroupOrder#getGroupOrder <em>Group Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemGroupOrder#getOrderId <em>Order Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemGroupOrder#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  * </ul>
@@ -31,31 +31,27 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface OrderItemGroupOrder extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Group Order Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Group Order</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Group Order Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Group Order Id</em>' reference.
-	 * @see #setGroupOrderId(ProductGroupOrder)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemGroupOrder_GroupOrderId()
+	 * @return the value of the '<em>Group Order</em>' reference.
+	 * @see #setGroupOrder(ProductGroupOrder)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemGroupOrder_GroupOrder()
 	 * @model keys="groupOrderId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	ProductGroupOrder getGroupOrderId();
+	ProductGroupOrder getGroupOrder();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemGroupOrder#getGroupOrderId <em>Group Order Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemGroupOrder#getGroupOrder <em>Group Order</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Group Order Id</em>' reference.
-	 * @see #getGroupOrderId()
+	 * @param value the new value of the '<em>Group Order</em>' reference.
+	 * @see #getGroupOrder()
 	 * @generated
 	 */
-	void setGroupOrderId(ProductGroupOrder value);
+	void setGroupOrder(ProductGroupOrder value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Id</b></em>' attribute.

@@ -29,10 +29,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRevisionImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRevisionImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRevisionImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRevisionImpl#getContentId <em>Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRevisionImpl#getContent <em>Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRevisionImpl#getContentRevisionSeqId <em>Content Revision Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRevisionImpl#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRevisionImpl#getCommittedByPartyId <em>Committed By Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentRevisionImpl#getCommittedByParty <em>Committed By Party</em>}</li>
  * </ul>
  *
  * @generated
@@ -154,6 +154,26 @@ public class ContentRevisionImpl extends EntityIdentifiableImpl implements Conte
 	 * @generated
 	 */
 	@Override
+	public Content getContent() {
+		return (Content)eGet(ContentPackage.Literals.CONTENT_REVISION__CONTENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContent(Content newContent) {
+		eSet(ContentPackage.Literals.CONTENT_REVISION__CONTENT, newContent);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getComments() {
 		return (String)eGet(ContentPackage.Literals.CONTENT_REVISION__COMMENTS, true);
 	}
@@ -174,8 +194,8 @@ public class ContentRevisionImpl extends EntityIdentifiableImpl implements Conte
 	 * @generated
 	 */
 	@Override
-	public Party getCommittedByPartyId() {
-		return (Party)eGet(ContentPackage.Literals.CONTENT_REVISION__COMMITTED_BY_PARTY_ID, true);
+	public Party getCommittedByParty() {
+		return (Party)eGet(ContentPackage.Literals.CONTENT_REVISION__COMMITTED_BY_PARTY, true);
 	}
 
 	/**
@@ -184,8 +204,8 @@ public class ContentRevisionImpl extends EntityIdentifiableImpl implements Conte
 	 * @generated
 	 */
 	@Override
-	public void setCommittedByPartyId(Party newCommittedByPartyId) {
-		eSet(ContentPackage.Literals.CONTENT_REVISION__COMMITTED_BY_PARTY_ID, newCommittedByPartyId);
+	public void setCommittedByParty(Party newCommittedByParty) {
+		eSet(ContentPackage.Literals.CONTENT_REVISION__COMMITTED_BY_PARTY, newCommittedByParty);
 	}
 
 	/**
@@ -224,26 +244,6 @@ public class ContentRevisionImpl extends EntityIdentifiableImpl implements Conte
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Content getContentId() {
-		return (Content)eGet(ContentPackage.Literals.CONTENT_REVISION__CONTENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContentId(Content newContentId) {
-		eSet(ContentPackage.Literals.CONTENT_REVISION__CONTENT_ID, newContentId);
 	}
 
 	/**

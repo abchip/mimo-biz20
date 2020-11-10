@@ -29,10 +29,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityGlAccountImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityGlAccountImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityGlAccountImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityGlAccountImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityGlAccountImpl#getOrganizationParty <em>Organization Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityGlAccountImpl#getTaxAuthGeoId <em>Tax Auth Geo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityGlAccountImpl#getTaxAuthPartyId <em>Tax Auth Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityGlAccountImpl#getGlAccountId <em>Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityGlAccountImpl#getGlAccount <em>Gl Account</em>}</li>
  * </ul>
  *
  * @generated
@@ -153,8 +153,8 @@ public class TaxAuthorityGlAccountImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public Party getOrganizationPartyId() {
-		return (Party)eGet(TaxPackage.Literals.TAX_AUTHORITY_GL_ACCOUNT__ORGANIZATION_PARTY_ID, true);
+	public Party getOrganizationParty() {
+		return (Party)eGet(TaxPackage.Literals.TAX_AUTHORITY_GL_ACCOUNT__ORGANIZATION_PARTY, true);
 	}
 
 	/**
@@ -163,8 +163,8 @@ public class TaxAuthorityGlAccountImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setOrganizationPartyId(Party newOrganizationPartyId) {
-		eSet(TaxPackage.Literals.TAX_AUTHORITY_GL_ACCOUNT__ORGANIZATION_PARTY_ID, newOrganizationPartyId);
+	public void setOrganizationParty(Party newOrganizationParty) {
+		eSet(TaxPackage.Literals.TAX_AUTHORITY_GL_ACCOUNT__ORGANIZATION_PARTY, newOrganizationParty);
 	}
 
 	/**
@@ -213,8 +213,8 @@ public class TaxAuthorityGlAccountImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public GlAccount getGlAccountId() {
-		return (GlAccount)eGet(TaxPackage.Literals.TAX_AUTHORITY_GL_ACCOUNT__GL_ACCOUNT_ID, true);
+	public GlAccount getGlAccount() {
+		return (GlAccount)eGet(TaxPackage.Literals.TAX_AUTHORITY_GL_ACCOUNT__GL_ACCOUNT, true);
 	}
 
 	/**
@@ -223,8 +223,8 @@ public class TaxAuthorityGlAccountImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setGlAccountId(GlAccount newGlAccountId) {
-		eSet(TaxPackage.Literals.TAX_AUTHORITY_GL_ACCOUNT__GL_ACCOUNT_ID, newGlAccountId);
+	public void setGlAccount(GlAccount newGlAccount) {
+		eSet(TaxPackage.Literals.TAX_AUTHORITY_GL_ACCOUNT__GL_ACCOUNT, newGlAccount);
 	}
 
 	/**

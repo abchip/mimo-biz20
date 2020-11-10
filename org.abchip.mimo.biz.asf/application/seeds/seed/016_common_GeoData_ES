@@ -1,555 +1,555 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-geo="http://www.abchip.org/mimo/biz/model/common/geo" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/common/geo http://www.abchip.org/mimo/biz/model/common#//geo http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="016_common_GeoData_ES">
   <contents xsi:type="biz-geo:Geo" geoId="ES-AN" abbreviation="AN" geoCode="AN" geoName="Andalucía">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-AR" abbreviation="AR" geoCode="AR" geoName="Aragón">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-AS" abbreviation="O" geoCode="O" geoName="Oviedo">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-CN" abbreviation="CN" geoCode="CN" geoName="Canarias">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-CAN" abbreviation="S" geoCode="S" geoName="Cantabria">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-CM" abbreviation="CM" geoCode="CM" geoName="Castilla-La Mancha">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-CL" abbreviation="CL" geoCode="CL" geoName="Castilla y León">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-CT" abbreviation="CT" geoCode="CT" geoName="Cataluña">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-EX" abbreviation="EX" geoCode="EX" geoName="Extremadura">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-GA" abbreviation="GA" geoCode="GA" geoName="Galicia">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-IB" abbreviation="IB" geoCode="IB" geoName="Islas Baleares">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-LR" abbreviation="LO" geoCode="LO" geoName="La Rioja">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-MAD" abbreviation="M" geoCode="M" geoName="Madrid">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-MUR" abbreviation="MU" geoCode="MU" geoName="Región de Murcia">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-NAV" abbreviation="NA" geoCode="NA" geoName="Navarra">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-VC" abbreviation="VC" geoCode="VC" geoName="Comunidad Valenciana">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-PV" abbreviation="PV" geoCode="PV" geoName="País Vasco">
-    <geoTypeId href="GeoType#REGION"/>
+    <geoType href="GeoType#REGION"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-VI" abbreviation="VI" geoCode="VI" geoName="Álava">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-AB" abbreviation="AB" geoCode="AB" geoName="Albacete">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-A" abbreviation="A" geoCode="A" geoName="Alicante">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-AL" abbreviation="AL" geoCode="AL" geoName="Almería">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-O" abbreviation="O" geoCode="O" geoName="Asturias">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-AV" abbreviation="AV" geoCode="AV" geoName="Ávila">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-BA" abbreviation="BA" geoCode="BA" geoName="Badajoz">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-PM" abbreviation="PM" geoCode="PM" geoName="Islas Baleares">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-B" abbreviation="B" geoCode="B" geoName="Barcelona">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-BU" abbreviation="BU" geoCode="BU" geoName="Burgos">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-CC" abbreviation="CC" geoCode="CC" geoName="Cáceres">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-CA" abbreviation="CA" geoCode="CA" geoName="Cádiz">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-S" abbreviation="S" geoCode="S" geoName="Cantabria">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-CS" abbreviation="CS" geoCode="CS" geoName="Castellón">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-CE" abbreviation="CE" geoCode="CE" geoName="Ceuta">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-CR" abbreviation="CR" geoCode="CR" geoName="Ciudad Real">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-CO" abbreviation="CO" geoCode="CO" geoName="Córdoba">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-CU" abbreviation="CU" geoCode="CU" geoName="Cuenca">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-GI" abbreviation="GI" geoCode="GI" geoName="Gerona">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-GR" abbreviation="GR" geoCode="GR" geoName="Granada">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-GU" abbreviation="GU" geoCode="GU" geoName="Guadalajara">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-SS" abbreviation="SS" geoCode="SS" geoName="Guipúzcoa">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-H" abbreviation="H" geoCode="H" geoName="Huelva">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-HU" abbreviation="HU" geoCode="HU" geoName="Huesca">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-J" abbreviation="J" geoCode="J" geoName="Jaén">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-C" abbreviation="C" geoCode="C" geoName="La Coruña">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-LO" abbreviation="LO" geoCode="LO" geoName="Logroño">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-GC" abbreviation="GC" geoCode="GC" geoName="Las Palmas">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-LE" abbreviation="LE" geoCode="LE" geoName="León">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-L" abbreviation="L" geoCode="L" geoName="Lérida">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-LU" abbreviation="LU" geoCode="LU" geoName="Lugo">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-M" abbreviation="M" geoCode="M" geoName="Madrid">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-MA" abbreviation="MA" geoCode="MA" geoName="Málaga">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-ML" abbreviation="ML" geoCode="ML" geoName="Melilla">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-MU" abbreviation="MU" geoCode="MU" geoName="Murcia">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-NA" abbreviation="NA" geoCode="NA" geoName="Navarra">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-OR" abbreviation="OR" geoCode="OR" geoName="Orense">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-P" abbreviation="P" geoCode="P" geoName="Palencia">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-PO" abbreviation="PO" geoCode="PO" geoName="Pontevedra">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-SA" abbreviation="SA" geoCode="SA" geoName="Salamanca">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-TF" abbreviation="TF" geoCode="TF" geoName="Santa Cruz de Tenerife">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-SG" abbreviation="SG" geoCode="SG" geoName="Segovia">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-SE" abbreviation="SE" geoCode="SE" geoName="Sevilla">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-SO" abbreviation="SO" geoCode="SO" geoName="Soria">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-T" abbreviation="T" geoCode="T" geoName="Tarragona">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-TE" abbreviation="TE" geoCode="TE" geoName="Teruel">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-TO" abbreviation="TO" geoCode="TO" geoName="Toledo">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-V" abbreviation="V" geoCode="V" geoName="Valencia">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-VA" abbreviation="VA" geoCode="VA" geoName="Valladolid">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-BI" abbreviation="BI" geoCode="BI" geoName="Vizcaya">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-ZA" abbreviation="ZA" geoCode="ZA" geoName="Zamora">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:Geo" geoId="ES-Z" abbreviation="Z" geoCode="Z" geoName="Zaragoza">
-    <geoTypeId href="GeoType#PROVINCE"/>
+    <geoType href="GeoType#PROVINCE"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-PV"/>
+    <geo href="Geo#ES-PV"/>
     <geoIdTo href="Geo#ES-VI"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-PV"/>
+    <geo href="Geo#ES-PV"/>
     <geoIdTo href="Geo#ES-SS"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-PV"/>
+    <geo href="Geo#ES-PV"/>
     <geoIdTo href="Geo#ES-BI"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CM"/>
+    <geo href="Geo#ES-CM"/>
     <geoIdTo href="Geo#ES-AB"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CM"/>
+    <geo href="Geo#ES-CM"/>
     <geoIdTo href="Geo#ES-GU"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CM"/>
+    <geo href="Geo#ES-CM"/>
     <geoIdTo href="Geo#ES-CU"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CM"/>
+    <geo href="Geo#ES-CM"/>
     <geoIdTo href="Geo#ES-TO"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-VC"/>
+    <geo href="Geo#ES-VC"/>
     <geoIdTo href="Geo#ES-A"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-VC"/>
+    <geo href="Geo#ES-VC"/>
     <geoIdTo href="Geo#ES-CS"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-VC"/>
+    <geo href="Geo#ES-VC"/>
     <geoIdTo href="Geo#ES-V"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-AN"/>
+    <geo href="Geo#ES-AN"/>
     <geoIdTo href="Geo#ES-AL"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-AN"/>
+    <geo href="Geo#ES-AN"/>
     <geoIdTo href="Geo#ES-CA"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-AN"/>
+    <geo href="Geo#ES-AN"/>
     <geoIdTo href="Geo#ES-GR"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-AN"/>
+    <geo href="Geo#ES-AN"/>
     <geoIdTo href="Geo#ES-MA"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-AN"/>
+    <geo href="Geo#ES-AN"/>
     <geoIdTo href="Geo#ES-CO"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-AN"/>
+    <geo href="Geo#ES-AN"/>
     <geoIdTo href="Geo#ES-H"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-AN"/>
+    <geo href="Geo#ES-AN"/>
     <geoIdTo href="Geo#ES-SE"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-AN"/>
+    <geo href="Geo#ES-AN"/>
     <geoIdTo href="Geo#ES-J"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-AS"/>
+    <geo href="Geo#ES-AS"/>
     <geoIdTo href="Geo#ES-O"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CL"/>
+    <geo href="Geo#ES-CL"/>
     <geoIdTo href="Geo#ES-AV"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CL"/>
+    <geo href="Geo#ES-CL"/>
     <geoIdTo href="Geo#ES-CR"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CL"/>
+    <geo href="Geo#ES-CL"/>
     <geoIdTo href="Geo#ES-LE"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CL"/>
+    <geo href="Geo#ES-CL"/>
     <geoIdTo href="Geo#ES-SA"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CL"/>
+    <geo href="Geo#ES-CL"/>
     <geoIdTo href="Geo#ES-SO"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CL"/>
+    <geo href="Geo#ES-CL"/>
     <geoIdTo href="Geo#ES-SG"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CL"/>
+    <geo href="Geo#ES-CL"/>
     <geoIdTo href="Geo#ES-ZA"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CL"/>
+    <geo href="Geo#ES-CL"/>
     <geoIdTo href="Geo#ES-VA"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CL"/>
+    <geo href="Geo#ES-CL"/>
     <geoIdTo href="Geo#ES-P"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CL"/>
+    <geo href="Geo#ES-CL"/>
     <geoIdTo href="Geo#ES-BU"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-EX"/>
+    <geo href="Geo#ES-EX"/>
     <geoIdTo href="Geo#ES-BA"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-EX"/>
+    <geo href="Geo#ES-EX"/>
     <geoIdTo href="Geo#ES-CC"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-IB"/>
+    <geo href="Geo#ES-IB"/>
     <geoIdTo href="Geo#ES-PM"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CT"/>
+    <geo href="Geo#ES-CT"/>
     <geoIdTo href="Geo#ES-B"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CT"/>
+    <geo href="Geo#ES-CT"/>
     <geoIdTo href="Geo#ES-GI"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CT"/>
+    <geo href="Geo#ES-CT"/>
     <geoIdTo href="Geo#ES-L"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CT"/>
+    <geo href="Geo#ES-CT"/>
     <geoIdTo href="Geo#ES-T"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CAN"/>
+    <geo href="Geo#ES-CAN"/>
     <geoIdTo href="Geo#ES-S"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ESP"/>
+    <geo href="Geo#ESP"/>
     <geoIdTo href="Geo#ES-CE"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ESP"/>
+    <geo href="Geo#ESP"/>
     <geoIdTo href="Geo#ES-ML"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-AR"/>
+    <geo href="Geo#ES-AR"/>
     <geoIdTo href="Geo#ES-HU"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-AR"/>
+    <geo href="Geo#ES-AR"/>
     <geoIdTo href="Geo#ES-TE"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-AR"/>
+    <geo href="Geo#ES-AR"/>
     <geoIdTo href="Geo#ES-Z"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-GA"/>
+    <geo href="Geo#ES-GA"/>
     <geoIdTo href="Geo#ES-C"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-GA"/>
+    <geo href="Geo#ES-GA"/>
     <geoIdTo href="Geo#ES-LU"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-GA"/>
+    <geo href="Geo#ES-GA"/>
     <geoIdTo href="Geo#ES-OR"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-GA"/>
+    <geo href="Geo#ES-GA"/>
     <geoIdTo href="Geo#ES-PO"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-LR"/>
+    <geo href="Geo#ES-LR"/>
     <geoIdTo href="Geo#ES-LO"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CN"/>
+    <geo href="Geo#ES-CN"/>
     <geoIdTo href="Geo#ES-GC"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-CN"/>
+    <geo href="Geo#ES-CN"/>
     <geoIdTo href="Geo#ES-TF"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-MAD"/>
+    <geo href="Geo#ES-MAD"/>
     <geoIdTo href="Geo#ES-M"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-MUR"/>
+    <geo href="Geo#ES-MUR"/>
     <geoIdTo href="Geo#ES-MU"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ES-NAV"/>
+    <geo href="Geo#ES-NAV"/>
     <geoIdTo href="Geo#ES-NA"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ESP"/>
+    <geo href="Geo#ESP"/>
     <geoIdTo href="Geo#ES-AN"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ESP"/>
+    <geo href="Geo#ESP"/>
     <geoIdTo href="Geo#ES-AR"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ESP"/>
+    <geo href="Geo#ESP"/>
     <geoIdTo href="Geo#ES-AS"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ESP"/>
+    <geo href="Geo#ESP"/>
     <geoIdTo href="Geo#ES-CN"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ESP"/>
+    <geo href="Geo#ESP"/>
     <geoIdTo href="Geo#ES-CAN"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ESP"/>
+    <geo href="Geo#ESP"/>
     <geoIdTo href="Geo#ES-CM"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ESP"/>
+    <geo href="Geo#ESP"/>
     <geoIdTo href="Geo#ES-CL"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ESP"/>
+    <geo href="Geo#ESP"/>
     <geoIdTo href="Geo#ES-CT"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ESP"/>
+    <geo href="Geo#ESP"/>
     <geoIdTo href="Geo#ES-EX"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ESP"/>
+    <geo href="Geo#ESP"/>
     <geoIdTo href="Geo#ES-GA"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ESP"/>
+    <geo href="Geo#ESP"/>
     <geoIdTo href="Geo#ES-IB"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ESP"/>
+    <geo href="Geo#ESP"/>
     <geoIdTo href="Geo#ES-LR"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ESP"/>
+    <geo href="Geo#ESP"/>
     <geoIdTo href="Geo#ES-MAD"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ESP"/>
+    <geo href="Geo#ESP"/>
     <geoIdTo href="Geo#ES-MUR"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ESP"/>
+    <geo href="Geo#ESP"/>
     <geoIdTo href="Geo#ES-NAV"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ESP"/>
+    <geo href="Geo#ESP"/>
     <geoIdTo href="Geo#ES-VC"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
   <contents xsi:type="biz-geo:GeoAssoc">
-    <geoId href="Geo#ESP"/>
+    <geo href="Geo#ESP"/>
     <geoIdTo href="Geo#ES-PV"/>
-    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+    <geoAssocType href="GeoAssocType#REGIONS"/>
   </contents>
 </mimo-ent:EntityContainer>

@@ -24,7 +24,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourceType#getDataResourceTypeAttrs <em>Data Resource Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourceType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourceType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourceType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourceType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourceType()
@@ -128,29 +128,25 @@ public interface DataResourceType extends EntityType<DataResource>, EntityInfo {
 	void setHasTable(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(DataResourceType)
-	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourceType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(DataResourceType)
+	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourceType_ParentType()
 	 * @model keys="dataResourceTypeId"
 	 * @generated
 	 */
-	DataResourceType getParentTypeId();
+	DataResourceType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.data.DataResourceType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.data.DataResourceType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(DataResourceType value);
+	void setParentType(DataResourceType value);
 
 } // DataResourceType

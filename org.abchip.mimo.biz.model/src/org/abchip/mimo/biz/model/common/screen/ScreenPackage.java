@@ -135,13 +135,13 @@ public interface ScreenPackage extends EPackage {
 	int CUSTOM_SCREEN__CUSTOM_SCREEN_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Custom Screen Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Custom Screen Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_SCREEN__CUSTOM_SCREEN_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int CUSTOM_SCREEN__CUSTOM_SCREEN_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -306,15 +306,15 @@ public interface ScreenPackage extends EPackage {
 	EAttribute getCustomScreen_CustomScreenName();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.screen.CustomScreen#getCustomScreenTypeId <em>Custom Screen Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.screen.CustomScreen#getCustomScreenType <em>Custom Screen Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Custom Screen Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.screen.CustomScreen#getCustomScreenTypeId()
+	 * @return the meta object for the reference '<em>Custom Screen Type</em>'.
+	 * @see org.abchip.mimo.biz.model.common.screen.CustomScreen#getCustomScreenType()
 	 * @see #getCustomScreen()
 	 * @generated
 	 */
-	EReference getCustomScreen_CustomScreenTypeId();
+	EReference getCustomScreen_CustomScreenType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.screen.CustomScreen#getDescription <em>Description</em>}'.
@@ -438,12 +438,12 @@ public interface ScreenPackage extends EPackage {
 		EAttribute CUSTOM_SCREEN__CUSTOM_SCREEN_NAME = eINSTANCE.getCustomScreen_CustomScreenName();
 
 		/**
-		 * The meta object literal for the '<em><b>Custom Screen Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Custom Screen Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CUSTOM_SCREEN__CUSTOM_SCREEN_TYPE_ID = eINSTANCE.getCustomScreen_CustomScreenTypeId();
+		EReference CUSTOM_SCREEN__CUSTOM_SCREEN_TYPE = eINSTANCE.getCustomScreen_CustomScreenType();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.

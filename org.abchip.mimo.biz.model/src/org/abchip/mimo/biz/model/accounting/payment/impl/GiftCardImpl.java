@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.EClass;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardImpl#getCardNumber <em>Card Number</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardImpl#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardImpl#getContactMech <em>Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardImpl#getExpireDate <em>Expire Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.GiftCardImpl#getPinNumber <em>Pin Number</em>}</li>
  * </ul>
@@ -74,8 +74,8 @@ public class GiftCardImpl extends PaymentMethodImpl implements GiftCard {
 	 * @generated
 	 */
 	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(PaymentPackage.Literals.GIFT_CARD__CONTACT_MECH_ID, true);
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(PaymentPackage.Literals.GIFT_CARD__CONTACT_MECH, true);
 	}
 
 	/**
@@ -84,8 +84,8 @@ public class GiftCardImpl extends PaymentMethodImpl implements GiftCard {
 	 * @generated
 	 */
 	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(PaymentPackage.Literals.GIFT_CARD__CONTACT_MECH_ID, newContactMechId);
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(PaymentPackage.Literals.GIFT_CARD__CONTACT_MECH, newContactMech);
 	}
 
 	/**

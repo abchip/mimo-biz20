@@ -21,7 +21,7 @@ import org.abchip.mimo.entity.EntityType;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductMaintType#getProductMaintTypeId <em>Product Maint Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductMaintType#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductMaintType#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductMaintType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductMaintType()
@@ -56,30 +56,26 @@ public interface ProductMaintType extends EntityType<ProductMaint>, EntityInfo {
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Type Id</em>' reference.
-	 * @see #setParentTypeId(ProductMaintType)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductMaintType_ParentTypeId()
+	 * @return the value of the '<em>Parent Type</em>' reference.
+	 * @see #setParentType(ProductMaintType)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductMaintType_ParentType()
 	 * @model keys="productMaintTypeId"
 	 * @generated
 	 */
-	ProductMaintType getParentTypeId();
+	ProductMaintType getParentType();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductMaintType#getParentTypeId <em>Parent Type Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductMaintType#getParentType <em>Parent Type</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Type Id</em>' reference.
-	 * @see #getParentTypeId()
+	 * @param value the new value of the '<em>Parent Type</em>' reference.
+	 * @see #getParentType()
 	 * @generated
 	 */
-	void setParentTypeId(ProductMaintType value);
+	void setParentType(ProductMaintType value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Maint Type Id</b></em>' attribute.

@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortletAttributeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortletAttributeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortletAttributeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortletAttributeImpl#getPortalPortletId <em>Portal Portlet Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortletAttributeImpl#getPortalPortlet <em>Portal Portlet</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortletAttributeImpl#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortletAttributeImpl#getPortalPageId <em>Portal Page Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.portal.impl.PortletAttributeImpl#getPortletSeqId <em>Portlet Seq Id</em>}</li>
@@ -147,6 +147,26 @@ public class PortletAttributeImpl extends EntityIdentifiableImpl implements Port
 	@Override
 	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
 		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PortalPortlet getPortalPortlet() {
+		return (PortalPortlet)eGet(PortalPackage.Literals.PORTLET_ATTRIBUTE__PORTAL_PORTLET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPortalPortlet(PortalPortlet newPortalPortlet) {
+		eSet(PortalPackage.Literals.PORTLET_ATTRIBUTE__PORTAL_PORTLET, newPortalPortlet);
 	}
 
 	/**
@@ -305,26 +325,6 @@ public class PortletAttributeImpl extends EntityIdentifiableImpl implements Port
 	@Override
 	public void setPortletSeqId(String newPortletSeqId) {
 		eSet(PortalPackage.Literals.PORTLET_ATTRIBUTE__PORTLET_SEQ_ID, newPortletSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PortalPortlet getPortalPortletId() {
-		return (PortalPortlet)eGet(PortalPackage.Literals.PORTLET_ATTRIBUTE__PORTAL_PORTLET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPortalPortletId(PortalPortlet newPortalPortletId) {
-		eSet(PortalPackage.Literals.PORTLET_ATTRIBUTE__PORTAL_PORTLET_ID, newPortalPortletId);
 	}
 
 } //PortletAttributeImpl

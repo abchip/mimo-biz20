@@ -37,7 +37,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingImpl#getTestingItems <em>Testing Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingImpl#getTestingName <em>Testing Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingImpl#getTestingSize <em>Testing Size</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingImpl#getTestingTypeId <em>Testing Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingImpl#getTestingType <em>Testing Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -289,8 +289,8 @@ public class TestingImpl extends EntityTypedImpl<TestingType> implements Testing
 	 * @generated
 	 */
 	@Override
-	public TestingType getTestingTypeId() {
-		return (TestingType)eGet(TestPackage.Literals.TESTING__TESTING_TYPE_ID, true);
+	public TestingType getTestingType() {
+		return (TestingType)eGet(TestPackage.Literals.TESTING__TESTING_TYPE, true);
 	}
 
 	/**
@@ -299,8 +299,8 @@ public class TestingImpl extends EntityTypedImpl<TestingType> implements Testing
 	 * @generated
 	 */
 	@Override
-	public void setTestingTypeId(TestingType newTestingTypeId) {
-		eSet(TestPackage.Literals.TESTING__TESTING_TYPE_ID, newTestingTypeId);
+	public void setTestingType(TestingType newTestingType) {
+		eSet(TestPackage.Literals.TESTING__TESTING_TYPE, newTestingType);
 	}
 
 	/**

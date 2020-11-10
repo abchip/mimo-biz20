@@ -31,15 +31,15 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getReturnId <em>Return Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getTrackingCodeTypeId <em>Tracking Code Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getReturn <em>Return</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getOrder <em>Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getTrackingCodeType <em>Tracking Code Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getAffiliateReferredTimeStamp <em>Affiliate Referred Time Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getHasExported <em>Has Exported</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getIsBillable <em>Is Billable</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getSiteId <em>Site Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getTrackingCodeId <em>Tracking Code Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getTrackingCode <em>Tracking Code</em>}</li>
  * </ul>
  *
  * @generated
@@ -161,6 +161,66 @@ public class TrackingCodeOrderReturnImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
+	public ReturnHeader getReturn() {
+		return (ReturnHeader)eGet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__RETURN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setReturn(ReturnHeader newReturn) {
+		eSet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__RETURN, newReturn);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__ORDER, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setOrder(OrderHeader newOrder) {
+		eSet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__ORDER, newOrder);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TrackingCodeType getTrackingCodeType() {
+		return (TrackingCodeType)eGet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__TRACKING_CODE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setTrackingCodeType(TrackingCodeType newTrackingCodeType) {
+		eSet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__TRACKING_CODE_TYPE, newTrackingCodeType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getAffiliateReferredTimeStamp() {
 		return (Date)eGet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__AFFILIATE_REFERRED_TIME_STAMP, true);
 	}
@@ -221,26 +281,6 @@ public class TrackingCodeOrderReturnImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__ORDER_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__ORDER_ID, newOrderId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getOrderItemSeqId() {
 		return (String)eGet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__ORDER_ITEM_SEQ_ID, true);
 	}
@@ -253,26 +293,6 @@ public class TrackingCodeOrderReturnImpl extends EntityIdentifiableImpl implemen
 	@Override
 	public void setOrderItemSeqId(String newOrderItemSeqId) {
 		eSet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__ORDER_ITEM_SEQ_ID, newOrderItemSeqId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ReturnHeader getReturnId() {
-		return (ReturnHeader)eGet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__RETURN_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setReturnId(ReturnHeader newReturnId) {
-		eSet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__RETURN_ID, newReturnId);
 	}
 
 	/**
@@ -301,8 +321,8 @@ public class TrackingCodeOrderReturnImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public TrackingCode getTrackingCodeId() {
-		return (TrackingCode)eGet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__TRACKING_CODE_ID, true);
+	public TrackingCode getTrackingCode() {
+		return (TrackingCode)eGet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__TRACKING_CODE, true);
 	}
 
 	/**
@@ -311,8 +331,8 @@ public class TrackingCodeOrderReturnImpl extends EntityIdentifiableImpl implemen
 	 * @generated
 	 */
 	@Override
-	public void setTrackingCodeId(TrackingCode newTrackingCodeId) {
-		eSet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__TRACKING_CODE_ID, newTrackingCodeId);
+	public void setTrackingCode(TrackingCode newTrackingCode) {
+		eSet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__TRACKING_CODE, newTrackingCode);
 	}
 
 	/**
@@ -351,26 +371,6 @@ public class TrackingCodeOrderReturnImpl extends EntityIdentifiableImpl implemen
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public TrackingCodeType getTrackingCodeTypeId() {
-		return (TrackingCodeType)eGet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__TRACKING_CODE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setTrackingCodeTypeId(TrackingCodeType newTrackingCodeTypeId) {
-		eSet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__TRACKING_CODE_TYPE_ID, newTrackingCodeTypeId);
 	}
 
 } //TrackingCodeOrderReturnImpl

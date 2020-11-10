@@ -126,13 +126,13 @@ public interface GeoPackage extends EPackage {
 	int COUNTRY_ADDRESS_FORMAT__ADDRESS_FORMAT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Geo Assoc Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Geo Assoc Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_ADDRESS_FORMAT__GEO_ASSOC_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int COUNTRY_ADDRESS_FORMAT__GEO_ASSOC_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Has Postal Code Ext</b></em>' attribute.
@@ -571,13 +571,13 @@ public interface GeoPackage extends EPackage {
 	int GEO__GEO_SEC_CODE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Geo Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Geo Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GEO__GEO_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int GEO__GEO_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Main Geo Assocs</b></em>' reference list.
@@ -662,13 +662,13 @@ public interface GeoPackage extends EPackage {
 	int GEO_ASSOC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Geo Id</b></em>' reference.
+	 * The feature id for the '<em><b>Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GEO_ASSOC__GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int GEO_ASSOC__GEO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Geo Id To</b></em>' reference.
@@ -680,13 +680,13 @@ public interface GeoPackage extends EPackage {
 	int GEO_ASSOC__GEO_ID_TO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Geo Assoc Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Geo Assoc Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GEO_ASSOC__GEO_ASSOC_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int GEO_ASSOC__GEO_ASSOC_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Assoc</em>' class.
@@ -835,13 +835,13 @@ public interface GeoPackage extends EPackage {
 	int GEO_POINT__GEO_POINT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Data Source Id</b></em>' reference.
+	 * The feature id for the '<em><b>Data Source</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GEO_POINT__DATA_SOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int GEO_POINT__DATA_SOURCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -862,22 +862,22 @@ public interface GeoPackage extends EPackage {
 	int GEO_POINT__ELEVATION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Elevation Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Elevation Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GEO_POINT__ELEVATION_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int GEO_POINT__ELEVATION_UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
-	 * The feature id for the '<em><b>Geo Point Type Enum Id</b></em>' reference.
+	 * The feature id for the '<em><b>Geo Point Type Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GEO_POINT__GEO_POINT_TYPE_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int GEO_POINT__GEO_POINT_TYPE_ENUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Information</b></em>' attribute.
@@ -998,13 +998,13 @@ public interface GeoPackage extends EPackage {
 	int GEO_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GEO_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int GEO_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -1049,15 +1049,15 @@ public interface GeoPackage extends EPackage {
 	EAttribute getCountryAddressFormat_AddressFormat();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getGeoAssocTypeId <em>Geo Assoc Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getGeoAssocType <em>Geo Assoc Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Geo Assoc Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getGeoAssocTypeId()
+	 * @return the meta object for the reference '<em>Geo Assoc Type</em>'.
+	 * @see org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getGeoAssocType()
 	 * @see #getCountryAddressFormat()
 	 * @generated
 	 */
-	EReference getCountryAddressFormat_GeoAssocTypeId();
+	EReference getCountryAddressFormat_GeoAssocType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getHasPostalCodeExt <em>Has Postal Code Ext</em>}'.
@@ -1276,15 +1276,15 @@ public interface GeoPackage extends EPackage {
 	EAttribute getGeo_GeoSecCode();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.geo.Geo#getGeoTypeId <em>Geo Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.geo.Geo#getGeoType <em>Geo Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Geo Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.geo.Geo#getGeoTypeId()
+	 * @return the meta object for the reference '<em>Geo Type</em>'.
+	 * @see org.abchip.mimo.biz.model.common.geo.Geo#getGeoType()
 	 * @see #getGeo()
 	 * @generated
 	 */
-	EReference getGeo_GeoTypeId();
+	EReference getGeo_GeoType();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.common.geo.Geo#getMainGeoAssocs <em>Main Geo Assocs</em>}'.
@@ -1330,15 +1330,15 @@ public interface GeoPackage extends EPackage {
 	EClass getGeoAssoc();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.geo.GeoAssoc#getGeoId <em>Geo Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.geo.GeoAssoc#getGeo <em>Geo</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Geo Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.geo.GeoAssoc#getGeoId()
+	 * @return the meta object for the reference '<em>Geo</em>'.
+	 * @see org.abchip.mimo.biz.model.common.geo.GeoAssoc#getGeo()
 	 * @see #getGeoAssoc()
 	 * @generated
 	 */
-	EReference getGeoAssoc_GeoId();
+	EReference getGeoAssoc_Geo();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.geo.GeoAssoc#getGeoIdTo <em>Geo Id To</em>}'.
@@ -1352,15 +1352,15 @@ public interface GeoPackage extends EPackage {
 	EReference getGeoAssoc_GeoIdTo();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.geo.GeoAssoc#getGeoAssocTypeId <em>Geo Assoc Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.geo.GeoAssoc#getGeoAssocType <em>Geo Assoc Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Geo Assoc Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.geo.GeoAssoc#getGeoAssocTypeId()
+	 * @return the meta object for the reference '<em>Geo Assoc Type</em>'.
+	 * @see org.abchip.mimo.biz.model.common.geo.GeoAssoc#getGeoAssocType()
 	 * @see #getGeoAssoc()
 	 * @generated
 	 */
-	EReference getGeoAssoc_GeoAssocTypeId();
+	EReference getGeoAssoc_GeoAssocType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.common.geo.GeoAssocType <em>Assoc Type</em>}'.
@@ -1416,15 +1416,15 @@ public interface GeoPackage extends EPackage {
 	EAttribute getGeoPoint_GeoPointId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getDataSourceId <em>Data Source Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getDataSource <em>Data Source</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Data Source Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.geo.GeoPoint#getDataSourceId()
+	 * @return the meta object for the reference '<em>Data Source</em>'.
+	 * @see org.abchip.mimo.biz.model.common.geo.GeoPoint#getDataSource()
 	 * @see #getGeoPoint()
 	 * @generated
 	 */
-	EReference getGeoPoint_DataSourceId();
+	EReference getGeoPoint_DataSource();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getDescription <em>Description</em>}'.
@@ -1449,26 +1449,26 @@ public interface GeoPackage extends EPackage {
 	EAttribute getGeoPoint_Elevation();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getElevationUomId <em>Elevation Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getElevationUom <em>Elevation Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Elevation Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.geo.GeoPoint#getElevationUomId()
+	 * @return the meta object for the reference '<em>Elevation Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.common.geo.GeoPoint#getElevationUom()
 	 * @see #getGeoPoint()
 	 * @generated
 	 */
-	EReference getGeoPoint_ElevationUomId();
+	EReference getGeoPoint_ElevationUom();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getGeoPointTypeEnumId <em>Geo Point Type Enum Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getGeoPointTypeEnum <em>Geo Point Type Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Geo Point Type Enum Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.geo.GeoPoint#getGeoPointTypeEnumId()
+	 * @return the meta object for the reference '<em>Geo Point Type Enum</em>'.
+	 * @see org.abchip.mimo.biz.model.common.geo.GeoPoint#getGeoPointTypeEnum()
 	 * @see #getGeoPoint()
 	 * @generated
 	 */
-	EReference getGeoPoint_GeoPointTypeEnumId();
+	EReference getGeoPoint_GeoPointTypeEnum();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.geo.GeoPoint#getInformation <em>Information</em>}'.
@@ -1547,15 +1547,15 @@ public interface GeoPackage extends EPackage {
 	EAttribute getGeoType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.geo.GeoType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.geo.GeoType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.geo.GeoType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.common.geo.GeoType#getParentType()
 	 * @see #getGeoType()
 	 * @generated
 	 */
-	EReference getGeoType_ParentTypeId();
+	EReference getGeoType_ParentType();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -1606,12 +1606,12 @@ public interface GeoPackage extends EPackage {
 		EAttribute COUNTRY_ADDRESS_FORMAT__ADDRESS_FORMAT = eINSTANCE.getCountryAddressFormat_AddressFormat();
 
 		/**
-		 * The meta object literal for the '<em><b>Geo Assoc Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Geo Assoc Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COUNTRY_ADDRESS_FORMAT__GEO_ASSOC_TYPE_ID = eINSTANCE.getCountryAddressFormat_GeoAssocTypeId();
+		EReference COUNTRY_ADDRESS_FORMAT__GEO_ASSOC_TYPE = eINSTANCE.getCountryAddressFormat_GeoAssocType();
 
 		/**
 		 * The meta object literal for the '<em><b>Has Postal Code Ext</b></em>' attribute feature.
@@ -1782,12 +1782,12 @@ public interface GeoPackage extends EPackage {
 		EAttribute GEO__GEO_SEC_CODE = eINSTANCE.getGeo_GeoSecCode();
 
 		/**
-		 * The meta object literal for the '<em><b>Geo Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Geo Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference GEO__GEO_TYPE_ID = eINSTANCE.getGeo_GeoTypeId();
+		EReference GEO__GEO_TYPE = eINSTANCE.getGeo_GeoType();
 
 		/**
 		 * The meta object literal for the '<em><b>Main Geo Assocs</b></em>' reference list feature.
@@ -1824,12 +1824,12 @@ public interface GeoPackage extends EPackage {
 		EClass GEO_ASSOC = eINSTANCE.getGeoAssoc();
 
 		/**
-		 * The meta object literal for the '<em><b>Geo Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Geo</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference GEO_ASSOC__GEO_ID = eINSTANCE.getGeoAssoc_GeoId();
+		EReference GEO_ASSOC__GEO = eINSTANCE.getGeoAssoc_Geo();
 
 		/**
 		 * The meta object literal for the '<em><b>Geo Id To</b></em>' reference feature.
@@ -1840,12 +1840,12 @@ public interface GeoPackage extends EPackage {
 		EReference GEO_ASSOC__GEO_ID_TO = eINSTANCE.getGeoAssoc_GeoIdTo();
 
 		/**
-		 * The meta object literal for the '<em><b>Geo Assoc Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Geo Assoc Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference GEO_ASSOC__GEO_ASSOC_TYPE_ID = eINSTANCE.getGeoAssoc_GeoAssocTypeId();
+		EReference GEO_ASSOC__GEO_ASSOC_TYPE = eINSTANCE.getGeoAssoc_GeoAssocType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.common.geo.impl.GeoAssocTypeImpl <em>Assoc Type</em>}' class.
@@ -1892,12 +1892,12 @@ public interface GeoPackage extends EPackage {
 		EAttribute GEO_POINT__GEO_POINT_ID = eINSTANCE.getGeoPoint_GeoPointId();
 
 		/**
-		 * The meta object literal for the '<em><b>Data Source Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Data Source</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference GEO_POINT__DATA_SOURCE_ID = eINSTANCE.getGeoPoint_DataSourceId();
+		EReference GEO_POINT__DATA_SOURCE = eINSTANCE.getGeoPoint_DataSource();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
@@ -1916,20 +1916,20 @@ public interface GeoPackage extends EPackage {
 		EAttribute GEO_POINT__ELEVATION = eINSTANCE.getGeoPoint_Elevation();
 
 		/**
-		 * The meta object literal for the '<em><b>Elevation Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Elevation Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference GEO_POINT__ELEVATION_UOM_ID = eINSTANCE.getGeoPoint_ElevationUomId();
+		EReference GEO_POINT__ELEVATION_UOM = eINSTANCE.getGeoPoint_ElevationUom();
 
 		/**
-		 * The meta object literal for the '<em><b>Geo Point Type Enum Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Geo Point Type Enum</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference GEO_POINT__GEO_POINT_TYPE_ENUM_ID = eINSTANCE.getGeoPoint_GeoPointTypeEnumId();
+		EReference GEO_POINT__GEO_POINT_TYPE_ENUM = eINSTANCE.getGeoPoint_GeoPointTypeEnum();
 
 		/**
 		 * The meta object literal for the '<em><b>Information</b></em>' attribute feature.
@@ -1990,12 +1990,12 @@ public interface GeoPackage extends EPackage {
 		EAttribute GEO_TYPE__HAS_TABLE = eINSTANCE.getGeoType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference GEO_TYPE__PARENT_TYPE_ID = eINSTANCE.getGeoType_ParentTypeId();
+		EReference GEO_TYPE__PARENT_TYPE = eINSTANCE.getGeoType_ParentType();
 
 	}
 

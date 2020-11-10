@@ -30,11 +30,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionResourceImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionResourceImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionResourceImpl#getSubscriptionResourceId <em>Subscription Resource Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionResourceImpl#getContentId <em>Content Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionResourceImpl#getContent <em>Content</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionResourceImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionResourceImpl#getParentResourceId <em>Parent Resource Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionResourceImpl#getParentResource <em>Parent Resource</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionResourceImpl#getServiceNameOnExpiry <em>Service Name On Expiry</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionResourceImpl#getWebSiteId <em>Web Site Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionResourceImpl#getWebSite <em>Web Site</em>}</li>
  * </ul>
  *
  * @generated
@@ -156,26 +156,6 @@ public class SubscriptionResourceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public Content getContentId() {
-		return (Content)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_RESOURCE__CONTENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setContentId(Content newContentId) {
-		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_RESOURCE__CONTENT_ID, newContentId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getDescription() {
 		return (String)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_RESOURCE__DESCRIPTION, true);
 	}
@@ -188,6 +168,26 @@ public class SubscriptionResourceImpl extends EntityIdentifiableImpl implements 
 	@Override
 	public void setDescription(String newDescription) {
 		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_RESOURCE__DESCRIPTION, newDescription);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public SubscriptionResource getParentResource() {
+		return (SubscriptionResource)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_RESOURCE__PARENT_RESOURCE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParentResource(SubscriptionResource newParentResource) {
+		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_RESOURCE__PARENT_RESOURCE, newParentResource);
 	}
 
 	/**
@@ -216,8 +216,8 @@ public class SubscriptionResourceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public WebSite getWebSiteId() {
-		return (WebSite)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_RESOURCE__WEB_SITE_ID, true);
+	public WebSite getWebSite() {
+		return (WebSite)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_RESOURCE__WEB_SITE, true);
 	}
 
 	/**
@@ -226,8 +226,8 @@ public class SubscriptionResourceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setWebSiteId(WebSite newWebSiteId) {
-		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_RESOURCE__WEB_SITE_ID, newWebSiteId);
+	public void setWebSite(WebSite newWebSite) {
+		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_RESOURCE__WEB_SITE, newWebSite);
 	}
 
 	/**
@@ -274,26 +274,6 @@ public class SubscriptionResourceImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public SubscriptionResource getParentResourceId() {
-		return (SubscriptionResource)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_RESOURCE__PARENT_RESOURCE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentResourceId(SubscriptionResource newParentResourceId) {
-		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_RESOURCE__PARENT_RESOURCE_ID, newParentResourceId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getSubscriptionResourceId() {
 		return (String)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_RESOURCE__SUBSCRIPTION_RESOURCE_ID, true);
 	}
@@ -306,6 +286,26 @@ public class SubscriptionResourceImpl extends EntityIdentifiableImpl implements 
 	@Override
 	public void setSubscriptionResourceId(String newSubscriptionResourceId) {
 		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_RESOURCE__SUBSCRIPTION_RESOURCE_ID, newSubscriptionResourceId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Content getContent() {
+		return (Content)eGet(SubscriptionPackage.Literals.SUBSCRIPTION_RESOURCE__CONTENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContent(Content newContent) {
+		eSet(SubscriptionPackage.Literals.SUBSCRIPTION_RESOURCE__CONTENT, newContent);
 	}
 
 } //SubscriptionResourceImpl

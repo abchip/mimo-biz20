@@ -117,13 +117,13 @@ public interface TechdataPackage extends EPackage {
 	int TECH_DATA_CALENDAR__CALENDAR_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Calendar Week Id</b></em>' reference.
+	 * The feature id for the '<em><b>Calendar Week</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR__CALENDAR_WEEK_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int TECH_DATA_CALENDAR__CALENDAR_WEEK = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -208,13 +208,13 @@ public interface TechdataPackage extends EPackage {
 	int TECH_DATA_CALENDAR_EXC_DAY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Calendar Id</b></em>' reference.
+	 * The feature id for the '<em><b>Calendar</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_DAY__CALENDAR_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int TECH_DATA_CALENDAR_EXC_DAY__CALENDAR = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Exception Date Start Time</b></em>' attribute.
@@ -308,13 +308,13 @@ public interface TechdataPackage extends EPackage {
 	int TECH_DATA_CALENDAR_EXC_WEEK__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Calendar Id</b></em>' reference.
+	 * The feature id for the '<em><b>Calendar</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Exception Date Start</b></em>' attribute.
@@ -326,13 +326,13 @@ public interface TechdataPackage extends EPackage {
 	int TECH_DATA_CALENDAR_EXC_WEEK__EXCEPTION_DATE_START = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Calendar Week Id</b></em>' reference.
+	 * The feature id for the '<em><b>Calendar Week</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR_WEEK_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR_WEEK = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -574,15 +574,15 @@ public interface TechdataPackage extends EPackage {
 	EAttribute getTechDataCalendar_CalendarId();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendar#getCalendarWeekId <em>Calendar Week Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendar#getCalendarWeek <em>Calendar Week</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Calendar Week Id</em>'.
-	 * @see org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendar#getCalendarWeekId()
+	 * @return the meta object for the reference '<em>Calendar Week</em>'.
+	 * @see org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendar#getCalendarWeek()
 	 * @see #getTechDataCalendar()
 	 * @generated
 	 */
-	EReference getTechDataCalendar_CalendarWeekId();
+	EReference getTechDataCalendar_CalendarWeek();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendar#getDescription <em>Description</em>}'.
@@ -628,15 +628,15 @@ public interface TechdataPackage extends EPackage {
 	EClass getTechDataCalendarExcDay();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarExcDay#getCalendarId <em>Calendar Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarExcDay#getCalendar <em>Calendar</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Calendar Id</em>'.
-	 * @see org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarExcDay#getCalendarId()
+	 * @return the meta object for the reference '<em>Calendar</em>'.
+	 * @see org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarExcDay#getCalendar()
 	 * @see #getTechDataCalendarExcDay()
 	 * @generated
 	 */
-	EReference getTechDataCalendarExcDay_CalendarId();
+	EReference getTechDataCalendarExcDay_Calendar();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarExcDay#getExceptionDateStartTime <em>Exception Date Start Time</em>}'.
@@ -693,15 +693,15 @@ public interface TechdataPackage extends EPackage {
 	EClass getTechDataCalendarExcWeek();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarExcWeek#getCalendarId <em>Calendar Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarExcWeek#getCalendar <em>Calendar</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Calendar Id</em>'.
-	 * @see org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarExcWeek#getCalendarId()
+	 * @return the meta object for the reference '<em>Calendar</em>'.
+	 * @see org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarExcWeek#getCalendar()
 	 * @see #getTechDataCalendarExcWeek()
 	 * @generated
 	 */
-	EReference getTechDataCalendarExcWeek_CalendarId();
+	EReference getTechDataCalendarExcWeek_Calendar();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarExcWeek#getExceptionDateStart <em>Exception Date Start</em>}'.
@@ -715,15 +715,15 @@ public interface TechdataPackage extends EPackage {
 	EAttribute getTechDataCalendarExcWeek_ExceptionDateStart();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarExcWeek#getCalendarWeekId <em>Calendar Week Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarExcWeek#getCalendarWeek <em>Calendar Week</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Calendar Week Id</em>'.
-	 * @see org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarExcWeek#getCalendarWeekId()
+	 * @return the meta object for the reference '<em>Calendar Week</em>'.
+	 * @see org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarExcWeek#getCalendarWeek()
 	 * @see #getTechDataCalendarExcWeek()
 	 * @generated
 	 */
-	EReference getTechDataCalendarExcWeek_CalendarWeekId();
+	EReference getTechDataCalendarExcWeek_CalendarWeek();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarExcWeek#getDescription <em>Description</em>}'.
@@ -963,12 +963,12 @@ public interface TechdataPackage extends EPackage {
 		EAttribute TECH_DATA_CALENDAR__CALENDAR_ID = eINSTANCE.getTechDataCalendar_CalendarId();
 
 		/**
-		 * The meta object literal for the '<em><b>Calendar Week Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Calendar Week</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TECH_DATA_CALENDAR__CALENDAR_WEEK_ID = eINSTANCE.getTechDataCalendar_CalendarWeekId();
+		EReference TECH_DATA_CALENDAR__CALENDAR_WEEK = eINSTANCE.getTechDataCalendar_CalendarWeek();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
@@ -1005,12 +1005,12 @@ public interface TechdataPackage extends EPackage {
 		EClass TECH_DATA_CALENDAR_EXC_DAY = eINSTANCE.getTechDataCalendarExcDay();
 
 		/**
-		 * The meta object literal for the '<em><b>Calendar Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Calendar</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TECH_DATA_CALENDAR_EXC_DAY__CALENDAR_ID = eINSTANCE.getTechDataCalendarExcDay_CalendarId();
+		EReference TECH_DATA_CALENDAR_EXC_DAY__CALENDAR = eINSTANCE.getTechDataCalendarExcDay_Calendar();
 
 		/**
 		 * The meta object literal for the '<em><b>Exception Date Start Time</b></em>' attribute feature.
@@ -1055,12 +1055,12 @@ public interface TechdataPackage extends EPackage {
 		EClass TECH_DATA_CALENDAR_EXC_WEEK = eINSTANCE.getTechDataCalendarExcWeek();
 
 		/**
-		 * The meta object literal for the '<em><b>Calendar Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Calendar</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR_ID = eINSTANCE.getTechDataCalendarExcWeek_CalendarId();
+		EReference TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR = eINSTANCE.getTechDataCalendarExcWeek_Calendar();
 
 		/**
 		 * The meta object literal for the '<em><b>Exception Date Start</b></em>' attribute feature.
@@ -1071,12 +1071,12 @@ public interface TechdataPackage extends EPackage {
 		EAttribute TECH_DATA_CALENDAR_EXC_WEEK__EXCEPTION_DATE_START = eINSTANCE.getTechDataCalendarExcWeek_ExceptionDateStart();
 
 		/**
-		 * The meta object literal for the '<em><b>Calendar Week Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Calendar Week</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR_WEEK_ID = eINSTANCE.getTechDataCalendarExcWeek_CalendarWeekId();
+		EReference TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR_WEEK = eINSTANCE.getTechDataCalendarExcWeek_CalendarWeek();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.

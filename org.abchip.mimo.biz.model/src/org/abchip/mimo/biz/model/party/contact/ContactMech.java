@@ -22,7 +22,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMech#getContactMechId <em>Contact Mech Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMech#getContactMechAttributes <em>Contact Mech Attributes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMech#getContactMechTypeId <em>Contact Mech Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMech#getContactMechType <em>Contact Mech Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMech#getFromContactMechLinks <em>From Contact Mech Links</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMech#getInfoString <em>Info String</em>}</li>
  * </ul>
@@ -57,32 +57,6 @@ public interface ContactMech extends EntityTyped<ContactMechType>, EntityInfo {
 	 * @generated
 	 */
 	void setInfoString(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Contact Mech Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Contact Mech Type Id</em>' reference.
-	 * @see #setContactMechTypeId(ContactMechType)
-	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMech_ContactMechTypeId()
-	 * @model keys="contactMechTypeId"
-	 * @generated
-	 */
-	ContactMechType getContactMechTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.ContactMech#getContactMechTypeId <em>Contact Mech Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Contact Mech Type Id</em>' reference.
-	 * @see #getContactMechTypeId()
-	 * @generated
-	 */
-	void setContactMechTypeId(ContactMechType value);
 
 	/**
 	 * Returns the value of the '<em><b>From Contact Mech Links</b></em>' reference list.
@@ -142,5 +116,27 @@ public interface ContactMech extends EntityTyped<ContactMechType>, EntityInfo {
 	 * @generated
 	 */
 	List<ContactMechAttribute> getContactMechAttributes();
+
+	/**
+	 * Returns the value of the '<em><b>Contact Mech Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Contact Mech Type</em>' reference.
+	 * @see #setContactMechType(ContactMechType)
+	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMech_ContactMechType()
+	 * @model keys="contactMechTypeId"
+	 * @generated
+	 */
+	ContactMechType getContactMechType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.ContactMech#getContactMechType <em>Contact Mech Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Contact Mech Type</em>' reference.
+	 * @see #getContactMechType()
+	 * @generated
+	 */
+	void setContactMechType(ContactMechType value);
 
 } // ContactMech

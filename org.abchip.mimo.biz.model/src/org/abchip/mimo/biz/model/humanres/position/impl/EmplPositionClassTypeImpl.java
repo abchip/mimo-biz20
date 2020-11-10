@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionClassTypeImpl#getEmplPositionClassTypeId <em>Empl Position Class Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionClassTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionClassTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionClassTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionClassTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -192,6 +192,26 @@ public class EmplPositionClassTypeImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
+	public EmplPositionClassType getParentType() {
+		return (EmplPositionClassType)eGet(PositionPackage.Literals.EMPL_POSITION_CLASS_TYPE__PARENT_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParentType(EmplPositionClassType newParentType) {
+		eSet(PositionPackage.Literals.EMPL_POSITION_CLASS_TYPE__PARENT_TYPE, newParentType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getEmplPositionClassTypeId() {
 		return (String)eGet(PositionPackage.Literals.EMPL_POSITION_CLASS_TYPE__EMPL_POSITION_CLASS_TYPE_ID, true);
 	}
@@ -204,26 +224,6 @@ public class EmplPositionClassTypeImpl extends EntityIdentifiableImpl implements
 	@Override
 	public void setEmplPositionClassTypeId(String newEmplPositionClassTypeId) {
 		eSet(PositionPackage.Literals.EMPL_POSITION_CLASS_TYPE__EMPL_POSITION_CLASS_TYPE_ID, newEmplPositionClassTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EmplPositionClassType getParentTypeId() {
-		return (EmplPositionClassType)eGet(PositionPackage.Literals.EMPL_POSITION_CLASS_TYPE__PARENT_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setParentTypeId(EmplPositionClassType newParentTypeId) {
-		eSet(PositionPackage.Literals.EMPL_POSITION_CLASS_TYPE__PARENT_TYPE_ID, newParentTypeId);
 	}
 
 	/**

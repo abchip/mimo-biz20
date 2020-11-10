@@ -21,7 +21,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionCategory#getSurveyQuestionCategoryId <em>Survey Question Category Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionCategory#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionCategory#getParentCategoryId <em>Parent Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionCategory#getParentCategory <em>Parent Category</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestionCategory()
@@ -56,30 +56,26 @@ public interface SurveyQuestionCategory extends EntityIdentifiable, EntityInfo {
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Parent Category Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Parent Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Parent Category Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Parent Category Id</em>' reference.
-	 * @see #setParentCategoryId(SurveyQuestionCategory)
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestionCategory_ParentCategoryId()
+	 * @return the value of the '<em>Parent Category</em>' reference.
+	 * @see #setParentCategory(SurveyQuestionCategory)
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestionCategory_ParentCategory()
 	 * @model keys="surveyQuestionCategoryId"
 	 * @generated
 	 */
-	SurveyQuestionCategory getParentCategoryId();
+	SurveyQuestionCategory getParentCategory();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionCategory#getParentCategoryId <em>Parent Category Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionCategory#getParentCategory <em>Parent Category</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Parent Category Id</em>' reference.
-	 * @see #getParentCategoryId()
+	 * @param value the new value of the '<em>Parent Category</em>' reference.
+	 * @see #getParentCategory()
 	 * @generated
 	 */
-	void setParentCategoryId(SurveyQuestionCategory value);
+	void setParentCategory(SurveyQuestionCategory value);
 
 	/**
 	 * Returns the value of the '<em><b>Survey Question Category Id</b></em>' attribute.

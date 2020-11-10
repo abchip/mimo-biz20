@@ -31,8 +31,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationEntryImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationEntryImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationEntryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationEntryImpl#getGlReconciliationId <em>Gl Reconciliation Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationEntryImpl#getAcctgTransId <em>Acctg Trans Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationEntryImpl#getGlReconciliation <em>Gl Reconciliation</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationEntryImpl#getAcctgTrans <em>Acctg Trans</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationEntryImpl#getAcctgTransEntrySeqId <em>Acctg Trans Entry Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationEntryImpl#getReconciledAmount <em>Reconciled Amount</em>}</li>
  * </ul>
@@ -155,6 +155,46 @@ public class GlReconciliationEntryImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
+	public GlReconciliation getGlReconciliation() {
+		return (GlReconciliation)eGet(LedgerPackage.Literals.GL_RECONCILIATION_ENTRY__GL_RECONCILIATION, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGlReconciliation(GlReconciliation newGlReconciliation) {
+		eSet(LedgerPackage.Literals.GL_RECONCILIATION_ENTRY__GL_RECONCILIATION, newGlReconciliation);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AcctgTrans getAcctgTrans() {
+		return (AcctgTrans)eGet(LedgerPackage.Literals.GL_RECONCILIATION_ENTRY__ACCTG_TRANS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAcctgTrans(AcctgTrans newAcctgTrans) {
+		eSet(LedgerPackage.Literals.GL_RECONCILIATION_ENTRY__ACCTG_TRANS, newAcctgTrans);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getAcctgTransEntrySeqId() {
 		return (String)eGet(LedgerPackage.Literals.GL_RECONCILIATION_ENTRY__ACCTG_TRANS_ENTRY_SEQ_ID, true);
 	}
@@ -225,46 +265,6 @@ public class GlReconciliationEntryImpl extends EntityIdentifiableImpl implements
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GlReconciliation getGlReconciliationId() {
-		return (GlReconciliation)eGet(LedgerPackage.Literals.GL_RECONCILIATION_ENTRY__GL_RECONCILIATION_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGlReconciliationId(GlReconciliation newGlReconciliationId) {
-		eSet(LedgerPackage.Literals.GL_RECONCILIATION_ENTRY__GL_RECONCILIATION_ID, newGlReconciliationId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public AcctgTrans getAcctgTransId() {
-		return (AcctgTrans)eGet(LedgerPackage.Literals.GL_RECONCILIATION_ENTRY__ACCTG_TRANS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAcctgTransId(AcctgTrans newAcctgTransId) {
-		eSet(LedgerPackage.Literals.GL_RECONCILIATION_ENTRY__ACCTG_TRANS_ID, newAcctgTransId);
 	}
 
 } //GlReconciliationEntryImpl

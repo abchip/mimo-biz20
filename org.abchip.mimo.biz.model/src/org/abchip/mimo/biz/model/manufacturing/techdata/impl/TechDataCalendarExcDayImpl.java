@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarExcDayImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarExcDayImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarExcDayImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarExcDayImpl#getCalendarId <em>Calendar Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarExcDayImpl#getCalendar <em>Calendar</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarExcDayImpl#getExceptionDateStartTime <em>Exception Date Start Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarExcDayImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarExcDayImpl#getExceptionCapacity <em>Exception Capacity</em>}</li>
@@ -156,8 +156,8 @@ public class TechDataCalendarExcDayImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public TechDataCalendar getCalendarId() {
-		return (TechDataCalendar)eGet(TechdataPackage.Literals.TECH_DATA_CALENDAR_EXC_DAY__CALENDAR_ID, true);
+	public TechDataCalendar getCalendar() {
+		return (TechDataCalendar)eGet(TechdataPackage.Literals.TECH_DATA_CALENDAR_EXC_DAY__CALENDAR, true);
 	}
 
 	/**
@@ -166,8 +166,8 @@ public class TechDataCalendarExcDayImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setCalendarId(TechDataCalendar newCalendarId) {
-		eSet(TechdataPackage.Literals.TECH_DATA_CALENDAR_EXC_DAY__CALENDAR_ID, newCalendarId);
+	public void setCalendar(TechDataCalendar newCalendar) {
+		eSet(TechdataPackage.Literals.TECH_DATA_CALENDAR_EXC_DAY__CALENDAR, newCalendar);
 	}
 
 	/**

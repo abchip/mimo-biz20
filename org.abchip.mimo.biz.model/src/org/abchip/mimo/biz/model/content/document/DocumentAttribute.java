@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.document.DocumentAttribute#getDocumentId <em>Document Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.document.DocumentAttribute#getDocument <em>Document</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.DocumentAttribute#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.DocumentAttribute#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.DocumentAttribute#getAttrValue <em>Attr Value</em>}</li>
@@ -30,6 +30,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface DocumentAttribute extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Document</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Document</em>' reference.
+	 * @see #setDocument(Document)
+	 * @see org.abchip.mimo.biz.model.content.document.DocumentPackage#getDocumentAttribute_Document()
+	 * @model keys="documentId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Document getDocument();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.document.DocumentAttribute#getDocument <em>Document</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Document</em>' reference.
+	 * @see #getDocument()
+	 * @generated
+	 */
+	void setDocument(Document value);
+
 	/**
 	 * Returns the value of the '<em><b>Attr Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -109,32 +132,5 @@ public interface DocumentAttribute extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setAttrValue(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Document Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Document Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Document Id</em>' reference.
-	 * @see #setDocumentId(Document)
-	 * @see org.abchip.mimo.biz.model.content.document.DocumentPackage#getDocumentAttribute_DocumentId()
-	 * @model keys="documentId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Document getDocumentId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.document.DocumentAttribute#getDocumentId <em>Document Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Document Id</em>' reference.
-	 * @see #getDocumentId()
-	 * @generated
-	 */
-	void setDocumentId(Document value);
 
 } // DocumentAttribute

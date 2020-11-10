@@ -36,16 +36,16 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getFixedAsset <em>Fixed Asset</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getMaintHistSeqId <em>Maint Hist Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getIntervalMeterTypeId <em>Interval Meter Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getIntervalMeterType <em>Interval Meter Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getIntervalQuantity <em>Interval Quantity</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getIntervalUomId <em>Interval Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getIntervalUom <em>Interval Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getProductMaintSeqId <em>Product Maint Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getProductMaintTypeId <em>Product Maint Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getPurchaseOrderId <em>Purchase Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getScheduleWorkEffortId <em>Schedule Work Effort Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getProductMaintType <em>Product Maint Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getPurchaseOrder <em>Purchase Order</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getScheduleWorkEffort <em>Schedule Work Effort</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetMaintImpl#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @generated
@@ -166,8 +166,8 @@ public class FixedAssetMaintImpl extends EntityIdentifiableImpl implements Fixed
 	 * @generated
 	 */
 	@Override
-	public ProductMeterType getIntervalMeterTypeId() {
-		return (ProductMeterType)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__INTERVAL_METER_TYPE_ID, true);
+	public FixedAsset getFixedAsset() {
+		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__FIXED_ASSET, true);
 	}
 
 	/**
@@ -176,8 +176,8 @@ public class FixedAssetMaintImpl extends EntityIdentifiableImpl implements Fixed
 	 * @generated
 	 */
 	@Override
-	public void setIntervalMeterTypeId(ProductMeterType newIntervalMeterTypeId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__INTERVAL_METER_TYPE_ID, newIntervalMeterTypeId);
+	public void setFixedAsset(FixedAsset newFixedAsset) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__FIXED_ASSET, newFixedAsset);
 	}
 
 	/**
@@ -206,8 +206,8 @@ public class FixedAssetMaintImpl extends EntityIdentifiableImpl implements Fixed
 	 * @generated
 	 */
 	@Override
-	public Uom getIntervalUomId() {
-		return (Uom)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__INTERVAL_UOM_ID, true);
+	public Uom getIntervalUom() {
+		return (Uom)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__INTERVAL_UOM, true);
 	}
 
 	/**
@@ -216,8 +216,8 @@ public class FixedAssetMaintImpl extends EntityIdentifiableImpl implements Fixed
 	 * @generated
 	 */
 	@Override
-	public void setIntervalUomId(Uom newIntervalUomId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__INTERVAL_UOM_ID, newIntervalUomId);
+	public void setIntervalUom(Uom newIntervalUom) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__INTERVAL_UOM, newIntervalUom);
 	}
 
 	/**
@@ -246,6 +246,26 @@ public class FixedAssetMaintImpl extends EntityIdentifiableImpl implements Fixed
 	 * @generated
 	 */
 	@Override
+	public ProductMeterType getIntervalMeterType() {
+		return (ProductMeterType)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__INTERVAL_METER_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setIntervalMeterType(ProductMeterType newIntervalMeterType) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__INTERVAL_METER_TYPE, newIntervalMeterType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getProductMaintSeqId() {
 		return (String)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__PRODUCT_MAINT_SEQ_ID, true);
 	}
@@ -266,8 +286,8 @@ public class FixedAssetMaintImpl extends EntityIdentifiableImpl implements Fixed
 	 * @generated
 	 */
 	@Override
-	public ProductMaintType getProductMaintTypeId() {
-		return (ProductMaintType)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__PRODUCT_MAINT_TYPE_ID, true);
+	public ProductMaintType getProductMaintType() {
+		return (ProductMaintType)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__PRODUCT_MAINT_TYPE, true);
 	}
 
 	/**
@@ -276,8 +296,8 @@ public class FixedAssetMaintImpl extends EntityIdentifiableImpl implements Fixed
 	 * @generated
 	 */
 	@Override
-	public void setProductMaintTypeId(ProductMaintType newProductMaintTypeId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__PRODUCT_MAINT_TYPE_ID, newProductMaintTypeId);
+	public void setProductMaintType(ProductMaintType newProductMaintType) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__PRODUCT_MAINT_TYPE, newProductMaintType);
 	}
 
 	/**
@@ -286,8 +306,8 @@ public class FixedAssetMaintImpl extends EntityIdentifiableImpl implements Fixed
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getPurchaseOrderId() {
-		return (OrderHeader)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__PURCHASE_ORDER_ID, true);
+	public OrderHeader getPurchaseOrder() {
+		return (OrderHeader)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__PURCHASE_ORDER, true);
 	}
 
 	/**
@@ -296,8 +316,8 @@ public class FixedAssetMaintImpl extends EntityIdentifiableImpl implements Fixed
 	 * @generated
 	 */
 	@Override
-	public void setPurchaseOrderId(OrderHeader newPurchaseOrderId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__PURCHASE_ORDER_ID, newPurchaseOrderId);
+	public void setPurchaseOrder(OrderHeader newPurchaseOrder) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__PURCHASE_ORDER, newPurchaseOrder);
 	}
 
 	/**
@@ -306,8 +326,8 @@ public class FixedAssetMaintImpl extends EntityIdentifiableImpl implements Fixed
 	 * @generated
 	 */
 	@Override
-	public WorkEffort getScheduleWorkEffortId() {
-		return (WorkEffort)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__SCHEDULE_WORK_EFFORT_ID, true);
+	public WorkEffort getScheduleWorkEffort() {
+		return (WorkEffort)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__SCHEDULE_WORK_EFFORT, true);
 	}
 
 	/**
@@ -316,8 +336,8 @@ public class FixedAssetMaintImpl extends EntityIdentifiableImpl implements Fixed
 	 * @generated
 	 */
 	@Override
-	public void setScheduleWorkEffortId(WorkEffort newScheduleWorkEffortId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__SCHEDULE_WORK_EFFORT_ID, newScheduleWorkEffortId);
+	public void setScheduleWorkEffort(WorkEffort newScheduleWorkEffort) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__SCHEDULE_WORK_EFFORT, newScheduleWorkEffort);
 	}
 
 	/**
@@ -326,8 +346,8 @@ public class FixedAssetMaintImpl extends EntityIdentifiableImpl implements Fixed
 	 * @generated
 	 */
 	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__STATUS_ID, true);
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__STATUS, true);
 	}
 
 	/**
@@ -336,8 +356,8 @@ public class FixedAssetMaintImpl extends EntityIdentifiableImpl implements Fixed
 	 * @generated
 	 */
 	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__STATUS_ID, newStatusId);
+	public void setStatus(StatusItem newStatus) {
+		eSet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__STATUS, newStatus);
 	}
 
 	/**
@@ -376,26 +396,6 @@ public class FixedAssetMaintImpl extends EntityIdentifiableImpl implements Fixed
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FixedAsset getFixedAssetId() {
-		return (FixedAsset)eGet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__FIXED_ASSET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFixedAssetId(FixedAsset newFixedAssetId) {
-		eSet(FixedassetPackage.Literals.FIXED_ASSET_MAINT__FIXED_ASSET_ID, newFixedAssetId);
 	}
 
 } //FixedAssetMaintImpl

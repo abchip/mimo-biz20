@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataSourceImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataSourceImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataSourceImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataSourceImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataSourceImpl#getDataSourceId <em>Data Source Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataSourceImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataSourceImpl#getDataSource <em>Data Source</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataSourceImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataSourceImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataSourceImpl#getIsCreate <em>Is Create</em>}</li>
@@ -155,6 +155,46 @@ public class PartyDataSourceImpl extends EntityIdentifiableImpl implements Party
 	 * @generated
 	 */
 	@Override
+	public Party getParty() {
+		return (Party)eGet(PartyPackage.Literals.PARTY_DATA_SOURCE__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(PartyPackage.Literals.PARTY_DATA_SOURCE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public DataSource getDataSource() {
+		return (DataSource)eGet(PartyPackage.Literals.PARTY_DATA_SOURCE__DATA_SOURCE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setDataSource(DataSource newDataSource) {
+		eSet(PartyPackage.Literals.PARTY_DATA_SOURCE__DATA_SOURCE, newDataSource);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getComments() {
 		return (String)eGet(PartyPackage.Literals.PARTY_DATA_SOURCE__COMMENTS, true);
 	}
@@ -187,26 +227,6 @@ public class PartyDataSourceImpl extends EntityIdentifiableImpl implements Party
 	@Override
 	public void setIsCreate(Boolean newIsCreate) {
 		eSet(PartyPackage.Literals.PARTY_DATA_SOURCE__IS_CREATE, newIsCreate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DataSource getDataSourceId() {
-		return (DataSource)eGet(PartyPackage.Literals.PARTY_DATA_SOURCE__DATA_SOURCE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDataSourceId(DataSource newDataSourceId) {
-		eSet(PartyPackage.Literals.PARTY_DATA_SOURCE__DATA_SOURCE_ID, newDataSourceId);
 	}
 
 	/**
@@ -285,26 +305,6 @@ public class PartyDataSourceImpl extends EntityIdentifiableImpl implements Party
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(PartyPackage.Literals.PARTY_DATA_SOURCE__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(PartyPackage.Literals.PARTY_DATA_SOURCE__PARTY_ID, newPartyId);
 	}
 
 } //PartyDataSourceImpl

@@ -29,9 +29,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoAssocImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoAssocImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoAssocImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoAssocImpl#getGeoId <em>Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoAssocImpl#getGeo <em>Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoAssocImpl#getGeoIdTo <em>Geo Id To</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoAssocImpl#getGeoAssocTypeId <em>Geo Assoc Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.GeoAssocImpl#getGeoAssocType <em>Geo Assoc Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -152,8 +152,8 @@ public class GeoAssocImpl extends EntityIdentifiableImpl implements GeoAssoc {
 	 * @generated
 	 */
 	@Override
-	public Geo getGeoId() {
-		return (Geo)eGet(GeoPackage.Literals.GEO_ASSOC__GEO_ID, true);
+	public Geo getGeo() {
+		return (Geo)eGet(GeoPackage.Literals.GEO_ASSOC__GEO, true);
 	}
 
 	/**
@@ -162,8 +162,8 @@ public class GeoAssocImpl extends EntityIdentifiableImpl implements GeoAssoc {
 	 * @generated
 	 */
 	@Override
-	public void setGeoId(Geo newGeoId) {
-		eSet(GeoPackage.Literals.GEO_ASSOC__GEO_ID, newGeoId);
+	public void setGeo(Geo newGeo) {
+		eSet(GeoPackage.Literals.GEO_ASSOC__GEO, newGeo);
 	}
 
 	/**
@@ -192,8 +192,8 @@ public class GeoAssocImpl extends EntityIdentifiableImpl implements GeoAssoc {
 	 * @generated
 	 */
 	@Override
-	public GeoAssocType getGeoAssocTypeId() {
-		return (GeoAssocType)eGet(GeoPackage.Literals.GEO_ASSOC__GEO_ASSOC_TYPE_ID, true);
+	public GeoAssocType getGeoAssocType() {
+		return (GeoAssocType)eGet(GeoPackage.Literals.GEO_ASSOC__GEO_ASSOC_TYPE, true);
 	}
 
 	/**
@@ -202,8 +202,8 @@ public class GeoAssocImpl extends EntityIdentifiableImpl implements GeoAssoc {
 	 * @generated
 	 */
 	@Override
-	public void setGeoAssocTypeId(GeoAssocType newGeoAssocTypeId) {
-		eSet(GeoPackage.Literals.GEO_ASSOC__GEO_ASSOC_TYPE_ID, newGeoAssocTypeId);
+	public void setGeoAssocType(GeoAssocType newGeoAssocType) {
+		eSet(GeoPackage.Literals.GEO_ASSOC__GEO_ASSOC_TYPE, newGeoAssocType);
 	}
 
 	/**

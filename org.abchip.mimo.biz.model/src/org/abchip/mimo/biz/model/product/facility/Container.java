@@ -22,9 +22,9 @@ import org.abchip.mimo.entity.EntityTyped;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Container#getContainerId <em>Container Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Container#getContainerGeoPoints <em>Container Geo Points</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.Container#getContainerTypeId <em>Container Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.Container#getContainerType <em>Container Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Container#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.Container#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.Container#getFacility <em>Facility</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getContainer()
@@ -59,56 +59,26 @@ public interface Container extends EntityTyped<ContainerType>, EntityInfo {
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Container Type Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Container Type Id</em>' reference.
-	 * @see #setContainerTypeId(ContainerType)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getContainer_ContainerTypeId()
-	 * @model keys="containerTypeId"
-	 * @generated
-	 */
-	ContainerType getContainerTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Container#getContainerTypeId <em>Container Type Id</em>}' reference.
+	 * Returns the value of the '<em><b>Facility</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Type Id</em>' reference.
-	 * @see #getContainerTypeId()
-	 * @generated
-	 */
-	void setContainerTypeId(ContainerType value);
-
-	/**
-	 * Returns the value of the '<em><b>Facility Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Facility Id</em>' reference.
-	 * @see #setFacilityId(Facility)
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getContainer_FacilityId()
+	 * @return the value of the '<em>Facility</em>' reference.
+	 * @see #setFacility(Facility)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getContainer_Facility()
 	 * @model keys="facilityId"
 	 * @generated
 	 */
-	Facility getFacilityId();
+	Facility getFacility();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Container#getFacilityId <em>Facility Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Container#getFacility <em>Facility</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Facility Id</em>' reference.
-	 * @see #getFacilityId()
+	 * @param value the new value of the '<em>Facility</em>' reference.
+	 * @see #getFacility()
 	 * @generated
 	 */
-	void setFacilityId(Facility value);
+	void setFacility(Facility value);
 
 	/**
 	 * Returns the value of the '<em><b>Container Id</b></em>' attribute.
@@ -149,5 +119,27 @@ public interface Container extends EntityTyped<ContainerType>, EntityInfo {
 	 * @generated
 	 */
 	List<ContainerGeoPoint> getContainerGeoPoints();
+
+	/**
+	 * Returns the value of the '<em><b>Container Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Container Type</em>' reference.
+	 * @see #setContainerType(ContainerType)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getContainer_ContainerType()
+	 * @model keys="containerTypeId"
+	 * @generated
+	 */
+	ContainerType getContainerType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Container#getContainerType <em>Container Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Container Type</em>' reference.
+	 * @see #getContainerType()
+	 * @generated
+	 */
+	void setContainerType(ContainerType value);
 
 } // Container

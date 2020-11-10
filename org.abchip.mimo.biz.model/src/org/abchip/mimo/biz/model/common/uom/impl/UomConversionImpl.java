@@ -29,10 +29,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionImpl#getUomId <em>Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionImpl#getUom <em>Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionImpl#getUomIdTo <em>Uom Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionImpl#getConversionFactor <em>Conversion Factor</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionImpl#getCustomMethodId <em>Custom Method Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionImpl#getCustomMethod <em>Custom Method</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionImpl#getDecimalScale <em>Decimal Scale</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionImpl#getRoundingMode <em>Rounding Mode</em>}</li>
  * </ul>
@@ -155,6 +155,26 @@ public class UomConversionImpl extends EntityIdentifiableImpl implements UomConv
 	 * @generated
 	 */
 	@Override
+	public Uom getUom() {
+		return (Uom)eGet(UomPackage.Literals.UOM_CONVERSION__UOM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUom(Uom newUom) {
+		eSet(UomPackage.Literals.UOM_CONVERSION__UOM, newUom);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public double getConversionFactor() {
 		return (Double)eGet(UomPackage.Literals.UOM_CONVERSION__CONVERSION_FACTOR, true);
 	}
@@ -167,6 +187,26 @@ public class UomConversionImpl extends EntityIdentifiableImpl implements UomConv
 	@Override
 	public void setConversionFactor(double newConversionFactor) {
 		eSet(UomPackage.Literals.UOM_CONVERSION__CONVERSION_FACTOR, newConversionFactor);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CustomMethod getCustomMethod() {
+		return (CustomMethod)eGet(UomPackage.Literals.UOM_CONVERSION__CUSTOM_METHOD, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCustomMethod(CustomMethod newCustomMethod) {
+		eSet(UomPackage.Literals.UOM_CONVERSION__CUSTOM_METHOD, newCustomMethod);
 	}
 
 	/**
@@ -253,26 +293,6 @@ public class UomConversionImpl extends EntityIdentifiableImpl implements UomConv
 	 * @generated
 	 */
 	@Override
-	public Uom getUomId() {
-		return (Uom)eGet(UomPackage.Literals.UOM_CONVERSION__UOM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setUomId(Uom newUomId) {
-		eSet(UomPackage.Literals.UOM_CONVERSION__UOM_ID, newUomId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Uom getUomIdTo() {
 		return (Uom)eGet(UomPackage.Literals.UOM_CONVERSION__UOM_ID_TO, true);
 	}
@@ -285,26 +305,6 @@ public class UomConversionImpl extends EntityIdentifiableImpl implements UomConv
 	@Override
 	public void setUomIdTo(Uom newUomIdTo) {
 		eSet(UomPackage.Literals.UOM_CONVERSION__UOM_ID_TO, newUomIdTo);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CustomMethod getCustomMethodId() {
-		return (CustomMethod)eGet(UomPackage.Literals.UOM_CONVERSION__CUSTOM_METHOD_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCustomMethodId(CustomMethod newCustomMethodId) {
-		eSet(UomPackage.Literals.UOM_CONVERSION__CUSTOM_METHOD_ID, newCustomMethodId);
 	}
 
 } //UomConversionImpl

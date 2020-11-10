@@ -65,7 +65,7 @@ public class ImportProductCategoriesServlet extends BaseServlet {
 
 							ProductCategory productCategory = CategoryFactory.eINSTANCE.createProductCategory();
 							productCategory.setProductCategoryId(codeId);
-							productCategory.setProductCategoryTypeId(context.createProxy(ProductCategoryType.class, "MATERIALS_CATEGORY"));
+							productCategory.setProductCategoryType(context.createProxy(ProductCategoryType.class, "MATERIALS_CATEGORY"));
 							productCategory.setCategoryName(Strings.escapeJava(description));
 							productCategoryWriter.create(productCategory, true);
 						}

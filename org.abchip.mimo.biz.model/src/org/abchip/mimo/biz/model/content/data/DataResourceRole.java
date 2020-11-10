@@ -21,8 +21,8 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourceRole#getDataResourceId <em>Data Resource Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourceRole#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourceRole#getDataResource <em>Data Resource</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourceRole#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourceRole#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourceRole#getRoleTypeId <em>Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourceRole#getThruDate <em>Thru Date</em>}</li>
@@ -34,31 +34,50 @@ import org.abchip.mimo.entity.EntityInfo;
  */
 public interface DataResourceRole extends EntityIdentifiable, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Data Resource Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Data Resource</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Data Resource Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Data Resource Id</em>' reference.
-	 * @see #setDataResourceId(DataResource)
-	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourceRole_DataResourceId()
+	 * @return the value of the '<em>Data Resource</em>' reference.
+	 * @see #setDataResource(DataResource)
+	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourceRole_DataResource()
 	 * @model keys="dataResourceId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	DataResource getDataResourceId();
+	DataResource getDataResource();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.data.DataResourceRole#getDataResourceId <em>Data Resource Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.data.DataResourceRole#getDataResource <em>Data Resource</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Data Resource Id</em>' reference.
-	 * @see #getDataResourceId()
+	 * @param value the new value of the '<em>Data Resource</em>' reference.
+	 * @see #getDataResource()
 	 * @generated
 	 */
-	void setDataResourceId(DataResource value);
+	void setDataResource(DataResource value);
+
+	/**
+	 * Returns the value of the '<em><b>Party</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party</em>' reference.
+	 * @see #setParty(Party)
+	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourceRole_Party()
+	 * @model keys="partyId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Party getParty();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.data.DataResourceRole#getParty <em>Party</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party</em>' reference.
+	 * @see #getParty()
+	 * @generated
+	 */
+	void setParty(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
@@ -86,33 +105,6 @@ public interface DataResourceRole extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setFromDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
-	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourceRole_PartyId()
-	 * @model keys="partyId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Party getPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.data.DataResourceRole#getPartyId <em>Party Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
-	 * @see #getPartyId()
-	 * @generated
-	 */
-	void setPartyId(Party value);
 
 	/**
 	 * Returns the value of the '<em><b>Role Type Id</b></em>' attribute.

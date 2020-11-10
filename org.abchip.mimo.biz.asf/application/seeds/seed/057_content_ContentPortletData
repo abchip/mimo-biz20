@@ -3,7 +3,7 @@
   <contents xsi:type="biz-portal:PortletCategory" portletCategoryId="CONTENT" description="CMS Portlets"/>
   <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="showContent" description="Shows a content in a Portal page" editFormLocation="component://content/widget/content/ContentForms.xml" editFormName="EditShowContentPortlet" portletName="Show Content" screenLocation="component://content/widget/content/ContentScreens.xml" screenName="ShowContentPortlet"/>
   <contents xsi:type="biz-portal:PortletPortletCategory">
-    <portalPortletId href="PortalPortlet#showContent"/>
-    <portletCategoryId href="PortletCategory#CONTENT"/>
+    <portalPortlet href="PortalPortlet#showContent"/>
+    <portletCategory href="PortletCategory#CONTENT"/>
   </contents>
 </mimo-ent:EntityContainer>

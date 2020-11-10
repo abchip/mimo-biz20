@@ -31,11 +31,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyGlAccountImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyGlAccountImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyGlAccountImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyGlAccountImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyGlAccountImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyGlAccountImpl#getRoleTypeId <em>Role Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyGlAccountImpl#getGlAccountTypeId <em>Gl Account Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyGlAccountImpl#getGlAccountId <em>Gl Account Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyGlAccountImpl#getOrganizationParty <em>Organization Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyGlAccountImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyGlAccountImpl#getRoleType <em>Role Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyGlAccountImpl#getGlAccountType <em>Gl Account Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyGlAccountImpl#getGlAccount <em>Gl Account</em>}</li>
  * </ul>
  *
  * @generated
@@ -156,8 +156,8 @@ public class PartyGlAccountImpl extends EntityIdentifiableImpl implements PartyG
 	 * @generated
 	 */
 	@Override
-	public Party getOrganizationPartyId() {
-		return (Party)eGet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__ORGANIZATION_PARTY_ID, true);
+	public Party getOrganizationParty() {
+		return (Party)eGet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__ORGANIZATION_PARTY, true);
 	}
 
 	/**
@@ -166,8 +166,8 @@ public class PartyGlAccountImpl extends EntityIdentifiableImpl implements PartyG
 	 * @generated
 	 */
 	@Override
-	public void setOrganizationPartyId(Party newOrganizationPartyId) {
-		eSet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__ORGANIZATION_PARTY_ID, newOrganizationPartyId);
+	public void setOrganizationParty(Party newOrganizationParty) {
+		eSet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__ORGANIZATION_PARTY, newOrganizationParty);
 	}
 
 	/**
@@ -176,8 +176,8 @@ public class PartyGlAccountImpl extends EntityIdentifiableImpl implements PartyG
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__PARTY_ID, true);
+	public Party getParty() {
+		return (Party)eGet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__PARTY, true);
 	}
 
 	/**
@@ -186,8 +186,8 @@ public class PartyGlAccountImpl extends EntityIdentifiableImpl implements PartyG
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__PARTY_ID, newPartyId);
+	public void setParty(Party newParty) {
+		eSet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__PARTY, newParty);
 	}
 
 	/**
@@ -196,8 +196,8 @@ public class PartyGlAccountImpl extends EntityIdentifiableImpl implements PartyG
 	 * @generated
 	 */
 	@Override
-	public RoleType getRoleTypeId() {
-		return (RoleType)eGet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__ROLE_TYPE_ID, true);
+	public RoleType getRoleType() {
+		return (RoleType)eGet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__ROLE_TYPE, true);
 	}
 
 	/**
@@ -206,8 +206,8 @@ public class PartyGlAccountImpl extends EntityIdentifiableImpl implements PartyG
 	 * @generated
 	 */
 	@Override
-	public void setRoleTypeId(RoleType newRoleTypeId) {
-		eSet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__ROLE_TYPE_ID, newRoleTypeId);
+	public void setRoleType(RoleType newRoleType) {
+		eSet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__ROLE_TYPE, newRoleType);
 	}
 
 	/**
@@ -216,8 +216,8 @@ public class PartyGlAccountImpl extends EntityIdentifiableImpl implements PartyG
 	 * @generated
 	 */
 	@Override
-	public GlAccountType getGlAccountTypeId() {
-		return (GlAccountType)eGet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__GL_ACCOUNT_TYPE_ID, true);
+	public GlAccountType getGlAccountType() {
+		return (GlAccountType)eGet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__GL_ACCOUNT_TYPE, true);
 	}
 
 	/**
@@ -226,8 +226,8 @@ public class PartyGlAccountImpl extends EntityIdentifiableImpl implements PartyG
 	 * @generated
 	 */
 	@Override
-	public void setGlAccountTypeId(GlAccountType newGlAccountTypeId) {
-		eSet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__GL_ACCOUNT_TYPE_ID, newGlAccountTypeId);
+	public void setGlAccountType(GlAccountType newGlAccountType) {
+		eSet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__GL_ACCOUNT_TYPE, newGlAccountType);
 	}
 
 	/**
@@ -236,8 +236,8 @@ public class PartyGlAccountImpl extends EntityIdentifiableImpl implements PartyG
 	 * @generated
 	 */
 	@Override
-	public GlAccount getGlAccountId() {
-		return (GlAccount)eGet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__GL_ACCOUNT_ID, true);
+	public GlAccount getGlAccount() {
+		return (GlAccount)eGet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__GL_ACCOUNT, true);
 	}
 
 	/**
@@ -246,8 +246,8 @@ public class PartyGlAccountImpl extends EntityIdentifiableImpl implements PartyG
 	 * @generated
 	 */
 	@Override
-	public void setGlAccountId(GlAccount newGlAccountId) {
-		eSet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__GL_ACCOUNT_ID, newGlAccountId);
+	public void setGlAccount(GlAccount newGlAccount) {
+		eSet(LedgerPackage.Literals.PARTY_GL_ACCOUNT__GL_ACCOUNT, newGlAccount);
 	}
 
 	/**

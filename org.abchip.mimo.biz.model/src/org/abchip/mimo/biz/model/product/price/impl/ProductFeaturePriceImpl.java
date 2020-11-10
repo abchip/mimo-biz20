@@ -32,8 +32,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductFeaturePriceImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductFeaturePriceImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductFeaturePriceImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductFeaturePriceImpl#getProductPriceTypeId <em>Product Price Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductFeaturePriceImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductFeaturePriceImpl#getProductPriceType <em>Product Price Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductFeaturePriceImpl#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductFeaturePriceImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductFeaturePriceImpl#getProductFeatureId <em>Product Feature Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.price.impl.ProductFeaturePriceImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
@@ -163,6 +163,46 @@ public class ProductFeaturePriceImpl extends EntityTypedImpl<ProductPriceType> i
 	 * @generated
 	 */
 	@Override
+	public ProductPriceType getProductPriceType() {
+		return (ProductPriceType)eGet(PricePackage.Literals.PRODUCT_FEATURE_PRICE__PRODUCT_PRICE_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductPriceType(ProductPriceType newProductPriceType) {
+		eSet(PricePackage.Literals.PRODUCT_FEATURE_PRICE__PRODUCT_PRICE_TYPE, newProductPriceType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Uom getCurrencyUom() {
+		return (Uom)eGet(PricePackage.Literals.PRODUCT_FEATURE_PRICE__CURRENCY_UOM, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCurrencyUom(Uom newCurrencyUom) {
+		eSet(PricePackage.Literals.PRODUCT_FEATURE_PRICE__CURRENCY_UOM, newCurrencyUom);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public UserLogin getCreatedByUserLogin() {
 		return (UserLogin)eGet(PricePackage.Literals.PRODUCT_FEATURE_PRICE__CREATED_BY_USER_LOGIN, true);
 	}
@@ -195,26 +235,6 @@ public class ProductFeaturePriceImpl extends EntityTypedImpl<ProductPriceType> i
 	@Override
 	public void setCreatedDate(Date newCreatedDate) {
 		eSet(PricePackage.Literals.PRODUCT_FEATURE_PRICE__CREATED_DATE, newCreatedDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Uom getCurrencyUomId() {
-		return (Uom)eGet(PricePackage.Literals.PRODUCT_FEATURE_PRICE__CURRENCY_UOM_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCurrencyUomId(Uom newCurrencyUomId) {
-		eSet(PricePackage.Literals.PRODUCT_FEATURE_PRICE__CURRENCY_UOM_ID, newCurrencyUomId);
 	}
 
 	/**
@@ -373,26 +393,6 @@ public class ProductFeaturePriceImpl extends EntityTypedImpl<ProductPriceType> i
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ProductPriceType getProductPriceTypeId() {
-		return (ProductPriceType)eGet(PricePackage.Literals.PRODUCT_FEATURE_PRICE__PRODUCT_PRICE_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setProductPriceTypeId(ProductPriceType newProductPriceTypeId) {
-		eSet(PricePackage.Literals.PRODUCT_FEATURE_PRICE__PRODUCT_PRICE_TYPE_ID, newProductPriceTypeId);
 	}
 
 } //ProductFeaturePriceImpl

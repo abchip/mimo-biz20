@@ -34,17 +34,17 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageImpl#getShipmentId <em>Shipment Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageImpl#getShipment <em>Shipment</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageImpl#getShipmentPackageSeqId <em>Shipment Package Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageImpl#getBoxHeight <em>Box Height</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageImpl#getBoxLength <em>Box Length</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageImpl#getBoxWidth <em>Box Width</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageImpl#getDateCreated <em>Date Created</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageImpl#getDimensionUomId <em>Dimension Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageImpl#getDimensionUom <em>Dimension Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageImpl#getInsuredValue <em>Insured Value</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageImpl#getShipmentBoxTypeId <em>Shipment Box Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageImpl#getShipmentBoxType <em>Shipment Box Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageImpl#getWeight <em>Weight</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageImpl#getWeightUomId <em>Weight Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageImpl#getWeightUom <em>Weight Uom</em>}</li>
  * </ul>
  *
  * @generated
@@ -166,8 +166,8 @@ public class ShipmentPackageImpl extends EntityTypedImpl<ShipmentBoxType> implem
 	 * @generated
 	 */
 	@Override
-	public Shipment getShipmentId() {
-		return (Shipment)eGet(Shipment_Package.Literals.SHIPMENT_PACKAGE__SHIPMENT_ID, true);
+	public Shipment getShipment() {
+		return (Shipment)eGet(Shipment_Package.Literals.SHIPMENT_PACKAGE__SHIPMENT, true);
 	}
 
 	/**
@@ -176,8 +176,8 @@ public class ShipmentPackageImpl extends EntityTypedImpl<ShipmentBoxType> implem
 	 * @generated
 	 */
 	@Override
-	public void setShipmentId(Shipment newShipmentId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_PACKAGE__SHIPMENT_ID, newShipmentId);
+	public void setShipment(Shipment newShipment) {
+		eSet(Shipment_Package.Literals.SHIPMENT_PACKAGE__SHIPMENT, newShipment);
 	}
 
 	/**
@@ -286,8 +286,8 @@ public class ShipmentPackageImpl extends EntityTypedImpl<ShipmentBoxType> implem
 	 * @generated
 	 */
 	@Override
-	public Uom getDimensionUomId() {
-		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT_PACKAGE__DIMENSION_UOM_ID, true);
+	public Uom getDimensionUom() {
+		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT_PACKAGE__DIMENSION_UOM, true);
 	}
 
 	/**
@@ -296,8 +296,8 @@ public class ShipmentPackageImpl extends EntityTypedImpl<ShipmentBoxType> implem
 	 * @generated
 	 */
 	@Override
-	public void setDimensionUomId(Uom newDimensionUomId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_PACKAGE__DIMENSION_UOM_ID, newDimensionUomId);
+	public void setDimensionUom(Uom newDimensionUom) {
+		eSet(Shipment_Package.Literals.SHIPMENT_PACKAGE__DIMENSION_UOM, newDimensionUom);
 	}
 
 	/**
@@ -326,8 +326,8 @@ public class ShipmentPackageImpl extends EntityTypedImpl<ShipmentBoxType> implem
 	 * @generated
 	 */
 	@Override
-	public ShipmentBoxType getShipmentBoxTypeId() {
-		return (ShipmentBoxType)eGet(Shipment_Package.Literals.SHIPMENT_PACKAGE__SHIPMENT_BOX_TYPE_ID, true);
+	public ShipmentBoxType getShipmentBoxType() {
+		return (ShipmentBoxType)eGet(Shipment_Package.Literals.SHIPMENT_PACKAGE__SHIPMENT_BOX_TYPE, true);
 	}
 
 	/**
@@ -336,8 +336,8 @@ public class ShipmentPackageImpl extends EntityTypedImpl<ShipmentBoxType> implem
 	 * @generated
 	 */
 	@Override
-	public void setShipmentBoxTypeId(ShipmentBoxType newShipmentBoxTypeId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_PACKAGE__SHIPMENT_BOX_TYPE_ID, newShipmentBoxTypeId);
+	public void setShipmentBoxType(ShipmentBoxType newShipmentBoxType) {
+		eSet(Shipment_Package.Literals.SHIPMENT_PACKAGE__SHIPMENT_BOX_TYPE, newShipmentBoxType);
 	}
 
 	/**
@@ -366,8 +366,8 @@ public class ShipmentPackageImpl extends EntityTypedImpl<ShipmentBoxType> implem
 	 * @generated
 	 */
 	@Override
-	public Uom getWeightUomId() {
-		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT_PACKAGE__WEIGHT_UOM_ID, true);
+	public Uom getWeightUom() {
+		return (Uom)eGet(Shipment_Package.Literals.SHIPMENT_PACKAGE__WEIGHT_UOM, true);
 	}
 
 	/**
@@ -376,8 +376,8 @@ public class ShipmentPackageImpl extends EntityTypedImpl<ShipmentBoxType> implem
 	 * @generated
 	 */
 	@Override
-	public void setWeightUomId(Uom newWeightUomId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_PACKAGE__WEIGHT_UOM_ID, newWeightUomId);
+	public void setWeightUom(Uom newWeightUom) {
+		eSet(Shipment_Package.Literals.SHIPMENT_PACKAGE__WEIGHT_UOM, newWeightUom);
 	}
 
 	/**

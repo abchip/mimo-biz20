@@ -33,10 +33,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemPriceInfoImpl#getOrderItemPriceInfoId <em>Order Item Price Info Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemPriceInfoImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemPriceInfoImpl#getModifyAmount <em>Modify Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemPriceInfoImpl#getOrderId <em>Order Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemPriceInfoImpl#getOrder <em>Order</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemPriceInfoImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemPriceInfoImpl#getProductPriceActionSeqId <em>Product Price Action Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemPriceInfoImpl#getProductPriceRuleId <em>Product Price Rule Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemPriceInfoImpl#getProductPriceRule <em>Product Price Rule</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemPriceInfoImpl#getRateCode <em>Rate Code</em>}</li>
  * </ul>
  *
@@ -199,8 +199,8 @@ public class OrderItemPriceInfoImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public OrderHeader getOrderId() {
-		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ITEM_PRICE_INFO__ORDER_ID, true);
+	public OrderHeader getOrder() {
+		return (OrderHeader)eGet(OrderPackage.Literals.ORDER_ITEM_PRICE_INFO__ORDER, true);
 	}
 
 	/**
@@ -209,8 +209,8 @@ public class OrderItemPriceInfoImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public void setOrderId(OrderHeader newOrderId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_PRICE_INFO__ORDER_ID, newOrderId);
+	public void setOrder(OrderHeader newOrder) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_PRICE_INFO__ORDER, newOrder);
 	}
 
 	/**
@@ -279,8 +279,8 @@ public class OrderItemPriceInfoImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public ProductPriceRule getProductPriceRuleId() {
-		return (ProductPriceRule)eGet(OrderPackage.Literals.ORDER_ITEM_PRICE_INFO__PRODUCT_PRICE_RULE_ID, true);
+	public ProductPriceRule getProductPriceRule() {
+		return (ProductPriceRule)eGet(OrderPackage.Literals.ORDER_ITEM_PRICE_INFO__PRODUCT_PRICE_RULE, true);
 	}
 
 	/**
@@ -289,8 +289,8 @@ public class OrderItemPriceInfoImpl extends EntityIdentifiableImpl implements Or
 	 * @generated
 	 */
 	@Override
-	public void setProductPriceRuleId(ProductPriceRule newProductPriceRuleId) {
-		eSet(OrderPackage.Literals.ORDER_ITEM_PRICE_INFO__PRODUCT_PRICE_RULE_ID, newProductPriceRuleId);
+	public void setProductPriceRule(ProductPriceRule newProductPriceRule) {
+		eSet(OrderPackage.Literals.ORDER_ITEM_PRICE_INFO__PRODUCT_PRICE_RULE, newProductPriceRule);
 	}
 
 	/**

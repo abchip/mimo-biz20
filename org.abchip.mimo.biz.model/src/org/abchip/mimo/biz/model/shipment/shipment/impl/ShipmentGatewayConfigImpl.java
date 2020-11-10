@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentGatewayConfigImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentGatewayConfigImpl#getShipmentGatewayConfigId <em>Shipment Gateway Config Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentGatewayConfigImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentGatewayConfigImpl#getShipmentGatewayConfTypeId <em>Shipment Gateway Conf Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentGatewayConfigImpl#getShipmentGatewayConfType <em>Shipment Gateway Conf Type</em>}</li>
  * </ul>
  *
  * @generated
@@ -172,8 +172,8 @@ public class ShipmentGatewayConfigImpl extends EntityTypedImpl<ShipmentGatewayCo
 	 * @generated
 	 */
 	@Override
-	public ShipmentGatewayConfigType getShipmentGatewayConfTypeId() {
-		return (ShipmentGatewayConfigType)eGet(Shipment_Package.Literals.SHIPMENT_GATEWAY_CONFIG__SHIPMENT_GATEWAY_CONF_TYPE_ID, true);
+	public ShipmentGatewayConfigType getShipmentGatewayConfType() {
+		return (ShipmentGatewayConfigType)eGet(Shipment_Package.Literals.SHIPMENT_GATEWAY_CONFIG__SHIPMENT_GATEWAY_CONF_TYPE, true);
 	}
 
 	/**
@@ -182,8 +182,8 @@ public class ShipmentGatewayConfigImpl extends EntityTypedImpl<ShipmentGatewayCo
 	 * @generated
 	 */
 	@Override
-	public void setShipmentGatewayConfTypeId(ShipmentGatewayConfigType newShipmentGatewayConfTypeId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_GATEWAY_CONFIG__SHIPMENT_GATEWAY_CONF_TYPE_ID, newShipmentGatewayConfTypeId);
+	public void setShipmentGatewayConfType(ShipmentGatewayConfigType newShipmentGatewayConfType) {
+		eSet(Shipment_Package.Literals.SHIPMENT_GATEWAY_CONFIG__SHIPMENT_GATEWAY_CONF_TYPE, newShipmentGatewayConfType);
 	}
 
 	/**

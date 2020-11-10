@@ -19,7 +19,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourceAttribute#getDataResourceId <em>Data Resource Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourceAttribute#getDataResource <em>Data Resource</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourceAttribute#getAttrName <em>Attr Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourceAttribute#getAttrDescription <em>Attr Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.DataResourceAttribute#getAttrValue <em>Attr Value</em>}</li>
@@ -30,6 +30,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface DataResourceAttribute extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Data Resource</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Data Resource</em>' reference.
+	 * @see #setDataResource(DataResource)
+	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourceAttribute_DataResource()
+	 * @model keys="dataResourceId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	DataResource getDataResource();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.data.DataResourceAttribute#getDataResource <em>Data Resource</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Data Resource</em>' reference.
+	 * @see #getDataResource()
+	 * @generated
+	 */
+	void setDataResource(DataResource value);
+
 	/**
 	 * Returns the value of the '<em><b>Attr Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -109,32 +132,5 @@ public interface DataResourceAttribute extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setAttrValue(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Data Resource Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Data Resource Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Data Resource Id</em>' reference.
-	 * @see #setDataResourceId(DataResource)
-	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourceAttribute_DataResourceId()
-	 * @model keys="dataResourceId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	DataResource getDataResourceId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.data.DataResourceAttribute#getDataResourceId <em>Data Resource Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Data Resource Id</em>' reference.
-	 * @see #getDataResourceId()
-	 * @generated
-	 */
-	void setDataResourceId(DataResource value);
 
 } // DataResourceAttribute

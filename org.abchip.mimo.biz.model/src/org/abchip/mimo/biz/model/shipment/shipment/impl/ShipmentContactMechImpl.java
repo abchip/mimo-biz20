@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentContactMechImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentContactMechImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentContactMechImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentContactMechImpl#getShipmentId <em>Shipment Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentContactMechImpl#getShipmentContactMechTypeId <em>Shipment Contact Mech Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentContactMechImpl#getContactMechId <em>Contact Mech Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentContactMechImpl#getShipment <em>Shipment</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentContactMechImpl#getShipmentContactMechType <em>Shipment Contact Mech Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentContactMechImpl#getContactMech <em>Contact Mech</em>}</li>
  * </ul>
  *
  * @generated
@@ -154,8 +154,8 @@ public class ShipmentContactMechImpl extends EntityTypedImpl<ShipmentContactMech
 	 * @generated
 	 */
 	@Override
-	public ContactMech getContactMechId() {
-		return (ContactMech)eGet(Shipment_Package.Literals.SHIPMENT_CONTACT_MECH__CONTACT_MECH_ID, true);
+	public Shipment getShipment() {
+		return (Shipment)eGet(Shipment_Package.Literals.SHIPMENT_CONTACT_MECH__SHIPMENT, true);
 	}
 
 	/**
@@ -164,8 +164,48 @@ public class ShipmentContactMechImpl extends EntityTypedImpl<ShipmentContactMech
 	 * @generated
 	 */
 	@Override
-	public void setContactMechId(ContactMech newContactMechId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_CONTACT_MECH__CONTACT_MECH_ID, newContactMechId);
+	public void setShipment(Shipment newShipment) {
+		eSet(Shipment_Package.Literals.SHIPMENT_CONTACT_MECH__SHIPMENT, newShipment);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ShipmentContactMechType getShipmentContactMechType() {
+		return (ShipmentContactMechType)eGet(Shipment_Package.Literals.SHIPMENT_CONTACT_MECH__SHIPMENT_CONTACT_MECH_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setShipmentContactMechType(ShipmentContactMechType newShipmentContactMechType) {
+		eSet(Shipment_Package.Literals.SHIPMENT_CONTACT_MECH__SHIPMENT_CONTACT_MECH_TYPE, newShipmentContactMechType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ContactMech getContactMech() {
+		return (ContactMech)eGet(Shipment_Package.Literals.SHIPMENT_CONTACT_MECH__CONTACT_MECH, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setContactMech(ContactMech newContactMech) {
+		eSet(Shipment_Package.Literals.SHIPMENT_CONTACT_MECH__CONTACT_MECH, newContactMech);
 	}
 
 	/**
@@ -204,46 +244,6 @@ public class ShipmentContactMechImpl extends EntityTypedImpl<ShipmentContactMech
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ShipmentContactMechType getShipmentContactMechTypeId() {
-		return (ShipmentContactMechType)eGet(Shipment_Package.Literals.SHIPMENT_CONTACT_MECH__SHIPMENT_CONTACT_MECH_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setShipmentContactMechTypeId(ShipmentContactMechType newShipmentContactMechTypeId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_CONTACT_MECH__SHIPMENT_CONTACT_MECH_TYPE_ID, newShipmentContactMechTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Shipment getShipmentId() {
-		return (Shipment)eGet(Shipment_Package.Literals.SHIPMENT_CONTACT_MECH__SHIPMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setShipmentId(Shipment newShipmentId) {
-		eSet(Shipment_Package.Literals.SHIPMENT_CONTACT_MECH__SHIPMENT_ID, newShipmentId);
 	}
 
 } //ShipmentContactMechImpl

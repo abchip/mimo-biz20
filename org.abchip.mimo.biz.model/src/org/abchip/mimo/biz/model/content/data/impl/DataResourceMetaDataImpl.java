@@ -30,9 +30,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceMetaDataImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceMetaDataImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceMetaDataImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceMetaDataImpl#getDataResourceId <em>Data Resource Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceMetaDataImpl#getMetaDataPredicateId <em>Meta Data Predicate Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceMetaDataImpl#getDataSourceId <em>Data Source Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceMetaDataImpl#getDataResource <em>Data Resource</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceMetaDataImpl#getMetaDataPredicate <em>Meta Data Predicate</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceMetaDataImpl#getDataSource <em>Data Source</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceMetaDataImpl#getMetaDataValue <em>Meta Data Value</em>}</li>
  * </ul>
  *
@@ -155,8 +155,8 @@ public class DataResourceMetaDataImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public DataResource getDataResourceId() {
-		return (DataResource)eGet(DataPackage.Literals.DATA_RESOURCE_META_DATA__DATA_RESOURCE_ID, true);
+	public DataResource getDataResource() {
+		return (DataResource)eGet(DataPackage.Literals.DATA_RESOURCE_META_DATA__DATA_RESOURCE, true);
 	}
 
 	/**
@@ -165,8 +165,8 @@ public class DataResourceMetaDataImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setDataResourceId(DataResource newDataResourceId) {
-		eSet(DataPackage.Literals.DATA_RESOURCE_META_DATA__DATA_RESOURCE_ID, newDataResourceId);
+	public void setDataResource(DataResource newDataResource) {
+		eSet(DataPackage.Literals.DATA_RESOURCE_META_DATA__DATA_RESOURCE, newDataResource);
 	}
 
 	/**
@@ -175,8 +175,8 @@ public class DataResourceMetaDataImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public DataSource getDataSourceId() {
-		return (DataSource)eGet(DataPackage.Literals.DATA_RESOURCE_META_DATA__DATA_SOURCE_ID, true);
+	public MetaDataPredicate getMetaDataPredicate() {
+		return (MetaDataPredicate)eGet(DataPackage.Literals.DATA_RESOURCE_META_DATA__META_DATA_PREDICATE, true);
 	}
 
 	/**
@@ -185,8 +185,8 @@ public class DataResourceMetaDataImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setDataSourceId(DataSource newDataSourceId) {
-		eSet(DataPackage.Literals.DATA_RESOURCE_META_DATA__DATA_SOURCE_ID, newDataSourceId);
+	public void setMetaDataPredicate(MetaDataPredicate newMetaDataPredicate) {
+		eSet(DataPackage.Literals.DATA_RESOURCE_META_DATA__META_DATA_PREDICATE, newMetaDataPredicate);
 	}
 
 	/**
@@ -195,8 +195,8 @@ public class DataResourceMetaDataImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public MetaDataPredicate getMetaDataPredicateId() {
-		return (MetaDataPredicate)eGet(DataPackage.Literals.DATA_RESOURCE_META_DATA__META_DATA_PREDICATE_ID, true);
+	public DataSource getDataSource() {
+		return (DataSource)eGet(DataPackage.Literals.DATA_RESOURCE_META_DATA__DATA_SOURCE, true);
 	}
 
 	/**
@@ -205,8 +205,8 @@ public class DataResourceMetaDataImpl extends EntityIdentifiableImpl implements 
 	 * @generated
 	 */
 	@Override
-	public void setMetaDataPredicateId(MetaDataPredicate newMetaDataPredicateId) {
-		eSet(DataPackage.Literals.DATA_RESOURCE_META_DATA__META_DATA_PREDICATE_ID, newMetaDataPredicateId);
+	public void setDataSource(DataSource newDataSource) {
+		eSet(DataPackage.Literals.DATA_RESOURCE_META_DATA__DATA_SOURCE, newDataSource);
 	}
 
 	/**

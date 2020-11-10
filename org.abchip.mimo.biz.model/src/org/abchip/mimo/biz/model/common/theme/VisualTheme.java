@@ -21,7 +21,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.common.theme.VisualTheme#getVisualThemeId <em>Visual Theme Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.theme.VisualTheme#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.theme.VisualTheme#getVisualThemeSetId <em>Visual Theme Set Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.theme.VisualTheme#getVisualThemeSet <em>Visual Theme Set</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.common.theme.ThemePackage#getVisualTheme()
@@ -56,30 +56,26 @@ public interface VisualTheme extends EntityIdentifiable, EntityInfo {
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Visual Theme Set Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Visual Theme Set</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Visual Theme Set Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Visual Theme Set Id</em>' reference.
-	 * @see #setVisualThemeSetId(VisualThemeSet)
-	 * @see org.abchip.mimo.biz.model.common.theme.ThemePackage#getVisualTheme_VisualThemeSetId()
+	 * @return the value of the '<em>Visual Theme Set</em>' reference.
+	 * @see #setVisualThemeSet(VisualThemeSet)
+	 * @see org.abchip.mimo.biz.model.common.theme.ThemePackage#getVisualTheme_VisualThemeSet()
 	 * @model keys="visualThemeSetId"
 	 * @generated
 	 */
-	VisualThemeSet getVisualThemeSetId();
+	VisualThemeSet getVisualThemeSet();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.theme.VisualTheme#getVisualThemeSetId <em>Visual Theme Set Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.theme.VisualTheme#getVisualThemeSet <em>Visual Theme Set</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Visual Theme Set Id</em>' reference.
-	 * @see #getVisualThemeSetId()
+	 * @param value the new value of the '<em>Visual Theme Set</em>' reference.
+	 * @see #getVisualThemeSet()
 	 * @generated
 	 */
-	void setVisualThemeSetId(VisualThemeSet value);
+	void setVisualThemeSet(VisualThemeSet value);
 
 	/**
 	 * Returns the value of the '<em><b>Visual Theme Id</b></em>' attribute.

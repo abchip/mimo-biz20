@@ -22,9 +22,9 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.order.reservations.AccommodationSpot#getAccommodationSpotId <em>Accommodation Spot Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.reservations.AccommodationSpot#getAccommodationClassId <em>Accommodation Class Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.reservations.AccommodationSpot#getAccommodationClass <em>Accommodation Class</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.reservations.AccommodationSpot#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.reservations.AccommodationSpot#getFixedAssetId <em>Fixed Asset Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.reservations.AccommodationSpot#getFixedAsset <em>Fixed Asset</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.reservations.AccommodationSpot#getNumberOfSpaces <em>Number Of Spaces</em>}</li>
  * </ul>
  *
@@ -33,32 +33,6 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface AccommodationSpot extends EntityIdentifiable, EntityInfo {
-	/**
-	 * Returns the value of the '<em><b>Accommodation Class Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Accommodation Class Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Accommodation Class Id</em>' reference.
-	 * @see #setAccommodationClassId(AccommodationClass)
-	 * @see org.abchip.mimo.biz.model.order.reservations.ReservationsPackage#getAccommodationSpot_AccommodationClassId()
-	 * @model keys="accommodationClassId"
-	 * @generated
-	 */
-	AccommodationClass getAccommodationClassId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.reservations.AccommodationSpot#getAccommodationClassId <em>Accommodation Class Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Accommodation Class Id</em>' reference.
-	 * @see #getAccommodationClassId()
-	 * @generated
-	 */
-	void setAccommodationClassId(AccommodationClass value);
-
 	/**
 	 * Returns the value of the '<em><b>Accommodation Spot Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -87,6 +61,28 @@ public interface AccommodationSpot extends EntityIdentifiable, EntityInfo {
 	void setAccommodationSpotId(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Accommodation Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Accommodation Class</em>' reference.
+	 * @see #setAccommodationClass(AccommodationClass)
+	 * @see org.abchip.mimo.biz.model.order.reservations.ReservationsPackage#getAccommodationSpot_AccommodationClass()
+	 * @model keys="accommodationClassId"
+	 * @generated
+	 */
+	AccommodationClass getAccommodationClass();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.reservations.AccommodationSpot#getAccommodationClass <em>Accommodation Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Accommodation Class</em>' reference.
+	 * @see #getAccommodationClass()
+	 * @generated
+	 */
+	void setAccommodationClass(AccommodationClass value);
+
+	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -113,30 +109,26 @@ public interface AccommodationSpot extends EntityIdentifiable, EntityInfo {
 	void setDescription(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Fixed Asset Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Fixed Asset</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fixed Asset Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fixed Asset Id</em>' reference.
-	 * @see #setFixedAssetId(FixedAsset)
-	 * @see org.abchip.mimo.biz.model.order.reservations.ReservationsPackage#getAccommodationSpot_FixedAssetId()
+	 * @return the value of the '<em>Fixed Asset</em>' reference.
+	 * @see #setFixedAsset(FixedAsset)
+	 * @see org.abchip.mimo.biz.model.order.reservations.ReservationsPackage#getAccommodationSpot_FixedAsset()
 	 * @model keys="fixedAssetId"
 	 * @generated
 	 */
-	FixedAsset getFixedAssetId();
+	FixedAsset getFixedAsset();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.reservations.AccommodationSpot#getFixedAssetId <em>Fixed Asset Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.reservations.AccommodationSpot#getFixedAsset <em>Fixed Asset</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fixed Asset Id</em>' reference.
-	 * @see #getFixedAssetId()
+	 * @param value the new value of the '<em>Fixed Asset</em>' reference.
+	 * @see #getFixedAsset()
 	 * @generated
 	 */
-	void setFixedAssetId(FixedAsset value);
+	void setFixedAsset(FixedAsset value);
 
 	/**
 	 * Returns the value of the '<em><b>Number Of Spaces</b></em>' attribute.

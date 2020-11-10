@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.keyword.impl.KeywordThesaurusImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.keyword.impl.KeywordThesaurusImpl#getAlternateKeyword <em>Alternate Keyword</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.keyword.impl.KeywordThesaurusImpl#getEnteredKeyword <em>Entered Keyword</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.keyword.impl.KeywordThesaurusImpl#getRelationshipEnumId <em>Relationship Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.keyword.impl.KeywordThesaurusImpl#getRelationshipEnum <em>Relationship Enum</em>}</li>
  * </ul>
  *
  * @generated
@@ -191,8 +191,8 @@ public class KeywordThesaurusImpl extends EntityIdentifiableImpl implements Keyw
 	 * @generated
 	 */
 	@Override
-	public Enumeration getRelationshipEnumId() {
-		return (Enumeration)eGet(KeywordPackage.Literals.KEYWORD_THESAURUS__RELATIONSHIP_ENUM_ID, true);
+	public Enumeration getRelationshipEnum() {
+		return (Enumeration)eGet(KeywordPackage.Literals.KEYWORD_THESAURUS__RELATIONSHIP_ENUM, true);
 	}
 
 	/**
@@ -201,8 +201,8 @@ public class KeywordThesaurusImpl extends EntityIdentifiableImpl implements Keyw
 	 * @generated
 	 */
 	@Override
-	public void setRelationshipEnumId(Enumeration newRelationshipEnumId) {
-		eSet(KeywordPackage.Literals.KEYWORD_THESAURUS__RELATIONSHIP_ENUM_ID, newRelationshipEnumId);
+	public void setRelationshipEnum(Enumeration newRelationshipEnum) {
+		eSet(KeywordPackage.Literals.KEYWORD_THESAURUS__RELATIONSHIP_ENUM, newRelationshipEnum);
 	}
 
 	/**

@@ -25,12 +25,12 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getEnumTypeId <em>Enum Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getFormatString <em>Format String</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getGeoId <em>Geo Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getGeo <em>Geo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getHint <em>Hint</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getQuestion <em>Question</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getSurveyQuestionCategoryId <em>Survey Question Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getSurveyQuestionCategory <em>Survey Question Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getSurveyQuestionOptions <em>Survey Question Options</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getSurveyQuestionTypeId <em>Survey Question Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getSurveyQuestionType <em>Survey Question Type</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestion()
@@ -117,30 +117,26 @@ public interface SurveyQuestion extends EntityTyped<SurveyQuestionType>, EntityI
 	void setFormatString(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Geo Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Geo Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Geo Id</em>' reference.
-	 * @see #setGeoId(Geo)
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestion_GeoId()
+	 * @return the value of the '<em>Geo</em>' reference.
+	 * @see #setGeo(Geo)
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestion_Geo()
 	 * @model keys="geoId"
 	 * @generated
 	 */
-	Geo getGeoId();
+	Geo getGeo();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getGeoId <em>Geo Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getGeo <em>Geo</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Geo Id</em>' reference.
-	 * @see #getGeoId()
+	 * @param value the new value of the '<em>Geo</em>' reference.
+	 * @see #getGeo()
 	 * @generated
 	 */
-	void setGeoId(Geo value);
+	void setGeo(Geo value);
 
 	/**
 	 * Returns the value of the '<em><b>Hint</b></em>' attribute.
@@ -195,30 +191,26 @@ public interface SurveyQuestion extends EntityTyped<SurveyQuestionType>, EntityI
 	void setQuestion(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Survey Question Category Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Survey Question Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Survey Question Category Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Survey Question Category Id</em>' reference.
-	 * @see #setSurveyQuestionCategoryId(SurveyQuestionCategory)
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestion_SurveyQuestionCategoryId()
+	 * @return the value of the '<em>Survey Question Category</em>' reference.
+	 * @see #setSurveyQuestionCategory(SurveyQuestionCategory)
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestion_SurveyQuestionCategory()
 	 * @model keys="surveyQuestionCategoryId"
 	 * @generated
 	 */
-	SurveyQuestionCategory getSurveyQuestionCategoryId();
+	SurveyQuestionCategory getSurveyQuestionCategory();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getSurveyQuestionCategoryId <em>Survey Question Category Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getSurveyQuestionCategory <em>Survey Question Category</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Survey Question Category Id</em>' reference.
-	 * @see #getSurveyQuestionCategoryId()
+	 * @param value the new value of the '<em>Survey Question Category</em>' reference.
+	 * @see #getSurveyQuestionCategory()
 	 * @generated
 	 */
-	void setSurveyQuestionCategoryId(SurveyQuestionCategory value);
+	void setSurveyQuestionCategory(SurveyQuestionCategory value);
 
 	/**
 	 * Returns the value of the '<em><b>Survey Question Options</b></em>' reference list.
@@ -235,6 +227,28 @@ public interface SurveyQuestion extends EntityTyped<SurveyQuestionType>, EntityI
 	 * @generated
 	 */
 	List<SurveyQuestionOption> getSurveyQuestionOptions();
+
+	/**
+	 * Returns the value of the '<em><b>Survey Question Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Survey Question Type</em>' reference.
+	 * @see #setSurveyQuestionType(SurveyQuestionType)
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestion_SurveyQuestionType()
+	 * @model keys="surveyQuestionTypeId"
+	 * @generated
+	 */
+	SurveyQuestionType getSurveyQuestionType();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getSurveyQuestionType <em>Survey Question Type</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Survey Question Type</em>' reference.
+	 * @see #getSurveyQuestionType()
+	 * @generated
+	 */
+	void setSurveyQuestionType(SurveyQuestionType value);
 
 	/**
 	 * Returns the value of the '<em><b>Survey Question Id</b></em>' attribute.
@@ -262,31 +276,5 @@ public interface SurveyQuestion extends EntityTyped<SurveyQuestionType>, EntityI
 	 * @generated
 	 */
 	void setSurveyQuestionId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Survey Question Type Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Survey Question Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Survey Question Type Id</em>' reference.
-	 * @see #setSurveyQuestionTypeId(SurveyQuestionType)
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestion_SurveyQuestionTypeId()
-	 * @model keys="surveyQuestionTypeId"
-	 * @generated
-	 */
-	SurveyQuestionType getSurveyQuestionTypeId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestion#getSurveyQuestionTypeId <em>Survey Question Type Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Survey Question Type Id</em>' reference.
-	 * @see #getSurveyQuestionTypeId()
-	 * @generated
-	 */
-	void setSurveyQuestionTypeId(SurveyQuestionType value);
 
 } // SurveyQuestion

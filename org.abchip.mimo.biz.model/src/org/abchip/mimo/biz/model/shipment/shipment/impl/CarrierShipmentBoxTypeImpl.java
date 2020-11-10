@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentBoxTypeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentBoxTypeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentBoxTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentBoxTypeImpl#getShipmentBoxTypeId <em>Shipment Box Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentBoxTypeImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentBoxTypeImpl#getShipmentBoxType <em>Shipment Box Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentBoxTypeImpl#getParty <em>Party</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentBoxTypeImpl#getOversizeCode <em>Oversize Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentBoxTypeImpl#getPackagingTypeCode <em>Packaging Type Code</em>}</li>
  * </ul>
@@ -154,6 +154,46 @@ public class CarrierShipmentBoxTypeImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
+	public ShipmentBoxType getShipmentBoxType() {
+		return (ShipmentBoxType)eGet(Shipment_Package.Literals.CARRIER_SHIPMENT_BOX_TYPE__SHIPMENT_BOX_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setShipmentBoxType(ShipmentBoxType newShipmentBoxType) {
+		eSet(Shipment_Package.Literals.CARRIER_SHIPMENT_BOX_TYPE__SHIPMENT_BOX_TYPE, newShipmentBoxType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Party getParty() {
+		return (Party)eGet(Shipment_Package.Literals.CARRIER_SHIPMENT_BOX_TYPE__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(Shipment_Package.Literals.CARRIER_SHIPMENT_BOX_TYPE__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getOversizeCode() {
 		return (String)eGet(Shipment_Package.Literals.CARRIER_SHIPMENT_BOX_TYPE__OVERSIZE_CODE, true);
 	}
@@ -224,46 +264,6 @@ public class CarrierShipmentBoxTypeImpl extends EntityIdentifiableImpl implement
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(Shipment_Package.Literals.CARRIER_SHIPMENT_BOX_TYPE__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(Shipment_Package.Literals.CARRIER_SHIPMENT_BOX_TYPE__PARTY_ID, newPartyId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ShipmentBoxType getShipmentBoxTypeId() {
-		return (ShipmentBoxType)eGet(Shipment_Package.Literals.CARRIER_SHIPMENT_BOX_TYPE__SHIPMENT_BOX_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setShipmentBoxTypeId(ShipmentBoxType newShipmentBoxTypeId) {
-		eSet(Shipment_Package.Literals.CARRIER_SHIPMENT_BOX_TYPE__SHIPMENT_BOX_TYPE_ID, newShipmentBoxTypeId);
 	}
 
 } //CarrierShipmentBoxTypeImpl

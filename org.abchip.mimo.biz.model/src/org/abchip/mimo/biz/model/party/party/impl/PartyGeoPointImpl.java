@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyGeoPointImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyGeoPointImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyGeoPointImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyGeoPointImpl#getPartyId <em>Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyGeoPointImpl#getGeoPointId <em>Geo Point Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyGeoPointImpl#getParty <em>Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyGeoPointImpl#getGeoPoint <em>Geo Point</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyGeoPointImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyGeoPointImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -153,6 +153,46 @@ public class PartyGeoPointImpl extends EntityIdentifiableImpl implements PartyGe
 	 * @generated
 	 */
 	@Override
+	public Party getParty() {
+		return (Party)eGet(PartyPackage.Literals.PARTY_GEO_POINT__PARTY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setParty(Party newParty) {
+		eSet(PartyPackage.Literals.PARTY_GEO_POINT__PARTY, newParty);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GeoPoint getGeoPoint() {
+		return (GeoPoint)eGet(PartyPackage.Literals.PARTY_GEO_POINT__GEO_POINT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setGeoPoint(GeoPoint newGeoPoint) {
+		eSet(PartyPackage.Literals.PARTY_GEO_POINT__GEO_POINT, newGeoPoint);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Date getFromDate() {
 		return (Date)eGet(PartyPackage.Literals.PARTY_GEO_POINT__FROM_DATE, true);
 	}
@@ -165,26 +205,6 @@ public class PartyGeoPointImpl extends EntityIdentifiableImpl implements PartyGe
 	@Override
 	public void setFromDate(Date newFromDate) {
 		eSet(PartyPackage.Literals.PARTY_GEO_POINT__FROM_DATE, newFromDate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public GeoPoint getGeoPointId() {
-		return (GeoPoint)eGet(PartyPackage.Literals.PARTY_GEO_POINT__GEO_POINT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGeoPointId(GeoPoint newGeoPointId) {
-		eSet(PartyPackage.Literals.PARTY_GEO_POINT__GEO_POINT_ID, newGeoPointId);
 	}
 
 	/**
@@ -243,26 +263,6 @@ public class PartyGeoPointImpl extends EntityIdentifiableImpl implements PartyGe
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Party getPartyId() {
-		return (Party)eGet(PartyPackage.Literals.PARTY_GEO_POINT__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(Party newPartyId) {
-		eSet(PartyPackage.Literals.PARTY_GEO_POINT__PARTY_ID, newPartyId);
 	}
 
 } //PartyGeoPointImpl

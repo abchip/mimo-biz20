@@ -162,13 +162,13 @@ public interface UomPackage extends EPackage {
 	int UOM__NUMERIC_CODE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Uom Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Uom Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UOM__UOM_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int UOM__UOM_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Uom</em>' class.
@@ -226,13 +226,13 @@ public interface UomPackage extends EPackage {
 	int UOM_CONVERSION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION__UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int UOM_CONVERSION__UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Uom Id To</b></em>' reference.
@@ -253,13 +253,13 @@ public interface UomPackage extends EPackage {
 	int UOM_CONVERSION__CONVERSION_FACTOR = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Custom Method Id</b></em>' reference.
+	 * The feature id for the '<em><b>Custom Method</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION__CUSTOM_METHOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int UOM_CONVERSION__CUSTOM_METHOD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Decimal Scale</b></em>' attribute.
@@ -335,13 +335,13 @@ public interface UomPackage extends EPackage {
 	int UOM_CONVERSION_DATED__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION_DATED__UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int UOM_CONVERSION_DATED__UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Uom Id To</b></em>' reference.
@@ -371,13 +371,13 @@ public interface UomPackage extends EPackage {
 	int UOM_CONVERSION_DATED__CONVERSION_FACTOR = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Custom Method Id</b></em>' reference.
+	 * The feature id for the '<em><b>Custom Method</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION_DATED__CUSTOM_METHOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int UOM_CONVERSION_DATED__CUSTOM_METHOD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Decimal Scale</b></em>' attribute.
@@ -389,13 +389,13 @@ public interface UomPackage extends EPackage {
 	int UOM_CONVERSION_DATED__DECIMAL_SCALE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
-	 * The feature id for the '<em><b>Purpose Enum Id</b></em>' reference.
+	 * The feature id for the '<em><b>Purpose Enum</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION_DATED__PURPOSE_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int UOM_CONVERSION_DATED__PURPOSE_ENUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Rounding Mode</b></em>' attribute.
@@ -471,13 +471,13 @@ public interface UomPackage extends EPackage {
 	int UOM_GROUP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_GROUP__UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int UOM_GROUP__UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Uom Group Id</b></em>' attribute.
@@ -580,13 +580,13 @@ public interface UomPackage extends EPackage {
 	int UOM_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int UOM_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -675,15 +675,15 @@ public interface UomPackage extends EPackage {
 	EAttribute getUom_NumericCode();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.uom.Uom#getUomTypeId <em>Uom Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.uom.Uom#getUomType <em>Uom Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Uom Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.uom.Uom#getUomTypeId()
+	 * @return the meta object for the reference '<em>Uom Type</em>'.
+	 * @see org.abchip.mimo.biz.model.common.uom.Uom#getUomType()
 	 * @see #getUom()
 	 * @generated
 	 */
-	EReference getUom_UomTypeId();
+	EReference getUom_UomType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.common.uom.UomConversion <em>Conversion</em>}'.
@@ -696,15 +696,15 @@ public interface UomPackage extends EPackage {
 	EClass getUomConversion();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.uom.UomConversion#getUomId <em>Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.uom.UomConversion#getUom <em>Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.uom.UomConversion#getUomId()
+	 * @return the meta object for the reference '<em>Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.common.uom.UomConversion#getUom()
 	 * @see #getUomConversion()
 	 * @generated
 	 */
-	EReference getUomConversion_UomId();
+	EReference getUomConversion_Uom();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.uom.UomConversion#getUomIdTo <em>Uom Id To</em>}'.
@@ -729,15 +729,15 @@ public interface UomPackage extends EPackage {
 	EAttribute getUomConversion_ConversionFactor();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.uom.UomConversion#getCustomMethodId <em>Custom Method Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.uom.UomConversion#getCustomMethod <em>Custom Method</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Custom Method Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.uom.UomConversion#getCustomMethodId()
+	 * @return the meta object for the reference '<em>Custom Method</em>'.
+	 * @see org.abchip.mimo.biz.model.common.uom.UomConversion#getCustomMethod()
 	 * @see #getUomConversion()
 	 * @generated
 	 */
-	EReference getUomConversion_CustomMethodId();
+	EReference getUomConversion_CustomMethod();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.uom.UomConversion#getDecimalScale <em>Decimal Scale</em>}'.
@@ -772,15 +772,15 @@ public interface UomPackage extends EPackage {
 	EClass getUomConversionDated();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getUomId <em>Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getUom <em>Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.uom.UomConversionDated#getUomId()
+	 * @return the meta object for the reference '<em>Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.common.uom.UomConversionDated#getUom()
 	 * @see #getUomConversionDated()
 	 * @generated
 	 */
-	EReference getUomConversionDated_UomId();
+	EReference getUomConversionDated_Uom();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getUomIdTo <em>Uom Id To</em>}'.
@@ -816,15 +816,15 @@ public interface UomPackage extends EPackage {
 	EAttribute getUomConversionDated_ConversionFactor();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getCustomMethodId <em>Custom Method Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getCustomMethod <em>Custom Method</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Custom Method Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.uom.UomConversionDated#getCustomMethodId()
+	 * @return the meta object for the reference '<em>Custom Method</em>'.
+	 * @see org.abchip.mimo.biz.model.common.uom.UomConversionDated#getCustomMethod()
 	 * @see #getUomConversionDated()
 	 * @generated
 	 */
-	EReference getUomConversionDated_CustomMethodId();
+	EReference getUomConversionDated_CustomMethod();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getDecimalScale <em>Decimal Scale</em>}'.
@@ -838,15 +838,15 @@ public interface UomPackage extends EPackage {
 	EAttribute getUomConversionDated_DecimalScale();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getPurposeEnumId <em>Purpose Enum Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getPurposeEnum <em>Purpose Enum</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Purpose Enum Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.uom.UomConversionDated#getPurposeEnumId()
+	 * @return the meta object for the reference '<em>Purpose Enum</em>'.
+	 * @see org.abchip.mimo.biz.model.common.uom.UomConversionDated#getPurposeEnum()
 	 * @see #getUomConversionDated()
 	 * @generated
 	 */
-	EReference getUomConversionDated_PurposeEnumId();
+	EReference getUomConversionDated_PurposeEnum();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.uom.UomConversionDated#getRoundingMode <em>Rounding Mode</em>}'.
@@ -881,6 +881,17 @@ public interface UomPackage extends EPackage {
 	EClass getUomGroup();
 
 	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.uom.UomGroup#getUom <em>Uom</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.common.uom.UomGroup#getUom()
+	 * @see #getUomGroup()
+	 * @generated
+	 */
+	EReference getUomGroup_Uom();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.uom.UomGroup#getUomGroupId <em>Uom Group Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -890,17 +901,6 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getUomGroup_UomGroupId();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.uom.UomGroup#getUomId <em>Uom Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.uom.UomGroup#getUomId()
-	 * @see #getUomGroup()
-	 * @generated
-	 */
-	EReference getUomGroup_UomId();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.common.uom.UomType <em>Type</em>}'.
@@ -946,15 +946,15 @@ public interface UomPackage extends EPackage {
 	EAttribute getUomType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.uom.UomType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.common.uom.UomType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.common.uom.UomType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.common.uom.UomType#getParentType()
 	 * @see #getUomType()
 	 * @generated
 	 */
-	EReference getUomType_ParentTypeId();
+	EReference getUomType_ParentType();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -1037,12 +1037,12 @@ public interface UomPackage extends EPackage {
 		EAttribute UOM__NUMERIC_CODE = eINSTANCE.getUom_NumericCode();
 
 		/**
-		 * The meta object literal for the '<em><b>Uom Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Uom Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference UOM__UOM_TYPE_ID = eINSTANCE.getUom_UomTypeId();
+		EReference UOM__UOM_TYPE = eINSTANCE.getUom_UomType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionImpl <em>Conversion</em>}' class.
@@ -1055,12 +1055,12 @@ public interface UomPackage extends EPackage {
 		EClass UOM_CONVERSION = eINSTANCE.getUomConversion();
 
 		/**
-		 * The meta object literal for the '<em><b>Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference UOM_CONVERSION__UOM_ID = eINSTANCE.getUomConversion_UomId();
+		EReference UOM_CONVERSION__UOM = eINSTANCE.getUomConversion_Uom();
 
 		/**
 		 * The meta object literal for the '<em><b>Uom Id To</b></em>' reference feature.
@@ -1079,12 +1079,12 @@ public interface UomPackage extends EPackage {
 		EAttribute UOM_CONVERSION__CONVERSION_FACTOR = eINSTANCE.getUomConversion_ConversionFactor();
 
 		/**
-		 * The meta object literal for the '<em><b>Custom Method Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Custom Method</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference UOM_CONVERSION__CUSTOM_METHOD_ID = eINSTANCE.getUomConversion_CustomMethodId();
+		EReference UOM_CONVERSION__CUSTOM_METHOD = eINSTANCE.getUomConversion_CustomMethod();
 
 		/**
 		 * The meta object literal for the '<em><b>Decimal Scale</b></em>' attribute feature.
@@ -1113,12 +1113,12 @@ public interface UomPackage extends EPackage {
 		EClass UOM_CONVERSION_DATED = eINSTANCE.getUomConversionDated();
 
 		/**
-		 * The meta object literal for the '<em><b>Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference UOM_CONVERSION_DATED__UOM_ID = eINSTANCE.getUomConversionDated_UomId();
+		EReference UOM_CONVERSION_DATED__UOM = eINSTANCE.getUomConversionDated_Uom();
 
 		/**
 		 * The meta object literal for the '<em><b>Uom Id To</b></em>' reference feature.
@@ -1145,12 +1145,12 @@ public interface UomPackage extends EPackage {
 		EAttribute UOM_CONVERSION_DATED__CONVERSION_FACTOR = eINSTANCE.getUomConversionDated_ConversionFactor();
 
 		/**
-		 * The meta object literal for the '<em><b>Custom Method Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Custom Method</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference UOM_CONVERSION_DATED__CUSTOM_METHOD_ID = eINSTANCE.getUomConversionDated_CustomMethodId();
+		EReference UOM_CONVERSION_DATED__CUSTOM_METHOD = eINSTANCE.getUomConversionDated_CustomMethod();
 
 		/**
 		 * The meta object literal for the '<em><b>Decimal Scale</b></em>' attribute feature.
@@ -1161,12 +1161,12 @@ public interface UomPackage extends EPackage {
 		EAttribute UOM_CONVERSION_DATED__DECIMAL_SCALE = eINSTANCE.getUomConversionDated_DecimalScale();
 
 		/**
-		 * The meta object literal for the '<em><b>Purpose Enum Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Purpose Enum</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference UOM_CONVERSION_DATED__PURPOSE_ENUM_ID = eINSTANCE.getUomConversionDated_PurposeEnumId();
+		EReference UOM_CONVERSION_DATED__PURPOSE_ENUM = eINSTANCE.getUomConversionDated_PurposeEnum();
 
 		/**
 		 * The meta object literal for the '<em><b>Rounding Mode</b></em>' attribute feature.
@@ -1195,20 +1195,20 @@ public interface UomPackage extends EPackage {
 		EClass UOM_GROUP = eINSTANCE.getUomGroup();
 
 		/**
+		 * The meta object literal for the '<em><b>Uom</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference UOM_GROUP__UOM = eINSTANCE.getUomGroup_Uom();
+
+		/**
 		 * The meta object literal for the '<em><b>Uom Group Id</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute UOM_GROUP__UOM_GROUP_ID = eINSTANCE.getUomGroup_UomGroupId();
-
-		/**
-		 * The meta object literal for the '<em><b>Uom Id</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference UOM_GROUP__UOM_ID = eINSTANCE.getUomGroup_UomId();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.common.uom.impl.UomTypeImpl <em>Type</em>}' class.
@@ -1245,12 +1245,12 @@ public interface UomPackage extends EPackage {
 		EAttribute UOM_TYPE__HAS_TABLE = eINSTANCE.getUomType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference UOM_TYPE__PARENT_TYPE_ID = eINSTANCE.getUomType_ParentTypeId();
+		EReference UOM_TYPE__PARENT_TYPE = eINSTANCE.getUomType_ParentType();
 
 	}
 

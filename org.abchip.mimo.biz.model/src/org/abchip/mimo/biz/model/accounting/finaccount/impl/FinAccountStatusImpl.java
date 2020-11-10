@@ -30,10 +30,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountStatusImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountStatusImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountStatusImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountStatusImpl#getFinAccountId <em>Fin Account Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountStatusImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountStatusImpl#getFinAccount <em>Fin Account</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountStatusImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountStatusImpl#getStatusDate <em>Status Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountStatusImpl#getChangeByUserLoginId <em>Change By User Login Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountStatusImpl#getChangeByUserLogin <em>Change By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountStatusImpl#getStatusEndDate <em>Status End Date</em>}</li>
  * </ul>
  *
@@ -155,8 +155,8 @@ public class FinAccountStatusImpl extends EntityIdentifiableImpl implements FinA
 	 * @generated
 	 */
 	@Override
-	public UserLogin getChangeByUserLoginId() {
-		return (UserLogin)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_STATUS__CHANGE_BY_USER_LOGIN_ID, true);
+	public FinAccount getFinAccount() {
+		return (FinAccount)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_STATUS__FIN_ACCOUNT, true);
 	}
 
 	/**
@@ -165,8 +165,28 @@ public class FinAccountStatusImpl extends EntityIdentifiableImpl implements FinA
 	 * @generated
 	 */
 	@Override
-	public void setChangeByUserLoginId(UserLogin newChangeByUserLoginId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_STATUS__CHANGE_BY_USER_LOGIN_ID, newChangeByUserLoginId);
+	public void setFinAccount(FinAccount newFinAccount) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_STATUS__FIN_ACCOUNT, newFinAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public StatusItem getStatus() {
+		return (StatusItem)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_STATUS__STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(StatusItem newStatus) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_STATUS__STATUS, newStatus);
 	}
 
 	/**
@@ -187,6 +207,26 @@ public class FinAccountStatusImpl extends EntityIdentifiableImpl implements FinA
 	@Override
 	public void setStatusDate(Date newStatusDate) {
 		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_STATUS__STATUS_DATE, newStatusDate);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UserLogin getChangeByUserLogin() {
+		return (UserLogin)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_STATUS__CHANGE_BY_USER_LOGIN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setChangeByUserLogin(UserLogin newChangeByUserLogin) {
+		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_STATUS__CHANGE_BY_USER_LOGIN, newChangeByUserLogin);
 	}
 
 	/**
@@ -245,46 +285,6 @@ public class FinAccountStatusImpl extends EntityIdentifiableImpl implements FinA
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public StatusItem getStatusId() {
-		return (StatusItem)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_STATUS__STATUS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setStatusId(StatusItem newStatusId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_STATUS__STATUS_ID, newStatusId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FinAccount getFinAccountId() {
-		return (FinAccount)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_STATUS__FIN_ACCOUNT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFinAccountId(FinAccount newFinAccountId) {
-		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_STATUS__FIN_ACCOUNT_ID, newFinAccountId);
 	}
 
 } //FinAccountStatusImpl

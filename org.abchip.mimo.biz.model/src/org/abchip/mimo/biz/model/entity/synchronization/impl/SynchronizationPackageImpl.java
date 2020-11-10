@@ -886,7 +886,7 @@ public class SynchronizationPackageImpl extends EPackageImpl implements Synchron
 	 * @generated
 	 */
 	@Override
-	public EReference getEntitySyncHistory_EntitySyncId() {
+	public EReference getEntitySyncHistory_EntitySync() {
 		return (EReference)entitySyncHistoryEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1156,7 +1156,7 @@ public class SynchronizationPackageImpl extends EPackageImpl implements Synchron
 	 * @generated
 	 */
 	@Override
-	public EReference getEntitySyncInclude_EntitySyncId() {
+	public EReference getEntitySyncInclude_EntitySync() {
 		return (EReference)entitySyncIncludeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1196,8 +1196,8 @@ public class SynchronizationPackageImpl extends EPackageImpl implements Synchron
 	 * @generated
 	 */
 	@Override
-	public EReference getEntitySyncIncludeGroup_EntitySyncId() {
-		return (EReference)entitySyncIncludeGroupEClass.getEStructuralFeatures().get(1);
+	public EReference getEntitySyncIncludeGroup_EntityGroup() {
+		return (EReference)entitySyncIncludeGroupEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1206,8 +1206,8 @@ public class SynchronizationPackageImpl extends EPackageImpl implements Synchron
 	 * @generated
 	 */
 	@Override
-	public EReference getEntitySyncIncludeGroup_EntityGroupId() {
-		return (EReference)entitySyncIncludeGroupEClass.getEStructuralFeatures().get(0);
+	public EReference getEntitySyncIncludeGroup_EntitySync() {
+		return (EReference)entitySyncIncludeGroupEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1289,7 +1289,7 @@ public class SynchronizationPackageImpl extends EPackageImpl implements Synchron
 		createEAttribute(entitySyncEClass, ENTITY_SYNC__TARGET_SERVICE_NAME);
 
 		entitySyncHistoryEClass = createEClass(ENTITY_SYNC_HISTORY);
-		createEReference(entitySyncHistoryEClass, ENTITY_SYNC_HISTORY__ENTITY_SYNC_ID);
+		createEReference(entitySyncHistoryEClass, ENTITY_SYNC_HISTORY__ENTITY_SYNC);
 		createEAttribute(entitySyncHistoryEClass, ENTITY_SYNC_HISTORY__START_DATE);
 		createEAttribute(entitySyncHistoryEClass, ENTITY_SYNC_HISTORY__BEGINNING_SYNCH_TIME);
 		createEAttribute(entitySyncHistoryEClass, ENTITY_SYNC_HISTORY__LAST_CANDIDATE_END_TIME);
@@ -1317,13 +1317,13 @@ public class SynchronizationPackageImpl extends EPackageImpl implements Synchron
 		createEAttribute(entitySyncHistoryEClass, ENTITY_SYNC_HISTORY__TOTAL_STORE_CALLS);
 
 		entitySyncIncludeEClass = createEClass(ENTITY_SYNC_INCLUDE);
-		createEReference(entitySyncIncludeEClass, ENTITY_SYNC_INCLUDE__ENTITY_SYNC_ID);
+		createEReference(entitySyncIncludeEClass, ENTITY_SYNC_INCLUDE__ENTITY_SYNC);
 		createEAttribute(entitySyncIncludeEClass, ENTITY_SYNC_INCLUDE__ENTITY_OR_PACKAGE);
 		createEAttribute(entitySyncIncludeEClass, ENTITY_SYNC_INCLUDE__APPL_ENUM_ID);
 
 		entitySyncIncludeGroupEClass = createEClass(ENTITY_SYNC_INCLUDE_GROUP);
-		createEReference(entitySyncIncludeGroupEClass, ENTITY_SYNC_INCLUDE_GROUP__ENTITY_GROUP_ID);
-		createEReference(entitySyncIncludeGroupEClass, ENTITY_SYNC_INCLUDE_GROUP__ENTITY_SYNC_ID);
+		createEReference(entitySyncIncludeGroupEClass, ENTITY_SYNC_INCLUDE_GROUP__ENTITY_GROUP);
+		createEReference(entitySyncIncludeGroupEClass, ENTITY_SYNC_INCLUDE_GROUP__ENTITY_SYNC);
 
 		entitySyncRemoveEClass = createEClass(ENTITY_SYNC_REMOVE);
 		createEAttribute(entitySyncRemoveEClass, ENTITY_SYNC_REMOVE__ENTITY_SYNC_REMOVE_ID);
@@ -1394,8 +1394,8 @@ public class SynchronizationPackageImpl extends EPackageImpl implements Synchron
 		initEAttribute(getEntitySync_TargetServiceName(), ecorePackage.getEString(), "targetServiceName", null, 0, 1, EntitySync.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(entitySyncHistoryEClass, EntitySyncHistory.class, "EntitySyncHistory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getEntitySyncHistory_EntitySyncId(), this.getEntitySync(), null, "entitySyncId", null, 1, 1, EntitySyncHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEntitySyncHistory_EntitySyncId().getEKeys().add(this.getEntitySync_EntitySyncId());
+		initEReference(getEntitySyncHistory_EntitySync(), this.getEntitySync(), null, "entitySync", null, 1, 1, EntitySyncHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getEntitySyncHistory_EntitySync().getEKeys().add(this.getEntitySync_EntitySyncId());
 		initEAttribute(getEntitySyncHistory_StartDate(), ecorePackage.getEDate(), "startDate", null, 1, 1, EntitySyncHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEntitySyncHistory_BeginningSynchTime(), ecorePackage.getEDate(), "beginningSynchTime", null, 0, 1, EntitySyncHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEntitySyncHistory_LastCandidateEndTime(), ecorePackage.getEDate(), "lastCandidateEndTime", null, 0, 1, EntitySyncHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1423,16 +1423,16 @@ public class SynchronizationPackageImpl extends EPackageImpl implements Synchron
 		initEAttribute(getEntitySyncHistory_TotalStoreCalls(), ecorePackage.getELong(), "totalStoreCalls", null, 0, 1, EntitySyncHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(entitySyncIncludeEClass, EntitySyncInclude.class, "EntitySyncInclude", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getEntitySyncInclude_EntitySyncId(), this.getEntitySync(), null, "entitySyncId", null, 1, 1, EntitySyncInclude.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEntitySyncInclude_EntitySyncId().getEKeys().add(this.getEntitySync_EntitySyncId());
+		initEReference(getEntitySyncInclude_EntitySync(), this.getEntitySync(), null, "entitySync", null, 1, 1, EntitySyncInclude.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getEntitySyncInclude_EntitySync().getEKeys().add(this.getEntitySync_EntitySyncId());
 		initEAttribute(getEntitySyncInclude_EntityOrPackage(), ecorePackage.getEString(), "entityOrPackage", null, 1, 1, EntitySyncInclude.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEntitySyncInclude_ApplEnumId(), ecorePackage.getEString(), "applEnumId", null, 0, 1, EntitySyncInclude.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(entitySyncIncludeGroupEClass, EntitySyncIncludeGroup.class, "EntitySyncIncludeGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getEntitySyncIncludeGroup_EntityGroupId(), theGroupPackage.getEntityGroup(), null, "entityGroupId", null, 1, 1, EntitySyncIncludeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEntitySyncIncludeGroup_EntityGroupId().getEKeys().add(theGroupPackage.getEntityGroup_EntityGroupId());
-		initEReference(getEntitySyncIncludeGroup_EntitySyncId(), this.getEntitySync(), null, "entitySyncId", null, 1, 1, EntitySyncIncludeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEntitySyncIncludeGroup_EntitySyncId().getEKeys().add(this.getEntitySync_EntitySyncId());
+		initEReference(getEntitySyncIncludeGroup_EntityGroup(), theGroupPackage.getEntityGroup(), null, "entityGroup", null, 1, 1, EntitySyncIncludeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getEntitySyncIncludeGroup_EntityGroup().getEKeys().add(theGroupPackage.getEntityGroup_EntityGroupId());
+		initEReference(getEntitySyncIncludeGroup_EntitySync(), this.getEntitySync(), null, "entitySync", null, 1, 1, EntitySyncIncludeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getEntitySyncIncludeGroup_EntitySync().getEKeys().add(this.getEntitySync_EntitySyncId());
 
 		initEClass(entitySyncRemoveEClass, EntitySyncRemove.class, "EntitySyncRemove", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getEntitySyncRemove_EntitySyncRemoveId(), ecorePackage.getEString(), "entitySyncRemoveId", null, 1, 1, EntitySyncRemove.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1722,7 +1722,7 @@ public class SynchronizationPackageImpl extends EPackageImpl implements Synchron
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
 		addAnnotation
-		  (getEntitySyncHistory_EntitySyncId(),
+		  (getEntitySyncHistory_EntitySync(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -1734,7 +1734,7 @@ public class SynchronizationPackageImpl extends EPackageImpl implements Synchron
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getEntitySyncInclude_EntitySyncId(),
+		  (getEntitySyncInclude_EntitySync(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -1746,13 +1746,13 @@ public class SynchronizationPackageImpl extends EPackageImpl implements Synchron
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getEntitySyncIncludeGroup_EntityGroupId(),
+		  (getEntitySyncIncludeGroup_EntityGroup(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getEntitySyncIncludeGroup_EntitySyncId(),
+		  (getEntitySyncIncludeGroup_EntitySync(),
 		   source,
 		   new String[] {
 			   "key", "true"

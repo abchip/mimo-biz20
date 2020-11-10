@@ -37,13 +37,13 @@ public class StressTestUtils {
 
 		try (EntityIterator<Party> parties = partyReader.find()) {
 			for (Party party : parties) {
-				if (!party.getStatusId().getID().equals("PARTY_ENABLED"))
+				if (!party.getStatus().getID().equals("PARTY_ENABLED"))
 					continue;
 				int count = 0;
 				if (party.getPartyRoles() == null)
 					continue;
 				for (PartyRole partyRole : party.getPartyRoles()) {
-					if (!partyRole.getRoleTypeId().getID().equals("CUSTOMER"))
+					if (!partyRole.getRoleType().getID().equals("CUSTOMER"))
 						continue;
 					count++;
 				}
@@ -62,13 +62,13 @@ public class StressTestUtils {
 
 		try (EntityIterator<Party> parties = partyReader.find()) {
 			for (Party party : parties) {
-				if (!party.getStatusId().getID().equals("PARTY_ENABLED"))
+				if (!party.getStatus().getID().equals("PARTY_ENABLED"))
 					continue;
 				int count = 0;
 				if (party.getPartyRoles() == null)
 					continue;
 				for (PartyRole partyRole : party.getPartyRoles()) {
-					if (!partyRole.getRoleTypeId().getID().equals("SUPPLIER"))
+					if (!partyRole.getRoleType().getID().equals("SUPPLIER"))
 						continue;
 					count++;
 				}
@@ -87,7 +87,7 @@ public class StressTestUtils {
 
 		try (EntityIterator<Product> products = productReader.find()) {
 			for (Product product : products) {
-				if (!product.getProductTypeId().getID().equals("DIGITAL_GOOD"))
+				if (!product.getProductType().getID().equals("DIGITAL_GOOD"))
 					continue;
 				productList.add(product);
 			}
@@ -100,7 +100,7 @@ public class StressTestUtils {
 
 		ResourceReader<SupplierProduct> supplierProductReader = context.getResourceManager().getResourceReader(SupplierProduct.class);
 		List<SupplierProduct> supplierProduct = new ArrayList<SupplierProduct>();
-		String filter = "partyId = \"" + party.getID() + "\"";
+		String filter = "partyId = '" + party.getID() + "'";
 
 		try (EntityIterator<SupplierProduct> supplierProducts = supplierProductReader.find(filter)) {
 			for (SupplierProduct product : supplierProducts) {

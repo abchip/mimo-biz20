@@ -31,9 +31,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.AccommodationMapImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.AccommodationMapImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.AccommodationMapImpl#getAccommodationMapId <em>Accommodation Map Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.AccommodationMapImpl#getAccommodationClassId <em>Accommodation Class Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.AccommodationMapImpl#getAccommodationMapTypeId <em>Accommodation Map Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.AccommodationMapImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.AccommodationMapImpl#getAccommodationClass <em>Accommodation Class</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.AccommodationMapImpl#getAccommodationMapType <em>Accommodation Map Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.AccommodationMapImpl#getFixedAsset <em>Fixed Asset</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.AccommodationMapImpl#getNumberOfSpaces <em>Number Of Spaces</em>}</li>
  * </ul>
  *
@@ -175,6 +175,66 @@ public class AccommodationMapImpl extends EntityTypedImpl<AccommodationMapType> 
 	 * @generated
 	 */
 	@Override
+	public AccommodationClass getAccommodationClass() {
+		return (AccommodationClass)eGet(FixedassetPackage.Literals.ACCOMMODATION_MAP__ACCOMMODATION_CLASS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAccommodationClass(AccommodationClass newAccommodationClass) {
+		eSet(FixedassetPackage.Literals.ACCOMMODATION_MAP__ACCOMMODATION_CLASS, newAccommodationClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AccommodationMapType getAccommodationMapType() {
+		return (AccommodationMapType)eGet(FixedassetPackage.Literals.ACCOMMODATION_MAP__ACCOMMODATION_MAP_TYPE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAccommodationMapType(AccommodationMapType newAccommodationMapType) {
+		eSet(FixedassetPackage.Literals.ACCOMMODATION_MAP__ACCOMMODATION_MAP_TYPE, newAccommodationMapType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FixedAsset getFixedAsset() {
+		return (FixedAsset)eGet(FixedassetPackage.Literals.ACCOMMODATION_MAP__FIXED_ASSET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFixedAsset(FixedAsset newFixedAsset) {
+		eSet(FixedassetPackage.Literals.ACCOMMODATION_MAP__FIXED_ASSET, newFixedAsset);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public long getNumberOfSpaces() {
 		return (Long)eGet(FixedassetPackage.Literals.ACCOMMODATION_MAP__NUMBER_OF_SPACES, true);
 	}
@@ -225,66 +285,6 @@ public class AccommodationMapImpl extends EntityTypedImpl<AccommodationMapType> 
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public AccommodationClass getAccommodationClassId() {
-		return (AccommodationClass)eGet(FixedassetPackage.Literals.ACCOMMODATION_MAP__ACCOMMODATION_CLASS_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAccommodationClassId(AccommodationClass newAccommodationClassId) {
-		eSet(FixedassetPackage.Literals.ACCOMMODATION_MAP__ACCOMMODATION_CLASS_ID, newAccommodationClassId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public FixedAsset getFixedAssetId() {
-		return (FixedAsset)eGet(FixedassetPackage.Literals.ACCOMMODATION_MAP__FIXED_ASSET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setFixedAssetId(FixedAsset newFixedAssetId) {
-		eSet(FixedassetPackage.Literals.ACCOMMODATION_MAP__FIXED_ASSET_ID, newFixedAssetId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public AccommodationMapType getAccommodationMapTypeId() {
-		return (AccommodationMapType)eGet(FixedassetPackage.Literals.ACCOMMODATION_MAP__ACCOMMODATION_MAP_TYPE_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAccommodationMapTypeId(AccommodationMapType newAccommodationMapTypeId) {
-		eSet(FixedassetPackage.Literals.ACCOMMODATION_MAP__ACCOMMODATION_MAP_TYPE_ID, newAccommodationMapTypeId);
 	}
 
 } //AccommodationMapImpl

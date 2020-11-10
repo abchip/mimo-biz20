@@ -31,10 +31,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioApplicationImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioApplicationImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioApplicationImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioApplicationImpl#getBudgetScenarioId <em>Budget Scenario Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioApplicationImpl#getBudgetScenario <em>Budget Scenario</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioApplicationImpl#getBudgetScenarioApplicId <em>Budget Scenario Applic Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioApplicationImpl#getAmountChange <em>Amount Change</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioApplicationImpl#getBudgetId <em>Budget Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioApplicationImpl#getBudget <em>Budget</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioApplicationImpl#getBudgetItemSeqId <em>Budget Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioApplicationImpl#getPercentageChange <em>Percentage Change</em>}</li>
  * </ul>
@@ -157,6 +157,26 @@ public class BudgetScenarioApplicationImpl extends EntityIdentifiableImpl implem
 	 * @generated
 	 */
 	@Override
+	public BudgetScenario getBudgetScenario() {
+		return (BudgetScenario)eGet(BudgetPackage.Literals.BUDGET_SCENARIO_APPLICATION__BUDGET_SCENARIO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBudgetScenario(BudgetScenario newBudgetScenario) {
+		eSet(BudgetPackage.Literals.BUDGET_SCENARIO_APPLICATION__BUDGET_SCENARIO, newBudgetScenario);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public BigDecimal getAmountChange() {
 		return (BigDecimal)eGet(BudgetPackage.Literals.BUDGET_SCENARIO_APPLICATION__AMOUNT_CHANGE, true);
 	}
@@ -169,6 +189,26 @@ public class BudgetScenarioApplicationImpl extends EntityIdentifiableImpl implem
 	@Override
 	public void setAmountChange(BigDecimal newAmountChange) {
 		eSet(BudgetPackage.Literals.BUDGET_SCENARIO_APPLICATION__AMOUNT_CHANGE, newAmountChange);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Budget getBudget() {
+		return (Budget)eGet(BudgetPackage.Literals.BUDGET_SCENARIO_APPLICATION__BUDGET, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBudget(Budget newBudget) {
+		eSet(BudgetPackage.Literals.BUDGET_SCENARIO_APPLICATION__BUDGET, newBudget);
 	}
 
 	/**
@@ -267,46 +307,6 @@ public class BudgetScenarioApplicationImpl extends EntityIdentifiableImpl implem
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public BudgetScenario getBudgetScenarioId() {
-		return (BudgetScenario)eGet(BudgetPackage.Literals.BUDGET_SCENARIO_APPLICATION__BUDGET_SCENARIO_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBudgetScenarioId(BudgetScenario newBudgetScenarioId) {
-		eSet(BudgetPackage.Literals.BUDGET_SCENARIO_APPLICATION__BUDGET_SCENARIO_ID, newBudgetScenarioId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Budget getBudgetId() {
-		return (Budget)eGet(BudgetPackage.Literals.BUDGET_SCENARIO_APPLICATION__BUDGET_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setBudgetId(Budget newBudgetId) {
-		eSet(BudgetPackage.Literals.BUDGET_SCENARIO_APPLICATION__BUDGET_ID, newBudgetId);
 	}
 
 } //BudgetScenarioApplicationImpl

@@ -180,31 +180,31 @@ public interface FeaturePackage extends EPackage {
 	int PRODUCT_FEATURE__NUMBER_SPECIFIED = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
-	 * The feature id for the '<em><b>Product Feature Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Feature Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE__PRODUCT_FEATURE_CATEGORY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
+	int PRODUCT_FEATURE__PRODUCT_FEATURE_CATEGORY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
-	 * The feature id for the '<em><b>Product Feature Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Feature Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE__PRODUCT_FEATURE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
+	int PRODUCT_FEATURE__PRODUCT_FEATURE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
-	 * The feature id for the '<em><b>Uom Id</b></em>' reference.
+	 * The feature id for the '<em><b>Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE__UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
+	int PRODUCT_FEATURE__UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The number of structural features of the '<em>Product Feature</em>' class.
@@ -262,22 +262,22 @@ public interface FeaturePackage extends EPackage {
 	int PRODUCT_FEATURE_APPL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_APPL__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int PRODUCT_FEATURE_APPL__PRODUCT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Product Feature Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Feature</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_APPL__PRODUCT_FEATURE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int PRODUCT_FEATURE_APPL__PRODUCT_FEATURE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -298,13 +298,13 @@ public interface FeaturePackage extends EPackage {
 	int PRODUCT_FEATURE_APPL__AMOUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Product Feature Appl Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Feature Appl Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_APPL__PRODUCT_FEATURE_APPL_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int PRODUCT_FEATURE_APPL__PRODUCT_FEATURE_APPL_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Recurring Amount</b></em>' attribute.
@@ -389,22 +389,22 @@ public interface FeaturePackage extends EPackage {
 	int PRODUCT_FEATURE_APPL_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_APPL_ATTR__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PRODUCT_FEATURE_APPL_ATTR__PRODUCT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Product Feature Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Feature</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_APPL_ATTR__PRODUCT_FEATURE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PRODUCT_FEATURE_APPL_ATTR__PRODUCT_FEATURE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -525,13 +525,13 @@ public interface FeaturePackage extends EPackage {
 	int PRODUCT_FEATURE_APPL_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_APPL_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int PRODUCT_FEATURE_APPL_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Product Feature Appl Type</em>' class.
@@ -589,22 +589,22 @@ public interface FeaturePackage extends EPackage {
 	int PRODUCT_FEATURE_CAT_GRP_APPL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_CAT_GRP_APPL__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PRODUCT_FEATURE_CAT_GRP_APPL__PRODUCT_CATEGORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Product Feature Group Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Feature Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_CAT_GRP_APPL__PRODUCT_FEATURE_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PRODUCT_FEATURE_CAT_GRP_APPL__PRODUCT_FEATURE_GROUP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -698,13 +698,13 @@ public interface FeaturePackage extends EPackage {
 	int PRODUCT_FEATURE_CATEGORY__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Parent Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_CATEGORY__PARENT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int PRODUCT_FEATURE_CATEGORY__PARENT_CATEGORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Product Feature Category</em>' class.
@@ -762,22 +762,22 @@ public interface FeaturePackage extends EPackage {
 	int PRODUCT_FEATURE_CATEGORY_APPL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_CATEGORY_APPL__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PRODUCT_FEATURE_CATEGORY_APPL__PRODUCT_CATEGORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Product Feature Category Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Feature Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_CATEGORY_APPL__PRODUCT_FEATURE_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PRODUCT_FEATURE_CATEGORY_APPL__PRODUCT_FEATURE_CATEGORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -853,22 +853,22 @@ public interface FeaturePackage extends EPackage {
 	int PRODUCT_FEATURE_DATA_RESOURCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Data Resource Id</b></em>' reference.
+	 * The feature id for the '<em><b>Data Resource</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_DATA_RESOURCE__DATA_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PRODUCT_FEATURE_DATA_RESOURCE__DATA_RESOURCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Product Feature Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Feature</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_DATA_RESOURCE__PRODUCT_FEATURE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PRODUCT_FEATURE_DATA_RESOURCE__PRODUCT_FEATURE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Product Feature Data Resource</em>' class.
@@ -1008,22 +1008,22 @@ public interface FeaturePackage extends EPackage {
 	int PRODUCT_FEATURE_GROUP_APPL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Feature Group Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Feature Group</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_GROUP_APPL__PRODUCT_FEATURE_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PRODUCT_FEATURE_GROUP_APPL__PRODUCT_FEATURE_GROUP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Product Feature Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Feature</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_GROUP_APPL__PRODUCT_FEATURE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PRODUCT_FEATURE_GROUP_APPL__PRODUCT_FEATURE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1108,13 +1108,13 @@ public interface FeaturePackage extends EPackage {
 	int PRODUCT_FEATURE_IACTN__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Product Feature Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Feature</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Product Feature Id To</b></em>' reference.
@@ -1126,13 +1126,13 @@ public interface FeaturePackage extends EPackage {
 	int PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE_ID_TO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
-	 * The feature id for the '<em><b>Product Feature Iactn Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Product Feature Iactn Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE_IACTN_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE_IACTN_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' attribute.
@@ -1235,13 +1235,13 @@ public interface FeaturePackage extends EPackage {
 	int PRODUCT_FEATURE_IACTN_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_IACTN_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int PRODUCT_FEATURE_IACTN_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Product Feature Iactn Type</em>' class.
@@ -1335,13 +1335,13 @@ public interface FeaturePackage extends EPackage {
 	int PRODUCT_FEATURE_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
-	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
+	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int PRODUCT_FEATURE_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Product Feature Type</em>' class.
@@ -1452,37 +1452,37 @@ public interface FeaturePackage extends EPackage {
 	EAttribute getProductFeature_NumberSpecified();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getProductFeatureCategoryId <em>Product Feature Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getProductFeatureCategory <em>Product Feature Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Feature Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeature#getProductFeatureCategoryId()
+	 * @return the meta object for the reference '<em>Product Feature Category</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeature#getProductFeatureCategory()
 	 * @see #getProductFeature()
 	 * @generated
 	 */
-	EReference getProductFeature_ProductFeatureCategoryId();
+	EReference getProductFeature_ProductFeatureCategory();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getProductFeatureTypeId <em>Product Feature Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getProductFeatureType <em>Product Feature Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Feature Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeature#getProductFeatureTypeId()
+	 * @return the meta object for the reference '<em>Product Feature Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeature#getProductFeatureType()
 	 * @see #getProductFeature()
 	 * @generated
 	 */
-	EReference getProductFeature_ProductFeatureTypeId();
+	EReference getProductFeature_ProductFeatureType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getUomId <em>Uom Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeature#getUom <em>Uom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeature#getUomId()
+	 * @return the meta object for the reference '<em>Uom</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeature#getUom()
 	 * @see #getProductFeature()
 	 * @generated
 	 */
-	EReference getProductFeature_UomId();
+	EReference getProductFeature_Uom();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureAppl <em>Product Feature Appl</em>}'.
@@ -1495,26 +1495,26 @@ public interface FeaturePackage extends EPackage {
 	EClass getProductFeatureAppl();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureAppl#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureAppl#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureAppl#getProductId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureAppl#getProduct()
 	 * @see #getProductFeatureAppl()
 	 * @generated
 	 */
-	EReference getProductFeatureAppl_ProductId();
+	EReference getProductFeatureAppl_Product();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureAppl#getProductFeatureId <em>Product Feature Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureAppl#getProductFeature <em>Product Feature</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Feature Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureAppl#getProductFeatureId()
+	 * @return the meta object for the reference '<em>Product Feature</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureAppl#getProductFeature()
 	 * @see #getProductFeatureAppl()
 	 * @generated
 	 */
-	EReference getProductFeatureAppl_ProductFeatureId();
+	EReference getProductFeatureAppl_ProductFeature();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureAppl#getFromDate <em>From Date</em>}'.
@@ -1539,15 +1539,15 @@ public interface FeaturePackage extends EPackage {
 	EAttribute getProductFeatureAppl_Amount();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureAppl#getProductFeatureApplTypeId <em>Product Feature Appl Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureAppl#getProductFeatureApplType <em>Product Feature Appl Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Feature Appl Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureAppl#getProductFeatureApplTypeId()
+	 * @return the meta object for the reference '<em>Product Feature Appl Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureAppl#getProductFeatureApplType()
 	 * @see #getProductFeatureAppl()
 	 * @generated
 	 */
-	EReference getProductFeatureAppl_ProductFeatureApplTypeId();
+	EReference getProductFeatureAppl_ProductFeatureApplType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureAppl#getRecurringAmount <em>Recurring Amount</em>}'.
@@ -1593,26 +1593,26 @@ public interface FeaturePackage extends EPackage {
 	EClass getProductFeatureApplAttr();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureApplAttr#getProductId <em>Product Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureApplAttr#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureApplAttr#getProductId()
+	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureApplAttr#getProduct()
 	 * @see #getProductFeatureApplAttr()
 	 * @generated
 	 */
-	EReference getProductFeatureApplAttr_ProductId();
+	EReference getProductFeatureApplAttr_Product();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureApplAttr#getProductFeatureId <em>Product Feature Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureApplAttr#getProductFeature <em>Product Feature</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Feature Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureApplAttr#getProductFeatureId()
+	 * @return the meta object for the reference '<em>Product Feature</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureApplAttr#getProductFeature()
 	 * @see #getProductFeatureApplAttr()
 	 * @generated
 	 */
-	EReference getProductFeatureApplAttr_ProductFeatureId();
+	EReference getProductFeatureApplAttr_ProductFeature();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureApplAttr#getFromDate <em>From Date</em>}'.
@@ -1691,15 +1691,15 @@ public interface FeaturePackage extends EPackage {
 	EAttribute getProductFeatureApplType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureApplType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureApplType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureApplType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureApplType#getParentType()
 	 * @see #getProductFeatureApplType()
 	 * @generated
 	 */
-	EReference getProductFeatureApplType_ParentTypeId();
+	EReference getProductFeatureApplType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCatGrpAppl <em>Product Feature Cat Grp Appl</em>}'.
@@ -1712,26 +1712,26 @@ public interface FeaturePackage extends EPackage {
 	EClass getProductFeatureCatGrpAppl();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCatGrpAppl#getProductCategoryId <em>Product Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCatGrpAppl#getProductCategory <em>Product Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureCatGrpAppl#getProductCategoryId()
+	 * @return the meta object for the reference '<em>Product Category</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureCatGrpAppl#getProductCategory()
 	 * @see #getProductFeatureCatGrpAppl()
 	 * @generated
 	 */
-	EReference getProductFeatureCatGrpAppl_ProductCategoryId();
+	EReference getProductFeatureCatGrpAppl_ProductCategory();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCatGrpAppl#getProductFeatureGroupId <em>Product Feature Group Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCatGrpAppl#getProductFeatureGroup <em>Product Feature Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Feature Group Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureCatGrpAppl#getProductFeatureGroupId()
+	 * @return the meta object for the reference '<em>Product Feature Group</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureCatGrpAppl#getProductFeatureGroup()
 	 * @see #getProductFeatureCatGrpAppl()
 	 * @generated
 	 */
-	EReference getProductFeatureCatGrpAppl_ProductFeatureGroupId();
+	EReference getProductFeatureCatGrpAppl_ProductFeatureGroup();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCatGrpAppl#getFromDate <em>From Date</em>}'.
@@ -1788,15 +1788,15 @@ public interface FeaturePackage extends EPackage {
 	EAttribute getProductFeatureCategory_Description();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCategory#getParentCategoryId <em>Parent Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCategory#getParentCategory <em>Parent Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureCategory#getParentCategoryId()
+	 * @return the meta object for the reference '<em>Parent Category</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureCategory#getParentCategory()
 	 * @see #getProductFeatureCategory()
 	 * @generated
 	 */
-	EReference getProductFeatureCategory_ParentCategoryId();
+	EReference getProductFeatureCategory_ParentCategory();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCategoryAppl <em>Product Feature Category Appl</em>}'.
@@ -1809,26 +1809,26 @@ public interface FeaturePackage extends EPackage {
 	EClass getProductFeatureCategoryAppl();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCategoryAppl#getProductCategoryId <em>Product Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCategoryAppl#getProductCategory <em>Product Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureCategoryAppl#getProductCategoryId()
+	 * @return the meta object for the reference '<em>Product Category</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureCategoryAppl#getProductCategory()
 	 * @see #getProductFeatureCategoryAppl()
 	 * @generated
 	 */
-	EReference getProductFeatureCategoryAppl_ProductCategoryId();
+	EReference getProductFeatureCategoryAppl_ProductCategory();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCategoryAppl#getProductFeatureCategoryId <em>Product Feature Category Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCategoryAppl#getProductFeatureCategory <em>Product Feature Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Feature Category Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureCategoryAppl#getProductFeatureCategoryId()
+	 * @return the meta object for the reference '<em>Product Feature Category</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureCategoryAppl#getProductFeatureCategory()
 	 * @see #getProductFeatureCategoryAppl()
 	 * @generated
 	 */
-	EReference getProductFeatureCategoryAppl_ProductFeatureCategoryId();
+	EReference getProductFeatureCategoryAppl_ProductFeatureCategory();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCategoryAppl#getFromDate <em>From Date</em>}'.
@@ -1863,26 +1863,26 @@ public interface FeaturePackage extends EPackage {
 	EClass getProductFeatureDataResource();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureDataResource#getDataResourceId <em>Data Resource Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureDataResource#getDataResource <em>Data Resource</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Data Resource Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureDataResource#getDataResourceId()
+	 * @return the meta object for the reference '<em>Data Resource</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureDataResource#getDataResource()
 	 * @see #getProductFeatureDataResource()
 	 * @generated
 	 */
-	EReference getProductFeatureDataResource_DataResourceId();
+	EReference getProductFeatureDataResource_DataResource();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureDataResource#getProductFeatureId <em>Product Feature Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureDataResource#getProductFeature <em>Product Feature</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Feature Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureDataResource#getProductFeatureId()
+	 * @return the meta object for the reference '<em>Product Feature</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureDataResource#getProductFeature()
 	 * @see #getProductFeatureDataResource()
 	 * @generated
 	 */
-	EReference getProductFeatureDataResource_ProductFeatureId();
+	EReference getProductFeatureDataResource_ProductFeature();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroup <em>Product Feature Group</em>}'.
@@ -1938,26 +1938,26 @@ public interface FeaturePackage extends EPackage {
 	EClass getProductFeatureGroupAppl();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getProductFeatureGroupId <em>Product Feature Group Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getProductFeatureGroup <em>Product Feature Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Feature Group Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getProductFeatureGroupId()
+	 * @return the meta object for the reference '<em>Product Feature Group</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getProductFeatureGroup()
 	 * @see #getProductFeatureGroupAppl()
 	 * @generated
 	 */
-	EReference getProductFeatureGroupAppl_ProductFeatureGroupId();
+	EReference getProductFeatureGroupAppl_ProductFeatureGroup();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getProductFeatureId <em>Product Feature Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getProductFeature <em>Product Feature</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Feature Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getProductFeatureId()
+	 * @return the meta object for the reference '<em>Product Feature</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getProductFeature()
 	 * @see #getProductFeatureGroupAppl()
 	 * @generated
 	 */
-	EReference getProductFeatureGroupAppl_ProductFeatureId();
+	EReference getProductFeatureGroupAppl_ProductFeature();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl#getFromDate <em>From Date</em>}'.
@@ -2003,15 +2003,15 @@ public interface FeaturePackage extends EPackage {
 	EClass getProductFeatureIactn();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductFeatureId <em>Product Feature Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductFeature <em>Product Feature</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Feature Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductFeatureId()
+	 * @return the meta object for the reference '<em>Product Feature</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductFeature()
 	 * @see #getProductFeatureIactn()
 	 * @generated
 	 */
-	EReference getProductFeatureIactn_ProductFeatureId();
+	EReference getProductFeatureIactn_ProductFeature();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductFeatureIdTo <em>Product Feature Id To</em>}'.
@@ -2025,15 +2025,15 @@ public interface FeaturePackage extends EPackage {
 	EReference getProductFeatureIactn_ProductFeatureIdTo();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductFeatureIactnTypeId <em>Product Feature Iactn Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductFeatureIactnType <em>Product Feature Iactn Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product Feature Iactn Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductFeatureIactnTypeId()
+	 * @return the meta object for the reference '<em>Product Feature Iactn Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductFeatureIactnType()
 	 * @see #getProductFeatureIactn()
 	 * @generated
 	 */
-	EReference getProductFeatureIactn_ProductFeatureIactnTypeId();
+	EReference getProductFeatureIactn_ProductFeatureIactnType();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn#getProductId <em>Product Id</em>}'.
@@ -2090,15 +2090,15 @@ public interface FeaturePackage extends EPackage {
 	EAttribute getProductFeatureIactnType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureIactnType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureIactnType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureIactnType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureIactnType#getParentType()
 	 * @see #getProductFeatureIactnType()
 	 * @generated
 	 */
-	EReference getProductFeatureIactnType_ParentTypeId();
+	EReference getProductFeatureIactnType_ParentType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureType <em>Product Feature Type</em>}'.
@@ -2144,15 +2144,15 @@ public interface FeaturePackage extends EPackage {
 	EAttribute getProductFeatureType_HasTable();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureType#getParentTypeId <em>Parent Type Id</em>}'.
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureType#getParentType <em>Parent Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Parent Type Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureType#getParentTypeId()
+	 * @return the meta object for the reference '<em>Parent Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureType#getParentType()
 	 * @see #getProductFeatureType()
 	 * @generated
 	 */
-	EReference getProductFeatureType_ParentTypeId();
+	EReference getProductFeatureType_ParentType();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -2251,28 +2251,28 @@ public interface FeaturePackage extends EPackage {
 		EAttribute PRODUCT_FEATURE__NUMBER_SPECIFIED = eINSTANCE.getProductFeature_NumberSpecified();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Feature Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Feature Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE__PRODUCT_FEATURE_CATEGORY_ID = eINSTANCE.getProductFeature_ProductFeatureCategoryId();
+		EReference PRODUCT_FEATURE__PRODUCT_FEATURE_CATEGORY = eINSTANCE.getProductFeature_ProductFeatureCategory();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Feature Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Feature Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE__PRODUCT_FEATURE_TYPE_ID = eINSTANCE.getProductFeature_ProductFeatureTypeId();
+		EReference PRODUCT_FEATURE__PRODUCT_FEATURE_TYPE = eINSTANCE.getProductFeature_ProductFeatureType();
 
 		/**
-		 * The meta object literal for the '<em><b>Uom Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Uom</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE__UOM_ID = eINSTANCE.getProductFeature_UomId();
+		EReference PRODUCT_FEATURE__UOM = eINSTANCE.getProductFeature_Uom();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureApplImpl <em>Product Feature Appl</em>}' class.
@@ -2285,20 +2285,20 @@ public interface FeaturePackage extends EPackage {
 		EClass PRODUCT_FEATURE_APPL = eINSTANCE.getProductFeatureAppl();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE_APPL__PRODUCT_ID = eINSTANCE.getProductFeatureAppl_ProductId();
+		EReference PRODUCT_FEATURE_APPL__PRODUCT = eINSTANCE.getProductFeatureAppl_Product();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Feature Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Feature</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE_APPL__PRODUCT_FEATURE_ID = eINSTANCE.getProductFeatureAppl_ProductFeatureId();
+		EReference PRODUCT_FEATURE_APPL__PRODUCT_FEATURE = eINSTANCE.getProductFeatureAppl_ProductFeature();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -2317,12 +2317,12 @@ public interface FeaturePackage extends EPackage {
 		EAttribute PRODUCT_FEATURE_APPL__AMOUNT = eINSTANCE.getProductFeatureAppl_Amount();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Feature Appl Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Feature Appl Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE_APPL__PRODUCT_FEATURE_APPL_TYPE_ID = eINSTANCE.getProductFeatureAppl_ProductFeatureApplTypeId();
+		EReference PRODUCT_FEATURE_APPL__PRODUCT_FEATURE_APPL_TYPE = eINSTANCE.getProductFeatureAppl_ProductFeatureApplType();
 
 		/**
 		 * The meta object literal for the '<em><b>Recurring Amount</b></em>' attribute feature.
@@ -2359,20 +2359,20 @@ public interface FeaturePackage extends EPackage {
 		EClass PRODUCT_FEATURE_APPL_ATTR = eINSTANCE.getProductFeatureApplAttr();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE_APPL_ATTR__PRODUCT_ID = eINSTANCE.getProductFeatureApplAttr_ProductId();
+		EReference PRODUCT_FEATURE_APPL_ATTR__PRODUCT = eINSTANCE.getProductFeatureApplAttr_Product();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Feature Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Feature</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE_APPL_ATTR__PRODUCT_FEATURE_ID = eINSTANCE.getProductFeatureApplAttr_ProductFeatureId();
+		EReference PRODUCT_FEATURE_APPL_ATTR__PRODUCT_FEATURE = eINSTANCE.getProductFeatureApplAttr_ProductFeature();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -2433,12 +2433,12 @@ public interface FeaturePackage extends EPackage {
 		EAttribute PRODUCT_FEATURE_APPL_TYPE__HAS_TABLE = eINSTANCE.getProductFeatureApplType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE_APPL_TYPE__PARENT_TYPE_ID = eINSTANCE.getProductFeatureApplType_ParentTypeId();
+		EReference PRODUCT_FEATURE_APPL_TYPE__PARENT_TYPE = eINSTANCE.getProductFeatureApplType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCatGrpApplImpl <em>Product Feature Cat Grp Appl</em>}' class.
@@ -2451,20 +2451,20 @@ public interface FeaturePackage extends EPackage {
 		EClass PRODUCT_FEATURE_CAT_GRP_APPL = eINSTANCE.getProductFeatureCatGrpAppl();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE_CAT_GRP_APPL__PRODUCT_CATEGORY_ID = eINSTANCE.getProductFeatureCatGrpAppl_ProductCategoryId();
+		EReference PRODUCT_FEATURE_CAT_GRP_APPL__PRODUCT_CATEGORY = eINSTANCE.getProductFeatureCatGrpAppl_ProductCategory();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Feature Group Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Feature Group</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE_CAT_GRP_APPL__PRODUCT_FEATURE_GROUP_ID = eINSTANCE.getProductFeatureCatGrpAppl_ProductFeatureGroupId();
+		EReference PRODUCT_FEATURE_CAT_GRP_APPL__PRODUCT_FEATURE_GROUP = eINSTANCE.getProductFeatureCatGrpAppl_ProductFeatureGroup();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -2509,12 +2509,12 @@ public interface FeaturePackage extends EPackage {
 		EAttribute PRODUCT_FEATURE_CATEGORY__DESCRIPTION = eINSTANCE.getProductFeatureCategory_Description();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE_CATEGORY__PARENT_CATEGORY_ID = eINSTANCE.getProductFeatureCategory_ParentCategoryId();
+		EReference PRODUCT_FEATURE_CATEGORY__PARENT_CATEGORY = eINSTANCE.getProductFeatureCategory_ParentCategory();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureCategoryApplImpl <em>Product Feature Category Appl</em>}' class.
@@ -2527,20 +2527,20 @@ public interface FeaturePackage extends EPackage {
 		EClass PRODUCT_FEATURE_CATEGORY_APPL = eINSTANCE.getProductFeatureCategoryAppl();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE_CATEGORY_APPL__PRODUCT_CATEGORY_ID = eINSTANCE.getProductFeatureCategoryAppl_ProductCategoryId();
+		EReference PRODUCT_FEATURE_CATEGORY_APPL__PRODUCT_CATEGORY = eINSTANCE.getProductFeatureCategoryAppl_ProductCategory();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Feature Category Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Feature Category</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE_CATEGORY_APPL__PRODUCT_FEATURE_CATEGORY_ID = eINSTANCE.getProductFeatureCategoryAppl_ProductFeatureCategoryId();
+		EReference PRODUCT_FEATURE_CATEGORY_APPL__PRODUCT_FEATURE_CATEGORY = eINSTANCE.getProductFeatureCategoryAppl_ProductFeatureCategory();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -2569,20 +2569,20 @@ public interface FeaturePackage extends EPackage {
 		EClass PRODUCT_FEATURE_DATA_RESOURCE = eINSTANCE.getProductFeatureDataResource();
 
 		/**
-		 * The meta object literal for the '<em><b>Data Resource Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Data Resource</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE_DATA_RESOURCE__DATA_RESOURCE_ID = eINSTANCE.getProductFeatureDataResource_DataResourceId();
+		EReference PRODUCT_FEATURE_DATA_RESOURCE__DATA_RESOURCE = eINSTANCE.getProductFeatureDataResource_DataResource();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Feature Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Feature</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE_DATA_RESOURCE__PRODUCT_FEATURE_ID = eINSTANCE.getProductFeatureDataResource_ProductFeatureId();
+		EReference PRODUCT_FEATURE_DATA_RESOURCE__PRODUCT_FEATURE = eINSTANCE.getProductFeatureDataResource_ProductFeature();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureGroupImpl <em>Product Feature Group</em>}' class.
@@ -2629,20 +2629,20 @@ public interface FeaturePackage extends EPackage {
 		EClass PRODUCT_FEATURE_GROUP_APPL = eINSTANCE.getProductFeatureGroupAppl();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Feature Group Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Feature Group</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE_GROUP_APPL__PRODUCT_FEATURE_GROUP_ID = eINSTANCE.getProductFeatureGroupAppl_ProductFeatureGroupId();
+		EReference PRODUCT_FEATURE_GROUP_APPL__PRODUCT_FEATURE_GROUP = eINSTANCE.getProductFeatureGroupAppl_ProductFeatureGroup();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Feature Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Feature</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE_GROUP_APPL__PRODUCT_FEATURE_ID = eINSTANCE.getProductFeatureGroupAppl_ProductFeatureId();
+		EReference PRODUCT_FEATURE_GROUP_APPL__PRODUCT_FEATURE = eINSTANCE.getProductFeatureGroupAppl_ProductFeature();
 
 		/**
 		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
@@ -2679,12 +2679,12 @@ public interface FeaturePackage extends EPackage {
 		EClass PRODUCT_FEATURE_IACTN = eINSTANCE.getProductFeatureIactn();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Feature Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Feature</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE_ID = eINSTANCE.getProductFeatureIactn_ProductFeatureId();
+		EReference PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE = eINSTANCE.getProductFeatureIactn_ProductFeature();
 
 		/**
 		 * The meta object literal for the '<em><b>Product Feature Id To</b></em>' reference feature.
@@ -2695,12 +2695,12 @@ public interface FeaturePackage extends EPackage {
 		EReference PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE_ID_TO = eINSTANCE.getProductFeatureIactn_ProductFeatureIdTo();
 
 		/**
-		 * The meta object literal for the '<em><b>Product Feature Iactn Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product Feature Iactn Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE_IACTN_TYPE_ID = eINSTANCE.getProductFeatureIactn_ProductFeatureIactnTypeId();
+		EReference PRODUCT_FEATURE_IACTN__PRODUCT_FEATURE_IACTN_TYPE = eINSTANCE.getProductFeatureIactn_ProductFeatureIactnType();
 
 		/**
 		 * The meta object literal for the '<em><b>Product Id</b></em>' attribute feature.
@@ -2745,12 +2745,12 @@ public interface FeaturePackage extends EPackage {
 		EAttribute PRODUCT_FEATURE_IACTN_TYPE__HAS_TABLE = eINSTANCE.getProductFeatureIactnType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE_IACTN_TYPE__PARENT_TYPE_ID = eINSTANCE.getProductFeatureIactnType_ParentTypeId();
+		EReference PRODUCT_FEATURE_IACTN_TYPE__PARENT_TYPE = eINSTANCE.getProductFeatureIactnType_ParentType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureTypeImpl <em>Product Feature Type</em>}' class.
@@ -2787,12 +2787,12 @@ public interface FeaturePackage extends EPackage {
 		EAttribute PRODUCT_FEATURE_TYPE__HAS_TABLE = eINSTANCE.getProductFeatureType_HasTable();
 
 		/**
-		 * The meta object literal for the '<em><b>Parent Type Id</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Parent Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRODUCT_FEATURE_TYPE__PARENT_TYPE_ID = eINSTANCE.getProductFeatureType_ParentTypeId();
+		EReference PRODUCT_FEATURE_TYPE__PARENT_TYPE = eINSTANCE.getProductFeatureType_ParentType();
 
 	}
 

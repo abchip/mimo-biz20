@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementCustRequestImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementCustRequestImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementCustRequestImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementCustRequestImpl#getCustRequestId <em>Cust Request Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementCustRequestImpl#getRequirementId <em>Requirement Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementCustRequestImpl#getCustRequest <em>Cust Request</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementCustRequestImpl#getRequirement <em>Requirement</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementCustRequestImpl#getCustRequestItemSeqId <em>Cust Request Item Seq Id</em>}</li>
  * </ul>
  *
@@ -153,8 +153,8 @@ public class RequirementCustRequestImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public CustRequest getCustRequestId() {
-		return (CustRequest)eGet(RequirementPackage.Literals.REQUIREMENT_CUST_REQUEST__CUST_REQUEST_ID, true);
+	public CustRequest getCustRequest() {
+		return (CustRequest)eGet(RequirementPackage.Literals.REQUIREMENT_CUST_REQUEST__CUST_REQUEST, true);
 	}
 
 	/**
@@ -163,8 +163,28 @@ public class RequirementCustRequestImpl extends EntityIdentifiableImpl implement
 	 * @generated
 	 */
 	@Override
-	public void setCustRequestId(CustRequest newCustRequestId) {
-		eSet(RequirementPackage.Literals.REQUIREMENT_CUST_REQUEST__CUST_REQUEST_ID, newCustRequestId);
+	public void setCustRequest(CustRequest newCustRequest) {
+		eSet(RequirementPackage.Literals.REQUIREMENT_CUST_REQUEST__CUST_REQUEST, newCustRequest);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Requirement getRequirement() {
+		return (Requirement)eGet(RequirementPackage.Literals.REQUIREMENT_CUST_REQUEST__REQUIREMENT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setRequirement(Requirement newRequirement) {
+		eSet(RequirementPackage.Literals.REQUIREMENT_CUST_REQUEST__REQUIREMENT, newRequirement);
 	}
 
 	/**
@@ -223,26 +243,6 @@ public class RequirementCustRequestImpl extends EntityIdentifiableImpl implement
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Requirement getRequirementId() {
-		return (Requirement)eGet(RequirementPackage.Literals.REQUIREMENT_CUST_REQUEST__REQUIREMENT_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setRequirementId(Requirement newRequirementId) {
-		eSet(RequirementPackage.Literals.REQUIREMENT_CUST_REQUEST__REQUIREMENT_ID, newRequirementId);
 	}
 
 } //RequirementCustRequestImpl

@@ -21,7 +21,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getProductCategoryId <em>Product Category Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getProductCategory <em>Product Category</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getLinkSeqId <em>Link Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getComments <em>Comments</em>}</li>
@@ -30,7 +30,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getImageTwoUrl <em>Image Two Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getImageUrl <em>Image Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getLinkInfo <em>Link Info</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getLinkTypeEnumId <em>Link Type Enum Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getLinkTypeEnum <em>Link Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getTitleText <em>Title Text</em>}</li>
@@ -41,6 +41,29 @@ import org.abchip.mimo.entity.EntityInfo;
  * @generated
  */
 public interface ProductCategoryLink extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Product Category</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Category</em>' reference.
+	 * @see #setProductCategory(ProductCategory)
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryLink_ProductCategory()
+	 * @model keys="productCategoryId" required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductCategory getProductCategory();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getProductCategory <em>Product Category</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Category</em>' reference.
+	 * @see #getProductCategory()
+	 * @generated
+	 */
+	void setProductCategory(ProductCategory value);
+
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -227,6 +250,28 @@ public interface ProductCategoryLink extends EntityIdentifiable, EntityInfo {
 	void setLinkInfo(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Link Type Enum</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Link Type Enum</em>' reference.
+	 * @see #setLinkTypeEnum(Enumeration)
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryLink_LinkTypeEnum()
+	 * @model keys="enumId"
+	 * @generated
+	 */
+	Enumeration getLinkTypeEnum();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getLinkTypeEnum <em>Link Type Enum</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Link Type Enum</em>' reference.
+	 * @see #getLinkTypeEnum()
+	 * @generated
+	 */
+	void setLinkTypeEnum(Enumeration value);
+
+	/**
 	 * Returns the value of the '<em><b>Link Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -253,32 +298,6 @@ public interface ProductCategoryLink extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setLinkSeqId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Link Type Enum Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Link Type Enum Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Link Type Enum Id</em>' reference.
-	 * @see #setLinkTypeEnumId(Enumeration)
-	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryLink_LinkTypeEnumId()
-	 * @model keys="enumId"
-	 * @generated
-	 */
-	Enumeration getLinkTypeEnumId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getLinkTypeEnumId <em>Link Type Enum Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Link Type Enum Id</em>' reference.
-	 * @see #getLinkTypeEnumId()
-	 * @generated
-	 */
-	void setLinkTypeEnumId(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Sequence Num</b></em>' attribute.
@@ -358,32 +377,5 @@ public interface ProductCategoryLink extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setTitleText(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Category Id</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Category Id</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Category Id</em>' reference.
-	 * @see #setProductCategoryId(ProductCategory)
-	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryLink_ProductCategoryId()
-	 * @model keys="productCategoryId" required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductCategory getProductCategoryId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink#getProductCategoryId <em>Product Category Id</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Category Id</em>' reference.
-	 * @see #getProductCategoryId()
-	 * @generated
-	 */
-	void setProductCategoryId(ProductCategory value);
 
 } // ProductCategoryLink
