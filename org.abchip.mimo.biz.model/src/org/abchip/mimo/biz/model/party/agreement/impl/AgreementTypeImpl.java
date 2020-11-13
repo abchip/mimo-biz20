@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeImpl#getAgreementTypeId <em>Agreement Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeImpl#getAgreementTypeAttrs <em>Agreement Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -182,7 +182,7 @@ public class AgreementTypeImpl extends EntityTypeImpl<Agreement> implements Agre
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(AgreementPackage.Literals.AGREEMENT_TYPE__HAS_TABLE, true);
 	}
 
@@ -192,7 +192,7 @@ public class AgreementTypeImpl extends EntityTypeImpl<Agreement> implements Agre
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(AgreementPackage.Literals.AGREEMENT_TYPE__HAS_TABLE, newHasTable);
 	}
 

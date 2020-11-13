@@ -35,7 +35,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl#getInvoiceItemTypeId <em>Invoice Item Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl#getDefaultGlAccount <em>Default Gl Account</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl#getInvoiceItemTypeAttrs <em>Invoice Item Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl#getInvoiceItemTypeGlAccounts <em>Invoice Item Type Gl Accounts</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl#getParentType <em>Parent Type</em>}</li>
@@ -186,7 +186,7 @@ public class InvoiceItemTypeImpl extends EntityTypeImpl<InvoiceItem> implements 
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(InvoicePackage.Literals.INVOICE_ITEM_TYPE__HAS_TABLE, true);
 	}
 
@@ -196,7 +196,7 @@ public class InvoiceItemTypeImpl extends EntityTypeImpl<InvoiceItem> implements 
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(InvoicePackage.Literals.INVOICE_ITEM_TYPE__HAS_TABLE, newHasTable);
 	}
 

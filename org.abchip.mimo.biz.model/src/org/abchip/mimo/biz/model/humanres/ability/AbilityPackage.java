@@ -1619,11 +1619,11 @@ public interface AbilityPackage extends EPackage {
 	EAttribute getPartyQualType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.ability.PartyQualType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.ability.PartyQualType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.humanres.ability.PartyQualType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.humanres.ability.PartyQualType#getHasTable()
 	 * @see #getPartyQualType()
 	 * @generated
 	 */
@@ -1814,11 +1814,11 @@ public interface AbilityPackage extends EPackage {
 	EAttribute getPerfRatingType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.ability.PerfRatingType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.ability.PerfRatingType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.humanres.ability.PerfRatingType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.humanres.ability.PerfRatingType#getHasTable()
 	 * @see #getPerfRatingType()
 	 * @generated
 	 */
@@ -2075,11 +2075,11 @@ public interface AbilityPackage extends EPackage {
 	EAttribute getPerfReviewItemType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.ability.PerfReviewItemType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.ability.PerfReviewItemType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.humanres.ability.PerfReviewItemType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.humanres.ability.PerfReviewItemType#getHasTable()
 	 * @see #getPerfReviewItemType()
 	 * @generated
 	 */
@@ -2314,11 +2314,11 @@ public interface AbilityPackage extends EPackage {
 	EAttribute getResponsibilityType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.ability.ResponsibilityType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.ability.ResponsibilityType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.humanres.ability.ResponsibilityType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.humanres.ability.ResponsibilityType#getHasTable()
 	 * @see #getResponsibilityType()
 	 * @generated
 	 */
@@ -2368,11 +2368,11 @@ public interface AbilityPackage extends EPackage {
 	EAttribute getSkillType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.ability.SkillType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.ability.SkillType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.humanres.ability.SkillType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.humanres.ability.SkillType#getHasTable()
 	 * @see #getSkillType()
 	 * @generated
 	 */
@@ -2422,11 +2422,11 @@ public interface AbilityPackage extends EPackage {
 	EAttribute getTrainingClassType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.ability.TrainingClassType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.ability.TrainingClassType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.humanres.ability.TrainingClassType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.humanres.ability.TrainingClassType#getHasTable()
 	 * @see #getTrainingClassType()
 	 * @generated
 	 */

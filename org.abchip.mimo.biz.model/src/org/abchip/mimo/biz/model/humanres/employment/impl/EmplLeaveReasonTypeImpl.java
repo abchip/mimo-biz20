@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveReasonTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveReasonTypeImpl#getEmplLeaveReasonTypeId <em>Empl Leave Reason Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveReasonTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveReasonTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveReasonTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmplLeaveReasonTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -172,7 +172,7 @@ public class EmplLeaveReasonTypeImpl extends EntityIdentifiableImpl implements E
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(EmploymentPackage.Literals.EMPL_LEAVE_REASON_TYPE__HAS_TABLE, true);
 	}
 
@@ -182,7 +182,7 @@ public class EmplLeaveReasonTypeImpl extends EntityIdentifiableImpl implements E
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(EmploymentPackage.Literals.EMPL_LEAVE_REASON_TYPE__HAS_TABLE, newHasTable);
 	}
 

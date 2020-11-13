@@ -453,11 +453,6 @@ public class EcoreUtils {
 
 	private static void setClassifierIndicator(List<ModelForm> forms, EAttribute eAttribute, ModelField modelField) {
 
-		if (modelField.getName().equals("hasTable")) {
-			eAttribute.setEType(EcorePackage.eINSTANCE.getEBoolean());
-			return;
-		}
-
 		ModelFormField formField = null;
 		for (ModelForm form : FormUtils.searchForm(forms, modelField.getModelEntity().getEntityName())) {
 			formField = FormUtils.searchField(form, modelField.getName());

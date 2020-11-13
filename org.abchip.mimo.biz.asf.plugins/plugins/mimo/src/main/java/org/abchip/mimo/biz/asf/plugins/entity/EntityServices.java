@@ -78,8 +78,10 @@ public class EntityServices {
 
 			EPackage bizPackage = buildBizPackage(delegator, forms);
 			setFrameSuper(delegator, bizPackage, entityNames);
+			
 			setTextable(modelReader, bizPackage, entityNames);
 			setReferences(modelReader, bizPackage, entityNames);
+
 			setIndicators(bizPackage, context, modelReader, entityNames, forms);
 			addRoutes(delegator, forms, bizPackage, entityNames);
 
@@ -87,7 +89,7 @@ public class EntityServices {
 				LOGGER.warn("Differences found on model");
 
 			reorderFeatures(bizPackage, entityNames);
-
+			
 			bizPackage = writePackage(bizPackage, context);
 
 			return ServiceUtil.returnSuccess("OK");
@@ -269,10 +271,8 @@ public class EntityServices {
 		// type
 		for (String entityName : entityNames) {
 			ModelEntity modelEntity = delegator.getModelEntity(entityName);
-			if (modelEntity.getField("hasTable") == null) {
-				if (!entityName.endsWith("Type"))
-					continue;
-			}
+			if (modelEntity.getField("hasTable") == null && !entityName.endsWith("Type")) 
+				continue;
 
 			EClass eClass = EcoreUtils.buildEntityTypeEClass(delegator, forms, modelEntity);
 			eWorkPackage.getEClassifiers().add(eClass);
@@ -450,7 +450,7 @@ public class EntityServices {
 			if (modelEntity == null)
 				continue;
 
-			EClass eClass = Frames.getEClass(bizPackage, modelEntity.getEntityName());
+			EClass eClass = Frames.getEClass(bizPackage, entityName);
 			if (eClass == null)
 				continue;
 
@@ -461,7 +461,7 @@ public class EntityServices {
 					continue;
 				}
 			}
-
+			
 			Map<String, Integer> removeableFeatures = new HashMap<String, Integer>();
 
 			for (ModelRelation modelRelation : modelEntity.getRelationsList(true, true, false)) {

@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.TerminationTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.TerminationTypeImpl#getTerminationTypeId <em>Termination Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.TerminationTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.TerminationTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.TerminationTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.TerminationTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -180,7 +180,7 @@ public class TerminationTypeImpl extends EntityTypeImpl<Employment> implements T
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(EmploymentPackage.Literals.TERMINATION_TYPE__HAS_TABLE, true);
 	}
 
@@ -190,7 +190,7 @@ public class TerminationTypeImpl extends EntityTypeImpl<Employment> implements T
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(EmploymentPackage.Literals.TERMINATION_TYPE__HAS_TABLE, newHasTable);
 	}
 

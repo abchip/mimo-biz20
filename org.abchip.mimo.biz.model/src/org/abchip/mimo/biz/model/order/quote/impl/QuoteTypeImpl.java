@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeImpl#getQuoteTypeId <em>Quote Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeImpl#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeImpl#getQuoteTypeAttrs <em>Quote Type Attrs</em>}</li>
  * </ul>
@@ -183,7 +183,7 @@ public class QuoteTypeImpl extends EntityTypeImpl<Quote> implements QuoteType {
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(QuotePackage.Literals.QUOTE_TYPE__HAS_TABLE, true);
 	}
 
@@ -193,7 +193,7 @@ public class QuoteTypeImpl extends EntityTypeImpl<Quote> implements QuoteType {
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(QuotePackage.Literals.QUOTE_TYPE__HAS_TABLE, newHasTable);
 	}
 

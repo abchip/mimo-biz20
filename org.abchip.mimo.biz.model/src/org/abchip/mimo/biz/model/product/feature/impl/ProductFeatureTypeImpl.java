@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureTypeImpl#getProductFeatureTypeId <em>Product Feature Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -180,7 +180,7 @@ public class ProductFeatureTypeImpl extends EntityTypeImpl<ProductFeature> imple
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_TYPE__HAS_TABLE, true);
 	}
 
@@ -190,7 +190,7 @@ public class ProductFeatureTypeImpl extends EntityTypeImpl<ProductFeature> imple
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_TYPE__HAS_TABLE, newHasTable);
 	}
 

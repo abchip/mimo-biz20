@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomTypeImpl#getUomTypeId <em>Uom Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -179,7 +179,7 @@ public class UomTypeImpl extends EntityTypeImpl<Uom> implements UomType {
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(UomPackage.Literals.UOM_TYPE__HAS_TABLE, true);
 	}
 
@@ -189,7 +189,7 @@ public class UomTypeImpl extends EntityTypeImpl<Uom> implements UomType {
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(UomPackage.Literals.UOM_TYPE__HAS_TABLE, newHasTable);
 	}
 

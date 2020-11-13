@@ -24,7 +24,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMechType#getContactMechTypeAttrs <em>Contact Mech Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMechType#getContactMechTypePurposes <em>Contact Mech Type Purposes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMechType#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMechType#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMechType#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.ContactMechType#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -62,28 +62,24 @@ public interface ContactMechType extends EntityType<ContactMech>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Has Table</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Has Table</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Has Table</em>' attribute.
-	 * @see #setHasTable(boolean)
+	 * @see #setHasTable(Boolean)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMechType_HasTable()
 	 * @model
 	 * @generated
 	 */
-	boolean isHasTable();
+	Boolean getHasTable();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.ContactMechType#isHasTable <em>Has Table</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.ContactMechType#getHasTable <em>Has Table</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Has Table</em>' attribute.
-	 * @see #isHasTable()
+	 * @see #getHasTable()
 	 * @generated
 	 */
-	void setHasTable(boolean value);
+	void setHasTable(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Parent Type</b></em>' reference.

@@ -25,7 +25,7 @@ import org.abchip.mimo.entity.EntityType;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getFinAccountTypeAttrs <em>Fin Account Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getFinAccountTypeGlAccounts <em>Fin Account Type Gl Accounts</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getIsRefundable <em>Is Refundable</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getReplenishEnum <em>Replenish Enum</em>}</li>
@@ -97,28 +97,24 @@ public interface FinAccountType extends EntityType<FinAccount>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Has Table</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Has Table</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Has Table</em>' attribute.
-	 * @see #setHasTable(boolean)
+	 * @see #setHasTable(Boolean)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountType_HasTable()
 	 * @model
 	 * @generated
 	 */
-	boolean isHasTable();
+	Boolean getHasTable();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#isHasTable <em>Has Table</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getHasTable <em>Has Table</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Has Table</em>' attribute.
-	 * @see #isHasTable()
+	 * @see #getHasTable()
 	 * @generated
 	 */
-	void setHasTable(boolean value);
+	void setHasTable(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Is Refundable</b></em>' attribute.

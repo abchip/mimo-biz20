@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocTypeImpl#getOrderItemAssocTypeId <em>Order Item Assoc Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemAssocTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -180,7 +180,7 @@ public class OrderItemAssocTypeImpl extends EntityTypeImpl<OrderItemAssoc> imple
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(OrderPackage.Literals.ORDER_ITEM_ASSOC_TYPE__HAS_TABLE, true);
 	}
 
@@ -190,7 +190,7 @@ public class OrderItemAssocTypeImpl extends EntityTypeImpl<OrderItemAssoc> imple
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(OrderPackage.Literals.ORDER_ITEM_ASSOC_TYPE__HAS_TABLE, newHasTable);
 	}
 

@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.GoodIdentificationTypeImpl#getGoodIdentificationTypeId <em>Good Identification Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.GoodIdentificationTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.GoodIdentificationTypeImpl#getGoodIdentifications <em>Good Identifications</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.GoodIdentificationTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.GoodIdentificationTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.GoodIdentificationTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -193,7 +193,7 @@ public class GoodIdentificationTypeImpl extends EntityTypeImpl<GoodIdentificatio
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(ProductPackage.Literals.GOOD_IDENTIFICATION_TYPE__HAS_TABLE, true);
 	}
 
@@ -203,7 +203,7 @@ public class GoodIdentificationTypeImpl extends EntityTypeImpl<GoodIdentificatio
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(ProductPackage.Literals.GOOD_IDENTIFICATION_TYPE__HAS_TABLE, newHasTable);
 	}
 

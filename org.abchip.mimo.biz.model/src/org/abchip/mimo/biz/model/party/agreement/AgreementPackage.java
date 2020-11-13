@@ -2855,11 +2855,11 @@ public interface AgreementPackage extends EPackage {
 	EAttribute getAgreementContentType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementContentType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementContentType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementContentType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementContentType#getHasTable()
 	 * @see #getAgreementContentType()
 	 * @generated
 	 */
@@ -3256,11 +3256,11 @@ public interface AgreementPackage extends EPackage {
 	EAttribute getAgreementItemType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementItemType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementItemType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementItemType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementItemType#getHasTable()
 	 * @see #getAgreementItemType()
 	 * @generated
 	 */
@@ -3798,11 +3798,11 @@ public interface AgreementPackage extends EPackage {
 	EAttribute getAgreementType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.AgreementType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementType#getHasTable()
 	 * @see #getAgreementType()
 	 * @generated
 	 */
@@ -3938,11 +3938,11 @@ public interface AgreementPackage extends EPackage {
 	EAttribute getTermType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.TermType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.agreement.TermType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.party.agreement.TermType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.party.agreement.TermType#getHasTable()
 	 * @see #getTermType()
 	 * @generated
 	 */

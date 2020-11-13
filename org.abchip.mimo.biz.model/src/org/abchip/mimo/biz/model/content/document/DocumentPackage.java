@@ -667,11 +667,11 @@ public interface DocumentPackage extends EPackage {
 	EReference getDocumentType_DocumentTypeAttrs();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.document.DocumentType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.document.DocumentType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.content.document.DocumentType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.content.document.DocumentType#getHasTable()
 	 * @see #getDocumentType()
 	 * @generated
 	 */

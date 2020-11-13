@@ -1615,7 +1615,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		initEClass(prodConfItemContentTypeEClass, ProdConfItemContentType.class, "ProdConfItemContentType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getProdConfItemContentType_ConfItemContentTypeId(), ecorePackage.getEString(), "confItemContentTypeId", null, 1, 1, ProdConfItemContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProdConfItemContentType_Description(), ecorePackage.getEString(), "description", null, 0, 1, ProdConfItemContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getProdConfItemContentType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 0, 1, ProdConfItemContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProdConfItemContentType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, ProdConfItemContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProdConfItemContentType_ParentType(), this.getProdConfItemContentType(), null, "parentType", null, 0, 1, ProdConfItemContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getProdConfItemContentType_ParentType().getEKeys().add(this.getProdConfItemContentType_ConfItemContentTypeId());
 

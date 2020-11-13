@@ -2980,11 +2980,11 @@ public interface InventoryPackage extends EPackage {
 	EAttribute getInventoryItemType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.inventory.InventoryItemType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryItemType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryItemType#getHasTable()
 	 * @see #getInventoryItemType()
 	 * @generated
 	 */

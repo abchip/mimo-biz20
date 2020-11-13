@@ -81,7 +81,7 @@ public class ModelUtils {
 	}
 
 	public static String getSuperEntity(Delegator delegator, String entityName) {
-
+		
 		ModelReader modelReader = delegator.getModelReader();
 
 		ModelEntity modelEntity = modelReader.getModelEntityNoCheck(entityName);
@@ -152,12 +152,11 @@ public class ModelUtils {
 				return null;
 			}
 
-			if (entityType.isField("hasTable")) {
+/*			if (entityType.isField("hasTable")) {
 				Object hasTable = genericValue.get("hasTable");
 				if (!hasTable.toString().equalsIgnoreCase("Y"))
 					return null;
-			} else
-				"".toString();
+			}*/ 
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;

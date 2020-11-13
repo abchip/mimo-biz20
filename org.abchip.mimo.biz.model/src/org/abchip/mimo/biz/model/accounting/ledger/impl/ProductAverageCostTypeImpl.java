@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostTypeImpl#getProductAverageCostTypeId <em>Product Average Cost Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -179,7 +179,7 @@ public class ProductAverageCostTypeImpl extends EntityTypeImpl<ProductAverageCos
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST_TYPE__HAS_TABLE, true);
 	}
 
@@ -189,7 +189,7 @@ public class ProductAverageCostTypeImpl extends EntityTypeImpl<ProductAverageCos
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(LedgerPackage.Literals.PRODUCT_AVERAGE_COST_TYPE__HAS_TABLE, newHasTable);
 	}
 

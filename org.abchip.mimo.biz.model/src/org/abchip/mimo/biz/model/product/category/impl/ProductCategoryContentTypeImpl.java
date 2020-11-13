@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryContentTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryContentTypeImpl#getProdCatContentTypeId <em>Prod Cat Content Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryContentTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryContentTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryContentTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryContentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -180,7 +180,7 @@ public class ProductCategoryContentTypeImpl extends EntityTypeImpl<ProductCatego
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY_CONTENT_TYPE__HAS_TABLE, true);
 	}
 
@@ -190,7 +190,7 @@ public class ProductCategoryContentTypeImpl extends EntityTypeImpl<ProductCatego
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY_CONTENT_TYPE__HAS_TABLE, newHasTable);
 	}
 

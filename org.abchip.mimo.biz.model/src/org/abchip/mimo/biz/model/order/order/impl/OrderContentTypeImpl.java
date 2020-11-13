@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentTypeImpl#getOrderContentTypeId <em>Order Content Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderContentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -180,7 +180,7 @@ public class OrderContentTypeImpl extends EntityTypeImpl<OrderContent> implement
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(OrderPackage.Literals.ORDER_CONTENT_TYPE__HAS_TABLE, true);
 	}
 
@@ -190,7 +190,7 @@ public class OrderContentTypeImpl extends EntityTypeImpl<OrderContent> implement
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(OrderPackage.Literals.ORDER_CONTENT_TYPE__HAS_TABLE, newHasTable);
 	}
 

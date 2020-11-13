@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfRatingTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfRatingTypeImpl#getPerfRatingTypeId <em>Perf Rating Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfRatingTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfRatingTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfRatingTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfRatingTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -172,7 +172,7 @@ public class PerfRatingTypeImpl extends EntityIdentifiableImpl implements PerfRa
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(AbilityPackage.Literals.PERF_RATING_TYPE__HAS_TABLE, true);
 	}
 
@@ -182,7 +182,7 @@ public class PerfRatingTypeImpl extends EntityIdentifiableImpl implements PerfRa
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(AbilityPackage.Literals.PERF_RATING_TYPE__HAS_TABLE, newHasTable);
 	}
 

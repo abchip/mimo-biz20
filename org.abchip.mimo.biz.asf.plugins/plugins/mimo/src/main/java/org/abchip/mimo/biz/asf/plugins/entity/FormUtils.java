@@ -137,7 +137,7 @@ public class FormUtils {
 		}
 
 		List<String> chars = Arrays.asList("priority", "countyDefault", "generalDefault", "anyPrefix", "anySuffix", "primaryFlag", "anyPrefix", "anyPrefix", "anySuffix");
-		List<String> booleans = Arrays.asList("enabled", "disabled", "enableHttps", "isPublic", "isActive", "isPromo", "isSummary", "isClosed", "resultBadCardNumber", "resultBadExpire",
+		List<String> booleans = Arrays.asList("hasTable", "enabled", "disabled", "enableHttps", "isPublic", "isActive", "isPromo", "isSummary", "isClosed", "resultBadCardNumber", "resultBadExpire",
 				"resultDeclined", "resultNsf", "forPullOnly", "forPushOnly", "needsInventoryReceive", "addToCartRemoveIncompat", "addToCartReplaceUpsell", "enableAutoSuggestionList",
 				"setOwnerUponIssuance", "splitPayPrefPerShpGrp", "allowProductStoreChange", "addDeleteFlag", "isRefundable", "isAssetClass", "enableAccounting", "useInvoiceIdForReturns",
 				"avsAddr", "avsZip", "insideCity", "isValid", "hasPostalCodeExt", "requirePostalCode", "requirePostalCodeExt", "includeSubCategories", "isAnd", "removeStems", "isAscending",

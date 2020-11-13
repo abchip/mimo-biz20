@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationTypeImpl#getPartyClassificationTypeId <em>Party Classification Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -179,7 +179,7 @@ public class PartyClassificationTypeImpl extends EntityTypeImpl<PartyClassificat
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(PartyPackage.Literals.PARTY_CLASSIFICATION_TYPE__HAS_TABLE, true);
 	}
 
@@ -189,7 +189,7 @@ public class PartyClassificationTypeImpl extends EntityTypeImpl<PartyClassificat
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(PartyPackage.Literals.PARTY_CLASSIFICATION_TYPE__HAS_TABLE, newHasTable);
 	}
 

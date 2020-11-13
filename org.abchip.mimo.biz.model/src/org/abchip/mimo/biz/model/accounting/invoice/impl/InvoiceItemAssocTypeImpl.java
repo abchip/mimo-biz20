@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemAssocTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemAssocTypeImpl#getInvoiceItemAssocTypeId <em>Invoice Item Assoc Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemAssocTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemAssocTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemAssocTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemAssocTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -179,7 +179,7 @@ public class InvoiceItemAssocTypeImpl extends EntityTypeImpl<InvoiceItemAssoc> i
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(InvoicePackage.Literals.INVOICE_ITEM_ASSOC_TYPE__HAS_TABLE, true);
 	}
 
@@ -189,7 +189,7 @@ public class InvoiceItemAssocTypeImpl extends EntityTypeImpl<InvoiceItemAssoc> i
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(InvoicePackage.Literals.INVOICE_ITEM_ASSOC_TYPE__HAS_TABLE, newHasTable);
 	}
 

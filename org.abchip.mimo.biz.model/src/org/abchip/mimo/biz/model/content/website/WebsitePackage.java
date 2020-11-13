@@ -783,11 +783,11 @@ public interface WebsitePackage extends EPackage {
 	EAttribute getWebAnalyticsType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.website.WebAnalyticsType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.website.WebAnalyticsType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.content.website.WebAnalyticsType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.content.website.WebAnalyticsType#getHasTable()
 	 * @see #getWebAnalyticsType()
 	 * @generated
 	 */
@@ -902,11 +902,11 @@ public interface WebsitePackage extends EPackage {
 	EAttribute getWebSiteContentType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.website.WebSiteContentType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.website.WebSiteContentType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.content.website.WebSiteContentType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.content.website.WebSiteContentType#getHasTable()
 	 * @see #getWebSiteContentType()
 	 * @generated
 	 */

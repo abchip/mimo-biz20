@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#getProductTypeId <em>Product Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#getIsDigital <em>Is Digital</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#getIsPhysical <em>Is Physical</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#getParentType <em>Parent Type</em>}</li>
@@ -185,7 +185,7 @@ public class ProductTypeImpl extends EntityTypeImpl<Product> implements ProductT
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(ProductPackage.Literals.PRODUCT_TYPE__HAS_TABLE, true);
 	}
 
@@ -195,7 +195,7 @@ public class ProductTypeImpl extends EntityTypeImpl<Product> implements ProductT
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(ProductPackage.Literals.PRODUCT_TYPE__HAS_TABLE, newHasTable);
 	}
 

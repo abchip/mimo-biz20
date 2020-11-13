@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentTypeImpl#getPaymentContentTypeId <em>Payment Content Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentContentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -179,7 +179,7 @@ public class PaymentContentTypeImpl extends EntityTypeImpl<PaymentContent> imple
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(PaymentPackage.Literals.PAYMENT_CONTENT_TYPE__HAS_TABLE, true);
 	}
 
@@ -189,7 +189,7 @@ public class PaymentContentTypeImpl extends EntityTypeImpl<PaymentContent> imple
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(PaymentPackage.Literals.PAYMENT_CONTENT_TYPE__HAS_TABLE, newHasTable);
 	}
 

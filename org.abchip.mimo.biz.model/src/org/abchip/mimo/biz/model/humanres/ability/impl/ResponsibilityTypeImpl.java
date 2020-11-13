@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.ResponsibilityTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.ResponsibilityTypeImpl#getResponsibilityTypeId <em>Responsibility Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.ResponsibilityTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.ResponsibilityTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.ResponsibilityTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.ability.impl.ResponsibilityTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -172,7 +172,7 @@ public class ResponsibilityTypeImpl extends EntityIdentifiableImpl implements Re
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(AbilityPackage.Literals.RESPONSIBILITY_TYPE__HAS_TABLE, true);
 	}
 
@@ -182,7 +182,7 @@ public class ResponsibilityTypeImpl extends EntityIdentifiableImpl implements Re
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(AbilityPackage.Literals.RESPONSIBILITY_TYPE__HAS_TABLE, newHasTable);
 	}
 

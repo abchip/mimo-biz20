@@ -144,6 +144,7 @@ import org.abchip.mimo.biz.model.party.contact.ContactMechType;
 import org.abchip.mimo.biz.model.party.contact.ContactMechTypeAttr;
 import org.abchip.mimo.biz.model.party.contact.ContactMechTypePurpose;
 import org.abchip.mimo.biz.model.party.contact.ContactPackage;
+import org.abchip.mimo.biz.model.party.contact.EmailAddress;
 import org.abchip.mimo.biz.model.party.contact.EmailAddressVerification;
 import org.abchip.mimo.biz.model.party.contact.FtpAddress;
 import org.abchip.mimo.biz.model.party.contact.PartyContactMech;
@@ -271,6 +272,13 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	private EClass contactMechTypePurposeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass emailAddressEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1087,6 +1095,26 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getEmailAddress() {
+		return emailAddressEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getEmailAddress_EmailAddress() {
+		return (EAttribute)emailAddressEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getEmailAddressVerification() {
 		return emailAddressVerificationEClass;
 	}
@@ -1768,6 +1796,9 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		createEReference(contactMechTypePurposeEClass, CONTACT_MECH_TYPE_PURPOSE__CONTACT_MECH_TYPE);
 		createEReference(contactMechTypePurposeEClass, CONTACT_MECH_TYPE_PURPOSE__CONTACT_MECH_PURPOSE_TYPE);
 
+		emailAddressEClass = createEClass(EMAIL_ADDRESS);
+		createEAttribute(emailAddressEClass, EMAIL_ADDRESS__EMAIL_ADDRESS);
+
 		emailAddressVerificationEClass = createEClass(EMAIL_ADDRESS_VERIFICATION);
 		createEAttribute(emailAddressVerificationEClass, EMAIL_ADDRESS_VERIFICATION__EMAIL_ADDRESS);
 		createEAttribute(emailAddressVerificationEClass, EMAIL_ADDRESS_VERIFICATION__EXPIRE_DATE);
@@ -1898,6 +1929,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		contactMechTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		contactMechTypePurposeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		contactMechTypePurposeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		emailAddressEClass.getESuperTypes().add(this.getContactMech());
 		emailAddressVerificationEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		emailAddressVerificationEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		ftpAddressEClass.getESuperTypes().add(this.getContactMech());
@@ -1947,7 +1979,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		initEReference(getContactMechType_ContactMechTypeAttrs(), this.getContactMechTypeAttr(), null, "contactMechTypeAttrs", null, 0, -1, ContactMechType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getContactMechType_ContactMechTypePurposes(), this.getContactMechTypePurpose(), null, "contactMechTypePurposes", null, 0, -1, ContactMechType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContactMechType_Description(), ecorePackage.getEString(), "description", null, 0, 1, ContactMechType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getContactMechType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 0, 1, ContactMechType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getContactMechType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, ContactMechType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContactMechType_ParentType(), this.getContactMechType(), null, "parentType", null, 0, 1, ContactMechType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getContactMechType_ParentType().getEKeys().add(this.getContactMechType_ContactMechTypeId());
 
@@ -1962,6 +1994,9 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		getContactMechTypePurpose_ContactMechType().getEKeys().add(this.getContactMechType_ContactMechTypeId());
 		initEReference(getContactMechTypePurpose_ContactMechPurposeType(), this.getContactMechPurposeType(), null, "contactMechPurposeType", null, 1, 1, ContactMechTypePurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getContactMechTypePurpose_ContactMechPurposeType().getEKeys().add(this.getContactMechPurposeType_ContactMechPurposeTypeId());
+
+		initEClass(emailAddressEClass, EmailAddress.class, "EmailAddress", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getEmailAddress_EmailAddress(), ecorePackage.getEString(), "emailAddress", null, 0, 1, EmailAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(emailAddressVerificationEClass, EmailAddressVerification.class, "EmailAddressVerification", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getEmailAddressVerification_EmailAddress(), ecorePackage.getEString(), "emailAddress", null, 1, 1, EmailAddressVerification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2132,6 +2167,12 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		   source,
 		   new String[] {
 			   "type", "description"
+		   });
+		addAnnotation
+		  (getEmailAddress_EmailAddress(),
+		   source,
+		   new String[] {
+			   "length", "255"
 		   });
 		addAnnotation
 		  (getEmailAddressVerification_EmailAddress(),

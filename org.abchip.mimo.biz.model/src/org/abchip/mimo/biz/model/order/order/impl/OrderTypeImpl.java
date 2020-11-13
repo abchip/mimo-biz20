@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeImpl#getOrderTypeId <em>Order Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeImpl#getOrderTypeAttrs <em>Order Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
@@ -183,7 +183,7 @@ public class OrderTypeImpl extends EntityTypeImpl<OrderHeader> implements OrderT
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(OrderPackage.Literals.ORDER_TYPE__HAS_TABLE, true);
 	}
 
@@ -193,7 +193,7 @@ public class OrderTypeImpl extends EntityTypeImpl<OrderHeader> implements OrderT
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(OrderPackage.Literals.ORDER_TYPE__HAS_TABLE, newHasTable);
 	}
 

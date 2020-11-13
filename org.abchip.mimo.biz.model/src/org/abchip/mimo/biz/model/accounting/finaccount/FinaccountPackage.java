@@ -2241,11 +2241,11 @@ public interface FinaccountPackage extends EPackage {
 	EReference getFinAccountTransType_FinAccountTransTypeAttrs();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTransType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTransType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTransType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTransType#getHasTable()
 	 * @see #getFinAccountTransType()
 	 * @generated
 	 */
@@ -2360,11 +2360,11 @@ public interface FinaccountPackage extends EPackage {
 	EReference getFinAccountType_FinAccountTypeGlAccounts();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getHasTable()
 	 * @see #getFinAccountType()
 	 * @generated
 	 */

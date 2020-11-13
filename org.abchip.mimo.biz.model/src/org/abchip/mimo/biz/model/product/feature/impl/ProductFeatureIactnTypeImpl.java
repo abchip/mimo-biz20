@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnTypeImpl#getProductFeatureIactnTypeId <em>Product Feature Iactn Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -180,7 +180,7 @@ public class ProductFeatureIactnTypeImpl extends EntityTypeImpl<ProductFeatureIa
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_IACTN_TYPE__HAS_TABLE, true);
 	}
 
@@ -190,7 +190,7 @@ public class ProductFeatureIactnTypeImpl extends EntityTypeImpl<ProductFeatureIa
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_IACTN_TYPE__HAS_TABLE, newHasTable);
 	}
 

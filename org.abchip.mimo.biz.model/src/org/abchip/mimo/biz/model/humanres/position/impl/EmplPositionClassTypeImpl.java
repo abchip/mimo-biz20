@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionClassTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionClassTypeImpl#getEmplPositionClassTypeId <em>Empl Position Class Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionClassTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionClassTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionClassTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionClassTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -172,7 +172,7 @@ public class EmplPositionClassTypeImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(PositionPackage.Literals.EMPL_POSITION_CLASS_TYPE__HAS_TABLE, true);
 	}
 
@@ -182,7 +182,7 @@ public class EmplPositionClassTypeImpl extends EntityIdentifiableImpl implements
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(PositionPackage.Literals.EMPL_POSITION_CLASS_TYPE__HAS_TABLE, newHasTable);
 	}
 

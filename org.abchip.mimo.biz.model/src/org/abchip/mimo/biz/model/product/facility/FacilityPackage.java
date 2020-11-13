@@ -4147,11 +4147,11 @@ public interface FacilityPackage extends EPackage {
 	EReference getFacilityType_FacilityTypeAttrs();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.product.facility.FacilityType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityType#getHasTable()
 	 * @see #getFacilityType()
 	 * @generated
 	 */

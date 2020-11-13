@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.method.impl.CustomMethodTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.method.impl.CustomMethodTypeImpl#getCustomMethodTypeId <em>Custom Method Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.method.impl.CustomMethodTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.method.impl.CustomMethodTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.method.impl.CustomMethodTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.method.impl.CustomMethodTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -179,7 +179,7 @@ public class CustomMethodTypeImpl extends EntityTypeImpl<CustomMethod> implement
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(MethodPackage.Literals.CUSTOM_METHOD_TYPE__HAS_TABLE, true);
 	}
 
@@ -189,7 +189,7 @@ public class CustomMethodTypeImpl extends EntityTypeImpl<CustomMethod> implement
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(MethodPackage.Literals.CUSTOM_METHOD_TYPE__HAS_TABLE, newHasTable);
 	}
 

@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocTypeImpl#getWorkEffortAssocTypeId <em>Work Effort Assoc Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocTypeImpl#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocTypeImpl#getWorkEffortAssocTypeAttrs <em>Work Effort Assoc Type Attrs</em>}</li>
  * </ul>
@@ -183,7 +183,7 @@ public class WorkEffortAssocTypeImpl extends EntityTypeImpl<WorkEffortAssoc> imp
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(WorkeffortPackage.Literals.WORK_EFFORT_ASSOC_TYPE__HAS_TABLE, true);
 	}
 
@@ -193,7 +193,7 @@ public class WorkEffortAssocTypeImpl extends EntityTypeImpl<WorkEffortAssoc> imp
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(WorkeffortPackage.Literals.WORK_EFFORT_ASSOC_TYPE__HAS_TABLE, newHasTable);
 	}
 

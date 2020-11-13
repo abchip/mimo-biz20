@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebAnalyticsTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebAnalyticsTypeImpl#getWebAnalyticsTypeId <em>Web Analytics Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebAnalyticsTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebAnalyticsTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebAnalyticsTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebAnalyticsTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -180,7 +180,7 @@ public class WebAnalyticsTypeImpl extends EntityTypeImpl<WebAnalyticsConfig> imp
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(WebsitePackage.Literals.WEB_ANALYTICS_TYPE__HAS_TABLE, true);
 	}
 
@@ -190,7 +190,7 @@ public class WebAnalyticsTypeImpl extends EntityTypeImpl<WebAnalyticsConfig> imp
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(WebsitePackage.Literals.WEB_ANALYTICS_TYPE__HAS_TABLE, newHasTable);
 	}
 

@@ -18,6 +18,8 @@ import java.util.Set;
 import org.abchip.mimo.biz.asf.plugins.entity.EntityUtils;
 import org.abchip.mimo.biz.asf.plugins.entity.ModelUtils;
 import org.abchip.mimo.biz.asf.plugins.entity.ServiceUtils;
+import org.abchip.mimo.biz.model.party.contact.EmailAddress;
+import org.abchip.mimo.biz.model.party.contact.PartyContactMech;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.Frame;
@@ -91,7 +93,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		Delegator delegator = ContextUtils.getDelegator(tenantId, raw);
 
-		if (!raw) {
+		if (!raw && !useRaw()) {
 			LocalDispatcher dispatcher = ContextUtils.getLocalDispatcher(delegator);
 			String serviceName = "create" + this.getFrame().getName();
 			try {
@@ -328,30 +330,32 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		}
 
 		Delegator delegator = ContextUtils.getDelegator(tenantId, false);
-		LocalDispatcher dispatcher = ContextUtils.getLocalDispatcher(delegator);
 
-		try {
-			String serviceName = "update" + this.getFrame().getName();
-			ModelService service = dispatcher.getDispatchContext().getModelService(serviceName);
+		if (!useRaw()) {
+			LocalDispatcher dispatcher = ContextUtils.getLocalDispatcher(delegator);
 
 			try {
-				Map<String, Object> context = ServiceUtils.toBizContext(this.getContext(), this.getTenant(), delegator, service, entity);
-				context = dispatcher.runSync(serviceName, context);
-				if (ServiceUtil.isError(context))
-					throw new ResourceException(ServiceUtil.getErrorMessage(context));
+				String serviceName = "update" + this.getFrame().getName();
+				ModelService service = dispatcher.getDispatchContext().getModelService(serviceName);
 
-				completeEntity(service, entity, context);
+				try {
+					Map<String, Object> context = ServiceUtils.toBizContext(this.getContext(), this.getTenant(), delegator, service, entity);
+					context = dispatcher.runSync(serviceName, context);
+					if (ServiceUtil.isError(context))
+						throw new ResourceException(ServiceUtil.getErrorMessage(context));
 
-				return;
-			} catch (GeneralException e) {
-				throw new ResourceException(e);
+					completeEntity(service, entity, context);
+
+					return;
+				} catch (GeneralException e) {
+					throw new ResourceException(e);
+				}
+			} catch (GenericServiceException e) {
+				// service not found
 			}
-		} catch (GenericServiceException e) {
-			// service not found
 		}
-
+		
 		boolean beganTransaction = false;
-
 		try {
 			beganTransaction = TransactionUtil.begin();
 
@@ -378,24 +382,27 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		}
 
 		Delegator delegator = ContextUtils.getDelegator(tenantId, false);
-		LocalDispatcher dispatcher = ContextUtils.getLocalDispatcher(delegator);
 
-		try {
-			String serviceName = "delete" + this.getFrame().getName();
-			ModelService service = dispatcher.getDispatchContext().getModelService(serviceName);
+		if (!useRaw()) {
+			LocalDispatcher dispatcher = ContextUtils.getLocalDispatcher(delegator);
 
 			try {
-				Map<String, Object> context = ServiceUtils.toBizContext(this.getContext(), this.getTenant(), delegator, service, entity);
-				context = dispatcher.runSync(serviceName, context);
-				if (ServiceUtil.isError(context))
-					throw new ResourceException(ServiceUtil.getErrorMessage(context));
+				String serviceName = "delete" + this.getFrame().getName();
+				ModelService service = dispatcher.getDispatchContext().getModelService(serviceName);
 
-				return;
-			} catch (GeneralException e) {
-				throw new ResourceException(e);
+				try {
+					Map<String, Object> context = ServiceUtils.toBizContext(this.getContext(), this.getTenant(), delegator, service, entity);
+					context = dispatcher.runSync(serviceName, context);
+					if (ServiceUtil.isError(context))
+						throw new ResourceException(ServiceUtil.getErrorMessage(context));
+
+					return;
+				} catch (GeneralException e) {
+					throw new ResourceException(e);
+				}
+			} catch (GenericServiceException e) {
+				// service not found
 			}
-		} catch (GenericServiceException e) {
-			// service not found
 		}
 
 		boolean beganTransaction = false;
@@ -589,5 +596,14 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			sb.append(genericValue.get(curPk.getName()));
 		}
 		return sb.toString();
+	}
+
+	private boolean useRaw() {
+		if (this.getFrame().getName().equals(PartyContactMech.class.getSimpleName()))
+			return true;
+		else if (this.getFrame().getName().equals(EmailAddress.class.getSimpleName()))
+			return true;
+		else
+			return false;
 	}
 }

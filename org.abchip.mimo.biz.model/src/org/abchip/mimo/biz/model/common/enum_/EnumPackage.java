@@ -380,11 +380,11 @@ public interface EnumPackage extends EPackage {
 	EAttribute getEnumerationType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.enum_.EnumerationType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.enum_.EnumerationType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.common.enum_.EnumerationType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.common.enum_.EnumerationType#getHasTable()
 	 * @see #getEnumerationType()
 	 * @generated
 	 */

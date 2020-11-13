@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeImpl#getFixedAssetTypeId <em>Fixed Asset Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeImpl#getFixedAssetTypeAttrs <em>Fixed Asset Type Attrs</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -193,7 +193,7 @@ public class FixedAssetTypeImpl extends EntityTypeImpl<FixedAsset> implements Fi
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(FixedassetPackage.Literals.FIXED_ASSET_TYPE__HAS_TABLE, true);
 	}
 
@@ -203,7 +203,7 @@ public class FixedAssetTypeImpl extends EntityTypeImpl<FixedAsset> implements Fi
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(FixedassetPackage.Literals.FIXED_ASSET_TYPE__HAS_TABLE, newHasTable);
 	}
 

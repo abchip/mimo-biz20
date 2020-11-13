@@ -67,6 +67,7 @@ public class ContactFactoryImpl extends EFactoryImpl implements ContactFactory {
 			case ContactPackage.CONTACT_MECH_TYPE: return (EObject)createContactMechType();
 			case ContactPackage.CONTACT_MECH_TYPE_ATTR: return (EObject)createContactMechTypeAttr();
 			case ContactPackage.CONTACT_MECH_TYPE_PURPOSE: return (EObject)createContactMechTypePurpose();
+			case ContactPackage.EMAIL_ADDRESS: return (EObject)createEmailAddress();
 			case ContactPackage.EMAIL_ADDRESS_VERIFICATION: return (EObject)createEmailAddressVerification();
 			case ContactPackage.FTP_ADDRESS: return (EObject)createFtpAddress();
 			case ContactPackage.PARTY_CONTACT_MECH: return (EObject)createPartyContactMech();
@@ -155,6 +156,17 @@ public class ContactFactoryImpl extends EFactoryImpl implements ContactFactory {
 	public ContactMechTypePurpose createContactMechTypePurpose() {
 		ContactMechTypePurposeImpl contactMechTypePurpose = new ContactMechTypePurposeImpl();
 		return contactMechTypePurpose;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EmailAddress createEmailAddress() {
+		EmailAddressImpl emailAddress = new EmailAddressImpl();
+		return emailAddress;
 	}
 
 	/**

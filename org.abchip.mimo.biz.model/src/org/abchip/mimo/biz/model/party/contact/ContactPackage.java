@@ -681,6 +681,115 @@ public interface ContactPackage extends EPackage {
 	int CONTACT_MECH_TYPE_PURPOSE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.contact.impl.EmailAddressImpl <em>Email Address</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.model.party.contact.impl.EmailAddressImpl
+	 * @see org.abchip.mimo.biz.model.party.contact.impl.ContactPackageImpl#getEmailAddress()
+	 * @generated
+	 */
+	int EMAIL_ADDRESS = 7;
+
+	/**
+	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_ADDRESS__CREATED_STAMP = CONTACT_MECH__CREATED_STAMP;
+
+	/**
+	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_ADDRESS__CREATED_TX_STAMP = CONTACT_MECH__CREATED_TX_STAMP;
+
+	/**
+	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_ADDRESS__LAST_UPDATED_STAMP = CONTACT_MECH__LAST_UPDATED_STAMP;
+
+	/**
+	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_ADDRESS__LAST_UPDATED_TX_STAMP = CONTACT_MECH__LAST_UPDATED_TX_STAMP;
+
+	/**
+	 * The feature id for the '<em><b>Contact Mech Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_ADDRESS__CONTACT_MECH_ID = CONTACT_MECH__CONTACT_MECH_ID;
+
+	/**
+	 * The feature id for the '<em><b>Contact Mech Attributes</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_ADDRESS__CONTACT_MECH_ATTRIBUTES = CONTACT_MECH__CONTACT_MECH_ATTRIBUTES;
+
+	/**
+	 * The feature id for the '<em><b>Contact Mech Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_ADDRESS__CONTACT_MECH_TYPE = CONTACT_MECH__CONTACT_MECH_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>From Contact Mech Links</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_ADDRESS__FROM_CONTACT_MECH_LINKS = CONTACT_MECH__FROM_CONTACT_MECH_LINKS;
+
+	/**
+	 * The feature id for the '<em><b>Info String</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_ADDRESS__INFO_STRING = CONTACT_MECH__INFO_STRING;
+
+	/**
+	 * The feature id for the '<em><b>Email Address</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_ADDRESS__EMAIL_ADDRESS = CONTACT_MECH_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Email Address</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMAIL_ADDRESS_FEATURE_COUNT = CONTACT_MECH_FEATURE_COUNT + 1;
+
+	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.contact.impl.EmailAddressVerificationImpl <em>Email Address Verification</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -688,7 +797,7 @@ public interface ContactPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.contact.impl.ContactPackageImpl#getEmailAddressVerification()
 	 * @generated
 	 */
-	int EMAIL_ADDRESS_VERIFICATION = 7;
+	int EMAIL_ADDRESS_VERIFICATION = 8;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -770,7 +879,7 @@ public interface ContactPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.contact.impl.ContactPackageImpl#getFtpAddress()
 	 * @generated
 	 */
-	int FTP_ADDRESS = 8;
+	int FTP_ADDRESS = 9;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -951,7 +1060,7 @@ public interface ContactPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.contact.impl.ContactPackageImpl#getPartyContactMech()
 	 * @generated
 	 */
-	int PARTY_CONTACT_MECH = 9;
+	int PARTY_CONTACT_MECH = 10;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1105,7 +1214,7 @@ public interface ContactPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.contact.impl.ContactPackageImpl#getPartyContactMechPurpose()
 	 * @generated
 	 */
-	int PARTY_CONTACT_MECH_PURPOSE = 10;
+	int PARTY_CONTACT_MECH_PURPOSE = 11;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1205,7 +1314,7 @@ public interface ContactPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.contact.impl.ContactPackageImpl#getPostalAddress()
 	 * @generated
 	 */
-	int POSTAL_ADDRESS = 11;
+	int POSTAL_ADDRESS = 12;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1467,7 +1576,7 @@ public interface ContactPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.contact.impl.ContactPackageImpl#getPostalAddressBoundary()
 	 * @generated
 	 */
-	int POSTAL_ADDRESS_BOUNDARY = 12;
+	int POSTAL_ADDRESS_BOUNDARY = 13;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1540,7 +1649,7 @@ public interface ContactPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.contact.impl.ContactPackageImpl#getTelecomNumber()
 	 * @generated
 	 */
-	int TELECOM_NUMBER = 13;
+	int TELECOM_NUMBER = 14;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1676,7 +1785,7 @@ public interface ContactPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.contact.impl.ContactPackageImpl#getValidContactMechRole()
 	 * @generated
 	 */
-	int VALID_CONTACT_MECH_ROLE = 14;
+	int VALID_CONTACT_MECH_ROLE = 15;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1980,11 +2089,11 @@ public interface ContactPackage extends EPackage {
 	EAttribute getContactMechType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.contact.ContactMechType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.contact.ContactMechType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.party.contact.ContactMechType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.party.contact.ContactMechType#getHasTable()
 	 * @see #getContactMechType()
 	 * @generated
 	 */
@@ -2075,6 +2184,27 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getContactMechTypePurpose_ContactMechPurposeType();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.party.contact.EmailAddress <em>Email Address</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Email Address</em>'.
+	 * @see org.abchip.mimo.biz.model.party.contact.EmailAddress
+	 * @generated
+	 */
+	EClass getEmailAddress();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.contact.EmailAddress#getEmailAddress <em>Email Address</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Email Address</em>'.
+	 * @see org.abchip.mimo.biz.model.party.contact.EmailAddress#getEmailAddress()
+	 * @see #getEmailAddress()
+	 * @generated
+	 */
+	EAttribute getEmailAddress_EmailAddress();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.party.contact.EmailAddressVerification <em>Email Address Verification</em>}'.
@@ -3033,6 +3163,24 @@ public interface ContactPackage extends EPackage {
 		 * @generated
 		 */
 		EReference CONTACT_MECH_TYPE_PURPOSE__CONTACT_MECH_PURPOSE_TYPE = eINSTANCE.getContactMechTypePurpose_ContactMechPurposeType();
+
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.party.contact.impl.EmailAddressImpl <em>Email Address</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.model.party.contact.impl.EmailAddressImpl
+		 * @see org.abchip.mimo.biz.model.party.contact.impl.ContactPackageImpl#getEmailAddress()
+		 * @generated
+		 */
+		EClass EMAIL_ADDRESS = eINSTANCE.getEmailAddress();
+
+		/**
+		 * The meta object literal for the '<em><b>Email Address</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EMAIL_ADDRESS__EMAIL_ADDRESS = eINSTANCE.getEmailAddress_EmailAddress();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.party.contact.impl.EmailAddressVerificationImpl <em>Email Address Verification</em>}' class.

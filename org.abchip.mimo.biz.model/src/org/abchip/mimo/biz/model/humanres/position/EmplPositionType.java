@@ -97,7 +97,7 @@ public interface EmplPositionType extends EntityType<EmplPosition>, EntityInfo {
 	 * @return the value of the '<em>Has Table</em>' attribute.
 	 * @see #setHasTable(boolean)
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionType_HasTable()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	boolean isHasTable();

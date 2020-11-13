@@ -67,7 +67,7 @@ public interface InventoryItemLabelType extends EntityType<InventoryItemLabel>, 
 	 * @return the value of the '<em>Has Table</em>' attribute.
 	 * @see #setHasTable(boolean)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemLabelType_HasTable()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	boolean isHasTable();

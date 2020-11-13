@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransTypeImpl#getFinAccountTransTypeId <em>Fin Account Trans Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransTypeImpl#getFinAccountTransTypeAttrs <em>Fin Account Trans Type Attrs</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTransTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -193,7 +193,7 @@ public class FinAccountTransTypeImpl extends EntityTypeImpl<FinAccountTrans> imp
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS_TYPE__HAS_TABLE, true);
 	}
 
@@ -203,7 +203,7 @@ public class FinAccountTransTypeImpl extends EntityTypeImpl<FinAccountTrans> imp
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS_TYPE__HAS_TABLE, newHasTable);
 	}
 

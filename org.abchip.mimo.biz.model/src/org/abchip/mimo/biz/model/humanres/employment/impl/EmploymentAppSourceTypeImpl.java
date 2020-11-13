@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppSourceTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppSourceTypeImpl#getEmploymentAppSourceTypeId <em>Employment App Source Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppSourceTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppSourceTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppSourceTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.EmploymentAppSourceTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -180,7 +180,7 @@ public class EmploymentAppSourceTypeImpl extends EntityTypeImpl<EmploymentApp> i
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(EmploymentPackage.Literals.EMPLOYMENT_APP_SOURCE_TYPE__HAS_TABLE, true);
 	}
 
@@ -190,7 +190,7 @@ public class EmploymentAppSourceTypeImpl extends EntityTypeImpl<EmploymentApp> i
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(EmploymentPackage.Literals.EMPLOYMENT_APP_SOURCE_TYPE__HAS_TABLE, newHasTable);
 	}
 

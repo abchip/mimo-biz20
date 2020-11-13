@@ -1515,11 +1515,11 @@ public interface CommunicationPackage extends EPackage {
 	EAttribute getCommunicationEventPrpTyp_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventPrpTyp#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventPrpTyp#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationEventPrpTyp#isHasTable()
+	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationEventPrpTyp#getHasTable()
 	 * @see #getCommunicationEventPrpTyp()
 	 * @generated
 	 */
@@ -1688,11 +1688,11 @@ public interface CommunicationPackage extends EPackage {
 	EAttribute getCommunicationEventType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.communication.CommunicationEventType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationEventType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationEventType#getHasTable()
 	 * @see #getCommunicationEventType()
 	 * @generated
 	 */

@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.BenefitTypeImpl#getBenefitName <em>Benefit Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.BenefitTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.BenefitTypeImpl#getEmployerPaidPercentage <em>Employer Paid Percentage</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.BenefitTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.BenefitTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.BenefitTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -242,7 +242,7 @@ public class BenefitTypeImpl extends EntityTypeImpl<PartyBenefit> implements Ben
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(EmploymentPackage.Literals.BENEFIT_TYPE__HAS_TABLE, true);
 	}
 
@@ -252,7 +252,7 @@ public class BenefitTypeImpl extends EntityTypeImpl<PartyBenefit> implements Ben
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(EmploymentPackage.Literals.BENEFIT_TYPE__HAS_TABLE, newHasTable);
 	}
 

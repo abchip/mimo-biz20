@@ -67,7 +67,7 @@ public interface ShipmentGatewayConfigType extends EntityType<ShipmentGatewayCon
 	 * @return the value of the '<em>Has Table</em>' attribute.
 	 * @see #setHasTable(boolean)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentGatewayConfigType_HasTable()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	boolean isHasTable();

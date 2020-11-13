@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTypeImpl#getInventoryItemTypeId <em>Inventory Item Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTypeImpl#getInventoryItemTypeAttrs <em>Inventory Item Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
@@ -183,7 +183,7 @@ public class InventoryItemTypeImpl extends EntityTypeImpl<InventoryItem> impleme
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(InventoryPackage.Literals.INVENTORY_ITEM_TYPE__HAS_TABLE, true);
 	}
 
@@ -193,7 +193,7 @@ public class InventoryItemTypeImpl extends EntityTypeImpl<InventoryItem> impleme
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(InventoryPackage.Literals.INVENTORY_ITEM_TYPE__HAS_TABLE, newHasTable);
 	}
 

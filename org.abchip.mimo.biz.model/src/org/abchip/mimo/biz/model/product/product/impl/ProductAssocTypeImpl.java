@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocTypeImpl#getProductAssocTypeId <em>Product Assoc Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -180,7 +180,7 @@ public class ProductAssocTypeImpl extends EntityTypeImpl<ProductAssoc> implement
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(ProductPackage.Literals.PRODUCT_ASSOC_TYPE__HAS_TABLE, true);
 	}
 
@@ -190,7 +190,7 @@ public class ProductAssocTypeImpl extends EntityTypeImpl<ProductAssoc> implement
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(ProductPackage.Literals.PRODUCT_ASSOC_TYPE__HAS_TABLE, newHasTable);
 	}
 

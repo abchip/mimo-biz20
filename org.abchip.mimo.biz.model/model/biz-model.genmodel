@@ -5877,6 +5877,9 @@
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//party/contact/ContactMechTypePurpose/contactMechPurposeType"/>
         </genClasses>
+        <genClasses ecoreClass="biz-model.ecore#//party/contact/EmailAddress">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//party/contact/EmailAddress/emailAddress"/>
+        </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//party/contact/EmailAddressVerification">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//party/contact/EmailAddressVerification/emailAddress"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//party/contact/EmailAddressVerification/expireDate"/>

@@ -90,6 +90,15 @@ public interface ContactFactory extends EFactory {
 	ContactMechTypePurpose createContactMechTypePurpose();
 
 	/**
+	 * Returns a new object of class '<em>Email Address</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Email Address</em>'.
+	 * @generated
+	 */
+	EmailAddress createEmailAddress();
+
+	/**
 	 * Returns a new object of class '<em>Email Address Verification</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

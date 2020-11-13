@@ -2721,11 +2721,11 @@ public interface InvoicePackage extends EPackage {
 	EAttribute getInvoiceContentType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceContentType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceContentType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoiceContentType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoiceContentType#getHasTable()
 	 * @see #getInvoiceContentType()
 	 * @generated
 	 */
@@ -3125,11 +3125,11 @@ public interface InvoicePackage extends EPackage {
 	EAttribute getInvoiceItemAssocType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemAssocType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemAssocType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemAssocType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemAssocType#getHasTable()
 	 * @see #getInvoiceItemAssocType()
 	 * @generated
 	 */
@@ -3255,11 +3255,11 @@ public interface InvoicePackage extends EPackage {
 	EAttribute getInvoiceItemType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemType#getHasTable()
 	 * @see #getInvoiceItemType()
 	 * @generated
 	 */
@@ -3774,11 +3774,11 @@ public interface InvoicePackage extends EPackage {
 	EAttribute getInvoiceType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoiceType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoiceType#getHasTable()
 	 * @see #getInvoiceType()
 	 * @generated
 	 */

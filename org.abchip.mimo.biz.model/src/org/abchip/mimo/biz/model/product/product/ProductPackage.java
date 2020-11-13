@@ -3476,11 +3476,11 @@ public interface ProductPackage extends EPackage {
 	EReference getGoodIdentificationType_GoodIdentifications();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.GoodIdentificationType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.GoodIdentificationType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.GoodIdentificationType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.product.product.GoodIdentificationType#getHasTable()
 	 * @see #getGoodIdentificationType()
 	 * @generated
 	 */
@@ -4562,11 +4562,11 @@ public interface ProductPackage extends EPackage {
 	EAttribute getProductAssocType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductAssocType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductAssocType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.ProductAssocType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.product.product.ProductAssocType#getHasTable()
 	 * @see #getProductAssocType()
 	 * @generated
 	 */
@@ -4877,11 +4877,11 @@ public interface ProductPackage extends EPackage {
 	EAttribute getProductContentType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductContentType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductContentType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.ProductContentType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.product.product.ProductContentType#getHasTable()
 	 * @see #getProductContentType()
 	 * @generated
 	 */
@@ -5876,11 +5876,11 @@ public interface ProductPackage extends EPackage {
 	EAttribute getProductType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.ProductType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.product.product.ProductType#getHasTable()
 	 * @see #getProductType()
 	 * @generated
 	 */

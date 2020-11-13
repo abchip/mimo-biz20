@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeImpl#getCostComponentTypeId <em>Cost Component Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeImpl#getCostComponentTypeAttrs <em>Cost Component Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -183,7 +183,7 @@ public class CostComponentTypeImpl extends EntityTypeImpl<CostComponent> impleme
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(CostPackage.Literals.COST_COMPONENT_TYPE__HAS_TABLE, true);
 	}
 
@@ -193,7 +193,7 @@ public class CostComponentTypeImpl extends EntityTypeImpl<CostComponent> impleme
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(CostPackage.Literals.COST_COMPONENT_TYPE__HAS_TABLE, newHasTable);
 	}
 

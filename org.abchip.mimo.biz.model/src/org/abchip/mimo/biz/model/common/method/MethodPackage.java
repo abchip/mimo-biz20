@@ -360,11 +360,11 @@ public interface MethodPackage extends EPackage {
 	EAttribute getCustomMethodType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.method.CustomMethodType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.method.CustomMethodType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.common.method.CustomMethodType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.common.method.CustomMethodType#getHasTable()
 	 * @see #getCustomMethodType()
 	 * @generated
 	 */

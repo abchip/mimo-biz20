@@ -5205,11 +5205,11 @@ public interface PartyPackage extends EPackage {
 	EAttribute getPartyClassificationType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.PartyClassificationType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.PartyClassificationType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.party.party.PartyClassificationType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.party.party.PartyClassificationType#getHasTable()
 	 * @see #getPartyClassificationType()
 	 * @generated
 	 */
@@ -5670,11 +5670,11 @@ public interface PartyPackage extends EPackage {
 	EAttribute getPartyIdentificationType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.PartyIdentificationType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.PartyIdentificationType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.party.party.PartyIdentificationType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.party.party.PartyIdentificationType#getHasTable()
 	 * @see #getPartyIdentificationType()
 	 * @generated
 	 */
@@ -6256,11 +6256,11 @@ public interface PartyPackage extends EPackage {
 	EAttribute getPartyRelationshipType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.PartyRelationshipType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.PartyRelationshipType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.party.party.PartyRelationshipType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.party.party.PartyRelationshipType#getHasTable()
 	 * @see #getPartyRelationshipType()
 	 * @generated
 	 */
@@ -6429,11 +6429,11 @@ public interface PartyPackage extends EPackage {
 	EAttribute getPartyType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.PartyType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.PartyType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.party.party.PartyType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.party.party.PartyType#getHasTable()
 	 * @see #getPartyType()
 	 * @generated
 	 */
@@ -6920,11 +6920,11 @@ public interface PartyPackage extends EPackage {
 	EAttribute getRoleType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.RoleType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.RoleType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.party.party.RoleType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.party.party.RoleType#getHasTable()
 	 * @see #getRoleType()
 	 * @generated
 	 */

@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransTypeImpl#getAcctgTransTypeId <em>Acctg Trans Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransTypeImpl#getAcctgTransTypeAttrs <em>Acctg Trans Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -182,7 +182,7 @@ public class AcctgTransTypeImpl extends EntityTypeImpl<AcctgTrans> implements Ac
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(LedgerPackage.Literals.ACCTG_TRANS_TYPE__HAS_TABLE, true);
 	}
 
@@ -192,7 +192,7 @@ public class AcctgTransTypeImpl extends EntityTypeImpl<AcctgTrans> implements Ac
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(LedgerPackage.Literals.ACCTG_TRANS_TYPE__HAS_TABLE, newHasTable);
 	}
 

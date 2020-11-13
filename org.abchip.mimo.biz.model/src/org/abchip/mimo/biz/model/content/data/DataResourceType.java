@@ -112,7 +112,7 @@ public interface DataResourceType extends EntityType<DataResource>, EntityInfo {
 	 * @return the value of the '<em>Has Table</em>' attribute.
 	 * @see #setHasTable(boolean)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourceType_HasTable()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	boolean isHasTable();

@@ -19,7 +19,11 @@ import org.abchip.mimo.biz.model.accounting.tax.PartyTaxAuthInfo;
 import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
+import org.abchip.mimo.biz.model.party.contact.ContactMechPurposeType;
 import org.abchip.mimo.biz.model.party.contact.ContactMechType;
+import org.abchip.mimo.biz.model.party.contact.EmailAddress;
+import org.abchip.mimo.biz.model.party.contact.PartyContactMech;
+import org.abchip.mimo.biz.model.party.contact.PartyContactMechPurpose;
 import org.abchip.mimo.biz.model.party.contact.PostalAddress;
 import org.abchip.mimo.biz.model.party.contact.TelecomNumber;
 import org.abchip.mimo.biz.model.party.party.Party;
@@ -32,10 +36,6 @@ import org.abchip.mimo.biz.model.party.party.Person;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.service.common.GetCommonDefault;
 import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
-import org.abchip.mimo.biz.service.party.CreatePartyContactMech;
-import org.abchip.mimo.biz.service.party.CreatePartyContactMechPurpose;
-import org.abchip.mimo.biz.service.party.CreatePartyContactMechPurposeResponse;
-import org.abchip.mimo.biz.service.party.CreatePartyContactMechResponse;
 import org.abchip.mimo.biz.service.party.GetPartyDefault;
 import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
@@ -80,7 +80,6 @@ public class CreateParty implements Callable<Long> {
 		long time2 = System.currentTimeMillis();
 		return time2 - time1;
 	}
-
 
 	public void createPartyGroup(ServiceManager serviceManager, String role) throws ResourceException, ServiceException {
 
@@ -163,31 +162,26 @@ public class CreateParty implements Callable<Long> {
 			break;
 		}
 
-		// Address
 		// PostaAddress
 		ResourceWriter<PostalAddress> postalAddressWriter = context.getResourceManager().getResourceWriter(PostalAddress.class);
 		PostalAddress postalAddress = postalAddressWriter.make();
 		postalAddress.setToName("Party " + party.getID());
-		// indirizzo_via
 		postalAddress.setAddress1("via Party " + party.getID());
-		// indirizzo_città
 		postalAddress.setCity("Milano");
-		// indirizzo_cap
 		postalAddress.setPostalCode("20100");
 		postalAddress.setContactMechType(context.createProxy(ContactMechType.class, "POSTAL_ADDRESS"));
 		postalAddress.setCountryGeo(commonDefault.getCountryGeo());
 		postalAddress.setStateProvinceGeo(context.createProxy(Geo.class, "IT-MI"));
 		postalAddressWriter.create(postalAddress);
-		createPartyContactMech(serviceManager, party, postalAddress, Arrays.asList("GENERAL_LOCATION", "SHIPPING_LOCATION"));
+		createPartyContactMech(context, party, postalAddress, Arrays.asList("GENERAL_LOCATION", "SHIPPING_LOCATION"));
 
-		// Email
-		// ContactMech
-		ResourceWriter<ContactMech> contactMechWriter = context.getResourceManager().getResourceWriter(ContactMech.class);
-		ContactMech contactMech = contactMechWriter.make();
-		contactMech.setInfoString("info" + party.getID() + "@gmail.com");
-		contactMech.setContactMechType(context.createProxy(ContactMechType.class, "EMAIL_ADDRESS"));
-		contactMechWriter.create(contactMech);
-		createPartyContactMech(serviceManager, party, contactMech, Arrays.asList("PRIMARY_EMAIL"));
+		// EmailAddress
+		ResourceWriter<EmailAddress> emailAddressWriter = context.getResourceManager().getResourceWriter(EmailAddress.class);
+		EmailAddress emailAddress = emailAddressWriter.make(true);
+		emailAddress.setEmailAddress("info" + party.getID() + "@gmail.com");
+		emailAddress.setContactMechType(context.createProxy(ContactMechType.class, "EMAIL_ADDRESS"));
+		emailAddressWriter.create(emailAddress);
+		createPartyContactMech(context, party, emailAddress, Arrays.asList("PRIMARY_EMAIL"));
 
 		// TelecomNumber
 		ResourceWriter<TelecomNumber> telecomNumberWriter = context.getResourceManager().getResourceWriter(TelecomNumber.class);
@@ -195,7 +189,7 @@ public class CreateParty implements Callable<Long> {
 		telecomNumber.setContactMechType(context.createProxy(ContactMechType.class, "TELECOM_NUMBER"));
 		telecomNumber.setContactNumber(StressTestUtils.generateRandomString(3, true) + " " + StressTestUtils.generateRandomString(7, true));
 		telecomNumberWriter.create(telecomNumber);
-		createPartyContactMech(serviceManager, party, telecomNumber, Arrays.asList("PRIMARY_PHONE"));
+		createPartyContactMech(context, party, telecomNumber, Arrays.asList("PRIMARY_PHONE"));
 
 		// PartyTaxAuthInfo
 		ResourceWriter<PartyTaxAuthInfo> partyTaxAuthInfoWriter = context.getResourceManager().getResourceWriter(PartyTaxAuthInfo.class);
@@ -240,60 +234,44 @@ public class CreateParty implements Callable<Long> {
 		}
 	}
 
-	private void createPartyContactMech(ServiceManager serviceManager, Party party, ContactMech contactMech, List<String> purposeTypes) throws ResourceException, ServiceException {
+	private void createPartyContactMech(Context context, Party party, ContactMech contactMech, List<String> purposeTypes) throws ResourceException, ServiceException {
 
 		// PartyContactMech
-		CreatePartyContactMech createPartyContactMech = serviceManager.prepare(CreatePartyContactMech.class);
-		if(purposeTypes.size()==1) {
-			createPartyContactMech.setPartyId(party.getID());
-			createPartyContactMech.setContactMechId(contactMech.getID());
-			createPartyContactMech.setContactMechTypeId(contactMech.getContactMechType().getID());
-			createPartyContactMech.setContactMechPurposeTypeId(purposeTypes.get(0));
-			createPartyContactMech.setFromDate(new Date());
-			CreatePartyContactMechResponse response = serviceManager.execute(createPartyContactMech);
-			if (response.onError())
-				LOGGER.error(response.getErrorMessage());
-			return;
-		} else {
-			createPartyContactMech.setPartyId(party.getID());
-			createPartyContactMech.setContactMechId(contactMech.getID());
-			createPartyContactMech.setContactMechTypeId(contactMech.getContactMechType().getID());
-			createPartyContactMech.setFromDate(new Date());
-			CreatePartyContactMechResponse response = serviceManager.execute(createPartyContactMech);
-			if (response.onError())
-				LOGGER.error(response.getErrorMessage());
-		}
-			
-		// PartyContactMechPurpose
-		for (String type : purposeTypes) {
-			CreatePartyContactMechPurpose createPartyContactMechPurpose = serviceManager.prepare(CreatePartyContactMechPurpose.class);
-			createPartyContactMechPurpose.setContactMechId(contactMech.getID());
-			createPartyContactMechPurpose.setContactMechPurposeTypeId(type);
-			createPartyContactMechPurpose.setFromDate(new Date());
-			createPartyContactMechPurpose.setPartyId(party.getID());
+		ResourceWriter<PartyContactMech> partyContactMechWriter = context.getResourceManager().getResourceWriter(PartyContactMech.class);
+		PartyContactMech partyContactMech = partyContactMechWriter.make();
+		partyContactMech.setParty(party);
+		partyContactMech.setContactMech(contactMech);
+		partyContactMech.setFromDate(new Date());
+		partyContactMechWriter.create(partyContactMech);
 
-			CreatePartyContactMechPurposeResponse responsePurpose = serviceManager.execute(createPartyContactMechPurpose);
-			if (responsePurpose.onError())
-				LOGGER.error(responsePurpose.getErrorMessage());
+		// PartyContactMechPurpose
+		for (String purposeType : purposeTypes) {
+			ResourceWriter<PartyContactMechPurpose> partyContactMechPurposeWriter = context.getResourceManager().getResourceWriter(PartyContactMechPurpose.class);
+			PartyContactMechPurpose partyContactMechPurpose = partyContactMechPurposeWriter.make();
+			partyContactMechPurpose.setContactMechPurposeType(context.createProxy(ContactMechPurposeType.class, purposeType));
+			partyContactMechPurpose.setParty(party);
+			partyContactMechPurpose.setContactMech(contactMech);
+			partyContactMechPurpose.setFromDate(new Date());
+			partyContactMechPurposeWriter.create(partyContactMechPurpose);
 		}
 	}
-	
+
 	private void createPaymentForCompany() throws ResourceException {
 		// PaymentMethod
 		// CreditCard
 		ResourceWriter<CreditCard> creditCardWriter = context.getResourceManager().getResourceWriter(CreditCard.class);
-		
-		// Search credit card company 
-		String filter = "partyId = '" + partyDefault.getOrganization().getID() + "' and paymentMethodTypeId = 'CREDIT_CARD'" ;
+
+		// Search credit card company
+		String filter = "partyId = '" + partyDefault.getOrganization().getID() + "' and paymentMethodTypeId = 'CREDIT_CARD'";
 		CreditCard creditCard = null;
-				
+
 		try (EntityIterator<CreditCard> cards = creditCardWriter.find(filter, null, null, 1)) {
 			for (CreditCard card : cards) {
 				creditCard = card;
 			}
 		}
-		
-		if(creditCard != null)
+
+		if (creditCard != null)
 			return;
 
 		creditCard = creditCardWriter.make();

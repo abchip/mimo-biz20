@@ -360,11 +360,11 @@ public interface ScreenPackage extends EPackage {
 	EAttribute getCustomScreenType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.screen.CustomScreenType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.screen.CustomScreenType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.common.screen.CustomScreenType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.common.screen.CustomScreenType#getHasTable()
 	 * @see #getCustomScreenType()
 	 * @generated
 	 */

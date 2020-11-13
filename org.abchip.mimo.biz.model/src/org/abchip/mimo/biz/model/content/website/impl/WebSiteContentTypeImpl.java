@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentTypeImpl#getWebSiteContentTypeId <em>Web Site Content Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.website.impl.WebSiteContentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -180,7 +180,7 @@ public class WebSiteContentTypeImpl extends EntityTypeImpl<WebSiteContent> imple
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(WebsitePackage.Literals.WEB_SITE_CONTENT_TYPE__HAS_TABLE, true);
 	}
 
@@ -190,7 +190,7 @@ public class WebSiteContentTypeImpl extends EntityTypeImpl<WebSiteContent> imple
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(WebsitePackage.Literals.WEB_SITE_CONTENT_TYPE__HAS_TABLE, newHasTable);
 	}
 

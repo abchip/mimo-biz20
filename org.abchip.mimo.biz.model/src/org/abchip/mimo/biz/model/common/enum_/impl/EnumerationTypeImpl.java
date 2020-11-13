@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.enum_.impl.EnumerationTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.enum_.impl.EnumerationTypeImpl#getEnumTypeId <em>Enum Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.enum_.impl.EnumerationTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.enum_.impl.EnumerationTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.enum_.impl.EnumerationTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.enum_.impl.EnumerationTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -179,7 +179,7 @@ public class EnumerationTypeImpl extends EntityTypeImpl<Enumeration> implements 
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(EnumPackage.Literals.ENUMERATION_TYPE__HAS_TABLE, true);
 	}
 
@@ -189,7 +189,7 @@ public class EnumerationTypeImpl extends EntityTypeImpl<Enumeration> implements 
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(EnumPackage.Literals.ENUMERATION_TYPE__HAS_TABLE, newHasTable);
 	}
 

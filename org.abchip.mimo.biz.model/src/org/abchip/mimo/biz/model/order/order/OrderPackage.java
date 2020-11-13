@@ -6510,11 +6510,11 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderAdjustmentType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustmentType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustmentType#getHasTable()
 	 * @see #getOrderAdjustmentType()
 	 * @generated
 	 */
@@ -6855,11 +6855,11 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderContentType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderContentType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderContentType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderContentType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.order.order.OrderContentType#getHasTable()
 	 * @see #getOrderContentType()
 	 * @generated
 	 */
@@ -8190,11 +8190,11 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemAssocType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemAssocType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemAssocType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemAssocType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemAssocType#getHasTable()
 	 * @see #getOrderItemAssocType()
 	 * @generated
 	 */
@@ -9311,11 +9311,11 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemType#getHasTable()
 	 * @see #getOrderItemType()
 	 * @generated
 	 */
@@ -10257,11 +10257,11 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.order.order.OrderType#getHasTable()
 	 * @see #getOrderType()
 	 * @generated
 	 */

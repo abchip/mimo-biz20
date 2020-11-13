@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeImpl#getGlAccountTypeId <em>Gl Account Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeImpl#getGlAccountTypeDefaults <em>Gl Account Type Defaults</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -193,7 +193,7 @@ public class GlAccountTypeImpl extends EntityTypeImpl<GlAccount> implements GlAc
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(LedgerPackage.Literals.GL_ACCOUNT_TYPE__HAS_TABLE, true);
 	}
 
@@ -203,7 +203,7 @@ public class GlAccountTypeImpl extends EntityTypeImpl<GlAccount> implements GlAc
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(LedgerPackage.Literals.GL_ACCOUNT_TYPE__HAS_TABLE, newHasTable);
 	}
 

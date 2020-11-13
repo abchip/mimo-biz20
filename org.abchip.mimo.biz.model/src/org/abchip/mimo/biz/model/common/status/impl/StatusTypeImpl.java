@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusTypeImpl#getStatusTypeId <em>Status Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -179,7 +179,7 @@ public class StatusTypeImpl extends EntityTypeImpl<StatusItem> implements Status
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(StatusPackage.Literals.STATUS_TYPE__HAS_TABLE, true);
 	}
 
@@ -189,7 +189,7 @@ public class StatusTypeImpl extends EntityTypeImpl<StatusItem> implements Status
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(StatusPackage.Literals.STATUS_TYPE__HAS_TABLE, newHasTable);
 	}
 

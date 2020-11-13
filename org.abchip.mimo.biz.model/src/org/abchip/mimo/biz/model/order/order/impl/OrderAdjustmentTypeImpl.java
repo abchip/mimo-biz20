@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeImpl#getOrderAdjustmentTypeId <em>Order Adjustment Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeImpl#getOrderAdjustmentTypeAttrs <em>Order Adjustment Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
@@ -183,7 +183,7 @@ public class OrderAdjustmentTypeImpl extends EntityTypeImpl<OrderAdjustment> imp
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT_TYPE__HAS_TABLE, true);
 	}
 
@@ -193,7 +193,7 @@ public class OrderAdjustmentTypeImpl extends EntityTypeImpl<OrderAdjustment> imp
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT_TYPE__HAS_TABLE, newHasTable);
 	}
 

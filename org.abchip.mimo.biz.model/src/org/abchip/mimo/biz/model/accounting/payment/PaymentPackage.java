@@ -6691,11 +6691,11 @@ public interface PaymentPackage extends EPackage {
 	EAttribute getDeductionType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.DeductionType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.DeductionType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.payment.DeductionType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.accounting.payment.DeductionType#getHasTable()
 	 * @see #getDeductionType()
 	 * @generated
 	 */
@@ -7682,11 +7682,11 @@ public interface PaymentPackage extends EPackage {
 	EAttribute getPaymentContentType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentContentType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentContentType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentContentType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentContentType#getHasTable()
 	 * @see #getPaymentContentType()
 	 * @generated
 	 */
@@ -9919,11 +9919,11 @@ public interface PaymentPackage extends EPackage {
 	EAttribute getPaymentGroupType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGroupType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGroupType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentGroupType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentGroupType#getHasTable()
 	 * @see #getPaymentGroupType()
 	 * @generated
 	 */
@@ -10168,11 +10168,11 @@ public interface PaymentPackage extends EPackage {
 	EAttribute getPaymentType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentType#getHasTable()
 	 * @see #getPaymentType()
 	 * @generated
 	 */

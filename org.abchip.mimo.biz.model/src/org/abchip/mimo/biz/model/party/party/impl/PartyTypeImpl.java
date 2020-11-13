@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeImpl#getPartyTypeId <em>Party Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeImpl#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeImpl#getPartyTypeAttrs <em>Party Type Attrs</em>}</li>
  * </ul>
@@ -182,7 +182,7 @@ public class PartyTypeImpl extends EntityTypeImpl<Party> implements PartyType {
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(PartyPackage.Literals.PARTY_TYPE__HAS_TABLE, true);
 	}
 
@@ -192,7 +192,7 @@ public class PartyTypeImpl extends EntityTypeImpl<Party> implements PartyType {
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(PartyPackage.Literals.PARTY_TYPE__HAS_TABLE, newHasTable);
 	}
 

@@ -112,7 +112,7 @@ public interface ContentType extends EntityType<Content>, EntityInfo {
 	 * @return the value of the '<em>Has Table</em>' attribute.
 	 * @see #setHasTable(boolean)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentType_HasTable()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	boolean isHasTable();

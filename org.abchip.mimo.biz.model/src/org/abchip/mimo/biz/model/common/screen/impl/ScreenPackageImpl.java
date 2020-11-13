@@ -876,7 +876,7 @@ public class ScreenPackageImpl extends EPackageImpl implements ScreenPackage {
 		initEClass(customScreenTypeEClass, CustomScreenType.class, "CustomScreenType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCustomScreenType_CustomScreenTypeId(), ecorePackage.getEString(), "customScreenTypeId", null, 1, 1, CustomScreenType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustomScreenType_Description(), ecorePackage.getEString(), "description", null, 0, 1, CustomScreenType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCustomScreenType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 0, 1, CustomScreenType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCustomScreenType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, CustomScreenType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustomScreenType_ParentTypeId(), ecorePackage.getEString(), "parentTypeId", null, 0, 1, CustomScreenType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create annotations

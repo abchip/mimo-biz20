@@ -4632,11 +4632,11 @@ public interface LedgerPackage extends EPackage {
 	EAttribute getAcctgTransEntryType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntryType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntryType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntryType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntryType#getHasTable()
 	 * @see #getAcctgTransEntryType()
 	 * @generated
 	 */
@@ -4697,11 +4697,11 @@ public interface LedgerPackage extends EPackage {
 	EAttribute getAcctgTransType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.AcctgTransType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.AcctgTransType#getHasTable()
 	 * @see #getAcctgTransType()
 	 * @generated
 	 */
@@ -5520,11 +5520,11 @@ public interface LedgerPackage extends EPackage {
 	EReference getGlAccountType_GlAccountTypeDefaults();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.GlAccountType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.GlAccountType#getHasTable()
 	 * @see #getGlAccountType()
 	 * @generated
 	 */
@@ -6563,11 +6563,11 @@ public interface LedgerPackage extends EPackage {
 	EAttribute getProductAverageCostType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCostType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCostType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCostType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCostType#getHasTable()
 	 * @see #getProductAverageCostType()
 	 * @generated
 	 */

@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityTypeImpl#getFacilityTypeId <em>Facility Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityTypeImpl#getFacilityTypeAttrs <em>Facility Type Attrs</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -194,7 +194,7 @@ public class FacilityTypeImpl extends EntityTypeImpl<Facility> implements Facili
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(FacilityPackage.Literals.FACILITY_TYPE__HAS_TABLE, true);
 	}
 
@@ -204,7 +204,7 @@ public class FacilityTypeImpl extends EntityTypeImpl<Facility> implements Facili
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(FacilityPackage.Literals.FACILITY_TYPE__HAS_TABLE, newHasTable);
 	}
 

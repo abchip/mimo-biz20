@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.screen.impl.CustomScreenTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.screen.impl.CustomScreenTypeImpl#getCustomScreenTypeId <em>Custom Screen Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.screen.impl.CustomScreenTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.screen.impl.CustomScreenTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.screen.impl.CustomScreenTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.screen.impl.CustomScreenTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
  * </ul>
  *
@@ -200,7 +200,7 @@ public class CustomScreenTypeImpl extends EntityTypeImpl<CustomScreen> implement
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(ScreenPackage.Literals.CUSTOM_SCREEN_TYPE__HAS_TABLE, true);
 	}
 
@@ -210,7 +210,7 @@ public class CustomScreenTypeImpl extends EntityTypeImpl<CustomScreen> implement
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(ScreenPackage.Literals.CUSTOM_SCREEN_TYPE__HAS_TABLE, newHasTable);
 	}
 

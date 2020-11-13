@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeImpl#getBudgetItemTypeId <em>Budget Item Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeImpl#getBudgetItemTypeAttrs <em>Budget Item Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -182,7 +182,7 @@ public class BudgetItemTypeImpl extends EntityTypeImpl<BudgetItem> implements Bu
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(BudgetPackage.Literals.BUDGET_ITEM_TYPE__HAS_TABLE, true);
 	}
 
@@ -192,7 +192,7 @@ public class BudgetItemTypeImpl extends EntityTypeImpl<BudgetItem> implements Bu
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(BudgetPackage.Literals.BUDGET_ITEM_TYPE__HAS_TABLE, newHasTable);
 	}
 

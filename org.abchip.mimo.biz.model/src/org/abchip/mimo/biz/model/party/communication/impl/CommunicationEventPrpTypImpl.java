@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPrpTypImpl#getCommunicationEventPrpTypId <em>Communication Event Prp Typ Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPrpTypImpl#getCommunicationEventPurposes <em>Communication Event Purposes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPrpTypImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPrpTypImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPrpTypImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPrpTypImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -181,7 +181,7 @@ public class CommunicationEventPrpTypImpl extends EntityTypeImpl<CommunicationEv
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PRP_TYP__HAS_TABLE, true);
 	}
 
@@ -191,7 +191,7 @@ public class CommunicationEventPrpTypImpl extends EntityTypeImpl<CommunicationEv
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PRP_TYP__HAS_TABLE, newHasTable);
 	}
 

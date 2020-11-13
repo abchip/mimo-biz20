@@ -2054,11 +2054,11 @@ public interface BudgetPackage extends EPackage {
 	EAttribute getBudgetItemType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetItemType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetItemType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetItemType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetItemType#getHasTable()
 	 * @see #getBudgetItemType()
 	 * @generated
 	 */
@@ -2670,11 +2670,11 @@ public interface BudgetPackage extends EPackage {
 	EAttribute getBudgetType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetType#getHasTable()
 	 * @see #getBudgetType()
 	 * @generated
 	 */

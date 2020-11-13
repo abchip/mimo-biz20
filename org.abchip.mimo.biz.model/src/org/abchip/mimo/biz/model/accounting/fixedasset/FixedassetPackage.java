@@ -3767,11 +3767,11 @@ public interface FixedassetPackage extends EPackage {
 	EAttribute getFixedAssetStdCostType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCostType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCostType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCostType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCostType#getHasTable()
 	 * @see #getFixedAssetStdCostType()
 	 * @generated
 	 */
@@ -3832,11 +3832,11 @@ public interface FixedassetPackage extends EPackage {
 	EReference getFixedAssetType_FixedAssetTypeAttrs();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetType#getHasTable()
 	 * @see #getFixedAssetType()
 	 * @generated
 	 */

@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentTypeImpl#getConfItemContentTypeId <em>Conf Item Content Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -180,7 +180,7 @@ public class ProdConfItemContentTypeImpl extends EntityTypeImpl<ProdConfItemCont
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(ConfigPackage.Literals.PROD_CONF_ITEM_CONTENT_TYPE__HAS_TABLE, true);
 	}
 
@@ -190,7 +190,7 @@ public class ProdConfItemContentTypeImpl extends EntityTypeImpl<ProdConfItemCont
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(ConfigPackage.Literals.PROD_CONF_ITEM_CONTENT_TYPE__HAS_TABLE, newHasTable);
 	}
 

@@ -1932,11 +1932,11 @@ public interface EmploymentPackage extends EPackage {
 	EAttribute getBenefitType_EmployerPaidPercentage();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.employment.BenefitType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.employment.BenefitType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.humanres.employment.BenefitType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.humanres.employment.BenefitType#getHasTable()
 	 * @see #getBenefitType()
 	 * @generated
 	 */
@@ -2084,11 +2084,11 @@ public interface EmploymentPackage extends EPackage {
 	EAttribute getEmplLeaveReasonType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeaveReasonType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeaveReasonType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmplLeaveReasonType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmplLeaveReasonType#getHasTable()
 	 * @see #getEmplLeaveReasonType()
 	 * @generated
 	 */
@@ -2138,11 +2138,11 @@ public interface EmploymentPackage extends EPackage {
 	EAttribute getEmplLeaveType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeaveType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.employment.EmplLeaveType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmplLeaveType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmplLeaveType#getHasTable()
 	 * @see #getEmplLeaveType()
 	 * @generated
 	 */
@@ -2399,11 +2399,11 @@ public interface EmploymentPackage extends EPackage {
 	EAttribute getEmploymentAppSourceType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.employment.EmploymentAppSourceType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.employment.EmploymentAppSourceType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentAppSourceType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentAppSourceType#getHasTable()
 	 * @see #getEmploymentAppSourceType()
 	 * @generated
 	 */
@@ -3052,11 +3052,11 @@ public interface EmploymentPackage extends EPackage {
 	EAttribute getTerminationType_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.employment.TerminationType#isHasTable <em>Has Table</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.employment.TerminationType#getHasTable <em>Has Table</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Table</em>'.
-	 * @see org.abchip.mimo.biz.model.humanres.employment.TerminationType#isHasTable()
+	 * @see org.abchip.mimo.biz.model.humanres.employment.TerminationType#getHasTable()
 	 * @see #getTerminationType()
 	 * @generated
 	 */

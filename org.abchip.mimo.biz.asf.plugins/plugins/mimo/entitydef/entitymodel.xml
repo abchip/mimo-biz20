@@ -26,6 +26,20 @@
 		<field name="sequencePolicy" type="value"></field>
 	</extend-entity>
 
+    <entity entity-name="EmailAddress"
+            package-name="org.apache.ofbiz.party.contact"
+            title="Email Address">
+      <field name="contactMechId" type="id"/>
+	  <field name="emailAddress" type="long-varchar"></field>      
+      <prim-key field="contactMechId"/>
+      <relation type="one" fk-name="EMAIL_ADDR_CMECH" rel-entity-name="ContactMech">
+        <key-map field-name="contactMechId"/>
+      </relation>
+      <index name="EMAIL_ADDR_IDX">
+        <index-field name="emailAddress"/>
+      </index>      
+    </entity>
+
 	<!-- Test file for write -->
 	<entity entity-name="TestEntity"
 		package-name="org.apache.ofbiz.entity.test"

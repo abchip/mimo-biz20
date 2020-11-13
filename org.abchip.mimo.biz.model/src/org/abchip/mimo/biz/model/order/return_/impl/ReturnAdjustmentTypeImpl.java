@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentTypeImpl#getReturnAdjustmentTypeId <em>Return Adjustment Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -180,7 +180,7 @@ public class ReturnAdjustmentTypeImpl extends EntityTypeImpl<ReturnAdjustment> i
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT_TYPE__HAS_TABLE, true);
 	}
 
@@ -190,7 +190,7 @@ public class ReturnAdjustmentTypeImpl extends EntityTypeImpl<ReturnAdjustment> i
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT_TYPE__HAS_TABLE, newHasTable);
 	}
 

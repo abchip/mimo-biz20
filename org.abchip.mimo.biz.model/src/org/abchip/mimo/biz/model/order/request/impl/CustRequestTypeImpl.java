@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestTypeImpl#getCustRequestTypeId <em>Cust Request Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestTypeImpl#getCustRequestTypeAttrs <em>Cust Request Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestTypeImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestTypeImpl#getParentType <em>Parent Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestTypeImpl#getParty <em>Party</em>}</li>
  * </ul>
@@ -216,7 +216,7 @@ public class CustRequestTypeImpl extends EntityTypeImpl<CustRequest> implements 
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(RequestPackage.Literals.CUST_REQUEST_TYPE__HAS_TABLE, true);
 	}
 
@@ -226,7 +226,7 @@ public class CustRequestTypeImpl extends EntityTypeImpl<CustRequest> implements 
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(RequestPackage.Literals.CUST_REQUEST_TYPE__HAS_TABLE, newHasTable);
 	}
 

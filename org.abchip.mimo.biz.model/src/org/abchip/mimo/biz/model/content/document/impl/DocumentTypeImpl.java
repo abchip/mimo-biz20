@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeImpl#getDocumentTypeId <em>Document Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeImpl#getDocumentTypeAttrs <em>Document Type Attrs</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeImpl#isHasTable <em>Has Table</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
@@ -194,7 +194,7 @@ public class DocumentTypeImpl extends EntityTypeImpl<Document> implements Docume
 	 * @generated
 	 */
 	@Override
-	public boolean isHasTable() {
+	public Boolean getHasTable() {
 		return (Boolean)eGet(DocumentPackage.Literals.DOCUMENT_TYPE__HAS_TABLE, true);
 	}
 
@@ -204,7 +204,7 @@ public class DocumentTypeImpl extends EntityTypeImpl<Document> implements Docume
 	 * @generated
 	 */
 	@Override
-	public void setHasTable(boolean newHasTable) {
+	public void setHasTable(Boolean newHasTable) {
 		eSet(DocumentPackage.Literals.DOCUMENT_TYPE__HAS_TABLE, newHasTable);
 	}
 
