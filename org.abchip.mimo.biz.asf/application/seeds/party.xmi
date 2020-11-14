@@ -9,6 +9,10 @@
     xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/party/party ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//party/party http://www.abchip.org/mimo/biz/model/accounting/tax ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//accounting/tax http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
     name="Party">
   <contents
+      xsi:type="biz-party:RoleType"
+      roleTypeId="SUPPORTER"
+      description="Supporter"/>
+  <contents
       xsi:type="biz-party:PartyGroup"
       partyId="ITA_ADE"
       groupName="Agenzia delle Entrata">
