@@ -20,7 +20,6 @@ import org.abchip.mimo.authentication.AuthenticationUserToken;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextProvider;
-import org.abchip.mimo.context.ContextRoot;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceReader;
 
@@ -80,13 +79,11 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 		if (application.getAdminKey() != null && !authentication.getAdminKey().equals(application.getAdminKey()))
 			throw new AuthenticationException("Invalid adminKey");
 
-		ContextRoot contextRoot = application.getContext();
-		if (contextRoot == null)
-			return null;
+		ContextProvider contextProvider = application.getContext().createChildContext(contextId);
+		Context contextUser = contextProvider.get();
+		contextUser.getContextDescription().setUser(application.getContextDescription().getUser());
+		contextUser.getContextDescription().setTenant(authentication.getTenant());
 
-		ContextProvider contextUser = contextRoot.createChildContext(contextId);
-		contextUser.get().getContextDescription().setUser(application.getContextDescription().getUser());
-		contextUser.get().getContextDescription().setTenant(authentication.getTenant());
-		return contextUser;
+		return contextProvider;
 	}
 }

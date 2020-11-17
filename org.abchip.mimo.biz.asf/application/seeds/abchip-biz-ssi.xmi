@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:biz-party="http://www.abchip.org/mimo/biz/model/party/party" 
+xmlns:mimo-ent="http://www.abchip.org/mimo/entity" 
+xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/party/party ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//party/party 
+					http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"  
+name="abchip-biz-ssi">
+  <contents xsi:type="biz-party:PartyIdentificationType" partyIdentificationTypeId="BADGE" description="Badge"/>
+</mimo-ent:EntityContainer>

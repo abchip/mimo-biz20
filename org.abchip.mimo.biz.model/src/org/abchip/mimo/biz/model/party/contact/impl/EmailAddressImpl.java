@@ -9,13 +9,13 @@ package org.abchip.mimo.biz.model.party.contact.impl;
 
 import org.abchip.mimo.biz.model.party.contact.ContactPackage;
 import org.abchip.mimo.biz.model.party.contact.EmailAddress;
-
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.impl.AdapterImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Email Address</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Email
+ * Address</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
@@ -27,17 +27,36 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class EmailAddressImpl extends ContactMechImpl implements EmailAddress {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated NOT
 	 */
 	protected EmailAddressImpl() {
 		super();
+		
+		this.eAdapters().add(new AdapterImpl() {
+			  public boolean isAdapterForType(Object type) {
+			    return false;
+			  }
+
+			  public void notifyChanged(Notification msg) {
+				  
+				  if(msg.getFeature().equals(ContactPackage.eINSTANCE.getEmailAddress_EmailAddress())) {
+					  switch (msg.getEventType()) {
+						case Notification.SET:
+							eSet(ContactPackage.Literals.CONTACT_MECH__INFO_STRING, msg.getNewStringValue());
+							break;
+						case Notification.UNSET:
+							eUnset(ContactPackage.Literals.CONTACT_MECH__INFO_STRING);
+							break;
+					  }
+					  msg.toString();
+				  }
+			  }
+		});
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -46,8 +65,7 @@ public class EmailAddressImpl extends ContactMechImpl implements EmailAddress {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -56,24 +74,12 @@ public class EmailAddressImpl extends ContactMechImpl implements EmailAddress {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated NOT
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
 	 */
 	@Override
 	public void setEmailAddress(String newEmailAddress) {
 		eSet(ContactPackage.Literals.EMAIL_ADDRESS__EMAIL_ADDRESS, newEmailAddress);
-		eSet(ContactPackage.Literals.CONTACT_MECH__INFO_STRING, newEmailAddress);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated NOT
-	 */
-	@Override
-	public void setInfoString(String newInfoString) {
-		this.setEmailAddress(newInfoString);
-	}
-
-} //EmailAddressImpl
+} // EmailAddressImpl
