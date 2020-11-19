@@ -86,10 +86,6 @@ public interface SegmentGroup extends EntityTyped<SegmentGroupType>, EntityInfo 
 	 * Returns the value of the '<em><b>Segment Group Classifications</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupClassification}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Segment Group Classifications</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Segment Group Classifications</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroup_SegmentGroupClassifications()
@@ -102,10 +98,6 @@ public interface SegmentGroup extends EntityTyped<SegmentGroupType>, EntityInfo 
 	 * Returns the value of the '<em><b>Segment Group Geos</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.marketing.segment.SegmentGroupGeo}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Segment Group Geos</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Segment Group Geos</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroup_SegmentGroupGeos()

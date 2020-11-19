@@ -84,10 +84,6 @@ public interface InvoiceType extends EntityType<Invoice>, EntityInfo {
 	 * Returns the value of the '<em><b>Invoice Type Attrs</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceTypeAttr}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Type Attrs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Invoice Type Attrs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceType_InvoiceTypeAttrs()

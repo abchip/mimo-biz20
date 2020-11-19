@@ -170,10 +170,6 @@ public interface WorkEffortSearchResult extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Work Effort Search Constraints</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Work Effort Search Constraints</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Work Effort Search Constraints</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortSearchResult_WorkEffortSearchConstraints()

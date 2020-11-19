@@ -921,10 +921,6 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>OAuth2 Git Hubs</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.passport.OAuth2GitHub}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>OAuth2 Git Hubs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>OAuth2 Git Hubs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_OAuth2GitHubs()
@@ -937,10 +933,6 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>OAuth2 Googles</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.passport.OAuth2Google}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>OAuth2 Googles</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>OAuth2 Googles</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_OAuth2Googles()
@@ -953,10 +945,6 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>OAuth2 Linked Ins</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.passport.OAuth2LinkedIn}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>OAuth2 Linked Ins</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>OAuth2 Linked Ins</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_OAuth2LinkedIns()
@@ -2157,10 +2145,6 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Product Store Email Settings</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.store.ProductStoreEmailSetting}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Email Settings</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Product Store Email Settings</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ProductStoreEmailSettings()
@@ -2186,10 +2170,6 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Product Store Fin Act Settings</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Store Fin Act Settings</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Product Store Fin Act Settings</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ProductStoreFinActSettings()

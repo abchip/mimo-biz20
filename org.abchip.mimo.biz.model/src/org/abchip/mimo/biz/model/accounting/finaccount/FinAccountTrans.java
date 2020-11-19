@@ -152,6 +152,18 @@ public interface FinAccountTrans extends EntityTyped<FinAccountTransType>, Entit
 	void setFinAccount(FinAccount value);
 
 	/**
+	 * Returns the value of the '<em><b>Fin Account Trans Attributes</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTransAttribute}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fin Account Trans Attributes</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_FinAccountTransAttributes()
+	 * @model derived="true"
+	 * @generated
+	 */
+	List<FinAccountTransAttribute> getFinAccountTransAttributes();
+
+	/**
 	 * Returns the value of the '<em><b>Order Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -339,22 +351,6 @@ public interface FinAccountTrans extends EntityTyped<FinAccountTransType>, Entit
 	 * @generated
 	 */
 	void setTransactionDate(Date value);
-
-	/**
-	 * Returns the value of the '<em><b>Fin Account Trans Attributes</b></em>' reference list.
-	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTransAttribute}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fin Account Trans Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fin Account Trans Attributes</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_FinAccountTransAttributes()
-	 * @model derived="true"
-	 * @generated
-	 */
-	List<FinAccountTransAttribute> getFinAccountTransAttributes();
 
 	/**
 	 * Returns the value of the '<em><b>Fin Account Trans Type</b></em>' reference.

@@ -249,10 +249,6 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * Returns the value of the '<em><b>Communication Event Products</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.communication.CommunicationEventProduct}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Communication Event Products</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Communication Event Products</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_CommunicationEventProducts()
@@ -1058,6 +1054,31 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	void setPrimaryProductCategory(ProductCategory value);
 
 	/**
+	 * Returns the value of the '<em><b>Product Attributes</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.product.ProductAttribute}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Attributes</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductAttributes()
+	 * @model derived="true"
+	 * @generated
+	 */
+	List<ProductAttribute> getProductAttributes();
+
+	/**
+	 * Returns the value of the '<em><b>Product Cost Component Calcs</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Cost Component Calcs</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductCostComponentCalcs()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ProductCostComponentCalc> getProductCostComponentCalcs();
+
+	/**
 	 * Returns the value of the '<em><b>Product Depth</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -1113,10 +1134,6 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * Returns the value of the '<em><b>Product Facilities</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.facility.ProductFacility}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Facilities</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Product Facilities</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductFacilities()
@@ -1142,10 +1159,6 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * Returns the value of the '<em><b>Product Geos</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.product.ProductGeo}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Geos</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Product Geos</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductGeos()
@@ -1184,10 +1197,6 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * Returns the value of the '<em><b>Product Maints</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.product.ProductMaint}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Maints</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Product Maints</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductMaints()
@@ -1200,10 +1209,6 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * Returns the value of the '<em><b>Product Meters</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.product.ProductMeter}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Meters</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Product Meters</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductMeters()
@@ -1918,35 +1923,6 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @generated
 	 */
 	void setWidthUom(Uom value);
-
-	/**
-	 * Returns the value of the '<em><b>Product Attributes</b></em>' reference list.
-	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.product.ProductAttribute}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Attributes</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductAttributes()
-	 * @model derived="true"
-	 * @generated
-	 */
-	List<ProductAttribute> getProductAttributes();
-
-	/**
-	 * Returns the value of the '<em><b>Product Cost Component Calcs</b></em>' reference list.
-	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Cost Component Calcs</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductCostComponentCalcs()
-	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
-	 * @generated
-	 */
-	List<ProductCostComponentCalc> getProductCostComponentCalcs();
 
 	/**
 	 * Returns the value of the '<em><b>Product Id</b></em>' attribute.

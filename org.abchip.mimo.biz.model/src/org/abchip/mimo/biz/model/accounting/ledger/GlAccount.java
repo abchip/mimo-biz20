@@ -183,6 +183,30 @@ public interface GlAccount extends EntityTyped<GlAccountType>, EntityInfo {
 	void setGlAccountClass(GlAccountClass value);
 
 	/**
+	 * Returns the value of the '<em><b>Gl Account Group Members</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountGroupMember}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Gl Account Group Members</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlAccountGroupMembers()
+	 * @model derived="true"
+	 * @generated
+	 */
+	List<GlAccountGroupMember> getGlAccountGroupMembers();
+
+	/**
+	 * Returns the value of the '<em><b>Gl Account Organizations</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountOrganization}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Gl Account Organizations</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlAccountOrganizations()
+	 * @model derived="true"
+	 * @generated
+	 */
+	List<GlAccountOrganization> getGlAccountOrganizations();
+
+	/**
 	 * Returns the value of the '<em><b>Product Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -207,19 +231,6 @@ public interface GlAccount extends EntityTyped<GlAccountType>, EntityInfo {
 	 * @generated
 	 */
 	void setProductId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Gl Budget Xrefs</b></em>' reference list.
-	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.ledger.GlBudgetXref}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Budget Xrefs</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlBudgetXrefs()
-	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
-	 * @generated
-	 */
-	List<GlBudgetXref> getGlBudgetXrefs();
 
 	/**
 	 * Returns the value of the '<em><b>Gl Resource Type</b></em>' reference.
@@ -288,38 +299,6 @@ public interface GlAccount extends EntityTyped<GlAccountType>, EntityInfo {
 	void setParentGlAccount(GlAccount value);
 
 	/**
-	 * Returns the value of the '<em><b>Gl Account Group Members</b></em>' reference list.
-	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountGroupMember}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gl Account Group Members</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Account Group Members</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlAccountGroupMembers()
-	 * @model derived="true"
-	 * @generated
-	 */
-	List<GlAccountGroupMember> getGlAccountGroupMembers();
-
-	/**
-	 * Returns the value of the '<em><b>Gl Account Organizations</b></em>' reference list.
-	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountOrganization}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Gl Account Organizations</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Gl Account Organizations</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlAccountOrganizations()
-	 * @model derived="true"
-	 * @generated
-	 */
-	List<GlAccountOrganization> getGlAccountOrganizations();
-
-	/**
 	 * Returns the value of the '<em><b>Gl Account Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -340,6 +319,19 @@ public interface GlAccount extends EntityTyped<GlAccountType>, EntityInfo {
 	 * @generated
 	 */
 	void setGlAccountType(GlAccountType value);
+
+	/**
+	 * Returns the value of the '<em><b>Gl Budget Xrefs</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.ledger.GlBudgetXref}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Gl Budget Xrefs</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlBudgetXrefs()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<GlBudgetXref> getGlBudgetXrefs();
 
 	/**
 	 * Returns the value of the '<em><b>Gl Account Id</b></em>' attribute.

@@ -10,7 +10,6 @@ package org.abchip.mimo.biz.model.order.order.impl;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
-
 import org.abchip.mimo.biz.model.accounting.payment.BillingAccount;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
@@ -254,7 +253,8 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -462,7 +462,8 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -490,7 +491,8 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -500,7 +502,8 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -510,7 +513,8 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -520,7 +524,8 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -530,7 +535,8 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -540,7 +546,8 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -586,7 +593,8 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -673,7 +681,8 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -799,7 +808,8 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")

@@ -290,10 +290,6 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * Returns the value of the '<em><b>Party Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.party.PartyAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Party Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyAttributes()
@@ -371,10 +367,6 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * Returns the value of the '<em><b>Party Identifications</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.party.PartyIdentification}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Identifications</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Party Identifications</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyIdentifications()
@@ -387,10 +379,6 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * Returns the value of the '<em><b>Party Name Histories</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.party.PartyNameHistory}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Name Histories</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Party Name Histories</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyNameHistories()
@@ -403,10 +391,6 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * Returns the value of the '<em><b>Party Notes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.party.PartyNote}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Notes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Party Notes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyNotes()
@@ -419,10 +403,6 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * Returns the value of the '<em><b>Party Profile Defaults</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.party.PartyProfileDefault}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Profile Defaults</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Party Profile Defaults</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyProfileDefaults()
@@ -461,10 +441,6 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * Returns the value of the '<em><b>Party Roles</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.party.PartyRole}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Roles</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Party Roles</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyRoles()
@@ -477,10 +453,6 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * Returns the value of the '<em><b>Party Skills</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.humanres.ability.PartySkill}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Skills</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Party Skills</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartySkills()
@@ -512,20 +484,17 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	void setPartyType(PartyType value);
 
 	/**
-	 * Returns the value of the '<em><b>Supplier Product Features</b></em>' reference list.
-	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.supplier.SupplierProductFeature}.
+	 * Returns the value of the '<em><b>Performance Notes</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.humanres.ability.PerformanceNote}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Supplier Product Features</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Supplier Product Features</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_SupplierProductFeatures()
+	 * @return the value of the '<em>Performance Notes</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PerformanceNotes()
 	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
 	 * @generated
 	 */
-	List<SupplierProductFeature> getSupplierProductFeatures();
+	List<PerformanceNote> getPerformanceNotes();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -566,19 +535,6 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * @generated
 	 */
 	ContactMech getEmail();
-
-	/**
-	 * Returns the value of the '<em><b>Performance Notes</b></em>' reference list.
-	 * The list contents are of type {@link org.abchip.mimo.biz.model.humanres.ability.PerformanceNote}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Performance Notes</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PerformanceNotes()
-	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
-	 * @generated
-	 */
-	List<PerformanceNote> getPerformanceNotes();
 
 	/**
 	 * Returns the value of the '<em><b>Preferred Currency Uom</b></em>' reference.
@@ -623,6 +579,18 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * @generated
 	 */
 	void setStatus(StatusItem value);
+
+	/**
+	 * Returns the value of the '<em><b>Supplier Product Features</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.supplier.SupplierProductFeature}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Supplier Product Features</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_SupplierProductFeatures()
+	 * @model derived="true"
+	 * @generated
+	 */
+	List<SupplierProductFeature> getSupplierProductFeatures();
 
 	/**
 	 * Returns the value of the '<em><b>Party Id</b></em>' attribute.

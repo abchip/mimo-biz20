@@ -92,10 +92,6 @@ public interface Document extends EntityTyped<DocumentType>, EntityInfo {
 	 * Returns the value of the '<em><b>Document Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.content.document.DocumentAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Document Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Document Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.content.document.DocumentPackage#getDocument_DocumentAttributes()

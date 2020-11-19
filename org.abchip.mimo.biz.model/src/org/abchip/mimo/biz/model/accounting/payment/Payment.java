@@ -305,10 +305,6 @@ public interface Payment extends EntityTyped<PaymentType>, EntityInfo {
 	 * Returns the value of the '<em><b>Payment Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.payment.PaymentAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Payment Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPayment_PaymentAttributes()

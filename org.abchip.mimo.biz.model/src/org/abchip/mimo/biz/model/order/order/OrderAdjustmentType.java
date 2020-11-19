@@ -84,10 +84,6 @@ public interface OrderAdjustmentType extends EntityType<OrderAdjustment>, Entity
 	 * Returns the value of the '<em><b>Order Adjustment Type Attrs</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.order.OrderAdjustmentTypeAttr}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Adjustment Type Attrs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Order Adjustment Type Attrs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustmentType_OrderAdjustmentTypeAttrs()

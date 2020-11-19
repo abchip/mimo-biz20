@@ -106,10 +106,6 @@ public interface SubscriptionType extends EntityType<Subscription>, EntityInfo {
 	 * Returns the value of the '<em><b>Subscription Type Attrs</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.subscription.SubscriptionTypeAttr}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Subscription Type Attrs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Subscription Type Attrs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionType_SubscriptionTypeAttrs()

@@ -88,10 +88,6 @@ public interface SubscriptionActivity extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Subscription Fulfillment Pieces</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.subscription.SubscriptionFulfillmentPiece}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Subscription Fulfillment Pieces</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Subscription Fulfillment Pieces</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionActivity_SubscriptionFulfillmentPieces()

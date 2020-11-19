@@ -61,10 +61,6 @@ public interface VarianceReason extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Variance Reason Gl Accounts</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.ledger.VarianceReasonGlAccount}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Variance Reason Gl Accounts</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Variance Reason Gl Accounts</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getVarianceReason_VarianceReasonGlAccounts()

@@ -150,10 +150,6 @@ public interface Quote extends EntityTyped<QuoteType>, EntityInfo {
 	 * Returns the value of the '<em><b>Quote Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.quote.QuoteAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Quote Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Quote Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuote_QuoteAttributes()
@@ -166,10 +162,6 @@ public interface Quote extends EntityTyped<QuoteType>, EntityInfo {
 	 * Returns the value of the '<em><b>Quote Coefficients</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.quote.QuoteCoefficient}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Quote Coefficients</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Quote Coefficients</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuote_QuoteCoefficients()
@@ -182,10 +174,6 @@ public interface Quote extends EntityTyped<QuoteType>, EntityInfo {
 	 * Returns the value of the '<em><b>Quote Items</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.quote.QuoteItem}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Quote Items</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Quote Items</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuote_QuoteItems()
@@ -273,10 +261,6 @@ public interface Quote extends EntityTyped<QuoteType>, EntityInfo {
 	 * Returns the value of the '<em><b>Quote Notes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.quote.QuoteNote}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Quote Notes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Quote Notes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuote_QuoteNotes()
@@ -311,10 +295,6 @@ public interface Quote extends EntityTyped<QuoteType>, EntityInfo {
 	 * Returns the value of the '<em><b>Quote Work Efforts</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.quote.QuoteWorkEffort}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Quote Work Efforts</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Quote Work Efforts</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuote_QuoteWorkEfforts()

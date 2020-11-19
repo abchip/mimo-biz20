@@ -998,6 +998,28 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ProductAttribute> getProductAttributes() {
+		return (List<ProductAttribute>)eGet(ProductPackage.Literals.PRODUCT__PRODUCT_ATTRIBUTES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ProductCostComponentCalc> getProductCostComponentCalcs() {
+		return (List<ProductCostComponentCalc>)eGet(ProductPackage.Literals.PRODUCT__PRODUCT_COST_COMPONENT_CALCS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public BigDecimal getProductDepth() {
 		return (BigDecimal)eGet(ProductPackage.Literals.PRODUCT__PRODUCT_DEPTH, true);
@@ -1715,28 +1737,6 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<ProductAttribute> getProductAttributes() {
-		return (List<ProductAttribute>)eGet(ProductPackage.Literals.PRODUCT__PRODUCT_ATTRIBUTES, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<ProductCostComponentCalc> getProductCostComponentCalcs() {
-		return (List<ProductCostComponentCalc>)eGet(ProductPackage.Literals.PRODUCT__PRODUCT_COST_COMPONENT_CALCS, true);
 	}
 
 	/**

@@ -358,8 +358,8 @@ public class ProductCategoryImpl extends EntityTypedImpl<ProductCategoryType> im
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public List<ProductFeatureCatGrpAppl> getProductFeatureCatGrpAppls() {
-		return (List<ProductFeatureCatGrpAppl>)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRODUCT_FEATURE_CAT_GRP_APPLS, true);
+	public List<ProductCategoryAttribute> getProductCategoryAttributes() {
+		return (List<ProductCategoryAttribute>)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRODUCT_CATEGORY_ATTRIBUTES, true);
 	}
 
 	/**
@@ -369,8 +369,19 @@ public class ProductCategoryImpl extends EntityTypedImpl<ProductCategoryType> im
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public List<ProductFeatureCategoryAppl> getProductFeatureCategoryAppls() {
-		return (List<ProductFeatureCategoryAppl>)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRODUCT_FEATURE_CATEGORY_APPLS, true);
+	public List<ProductCategoryLink> getProductCategoryLinks() {
+		return (List<ProductCategoryLink>)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRODUCT_CATEGORY_LINKS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ProductCategoryMember> getProductCategoryMembers() {
+		return (List<ProductCategoryMember>)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRODUCT_CATEGORY_MEMBERS, true);
 	}
 
 	/**
@@ -436,39 +447,6 @@ public class ProductCategoryImpl extends EntityTypedImpl<ProductCategoryType> im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<ProductCategoryAttribute> getProductCategoryAttributes() {
-		return (List<ProductCategoryAttribute>)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRODUCT_CATEGORY_ATTRIBUTES, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<ProductCategoryLink> getProductCategoryLinks() {
-		return (List<ProductCategoryLink>)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRODUCT_CATEGORY_LINKS, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<ProductCategoryMember> getProductCategoryMembers() {
-		return (List<ProductCategoryMember>)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRODUCT_CATEGORY_MEMBERS, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public ProductCategoryType getProductCategoryType() {
 		return (ProductCategoryType)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRODUCT_CATEGORY_TYPE, true);
@@ -482,6 +460,28 @@ public class ProductCategoryImpl extends EntityTypedImpl<ProductCategoryType> im
 	@Override
 	public void setProductCategoryType(ProductCategoryType newProductCategoryType) {
 		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRODUCT_CATEGORY_TYPE, newProductCategoryType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ProductFeatureCatGrpAppl> getProductFeatureCatGrpAppls() {
+		return (List<ProductFeatureCatGrpAppl>)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRODUCT_FEATURE_CAT_GRP_APPLS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ProductFeatureCategoryAppl> getProductFeatureCategoryAppls() {
+		return (List<ProductFeatureCategoryAppl>)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRODUCT_FEATURE_CATEGORY_APPLS, true);
 	}
 
 	/**

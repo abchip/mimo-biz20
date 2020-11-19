@@ -277,17 +277,6 @@ public class BillingAccountTermImpl extends EntityIdentifiableImpl implements Bi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<BillingAccountTermAttr> getBillingAccountTermAttrs() {
-		return (List<BillingAccountTermAttr>)eGet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM__BILLING_ACCOUNT_TERM_ATTRS, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public String getBillingAccountTermId() {
 		return (String)eGet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM__BILLING_ACCOUNT_TERM_ID, true);
@@ -321,6 +310,17 @@ public class BillingAccountTermImpl extends EntityIdentifiableImpl implements Bi
 	@Override
 	public void setBillingAccount(BillingAccount newBillingAccount) {
 		eSet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM__BILLING_ACCOUNT, newBillingAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<BillingAccountTermAttr> getBillingAccountTermAttrs() {
+		return (List<BillingAccountTermAttr>)eGet(PaymentPackage.Literals.BILLING_ACCOUNT_TERM__BILLING_ACCOUNT_TERM_ATTRS, true);
 	}
 
 } //BillingAccountTermImpl

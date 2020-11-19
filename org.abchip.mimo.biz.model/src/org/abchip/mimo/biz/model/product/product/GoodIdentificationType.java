@@ -62,10 +62,6 @@ public interface GoodIdentificationType extends EntityType<GoodIdentification>, 
 	 * Returns the value of the '<em><b>Good Identifications</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.product.GoodIdentification}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Good Identifications</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Good Identifications</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getGoodIdentificationType_GoodIdentifications()

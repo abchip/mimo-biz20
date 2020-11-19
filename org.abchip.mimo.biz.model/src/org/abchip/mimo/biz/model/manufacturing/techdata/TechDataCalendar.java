@@ -111,10 +111,6 @@ public interface TechDataCalendar extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Tech Data Calendar Exc Daies</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarExcDay}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tech Data Calendar Exc Daies</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Tech Data Calendar Exc Daies</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.manufacturing.techdata.TechdataPackage#getTechDataCalendar_TechDataCalendarExcDaies()
@@ -127,10 +123,6 @@ public interface TechDataCalendar extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Tech Data Calendar Exc Weeks</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarExcWeek}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tech Data Calendar Exc Weeks</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Tech Data Calendar Exc Weeks</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.manufacturing.techdata.TechdataPackage#getTechDataCalendar_TechDataCalendarExcWeeks()

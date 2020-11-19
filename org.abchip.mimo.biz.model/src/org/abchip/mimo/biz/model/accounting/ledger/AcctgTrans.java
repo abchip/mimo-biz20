@@ -721,10 +721,6 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	 * Returns the value of the '<em><b>Acctg Trans Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Acctg Trans Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Acctg Trans Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_AcctgTransAttributes()
@@ -737,10 +733,6 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	 * Returns the value of the '<em><b>Acctg Trans Entries</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntry}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Acctg Trans Entries</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Acctg Trans Entries</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_AcctgTransEntries()

@@ -108,10 +108,6 @@ public interface RoleType extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Role Type Attrs</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.party.RoleTypeAttr}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Role Type Attrs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Role Type Attrs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getRoleType_RoleTypeAttrs()
@@ -124,10 +120,6 @@ public interface RoleType extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Valid Contact Mech Roles</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.contact.ValidContactMechRole}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Valid Contact Mech Roles</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Valid Contact Mech Roles</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getRoleType_ValidContactMechRoles()

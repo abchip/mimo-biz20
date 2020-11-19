@@ -177,17 +177,6 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<CommunicationEventReturn> getCommunicationEventReturns() {
-		return (List<CommunicationEventReturn>)eGet(ReturnPackage.Literals.RETURN_HEADER__COMMUNICATION_EVENT_RETURNS, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public UserLogin getCreatedBy() {
 		return (UserLogin)eGet(ReturnPackage.Literals.RETURN_HEADER__CREATED_BY, true);
@@ -452,6 +441,17 @@ public class ReturnHeaderImpl extends EntityTypedImpl<ReturnHeaderType> implemen
 	@Override
 	public void setBillingAccount(BillingAccount newBillingAccount) {
 		eSet(ReturnPackage.Literals.RETURN_HEADER__BILLING_ACCOUNT, newBillingAccount);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<CommunicationEventReturn> getCommunicationEventReturns() {
+		return (List<CommunicationEventReturn>)eGet(ReturnPackage.Literals.RETURN_HEADER__COMMUNICATION_EVENT_RETURNS, true);
 	}
 
 	/**

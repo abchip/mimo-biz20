@@ -510,6 +510,19 @@ public interface TrackingCode extends EntityTyped<TrackingCodeType>, EntityInfo 
 	void setTrackingCodeType(TrackingCodeType value);
 
 	/**
+	 * Returns the value of the '<em><b>Tracking Code Visits</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeVisit}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tracking Code Visits</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCode_TrackingCodeVisits()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<TrackingCodeVisit> getTrackingCodeVisits();
+
+	/**
 	 * Returns the value of the '<em><b>Tracking Code Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -535,18 +548,5 @@ public interface TrackingCode extends EntityTyped<TrackingCodeType>, EntityInfo 
 	 * @generated
 	 */
 	void setTrackingCodeId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Tracking Code Visits</b></em>' reference list.
-	 * The list contents are of type {@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeVisit}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Tracking Code Visits</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCode_TrackingCodeVisits()
-	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
-	 * @generated
-	 */
-	List<TrackingCodeVisit> getTrackingCodeVisits();
 
 } // TrackingCode

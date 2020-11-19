@@ -64,10 +64,6 @@ public interface ProductConfigItem extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Config Item Product Config Options</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.config.ProductConfigOption}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Config Item Product Config Options</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Config Item Product Config Options</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProductConfigItem_ConfigItemProductConfigOptions()

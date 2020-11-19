@@ -103,10 +103,6 @@ public interface Uom extends EntityTyped<UomType>, EntityInfo {
 	 * Returns the value of the '<em><b>Main Uom Conversions</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.common.uom.UomConversion}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Main Uom Conversions</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Main Uom Conversions</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUom_MainUomConversions()

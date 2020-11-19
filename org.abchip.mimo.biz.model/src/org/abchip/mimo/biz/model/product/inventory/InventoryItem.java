@@ -396,10 +396,6 @@ public interface InventoryItem extends EntityTyped<InventoryItemType>, EntityInf
 	 * Returns the value of the '<em><b>Inventory Item Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.inventory.InventoryItemAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Inventory Item Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Inventory Item Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItem_InventoryItemAttributes()
@@ -412,10 +408,6 @@ public interface InventoryItem extends EntityTyped<InventoryItemType>, EntityInf
 	 * Returns the value of the '<em><b>Inventory Item Details</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.inventory.InventoryItemDetail}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Inventory Item Details</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Inventory Item Details</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItem_InventoryItemDetails()
@@ -428,10 +420,6 @@ public interface InventoryItem extends EntityTyped<InventoryItemType>, EntityInf
 	 * Returns the value of the '<em><b>Inventory Item Label Appls</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.inventory.InventoryItemLabelAppl}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Inventory Item Label Appls</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Inventory Item Label Appls</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItem_InventoryItemLabelAppls()
@@ -461,6 +449,18 @@ public interface InventoryItem extends EntityTyped<InventoryItemType>, EntityInf
 	 * @generated
 	 */
 	void setInventoryItemType(InventoryItemType value);
+
+	/**
+	 * Returns the value of the '<em><b>Inventory Item Variances</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.inventory.InventoryItemVariance}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Inventory Item Variances</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItem_InventoryItemVariances()
+	 * @model derived="true"
+	 * @generated
+	 */
+	List<InventoryItemVariance> getInventoryItemVariances();
 
 	/**
 	 * Returns the value of the '<em><b>Location Seq Id</b></em>' attribute.
@@ -777,22 +777,6 @@ public interface InventoryItem extends EntityTyped<InventoryItemType>, EntityInf
 	 * @generated
 	 */
 	void setUom(Uom value);
-
-	/**
-	 * Returns the value of the '<em><b>Inventory Item Variances</b></em>' reference list.
-	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.inventory.InventoryItemVariance}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Inventory Item Variances</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Inventory Item Variances</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItem_InventoryItemVariances()
-	 * @model derived="true"
-	 * @generated
-	 */
-	List<InventoryItemVariance> getInventoryItemVariances();
 
 	/**
 	 * Returns the value of the '<em><b>Inventory Item Id</b></em>' attribute.

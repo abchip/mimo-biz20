@@ -138,10 +138,6 @@ public interface Enumeration extends EntityTyped<EnumerationType>, EntityInfo {
 	 * Returns the value of the '<em><b>User Login Security Questions</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>User Login Security Questions</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>User Login Security Questions</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.common.enum_.EnumPackage#getEnumeration_UserLoginSecurityQuestions()

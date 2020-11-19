@@ -356,10 +356,6 @@ public interface SalesOpportunity extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Sales Opportunity Competitors</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityCompetitor}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sales Opportunity Competitors</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Sales Opportunity Competitors</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunity_SalesOpportunityCompetitors()
@@ -372,10 +368,6 @@ public interface SalesOpportunity extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Sales Opportunity Quotes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityQuote}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sales Opportunity Quotes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Sales Opportunity Quotes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunity_SalesOpportunityQuotes()
@@ -388,10 +380,6 @@ public interface SalesOpportunity extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Sales Opportunity Trck Codes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityTrckCode}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sales Opportunity Trck Codes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Sales Opportunity Trck Codes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunity_SalesOpportunityTrckCodes()
@@ -404,10 +392,6 @@ public interface SalesOpportunity extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Sales Opportunity Work Efforts</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityWorkEffort}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sales Opportunity Work Efforts</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Sales Opportunity Work Efforts</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunity_SalesOpportunityWorkEfforts()

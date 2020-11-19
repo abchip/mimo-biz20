@@ -106,10 +106,6 @@ public interface QuoteType extends EntityType<Quote>, EntityInfo {
 	 * Returns the value of the '<em><b>Quote Type Attrs</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.quote.QuoteTypeAttr}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Quote Type Attrs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Quote Type Attrs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteType_QuoteTypeAttrs()

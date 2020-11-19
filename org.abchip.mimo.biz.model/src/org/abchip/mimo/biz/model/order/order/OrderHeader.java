@@ -156,10 +156,6 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * Returns the value of the '<em><b>Communication Event Orders</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.order.CommunicationEventOrder}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Communication Event Orders</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Communication Event Orders</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_CommunicationEventOrders()
@@ -458,10 +454,6 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * Returns the value of the '<em><b>Order Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.order.OrderAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Order Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_OrderAttributes()
@@ -500,10 +492,6 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * Returns the value of the '<em><b>Order Delivery Schedules</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.order.OrderDeliverySchedule}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Delivery Schedules</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Order Delivery Schedules</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_OrderDeliverySchedules()
@@ -516,10 +504,6 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * Returns the value of the '<em><b>Order Header Notes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.order.OrderHeaderNote}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Header Notes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Order Header Notes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_OrderHeaderNotes()
@@ -532,10 +516,6 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * Returns the value of the '<em><b>Order Header Work Efforts</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.order.OrderHeaderWorkEffort}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Header Work Efforts</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Order Header Work Efforts</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_OrderHeaderWorkEfforts()
@@ -548,10 +528,6 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * Returns the value of the '<em><b>Order Item Groups</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.order.OrderItemGroup}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Item Groups</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Order Item Groups</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_OrderItemGroups()
@@ -564,10 +540,6 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * Returns the value of the '<em><b>Order Item Ship Groups</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Item Ship Groups</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Order Item Ship Groups</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_OrderItemShipGroups()
@@ -580,10 +552,6 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * Returns the value of the '<em><b>Order Items</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.order.OrderItem}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Items</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Order Items</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_OrderItems()
@@ -649,10 +617,6 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * Returns the value of the '<em><b>Order Product Promo Codes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.order.OrderProductPromoCode}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Product Promo Codes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Order Product Promo Codes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_OrderProductPromoCodes()
@@ -758,10 +722,6 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * Returns the value of the '<em><b>Product Promo Uses</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.promo.ProductPromoUse}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Promo Uses</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Product Promo Uses</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_ProductPromoUses()
@@ -914,10 +874,6 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * Returns the value of the '<em><b>Tracking Code Orders</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tracking Code Orders</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Tracking Code Orders</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_TrackingCodeOrders()

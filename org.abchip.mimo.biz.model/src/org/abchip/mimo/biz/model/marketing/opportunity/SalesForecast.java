@@ -388,10 +388,6 @@ public interface SalesForecast extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Sales Forecast Details</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sales Forecast Details</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Sales Forecast Details</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecast_SalesForecastDetails()

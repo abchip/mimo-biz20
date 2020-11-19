@@ -209,10 +209,6 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	 * Returns the value of the '<em><b>Facility Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.facility.FacilityAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Facility Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_FacilityAttributes()
@@ -287,10 +283,6 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	 * Returns the value of the '<em><b>Facility Locations</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.facility.FacilityLocation}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Locations</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Facility Locations</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_FacilityLocations()

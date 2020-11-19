@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.model.party.contact.impl;
 
 import java.util.List;
-
 import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.common.geo.GeoPoint;
 import org.abchip.mimo.biz.model.party.contact.ContactPackage;

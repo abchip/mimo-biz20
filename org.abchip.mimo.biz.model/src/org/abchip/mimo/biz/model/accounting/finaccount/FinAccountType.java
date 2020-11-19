@@ -66,10 +66,6 @@ public interface FinAccountType extends EntityType<FinAccount>, EntityInfo {
 	 * Returns the value of the '<em><b>Fin Account Type Attrs</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTypeAttr}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fin Account Type Attrs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Fin Account Type Attrs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountType_FinAccountTypeAttrs()
@@ -82,10 +78,6 @@ public interface FinAccountType extends EntityType<FinAccount>, EntityInfo {
 	 * Returns the value of the '<em><b>Fin Account Type Gl Accounts</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTypeGlAccount}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fin Account Type Gl Accounts</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Fin Account Type Gl Accounts</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountType_FinAccountTypeGlAccounts()

@@ -165,6 +165,18 @@ public interface PortalPage extends EntityIdentifiable, EntityInfo {
 	void setParentPortalPage(PortalPage value);
 
 	/**
+	 * Returns the value of the '<em><b>Portal Page Columns</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.common.portal.PortalPageColumn}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Portal Page Columns</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortalPage_PortalPageColumns()
+	 * @model derived="true"
+	 * @generated
+	 */
+	List<PortalPageColumn> getPortalPageColumns();
+
+	/**
 	 * Returns the value of the '<em><b>Portal Page Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -237,22 +249,6 @@ public interface PortalPage extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setSequenceNum(long value);
-
-	/**
-	 * Returns the value of the '<em><b>Portal Page Columns</b></em>' reference list.
-	 * The list contents are of type {@link org.abchip.mimo.biz.model.common.portal.PortalPageColumn}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Portal Page Columns</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Portal Page Columns</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortalPage_PortalPageColumns()
-	 * @model derived="true"
-	 * @generated
-	 */
-	List<PortalPageColumn> getPortalPageColumns();
 
 	/**
 	 * Returns the value of the '<em><b>Portal Page Id</b></em>' attribute.

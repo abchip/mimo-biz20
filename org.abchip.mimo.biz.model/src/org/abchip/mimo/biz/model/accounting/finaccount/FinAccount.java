@@ -132,10 +132,6 @@ public interface FinAccount extends EntityTyped<FinAccountType>, EntityInfo {
 	 * Returns the value of the '<em><b>Fin Account Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fin Account Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Fin Account Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_FinAccountAttributes()

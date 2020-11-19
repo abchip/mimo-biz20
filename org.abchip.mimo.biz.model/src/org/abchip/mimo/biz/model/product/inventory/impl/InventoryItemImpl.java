@@ -506,6 +506,17 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<InventoryItemVariance> getInventoryItemVariances() {
+		return (List<InventoryItemVariance>)eGet(InventoryPackage.Literals.INVENTORY_ITEM__INVENTORY_ITEM_VARIANCES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public String getLocationSeqId() {
 		return (String)eGet(InventoryPackage.Literals.INVENTORY_ITEM__LOCATION_SEQ_ID, true);
@@ -797,17 +808,6 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<InventoryItemVariance> getInventoryItemVariances() {
-		return (List<InventoryItemVariance>)eGet(InventoryPackage.Literals.INVENTORY_ITEM__INVENTORY_ITEM_VARIANCES, true);
 	}
 
 	/**

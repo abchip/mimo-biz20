@@ -730,10 +730,6 @@ public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo 
 	 * Returns the value of the '<em><b>Subscription Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.subscription.SubscriptionAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Subscription Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Subscription Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_SubscriptionAttributes()
@@ -746,10 +742,6 @@ public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo 
 	 * Returns the value of the '<em><b>Subscription Comm Events</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.subscription.SubscriptionCommEvent}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Subscription Comm Events</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Subscription Comm Events</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_SubscriptionCommEvents()

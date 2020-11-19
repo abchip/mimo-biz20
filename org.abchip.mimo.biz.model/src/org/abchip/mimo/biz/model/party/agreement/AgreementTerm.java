@@ -75,10 +75,6 @@ public interface AgreementTerm extends EntityTyped<TermType>, EntityInfo {
 	 * Returns the value of the '<em><b>Agreement Term Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.agreement.AgreementTermAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Agreement Term Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Agreement Term Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementTerm_AgreementTermAttributes()

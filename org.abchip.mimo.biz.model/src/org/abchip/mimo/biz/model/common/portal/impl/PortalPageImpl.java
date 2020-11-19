@@ -260,6 +260,17 @@ public class PortalPageImpl extends EntityIdentifiableImpl implements PortalPage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<PortalPageColumn> getPortalPageColumns() {
+		return (List<PortalPageColumn>)eGet(PortalPackage.Literals.PORTAL_PAGE__PORTAL_PAGE_COLUMNS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public String getPortalPageName() {
 		return (String)eGet(PortalPackage.Literals.PORTAL_PAGE__PORTAL_PAGE_NAME, true);
@@ -351,17 +362,6 @@ public class PortalPageImpl extends EntityIdentifiableImpl implements PortalPage
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<PortalPageColumn> getPortalPageColumns() {
-		return (List<PortalPageColumn>)eGet(PortalPackage.Literals.PORTAL_PAGE__PORTAL_PAGE_COLUMNS, true);
 	}
 
 	/**

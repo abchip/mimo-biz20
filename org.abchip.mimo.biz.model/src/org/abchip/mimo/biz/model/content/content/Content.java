@@ -122,10 +122,6 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * Returns the value of the '<em><b>Content Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.content.content.ContentAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Content Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_ContentAttributes()
@@ -138,10 +134,6 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * Returns the value of the '<em><b>Content Keywords</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.content.content.ContentKeyword}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Keywords</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Content Keywords</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_ContentKeywords()
@@ -154,10 +146,6 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * Returns the value of the '<em><b>Content Meta Datas</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.content.content.ContentMetaData}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Meta Datas</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Content Meta Datas</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_ContentMetaDatas()
@@ -245,10 +233,6 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * Returns the value of the '<em><b>Content Purposes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.content.content.ContentPurpose}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Purposes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Content Purposes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_ContentPurposes()
@@ -261,10 +245,6 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * Returns the value of the '<em><b>Content Revisions</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.content.content.ContentRevision}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Revisions</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Content Revisions</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_ContentRevisions()

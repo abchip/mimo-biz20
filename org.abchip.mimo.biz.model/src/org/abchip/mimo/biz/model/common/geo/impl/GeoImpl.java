@@ -259,6 +259,28 @@ public class GeoImpl extends EntityTypedImpl<GeoType> implements Geo {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<GeoAssoc> getMainGeoAssocs() {
+		return (List<GeoAssoc>)eGet(GeoPackage.Literals.GEO__MAIN_GEO_ASSOCS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<TaxAuthority> getTaxAuthTaxAuthorities() {
+		return (List<TaxAuthority>)eGet(GeoPackage.Literals.GEO__TAX_AUTH_TAX_AUTHORITIES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public String getWellKnownText() {
 		return (String)eGet(GeoPackage.Literals.GEO__WELL_KNOWN_TEXT, true);
@@ -310,28 +332,6 @@ public class GeoImpl extends EntityTypedImpl<GeoType> implements Geo {
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<GeoAssoc> getMainGeoAssocs() {
-		return (List<GeoAssoc>)eGet(GeoPackage.Literals.GEO__MAIN_GEO_ASSOCS, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<TaxAuthority> getTaxAuthTaxAuthorities() {
-		return (List<TaxAuthority>)eGet(GeoPackage.Literals.GEO__TAX_AUTH_TAX_AUTHORITIES, true);
 	}
 
 	/**

@@ -531,6 +531,17 @@ public class TrackingCodeImpl extends EntityTypedImpl<TrackingCodeType> implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<TrackingCodeVisit> getTrackingCodeVisits() {
+		return (List<TrackingCodeVisit>)eGet(TrackingPackage.Literals.TRACKING_CODE__TRACKING_CODE_VISITS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public String getTrackingCodeId() {
 		return (String)eGet(TrackingPackage.Literals.TRACKING_CODE__TRACKING_CODE_ID, true);
@@ -544,17 +555,6 @@ public class TrackingCodeImpl extends EntityTypedImpl<TrackingCodeType> implemen
 	@Override
 	public void setTrackingCodeId(String newTrackingCodeId) {
 		eSet(TrackingPackage.Literals.TRACKING_CODE__TRACKING_CODE_ID, newTrackingCodeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<TrackingCodeVisit> getTrackingCodeVisits() {
-		return (List<TrackingCodeVisit>)eGet(TrackingPackage.Literals.TRACKING_CODE__TRACKING_CODE_VISITS, true);
 	}
 
 	/**

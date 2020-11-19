@@ -248,6 +248,17 @@ public class EmplPositionTypeImpl extends EntityTypeImpl<EmplPosition> implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ValidResponsibility> getValidResponsibilities() {
+		return (List<ValidResponsibility>)eGet(PositionPackage.Literals.EMPL_POSITION_TYPE__VALID_RESPONSIBILITIES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public String getEmplPositionTypeId() {
 		return (String)eGet(PositionPackage.Literals.EMPL_POSITION_TYPE__EMPL_POSITION_TYPE_ID, true);
@@ -261,17 +272,6 @@ public class EmplPositionTypeImpl extends EntityTypeImpl<EmplPosition> implement
 	@Override
 	public void setEmplPositionTypeId(String newEmplPositionTypeId) {
 		eSet(PositionPackage.Literals.EMPL_POSITION_TYPE__EMPL_POSITION_TYPE_ID, newEmplPositionTypeId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<ValidResponsibility> getValidResponsibilities() {
-		return (List<ValidResponsibility>)eGet(PositionPackage.Literals.EMPL_POSITION_TYPE__VALID_RESPONSIBILITIES, true);
 	}
 
 	/**

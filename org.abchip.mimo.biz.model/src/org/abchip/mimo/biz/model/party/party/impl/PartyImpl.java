@@ -363,7 +363,8 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -428,7 +429,8 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -438,7 +440,8 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -448,7 +451,8 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -458,7 +462,8 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -490,7 +495,8 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -500,7 +506,8 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -530,13 +537,14 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public List<SupplierProductFeature> getSupplierProductFeatures() {
-		return (List<SupplierProductFeature>)eGet(PartyPackage.Literals.PARTY__SUPPLIER_PRODUCT_FEATURES, true);
+	public List<PerformanceNote> getPerformanceNotes() {
+		return (List<PerformanceNote>)eGet(PartyPackage.Literals.PARTY__PERFORMANCE_NOTES, true);
 	}
 
 	/**
@@ -740,17 +748,6 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<PerformanceNote> getPerformanceNotes() {
-		return (List<PerformanceNote>)eGet(PartyPackage.Literals.PARTY__PERFORMANCE_NOTES, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public Uom getPreferredCurrencyUom() {
 		return (Uom)eGet(PartyPackage.Literals.PARTY__PREFERRED_CURRENCY_UOM, true);
@@ -784,6 +781,17 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	@Override
 	public void setStatus(StatusItem newStatus) {
 		eSet(PartyPackage.Literals.PARTY__STATUS, newStatus);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<SupplierProductFeature> getSupplierProductFeatures() {
+		return (List<SupplierProductFeature>)eGet(PartyPackage.Literals.PARTY__SUPPLIER_PRODUCT_FEATURES, true);
 	}
 
 	/**

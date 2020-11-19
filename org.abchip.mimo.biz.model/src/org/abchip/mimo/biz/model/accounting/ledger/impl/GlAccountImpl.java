@@ -281,6 +281,28 @@ public class GlAccountImpl extends EntityTypedImpl<GlAccountType> implements GlA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<GlAccountGroupMember> getGlAccountGroupMembers() {
+		return (List<GlAccountGroupMember>)eGet(LedgerPackage.Literals.GL_ACCOUNT__GL_ACCOUNT_GROUP_MEMBERS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<GlAccountOrganization> getGlAccountOrganizations() {
+		return (List<GlAccountOrganization>)eGet(LedgerPackage.Literals.GL_ACCOUNT__GL_ACCOUNT_ORGANIZATIONS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public String getProductId() {
 		return (String)eGet(LedgerPackage.Literals.GL_ACCOUNT__PRODUCT_ID, true);
@@ -332,17 +354,6 @@ public class GlAccountImpl extends EntityTypedImpl<GlAccountType> implements GlA
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<GlBudgetXref> getGlBudgetXrefs() {
-		return (List<GlBudgetXref>)eGet(LedgerPackage.Literals.GL_ACCOUNT__GL_BUDGET_XREFS, true);
 	}
 
 	/**
@@ -410,28 +421,6 @@ public class GlAccountImpl extends EntityTypedImpl<GlAccountType> implements GlA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<GlAccountGroupMember> getGlAccountGroupMembers() {
-		return (List<GlAccountGroupMember>)eGet(LedgerPackage.Literals.GL_ACCOUNT__GL_ACCOUNT_GROUP_MEMBERS, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<GlAccountOrganization> getGlAccountOrganizations() {
-		return (List<GlAccountOrganization>)eGet(LedgerPackage.Literals.GL_ACCOUNT__GL_ACCOUNT_ORGANIZATIONS, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public GlAccountType getGlAccountType() {
 		return (GlAccountType)eGet(LedgerPackage.Literals.GL_ACCOUNT__GL_ACCOUNT_TYPE, true);
@@ -445,6 +434,17 @@ public class GlAccountImpl extends EntityTypedImpl<GlAccountType> implements GlA
 	@Override
 	public void setGlAccountType(GlAccountType newGlAccountType) {
 		eSet(LedgerPackage.Literals.GL_ACCOUNT__GL_ACCOUNT_TYPE, newGlAccountType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<GlBudgetXref> getGlBudgetXrefs() {
+		return (List<GlBudgetXref>)eGet(LedgerPackage.Literals.GL_ACCOUNT__GL_BUDGET_XREFS, true);
 	}
 
 	/**

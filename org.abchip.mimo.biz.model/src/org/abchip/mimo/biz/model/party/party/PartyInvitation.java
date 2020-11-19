@@ -172,10 +172,6 @@ public interface PartyInvitation extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Party Invitation Group Assocs</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.party.PartyInvitationGroupAssoc}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Invitation Group Assocs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Party Invitation Group Assocs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyInvitation_PartyInvitationGroupAssocs()
@@ -188,10 +184,6 @@ public interface PartyInvitation extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Party Invitation Role Assocs</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.party.PartyInvitationRoleAssoc}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Party Invitation Role Assocs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Party Invitation Role Assocs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyInvitation_PartyInvitationRoleAssocs()

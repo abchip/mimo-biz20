@@ -106,10 +106,6 @@ public interface WorkEffortAssocType extends EntityType<WorkEffortAssoc>, Entity
 	 * Returns the value of the '<em><b>Work Effort Assoc Type Attrs</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocTypeAttr}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Work Effort Assoc Type Attrs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Work Effort Assoc Type Attrs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortAssocType_WorkEffortAssocTypeAttrs()

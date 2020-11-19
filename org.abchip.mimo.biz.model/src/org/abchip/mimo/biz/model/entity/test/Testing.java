@@ -118,10 +118,6 @@ public interface Testing extends EntityTyped<TestingType>, EntityInfo {
 	 * Returns the value of the '<em><b>Testing Items</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.entity.test.TestingItem}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Testing Items</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Testing Items</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTesting_TestingItems()

@@ -115,10 +115,6 @@ public interface Budget extends EntityTyped<BudgetType>, EntityInfo {
 	 * Returns the value of the '<em><b>Budget Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.budget.BudgetAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Budget Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Budget Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudget_BudgetAttributes()
@@ -131,10 +127,6 @@ public interface Budget extends EntityTyped<BudgetType>, EntityInfo {
 	 * Returns the value of the '<em><b>Budget Items</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.budget.BudgetItem}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Budget Items</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Budget Items</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudget_BudgetItems()
@@ -147,10 +139,6 @@ public interface Budget extends EntityTyped<BudgetType>, EntityInfo {
 	 * Returns the value of the '<em><b>Budget Revisions</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.budget.BudgetRevision}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Budget Revisions</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Budget Revisions</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudget_BudgetRevisions()

@@ -76,10 +76,6 @@ public interface EntitySync extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Entity Sync Histories</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncHistory}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Entity Sync Histories</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Entity Sync Histories</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage#getEntitySync_EntitySyncHistories()
@@ -92,10 +88,6 @@ public interface EntitySync extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Entity Sync Include Groups</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncIncludeGroup}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Entity Sync Include Groups</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Entity Sync Include Groups</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage#getEntitySync_EntitySyncIncludeGroups()
@@ -108,10 +100,6 @@ public interface EntitySync extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Entity Sync Includes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.entity.synchronization.EntitySyncInclude}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Entity Sync Includes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Entity Sync Includes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage#getEntitySync_EntitySyncIncludes()

@@ -87,10 +87,6 @@ public interface InvoiceItemType extends EntityType<InvoiceItem>, EntityInfo {
 	 * Returns the value of the '<em><b>Invoice Item Type Attrs</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemTypeAttr}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Item Type Attrs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Invoice Item Type Attrs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemType_InvoiceItemTypeAttrs()
@@ -103,10 +99,6 @@ public interface InvoiceItemType extends EntityType<InvoiceItem>, EntityInfo {
 	 * Returns the value of the '<em><b>Invoice Item Type Gl Accounts</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemTypeGlAccount}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Item Type Gl Accounts</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Invoice Item Type Gl Accounts</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemType_InvoiceItemTypeGlAccounts()

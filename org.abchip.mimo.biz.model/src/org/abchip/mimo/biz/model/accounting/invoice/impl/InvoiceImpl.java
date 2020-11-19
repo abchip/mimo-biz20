@@ -212,7 +212,8 @@ public class InvoiceImpl extends EntityTypedImpl<InvoiceType> implements Invoice
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -240,7 +241,8 @@ public class InvoiceImpl extends EntityTypedImpl<InvoiceType> implements Invoice
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -268,7 +270,8 @@ public class InvoiceImpl extends EntityTypedImpl<InvoiceType> implements Invoice
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")

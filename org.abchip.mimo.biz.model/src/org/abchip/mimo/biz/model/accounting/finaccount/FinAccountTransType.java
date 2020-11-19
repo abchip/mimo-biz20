@@ -62,10 +62,6 @@ public interface FinAccountTransType extends EntityType<FinAccountTrans>, Entity
 	 * Returns the value of the '<em><b>Fin Account Trans Type Attrs</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTransTypeAttr}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fin Account Trans Type Attrs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Fin Account Trans Type Attrs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTransType_FinAccountTransTypeAttrs()

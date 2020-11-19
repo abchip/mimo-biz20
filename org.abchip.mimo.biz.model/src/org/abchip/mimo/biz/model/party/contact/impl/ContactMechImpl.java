@@ -213,17 +213,6 @@ public class ContactMechImpl extends EntityTypedImpl<ContactMechType> implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<ContactMechLink> getFromContactMechLinks() {
-		return (List<ContactMechLink>)eGet(ContactPackage.Literals.CONTACT_MECH__FROM_CONTACT_MECH_LINKS, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public String getContactMechId() {
 		return (String)eGet(ContactPackage.Literals.CONTACT_MECH__CONTACT_MECH_ID, true);
@@ -268,6 +257,17 @@ public class ContactMechImpl extends EntityTypedImpl<ContactMechType> implements
 	@Override
 	public void setContactMechType(ContactMechType newContactMechType) {
 		eSet(ContactPackage.Literals.CONTACT_MECH__CONTACT_MECH_TYPE, newContactMechType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ContactMechLink> getFromContactMechLinks() {
+		return (List<ContactMechLink>)eGet(ContactPackage.Literals.CONTACT_MECH__FROM_CONTACT_MECH_LINKS, true);
 	}
 
 } //ContactMechImpl

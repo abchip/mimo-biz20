@@ -299,10 +299,6 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * Returns the value of the '<em><b>Fixed Asset Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fixed Asset Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Fixed Asset Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_FixedAssetAttributes()
@@ -328,10 +324,6 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * Returns the value of the '<em><b>Fixed Asset Idents</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetIdent}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fixed Asset Idents</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Fixed Asset Idents</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_FixedAssetIdents()
@@ -344,10 +336,6 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * Returns the value of the '<em><b>Fixed Asset Maints</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fixed Asset Maints</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Fixed Asset Maints</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_FixedAssetMaints()
@@ -386,10 +374,6 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * Returns the value of the '<em><b>Fixed Asset Registrations</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetRegistration}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fixed Asset Registrations</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Fixed Asset Registrations</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_FixedAssetRegistrations()

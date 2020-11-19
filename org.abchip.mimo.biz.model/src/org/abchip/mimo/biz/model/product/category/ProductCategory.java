@@ -279,61 +279,9 @@ public interface ProductCategory extends EntityTyped<ProductCategoryType>, Entit
 	void setPrimaryParentCategory(ProductCategory value);
 
 	/**
-	 * Returns the value of the '<em><b>Product Feature Cat Grp Appls</b></em>' reference list.
-	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCatGrpAppl}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Feature Cat Grp Appls</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_ProductFeatureCatGrpAppls()
-	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
-	 * @generated
-	 */
-	List<ProductFeatureCatGrpAppl> getProductFeatureCatGrpAppls();
-
-	/**
-	 * Returns the value of the '<em><b>Product Feature Category Appls</b></em>' reference list.
-	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCategoryAppl}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Feature Category Appls</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_ProductFeatureCategoryAppls()
-	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
-	 * @generated
-	 */
-	List<ProductFeatureCategoryAppl> getProductFeatureCategoryAppls();
-
-	/**
-	 * Returns the value of the '<em><b>Show In Select</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Show In Select</em>' attribute.
-	 * @see #setShowInSelect(Boolean)
-	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_ShowInSelect()
-	 * @model
-	 * @generated
-	 */
-	Boolean getShowInSelect();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getShowInSelect <em>Show In Select</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Show In Select</em>' attribute.
-	 * @see #getShowInSelect()
-	 * @generated
-	 */
-	void setShowInSelect(Boolean value);
-
-	/**
 	 * Returns the value of the '<em><b>Product Category Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.category.ProductCategoryAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Category Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Product Category Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_ProductCategoryAttributes()
@@ -369,6 +317,28 @@ public interface ProductCategory extends EntityTyped<ProductCategoryType>, Entit
 	List<ProductCategoryMember> getProductCategoryMembers();
 
 	/**
+	 * Returns the value of the '<em><b>Show In Select</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Show In Select</em>' attribute.
+	 * @see #setShowInSelect(Boolean)
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_ShowInSelect()
+	 * @model
+	 * @generated
+	 */
+	Boolean getShowInSelect();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getShowInSelect <em>Show In Select</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Show In Select</em>' attribute.
+	 * @see #getShowInSelect()
+	 * @generated
+	 */
+	void setShowInSelect(Boolean value);
+
+	/**
 	 * Returns the value of the '<em><b>Product Category Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -389,6 +359,32 @@ public interface ProductCategory extends EntityTyped<ProductCategoryType>, Entit
 	 * @generated
 	 */
 	void setProductCategoryType(ProductCategoryType value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Feature Cat Grp Appls</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCatGrpAppl}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Feature Cat Grp Appls</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_ProductFeatureCatGrpAppls()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ProductFeatureCatGrpAppl> getProductFeatureCatGrpAppls();
+
+	/**
+	 * Returns the value of the '<em><b>Product Feature Category Appls</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCategoryAppl}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Feature Category Appls</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_ProductFeatureCategoryAppls()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ProductFeatureCategoryAppl> getProductFeatureCategoryAppls();
 
 	/**
 	 * Returns the value of the '<em><b>Product Category Id</b></em>' attribute.

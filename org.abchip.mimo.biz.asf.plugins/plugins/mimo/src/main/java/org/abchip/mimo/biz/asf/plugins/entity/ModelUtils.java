@@ -98,7 +98,7 @@ public class ModelUtils {
 
 		String superEntity = null;
 
-		for (ModelRelation modelRelation : modelEntity.getRelationsList(true, true, false)) {
+		for (ModelRelation modelRelation : modelEntity.getRelationsList(true, false, false)) {
 
 			// no automatic relation
 			if (modelRelation.isAutoRelation())
@@ -108,12 +108,6 @@ public class ModelUtils {
 			ModelKeyMap modelKeyMap = modelRelation.getKeyMaps().get(0);
 			if (!modelKeyMap.getFieldName().equals(modelEntity.getFirstPkFieldName()))
 				continue;
-
-			// one field map
-			if (modelRelation.getKeyMaps().size() > 1) {
-				LOGGER.info("HISTORY: " + modelRelation.getRelEntityName() + " -> " + entityName);
-				continue;
-			}
 
 			superEntity = modelRelation.getRelEntityName();
 			break;
@@ -231,10 +225,7 @@ public class ModelUtils {
 		if (modelEntity == null)
 			return null;
 
-		for (ModelRelation modelRelation : modelEntity.getRelationsList(true, true, true)) {
-			// many relation
-			if (!modelRelation.getType().equals("many"))
-				continue;
+		for (ModelRelation modelRelation : modelEntity.getRelationsList(false, false, true)) {
 
 			// one field map
 			if (modelRelation.getKeyMaps().size() > 1)

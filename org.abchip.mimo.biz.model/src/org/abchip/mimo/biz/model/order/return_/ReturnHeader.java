@@ -55,22 +55,6 @@ import org.abchip.mimo.entity.EntityTyped;
  */
 public interface ReturnHeader extends EntityTyped<ReturnHeaderType>, EntityInfo {
 	/**
-	 * Returns the value of the '<em><b>Communication Event Returns</b></em>' reference list.
-	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.return_.CommunicationEventReturn}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Communication Event Returns</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Communication Event Returns</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeader_CommunicationEventReturns()
-	 * @model derived="true"
-	 * @generated
-	 */
-	List<CommunicationEventReturn> getCommunicationEventReturns();
-
-	/**
 	 * Returns the value of the '<em><b>Created By</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -302,10 +286,6 @@ public interface ReturnHeader extends EntityTyped<ReturnHeaderType>, EntityInfo 
 	 * Returns the value of the '<em><b>Return Items</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.return_.ReturnItem}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Return Items</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Return Items</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeader_ReturnItems()
@@ -384,6 +364,18 @@ public interface ReturnHeader extends EntityTyped<ReturnHeaderType>, EntityInfo 
 	 * @generated
 	 */
 	void setBillingAccount(BillingAccount value);
+
+	/**
+	 * Returns the value of the '<em><b>Communication Event Returns</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.return_.CommunicationEventReturn}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Communication Event Returns</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeader_CommunicationEventReturns()
+	 * @model derived="true"
+	 * @generated
+	 */
+	List<CommunicationEventReturn> getCommunicationEventReturns();
 
 	/**
 	 * Returns the value of the '<em><b>Supplier Rma Id</b></em>' attribute.

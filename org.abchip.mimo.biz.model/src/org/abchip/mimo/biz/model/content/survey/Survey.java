@@ -257,10 +257,6 @@ public interface Survey extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Survey Multi Resps</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.content.survey.SurveyMultiResp}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Survey Multi Resps</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Survey Multi Resps</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurvey_SurveyMultiResps()
@@ -326,10 +322,6 @@ public interface Survey extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Survey Pages</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.content.survey.SurveyPage}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Survey Pages</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Survey Pages</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurvey_SurveyPages()

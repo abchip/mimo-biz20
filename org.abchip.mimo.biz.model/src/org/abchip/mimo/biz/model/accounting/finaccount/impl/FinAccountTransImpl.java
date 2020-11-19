@@ -252,6 +252,17 @@ public class FinAccountTransImpl extends EntityTypedImpl<FinAccountTransType> im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<FinAccountTransAttribute> getFinAccountTransAttributes() {
+		return (List<FinAccountTransAttribute>)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__FIN_ACCOUNT_TRANS_ATTRIBUTES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public String getOrderId() {
 		return (String)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__ORDER_ID, true);
@@ -443,17 +454,6 @@ public class FinAccountTransImpl extends EntityTypedImpl<FinAccountTransType> im
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<FinAccountTransAttribute> getFinAccountTransAttributes() {
-		return (List<FinAccountTransAttribute>)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TRANS__FIN_ACCOUNT_TRANS_ATTRIBUTES, true);
 	}
 
 	/**

@@ -117,10 +117,6 @@ public interface InvoiceTerm extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Invoice Term Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceTermAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Term Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Invoice Term Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceTerm_InvoiceTermAttributes()

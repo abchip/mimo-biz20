@@ -115,10 +115,6 @@ public interface SecurityGroup extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Protected Views</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.security.securitygroup.ProtectedView}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Protected Views</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Protected Views</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage#getSecurityGroup_ProtectedViews()

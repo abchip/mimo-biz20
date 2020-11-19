@@ -75,10 +75,6 @@ public interface Agreement extends EntityTyped<AgreementType>, EntityInfo {
 	 * Returns the value of the '<em><b>Agreement Items</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.agreement.AgreementItem}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Agreement Items</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Agreement Items</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreement_AgreementItems()
@@ -370,10 +366,6 @@ public interface Agreement extends EntityTyped<AgreementType>, EntityInfo {
 	 * Returns the value of the '<em><b>Agreement Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.agreement.AgreementAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Agreement Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Agreement Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreement_AgreementAttributes()

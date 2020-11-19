@@ -430,10 +430,6 @@ public interface UserLogin extends UserProfile {
 	 * Returns the value of the '<em><b>User Login Histories</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.security.login.UserLoginHistory}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>User Login Histories</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>User Login Histories</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLogin_UserLoginHistories()
@@ -446,10 +442,6 @@ public interface UserLogin extends UserProfile {
 	 * Returns the value of the '<em><b>User Login Password Histories</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.security.login.UserLoginPasswordHistory}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>User Login Password Histories</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>User Login Password Histories</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLogin_UserLoginPasswordHistories()
@@ -475,10 +467,6 @@ public interface UserLogin extends UserProfile {
 	 * Returns the value of the '<em><b>User Preferences</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.common.user.UserPreference}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>User Preferences</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>User Preferences</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLogin_UserPreferences()

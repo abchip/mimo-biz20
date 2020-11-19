@@ -135,6 +135,19 @@ public interface EmplPositionType extends EntityType<EmplPosition>, EntityInfo {
 	void setParentType(EmplPositionType value);
 
 	/**
+	 * Returns the value of the '<em><b>Valid Responsibilities</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.humanres.position.ValidResponsibility}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Valid Responsibilities</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionType_ValidResponsibilities()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ValidResponsibility> getValidResponsibilities();
+
+	/**
 	 * Returns the value of the '<em><b>Empl Position Type Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -160,18 +173,5 @@ public interface EmplPositionType extends EntityType<EmplPosition>, EntityInfo {
 	 * @generated
 	 */
 	void setEmplPositionTypeId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Valid Responsibilities</b></em>' reference list.
-	 * The list contents are of type {@link org.abchip.mimo.biz.model.humanres.position.ValidResponsibility}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Valid Responsibilities</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionType_ValidResponsibilities()
-	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
-	 * @generated
-	 */
-	List<ValidResponsibility> getValidResponsibilities();
 
 } // EmplPositionType

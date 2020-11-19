@@ -734,10 +734,6 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * Returns the value of the '<em><b>Shipment Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Shipment Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_ShipmentAttributes()
@@ -750,10 +746,6 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * Returns the value of the '<em><b>Shipment Contact Mechs</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentContactMech}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Contact Mechs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Shipment Contact Mechs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_ShipmentContactMechs()
@@ -766,10 +758,6 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * Returns the value of the '<em><b>Shipment Items</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentItem}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Items</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Shipment Items</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_ShipmentItems()
@@ -782,10 +770,6 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * Returns the value of the '<em><b>Shipment Packages</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentPackage}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Packages</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Shipment Packages</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_ShipmentPackages()
@@ -798,10 +782,6 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * Returns the value of the '<em><b>Shipment Route Segments</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentRouteSegment}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Route Segments</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Shipment Route Segments</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_ShipmentRouteSegments()

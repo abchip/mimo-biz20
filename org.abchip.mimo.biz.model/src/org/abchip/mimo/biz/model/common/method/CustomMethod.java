@@ -138,10 +138,6 @@ public interface CustomMethod extends EntityTyped<CustomMethodType>, EntityInfo 
 	 * Returns the value of the '<em><b>Fixed Asset Dep Methods</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Fixed Asset Dep Methods</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Fixed Asset Dep Methods</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.common.method.MethodPackage#getCustomMethod_FixedAssetDepMethods()

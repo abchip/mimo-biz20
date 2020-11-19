@@ -550,6 +550,17 @@ public class ShoppingListImpl extends EntityTypedImpl<ShoppingListType> implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ShoppingListWorkEffort> getShoppingListWorkEfforts() {
+		return (List<ShoppingListWorkEffort>)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__SHOPPING_LIST_WORK_EFFORTS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public String getShoppingListId() {
 		return (String)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__SHOPPING_LIST_ID, true);
@@ -563,17 +574,6 @@ public class ShoppingListImpl extends EntityTypedImpl<ShoppingListType> implemen
 	@Override
 	public void setShoppingListId(String newShoppingListId) {
 		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__SHOPPING_LIST_ID, newShoppingListId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<ShoppingListWorkEffort> getShoppingListWorkEfforts() {
-		return (List<ShoppingListWorkEffort>)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__SHOPPING_LIST_WORK_EFFORTS, true);
 	}
 
 	/**

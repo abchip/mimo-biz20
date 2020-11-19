@@ -111,10 +111,6 @@ public interface Invoice extends EntityTyped<InvoiceType>, EntityInfo {
 	 * Returns the value of the '<em><b>Invoice Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Invoice Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoice_InvoiceAttributes()
@@ -153,10 +149,6 @@ public interface Invoice extends EntityTyped<InvoiceType>, EntityInfo {
 	 * Returns the value of the '<em><b>Invoice Items</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Items</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Invoice Items</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoice_InvoiceItems()
@@ -195,10 +187,6 @@ public interface Invoice extends EntityTyped<InvoiceType>, EntityInfo {
 	 * Returns the value of the '<em><b>Invoice Notes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceNote}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Invoice Notes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Invoice Notes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoice_InvoiceNotes()

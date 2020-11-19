@@ -405,10 +405,6 @@ public interface Requirement extends EntityTyped<RequirementType>, EntityInfo {
 	 * Returns the value of the '<em><b>Requirement Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.requirement.RequirementAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Requirement Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Requirement Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirement_RequirementAttributes()
@@ -556,10 +552,6 @@ public interface Requirement extends EntityTyped<RequirementType>, EntityInfo {
 	 * Returns the value of the '<em><b>Work Requirement Fulfillments</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.requirement.WorkRequirementFulfillment}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Work Requirement Fulfillments</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Work Requirement Fulfillments</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirement_WorkRequirementFulfillments()

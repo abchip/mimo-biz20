@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.model.party.party.impl;
 
 import java.util.Date;
-
 import java.util.List;
 import org.abchip.mimo.biz.model.common.Gender;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;

@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.model.party.contact;
 
 import java.util.List;
-
 import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.common.geo.GeoPoint;
 
@@ -342,10 +341,6 @@ public interface PostalAddress extends ContactMech {
 	 * Returns the value of the '<em><b>Postal Address Boundaries</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.contact.PostalAddressBoundary}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Postal Address Boundaries</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Postal Address Boundaries</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_PostalAddressBoundaries()

@@ -135,10 +135,6 @@ public interface DataResource extends EntityTyped<DataResourceType>, EntityInfo 
 	 * Returns the value of the '<em><b>Data Resource Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.content.data.DataResourceAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Data Resource Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Data Resource Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResource_DataResourceAttributes()
@@ -151,10 +147,6 @@ public interface DataResource extends EntityTyped<DataResourceType>, EntityInfo 
 	 * Returns the value of the '<em><b>Data Resource Meta Datas</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.content.data.DataResourceMetaData}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Data Resource Meta Datas</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Data Resource Meta Datas</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResource_DataResourceMetaDatas()
@@ -242,10 +234,6 @@ public interface DataResource extends EntityTyped<DataResourceType>, EntityInfo 
 	 * Returns the value of the '<em><b>Data Resource Purposes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.content.data.DataResourcePurpose}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Data Resource Purposes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Data Resource Purposes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResource_DataResourcePurposes()
@@ -478,10 +466,6 @@ public interface DataResource extends EntityTyped<DataResourceType>, EntityInfo 
 	 * Returns the value of the '<em><b>Product Feature Data Resources</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.feature.ProductFeatureDataResource}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Feature Data Resources</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Product Feature Data Resources</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResource_ProductFeatureDataResources()

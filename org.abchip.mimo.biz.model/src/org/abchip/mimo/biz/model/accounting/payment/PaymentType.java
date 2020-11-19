@@ -107,10 +107,6 @@ public interface PaymentType extends EntityType<Payment>, EntityInfo {
 	 * Returns the value of the '<em><b>Payment Gl Account Type Maps</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.payment.PaymentGlAccountTypeMap}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Gl Account Type Maps</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Payment Gl Account Type Maps</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentType_PaymentGlAccountTypeMaps()
@@ -123,10 +119,6 @@ public interface PaymentType extends EntityType<Payment>, EntityInfo {
 	 * Returns the value of the '<em><b>Payment Type Attrs</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.payment.PaymentTypeAttr}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Payment Type Attrs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Payment Type Attrs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentType_PaymentTypeAttrs()

@@ -134,10 +134,6 @@ public interface ContactMechType extends EntityType<ContactMech>, EntityInfo {
 	 * Returns the value of the '<em><b>Contact Mech Type Attrs</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.contact.ContactMechTypeAttr}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Type Attrs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Contact Mech Type Attrs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMechType_ContactMechTypeAttrs()
@@ -150,10 +146,6 @@ public interface ContactMechType extends EntityType<ContactMech>, EntityInfo {
 	 * Returns the value of the '<em><b>Contact Mech Type Purposes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.contact.ContactMechTypePurpose}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Contact Mech Type Purposes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Contact Mech Type Purposes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMechType_ContactMechTypePurposes()

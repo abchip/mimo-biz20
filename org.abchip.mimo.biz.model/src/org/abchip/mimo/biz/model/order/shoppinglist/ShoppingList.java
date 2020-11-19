@@ -466,10 +466,6 @@ public interface ShoppingList extends EntityTyped<ShoppingListType>, EntityInfo 
 	 * Returns the value of the '<em><b>Shopping List Items</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shopping List Items</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Shopping List Items</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingList_ShoppingListItems()
@@ -501,6 +497,18 @@ public interface ShoppingList extends EntityTyped<ShoppingListType>, EntityInfo 
 	void setShoppingListType(ShoppingListType value);
 
 	/**
+	 * Returns the value of the '<em><b>Shopping List Work Efforts</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListWorkEffort}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Shopping List Work Efforts</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingList_ShoppingListWorkEfforts()
+	 * @model derived="true"
+	 * @generated
+	 */
+	List<ShoppingListWorkEffort> getShoppingListWorkEfforts();
+
+	/**
 	 * Returns the value of the '<em><b>Shopping List Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -526,22 +534,6 @@ public interface ShoppingList extends EntityTyped<ShoppingListType>, EntityInfo 
 	 * @generated
 	 */
 	void setShoppingListId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Shopping List Work Efforts</b></em>' reference list.
-	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListWorkEffort}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shopping List Work Efforts</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Shopping List Work Efforts</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingList_ShoppingListWorkEfforts()
-	 * @model derived="true"
-	 * @generated
-	 */
-	List<ShoppingListWorkEffort> getShoppingListWorkEfforts();
 
 	/**
 	 * Returns the value of the '<em><b>Visitor Id</b></em>' attribute.

@@ -134,22 +134,6 @@ public interface BillingAccountTerm extends EntityIdentifiable, EntityInfo {
 	void setUom(Uom value);
 
 	/**
-	 * Returns the value of the '<em><b>Billing Account Term Attrs</b></em>' reference list.
-	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTermAttr}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Billing Account Term Attrs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Billing Account Term Attrs</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccountTerm_BillingAccountTermAttrs()
-	 * @model derived="true"
-	 * @generated
-	 */
-	List<BillingAccountTermAttr> getBillingAccountTermAttrs();
-
-	/**
 	 * Returns the value of the '<em><b>Billing Account Term Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -197,5 +181,17 @@ public interface BillingAccountTerm extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setBillingAccount(BillingAccount value);
+
+	/**
+	 * Returns the value of the '<em><b>Billing Account Term Attrs</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.payment.BillingAccountTermAttr}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Billing Account Term Attrs</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccountTerm_BillingAccountTermAttrs()
+	 * @model derived="true"
+	 * @generated
+	 */
+	List<BillingAccountTermAttr> getBillingAccountTermAttrs();
 
 } // BillingAccountTerm

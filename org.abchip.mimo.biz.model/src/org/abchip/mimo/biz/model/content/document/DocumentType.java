@@ -62,10 +62,6 @@ public interface DocumentType extends EntityType<Document>, EntityInfo {
 	 * Returns the value of the '<em><b>Document Type Attrs</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.content.document.DocumentTypeAttr}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Document Type Attrs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Document Type Attrs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.content.document.DocumentPackage#getDocumentType_DocumentTypeAttrs()

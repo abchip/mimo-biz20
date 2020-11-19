@@ -199,10 +199,6 @@ public interface ProductPromoCode extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Product Promo Code Emails</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.promo.ProductPromoCodeEmail}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Promo Code Emails</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Product Promo Code Emails</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCode_ProductPromoCodeEmails()
@@ -215,10 +211,6 @@ public interface ProductPromoCode extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Product Promo Code Parties</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.promo.ProductPromoCodeParty}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Promo Code Parties</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Product Promo Code Parties</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCode_ProductPromoCodeParties()

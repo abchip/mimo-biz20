@@ -204,10 +204,6 @@ public interface ProductPromo extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Product Promo Rules</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.promo.ProductPromoRule}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Product Promo Rules</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Product Promo Rules</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromo_ProductPromoRules()

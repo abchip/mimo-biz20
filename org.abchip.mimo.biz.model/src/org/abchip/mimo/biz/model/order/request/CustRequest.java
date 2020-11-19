@@ -167,10 +167,6 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	 * Returns the value of the '<em><b>Cust Request Attributes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.request.CustRequestAttribute}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cust Request Attributes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cust Request Attributes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_CustRequestAttributes()
@@ -205,10 +201,6 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	 * Returns the value of the '<em><b>Cust Request Comm Events</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.request.CustRequestCommEvent}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cust Request Comm Events</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cust Request Comm Events</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_CustRequestCommEvents()
@@ -260,10 +252,6 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	 * Returns the value of the '<em><b>Cust Request Items</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.request.CustRequestItem}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cust Request Items</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cust Request Items</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_CustRequestItems()
@@ -329,10 +317,6 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	 * Returns the value of the '<em><b>Cust Request Notes</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.request.CustRequestNote}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cust Request Notes</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cust Request Notes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_CustRequestNotes()
@@ -367,10 +351,6 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	 * Returns the value of the '<em><b>Cust Request Work Efforts</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.request.CustRequestWorkEffort}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Cust Request Work Efforts</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cust Request Work Efforts</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_CustRequestWorkEfforts()

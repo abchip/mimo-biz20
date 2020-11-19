@@ -17,11 +17,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Queue;
 import java.util.Set;
 
@@ -462,8 +460,6 @@ public class EntityServices {
 				}
 			}
 
-			Map<String, Integer> removeableFeatures = new HashMap<String, Integer>();
-
 			for (ModelRelation modelRelation : modelEntity.getRelationsList(true, true, false)) {
 
 				// no automatic relation
@@ -476,108 +472,34 @@ public class EntityServices {
 					continue;
 				}
 
-				// one field map
-				if (modelRelation.getKeyMaps().size() == 1) {
-					ModelKeyMap modelKeyMap = modelRelation.getKeyMaps().get(0);
+				// one field map on pk
+				if (eClassRef.getEIDAttribute() == null)
+					continue;
+				if (modelRelation.getKeyMaps().size() != 1)
+					continue;
+				ModelKeyMap modelKeyMap = modelRelation.getKeyMaps().get(0);
+				if (!eClassRef.getEIDAttribute().getName().equals(modelKeyMap.getRelFieldName()))
+					continue;
 
-					if (eClassRef.getEIDAttribute() == null)
-						continue;
-
-					if (!eClassRef.getEIDAttribute().getName().equals(modelKeyMap.getRelFieldName()))
-						continue;
-
-					EStructuralFeature eFeature = eClass.getEStructuralFeature(modelKeyMap.getFieldName());
-					if (eFeature == null)
-						continue;
-
-					// super reference
-					if (eClass != eFeature.eContainer())
-						continue;
-
-					if (!(eFeature instanceof EAttribute))
-						continue;
-
-					EAttribute eAttribute = (EAttribute) eFeature;
-
-					if (eAttribute.isID()) {
-						LOGGER.info("INTERFACE: " + eClassRef.getName() + " -> " + eClass.getName());
-						continue;
-					}
-
-					updateReference(eClass, eAttribute, eClassRef);
-				} else {
-
-					if (true)
-						continue;
-
-					ModelEntity modelEntityRef = modelReader.getModelEntityNoCheck(modelRelation.getRelEntityName());
-					if (modelEntityRef == null)
-						continue;
-
-					if (modelEntityRef.getPksSize() != modelRelation.getKeyMaps().size())
-						continue;
-
-					boolean referenceFound = true;
-
-					for (ModelKeyMap modelKeyMap : modelRelation.getKeyMaps()) {
-						// origin
-						ModelField modelFieldFrom = modelEntity.getField(modelKeyMap.getFieldName());
-						if (modelFieldFrom.getIsPk()) {
-							referenceFound = false;
-							break;
-						}
-
-						// destination
-						if (!modelEntityRef.getField(modelKeyMap.getRelFieldName()).getIsPk()) {
-							referenceFound = false;
-							break;
-						}
-					}
-					if (!referenceFound)
-						continue;
-
-					for (ModelKeyMap modelKeyMap : modelRelation.getKeyMaps()) {
-
-						EStructuralFeature eFeature = eClass.getEStructuralFeature(modelKeyMap.getFieldName());
-						if (eFeature == null)
-							continue;
-
-						// super reference
-						if (eClass != eFeature.eContainer())
-							continue;
-
-						String referenceName = Strings.firstToLower(modelEntityRef.getEntityName());
-						EReference eReference = (EReference) eClass.getEStructuralFeature(referenceName);
-						if (eReference == null) {
-							eReference = ecoreFactory.createEReference();
-							eReference.setName(referenceName);
-							eReference.setEType(eClassRef);
-							eReference.setLowerBound(eFeature.getLowerBound());
-							eClass.getEStructuralFeatures().add(eReference);
-
-							ModelField modelFieldFrom = modelEntity.getField(modelKeyMap.getFieldName());
-							if (modelFieldFrom.getIsPk())
-								EcoreUtils.addAnnotationKey(eReference, Slot.NS_PREFIX_SLOT, "key", "true");
-
-							LOGGER.info(eClass.getName() + "." + eReference.getName());
-						}
-						EcoreUtils.addAnnotationKey(eReference, Slot.NS_PREFIX_SLOT_MAPPING, modelKeyMap.getFieldName(), modelKeyMap.getRelFieldName());
-
-						if (removeableFeatures.containsKey(eFeature.getName()))
-							removeableFeatures.put(eFeature.getName(), removeableFeatures.get(eFeature.getName()) + 1);
-						else
-							removeableFeatures.put(eFeature.getName(), 0);
-					}
-				}
-			}
-
-			for (Entry<String, Integer> entry : removeableFeatures.entrySet()) {
-				EStructuralFeature eFeature = eClass.getEStructuralFeature(entry.getKey());
+				EStructuralFeature eFeature = eClass.getEStructuralFeature(modelKeyMap.getFieldName());
 				if (eFeature == null)
 					continue;
 
-				if (entry.getValue() == 0)
-					eClass.getEStructuralFeatures().remove(eFeature);
+				// super reference
+				if (eClass != eFeature.eContainer())
+					continue;
+
+				if (!(eFeature instanceof EAttribute))
+					continue;
+
+				EAttribute eAttribute = (EAttribute) eFeature;
+
+				if (eAttribute.isID()) {
+					LOGGER.info("INTERFACE: " + eClassRef.getName() + " -> " + eClass.getName());
+					continue;
+				}
+
+				updateReference(eClass, eAttribute, eClassRef);
 			}
 		}
 	}
@@ -713,34 +635,24 @@ public class EntityServices {
 				}
 			}
 
-			for (ModelRelation modelRelation : modelEntity.getRelationsList(true, true, true)) {
-
-				// many relation
-				if (!modelRelation.getType().equals("many"))
-					continue;
-
-				// one field map
-				if (modelRelation.getKeyMaps().size() > 1)
-					continue;
+			for (ModelRelation modelRelation : modelEntity.getRelationsList(false, false, true)) {
 
 				// check destination entity
 				ModelEntity modelRelEntity = delegator.getModelReader().getModelEntityNoCheck(modelRelation.getRelEntityName());
 				if (modelRelEntity == null)
 					continue;
-
 				if (modelRelEntity instanceof ModelViewEntity)
 					continue;
 
+				// one field map on pk
+				if (modelRelation.getKeyMaps().size() != 1)
+					continue;
 				ModelKeyMap modelKeyMap = modelRelation.getKeyMaps().get(0);
-
-				// check auto-relation
 				if (!modelKeyMap.getFieldName().equals(modelEntity.getFirstPkFieldName()))
 					continue;
-
-				// pk not to pk
 				if (!modelKeyMap.getRelFieldName().equals(modelRelEntity.getFirstPkFieldName()))
 					continue;
-
+				
 				ModelField modelFieldRel = modelRelEntity.getField(modelKeyMap.getRelFieldName());
 				if (modelFieldRel == null)
 					continue;
@@ -758,11 +670,11 @@ public class EntityServices {
 						relationType = "fromDate";
 						break;
 					}
-//					else if(ModelUtils.isDateField(modelRelEntity.getPkFields().get(2))) {
-//						System.out.println(modelRelEntity.getPkFieldNames().get(2));
-//						relationType = "fromDate";
-//						break;
-//					}
+					// else if(ModelUtils.isDateField(modelRelEntity.getPkFields().get(2))) {
+					// System.out.println(modelRelEntity.getPkFieldNames().get(2));
+					// relationType = "fromDate";
+					// break;
+					// }
 
 					if (modelRelEntity.getPkFieldNames().get(1).contains("Seq")) {
 						// relationType = "sequenced";

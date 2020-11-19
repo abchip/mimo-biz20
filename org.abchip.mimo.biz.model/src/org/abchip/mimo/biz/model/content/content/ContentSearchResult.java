@@ -67,10 +67,6 @@ public interface ContentSearchResult extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Content Search Constraints</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Content Search Constraints</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Content Search Constraints</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentSearchResult_ContentSearchConstraints()

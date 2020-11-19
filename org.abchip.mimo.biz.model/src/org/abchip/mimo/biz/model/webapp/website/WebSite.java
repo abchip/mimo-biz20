@@ -465,10 +465,6 @@ public interface WebSite extends EntityIdentifiable, EntityInfo {
 	 * Returns the value of the '<em><b>Web Analytics Configs</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Web Analytics Configs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Web Analytics Configs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebSite_WebAnalyticsConfigs()

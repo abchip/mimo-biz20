@@ -62,10 +62,6 @@ public interface FacilityType extends EntityType<Facility>, EntityInfo {
 	 * Returns the value of the '<em><b>Facility Type Attrs</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.facility.FacilityTypeAttr}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Facility Type Attrs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Facility Type Attrs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityType_FacilityTypeAttrs()

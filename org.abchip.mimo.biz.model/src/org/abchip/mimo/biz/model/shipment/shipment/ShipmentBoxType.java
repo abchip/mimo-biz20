@@ -146,10 +146,6 @@ public interface ShipmentBoxType extends EntityType<ShipmentPackage>, EntityInfo
 	 * Returns the value of the '<em><b>Carrier Shipment Box Types</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentBoxType}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Carrier Shipment Box Types</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Carrier Shipment Box Types</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentBoxType_CarrierShipmentBoxTypes()
