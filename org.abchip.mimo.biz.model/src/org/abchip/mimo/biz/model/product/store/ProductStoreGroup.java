@@ -164,7 +164,7 @@ public interface ProductStoreGroup extends EntityTyped<ProductStoreGroupType>, E
 	 * @return the value of the '<em>Current Product Store Group Rollups</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreGroup_CurrentProductStoreGroupRollups()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductStoreGroupRollup> getCurrentProductStoreGroupRollups();

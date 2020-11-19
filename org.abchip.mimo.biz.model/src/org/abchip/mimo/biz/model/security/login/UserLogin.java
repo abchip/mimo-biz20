@@ -458,7 +458,7 @@ public interface UserLogin extends UserProfile {
 	 * @return the value of the '<em>User Login Security Groups</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLogin_UserLoginSecurityGroups()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<UserLoginSecurityGroup> getUserLoginSecurityGroups();

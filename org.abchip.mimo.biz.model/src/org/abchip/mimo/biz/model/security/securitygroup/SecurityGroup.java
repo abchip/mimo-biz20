@@ -131,7 +131,7 @@ public interface SecurityGroup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Security Group Permissions</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage#getSecurityGroup_SecurityGroupPermissions()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<SecurityGroupPermission> getSecurityGroupPermissions();

@@ -1149,6 +1149,8 @@ public class SecuritygroupPackageImpl extends EPackageImpl implements Securitygr
 		createMimoentslotAnnotations();
 		// mimo-ent-format
 		createMimoentformatAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 	}
 
 	/**
@@ -1238,6 +1240,22 @@ public class SecuritygroupPackageImpl extends EPackageImpl implements Securitygr
 	}
 
 	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
+		  (getSecurityGroup_SecurityGroupPermissions(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+	}
+
+	/**
 	 * Initializes the annotations for <b>mimo-ent-slot</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1275,12 +1293,6 @@ public class SecuritygroupPackageImpl extends EPackageImpl implements Securitygr
 		   source,
 		   new String[] {
 			   "help", "period of time a login will not be able to acces  this view again (in seconds)"
-		   });
-		addAnnotation
-		  (getSecurityGroup_SecurityGroupPermissions(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
 		   });
 		addAnnotation
 		  (getSecurityGroupPermission_Group(),

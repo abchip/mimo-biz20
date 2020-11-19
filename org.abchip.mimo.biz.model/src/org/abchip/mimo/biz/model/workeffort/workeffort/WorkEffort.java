@@ -97,7 +97,9 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortNotes <em>Work Effort Notes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortParent <em>Work Effort Parent</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortPurposeType <em>Work Effort Purpose Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortReviews <em>Work Effort Reviews</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortSkillStandards <em>Work Effort Skill Standards</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortStatuses <em>Work Effort Statuses</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortSurveyAppls <em>Work Effort Survey Appls</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortType <em>Work Effort Type</em>}</li>
  * </ul>
@@ -1253,7 +1255,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Work Effort Contact Mechs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortContactMechs()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<WorkEffortContactMech> getWorkEffortContactMechs();
@@ -1266,7 +1268,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Work Effort Cost Calcs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortCostCalcs()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<WorkEffortCostCalc> getWorkEffortCostCalcs();
@@ -1303,7 +1305,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Work Effort Fixed Asset Assigns</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortFixedAssetAssigns()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<WorkEffortFixedAssetAssign> getWorkEffortFixedAssetAssigns();
@@ -1511,6 +1513,19 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	void setWorkEffortPurposeType(WorkEffortPurposeType value);
 
 	/**
+	 * Returns the value of the '<em><b>Work Effort Reviews</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortReview}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Work Effort Reviews</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortReviews()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot-constraint reviewDate='*NOW'"
+	 * @generated
+	 */
+	List<WorkEffortReview> getWorkEffortReviews();
+
+	/**
 	 * Returns the value of the '<em><b>Work Effort Skill Standards</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSkillStandard}.
 	 * <!-- begin-user-doc -->
@@ -1523,6 +1538,19 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	List<WorkEffortSkillStandard> getWorkEffortSkillStandards();
 
 	/**
+	 * Returns the value of the '<em><b>Work Effort Statuses</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortStatus}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Work Effort Statuses</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortStatuses()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot-constraint statusDatetime='*NOW'"
+	 * @generated
+	 */
+	List<WorkEffortStatus> getWorkEffortStatuses();
+
+	/**
 	 * Returns the value of the '<em><b>Work Effort Survey Appls</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSurveyAppl}.
 	 * <!-- begin-user-doc -->
@@ -1530,7 +1558,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Work Effort Survey Appls</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortSurveyAppls()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<WorkEffortSurveyAppl> getWorkEffortSurveyAppls();

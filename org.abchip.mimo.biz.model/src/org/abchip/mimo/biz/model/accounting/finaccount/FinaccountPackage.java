@@ -180,13 +180,22 @@ public interface FinaccountPackage extends EPackage {
 	int FIN_ACCOUNT__FIN_ACCOUNT_PIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
+	 * The feature id for the '<em><b>Fin Account Statuses</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FIN_ACCOUNT__FIN_ACCOUNT_STATUSES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
+
+	/**
 	 * The feature id for the '<em><b>Fin Account Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIN_ACCOUNT__FIN_ACCOUNT_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
+	int FIN_ACCOUNT__FIN_ACCOUNT_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -195,7 +204,7 @@ public interface FinaccountPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIN_ACCOUNT__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
+	int FIN_ACCOUNT__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Is Refundable</b></em>' attribute.
@@ -204,7 +213,7 @@ public interface FinaccountPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIN_ACCOUNT__IS_REFUNDABLE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
+	int FIN_ACCOUNT__IS_REFUNDABLE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Organization Party</b></em>' reference.
@@ -213,7 +222,7 @@ public interface FinaccountPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIN_ACCOUNT__ORGANIZATION_PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
+	int FIN_ACCOUNT__ORGANIZATION_PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Owner Party</b></em>' reference.
@@ -222,7 +231,7 @@ public interface FinaccountPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIN_ACCOUNT__OWNER_PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
+	int FIN_ACCOUNT__OWNER_PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Post To Gl Account</b></em>' reference.
@@ -231,7 +240,7 @@ public interface FinaccountPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIN_ACCOUNT__POST_TO_GL_ACCOUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
+	int FIN_ACCOUNT__POST_TO_GL_ACCOUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Replenish Level</b></em>' attribute.
@@ -240,7 +249,7 @@ public interface FinaccountPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIN_ACCOUNT__REPLENISH_LEVEL = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
+	int FIN_ACCOUNT__REPLENISH_LEVEL = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Replenish Payment</b></em>' reference.
@@ -249,7 +258,7 @@ public interface FinaccountPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIN_ACCOUNT__REPLENISH_PAYMENT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
+	int FIN_ACCOUNT__REPLENISH_PAYMENT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' attribute.
@@ -258,7 +267,7 @@ public interface FinaccountPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIN_ACCOUNT__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
+	int FIN_ACCOUNT__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -267,7 +276,7 @@ public interface FinaccountPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIN_ACCOUNT__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
+	int FIN_ACCOUNT__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The number of structural features of the '<em>Fin Account</em>' class.
@@ -276,7 +285,7 @@ public interface FinaccountPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIN_ACCOUNT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
+	int FIN_ACCOUNT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountAttributeImpl <em>Fin Account Attribute</em>}' class.
@@ -1577,6 +1586,17 @@ public interface FinaccountPackage extends EPackage {
 	EAttribute getFinAccount_FinAccountPin();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getFinAccountStatuses <em>Fin Account Statuses</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Fin Account Statuses</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getFinAccountStatuses()
+	 * @see #getFinAccount()
+	 * @generated
+	 */
+	EReference getFinAccount_FinAccountStatuses();
+
+	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getFinAccountType <em>Fin Account Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2595,6 +2615,14 @@ public interface FinaccountPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute FIN_ACCOUNT__FIN_ACCOUNT_PIN = eINSTANCE.getFinAccount_FinAccountPin();
+
+		/**
+		 * The meta object literal for the '<em><b>Fin Account Statuses</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FIN_ACCOUNT__FIN_ACCOUNT_STATUSES = eINSTANCE.getFinAccount_FinAccountStatuses();
 
 		/**
 		 * The meta object literal for the '<em><b>Fin Account Type</b></em>' reference feature.

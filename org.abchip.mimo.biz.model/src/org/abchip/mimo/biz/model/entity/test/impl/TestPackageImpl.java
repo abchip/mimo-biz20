@@ -1914,6 +1914,8 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		createMimoentformatAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 	}
 
 	/**
@@ -2234,12 +2236,6 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getTestingNode_TestingNodeMembers(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
 		  (getTestingNodeMember_Testing(),
 		   source,
 		   new String[] {
@@ -2256,6 +2252,22 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		   source,
 		   new String[] {
 			   "key", "true"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
+		  (getTestingNode_TestingNodeMembers(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
 		   });
 	}
 

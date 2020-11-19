@@ -35,6 +35,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getFinAccountCode <em>Fin Account Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getFinAccountName <em>Fin Account Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getFinAccountPin <em>Fin Account Pin</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getFinAccountStatuses <em>Fin Account Statuses</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getFinAccountType <em>Fin Account Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccount#isIsRefundable <em>Is Refundable</em>}</li>
@@ -219,6 +220,19 @@ public interface FinAccount extends EntityTyped<FinAccountType>, EntityInfo {
 	 * @generated
 	 */
 	void setFinAccountPin(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Fin Account Statuses</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountStatus}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fin Account Statuses</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_FinAccountStatuses()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot-constraint statusDate='*NOW'"
+	 * @generated
+	 */
+	List<FinAccountStatus> getFinAccountStatuses();
 
 	/**
 	 * Returns the value of the '<em><b>Fin Account Type</b></em>' reference.

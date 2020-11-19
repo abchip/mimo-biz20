@@ -843,7 +843,7 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 	 * @generated
 	 */
 	@Override
-	public EReference getFinAccount_FinAccountType() {
+	public EReference getFinAccount_FinAccountStatuses() {
 		return (EReference)finAccountEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -853,8 +853,8 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 	 * @generated
 	 */
 	@Override
-	public EAttribute getFinAccount_FromDate() {
-		return (EAttribute)finAccountEClass.getEStructuralFeatures().get(9);
+	public EReference getFinAccount_FinAccountType() {
+		return (EReference)finAccountEClass.getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -863,7 +863,7 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 	 * @generated
 	 */
 	@Override
-	public EAttribute getFinAccount_IsRefundable() {
+	public EAttribute getFinAccount_FromDate() {
 		return (EAttribute)finAccountEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -873,8 +873,8 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 	 * @generated
 	 */
 	@Override
-	public EReference getFinAccount_OrganizationParty() {
-		return (EReference)finAccountEClass.getEStructuralFeatures().get(11);
+	public EAttribute getFinAccount_IsRefundable() {
+		return (EAttribute)finAccountEClass.getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -883,7 +883,7 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 	 * @generated
 	 */
 	@Override
-	public EReference getFinAccount_OwnerParty() {
+	public EReference getFinAccount_OrganizationParty() {
 		return (EReference)finAccountEClass.getEStructuralFeatures().get(12);
 	}
 
@@ -893,7 +893,7 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 	 * @generated
 	 */
 	@Override
-	public EReference getFinAccount_PostToGlAccount() {
+	public EReference getFinAccount_OwnerParty() {
 		return (EReference)finAccountEClass.getEStructuralFeatures().get(13);
 	}
 
@@ -903,8 +903,18 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 	 * @generated
 	 */
 	@Override
+	public EReference getFinAccount_PostToGlAccount() {
+		return (EReference)finAccountEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getFinAccount_ReplenishLevel() {
-		return (EAttribute)finAccountEClass.getEStructuralFeatures().get(14);
+		return (EAttribute)finAccountEClass.getEStructuralFeatures().get(15);
 	}
 
 	/**
@@ -914,7 +924,7 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 	 */
 	@Override
 	public EReference getFinAccount_ReplenishPayment() {
-		return (EReference)finAccountEClass.getEStructuralFeatures().get(15);
+		return (EReference)finAccountEClass.getEStructuralFeatures().get(16);
 	}
 
 	/**
@@ -924,7 +934,7 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 	 */
 	@Override
 	public EAttribute getFinAccount_StatusId() {
-		return (EAttribute)finAccountEClass.getEStructuralFeatures().get(16);
+		return (EAttribute)finAccountEClass.getEStructuralFeatures().get(17);
 	}
 
 	/**
@@ -934,7 +944,7 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 	 */
 	@Override
 	public EAttribute getFinAccount_ThruDate() {
-		return (EAttribute)finAccountEClass.getEStructuralFeatures().get(17);
+		return (EAttribute)finAccountEClass.getEStructuralFeatures().get(18);
 	}
 
 	/**
@@ -1725,6 +1735,7 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 		createEAttribute(finAccountEClass, FIN_ACCOUNT__FIN_ACCOUNT_CODE);
 		createEAttribute(finAccountEClass, FIN_ACCOUNT__FIN_ACCOUNT_NAME);
 		createEAttribute(finAccountEClass, FIN_ACCOUNT__FIN_ACCOUNT_PIN);
+		createEReference(finAccountEClass, FIN_ACCOUNT__FIN_ACCOUNT_STATUSES);
 		createEReference(finAccountEClass, FIN_ACCOUNT__FIN_ACCOUNT_TYPE);
 		createEAttribute(finAccountEClass, FIN_ACCOUNT__FROM_DATE);
 		createEAttribute(finAccountEClass, FIN_ACCOUNT__IS_REFUNDABLE);
@@ -1913,6 +1924,7 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 		initEAttribute(getFinAccount_FinAccountCode(), ecorePackage.getEString(), "finAccountCode", null, 0, 1, FinAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFinAccount_FinAccountName(), ecorePackage.getEString(), "finAccountName", null, 0, 1, FinAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFinAccount_FinAccountPin(), ecorePackage.getEString(), "finAccountPin", null, 0, 1, FinAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFinAccount_FinAccountStatuses(), this.getFinAccountStatus(), null, "finAccountStatuses", null, 0, -1, FinAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getFinAccount_FinAccountType(), this.getFinAccountType(), null, "finAccountType", null, 0, 1, FinAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getFinAccount_FinAccountType().getEKeys().add(this.getFinAccountType_FinAccountTypeId());
 		initEAttribute(getFinAccount_FromDate(), ecorePackage.getEDate(), "fromDate", null, 0, 1, FinAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2047,6 +2059,8 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 		createMimoentformatAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 	}
 
 	/**
@@ -2418,6 +2432,22 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 		   source,
 		   new String[] {
 			   "key", "true"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
+		  (getFinAccount_FinAccountStatuses(),
+		   source,
+		   new String[] {
+			   "statusDate", "*NOW"
 		   });
 	}
 

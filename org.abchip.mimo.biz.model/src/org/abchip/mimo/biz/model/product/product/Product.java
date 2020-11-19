@@ -1073,7 +1073,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Product Cost Component Calcs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductCostComponentCalcs()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductCostComponentCalc> getProductCostComponentCalcs();
@@ -1150,7 +1150,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Product Feature Appls</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductFeatureAppls()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductFeatureAppl> getProductFeatureAppls();
@@ -1277,7 +1277,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Product Subscription Resources</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductSubscriptionResources()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductSubscriptionResource> getProductSubscriptionResources();

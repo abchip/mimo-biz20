@@ -190,6 +190,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//accounting/finaccount/FinAccount/finAccountName"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//accounting/finaccount/FinAccount/finAccountPin"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//accounting/finaccount/FinAccount/finAccountStatuses"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//accounting/finaccount/FinAccount/finAccountType"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//accounting/finaccount/FinAccount/fromDate"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//accounting/finaccount/FinAccount/isRefundable"/>
@@ -579,6 +581,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//accounting/invoice/Invoice/invoiceMessage"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//accounting/invoice/Invoice/invoiceNotes"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//accounting/invoice/Invoice/invoiceStatuses"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//accounting/invoice/Invoice/invoiceType"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//accounting/invoice/Invoice/paidDate"/>
@@ -6056,6 +6060,8 @@
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/partySkills"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/partyStatuses"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/partyType"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/performanceNotes"/>
@@ -7195,6 +7201,8 @@
               ecoreFeature="ecore:EReference biz-model.ecore#//product/inventory/InventoryItem/inventoryItemDetails"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//product/inventory/InventoryItem/inventoryItemLabelAppls"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/inventory/InventoryItem/inventoryItemStatuses"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//product/inventory/InventoryItem/inventoryItemType"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -9658,7 +9666,11 @@
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//workeffort/workeffort/WorkEffort/workEffortPurposeType"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//workeffort/workeffort/WorkEffort/workEffortReviews"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//workeffort/workeffort/WorkEffort/workEffortSkillStandards"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//workeffort/workeffort/WorkEffort/workEffortStatuses"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//workeffort/workeffort/WorkEffort/workEffortSurveyAppls"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"

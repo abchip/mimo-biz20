@@ -16,6 +16,7 @@ import org.abchip.mimo.biz.model.accounting.invoice.InvoiceAttribute;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceNote;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage;
+import org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceType;
 import org.abchip.mimo.biz.model.accounting.payment.BillingAccount;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
@@ -53,6 +54,7 @@ import org.eclipse.emf.ecore.EOperation;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getInvoiceItems <em>Invoice Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getInvoiceMessage <em>Invoice Message</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getInvoiceNotes <em>Invoice Notes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getInvoiceStatuses <em>Invoice Statuses</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getInvoiceType <em>Invoice Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getPaidDate <em>Paid Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceImpl#getParty <em>Party</em>}</li>
@@ -278,6 +280,17 @@ public class InvoiceImpl extends EntityTypedImpl<InvoiceType> implements Invoice
 	@Override
 	public List<InvoiceNote> getInvoiceNotes() {
 		return (List<InvoiceNote>)eGet(InvoicePackage.Literals.INVOICE__INVOICE_NOTES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<InvoiceStatus> getInvoiceStatuses() {
+		return (List<InvoiceStatus>)eGet(InvoicePackage.Literals.INVOICE__INVOICE_STATUSES, true);
 	}
 
 	/**

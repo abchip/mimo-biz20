@@ -35,6 +35,7 @@ import org.abchip.mimo.biz.model.party.party.PartyNote;
 import org.abchip.mimo.biz.model.party.party.PartyPackage;
 import org.abchip.mimo.biz.model.party.party.PartyProfileDefault;
 import org.abchip.mimo.biz.model.party.party.PartyRole;
+import org.abchip.mimo.biz.model.party.party.PartyStatus;
 import org.abchip.mimo.biz.model.party.party.PartyType;
 import org.abchip.mimo.biz.model.product.supplier.SupplierProductFeature;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
@@ -85,6 +86,7 @@ import org.osgi.service.log.Logger;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyRates <em>Party Rates</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyRoles <em>Party Roles</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartySkills <em>Party Skills</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyStatuses <em>Party Statuses</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyType <em>Party Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPerformanceNotes <em>Performance Notes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPreferredCurrencyUom <em>Preferred Currency Uom</em>}</li>
@@ -514,6 +516,17 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	@Override
 	public List<PartySkill> getPartySkills() {
 		return (List<PartySkill>)eGet(PartyPackage.Literals.PARTY__PARTY_SKILLS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<PartyStatus> getPartyStatuses() {
+		return (List<PartyStatus>)eGet(PartyPackage.Literals.PARTY__PARTY_STATUSES, true);
 	}
 
 	/**

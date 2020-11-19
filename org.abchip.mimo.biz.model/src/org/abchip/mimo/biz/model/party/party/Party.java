@@ -61,6 +61,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyRates <em>Party Rates</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyRoles <em>Party Roles</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartySkills <em>Party Skills</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyStatuses <em>Party Statuses</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyType <em>Party Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPerformanceNotes <em>Performance Notes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPreferredCurrencyUom <em>Preferred Currency Uom</em>}</li>
@@ -181,7 +182,7 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * @return the value of the '<em>Empl Leaves</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_EmplLeaves()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<EmplLeave> getEmplLeaves();
@@ -306,7 +307,7 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * @return the value of the '<em>Party Carrier Accounts</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyCarrierAccounts()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<PartyCarrierAccount> getPartyCarrierAccounts();
@@ -319,7 +320,7 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * @return the value of the '<em>Party Classifications</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyClassifications()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<PartyClassification> getPartyClassifications();
@@ -332,7 +333,7 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * @return the value of the '<em>Party Contact Mechs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyContactMechs()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<PartyContactMech> getPartyContactMechs();
@@ -345,7 +346,7 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * @return the value of the '<em>Party Data Sources</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyDataSources()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<PartyDataSource> getPartyDataSources();
@@ -358,7 +359,7 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * @return the value of the '<em>Party Geo Points</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyGeoPoints()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<PartyGeoPoint> getPartyGeoPoints();
@@ -419,7 +420,7 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * @return the value of the '<em>Party Quals</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyQuals()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<PartyQual> getPartyQuals();
@@ -432,7 +433,7 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * @return the value of the '<em>Party Rates</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyRates()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<PartyRate> getPartyRates();
@@ -460,6 +461,19 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * @generated
 	 */
 	List<PartySkill> getPartySkills();
+
+	/**
+	 * Returns the value of the '<em><b>Party Statuses</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.party.PartyStatus}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party Statuses</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyStatuses()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot-constraint statusDate='*NOW'"
+	 * @generated
+	 */
+	List<PartyStatus> getPartyStatuses();
 
 	/**
 	 * Returns the value of the '<em><b>Party Type</b></em>' reference.
@@ -491,7 +505,7 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * @return the value of the '<em>Performance Notes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PerformanceNotes()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<PerformanceNote> getPerformanceNotes();

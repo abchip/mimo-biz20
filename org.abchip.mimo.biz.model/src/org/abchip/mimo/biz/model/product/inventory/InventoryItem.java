@@ -47,6 +47,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.InventoryItem#getInventoryItemAttributes <em>Inventory Item Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.InventoryItem#getInventoryItemDetails <em>Inventory Item Details</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.InventoryItem#getInventoryItemLabelAppls <em>Inventory Item Label Appls</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.InventoryItem#getInventoryItemStatuses <em>Inventory Item Statuses</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.InventoryItem#getInventoryItemType <em>Inventory Item Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.InventoryItem#getInventoryItemVariances <em>Inventory Item Variances</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.InventoryItem#getLocationSeqId <em>Location Seq Id</em>}</li>
@@ -427,6 +428,19 @@ public interface InventoryItem extends EntityTyped<InventoryItemType>, EntityInf
 	 * @generated
 	 */
 	List<InventoryItemLabelAppl> getInventoryItemLabelAppls();
+
+	/**
+	 * Returns the value of the '<em><b>Inventory Item Statuses</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.inventory.InventoryItemStatus}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Inventory Item Statuses</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItem_InventoryItemStatuses()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot-constraint statusDatetime='*NOW'"
+	 * @generated
+	 */
+	List<InventoryItemStatus> getInventoryItemStatuses();
 
 	/**
 	 * Returns the value of the '<em><b>Inventory Item Type</b></em>' reference.

@@ -577,6 +577,13 @@
             <details key="length" value="255"/>
           </eAnnotations>
         </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="finAccountStatuses"
+            upperBound="-1" eType="#//accounting/finaccount/FinAccountStatus"
+            derived="true">
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="statusDate" value="*NOW"/>
+          </eAnnotations>
+        </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="finAccountType" eType="#//accounting/finaccount/FinAccountType"
             eKeys="#//accounting/finaccount/FinAccountType/finAccountTypeId"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="fromDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
@@ -1091,8 +1098,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="fixedAssetGeoPoints"
             upperBound="-1" eType="#//accounting/fixedasset/FixedAssetGeoPoint"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="fixedAssetIdents" upperBound="-1"
@@ -1112,8 +1119,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="fixedAssetStdCosts"
             upperBound="-1" eType="#//accounting/fixedasset/FixedAssetStdCost"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="fixedAssetType" eType="#//accounting/fixedasset/FixedAssetType"
@@ -1819,6 +1826,13 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="invoiceNotes" upperBound="-1"
             eType="#//accounting/invoice/InvoiceNote"
             derived="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="invoiceStatuses" upperBound="-1"
+            eType="#//accounting/invoice/InvoiceStatus"
+            derived="true">
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="statusDate" value="*NOW"/>
+          </eAnnotations>
+        </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="invoiceType" eType="#//accounting/invoice/InvoiceType"
             eKeys="#//accounting/invoice/InvoiceType/invoiceTypeId"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="paidDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
@@ -2816,8 +2830,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="glAccountCategoryMembers"
             upperBound="-1" eType="#//accounting/ledger/GlAccountCategoryMember"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="glAccountClass" eType="#//accounting/ledger/GlAccountClass"
@@ -2833,8 +2847,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="glBudgetXrefs" upperBound="-1"
             eType="#//accounting/ledger/GlBudgetXref"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="glResourceType" eType="#//accounting/ledger/GlResourceType"
@@ -5722,8 +5736,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="paymentGroupMembers"
             upperBound="-1" eType="#//accounting/payment/PaymentGroupMember"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="paymentGroupName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -7903,8 +7917,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="datedMainUomConversionDateds"
             upperBound="-1" eType="#//common/uom/UomConversionDated"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -8193,8 +8207,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="fromCommEventContentAssocs"
             upperBound="-1" eType="#//party/communication/CommEventContentAssoc"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="instanceOfContent"
@@ -9476,14 +9490,14 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="surveyQuestionAppls"
             upperBound="-1" eType="#//content/survey/SurveyQuestionAppl"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="surveyTriggers" upperBound="-1"
             eType="#//content/survey/SurveyTrigger" derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
       </eClassifiers>
@@ -11045,8 +11059,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="testingNodeMembers"
             upperBound="-1" eType="#//entity/test/TestingNodeMember"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
       </eClassifiers>
@@ -12185,15 +12199,15 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="emplPositionFulfillments"
             upperBound="-1" eType="#//humanres/position/EmplPositionFulfillment"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="emplPositionResponsibilities"
             upperBound="-1" eType="#//humanres/position/EmplPositionResponsibility"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="emplPositionType" eType="#//humanres/position/EmplPositionType"
@@ -12211,8 +12225,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="reportingToEmplPositionReportingStructs"
             upperBound="-1" eType="#//humanres/position/EmplPositionReportingStruct"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="salaryFlag" lowerBound="1"
@@ -12353,15 +12367,15 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="emplPositionTypeClasses"
             upperBound="-1" eType="#//humanres/position/EmplPositionTypeClass"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="emplPositionTypeRates"
             upperBound="-1" eType="#//humanres/position/EmplPositionTypeRate"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasTable" lowerBound="1"
@@ -12371,8 +12385,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="validResponsibilities"
             upperBound="-1" eType="#//humanres/position/ValidResponsibility"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
@@ -12927,15 +12941,15 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="marketingCampaignPrices"
             upperBound="-1" eType="#//marketing/campaign/MarketingCampaignPrice"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="marketingCampaignPromos"
             upperBound="-1" eType="#//marketing/campaign/MarketingCampaignPromo"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="numSent" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong">
@@ -13060,8 +13074,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="contactListParties"
             upperBound="-1" eType="#//marketing/contact/ContactListParty"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="contactListType" eType="#//marketing/contact/ContactListType"
@@ -13932,8 +13946,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="trackingCodeVisits"
             upperBound="-1" eType="#//marketing/tracking/TrackingCodeVisit"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityTyped">
@@ -16682,8 +16696,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="custRequestContents"
             upperBound="-1" eType="#//order/request/CustRequestContent"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="custRequestDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
@@ -20188,8 +20202,8 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="emplLeaves" upperBound="-1"
             eType="#//humanres/employment/EmplLeave" derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="externalId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -20206,34 +20220,34 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyCarrierAccounts"
             upperBound="-1" eType="#//party/party/PartyCarrierAccount"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyClassifications"
             upperBound="-1" eType="#//party/party/PartyClassification"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyContactMechs"
             upperBound="-1" eType="#//party/contact/PartyContactMech"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyDataSources" upperBound="-1"
             eType="#//party/party/PartyDataSource" derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyGeoPoints" upperBound="-1"
             eType="#//party/party/PartyGeoPoint" derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyIdentifications"
@@ -20249,27 +20263,33 @@
             derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyQuals" upperBound="-1"
             eType="#//humanres/ability/PartyQual" derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyRates" upperBound="-1"
             eType="#//accounting/rate/PartyRate" derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyRoles" upperBound="-1"
             eType="#//party/party/PartyRole" derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partySkills" upperBound="-1"
             eType="#//humanres/ability/PartySkill" derived="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="partyStatuses" upperBound="-1"
+            eType="#//party/party/PartyStatus" derived="true">
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="statusDate" value="*NOW"/>
+          </eAnnotations>
+        </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyType" eType="#//party/party/PartyType"
             eKeys="#//party/party/PartyType/partyTypeId"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="performanceNotes" upperBound="-1"
             eType="#//humanres/ability/PerformanceNote"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="preferredCurrencyUom"
@@ -21090,8 +21110,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="personTrainings" upperBound="-1"
             eType="#//humanres/ability/PersonTraining"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="personalTitle" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -21568,8 +21588,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="prodCatalogInvFacilities"
             upperBound="-1" eType="#//product/catalog/ProdCatalogInvFacility"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="purchaseAllowPermReqd"
@@ -21755,8 +21775,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="currentProductCategoryRollups"
             upperBound="-1" eType="#//product/category/ProductCategoryRollup"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -21783,8 +21803,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="marketInterests" upperBound="-1"
             eType="#//product/supplier/MarketInterest"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="primaryParentCategory"
@@ -21796,15 +21816,15 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="productCategoryLinks"
             upperBound="-1" eType="#//product/category/ProductCategoryLink"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productCategoryMembers"
             upperBound="-1" eType="#//product/category/ProductCategoryMember"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productCategoryType"
@@ -21813,15 +21833,15 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="productFeatureCatGrpAppls"
             upperBound="-1" eType="#//product/feature/ProductFeatureCatGrpAppl"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productFeatureCategoryAppls"
             upperBound="-1" eType="#//product/feature/ProductFeatureCategoryAppl"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="showInSelect" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
@@ -22900,8 +22920,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="containerGeoPoints"
             upperBound="-1" eType="#//product/facility/ContainerGeoPoint"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="containerType" eType="#//product/facility/ContainerType"
@@ -23010,22 +23030,22 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="facilityContactMechs"
             upperBound="-1" eType="#//product/facility/FacilityContactMech"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="facilityContents" upperBound="-1"
             eType="#//product/facility/FacilityContent"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="facilityGroupMembers"
             upperBound="-1" eType="#//product/facility/FacilityGroupMember"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="facilityLevel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong">
@@ -23337,8 +23357,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="currentFacilityGroupRollups"
             upperBound="-1" eType="#//product/facility/FacilityGroupRollup"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -24088,8 +24108,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="productFeatureGroupAppls"
             upperBound="-1" eType="#//product/feature/ProductFeatureGroupAppl"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
       </eClassifiers>
@@ -24281,6 +24301,13 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="inventoryItemLabelAppls"
             upperBound="-1" eType="#//product/inventory/InventoryItemLabelAppl"
             derived="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="inventoryItemStatuses"
+            upperBound="-1" eType="#//product/inventory/InventoryItemStatus"
+            derived="true">
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="statusDatetime" value="*NOW"/>
+          </eAnnotations>
+        </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="inventoryItemType"
             eType="#//product/inventory/InventoryItemType"
             eKeys="#//product/inventory/InventoryItemType/inventoryItemTypeId"/>
@@ -25630,8 +25657,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="productCostComponentCalcs"
             upperBound="-1" eType="#//product/cost/ProductCostComponentCalc"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="productDepth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
@@ -25654,8 +25681,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="productFeatureAppls"
             upperBound="-1" eType="#//product/feature/ProductFeatureAppl"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productGeos" upperBound="-1"
@@ -25686,8 +25713,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="productSubscriptionResources"
             upperBound="-1" eType="#//product/subscription/ProductSubscriptionResource"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productType" eType="#//product/product/ProductType"
@@ -27323,8 +27350,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="productStoreCatalogs"
             upperBound="-1" eType="#//product/store/ProductStoreCatalog"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productStoreEmailSettings"
@@ -27333,8 +27360,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="productStoreFacilities"
             upperBound="-1" eType="#//product/store/ProductStoreFacility"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productStoreFinActSettings"
@@ -27343,22 +27370,22 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="productStoreGroupMembers"
             upperBound="-1" eType="#//product/store/ProductStoreGroupMember"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productStoreKeywordOvrds"
             upperBound="-1" eType="#//product/store/ProductStoreKeywordOvrd"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productStorePromoAppls"
             upperBound="-1" eType="#//product/store/ProductStorePromoAppl"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="prorateShipping" lowerBound="1"
@@ -27733,8 +27760,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="currentProductStoreGroupRollups"
             upperBound="-1" eType="#//product/store/ProductStoreGroupRollup"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -29117,8 +29144,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="userLoginSecurityGroups"
             upperBound="-1" eType="#//security/securitygroup/UserLoginSecurityGroup"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="userPreferences" upperBound="-1"
@@ -29292,8 +29319,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="securityGroupPermissions"
             upperBound="-1" eType="#//security/securitygroup/SecurityGroupPermission"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
       </eClassifiers>
@@ -32308,15 +32335,15 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="webSiteContactLists"
             upperBound="-1" eType="#//marketing/contact/WebSiteContactList"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="webSitePathAliass"
             upperBound="-1" eType="#//content/website/WebSitePathAlias"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="webappPath" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -32734,15 +32761,15 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortContactMechs"
             upperBound="-1" eType="#//workeffort/workeffort/WorkEffortContactMech"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortCostCalcs"
             upperBound="-1" eType="#//workeffort/workeffort/WorkEffortCostCalc"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortDeliverableProds"
@@ -32754,8 +32781,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortFixedAssetAssigns"
             upperBound="-1" eType="#//workeffort/workeffort/WorkEffortFixedAssetAssign"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortFixedAssetStds"
@@ -32787,14 +32814,28 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortPurposeType"
             eType="#//workeffort/workeffort/WorkEffortPurposeType"
             eKeys="#//workeffort/workeffort/WorkEffortPurposeType/workEffortPurposeTypeId"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortReviews"
+            upperBound="-1" eType="#//workeffort/workeffort/WorkEffortReview"
+            derived="true">
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="reviewDate" value="*NOW"/>
+          </eAnnotations>
+        </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortSkillStandards"
             upperBound="-1" eType="#//workeffort/workeffort/WorkEffortSkillStandard"
             derived="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortStatuses"
+            upperBound="-1" eType="#//workeffort/workeffort/WorkEffortStatus"
+            derived="true">
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="statusDatetime" value="*NOW"/>
+          </eAnnotations>
+        </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortSurveyAppls"
             upperBound="-1" eType="#//workeffort/workeffort/WorkEffortSurveyAppl"
             derived="true">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="type" value="fromDate"/>
+          <eAnnotations source="mimo-ent-slot-constraint">
+            <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortType" eType="#//workeffort/workeffort/WorkEffortType"

@@ -12,6 +12,7 @@ import java.util.Date;
 import java.util.List;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccount;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccountAttribute;
+import org.abchip.mimo.biz.model.accounting.finaccount.FinAccountStatus;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
@@ -43,6 +44,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getFinAccountCode <em>Fin Account Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getFinAccountName <em>Fin Account Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getFinAccountPin <em>Fin Account Pin</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getFinAccountStatuses <em>Fin Account Statuses</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getFinAccountType <em>Fin Account Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountImpl#isIsRefundable <em>Is Refundable</em>}</li>
@@ -296,6 +298,17 @@ public class FinAccountImpl extends EntityTypedImpl<FinAccountType> implements F
 	@Override
 	public void setFinAccountPin(String newFinAccountPin) {
 		eSet(FinaccountPackage.Literals.FIN_ACCOUNT__FIN_ACCOUNT_PIN, newFinAccountPin);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<FinAccountStatus> getFinAccountStatuses() {
+		return (List<FinAccountStatus>)eGet(FinaccountPackage.Literals.FIN_ACCOUNT__FIN_ACCOUNT_STATUSES, true);
 	}
 
 	/**

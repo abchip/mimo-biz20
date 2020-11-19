@@ -217,7 +217,7 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	 * @return the value of the '<em>Cust Request Contents</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_CustRequestContents()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<CustRequestContent> getCustRequestContents();

@@ -164,7 +164,7 @@ public interface FacilityGroup extends EntityTyped<FacilityGroupType>, EntityInf
 	 * @return the value of the '<em>Current Facility Group Rollups</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroup_CurrentFacilityGroupRollups()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<FacilityGroupRollup> getCurrentFacilityGroupRollups();

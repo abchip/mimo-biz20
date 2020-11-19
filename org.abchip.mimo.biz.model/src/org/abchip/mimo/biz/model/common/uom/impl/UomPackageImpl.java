@@ -1195,6 +1195,8 @@ public class UomPackageImpl extends EPackageImpl implements UomPackage {
 		createMimoentframeAnnotations();
 		// mimo-ent-format
 		createMimoentformatAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
 	}
@@ -1324,6 +1326,22 @@ public class UomPackageImpl extends EPackageImpl implements UomPackage {
 	}
 
 	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
+		  (getUom_DatedMainUomConversionDateds(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+	}
+
+	/**
 	 * Initializes the annotations for <b>mimo-ent-slot</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1331,12 +1349,6 @@ public class UomPackageImpl extends EPackageImpl implements UomPackage {
 	 */
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
-		addAnnotation
-		  (getUom_DatedMainUomConversionDateds(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
 		addAnnotation
 		  (getUomConversion_Uom(),
 		   source,

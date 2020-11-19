@@ -1287,6 +1287,8 @@ public class CampaignPackageImpl extends EPackageImpl implements CampaignPackage
 		// Create annotations
 		// mimo-ent-format
 		createMimoentformatAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
 	}
@@ -1371,6 +1373,28 @@ public class CampaignPackageImpl extends EPackageImpl implements CampaignPackage
 	}
 
 	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
+		  (getMarketingCampaign_MarketingCampaignPrices(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getMarketingCampaign_MarketingCampaignPromos(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+	}
+
+	/**
 	 * Initializes the annotations for <b>mimo-ent-slot</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1378,18 +1402,6 @@ public class CampaignPackageImpl extends EPackageImpl implements CampaignPackage
 	 */
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
-		addAnnotation
-		  (getMarketingCampaign_MarketingCampaignPrices(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getMarketingCampaign_MarketingCampaignPromos(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
 		addAnnotation
 		  (getMarketingCampaignNote_MarketingCampaign(),
 		   source,

@@ -449,7 +449,7 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * @return the value of the '<em>From Comm Event Content Assocs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_FromCommEventContentAssocs()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<CommEventContentAssoc> getFromCommEventContentAssocs();

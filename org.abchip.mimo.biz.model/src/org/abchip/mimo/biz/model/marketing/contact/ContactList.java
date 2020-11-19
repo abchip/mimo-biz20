@@ -136,7 +136,7 @@ public interface ContactList extends EntityTyped<ContactListType>, EntityInfo {
 	 * @return the value of the '<em>Contact List Parties</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_ContactListParties()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ContactListParty> getContactListParties();

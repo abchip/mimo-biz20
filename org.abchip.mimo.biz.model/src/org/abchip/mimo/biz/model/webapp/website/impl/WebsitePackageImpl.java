@@ -1066,6 +1066,8 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		createMimoentformatAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 	}
 
 	/**
@@ -1189,22 +1191,32 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 			   "help", "If Y then it is default WebSite"
 		   });
 		addAnnotation
+		  (getWebSite_WebappPath(),
+		   source,
+		   new String[] {
+			   "help", "Set to your webapp for this website if it\'s hidden by a httpd frontend; set to / if you have a reverse proxy which hides your website webapp"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
 		  (getWebSite_WebSiteContactLists(),
 		   source,
 		   new String[] {
-			   "type", "fromDate"
+			   "fromDate", "*NOW"
 		   });
 		addAnnotation
 		  (getWebSite_WebSitePathAliass(),
 		   source,
 		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getWebSite_WebappPath(),
-		   source,
-		   new String[] {
-			   "help", "Set to your webapp for this website if it\'s hidden by a httpd frontend; set to / if you have a reverse proxy which hides your website webapp"
+			   "fromDate", "*NOW"
 		   });
 	}
 

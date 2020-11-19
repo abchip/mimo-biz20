@@ -2303,6 +2303,8 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 		createMimoentformatAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 	}
 
 	/**
@@ -2655,12 +2657,6 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 			   "help", "When it is actually stored in the system."
 		   });
 		addAnnotation
-		  (getCustRequest_CustRequestContents(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
 		  (getCustRequest_CustRequestDate(),
 		   source,
 		   new String[] {
@@ -2851,6 +2847,22 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 		   source,
 		   new String[] {
 			   "key", "true"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
+		  (getCustRequest_CustRequestContents(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
 		   });
 	}
 

@@ -1369,6 +1369,8 @@ public class TrackingPackageImpl extends EPackageImpl implements TrackingPackage
 		createMimoentframeAnnotations();
 		// mimo-ent-format
 		createMimoentformatAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
 	}
@@ -1535,6 +1537,22 @@ public class TrackingPackageImpl extends EPackageImpl implements TrackingPackage
 	}
 
 	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
+		  (getTrackingCode_TrackingCodeVisits(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+	}
+
+	/**
 	 * Initializes the annotations for <b>mimo-ent-slot</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1542,12 +1560,6 @@ public class TrackingPackageImpl extends EPackageImpl implements TrackingPackage
 	 */
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
-		addAnnotation
-		  (getTrackingCode_TrackingCodeVisits(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
 		addAnnotation
 		  (getTrackingCodeOrder_Order(),
 		   source,

@@ -209,13 +209,22 @@ public interface InvoicePackage extends EPackage {
 	int INVOICE__INVOICE_NOTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
+	 * The feature id for the '<em><b>Invoice Statuses</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INVOICE__INVOICE_STATUSES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
+
+	/**
 	 * The feature id for the '<em><b>Invoice Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__INVOICE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
+	int INVOICE__INVOICE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Paid Date</b></em>' attribute.
@@ -224,7 +233,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__PAID_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
+	int INVOICE__PAID_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Party</b></em>' reference.
@@ -233,7 +242,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
+	int INVOICE__PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Party Id From</b></em>' reference.
@@ -242,7 +251,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__PARTY_ID_FROM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
+	int INVOICE__PARTY_ID_FROM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Recurrence Info</b></em>' reference.
@@ -251,7 +260,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__RECURRENCE_INFO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
+	int INVOICE__RECURRENCE_INFO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Reference Number</b></em>' attribute.
@@ -260,7 +269,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__REFERENCE_NUMBER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
+	int INVOICE__REFERENCE_NUMBER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Role Type</b></em>' reference.
@@ -269,7 +278,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__ROLE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
+	int INVOICE__ROLE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Status</b></em>' reference.
@@ -278,7 +287,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__STATUS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
+	int INVOICE__STATUS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The number of structural features of the '<em>Invoice</em>' class.
@@ -287,7 +296,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
+	int INVOICE_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceAttributeImpl <em>Attribute</em>}' class.
@@ -2439,6 +2448,17 @@ public interface InvoicePackage extends EPackage {
 	EReference getInvoice_InvoiceNotes();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.accounting.invoice.Invoice#getInvoiceStatuses <em>Invoice Statuses</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Invoice Statuses</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.Invoice#getInvoiceStatuses()
+	 * @see #getInvoice()
+	 * @generated
+	 */
+	EReference getInvoice_InvoiceStatuses();
+
+	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.invoice.Invoice#getInvoiceType <em>Invoice Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3968,6 +3988,14 @@ public interface InvoicePackage extends EPackage {
 		 * @generated
 		 */
 		EReference INVOICE__INVOICE_NOTES = eINSTANCE.getInvoice_InvoiceNotes();
+
+		/**
+		 * The meta object literal for the '<em><b>Invoice Statuses</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INVOICE__INVOICE_STATUSES = eINSTANCE.getInvoice_InvoiceStatuses();
 
 		/**
 		 * The meta object literal for the '<em><b>Invoice Type</b></em>' reference feature.

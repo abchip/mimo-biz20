@@ -652,12 +652,12 @@ public class EntityServices {
 					continue;
 				if (!modelKeyMap.getRelFieldName().equals(modelRelEntity.getFirstPkFieldName()))
 					continue;
-				
+
 				ModelField modelFieldRel = modelRelEntity.getField(modelKeyMap.getRelFieldName());
 				if (modelFieldRel == null)
 					continue;
 
-				String relationType = null;
+				String dateConstraint = null;
 				switch (modelRelEntity.getPksSize()) {
 				case 1:
 					"".toString();
@@ -666,15 +666,10 @@ public class EntityServices {
 					"".toString();
 					break;
 				case 3:
-					if (modelRelEntity.getPkFieldNames().get(2).equals("fromDate")) {
-						relationType = "fromDate";
+					if (ModelUtils.isDateField(modelRelEntity.getPkFields().get(2))) {
+						dateConstraint = modelRelEntity.getPkFieldNames().get(2);
 						break;
 					}
-					// else if(ModelUtils.isDateField(modelRelEntity.getPkFields().get(2))) {
-					// System.out.println(modelRelEntity.getPkFieldNames().get(2));
-					// relationType = "fromDate";
-					// break;
-					// }
 
 					if (modelRelEntity.getPkFieldNames().get(1).contains("Seq")) {
 						// relationType = "sequenced";
@@ -718,8 +713,8 @@ public class EntityServices {
 				// cardinality
 				eReference.setUpperBound(-1);
 
-				if (relationType != null) {
-					EcoreUtils.addAnnotationKey(eReference, Slot.NS_PREFIX_SLOT, "type", relationType);
+				if (dateConstraint != null) {
+					EcoreUtils.addAnnotationKey(eReference, Slot.NS_PREFIX_SLOT_CONSTRAINT, dateConstraint, "*NOW");
 				}
 
 				eClass.getEStructuralFeatures().add(eReference);

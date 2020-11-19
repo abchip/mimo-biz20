@@ -36,7 +36,9 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryProduc
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortKeyword;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortNote;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPurposeType;
+import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortReview;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSkillStandard;
+import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortStatus;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSurveyAppl;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortType;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
@@ -119,7 +121,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortNotes <em>Work Effort Notes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortParent <em>Work Effort Parent</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortPurposeType <em>Work Effort Purpose Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortReviews <em>Work Effort Reviews</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortSkillStandards <em>Work Effort Skill Standards</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortStatuses <em>Work Effort Statuses</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortSurveyAppls <em>Work Effort Survey Appls</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortType <em>Work Effort Type</em>}</li>
  * </ul>
@@ -1376,8 +1380,30 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
+	public List<WorkEffortReview> getWorkEffortReviews() {
+		return (List<WorkEffortReview>)eGet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_REVIEWS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
 	public List<WorkEffortSkillStandard> getWorkEffortSkillStandards() {
 		return (List<WorkEffortSkillStandard>)eGet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_SKILL_STANDARDS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<WorkEffortStatus> getWorkEffortStatuses() {
+		return (List<WorkEffortStatus>)eGet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_STATUSES, true);
 	}
 
 	/**

@@ -1427,6 +1427,8 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		createMimoentframeAnnotations();
 		// mimo-ent-format
 		createMimoentformatAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
 	}
@@ -1573,6 +1575,22 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	}
 
 	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
+		  (getContactList_ContactListParties(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+	}
+
+	/**
 	 * Initializes the annotations for <b>mimo-ent-slot</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1580,12 +1598,6 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 */
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
-		addAnnotation
-		  (getContactList_ContactListParties(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
 		addAnnotation
 		  (getContactList_SingleUse(),
 		   source,

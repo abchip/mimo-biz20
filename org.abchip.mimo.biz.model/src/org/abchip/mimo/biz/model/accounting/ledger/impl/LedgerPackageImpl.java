@@ -4325,6 +4325,8 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 		createMimoentformatAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 	}
 
 	/**
@@ -5136,18 +5138,6 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 			   "help", "id of the account in an external system where the accounts are imported/exported"
 		   });
 		addAnnotation
-		  (getGlAccount_GlAccountCategoryMembers(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getGlAccount_GlBudgetXrefs(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
 		  (getGlAccountCategoryMember_GlAccount(),
 		   source,
 		   new String[] {
@@ -5350,6 +5340,28 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 		   source,
 		   new String[] {
 			   "key", "true"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
+		  (getGlAccount_GlAccountCategoryMembers(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getGlAccount_GlBudgetXrefs(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
 		   });
 	}
 

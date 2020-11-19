@@ -1309,6 +1309,8 @@ public class LoginPackageImpl extends EPackageImpl implements LoginPackage {
 		createMimoentformatAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 		// mimo-ent-frame
 		createMimoentframeAnnotations();
 	}
@@ -1435,12 +1437,6 @@ public class LoginPackageImpl extends EPackageImpl implements LoginPackage {
 			   "help", "The user\'s LDAP Distinguished Name - used for LDAP authentication"
 		   });
 		addAnnotation
-		  (getUserLogin_UserLoginSecurityGroups(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
 		  (getUserLoginHistory_UserLogin(),
 		   source,
 		   new String[] {
@@ -1481,6 +1477,22 @@ public class LoginPackageImpl extends EPackageImpl implements LoginPackage {
 		   source,
 		   new String[] {
 			   "key", "true"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
+		  (getUserLogin_UserLoginSecurityGroups(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
 		   });
 	}
 

@@ -2227,6 +2227,8 @@ public class SurveyPackageImpl extends EPackageImpl implements SurveyPackage {
 		createMimoentformatAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 	}
 
 	/**
@@ -2683,18 +2685,6 @@ public class SurveyPackageImpl extends EPackageImpl implements SurveyPackage {
 			   "help", "Allow response to the survey without login?"
 		   });
 		addAnnotation
-		  (getSurvey_SurveyQuestionAppls(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getSurvey_SurveyTriggers(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
 		  (getSurveyMultiResp_Survey(),
 		   source,
 		   new String[] {
@@ -2826,6 +2816,28 @@ public class SurveyPackageImpl extends EPackageImpl implements SurveyPackage {
 		   source,
 		   new String[] {
 			   "key", "true"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
+		  (getSurvey_SurveyQuestionAppls(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getSurvey_SurveyTriggers(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
 		   });
 	}
 

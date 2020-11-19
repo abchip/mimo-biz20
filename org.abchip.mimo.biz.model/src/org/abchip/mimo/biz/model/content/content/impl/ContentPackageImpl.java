@@ -2708,6 +2708,8 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		createMimoentframeAnnotations();
 		// mimo-ent-format
 		createMimoentformatAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
 	}
@@ -3117,6 +3119,22 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 	}
 
 	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
+		  (getContent_FromCommEventContentAssocs(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+	}
+
+	/**
 	 * Initializes the annotations for <b>mimo-ent-slot</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3124,12 +3142,6 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 	 */
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
-		addAnnotation
-		  (getContent_FromCommEventContentAssocs(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
 		addAnnotation
 		  (getContent_OwnerContent(),
 		   source,

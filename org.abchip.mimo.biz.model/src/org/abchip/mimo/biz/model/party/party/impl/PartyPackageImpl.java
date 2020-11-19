@@ -1320,7 +1320,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PartyType() {
+	public EReference getParty_PartyStatuses() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(24);
 	}
 
@@ -1330,7 +1330,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PerformanceNotes() {
+	public EReference getParty_PartyType() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(25);
 	}
 
@@ -1340,7 +1340,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PreferredCurrencyUom() {
+	public EReference getParty_PerformanceNotes() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(26);
 	}
 
@@ -1350,7 +1350,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_Status() {
+	public EReference getParty_PreferredCurrencyUom() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(27);
 	}
 
@@ -1360,8 +1360,18 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_SupplierProductFeatures() {
+	public EReference getParty_Status() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(28);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getParty_SupplierProductFeatures() {
+		return (EReference)partyEClass.getEStructuralFeatures().get(29);
 	}
 
 	/**
@@ -3474,6 +3484,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		createEReference(partyEClass, PARTY__PARTY_RATES);
 		createEReference(partyEClass, PARTY__PARTY_ROLES);
 		createEReference(partyEClass, PARTY__PARTY_SKILLS);
+		createEReference(partyEClass, PARTY__PARTY_STATUSES);
 		createEReference(partyEClass, PARTY__PARTY_TYPE);
 		createEReference(partyEClass, PARTY__PERFORMANCE_NOTES);
 		createEReference(partyEClass, PARTY__PREFERRED_CURRENCY_UOM);
@@ -3917,6 +3928,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		initEReference(getParty_PartyRates(), theRatePackage.getPartyRate(), null, "partyRates", null, 0, -1, Party.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getParty_PartyRoles(), this.getPartyRole(), null, "partyRoles", null, 0, -1, Party.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getParty_PartySkills(), theAbilityPackage.getPartySkill(), null, "partySkills", null, 0, -1, Party.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEReference(getParty_PartyStatuses(), this.getPartyStatus(), null, "partyStatuses", null, 0, -1, Party.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getParty_PartyType(), this.getPartyType(), null, "partyType", null, 0, 1, Party.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getParty_PartyType().getEKeys().add(this.getPartyType_PartyTypeId());
 		initEReference(getParty_PerformanceNotes(), theAbilityPackage.getPerformanceNote(), null, "performanceNotes", null, 0, -1, Party.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
@@ -4233,6 +4245,8 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		createMimoentslotAnnotations();
 		// mimo-ent-format
 		createMimoentformatAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 	}
 
 	/**
@@ -4811,6 +4825,82 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	}
 
 	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
+		  (getParty_EmplLeaves(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getParty_PartyCarrierAccounts(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getParty_PartyClassifications(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getParty_PartyContactMechs(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getParty_PartyDataSources(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getParty_PartyGeoPoints(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getParty_PartyQuals(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getParty_PartyRates(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getParty_PartyStatuses(),
+		   source,
+		   new String[] {
+			   "statusDate", "*NOW"
+		   });
+		addAnnotation
+		  (getParty_PerformanceNotes(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getPerson_PersonTrainings(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+	}
+
+	/**
 	 * Initializes the annotations for <b>mimo-ent-slot</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4829,60 +4919,6 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		   source,
 		   new String[] {
 			   "key", "true"
-		   });
-		addAnnotation
-		  (getParty_EmplLeaves(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getParty_PartyCarrierAccounts(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getParty_PartyClassifications(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getParty_PartyContactMechs(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getParty_PartyDataSources(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getParty_PartyGeoPoints(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getParty_PartyQuals(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getParty_PartyRates(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getParty_PerformanceNotes(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
 		   });
 		addAnnotation
 		  (getPartyAttribute_Party(),
@@ -5159,12 +5195,6 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		   source,
 		   new String[] {
 			   "encrypt", "TRUE"
-		   });
-		addAnnotation
-		  (getPerson_PersonTrainings(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
 		   });
 		addAnnotation
 		  (getPerson_SocialSecurityNumber(),

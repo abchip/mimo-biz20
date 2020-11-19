@@ -408,7 +408,7 @@ public interface MarketingCampaign extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Marketing Campaign Prices</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage#getMarketingCampaign_MarketingCampaignPrices()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<MarketingCampaignPrice> getMarketingCampaignPrices();
@@ -421,7 +421,7 @@ public interface MarketingCampaign extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Marketing Campaign Promos</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage#getMarketingCampaign_MarketingCampaignPromos()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<MarketingCampaignPromo> getMarketingCampaignPromos();

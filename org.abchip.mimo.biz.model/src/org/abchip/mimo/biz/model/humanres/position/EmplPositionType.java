@@ -68,7 +68,7 @@ public interface EmplPositionType extends EntityType<EmplPosition>, EntityInfo {
 	 * @return the value of the '<em>Empl Position Type Classes</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionType_EmplPositionTypeClasses()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<EmplPositionTypeClass> getEmplPositionTypeClasses();
@@ -81,7 +81,7 @@ public interface EmplPositionType extends EntityType<EmplPosition>, EntityInfo {
 	 * @return the value of the '<em>Empl Position Type Rates</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionType_EmplPositionTypeRates()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<EmplPositionTypeRate> getEmplPositionTypeRates();
@@ -142,7 +142,7 @@ public interface EmplPositionType extends EntityType<EmplPosition>, EntityInfo {
 	 * @return the value of the '<em>Valid Responsibilities</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionType_ValidResponsibilities()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ValidResponsibility> getValidResponsibilities();

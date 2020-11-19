@@ -87,7 +87,7 @@ public interface TestingNode extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Testing Node Members</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingNode_TestingNodeMembers()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<TestingNodeMember> getTestingNodeMembers();

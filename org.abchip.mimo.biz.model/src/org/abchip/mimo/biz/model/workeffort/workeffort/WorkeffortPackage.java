@@ -1031,13 +1031,31 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT__WORK_EFFORT_PURPOSE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 65;
 
 	/**
+	 * The feature id for the '<em><b>Work Effort Reviews</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_EFFORT__WORK_EFFORT_REVIEWS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 66;
+
+	/**
 	 * The feature id for the '<em><b>Work Effort Skill Standards</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_SKILL_STANDARDS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 66;
+	int WORK_EFFORT__WORK_EFFORT_SKILL_STANDARDS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 67;
+
+	/**
+	 * The feature id for the '<em><b>Work Effort Statuses</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_EFFORT__WORK_EFFORT_STATUSES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 68;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Survey Appls</b></em>' reference list.
@@ -1046,7 +1064,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_SURVEY_APPLS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 67;
+	int WORK_EFFORT__WORK_EFFORT_SURVEY_APPLS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 69;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Type</b></em>' reference.
@@ -1055,7 +1073,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 68;
+	int WORK_EFFORT__WORK_EFFORT_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 70;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort</em>' class.
@@ -1064,7 +1082,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 69;
+	int WORK_EFFORT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 71;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocImpl <em>Work Effort Assoc</em>}' class.
@@ -5264,6 +5282,17 @@ public interface WorkeffortPackage extends EPackage {
 	EReference getWorkEffort_WorkEffortPurposeType();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortReviews <em>Work Effort Reviews</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Work Effort Reviews</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortReviews()
+	 * @see #getWorkEffort()
+	 * @generated
+	 */
+	EReference getWorkEffort_WorkEffortReviews();
+
+	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortSkillStandards <em>Work Effort Skill Standards</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5273,6 +5302,17 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getWorkEffort_WorkEffortSkillStandards();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortStatuses <em>Work Effort Statuses</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Work Effort Statuses</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortStatuses()
+	 * @see #getWorkEffort()
+	 * @generated
+	 */
+	EReference getWorkEffort_WorkEffortStatuses();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortSurveyAppls <em>Work Effort Survey Appls</em>}'.
@@ -8131,12 +8171,28 @@ public interface WorkeffortPackage extends EPackage {
 		EReference WORK_EFFORT__WORK_EFFORT_PURPOSE_TYPE = eINSTANCE.getWorkEffort_WorkEffortPurposeType();
 
 		/**
+		 * The meta object literal for the '<em><b>Work Effort Reviews</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference WORK_EFFORT__WORK_EFFORT_REVIEWS = eINSTANCE.getWorkEffort_WorkEffortReviews();
+
+		/**
 		 * The meta object literal for the '<em><b>Work Effort Skill Standards</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference WORK_EFFORT__WORK_EFFORT_SKILL_STANDARDS = eINSTANCE.getWorkEffort_WorkEffortSkillStandards();
+
+		/**
+		 * The meta object literal for the '<em><b>Work Effort Statuses</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference WORK_EFFORT__WORK_EFFORT_STATUSES = eINSTANCE.getWorkEffort_WorkEffortStatuses();
 
 		/**
 		 * The meta object literal for the '<em><b>Work Effort Survey Appls</b></em>' reference list feature.

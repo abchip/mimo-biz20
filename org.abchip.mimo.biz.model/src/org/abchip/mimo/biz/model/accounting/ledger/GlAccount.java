@@ -155,7 +155,7 @@ public interface GlAccount extends EntityTyped<GlAccountType>, EntityInfo {
 	 * @return the value of the '<em>Gl Account Category Members</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlAccountCategoryMembers()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<GlAccountCategoryMember> getGlAccountCategoryMembers();
@@ -328,7 +328,7 @@ public interface GlAccount extends EntityTyped<GlAccountType>, EntityInfo {
 	 * @return the value of the '<em>Gl Budget Xrefs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlBudgetXrefs()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<GlBudgetXref> getGlBudgetXrefs();

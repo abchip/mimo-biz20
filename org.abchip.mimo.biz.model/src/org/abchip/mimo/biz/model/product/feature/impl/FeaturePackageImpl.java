@@ -1819,6 +1819,8 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 		createMimoentformatAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 	}
 
 	/**
@@ -2187,12 +2189,6 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getProductFeatureGroup_ProductFeatureGroupAppls(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
 		  (getProductFeatureGroupAppl_ProductFeatureGroup(),
 		   source,
 		   new String[] {
@@ -2221,6 +2217,22 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 		   source,
 		   new String[] {
 			   "key", "true"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
+		  (getProductFeatureGroup_ProductFeatureGroupAppls(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
 		   });
 	}
 

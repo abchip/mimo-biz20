@@ -115,7 +115,7 @@ public interface Container extends EntityTyped<ContainerType>, EntityInfo {
 	 * @return the value of the '<em>Container Geo Points</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getContainer_ContainerGeoPoints()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ContainerGeoPoint> getContainerGeoPoints();

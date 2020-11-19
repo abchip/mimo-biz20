@@ -3885,6 +3885,8 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 		createMimoentformatAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 	}
 
 	/**
@@ -4493,36 +4495,6 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 			   "help", "default Y; if set to Y an additional constraint will of isVariant!=Y will be added to all product searches for the store"
 		   });
 		addAnnotation
-		  (getProductStore_ProductStoreCatalogs(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getProductStore_ProductStoreFacilities(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getProductStore_ProductStoreGroupMembers(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getProductStore_ProductStoreKeywordOvrds(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getProductStore_ProductStorePromoAppls(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
 		  (getProductStore_ReqReturnInventoryReceive(),
 		   source,
 		   new String[] {
@@ -4701,12 +4673,6 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 		   source,
 		   new String[] {
 			   "help", "determines whether the store should validate gift card numbers against the gift certificate codes stored in FinAccount.\n              Set to N if using external gift card provider."
-		   });
-		addAnnotation
-		  (getProductStoreGroup_CurrentProductStoreGroupRollups(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
 		   });
 		addAnnotation
 		  (getProductStoreGroupMember_ProductStore(),
@@ -4894,6 +4860,52 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 		   source,
 		   new String[] {
 			   "key", "true"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
+		  (getProductStore_ProductStoreCatalogs(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getProductStore_ProductStoreFacilities(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getProductStore_ProductStoreGroupMembers(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getProductStore_ProductStoreKeywordOvrds(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getProductStore_ProductStorePromoAppls(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getProductStoreGroup_CurrentProductStoreGroupRollups(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
 		   });
 	}
 

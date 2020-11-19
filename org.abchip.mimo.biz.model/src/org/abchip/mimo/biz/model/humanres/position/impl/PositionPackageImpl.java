@@ -1685,10 +1685,12 @@ public class PositionPackageImpl extends EPackageImpl implements PositionPackage
 		// Create annotations
 		// mimo-ent-format
 		createMimoentformatAnnotations();
-		// mimo-ent-slot
-		createMimoentslotAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 		// mimo-ent-frame
 		createMimoentframeAnnotations();
+		// mimo-ent-slot
+		createMimoentslotAnnotations();
 	}
 
 	/**
@@ -1780,6 +1782,52 @@ public class PositionPackageImpl extends EPackageImpl implements PositionPackage
 	}
 
 	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
+		  (getEmplPosition_EmplPositionFulfillments(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getEmplPosition_EmplPositionResponsibilities(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getEmplPosition_ReportingToEmplPositionReportingStructs(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getEmplPositionType_EmplPositionTypeClasses(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getEmplPositionType_EmplPositionTypeRates(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getEmplPositionType_ValidResponsibilities(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+	}
+
+	/**
 	 * Initializes the annotations for <b>mimo-ent-slot</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1787,24 +1835,6 @@ public class PositionPackageImpl extends EPackageImpl implements PositionPackage
 	 */
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
-		addAnnotation
-		  (getEmplPosition_EmplPositionFulfillments(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getEmplPosition_EmplPositionResponsibilities(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getEmplPosition_ReportingToEmplPositionReportingStructs(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
 		addAnnotation
 		  (getEmplPositionFulfillment_EmplPosition(),
 		   source,
@@ -1858,24 +1888,6 @@ public class PositionPackageImpl extends EPackageImpl implements PositionPackage
 		   source,
 		   new String[] {
 			   "key", "true"
-		   });
-		addAnnotation
-		  (getEmplPositionType_EmplPositionTypeClasses(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getEmplPositionType_EmplPositionTypeRates(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getEmplPositionType_ValidResponsibilities(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
 		   });
 		addAnnotation
 		  (getEmplPositionTypeClass_EmplPositionType(),

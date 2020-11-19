@@ -225,7 +225,7 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	 * @return the value of the '<em>Facility Contact Mechs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_FacilityContactMechs()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<FacilityContactMech> getFacilityContactMechs();
@@ -238,7 +238,7 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	 * @return the value of the '<em>Facility Contents</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_FacilityContents()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<FacilityContent> getFacilityContents();
@@ -251,7 +251,7 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	 * @return the value of the '<em>Facility Group Members</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_FacilityGroupMembers()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<FacilityGroupMember> getFacilityGroupMembers();

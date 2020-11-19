@@ -543,13 +543,22 @@ public interface PartyPackage extends EPackage {
 	int PARTY__PARTY_SKILLS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
 
 	/**
+	 * The feature id for the '<em><b>Party Statuses</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY__PARTY_STATUSES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
+
+	/**
 	 * The feature id for the '<em><b>Party Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
+	int PARTY__PARTY_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Performance Notes</b></em>' reference list.
@@ -558,7 +567,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PERFORMANCE_NOTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
+	int PARTY__PERFORMANCE_NOTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Preferred Currency Uom</b></em>' reference.
@@ -567,7 +576,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PREFERRED_CURRENCY_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
+	int PARTY__PREFERRED_CURRENCY_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Status</b></em>' reference.
@@ -576,7 +585,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__STATUS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
+	int PARTY__STATUS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 32;
 
 	/**
 	 * The feature id for the '<em><b>Supplier Product Features</b></em>' reference list.
@@ -585,7 +594,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__SUPPLIER_PRODUCT_FEATURES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 32;
+	int PARTY__SUPPLIER_PRODUCT_FEATURES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 33;
 
 	/**
 	 * The number of structural features of the '<em>Party</em>' class.
@@ -594,7 +603,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 33;
+	int PARTY_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 34;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyAttributeImpl <em>Attribute</em>}' class.
@@ -1721,6 +1730,15 @@ public interface PartyPackage extends EPackage {
 	 * @ordered
 	 */
 	int PARTY_GROUP__PARTY_SKILLS = PARTY__PARTY_SKILLS;
+
+	/**
+	 * The feature id for the '<em><b>Party Statuses</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_GROUP__PARTY_STATUSES = PARTY__PARTY_STATUSES;
 
 	/**
 	 * The feature id for the '<em><b>Party Type</b></em>' reference.
@@ -3620,6 +3638,15 @@ public interface PartyPackage extends EPackage {
 	int PERSON__PARTY_SKILLS = PARTY__PARTY_SKILLS;
 
 	/**
+	 * The feature id for the '<em><b>Party Statuses</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__PARTY_STATUSES = PARTY__PARTY_STATUSES;
+
+	/**
 	 * The feature id for the '<em><b>Party Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4860,6 +4887,17 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getParty_PartySkills();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.party.party.Party#getPartyStatuses <em>Party Statuses</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Party Statuses</em>'.
+	 * @see org.abchip.mimo.biz.model.party.party.Party#getPartyStatuses()
+	 * @see #getParty()
+	 * @generated
+	 */
+	EReference getParty_PartyStatuses();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.party.Party#getPartyType <em>Party Type</em>}'.
@@ -7468,6 +7506,14 @@ public interface PartyPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PARTY__PARTY_SKILLS = eINSTANCE.getParty_PartySkills();
+
+		/**
+		 * The meta object literal for the '<em><b>Party Statuses</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARTY__PARTY_STATUSES = eINSTANCE.getParty_PartyStatuses();
 
 		/**
 		 * The meta object literal for the '<em><b>Party Type</b></em>' reference feature.

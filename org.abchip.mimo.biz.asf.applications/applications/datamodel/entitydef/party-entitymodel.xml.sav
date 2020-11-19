@@ -2721,12 +2721,12 @@ under the License.
     <entity entity-name="PartyStatus"
             package-name="org.apache.ofbiz.party.party"
             title="Tracks a history of the status of a Party">
-      <field name="partyId" type="id"></field>            
       <field name="statusId" type="id"></field>
+      <field name="partyId" type="id"></field>
       <field name="statusDate" type="date-time"></field>
       <field name="changeByUserLoginId" type="id-vlong"></field>
-      <prim-key field="partyId"/>      
       <prim-key field="statusId"/>
+      <prim-key field="partyId"/>
       <prim-key field="statusDate"/>
       <relation type="one" fk-name="PARTY_STS_STSITM" rel-entity-name="StatusItem">
         <key-map field-name="statusId"/>

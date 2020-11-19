@@ -64,7 +64,7 @@ public interface ProductFeatureGroup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Feature Group Appls</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureGroup_ProductFeatureGroupAppls()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductFeatureGroupAppl> getProductFeatureGroupAppls();

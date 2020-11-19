@@ -4043,6 +4043,8 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		createMimoentslotAnnotations();
 		// mimo-ent-format
 		createMimoentformatAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 	}
 
 	/**
@@ -4641,6 +4643,34 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	}
 
 	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
+		  (getProduct_ProductCostComponentCalcs(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getProduct_ProductFeatureAppls(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getProduct_ProductSubscriptionResources(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+	}
+
+	/**
 	 * Initializes the annotations for <b>mimo-ent-slot</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4689,24 +4719,6 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		   source,
 		   new String[] {
 			   "help", "The primary category ; it should be one of the productCategoryId already setup in ProductCategoryMember"
-		   });
-		addAnnotation
-		  (getProduct_ProductCostComponentCalcs(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getProduct_ProductFeatureAppls(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getProduct_ProductSubscriptionResources(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
 		   });
 		addAnnotation
 		  (getProduct_QuantityIncluded(),

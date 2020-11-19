@@ -1523,12 +1523,12 @@ under the License.
     <entity entity-name="InvoiceStatus"
             package-name="org.apache.ofbiz.accounting.invoice"
             title="Invoice Status">
-	  <field name="invoiceId" type="id"></field>            
-      <field name="statusId" type="id"></field>      
+      <field name="statusId" type="id"></field>
+      <field name="invoiceId" type="id"></field>
       <field name="statusDate" type="date-time"></field>
       <field name="changeByUserLoginId" type="id-vlong"/>
-      <prim-key field="invoiceId"/>
       <prim-key field="statusId"/>
+      <prim-key field="invoiceId"/>
       <prim-key field="statusDate"/>
       <relation type="one" fk-name="INVCE_STS_STSITM" rel-entity-name="StatusItem">
         <key-map field-name="statusId"/>

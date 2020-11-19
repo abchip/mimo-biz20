@@ -315,7 +315,7 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * @return the value of the '<em>Fixed Asset Geo Points</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_FixedAssetGeoPoints()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<FixedAssetGeoPoint> getFixedAssetGeoPoints();
@@ -390,7 +390,7 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * @return the value of the '<em>Fixed Asset Std Costs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_FixedAssetStdCosts()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<FixedAssetStdCost> getFixedAssetStdCosts();

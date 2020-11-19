@@ -19,6 +19,7 @@ import org.abchip.mimo.biz.model.product.inventory.InventoryItem;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItemAttribute;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItemDetail;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItemLabelAppl;
+import org.abchip.mimo.biz.model.product.inventory.InventoryItemStatus;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItemType;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItemVariance;
 import org.abchip.mimo.biz.model.product.inventory.InventoryPackage;
@@ -58,6 +59,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getInventoryItemAttributes <em>Inventory Item Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getInventoryItemDetails <em>Inventory Item Details</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getInventoryItemLabelAppls <em>Inventory Item Label Appls</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getInventoryItemStatuses <em>Inventory Item Statuses</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getInventoryItemType <em>Inventory Item Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getInventoryItemVariances <em>Inventory Item Variances</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.inventory.impl.InventoryItemImpl#getLocationSeqId <em>Location Seq Id</em>}</li>
@@ -479,6 +481,17 @@ public class InventoryItemImpl extends EntityTypedImpl<InventoryItemType> implem
 	@Override
 	public List<InventoryItemLabelAppl> getInventoryItemLabelAppls() {
 		return (List<InventoryItemLabelAppl>)eGet(InventoryPackage.Literals.INVENTORY_ITEM__INVENTORY_ITEM_LABEL_APPLS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<InventoryItemStatus> getInventoryItemStatuses() {
+		return (List<InventoryItemStatus>)eGet(InventoryPackage.Literals.INVENTORY_ITEM__INVENTORY_ITEM_STATUSES, true);
 	}
 
 	/**

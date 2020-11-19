@@ -68,7 +68,7 @@ public interface Uom extends EntityTyped<UomType>, EntityInfo {
 	 * @return the value of the '<em>Dated Main Uom Conversion Dateds</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUom_DatedMainUomConversionDateds()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<UomConversionDated> getDatedMainUomConversionDateds();

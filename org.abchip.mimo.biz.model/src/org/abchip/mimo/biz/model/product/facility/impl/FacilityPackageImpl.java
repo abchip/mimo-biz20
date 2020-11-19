@@ -3070,6 +3070,8 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		createMimoentframeAnnotations();
 		// mimo-ent-format
 		createMimoentformatAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
 	}
@@ -3590,6 +3592,46 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 	}
 
 	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
+		  (getContainer_ContainerGeoPoints(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getFacility_FacilityContactMechs(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getFacility_FacilityContents(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getFacility_FacilityGroupMembers(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getFacilityGroup_CurrentFacilityGroupRollups(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+	}
+
+	/**
 	 * Initializes the annotations for <b>mimo-ent-slot</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3597,12 +3639,6 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 	 */
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
-		addAnnotation
-		  (getContainer_ContainerGeoPoints(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
 		addAnnotation
 		  (getContainerGeoPoint_Container(),
 		   source,
@@ -3632,24 +3668,6 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		   source,
 		   new String[] {
 			   "help", "This field store the unit of measurement of dimension (length, width and height)"
-		   });
-		addAnnotation
-		  (getFacility_FacilityContactMechs(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getFacility_FacilityContents(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
-		  (getFacility_FacilityGroupMembers(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
 		   });
 		addAnnotation
 		  (getFacility_FacilityLevel(),
@@ -3776,12 +3794,6 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		   source,
 		   new String[] {
 			   "key", "true"
-		   });
-		addAnnotation
-		  (getFacilityGroup_CurrentFacilityGroupRollups(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
 		   });
 		addAnnotation
 		  (getFacilityGroupMember_Facility(),

@@ -6254,6 +6254,8 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		createMimoentformatAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
+		// mimo-ent-slot-constraint
+		createMimoentslotconstraintAnnotations();
 	}
 
 	/**
@@ -8864,12 +8866,6 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getPaymentGroup_PaymentGroupMembers(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
 		  (getPaymentGroupMember_PaymentGroup(),
 		   source,
 		   new String[] {
@@ -8910,6 +8906,22 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		   source,
 		   new String[] {
 			   "key", "true"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentslotconstraintAnnotations() {
+		String source = "mimo-ent-slot-constraint";
+		addAnnotation
+		  (getPaymentGroup_PaymentGroupMembers(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
 		   });
 	}
 

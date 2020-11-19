@@ -40,6 +40,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.Invoice#getInvoiceItems <em>Invoice Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.Invoice#getInvoiceMessage <em>Invoice Message</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.Invoice#getInvoiceNotes <em>Invoice Notes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.Invoice#getInvoiceStatuses <em>Invoice Statuses</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.Invoice#getInvoiceType <em>Invoice Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.Invoice#getPaidDate <em>Paid Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.invoice.Invoice#getParty <em>Party</em>}</li>
@@ -194,6 +195,19 @@ public interface Invoice extends EntityTyped<InvoiceType>, EntityInfo {
 	 * @generated
 	 */
 	List<InvoiceNote> getInvoiceNotes();
+
+	/**
+	 * Returns the value of the '<em><b>Invoice Statuses</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Invoice Statuses</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoice_InvoiceStatuses()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot-constraint statusDate='*NOW'"
+	 * @generated
+	 */
+	List<InvoiceStatus> getInvoiceStatuses();
 
 	/**
 	 * Returns the value of the '<em><b>Invoice Type</b></em>' reference.

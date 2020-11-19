@@ -668,7 +668,7 @@ public interface Person extends Party {
 	 * @return the value of the '<em>Person Trainings</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPerson_PersonTrainings()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<PersonTraining> getPersonTrainings();

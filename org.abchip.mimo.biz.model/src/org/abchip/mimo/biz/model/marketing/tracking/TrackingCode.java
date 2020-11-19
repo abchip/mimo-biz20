@@ -517,7 +517,7 @@ public interface TrackingCode extends EntityTyped<TrackingCodeType>, EntityInfo 
 	 * @return the value of the '<em>Tracking Code Visits</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCode_TrackingCodeVisits()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<TrackingCodeVisit> getTrackingCodeVisits();

@@ -2136,7 +2136,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Store Catalogs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ProductStoreCatalogs()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductStoreCatalog> getProductStoreCatalogs();
@@ -2161,7 +2161,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Store Facilities</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ProductStoreFacilities()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductStoreFacility> getProductStoreFacilities();
@@ -2186,7 +2186,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Store Group Members</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ProductStoreGroupMembers()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductStoreGroupMember> getProductStoreGroupMembers();
@@ -2199,7 +2199,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Store Keyword Ovrds</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ProductStoreKeywordOvrds()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductStoreKeywordOvrd> getProductStoreKeywordOvrds();
@@ -2212,7 +2212,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Store Promo Appls</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ProductStorePromoAppls()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductStorePromoAppl> getProductStorePromoAppls();

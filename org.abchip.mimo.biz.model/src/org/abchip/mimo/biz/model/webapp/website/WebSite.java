@@ -481,7 +481,7 @@ public interface WebSite extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Web Site Contact Lists</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebSite_WebSiteContactLists()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<WebSiteContactList> getWebSiteContactLists();
@@ -494,7 +494,7 @@ public interface WebSite extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Web Site Path Aliass</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebSite_WebSitePathAliass()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
+	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
 	 * @generated
 	 */
 	List<WebSitePathAlias> getWebSitePathAliass();
