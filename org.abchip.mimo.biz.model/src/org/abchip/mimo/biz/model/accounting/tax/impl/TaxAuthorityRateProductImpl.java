@@ -16,7 +16,7 @@ import org.abchip.mimo.biz.model.product.category.ProductCategory;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityTypedImpl;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -51,7 +51,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class TaxAuthorityRateProductImpl extends EntityTypedImpl<TaxAuthorityRateType> implements TaxAuthorityRateProduct {
+public class TaxAuthorityRateProductImpl extends EntityIdentifiableImpl implements TaxAuthorityRateProduct {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

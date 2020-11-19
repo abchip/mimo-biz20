@@ -8,7 +8,7 @@
 package org.abchip.mimo.biz.model.common.geo.impl;
 
 import java.util.Date;
-import org.abchip.mimo.biz.model.common.geo.CountryAddressFormat;
+import org.abchip.mimo.biz.model.common.geo.GeoAssoc;
 import org.abchip.mimo.biz.model.common.geo.GeoAssocType;
 import org.abchip.mimo.biz.model.common.geo.GeoPackage;
 import org.abchip.mimo.entity.EntityInfo;
@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class GeoAssocTypeImpl extends EntityTypeImpl<CountryAddressFormat> implements GeoAssocType {
+public class GeoAssocTypeImpl extends EntityTypeImpl<GeoAssoc> implements GeoAssocType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

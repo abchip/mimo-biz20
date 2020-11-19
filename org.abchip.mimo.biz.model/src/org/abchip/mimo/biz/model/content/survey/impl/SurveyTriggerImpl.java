@@ -14,7 +14,7 @@ import org.abchip.mimo.biz.model.content.survey.SurveyPackage;
 import org.abchip.mimo.biz.model.content.survey.SurveyTrigger;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityTypedImpl;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -37,7 +37,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class SurveyTriggerImpl extends EntityTypedImpl<SurveyApplType> implements SurveyTrigger {
+public class SurveyTriggerImpl extends EntityIdentifiableImpl implements SurveyTrigger {
 	
 	/**
 	 * <!-- begin-user-doc -->

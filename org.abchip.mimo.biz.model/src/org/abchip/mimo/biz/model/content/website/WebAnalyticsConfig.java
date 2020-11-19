@@ -8,8 +8,8 @@
 package org.abchip.mimo.biz.model.content.website;
 
 import org.abchip.mimo.biz.model.webapp.website.WebSite;
+import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
-import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +29,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * @model annotation="mimo-ent-frame title='Web Analytics Configuration'"
  * @generated
  */
-public interface WebAnalyticsConfig extends EntityTyped<WebAnalyticsType>, EntityInfo {
+public interface WebAnalyticsConfig extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Web Analytics Type</b></em>' reference.
 	 * <!-- begin-user-doc -->

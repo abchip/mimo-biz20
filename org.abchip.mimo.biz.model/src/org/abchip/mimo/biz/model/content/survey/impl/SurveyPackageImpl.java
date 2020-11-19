@@ -2035,20 +2035,16 @@ public class SurveyPackageImpl extends EPackageImpl implements SurveyPackage {
 		// Add supertypes to classes
 		surveyEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		surveyEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityType());
-		EGenericType g2 = createEGenericType(this.getSurveyTrigger());
-		g1.getETypeArguments().add(g2);
-		surveyApplTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		surveyApplTypeEClass.getEGenericSuperTypes().add(g1);
+		surveyApplTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		surveyApplTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		surveyMultiRespEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		surveyMultiRespEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		surveyMultiRespColumnEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		surveyMultiRespColumnEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		surveyPageEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		surveyPageEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
-		g2 = createEGenericType(this.getSurveyQuestionType());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		EGenericType g2 = createEGenericType(this.getSurveyQuestionType());
 		g1.getETypeArguments().add(g2);
 		surveyQuestionEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
@@ -2069,12 +2065,8 @@ public class SurveyPackageImpl extends EPackageImpl implements SurveyPackage {
 		surveyResponseEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		surveyResponseAnswerEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		surveyResponseAnswerEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
-		g2 = createEGenericType(this.getSurveyApplType());
-		g1.getETypeArguments().add(g2);
-		surveyTriggerEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		surveyTriggerEClass.getEGenericSuperTypes().add(g1);
+		surveyTriggerEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		surveyTriggerEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(surveyEClass, Survey.class, "Survey", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

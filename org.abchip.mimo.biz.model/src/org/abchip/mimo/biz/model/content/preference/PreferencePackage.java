@@ -72,22 +72,13 @@ public interface PreferencePackage extends EPackage {
 	int WEB_PREFERENCE_TYPE = 0;
 
 	/**
-	 * The feature id for the '<em><b>Slots</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEB_PREFERENCE_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
-
-	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_PREFERENCE_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
+	int WEB_PREFERENCE_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -96,7 +87,7 @@ public interface PreferencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_PREFERENCE_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
+	int WEB_PREFERENCE_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -105,7 +96,7 @@ public interface PreferencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_PREFERENCE_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
+	int WEB_PREFERENCE_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -114,7 +105,7 @@ public interface PreferencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_PREFERENCE_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
+	int WEB_PREFERENCE_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Web Preference Type Id</b></em>' attribute.
@@ -123,7 +114,7 @@ public interface PreferencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_PREFERENCE_TYPE__WEB_PREFERENCE_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
+	int WEB_PREFERENCE_TYPE__WEB_PREFERENCE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -132,7 +123,7 @@ public interface PreferencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_PREFERENCE_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
+	int WEB_PREFERENCE_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Web Preference Type</em>' class.
@@ -141,7 +132,7 @@ public interface PreferencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_PREFERENCE_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
+	int WEB_PREFERENCE_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.preference.impl.WebUserPreferenceImpl <em>Web User Preference</em>}' class.
@@ -160,7 +151,7 @@ public interface PreferencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_USER_PREFERENCE__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
+	int WEB_USER_PREFERENCE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -169,7 +160,7 @@ public interface PreferencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_USER_PREFERENCE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
+	int WEB_USER_PREFERENCE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -178,7 +169,7 @@ public interface PreferencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_USER_PREFERENCE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
+	int WEB_USER_PREFERENCE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -187,7 +178,7 @@ public interface PreferencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_USER_PREFERENCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
+	int WEB_USER_PREFERENCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Web Preference Type</b></em>' reference.
@@ -196,7 +187,7 @@ public interface PreferencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_USER_PREFERENCE__WEB_PREFERENCE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int WEB_USER_PREFERENCE__WEB_PREFERENCE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>User Login</b></em>' reference.
@@ -205,7 +196,7 @@ public interface PreferencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_USER_PREFERENCE__USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int WEB_USER_PREFERENCE__USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Party</b></em>' reference.
@@ -214,7 +205,7 @@ public interface PreferencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_USER_PREFERENCE__PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int WEB_USER_PREFERENCE__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Visit Id</b></em>' attribute.
@@ -223,7 +214,7 @@ public interface PreferencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_USER_PREFERENCE__VISIT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int WEB_USER_PREFERENCE__VISIT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Web Preference Value</b></em>' attribute.
@@ -232,7 +223,7 @@ public interface PreferencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_USER_PREFERENCE__WEB_PREFERENCE_VALUE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int WEB_USER_PREFERENCE__WEB_PREFERENCE_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Web User Preference</em>' class.
@@ -241,7 +232,7 @@ public interface PreferencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_USER_PREFERENCE_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int WEB_USER_PREFERENCE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 
 	/**

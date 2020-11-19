@@ -17,8 +17,8 @@ import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.model.product.store.ProductStoreGroup;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -56,7 +56,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductPrice extends EntityIdentifiable, EntityInfo {
+public interface ProductPrice extends EntityTyped<ProductPriceType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->

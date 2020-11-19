@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.party.communication;
 
 import java.util.Date;
 import org.abchip.mimo.biz.model.content.content.Content;
+import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
-import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +33,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * @model annotation="mimo-ent-frame title='CommunicationEvent Content Association'"
  * @generated
  */
-public interface CommEventContentAssoc extends EntityTyped<CommContentAssocType>, EntityInfo {
+public interface CommEventContentAssoc extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Content</b></em>' reference.
 	 * <!-- begin-user-doc -->

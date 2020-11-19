@@ -9,11 +9,10 @@ package org.abchip.mimo.biz.model.accounting.budget.impl;
 
 import java.util.Date;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetPackage;
-import org.abchip.mimo.biz.model.accounting.budget.BudgetReview;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetReviewResultType;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityTypeImpl;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -35,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class BudgetReviewResultTypeImpl extends EntityTypeImpl<BudgetReview> implements BudgetReviewResultType {
+public class BudgetReviewResultTypeImpl extends EntityIdentifiableImpl implements BudgetReviewResultType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,16 +59,9 @@ public class BudgetReviewResultTypeImpl extends EntityTypeImpl<BudgetReview> imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 1;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return ESTATIC_FEATURE_COUNT;
+		return 0;
 	}
 
 	/**

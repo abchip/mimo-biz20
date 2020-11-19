@@ -197,7 +197,6 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkeffortPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.EReference;
@@ -897,18 +896,10 @@ public class PeriodPackageImpl extends EPackageImpl implements PeriodPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
-		EGenericType g2 = createEGenericType(this.getPeriodType());
-		g1.getETypeArguments().add(g2);
-		customTimePeriodEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		customTimePeriodEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityType());
-		g2 = createEGenericType(this.getCustomTimePeriod());
-		g1.getETypeArguments().add(g2);
-		periodTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		periodTypeEClass.getEGenericSuperTypes().add(g1);
+		customTimePeriodEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		customTimePeriodEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		periodTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		periodTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(customTimePeriodEClass, CustomTimePeriod.class, "CustomTimePeriod", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

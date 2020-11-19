@@ -10,10 +10,9 @@ package org.abchip.mimo.biz.model.content.preference.impl;
 import java.util.Date;
 import org.abchip.mimo.biz.model.content.preference.PreferencePackage;
 import org.abchip.mimo.biz.model.content.preference.WebPreferenceType;
-import org.abchip.mimo.biz.model.content.preference.WebUserPreference;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityTypeImpl;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -34,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class WebPreferenceTypeImpl extends EntityTypeImpl<WebUserPreference> implements WebPreferenceType {
+public class WebPreferenceTypeImpl extends EntityIdentifiableImpl implements WebPreferenceType {
 	
 	/**
 	 * <!-- begin-user-doc -->
@@ -60,16 +59,9 @@ public class WebPreferenceTypeImpl extends EntityTypeImpl<WebUserPreference> imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 1;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return ESTATIC_FEATURE_COUNT;
+		return 0;
 	}
 
 	/**

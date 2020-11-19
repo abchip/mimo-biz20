@@ -131,7 +131,9 @@ public class EntityServices {
 		boolean result = false;
 
 		// super class
-		if (!srcEClass.getESuperTypes().get(0).equals(EntityPackage.eINSTANCE.getEntityIdentifiable())) {
+		if (!srcEClass.getESuperTypes().get(0).equals(EntityPackage.eINSTANCE.getEntityIdentifiable()) && !srcEClass.getESuperTypes().get(0).equals(EntityPackage.eINSTANCE.getEntityType())
+				&& !srcEClass.getESuperTypes().get(0).equals(EntityPackage.eINSTANCE.getEntityTyped())) {
+
 			if (!srcEClass.getESuperTypes().get(0).getName().equals(dstEClass.getESuperTypes().get(0).getName())) {
 				LOGGER.info("Class {} override super {}", dstEClassifier.getName(), EcoreUtil.getURI(srcEClass.getESuperTypes().get(0)));
 
@@ -306,40 +308,9 @@ public class EntityServices {
 
 			ModelEntity modelEntity = delegator.getModelEntity(entityName);
 
-			EClass typeEntity = null;
-			if (entityName.equals("StatusItem"))
-				typeEntity = Frames.getEClass(eWorkPackage, "StatusType");
-			else if (entityName.equals("OrderHeader"))
-				typeEntity = Frames.getEClass(eWorkPackage, "OrderType");
-			else
-				typeEntity = Frames.getEClass(eWorkPackage, entityName + "Type");
-
-			if (typeEntity == null && !modelEntity.getEntityName().endsWith("Attr") && !modelEntity.getEntityName().equals("PartyInvitationRoleAssoc")) {
-
-				EClass eClassRel = null;
-				for (ModelRelation modelRelation : modelEntity.getRelationsList(true, true, true)) {
-
-					if (modelRelation.getRelEntityName().equals("RoleType"))
-						continue;
-
-					if (eClassRel != null)
-						eClassRel = Frames.getEClass(eWorkPackage.getESuperPackage(), modelRelation.getRelEntityName());
-					else
-						eClassRel = Frames.getEClass(eWorkPackage.getESuperPackage(), modelRelation.getRelEntityName());
-
-					if (eClassRel != null) {
-						EClass eSuperClass = eClassRel.getESuperTypes().get(0);
-						if (eSuperClass.equals(EntityPackage.eINSTANCE.getEntityType())) {
-							typeEntity = eClassRel;
-							break;
-						} else
-							eClassRel = null;
-					}
-				}
-			}
+			EClass typeEntity = getTypeEntity(eWorkPackage, modelEntity);
 
 			// typed
-
 			if (typeEntity != null) {
 				EGenericType eGenericType = typeEntity.getEGenericSuperTypes().get(0);
 				if (eGenericType.getETypeArguments().isEmpty()) {
@@ -350,7 +321,7 @@ public class EntityServices {
 
 					eGenericType.getETypeArguments().add(eGenericType2);
 				} else {
-					LOGGER.info("ROLE: " + modelEntity.getEntityName() + " -> " + typeEntity.getName() + "<" + eGenericType.getETypeArguments().get(0).getEClassifier().getName() + ">");
+					LOGGER.warn("ROLE: " + modelEntity.getEntityName() + " -> " + typeEntity.getName() + "<" + eGenericType.getETypeArguments().get(0).getEClassifier().getName() + ">");
 					eClass = EcoreUtils.buildEntityEClass(delegator, forms, modelEntity);
 				}
 			} else
@@ -358,6 +329,36 @@ public class EntityServices {
 
 			eWorkPackage.getEClassifiers().add(eClass);
 		}
+	}
+
+	private static EClass getTypeEntity(EPackage eWorkPackage, ModelEntity modelEntity) {
+		EClass typeEntity = null;
+		if (modelEntity.getEntityName().equals("StatusItem"))
+			typeEntity = Frames.getEClass(eWorkPackage, "StatusType");
+		else if (modelEntity.getEntityName().equals("OrderHeader"))
+			typeEntity = Frames.getEClass(eWorkPackage, "OrderType");
+		else
+			typeEntity = Frames.getEClass(eWorkPackage, modelEntity.getEntityName() + "Type");
+
+		// if (true)
+		// return typeEntity;
+
+		if (typeEntity == null && !modelEntity.getEntityName().endsWith("Attr") && !modelEntity.getEntityName().equals("PartyInvitationRoleAssoc")) {
+
+			EClass eClassRel = null;
+			for (ModelRelation modelRelation : modelEntity.getRelationsList(true, true, true)) {
+
+				if (modelRelation.getRelEntityName().equals("RoleType"))
+					continue;
+
+				if (eClassRel != null)
+					eClassRel = Frames.getEClass(eWorkPackage.getESuperPackage(), modelRelation.getRelEntityName());
+				else
+					eClassRel = Frames.getEClass(eWorkPackage.getESuperPackage(), modelRelation.getRelEntityName());
+			}
+		}
+
+		return typeEntity;
 	}
 
 	private static void resetUnknownTypes(EPackage eWorkPackage, Set<String> entityNames) {
@@ -388,7 +389,7 @@ public class EntityServices {
 		for (String entityName : entityNames) {
 
 			EClass eClass = Frames.getEClass(bizPackage, entityName);
-
+			
 			// with attribute ID
 			EAttribute eClassAttributeID = eClass.getEIDAttribute();
 			if (eClassAttributeID == null)
@@ -405,6 +406,13 @@ public class EntityServices {
 				LOGGER.error("Model not found {}", relationEntity);
 				continue;
 			}
+
+			if (EntityPackage.eINSTANCE.getEntityTyped().isSuperTypeOf(eClassRelation)) {
+				LOGGER.info(eClass + "->" + eClassRelation);
+				"".toString();
+			}
+			else
+				"".toString();
 
 			// remove duplicate attribute ID
 			eClass.getEStructuralFeatures().remove(eClassAttributeID);

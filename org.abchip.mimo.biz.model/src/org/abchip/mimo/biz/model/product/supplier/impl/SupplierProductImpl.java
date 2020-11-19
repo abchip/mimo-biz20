@@ -19,7 +19,7 @@ import org.abchip.mimo.biz.model.product.supplier.SupplierProduct;
 import org.abchip.mimo.biz.model.product.supplier.SupplierRatingType;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityTypedImpl;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -58,7 +58,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class SupplierProductImpl extends EntityTypedImpl<SupplierRatingType> implements SupplierProduct {
+public class SupplierProductImpl extends EntityIdentifiableImpl implements SupplierProduct {
 
 	/**
 	 * <!-- begin-user-doc -->

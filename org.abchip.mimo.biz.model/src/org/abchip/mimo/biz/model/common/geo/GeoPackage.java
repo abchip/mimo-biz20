@@ -78,7 +78,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_ADDRESS_FORMAT__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
+	int COUNTRY_ADDRESS_FORMAT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_ADDRESS_FORMAT__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
+	int COUNTRY_ADDRESS_FORMAT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_ADDRESS_FORMAT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
+	int COUNTRY_ADDRESS_FORMAT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_ADDRESS_FORMAT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
+	int COUNTRY_ADDRESS_FORMAT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Geo Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_ADDRESS_FORMAT__GEO_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int COUNTRY_ADDRESS_FORMAT__GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Address Format</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_ADDRESS_FORMAT__ADDRESS_FORMAT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int COUNTRY_ADDRESS_FORMAT__ADDRESS_FORMAT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Geo Assoc Type</b></em>' reference.
@@ -132,7 +132,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_ADDRESS_FORMAT__GEO_ASSOC_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int COUNTRY_ADDRESS_FORMAT__GEO_ASSOC_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Has Postal Code Ext</b></em>' attribute.
@@ -141,7 +141,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_ADDRESS_FORMAT__HAS_POSTAL_CODE_EXT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int COUNTRY_ADDRESS_FORMAT__HAS_POSTAL_CODE_EXT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Postal Code Regex</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_ADDRESS_FORMAT__POSTAL_CODE_REGEX = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int COUNTRY_ADDRESS_FORMAT__POSTAL_CODE_REGEX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Require Postal Code</b></em>' attribute.
@@ -159,7 +159,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_ADDRESS_FORMAT__REQUIRE_POSTAL_CODE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int COUNTRY_ADDRESS_FORMAT__REQUIRE_POSTAL_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Require Postal Code Ext</b></em>' attribute.
@@ -168,7 +168,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_ADDRESS_FORMAT__REQUIRE_POSTAL_CODE_EXT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int COUNTRY_ADDRESS_FORMAT__REQUIRE_POSTAL_CODE_EXT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Require State Province Id</b></em>' attribute.
@@ -177,7 +177,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_ADDRESS_FORMAT__REQUIRE_STATE_PROVINCE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
+	int COUNTRY_ADDRESS_FORMAT__REQUIRE_STATE_PROVINCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Country Address Format</em>' class.
@@ -186,7 +186,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_ADDRESS_FORMAT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
+	int COUNTRY_ADDRESS_FORMAT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.geo.impl.CountryCodeImpl <em>Country Code</em>}' class.
@@ -632,7 +632,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GEO_ASSOC__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
+	int GEO_ASSOC__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -641,7 +641,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GEO_ASSOC__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
+	int GEO_ASSOC__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -650,7 +650,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GEO_ASSOC__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
+	int GEO_ASSOC__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -659,7 +659,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GEO_ASSOC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
+	int GEO_ASSOC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Geo</b></em>' reference.
@@ -668,7 +668,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GEO_ASSOC__GEO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int GEO_ASSOC__GEO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Geo Id To</b></em>' reference.
@@ -677,7 +677,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GEO_ASSOC__GEO_ID_TO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int GEO_ASSOC__GEO_ID_TO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Geo Assoc Type</b></em>' reference.
@@ -686,7 +686,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GEO_ASSOC__GEO_ASSOC_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int GEO_ASSOC__GEO_ASSOC_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Assoc</em>' class.
@@ -695,7 +695,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GEO_ASSOC_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int GEO_ASSOC_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.geo.impl.GeoAssocTypeImpl <em>Assoc Type</em>}' class.

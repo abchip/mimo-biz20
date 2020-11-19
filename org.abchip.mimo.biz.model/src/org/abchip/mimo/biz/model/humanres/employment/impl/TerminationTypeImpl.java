@@ -8,12 +8,11 @@
 package org.abchip.mimo.biz.model.humanres.employment.impl;
 
 import java.util.Date;
-import org.abchip.mimo.biz.model.humanres.employment.Employment;
 import org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage;
 import org.abchip.mimo.biz.model.humanres.employment.TerminationType;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityTypeImpl;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -36,7 +35,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class TerminationTypeImpl extends EntityTypeImpl<Employment> implements TerminationType {
+public class TerminationTypeImpl extends EntityIdentifiableImpl implements TerminationType {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -62,16 +61,9 @@ public class TerminationTypeImpl extends EntityTypeImpl<Employment> implements T
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 1;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return ESTATIC_FEATURE_COUNT;
+		return 0;
 	}
 
 	/**

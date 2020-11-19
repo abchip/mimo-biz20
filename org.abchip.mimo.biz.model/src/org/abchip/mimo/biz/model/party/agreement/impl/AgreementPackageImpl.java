@@ -2563,12 +2563,8 @@ public class AgreementPackageImpl extends EPackageImpl implements AgreementPacka
 		agreementPromoApplEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		agreementRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		agreementRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
-		g2 = createEGenericType(this.getTermType());
-		g1.getETypeArguments().add(g2);
-		agreementTermEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		agreementTermEClass.getEGenericSuperTypes().add(g1);
+		agreementTermEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		agreementTermEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		agreementTermAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		agreementTermAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		g1 = createEGenericType(theEntityPackage_1.getEntityType());
@@ -2581,12 +2577,8 @@ public class AgreementPackageImpl extends EPackageImpl implements AgreementPacka
 		agreementTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		agreementWorkEffortApplicEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		agreementWorkEffortApplicEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		g1 = createEGenericType(theEntityPackage_1.getEntityType());
-		g2 = createEGenericType(this.getAgreementTerm());
-		g1.getETypeArguments().add(g2);
-		termTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		termTypeEClass.getEGenericSuperTypes().add(g1);
+		termTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		termTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		termTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		termTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 

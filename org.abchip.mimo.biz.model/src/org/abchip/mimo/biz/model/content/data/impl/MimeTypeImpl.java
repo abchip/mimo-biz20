@@ -9,11 +9,10 @@ package org.abchip.mimo.biz.model.content.data.impl;
 
 import java.util.Date;
 import org.abchip.mimo.biz.model.content.data.DataPackage;
-import org.abchip.mimo.biz.model.content.data.FileExtension;
 import org.abchip.mimo.biz.model.content.data.MimeType;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityTypeImpl;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -34,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class MimeTypeImpl extends EntityTypeImpl<FileExtension> implements MimeType {
+public class MimeTypeImpl extends EntityIdentifiableImpl implements MimeType {
 	
 	/**
 	 * <!-- begin-user-doc -->
@@ -60,16 +59,9 @@ public class MimeTypeImpl extends EntityTypeImpl<FileExtension> implements MimeT
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 1;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return ESTATIC_FEATURE_COUNT;
+		return 0;
 	}
 
 	/**

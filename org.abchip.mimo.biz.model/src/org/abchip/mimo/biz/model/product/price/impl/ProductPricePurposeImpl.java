@@ -9,11 +9,10 @@ package org.abchip.mimo.biz.model.product.price.impl;
 
 import java.util.Date;
 import org.abchip.mimo.biz.model.product.price.PricePackage;
-import org.abchip.mimo.biz.model.product.price.ProductPaymentMethodType;
 import org.abchip.mimo.biz.model.product.price.ProductPricePurpose;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityTypedImpl;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -34,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ProductPricePurposeImpl extends EntityTypedImpl<ProductPaymentMethodType> implements ProductPricePurpose {
+public class ProductPricePurposeImpl extends EntityIdentifiableImpl implements ProductPricePurpose {
 
 	/**
 	 * <!-- begin-user-doc -->

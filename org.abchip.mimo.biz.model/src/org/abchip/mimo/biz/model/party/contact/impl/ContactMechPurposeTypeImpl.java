@@ -10,10 +10,9 @@ package org.abchip.mimo.biz.model.party.contact.impl;
 import java.util.Date;
 import org.abchip.mimo.biz.model.party.contact.ContactMechPurposeType;
 import org.abchip.mimo.biz.model.party.contact.ContactPackage;
-import org.abchip.mimo.biz.model.party.contact.PartyContactMechPurpose;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityTypeImpl;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -34,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ContactMechPurposeTypeImpl extends EntityTypeImpl<PartyContactMechPurpose> implements ContactMechPurposeType {
+public class ContactMechPurposeTypeImpl extends EntityIdentifiableImpl implements ContactMechPurposeType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -59,16 +58,9 @@ public class ContactMechPurposeTypeImpl extends EntityTypeImpl<PartyContactMechP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 1;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return ESTATIC_FEATURE_COUNT;
+		return 0;
 	}
 
 	/**

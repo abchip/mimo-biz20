@@ -9,7 +9,7 @@ package org.abchip.mimo.biz.model.product.price.impl;
 
 import java.util.Date;
 import org.abchip.mimo.biz.model.product.price.PricePackage;
-import org.abchip.mimo.biz.model.product.price.ProductFeaturePrice;
+import org.abchip.mimo.biz.model.product.price.ProductPrice;
 import org.abchip.mimo.biz.model.product.price.ProductPriceType;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ProductPriceTypeImpl extends EntityTypeImpl<ProductFeaturePrice> implements ProductPriceType {
+public class ProductPriceTypeImpl extends EntityTypeImpl<ProductPrice> implements ProductPriceType {
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -12,8 +12,8 @@ import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.humanres.position.EmplPosition;
 import org.abchip.mimo.biz.model.humanres.recruitment.JobRequisition;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
-import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -39,7 +39,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * @model annotation="mimo-ent-frame title='Employment Application'"
  * @generated
  */
-public interface EmploymentApp extends EntityTyped<EmploymentAppSourceType>, EntityInfo {
+public interface EmploymentApp extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Application Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

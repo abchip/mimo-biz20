@@ -13,7 +13,7 @@ import org.abchip.mimo.biz.model.content.data.FileExtension;
 import org.abchip.mimo.biz.model.content.data.MimeType;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityTypedImpl;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class FileExtensionImpl extends EntityTypedImpl<MimeType> implements FileExtension {
+public class FileExtensionImpl extends EntityIdentifiableImpl implements FileExtension {
 	
 	/**
 	 * <!-- begin-user-doc -->

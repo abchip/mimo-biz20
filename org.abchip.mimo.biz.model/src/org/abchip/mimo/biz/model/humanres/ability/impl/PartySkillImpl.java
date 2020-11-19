@@ -14,7 +14,7 @@ import org.abchip.mimo.biz.model.humanres.ability.SkillType;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityTypedImpl;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -39,7 +39,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class PartySkillImpl extends EntityTypedImpl<SkillType> implements PartySkill {
+public class PartySkillImpl extends EntityIdentifiableImpl implements PartySkill {
 
 	/**
 	 * <!-- begin-user-doc -->

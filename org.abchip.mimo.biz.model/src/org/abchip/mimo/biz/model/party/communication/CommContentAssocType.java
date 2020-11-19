@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.party.communication;
 
+import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
-import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +27,7 @@ import org.abchip.mimo.entity.EntityType;
  * @model annotation="mimo-ent-frame title='CommunicationEvent Content Association Type' formula='description'"
  * @generated
  */
-public interface CommContentAssocType extends EntityType<CommEventContentAssoc>, EntityInfo {
+public interface CommContentAssocType extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -10,10 +10,9 @@ package org.abchip.mimo.biz.model.common.user.impl;
 import java.util.Date;
 import org.abchip.mimo.biz.model.common.user.UserPackage;
 import org.abchip.mimo.biz.model.common.user.UserPrefGroupType;
-import org.abchip.mimo.biz.model.common.user.UserPreference;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityTypeImpl;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -34,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class UserPrefGroupTypeImpl extends EntityTypeImpl<UserPreference> implements UserPrefGroupType {
+public class UserPrefGroupTypeImpl extends EntityIdentifiableImpl implements UserPrefGroupType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -59,16 +58,9 @@ public class UserPrefGroupTypeImpl extends EntityTypeImpl<UserPreference> implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 1;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return ESTATIC_FEATURE_COUNT;
+		return 0;
 	}
 
 	/**

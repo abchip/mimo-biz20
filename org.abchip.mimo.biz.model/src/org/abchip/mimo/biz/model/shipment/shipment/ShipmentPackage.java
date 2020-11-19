@@ -11,8 +11,8 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 import org.abchip.mimo.biz.model.common.uom.Uom;
+import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
-import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -40,7 +40,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * @model
  * @generated
  */
-public interface ShipmentPackage extends EntityTyped<ShipmentBoxType>, EntityInfo {
+public interface ShipmentPackage extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Shipment</b></em>' reference.
 	 * <!-- begin-user-doc -->

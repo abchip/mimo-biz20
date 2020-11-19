@@ -9,11 +9,10 @@ package org.abchip.mimo.biz.model.party.communication.impl;
 
 import java.util.Date;
 import org.abchip.mimo.biz.model.party.communication.CommContentAssocType;
-import org.abchip.mimo.biz.model.party.communication.CommEventContentAssoc;
 import org.abchip.mimo.biz.model.party.communication.CommunicationPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityTypeImpl;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -34,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class CommContentAssocTypeImpl extends EntityTypeImpl<CommEventContentAssoc> implements CommContentAssocType {
+public class CommContentAssocTypeImpl extends EntityIdentifiableImpl implements CommContentAssocType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -59,16 +58,9 @@ public class CommContentAssocTypeImpl extends EntityTypeImpl<CommEventContentAss
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 1;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return ESTATIC_FEATURE_COUNT;
+		return 0;
 	}
 
 	/**

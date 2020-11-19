@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.humanres.employment;
 
+import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
-import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +29,7 @@ import org.abchip.mimo.entity.EntityType;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface TerminationType extends EntityType<Employment>, EntityInfo {
+public interface TerminationType extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

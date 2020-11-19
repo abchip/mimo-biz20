@@ -10,7 +10,7 @@ package org.abchip.mimo.biz.model.accounting.payment.impl;
 import java.util.Date;
 import java.util.List;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
-import org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse;
+import org.abchip.mimo.biz.model.accounting.payment.PaymentMethod;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodTypeGlAccount;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentPackage;
@@ -39,7 +39,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class PaymentMethodTypeImpl extends EntityTypeImpl<PaymentGatewayResponse> implements PaymentMethodType {
+public class PaymentMethodTypeImpl extends EntityTypeImpl<PaymentMethod> implements PaymentMethodType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

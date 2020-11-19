@@ -27,7 +27,7 @@ import org.abchip.mimo.entity.EntityType;
  * @model annotation="mimo-ent-frame title='Geographic Boundary Association' dictionary='CommonEntityLabels' formula='description'"
  * @generated
  */
-public interface GeoAssocType extends EntityType<CountryAddressFormat>, EntityInfo {
+public interface GeoAssocType extends EntityType<GeoAssoc>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

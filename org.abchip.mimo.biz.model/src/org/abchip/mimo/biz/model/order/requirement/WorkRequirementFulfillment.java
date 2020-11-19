@@ -8,8 +8,8 @@
 package org.abchip.mimo.biz.model.order.requirement;
 
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
+import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
-import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +29,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * @model
  * @generated
  */
-public interface WorkRequirementFulfillment extends EntityTyped<WorkReqFulfType>, EntityInfo {
+public interface WorkRequirementFulfillment extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Requirement</b></em>' reference.
 	 * <!-- begin-user-doc -->

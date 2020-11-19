@@ -678,7 +678,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
+	int TAX_AUTHORITY_RATE_PRODUCT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -687,7 +687,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
+	int TAX_AUTHORITY_RATE_PRODUCT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -696,7 +696,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
+	int TAX_AUTHORITY_RATE_PRODUCT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -705,7 +705,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
+	int TAX_AUTHORITY_RATE_PRODUCT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Tax Authority Rate Seq Id</b></em>' attribute.
@@ -714,7 +714,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTHORITY_RATE_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTHORITY_RATE_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -723,7 +723,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int TAX_AUTHORITY_RATE_PRODUCT__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -732,7 +732,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int TAX_AUTHORITY_RATE_PRODUCT__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Is Tax In Shipping Price</b></em>' attribute.
@@ -741,7 +741,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__IS_TAX_IN_SHIPPING_PRICE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int TAX_AUTHORITY_RATE_PRODUCT__IS_TAX_IN_SHIPPING_PRICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Min Item Price</b></em>' attribute.
@@ -750,7 +750,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__MIN_ITEM_PRICE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int TAX_AUTHORITY_RATE_PRODUCT__MIN_ITEM_PRICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Min Purchase</b></em>' attribute.
@@ -759,7 +759,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__MIN_PURCHASE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int TAX_AUTHORITY_RATE_PRODUCT__MIN_PURCHASE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Product Category</b></em>' reference.
@@ -768,7 +768,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_CATEGORY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_CATEGORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Product Store</b></em>' reference.
@@ -777,7 +777,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_STORE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
+	int TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_STORE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Geo Id</b></em>' attribute.
@@ -786,7 +786,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTH_GEO_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
+	int TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTH_GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Party Id</b></em>' attribute.
@@ -795,7 +795,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTH_PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
+	int TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTH_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Tax Authority Rate Type</b></em>' reference.
@@ -804,7 +804,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTHORITY_RATE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
+	int TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTHORITY_RATE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Tax Percentage</b></em>' attribute.
@@ -813,7 +813,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__TAX_PERCENTAGE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
+	int TAX_AUTHORITY_RATE_PRODUCT__TAX_PERCENTAGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Tax Promotions</b></em>' attribute.
@@ -822,7 +822,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__TAX_PROMOTIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
+	int TAX_AUTHORITY_RATE_PRODUCT__TAX_PROMOTIONS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Tax Shipping</b></em>' attribute.
@@ -831,7 +831,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__TAX_SHIPPING = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
+	int TAX_AUTHORITY_RATE_PRODUCT__TAX_SHIPPING = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -840,7 +840,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
+	int TAX_AUTHORITY_RATE_PRODUCT__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Title Transfer Enum Id</b></em>' attribute.
@@ -849,7 +849,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__TITLE_TRANSFER_ENUM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
+	int TAX_AUTHORITY_RATE_PRODUCT__TITLE_TRANSFER_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>Authority Rate Product</em>' class.
@@ -858,7 +858,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
+	int TAX_AUTHORITY_RATE_PRODUCT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityRateTypeImpl <em>Authority Rate Type</em>}' class.
@@ -871,22 +871,13 @@ public interface TaxPackage extends EPackage {
 	int TAX_AUTHORITY_RATE_TYPE = 7;
 
 	/**
-	 * The feature id for the '<em><b>Slots</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TAX_AUTHORITY_RATE_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
-
-	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
+	int TAX_AUTHORITY_RATE_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -895,7 +886,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
+	int TAX_AUTHORITY_RATE_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -904,7 +895,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
+	int TAX_AUTHORITY_RATE_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -913,7 +904,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
+	int TAX_AUTHORITY_RATE_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Tax Authority Rate Type Id</b></em>' attribute.
@@ -922,7 +913,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_TYPE__TAX_AUTHORITY_RATE_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
+	int TAX_AUTHORITY_RATE_TYPE__TAX_AUTHORITY_RATE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -931,7 +922,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
+	int TAX_AUTHORITY_RATE_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Authority Rate Type</em>' class.
@@ -940,7 +931,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
+	int TAX_AUTHORITY_RATE_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.tax.impl.ZipSalesRuleLookupImpl <em>Zip Sales Rule Lookup</em>}' class.

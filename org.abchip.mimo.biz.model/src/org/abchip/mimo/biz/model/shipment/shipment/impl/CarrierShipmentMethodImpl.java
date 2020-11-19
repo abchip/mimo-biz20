@@ -14,7 +14,7 @@ import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
 import org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityTypedImpl;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -38,7 +38,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class CarrierShipmentMethodImpl extends EntityTypedImpl<ShipmentMethodType> implements CarrierShipmentMethod {
+public class CarrierShipmentMethodImpl extends EntityIdentifiableImpl implements CarrierShipmentMethod {
 
 	/**
 	 * <!-- begin-user-doc -->

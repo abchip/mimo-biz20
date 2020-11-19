@@ -1947,20 +1947,16 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		productFeaturePriceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productFeaturePriceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPaymentMethodTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPaymentMethodTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getProductPriceType());
 		g1.getETypeArguments().add(g2);
-		productFeaturePriceEClass.getEGenericSuperTypes().add(g1);
+		productPriceEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		productFeaturePriceEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityType());
-		g2 = createEGenericType(this.getProductPricePurpose());
-		g1.getETypeArguments().add(g2);
-		productPaymentMethodTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		productPaymentMethodTypeEClass.getEGenericSuperTypes().add(g1);
-		productPriceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		productPriceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPriceEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		g2 = createEGenericType(this.getProductPriceActionType());
 		g1.getETypeArguments().add(g2);
@@ -1979,16 +1975,12 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 		productPriceChangeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		productPriceCondEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		productPriceCondEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
-		g2 = createEGenericType(this.getProductPaymentMethodType());
-		g1.getETypeArguments().add(g2);
-		productPricePurposeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		productPricePurposeEClass.getEGenericSuperTypes().add(g1);
+		productPricePurposeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPricePurposeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		productPriceRuleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		productPriceRuleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		g1 = createEGenericType(theEntityPackage_1.getEntityType());
-		g2 = createEGenericType(this.getProductFeaturePrice());
+		g2 = createEGenericType(this.getProductPrice());
 		g1.getETypeArguments().add(g2);
 		productPriceTypeEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());

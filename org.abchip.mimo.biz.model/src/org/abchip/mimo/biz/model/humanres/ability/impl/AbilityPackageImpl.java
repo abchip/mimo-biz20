@@ -1818,12 +1818,8 @@ public class AbilityPackageImpl extends EPackageImpl implements AbilityPackage {
 		partyQualTypeEClass.getEGenericSuperTypes().add(g1);
 		partyResumeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		partyResumeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
-		g2 = createEGenericType(this.getSkillType());
-		g1.getETypeArguments().add(g2);
-		partySkillEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		partySkillEClass.getEGenericSuperTypes().add(g1);
+		partySkillEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		partySkillEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		perfRatingTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		perfRatingTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		perfReviewEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
@@ -1842,26 +1838,14 @@ public class AbilityPackageImpl extends EPackageImpl implements AbilityPackage {
 		perfReviewItemTypeEClass.getEGenericSuperTypes().add(g1);
 		performanceNoteEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		performanceNoteEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
-		g2 = createEGenericType(this.getTrainingClassType());
-		g1.getETypeArguments().add(g2);
-		personTrainingEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		personTrainingEClass.getEGenericSuperTypes().add(g1);
+		personTrainingEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		personTrainingEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		responsibilityTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		responsibilityTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		g1 = createEGenericType(theEntityPackage_1.getEntityType());
-		g2 = createEGenericType(this.getPartySkill());
-		g1.getETypeArguments().add(g2);
-		skillTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		skillTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityType());
-		g2 = createEGenericType(this.getPersonTraining());
-		g1.getETypeArguments().add(g2);
-		trainingClassTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		trainingClassTypeEClass.getEGenericSuperTypes().add(g1);
+		skillTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		skillTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		trainingClassTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		trainingClassTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(partyQualEClass, PartyQual.class, "PartyQual", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

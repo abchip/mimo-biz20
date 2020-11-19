@@ -18,7 +18,7 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.order.order.OrderPaymentPreference;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityTypedImpl;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -59,7 +59,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class PaymentGatewayResponseImpl extends EntityTypedImpl<PaymentMethodType> implements PaymentGatewayResponse {
+public class PaymentGatewayResponseImpl extends EntityIdentifiableImpl implements PaymentGatewayResponse {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

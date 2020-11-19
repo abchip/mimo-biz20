@@ -8,8 +8,8 @@
 package org.abchip.mimo.biz.model.common.user;
 
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
-import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +31,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * @model annotation="mimo-ent-frame help='The UserPreference entity contains one entry per preference per\n          userLogin. User preferences are stored as key/value pairs (userPrefTypeId/userPrefValue).\n          All values are stored as strings. Value strings can be converted to\n          other data types by specifying a java data type in the userPrefDataType field.' title='Application preferences for a given userLogin.'"
  * @generated
  */
-public interface UserPreference extends EntityTyped<UserPrefGroupType>, EntityInfo {
+public interface UserPreference extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->

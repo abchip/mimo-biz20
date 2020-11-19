@@ -197,7 +197,6 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkeffortPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.EReference;
@@ -899,18 +898,10 @@ public class NeedPackageImpl extends EPackageImpl implements NeedPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityType());
-		EGenericType g2 = createEGenericType(this.getPartyNeed());
-		g1.getETypeArguments().add(g2);
-		needTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		needTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
-		g2 = createEGenericType(this.getNeedType());
-		g1.getETypeArguments().add(g2);
-		partyNeedEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		partyNeedEClass.getEGenericSuperTypes().add(g1);
+		needTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		needTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		partyNeedEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		partyNeedEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(needTypeEClass, NeedType.class, "NeedType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

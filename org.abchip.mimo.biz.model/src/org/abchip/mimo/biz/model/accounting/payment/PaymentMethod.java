@@ -11,8 +11,8 @@ import java.util.Date;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccount;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.party.party.Party;
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +37,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface PaymentMethod extends EntityIdentifiable, EntityInfo {
+public interface PaymentMethod extends EntityTyped<PaymentMethodType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

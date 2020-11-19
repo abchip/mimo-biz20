@@ -78,7 +78,7 @@ public interface RatePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RATE__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
+	int PARTY_RATE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface RatePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RATE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
+	int PARTY_RATE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface RatePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RATE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
+	int PARTY_RATE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface RatePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RATE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
+	int PARTY_RATE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party</b></em>' reference.
@@ -114,7 +114,7 @@ public interface RatePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RATE__PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int PARTY_RATE__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Rate Type</b></em>' reference.
@@ -123,7 +123,7 @@ public interface RatePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RATE__RATE_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int PARTY_RATE__RATE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface RatePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RATE__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int PARTY_RATE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Default Rate</b></em>' attribute.
@@ -141,7 +141,7 @@ public interface RatePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RATE__DEFAULT_RATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int PARTY_RATE__DEFAULT_RATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Percentage Used</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface RatePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RATE__PERCENTAGE_USED = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int PARTY_RATE__PERCENTAGE_USED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -159,7 +159,7 @@ public interface RatePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RATE__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int PARTY_RATE__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Party Rate</em>' class.
@@ -168,7 +168,7 @@ public interface RatePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RATE_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int PARTY_RATE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.rate.impl.RateAmountImpl <em>Amount</em>}' class.
@@ -317,22 +317,13 @@ public interface RatePackage extends EPackage {
 	int RATE_TYPE = 2;
 
 	/**
-	 * The feature id for the '<em><b>Slots</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RATE_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
-
-	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RATE_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
+	int RATE_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -341,7 +332,7 @@ public interface RatePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RATE_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
+	int RATE_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -350,7 +341,7 @@ public interface RatePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RATE_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
+	int RATE_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -359,7 +350,7 @@ public interface RatePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RATE_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
+	int RATE_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Rate Type Id</b></em>' attribute.
@@ -368,7 +359,7 @@ public interface RatePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RATE_TYPE__RATE_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
+	int RATE_TYPE__RATE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -377,7 +368,7 @@ public interface RatePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RATE_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
+	int RATE_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -386,7 +377,7 @@ public interface RatePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RATE_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
+	int RATE_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 
 	/**

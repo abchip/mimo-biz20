@@ -8,8 +8,8 @@
 package org.abchip.mimo.biz.model.shipment.shipment;
 
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
-import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +31,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * @model
  * @generated
  */
-public interface CarrierShipmentMethod extends EntityTyped<ShipmentMethodType>, EntityInfo {
+public interface CarrierShipmentMethod extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Shipment Method Type</b></em>' reference.
 	 * <!-- begin-user-doc -->

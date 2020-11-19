@@ -1197,20 +1197,12 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		webAnalyticsConfigEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		webAnalyticsConfigEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		webAnalyticsTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		webAnalyticsTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
-		EGenericType g2 = createEGenericType(this.getWebAnalyticsType());
-		g1.getETypeArguments().add(g2);
-		webAnalyticsConfigEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		webAnalyticsConfigEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityType());
-		g2 = createEGenericType(this.getWebAnalyticsConfig());
-		g1.getETypeArguments().add(g2);
-		webAnalyticsTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		webAnalyticsTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
-		g2 = createEGenericType(this.getWebSiteContentType());
+		EGenericType g2 = createEGenericType(this.getWebSiteContentType());
 		g1.getETypeArguments().add(g2);
 		webSiteContentEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());

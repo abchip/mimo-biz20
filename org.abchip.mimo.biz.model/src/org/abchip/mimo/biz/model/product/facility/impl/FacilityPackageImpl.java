@@ -2748,12 +2748,8 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		facilityEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
 		facilityEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityType());
-		g2 = createEGenericType(this.getProductFacilityAssoc());
-		g1.getETypeArguments().add(g2);
-		facilityAssocTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		facilityAssocTypeEClass.getEGenericSuperTypes().add(g1);
+		facilityAssocTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		facilityAssocTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		facilityAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		facilityAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
@@ -2810,12 +2806,8 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		facilityTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		productFacilityEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		productFacilityEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
-		g2 = createEGenericType(this.getFacilityAssocType());
-		g1.getETypeArguments().add(g2);
-		productFacilityAssocEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		productFacilityAssocEClass.getEGenericSuperTypes().add(g1);
+		productFacilityAssocEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productFacilityAssocEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		productFacilityLocationEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		productFacilityLocationEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 

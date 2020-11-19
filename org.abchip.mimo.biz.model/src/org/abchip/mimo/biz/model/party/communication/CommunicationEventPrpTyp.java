@@ -8,8 +8,8 @@
 package org.abchip.mimo.biz.model.party.communication;
 
 import java.util.List;
+import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
-import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +31,7 @@ import org.abchip.mimo.entity.EntityType;
  * @model annotation="mimo-ent-frame title='Communication Event Purpose Type' dictionary='PartyEntityLabels' formula='description'"
  * @generated
  */
-public interface CommunicationEventPrpTyp extends EntityType<CommunicationEventPurpose>, EntityInfo {
+public interface CommunicationEventPrpTyp extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

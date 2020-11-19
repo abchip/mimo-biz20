@@ -12,8 +12,8 @@ import java.math.BigDecimal;
 import java.util.Date;
 import org.abchip.mimo.biz.model.product.category.ProductCategory;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
+import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
-import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -46,7 +46,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * @model annotation="mimo-ent-frame title='Tax Authority Rate' formula='description'"
  * @generated
  */
-public interface TaxAuthorityRateProduct extends EntityTyped<TaxAuthorityRateType>, EntityInfo {
+public interface TaxAuthorityRateProduct extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

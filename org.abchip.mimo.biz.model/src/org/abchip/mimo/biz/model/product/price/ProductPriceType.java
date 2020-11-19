@@ -27,7 +27,7 @@ import org.abchip.mimo.entity.EntityType;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface ProductPriceType extends EntityType<ProductFeaturePrice>, EntityInfo {
+public interface ProductPriceType extends EntityType<ProductPrice>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

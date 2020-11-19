@@ -10,8 +10,8 @@ package org.abchip.mimo.biz.model.shipment.shipment;
 import java.math.BigDecimal;
 import java.util.List;
 import org.abchip.mimo.biz.model.common.uom.Uom;
+import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
-import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +37,7 @@ import org.abchip.mimo.entity.EntityType;
  * @model annotation="mimo-ent-frame title='Shipment Contact Mechanism Type' formula='description'"
  * @generated
  */
-public interface ShipmentBoxType extends EntityType<ShipmentPackage>, EntityInfo {
+public interface ShipmentBoxType extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Box Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->

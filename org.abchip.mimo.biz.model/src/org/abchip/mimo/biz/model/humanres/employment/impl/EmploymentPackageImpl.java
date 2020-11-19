@@ -2184,14 +2184,10 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityType());
-		EGenericType g2 = createEGenericType(this.getPartyBenefit());
-		g1.getETypeArguments().add(g2);
-		benefitTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		benefitTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
-		g2 = createEGenericType(this.getEmplLeaveType());
+		benefitTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		benefitTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		EGenericType g2 = createEGenericType(this.getEmplLeaveType());
 		g1.getETypeArguments().add(g2);
 		emplLeaveEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
@@ -2204,30 +2200,14 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 		emplLeaveTypeEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
 		emplLeaveTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
-		g2 = createEGenericType(this.getTerminationType());
-		g1.getETypeArguments().add(g2);
-		employmentEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		employmentEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
-		g2 = createEGenericType(this.getEmploymentAppSourceType());
-		g1.getETypeArguments().add(g2);
-		employmentAppEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		employmentAppEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityType());
-		g2 = createEGenericType(this.getEmploymentApp());
-		g1.getETypeArguments().add(g2);
-		employmentAppSourceTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		employmentAppSourceTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
-		g2 = createEGenericType(this.getBenefitType());
-		g1.getETypeArguments().add(g2);
-		partyBenefitEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		partyBenefitEClass.getEGenericSuperTypes().add(g1);
+		employmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		employmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		employmentAppEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		employmentAppEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		employmentAppSourceTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		employmentAppSourceTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		partyBenefitEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		partyBenefitEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		payGradeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		payGradeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		payHistoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
@@ -2238,12 +2218,8 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 		salaryStepEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		terminationReasonEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		terminationReasonEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		g1 = createEGenericType(theEntityPackage_1.getEntityType());
-		g2 = createEGenericType(this.getEmployment());
-		g1.getETypeArguments().add(g2);
-		terminationTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		terminationTypeEClass.getEGenericSuperTypes().add(g1);
+		terminationTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		terminationTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		unemploymentClaimEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		unemploymentClaimEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 

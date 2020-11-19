@@ -72,22 +72,13 @@ public interface CommunicationPackage extends EPackage {
 	int COMM_CONTENT_ASSOC_TYPE = 0;
 
 	/**
-	 * The feature id for the '<em><b>Slots</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMM_CONTENT_ASSOC_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
-
-	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COMM_CONTENT_ASSOC_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
+	int COMM_CONTENT_ASSOC_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -96,7 +87,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM_CONTENT_ASSOC_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
+	int COMM_CONTENT_ASSOC_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -105,7 +96,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM_CONTENT_ASSOC_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
+	int COMM_CONTENT_ASSOC_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -114,7 +105,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM_CONTENT_ASSOC_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
+	int COMM_CONTENT_ASSOC_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Comm Content Assoc Type Id</b></em>' attribute.
@@ -123,7 +114,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM_CONTENT_ASSOC_TYPE__COMM_CONTENT_ASSOC_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
+	int COMM_CONTENT_ASSOC_TYPE__COMM_CONTENT_ASSOC_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -132,7 +123,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM_CONTENT_ASSOC_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
+	int COMM_CONTENT_ASSOC_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Comm Content Assoc Type</em>' class.
@@ -141,7 +132,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM_CONTENT_ASSOC_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
+	int COMM_CONTENT_ASSOC_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.communication.impl.CommEventContentAssocImpl <em>Comm Event Content Assoc</em>}' class.
@@ -160,7 +151,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM_EVENT_CONTENT_ASSOC__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
+	int COMM_EVENT_CONTENT_ASSOC__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -169,7 +160,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM_EVENT_CONTENT_ASSOC__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
+	int COMM_EVENT_CONTENT_ASSOC__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -178,7 +169,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM_EVENT_CONTENT_ASSOC__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
+	int COMM_EVENT_CONTENT_ASSOC__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -187,7 +178,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM_EVENT_CONTENT_ASSOC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
+	int COMM_EVENT_CONTENT_ASSOC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Content</b></em>' reference.
@@ -196,7 +187,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM_EVENT_CONTENT_ASSOC__CONTENT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int COMM_EVENT_CONTENT_ASSOC__CONTENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Communication Event</b></em>' reference.
@@ -205,7 +196,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM_EVENT_CONTENT_ASSOC__COMMUNICATION_EVENT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int COMM_EVENT_CONTENT_ASSOC__COMMUNICATION_EVENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -214,7 +205,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM_EVENT_CONTENT_ASSOC__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int COMM_EVENT_CONTENT_ASSOC__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Comm Content Assoc Type</b></em>' reference.
@@ -223,7 +214,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM_EVENT_CONTENT_ASSOC__COMM_CONTENT_ASSOC_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int COMM_EVENT_CONTENT_ASSOC__COMM_CONTENT_ASSOC_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -232,7 +223,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM_EVENT_CONTENT_ASSOC__SEQUENCE_NUM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int COMM_EVENT_CONTENT_ASSOC__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -241,7 +232,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM_EVENT_CONTENT_ASSOC__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int COMM_EVENT_CONTENT_ASSOC__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Comm Event Content Assoc</em>' class.
@@ -250,7 +241,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM_EVENT_CONTENT_ASSOC_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int COMM_EVENT_CONTENT_ASSOC_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventImpl <em>Event</em>}' class.
@@ -634,22 +625,13 @@ public interface CommunicationPackage extends EPackage {
 	int COMMUNICATION_EVENT_PRP_TYP = 4;
 
 	/**
-	 * The feature id for the '<em><b>Slots</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COMMUNICATION_EVENT_PRP_TYP__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
-
-	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_PRP_TYP__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
+	int COMMUNICATION_EVENT_PRP_TYP__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -658,7 +640,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_PRP_TYP__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
+	int COMMUNICATION_EVENT_PRP_TYP__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -667,7 +649,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_PRP_TYP__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
+	int COMMUNICATION_EVENT_PRP_TYP__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -676,7 +658,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_PRP_TYP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
+	int COMMUNICATION_EVENT_PRP_TYP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Communication Event Prp Typ Id</b></em>' attribute.
@@ -685,7 +667,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_PRP_TYP__COMMUNICATION_EVENT_PRP_TYP_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
+	int COMMUNICATION_EVENT_PRP_TYP__COMMUNICATION_EVENT_PRP_TYP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Communication Event Purposes</b></em>' reference list.
@@ -694,7 +676,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_PRP_TYP__COMMUNICATION_EVENT_PURPOSES = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
+	int COMMUNICATION_EVENT_PRP_TYP__COMMUNICATION_EVENT_PURPOSES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -703,7 +685,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_PRP_TYP__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
+	int COMMUNICATION_EVENT_PRP_TYP__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -712,7 +694,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_PRP_TYP__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int COMMUNICATION_EVENT_PRP_TYP__HAS_TABLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
@@ -721,7 +703,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_PRP_TYP__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
+	int COMMUNICATION_EVENT_PRP_TYP__PARENT_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Event Prp Typ</em>' class.
@@ -730,7 +712,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_PRP_TYP_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
+	int COMMUNICATION_EVENT_PRP_TYP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPurposeImpl <em>Event Purpose</em>}' class.
@@ -749,7 +731,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_PURPOSE__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
+	int COMMUNICATION_EVENT_PURPOSE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -758,7 +740,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_PURPOSE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
+	int COMMUNICATION_EVENT_PURPOSE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -767,7 +749,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_PURPOSE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
+	int COMMUNICATION_EVENT_PURPOSE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -776,7 +758,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_PURPOSE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
+	int COMMUNICATION_EVENT_PURPOSE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Communication Event</b></em>' reference.
@@ -785,7 +767,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_PURPOSE__COMMUNICATION_EVENT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int COMMUNICATION_EVENT_PURPOSE__COMMUNICATION_EVENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Communication Event Prp Typ</b></em>' reference.
@@ -794,7 +776,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_PURPOSE__COMMUNICATION_EVENT_PRP_TYP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int COMMUNICATION_EVENT_PURPOSE__COMMUNICATION_EVENT_PRP_TYP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -803,7 +785,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_PURPOSE__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int COMMUNICATION_EVENT_PURPOSE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Event Purpose</em>' class.
@@ -812,7 +794,7 @@ public interface CommunicationPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_PURPOSE_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int COMMUNICATION_EVENT_PURPOSE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventRoleImpl <em>Event Role</em>}' class.

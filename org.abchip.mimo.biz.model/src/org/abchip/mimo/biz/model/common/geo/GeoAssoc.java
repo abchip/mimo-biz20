@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.common.geo;
 
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +28,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame title='Geographic Boundary Association'"
  * @generated
  */
-public interface GeoAssoc extends EntityIdentifiable, EntityInfo {
+public interface GeoAssoc extends EntityTyped<GeoAssocType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Geo</b></em>' reference.
 	 * <!-- begin-user-doc -->

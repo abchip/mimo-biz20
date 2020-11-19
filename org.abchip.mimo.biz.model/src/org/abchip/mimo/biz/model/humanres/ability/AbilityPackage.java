@@ -405,7 +405,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_SKILL__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
+	int PARTY_SKILL__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -414,7 +414,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_SKILL__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
+	int PARTY_SKILL__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -423,7 +423,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_SKILL__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
+	int PARTY_SKILL__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -432,7 +432,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_SKILL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
+	int PARTY_SKILL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party</b></em>' reference.
@@ -441,7 +441,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_SKILL__PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int PARTY_SKILL__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Skill Type</b></em>' reference.
@@ -450,7 +450,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_SKILL__SKILL_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int PARTY_SKILL__SKILL_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Rating</b></em>' attribute.
@@ -459,7 +459,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_SKILL__RATING = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int PARTY_SKILL__RATING = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Skill Level</b></em>' attribute.
@@ -468,7 +468,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_SKILL__SKILL_LEVEL = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int PARTY_SKILL__SKILL_LEVEL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Started Using Date</b></em>' attribute.
@@ -477,7 +477,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_SKILL__STARTED_USING_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int PARTY_SKILL__STARTED_USING_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Years Experience</b></em>' attribute.
@@ -486,7 +486,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_SKILL__YEARS_EXPERIENCE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int PARTY_SKILL__YEARS_EXPERIENCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Party Skill</em>' class.
@@ -495,7 +495,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_SKILL_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int PARTY_SKILL_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.humanres.ability.impl.PerfRatingTypeImpl <em>Perf Rating Type</em>}' class.
@@ -1077,7 +1077,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_TRAINING__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
+	int PERSON_TRAINING__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1086,7 +1086,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_TRAINING__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
+	int PERSON_TRAINING__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1095,7 +1095,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_TRAINING__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
+	int PERSON_TRAINING__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1104,7 +1104,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_TRAINING__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
+	int PERSON_TRAINING__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party</b></em>' reference.
@@ -1113,7 +1113,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_TRAINING__PARTY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int PERSON_TRAINING__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Training Class Type</b></em>' reference.
@@ -1122,7 +1122,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_TRAINING__TRAINING_CLASS_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int PERSON_TRAINING__TRAINING_CLASS_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1131,7 +1131,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_TRAINING__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int PERSON_TRAINING__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Approval Status</b></em>' attribute.
@@ -1140,7 +1140,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_TRAINING__APPROVAL_STATUS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int PERSON_TRAINING__APPROVAL_STATUS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Approver</b></em>' reference.
@@ -1149,7 +1149,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_TRAINING__APPROVER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int PERSON_TRAINING__APPROVER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Reason</b></em>' attribute.
@@ -1158,7 +1158,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_TRAINING__REASON = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int PERSON_TRAINING__REASON = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -1167,7 +1167,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_TRAINING__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int PERSON_TRAINING__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Training Request</b></em>' reference.
@@ -1176,7 +1176,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_TRAINING__TRAINING_REQUEST = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
+	int PERSON_TRAINING__TRAINING_REQUEST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort</b></em>' reference.
@@ -1185,7 +1185,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_TRAINING__WORK_EFFORT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
+	int PERSON_TRAINING__WORK_EFFORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of structural features of the '<em>Person Training</em>' class.
@@ -1194,7 +1194,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_TRAINING_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
+	int PERSON_TRAINING_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.humanres.ability.impl.ResponsibilityTypeImpl <em>Responsibility Type</em>}' class.
@@ -1298,22 +1298,13 @@ public interface AbilityPackage extends EPackage {
 	int SKILL_TYPE = 11;
 
 	/**
-	 * The feature id for the '<em><b>Slots</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SKILL_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
-
-	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SKILL_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
+	int SKILL_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1322,7 +1313,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SKILL_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
+	int SKILL_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1331,7 +1322,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SKILL_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
+	int SKILL_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1340,7 +1331,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SKILL_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
+	int SKILL_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Skill Type Id</b></em>' attribute.
@@ -1349,7 +1340,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SKILL_TYPE__SKILL_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
+	int SKILL_TYPE__SKILL_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1358,7 +1349,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SKILL_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
+	int SKILL_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -1367,7 +1358,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SKILL_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
+	int SKILL_TYPE__HAS_TABLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
@@ -1376,7 +1367,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SKILL_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int SKILL_TYPE__PARENT_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Skill Type</em>' class.
@@ -1385,7 +1376,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SKILL_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
+	int SKILL_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.humanres.ability.impl.TrainingClassTypeImpl <em>Training Class Type</em>}' class.
@@ -1398,22 +1389,13 @@ public interface AbilityPackage extends EPackage {
 	int TRAINING_CLASS_TYPE = 12;
 
 	/**
-	 * The feature id for the '<em><b>Slots</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRAINING_CLASS_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
-
-	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TRAINING_CLASS_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
+	int TRAINING_CLASS_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1422,7 +1404,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRAINING_CLASS_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
+	int TRAINING_CLASS_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1431,7 +1413,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRAINING_CLASS_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
+	int TRAINING_CLASS_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1440,7 +1422,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRAINING_CLASS_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
+	int TRAINING_CLASS_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Training Class Type Id</b></em>' attribute.
@@ -1449,7 +1431,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRAINING_CLASS_TYPE__TRAINING_CLASS_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
+	int TRAINING_CLASS_TYPE__TRAINING_CLASS_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1458,7 +1440,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRAINING_CLASS_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
+	int TRAINING_CLASS_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -1467,7 +1449,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRAINING_CLASS_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
+	int TRAINING_CLASS_TYPE__HAS_TABLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
@@ -1476,7 +1458,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRAINING_CLASS_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int TRAINING_CLASS_TYPE__PARENT_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Training Class Type</em>' class.
@@ -1485,7 +1467,7 @@ public interface AbilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRAINING_CLASS_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
+	int TRAINING_CLASS_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 
 	/**

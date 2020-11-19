@@ -31,7 +31,7 @@ import org.abchip.mimo.entity.EntityType;
  * @model annotation="mimo-ent-frame dictionary='AccountingEntityLabels' formula='description'"
  * @generated
  */
-public interface PaymentMethodType extends EntityType<PaymentGatewayResponse>, EntityInfo {
+public interface PaymentMethodType extends EntityType<PaymentMethod>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

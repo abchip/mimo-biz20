@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.product.facility;
 
 import java.util.Date;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
-import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,7 +35,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * @model annotation="mimo-ent-frame title='Define associations between Product facilities' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductFacilityAssoc extends EntityTyped<FacilityAssocType>, EntityInfo {
+public interface ProductFacilityAssoc extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
