@@ -188,7 +188,7 @@ public class FormUtils {
 		return null;
 	}
 
-	public static String findEnumType(Map<String, ModelForm> forms, String modelName, String fieldName) {
+	public static String findEnumTypex(Map<String, ModelForm> forms, String modelName, String fieldName) {
 
 		String enumType = null;
 

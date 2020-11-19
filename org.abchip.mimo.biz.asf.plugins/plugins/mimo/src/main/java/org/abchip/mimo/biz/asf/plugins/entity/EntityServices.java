@@ -78,7 +78,7 @@ public class EntityServices {
 
 			EPackage bizPackage = buildBizPackage(delegator, forms);
 			setFrameSuper(delegator, bizPackage, entityNames);
-			
+
 			setTextable(modelReader, bizPackage, entityNames);
 			setReferences(modelReader, bizPackage, entityNames);
 
@@ -89,7 +89,7 @@ public class EntityServices {
 				LOGGER.warn("Differences found on model");
 
 			reorderFeatures(bizPackage, entityNames);
-			
+
 			bizPackage = writePackage(bizPackage, context);
 
 			return ServiceUtil.returnSuccess("OK");
@@ -271,7 +271,7 @@ public class EntityServices {
 		// type
 		for (String entityName : entityNames) {
 			ModelEntity modelEntity = delegator.getModelEntity(entityName);
-			if (modelEntity.getField("hasTable") == null && !entityName.endsWith("Type")) 
+			if (modelEntity.getField("hasTable") == null && !entityName.endsWith("Type"))
 				continue;
 
 			EClass eClass = EcoreUtils.buildEntityTypeEClass(delegator, forms, modelEntity);
@@ -461,7 +461,7 @@ public class EntityServices {
 					continue;
 				}
 			}
-			
+
 			Map<String, Integer> removeableFeatures = new HashMap<String, Integer>();
 
 			for (ModelRelation modelRelation : modelEntity.getRelationsList(true, true, false)) {
@@ -746,16 +746,29 @@ public class EntityServices {
 					continue;
 
 				String relationType = null;
-				if (modelRelEntity.getPksSize() > 2) {
-					if (modelRelEntity.getPksSize() == 3 && modelRelEntity.getPkFieldNames().get(2).equals("fromDate")) {
+				switch (modelRelEntity.getPksSize()) {
+				case 1:
+					"".toString();
+					break;
+				case 2:
+					"".toString();
+					break;
+				case 3:
+					if (modelRelEntity.getPkFieldNames().get(2).equals("fromDate")) {
 						relationType = "fromDate";
-					} else {
-						if (modelRelEntity.getPkFieldNames().get(1).contains("Seq")) {
-							relationType = "sequenced";
-							continue;
-						} else
-							continue;
+						break;
 					}
+//					else if(ModelUtils.isDateField(modelRelEntity.getPkFields().get(2))) {
+//						System.out.println(modelRelEntity.getPkFieldNames().get(2));
+//						relationType = "fromDate";
+//						break;
+//					}
+
+					if (modelRelEntity.getPkFieldNames().get(1).contains("Seq")) {
+						// relationType = "sequenced";
+					}
+				default:
+					continue;
 				}
 
 				String relationName = modelRelation.getCombinedName();

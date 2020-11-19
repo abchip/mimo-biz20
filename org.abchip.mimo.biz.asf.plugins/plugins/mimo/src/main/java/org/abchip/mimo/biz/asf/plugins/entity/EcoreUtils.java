@@ -66,24 +66,7 @@ public class EcoreUtils {
 	}
 
 	public static EOperation copy(EOperation eOperation) {
-
 		return EcoreUtil.copy(eOperation);
-
-		/*
-		 * EOperation result = EcoreFactory.eINSTANCE.createEOperation();
-		 * 
-		 * result.setEGenericType(eOperation.getEGenericType());
-		 * result.setEType(eOperation.getEType());
-		 * result.setLowerBound(eOperation.getLowerBound());
-		 * result.setName(eOperation.getName());
-		 * result.setOrdered(eOperation.isOrdered());
-		 * result.setUnique(eOperation.isUnique());
-		 * result.setUpperBound(eOperation.getUpperBound());
-		 * result.getEAnnotations().addAll(EcoreUtil.copyAll(eOperation.getEAnnotations(
-		 * )));
-		 * 
-		 * return result;
-		 */
 	}
 
 	public static String packageToName(EPackage ePackage) {

@@ -301,6 +301,16 @@ public class ModelUtils {
 		return sb.toString();
 	}
 
+	public static boolean isDateField(ModelField modelField) {
+		switch (modelField.getType()) {
+		case "date-time":
+		case "date":
+		case "time":
+			return true;
+		}
+		return false;
+	}
+
 	public static String pluralization(String word) {
 		if (word.endsWith("y"))
 			word = word.substring(0, word.length() - 1) + "ies";
