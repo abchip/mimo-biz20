@@ -1956,7 +1956,7 @@ public class AbilityPackageImpl extends EPackageImpl implements AbilityPackage {
 		initEAttribute(getPerformanceNote_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, PerformanceNote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(personTrainingEClass, PersonTraining.class, "PersonTraining", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getPersonTraining_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, PersonTraining.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPersonTraining_Party(), thePartyPackage_1.getPerson(), null, "party", null, 1, 1, PersonTraining.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getPersonTraining_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getPersonTraining_TrainingClassType(), this.getTrainingClassType(), null, "trainingClassType", null, 1, 1, PersonTraining.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getPersonTraining_TrainingClassType().getEKeys().add(this.getTrainingClassType_TrainingClassTypeId());

@@ -1451,7 +1451,7 @@ public class Shipment_PackageImpl extends EPackageImpl implements Shipment_Packa
 	 * @generated
 	 */
 	@Override
-	public EReference getShipment_ShipmentType() {
+	public EReference getShipment_ShipmentStatuses() {
 		return (EReference)shipmentEClass.getEStructuralFeatures().get(33);
 	}
 
@@ -1461,8 +1461,18 @@ public class Shipment_PackageImpl extends EPackageImpl implements Shipment_Packa
 	 * @generated
 	 */
 	@Override
-	public EReference getShipment_Status() {
+	public EReference getShipment_ShipmentType() {
 		return (EReference)shipmentEClass.getEStructuralFeatures().get(34);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getShipment_Status() {
+		return (EReference)shipmentEClass.getEStructuralFeatures().get(35);
 	}
 
 	/**
@@ -3924,6 +3934,7 @@ public class Shipment_PackageImpl extends EPackageImpl implements Shipment_Packa
 		createEReference(shipmentEClass, SHIPMENT__SHIPMENT_ITEMS);
 		createEReference(shipmentEClass, SHIPMENT__SHIPMENT_PACKAGES);
 		createEReference(shipmentEClass, SHIPMENT__SHIPMENT_ROUTE_SEGMENTS);
+		createEReference(shipmentEClass, SHIPMENT__SHIPMENT_STATUSES);
 		createEReference(shipmentEClass, SHIPMENT__SHIPMENT_TYPE);
 		createEReference(shipmentEClass, SHIPMENT__STATUS);
 
@@ -4412,6 +4423,7 @@ public class Shipment_PackageImpl extends EPackageImpl implements Shipment_Packa
 		initEReference(getShipment_ShipmentItems(), this.getShipmentItem(), null, "shipmentItems", null, 0, -1, Shipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getShipment_ShipmentPackages(), this.getShipmentPackage(), null, "shipmentPackages", null, 0, -1, Shipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getShipment_ShipmentRouteSegments(), this.getShipmentRouteSegment(), null, "shipmentRouteSegments", null, 0, -1, Shipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEReference(getShipment_ShipmentStatuses(), this.getShipmentStatus(), null, "shipmentStatuses", null, 0, -1, Shipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getShipment_ShipmentType(), this.getShipmentType(), null, "shipmentType", null, 0, 1, Shipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getShipment_ShipmentType().getEKeys().add(this.getShipmentType_ShipmentTypeId());
 		initEReference(getShipment_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, Shipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

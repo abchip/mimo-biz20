@@ -45,7 +45,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.Requirement#getRequiredByDate <em>Required By Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.Requirement#getRequirementAttributes <em>Requirement Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.Requirement#getRequirementStartDate <em>Requirement Start Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.Requirement#getRequirementStatuss <em>Requirement Statuss</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.Requirement#getRequirementStatuses <em>Requirement Statuses</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.Requirement#getRequirementType <em>Requirement Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.Requirement#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.Requirement#getUseCase <em>Use Case</em>}</li>
@@ -471,20 +471,16 @@ public interface Requirement extends EntityTyped<RequirementType>, EntityInfo {
 	void setRequirementStartDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Requirement Statuss</b></em>' reference list.
+	 * Returns the value of the '<em><b>Requirement Statuses</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.requirement.RequirementStatus}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Requirement Statuss</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Requirement Statuss</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirement_RequirementStatuss()
+	 * @return the value of the '<em>Requirement Statuses</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirement_RequirementStatuses()
 	 * @model derived="true"
 	 * @generated
 	 */
-	List<RequirementStatus> getRequirementStatuss();
+	List<RequirementStatus> getRequirementStatuses();
 
 	/**
 	 * Returns the value of the '<em><b>Requirement Type</b></em>' reference.

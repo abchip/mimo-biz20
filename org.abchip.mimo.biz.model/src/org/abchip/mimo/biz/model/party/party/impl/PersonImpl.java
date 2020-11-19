@@ -9,8 +9,10 @@ package org.abchip.mimo.biz.model.party.party.impl;
 
 import java.util.Date;
 
+import java.util.List;
 import org.abchip.mimo.biz.model.common.Gender;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
+import org.abchip.mimo.biz.model.humanres.ability.PersonTraining;
 import org.abchip.mimo.biz.model.party.MaritalStatus;
 import org.abchip.mimo.biz.model.party.party.PartyPackage;
 import org.abchip.mimo.biz.model.party.party.Person;
@@ -47,6 +49,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getOtherLocal <em>Other Local</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getPassportExpireDate <em>Passport Expire Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getPassportNumber <em>Passport Number</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getPersonTrainings <em>Person Trainings</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getPersonalTitle <em>Personal Title</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getResidenceStatusEnum <em>Residence Status Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getSalutation <em>Salutation</em>}</li>
@@ -537,6 +540,17 @@ public class PersonImpl extends PartyImpl implements Person {
 	@Override
 	public void setPassportNumber(String newPassportNumber) {
 		eSet(PartyPackage.Literals.PERSON__PASSPORT_NUMBER, newPassportNumber);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<PersonTraining> getPersonTrainings() {
+		return (List<PersonTraining>)eGet(PartyPackage.Literals.PERSON__PERSON_TRAININGS, true);
 	}
 
 	/**

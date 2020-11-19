@@ -443,13 +443,13 @@ public interface RequirementPackage extends EPackage {
 	int REQUIREMENT__REQUIREMENT_START_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
-	 * The feature id for the '<em><b>Requirement Statuss</b></em>' reference list.
+	 * The feature id for the '<em><b>Requirement Statuses</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int REQUIREMENT__REQUIREMENT_STATUSS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
+	int REQUIREMENT__REQUIREMENT_STATUSES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Requirement Type</b></em>' reference.
@@ -1613,15 +1613,15 @@ public interface RequirementPackage extends EPackage {
 	EAttribute getRequirement_RequirementStartDate();
 
 	/**
-	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.order.requirement.Requirement#getRequirementStatuss <em>Requirement Statuss</em>}'.
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.order.requirement.Requirement#getRequirementStatuses <em>Requirement Statuses</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Requirement Statuss</em>'.
-	 * @see org.abchip.mimo.biz.model.order.requirement.Requirement#getRequirementStatuss()
+	 * @return the meta object for the reference list '<em>Requirement Statuses</em>'.
+	 * @see org.abchip.mimo.biz.model.order.requirement.Requirement#getRequirementStatuses()
 	 * @see #getRequirement()
 	 * @generated
 	 */
-	EReference getRequirement_RequirementStatuss();
+	EReference getRequirement_RequirementStatuses();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.order.requirement.Requirement#getRequirementType <em>Requirement Type</em>}'.
@@ -2373,12 +2373,12 @@ public interface RequirementPackage extends EPackage {
 		EAttribute REQUIREMENT__REQUIREMENT_START_DATE = eINSTANCE.getRequirement_RequirementStartDate();
 
 		/**
-		 * The meta object literal for the '<em><b>Requirement Statuss</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Requirement Statuses</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference REQUIREMENT__REQUIREMENT_STATUSS = eINSTANCE.getRequirement_RequirementStatuss();
+		EReference REQUIREMENT__REQUIREMENT_STATUSES = eINSTANCE.getRequirement_RequirementStatuses();
 
 		/**
 		 * The meta object literal for the '<em><b>Requirement Type</b></em>' reference feature.

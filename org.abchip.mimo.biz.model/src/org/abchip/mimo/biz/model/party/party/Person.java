@@ -9,8 +9,10 @@ package org.abchip.mimo.biz.model.party.party;
 
 import java.util.Date;
 
+import java.util.List;
 import org.abchip.mimo.biz.model.common.Gender;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
+import org.abchip.mimo.biz.model.humanres.ability.PersonTraining;
 import org.abchip.mimo.biz.model.party.MaritalStatus;
 
 /**
@@ -45,6 +47,7 @@ import org.abchip.mimo.biz.model.party.MaritalStatus;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getOtherLocal <em>Other Local</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getPassportExpireDate <em>Passport Expire Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getPassportNumber <em>Passport Number</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getPersonTrainings <em>Person Trainings</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getPersonalTitle <em>Personal Title</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getResidenceStatusEnum <em>Residence Status Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Person#getSalutation <em>Salutation</em>}</li>
@@ -657,6 +660,19 @@ public interface Person extends Party {
 	 * @generated
 	 */
 	void setPassportNumber(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Person Trainings</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.humanres.ability.PersonTraining}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Person Trainings</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPerson_PersonTrainings()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<PersonTraining> getPersonTrainings();
 
 	/**
 	 * Returns the value of the '<em><b>Personal Title</b></em>' attribute.

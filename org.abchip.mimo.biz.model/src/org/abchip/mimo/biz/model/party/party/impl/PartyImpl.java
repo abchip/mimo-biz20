@@ -18,7 +18,6 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.humanres.ability.PartyQual;
 import org.abchip.mimo.biz.model.humanres.ability.PartySkill;
 import org.abchip.mimo.biz.model.humanres.ability.PerformanceNote;
-import org.abchip.mimo.biz.model.humanres.ability.PersonTraining;
 import org.abchip.mimo.biz.model.humanres.employment.EmplLeave;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.contact.PartyContactMech;
@@ -88,7 +87,6 @@ import org.osgi.service.log.Logger;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartySkills <em>Party Skills</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyType <em>Party Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPerformanceNotes <em>Performance Notes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPersonTrainings <em>Person Trainings</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPreferredCurrencyUom <em>Preferred Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getSupplierProductFeatures <em>Supplier Product Features</em>}</li>
@@ -746,17 +744,6 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	@Override
 	public List<PerformanceNote> getPerformanceNotes() {
 		return (List<PerformanceNote>)eGet(PartyPackage.Literals.PARTY__PERFORMANCE_NOTES, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<PersonTraining> getPersonTrainings() {
-		return (List<PersonTraining>)eGet(PartyPackage.Literals.PARTY__PERSON_TRAININGS, true);
 	}
 
 	/**

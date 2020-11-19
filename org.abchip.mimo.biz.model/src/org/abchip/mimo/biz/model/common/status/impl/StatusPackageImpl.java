@@ -731,18 +731,8 @@ public class StatusPackageImpl extends EPackageImpl implements StatusPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getStatusItem_ShipmentStatuss() {
-		return (EReference)statusItemEClass.getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EAttribute getStatusItem_StatusCode() {
-		return (EAttribute)statusItemEClass.getEStructuralFeatures().get(5);
+		return (EAttribute)statusItemEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -752,7 +742,7 @@ public class StatusPackageImpl extends EPackageImpl implements StatusPackage {
 	 */
 	@Override
 	public EReference getStatusItem_StatusType() {
-		return (EReference)statusItemEClass.getEStructuralFeatures().get(6);
+		return (EReference)statusItemEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -889,7 +879,6 @@ public class StatusPackageImpl extends EPackageImpl implements StatusPackage {
 		createEAttribute(statusItemEClass, STATUS_ITEM__DESCRIPTION);
 		createEReference(statusItemEClass, STATUS_ITEM__MAIN_STATUS_VALID_CHANGES);
 		createEAttribute(statusItemEClass, STATUS_ITEM__SEQUENCE_ID);
-		createEReference(statusItemEClass, STATUS_ITEM__SHIPMENT_STATUSS);
 		createEAttribute(statusItemEClass, STATUS_ITEM__STATUS_CODE);
 		createEReference(statusItemEClass, STATUS_ITEM__STATUS_TYPE);
 
@@ -931,7 +920,6 @@ public class StatusPackageImpl extends EPackageImpl implements StatusPackage {
 
 		// Obtain other dependent packages
 		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
-		Shipment_Package theShipment_Package = (Shipment_Package)EPackage.Registry.INSTANCE.getEPackage(Shipment_Package.eNS_URI);
 
 		// Create type parameters
 
@@ -959,7 +947,6 @@ public class StatusPackageImpl extends EPackageImpl implements StatusPackage {
 		initEAttribute(getStatusItem_Description(), ecorePackage.getEString(), "description", null, 0, 1, StatusItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getStatusItem_MainStatusValidChanges(), this.getStatusValidChange(), null, "mainStatusValidChanges", null, 0, -1, StatusItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getStatusItem_SequenceId(), ecorePackage.getEString(), "sequenceId", null, 0, 1, StatusItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getStatusItem_ShipmentStatuss(), theShipment_Package.getShipmentStatus(), null, "shipmentStatuss", null, 0, -1, StatusItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getStatusItem_StatusCode(), ecorePackage.getEString(), "statusCode", null, 0, 1, StatusItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getStatusItem_StatusType(), this.getStatusType(), null, "statusType", null, 0, 1, StatusItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getStatusItem_StatusType().getEKeys().add(this.getStatusType_StatusTypeId());

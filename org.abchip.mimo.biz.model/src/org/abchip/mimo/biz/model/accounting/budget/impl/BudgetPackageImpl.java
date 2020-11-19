@@ -843,7 +843,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getBudget_BudgetStatuss() {
+	public EReference getBudget_BudgetStatuses() {
 		return (EReference)budgetEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -1761,7 +1761,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		createEReference(budgetEClass, BUDGET__BUDGET_ATTRIBUTES);
 		createEReference(budgetEClass, BUDGET__BUDGET_ITEMS);
 		createEReference(budgetEClass, BUDGET__BUDGET_REVISIONS);
-		createEReference(budgetEClass, BUDGET__BUDGET_STATUSS);
+		createEReference(budgetEClass, BUDGET__BUDGET_STATUSES);
 		createEReference(budgetEClass, BUDGET__BUDGET_TYPE);
 		createEAttribute(budgetEClass, BUDGET__COMMENTS);
 		createEReference(budgetEClass, BUDGET__CUSTOM_TIME_PERIOD);
@@ -1968,7 +1968,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		initEReference(getBudget_BudgetAttributes(), this.getBudgetAttribute(), null, "budgetAttributes", null, 0, -1, Budget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getBudget_BudgetItems(), this.getBudgetItem(), null, "budgetItems", null, 0, -1, Budget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getBudget_BudgetRevisions(), this.getBudgetRevision(), null, "budgetRevisions", null, 0, -1, Budget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEReference(getBudget_BudgetStatuss(), this.getBudgetStatus(), null, "budgetStatuss", null, 0, -1, Budget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEReference(getBudget_BudgetStatuses(), this.getBudgetStatus(), null, "budgetStatuses", null, 0, -1, Budget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getBudget_BudgetType(), this.getBudgetType(), null, "budgetType", null, 0, 1, Budget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getBudget_BudgetType().getEKeys().add(this.getBudgetType_BudgetTypeId());
 		initEAttribute(getBudget_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, Budget.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

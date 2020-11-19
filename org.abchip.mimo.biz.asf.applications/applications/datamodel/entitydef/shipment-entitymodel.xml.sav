@@ -1440,12 +1440,12 @@ under the License.
     <entity entity-name="ShipmentStatus"
             package-name="org.apache.ofbiz.shipment.shipment"
             title="Shipment Status">
-      <field name="shipmentId" type="id"></field>            
       <field name="statusId" type="id"></field>
+      <field name="shipmentId" type="id"></field>
       <field name="statusDate" type="date-time"></field>
       <field name="changeByUserLoginId" type="id-vlong"/>
+      <prim-key field="statusId"/>
       <prim-key field="shipmentId"/>
-      <prim-key field="statusId"/>      
       <relation type="one" fk-name="SHPMNT_STTS_STTS" rel-entity-name="StatusItem">
         <key-map field-name="statusId"/>
       </relation>

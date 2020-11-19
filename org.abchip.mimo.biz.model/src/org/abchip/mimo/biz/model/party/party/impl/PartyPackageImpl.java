@@ -1340,7 +1340,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PersonTrainings() {
+	public EReference getParty_PreferredCurrencyUom() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(26);
 	}
 
@@ -1350,7 +1350,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PreferredCurrencyUom() {
+	public EReference getParty_Status() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(27);
 	}
 
@@ -1360,18 +1360,8 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_Status() {
-		return (EReference)partyEClass.getEStructuralFeatures().get(28);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EReference getParty_SupplierProductFeatures() {
-		return (EReference)partyEClass.getEStructuralFeatures().get(29);
+		return (EReference)partyEClass.getEStructuralFeatures().get(28);
 	}
 
 	/**
@@ -3060,8 +3050,18 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getPerson_PersonTrainings() {
+		return (EReference)personEClass.getEStructuralFeatures().get(23);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getPerson_PersonalTitle() {
-		return (EAttribute)personEClass.getEStructuralFeatures().get(23);
+		return (EAttribute)personEClass.getEStructuralFeatures().get(24);
 	}
 
 	/**
@@ -3071,7 +3071,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 */
 	@Override
 	public EReference getPerson_ResidenceStatusEnum() {
-		return (EReference)personEClass.getEStructuralFeatures().get(24);
+		return (EReference)personEClass.getEStructuralFeatures().get(25);
 	}
 
 	/**
@@ -3081,16 +3081,6 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 */
 	@Override
 	public EAttribute getPerson_Salutation() {
-		return (EAttribute)personEClass.getEStructuralFeatures().get(25);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getPerson_SocialSecurityNumber() {
 		return (EAttribute)personEClass.getEStructuralFeatures().get(26);
 	}
 
@@ -3100,7 +3090,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getPerson_Suffix() {
+	public EAttribute getPerson_SocialSecurityNumber() {
 		return (EAttribute)personEClass.getEStructuralFeatures().get(27);
 	}
 
@@ -3110,7 +3100,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getPerson_TotalYearsWorkExperience() {
+	public EAttribute getPerson_Suffix() {
 		return (EAttribute)personEClass.getEStructuralFeatures().get(28);
 	}
 
@@ -3120,7 +3110,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getPerson_Weight() {
+	public EAttribute getPerson_TotalYearsWorkExperience() {
 		return (EAttribute)personEClass.getEStructuralFeatures().get(29);
 	}
 
@@ -3130,8 +3120,18 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getPerson_YearsWithEmployer() {
+	public EAttribute getPerson_Weight() {
 		return (EAttribute)personEClass.getEStructuralFeatures().get(30);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPerson_YearsWithEmployer() {
+		return (EAttribute)personEClass.getEStructuralFeatures().get(31);
 	}
 
 	/**
@@ -3476,7 +3476,6 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		createEReference(partyEClass, PARTY__PARTY_SKILLS);
 		createEReference(partyEClass, PARTY__PARTY_TYPE);
 		createEReference(partyEClass, PARTY__PERFORMANCE_NOTES);
-		createEReference(partyEClass, PARTY__PERSON_TRAININGS);
 		createEReference(partyEClass, PARTY__PREFERRED_CURRENCY_UOM);
 		createEReference(partyEClass, PARTY__STATUS);
 		createEReference(partyEClass, PARTY__SUPPLIER_PRODUCT_FEATURES);
@@ -3674,6 +3673,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		createEAttribute(personEClass, PERSON__OTHER_LOCAL);
 		createEAttribute(personEClass, PERSON__PASSPORT_EXPIRE_DATE);
 		createEAttribute(personEClass, PERSON__PASSPORT_NUMBER);
+		createEReference(personEClass, PERSON__PERSON_TRAININGS);
 		createEAttribute(personEClass, PERSON__PERSONAL_TITLE);
 		createEReference(personEClass, PERSON__RESIDENCE_STATUS_ENUM);
 		createEAttribute(personEClass, PERSON__SALUTATION);
@@ -3920,7 +3920,6 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		initEReference(getParty_PartyType(), this.getPartyType(), null, "partyType", null, 0, 1, Party.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getParty_PartyType().getEKeys().add(this.getPartyType_PartyTypeId());
 		initEReference(getParty_PerformanceNotes(), theAbilityPackage.getPerformanceNote(), null, "performanceNotes", null, 0, -1, Party.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEReference(getParty_PersonTrainings(), theAbilityPackage.getPersonTraining(), null, "personTrainings", null, 0, -1, Party.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getParty_PreferredCurrencyUom(), theUomPackage.getUom(), null, "preferredCurrencyUom", null, 0, 1, Party.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getParty_PreferredCurrencyUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEReference(getParty_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, Party.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -4179,6 +4178,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		initEAttribute(getPerson_OtherLocal(), ecorePackage.getEString(), "otherLocal", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerson_PassportExpireDate(), ecorePackage.getEDate(), "passportExpireDate", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerson_PassportNumber(), ecorePackage.getEString(), "passportNumber", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPerson_PersonTrainings(), theAbilityPackage.getPersonTraining(), null, "personTrainings", null, 0, -1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerson_PersonalTitle(), ecorePackage.getEString(), "personalTitle", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPerson_ResidenceStatusEnum(), theEnumPackage.getEnumeration(), null, "residenceStatusEnum", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getPerson_ResidenceStatusEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
@@ -4885,12 +4885,6 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 			   "type", "fromDate"
 		   });
 		addAnnotation
-		  (getParty_PersonTrainings(),
-		   source,
-		   new String[] {
-			   "type", "fromDate"
-		   });
-		addAnnotation
 		  (getPartyAttribute_Party(),
 		   source,
 		   new String[] {
@@ -5165,6 +5159,12 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		   source,
 		   new String[] {
 			   "encrypt", "TRUE"
+		   });
+		addAnnotation
+		  (getPerson_PersonTrainings(),
+		   source,
+		   new String[] {
+			   "type", "fromDate"
 		   });
 		addAnnotation
 		  (getPerson_SocialSecurityNumber(),

@@ -9,7 +9,6 @@ package org.abchip.mimo.biz.model.humanres.ability;
 
 import java.util.Date;
 import org.abchip.mimo.biz.model.humanres.trainings.TrainingRequest;
-import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.Person;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
 import org.abchip.mimo.entity.EntityInfo;
@@ -45,13 +44,13 @@ public interface PersonTraining extends EntityTyped<TrainingClassType>, EntityIn
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Party</em>' reference.
-	 * @see #setParty(Party)
+	 * @see #setParty(Person)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPersonTraining_Party()
 	 * @model keys="partyId" required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
-	Party getParty();
+	Person getParty();
 
 	/**
 	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.ability.PersonTraining#getParty <em>Party</em>}' reference.
@@ -61,7 +60,7 @@ public interface PersonTraining extends EntityTyped<TrainingClassType>, EntityIn
 	 * @see #getParty()
 	 * @generated
 	 */
-	void setParty(Party value);
+	void setParty(Person value);
 
 	/**
 	 * Returns the value of the '<em><b>Training Class Type</b></em>' reference.

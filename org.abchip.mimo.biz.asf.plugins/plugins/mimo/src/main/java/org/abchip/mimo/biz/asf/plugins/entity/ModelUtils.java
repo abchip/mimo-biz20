@@ -316,6 +316,8 @@ public class ModelUtils {
 			word = word.substring(0, word.length() - 1) + "ies";
 		else if (word.endsWith("ss"))
 			word = word.substring(0, word.length()) + "es";
+		else if (word.endsWith("us"))
+			word = word.substring(0, word.length()) + "es";		
 		else
 			word = word.substring(0, word.length()) + "s";
 
@@ -327,6 +329,8 @@ public class ModelUtils {
 			word = word.substring(0, word.length() - 3) + "y";
 		else if (word.endsWith("sses"))
 			word = word.substring(0, word.length() - 2);
+		else if (word.endsWith("uses"))
+			word = word.substring(0, word.length() - 2);		
 		else if (word.endsWith("s"))
 			word = word.substring(0, word.length() - 1);
 

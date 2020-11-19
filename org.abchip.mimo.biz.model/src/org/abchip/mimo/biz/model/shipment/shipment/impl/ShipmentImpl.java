@@ -25,6 +25,7 @@ import org.abchip.mimo.biz.model.shipment.shipment.ShipmentContactMech;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentItem;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentPackage;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentRouteSegment;
+import org.abchip.mimo.biz.model.shipment.shipment.ShipmentStatus;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentType;
 import org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
@@ -78,6 +79,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getShipmentItems <em>Shipment Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getShipmentPackages <em>Shipment Packages</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getShipmentRouteSegments <em>Shipment Route Segments</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getShipmentStatuses <em>Shipment Statuses</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getShipmentType <em>Shipment Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl#getStatus <em>Status</em>}</li>
  * </ul>
@@ -788,6 +790,17 @@ public class ShipmentImpl extends EntityTypedImpl<ShipmentType> implements Shipm
 	@Override
 	public List<ShipmentRouteSegment> getShipmentRouteSegments() {
 		return (List<ShipmentRouteSegment>)eGet(Shipment_Package.Literals.SHIPMENT__SHIPMENT_ROUTE_SEGMENTS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ShipmentStatus> getShipmentStatuses() {
+		return (List<ShipmentStatus>)eGet(Shipment_Package.Literals.SHIPMENT__SHIPMENT_STATUSES, true);
 	}
 
 	/**

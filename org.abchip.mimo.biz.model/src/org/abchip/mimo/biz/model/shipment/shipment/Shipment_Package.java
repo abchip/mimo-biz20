@@ -751,13 +751,22 @@ public interface Shipment_Package extends EPackage {
 	int SHIPMENT__SHIPMENT_ROUTE_SEGMENTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 36;
 
 	/**
+	 * The feature id for the '<em><b>Shipment Statuses</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHIPMENT__SHIPMENT_STATUSES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 37;
+
+	/**
 	 * The feature id for the '<em><b>Shipment Type</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__SHIPMENT_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 37;
+	int SHIPMENT__SHIPMENT_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 38;
 
 	/**
 	 * The feature id for the '<em><b>Status</b></em>' reference.
@@ -766,7 +775,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__STATUS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 38;
+	int SHIPMENT__STATUS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 39;
 
 	/**
 	 * The number of structural features of the '<em>Shipment</em>' class.
@@ -775,7 +784,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 39;
+	int SHIPMENT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 40;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentAttributeImpl <em>Shipment Attribute</em>}' class.
@@ -4864,6 +4873,17 @@ public interface Shipment_Package extends EPackage {
 	EReference getShipment_ShipmentRouteSegments();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getShipmentStatuses <em>Shipment Statuses</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Shipment Statuses</em>'.
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment#getShipmentStatuses()
+	 * @see #getShipment()
+	 * @generated
+	 */
+	EReference getShipment_ShipmentStatuses();
+
+	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getShipmentType <em>Shipment Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -7953,6 +7973,14 @@ public interface Shipment_Package extends EPackage {
 		 * @generated
 		 */
 		EReference SHIPMENT__SHIPMENT_ROUTE_SEGMENTS = eINSTANCE.getShipment_ShipmentRouteSegments();
+
+		/**
+		 * The meta object literal for the '<em><b>Shipment Statuses</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SHIPMENT__SHIPMENT_STATUSES = eINSTANCE.getShipment_ShipmentStatuses();
 
 		/**
 		 * The meta object literal for the '<em><b>Shipment Type</b></em>' reference feature.

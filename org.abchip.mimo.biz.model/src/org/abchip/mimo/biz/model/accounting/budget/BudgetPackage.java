@@ -144,13 +144,13 @@ public interface BudgetPackage extends EPackage {
 	int BUDGET__BUDGET_REVISIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Budget Statuss</b></em>' reference list.
+	 * The feature id for the '<em><b>Budget Statuses</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET__BUDGET_STATUSS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int BUDGET__BUDGET_STATUSES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Budget Type</b></em>' reference.
@@ -1772,15 +1772,15 @@ public interface BudgetPackage extends EPackage {
 	EReference getBudget_BudgetRevisions();
 
 	/**
-	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getBudgetStatuss <em>Budget Statuss</em>}'.
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getBudgetStatuses <em>Budget Statuses</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Budget Statuss</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.budget.Budget#getBudgetStatuss()
+	 * @return the meta object for the reference list '<em>Budget Statuses</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.budget.Budget#getBudgetStatuses()
 	 * @see #getBudget()
 	 * @generated
 	 */
-	EReference getBudget_BudgetStatuss();
+	EReference getBudget_BudgetStatuses();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getBudgetType <em>Budget Type</em>}'.
@@ -2799,12 +2799,12 @@ public interface BudgetPackage extends EPackage {
 		EReference BUDGET__BUDGET_REVISIONS = eINSTANCE.getBudget_BudgetRevisions();
 
 		/**
-		 * The meta object literal for the '<em><b>Budget Statuss</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Budget Statuses</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference BUDGET__BUDGET_STATUSS = eINSTANCE.getBudget_BudgetStatuss();
+		EReference BUDGET__BUDGET_STATUSES = eINSTANCE.getBudget_BudgetStatuses();
 
 		/**
 		 * The meta object literal for the '<em><b>Budget Type</b></em>' reference feature.

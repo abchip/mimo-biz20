@@ -12,7 +12,6 @@ import org.abchip.mimo.biz.model.humanres.ability.AbilityPackage;
 import org.abchip.mimo.biz.model.humanres.ability.PersonTraining;
 import org.abchip.mimo.biz.model.humanres.ability.TrainingClassType;
 import org.abchip.mimo.biz.model.humanres.trainings.TrainingRequest;
-import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.Person;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
 import org.abchip.mimo.entity.EntityInfo;
@@ -162,8 +161,8 @@ public class PersonTrainingImpl extends EntityTypedImpl<TrainingClassType> imple
 	 * @generated
 	 */
 	@Override
-	public Party getParty() {
-		return (Party)eGet(AbilityPackage.Literals.PERSON_TRAINING__PARTY, true);
+	public Person getParty() {
+		return (Person)eGet(AbilityPackage.Literals.PERSON_TRAINING__PARTY, true);
 	}
 
 	/**
@@ -172,7 +171,7 @@ public class PersonTrainingImpl extends EntityTypedImpl<TrainingClassType> imple
 	 * @generated
 	 */
 	@Override
-	public void setParty(Party newParty) {
+	public void setParty(Person newParty) {
 		eSet(AbilityPackage.Literals.PERSON_TRAINING__PARTY, newParty);
 	}
 

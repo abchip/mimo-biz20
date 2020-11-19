@@ -561,22 +561,13 @@ public interface PartyPackage extends EPackage {
 	int PARTY__PERFORMANCE_NOTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
 
 	/**
-	 * The feature id for the '<em><b>Person Trainings</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARTY__PERSON_TRAININGS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
-
-	/**
 	 * The feature id for the '<em><b>Preferred Currency Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PREFERRED_CURRENCY_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
+	int PARTY__PREFERRED_CURRENCY_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Status</b></em>' reference.
@@ -585,7 +576,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__STATUS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 32;
+	int PARTY__STATUS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Supplier Product Features</b></em>' reference list.
@@ -594,7 +585,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__SUPPLIER_PRODUCT_FEATURES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 33;
+	int PARTY__SUPPLIER_PRODUCT_FEATURES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 32;
 
 	/**
 	 * The number of structural features of the '<em>Party</em>' class.
@@ -603,7 +594,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 34;
+	int PARTY_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 33;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyAttributeImpl <em>Attribute</em>}' class.
@@ -1748,15 +1739,6 @@ public interface PartyPackage extends EPackage {
 	 * @ordered
 	 */
 	int PARTY_GROUP__PERFORMANCE_NOTES = PARTY__PERFORMANCE_NOTES;
-
-	/**
-	 * The feature id for the '<em><b>Person Trainings</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARTY_GROUP__PERSON_TRAININGS = PARTY__PERSON_TRAININGS;
 
 	/**
 	 * The feature id for the '<em><b>Preferred Currency Uom</b></em>' reference.
@@ -3656,15 +3638,6 @@ public interface PartyPackage extends EPackage {
 	int PERSON__PERFORMANCE_NOTES = PARTY__PERFORMANCE_NOTES;
 
 	/**
-	 * The feature id for the '<em><b>Person Trainings</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PERSON__PERSON_TRAININGS = PARTY__PERSON_TRAININGS;
-
-	/**
 	 * The feature id for the '<em><b>Preferred Currency Uom</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3899,13 +3872,22 @@ public interface PartyPackage extends EPackage {
 	int PERSON__PASSPORT_NUMBER = PARTY_FEATURE_COUNT + 22;
 
 	/**
+	 * The feature id for the '<em><b>Person Trainings</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__PERSON_TRAININGS = PARTY_FEATURE_COUNT + 23;
+
+	/**
 	 * The feature id for the '<em><b>Personal Title</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON__PERSONAL_TITLE = PARTY_FEATURE_COUNT + 23;
+	int PERSON__PERSONAL_TITLE = PARTY_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Residence Status Enum</b></em>' reference.
@@ -3914,7 +3896,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON__RESIDENCE_STATUS_ENUM = PARTY_FEATURE_COUNT + 24;
+	int PERSON__RESIDENCE_STATUS_ENUM = PARTY_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Salutation</b></em>' attribute.
@@ -3923,7 +3905,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON__SALUTATION = PARTY_FEATURE_COUNT + 25;
+	int PERSON__SALUTATION = PARTY_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Social Security Number</b></em>' attribute.
@@ -3932,7 +3914,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON__SOCIAL_SECURITY_NUMBER = PARTY_FEATURE_COUNT + 26;
+	int PERSON__SOCIAL_SECURITY_NUMBER = PARTY_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Suffix</b></em>' attribute.
@@ -3941,7 +3923,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON__SUFFIX = PARTY_FEATURE_COUNT + 27;
+	int PERSON__SUFFIX = PARTY_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Total Years Work Experience</b></em>' attribute.
@@ -3950,7 +3932,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON__TOTAL_YEARS_WORK_EXPERIENCE = PARTY_FEATURE_COUNT + 28;
+	int PERSON__TOTAL_YEARS_WORK_EXPERIENCE = PARTY_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Weight</b></em>' attribute.
@@ -3959,7 +3941,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON__WEIGHT = PARTY_FEATURE_COUNT + 29;
+	int PERSON__WEIGHT = PARTY_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Years With Employer</b></em>' attribute.
@@ -3968,7 +3950,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON__YEARS_WITH_EMPLOYER = PARTY_FEATURE_COUNT + 30;
+	int PERSON__YEARS_WITH_EMPLOYER = PARTY_FEATURE_COUNT + 31;
 
 	/**
 	 * The number of structural features of the '<em>Person</em>' class.
@@ -3977,7 +3959,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_FEATURE_COUNT = PARTY_FEATURE_COUNT + 31;
+	int PERSON_FEATURE_COUNT = PARTY_FEATURE_COUNT + 32;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PriorityTypeImpl <em>Priority Type</em>}' class.
@@ -4900,17 +4882,6 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getParty_PerformanceNotes();
-
-	/**
-	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.party.party.Party#getPersonTrainings <em>Person Trainings</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Person Trainings</em>'.
-	 * @see org.abchip.mimo.biz.model.party.party.Party#getPersonTrainings()
-	 * @see #getParty()
-	 * @generated
-	 */
-	EReference getParty_PersonTrainings();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.party.Party#getPreferredCurrencyUom <em>Preferred Currency Uom</em>}'.
@@ -6768,6 +6739,17 @@ public interface PartyPackage extends EPackage {
 	EAttribute getPerson_PassportNumber();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.party.party.Person#getPersonTrainings <em>Person Trainings</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Person Trainings</em>'.
+	 * @see org.abchip.mimo.biz.model.party.party.Person#getPersonTrainings()
+	 * @see #getPerson()
+	 * @generated
+	 */
+	EReference getPerson_PersonTrainings();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.Person#getPersonalTitle <em>Personal Title</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -7502,14 +7484,6 @@ public interface PartyPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PARTY__PERFORMANCE_NOTES = eINSTANCE.getParty_PerformanceNotes();
-
-		/**
-		 * The meta object literal for the '<em><b>Person Trainings</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PARTY__PERSON_TRAININGS = eINSTANCE.getParty_PersonTrainings();
 
 		/**
 		 * The meta object literal for the '<em><b>Preferred Currency Uom</b></em>' reference feature.
@@ -8930,6 +8904,14 @@ public interface PartyPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PERSON__PASSPORT_NUMBER = eINSTANCE.getPerson_PassportNumber();
+
+		/**
+		 * The meta object literal for the '<em><b>Person Trainings</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PERSON__PERSON_TRAININGS = eINSTANCE.getPerson_PersonTrainings();
 
 		/**
 		 * The meta object literal for the '<em><b>Personal Title</b></em>' attribute feature.

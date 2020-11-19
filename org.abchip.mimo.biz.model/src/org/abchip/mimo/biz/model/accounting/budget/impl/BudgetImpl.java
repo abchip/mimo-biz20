@@ -38,7 +38,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetImpl#getBudgetAttributes <em>Budget Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetImpl#getBudgetItems <em>Budget Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetImpl#getBudgetRevisions <em>Budget Revisions</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetImpl#getBudgetStatuss <em>Budget Statuss</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetImpl#getBudgetStatuses <em>Budget Statuses</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetImpl#getBudgetType <em>Budget Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetImpl#getCustomTimePeriod <em>Custom Time Period</em>}</li>
@@ -294,8 +294,8 @@ public class BudgetImpl extends EntityTypedImpl<BudgetType> implements Budget {
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public List<BudgetStatus> getBudgetStatuss() {
-		return (List<BudgetStatus>)eGet(BudgetPackage.Literals.BUDGET__BUDGET_STATUSS, true);
+	public List<BudgetStatus> getBudgetStatuses() {
+		return (List<BudgetStatus>)eGet(BudgetPackage.Literals.BUDGET__BUDGET_STATUSES, true);
 	}
 
 	/**

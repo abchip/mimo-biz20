@@ -25,7 +25,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getBudgetAttributes <em>Budget Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getBudgetItems <em>Budget Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getBudgetRevisions <em>Budget Revisions</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getBudgetStatuss <em>Budget Statuss</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getBudgetStatuses <em>Budget Statuses</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getBudgetType <em>Budget Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.Budget#getCustomTimePeriod <em>Custom Time Period</em>}</li>
@@ -160,20 +160,16 @@ public interface Budget extends EntityTyped<BudgetType>, EntityInfo {
 	List<BudgetRevision> getBudgetRevisions();
 
 	/**
-	 * Returns the value of the '<em><b>Budget Statuss</b></em>' reference list.
+	 * Returns the value of the '<em><b>Budget Statuses</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.budget.BudgetStatus}.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Budget Statuss</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Budget Statuss</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudget_BudgetStatuss()
+	 * @return the value of the '<em>Budget Statuses</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudget_BudgetStatuses()
 	 * @model derived="true"
 	 * @generated
 	 */
-	List<BudgetStatus> getBudgetStatuss();
+	List<BudgetStatus> getBudgetStatuses();
 
 	/**
 	 * Returns the value of the '<em><b>Budget Type</b></em>' reference.

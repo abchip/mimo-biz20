@@ -18,7 +18,6 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.humanres.ability.PartyQual;
 import org.abchip.mimo.biz.model.humanres.ability.PartySkill;
 import org.abchip.mimo.biz.model.humanres.ability.PerformanceNote;
-import org.abchip.mimo.biz.model.humanres.ability.PersonTraining;
 import org.abchip.mimo.biz.model.humanres.employment.EmplLeave;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.contact.PartyContactMech;
@@ -64,7 +63,6 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartySkills <em>Party Skills</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyType <em>Party Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPerformanceNotes <em>Performance Notes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPersonTrainings <em>Person Trainings</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPreferredCurrencyUom <em>Preferred Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getSupplierProductFeatures <em>Supplier Product Features</em>}</li>
@@ -581,19 +579,6 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * @generated
 	 */
 	List<PerformanceNote> getPerformanceNotes();
-
-	/**
-	 * Returns the value of the '<em><b>Person Trainings</b></em>' reference list.
-	 * The list contents are of type {@link org.abchip.mimo.biz.model.humanres.ability.PersonTraining}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Person Trainings</em>' reference list.
-	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PersonTrainings()
-	 * @model derived="true"
-	 *        annotation="mimo-ent-slot type='fromDate'"
-	 * @generated
-	 */
-	List<PersonTraining> getPersonTrainings();
 
 	/**
 	 * Returns the value of the '<em><b>Preferred Currency Uom</b></em>' reference.

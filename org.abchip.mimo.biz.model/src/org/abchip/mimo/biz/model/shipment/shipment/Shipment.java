@@ -66,6 +66,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getShipmentItems <em>Shipment Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getShipmentPackages <em>Shipment Packages</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getShipmentRouteSegments <em>Shipment Route Segments</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getShipmentStatuses <em>Shipment Statuses</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getShipmentType <em>Shipment Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.Shipment#getStatus <em>Status</em>}</li>
  * </ul>
@@ -808,6 +809,18 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * @generated
 	 */
 	List<ShipmentRouteSegment> getShipmentRouteSegments();
+
+	/**
+	 * Returns the value of the '<em><b>Shipment Statuses</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentStatus}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Shipment Statuses</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_ShipmentStatuses()
+	 * @model derived="true"
+	 * @generated
+	 */
+	List<ShipmentStatus> getShipmentStatuses();
 
 	/**
 	 * Returns the value of the '<em><b>Shipment Type</b></em>' reference.

@@ -13,7 +13,6 @@ import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.status.StatusPackage;
 import org.abchip.mimo.biz.model.common.status.StatusType;
 import org.abchip.mimo.biz.model.common.status.StatusValidChange;
-import org.abchip.mimo.biz.model.shipment.shipment.ShipmentStatus;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
 import org.abchip.mimo.entity.impl.EntityTypedImpl;
@@ -35,7 +34,6 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusItemImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusItemImpl#getMainStatusValidChanges <em>Main Status Valid Changes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusItemImpl#getSequenceId <em>Sequence Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusItemImpl#getShipmentStatuss <em>Shipment Statuss</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusItemImpl#getStatusCode <em>Status Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.status.impl.StatusItemImpl#getStatusType <em>Status Type</em>}</li>
  * </ul>
@@ -201,17 +199,6 @@ public class StatusItemImpl extends EntityTypedImpl<StatusType> implements Statu
 	@Override
 	public void setSequenceId(String newSequenceId) {
 		eSet(StatusPackage.Literals.STATUS_ITEM__SEQUENCE_ID, newSequenceId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<ShipmentStatus> getShipmentStatuss() {
-		return (List<ShipmentStatus>)eGet(StatusPackage.Literals.STATUS_ITEM__SHIPMENT_STATUSS, true);
 	}
 
 	/**

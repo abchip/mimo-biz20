@@ -144,22 +144,13 @@ public interface StatusPackage extends EPackage {
 	int STATUS_ITEM__SEQUENCE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
-	 * The feature id for the '<em><b>Shipment Statuss</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STATUS_ITEM__SHIPMENT_STATUSS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
-
-	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_ITEM__STATUS_CODE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int STATUS_ITEM__STATUS_CODE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Status Type</b></em>' reference.
@@ -168,7 +159,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_ITEM__STATUS_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int STATUS_ITEM__STATUS_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Item</em>' class.
@@ -177,7 +168,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_ITEM_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
+	int STATUS_ITEM_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.status.impl.StatusTypeImpl <em>Type</em>}' class.
@@ -426,17 +417,6 @@ public interface StatusPackage extends EPackage {
 	EAttribute getStatusItem_SequenceId();
 
 	/**
-	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.common.status.StatusItem#getShipmentStatuss <em>Shipment Statuss</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Shipment Statuss</em>'.
-	 * @see org.abchip.mimo.biz.model.common.status.StatusItem#getShipmentStatuss()
-	 * @see #getStatusItem()
-	 * @generated
-	 */
-	EReference getStatusItem_ShipmentStatuss();
-
-	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.status.StatusItem#getStatusCode <em>Status Code</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -629,14 +609,6 @@ public interface StatusPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute STATUS_ITEM__SEQUENCE_ID = eINSTANCE.getStatusItem_SequenceId();
-
-		/**
-		 * The meta object literal for the '<em><b>Shipment Statuss</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference STATUS_ITEM__SHIPMENT_STATUSS = eINSTANCE.getStatusItem_ShipmentStatuss();
 
 		/**
 		 * The meta object literal for the '<em><b>Status Code</b></em>' attribute feature.

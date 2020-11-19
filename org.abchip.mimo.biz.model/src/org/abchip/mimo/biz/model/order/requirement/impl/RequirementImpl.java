@@ -55,7 +55,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getRequiredByDate <em>Required By Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getRequirementAttributes <em>Requirement Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getRequirementStartDate <em>Requirement Start Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getRequirementStatuss <em>Requirement Statuss</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getRequirementStatuses <em>Requirement Statuses</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getRequirementType <em>Requirement Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getUseCase <em>Use Case</em>}</li>
@@ -513,8 +513,8 @@ public class RequirementImpl extends EntityTypedImpl<RequirementType> implements
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public List<RequirementStatus> getRequirementStatuss() {
-		return (List<RequirementStatus>)eGet(RequirementPackage.Literals.REQUIREMENT__REQUIREMENT_STATUSS, true);
+	public List<RequirementStatus> getRequirementStatuses() {
+		return (List<RequirementStatus>)eGet(RequirementPackage.Literals.REQUIREMENT__REQUIREMENT_STATUSES, true);
 	}
 
 	/**
