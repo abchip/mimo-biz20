@@ -62,7 +62,7 @@ public interface ProductMaintType extends EntityType<ProductMaint>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(ProductMaintType)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductMaintType_ParentType()
-	 * @model keys="productMaintTypeId"
+	 * @model
 	 * @generated
 	 */
 	ProductMaintType getParentType();

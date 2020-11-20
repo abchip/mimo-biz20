@@ -92,7 +92,7 @@ public interface FacilityGroup extends EntityTyped<FacilityGroupType>, EntityInf
 	 * @return the value of the '<em>Facility Group Type</em>' reference.
 	 * @see #setFacilityGroupType(FacilityGroupType)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroup_FacilityGroupType()
-	 * @model keys="facilityGroupTypeId"
+	 * @model
 	 * @generated
 	 */
 	FacilityGroupType getFacilityGroupType();
@@ -114,7 +114,7 @@ public interface FacilityGroup extends EntityTyped<FacilityGroupType>, EntityInf
 	 * @return the value of the '<em>Primary Parent Group</em>' reference.
 	 * @see #setPrimaryParentGroup(FacilityGroup)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroup_PrimaryParentGroup()
-	 * @model keys="facilityGroupId"
+	 * @model
 	 * @generated
 	 */
 	FacilityGroup getPrimaryParentGroup();
@@ -164,7 +164,7 @@ public interface FacilityGroup extends EntityTyped<FacilityGroupType>, EntityInf
 	 * @return the value of the '<em>Current Facility Group Rollups</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroup_CurrentFacilityGroupRollups()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<FacilityGroupRollup> getCurrentFacilityGroupRollups();

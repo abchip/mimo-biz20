@@ -39,7 +39,7 @@ public interface ContactMechLink extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Contact Mech Id From</em>' reference.
 	 * @see #setContactMechIdFrom(ContactMech)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMechLink_ContactMechIdFrom()
-	 * @model keys="contactMechId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -66,7 +66,7 @@ public interface ContactMechLink extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Contact Mech Id To</em>' reference.
 	 * @see #setContactMechIdTo(ContactMech)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMechLink_ContactMechIdTo()
-	 * @model keys="contactMechId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

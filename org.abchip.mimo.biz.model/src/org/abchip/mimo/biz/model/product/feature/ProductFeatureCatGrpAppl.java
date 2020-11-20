@@ -39,7 +39,7 @@ public interface ProductFeatureCatGrpAppl extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Product Category</em>' reference.
 	 * @see #setProductCategory(ProductCategory)
 	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureCatGrpAppl_ProductCategory()
-	 * @model keys="productCategoryId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface ProductFeatureCatGrpAppl extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Product Feature Group</em>' reference.
 	 * @see #setProductFeatureGroup(ProductFeatureGroup)
 	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureCatGrpAppl_ProductFeatureGroup()
-	 * @model keys="productFeatureGroupId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -38,7 +38,7 @@ public interface ShipmentItemBilling extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Shipment</em>' reference.
 	 * @see #setShipment(Shipment)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentItemBilling_Shipment()
-	 * @model keys="shipmentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface ShipmentItemBilling extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Invoice</em>' reference.
 	 * @see #setInvoice(Invoice)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentItemBilling_Invoice()
-	 * @model keys="invoiceId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

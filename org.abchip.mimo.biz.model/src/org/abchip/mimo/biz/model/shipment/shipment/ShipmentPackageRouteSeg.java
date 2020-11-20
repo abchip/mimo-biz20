@@ -51,7 +51,7 @@ public interface ShipmentPackageRouteSeg extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Shipment</em>' reference.
 	 * @see #setShipment(Shipment)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentPackageRouteSeg_Shipment()
-	 * @model keys="shipmentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -126,7 +126,7 @@ public interface ShipmentPackageRouteSeg extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentPackageRouteSeg_CurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getCurrencyUom();

@@ -39,7 +39,7 @@ public interface ContainerGeoPoint extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Container</em>' reference.
 	 * @see #setContainer(Container)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getContainerGeoPoint_Container()
-	 * @model keys="containerId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface ContainerGeoPoint extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Geo Point</em>' reference.
 	 * @see #setGeoPoint(GeoPoint)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getContainerGeoPoint_GeoPoint()
-	 * @model keys="geoPointId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

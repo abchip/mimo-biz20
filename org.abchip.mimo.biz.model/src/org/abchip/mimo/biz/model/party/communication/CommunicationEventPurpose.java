@@ -36,7 +36,7 @@ public interface CommunicationEventPurpose extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Communication Event</em>' reference.
 	 * @see #setCommunicationEvent(CommunicationEvent)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventPurpose_CommunicationEvent()
-	 * @model keys="communicationEventId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface CommunicationEventPurpose extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Communication Event Prp Typ</em>' reference.
 	 * @see #setCommunicationEventPrpTyp(CommunicationEventPrpTyp)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventPurpose_CommunicationEventPrpTyp()
-	 * @model keys="communicationEventPrpTypId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

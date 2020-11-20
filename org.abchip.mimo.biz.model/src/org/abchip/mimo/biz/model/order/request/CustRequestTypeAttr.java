@@ -36,7 +36,7 @@ public interface CustRequestTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Cust Request Type</em>' reference.
 	 * @see #setCustRequestType(CustRequestType)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestTypeAttr_CustRequestType()
-	 * @model keys="custRequestTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

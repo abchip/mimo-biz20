@@ -36,7 +36,7 @@ public interface ProductFeatureDataResource extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Data Resource</em>' reference.
 	 * @see #setDataResource(DataResource)
 	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureDataResource_DataResource()
-	 * @model keys="dataResourceId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface ProductFeatureDataResource extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Product Feature</em>' reference.
 	 * @see #setProductFeature(ProductFeature)
 	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureDataResource_ProductFeature()
-	 * @model keys="productFeatureId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

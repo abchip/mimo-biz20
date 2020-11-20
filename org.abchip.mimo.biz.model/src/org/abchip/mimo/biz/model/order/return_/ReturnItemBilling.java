@@ -43,7 +43,7 @@ public interface ReturnItemBilling extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Return</em>' reference.
 	 * @see #setReturn(ReturnHeader)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemBilling_Return()
-	 * @model keys="returnId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -66,7 +66,7 @@ public interface ReturnItemBilling extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Invoice</em>' reference.
 	 * @see #setInvoice(Invoice)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemBilling_Invoice()
-	 * @model keys="invoiceId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -169,7 +169,7 @@ public interface ReturnItemBilling extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Shipment Receipt</em>' reference.
 	 * @see #setShipmentReceipt(ShipmentReceipt)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemBilling_ShipmentReceipt()
-	 * @model keys="receiptId"
+	 * @model
 	 * @generated
 	 */
 	ShipmentReceipt getShipmentReceipt();

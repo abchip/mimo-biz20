@@ -62,7 +62,7 @@ public interface ReturnItemType extends EntityType<ReturnItem>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(ReturnItemType)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemType_ParentType()
-	 * @model keys="returnItemTypeId"
+	 * @model
 	 * @generated
 	 */
 	ReturnItemType getParentType();

@@ -62,7 +62,7 @@ public interface PaymentGatewayConfig extends EntityTyped<PaymentGatewayConfigTy
 	 * @return the value of the '<em>Payment Gateway Config Type</em>' reference.
 	 * @see #setPaymentGatewayConfigType(PaymentGatewayConfigType)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayConfig_PaymentGatewayConfigType()
-	 * @model keys="paymentGatewayConfigTypeId"
+	 * @model
 	 * @generated
 	 */
 	PaymentGatewayConfigType getPaymentGatewayConfigType();

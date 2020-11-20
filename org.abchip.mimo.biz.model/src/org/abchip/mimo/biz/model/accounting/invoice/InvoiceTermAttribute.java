@@ -37,7 +37,7 @@ public interface InvoiceTermAttribute extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Invoice Term</em>' reference.
 	 * @see #setInvoiceTerm(InvoiceTerm)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceTermAttribute_InvoiceTerm()
-	 * @model keys="invoiceTermId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

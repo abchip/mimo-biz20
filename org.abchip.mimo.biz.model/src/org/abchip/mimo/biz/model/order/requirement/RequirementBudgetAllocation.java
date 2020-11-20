@@ -39,7 +39,7 @@ public interface RequirementBudgetAllocation extends EntityIdentifiable, EntityI
 	 * @return the value of the '<em>Budget</em>' reference.
 	 * @see #setBudget(Budget)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementBudgetAllocation_Budget()
-	 * @model keys="budgetId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface RequirementBudgetAllocation extends EntityIdentifiable, EntityI
 	 * @return the value of the '<em>Requirement</em>' reference.
 	 * @see #setRequirement(Requirement)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementBudgetAllocation_Requirement()
-	 * @model keys="requirementId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

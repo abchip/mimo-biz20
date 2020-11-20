@@ -65,7 +65,7 @@ public interface AccommodationMap extends EntityTyped<AccommodationMapType>, Ent
 	 * @return the value of the '<em>Accommodation Class</em>' reference.
 	 * @see #setAccommodationClass(AccommodationClass)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getAccommodationMap_AccommodationClass()
-	 * @model keys="accommodationClassId"
+	 * @model
 	 * @generated
 	 */
 	AccommodationClass getAccommodationClass();
@@ -87,7 +87,7 @@ public interface AccommodationMap extends EntityTyped<AccommodationMapType>, Ent
 	 * @return the value of the '<em>Accommodation Map Type</em>' reference.
 	 * @see #setAccommodationMapType(AccommodationMapType)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getAccommodationMap_AccommodationMapType()
-	 * @model keys="accommodationMapTypeId"
+	 * @model
 	 * @generated
 	 */
 	AccommodationMapType getAccommodationMapType();
@@ -109,7 +109,7 @@ public interface AccommodationMap extends EntityTyped<AccommodationMapType>, Ent
 	 * @return the value of the '<em>Fixed Asset</em>' reference.
 	 * @see #setFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getAccommodationMap_FixedAsset()
-	 * @model keys="fixedAssetId"
+	 * @model
 	 * @generated
 	 */
 	FixedAsset getFixedAsset();

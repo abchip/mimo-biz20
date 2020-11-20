@@ -39,7 +39,7 @@ public interface ProductGeo extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductGeo_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface ProductGeo extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Geo</em>' reference.
 	 * @see #setGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductGeo_Geo()
-	 * @model keys="geoId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -111,7 +111,7 @@ public interface ProductGeo extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Geo Enum</em>' reference.
 	 * @see #setProductGeoEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductGeo_ProductGeoEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getProductGeoEnum();

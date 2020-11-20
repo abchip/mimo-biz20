@@ -36,7 +36,7 @@ public interface BudgetTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Budget Type</em>' reference.
 	 * @see #setBudgetType(BudgetType)
 	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetTypeAttr_BudgetType()
-	 * @model keys="budgetTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

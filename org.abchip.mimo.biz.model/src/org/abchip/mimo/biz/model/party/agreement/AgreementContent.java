@@ -41,7 +41,7 @@ public interface AgreementContent extends EntityTyped<AgreementContentType>, Ent
 	 * @return the value of the '<em>Agreement</em>' reference.
 	 * @see #setAgreement(Agreement)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementContent_Agreement()
-	 * @model keys="agreementId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface AgreementContent extends EntityTyped<AgreementContentType>, Ent
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementContent_Content()
-	 * @model keys="contentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -87,7 +87,7 @@ public interface AgreementContent extends EntityTyped<AgreementContentType>, Ent
 	 * @return the value of the '<em>Agreement Content Type</em>' reference.
 	 * @see #setAgreementContentType(AgreementContentType)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementContent_AgreementContentType()
-	 * @model keys="agreementContentTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

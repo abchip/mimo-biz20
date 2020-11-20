@@ -40,7 +40,7 @@ public interface TaxAuthority extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Tax Auth Geo</em>' reference.
 	 * @see #setTaxAuthGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthority_TaxAuthGeo()
-	 * @model keys="geoId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface TaxAuthority extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Tax Auth Party</em>' reference.
 	 * @see #setTaxAuthParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthority_TaxAuthParty()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -62,7 +62,7 @@ public interface DataCategory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Category</em>' reference.
 	 * @see #setParentCategory(DataCategory)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataCategory_ParentCategory()
-	 * @model keys="dataCategoryId"
+	 * @model
 	 * @generated
 	 */
 	DataCategory getParentCategory();

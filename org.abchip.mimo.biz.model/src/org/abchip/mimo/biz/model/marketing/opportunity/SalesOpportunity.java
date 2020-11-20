@@ -63,7 +63,7 @@ public interface SalesOpportunity extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Created By User Login</em>' reference.
 	 * @see #setCreatedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunity_CreatedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getCreatedByUserLogin();
@@ -85,7 +85,7 @@ public interface SalesOpportunity extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunity_CurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getCurrencyUom();
@@ -237,7 +237,7 @@ public interface SalesOpportunity extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Marketing Campaign</em>' reference.
 	 * @see #setMarketingCampaign(MarketingCampaign)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunity_MarketingCampaign()
-	 * @model keys="marketingCampaignId"
+	 * @model
 	 * @generated
 	 */
 	MarketingCampaign getMarketingCampaign();
@@ -337,7 +337,7 @@ public interface SalesOpportunity extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Opportunity Stage</em>' reference.
 	 * @see #setOpportunityStage(SalesOpportunityStage)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunity_OpportunityStage()
-	 * @model keys="opportunityStageId"
+	 * @model
 	 * @generated
 	 */
 	SalesOpportunityStage getOpportunityStage();
@@ -407,7 +407,7 @@ public interface SalesOpportunity extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Type Enum</em>' reference.
 	 * @see #setTypeEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunity_TypeEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getTypeEnum();

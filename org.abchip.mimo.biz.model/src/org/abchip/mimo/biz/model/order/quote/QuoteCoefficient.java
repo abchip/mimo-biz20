@@ -37,7 +37,7 @@ public interface QuoteCoefficient extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Quote</em>' reference.
 	 * @see #setQuote(Quote)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteCoefficient_Quote()
-	 * @model keys="quoteId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

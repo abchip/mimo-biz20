@@ -36,7 +36,7 @@ public interface PaymentTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Payment Type</em>' reference.
 	 * @see #setPaymentType(PaymentType)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentTypeAttr_PaymentType()
-	 * @model keys="paymentTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -36,7 +36,7 @@ public interface PartyIdentification extends EntityTyped<PartyIdentificationType
 	 * @return the value of the '<em>Party Identification Type</em>' reference.
 	 * @see #setPartyIdentificationType(PartyIdentificationType)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyIdentification_PartyIdentificationType()
-	 * @model keys="partyIdentificationTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface PartyIdentification extends EntityTyped<PartyIdentificationType
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyIdentification_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

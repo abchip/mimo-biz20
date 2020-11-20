@@ -87,7 +87,7 @@ public interface CostComponentType extends EntityType<CostComponent>, EntityInfo
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(CostComponentType)
 	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponentType_ParentType()
-	 * @model keys="costComponentTypeId"
+	 * @model
 	 * @generated
 	 */
 	CostComponentType getParentType();

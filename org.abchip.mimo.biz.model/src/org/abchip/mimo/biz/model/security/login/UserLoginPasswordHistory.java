@@ -38,7 +38,7 @@ public interface UserLoginPasswordHistory extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>User Login</em>' reference.
 	 * @see #setUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLoginPasswordHistory_UserLogin()
-	 * @model keys="userLoginId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

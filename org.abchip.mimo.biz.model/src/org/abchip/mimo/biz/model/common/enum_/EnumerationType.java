@@ -85,7 +85,7 @@ public interface EnumerationType extends EntityType<Enumeration>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(EnumerationType)
 	 * @see org.abchip.mimo.biz.model.common.enum_.EnumPackage#getEnumerationType_ParentType()
-	 * @model keys="enumTypeId"
+	 * @model
 	 * @generated
 	 */
 	EnumerationType getParentType();

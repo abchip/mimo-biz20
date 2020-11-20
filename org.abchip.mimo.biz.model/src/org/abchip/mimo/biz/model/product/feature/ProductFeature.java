@@ -215,7 +215,7 @@ public interface ProductFeature extends EntityTyped<ProductFeatureType>, EntityI
 	 * @return the value of the '<em>Product Feature Category</em>' reference.
 	 * @see #setProductFeatureCategory(ProductFeatureCategory)
 	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeature_ProductFeatureCategory()
-	 * @model keys="productFeatureCategoryId"
+	 * @model
 	 * @generated
 	 */
 	ProductFeatureCategory getProductFeatureCategory();
@@ -237,7 +237,7 @@ public interface ProductFeature extends EntityTyped<ProductFeatureType>, EntityI
 	 * @return the value of the '<em>Product Feature Type</em>' reference.
 	 * @see #setProductFeatureType(ProductFeatureType)
 	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeature_ProductFeatureType()
-	 * @model keys="productFeatureTypeId"
+	 * @model
 	 * @generated
 	 */
 	ProductFeatureType getProductFeatureType();
@@ -259,7 +259,7 @@ public interface ProductFeature extends EntityTyped<ProductFeatureType>, EntityI
 	 * @return the value of the '<em>Uom</em>' reference.
 	 * @see #setUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeature_Uom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getUom();

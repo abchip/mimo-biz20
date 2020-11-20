@@ -45,7 +45,7 @@ public interface ProductFeatureAppl extends EntityTyped<ProductFeatureApplType>,
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureAppl_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -68,7 +68,7 @@ public interface ProductFeatureAppl extends EntityTyped<ProductFeatureApplType>,
 	 * @return the value of the '<em>Product Feature</em>' reference.
 	 * @see #setProductFeature(ProductFeature)
 	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureAppl_ProductFeature()
-	 * @model keys="productFeatureId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -117,7 +117,7 @@ public interface ProductFeatureAppl extends EntityTyped<ProductFeatureApplType>,
 	 * @return the value of the '<em>Product Feature Appl Type</em>' reference.
 	 * @see #setProductFeatureApplType(ProductFeatureApplType)
 	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureAppl_ProductFeatureApplType()
-	 * @model keys="productFeatureApplTypeId"
+	 * @model
 	 * @generated
 	 */
 	ProductFeatureApplType getProductFeatureApplType();

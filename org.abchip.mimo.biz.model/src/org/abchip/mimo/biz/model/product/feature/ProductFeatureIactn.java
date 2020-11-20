@@ -37,7 +37,7 @@ public interface ProductFeatureIactn extends EntityTyped<ProductFeatureIactnType
 	 * @return the value of the '<em>Product Feature</em>' reference.
 	 * @see #setProductFeature(ProductFeature)
 	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureIactn_ProductFeature()
-	 * @model keys="productFeatureId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -90,7 +90,7 @@ public interface ProductFeatureIactn extends EntityTyped<ProductFeatureIactnType
 	 * @return the value of the '<em>Product Feature Id To</em>' reference.
 	 * @see #setProductFeatureIdTo(ProductFeature)
 	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureIactn_ProductFeatureIdTo()
-	 * @model keys="productFeatureId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -113,7 +113,7 @@ public interface ProductFeatureIactn extends EntityTyped<ProductFeatureIactnType
 	 * @return the value of the '<em>Product Feature Iactn Type</em>' reference.
 	 * @see #setProductFeatureIactnType(ProductFeatureIactnType)
 	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureIactn_ProductFeatureIactnType()
-	 * @model keys="productFeatureIactnTypeId"
+	 * @model
 	 * @generated
 	 */
 	ProductFeatureIactnType getProductFeatureIactnType();

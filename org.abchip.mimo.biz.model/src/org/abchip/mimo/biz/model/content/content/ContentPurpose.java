@@ -36,7 +36,7 @@ public interface ContentPurpose extends EntityTyped<ContentPurposeType>, EntityI
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurpose_Content()
-	 * @model keys="contentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface ContentPurpose extends EntityTyped<ContentPurposeType>, EntityI
 	 * @return the value of the '<em>Content Purpose Type</em>' reference.
 	 * @see #setContentPurposeType(ContentPurposeType)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurpose_ContentPurposeType()
-	 * @model keys="contentPurposeTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

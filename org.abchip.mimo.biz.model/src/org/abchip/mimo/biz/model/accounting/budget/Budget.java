@@ -69,7 +69,7 @@ public interface Budget extends EntityTyped<BudgetType>, EntityInfo {
 	 * @return the value of the '<em>Custom Time Period</em>' reference.
 	 * @see #setCustomTimePeriod(CustomTimePeriod)
 	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudget_CustomTimePeriod()
-	 * @model keys="customTimePeriodId"
+	 * @model
 	 * @generated
 	 */
 	CustomTimePeriod getCustomTimePeriod();
@@ -166,7 +166,7 @@ public interface Budget extends EntityTyped<BudgetType>, EntityInfo {
 	 * @return the value of the '<em>Budget Type</em>' reference.
 	 * @see #setBudgetType(BudgetType)
 	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudget_BudgetType()
-	 * @model keys="budgetTypeId"
+	 * @model
 	 * @generated
 	 */
 	BudgetType getBudgetType();

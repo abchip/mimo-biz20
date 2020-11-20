@@ -52,7 +52,7 @@ public interface ReturnItem extends EntityTyped<ReturnItemType>, EntityInfo {
 	 * @return the value of the '<em>Return</em>' reference.
 	 * @see #setReturn(ReturnHeader)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_Return()
-	 * @model keys="returnId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -105,7 +105,7 @@ public interface ReturnItem extends EntityTyped<ReturnItemType>, EntityInfo {
 	 * @return the value of the '<em>Expected Item Status</em>' reference.
 	 * @see #setExpectedItemStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_ExpectedItemStatus()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getExpectedItemStatus();
@@ -127,7 +127,7 @@ public interface ReturnItem extends EntityTyped<ReturnItemType>, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_Order()
-	 * @model keys="orderId"
+	 * @model
 	 * @generated
 	 */
 	OrderHeader getOrder();
@@ -175,8 +175,7 @@ public interface ReturnItem extends EntityTyped<ReturnItemType>, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_Product()
-	 * @model keys="productId"
-	 *        annotation="mimo-ent-slot help='we need this field to be able to figure out net sales of a product'"
+	 * @model annotation="mimo-ent-slot help='we need this field to be able to figure out net sales of a product'"
 	 * @generated
 	 */
 	Product getProduct();
@@ -225,7 +224,7 @@ public interface ReturnItem extends EntityTyped<ReturnItemType>, EntityInfo {
 	 * @return the value of the '<em>Return Item Response</em>' reference.
 	 * @see #setReturnItemResponse(ReturnItemResponse)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_ReturnItemResponse()
-	 * @model keys="returnItemResponseId"
+	 * @model
 	 * @generated
 	 */
 	ReturnItemResponse getReturnItemResponse();
@@ -247,8 +246,7 @@ public interface ReturnItem extends EntityTyped<ReturnItemType>, EntityInfo {
 	 * @return the value of the '<em>Return Item Type</em>' reference.
 	 * @see #setReturnItemType(ReturnItemType)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_ReturnItemType()
-	 * @model keys="returnItemTypeId"
-	 *        annotation="mimo-ent-slot help='what is returned: a product, a service, etc'"
+	 * @model annotation="mimo-ent-slot help='what is returned: a product, a service, etc'"
 	 * @generated
 	 */
 	ReturnItemType getReturnItemType();
@@ -352,8 +350,7 @@ public interface ReturnItem extends EntityTyped<ReturnItemType>, EntityInfo {
 	 * @return the value of the '<em>Return Reason</em>' reference.
 	 * @see #setReturnReason(ReturnReason)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_ReturnReason()
-	 * @model keys="returnReasonId"
-	 *        annotation="mimo-ent-slot audit='true' help='why item is returned: did not like, wrong item, damaged, etc. etc.'"
+	 * @model annotation="mimo-ent-slot audit='true' help='why item is returned: did not like, wrong item, damaged, etc. etc.'"
 	 * @generated
 	 */
 	ReturnReason getReturnReason();
@@ -375,8 +372,7 @@ public interface ReturnItem extends EntityTyped<ReturnItemType>, EntityInfo {
 	 * @return the value of the '<em>Return Type</em>' reference.
 	 * @see #setReturnType(ReturnType)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_ReturnType()
-	 * @model keys="returnTypeId"
-	 *        annotation="mimo-ent-slot audit='true' help='actually used for disbursement type: store credit, cash refund, exchange'"
+	 * @model annotation="mimo-ent-slot audit='true' help='actually used for disbursement type: store credit, cash refund, exchange'"
 	 * @generated
 	 */
 	ReturnType getReturnType();
@@ -398,7 +394,7 @@ public interface ReturnItem extends EntityTyped<ReturnItemType>, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItem_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

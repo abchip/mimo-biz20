@@ -44,7 +44,7 @@ public interface ContentSearchConstraint extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Content Search Result</em>' reference.
 	 * @see #setContentSearchResult(ContentSearchResult)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentSearchConstraint_ContentSearchResult()
-	 * @model keys="contentSearchResultId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

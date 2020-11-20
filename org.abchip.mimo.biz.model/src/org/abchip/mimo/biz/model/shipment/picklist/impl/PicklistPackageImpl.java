@@ -1198,60 +1198,43 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 		initEAttribute(getPicklist_CreatedByUserLogin(), ecorePackage.getEString(), "createdByUserLogin", null, 0, 1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPicklist_Description(), ecorePackage.getEString(), "description", null, 0, 1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPicklist_Facility(), theFacilityPackage.getFacility(), null, "facility", null, 0, 1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklist_Facility().getEKeys().add(theFacilityPackage.getFacility_FacilityId());
 		initEAttribute(getPicklist_LastModifiedByUserLogin(), ecorePackage.getEString(), "lastModifiedByUserLogin", null, 0, 1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPicklist_PicklistDate(), ecorePackage.getEDate(), "picklistDate", null, 0, 1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPicklist_PicklistStatusHistories(), this.getPicklistStatusHistory(), null, "picklistStatusHistories", null, 0, -1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getPicklist_ShipmentMethodType(), theShipment_Package.getShipmentMethodType(), null, "shipmentMethodType", null, 0, 1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklist_ShipmentMethodType().getEKeys().add(theShipment_Package.getShipmentMethodType_ShipmentMethodTypeId());
 		initEReference(getPicklist_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, Picklist.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklist_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 
 		initEClass(picklistBinEClass, PicklistBin.class, "PicklistBin", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPicklistBin_PicklistBinId(), ecorePackage.getEString(), "picklistBinId", null, 1, 1, PicklistBin.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPicklistBin_BinLocationNumber(), ecorePackage.getELong(), "binLocationNumber", null, 0, 1, PicklistBin.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPicklistBin_Picklist(), this.getPicklist(), null, "picklist", null, 0, 1, PicklistBin.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistBin_Picklist().getEKeys().add(this.getPicklist_PicklistId());
 		initEReference(getPicklistBin_PrimaryOrder(), theOrderPackage.getOrderHeader(), null, "primaryOrder", null, 0, 1, PicklistBin.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistBin_PrimaryOrder().getEKeys().add(theOrderPackage.getOrderHeader_OrderId());
 		initEAttribute(getPicklistBin_PrimaryShipGroupSeqId(), ecorePackage.getEString(), "primaryShipGroupSeqId", null, 0, 1, PicklistBin.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(picklistItemEClass, PicklistItem.class, "PicklistItem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPicklistItem_PicklistBin(), this.getPicklistBin(), null, "picklistBin", null, 1, 1, PicklistItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistItem_PicklistBin().getEKeys().add(this.getPicklistBin_PicklistBinId());
 		initEReference(getPicklistItem_Order(), theOrderPackage.getOrderHeader(), null, "order", null, 1, 1, PicklistItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistItem_Order().getEKeys().add(theOrderPackage.getOrderHeader_OrderId());
 		initEReference(getPicklistItem_InventoryItem(), theInventoryPackage.getInventoryItem(), null, "inventoryItem", null, 1, 1, PicklistItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistItem_InventoryItem().getEKeys().add(theInventoryPackage.getInventoryItem_InventoryItemId());
 		initEAttribute(getPicklistItem_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 1, 1, PicklistItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPicklistItem_ShipGroupSeqId(), ecorePackage.getEString(), "shipGroupSeqId", null, 1, 1, PicklistItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPicklistItem_ItemStatus(), theStatusPackage.getStatusItem(), null, "itemStatus", null, 0, 1, PicklistItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistItem_ItemStatus().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getPicklistItem_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, PicklistItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(picklistRoleEClass, PicklistRole.class, "PicklistRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPicklistRole_Picklist(), this.getPicklist(), null, "picklist", null, 1, 1, PicklistRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistRole_Picklist().getEKeys().add(this.getPicklist_PicklistId());
 		initEReference(getPicklistRole_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 1, 1, PicklistRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistRole_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEAttribute(getPicklistRole_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, PicklistRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPicklistRole_PartyId(), ecorePackage.getEString(), "partyId", null, 1, 1, PicklistRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPicklistRole_CreatedByUserLogin(), theLoginPackage.getUserLogin(), null, "createdByUserLogin", null, 0, 1, PicklistRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistRole_CreatedByUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEReference(getPicklistRole_LastModifiedByUserLogin(), theLoginPackage.getUserLogin(), null, "lastModifiedByUserLogin", null, 0, 1, PicklistRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistRole_LastModifiedByUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEAttribute(getPicklistRole_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, PicklistRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(picklistStatusHistoryEClass, PicklistStatusHistory.class, "PicklistStatusHistory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPicklistStatusHistory_Picklist(), this.getPicklist(), null, "picklist", null, 1, 1, PicklistStatusHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistStatusHistory_Picklist().getEKeys().add(this.getPicklist_PicklistId());
 		initEAttribute(getPicklistStatusHistory_ChangeDate(), ecorePackage.getEDate(), "changeDate", null, 1, 1, PicklistStatusHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPicklistStatusHistory_ChangeUserLogin(), theLoginPackage.getUserLogin(), null, "changeUserLogin", null, 0, 1, PicklistStatusHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistStatusHistory_ChangeUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEReference(getPicklistStatusHistory_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, PicklistStatusHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistStatusHistory_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEReference(getPicklistStatusHistory_StatusIdTo(), theStatusPackage.getStatusItem(), null, "statusIdTo", null, 0, 1, PicklistStatusHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPicklistStatusHistory_StatusIdTo().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 
 		// Create resource
 		createResource(eNS_URI);

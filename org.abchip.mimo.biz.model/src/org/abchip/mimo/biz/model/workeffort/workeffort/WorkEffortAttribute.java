@@ -37,7 +37,7 @@ public interface WorkEffortAttribute extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortAttribute_WorkEffort()
-	 * @model keys="workEffortId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

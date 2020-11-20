@@ -36,7 +36,7 @@ public interface CostComponentTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Cost Component Type</em>' reference.
 	 * @see #setCostComponentType(CostComponentType)
 	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponentTypeAttr_CostComponentType()
-	 * @model keys="costComponentTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

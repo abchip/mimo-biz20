@@ -173,7 +173,7 @@ public interface CheckAccount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Contact Mech</em>' reference.
 	 * @see #setContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getCheckAccount_ContactMech()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	ContactMech getContactMech();

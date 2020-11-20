@@ -233,7 +233,7 @@ public interface InventoryItem extends EntityTyped<InventoryItemType>, EntityInf
 	 * @return the value of the '<em>Container</em>' reference.
 	 * @see #setContainer(Container)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItem_Container()
-	 * @model keys="containerId"
+	 * @model
 	 * @generated
 	 */
 	Container getContainer();
@@ -255,8 +255,7 @@ public interface InventoryItem extends EntityTyped<InventoryItemType>, EntityInf
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItem_CurrencyUom()
-	 * @model keys="uomId"
-	 *        annotation="mimo-ent-slot help='The currency Uom of the unit cost.'"
+	 * @model annotation="mimo-ent-slot help='The currency Uom of the unit cost.'"
 	 * @generated
 	 */
 	Uom getCurrencyUom();
@@ -356,7 +355,7 @@ public interface InventoryItem extends EntityTyped<InventoryItemType>, EntityInf
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItem_Facility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getFacility();
@@ -378,7 +377,7 @@ public interface InventoryItem extends EntityTyped<InventoryItemType>, EntityInf
 	 * @return the value of the '<em>Fixed Asset</em>' reference.
 	 * @see #setFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItem_FixedAsset()
-	 * @model keys="fixedAssetId"
+	 * @model
 	 * @generated
 	 */
 	FixedAsset getFixedAsset();
@@ -437,7 +436,7 @@ public interface InventoryItem extends EntityTyped<InventoryItemType>, EntityInf
 	 * @return the value of the '<em>Inventory Item Statuses</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItem_InventoryItemStatuses()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint statusDatetime='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints statusDatetime='*NOW'"
 	 * @generated
 	 */
 	List<InventoryItemStatus> getInventoryItemStatuses();
@@ -449,7 +448,7 @@ public interface InventoryItem extends EntityTyped<InventoryItemType>, EntityInf
 	 * @return the value of the '<em>Inventory Item Type</em>' reference.
 	 * @see #setInventoryItemType(InventoryItemType)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItem_InventoryItemType()
-	 * @model keys="inventoryItemTypeId"
+	 * @model
 	 * @generated
 	 */
 	InventoryItemType getInventoryItemType();
@@ -509,7 +508,7 @@ public interface InventoryItem extends EntityTyped<InventoryItemType>, EntityInf
 	 * @return the value of the '<em>Lot</em>' reference.
 	 * @see #setLot(Lot)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItem_Lot()
-	 * @model keys="lotId"
+	 * @model
 	 * @generated
 	 */
 	Lot getLot();
@@ -583,8 +582,7 @@ public interface InventoryItem extends EntityTyped<InventoryItemType>, EntityInf
 	 * @return the value of the '<em>Owner Party</em>' reference.
 	 * @see #setOwnerParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItem_OwnerParty()
-	 * @model keys="partyId"
-	 *        annotation="mimo-ent-slot help='The owner of the inventory item.'"
+	 * @model annotation="mimo-ent-slot help='The owner of the inventory item.'"
 	 * @generated
 	 */
 	Party getOwnerParty();
@@ -606,7 +604,7 @@ public interface InventoryItem extends EntityTyped<InventoryItemType>, EntityInf
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItem_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -628,7 +626,7 @@ public interface InventoryItem extends EntityTyped<InventoryItemType>, EntityInf
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItem_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();
@@ -728,7 +726,7 @@ public interface InventoryItem extends EntityTyped<InventoryItemType>, EntityInf
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItem_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -777,7 +775,7 @@ public interface InventoryItem extends EntityTyped<InventoryItemType>, EntityInf
 	 * @return the value of the '<em>Uom</em>' reference.
 	 * @see #setUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItem_Uom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getUom();

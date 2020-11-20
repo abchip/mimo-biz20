@@ -46,7 +46,7 @@ public interface ProductCategoryContent extends EntityTyped<ProductCategoryConte
 	 * @return the value of the '<em>Product Category</em>' reference.
 	 * @see #setProductCategory(ProductCategory)
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryContent_ProductCategory()
-	 * @model keys="productCategoryId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -69,7 +69,7 @@ public interface ProductCategoryContent extends EntityTyped<ProductCategoryConte
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryContent_Content()
-	 * @model keys="contentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -92,7 +92,7 @@ public interface ProductCategoryContent extends EntityTyped<ProductCategoryConte
 	 * @return the value of the '<em>Prod Cat Content Type</em>' reference.
 	 * @see #setProdCatContentType(ProductCategoryContentType)
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryContent_ProdCatContentType()
-	 * @model keys="prodCatContentTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

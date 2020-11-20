@@ -66,7 +66,7 @@ public interface UserAgent extends EntityTyped<UserAgentType>, EntityInfo {
 	 * @return the value of the '<em>Browser Type</em>' reference.
 	 * @see #setBrowserType(BrowserType)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getUserAgent_BrowserType()
-	 * @model keys="browserTypeId"
+	 * @model
 	 * @generated
 	 */
 	BrowserType getBrowserType();
@@ -88,7 +88,7 @@ public interface UserAgent extends EntityTyped<UserAgentType>, EntityInfo {
 	 * @return the value of the '<em>Platform Type</em>' reference.
 	 * @see #setPlatformType(PlatformType)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getUserAgent_PlatformType()
-	 * @model keys="platformTypeId"
+	 * @model
 	 * @generated
 	 */
 	PlatformType getPlatformType();
@@ -110,7 +110,7 @@ public interface UserAgent extends EntityTyped<UserAgentType>, EntityInfo {
 	 * @return the value of the '<em>Protocol Type</em>' reference.
 	 * @see #setProtocolType(ProtocolType)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getUserAgent_ProtocolType()
-	 * @model keys="protocolTypeId"
+	 * @model
 	 * @generated
 	 */
 	ProtocolType getProtocolType();
@@ -132,7 +132,7 @@ public interface UserAgent extends EntityTyped<UserAgentType>, EntityInfo {
 	 * @return the value of the '<em>User Agent Method Type</em>' reference.
 	 * @see #setUserAgentMethodType(UserAgentMethodType)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getUserAgent_UserAgentMethodType()
-	 * @model keys="userAgentMethodTypeId"
+	 * @model
 	 * @generated
 	 */
 	UserAgentMethodType getUserAgentMethodType();
@@ -154,7 +154,7 @@ public interface UserAgent extends EntityTyped<UserAgentType>, EntityInfo {
 	 * @return the value of the '<em>User Agent Type</em>' reference.
 	 * @see #setUserAgentType(UserAgentType)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getUserAgent_UserAgentType()
-	 * @model keys="userAgentTypeId"
+	 * @model
 	 * @generated
 	 */
 	UserAgentType getUserAgentType();

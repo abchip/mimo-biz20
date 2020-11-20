@@ -833,7 +833,6 @@ public class NotePackageImpl extends EPackageImpl implements NotePackage {
 		initEAttribute(getNoteData_NoteInfo(), ecorePackage.getEString(), "noteInfo", null, 0, 1, NoteData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getNoteData_NoteName(), ecorePackage.getEString(), "noteName", null, 0, 1, NoteData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getNoteData_NoteParty(), thePartyPackage_1.getParty(), null, "noteParty", null, 0, 1, NoteData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getNoteData_NoteParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 
 		// Create annotations
 		// mimo-ent-format

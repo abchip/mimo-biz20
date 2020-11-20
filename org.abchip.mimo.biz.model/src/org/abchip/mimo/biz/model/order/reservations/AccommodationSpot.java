@@ -67,7 +67,7 @@ public interface AccommodationSpot extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Accommodation Class</em>' reference.
 	 * @see #setAccommodationClass(AccommodationClass)
 	 * @see org.abchip.mimo.biz.model.order.reservations.ReservationsPackage#getAccommodationSpot_AccommodationClass()
-	 * @model keys="accommodationClassId"
+	 * @model
 	 * @generated
 	 */
 	AccommodationClass getAccommodationClass();
@@ -115,7 +115,7 @@ public interface AccommodationSpot extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Fixed Asset</em>' reference.
 	 * @see #setFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.order.reservations.ReservationsPackage#getAccommodationSpot_FixedAsset()
-	 * @model keys="fixedAssetId"
+	 * @model
 	 * @generated
 	 */
 	FixedAsset getFixedAsset();

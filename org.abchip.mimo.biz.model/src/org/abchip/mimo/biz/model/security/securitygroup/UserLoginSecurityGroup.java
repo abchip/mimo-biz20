@@ -39,7 +39,7 @@ public interface UserLoginSecurityGroup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>User Login</em>' reference.
 	 * @see #setUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage#getUserLoginSecurityGroup_UserLogin()
-	 * @model keys="userLoginId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface UserLoginSecurityGroup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Group</em>' reference.
 	 * @see #setGroup(SecurityGroup)
 	 * @see org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage#getUserLoginSecurityGroup_Group()
-	 * @model keys="groupId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

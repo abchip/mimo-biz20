@@ -36,7 +36,7 @@ public interface QuoteWorkEffort extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Quote</em>' reference.
 	 * @see #setQuote(Quote)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteWorkEffort_Quote()
-	 * @model keys="quoteId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface QuoteWorkEffort extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteWorkEffort_WorkEffort()
-	 * @model keys="workEffortId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

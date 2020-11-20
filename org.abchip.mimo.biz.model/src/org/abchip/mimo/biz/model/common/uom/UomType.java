@@ -85,7 +85,7 @@ public interface UomType extends EntityType<Uom>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(UomType)
 	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUomType_ParentType()
-	 * @model keys="uomTypeId"
+	 * @model
 	 * @generated
 	 */
 	UomType getParentType();

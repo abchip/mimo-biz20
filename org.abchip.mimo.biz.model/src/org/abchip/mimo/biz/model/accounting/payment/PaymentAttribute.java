@@ -37,7 +37,7 @@ public interface PaymentAttribute extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Payment</em>' reference.
 	 * @see #setPayment(Payment)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentAttribute_Payment()
-	 * @model keys="paymentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

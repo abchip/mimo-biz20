@@ -68,7 +68,7 @@ public interface ReturnStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnStatus_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -117,7 +117,7 @@ public interface ReturnStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Change By User Login</em>' reference.
 	 * @see #setChangeByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnStatus_ChangeByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getChangeByUserLogin();
@@ -139,7 +139,7 @@ public interface ReturnStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Return</em>' reference.
 	 * @see #setReturn(ReturnHeader)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnStatus_Return()
-	 * @model keys="returnId"
+	 * @model
 	 * @generated
 	 */
 	ReturnHeader getReturn();

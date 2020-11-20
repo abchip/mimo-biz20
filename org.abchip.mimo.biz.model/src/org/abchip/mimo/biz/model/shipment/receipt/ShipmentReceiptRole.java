@@ -37,7 +37,7 @@ public interface ShipmentReceiptRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Receipt</em>' reference.
 	 * @see #setReceipt(ShipmentReceipt)
 	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceiptRole_Receipt()
-	 * @model keys="receiptId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -60,7 +60,7 @@ public interface ShipmentReceiptRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceiptRole_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

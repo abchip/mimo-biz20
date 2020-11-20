@@ -34,6 +34,7 @@ package org.abchip.mimo.biz.model.shipment.shipment;
  *
  * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentGatewayFedex()
  * @model annotation="mimo-ent-frame title='Fedex Shipment Gateway Configuration' formula='description'"
+ *        annotation="mimo-ent-frame-constraints shipmentGatewayConfType='SHIPMENT_GATEWAY_FEDEX'"
  * @generated
  */
 public interface ShipmentGatewayFedex extends ShipmentGatewayConfig {

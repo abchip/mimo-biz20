@@ -44,7 +44,7 @@ public interface SalaryStep extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Pay Grade</em>' reference.
 	 * @see #setPayGrade(PayGrade)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getSalaryStep_PayGrade()
-	 * @model keys="payGradeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

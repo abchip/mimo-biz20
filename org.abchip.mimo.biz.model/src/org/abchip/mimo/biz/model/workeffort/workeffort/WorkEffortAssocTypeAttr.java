@@ -36,7 +36,7 @@ public interface WorkEffortAssocTypeAttr extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Work Effort Assoc Type</em>' reference.
 	 * @see #setWorkEffortAssocType(WorkEffortAssocType)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortAssocTypeAttr_WorkEffortAssocType()
-	 * @model keys="workEffortAssocTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -104,7 +104,7 @@ public interface ContactMech extends EntityTyped<ContactMechType>, EntityInfo {
 	 * @return the value of the '<em>Contact Mech Type</em>' reference.
 	 * @see #setContactMechType(ContactMechType)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMech_ContactMechType()
-	 * @model keys="contactMechTypeId"
+	 * @model
 	 * @generated
 	 */
 	ContactMechType getContactMechType();

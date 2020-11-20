@@ -38,7 +38,7 @@ public interface FixedAssetMaintOrder extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Fixed Asset</em>' reference.
 	 * @see #setFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaintOrder_FixedAsset()
-	 * @model keys="fixedAssetId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface FixedAssetMaintOrder extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaintOrder_Order()
-	 * @model keys="orderId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

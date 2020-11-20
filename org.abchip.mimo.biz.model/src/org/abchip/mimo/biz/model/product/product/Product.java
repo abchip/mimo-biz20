@@ -295,7 +295,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Created By User Login</em>' reference.
 	 * @see #setCreatedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_CreatedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getCreatedByUserLogin();
@@ -343,7 +343,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Default Shipment Box Type</em>' reference.
 	 * @see #setDefaultShipmentBoxType(ShipmentBoxType)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_DefaultShipmentBoxType()
-	 * @model keys="shipmentBoxTypeId"
+	 * @model
 	 * @generated
 	 */
 	ShipmentBoxType getDefaultShipmentBoxType();
@@ -365,7 +365,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Depth Uom</em>' reference.
 	 * @see #setDepthUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_DepthUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getDepthUom();
@@ -465,7 +465,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Diameter Uom</em>' reference.
 	 * @see #setDiameterUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_DiameterUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getDiameterUom();
@@ -487,7 +487,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_Facility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getFacility();
@@ -536,7 +536,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Height Uom</em>' reference.
 	 * @see #setHeightUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_HeightUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getHeightUom();
@@ -658,7 +658,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Inventory Item Type</em>' reference.
 	 * @see #setInventoryItemType(InventoryItemType)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_InventoryItemType()
-	 * @model keys="inventoryItemTypeId"
+	 * @model
 	 * @generated
 	 */
 	InventoryItemType getInventoryItemType();
@@ -788,7 +788,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Last Modified By User Login</em>' reference.
 	 * @see #setLastModifiedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_LastModifiedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getLastModifiedByUserLogin();
@@ -937,7 +937,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Origin Geo</em>' reference.
 	 * @see #setOriginGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_OriginGeo()
-	 * @model keys="geoId"
+	 * @model
 	 * @generated
 	 */
 	Geo getOriginGeo();
@@ -1037,8 +1037,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Primary Product Category</em>' reference.
 	 * @see #setPrimaryProductCategory(ProductCategory)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_PrimaryProductCategory()
-	 * @model keys="productCategoryId"
-	 *        annotation="mimo-ent-slot help='The primary category ; it should be one of the productCategoryId already setup in ProductCategoryMember'"
+	 * @model annotation="mimo-ent-slot help='The primary category ; it should be one of the productCategoryId already setup in ProductCategoryMember'"
 	 * @generated
 	 */
 	ProductCategory getPrimaryProductCategory();
@@ -1073,7 +1072,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Product Cost Component Calcs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductCostComponentCalcs()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductCostComponentCalc> getProductCostComponentCalcs();
@@ -1150,7 +1149,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Product Feature Appls</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductFeatureAppls()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductFeatureAppl> getProductFeatureAppls();
@@ -1277,7 +1276,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Product Subscription Resources</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductSubscriptionResources()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductSubscriptionResource> getProductSubscriptionResources();
@@ -1289,7 +1288,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Product Type</em>' reference.
 	 * @see #setProductType(ProductType)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductType()
-	 * @model keys="productTypeId"
+	 * @model
 	 * @generated
 	 */
 	ProductType getProductType();
@@ -1390,7 +1389,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Quantity Uom</em>' reference.
 	 * @see #setQuantityUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_QuantityUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getQuantityUom();
@@ -1416,7 +1415,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Rating Type Enum</em>' reference.
 	 * @see #setRatingTypeEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_RatingTypeEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getRatingTypeEnum();
@@ -1508,7 +1507,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Requirement Method Enum</em>' reference.
 	 * @see #setRequirementMethodEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_RequirementMethodEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getRequirementMethodEnum();
@@ -1864,8 +1863,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Virtual Variant Method Enum</em>' reference.
 	 * @see #setVirtualVariantMethodEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_VirtualVariantMethodEnum()
-	 * @model keys="enumId"
-	 *        annotation="mimo-ent-slot help='This field defines the method of selecting a variant from the selectable features on the virtual product. Either as a variant explosion which will work to about 200 variants or as feature explosion which almost has no limits'"
+	 * @model annotation="mimo-ent-slot help='This field defines the method of selecting a variant from the selectable features on the virtual product. Either as a variant explosion which will work to about 200 variants or as feature explosion which almost has no limits'"
 	 * @generated
 	 */
 	Enumeration getVirtualVariantMethodEnum();
@@ -1887,7 +1885,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Weight Uom</em>' reference.
 	 * @see #setWeightUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_WeightUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getWeightUom();
@@ -1909,7 +1907,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Width Uom</em>' reference.
 	 * @see #setWidthUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_WidthUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getWidthUom();
@@ -1958,7 +1956,7 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @return the value of the '<em>Amount Uom Type</em>' reference.
 	 * @see #setAmountUomType(UomType)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_AmountUomType()
-	 * @model keys="uomTypeId"
+	 * @model
 	 * @generated
 	 */
 	UomType getAmountUomType();

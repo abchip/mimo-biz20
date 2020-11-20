@@ -85,7 +85,7 @@ public interface PaymentContentType extends EntityType<PaymentContent>, EntityIn
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(PaymentContentType)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentContentType_ParentType()
-	 * @model keys="paymentContentTypeId"
+	 * @model
 	 * @generated
 	 */
 	PaymentContentType getParentType();

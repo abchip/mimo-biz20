@@ -72,7 +72,7 @@ public interface InvoiceTerm extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Invoice</em>' reference.
 	 * @see #setInvoice(Invoice)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceTerm_Invoice()
-	 * @model keys="invoiceId"
+	 * @model
 	 * @generated
 	 */
 	Invoice getInvoice();
@@ -158,7 +158,7 @@ public interface InvoiceTerm extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Term Type</em>' reference.
 	 * @see #setTermType(TermType)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceTerm_TermType()
-	 * @model keys="termTypeId"
+	 * @model
 	 * @generated
 	 */
 	TermType getTermType();

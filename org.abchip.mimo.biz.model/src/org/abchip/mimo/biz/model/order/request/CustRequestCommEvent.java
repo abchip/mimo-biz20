@@ -36,7 +36,7 @@ public interface CustRequestCommEvent extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Cust Request</em>' reference.
 	 * @see #setCustRequest(CustRequest)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestCommEvent_CustRequest()
-	 * @model keys="custRequestId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface CustRequestCommEvent extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Communication Event</em>' reference.
 	 * @see #setCommunicationEvent(CommunicationEvent)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestCommEvent_CommunicationEvent()
-	 * @model keys="communicationEventId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

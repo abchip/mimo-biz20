@@ -37,7 +37,7 @@ public interface DocumentAttribute extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Document</em>' reference.
 	 * @see #setDocument(Document)
 	 * @see org.abchip.mimo.biz.model.content.document.DocumentPackage#getDocumentAttribute_Document()
-	 * @model keys="documentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

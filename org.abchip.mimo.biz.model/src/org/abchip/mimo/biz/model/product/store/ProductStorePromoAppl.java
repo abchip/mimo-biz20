@@ -41,7 +41,7 @@ public interface ProductStorePromoAppl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Store</em>' reference.
 	 * @see #setProductStore(ProductStore)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStorePromoAppl_ProductStore()
-	 * @model keys="productStoreId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface ProductStorePromoAppl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Promo</em>' reference.
 	 * @see #setProductPromo(ProductPromo)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStorePromoAppl_ProductPromo()
-	 * @model keys="productPromoId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

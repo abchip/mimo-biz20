@@ -85,7 +85,7 @@ public interface PaymentGroupType extends EntityType<PaymentGroup>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(PaymentGroupType)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGroupType_ParentType()
-	 * @model keys="paymentGroupTypeId"
+	 * @model
 	 * @generated
 	 */
 	PaymentGroupType getParentType();

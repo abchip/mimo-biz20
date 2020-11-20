@@ -49,7 +49,7 @@ public interface OrderDeliverySchedule extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderDeliverySchedule_Order()
-	 * @model keys="orderId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -178,7 +178,7 @@ public interface OrderDeliverySchedule extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderDeliverySchedule_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -226,7 +226,7 @@ public interface OrderDeliverySchedule extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Total Cubic Uom</em>' reference.
 	 * @see #setTotalCubicUom(Uom)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderDeliverySchedule_TotalCubicUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getTotalCubicUom();
@@ -274,7 +274,7 @@ public interface OrderDeliverySchedule extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Total Weight Uom</em>' reference.
 	 * @see #setTotalWeightUom(Uom)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderDeliverySchedule_TotalWeightUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getTotalWeightUom();

@@ -38,7 +38,7 @@ public interface ReturnContactMech extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Return</em>' reference.
 	 * @see #setReturn(ReturnHeader)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnContactMech_Return()
-	 * @model keys="returnId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface ReturnContactMech extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Contact Mech</em>' reference.
 	 * @see #setContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnContactMech_ContactMech()
-	 * @model keys="contactMechId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -84,7 +84,7 @@ public interface ReturnContactMech extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Contact Mech Purpose Type</em>' reference.
 	 * @see #setContactMechPurposeType(ContactMechPurposeType)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnContactMech_ContactMechPurposeType()
-	 * @model keys="contactMechPurposeTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

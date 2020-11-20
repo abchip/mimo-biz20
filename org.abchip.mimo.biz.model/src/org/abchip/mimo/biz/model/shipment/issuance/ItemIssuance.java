@@ -105,7 +105,7 @@ public interface ItemIssuance extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Inventory Item</em>' reference.
 	 * @see #setInventoryItem(InventoryItem)
 	 * @see org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage#getItemIssuance_InventoryItem()
-	 * @model keys="inventoryItemId"
+	 * @model
 	 * @generated
 	 */
 	InventoryItem getInventoryItem();
@@ -127,7 +127,7 @@ public interface ItemIssuance extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Issued By User Login</em>' reference.
 	 * @see #setIssuedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage#getItemIssuance_IssuedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getIssuedByUserLogin();
@@ -228,7 +228,7 @@ public interface ItemIssuance extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage#getItemIssuance_Order()
-	 * @model keys="orderId"
+	 * @model
 	 * @generated
 	 */
 	OrderHeader getOrder();
@@ -328,7 +328,7 @@ public interface ItemIssuance extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Shipment</em>' reference.
 	 * @see #setShipment(Shipment)
 	 * @see org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage#getItemIssuance_Shipment()
-	 * @model keys="shipmentId"
+	 * @model
 	 * @generated
 	 */
 	Shipment getShipment();

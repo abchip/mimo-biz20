@@ -98,7 +98,7 @@ public interface PartyPrefDocTypeTpl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Invoice Type</em>' reference.
 	 * @see #setInvoiceType(InvoiceType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyPrefDocTypeTpl_InvoiceType()
-	 * @model keys="invoiceTypeId"
+	 * @model
 	 * @generated
 	 */
 	InvoiceType getInvoiceType();
@@ -120,7 +120,7 @@ public interface PartyPrefDocTypeTpl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order Type</em>' reference.
 	 * @see #setOrderType(OrderType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyPrefDocTypeTpl_OrderType()
-	 * @model keys="orderTypeId"
+	 * @model
 	 * @generated
 	 */
 	OrderType getOrderType();
@@ -142,7 +142,7 @@ public interface PartyPrefDocTypeTpl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyPrefDocTypeTpl_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -164,7 +164,7 @@ public interface PartyPrefDocTypeTpl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Quote Type</em>' reference.
 	 * @see #setQuoteType(QuoteType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyPrefDocTypeTpl_QuoteType()
-	 * @model keys="quoteTypeId"
+	 * @model
 	 * @generated
 	 */
 	QuoteType getQuoteType();

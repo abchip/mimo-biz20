@@ -40,7 +40,7 @@ public interface InvoiceContent extends EntityTyped<InvoiceContentType>, EntityI
 	 * @return the value of the '<em>Invoice</em>' reference.
 	 * @see #setInvoice(Invoice)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceContent_Invoice()
-	 * @model keys="invoiceId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface InvoiceContent extends EntityTyped<InvoiceContentType>, EntityI
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceContent_Content()
-	 * @model keys="contentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -86,7 +86,7 @@ public interface InvoiceContent extends EntityTyped<InvoiceContentType>, EntityI
 	 * @return the value of the '<em>Invoice Content Type</em>' reference.
 	 * @see #setInvoiceContentType(InvoiceContentType)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceContent_InvoiceContentType()
-	 * @model keys="invoiceContentTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

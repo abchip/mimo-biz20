@@ -159,7 +159,7 @@ public interface EmplPosition extends EntityTyped<EmplPositionType>, EntityInfo 
 	 * @return the value of the '<em>Empl Position Fulfillments</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPosition_EmplPositionFulfillments()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<EmplPositionFulfillment> getEmplPositionFulfillments();
@@ -172,7 +172,7 @@ public interface EmplPosition extends EntityTyped<EmplPositionType>, EntityInfo 
 	 * @return the value of the '<em>Empl Position Responsibilities</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPosition_EmplPositionResponsibilities()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<EmplPositionResponsibility> getEmplPositionResponsibilities();
@@ -184,7 +184,7 @@ public interface EmplPosition extends EntityTyped<EmplPositionType>, EntityInfo 
 	 * @return the value of the '<em>Empl Position Type</em>' reference.
 	 * @see #setEmplPositionType(EmplPositionType)
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPosition_EmplPositionType()
-	 * @model keys="emplPositionTypeId"
+	 * @model
 	 * @generated
 	 */
 	EmplPositionType getEmplPositionType();
@@ -337,7 +337,7 @@ public interface EmplPosition extends EntityTyped<EmplPositionType>, EntityInfo 
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPosition_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -360,7 +360,7 @@ public interface EmplPosition extends EntityTyped<EmplPositionType>, EntityInfo 
 	 * @return the value of the '<em>Reporting To Empl Position Reporting Structs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPosition_ReportingToEmplPositionReportingStructs()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<EmplPositionReportingStruct> getReportingToEmplPositionReportingStructs();
@@ -398,7 +398,7 @@ public interface EmplPosition extends EntityTyped<EmplPositionType>, EntityInfo 
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPosition_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

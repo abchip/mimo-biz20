@@ -102,7 +102,7 @@ public interface ProductStoreSurveyAppl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreSurveyAppl_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();
@@ -124,7 +124,7 @@ public interface ProductStoreSurveyAppl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Category</em>' reference.
 	 * @see #setProductCategory(ProductCategory)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreSurveyAppl_ProductCategory()
-	 * @model keys="productCategoryId"
+	 * @model
 	 * @generated
 	 */
 	ProductCategory getProductCategory();
@@ -146,7 +146,7 @@ public interface ProductStoreSurveyAppl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Store</em>' reference.
 	 * @see #setProductStore(ProductStore)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreSurveyAppl_ProductStore()
-	 * @model keys="productStoreId"
+	 * @model
 	 * @generated
 	 */
 	ProductStore getProductStore();
@@ -247,7 +247,7 @@ public interface ProductStoreSurveyAppl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Survey</em>' reference.
 	 * @see #setSurvey(Survey)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreSurveyAppl_Survey()
-	 * @model keys="surveyId"
+	 * @model
 	 * @generated
 	 */
 	Survey getSurvey();
@@ -269,7 +269,7 @@ public interface ProductStoreSurveyAppl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Survey Appl Type</em>' reference.
 	 * @see #setSurveyApplType(SurveyApplType)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreSurveyAppl_SurveyApplType()
-	 * @model keys="surveyApplTypeId"
+	 * @model
 	 * @generated
 	 */
 	SurveyApplType getSurveyApplType();

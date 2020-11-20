@@ -39,7 +39,7 @@ public interface ProductPriceCond extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Price Rule</em>' reference.
 	 * @see #setProductPriceRule(ProductPriceRule)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPriceCond_ProductPriceRule()
-	 * @model keys="productPriceRuleId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -88,7 +88,7 @@ public interface ProductPriceCond extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Input Param Enum</em>' reference.
 	 * @see #setInputParamEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPriceCond_InputParamEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getInputParamEnum();
@@ -110,7 +110,7 @@ public interface ProductPriceCond extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Operator Enum</em>' reference.
 	 * @see #setOperatorEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPriceCond_OperatorEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getOperatorEnum();

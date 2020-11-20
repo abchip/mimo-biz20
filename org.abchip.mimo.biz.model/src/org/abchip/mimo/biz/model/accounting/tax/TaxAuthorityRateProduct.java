@@ -184,7 +184,7 @@ public interface TaxAuthorityRateProduct extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Product Category</em>' reference.
 	 * @see #setProductCategory(ProductCategory)
 	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthorityRateProduct_ProductCategory()
-	 * @model keys="productCategoryId"
+	 * @model
 	 * @generated
 	 */
 	ProductCategory getProductCategory();
@@ -206,7 +206,7 @@ public interface TaxAuthorityRateProduct extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Product Store</em>' reference.
 	 * @see #setProductStore(ProductStore)
 	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthorityRateProduct_ProductStore()
-	 * @model keys="productStoreId"
+	 * @model
 	 * @generated
 	 */
 	ProductStore getProductStore();
@@ -280,7 +280,7 @@ public interface TaxAuthorityRateProduct extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Tax Authority Rate Type</em>' reference.
 	 * @see #setTaxAuthorityRateType(TaxAuthorityRateType)
 	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthorityRateProduct_TaxAuthorityRateType()
-	 * @model keys="taxAuthorityRateTypeId"
+	 * @model
 	 * @generated
 	 */
 	TaxAuthorityRateType getTaxAuthorityRateType();

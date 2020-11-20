@@ -36,7 +36,7 @@ public interface RoleTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getRoleTypeAttr_RoleType()
-	 * @model keys="roleTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

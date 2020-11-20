@@ -127,7 +127,7 @@ public interface PartyBenefit extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Period Type</em>' reference.
 	 * @see #setPeriodType(PeriodType)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPartyBenefit_PeriodType()
-	 * @model keys="periodTypeId"
+	 * @model
 	 * @generated
 	 */
 	PeriodType getPeriodType();
@@ -180,7 +180,7 @@ public interface PartyBenefit extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party Id From</em>' reference.
 	 * @see #setPartyIdFrom(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPartyBenefit_PartyIdFrom()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -203,7 +203,7 @@ public interface PartyBenefit extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Benefit Type</em>' reference.
 	 * @see #setBenefitType(BenefitType)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPartyBenefit_BenefitType()
-	 * @model keys="benefitTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -230,7 +230,7 @@ public interface PartyBenefit extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party Id To</em>' reference.
 	 * @see #setPartyIdTo(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPartyBenefit_PartyIdTo()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

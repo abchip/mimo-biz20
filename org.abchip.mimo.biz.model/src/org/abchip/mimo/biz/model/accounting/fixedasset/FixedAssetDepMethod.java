@@ -39,7 +39,7 @@ public interface FixedAssetDepMethod extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Depreciation Custom Method</em>' reference.
 	 * @see #setDepreciationCustomMethod(CustomMethod)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetDepMethod_DepreciationCustomMethod()
-	 * @model keys="customMethodId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface FixedAssetDepMethod extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Fixed Asset</em>' reference.
 	 * @see #setFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetDepMethod_FixedAsset()
-	 * @model keys="fixedAssetId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

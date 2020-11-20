@@ -36,7 +36,7 @@ public interface FixedAssetIdent extends EntityTyped<FixedAssetIdentType>, Entit
 	 * @return the value of the '<em>Fixed Asset</em>' reference.
 	 * @see #setFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetIdent_FixedAsset()
-	 * @model keys="fixedAssetId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface FixedAssetIdent extends EntityTyped<FixedAssetIdentType>, Entit
 	 * @return the value of the '<em>Fixed Asset Ident Type</em>' reference.
 	 * @see #setFixedAssetIdentType(FixedAssetIdentType)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetIdent_FixedAssetIdentType()
-	 * @model keys="fixedAssetIdentTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

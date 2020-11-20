@@ -54,7 +54,7 @@ public interface ProductPromoCode extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Created By User Login</em>' reference.
 	 * @see #setCreatedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCode_CreatedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getCreatedByUserLogin();
@@ -132,7 +132,7 @@ public interface ProductPromoCode extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Last Modified By User Login</em>' reference.
 	 * @see #setLastModifiedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCode_LastModifiedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getLastModifiedByUserLogin();
@@ -180,7 +180,7 @@ public interface ProductPromoCode extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Promo</em>' reference.
 	 * @see #setProductPromo(ProductPromo)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCode_ProductPromo()
-	 * @model keys="productPromoId"
+	 * @model
 	 * @generated
 	 */
 	ProductPromo getProductPromo();

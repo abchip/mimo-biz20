@@ -44,7 +44,7 @@ public interface ProductCategoryMember extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryMember_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -67,7 +67,7 @@ public interface ProductCategoryMember extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Category</em>' reference.
 	 * @see #setProductCategory(ProductCategory)
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryMember_ProductCategory()
-	 * @model keys="productCategoryId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

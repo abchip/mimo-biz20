@@ -62,7 +62,7 @@ public interface GlAccountGroup extends EntityTyped<GlAccountGroupType>, EntityI
 	 * @return the value of the '<em>Gl Account Group Type</em>' reference.
 	 * @see #setGlAccountGroupType(GlAccountGroupType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccountGroup_GlAccountGroupType()
-	 * @model keys="glAccountGroupTypeId"
+	 * @model
 	 * @generated
 	 */
 	GlAccountGroupType getGlAccountGroupType();

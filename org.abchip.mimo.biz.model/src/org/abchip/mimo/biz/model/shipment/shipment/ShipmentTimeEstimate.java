@@ -79,7 +79,7 @@ public interface ShipmentTimeEstimate extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Geo Id From</em>' reference.
 	 * @see #setGeoIdFrom(Geo)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentTimeEstimate_GeoIdFrom()
-	 * @model keys="geoId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -106,7 +106,7 @@ public interface ShipmentTimeEstimate extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Geo Id To</em>' reference.
 	 * @see #setGeoIdTo(Geo)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentTimeEstimate_GeoIdTo()
-	 * @model keys="geoId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -155,7 +155,7 @@ public interface ShipmentTimeEstimate extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Lead Time Uom</em>' reference.
 	 * @see #setLeadTimeUom(Uom)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentTimeEstimate_LeadTimeUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getLeadTimeUom();

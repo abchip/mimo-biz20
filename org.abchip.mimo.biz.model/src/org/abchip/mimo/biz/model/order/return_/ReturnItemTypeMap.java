@@ -36,7 +36,7 @@ public interface ReturnItemTypeMap extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Return Header Type</em>' reference.
 	 * @see #setReturnHeaderType(ReturnHeaderType)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemTypeMap_ReturnHeaderType()
-	 * @model keys="returnHeaderTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -87,7 +87,7 @@ public interface ReturnItemTypeMap extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Return Item Type</em>' reference.
 	 * @see #setReturnItemType(ReturnItemType)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemTypeMap_ReturnItemType()
-	 * @model keys="returnItemTypeId"
+	 * @model
 	 * @generated
 	 */
 	ReturnItemType getReturnItemType();

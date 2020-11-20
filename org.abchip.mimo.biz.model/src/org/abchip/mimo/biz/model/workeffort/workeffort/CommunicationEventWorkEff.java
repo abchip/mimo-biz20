@@ -37,7 +37,7 @@ public interface CommunicationEventWorkEff extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getCommunicationEventWorkEff_WorkEffort()
-	 * @model keys="workEffortId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -60,7 +60,7 @@ public interface CommunicationEventWorkEff extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Communication Event</em>' reference.
 	 * @see #setCommunicationEvent(CommunicationEvent)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getCommunicationEventWorkEff_CommunicationEvent()
-	 * @model keys="communicationEventId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

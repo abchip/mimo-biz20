@@ -40,7 +40,7 @@ public interface WebUserPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Web Preference Type</em>' reference.
 	 * @see #setWebPreferenceType(WebPreferenceType)
 	 * @see org.abchip.mimo.biz.model.content.preference.PreferencePackage#getWebUserPreference_WebPreferenceType()
-	 * @model keys="webPreferenceTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface WebUserPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>User Login</em>' reference.
 	 * @see #setUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.content.preference.PreferencePackage#getWebUserPreference_UserLogin()
-	 * @model keys="userLoginId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -86,7 +86,7 @@ public interface WebUserPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.content.preference.PreferencePackage#getWebUserPreference_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

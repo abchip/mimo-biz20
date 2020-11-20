@@ -37,7 +37,7 @@ public interface AgreementTermAttribute extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Agreement Term</em>' reference.
 	 * @see #setAgreementTerm(AgreementTerm)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementTermAttribute_AgreementTerm()
-	 * @model keys="agreementTermId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

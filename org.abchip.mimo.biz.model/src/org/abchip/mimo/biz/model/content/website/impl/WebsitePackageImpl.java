@@ -1221,9 +1221,7 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		// Initialize classes and features; add operations and parameters
 		initEClass(webAnalyticsConfigEClass, WebAnalyticsConfig.class, "WebAnalyticsConfig", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getWebAnalyticsConfig_WebAnalyticsType(), this.getWebAnalyticsType(), null, "webAnalyticsType", null, 1, 1, WebAnalyticsConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWebAnalyticsConfig_WebAnalyticsType().getEKeys().add(this.getWebAnalyticsType_WebAnalyticsTypeId());
 		initEReference(getWebAnalyticsConfig_WebSite(), theWebsitePackage_1.getWebSite(), null, "webSite", null, 1, 1, WebAnalyticsConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWebAnalyticsConfig_WebSite().getEKeys().add(theWebsitePackage_1.getWebSite_WebSiteId());
 		initEAttribute(getWebAnalyticsConfig_WebAnalyticsCode(), ecorePackage.getEString(), "webAnalyticsCode", null, 0, 1, WebAnalyticsConfig.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(webAnalyticsTypeEClass, WebAnalyticsType.class, "WebAnalyticsType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1231,15 +1229,11 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		initEAttribute(getWebAnalyticsType_Description(), ecorePackage.getEString(), "description", null, 0, 1, WebAnalyticsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getWebAnalyticsType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, WebAnalyticsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getWebAnalyticsType_ParentType(), this.getWebAnalyticsType(), null, "parentType", null, 0, 1, WebAnalyticsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWebAnalyticsType_ParentType().getEKeys().add(this.getWebAnalyticsType_WebAnalyticsTypeId());
 
 		initEClass(webSiteContentEClass, WebSiteContent.class, "WebSiteContent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getWebSiteContent_WebSite(), theWebsitePackage_1.getWebSite(), null, "webSite", null, 1, 1, WebSiteContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWebSiteContent_WebSite().getEKeys().add(theWebsitePackage_1.getWebSite_WebSiteId());
 		initEReference(getWebSiteContent_Content(), theContentPackage.getContent(), null, "content", null, 1, 1, WebSiteContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWebSiteContent_Content().getEKeys().add(theContentPackage.getContent_ContentId());
 		initEReference(getWebSiteContent_WebSiteContentType(), this.getWebSiteContentType(), null, "webSiteContentType", null, 1, 1, WebSiteContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWebSiteContent_WebSiteContentType().getEKeys().add(this.getWebSiteContentType_WebSiteContentTypeId());
 		initEAttribute(getWebSiteContent_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, WebSiteContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getWebSiteContent_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, WebSiteContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1248,16 +1242,13 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		initEAttribute(getWebSiteContentType_Description(), ecorePackage.getEString(), "description", null, 0, 1, WebSiteContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getWebSiteContentType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, WebSiteContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getWebSiteContentType_ParentType(), this.getWebSiteContentType(), null, "parentType", null, 0, 1, WebSiteContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWebSiteContentType_ParentType().getEKeys().add(this.getWebSiteContentType_WebSiteContentTypeId());
 
 		initEClass(webSitePathAliasEClass, WebSitePathAlias.class, "WebSitePathAlias", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getWebSitePathAlias_WebSite(), theWebsitePackage_1.getWebSite(), null, "webSite", null, 1, 1, WebSitePathAlias.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWebSitePathAlias_WebSite().getEKeys().add(theWebsitePackage_1.getWebSite_WebSiteId());
 		initEAttribute(getWebSitePathAlias_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, WebSitePathAlias.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getWebSitePathAlias_PathAlias(), ecorePackage.getEString(), "pathAlias", null, 1, 1, WebSitePathAlias.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getWebSitePathAlias_AliasTo(), ecorePackage.getEString(), "aliasTo", null, 0, 1, WebSitePathAlias.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getWebSitePathAlias_Content(), theContentPackage.getContent(), null, "content", null, 0, 1, WebSitePathAlias.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWebSitePathAlias_Content().getEKeys().add(theContentPackage.getContent_ContentId());
 		initEAttribute(getWebSitePathAlias_MapKey(), ecorePackage.getEString(), "mapKey", null, 0, 1, WebSitePathAlias.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getWebSitePathAlias_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, WebSitePathAlias.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 

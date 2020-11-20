@@ -76,7 +76,7 @@ public interface ReorderGuideline extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Geo</em>' reference.
 	 * @see #setGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getReorderGuideline_Geo()
-	 * @model keys="geoId"
+	 * @model
 	 * @generated
 	 */
 	Geo getGeo();
@@ -98,7 +98,7 @@ public interface ReorderGuideline extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getReorderGuideline_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -120,7 +120,7 @@ public interface ReorderGuideline extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getReorderGuideline_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();
@@ -169,7 +169,7 @@ public interface ReorderGuideline extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getReorderGuideline_Facility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getFacility();

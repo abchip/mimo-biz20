@@ -65,7 +65,7 @@ public interface ReturnHeader extends EntityTyped<ReturnHeaderType>, EntityInfo 
 	 * @return the value of the '<em>Created By</em>' reference.
 	 * @see #setCreatedBy(UserLogin)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeader_CreatedBy()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getCreatedBy();
@@ -87,7 +87,7 @@ public interface ReturnHeader extends EntityTyped<ReturnHeaderType>, EntityInfo 
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeader_CurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getCurrencyUom();
@@ -109,7 +109,7 @@ public interface ReturnHeader extends EntityTyped<ReturnHeaderType>, EntityInfo 
 	 * @return the value of the '<em>Destination Facility</em>' reference.
 	 * @see #setDestinationFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeader_DestinationFacility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getDestinationFacility();
@@ -157,7 +157,7 @@ public interface ReturnHeader extends EntityTyped<ReturnHeaderType>, EntityInfo 
 	 * @return the value of the '<em>Fin Account</em>' reference.
 	 * @see #setFinAccount(FinAccount)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeader_FinAccount()
-	 * @model keys="finAccountId"
+	 * @model
 	 * @generated
 	 */
 	FinAccount getFinAccount();
@@ -179,7 +179,7 @@ public interface ReturnHeader extends EntityTyped<ReturnHeaderType>, EntityInfo 
 	 * @return the value of the '<em>From Party</em>' reference.
 	 * @see #setFromParty(Party)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeader_FromParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getFromParty();
@@ -223,7 +223,7 @@ public interface ReturnHeader extends EntityTyped<ReturnHeaderType>, EntityInfo 
 	 * @return the value of the '<em>Origin Contact Mech</em>' reference.
 	 * @see #setOriginContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeader_OriginContactMech()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	ContactMech getOriginContactMech();
@@ -245,7 +245,7 @@ public interface ReturnHeader extends EntityTyped<ReturnHeaderType>, EntityInfo 
 	 * @return the value of the '<em>Payment Method</em>' reference.
 	 * @see #setPaymentMethod(PaymentMethod)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeader_PaymentMethod()
-	 * @model keys="paymentMethodId"
+	 * @model
 	 * @generated
 	 */
 	PaymentMethod getPaymentMethod();
@@ -267,7 +267,7 @@ public interface ReturnHeader extends EntityTyped<ReturnHeaderType>, EntityInfo 
 	 * @return the value of the '<em>Return Header Type</em>' reference.
 	 * @see #setReturnHeaderType(ReturnHeaderType)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeader_ReturnHeaderType()
-	 * @model keys="returnHeaderTypeId"
+	 * @model
 	 * @generated
 	 */
 	ReturnHeaderType getReturnHeaderType();
@@ -301,7 +301,7 @@ public interface ReturnHeader extends EntityTyped<ReturnHeaderType>, EntityInfo 
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeader_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -350,7 +350,7 @@ public interface ReturnHeader extends EntityTyped<ReturnHeaderType>, EntityInfo 
 	 * @return the value of the '<em>Billing Account</em>' reference.
 	 * @see #setBillingAccount(BillingAccount)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeader_BillingAccount()
-	 * @model keys="billingAccountId"
+	 * @model
 	 * @generated
 	 */
 	BillingAccount getBillingAccount();
@@ -410,7 +410,7 @@ public interface ReturnHeader extends EntityTyped<ReturnHeaderType>, EntityInfo 
 	 * @return the value of the '<em>To Party</em>' reference.
 	 * @see #setToParty(Party)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeader_ToParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getToParty();

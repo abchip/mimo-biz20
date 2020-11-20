@@ -62,7 +62,7 @@ public interface TenantDomainName extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Tenant</em>' reference.
 	 * @see #setTenant(Tenant)
 	 * @see org.abchip.mimo.biz.model.entity.tenant.TenantPackage#getTenantDomainName_Tenant()
-	 * @model keys="tenantId"
+	 * @model
 	 * @generated
 	 */
 	Tenant getTenant();

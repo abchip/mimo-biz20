@@ -40,7 +40,7 @@ public interface ProductStoreCatalog extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Store</em>' reference.
 	 * @see #setProductStore(ProductStore)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreCatalog_ProductStore()
-	 * @model keys="productStoreId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface ProductStoreCatalog extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Prod Catalog</em>' reference.
 	 * @see #setProdCatalog(ProdCatalog)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreCatalog_ProdCatalog()
-	 * @model keys="prodCatalogId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

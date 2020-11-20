@@ -38,7 +38,7 @@ public interface VendorProduct extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getVendorProduct_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface VendorProduct extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Vendor Party</em>' reference.
 	 * @see #setVendorParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getVendorProduct_VendorParty()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -84,7 +84,7 @@ public interface VendorProduct extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Store Group</em>' reference.
 	 * @see #setProductStoreGroup(ProductStoreGroup)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getVendorProduct_ProductStoreGroup()
-	 * @model keys="productStoreGroupId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

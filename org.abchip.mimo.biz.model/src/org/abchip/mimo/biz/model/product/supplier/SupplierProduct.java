@@ -59,7 +59,7 @@ public interface SupplierProduct extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getSupplierProduct_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -82,7 +82,7 @@ public interface SupplierProduct extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getSupplierProduct_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -105,7 +105,7 @@ public interface SupplierProduct extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getSupplierProduct_CurrencyUom()
-	 * @model keys="uomId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -365,7 +365,7 @@ public interface SupplierProduct extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Quantity Uom</em>' reference.
 	 * @see #setQuantityUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getSupplierProduct_QuantityUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getQuantityUom();
@@ -439,7 +439,7 @@ public interface SupplierProduct extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Supplier Pref Order</em>' reference.
 	 * @see #setSupplierPrefOrder(SupplierPrefOrder)
 	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getSupplierProduct_SupplierPrefOrder()
-	 * @model keys="supplierPrefOrderId"
+	 * @model
 	 * @generated
 	 */
 	SupplierPrefOrder getSupplierPrefOrder();
@@ -513,7 +513,7 @@ public interface SupplierProduct extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Supplier Rating Type</em>' reference.
 	 * @see #setSupplierRatingType(SupplierRatingType)
 	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getSupplierProduct_SupplierRatingType()
-	 * @model keys="supplierRatingTypeId"
+	 * @model
 	 * @generated
 	 */
 	SupplierRatingType getSupplierRatingType();

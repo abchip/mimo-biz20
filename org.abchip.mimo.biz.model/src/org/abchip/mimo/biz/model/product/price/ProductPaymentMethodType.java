@@ -42,7 +42,7 @@ public interface ProductPaymentMethodType extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPaymentMethodType_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -65,7 +65,7 @@ public interface ProductPaymentMethodType extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Payment Method Type</em>' reference.
 	 * @see #setPaymentMethodType(PaymentMethodType)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPaymentMethodType_PaymentMethodType()
-	 * @model keys="paymentMethodTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -88,7 +88,7 @@ public interface ProductPaymentMethodType extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Product Price Purpose</em>' reference.
 	 * @see #setProductPricePurpose(ProductPricePurpose)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPaymentMethodType_ProductPricePurpose()
-	 * @model keys="productPricePurposeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

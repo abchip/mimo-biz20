@@ -64,7 +64,7 @@ public interface QuoteItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Quote</em>' reference.
 	 * @see #setQuote(Quote)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_Quote()
-	 * @model keys="quoteId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -139,7 +139,7 @@ public interface QuoteItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Cust Request</em>' reference.
 	 * @see #setCustRequest(CustRequest)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_CustRequest()
-	 * @model keys="custRequestId"
+	 * @model
 	 * @generated
 	 */
 	CustRequest getCustRequest();
@@ -187,7 +187,7 @@ public interface QuoteItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Deliverable Type</em>' reference.
 	 * @see #setDeliverableType(DeliverableType)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_DeliverableType()
-	 * @model keys="deliverableTypeId"
+	 * @model
 	 * @generated
 	 */
 	DeliverableType getDeliverableType();
@@ -283,7 +283,7 @@ public interface QuoteItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();
@@ -305,7 +305,7 @@ public interface QuoteItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Feature</em>' reference.
 	 * @see #setProductFeature(ProductFeature)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_ProductFeature()
-	 * @model keys="productFeatureId"
+	 * @model
 	 * @generated
 	 */
 	ProductFeature getProductFeature();
@@ -511,7 +511,7 @@ public interface QuoteItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Skill Type</em>' reference.
 	 * @see #setSkillType(SkillType)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_SkillType()
-	 * @model keys="skillTypeId"
+	 * @model
 	 * @generated
 	 */
 	SkillType getSkillType();
@@ -533,7 +533,7 @@ public interface QuoteItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Uom</em>' reference.
 	 * @see #setUom(Uom)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_Uom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getUom();
@@ -555,7 +555,7 @@ public interface QuoteItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_WorkEffort()
-	 * @model keys="workEffortId"
+	 * @model
 	 * @generated
 	 */
 	WorkEffort getWorkEffort();

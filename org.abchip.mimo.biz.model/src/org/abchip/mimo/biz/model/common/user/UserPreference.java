@@ -39,7 +39,7 @@ public interface UserPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>User Login</em>' reference.
 	 * @see #setUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.common.user.UserPackage#getUserPreference_UserLogin()
-	 * @model keys="userLoginId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -89,8 +89,7 @@ public interface UserPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>User Pref Group Type</em>' reference.
 	 * @see #setUserPrefGroupType(UserPrefGroupType)
 	 * @see org.abchip.mimo.biz.model.common.user.UserPackage#getUserPreference_UserPrefGroupType()
-	 * @model keys="userPrefGroupTypeId"
-	 *        annotation="mimo-ent-slot help='Used to assemble groups of preferences'"
+	 * @model annotation="mimo-ent-slot help='Used to assemble groups of preferences'"
 	 * @generated
 	 */
 	UserPrefGroupType getUserPrefGroupType();

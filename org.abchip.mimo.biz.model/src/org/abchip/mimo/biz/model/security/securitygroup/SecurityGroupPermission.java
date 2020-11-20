@@ -38,7 +38,7 @@ public interface SecurityGroupPermission extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Group</em>' reference.
 	 * @see #setGroup(SecurityGroup)
 	 * @see org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage#getSecurityGroupPermission_Group()
-	 * @model keys="groupId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface SecurityGroupPermission extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Permission</em>' reference.
 	 * @see #setPermission(SecurityPermission)
 	 * @see org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage#getSecurityGroupPermission_Permission()
-	 * @model keys="permissionId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

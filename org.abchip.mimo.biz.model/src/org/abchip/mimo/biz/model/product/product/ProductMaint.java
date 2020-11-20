@@ -45,7 +45,7 @@ public interface ProductMaint extends EntityTyped<ProductMaintType>, EntityInfo 
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductMaint_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -94,8 +94,7 @@ public interface ProductMaint extends EntityTyped<ProductMaintType>, EntityInfo 
 	 * @return the value of the '<em>Interval Uom</em>' reference.
 	 * @see #setIntervalUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductMaint_IntervalUom()
-	 * @model keys="uomId"
-	 *        annotation="mimo-ent-slot help='UOM for intervalQuantity; if used intervalMeterTypeId is generally not used (ie one or the other)'"
+	 * @model annotation="mimo-ent-slot help='UOM for intervalQuantity; if used intervalMeterTypeId is generally not used (ie one or the other)'"
 	 * @generated
 	 */
 	Uom getIntervalUom();
@@ -143,8 +142,7 @@ public interface ProductMaint extends EntityTyped<ProductMaintType>, EntityInfo 
 	 * @return the value of the '<em>Maint Template Work Effort</em>' reference.
 	 * @see #setMaintTemplateWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductMaint_MaintTemplateWorkEffort()
-	 * @model keys="workEffortId"
-	 *        annotation="mimo-ent-slot help='Template of Maintenance Plan. WorkEffort may have WorkEffortAssocs for tasks/breakdown detailes'"
+	 * @model annotation="mimo-ent-slot help='Template of Maintenance Plan. WorkEffort may have WorkEffortAssocs for tasks/breakdown detailes'"
 	 * @generated
 	 */
 	WorkEffort getMaintTemplateWorkEffort();
@@ -166,7 +164,7 @@ public interface ProductMaint extends EntityTyped<ProductMaintType>, EntityInfo 
 	 * @return the value of the '<em>Product Maint Type</em>' reference.
 	 * @see #setProductMaintType(ProductMaintType)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductMaint_ProductMaintType()
-	 * @model keys="productMaintTypeId"
+	 * @model
 	 * @generated
 	 */
 	ProductMaintType getProductMaintType();
@@ -216,8 +214,7 @@ public interface ProductMaint extends EntityTyped<ProductMaintType>, EntityInfo 
 	 * @return the value of the '<em>Interval Meter Type</em>' reference.
 	 * @see #setIntervalMeterType(ProductMeterType)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductMaint_IntervalMeterType()
-	 * @model keys="productMeterTypeId"
-	 *        annotation="mimo-ent-slot help='Meter Type for intervalQuantity; if used intervalUomId is generally not used (ie one or the other)'"
+	 * @model annotation="mimo-ent-slot help='Meter Type for intervalQuantity; if used intervalUomId is generally not used (ie one or the other)'"
 	 * @generated
 	 */
 	ProductMeterType getIntervalMeterType();

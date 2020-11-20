@@ -33,7 +33,7 @@ public interface QuoteNote extends BizEntityNote {
 	 * @return the value of the '<em>Quote</em>' reference.
 	 * @see #setQuote(Quote)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteNote_Quote()
-	 * @model keys="quoteId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

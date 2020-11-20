@@ -99,7 +99,7 @@ public interface FinAccountTransType extends EntityType<FinAccountTrans>, Entity
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(FinAccountTransType)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTransType_ParentType()
-	 * @model keys="finAccountTransTypeId"
+	 * @model
 	 * @generated
 	 */
 	FinAccountTransType getParentType();

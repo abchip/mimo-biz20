@@ -115,7 +115,7 @@ public interface ShoppingList extends EntityTyped<ShoppingListType>, EntityInfo 
 	 * @return the value of the '<em>Contact Mech</em>' reference.
 	 * @see #setContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingList_ContactMech()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	ContactMech getContactMech();
@@ -311,7 +311,7 @@ public interface ShoppingList extends EntityTyped<ShoppingListType>, EntityInfo 
 	 * @return the value of the '<em>Parent Shopping List</em>' reference.
 	 * @see #setParentShoppingList(ShoppingList)
 	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingList_ParentShoppingList()
-	 * @model keys="shoppingListId"
+	 * @model
 	 * @generated
 	 */
 	ShoppingList getParentShoppingList();
@@ -333,7 +333,7 @@ public interface ShoppingList extends EntityTyped<ShoppingListType>, EntityInfo 
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingList_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -355,7 +355,7 @@ public interface ShoppingList extends EntityTyped<ShoppingListType>, EntityInfo 
 	 * @return the value of the '<em>Payment Method</em>' reference.
 	 * @see #setPaymentMethod(PaymentMethod)
 	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingList_PaymentMethod()
-	 * @model keys="paymentMethodId"
+	 * @model
 	 * @generated
 	 */
 	PaymentMethod getPaymentMethod();
@@ -377,7 +377,7 @@ public interface ShoppingList extends EntityTyped<ShoppingListType>, EntityInfo 
 	 * @return the value of the '<em>Product Promo Code</em>' reference.
 	 * @see #setProductPromoCode(ProductPromoCode)
 	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingList_ProductPromoCode()
-	 * @model keys="productPromoCodeId"
+	 * @model
 	 * @generated
 	 */
 	ProductPromoCode getProductPromoCode();
@@ -399,7 +399,7 @@ public interface ShoppingList extends EntityTyped<ShoppingListType>, EntityInfo 
 	 * @return the value of the '<em>Product Store</em>' reference.
 	 * @see #setProductStore(ProductStore)
 	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingList_ProductStore()
-	 * @model keys="productStoreId"
+	 * @model
 	 * @generated
 	 */
 	ProductStore getProductStore();
@@ -421,7 +421,7 @@ public interface ShoppingList extends EntityTyped<ShoppingListType>, EntityInfo 
 	 * @return the value of the '<em>Recurrence Info</em>' reference.
 	 * @see #setRecurrenceInfo(RecurrenceInfo)
 	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingList_RecurrenceInfo()
-	 * @model keys="recurrenceInfoId"
+	 * @model
 	 * @generated
 	 */
 	RecurrenceInfo getRecurrenceInfo();
@@ -481,7 +481,7 @@ public interface ShoppingList extends EntityTyped<ShoppingListType>, EntityInfo 
 	 * @return the value of the '<em>Shopping List Type</em>' reference.
 	 * @see #setShoppingListType(ShoppingListType)
 	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingList_ShoppingListType()
-	 * @model keys="shoppingListTypeId"
+	 * @model
 	 * @generated
 	 */
 	ShoppingListType getShoppingListType();

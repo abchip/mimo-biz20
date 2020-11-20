@@ -121,7 +121,7 @@ public interface CommunicationEvent extends EntityTyped<CommunicationEventType>,
 	 * @return the value of the '<em>Communication Event Type</em>' reference.
 	 * @see #setCommunicationEventType(CommunicationEventType)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_CommunicationEventType()
-	 * @model keys="communicationEventTypeId"
+	 * @model
 	 * @generated
 	 */
 	CommunicationEventType getCommunicationEventType();
@@ -143,7 +143,7 @@ public interface CommunicationEvent extends EntityTyped<CommunicationEventType>,
 	 * @return the value of the '<em>Contact List</em>' reference.
 	 * @see #setContactList(ContactList)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_ContactList()
-	 * @model keys="contactListId"
+	 * @model
 	 * @generated
 	 */
 	ContactList getContactList();
@@ -169,7 +169,7 @@ public interface CommunicationEvent extends EntityTyped<CommunicationEventType>,
 	 * @return the value of the '<em>Contact Mech Id From</em>' reference.
 	 * @see #setContactMechIdFrom(ContactMech)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_ContactMechIdFrom()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	ContactMech getContactMechIdFrom();
@@ -195,7 +195,7 @@ public interface CommunicationEvent extends EntityTyped<CommunicationEventType>,
 	 * @return the value of the '<em>Contact Mech Id To</em>' reference.
 	 * @see #setContactMechIdTo(ContactMech)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_ContactMechIdTo()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	ContactMech getContactMechIdTo();
@@ -217,7 +217,7 @@ public interface CommunicationEvent extends EntityTyped<CommunicationEventType>,
 	 * @return the value of the '<em>Contact Mech Type</em>' reference.
 	 * @see #setContactMechType(ContactMechType)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_ContactMechType()
-	 * @model keys="contactMechTypeId"
+	 * @model
 	 * @generated
 	 */
 	ContactMechType getContactMechType();
@@ -265,7 +265,7 @@ public interface CommunicationEvent extends EntityTyped<CommunicationEventType>,
 	 * @return the value of the '<em>Content Mime Type</em>' reference.
 	 * @see #setContentMimeType(MimeType)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_ContentMimeType()
-	 * @model keys="mimeTypeId"
+	 * @model
 	 * @generated
 	 */
 	MimeType getContentMimeType();
@@ -525,7 +525,7 @@ public interface CommunicationEvent extends EntityTyped<CommunicationEventType>,
 	 * @return the value of the '<em>Party Id From</em>' reference.
 	 * @see #setPartyIdFrom(Party)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_PartyIdFrom()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getPartyIdFrom();
@@ -551,7 +551,7 @@ public interface CommunicationEvent extends EntityTyped<CommunicationEventType>,
 	 * @return the value of the '<em>Party Id To</em>' reference.
 	 * @see #setPartyIdTo(Party)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_PartyIdTo()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getPartyIdTo();
@@ -573,7 +573,7 @@ public interface CommunicationEvent extends EntityTyped<CommunicationEventType>,
 	 * @return the value of the '<em>Reason Enum</em>' reference.
 	 * @see #setReasonEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_ReasonEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getReasonEnum();
@@ -599,7 +599,7 @@ public interface CommunicationEvent extends EntityTyped<CommunicationEventType>,
 	 * @return the value of the '<em>Role Type Id From</em>' reference.
 	 * @see #setRoleTypeIdFrom(RoleType)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_RoleTypeIdFrom()
-	 * @model keys="roleTypeId"
+	 * @model
 	 * @generated
 	 */
 	RoleType getRoleTypeIdFrom();
@@ -625,7 +625,7 @@ public interface CommunicationEvent extends EntityTyped<CommunicationEventType>,
 	 * @return the value of the '<em>Role Type Id To</em>' reference.
 	 * @see #setRoleTypeIdTo(RoleType)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_RoleTypeIdTo()
-	 * @model keys="roleTypeId"
+	 * @model
 	 * @generated
 	 */
 	RoleType getRoleTypeIdTo();
@@ -647,7 +647,7 @@ public interface CommunicationEvent extends EntityTyped<CommunicationEventType>,
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

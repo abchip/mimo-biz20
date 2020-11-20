@@ -62,7 +62,7 @@ public interface GlAccountCategory extends EntityTyped<GlAccountCategoryType>, E
 	 * @return the value of the '<em>Gl Account Category Type</em>' reference.
 	 * @see #setGlAccountCategoryType(GlAccountCategoryType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccountCategory_GlAccountCategoryType()
-	 * @model keys="glAccountCategoryTypeId"
+	 * @model
 	 * @generated
 	 */
 	GlAccountCategoryType getGlAccountCategoryType();

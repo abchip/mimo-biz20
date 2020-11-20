@@ -85,7 +85,7 @@ public interface ReturnAdjustmentType extends EntityType<ReturnAdjustment>, Enti
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(ReturnAdjustmentType)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustmentType_ParentType()
-	 * @model keys="returnAdjustmentTypeId"
+	 * @model
 	 * @generated
 	 */
 	ReturnAdjustmentType getParentType();

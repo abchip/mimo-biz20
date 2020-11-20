@@ -101,7 +101,7 @@ public interface Delivery extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Dest Facility</em>' reference.
 	 * @see #setDestFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getDelivery_DestFacility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getDestFacility();
@@ -228,7 +228,7 @@ public interface Delivery extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Fixed Asset</em>' reference.
 	 * @see #setFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getDelivery_FixedAsset()
-	 * @model keys="fixedAssetId"
+	 * @model
 	 * @generated
 	 */
 	FixedAsset getFixedAsset();
@@ -276,7 +276,7 @@ public interface Delivery extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Origin Facility</em>' reference.
 	 * @see #setOriginFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getDelivery_OriginFacility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getOriginFacility();

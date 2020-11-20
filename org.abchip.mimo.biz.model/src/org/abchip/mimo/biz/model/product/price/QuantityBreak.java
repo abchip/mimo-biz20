@@ -64,7 +64,7 @@ public interface QuantityBreak extends EntityTyped<QuantityBreakType>, EntityInf
 	 * @return the value of the '<em>Quantity Break Type</em>' reference.
 	 * @see #setQuantityBreakType(QuantityBreakType)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getQuantityBreak_QuantityBreakType()
-	 * @model keys="quantityBreakTypeId"
+	 * @model
 	 * @generated
 	 */
 	QuantityBreakType getQuantityBreakType();

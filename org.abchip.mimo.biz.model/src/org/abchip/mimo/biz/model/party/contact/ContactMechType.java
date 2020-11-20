@@ -88,7 +88,7 @@ public interface ContactMechType extends EntityType<ContactMech>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(ContactMechType)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMechType_ParentType()
-	 * @model keys="contactMechTypeId"
+	 * @model
 	 * @generated
 	 */
 	ContactMechType getParentType();

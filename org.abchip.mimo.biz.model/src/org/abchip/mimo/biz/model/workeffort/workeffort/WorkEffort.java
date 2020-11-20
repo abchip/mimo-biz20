@@ -284,7 +284,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Current Status</em>' reference.
 	 * @see #setCurrentStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_CurrentStatus()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getCurrentStatus();
@@ -336,7 +336,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Estimate Calc Method</em>' reference.
 	 * @see #setEstimateCalcMethod(CustomMethod)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_EstimateCalcMethod()
-	 * @model keys="customMethodId"
+	 * @model
 	 * @generated
 	 */
 	CustomMethod getEstimateCalcMethod();
@@ -462,7 +462,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_Facility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getFacility();
@@ -484,8 +484,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Fixed Asset</em>' reference.
 	 * @see #setFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_FixedAsset()
-	 * @model keys="fixedAssetId"
-	 *        annotation="mimo-ent-slot help='Deprecated - use the WorkEffortFixedAssetAssign entity instead'"
+	 * @model annotation="mimo-ent-slot help='Deprecated - use the WorkEffortFixedAssetAssign entity instead'"
 	 * @generated
 	 */
 	FixedAsset getFixedAsset();
@@ -637,7 +636,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Money Uom</em>' reference.
 	 * @see #setMoneyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_MoneyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getMoneyUom();
@@ -659,7 +658,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Note</em>' reference.
 	 * @see #setNote(NoteData)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_Note()
-	 * @model keys="noteId"
+	 * @model
 	 * @generated
 	 */
 	NoteData getNote();
@@ -811,8 +810,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Recurrence Info</em>' reference.
 	 * @see #setRecurrenceInfo(RecurrenceInfo)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_RecurrenceInfo()
-	 * @model keys="recurrenceInfoId"
-	 *        annotation="mimo-ent-slot help='Deprecated - use the tempExprId field instead'"
+	 * @model annotation="mimo-ent-slot help='Deprecated - use the tempExprId field instead'"
 	 * @generated
 	 */
 	RecurrenceInfo getRecurrenceInfo();
@@ -941,7 +939,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Runtime Data</em>' reference.
 	 * @see #setRuntimeData(RuntimeData)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_RuntimeData()
-	 * @model keys="runtimeDataId"
+	 * @model
 	 * @generated
 	 */
 	RuntimeData getRuntimeData();
@@ -963,7 +961,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Scope Enum</em>' reference.
 	 * @see #setScopeEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_ScopeEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getScopeEnum();
@@ -1115,7 +1113,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Temp Expr</em>' reference.
 	 * @see #setTempExpr(TemporalExpression)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_TempExpr()
-	 * @model keys="tempExprId"
+	 * @model
 	 * @generated
 	 */
 	TemporalExpression getTempExpr();
@@ -1255,7 +1253,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Work Effort Contact Mechs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortContactMechs()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<WorkEffortContactMech> getWorkEffortContactMechs();
@@ -1268,7 +1266,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Work Effort Cost Calcs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortCostCalcs()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<WorkEffortCostCalc> getWorkEffortCostCalcs();
@@ -1305,7 +1303,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Work Effort Fixed Asset Assigns</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortFixedAssetAssigns()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<WorkEffortFixedAssetAssign> getWorkEffortFixedAssetAssigns();
@@ -1392,7 +1390,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Accommodation Map</em>' reference.
 	 * @see #setAccommodationMap(AccommodationMap)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_AccommodationMap()
-	 * @model keys="accommodationMapId"
+	 * @model
 	 * @generated
 	 */
 	AccommodationMap getAccommodationMap();
@@ -1414,7 +1412,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Accommodation Spot</em>' reference.
 	 * @see #setAccommodationSpot(AccommodationSpot)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_AccommodationSpot()
-	 * @model keys="accommodationSpotId"
+	 * @model
 	 * @generated
 	 */
 	AccommodationSpot getAccommodationSpot();
@@ -1474,8 +1472,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Work Effort Parent</em>' reference.
 	 * @see #setWorkEffortParent(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortParent()
-	 * @model keys="workEffortId"
-	 *        annotation="mimo-ent-slot help='The primary parent (or the like); it should be one of the parent WorkEfforts already setup in WorkEffortAssoc'"
+	 * @model annotation="mimo-ent-slot help='The primary parent (or the like); it should be one of the parent WorkEfforts already setup in WorkEffortAssoc'"
 	 * @generated
 	 */
 	WorkEffort getWorkEffortParent();
@@ -1497,7 +1494,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Work Effort Purpose Type</em>' reference.
 	 * @see #setWorkEffortPurposeType(WorkEffortPurposeType)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortPurposeType()
-	 * @model keys="workEffortPurposeTypeId"
+	 * @model
 	 * @generated
 	 */
 	WorkEffortPurposeType getWorkEffortPurposeType();
@@ -1520,7 +1517,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Work Effort Reviews</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortReviews()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint reviewDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints reviewDate='*NOW'"
 	 * @generated
 	 */
 	List<WorkEffortReview> getWorkEffortReviews();
@@ -1545,7 +1542,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Work Effort Statuses</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortStatuses()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint statusDatetime='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints statusDatetime='*NOW'"
 	 * @generated
 	 */
 	List<WorkEffortStatus> getWorkEffortStatuses();
@@ -1558,7 +1555,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Work Effort Survey Appls</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortSurveyAppls()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<WorkEffortSurveyAppl> getWorkEffortSurveyAppls();
@@ -1570,7 +1567,7 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @return the value of the '<em>Work Effort Type</em>' reference.
 	 * @see #setWorkEffortType(WorkEffortType)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortType()
-	 * @model keys="workEffortTypeId"
+	 * @model
 	 * @generated
 	 */
 	WorkEffortType getWorkEffortType();

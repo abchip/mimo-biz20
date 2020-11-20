@@ -113,7 +113,7 @@ public interface PaymentGatewayResponse extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_CurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getCurrencyUom();
@@ -291,7 +291,7 @@ public interface PaymentGatewayResponse extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order Payment Preference</em>' reference.
 	 * @see #setOrderPaymentPreference(OrderPaymentPreference)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_OrderPaymentPreference()
-	 * @model keys="orderPaymentPreferenceId"
+	 * @model
 	 * @generated
 	 */
 	OrderPaymentPreference getOrderPaymentPreference();
@@ -313,7 +313,7 @@ public interface PaymentGatewayResponse extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Payment Method</em>' reference.
 	 * @see #setPaymentMethod(PaymentMethod)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_PaymentMethod()
-	 * @model keys="paymentMethodId"
+	 * @model
 	 * @generated
 	 */
 	PaymentMethod getPaymentMethod();
@@ -335,7 +335,7 @@ public interface PaymentGatewayResponse extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Payment Method Type</em>' reference.
 	 * @see #setPaymentMethodType(PaymentMethodType)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_PaymentMethodType()
-	 * @model keys="paymentMethodTypeId"
+	 * @model
 	 * @generated
 	 */
 	PaymentMethodType getPaymentMethodType();
@@ -357,7 +357,7 @@ public interface PaymentGatewayResponse extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Payment Service Type Enum</em>' reference.
 	 * @see #setPaymentServiceTypeEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_PaymentServiceTypeEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getPaymentServiceTypeEnum();
@@ -519,7 +519,7 @@ public interface PaymentGatewayResponse extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Trans Code Enum</em>' reference.
 	 * @see #setTransCodeEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_TransCodeEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getTransCodeEnum();

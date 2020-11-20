@@ -187,7 +187,7 @@ public interface ShipmentBoxType extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Dimension Uom</em>' reference.
 	 * @see #setDimensionUom(Uom)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentBoxType_DimensionUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getDimensionUom();
@@ -209,7 +209,7 @@ public interface ShipmentBoxType extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Weight Uom</em>' reference.
 	 * @see #setWeightUom(Uom)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentBoxType_WeightUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getWeightUom();

@@ -39,7 +39,7 @@ public interface WorkEffortInventoryAssign extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortInventoryAssign_WorkEffort()
-	 * @model keys="workEffortId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface WorkEffortInventoryAssign extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Inventory Item</em>' reference.
 	 * @see #setInventoryItem(InventoryItem)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortInventoryAssign_InventoryItem()
-	 * @model keys="inventoryItemId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -111,7 +111,7 @@ public interface WorkEffortInventoryAssign extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortInventoryAssign_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

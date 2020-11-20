@@ -37,7 +37,7 @@ public interface FacilityAttribute extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityAttribute_Facility()
-	 * @model keys="facilityId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

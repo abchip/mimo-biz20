@@ -21,7 +21,7 @@ package org.abchip.mimo.biz.model.party.contact;
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getEmailAddress()
- * @model
+ * @model annotation="mimo-ent-frame-constraints contactMechType='EMAIL_ADDRESS'"
  * @generated
  */
 public interface EmailAddress extends ContactMech {

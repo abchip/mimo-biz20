@@ -68,7 +68,7 @@ public interface DataResource extends EntityTyped<DataResourceType>, EntityInfo 
 	 * @return the value of the '<em>Created By User Login</em>' reference.
 	 * @see #setCreatedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResource_CreatedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getCreatedByUserLogin();
@@ -116,7 +116,7 @@ public interface DataResource extends EntityTyped<DataResourceType>, EntityInfo 
 	 * @return the value of the '<em>Data Category</em>' reference.
 	 * @see #setDataCategory(DataCategory)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResource_DataCategory()
-	 * @model keys="dataCategoryId"
+	 * @model
 	 * @generated
 	 */
 	DataCategory getDataCategory();
@@ -189,7 +189,7 @@ public interface DataResource extends EntityTyped<DataResourceType>, EntityInfo 
 	 * @return the value of the '<em>Character Set</em>' reference.
 	 * @see #setCharacterSet(CharacterSet)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResource_CharacterSet()
-	 * @model keys="characterSetId"
+	 * @model
 	 * @generated
 	 */
 	CharacterSet getCharacterSet();
@@ -249,7 +249,7 @@ public interface DataResource extends EntityTyped<DataResourceType>, EntityInfo 
 	 * @return the value of the '<em>Data Resource Type</em>' reference.
 	 * @see #setDataResourceType(DataResourceType)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResource_DataResourceType()
-	 * @model keys="dataResourceTypeId"
+	 * @model
 	 * @generated
 	 */
 	DataResourceType getDataResourceType();
@@ -271,7 +271,7 @@ public interface DataResource extends EntityTyped<DataResourceType>, EntityInfo 
 	 * @return the value of the '<em>Data Source</em>' reference.
 	 * @see #setDataSource(DataSource)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResource_DataSource()
-	 * @model keys="dataSourceId"
+	 * @model
 	 * @generated
 	 */
 	DataSource getDataSource();
@@ -293,7 +293,7 @@ public interface DataResource extends EntityTyped<DataResourceType>, EntityInfo 
 	 * @return the value of the '<em>Data Template Type</em>' reference.
 	 * @see #setDataTemplateType(DataTemplateType)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResource_DataTemplateType()
-	 * @model keys="dataTemplateTypeId"
+	 * @model
 	 * @generated
 	 */
 	DataTemplateType getDataTemplateType();
@@ -346,7 +346,7 @@ public interface DataResource extends EntityTyped<DataResourceType>, EntityInfo 
 	 * @return the value of the '<em>Last Modified By User Login</em>' reference.
 	 * @see #setLastModifiedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResource_LastModifiedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getLastModifiedByUserLogin();
@@ -420,7 +420,7 @@ public interface DataResource extends EntityTyped<DataResourceType>, EntityInfo 
 	 * @return the value of the '<em>Mime Type</em>' reference.
 	 * @see #setMimeType(MimeType)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResource_MimeType()
-	 * @model keys="mimeTypeId"
+	 * @model
 	 * @generated
 	 */
 	MimeType getMimeType();
@@ -508,7 +508,7 @@ public interface DataResource extends EntityTyped<DataResourceType>, EntityInfo 
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResource_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -530,7 +530,7 @@ public interface DataResource extends EntityTyped<DataResourceType>, EntityInfo 
 	 * @return the value of the '<em>Survey</em>' reference.
 	 * @see #setSurvey(Survey)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResource_Survey()
-	 * @model keys="surveyId"
+	 * @model
 	 * @generated
 	 */
 	Survey getSurvey();
@@ -552,7 +552,7 @@ public interface DataResource extends EntityTyped<DataResourceType>, EntityInfo 
 	 * @return the value of the '<em>Survey Response</em>' reference.
 	 * @see #setSurveyResponse(SurveyResponse)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResource_SurveyResponse()
-	 * @model keys="surveyResponseId"
+	 * @model
 	 * @generated
 	 */
 	SurveyResponse getSurveyResponse();

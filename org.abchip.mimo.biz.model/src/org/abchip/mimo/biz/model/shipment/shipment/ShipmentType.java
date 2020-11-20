@@ -87,7 +87,7 @@ public interface ShipmentType extends EntityType<Shipment>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(ShipmentType)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentType_ParentType()
-	 * @model keys="shipmentTypeId"
+	 * @model
 	 * @generated
 	 */
 	ShipmentType getParentType();

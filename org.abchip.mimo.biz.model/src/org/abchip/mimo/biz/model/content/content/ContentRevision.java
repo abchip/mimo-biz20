@@ -38,7 +38,7 @@ public interface ContentRevision extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentRevision_Content()
-	 * @model keys="contentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -87,7 +87,7 @@ public interface ContentRevision extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Committed By Party</em>' reference.
 	 * @see #setCommittedByParty(Party)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentRevision_CommittedByParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getCommittedByParty();

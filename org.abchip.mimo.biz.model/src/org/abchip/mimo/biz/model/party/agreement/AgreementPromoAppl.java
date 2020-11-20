@@ -41,7 +41,7 @@ public interface AgreementPromoAppl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Promo</em>' reference.
 	 * @see #setProductPromo(ProductPromo)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementPromoAppl_ProductPromo()
-	 * @model keys="productPromoId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface AgreementPromoAppl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Agreement</em>' reference.
 	 * @see #setAgreement(Agreement)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementPromoAppl_Agreement()
-	 * @model keys="agreementId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

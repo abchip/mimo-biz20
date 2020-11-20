@@ -910,22 +910,15 @@ public class NeedPackageImpl extends EPackageImpl implements NeedPackage {
 
 		initEClass(partyNeedEClass, PartyNeed.class, "PartyNeed", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPartyNeed_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, PartyNeed.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyNeed_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getPartyNeed_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 1, 1, PartyNeed.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyNeed_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEAttribute(getPartyNeed_PartyNeedId(), ecorePackage.getEString(), "partyNeedId", null, 1, 1, PartyNeed.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPartyNeed_CommunicationEvent(), theCommunicationPackage.getCommunicationEvent(), null, "communicationEvent", null, 0, 1, PartyNeed.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyNeed_CommunicationEvent().getEKeys().add(theCommunicationPackage.getCommunicationEvent_CommunicationEventId());
 		initEAttribute(getPartyNeed_DatetimeRecorded(), ecorePackage.getEDate(), "datetimeRecorded", null, 0, 1, PartyNeed.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyNeed_Description(), ecorePackage.getEString(), "description", null, 0, 1, PartyNeed.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPartyNeed_NeedType(), this.getNeedType(), null, "needType", null, 0, 1, PartyNeed.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyNeed_NeedType().getEKeys().add(this.getNeedType_NeedTypeId());
 		initEReference(getPartyNeed_PartyType(), thePartyPackage_1.getPartyType(), null, "partyType", null, 0, 1, PartyNeed.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyNeed_PartyType().getEKeys().add(thePartyPackage_1.getPartyType_PartyTypeId());
 		initEReference(getPartyNeed_Product(), theProductPackage.getProduct(), null, "product", null, 0, 1, PartyNeed.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyNeed_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEReference(getPartyNeed_ProductCategory(), theCategoryPackage.getProductCategory(), null, "productCategory", null, 0, 1, PartyNeed.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyNeed_ProductCategory().getEKeys().add(theCategoryPackage.getProductCategory_ProductCategoryId());
 		initEAttribute(getPartyNeed_VisitId(), ecorePackage.getEString(), "visitId", null, 0, 1, PartyNeed.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create annotations

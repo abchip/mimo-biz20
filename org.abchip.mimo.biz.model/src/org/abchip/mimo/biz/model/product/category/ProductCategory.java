@@ -108,7 +108,7 @@ public interface ProductCategory extends EntityTyped<ProductCategoryType>, Entit
 	 * @return the value of the '<em>Current Product Category Rollups</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_CurrentProductCategoryRollups()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductCategoryRollup> getCurrentProductCategoryRollups();
@@ -251,7 +251,7 @@ public interface ProductCategory extends EntityTyped<ProductCategoryType>, Entit
 	 * @return the value of the '<em>Market Interests</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_MarketInterests()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<MarketInterest> getMarketInterests();
@@ -263,7 +263,7 @@ public interface ProductCategory extends EntityTyped<ProductCategoryType>, Entit
 	 * @return the value of the '<em>Primary Parent Category</em>' reference.
 	 * @see #setPrimaryParentCategory(ProductCategory)
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_PrimaryParentCategory()
-	 * @model keys="productCategoryId"
+	 * @model
 	 * @generated
 	 */
 	ProductCategory getPrimaryParentCategory();
@@ -298,7 +298,7 @@ public interface ProductCategory extends EntityTyped<ProductCategoryType>, Entit
 	 * @return the value of the '<em>Product Category Links</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_ProductCategoryLinks()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductCategoryLink> getProductCategoryLinks();
@@ -311,7 +311,7 @@ public interface ProductCategory extends EntityTyped<ProductCategoryType>, Entit
 	 * @return the value of the '<em>Product Category Members</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_ProductCategoryMembers()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductCategoryMember> getProductCategoryMembers();
@@ -345,7 +345,7 @@ public interface ProductCategory extends EntityTyped<ProductCategoryType>, Entit
 	 * @return the value of the '<em>Product Category Type</em>' reference.
 	 * @see #setProductCategoryType(ProductCategoryType)
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_ProductCategoryType()
-	 * @model keys="productCategoryTypeId"
+	 * @model
 	 * @generated
 	 */
 	ProductCategoryType getProductCategoryType();
@@ -368,7 +368,7 @@ public interface ProductCategory extends EntityTyped<ProductCategoryType>, Entit
 	 * @return the value of the '<em>Product Feature Cat Grp Appls</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_ProductFeatureCatGrpAppls()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductFeatureCatGrpAppl> getProductFeatureCatGrpAppls();
@@ -381,7 +381,7 @@ public interface ProductCategory extends EntityTyped<ProductCategoryType>, Entit
 	 * @return the value of the '<em>Product Feature Category Appls</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_ProductFeatureCategoryAppls()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductFeatureCategoryAppl> getProductFeatureCategoryAppls();

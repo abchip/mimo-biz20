@@ -41,7 +41,7 @@ public interface WebSiteContent extends EntityTyped<WebSiteContentType>, EntityI
 	 * @return the value of the '<em>Web Site</em>' reference.
 	 * @see #setWebSite(WebSite)
 	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebSiteContent_WebSite()
-	 * @model keys="webSiteId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface WebSiteContent extends EntityTyped<WebSiteContentType>, EntityI
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebSiteContent_Content()
-	 * @model keys="contentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -87,7 +87,7 @@ public interface WebSiteContent extends EntityTyped<WebSiteContentType>, EntityI
 	 * @return the value of the '<em>Web Site Content Type</em>' reference.
 	 * @see #setWebSiteContentType(WebSiteContentType)
 	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebSiteContent_WebSiteContentType()
-	 * @model keys="webSiteContentTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

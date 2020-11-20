@@ -72,7 +72,7 @@ public interface PaymentApplication extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Billing Account</em>' reference.
 	 * @see #setBillingAccount(BillingAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentApplication_BillingAccount()
-	 * @model keys="billingAccountId"
+	 * @model
 	 * @generated
 	 */
 	BillingAccount getBillingAccount();
@@ -94,7 +94,7 @@ public interface PaymentApplication extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Invoice</em>' reference.
 	 * @see #setInvoice(Invoice)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentApplication_Invoice()
-	 * @model keys="invoiceId"
+	 * @model
 	 * @generated
 	 */
 	Invoice getInvoice();
@@ -142,8 +142,7 @@ public interface PaymentApplication extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Override Gl Account</em>' reference.
 	 * @see #setOverrideGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentApplication_OverrideGlAccount()
-	 * @model keys="glAccountId"
-	 *        annotation="mimo-ent-slot help='If filled in, payment is applied directly against this GL account'"
+	 * @model annotation="mimo-ent-slot help='If filled in, payment is applied directly against this GL account'"
 	 * @generated
 	 */
 	GlAccount getOverrideGlAccount();
@@ -165,7 +164,7 @@ public interface PaymentApplication extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Payment</em>' reference.
 	 * @see #setPayment(Payment)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentApplication_Payment()
-	 * @model keys="paymentId"
+	 * @model
 	 * @generated
 	 */
 	Payment getPayment();
@@ -187,7 +186,7 @@ public interface PaymentApplication extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Tax Auth Geo</em>' reference.
 	 * @see #setTaxAuthGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentApplication_TaxAuthGeo()
-	 * @model keys="geoId"
+	 * @model
 	 * @generated
 	 */
 	Geo getTaxAuthGeo();
@@ -209,7 +208,7 @@ public interface PaymentApplication extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>To Payment</em>' reference.
 	 * @see #setToPayment(Payment)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentApplication_ToPayment()
-	 * @model keys="paymentId"
+	 * @model
 	 * @generated
 	 */
 	Payment getToPayment();

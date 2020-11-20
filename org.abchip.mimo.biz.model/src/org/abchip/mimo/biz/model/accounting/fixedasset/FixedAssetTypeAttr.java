@@ -36,7 +36,7 @@ public interface FixedAssetTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Fixed Asset Type</em>' reference.
 	 * @see #setFixedAssetType(FixedAssetType)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetTypeAttr_FixedAssetType()
-	 * @model keys="fixedAssetTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

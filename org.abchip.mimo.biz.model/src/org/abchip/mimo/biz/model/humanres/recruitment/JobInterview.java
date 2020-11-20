@@ -97,7 +97,7 @@ public interface JobInterview extends EntityTyped<JobInterviewType>, EntityInfo 
 	 * @return the value of the '<em>Grade Secured Enum</em>' reference.
 	 * @see #setGradeSecuredEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage#getJobInterview_GradeSecuredEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getGradeSecuredEnum();
@@ -145,7 +145,7 @@ public interface JobInterview extends EntityTyped<JobInterviewType>, EntityInfo 
 	 * @return the value of the '<em>Job Interview Type</em>' reference.
 	 * @see #setJobInterviewType(JobInterviewType)
 	 * @see org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage#getJobInterview_JobInterviewType()
-	 * @model keys="jobInterviewTypeId"
+	 * @model
 	 * @generated
 	 */
 	JobInterviewType getJobInterviewType();
@@ -167,7 +167,7 @@ public interface JobInterview extends EntityTyped<JobInterviewType>, EntityInfo 
 	 * @return the value of the '<em>Job Interviewee Party</em>' reference.
 	 * @see #setJobIntervieweeParty(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage#getJobInterview_JobIntervieweeParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getJobIntervieweeParty();
@@ -189,7 +189,7 @@ public interface JobInterview extends EntityTyped<JobInterviewType>, EntityInfo 
 	 * @return the value of the '<em>Job Interviewer Party</em>' reference.
 	 * @see #setJobInterviewerParty(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage#getJobInterview_JobInterviewerParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getJobInterviewerParty();
@@ -211,7 +211,7 @@ public interface JobInterview extends EntityTyped<JobInterviewType>, EntityInfo 
 	 * @return the value of the '<em>Job Requisition</em>' reference.
 	 * @see #setJobRequisition(JobRequisition)
 	 * @see org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage#getJobInterview_JobRequisition()
-	 * @model keys="jobRequisitionId"
+	 * @model
 	 * @generated
 	 */
 	JobRequisition getJobRequisition();

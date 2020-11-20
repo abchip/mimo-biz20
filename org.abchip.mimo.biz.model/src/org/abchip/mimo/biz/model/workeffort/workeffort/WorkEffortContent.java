@@ -40,7 +40,7 @@ public interface WorkEffortContent extends EntityTyped<WorkEffortContentType>, E
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortContent_WorkEffort()
-	 * @model keys="workEffortId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface WorkEffortContent extends EntityTyped<WorkEffortContentType>, E
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortContent_Content()
-	 * @model keys="contentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -86,7 +86,7 @@ public interface WorkEffortContent extends EntityTyped<WorkEffortContentType>, E
 	 * @return the value of the '<em>Work Effort Content Type</em>' reference.
 	 * @see #setWorkEffortContentType(WorkEffortContentType)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortContent_WorkEffortContentType()
-	 * @model keys="workEffortContentTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

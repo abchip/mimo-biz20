@@ -127,7 +127,7 @@ public interface ProductManufacturingRule extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.manufacturing.bom.BomPackage#getProductManufacturingRule_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();
@@ -153,7 +153,7 @@ public interface ProductManufacturingRule extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Product Feature</em>' reference.
 	 * @see #setProductFeature(ProductFeature)
 	 * @see org.abchip.mimo.biz.model.manufacturing.bom.BomPackage#getProductManufacturingRule_ProductFeature()
-	 * @model keys="productFeatureId"
+	 * @model
 	 * @generated
 	 */
 	ProductFeature getProductFeature();
@@ -179,7 +179,7 @@ public interface ProductManufacturingRule extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Product Id For</em>' reference.
 	 * @see #setProductIdFor(Product)
 	 * @see org.abchip.mimo.biz.model.manufacturing.bom.BomPackage#getProductManufacturingRule_ProductIdFor()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProductIdFor();
@@ -205,7 +205,7 @@ public interface ProductManufacturingRule extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Product Id In</em>' reference.
 	 * @see #setProductIdIn(Product)
 	 * @see org.abchip.mimo.biz.model.manufacturing.bom.BomPackage#getProductManufacturingRule_ProductIdIn()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProductIdIn();
@@ -231,7 +231,7 @@ public interface ProductManufacturingRule extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Product Id In Subst</em>' reference.
 	 * @see #setProductIdInSubst(Product)
 	 * @see org.abchip.mimo.biz.model.manufacturing.bom.BomPackage#getProductManufacturingRule_ProductIdInSubst()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProductIdInSubst();

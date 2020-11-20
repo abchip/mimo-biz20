@@ -45,7 +45,7 @@ public interface PartyFixedAssetAssignment extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getPartyFixedAssetAssignment_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -68,7 +68,7 @@ public interface PartyFixedAssetAssignment extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getPartyFixedAssetAssignment_RoleType()
-	 * @model keys="roleTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -91,7 +91,7 @@ public interface PartyFixedAssetAssignment extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Fixed Asset</em>' reference.
 	 * @see #setFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getPartyFixedAssetAssignment_FixedAsset()
-	 * @model keys="fixedAssetId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -166,7 +166,7 @@ public interface PartyFixedAssetAssignment extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getPartyFixedAssetAssignment_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

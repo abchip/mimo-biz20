@@ -40,7 +40,7 @@ public interface EmplPositionResponsibility extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Empl Position</em>' reference.
 	 * @see #setEmplPosition(EmplPosition)
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionResponsibility_EmplPosition()
-	 * @model keys="emplPositionId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface EmplPositionResponsibility extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Responsibility Type</em>' reference.
 	 * @see #setResponsibilityType(ResponsibilityType)
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionResponsibility_ResponsibilityType()
-	 * @model keys="responsibilityTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

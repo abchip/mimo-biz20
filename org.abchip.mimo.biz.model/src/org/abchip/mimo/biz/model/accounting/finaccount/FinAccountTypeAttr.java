@@ -37,7 +37,7 @@ public interface FinAccountTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Fin Account Type</em>' reference.
 	 * @see #setFinAccountType(FinAccountType)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTypeAttr_FinAccountType()
-	 * @model keys="finAccountTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

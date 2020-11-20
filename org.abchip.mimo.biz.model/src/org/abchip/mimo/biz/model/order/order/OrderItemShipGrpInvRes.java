@@ -51,7 +51,7 @@ public interface OrderItemShipGrpInvRes extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGrpInvRes_Order()
-	 * @model keys="orderId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -74,7 +74,7 @@ public interface OrderItemShipGrpInvRes extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Inventory Item</em>' reference.
 	 * @see #setInventoryItem(InventoryItem)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGrpInvRes_InventoryItem()
-	 * @model keys="inventoryItemId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

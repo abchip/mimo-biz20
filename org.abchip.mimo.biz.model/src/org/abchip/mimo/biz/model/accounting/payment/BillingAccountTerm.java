@@ -70,7 +70,7 @@ public interface BillingAccountTerm extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Term Type</em>' reference.
 	 * @see #setTermType(TermType)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccountTerm_TermType()
-	 * @model keys="termTypeId"
+	 * @model
 	 * @generated
 	 */
 	TermType getTermType();
@@ -118,7 +118,7 @@ public interface BillingAccountTerm extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Uom</em>' reference.
 	 * @see #setUom(Uom)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccountTerm_Uom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getUom();
@@ -167,7 +167,7 @@ public interface BillingAccountTerm extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Billing Account</em>' reference.
 	 * @see #setBillingAccount(BillingAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccountTerm_BillingAccount()
-	 * @model keys="billingAccountId"
+	 * @model
 	 * @generated
 	 */
 	BillingAccount getBillingAccount();

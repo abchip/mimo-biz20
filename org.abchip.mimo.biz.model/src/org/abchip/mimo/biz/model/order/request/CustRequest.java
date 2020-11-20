@@ -148,7 +148,7 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_CurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getCurrencyUom();
@@ -182,7 +182,7 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	 * @return the value of the '<em>Cust Request Category</em>' reference.
 	 * @see #setCustRequestCategory(CustRequestCategory)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_CustRequestCategory()
-	 * @model keys="custRequestCategoryId"
+	 * @model
 	 * @generated
 	 */
 	CustRequestCategory getCustRequestCategory();
@@ -217,7 +217,7 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	 * @return the value of the '<em>Cust Request Contents</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_CustRequestContents()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<CustRequestContent> getCustRequestContents();
@@ -332,7 +332,7 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	 * @return the value of the '<em>Cust Request Type</em>' reference.
 	 * @see #setCustRequestType(CustRequestType)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_CustRequestType()
-	 * @model keys="custRequestTypeId"
+	 * @model
 	 * @generated
 	 */
 	CustRequestType getCustRequestType();
@@ -392,7 +392,7 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	 * @return the value of the '<em>From Party</em>' reference.
 	 * @see #setFromParty(Party)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_FromParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getFromParty();
@@ -414,8 +414,7 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	 * @return the value of the '<em>Fulfill Contact Mech</em>' reference.
 	 * @see #setFulfillContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_FulfillContactMech()
-	 * @model keys="contactMechId"
-	 *        annotation="mimo-ent-slot help='Field to support a location of a cust request--ie, product literature sent to an address, service call at a localtion, etc.'"
+	 * @model annotation="mimo-ent-slot help='Field to support a location of a cust request--ie, product literature sent to an address, service call at a localtion, etc.'"
 	 * @generated
 	 */
 	ContactMech getFulfillContactMech();
@@ -515,7 +514,7 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	 * @return the value of the '<em>Maximum Amount Uom</em>' reference.
 	 * @see #setMaximumAmountUom(Uom)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_MaximumAmountUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getMaximumAmountUom();
@@ -589,7 +588,7 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	 * @return the value of the '<em>Product Store</em>' reference.
 	 * @see #setProductStore(ProductStore)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_ProductStore()
-	 * @model keys="productStoreId"
+	 * @model
 	 * @generated
 	 */
 	ProductStore getProductStore();
@@ -663,7 +662,7 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	 * @return the value of the '<em>Sales Channel Enum</em>' reference.
 	 * @see #setSalesChannelEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_SalesChannelEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getSalesChannelEnum();
@@ -685,7 +684,7 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

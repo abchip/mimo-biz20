@@ -40,7 +40,7 @@ public interface ProductKeyword extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductKeyword_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface ProductKeyword extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Keyword Type</em>' reference.
 	 * @see #setKeywordType(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductKeyword_KeywordType()
-	 * @model keys="enumId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -140,7 +140,7 @@ public interface ProductKeyword extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductKeyword_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

@@ -44,7 +44,7 @@ public interface FixedAssetMeter extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Meter Type</em>' reference.
 	 * @see #setProductMeterType(ProductMeterType)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMeter_ProductMeterType()
-	 * @model keys="productMeterTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

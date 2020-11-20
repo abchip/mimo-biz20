@@ -95,7 +95,7 @@ public interface OrderItemPriceInfo extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemPriceInfo_Order()
-	 * @model keys="orderId"
+	 * @model
 	 * @generated
 	 */
 	OrderHeader getOrder();
@@ -196,7 +196,7 @@ public interface OrderItemPriceInfo extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Price Rule</em>' reference.
 	 * @see #setProductPriceRule(ProductPriceRule)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemPriceInfo_ProductPriceRule()
-	 * @model keys="productPriceRuleId"
+	 * @model
 	 * @generated
 	 */
 	ProductPriceRule getProductPriceRule();

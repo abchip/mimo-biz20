@@ -56,7 +56,7 @@ public interface ProductSubscriptionResource extends EntityIdentifiable, EntityI
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -79,7 +79,7 @@ public interface ProductSubscriptionResource extends EntityIdentifiable, EntityI
 	 * @return the value of the '<em>Subscription Resource</em>' reference.
 	 * @see #setSubscriptionResource(SubscriptionResource)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_SubscriptionResource()
-	 * @model keys="subscriptionResourceId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -128,7 +128,7 @@ public interface ProductSubscriptionResource extends EntityIdentifiable, EntityI
 	 * @return the value of the '<em>Available Time Uom</em>' reference.
 	 * @see #setAvailableTimeUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_AvailableTimeUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getAvailableTimeUom();
@@ -177,8 +177,7 @@ public interface ProductSubscriptionResource extends EntityIdentifiable, EntityI
 	 * @return the value of the '<em>Cancl Autm Ext Time Uom</em>' reference.
 	 * @see #setCanclAutmExtTimeUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_CanclAutmExtTimeUom()
-	 * @model keys="uomId"
-	 *        annotation="mimo-ent-slot help='Unit Of Measure used for the automatic extension of the subscription.'"
+	 * @model annotation="mimo-ent-slot help='Unit Of Measure used for the automatic extension of the subscription.'"
 	 * @generated
 	 */
 	Uom getCanclAutmExtTimeUom();
@@ -281,8 +280,7 @@ public interface ProductSubscriptionResource extends EntityIdentifiable, EntityI
 	 * @return the value of the '<em>Grace Period On Expiry Uom</em>' reference.
 	 * @see #setGracePeriodOnExpiryUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_GracePeriodOnExpiryUom()
-	 * @model keys="uomId"
-	 *        annotation="mimo-ent-slot help='Unit Of Measure used for the grace period of the subscription.'"
+	 * @model annotation="mimo-ent-slot help='Unit Of Measure used for the grace period of the subscription.'"
 	 * @generated
 	 */
 	Uom getGracePeriodOnExpiryUom();
@@ -331,7 +329,7 @@ public interface ProductSubscriptionResource extends EntityIdentifiable, EntityI
 	 * @return the value of the '<em>Max Life Time Uom</em>' reference.
 	 * @see #setMaxLifeTimeUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_MaxLifeTimeUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getMaxLifeTimeUom();
@@ -457,7 +455,7 @@ public interface ProductSubscriptionResource extends EntityIdentifiable, EntityI
 	 * @return the value of the '<em>Use Role Type</em>' reference.
 	 * @see #setUseRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_UseRoleType()
-	 * @model keys="roleTypeId"
+	 * @model
 	 * @generated
 	 */
 	RoleType getUseRoleType();
@@ -506,7 +504,7 @@ public interface ProductSubscriptionResource extends EntityIdentifiable, EntityI
 	 * @return the value of the '<em>Use Time Uom</em>' reference.
 	 * @see #setUseTimeUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getProductSubscriptionResource_UseTimeUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getUseTimeUom();

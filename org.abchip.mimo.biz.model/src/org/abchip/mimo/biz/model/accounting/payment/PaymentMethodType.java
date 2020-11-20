@@ -104,7 +104,7 @@ public interface PaymentMethodType extends EntityType<PaymentMethod>, EntityInfo
 	 * @return the value of the '<em>Default Gl Account</em>' reference.
 	 * @see #setDefaultGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentMethodType_DefaultGlAccount()
-	 * @model keys="glAccountId"
+	 * @model
 	 * @generated
 	 */
 	GlAccount getDefaultGlAccount();

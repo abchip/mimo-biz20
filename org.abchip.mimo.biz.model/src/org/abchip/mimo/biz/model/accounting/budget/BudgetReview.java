@@ -40,7 +40,7 @@ public interface BudgetReview extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Budget</em>' reference.
 	 * @see #setBudget(Budget)
 	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetReview_Budget()
-	 * @model keys="budgetId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface BudgetReview extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetReview_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -86,7 +86,7 @@ public interface BudgetReview extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Budget Review Result Type</em>' reference.
 	 * @see #setBudgetReviewResultType(BudgetReviewResultType)
 	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetReview_BudgetReviewResultType()
-	 * @model keys="budgetReviewResultTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

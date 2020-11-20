@@ -87,7 +87,7 @@ public interface AcctgTransType extends EntityType<AcctgTrans>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(AcctgTransType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransType_ParentType()
-	 * @model keys="acctgTransTypeId"
+	 * @model
 	 * @generated
 	 */
 	AcctgTransType getParentType();

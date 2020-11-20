@@ -36,7 +36,7 @@ public interface QuoteTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Quote Type</em>' reference.
 	 * @see #setQuoteType(QuoteType)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteTypeAttr_QuoteType()
-	 * @model keys="quoteTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

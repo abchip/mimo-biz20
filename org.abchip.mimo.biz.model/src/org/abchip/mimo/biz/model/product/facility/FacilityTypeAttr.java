@@ -36,7 +36,7 @@ public interface FacilityTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Facility Type</em>' reference.
 	 * @see #setFacilityType(FacilityType)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityTypeAttr_FacilityType()
-	 * @model keys="facilityTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

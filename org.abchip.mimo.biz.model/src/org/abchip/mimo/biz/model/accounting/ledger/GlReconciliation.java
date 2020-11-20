@@ -129,7 +129,7 @@ public interface GlReconciliation extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Gl Account</em>' reference.
 	 * @see #setGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlReconciliation_GlAccount()
-	 * @model keys="glAccountId"
+	 * @model
 	 * @generated
 	 */
 	GlAccount getGlAccount();
@@ -255,7 +255,7 @@ public interface GlReconciliation extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Organization Party</em>' reference.
 	 * @see #setOrganizationParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlReconciliation_OrganizationParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getOrganizationParty();
@@ -329,7 +329,7 @@ public interface GlReconciliation extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlReconciliation_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

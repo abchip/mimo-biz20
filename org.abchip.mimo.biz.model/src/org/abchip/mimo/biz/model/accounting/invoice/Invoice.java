@@ -204,7 +204,7 @@ public interface Invoice extends EntityTyped<InvoiceType>, EntityInfo {
 	 * @return the value of the '<em>Invoice Statuses</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoice_InvoiceStatuses()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint statusDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints statusDate='*NOW'"
 	 * @generated
 	 */
 	List<InvoiceStatus> getInvoiceStatuses();
@@ -216,7 +216,7 @@ public interface Invoice extends EntityTyped<InvoiceType>, EntityInfo {
 	 * @return the value of the '<em>Invoice Type</em>' reference.
 	 * @see #setInvoiceType(InvoiceType)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoice_InvoiceType()
-	 * @model keys="invoiceTypeId"
+	 * @model
 	 * @generated
 	 */
 	InvoiceType getInvoiceType();
@@ -264,7 +264,7 @@ public interface Invoice extends EntityTyped<InvoiceType>, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoice_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -290,7 +290,7 @@ public interface Invoice extends EntityTyped<InvoiceType>, EntityInfo {
 	 * @return the value of the '<em>Party Id From</em>' reference.
 	 * @see #setPartyIdFrom(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoice_PartyIdFrom()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getPartyIdFrom();
@@ -312,7 +312,7 @@ public interface Invoice extends EntityTyped<InvoiceType>, EntityInfo {
 	 * @return the value of the '<em>Recurrence Info</em>' reference.
 	 * @see #setRecurrenceInfo(RecurrenceInfo)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoice_RecurrenceInfo()
-	 * @model keys="recurrenceInfoId"
+	 * @model
 	 * @generated
 	 */
 	RecurrenceInfo getRecurrenceInfo();
@@ -360,7 +360,7 @@ public interface Invoice extends EntityTyped<InvoiceType>, EntityInfo {
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoice_RoleType()
-	 * @model keys="roleTypeId"
+	 * @model
 	 * @generated
 	 */
 	RoleType getRoleType();
@@ -382,7 +382,7 @@ public interface Invoice extends EntityTyped<InvoiceType>, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoice_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -440,7 +440,7 @@ public interface Invoice extends EntityTyped<InvoiceType>, EntityInfo {
 	 * @return the value of the '<em>Billing Account</em>' reference.
 	 * @see #setBillingAccount(BillingAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoice_BillingAccount()
-	 * @model keys="billingAccountId"
+	 * @model
 	 * @generated
 	 */
 	BillingAccount getBillingAccount();
@@ -462,7 +462,7 @@ public interface Invoice extends EntityTyped<InvoiceType>, EntityInfo {
 	 * @return the value of the '<em>Contact Mech</em>' reference.
 	 * @see #setContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoice_ContactMech()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	ContactMech getContactMech();
@@ -484,7 +484,7 @@ public interface Invoice extends EntityTyped<InvoiceType>, EntityInfo {
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoice_CurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getCurrencyUom();

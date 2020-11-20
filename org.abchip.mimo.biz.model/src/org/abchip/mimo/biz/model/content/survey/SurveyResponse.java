@@ -99,7 +99,7 @@ public interface SurveyResponse extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyResponse_Order()
-	 * @model keys="orderId"
+	 * @model
 	 * @generated
 	 */
 	OrderHeader getOrder();
@@ -147,7 +147,7 @@ public interface SurveyResponse extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyResponse_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -221,7 +221,7 @@ public interface SurveyResponse extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyResponse_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -243,7 +243,7 @@ public interface SurveyResponse extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Survey</em>' reference.
 	 * @see #setSurvey(Survey)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyResponse_Survey()
-	 * @model keys="surveyId"
+	 * @model
 	 * @generated
 	 */
 	Survey getSurvey();

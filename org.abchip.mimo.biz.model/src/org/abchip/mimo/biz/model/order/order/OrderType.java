@@ -99,7 +99,7 @@ public interface OrderType extends EntityType<OrderHeader>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(OrderType)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderType_ParentType()
-	 * @model keys="orderTypeId"
+	 * @model
 	 * @generated
 	 */
 	OrderType getParentType();

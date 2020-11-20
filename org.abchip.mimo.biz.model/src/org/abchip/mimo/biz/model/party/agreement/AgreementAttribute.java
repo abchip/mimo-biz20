@@ -37,7 +37,7 @@ public interface AgreementAttribute extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Agreement</em>' reference.
 	 * @see #setAgreement(Agreement)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementAttribute_Agreement()
-	 * @model keys="agreementId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

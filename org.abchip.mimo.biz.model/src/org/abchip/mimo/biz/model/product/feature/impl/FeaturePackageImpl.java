@@ -1709,30 +1709,22 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 		initEReference(getProductFeature_MainProductFeatureIactns(), this.getProductFeatureIactn(), null, "mainProductFeatureIactns", null, 0, -1, ProductFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFeature_NumberSpecified(), ecorePackage.getEBigDecimal(), "numberSpecified", null, 0, 1, ProductFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductFeature_ProductFeatureCategory(), this.getProductFeatureCategory(), null, "productFeatureCategory", null, 0, 1, ProductFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeature_ProductFeatureCategory().getEKeys().add(this.getProductFeatureCategory_ProductFeatureCategoryId());
 		initEReference(getProductFeature_ProductFeatureType(), this.getProductFeatureType(), null, "productFeatureType", null, 0, 1, ProductFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeature_ProductFeatureType().getEKeys().add(this.getProductFeatureType_ProductFeatureTypeId());
 		initEReference(getProductFeature_Uom(), theUomPackage.getUom(), null, "uom", null, 0, 1, ProductFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeature_Uom().getEKeys().add(theUomPackage.getUom_UomId());
 
 		initEClass(productFeatureApplEClass, ProductFeatureAppl.class, "ProductFeatureAppl", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductFeatureAppl_Product(), theProductPackage.getProduct(), null, "product", null, 1, 1, ProductFeatureAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureAppl_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEReference(getProductFeatureAppl_ProductFeature(), this.getProductFeature(), null, "productFeature", null, 1, 1, ProductFeatureAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureAppl_ProductFeature().getEKeys().add(this.getProductFeature_ProductFeatureId());
 		initEAttribute(getProductFeatureAppl_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductFeatureAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFeatureAppl_Amount(), ecorePackage.getEBigDecimal(), "amount", null, 0, 1, ProductFeatureAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductFeatureAppl_ProductFeatureApplType(), this.getProductFeatureApplType(), null, "productFeatureApplType", null, 0, 1, ProductFeatureAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureAppl_ProductFeatureApplType().getEKeys().add(this.getProductFeatureApplType_ProductFeatureApplTypeId());
 		initEAttribute(getProductFeatureAppl_RecurringAmount(), ecorePackage.getEBigDecimal(), "recurringAmount", null, 0, 1, ProductFeatureAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFeatureAppl_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, ProductFeatureAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFeatureAppl_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductFeatureAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productFeatureApplAttrEClass, ProductFeatureApplAttr.class, "ProductFeatureApplAttr", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductFeatureApplAttr_Product(), theProductPackage.getProduct(), null, "product", null, 1, 1, ProductFeatureApplAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureApplAttr_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEReference(getProductFeatureApplAttr_ProductFeature(), this.getProductFeature(), null, "productFeature", null, 1, 1, ProductFeatureApplAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureApplAttr_ProductFeature().getEKeys().add(this.getProductFeature_ProductFeatureId());
 		initEAttribute(getProductFeatureApplAttr_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, ProductFeatureApplAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFeatureApplAttr_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductFeatureApplAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFeatureApplAttr_AttrValue(), ecorePackage.getEString(), "attrValue", null, 0, 1, ProductFeatureApplAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1742,13 +1734,10 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 		initEAttribute(getProductFeatureApplType_Description(), ecorePackage.getEString(), "description", null, 0, 1, ProductFeatureApplType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFeatureApplType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, ProductFeatureApplType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductFeatureApplType_ParentType(), this.getProductFeatureApplType(), null, "parentType", null, 0, 1, ProductFeatureApplType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureApplType_ParentType().getEKeys().add(this.getProductFeatureApplType_ProductFeatureApplTypeId());
 
 		initEClass(productFeatureCatGrpApplEClass, ProductFeatureCatGrpAppl.class, "ProductFeatureCatGrpAppl", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductFeatureCatGrpAppl_ProductCategory(), theCategoryPackage.getProductCategory(), null, "productCategory", null, 1, 1, ProductFeatureCatGrpAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureCatGrpAppl_ProductCategory().getEKeys().add(theCategoryPackage.getProductCategory_ProductCategoryId());
 		initEReference(getProductFeatureCatGrpAppl_ProductFeatureGroup(), this.getProductFeatureGroup(), null, "productFeatureGroup", null, 1, 1, ProductFeatureCatGrpAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureCatGrpAppl_ProductFeatureGroup().getEKeys().add(this.getProductFeatureGroup_ProductFeatureGroupId());
 		initEAttribute(getProductFeatureCatGrpAppl_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductFeatureCatGrpAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFeatureCatGrpAppl_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductFeatureCatGrpAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1756,21 +1745,16 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 		initEAttribute(getProductFeatureCategory_ProductFeatureCategoryId(), ecorePackage.getEString(), "productFeatureCategoryId", null, 1, 1, ProductFeatureCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFeatureCategory_Description(), ecorePackage.getEString(), "description", null, 0, 1, ProductFeatureCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductFeatureCategory_ParentCategory(), this.getProductFeatureCategory(), null, "parentCategory", null, 0, 1, ProductFeatureCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureCategory_ParentCategory().getEKeys().add(this.getProductFeatureCategory_ProductFeatureCategoryId());
 
 		initEClass(productFeatureCategoryApplEClass, ProductFeatureCategoryAppl.class, "ProductFeatureCategoryAppl", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductFeatureCategoryAppl_ProductCategory(), theCategoryPackage.getProductCategory(), null, "productCategory", null, 1, 1, ProductFeatureCategoryAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureCategoryAppl_ProductCategory().getEKeys().add(theCategoryPackage.getProductCategory_ProductCategoryId());
 		initEReference(getProductFeatureCategoryAppl_ProductFeatureCategory(), this.getProductFeatureCategory(), null, "productFeatureCategory", null, 1, 1, ProductFeatureCategoryAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureCategoryAppl_ProductFeatureCategory().getEKeys().add(this.getProductFeatureCategory_ProductFeatureCategoryId());
 		initEAttribute(getProductFeatureCategoryAppl_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductFeatureCategoryAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFeatureCategoryAppl_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductFeatureCategoryAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productFeatureDataResourceEClass, ProductFeatureDataResource.class, "ProductFeatureDataResource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductFeatureDataResource_DataResource(), theDataPackage.getDataResource(), null, "dataResource", null, 1, 1, ProductFeatureDataResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureDataResource_DataResource().getEKeys().add(theDataPackage.getDataResource_DataResourceId());
 		initEReference(getProductFeatureDataResource_ProductFeature(), this.getProductFeature(), null, "productFeature", null, 1, 1, ProductFeatureDataResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureDataResource_ProductFeature().getEKeys().add(this.getProductFeature_ProductFeatureId());
 
 		initEClass(productFeatureGroupEClass, ProductFeatureGroup.class, "ProductFeatureGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getProductFeatureGroup_ProductFeatureGroupId(), ecorePackage.getEString(), "productFeatureGroupId", null, 1, 1, ProductFeatureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1779,20 +1763,15 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 
 		initEClass(productFeatureGroupApplEClass, ProductFeatureGroupAppl.class, "ProductFeatureGroupAppl", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductFeatureGroupAppl_ProductFeatureGroup(), this.getProductFeatureGroup(), null, "productFeatureGroup", null, 1, 1, ProductFeatureGroupAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureGroupAppl_ProductFeatureGroup().getEKeys().add(this.getProductFeatureGroup_ProductFeatureGroupId());
 		initEReference(getProductFeatureGroupAppl_ProductFeature(), this.getProductFeature(), null, "productFeature", null, 1, 1, ProductFeatureGroupAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureGroupAppl_ProductFeature().getEKeys().add(this.getProductFeature_ProductFeatureId());
 		initEAttribute(getProductFeatureGroupAppl_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductFeatureGroupAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFeatureGroupAppl_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, ProductFeatureGroupAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFeatureGroupAppl_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductFeatureGroupAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productFeatureIactnEClass, ProductFeatureIactn.class, "ProductFeatureIactn", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductFeatureIactn_ProductFeature(), this.getProductFeature(), null, "productFeature", null, 1, 1, ProductFeatureIactn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureIactn_ProductFeature().getEKeys().add(this.getProductFeature_ProductFeatureId());
 		initEReference(getProductFeatureIactn_ProductFeatureIdTo(), this.getProductFeature(), null, "productFeatureIdTo", null, 1, 1, ProductFeatureIactn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureIactn_ProductFeatureIdTo().getEKeys().add(this.getProductFeature_ProductFeatureId());
 		initEReference(getProductFeatureIactn_ProductFeatureIactnType(), this.getProductFeatureIactnType(), null, "productFeatureIactnType", null, 0, 1, ProductFeatureIactn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureIactn_ProductFeatureIactnType().getEKeys().add(this.getProductFeatureIactnType_ProductFeatureIactnTypeId());
 		initEAttribute(getProductFeatureIactn_ProductId(), ecorePackage.getEString(), "productId", null, 0, 1, ProductFeatureIactn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productFeatureIactnTypeEClass, ProductFeatureIactnType.class, "ProductFeatureIactnType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1800,14 +1779,12 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 		initEAttribute(getProductFeatureIactnType_Description(), ecorePackage.getEString(), "description", null, 0, 1, ProductFeatureIactnType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFeatureIactnType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, ProductFeatureIactnType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductFeatureIactnType_ParentType(), this.getProductFeatureIactnType(), null, "parentType", null, 0, 1, ProductFeatureIactnType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureIactnType_ParentType().getEKeys().add(this.getProductFeatureIactnType_ProductFeatureIactnTypeId());
 
 		initEClass(productFeatureTypeEClass, ProductFeatureType.class, "ProductFeatureType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getProductFeatureType_ProductFeatureTypeId(), ecorePackage.getEString(), "productFeatureTypeId", null, 1, 1, ProductFeatureType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFeatureType_Description(), ecorePackage.getEString(), "description", null, 0, 1, ProductFeatureType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFeatureType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, ProductFeatureType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductFeatureType_ParentType(), this.getProductFeatureType(), null, "parentType", null, 0, 1, ProductFeatureType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFeatureType_ParentType().getEKeys().add(this.getProductFeatureType_ProductFeatureTypeId());
 
 		// Create resource
 		createResource(eNS_URI);
@@ -1819,8 +1796,8 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 		createMimoentformatAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
-		// mimo-ent-slot-constraint
-		createMimoentslotconstraintAnnotations();
+		// mimo-ent-slot-constraints
+		createMimoentslotconstraintsAnnotations();
 	}
 
 	/**
@@ -2221,13 +2198,13 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 	}
 
 	/**
-	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * Initializes the annotations for <b>mimo-ent-slot-constraints</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createMimoentslotconstraintAnnotations() {
-		String source = "mimo-ent-slot-constraint";
+	protected void createMimoentslotconstraintsAnnotations() {
+		String source = "mimo-ent-slot-constraints";
 		addAnnotation
 		  (getProductFeatureGroup_ProductFeatureGroupAppls(),
 		   source,

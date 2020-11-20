@@ -47,7 +47,7 @@ public interface ShoppingListItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Shopping List</em>' reference.
 	 * @see #setShoppingList(ShoppingList)
 	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingListItem_ShoppingList()
-	 * @model keys="shoppingListId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -122,7 +122,7 @@ public interface ShoppingListItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingListItem_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();

@@ -128,7 +128,7 @@ public interface OrderItemChange extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Change Type Enum</em>' reference.
 	 * @see #setChangeTypeEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemChange_ChangeTypeEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getChangeTypeEnum();
@@ -154,7 +154,7 @@ public interface OrderItemChange extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Change User Login</em>' reference.
 	 * @see #setChangeUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemChange_ChangeUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getChangeUserLogin();
@@ -202,7 +202,7 @@ public interface OrderItemChange extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemChange_Order()
-	 * @model keys="orderId"
+	 * @model
 	 * @generated
 	 */
 	OrderHeader getOrder();
@@ -303,7 +303,7 @@ public interface OrderItemChange extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Reason Enum</em>' reference.
 	 * @see #setReasonEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemChange_ReasonEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getReasonEnum();

@@ -85,7 +85,7 @@ public interface PerfRatingType extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(PerfRatingType)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfRatingType_ParentType()
-	 * @model keys="perfRatingTypeId"
+	 * @model
 	 * @generated
 	 */
 	PerfRatingType getParentType();

@@ -37,7 +37,7 @@ public interface InventoryItemAttribute extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Inventory Item</em>' reference.
 	 * @see #setInventoryItem(InventoryItem)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemAttribute_InventoryItem()
-	 * @model keys="inventoryItemId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

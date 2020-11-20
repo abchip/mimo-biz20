@@ -39,7 +39,7 @@ public interface TrackingCodeVisit extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Tracking Code</em>' reference.
 	 * @see #setTrackingCode(TrackingCode)
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeVisit_TrackingCode()
-	 * @model keys="trackingCodeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -117,7 +117,7 @@ public interface TrackingCodeVisit extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Source Enum</em>' reference.
 	 * @see #setSourceEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeVisit_SourceEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getSourceEnum();

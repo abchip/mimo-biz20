@@ -41,7 +41,7 @@ public interface SupplierProductFeature extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getSupplierProductFeature_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface SupplierProductFeature extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Feature</em>' reference.
 	 * @see #setProductFeature(ProductFeature)
 	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getSupplierProductFeature_ProductFeature()
-	 * @model keys="productFeatureId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -139,7 +139,7 @@ public interface SupplierProductFeature extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Uom</em>' reference.
 	 * @see #setUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getSupplierProductFeature_Uom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getUom();

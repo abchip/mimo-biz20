@@ -65,7 +65,7 @@ public interface PicklistBin extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Picklist</em>' reference.
 	 * @see #setPicklist(Picklist)
 	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistBin_Picklist()
-	 * @model keys="picklistId"
+	 * @model
 	 * @generated
 	 */
 	Picklist getPicklist();
@@ -87,7 +87,7 @@ public interface PicklistBin extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Primary Order</em>' reference.
 	 * @see #setPrimaryOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistBin_PrimaryOrder()
-	 * @model keys="orderId"
+	 * @model
 	 * @generated
 	 */
 	OrderHeader getPrimaryOrder();

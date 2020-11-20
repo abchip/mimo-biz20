@@ -66,7 +66,7 @@ public interface TechDataCalendar extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Calendar Week</em>' reference.
 	 * @see #setCalendarWeek(TechDataCalendarWeek)
 	 * @see org.abchip.mimo.biz.model.manufacturing.techdata.TechdataPackage#getTechDataCalendar_CalendarWeek()
-	 * @model keys="calendarWeekId"
+	 * @model
 	 * @generated
 	 */
 	TechDataCalendarWeek getCalendarWeek();

@@ -36,7 +36,7 @@ public interface TestingItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Testing</em>' reference.
 	 * @see #setTesting(Testing)
 	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingItem_Testing()
-	 * @model keys="testingId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

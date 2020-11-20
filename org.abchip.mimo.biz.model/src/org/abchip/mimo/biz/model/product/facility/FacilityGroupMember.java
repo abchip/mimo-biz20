@@ -39,7 +39,7 @@ public interface FacilityGroupMember extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroupMember_Facility()
-	 * @model keys="facilityId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface FacilityGroupMember extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Facility Group</em>' reference.
 	 * @see #setFacilityGroup(FacilityGroup)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroupMember_FacilityGroup()
-	 * @model keys="facilityGroupId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

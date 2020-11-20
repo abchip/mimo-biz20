@@ -66,7 +66,7 @@ public interface ProductStoreGroup extends EntityTyped<ProductStoreGroupType>, E
 	 * @return the value of the '<em>Primary Parent Group</em>' reference.
 	 * @see #setPrimaryParentGroup(ProductStoreGroup)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreGroup_PrimaryParentGroup()
-	 * @model keys="productStoreGroupId"
+	 * @model
 	 * @generated
 	 */
 	ProductStoreGroup getPrimaryParentGroup();
@@ -114,7 +114,7 @@ public interface ProductStoreGroup extends EntityTyped<ProductStoreGroupType>, E
 	 * @return the value of the '<em>Product Store Group Type</em>' reference.
 	 * @see #setProductStoreGroupType(ProductStoreGroupType)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreGroup_ProductStoreGroupType()
-	 * @model keys="productStoreGroupTypeId"
+	 * @model
 	 * @generated
 	 */
 	ProductStoreGroupType getProductStoreGroupType();
@@ -164,7 +164,7 @@ public interface ProductStoreGroup extends EntityTyped<ProductStoreGroupType>, E
 	 * @return the value of the '<em>Current Product Store Group Rollups</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreGroup_CurrentProductStoreGroupRollups()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductStoreGroupRollup> getCurrentProductStoreGroupRollups();

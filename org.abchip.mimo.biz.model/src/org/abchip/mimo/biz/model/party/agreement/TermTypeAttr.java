@@ -36,7 +36,7 @@ public interface TermTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Term Type</em>' reference.
 	 * @see #setTermType(TermType)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getTermTypeAttr_TermType()
-	 * @model keys="termTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -39,7 +39,7 @@ public interface FixedAssetGeoPoint extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Fixed Asset</em>' reference.
 	 * @see #setFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetGeoPoint_FixedAsset()
-	 * @model keys="fixedAssetId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface FixedAssetGeoPoint extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Geo Point</em>' reference.
 	 * @see #setGeoPoint(GeoPoint)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetGeoPoint_GeoPoint()
-	 * @model keys="geoPointId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

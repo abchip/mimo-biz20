@@ -36,7 +36,7 @@ public interface ShoppingListWorkEffort extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Shopping List</em>' reference.
 	 * @see #setShoppingList(ShoppingList)
 	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingListWorkEffort_ShoppingList()
-	 * @model keys="shoppingListId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface ShoppingListWorkEffort extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingListWorkEffort_WorkEffort()
-	 * @model keys="workEffortId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

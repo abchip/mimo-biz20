@@ -37,7 +37,7 @@ public interface CustRequestAttribute extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Cust Request</em>' reference.
 	 * @see #setCustRequest(CustRequest)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestAttribute_CustRequest()
-	 * @model keys="custRequestId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -70,7 +70,7 @@ public interface OrderNotification extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Email Type</em>' reference.
 	 * @see #setEmailType(Enumeration)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderNotification_EmailType()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getEmailType();
@@ -118,7 +118,7 @@ public interface OrderNotification extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderNotification_Order()
-	 * @model keys="orderId"
+	 * @model
 	 * @generated
 	 */
 	OrderHeader getOrder();

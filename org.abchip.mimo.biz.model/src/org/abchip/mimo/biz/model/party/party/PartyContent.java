@@ -40,7 +40,7 @@ public interface PartyContent extends EntityTyped<PartyContentType>, EntityInfo 
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyContent_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface PartyContent extends EntityTyped<PartyContentType>, EntityInfo 
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyContent_Content()
-	 * @model keys="contentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -86,7 +86,7 @@ public interface PartyContent extends EntityTyped<PartyContentType>, EntityInfo 
 	 * @return the value of the '<em>Party Content Type</em>' reference.
 	 * @see #setPartyContentType(PartyContentType)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyContent_PartyContentType()
-	 * @model keys="partyContentTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

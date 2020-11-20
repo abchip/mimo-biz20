@@ -38,7 +38,7 @@ public interface DataResourceMetaData extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Data Resource</em>' reference.
 	 * @see #setDataResource(DataResource)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourceMetaData_DataResource()
-	 * @model keys="dataResourceId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface DataResourceMetaData extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Meta Data Predicate</em>' reference.
 	 * @see #setMetaDataPredicate(MetaDataPredicate)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourceMetaData_MetaDataPredicate()
-	 * @model keys="metaDataPredicateId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -84,7 +84,7 @@ public interface DataResourceMetaData extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Data Source</em>' reference.
 	 * @see #setDataSource(DataSource)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourceMetaData_DataSource()
-	 * @model keys="dataSourceId"
+	 * @model
 	 * @generated
 	 */
 	DataSource getDataSource();

@@ -40,7 +40,7 @@ public interface WorkEffortSkillStandard extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortSkillStandard_WorkEffort()
-	 * @model keys="workEffortId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface WorkEffortSkillStandard extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Skill Type</em>' reference.
 	 * @see #setSkillType(SkillType)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortSkillStandard_SkillType()
-	 * @model keys="skillTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

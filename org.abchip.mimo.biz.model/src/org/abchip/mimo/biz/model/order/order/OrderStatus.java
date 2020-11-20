@@ -70,7 +70,7 @@ public interface OrderStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderStatus_Order()
-	 * @model keys="orderId"
+	 * @model
 	 * @generated
 	 */
 	OrderHeader getOrder();
@@ -118,7 +118,7 @@ public interface OrderStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order Payment Preference</em>' reference.
 	 * @see #setOrderPaymentPreference(OrderPaymentPreference)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderStatus_OrderPaymentPreference()
-	 * @model keys="orderPaymentPreferenceId"
+	 * @model
 	 * @generated
 	 */
 	OrderPaymentPreference getOrderPaymentPreference();
@@ -140,7 +140,7 @@ public interface OrderStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderStatus_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -219,7 +219,7 @@ public interface OrderStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status User Login</em>' reference.
 	 * @see #setStatusUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderStatus_StatusUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getStatusUserLogin();

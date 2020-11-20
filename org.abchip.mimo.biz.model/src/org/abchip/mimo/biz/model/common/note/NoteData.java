@@ -234,7 +234,7 @@ public interface NoteData extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Note Party</em>' reference.
 	 * @see #setNoteParty(Party)
 	 * @see org.abchip.mimo.biz.model.common.note.NotePackage#getNoteData_NoteParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getNoteParty();

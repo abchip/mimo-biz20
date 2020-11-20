@@ -35,7 +35,7 @@ public interface ContactMechTypePurpose extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Contact Mech Type</em>' reference.
 	 * @see #setContactMechType(ContactMechType)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMechTypePurpose_ContactMechType()
-	 * @model keys="contactMechTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -58,7 +58,7 @@ public interface ContactMechTypePurpose extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Contact Mech Purpose Type</em>' reference.
 	 * @see #setContactMechPurposeType(ContactMechPurposeType)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMechTypePurpose_ContactMechPurposeType()
-	 * @model keys="contactMechPurposeTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

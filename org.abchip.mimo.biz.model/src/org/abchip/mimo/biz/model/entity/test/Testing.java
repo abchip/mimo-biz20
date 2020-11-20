@@ -213,7 +213,7 @@ public interface Testing extends EntityTyped<TestingType>, EntityInfo {
 	 * @return the value of the '<em>Testing Type</em>' reference.
 	 * @see #setTestingType(TestingType)
 	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTesting_TestingType()
-	 * @model keys="testingTypeId"
+	 * @model
 	 * @generated
 	 */
 	TestingType getTestingType();

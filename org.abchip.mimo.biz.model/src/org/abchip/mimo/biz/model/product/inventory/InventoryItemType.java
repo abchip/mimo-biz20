@@ -99,7 +99,7 @@ public interface InventoryItemType extends EntityType<InventoryItem>, EntityInfo
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(InventoryItemType)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemType_ParentType()
-	 * @model keys="inventoryItemTypeId"
+	 * @model
 	 * @generated
 	 */
 	InventoryItemType getParentType();

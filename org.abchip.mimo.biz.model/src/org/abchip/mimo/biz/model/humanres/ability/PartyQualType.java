@@ -85,7 +85,7 @@ public interface PartyQualType extends EntityType<PartyQual>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(PartyQualType)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPartyQualType_ParentType()
-	 * @model keys="partyQualTypeId"
+	 * @model
 	 * @generated
 	 */
 	PartyQualType getParentType();

@@ -85,7 +85,7 @@ public interface FixedAssetStdCostType extends EntityType<FixedAssetStdCost>, En
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(FixedAssetStdCostType)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetStdCostType_ParentType()
-	 * @model keys="fixedAssetStdCostTypeId"
+	 * @model
 	 * @generated
 	 */
 	FixedAssetStdCostType getParentType();

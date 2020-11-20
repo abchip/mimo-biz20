@@ -93,7 +93,7 @@ public interface KeywordThesaurus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Relationship Enum</em>' reference.
 	 * @see #setRelationshipEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.common.keyword.KeywordPackage#getKeywordThesaurus_RelationshipEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getRelationshipEnum();

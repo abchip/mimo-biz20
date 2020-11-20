@@ -88,7 +88,7 @@ public interface PaymentType extends EntityType<Payment>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(PaymentType)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentType_ParentType()
-	 * @model keys="paymentTypeId"
+	 * @model
 	 * @generated
 	 */
 	PaymentType getParentType();

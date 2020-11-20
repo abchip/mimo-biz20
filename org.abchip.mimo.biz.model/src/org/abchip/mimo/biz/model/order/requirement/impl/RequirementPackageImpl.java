@@ -1692,17 +1692,13 @@ public class RequirementPackageImpl extends EPackageImpl implements RequirementP
 		// Initialize classes and features; add operations and parameters
 		initEClass(desiredFeatureEClass, DesiredFeature.class, "DesiredFeature", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDesiredFeature_Requirement(), this.getRequirement(), null, "requirement", null, 1, 1, DesiredFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getDesiredFeature_Requirement().getEKeys().add(this.getRequirement_RequirementId());
 		initEAttribute(getDesiredFeature_DesiredFeatureId(), ecorePackage.getEString(), "desiredFeatureId", null, 1, 1, DesiredFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDesiredFeature_OptionalInd(), ecorePackage.getEBooleanObject(), "optionalInd", null, 0, 1, DesiredFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDesiredFeature_ProductFeature(), theFeaturePackage.getProductFeature(), null, "productFeature", null, 0, 1, DesiredFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getDesiredFeature_ProductFeature().getEKeys().add(theFeaturePackage.getProductFeature_ProductFeatureId());
 
 		initEClass(orderRequirementCommitmentEClass, OrderRequirementCommitment.class, "OrderRequirementCommitment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getOrderRequirementCommitment_Order(), theOrderPackage.getOrderHeader(), null, "order", null, 1, 1, OrderRequirementCommitment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderRequirementCommitment_Order().getEKeys().add(theOrderPackage.getOrderHeader_OrderId());
 		initEReference(getOrderRequirementCommitment_Requirement(), this.getRequirement(), null, "requirement", null, 1, 1, OrderRequirementCommitment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getOrderRequirementCommitment_Requirement().getEKeys().add(this.getRequirement_RequirementId());
 		initEAttribute(getOrderRequirementCommitment_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 1, 1, OrderRequirementCommitment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrderRequirementCommitment_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, OrderRequirementCommitment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1711,18 +1707,14 @@ public class RequirementPackageImpl extends EPackageImpl implements RequirementP
 		initEAttribute(getRequirement_CreatedByUserLogin(), ecorePackage.getEString(), "createdByUserLogin", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRequirement_CreatedDate(), ecorePackage.getEDate(), "createdDate", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRequirement_Deliverable(), theWorkeffortPackage.getDeliverable(), null, "deliverable", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRequirement_Deliverable().getEKeys().add(theWorkeffortPackage.getDeliverable_DeliverableId());
 		initEAttribute(getRequirement_Description(), ecorePackage.getEString(), "description", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRequirement_EstimatedBudget(), ecorePackage.getEBigDecimal(), "estimatedBudget", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRequirement_Facility(), theFacilityPackage.getFacility(), null, "facility", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRequirement_Facility().getEKeys().add(theFacilityPackage.getFacility_FacilityId());
 		initEAttribute(getRequirement_FacilityIdTo(), ecorePackage.getEString(), "facilityIdTo", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRequirement_FixedAsset(), theFixedassetPackage.getFixedAsset(), null, "fixedAsset", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRequirement_FixedAsset().getEKeys().add(theFixedassetPackage.getFixedAsset_FixedAssetId());
 		initEAttribute(getRequirement_LastModifiedByUserLogin(), ecorePackage.getEString(), "lastModifiedByUserLogin", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRequirement_LastModifiedDate(), ecorePackage.getEDate(), "lastModifiedDate", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRequirement_Product(), theProductPackage.getProduct(), null, "product", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRequirement_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEAttribute(getRequirement_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRequirement_Reason(), ecorePackage.getEString(), "reason", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRequirement_RequiredByDate(), ecorePackage.getEDate(), "requiredByDate", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1730,50 +1722,38 @@ public class RequirementPackageImpl extends EPackageImpl implements RequirementP
 		initEAttribute(getRequirement_RequirementStartDate(), ecorePackage.getEDate(), "requirementStartDate", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRequirement_RequirementStatuses(), this.getRequirementStatus(), null, "requirementStatuses", null, 0, -1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getRequirement_RequirementType(), this.getRequirementType(), null, "requirementType", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRequirement_RequirementType().getEKeys().add(this.getRequirementType_RequirementTypeId());
 		initEReference(getRequirement_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRequirement_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getRequirement_UseCase(), ecorePackage.getEString(), "useCase", null, 0, 1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRequirement_WorkRequirementFulfillments(), this.getWorkRequirementFulfillment(), null, "workRequirementFulfillments", null, 0, -1, Requirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(requirementAttributeEClass, RequirementAttribute.class, "RequirementAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getRequirementAttribute_Requirement(), this.getRequirement(), null, "requirement", null, 1, 1, RequirementAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRequirementAttribute_Requirement().getEKeys().add(this.getRequirement_RequirementId());
 		initEAttribute(getRequirementAttribute_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, RequirementAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRequirementAttribute_AttrDescription(), ecorePackage.getEString(), "attrDescription", null, 0, 1, RequirementAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRequirementAttribute_AttrValue(), ecorePackage.getEString(), "attrValue", null, 0, 1, RequirementAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(requirementBudgetAllocationEClass, RequirementBudgetAllocation.class, "RequirementBudgetAllocation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getRequirementBudgetAllocation_Budget(), theBudgetPackage.getBudget(), null, "budget", null, 1, 1, RequirementBudgetAllocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRequirementBudgetAllocation_Budget().getEKeys().add(theBudgetPackage.getBudget_BudgetId());
 		initEReference(getRequirementBudgetAllocation_Requirement(), this.getRequirement(), null, "requirement", null, 1, 1, RequirementBudgetAllocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRequirementBudgetAllocation_Requirement().getEKeys().add(this.getRequirement_RequirementId());
 		initEAttribute(getRequirementBudgetAllocation_BudgetItemSeqId(), ecorePackage.getEString(), "budgetItemSeqId", null, 1, 1, RequirementBudgetAllocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRequirementBudgetAllocation_Amount(), ecorePackage.getEBigDecimal(), "amount", null, 0, 1, RequirementBudgetAllocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(requirementCustRequestEClass, RequirementCustRequest.class, "RequirementCustRequest", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getRequirementCustRequest_CustRequest(), theRequestPackage.getCustRequest(), null, "custRequest", null, 1, 1, RequirementCustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRequirementCustRequest_CustRequest().getEKeys().add(theRequestPackage.getCustRequest_CustRequestId());
 		initEReference(getRequirementCustRequest_Requirement(), this.getRequirement(), null, "requirement", null, 1, 1, RequirementCustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRequirementCustRequest_Requirement().getEKeys().add(this.getRequirement_RequirementId());
 		initEAttribute(getRequirementCustRequest_CustRequestItemSeqId(), ecorePackage.getEString(), "custRequestItemSeqId", null, 1, 1, RequirementCustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(requirementRoleEClass, RequirementRole.class, "RequirementRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getRequirementRole_Requirement(), this.getRequirement(), null, "requirement", null, 1, 1, RequirementRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRequirementRole_Requirement().getEKeys().add(this.getRequirement_RequirementId());
 		initEReference(getRequirementRole_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, RequirementRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRequirementRole_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getRequirementRole_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, RequirementRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRequirementRole_RoleTypeId(), ecorePackage.getEString(), "roleTypeId", null, 1, 1, RequirementRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRequirementRole_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, RequirementRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(requirementStatusEClass, RequirementStatus.class, "RequirementStatus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getRequirementStatus_Requirement(), this.getRequirement(), null, "requirement", null, 1, 1, RequirementStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRequirementStatus_Requirement().getEKeys().add(this.getRequirement_RequirementId());
 		initEReference(getRequirementStatus_Status(), theStatusPackage.getStatusItem(), null, "status", null, 1, 1, RequirementStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRequirementStatus_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEReference(getRequirementStatus_ChangeByUserLogin(), theLoginPackage.getUserLogin(), null, "changeByUserLogin", null, 0, 1, RequirementStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRequirementStatus_ChangeByUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEAttribute(getRequirementStatus_StatusDate(), ecorePackage.getEDate(), "statusDate", null, 0, 1, RequirementStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(requirementTypeEClass, RequirementType.class, "RequirementType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1781,12 +1761,10 @@ public class RequirementPackageImpl extends EPackageImpl implements RequirementP
 		initEAttribute(getRequirementType_Description(), ecorePackage.getEString(), "description", null, 0, 1, RequirementType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRequirementType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, RequirementType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRequirementType_ParentType(), this.getRequirementType(), null, "parentType", null, 0, 1, RequirementType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRequirementType_ParentType().getEKeys().add(this.getRequirementType_RequirementTypeId());
 		initEReference(getRequirementType_RequirementTypeAttrs(), this.getRequirementTypeAttr(), null, "requirementTypeAttrs", null, 0, -1, RequirementType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(requirementTypeAttrEClass, RequirementTypeAttr.class, "RequirementTypeAttr", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getRequirementTypeAttr_RequirementType(), this.getRequirementType(), null, "requirementType", null, 1, 1, RequirementTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRequirementTypeAttr_RequirementType().getEKeys().add(this.getRequirementType_RequirementTypeId());
 		initEAttribute(getRequirementTypeAttr_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, RequirementTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRequirementTypeAttr_Description(), ecorePackage.getEString(), "description", null, 0, 1, RequirementTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1796,11 +1774,8 @@ public class RequirementPackageImpl extends EPackageImpl implements RequirementP
 
 		initEClass(workRequirementFulfillmentEClass, WorkRequirementFulfillment.class, "WorkRequirementFulfillment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getWorkRequirementFulfillment_Requirement(), this.getRequirement(), null, "requirement", null, 1, 1, WorkRequirementFulfillment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWorkRequirementFulfillment_Requirement().getEKeys().add(this.getRequirement_RequirementId());
 		initEReference(getWorkRequirementFulfillment_WorkEffort(), theWorkeffortPackage.getWorkEffort(), null, "workEffort", null, 1, 1, WorkRequirementFulfillment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWorkRequirementFulfillment_WorkEffort().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
 		initEReference(getWorkRequirementFulfillment_WorkReqFulfType(), this.getWorkReqFulfType(), null, "workReqFulfType", null, 0, 1, WorkRequirementFulfillment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWorkRequirementFulfillment_WorkReqFulfType().getEKeys().add(this.getWorkReqFulfType_WorkReqFulfTypeId());
 
 		// Create resource
 		createResource(eNS_URI);

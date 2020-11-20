@@ -199,6 +199,79 @@ public interface GeoPackage extends EPackage {
 	int COUNTRY_CODE = 2;
 
 	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.geo.impl.CountryCapitalImpl <em>Country Capital</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.model.common.geo.impl.CountryCapitalImpl
+	 * @see org.abchip.mimo.biz.model.common.geo.impl.GeoPackageImpl#getCountryCapital()
+	 * @generated
+	 */
+	int COUNTRY_CAPITAL = 1;
+
+	/**
+	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COUNTRY_CAPITAL__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COUNTRY_CAPITAL__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COUNTRY_CAPITAL__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COUNTRY_CAPITAL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Country Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COUNTRY_CAPITAL__COUNTRY_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Country Capital</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COUNTRY_CAPITAL__COUNTRY_CAPITAL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of structural features of the '<em>Country Capital</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COUNTRY_CAPITAL_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+
+	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -280,106 +353,6 @@ public interface GeoPackage extends EPackage {
 	int COUNTRY_CODE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.geo.impl.CountryCapitalImpl <em>Country Capital</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.model.common.geo.impl.CountryCapitalImpl
-	 * @see org.abchip.mimo.biz.model.common.geo.impl.GeoPackageImpl#getCountryCapital()
-	 * @generated
-	 */
-	int COUNTRY_CAPITAL = 1;
-
-	/**
-	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNTRY_CAPITAL__CREATED_STAMP = COUNTRY_CODE__CREATED_STAMP;
-
-	/**
-	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNTRY_CAPITAL__CREATED_TX_STAMP = COUNTRY_CODE__CREATED_TX_STAMP;
-
-	/**
-	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNTRY_CAPITAL__LAST_UPDATED_STAMP = COUNTRY_CODE__LAST_UPDATED_STAMP;
-
-	/**
-	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNTRY_CAPITAL__LAST_UPDATED_TX_STAMP = COUNTRY_CODE__LAST_UPDATED_TX_STAMP;
-
-	/**
-	 * The feature id for the '<em><b>Country Code</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNTRY_CAPITAL__COUNTRY_CODE = COUNTRY_CODE__COUNTRY_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Country Abbr</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNTRY_CAPITAL__COUNTRY_ABBR = COUNTRY_CODE__COUNTRY_ABBR;
-
-	/**
-	 * The feature id for the '<em><b>Country Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNTRY_CAPITAL__COUNTRY_NAME = COUNTRY_CODE__COUNTRY_NAME;
-
-	/**
-	 * The feature id for the '<em><b>Country Number</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNTRY_CAPITAL__COUNTRY_NUMBER = COUNTRY_CODE__COUNTRY_NUMBER;
-
-	/**
-	 * The feature id for the '<em><b>Country Capital</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNTRY_CAPITAL__COUNTRY_CAPITAL = COUNTRY_CODE_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of structural features of the '<em>Country Capital</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNTRY_CAPITAL_FEATURE_COUNT = COUNTRY_CODE_FEATURE_COUNT + 1;
-
-	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.geo.impl.CountryTeleCodeImpl <em>Country Tele Code</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -396,7 +369,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_TELE_CODE__CREATED_STAMP = COUNTRY_CODE__CREATED_STAMP;
+	int COUNTRY_TELE_CODE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -405,7 +378,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_TELE_CODE__CREATED_TX_STAMP = COUNTRY_CODE__CREATED_TX_STAMP;
+	int COUNTRY_TELE_CODE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -414,7 +387,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_TELE_CODE__LAST_UPDATED_STAMP = COUNTRY_CODE__LAST_UPDATED_STAMP;
+	int COUNTRY_TELE_CODE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -423,7 +396,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_TELE_CODE__LAST_UPDATED_TX_STAMP = COUNTRY_CODE__LAST_UPDATED_TX_STAMP;
+	int COUNTRY_TELE_CODE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Country Code</b></em>' attribute.
@@ -432,34 +405,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_TELE_CODE__COUNTRY_CODE = COUNTRY_CODE__COUNTRY_CODE;
-
-	/**
-	 * The feature id for the '<em><b>Country Abbr</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNTRY_TELE_CODE__COUNTRY_ABBR = COUNTRY_CODE__COUNTRY_ABBR;
-
-	/**
-	 * The feature id for the '<em><b>Country Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNTRY_TELE_CODE__COUNTRY_NAME = COUNTRY_CODE__COUNTRY_NAME;
-
-	/**
-	 * The feature id for the '<em><b>Country Number</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNTRY_TELE_CODE__COUNTRY_NUMBER = COUNTRY_CODE__COUNTRY_NUMBER;
+	int COUNTRY_TELE_CODE__COUNTRY_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Tele Code</b></em>' attribute.
@@ -468,7 +414,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_TELE_CODE__TELE_CODE = COUNTRY_CODE_FEATURE_COUNT + 0;
+	int COUNTRY_TELE_CODE__TELE_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Country Tele Code</em>' class.
@@ -477,7 +423,7 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRY_TELE_CODE_FEATURE_COUNT = COUNTRY_CODE_FEATURE_COUNT + 1;
+	int COUNTRY_TELE_CODE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.geo.impl.GeoImpl <em>Geo</em>}' class.
@@ -1125,6 +1071,17 @@ public interface GeoPackage extends EPackage {
 	EClass getCountryCapital();
 
 	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.geo.CountryCapital#getCountryCode <em>Country Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Country Code</em>'.
+	 * @see org.abchip.mimo.biz.model.common.geo.CountryCapital#getCountryCode()
+	 * @see #getCountryCapital()
+	 * @generated
+	 */
+	EAttribute getCountryCapital_CountryCode();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.geo.CountryCapital#getCountryCapital <em>Country Capital</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1198,6 +1155,17 @@ public interface GeoPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getCountryTeleCode();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.geo.CountryTeleCode#getCountryCode <em>Country Code</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Country Code</em>'.
+	 * @see org.abchip.mimo.biz.model.common.geo.CountryTeleCode#getCountryCode()
+	 * @see #getCountryTeleCode()
+	 * @generated
+	 */
+	EAttribute getCountryTeleCode_CountryCode();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.geo.CountryTeleCode#getTeleCode <em>Tele Code</em>}'.
@@ -1664,6 +1632,14 @@ public interface GeoPackage extends EPackage {
 		EClass COUNTRY_CAPITAL = eINSTANCE.getCountryCapital();
 
 		/**
+		 * The meta object literal for the '<em><b>Country Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COUNTRY_CAPITAL__COUNTRY_CODE = eINSTANCE.getCountryCapital_CountryCode();
+
+		/**
 		 * The meta object literal for the '<em><b>Country Capital</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1722,6 +1698,14 @@ public interface GeoPackage extends EPackage {
 		 * @generated
 		 */
 		EClass COUNTRY_TELE_CODE = eINSTANCE.getCountryTeleCode();
+
+		/**
+		 * The meta object literal for the '<em><b>Country Code</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COUNTRY_TELE_CODE__COUNTRY_CODE = eINSTANCE.getCountryTeleCode_CountryCode();
 
 		/**
 		 * The meta object literal for the '<em><b>Tele Code</b></em>' attribute feature.

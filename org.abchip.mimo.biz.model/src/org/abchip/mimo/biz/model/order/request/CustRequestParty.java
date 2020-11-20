@@ -41,7 +41,7 @@ public interface CustRequestParty extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Cust Request</em>' reference.
 	 * @see #setCustRequest(CustRequest)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestParty_CustRequest()
-	 * @model keys="custRequestId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface CustRequestParty extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestParty_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -87,7 +87,7 @@ public interface CustRequestParty extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestParty_RoleType()
-	 * @model keys="roleTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

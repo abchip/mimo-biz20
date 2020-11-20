@@ -90,7 +90,7 @@ public interface PeriodType extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Uom</em>' reference.
 	 * @see #setUom(Uom)
 	 * @see org.abchip.mimo.biz.model.common.period.PeriodPackage#getPeriodType_Uom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getUom();

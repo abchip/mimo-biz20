@@ -107,7 +107,7 @@ public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo 
 	 * @return the value of the '<em>Available Time Uom</em>' reference.
 	 * @see #setAvailableTimeUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_AvailableTimeUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getAvailableTimeUom();
@@ -156,8 +156,7 @@ public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo 
 	 * @return the value of the '<em>Cancl Autm Ext Time Uom</em>' reference.
 	 * @see #setCanclAutmExtTimeUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_CanclAutmExtTimeUom()
-	 * @model keys="uomId"
-	 *        annotation="mimo-ent-slot help='Unit Of Measure used for the automatic extension of the subscription.'"
+	 * @model annotation="mimo-ent-slot help='Unit Of Measure used for the automatic extension of the subscription.'"
 	 * @generated
 	 */
 	Uom getCanclAutmExtTimeUom();
@@ -206,7 +205,7 @@ public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo 
 	 * @return the value of the '<em>Contact Mech</em>' reference.
 	 * @see #setContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_ContactMech()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	ContactMech getContactMech();
@@ -359,8 +358,7 @@ public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo 
 	 * @return the value of the '<em>Grace Period On Expiry Uom</em>' reference.
 	 * @see #setGracePeriodOnExpiryUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_GracePeriodOnExpiryUom()
-	 * @model keys="uomId"
-	 *        annotation="mimo-ent-slot help='Unit Of Measure used for the automatic extension of the subscription.'"
+	 * @model annotation="mimo-ent-slot help='Unit Of Measure used for the automatic extension of the subscription.'"
 	 * @generated
 	 */
 	Uom getGracePeriodOnExpiryUom();
@@ -382,7 +380,7 @@ public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo 
 	 * @return the value of the '<em>Inventory Item</em>' reference.
 	 * @see #setInventoryItem(InventoryItem)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_InventoryItem()
-	 * @model keys="inventoryItemId"
+	 * @model
 	 * @generated
 	 */
 	InventoryItem getInventoryItem();
@@ -431,7 +429,7 @@ public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo 
 	 * @return the value of the '<em>Max Life Time Uom</em>' reference.
 	 * @see #setMaxLifeTimeUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_MaxLifeTimeUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getMaxLifeTimeUom();
@@ -453,7 +451,7 @@ public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo 
 	 * @return the value of the '<em>Need Type</em>' reference.
 	 * @see #setNeedType(NeedType)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_NeedType()
-	 * @model keys="needTypeId"
+	 * @model
 	 * @generated
 	 */
 	NeedType getNeedType();
@@ -475,7 +473,7 @@ public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo 
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_Order()
-	 * @model keys="orderId"
+	 * @model
 	 * @generated
 	 */
 	OrderHeader getOrder();
@@ -523,7 +521,7 @@ public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo 
 	 * @return the value of the '<em>Originated From Party</em>' reference.
 	 * @see #setOriginatedFromParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_OriginatedFromParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getOriginatedFromParty();
@@ -545,7 +543,7 @@ public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo 
 	 * @return the value of the '<em>Originated From Role Type</em>' reference.
 	 * @see #setOriginatedFromRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_OriginatedFromRoleType()
-	 * @model keys="roleTypeId"
+	 * @model
 	 * @generated
 	 */
 	RoleType getOriginatedFromRoleType();
@@ -567,7 +565,7 @@ public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo 
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -615,7 +613,7 @@ public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo 
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();
@@ -637,7 +635,7 @@ public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo 
 	 * @return the value of the '<em>Product Category</em>' reference.
 	 * @see #setProductCategory(ProductCategory)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_ProductCategory()
-	 * @model keys="productCategoryId"
+	 * @model
 	 * @generated
 	 */
 	ProductCategory getProductCategory();
@@ -711,7 +709,7 @@ public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo 
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_RoleType()
-	 * @model keys="roleTypeId"
+	 * @model
 	 * @generated
 	 */
 	RoleType getRoleType();
@@ -757,7 +755,7 @@ public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo 
 	 * @return the value of the '<em>Subscription Resource</em>' reference.
 	 * @see #setSubscriptionResource(SubscriptionResource)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_SubscriptionResource()
-	 * @model keys="subscriptionResourceId"
+	 * @model
 	 * @generated
 	 */
 	SubscriptionResource getSubscriptionResource();
@@ -779,7 +777,7 @@ public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo 
 	 * @return the value of the '<em>Subscription Type</em>' reference.
 	 * @see #setSubscriptionType(SubscriptionType)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_SubscriptionType()
-	 * @model keys="subscriptionTypeId"
+	 * @model
 	 * @generated
 	 */
 	SubscriptionType getSubscriptionType();
@@ -879,7 +877,7 @@ public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo 
 	 * @return the value of the '<em>Use Time Uom</em>' reference.
 	 * @see #setUseTimeUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_UseTimeUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getUseTimeUom();

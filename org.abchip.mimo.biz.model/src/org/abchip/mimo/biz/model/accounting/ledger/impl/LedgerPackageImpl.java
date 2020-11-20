@@ -3944,88 +3944,61 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 		initEReference(getAcctgTrans_AcctgTransAttributes(), this.getAcctgTransAttribute(), null, "acctgTransAttributes", null, 0, -1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getAcctgTrans_AcctgTransEntries(), this.getAcctgTransEntry(), null, "acctgTransEntries", null, 0, -1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getAcctgTrans_AcctgTransType(), this.getAcctgTransType(), null, "acctgTransType", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTrans_AcctgTransType().getEKeys().add(this.getAcctgTransType_AcctgTransTypeId());
 		initEAttribute(getAcctgTrans_CreatedByUserLogin(), ecorePackage.getEString(), "createdByUserLogin", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAcctgTrans_CreatedDate(), ecorePackage.getEDate(), "createdDate", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAcctgTrans_Description(), ecorePackage.getEString(), "description", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAcctgTrans_FinAccountTrans(), theFinaccountPackage.getFinAccountTrans(), null, "finAccountTrans", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTrans_FinAccountTrans().getEKeys().add(theFinaccountPackage.getFinAccountTrans_FinAccountTransId());
 		initEReference(getAcctgTrans_FixedAsset(), theFixedassetPackage.getFixedAsset(), null, "fixedAsset", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTrans_FixedAsset().getEKeys().add(theFixedassetPackage.getFixedAsset_FixedAssetId());
 		initEReference(getAcctgTrans_GlFiscalType(), this.getGlFiscalType(), null, "glFiscalType", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTrans_GlFiscalType().getEKeys().add(this.getGlFiscalType_GlFiscalTypeId());
 		initEReference(getAcctgTrans_GlJournal(), this.getGlJournal(), null, "glJournal", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTrans_GlJournal().getEKeys().add(this.getGlJournal_GlJournalId());
 		initEReference(getAcctgTrans_GroupStatus(), theStatusPackage.getStatusItem(), null, "groupStatus", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTrans_GroupStatus().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEReference(getAcctgTrans_InventoryItem(), theInventoryPackage.getInventoryItem(), null, "inventoryItem", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTrans_InventoryItem().getEKeys().add(theInventoryPackage.getInventoryItem_InventoryItemId());
 		initEReference(getAcctgTrans_Invoice(), theInvoicePackage.getInvoice(), null, "invoice", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTrans_Invoice().getEKeys().add(theInvoicePackage.getInvoice_InvoiceId());
 		initEAttribute(getAcctgTrans_IsPosted(), ecorePackage.getEBoolean(), "isPosted", null, 1, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAcctgTrans_LastModifiedByUserLogin(), ecorePackage.getEString(), "lastModifiedByUserLogin", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAcctgTrans_LastModifiedDate(), ecorePackage.getEDate(), "lastModifiedDate", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAcctgTrans_Party(), thePartyPackage_1.getParty(), null, "party", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTrans_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getAcctgTrans_Payment(), thePaymentPackage.getPayment(), null, "payment", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTrans_Payment().getEKeys().add(thePaymentPackage.getPayment_PaymentId());
 		initEReference(getAcctgTrans_PhysicalInventory(), theInventoryPackage.getPhysicalInventory(), null, "physicalInventory", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTrans_PhysicalInventory().getEKeys().add(theInventoryPackage.getPhysicalInventory_PhysicalInventoryId());
 		initEAttribute(getAcctgTrans_PostedDate(), ecorePackage.getEDate(), "postedDate", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAcctgTrans_Receipt(), theReceiptPackage.getShipmentReceipt(), null, "receipt", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTrans_Receipt().getEKeys().add(theReceiptPackage.getShipmentReceipt_ReceiptId());
 		initEReference(getAcctgTrans_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTrans_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEAttribute(getAcctgTrans_ScheduledPostingDate(), ecorePackage.getEDate(), "scheduledPostingDate", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAcctgTrans_Shipment(), theShipment_Package.getShipment(), null, "shipment", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTrans_Shipment().getEKeys().add(theShipment_Package.getShipment_ShipmentId());
 		initEAttribute(getAcctgTrans_TheirAcctgTransId(), ecorePackage.getEString(), "theirAcctgTransId", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAcctgTrans_TransactionDate(), ecorePackage.getEDate(), "transactionDate", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAcctgTrans_VoucherDate(), ecorePackage.getEDate(), "voucherDate", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAcctgTrans_VoucherRef(), ecorePackage.getEString(), "voucherRef", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAcctgTrans_WorkEffort(), theWorkeffortPackage.getWorkEffort(), null, "workEffort", null, 0, 1, AcctgTrans.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTrans_WorkEffort().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
 
 		initEClass(acctgTransAttributeEClass, AcctgTransAttribute.class, "AcctgTransAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getAcctgTransAttribute_AcctgTrans(), this.getAcctgTrans(), null, "acctgTrans", null, 1, 1, AcctgTransAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTransAttribute_AcctgTrans().getEKeys().add(this.getAcctgTrans_AcctgTransId());
 		initEAttribute(getAcctgTransAttribute_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, AcctgTransAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAcctgTransAttribute_AttrDescription(), ecorePackage.getEString(), "attrDescription", null, 0, 1, AcctgTransAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAcctgTransAttribute_AttrValue(), ecorePackage.getEString(), "attrValue", null, 0, 1, AcctgTransAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(acctgTransEntryEClass, AcctgTransEntry.class, "AcctgTransEntry", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getAcctgTransEntry_AcctgTrans(), this.getAcctgTrans(), null, "acctgTrans", null, 1, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTransEntry_AcctgTrans().getEKeys().add(this.getAcctgTrans_AcctgTransId());
 		initEAttribute(getAcctgTransEntry_AcctgTransEntrySeqId(), ecorePackage.getEString(), "acctgTransEntrySeqId", null, 1, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAcctgTransEntry_AcctgTransEntryType(), this.getAcctgTransEntryType(), null, "acctgTransEntryType", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTransEntry_AcctgTransEntryType().getEKeys().add(this.getAcctgTransEntryType_AcctgTransEntryTypeId());
 		initEAttribute(getAcctgTransEntry_Amount(), ecorePackage.getEBigDecimal(), "amount", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAcctgTransEntry_CurrencyUom(), theUomPackage.getUom(), null, "currencyUom", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTransEntry_CurrencyUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEAttribute(getAcctgTransEntry_DebitCreditFlag(), theAccountingPackage.getDebitCreditFlag(), "debitCreditFlag", null, 1, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAcctgTransEntry_Description(), ecorePackage.getEString(), "description", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAcctgTransEntry_DueDate(), ecorePackage.getEDate(), "dueDate", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAcctgTransEntry_GlAccount(), this.getGlAccount(), null, "glAccount", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTransEntry_GlAccount().getEKeys().add(this.getGlAccount_GlAccountId());
 		initEReference(getAcctgTransEntry_GlAccountType(), this.getGlAccountType(), null, "glAccountType", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTransEntry_GlAccountType().getEKeys().add(this.getGlAccountType_GlAccountTypeId());
 		initEAttribute(getAcctgTransEntry_GroupId(), ecorePackage.getEString(), "groupId", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAcctgTransEntry_InventoryItem(), theInventoryPackage.getInventoryItem(), null, "inventoryItem", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTransEntry_InventoryItem().getEKeys().add(theInventoryPackage.getInventoryItem_InventoryItemId());
 		initEAttribute(getAcctgTransEntry_IsSummary(), ecorePackage.getEBooleanObject(), "isSummary", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAcctgTransEntry_OrganizationPartyId(), ecorePackage.getEString(), "organizationPartyId", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAcctgTransEntry_OrigAmount(), ecorePackage.getEBigDecimal(), "origAmount", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAcctgTransEntry_OrigCurrencyUom(), theUomPackage.getUom(), null, "origCurrencyUom", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTransEntry_OrigCurrencyUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEReference(getAcctgTransEntry_Party(), thePartyPackage_1.getParty(), null, "party", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTransEntry_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getAcctgTransEntry_ProductId(), ecorePackage.getEString(), "productId", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAcctgTransEntry_ReconcileStatus(), theStatusPackage.getStatusItem(), null, "reconcileStatus", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTransEntry_ReconcileStatus().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEReference(getAcctgTransEntry_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTransEntry_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEReference(getAcctgTransEntry_SettlementTerm(), this.getSettlementTerm(), null, "settlementTerm", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTransEntry_SettlementTerm().getEKeys().add(this.getSettlementTerm_SettlementTermId());
 		initEAttribute(getAcctgTransEntry_TaxId(), ecorePackage.getEString(), "taxId", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAcctgTransEntry_TheirPartyId(), ecorePackage.getEString(), "theirPartyId", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAcctgTransEntry_TheirProductId(), ecorePackage.getEString(), "theirProductId", null, 0, 1, AcctgTransEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -4036,7 +4009,6 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 		initEAttribute(getAcctgTransEntryType_Description(), ecorePackage.getEString(), "description", null, 0, 1, AcctgTransEntryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAcctgTransEntryType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, AcctgTransEntryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAcctgTransEntryType_ParentType(), this.getAcctgTransEntryType(), null, "parentType", null, 0, 1, AcctgTransEntryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTransEntryType_ParentType().getEKeys().add(this.getAcctgTransEntryType_AcctgTransEntryTypeId());
 
 		initEClass(acctgTransTypeEClass, AcctgTransType.class, "AcctgTransType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAcctgTransType_AcctgTransTypeId(), ecorePackage.getEString(), "acctgTransTypeId", null, 1, 1, AcctgTransType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -4044,11 +4016,9 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 		initEAttribute(getAcctgTransType_Description(), ecorePackage.getEString(), "description", null, 0, 1, AcctgTransType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAcctgTransType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, AcctgTransType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAcctgTransType_ParentType(), this.getAcctgTransType(), null, "parentType", null, 0, 1, AcctgTransType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTransType_ParentType().getEKeys().add(this.getAcctgTransType_AcctgTransTypeId());
 
 		initEClass(acctgTransTypeAttrEClass, AcctgTransTypeAttr.class, "AcctgTransTypeAttr", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getAcctgTransTypeAttr_AcctgTransType(), this.getAcctgTransType(), null, "acctgTransType", null, 1, 1, AcctgTransTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAcctgTransTypeAttr_AcctgTransType().getEKeys().add(this.getAcctgTransType_AcctgTransTypeId());
 		initEAttribute(getAcctgTransTypeAttr_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, AcctgTransTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAcctgTransTypeAttr_Description(), ecorePackage.getEString(), "description", null, 0, 1, AcctgTransTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -4060,31 +4030,23 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 		initEAttribute(getGlAccount_ExternalId(), ecorePackage.getEString(), "externalId", null, 0, 1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getGlAccount_GlAccountCategoryMembers(), this.getGlAccountCategoryMember(), null, "glAccountCategoryMembers", null, 0, -1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getGlAccount_GlAccountClass(), this.getGlAccountClass(), null, "glAccountClass", null, 0, 1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccount_GlAccountClass().getEKeys().add(this.getGlAccountClass_GlAccountClassId());
 		initEReference(getGlAccount_GlAccountGroupMembers(), this.getGlAccountGroupMember(), null, "glAccountGroupMembers", null, 0, -1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getGlAccount_GlAccountOrganizations(), this.getGlAccountOrganization(), null, "glAccountOrganizations", null, 0, -1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getGlAccount_GlAccountType(), this.getGlAccountType(), null, "glAccountType", null, 0, 1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccount_GlAccountType().getEKeys().add(this.getGlAccountType_GlAccountTypeId());
 		initEReference(getGlAccount_GlBudgetXrefs(), this.getGlBudgetXref(), null, "glBudgetXrefs", null, 0, -1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getGlAccount_GlResourceType(), this.getGlResourceType(), null, "glResourceType", null, 0, 1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccount_GlResourceType().getEKeys().add(this.getGlResourceType_GlResourceTypeId());
 		initEReference(getGlAccount_GlXbrlClass(), this.getGlXbrlClass(), null, "glXbrlClass", null, 0, 1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccount_GlXbrlClass().getEKeys().add(this.getGlXbrlClass_GlXbrlClassId());
 		initEReference(getGlAccount_ParentGlAccount(), this.getGlAccount(), null, "parentGlAccount", null, 0, 1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccount_ParentGlAccount().getEKeys().add(this.getGlAccount_GlAccountId());
 		initEAttribute(getGlAccount_ProductId(), ecorePackage.getEString(), "productId", null, 0, 1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(glAccountCategoryEClass, GlAccountCategory.class, "GlAccountCategory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getGlAccountCategory_GlAccountCategoryId(), ecorePackage.getEString(), "glAccountCategoryId", null, 1, 1, GlAccountCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlAccountCategory_Description(), ecorePackage.getEString(), "description", null, 0, 1, GlAccountCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getGlAccountCategory_GlAccountCategoryType(), this.getGlAccountCategoryType(), null, "glAccountCategoryType", null, 0, 1, GlAccountCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountCategory_GlAccountCategoryType().getEKeys().add(this.getGlAccountCategoryType_GlAccountCategoryTypeId());
 
 		initEClass(glAccountCategoryMemberEClass, GlAccountCategoryMember.class, "GlAccountCategoryMember", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getGlAccountCategoryMember_GlAccount(), this.getGlAccount(), null, "glAccount", null, 1, 1, GlAccountCategoryMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountCategoryMember_GlAccount().getEKeys().add(this.getGlAccount_GlAccountId());
 		initEReference(getGlAccountCategoryMember_GlAccountCategory(), this.getGlAccountCategory(), null, "glAccountCategory", null, 1, 1, GlAccountCategoryMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountCategoryMember_GlAccountCategory().getEKeys().add(this.getGlAccountCategory_GlAccountCategoryId());
 		initEAttribute(getGlAccountCategoryMember_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, GlAccountCategoryMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlAccountCategoryMember_AmountPercentage(), ecorePackage.getEBigDecimal(), "amountPercentage", null, 0, 1, GlAccountCategoryMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlAccountCategoryMember_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, GlAccountCategoryMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -4098,22 +4060,17 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 		initEAttribute(getGlAccountClass_Description(), ecorePackage.getEString(), "description", null, 0, 1, GlAccountClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlAccountClass_IsAssetClass(), ecorePackage.getEBooleanObject(), "isAssetClass", null, 0, 1, GlAccountClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getGlAccountClass_ParentClass(), this.getGlAccountClass(), null, "parentClass", null, 0, 1, GlAccountClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountClass_ParentClass().getEKeys().add(this.getGlAccountClass_GlAccountClassId());
 		initEAttribute(getGlAccountClass_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, GlAccountClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(glAccountGroupEClass, GlAccountGroup.class, "GlAccountGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getGlAccountGroup_GlAccountGroupId(), ecorePackage.getEString(), "glAccountGroupId", null, 1, 1, GlAccountGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlAccountGroup_Description(), ecorePackage.getEString(), "description", null, 0, 1, GlAccountGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getGlAccountGroup_GlAccountGroupType(), this.getGlAccountGroupType(), null, "glAccountGroupType", null, 0, 1, GlAccountGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountGroup_GlAccountGroupType().getEKeys().add(this.getGlAccountGroupType_GlAccountGroupTypeId());
 
 		initEClass(glAccountGroupMemberEClass, GlAccountGroupMember.class, "GlAccountGroupMember", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getGlAccountGroupMember_GlAccount(), this.getGlAccount(), null, "glAccount", null, 1, 1, GlAccountGroupMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountGroupMember_GlAccount().getEKeys().add(this.getGlAccount_GlAccountId());
 		initEReference(getGlAccountGroupMember_GlAccountGroupType(), this.getGlAccountGroupType(), null, "glAccountGroupType", null, 1, 1, GlAccountGroupMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountGroupMember_GlAccountGroupType().getEKeys().add(this.getGlAccountGroupType_GlAccountGroupTypeId());
 		initEReference(getGlAccountGroupMember_GlAccountGroup(), this.getGlAccountGroup(), null, "glAccountGroup", null, 0, 1, GlAccountGroupMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountGroupMember_GlAccountGroup().getEKeys().add(this.getGlAccountGroup_GlAccountGroupId());
 
 		initEClass(glAccountGroupTypeEClass, GlAccountGroupType.class, "GlAccountGroupType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getGlAccountGroupType_GlAccountGroupTypeId(), ecorePackage.getEString(), "glAccountGroupTypeId", null, 1, 1, GlAccountGroupType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -4121,11 +4078,8 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 
 		initEClass(glAccountHistoryEClass, GlAccountHistory.class, "GlAccountHistory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getGlAccountHistory_GlAccount(), this.getGlAccount(), null, "glAccount", null, 1, 1, GlAccountHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountHistory_GlAccount().getEKeys().add(this.getGlAccount_GlAccountId());
 		initEReference(getGlAccountHistory_OrganizationParty(), thePartyPackage_1.getParty(), null, "organizationParty", null, 1, 1, GlAccountHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountHistory_OrganizationParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getGlAccountHistory_CustomTimePeriod(), thePeriodPackage.getCustomTimePeriod(), null, "customTimePeriod", null, 1, 1, GlAccountHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountHistory_CustomTimePeriod().getEKeys().add(thePeriodPackage.getCustomTimePeriod_CustomTimePeriodId());
 		initEAttribute(getGlAccountHistory_EndingBalance(), ecorePackage.getEBigDecimal(), "endingBalance", null, 0, 1, GlAccountHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlAccountHistory_OpeningBalance(), ecorePackage.getEBigDecimal(), "openingBalance", null, 0, 1, GlAccountHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlAccountHistory_PostedCredits(), ecorePackage.getEBigDecimal(), "postedCredits", null, 0, 1, GlAccountHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -4133,21 +4087,15 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 
 		initEClass(glAccountOrganizationEClass, GlAccountOrganization.class, "GlAccountOrganization", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getGlAccountOrganization_GlAccount(), this.getGlAccount(), null, "glAccount", null, 1, 1, GlAccountOrganization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountOrganization_GlAccount().getEKeys().add(this.getGlAccount_GlAccountId());
 		initEReference(getGlAccountOrganization_OrganizationParty(), thePartyPackage_1.getParty(), null, "organizationParty", null, 1, 1, GlAccountOrganization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountOrganization_OrganizationParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getGlAccountOrganization_FromDate(), ecorePackage.getEDate(), "fromDate", null, 0, 1, GlAccountOrganization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getGlAccountOrganization_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 0, 1, GlAccountOrganization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountOrganization_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEAttribute(getGlAccountOrganization_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, GlAccountOrganization.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(glAccountRoleEClass, GlAccountRole.class, "GlAccountRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getGlAccountRole_GlAccount(), this.getGlAccount(), null, "glAccount", null, 1, 1, GlAccountRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountRole_GlAccount().getEKeys().add(this.getGlAccount_GlAccountId());
 		initEReference(getGlAccountRole_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, GlAccountRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountRole_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getGlAccountRole_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 1, 1, GlAccountRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountRole_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEAttribute(getGlAccountRole_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, GlAccountRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlAccountRole_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, GlAccountRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -4157,21 +4105,15 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 		initEReference(getGlAccountType_GlAccountTypeDefaults(), this.getGlAccountTypeDefault(), null, "glAccountTypeDefaults", null, 0, -1, GlAccountType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlAccountType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, GlAccountType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getGlAccountType_ParentType(), this.getGlAccountType(), null, "parentType", null, 0, 1, GlAccountType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountType_ParentType().getEKeys().add(this.getGlAccountType_GlAccountTypeId());
 
 		initEClass(glAccountTypeDefaultEClass, GlAccountTypeDefault.class, "GlAccountTypeDefault", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getGlAccountTypeDefault_GlAccountType(), this.getGlAccountType(), null, "glAccountType", null, 1, 1, GlAccountTypeDefault.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountTypeDefault_GlAccountType().getEKeys().add(this.getGlAccountType_GlAccountTypeId());
 		initEReference(getGlAccountTypeDefault_OrganizationParty(), thePartyPackage_1.getParty(), null, "organizationParty", null, 1, 1, GlAccountTypeDefault.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountTypeDefault_OrganizationParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getGlAccountTypeDefault_GlAccount(), this.getGlAccount(), null, "glAccount", null, 0, 1, GlAccountTypeDefault.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlAccountTypeDefault_GlAccount().getEKeys().add(this.getGlAccount_GlAccountId());
 
 		initEClass(glBudgetXrefEClass, GlBudgetXref.class, "GlBudgetXref", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getGlBudgetXref_GlAccount(), this.getGlAccount(), null, "glAccount", null, 1, 1, GlBudgetXref.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlBudgetXref_GlAccount().getEKeys().add(this.getGlAccount_GlAccountId());
 		initEReference(getGlBudgetXref_BudgetItemType(), theBudgetPackage.getBudgetItemType(), null, "budgetItemType", null, 1, 1, GlBudgetXref.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlBudgetXref_BudgetItemType().getEKeys().add(theBudgetPackage.getBudgetItemType_BudgetItemTypeId());
 		initEAttribute(getGlBudgetXref_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, GlBudgetXref.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlBudgetXref_AllocationPercentage(), ecorePackage.getEBigDecimal(), "allocationPercentage", null, 0, 1, GlBudgetXref.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlBudgetXref_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, GlBudgetXref.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -4185,7 +4127,6 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 		initEAttribute(getGlJournal_GlJournalName(), ecorePackage.getEString(), "glJournalName", null, 0, 1, GlJournal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlJournal_IsPosted(), ecorePackage.getEBooleanObject(), "isPosted", null, 0, 1, GlJournal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getGlJournal_OrganizationParty(), thePartyPackage_1.getParty(), null, "organizationParty", null, 0, 1, GlJournal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlJournal_OrganizationParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getGlJournal_PostedDate(), ecorePackage.getEDate(), "postedDate", null, 0, 1, GlJournal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(glReconciliationEClass, GlReconciliation.class, "GlReconciliation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -4194,23 +4135,18 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 		initEAttribute(getGlReconciliation_CreatedDate(), ecorePackage.getEDate(), "createdDate", null, 0, 1, GlReconciliation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlReconciliation_Description(), ecorePackage.getEString(), "description", null, 0, 1, GlReconciliation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getGlReconciliation_GlAccount(), this.getGlAccount(), null, "glAccount", null, 0, 1, GlReconciliation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlReconciliation_GlAccount().getEKeys().add(this.getGlAccount_GlAccountId());
 		initEAttribute(getGlReconciliation_GlReconciliationName(), ecorePackage.getEString(), "glReconciliationName", null, 0, 1, GlReconciliation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlReconciliation_LastModifiedByUserLogin(), ecorePackage.getEString(), "lastModifiedByUserLogin", null, 0, 1, GlReconciliation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlReconciliation_LastModifiedDate(), ecorePackage.getEDate(), "lastModifiedDate", null, 0, 1, GlReconciliation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlReconciliation_OpeningBalance(), ecorePackage.getEBigDecimal(), "openingBalance", null, 0, 1, GlReconciliation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getGlReconciliation_OrganizationParty(), thePartyPackage_1.getParty(), null, "organizationParty", null, 0, 1, GlReconciliation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlReconciliation_OrganizationParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getGlReconciliation_ReconciledBalance(), ecorePackage.getEBigDecimal(), "reconciledBalance", null, 0, 1, GlReconciliation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlReconciliation_ReconciledDate(), ecorePackage.getEDate(), "reconciledDate", null, 0, 1, GlReconciliation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getGlReconciliation_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, GlReconciliation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlReconciliation_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 
 		initEClass(glReconciliationEntryEClass, GlReconciliationEntry.class, "GlReconciliationEntry", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getGlReconciliationEntry_GlReconciliation(), this.getGlReconciliation(), null, "glReconciliation", null, 1, 1, GlReconciliationEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlReconciliationEntry_GlReconciliation().getEKeys().add(this.getGlReconciliation_GlReconciliationId());
 		initEReference(getGlReconciliationEntry_AcctgTrans(), this.getAcctgTrans(), null, "acctgTrans", null, 1, 1, GlReconciliationEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getGlReconciliationEntry_AcctgTrans().getEKeys().add(this.getAcctgTrans_AcctgTransId());
 		initEAttribute(getGlReconciliationEntry_AcctgTransEntrySeqId(), ecorePackage.getEString(), "acctgTransEntrySeqId", null, 1, 1, GlReconciliationEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlReconciliationEntry_ReconciledAmount(), ecorePackage.getEBigDecimal(), "reconciledAmount", null, 0, 1, GlReconciliationEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -4225,74 +4161,50 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 		initEClass(partyAcctgPreferenceEClass, PartyAcctgPreference.class, "PartyAcctgPreference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPartyAcctgPreference_PartyId(), ecorePackage.getEString(), "partyId", null, 1, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPartyAcctgPreference_BaseCurrencyUom(), theUomPackage.getUom(), null, "baseCurrencyUom", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyAcctgPreference_BaseCurrencyUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEReference(getPartyAcctgPreference_CogsMethod(), theEnumPackage.getEnumeration(), null, "cogsMethod", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyAcctgPreference_CogsMethod().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getPartyAcctgPreference_EnableAccounting(), ecorePackage.getEBooleanObject(), "enableAccounting", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPartyAcctgPreference_ErrorGlJournal(), this.getGlJournal(), null, "errorGlJournal", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyAcctgPreference_ErrorGlJournal().getEKeys().add(this.getGlJournal_GlJournalId());
 		initEAttribute(getPartyAcctgPreference_FiscalYearStartDay(), ecorePackage.getELong(), "fiscalYearStartDay", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyAcctgPreference_FiscalYearStartMonth(), ecorePackage.getELong(), "fiscalYearStartMonth", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyAcctgPreference_InvoiceIdPrefix(), ecorePackage.getEString(), "invoiceIdPrefix", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPartyAcctgPreference_InvoiceSeqCustMeth(), theMethodPackage.getCustomMethod(), null, "invoiceSeqCustMeth", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyAcctgPreference_InvoiceSeqCustMeth().getEKeys().add(theMethodPackage.getCustomMethod_CustomMethodId());
 		initEAttribute(getPartyAcctgPreference_LastInvoiceNumber(), ecorePackage.getELong(), "lastInvoiceNumber", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyAcctgPreference_LastInvoiceRestartDate(), ecorePackage.getEDate(), "lastInvoiceRestartDate", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyAcctgPreference_LastOrderNumber(), ecorePackage.getELong(), "lastOrderNumber", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyAcctgPreference_LastQuoteNumber(), ecorePackage.getELong(), "lastQuoteNumber", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPartyAcctgPreference_OldInvoiceSequenceEnum(), theEnumPackage.getEnumeration(), null, "oldInvoiceSequenceEnum", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyAcctgPreference_OldInvoiceSequenceEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEReference(getPartyAcctgPreference_OldOrderSequenceEnum(), theEnumPackage.getEnumeration(), null, "oldOrderSequenceEnum", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyAcctgPreference_OldOrderSequenceEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEReference(getPartyAcctgPreference_OldQuoteSequenceEnum(), theEnumPackage.getEnumeration(), null, "oldQuoteSequenceEnum", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyAcctgPreference_OldQuoteSequenceEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getPartyAcctgPreference_OrderIdPrefix(), ecorePackage.getEString(), "orderIdPrefix", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPartyAcctgPreference_OrderSeqCustMeth(), theMethodPackage.getCustomMethod(), null, "orderSeqCustMeth", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyAcctgPreference_OrderSeqCustMeth().getEKeys().add(theMethodPackage.getCustomMethod_CustomMethodId());
 		initEAttribute(getPartyAcctgPreference_QuoteIdPrefix(), ecorePackage.getEString(), "quoteIdPrefix", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPartyAcctgPreference_QuoteSeqCustMeth(), theMethodPackage.getCustomMethod(), null, "quoteSeqCustMeth", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyAcctgPreference_QuoteSeqCustMeth().getEKeys().add(theMethodPackage.getCustomMethod_CustomMethodId());
 		initEReference(getPartyAcctgPreference_RefundPaymentMethod(), thePaymentPackage.getPaymentMethod(), null, "refundPaymentMethod", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyAcctgPreference_RefundPaymentMethod().getEKeys().add(thePaymentPackage.getPaymentMethod_PaymentMethodId());
 		initEReference(getPartyAcctgPreference_TaxForm(), theEnumPackage.getEnumeration(), null, "taxForm", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyAcctgPreference_TaxForm().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getPartyAcctgPreference_UseInvoiceIdForReturns(), ecorePackage.getEBooleanObject(), "useInvoiceIdForReturns", null, 0, 1, PartyAcctgPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(partyGlAccountEClass, PartyGlAccount.class, "PartyGlAccount", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPartyGlAccount_OrganizationParty(), thePartyPackage_1.getParty(), null, "organizationParty", null, 1, 1, PartyGlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyGlAccount_OrganizationParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getPartyGlAccount_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, PartyGlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyGlAccount_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getPartyGlAccount_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 1, 1, PartyGlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyGlAccount_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEReference(getPartyGlAccount_GlAccountType(), this.getGlAccountType(), null, "glAccountType", null, 1, 1, PartyGlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyGlAccount_GlAccountType().getEKeys().add(this.getGlAccountType_GlAccountTypeId());
 		initEReference(getPartyGlAccount_GlAccount(), this.getGlAccount(), null, "glAccount", null, 0, 1, PartyGlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyGlAccount_GlAccount().getEKeys().add(this.getGlAccount_GlAccountId());
 
 		initEClass(partyPrefDocTypeTplEClass, PartyPrefDocTypeTpl.class, "PartyPrefDocTypeTpl", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPartyPrefDocTypeTpl_PartyPrefDocTypeTplId(), ecorePackage.getEString(), "partyPrefDocTypeTplId", null, 1, 1, PartyPrefDocTypeTpl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyPrefDocTypeTpl_CustomScreenId(), ecorePackage.getEString(), "customScreenId", null, 0, 1, PartyPrefDocTypeTpl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyPrefDocTypeTpl_FromDate(), ecorePackage.getEDate(), "fromDate", null, 0, 1, PartyPrefDocTypeTpl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPartyPrefDocTypeTpl_InvoiceType(), theInvoicePackage.getInvoiceType(), null, "invoiceType", null, 0, 1, PartyPrefDocTypeTpl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyPrefDocTypeTpl_InvoiceType().getEKeys().add(theInvoicePackage.getInvoiceType_InvoiceTypeId());
 		initEReference(getPartyPrefDocTypeTpl_OrderType(), theOrderPackage.getOrderType(), null, "orderType", null, 0, 1, PartyPrefDocTypeTpl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyPrefDocTypeTpl_OrderType().getEKeys().add(theOrderPackage.getOrderType_OrderTypeId());
 		initEReference(getPartyPrefDocTypeTpl_Party(), thePartyPackage_1.getParty(), null, "party", null, 0, 1, PartyPrefDocTypeTpl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyPrefDocTypeTpl_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getPartyPrefDocTypeTpl_QuoteType(), theQuotePackage.getQuoteType(), null, "quoteType", null, 0, 1, PartyPrefDocTypeTpl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyPrefDocTypeTpl_QuoteType().getEKeys().add(theQuotePackage.getQuoteType_QuoteTypeId());
 		initEAttribute(getPartyPrefDocTypeTpl_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, PartyPrefDocTypeTpl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productAverageCostEClass, ProductAverageCost.class, "ProductAverageCost", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductAverageCost_ProductAverageCostType(), this.getProductAverageCostType(), null, "productAverageCostType", null, 1, 1, ProductAverageCost.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductAverageCost_ProductAverageCostType().getEKeys().add(this.getProductAverageCostType_ProductAverageCostTypeId());
 		initEReference(getProductAverageCost_OrganizationParty(), thePartyPackage_1.getParty(), null, "organizationParty", null, 1, 1, ProductAverageCost.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductAverageCost_OrganizationParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getProductAverageCost_Product(), theProductPackage.getProduct(), null, "product", null, 1, 1, ProductAverageCost.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductAverageCost_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEReference(getProductAverageCost_Facility(), theFacilityPackage.getFacility(), null, "facility", null, 1, 1, ProductAverageCost.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductAverageCost_Facility().getEKeys().add(theFacilityPackage.getFacility_FacilityId());
 		initEAttribute(getProductAverageCost_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductAverageCost.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductAverageCost_AverageCost(), ecorePackage.getEBigDecimal(), "averageCost", null, 0, 1, ProductAverageCost.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductAverageCost_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductAverageCost.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -4302,7 +4214,6 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 		initEAttribute(getProductAverageCostType_Description(), ecorePackage.getEString(), "description", null, 0, 1, ProductAverageCostType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductAverageCostType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, ProductAverageCostType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductAverageCostType_ParentType(), this.getProductAverageCostType(), null, "parentType", null, 0, 1, ProductAverageCostType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductAverageCostType_ParentType().getEKeys().add(this.getProductAverageCostType_ProductAverageCostTypeId());
 
 		initEClass(settlementTermEClass, SettlementTerm.class, "SettlementTerm", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSettlementTerm_SettlementTermId(), ecorePackage.getEString(), "settlementTermId", null, 1, 1, SettlementTerm.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -4312,11 +4223,8 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 
 		initEClass(varianceReasonGlAccountEClass, VarianceReasonGlAccount.class, "VarianceReasonGlAccount", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getVarianceReasonGlAccount_VarianceReason(), theInventoryPackage.getVarianceReason(), null, "varianceReason", null, 1, 1, VarianceReasonGlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getVarianceReasonGlAccount_VarianceReason().getEKeys().add(theInventoryPackage.getVarianceReason_VarianceReasonId());
 		initEReference(getVarianceReasonGlAccount_OrganizationParty(), thePartyPackage_1.getParty(), null, "organizationParty", null, 1, 1, VarianceReasonGlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getVarianceReasonGlAccount_OrganizationParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getVarianceReasonGlAccount_GlAccount(), this.getGlAccount(), null, "glAccount", null, 0, 1, VarianceReasonGlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getVarianceReasonGlAccount_GlAccount().getEKeys().add(this.getGlAccount_GlAccountId());
 
 		// Create annotations
 		// mimo-ent-frame
@@ -4325,8 +4233,8 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 		createMimoentformatAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
-		// mimo-ent-slot-constraint
-		createMimoentslotconstraintAnnotations();
+		// mimo-ent-slot-constraints
+		createMimoentslotconstraintsAnnotations();
 	}
 
 	/**
@@ -5344,13 +5252,13 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 	}
 
 	/**
-	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * Initializes the annotations for <b>mimo-ent-slot-constraints</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createMimoentslotconstraintAnnotations() {
-		String source = "mimo-ent-slot-constraint";
+	protected void createMimoentslotconstraintsAnnotations() {
+		String source = "mimo-ent-slot-constraints";
 		addAnnotation
 		  (getGlAccount_GlAccountCategoryMembers(),
 		   source,

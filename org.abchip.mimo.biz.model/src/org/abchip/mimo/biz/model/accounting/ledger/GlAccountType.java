@@ -99,7 +99,7 @@ public interface GlAccountType extends EntityType<GlAccount>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(GlAccountType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccountType_ParentType()
-	 * @model keys="glAccountTypeId"
+	 * @model
 	 * @generated
 	 */
 	GlAccountType getParentType();

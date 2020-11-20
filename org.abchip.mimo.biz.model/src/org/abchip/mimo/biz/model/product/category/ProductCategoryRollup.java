@@ -39,7 +39,7 @@ public interface ProductCategoryRollup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Category</em>' reference.
 	 * @see #setProductCategory(ProductCategory)
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryRollup_ProductCategory()
-	 * @model keys="productCategoryId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface ProductCategoryRollup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Product Category</em>' reference.
 	 * @see #setParentProductCategory(ProductCategory)
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryRollup_ParentProductCategory()
-	 * @model keys="productCategoryId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true' help='The parent category; it should be one of productCategoryId already setup in ProductCategory or ProductCategoryRollup'"
 	 * @generated
 	 */

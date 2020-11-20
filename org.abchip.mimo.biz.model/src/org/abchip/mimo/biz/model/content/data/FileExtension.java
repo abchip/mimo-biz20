@@ -62,7 +62,7 @@ public interface FileExtension extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Mime Type</em>' reference.
 	 * @see #setMimeType(MimeType)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getFileExtension_MimeType()
-	 * @model keys="mimeTypeId"
+	 * @model
 	 * @generated
 	 */
 	MimeType getMimeType();

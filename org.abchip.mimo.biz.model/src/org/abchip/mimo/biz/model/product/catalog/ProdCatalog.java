@@ -123,7 +123,7 @@ public interface ProdCatalog extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Prod Catalog Inv Facilities</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.catalog.CatalogPackage#getProdCatalog_ProdCatalogInvFacilities()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProdCatalogInvFacility> getProdCatalogInvFacilities();

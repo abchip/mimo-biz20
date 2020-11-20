@@ -97,7 +97,7 @@ public interface CostComponent extends EntityTyped<CostComponentType>, EntityInf
 	 * @return the value of the '<em>Cost Component Calc</em>' reference.
 	 * @see #setCostComponentCalc(CostComponentCalc)
 	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponent_CostComponentCalc()
-	 * @model keys="costComponentCalcId"
+	 * @model
 	 * @generated
 	 */
 	CostComponentCalc getCostComponentCalc();
@@ -119,7 +119,7 @@ public interface CostComponent extends EntityTyped<CostComponentType>, EntityInf
 	 * @return the value of the '<em>Cost Component Type</em>' reference.
 	 * @see #setCostComponentType(CostComponentType)
 	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponent_CostComponentType()
-	 * @model keys="costComponentTypeId"
+	 * @model
 	 * @generated
 	 */
 	CostComponentType getCostComponentType();
@@ -141,7 +141,7 @@ public interface CostComponent extends EntityTyped<CostComponentType>, EntityInf
 	 * @return the value of the '<em>Cost Uom</em>' reference.
 	 * @see #setCostUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponent_CostUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getCostUom();
@@ -163,7 +163,7 @@ public interface CostComponent extends EntityTyped<CostComponentType>, EntityInf
 	 * @return the value of the '<em>Fixed Asset</em>' reference.
 	 * @see #setFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponent_FixedAsset()
-	 * @model keys="fixedAssetId"
+	 * @model
 	 * @generated
 	 */
 	FixedAsset getFixedAsset();
@@ -211,7 +211,7 @@ public interface CostComponent extends EntityTyped<CostComponentType>, EntityInf
 	 * @return the value of the '<em>Geo</em>' reference.
 	 * @see #setGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponent_Geo()
-	 * @model keys="geoId"
+	 * @model
 	 * @generated
 	 */
 	Geo getGeo();
@@ -233,7 +233,7 @@ public interface CostComponent extends EntityTyped<CostComponentType>, EntityInf
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponent_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -255,7 +255,7 @@ public interface CostComponent extends EntityTyped<CostComponentType>, EntityInf
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponent_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();
@@ -277,7 +277,7 @@ public interface CostComponent extends EntityTyped<CostComponentType>, EntityInf
 	 * @return the value of the '<em>Product Feature</em>' reference.
 	 * @see #setProductFeature(ProductFeature)
 	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponent_ProductFeature()
-	 * @model keys="productFeatureId"
+	 * @model
 	 * @generated
 	 */
 	ProductFeature getProductFeature();
@@ -325,7 +325,7 @@ public interface CostComponent extends EntityTyped<CostComponentType>, EntityInf
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponent_WorkEffort()
-	 * @model keys="workEffortId"
+	 * @model
 	 * @generated
 	 */
 	WorkEffort getWorkEffort();

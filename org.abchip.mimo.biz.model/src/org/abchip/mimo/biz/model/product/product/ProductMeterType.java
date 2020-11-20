@@ -90,8 +90,7 @@ public interface ProductMeterType extends EntityType<ProductMeter>, EntityInfo {
 	 * @return the value of the '<em>Default Uom</em>' reference.
 	 * @see #setDefaultUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductMeterType_DefaultUom()
-	 * @model keys="uomId"
-	 *        annotation="mimo-ent-slot help='This is optional and if applicable can describe the meter better'"
+	 * @model annotation="mimo-ent-slot help='This is optional and if applicable can describe the meter better'"
 	 * @generated
 	 */
 	Uom getDefaultUom();

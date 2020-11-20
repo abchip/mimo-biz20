@@ -7,6 +7,9 @@
  */
 package org.abchip.mimo.biz.model.common.geo;
 
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Country Capital</b></em>'.
@@ -16,6 +19,7 @@ package org.abchip.mimo.biz.model.common.geo;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.CountryCapital#getCountryCode <em>Country Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.CountryCapital#getCountryCapital <em>Country Capital</em>}</li>
  * </ul>
  *
@@ -23,7 +27,30 @@ package org.abchip.mimo.biz.model.common.geo;
  * @model
  * @generated
  */
-public interface CountryCapital extends CountryCode {
+public interface CountryCapital extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Country Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Country Code</em>' attribute.
+	 * @see #setCountryCode(String)
+	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getCountryCapital_CountryCode()
+	 * @model id="true" required="true"
+	 *        annotation="mimo-ent-format length='20'"
+	 * @generated
+	 */
+	String getCountryCode();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.geo.CountryCapital#getCountryCode <em>Country Code</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Country Code</em>' attribute.
+	 * @see #getCountryCode()
+	 * @generated
+	 */
+	void setCountryCode(String value);
+
 	/**
 	 * Returns the value of the '<em><b>Country Capital</b></em>' attribute.
 	 * <!-- begin-user-doc -->

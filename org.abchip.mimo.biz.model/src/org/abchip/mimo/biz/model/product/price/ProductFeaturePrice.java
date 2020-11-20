@@ -48,7 +48,7 @@ public interface ProductFeaturePrice extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Price Type</em>' reference.
 	 * @see #setProductPriceType(ProductPriceType)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductFeaturePrice_ProductPriceType()
-	 * @model keys="productPriceTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -71,7 +71,7 @@ public interface ProductFeaturePrice extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductFeaturePrice_CurrencyUom()
-	 * @model keys="uomId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -98,7 +98,7 @@ public interface ProductFeaturePrice extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Created By User Login</em>' reference.
 	 * @see #setCreatedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductFeaturePrice_CreatedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getCreatedByUserLogin();
@@ -177,7 +177,7 @@ public interface ProductFeaturePrice extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Last Modified By User Login</em>' reference.
 	 * @see #setLastModifiedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductFeaturePrice_LastModifiedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getLastModifiedByUserLogin();

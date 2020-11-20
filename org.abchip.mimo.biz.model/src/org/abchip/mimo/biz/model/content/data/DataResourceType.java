@@ -130,7 +130,7 @@ public interface DataResourceType extends EntityType<DataResource>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(DataResourceType)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourceType_ParentType()
-	 * @model keys="dataResourceTypeId"
+	 * @model
 	 * @generated
 	 */
 	DataResourceType getParentType();

@@ -63,7 +63,7 @@ public interface DataSource extends EntityTyped<DataSourceType>, EntityInfo {
 	 * @return the value of the '<em>Data Source Type</em>' reference.
 	 * @see #setDataSourceType(DataSourceType)
 	 * @see org.abchip.mimo.biz.model.common.datasource.DatasourcePackage#getDataSource_DataSourceType()
-	 * @model keys="dataSourceTypeId"
+	 * @model
 	 * @generated
 	 */
 	DataSourceType getDataSourceType();

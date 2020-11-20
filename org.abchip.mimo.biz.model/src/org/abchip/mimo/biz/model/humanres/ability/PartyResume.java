@@ -94,7 +94,7 @@ public interface PartyResume extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPartyResume_Content()
-	 * @model keys="contentId"
+	 * @model
 	 * @generated
 	 */
 	Content getContent();
@@ -116,7 +116,7 @@ public interface PartyResume extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPartyResume_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();

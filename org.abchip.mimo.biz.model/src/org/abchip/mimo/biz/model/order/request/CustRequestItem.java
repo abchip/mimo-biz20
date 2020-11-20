@@ -55,7 +55,7 @@ public interface CustRequestItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Cust Request</em>' reference.
 	 * @see #setCustRequest(CustRequest)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestItem_CustRequest()
-	 * @model keys="custRequestId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -104,7 +104,7 @@ public interface CustRequestItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Cust Request Resolution</em>' reference.
 	 * @see #setCustRequestResolution(CustRequestResolution)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestItem_CustRequestResolution()
-	 * @model keys="custRequestResolutionId"
+	 * @model
 	 * @generated
 	 */
 	CustRequestResolution getCustRequestResolution();
@@ -232,7 +232,7 @@ public interface CustRequestItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestItem_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();
@@ -436,7 +436,7 @@ public interface CustRequestItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestItem_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

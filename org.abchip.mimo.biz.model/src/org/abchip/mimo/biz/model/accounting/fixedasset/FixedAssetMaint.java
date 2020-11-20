@@ -50,7 +50,7 @@ public interface FixedAssetMaint extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Fixed Asset</em>' reference.
 	 * @see #setFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_FixedAsset()
-	 * @model keys="fixedAssetId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -99,8 +99,7 @@ public interface FixedAssetMaint extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Interval Uom</em>' reference.
 	 * @see #setIntervalUom(Uom)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_IntervalUom()
-	 * @model keys="uomId"
-	 *        annotation="mimo-ent-slot help='UOM for intervalQuantity; if used intervalMeterTypeId is generally not used (ie one or the other); if a meter reading is done as well that is not tied to the interval it should be tracked in a FixedAssetMeter record'"
+	 * @model annotation="mimo-ent-slot help='UOM for intervalQuantity; if used intervalMeterTypeId is generally not used (ie one or the other); if a meter reading is done as well that is not tied to the interval it should be tracked in a FixedAssetMeter record'"
 	 * @generated
 	 */
 	Uom getIntervalUom();
@@ -150,8 +149,7 @@ public interface FixedAssetMaint extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Interval Meter Type</em>' reference.
 	 * @see #setIntervalMeterType(ProductMeterType)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_IntervalMeterType()
-	 * @model keys="productMeterTypeId"
-	 *        annotation="mimo-ent-slot help='Meter Type for intervalQuantity; if used intervalUomId is generally not used (ie one or the other)'"
+	 * @model annotation="mimo-ent-slot help='Meter Type for intervalQuantity; if used intervalUomId is generally not used (ie one or the other)'"
 	 * @generated
 	 */
 	ProductMeterType getIntervalMeterType();
@@ -200,8 +198,7 @@ public interface FixedAssetMaint extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Maint Type</em>' reference.
 	 * @see #setProductMaintType(ProductMaintType)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_ProductMaintType()
-	 * @model keys="productMaintTypeId"
-	 *        annotation="mimo-ent-slot help='If productMaintSeqId is known can lookup using that and the FixedAsset.productId; for un-scheduled maintenance is filled in directly'"
+	 * @model annotation="mimo-ent-slot help='If productMaintSeqId is known can lookup using that and the FixedAsset.productId; for un-scheduled maintenance is filled in directly'"
 	 * @generated
 	 */
 	ProductMaintType getProductMaintType();
@@ -223,7 +220,7 @@ public interface FixedAssetMaint extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Purchase Order</em>' reference.
 	 * @see #setPurchaseOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_PurchaseOrder()
-	 * @model keys="orderId"
+	 * @model
 	 * @generated
 	 */
 	OrderHeader getPurchaseOrder();
@@ -245,8 +242,7 @@ public interface FixedAssetMaint extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Schedule Work Effort</em>' reference.
 	 * @see #setScheduleWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_ScheduleWorkEffort()
-	 * @model keys="workEffortId"
-	 *        annotation="mimo-ent-slot help='Has field for estimated/actual start and finish dates, etc'"
+	 * @model annotation="mimo-ent-slot help='Has field for estimated/actual start and finish dates, etc'"
 	 * @generated
 	 */
 	WorkEffort getScheduleWorkEffort();
@@ -268,7 +264,7 @@ public interface FixedAssetMaint extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetMaint_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

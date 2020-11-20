@@ -41,7 +41,7 @@ import org.abchip.mimo.biz.model.common.geo.GeoPoint;
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress()
- * @model
+ * @model annotation="mimo-ent-frame-constraints contactMechType='POSTAL_ADDRESS'"
  * @generated
  */
 public interface PostalAddress extends ContactMech {
@@ -156,7 +156,7 @@ public interface PostalAddress extends ContactMech {
 	 * @return the value of the '<em>City Geo</em>' reference.
 	 * @see #setCityGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_CityGeo()
-	 * @model keys="geoId"
+	 * @model
 	 * @generated
 	 */
 	Geo getCityGeo();
@@ -178,7 +178,7 @@ public interface PostalAddress extends ContactMech {
 	 * @return the value of the '<em>Country Geo</em>' reference.
 	 * @see #setCountryGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_CountryGeo()
-	 * @model keys="geoId"
+	 * @model
 	 * @generated
 	 */
 	Geo getCountryGeo();
@@ -200,7 +200,7 @@ public interface PostalAddress extends ContactMech {
 	 * @return the value of the '<em>County Geo</em>' reference.
 	 * @see #setCountyGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_CountyGeo()
-	 * @model keys="geoId"
+	 * @model
 	 * @generated
 	 */
 	Geo getCountyGeo();
@@ -248,7 +248,7 @@ public interface PostalAddress extends ContactMech {
 	 * @return the value of the '<em>Geo Point</em>' reference.
 	 * @see #setGeoPoint(GeoPoint)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_GeoPoint()
-	 * @model keys="geoPointId"
+	 * @model
 	 * @generated
 	 */
 	GeoPoint getGeoPoint();
@@ -322,7 +322,7 @@ public interface PostalAddress extends ContactMech {
 	 * @return the value of the '<em>Municipality Geo</em>' reference.
 	 * @see #setMunicipalityGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_MunicipalityGeo()
-	 * @model keys="geoId"
+	 * @model
 	 * @generated
 	 */
 	Geo getMunicipalityGeo();
@@ -408,7 +408,7 @@ public interface PostalAddress extends ContactMech {
 	 * @return the value of the '<em>Postal Code Geo</em>' reference.
 	 * @see #setPostalCodeGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_PostalCodeGeo()
-	 * @model keys="geoId"
+	 * @model
 	 * @generated
 	 */
 	Geo getPostalCodeGeo();
@@ -430,7 +430,7 @@ public interface PostalAddress extends ContactMech {
 	 * @return the value of the '<em>State Province Geo</em>' reference.
 	 * @see #setStateProvinceGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_StateProvinceGeo()
-	 * @model keys="geoId"
+	 * @model
 	 * @generated
 	 */
 	Geo getStateProvinceGeo();

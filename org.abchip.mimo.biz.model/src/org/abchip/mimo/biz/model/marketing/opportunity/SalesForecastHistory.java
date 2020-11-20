@@ -134,7 +134,7 @@ public interface SalesForecastHistory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecastHistory_CurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getCurrencyUom();
@@ -156,7 +156,7 @@ public interface SalesForecastHistory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Custom Time Period</em>' reference.
 	 * @see #setCustomTimePeriod(CustomTimePeriod)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecastHistory_CustomTimePeriod()
-	 * @model keys="customTimePeriodId"
+	 * @model
 	 * @generated
 	 */
 	CustomTimePeriod getCustomTimePeriod();
@@ -204,7 +204,7 @@ public interface SalesForecastHistory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Internal Party</em>' reference.
 	 * @see #setInternalParty(Party)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecastHistory_InternalParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getInternalParty();
@@ -226,7 +226,7 @@ public interface SalesForecastHistory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Modified By User Login</em>' reference.
 	 * @see #setModifiedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecastHistory_ModifiedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getModifiedByUserLogin();
@@ -274,7 +274,7 @@ public interface SalesForecastHistory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Organization Party</em>' reference.
 	 * @see #setOrganizationParty(Party)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecastHistory_OrganizationParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getOrganizationParty();
@@ -400,7 +400,7 @@ public interface SalesForecastHistory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Sales Forecast</em>' reference.
 	 * @see #setSalesForecast(SalesForecast)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecastHistory_SalesForecast()
-	 * @model keys="salesForecastId"
+	 * @model
 	 * @generated
 	 */
 	SalesForecast getSalesForecast();

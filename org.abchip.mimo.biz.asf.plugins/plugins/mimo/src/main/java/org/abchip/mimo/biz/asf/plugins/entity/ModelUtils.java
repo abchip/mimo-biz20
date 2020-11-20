@@ -98,7 +98,7 @@ public class ModelUtils {
 
 		String superEntity = null;
 
-		for (ModelRelation modelRelation : modelEntity.getRelationsList(true, false, false)) {
+		for (ModelRelation modelRelation : modelEntity.getRelationsList(true, true, false)) {
 
 			// no automatic relation
 			if (modelRelation.isAutoRelation())

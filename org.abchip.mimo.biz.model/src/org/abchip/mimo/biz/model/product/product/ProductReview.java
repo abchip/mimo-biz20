@@ -74,7 +74,7 @@ public interface ProductReview extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductReview_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();
@@ -148,7 +148,7 @@ public interface ProductReview extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Store</em>' reference.
 	 * @see #setProductStore(ProductStore)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductReview_ProductStore()
-	 * @model keys="productStoreId"
+	 * @model
 	 * @generated
 	 */
 	ProductStore getProductStore();
@@ -170,7 +170,7 @@ public interface ProductReview extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductReview_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -192,7 +192,7 @@ public interface ProductReview extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>User Login</em>' reference.
 	 * @see #setUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductReview_UserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getUserLogin();

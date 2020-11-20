@@ -43,7 +43,7 @@ public interface ProductFacilityAssoc extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacilityAssoc_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -66,7 +66,7 @@ public interface ProductFacilityAssoc extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacilityAssoc_Facility()
-	 * @model keys="facilityId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -89,7 +89,7 @@ public interface ProductFacilityAssoc extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Facility Id To</em>' reference.
 	 * @see #setFacilityIdTo(Facility)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacilityAssoc_FacilityIdTo()
-	 * @model keys="facilityId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -112,7 +112,7 @@ public interface ProductFacilityAssoc extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Facility Assoc Type</em>' reference.
 	 * @see #setFacilityAssocType(FacilityAssocType)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacilityAssoc_FacilityAssocType()
-	 * @model keys="facilityAssocTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

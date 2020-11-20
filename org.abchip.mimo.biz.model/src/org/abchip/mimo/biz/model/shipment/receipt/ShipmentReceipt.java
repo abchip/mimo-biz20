@@ -83,7 +83,7 @@ public interface ShipmentReceipt extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Inventory Item</em>' reference.
 	 * @see #setInventoryItem(InventoryItem)
 	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceipt_InventoryItem()
-	 * @model keys="inventoryItemId"
+	 * @model
 	 * @generated
 	 */
 	InventoryItem getInventoryItem();
@@ -131,7 +131,7 @@ public interface ShipmentReceipt extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceipt_Order()
-	 * @model keys="orderId"
+	 * @model
 	 * @generated
 	 */
 	OrderHeader getOrder();
@@ -179,7 +179,7 @@ public interface ShipmentReceipt extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceipt_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();
@@ -253,7 +253,7 @@ public interface ShipmentReceipt extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Received By User Login</em>' reference.
 	 * @see #setReceivedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceipt_ReceivedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getReceivedByUserLogin();
@@ -275,7 +275,7 @@ public interface ShipmentReceipt extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Rejection</em>' reference.
 	 * @see #setRejection(RejectionReason)
 	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceipt_Rejection()
-	 * @model keys="rejectionId"
+	 * @model
 	 * @generated
 	 */
 	RejectionReason getRejection();
@@ -376,7 +376,7 @@ public interface ShipmentReceipt extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Shipment</em>' reference.
 	 * @see #setShipment(Shipment)
 	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceipt_Shipment()
-	 * @model keys="shipmentId"
+	 * @model
 	 * @generated
 	 */
 	Shipment getShipment();

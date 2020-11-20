@@ -830,7 +830,6 @@ public class GroupPackageImpl extends EPackageImpl implements GroupPackage {
 
 		initEClass(entityGroupEntryEClass, EntityGroupEntry.class, "EntityGroupEntry", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEntityGroupEntry_EntityGroup(), this.getEntityGroup(), null, "entityGroup", null, 1, 1, EntityGroupEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEntityGroupEntry_EntityGroup().getEKeys().add(this.getEntityGroup_EntityGroupId());
 		initEAttribute(getEntityGroupEntry_EntityOrPackage(), ecorePackage.getEString(), "entityOrPackage", null, 1, 1, EntityGroupEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEntityGroupEntry_ApplEnumId(), ecorePackage.getEString(), "applEnumId", null, 0, 1, EntityGroupEntry.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 

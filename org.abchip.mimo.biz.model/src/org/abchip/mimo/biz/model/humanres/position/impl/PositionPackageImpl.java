@@ -1593,17 +1593,14 @@ public class PositionPackageImpl extends EPackageImpl implements PositionPackage
 		initEReference(getEmplPosition_EmplPositionFulfillments(), this.getEmplPositionFulfillment(), null, "emplPositionFulfillments", null, 0, -1, EmplPosition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getEmplPosition_EmplPositionResponsibilities(), this.getEmplPositionResponsibility(), null, "emplPositionResponsibilities", null, 0, -1, EmplPosition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getEmplPosition_EmplPositionType(), this.getEmplPositionType(), null, "emplPositionType", null, 0, 1, EmplPosition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEmplPosition_EmplPositionType().getEKeys().add(this.getEmplPositionType_EmplPositionTypeId());
 		initEAttribute(getEmplPosition_EstimatedFromDate(), ecorePackage.getEDate(), "estimatedFromDate", null, 0, 1, EmplPosition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEmplPosition_EstimatedThruDate(), ecorePackage.getEDate(), "estimatedThruDate", null, 0, 1, EmplPosition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEmplPosition_ExemptFlag(), ecorePackage.getEBoolean(), "exemptFlag", null, 1, 1, EmplPosition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEmplPosition_FulltimeFlag(), ecorePackage.getEBoolean(), "fulltimeFlag", null, 1, 1, EmplPosition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEmplPosition_Party(), thePartyPackage_1.getParty(), null, "party", null, 0, 1, EmplPosition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEmplPosition_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getEmplPosition_ReportingToEmplPositionReportingStructs(), this.getEmplPositionReportingStruct(), null, "reportingToEmplPositionReportingStructs", null, 0, -1, EmplPosition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEmplPosition_SalaryFlag(), ecorePackage.getEBoolean(), "salaryFlag", null, 1, 1, EmplPosition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEmplPosition_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, EmplPosition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEmplPosition_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getEmplPosition_TemporaryFlag(), ecorePackage.getEBoolean(), "temporaryFlag", null, 1, 1, EmplPosition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(emplPositionClassTypeEClass, EmplPositionClassType.class, "EmplPositionClassType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1611,22 +1608,17 @@ public class PositionPackageImpl extends EPackageImpl implements PositionPackage
 		initEAttribute(getEmplPositionClassType_Description(), ecorePackage.getEString(), "description", null, 0, 1, EmplPositionClassType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEmplPositionClassType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, EmplPositionClassType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEmplPositionClassType_ParentType(), this.getEmplPositionClassType(), null, "parentType", null, 0, 1, EmplPositionClassType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEmplPositionClassType_ParentType().getEKeys().add(this.getEmplPositionClassType_EmplPositionClassTypeId());
 
 		initEClass(emplPositionFulfillmentEClass, EmplPositionFulfillment.class, "EmplPositionFulfillment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEmplPositionFulfillment_EmplPosition(), this.getEmplPosition(), null, "emplPosition", null, 1, 1, EmplPositionFulfillment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEmplPositionFulfillment_EmplPosition().getEKeys().add(this.getEmplPosition_EmplPositionId());
 		initEReference(getEmplPositionFulfillment_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, EmplPositionFulfillment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEmplPositionFulfillment_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getEmplPositionFulfillment_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, EmplPositionFulfillment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEmplPositionFulfillment_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, EmplPositionFulfillment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEmplPositionFulfillment_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, EmplPositionFulfillment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(emplPositionReportingStructEClass, EmplPositionReportingStruct.class, "EmplPositionReportingStruct", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEmplPositionReportingStruct_EmplPositionIdReportingTo(), this.getEmplPosition(), null, "emplPositionIdReportingTo", null, 1, 1, EmplPositionReportingStruct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEmplPositionReportingStruct_EmplPositionIdReportingTo().getEKeys().add(this.getEmplPosition_EmplPositionId());
 		initEReference(getEmplPositionReportingStruct_EmplPositionIdManagedBy(), this.getEmplPosition(), null, "emplPositionIdManagedBy", null, 1, 1, EmplPositionReportingStruct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEmplPositionReportingStruct_EmplPositionIdManagedBy().getEKeys().add(this.getEmplPosition_EmplPositionId());
 		initEAttribute(getEmplPositionReportingStruct_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, EmplPositionReportingStruct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEmplPositionReportingStruct_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, EmplPositionReportingStruct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEmplPositionReportingStruct_PrimaryFlag(), ecorePackage.getEString(), "primaryFlag", null, 0, 1, EmplPositionReportingStruct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1634,9 +1626,7 @@ public class PositionPackageImpl extends EPackageImpl implements PositionPackage
 
 		initEClass(emplPositionResponsibilityEClass, EmplPositionResponsibility.class, "EmplPositionResponsibility", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEmplPositionResponsibility_EmplPosition(), this.getEmplPosition(), null, "emplPosition", null, 1, 1, EmplPositionResponsibility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEmplPositionResponsibility_EmplPosition().getEKeys().add(this.getEmplPosition_EmplPositionId());
 		initEReference(getEmplPositionResponsibility_ResponsibilityType(), theAbilityPackage.getResponsibilityType(), null, "responsibilityType", null, 1, 1, EmplPositionResponsibility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEmplPositionResponsibility_ResponsibilityType().getEKeys().add(theAbilityPackage.getResponsibilityType_ResponsibilityTypeId());
 		initEAttribute(getEmplPositionResponsibility_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, EmplPositionResponsibility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEmplPositionResponsibility_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, EmplPositionResponsibility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEmplPositionResponsibility_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, EmplPositionResponsibility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1648,23 +1638,18 @@ public class PositionPackageImpl extends EPackageImpl implements PositionPackage
 		initEReference(getEmplPositionType_EmplPositionTypeRates(), this.getEmplPositionTypeRate(), null, "emplPositionTypeRates", null, 0, -1, EmplPositionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEmplPositionType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 1, 1, EmplPositionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEmplPositionType_ParentType(), this.getEmplPositionType(), null, "parentType", null, 0, 1, EmplPositionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEmplPositionType_ParentType().getEKeys().add(this.getEmplPositionType_EmplPositionTypeId());
 		initEReference(getEmplPositionType_ValidResponsibilities(), this.getValidResponsibility(), null, "validResponsibilities", null, 0, -1, EmplPositionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(emplPositionTypeClassEClass, EmplPositionTypeClass.class, "EmplPositionTypeClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEmplPositionTypeClass_EmplPositionType(), this.getEmplPositionType(), null, "emplPositionType", null, 1, 1, EmplPositionTypeClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEmplPositionTypeClass_EmplPositionType().getEKeys().add(this.getEmplPositionType_EmplPositionTypeId());
 		initEReference(getEmplPositionTypeClass_EmplPositionClassType(), this.getEmplPositionClassType(), null, "emplPositionClassType", null, 1, 1, EmplPositionTypeClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEmplPositionTypeClass_EmplPositionClassType().getEKeys().add(this.getEmplPositionClassType_EmplPositionClassTypeId());
 		initEAttribute(getEmplPositionTypeClass_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, EmplPositionTypeClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEmplPositionTypeClass_StandardHoursPerWeek(), ecorePackage.getEDouble(), "standardHoursPerWeek", null, 0, 1, EmplPositionTypeClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEmplPositionTypeClass_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, EmplPositionTypeClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(emplPositionTypeRateEClass, EmplPositionTypeRate.class, "EmplPositionTypeRate", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEmplPositionTypeRate_EmplPositionType(), this.getEmplPositionType(), null, "emplPositionType", null, 1, 1, EmplPositionTypeRate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEmplPositionTypeRate_EmplPositionType().getEKeys().add(this.getEmplPositionType_EmplPositionTypeId());
 		initEReference(getEmplPositionTypeRate_RateType(), theRatePackage.getRateType(), null, "rateType", null, 1, 1, EmplPositionTypeRate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEmplPositionTypeRate_RateType().getEKeys().add(theRatePackage.getRateType_RateTypeId());
 		initEAttribute(getEmplPositionTypeRate_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, EmplPositionTypeRate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEmplPositionTypeRate_PayGradeId(), ecorePackage.getEString(), "payGradeId", null, 0, 1, EmplPositionTypeRate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEmplPositionTypeRate_SalaryStepSeqId(), ecorePackage.getEString(), "salaryStepSeqId", null, 0, 1, EmplPositionTypeRate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1672,9 +1657,7 @@ public class PositionPackageImpl extends EPackageImpl implements PositionPackage
 
 		initEClass(validResponsibilityEClass, ValidResponsibility.class, "ValidResponsibility", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getValidResponsibility_EmplPositionType(), this.getEmplPositionType(), null, "emplPositionType", null, 1, 1, ValidResponsibility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getValidResponsibility_EmplPositionType().getEKeys().add(this.getEmplPositionType_EmplPositionTypeId());
 		initEReference(getValidResponsibility_ResponsibilityType(), theAbilityPackage.getResponsibilityType(), null, "responsibilityType", null, 1, 1, ValidResponsibility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getValidResponsibility_ResponsibilityType().getEKeys().add(theAbilityPackage.getResponsibilityType_ResponsibilityTypeId());
 		initEAttribute(getValidResponsibility_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ValidResponsibility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getValidResponsibility_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, ValidResponsibility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getValidResponsibility_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ValidResponsibility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1685,8 +1668,8 @@ public class PositionPackageImpl extends EPackageImpl implements PositionPackage
 		// Create annotations
 		// mimo-ent-format
 		createMimoentformatAnnotations();
-		// mimo-ent-slot-constraint
-		createMimoentslotconstraintAnnotations();
+		// mimo-ent-slot-constraints
+		createMimoentslotconstraintsAnnotations();
 		// mimo-ent-frame
 		createMimoentframeAnnotations();
 		// mimo-ent-slot
@@ -1782,13 +1765,13 @@ public class PositionPackageImpl extends EPackageImpl implements PositionPackage
 	}
 
 	/**
-	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * Initializes the annotations for <b>mimo-ent-slot-constraints</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createMimoentslotconstraintAnnotations() {
-		String source = "mimo-ent-slot-constraint";
+	protected void createMimoentslotconstraintsAnnotations() {
+		String source = "mimo-ent-slot-constraints";
 		addAnnotation
 		  (getEmplPosition_EmplPositionFulfillments(),
 		   source,

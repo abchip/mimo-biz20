@@ -85,7 +85,7 @@ public interface ProductAssocType extends EntityType<ProductAssoc>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(ProductAssocType)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductAssocType_ParentType()
-	 * @model keys="productAssocTypeId"
+	 * @model
 	 * @generated
 	 */
 	ProductAssocType getParentType();

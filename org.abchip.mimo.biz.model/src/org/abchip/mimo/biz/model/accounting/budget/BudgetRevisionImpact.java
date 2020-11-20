@@ -40,7 +40,7 @@ public interface BudgetRevisionImpact extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Budget</em>' reference.
 	 * @see #setBudget(Budget)
 	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetRevisionImpact_Budget()
-	 * @model keys="budgetId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

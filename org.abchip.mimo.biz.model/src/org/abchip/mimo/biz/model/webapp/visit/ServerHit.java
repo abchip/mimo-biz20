@@ -50,7 +50,7 @@ public interface ServerHit extends EntityTyped<ServerHitType>, EntityInfo {
 	 * @return the value of the '<em>Hit Type</em>' reference.
 	 * @see #setHitType(ServerHitType)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getServerHit_HitType()
-	 * @model keys="hitTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -73,7 +73,7 @@ public interface ServerHit extends EntityTyped<ServerHitType>, EntityInfo {
 	 * @return the value of the '<em>Visit</em>' reference.
 	 * @see #setVisit(Visit)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getServerHit_Visit()
-	 * @model keys="visitId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

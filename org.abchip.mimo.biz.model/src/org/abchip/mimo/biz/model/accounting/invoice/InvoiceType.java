@@ -99,7 +99,7 @@ public interface InvoiceType extends EntityType<Invoice>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(InvoiceType)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceType_ParentType()
-	 * @model keys="invoiceTypeId"
+	 * @model
 	 * @generated
 	 */
 	InvoiceType getParentType();

@@ -39,7 +39,7 @@ public interface WebSiteContactList extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Web Site</em>' reference.
 	 * @see #setWebSite(WebSite)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getWebSiteContactList_WebSite()
-	 * @model keys="webSiteId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface WebSiteContactList extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Contact List</em>' reference.
 	 * @see #setContactList(ContactList)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getWebSiteContactList_ContactList()
-	 * @model keys="contactListId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -93,7 +93,7 @@ public interface CustomMethod extends EntityTyped<CustomMethodType>, EntityInfo 
 	 * @return the value of the '<em>Custom Method Type</em>' reference.
 	 * @see #setCustomMethodType(CustomMethodType)
 	 * @see org.abchip.mimo.biz.model.common.method.MethodPackage#getCustomMethod_CustomMethodType()
-	 * @model keys="customMethodTypeId"
+	 * @model
 	 * @generated
 	 */
 	CustomMethodType getCustomMethodType();

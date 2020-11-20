@@ -37,7 +37,7 @@ public interface RequirementCustRequest extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Cust Request</em>' reference.
 	 * @see #setCustRequest(CustRequest)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementCustRequest_CustRequest()
-	 * @model keys="custRequestId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -60,7 +60,7 @@ public interface RequirementCustRequest extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Requirement</em>' reference.
 	 * @see #setRequirement(Requirement)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementCustRequest_Requirement()
-	 * @model keys="requirementId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

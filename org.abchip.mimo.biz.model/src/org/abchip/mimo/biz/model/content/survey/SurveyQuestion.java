@@ -123,7 +123,7 @@ public interface SurveyQuestion extends EntityTyped<SurveyQuestionType>, EntityI
 	 * @return the value of the '<em>Geo</em>' reference.
 	 * @see #setGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestion_Geo()
-	 * @model keys="geoId"
+	 * @model
 	 * @generated
 	 */
 	Geo getGeo();
@@ -197,7 +197,7 @@ public interface SurveyQuestion extends EntityTyped<SurveyQuestionType>, EntityI
 	 * @return the value of the '<em>Survey Question Category</em>' reference.
 	 * @see #setSurveyQuestionCategory(SurveyQuestionCategory)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestion_SurveyQuestionCategory()
-	 * @model keys="surveyQuestionCategoryId"
+	 * @model
 	 * @generated
 	 */
 	SurveyQuestionCategory getSurveyQuestionCategory();
@@ -231,7 +231,7 @@ public interface SurveyQuestion extends EntityTyped<SurveyQuestionType>, EntityI
 	 * @return the value of the '<em>Survey Question Type</em>' reference.
 	 * @see #setSurveyQuestionType(SurveyQuestionType)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestion_SurveyQuestionType()
-	 * @model keys="surveyQuestionTypeId"
+	 * @model
 	 * @generated
 	 */
 	SurveyQuestionType getSurveyQuestionType();

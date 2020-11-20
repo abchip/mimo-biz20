@@ -46,7 +46,7 @@ public interface WorkEffortFixedAssetAssign extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortFixedAssetAssign_WorkEffort()
-	 * @model keys="workEffortId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -69,7 +69,7 @@ public interface WorkEffortFixedAssetAssign extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Fixed Asset</em>' reference.
 	 * @see #setFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortFixedAssetAssign_FixedAsset()
-	 * @model keys="fixedAssetId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -118,8 +118,7 @@ public interface WorkEffortFixedAssetAssign extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Availability Status</em>' reference.
 	 * @see #setAvailabilityStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortFixedAssetAssign_AvailabilityStatus()
-	 * @model keys="statusId"
-	 *        annotation="mimo-ent-slot help='Points to StatusItem value with statusTypeId=\"WEFA_AVAILABILITY\"'"
+	 * @model annotation="mimo-ent-slot help='Points to StatusItem value with statusTypeId=\"WEFA_AVAILABILITY\"'"
 	 * @generated
 	 */
 	StatusItem getAvailabilityStatus();
@@ -167,7 +166,7 @@ public interface WorkEffortFixedAssetAssign extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortFixedAssetAssign_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

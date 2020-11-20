@@ -187,7 +187,7 @@ public interface OrderAdjustment extends EntityTyped<OrderAdjustmentType>, Entit
 	 * @return the value of the '<em>Created By User Login</em>' reference.
 	 * @see #setCreatedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustment_CreatedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getCreatedByUserLogin();
@@ -485,7 +485,7 @@ public interface OrderAdjustment extends EntityTyped<OrderAdjustmentType>, Entit
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustment_Order()
-	 * @model keys="orderId"
+	 * @model
 	 * @generated
 	 */
 	OrderHeader getOrder();
@@ -519,7 +519,7 @@ public interface OrderAdjustment extends EntityTyped<OrderAdjustmentType>, Entit
 	 * @return the value of the '<em>Order Adjustment Type</em>' reference.
 	 * @see #setOrderAdjustmentType(OrderAdjustmentType)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustment_OrderAdjustmentType()
-	 * @model keys="orderAdjustmentTypeId"
+	 * @model
 	 * @generated
 	 */
 	OrderAdjustmentType getOrderAdjustmentType();
@@ -594,8 +594,7 @@ public interface OrderAdjustment extends EntityTyped<OrderAdjustmentType>, Entit
 	 * @return the value of the '<em>Original Adjustment</em>' reference.
 	 * @see #setOriginalAdjustment(OrderAdjustment)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustment_OriginalAdjustment()
-	 * @model keys="orderAdjustmentId"
-	 *        annotation="mimo-ent-slot help='specifies relation to source OrderAdjustment - eg. for tax on shipping charges'"
+	 * @model annotation="mimo-ent-slot help='specifies relation to source OrderAdjustment - eg. for tax on shipping charges'"
 	 * @generated
 	 */
 	OrderAdjustment getOriginalAdjustment();
@@ -617,8 +616,7 @@ public interface OrderAdjustment extends EntityTyped<OrderAdjustmentType>, Entit
 	 * @return the value of the '<em>Override Gl Account</em>' reference.
 	 * @see #setOverrideGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustment_OverrideGlAccount()
-	 * @model keys="glAccountId"
-	 *        annotation="mimo-ent-slot help='used to specify the override or actual glAccountId used for the adjustment, avoids problems if configuration changes after initial posting, etc'"
+	 * @model annotation="mimo-ent-slot help='used to specify the override or actual glAccountId used for the adjustment, avoids problems if configuration changes after initial posting, etc'"
 	 * @generated
 	 */
 	GlAccount getOverrideGlAccount();
@@ -640,8 +638,7 @@ public interface OrderAdjustment extends EntityTyped<OrderAdjustmentType>, Entit
 	 * @return the value of the '<em>Primary Geo</em>' reference.
 	 * @see #setPrimaryGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustment_PrimaryGeo()
-	 * @model keys="geoId"
-	 *        annotation="mimo-ent-slot help='for tax entries this is the primary jurisdiction Geo (the smallest or most local Geo that this tax is for, usually a state/province, perhaps a county or a city)'"
+	 * @model annotation="mimo-ent-slot help='for tax entries this is the primary jurisdiction Geo (the smallest or most local Geo that this tax is for, usually a state/province, perhaps a county or a city)'"
 	 * @generated
 	 */
 	Geo getPrimaryGeo();
@@ -689,7 +686,7 @@ public interface OrderAdjustment extends EntityTyped<OrderAdjustmentType>, Entit
 	 * @return the value of the '<em>Product Promo</em>' reference.
 	 * @see #setProductPromo(ProductPromo)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustment_ProductPromo()
-	 * @model keys="productPromoId"
+	 * @model
 	 * @generated
 	 */
 	ProductPromo getProductPromo();
@@ -789,8 +786,7 @@ public interface OrderAdjustment extends EntityTyped<OrderAdjustmentType>, Entit
 	 * @return the value of the '<em>Secondary Geo</em>' reference.
 	 * @see #setSecondaryGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustment_SecondaryGeo()
-	 * @model keys="geoId"
-	 *        annotation="mimo-ent-slot help='for tax entries this is the secondary jurisdiction Geo (usually a country, or other Geo that the primary is within)'"
+	 * @model annotation="mimo-ent-slot help='for tax entries this is the secondary jurisdiction Geo (usually a country, or other Geo that the primary is within)'"
 	 * @generated
 	 */
 	Geo getSecondaryGeo();
@@ -944,7 +940,7 @@ public interface OrderAdjustment extends EntityTyped<OrderAdjustmentType>, Entit
 	 * @return the value of the '<em>Tax Authority Rate Seq</em>' reference.
 	 * @see #setTaxAuthorityRateSeq(TaxAuthorityRateProduct)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustment_TaxAuthorityRateSeq()
-	 * @model keys="taxAuthorityRateSeqId"
+	 * @model
 	 * @generated
 	 */
 	TaxAuthorityRateProduct getTaxAuthorityRateSeq();

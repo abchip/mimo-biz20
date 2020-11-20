@@ -40,7 +40,7 @@ public interface EmplPositionFulfillment extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Empl Position</em>' reference.
 	 * @see #setEmplPosition(EmplPosition)
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionFulfillment_EmplPosition()
-	 * @model keys="emplPositionId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface EmplPositionFulfillment extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionFulfillment_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

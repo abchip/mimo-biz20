@@ -38,7 +38,7 @@ public interface ProductMeter extends EntityTyped<ProductMeterType>, EntityInfo 
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductMeter_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface ProductMeter extends EntityTyped<ProductMeterType>, EntityInfo 
 	 * @return the value of the '<em>Product Meter Type</em>' reference.
 	 * @see #setProductMeterType(ProductMeterType)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductMeter_ProductMeterType()
-	 * @model keys="productMeterTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true' help='Part of the primary key as different meters on a machine should have distinct types'"
 	 * @generated
 	 */
@@ -110,8 +110,7 @@ public interface ProductMeter extends EntityTyped<ProductMeterType>, EntityInfo 
 	 * @return the value of the '<em>Meter Uom</em>' reference.
 	 * @see #setMeterUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductMeter_MeterUom()
-	 * @model keys="uomId"
-	 *        annotation="mimo-ent-slot help='Is on this entity instead of the ProductMeterType entity for more flexibility; for example being able to find all speedometers regardless of their primary unit'"
+	 * @model annotation="mimo-ent-slot help='Is on this entity instead of the ProductMeterType entity for more flexibility; for example being able to find all speedometers regardless of their primary unit'"
 	 * @generated
 	 */
 	Uom getMeterUom();

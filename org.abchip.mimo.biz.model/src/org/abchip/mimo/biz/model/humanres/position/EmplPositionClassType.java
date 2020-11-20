@@ -85,7 +85,7 @@ public interface EmplPositionClassType extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(EmplPositionClassType)
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionClassType_ParentType()
-	 * @model keys="emplPositionClassTypeId"
+	 * @model
 	 * @generated
 	 */
 	EmplPositionClassType getParentType();

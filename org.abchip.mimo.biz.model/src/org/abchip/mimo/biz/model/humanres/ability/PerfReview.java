@@ -47,7 +47,7 @@ public interface PerfReview extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Employee Party</em>' reference.
 	 * @see #setEmployeeParty(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReview_EmployeeParty()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -96,7 +96,7 @@ public interface PerfReview extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Empl Position</em>' reference.
 	 * @see #setEmplPosition(EmplPosition)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReview_EmplPosition()
-	 * @model keys="emplPositionId"
+	 * @model
 	 * @generated
 	 */
 	EmplPosition getEmplPosition();
@@ -172,7 +172,7 @@ public interface PerfReview extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Manager Party</em>' reference.
 	 * @see #setManagerParty(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReview_ManagerParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getManagerParty();
@@ -220,7 +220,7 @@ public interface PerfReview extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Payment</em>' reference.
 	 * @see #setPayment(Payment)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReview_Payment()
-	 * @model keys="paymentId"
+	 * @model
 	 * @generated
 	 */
 	Payment getPayment();

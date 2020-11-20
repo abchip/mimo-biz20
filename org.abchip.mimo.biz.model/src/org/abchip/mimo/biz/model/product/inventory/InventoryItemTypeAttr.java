@@ -36,7 +36,7 @@ public interface InventoryItemTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Inventory Item Type</em>' reference.
 	 * @see #setInventoryItemType(InventoryItemType)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemTypeAttr_InventoryItemType()
-	 * @model keys="inventoryItemTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -40,7 +40,7 @@ public interface WorkEffortAssoc extends EntityTyped<WorkEffortAssocType>, Entit
 	 * @return the value of the '<em>Work Effort Assoc Type</em>' reference.
 	 * @see #setWorkEffortAssocType(WorkEffortAssocType)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortAssoc_WorkEffortAssocType()
-	 * @model keys="workEffortAssocTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -146,7 +146,7 @@ public interface WorkEffortAssoc extends EntityTyped<WorkEffortAssocType>, Entit
 	 * @return the value of the '<em>Work Effort Id From</em>' reference.
 	 * @see #setWorkEffortIdFrom(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortAssoc_WorkEffortIdFrom()
-	 * @model keys="workEffortId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -173,7 +173,7 @@ public interface WorkEffortAssoc extends EntityTyped<WorkEffortAssocType>, Entit
 	 * @return the value of the '<em>Work Effort Id To</em>' reference.
 	 * @see #setWorkEffortIdTo(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortAssoc_WorkEffortIdTo()
-	 * @model keys="workEffortId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

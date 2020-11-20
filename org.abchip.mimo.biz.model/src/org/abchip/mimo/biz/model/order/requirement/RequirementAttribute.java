@@ -37,7 +37,7 @@ public interface RequirementAttribute extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Requirement</em>' reference.
 	 * @see #setRequirement(Requirement)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementAttribute_Requirement()
-	 * @model keys="requirementId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

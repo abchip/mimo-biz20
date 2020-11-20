@@ -73,7 +73,7 @@ public interface EmploymentApp extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Applying Party</em>' reference.
 	 * @see #setApplyingParty(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmploymentApp_ApplyingParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getApplyingParty();
@@ -95,7 +95,7 @@ public interface EmploymentApp extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Approver Party</em>' reference.
 	 * @see #setApproverParty(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmploymentApp_ApproverParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getApproverParty();
@@ -117,7 +117,7 @@ public interface EmploymentApp extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Empl Position</em>' reference.
 	 * @see #setEmplPosition(EmplPosition)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmploymentApp_EmplPosition()
-	 * @model keys="emplPositionId"
+	 * @model
 	 * @generated
 	 */
 	EmplPosition getEmplPosition();
@@ -139,7 +139,7 @@ public interface EmploymentApp extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Employment App Source Type</em>' reference.
 	 * @see #setEmploymentAppSourceType(EmploymentAppSourceType)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmploymentApp_EmploymentAppSourceType()
-	 * @model keys="employmentAppSourceTypeId"
+	 * @model
 	 * @generated
 	 */
 	EmploymentAppSourceType getEmploymentAppSourceType();
@@ -161,7 +161,7 @@ public interface EmploymentApp extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Job Requisition</em>' reference.
 	 * @see #setJobRequisition(JobRequisition)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmploymentApp_JobRequisition()
-	 * @model keys="jobRequisitionId"
+	 * @model
 	 * @generated
 	 */
 	JobRequisition getJobRequisition();
@@ -183,7 +183,7 @@ public interface EmploymentApp extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Referred By Party</em>' reference.
 	 * @see #setReferredByParty(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmploymentApp_ReferredByParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getReferredByParty();
@@ -205,7 +205,7 @@ public interface EmploymentApp extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmploymentApp_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

@@ -212,7 +212,7 @@ public interface GiftCardFulfillment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getGiftCardFulfillment_Order()
-	 * @model keys="orderId"
+	 * @model
 	 * @generated
 	 */
 	OrderHeader getOrder();
@@ -260,7 +260,7 @@ public interface GiftCardFulfillment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getGiftCardFulfillment_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -361,7 +361,7 @@ public interface GiftCardFulfillment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Survey Response</em>' reference.
 	 * @see #setSurveyResponse(SurveyResponse)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getGiftCardFulfillment_SurveyResponse()
-	 * @model keys="surveyResponseId"
+	 * @model
 	 * @generated
 	 */
 	SurveyResponse getSurveyResponse();
@@ -383,7 +383,7 @@ public interface GiftCardFulfillment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Type Enum</em>' reference.
 	 * @see #setTypeEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getGiftCardFulfillment_TypeEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getTypeEnum();

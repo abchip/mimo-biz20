@@ -40,7 +40,7 @@ public interface PartyGlAccount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Organization Party</em>' reference.
 	 * @see #setOrganizationParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyGlAccount_OrganizationParty()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface PartyGlAccount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyGlAccount_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -86,7 +86,7 @@ public interface PartyGlAccount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyGlAccount_RoleType()
-	 * @model keys="roleTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -109,7 +109,7 @@ public interface PartyGlAccount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Gl Account Type</em>' reference.
 	 * @see #setGlAccountType(GlAccountType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyGlAccount_GlAccountType()
-	 * @model keys="glAccountTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -132,7 +132,7 @@ public interface PartyGlAccount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Gl Account</em>' reference.
 	 * @see #setGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyGlAccount_GlAccount()
-	 * @model keys="glAccountId"
+	 * @model
 	 * @generated
 	 */
 	GlAccount getGlAccount();

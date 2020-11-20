@@ -40,7 +40,7 @@ public interface DataResourceRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Data Resource</em>' reference.
 	 * @see #setDataResource(DataResource)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourceRole_DataResource()
-	 * @model keys="dataResourceId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface DataResourceRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourceRole_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

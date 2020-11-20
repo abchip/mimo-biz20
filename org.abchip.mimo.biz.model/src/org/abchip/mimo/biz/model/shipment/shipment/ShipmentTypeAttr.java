@@ -36,7 +36,7 @@ public interface ShipmentTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Shipment Type</em>' reference.
 	 * @see #setShipmentType(ShipmentType)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentTypeAttr_ShipmentType()
-	 * @model keys="shipmentTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

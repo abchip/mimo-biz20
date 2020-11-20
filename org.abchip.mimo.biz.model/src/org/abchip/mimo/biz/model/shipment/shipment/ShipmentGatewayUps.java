@@ -42,6 +42,7 @@ import java.math.BigDecimal;
  *
  * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentGatewayUps()
  * @model annotation="mimo-ent-frame title='UPS Shipment Gateway Configuration' formula='description'"
+ *        annotation="mimo-ent-frame-constraints shipmentGatewayConfType='SHIPMENT_GATEWAY_UPS'"
  * @generated
  */
 public interface ShipmentGatewayUps extends ShipmentGatewayConfig {

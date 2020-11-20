@@ -166,7 +166,7 @@ public interface BenefitType extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(BenefitType)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getBenefitType_ParentType()
-	 * @model keys="benefitTypeId"
+	 * @model
 	 * @generated
 	 */
 	BenefitType getParentType();

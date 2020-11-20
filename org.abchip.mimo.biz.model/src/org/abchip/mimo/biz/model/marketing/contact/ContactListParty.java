@@ -43,7 +43,7 @@ public interface ContactListParty extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Contact List</em>' reference.
 	 * @see #setContactList(ContactList)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListParty_ContactList()
-	 * @model keys="contactListId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -66,7 +66,7 @@ public interface ContactListParty extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListParty_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -116,7 +116,7 @@ public interface ContactListParty extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Preferred Contact Mech</em>' reference.
 	 * @see #setPreferredContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListParty_PreferredContactMech()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	ContactMech getPreferredContactMech();
@@ -138,7 +138,7 @@ public interface ContactListParty extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListParty_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

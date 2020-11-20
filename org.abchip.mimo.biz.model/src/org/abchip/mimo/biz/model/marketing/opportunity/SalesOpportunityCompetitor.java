@@ -38,7 +38,7 @@ public interface SalesOpportunityCompetitor extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Sales Opportunity</em>' reference.
 	 * @see #setSalesOpportunity(SalesOpportunity)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityCompetitor_SalesOpportunity()
-	 * @model keys="salesOpportunityId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

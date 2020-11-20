@@ -24,6 +24,7 @@ package org.abchip.mimo.biz.model.party.contact;
  *
  * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getTelecomNumber()
  * @model annotation="mimo-ent-frame title='Telecommunications Number'"
+ *        annotation="mimo-ent-frame-constraints contactMechType='TELECOM_NUMBER'"
  * @generated
  */
 public interface TelecomNumber extends ContactMech {

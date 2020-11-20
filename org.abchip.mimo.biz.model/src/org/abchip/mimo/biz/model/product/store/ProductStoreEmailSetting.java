@@ -43,7 +43,7 @@ public interface ProductStoreEmailSetting extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Product Store</em>' reference.
 	 * @see #setProductStore(ProductStore)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreEmailSetting_ProductStore()
-	 * @model keys="productStoreId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -175,7 +175,7 @@ public interface ProductStoreEmailSetting extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Email Type</em>' reference.
 	 * @see #setEmailType(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreEmailSetting_EmailType()
-	 * @model keys="enumId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

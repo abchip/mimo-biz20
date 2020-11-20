@@ -188,7 +188,7 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * @return the value of the '<em>Character Set</em>' reference.
 	 * @see #setCharacterSet(CharacterSet)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_CharacterSet()
-	 * @model keys="characterSetId"
+	 * @model
 	 * @generated
 	 */
 	CharacterSet getCharacterSet();
@@ -260,7 +260,7 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * @return the value of the '<em>Content Type</em>' reference.
 	 * @see #setContentType(ContentType)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_ContentType()
-	 * @model keys="contentTypeId"
+	 * @model
 	 * @generated
 	 */
 	ContentType getContentType();
@@ -286,7 +286,7 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * @return the value of the '<em>Created By User Login</em>' reference.
 	 * @see #setCreatedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_CreatedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getCreatedByUserLogin();
@@ -334,7 +334,7 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * @return the value of the '<em>Custom Method</em>' reference.
 	 * @see #setCustomMethod(CustomMethod)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_CustomMethod()
-	 * @model keys="customMethodId"
+	 * @model
 	 * @generated
 	 */
 	CustomMethod getCustomMethod();
@@ -356,7 +356,7 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * @return the value of the '<em>Data Resource</em>' reference.
 	 * @see #setDataResource(DataResource)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_DataResource()
-	 * @model keys="dataResourceId"
+	 * @model
 	 * @generated
 	 */
 	DataResource getDataResource();
@@ -378,7 +378,7 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * @return the value of the '<em>Data Source</em>' reference.
 	 * @see #setDataSource(DataSource)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_DataSource()
-	 * @model keys="dataSourceId"
+	 * @model
 	 * @generated
 	 */
 	DataSource getDataSource();
@@ -400,7 +400,7 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * @return the value of the '<em>Decorator Content</em>' reference.
 	 * @see #setDecoratorContent(Content)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_DecoratorContent()
-	 * @model keys="contentId"
+	 * @model
 	 * @generated
 	 */
 	Content getDecoratorContent();
@@ -449,7 +449,7 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * @return the value of the '<em>From Comm Event Content Assocs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_FromCommEventContentAssocs()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<CommEventContentAssoc> getFromCommEventContentAssocs();
@@ -461,7 +461,7 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * @return the value of the '<em>Instance Of Content</em>' reference.
 	 * @see #setInstanceOfContent(Content)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_InstanceOfContent()
-	 * @model keys="contentId"
+	 * @model
 	 * @generated
 	 */
 	Content getInstanceOfContent();
@@ -487,7 +487,7 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * @return the value of the '<em>Last Modified By User Login</em>' reference.
 	 * @see #setLastModifiedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_LastModifiedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getLastModifiedByUserLogin();
@@ -561,7 +561,7 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * @return the value of the '<em>Mime Type</em>' reference.
 	 * @see #setMimeType(MimeType)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_MimeType()
-	 * @model keys="mimeTypeId"
+	 * @model
 	 * @generated
 	 */
 	MimeType getMimeType();
@@ -583,8 +583,7 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * @return the value of the '<em>Owner Content</em>' reference.
 	 * @see #setOwnerContent(Content)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_OwnerContent()
-	 * @model keys="contentId"
-	 *        annotation="mimo-ent-slot help='Used for permissions checking'"
+	 * @model annotation="mimo-ent-slot help='Used for permissions checking'"
 	 * @generated
 	 */
 	Content getOwnerContent();
@@ -606,7 +605,7 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * @return the value of the '<em>Privilege Enum</em>' reference.
 	 * @see #setPrivilegeEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_PrivilegeEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getPrivilegeEnum();
@@ -655,7 +654,7 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -677,7 +676,7 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * @return the value of the '<em>Template Data Resource</em>' reference.
 	 * @see #setTemplateDataResource(DataResource)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_TemplateDataResource()
-	 * @model keys="dataResourceId"
+	 * @model
 	 * @generated
 	 */
 	DataResource getTemplateDataResource();

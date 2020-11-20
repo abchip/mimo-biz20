@@ -133,7 +133,7 @@ public interface ProductType extends EntityType<Product>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(ProductType)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductType_ParentType()
-	 * @model keys="productTypeId"
+	 * @model
 	 * @generated
 	 */
 	ProductType getParentType();

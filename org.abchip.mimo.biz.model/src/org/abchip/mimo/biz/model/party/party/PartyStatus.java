@@ -40,7 +40,7 @@ public interface PartyStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyStatus_Status()
-	 * @model keys="statusId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface PartyStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyStatus_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -113,7 +113,7 @@ public interface PartyStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Change By User Login</em>' reference.
 	 * @see #setChangeByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyStatus_ChangeByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getChangeByUserLogin();

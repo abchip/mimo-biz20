@@ -2498,7 +2498,6 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		initEClass(contentEClass, Content.class, "Content", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getContent_ContentId(), ecorePackage.getEString(), "contentId", null, 1, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContent_CharacterSet(), theDataPackage.getCharacterSet(), null, "characterSet", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContent_CharacterSet().getEKeys().add(theDataPackage.getCharacterSet_CharacterSetId());
 		initEAttribute(getContent_ChildBranchCount(), ecorePackage.getELong(), "childBranchCount", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContent_ChildLeafCount(), ecorePackage.getELong(), "childLeafCount", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContent_ContentAttributes(), this.getContentAttribute(), null, "contentAttributes", null, 0, -1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
@@ -2508,70 +2507,46 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		initEReference(getContent_ContentPurposes(), this.getContentPurpose(), null, "contentPurposes", null, 0, -1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getContent_ContentRevisions(), this.getContentRevision(), null, "contentRevisions", null, 0, -1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getContent_ContentType(), this.getContentType(), null, "contentType", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContent_ContentType().getEKeys().add(this.getContentType_ContentTypeId());
 		initEReference(getContent_CreatedByUserLogin(), theLoginPackage.getUserLogin(), null, "createdByUserLogin", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContent_CreatedByUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEAttribute(getContent_CreatedDate(), ecorePackage.getEDate(), "createdDate", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContent_CustomMethod(), theMethodPackage.getCustomMethod(), null, "customMethod", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContent_CustomMethod().getEKeys().add(theMethodPackage.getCustomMethod_CustomMethodId());
 		initEReference(getContent_DataResource(), theDataPackage.getDataResource(), null, "dataResource", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContent_DataResource().getEKeys().add(theDataPackage.getDataResource_DataResourceId());
 		initEReference(getContent_DataSource(), theDatasourcePackage.getDataSource(), null, "dataSource", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContent_DataSource().getEKeys().add(theDatasourcePackage.getDataSource_DataSourceId());
 		initEReference(getContent_DecoratorContent(), this.getContent(), null, "decoratorContent", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContent_DecoratorContent().getEKeys().add(this.getContent_ContentId());
 		initEAttribute(getContent_Description(), ecorePackage.getEString(), "description", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContent_FromCommEventContentAssocs(), theCommunicationPackage.getCommEventContentAssoc(), null, "fromCommEventContentAssocs", null, 0, -1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getContent_InstanceOfContent(), this.getContent(), null, "instanceOfContent", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContent_InstanceOfContent().getEKeys().add(this.getContent_ContentId());
 		initEReference(getContent_LastModifiedByUserLogin(), theLoginPackage.getUserLogin(), null, "lastModifiedByUserLogin", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContent_LastModifiedByUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEAttribute(getContent_LastModifiedDate(), ecorePackage.getEDate(), "lastModifiedDate", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContent_LocaleString(), ecorePackage.getEString(), "localeString", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContent_MimeType(), theDataPackage.getMimeType(), null, "mimeType", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContent_MimeType().getEKeys().add(theDataPackage.getMimeType_MimeTypeId());
 		initEReference(getContent_OwnerContent(), this.getContent(), null, "ownerContent", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContent_OwnerContent().getEKeys().add(this.getContent_ContentId());
 		initEReference(getContent_PrivilegeEnum(), theEnumPackage.getEnumeration(), null, "privilegeEnum", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContent_PrivilegeEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getContent_ServiceName(), ecorePackage.getEString(), "serviceName", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContent_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContent_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEReference(getContent_TemplateDataResource(), theDataPackage.getDataResource(), null, "templateDataResource", null, 0, 1, Content.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContent_TemplateDataResource().getEKeys().add(theDataPackage.getDataResource_DataResourceId());
 
 		initEClass(contentApprovalEClass, ContentApproval.class, "ContentApproval", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getContentApproval_ContentApprovalId(), ecorePackage.getEString(), "contentApprovalId", null, 1, 1, ContentApproval.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentApproval_ApprovalDate(), ecorePackage.getEDate(), "approvalDate", null, 0, 1, ContentApproval.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContentApproval_ApprovalStatus(), theStatusPackage.getStatusItem(), null, "approvalStatus", null, 0, 1, ContentApproval.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentApproval_ApprovalStatus().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getContentApproval_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, ContentApproval.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContentApproval_Content(), this.getContent(), null, "content", null, 0, 1, ContentApproval.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentApproval_Content().getEKeys().add(this.getContent_ContentId());
 		initEAttribute(getContentApproval_ContentRevisionSeqId(), ecorePackage.getEString(), "contentRevisionSeqId", null, 0, 1, ContentApproval.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContentApproval_Party(), thePartyPackage_1.getParty(), null, "party", null, 0, 1, ContentApproval.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentApproval_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getContentApproval_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 0, 1, ContentApproval.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentApproval_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEAttribute(getContentApproval_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, ContentApproval.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(contentAssocEClass, ContentAssoc.class, "ContentAssoc", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getContentAssoc_Content(), this.getContent(), null, "content", null, 1, 1, ContentAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentAssoc_Content().getEKeys().add(this.getContent_ContentId());
 		initEReference(getContentAssoc_ContentIdTo(), this.getContent(), null, "contentIdTo", null, 1, 1, ContentAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentAssoc_ContentIdTo().getEKeys().add(this.getContent_ContentId());
 		initEReference(getContentAssoc_ContentAssocType(), this.getContentAssocType(), null, "contentAssocType", null, 1, 1, ContentAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentAssoc_ContentAssocType().getEKeys().add(this.getContentAssocType_ContentAssocTypeId());
 		initEAttribute(getContentAssoc_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ContentAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContentAssoc_ContentAssocPredicate(), this.getContentAssocPredicate(), null, "contentAssocPredicate", null, 0, 1, ContentAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentAssoc_ContentAssocPredicate().getEKeys().add(this.getContentAssocPredicate_ContentAssocPredicateId());
 		initEReference(getContentAssoc_CreatedByUserLogin(), theLoginPackage.getUserLogin(), null, "createdByUserLogin", null, 0, 1, ContentAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentAssoc_CreatedByUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEAttribute(getContentAssoc_CreatedDate(), ecorePackage.getEDate(), "createdDate", null, 0, 1, ContentAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContentAssoc_DataSource(), theDatasourcePackage.getDataSource(), null, "dataSource", null, 0, 1, ContentAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentAssoc_DataSource().getEKeys().add(theDatasourcePackage.getDataSource_DataSourceId());
 		initEReference(getContentAssoc_LastModifiedByUserLogin(), theLoginPackage.getUserLogin(), null, "lastModifiedByUserLogin", null, 0, 1, ContentAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentAssoc_LastModifiedByUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEAttribute(getContentAssoc_LastModifiedDate(), ecorePackage.getEDate(), "lastModifiedDate", null, 0, 1, ContentAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentAssoc_LeftCoordinate(), ecorePackage.getELong(), "leftCoordinate", null, 0, 1, ContentAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentAssoc_MapKey(), ecorePackage.getEString(), "mapKey", null, 0, 1, ContentAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2589,24 +2564,19 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 
 		initEClass(contentAttributeEClass, ContentAttribute.class, "ContentAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getContentAttribute_Content(), this.getContent(), null, "content", null, 1, 1, ContentAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentAttribute_Content().getEKeys().add(this.getContent_ContentId());
 		initEAttribute(getContentAttribute_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, ContentAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentAttribute_AttrDescription(), ecorePackage.getEString(), "attrDescription", null, 0, 1, ContentAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentAttribute_AttrValue(), ecorePackage.getEString(), "attrValue", null, 0, 1, ContentAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(contentKeywordEClass, ContentKeyword.class, "ContentKeyword", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getContentKeyword_Content(), this.getContent(), null, "content", null, 1, 1, ContentKeyword.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentKeyword_Content().getEKeys().add(this.getContent_ContentId());
 		initEAttribute(getContentKeyword_Keyword(), ecorePackage.getEString(), "keyword", null, 1, 1, ContentKeyword.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentKeyword_RelevancyWeight(), ecorePackage.getELong(), "relevancyWeight", null, 0, 1, ContentKeyword.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(contentMetaDataEClass, ContentMetaData.class, "ContentMetaData", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getContentMetaData_Content(), this.getContent(), null, "content", null, 1, 1, ContentMetaData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentMetaData_Content().getEKeys().add(this.getContent_ContentId());
 		initEReference(getContentMetaData_MetaDataPredicate(), theDataPackage.getMetaDataPredicate(), null, "metaDataPredicate", null, 1, 1, ContentMetaData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentMetaData_MetaDataPredicate().getEKeys().add(theDataPackage.getMetaDataPredicate_MetaDataPredicateId());
 		initEReference(getContentMetaData_DataSource(), theDatasourcePackage.getDataSource(), null, "dataSource", null, 0, 1, ContentMetaData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentMetaData_DataSource().getEKeys().add(theDatasourcePackage.getDataSource_DataSourceId());
 		initEAttribute(getContentMetaData_MetaDataValue(), ecorePackage.getEString(), "metaDataValue", null, 0, 1, ContentMetaData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(contentOperationEClass, ContentOperation.class, "ContentOperation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -2615,22 +2585,15 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 
 		initEClass(contentPurposeEClass, ContentPurpose.class, "ContentPurpose", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getContentPurpose_Content(), this.getContent(), null, "content", null, 1, 1, ContentPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentPurpose_Content().getEKeys().add(this.getContent_ContentId());
 		initEReference(getContentPurpose_ContentPurposeType(), this.getContentPurposeType(), null, "contentPurposeType", null, 1, 1, ContentPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentPurpose_ContentPurposeType().getEKeys().add(this.getContentPurposeType_ContentPurposeTypeId());
 		initEAttribute(getContentPurpose_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, ContentPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(contentPurposeOperationEClass, ContentPurposeOperation.class, "ContentPurposeOperation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getContentPurposeOperation_ContentPurposeType(), this.getContentPurposeType(), null, "contentPurposeType", null, 1, 1, ContentPurposeOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentPurposeOperation_ContentPurposeType().getEKeys().add(this.getContentPurposeType_ContentPurposeTypeId());
 		initEReference(getContentPurposeOperation_ContentOperation(), this.getContentOperation(), null, "contentOperation", null, 1, 1, ContentPurposeOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentPurposeOperation_ContentOperation().getEKeys().add(this.getContentOperation_ContentOperationId());
 		initEReference(getContentPurposeOperation_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 1, 1, ContentPurposeOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentPurposeOperation_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEReference(getContentPurposeOperation_Status(), theStatusPackage.getStatusItem(), null, "status", null, 1, 1, ContentPurposeOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentPurposeOperation_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEReference(getContentPurposeOperation_PrivilegeEnum(), theEnumPackage.getEnumeration(), null, "privilegeEnum", null, 1, 1, ContentPurposeOperation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentPurposeOperation_PrivilegeEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 
 		initEClass(contentPurposeTypeEClass, ContentPurposeType.class, "ContentPurposeType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getContentPurposeType_ContentPurposeTypeId(), ecorePackage.getEString(), "contentPurposeTypeId", null, 1, 1, ContentPurposeType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2638,33 +2601,26 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 
 		initEClass(contentRevisionEClass, ContentRevision.class, "ContentRevision", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getContentRevision_Content(), this.getContent(), null, "content", null, 1, 1, ContentRevision.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentRevision_Content().getEKeys().add(this.getContent_ContentId());
 		initEAttribute(getContentRevision_ContentRevisionSeqId(), ecorePackage.getEString(), "contentRevisionSeqId", null, 1, 1, ContentRevision.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentRevision_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, ContentRevision.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContentRevision_CommittedByParty(), thePartyPackage_1.getParty(), null, "committedByParty", null, 0, 1, ContentRevision.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentRevision_CommittedByParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 
 		initEClass(contentRevisionItemEClass, ContentRevisionItem.class, "ContentRevisionItem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getContentRevisionItem_ContentId(), ecorePackage.getEString(), "contentId", null, 1, 1, ContentRevisionItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentRevisionItem_ContentRevisionSeqId(), ecorePackage.getEString(), "contentRevisionSeqId", null, 1, 1, ContentRevisionItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentRevisionItem_ItemContentId(), ecorePackage.getEString(), "itemContentId", null, 1, 1, ContentRevisionItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContentRevisionItem_NewDataResource(), theDataPackage.getDataResource(), null, "newDataResource", null, 0, 1, ContentRevisionItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentRevisionItem_NewDataResource().getEKeys().add(theDataPackage.getDataResource_DataResourceId());
 		initEReference(getContentRevisionItem_OldDataResource(), theDataPackage.getDataResource(), null, "oldDataResource", null, 0, 1, ContentRevisionItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentRevisionItem_OldDataResource().getEKeys().add(theDataPackage.getDataResource_DataResourceId());
 
 		initEClass(contentRoleEClass, ContentRole.class, "ContentRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getContentRole_Content(), this.getContent(), null, "content", null, 1, 1, ContentRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentRole_Content().getEKeys().add(this.getContent_ContentId());
 		initEReference(getContentRole_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, ContentRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentRole_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getContentRole_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ContentRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentRole_RoleTypeId(), ecorePackage.getEString(), "roleTypeId", null, 1, 1, ContentRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentRole_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ContentRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(contentSearchConstraintEClass, ContentSearchConstraint.class, "ContentSearchConstraint", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getContentSearchConstraint_ContentSearchResult(), this.getContentSearchResult(), null, "contentSearchResult", null, 1, 1, ContentSearchConstraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentSearchConstraint_ContentSearchResult().getEKeys().add(this.getContentSearchResult_ContentSearchResultId());
 		initEAttribute(getContentSearchConstraint_ConstraintSeqId(), ecorePackage.getEString(), "constraintSeqId", null, 1, 1, ContentSearchConstraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentSearchConstraint_AnyPrefix(), ecorePackage.getEString(), "anyPrefix", null, 0, 1, ContentSearchConstraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentSearchConstraint_AnySuffix(), ecorePackage.getEString(), "anySuffix", null, 0, 1, ContentSearchConstraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2692,11 +2648,9 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		initEAttribute(getContentType_Description(), ecorePackage.getEString(), "description", null, 0, 1, ContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 1, 1, ContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContentType_ParentType(), this.getContentType(), null, "parentType", null, 0, 1, ContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentType_ParentType().getEKeys().add(this.getContentType_ContentTypeId());
 
 		initEClass(contentTypeAttrEClass, ContentTypeAttr.class, "ContentTypeAttr", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getContentTypeAttr_ContentType(), this.getContentType(), null, "contentType", null, 1, 1, ContentTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContentTypeAttr_ContentType().getEKeys().add(this.getContentType_ContentTypeId());
 		initEAttribute(getContentTypeAttr_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, ContentTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentTypeAttr_Description(), ecorePackage.getEString(), "description", null, 0, 1, ContentTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -2708,8 +2662,8 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		createMimoentframeAnnotations();
 		// mimo-ent-format
 		createMimoentformatAnnotations();
-		// mimo-ent-slot-constraint
-		createMimoentslotconstraintAnnotations();
+		// mimo-ent-slot-constraints
+		createMimoentslotconstraintsAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
 	}
@@ -3119,13 +3073,13 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 	}
 
 	/**
-	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * Initializes the annotations for <b>mimo-ent-slot-constraints</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createMimoentslotconstraintAnnotations() {
-		String source = "mimo-ent-slot-constraint";
+	protected void createMimoentslotconstraintsAnnotations() {
+		String source = "mimo-ent-slot-constraints";
 		addAnnotation
 		  (getContent_FromCommEventContentAssocs(),
 		   source,

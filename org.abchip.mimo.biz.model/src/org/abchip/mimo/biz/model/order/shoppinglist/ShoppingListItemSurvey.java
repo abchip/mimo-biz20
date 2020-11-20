@@ -37,7 +37,7 @@ public interface ShoppingListItemSurvey extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Shopping List</em>' reference.
 	 * @see #setShoppingList(ShoppingList)
 	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingListItemSurvey_ShoppingList()
-	 * @model keys="shoppingListId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -60,7 +60,7 @@ public interface ShoppingListItemSurvey extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Survey Response</em>' reference.
 	 * @see #setSurveyResponse(SurveyResponse)
 	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingListItemSurvey_SurveyResponse()
-	 * @model keys="surveyResponseId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

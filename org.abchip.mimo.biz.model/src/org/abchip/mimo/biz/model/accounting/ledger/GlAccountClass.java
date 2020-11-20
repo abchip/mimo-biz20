@@ -86,7 +86,7 @@ public interface GlAccountClass extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Class</em>' reference.
 	 * @see #setParentClass(GlAccountClass)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccountClass_ParentClass()
-	 * @model keys="glAccountClassId"
+	 * @model
 	 * @generated
 	 */
 	GlAccountClass getParentClass();

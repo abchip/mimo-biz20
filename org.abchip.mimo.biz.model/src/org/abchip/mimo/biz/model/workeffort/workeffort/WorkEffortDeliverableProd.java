@@ -35,7 +35,7 @@ public interface WorkEffortDeliverableProd extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortDeliverableProd_WorkEffort()
-	 * @model keys="workEffortId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -58,7 +58,7 @@ public interface WorkEffortDeliverableProd extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Deliverable</em>' reference.
 	 * @see #setDeliverable(Deliverable)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortDeliverableProd_Deliverable()
-	 * @model keys="deliverableId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -85,7 +85,7 @@ public interface CustomMethodType extends EntityType<CustomMethod>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(CustomMethodType)
 	 * @see org.abchip.mimo.biz.model.common.method.MethodPackage#getCustomMethodType_ParentType()
-	 * @model keys="customMethodTypeId"
+	 * @model
 	 * @generated
 	 */
 	CustomMethodType getParentType();

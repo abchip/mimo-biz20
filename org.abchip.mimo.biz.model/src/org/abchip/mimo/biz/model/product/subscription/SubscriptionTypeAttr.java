@@ -36,7 +36,7 @@ public interface SubscriptionTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Subscription Type</em>' reference.
 	 * @see #setSubscriptionType(SubscriptionType)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionTypeAttr_SubscriptionType()
-	 * @model keys="subscriptionTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

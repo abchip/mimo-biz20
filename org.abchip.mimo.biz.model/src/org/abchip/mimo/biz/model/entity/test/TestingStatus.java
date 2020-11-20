@@ -120,7 +120,7 @@ public interface TestingStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Change By User Login</em>' reference.
 	 * @see #setChangeByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingStatus_ChangeByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getChangeByUserLogin();
@@ -142,7 +142,7 @@ public interface TestingStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingStatus_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

@@ -36,7 +36,7 @@ public interface ContentTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Content Type</em>' reference.
 	 * @see #setContentType(ContentType)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentTypeAttr_ContentType()
-	 * @model keys="contentTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

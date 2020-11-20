@@ -206,7 +206,7 @@ public interface TaxAuthorityAssoc extends EntityTyped<TaxAuthorityAssocType>, E
 	 * @return the value of the '<em>Tax Authority Assoc Type</em>' reference.
 	 * @see #setTaxAuthorityAssocType(TaxAuthorityAssocType)
 	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getTaxAuthorityAssoc_TaxAuthorityAssocType()
-	 * @model keys="taxAuthorityAssocTypeId"
+	 * @model
 	 * @generated
 	 */
 	TaxAuthorityAssocType getTaxAuthorityAssocType();

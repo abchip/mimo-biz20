@@ -36,7 +36,7 @@ public interface ProductCategoryTypeAttr extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Product Category Type</em>' reference.
 	 * @see #setProductCategoryType(ProductCategoryType)
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryTypeAttr_ProductCategoryType()
-	 * @model keys="productCategoryTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

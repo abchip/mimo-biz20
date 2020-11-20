@@ -46,7 +46,7 @@ public interface PersonTraining extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Person)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPersonTraining_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -69,7 +69,7 @@ public interface PersonTraining extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Training Class Type</em>' reference.
 	 * @see #setTrainingClassType(TrainingClassType)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPersonTraining_TrainingClassType()
-	 * @model keys="trainingClassTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -118,7 +118,7 @@ public interface PersonTraining extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Approver</em>' reference.
 	 * @see #setApprover(Person)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPersonTraining_Approver()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Person getApprover();
@@ -219,7 +219,7 @@ public interface PersonTraining extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Training Request</em>' reference.
 	 * @see #setTrainingRequest(TrainingRequest)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPersonTraining_TrainingRequest()
-	 * @model keys="trainingRequestId"
+	 * @model
 	 * @generated
 	 */
 	TrainingRequest getTrainingRequest();
@@ -241,7 +241,7 @@ public interface PersonTraining extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPersonTraining_WorkEffort()
-	 * @model keys="workEffortId"
+	 * @model
 	 * @generated
 	 */
 	WorkEffort getWorkEffort();

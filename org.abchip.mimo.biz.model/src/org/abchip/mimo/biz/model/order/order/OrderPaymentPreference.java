@@ -96,7 +96,7 @@ public interface OrderPaymentPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Created By User Login</em>' reference.
 	 * @see #setCreatedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderPaymentPreference_CreatedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getCreatedByUserLogin();
@@ -144,8 +144,7 @@ public interface OrderPaymentPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Fin Account</em>' reference.
 	 * @see #setFinAccount(FinAccount)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderPaymentPreference_FinAccount()
-	 * @model keys="finAccountId"
-	 *        annotation="mimo-ent-slot help='For paying with a fin account instead of payment method on file'"
+	 * @model annotation="mimo-ent-slot help='For paying with a fin account instead of payment method on file'"
 	 * @generated
 	 */
 	FinAccount getFinAccount();
@@ -319,7 +318,7 @@ public interface OrderPaymentPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderPaymentPreference_Order()
-	 * @model keys="orderId"
+	 * @model
 	 * @generated
 	 */
 	OrderHeader getOrder();
@@ -389,7 +388,7 @@ public interface OrderPaymentPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Payment Method</em>' reference.
 	 * @see #setPaymentMethod(PaymentMethod)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderPaymentPreference_PaymentMethod()
-	 * @model keys="paymentMethodId"
+	 * @model
 	 * @generated
 	 */
 	PaymentMethod getPaymentMethod();
@@ -411,7 +410,7 @@ public interface OrderPaymentPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Payment Method Type</em>' reference.
 	 * @see #setPaymentMethodType(PaymentMethodType)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderPaymentPreference_PaymentMethodType()
-	 * @model keys="paymentMethodTypeId"
+	 * @model
 	 * @generated
 	 */
 	PaymentMethodType getPaymentMethodType();
@@ -508,7 +507,7 @@ public interface OrderPaymentPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Price Purpose</em>' reference.
 	 * @see #setProductPricePurpose(ProductPricePurpose)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderPaymentPreference_ProductPricePurpose()
-	 * @model keys="productPricePurposeId"
+	 * @model
 	 * @generated
 	 */
 	ProductPricePurpose getProductPricePurpose();
@@ -583,7 +582,7 @@ public interface OrderPaymentPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderPaymentPreference_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

@@ -87,7 +87,7 @@ public interface TermType extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(TermType)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getTermType_ParentType()
-	 * @model keys="termTypeId"
+	 * @model
 	 * @generated
 	 */
 	TermType getParentType();

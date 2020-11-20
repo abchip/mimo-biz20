@@ -41,7 +41,7 @@ public interface ProductCostComponentCalc extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getProductCostComponentCalc_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface ProductCostComponentCalc extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Cost Component Type</em>' reference.
 	 * @see #setCostComponentType(CostComponentType)
 	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getProductCostComponentCalc_CostComponentType()
-	 * @model keys="costComponentTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -114,7 +114,7 @@ public interface ProductCostComponentCalc extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Cost Component Calc</em>' reference.
 	 * @see #setCostComponentCalc(CostComponentCalc)
 	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getProductCostComponentCalc_CostComponentCalc()
-	 * @model keys="costComponentCalcId"
+	 * @model
 	 * @generated
 	 */
 	CostComponentCalc getCostComponentCalc();

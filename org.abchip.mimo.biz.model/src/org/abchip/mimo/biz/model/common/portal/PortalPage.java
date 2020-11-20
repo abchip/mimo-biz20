@@ -72,8 +72,7 @@ public interface PortalPage extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Help Content</em>' reference.
 	 * @see #setHelpContent(Content)
 	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortalPage_HelpContent()
-	 * @model keys="contentId"
-	 *        annotation="mimo-ent-slot help='Used to give contentId which will be shown when help on this page will be called'"
+	 * @model annotation="mimo-ent-slot help='Used to give contentId which will be shown when help on this page will be called'"
 	 * @generated
 	 */
 	Content getHelpContent();
@@ -148,8 +147,7 @@ public interface PortalPage extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Portal Page</em>' reference.
 	 * @see #setParentPortalPage(PortalPage)
 	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortalPage_ParentPortalPage()
-	 * @model keys="portalPageId"
-	 *        annotation="mimo-ent-slot help='the parent this page is belonging to, normally the startpage of the portal page group'"
+	 * @model annotation="mimo-ent-slot help='the parent this page is belonging to, normally the startpage of the portal page group'"
 	 * @generated
 	 */
 	PortalPage getParentPortalPage();
@@ -209,7 +207,7 @@ public interface PortalPage extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Security Group</em>' reference.
 	 * @see #setSecurityGroup(SecurityGroup)
 	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortalPage_SecurityGroup()
-	 * @model keys="groupId"
+	 * @model
 	 * @generated
 	 */
 	SecurityGroup getSecurityGroup();

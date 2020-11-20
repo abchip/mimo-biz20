@@ -36,7 +36,7 @@ public interface PostalAddressBoundary extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Contact Mech</em>' reference.
 	 * @see #setContactMech(PostalAddress)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddressBoundary_ContactMech()
-	 * @model keys="contactMechId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface PostalAddressBoundary extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Geo</em>' reference.
 	 * @see #setGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddressBoundary_Geo()
-	 * @model keys="geoId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

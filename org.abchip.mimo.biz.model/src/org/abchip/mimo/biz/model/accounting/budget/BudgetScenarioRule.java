@@ -38,7 +38,7 @@ public interface BudgetScenarioRule extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Budget Scenario</em>' reference.
 	 * @see #setBudgetScenario(BudgetScenario)
 	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetScenarioRule_BudgetScenario()
-	 * @model keys="budgetScenarioId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface BudgetScenarioRule extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Budget Item Type</em>' reference.
 	 * @see #setBudgetItemType(BudgetItemType)
 	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetScenarioRule_BudgetItemType()
-	 * @model keys="budgetItemTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

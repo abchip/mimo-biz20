@@ -97,7 +97,7 @@ public interface Timesheet extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheet_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -119,7 +119,7 @@ public interface Timesheet extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheet_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -194,7 +194,7 @@ public interface Timesheet extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Approved By User Login</em>' reference.
 	 * @see #setApprovedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheet_ApprovedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getApprovedByUserLogin();
@@ -216,7 +216,7 @@ public interface Timesheet extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Client Party</em>' reference.
 	 * @see #setClientParty(Party)
 	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheet_ClientParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getClientParty();

@@ -39,7 +39,7 @@ public interface PaymentGroupMember extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Payment Group</em>' reference.
 	 * @see #setPaymentGroup(PaymentGroup)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGroupMember_PaymentGroup()
-	 * @model keys="paymentGroupId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface PaymentGroupMember extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Payment</em>' reference.
 	 * @see #setPayment(Payment)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGroupMember_Payment()
-	 * @model keys="paymentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

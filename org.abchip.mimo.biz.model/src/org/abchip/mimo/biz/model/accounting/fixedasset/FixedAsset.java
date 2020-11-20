@@ -128,7 +128,7 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * @return the value of the '<em>Calendar</em>' reference.
 	 * @see #setCalendar(TechDataCalendar)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_Calendar()
-	 * @model keys="calendarId"
+	 * @model
 	 * @generated
 	 */
 	TechDataCalendar getCalendar();
@@ -150,7 +150,7 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * @return the value of the '<em>Class Enum</em>' reference.
 	 * @see #setClassEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_ClassEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getClassEnum();
@@ -315,7 +315,7 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * @return the value of the '<em>Fixed Asset Geo Points</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_FixedAssetGeoPoints()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<FixedAssetGeoPoint> getFixedAssetGeoPoints();
@@ -390,7 +390,7 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * @return the value of the '<em>Fixed Asset Std Costs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_FixedAssetStdCosts()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<FixedAssetStdCost> getFixedAssetStdCosts();
@@ -402,7 +402,7 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * @return the value of the '<em>Fixed Asset Type</em>' reference.
 	 * @see #setFixedAssetType(FixedAssetType)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_FixedAssetType()
-	 * @model keys="fixedAssetTypeId"
+	 * @model
 	 * @generated
 	 */
 	FixedAssetType getFixedAssetType();
@@ -424,7 +424,7 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * @return the value of the '<em>Instance Of Product</em>' reference.
 	 * @see #setInstanceOfProduct(Product)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_InstanceOfProduct()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getInstanceOfProduct();
@@ -446,7 +446,7 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * @return the value of the '<em>Located At Facility</em>' reference.
 	 * @see #setLocatedAtFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_LocatedAtFacility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getLocatedAtFacility();
@@ -494,7 +494,7 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * @return the value of the '<em>Parent Fixed Asset</em>' reference.
 	 * @see #setParentFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_ParentFixedAsset()
-	 * @model keys="fixedAssetId"
+	 * @model
 	 * @generated
 	 */
 	FixedAsset getParentFixedAsset();
@@ -516,7 +516,7 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -616,7 +616,7 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_RoleType()
-	 * @model keys="roleTypeId"
+	 * @model
 	 * @generated
 	 */
 	RoleType getRoleType();
@@ -690,7 +690,7 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * @return the value of the '<em>Uom</em>' reference.
 	 * @see #setUom(Uom)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_Uom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getUom();
@@ -739,7 +739,7 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * @return the value of the '<em>Acquire Order</em>' reference.
 	 * @see #setAcquireOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_AcquireOrder()
-	 * @model keys="orderId"
+	 * @model
 	 * @generated
 	 */
 	OrderHeader getAcquireOrder();

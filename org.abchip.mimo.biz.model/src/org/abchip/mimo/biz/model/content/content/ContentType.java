@@ -130,7 +130,7 @@ public interface ContentType extends EntityType<Content>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(ContentType)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentType_ParentType()
-	 * @model keys="contentTypeId"
+	 * @model
 	 * @generated
 	 */
 	ContentType getParentType();

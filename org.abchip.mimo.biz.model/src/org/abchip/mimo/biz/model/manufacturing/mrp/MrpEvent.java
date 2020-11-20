@@ -45,7 +45,7 @@ public interface MrpEvent extends EntityTyped<MrpEventType>, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.manufacturing.mrp.MrpPackage#getMrpEvent_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -68,7 +68,7 @@ public interface MrpEvent extends EntityTyped<MrpEventType>, EntityInfo {
 	 * @return the value of the '<em>Mrp Event Type</em>' reference.
 	 * @see #setMrpEventType(MrpEventType)
 	 * @see org.abchip.mimo.biz.model.manufacturing.mrp.MrpPackage#getMrpEvent_MrpEventType()
-	 * @model keys="mrpEventTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -172,7 +172,7 @@ public interface MrpEvent extends EntityTyped<MrpEventType>, EntityInfo {
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.manufacturing.mrp.MrpPackage#getMrpEvent_Facility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getFacility();

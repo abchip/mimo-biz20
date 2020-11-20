@@ -136,7 +136,7 @@ public interface FinAccountTrans extends EntityTyped<FinAccountTransType>, Entit
 	 * @return the value of the '<em>Fin Account</em>' reference.
 	 * @see #setFinAccount(FinAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_FinAccount()
-	 * @model keys="finAccountId"
+	 * @model
 	 * @generated
 	 */
 	FinAccount getFinAccount();
@@ -223,7 +223,7 @@ public interface FinAccountTrans extends EntityTyped<FinAccountTransType>, Entit
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -245,7 +245,7 @@ public interface FinAccountTrans extends EntityTyped<FinAccountTransType>, Entit
 	 * @return the value of the '<em>Payment</em>' reference.
 	 * @see #setPayment(Payment)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_Payment()
-	 * @model keys="paymentId"
+	 * @model
 	 * @generated
 	 */
 	Payment getPayment();
@@ -267,7 +267,7 @@ public interface FinAccountTrans extends EntityTyped<FinAccountTransType>, Entit
 	 * @return the value of the '<em>Performed By Party</em>' reference.
 	 * @see #setPerformedByParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_PerformedByParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getPerformedByParty();
@@ -289,7 +289,7 @@ public interface FinAccountTrans extends EntityTyped<FinAccountTransType>, Entit
 	 * @return the value of the '<em>Reason Enum</em>' reference.
 	 * @see #setReasonEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_ReasonEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getReasonEnum();
@@ -311,7 +311,7 @@ public interface FinAccountTrans extends EntityTyped<FinAccountTransType>, Entit
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -359,7 +359,7 @@ public interface FinAccountTrans extends EntityTyped<FinAccountTransType>, Entit
 	 * @return the value of the '<em>Fin Account Trans Type</em>' reference.
 	 * @see #setFinAccountTransType(FinAccountTransType)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_FinAccountTransType()
-	 * @model keys="finAccountTransTypeId"
+	 * @model
 	 * @generated
 	 */
 	FinAccountTransType getFinAccountTransType();
@@ -381,7 +381,7 @@ public interface FinAccountTrans extends EntityTyped<FinAccountTransType>, Entit
 	 * @return the value of the '<em>Gl Reconciliation</em>' reference.
 	 * @see #setGlReconciliation(GlReconciliation)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTrans_GlReconciliation()
-	 * @model keys="glReconciliationId"
+	 * @model
 	 * @generated
 	 */
 	GlReconciliation getGlReconciliation();

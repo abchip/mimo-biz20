@@ -87,7 +87,7 @@ public interface QuoteType extends EntityType<Quote>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(QuoteType)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteType_ParentType()
-	 * @model keys="quoteTypeId"
+	 * @model
 	 * @generated
 	 */
 	QuoteType getParentType();

@@ -42,7 +42,7 @@ public interface TrackingCodeOrder extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeOrder_Order()
-	 * @model keys="orderId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -65,7 +65,7 @@ public interface TrackingCodeOrder extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Tracking Code Type</em>' reference.
 	 * @see #setTrackingCodeType(TrackingCodeType)
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeOrder_TrackingCodeType()
-	 * @model keys="trackingCodeTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -184,7 +184,7 @@ public interface TrackingCodeOrder extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Tracking Code</em>' reference.
 	 * @see #setTrackingCode(TrackingCode)
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeOrder_TrackingCode()
-	 * @model keys="trackingCodeId"
+	 * @model
 	 * @generated
 	 */
 	TrackingCode getTrackingCode();

@@ -39,7 +39,7 @@ public interface ProductOrderItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getProductOrderItem_Order()
-	 * @model keys="orderId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface ProductOrderItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Engagement</em>' reference.
 	 * @see #setEngagement(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getProductOrderItem_Engagement()
-	 * @model keys="orderId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -141,7 +141,7 @@ public interface ProductOrderItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getProductOrderItem_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();

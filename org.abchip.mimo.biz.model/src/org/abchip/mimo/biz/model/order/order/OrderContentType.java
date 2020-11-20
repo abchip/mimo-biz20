@@ -85,7 +85,7 @@ public interface OrderContentType extends EntityType<OrderContent>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(OrderContentType)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderContentType_ParentType()
-	 * @model keys="orderContentTypeId"
+	 * @model
 	 * @generated
 	 */
 	OrderContentType getParentType();

@@ -36,7 +36,7 @@ public interface DataResourcePurpose extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Data Resource</em>' reference.
 	 * @see #setDataResource(DataResource)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourcePurpose_DataResource()
-	 * @model keys="dataResourceId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface DataResourcePurpose extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Content Purpose Type</em>' reference.
 	 * @see #setContentPurposeType(ContentPurposeType)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourcePurpose_ContentPurposeType()
-	 * @model keys="contentPurposeTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

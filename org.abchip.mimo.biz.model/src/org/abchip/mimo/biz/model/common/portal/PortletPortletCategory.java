@@ -35,7 +35,7 @@ public interface PortletPortletCategory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Portal Portlet</em>' reference.
 	 * @see #setPortalPortlet(PortalPortlet)
 	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortletPortletCategory_PortalPortlet()
-	 * @model keys="portalPortletId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -58,7 +58,7 @@ public interface PortletPortletCategory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Portlet Category</em>' reference.
 	 * @see #setPortletCategory(PortletCategory)
 	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortletPortletCategory_PortletCategory()
-	 * @model keys="portletCategoryId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

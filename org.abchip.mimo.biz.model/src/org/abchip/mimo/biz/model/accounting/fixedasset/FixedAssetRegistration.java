@@ -42,7 +42,7 @@ public interface FixedAssetRegistration extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Fixed Asset</em>' reference.
 	 * @see #setFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetRegistration_FixedAsset()
-	 * @model keys="fixedAssetId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -92,7 +92,7 @@ public interface FixedAssetRegistration extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Gov Agency Party</em>' reference.
 	 * @see #setGovAgencyParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetRegistration_GovAgencyParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getGovAgencyParty();

@@ -8,8 +8,8 @@
 package org.abchip.mimo.biz.model.party.party;
 
 import java.util.Date;
+import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
-import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +30,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * @model
  * @generated
  */
-public interface PartyClassification extends EntityTyped<PartyClassificationType>, EntityInfo {
+public interface PartyClassification extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Party</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -38,7 +38,7 @@ public interface PartyClassification extends EntityTyped<PartyClassificationType
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyClassification_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface PartyClassification extends EntityTyped<PartyClassificationType
 	 * @return the value of the '<em>Party Classification Group</em>' reference.
 	 * @see #setPartyClassificationGroup(PartyClassificationGroup)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyClassification_PartyClassificationGroup()
-	 * @model keys="partyClassificationGroupId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

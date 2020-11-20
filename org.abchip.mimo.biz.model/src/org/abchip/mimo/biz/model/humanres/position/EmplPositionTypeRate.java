@@ -41,7 +41,7 @@ public interface EmplPositionTypeRate extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Empl Position Type</em>' reference.
 	 * @see #setEmplPositionType(EmplPositionType)
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionTypeRate_EmplPositionType()
-	 * @model keys="emplPositionTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface EmplPositionTypeRate extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Rate Type</em>' reference.
 	 * @see #setRateType(RateType)
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionTypeRate_RateType()
-	 * @model keys="rateTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

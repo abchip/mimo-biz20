@@ -130,7 +130,7 @@ public interface StatusItem extends EntityTyped<StatusType>, EntityInfo {
 	 * @return the value of the '<em>Status Type</em>' reference.
 	 * @see #setStatusType(StatusType)
 	 * @see org.abchip.mimo.biz.model.common.status.StatusPackage#getStatusItem_StatusType()
-	 * @model keys="statusTypeId"
+	 * @model
 	 * @generated
 	 */
 	StatusType getStatusType();

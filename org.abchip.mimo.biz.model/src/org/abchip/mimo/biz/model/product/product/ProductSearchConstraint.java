@@ -44,7 +44,7 @@ public interface ProductSearchConstraint extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Product Search Result</em>' reference.
 	 * @see #setProductSearchResult(ProductSearchResult)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductSearchConstraint_ProductSearchResult()
-	 * @model keys="productSearchResultId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

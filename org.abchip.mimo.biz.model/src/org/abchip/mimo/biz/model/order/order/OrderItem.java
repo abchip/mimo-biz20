@@ -90,7 +90,7 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_Order()
-	 * @model keys="orderId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -243,8 +243,7 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	 * @return the value of the '<em>Change By User Login</em>' reference.
 	 * @see #setChangeByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_ChangeByUserLogin()
-	 * @model keys="userLoginId"
-	 *        annotation="mimo-ent-slot audit='true'"
+	 * @model annotation="mimo-ent-slot audit='true'"
 	 * @generated
 	 */
 	UserLogin getChangeByUserLogin();
@@ -374,7 +373,7 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	 * @return the value of the '<em>Dont Cancel Set User Login</em>' reference.
 	 * @see #setDontCancelSetUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_DontCancelSetUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getDontCancelSetUserLogin();
@@ -474,7 +473,7 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	 * @return the value of the '<em>From Inventory Item</em>' reference.
 	 * @see #setFromInventoryItem(InventoryItem)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_FromInventoryItem()
-	 * @model keys="inventoryItemId"
+	 * @model
 	 * @generated
 	 */
 	InventoryItem getFromInventoryItem();
@@ -614,7 +613,7 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	 * @return the value of the '<em>Order Item Type</em>' reference.
 	 * @see #setOrderItemType(OrderItemType)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_OrderItemType()
-	 * @model keys="orderItemTypeId"
+	 * @model
 	 * @generated
 	 */
 	OrderItemType getOrderItemType();
@@ -636,8 +635,7 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	 * @return the value of the '<em>Override Gl Account</em>' reference.
 	 * @see #setOverrideGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_OverrideGlAccount()
-	 * @model keys="glAccountId"
-	 *        annotation="mimo-ent-slot help='Used to specify the override or actual glAccountId used for the adjustment, avoids problems if configuration changes after initial posting, etc.'"
+	 * @model annotation="mimo-ent-slot help='Used to specify the override or actual glAccountId used for the adjustment, avoids problems if configuration changes after initial posting, etc.'"
 	 * @generated
 	 */
 	GlAccount getOverrideGlAccount();
@@ -713,7 +711,7 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();
@@ -866,7 +864,7 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	 * @return the value of the '<em>Recurring Freq Uom</em>' reference.
 	 * @see #setRecurringFreqUom(Uom)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_RecurringFreqUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getRecurringFreqUom();
@@ -914,7 +912,7 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	 * @return the value of the '<em>Sales Opportunity</em>' reference.
 	 * @see #setSalesOpportunity(SalesOpportunity)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_SalesOpportunity()
-	 * @model keys="salesOpportunityId"
+	 * @model
 	 * @generated
 	 */
 	SalesOpportunity getSalesOpportunity();
@@ -1066,7 +1064,7 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -1140,7 +1138,7 @@ public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	 * @return the value of the '<em>Sync Status</em>' reference.
 	 * @see #setSyncStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_SyncStatus()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getSyncStatus();

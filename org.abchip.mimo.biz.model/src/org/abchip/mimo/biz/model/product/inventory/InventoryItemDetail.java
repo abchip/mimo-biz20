@@ -62,7 +62,7 @@ public interface InventoryItemDetail extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Inventory Item</em>' reference.
 	 * @see #setInventoryItem(InventoryItem)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemDetail_InventoryItem()
-	 * @model keys="inventoryItemId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -215,7 +215,7 @@ public interface InventoryItemDetail extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Item Issuance</em>' reference.
 	 * @see #setItemIssuance(ItemIssuance)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemDetail_ItemIssuance()
-	 * @model keys="itemIssuanceId"
+	 * @model
 	 * @generated
 	 */
 	ItemIssuance getItemIssuance();
@@ -343,7 +343,7 @@ public interface InventoryItemDetail extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Physical Inventory</em>' reference.
 	 * @see #setPhysicalInventory(PhysicalInventory)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemDetail_PhysicalInventory()
-	 * @model keys="physicalInventoryId"
+	 * @model
 	 * @generated
 	 */
 	PhysicalInventory getPhysicalInventory();
@@ -391,7 +391,7 @@ public interface InventoryItemDetail extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Reason Enum</em>' reference.
 	 * @see #setReasonEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemDetail_ReasonEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getReasonEnum();
@@ -413,7 +413,7 @@ public interface InventoryItemDetail extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Receipt</em>' reference.
 	 * @see #setReceipt(ShipmentReceipt)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemDetail_Receipt()
-	 * @model keys="receiptId"
+	 * @model
 	 * @generated
 	 */
 	ShipmentReceipt getReceipt();
@@ -591,7 +591,7 @@ public interface InventoryItemDetail extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemDetail_WorkEffort()
-	 * @model keys="workEffortId"
+	 * @model
 	 * @generated
 	 */
 	WorkEffort getWorkEffort();

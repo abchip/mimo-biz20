@@ -45,7 +45,7 @@ public interface ProductConfig extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProductConfig_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -68,7 +68,7 @@ public interface ProductConfig extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Config Item</em>' reference.
 	 * @see #setConfigItem(ProductConfigItem)
 	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProductConfig_ConfigItem()
-	 * @model keys="configItemId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -109,7 +109,7 @@ public interface Quote extends EntityTyped<QuoteType>, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuote_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -131,7 +131,7 @@ public interface Quote extends EntityTyped<QuoteType>, EntityInfo {
 	 * @return the value of the '<em>Product Store</em>' reference.
 	 * @see #setProductStore(ProductStore)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuote_ProductStore()
-	 * @model keys="productStoreId"
+	 * @model
 	 * @generated
 	 */
 	ProductStore getProductStore();
@@ -216,7 +216,7 @@ public interface Quote extends EntityTyped<QuoteType>, EntityInfo {
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuote_CurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getCurrencyUom();
@@ -276,7 +276,7 @@ public interface Quote extends EntityTyped<QuoteType>, EntityInfo {
 	 * @return the value of the '<em>Quote Type</em>' reference.
 	 * @see #setQuoteType(QuoteType)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuote_QuoteType()
-	 * @model keys="quoteTypeId"
+	 * @model
 	 * @generated
 	 */
 	QuoteType getQuoteType();
@@ -310,7 +310,7 @@ public interface Quote extends EntityTyped<QuoteType>, EntityInfo {
 	 * @return the value of the '<em>Sales Channel Enum</em>' reference.
 	 * @see #setSalesChannelEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuote_SalesChannelEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getSalesChannelEnum();
@@ -332,7 +332,7 @@ public interface Quote extends EntityTyped<QuoteType>, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuote_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

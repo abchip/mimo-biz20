@@ -85,7 +85,7 @@ public interface PerfReviewItemType extends EntityType<PerfReviewItem>, EntityIn
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(PerfReviewItemType)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReviewItemType_ParentType()
-	 * @model keys="perfReviewItemTypeId"
+	 * @model
 	 * @generated
 	 */
 	PerfReviewItemType getParentType();

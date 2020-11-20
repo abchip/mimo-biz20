@@ -37,7 +37,7 @@ public interface AgreementFacilityAppl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Agreement</em>' reference.
 	 * @see #setAgreement(Agreement)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementFacilityAppl_Agreement()
-	 * @model keys="agreementId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -60,7 +60,7 @@ public interface AgreementFacilityAppl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementFacilityAppl_Facility()
-	 * @model keys="facilityId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

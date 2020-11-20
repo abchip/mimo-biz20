@@ -119,8 +119,7 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	 * @return the value of the '<em>Default Dimension Uom</em>' reference.
 	 * @see #setDefaultDimensionUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_DefaultDimensionUom()
-	 * @model keys="uomId"
-	 *        annotation="mimo-ent-slot help='This field store the unit of measurement of dimension (length, width and height)'"
+	 * @model annotation="mimo-ent-slot help='This field store the unit of measurement of dimension (length, width and height)'"
 	 * @generated
 	 */
 	Uom getDefaultDimensionUom();
@@ -142,7 +141,7 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	 * @return the value of the '<em>Default Inventory Item Type</em>' reference.
 	 * @see #setDefaultInventoryItemType(InventoryItemType)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_DefaultInventoryItemType()
-	 * @model keys="inventoryItemTypeId"
+	 * @model
 	 * @generated
 	 */
 	InventoryItemType getDefaultInventoryItemType();
@@ -164,7 +163,7 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	 * @return the value of the '<em>Default Weight Uom</em>' reference.
 	 * @see #setDefaultWeightUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_DefaultWeightUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getDefaultWeightUom();
@@ -225,7 +224,7 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	 * @return the value of the '<em>Facility Contact Mechs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_FacilityContactMechs()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<FacilityContactMech> getFacilityContactMechs();
@@ -238,7 +237,7 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	 * @return the value of the '<em>Facility Contents</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_FacilityContents()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<FacilityContent> getFacilityContents();
@@ -251,7 +250,7 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	 * @return the value of the '<em>Facility Group Members</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_FacilityGroupMembers()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<FacilityGroupMember> getFacilityGroupMembers();
@@ -350,7 +349,7 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	 * @return the value of the '<em>Facility Size Uom</em>' reference.
 	 * @see #setFacilitySizeUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_FacilitySizeUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getFacilitySizeUom();
@@ -372,7 +371,7 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	 * @return the value of the '<em>Facility Type</em>' reference.
 	 * @see #setFacilityType(FacilityType)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_FacilityType()
-	 * @model keys="facilityTypeId"
+	 * @model
 	 * @generated
 	 */
 	FacilityType getFacilityType();
@@ -394,7 +393,7 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	 * @return the value of the '<em>Geo Point</em>' reference.
 	 * @see #setGeoPoint(GeoPoint)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_GeoPoint()
-	 * @model keys="geoPointId"
+	 * @model
 	 * @generated
 	 */
 	GeoPoint getGeoPoint();
@@ -468,7 +467,7 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	 * @return the value of the '<em>Owner Party</em>' reference.
 	 * @see #setOwnerParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_OwnerParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getOwnerParty();
@@ -490,7 +489,7 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	 * @return the value of the '<em>Parent Facility</em>' reference.
 	 * @see #setParentFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_ParentFacility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getParentFacility();
@@ -512,7 +511,7 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	 * @return the value of the '<em>Primary Facility Group</em>' reference.
 	 * @see #setPrimaryFacilityGroup(FacilityGroup)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_PrimaryFacilityGroup()
-	 * @model keys="facilityGroupId"
+	 * @model
 	 * @generated
 	 */
 	FacilityGroup getPrimaryFacilityGroup();
@@ -534,7 +533,7 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	 * @return the value of the '<em>Product Store</em>' reference.
 	 * @see #setProductStore(ProductStore)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_ProductStore()
-	 * @model keys="productStoreId"
+	 * @model
 	 * @generated
 	 */
 	ProductStore getProductStore();

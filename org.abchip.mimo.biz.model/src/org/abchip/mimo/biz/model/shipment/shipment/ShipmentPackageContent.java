@@ -41,7 +41,7 @@ public interface ShipmentPackageContent extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Shipment</em>' reference.
 	 * @see #setShipment(Shipment)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentPackageContent_Shipment()
-	 * @model keys="shipmentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -90,7 +90,7 @@ public interface ShipmentPackageContent extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Sub Product</em>' reference.
 	 * @see #setSubProduct(Product)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentPackageContent_SubProduct()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getSubProduct();

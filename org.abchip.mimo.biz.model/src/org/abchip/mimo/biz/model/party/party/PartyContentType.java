@@ -62,7 +62,7 @@ public interface PartyContentType extends EntityType<PartyContent>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(PartyContentType)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyContentType_ParentType()
-	 * @model keys="partyContentTypeId"
+	 * @model
 	 * @generated
 	 */
 	PartyContentType getParentType();

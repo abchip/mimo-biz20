@@ -2135,10 +2135,8 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 		initEAttribute(getCustRequest_CreatedByUserLogin(), ecorePackage.getEString(), "createdByUserLogin", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustRequest_CreatedDate(), ecorePackage.getEDate(), "createdDate", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCustRequest_CurrencyUom(), theUomPackage.getUom(), null, "currencyUom", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequest_CurrencyUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEReference(getCustRequest_CustRequestAttributes(), this.getCustRequestAttribute(), null, "custRequestAttributes", null, 0, -1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getCustRequest_CustRequestCategory(), this.getCustRequestCategory(), null, "custRequestCategory", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequest_CustRequestCategory().getEKeys().add(this.getCustRequestCategory_CustRequestCategoryId());
 		initEReference(getCustRequest_CustRequestCommEvents(), this.getCustRequestCommEvent(), null, "custRequestCommEvents", null, 0, -1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getCustRequest_CustRequestContents(), this.getCustRequestContent(), null, "custRequestContents", null, 0, -1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustRequest_CustRequestDate(), ecorePackage.getEDate(), "custRequestDate", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2146,32 +2144,24 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 		initEAttribute(getCustRequest_CustRequestName(), ecorePackage.getEString(), "custRequestName", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCustRequest_CustRequestNotes(), this.getCustRequestNote(), null, "custRequestNotes", null, 0, -1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getCustRequest_CustRequestType(), this.getCustRequestType(), null, "custRequestType", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequest_CustRequestType().getEKeys().add(this.getCustRequestType_CustRequestTypeId());
 		initEReference(getCustRequest_CustRequestWorkEfforts(), this.getCustRequestWorkEffort(), null, "custRequestWorkEfforts", null, 0, -1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustRequest_Description(), ecorePackage.getEString(), "description", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCustRequest_FromParty(), thePartyPackage_1.getParty(), null, "fromParty", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequest_FromParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getCustRequest_FulfillContactMech(), theContactPackage_1.getContactMech(), null, "fulfillContactMech", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequest_FulfillContactMech().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
 		initEAttribute(getCustRequest_InternalComment(), ecorePackage.getEString(), "internalComment", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustRequest_LastModifiedByUserLogin(), ecorePackage.getEString(), "lastModifiedByUserLogin", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustRequest_LastModifiedDate(), ecorePackage.getEDate(), "lastModifiedDate", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCustRequest_MaximumAmountUom(), theUomPackage.getUom(), null, "maximumAmountUom", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequest_MaximumAmountUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEAttribute(getCustRequest_OpenDateTime(), ecorePackage.getEDate(), "openDateTime", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustRequest_Priority(), ecorePackage.getELong(), "priority", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCustRequest_ProductStore(), theStorePackage.getProductStore(), null, "productStore", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequest_ProductStore().getEKeys().add(theStorePackage.getProductStore_ProductStoreId());
 		initEAttribute(getCustRequest_Reason(), ecorePackage.getEString(), "reason", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustRequest_ResponseRequiredDate(), ecorePackage.getEDate(), "responseRequiredDate", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCustRequest_SalesChannelEnum(), theEnumPackage.getEnumeration(), null, "salesChannelEnum", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequest_SalesChannelEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEReference(getCustRequest_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, CustRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequest_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 
 		initEClass(custRequestAttributeEClass, CustRequestAttribute.class, "CustRequestAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustRequestAttribute_CustRequest(), this.getCustRequest(), null, "custRequest", null, 1, 1, CustRequestAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestAttribute_CustRequest().getEKeys().add(this.getCustRequest_CustRequestId());
 		initEAttribute(getCustRequestAttribute_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, CustRequestAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustRequestAttribute_AttrDescription(), ecorePackage.getEString(), "attrDescription", null, 0, 1, CustRequestAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustRequestAttribute_AttrValue(), ecorePackage.getEString(), "attrValue", null, 0, 1, CustRequestAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2179,35 +2169,27 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 		initEClass(custRequestCategoryEClass, CustRequestCategory.class, "CustRequestCategory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCustRequestCategory_CustRequestCategoryId(), ecorePackage.getEString(), "custRequestCategoryId", null, 1, 1, CustRequestCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCustRequestCategory_CustRequestType(), this.getCustRequestType(), null, "custRequestType", null, 0, 1, CustRequestCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestCategory_CustRequestType().getEKeys().add(this.getCustRequestType_CustRequestTypeId());
 		initEAttribute(getCustRequestCategory_Description(), ecorePackage.getEString(), "description", null, 0, 1, CustRequestCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(custRequestCommEventEClass, CustRequestCommEvent.class, "CustRequestCommEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustRequestCommEvent_CustRequest(), this.getCustRequest(), null, "custRequest", null, 1, 1, CustRequestCommEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestCommEvent_CustRequest().getEKeys().add(this.getCustRequest_CustRequestId());
 		initEReference(getCustRequestCommEvent_CommunicationEvent(), theCommunicationPackage.getCommunicationEvent(), null, "communicationEvent", null, 1, 1, CustRequestCommEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestCommEvent_CommunicationEvent().getEKeys().add(theCommunicationPackage.getCommunicationEvent_CommunicationEventId());
 
 		initEClass(custRequestContentEClass, CustRequestContent.class, "CustRequestContent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustRequestContent_CustRequest(), this.getCustRequest(), null, "custRequest", null, 1, 1, CustRequestContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestContent_CustRequest().getEKeys().add(this.getCustRequest_CustRequestId());
 		initEReference(getCustRequestContent_Content(), theContentPackage.getContent(), null, "content", null, 1, 1, CustRequestContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestContent_Content().getEKeys().add(theContentPackage.getContent_ContentId());
 		initEAttribute(getCustRequestContent_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, CustRequestContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustRequestContent_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, CustRequestContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(custRequestItemEClass, CustRequestItem.class, "CustRequestItem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustRequestItem_CustRequest(), this.getCustRequest(), null, "custRequest", null, 1, 1, CustRequestItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestItem_CustRequest().getEKeys().add(this.getCustRequest_CustRequestId());
 		initEAttribute(getCustRequestItem_CustRequestItemSeqId(), ecorePackage.getEString(), "custRequestItemSeqId", null, 1, 1, CustRequestItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustRequestItem_ConfigId(), ecorePackage.getEString(), "configId", null, 0, 1, CustRequestItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCustRequestItem_CustRequestResolution(), this.getCustRequestResolution(), null, "custRequestResolution", null, 0, 1, CustRequestItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestItem_CustRequestResolution().getEKeys().add(this.getCustRequestResolution_CustRequestResolutionId());
 		initEAttribute(getCustRequestItem_Description(), ecorePackage.getEString(), "description", null, 0, 1, CustRequestItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustRequestItem_MaximumAmount(), ecorePackage.getEBigDecimal(), "maximumAmount", null, 0, 1, CustRequestItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustRequestItem_Priority(), ecorePackage.getELong(), "priority", null, 0, 1, CustRequestItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCustRequestItem_Product(), theProductPackage.getProduct(), null, "product", null, 0, 1, CustRequestItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestItem_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEAttribute(getCustRequestItem_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, CustRequestItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustRequestItem_RequiredByDate(), ecorePackage.getEDate(), "requiredByDate", null, 0, 1, CustRequestItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustRequestItem_ReservLength(), ecorePackage.getEBigDecimal(), "reservLength", null, 0, 1, CustRequestItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2216,7 +2198,6 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 		initEAttribute(getCustRequestItem_SelectedAmount(), ecorePackage.getEBigDecimal(), "selectedAmount", null, 0, 1, CustRequestItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustRequestItem_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, CustRequestItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCustRequestItem_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, CustRequestItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestItem_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getCustRequestItem_Story(), ecorePackage.getEString(), "story", null, 0, 1, CustRequestItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(custRequestItemNoteEClass, CustRequestItemNote.class, "CustRequestItemNote", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -2225,40 +2206,30 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 
 		initEClass(custRequestItemWorkEffortEClass, CustRequestItemWorkEffort.class, "CustRequestItemWorkEffort", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustRequestItemWorkEffort_CustRequest(), this.getCustRequest(), null, "custRequest", null, 1, 1, CustRequestItemWorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestItemWorkEffort_CustRequest().getEKeys().add(this.getCustRequest_CustRequestId());
 		initEReference(getCustRequestItemWorkEffort_WorkEffort(), theWorkeffortPackage.getWorkEffort(), null, "workEffort", null, 1, 1, CustRequestItemWorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestItemWorkEffort_WorkEffort().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
 		initEAttribute(getCustRequestItemWorkEffort_CustRequestItemSeqId(), ecorePackage.getEString(), "custRequestItemSeqId", null, 1, 1, CustRequestItemWorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(custRequestNoteEClass, CustRequestNote.class, "CustRequestNote", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustRequestNote_CustRequest(), this.getCustRequest(), null, "custRequest", null, 1, 1, CustRequestNote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestNote_CustRequest().getEKeys().add(this.getCustRequest_CustRequestId());
 
 		initEClass(custRequestPartyEClass, CustRequestParty.class, "CustRequestParty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustRequestParty_CustRequest(), this.getCustRequest(), null, "custRequest", null, 1, 1, CustRequestParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestParty_CustRequest().getEKeys().add(this.getCustRequest_CustRequestId());
 		initEReference(getCustRequestParty_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, CustRequestParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestParty_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getCustRequestParty_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 1, 1, CustRequestParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestParty_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEAttribute(getCustRequestParty_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, CustRequestParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustRequestParty_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, CustRequestParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(custRequestResolutionEClass, CustRequestResolution.class, "CustRequestResolution", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCustRequestResolution_CustRequestResolutionId(), ecorePackage.getEString(), "custRequestResolutionId", null, 1, 1, CustRequestResolution.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCustRequestResolution_CustRequestType(), this.getCustRequestType(), null, "custRequestType", null, 0, 1, CustRequestResolution.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestResolution_CustRequestType().getEKeys().add(this.getCustRequestType_CustRequestTypeId());
 		initEAttribute(getCustRequestResolution_Description(), ecorePackage.getEString(), "description", null, 0, 1, CustRequestResolution.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(custRequestStatusEClass, CustRequestStatus.class, "CustRequestStatus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCustRequestStatus_CustRequestStatusId(), ecorePackage.getEString(), "custRequestStatusId", null, 1, 1, CustRequestStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCustRequestStatus_ChangeByUserLogin(), theLoginPackage.getUserLogin(), null, "changeByUserLogin", null, 0, 1, CustRequestStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestStatus_ChangeByUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEReference(getCustRequestStatus_CustRequest(), this.getCustRequest(), null, "custRequest", null, 0, 1, CustRequestStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestStatus_CustRequest().getEKeys().add(this.getCustRequest_CustRequestId());
 		initEAttribute(getCustRequestStatus_CustRequestItemSeqId(), ecorePackage.getEString(), "custRequestItemSeqId", null, 0, 1, CustRequestStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCustRequestStatus_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, CustRequestStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestStatus_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getCustRequestStatus_StatusDate(), ecorePackage.getEDate(), "statusDate", null, 0, 1, CustRequestStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(custRequestTypeEClass, CustRequestType.class, "CustRequestType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -2267,30 +2238,22 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 		initEAttribute(getCustRequestType_Description(), ecorePackage.getEString(), "description", null, 0, 1, CustRequestType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustRequestType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, CustRequestType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCustRequestType_ParentType(), this.getCustRequestType(), null, "parentType", null, 0, 1, CustRequestType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestType_ParentType().getEKeys().add(this.getCustRequestType_CustRequestTypeId());
 		initEReference(getCustRequestType_Party(), thePartyPackage_1.getParty(), null, "party", null, 0, 1, CustRequestType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestType_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 
 		initEClass(custRequestTypeAttrEClass, CustRequestTypeAttr.class, "CustRequestTypeAttr", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustRequestTypeAttr_CustRequestType(), this.getCustRequestType(), null, "custRequestType", null, 1, 1, CustRequestTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestTypeAttr_CustRequestType().getEKeys().add(this.getCustRequestType_CustRequestTypeId());
 		initEAttribute(getCustRequestTypeAttr_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, CustRequestTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustRequestTypeAttr_Description(), ecorePackage.getEString(), "description", null, 0, 1, CustRequestTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(custRequestWorkEffortEClass, CustRequestWorkEffort.class, "CustRequestWorkEffort", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCustRequestWorkEffort_CustRequest(), this.getCustRequest(), null, "custRequest", null, 1, 1, CustRequestWorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestWorkEffort_CustRequest().getEKeys().add(this.getCustRequest_CustRequestId());
 		initEReference(getCustRequestWorkEffort_WorkEffort(), theWorkeffortPackage.getWorkEffort(), null, "workEffort", null, 1, 1, CustRequestWorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCustRequestWorkEffort_WorkEffort().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
 
 		initEClass(respondingPartyEClass, RespondingParty.class, "RespondingParty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getRespondingParty_CustRequest(), this.getCustRequest(), null, "custRequest", null, 1, 1, RespondingParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRespondingParty_CustRequest().getEKeys().add(this.getCustRequest_CustRequestId());
 		initEReference(getRespondingParty_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, RespondingParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRespondingParty_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getRespondingParty_RespondingPartySeqId(), ecorePackage.getEString(), "respondingPartySeqId", null, 1, 1, RespondingParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getRespondingParty_ContactMech(), theContactPackage_1.getContactMech(), null, "contactMech", null, 0, 1, RespondingParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRespondingParty_ContactMech().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
 		initEAttribute(getRespondingParty_DateSent(), ecorePackage.getEDate(), "dateSent", null, 0, 1, RespondingParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
@@ -2303,8 +2266,8 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 		createMimoentformatAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
-		// mimo-ent-slot-constraint
-		createMimoentslotconstraintAnnotations();
+		// mimo-ent-slot-constraints
+		createMimoentslotconstraintsAnnotations();
 	}
 
 	/**
@@ -2851,13 +2814,13 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 	}
 
 	/**
-	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * Initializes the annotations for <b>mimo-ent-slot-constraints</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createMimoentslotconstraintAnnotations() {
-		String source = "mimo-ent-slot-constraint";
+	protected void createMimoentslotconstraintsAnnotations() {
+		String source = "mimo-ent-slot-constraints";
 		addAnnotation
 		  (getCustRequest_CustRequestContents(),
 		   source,

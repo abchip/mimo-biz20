@@ -943,25 +943,19 @@ public class IssuancePackageImpl extends EPackageImpl implements IssuancePackage
 		initEAttribute(getItemIssuance_CancelQuantity(), ecorePackage.getEBigDecimal(), "cancelQuantity", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getItemIssuance_FixedAssetId(), ecorePackage.getEString(), "fixedAssetId", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getItemIssuance_InventoryItem(), theInventoryPackage.getInventoryItem(), null, "inventoryItem", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getItemIssuance_InventoryItem().getEKeys().add(theInventoryPackage.getInventoryItem_InventoryItemId());
 		initEReference(getItemIssuance_IssuedByUserLogin(), theLoginPackage.getUserLogin(), null, "issuedByUserLogin", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getItemIssuance_IssuedByUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEAttribute(getItemIssuance_IssuedDateTime(), ecorePackage.getEDate(), "issuedDateTime", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getItemIssuance_MaintHistSeqId(), ecorePackage.getEString(), "maintHistSeqId", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getItemIssuance_Order(), theOrderPackage.getOrderHeader(), null, "order", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getItemIssuance_Order().getEKeys().add(theOrderPackage.getOrderHeader_OrderId());
 		initEAttribute(getItemIssuance_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getItemIssuance_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getItemIssuance_ShipGroupSeqId(), ecorePackage.getEString(), "shipGroupSeqId", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getItemIssuance_Shipment(), theShipment_Package.getShipment(), null, "shipment", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getItemIssuance_Shipment().getEKeys().add(theShipment_Package.getShipment_ShipmentId());
 		initEAttribute(getItemIssuance_ShipmentItemSeqId(), ecorePackage.getEString(), "shipmentItemSeqId", null, 0, 1, ItemIssuance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(itemIssuanceRoleEClass, ItemIssuanceRole.class, "ItemIssuanceRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getItemIssuanceRole_ItemIssuance(), this.getItemIssuance(), null, "itemIssuance", null, 1, 1, ItemIssuanceRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getItemIssuanceRole_ItemIssuance().getEKeys().add(this.getItemIssuance_ItemIssuanceId());
 		initEReference(getItemIssuanceRole_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, ItemIssuanceRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getItemIssuanceRole_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getItemIssuanceRole_RoleTypeId(), ecorePackage.getEString(), "roleTypeId", null, 1, 1, ItemIssuanceRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource

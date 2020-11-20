@@ -46,7 +46,7 @@ public interface SurveyQuestionAppl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Survey</em>' reference.
 	 * @see #setSurvey(Survey)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestionAppl_Survey()
-	 * @model keys="surveyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -69,7 +69,7 @@ public interface SurveyQuestionAppl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Survey Question</em>' reference.
 	 * @see #setSurveyQuestion(SurveyQuestion)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestionAppl_SurveyQuestion()
-	 * @model keys="surveyQuestionId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

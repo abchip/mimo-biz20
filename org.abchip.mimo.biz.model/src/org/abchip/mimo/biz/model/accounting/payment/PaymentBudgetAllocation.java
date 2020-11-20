@@ -39,7 +39,7 @@ public interface PaymentBudgetAllocation extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Budget</em>' reference.
 	 * @see #setBudget(Budget)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentBudgetAllocation_Budget()
-	 * @model keys="budgetId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface PaymentBudgetAllocation extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Payment</em>' reference.
 	 * @see #setPayment(Payment)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentBudgetAllocation_Payment()
-	 * @model keys="paymentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -62,7 +62,7 @@ public interface VisualTheme extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Visual Theme Set</em>' reference.
 	 * @see #setVisualThemeSet(VisualThemeSet)
 	 * @see org.abchip.mimo.biz.model.common.theme.ThemePackage#getVisualTheme_VisualThemeSet()
-	 * @model keys="visualThemeSetId"
+	 * @model
 	 * @generated
 	 */
 	VisualThemeSet getVisualThemeSet();

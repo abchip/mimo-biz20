@@ -39,7 +39,7 @@ public interface AgreementItem extends EntityTyped<AgreementItemType>, EntityInf
 	 * @return the value of the '<em>Agreement</em>' reference.
 	 * @see #setAgreement(Agreement)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementItem_Agreement()
-	 * @model keys="agreementId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -88,7 +88,7 @@ public interface AgreementItem extends EntityTyped<AgreementItemType>, EntityInf
 	 * @return the value of the '<em>Agreement Item Type</em>' reference.
 	 * @see #setAgreementItemType(AgreementItemType)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementItem_AgreementItemType()
-	 * @model keys="agreementItemTypeId"
+	 * @model
 	 * @generated
 	 */
 	AgreementItemType getAgreementItemType();

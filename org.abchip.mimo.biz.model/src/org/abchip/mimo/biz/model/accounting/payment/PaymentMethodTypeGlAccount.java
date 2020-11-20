@@ -38,7 +38,7 @@ public interface PaymentMethodTypeGlAccount extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Payment Method Type</em>' reference.
 	 * @see #setPaymentMethodType(PaymentMethodType)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentMethodTypeGlAccount_PaymentMethodType()
-	 * @model keys="paymentMethodTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface PaymentMethodTypeGlAccount extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Organization Party</em>' reference.
 	 * @see #setOrganizationParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentMethodTypeGlAccount_OrganizationParty()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -84,7 +84,7 @@ public interface PaymentMethodTypeGlAccount extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Gl Account</em>' reference.
 	 * @see #setGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentMethodTypeGlAccount_GlAccount()
-	 * @model keys="glAccountId"
+	 * @model
 	 * @generated
 	 */
 	GlAccount getGlAccount();

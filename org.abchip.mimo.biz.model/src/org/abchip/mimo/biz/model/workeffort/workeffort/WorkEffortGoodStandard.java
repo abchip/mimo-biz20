@@ -46,7 +46,7 @@ public interface WorkEffortGoodStandard extends EntityTyped<WorkEffortGoodStanda
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortGoodStandard_WorkEffort()
-	 * @model keys="workEffortId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -69,7 +69,7 @@ public interface WorkEffortGoodStandard extends EntityTyped<WorkEffortGoodStanda
 	 * @return the value of the '<em>Work Effort Good Std Type</em>' reference.
 	 * @see #setWorkEffortGoodStdType(WorkEffortGoodStandardType)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortGoodStandard_WorkEffortGoodStdType()
-	 * @model keys="workEffortGoodStdTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -92,7 +92,7 @@ public interface WorkEffortGoodStandard extends EntityTyped<WorkEffortGoodStanda
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortGoodStandard_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -167,7 +167,7 @@ public interface WorkEffortGoodStandard extends EntityTyped<WorkEffortGoodStanda
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortGoodStandard_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

@@ -37,7 +37,7 @@ public interface UserLoginSecurityQuestion extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Question Enum</em>' reference.
 	 * @see #setQuestionEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLoginSecurityQuestion_QuestionEnum()
-	 * @model keys="enumId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -60,7 +60,7 @@ public interface UserLoginSecurityQuestion extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>User Login</em>' reference.
 	 * @see #setUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLoginSecurityQuestion_UserLogin()
-	 * @model keys="userLoginId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -40,7 +40,7 @@ public interface ValidResponsibility extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Empl Position Type</em>' reference.
 	 * @see #setEmplPositionType(EmplPositionType)
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getValidResponsibility_EmplPositionType()
-	 * @model keys="emplPositionTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface ValidResponsibility extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Responsibility Type</em>' reference.
 	 * @see #setResponsibilityType(ResponsibilityType)
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getValidResponsibility_ResponsibilityType()
-	 * @model keys="responsibilityTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

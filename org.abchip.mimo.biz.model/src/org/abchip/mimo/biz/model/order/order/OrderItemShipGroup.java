@@ -59,7 +59,7 @@ public interface OrderItemShipGroup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_Order()
-	 * @model keys="orderId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -108,7 +108,7 @@ public interface OrderItemShipGroup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Contact Mech</em>' reference.
 	 * @see #setContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_ContactMech()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	ContactMech getContactMech();
@@ -182,7 +182,7 @@ public interface OrderItemShipGroup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_Facility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getFacility();
@@ -326,8 +326,7 @@ public interface OrderItemShipGroup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Shipment Method Type</em>' reference.
 	 * @see #setShipmentMethodType(ShipmentMethodType)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_ShipmentMethodType()
-	 * @model keys="shipmentMethodTypeId"
-	 *        annotation="mimo-ent-slot audit='true'"
+	 * @model annotation="mimo-ent-slot audit='true'"
 	 * @generated
 	 */
 	ShipmentMethodType getShipmentMethodType();
@@ -377,8 +376,7 @@ public interface OrderItemShipGroup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Carrier Party</em>' reference.
 	 * @see #setCarrierParty(Party)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_CarrierParty()
-	 * @model keys="partyId"
-	 *        annotation="mimo-ent-slot audit='true'"
+	 * @model annotation="mimo-ent-slot audit='true'"
 	 * @generated
 	 */
 	Party getCarrierParty();
@@ -426,7 +424,7 @@ public interface OrderItemShipGroup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Supplier Agreement</em>' reference.
 	 * @see #setSupplierAgreement(Agreement)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_SupplierAgreement()
-	 * @model keys="agreementId"
+	 * @model
 	 * @generated
 	 */
 	Agreement getSupplierAgreement();
@@ -448,7 +446,7 @@ public interface OrderItemShipGroup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Supplier Party</em>' reference.
 	 * @see #setSupplierParty(Party)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_SupplierParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getSupplierParty();
@@ -470,7 +468,7 @@ public interface OrderItemShipGroup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Telecom Contact Mech</em>' reference.
 	 * @see #setTelecomContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_TelecomContactMech()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	ContactMech getTelecomContactMech();
@@ -518,8 +516,7 @@ public interface OrderItemShipGroup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Vendor Party</em>' reference.
 	 * @see #setVendorParty(Party)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_VendorParty()
-	 * @model keys="partyId"
-	 *        annotation="mimo-ent-slot help='For use with multi-vendor stores, order will be split so that each ship group is associated with only one vendor (only if applicable)'"
+	 * @model annotation="mimo-ent-slot help='For use with multi-vendor stores, order will be split so that each ship group is associated with only one vendor (only if applicable)'"
 	 * @generated
 	 */
 	Party getVendorParty();

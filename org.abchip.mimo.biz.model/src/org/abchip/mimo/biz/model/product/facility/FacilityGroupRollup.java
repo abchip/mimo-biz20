@@ -39,7 +39,7 @@ public interface FacilityGroupRollup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Facility Group</em>' reference.
 	 * @see #setFacilityGroup(FacilityGroup)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroupRollup_FacilityGroup()
-	 * @model keys="facilityGroupId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface FacilityGroupRollup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Facility Group</em>' reference.
 	 * @see #setParentFacilityGroup(FacilityGroup)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroupRollup_ParentFacilityGroup()
-	 * @model keys="facilityGroupId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

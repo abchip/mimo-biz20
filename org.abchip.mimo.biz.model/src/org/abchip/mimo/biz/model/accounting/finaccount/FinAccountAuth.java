@@ -121,7 +121,7 @@ public interface FinAccountAuth extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Fin Account</em>' reference.
 	 * @see #setFinAccount(FinAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountAuth_FinAccount()
-	 * @model keys="finAccountId"
+	 * @model
 	 * @generated
 	 */
 	FinAccount getFinAccount();

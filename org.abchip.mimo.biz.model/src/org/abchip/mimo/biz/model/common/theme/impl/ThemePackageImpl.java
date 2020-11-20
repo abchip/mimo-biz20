@@ -883,13 +883,10 @@ public class ThemePackageImpl extends EPackageImpl implements ThemePackage {
 		initEAttribute(getVisualTheme_VisualThemeId(), ecorePackage.getEString(), "visualThemeId", null, 1, 1, VisualTheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getVisualTheme_Description(), ecorePackage.getEString(), "description", null, 0, 1, VisualTheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getVisualTheme_VisualThemeSet(), this.getVisualThemeSet(), null, "visualThemeSet", null, 0, 1, VisualTheme.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getVisualTheme_VisualThemeSet().getEKeys().add(this.getVisualThemeSet_VisualThemeSetId());
 
 		initEClass(visualThemeResourceEClass, VisualThemeResource.class, "VisualThemeResource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getVisualThemeResource_VisualTheme(), this.getVisualTheme(), null, "visualTheme", null, 1, 1, VisualThemeResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getVisualThemeResource_VisualTheme().getEKeys().add(this.getVisualTheme_VisualThemeId());
 		initEReference(getVisualThemeResource_ResourceTypeEnum(), theEnumPackage.getEnumeration(), null, "resourceTypeEnum", null, 1, 1, VisualThemeResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getVisualThemeResource_ResourceTypeEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getVisualThemeResource_SequenceId(), ecorePackage.getEString(), "sequenceId", null, 1, 1, VisualThemeResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getVisualThemeResource_ResourceValue(), ecorePackage.getEString(), "resourceValue", null, 0, 1, VisualThemeResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 

@@ -40,7 +40,7 @@ public interface ProductGlAccount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductGlAccount_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface ProductGlAccount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Organization Party</em>' reference.
 	 * @see #setOrganizationParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductGlAccount_OrganizationParty()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -86,7 +86,7 @@ public interface ProductGlAccount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Gl Account Type</em>' reference.
 	 * @see #setGlAccountType(GlAccountType)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductGlAccount_GlAccountType()
-	 * @model keys="glAccountTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -109,7 +109,7 @@ public interface ProductGlAccount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Gl Account</em>' reference.
 	 * @see #setGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductGlAccount_GlAccount()
-	 * @model keys="glAccountId"
+	 * @model
 	 * @generated
 	 */
 	GlAccount getGlAccount();

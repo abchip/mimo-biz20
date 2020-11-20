@@ -40,7 +40,7 @@ public interface RequirementRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Requirement</em>' reference.
 	 * @see #setRequirement(Requirement)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementRole_Requirement()
-	 * @model keys="requirementId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface RequirementRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementRole_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

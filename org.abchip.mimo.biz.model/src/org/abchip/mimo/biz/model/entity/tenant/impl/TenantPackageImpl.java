@@ -1079,14 +1079,11 @@ public class TenantPackageImpl extends EPackageImpl implements TenantPackage {
 
 		initEClass(tenantComponentEClass, TenantComponent.class, "TenantComponent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getTenantComponent_Tenant(), this.getTenant(), null, "tenant", null, 1, 1, TenantComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getTenantComponent_Tenant().getEKeys().add(this.getTenant_TenantId());
 		initEReference(getTenantComponent_ComponentName(), this.getComponent(), null, "componentName", null, 1, 1, TenantComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getTenantComponent_ComponentName().getEKeys().add(this.getComponent_ComponentName());
 		initEAttribute(getTenantComponent_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, TenantComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(tenantDataSourceEClass, TenantDataSource.class, "TenantDataSource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getTenantDataSource_Tenant(), this.getTenant(), null, "tenant", null, 1, 1, TenantDataSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getTenantDataSource_Tenant().getEKeys().add(this.getTenant_TenantId());
 		initEAttribute(getTenantDataSource_EntityGroupName(), ecorePackage.getEString(), "entityGroupName", null, 1, 1, TenantDataSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTenantDataSource_JdbcPassword(), ecorePackage.getEString(), "jdbcPassword", null, 0, 1, TenantDataSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTenantDataSource_JdbcUri(), ecorePackage.getEString(), "jdbcUri", null, 0, 1, TenantDataSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1095,7 +1092,6 @@ public class TenantPackageImpl extends EPackageImpl implements TenantPackage {
 		initEClass(tenantDomainNameEClass, TenantDomainName.class, "TenantDomainName", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getTenantDomainName_DomainName(), ecorePackage.getEString(), "domainName", null, 1, 1, TenantDomainName.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getTenantDomainName_Tenant(), this.getTenant(), null, "tenant", null, 0, 1, TenantDomainName.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getTenantDomainName_Tenant().getEKeys().add(this.getTenant_TenantId());
 
 		initEClass(tenantKeyEncryptingKeyEClass, TenantKeyEncryptingKey.class, "TenantKeyEncryptingKey", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getTenantKeyEncryptingKey_TenantId(), ecorePackage.getEString(), "tenantId", null, 1, 1, TenantKeyEncryptingKey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

@@ -8,12 +8,11 @@
 package org.abchip.mimo.biz.model.party.party.impl;
 
 import java.util.Date;
-import org.abchip.mimo.biz.model.party.party.PartyClassification;
 import org.abchip.mimo.biz.model.party.party.PartyClassificationType;
 import org.abchip.mimo.biz.model.party.party.PartyPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityTypeImpl;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -36,7 +35,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class PartyClassificationTypeImpl extends EntityTypeImpl<PartyClassification> implements PartyClassificationType {
+public class PartyClassificationTypeImpl extends EntityIdentifiableImpl implements PartyClassificationType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -61,16 +60,9 @@ public class PartyClassificationTypeImpl extends EntityTypeImpl<PartyClassificat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 1;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return ESTATIC_FEATURE_COUNT;
+		return 0;
 	}
 
 	/**

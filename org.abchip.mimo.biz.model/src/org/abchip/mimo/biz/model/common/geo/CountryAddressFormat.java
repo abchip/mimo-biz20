@@ -67,7 +67,7 @@ public interface CountryAddressFormat extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Geo Assoc Type</em>' reference.
 	 * @see #setGeoAssocType(GeoAssocType)
 	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getCountryAddressFormat_GeoAssocType()
-	 * @model keys="geoAssocTypeId"
+	 * @model
 	 * @generated
 	 */
 	GeoAssocType getGeoAssocType();

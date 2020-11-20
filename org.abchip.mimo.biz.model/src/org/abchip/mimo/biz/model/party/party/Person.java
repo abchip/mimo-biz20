@@ -58,7 +58,8 @@ import org.abchip.mimo.biz.model.party.MaritalStatus;
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPerson()
- * @model annotation="mimo-ent-frame formula='description'"
+ * @model annotation="mimo-ent-frame-constraints partyType='PERSON'"
+ *        annotation="mimo-ent-frame formula='description'"
  * @generated
  */
 public interface Person extends Party {
@@ -173,7 +174,7 @@ public interface Person extends Party {
 	 * @return the value of the '<em>Employment Status Enum</em>' reference.
 	 * @see #setEmploymentStatusEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPerson_EmploymentStatusEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getEmploymentStatusEnum();
@@ -668,7 +669,7 @@ public interface Person extends Party {
 	 * @return the value of the '<em>Person Trainings</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPerson_PersonTrainings()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<PersonTraining> getPersonTrainings();
@@ -706,7 +707,7 @@ public interface Person extends Party {
 	 * @return the value of the '<em>Residence Status Enum</em>' reference.
 	 * @see #setResidenceStatusEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPerson_ResidenceStatusEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getResidenceStatusEnum();

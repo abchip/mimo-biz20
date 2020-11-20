@@ -62,7 +62,7 @@ public interface SurveyQuestionCategory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Category</em>' reference.
 	 * @see #setParentCategory(SurveyQuestionCategory)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestionCategory_ParentCategory()
-	 * @model keys="surveyQuestionCategoryId"
+	 * @model
 	 * @generated
 	 */
 	SurveyQuestionCategory getParentCategory();

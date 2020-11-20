@@ -36,7 +36,7 @@ public interface OrderProductPromoCode extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderProductPromoCode_Order()
-	 * @model keys="orderId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface OrderProductPromoCode extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Promo Code</em>' reference.
 	 * @see #setProductPromoCode(ProductPromoCode)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderProductPromoCode_ProductPromoCode()
-	 * @model keys="productPromoCodeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

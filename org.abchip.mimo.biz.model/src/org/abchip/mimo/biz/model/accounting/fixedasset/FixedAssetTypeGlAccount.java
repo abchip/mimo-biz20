@@ -43,7 +43,7 @@ public interface FixedAssetTypeGlAccount extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Fixed Asset Type</em>' reference.
 	 * @see #setFixedAssetType(FixedAssetType)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetTypeGlAccount_FixedAssetType()
-	 * @model keys="fixedAssetTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true' help='The fixed asset type for the mappings. This field can be set to _NA_ in order to define a mapping for all types or for a specific asset (specified by the id in the fixedAssetId field).'"
 	 * @generated
 	 */
@@ -66,7 +66,7 @@ public interface FixedAssetTypeGlAccount extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Fixed Asset</em>' reference.
 	 * @see #setFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetTypeGlAccount_FixedAsset()
-	 * @model keys="fixedAssetId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true' help='The fixed asset id for the mappings. This field can be set to _NA_ in order to define a mapping for all assets of a given type (specified by the id in the fixedAssetTypeId field).'"
 	 * @generated
 	 */
@@ -89,7 +89,7 @@ public interface FixedAssetTypeGlAccount extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Organization Party</em>' reference.
 	 * @see #setOrganizationParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetTypeGlAccount_OrganizationParty()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -112,8 +112,7 @@ public interface FixedAssetTypeGlAccount extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Acc Dep Gl Account</em>' reference.
 	 * @see #setAccDepGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetTypeGlAccount_AccDepGlAccount()
-	 * @model keys="glAccountId"
-	 *        annotation="mimo-ent-slot help='The (credit) account for the accumulated depreciation'"
+	 * @model annotation="mimo-ent-slot help='The (credit) account for the accumulated depreciation'"
 	 * @generated
 	 */
 	GlAccount getAccDepGlAccount();
@@ -135,8 +134,7 @@ public interface FixedAssetTypeGlAccount extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Asset Gl Account</em>' reference.
 	 * @see #setAssetGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetTypeGlAccount_AssetGlAccount()
-	 * @model keys="glAccountId"
-	 *        annotation="mimo-ent-slot help='The (debit) account for the initial asset value (purchase cost)'"
+	 * @model annotation="mimo-ent-slot help='The (debit) account for the initial asset value (purchase cost)'"
 	 * @generated
 	 */
 	GlAccount getAssetGlAccount();
@@ -158,8 +156,7 @@ public interface FixedAssetTypeGlAccount extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Dep Gl Account</em>' reference.
 	 * @see #setDepGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetTypeGlAccount_DepGlAccount()
-	 * @model keys="glAccountId"
-	 *        annotation="mimo-ent-slot help='The (debit) account for the depreciation expense (matches the accDepGlAccountId)'"
+	 * @model annotation="mimo-ent-slot help='The (debit) account for the depreciation expense (matches the accDepGlAccountId)'"
 	 * @generated
 	 */
 	GlAccount getDepGlAccount();
@@ -181,8 +178,7 @@ public interface FixedAssetTypeGlAccount extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Loss Gl Account</em>' reference.
 	 * @see #setLossGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetTypeGlAccount_LossGlAccount()
-	 * @model keys="glAccountId"
-	 *        annotation="mimo-ent-slot help='The (debit) account for the eventual loss derived from the sale of the asset'"
+	 * @model annotation="mimo-ent-slot help='The (debit) account for the eventual loss derived from the sale of the asset'"
 	 * @generated
 	 */
 	GlAccount getLossGlAccount();
@@ -204,8 +200,7 @@ public interface FixedAssetTypeGlAccount extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Profit Gl Account</em>' reference.
 	 * @see #setProfitGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetTypeGlAccount_ProfitGlAccount()
-	 * @model keys="glAccountId"
-	 *        annotation="mimo-ent-slot help='The (credit) account for the eventual profit derived from the sale of the asset'"
+	 * @model annotation="mimo-ent-slot help='The (credit) account for the eventual profit derived from the sale of the asset'"
 	 * @generated
 	 */
 	GlAccount getProfitGlAccount();

@@ -39,7 +39,7 @@ public interface PartyCarrierAccount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyCarrierAccount_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface PartyCarrierAccount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Carrier Party</em>' reference.
 	 * @see #setCarrierParty(Party)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyCarrierAccount_CarrierParty()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

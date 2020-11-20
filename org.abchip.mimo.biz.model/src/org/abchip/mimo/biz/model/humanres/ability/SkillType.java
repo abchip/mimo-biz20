@@ -85,7 +85,7 @@ public interface SkillType extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(SkillType)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getSkillType_ParentType()
-	 * @model keys="skillTypeId"
+	 * @model
 	 * @generated
 	 */
 	SkillType getParentType();

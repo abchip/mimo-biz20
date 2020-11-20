@@ -85,7 +85,7 @@ public interface InvoiceItemAssocType extends EntityType<InvoiceItemAssoc>, Enti
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(InvoiceItemAssocType)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemAssocType_ParentType()
-	 * @model keys="invoiceItemAssocTypeId"
+	 * @model
 	 * @generated
 	 */
 	InvoiceItemAssocType getParentType();

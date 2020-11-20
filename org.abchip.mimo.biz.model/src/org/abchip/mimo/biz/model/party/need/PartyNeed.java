@@ -51,7 +51,7 @@ public interface PartyNeed extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.party.need.NeedPackage#getPartyNeed_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -74,7 +74,7 @@ public interface PartyNeed extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.party.need.NeedPackage#getPartyNeed_RoleType()
-	 * @model keys="roleTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -149,7 +149,7 @@ public interface PartyNeed extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Need Type</em>' reference.
 	 * @see #setNeedType(NeedType)
 	 * @see org.abchip.mimo.biz.model.party.need.NeedPackage#getPartyNeed_NeedType()
-	 * @model keys="needTypeId"
+	 * @model
 	 * @generated
 	 */
 	NeedType getNeedType();
@@ -171,7 +171,7 @@ public interface PartyNeed extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party Type</em>' reference.
 	 * @see #setPartyType(PartyType)
 	 * @see org.abchip.mimo.biz.model.party.need.NeedPackage#getPartyNeed_PartyType()
-	 * @model keys="partyTypeId"
+	 * @model
 	 * @generated
 	 */
 	PartyType getPartyType();
@@ -193,7 +193,7 @@ public interface PartyNeed extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.party.need.NeedPackage#getPartyNeed_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();
@@ -215,7 +215,7 @@ public interface PartyNeed extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Category</em>' reference.
 	 * @see #setProductCategory(ProductCategory)
 	 * @see org.abchip.mimo.biz.model.party.need.NeedPackage#getPartyNeed_ProductCategory()
-	 * @model keys="productCategoryId"
+	 * @model
 	 * @generated
 	 */
 	ProductCategory getProductCategory();
@@ -265,7 +265,7 @@ public interface PartyNeed extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Communication Event</em>' reference.
 	 * @see #setCommunicationEvent(CommunicationEvent)
 	 * @see org.abchip.mimo.biz.model.party.need.NeedPackage#getPartyNeed_CommunicationEvent()
-	 * @model keys="communicationEventId"
+	 * @model
 	 * @generated
 	 */
 	CommunicationEvent getCommunicationEvent();

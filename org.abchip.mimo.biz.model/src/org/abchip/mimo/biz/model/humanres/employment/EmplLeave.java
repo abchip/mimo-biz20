@@ -44,7 +44,7 @@ public interface EmplLeave extends EntityTyped<EmplLeaveType>, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmplLeave_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -67,7 +67,7 @@ public interface EmplLeave extends EntityTyped<EmplLeaveType>, EntityInfo {
 	 * @return the value of the '<em>Leave Type</em>' reference.
 	 * @see #setLeaveType(EmplLeaveType)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmplLeave_LeaveType()
-	 * @model keys="leaveTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -116,7 +116,7 @@ public interface EmplLeave extends EntityTyped<EmplLeaveType>, EntityInfo {
 	 * @return the value of the '<em>Empl Leave Reason Type</em>' reference.
 	 * @see #setEmplLeaveReasonType(EmplLeaveReasonType)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmplLeave_EmplLeaveReasonType()
-	 * @model keys="emplLeaveReasonTypeId"
+	 * @model
 	 * @generated
 	 */
 	EmplLeaveReasonType getEmplLeaveReasonType();
@@ -165,7 +165,7 @@ public interface EmplLeave extends EntityTyped<EmplLeaveType>, EntityInfo {
 	 * @return the value of the '<em>Approver Party</em>' reference.
 	 * @see #setApproverParty(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmplLeave_ApproverParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getApproverParty();
@@ -191,7 +191,7 @@ public interface EmplLeave extends EntityTyped<EmplLeaveType>, EntityInfo {
 	 * @return the value of the '<em>Leave Status</em>' reference.
 	 * @see #setLeaveStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmplLeave_LeaveStatus()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getLeaveStatus();

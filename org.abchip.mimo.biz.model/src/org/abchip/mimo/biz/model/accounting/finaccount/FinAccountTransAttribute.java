@@ -37,7 +37,7 @@ public interface FinAccountTransAttribute extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Fin Account Trans</em>' reference.
 	 * @see #setFinAccountTrans(FinAccountTrans)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTransAttribute_FinAccountTrans()
-	 * @model keys="finAccountTransId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

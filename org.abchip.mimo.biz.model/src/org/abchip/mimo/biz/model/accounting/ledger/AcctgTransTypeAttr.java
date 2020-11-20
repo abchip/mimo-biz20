@@ -36,7 +36,7 @@ public interface AcctgTransTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Acctg Trans Type</em>' reference.
 	 * @see #setAcctgTransType(AcctgTransType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransTypeAttr_AcctgTransType()
-	 * @model keys="acctgTransTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -36,7 +36,7 @@ public interface DocumentTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Document Type</em>' reference.
 	 * @see #setDocumentType(DocumentType)
 	 * @see org.abchip.mimo.biz.model.content.document.DocumentPackage#getDocumentTypeAttr_DocumentType()
-	 * @model keys="documentTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -42,7 +42,7 @@ public interface ProdCatalogRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.catalog.CatalogPackage#getProdCatalogRole_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -65,7 +65,7 @@ public interface ProdCatalogRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.product.catalog.CatalogPackage#getProdCatalogRole_RoleType()
-	 * @model keys="roleTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -88,7 +88,7 @@ public interface ProdCatalogRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Prod Catalog</em>' reference.
 	 * @see #setProdCatalog(ProdCatalog)
 	 * @see org.abchip.mimo.biz.model.product.catalog.CatalogPackage#getProdCatalogRole_ProdCatalog()
-	 * @model keys="prodCatalogId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

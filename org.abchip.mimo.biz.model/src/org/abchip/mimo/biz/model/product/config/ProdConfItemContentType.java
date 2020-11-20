@@ -85,7 +85,7 @@ public interface ProdConfItemContentType extends EntityType<ProdConfItemContent>
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(ProdConfItemContentType)
 	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProdConfItemContentType_ParentType()
-	 * @model keys="confItemContentTypeId"
+	 * @model
 	 * @generated
 	 */
 	ProdConfItemContentType getParentType();

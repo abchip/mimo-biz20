@@ -116,7 +116,7 @@ public interface Requirement extends EntityTyped<RequirementType>, EntityInfo {
 	 * @return the value of the '<em>Deliverable</em>' reference.
 	 * @see #setDeliverable(Deliverable)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirement_Deliverable()
-	 * @model keys="deliverableId"
+	 * @model
 	 * @generated
 	 */
 	Deliverable getDeliverable();
@@ -190,7 +190,7 @@ public interface Requirement extends EntityTyped<RequirementType>, EntityInfo {
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirement_Facility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getFacility();
@@ -234,7 +234,7 @@ public interface Requirement extends EntityTyped<RequirementType>, EntityInfo {
 	 * @return the value of the '<em>Fixed Asset</em>' reference.
 	 * @see #setFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirement_FixedAsset()
-	 * @model keys="fixedAssetId"
+	 * @model
 	 * @generated
 	 */
 	FixedAsset getFixedAsset();
@@ -308,7 +308,7 @@ public interface Requirement extends EntityTyped<RequirementType>, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirement_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();
@@ -485,7 +485,7 @@ public interface Requirement extends EntityTyped<RequirementType>, EntityInfo {
 	 * @return the value of the '<em>Requirement Type</em>' reference.
 	 * @see #setRequirementType(RequirementType)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirement_RequirementType()
-	 * @model keys="requirementTypeId"
+	 * @model
 	 * @generated
 	 */
 	RequirementType getRequirementType();
@@ -507,7 +507,7 @@ public interface Requirement extends EntityTyped<RequirementType>, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirement_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

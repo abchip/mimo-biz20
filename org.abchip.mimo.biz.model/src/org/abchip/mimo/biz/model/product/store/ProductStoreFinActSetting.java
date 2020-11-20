@@ -52,7 +52,7 @@ public interface ProductStoreFinActSetting extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Product Store</em>' reference.
 	 * @see #setProductStore(ProductStore)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreFinActSetting_ProductStore()
-	 * @model keys="productStoreId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -75,7 +75,7 @@ public interface ProductStoreFinActSetting extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Fin Account Type</em>' reference.
 	 * @see #setFinAccountType(FinAccountType)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreFinActSetting_FinAccountType()
-	 * @model keys="finAccountTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -308,8 +308,7 @@ public interface ProductStoreFinActSetting extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Purchase Survey</em>' reference.
 	 * @see #setPurchaseSurvey(Survey)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreFinActSetting_PurchaseSurvey()
-	 * @model keys="surveyId"
-	 *        annotation="mimo-ent-slot help='This survey is typically used to collect information such as name of buyer, recipient, email, message, etc. and is quite flexible'"
+	 * @model annotation="mimo-ent-slot help='This survey is typically used to collect information such as name of buyer, recipient, email, message, etc. and is quite flexible'"
 	 * @generated
 	 */
 	Survey getPurchaseSurvey();
@@ -331,8 +330,7 @@ public interface ProductStoreFinActSetting extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Replenish Method Enum</em>' reference.
 	 * @see #setReplenishMethodEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreFinActSetting_ReplenishMethodEnum()
-	 * @model keys="enumId"
-	 *        annotation="mimo-ent-slot help='Replenish Method for Replenish Account. Can be FARP_TOP_OFF or FARP_REPLENISH_LEVEL. Default FARP_TOP_OFF.'"
+	 * @model annotation="mimo-ent-slot help='Replenish Method for Replenish Account. Can be FARP_TOP_OFF or FARP_REPLENISH_LEVEL. Default FARP_TOP_OFF.'"
 	 * @generated
 	 */
 	Enumeration getReplenishMethodEnum();

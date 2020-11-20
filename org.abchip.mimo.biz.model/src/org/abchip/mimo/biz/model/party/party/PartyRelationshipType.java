@@ -88,7 +88,7 @@ public interface PartyRelationshipType extends EntityType<PartyRelationship>, En
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(PartyRelationshipType)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationshipType_ParentType()
-	 * @model keys="partyRelationshipTypeId"
+	 * @model
 	 * @generated
 	 */
 	PartyRelationshipType getParentType();
@@ -140,7 +140,7 @@ public interface PartyRelationshipType extends EntityType<PartyRelationship>, En
 	 * @return the value of the '<em>Role Type Id Valid From</em>' reference.
 	 * @see #setRoleTypeIdValidFrom(RoleType)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationshipType_RoleTypeIdValidFrom()
-	 * @model keys="roleTypeId"
+	 * @model
 	 * @generated
 	 */
 	RoleType getRoleTypeIdValidFrom();
@@ -166,7 +166,7 @@ public interface PartyRelationshipType extends EntityType<PartyRelationship>, En
 	 * @return the value of the '<em>Role Type Id Valid To</em>' reference.
 	 * @see #setRoleTypeIdValidTo(RoleType)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationshipType_RoleTypeIdValidTo()
-	 * @model keys="roleTypeId"
+	 * @model
 	 * @generated
 	 */
 	RoleType getRoleTypeIdValidTo();

@@ -87,7 +87,7 @@ public interface CommunicationEventType extends EntityType<CommunicationEvent>, 
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(CommunicationEventType)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventType_ParentType()
-	 * @model keys="communicationEventTypeId"
+	 * @model
 	 * @generated
 	 */
 	CommunicationEventType getParentType();
@@ -136,7 +136,7 @@ public interface CommunicationEventType extends EntityType<CommunicationEvent>, 
 	 * @return the value of the '<em>Contact Mech Type</em>' reference.
 	 * @see #setContactMechType(ContactMechType)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventType_ContactMechType()
-	 * @model keys="contactMechTypeId"
+	 * @model
 	 * @generated
 	 */
 	ContactMechType getContactMechType();

@@ -38,7 +38,7 @@ public interface SurveyTrigger extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Survey</em>' reference.
 	 * @see #setSurvey(Survey)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyTrigger_Survey()
-	 * @model keys="surveyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface SurveyTrigger extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Survey Appl Type</em>' reference.
 	 * @see #setSurveyApplType(SurveyApplType)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyTrigger_SurveyApplType()
-	 * @model keys="surveyApplTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

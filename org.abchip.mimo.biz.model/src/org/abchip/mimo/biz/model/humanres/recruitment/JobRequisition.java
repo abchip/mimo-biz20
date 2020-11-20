@@ -103,7 +103,7 @@ public interface JobRequisition extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Exam Type Enum</em>' reference.
 	 * @see #setExamTypeEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage#getJobRequisition_ExamTypeEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getExamTypeEnum();
@@ -232,7 +232,7 @@ public interface JobRequisition extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Job Posting Type Enum</em>' reference.
 	 * @see #setJobPostingTypeEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage#getJobRequisition_JobPostingTypeEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getJobPostingTypeEnum();
@@ -385,7 +385,7 @@ public interface JobRequisition extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Skill Type</em>' reference.
 	 * @see #setSkillType(SkillType)
 	 * @see org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage#getJobRequisition_SkillType()
-	 * @model keys="skillTypeId"
+	 * @model
 	 * @generated
 	 */
 	SkillType getSkillType();

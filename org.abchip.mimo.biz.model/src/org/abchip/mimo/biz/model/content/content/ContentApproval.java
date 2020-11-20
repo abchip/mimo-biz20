@@ -72,7 +72,7 @@ public interface ContentApproval extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Approval Status</em>' reference.
 	 * @see #setApprovalStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentApproval_ApprovalStatus()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getApprovalStatus();
@@ -120,7 +120,7 @@ public interface ContentApproval extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentApproval_Content()
-	 * @model keys="contentId"
+	 * @model
 	 * @generated
 	 */
 	Content getContent();
@@ -195,7 +195,7 @@ public interface ContentApproval extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentApproval_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -217,7 +217,7 @@ public interface ContentApproval extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentApproval_RoleType()
-	 * @model keys="roleTypeId"
+	 * @model
 	 * @generated
 	 */
 	RoleType getRoleType();

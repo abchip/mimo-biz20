@@ -44,7 +44,7 @@ public interface SalesForecastDetail extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Sales Forecast</em>' reference.
 	 * @see #setSalesForecast(SalesForecast)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecastDetail_SalesForecast()
-	 * @model keys="salesForecastId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -93,7 +93,7 @@ public interface SalesForecastDetail extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecastDetail_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();
@@ -115,7 +115,7 @@ public interface SalesForecastDetail extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Category</em>' reference.
 	 * @see #setProductCategory(ProductCategory)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecastDetail_ProductCategory()
-	 * @model keys="productCategoryId"
+	 * @model
 	 * @generated
 	 */
 	ProductCategory getProductCategory();
@@ -163,7 +163,7 @@ public interface SalesForecastDetail extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Quantity Uom</em>' reference.
 	 * @see #setQuantityUom(Uom)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesForecastDetail_QuantityUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getQuantityUom();

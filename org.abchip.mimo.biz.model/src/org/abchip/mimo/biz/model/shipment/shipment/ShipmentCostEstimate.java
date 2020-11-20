@@ -176,7 +176,7 @@ public interface ShipmentCostEstimate extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Geo Id From</em>' reference.
 	 * @see #setGeoIdFrom(Geo)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_GeoIdFrom()
-	 * @model keys="geoId"
+	 * @model
 	 * @generated
 	 */
 	Geo getGeoIdFrom();
@@ -202,7 +202,7 @@ public interface ShipmentCostEstimate extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Geo Id To</em>' reference.
 	 * @see #setGeoIdTo(Geo)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_GeoIdTo()
-	 * @model keys="geoId"
+	 * @model
 	 * @generated
 	 */
 	Geo getGeoIdTo();
@@ -354,7 +354,7 @@ public interface ShipmentCostEstimate extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -376,7 +376,7 @@ public interface ShipmentCostEstimate extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Price Break</em>' reference.
 	 * @see #setPriceBreak(QuantityBreak)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_PriceBreak()
-	 * @model keys="quantityBreakId"
+	 * @model
 	 * @generated
 	 */
 	QuantityBreak getPriceBreak();
@@ -424,7 +424,7 @@ public interface ShipmentCostEstimate extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Price Uom</em>' reference.
 	 * @see #setPriceUom(Uom)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_PriceUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getPriceUom();
@@ -498,7 +498,7 @@ public interface ShipmentCostEstimate extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Store Ship Meth</em>' reference.
 	 * @see #setProductStoreShipMeth(ProductStoreShipmentMeth)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_ProductStoreShipMeth()
-	 * @model keys="productStoreShipMethId"
+	 * @model
 	 * @generated
 	 */
 	ProductStoreShipmentMeth getProductStoreShipMeth();
@@ -520,7 +520,7 @@ public interface ShipmentCostEstimate extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Quantity Break</em>' reference.
 	 * @see #setQuantityBreak(QuantityBreak)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_QuantityBreak()
-	 * @model keys="quantityBreakId"
+	 * @model
 	 * @generated
 	 */
 	QuantityBreak getQuantityBreak();
@@ -568,7 +568,7 @@ public interface ShipmentCostEstimate extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Quantity Uom</em>' reference.
 	 * @see #setQuantityUom(Uom)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_QuantityUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getQuantityUom();
@@ -590,7 +590,7 @@ public interface ShipmentCostEstimate extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_RoleType()
-	 * @model keys="roleTypeId"
+	 * @model
 	 * @generated
 	 */
 	RoleType getRoleType();
@@ -691,7 +691,7 @@ public interface ShipmentCostEstimate extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Weight Break</em>' reference.
 	 * @see #setWeightBreak(QuantityBreak)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_WeightBreak()
-	 * @model keys="quantityBreakId"
+	 * @model
 	 * @generated
 	 */
 	QuantityBreak getWeightBreak();
@@ -739,7 +739,7 @@ public interface ShipmentCostEstimate extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Weight Uom</em>' reference.
 	 * @see #setWeightUom(Uom)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentCostEstimate_WeightUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getWeightUom();

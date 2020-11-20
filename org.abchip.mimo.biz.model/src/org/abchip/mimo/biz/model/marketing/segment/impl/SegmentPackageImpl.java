@@ -1004,31 +1004,22 @@ public class SegmentPackageImpl extends EPackageImpl implements SegmentPackage {
 		initEAttribute(getSegmentGroup_SegmentGroupId(), ecorePackage.getEString(), "segmentGroupId", null, 1, 1, SegmentGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSegmentGroup_Description(), ecorePackage.getEString(), "description", null, 0, 1, SegmentGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSegmentGroup_ProductStore(), theStorePackage.getProductStore(), null, "productStore", null, 0, 1, SegmentGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getSegmentGroup_ProductStore().getEKeys().add(theStorePackage.getProductStore_ProductStoreId());
 		initEReference(getSegmentGroup_SegmentGroupClassifications(), this.getSegmentGroupClassification(), null, "segmentGroupClassifications", null, 0, -1, SegmentGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getSegmentGroup_SegmentGroupGeos(), this.getSegmentGroupGeo(), null, "segmentGroupGeos", null, 0, -1, SegmentGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getSegmentGroup_SegmentGroupType(), this.getSegmentGroupType(), null, "segmentGroupType", null, 0, 1, SegmentGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getSegmentGroup_SegmentGroupType().getEKeys().add(this.getSegmentGroupType_SegmentGroupTypeId());
 
 		initEClass(segmentGroupClassificationEClass, SegmentGroupClassification.class, "SegmentGroupClassification", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getSegmentGroupClassification_SegmentGroup(), this.getSegmentGroup(), null, "segmentGroup", null, 1, 1, SegmentGroupClassification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getSegmentGroupClassification_SegmentGroup().getEKeys().add(this.getSegmentGroup_SegmentGroupId());
 		initEReference(getSegmentGroupClassification_PartyClassificationGroup(), thePartyPackage_1.getPartyClassificationGroup(), null, "partyClassificationGroup", null, 1, 1, SegmentGroupClassification.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getSegmentGroupClassification_PartyClassificationGroup().getEKeys().add(thePartyPackage_1.getPartyClassificationGroup_PartyClassificationGroupId());
 
 		initEClass(segmentGroupGeoEClass, SegmentGroupGeo.class, "SegmentGroupGeo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getSegmentGroupGeo_SegmentGroup(), this.getSegmentGroup(), null, "segmentGroup", null, 1, 1, SegmentGroupGeo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getSegmentGroupGeo_SegmentGroup().getEKeys().add(this.getSegmentGroup_SegmentGroupId());
 		initEReference(getSegmentGroupGeo_Geo(), theGeoPackage.getGeo(), null, "geo", null, 1, 1, SegmentGroupGeo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getSegmentGroupGeo_Geo().getEKeys().add(theGeoPackage.getGeo_GeoId());
 
 		initEClass(segmentGroupRoleEClass, SegmentGroupRole.class, "SegmentGroupRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getSegmentGroupRole_SegmentGroup(), this.getSegmentGroup(), null, "segmentGroup", null, 1, 1, SegmentGroupRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getSegmentGroupRole_SegmentGroup().getEKeys().add(this.getSegmentGroup_SegmentGroupId());
 		initEReference(getSegmentGroupRole_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, SegmentGroupRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getSegmentGroupRole_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getSegmentGroupRole_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 1, 1, SegmentGroupRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getSegmentGroupRole_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 
 		initEClass(segmentGroupTypeEClass, SegmentGroupType.class, "SegmentGroupType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSegmentGroupType_SegmentGroupTypeId(), ecorePackage.getEString(), "segmentGroupTypeId", null, 1, 1, SegmentGroupType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

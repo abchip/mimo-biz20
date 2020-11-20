@@ -37,7 +37,7 @@ public interface SalesOpportunityTrckCode extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Sales Opportunity</em>' reference.
 	 * @see #setSalesOpportunity(SalesOpportunity)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityTrckCode_SalesOpportunity()
-	 * @model keys="salesOpportunityId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

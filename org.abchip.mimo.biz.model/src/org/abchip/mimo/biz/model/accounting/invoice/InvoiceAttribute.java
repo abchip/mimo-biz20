@@ -37,7 +37,7 @@ public interface InvoiceAttribute extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Invoice</em>' reference.
 	 * @see #setInvoice(Invoice)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceAttribute_Invoice()
-	 * @model keys="invoiceId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

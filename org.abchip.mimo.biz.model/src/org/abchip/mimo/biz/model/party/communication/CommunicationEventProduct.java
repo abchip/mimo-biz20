@@ -36,7 +36,7 @@ public interface CommunicationEventProduct extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventProduct_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface CommunicationEventProduct extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Communication Event</em>' reference.
 	 * @see #setCommunicationEvent(CommunicationEvent)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventProduct_CommunicationEvent()
-	 * @model keys="communicationEventId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

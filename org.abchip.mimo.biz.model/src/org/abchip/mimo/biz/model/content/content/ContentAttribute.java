@@ -37,7 +37,7 @@ public interface ContentAttribute extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentAttribute_Content()
-	 * @model keys="contentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

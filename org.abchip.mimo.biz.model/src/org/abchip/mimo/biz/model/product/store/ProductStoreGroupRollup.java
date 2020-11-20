@@ -39,7 +39,7 @@ public interface ProductStoreGroupRollup extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Product Store Group</em>' reference.
 	 * @see #setProductStoreGroup(ProductStoreGroup)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreGroupRollup_ProductStoreGroup()
-	 * @model keys="productStoreGroupId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface ProductStoreGroupRollup extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Parent Group</em>' reference.
 	 * @see #setParentGroup(ProductStoreGroup)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreGroupRollup_ParentGroup()
-	 * @model keys="productStoreGroupId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -36,7 +36,7 @@ public interface PartyTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party Type</em>' reference.
 	 * @see #setPartyType(PartyType)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyTypeAttr_PartyType()
-	 * @model keys="partyTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

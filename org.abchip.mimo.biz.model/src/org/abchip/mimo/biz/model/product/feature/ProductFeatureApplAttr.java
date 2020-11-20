@@ -40,7 +40,7 @@ public interface ProductFeatureApplAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureApplAttr_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface ProductFeatureApplAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Feature</em>' reference.
 	 * @see #setProductFeature(ProductFeature)
 	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureApplAttr_ProductFeature()
-	 * @model keys="productFeatureId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

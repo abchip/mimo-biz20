@@ -93,7 +93,7 @@ public interface ProductStoreShipmentMeth extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Company Party</em>' reference.
 	 * @see #setCompanyParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreShipmentMeth_CompanyParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getCompanyParty();
@@ -167,7 +167,7 @@ public interface ProductStoreShipmentMeth extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Exclude Geo</em>' reference.
 	 * @see #setExcludeGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreShipmentMeth_ExcludeGeo()
-	 * @model keys="geoId"
+	 * @model
 	 * @generated
 	 */
 	Geo getExcludeGeo();
@@ -215,7 +215,7 @@ public interface ProductStoreShipmentMeth extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Include Geo</em>' reference.
 	 * @see #setIncludeGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreShipmentMeth_IncludeGeo()
-	 * @model keys="geoId"
+	 * @model
 	 * @generated
 	 */
 	Geo getIncludeGeo();
@@ -709,7 +709,7 @@ public interface ProductStoreShipmentMeth extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Shipment Custom Method</em>' reference.
 	 * @see #setShipmentCustomMethod(CustomMethod)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreShipmentMeth_ShipmentCustomMethod()
-	 * @model keys="customMethodId"
+	 * @model
 	 * @generated
 	 */
 	CustomMethod getShipmentCustomMethod();
@@ -731,7 +731,7 @@ public interface ProductStoreShipmentMeth extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Shipment Gateway Config</em>' reference.
 	 * @see #setShipmentGatewayConfig(ShipmentGatewayConfig)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreShipmentMeth_ShipmentGatewayConfig()
-	 * @model keys="shipmentGatewayConfigId"
+	 * @model
 	 * @generated
 	 */
 	ShipmentGatewayConfig getShipmentGatewayConfig();
@@ -753,7 +753,7 @@ public interface ProductStoreShipmentMeth extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Shipment Method Type</em>' reference.
 	 * @see #setShipmentMethodType(ShipmentMethodType)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreShipmentMeth_ShipmentMethodType()
-	 * @model keys="shipmentMethodTypeId"
+	 * @model
 	 * @generated
 	 */
 	ShipmentMethodType getShipmentMethodType();

@@ -29,7 +29,8 @@ import java.math.BigDecimal;
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyGroup()
- * @model annotation="mimo-ent-frame formula='description'"
+ * @model annotation="mimo-ent-frame-constraints partyType='PARTY_GROUP'"
+ *        annotation="mimo-ent-frame formula='description'"
  * @generated
  */
 public interface PartyGroup extends Party {

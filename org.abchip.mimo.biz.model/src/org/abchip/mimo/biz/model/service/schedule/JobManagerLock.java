@@ -229,7 +229,7 @@ public interface JobManagerLock extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Reason Enum</em>' reference.
 	 * @see #setReasonEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobManagerLock_ReasonEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getReasonEnum();

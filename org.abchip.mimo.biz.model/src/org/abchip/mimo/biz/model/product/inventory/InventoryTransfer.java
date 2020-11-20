@@ -77,7 +77,7 @@ public interface InventoryTransfer extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Container</em>' reference.
 	 * @see #setContainer(Container)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryTransfer_Container()
-	 * @model keys="containerId"
+	 * @model
 	 * @generated
 	 */
 	Container getContainer();
@@ -230,7 +230,7 @@ public interface InventoryTransfer extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryTransfer_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -256,7 +256,7 @@ public interface InventoryTransfer extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Facility Id To</em>' reference.
 	 * @see #setFacilityIdTo(Facility)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryTransfer_FacilityIdTo()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getFacilityIdTo();
@@ -278,7 +278,7 @@ public interface InventoryTransfer extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Inventory Item</em>' reference.
 	 * @see #setInventoryItem(InventoryItem)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryTransfer_InventoryItem()
-	 * @model keys="inventoryItemId"
+	 * @model
 	 * @generated
 	 */
 	InventoryItem getInventoryItem();
@@ -300,7 +300,7 @@ public interface InventoryTransfer extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Item Issuance</em>' reference.
 	 * @see #setItemIssuance(ItemIssuance)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryTransfer_ItemIssuance()
-	 * @model keys="itemIssuanceId"
+	 * @model
 	 * @generated
 	 */
 	ItemIssuance getItemIssuance();
@@ -326,7 +326,7 @@ public interface InventoryTransfer extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Container Id To</em>' reference.
 	 * @see #setContainerIdTo(Container)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryTransfer_ContainerIdTo()
-	 * @model keys="containerId"
+	 * @model
 	 * @generated
 	 */
 	Container getContainerIdTo();
@@ -348,7 +348,7 @@ public interface InventoryTransfer extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryTransfer_Facility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getFacility();

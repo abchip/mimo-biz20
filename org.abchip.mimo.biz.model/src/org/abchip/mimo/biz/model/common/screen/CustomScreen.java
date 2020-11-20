@@ -117,7 +117,7 @@ public interface CustomScreen extends EntityTyped<CustomScreenType>, EntityInfo 
 	 * @return the value of the '<em>Custom Screen Type</em>' reference.
 	 * @see #setCustomScreenType(CustomScreenType)
 	 * @see org.abchip.mimo.biz.model.common.screen.ScreenPackage#getCustomScreen_CustomScreenType()
-	 * @model keys="customScreenTypeId"
+	 * @model
 	 * @generated
 	 */
 	CustomScreenType getCustomScreenType();

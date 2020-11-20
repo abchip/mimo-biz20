@@ -35,7 +35,7 @@ public interface OrderBlacklist extends EntityTyped<OrderBlacklistType>, EntityI
 	 * @return the value of the '<em>Order Blacklist Type</em>' reference.
 	 * @see #setOrderBlacklistType(OrderBlacklistType)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderBlacklist_OrderBlacklistType()
-	 * @model keys="orderBlacklistTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

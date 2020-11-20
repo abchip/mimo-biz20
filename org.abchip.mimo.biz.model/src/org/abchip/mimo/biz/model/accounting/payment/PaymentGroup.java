@@ -64,7 +64,7 @@ public interface PaymentGroup extends EntityTyped<PaymentGroupType>, EntityInfo 
 	 * @return the value of the '<em>Payment Group Type</em>' reference.
 	 * @see #setPaymentGroupType(PaymentGroupType)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGroup_PaymentGroupType()
-	 * @model keys="paymentGroupTypeId"
+	 * @model
 	 * @generated
 	 */
 	PaymentGroupType getPaymentGroupType();
@@ -114,7 +114,7 @@ public interface PaymentGroup extends EntityTyped<PaymentGroupType>, EntityInfo 
 	 * @return the value of the '<em>Payment Group Members</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGroup_PaymentGroupMembers()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<PaymentGroupMember> getPaymentGroupMembers();

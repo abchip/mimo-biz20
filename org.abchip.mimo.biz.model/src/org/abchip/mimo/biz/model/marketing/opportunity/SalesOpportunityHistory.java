@@ -76,7 +76,7 @@ public interface SalesOpportunityHistory extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityHistory_CurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getCurrencyUom();
@@ -206,7 +206,7 @@ public interface SalesOpportunityHistory extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Modified By User Login</em>' reference.
 	 * @see #setModifiedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityHistory_ModifiedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getModifiedByUserLogin();
@@ -280,7 +280,7 @@ public interface SalesOpportunityHistory extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Opportunity Stage</em>' reference.
 	 * @see #setOpportunityStage(SalesOpportunityStage)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityHistory_OpportunityStage()
-	 * @model keys="opportunityStageId"
+	 * @model
 	 * @generated
 	 */
 	SalesOpportunityStage getOpportunityStage();
@@ -302,7 +302,7 @@ public interface SalesOpportunityHistory extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Sales Opportunity</em>' reference.
 	 * @see #setSalesOpportunity(SalesOpportunity)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityHistory_SalesOpportunity()
-	 * @model keys="salesOpportunityId"
+	 * @model
 	 * @generated
 	 */
 	SalesOpportunity getSalesOpportunity();

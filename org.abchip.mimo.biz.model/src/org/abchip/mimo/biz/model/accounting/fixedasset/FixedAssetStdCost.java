@@ -43,7 +43,7 @@ public interface FixedAssetStdCost extends EntityTyped<FixedAssetStdCostType>, E
 	 * @return the value of the '<em>Fixed Asset</em>' reference.
 	 * @see #setFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetStdCost_FixedAsset()
-	 * @model keys="fixedAssetId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -66,7 +66,7 @@ public interface FixedAssetStdCost extends EntityTyped<FixedAssetStdCostType>, E
 	 * @return the value of the '<em>Fixed Asset Std Cost Type</em>' reference.
 	 * @see #setFixedAssetStdCostType(FixedAssetStdCostType)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetStdCost_FixedAssetStdCostType()
-	 * @model keys="fixedAssetStdCostTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -115,7 +115,7 @@ public interface FixedAssetStdCost extends EntityTyped<FixedAssetStdCostType>, E
 	 * @return the value of the '<em>Amount Uom</em>' reference.
 	 * @see #setAmountUom(Uom)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetStdCost_AmountUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getAmountUom();

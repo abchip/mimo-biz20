@@ -42,7 +42,7 @@ public interface OrderItemAssoc extends EntityTyped<OrderItemAssocType>, EntityI
 	 * @return the value of the '<em>Order Item Assoc Type</em>' reference.
 	 * @see #setOrderItemAssocType(OrderItemAssocType)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemAssoc_OrderItemAssocType()
-	 * @model keys="orderItemAssocTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -65,7 +65,7 @@ public interface OrderItemAssoc extends EntityTyped<OrderItemAssocType>, EntityI
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemAssoc_Order()
-	 * @model keys="orderId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -88,7 +88,7 @@ public interface OrderItemAssoc extends EntityTyped<OrderItemAssocType>, EntityI
 	 * @return the value of the '<em>To Order</em>' reference.
 	 * @see #setToOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemAssoc_ToOrder()
-	 * @model keys="orderId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

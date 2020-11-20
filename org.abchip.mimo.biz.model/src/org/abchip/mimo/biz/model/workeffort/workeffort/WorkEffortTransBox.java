@@ -36,7 +36,7 @@ public interface WorkEffortTransBox extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Process Work Effort</em>' reference.
 	 * @see #setProcessWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortTransBox_ProcessWorkEffort()
-	 * @model keys="workEffortId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

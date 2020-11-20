@@ -41,7 +41,7 @@ public interface PartyRate extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getPartyRate_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface PartyRate extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Rate Type</em>' reference.
 	 * @see #setRateType(RateType)
 	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getPartyRate_RateType()
-	 * @model keys="rateTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -62,7 +62,7 @@ public interface InventoryItemLabel extends EntityTyped<InventoryItemLabelType>,
 	 * @return the value of the '<em>Inventory Item Label Type</em>' reference.
 	 * @see #setInventoryItemLabelType(InventoryItemLabelType)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemLabel_InventoryItemLabelType()
-	 * @model keys="inventoryItemLabelTypeId"
+	 * @model
 	 * @generated
 	 */
 	InventoryItemLabelType getInventoryItemLabelType();

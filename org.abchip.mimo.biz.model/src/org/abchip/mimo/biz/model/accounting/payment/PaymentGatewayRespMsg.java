@@ -63,7 +63,7 @@ public interface PaymentGatewayRespMsg extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Payment Gateway Response</em>' reference.
 	 * @see #setPaymentGatewayResponse(PaymentGatewayResponse)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayRespMsg_PaymentGatewayResponse()
-	 * @model keys="paymentGatewayResponseId"
+	 * @model
 	 * @generated
 	 */
 	PaymentGatewayResponse getPaymentGatewayResponse();

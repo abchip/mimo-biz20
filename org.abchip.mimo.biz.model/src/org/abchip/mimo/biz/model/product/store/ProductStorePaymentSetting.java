@@ -45,7 +45,7 @@ public interface ProductStorePaymentSetting extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Product Store</em>' reference.
 	 * @see #setProductStore(ProductStore)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStorePaymentSetting_ProductStore()
-	 * @model keys="productStoreId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -68,7 +68,7 @@ public interface ProductStorePaymentSetting extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Payment Method Type</em>' reference.
 	 * @see #setPaymentMethodType(PaymentMethodType)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStorePaymentSetting_PaymentMethodType()
-	 * @model keys="paymentMethodTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -91,7 +91,7 @@ public interface ProductStorePaymentSetting extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Payment Service Type Enum</em>' reference.
 	 * @see #setPaymentServiceTypeEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStorePaymentSetting_PaymentServiceTypeEnum()
-	 * @model keys="enumId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -140,7 +140,7 @@ public interface ProductStorePaymentSetting extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Payment Custom Method</em>' reference.
 	 * @see #setPaymentCustomMethod(CustomMethod)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStorePaymentSetting_PaymentCustomMethod()
-	 * @model keys="customMethodId"
+	 * @model
 	 * @generated
 	 */
 	CustomMethod getPaymentCustomMethod();
@@ -162,7 +162,7 @@ public interface ProductStorePaymentSetting extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Payment Gateway Config</em>' reference.
 	 * @see #setPaymentGatewayConfig(PaymentGatewayConfig)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStorePaymentSetting_PaymentGatewayConfig()
-	 * @model keys="paymentGatewayConfigId"
+	 * @model
 	 * @generated
 	 */
 	PaymentGatewayConfig getPaymentGatewayConfig();

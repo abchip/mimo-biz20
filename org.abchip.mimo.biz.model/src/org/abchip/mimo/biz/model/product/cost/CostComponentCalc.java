@@ -98,7 +98,7 @@ public interface CostComponentCalc extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Offsetting Gl Account Type</em>' reference.
 	 * @see #setOffsettingGlAccountType(GlAccountType)
 	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponentCalc_OffsettingGlAccountType()
-	 * @model keys="glAccountTypeId"
+	 * @model
 	 * @generated
 	 */
 	GlAccountType getOffsettingGlAccountType();
@@ -199,7 +199,7 @@ public interface CostComponentCalc extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Cost Custom Method</em>' reference.
 	 * @see #setCostCustomMethod(CustomMethod)
 	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponentCalc_CostCustomMethod()
-	 * @model keys="customMethodId"
+	 * @model
 	 * @generated
 	 */
 	CustomMethod getCostCustomMethod();
@@ -221,7 +221,7 @@ public interface CostComponentCalc extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Cost Gl Account Type</em>' reference.
 	 * @see #setCostGlAccountType(GlAccountType)
 	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponentCalc_CostGlAccountType()
-	 * @model keys="glAccountTypeId"
+	 * @model
 	 * @generated
 	 */
 	GlAccountType getCostGlAccountType();
@@ -243,7 +243,7 @@ public interface CostComponentCalc extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.cost.CostPackage#getCostComponentCalc_CurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getCurrencyUom();

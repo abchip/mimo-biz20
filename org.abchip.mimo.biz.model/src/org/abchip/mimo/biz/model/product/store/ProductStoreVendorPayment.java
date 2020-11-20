@@ -40,7 +40,7 @@ public interface ProductStoreVendorPayment extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Product Store</em>' reference.
 	 * @see #setProductStore(ProductStore)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreVendorPayment_ProductStore()
-	 * @model keys="productStoreId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface ProductStoreVendorPayment extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Vendor Party</em>' reference.
 	 * @see #setVendorParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreVendorPayment_VendorParty()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -86,7 +86,7 @@ public interface ProductStoreVendorPayment extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Payment Method Type</em>' reference.
 	 * @see #setPaymentMethodType(PaymentMethodType)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreVendorPayment_PaymentMethodType()
-	 * @model keys="paymentMethodTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -109,7 +109,7 @@ public interface ProductStoreVendorPayment extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Credit Card Enum</em>' reference.
 	 * @see #setCreditCardEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreVendorPayment_CreditCardEnum()
-	 * @model keys="enumId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true' help='If not applicable for the paymentMethodTypeId, use \"_NA_\"'"
 	 * @generated
 	 */

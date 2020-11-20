@@ -64,7 +64,7 @@ public interface ProductPrice extends EntityTyped<ProductPriceType>, EntityInfo 
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -87,7 +87,7 @@ public interface ProductPrice extends EntityTyped<ProductPriceType>, EntityInfo 
 	 * @return the value of the '<em>Product Price Type</em>' reference.
 	 * @see #setProductPriceType(ProductPriceType)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_ProductPriceType()
-	 * @model keys="productPriceTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -110,7 +110,7 @@ public interface ProductPrice extends EntityTyped<ProductPriceType>, EntityInfo 
 	 * @return the value of the '<em>Product Price Purpose</em>' reference.
 	 * @see #setProductPricePurpose(ProductPricePurpose)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_ProductPricePurpose()
-	 * @model keys="productPricePurposeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -133,7 +133,7 @@ public interface ProductPrice extends EntityTyped<ProductPriceType>, EntityInfo 
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_CurrencyUom()
-	 * @model keys="uomId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -156,7 +156,7 @@ public interface ProductPrice extends EntityTyped<ProductPriceType>, EntityInfo 
 	 * @return the value of the '<em>Product Store Group</em>' reference.
 	 * @see #setProductStoreGroup(ProductStoreGroup)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_ProductStoreGroup()
-	 * @model keys="productStoreGroupId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -183,7 +183,7 @@ public interface ProductPrice extends EntityTyped<ProductPriceType>, EntityInfo 
 	 * @return the value of the '<em>Created By User Login</em>' reference.
 	 * @see #setCreatedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_CreatedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getCreatedByUserLogin();
@@ -235,8 +235,7 @@ public interface ProductPrice extends EntityTyped<ProductPriceType>, EntityInfo 
 	 * @return the value of the '<em>Custom Price Calc Service</em>' reference.
 	 * @see #setCustomPriceCalcService(CustomMethod)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_CustomPriceCalcService()
-	 * @model keys="customMethodId"
-	 *        annotation="mimo-ent-slot help='Points to a CustomMethod used to specify a service for the calculation of the unit price of the product (NOTE: a better name for this field might be priceCalcCustomMethodId)'"
+	 * @model annotation="mimo-ent-slot help='Points to a CustomMethod used to specify a service for the calculation of the unit price of the product (NOTE: a better name for this field might be priceCalcCustomMethodId)'"
 	 * @generated
 	 */
 	CustomMethod getCustomPriceCalcService();
@@ -289,7 +288,7 @@ public interface ProductPrice extends EntityTyped<ProductPriceType>, EntityInfo 
 	 * @return the value of the '<em>Last Modified By User Login</em>' reference.
 	 * @see #setLastModifiedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_LastModifiedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getLastModifiedByUserLogin();
@@ -443,7 +442,7 @@ public interface ProductPrice extends EntityTyped<ProductPriceType>, EntityInfo 
 	 * @return the value of the '<em>Tax Auth Geo</em>' reference.
 	 * @see #setTaxAuthGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_TaxAuthGeo()
-	 * @model keys="geoId"
+	 * @model
 	 * @generated
 	 */
 	Geo getTaxAuthGeo();
@@ -465,7 +464,7 @@ public interface ProductPrice extends EntityTyped<ProductPriceType>, EntityInfo 
 	 * @return the value of the '<em>Tax Auth Party</em>' reference.
 	 * @see #setTaxAuthParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_TaxAuthParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getTaxAuthParty();
@@ -540,8 +539,7 @@ public interface ProductPrice extends EntityTyped<ProductPriceType>, EntityInfo 
 	 * @return the value of the '<em>Term Uom</em>' reference.
 	 * @see #setTermUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPrice_TermUom()
-	 * @model keys="uomId"
-	 *        annotation="mimo-ent-slot help='Mainly used for recurring and usage prices to specify a time/freq measure, or a usage unit measure (bits, minutes, etc)'"
+	 * @model annotation="mimo-ent-slot help='Mainly used for recurring and usage prices to specify a time/freq measure, or a usage unit measure (bits, minutes, etc)'"
 	 * @generated
 	 */
 	Uom getTermUom();

@@ -38,7 +38,7 @@ public interface FinAccountTypeGlAccount extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Fin Account Type</em>' reference.
 	 * @see #setFinAccountType(FinAccountType)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTypeGlAccount_FinAccountType()
-	 * @model keys="finAccountTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface FinAccountTypeGlAccount extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Organization Party</em>' reference.
 	 * @see #setOrganizationParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTypeGlAccount_OrganizationParty()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -84,7 +84,7 @@ public interface FinAccountTypeGlAccount extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Gl Account</em>' reference.
 	 * @see #setGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountTypeGlAccount_GlAccount()
-	 * @model keys="glAccountId"
+	 * @model
 	 * @generated
 	 */
 	GlAccount getGlAccount();

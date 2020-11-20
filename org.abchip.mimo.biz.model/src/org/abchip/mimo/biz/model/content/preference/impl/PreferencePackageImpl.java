@@ -842,11 +842,8 @@ public class PreferencePackageImpl extends EPackageImpl implements PreferencePac
 
 		initEClass(webUserPreferenceEClass, WebUserPreference.class, "WebUserPreference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getWebUserPreference_WebPreferenceType(), this.getWebPreferenceType(), null, "webPreferenceType", null, 1, 1, WebUserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWebUserPreference_WebPreferenceType().getEKeys().add(this.getWebPreferenceType_WebPreferenceTypeId());
 		initEReference(getWebUserPreference_UserLogin(), theLoginPackage.getUserLogin(), null, "userLogin", null, 1, 1, WebUserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWebUserPreference_UserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEReference(getWebUserPreference_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, WebUserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getWebUserPreference_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getWebUserPreference_VisitId(), ecorePackage.getEString(), "visitId", null, 1, 1, WebUserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getWebUserPreference_WebPreferenceValue(), ecorePackage.getEString(), "webPreferenceValue", null, 0, 1, WebUserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 

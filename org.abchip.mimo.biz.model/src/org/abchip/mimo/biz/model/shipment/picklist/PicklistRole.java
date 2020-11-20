@@ -43,7 +43,7 @@ public interface PicklistRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Picklist</em>' reference.
 	 * @see #setPicklist(Picklist)
 	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistRole_Picklist()
-	 * @model keys="picklistId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -66,7 +66,7 @@ public interface PicklistRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistRole_RoleType()
-	 * @model keys="roleTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -93,7 +93,7 @@ public interface PicklistRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Created By User Login</em>' reference.
 	 * @see #setCreatedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistRole_CreatedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getCreatedByUserLogin();
@@ -146,7 +146,7 @@ public interface PicklistRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Last Modified By User Login</em>' reference.
 	 * @see #setLastModifiedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistRole_LastModifiedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getLastModifiedByUserLogin();

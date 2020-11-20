@@ -67,7 +67,7 @@ public interface SegmentGroup extends EntityTyped<SegmentGroupType>, EntityInfo 
 	 * @return the value of the '<em>Product Store</em>' reference.
 	 * @see #setProductStore(ProductStore)
 	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroup_ProductStore()
-	 * @model keys="productStoreId"
+	 * @model
 	 * @generated
 	 */
 	ProductStore getProductStore();
@@ -113,7 +113,7 @@ public interface SegmentGroup extends EntityTyped<SegmentGroupType>, EntityInfo 
 	 * @return the value of the '<em>Segment Group Type</em>' reference.
 	 * @see #setSegmentGroupType(SegmentGroupType)
 	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroup_SegmentGroupType()
-	 * @model keys="segmentGroupTypeId"
+	 * @model
 	 * @generated
 	 */
 	SegmentGroupType getSegmentGroupType();

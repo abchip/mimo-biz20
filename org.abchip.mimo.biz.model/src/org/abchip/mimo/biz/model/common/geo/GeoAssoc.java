@@ -36,7 +36,7 @@ public interface GeoAssoc extends EntityTyped<GeoAssocType>, EntityInfo {
 	 * @return the value of the '<em>Geo</em>' reference.
 	 * @see #setGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoAssoc_Geo()
-	 * @model keys="geoId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true' help='The enclosed geo'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface GeoAssoc extends EntityTyped<GeoAssocType>, EntityInfo {
 	 * @return the value of the '<em>Geo Id To</em>' reference.
 	 * @see #setGeoIdTo(Geo)
 	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoAssoc_GeoIdTo()
-	 * @model keys="geoId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true' help='The enclosing geo'"
 	 * @generated
 	 */
@@ -86,7 +86,7 @@ public interface GeoAssoc extends EntityTyped<GeoAssocType>, EntityInfo {
 	 * @return the value of the '<em>Geo Assoc Type</em>' reference.
 	 * @see #setGeoAssocType(GeoAssocType)
 	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoAssoc_GeoAssocType()
-	 * @model keys="geoAssocTypeId"
+	 * @model
 	 * @generated
 	 */
 	GeoAssocType getGeoAssocType();

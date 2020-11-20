@@ -106,7 +106,7 @@ public interface CartAbandonedLine extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Prod Catalog</em>' reference.
 	 * @see #setProdCatalog(ProdCatalog)
 	 * @see org.abchip.mimo.biz.model.order.shoppingcart.ShoppingcartPackage#getCartAbandonedLine_ProdCatalog()
-	 * @model keys="prodCatalogId"
+	 * @model
 	 * @generated
 	 */
 	ProdCatalog getProdCatalog();
@@ -128,7 +128,7 @@ public interface CartAbandonedLine extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.order.shoppingcart.ShoppingcartPackage#getCartAbandonedLine_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();

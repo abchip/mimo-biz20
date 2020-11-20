@@ -87,7 +87,7 @@ public interface AgreementType extends EntityType<Agreement>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(AgreementType)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementType_ParentType()
-	 * @model keys="agreementTypeId"
+	 * @model
 	 * @generated
 	 */
 	AgreementType getParentType();

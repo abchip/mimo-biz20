@@ -36,7 +36,7 @@ public interface GoodIdentification extends EntityTyped<GoodIdentificationType>,
 	 * @return the value of the '<em>Good Identification Type</em>' reference.
 	 * @see #setGoodIdentificationType(GoodIdentificationType)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getGoodIdentification_GoodIdentificationType()
-	 * @model keys="goodIdentificationTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface GoodIdentification extends EntityTyped<GoodIdentificationType>,
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getGoodIdentification_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -54,7 +54,7 @@ public interface WorkEffortPartyAssignment extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortPartyAssignment_WorkEffort()
-	 * @model keys="workEffortId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -77,7 +77,7 @@ public interface WorkEffortPartyAssignment extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortPartyAssignment_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -100,7 +100,7 @@ public interface WorkEffortPartyAssignment extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortPartyAssignment_RoleType()
-	 * @model keys="roleTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -149,8 +149,7 @@ public interface WorkEffortPartyAssignment extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Delegate Reason Enum</em>' reference.
 	 * @see #setDelegateReasonEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortPartyAssignment_DelegateReasonEnum()
-	 * @model keys="enumId"
-	 *        annotation="mimo-ent-slot help='Point to Enumeration value with enumTypeId=\"WORK_EFF_DEL_REAS\"'"
+	 * @model annotation="mimo-ent-slot help='Point to Enumeration value with enumTypeId=\"WORK_EFF_DEL_REAS\"'"
 	 * @generated
 	 */
 	Enumeration getDelegateReasonEnum();
@@ -172,8 +171,7 @@ public interface WorkEffortPartyAssignment extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Expectation Enum</em>' reference.
 	 * @see #setExpectationEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortPartyAssignment_ExpectationEnum()
-	 * @model keys="enumId"
-	 *        annotation="mimo-ent-slot help='Point to Enumeration value with enumTypeId=\"WORK_EFF_EXPECT\"'"
+	 * @model annotation="mimo-ent-slot help='Point to Enumeration value with enumTypeId=\"WORK_EFF_EXPECT\"'"
 	 * @generated
 	 */
 	Enumeration getExpectationEnum();
@@ -195,7 +193,7 @@ public interface WorkEffortPartyAssignment extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortPartyAssignment_Facility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getFacility();
@@ -239,8 +237,7 @@ public interface WorkEffortPartyAssignment extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortPartyAssignment_Status()
-	 * @model keys="statusId"
-	 *        annotation="mimo-ent-slot help='Point to StatusItem value with statusTypeId=\"PRTYASGN_STATUS\"'"
+	 * @model annotation="mimo-ent-slot help='Point to StatusItem value with statusTypeId=\"PRTYASGN_STATUS\"'"
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -289,7 +286,7 @@ public interface WorkEffortPartyAssignment extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Assigned By User Login</em>' reference.
 	 * @see #setAssignedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortPartyAssignment_AssignedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getAssignedByUserLogin();
@@ -311,8 +308,7 @@ public interface WorkEffortPartyAssignment extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Availability Status</em>' reference.
 	 * @see #setAvailabilityStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortPartyAssignment_AvailabilityStatus()
-	 * @model keys="statusId"
-	 *        annotation="mimo-ent-slot help='Points to StatusItem value with statusTypeId=\"WEPA_AVAILABILITY\"'"
+	 * @model annotation="mimo-ent-slot help='Points to StatusItem value with statusTypeId=\"WEPA_AVAILABILITY\"'"
 	 * @generated
 	 */
 	StatusItem getAvailabilityStatus();

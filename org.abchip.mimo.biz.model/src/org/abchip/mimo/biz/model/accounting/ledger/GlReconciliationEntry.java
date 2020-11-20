@@ -38,7 +38,7 @@ public interface GlReconciliationEntry extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Gl Reconciliation</em>' reference.
 	 * @see #setGlReconciliation(GlReconciliation)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlReconciliationEntry_GlReconciliation()
-	 * @model keys="glReconciliationId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface GlReconciliationEntry extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Acctg Trans</em>' reference.
 	 * @see #setAcctgTrans(AcctgTrans)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlReconciliationEntry_AcctgTrans()
-	 * @model keys="acctgTransId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

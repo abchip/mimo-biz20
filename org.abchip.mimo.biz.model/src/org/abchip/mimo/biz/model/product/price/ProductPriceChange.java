@@ -53,7 +53,7 @@ public interface ProductPriceChange extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Changed By User Login</em>' reference.
 	 * @see #setChangedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPriceChange_ChangedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getChangedByUserLogin();

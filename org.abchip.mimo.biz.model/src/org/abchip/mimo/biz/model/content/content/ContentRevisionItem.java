@@ -123,7 +123,7 @@ public interface ContentRevisionItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>New Data Resource</em>' reference.
 	 * @see #setNewDataResource(DataResource)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentRevisionItem_NewDataResource()
-	 * @model keys="dataResourceId"
+	 * @model
 	 * @generated
 	 */
 	DataResource getNewDataResource();
@@ -145,7 +145,7 @@ public interface ContentRevisionItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Old Data Resource</em>' reference.
 	 * @see #setOldDataResource(DataResource)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentRevisionItem_OldDataResource()
-	 * @model keys="dataResourceId"
+	 * @model
 	 * @generated
 	 */
 	DataResource getOldDataResource();

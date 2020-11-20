@@ -38,7 +38,7 @@ public interface VisualThemeResource extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Visual Theme</em>' reference.
 	 * @see #setVisualTheme(VisualTheme)
 	 * @see org.abchip.mimo.biz.model.common.theme.ThemePackage#getVisualThemeResource_VisualTheme()
-	 * @model keys="visualThemeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface VisualThemeResource extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Resource Type Enum</em>' reference.
 	 * @see #setResourceTypeEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.common.theme.ThemePackage#getVisualThemeResource_ResourceTypeEnum()
-	 * @model keys="enumId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

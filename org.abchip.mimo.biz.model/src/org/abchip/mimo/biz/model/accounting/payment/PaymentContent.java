@@ -40,7 +40,7 @@ public interface PaymentContent extends EntityTyped<PaymentContentType>, EntityI
 	 * @return the value of the '<em>Payment</em>' reference.
 	 * @see #setPayment(Payment)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentContent_Payment()
-	 * @model keys="paymentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface PaymentContent extends EntityTyped<PaymentContentType>, EntityI
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentContent_Content()
-	 * @model keys="contentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -86,7 +86,7 @@ public interface PaymentContent extends EntityTyped<PaymentContentType>, EntityI
 	 * @return the value of the '<em>Payment Content Type</em>' reference.
 	 * @see #setPaymentContentType(PaymentContentType)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentContent_PaymentContentType()
-	 * @model keys="paymentContentTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

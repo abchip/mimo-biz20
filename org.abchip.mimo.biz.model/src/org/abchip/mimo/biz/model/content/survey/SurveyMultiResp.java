@@ -36,7 +36,7 @@ public interface SurveyMultiResp extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Survey</em>' reference.
 	 * @see #setSurvey(Survey)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyMultiResp_Survey()
-	 * @model keys="surveyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

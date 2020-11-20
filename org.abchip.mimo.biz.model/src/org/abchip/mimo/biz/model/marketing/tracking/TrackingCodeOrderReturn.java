@@ -45,7 +45,7 @@ public interface TrackingCodeOrderReturn extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Return</em>' reference.
 	 * @see #setReturn(ReturnHeader)
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeOrderReturn_Return()
-	 * @model keys="returnId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -68,7 +68,7 @@ public interface TrackingCodeOrderReturn extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeOrderReturn_Order()
-	 * @model keys="orderId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -91,7 +91,7 @@ public interface TrackingCodeOrderReturn extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Tracking Code Type</em>' reference.
 	 * @see #setTrackingCodeType(TrackingCodeType)
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeOrderReturn_TrackingCodeType()
-	 * @model keys="trackingCodeTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -236,7 +236,7 @@ public interface TrackingCodeOrderReturn extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Tracking Code</em>' reference.
 	 * @see #setTrackingCode(TrackingCode)
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeOrderReturn_TrackingCode()
-	 * @model keys="trackingCodeId"
+	 * @model
 	 * @generated
 	 */
 	TrackingCode getTrackingCode();

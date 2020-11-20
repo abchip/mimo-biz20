@@ -37,7 +37,7 @@ public interface WorkRequirementFulfillment extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Requirement</em>' reference.
 	 * @see #setRequirement(Requirement)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getWorkRequirementFulfillment_Requirement()
-	 * @model keys="requirementId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -60,7 +60,7 @@ public interface WorkRequirementFulfillment extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getWorkRequirementFulfillment_WorkEffort()
-	 * @model keys="workEffortId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -83,7 +83,7 @@ public interface WorkRequirementFulfillment extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Work Req Fulf Type</em>' reference.
 	 * @see #setWorkReqFulfType(WorkReqFulfType)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getWorkRequirementFulfillment_WorkReqFulfType()
-	 * @model keys="workReqFulfTypeId"
+	 * @model
 	 * @generated
 	 */
 	WorkReqFulfType getWorkReqFulfType();

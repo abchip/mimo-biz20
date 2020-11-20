@@ -90,7 +90,7 @@ public interface Agreement extends EntityTyped<AgreementType>, EntityInfo {
 	 * @return the value of the '<em>Agreement Type</em>' reference.
 	 * @see #setAgreementType(AgreementType)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreement_AgreementType()
-	 * @model keys="agreementTypeId"
+	 * @model
 	 * @generated
 	 */
 	AgreementType getAgreementType();
@@ -168,7 +168,7 @@ public interface Agreement extends EntityTyped<AgreementType>, EntityInfo {
 	 * @return the value of the '<em>Party Id From</em>' reference.
 	 * @see #setPartyIdFrom(Party)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreement_PartyIdFrom()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getPartyIdFrom();
@@ -194,7 +194,7 @@ public interface Agreement extends EntityTyped<AgreementType>, EntityInfo {
 	 * @return the value of the '<em>Party Id To</em>' reference.
 	 * @see #setPartyIdTo(Party)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreement_PartyIdTo()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getPartyIdTo();
@@ -216,7 +216,7 @@ public interface Agreement extends EntityTyped<AgreementType>, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreement_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();
@@ -242,7 +242,7 @@ public interface Agreement extends EntityTyped<AgreementType>, EntityInfo {
 	 * @return the value of the '<em>Role Type Id From</em>' reference.
 	 * @see #setRoleTypeIdFrom(RoleType)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreement_RoleTypeIdFrom()
-	 * @model keys="roleTypeId"
+	 * @model
 	 * @generated
 	 */
 	RoleType getRoleTypeIdFrom();
@@ -268,7 +268,7 @@ public interface Agreement extends EntityTyped<AgreementType>, EntityInfo {
 	 * @return the value of the '<em>Role Type Id To</em>' reference.
 	 * @see #setRoleTypeIdTo(RoleType)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreement_RoleTypeIdTo()
-	 * @model keys="roleTypeId"
+	 * @model
 	 * @generated
 	 */
 	RoleType getRoleTypeIdTo();

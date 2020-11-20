@@ -64,7 +64,7 @@ public interface TestingNode extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Primary Parent Node</em>' reference.
 	 * @see #setPrimaryParentNode(TestingNode)
 	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingNode_PrimaryParentNode()
-	 * @model keys="testingNodeId"
+	 * @model
 	 * @generated
 	 */
 	TestingNode getPrimaryParentNode();
@@ -87,7 +87,7 @@ public interface TestingNode extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Testing Node Members</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingNode_TestingNodeMembers()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<TestingNodeMember> getTestingNodeMembers();

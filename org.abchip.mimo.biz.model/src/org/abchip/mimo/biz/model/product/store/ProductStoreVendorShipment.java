@@ -39,7 +39,7 @@ public interface ProductStoreVendorShipment extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Product Store</em>' reference.
 	 * @see #setProductStore(ProductStore)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreVendorShipment_ProductStore()
-	 * @model keys="productStoreId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface ProductStoreVendorShipment extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Vendor Party</em>' reference.
 	 * @see #setVendorParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreVendorShipment_VendorParty()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -85,7 +85,7 @@ public interface ProductStoreVendorShipment extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Shipment Method Type</em>' reference.
 	 * @see #setShipmentMethodType(ShipmentMethodType)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreVendorShipment_ShipmentMethodType()
-	 * @model keys="shipmentMethodTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -108,7 +108,7 @@ public interface ProductStoreVendorShipment extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Carrier Party</em>' reference.
 	 * @see #setCarrierParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreVendorShipment_CarrierParty()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

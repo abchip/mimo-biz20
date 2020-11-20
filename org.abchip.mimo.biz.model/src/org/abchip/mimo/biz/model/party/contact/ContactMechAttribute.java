@@ -37,7 +37,7 @@ public interface ContactMechAttribute extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Contact Mech</em>' reference.
 	 * @see #setContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getContactMechAttribute_ContactMech()
-	 * @model keys="contactMechId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

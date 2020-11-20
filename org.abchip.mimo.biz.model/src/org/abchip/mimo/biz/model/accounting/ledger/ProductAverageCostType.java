@@ -85,7 +85,7 @@ public interface ProductAverageCostType extends EntityType<ProductAverageCost>, 
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(ProductAverageCostType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getProductAverageCostType_ParentType()
-	 * @model keys="productAverageCostTypeId"
+	 * @model
 	 * @generated
 	 */
 	ProductAverageCostType getParentType();

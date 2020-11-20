@@ -63,7 +63,7 @@ public interface PartyClassificationGroup extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Parent Group</em>' reference.
 	 * @see #setParentGroup(PartyClassificationGroup)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyClassificationGroup_ParentGroup()
-	 * @model keys="partyClassificationGroupId"
+	 * @model
 	 * @generated
 	 */
 	PartyClassificationGroup getParentGroup();
@@ -85,7 +85,7 @@ public interface PartyClassificationGroup extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Party Classification Type</em>' reference.
 	 * @see #setPartyClassificationType(PartyClassificationType)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyClassificationGroup_PartyClassificationType()
-	 * @model keys="partyClassificationTypeId"
+	 * @model
 	 * @generated
 	 */
 	PartyClassificationType getPartyClassificationType();

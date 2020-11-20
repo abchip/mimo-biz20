@@ -114,7 +114,7 @@ public interface InvoiceItemType extends EntityType<InvoiceItem>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(InvoiceItemType)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemType_ParentType()
-	 * @model keys="invoiceItemTypeId"
+	 * @model
 	 * @generated
 	 */
 	InvoiceItemType getParentType();
@@ -163,7 +163,7 @@ public interface InvoiceItemType extends EntityType<InvoiceItem>, EntityInfo {
 	 * @return the value of the '<em>Default Gl Account</em>' reference.
 	 * @see #setDefaultGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemType_DefaultGlAccount()
-	 * @model keys="glAccountId"
+	 * @model
 	 * @generated
 	 */
 	GlAccount getDefaultGlAccount();

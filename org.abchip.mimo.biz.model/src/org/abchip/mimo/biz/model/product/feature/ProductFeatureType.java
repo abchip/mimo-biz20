@@ -85,7 +85,7 @@ public interface ProductFeatureType extends EntityType<ProductFeature>, EntityIn
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(ProductFeatureType)
 	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureType_ParentType()
-	 * @model keys="productFeatureTypeId"
+	 * @model
 	 * @generated
 	 */
 	ProductFeatureType getParentType();

@@ -63,7 +63,7 @@ public interface CustRequestCategory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Cust Request Type</em>' reference.
 	 * @see #setCustRequestType(CustRequestType)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestCategory_CustRequestType()
-	 * @model keys="custRequestTypeId"
+	 * @model
 	 * @generated
 	 */
 	CustRequestType getCustRequestType();

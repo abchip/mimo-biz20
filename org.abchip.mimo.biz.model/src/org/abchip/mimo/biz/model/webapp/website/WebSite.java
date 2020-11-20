@@ -346,7 +346,7 @@ public interface WebSite extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Store</em>' reference.
 	 * @see #setProductStore(ProductStore)
 	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebSite_ProductStore()
-	 * @model keys="productStoreId"
+	 * @model
 	 * @generated
 	 */
 	ProductStore getProductStore();
@@ -446,7 +446,7 @@ public interface WebSite extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Visual Theme Set</em>' reference.
 	 * @see #setVisualThemeSet(VisualThemeSet)
 	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebSite_VisualThemeSet()
-	 * @model keys="visualThemeSetId"
+	 * @model
 	 * @generated
 	 */
 	VisualThemeSet getVisualThemeSet();
@@ -481,7 +481,7 @@ public interface WebSite extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Web Site Contact Lists</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebSite_WebSiteContactLists()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<WebSiteContactList> getWebSiteContactLists();
@@ -494,7 +494,7 @@ public interface WebSite extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Web Site Path Aliass</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebSite_WebSitePathAliass()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<WebSitePathAlias> getWebSitePathAliass();

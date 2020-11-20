@@ -49,7 +49,7 @@ public interface ProductPromoAction extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Promo</em>' reference.
 	 * @see #setProductPromo(ProductPromo)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoAction_ProductPromo()
-	 * @model keys="productPromoId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -98,7 +98,7 @@ public interface ProductPromoAction extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Custom Method</em>' reference.
 	 * @see #setCustomMethod(CustomMethod)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoAction_CustomMethod()
-	 * @model keys="customMethodId"
+	 * @model
 	 * @generated
 	 */
 	CustomMethod getCustomMethod();
@@ -120,7 +120,7 @@ public interface ProductPromoAction extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order Adjustment Type</em>' reference.
 	 * @see #setOrderAdjustmentType(OrderAdjustmentType)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoAction_OrderAdjustmentType()
-	 * @model keys="orderAdjustmentTypeId"
+	 * @model
 	 * @generated
 	 */
 	OrderAdjustmentType getOrderAdjustmentType();
@@ -194,7 +194,7 @@ public interface ProductPromoAction extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Promo Action Enum</em>' reference.
 	 * @see #setProductPromoActionEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoAction_ProductPromoActionEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getProductPromoActionEnum();

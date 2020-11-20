@@ -46,7 +46,7 @@ public interface ProductAverageCost extends EntityTyped<ProductAverageCostType>,
 	 * @return the value of the '<em>Product Average Cost Type</em>' reference.
 	 * @see #setProductAverageCostType(ProductAverageCostType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getProductAverageCost_ProductAverageCostType()
-	 * @model keys="productAverageCostTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -69,7 +69,7 @@ public interface ProductAverageCost extends EntityTyped<ProductAverageCostType>,
 	 * @return the value of the '<em>Organization Party</em>' reference.
 	 * @see #setOrganizationParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getProductAverageCost_OrganizationParty()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -92,7 +92,7 @@ public interface ProductAverageCost extends EntityTyped<ProductAverageCostType>,
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getProductAverageCost_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -115,7 +115,7 @@ public interface ProductAverageCost extends EntityTyped<ProductAverageCostType>,
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getProductAverageCost_Facility()
-	 * @model keys="facilityId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

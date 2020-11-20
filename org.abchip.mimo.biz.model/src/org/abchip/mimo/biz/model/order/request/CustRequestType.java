@@ -128,7 +128,7 @@ public interface CustRequestType extends EntityType<CustRequest>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(CustRequestType)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestType_ParentType()
-	 * @model keys="custRequestTypeId"
+	 * @model
 	 * @generated
 	 */
 	CustRequestType getParentType();
@@ -150,8 +150,7 @@ public interface CustRequestType extends EntityType<CustRequest>, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequestType_Party()
-	 * @model keys="partyId"
-	 *        annotation="mimo-ent-slot help='party or party group(via partyRelationShip entity) responsible for responding to the communication request of this particular type'"
+	 * @model annotation="mimo-ent-slot help='party or party group(via partyRelationShip entity) responsible for responding to the communication request of this particular type'"
 	 * @generated
 	 */
 	Party getParty();

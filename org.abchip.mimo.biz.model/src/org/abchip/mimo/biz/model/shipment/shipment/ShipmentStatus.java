@@ -40,7 +40,7 @@ public interface ShipmentStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentStatus_Status()
-	 * @model keys="statusId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface ShipmentStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Shipment</em>' reference.
 	 * @see #setShipment(Shipment)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentStatus_Shipment()
-	 * @model keys="shipmentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -86,7 +86,7 @@ public interface ShipmentStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Change By User Login</em>' reference.
 	 * @see #setChangeByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentStatus_ChangeByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getChangeByUserLogin();

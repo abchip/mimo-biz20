@@ -94,7 +94,7 @@ public interface RecurrenceInfo extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Exception Rule</em>' reference.
 	 * @see #setExceptionRule(RecurrenceRule)
 	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getRecurrenceInfo_ExceptionRule()
-	 * @model keys="recurrenceRuleId"
+	 * @model
 	 * @generated
 	 */
 	RecurrenceRule getExceptionRule();
@@ -169,7 +169,7 @@ public interface RecurrenceInfo extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Recurrence Rule</em>' reference.
 	 * @see #setRecurrenceRule(RecurrenceRule)
 	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getRecurrenceInfo_RecurrenceRule()
-	 * @model keys="recurrenceRuleId"
+	 * @model
 	 * @generated
 	 */
 	RecurrenceRule getRecurrenceRule();

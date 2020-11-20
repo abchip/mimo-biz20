@@ -50,7 +50,7 @@ public interface RateAmount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Rate Type</em>' reference.
 	 * @see #setRateType(RateType)
 	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getRateAmount_RateType()
-	 * @model keys="rateTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -73,7 +73,7 @@ public interface RateAmount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Rate Currency Uom</em>' reference.
 	 * @see #setRateCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getRateAmount_RateCurrencyUom()
-	 * @model keys="uomId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -96,7 +96,7 @@ public interface RateAmount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getRateAmount_WorkEffort()
-	 * @model keys="workEffortId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -119,7 +119,7 @@ public interface RateAmount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getRateAmount_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -142,7 +142,7 @@ public interface RateAmount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Empl Position Type</em>' reference.
 	 * @see #setEmplPositionType(EmplPositionType)
 	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getRateAmount_EmplPositionType()
-	 * @model keys="emplPositionTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -165,7 +165,7 @@ public interface RateAmount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Period Type</em>' reference.
 	 * @see #setPeriodType(PeriodType)
 	 * @see org.abchip.mimo.biz.model.accounting.rate.RatePackage#getRateAmount_PeriodType()
-	 * @model keys="periodTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

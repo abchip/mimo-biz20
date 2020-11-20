@@ -41,7 +41,7 @@ public interface FacilityContactMechPurpose extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Contact Mech Purpose Type</em>' reference.
 	 * @see #setContactMechPurposeType(ContactMechPurposeType)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityContactMechPurpose_ContactMechPurposeType()
-	 * @model keys="contactMechPurposeTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface FacilityContactMechPurpose extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityContactMechPurpose_Facility()
-	 * @model keys="facilityId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -87,7 +87,7 @@ public interface FacilityContactMechPurpose extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Contact Mech</em>' reference.
 	 * @see #setContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityContactMechPurpose_ContactMech()
-	 * @model keys="contactMechId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

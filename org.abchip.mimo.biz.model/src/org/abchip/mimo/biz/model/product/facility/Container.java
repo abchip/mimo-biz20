@@ -65,7 +65,7 @@ public interface Container extends EntityTyped<ContainerType>, EntityInfo {
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getContainer_Facility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getFacility();
@@ -115,7 +115,7 @@ public interface Container extends EntityTyped<ContainerType>, EntityInfo {
 	 * @return the value of the '<em>Container Geo Points</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getContainer_ContainerGeoPoints()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ContainerGeoPoint> getContainerGeoPoints();
@@ -127,7 +127,7 @@ public interface Container extends EntityTyped<ContainerType>, EntityInfo {
 	 * @return the value of the '<em>Container Type</em>' reference.
 	 * @see #setContainerType(ContainerType)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getContainer_ContainerType()
-	 * @model keys="containerTypeId"
+	 * @model
 	 * @generated
 	 */
 	ContainerType getContainerType();

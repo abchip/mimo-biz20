@@ -85,7 +85,7 @@ public interface StatusType extends EntityType<StatusItem>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(StatusType)
 	 * @see org.abchip.mimo.biz.model.common.status.StatusPackage#getStatusType_ParentType()
-	 * @model keys="statusTypeId"
+	 * @model
 	 * @generated
 	 */
 	StatusType getParentType();

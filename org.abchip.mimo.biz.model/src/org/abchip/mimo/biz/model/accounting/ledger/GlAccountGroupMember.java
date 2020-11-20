@@ -36,7 +36,7 @@ public interface GlAccountGroupMember extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Gl Account</em>' reference.
 	 * @see #setGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccountGroupMember_GlAccount()
-	 * @model keys="glAccountId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface GlAccountGroupMember extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Gl Account Group Type</em>' reference.
 	 * @see #setGlAccountGroupType(GlAccountGroupType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccountGroupMember_GlAccountGroupType()
-	 * @model keys="glAccountGroupTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -82,7 +82,7 @@ public interface GlAccountGroupMember extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Gl Account Group</em>' reference.
 	 * @see #setGlAccountGroup(GlAccountGroup)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccountGroupMember_GlAccountGroup()
-	 * @model keys="glAccountGroupId"
+	 * @model
 	 * @generated
 	 */
 	GlAccountGroup getGlAccountGroup();

@@ -72,7 +72,7 @@ public interface ProductGroupOrder extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Job</em>' reference.
 	 * @see #setJob(JobSandbox)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductGroupOrder_Job()
-	 * @model keys="jobId"
+	 * @model
 	 * @generated
 	 */
 	JobSandbox getJob();
@@ -94,7 +94,7 @@ public interface ProductGroupOrder extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductGroupOrder_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();
@@ -195,7 +195,7 @@ public interface ProductGroupOrder extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductGroupOrder_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

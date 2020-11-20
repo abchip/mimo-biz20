@@ -47,7 +47,7 @@ public interface FixedAssetProduct extends EntityTyped<FixedAssetProductType>, E
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetProduct_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -70,7 +70,7 @@ public interface FixedAssetProduct extends EntityTyped<FixedAssetProductType>, E
 	 * @return the value of the '<em>Fixed Asset</em>' reference.
 	 * @see #setFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetProduct_FixedAsset()
-	 * @model keys="fixedAssetId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -93,7 +93,7 @@ public interface FixedAssetProduct extends EntityTyped<FixedAssetProductType>, E
 	 * @return the value of the '<em>Fixed Asset Product Type</em>' reference.
 	 * @see #setFixedAssetProductType(FixedAssetProductType)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetProduct_FixedAssetProductType()
-	 * @model keys="fixedAssetProductTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -195,7 +195,7 @@ public interface FixedAssetProduct extends EntityTyped<FixedAssetProductType>, E
 	 * @return the value of the '<em>Quantity Uom</em>' reference.
 	 * @see #setQuantityUom(Uom)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetProduct_QuantityUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getQuantityUom();

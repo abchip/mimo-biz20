@@ -41,7 +41,7 @@ public interface WebSiteRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getWebSiteRole_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface WebSiteRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getWebSiteRole_RoleType()
-	 * @model keys="roleTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -87,7 +87,7 @@ public interface WebSiteRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Web Site</em>' reference.
 	 * @see #setWebSite(WebSite)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getWebSiteRole_WebSite()
-	 * @model keys="webSiteId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -67,7 +67,7 @@ public interface SubscriptionResource extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Resource</em>' reference.
 	 * @see #setParentResource(SubscriptionResource)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionResource_ParentResource()
-	 * @model keys="subscriptionResourceId"
+	 * @model
 	 * @generated
 	 */
 	SubscriptionResource getParentResource();
@@ -116,8 +116,7 @@ public interface SubscriptionResource extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Web Site</em>' reference.
 	 * @see #setWebSite(WebSite)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionResource_WebSite()
-	 * @model keys="webSiteId"
-	 *        annotation="mimo-ent-slot help='Optional (use if applicable) ID of a WebSite record that this would represent a subscription to.'"
+	 * @model annotation="mimo-ent-slot help='Optional (use if applicable) ID of a WebSite record that this would represent a subscription to.'"
 	 * @generated
 	 */
 	WebSite getWebSite();
@@ -166,8 +165,7 @@ public interface SubscriptionResource extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionResource_Content()
-	 * @model keys="contentId"
-	 *        annotation="mimo-ent-slot help='Optional (use if applicable) ID of a Content record that this would represent a subscription to.'"
+	 * @model annotation="mimo-ent-slot help='Optional (use if applicable) ID of a Content record that this would represent a subscription to.'"
 	 * @generated
 	 */
 	Content getContent();

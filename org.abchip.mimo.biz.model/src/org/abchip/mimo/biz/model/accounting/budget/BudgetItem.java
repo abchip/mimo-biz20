@@ -40,7 +40,7 @@ public interface BudgetItem extends EntityTyped<BudgetItemType>, EntityInfo {
 	 * @return the value of the '<em>Budget</em>' reference.
 	 * @see #setBudget(Budget)
 	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetItem_Budget()
-	 * @model keys="budgetId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -89,7 +89,7 @@ public interface BudgetItem extends EntityTyped<BudgetItemType>, EntityInfo {
 	 * @return the value of the '<em>Budget Item Type</em>' reference.
 	 * @see #setBudgetItemType(BudgetItemType)
 	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetItem_BudgetItemType()
-	 * @model keys="budgetItemTypeId"
+	 * @model
 	 * @generated
 	 */
 	BudgetItemType getBudgetItemType();

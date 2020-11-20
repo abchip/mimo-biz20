@@ -155,7 +155,7 @@ public interface GlAccount extends EntityTyped<GlAccountType>, EntityInfo {
 	 * @return the value of the '<em>Gl Account Category Members</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlAccountCategoryMembers()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<GlAccountCategoryMember> getGlAccountCategoryMembers();
@@ -167,7 +167,7 @@ public interface GlAccount extends EntityTyped<GlAccountType>, EntityInfo {
 	 * @return the value of the '<em>Gl Account Class</em>' reference.
 	 * @see #setGlAccountClass(GlAccountClass)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlAccountClass()
-	 * @model keys="glAccountClassId"
+	 * @model
 	 * @generated
 	 */
 	GlAccountClass getGlAccountClass();
@@ -239,7 +239,7 @@ public interface GlAccount extends EntityTyped<GlAccountType>, EntityInfo {
 	 * @return the value of the '<em>Gl Resource Type</em>' reference.
 	 * @see #setGlResourceType(GlResourceType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlResourceType()
-	 * @model keys="glResourceTypeId"
+	 * @model
 	 * @generated
 	 */
 	GlResourceType getGlResourceType();
@@ -261,7 +261,7 @@ public interface GlAccount extends EntityTyped<GlAccountType>, EntityInfo {
 	 * @return the value of the '<em>Gl Xbrl Class</em>' reference.
 	 * @see #setGlXbrlClass(GlXbrlClass)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlXbrlClass()
-	 * @model keys="glXbrlClassId"
+	 * @model
 	 * @generated
 	 */
 	GlXbrlClass getGlXbrlClass();
@@ -283,7 +283,7 @@ public interface GlAccount extends EntityTyped<GlAccountType>, EntityInfo {
 	 * @return the value of the '<em>Parent Gl Account</em>' reference.
 	 * @see #setParentGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_ParentGlAccount()
-	 * @model keys="glAccountId"
+	 * @model
 	 * @generated
 	 */
 	GlAccount getParentGlAccount();
@@ -305,7 +305,7 @@ public interface GlAccount extends EntityTyped<GlAccountType>, EntityInfo {
 	 * @return the value of the '<em>Gl Account Type</em>' reference.
 	 * @see #setGlAccountType(GlAccountType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlAccountType()
-	 * @model keys="glAccountTypeId"
+	 * @model
 	 * @generated
 	 */
 	GlAccountType getGlAccountType();
@@ -328,7 +328,7 @@ public interface GlAccount extends EntityTyped<GlAccountType>, EntityInfo {
 	 * @return the value of the '<em>Gl Budget Xrefs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_GlBudgetXrefs()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<GlBudgetXref> getGlBudgetXrefs();

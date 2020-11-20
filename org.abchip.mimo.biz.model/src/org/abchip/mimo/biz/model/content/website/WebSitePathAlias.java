@@ -43,7 +43,7 @@ public interface WebSitePathAlias extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Web Site</em>' reference.
 	 * @see #setWebSite(WebSite)
 	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebSitePathAlias_WebSite()
-	 * @model keys="webSiteId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -92,7 +92,7 @@ public interface WebSitePathAlias extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebSitePathAlias_Content()
-	 * @model keys="contentId"
+	 * @model
 	 * @generated
 	 */
 	Content getContent();

@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.party.party;
 
+import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
-import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +29,7 @@ import org.abchip.mimo.entity.EntityType;
  * @model annotation="mimo-ent-frame dictionary='PartyEntityLabels' formula='description'"
  * @generated
  */
-public interface PartyClassificationType extends EntityType<PartyClassification>, EntityInfo {
+public interface PartyClassificationType extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -85,7 +85,7 @@ public interface PartyClassificationType extends EntityType<PartyClassification>
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(PartyClassificationType)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyClassificationType_ParentType()
-	 * @model keys="partyClassificationTypeId"
+	 * @model
 	 * @generated
 	 */
 	PartyClassificationType getParentType();

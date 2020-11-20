@@ -40,7 +40,7 @@ public interface TestingNodeMember extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Testing</em>' reference.
 	 * @see #setTesting(Testing)
 	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingNodeMember_Testing()
-	 * @model keys="testingId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface TestingNodeMember extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Testing Node</em>' reference.
 	 * @see #setTestingNode(TestingNode)
 	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingNodeMember_TestingNode()
-	 * @model keys="testingNodeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

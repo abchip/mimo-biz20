@@ -89,7 +89,7 @@ public interface ShipmentGatewayConfigType extends EntityType<ShipmentGatewayCon
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(ShipmentGatewayConfigType)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentGatewayConfigType_ParentType()
-	 * @model keys="shipmentGatewayConfTypeId"
+	 * @model
 	 * @generated
 	 */
 	ShipmentGatewayConfigType getParentType();

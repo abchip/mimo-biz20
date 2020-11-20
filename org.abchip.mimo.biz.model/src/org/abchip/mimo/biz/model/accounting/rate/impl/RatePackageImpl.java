@@ -973,9 +973,7 @@ public class RatePackageImpl extends EPackageImpl implements RatePackage {
 		// Initialize classes and features; add operations and parameters
 		initEClass(partyRateEClass, PartyRate.class, "PartyRate", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPartyRate_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, PartyRate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyRate_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getPartyRate_RateType(), this.getRateType(), null, "rateType", null, 1, 1, PartyRate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getPartyRate_RateType().getEKeys().add(this.getRateType_RateTypeId());
 		initEAttribute(getPartyRate_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, PartyRate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyRate_DefaultRate(), ecorePackage.getEBoolean(), "defaultRate", null, 1, 1, PartyRate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyRate_PercentageUsed(), ecorePackage.getEDouble(), "percentageUsed", null, 0, 1, PartyRate.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -983,17 +981,11 @@ public class RatePackageImpl extends EPackageImpl implements RatePackage {
 
 		initEClass(rateAmountEClass, RateAmount.class, "RateAmount", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getRateAmount_RateType(), this.getRateType(), null, "rateType", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRateAmount_RateType().getEKeys().add(this.getRateType_RateTypeId());
 		initEReference(getRateAmount_RateCurrencyUom(), theUomPackage.getUom(), null, "rateCurrencyUom", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRateAmount_RateCurrencyUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEReference(getRateAmount_WorkEffort(), theWorkeffortPackage.getWorkEffort(), null, "workEffort", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRateAmount_WorkEffort().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
 		initEReference(getRateAmount_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRateAmount_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getRateAmount_EmplPositionType(), thePositionPackage.getEmplPositionType(), null, "emplPositionType", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRateAmount_EmplPositionType().getEKeys().add(thePositionPackage.getEmplPositionType_EmplPositionTypeId());
 		initEReference(getRateAmount_PeriodType(), thePeriodPackage.getPeriodType(), null, "periodType", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getRateAmount_PeriodType().getEKeys().add(thePeriodPackage.getPeriodType_PeriodTypeId());
 		initEAttribute(getRateAmount_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRateAmount_RateAmount(), ecorePackage.getEBigDecimal(), "rateAmount", null, 0, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getRateAmount_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, RateAmount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

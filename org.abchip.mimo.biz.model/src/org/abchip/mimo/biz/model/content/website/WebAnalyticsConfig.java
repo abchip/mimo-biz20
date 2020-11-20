@@ -37,7 +37,7 @@ public interface WebAnalyticsConfig extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Web Analytics Type</em>' reference.
 	 * @see #setWebAnalyticsType(WebAnalyticsType)
 	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebAnalyticsConfig_WebAnalyticsType()
-	 * @model keys="webAnalyticsTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -60,7 +60,7 @@ public interface WebAnalyticsConfig extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Web Site</em>' reference.
 	 * @see #setWebSite(WebSite)
 	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebAnalyticsConfig_WebSite()
-	 * @model keys="webSiteId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

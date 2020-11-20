@@ -25,7 +25,8 @@ import org.abchip.mimo.biz.model.content.document.Document;
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShippingDocument()
- * @model annotation="mimo-ent-frame formula='description'"
+ * @model annotation="mimo-ent-frame-constraints documentType='SHIPPING_DOCUMENT'"
+ *        annotation="mimo-ent-frame formula='description'"
  * @generated
  */
 public interface ShippingDocument extends Document {

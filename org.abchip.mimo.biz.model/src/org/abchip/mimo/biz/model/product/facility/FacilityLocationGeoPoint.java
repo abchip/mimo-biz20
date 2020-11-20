@@ -40,7 +40,7 @@ public interface FacilityLocationGeoPoint extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Geo Point</em>' reference.
 	 * @see #setGeoPoint(GeoPoint)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityLocationGeoPoint_GeoPoint()
-	 * @model keys="geoPointId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

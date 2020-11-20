@@ -67,7 +67,7 @@ public interface AcctgTransEntry extends EntityTyped<AcctgTransEntryType>, Entit
 	 * @return the value of the '<em>Acctg Trans</em>' reference.
 	 * @see #setAcctgTrans(AcctgTrans)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransEntry_AcctgTrans()
-	 * @model keys="acctgTransId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -118,7 +118,7 @@ public interface AcctgTransEntry extends EntityTyped<AcctgTransEntryType>, Entit
 	 * @return the value of the '<em>Acctg Trans Entry Type</em>' reference.
 	 * @see #setAcctgTransEntryType(AcctgTransEntryType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransEntry_AcctgTransEntryType()
-	 * @model keys="acctgTransEntryTypeId"
+	 * @model
 	 * @generated
 	 */
 	AcctgTransEntryType getAcctgTransEntryType();
@@ -166,7 +166,7 @@ public interface AcctgTransEntry extends EntityTyped<AcctgTransEntryType>, Entit
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransEntry_CurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getCurrencyUom();
@@ -269,7 +269,7 @@ public interface AcctgTransEntry extends EntityTyped<AcctgTransEntryType>, Entit
 	 * @return the value of the '<em>Gl Account</em>' reference.
 	 * @see #setGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransEntry_GlAccount()
-	 * @model keys="glAccountId"
+	 * @model
 	 * @generated
 	 */
 	GlAccount getGlAccount();
@@ -291,7 +291,7 @@ public interface AcctgTransEntry extends EntityTyped<AcctgTransEntryType>, Entit
 	 * @return the value of the '<em>Gl Account Type</em>' reference.
 	 * @see #setGlAccountType(GlAccountType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransEntry_GlAccountType()
-	 * @model keys="glAccountTypeId"
+	 * @model
 	 * @generated
 	 */
 	GlAccountType getGlAccountType();
@@ -339,7 +339,7 @@ public interface AcctgTransEntry extends EntityTyped<AcctgTransEntryType>, Entit
 	 * @return the value of the '<em>Inventory Item</em>' reference.
 	 * @see #setInventoryItem(InventoryItem)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransEntry_InventoryItem()
-	 * @model keys="inventoryItemId"
+	 * @model
 	 * @generated
 	 */
 	InventoryItem getInventoryItem();
@@ -435,7 +435,7 @@ public interface AcctgTransEntry extends EntityTyped<AcctgTransEntryType>, Entit
 	 * @return the value of the '<em>Orig Currency Uom</em>' reference.
 	 * @see #setOrigCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransEntry_OrigCurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getOrigCurrencyUom();
@@ -457,7 +457,7 @@ public interface AcctgTransEntry extends EntityTyped<AcctgTransEntryType>, Entit
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransEntry_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -505,7 +505,7 @@ public interface AcctgTransEntry extends EntityTyped<AcctgTransEntryType>, Entit
 	 * @return the value of the '<em>Reconcile Status</em>' reference.
 	 * @see #setReconcileStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransEntry_ReconcileStatus()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getReconcileStatus();
@@ -527,7 +527,7 @@ public interface AcctgTransEntry extends EntityTyped<AcctgTransEntryType>, Entit
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransEntry_RoleType()
-	 * @model keys="roleTypeId"
+	 * @model
 	 * @generated
 	 */
 	RoleType getRoleType();
@@ -549,7 +549,7 @@ public interface AcctgTransEntry extends EntityTyped<AcctgTransEntryType>, Entit
 	 * @return the value of the '<em>Settlement Term</em>' reference.
 	 * @see #setSettlementTerm(SettlementTerm)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransEntry_SettlementTerm()
-	 * @model keys="settlementTermId"
+	 * @model
 	 * @generated
 	 */
 	SettlementTerm getSettlementTerm();

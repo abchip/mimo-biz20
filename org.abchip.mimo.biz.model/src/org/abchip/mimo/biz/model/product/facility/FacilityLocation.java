@@ -44,7 +44,7 @@ public interface FacilityLocation extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityLocation_Facility()
-	 * @model keys="facilityId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -119,7 +119,7 @@ public interface FacilityLocation extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Geo Point</em>' reference.
 	 * @see #setGeoPoint(GeoPoint)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityLocation_GeoPoint()
-	 * @model keys="geoPointId"
+	 * @model
 	 * @generated
 	 */
 	GeoPoint getGeoPoint();
@@ -167,7 +167,7 @@ public interface FacilityLocation extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Location Type Enum</em>' reference.
 	 * @see #setLocationTypeEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityLocation_LocationTypeEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getLocationTypeEnum();

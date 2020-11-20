@@ -49,7 +49,7 @@ public interface ProductContent extends EntityTyped<ProductContentType>, EntityI
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductContent_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -72,7 +72,7 @@ public interface ProductContent extends EntityTyped<ProductContentType>, EntityI
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductContent_Content()
-	 * @model keys="contentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -95,7 +95,7 @@ public interface ProductContent extends EntityTyped<ProductContentType>, EntityI
 	 * @return the value of the '<em>Product Content Type</em>' reference.
 	 * @see #setProductContentType(ProductContentType)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductContent_ProductContentType()
-	 * @model keys="productContentTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -275,7 +275,7 @@ public interface ProductContent extends EntityTyped<ProductContentType>, EntityI
 	 * @return the value of the '<em>Use Role Type</em>' reference.
 	 * @see #setUseRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductContent_UseRoleType()
-	 * @model keys="roleTypeId"
+	 * @model
 	 * @generated
 	 */
 	RoleType getUseRoleType();
@@ -323,7 +323,7 @@ public interface ProductContent extends EntityTyped<ProductContentType>, EntityI
 	 * @return the value of the '<em>Use Time Uom</em>' reference.
 	 * @see #setUseTimeUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductContent_UseTimeUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getUseTimeUom();

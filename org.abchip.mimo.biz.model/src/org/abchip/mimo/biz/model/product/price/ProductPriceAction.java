@@ -39,7 +39,7 @@ public interface ProductPriceAction extends EntityTyped<ProductPriceActionType>,
 	 * @return the value of the '<em>Product Price Rule</em>' reference.
 	 * @see #setProductPriceRule(ProductPriceRule)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPriceAction_ProductPriceRule()
-	 * @model keys="productPriceRuleId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -88,7 +88,7 @@ public interface ProductPriceAction extends EntityTyped<ProductPriceActionType>,
 	 * @return the value of the '<em>Product Price Action Type</em>' reference.
 	 * @see #setProductPriceActionType(ProductPriceActionType)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPriceAction_ProductPriceActionType()
-	 * @model keys="productPriceActionTypeId"
+	 * @model
 	 * @generated
 	 */
 	ProductPriceActionType getProductPriceActionType();

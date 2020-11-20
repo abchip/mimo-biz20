@@ -40,7 +40,7 @@ public interface BudgetScenarioApplication extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Budget Scenario</em>' reference.
 	 * @see #setBudgetScenario(BudgetScenario)
 	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetScenarioApplication_BudgetScenario()
-	 * @model keys="budgetScenarioId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -89,7 +89,7 @@ public interface BudgetScenarioApplication extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Budget</em>' reference.
 	 * @see #setBudget(Budget)
 	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetScenarioApplication_Budget()
-	 * @model keys="budgetId"
+	 * @model
 	 * @generated
 	 */
 	Budget getBudget();

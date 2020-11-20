@@ -44,7 +44,7 @@ public interface WorkEffortSearchConstraint extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Work Effort Search Result</em>' reference.
 	 * @see #setWorkEffortSearchResult(WorkEffortSearchResult)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortSearchConstraint_WorkEffortSearchResult()
-	 * @model keys="workEffortSearchResultId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

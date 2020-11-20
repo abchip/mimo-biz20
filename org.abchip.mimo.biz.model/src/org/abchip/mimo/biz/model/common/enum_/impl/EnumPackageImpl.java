@@ -882,7 +882,6 @@ public class EnumPackageImpl extends EPackageImpl implements EnumPackage {
 		initEAttribute(getEnumeration_Description(), ecorePackage.getEString(), "description", null, 0, 1, Enumeration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEnumeration_EnumCode(), ecorePackage.getEString(), "enumCode", null, 0, 1, Enumeration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEnumeration_EnumType(), this.getEnumerationType(), null, "enumType", null, 0, 1, Enumeration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEnumeration_EnumType().getEKeys().add(this.getEnumerationType_EnumTypeId());
 		initEAttribute(getEnumeration_SequenceId(), ecorePackage.getEString(), "sequenceId", null, 0, 1, Enumeration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEnumeration_UserLoginSecurityQuestions(), theLoginPackage.getUserLoginSecurityQuestion(), null, "userLoginSecurityQuestions", null, 0, -1, Enumeration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
@@ -891,7 +890,6 @@ public class EnumPackageImpl extends EPackageImpl implements EnumPackage {
 		initEAttribute(getEnumerationType_Description(), ecorePackage.getEString(), "description", null, 0, 1, EnumerationType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEnumerationType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, EnumerationType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEnumerationType_ParentType(), this.getEnumerationType(), null, "parentType", null, 0, 1, EnumerationType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEnumerationType_ParentType().getEKeys().add(this.getEnumerationType_EnumTypeId());
 
 		// Create annotations
 		// mimo-ent-frame

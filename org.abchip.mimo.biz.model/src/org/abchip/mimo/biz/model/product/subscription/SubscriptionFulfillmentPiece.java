@@ -35,7 +35,7 @@ public interface SubscriptionFulfillmentPiece extends EntityIdentifiable, Entity
 	 * @return the value of the '<em>Subscription</em>' reference.
 	 * @see #setSubscription(Subscription)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionFulfillmentPiece_Subscription()
-	 * @model keys="subscriptionId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -58,7 +58,7 @@ public interface SubscriptionFulfillmentPiece extends EntityIdentifiable, Entity
 	 * @return the value of the '<em>Subscription Activity</em>' reference.
 	 * @see #setSubscriptionActivity(SubscriptionActivity)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionFulfillmentPiece_SubscriptionActivity()
-	 * @model keys="subscriptionActivityId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

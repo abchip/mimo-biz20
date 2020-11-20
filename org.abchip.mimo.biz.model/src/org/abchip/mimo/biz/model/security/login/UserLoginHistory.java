@@ -43,7 +43,7 @@ public interface UserLoginHistory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>User Login</em>' reference.
 	 * @see #setUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLoginHistory_UserLogin()
-	 * @model keys="userLoginId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -93,7 +93,7 @@ public interface UserLoginHistory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Origin User Login</em>' reference.
 	 * @see #setOriginUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLoginHistory_OriginUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getOriginUserLogin();
@@ -115,7 +115,7 @@ public interface UserLoginHistory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLoginHistory_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();

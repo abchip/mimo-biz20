@@ -37,7 +37,7 @@ public interface ShipmentContactMech extends EntityTyped<ShipmentContactMechType
 	 * @return the value of the '<em>Shipment</em>' reference.
 	 * @see #setShipment(Shipment)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentContactMech_Shipment()
-	 * @model keys="shipmentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -60,7 +60,7 @@ public interface ShipmentContactMech extends EntityTyped<ShipmentContactMechType
 	 * @return the value of the '<em>Shipment Contact Mech Type</em>' reference.
 	 * @see #setShipmentContactMechType(ShipmentContactMechType)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentContactMech_ShipmentContactMechType()
-	 * @model keys="shipmentContactMechTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -83,7 +83,7 @@ public interface ShipmentContactMech extends EntityTyped<ShipmentContactMechType
 	 * @return the value of the '<em>Contact Mech</em>' reference.
 	 * @see #setContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentContactMech_ContactMech()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	ContactMech getContactMech();

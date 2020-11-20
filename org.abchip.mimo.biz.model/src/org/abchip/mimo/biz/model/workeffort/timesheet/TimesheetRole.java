@@ -38,7 +38,7 @@ public interface TimesheetRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Timesheet</em>' reference.
 	 * @see #setTimesheet(Timesheet)
 	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheetRole_Timesheet()
-	 * @model keys="timesheetId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface TimesheetRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheetRole_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -84,7 +84,7 @@ public interface TimesheetRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimesheetRole_RoleType()
-	 * @model keys="roleTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

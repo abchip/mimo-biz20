@@ -891,14 +891,11 @@ public class MrpPackageImpl extends EPackageImpl implements MrpPackage {
 		// Initialize classes and features; add operations and parameters
 		initEClass(mrpEventEClass, MrpEvent.class, "MrpEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getMrpEvent_Product(), theProductPackage.getProduct(), null, "product", null, 1, 1, MrpEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getMrpEvent_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEReference(getMrpEvent_MrpEventType(), this.getMrpEventType(), null, "mrpEventType", null, 1, 1, MrpEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getMrpEvent_MrpEventType().getEKeys().add(this.getMrpEventType_MrpEventTypeId());
 		initEAttribute(getMrpEvent_EventDate(), ecorePackage.getEDate(), "eventDate", null, 1, 1, MrpEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMrpEvent_MrpId(), ecorePackage.getEString(), "mrpId", null, 1, 1, MrpEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMrpEvent_EventName(), ecorePackage.getEString(), "eventName", null, 0, 1, MrpEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMrpEvent_Facility(), theFacilityPackage.getFacility(), null, "facility", null, 0, 1, MrpEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getMrpEvent_Facility().getEKeys().add(theFacilityPackage.getFacility_FacilityId());
 		initEAttribute(getMrpEvent_FacilityIdTo(), ecorePackage.getEString(), "facilityIdTo", null, 0, 1, MrpEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMrpEvent_IsLate(), ecorePackage.getEBooleanObject(), "isLate", null, 0, 1, MrpEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMrpEvent_Quantity(), ecorePackage.getEDouble(), "quantity", null, 0, 1, MrpEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

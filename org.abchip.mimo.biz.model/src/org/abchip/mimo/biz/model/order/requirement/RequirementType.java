@@ -87,7 +87,7 @@ public interface RequirementType extends EntityType<Requirement>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(RequirementType)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementType_ParentType()
-	 * @model keys="requirementTypeId"
+	 * @model
 	 * @generated
 	 */
 	RequirementType getParentType();

@@ -87,7 +87,7 @@ public interface BudgetItemType extends EntityType<BudgetItem>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(BudgetItemType)
 	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetItemType_ParentType()
-	 * @model keys="budgetItemTypeId"
+	 * @model
 	 * @generated
 	 */
 	BudgetItemType getParentType();

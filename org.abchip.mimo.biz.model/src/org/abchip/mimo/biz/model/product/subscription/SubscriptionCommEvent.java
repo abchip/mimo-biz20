@@ -36,7 +36,7 @@ public interface SubscriptionCommEvent extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Communication Event</em>' reference.
 	 * @see #setCommunicationEvent(CommunicationEvent)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionCommEvent_CommunicationEvent()
-	 * @model keys="communicationEventId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface SubscriptionCommEvent extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Subscription</em>' reference.
 	 * @see #setSubscription(Subscription)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionCommEvent_Subscription()
-	 * @model keys="subscriptionId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

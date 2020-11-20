@@ -85,7 +85,7 @@ public interface WebSiteContentType extends EntityType<WebSiteContent>, EntityIn
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(WebSiteContentType)
 	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebSiteContentType_ParentType()
-	 * @model keys="webSiteContentTypeId"
+	 * @model
 	 * @generated
 	 */
 	WebSiteContentType getParentType();

@@ -2331,9 +2331,7 @@ public class ReturnPackageImpl extends EPackageImpl implements ReturnPackage {
 		// Initialize classes and features; add operations and parameters
 		initEClass(communicationEventReturnEClass, CommunicationEventReturn.class, "CommunicationEventReturn", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCommunicationEventReturn_Return(), this.getReturnHeader(), null, "return", null, 1, 1, CommunicationEventReturn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEventReturn_Return().getEKeys().add(this.getReturnHeader_ReturnId());
 		initEReference(getCommunicationEventReturn_CommunicationEvent(), theCommunicationPackage.getCommunicationEvent(), null, "communicationEvent", null, 1, 1, CommunicationEventReturn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEventReturn_CommunicationEvent().getEKeys().add(theCommunicationPackage.getCommunicationEvent_CommunicationEventId());
 
 		initEClass(returnAdjustmentEClass, ReturnAdjustment.class, "ReturnAdjustment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getReturnAdjustment_ReturnAdjustmentId(), ecorePackage.getEString(), "returnAdjustmentId", null, 1, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2341,7 +2339,6 @@ public class ReturnPackageImpl extends EPackageImpl implements ReturnPackage {
 		initEAttribute(getReturnAdjustment_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnAdjustment_CorrespondingProductId(), ecorePackage.getEString(), "correspondingProductId", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnAdjustment_CreatedByUserLogin(), theLoginPackage.getUserLogin(), null, "createdByUserLogin", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnAdjustment_CreatedByUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEAttribute(getReturnAdjustment_CreatedDate(), ecorePackage.getEDate(), "createdDate", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnAdjustment_CustomerReferenceId(), ecorePackage.getEString(), "customerReferenceId", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnAdjustment_Description(), ecorePackage.getEString(), "description", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2351,142 +2348,98 @@ public class ReturnPackageImpl extends EPackageImpl implements ReturnPackage {
 		initEAttribute(getReturnAdjustment_LastModifiedByUserLogin(), ecorePackage.getEString(), "lastModifiedByUserLogin", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnAdjustment_LastModifiedDate(), ecorePackage.getEDate(), "lastModifiedDate", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnAdjustment_OrderAdjustment(), theOrderPackage.getOrderAdjustment(), null, "orderAdjustment", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnAdjustment_OrderAdjustment().getEKeys().add(theOrderPackage.getOrderAdjustment_OrderAdjustmentId());
 		initEReference(getReturnAdjustment_OverrideGlAccount(), theLedgerPackage.getGlAccount(), null, "overrideGlAccount", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnAdjustment_OverrideGlAccount().getEKeys().add(theLedgerPackage.getGlAccount_GlAccountId());
 		initEReference(getReturnAdjustment_PrimaryGeo(), theGeoPackage.getGeo(), null, "primaryGeo", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnAdjustment_PrimaryGeo().getEKeys().add(theGeoPackage.getGeo_GeoId());
 		initEAttribute(getReturnAdjustment_ProductFeatureId(), ecorePackage.getEString(), "productFeatureId", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnAdjustment_ProductPromo(), thePromoPackage.getProductPromo(), null, "productPromo", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnAdjustment_ProductPromo().getEKeys().add(thePromoPackage.getProductPromo_ProductPromoId());
 		initEAttribute(getReturnAdjustment_ProductPromoActionSeqId(), ecorePackage.getEString(), "productPromoActionSeqId", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnAdjustment_ProductPromoRuleId(), ecorePackage.getEString(), "productPromoRuleId", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnAdjustment_Return(), this.getReturnHeader(), null, "return", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnAdjustment_Return().getEKeys().add(this.getReturnHeader_ReturnId());
 		initEReference(getReturnAdjustment_ReturnAdjustmentType(), this.getReturnAdjustmentType(), null, "returnAdjustmentType", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnAdjustment_ReturnAdjustmentType().getEKeys().add(this.getReturnAdjustmentType_ReturnAdjustmentTypeId());
 		initEAttribute(getReturnAdjustment_ReturnItemSeqId(), ecorePackage.getEString(), "returnItemSeqId", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnAdjustment_ReturnType(), this.getReturnType(), null, "returnType", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnAdjustment_ReturnType().getEKeys().add(this.getReturnType_ReturnTypeId());
 		initEReference(getReturnAdjustment_SecondaryGeo(), theGeoPackage.getGeo(), null, "secondaryGeo", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnAdjustment_SecondaryGeo().getEKeys().add(theGeoPackage.getGeo_GeoId());
 		initEAttribute(getReturnAdjustment_ShipGroupSeqId(), ecorePackage.getEString(), "shipGroupSeqId", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnAdjustment_SourcePercentage(), ecorePackage.getEBigDecimal(), "sourcePercentage", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnAdjustment_SourceReferenceId(), ecorePackage.getEString(), "sourceReferenceId", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnAdjustment_TaxAuthGeoId(), ecorePackage.getEString(), "taxAuthGeoId", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnAdjustment_TaxAuthPartyId(), ecorePackage.getEString(), "taxAuthPartyId", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnAdjustment_TaxAuthorityRateSeq(), theTaxPackage.getTaxAuthorityRateProduct(), null, "taxAuthorityRateSeq", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnAdjustment_TaxAuthorityRateSeq().getEKeys().add(theTaxPackage.getTaxAuthorityRateProduct_TaxAuthorityRateSeqId());
 
 		initEClass(returnAdjustmentTypeEClass, ReturnAdjustmentType.class, "ReturnAdjustmentType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getReturnAdjustmentType_ReturnAdjustmentTypeId(), ecorePackage.getEString(), "returnAdjustmentTypeId", null, 1, 1, ReturnAdjustmentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnAdjustmentType_Description(), ecorePackage.getEString(), "description", null, 0, 1, ReturnAdjustmentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnAdjustmentType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, ReturnAdjustmentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnAdjustmentType_ParentType(), this.getReturnAdjustmentType(), null, "parentType", null, 0, 1, ReturnAdjustmentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnAdjustmentType_ParentType().getEKeys().add(this.getReturnAdjustmentType_ReturnAdjustmentTypeId());
 
 		initEClass(returnContactMechEClass, ReturnContactMech.class, "ReturnContactMech", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getReturnContactMech_Return(), this.getReturnHeader(), null, "return", null, 1, 1, ReturnContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnContactMech_Return().getEKeys().add(this.getReturnHeader_ReturnId());
 		initEReference(getReturnContactMech_ContactMech(), theContactPackage_1.getContactMech(), null, "contactMech", null, 1, 1, ReturnContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnContactMech_ContactMech().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
 		initEReference(getReturnContactMech_ContactMechPurposeType(), theContactPackage_1.getContactMechPurposeType(), null, "contactMechPurposeType", null, 1, 1, ReturnContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnContactMech_ContactMechPurposeType().getEKeys().add(theContactPackage_1.getContactMechPurposeType_ContactMechPurposeTypeId());
 
 		initEClass(returnHeaderEClass, ReturnHeader.class, "ReturnHeader", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getReturnHeader_ReturnId(), ecorePackage.getEString(), "returnId", null, 1, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnHeader_BillingAccount(), thePaymentPackage.getBillingAccount(), null, "billingAccount", null, 0, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnHeader_BillingAccount().getEKeys().add(thePaymentPackage.getBillingAccount_BillingAccountId());
 		initEReference(getReturnHeader_CommunicationEventReturns(), this.getCommunicationEventReturn(), null, "communicationEventReturns", null, 0, -1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnHeader_CreatedBy(), theLoginPackage.getUserLogin(), null, "createdBy", null, 0, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnHeader_CreatedBy().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEReference(getReturnHeader_CurrencyUom(), theUomPackage.getUom(), null, "currencyUom", null, 0, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnHeader_CurrencyUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEReference(getReturnHeader_DestinationFacility(), theFacilityPackage.getFacility(), null, "destinationFacility", null, 0, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnHeader_DestinationFacility().getEKeys().add(theFacilityPackage.getFacility_FacilityId());
 		initEAttribute(getReturnHeader_EntryDate(), ecorePackage.getEDate(), "entryDate", null, 0, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnHeader_FinAccount(), theFinaccountPackage.getFinAccount(), null, "finAccount", null, 0, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnHeader_FinAccount().getEKeys().add(theFinaccountPackage.getFinAccount_FinAccountId());
 		initEReference(getReturnHeader_FromParty(), thePartyPackage_1.getParty(), null, "fromParty", null, 0, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnHeader_FromParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getReturnHeader_NeedsInventoryReceive(), ecorePackage.getEBooleanObject(), "needsInventoryReceive", null, 0, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnHeader_OriginContactMech(), theContactPackage_1.getContactMech(), null, "originContactMech", null, 0, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnHeader_OriginContactMech().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
 		initEReference(getReturnHeader_PaymentMethod(), thePaymentPackage.getPaymentMethod(), null, "paymentMethod", null, 0, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnHeader_PaymentMethod().getEKeys().add(thePaymentPackage.getPaymentMethod_PaymentMethodId());
 		initEReference(getReturnHeader_ReturnHeaderType(), this.getReturnHeaderType(), null, "returnHeaderType", null, 0, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnHeader_ReturnHeaderType().getEKeys().add(this.getReturnHeaderType_ReturnHeaderTypeId());
 		initEReference(getReturnHeader_ReturnItems(), this.getReturnItem(), null, "returnItems", null, 0, -1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnHeader_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnHeader_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getReturnHeader_SupplierRmaId(), ecorePackage.getEString(), "supplierRmaId", null, 0, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnHeader_ToParty(), thePartyPackage_1.getParty(), null, "toParty", null, 0, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnHeader_ToParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 
 		initEClass(returnHeaderTypeEClass, ReturnHeaderType.class, "ReturnHeaderType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getReturnHeaderType_ReturnHeaderTypeId(), ecorePackage.getEString(), "returnHeaderTypeId", null, 1, 1, ReturnHeaderType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnHeaderType_Description(), ecorePackage.getEString(), "description", null, 0, 1, ReturnHeaderType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnHeaderType_ParentType(), this.getReturnHeaderType(), null, "parentType", null, 0, 1, ReturnHeaderType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnHeaderType_ParentType().getEKeys().add(this.getReturnHeaderType_ReturnHeaderTypeId());
 
 		initEClass(returnItemEClass, ReturnItem.class, "ReturnItem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getReturnItem_Return(), this.getReturnHeader(), null, "return", null, 1, 1, ReturnItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItem_Return().getEKeys().add(this.getReturnHeader_ReturnId());
 		initEAttribute(getReturnItem_ReturnItemSeqId(), ecorePackage.getEString(), "returnItemSeqId", null, 1, 1, ReturnItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnItem_Description(), ecorePackage.getEString(), "description", null, 0, 1, ReturnItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnItem_ExpectedItemStatus(), theStatusPackage.getStatusItem(), null, "expectedItemStatus", null, 0, 1, ReturnItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItem_ExpectedItemStatus().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEReference(getReturnItem_Order(), theOrderPackage.getOrderHeader(), null, "order", null, 0, 1, ReturnItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItem_Order().getEKeys().add(theOrderPackage.getOrderHeader_OrderId());
 		initEAttribute(getReturnItem_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 0, 1, ReturnItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnItem_Product(), theProductPackage.getProduct(), null, "product", null, 0, 1, ReturnItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItem_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEAttribute(getReturnItem_ReceivedQuantity(), ecorePackage.getEBigDecimal(), "receivedQuantity", null, 0, 1, ReturnItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnItem_ReturnItemResponse(), this.getReturnItemResponse(), null, "returnItemResponse", null, 0, 1, ReturnItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItem_ReturnItemResponse().getEKeys().add(this.getReturnItemResponse_ReturnItemResponseId());
 		initEReference(getReturnItem_ReturnItemType(), this.getReturnItemType(), null, "returnItemType", null, 0, 1, ReturnItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItem_ReturnItemType().getEKeys().add(this.getReturnItemType_ReturnItemTypeId());
 		initEAttribute(getReturnItem_ReturnPrice(), ecorePackage.getEBigDecimal(), "returnPrice", null, 0, 1, ReturnItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnItem_ReturnQuantity(), ecorePackage.getEBigDecimal(), "returnQuantity", null, 0, 1, ReturnItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnItem_ReturnReason(), this.getReturnReason(), null, "returnReason", null, 0, 1, ReturnItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItem_ReturnReason().getEKeys().add(this.getReturnReason_ReturnReasonId());
 		initEReference(getReturnItem_ReturnType(), this.getReturnType(), null, "returnType", null, 0, 1, ReturnItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItem_ReturnType().getEKeys().add(this.getReturnType_ReturnTypeId());
 		initEReference(getReturnItem_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, ReturnItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItem_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 
 		initEClass(returnItemBillingEClass, ReturnItemBilling.class, "ReturnItemBilling", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getReturnItemBilling_Return(), this.getReturnHeader(), null, "return", null, 1, 1, ReturnItemBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItemBilling_Return().getEKeys().add(this.getReturnHeader_ReturnId());
 		initEReference(getReturnItemBilling_Invoice(), theInvoicePackage.getInvoice(), null, "invoice", null, 1, 1, ReturnItemBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItemBilling_Invoice().getEKeys().add(theInvoicePackage.getInvoice_InvoiceId());
 		initEAttribute(getReturnItemBilling_InvoiceItemSeqId(), ecorePackage.getEString(), "invoiceItemSeqId", null, 1, 1, ReturnItemBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnItemBilling_ReturnItemSeqId(), ecorePackage.getEString(), "returnItemSeqId", null, 1, 1, ReturnItemBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnItemBilling_Amount(), ecorePackage.getEBigDecimal(), "amount", null, 0, 1, ReturnItemBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnItemBilling_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, ReturnItemBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnItemBilling_ShipmentReceipt(), theReceiptPackage.getShipmentReceipt(), null, "shipmentReceipt", null, 0, 1, ReturnItemBilling.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItemBilling_ShipmentReceipt().getEKeys().add(theReceiptPackage.getShipmentReceipt_ReceiptId());
 
 		initEClass(returnItemResponseEClass, ReturnItemResponse.class, "ReturnItemResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getReturnItemResponse_ReturnItemResponseId(), ecorePackage.getEString(), "returnItemResponseId", null, 1, 1, ReturnItemResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnItemResponse_BillingAccount(), thePaymentPackage.getBillingAccount(), null, "billingAccount", null, 0, 1, ReturnItemResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItemResponse_BillingAccount().getEKeys().add(thePaymentPackage.getBillingAccount_BillingAccountId());
 		initEReference(getReturnItemResponse_FinAccountTrans(), theFinaccountPackage.getFinAccountTrans(), null, "finAccountTrans", null, 0, 1, ReturnItemResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItemResponse_FinAccountTrans().getEKeys().add(theFinaccountPackage.getFinAccountTrans_FinAccountTransId());
 		initEReference(getReturnItemResponse_OrderPaymentPreference(), theOrderPackage.getOrderPaymentPreference(), null, "orderPaymentPreference", null, 0, 1, ReturnItemResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItemResponse_OrderPaymentPreference().getEKeys().add(theOrderPackage.getOrderPaymentPreference_OrderPaymentPreferenceId());
 		initEReference(getReturnItemResponse_Payment(), thePaymentPackage.getPayment(), null, "payment", null, 0, 1, ReturnItemResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItemResponse_Payment().getEKeys().add(thePaymentPackage.getPayment_PaymentId());
 		initEReference(getReturnItemResponse_ReplacementOrder(), theOrderPackage.getOrderHeader(), null, "replacementOrder", null, 0, 1, ReturnItemResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItemResponse_ReplacementOrder().getEKeys().add(theOrderPackage.getOrderHeader_OrderId());
 		initEAttribute(getReturnItemResponse_ResponseAmount(), ecorePackage.getEBigDecimal(), "responseAmount", null, 0, 1, ReturnItemResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnItemResponse_ResponseDate(), ecorePackage.getEDate(), "responseDate", null, 0, 1, ReturnItemResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(returnItemShipmentEClass, ReturnItemShipment.class, "ReturnItemShipment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getReturnItemShipment_Return(), this.getReturnHeader(), null, "return", null, 1, 1, ReturnItemShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItemShipment_Return().getEKeys().add(this.getReturnHeader_ReturnId());
 		initEReference(getReturnItemShipment_Shipment(), theShipment_Package.getShipment(), null, "shipment", null, 1, 1, ReturnItemShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItemShipment_Shipment().getEKeys().add(theShipment_Package.getShipment_ShipmentId());
 		initEAttribute(getReturnItemShipment_ReturnItemSeqId(), ecorePackage.getEString(), "returnItemSeqId", null, 1, 1, ReturnItemShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnItemShipment_ShipmentItemSeqId(), ecorePackage.getEString(), "shipmentItemSeqId", null, 1, 1, ReturnItemShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnItemShipment_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, ReturnItemShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2495,14 +2448,11 @@ public class ReturnPackageImpl extends EPackageImpl implements ReturnPackage {
 		initEAttribute(getReturnItemType_ReturnItemTypeId(), ecorePackage.getEString(), "returnItemTypeId", null, 1, 1, ReturnItemType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnItemType_Description(), ecorePackage.getEString(), "description", null, 0, 1, ReturnItemType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnItemType_ParentType(), this.getReturnItemType(), null, "parentType", null, 0, 1, ReturnItemType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItemType_ParentType().getEKeys().add(this.getReturnItemType_ReturnItemTypeId());
 
 		initEClass(returnItemTypeMapEClass, ReturnItemTypeMap.class, "ReturnItemTypeMap", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getReturnItemTypeMap_ReturnHeaderType(), this.getReturnHeaderType(), null, "returnHeaderType", null, 1, 1, ReturnItemTypeMap.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItemTypeMap_ReturnHeaderType().getEKeys().add(this.getReturnHeaderType_ReturnHeaderTypeId());
 		initEAttribute(getReturnItemTypeMap_ReturnItemMapKey(), ecorePackage.getEString(), "returnItemMapKey", null, 1, 1, ReturnItemTypeMap.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnItemTypeMap_ReturnItemType(), this.getReturnItemType(), null, "returnItemType", null, 0, 1, ReturnItemTypeMap.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnItemTypeMap_ReturnItemType().getEKeys().add(this.getReturnItemType_ReturnItemTypeId());
 
 		initEClass(returnReasonEClass, ReturnReason.class, "ReturnReason", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getReturnReason_ReturnReasonId(), ecorePackage.getEString(), "returnReasonId", null, 1, 1, ReturnReason.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2512,12 +2462,9 @@ public class ReturnPackageImpl extends EPackageImpl implements ReturnPackage {
 		initEClass(returnStatusEClass, ReturnStatus.class, "ReturnStatus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getReturnStatus_ReturnStatusId(), ecorePackage.getEString(), "returnStatusId", null, 1, 1, ReturnStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnStatus_ChangeByUserLogin(), theLoginPackage.getUserLogin(), null, "changeByUserLogin", null, 0, 1, ReturnStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnStatus_ChangeByUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEReference(getReturnStatus_Return(), this.getReturnHeader(), null, "return", null, 0, 1, ReturnStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnStatus_Return().getEKeys().add(this.getReturnHeader_ReturnId());
 		initEAttribute(getReturnStatus_ReturnItemSeqId(), ecorePackage.getEString(), "returnItemSeqId", null, 0, 1, ReturnStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnStatus_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, ReturnStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getReturnStatus_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getReturnStatus_StatusDatetime(), ecorePackage.getEDate(), "statusDatetime", null, 0, 1, ReturnStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(returnTypeEClass, ReturnType.class, "ReturnType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

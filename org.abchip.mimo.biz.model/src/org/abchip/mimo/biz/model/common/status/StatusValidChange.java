@@ -37,7 +37,7 @@ public interface StatusValidChange extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.common.status.StatusPackage#getStatusValidChange_Status()
-	 * @model keys="statusId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -116,7 +116,7 @@ public interface StatusValidChange extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status Id To</em>' reference.
 	 * @see #setStatusIdTo(StatusItem)
 	 * @see org.abchip.mimo.biz.model.common.status.StatusPackage#getStatusValidChange_StatusIdTo()
-	 * @model keys="statusId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

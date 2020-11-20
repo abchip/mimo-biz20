@@ -39,7 +39,7 @@ public interface OrderAdjustmentBilling extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order Adjustment</em>' reference.
 	 * @see #setOrderAdjustment(OrderAdjustment)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustmentBilling_OrderAdjustment()
-	 * @model keys="orderAdjustmentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface OrderAdjustmentBilling extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Invoice</em>' reference.
 	 * @see #setInvoice(Invoice)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustmentBilling_Invoice()
-	 * @model keys="invoiceId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -36,7 +36,7 @@ public interface ProductPromoRule extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Promo</em>' reference.
 	 * @see #setProductPromo(ProductPromo)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoRule_ProductPromo()
-	 * @model keys="productPromoId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

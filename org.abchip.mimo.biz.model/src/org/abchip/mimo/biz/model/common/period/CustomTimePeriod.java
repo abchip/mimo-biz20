@@ -92,7 +92,7 @@ public interface CustomTimePeriod extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Organization Party</em>' reference.
 	 * @see #setOrganizationParty(Party)
 	 * @see org.abchip.mimo.biz.model.common.period.PeriodPackage#getCustomTimePeriod_OrganizationParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getOrganizationParty();
@@ -114,7 +114,7 @@ public interface CustomTimePeriod extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Period</em>' reference.
 	 * @see #setParentPeriod(CustomTimePeriod)
 	 * @see org.abchip.mimo.biz.model.common.period.PeriodPackage#getCustomTimePeriod_ParentPeriod()
-	 * @model keys="customTimePeriodId"
+	 * @model
 	 * @generated
 	 */
 	CustomTimePeriod getParentPeriod();
@@ -188,7 +188,7 @@ public interface CustomTimePeriod extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Period Type</em>' reference.
 	 * @see #setPeriodType(PeriodType)
 	 * @see org.abchip.mimo.biz.model.common.period.PeriodPackage#getCustomTimePeriod_PeriodType()
-	 * @model keys="periodTypeId"
+	 * @model
 	 * @generated
 	 */
 	PeriodType getPeriodType();

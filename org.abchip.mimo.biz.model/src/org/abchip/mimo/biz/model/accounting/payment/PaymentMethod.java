@@ -71,7 +71,7 @@ public interface PaymentMethod extends EntityTyped<PaymentMethodType>, EntityInf
 	 * @return the value of the '<em>Fin Account</em>' reference.
 	 * @see #setFinAccount(FinAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentMethod_FinAccount()
-	 * @model keys="finAccountId"
+	 * @model
 	 * @generated
 	 */
 	FinAccount getFinAccount();
@@ -119,7 +119,7 @@ public interface PaymentMethod extends EntityTyped<PaymentMethodType>, EntityInf
 	 * @return the value of the '<em>Gl Account</em>' reference.
 	 * @see #setGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentMethod_GlAccount()
-	 * @model keys="glAccountId"
+	 * @model
 	 * @generated
 	 */
 	GlAccount getGlAccount();
@@ -141,7 +141,7 @@ public interface PaymentMethod extends EntityTyped<PaymentMethodType>, EntityInf
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentMethod_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -163,7 +163,7 @@ public interface PaymentMethod extends EntityTyped<PaymentMethodType>, EntityInf
 	 * @return the value of the '<em>Payment Method Type</em>' reference.
 	 * @see #setPaymentMethodType(PaymentMethodType)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentMethod_PaymentMethodType()
-	 * @model keys="paymentMethodTypeId"
+	 * @model
 	 * @generated
 	 */
 	PaymentMethodType getPaymentMethodType();

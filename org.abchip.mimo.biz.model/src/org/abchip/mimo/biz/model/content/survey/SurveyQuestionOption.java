@@ -43,7 +43,7 @@ public interface SurveyQuestionOption extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Survey Question</em>' reference.
 	 * @see #setSurveyQuestion(SurveyQuestion)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestionOption_SurveyQuestion()
-	 * @model keys="surveyQuestionId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

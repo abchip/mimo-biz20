@@ -85,7 +85,7 @@ public interface TrainingClassType extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(TrainingClassType)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getTrainingClassType_ParentType()
-	 * @model keys="trainingClassTypeId"
+	 * @model
 	 * @generated
 	 */
 	TrainingClassType getParentType();

@@ -62,7 +62,7 @@ public interface InvoiceItem extends EntityTyped<InvoiceItemType>, EntityInfo {
 	 * @return the value of the '<em>Invoice</em>' reference.
 	 * @see #setInvoice(Invoice)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_Invoice()
-	 * @model keys="invoiceId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -137,7 +137,7 @@ public interface InvoiceItem extends EntityTyped<InvoiceItemType>, EntityInfo {
 	 * @return the value of the '<em>Inventory Item</em>' reference.
 	 * @see #setInventoryItem(InventoryItem)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_InventoryItem()
-	 * @model keys="inventoryItemId"
+	 * @model
 	 * @generated
 	 */
 	InventoryItem getInventoryItem();
@@ -159,7 +159,7 @@ public interface InvoiceItem extends EntityTyped<InvoiceItemType>, EntityInfo {
 	 * @return the value of the '<em>Invoice Item Type</em>' reference.
 	 * @see #setInvoiceItemType(InvoiceItemType)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_InvoiceItemType()
-	 * @model keys="invoiceItemTypeId"
+	 * @model
 	 * @generated
 	 */
 	InvoiceItemType getInvoiceItemType();
@@ -181,8 +181,7 @@ public interface InvoiceItem extends EntityTyped<InvoiceItemType>, EntityInfo {
 	 * @return the value of the '<em>Override Gl Account</em>' reference.
 	 * @see #setOverrideGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_OverrideGlAccount()
-	 * @model keys="glAccountId"
-	 *        annotation="mimo-ent-slot help='used to specify the override or actual glAccountId used for the invoice, avoids problems if configuration changes after initial posting, etc'"
+	 * @model annotation="mimo-ent-slot help='used to specify the override or actual glAccountId used for the invoice, avoids problems if configuration changes after initial posting, etc'"
 	 * @generated
 	 */
 	GlAccount getOverrideGlAccount();
@@ -204,8 +203,7 @@ public interface InvoiceItem extends EntityTyped<InvoiceItemType>, EntityInfo {
 	 * @return the value of the '<em>Override Org Party</em>' reference.
 	 * @see #setOverrideOrgParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_OverrideOrgParty()
-	 * @model keys="partyId"
-	 *        annotation="mimo-ent-slot help='Used to specify the organization override rather than using the payToPartyId'"
+	 * @model annotation="mimo-ent-slot help='Used to specify the organization override rather than using the payToPartyId'"
 	 * @generated
 	 */
 	Party getOverrideOrgParty();
@@ -307,7 +305,7 @@ public interface InvoiceItem extends EntityTyped<InvoiceItemType>, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_Product()
-	 * @model keys="productId"
+	 * @model
 	 * @generated
 	 */
 	Product getProduct();
@@ -329,7 +327,7 @@ public interface InvoiceItem extends EntityTyped<InvoiceItemType>, EntityInfo {
 	 * @return the value of the '<em>Product Feature</em>' reference.
 	 * @see #setProductFeature(ProductFeature)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_ProductFeature()
-	 * @model keys="productFeatureId"
+	 * @model
 	 * @generated
 	 */
 	ProductFeature getProductFeature();
@@ -377,7 +375,7 @@ public interface InvoiceItem extends EntityTyped<InvoiceItemType>, EntityInfo {
 	 * @return the value of the '<em>Sales Opportunity</em>' reference.
 	 * @see #setSalesOpportunity(SalesOpportunity)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_SalesOpportunity()
-	 * @model keys="salesOpportunityId"
+	 * @model
 	 * @generated
 	 */
 	SalesOpportunity getSalesOpportunity();
@@ -399,7 +397,7 @@ public interface InvoiceItem extends EntityTyped<InvoiceItemType>, EntityInfo {
 	 * @return the value of the '<em>Tax Auth Geo</em>' reference.
 	 * @see #setTaxAuthGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_TaxAuthGeo()
-	 * @model keys="geoId"
+	 * @model
 	 * @generated
 	 */
 	Geo getTaxAuthGeo();
@@ -421,7 +419,7 @@ public interface InvoiceItem extends EntityTyped<InvoiceItemType>, EntityInfo {
 	 * @return the value of the '<em>Tax Auth Party</em>' reference.
 	 * @see #setTaxAuthParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_TaxAuthParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getTaxAuthParty();
@@ -443,7 +441,7 @@ public interface InvoiceItem extends EntityTyped<InvoiceItemType>, EntityInfo {
 	 * @return the value of the '<em>Tax Authority Rate Seq</em>' reference.
 	 * @see #setTaxAuthorityRateSeq(TaxAuthorityRateProduct)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_TaxAuthorityRateSeq()
-	 * @model keys="taxAuthorityRateSeqId"
+	 * @model
 	 * @generated
 	 */
 	TaxAuthorityRateProduct getTaxAuthorityRateSeq();
@@ -491,7 +489,7 @@ public interface InvoiceItem extends EntityTyped<InvoiceItemType>, EntityInfo {
 	 * @return the value of the '<em>Uom</em>' reference.
 	 * @see #setUom(Uom)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItem_Uom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getUom();

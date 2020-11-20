@@ -44,7 +44,7 @@ public interface ProductFacility extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacility_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -67,7 +67,7 @@ public interface ProductFacility extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacility_Facility()
-	 * @model keys="facilityId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -195,7 +195,7 @@ public interface ProductFacility extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Replenish Method Enum</em>' reference.
 	 * @see #setReplenishMethodEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacility_ReplenishMethodEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getReplenishMethodEnum();
@@ -217,7 +217,7 @@ public interface ProductFacility extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Requirement Method Enum</em>' reference.
 	 * @see #setRequirementMethodEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacility_RequirementMethodEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getRequirementMethodEnum();

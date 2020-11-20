@@ -40,7 +40,7 @@ public interface ProdCatalogInvFacility extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Prod Catalog</em>' reference.
 	 * @see #setProdCatalog(ProdCatalog)
 	 * @see org.abchip.mimo.biz.model.product.catalog.CatalogPackage#getProdCatalogInvFacility_ProdCatalog()
-	 * @model keys="prodCatalogId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface ProdCatalogInvFacility extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.product.catalog.CatalogPackage#getProdCatalogInvFacility_Facility()
-	 * @model keys="facilityId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

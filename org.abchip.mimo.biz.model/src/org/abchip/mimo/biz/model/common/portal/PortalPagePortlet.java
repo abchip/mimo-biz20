@@ -38,7 +38,7 @@ public interface PortalPagePortlet extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Portal Page</em>' reference.
 	 * @see #setPortalPage(PortalPage)
 	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortalPagePortlet_PortalPage()
-	 * @model keys="portalPageId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface PortalPagePortlet extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Portal Portlet</em>' reference.
 	 * @see #setPortalPortlet(PortalPortlet)
 	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortalPagePortlet_PortalPortlet()
-	 * @model keys="portalPortletId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

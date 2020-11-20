@@ -41,7 +41,7 @@ public interface PartySkill extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPartySkill_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface PartySkill extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Skill Type</em>' reference.
 	 * @see #setSkillType(SkillType)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPartySkill_SkillType()
-	 * @model keys="skillTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

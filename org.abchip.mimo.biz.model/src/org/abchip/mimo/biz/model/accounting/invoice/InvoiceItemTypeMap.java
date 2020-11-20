@@ -36,7 +36,7 @@ public interface InvoiceItemTypeMap extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Invoice Type</em>' reference.
 	 * @see #setInvoiceType(InvoiceType)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemTypeMap_InvoiceType()
-	 * @model keys="invoiceTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -87,7 +87,7 @@ public interface InvoiceItemTypeMap extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Invoice Item Type</em>' reference.
 	 * @see #setInvoiceItemType(InvoiceItemType)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemTypeMap_InvoiceItemType()
-	 * @model keys="invoiceItemTypeId"
+	 * @model
 	 * @generated
 	 */
 	InvoiceItemType getInvoiceItemType();

@@ -3578,34 +3578,24 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 		initEAttribute(getProductStore_CompanyName(), ecorePackage.getEString(), "companyName", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStore_DaysToCancelNonPay(), ecorePackage.getELong(), "daysToCancelNonPay", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStore_DefaultCurrencyUom(), theUomPackage.getUom(), null, "defaultCurrencyUom", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStore_DefaultCurrencyUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEAttribute(getProductStore_DefaultLocaleString(), ecorePackage.getEString(), "defaultLocaleString", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStore_DefaultPassword(), ecorePackage.getEString(), "defaultPassword", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStore_DefaultSalesChannelEnum(), theEnumPackage.getEnumeration(), null, "defaultSalesChannelEnum", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStore_DefaultSalesChannelEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getProductStore_DefaultTimeZoneString(), ecorePackage.getEString(), "defaultTimeZoneString", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStore_DigProdUploadCategoryId(), ecorePackage.getEString(), "digProdUploadCategoryId", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStore_DigitalItemApprovedStatus(), theStatusPackage.getStatusItem(), null, "digitalItemApprovedStatus", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStore_DigitalItemApprovedStatus().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getProductStore_EnableAutoSuggestionList(), ecorePackage.getEBoolean(), "enableAutoSuggestionList", null, 1, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStore_EnableDigProdUpload(), ecorePackage.getEBoolean(), "enableDigProdUpload", null, 1, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStore_ExplodeOrderItems(), ecorePackage.getEBoolean(), "explodeOrderItems", null, 1, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStore_HeaderApprovedStatus(), theStatusPackage.getStatusItem(), null, "headerApprovedStatus", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStore_HeaderApprovedStatus().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEReference(getProductStore_HeaderCancelStatus(), theStatusPackage.getStatusItem(), null, "headerCancelStatus", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStore_HeaderCancelStatus().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEReference(getProductStore_HeaderDeclinedStatus(), theStatusPackage.getStatusItem(), null, "headerDeclinedStatus", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStore_HeaderDeclinedStatus().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEReference(getProductStore_InventoryFacility(), theFacilityPackage.getFacility(), null, "inventoryFacility", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStore_InventoryFacility().getEKeys().add(theFacilityPackage.getFacility_FacilityId());
 		initEAttribute(getProductStore_IsDemoStore(), ecorePackage.getEBoolean(), "isDemoStore", "true", 1, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStore_IsImmediatelyFulfilled(), ecorePackage.getEBoolean(), "isImmediatelyFulfilled", null, 1, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStore_ItemApprovedStatus(), theStatusPackage.getStatusItem(), null, "itemApprovedStatus", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStore_ItemApprovedStatus().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEReference(getProductStore_ItemCancelStatus(), theStatusPackage.getStatusItem(), null, "itemCancelStatus", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStore_ItemCancelStatus().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEReference(getProductStore_ItemDeclinedStatus(), theStatusPackage.getStatusItem(), null, "itemDeclinedStatus", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStore_ItemDeclinedStatus().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getProductStore_ManagedByLot(), ecorePackage.getEBoolean(), "managedByLot", null, 1, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStore_ManualAuthIsCapture(), ecorePackage.getEBoolean(), "manualAuthIsCapture", null, 1, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStore_OAuth2GitHubs(), thePassportPackage.getOAuth2GitHub(), null, "oAuth2GitHubs", null, 0, -1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
@@ -3619,9 +3609,7 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 		initEAttribute(getProductStore_OrderDecimalQuantity(), ecorePackage.getEBooleanObject(), "orderDecimalQuantity", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStore_OrderNumberPrefix(), ecorePackage.getEString(), "orderNumberPrefix", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStore_PayToParty(), thePartyPackage_1.getParty(), null, "payToParty", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStore_PayToParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getProductStore_PrimaryStoreGroup(), this.getProductStoreGroup(), null, "primaryStoreGroup", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStore_PrimaryStoreGroup().getEKeys().add(this.getProductStoreGroup_ProductStoreGroupId());
 		initEAttribute(getProductStore_ProdSearchExcludeVariants(), ecorePackage.getEBoolean(), "prodSearchExcludeVariants", "true", 1, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStore_ProductStoreCatalogs(), this.getProductStoreCatalog(), null, "productStoreCatalogs", null, 0, -1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStore_ProductStoreEmailSettings(), this.getProductStoreEmailSetting(), null, "productStoreEmailSettings", null, 0, -1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
@@ -3637,10 +3625,8 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 		initEAttribute(getProductStore_RequireCustomerRole(), ecorePackage.getEBoolean(), "requireCustomerRole", null, 1, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStore_RequireInventory(), ecorePackage.getEBoolean(), "requireInventory", null, 1, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStore_RequirementMethodEnum(), theEnumPackage.getEnumeration(), null, "requirementMethodEnum", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStore_RequirementMethodEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getProductStore_ReserveInventory(), ecorePackage.getEBoolean(), "reserveInventory", "true", 1, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStore_ReserveOrderEnum(), theEnumPackage.getEnumeration(), null, "reserveOrderEnum", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStore_ReserveOrderEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getProductStore_RetryFailedAuths(), ecorePackage.getEBoolean(), "retryFailedAuths", "true", 1, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStore_SelectPaymentTypePerItem(), ecorePackage.getEBoolean(), "selectPaymentTypePerItem", null, 1, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStore_SetOwnerUponIssuance(), ecorePackage.getEBooleanObject(), "setOwnerUponIssuance", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3651,7 +3637,6 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 		initEAttribute(getProductStore_ShowTaxIsExempt(), ecorePackage.getEBoolean(), "showTaxIsExempt", "true", 1, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStore_SplitPayPrefPerShpGrp(), ecorePackage.getEBoolean(), "splitPayPrefPerShpGrp", null, 1, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStore_StoreCreditAccountEnum(), theEnumPackage.getEnumeration(), null, "storeCreditAccountEnum", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStore_StoreCreditAccountEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getProductStore_StoreCreditValidDays(), ecorePackage.getELong(), "storeCreditValidDays", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStore_StoreName(), ecorePackage.getEString(), "storeName", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStore_Subtitle(), ecorePackage.getEString(), "subtitle", null, 0, 1, ProductStore.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3664,18 +3649,14 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 
 		initEClass(productStoreCatalogEClass, ProductStoreCatalog.class, "ProductStoreCatalog", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductStoreCatalog_ProductStore(), this.getProductStore(), null, "productStore", null, 1, 1, ProductStoreCatalog.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreCatalog_ProductStore().getEKeys().add(this.getProductStore_ProductStoreId());
 		initEReference(getProductStoreCatalog_ProdCatalog(), theCatalogPackage.getProdCatalog(), null, "prodCatalog", null, 1, 1, ProductStoreCatalog.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreCatalog_ProdCatalog().getEKeys().add(theCatalogPackage.getProdCatalog_ProdCatalogId());
 		initEAttribute(getProductStoreCatalog_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductStoreCatalog.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreCatalog_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, ProductStoreCatalog.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreCatalog_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductStoreCatalog.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productStoreEmailSettingEClass, ProductStoreEmailSetting.class, "ProductStoreEmailSetting", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductStoreEmailSetting_ProductStore(), this.getProductStore(), null, "productStore", null, 1, 1, ProductStoreEmailSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreEmailSetting_ProductStore().getEKeys().add(this.getProductStore_ProductStoreId());
 		initEReference(getProductStoreEmailSetting_EmailType(), theEnumPackage.getEnumeration(), null, "emailType", null, 1, 1, ProductStoreEmailSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreEmailSetting_EmailType().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getProductStoreEmailSetting_BccAddress(), ecorePackage.getEString(), "bccAddress", null, 0, 1, ProductStoreEmailSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreEmailSetting_BodyScreenLocation(), ecorePackage.getEString(), "bodyScreenLocation", null, 0, 1, ProductStoreEmailSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreEmailSetting_CcAddress(), ecorePackage.getEString(), "ccAddress", null, 0, 1, ProductStoreEmailSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3686,18 +3667,14 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 
 		initEClass(productStoreFacilityEClass, ProductStoreFacility.class, "ProductStoreFacility", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductStoreFacility_ProductStore(), this.getProductStore(), null, "productStore", null, 1, 1, ProductStoreFacility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreFacility_ProductStore().getEKeys().add(this.getProductStore_ProductStoreId());
 		initEReference(getProductStoreFacility_Facility(), theFacilityPackage.getFacility(), null, "facility", null, 1, 1, ProductStoreFacility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreFacility_Facility().getEKeys().add(theFacilityPackage.getFacility_FacilityId());
 		initEAttribute(getProductStoreFacility_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductStoreFacility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreFacility_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, ProductStoreFacility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreFacility_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductStoreFacility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productStoreFinActSettingEClass, ProductStoreFinActSetting.class, "ProductStoreFinActSetting", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductStoreFinActSetting_ProductStore(), this.getProductStore(), null, "productStore", null, 1, 1, ProductStoreFinActSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreFinActSetting_ProductStore().getEKeys().add(this.getProductStore_ProductStoreId());
 		initEReference(getProductStoreFinActSetting_FinAccountType(), theFinaccountPackage.getFinAccountType(), null, "finAccountType", null, 1, 1, ProductStoreFinActSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreFinActSetting_FinAccountType().getEKeys().add(theFinaccountPackage.getFinAccountType_FinAccountTypeId());
 		initEAttribute(getProductStoreFinActSetting_AccountCodeLength(), ecorePackage.getELong(), "accountCodeLength", null, 0, 1, ProductStoreFinActSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreFinActSetting_AccountValidDays(), ecorePackage.getELong(), "accountValidDays", null, 0, 1, ProductStoreFinActSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreFinActSetting_AllowAuthToNegative(), ecorePackage.getEBooleanObject(), "allowAuthToNegative", null, 0, 1, ProductStoreFinActSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3707,9 +3684,7 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 		initEAttribute(getProductStoreFinActSetting_PurchSurveyCopyMe(), ecorePackage.getEString(), "purchSurveyCopyMe", null, 0, 1, ProductStoreFinActSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreFinActSetting_PurchSurveySendTo(), ecorePackage.getEString(), "purchSurveySendTo", null, 0, 1, ProductStoreFinActSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStoreFinActSetting_PurchaseSurvey(), theSurveyPackage.getSurvey(), null, "purchaseSurvey", null, 0, 1, ProductStoreFinActSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreFinActSetting_PurchaseSurvey().getEKeys().add(theSurveyPackage.getSurvey_SurveyId());
 		initEReference(getProductStoreFinActSetting_ReplenishMethodEnum(), theEnumPackage.getEnumeration(), null, "replenishMethodEnum", null, 0, 1, ProductStoreFinActSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreFinActSetting_ReplenishMethodEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getProductStoreFinActSetting_ReplenishThreshold(), ecorePackage.getEBigDecimal(), "replenishThreshold", null, 0, 1, ProductStoreFinActSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreFinActSetting_RequirePinCode(), ecorePackage.getEBooleanObject(), "requirePinCode", null, 0, 1, ProductStoreFinActSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreFinActSetting_ValidateGCFinAcct(), ecorePackage.getEBooleanObject(), "validateGCFinAcct", null, 0, 1, ProductStoreFinActSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3719,33 +3694,24 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 		initEReference(getProductStoreGroup_CurrentProductStoreGroupRollups(), this.getProductStoreGroupRollup(), null, "currentProductStoreGroupRollups", null, 0, -1, ProductStoreGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreGroup_Description(), ecorePackage.getEString(), "description", null, 0, 1, ProductStoreGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStoreGroup_PrimaryParentGroup(), this.getProductStoreGroup(), null, "primaryParentGroup", null, 0, 1, ProductStoreGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreGroup_PrimaryParentGroup().getEKeys().add(this.getProductStoreGroup_ProductStoreGroupId());
 		initEAttribute(getProductStoreGroup_ProductStoreGroupName(), ecorePackage.getEString(), "productStoreGroupName", null, 0, 1, ProductStoreGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStoreGroup_ProductStoreGroupType(), this.getProductStoreGroupType(), null, "productStoreGroupType", null, 0, 1, ProductStoreGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreGroup_ProductStoreGroupType().getEKeys().add(this.getProductStoreGroupType_ProductStoreGroupTypeId());
 
 		initEClass(productStoreGroupMemberEClass, ProductStoreGroupMember.class, "ProductStoreGroupMember", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductStoreGroupMember_ProductStore(), this.getProductStore(), null, "productStore", null, 1, 1, ProductStoreGroupMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreGroupMember_ProductStore().getEKeys().add(this.getProductStore_ProductStoreId());
 		initEReference(getProductStoreGroupMember_ProductStoreGroup(), this.getProductStoreGroup(), null, "productStoreGroup", null, 1, 1, ProductStoreGroupMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreGroupMember_ProductStoreGroup().getEKeys().add(this.getProductStoreGroup_ProductStoreGroupId());
 		initEAttribute(getProductStoreGroupMember_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductStoreGroupMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreGroupMember_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, ProductStoreGroupMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreGroupMember_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductStoreGroupMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productStoreGroupRoleEClass, ProductStoreGroupRole.class, "ProductStoreGroupRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductStoreGroupRole_ProductStoreGroup(), this.getProductStoreGroup(), null, "productStoreGroup", null, 1, 1, ProductStoreGroupRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreGroupRole_ProductStoreGroup().getEKeys().add(this.getProductStoreGroup_ProductStoreGroupId());
 		initEReference(getProductStoreGroupRole_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, ProductStoreGroupRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreGroupRole_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getProductStoreGroupRole_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 1, 1, ProductStoreGroupRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreGroupRole_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 
 		initEClass(productStoreGroupRollupEClass, ProductStoreGroupRollup.class, "ProductStoreGroupRollup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductStoreGroupRollup_ProductStoreGroup(), this.getProductStoreGroup(), null, "productStoreGroup", null, 1, 1, ProductStoreGroupRollup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreGroupRollup_ProductStoreGroup().getEKeys().add(this.getProductStoreGroup_ProductStoreGroupId());
 		initEReference(getProductStoreGroupRollup_ParentGroup(), this.getProductStoreGroup(), null, "parentGroup", null, 1, 1, ProductStoreGroupRollup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreGroupRollup_ParentGroup().getEKeys().add(this.getProductStoreGroup_ProductStoreGroupId());
 		initEAttribute(getProductStoreGroupRollup_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductStoreGroupRollup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreGroupRollup_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, ProductStoreGroupRollup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreGroupRollup_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductStoreGroupRollup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3756,34 +3722,25 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 
 		initEClass(productStoreKeywordOvrdEClass, ProductStoreKeywordOvrd.class, "ProductStoreKeywordOvrd", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductStoreKeywordOvrd_ProductStore(), this.getProductStore(), null, "productStore", null, 1, 1, ProductStoreKeywordOvrd.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreKeywordOvrd_ProductStore().getEKeys().add(this.getProductStore_ProductStoreId());
 		initEAttribute(getProductStoreKeywordOvrd_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductStoreKeywordOvrd.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreKeywordOvrd_Keyword(), ecorePackage.getEString(), "keyword", null, 1, 1, ProductStoreKeywordOvrd.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreKeywordOvrd_Target(), ecorePackage.getEString(), "target", null, 0, 1, ProductStoreKeywordOvrd.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStoreKeywordOvrd_TargetTypeEnum(), theEnumPackage.getEnumeration(), null, "targetTypeEnum", null, 0, 1, ProductStoreKeywordOvrd.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreKeywordOvrd_TargetTypeEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getProductStoreKeywordOvrd_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductStoreKeywordOvrd.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productStorePaymentSettingEClass, ProductStorePaymentSetting.class, "ProductStorePaymentSetting", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductStorePaymentSetting_ProductStore(), this.getProductStore(), null, "productStore", null, 1, 1, ProductStorePaymentSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStorePaymentSetting_ProductStore().getEKeys().add(this.getProductStore_ProductStoreId());
 		initEReference(getProductStorePaymentSetting_PaymentMethodType(), thePaymentPackage.getPaymentMethodType(), null, "paymentMethodType", null, 1, 1, ProductStorePaymentSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStorePaymentSetting_PaymentMethodType().getEKeys().add(thePaymentPackage.getPaymentMethodType_PaymentMethodTypeId());
 		initEReference(getProductStorePaymentSetting_PaymentServiceTypeEnum(), theEnumPackage.getEnumeration(), null, "paymentServiceTypeEnum", null, 1, 1, ProductStorePaymentSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStorePaymentSetting_PaymentServiceTypeEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getProductStorePaymentSetting_ApplyToAllProducts(), ecorePackage.getEBoolean(), "applyToAllProducts", null, 1, 1, ProductStorePaymentSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStorePaymentSetting_PaymentCustomMethod(), theMethodPackage.getCustomMethod(), null, "paymentCustomMethod", null, 0, 1, ProductStorePaymentSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStorePaymentSetting_PaymentCustomMethod().getEKeys().add(theMethodPackage.getCustomMethod_CustomMethodId());
 		initEReference(getProductStorePaymentSetting_PaymentGatewayConfig(), thePaymentPackage.getPaymentGatewayConfig(), null, "paymentGatewayConfig", null, 0, 1, ProductStorePaymentSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStorePaymentSetting_PaymentGatewayConfig().getEKeys().add(thePaymentPackage.getPaymentGatewayConfig_PaymentGatewayConfigId());
 		initEAttribute(getProductStorePaymentSetting_PaymentPropertiesPath(), ecorePackage.getEString(), "paymentPropertiesPath", null, 0, 1, ProductStorePaymentSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStorePaymentSetting_PaymentService(), ecorePackage.getEString(), "paymentService", null, 0, 1, ProductStorePaymentSetting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productStorePromoApplEClass, ProductStorePromoAppl.class, "ProductStorePromoAppl", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductStorePromoAppl_ProductStore(), this.getProductStore(), null, "productStore", null, 1, 1, ProductStorePromoAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStorePromoAppl_ProductStore().getEKeys().add(this.getProductStore_ProductStoreId());
 		initEReference(getProductStorePromoAppl_ProductPromo(), thePromoPackage.getProductPromo(), null, "productPromo", null, 1, 1, ProductStorePromoAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStorePromoAppl_ProductPromo().getEKeys().add(thePromoPackage.getProductPromo_ProductPromoId());
 		initEAttribute(getProductStorePromoAppl_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductStorePromoAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStorePromoAppl_ManualOnly(), ecorePackage.getEBooleanObject(), "manualOnly", null, 0, 1, ProductStorePromoAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStorePromoAppl_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, ProductStorePromoAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3791,11 +3748,8 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 
 		initEClass(productStoreRoleEClass, ProductStoreRole.class, "ProductStoreRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductStoreRole_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, ProductStoreRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreRole_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getProductStoreRole_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 1, 1, ProductStoreRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreRole_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEReference(getProductStoreRole_ProductStore(), this.getProductStore(), null, "productStore", null, 1, 1, ProductStoreRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreRole_ProductStore().getEKeys().add(this.getProductStore_ProductStoreId());
 		initEAttribute(getProductStoreRole_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductStoreRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreRole_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, ProductStoreRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreRole_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductStoreRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3806,14 +3760,11 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 		initEAttribute(getProductStoreShipmentMeth_AllowUspsAddr(), ecorePackage.getEBoolean(), "allowUspsAddr", "true", 1, 1, ProductStoreShipmentMeth.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreShipmentMeth_AllowancePercent(), ecorePackage.getEBigDecimal(), "allowancePercent", null, 0, 1, ProductStoreShipmentMeth.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStoreShipmentMeth_CompanyParty(), thePartyPackage_1.getParty(), null, "companyParty", null, 0, 1, ProductStoreShipmentMeth.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreShipmentMeth_CompanyParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getProductStoreShipmentMeth_ConfigProps(), ecorePackage.getEString(), "configProps", null, 0, 1, ProductStoreShipmentMeth.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreShipmentMeth_ExcludeFeatureGroup(), ecorePackage.getEString(), "excludeFeatureGroup", null, 0, 1, ProductStoreShipmentMeth.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStoreShipmentMeth_ExcludeGeo(), theGeoPackage.getGeo(), null, "excludeGeo", null, 0, 1, ProductStoreShipmentMeth.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreShipmentMeth_ExcludeGeo().getEKeys().add(theGeoPackage.getGeo_GeoId());
 		initEAttribute(getProductStoreShipmentMeth_IncludeFeatureGroup(), ecorePackage.getEString(), "includeFeatureGroup", null, 0, 1, ProductStoreShipmentMeth.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStoreShipmentMeth_IncludeGeo(), theGeoPackage.getGeo(), null, "includeGeo", null, 0, 1, ProductStoreShipmentMeth.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreShipmentMeth_IncludeGeo().getEKeys().add(theGeoPackage.getGeo_GeoId());
 		initEAttribute(getProductStoreShipmentMeth_IncludeNoChargeItems(), ecorePackage.getEBoolean(), "includeNoChargeItems", "true", 1, 1, ProductStoreShipmentMeth.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreShipmentMeth_MaxSize(), ecorePackage.getEBigDecimal(), "maxSize", null, 0, 1, ProductStoreShipmentMeth.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreShipmentMeth_MaxTotal(), ecorePackage.getEBigDecimal(), "maxTotal", null, 0, 1, ProductStoreShipmentMeth.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3830,50 +3781,34 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 		initEAttribute(getProductStoreShipmentMeth_SequenceNumber(), ecorePackage.getELong(), "sequenceNumber", null, 0, 1, ProductStoreShipmentMeth.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreShipmentMeth_ServiceName(), ecorePackage.getEString(), "serviceName", null, 0, 1, ProductStoreShipmentMeth.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStoreShipmentMeth_ShipmentCustomMethod(), theMethodPackage.getCustomMethod(), null, "shipmentCustomMethod", null, 0, 1, ProductStoreShipmentMeth.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreShipmentMeth_ShipmentCustomMethod().getEKeys().add(theMethodPackage.getCustomMethod_CustomMethodId());
 		initEReference(getProductStoreShipmentMeth_ShipmentGatewayConfig(), theShipment_Package.getShipmentGatewayConfig(), null, "shipmentGatewayConfig", null, 0, 1, ProductStoreShipmentMeth.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreShipmentMeth_ShipmentGatewayConfig().getEKeys().add(theShipment_Package.getShipmentGatewayConfig_ShipmentGatewayConfigId());
 		initEReference(getProductStoreShipmentMeth_ShipmentMethodType(), theShipment_Package.getShipmentMethodType(), null, "shipmentMethodType", null, 0, 1, ProductStoreShipmentMeth.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreShipmentMeth_ShipmentMethodType().getEKeys().add(theShipment_Package.getShipmentMethodType_ShipmentMethodTypeId());
 
 		initEClass(productStoreSurveyApplEClass, ProductStoreSurveyAppl.class, "ProductStoreSurveyAppl", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getProductStoreSurveyAppl_ProductStoreSurveyId(), ecorePackage.getEString(), "productStoreSurveyId", null, 1, 1, ProductStoreSurveyAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreSurveyAppl_FromDate(), ecorePackage.getEDate(), "fromDate", null, 0, 1, ProductStoreSurveyAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreSurveyAppl_GroupName(), ecorePackage.getEString(), "groupName", null, 0, 1, ProductStoreSurveyAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStoreSurveyAppl_Product(), theProductPackage.getProduct(), null, "product", null, 0, 1, ProductStoreSurveyAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreSurveyAppl_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEReference(getProductStoreSurveyAppl_ProductCategory(), theCategoryPackage.getProductCategory(), null, "productCategory", null, 0, 1, ProductStoreSurveyAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreSurveyAppl_ProductCategory().getEKeys().add(theCategoryPackage.getProductCategory_ProductCategoryId());
 		initEReference(getProductStoreSurveyAppl_ProductStore(), this.getProductStore(), null, "productStore", null, 0, 1, ProductStoreSurveyAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreSurveyAppl_ProductStore().getEKeys().add(this.getProductStore_ProductStoreId());
 		initEAttribute(getProductStoreSurveyAppl_ResultTemplate(), ecorePackage.getEString(), "resultTemplate", null, 0, 1, ProductStoreSurveyAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreSurveyAppl_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, ProductStoreSurveyAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductStoreSurveyAppl_Survey(), theSurveyPackage.getSurvey(), null, "survey", null, 0, 1, ProductStoreSurveyAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreSurveyAppl_Survey().getEKeys().add(theSurveyPackage.getSurvey_SurveyId());
 		initEReference(getProductStoreSurveyAppl_SurveyApplType(), theSurveyPackage.getSurveyApplType(), null, "surveyApplType", null, 0, 1, ProductStoreSurveyAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreSurveyAppl_SurveyApplType().getEKeys().add(theSurveyPackage.getSurveyApplType_SurveyApplTypeId());
 		initEAttribute(getProductStoreSurveyAppl_SurveyTemplate(), ecorePackage.getEString(), "surveyTemplate", null, 0, 1, ProductStoreSurveyAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductStoreSurveyAppl_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductStoreSurveyAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productStoreVendorPaymentEClass, ProductStoreVendorPayment.class, "ProductStoreVendorPayment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductStoreVendorPayment_ProductStore(), this.getProductStore(), null, "productStore", null, 1, 1, ProductStoreVendorPayment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreVendorPayment_ProductStore().getEKeys().add(this.getProductStore_ProductStoreId());
 		initEReference(getProductStoreVendorPayment_VendorParty(), thePartyPackage_1.getParty(), null, "vendorParty", null, 1, 1, ProductStoreVendorPayment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreVendorPayment_VendorParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getProductStoreVendorPayment_PaymentMethodType(), thePaymentPackage.getPaymentMethodType(), null, "paymentMethodType", null, 1, 1, ProductStoreVendorPayment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreVendorPayment_PaymentMethodType().getEKeys().add(thePaymentPackage.getPaymentMethodType_PaymentMethodTypeId());
 		initEReference(getProductStoreVendorPayment_CreditCardEnum(), theEnumPackage.getEnumeration(), null, "creditCardEnum", null, 1, 1, ProductStoreVendorPayment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreVendorPayment_CreditCardEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 
 		initEClass(productStoreVendorShipmentEClass, ProductStoreVendorShipment.class, "ProductStoreVendorShipment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductStoreVendorShipment_ProductStore(), this.getProductStore(), null, "productStore", null, 1, 1, ProductStoreVendorShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreVendorShipment_ProductStore().getEKeys().add(this.getProductStore_ProductStoreId());
 		initEReference(getProductStoreVendorShipment_VendorParty(), thePartyPackage_1.getParty(), null, "vendorParty", null, 1, 1, ProductStoreVendorShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreVendorShipment_VendorParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getProductStoreVendorShipment_ShipmentMethodType(), theShipment_Package.getShipmentMethodType(), null, "shipmentMethodType", null, 1, 1, ProductStoreVendorShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreVendorShipment_ShipmentMethodType().getEKeys().add(theShipment_Package.getShipmentMethodType_ShipmentMethodTypeId());
 		initEReference(getProductStoreVendorShipment_CarrierParty(), thePartyPackage_1.getParty(), null, "carrierParty", null, 1, 1, ProductStoreVendorShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductStoreVendorShipment_CarrierParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 
 		// Create resource
 		createResource(eNS_URI);
@@ -3885,8 +3820,8 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 		createMimoentformatAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
-		// mimo-ent-slot-constraint
-		createMimoentslotconstraintAnnotations();
+		// mimo-ent-slot-constraints
+		createMimoentslotconstraintsAnnotations();
 	}
 
 	/**
@@ -4864,13 +4799,13 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 	}
 
 	/**
-	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * Initializes the annotations for <b>mimo-ent-slot-constraints</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createMimoentslotconstraintAnnotations() {
-		String source = "mimo-ent-slot-constraint";
+	protected void createMimoentslotconstraintsAnnotations() {
+		String source = "mimo-ent-slot-constraints";
 		addAnnotation
 		  (getProductStore_ProductStoreCatalogs(),
 		   source,

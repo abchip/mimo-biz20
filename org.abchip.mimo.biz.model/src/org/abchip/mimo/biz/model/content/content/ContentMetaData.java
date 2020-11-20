@@ -39,7 +39,7 @@ public interface ContentMetaData extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentMetaData_Content()
-	 * @model keys="contentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface ContentMetaData extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Meta Data Predicate</em>' reference.
 	 * @see #setMetaDataPredicate(MetaDataPredicate)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentMetaData_MetaDataPredicate()
-	 * @model keys="metaDataPredicateId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -85,7 +85,7 @@ public interface ContentMetaData extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Data Source</em>' reference.
 	 * @see #setDataSource(DataSource)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentMetaData_DataSource()
-	 * @model keys="dataSourceId"
+	 * @model
 	 * @generated
 	 */
 	DataSource getDataSource();

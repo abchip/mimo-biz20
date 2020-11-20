@@ -137,7 +137,7 @@ public interface FinAccountType extends EntityType<FinAccount>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(FinAccountType)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountType_ParentType()
-	 * @model keys="finAccountTypeId"
+	 * @model
 	 * @generated
 	 */
 	FinAccountType getParentType();
@@ -159,7 +159,7 @@ public interface FinAccountType extends EntityType<FinAccount>, EntityInfo {
 	 * @return the value of the '<em>Replenish Enum</em>' reference.
 	 * @see #setReplenishEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountType_ReplenishEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getReplenishEnum();

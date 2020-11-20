@@ -26,6 +26,7 @@ import org.abchip.mimo.biz.model.party.contact.ContactMech;
  *
  * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getGiftCard()
  * @model annotation="mimo-ent-frame title='Gift Card Information' formula='description'"
+ *        annotation="mimo-ent-frame-constraints paymentMethodType='GIFT_CARD'"
  * @generated
  */
 public interface GiftCard extends PaymentMethod {
@@ -63,7 +64,7 @@ public interface GiftCard extends PaymentMethod {
 	 * @return the value of the '<em>Contact Mech</em>' reference.
 	 * @see #setContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getGiftCard_ContactMech()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	ContactMech getContactMech();

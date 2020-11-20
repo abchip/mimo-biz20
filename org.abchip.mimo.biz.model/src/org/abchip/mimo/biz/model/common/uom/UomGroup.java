@@ -35,7 +35,7 @@ public interface UomGroup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Uom</em>' reference.
 	 * @see #setUom(Uom)
 	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUomGroup_Uom()
-	 * @model keys="uomId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

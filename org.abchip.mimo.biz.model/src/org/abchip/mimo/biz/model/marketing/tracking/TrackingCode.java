@@ -290,7 +290,7 @@ public interface TrackingCode extends EntityTyped<TrackingCodeType>, EntityInfo 
 	 * @return the value of the '<em>Marketing Campaign</em>' reference.
 	 * @see #setMarketingCampaign(MarketingCampaign)
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCode_MarketingCampaign()
-	 * @model keys="marketingCampaignId"
+	 * @model
 	 * @generated
 	 */
 	MarketingCampaign getMarketingCampaign();
@@ -494,7 +494,7 @@ public interface TrackingCode extends EntityTyped<TrackingCodeType>, EntityInfo 
 	 * @return the value of the '<em>Tracking Code Type</em>' reference.
 	 * @see #setTrackingCodeType(TrackingCodeType)
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCode_TrackingCodeType()
-	 * @model keys="trackingCodeTypeId"
+	 * @model
 	 * @generated
 	 */
 	TrackingCodeType getTrackingCodeType();
@@ -517,7 +517,7 @@ public interface TrackingCode extends EntityTyped<TrackingCodeType>, EntityInfo 
 	 * @return the value of the '<em>Tracking Code Visits</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCode_TrackingCodeVisits()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<TrackingCodeVisit> getTrackingCodeVisits();

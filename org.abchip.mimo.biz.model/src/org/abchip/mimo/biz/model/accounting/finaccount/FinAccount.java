@@ -114,7 +114,7 @@ public interface FinAccount extends EntityTyped<FinAccountType>, EntityInfo {
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_CurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getCurrencyUom();
@@ -229,7 +229,7 @@ public interface FinAccount extends EntityTyped<FinAccountType>, EntityInfo {
 	 * @return the value of the '<em>Fin Account Statuses</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_FinAccountStatuses()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint statusDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints statusDate='*NOW'"
 	 * @generated
 	 */
 	List<FinAccountStatus> getFinAccountStatuses();
@@ -241,7 +241,7 @@ public interface FinAccount extends EntityTyped<FinAccountType>, EntityInfo {
 	 * @return the value of the '<em>Fin Account Type</em>' reference.
 	 * @see #setFinAccountType(FinAccountType)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_FinAccountType()
-	 * @model keys="finAccountTypeId"
+	 * @model
 	 * @generated
 	 */
 	FinAccountType getFinAccountType();
@@ -316,8 +316,7 @@ public interface FinAccount extends EntityTyped<FinAccountType>, EntityInfo {
 	 * @return the value of the '<em>Organization Party</em>' reference.
 	 * @see #setOrganizationParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_OrganizationParty()
-	 * @model keys="partyId"
-	 *        annotation="mimo-ent-slot help='The internal organization Party that owns (or rather, is liable for) the account.'"
+	 * @model annotation="mimo-ent-slot help='The internal organization Party that owns (or rather, is liable for) the account.'"
 	 * @generated
 	 */
 	Party getOrganizationParty();
@@ -339,8 +338,7 @@ public interface FinAccount extends EntityTyped<FinAccountType>, EntityInfo {
 	 * @return the value of the '<em>Owner Party</em>' reference.
 	 * @see #setOwnerParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_OwnerParty()
-	 * @model keys="partyId"
-	 *        annotation="mimo-ent-slot help='The customer or third party that owns the account.'"
+	 * @model annotation="mimo-ent-slot help='The customer or third party that owns the account.'"
 	 * @generated
 	 */
 	Party getOwnerParty();
@@ -362,7 +360,7 @@ public interface FinAccount extends EntityTyped<FinAccountType>, EntityInfo {
 	 * @return the value of the '<em>Post To Gl Account</em>' reference.
 	 * @see #setPostToGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_PostToGlAccount()
-	 * @model keys="glAccountId"
+	 * @model
 	 * @generated
 	 */
 	GlAccount getPostToGlAccount();
@@ -410,7 +408,7 @@ public interface FinAccount extends EntityTyped<FinAccountType>, EntityInfo {
 	 * @return the value of the '<em>Replenish Payment</em>' reference.
 	 * @see #setReplenishPayment(PaymentMethod)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_ReplenishPayment()
-	 * @model keys="paymentMethodId"
+	 * @model
 	 * @generated
 	 */
 	PaymentMethod getReplenishPayment();

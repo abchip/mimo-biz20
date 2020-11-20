@@ -312,6 +312,7 @@ public class EntityServices {
 
 			// typed
 			if (typeEntity != null) {
+
 				EGenericType eGenericType = typeEntity.getEGenericSuperTypes().get(0);
 				if (eGenericType.getETypeArguments().isEmpty()) {
 					eClass = EcoreUtils.buildEntityTypedEClass(delegator, forms, typeEntity, modelEntity);
@@ -320,6 +321,9 @@ public class EntityServices {
 					eGenericType2.setEClassifier(eClass);
 
 					eGenericType.getETypeArguments().add(eGenericType2);
+
+					if (false)
+						"".toString();
 				} else {
 					LOGGER.warn("ROLE: " + modelEntity.getEntityName() + " -> " + typeEntity.getName() + "<" + eGenericType.getETypeArguments().get(0).getEClassifier().getName() + ">");
 					eClass = EcoreUtils.buildEntityEClass(delegator, forms, modelEntity);
@@ -340,23 +344,14 @@ public class EntityServices {
 		else
 			typeEntity = Frames.getEClass(eWorkPackage, modelEntity.getEntityName() + "Type");
 
-		// if (true)
-		// return typeEntity;
+		if (typeEntity == null)
+			return null;
 
-		if (typeEntity == null && !modelEntity.getEntityName().endsWith("Attr") && !modelEntity.getEntityName().equals("PartyInvitationRoleAssoc")) {
+		if (typeEntity.getEIDAttribute() == null)
+			return null;
 
-			EClass eClassRel = null;
-			for (ModelRelation modelRelation : modelEntity.getRelationsList(true, true, true)) {
-
-				if (modelRelation.getRelEntityName().equals("RoleType"))
-					continue;
-
-				if (eClassRel != null)
-					eClassRel = Frames.getEClass(eWorkPackage.getESuperPackage(), modelRelation.getRelEntityName());
-				else
-					eClassRel = Frames.getEClass(eWorkPackage.getESuperPackage(), modelRelation.getRelEntityName());
-			}
-		}
+		if (modelEntity.getField(typeEntity.getEIDAttribute().getName()) == null)
+			return null;
 
 		return typeEntity;
 	}
@@ -373,13 +368,14 @@ public class EntityServices {
 			if (!eSuperClass.equals(EntityPackage.eINSTANCE.getEntityType()))
 				continue;
 
-			if (typeEntity.getEGenericSuperTypes().get(0).getETypeArguments().isEmpty()) {
-				LOGGER.info("TYPE: " + typeEntity.getName());
-				typeEntity.getEGenericSuperTypes().clear();
-				typeEntity.getESuperTypes().clear();
-				typeEntity.getESuperTypes().add(EntityPackage.eINSTANCE.getEntityIdentifiable());
-				typeEntity.getESuperTypes().add(EntityPackage.eINSTANCE.getEntityInfo());
-			}
+			if (!typeEntity.getEGenericSuperTypes().get(0).getETypeArguments().isEmpty())
+				continue;
+
+			LOGGER.info("TYPE: " + eWorkPackage.getNsURI() + "/#" + typeEntity.getName() + " -> " + typeEntity.getEStructuralFeature("hasTable"));
+			typeEntity.getEGenericSuperTypes().clear();
+			typeEntity.getESuperTypes().clear();
+			typeEntity.getESuperTypes().add(EntityPackage.eINSTANCE.getEntityIdentifiable());
+			typeEntity.getESuperTypes().add(EntityPackage.eINSTANCE.getEntityInfo());
 		}
 	}
 
@@ -387,9 +383,8 @@ public class EntityServices {
 
 		// set superClass
 		for (String entityName : entityNames) {
-
 			EClass eClass = Frames.getEClass(bizPackage, entityName);
-			
+
 			// with attribute ID
 			EAttribute eClassAttributeID = eClass.getEIDAttribute();
 			if (eClassAttributeID == null)
@@ -407,12 +402,9 @@ public class EntityServices {
 				continue;
 			}
 
-			if (EntityPackage.eINSTANCE.getEntityTyped().isSuperTypeOf(eClassRelation)) {
-				LOGGER.info(eClass + "->" + eClassRelation);
-				"".toString();
-			}
-			else
-				"".toString();
+			// only typed
+			if (!EntityPackage.eINSTANCE.getEntityTyped().isSuperTypeOf(eClassRelation))
+				continue;
 
 			// remove duplicate attribute ID
 			eClass.getEStructuralFeatures().remove(eClassAttributeID);
@@ -420,6 +412,19 @@ public class EntityServices {
 			// super type
 			eClass.getESuperTypes().clear();
 			eClass.getESuperTypes().add(eClassRelation);
+
+			// constraints
+			EClass eClassType = (EClass) eClassRelation.getEGenericSuperTypes().get(0).getETypeArguments().get(0).getEClassifier();
+			String constraintField = eClassType.getEIDAttribute().getName();
+
+			if (eClass.getEStructuralFeature(constraintField) == null)
+				continue;
+
+			if (constraintField.endsWith("Id"))
+				constraintField = constraintField.substring(0, constraintField.length() - 2);
+
+			String constraintValue = ModelUtil.javaNameToDbName(eClass.getName());
+			EcoreUtils.addAnnotationKey(eClass, Frame.NS_PREFIX_FRAME_CONSTRAINTS, constraintField, constraintValue);
 		}
 	}
 
@@ -524,7 +529,6 @@ public class EntityServices {
 		eReference.setName(name);
 
 		eReference.setEType(eClassRel);
-		eReference.getEKeys().add(eClassRel.getEIDAttribute());
 
 		for (EAnnotation eAnnotation : eAttribute.getEAnnotations()) {
 			if (eAnnotation.getSource().equals(Slot.NS_PREFIX_FORMAT))
@@ -722,7 +726,7 @@ public class EntityServices {
 				eReference.setUpperBound(-1);
 
 				if (dateConstraint != null) {
-					EcoreUtils.addAnnotationKey(eReference, Slot.NS_PREFIX_SLOT_CONSTRAINT, dateConstraint, "*NOW");
+					EcoreUtils.addAnnotationKey(eReference, Slot.NS_PREFIX_SLOT_CONSTRAINTS, dateConstraint, "*NOW");
 				}
 
 				eClass.getEStructuralFeatures().add(eReference);

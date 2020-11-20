@@ -39,7 +39,7 @@ public interface FacilityCarrierShipment extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityCarrierShipment_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface FacilityCarrierShipment extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityCarrierShipment_Facility()
-	 * @model keys="facilityId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -85,7 +85,7 @@ public interface FacilityCarrierShipment extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Shipment Method Type</em>' reference.
 	 * @see #setShipmentMethodType(ShipmentMethodType)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityCarrierShipment_ShipmentMethodType()
-	 * @model keys="shipmentMethodTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

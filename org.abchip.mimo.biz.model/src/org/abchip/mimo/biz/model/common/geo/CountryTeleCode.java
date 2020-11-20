@@ -7,6 +7,9 @@
  */
 package org.abchip.mimo.biz.model.common.geo;
 
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Country Tele Code</b></em>'.
@@ -16,6 +19,7 @@ package org.abchip.mimo.biz.model.common.geo;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.CountryTeleCode#getCountryCode <em>Country Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.CountryTeleCode#getTeleCode <em>Tele Code</em>}</li>
  * </ul>
  *
@@ -23,7 +27,30 @@ package org.abchip.mimo.biz.model.common.geo;
  * @model annotation="mimo-ent-frame title='Telephone Country Code'"
  * @generated
  */
-public interface CountryTeleCode extends CountryCode {
+public interface CountryTeleCode extends EntityIdentifiable, EntityInfo {
+	/**
+	 * Returns the value of the '<em><b>Country Code</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Country Code</em>' attribute.
+	 * @see #setCountryCode(String)
+	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getCountryTeleCode_CountryCode()
+	 * @model id="true" required="true"
+	 *        annotation="mimo-ent-format length='20'"
+	 * @generated
+	 */
+	String getCountryCode();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.geo.CountryTeleCode#getCountryCode <em>Country Code</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Country Code</em>' attribute.
+	 * @see #getCountryCode()
+	 * @generated
+	 */
+	void setCountryCode(String value);
+
 	/**
 	 * Returns the value of the '<em><b>Tele Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->

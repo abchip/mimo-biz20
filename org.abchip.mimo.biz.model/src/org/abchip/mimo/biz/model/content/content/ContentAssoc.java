@@ -51,7 +51,7 @@ public interface ContentAssoc extends EntityTyped<ContentAssocType>, EntityInfo 
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentAssoc_Content()
-	 * @model keys="contentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true' help='\"parent\" content'"
 	 * @generated
 	 */
@@ -78,7 +78,7 @@ public interface ContentAssoc extends EntityTyped<ContentAssocType>, EntityInfo 
 	 * @return the value of the '<em>Content Id To</em>' reference.
 	 * @see #setContentIdTo(Content)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentAssoc_ContentIdTo()
-	 * @model keys="contentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true' help='\"child\" or \"sub\" content'"
 	 * @generated
 	 */
@@ -101,7 +101,7 @@ public interface ContentAssoc extends EntityTyped<ContentAssocType>, EntityInfo 
 	 * @return the value of the '<em>Content Assoc Type</em>' reference.
 	 * @see #setContentAssocType(ContentAssocType)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentAssoc_ContentAssocType()
-	 * @model keys="contentAssocTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -128,7 +128,7 @@ public interface ContentAssoc extends EntityTyped<ContentAssocType>, EntityInfo 
 	 * @return the value of the '<em>Created By User Login</em>' reference.
 	 * @see #setCreatedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentAssoc_CreatedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getCreatedByUserLogin();
@@ -176,7 +176,7 @@ public interface ContentAssoc extends EntityTyped<ContentAssocType>, EntityInfo 
 	 * @return the value of the '<em>Data Source</em>' reference.
 	 * @see #setDataSource(DataSource)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentAssoc_DataSource()
-	 * @model keys="dataSourceId"
+	 * @model
 	 * @generated
 	 */
 	DataSource getDataSource();
@@ -225,7 +225,7 @@ public interface ContentAssoc extends EntityTyped<ContentAssocType>, EntityInfo 
 	 * @return the value of the '<em>Content Assoc Predicate</em>' reference.
 	 * @see #setContentAssocPredicate(ContentAssocPredicate)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentAssoc_ContentAssocPredicate()
-	 * @model keys="contentAssocPredicateId"
+	 * @model
 	 * @generated
 	 */
 	ContentAssocPredicate getContentAssocPredicate();
@@ -251,7 +251,7 @@ public interface ContentAssoc extends EntityTyped<ContentAssocType>, EntityInfo 
 	 * @return the value of the '<em>Last Modified By User Login</em>' reference.
 	 * @see #setLastModifiedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentAssoc_LastModifiedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getLastModifiedByUserLogin();

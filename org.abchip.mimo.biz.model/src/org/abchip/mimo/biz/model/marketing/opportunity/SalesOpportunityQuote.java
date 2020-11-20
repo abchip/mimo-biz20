@@ -36,7 +36,7 @@ public interface SalesOpportunityQuote extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Sales Opportunity</em>' reference.
 	 * @see #setSalesOpportunity(SalesOpportunity)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityQuote_SalesOpportunity()
-	 * @model keys="salesOpportunityId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface SalesOpportunityQuote extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Quote</em>' reference.
 	 * @see #setQuote(Quote)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunityQuote_Quote()
-	 * @model keys="quoteId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

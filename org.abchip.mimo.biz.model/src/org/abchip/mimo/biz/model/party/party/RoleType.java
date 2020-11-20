@@ -89,7 +89,7 @@ public interface RoleType extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(RoleType)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getRoleType_ParentType()
-	 * @model keys="roleTypeId"
+	 * @model
 	 * @generated
 	 */
 	RoleType getParentType();

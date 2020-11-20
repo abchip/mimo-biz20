@@ -146,7 +146,7 @@ public interface ApplicationSandbox extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Runtime Data</em>' reference.
 	 * @see #setRuntimeData(RuntimeData)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getApplicationSandbox_RuntimeData()
-	 * @model keys="runtimeDataId"
+	 * @model
 	 * @generated
 	 */
 	RuntimeData getRuntimeData();

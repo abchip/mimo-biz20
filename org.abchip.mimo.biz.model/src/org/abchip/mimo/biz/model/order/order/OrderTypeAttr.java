@@ -36,7 +36,7 @@ public interface OrderTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order Type</em>' reference.
 	 * @see #setOrderType(OrderType)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderTypeAttr_OrderType()
-	 * @model keys="orderTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

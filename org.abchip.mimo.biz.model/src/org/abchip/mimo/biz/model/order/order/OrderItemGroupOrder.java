@@ -37,7 +37,7 @@ public interface OrderItemGroupOrder extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Group Order</em>' reference.
 	 * @see #setGroupOrder(ProductGroupOrder)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemGroupOrder_GroupOrder()
-	 * @model keys="groupOrderId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

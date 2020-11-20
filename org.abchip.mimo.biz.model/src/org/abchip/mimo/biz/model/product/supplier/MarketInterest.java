@@ -40,7 +40,7 @@ public interface MarketInterest extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Category</em>' reference.
 	 * @see #setProductCategory(ProductCategory)
 	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getMarketInterest_ProductCategory()
-	 * @model keys="productCategoryId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface MarketInterest extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party Classification Group</em>' reference.
 	 * @see #setPartyClassificationGroup(PartyClassificationGroup)
 	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getMarketInterest_PartyClassificationGroup()
-	 * @model keys="partyClassificationGroupId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

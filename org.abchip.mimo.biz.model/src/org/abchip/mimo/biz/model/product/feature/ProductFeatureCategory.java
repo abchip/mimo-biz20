@@ -62,7 +62,7 @@ public interface ProductFeatureCategory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Category</em>' reference.
 	 * @see #setParentCategory(ProductFeatureCategory)
 	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureCategory_ParentCategory()
-	 * @model keys="productFeatureCategoryId"
+	 * @model
 	 * @generated
 	 */
 	ProductFeatureCategory getParentCategory();

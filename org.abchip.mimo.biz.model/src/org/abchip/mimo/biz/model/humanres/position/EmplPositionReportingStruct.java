@@ -96,7 +96,7 @@ public interface EmplPositionReportingStruct extends EntityIdentifiable, EntityI
 	 * @return the value of the '<em>Empl Position Id Managed By</em>' reference.
 	 * @see #setEmplPositionIdManagedBy(EmplPosition)
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionReportingStruct_EmplPositionIdManagedBy()
-	 * @model keys="emplPositionId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -123,7 +123,7 @@ public interface EmplPositionReportingStruct extends EntityIdentifiable, EntityI
 	 * @return the value of the '<em>Empl Position Id Reporting To</em>' reference.
 	 * @see #setEmplPositionIdReportingTo(EmplPosition)
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionReportingStruct_EmplPositionIdReportingTo()
-	 * @model keys="emplPositionId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

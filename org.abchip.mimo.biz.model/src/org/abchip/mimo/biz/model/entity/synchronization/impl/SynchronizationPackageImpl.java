@@ -1395,7 +1395,6 @@ public class SynchronizationPackageImpl extends EPackageImpl implements Synchron
 
 		initEClass(entitySyncHistoryEClass, EntitySyncHistory.class, "EntitySyncHistory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEntitySyncHistory_EntitySync(), this.getEntitySync(), null, "entitySync", null, 1, 1, EntitySyncHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEntitySyncHistory_EntitySync().getEKeys().add(this.getEntitySync_EntitySyncId());
 		initEAttribute(getEntitySyncHistory_StartDate(), ecorePackage.getEDate(), "startDate", null, 1, 1, EntitySyncHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEntitySyncHistory_BeginningSynchTime(), ecorePackage.getEDate(), "beginningSynchTime", null, 0, 1, EntitySyncHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEntitySyncHistory_LastCandidateEndTime(), ecorePackage.getEDate(), "lastCandidateEndTime", null, 0, 1, EntitySyncHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1424,15 +1423,12 @@ public class SynchronizationPackageImpl extends EPackageImpl implements Synchron
 
 		initEClass(entitySyncIncludeEClass, EntitySyncInclude.class, "EntitySyncInclude", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEntitySyncInclude_EntitySync(), this.getEntitySync(), null, "entitySync", null, 1, 1, EntitySyncInclude.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEntitySyncInclude_EntitySync().getEKeys().add(this.getEntitySync_EntitySyncId());
 		initEAttribute(getEntitySyncInclude_EntityOrPackage(), ecorePackage.getEString(), "entityOrPackage", null, 1, 1, EntitySyncInclude.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEntitySyncInclude_ApplEnumId(), ecorePackage.getEString(), "applEnumId", null, 0, 1, EntitySyncInclude.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(entitySyncIncludeGroupEClass, EntitySyncIncludeGroup.class, "EntitySyncIncludeGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEntitySyncIncludeGroup_EntityGroup(), theGroupPackage.getEntityGroup(), null, "entityGroup", null, 1, 1, EntitySyncIncludeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEntitySyncIncludeGroup_EntityGroup().getEKeys().add(theGroupPackage.getEntityGroup_EntityGroupId());
 		initEReference(getEntitySyncIncludeGroup_EntitySync(), this.getEntitySync(), null, "entitySync", null, 1, 1, EntitySyncIncludeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getEntitySyncIncludeGroup_EntitySync().getEKeys().add(this.getEntitySync_EntitySyncId());
 
 		initEClass(entitySyncRemoveEClass, EntitySyncRemove.class, "EntitySyncRemove", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getEntitySyncRemove_EntitySyncRemoveId(), ecorePackage.getEString(), "entitySyncRemoveId", null, 1, 1, EntitySyncRemove.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

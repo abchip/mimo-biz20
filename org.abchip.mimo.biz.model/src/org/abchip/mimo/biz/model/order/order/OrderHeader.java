@@ -115,7 +115,7 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * @return the value of the '<em>Auto Order Shopping List</em>' reference.
 	 * @see #setAutoOrderShoppingList(ShoppingList)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_AutoOrderShoppingList()
-	 * @model keys="shoppingListId"
+	 * @model
 	 * @generated
 	 */
 	ShoppingList getAutoOrderShoppingList();
@@ -137,7 +137,7 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * @return the value of the '<em>Billing Account</em>' reference.
 	 * @see #setBillingAccount(BillingAccount)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_BillingAccount()
-	 * @model keys="billingAccountId"
+	 * @model
 	 * @generated
 	 */
 	BillingAccount getBillingAccount();
@@ -175,7 +175,7 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * @return the value of the '<em>Created By</em>' reference.
 	 * @see #setCreatedBy(UserLogin)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_CreatedBy()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getCreatedBy();
@@ -201,7 +201,7 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_CurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getCurrencyUom();
@@ -632,7 +632,7 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * @return the value of the '<em>Order Type</em>' reference.
 	 * @see #setOrderType(OrderType)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_OrderType()
-	 * @model keys="orderTypeId"
+	 * @model
 	 * @generated
 	 */
 	OrderType getOrderType();
@@ -654,7 +654,7 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * @return the value of the '<em>Origin Facility</em>' reference.
 	 * @see #setOriginFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_OriginFacility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getOriginFacility();
@@ -737,7 +737,7 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * @return the value of the '<em>Product Store</em>' reference.
 	 * @see #setProductStore(ProductStore)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_ProductStore()
-	 * @model keys="productStoreId"
+	 * @model
 	 * @generated
 	 */
 	ProductStore getProductStore();
@@ -785,7 +785,7 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * @return the value of the '<em>Sales Channel Enum</em>' reference.
 	 * @see #setSalesChannelEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_SalesChannelEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getSalesChannelEnum();
@@ -807,7 +807,7 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -829,7 +829,7 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * @return the value of the '<em>Sync Status</em>' reference.
 	 * @see #setSyncStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_SyncStatus()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getSyncStatus();
@@ -941,7 +941,7 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * @return the value of the '<em>Web Site</em>' reference.
 	 * @see #setWebSite(WebSite)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_WebSite()
-	 * @model keys="webSiteId"
+	 * @model
 	 * @generated
 	 */
 	WebSite getWebSite();

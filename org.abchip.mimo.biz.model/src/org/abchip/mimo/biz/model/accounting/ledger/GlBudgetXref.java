@@ -42,7 +42,7 @@ public interface GlBudgetXref extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Gl Account</em>' reference.
 	 * @see #setGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlBudgetXref_GlAccount()
-	 * @model keys="glAccountId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -65,7 +65,7 @@ public interface GlBudgetXref extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Budget Item Type</em>' reference.
 	 * @see #setBudgetItemType(BudgetItemType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlBudgetXref_BudgetItemType()
-	 * @model keys="budgetItemTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

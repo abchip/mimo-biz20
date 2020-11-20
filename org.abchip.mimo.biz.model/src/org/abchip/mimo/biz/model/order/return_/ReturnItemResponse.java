@@ -128,7 +128,7 @@ public interface ReturnItemResponse extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Billing Account</em>' reference.
 	 * @see #setBillingAccount(BillingAccount)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemResponse_BillingAccount()
-	 * @model keys="billingAccountId"
+	 * @model
 	 * @generated
 	 */
 	BillingAccount getBillingAccount();
@@ -150,7 +150,7 @@ public interface ReturnItemResponse extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Fin Account Trans</em>' reference.
 	 * @see #setFinAccountTrans(FinAccountTrans)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemResponse_FinAccountTrans()
-	 * @model keys="finAccountTransId"
+	 * @model
 	 * @generated
 	 */
 	FinAccountTrans getFinAccountTrans();
@@ -172,7 +172,7 @@ public interface ReturnItemResponse extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order Payment Preference</em>' reference.
 	 * @see #setOrderPaymentPreference(OrderPaymentPreference)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemResponse_OrderPaymentPreference()
-	 * @model keys="orderPaymentPreferenceId"
+	 * @model
 	 * @generated
 	 */
 	OrderPaymentPreference getOrderPaymentPreference();
@@ -194,7 +194,7 @@ public interface ReturnItemResponse extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Payment</em>' reference.
 	 * @see #setPayment(Payment)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemResponse_Payment()
-	 * @model keys="paymentId"
+	 * @model
 	 * @generated
 	 */
 	Payment getPayment();
@@ -216,7 +216,7 @@ public interface ReturnItemResponse extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Replacement Order</em>' reference.
 	 * @see #setReplacementOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnItemResponse_ReplacementOrder()
-	 * @model keys="orderId"
+	 * @model
 	 * @generated
 	 */
 	OrderHeader getReplacementOrder();

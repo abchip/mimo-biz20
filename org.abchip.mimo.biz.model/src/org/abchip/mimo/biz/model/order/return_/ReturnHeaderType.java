@@ -62,7 +62,7 @@ public interface ReturnHeaderType extends EntityType<ReturnHeader>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(ReturnHeaderType)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeaderType_ParentType()
-	 * @model keys="returnHeaderTypeId"
+	 * @model
 	 * @generated
 	 */
 	ReturnHeaderType getParentType();

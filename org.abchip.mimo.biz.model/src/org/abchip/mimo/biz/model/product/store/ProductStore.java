@@ -590,7 +590,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Default Currency Uom</em>' reference.
 	 * @see #setDefaultCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_DefaultCurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getDefaultCurrencyUom();
@@ -664,7 +664,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Default Sales Channel Enum</em>' reference.
 	 * @see #setDefaultSalesChannelEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_DefaultSalesChannelEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getDefaultSalesChannelEnum();
@@ -964,7 +964,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Digital Item Approved Status</em>' reference.
 	 * @see #setDigitalItemApprovedStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_DigitalItemApprovedStatus()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getDigitalItemApprovedStatus();
@@ -990,7 +990,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Header Approved Status</em>' reference.
 	 * @see #setHeaderApprovedStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_HeaderApprovedStatus()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getHeaderApprovedStatus();
@@ -1016,7 +1016,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Header Cancel Status</em>' reference.
 	 * @see #setHeaderCancelStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_HeaderCancelStatus()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getHeaderCancelStatus();
@@ -1042,7 +1042,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Header Declined Status</em>' reference.
 	 * @see #setHeaderDeclinedStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_HeaderDeclinedStatus()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getHeaderDeclinedStatus();
@@ -1064,7 +1064,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Inventory Facility</em>' reference.
 	 * @see #setInventoryFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_InventoryFacility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getInventoryFacility();
@@ -1090,7 +1090,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Item Approved Status</em>' reference.
 	 * @see #setItemApprovedStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ItemApprovedStatus()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getItemApprovedStatus();
@@ -1116,7 +1116,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Item Cancel Status</em>' reference.
 	 * @see #setItemCancelStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ItemCancelStatus()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getItemCancelStatus();
@@ -1142,7 +1142,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Item Declined Status</em>' reference.
 	 * @see #setItemDeclinedStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ItemDeclinedStatus()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getItemDeclinedStatus();
@@ -1339,8 +1339,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Pay To Party</em>' reference.
 	 * @see #setPayToParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_PayToParty()
-	 * @model keys="partyId"
-	 *        annotation="mimo-ent-slot help='Note that this corresponds with the organizationPartyId that GL transactions will be posted to.'"
+	 * @model annotation="mimo-ent-slot help='Note that this corresponds with the organizationPartyId that GL transactions will be posted to.'"
 	 * @generated
 	 */
 	Party getPayToParty();
@@ -1362,7 +1361,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Primary Store Group</em>' reference.
 	 * @see #setPrimaryStoreGroup(ProductStoreGroup)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_PrimaryStoreGroup()
-	 * @model keys="productStoreGroupId"
+	 * @model
 	 * @generated
 	 */
 	ProductStoreGroup getPrimaryStoreGroup();
@@ -1464,7 +1463,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Requirement Method Enum</em>' reference.
 	 * @see #setRequirementMethodEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_RequirementMethodEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getRequirementMethodEnum();
@@ -1513,7 +1512,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Reserve Order Enum</em>' reference.
 	 * @see #setReserveOrderEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ReserveOrderEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getReserveOrderEnum();
@@ -1773,8 +1772,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Store Credit Account Enum</em>' reference.
 	 * @see #setStoreCreditAccountEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_StoreCreditAccountEnum()
-	 * @model keys="enumId"
-	 *        annotation="mimo-ent-slot help='Specify the type (Billing Account or Financial Account) of Store Credit Account used for refund return. Default to Financial Account. \n              This field is override by ReturnHeader.billingAccountId or ReturnHeader.finAccountId, whichever is specified but if only finAccountId is specified explicitly then system will first\n              try to locate any billing account with -ve amount. If found, then amount is credit to this billing account else the amount will be credit to the financial account of the user.'"
+	 * @model annotation="mimo-ent-slot help='Specify the type (Billing Account or Financial Account) of Store Credit Account used for refund return. Default to Financial Account. \n              This field is override by ReturnHeader.billingAccountId or ReturnHeader.finAccountId, whichever is specified but if only finAccountId is specified explicitly then system will first\n              try to locate any billing account with -ve amount. If found, then amount is credit to this billing account else the amount will be credit to the financial account of the user.'"
 	 * @generated
 	 */
 	Enumeration getStoreCreditAccountEnum();
@@ -2136,7 +2134,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Store Catalogs</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ProductStoreCatalogs()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductStoreCatalog> getProductStoreCatalogs();
@@ -2161,7 +2159,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Store Facilities</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ProductStoreFacilities()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductStoreFacility> getProductStoreFacilities();
@@ -2186,7 +2184,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Store Group Members</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ProductStoreGroupMembers()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductStoreGroupMember> getProductStoreGroupMembers();
@@ -2199,7 +2197,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Store Keyword Ovrds</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ProductStoreKeywordOvrds()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductStoreKeywordOvrd> getProductStoreKeywordOvrds();
@@ -2212,7 +2210,7 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Store Promo Appls</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ProductStorePromoAppls()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ProductStorePromoAppl> getProductStorePromoAppls();

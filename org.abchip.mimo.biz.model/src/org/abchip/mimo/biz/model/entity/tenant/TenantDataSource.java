@@ -38,7 +38,7 @@ public interface TenantDataSource extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Tenant</em>' reference.
 	 * @see #setTenant(Tenant)
 	 * @see org.abchip.mimo.biz.model.entity.tenant.TenantPackage#getTenantDataSource_Tenant()
-	 * @model keys="tenantId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

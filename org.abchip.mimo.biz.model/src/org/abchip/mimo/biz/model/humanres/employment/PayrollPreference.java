@@ -53,7 +53,7 @@ public interface PayrollPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayrollPreference_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -128,7 +128,7 @@ public interface PayrollPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Deduction Type</em>' reference.
 	 * @see #setDeductionType(DeductionType)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayrollPreference_DeductionType()
-	 * @model keys="deductionTypeId"
+	 * @model
 	 * @generated
 	 */
 	DeductionType getDeductionType();
@@ -202,7 +202,7 @@ public interface PayrollPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Payment Method Type</em>' reference.
 	 * @see #setPaymentMethodType(PaymentMethodType)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayrollPreference_PaymentMethodType()
-	 * @model keys="paymentMethodTypeId"
+	 * @model
 	 * @generated
 	 */
 	PaymentMethodType getPaymentMethodType();
@@ -278,7 +278,7 @@ public interface PayrollPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Period Type</em>' reference.
 	 * @see #setPeriodType(PeriodType)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayrollPreference_PeriodType()
-	 * @model keys="periodTypeId"
+	 * @model
 	 * @generated
 	 */
 	PeriodType getPeriodType();

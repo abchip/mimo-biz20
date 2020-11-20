@@ -37,7 +37,7 @@ public interface OrderAdjustmentAttribute extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Order Adjustment</em>' reference.
 	 * @see #setOrderAdjustment(OrderAdjustment)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustmentAttribute_OrderAdjustment()
-	 * @model keys="orderAdjustmentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

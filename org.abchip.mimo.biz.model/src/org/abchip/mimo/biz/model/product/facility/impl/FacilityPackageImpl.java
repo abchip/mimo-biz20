@@ -2816,16 +2816,12 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		initEAttribute(getContainer_ContainerId(), ecorePackage.getEString(), "containerId", null, 1, 1, org.abchip.mimo.biz.model.product.facility.Container.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContainer_ContainerGeoPoints(), this.getContainerGeoPoint(), null, "containerGeoPoints", null, 0, -1, org.abchip.mimo.biz.model.product.facility.Container.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getContainer_ContainerType(), this.getContainerType(), null, "containerType", null, 0, 1, org.abchip.mimo.biz.model.product.facility.Container.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContainer_ContainerType().getEKeys().add(this.getContainerType_ContainerTypeId());
 		initEAttribute(getContainer_Description(), ecorePackage.getEString(), "description", null, 0, 1, org.abchip.mimo.biz.model.product.facility.Container.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContainer_Facility(), this.getFacility(), null, "facility", null, 0, 1, org.abchip.mimo.biz.model.product.facility.Container.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContainer_Facility().getEKeys().add(this.getFacility_FacilityId());
 
 		initEClass(containerGeoPointEClass, ContainerGeoPoint.class, "ContainerGeoPoint", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getContainerGeoPoint_Container(), this.getContainer(), null, "container", null, 1, 1, ContainerGeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContainerGeoPoint_Container().getEKeys().add(this.getContainer_ContainerId());
 		initEReference(getContainerGeoPoint_GeoPoint(), theGeoPackage.getGeoPoint(), null, "geoPoint", null, 1, 1, ContainerGeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getContainerGeoPoint_GeoPoint().getEKeys().add(theGeoPackage.getGeoPoint_GeoPointId());
 		initEAttribute(getContainerGeoPoint_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ContainerGeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContainerGeoPoint_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ContainerGeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -2838,11 +2834,8 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		initEAttribute(getFacility_ClosedDate(), ecorePackage.getEDate(), "closedDate", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacility_DefaultDaysToShip(), ecorePackage.getELong(), "defaultDaysToShip", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFacility_DefaultDimensionUom(), theUomPackage.getUom(), null, "defaultDimensionUom", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacility_DefaultDimensionUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEReference(getFacility_DefaultInventoryItemType(), theInventoryPackage.getInventoryItemType(), null, "defaultInventoryItemType", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacility_DefaultInventoryItemType().getEKeys().add(theInventoryPackage.getInventoryItemType_InventoryItemTypeId());
 		initEReference(getFacility_DefaultWeightUom(), theUomPackage.getUom(), null, "defaultWeightUom", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacility_DefaultWeightUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEAttribute(getFacility_Description(), ecorePackage.getEString(), "description", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFacility_FacilityAttributes(), this.getFacilityAttribute(), null, "facilityAttributes", null, 0, -1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getFacility_FacilityContactMechs(), this.getFacilityContactMech(), null, "facilityContactMechs", null, 0, -1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
@@ -2853,21 +2846,14 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		initEAttribute(getFacility_FacilityName(), ecorePackage.getEString(), "facilityName", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacility_FacilitySize(), ecorePackage.getEBigDecimal(), "facilitySize", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFacility_FacilitySizeUom(), theUomPackage.getUom(), null, "facilitySizeUom", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacility_FacilitySizeUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEReference(getFacility_FacilityType(), this.getFacilityType(), null, "facilityType", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacility_FacilityType().getEKeys().add(this.getFacilityType_FacilityTypeId());
 		initEReference(getFacility_GeoPoint(), theGeoPackage.getGeoPoint(), null, "geoPoint", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacility_GeoPoint().getEKeys().add(theGeoPackage.getGeoPoint_GeoPointId());
 		initEAttribute(getFacility_OldSquareFootage(), ecorePackage.getELong(), "oldSquareFootage", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacility_OpenedDate(), ecorePackage.getEDate(), "openedDate", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFacility_OwnerParty(), thePartyPackage_1.getParty(), null, "ownerParty", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacility_OwnerParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getFacility_ParentFacility(), this.getFacility(), null, "parentFacility", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacility_ParentFacility().getEKeys().add(this.getFacility_FacilityId());
 		initEReference(getFacility_PrimaryFacilityGroup(), this.getFacilityGroup(), null, "primaryFacilityGroup", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacility_PrimaryFacilityGroup().getEKeys().add(this.getFacilityGroup_FacilityGroupId());
 		initEReference(getFacility_ProductStore(), theStorePackage.getProductStore(), null, "productStore", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacility_ProductStore().getEKeys().add(theStorePackage.getProductStore_ProductStoreId());
 
 		initEClass(facilityAssocTypeEClass, FacilityAssocType.class, "FacilityAssocType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getFacilityAssocType_FacilityAssocTypeId(), ecorePackage.getEString(), "facilityAssocTypeId", null, 1, 1, FacilityAssocType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2875,16 +2861,13 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 
 		initEClass(facilityAttributeEClass, FacilityAttribute.class, "FacilityAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFacilityAttribute_Facility(), this.getFacility(), null, "facility", null, 1, 1, FacilityAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityAttribute_Facility().getEKeys().add(this.getFacility_FacilityId());
 		initEAttribute(getFacilityAttribute_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, FacilityAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityAttribute_AttrDescription(), ecorePackage.getEString(), "attrDescription", null, 0, 1, FacilityAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityAttribute_AttrValue(), ecorePackage.getEString(), "attrValue", null, 0, 1, FacilityAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(facilityCalendarEClass, FacilityCalendar.class, "FacilityCalendar", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFacilityCalendar_Facility(), this.getFacility(), null, "facility", null, 1, 1, FacilityCalendar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityCalendar_Facility().getEKeys().add(this.getFacility_FacilityId());
 		initEReference(getFacilityCalendar_FacilityCalendarType(), this.getFacilityCalendarType(), null, "facilityCalendarType", null, 1, 1, FacilityCalendar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityCalendar_FacilityCalendarType().getEKeys().add(this.getFacilityCalendarType_FacilityCalendarTypeId());
 		initEAttribute(getFacilityCalendar_CalendarId(), ecorePackage.getEString(), "calendarId", null, 1, 1, FacilityCalendar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityCalendar_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, FacilityCalendar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityCalendar_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, FacilityCalendar.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2896,18 +2879,13 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 
 		initEClass(facilityCarrierShipmentEClass, FacilityCarrierShipment.class, "FacilityCarrierShipment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFacilityCarrierShipment_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, FacilityCarrierShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityCarrierShipment_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getFacilityCarrierShipment_Facility(), this.getFacility(), null, "facility", null, 1, 1, FacilityCarrierShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityCarrierShipment_Facility().getEKeys().add(this.getFacility_FacilityId());
 		initEReference(getFacilityCarrierShipment_ShipmentMethodType(), theShipment_Package.getShipmentMethodType(), null, "shipmentMethodType", null, 1, 1, FacilityCarrierShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityCarrierShipment_ShipmentMethodType().getEKeys().add(theShipment_Package.getShipmentMethodType_ShipmentMethodTypeId());
 		initEAttribute(getFacilityCarrierShipment_RoleTypeId(), ecorePackage.getEString(), "roleTypeId", null, 1, 1, FacilityCarrierShipment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(facilityContactMechEClass, FacilityContactMech.class, "FacilityContactMech", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFacilityContactMech_Facility(), this.getFacility(), null, "facility", null, 1, 1, FacilityContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityContactMech_Facility().getEKeys().add(this.getFacility_FacilityId());
 		initEReference(getFacilityContactMech_ContactMech(), theContactPackage_1.getContactMech(), null, "contactMech", null, 1, 1, FacilityContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityContactMech_ContactMech().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
 		initEAttribute(getFacilityContactMech_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, FacilityContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityContactMech_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, FacilityContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityContactMech_Extension(), ecorePackage.getEString(), "extension", null, 0, 1, FacilityContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2915,19 +2893,14 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 
 		initEClass(facilityContactMechPurposeEClass, FacilityContactMechPurpose.class, "FacilityContactMechPurpose", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFacilityContactMechPurpose_ContactMechPurposeType(), theContactPackage_1.getContactMechPurposeType(), null, "contactMechPurposeType", null, 1, 1, FacilityContactMechPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityContactMechPurpose_ContactMechPurposeType().getEKeys().add(theContactPackage_1.getContactMechPurposeType_ContactMechPurposeTypeId());
 		initEReference(getFacilityContactMechPurpose_Facility(), this.getFacility(), null, "facility", null, 1, 1, FacilityContactMechPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityContactMechPurpose_Facility().getEKeys().add(this.getFacility_FacilityId());
 		initEReference(getFacilityContactMechPurpose_ContactMech(), theContactPackage_1.getContactMech(), null, "contactMech", null, 1, 1, FacilityContactMechPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityContactMechPurpose_ContactMech().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
 		initEAttribute(getFacilityContactMechPurpose_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, FacilityContactMechPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityContactMechPurpose_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, FacilityContactMechPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(facilityContentEClass, FacilityContent.class, "FacilityContent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFacilityContent_Facility(), this.getFacility(), null, "facility", null, 1, 1, FacilityContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityContent_Facility().getEKeys().add(this.getFacility_FacilityId());
 		initEReference(getFacilityContent_Content(), theContentPackage.getContent(), null, "content", null, 1, 1, FacilityContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityContent_Content().getEKeys().add(theContentPackage.getContent_ContentId());
 		initEAttribute(getFacilityContent_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, FacilityContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityContent_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, FacilityContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -2937,32 +2910,23 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		initEAttribute(getFacilityGroup_Description(), ecorePackage.getEString(), "description", null, 0, 1, FacilityGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityGroup_FacilityGroupName(), ecorePackage.getEString(), "facilityGroupName", null, 0, 1, FacilityGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFacilityGroup_FacilityGroupType(), this.getFacilityGroupType(), null, "facilityGroupType", null, 0, 1, FacilityGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityGroup_FacilityGroupType().getEKeys().add(this.getFacilityGroupType_FacilityGroupTypeId());
 		initEReference(getFacilityGroup_PrimaryParentGroup(), this.getFacilityGroup(), null, "primaryParentGroup", null, 0, 1, FacilityGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityGroup_PrimaryParentGroup().getEKeys().add(this.getFacilityGroup_FacilityGroupId());
 
 		initEClass(facilityGroupMemberEClass, FacilityGroupMember.class, "FacilityGroupMember", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFacilityGroupMember_Facility(), this.getFacility(), null, "facility", null, 1, 1, FacilityGroupMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityGroupMember_Facility().getEKeys().add(this.getFacility_FacilityId());
 		initEReference(getFacilityGroupMember_FacilityGroup(), this.getFacilityGroup(), null, "facilityGroup", null, 1, 1, FacilityGroupMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityGroupMember_FacilityGroup().getEKeys().add(this.getFacilityGroup_FacilityGroupId());
 		initEAttribute(getFacilityGroupMember_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, FacilityGroupMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityGroupMember_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, FacilityGroupMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityGroupMember_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, FacilityGroupMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(facilityGroupRoleEClass, FacilityGroupRole.class, "FacilityGroupRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFacilityGroupRole_FacilityGroup(), this.getFacilityGroup(), null, "facilityGroup", null, 1, 1, FacilityGroupRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityGroupRole_FacilityGroup().getEKeys().add(this.getFacilityGroup_FacilityGroupId());
 		initEReference(getFacilityGroupRole_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, FacilityGroupRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityGroupRole_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getFacilityGroupRole_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 1, 1, FacilityGroupRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityGroupRole_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 
 		initEClass(facilityGroupRollupEClass, FacilityGroupRollup.class, "FacilityGroupRollup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFacilityGroupRollup_FacilityGroup(), this.getFacilityGroup(), null, "facilityGroup", null, 1, 1, FacilityGroupRollup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityGroupRollup_FacilityGroup().getEKeys().add(this.getFacilityGroup_FacilityGroupId());
 		initEReference(getFacilityGroupRollup_ParentFacilityGroup(), this.getFacilityGroup(), null, "parentFacilityGroup", null, 1, 1, FacilityGroupRollup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityGroupRollup_ParentFacilityGroup().getEKeys().add(this.getFacilityGroup_FacilityGroupId());
 		initEAttribute(getFacilityGroupRollup_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, FacilityGroupRollup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityGroupRollup_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, FacilityGroupRollup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityGroupRollup_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, FacilityGroupRollup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2973,21 +2937,17 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 
 		initEClass(facilityLocationEClass, FacilityLocation.class, "FacilityLocation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFacilityLocation_Facility(), this.getFacility(), null, "facility", null, 1, 1, FacilityLocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityLocation_Facility().getEKeys().add(this.getFacility_FacilityId());
 		initEAttribute(getFacilityLocation_LocationSeqId(), ecorePackage.getEString(), "locationSeqId", null, 1, 1, FacilityLocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityLocation_AisleId(), ecorePackage.getEString(), "aisleId", null, 0, 1, FacilityLocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityLocation_AreaId(), ecorePackage.getEString(), "areaId", null, 0, 1, FacilityLocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFacilityLocation_GeoPoint(), theGeoPackage.getGeoPoint(), null, "geoPoint", null, 0, 1, FacilityLocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityLocation_GeoPoint().getEKeys().add(theGeoPackage.getGeoPoint_GeoPointId());
 		initEAttribute(getFacilityLocation_LevelId(), ecorePackage.getEString(), "levelId", null, 0, 1, FacilityLocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFacilityLocation_LocationTypeEnum(), theEnumPackage.getEnumeration(), null, "locationTypeEnum", null, 0, 1, FacilityLocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityLocation_LocationTypeEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getFacilityLocation_PositionId(), ecorePackage.getEString(), "positionId", null, 0, 1, FacilityLocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityLocation_SectionId(), ecorePackage.getEString(), "sectionId", null, 0, 1, FacilityLocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(facilityLocationGeoPointEClass, FacilityLocationGeoPoint.class, "FacilityLocationGeoPoint", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFacilityLocationGeoPoint_GeoPoint(), theGeoPackage.getGeoPoint(), null, "geoPoint", null, 1, 1, FacilityLocationGeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityLocationGeoPoint_GeoPoint().getEKeys().add(theGeoPackage.getGeoPoint_GeoPointId());
 		initEAttribute(getFacilityLocationGeoPoint_FacilityId(), ecorePackage.getEString(), "facilityId", null, 1, 1, FacilityLocationGeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityLocationGeoPoint_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, FacilityLocationGeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityLocationGeoPoint_LocationSeqId(), ecorePackage.getEString(), "locationSeqId", null, 1, 1, FacilityLocationGeoPoint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2995,11 +2955,8 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 
 		initEClass(facilityPartyEClass, FacilityParty.class, "FacilityParty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFacilityParty_Facility(), this.getFacility(), null, "facility", null, 1, 1, FacilityParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityParty_Facility().getEKeys().add(this.getFacility_FacilityId());
 		initEReference(getFacilityParty_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, FacilityParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityParty_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getFacilityParty_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 1, 1, FacilityParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityParty_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEAttribute(getFacilityParty_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, FacilityParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityParty_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, FacilityParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -3009,37 +2966,27 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		initEReference(getFacilityType_FacilityTypeAttrs(), this.getFacilityTypeAttr(), null, "facilityTypeAttrs", null, 0, -1, FacilityType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, FacilityType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFacilityType_ParentType(), this.getFacilityType(), null, "parentType", null, 0, 1, FacilityType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityType_ParentType().getEKeys().add(this.getFacilityType_FacilityTypeId());
 
 		initEClass(facilityTypeAttrEClass, FacilityTypeAttr.class, "FacilityTypeAttr", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFacilityTypeAttr_FacilityType(), this.getFacilityType(), null, "facilityType", null, 1, 1, FacilityTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getFacilityTypeAttr_FacilityType().getEKeys().add(this.getFacilityType_FacilityTypeId());
 		initEAttribute(getFacilityTypeAttr_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, FacilityTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacilityTypeAttr_Description(), ecorePackage.getEString(), "description", null, 0, 1, FacilityTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productFacilityEClass, ProductFacility.class, "ProductFacility", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductFacility_Product(), theProductPackage.getProduct(), null, "product", null, 1, 1, ProductFacility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFacility_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEReference(getProductFacility_Facility(), this.getFacility(), null, "facility", null, 1, 1, ProductFacility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFacility_Facility().getEKeys().add(this.getFacility_FacilityId());
 		initEAttribute(getProductFacility_DaysToShip(), ecorePackage.getELong(), "daysToShip", null, 0, 1, ProductFacility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFacility_LastInventoryCount(), ecorePackage.getEBigDecimal(), "lastInventoryCount", null, 0, 1, ProductFacility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFacility_MinimumStock(), ecorePackage.getEBigDecimal(), "minimumStock", null, 0, 1, ProductFacility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFacility_ReorderQuantity(), ecorePackage.getEBigDecimal(), "reorderQuantity", null, 0, 1, ProductFacility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductFacility_ReplenishMethodEnum(), theEnumPackage.getEnumeration(), null, "replenishMethodEnum", null, 0, 1, ProductFacility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFacility_ReplenishMethodEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEReference(getProductFacility_RequirementMethodEnum(), theEnumPackage.getEnumeration(), null, "requirementMethodEnum", null, 0, 1, ProductFacility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFacility_RequirementMethodEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 
 		initEClass(productFacilityAssocEClass, ProductFacilityAssoc.class, "ProductFacilityAssoc", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductFacilityAssoc_Product(), theProductPackage.getProduct(), null, "product", null, 1, 1, ProductFacilityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFacilityAssoc_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEReference(getProductFacilityAssoc_Facility(), this.getFacility(), null, "facility", null, 1, 1, ProductFacilityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFacilityAssoc_Facility().getEKeys().add(this.getFacility_FacilityId());
 		initEReference(getProductFacilityAssoc_FacilityIdTo(), this.getFacility(), null, "facilityIdTo", null, 1, 1, ProductFacilityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFacilityAssoc_FacilityIdTo().getEKeys().add(this.getFacility_FacilityId());
 		initEReference(getProductFacilityAssoc_FacilityAssocType(), this.getFacilityAssocType(), null, "facilityAssocType", null, 1, 1, ProductFacilityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFacilityAssoc_FacilityAssocType().getEKeys().add(this.getFacilityAssocType_FacilityAssocTypeId());
 		initEAttribute(getProductFacilityAssoc_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductFacilityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFacilityAssoc_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, ProductFacilityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFacilityAssoc_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductFacilityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3047,9 +2994,7 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 
 		initEClass(productFacilityLocationEClass, ProductFacilityLocation.class, "ProductFacilityLocation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductFacilityLocation_Product(), theProductPackage.getProduct(), null, "product", null, 1, 1, ProductFacilityLocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFacilityLocation_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEReference(getProductFacilityLocation_Facility(), this.getFacility(), null, "facility", null, 1, 1, ProductFacilityLocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductFacilityLocation_Facility().getEKeys().add(this.getFacility_FacilityId());
 		initEAttribute(getProductFacilityLocation_LocationSeqId(), ecorePackage.getEString(), "locationSeqId", null, 1, 1, ProductFacilityLocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFacilityLocation_MinimumStock(), ecorePackage.getEBigDecimal(), "minimumStock", null, 0, 1, ProductFacilityLocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFacilityLocation_MoveQuantity(), ecorePackage.getEBigDecimal(), "moveQuantity", null, 0, 1, ProductFacilityLocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3062,8 +3007,8 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		createMimoentframeAnnotations();
 		// mimo-ent-format
 		createMimoentformatAnnotations();
-		// mimo-ent-slot-constraint
-		createMimoentslotconstraintAnnotations();
+		// mimo-ent-slot-constraints
+		createMimoentslotconstraintsAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
 	}
@@ -3584,13 +3529,13 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 	}
 
 	/**
-	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * Initializes the annotations for <b>mimo-ent-slot-constraints</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createMimoentslotconstraintAnnotations() {
-		String source = "mimo-ent-slot-constraint";
+	protected void createMimoentslotconstraintsAnnotations() {
+		String source = "mimo-ent-slot-constraints";
 		addAnnotation
 		  (getContainer_ContainerGeoPoints(),
 		   source,

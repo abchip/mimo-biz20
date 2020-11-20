@@ -38,7 +38,7 @@ public interface CarrierShipmentBoxType extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Shipment Box Type</em>' reference.
 	 * @see #setShipmentBoxType(ShipmentBoxType)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getCarrierShipmentBoxType_ShipmentBoxType()
-	 * @model keys="shipmentBoxTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface CarrierShipmentBoxType extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getCarrierShipmentBoxType_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

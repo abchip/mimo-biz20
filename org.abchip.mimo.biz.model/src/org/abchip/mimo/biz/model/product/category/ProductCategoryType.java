@@ -87,7 +87,7 @@ public interface ProductCategoryType extends EntityType<ProductCategory>, Entity
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(ProductCategoryType)
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryType_ParentType()
-	 * @model keys="productCategoryTypeId"
+	 * @model
 	 * @generated
 	 */
 	ProductCategoryType getParentType();

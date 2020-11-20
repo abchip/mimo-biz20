@@ -1849,30 +1849,24 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 		initEAttribute(getProductCategory_LongDescription(), ecorePackage.getEString(), "longDescription", null, 0, 1, ProductCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductCategory_MarketInterests(), theSupplierPackage.getMarketInterest(), null, "marketInterests", null, 0, -1, ProductCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getProductCategory_PrimaryParentCategory(), this.getProductCategory(), null, "primaryParentCategory", null, 0, 1, ProductCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategory_PrimaryParentCategory().getEKeys().add(this.getProductCategory_ProductCategoryId());
 		initEReference(getProductCategory_ProductCategoryAttributes(), this.getProductCategoryAttribute(), null, "productCategoryAttributes", null, 0, -1, ProductCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getProductCategory_ProductCategoryLinks(), this.getProductCategoryLink(), null, "productCategoryLinks", null, 0, -1, ProductCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getProductCategory_ProductCategoryMembers(), this.getProductCategoryMember(), null, "productCategoryMembers", null, 0, -1, ProductCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getProductCategory_ProductCategoryType(), this.getProductCategoryType(), null, "productCategoryType", null, 0, 1, ProductCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategory_ProductCategoryType().getEKeys().add(this.getProductCategoryType_ProductCategoryTypeId());
 		initEReference(getProductCategory_ProductFeatureCatGrpAppls(), theFeaturePackage.getProductFeatureCatGrpAppl(), null, "productFeatureCatGrpAppls", null, 0, -1, ProductCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getProductCategory_ProductFeatureCategoryAppls(), theFeaturePackage.getProductFeatureCategoryAppl(), null, "productFeatureCategoryAppls", null, 0, -1, ProductCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCategory_ShowInSelect(), ecorePackage.getEBooleanObject(), "showInSelect", null, 0, 1, ProductCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productCategoryAttributeEClass, ProductCategoryAttribute.class, "ProductCategoryAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductCategoryAttribute_ProductCategory(), this.getProductCategory(), null, "productCategory", null, 1, 1, ProductCategoryAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryAttribute_ProductCategory().getEKeys().add(this.getProductCategory_ProductCategoryId());
 		initEAttribute(getProductCategoryAttribute_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, ProductCategoryAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCategoryAttribute_AttrDescription(), ecorePackage.getEString(), "attrDescription", null, 0, 1, ProductCategoryAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCategoryAttribute_AttrValue(), ecorePackage.getEString(), "attrValue", null, 0, 1, ProductCategoryAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productCategoryContentEClass, ProductCategoryContent.class, "ProductCategoryContent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductCategoryContent_ProductCategory(), this.getProductCategory(), null, "productCategory", null, 1, 1, ProductCategoryContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryContent_ProductCategory().getEKeys().add(this.getProductCategory_ProductCategoryId());
 		initEReference(getProductCategoryContent_Content(), theContentPackage.getContent(), null, "content", null, 1, 1, ProductCategoryContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryContent_Content().getEKeys().add(theContentPackage.getContent_ContentId());
 		initEReference(getProductCategoryContent_ProdCatContentType(), this.getProductCategoryContentType(), null, "prodCatContentType", null, 1, 1, ProductCategoryContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryContent_ProdCatContentType().getEKeys().add(this.getProductCategoryContentType_ProdCatContentTypeId());
 		initEAttribute(getProductCategoryContent_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductCategoryContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCategoryContent_PurchaseFromDate(), ecorePackage.getEDate(), "purchaseFromDate", null, 0, 1, ProductCategoryContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCategoryContent_PurchaseThruDate(), ecorePackage.getEDate(), "purchaseThruDate", null, 0, 1, ProductCategoryContent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1885,21 +1879,15 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 		initEAttribute(getProductCategoryContentType_Description(), ecorePackage.getEString(), "description", null, 0, 1, ProductCategoryContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCategoryContentType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, ProductCategoryContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductCategoryContentType_ParentType(), this.getProductCategoryContentType(), null, "parentType", null, 0, 1, ProductCategoryContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryContentType_ParentType().getEKeys().add(this.getProductCategoryContentType_ProdCatContentTypeId());
 
 		initEClass(productCategoryGlAccountEClass, ProductCategoryGlAccount.class, "ProductCategoryGlAccount", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductCategoryGlAccount_ProductCategory(), this.getProductCategory(), null, "productCategory", null, 1, 1, ProductCategoryGlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryGlAccount_ProductCategory().getEKeys().add(this.getProductCategory_ProductCategoryId());
 		initEReference(getProductCategoryGlAccount_OrganizationParty(), thePartyPackage_1.getParty(), null, "organizationParty", null, 1, 1, ProductCategoryGlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryGlAccount_OrganizationParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getProductCategoryGlAccount_GlAccountType(), theLedgerPackage.getGlAccountType(), null, "glAccountType", null, 1, 1, ProductCategoryGlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryGlAccount_GlAccountType().getEKeys().add(theLedgerPackage.getGlAccountType_GlAccountTypeId());
 		initEReference(getProductCategoryGlAccount_GlAccount(), theLedgerPackage.getGlAccount(), null, "glAccount", null, 0, 1, ProductCategoryGlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryGlAccount_GlAccount().getEKeys().add(theLedgerPackage.getGlAccount_GlAccountId());
 
 		initEClass(productCategoryLinkEClass, ProductCategoryLink.class, "ProductCategoryLink", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductCategoryLink_ProductCategory(), this.getProductCategory(), null, "productCategory", null, 1, 1, ProductCategoryLink.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryLink_ProductCategory().getEKeys().add(this.getProductCategory_ProductCategoryId());
 		initEAttribute(getProductCategoryLink_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductCategoryLink.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCategoryLink_LinkSeqId(), ecorePackage.getEString(), "linkSeqId", null, 1, 1, ProductCategoryLink.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCategoryLink_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, ProductCategoryLink.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1909,16 +1897,13 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 		initEAttribute(getProductCategoryLink_ImageUrl(), ecorePackage.getEString(), "imageUrl", null, 0, 1, ProductCategoryLink.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCategoryLink_LinkInfo(), ecorePackage.getEString(), "linkInfo", null, 0, 1, ProductCategoryLink.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductCategoryLink_LinkTypeEnum(), theEnumPackage.getEnumeration(), null, "linkTypeEnum", null, 0, 1, ProductCategoryLink.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryLink_LinkTypeEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getProductCategoryLink_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, ProductCategoryLink.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCategoryLink_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductCategoryLink.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCategoryLink_TitleText(), ecorePackage.getEString(), "titleText", null, 0, 1, ProductCategoryLink.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productCategoryMemberEClass, ProductCategoryMember.class, "ProductCategoryMember", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductCategoryMember_Product(), theProductPackage.getProduct(), null, "product", null, 1, 1, ProductCategoryMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryMember_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEReference(getProductCategoryMember_ProductCategory(), this.getProductCategory(), null, "productCategory", null, 1, 1, ProductCategoryMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryMember_ProductCategory().getEKeys().add(this.getProductCategory_ProductCategoryId());
 		initEAttribute(getProductCategoryMember_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductCategoryMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCategoryMember_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, ProductCategoryMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCategoryMember_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, ProductCategoryMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1927,20 +1912,15 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 
 		initEClass(productCategoryRoleEClass, ProductCategoryRole.class, "ProductCategoryRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductCategoryRole_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, ProductCategoryRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryRole_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getProductCategoryRole_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 1, 1, ProductCategoryRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryRole_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEReference(getProductCategoryRole_ProductCategory(), this.getProductCategory(), null, "productCategory", null, 1, 1, ProductCategoryRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryRole_ProductCategory().getEKeys().add(this.getProductCategory_ProductCategoryId());
 		initEAttribute(getProductCategoryRole_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductCategoryRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCategoryRole_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, ProductCategoryRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCategoryRole_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductCategoryRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productCategoryRollupEClass, ProductCategoryRollup.class, "ProductCategoryRollup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductCategoryRollup_ProductCategory(), this.getProductCategory(), null, "productCategory", null, 1, 1, ProductCategoryRollup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryRollup_ProductCategory().getEKeys().add(this.getProductCategory_ProductCategoryId());
 		initEReference(getProductCategoryRollup_ParentProductCategory(), this.getProductCategory(), null, "parentProductCategory", null, 1, 1, ProductCategoryRollup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryRollup_ParentProductCategory().getEKeys().add(this.getProductCategory_ProductCategoryId());
 		initEAttribute(getProductCategoryRollup_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductCategoryRollup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCategoryRollup_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, ProductCategoryRollup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCategoryRollup_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductCategoryRollup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1950,12 +1930,10 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 		initEAttribute(getProductCategoryType_Description(), ecorePackage.getEString(), "description", null, 0, 1, ProductCategoryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCategoryType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, ProductCategoryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductCategoryType_ParentType(), this.getProductCategoryType(), null, "parentType", null, 0, 1, ProductCategoryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryType_ParentType().getEKeys().add(this.getProductCategoryType_ProductCategoryTypeId());
 		initEReference(getProductCategoryType_ProductCategoryTypeAttrs(), this.getProductCategoryTypeAttr(), null, "productCategoryTypeAttrs", null, 0, -1, ProductCategoryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(productCategoryTypeAttrEClass, ProductCategoryTypeAttr.class, "ProductCategoryTypeAttr", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductCategoryTypeAttr_ProductCategoryType(), this.getProductCategoryType(), null, "productCategoryType", null, 1, 1, ProductCategoryTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getProductCategoryTypeAttr_ProductCategoryType().getEKeys().add(this.getProductCategoryType_ProductCategoryTypeId());
 		initEAttribute(getProductCategoryTypeAttr_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, ProductCategoryTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductCategoryTypeAttr_Description(), ecorePackage.getEString(), "description", null, 0, 1, ProductCategoryTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1967,8 +1945,8 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 		createMimoentframeAnnotations();
 		// mimo-ent-format
 		createMimoentformatAnnotations();
-		// mimo-ent-slot-constraint
-		createMimoentslotconstraintAnnotations();
+		// mimo-ent-slot-constraints
+		createMimoentslotconstraintsAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
 	}
@@ -2260,13 +2238,13 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 	}
 
 	/**
-	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * Initializes the annotations for <b>mimo-ent-slot-constraints</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createMimoentslotconstraintAnnotations() {
-		String source = "mimo-ent-slot-constraint";
+	protected void createMimoentslotconstraintsAnnotations() {
+		String source = "mimo-ent-slot-constraints";
 		addAnnotation
 		  (getProductCategory_CurrentProductCategoryRollups(),
 		   source,

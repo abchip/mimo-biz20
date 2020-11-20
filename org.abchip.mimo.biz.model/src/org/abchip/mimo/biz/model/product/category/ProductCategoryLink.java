@@ -48,7 +48,7 @@ public interface ProductCategoryLink extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Category</em>' reference.
 	 * @see #setProductCategory(ProductCategory)
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryLink_ProductCategory()
-	 * @model keys="productCategoryId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -256,7 +256,7 @@ public interface ProductCategoryLink extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Link Type Enum</em>' reference.
 	 * @see #setLinkTypeEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryLink_LinkTypeEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getLinkTypeEnum();

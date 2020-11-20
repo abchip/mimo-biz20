@@ -43,7 +43,7 @@ public interface ProductPromoUse extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoUse_Order()
-	 * @model keys="orderId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -94,7 +94,7 @@ public interface ProductPromoUse extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoUse_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -116,7 +116,7 @@ public interface ProductPromoUse extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Promo</em>' reference.
 	 * @see #setProductPromo(ProductPromo)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoUse_ProductPromo()
-	 * @model keys="productPromoId"
+	 * @model
 	 * @generated
 	 */
 	ProductPromo getProductPromo();
@@ -138,7 +138,7 @@ public interface ProductPromoUse extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Promo Code</em>' reference.
 	 * @see #setProductPromoCode(ProductPromoCode)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoUse_ProductPromoCode()
-	 * @model keys="productPromoCodeId"
+	 * @model
 	 * @generated
 	 */
 	ProductPromoCode getProductPromoCode();

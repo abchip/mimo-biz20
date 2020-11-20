@@ -42,7 +42,7 @@ public interface CommunicationEventRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Communication Event</em>' reference.
 	 * @see #setCommunicationEvent(CommunicationEvent)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventRole_CommunicationEvent()
-	 * @model keys="communicationEventId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -65,7 +65,7 @@ public interface CommunicationEventRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventRole_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -88,7 +88,7 @@ public interface CommunicationEventRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventRole_RoleType()
-	 * @model keys="roleTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -111,8 +111,7 @@ public interface CommunicationEventRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Contact Mech</em>' reference.
 	 * @see #setContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventRole_ContactMech()
-	 * @model keys="contactMechId"
-	 *        annotation="mimo-ent-slot help='For communication event participants this represents the contactMechId of the ContactMech used.'"
+	 * @model annotation="mimo-ent-slot help='For communication event participants this represents the contactMechId of the ContactMech used.'"
 	 * @generated
 	 */
 	ContactMech getContactMech();
@@ -134,7 +133,7 @@ public interface CommunicationEventRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventRole_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

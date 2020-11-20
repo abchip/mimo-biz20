@@ -39,7 +39,7 @@ public interface MarketingCampaignPromo extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Marketing Campaign</em>' reference.
 	 * @see #setMarketingCampaign(MarketingCampaign)
 	 * @see org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage#getMarketingCampaignPromo_MarketingCampaign()
-	 * @model keys="marketingCampaignId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface MarketingCampaignPromo extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Promo</em>' reference.
 	 * @see #setProductPromo(ProductPromo)
 	 * @see org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage#getMarketingCampaignPromo_ProductPromo()
-	 * @model keys="productPromoId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

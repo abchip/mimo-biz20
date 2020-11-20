@@ -38,7 +38,7 @@ public interface InvoiceItemTypeGlAccount extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Invoice Item Type</em>' reference.
 	 * @see #setInvoiceItemType(InvoiceItemType)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemTypeGlAccount_InvoiceItemType()
-	 * @model keys="invoiceItemTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface InvoiceItemTypeGlAccount extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Organization Party</em>' reference.
 	 * @see #setOrganizationParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemTypeGlAccount_OrganizationParty()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -84,7 +84,7 @@ public interface InvoiceItemTypeGlAccount extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Gl Account</em>' reference.
 	 * @see #setGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemTypeGlAccount_GlAccount()
-	 * @model keys="glAccountId"
+	 * @model
 	 * @generated
 	 */
 	GlAccount getGlAccount();

@@ -36,7 +36,7 @@ public interface EntitySyncIncludeGroup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Entity Group</em>' reference.
 	 * @see #setEntityGroup(EntityGroup)
 	 * @see org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage#getEntitySyncIncludeGroup_EntityGroup()
-	 * @model keys="entityGroupId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface EntitySyncIncludeGroup extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Entity Sync</em>' reference.
 	 * @see #setEntitySync(EntitySync)
 	 * @see org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage#getEntitySyncIncludeGroup_EntitySync()
-	 * @model keys="entitySyncId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

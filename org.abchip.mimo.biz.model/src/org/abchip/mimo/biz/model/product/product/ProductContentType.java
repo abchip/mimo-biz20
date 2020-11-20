@@ -85,7 +85,7 @@ public interface ProductContentType extends EntityType<ProductContent>, EntityIn
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(ProductContentType)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductContentType_ParentType()
-	 * @model keys="productContentTypeId"
+	 * @model
 	 * @generated
 	 */
 	ProductContentType getParentType();

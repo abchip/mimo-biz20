@@ -44,7 +44,7 @@ public interface PicklistItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Picklist Bin</em>' reference.
 	 * @see #setPicklistBin(PicklistBin)
 	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistItem_PicklistBin()
-	 * @model keys="picklistBinId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -67,7 +67,7 @@ public interface PicklistItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistItem_Order()
-	 * @model keys="orderId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -90,7 +90,7 @@ public interface PicklistItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Inventory Item</em>' reference.
 	 * @see #setInventoryItem(InventoryItem)
 	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistItem_InventoryItem()
-	 * @model keys="inventoryItemId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -195,7 +195,7 @@ public interface PicklistItem extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Item Status</em>' reference.
 	 * @see #setItemStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistItem_ItemStatus()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getItemStatus();

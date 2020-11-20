@@ -127,7 +127,7 @@ public interface TimeEntry extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Invoice</em>' reference.
 	 * @see #setInvoice(Invoice)
 	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimeEntry_Invoice()
-	 * @model keys="invoiceId"
+	 * @model
 	 * @generated
 	 */
 	Invoice getInvoice();
@@ -175,7 +175,7 @@ public interface TimeEntry extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimeEntry_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -197,7 +197,7 @@ public interface TimeEntry extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Rate Type</em>' reference.
 	 * @see #setRateType(RateType)
 	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimeEntry_RateType()
-	 * @model keys="rateTypeId"
+	 * @model
 	 * @generated
 	 */
 	RateType getRateType();
@@ -245,7 +245,7 @@ public interface TimeEntry extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Timesheet</em>' reference.
 	 * @see #setTimesheet(Timesheet)
 	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimeEntry_Timesheet()
-	 * @model keys="timesheetId"
+	 * @model
 	 * @generated
 	 */
 	Timesheet getTimesheet();
@@ -267,7 +267,7 @@ public interface TimeEntry extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage#getTimeEntry_WorkEffort()
-	 * @model keys="workEffortId"
+	 * @model
 	 * @generated
 	 */
 	WorkEffort getWorkEffort();

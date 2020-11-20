@@ -37,7 +37,7 @@ public interface ItemIssuanceRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Item Issuance</em>' reference.
 	 * @see #setItemIssuance(ItemIssuance)
 	 * @see org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage#getItemIssuanceRole_ItemIssuance()
-	 * @model keys="itemIssuanceId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -60,7 +60,7 @@ public interface ItemIssuanceRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage#getItemIssuanceRole_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

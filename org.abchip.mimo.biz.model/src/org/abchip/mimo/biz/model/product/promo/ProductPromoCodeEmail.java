@@ -35,7 +35,7 @@ public interface ProductPromoCodeEmail extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Promo Code</em>' reference.
 	 * @see #setProductPromoCode(ProductPromoCode)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCodeEmail_ProductPromoCode()
-	 * @model keys="productPromoCodeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

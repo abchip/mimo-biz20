@@ -85,7 +85,7 @@ public interface InvoiceContentType extends EntityType<InvoiceContent>, EntityIn
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(InvoiceContentType)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceContentType_ParentType()
-	 * @model keys="invoiceContentTypeId"
+	 * @model
 	 * @generated
 	 */
 	InvoiceContentType getParentType();

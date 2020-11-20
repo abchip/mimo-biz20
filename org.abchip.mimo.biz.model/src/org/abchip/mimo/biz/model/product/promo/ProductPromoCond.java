@@ -43,7 +43,7 @@ public interface ProductPromoCond extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Promo</em>' reference.
 	 * @see #setProductPromo(ProductPromo)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCond_ProductPromo()
-	 * @model keys="productPromoId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -92,7 +92,7 @@ public interface ProductPromoCond extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Custom Method</em>' reference.
 	 * @see #setCustomMethod(CustomMethod)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCond_CustomMethod()
-	 * @model keys="customMethodId"
+	 * @model
 	 * @generated
 	 */
 	CustomMethod getCustomMethod();
@@ -114,7 +114,7 @@ public interface ProductPromoCond extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Input Param Enum</em>' reference.
 	 * @see #setInputParamEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCond_InputParamEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getInputParamEnum();
@@ -136,7 +136,7 @@ public interface ProductPromoCond extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Operator Enum</em>' reference.
 	 * @see #setOperatorEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCond_OperatorEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getOperatorEnum();

@@ -36,7 +36,7 @@ public interface AgreementItemTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Agreement Item Type</em>' reference.
 	 * @see #setAgreementItemType(AgreementItemType)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementItemTypeAttr_AgreementItemType()
-	 * @model keys="agreementItemTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

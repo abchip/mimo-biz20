@@ -1517,12 +1517,9 @@ public class CommunicationPackageImpl extends EPackageImpl implements Communicat
 
 		initEClass(commEventContentAssocEClass, CommEventContentAssoc.class, "CommEventContentAssoc", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCommEventContentAssoc_Content(), theContentPackage.getContent(), null, "content", null, 1, 1, CommEventContentAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommEventContentAssoc_Content().getEKeys().add(theContentPackage.getContent_ContentId());
 		initEReference(getCommEventContentAssoc_CommunicationEvent(), this.getCommunicationEvent(), null, "communicationEvent", null, 1, 1, CommEventContentAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommEventContentAssoc_CommunicationEvent().getEKeys().add(this.getCommunicationEvent_CommunicationEventId());
 		initEAttribute(getCommEventContentAssoc_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, CommEventContentAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCommEventContentAssoc_CommContentAssocType(), this.getCommContentAssocType(), null, "commContentAssocType", null, 0, 1, CommEventContentAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommEventContentAssoc_CommContentAssocType().getEKeys().add(this.getCommContentAssocType_CommContentAssocTypeId());
 		initEAttribute(getCommEventContentAssoc_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, CommEventContentAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCommEventContentAssoc_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, CommEventContentAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1531,18 +1528,12 @@ public class CommunicationPackageImpl extends EPackageImpl implements Communicat
 		initEAttribute(getCommunicationEvent_BccString(), ecorePackage.getEString(), "bccString", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCommunicationEvent_CcString(), ecorePackage.getEString(), "ccString", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCommunicationEvent_CommunicationEventType(), this.getCommunicationEventType(), null, "communicationEventType", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEvent_CommunicationEventType().getEKeys().add(this.getCommunicationEventType_CommunicationEventTypeId());
 		initEReference(getCommunicationEvent_ContactList(), theContactPackage.getContactList(), null, "contactList", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEvent_ContactList().getEKeys().add(theContactPackage.getContactList_ContactListId());
 		initEReference(getCommunicationEvent_ContactMechIdFrom(), theContactPackage_1.getContactMech(), null, "contactMechIdFrom", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEvent_ContactMechIdFrom().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
 		initEReference(getCommunicationEvent_ContactMechIdTo(), theContactPackage_1.getContactMech(), null, "contactMechIdTo", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEvent_ContactMechIdTo().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
 		initEReference(getCommunicationEvent_ContactMechType(), theContactPackage_1.getContactMechType(), null, "contactMechType", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEvent_ContactMechType().getEKeys().add(theContactPackage_1.getContactMechType_ContactMechTypeId());
 		initEAttribute(getCommunicationEvent_Content(), ecorePackage.getEString(), "content", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCommunicationEvent_ContentMimeType(), theDataPackage.getMimeType(), null, "contentMimeType", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEvent_ContentMimeType().getEKeys().add(theDataPackage.getMimeType_MimeTypeId());
 		initEAttribute(getCommunicationEvent_DatetimeEnded(), ecorePackage.getEDate(), "datetimeEnded", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCommunicationEvent_DatetimeStarted(), ecorePackage.getEDate(), "datetimeStarted", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCommunicationEvent_EntryDate(), ecorePackage.getEDate(), "entryDate", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1553,25 +1544,17 @@ public class CommunicationPackageImpl extends EPackageImpl implements Communicat
 		initEAttribute(getCommunicationEvent_OrigCommEventId(), ecorePackage.getEString(), "origCommEventId", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCommunicationEvent_ParentCommEventId(), ecorePackage.getEString(), "parentCommEventId", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCommunicationEvent_PartyIdFrom(), thePartyPackage_1.getParty(), null, "partyIdFrom", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEvent_PartyIdFrom().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getCommunicationEvent_PartyIdTo(), thePartyPackage_1.getParty(), null, "partyIdTo", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEvent_PartyIdTo().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getCommunicationEvent_ReasonEnum(), theEnumPackage.getEnumeration(), null, "reasonEnum", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEvent_ReasonEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEReference(getCommunicationEvent_RoleTypeIdFrom(), thePartyPackage_1.getRoleType(), null, "roleTypeIdFrom", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEvent_RoleTypeIdFrom().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEReference(getCommunicationEvent_RoleTypeIdTo(), thePartyPackage_1.getRoleType(), null, "roleTypeIdTo", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEvent_RoleTypeIdTo().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEReference(getCommunicationEvent_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEvent_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getCommunicationEvent_Subject(), ecorePackage.getEString(), "subject", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCommunicationEvent_ToString(), ecorePackage.getEString(), "toString", null, 0, 1, CommunicationEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(communicationEventProductEClass, CommunicationEventProduct.class, "CommunicationEventProduct", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCommunicationEventProduct_Product(), theProductPackage.getProduct(), null, "product", null, 1, 1, CommunicationEventProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEventProduct_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEReference(getCommunicationEventProduct_CommunicationEvent(), this.getCommunicationEvent(), null, "communicationEvent", null, 1, 1, CommunicationEventProduct.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEventProduct_CommunicationEvent().getEKeys().add(this.getCommunicationEvent_CommunicationEventId());
 
 		initEClass(communicationEventPrpTypEClass, CommunicationEventPrpTyp.class, "CommunicationEventPrpTyp", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCommunicationEventPrpTyp_CommunicationEventPrpTypId(), ecorePackage.getEString(), "communicationEventPrpTypId", null, 1, 1, CommunicationEventPrpTyp.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1579,35 +1562,25 @@ public class CommunicationPackageImpl extends EPackageImpl implements Communicat
 		initEAttribute(getCommunicationEventPrpTyp_Description(), ecorePackage.getEString(), "description", null, 0, 1, CommunicationEventPrpTyp.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCommunicationEventPrpTyp_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, CommunicationEventPrpTyp.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCommunicationEventPrpTyp_ParentType(), this.getCommunicationEventPrpTyp(), null, "parentType", null, 0, 1, CommunicationEventPrpTyp.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEventPrpTyp_ParentType().getEKeys().add(this.getCommunicationEventPrpTyp_CommunicationEventPrpTypId());
 
 		initEClass(communicationEventPurposeEClass, CommunicationEventPurpose.class, "CommunicationEventPurpose", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCommunicationEventPurpose_CommunicationEvent(), this.getCommunicationEvent(), null, "communicationEvent", null, 1, 1, CommunicationEventPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEventPurpose_CommunicationEvent().getEKeys().add(this.getCommunicationEvent_CommunicationEventId());
 		initEReference(getCommunicationEventPurpose_CommunicationEventPrpTyp(), this.getCommunicationEventPrpTyp(), null, "communicationEventPrpTyp", null, 1, 1, CommunicationEventPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEventPurpose_CommunicationEventPrpTyp().getEKeys().add(this.getCommunicationEventPrpTyp_CommunicationEventPrpTypId());
 		initEAttribute(getCommunicationEventPurpose_Description(), ecorePackage.getEString(), "description", null, 0, 1, CommunicationEventPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(communicationEventRoleEClass, CommunicationEventRole.class, "CommunicationEventRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCommunicationEventRole_CommunicationEvent(), this.getCommunicationEvent(), null, "communicationEvent", null, 1, 1, CommunicationEventRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEventRole_CommunicationEvent().getEKeys().add(this.getCommunicationEvent_CommunicationEventId());
 		initEReference(getCommunicationEventRole_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, CommunicationEventRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEventRole_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getCommunicationEventRole_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 1, 1, CommunicationEventRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEventRole_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEReference(getCommunicationEventRole_ContactMech(), theContactPackage_1.getContactMech(), null, "contactMech", null, 0, 1, CommunicationEventRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEventRole_ContactMech().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
 		initEReference(getCommunicationEventRole_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, CommunicationEventRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEventRole_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 
 		initEClass(communicationEventTypeEClass, CommunicationEventType.class, "CommunicationEventType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCommunicationEventType_CommunicationEventTypeId(), ecorePackage.getEString(), "communicationEventTypeId", null, 1, 1, CommunicationEventType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCommunicationEventType_ContactMechType(), theContactPackage_1.getContactMechType(), null, "contactMechType", null, 0, 1, CommunicationEventType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEventType_ContactMechType().getEKeys().add(theContactPackage_1.getContactMechType_ContactMechTypeId());
 		initEAttribute(getCommunicationEventType_Description(), ecorePackage.getEString(), "description", null, 0, 1, CommunicationEventType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCommunicationEventType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, CommunicationEventType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCommunicationEventType_ParentType(), this.getCommunicationEventType(), null, "parentType", null, 0, 1, CommunicationEventType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getCommunicationEventType_ParentType().getEKeys().add(this.getCommunicationEventType_CommunicationEventTypeId());
 
 		// Create annotations
 		// mimo-ent-frame

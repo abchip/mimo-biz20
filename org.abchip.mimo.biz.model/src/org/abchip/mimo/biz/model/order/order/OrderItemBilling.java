@@ -45,7 +45,7 @@ public interface OrderItemBilling extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemBilling_Order()
-	 * @model keys="orderId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -68,7 +68,7 @@ public interface OrderItemBilling extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Invoice</em>' reference.
 	 * @see #setInvoice(Invoice)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemBilling_Invoice()
-	 * @model keys="invoiceId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -117,7 +117,7 @@ public interface OrderItemBilling extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Item Issuance</em>' reference.
 	 * @see #setItemIssuance(ItemIssuance)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemBilling_ItemIssuance()
-	 * @model keys="itemIssuanceId"
+	 * @model
 	 * @generated
 	 */
 	ItemIssuance getItemIssuance();
@@ -221,7 +221,7 @@ public interface OrderItemBilling extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Shipment Receipt</em>' reference.
 	 * @see #setShipmentReceipt(ShipmentReceipt)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemBilling_ShipmentReceipt()
-	 * @model keys="receiptId"
+	 * @model
 	 * @generated
 	 */
 	ShipmentReceipt getShipmentReceipt();

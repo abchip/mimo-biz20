@@ -44,7 +44,7 @@ public interface OrderTerm extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderTerm_Order()
-	 * @model keys="orderId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -67,7 +67,7 @@ public interface OrderTerm extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Term Type</em>' reference.
 	 * @see #setTermType(TermType)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderTerm_TermType()
-	 * @model keys="termTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -222,7 +222,7 @@ public interface OrderTerm extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Uom</em>' reference.
 	 * @see #setUom(Uom)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderTerm_Uom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getUom();

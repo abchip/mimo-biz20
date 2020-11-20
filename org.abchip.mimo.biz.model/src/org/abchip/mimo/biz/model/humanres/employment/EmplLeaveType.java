@@ -85,7 +85,7 @@ public interface EmplLeaveType extends EntityType<EmplLeave>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(EmplLeaveType)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmplLeaveType_ParentType()
-	 * @model keys="leaveTypeId"
+	 * @model
 	 * @generated
 	 */
 	EmplLeaveType getParentType();

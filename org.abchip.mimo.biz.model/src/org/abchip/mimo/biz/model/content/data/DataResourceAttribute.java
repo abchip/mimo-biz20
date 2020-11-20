@@ -37,7 +37,7 @@ public interface DataResourceAttribute extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Data Resource</em>' reference.
 	 * @see #setDataResource(DataResource)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataResourceAttribute_DataResource()
-	 * @model keys="dataResourceId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

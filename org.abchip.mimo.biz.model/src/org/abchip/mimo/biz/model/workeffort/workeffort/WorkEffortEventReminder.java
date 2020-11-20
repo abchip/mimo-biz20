@@ -47,7 +47,7 @@ public interface WorkEffortEventReminder extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortEventReminder_WorkEffort()
-	 * @model keys="workEffortId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -122,8 +122,7 @@ public interface WorkEffortEventReminder extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortEventReminder_Party()
-	 * @model keys="partyId"
-	 *        annotation="mimo-ent-slot help='The party this reminder is assigned to'"
+	 * @model annotation="mimo-ent-slot help='The party this reminder is assigned to'"
 	 * @generated
 	 */
 	Party getParty();
@@ -279,7 +278,7 @@ public interface WorkEffortEventReminder extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Contact Mech</em>' reference.
 	 * @see #setContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortEventReminder_ContactMech()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	ContactMech getContactMech();

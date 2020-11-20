@@ -41,7 +41,7 @@ public interface GlAccountCategoryMember extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Gl Account</em>' reference.
 	 * @see #setGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccountCategoryMember_GlAccount()
-	 * @model keys="glAccountId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface GlAccountCategoryMember extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Gl Account Category</em>' reference.
 	 * @see #setGlAccountCategory(GlAccountCategory)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccountCategoryMember_GlAccountCategory()
-	 * @model keys="glAccountCategoryId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

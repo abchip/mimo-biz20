@@ -338,7 +338,7 @@ public interface Survey extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Survey Question Appls</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurvey_SurveyQuestionAppls()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<SurveyQuestionAppl> getSurveyQuestionAppls();
@@ -351,7 +351,7 @@ public interface Survey extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Survey Triggers</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurvey_SurveyTriggers()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<SurveyTrigger> getSurveyTriggers();

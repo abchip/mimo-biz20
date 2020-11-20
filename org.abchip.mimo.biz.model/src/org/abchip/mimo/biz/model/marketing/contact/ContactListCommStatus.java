@@ -45,7 +45,7 @@ public interface ContactListCommStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Contact List</em>' reference.
 	 * @see #setContactList(ContactList)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListCommStatus_ContactList()
-	 * @model keys="contactListId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -68,7 +68,7 @@ public interface ContactListCommStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Communication Event</em>' reference.
 	 * @see #setCommunicationEvent(CommunicationEvent)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListCommStatus_CommunicationEvent()
-	 * @model keys="communicationEventId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -91,7 +91,7 @@ public interface ContactListCommStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Contact Mech</em>' reference.
 	 * @see #setContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListCommStatus_ContactMech()
-	 * @model keys="contactMechId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -114,7 +114,7 @@ public interface ContactListCommStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Change By User Login</em>' reference.
 	 * @see #setChangeByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListCommStatus_ChangeByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getChangeByUserLogin();
@@ -162,7 +162,7 @@ public interface ContactListCommStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListCommStatus_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -184,7 +184,7 @@ public interface ContactListCommStatus extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactListCommStatus_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

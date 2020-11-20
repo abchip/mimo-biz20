@@ -85,7 +85,7 @@ public interface GeoType extends EntityType<Geo>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(GeoType)
 	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoType_ParentType()
-	 * @model keys="geoTypeId"
+	 * @model
 	 * @generated
 	 */
 	GeoType getParentType();

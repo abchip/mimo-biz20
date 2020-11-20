@@ -41,7 +41,7 @@ public interface PicklistStatusHistory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Picklist</em>' reference.
 	 * @see #setPicklist(Picklist)
 	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistStatusHistory_Picklist()
-	 * @model keys="picklistId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -91,7 +91,7 @@ public interface PicklistStatusHistory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Change User Login</em>' reference.
 	 * @see #setChangeUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistStatusHistory_ChangeUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getChangeUserLogin();
@@ -113,7 +113,7 @@ public interface PicklistStatusHistory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistStatusHistory_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -139,7 +139,7 @@ public interface PicklistStatusHistory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status Id To</em>' reference.
 	 * @see #setStatusIdTo(StatusItem)
 	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklistStatusHistory_StatusIdTo()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatusIdTo();

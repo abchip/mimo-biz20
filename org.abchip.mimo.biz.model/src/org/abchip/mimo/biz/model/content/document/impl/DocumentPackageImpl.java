@@ -1038,12 +1038,10 @@ public class DocumentPackageImpl extends EPackageImpl implements DocumentPackage
 		initEAttribute(getDocument_DocumentLocation(), ecorePackage.getEString(), "documentLocation", null, 0, 1, Document.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDocument_DocumentText(), ecorePackage.getEString(), "documentText", null, 0, 1, Document.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDocument_DocumentType(), this.getDocumentType(), null, "documentType", null, 0, 1, Document.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getDocument_DocumentType().getEKeys().add(this.getDocumentType_DocumentTypeId());
 		initEAttribute(getDocument_ImageData(), ecorePackage.getEJavaObject(), "imageData", null, 0, 1, Document.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(documentAttributeEClass, DocumentAttribute.class, "DocumentAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDocumentAttribute_Document(), this.getDocument(), null, "document", null, 1, 1, DocumentAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getDocumentAttribute_Document().getEKeys().add(this.getDocument_DocumentId());
 		initEAttribute(getDocumentAttribute_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, DocumentAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDocumentAttribute_AttrDescription(), ecorePackage.getEString(), "attrDescription", null, 0, 1, DocumentAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDocumentAttribute_AttrValue(), ecorePackage.getEString(), "attrValue", null, 0, 1, DocumentAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1054,11 +1052,9 @@ public class DocumentPackageImpl extends EPackageImpl implements DocumentPackage
 		initEReference(getDocumentType_DocumentTypeAttrs(), this.getDocumentTypeAttr(), null, "documentTypeAttrs", null, 0, -1, DocumentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDocumentType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, DocumentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDocumentType_ParentType(), this.getDocumentType(), null, "parentType", null, 0, 1, DocumentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getDocumentType_ParentType().getEKeys().add(this.getDocumentType_DocumentTypeId());
 
 		initEClass(documentTypeAttrEClass, DocumentTypeAttr.class, "DocumentTypeAttr", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getDocumentTypeAttr_DocumentType(), this.getDocumentType(), null, "documentType", null, 1, 1, DocumentTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getDocumentTypeAttr_DocumentType().getEKeys().add(this.getDocumentType_DocumentTypeId());
 		initEAttribute(getDocumentTypeAttr_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, DocumentTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDocumentTypeAttr_Description(), ecorePackage.getEString(), "description", null, 0, 1, DocumentTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 

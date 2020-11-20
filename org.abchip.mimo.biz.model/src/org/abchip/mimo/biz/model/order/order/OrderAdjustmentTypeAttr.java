@@ -36,7 +36,7 @@ public interface OrderAdjustmentTypeAttr extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Order Adjustment Type</em>' reference.
 	 * @see #setOrderAdjustmentType(OrderAdjustmentType)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustmentTypeAttr_OrderAdjustmentType()
-	 * @model keys="orderAdjustmentTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

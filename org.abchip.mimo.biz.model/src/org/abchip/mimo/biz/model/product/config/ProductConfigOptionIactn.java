@@ -40,7 +40,7 @@ public interface ProductConfigOptionIactn extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Config Item</em>' reference.
 	 * @see #setConfigItem(ProductConfigItem)
 	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProductConfigOptionIactn_ConfigItem()
-	 * @model keys="configItemId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -204,7 +204,7 @@ public interface ProductConfigOptionIactn extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Config Item Id To</em>' reference.
 	 * @see #setConfigItemIdTo(ProductConfigItem)
 	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProductConfigOptionIactn_ConfigItemIdTo()
-	 * @model keys="configItemId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

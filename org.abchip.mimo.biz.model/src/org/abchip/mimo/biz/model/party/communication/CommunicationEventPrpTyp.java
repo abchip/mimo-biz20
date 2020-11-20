@@ -87,7 +87,7 @@ public interface CommunicationEventPrpTyp extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(CommunicationEventPrpTyp)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEventPrpTyp_ParentType()
-	 * @model keys="communicationEventPrpTypId"
+	 * @model
 	 * @generated
 	 */
 	CommunicationEventPrpTyp getParentType();

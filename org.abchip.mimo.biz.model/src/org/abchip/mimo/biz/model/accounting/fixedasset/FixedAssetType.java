@@ -99,7 +99,7 @@ public interface FixedAssetType extends EntityType<FixedAsset>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(FixedAssetType)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAssetType_ParentType()
-	 * @model keys="fixedAssetTypeId"
+	 * @model
 	 * @generated
 	 */
 	FixedAssetType getParentType();

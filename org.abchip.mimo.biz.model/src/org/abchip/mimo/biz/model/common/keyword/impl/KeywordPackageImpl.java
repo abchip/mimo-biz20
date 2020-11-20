@@ -773,7 +773,6 @@ public class KeywordPackageImpl extends EPackageImpl implements KeywordPackage {
 		initEAttribute(getKeywordThesaurus_AlternateKeyword(), ecorePackage.getEString(), "alternateKeyword", null, 1, 1, KeywordThesaurus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKeywordThesaurus_EnteredKeyword(), ecorePackage.getEString(), "enteredKeyword", null, 1, 1, KeywordThesaurus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getKeywordThesaurus_RelationshipEnum(), theEnumPackage.getEnumeration(), null, "relationshipEnum", null, 0, 1, KeywordThesaurus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getKeywordThesaurus_RelationshipEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 
 		// Create annotations
 		// mimo-ent-slot

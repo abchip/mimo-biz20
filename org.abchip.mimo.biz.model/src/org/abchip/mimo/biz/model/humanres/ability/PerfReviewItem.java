@@ -41,7 +41,7 @@ public interface PerfReviewItem extends EntityTyped<PerfReviewItemType>, EntityI
 	 * @return the value of the '<em>Employee Party</em>' reference.
 	 * @see #setEmployeeParty(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReviewItem_EmployeeParty()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -90,7 +90,7 @@ public interface PerfReviewItem extends EntityTyped<PerfReviewItemType>, EntityI
 	 * @return the value of the '<em>Perf Rating Type</em>' reference.
 	 * @see #setPerfRatingType(PerfRatingType)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReviewItem_PerfRatingType()
-	 * @model keys="perfRatingTypeId"
+	 * @model
 	 * @generated
 	 */
 	PerfRatingType getPerfRatingType();
@@ -112,7 +112,7 @@ public interface PerfReviewItem extends EntityTyped<PerfReviewItemType>, EntityI
 	 * @return the value of the '<em>Perf Review Item Type</em>' reference.
 	 * @see #setPerfReviewItemType(PerfReviewItemType)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReviewItem_PerfReviewItemType()
-	 * @model keys="perfReviewItemTypeId"
+	 * @model
 	 * @generated
 	 */
 	PerfReviewItemType getPerfReviewItemType();

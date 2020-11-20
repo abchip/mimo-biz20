@@ -99,7 +99,7 @@ public interface FacilityType extends EntityType<Facility>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(FacilityType)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityType_ParentType()
-	 * @model keys="facilityTypeId"
+	 * @model
 	 * @generated
 	 */
 	FacilityType getParentType();

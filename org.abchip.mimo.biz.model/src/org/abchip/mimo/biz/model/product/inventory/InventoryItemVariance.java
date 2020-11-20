@@ -40,7 +40,7 @@ public interface InventoryItemVariance extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Physical Inventory</em>' reference.
 	 * @see #setPhysicalInventory(PhysicalInventory)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemVariance_PhysicalInventory()
-	 * @model keys="physicalInventoryId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface InventoryItemVariance extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Inventory Item</em>' reference.
 	 * @see #setInventoryItem(InventoryItem)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemVariance_InventoryItem()
-	 * @model keys="inventoryItemId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -164,7 +164,7 @@ public interface InventoryItemVariance extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Variance Reason</em>' reference.
 	 * @see #setVarianceReason(VarianceReason)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemVariance_VarianceReason()
-	 * @model keys="varianceReasonId"
+	 * @model
 	 * @generated
 	 */
 	VarianceReason getVarianceReason();

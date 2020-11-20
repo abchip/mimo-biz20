@@ -36,7 +36,7 @@ public interface EntityGroupEntry extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Entity Group</em>' reference.
 	 * @see #setEntityGroup(EntityGroup)
 	 * @see org.abchip.mimo.biz.model.entity.group.GroupPackage#getEntityGroupEntry_EntityGroup()
-	 * @model keys="entityGroupId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

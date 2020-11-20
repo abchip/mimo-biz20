@@ -39,7 +39,7 @@ public interface EmplPositionTypeClass extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Empl Position Type</em>' reference.
 	 * @see #setEmplPositionType(EmplPositionType)
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionTypeClass_EmplPositionType()
-	 * @model keys="emplPositionTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface EmplPositionTypeClass extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Empl Position Class Type</em>' reference.
 	 * @see #setEmplPositionClassType(EmplPositionClassType)
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionTypeClass_EmplPositionClassType()
-	 * @model keys="emplPositionClassTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

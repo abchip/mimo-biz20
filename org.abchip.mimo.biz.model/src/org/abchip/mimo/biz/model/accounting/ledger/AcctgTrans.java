@@ -155,7 +155,7 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	 * @return the value of the '<em>Fin Account Trans</em>' reference.
 	 * @see #setFinAccountTrans(FinAccountTrans)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_FinAccountTrans()
-	 * @model keys="finAccountTransId"
+	 * @model
 	 * @generated
 	 */
 	FinAccountTrans getFinAccountTrans();
@@ -177,7 +177,7 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	 * @return the value of the '<em>Fixed Asset</em>' reference.
 	 * @see #setFixedAsset(FixedAsset)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_FixedAsset()
-	 * @model keys="fixedAssetId"
+	 * @model
 	 * @generated
 	 */
 	FixedAsset getFixedAsset();
@@ -199,7 +199,7 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	 * @return the value of the '<em>Gl Fiscal Type</em>' reference.
 	 * @see #setGlFiscalType(GlFiscalType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_GlFiscalType()
-	 * @model keys="glFiscalTypeId"
+	 * @model
 	 * @generated
 	 */
 	GlFiscalType getGlFiscalType();
@@ -221,7 +221,7 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	 * @return the value of the '<em>Gl Journal</em>' reference.
 	 * @see #setGlJournal(GlJournal)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_GlJournal()
-	 * @model keys="glJournalId"
+	 * @model
 	 * @generated
 	 */
 	GlJournal getGlJournal();
@@ -243,7 +243,7 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	 * @return the value of the '<em>Group Status</em>' reference.
 	 * @see #setGroupStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_GroupStatus()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getGroupStatus();
@@ -265,7 +265,7 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	 * @return the value of the '<em>Inventory Item</em>' reference.
 	 * @see #setInventoryItem(InventoryItem)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_InventoryItem()
-	 * @model keys="inventoryItemId"
+	 * @model
 	 * @generated
 	 */
 	InventoryItem getInventoryItem();
@@ -287,7 +287,7 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	 * @return the value of the '<em>Invoice</em>' reference.
 	 * @see #setInvoice(Invoice)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_Invoice()
-	 * @model keys="invoiceId"
+	 * @model
 	 * @generated
 	 */
 	Invoice getInvoice();
@@ -387,7 +387,7 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -409,7 +409,7 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	 * @return the value of the '<em>Payment</em>' reference.
 	 * @see #setPayment(Payment)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_Payment()
-	 * @model keys="paymentId"
+	 * @model
 	 * @generated
 	 */
 	Payment getPayment();
@@ -431,7 +431,7 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	 * @return the value of the '<em>Physical Inventory</em>' reference.
 	 * @see #setPhysicalInventory(PhysicalInventory)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_PhysicalInventory()
-	 * @model keys="physicalInventoryId"
+	 * @model
 	 * @generated
 	 */
 	PhysicalInventory getPhysicalInventory();
@@ -479,7 +479,7 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	 * @return the value of the '<em>Receipt</em>' reference.
 	 * @see #setReceipt(ShipmentReceipt)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_Receipt()
-	 * @model keys="receiptId"
+	 * @model
 	 * @generated
 	 */
 	ShipmentReceipt getReceipt();
@@ -501,7 +501,7 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_RoleType()
-	 * @model keys="roleTypeId"
+	 * @model
 	 * @generated
 	 */
 	RoleType getRoleType();
@@ -549,7 +549,7 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	 * @return the value of the '<em>Shipment</em>' reference.
 	 * @see #setShipment(Shipment)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_Shipment()
-	 * @model keys="shipmentId"
+	 * @model
 	 * @generated
 	 */
 	Shipment getShipment();
@@ -675,7 +675,7 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_WorkEffort()
-	 * @model keys="workEffortId"
+	 * @model
 	 * @generated
 	 */
 	WorkEffort getWorkEffort();
@@ -748,7 +748,7 @@ public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	 * @return the value of the '<em>Acctg Trans Type</em>' reference.
 	 * @see #setAcctgTransType(AcctgTransType)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTrans_AcctgTransType()
-	 * @model keys="acctgTransTypeId"
+	 * @model
 	 * @generated
 	 */
 	AcctgTransType getAcctgTransType();

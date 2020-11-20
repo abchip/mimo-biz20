@@ -85,7 +85,7 @@ public interface EmploymentAppSourceType extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(EmploymentAppSourceType)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmploymentAppSourceType_ParentType()
-	 * @model keys="employmentAppSourceTypeId"
+	 * @model
 	 * @generated
 	 */
 	EmploymentAppSourceType getParentType();

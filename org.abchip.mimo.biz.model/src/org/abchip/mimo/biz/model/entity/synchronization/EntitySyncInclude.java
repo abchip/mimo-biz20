@@ -36,7 +36,7 @@ public interface EntitySyncInclude extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Entity Sync</em>' reference.
 	 * @see #setEntitySync(EntitySync)
 	 * @see org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage#getEntitySyncInclude_EntitySync()
-	 * @model keys="entitySyncId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

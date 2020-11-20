@@ -306,7 +306,7 @@ public interface UserLogin extends UserProfile {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLogin_Party()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getParty();
@@ -458,7 +458,7 @@ public interface UserLogin extends UserProfile {
 	 * @return the value of the '<em>User Login Security Groups</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLogin_UserLoginSecurityGroups()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<UserLoginSecurityGroup> getUserLoginSecurityGroups();

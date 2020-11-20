@@ -38,7 +38,7 @@ public interface TechDataCalendarExcWeek extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Calendar</em>' reference.
 	 * @see #setCalendar(TechDataCalendar)
 	 * @see org.abchip.mimo.biz.model.manufacturing.techdata.TechdataPackage#getTechDataCalendarExcWeek_Calendar()
-	 * @model keys="calendarId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -88,7 +88,7 @@ public interface TechDataCalendarExcWeek extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Calendar Week</em>' reference.
 	 * @see #setCalendarWeek(TechDataCalendarWeek)
 	 * @see org.abchip.mimo.biz.model.manufacturing.techdata.TechdataPackage#getTechDataCalendarExcWeek_CalendarWeek()
-	 * @model keys="calendarWeekId"
+	 * @model
 	 * @generated
 	 */
 	TechDataCalendarWeek getCalendarWeek();

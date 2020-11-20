@@ -39,7 +39,7 @@ public interface CarrierShipmentMethod extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Shipment Method Type</em>' reference.
 	 * @see #setShipmentMethodType(ShipmentMethodType)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getCarrierShipmentMethod_ShipmentMethodType()
-	 * @model keys="shipmentMethodTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface CarrierShipmentMethod extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getCarrierShipmentMethod_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -93,7 +93,7 @@ public interface Enumeration extends EntityTyped<EnumerationType>, EntityInfo {
 	 * @return the value of the '<em>Enum Type</em>' reference.
 	 * @see #setEnumType(EnumerationType)
 	 * @see org.abchip.mimo.biz.model.common.enum_.EnumPackage#getEnumeration_EnumType()
-	 * @model keys="enumTypeId"
+	 * @model
 	 * @generated
 	 */
 	EnumerationType getEnumType();

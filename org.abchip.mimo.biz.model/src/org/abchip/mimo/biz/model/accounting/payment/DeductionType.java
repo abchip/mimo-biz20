@@ -85,7 +85,7 @@ public interface DeductionType extends EntityType<Deduction>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(DeductionType)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getDeductionType_ParentType()
-	 * @model keys="deductionTypeId"
+	 * @model
 	 * @generated
 	 */
 	DeductionType getParentType();

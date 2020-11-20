@@ -38,7 +38,7 @@ public interface OrderContactMech extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order</em>' reference.
 	 * @see #setOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderContactMech_Order()
-	 * @model keys="orderId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface OrderContactMech extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Contact Mech</em>' reference.
 	 * @see #setContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderContactMech_ContactMech()
-	 * @model keys="contactMechId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -84,7 +84,7 @@ public interface OrderContactMech extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Contact Mech Purpose Type</em>' reference.
 	 * @see #setContactMechPurposeType(ContactMechPurposeType)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderContactMech_ContactMechPurposeType()
-	 * @model keys="contactMechPurposeTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

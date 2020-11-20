@@ -41,7 +41,7 @@ public interface ContentPurposeOperation extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Content Purpose Type</em>' reference.
 	 * @see #setContentPurposeType(ContentPurposeType)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurposeOperation_ContentPurposeType()
-	 * @model keys="contentPurposeTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface ContentPurposeOperation extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Content Operation</em>' reference.
 	 * @see #setContentOperation(ContentOperation)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurposeOperation_ContentOperation()
-	 * @model keys="contentOperationId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -87,7 +87,7 @@ public interface ContentPurposeOperation extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurposeOperation_RoleType()
-	 * @model keys="roleTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -110,7 +110,7 @@ public interface ContentPurposeOperation extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurposeOperation_Status()
-	 * @model keys="statusId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -133,7 +133,7 @@ public interface ContentPurposeOperation extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Privilege Enum</em>' reference.
 	 * @see #setPrivilegeEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentPurposeOperation_PrivilegeEnum()
-	 * @model keys="enumId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

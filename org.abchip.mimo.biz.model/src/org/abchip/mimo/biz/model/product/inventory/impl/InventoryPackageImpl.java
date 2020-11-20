@@ -2402,53 +2402,40 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 		initEAttribute(getInventoryItem_BinNumber(), ecorePackage.getEString(), "binNumber", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItem_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItem_Container(), theFacilityPackage.getContainer(), null, "container", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItem_Container().getEKeys().add(theFacilityPackage.getContainer_ContainerId());
 		initEReference(getInventoryItem_CurrencyUom(), theUomPackage.getUom(), null, "currencyUom", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItem_CurrencyUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEAttribute(getInventoryItem_DatetimeManufactured(), ecorePackage.getEDate(), "datetimeManufactured", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItem_DatetimeReceived(), ecorePackage.getEDate(), "datetimeReceived", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItem_ExpireDate(), ecorePackage.getEDate(), "expireDate", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItem_Facility(), theFacilityPackage.getFacility(), null, "facility", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItem_Facility().getEKeys().add(theFacilityPackage.getFacility_FacilityId());
 		initEReference(getInventoryItem_FixedAsset(), theFixedassetPackage.getFixedAsset(), null, "fixedAsset", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItem_FixedAsset().getEKeys().add(theFixedassetPackage.getFixedAsset_FixedAssetId());
 		initEReference(getInventoryItem_InventoryItemAttributes(), this.getInventoryItemAttribute(), null, "inventoryItemAttributes", null, 0, -1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItem_InventoryItemDetails(), this.getInventoryItemDetail(), null, "inventoryItemDetails", null, 0, -1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItem_InventoryItemLabelAppls(), this.getInventoryItemLabelAppl(), null, "inventoryItemLabelAppls", null, 0, -1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItem_InventoryItemStatuses(), this.getInventoryItemStatus(), null, "inventoryItemStatuses", null, 0, -1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItem_InventoryItemType(), this.getInventoryItemType(), null, "inventoryItemType", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItem_InventoryItemType().getEKeys().add(this.getInventoryItemType_InventoryItemTypeId());
 		initEReference(getInventoryItem_InventoryItemVariances(), this.getInventoryItemVariance(), null, "inventoryItemVariances", null, 0, -1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItem_LocationSeqId(), ecorePackage.getEString(), "locationSeqId", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItem_Lot(), this.getLot(), null, "lot", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItem_Lot().getEKeys().add(this.getLot_LotId());
 		initEAttribute(getInventoryItem_OldAvailableToPromise(), ecorePackage.getEBigDecimal(), "oldAvailableToPromise", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItem_OldQuantityOnHand(), ecorePackage.getEBigDecimal(), "oldQuantityOnHand", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItem_OwnerParty(), thePartyPackage_1.getParty(), null, "ownerParty", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItem_OwnerParty().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getInventoryItem_Party(), thePartyPackage_1.getParty(), null, "party", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItem_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getInventoryItem_Product(), theProductPackage.getProduct(), null, "product", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItem_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEAttribute(getInventoryItem_QuantityOnHandTotal(), ecorePackage.getEBigDecimal(), "quantityOnHandTotal", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItem_SerialNumber(), ecorePackage.getEString(), "serialNumber", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItem_SoftIdentifier(), ecorePackage.getEString(), "softIdentifier", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItem_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItem_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getInventoryItem_UnitCost(), ecorePackage.getEBigDecimal(), "unitCost", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItem_Uom(), theUomPackage.getUom(), null, "uom", null, 0, 1, InventoryItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItem_Uom().getEKeys().add(theUomPackage.getUom_UomId());
 
 		initEClass(inventoryItemAttributeEClass, InventoryItemAttribute.class, "InventoryItemAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getInventoryItemAttribute_InventoryItem(), this.getInventoryItem(), null, "inventoryItem", null, 1, 1, InventoryItemAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemAttribute_InventoryItem().getEKeys().add(this.getInventoryItem_InventoryItemId());
 		initEAttribute(getInventoryItemAttribute_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, InventoryItemAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItemAttribute_AttrDescription(), ecorePackage.getEString(), "attrDescription", null, 0, 1, InventoryItemAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItemAttribute_AttrValue(), ecorePackage.getEString(), "attrValue", null, 0, 1, InventoryItemAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(inventoryItemDetailEClass, InventoryItemDetail.class, "InventoryItemDetail", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getInventoryItemDetail_InventoryItem(), this.getInventoryItem(), null, "inventoryItem", null, 1, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemDetail_InventoryItem().getEKeys().add(this.getInventoryItem_InventoryItemId());
 		initEAttribute(getInventoryItemDetail_InventoryItemDetailSeqId(), ecorePackage.getEString(), "inventoryItemDetailSeqId", null, 1, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItemDetail_AccountingQuantityDiff(), ecorePackage.getEBigDecimal(), "accountingQuantityDiff", null, 0, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItemDetail_AvailableToPromiseDiff(), ecorePackage.getEBigDecimal(), "availableToPromiseDiff", null, 0, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2456,17 +2443,13 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 		initEAttribute(getInventoryItemDetail_EffectiveDate(), ecorePackage.getEDate(), "effectiveDate", null, 0, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItemDetail_FixedAssetId(), ecorePackage.getEString(), "fixedAssetId", null, 0, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItemDetail_ItemIssuance(), theIssuancePackage.getItemIssuance(), null, "itemIssuance", null, 0, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemDetail_ItemIssuance().getEKeys().add(theIssuancePackage.getItemIssuance_ItemIssuanceId());
 		initEAttribute(getInventoryItemDetail_MaintHistSeqId(), ecorePackage.getEString(), "maintHistSeqId", null, 0, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItemDetail_OrderId(), ecorePackage.getEString(), "orderId", null, 0, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItemDetail_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 0, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItemDetail_PhysicalInventory(), this.getPhysicalInventory(), null, "physicalInventory", null, 0, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemDetail_PhysicalInventory().getEKeys().add(this.getPhysicalInventory_PhysicalInventoryId());
 		initEAttribute(getInventoryItemDetail_QuantityOnHandDiff(), ecorePackage.getEBigDecimal(), "quantityOnHandDiff", null, 0, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItemDetail_ReasonEnum(), theEnumPackage.getEnumeration(), null, "reasonEnum", null, 0, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemDetail_ReasonEnum().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEReference(getInventoryItemDetail_Receipt(), theReceiptPackage.getShipmentReceipt(), null, "receipt", null, 0, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemDetail_Receipt().getEKeys().add(theReceiptPackage.getShipmentReceipt_ReceiptId());
 		initEAttribute(getInventoryItemDetail_ReturnId(), ecorePackage.getEString(), "returnId", null, 0, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItemDetail_ReturnItemSeqId(), ecorePackage.getEString(), "returnItemSeqId", null, 0, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItemDetail_ShipGroupSeqId(), ecorePackage.getEString(), "shipGroupSeqId", null, 0, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2474,21 +2457,16 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 		initEAttribute(getInventoryItemDetail_ShipmentItemSeqId(), ecorePackage.getEString(), "shipmentItemSeqId", null, 0, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItemDetail_UnitCost(), ecorePackage.getEBigDecimal(), "unitCost", null, 0, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItemDetail_WorkEffort(), theWorkeffortPackage.getWorkEffort(), null, "workEffort", null, 0, 1, InventoryItemDetail.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemDetail_WorkEffort().getEKeys().add(theWorkeffortPackage.getWorkEffort_WorkEffortId());
 
 		initEClass(inventoryItemLabelEClass, InventoryItemLabel.class, "InventoryItemLabel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getInventoryItemLabel_InventoryItemLabelId(), ecorePackage.getEString(), "inventoryItemLabelId", null, 1, 1, InventoryItemLabel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItemLabel_Description(), ecorePackage.getEString(), "description", null, 0, 1, InventoryItemLabel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItemLabel_InventoryItemLabelType(), this.getInventoryItemLabelType(), null, "inventoryItemLabelType", null, 0, 1, InventoryItemLabel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemLabel_InventoryItemLabelType().getEKeys().add(this.getInventoryItemLabelType_InventoryItemLabelTypeId());
 
 		initEClass(inventoryItemLabelApplEClass, InventoryItemLabelAppl.class, "InventoryItemLabelAppl", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getInventoryItemLabelAppl_InventoryItem(), this.getInventoryItem(), null, "inventoryItem", null, 1, 1, InventoryItemLabelAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemLabelAppl_InventoryItem().getEKeys().add(this.getInventoryItem_InventoryItemId());
 		initEReference(getInventoryItemLabelAppl_InventoryItemLabelType(), this.getInventoryItemLabelType(), null, "inventoryItemLabelType", null, 1, 1, InventoryItemLabelAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemLabelAppl_InventoryItemLabelType().getEKeys().add(this.getInventoryItemLabelType_InventoryItemLabelTypeId());
 		initEReference(getInventoryItemLabelAppl_InventoryItemLabel(), this.getInventoryItemLabel(), null, "inventoryItemLabel", null, 0, 1, InventoryItemLabelAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemLabelAppl_InventoryItemLabel().getEKeys().add(this.getInventoryItemLabel_InventoryItemLabelId());
 		initEAttribute(getInventoryItemLabelAppl_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, InventoryItemLabelAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(inventoryItemLabelTypeEClass, InventoryItemLabelType.class, "InventoryItemLabelType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -2496,25 +2474,19 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 		initEAttribute(getInventoryItemLabelType_Description(), ecorePackage.getEString(), "description", null, 0, 1, InventoryItemLabelType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItemLabelType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 1, 1, InventoryItemLabelType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItemLabelType_ParentType(), this.getInventoryItemLabelType(), null, "parentType", null, 0, 1, InventoryItemLabelType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemLabelType_ParentType().getEKeys().add(this.getInventoryItemLabelType_InventoryItemLabelTypeId());
 
 		initEClass(inventoryItemStatusEClass, InventoryItemStatus.class, "InventoryItemStatus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getInventoryItemStatus_InventoryItem(), this.getInventoryItem(), null, "inventoryItem", null, 1, 1, InventoryItemStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemStatus_InventoryItem().getEKeys().add(this.getInventoryItem_InventoryItemId());
 		initEReference(getInventoryItemStatus_Status(), theStatusPackage.getStatusItem(), null, "status", null, 1, 1, InventoryItemStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemStatus_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getInventoryItemStatus_StatusDatetime(), ecorePackage.getEDate(), "statusDatetime", null, 1, 1, InventoryItemStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItemStatus_ChangeByUserLogin(), theLoginPackage.getUserLogin(), null, "changeByUserLogin", null, 0, 1, InventoryItemStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemStatus_ChangeByUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEAttribute(getInventoryItemStatus_OwnerPartyId(), ecorePackage.getEString(), "ownerPartyId", null, 0, 1, InventoryItemStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItemStatus_ProductId(), ecorePackage.getEString(), "productId", null, 0, 1, InventoryItemStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItemStatus_StatusEndDatetime(), ecorePackage.getEDate(), "statusEndDatetime", null, 0, 1, InventoryItemStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(inventoryItemTempResEClass, InventoryItemTempRes.class, "InventoryItemTempRes", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getInventoryItemTempRes_Product(), theProductPackage.getProduct(), null, "product", null, 1, 1, InventoryItemTempRes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemTempRes_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEReference(getInventoryItemTempRes_ProductStore(), theStorePackage.getProductStore(), null, "productStore", null, 1, 1, InventoryItemTempRes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemTempRes_ProductStore().getEKeys().add(theStorePackage.getProductStore_ProductStoreId());
 		initEAttribute(getInventoryItemTempRes_VisitId(), ecorePackage.getEString(), "visitId", null, 1, 1, InventoryItemTempRes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItemTempRes_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, InventoryItemTempRes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItemTempRes_ReservedDate(), ecorePackage.getEDate(), "reservedDate", null, 0, 1, InventoryItemTempRes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2525,46 +2497,34 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 		initEAttribute(getInventoryItemType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, InventoryItemType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItemType_InventoryItemTypeAttrs(), this.getInventoryItemTypeAttr(), null, "inventoryItemTypeAttrs", null, 0, -1, InventoryItemType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItemType_ParentType(), this.getInventoryItemType(), null, "parentType", null, 0, 1, InventoryItemType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemType_ParentType().getEKeys().add(this.getInventoryItemType_InventoryItemTypeId());
 
 		initEClass(inventoryItemTypeAttrEClass, InventoryItemTypeAttr.class, "InventoryItemTypeAttr", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getInventoryItemTypeAttr_InventoryItemType(), this.getInventoryItemType(), null, "inventoryItemType", null, 1, 1, InventoryItemTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemTypeAttr_InventoryItemType().getEKeys().add(this.getInventoryItemType_InventoryItemTypeId());
 		initEAttribute(getInventoryItemTypeAttr_AttrName(), ecorePackage.getEString(), "attrName", null, 1, 1, InventoryItemTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItemTypeAttr_Description(), ecorePackage.getEString(), "description", null, 0, 1, InventoryItemTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(inventoryItemVarianceEClass, InventoryItemVariance.class, "InventoryItemVariance", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getInventoryItemVariance_PhysicalInventory(), this.getPhysicalInventory(), null, "physicalInventory", null, 1, 1, InventoryItemVariance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemVariance_PhysicalInventory().getEKeys().add(this.getPhysicalInventory_PhysicalInventoryId());
 		initEReference(getInventoryItemVariance_InventoryItem(), this.getInventoryItem(), null, "inventoryItem", null, 1, 1, InventoryItemVariance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemVariance_InventoryItem().getEKeys().add(this.getInventoryItem_InventoryItemId());
 		initEAttribute(getInventoryItemVariance_AvailableToPromiseVar(), ecorePackage.getEBigDecimal(), "availableToPromiseVar", null, 0, 1, InventoryItemVariance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItemVariance_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, InventoryItemVariance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryItemVariance_QuantityOnHandVar(), ecorePackage.getEBigDecimal(), "quantityOnHandVar", null, 0, 1, InventoryItemVariance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryItemVariance_VarianceReason(), this.getVarianceReason(), null, "varianceReason", null, 0, 1, InventoryItemVariance.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryItemVariance_VarianceReason().getEKeys().add(this.getVarianceReason_VarianceReasonId());
 
 		initEClass(inventoryTransferEClass, InventoryTransfer.class, "InventoryTransfer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getInventoryTransfer_InventoryTransferId(), ecorePackage.getEString(), "inventoryTransferId", null, 1, 1, InventoryTransfer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryTransfer_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, InventoryTransfer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryTransfer_Container(), theFacilityPackage.getContainer(), null, "container", null, 0, 1, InventoryTransfer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryTransfer_Container().getEKeys().add(theFacilityPackage.getContainer_ContainerId());
 		initEReference(getInventoryTransfer_ContainerIdTo(), theFacilityPackage.getContainer(), null, "containerIdTo", null, 0, 1, InventoryTransfer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryTransfer_ContainerIdTo().getEKeys().add(theFacilityPackage.getContainer_ContainerId());
 		initEReference(getInventoryTransfer_Facility(), theFacilityPackage.getFacility(), null, "facility", null, 0, 1, InventoryTransfer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryTransfer_Facility().getEKeys().add(theFacilityPackage.getFacility_FacilityId());
 		initEReference(getInventoryTransfer_FacilityIdTo(), theFacilityPackage.getFacility(), null, "facilityIdTo", null, 0, 1, InventoryTransfer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryTransfer_FacilityIdTo().getEKeys().add(theFacilityPackage.getFacility_FacilityId());
 		initEReference(getInventoryTransfer_InventoryItem(), this.getInventoryItem(), null, "inventoryItem", null, 0, 1, InventoryTransfer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryTransfer_InventoryItem().getEKeys().add(this.getInventoryItem_InventoryItemId());
 		initEReference(getInventoryTransfer_ItemIssuance(), theIssuancePackage.getItemIssuance(), null, "itemIssuance", null, 0, 1, InventoryTransfer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryTransfer_ItemIssuance().getEKeys().add(theIssuancePackage.getItemIssuance_ItemIssuanceId());
 		initEAttribute(getInventoryTransfer_LocationSeqId(), ecorePackage.getEString(), "locationSeqId", null, 0, 1, InventoryTransfer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryTransfer_LocationSeqIdTo(), ecorePackage.getEString(), "locationSeqIdTo", null, 0, 1, InventoryTransfer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryTransfer_ReceiveDate(), ecorePackage.getEDate(), "receiveDate", null, 0, 1, InventoryTransfer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getInventoryTransfer_SendDate(), ecorePackage.getEDate(), "sendDate", null, 0, 1, InventoryTransfer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInventoryTransfer_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, InventoryTransfer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getInventoryTransfer_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 
 		initEClass(lotEClass, Lot.class, "Lot", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getLot_LotId(), ecorePackage.getEString(), "lotId", null, 1, 1, Lot.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2593,8 +2553,8 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 		createMimoentformatAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
-		// mimo-ent-slot-constraint
-		createMimoentslotconstraintAnnotations();
+		// mimo-ent-slot-constraints
+		createMimoentslotconstraintsAnnotations();
 	}
 
 	/**
@@ -3121,13 +3081,13 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 	}
 
 	/**
-	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * Initializes the annotations for <b>mimo-ent-slot-constraints</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createMimoentslotconstraintAnnotations() {
-		String source = "mimo-ent-slot-constraint";
+	protected void createMimoentslotconstraintsAnnotations() {
+		String source = "mimo-ent-slot-constraints";
 		addAnnotation
 		  (getInventoryItem_InventoryItemStatuses(),
 		   source,

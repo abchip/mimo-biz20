@@ -39,7 +39,7 @@ public interface PartyInvitationGroupAssoc extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Party Id To</em>' reference.
 	 * @see #setPartyIdTo(PartyGroup)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyInvitationGroupAssoc_PartyIdTo()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface PartyInvitationGroupAssoc extends EntityIdentifiable, EntityInf
 	 * @return the value of the '<em>Party Invitation</em>' reference.
 	 * @see #setPartyInvitation(PartyInvitation)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyInvitationGroupAssoc_PartyInvitation()
-	 * @model keys="partyInvitationId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

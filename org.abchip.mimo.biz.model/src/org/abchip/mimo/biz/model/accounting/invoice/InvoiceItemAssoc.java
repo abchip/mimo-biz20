@@ -48,7 +48,7 @@ public interface InvoiceItemAssoc extends EntityTyped<InvoiceItemAssocType>, Ent
 	 * @return the value of the '<em>Invoice Item Assoc Type</em>' reference.
 	 * @see #setInvoiceItemAssocType(InvoiceItemAssocType)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemAssoc_InvoiceItemAssocType()
-	 * @model keys="invoiceItemAssocTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -240,7 +240,7 @@ public interface InvoiceItemAssoc extends EntityTyped<InvoiceItemAssocType>, Ent
 	 * @return the value of the '<em>Party Id From</em>' reference.
 	 * @see #setPartyIdFrom(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemAssoc_PartyIdFrom()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getPartyIdFrom();
@@ -266,7 +266,7 @@ public interface InvoiceItemAssoc extends EntityTyped<InvoiceItemAssocType>, Ent
 	 * @return the value of the '<em>Party Id To</em>' reference.
 	 * @see #setPartyIdTo(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceItemAssoc_PartyIdTo()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getPartyIdTo();

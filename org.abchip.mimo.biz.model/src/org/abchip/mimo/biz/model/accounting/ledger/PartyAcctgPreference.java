@@ -83,8 +83,7 @@ public interface PartyAcctgPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Error Gl Journal</em>' reference.
 	 * @see #setErrorGlJournal(GlJournal)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyAcctgPreference_ErrorGlJournal()
-	 * @model keys="glJournalId"
-	 *        annotation="mimo-ent-slot help='Journal to which all the failed automatic transaction are assigned.\n                If the error journal is set, if the GL posting fails for some reason the triggering operation (finalizing an invoice or payment or whatever) would NOT roll back, instead the partial GL post would be placed into the error journal.'"
+	 * @model annotation="mimo-ent-slot help='Journal to which all the failed automatic transaction are assigned.\n                If the error journal is set, if the GL posting fails for some reason the triggering operation (finalizing an invoice or payment or whatever) would NOT roll back, instead the partial GL post would be placed into the error journal.'"
 	 * @generated
 	 */
 	GlJournal getErrorGlJournal();
@@ -184,7 +183,7 @@ public interface PartyAcctgPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Invoice Seq Cust Meth</em>' reference.
 	 * @see #setInvoiceSeqCustMeth(CustomMethod)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyAcctgPreference_InvoiceSeqCustMeth()
-	 * @model keys="customMethodId"
+	 * @model
 	 * @generated
 	 */
 	CustomMethod getInvoiceSeqCustMeth();
@@ -310,7 +309,7 @@ public interface PartyAcctgPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Old Invoice Sequence Enum</em>' reference.
 	 * @see #setOldInvoiceSequenceEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyAcctgPreference_OldInvoiceSequenceEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getOldInvoiceSequenceEnum();
@@ -332,7 +331,7 @@ public interface PartyAcctgPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Old Order Sequence Enum</em>' reference.
 	 * @see #setOldOrderSequenceEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyAcctgPreference_OldOrderSequenceEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getOldOrderSequenceEnum();
@@ -354,7 +353,7 @@ public interface PartyAcctgPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Old Quote Sequence Enum</em>' reference.
 	 * @see #setOldQuoteSequenceEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyAcctgPreference_OldQuoteSequenceEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getOldQuoteSequenceEnum();
@@ -402,7 +401,7 @@ public interface PartyAcctgPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Order Seq Cust Meth</em>' reference.
 	 * @see #setOrderSeqCustMeth(CustomMethod)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyAcctgPreference_OrderSeqCustMeth()
-	 * @model keys="customMethodId"
+	 * @model
 	 * @generated
 	 */
 	CustomMethod getOrderSeqCustMeth();
@@ -451,7 +450,7 @@ public interface PartyAcctgPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Base Currency Uom</em>' reference.
 	 * @see #setBaseCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyAcctgPreference_BaseCurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getBaseCurrencyUom();
@@ -473,7 +472,7 @@ public interface PartyAcctgPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Cogs Method</em>' reference.
 	 * @see #setCogsMethod(Enumeration)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyAcctgPreference_CogsMethod()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getCogsMethod();
@@ -521,7 +520,7 @@ public interface PartyAcctgPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Quote Seq Cust Meth</em>' reference.
 	 * @see #setQuoteSeqCustMeth(CustomMethod)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyAcctgPreference_QuoteSeqCustMeth()
-	 * @model keys="customMethodId"
+	 * @model
 	 * @generated
 	 */
 	CustomMethod getQuoteSeqCustMeth();
@@ -543,7 +542,7 @@ public interface PartyAcctgPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Refund Payment Method</em>' reference.
 	 * @see #setRefundPaymentMethod(PaymentMethod)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyAcctgPreference_RefundPaymentMethod()
-	 * @model keys="paymentMethodId"
+	 * @model
 	 * @generated
 	 */
 	PaymentMethod getRefundPaymentMethod();
@@ -565,7 +564,7 @@ public interface PartyAcctgPreference extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Tax Form</em>' reference.
 	 * @see #setTaxForm(Enumeration)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyAcctgPreference_TaxForm()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getTaxForm();

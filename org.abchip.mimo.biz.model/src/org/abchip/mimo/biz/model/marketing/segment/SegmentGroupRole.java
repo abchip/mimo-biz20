@@ -38,7 +38,7 @@ public interface SegmentGroupRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Segment Group</em>' reference.
 	 * @see #setSegmentGroup(SegmentGroup)
 	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupRole_SegmentGroup()
-	 * @model keys="segmentGroupId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -61,7 +61,7 @@ public interface SegmentGroupRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupRole_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -84,7 +84,7 @@ public interface SegmentGroupRole extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupRole_RoleType()
-	 * @model keys="roleTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

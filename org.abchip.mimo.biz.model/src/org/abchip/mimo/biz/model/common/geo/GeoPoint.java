@@ -98,8 +98,7 @@ public interface GeoPoint extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Elevation Uom</em>' reference.
 	 * @see #setElevationUom(Uom)
 	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoPoint_ElevationUom()
-	 * @model keys="uomId"
-	 *        annotation="mimo-ent-slot help='UOM for elevation (feet, meters, etc.)'"
+	 * @model annotation="mimo-ent-slot help='UOM for elevation (feet, meters, etc.)'"
 	 * @generated
 	 */
 	Uom getElevationUom();
@@ -121,7 +120,7 @@ public interface GeoPoint extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Geo Point Type Enum</em>' reference.
 	 * @see #setGeoPointTypeEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoPoint_GeoPointTypeEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getGeoPointTypeEnum();
@@ -170,7 +169,7 @@ public interface GeoPoint extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Data Source</em>' reference.
 	 * @see #setDataSource(DataSource)
 	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoPoint_DataSource()
-	 * @model keys="dataSourceId"
+	 * @model
 	 * @generated
 	 */
 	DataSource getDataSource();

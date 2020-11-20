@@ -52,7 +52,7 @@ public interface ProductAssoc extends EntityTyped<ProductAssocType>, EntityInfo 
 	 * @return the value of the '<em>Product Assoc Type</em>' reference.
 	 * @see #setProductAssocType(ProductAssocType)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductAssoc_ProductAssocType()
-	 * @model keys="productAssocTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -75,7 +75,7 @@ public interface ProductAssoc extends EntityTyped<ProductAssocType>, EntityInfo 
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductAssoc_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -102,7 +102,7 @@ public interface ProductAssoc extends EntityTyped<ProductAssocType>, EntityInfo 
 	 * @return the value of the '<em>Estimate Calc Method</em>' reference.
 	 * @see #setEstimateCalcMethod(CustomMethod)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductAssoc_EstimateCalcMethod()
-	 * @model keys="customMethodId"
+	 * @model
 	 * @generated
 	 */
 	CustomMethod getEstimateCalcMethod();
@@ -229,7 +229,7 @@ public interface ProductAssoc extends EntityTyped<ProductAssocType>, EntityInfo 
 	 * @return the value of the '<em>Recurrence Info</em>' reference.
 	 * @see #setRecurrenceInfo(RecurrenceInfo)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductAssoc_RecurrenceInfo()
-	 * @model keys="recurrenceInfoId"
+	 * @model
 	 * @generated
 	 */
 	RecurrenceInfo getRecurrenceInfo();
@@ -251,7 +251,7 @@ public interface ProductAssoc extends EntityTyped<ProductAssocType>, EntityInfo 
 	 * @return the value of the '<em>Routing Work Effort</em>' reference.
 	 * @see #setRoutingWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductAssoc_RoutingWorkEffort()
-	 * @model keys="workEffortId"
+	 * @model
 	 * @generated
 	 */
 	WorkEffort getRoutingWorkEffort();
@@ -355,7 +355,7 @@ public interface ProductAssoc extends EntityTyped<ProductAssocType>, EntityInfo 
 	 * @return the value of the '<em>Product Id To</em>' reference.
 	 * @see #setProductIdTo(Product)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductAssoc_ProductIdTo()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

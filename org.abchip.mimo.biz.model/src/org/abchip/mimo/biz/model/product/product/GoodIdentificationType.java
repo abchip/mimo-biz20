@@ -99,7 +99,7 @@ public interface GoodIdentificationType extends EntityType<GoodIdentification>, 
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(GoodIdentificationType)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getGoodIdentificationType_ParentType()
-	 * @model keys="goodIdentificationTypeId"
+	 * @model
 	 * @generated
 	 */
 	GoodIdentificationType getParentType();

@@ -74,7 +74,7 @@ public interface Employment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party Id From</em>' reference.
 	 * @see #setPartyIdFrom(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmployment_PartyIdFrom()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -101,7 +101,7 @@ public interface Employment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party Id To</em>' reference.
 	 * @see #setPartyIdTo(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmployment_PartyIdTo()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -180,7 +180,7 @@ public interface Employment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Termination Reason</em>' reference.
 	 * @see #setTerminationReason(TerminationReason)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmployment_TerminationReason()
-	 * @model keys="terminationReasonId"
+	 * @model
 	 * @generated
 	 */
 	TerminationReason getTerminationReason();
@@ -202,7 +202,7 @@ public interface Employment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Termination Type</em>' reference.
 	 * @see #setTerminationType(TerminationType)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmployment_TerminationType()
-	 * @model keys="terminationTypeId"
+	 * @model
 	 * @generated
 	 */
 	TerminationType getTerminationType();

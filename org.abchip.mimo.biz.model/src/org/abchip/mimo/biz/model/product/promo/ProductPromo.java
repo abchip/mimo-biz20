@@ -85,7 +85,7 @@ public interface ProductPromo extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Created By User Login</em>' reference.
 	 * @see #setCreatedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromo_CreatedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getCreatedByUserLogin();
@@ -137,7 +137,7 @@ public interface ProductPromo extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Last Modified By User Login</em>' reference.
 	 * @see #setLastModifiedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromo_LastModifiedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getLastModifiedByUserLogin();
@@ -185,7 +185,7 @@ public interface ProductPromo extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Override Org Party</em>' reference.
 	 * @see #setOverrideOrgParty(Party)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromo_OverrideOrgParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getOverrideOrgParty();

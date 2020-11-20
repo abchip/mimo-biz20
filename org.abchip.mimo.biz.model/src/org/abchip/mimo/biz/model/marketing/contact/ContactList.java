@@ -136,7 +136,7 @@ public interface ContactList extends EntityTyped<ContactListType>, EntityInfo {
 	 * @return the value of the '<em>Contact List Parties</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_ContactListParties()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<ContactListParty> getContactListParties();
@@ -148,7 +148,7 @@ public interface ContactList extends EntityTyped<ContactListType>, EntityInfo {
 	 * @return the value of the '<em>Contact List Type</em>' reference.
 	 * @see #setContactListType(ContactListType)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_ContactListType()
-	 * @model keys="contactListTypeId"
+	 * @model
 	 * @generated
 	 */
 	ContactListType getContactListType();
@@ -170,7 +170,7 @@ public interface ContactList extends EntityTyped<ContactListType>, EntityInfo {
 	 * @return the value of the '<em>Contact Mech Type</em>' reference.
 	 * @see #setContactMechType(ContactMechType)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_ContactMechType()
-	 * @model keys="contactMechTypeId"
+	 * @model
 	 * @generated
 	 */
 	ContactMechType getContactMechType();
@@ -196,7 +196,7 @@ public interface ContactList extends EntityTyped<ContactListType>, EntityInfo {
 	 * @return the value of the '<em>Created By User Login</em>' reference.
 	 * @see #setCreatedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_CreatedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getCreatedByUserLogin();
@@ -270,7 +270,7 @@ public interface ContactList extends EntityTyped<ContactListType>, EntityInfo {
 	 * @return the value of the '<em>Last Modified By User Login</em>' reference.
 	 * @see #setLastModifiedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_LastModifiedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getLastModifiedByUserLogin();
@@ -292,7 +292,7 @@ public interface ContactList extends EntityTyped<ContactListType>, EntityInfo {
 	 * @return the value of the '<em>Marketing Campaign</em>' reference.
 	 * @see #setMarketingCampaign(MarketingCampaign)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_MarketingCampaign()
-	 * @model keys="marketingCampaignId"
+	 * @model
 	 * @generated
 	 */
 	MarketingCampaign getMarketingCampaign();
@@ -340,7 +340,7 @@ public interface ContactList extends EntityTyped<ContactListType>, EntityInfo {
 	 * @return the value of the '<em>Owner Party</em>' reference.
 	 * @see #setOwnerParty(Party)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_OwnerParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getOwnerParty();

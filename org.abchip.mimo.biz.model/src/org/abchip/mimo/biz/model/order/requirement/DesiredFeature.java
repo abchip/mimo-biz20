@@ -38,7 +38,7 @@ public interface DesiredFeature extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Requirement</em>' reference.
 	 * @see #setRequirement(Requirement)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getDesiredFeature_Requirement()
-	 * @model keys="requirementId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -111,7 +111,7 @@ public interface DesiredFeature extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Feature</em>' reference.
 	 * @see #setProductFeature(ProductFeature)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getDesiredFeature_ProductFeature()
-	 * @model keys="productFeatureId"
+	 * @model
 	 * @generated
 	 */
 	ProductFeature getProductFeature();

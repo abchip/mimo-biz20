@@ -150,7 +150,7 @@ public interface QuoteAdjustment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Created By User Login</em>' reference.
 	 * @see #setCreatedByUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteAdjustment_CreatedByUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getCreatedByUserLogin();
@@ -380,7 +380,7 @@ public interface QuoteAdjustment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Override Gl Account</em>' reference.
 	 * @see #setOverrideGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteAdjustment_OverrideGlAccount()
-	 * @model keys="glAccountId"
+	 * @model
 	 * @generated
 	 */
 	GlAccount getOverrideGlAccount();
@@ -402,7 +402,7 @@ public interface QuoteAdjustment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Primary Geo</em>' reference.
 	 * @see #setPrimaryGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteAdjustment_PrimaryGeo()
-	 * @model keys="geoId"
+	 * @model
 	 * @generated
 	 */
 	Geo getPrimaryGeo();
@@ -450,7 +450,7 @@ public interface QuoteAdjustment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Promo</em>' reference.
 	 * @see #setProductPromo(ProductPromo)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteAdjustment_ProductPromo()
-	 * @model keys="productPromoId"
+	 * @model
 	 * @generated
 	 */
 	ProductPromo getProductPromo();
@@ -524,7 +524,7 @@ public interface QuoteAdjustment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Quote</em>' reference.
 	 * @see #setQuote(Quote)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteAdjustment_Quote()
-	 * @model keys="quoteId"
+	 * @model
 	 * @generated
 	 */
 	Quote getQuote();
@@ -546,7 +546,7 @@ public interface QuoteAdjustment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Quote Adjustment Type</em>' reference.
 	 * @see #setQuoteAdjustmentType(OrderAdjustmentType)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteAdjustment_QuoteAdjustmentType()
-	 * @model keys="orderAdjustmentTypeId"
+	 * @model
 	 * @generated
 	 */
 	OrderAdjustmentType getQuoteAdjustmentType();
@@ -621,7 +621,7 @@ public interface QuoteAdjustment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Secondary Geo</em>' reference.
 	 * @see #setSecondaryGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteAdjustment_SecondaryGeo()
-	 * @model keys="geoId"
+	 * @model
 	 * @generated
 	 */
 	Geo getSecondaryGeo();

@@ -41,7 +41,7 @@ public interface TechDataCalendarExcDay extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Calendar</em>' reference.
 	 * @see #setCalendar(TechDataCalendar)
 	 * @see org.abchip.mimo.biz.model.manufacturing.techdata.TechdataPackage#getTechDataCalendarExcDay_Calendar()
-	 * @model keys="calendarId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

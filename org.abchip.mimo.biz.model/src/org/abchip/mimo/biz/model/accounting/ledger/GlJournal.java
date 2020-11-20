@@ -88,7 +88,7 @@ public interface GlJournal extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Organization Party</em>' reference.
 	 * @see #setOrganizationParty(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlJournal_OrganizationParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getOrganizationParty();

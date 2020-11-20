@@ -145,7 +145,7 @@ public interface Addendum extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Agreement</em>' reference.
 	 * @see #setAgreement(Agreement)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAddendum_Agreement()
-	 * @model keys="agreementId"
+	 * @model
 	 * @generated
 	 */
 	Agreement getAgreement();

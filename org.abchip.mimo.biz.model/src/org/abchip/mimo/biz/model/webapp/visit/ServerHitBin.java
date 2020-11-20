@@ -151,7 +151,7 @@ public interface ServerHitBin extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Hit Type</em>' reference.
 	 * @see #setHitType(ServerHitType)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getServerHitBin_HitType()
-	 * @model keys="hitTypeId"
+	 * @model
 	 * @generated
 	 */
 	ServerHitType getHitType();

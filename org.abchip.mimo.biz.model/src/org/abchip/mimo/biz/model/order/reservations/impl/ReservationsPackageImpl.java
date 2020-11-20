@@ -794,10 +794,8 @@ public class ReservationsPackageImpl extends EPackageImpl implements Reservation
 		initEClass(accommodationSpotEClass, AccommodationSpot.class, "AccommodationSpot", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAccommodationSpot_AccommodationSpotId(), ecorePackage.getEString(), "accommodationSpotId", null, 1, 1, AccommodationSpot.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAccommodationSpot_AccommodationClass(), theFixedassetPackage.getAccommodationClass(), null, "accommodationClass", null, 0, 1, AccommodationSpot.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAccommodationSpot_AccommodationClass().getEKeys().add(theFixedassetPackage.getAccommodationClass_AccommodationClassId());
 		initEAttribute(getAccommodationSpot_Description(), ecorePackage.getEString(), "description", null, 0, 1, AccommodationSpot.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAccommodationSpot_FixedAsset(), theFixedassetPackage.getFixedAsset(), null, "fixedAsset", null, 0, 1, AccommodationSpot.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getAccommodationSpot_FixedAsset().getEKeys().add(theFixedassetPackage.getFixedAsset_FixedAssetId());
 		initEAttribute(getAccommodationSpot_NumberOfSpaces(), ecorePackage.getELong(), "numberOfSpaces", null, 0, 1, AccommodationSpot.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource

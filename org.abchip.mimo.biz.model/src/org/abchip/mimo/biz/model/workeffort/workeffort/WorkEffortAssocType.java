@@ -87,7 +87,7 @@ public interface WorkEffortAssocType extends EntityType<WorkEffortAssoc>, Entity
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(WorkEffortAssocType)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortAssocType_ParentType()
-	 * @model keys="workEffortAssocTypeId"
+	 * @model
 	 * @generated
 	 */
 	WorkEffortAssocType getParentType();

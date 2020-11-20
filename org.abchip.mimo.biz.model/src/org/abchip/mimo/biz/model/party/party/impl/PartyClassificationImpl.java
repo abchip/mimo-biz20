@@ -11,11 +11,10 @@ import java.util.Date;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.PartyClassification;
 import org.abchip.mimo.biz.model.party.party.PartyClassificationGroup;
-import org.abchip.mimo.biz.model.party.party.PartyClassificationType;
 import org.abchip.mimo.biz.model.party.party.PartyPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityTypedImpl;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -38,7 +37,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class PartyClassificationImpl extends EntityTypedImpl<PartyClassificationType> implements PartyClassification {
+public class PartyClassificationImpl extends EntityIdentifiableImpl implements PartyClassification {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

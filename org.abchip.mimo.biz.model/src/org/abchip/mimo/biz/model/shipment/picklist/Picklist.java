@@ -99,7 +99,7 @@ public interface Picklist extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklist_Facility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getFacility();
@@ -185,7 +185,7 @@ public interface Picklist extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Shipment Method Type</em>' reference.
 	 * @see #setShipmentMethodType(ShipmentMethodType)
 	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklist_ShipmentMethodType()
-	 * @model keys="shipmentMethodTypeId"
+	 * @model
 	 * @generated
 	 */
 	ShipmentMethodType getShipmentMethodType();
@@ -207,7 +207,7 @@ public interface Picklist extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage#getPicklist_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

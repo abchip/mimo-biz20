@@ -87,7 +87,7 @@ public interface SubscriptionType extends EntityType<Subscription>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(SubscriptionType)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscriptionType_ParentType()
-	 * @model keys="subscriptionTypeId"
+	 * @model
 	 * @generated
 	 */
 	SubscriptionType getParentType();

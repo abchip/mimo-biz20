@@ -142,7 +142,7 @@ public interface AgreementTerm extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Invoice Item Type</em>' reference.
 	 * @see #setInvoiceItemType(InvoiceItemType)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementTerm_InvoiceItemType()
-	 * @model keys="invoiceItemTypeId"
+	 * @model
 	 * @generated
 	 */
 	InvoiceItemType getInvoiceItemType();
@@ -242,7 +242,7 @@ public interface AgreementTerm extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Term Type</em>' reference.
 	 * @see #setTermType(TermType)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementTerm_TermType()
-	 * @model keys="termTypeId"
+	 * @model
 	 * @generated
 	 */
 	TermType getTermType();
@@ -369,7 +369,7 @@ public interface AgreementTerm extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Agreement</em>' reference.
 	 * @see #setAgreement(Agreement)
 	 * @see org.abchip.mimo.biz.model.party.agreement.AgreementPackage#getAgreementTerm_Agreement()
-	 * @model keys="agreementId"
+	 * @model
 	 * @generated
 	 */
 	Agreement getAgreement();

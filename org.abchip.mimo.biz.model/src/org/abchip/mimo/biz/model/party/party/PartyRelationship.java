@@ -76,7 +76,7 @@ public interface PartyRelationship extends EntityTyped<PartyRelationshipType>, E
 	 * @return the value of the '<em>Party Relationship Type</em>' reference.
 	 * @see #setPartyRelationshipType(PartyRelationshipType)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationship_PartyRelationshipType()
-	 * @model keys="partyRelationshipTypeId"
+	 * @model
 	 * @generated
 	 */
 	PartyRelationshipType getPartyRelationshipType();
@@ -178,7 +178,7 @@ public interface PartyRelationship extends EntityTyped<PartyRelationshipType>, E
 	 * @return the value of the '<em>Priority Type</em>' reference.
 	 * @see #setPriorityType(PriorityType)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationship_PriorityType()
-	 * @model keys="priorityTypeId"
+	 * @model
 	 * @generated
 	 */
 	PriorityType getPriorityType();
@@ -227,7 +227,7 @@ public interface PartyRelationship extends EntityTyped<PartyRelationshipType>, E
 	 * @return the value of the '<em>Security Group</em>' reference.
 	 * @see #setSecurityGroup(SecurityGroup)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationship_SecurityGroup()
-	 * @model keys="groupId"
+	 * @model
 	 * @generated
 	 */
 	SecurityGroup getSecurityGroup();
@@ -249,7 +249,7 @@ public interface PartyRelationship extends EntityTyped<PartyRelationshipType>, E
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationship_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -301,7 +301,7 @@ public interface PartyRelationship extends EntityTyped<PartyRelationshipType>, E
 	 * @return the value of the '<em>Party Id From</em>' reference.
 	 * @see #setPartyIdFrom(Party)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationship_PartyIdFrom()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -328,7 +328,7 @@ public interface PartyRelationship extends EntityTyped<PartyRelationshipType>, E
 	 * @return the value of the '<em>Party Id To</em>' reference.
 	 * @see #setPartyIdTo(Party)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationship_PartyIdTo()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -355,7 +355,7 @@ public interface PartyRelationship extends EntityTyped<PartyRelationshipType>, E
 	 * @return the value of the '<em>Role Type Id From</em>' reference.
 	 * @see #setRoleTypeIdFrom(RoleType)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationship_RoleTypeIdFrom()
-	 * @model keys="roleTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -382,7 +382,7 @@ public interface PartyRelationship extends EntityTyped<PartyRelationshipType>, E
 	 * @return the value of the '<em>Role Type Id To</em>' reference.
 	 * @see #setRoleTypeIdTo(RoleType)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationship_RoleTypeIdTo()
-	 * @model keys="roleTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

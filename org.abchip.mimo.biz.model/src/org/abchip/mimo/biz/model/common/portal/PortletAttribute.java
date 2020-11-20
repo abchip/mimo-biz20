@@ -40,7 +40,7 @@ public interface PortletAttribute extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Portal Portlet</em>' reference.
 	 * @see #setPortalPortlet(PortalPortlet)
 	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortletAttribute_PortalPortlet()
-	 * @model keys="portalPortletId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

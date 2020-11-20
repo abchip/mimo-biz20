@@ -99,7 +99,7 @@ public interface DocumentType extends EntityType<Document>, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(DocumentType)
 	 * @see org.abchip.mimo.biz.model.content.document.DocumentPackage#getDocumentType_ParentType()
-	 * @model keys="documentTypeId"
+	 * @model
 	 * @generated
 	 */
 	DocumentType getParentType();

@@ -841,11 +841,9 @@ public class UserPackageImpl extends EPackageImpl implements UserPackage {
 
 		initEClass(userPreferenceEClass, UserPreference.class, "UserPreference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getUserPreference_UserLogin(), theLoginPackage.getUserLogin(), null, "userLogin", null, 1, 1, UserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getUserPreference_UserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEAttribute(getUserPreference_UserPrefTypeId(), ecorePackage.getEString(), "userPrefTypeId", null, 1, 1, UserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getUserPreference_UserPrefDataType(), ecorePackage.getEString(), "userPrefDataType", null, 0, 1, UserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getUserPreference_UserPrefGroupType(), this.getUserPrefGroupType(), null, "userPrefGroupType", null, 0, 1, UserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getUserPreference_UserPrefGroupType().getEKeys().add(this.getUserPrefGroupType_UserPrefGroupTypeId());
 		initEAttribute(getUserPreference_UserPrefValue(), ecorePackage.getEString(), "userPrefValue", null, 0, 1, UserPreference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create annotations

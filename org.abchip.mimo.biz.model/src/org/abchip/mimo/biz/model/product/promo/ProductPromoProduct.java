@@ -41,7 +41,7 @@ public interface ProductPromoProduct extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Promo</em>' reference.
 	 * @see #setProductPromo(ProductPromo)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoProduct_ProductPromo()
-	 * @model keys="productPromoId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface ProductPromoProduct extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product</em>' reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoProduct_Product()
-	 * @model keys="productId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -171,7 +171,7 @@ public interface ProductPromoProduct extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Promo Appl Enum</em>' reference.
 	 * @see #setProductPromoApplEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoProduct_ProductPromoApplEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getProductPromoApplEnum();

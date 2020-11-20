@@ -85,7 +85,7 @@ public interface EmplLeaveReasonType extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(EmplLeaveReasonType)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getEmplLeaveReasonType_ParentType()
-	 * @model keys="emplLeaveReasonTypeId"
+	 * @model
 	 * @generated
 	 */
 	EmplLeaveReasonType getParentType();

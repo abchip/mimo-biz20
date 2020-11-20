@@ -85,7 +85,7 @@ public interface WorkEffortGoodStandardType extends EntityType<WorkEffortGoodSta
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(WorkEffortGoodStandardType)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortGoodStandardType_ParentType()
-	 * @model keys="workEffortGoodStdTypeId"
+	 * @model
 	 * @generated
 	 */
 	WorkEffortGoodStandardType getParentType();

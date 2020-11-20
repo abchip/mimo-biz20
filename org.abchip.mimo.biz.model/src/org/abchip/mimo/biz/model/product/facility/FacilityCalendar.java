@@ -39,7 +39,7 @@ public interface FacilityCalendar extends EntityTyped<FacilityCalendarType>, Ent
 	 * @return the value of the '<em>Facility</em>' reference.
 	 * @see #setFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityCalendar_Facility()
-	 * @model keys="facilityId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -62,7 +62,7 @@ public interface FacilityCalendar extends EntityTyped<FacilityCalendarType>, Ent
 	 * @return the value of the '<em>Facility Calendar Type</em>' reference.
 	 * @see #setFacilityCalendarType(FacilityCalendarType)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityCalendar_FacilityCalendarType()
-	 * @model keys="facilityCalendarTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

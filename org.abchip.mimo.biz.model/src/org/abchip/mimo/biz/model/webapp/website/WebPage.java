@@ -65,7 +65,7 @@ public interface WebPage extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebPage_Content()
-	 * @model keys="contentId"
+	 * @model
 	 * @generated
 	 */
 	Content getContent();
@@ -113,7 +113,7 @@ public interface WebPage extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Web Site</em>' reference.
 	 * @see #setWebSite(WebSite)
 	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebPage_WebSite()
-	 * @model keys="webSiteId"
+	 * @model
 	 * @generated
 	 */
 	WebSite getWebSite();

@@ -90,7 +90,7 @@ public interface Deliverable extends EntityTyped<DeliverableType>, EntityInfo {
 	 * @return the value of the '<em>Deliverable Type</em>' reference.
 	 * @see #setDeliverableType(DeliverableType)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getDeliverable_DeliverableType()
-	 * @model keys="deliverableTypeId"
+	 * @model
 	 * @generated
 	 */
 	DeliverableType getDeliverableType();

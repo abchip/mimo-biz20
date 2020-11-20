@@ -36,7 +36,7 @@ public interface TemporalExpressionAssoc extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>From Temp Expr</em>' reference.
 	 * @see #setFromTempExpr(TemporalExpression)
 	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getTemporalExpressionAssoc_FromTempExpr()
-	 * @model keys="tempExprId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true' help='The \"parent\" expression'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface TemporalExpressionAssoc extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>To Temp Expr</em>' reference.
 	 * @see #setToTempExpr(TemporalExpression)
 	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getTemporalExpressionAssoc_ToTempExpr()
-	 * @model keys="tempExprId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true' help='The \"child\" expression'"
 	 * @generated
 	 */

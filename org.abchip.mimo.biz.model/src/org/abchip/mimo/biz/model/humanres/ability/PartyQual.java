@@ -44,7 +44,7 @@ public interface PartyQual extends EntityTyped<PartyQualType>, EntityInfo {
 	 * @return the value of the '<em>Party</em>' reference.
 	 * @see #setParty(Party)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPartyQual_Party()
-	 * @model keys="partyId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -67,7 +67,7 @@ public interface PartyQual extends EntityTyped<PartyQualType>, EntityInfo {
 	 * @return the value of the '<em>Party Qual Type</em>' reference.
 	 * @see #setPartyQualType(PartyQualType)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPartyQual_PartyQualType()
-	 * @model keys="partyQualTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -143,8 +143,7 @@ public interface PartyQual extends EntityTyped<PartyQualType>, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPartyQual_Status()
-	 * @model keys="statusId"
-	 *        annotation="mimo-ent-slot help='Status e.g. completed, part-time etc.'"
+	 * @model annotation="mimo-ent-slot help='Status e.g. completed, part-time etc.'"
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -219,8 +218,7 @@ public interface PartyQual extends EntityTyped<PartyQualType>, EntityInfo {
 	 * @return the value of the '<em>Verif Status</em>' reference.
 	 * @see #setVerifStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPartyQual_VerifStatus()
-	 * @model keys="statusId"
-	 *        annotation="mimo-ent-slot help='Verification done for this entry if any'"
+	 * @model annotation="mimo-ent-slot help='Verification done for this entry if any'"
 	 * @generated
 	 */
 	StatusItem getVerifStatus();

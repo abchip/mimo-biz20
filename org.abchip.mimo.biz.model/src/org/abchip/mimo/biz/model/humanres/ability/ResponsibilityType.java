@@ -85,7 +85,7 @@ public interface ResponsibilityType extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(ResponsibilityType)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getResponsibilityType_ParentType()
-	 * @model keys="responsibilityTypeId"
+	 * @model
 	 * @generated
 	 */
 	ResponsibilityType getParentType();

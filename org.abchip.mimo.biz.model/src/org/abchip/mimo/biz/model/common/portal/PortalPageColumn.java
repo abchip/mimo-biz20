@@ -37,7 +37,7 @@ public interface PortalPageColumn extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Portal Page</em>' reference.
 	 * @see #setPortalPage(PortalPage)
 	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortalPageColumn_PortalPage()
-	 * @model keys="portalPageId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

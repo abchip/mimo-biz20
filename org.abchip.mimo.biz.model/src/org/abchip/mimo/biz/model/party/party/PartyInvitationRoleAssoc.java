@@ -35,7 +35,7 @@ public interface PartyInvitationRoleAssoc extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Role Type</em>' reference.
 	 * @see #setRoleType(RoleType)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyInvitationRoleAssoc_RoleType()
-	 * @model keys="roleTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -58,7 +58,7 @@ public interface PartyInvitationRoleAssoc extends EntityIdentifiable, EntityInfo
 	 * @return the value of the '<em>Party Invitation</em>' reference.
 	 * @see #setPartyInvitation(PartyInvitation)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyInvitationRoleAssoc_PartyInvitation()
-	 * @model keys="partyInvitationId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

@@ -85,7 +85,7 @@ public interface TerminationType extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(TerminationType)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getTerminationType_ParentType()
-	 * @model keys="terminationTypeId"
+	 * @model
 	 * @generated
 	 */
 	TerminationType getParentType();

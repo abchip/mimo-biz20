@@ -99,7 +99,7 @@ public interface OrderAdjustmentType extends EntityType<OrderAdjustment>, Entity
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(OrderAdjustmentType)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustmentType_ParentType()
-	 * @model keys="orderAdjustmentTypeId"
+	 * @model
 	 * @generated
 	 */
 	OrderAdjustmentType getParentType();

@@ -40,7 +40,7 @@ public interface ProdConfItemContent extends EntityTyped<ProdConfItemContentType
 	 * @return the value of the '<em>Config Item</em>' reference.
 	 * @see #setConfigItem(ProductConfigItem)
 	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProdConfItemContent_ConfigItem()
-	 * @model keys="configItemId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface ProdConfItemContent extends EntityTyped<ProdConfItemContentType
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProdConfItemContent_Content()
-	 * @model keys="contentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -86,7 +86,7 @@ public interface ProdConfItemContent extends EntityTyped<ProdConfItemContentType
 	 * @return the value of the '<em>Conf Item Content Type</em>' reference.
 	 * @see #setConfItemContentType(ProdConfItemContentType)
 	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProdConfItemContent_ConfItemContentType()
-	 * @model keys="confItemContentTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

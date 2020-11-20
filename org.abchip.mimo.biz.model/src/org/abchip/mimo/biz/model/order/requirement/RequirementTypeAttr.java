@@ -36,7 +36,7 @@ public interface RequirementTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Requirement Type</em>' reference.
 	 * @see #setRequirementType(RequirementType)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirementTypeAttr_RequirementType()
-	 * @model keys="requirementTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

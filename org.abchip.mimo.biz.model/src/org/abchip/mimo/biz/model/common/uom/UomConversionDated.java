@@ -45,7 +45,7 @@ public interface UomConversionDated extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Uom</em>' reference.
 	 * @see #setUom(Uom)
 	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUomConversionDated_Uom()
-	 * @model keys="uomId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -94,7 +94,7 @@ public interface UomConversionDated extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Custom Method</em>' reference.
 	 * @see #setCustomMethod(CustomMethod)
 	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUomConversionDated_CustomMethod()
-	 * @model keys="customMethodId"
+	 * @model
 	 * @generated
 	 */
 	CustomMethod getCustomMethod();
@@ -142,7 +142,7 @@ public interface UomConversionDated extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Purpose Enum</em>' reference.
 	 * @see #setPurposeEnum(Enumeration)
 	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUomConversionDated_PurposeEnum()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getPurposeEnum();
@@ -247,7 +247,7 @@ public interface UomConversionDated extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Uom Id To</em>' reference.
 	 * @see #setUomIdTo(Uom)
 	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUomConversionDated_UomIdTo()
-	 * @model keys="uomId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

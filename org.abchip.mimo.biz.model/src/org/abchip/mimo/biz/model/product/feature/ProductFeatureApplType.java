@@ -85,7 +85,7 @@ public interface ProductFeatureApplType extends EntityType<ProductFeatureAppl>, 
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(ProductFeatureApplType)
 	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureApplType_ParentType()
-	 * @model keys="productFeatureApplTypeId"
+	 * @model
 	 * @generated
 	 */
 	ProductFeatureApplType getParentType();

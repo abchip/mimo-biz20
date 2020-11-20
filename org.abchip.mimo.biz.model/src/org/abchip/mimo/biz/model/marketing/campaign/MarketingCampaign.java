@@ -217,7 +217,7 @@ public interface MarketingCampaign extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage#getMarketingCampaign_CurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getCurrencyUom();
@@ -408,7 +408,7 @@ public interface MarketingCampaign extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Marketing Campaign Prices</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage#getMarketingCampaign_MarketingCampaignPrices()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<MarketingCampaignPrice> getMarketingCampaignPrices();
@@ -421,7 +421,7 @@ public interface MarketingCampaign extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Marketing Campaign Promos</em>' reference list.
 	 * @see org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage#getMarketingCampaign_MarketingCampaignPromos()
 	 * @model derived="true"
-	 *        annotation="mimo-ent-slot-constraint fromDate='*NOW'"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
 	 * @generated
 	 */
 	List<MarketingCampaignPromo> getMarketingCampaignPromos();
@@ -486,7 +486,7 @@ public interface MarketingCampaign extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Campaign</em>' reference.
 	 * @see #setParentCampaign(MarketingCampaign)
 	 * @see org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage#getMarketingCampaign_ParentCampaign()
-	 * @model keys="marketingCampaignId"
+	 * @model
 	 * @generated
 	 */
 	MarketingCampaign getParentCampaign();
@@ -534,7 +534,7 @@ public interface MarketingCampaign extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage#getMarketingCampaign_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

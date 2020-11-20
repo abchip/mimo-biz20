@@ -37,7 +37,7 @@ public interface FinAccountAttribute extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Fin Account</em>' reference.
 	 * @see #setFinAccount(FinAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountAttribute_FinAccount()
-	 * @model keys="finAccountId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

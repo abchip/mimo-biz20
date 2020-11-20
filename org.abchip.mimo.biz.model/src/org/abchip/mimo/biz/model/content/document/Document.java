@@ -186,7 +186,7 @@ public interface Document extends EntityTyped<DocumentType>, EntityInfo {
 	 * @return the value of the '<em>Document Type</em>' reference.
 	 * @see #setDocumentType(DocumentType)
 	 * @see org.abchip.mimo.biz.model.content.document.DocumentPackage#getDocument_DocumentType()
-	 * @model keys="documentTypeId"
+	 * @model
 	 * @generated
 	 */
 	DocumentType getDocumentType();

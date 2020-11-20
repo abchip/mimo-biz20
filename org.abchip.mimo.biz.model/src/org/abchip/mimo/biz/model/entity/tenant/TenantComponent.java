@@ -36,7 +36,7 @@ public interface TenantComponent extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Tenant</em>' reference.
 	 * @see #setTenant(Tenant)
 	 * @see org.abchip.mimo.biz.model.entity.tenant.TenantPackage#getTenantComponent_Tenant()
-	 * @model keys="tenantId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface TenantComponent extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Component Name</em>' reference.
 	 * @see #setComponentName(Component)
 	 * @see org.abchip.mimo.biz.model.entity.tenant.TenantPackage#getTenantComponent_ComponentName()
-	 * @model keys="componentName" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

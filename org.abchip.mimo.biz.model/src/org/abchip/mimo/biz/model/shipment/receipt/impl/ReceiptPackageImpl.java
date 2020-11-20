@@ -1024,31 +1024,23 @@ public class ReceiptPackageImpl extends EPackageImpl implements ReceiptPackage {
 		initEAttribute(getShipmentReceipt_ReceiptId(), ecorePackage.getEString(), "receiptId", null, 1, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShipmentReceipt_DatetimeReceived(), ecorePackage.getEDate(), "datetimeReceived", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getShipmentReceipt_InventoryItem(), theInventoryPackage.getInventoryItem(), null, "inventoryItem", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShipmentReceipt_InventoryItem().getEKeys().add(theInventoryPackage.getInventoryItem_InventoryItemId());
 		initEAttribute(getShipmentReceipt_ItemDescription(), ecorePackage.getEString(), "itemDescription", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getShipmentReceipt_Order(), theOrderPackage.getOrderHeader(), null, "order", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShipmentReceipt_Order().getEKeys().add(theOrderPackage.getOrderHeader_OrderId());
 		initEAttribute(getShipmentReceipt_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getShipmentReceipt_Product(), theProductPackage.getProduct(), null, "product", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShipmentReceipt_Product().getEKeys().add(theProductPackage.getProduct_ProductId());
 		initEAttribute(getShipmentReceipt_QuantityAccepted(), ecorePackage.getEBigDecimal(), "quantityAccepted", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShipmentReceipt_QuantityRejected(), ecorePackage.getEBigDecimal(), "quantityRejected", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getShipmentReceipt_ReceivedByUserLogin(), theLoginPackage.getUserLogin(), null, "receivedByUserLogin", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShipmentReceipt_ReceivedByUserLogin().getEKeys().add(theLoginPackage.getUserLogin_UserLoginId());
 		initEReference(getShipmentReceipt_Rejection(), this.getRejectionReason(), null, "rejection", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShipmentReceipt_Rejection().getEKeys().add(this.getRejectionReason_RejectionId());
 		initEAttribute(getShipmentReceipt_ReturnId(), ecorePackage.getEString(), "returnId", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShipmentReceipt_ReturnItemSeqId(), ecorePackage.getEString(), "returnItemSeqId", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getShipmentReceipt_Shipment(), theShipment_Package.getShipment(), null, "shipment", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShipmentReceipt_Shipment().getEKeys().add(theShipment_Package.getShipment_ShipmentId());
 		initEAttribute(getShipmentReceipt_ShipmentItemSeqId(), ecorePackage.getEString(), "shipmentItemSeqId", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShipmentReceipt_ShipmentPackageSeqId(), ecorePackage.getEString(), "shipmentPackageSeqId", null, 0, 1, ShipmentReceipt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(shipmentReceiptRoleEClass, ShipmentReceiptRole.class, "ShipmentReceiptRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getShipmentReceiptRole_Receipt(), this.getShipmentReceipt(), null, "receipt", null, 1, 1, ShipmentReceiptRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShipmentReceiptRole_Receipt().getEKeys().add(this.getShipmentReceipt_ReceiptId());
 		initEReference(getShipmentReceiptRole_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, ShipmentReceiptRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getShipmentReceiptRole_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEAttribute(getShipmentReceiptRole_RoleTypeId(), ecorePackage.getEString(), "roleTypeId", null, 1, 1, ShipmentReceiptRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource

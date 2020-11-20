@@ -1233,7 +1233,6 @@ public class CampaignPackageImpl extends EPackageImpl implements CampaignPackage
 		initEAttribute(getMarketingCampaign_ConvertedLeads(), ecorePackage.getEString(), "convertedLeads", null, 0, 1, MarketingCampaign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMarketingCampaign_CreatedByUserLogin(), ecorePackage.getEString(), "createdByUserLogin", null, 0, 1, MarketingCampaign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMarketingCampaign_CurrencyUom(), theUomPackage.getUom(), null, "currencyUom", null, 0, 1, MarketingCampaign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getMarketingCampaign_CurrencyUom().getEKeys().add(theUomPackage.getUom_UomId());
 		initEAttribute(getMarketingCampaign_EstimatedCost(), ecorePackage.getEBigDecimal(), "estimatedCost", null, 0, 1, MarketingCampaign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMarketingCampaign_ExpectedResponsePercent(), ecorePackage.getEDouble(), "expectedResponsePercent", null, 0, 1, MarketingCampaign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMarketingCampaign_ExpectedRevenue(), ecorePackage.getEBigDecimal(), "expectedRevenue", null, 0, 1, MarketingCampaign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1245,39 +1244,29 @@ public class CampaignPackageImpl extends EPackageImpl implements CampaignPackage
 		initEReference(getMarketingCampaign_MarketingCampaignPromos(), this.getMarketingCampaignPromo(), null, "marketingCampaignPromos", null, 0, -1, MarketingCampaign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMarketingCampaign_NumSent(), ecorePackage.getELong(), "numSent", null, 0, 1, MarketingCampaign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMarketingCampaign_ParentCampaign(), this.getMarketingCampaign(), null, "parentCampaign", null, 0, 1, MarketingCampaign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getMarketingCampaign_ParentCampaign().getEKeys().add(this.getMarketingCampaign_MarketingCampaignId());
 		initEAttribute(getMarketingCampaign_StartDate(), ecorePackage.getEDate(), "startDate", null, 0, 1, MarketingCampaign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMarketingCampaign_Status(), theStatusPackage.getStatusItem(), null, "status", null, 0, 1, MarketingCampaign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getMarketingCampaign_Status().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 		initEAttribute(getMarketingCampaign_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, MarketingCampaign.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(marketingCampaignNoteEClass, MarketingCampaignNote.class, "MarketingCampaignNote", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getMarketingCampaignNote_MarketingCampaign(), this.getMarketingCampaign(), null, "marketingCampaign", null, 1, 1, MarketingCampaignNote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getMarketingCampaignNote_MarketingCampaign().getEKeys().add(this.getMarketingCampaign_MarketingCampaignId());
 
 		initEClass(marketingCampaignPriceEClass, MarketingCampaignPrice.class, "MarketingCampaignPrice", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getMarketingCampaignPrice_MarketingCampaign(), this.getMarketingCampaign(), null, "marketingCampaign", null, 1, 1, MarketingCampaignPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getMarketingCampaignPrice_MarketingCampaign().getEKeys().add(this.getMarketingCampaign_MarketingCampaignId());
 		initEReference(getMarketingCampaignPrice_ProductPriceRule(), thePricePackage.getProductPriceRule(), null, "productPriceRule", null, 1, 1, MarketingCampaignPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getMarketingCampaignPrice_ProductPriceRule().getEKeys().add(thePricePackage.getProductPriceRule_ProductPriceRuleId());
 		initEAttribute(getMarketingCampaignPrice_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, MarketingCampaignPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMarketingCampaignPrice_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, MarketingCampaignPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(marketingCampaignPromoEClass, MarketingCampaignPromo.class, "MarketingCampaignPromo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getMarketingCampaignPromo_MarketingCampaign(), this.getMarketingCampaign(), null, "marketingCampaign", null, 1, 1, MarketingCampaignPromo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getMarketingCampaignPromo_MarketingCampaign().getEKeys().add(this.getMarketingCampaign_MarketingCampaignId());
 		initEReference(getMarketingCampaignPromo_ProductPromo(), thePromoPackage.getProductPromo(), null, "productPromo", null, 1, 1, MarketingCampaignPromo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getMarketingCampaignPromo_ProductPromo().getEKeys().add(thePromoPackage.getProductPromo_ProductPromoId());
 		initEAttribute(getMarketingCampaignPromo_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, MarketingCampaignPromo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMarketingCampaignPromo_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, MarketingCampaignPromo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(marketingCampaignRoleEClass, MarketingCampaignRole.class, "MarketingCampaignRole", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getMarketingCampaignRole_MarketingCampaign(), this.getMarketingCampaign(), null, "marketingCampaign", null, 1, 1, MarketingCampaignRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getMarketingCampaignRole_MarketingCampaign().getEKeys().add(this.getMarketingCampaign_MarketingCampaignId());
 		initEReference(getMarketingCampaignRole_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, MarketingCampaignRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getMarketingCampaignRole_Party().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getMarketingCampaignRole_RoleType(), thePartyPackage_1.getRoleType(), null, "roleType", null, 1, 1, MarketingCampaignRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getMarketingCampaignRole_RoleType().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEAttribute(getMarketingCampaignRole_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, MarketingCampaignRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMarketingCampaignRole_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, MarketingCampaignRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1287,8 +1276,8 @@ public class CampaignPackageImpl extends EPackageImpl implements CampaignPackage
 		// Create annotations
 		// mimo-ent-format
 		createMimoentformatAnnotations();
-		// mimo-ent-slot-constraint
-		createMimoentslotconstraintAnnotations();
+		// mimo-ent-slot-constraints
+		createMimoentslotconstraintsAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
 	}
@@ -1373,13 +1362,13 @@ public class CampaignPackageImpl extends EPackageImpl implements CampaignPackage
 	}
 
 	/**
-	 * Initializes the annotations for <b>mimo-ent-slot-constraint</b>.
+	 * Initializes the annotations for <b>mimo-ent-slot-constraints</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createMimoentslotconstraintAnnotations() {
-		String source = "mimo-ent-slot-constraint";
+	protected void createMimoentslotconstraintsAnnotations() {
+		String source = "mimo-ent-slot-constraints";
 		addAnnotation
 		  (getMarketingCampaign_MarketingCampaignPrices(),
 		   source,

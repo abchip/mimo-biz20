@@ -40,7 +40,7 @@ public interface WorkEffortFixedAssetStd extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Work Effort</em>' reference.
 	 * @see #setWorkEffort(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortFixedAssetStd_WorkEffort()
-	 * @model keys="workEffortId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -63,7 +63,7 @@ public interface WorkEffortFixedAssetStd extends EntityIdentifiable, EntityInfo 
 	 * @return the value of the '<em>Fixed Asset Type</em>' reference.
 	 * @see #setFixedAssetType(FixedAssetType)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortFixedAssetStd_FixedAssetType()
-	 * @model keys="fixedAssetTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

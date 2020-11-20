@@ -41,7 +41,7 @@ public interface CommEventContentAssoc extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommEventContentAssoc_Content()
-	 * @model keys="contentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface CommEventContentAssoc extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Communication Event</em>' reference.
 	 * @see #setCommunicationEvent(CommunicationEvent)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommEventContentAssoc_CommunicationEvent()
-	 * @model keys="communicationEventId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -114,7 +114,7 @@ public interface CommEventContentAssoc extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Comm Content Assoc Type</em>' reference.
 	 * @see #setCommContentAssocType(CommContentAssocType)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommEventContentAssoc_CommContentAssocType()
-	 * @model keys="commContentAssocTypeId"
+	 * @model
 	 * @generated
 	 */
 	CommContentAssocType getCommContentAssocType();

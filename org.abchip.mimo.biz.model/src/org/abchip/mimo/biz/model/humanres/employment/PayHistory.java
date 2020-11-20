@@ -124,7 +124,7 @@ public interface PayHistory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Pay Grade</em>' reference.
 	 * @see #setPayGrade(PayGrade)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayHistory_PayGrade()
-	 * @model keys="payGradeId"
+	 * @model
 	 * @generated
 	 */
 	PayGrade getPayGrade();
@@ -146,7 +146,7 @@ public interface PayHistory extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Period Type</em>' reference.
 	 * @see #setPeriodType(PeriodType)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayHistory_PeriodType()
-	 * @model keys="periodTypeId"
+	 * @model
 	 * @generated
 	 */
 	PeriodType getPeriodType();

@@ -62,7 +62,7 @@ public interface WorkEffortContentType extends EntityType<WorkEffortContent>, En
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(WorkEffortContentType)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortContentType_ParentType()
-	 * @model keys="workEffortContentTypeId"
+	 * @model
 	 * @generated
 	 */
 	WorkEffortContentType getParentType();

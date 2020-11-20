@@ -206,7 +206,7 @@ public interface EmailTemplateSetting extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Email Type</em>' reference.
 	 * @see #setEmailType(Enumeration)
 	 * @see org.abchip.mimo.biz.model.common.email.EmailPackage#getEmailTemplateSetting_EmailType()
-	 * @model keys="enumId"
+	 * @model
 	 * @generated
 	 */
 	Enumeration getEmailType();

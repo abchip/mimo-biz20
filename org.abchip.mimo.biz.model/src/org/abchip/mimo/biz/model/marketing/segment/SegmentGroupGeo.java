@@ -36,7 +36,7 @@ public interface SegmentGroupGeo extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Segment Group</em>' reference.
 	 * @see #setSegmentGroup(SegmentGroup)
 	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupGeo_SegmentGroup()
-	 * @model keys="segmentGroupId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface SegmentGroupGeo extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Geo</em>' reference.
 	 * @see #setGeo(Geo)
 	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupGeo_Geo()
-	 * @model keys="geoId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

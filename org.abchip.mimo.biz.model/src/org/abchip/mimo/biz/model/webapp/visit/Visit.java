@@ -607,7 +607,7 @@ public interface Visit extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>User Agent</em>' reference.
 	 * @see #setUserAgent(UserAgent)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getVisit_UserAgent()
-	 * @model keys="userAgentId"
+	 * @model
 	 * @generated
 	 */
 	UserAgent getUserAgent();
@@ -677,7 +677,7 @@ public interface Visit extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Visitor</em>' reference.
 	 * @see #setVisitor(Visitor)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getVisit_Visitor()
-	 * @model keys="visitorId"
+	 * @model
 	 * @generated
 	 */
 	Visitor getVisitor();

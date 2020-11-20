@@ -36,7 +36,7 @@ public interface InvoiceTypeAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Invoice Type</em>' reference.
 	 * @see #setInvoiceType(InvoiceType)
 	 * @see org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage#getInvoiceTypeAttr_InvoiceType()
-	 * @model keys="invoiceTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

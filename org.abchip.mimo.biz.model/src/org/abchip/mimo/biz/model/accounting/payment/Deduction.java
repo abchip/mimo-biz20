@@ -64,7 +64,7 @@ public interface Deduction extends EntityTyped<DeductionType>, EntityInfo {
 	 * @return the value of the '<em>Deduction Type</em>' reference.
 	 * @see #setDeductionType(DeductionType)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getDeduction_DeductionType()
-	 * @model keys="deductionTypeId"
+	 * @model
 	 * @generated
 	 */
 	DeductionType getDeductionType();
@@ -86,7 +86,7 @@ public interface Deduction extends EntityTyped<DeductionType>, EntityInfo {
 	 * @return the value of the '<em>Payment</em>' reference.
 	 * @see #setPayment(Payment)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getDeduction_Payment()
-	 * @model keys="paymentId"
+	 * @model
 	 * @generated
 	 */
 	Payment getPayment();

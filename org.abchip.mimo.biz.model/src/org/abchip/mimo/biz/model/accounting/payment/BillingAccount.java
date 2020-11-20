@@ -72,7 +72,7 @@ public interface BillingAccount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Contact Mech</em>' reference.
 	 * @see #setContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccount_ContactMech()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	ContactMech getContactMech();
@@ -225,7 +225,7 @@ public interface BillingAccount extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Account Currency Uom</em>' reference.
 	 * @see #setAccountCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccount_AccountCurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getAccountCurrencyUom();

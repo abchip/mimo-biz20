@@ -86,7 +86,7 @@ public interface JobSandbox extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Auth User Login</em>' reference.
 	 * @see #setAuthUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_AuthUserLogin()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getAuthUserLogin();
@@ -420,8 +420,7 @@ public interface JobSandbox extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Recurrence Info</em>' reference.
 	 * @see #setRecurrenceInfo(RecurrenceInfo)
 	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_RecurrenceInfo()
-	 * @model keys="recurrenceInfoId"
-	 *        annotation="mimo-ent-slot help='Deprecated - use tempExprId instead'"
+	 * @model annotation="mimo-ent-slot help='Deprecated - use tempExprId instead'"
 	 * @generated
 	 */
 	RecurrenceInfo getRecurrenceInfo();
@@ -447,7 +446,7 @@ public interface JobSandbox extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Run As User</em>' reference.
 	 * @see #setRunAsUser(UserLogin)
 	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_RunAsUser()
-	 * @model keys="userLoginId"
+	 * @model
 	 * @generated
 	 */
 	UserLogin getRunAsUser();
@@ -521,7 +520,7 @@ public interface JobSandbox extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Runtime Data</em>' reference.
 	 * @see #setRuntimeData(RuntimeData)
 	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_RuntimeData()
-	 * @model keys="runtimeDataId"
+	 * @model
 	 * @generated
 	 */
 	RuntimeData getRuntimeData();
@@ -595,7 +594,7 @@ public interface JobSandbox extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();
@@ -617,8 +616,7 @@ public interface JobSandbox extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Temp Expr</em>' reference.
 	 * @see #setTempExpr(TemporalExpression)
 	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_TempExpr()
-	 * @model keys="tempExprId"
-	 *        annotation="mimo-ent-slot help='Temporal expression id'"
+	 * @model annotation="mimo-ent-slot help='Temporal expression id'"
 	 * @generated
 	 */
 	TemporalExpression getTempExpr();

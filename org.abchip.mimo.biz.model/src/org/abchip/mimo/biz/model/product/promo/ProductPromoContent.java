@@ -41,7 +41,7 @@ public interface ProductPromoContent extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Promo</em>' reference.
 	 * @see #setProductPromo(ProductPromo)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoContent_ProductPromo()
-	 * @model keys="productPromoId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface ProductPromoContent extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Content</em>' reference.
 	 * @see #setContent(Content)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoContent_Content()
-	 * @model keys="contentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -87,7 +87,7 @@ public interface ProductPromoContent extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Product Promo Content Type</em>' reference.
 	 * @see #setProductPromoContentType(ProductContentType)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoContent_ProductPromoContentType()
-	 * @model keys="productContentTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

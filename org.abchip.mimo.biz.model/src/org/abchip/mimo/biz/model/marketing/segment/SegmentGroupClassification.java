@@ -36,7 +36,7 @@ public interface SegmentGroupClassification extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Segment Group</em>' reference.
 	 * @see #setSegmentGroup(SegmentGroup)
 	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupClassification_SegmentGroup()
-	 * @model keys="segmentGroupId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -59,7 +59,7 @@ public interface SegmentGroupClassification extends EntityIdentifiable, EntityIn
 	 * @return the value of the '<em>Party Classification Group</em>' reference.
 	 * @see #setPartyClassificationGroup(PartyClassificationGroup)
 	 * @see org.abchip.mimo.biz.model.marketing.segment.SegmentPackage#getSegmentGroupClassification_PartyClassificationGroup()
-	 * @model keys="partyClassificationGroupId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

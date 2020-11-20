@@ -37,7 +37,7 @@ public interface BudgetAttribute extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Budget</em>' reference.
 	 * @see #setBudget(Budget)
 	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetAttribute_Budget()
-	 * @model keys="budgetId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

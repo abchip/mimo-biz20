@@ -153,7 +153,7 @@ public interface PartyInvitation extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Party Id From</em>' reference.
 	 * @see #setPartyIdFrom(Party)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyInvitation_PartyIdFrom()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getPartyIdFrom();
@@ -199,7 +199,7 @@ public interface PartyInvitation extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyInvitation_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

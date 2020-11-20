@@ -85,7 +85,7 @@ public interface WebAnalyticsType extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Type</em>' reference.
 	 * @see #setParentType(WebAnalyticsType)
 	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebAnalyticsType_ParentType()
-	 * @model keys="webAnalyticsTypeId"
+	 * @model
 	 * @generated
 	 */
 	WebAnalyticsType getParentType();

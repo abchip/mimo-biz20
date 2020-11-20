@@ -78,7 +78,7 @@ public interface ShipmentRouteSegment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Shipment</em>' reference.
 	 * @see #setShipment(Shipment)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentRouteSegment_Shipment()
-	 * @model keys="shipmentId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -283,7 +283,7 @@ public interface ShipmentRouteSegment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Billing Weight Uom</em>' reference.
 	 * @see #setBillingWeightUom(Uom)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentRouteSegment_BillingWeightUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getBillingWeightUom();
@@ -331,7 +331,7 @@ public interface ShipmentRouteSegment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Carrier Party</em>' reference.
 	 * @see #setCarrierParty(Party)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentRouteSegment_CarrierParty()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getCarrierParty();
@@ -405,7 +405,7 @@ public interface ShipmentRouteSegment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Carrier Service Status</em>' reference.
 	 * @see #setCarrierServiceStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentRouteSegment_CarrierServiceStatus()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getCarrierServiceStatus();
@@ -427,7 +427,7 @@ public interface ShipmentRouteSegment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentRouteSegment_CurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getCurrencyUom();
@@ -449,7 +449,7 @@ public interface ShipmentRouteSegment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Delivery</em>' reference.
 	 * @see #setDelivery(Delivery)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentRouteSegment_Delivery()
-	 * @model keys="deliveryId"
+	 * @model
 	 * @generated
 	 */
 	Delivery getDelivery();
@@ -471,7 +471,7 @@ public interface ShipmentRouteSegment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Dest Contact Mech</em>' reference.
 	 * @see #setDestContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentRouteSegment_DestContactMech()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	ContactMech getDestContactMech();
@@ -493,7 +493,7 @@ public interface ShipmentRouteSegment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Dest Facility</em>' reference.
 	 * @see #setDestFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentRouteSegment_DestFacility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getDestFacility();
@@ -515,7 +515,7 @@ public interface ShipmentRouteSegment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Dest Telecom Number</em>' reference.
 	 * @see #setDestTelecomNumber(TelecomNumber)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentRouteSegment_DestTelecomNumber()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	TelecomNumber getDestTelecomNumber();
@@ -667,7 +667,7 @@ public interface ShipmentRouteSegment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Origin Contact Mech</em>' reference.
 	 * @see #setOriginContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentRouteSegment_OriginContactMech()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	ContactMech getOriginContactMech();
@@ -689,7 +689,7 @@ public interface ShipmentRouteSegment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Origin Facility</em>' reference.
 	 * @see #setOriginFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentRouteSegment_OriginFacility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getOriginFacility();
@@ -711,7 +711,7 @@ public interface ShipmentRouteSegment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Origin Telecom Number</em>' reference.
 	 * @see #setOriginTelecomNumber(TelecomNumber)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentRouteSegment_OriginTelecomNumber()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	TelecomNumber getOriginTelecomNumber();
@@ -733,7 +733,7 @@ public interface ShipmentRouteSegment extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Shipment Method Type</em>' reference.
 	 * @see #setShipmentMethodType(ShipmentMethodType)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentRouteSegment_ShipmentMethodType()
-	 * @model keys="shipmentMethodTypeId"
+	 * @model
 	 * @generated
 	 */
 	ShipmentMethodType getShipmentMethodType();

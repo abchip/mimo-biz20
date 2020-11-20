@@ -36,7 +36,7 @@ public interface BillingAccountTermAttr extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Billing Account Term</em>' reference.
 	 * @see #setBillingAccountTerm(BillingAccountTerm)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getBillingAccountTermAttr_BillingAccountTerm()
-	 * @model keys="billingAccountTermId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

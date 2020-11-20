@@ -90,7 +90,7 @@ public interface Payment extends EntityTyped<PaymentType>, EntityInfo {
 	 * @return the value of the '<em>Actual Currency Uom</em>' reference.
 	 * @see #setActualCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPayment_ActualCurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getActualCurrencyUom();
@@ -164,7 +164,7 @@ public interface Payment extends EntityTyped<PaymentType>, EntityInfo {
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPayment_CurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getCurrencyUom();
@@ -212,7 +212,7 @@ public interface Payment extends EntityTyped<PaymentType>, EntityInfo {
 	 * @return the value of the '<em>Fin Account Trans</em>' reference.
 	 * @see #setFinAccountTrans(FinAccountTrans)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPayment_FinAccountTrans()
-	 * @model keys="finAccountTransId"
+	 * @model
 	 * @generated
 	 */
 	FinAccountTrans getFinAccountTrans();
@@ -234,7 +234,7 @@ public interface Payment extends EntityTyped<PaymentType>, EntityInfo {
 	 * @return the value of the '<em>Override Gl Account</em>' reference.
 	 * @see #setOverrideGlAccount(GlAccount)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPayment_OverrideGlAccount()
-	 * @model keys="glAccountId"
+	 * @model
 	 * @generated
 	 */
 	GlAccount getOverrideGlAccount();
@@ -260,7 +260,7 @@ public interface Payment extends EntityTyped<PaymentType>, EntityInfo {
 	 * @return the value of the '<em>Party Id From</em>' reference.
 	 * @see #setPartyIdFrom(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPayment_PartyIdFrom()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getPartyIdFrom();
@@ -286,7 +286,7 @@ public interface Payment extends EntityTyped<PaymentType>, EntityInfo {
 	 * @return the value of the '<em>Party Id To</em>' reference.
 	 * @see #setPartyIdTo(Party)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPayment_PartyIdTo()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getPartyIdTo();
@@ -320,7 +320,7 @@ public interface Payment extends EntityTyped<PaymentType>, EntityInfo {
 	 * @return the value of the '<em>Payment Gateway Response</em>' reference.
 	 * @see #setPaymentGatewayResponse(PaymentGatewayResponse)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPayment_PaymentGatewayResponse()
-	 * @model keys="paymentGatewayResponseId"
+	 * @model
 	 * @generated
 	 */
 	PaymentGatewayResponse getPaymentGatewayResponse();
@@ -342,7 +342,7 @@ public interface Payment extends EntityTyped<PaymentType>, EntityInfo {
 	 * @return the value of the '<em>Payment Method</em>' reference.
 	 * @see #setPaymentMethod(PaymentMethod)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPayment_PaymentMethod()
-	 * @model keys="paymentMethodId"
+	 * @model
 	 * @generated
 	 */
 	PaymentMethod getPaymentMethod();
@@ -364,7 +364,7 @@ public interface Payment extends EntityTyped<PaymentType>, EntityInfo {
 	 * @return the value of the '<em>Payment Method Type</em>' reference.
 	 * @see #setPaymentMethodType(PaymentMethodType)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPayment_PaymentMethodType()
-	 * @model keys="paymentMethodTypeId"
+	 * @model
 	 * @generated
 	 */
 	PaymentMethodType getPaymentMethodType();
@@ -386,7 +386,7 @@ public interface Payment extends EntityTyped<PaymentType>, EntityInfo {
 	 * @return the value of the '<em>Payment Preference</em>' reference.
 	 * @see #setPaymentPreference(OrderPaymentPreference)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPayment_PaymentPreference()
-	 * @model keys="orderPaymentPreferenceId"
+	 * @model
 	 * @generated
 	 */
 	OrderPaymentPreference getPaymentPreference();
@@ -434,7 +434,7 @@ public interface Payment extends EntityTyped<PaymentType>, EntityInfo {
 	 * @return the value of the '<em>Payment Type</em>' reference.
 	 * @see #setPaymentType(PaymentType)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPayment_PaymentType()
-	 * @model keys="paymentTypeId"
+	 * @model
 	 * @generated
 	 */
 	PaymentType getPaymentType();
@@ -460,7 +460,7 @@ public interface Payment extends EntityTyped<PaymentType>, EntityInfo {
 	 * @return the value of the '<em>Role Type Id To</em>' reference.
 	 * @see #setRoleTypeIdTo(RoleType)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPayment_RoleTypeIdTo()
-	 * @model keys="roleTypeId"
+	 * @model
 	 * @generated
 	 */
 	RoleType getRoleTypeIdTo();
@@ -482,7 +482,7 @@ public interface Payment extends EntityTyped<PaymentType>, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPayment_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

@@ -37,7 +37,7 @@ public interface InventoryItemLabelAppl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Inventory Item</em>' reference.
 	 * @see #setInventoryItem(InventoryItem)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemLabelAppl_InventoryItem()
-	 * @model keys="inventoryItemId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -60,7 +60,7 @@ public interface InventoryItemLabelAppl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Inventory Item Label Type</em>' reference.
 	 * @see #setInventoryItemLabelType(InventoryItemLabelType)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemLabelAppl_InventoryItemLabelType()
-	 * @model keys="inventoryItemLabelTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -83,7 +83,7 @@ public interface InventoryItemLabelAppl extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Inventory Item Label</em>' reference.
 	 * @see #setInventoryItemLabel(InventoryItemLabel)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemLabelAppl_InventoryItemLabel()
-	 * @model keys="inventoryItemLabelId"
+	 * @model
 	 * @generated
 	 */
 	InventoryItemLabel getInventoryItemLabel();

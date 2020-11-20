@@ -41,7 +41,7 @@ public interface ProdCatalogCategory extends EntityTyped<ProdCatalogCategoryType
 	 * @return the value of the '<em>Prod Catalog</em>' reference.
 	 * @see #setProdCatalog(ProdCatalog)
 	 * @see org.abchip.mimo.biz.model.product.catalog.CatalogPackage#getProdCatalogCategory_ProdCatalog()
-	 * @model keys="prodCatalogId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -64,7 +64,7 @@ public interface ProdCatalogCategory extends EntityTyped<ProdCatalogCategoryType
 	 * @return the value of the '<em>Product Category</em>' reference.
 	 * @see #setProductCategory(ProductCategory)
 	 * @see org.abchip.mimo.biz.model.product.catalog.CatalogPackage#getProdCatalogCategory_ProductCategory()
-	 * @model keys="productCategoryId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */
@@ -87,7 +87,7 @@ public interface ProdCatalogCategory extends EntityTyped<ProdCatalogCategoryType
 	 * @return the value of the '<em>Prod Catalog Category Type</em>' reference.
 	 * @see #setProdCatalogCategoryType(ProdCatalogCategoryType)
 	 * @see org.abchip.mimo.biz.model.product.catalog.CatalogPackage#getProdCatalogCategory_ProdCatalogCategoryType()
-	 * @model keys="prodCatalogCategoryTypeId" required="true"
+	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
 	 */

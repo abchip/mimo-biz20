@@ -148,7 +148,7 @@ public interface Geo extends EntityTyped<GeoType>, EntityInfo {
 	 * @return the value of the '<em>Geo Type</em>' reference.
 	 * @see #setGeoType(GeoType)
 	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeo_GeoType()
-	 * @model keys="geoTypeId"
+	 * @model
 	 * @generated
 	 */
 	GeoType getGeoType();

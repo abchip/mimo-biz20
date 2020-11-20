@@ -187,7 +187,7 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * @return the value of the '<em>Currency Uom</em>' reference.
 	 * @see #setCurrencyUom(Uom)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_CurrencyUom()
-	 * @model keys="uomId"
+	 * @model
 	 * @generated
 	 */
 	Uom getCurrencyUom();
@@ -209,7 +209,7 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * @return the value of the '<em>Destination Contact Mech</em>' reference.
 	 * @see #setDestinationContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_DestinationContactMech()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	ContactMech getDestinationContactMech();
@@ -231,7 +231,7 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * @return the value of the '<em>Destination Facility</em>' reference.
 	 * @see #setDestinationFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_DestinationFacility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getDestinationFacility();
@@ -253,7 +253,7 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * @return the value of the '<em>Destination Telecom Number</em>' reference.
 	 * @see #setDestinationTelecomNumber(TelecomNumber)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_DestinationTelecomNumber()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	TelecomNumber getDestinationTelecomNumber();
@@ -301,7 +301,7 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * @return the value of the '<em>Estimated Arrival Work Eff</em>' reference.
 	 * @see #setEstimatedArrivalWorkEff(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_EstimatedArrivalWorkEff()
-	 * @model keys="workEffortId"
+	 * @model
 	 * @generated
 	 */
 	WorkEffort getEstimatedArrivalWorkEff();
@@ -401,7 +401,7 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * @return the value of the '<em>Estimated Ship Work Eff</em>' reference.
 	 * @see #setEstimatedShipWorkEff(WorkEffort)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_EstimatedShipWorkEff()
-	 * @model keys="workEffortId"
+	 * @model
 	 * @generated
 	 */
 	WorkEffort getEstimatedShipWorkEff();
@@ -527,7 +527,7 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * @return the value of the '<em>Origin Contact Mech</em>' reference.
 	 * @see #setOriginContactMech(ContactMech)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_OriginContactMech()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	ContactMech getOriginContactMech();
@@ -549,7 +549,7 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * @return the value of the '<em>Origin Facility</em>' reference.
 	 * @see #setOriginFacility(Facility)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_OriginFacility()
-	 * @model keys="facilityId"
+	 * @model
 	 * @generated
 	 */
 	Facility getOriginFacility();
@@ -571,7 +571,7 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * @return the value of the '<em>Origin Telecom Number</em>' reference.
 	 * @see #setOriginTelecomNumber(TelecomNumber)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_OriginTelecomNumber()
-	 * @model keys="contactMechId"
+	 * @model
 	 * @generated
 	 */
 	TelecomNumber getOriginTelecomNumber();
@@ -597,7 +597,7 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * @return the value of the '<em>Party Id From</em>' reference.
 	 * @see #setPartyIdFrom(Party)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_PartyIdFrom()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getPartyIdFrom();
@@ -623,7 +623,7 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * @return the value of the '<em>Party Id To</em>' reference.
 	 * @see #setPartyIdTo(Party)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_PartyIdTo()
-	 * @model keys="partyId"
+	 * @model
 	 * @generated
 	 */
 	Party getPartyIdTo();
@@ -645,7 +645,7 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * @return the value of the '<em>Picklist Bin</em>' reference.
 	 * @see #setPicklistBin(PicklistBin)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_PicklistBin()
-	 * @model keys="picklistBinId"
+	 * @model
 	 * @generated
 	 */
 	PicklistBin getPicklistBin();
@@ -667,7 +667,7 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * @return the value of the '<em>Primary Order</em>' reference.
 	 * @see #setPrimaryOrder(OrderHeader)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_PrimaryOrder()
-	 * @model keys="orderId"
+	 * @model
 	 * @generated
 	 */
 	OrderHeader getPrimaryOrder();
@@ -689,7 +689,7 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * @return the value of the '<em>Primary Return</em>' reference.
 	 * @see #setPrimaryReturn(ReturnHeader)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_PrimaryReturn()
-	 * @model keys="returnId"
+	 * @model
 	 * @generated
 	 */
 	ReturnHeader getPrimaryReturn();
@@ -809,7 +809,7 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * @return the value of the '<em>Shipment Type</em>' reference.
 	 * @see #setShipmentType(ShipmentType)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_ShipmentType()
-	 * @model keys="shipmentTypeId"
+	 * @model
 	 * @generated
 	 */
 	ShipmentType getShipmentType();
@@ -831,7 +831,7 @@ public interface Shipment extends EntityTyped<ShipmentType>, EntityInfo {
 	 * @return the value of the '<em>Status</em>' reference.
 	 * @see #setStatus(StatusItem)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipment_Status()
-	 * @model keys="statusId"
+	 * @model
 	 * @generated
 	 */
 	StatusItem getStatus();

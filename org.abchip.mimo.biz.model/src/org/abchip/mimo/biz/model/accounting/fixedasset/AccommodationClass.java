@@ -62,7 +62,7 @@ public interface AccommodationClass extends EntityIdentifiable, EntityInfo {
 	 * @return the value of the '<em>Parent Class</em>' reference.
 	 * @see #setParentClass(AccommodationClass)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getAccommodationClass_ParentClass()
-	 * @model keys="accommodationClassId"
+	 * @model
 	 * @generated
 	 */
 	AccommodationClass getParentClass();
