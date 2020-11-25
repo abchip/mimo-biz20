@@ -35,7 +35,7 @@ import org.abchip.mimo.biz.test.command.runner.ExpireAgreement;
 import org.abchip.mimo.biz.test.command.runner.HoldOrder;
 import org.abchip.mimo.biz.test.command.runner.RenewalAgreement;
 import org.abchip.mimo.context.Context;
-import org.abchip.mimo.context.ContextProvider;
+import org.abchip.mimo.context.ContextHandler;
 import org.abchip.mimo.tester.base.BaseTestCommands;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 
@@ -47,82 +47,83 @@ public class StressTestCommands extends BaseTestCommands {
 	}
 
 	public void _createTestBaseData(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login(interpreter)) {
+		try (ContextHandler contextHandler = login(interpreter)) {
 			long loops = nextArgument(interpreter, 1).longValue();
-			createTestBaseData(interpreter, context.get(), loops);
+			createTestBaseData(interpreter, contextHandler.getContext(), loops);
 		}
 	}
 
 	public void _stressTest(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login(interpreter)) {
-			stressTestSalesOrder(interpreter, context.get());
-			stressTestSalesInvoice(interpreter, context.get());
-			stressTestPurchaseOrder(interpreter, context.get());
-			stressTestPurchaseInvoice(interpreter, context.get());
-			stressTestCustomerReturnInvoice(interpreter, context.get());
-			stressTestAgreement(interpreter, context.get());
+		try (ContextHandler contextHandler = login(interpreter)) {
+
+			stressTestSalesOrder(interpreter, contextHandler.getContext());
+			stressTestSalesInvoice(interpreter, contextHandler.getContext());
+			stressTestPurchaseOrder(interpreter, contextHandler.getContext());
+			stressTestPurchaseInvoice(interpreter, contextHandler.getContext());
+			stressTestCustomerReturnInvoice(interpreter, contextHandler.getContext());
+			stressTestAgreement(interpreter, contextHandler.getContext());
 		}
 	}
 
 	public void _stressTestSalesOrder(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login(interpreter)) {
-			stressTestSalesOrder(interpreter, context.get());
+		try (ContextHandler contextHandler = login(interpreter)) {
+			stressTestSalesOrder(interpreter, contextHandler.getContext());
 		}
 	}
 
 	public void _stressTestSalesInvoice(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login(interpreter)) {
-			stressTestSalesInvoice(interpreter, context.get());
+		try (ContextHandler contextHandler = login(interpreter)) {
+			stressTestSalesInvoice(interpreter, contextHandler.getContext());
 		}
 	}
 
 	public void _stressTestPurchaseOrder(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login(interpreter)) {
-			stressTestPurchaseOrder(interpreter, context.get());
+		try (ContextHandler contextHandler = login(interpreter)) {
+			stressTestPurchaseOrder(interpreter, contextHandler.getContext());
 		}
 	}
 
 	public void _stressTestPurchaseInvoice(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login(interpreter)) {
-			stressTestPurchaseInvoice(interpreter, context.get());
+		try (ContextHandler contextHandler = login(interpreter)) {
+			stressTestPurchaseInvoice(interpreter, contextHandler.getContext());
 		}
 	}
 
 	public void _stressTestCustomerReturnInvoice(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login(interpreter)) {
-			stressTestCustomerReturnInvoice(interpreter, context.get());
+		try (ContextHandler contextHandler = login(interpreter)) {
+			stressTestCustomerReturnInvoice(interpreter, contextHandler.getContext());
 		}
 	}
-	
+
 	public void _stressTestAgreement(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login(interpreter)) {
-			stressTestAgreement(interpreter, context.get());
+		try (ContextHandler contextHandler = login(interpreter)) {
+			stressTestAgreement(interpreter, contextHandler.getContext());
 		}
 	}
 
 	public void _stressTestRenewalAgreement(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login(interpreter)) {
-			stressTestRenewalAgreement(interpreter, context.get());
+		try (ContextHandler contextHandler = login(interpreter)) {
+			stressTestRenewalAgreement(interpreter, contextHandler.getContext());
 		}
 	}
 
 	public void _stressTestExpireAgreement(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login(interpreter)) {
+		try (ContextHandler contextHandler = login(interpreter)) {
 			long time1 = System.currentTimeMillis();
 			ExecutorService executor = Executors.newFixedThreadPool(1);
-			executor.submit(new ExpireAgreement(context.get(), nextArgument(interpreter)));
+			executor.submit(new ExpireAgreement(contextHandler.getContext(), nextArgument(interpreter)));
 			executor.shutdown();
 			executor.awaitTermination(1, TimeUnit.MINUTES);
 			long time2 = System.currentTimeMillis();
 			interpreter.println("Total time execution StressTestExpireAgreement: " + (time2 - time1));
 		}
 	}
-	
+
 	public void _stressTestApproveOrder(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login(interpreter)) {
+		try (ContextHandler contextHandler = login(interpreter)) {
 			long time1 = System.currentTimeMillis();
 			ExecutorService executor = Executors.newFixedThreadPool(1);
-			executor.submit(new ApproveOrder(context.get(), nextArgument(interpreter)));
+			executor.submit(new ApproveOrder(contextHandler.getContext(), nextArgument(interpreter)));
 			executor.shutdown();
 			executor.awaitTermination(1, TimeUnit.MINUTES);
 			long time2 = System.currentTimeMillis();
@@ -131,10 +132,10 @@ public class StressTestCommands extends BaseTestCommands {
 	}
 
 	public void _stressTestCancelOrder(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login(interpreter)) {
+		try (ContextHandler contextHandler = login(interpreter)) {
 			long time1 = System.currentTimeMillis();
 			ExecutorService executor = Executors.newFixedThreadPool(1);
-			executor.submit(new CancelOrder(context.get(), nextArgument(interpreter)));
+			executor.submit(new CancelOrder(contextHandler.getContext(), nextArgument(interpreter)));
 			executor.shutdown();
 			executor.awaitTermination(1, TimeUnit.MINUTES);
 			long time2 = System.currentTimeMillis();
@@ -143,10 +144,10 @@ public class StressTestCommands extends BaseTestCommands {
 	}
 
 	public void _stressTestHoldOrder(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login(interpreter)) {
+		try (ContextHandler contextHandler = login(interpreter)) {
 			long time1 = System.currentTimeMillis();
 			ExecutorService executor = Executors.newFixedThreadPool(1);
-			executor.submit(new HoldOrder(context.get(), nextArgument(interpreter)));
+			executor.submit(new HoldOrder(contextHandler.getContext(), nextArgument(interpreter)));
 			executor.shutdown();
 			executor.awaitTermination(1, TimeUnit.MINUTES);
 			long time2 = System.currentTimeMillis();
@@ -155,20 +156,20 @@ public class StressTestCommands extends BaseTestCommands {
 	}
 
 	public void _getInvoiceTot(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login(interpreter)) {
+		try (ContextHandler contextHandler = login(interpreter)) {
 			String invoiceId = nextArgument(interpreter);
-			Invoice invoice = context.get().getResourceManager().getResourceReader(Invoice.class).lookup(invoiceId);
+			Invoice invoice = contextHandler.getContext().getResourceManager().getResourceReader(Invoice.class).lookup(invoiceId);
 			interpreter.println("From: " + invoice.getPartyIdFrom().getID());
 			interpreter.println("To: " + invoice.getParty().getID());
 			interpreter.println("Total: " + invoice.getTotal());
 		}
 	}
-	
+
 	public void _st_Inps(CommandInterpreter interpreter) throws Exception {
 
 		long loops = nextArgument(interpreter, 100).longValue();
 		int poolSize = nextArgument(interpreter, 2).intValue();
-		
+
 		interpreter.println("Execution Stress Test Inps loops: " + loops + " and " + " poolSize: " + poolSize);
 		stressTestInps(interpreter, loops, poolSize);
 	}
@@ -295,7 +296,7 @@ public class StressTestCommands extends BaseTestCommands {
 		long time2 = System.currentTimeMillis();
 		interpreter.println("Total time execution StressTestCustomerReturnInvoice: " + (time2 - time1));
 	}
-	
+
 	private void stressTestAgreement(CommandInterpreter interpreter, Context context) throws Exception {
 
 		List<Party> parties = StressTestUtils.getEnabledCustomers(context);
@@ -333,7 +334,7 @@ public class StressTestCommands extends BaseTestCommands {
 	@SuppressWarnings("resource")
 	private void stressTestInps(CommandInterpreter interpreter, long loops, int poolSize) throws Exception {
 
-		List<ContextProvider> contexts = new ArrayList<ContextProvider>();
+		List<ContextHandler> contexts = new ArrayList<ContextHandler>();
 
 		try {
 			// open contexts
@@ -348,7 +349,7 @@ public class StressTestCommands extends BaseTestCommands {
 			// jobs
 			int x = 0;
 			for (int i = 0; i < loops; i++) {
-				executor.submit(new CreateInpsAgreement(contexts.get(x).get()));
+				executor.submit(new CreateInpsAgreement(contexts.get(x).getContext()));
 				x++;
 				if (x == poolSize)
 					x = 0;

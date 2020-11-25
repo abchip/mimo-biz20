@@ -19,7 +19,7 @@ import org.abchip.mimo.authentication.AuthenticationUserPassword;
 import org.abchip.mimo.authentication.AuthenticationUserToken;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.context.Context;
-import org.abchip.mimo.context.ContextProvider;
+import org.abchip.mimo.context.ContextHandler;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceReader;
 
@@ -35,18 +35,18 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 	}
 
 	@Override
-	public ContextProvider login(String contextId, AuthenticationAnonymous authentication) throws AuthenticationException {
+	public ContextHandler login(String contextId, AuthenticationAnonymous authentication) throws AuthenticationException {
 		return null;
 	}
 
 	@Override
-	public ContextProvider login(String contextId, AuthenticationUserToken authentication) throws AuthenticationException {
+	public ContextHandler login(String contextId, AuthenticationUserToken authentication) throws AuthenticationException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public ContextProvider login(String contextId, AuthenticationUserPassword authentication) throws AuthenticationException {
+	public ContextHandler login(String contextId, AuthenticationUserPassword authentication) throws AuthenticationException {
 
 		UserLogin userLogin = null;
 		try {
@@ -61,8 +61,8 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 		// TODO compare password and SHA
 		// userLogin.getCurrentPassword().equals(SHA)
 
-		ContextProvider contextProvider = application.getContext().createChildContext(contextId);
-		Context contextUser = contextProvider.get();
+		ContextHandler contextHandler = application.getContext().createChildContext(contextId);
+		Context contextUser = contextHandler.getContext();
 		contextUser.getContextDescription().setUser(authentication.getUser());
 		contextUser.getContextDescription().setTenant(authentication.getTenant());
 		contextUser.getContextDescription().setCurrencyUom(userLogin.getLastCurrencyUom());
@@ -70,20 +70,20 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 			contextUser.getContextDescription().setLocale(userLogin.getLastLocale().replace("_", "-"));
 		contextUser.getContextDescription().setTimeZone(userLogin.getLastTimeZone());
 
-		return contextProvider;
+		return contextHandler;
 	}
 
 	@Override
-	public ContextProvider login(String contextId, AuthenticationAdminKey authentication) throws AuthenticationException {
+	public ContextHandler login(String contextId, AuthenticationAdminKey authentication) throws AuthenticationException {
 
 		if (application.getAdminKey() != null && !authentication.getAdminKey().equals(application.getAdminKey()))
 			throw new AuthenticationException("Invalid adminKey");
 
-		ContextProvider contextProvider = application.getContext().createChildContext(contextId);
-		Context contextUser = contextProvider.get();
+		ContextHandler contextHandler = application.getContext().createChildContext(contextId);
+		Context contextUser = contextHandler.getContext();
 		contextUser.getContextDescription().setUser(application.getContextDescription().getUser());
 		contextUser.getContextDescription().setTenant(authentication.getTenant());
 
-		return contextProvider;
+		return contextHandler;
 	}
 }

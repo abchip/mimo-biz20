@@ -42,7 +42,7 @@ public class ContextUtils {
 				if (tenant == null)
 					return null;
 
-				context = E4Activator.getApplication().getContext().createChildContext(null).get();
+				context = E4Activator.getApplication().getContext().createChildContext(null).getContext();
 				context.getContextDescription().setTenant(tenantId);
 				context.getContextDescription().setUser(tenantId);
 				contexts.put(tenantId, context);

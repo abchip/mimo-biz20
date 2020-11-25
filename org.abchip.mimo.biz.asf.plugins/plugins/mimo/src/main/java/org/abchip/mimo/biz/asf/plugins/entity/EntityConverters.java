@@ -59,9 +59,9 @@ public class EntityConverters implements ConverterLoader {
 				return null;
 
 			Delegator delegator = null;
-			if (resource.getTenant() != null) {
+			if (resource.getTenant() != null)
 				delegator = DelegatorFactory.getDelegator("default#" + resource.getTenant());
-			} else
+			else
 				delegator = DelegatorFactory.getDelegator(null);
 
 			if (delegator == null)
