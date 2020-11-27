@@ -101,15 +101,6 @@ public interface ProductPackage extends EPackage {
 	int CALC_TAX_FOR_DISPLAY__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX_FOR_DISPLAY__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Base Price</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -246,15 +237,6 @@ public interface ProductPackage extends EPackage {
 	int CALCULATE_PRODUCT_PRICE__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Product</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -363,15 +345,6 @@ public interface ProductPackage extends EPackage {
 	 * @ordered
 	 */
 	int CALCULATE_PURCHASE_PRICE__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PURCHASE_PRICE__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Id</b></em>' attribute.
@@ -509,15 +482,6 @@ public interface ProductPackage extends EPackage {
 	 * @ordered
 	 */
 	int GET_PRODUCT_DEFAULT__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GET_PRODUCT_DEFAULT__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The number of structural features of the '<em>Get Product Default</em>' class.

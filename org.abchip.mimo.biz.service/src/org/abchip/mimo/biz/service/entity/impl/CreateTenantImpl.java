@@ -9,6 +9,11 @@ package org.abchip.mimo.biz.service.entity.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.application.Application;
+import org.abchip.mimo.authentication.AuthenticationAdminKey;
+import org.abchip.mimo.authentication.AuthenticationException;
+import org.abchip.mimo.authentication.AuthenticationFactory;
+import org.abchip.mimo.authentication.AuthenticationManager;
 import org.abchip.mimo.biz.model.entity.tenant.Tenant;
 import org.abchip.mimo.biz.model.entity.tenant.TenantDataSource;
 import org.abchip.mimo.biz.model.entity.tenant.TenantDomainName;
@@ -19,6 +24,7 @@ import org.abchip.mimo.biz.service.entity.CreateTenant;
 import org.abchip.mimo.biz.service.entity.DatabaseType;
 import org.abchip.mimo.biz.service.entity.EntityPackage;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.context.ContextHandler;
 import org.abchip.mimo.resource.LoadSeeds;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceWriter;
@@ -34,8 +40,10 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl#getDbType <em>Db Type</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl#isUpdate <em>Update</em>}</li>
+ * <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl#getDbType
+ * <em>Db Type</em>}</li>
+ * <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl#isUpdate
+ * <em>Update</em>}</li>
  * </ul>
  *
  * @generated
@@ -44,6 +52,7 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected CreateTenantImpl() {
@@ -52,6 +61,7 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -61,12 +71,14 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 2;
+	protected static final int ESTATIC_FEATURE_COUNT = 1;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -76,15 +88,17 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public DatabaseType getDbType() {
-		return (DatabaseType)eGet(EntityPackage.Literals.CREATE_TENANT__DB_TYPE, true);
+		return (DatabaseType) eGet(EntityPackage.Literals.CREATE_TENANT__DB_TYPE, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -94,15 +108,17 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean isUpdate() {
-		return (Boolean)eGet(EntityPackage.Literals.CREATE_TENANT__UPDATE, true);
+		return (Boolean) eGet(EntityPackage.Literals.CREATE_TENANT__UPDATE, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -132,12 +148,16 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 	 * @generated not
 	 */
 	@Override
-	public abstract void loadSeeds() throws ServiceException;
+	public abstract void loadSeeds(Context cotextTarget) throws ServiceException;
 
 	@Override
-	public ServiceResponse call() throws ResourceException, ServiceException {
+	public ServiceResponse call() throws ResourceException, ServiceException, AuthenticationException {
 
 		Context context = this.getContext();
+
+		if (context.getTenant() != null)
+			throw new ServiceException("The tenant is not master");
+
 		ServiceResponse response = this.buildResponse();
 
 		// Tenant
@@ -178,37 +198,45 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 		/*
 		 * create default entities on tenant destination
 		 */
+		Application application = context.get(Application.class);
+		AuthenticationAdminKey authentication = AuthenticationFactory.eINSTANCE.createAuthenticationAdminKey();
+		authentication.setTenant(this.getTenantId());
+		authentication.setAdminKey(application.getAdminKey());
 
-		// UserLogin
-		ResourceWriter<UserLogin> userLogintWriter = context.getResourceManager().getResourceWriter(UserLogin.class, this.getTenantId());
-		UserLogin userLogin = userLogintWriter.make();
-		userLogin.setUserLoginId(this.getTenantId());
-		userLogin.setCurrentPassword("{SHA}47ca69ebb4bdc9ae0adec130880165d2cc05db1a");
-		userLogin.setIsSystem(true);
-		userLogin.setEnabled(true);
-		userLogin.setHasLoggedOut(false);
-		userLogin.setRequirePasswordChange(false);
-		userLogintWriter.create(userLogin, this.isUpdate(), true);
+		try (ContextHandler contextHandler = context.get(AuthenticationManager.class).login(null, authentication);) {
 
-		// default seeds
-		{
-			LoadSeeds loadSeeds = context.getServiceManager().prepare(LoadSeeds.class);
-			loadSeeds.setTenant(this.getTenantId());
-			loadSeeds.setPattern("seed");
-			loadSeeds.setUpdate(this.isUpdate());
-			context.getServiceManager().execute(loadSeeds);
+			Context contextTenant = contextHandler.getContext();
+
+			// UserLogin
+			ResourceWriter<UserLogin> userLogintWriter = contextTenant.getResourceManager().getResourceWriter(UserLogin.class);
+			UserLogin userLogin = userLogintWriter.make();
+			userLogin.setUserLoginId(this.getTenantId());
+			userLogin.setCurrentPassword("{SHA}47ca69ebb4bdc9ae0adec130880165d2cc05db1a");
+			userLogin.setIsSystem(true);
+			userLogin.setEnabled(true);
+			userLogin.setHasLoggedOut(false);
+			userLogin.setRequirePasswordChange(false);
+			userLogintWriter.create(userLogin, this.isUpdate(), true);
+
+			// default seeds
+			{
+				LoadSeeds loadSeeds = contextTenant.getServiceManager().prepare(LoadSeeds.class);
+				loadSeeds.setPattern("seed");
+				loadSeeds.setUpdate(this.isUpdate());
+				contextTenant.getServiceManager().execute(loadSeeds);
+			}
+
+			// command seeds
+			this.loadSeeds(contextTenant);
+
+			// UserLoginSecurityGroup
+			ResourceWriter<UserLoginSecurityGroup> userLoginSecurityGroupWriter = contextTenant.getResourceManager().getResourceWriter(UserLoginSecurityGroup.class);
+			UserLoginSecurityGroup userLoginSecurityGroup = userLoginSecurityGroupWriter.make();
+			userLoginSecurityGroup.setUserLogin(userLogin);
+			userLoginSecurityGroup.setGroup(contextTenant.createProxy(SecurityGroup.class, "SUPER"));
+			userLoginSecurityGroup.setFromDate(new Date());
+			userLoginSecurityGroupWriter.create(userLoginSecurityGroup, this.isUpdate());
 		}
-
-		// command seeds
-		this.loadSeeds();
-
-		// UserLoginSecurityGroup
-		ResourceWriter<UserLoginSecurityGroup> userLoginSecurityGroupWriter = context.getResourceManager().getResourceWriter(UserLoginSecurityGroup.class, this.getTenantId());
-		UserLoginSecurityGroup userLoginSecurityGroup = userLoginSecurityGroupWriter.make();
-		userLoginSecurityGroup.setUserLogin(userLogin);
-		userLoginSecurityGroup.setGroup(context.createProxy(SecurityGroup.class, "SUPER", this.getTenant()));
-		userLoginSecurityGroup.setFromDate(new Date());
-		userLoginSecurityGroupWriter.create(userLoginSecurityGroup, this.isUpdate());
 
 		return response;
 	}

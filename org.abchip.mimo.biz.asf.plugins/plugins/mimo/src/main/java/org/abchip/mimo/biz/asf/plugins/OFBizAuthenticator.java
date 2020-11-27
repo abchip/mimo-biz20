@@ -33,7 +33,7 @@ public class OFBizAuthenticator implements Authenticator {
 
 		try {
 			Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
-			this.userLoginResource = new OFBizResourceImpl<UserLogin>(context, delegator.getDelegatorTenantId(), context.getFrame(UserLogin.class));
+			this.userLoginResource = new OFBizResourceImpl<UserLogin>(context, context.getFrame(UserLogin.class));
 
 		} catch (ResourceException e) {
 			LOGGER.warn(e.getMessage());

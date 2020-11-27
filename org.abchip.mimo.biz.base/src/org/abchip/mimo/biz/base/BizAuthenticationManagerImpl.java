@@ -8,6 +8,9 @@
  */
 package org.abchip.mimo.biz.base;
 
+import java.util.Map;
+import java.util.WeakHashMap;
+
 import javax.inject.Inject;
 
 import org.abchip.mimo.application.Application;
@@ -17,9 +20,11 @@ import org.abchip.mimo.authentication.AuthenticationException;
 import org.abchip.mimo.authentication.AuthenticationManager;
 import org.abchip.mimo.authentication.AuthenticationUserPassword;
 import org.abchip.mimo.authentication.AuthenticationUserToken;
+import org.abchip.mimo.biz.model.entity.tenant.Tenant;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextHandler;
+import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceReader;
 
@@ -27,6 +32,8 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 
 	@Inject
 	private Application application;
+
+	private Map<String, Context> contextTenants = new WeakHashMap<String, Context>();
 
 	@Override
 	public boolean checkLogin(AuthenticationUserToken authentication, boolean create) {
@@ -48,9 +55,13 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 	@Override
 	public ContextHandler login(String contextId, AuthenticationUserPassword authentication) throws AuthenticationException {
 
+		Context contextTenant = getContextTenant(authentication.getTenant());
+		if (contextTenant == null)
+			throw new AuthenticationException("Invalid context: " + authentication.getTenant());
+
 		UserLogin userLogin = null;
 		try {
-			ResourceReader<UserLogin> userLoginReader = application.getContext().getResourceManager().getResourceReader(UserLogin.class, authentication.getTenant());
+			ResourceReader<UserLogin> userLoginReader = contextTenant.getResourceManager().getResourceReader(UserLogin.class);
 			userLogin = userLoginReader.lookup(authentication.getUser());
 		} catch (ResourceException e) {
 			throw new AuthenticationException(e);
@@ -84,6 +95,44 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 		contextUser.getContextDescription().setUser(application.getContextDescription().getUser());
 		contextUser.getContextDescription().setTenant(authentication.getTenant());
 
+		// TODO
+		try {
+			contextUser.getResourceSet().getResource(Frame.class);
+		} catch (ResourceException e) {
+			throw new AuthenticationException(e);
+		}
+
 		return contextHandler;
+	}
+
+	@SuppressWarnings("resource")
+	private Context getContextTenant(String tenantId) throws AuthenticationException {
+
+		if (tenantId == null)
+			return this.application.getContext();
+
+		Context contextTenant = contextTenants.get(tenantId);
+		if (contextTenant == null) {
+			synchronized (contextTenants) {
+				contextTenant = contextTenants.get(tenantId);
+				if (contextTenant == null) {
+
+					try {
+						ResourceReader<Tenant> tenantReader = this.application.getContext().getResourceManager().getResourceReader(Tenant.class);
+						Tenant tenant = tenantReader.lookup(tenantId);
+						if (tenant == null)
+							throw new AuthenticationException("Invalid tenant: " + tenantId);
+					} catch (ResourceException e) {
+						throw new AuthenticationException(e);
+					}
+
+					contextTenant = application.getContext().createChildContext(tenantId).getContext();
+					contextTenant.getContextDescription().setTenant(tenantId);
+					contextTenants.put(tenantId, contextTenant);
+				}
+			}
+		}
+
+		return contextTenant;
 	}
 }

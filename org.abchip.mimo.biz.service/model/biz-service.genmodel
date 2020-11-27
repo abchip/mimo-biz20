@@ -72,7 +72,9 @@
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/CreateTenant/update"/>
         <genOperations ecoreOperation="biz-service.ecore#//entity/CreateTenant/getTenantId"/>
         <genOperations ecoreOperation="biz-service.ecore#//entity/CreateTenant/getTenantName"/>
-        <genOperations ecoreOperation="biz-service.ecore#//entity/CreateTenant/loadSeeds"/>
+        <genOperations ecoreOperation="biz-service.ecore#//entity/CreateTenant/loadSeeds">
+          <genParameters ecoreParameter="biz-service.ecore#//entity/CreateTenant/loadSeeds/childContext"/>
+        </genOperations>
       </genClasses>
       <genClasses ecoreClass="biz-service.ecore#//entity/CreateTenantDemo"/>
       <genClasses ecoreClass="biz-service.ecore#//entity/CreateTenantMaster"/>

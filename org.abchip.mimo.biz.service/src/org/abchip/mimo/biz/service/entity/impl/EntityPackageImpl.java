@@ -141,6 +141,7 @@ import org.abchip.mimo.biz.service.party.impl.PartyPackageImpl;
 import org.abchip.mimo.biz.service.product.impl.ProductPackageImpl;
 import org.abchip.mimo.biz.service.security.SecurityPackage;
 import org.abchip.mimo.biz.service.security.impl.SecurityPackageImpl;
+import org.abchip.mimo.context.ContextPackage;
 import org.abchip.mimo.java.JavaPackage;
 import org.abchip.mimo.service.ServicePackage;
 import org.eclipse.emf.ecore.EAttribute;
@@ -595,6 +596,7 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		// Obtain other dependent packages
 		ServicePackage theServicePackage = (ServicePackage)EPackage.Registry.INSTANCE.getEPackage(ServicePackage.eNS_URI);
 		JavaPackage theJavaPackage = (JavaPackage)EPackage.Registry.INSTANCE.getEPackage(JavaPackage.eNS_URI);
+		ContextPackage theContextPackage = (ContextPackage)EPackage.Registry.INSTANCE.getEPackage(ContextPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -642,6 +644,7 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		addEOperation(createTenantEClass, ecorePackage.getEString(), "getTenantName", 1, 1, IS_UNIQUE, IS_ORDERED);
 
 		EOperation op = addEOperation(createTenantEClass, null, "loadSeeds", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theContextPackage.getContext(), "childContext", 1, 1, IS_UNIQUE, IS_ORDERED);
 		addEException(op, theServicePackage.getServiceException());
 
 		initEClass(createTenantDemoEClass, CreateTenantDemo.class, "CreateTenantDemo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

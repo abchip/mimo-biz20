@@ -24,12 +24,12 @@ import org.apache.ofbiz.service.ModelService;
 
 public class ServiceUtils {
 
-	public static Map<String, Object> toBizContext(Context context, String tenant, Delegator delegator, ModelService service, EntityIdentifiable entity) throws GeneralException {
+	public static Map<String, Object> toBizContext(Context context, Delegator delegator, ModelService service, EntityIdentifiable entity) throws GeneralException {
 
 		ContextDescription contextDescription = context.getContextDescription();
 
 		Map<String, Object> params = new HashMap<String, Object>();
-		params.put("userLogin", EntityUtils.toBizEntity(delegator, context.createProxy(UserLogin.class, contextDescription.getUser(), tenant)));
+		params.put("userLogin", EntityUtils.toBizEntity(delegator, context.createProxy(UserLogin.class, contextDescription.getUser())));
 		params.put("locale", contextDescription.getLocale());
 
 		Frame<EntityIdentifiable> frame = entity.isa();

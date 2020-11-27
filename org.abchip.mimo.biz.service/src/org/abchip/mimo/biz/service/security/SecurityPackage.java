@@ -81,15 +81,6 @@ public interface SecurityPackage extends EPackage {
 	int CHECK_EXTERNAL_LOGIN_USER__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHECK_EXTERNAL_LOGIN_USER__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Access Token</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -208,15 +199,6 @@ public interface SecurityPackage extends EPackage {
 	 * @ordered
 	 */
 	int USER_CREDENTIAL_FROM_EXTERNAL_ID__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int USER_CREDENTIAL_FROM_EXTERNAL_ID__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>User Id</b></em>' attribute.

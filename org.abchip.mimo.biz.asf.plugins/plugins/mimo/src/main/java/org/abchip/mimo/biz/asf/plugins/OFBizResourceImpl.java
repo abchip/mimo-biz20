@@ -60,19 +60,17 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 	private static final Logger LOGGER = Logs.getLogger(OFBizResourceImpl.class);
 
-	private String tenantId = null;
 	private Frame<E> frame = null;
 
 	private ModelEntity modelEntity = null;
 	private ModelFieldTypeReader modelHelper;
 
-	public OFBizResourceImpl(Context context, String tenantId, Frame<E> frame) {
-		super(context, tenantId);
+	public OFBizResourceImpl(Context context, Frame<E> frame) {
+		super(context);
 
-		this.tenantId = tenantId;
 		this.frame = frame;
 
-		Delegator delegator = ContextUtils.getDelegator(tenantId, false);
+		Delegator delegator = ContextUtils.getDelegator(context.getTenant(), false);
 
 		this.modelEntity = delegator.getModelEntity(frame.getName());
 		this.modelHelper = delegator.getModelFieldTypeReader(modelEntity);
@@ -91,7 +89,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			return;
 		}
 
-		Delegator delegator = ContextUtils.getDelegator(tenantId, raw);
+		Delegator delegator = ContextUtils.getDelegator(getContext().getTenant(), raw);
 
 		if (!raw && !useRaw()) {
 			LocalDispatcher dispatcher = ContextUtils.getLocalDispatcher(delegator);
@@ -100,12 +98,15 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 				ModelService service = dispatcher.getDispatchContext().getModelService(serviceName);
 
 				try {
-					Map<String, Object> context = ServiceUtils.toBizContext(this.getContext(), this.getTenant(), delegator, service, entity);
+					Map<String, Object> context = ServiceUtils.toBizContext(this.getContext(), delegator, service, entity);
 					context = dispatcher.runSync(serviceName, context);
 					if (ServiceUtil.isError(context))
 						throw new ResourceException(ServiceUtil.getErrorMessage(context));
 
 					completeEntity(service, entity, context);
+					
+					if (entity.getResource() == null)
+						this.attach(entity);
 
 					return;
 				} catch (GeneralException e) {
@@ -155,7 +156,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		try {
 			beganTransaction = TransactionUtil.begin();
 
-			nextSeq = ContextUtils.getDelegator(tenantId, false).getNextSeqId(frame.getName());
+			nextSeq = ContextUtils.getDelegator(getContext().getTenant(), false).getNextSeqId(frame.getName());
 
 			TransactionUtil.commit(beganTransaction);
 		} catch (GenericEntityException e) {
@@ -173,7 +174,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	@Override
 	public E lookup(String name, String fields, boolean proxy) throws ResourceException {
 
-		Delegator delegator = ContextUtils.getDelegator(tenantId, false);
+		Delegator delegator = ContextUtils.getDelegator(getContext().getTenant(), false);
 
 		DynamicViewEntity dynamicViewEntity = buildDynamicView(delegator);
 
@@ -244,7 +245,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		LOGGER.trace("Read frame {} filter {} fields {} order {} limit {} proxy {}", this.getFrame().getName(), filter, fields, order, limit, proxy);
 
-		Delegator delegator = ContextUtils.getDelegator(tenantId, false);
+		Delegator delegator = ContextUtils.getDelegator(getContext().getTenant(), false);
 
 		EntityQuery eq = EntityQuery.use(delegator);
 
@@ -329,7 +330,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			return;
 		}
 
-		Delegator delegator = ContextUtils.getDelegator(tenantId, false);
+		Delegator delegator = ContextUtils.getDelegator(getContext().getTenant(), false);
 
 		if (!useRaw()) {
 			LocalDispatcher dispatcher = ContextUtils.getLocalDispatcher(delegator);
@@ -339,7 +340,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 				ModelService service = dispatcher.getDispatchContext().getModelService(serviceName);
 
 				try {
-					Map<String, Object> context = ServiceUtils.toBizContext(this.getContext(), this.getTenant(), delegator, service, entity);
+					Map<String, Object> context = ServiceUtils.toBizContext(this.getContext(), delegator, service, entity);
 					context = dispatcher.runSync(serviceName, context);
 					if (ServiceUtil.isError(context))
 						throw new ResourceException(ServiceUtil.getErrorMessage(context));
@@ -381,7 +382,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			return;
 		}
 
-		Delegator delegator = ContextUtils.getDelegator(tenantId, false);
+		Delegator delegator = ContextUtils.getDelegator(getContext().getTenant(), false);
 
 		if (!useRaw()) {
 			LocalDispatcher dispatcher = ContextUtils.getLocalDispatcher(delegator);
@@ -391,11 +392,13 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 				ModelService service = dispatcher.getDispatchContext().getModelService(serviceName);
 
 				try {
-					Map<String, Object> context = ServiceUtils.toBizContext(this.getContext(), this.getTenant(), delegator, service, entity);
+					Map<String, Object> context = ServiceUtils.toBizContext(this.getContext(), delegator, service, entity);
 					context = dispatcher.runSync(serviceName, context);
 					if (ServiceUtil.isError(context))
 						throw new ResourceException(ServiceUtil.getErrorMessage(context));
 
+					this.detach(entity);
+					
 					return;
 				} catch (GeneralException e) {
 					throw new ResourceException(e);

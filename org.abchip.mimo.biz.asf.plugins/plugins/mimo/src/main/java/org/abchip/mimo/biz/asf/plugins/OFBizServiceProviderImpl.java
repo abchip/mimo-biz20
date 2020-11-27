@@ -37,7 +37,7 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 		try {
 			ModelService modelService = dispatcher.getDispatchContext().getModelService(request.getServiceName());
 
-			Map<String, Object> context = ServiceUtils.toBizContext(request.getContext(), request.getTenant(), dispatcher.getDelegator(), modelService, request);
+			Map<String, Object> context = ServiceUtils.toBizContext(request.getContext(), dispatcher.getDelegator(), modelService, request);
 			context = dispatcher.runSync(request.getServiceName(), context);
 
 			V response = toResponse(request, context);
@@ -55,7 +55,7 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 		try {
 			ModelService modelService = dispatcher.getDispatchContext().getModelService(request.getServiceName());
 
-			Map<String, Object> context = ServiceUtils.toBizContext(request.getContext(), request.getTenant(), dispatcher.getDelegator(), modelService, request);
+			Map<String, Object> context = ServiceUtils.toBizContext(request.getContext(), dispatcher.getDelegator(), modelService, request);
 			dispatcher.runAsync(request.getServiceName(), context);
 
 			return null;
@@ -67,8 +67,8 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 	private <V extends ServiceResponse, R extends ServiceRequest<V>> LocalDispatcher getLocalDispatcher(R request) throws ServiceException {
 
 		Delegator delegator = null;
-		if (request.getTenant() != null) {
-			delegator = DelegatorFactory.getDelegator("default#" + request.getTenant());
+		if (request.getContext().getTenant() != null) {
+			delegator = DelegatorFactory.getDelegator("default#" + request.getContext().getTenant());
 		} else if (request.getContext().getContextDescription().isTenant()) {
 			delegator = DelegatorFactory.getDelegator("default#" + request.getContext().getContextDescription().getTenant());
 		} else

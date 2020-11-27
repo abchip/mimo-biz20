@@ -45,7 +45,7 @@ public class GetPartyDefaultImpl extends ServiceRequestImpl<GetPartyDefaultRespo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 2;
+	protected static final int ESTATIC_FEATURE_COUNT = 1;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -63,11 +63,11 @@ public class GetPartyDefaultImpl extends ServiceRequestImpl<GetPartyDefaultRespo
 		GetPartyDefaultResponse response = this.buildResponse();
 
 		// party
-		SystemProperty currencyProp = getContext().createProxy(SystemProperty.class, "general/ORGANIZATION_PARTY", this.getTenant());
-		response.setOrganization(this.getContext().createProxy(Party.class, currencyProp.getSystemPropertyValue(), this.getTenant()));
+		SystemProperty currencyProp = getContext().createProxy(SystemProperty.class, "general/ORGANIZATION_PARTY");
+		response.setOrganization(this.getContext().createProxy(Party.class, currencyProp.getSystemPropertyValue()));
 
 		// accounting preference
-		PartyAcctgPreference accountingPreference = getContext().createProxy(PartyAcctgPreference.class, response.getOrganization().getID(), this.getTenant());
+		PartyAcctgPreference accountingPreference = getContext().createProxy(PartyAcctgPreference.class, response.getOrganization().getID());
 		response.setAccountingPreference(accountingPreference);
 
 		return response;

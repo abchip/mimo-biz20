@@ -86,7 +86,9 @@
     <eClassifiers xsi:type="ecore:EClass" name="CreateTenant" abstract="true">
       <eOperations name="getTenantId" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       <eOperations name="getTenantName" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eOperations name="loadSeeds" eExceptions="ecore:EDataType ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceException"/>
+      <eOperations name="loadSeeds" eExceptions="ecore:EDataType ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceException">
+        <eParameters name="childContext" lowerBound="1" eType="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//context/Context"/>
+      </eOperations>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="dbType" lowerBound="1"
           eType="#//entity/DatabaseType"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="update" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>

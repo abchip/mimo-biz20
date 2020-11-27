@@ -47,7 +47,7 @@ public class GetProductDefaultImpl extends ServiceRequestImpl<GetProductDefaultR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 2;
+	protected static final int ESTATIC_FEATURE_COUNT = 1;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -67,7 +67,7 @@ public class GetProductDefaultImpl extends ServiceRequestImpl<GetProductDefaultR
 		String filter = "facilityId = 'WebStoreWarehouse'  AND thruDate IS NULL";
 		String order = "-fromDate";
 
-		ResourceReader<FacilityContactMech> facilityContactMechReader = context.getResourceManager().getResourceReader(FacilityContactMech.class, this.getTenant());
+		ResourceReader<FacilityContactMech> facilityContactMechReader = context.getResourceManager().getResourceReader(FacilityContactMech.class);
 
 		try (EntityIterator<FacilityContactMech> facilityContactMechs = facilityContactMechReader.find(filter, null, order)) {
 			for (FacilityContactMech facilityContactMech : facilityContactMechs) {
@@ -75,7 +75,7 @@ public class GetProductDefaultImpl extends ServiceRequestImpl<GetProductDefaultR
 				if (!contactMech.getContactMechType().getContactMechTypeId().equals("POSTAL_ADDRESS"))
 					continue;
 
-				response.setFacilityPostalAddress(context.createProxy(PostalAddress.class, facilityContactMech.getContactMech().getContactMechId(), this.getTenant()));
+				response.setFacilityPostalAddress(context.createProxy(PostalAddress.class, facilityContactMech.getContactMech().getContactMechId()));
 				break;
 			}
 		}

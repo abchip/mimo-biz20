@@ -80,15 +80,6 @@ public interface AccountingPackage extends EPackage {
 	int GET_TOTAL_INVOICE__CONTEXT = ServicePackage.SERVICE_METHOD_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GET_TOTAL_INVOICE__TENANT = ServicePackage.SERVICE_METHOD_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Entity</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -174,15 +165,6 @@ public interface AccountingPackage extends EPackage {
 	 * @ordered
 	 */
 	int SET_INVOICE_STATUS__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_INVOICE_STATUS__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id</b></em>' attribute.
@@ -284,15 +266,6 @@ public interface AccountingPackage extends EPackage {
 	int SET_PAYMENT_STATUS__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_PAYMENT_STATUS__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Payment Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -354,15 +327,6 @@ public interface AccountingPackage extends EPackage {
 	 * @ordered
 	 */
 	int UPDATE_PAYMENT_APPLICATION_DEF__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPDATE_PAYMENT_APPLICATION_DEF__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id</b></em>' attribute.
@@ -436,15 +400,6 @@ public interface AccountingPackage extends EPackage {
 	 * @ordered
 	 */
 	int ADDTAX__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ADDTAX__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id</b></em>' attribute.

@@ -32,9 +32,9 @@ public class OFBizResourceProviderImpl extends ResourceProviderImpl {
 	}
 
 	@Override
-	public <E extends EntityIdentifiable> Resource<E> createResource(Context context, Frame<E> frame, String tenantId) throws ResourceException {
+	public <E extends EntityIdentifiable> Resource<E> createResource(Context context, Frame<E> frame) throws ResourceException {
 
-		Resource<E> resource = new OFBizResourceImpl<E>(context, tenantId, frame);
+		Resource<E> resource = new OFBizResourceImpl<E>(context, frame);
 		resource.setResourceConfig(this.resourceConfig);
 
 		return resource;

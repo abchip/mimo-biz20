@@ -138,7 +138,6 @@ public class EdiServices {
 
 		Delegator delegator = ctx.getDelegator();
 		ModelReader modelReader = delegator.getModelReader();
-		String resource = delegator.getDelegatorTenantId();
 
 		Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
 		Resource<EdiFrameSetup> ediFrameSetupResource = context.getResourceSet().getResource(EdiFrameSetup.class);
@@ -150,7 +149,7 @@ public class EdiServices {
 		}
 		EdiUtils.removeEdiEca(delegator, ediFrameSetup.getFrame());
 
-		ResourceReader<EdiFrameSetup> setupReader = context.getResourceManager().getResourceReader(EdiFrameSetup.class, resource);
+		ResourceReader<EdiFrameSetup> setupReader = context.getResourceManager().getResourceReader(EdiFrameSetup.class);
 		try (EntityIterator<EdiFrameSetup> setups = setupReader.find()) {
 			for (EdiFrameSetup setup : setups) {
 				if (modelReader.getModelEntityNoCheck(setup.getFrame()) == null)

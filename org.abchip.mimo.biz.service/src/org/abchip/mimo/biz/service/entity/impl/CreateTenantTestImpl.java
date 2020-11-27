@@ -9,10 +9,9 @@ package org.abchip.mimo.biz.service.entity.impl;
 
 import org.abchip.mimo.biz.service.entity.CreateTenantTest;
 import org.abchip.mimo.biz.service.entity.EntityPackage;
+import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.LoadSeed;
-import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.service.ServiceException;
-import org.abchip.mimo.service.ServiceResponse;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -25,6 +24,7 @@ public class CreateTenantTestImpl extends CreateTenantImpl implements CreateTena
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected CreateTenantTestImpl() {
@@ -33,6 +33,7 @@ public class CreateTenantTestImpl extends CreateTenantImpl implements CreateTena
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -47,46 +48,34 @@ public class CreateTenantTestImpl extends CreateTenantImpl implements CreateTena
 
 	@Override
 	public String getTenantName() {
-		return "test";
+		return "Test tenant";
 	}
 
 	@Override
-	public ServiceResponse call() throws ResourceException, ServiceException {
-
-		ServiceResponse response = super.call();
-
-		return response;
-	}
-
-	@Override
-	public void loadSeeds() throws ServiceException {
+	public void loadSeeds(Context contextTarget) throws ServiceException {
 		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
-			loadSeed.setTenant(this.getTenantId());
+			LoadSeed loadSeed = contextTarget.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setSeedId("mimo");
 			loadSeed.setUpdate(this.isUpdate());
-			context.getServiceManager().execute(loadSeed);
+			contextTarget.getServiceManager().execute(loadSeed);
 		}
 		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
-			loadSeed.setTenant(this.getTenantId());
+			LoadSeed loadSeed = contextTarget.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setSeedId("party");
 			loadSeed.setUpdate(this.isUpdate());
-			context.getServiceManager().execute(loadSeed);
+			contextTarget.getServiceManager().execute(loadSeed);
 		}
 		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
-			loadSeed.setTenant(this.getTenantId());
+			LoadSeed loadSeed = contextTarget.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setSeedId("abchip-tenantTest");
 			loadSeed.setUpdate(this.isUpdate());
-			context.getServiceManager().execute(loadSeed);
+			contextTarget.getServiceManager().execute(loadSeed);
 		}
 		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
-			loadSeed.setTenant(this.getTenantId());
+			LoadSeed loadSeed = contextTarget.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setSeedId("abchip-tenantTest-accounting");
 			loadSeed.setUpdate(true);
-			context.getServiceManager().execute(loadSeed);
+			contextTarget.getServiceManager().execute(loadSeed);
 		}
 	}
 } // CreateTenantTestImpl

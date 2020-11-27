@@ -12,11 +12,11 @@ import org.abchip.mimo.biz.model.party.party.PartyType;
 import org.abchip.mimo.biz.model.party.party.Person;
 import org.abchip.mimo.biz.service.entity.CreateTenantParty;
 import org.abchip.mimo.biz.service.entity.EntityPackage;
+import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.LoadSeed;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.service.ServiceException;
-import org.abchip.mimo.service.ServiceResponse;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -118,54 +118,46 @@ public class CreateTenantPartyImpl extends CreateTenantImpl implements CreateTen
 	}
 
 	@Override
-	public ServiceResponse call() throws ResourceException, ServiceException {
-
-		ServiceResponse response = super.call();
+	public void loadSeeds(Context contextTarget) throws ServiceException {
+		{
+			LoadSeed loadSeed = contextTarget.getServiceManager().prepare(LoadSeed.class);
+			loadSeed.setSeedId("mimo");
+			loadSeed.setUpdate(this.isUpdate());
+			contextTarget.getServiceManager().execute(loadSeed);
+		}
+		{
+			LoadSeed loadSeed = contextTarget.getServiceManager().prepare(LoadSeed.class);
+			loadSeed.setSeedId("party");
+			loadSeed.setUpdate(this.isUpdate());
+			contextTarget.getServiceManager().execute(loadSeed);
+		}
+		{
+			LoadSeed loadSeed = contextTarget.getServiceManager().prepare(LoadSeed.class);
+			loadSeed.setSeedId("abchip-biz");
+			loadSeed.setUpdate(this.isUpdate());
+			contextTarget.getServiceManager().execute(loadSeed);
+		}
+		{
+			LoadSeed loadSeed = contextTarget.getServiceManager().prepare(LoadSeed.class);
+			loadSeed.setSeedId("abchip-biz-" + this.getTenantId());
+			loadSeed.setUpdate(this.isUpdate());
+			contextTarget.getServiceManager().execute(loadSeed);
+		}
 
 		// Party
 		if (this.getPartyId() == null) {
-			ResourceWriter<Person> personWriter = context.getResourceManager().getResourceWriter(Person.class, this.getTenantId());
-			Person tenantPerson = personWriter.make();
-			tenantPerson.setPartyId(this.getTenantId());
-			tenantPerson.setStatus(context.createProxy(StatusItem.class, "PARTY_ENABLED", this.getTenant()));
-			tenantPerson.setPartyType(context.createProxy(PartyType.class, "PERSON", this.getTenant()));
-			tenantPerson.setFirstName("Tenant " + this.getTenantId());
-			tenantPerson.setLastName(this.getTenantName());
-			personWriter.create(tenantPerson, this.isUpdate());
-		}
-
-		return response;
-	}
-
-	@Override
-	public void loadSeeds() throws ServiceException {
-		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
-			loadSeed.setTenant(this.getTenantId());
-			loadSeed.setSeedId("mimo");
-			loadSeed.setUpdate(this.isUpdate());
-			context.getServiceManager().execute(loadSeed);
-		}
-		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
-			loadSeed.setTenant(this.getTenantId());
-			loadSeed.setSeedId("party");
-			loadSeed.setUpdate(this.isUpdate());
-			context.getServiceManager().execute(loadSeed);
-		}
-		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
-			loadSeed.setTenant(this.getTenantId());
-			loadSeed.setSeedId("abchip-biz");
-			loadSeed.setUpdate(this.isUpdate());
-			context.getServiceManager().execute(loadSeed);
-		}
-		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
-			loadSeed.setTenant(this.getTenantId());
-			loadSeed.setSeedId("abchip-biz-" + this.getTenantId());
-			loadSeed.setUpdate(this.isUpdate());
-			context.getServiceManager().execute(loadSeed);
+			try {
+				ResourceWriter<Person> personWriter = contextTarget.getResourceManager().getResourceWriter(Person.class);
+				Person tenantPerson = personWriter.make();
+				tenantPerson.setPartyId(this.getTenantId());
+				tenantPerson.setStatus(contextTarget.createProxy(StatusItem.class, "PARTY_ENABLED"));
+				tenantPerson.setPartyType(contextTarget.createProxy(PartyType.class, "PERSON"));
+				tenantPerson.setFirstName("Tenant " + this.getTenantId());
+				tenantPerson.setLastName(this.getTenantName());
+				personWriter.create(tenantPerson, this.isUpdate());
+			} catch (ResourceException e) {
+				throw new ServiceException(e);
+			}
 		}
 	}
 

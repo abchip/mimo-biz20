@@ -80,15 +80,6 @@ public interface OrderPackage extends EPackage {
 	int CHANGE_ORDER_STATUS__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CHANGE_ORDER_STATUS__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Change Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -236,15 +227,6 @@ public interface OrderPackage extends EPackage {
 	int RESERVE_STORE_INVENTORY__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESERVE_STORE_INVENTORY__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Facility Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -383,15 +365,6 @@ public interface OrderPackage extends EPackage {
 	int RESET_GRAND_TOTAL__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RESET_GRAND_TOTAL__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Order Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -475,15 +448,6 @@ public interface OrderPackage extends EPackage {
 	 * @ordered
 	 */
 	int RECALC_TAX_TOTAL__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int RECALC_TAX_TOTAL__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Order Id</b></em>' attribute.

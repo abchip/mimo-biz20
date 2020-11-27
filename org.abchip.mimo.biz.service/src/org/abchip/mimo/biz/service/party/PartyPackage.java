@@ -90,15 +90,6 @@ public interface PartyPackage extends EPackage {
 	int GET_PARTY_DEFAULT__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GET_PARTY_DEFAULT__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The number of structural features of the '<em>Get Party Default</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -9,6 +9,7 @@ package org.abchip.mimo.biz.service.entity;
 
 import java.util.concurrent.Callable;
 
+import org.abchip.mimo.context.Context;
 import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceRequest;
 import org.abchip.mimo.service.ServiceResponse;
@@ -97,9 +98,9 @@ public interface CreateTenant extends ServiceRequest<ServiceResponse>, Callable<
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model exceptions="org.abchip.mimo.service.ServiceException"
+	 * @model exceptions="org.abchip.mimo.service.ServiceException" childContextRequired="true"
 	 * @generated
 	 */
-	void loadSeeds() throws ServiceException;
+	void loadSeeds(Context childContext) throws ServiceException;
 
 } // CreateTenant

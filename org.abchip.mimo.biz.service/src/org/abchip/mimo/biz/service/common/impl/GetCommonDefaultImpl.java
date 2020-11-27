@@ -45,7 +45,7 @@ public class GetCommonDefaultImpl extends ServiceRequestImpl<GetCommonDefaultRes
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 2;
+	protected static final int ESTATIC_FEATURE_COUNT = 1;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -63,12 +63,12 @@ public class GetCommonDefaultImpl extends ServiceRequestImpl<GetCommonDefaultRes
 		GetCommonDefaultResponse response = this.buildResponse();
 
 		// currency
-		SystemProperty currencyProp = getContext().createProxy(SystemProperty.class, "general/currency.uom.id.default", this.getTenant());
-		response.setCurrencyUom(getContext().createProxy(Uom.class, currencyProp.getSystemPropertyValue(), this.getTenant()));
+		SystemProperty currencyProp = getContext().createProxy(SystemProperty.class, "general/currency.uom.id.default");
+		response.setCurrencyUom(getContext().createProxy(Uom.class, currencyProp.getSystemPropertyValue()));
 
 		// country
-		SystemProperty countryProp = getContext().createProxy(SystemProperty.class, "general/country.geo.id.default", this.getTenant());
-		response.setCountryGeo(getContext().createProxy(Geo.class, countryProp.getSystemPropertyValue(), this.getTenant()));
+		SystemProperty countryProp = getContext().createProxy(SystemProperty.class, "general/country.geo.id.default");
+		response.setCountryGeo(getContext().createProxy(Geo.class, countryProp.getSystemPropertyValue()));
 
 		return response;
 	}

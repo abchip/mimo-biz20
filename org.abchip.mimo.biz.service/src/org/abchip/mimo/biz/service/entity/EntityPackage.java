@@ -91,15 +91,6 @@ public interface EntityPackage extends EPackage {
 	int CONVERT_SEEDS__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONVERT_SEEDS__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Readers</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -136,15 +127,6 @@ public interface EntityPackage extends EPackage {
 	 * @ordered
 	 */
 	int CREATE_TENANT__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_TENANT__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
@@ -193,15 +175,6 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_DEMO__CONTEXT = CREATE_TENANT__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_TENANT_DEMO__TENANT = CREATE_TENANT__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -248,15 +221,6 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_MASTER__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_TENANT_MASTER__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The number of structural features of the '<em>Create Tenant Master</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -283,15 +247,6 @@ public interface EntityPackage extends EPackage {
 	 * @ordered
 	 */
 	int CREATE_TENANT_PARTY__CONTEXT = CREATE_TENANT__CONTEXT;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_TENANT_PARTY__TENANT = CREATE_TENANT__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
@@ -367,15 +322,6 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_TEST__CONTEXT = CREATE_TENANT__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_TENANT_TEST__TENANT = CREATE_TENANT__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -410,15 +356,6 @@ public interface EntityPackage extends EPackage {
 	 * @ordered
 	 */
 	int EXPORT_ENTITIES__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EXPORT_ENTITIES__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Path To</b></em>' attribute.

@@ -9,10 +9,9 @@ package org.abchip.mimo.biz.service.entity.impl;
 
 import org.abchip.mimo.biz.service.entity.CreateTenantDemo;
 import org.abchip.mimo.biz.service.entity.EntityPackage;
+import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.LoadSeeds;
-import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.service.ServiceException;
-import org.abchip.mimo.service.ServiceResponse;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -25,6 +24,7 @@ public class CreateTenantDemoImpl extends CreateTenantImpl implements CreateTena
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected CreateTenantDemoImpl() {
@@ -33,6 +33,7 @@ public class CreateTenantDemoImpl extends CreateTenantImpl implements CreateTena
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -51,21 +52,12 @@ public class CreateTenantDemoImpl extends CreateTenantImpl implements CreateTena
 	}
 
 	@Override
-	public ServiceResponse call() throws ResourceException, ServiceException {
-
-		ServiceResponse response = super.call();
-
-		return response;
-	}
-
-	@Override
-	public void loadSeeds() throws ServiceException {
+	public void loadSeeds(Context contextTarget) throws ServiceException {
 		{
-			LoadSeeds loadSeeds = context.getServiceManager().prepare(LoadSeeds.class);
-			loadSeeds.setTenant(this.getTenantId());
+			LoadSeeds loadSeeds = contextTarget.getServiceManager().prepare(LoadSeeds.class);
 			loadSeeds.setPattern("demo");
 			loadSeeds.setUpdate(this.isUpdate());
-			context.getServiceManager().execute(loadSeeds);
+			contextTarget.getServiceManager().execute(loadSeeds);
 		}
 	}
 } // CreateTenantDemoImpl

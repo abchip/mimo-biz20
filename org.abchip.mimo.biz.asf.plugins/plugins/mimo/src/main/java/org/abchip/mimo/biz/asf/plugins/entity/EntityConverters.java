@@ -8,8 +8,8 @@
  */
 package org.abchip.mimo.biz.asf.plugins.entity;
 
+import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityIdentifiable;
-import org.abchip.mimo.resource.Resource;
 import org.apache.ofbiz.base.conversion.AbstractConverter;
 import org.apache.ofbiz.base.conversion.ConversionException;
 import org.apache.ofbiz.base.conversion.ConverterLoader;
@@ -54,13 +54,13 @@ public class EntityConverters implements ConverterLoader {
 
 		public GenericValue convert(EntityIdentifiable entity) throws ConversionException {
 
-			Resource<?> resource = entity.getResource();
-			if (resource == null)
+			Context context = entity.getContext();
+			if (context == null)
 				return null;
 
 			Delegator delegator = null;
-			if (resource.getTenant() != null)
-				delegator = DelegatorFactory.getDelegator("default#" + resource.getTenant());
+			if (context.getTenant() != null)
+				delegator = DelegatorFactory.getDelegator("default#" + context.getTenant());
 			else
 				delegator = DelegatorFactory.getDelegator(null);
 
