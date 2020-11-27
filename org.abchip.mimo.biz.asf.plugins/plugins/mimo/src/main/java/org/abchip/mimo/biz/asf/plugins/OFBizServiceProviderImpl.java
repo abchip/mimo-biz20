@@ -69,9 +69,8 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 		Delegator delegator = null;
 		if (request.getContext().getTenant() != null) {
 			delegator = DelegatorFactory.getDelegator("default#" + request.getContext().getTenant());
-		} else if (request.getContext().getContextDescription().isTenant()) {
-			delegator = DelegatorFactory.getDelegator("default#" + request.getContext().getContextDescription().getTenant());
-		} else
+		} 
+		else
 			delegator = DelegatorFactory.getDelegator(null);
 
 		if (delegator == null)
