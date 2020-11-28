@@ -321,9 +321,6 @@ public class EntityServices {
 					eGenericType2.setEClassifier(eClass);
 
 					eGenericType.getETypeArguments().add(eGenericType2);
-
-					if (false)
-						"".toString();
 				} else {
 					LOGGER.warn("ROLE: " + modelEntity.getEntityName() + " -> " + typeEntity.getName() + "<" + eGenericType.getETypeArguments().get(0).getEClassifier().getName() + ">");
 					eClass = EcoreUtils.buildEntityEClass(delegator, forms, modelEntity);
