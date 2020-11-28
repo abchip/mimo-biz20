@@ -3603,7 +3603,7 @@
           <details key="title" value="Credit Card Information"/>
           <details key="formula" value="description"/>
         </eAnnotations>
-        <eAnnotations source="mimo-ent-frame-constraints">
+        <eAnnotations source="mimo-ent-frame-type">
           <details key="paymentMethodType" value="CREDIT_CARD"/>
         </eAnnotations>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="cardNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -3770,7 +3770,7 @@
           <details key="title" value="EFT Account Information"/>
           <details key="formula" value="description"/>
         </eAnnotations>
-        <eAnnotations source="mimo-ent-frame-constraints">
+        <eAnnotations source="mimo-ent-frame-type">
           <details key="paymentMethodType" value="EFT_ACCOUNT"/>
         </eAnnotations>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="accountNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -3820,7 +3820,7 @@
           <details key="title" value="Gift Card Information"/>
           <details key="formula" value="description"/>
         </eAnnotations>
-        <eAnnotations source="mimo-ent-frame-constraints">
+        <eAnnotations source="mimo-ent-frame-type">
           <details key="paymentMethodType" value="GIFT_CARD"/>
         </eAnnotations>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="cardNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -8710,7 +8710,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="ElectronicText" eSuperTypes="#//content/data/DataResource">
-        <eAnnotations source="mimo-ent-frame-constraints">
+        <eAnnotations source="mimo-ent-frame-type">
           <details key="dataResourceType" value="ELECTRONIC_TEXT"/>
         </eAnnotations>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="textData" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -18802,7 +18802,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="EmailAddress" eSuperTypes="#//party/contact/ContactMech">
-        <eAnnotations source="mimo-ent-frame-constraints">
+        <eAnnotations source="mimo-ent-frame-type">
           <details key="contactMechType" value="EMAIL_ADDRESS"/>
         </eAnnotations>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="emailAddress" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -18833,7 +18833,7 @@
         <eAnnotations source="mimo-ent-frame">
           <details key="title" value="Ftp server"/>
         </eAnnotations>
-        <eAnnotations source="mimo-ent-frame-constraints">
+        <eAnnotations source="mimo-ent-frame-type">
           <details key="contactMechType" value="FTP_ADDRESS"/>
         </eAnnotations>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="binaryTransfer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
@@ -18958,7 +18958,7 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="thruDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="PostalAddress" eSuperTypes="#//party/contact/ContactMech">
-        <eAnnotations source="mimo-ent-frame-constraints">
+        <eAnnotations source="mimo-ent-frame-type">
           <details key="contactMechType" value="POSTAL_ADDRESS"/>
         </eAnnotations>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="address1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -19040,7 +19040,7 @@
         <eAnnotations source="mimo-ent-frame">
           <details key="title" value="Telecommunications Number"/>
         </eAnnotations>
-        <eAnnotations source="mimo-ent-frame-constraints">
+        <eAnnotations source="mimo-ent-frame-type">
           <details key="contactMechType" value="TELECOM_NUMBER"/>
         </eAnnotations>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="areaCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -19565,7 +19565,7 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="thruDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="PartyGroup" eSuperTypes="#//party/party/Party">
-        <eAnnotations source="mimo-ent-frame-constraints">
+        <eAnnotations source="mimo-ent-frame-type">
           <details key="partyType" value="PARTY_GROUP"/>
         </eAnnotations>
         <eAnnotations source="mimo-ent-frame">
@@ -20022,7 +20022,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="Person" eSuperTypes="#//party/party/Party">
-        <eAnnotations source="mimo-ent-frame-constraints">
+        <eAnnotations source="mimo-ent-frame-type">
           <details key="partyType" value="PERSON"/>
         </eAnnotations>
         <eAnnotations source="mimo-ent-frame">
@@ -29279,7 +29279,7 @@
           <details key="title" value="DHL Shipment Gateway Configuration"/>
           <details key="formula" value="description"/>
         </eAnnotations>
-        <eAnnotations source="mimo-ent-frame-constraints">
+        <eAnnotations source="mimo-ent-frame-type">
           <details key="shipmentGatewayConfType" value="SHIPMENT_GATEWAY_DHL"/>
         </eAnnotations>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="accessAccountNbr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -29375,7 +29375,7 @@
           <details key="title" value="Fedex Shipment Gateway Configuration"/>
           <details key="formula" value="description"/>
         </eAnnotations>
-        <eAnnotations source="mimo-ent-frame-constraints">
+        <eAnnotations source="mimo-ent-frame-type">
           <details key="shipmentGatewayConfType" value="SHIPMENT_GATEWAY_FEDEX"/>
         </eAnnotations>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="accessAccountNbr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -29498,7 +29498,7 @@
           <details key="title" value="UPS Shipment Gateway Configuration"/>
           <details key="formula" value="description"/>
         </eAnnotations>
-        <eAnnotations source="mimo-ent-frame-constraints">
+        <eAnnotations source="mimo-ent-frame-type">
           <details key="shipmentGatewayConfType" value="SHIPMENT_GATEWAY_UPS"/>
         </eAnnotations>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="accessLicenseNumber"
@@ -29688,7 +29688,7 @@
           <details key="title" value="USPS Shipment Gateway Configuration"/>
           <details key="formula" value="description"/>
         </eAnnotations>
-        <eAnnotations source="mimo-ent-frame-constraints">
+        <eAnnotations source="mimo-ent-frame-type">
           <details key="shipmentGatewayConfType" value="SHIPMENT_GATEWAY_USPS"/>
         </eAnnotations>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="accessPassword" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -30323,7 +30323,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="ShippingDocument" eSuperTypes="#//content/document/Document">
-        <eAnnotations source="mimo-ent-frame-constraints">
+        <eAnnotations source="mimo-ent-frame-type">
           <details key="documentType" value="SHIPPING_DOCUMENT"/>
         </eAnnotations>
         <eAnnotations source="mimo-ent-frame">

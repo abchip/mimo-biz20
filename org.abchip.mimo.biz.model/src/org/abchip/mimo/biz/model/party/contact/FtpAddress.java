@@ -29,7 +29,7 @@ package org.abchip.mimo.biz.model.party.contact;
  *
  * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getFtpAddress()
  * @model annotation="mimo-ent-frame title='Ftp server'"
- *        annotation="mimo-ent-frame-constraints contactMechType='FTP_ADDRESS'"
+ *        annotation="mimo-ent-frame-type contactMechType='FTP_ADDRESS'"
  * @generated
  */
 public interface FtpAddress extends ContactMech {

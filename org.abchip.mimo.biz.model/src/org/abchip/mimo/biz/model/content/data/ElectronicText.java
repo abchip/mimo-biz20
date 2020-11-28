@@ -21,7 +21,7 @@ package org.abchip.mimo.biz.model.content.data;
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.content.data.DataPackage#getElectronicText()
- * @model annotation="mimo-ent-frame-constraints dataResourceType='ELECTRONIC_TEXT'"
+ * @model annotation="mimo-ent-frame-type dataResourceType='ELECTRONIC_TEXT'"
  * @generated
  */
 public interface ElectronicText extends DataResource {

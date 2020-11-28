@@ -30,7 +30,7 @@ import org.abchip.mimo.biz.model.party.contact.ContactMech;
  *
  * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getEftAccount()
  * @model annotation="mimo-ent-frame title='EFT Account Information' formula='description'"
- *        annotation="mimo-ent-frame-constraints paymentMethodType='EFT_ACCOUNT'"
+ *        annotation="mimo-ent-frame-type paymentMethodType='EFT_ACCOUNT'"
  * @generated
  */
 public interface EftAccount extends PaymentMethod {

@@ -41,7 +41,7 @@ import org.abchip.mimo.biz.model.common.geo.GeoPoint;
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress()
- * @model annotation="mimo-ent-frame-constraints contactMechType='POSTAL_ADDRESS'"
+ * @model annotation="mimo-ent-frame-type contactMechType='POSTAL_ADDRESS'"
  * @generated
  */
 public interface PostalAddress extends ContactMech {

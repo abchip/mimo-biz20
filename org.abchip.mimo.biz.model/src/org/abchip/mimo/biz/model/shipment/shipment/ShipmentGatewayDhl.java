@@ -31,7 +31,7 @@ package org.abchip.mimo.biz.model.shipment.shipment;
  *
  * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentGatewayDhl()
  * @model annotation="mimo-ent-frame title='DHL Shipment Gateway Configuration' formula='description'"
- *        annotation="mimo-ent-frame-constraints shipmentGatewayConfType='SHIPMENT_GATEWAY_DHL'"
+ *        annotation="mimo-ent-frame-type shipmentGatewayConfType='SHIPMENT_GATEWAY_DHL'"
  * @generated
  */
 public interface ShipmentGatewayDhl extends ShipmentGatewayConfig {

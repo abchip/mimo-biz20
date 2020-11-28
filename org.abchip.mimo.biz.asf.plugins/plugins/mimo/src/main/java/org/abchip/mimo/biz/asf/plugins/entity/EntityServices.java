@@ -385,6 +385,9 @@ public class EntityServices {
 		for (String entityName : entityNames) {
 			EClass eClass = Frames.getEClass(bizPackage, entityName);
 
+			if(entityName.equals("Budget"))
+				"".toString();
+			
 			// with attribute ID
 			EAttribute eClassAttributeID = eClass.getEIDAttribute();
 			if (eClassAttributeID == null)
@@ -424,7 +427,7 @@ public class EntityServices {
 				constraintField = constraintField.substring(0, constraintField.length() - 2);
 
 			String constraintValue = ModelUtil.javaNameToDbName(eClass.getName());
-			EcoreUtils.addAnnotationKey(eClass, Frame.NS_PREFIX_FRAME_CONSTRAINTS, constraintField, constraintValue);
+			EcoreUtils.addAnnotationKey(eClass, Frame.NS_PREFIX_FRAME_TYPE, constraintField, constraintValue);
 		}
 	}
 

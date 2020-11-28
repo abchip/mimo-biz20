@@ -28,7 +28,7 @@ package org.abchip.mimo.biz.model.shipment.shipment;
  *
  * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentGatewayUsps()
  * @model annotation="mimo-ent-frame title='USPS Shipment Gateway Configuration' formula='description'"
- *        annotation="mimo-ent-frame-constraints shipmentGatewayConfType='SHIPMENT_GATEWAY_USPS'"
+ *        annotation="mimo-ent-frame-type shipmentGatewayConfType='SHIPMENT_GATEWAY_USPS'"
  * @generated
  */
 public interface ShipmentGatewayUsps extends ShipmentGatewayConfig {

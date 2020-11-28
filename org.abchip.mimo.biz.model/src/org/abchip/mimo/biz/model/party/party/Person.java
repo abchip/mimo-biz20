@@ -58,7 +58,7 @@ import org.abchip.mimo.biz.model.party.MaritalStatus;
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPerson()
- * @model annotation="mimo-ent-frame-constraints partyType='PERSON'"
+ * @model annotation="mimo-ent-frame-type partyType='PERSON'"
  *        annotation="mimo-ent-frame formula='description'"
  * @generated
  */

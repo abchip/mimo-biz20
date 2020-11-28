@@ -29,11 +29,14 @@ public class ServiceUtils {
 		ContextDescription contextDescription = context.getContextDescription();
 
 		Map<String, Object> params = new HashMap<String, Object>();
-		params.put("userLogin", EntityUtils.toBizEntity(delegator, context.createProxy(UserLogin.class, contextDescription.getUser())));
+		
 		params.put("locale", contextDescription.getLocale());
+		
+		UserLogin userLogin = context.get(UserLogin.class);
+		if(userLogin != null)
+			params.put("userLogin", EntityUtils.toBizEntity(delegator, userLogin));
 
 		Frame<EntityIdentifiable> frame = entity.isa();
-
 		for (Slot slot : frame.getSlots()) {
 			if (slot.isTransient())
 				continue;

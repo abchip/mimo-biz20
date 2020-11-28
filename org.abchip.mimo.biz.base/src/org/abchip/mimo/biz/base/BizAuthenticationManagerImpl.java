@@ -81,6 +81,8 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 			contextUser.getContextDescription().setLocale(userLogin.getLastLocale().replace("_", "-"));
 		contextUser.getContextDescription().setTimeZone(userLogin.getLastTimeZone());
 
+		contextUser.set(UserLogin.class, userLogin);
+		
 		return contextHandler;
 	}
 

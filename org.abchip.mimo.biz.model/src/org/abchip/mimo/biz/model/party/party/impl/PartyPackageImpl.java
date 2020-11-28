@@ -4179,8 +4179,8 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		createMimoentformatAnnotations();
 		// mimo-ent-slot-constraints
 		createMimoentslotconstraintsAnnotations();
-		// mimo-ent-frame-constraints
-		createMimoentframeconstraintsAnnotations();
+		// mimo-ent-frame-type
+		createMimoentframetypeAnnotations();
 	}
 
 	/**
@@ -4835,13 +4835,13 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	}
 
 	/**
-	 * Initializes the annotations for <b>mimo-ent-frame-constraints</b>.
+	 * Initializes the annotations for <b>mimo-ent-frame-type</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void createMimoentframeconstraintsAnnotations() {
-		String source = "mimo-ent-frame-constraints";
+	protected void createMimoentframetypeAnnotations() {
+		String source = "mimo-ent-frame-type";
 		addAnnotation
 		  (partyGroupEClass,
 		   source,

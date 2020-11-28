@@ -40,7 +40,7 @@ import org.abchip.mimo.biz.model.party.contact.ContactMech;
  *
  * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getCreditCard()
  * @model annotation="mimo-ent-frame title='Credit Card Information' formula='description'"
- *        annotation="mimo-ent-frame-constraints paymentMethodType='CREDIT_CARD'"
+ *        annotation="mimo-ent-frame-type paymentMethodType='CREDIT_CARD'"
  * @generated
  */
 public interface CreditCard extends PaymentMethod {
