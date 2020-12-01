@@ -198,7 +198,6 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkeffortPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.EReference;
@@ -926,18 +925,10 @@ public class StatusPackageImpl extends EPackageImpl implements StatusPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
-		EGenericType g2 = createEGenericType(this.getStatusType());
-		g1.getETypeArguments().add(g2);
-		statusItemEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		statusItemEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityType());
-		g2 = createEGenericType(this.getStatusItem());
-		g1.getETypeArguments().add(g2);
-		statusTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
-		statusTypeEClass.getEGenericSuperTypes().add(g1);
+		statusItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		statusItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		statusTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		statusTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		statusValidChangeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		statusValidChangeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 

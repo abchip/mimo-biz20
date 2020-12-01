@@ -25,7 +25,27 @@
 	<extend-entity entity-name="SequenceValueItem">
 		<field name="sequencePolicy" type="value"></field>
 	</extend-entity>
-
+	<extend-entity entity-name="PartyClassificationType">
+		<field name="hasContactMech" type="indicator"></field>
+	</extend-entity>	
+    <entity entity-name="PartyClassificationContactMech"
+            package-name="org.apache.ofbiz.party.contact"
+            title="Party Classification Contact Mechanism" table-name="PARTY_CLASS_CONTACT_MECH">
+      <field name="partyClassificationGroupId" type="id"></field>
+      <field name="contactMechId" type="id"></field>
+      <field name="fromDate" type="date-time"></field>
+      <field name="thruDate" type="date-time"></field>
+      <prim-key field="partyClassificationGroupId"/>
+      <prim-key field="contactMechId"/>
+      <prim-key field="fromDate"/>
+      <relation type="one" fk-name="PARTY_CLASS_GROUP" rel-entity-name="PartyClassificationGroup">
+        <key-map field-name="partyClassificationGroupId"/>
+      </relation>
+      <relation type="one" fk-name="PARTY_CLASS_CMECH" rel-entity-name="ContactMech">
+        <key-map field-name="contactMechId"/>
+      </relation>
+    </entity>
+    
     <entity entity-name="EmailAddress"
             package-name="org.apache.ofbiz.party.contact"
             title="Email Address">
@@ -74,14 +94,5 @@
 	    <field name="fieldTelNumber" type="tel-number"/>
 		<prim-key field="fieldId" />
 	</entity>
-
-<!-- 
-	<entity entity-name="EntitiesDescription"
-		package-name="org.abchip.mimo.biz.asf.plugins.entity"
-		title="Entities formula description">
-		<field name="entityId" type="id-long"></field>
-		<field name="formula" type="description"></field>
-		<prim-key field="entityId" />
-	</entity>
- -->
+	
 </entitymodel>

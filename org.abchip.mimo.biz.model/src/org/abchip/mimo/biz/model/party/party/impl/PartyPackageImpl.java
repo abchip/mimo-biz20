@@ -1580,8 +1580,18 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getPartyClassificationGroup_PartyClassificationType() {
+	public EReference getPartyClassificationGroup_PartyClassificationContactMechs() {
 		return (EReference)partyClassificationGroupEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPartyClassificationGroup_PartyClassificationType() {
+		return (EReference)partyClassificationGroupEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -1620,7 +1630,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getPartyClassificationType_HasTable() {
+	public EAttribute getPartyClassificationType_HasContactMech() {
 		return (EAttribute)partyClassificationTypeEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -1630,8 +1640,18 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
+	public EAttribute getPartyClassificationType_HasTable() {
+		return (EAttribute)partyClassificationTypeEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EReference getPartyClassificationType_ParentType() {
-		return (EReference)partyClassificationTypeEClass.getEStructuralFeatures().get(3);
+		return (EReference)partyClassificationTypeEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -3514,11 +3534,13 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		createEAttribute(partyClassificationGroupEClass, PARTY_CLASSIFICATION_GROUP__PARTY_CLASSIFICATION_GROUP_ID);
 		createEAttribute(partyClassificationGroupEClass, PARTY_CLASSIFICATION_GROUP__DESCRIPTION);
 		createEReference(partyClassificationGroupEClass, PARTY_CLASSIFICATION_GROUP__PARENT_GROUP);
+		createEReference(partyClassificationGroupEClass, PARTY_CLASSIFICATION_GROUP__PARTY_CLASSIFICATION_CONTACT_MECHS);
 		createEReference(partyClassificationGroupEClass, PARTY_CLASSIFICATION_GROUP__PARTY_CLASSIFICATION_TYPE);
 
 		partyClassificationTypeEClass = createEClass(PARTY_CLASSIFICATION_TYPE);
 		createEAttribute(partyClassificationTypeEClass, PARTY_CLASSIFICATION_TYPE__PARTY_CLASSIFICATION_TYPE_ID);
 		createEAttribute(partyClassificationTypeEClass, PARTY_CLASSIFICATION_TYPE__DESCRIPTION);
+		createEAttribute(partyClassificationTypeEClass, PARTY_CLASSIFICATION_TYPE__HAS_CONTACT_MECH);
 		createEAttribute(partyClassificationTypeEClass, PARTY_CLASSIFICATION_TYPE__HAS_TABLE);
 		createEReference(partyClassificationTypeEClass, PARTY_CLASSIFICATION_TYPE__PARENT_TYPE);
 
@@ -3793,10 +3815,18 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		partyCarrierAccountEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		partyClassificationEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		partyClassificationEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		partyClassificationGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		partyClassificationGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		partyClassificationTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		partyClassificationTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		g2 = createEGenericType(this.getPartyClassificationType());
+		g1.getETypeArguments().add(g2);
+		partyClassificationGroupEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		partyClassificationGroupEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
+		g2 = createEGenericType(this.getPartyClassificationGroup());
+		g1.getETypeArguments().add(g2);
+		partyClassificationTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		partyClassificationTypeEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		g2 = createEGenericType(this.getPartyContentType());
 		g1.getETypeArguments().add(g2);
@@ -3958,11 +3988,13 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		initEAttribute(getPartyClassificationGroup_PartyClassificationGroupId(), ecorePackage.getEString(), "partyClassificationGroupId", null, 1, 1, PartyClassificationGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyClassificationGroup_Description(), ecorePackage.getEString(), "description", null, 0, 1, PartyClassificationGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPartyClassificationGroup_ParentGroup(), this.getPartyClassificationGroup(), null, "parentGroup", null, 0, 1, PartyClassificationGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPartyClassificationGroup_PartyClassificationContactMechs(), theContactPackage_1.getPartyClassificationContactMech(), null, "partyClassificationContactMechs", null, 0, -1, PartyClassificationGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getPartyClassificationGroup_PartyClassificationType(), this.getPartyClassificationType(), null, "partyClassificationType", null, 0, 1, PartyClassificationGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(partyClassificationTypeEClass, PartyClassificationType.class, "PartyClassificationType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPartyClassificationType_PartyClassificationTypeId(), ecorePackage.getEString(), "partyClassificationTypeId", null, 1, 1, PartyClassificationType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyClassificationType_Description(), ecorePackage.getEString(), "description", null, 0, 1, PartyClassificationType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPartyClassificationType_HasContactMech(), ecorePackage.getEBooleanObject(), "hasContactMech", null, 0, 1, PartyClassificationType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyClassificationType_HasTable(), ecorePackage.getEBooleanObject(), "hasTable", null, 0, 1, PartyClassificationType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPartyClassificationType_ParentType(), this.getPartyClassificationType(), null, "parentType", null, 0, 1, PartyClassificationType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -4822,6 +4854,12 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		   });
 		addAnnotation
 		  (getParty_PerformanceNotes(),
+		   source,
+		   new String[] {
+			   "fromDate", "*NOW"
+		   });
+		addAnnotation
+		  (getPartyClassificationGroup_PartyClassificationContactMechs(),
 		   source,
 		   new String[] {
 			   "fromDate", "*NOW"

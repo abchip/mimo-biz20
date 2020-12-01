@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.party.party;
 
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -21,6 +21,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyClassificationType#getPartyClassificationTypeId <em>Party Classification Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyClassificationType#getDescription <em>Description</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyClassificationType#getHasContactMech <em>Has Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyClassificationType#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyClassificationType#getParentType <em>Parent Type</em>}</li>
  * </ul>
@@ -29,7 +30,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame dictionary='PartyEntityLabels' formula='description'"
  * @generated
  */
-public interface PartyClassificationType extends EntityIdentifiable, EntityInfo {
+public interface PartyClassificationType extends EntityType<PartyClassificationGroup>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -55,6 +56,28 @@ public interface PartyClassificationType extends EntityIdentifiable, EntityInfo 
 	 * @generated
 	 */
 	void setDescription(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Has Contact Mech</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Has Contact Mech</em>' attribute.
+	 * @see #setHasContactMech(Boolean)
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyClassificationType_HasContactMech()
+	 * @model
+	 * @generated
+	 */
+	Boolean getHasContactMech();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyClassificationType#getHasContactMech <em>Has Contact Mech</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Has Contact Mech</em>' attribute.
+	 * @see #getHasContactMech()
+	 * @generated
+	 */
+	void setHasContactMech(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Has Table</b></em>' attribute.

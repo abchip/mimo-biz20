@@ -8,11 +8,12 @@
 package org.abchip.mimo.biz.model.party.party.impl;
 
 import java.util.Date;
+import org.abchip.mimo.biz.model.party.party.PartyClassificationGroup;
 import org.abchip.mimo.biz.model.party.party.PartyClassificationType;
 import org.abchip.mimo.biz.model.party.party.PartyPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -29,13 +30,14 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationTypeImpl#getPartyClassificationTypeId <em>Party Classification Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationTypeImpl#getDescription <em>Description</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationTypeImpl#getHasContactMech <em>Has Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationTypeImpl#getHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationTypeImpl#getParentType <em>Parent Type</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class PartyClassificationTypeImpl extends EntityIdentifiableImpl implements PartyClassificationType {
+public class PartyClassificationTypeImpl extends EntityTypeImpl<PartyClassificationGroup> implements PartyClassificationType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,9 +62,16 @@ public class PartyClassificationTypeImpl extends EntityIdentifiableImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 1;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return 0;
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**
@@ -163,6 +172,26 @@ public class PartyClassificationTypeImpl extends EntityIdentifiableImpl implemen
 	@Override
 	public void setDescription(String newDescription) {
 		eSet(PartyPackage.Literals.PARTY_CLASSIFICATION_TYPE__DESCRIPTION, newDescription);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Boolean getHasContactMech() {
+		return (Boolean)eGet(PartyPackage.Literals.PARTY_CLASSIFICATION_TYPE__HAS_CONTACT_MECH, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setHasContactMech(Boolean newHasContactMech) {
+		eSet(PartyPackage.Literals.PARTY_CLASSIFICATION_TYPE__HAS_CONTACT_MECH, newHasContactMech);
 	}
 
 	/**

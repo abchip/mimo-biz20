@@ -1044,6 +1044,97 @@ public interface ContactPackage extends EPackage {
 	int FTP_ADDRESS_FEATURE_COUNT = CONTACT_MECH_FEATURE_COUNT + 9;
 
 	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.contact.impl.PartyClassificationContactMechImpl <em>Party Classification Contact Mech</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.model.party.contact.impl.PartyClassificationContactMechImpl
+	 * @see org.abchip.mimo.biz.model.party.contact.impl.ContactPackageImpl#getPartyClassificationContactMech()
+	 * @generated
+	 */
+	int PARTY_CLASSIFICATION_CONTACT_MECH = 10;
+
+	/**
+	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_CLASSIFICATION_CONTACT_MECH__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_CLASSIFICATION_CONTACT_MECH__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_CLASSIFICATION_CONTACT_MECH__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_CLASSIFICATION_CONTACT_MECH__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Party Classification Group</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_CLASSIFICATION_CONTACT_MECH__PARTY_CLASSIFICATION_GROUP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Contact Mech</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_CLASSIFICATION_CONTACT_MECH__CONTACT_MECH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>From Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_CLASSIFICATION_CONTACT_MECH__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_CLASSIFICATION_CONTACT_MECH__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+
+	/**
+	 * The number of structural features of the '<em>Party Classification Contact Mech</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_CLASSIFICATION_CONTACT_MECH_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+
+	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl <em>Party Contact Mech</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1051,7 +1142,7 @@ public interface ContactPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.contact.impl.ContactPackageImpl#getPartyContactMech()
 	 * @generated
 	 */
-	int PARTY_CONTACT_MECH = 10;
+	int PARTY_CONTACT_MECH = 11;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1205,7 +1296,7 @@ public interface ContactPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.contact.impl.ContactPackageImpl#getPartyContactMechPurpose()
 	 * @generated
 	 */
-	int PARTY_CONTACT_MECH_PURPOSE = 11;
+	int PARTY_CONTACT_MECH_PURPOSE = 12;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1305,7 +1396,7 @@ public interface ContactPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.contact.impl.ContactPackageImpl#getPostalAddress()
 	 * @generated
 	 */
-	int POSTAL_ADDRESS = 12;
+	int POSTAL_ADDRESS = 13;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1567,7 +1658,7 @@ public interface ContactPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.contact.impl.ContactPackageImpl#getPostalAddressBoundary()
 	 * @generated
 	 */
-	int POSTAL_ADDRESS_BOUNDARY = 13;
+	int POSTAL_ADDRESS_BOUNDARY = 14;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1640,7 +1731,7 @@ public interface ContactPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.contact.impl.ContactPackageImpl#getTelecomNumber()
 	 * @generated
 	 */
-	int TELECOM_NUMBER = 14;
+	int TELECOM_NUMBER = 15;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1776,7 +1867,7 @@ public interface ContactPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.contact.impl.ContactPackageImpl#getValidContactMechRole()
 	 * @generated
 	 */
-	int VALID_CONTACT_MECH_ROLE = 15;
+	int VALID_CONTACT_MECH_ROLE = 16;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -2348,6 +2439,60 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getFtpAddress_ZipFile();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.party.contact.PartyClassificationContactMech <em>Party Classification Contact Mech</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Party Classification Contact Mech</em>'.
+	 * @see org.abchip.mimo.biz.model.party.contact.PartyClassificationContactMech
+	 * @generated
+	 */
+	EClass getPartyClassificationContactMech();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.contact.PartyClassificationContactMech#getPartyClassificationGroup <em>Party Classification Group</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Party Classification Group</em>'.
+	 * @see org.abchip.mimo.biz.model.party.contact.PartyClassificationContactMech#getPartyClassificationGroup()
+	 * @see #getPartyClassificationContactMech()
+	 * @generated
+	 */
+	EReference getPartyClassificationContactMech_PartyClassificationGroup();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.contact.PartyClassificationContactMech#getContactMech <em>Contact Mech</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Contact Mech</em>'.
+	 * @see org.abchip.mimo.biz.model.party.contact.PartyClassificationContactMech#getContactMech()
+	 * @see #getPartyClassificationContactMech()
+	 * @generated
+	 */
+	EReference getPartyClassificationContactMech_ContactMech();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.contact.PartyClassificationContactMech#getFromDate <em>From Date</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>From Date</em>'.
+	 * @see org.abchip.mimo.biz.model.party.contact.PartyClassificationContactMech#getFromDate()
+	 * @see #getPartyClassificationContactMech()
+	 * @generated
+	 */
+	EAttribute getPartyClassificationContactMech_FromDate();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.contact.PartyClassificationContactMech#getThruDate <em>Thru Date</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Thru Date</em>'.
+	 * @see org.abchip.mimo.biz.model.party.contact.PartyClassificationContactMech#getThruDate()
+	 * @see #getPartyClassificationContactMech()
+	 * @generated
+	 */
+	EAttribute getPartyClassificationContactMech_ThruDate();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech <em>Party Contact Mech</em>}'.
@@ -3288,6 +3433,48 @@ public interface ContactPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute FTP_ADDRESS__ZIP_FILE = eINSTANCE.getFtpAddress_ZipFile();
+
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.party.contact.impl.PartyClassificationContactMechImpl <em>Party Classification Contact Mech</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.model.party.contact.impl.PartyClassificationContactMechImpl
+		 * @see org.abchip.mimo.biz.model.party.contact.impl.ContactPackageImpl#getPartyClassificationContactMech()
+		 * @generated
+		 */
+		EClass PARTY_CLASSIFICATION_CONTACT_MECH = eINSTANCE.getPartyClassificationContactMech();
+
+		/**
+		 * The meta object literal for the '<em><b>Party Classification Group</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARTY_CLASSIFICATION_CONTACT_MECH__PARTY_CLASSIFICATION_GROUP = eINSTANCE.getPartyClassificationContactMech_PartyClassificationGroup();
+
+		/**
+		 * The meta object literal for the '<em><b>Contact Mech</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARTY_CLASSIFICATION_CONTACT_MECH__CONTACT_MECH = eINSTANCE.getPartyClassificationContactMech_ContactMech();
+
+		/**
+		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PARTY_CLASSIFICATION_CONTACT_MECH__FROM_DATE = eINSTANCE.getPartyClassificationContactMech_FromDate();
+
+		/**
+		 * The meta object literal for the '<em><b>Thru Date</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PARTY_CLASSIFICATION_CONTACT_MECH__THRU_DATE = eINSTANCE.getPartyClassificationContactMech_ThruDate();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl <em>Party Contact Mech</em>}' class.

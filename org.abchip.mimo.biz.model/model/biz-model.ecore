@@ -28,13 +28,16 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="budgetAttributes" upperBound="-1"
-            eType="#//accounting/budget/BudgetAttribute" derived="true"/>
+            eType="#//accounting/budget/BudgetAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="budgetItems" upperBound="-1"
             eType="#//accounting/budget/BudgetItem" derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="budgetRevisions" upperBound="-1"
-            eType="#//accounting/budget/BudgetRevision" derived="true"/>
+            eType="#//accounting/budget/BudgetRevision"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="budgetStatuses" upperBound="-1"
-            eType="#//accounting/budget/BudgetStatus" derived="true"/>
+            eType="#//accounting/budget/BudgetStatus"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="budgetType" eType="#//accounting/budget/BudgetType"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="comments" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
@@ -164,7 +167,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="budgetItemTypeAttrs"
-            upperBound="-1" eType="#//accounting/budget/BudgetItemTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//accounting/budget/BudgetItemTypeAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="description"/>
@@ -347,7 +351,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="budgetScenarioRules"
-            upperBound="-1" eType="#//accounting/budget/BudgetScenarioRule" derived="true"/>
+            upperBound="-1" eType="#//accounting/budget/BudgetScenarioRule"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="description"/>
@@ -453,7 +458,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="budgetTypeAttrs" upperBound="-1"
-            eType="#//accounting/budget/BudgetTypeAttr" derived="true"/>
+            eType="#//accounting/budget/BudgetTypeAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="description"/>
@@ -528,7 +534,8 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="currencyUom" eType="#//common/uom/Uom"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="finAccountAttributes"
-            upperBound="-1" eType="#//accounting/finaccount/FinAccountAttribute" derived="true"/>
+            upperBound="-1" eType="#//accounting/finaccount/FinAccountAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="finAccountCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-slot">
             <details key="encrypt" value="TRUE"/>
@@ -551,7 +558,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="finAccountStatuses"
-            upperBound="-1" eType="#//accounting/finaccount/FinAccountStatus" derived="true">
+            upperBound="-1" eType="#//accounting/finaccount/FinAccountStatus"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="statusDate" value="*NOW"/>
           </eAnnotations>
@@ -873,7 +881,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="finAccountTypeAttrs"
-            upperBound="-1" eType="#//accounting/finaccount/FinAccountTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//accounting/finaccount/FinAccountTypeAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="finAccountTypeGlAccounts"
             upperBound="-1" eType="#//accounting/finaccount/FinAccountTypeGlAccount"
             derived="true"/>
@@ -1032,17 +1041,21 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="expectedEndOfLife"
             eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="fixedAssetAttributes"
-            upperBound="-1" eType="#//accounting/fixedasset/FixedAssetAttribute" derived="true"/>
+            upperBound="-1" eType="#//accounting/fixedasset/FixedAssetAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="fixedAssetGeoPoints"
-            upperBound="-1" eType="#//accounting/fixedasset/FixedAssetGeoPoint" derived="true">
+            upperBound="-1" eType="#//accounting/fixedasset/FixedAssetGeoPoint"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="fixedAssetIdents" upperBound="-1"
-            eType="#//accounting/fixedasset/FixedAssetIdent" derived="true"/>
+            eType="#//accounting/fixedasset/FixedAssetIdent"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="fixedAssetMaints" upperBound="-1"
-            eType="#//accounting/fixedasset/FixedAssetMaint" derived="true"/>
+            eType="#//accounting/fixedasset/FixedAssetMaint"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="fixedAssetName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="name"/>
@@ -1052,7 +1065,8 @@
             upperBound="-1" eType="#//accounting/fixedasset/FixedAssetRegistration"
             derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="fixedAssetStdCosts"
-            upperBound="-1" eType="#//accounting/fixedasset/FixedAssetStdCost" derived="true">
+            upperBound="-1" eType="#//accounting/fixedasset/FixedAssetStdCost"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -1552,7 +1566,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="fixedAssetTypeAttrs"
-            upperBound="-1" eType="#//accounting/fixedasset/FixedAssetTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//accounting/fixedasset/FixedAssetTypeAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasTable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parentType" eType="#//accounting/fixedasset/FixedAssetType"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
@@ -1701,19 +1716,23 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="dueDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="invoiceAttributes"
-            upperBound="-1" eType="#//accounting/invoice/InvoiceAttribute" derived="true"/>
+            upperBound="-1" eType="#//accounting/invoice/InvoiceAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="invoiceDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="invoiceItems" upperBound="-1"
-            eType="#//accounting/invoice/InvoiceItem" derived="true"/>
+            eType="#//accounting/invoice/InvoiceItem"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="invoiceMessage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="length" value="255"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="invoiceNotes" upperBound="-1"
-            eType="#//accounting/invoice/InvoiceNote" derived="true"/>
+            eType="#//accounting/invoice/InvoiceNote"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="invoiceStatuses" upperBound="-1"
-            eType="#//accounting/invoice/InvoiceStatus" derived="true">
+            eType="#//accounting/invoice/InvoiceStatus"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="statusDate" value="*NOW"/>
           </eAnnotations>
@@ -2072,7 +2091,8 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasTable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="invoiceItemTypeAttrs"
-            upperBound="-1" eType="#//accounting/invoice/InvoiceItemTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//accounting/invoice/InvoiceItemTypeAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="invoiceItemTypeGlAccounts"
             upperBound="-1" eType="#//accounting/invoice/InvoiceItemTypeGlAccount"
             derived="true"/>
@@ -2223,7 +2243,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="invoiceTermAttributes"
-            upperBound="-1" eType="#//accounting/invoice/InvoiceTermAttribute" derived="true"/>
+            upperBound="-1" eType="#//accounting/invoice/InvoiceTermAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="termDays" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong">
           <eAnnotations source="mimo-ent-format">
             <details key="precision" value="20"/>
@@ -2295,7 +2316,8 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasTable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="invoiceTypeAttrs" upperBound="-1"
-            eType="#//accounting/invoice/InvoiceTypeAttr" derived="true"/>
+            eType="#//accounting/invoice/InvoiceTypeAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parentType" eType="#//accounting/invoice/InvoiceType"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
           <eTypeArguments eClassifier="#//accounting/invoice/Invoice"/>
@@ -2344,9 +2366,11 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="acctgTransAttributes"
-            upperBound="-1" eType="#//accounting/ledger/AcctgTransAttribute" derived="true"/>
+            upperBound="-1" eType="#//accounting/ledger/AcctgTransAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="acctgTransEntries"
-            upperBound="-1" eType="#//accounting/ledger/AcctgTransEntry" derived="true"/>
+            upperBound="-1" eType="#//accounting/ledger/AcctgTransEntry"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="acctgTransType" eType="#//accounting/ledger/AcctgTransType"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="createdByUserLogin"
             eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -2466,7 +2490,7 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="currencyUom" eType="#//common/uom/Uom"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="debitCreditFlag" lowerBound="1"
-            eType="#//accounting/DebitCreditFlag"/>
+            eType="ecore:EEnum #//accounting/DebitCreditFlag"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="description"/>
@@ -2568,7 +2592,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="acctgTransTypeAttrs"
-            upperBound="-1" eType="#//accounting/ledger/AcctgTransTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//accounting/ledger/AcctgTransTypeAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="description"/>
@@ -2643,19 +2668,23 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="glAccountCategoryMembers"
-            upperBound="-1" eType="#//accounting/ledger/GlAccountCategoryMember" derived="true">
+            upperBound="-1" eType="#//accounting/ledger/GlAccountCategoryMember"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="glAccountClass" eType="#//accounting/ledger/GlAccountClass"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="glAccountGroupMembers"
-            upperBound="-1" eType="#//accounting/ledger/GlAccountGroupMember" derived="true"/>
+            upperBound="-1" eType="#//accounting/ledger/GlAccountGroupMember"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="glAccountOrganizations"
-            upperBound="-1" eType="#//accounting/ledger/GlAccountOrganization" derived="true"/>
+            upperBound="-1" eType="#//accounting/ledger/GlAccountOrganization"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="glAccountType" eType="#//accounting/ledger/GlAccountType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="glBudgetXrefs" upperBound="-1"
-            eType="#//accounting/ledger/GlBudgetXref" derived="true">
+            eType="#//accounting/ledger/GlBudgetXref"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -2952,7 +2981,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="glAccountTypeDefaults"
-            upperBound="-1" eType="#//accounting/ledger/GlAccountTypeDefault" derived="true"/>
+            upperBound="-1" eType="#//accounting/ledger/GlAccountTypeDefault"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasTable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parentType" eType="#//accounting/ledger/GlAccountType"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
@@ -3504,7 +3534,8 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="billingAccount" eType="#//accounting/payment/BillingAccount"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="billingAccountTermAttrs"
-            upperBound="-1" eType="#//accounting/payment/BillingAccountTermAttr" derived="true"/>
+            upperBound="-1" eType="#//accounting/payment/BillingAccountTermAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="termDays" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong">
           <eAnnotations source="mimo-ent-format">
             <details key="precision" value="20"/>
@@ -3990,7 +4021,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyIdFrom" eType="#//party/party/Party"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyIdTo" eType="#//party/party/Party"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="paymentAttributes"
-            upperBound="-1" eType="#//accounting/payment/PaymentAttribute" derived="true"/>
+            upperBound="-1" eType="#//accounting/payment/PaymentAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="paymentGatewayResponse"
             eType="#//accounting/payment/PaymentGatewayResponse"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="paymentMethod" eType="#//accounting/payment/PaymentMethod"/>
@@ -4355,7 +4387,7 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="processMode" lowerBound="1"
-            eType="#//accounting/ProcessMode">
+            eType="ecore:EEnum #//accounting/ProcessMode">
           <eAnnotations source="mimo-ent-slot">
             <details key="help" value="Process mode (Y: approve / N: decline / R: random / P: production)"/>
           </eAnnotations>
@@ -5357,7 +5389,7 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="authMode" lowerBound="1"
-            eType="#//accounting/AuthMode">
+            eType="ecore:EEnum #//accounting/AuthMode">
           <eAnnotations source="mimo-ent-slot">
             <details key="help" value="Authorization Mode (A: Full-Auth / E: Pre-Auth)"/>
           </eAnnotations>
@@ -5457,7 +5489,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="paymentGroupMembers"
-            upperBound="-1" eType="#//accounting/payment/PaymentGroupMember" derived="true">
+            upperBound="-1" eType="#//accounting/payment/PaymentGroupMember"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -5619,7 +5652,8 @@
             upperBound="-1" eType="#//accounting/payment/PaymentGlAccountTypeMap"
             derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="paymentTypeAttrs" upperBound="-1"
-            eType="#//accounting/payment/PaymentTypeAttr" derived="true"/>
+            eType="#//accounting/payment/PaymentTypeAttr"
+            derived="true"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
           <eTypeArguments eClassifier="#//accounting/payment/Payment"/>
         </eGenericSuperTypes>
@@ -6484,7 +6518,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="userLoginSecurityQuestions"
-            upperBound="-1" eType="#//security/login/UserLoginSecurityQuestion" derived="true"/>
+            upperBound="-1" eType="#//security/login/UserLoginSecurityQuestion"
+            derived="true"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityTyped">
           <eTypeArguments eClassifier="#//common/enum/EnumerationType"/>
         </eGenericSuperTypes>
@@ -6645,7 +6680,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="mainGeoAssocs" upperBound="-1"
             eType="#//common/geo/GeoAssoc" derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="taxAuthTaxAuthorities"
-            upperBound="-1" eType="#//accounting/tax/TaxAuthority" derived="true"/>
+            upperBound="-1" eType="#//accounting/tax/TaxAuthority"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="wellKnownText" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityTyped">
           <eTypeArguments eClassifier="#//common/geo/GeoType"/>
@@ -6870,7 +6906,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="fixedAssetDepMethods"
-            upperBound="-1" eType="#//accounting/fixedasset/FixedAssetDepMethod" derived="true"/>
+            upperBound="-1" eType="#//accounting/fixedasset/FixedAssetDepMethod"
+            derived="true"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityTyped">
           <eTypeArguments eClassifier="#//common/method/CustomMethodType"/>
         </eGenericSuperTypes>
@@ -7042,7 +7079,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="portalPageColumns"
-            upperBound="-1" eType="#//common/portal/PortalPageColumn" derived="true"/>
+            upperBound="-1" eType="#//common/portal/PortalPageColumn"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="portalPageName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="name"/>
@@ -7161,7 +7199,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="portletPortletCategories"
-            upperBound="-1" eType="#//common/portal/PortletPortletCategory" derived="true"/>
+            upperBound="-1" eType="#//common/portal/PortletPortletCategory"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="screenLocation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="length" value="255"/>
@@ -7388,7 +7427,7 @@
     </eSubpackages>
     <eSubpackages name="status" nsURI="http://www.abchip.org/mimo/biz/model/common/status"
         nsPrefix="biz-status">
-      <eClassifiers xsi:type="ecore:EClass" name="StatusItem">
+      <eClassifiers xsi:type="ecore:EClass" name="StatusItem" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityIdentifiable ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo">
         <eAnnotations source="mimo-ent-frame">
           <details key="title" value="Status"/>
           <details key="dictionary" value="CommonEntityLabels"/>
@@ -7407,7 +7446,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="mainStatusValidChanges"
-            upperBound="-1" eType="#//common/status/StatusValidChange" derived="true"/>
+            upperBound="-1" eType="#//common/status/StatusValidChange"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="sequenceId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="length" value="20"/>
@@ -7419,12 +7459,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="statusType" eType="#//common/status/StatusType"/>
-        <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityTyped">
-          <eTypeArguments eClassifier="#//common/status/StatusType"/>
-        </eGenericSuperTypes>
-        <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo"/>
       </eClassifiers>
-      <eClassifiers xsi:type="ecore:EClass" name="StatusType">
+      <eClassifiers xsi:type="ecore:EClass" name="StatusType" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityIdentifiable ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo">
         <eAnnotations source="mimo-ent-frame">
           <details key="dictionary" value="CommonEntityLabels"/>
           <details key="formula" value="description"/>
@@ -7443,10 +7479,6 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasTable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parentType" eType="#//common/status/StatusType"/>
-        <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
-          <eTypeArguments eClassifier="#//common/status/StatusItem"/>
-        </eGenericSuperTypes>
-        <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="StatusValidChange" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityIdentifiable ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo">
         <eAnnotations source="mimo-ent-frame">
@@ -7577,7 +7609,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="datedMainUomConversionDateds"
-            upperBound="-1" eType="#//common/uom/UomConversionDated" derived="true">
+            upperBound="-1" eType="#//common/uom/UomConversionDated"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -7588,7 +7621,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="mainUomConversions"
-            upperBound="-1" eType="#//common/uom/UomConversion" derived="true"/>
+            upperBound="-1" eType="#//common/uom/UomConversion"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="numericCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong">
           <eAnnotations source="mimo-ent-format">
             <details key="precision" value="20"/>
@@ -7813,20 +7847,25 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="contentAttributes"
-            upperBound="-1" eType="#//content/content/ContentAttribute" derived="true"/>
+            upperBound="-1" eType="#//content/content/ContentAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="contentKeywords" upperBound="-1"
-            eType="#//content/content/ContentKeyword" derived="true"/>
+            eType="#//content/content/ContentKeyword"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="contentMetaDatas" upperBound="-1"
-            eType="#//content/content/ContentMetaData" derived="true"/>
+            eType="#//content/content/ContentMetaData"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="contentName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="length" value="255"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="contentPurposes" upperBound="-1"
-            eType="#//content/content/ContentPurpose" derived="true"/>
+            eType="#//content/content/ContentPurpose"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="contentRevisions" upperBound="-1"
-            eType="#//content/content/ContentRevision" derived="true"/>
+            eType="#//content/content/ContentRevision"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="contentType" eType="#//content/content/ContentType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="createdByUserLogin"
             eType="#//security/login/UserLogin"/>
@@ -7841,7 +7880,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="fromCommEventContentAssocs"
-            upperBound="-1" eType="#//party/communication/CommEventContentAssoc" derived="true">
+            upperBound="-1" eType="#//party/communication/CommEventContentAssoc"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -8334,7 +8374,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="contentSearchConstraints"
-            upperBound="-1" eType="#//content/content/ContentSearchConstraint" derived="true"/>
+            upperBound="-1" eType="#//content/content/ContentSearchConstraint"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAscending" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="numResults" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong">
           <eAnnotations source="mimo-ent-format">
@@ -8368,7 +8409,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="contentTypeAttrs" upperBound="-1"
-            eType="#//content/content/ContentTypeAttr" derived="true"/>
+            eType="#//content/content/ContentTypeAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="description"/>
@@ -8477,16 +8519,19 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="createdDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="dataCategory" eType="#//content/data/DataCategory"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="dataResourceAttributes"
-            upperBound="-1" eType="#//content/data/DataResourceAttribute" derived="true"/>
+            upperBound="-1" eType="#//content/data/DataResourceAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="dataResourceMetaDatas"
-            upperBound="-1" eType="#//content/data/DataResourceMetaData" derived="true"/>
+            upperBound="-1" eType="#//content/data/DataResourceMetaData"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataResourceName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="length" value="255"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="dataResourcePurposes"
-            upperBound="-1" eType="#//content/data/DataResourcePurpose" derived="true"/>
+            upperBound="-1" eType="#//content/data/DataResourcePurpose"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="dataResourceType" eType="#//content/data/DataResourceType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="dataSource" eType="#//common/datasource/DataSource"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="dataTemplateType" eType="#//content/data/DataTemplateType"/>
@@ -8646,7 +8691,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="dataResourceTypeAttrs"
-            upperBound="-1" eType="#//content/data/DataResourceTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//content/data/DataResourceTypeAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="description"/>
@@ -8838,7 +8884,8 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateCreated" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="documentAttributes"
-            upperBound="-1" eType="#//content/document/DocumentAttribute" derived="true"/>
+            upperBound="-1" eType="#//content/document/DocumentAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="documentLocation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="length" value="255"/>
@@ -8901,7 +8948,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="documentTypeAttrs"
-            upperBound="-1" eType="#//content/document/DocumentTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//content/document/DocumentTypeAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasTable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parentType" eType="#//content/document/DocumentType"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
@@ -9053,7 +9101,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="surveyMultiResps" upperBound="-1"
-            eType="#//content/survey/SurveyMultiResp" derived="true"/>
+            eType="#//content/survey/SurveyMultiResp"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="surveyName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="name"/>
@@ -9062,7 +9111,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="surveyPages" upperBound="-1"
             eType="#//content/survey/SurveyPage" derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="surveyQuestionAppls"
-            upperBound="-1" eType="#//content/survey/SurveyQuestionAppl" derived="true">
+            upperBound="-1" eType="#//content/survey/SurveyQuestionAppl"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -9224,7 +9274,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="surveyQuestionCategory"
             eType="#//content/survey/SurveyQuestionCategory"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="surveyQuestionOptions"
-            upperBound="-1" eType="#//content/survey/SurveyQuestionOption" derived="true"/>
+            upperBound="-1" eType="#//content/survey/SurveyQuestionOption"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="surveyQuestionType"
             eType="#//content/survey/SurveyQuestionType"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityTyped">
@@ -9831,7 +9882,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="entityGroupEntries"
-            upperBound="-1" eType="#//entity/group/EntityGroupEntry" derived="true"/>
+            upperBound="-1" eType="#//entity/group/EntityGroupEntry"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="entityGroupName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="name"/>
@@ -9901,12 +9953,14 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="entitySyncHistories"
-            upperBound="-1" eType="#//entity/synchronization/EntitySyncHistory" derived="true"/>
+            upperBound="-1" eType="#//entity/synchronization/EntitySyncHistory"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="entitySyncIncludeGroups"
             upperBound="-1" eType="#//entity/synchronization/EntitySyncIncludeGroup"
             derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="entitySyncIncludes"
-            upperBound="-1" eType="#//entity/synchronization/EntitySyncInclude" derived="true"/>
+            upperBound="-1" eType="#//entity/synchronization/EntitySyncInclude"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="forPullOnly" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="forPushOnly" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="keepRemoveInfoHours"
@@ -10217,7 +10271,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="tenantDataSources"
-            upperBound="-1" eType="#//entity/tenant/TenantDataSource" derived="true"/>
+            upperBound="-1" eType="#//entity/tenant/TenantDataSource"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="tenantName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="name"/>
@@ -10590,7 +10645,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="primaryParentNode"
             eType="#//entity/test/TestingNode"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="testingNodeMembers"
-            upperBound="-1" eType="#//entity/test/TestingNodeMember" derived="true">
+            upperBound="-1" eType="#//entity/test/TestingNodeMember"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -11642,7 +11698,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="emplPositionFulfillments"
-            upperBound="-1" eType="#//humanres/position/EmplPositionFulfillment" derived="true">
+            upperBound="-1" eType="#//humanres/position/EmplPositionFulfillment"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -11800,13 +11857,15 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="emplPositionTypeClasses"
-            upperBound="-1" eType="#//humanres/position/EmplPositionTypeClass" derived="true">
+            upperBound="-1" eType="#//humanres/position/EmplPositionTypeClass"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="emplPositionTypeRates"
-            upperBound="-1" eType="#//humanres/position/EmplPositionTypeRate" derived="true">
+            upperBound="-1" eType="#//humanres/position/EmplPositionTypeRate"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -11815,7 +11874,8 @@
             eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parentType" eType="#//humanres/position/EmplPositionType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="validResponsibilities"
-            upperBound="-1" eType="#//humanres/position/ValidResponsibility" derived="true">
+            upperBound="-1" eType="#//humanres/position/ValidResponsibility"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -11996,7 +12056,7 @@
             <details key="scale" value="0"/>
           </eAnnotations>
         </eStructuralFeatures>
-        <eStructuralFeatures xsi:type="ecore:EAttribute" name="gender" eType="#//common/Gender"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="gender" eType="ecore:EEnum #//common/Gender"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="jobLocation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="length" value="20"/>
@@ -12345,15 +12405,18 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="marketingCampaignNotes"
-            upperBound="-1" eType="#//marketing/campaign/MarketingCampaignNote" derived="true"/>
+            upperBound="-1" eType="#//marketing/campaign/MarketingCampaignNote"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="marketingCampaignPrices"
-            upperBound="-1" eType="#//marketing/campaign/MarketingCampaignPrice" derived="true">
+            upperBound="-1" eType="#//marketing/campaign/MarketingCampaignPrice"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="marketingCampaignPromos"
-            upperBound="-1" eType="#//marketing/campaign/MarketingCampaignPromo" derived="true">
+            upperBound="-1" eType="#//marketing/campaign/MarketingCampaignPromo"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -12471,7 +12534,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="contactListParties"
-            upperBound="-1" eType="#//marketing/contact/ContactListParty" derived="true">
+            upperBound="-1" eType="#//marketing/contact/ContactListParty"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -12752,7 +12816,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="salesForecastDetails"
-            upperBound="-1" eType="#//marketing/opportunity/SalesForecastDetail" derived="true"/>
+            upperBound="-1" eType="#//marketing/opportunity/SalesForecastDetail"
+            derived="true"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="SalesForecastDetail" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityIdentifiable ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo">
         <eAnnotations source="mimo-ent-frame">
@@ -13135,7 +13200,8 @@
             upperBound="-1" eType="#//marketing/segment/SegmentGroupClassification"
             derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="segmentGroupGeos" upperBound="-1"
-            eType="#//marketing/segment/SegmentGroupGeo" derived="true"/>
+            eType="#//marketing/segment/SegmentGroupGeo"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="segmentGroupType" eType="#//marketing/segment/SegmentGroupType"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityTyped">
           <eTypeArguments eClassifier="#//marketing/segment/SegmentGroupType"/>
@@ -13299,7 +13365,8 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="trackingCodeType" eType="#//marketing/tracking/TrackingCodeType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="trackingCodeVisits"
-            upperBound="-1" eType="#//marketing/tracking/TrackingCodeVisit" derived="true">
+            upperBound="-1" eType="#//marketing/tracking/TrackingCodeVisit"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -13529,7 +13596,8 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="oldPercentage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="order" eType="#//order/order/OrderHeader"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="orderAdjustmentAttributes"
-            upperBound="-1" eType="#//order/order/OrderAdjustmentAttribute" derived="true"/>
+            upperBound="-1" eType="#//order/order/OrderAdjustmentAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="orderAdjustmentType"
             eType="#//order/order/OrderAdjustmentType"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="orderItemSeqId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -13701,7 +13769,8 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasTable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="orderAdjustmentTypeAttrs"
-            upperBound="-1" eType="#//order/order/OrderAdjustmentTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//order/order/OrderAdjustmentTypeAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parentType" eType="#//order/order/OrderAdjustmentType"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
           <eTypeArguments eClassifier="#//order/order/OrderAdjustment"/>
@@ -13972,7 +14041,8 @@
             eType="#//order/shoppinglist/ShoppingList"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="billingAccount" eType="#//accounting/payment/BillingAccount"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="communicationEventOrders"
-            upperBound="-1" eType="#//order/order/CommunicationEventOrder" derived="true"/>
+            upperBound="-1" eType="#//order/order/CommunicationEventOrder"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="createdBy" eType="#//security/login/UserLogin"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="currencyUom" eType="#//common/uom/Uom"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="entryDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
@@ -14011,15 +14081,18 @@
             eType="#//order/order/OrderAttribute" derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="orderDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="orderDeliverySchedules"
-            upperBound="-1" eType="#//order/order/OrderDeliverySchedule" derived="true"/>
+            upperBound="-1" eType="#//order/order/OrderDeliverySchedule"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="orderHeaderNotes" upperBound="-1"
             eType="#//order/order/OrderHeaderNote" derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="orderHeaderWorkEfforts"
-            upperBound="-1" eType="#//order/order/OrderHeaderWorkEffort" derived="true"/>
+            upperBound="-1" eType="#//order/order/OrderHeaderWorkEffort"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="orderItemGroups" upperBound="-1"
             eType="#//order/order/OrderItemGroup" derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="orderItemShipGroups"
-            upperBound="-1" eType="#//order/order/OrderItemShipGroup" derived="true"/>
+            upperBound="-1" eType="#//order/order/OrderItemShipGroup"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="orderItems" upperBound="-1"
             eType="#//order/order/OrderItem" derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="orderName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -14028,7 +14101,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="orderProductPromoCodes"
-            upperBound="-1" eType="#//order/order/OrderProductPromoCode" derived="true"/>
+            upperBound="-1" eType="#//order/order/OrderProductPromoCode"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="orderType" eType="#//order/order/OrderType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="originFacility" eType="#//product/facility/Facility"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="pickSheetPrintedDate"
@@ -14064,7 +14138,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="trackingCodeOrders"
-            upperBound="-1" eType="#//marketing/tracking/TrackingCodeOrder" derived="true"/>
+            upperBound="-1" eType="#//marketing/tracking/TrackingCodeOrder"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="transactionId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="length" value="60"/>
@@ -14896,7 +14971,8 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasTable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="orderItemTypeAttrs"
-            upperBound="-1" eType="#//order/order/OrderItemTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//order/order/OrderItemTypeAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parentType" eType="#//order/order/OrderItemType"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
           <eTypeArguments eClassifier="#//order/order/OrderItem"/>
@@ -15426,7 +15502,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="quoteAttributes" upperBound="-1"
             eType="#//order/quote/QuoteAttribute" derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="quoteCoefficients"
-            upperBound="-1" eType="#//order/quote/QuoteCoefficient" derived="true"/>
+            upperBound="-1" eType="#//order/quote/QuoteCoefficient"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="quoteItems" upperBound="-1"
             eType="#//order/quote/QuoteItem" derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="quoteName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -15930,13 +16007,16 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="currencyUom" eType="#//common/uom/Uom"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="custRequestAttributes"
-            upperBound="-1" eType="#//order/request/CustRequestAttribute" derived="true"/>
+            upperBound="-1" eType="#//order/request/CustRequestAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="custRequestCategory"
             eType="#//order/request/CustRequestCategory"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="custRequestCommEvents"
-            upperBound="-1" eType="#//order/request/CustRequestCommEvent" derived="true"/>
+            upperBound="-1" eType="#//order/request/CustRequestCommEvent"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="custRequestContents"
-            upperBound="-1" eType="#//order/request/CustRequestContent" derived="true">
+            upperBound="-1" eType="#//order/request/CustRequestContent"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -15957,7 +16037,8 @@
             eType="#//order/request/CustRequestNote" derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="custRequestType" eType="#//order/request/CustRequestType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="custRequestWorkEfforts"
-            upperBound="-1" eType="#//order/request/CustRequestWorkEffort" derived="true"/>
+            upperBound="-1" eType="#//order/request/CustRequestWorkEffort"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="description"/>
@@ -16336,7 +16417,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="custRequestTypeAttrs"
-            upperBound="-1" eType="#//order/request/CustRequestTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//order/request/CustRequestTypeAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="description"/>
@@ -16531,11 +16613,13 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="requiredByDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="requirementAttributes"
-            upperBound="-1" eType="#//order/requirement/RequirementAttribute" derived="true"/>
+            upperBound="-1" eType="#//order/requirement/RequirementAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="requirementStartDate"
             eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="requirementStatuses"
-            upperBound="-1" eType="#//order/requirement/RequirementStatus" derived="true"/>
+            upperBound="-1" eType="#//order/requirement/RequirementStatus"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="requirementType" eType="#//order/requirement/RequirementType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="status" eType="#//common/status/StatusItem"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="useCase" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -16697,7 +16781,8 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasTable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parentType" eType="#//order/requirement/RequirementType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="requirementTypeAttrs"
-            upperBound="-1" eType="#//order/requirement/RequirementTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//order/requirement/RequirementTypeAttr"
+            derived="true"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
           <eTypeArguments eClassifier="#//order/requirement/Requirement"/>
         </eGenericSuperTypes>
@@ -17025,7 +17110,8 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="billingAccount" eType="#//accounting/payment/BillingAccount"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="communicationEventReturns"
-            upperBound="-1" eType="#//order/return/CommunicationEventReturn" derived="true"/>
+            upperBound="-1" eType="#//order/return/CommunicationEventReturn"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="createdBy" eType="#//security/login/UserLogin"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="currencyUom" eType="#//common/uom/Uom"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="destinationFacility"
@@ -17545,10 +17631,12 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="shoppingListItems"
-            upperBound="-1" eType="#//order/shoppinglist/ShoppingListItem" derived="true"/>
+            upperBound="-1" eType="#//order/shoppinglist/ShoppingListItem"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="shoppingListType" eType="#//order/shoppinglist/ShoppingListType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="shoppingListWorkEfforts"
-            upperBound="-1" eType="#//order/shoppinglist/ShoppingListWorkEffort" derived="true"/>
+            upperBound="-1" eType="#//order/shoppinglist/ShoppingListWorkEffort"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="visitorId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="length" value="20"/>
@@ -17730,7 +17818,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="agreementAttributes"
-            upperBound="-1" eType="#//party/agreement/AgreementAttribute" derived="true"/>
+            upperBound="-1" eType="#//party/agreement/AgreementAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="agreementDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="agreementItems" upperBound="-1"
             eType="#//party/agreement/AgreementItem" derived="true"/>
@@ -18044,7 +18133,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="agreementItemTypeAttrs"
-            upperBound="-1" eType="#//party/agreement/AgreementItemTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//party/agreement/AgreementItemTypeAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="description"/>
@@ -18220,7 +18310,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="agreementTermAttributes"
-            upperBound="-1" eType="#//party/agreement/AgreementTermAttribute" derived="true"/>
+            upperBound="-1" eType="#//party/agreement/AgreementTermAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="description"/>
@@ -18291,7 +18382,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="agreementTypeAttrs"
-            upperBound="-1" eType="#//party/agreement/AgreementTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//party/agreement/AgreementTypeAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="description"/>
@@ -18648,10 +18740,12 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="contactMechAttributes"
-            upperBound="-1" eType="#//party/contact/ContactMechAttribute" derived="true"/>
+            upperBound="-1" eType="#//party/contact/ContactMechAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="contactMechType" eType="#//party/contact/ContactMechType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="fromContactMechLinks"
-            upperBound="-1" eType="#//party/contact/ContactMechLink" derived="true"/>
+            upperBound="-1" eType="#//party/contact/ContactMechLink"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="infoString" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="length" value="255"/>
@@ -18742,9 +18836,11 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="contactMechTypeAttrs"
-            upperBound="-1" eType="#//party/contact/ContactMechTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//party/contact/ContactMechTypeAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="contactMechTypePurposes"
-            upperBound="-1" eType="#//party/contact/ContactMechTypePurpose" derived="true"/>
+            upperBound="-1" eType="#//party/contact/ContactMechTypePurpose"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="description"/>
@@ -18875,6 +18971,31 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="zipFile" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
       </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="PartyClassificationContactMech"
+          eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityIdentifiable ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo">
+        <eAnnotations source="mimo-ent-frame">
+          <details key="title" value="Party Classification Contact Mechanism"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="partyClassificationGroup"
+            lowerBound="1" eType="#//party/party/PartyClassificationGroup">
+          <eAnnotations source="mimo-ent-slot">
+            <details key="key" value="true"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="contactMech" lowerBound="1"
+            eType="#//party/contact/ContactMech">
+          <eAnnotations source="mimo-ent-slot">
+            <details key="key" value="true"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="fromDate" lowerBound="1"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
+          <eAnnotations source="mimo-ent-slot">
+            <details key="key" value="true"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="thruDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+      </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="PartyContactMech" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityIdentifiable ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo">
         <eAnnotations source="mimo-ent-frame">
           <details key="title" value="Party Contact Mechanism"/>
@@ -19003,7 +19124,8 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="municipalityGeo" eType="#//common/geo/Geo"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="postalAddressBoundaries"
-            upperBound="-1" eType="#//party/contact/PostalAddressBoundary" derived="true"/>
+            upperBound="-1" eType="#//party/contact/PostalAddressBoundary"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="postalCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="length" value="60"/>
@@ -19262,19 +19384,22 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyAttributes" upperBound="-1"
             eType="#//party/party/PartyAttribute" derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyCarrierAccounts"
-            upperBound="-1" eType="#//party/party/PartyCarrierAccount" derived="true">
+            upperBound="-1" eType="#//party/party/PartyCarrierAccount"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyClassifications"
-            upperBound="-1" eType="#//party/party/PartyClassification" derived="true">
+            upperBound="-1" eType="#//party/party/PartyClassification"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyContactMechs"
-            upperBound="-1" eType="#//party/contact/PartyContactMech" derived="true">
+            upperBound="-1" eType="#//party/contact/PartyContactMech"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -19292,13 +19417,16 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyIdentifications"
-            upperBound="-1" eType="#//party/party/PartyIdentification" derived="true"/>
+            upperBound="-1" eType="#//party/party/PartyIdentification"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyNameHistories"
-            upperBound="-1" eType="#//party/party/PartyNameHistory" derived="true"/>
+            upperBound="-1" eType="#//party/party/PartyNameHistory"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyNotes" upperBound="-1"
             eType="#//party/party/PartyNote" derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyProfileDefaults"
-            upperBound="-1" eType="#//party/party/PartyProfileDefault" derived="true"/>
+            upperBound="-1" eType="#//party/party/PartyProfileDefault"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyQuals" upperBound="-1"
             eType="#//humanres/ability/PartyQual" derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
@@ -19323,7 +19451,8 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyType" eType="#//party/party/PartyType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="performanceNotes" upperBound="-1"
-            eType="#//humanres/ability/PerformanceNote" derived="true">
+            eType="#//humanres/ability/PerformanceNote"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -19332,7 +19461,8 @@
             eType="#//common/uom/Uom"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="status" eType="#//common/status/StatusItem"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="supplierProductFeatures"
-            upperBound="-1" eType="#//product/supplier/SupplierProductFeature" derived="true"/>
+            upperBound="-1" eType="#//product/supplier/SupplierProductFeature"
+            derived="true"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityTyped">
           <eTypeArguments eClassifier="#//party/party/PartyType"/>
         </eGenericSuperTypes>
@@ -19412,7 +19542,7 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="thruDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
       </eClassifiers>
-      <eClassifiers xsi:type="ecore:EClass" name="PartyClassificationGroup" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityIdentifiable ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo">
+      <eClassifiers xsi:type="ecore:EClass" name="PartyClassificationGroup">
         <eAnnotations source="mimo-ent-frame">
           <details key="formula" value="description"/>
         </eAnnotations>
@@ -19429,10 +19559,21 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parentGroup" eType="#//party/party/PartyClassificationGroup"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="partyClassificationContactMechs"
+            upperBound="-1" eType="#//party/contact/PartyClassificationContactMech"
+            derived="true">
+          <eAnnotations source="mimo-ent-slot-constraints">
+            <details key="fromDate" value="*NOW"/>
+          </eAnnotations>
+        </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyClassificationType"
             eType="#//party/party/PartyClassificationType"/>
+        <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityTyped">
+          <eTypeArguments eClassifier="#//party/party/PartyClassificationType"/>
+        </eGenericSuperTypes>
+        <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo"/>
       </eClassifiers>
-      <eClassifiers xsi:type="ecore:EClass" name="PartyClassificationType" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityIdentifiable ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo">
+      <eClassifiers xsi:type="ecore:EClass" name="PartyClassificationType">
         <eAnnotations source="mimo-ent-frame">
           <details key="dictionary" value="PartyEntityLabels"/>
           <details key="formula" value="description"/>
@@ -19449,8 +19590,13 @@
             <details key="type" value="description"/>
           </eAnnotations>
         </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasContactMech" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasTable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parentType" eType="#//party/party/PartyClassificationType"/>
+        <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
+          <eTypeArguments eClassifier="#//party/party/PartyClassificationGroup"/>
+        </eGenericSuperTypes>
+        <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="PartyContent">
         <eAnnotations source="mimo-ent-frame">
@@ -19697,9 +19843,11 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyIdFrom" eType="#//party/party/Party"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyInvitationGroupAssocs"
-            upperBound="-1" eType="#//party/party/PartyInvitationGroupAssoc" derived="true"/>
+            upperBound="-1" eType="#//party/party/PartyInvitationGroupAssoc"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyInvitationRoleAssocs"
-            upperBound="-1" eType="#//party/party/PartyInvitationRoleAssoc" derived="true"/>
+            upperBound="-1" eType="#//party/party/PartyInvitationRoleAssoc"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="status" eType="#//common/status/StatusItem"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="toName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
@@ -20053,7 +20201,7 @@
             <details key="type" value="name"/>
           </eAnnotations>
         </eStructuralFeatures>
-        <eStructuralFeatures xsi:type="ecore:EAttribute" name="gender" eType="#//common/Gender"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="gender" eType="ecore:EEnum #//common/Gender"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="height" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
@@ -20065,7 +20213,7 @@
             <details key="type" value="name"/>
           </eAnnotations>
         </eStructuralFeatures>
-        <eStructuralFeatures xsi:type="ecore:EAttribute" name="maritalStatus" eType="#//party/MaritalStatus"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="maritalStatus" eType="ecore:EEnum #//party/MaritalStatus"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="memberId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="length" value="20"/>
@@ -20123,7 +20271,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="personTrainings" upperBound="-1"
-            eType="#//humanres/ability/PersonTraining" derived="true">
+            eType="#//humanres/ability/PersonTraining"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -20204,7 +20353,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="roleTypeAttrs" upperBound="-1"
             eType="#//party/party/RoleTypeAttr" derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="validContactMechRoles"
-            upperBound="-1" eType="#//party/contact/ValidContactMechRole" derived="true"/>
+            upperBound="-1" eType="#//party/contact/ValidContactMechRole"
+            derived="true"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="RoleTypeAttr" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityIdentifiable ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo">
         <eAnnotations source="mimo-ent-frame">
@@ -20595,7 +20745,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="prodCatalogInvFacilities"
-            upperBound="-1" eType="#//product/catalog/ProdCatalogInvFacility" derived="true">
+            upperBound="-1" eType="#//product/catalog/ProdCatalogInvFacility"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -20778,7 +20929,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="currentProductCategoryRollups"
-            upperBound="-1" eType="#//product/category/ProductCategoryRollup" derived="true">
+            upperBound="-1" eType="#//product/category/ProductCategoryRollup"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -20805,7 +20957,8 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="longDescription" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="marketInterests" upperBound="-1"
-            eType="#//product/supplier/MarketInterest" derived="true">
+            eType="#//product/supplier/MarketInterest"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -20813,15 +20966,18 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="primaryParentCategory"
             eType="#//product/category/ProductCategory"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productCategoryAttributes"
-            upperBound="-1" eType="#//product/category/ProductCategoryAttribute" derived="true"/>
+            upperBound="-1" eType="#//product/category/ProductCategoryAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productCategoryLinks"
-            upperBound="-1" eType="#//product/category/ProductCategoryLink" derived="true">
+            upperBound="-1" eType="#//product/category/ProductCategoryLink"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productCategoryMembers"
-            upperBound="-1" eType="#//product/category/ProductCategoryMember" derived="true">
+            upperBound="-1" eType="#//product/category/ProductCategoryMember"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -20829,7 +20985,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="productCategoryType"
             eType="#//product/category/ProductCategoryType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productFeatureCatGrpAppls"
-            upperBound="-1" eType="#//product/feature/ProductFeatureCatGrpAppl" derived="true">
+            upperBound="-1" eType="#//product/feature/ProductFeatureCatGrpAppl"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -21177,7 +21334,8 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasTable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parentType" eType="#//product/category/ProductCategoryType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productCategoryTypeAttrs"
-            upperBound="-1" eType="#//product/category/ProductCategoryTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//product/category/ProductCategoryTypeAttr"
+            derived="true"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
           <eTypeArguments eClassifier="#//product/category/ProductCategory"/>
         </eGenericSuperTypes>
@@ -21456,7 +21614,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="configItemProductConfigOptions"
-            upperBound="-1" eType="#//product/config/ProductConfigOption" derived="true"/>
+            upperBound="-1" eType="#//product/config/ProductConfigOption"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="configItemTypeId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="length" value="20"/>
@@ -21673,7 +21832,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="costComponentAttributes"
-            upperBound="-1" eType="#//product/cost/CostComponentAttribute" derived="true"/>
+            upperBound="-1" eType="#//product/cost/CostComponentAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="costComponentCalc"
             eType="#//product/cost/CostComponentCalc"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="costComponentType"
@@ -21780,7 +21940,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="costComponentTypeAttrs"
-            upperBound="-1" eType="#//product/cost/CostComponentTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//product/cost/CostComponentTypeAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="description"/>
@@ -21869,7 +22030,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="containerGeoPoints"
-            upperBound="-1" eType="#//product/facility/ContainerGeoPoint" derived="true">
+            upperBound="-1" eType="#//product/facility/ContainerGeoPoint"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -21971,21 +22133,25 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="facilityAttributes"
-            upperBound="-1" eType="#//product/facility/FacilityAttribute" derived="true"/>
+            upperBound="-1" eType="#//product/facility/FacilityAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="facilityContactMechs"
-            upperBound="-1" eType="#//product/facility/FacilityContactMech" derived="true">
+            upperBound="-1" eType="#//product/facility/FacilityContactMech"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="facilityContents" upperBound="-1"
-            eType="#//product/facility/FacilityContent" derived="true">
+            eType="#//product/facility/FacilityContent"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="facilityGroupMembers"
-            upperBound="-1" eType="#//product/facility/FacilityGroupMember" derived="true">
+            upperBound="-1" eType="#//product/facility/FacilityGroupMember"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -22000,7 +22166,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="facilityLocations"
-            upperBound="-1" eType="#//product/facility/FacilityLocation" derived="true"/>
+            upperBound="-1" eType="#//product/facility/FacilityLocation"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="facilityName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="name"/>
@@ -22282,7 +22449,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="currentFacilityGroupRollups"
-            upperBound="-1" eType="#//product/facility/FacilityGroupRollup" derived="true">
+            upperBound="-1" eType="#//product/facility/FacilityGroupRollup"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -22545,7 +22713,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="facilityTypeAttrs"
-            upperBound="-1" eType="#//product/facility/FacilityTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//product/facility/FacilityTypeAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasTable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parentType" eType="#//product/facility/FacilityType"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
@@ -22767,7 +22936,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="mainProductFeatureIactns"
-            upperBound="-1" eType="#//product/feature/ProductFeatureIactn" derived="true"/>
+            upperBound="-1" eType="#//product/feature/ProductFeatureIactn"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="numberSpecified" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="fixed-point"/>
@@ -23003,7 +23173,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productFeatureGroupAppls"
-            upperBound="-1" eType="#//product/feature/ProductFeatureGroupAppl" derived="true">
+            upperBound="-1" eType="#//product/feature/ProductFeatureGroupAppl"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -23178,13 +23349,17 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="facility" eType="#//product/facility/Facility"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="fixedAsset" eType="#//accounting/fixedasset/FixedAsset"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="inventoryItemAttributes"
-            upperBound="-1" eType="#//product/inventory/InventoryItemAttribute" derived="true"/>
+            upperBound="-1" eType="#//product/inventory/InventoryItemAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="inventoryItemDetails"
-            upperBound="-1" eType="#//product/inventory/InventoryItemDetail" derived="true"/>
+            upperBound="-1" eType="#//product/inventory/InventoryItemDetail"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="inventoryItemLabelAppls"
-            upperBound="-1" eType="#//product/inventory/InventoryItemLabelAppl" derived="true"/>
+            upperBound="-1" eType="#//product/inventory/InventoryItemLabelAppl"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="inventoryItemStatuses"
-            upperBound="-1" eType="#//product/inventory/InventoryItemStatus" derived="true">
+            upperBound="-1" eType="#//product/inventory/InventoryItemStatus"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="statusDatetime" value="*NOW"/>
           </eAnnotations>
@@ -23192,7 +23367,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="inventoryItemType"
             eType="#//product/inventory/InventoryItemType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="inventoryItemVariances"
-            upperBound="-1" eType="#//product/inventory/InventoryItemVariance" derived="true"/>
+            upperBound="-1" eType="#//product/inventory/InventoryItemVariance"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="locationSeqId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="length" value="20"/>
@@ -23570,7 +23746,8 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasTable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="inventoryItemTypeAttrs"
-            upperBound="-1" eType="#//product/inventory/InventoryItemTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//product/inventory/InventoryItemTypeAttr"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parentType" eType="#//product/inventory/InventoryItemType"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
           <eTypeArguments eClassifier="#//product/inventory/InventoryItem"/>
@@ -23742,7 +23919,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="varianceReasonGlAccounts"
-            upperBound="-1" eType="#//accounting/ledger/VarianceReasonGlAccount" derived="true"/>
+            upperBound="-1" eType="#//accounting/ledger/VarianceReasonGlAccount"
+            derived="true"/>
       </eClassifiers>
     </eSubpackages>
     <eSubpackages name="price" nsURI="http://www.abchip.org/mimo/biz/model/product/price"
@@ -24151,9 +24329,11 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="isSale" lowerBound="1"
             eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productPriceActions"
-            upperBound="-1" eType="#//product/price/ProductPriceAction" derived="true"/>
+            upperBound="-1" eType="#//product/price/ProductPriceAction"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productPriceConds"
-            upperBound="-1" eType="#//product/price/ProductPriceCond" derived="true"/>
+            upperBound="-1" eType="#//product/price/ProductPriceCond"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="ruleName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="name"/>
@@ -24302,7 +24482,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="goodIdentifications"
-            upperBound="-1" eType="#//product/product/GoodIdentification" derived="true"/>
+            upperBound="-1" eType="#//product/product/GoodIdentification"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasTable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parentType" eType="#//product/product/GoodIdentificationType"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
@@ -24461,9 +24642,11 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productAttributes"
-            upperBound="-1" eType="#//product/product/ProductAttribute" derived="true"/>
+            upperBound="-1" eType="#//product/product/ProductAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productCostComponentCalcs"
-            upperBound="-1" eType="#//product/cost/ProductCostComponentCalc" derived="true">
+            upperBound="-1" eType="#//product/cost/ProductCostComponentCalc"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -24483,9 +24666,11 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productFacilities"
-            upperBound="-1" eType="#//product/facility/ProductFacility" derived="true"/>
+            upperBound="-1" eType="#//product/facility/ProductFacility"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productFeatureAppls"
-            upperBound="-1" eType="#//product/feature/ProductFeatureAppl" derived="true">
+            upperBound="-1" eType="#//product/feature/ProductFeatureAppl"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -25288,7 +25473,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productSearchConstraints"
-            upperBound="-1" eType="#//product/product/ProductSearchConstraint" derived="true"/>
+            upperBound="-1" eType="#//product/product/ProductSearchConstraint"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="searchDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="secondsTotal" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="visitId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
@@ -25319,7 +25505,8 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="isPhysical" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parentType" eType="#//product/product/ProductType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productTypeAttrs" upperBound="-1"
-            eType="#//product/product/ProductTypeAttr" derived="true"/>
+            eType="#//product/product/ProductTypeAttr"
+            derived="true"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
           <eTypeArguments eClassifier="#//product/product/Product"/>
         </eGenericSuperTypes>
@@ -25406,7 +25593,8 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastModifiedDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="overrideOrgParty" eType="#//party/party/Party"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productPromoRules"
-            upperBound="-1" eType="#//product/promo/ProductPromoRule" derived="true"/>
+            upperBound="-1" eType="#//product/promo/ProductPromoRule"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="promoName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="name"/>
@@ -25590,9 +25778,11 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastModifiedDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productPromo" eType="#//product/promo/ProductPromo"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productPromoCodeEmails"
-            upperBound="-1" eType="#//product/promo/ProductPromoCodeEmail" derived="true"/>
+            upperBound="-1" eType="#//product/promo/ProductPromoCodeEmail"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productPromoCodeParties"
-            upperBound="-1" eType="#//product/promo/ProductPromoCodeParty" derived="true"/>
+            upperBound="-1" eType="#//product/promo/ProductPromoCodeParty"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="requireEmailOrParty"
             lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="thruDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
@@ -26095,35 +26285,42 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productStoreCatalogs"
-            upperBound="-1" eType="#//product/store/ProductStoreCatalog" derived="true">
+            upperBound="-1" eType="#//product/store/ProductStoreCatalog"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productStoreEmailSettings"
-            upperBound="-1" eType="#//product/store/ProductStoreEmailSetting" derived="true"/>
+            upperBound="-1" eType="#//product/store/ProductStoreEmailSetting"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productStoreFacilities"
-            upperBound="-1" eType="#//product/store/ProductStoreFacility" derived="true">
+            upperBound="-1" eType="#//product/store/ProductStoreFacility"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productStoreFinActSettings"
-            upperBound="-1" eType="#//product/store/ProductStoreFinActSetting" derived="true"/>
+            upperBound="-1" eType="#//product/store/ProductStoreFinActSetting"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productStoreGroupMembers"
-            upperBound="-1" eType="#//product/store/ProductStoreGroupMember" derived="true">
+            upperBound="-1" eType="#//product/store/ProductStoreGroupMember"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productStoreKeywordOvrds"
-            upperBound="-1" eType="#//product/store/ProductStoreKeywordOvrd" derived="true">
+            upperBound="-1" eType="#//product/store/ProductStoreKeywordOvrd"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productStorePromoAppls"
-            upperBound="-1" eType="#//product/store/ProductStorePromoAppl" derived="true">
+            upperBound="-1" eType="#//product/store/ProductStorePromoAppl"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -26495,7 +26692,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="currentProductStoreGroupRollups"
-            upperBound="-1" eType="#//product/store/ProductStoreGroupRollup" derived="true">
+            upperBound="-1" eType="#//product/store/ProductStoreGroupRollup"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -27397,7 +27595,8 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasTable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parentType" eType="#//product/subscription/SubscriptionType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="subscriptionTypeAttrs"
-            upperBound="-1" eType="#//product/subscription/SubscriptionTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//product/subscription/SubscriptionTypeAttr"
+            derived="true"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
           <eTypeArguments eClassifier="#//product/subscription/Subscription"/>
         </eGenericSuperTypes>
@@ -27801,9 +28000,11 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="userLoginHistories"
-            upperBound="-1" eType="#//security/login/UserLoginHistory" derived="true"/>
+            upperBound="-1" eType="#//security/login/UserLoginHistory"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="userLoginPasswordHistories"
-            upperBound="-1" eType="#//security/login/UserLoginPasswordHistory" derived="true"/>
+            upperBound="-1" eType="#//security/login/UserLoginPasswordHistory"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="userLoginSecurityGroups"
             upperBound="-1" eType="#//security/securitygroup/UserLoginSecurityGroup"
             derived="true">
@@ -27974,7 +28175,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="protectedViews" upperBound="-1"
-            eType="#//security/securitygroup/ProtectedView" derived="true"/>
+            eType="#//security/securitygroup/ProtectedView"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="securityGroupPermissions"
             upperBound="-1" eType="#//security/securitygroup/SecurityGroupPermission"
             derived="true">
@@ -28327,7 +28529,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="fromTemporalExpressionAssocs"
-            upperBound="-1" eType="#//service/schedule/TemporalExpressionAssoc" derived="true"/>
+            upperBound="-1" eType="#//service/schedule/TemporalExpressionAssoc"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="integer1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong">
           <eAnnotations source="mimo-ent-format">
             <details key="precision" value="20"/>
@@ -28528,7 +28731,8 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="picklistDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="picklistStatusHistories"
-            upperBound="-1" eType="#//shipment/picklist/PicklistStatusHistory" derived="true"/>
+            upperBound="-1" eType="#//shipment/picklist/PicklistStatusHistory"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="shipmentMethodType"
             eType="#//shipment/shipment/ShipmentMethodType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="status" eType="#//common/status/StatusItem"/>
@@ -28958,17 +29162,23 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="shipmentAttributes"
-            upperBound="-1" eType="#//shipment/shipment/ShipmentAttribute" derived="true"/>
+            upperBound="-1" eType="#//shipment/shipment/ShipmentAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="shipmentContactMechs"
-            upperBound="-1" eType="#//shipment/shipment/ShipmentContactMech" derived="true"/>
+            upperBound="-1" eType="#//shipment/shipment/ShipmentContactMech"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="shipmentItems" upperBound="-1"
-            eType="#//shipment/shipment/ShipmentItem" derived="true"/>
+            eType="#//shipment/shipment/ShipmentItem"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="shipmentPackages" upperBound="-1"
-            eType="#//shipment/shipment/ShipmentPackage" derived="true"/>
+            eType="#//shipment/shipment/ShipmentPackage"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="shipmentRouteSegments"
-            upperBound="-1" eType="#//shipment/shipment/ShipmentRouteSegment" derived="true"/>
+            upperBound="-1" eType="#//shipment/shipment/ShipmentRouteSegment"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="shipmentStatuses" upperBound="-1"
-            eType="#//shipment/shipment/ShipmentStatus" derived="true"/>
+            eType="#//shipment/shipment/ShipmentStatus"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="shipmentType" eType="#//shipment/shipment/ShipmentType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="status" eType="#//common/status/StatusItem"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityTyped">
@@ -29044,7 +29254,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="carrierShipmentBoxTypes"
-            upperBound="-1" eType="#//shipment/shipment/CarrierShipmentBoxType" derived="true"/>
+            upperBound="-1" eType="#//shipment/shipment/CarrierShipmentBoxType"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="description"/>
@@ -30290,7 +30501,8 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasTable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parentType" eType="#//shipment/shipment/ShipmentType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="shipmentTypeAttrs"
-            upperBound="-1" eType="#//shipment/shipment/ShipmentTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//shipment/shipment/ShipmentTypeAttr"
+            derived="true"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
           <eTypeArguments eClassifier="#//shipment/shipment/Shipment"/>
         </eGenericSuperTypes>
@@ -30881,15 +31093,18 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="visualThemeSet" eType="#//common/theme/VisualThemeSet"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="webAnalyticsConfigs"
-            upperBound="-1" eType="#//content/website/WebAnalyticsConfig" derived="true"/>
+            upperBound="-1" eType="#//content/website/WebAnalyticsConfig"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="webSiteContactLists"
-            upperBound="-1" eType="#//marketing/contact/WebSiteContactList" derived="true">
+            upperBound="-1" eType="#//marketing/contact/WebSiteContactList"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="webSitePathAliass"
-            upperBound="-1" eType="#//content/website/WebSitePathAlias" derived="true">
+            upperBound="-1" eType="#//content/website/WebSitePathAlias"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -31280,7 +31495,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortAttributes"
-            upperBound="-1" eType="#//workeffort/workeffort/WorkEffortAttribute" derived="true"/>
+            upperBound="-1" eType="#//workeffort/workeffort/WorkEffortAttribute"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortContactMechs"
             upperBound="-1" eType="#//workeffort/workeffort/WorkEffortContactMech"
             derived="true">
@@ -31289,7 +31505,8 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortCostCalcs"
-            upperBound="-1" eType="#//workeffort/workeffort/WorkEffortCostCalc" derived="true">
+            upperBound="-1" eType="#//workeffort/workeffort/WorkEffortCostCalc"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
@@ -31317,14 +31534,16 @@
             upperBound="-1" eType="#//workeffort/workeffort/WorkEffortInventoryProduced"
             derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortKeywords"
-            upperBound="-1" eType="#//workeffort/workeffort/WorkEffortKeyword" derived="true"/>
+            upperBound="-1" eType="#//workeffort/workeffort/WorkEffortKeyword"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="workEffortName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-format">
             <details key="type" value="name"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortNotes" upperBound="-1"
-            eType="#//workeffort/workeffort/WorkEffortNote" derived="true"/>
+            eType="#//workeffort/workeffort/WorkEffortNote"
+            derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortParent" eType="#//workeffort/workeffort/WorkEffort">
           <eAnnotations source="mimo-ent-slot">
             <details key="help" value="The primary parent (or the like); it should be one of the parent WorkEfforts already setup in WorkEffortAssoc"/>
@@ -31333,7 +31552,8 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortPurposeType"
             eType="#//workeffort/workeffort/WorkEffortPurposeType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortReviews"
-            upperBound="-1" eType="#//workeffort/workeffort/WorkEffortReview" derived="true">
+            upperBound="-1" eType="#//workeffort/workeffort/WorkEffortReview"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="reviewDate" value="*NOW"/>
           </eAnnotations>
@@ -31342,7 +31562,8 @@
             upperBound="-1" eType="#//workeffort/workeffort/WorkEffortSkillStandard"
             derived="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortStatuses"
-            upperBound="-1" eType="#//workeffort/workeffort/WorkEffortStatus" derived="true">
+            upperBound="-1" eType="#//workeffort/workeffort/WorkEffortStatus"
+            derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="statusDatetime" value="*NOW"/>
           </eAnnotations>
@@ -32266,7 +32487,8 @@
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="hasTable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parentType" eType="#//workeffort/workeffort/WorkEffortType"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="workEffortTypeAttrs"
-            upperBound="-1" eType="#//workeffort/workeffort/WorkEffortTypeAttr" derived="true"/>
+            upperBound="-1" eType="#//workeffort/workeffort/WorkEffortTypeAttr"
+            derived="true"/>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
           <eTypeArguments eClassifier="#//workeffort/workeffort/WorkEffort"/>
         </eGenericSuperTypes>

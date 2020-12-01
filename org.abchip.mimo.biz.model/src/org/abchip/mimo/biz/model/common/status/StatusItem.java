@@ -8,8 +8,8 @@
 package org.abchip.mimo.biz.model.common.status;
 
 import java.util.List;
+import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
-import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +32,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * @model annotation="mimo-ent-frame title='Status' dictionary='CommonEntityLabels' formula='description'"
  * @generated
  */
-public interface StatusItem extends EntityTyped<StatusType>, EntityInfo {
+public interface StatusItem extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

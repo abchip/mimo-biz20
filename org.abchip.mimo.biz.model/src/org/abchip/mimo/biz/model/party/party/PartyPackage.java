@@ -904,7 +904,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_GROUP__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
+	int PARTY_CLASSIFICATION_GROUP__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -913,7 +913,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_GROUP__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
+	int PARTY_CLASSIFICATION_GROUP__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -922,7 +922,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_GROUP__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
+	int PARTY_CLASSIFICATION_GROUP__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -931,7 +931,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_GROUP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
+	int PARTY_CLASSIFICATION_GROUP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Classification Group Id</b></em>' attribute.
@@ -940,7 +940,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_GROUP__PARTY_CLASSIFICATION_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PARTY_CLASSIFICATION_GROUP__PARTY_CLASSIFICATION_GROUP_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -949,7 +949,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_GROUP__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PARTY_CLASSIFICATION_GROUP__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Parent Group</b></em>' reference.
@@ -958,7 +958,16 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_GROUP__PARENT_GROUP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int PARTY_CLASSIFICATION_GROUP__PARENT_GROUP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Party Classification Contact Mechs</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_CLASSIFICATION_GROUP__PARTY_CLASSIFICATION_CONTACT_MECHS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Party Classification Type</b></em>' reference.
@@ -967,7 +976,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_GROUP__PARTY_CLASSIFICATION_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int PARTY_CLASSIFICATION_GROUP__PARTY_CLASSIFICATION_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Classification Group</em>' class.
@@ -976,7 +985,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_GROUP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int PARTY_CLASSIFICATION_GROUP_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationTypeImpl <em>Classification Type</em>}' class.
@@ -989,13 +998,22 @@ public interface PartyPackage extends EPackage {
 	int PARTY_CLASSIFICATION_TYPE = 7;
 
 	/**
+	 * The feature id for the '<em><b>Slots</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_CLASSIFICATION_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
+
+	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
+	int PARTY_CLASSIFICATION_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1004,7 +1022,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
+	int PARTY_CLASSIFICATION_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1013,7 +1031,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
+	int PARTY_CLASSIFICATION_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1022,7 +1040,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
+	int PARTY_CLASSIFICATION_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Classification Type Id</b></em>' attribute.
@@ -1031,7 +1049,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_TYPE__PARTY_CLASSIFICATION_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PARTY_CLASSIFICATION_TYPE__PARTY_CLASSIFICATION_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1040,7 +1058,16 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PARTY_CLASSIFICATION_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Has Contact Mech</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_CLASSIFICATION_TYPE__HAS_CONTACT_MECH = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -1049,7 +1076,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_TYPE__HAS_TABLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int PARTY_CLASSIFICATION_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
@@ -1058,7 +1085,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_TYPE__PARENT_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int PARTY_CLASSIFICATION_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Classification Type</em>' class.
@@ -1067,7 +1094,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int PARTY_CLASSIFICATION_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyContentImpl <em>Content</em>}' class.
@@ -5162,6 +5189,17 @@ public interface PartyPackage extends EPackage {
 	EReference getPartyClassificationGroup_ParentGroup();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.party.party.PartyClassificationGroup#getPartyClassificationContactMechs <em>Party Classification Contact Mechs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Party Classification Contact Mechs</em>'.
+	 * @see org.abchip.mimo.biz.model.party.party.PartyClassificationGroup#getPartyClassificationContactMechs()
+	 * @see #getPartyClassificationGroup()
+	 * @generated
+	 */
+	EReference getPartyClassificationGroup_PartyClassificationContactMechs();
+
+	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.party.PartyClassificationGroup#getPartyClassificationType <em>Party Classification Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5203,6 +5241,17 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getPartyClassificationType_Description();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.PartyClassificationType#getHasContactMech <em>Has Contact Mech</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Has Contact Mech</em>'.
+	 * @see org.abchip.mimo.biz.model.party.party.PartyClassificationType#getHasContactMech()
+	 * @see #getPartyClassificationType()
+	 * @generated
+	 */
+	EAttribute getPartyClassificationType_HasContactMech();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.PartyClassificationType#getHasTable <em>Has Table</em>}'.
@@ -7715,6 +7764,14 @@ public interface PartyPackage extends EPackage {
 		EReference PARTY_CLASSIFICATION_GROUP__PARENT_GROUP = eINSTANCE.getPartyClassificationGroup_ParentGroup();
 
 		/**
+		 * The meta object literal for the '<em><b>Party Classification Contact Mechs</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARTY_CLASSIFICATION_GROUP__PARTY_CLASSIFICATION_CONTACT_MECHS = eINSTANCE.getPartyClassificationGroup_PartyClassificationContactMechs();
+
+		/**
 		 * The meta object literal for the '<em><b>Party Classification Type</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -7747,6 +7804,14 @@ public interface PartyPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PARTY_CLASSIFICATION_TYPE__DESCRIPTION = eINSTANCE.getPartyClassificationType_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>Has Contact Mech</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PARTY_CLASSIFICATION_TYPE__HAS_CONTACT_MECH = eINSTANCE.getPartyClassificationType_HasContactMech();
 
 		/**
 		 * The meta object literal for the '<em><b>Has Table</b></em>' attribute feature.

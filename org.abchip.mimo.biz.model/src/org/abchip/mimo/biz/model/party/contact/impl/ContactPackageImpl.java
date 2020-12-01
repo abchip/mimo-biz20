@@ -147,6 +147,7 @@ import org.abchip.mimo.biz.model.party.contact.ContactPackage;
 import org.abchip.mimo.biz.model.party.contact.EmailAddress;
 import org.abchip.mimo.biz.model.party.contact.EmailAddressVerification;
 import org.abchip.mimo.biz.model.party.contact.FtpAddress;
+import org.abchip.mimo.biz.model.party.contact.PartyClassificationContactMech;
 import org.abchip.mimo.biz.model.party.contact.PartyContactMech;
 import org.abchip.mimo.biz.model.party.contact.PartyContactMechPurpose;
 import org.abchip.mimo.biz.model.party.contact.PostalAddress;
@@ -293,6 +294,13 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	private EClass ftpAddressEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass partyClassificationContactMechEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1255,6 +1263,56 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getPartyClassificationContactMech() {
+		return partyClassificationContactMechEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPartyClassificationContactMech_PartyClassificationGroup() {
+		return (EReference)partyClassificationContactMechEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPartyClassificationContactMech_ContactMech() {
+		return (EReference)partyClassificationContactMechEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPartyClassificationContactMech_FromDate() {
+		return (EAttribute)partyClassificationContactMechEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPartyClassificationContactMech_ThruDate() {
+		return (EAttribute)partyClassificationContactMechEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getPartyContactMech() {
 		return partyContactMechEClass;
 	}
@@ -1815,6 +1873,12 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		createEAttribute(ftpAddressEClass, FTP_ADDRESS__USERNAME);
 		createEAttribute(ftpAddressEClass, FTP_ADDRESS__ZIP_FILE);
 
+		partyClassificationContactMechEClass = createEClass(PARTY_CLASSIFICATION_CONTACT_MECH);
+		createEReference(partyClassificationContactMechEClass, PARTY_CLASSIFICATION_CONTACT_MECH__PARTY_CLASSIFICATION_GROUP);
+		createEReference(partyClassificationContactMechEClass, PARTY_CLASSIFICATION_CONTACT_MECH__CONTACT_MECH);
+		createEAttribute(partyClassificationContactMechEClass, PARTY_CLASSIFICATION_CONTACT_MECH__FROM_DATE);
+		createEAttribute(partyClassificationContactMechEClass, PARTY_CLASSIFICATION_CONTACT_MECH__THRU_DATE);
+
 		partyContactMechEClass = createEClass(PARTY_CONTACT_MECH);
 		createEReference(partyContactMechEClass, PARTY_CONTACT_MECH__PARTY);
 		createEReference(partyContactMechEClass, PARTY_CONTACT_MECH__CONTACT_MECH);
@@ -1929,6 +1993,8 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		emailAddressVerificationEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		emailAddressVerificationEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		ftpAddressEClass.getESuperTypes().add(this.getContactMech());
+		partyClassificationContactMechEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		partyClassificationContactMechEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		partyContactMechEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		partyContactMechEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		partyContactMechPurposeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
@@ -1997,6 +2063,12 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		initEAttribute(getFtpAddress_Port(), ecorePackage.getELong(), "port", null, 0, 1, FtpAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFtpAddress_Username(), ecorePackage.getEString(), "username", null, 0, 1, FtpAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFtpAddress_ZipFile(), ecorePackage.getEBooleanObject(), "zipFile", null, 0, 1, FtpAddress.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(partyClassificationContactMechEClass, PartyClassificationContactMech.class, "PartyClassificationContactMech", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getPartyClassificationContactMech_PartyClassificationGroup(), thePartyPackage_1.getPartyClassificationGroup(), null, "partyClassificationGroup", null, 1, 1, PartyClassificationContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPartyClassificationContactMech_ContactMech(), this.getContactMech(), null, "contactMech", null, 1, 1, PartyClassificationContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPartyClassificationContactMech_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, PartyClassificationContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPartyClassificationContactMech_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, PartyClassificationContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(partyContactMechEClass, PartyContactMech.class, "PartyContactMech", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPartyContactMech_Party(), thePartyPackage_1.getParty(), null, "party", null, 1, 1, PartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2369,6 +2441,24 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 			   "encrypt", "TRUE"
 		   });
 		addAnnotation
+		  (getPartyClassificationContactMech_PartyClassificationGroup(),
+		   source,
+		   new String[] {
+			   "key", "true"
+		   });
+		addAnnotation
+		  (getPartyClassificationContactMech_ContactMech(),
+		   source,
+		   new String[] {
+			   "key", "true"
+		   });
+		addAnnotation
+		  (getPartyClassificationContactMech_FromDate(),
+		   source,
+		   new String[] {
+			   "key", "true"
+		   });
+		addAnnotation
 		  (getPartyContactMech_Party(),
 		   source,
 		   new String[] {
@@ -2537,6 +2627,12 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		   source,
 		   new String[] {
 			   "title", "Ftp server"
+		   });
+		addAnnotation
+		  (partyClassificationContactMechEClass,
+		   source,
+		   new String[] {
+			   "title", "Party Classification Contact Mechanism"
 		   });
 		addAnnotation
 		  (partyContactMechEClass,

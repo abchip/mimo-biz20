@@ -15,7 +15,7 @@ import org.abchip.mimo.biz.model.common.status.StatusType;
 import org.abchip.mimo.biz.model.common.status.StatusValidChange;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityTypedImpl;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -40,7 +40,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class StatusItemImpl extends EntityTypedImpl<StatusType> implements StatusItem {
+public class StatusItemImpl extends EntityIdentifiableImpl implements StatusItem {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

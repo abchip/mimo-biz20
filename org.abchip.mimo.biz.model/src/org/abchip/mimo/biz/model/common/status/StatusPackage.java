@@ -78,7 +78,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_ITEM__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
+	int STATUS_ITEM__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_ITEM__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
+	int STATUS_ITEM__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_ITEM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
+	int STATUS_ITEM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_ITEM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
+	int STATUS_ITEM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_ITEM__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
+	int STATUS_ITEM__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_ITEM__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int STATUS_ITEM__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Main Status Valid Changes</b></em>' reference list.
@@ -132,7 +132,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_ITEM__MAIN_STATUS_VALID_CHANGES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int STATUS_ITEM__MAIN_STATUS_VALID_CHANGES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Id</b></em>' attribute.
@@ -141,7 +141,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_ITEM__SEQUENCE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int STATUS_ITEM__SEQUENCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Status Code</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_ITEM__STATUS_CODE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int STATUS_ITEM__STATUS_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Status Type</b></em>' reference.
@@ -159,7 +159,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_ITEM__STATUS_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int STATUS_ITEM__STATUS_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Item</em>' class.
@@ -168,7 +168,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_ITEM_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int STATUS_ITEM_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.status.impl.StatusTypeImpl <em>Type</em>}' class.
@@ -181,22 +181,13 @@ public interface StatusPackage extends EPackage {
 	int STATUS_TYPE = 1;
 
 	/**
-	 * The feature id for the '<em><b>Slots</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STATUS_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
-
-	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
+	int STATUS_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -205,7 +196,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
+	int STATUS_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -214,7 +205,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
+	int STATUS_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -223,7 +214,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
+	int STATUS_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Status Type Id</b></em>' attribute.
@@ -232,7 +223,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_TYPE__STATUS_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
+	int STATUS_TYPE__STATUS_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -241,7 +232,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
+	int STATUS_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -250,7 +241,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
+	int STATUS_TYPE__HAS_TABLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type</b></em>' reference.
@@ -259,7 +250,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_TYPE__PARENT_TYPE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
+	int STATUS_TYPE__PARENT_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -268,7 +259,7 @@ public interface StatusPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATUS_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
+	int STATUS_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.status.impl.StatusValidChangeImpl <em>Valid Change</em>}' class.

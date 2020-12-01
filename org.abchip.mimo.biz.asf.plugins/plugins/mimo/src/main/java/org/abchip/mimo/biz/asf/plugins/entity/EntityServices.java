@@ -334,8 +334,10 @@ public class EntityServices {
 
 	private static EClass getTypeEntity(EPackage eWorkPackage, ModelEntity modelEntity) {
 		EClass typeEntity = null;
-		if (modelEntity.getEntityName().equals("StatusItem"))
-			typeEntity = Frames.getEClass(eWorkPackage, "StatusType");
+		if (modelEntity.getEntityName().equals("PartyClassificationGroup"))
+			typeEntity = Frames.getEClass(eWorkPackage, "PartyClassificationType");
+		else if (modelEntity.getEntityName().equals("OrderHeader"))
+			typeEntity = Frames.getEClass(eWorkPackage, "OrderType");
 		else if (modelEntity.getEntityName().equals("OrderHeader"))
 			typeEntity = Frames.getEClass(eWorkPackage, "OrderType");
 		else
@@ -382,9 +384,6 @@ public class EntityServices {
 		for (String entityName : entityNames) {
 			EClass eClass = Frames.getEClass(bizPackage, entityName);
 
-			if(entityName.equals("Budget"))
-				"".toString();
-			
 			// with attribute ID
 			EAttribute eClassAttributeID = eClass.getEIDAttribute();
 			if (eClassAttributeID == null)

@@ -8,12 +8,14 @@
 package org.abchip.mimo.biz.model.party.party.impl;
 
 import java.util.Date;
+import java.util.List;
+import org.abchip.mimo.biz.model.party.contact.PartyClassificationContactMech;
 import org.abchip.mimo.biz.model.party.party.PartyClassificationGroup;
 import org.abchip.mimo.biz.model.party.party.PartyClassificationType;
 import org.abchip.mimo.biz.model.party.party.PartyPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -31,12 +33,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationGroupImpl#getPartyClassificationGroupId <em>Party Classification Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationGroupImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationGroupImpl#getParentGroup <em>Parent Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationGroupImpl#getPartyClassificationContactMechs <em>Party Classification Contact Mechs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationGroupImpl#getPartyClassificationType <em>Party Classification Type</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class PartyClassificationGroupImpl extends EntityIdentifiableImpl implements PartyClassificationGroup {
+public class PartyClassificationGroupImpl extends EntityTypedImpl<PartyClassificationType> implements PartyClassificationGroup {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -184,6 +187,17 @@ public class PartyClassificationGroupImpl extends EntityIdentifiableImpl impleme
 	@Override
 	public void setParentGroup(PartyClassificationGroup newParentGroup) {
 		eSet(PartyPackage.Literals.PARTY_CLASSIFICATION_GROUP__PARENT_GROUP, newParentGroup);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<PartyClassificationContactMech> getPartyClassificationContactMechs() {
+		return (List<PartyClassificationContactMech>)eGet(PartyPackage.Literals.PARTY_CLASSIFICATION_GROUP__PARTY_CLASSIFICATION_CONTACT_MECHS, true);
 	}
 
 	/**

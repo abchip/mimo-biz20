@@ -7,8 +7,10 @@
  */
 package org.abchip.mimo.biz.model.party.party;
 
-import org.abchip.mimo.entity.EntityIdentifiable;
+import java.util.List;
+import org.abchip.mimo.biz.model.party.contact.PartyClassificationContactMech;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -22,6 +24,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyClassificationGroup#getPartyClassificationGroupId <em>Party Classification Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyClassificationGroup#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyClassificationGroup#getParentGroup <em>Parent Group</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyClassificationGroup#getPartyClassificationContactMechs <em>Party Classification Contact Mechs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyClassificationGroup#getPartyClassificationType <em>Party Classification Type</em>}</li>
  * </ul>
  *
@@ -29,7 +32,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface PartyClassificationGroup extends EntityIdentifiable, EntityInfo {
+public interface PartyClassificationGroup extends EntityTyped<PartyClassificationType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -77,6 +80,19 @@ public interface PartyClassificationGroup extends EntityIdentifiable, EntityInfo
 	 * @generated
 	 */
 	void setParentGroup(PartyClassificationGroup value);
+
+	/**
+	 * Returns the value of the '<em><b>Party Classification Contact Mechs</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.contact.PartyClassificationContactMech}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party Classification Contact Mechs</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyClassificationGroup_PartyClassificationContactMechs()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
+	 * @generated
+	 */
+	List<PartyClassificationContactMech> getPartyClassificationContactMechs();
 
 	/**
 	 * Returns the value of the '<em><b>Party Classification Type</b></em>' reference.

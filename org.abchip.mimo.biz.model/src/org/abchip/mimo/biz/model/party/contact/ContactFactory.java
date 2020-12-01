@@ -117,6 +117,15 @@ public interface ContactFactory extends EFactory {
 	FtpAddress createFtpAddress();
 
 	/**
+	 * Returns a new object of class '<em>Party Classification Contact Mech</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Party Classification Contact Mech</em>'.
+	 * @generated
+	 */
+	PartyClassificationContactMech createPartyClassificationContactMech();
+
+	/**
 	 * Returns a new object of class '<em>Party Contact Mech</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

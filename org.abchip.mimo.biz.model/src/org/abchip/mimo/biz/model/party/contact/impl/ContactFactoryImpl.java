@@ -70,6 +70,7 @@ public class ContactFactoryImpl extends EFactoryImpl implements ContactFactory {
 			case ContactPackage.EMAIL_ADDRESS: return (EObject)createEmailAddress();
 			case ContactPackage.EMAIL_ADDRESS_VERIFICATION: return (EObject)createEmailAddressVerification();
 			case ContactPackage.FTP_ADDRESS: return (EObject)createFtpAddress();
+			case ContactPackage.PARTY_CLASSIFICATION_CONTACT_MECH: return (EObject)createPartyClassificationContactMech();
 			case ContactPackage.PARTY_CONTACT_MECH: return (EObject)createPartyContactMech();
 			case ContactPackage.PARTY_CONTACT_MECH_PURPOSE: return (EObject)createPartyContactMechPurpose();
 			case ContactPackage.POSTAL_ADDRESS: return (EObject)createPostalAddress();
@@ -189,6 +190,17 @@ public class ContactFactoryImpl extends EFactoryImpl implements ContactFactory {
 	public FtpAddress createFtpAddress() {
 		FtpAddressImpl ftpAddress = new FtpAddressImpl();
 		return ftpAddress;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PartyClassificationContactMech createPartyClassificationContactMech() {
+		PartyClassificationContactMechImpl partyClassificationContactMech = new PartyClassificationContactMechImpl();
+		return partyClassificationContactMech;
 	}
 
 	/**
