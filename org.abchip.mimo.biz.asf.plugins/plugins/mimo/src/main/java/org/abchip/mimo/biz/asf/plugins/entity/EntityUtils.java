@@ -62,7 +62,7 @@ public class EntityUtils {
 			if (slot == null)
 				continue;
 
-			Object value = frame.getValue(entity, slot, false, false);
+			Object value = entity.eGet(slot, false, false);
 			if (UtilValidate.isEmpty(value))
 				continue;
 
@@ -118,7 +118,7 @@ public class EntityUtils {
 
 			value = toValue(slot, value);
 
-			frame.setValue(entity, slot, value);
+			entity.eSet(slot, value);
 		}
 	}
 

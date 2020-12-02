@@ -45,7 +45,7 @@ public class ServiceUtils {
 			if (modelParam == null)
 				continue;
 
-			Object value = frame.getValue(entity, slot, false, false);
+			Object value = entity.eGet(slot, !modelParam.optional, false);
 			value = EntityUtils.toBizValue(modelParam.getType(), slot, value);
 			if (value == null)
 				continue;

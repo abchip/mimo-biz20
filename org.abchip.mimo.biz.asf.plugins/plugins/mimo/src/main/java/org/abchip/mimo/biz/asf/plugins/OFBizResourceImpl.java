@@ -104,7 +104,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 						throw new ResourceException(ServiceUtil.getErrorMessage(context));
 
 					completeEntity(service, entity, context);
-					
+
 					if (entity.getResource() == null)
 						this.attach(entity);
 
@@ -355,7 +355,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 				// service not found
 			}
 		}
-		
+
 		boolean beganTransaction = false;
 		try {
 			beganTransaction = TransactionUtil.begin();
@@ -398,7 +398,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 						throw new ResourceException(ServiceUtil.getErrorMessage(context));
 
 					this.detach(entity);
-					
+
 					return;
 				} catch (GeneralException e) {
 					throw new ResourceException(e);
@@ -586,7 +586,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 				continue;
 			}
 
-			frame.setValue(entity, slot.getName(), paramValue);
+			entity.eSet(slot, paramValue);
 		}
 	}
 

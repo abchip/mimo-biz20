@@ -144,6 +144,7 @@ import org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl;
 import org.abchip.mimo.biz.model.passport.GitHubUser;
 import org.abchip.mimo.biz.model.passport.GoogleUser;
 import org.abchip.mimo.biz.model.passport.LinkedInUser;
+import org.abchip.mimo.biz.model.passport.OAuth2;
 import org.abchip.mimo.biz.model.passport.OAuth2GitHub;
 import org.abchip.mimo.biz.model.passport.OAuth2Google;
 import org.abchip.mimo.biz.model.passport.OAuth2LinkedIn;
@@ -234,6 +235,13 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 	 * @generated
 	 */
 	private EClass linkedInUserEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass oAuth2EClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -882,6 +890,66 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 	 * @generated
 	 */
 	@Override
+	public EClass getOAuth2() {
+		return oAuth2EClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getOAuth2_ProductStore() {
+		return (EReference)oAuth2EClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOAuth2_FromDate() {
+		return (EAttribute)oAuth2EClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOAuth2_IconUrl() {
+		return (EAttribute)oAuth2EClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOAuth2_LocalRedirectUri() {
+		return (EAttribute)oAuth2EClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOAuth2_ThruDate() {
+		return (EAttribute)oAuth2EClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getOAuth2GitHub() {
 		return oAuth2GitHubEClass;
 	}
@@ -892,28 +960,8 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getOAuth2GitHub_ProductStore() {
-		return (EReference)oAuth2GitHubEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getOAuth2GitHub_FromDate() {
-		return (EAttribute)oAuth2GitHubEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EAttribute getOAuth2GitHub_ClientId() {
-		return (EAttribute)oAuth2GitHubEClass.getEStructuralFeatures().get(2);
+		return (EAttribute)oAuth2GitHubEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -923,27 +971,7 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 	 */
 	@Override
 	public EAttribute getOAuth2GitHub_ClientSecret() {
-		return (EAttribute)oAuth2GitHubEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getOAuth2GitHub_IconUrl() {
-		return (EAttribute)oAuth2GitHubEClass.getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getOAuth2GitHub_LocalRedirectUri() {
-		return (EAttribute)oAuth2GitHubEClass.getEStructuralFeatures().get(5);
+		return (EAttribute)oAuth2GitHubEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -953,17 +981,7 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 	 */
 	@Override
 	public EAttribute getOAuth2GitHub_ReturnUrl() {
-		return (EAttribute)oAuth2GitHubEClass.getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getOAuth2GitHub_ThruDate() {
-		return (EAttribute)oAuth2GitHubEClass.getEStructuralFeatures().get(7);
+		return (EAttribute)oAuth2GitHubEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -982,28 +1000,8 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getOAuth2Google_ProductStore() {
-		return (EReference)oAuth2GoogleEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getOAuth2Google_FromDate() {
-		return (EAttribute)oAuth2GoogleEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EAttribute getOAuth2Google_ClientId() {
-		return (EAttribute)oAuth2GoogleEClass.getEStructuralFeatures().get(2);
+		return (EAttribute)oAuth2GoogleEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1013,27 +1011,7 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 	 */
 	@Override
 	public EAttribute getOAuth2Google_ClientSecret() {
-		return (EAttribute)oAuth2GoogleEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getOAuth2Google_IconUrl() {
-		return (EAttribute)oAuth2GoogleEClass.getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getOAuth2Google_LocalRedirectUri() {
-		return (EAttribute)oAuth2GoogleEClass.getEStructuralFeatures().get(5);
+		return (EAttribute)oAuth2GoogleEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1043,17 +1021,7 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 	 */
 	@Override
 	public EAttribute getOAuth2Google_ReturnUrl() {
-		return (EAttribute)oAuth2GoogleEClass.getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getOAuth2Google_ThruDate() {
-		return (EAttribute)oAuth2GoogleEClass.getEStructuralFeatures().get(7);
+		return (EAttribute)oAuth2GoogleEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1072,38 +1040,8 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getOAuth2LinkedIn_ProductStore() {
-		return (EReference)oAuth2LinkedInEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getOAuth2LinkedIn_FromDate() {
-		return (EAttribute)oAuth2LinkedInEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EAttribute getOAuth2LinkedIn_ApiKey() {
-		return (EAttribute)oAuth2LinkedInEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getOAuth2LinkedIn_IconUrl() {
-		return (EAttribute)oAuth2LinkedInEClass.getEStructuralFeatures().get(3);
+		return (EAttribute)oAuth2LinkedInEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1113,17 +1051,7 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 	 */
 	@Override
 	public EAttribute getOAuth2LinkedIn_LiveReturnUrl() {
-		return (EAttribute)oAuth2LinkedInEClass.getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getOAuth2LinkedIn_LocalRedirectUri() {
-		return (EAttribute)oAuth2LinkedInEClass.getEStructuralFeatures().get(5);
+		return (EAttribute)oAuth2LinkedInEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1133,7 +1061,7 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 	 */
 	@Override
 	public EAttribute getOAuth2LinkedIn_SecretKey() {
-		return (EAttribute)oAuth2LinkedInEClass.getEStructuralFeatures().get(6);
+		return (EAttribute)oAuth2LinkedInEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1143,17 +1071,7 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 	 */
 	@Override
 	public EAttribute getOAuth2LinkedIn_TestReturnUrl() {
-		return (EAttribute)oAuth2LinkedInEClass.getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getOAuth2LinkedIn_ThruDate() {
-		return (EAttribute)oAuth2LinkedInEClass.getEStructuralFeatures().get(8);
+		return (EAttribute)oAuth2LinkedInEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -1275,36 +1193,28 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 		createEAttribute(linkedInUserEClass, LINKED_IN_USER__ENV_PREFIX);
 		createEReference(linkedInUserEClass, LINKED_IN_USER__PRODUCT_STORE);
 
+		oAuth2EClass = createEClass(OAUTH2);
+		createEReference(oAuth2EClass, OAUTH2__PRODUCT_STORE);
+		createEAttribute(oAuth2EClass, OAUTH2__FROM_DATE);
+		createEAttribute(oAuth2EClass, OAUTH2__ICON_URL);
+		createEAttribute(oAuth2EClass, OAUTH2__LOCAL_REDIRECT_URI);
+		createEAttribute(oAuth2EClass, OAUTH2__THRU_DATE);
+
 		oAuth2GitHubEClass = createEClass(OAUTH2_GIT_HUB);
-		createEReference(oAuth2GitHubEClass, OAUTH2_GIT_HUB__PRODUCT_STORE);
-		createEAttribute(oAuth2GitHubEClass, OAUTH2_GIT_HUB__FROM_DATE);
 		createEAttribute(oAuth2GitHubEClass, OAUTH2_GIT_HUB__CLIENT_ID);
 		createEAttribute(oAuth2GitHubEClass, OAUTH2_GIT_HUB__CLIENT_SECRET);
-		createEAttribute(oAuth2GitHubEClass, OAUTH2_GIT_HUB__ICON_URL);
-		createEAttribute(oAuth2GitHubEClass, OAUTH2_GIT_HUB__LOCAL_REDIRECT_URI);
 		createEAttribute(oAuth2GitHubEClass, OAUTH2_GIT_HUB__RETURN_URL);
-		createEAttribute(oAuth2GitHubEClass, OAUTH2_GIT_HUB__THRU_DATE);
 
 		oAuth2GoogleEClass = createEClass(OAUTH2_GOOGLE);
-		createEReference(oAuth2GoogleEClass, OAUTH2_GOOGLE__PRODUCT_STORE);
-		createEAttribute(oAuth2GoogleEClass, OAUTH2_GOOGLE__FROM_DATE);
 		createEAttribute(oAuth2GoogleEClass, OAUTH2_GOOGLE__CLIENT_ID);
 		createEAttribute(oAuth2GoogleEClass, OAUTH2_GOOGLE__CLIENT_SECRET);
-		createEAttribute(oAuth2GoogleEClass, OAUTH2_GOOGLE__ICON_URL);
-		createEAttribute(oAuth2GoogleEClass, OAUTH2_GOOGLE__LOCAL_REDIRECT_URI);
 		createEAttribute(oAuth2GoogleEClass, OAUTH2_GOOGLE__RETURN_URL);
-		createEAttribute(oAuth2GoogleEClass, OAUTH2_GOOGLE__THRU_DATE);
 
 		oAuth2LinkedInEClass = createEClass(OAUTH2_LINKED_IN);
-		createEReference(oAuth2LinkedInEClass, OAUTH2_LINKED_IN__PRODUCT_STORE);
-		createEAttribute(oAuth2LinkedInEClass, OAUTH2_LINKED_IN__FROM_DATE);
 		createEAttribute(oAuth2LinkedInEClass, OAUTH2_LINKED_IN__API_KEY);
-		createEAttribute(oAuth2LinkedInEClass, OAUTH2_LINKED_IN__ICON_URL);
 		createEAttribute(oAuth2LinkedInEClass, OAUTH2_LINKED_IN__LIVE_RETURN_URL);
-		createEAttribute(oAuth2LinkedInEClass, OAUTH2_LINKED_IN__LOCAL_REDIRECT_URI);
 		createEAttribute(oAuth2LinkedInEClass, OAUTH2_LINKED_IN__SECRET_KEY);
 		createEAttribute(oAuth2LinkedInEClass, OAUTH2_LINKED_IN__TEST_RETURN_URL);
-		createEAttribute(oAuth2LinkedInEClass, OAUTH2_LINKED_IN__THRU_DATE);
 
 		thirdPartyLoginEClass = createEClass(THIRD_PARTY_LOGIN);
 		createEReference(thirdPartyLoginEClass, THIRD_PARTY_LOGIN__PRODUCT_STORE);
@@ -1353,12 +1263,11 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 		googleUserEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		linkedInUserEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		linkedInUserEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		oAuth2GitHubEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		oAuth2GitHubEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		oAuth2GoogleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		oAuth2GoogleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		oAuth2LinkedInEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		oAuth2LinkedInEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		oAuth2EClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		oAuth2EClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		oAuth2GitHubEClass.getESuperTypes().add(this.getOAuth2());
+		oAuth2GoogleEClass.getESuperTypes().add(this.getOAuth2());
+		oAuth2LinkedInEClass.getESuperTypes().add(this.getOAuth2());
 		thirdPartyLoginEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		thirdPartyLoginEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
@@ -1383,36 +1292,28 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 		initEAttribute(getLinkedInUser_EnvPrefix(), ecorePackage.getEString(), "envPrefix", null, 0, 1, LinkedInUser.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getLinkedInUser_ProductStore(), theStorePackage.getProductStore(), null, "productStore", null, 0, 1, LinkedInUser.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		initEClass(oAuth2EClass, OAuth2.class, "OAuth2", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getOAuth2_ProductStore(), theStorePackage.getProductStore(), null, "productStore", null, 1, 1, OAuth2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOAuth2_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, OAuth2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOAuth2_IconUrl(), ecorePackage.getEString(), "iconUrl", null, 0, 1, OAuth2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOAuth2_LocalRedirectUri(), ecorePackage.getEString(), "localRedirectUri", null, 0, 1, OAuth2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOAuth2_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, OAuth2.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		initEClass(oAuth2GitHubEClass, OAuth2GitHub.class, "OAuth2GitHub", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOAuth2GitHub_ProductStore(), theStorePackage.getProductStore(), null, "productStore", null, 1, 1, OAuth2GitHub.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getOAuth2GitHub_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, OAuth2GitHub.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOAuth2GitHub_ClientId(), ecorePackage.getEString(), "clientId", null, 0, 1, OAuth2GitHub.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOAuth2GitHub_ClientSecret(), ecorePackage.getEString(), "clientSecret", null, 0, 1, OAuth2GitHub.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getOAuth2GitHub_IconUrl(), ecorePackage.getEString(), "iconUrl", null, 0, 1, OAuth2GitHub.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getOAuth2GitHub_LocalRedirectUri(), ecorePackage.getEString(), "localRedirectUri", null, 0, 1, OAuth2GitHub.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOAuth2GitHub_ReturnUrl(), ecorePackage.getEString(), "returnUrl", null, 0, 1, OAuth2GitHub.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getOAuth2GitHub_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, OAuth2GitHub.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(oAuth2GoogleEClass, OAuth2Google.class, "OAuth2Google", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOAuth2Google_ProductStore(), theStorePackage.getProductStore(), null, "productStore", null, 1, 1, OAuth2Google.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getOAuth2Google_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, OAuth2Google.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOAuth2Google_ClientId(), ecorePackage.getEString(), "clientId", null, 0, 1, OAuth2Google.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOAuth2Google_ClientSecret(), ecorePackage.getEString(), "clientSecret", null, 0, 1, OAuth2Google.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getOAuth2Google_IconUrl(), ecorePackage.getEString(), "iconUrl", null, 0, 1, OAuth2Google.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getOAuth2Google_LocalRedirectUri(), ecorePackage.getEString(), "localRedirectUri", null, 0, 1, OAuth2Google.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOAuth2Google_ReturnUrl(), ecorePackage.getEString(), "returnUrl", null, 0, 1, OAuth2Google.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getOAuth2Google_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, OAuth2Google.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(oAuth2LinkedInEClass, OAuth2LinkedIn.class, "OAuth2LinkedIn", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOAuth2LinkedIn_ProductStore(), theStorePackage.getProductStore(), null, "productStore", null, 1, 1, OAuth2LinkedIn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getOAuth2LinkedIn_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, OAuth2LinkedIn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOAuth2LinkedIn_ApiKey(), ecorePackage.getEString(), "apiKey", null, 0, 1, OAuth2LinkedIn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getOAuth2LinkedIn_IconUrl(), ecorePackage.getEString(), "iconUrl", null, 0, 1, OAuth2LinkedIn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOAuth2LinkedIn_LiveReturnUrl(), ecorePackage.getEString(), "liveReturnUrl", null, 0, 1, OAuth2LinkedIn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getOAuth2LinkedIn_LocalRedirectUri(), ecorePackage.getEString(), "localRedirectUri", null, 0, 1, OAuth2LinkedIn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOAuth2LinkedIn_SecretKey(), ecorePackage.getEString(), "secretKey", null, 0, 1, OAuth2LinkedIn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOAuth2LinkedIn_TestReturnUrl(), ecorePackage.getEString(), "testReturnUrl", null, 0, 1, OAuth2LinkedIn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getOAuth2LinkedIn_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, OAuth2LinkedIn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(thirdPartyLoginEClass, ThirdPartyLogin.class, "ThirdPartyLogin", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getThirdPartyLogin_ProductStore(), theStorePackage.getProductStore(), null, "productStore", null, 1, 1, ThirdPartyLogin.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1462,6 +1363,13 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 		   new String[] {
 			   "help", "Data Model Enhancements For Passport",
 			   "title", "Store LinkedIn access token for user"
+		   });
+		addAnnotation
+		  (oAuth2EClass,
+		   source,
+		   new String[] {
+			   "help", "Data Model Enhancements For Passport",
+			   "title", "GitHub OAuth Login Config"
 		   });
 		addAnnotation
 		  (oAuth2GitHubEClass,
@@ -1568,6 +1476,18 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 			   "length", "60"
 		   });
 		addAnnotation
+		  (getOAuth2_IconUrl(),
+		   source,
+		   new String[] {
+			   "type", "url"
+		   });
+		addAnnotation
+		  (getOAuth2_LocalRedirectUri(),
+		   source,
+		   new String[] {
+			   "length", "60"
+		   });
+		addAnnotation
 		  (getOAuth2GitHub_ClientId(),
 		   source,
 		   new String[] {
@@ -1575,18 +1495,6 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 		   });
 		addAnnotation
 		  (getOAuth2GitHub_ClientSecret(),
-		   source,
-		   new String[] {
-			   "length", "60"
-		   });
-		addAnnotation
-		  (getOAuth2GitHub_IconUrl(),
-		   source,
-		   new String[] {
-			   "type", "url"
-		   });
-		addAnnotation
-		  (getOAuth2GitHub_LocalRedirectUri(),
 		   source,
 		   new String[] {
 			   "length", "60"
@@ -1610,18 +1518,6 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 			   "length", "60"
 		   });
 		addAnnotation
-		  (getOAuth2Google_IconUrl(),
-		   source,
-		   new String[] {
-			   "type", "url"
-		   });
-		addAnnotation
-		  (getOAuth2Google_LocalRedirectUri(),
-		   source,
-		   new String[] {
-			   "length", "60"
-		   });
-		addAnnotation
 		  (getOAuth2Google_ReturnUrl(),
 		   source,
 		   new String[] {
@@ -1634,22 +1530,10 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 			   "length", "60"
 		   });
 		addAnnotation
-		  (getOAuth2LinkedIn_IconUrl(),
-		   source,
-		   new String[] {
-			   "type", "url"
-		   });
-		addAnnotation
 		  (getOAuth2LinkedIn_LiveReturnUrl(),
 		   source,
 		   new String[] {
 			   "length", "255"
-		   });
-		addAnnotation
-		  (getOAuth2LinkedIn_LocalRedirectUri(),
-		   source,
-		   new String[] {
-			   "length", "60"
 		   });
 		addAnnotation
 		  (getOAuth2LinkedIn_SecretKey(),
@@ -1693,37 +1577,13 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
 		addAnnotation
-		  (getOAuth2GitHub_ProductStore(),
+		  (getOAuth2_ProductStore(),
 		   source,
 		   new String[] {
 			   "key", "true"
 		   });
 		addAnnotation
-		  (getOAuth2GitHub_FromDate(),
-		   source,
-		   new String[] {
-			   "key", "true"
-		   });
-		addAnnotation
-		  (getOAuth2Google_ProductStore(),
-		   source,
-		   new String[] {
-			   "key", "true"
-		   });
-		addAnnotation
-		  (getOAuth2Google_FromDate(),
-		   source,
-		   new String[] {
-			   "key", "true"
-		   });
-		addAnnotation
-		  (getOAuth2LinkedIn_ProductStore(),
-		   source,
-		   new String[] {
-			   "key", "true"
-		   });
-		addAnnotation
-		  (getOAuth2LinkedIn_FromDate(),
+		  (getOAuth2_FromDate(),
 		   source,
 		   new String[] {
 			   "key", "true"

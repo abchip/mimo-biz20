@@ -7,11 +7,6 @@
  */
 package org.abchip.mimo.biz.model.passport;
 
-import java.util.Date;
-import org.abchip.mimo.biz.model.product.store.ProductStore;
-import org.abchip.mimo.entity.EntityIdentifiable;
-import org.abchip.mimo.entity.EntityInfo;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>OAuth2 Linked In</b></em>'.
@@ -21,72 +16,17 @@ import org.abchip.mimo.entity.EntityInfo;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2LinkedIn#getProductStore <em>Product Store</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2LinkedIn#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2LinkedIn#getApiKey <em>Api Key</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2LinkedIn#getIconUrl <em>Icon Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2LinkedIn#getLiveReturnUrl <em>Live Return Url</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2LinkedIn#getLocalRedirectUri <em>Local Redirect Uri</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2LinkedIn#getSecretKey <em>Secret Key</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2LinkedIn#getTestReturnUrl <em>Test Return Url</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2LinkedIn#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.passport.PassportPackage#getOAuth2LinkedIn()
  * @model annotation="mimo-ent-frame help='Data Model Enhancements For Passport' title='LinkedIn OAuth Login Config'"
  * @generated
  */
-public interface OAuth2LinkedIn extends EntityIdentifiable, EntityInfo {
-	/**
-	 * Returns the value of the '<em><b>Product Store</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product Store</em>' reference.
-	 * @see #setProductStore(ProductStore)
-	 * @see org.abchip.mimo.biz.model.passport.PassportPackage#getOAuth2LinkedIn_ProductStore()
-	 * @model required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	ProductStore getProductStore();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.passport.OAuth2LinkedIn#getProductStore <em>Product Store</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product Store</em>' reference.
-	 * @see #getProductStore()
-	 * @generated
-	 */
-	void setProductStore(ProductStore value);
-
-	/**
-	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>From Date</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>From Date</em>' attribute.
-	 * @see #setFromDate(Date)
-	 * @see org.abchip.mimo.biz.model.passport.PassportPackage#getOAuth2LinkedIn_FromDate()
-	 * @model required="true"
-	 *        annotation="mimo-ent-slot key='true'"
-	 * @generated
-	 */
-	Date getFromDate();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.passport.OAuth2LinkedIn#getFromDate <em>From Date</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>From Date</em>' attribute.
-	 * @see #getFromDate()
-	 * @generated
-	 */
-	void setFromDate(Date value);
-
+public interface OAuth2LinkedIn extends OAuth2 {
 	/**
 	 * Returns the value of the '<em><b>Api Key</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -114,32 +54,6 @@ public interface OAuth2LinkedIn extends EntityIdentifiable, EntityInfo {
 	void setApiKey(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Icon Url</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Icon Url</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Icon Url</em>' attribute.
-	 * @see #setIconUrl(String)
-	 * @see org.abchip.mimo.biz.model.passport.PassportPackage#getOAuth2LinkedIn_IconUrl()
-	 * @model annotation="mimo-ent-format type='url'"
-	 * @generated
-	 */
-	String getIconUrl();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.passport.OAuth2LinkedIn#getIconUrl <em>Icon Url</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Icon Url</em>' attribute.
-	 * @see #getIconUrl()
-	 * @generated
-	 */
-	void setIconUrl(String value);
-
-	/**
 	 * Returns the value of the '<em><b>Live Return Url</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -164,32 +78,6 @@ public interface OAuth2LinkedIn extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setLiveReturnUrl(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Local Redirect Uri</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Local Redirect Uri</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Local Redirect Uri</em>' attribute.
-	 * @see #setLocalRedirectUri(String)
-	 * @see org.abchip.mimo.biz.model.passport.PassportPackage#getOAuth2LinkedIn_LocalRedirectUri()
-	 * @model annotation="mimo-ent-format length='60'"
-	 * @generated
-	 */
-	String getLocalRedirectUri();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.passport.OAuth2LinkedIn#getLocalRedirectUri <em>Local Redirect Uri</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Local Redirect Uri</em>' attribute.
-	 * @see #getLocalRedirectUri()
-	 * @generated
-	 */
-	void setLocalRedirectUri(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Secret Key</b></em>' attribute.
@@ -242,31 +130,5 @@ public interface OAuth2LinkedIn extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setTestReturnUrl(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Thru Date</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Thru Date</em>' attribute.
-	 * @see #setThruDate(Date)
-	 * @see org.abchip.mimo.biz.model.passport.PassportPackage#getOAuth2LinkedIn_ThruDate()
-	 * @model
-	 * @generated
-	 */
-	Date getThruDate();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.passport.OAuth2LinkedIn#getThruDate <em>Thru Date</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Thru Date</em>' attribute.
-	 * @see #getThruDate()
-	 * @generated
-	 */
-	void setThruDate(Date value);
 
 } // OAuth2LinkedIn
