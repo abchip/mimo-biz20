@@ -825,8 +825,12 @@ public class EntityServices {
 		try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
 			String line = "";
 			while ((line = reader.readLine()) != null) {
-				if(line.contains("<eSubpackages"))
+
+				if(line.contains("<eSubpackages")) {
+					stringBuilder.append(line);
+					stringBuilder.append(ls);
 					continue;
+				}
 				
 				line = line.replaceFirst("ecore:EClass http://www.abchip.org/mimo/biz/model#//", "#//");
 				line = line.replaceFirst("ecore:EClass biz-model.ecore#//", "#//");
