@@ -1540,7 +1540,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_DATA_RESOURCE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
+	int IMAGE_DATA_RESOURCE__CREATED_STAMP = DATA_RESOURCE__CREATED_STAMP;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1549,7 +1549,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_DATA_RESOURCE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
+	int IMAGE_DATA_RESOURCE__CREATED_TX_STAMP = DATA_RESOURCE__CREATED_TX_STAMP;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1558,7 +1558,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_DATA_RESOURCE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
+	int IMAGE_DATA_RESOURCE__LAST_UPDATED_STAMP = DATA_RESOURCE__LAST_UPDATED_STAMP;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1567,7 +1567,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_DATA_RESOURCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
+	int IMAGE_DATA_RESOURCE__LAST_UPDATED_TX_STAMP = DATA_RESOURCE__LAST_UPDATED_TX_STAMP;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Id</b></em>' attribute.
@@ -1576,7 +1576,205 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_DATA_RESOURCE__DATA_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int IMAGE_DATA_RESOURCE__DATA_RESOURCE_ID = DATA_RESOURCE__DATA_RESOURCE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Character Set</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__CHARACTER_SET = DATA_RESOURCE__CHARACTER_SET;
+
+	/**
+	 * The feature id for the '<em><b>Created By User Login</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__CREATED_BY_USER_LOGIN = DATA_RESOURCE__CREATED_BY_USER_LOGIN;
+
+	/**
+	 * The feature id for the '<em><b>Created Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__CREATED_DATE = DATA_RESOURCE__CREATED_DATE;
+
+	/**
+	 * The feature id for the '<em><b>Data Category</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__DATA_CATEGORY = DATA_RESOURCE__DATA_CATEGORY;
+
+	/**
+	 * The feature id for the '<em><b>Data Resource Attributes</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__DATA_RESOURCE_ATTRIBUTES = DATA_RESOURCE__DATA_RESOURCE_ATTRIBUTES;
+
+	/**
+	 * The feature id for the '<em><b>Data Resource Meta Datas</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__DATA_RESOURCE_META_DATAS = DATA_RESOURCE__DATA_RESOURCE_META_DATAS;
+
+	/**
+	 * The feature id for the '<em><b>Data Resource Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__DATA_RESOURCE_NAME = DATA_RESOURCE__DATA_RESOURCE_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Data Resource Purposes</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__DATA_RESOURCE_PURPOSES = DATA_RESOURCE__DATA_RESOURCE_PURPOSES;
+
+	/**
+	 * The feature id for the '<em><b>Data Resource Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__DATA_RESOURCE_TYPE = DATA_RESOURCE__DATA_RESOURCE_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Data Source</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__DATA_SOURCE = DATA_RESOURCE__DATA_SOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Data Template Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__DATA_TEMPLATE_TYPE = DATA_RESOURCE__DATA_TEMPLATE_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Is Public</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__IS_PUBLIC = DATA_RESOURCE__IS_PUBLIC;
+
+	/**
+	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__LAST_MODIFIED_BY_USER_LOGIN = DATA_RESOURCE__LAST_MODIFIED_BY_USER_LOGIN;
+
+	/**
+	 * The feature id for the '<em><b>Last Modified Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__LAST_MODIFIED_DATE = DATA_RESOURCE__LAST_MODIFIED_DATE;
+
+	/**
+	 * The feature id for the '<em><b>Locale String</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__LOCALE_STRING = DATA_RESOURCE__LOCALE_STRING;
+
+	/**
+	 * The feature id for the '<em><b>Mime Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__MIME_TYPE = DATA_RESOURCE__MIME_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Object Info</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__OBJECT_INFO = DATA_RESOURCE__OBJECT_INFO;
+
+	/**
+	 * The feature id for the '<em><b>Product Feature Data Resources</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__PRODUCT_FEATURE_DATA_RESOURCES = DATA_RESOURCE__PRODUCT_FEATURE_DATA_RESOURCES;
+
+	/**
+	 * The feature id for the '<em><b>Related Detail Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__RELATED_DETAIL_ID = DATA_RESOURCE__RELATED_DETAIL_ID;
+
+	/**
+	 * The feature id for the '<em><b>Status</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__STATUS = DATA_RESOURCE__STATUS;
+
+	/**
+	 * The feature id for the '<em><b>Survey</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__SURVEY = DATA_RESOURCE__SURVEY;
+
+	/**
+	 * The feature id for the '<em><b>Survey Response</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int IMAGE_DATA_RESOURCE__SURVEY_RESPONSE = DATA_RESOURCE__SURVEY_RESPONSE;
 
 	/**
 	 * The feature id for the '<em><b>Image Data</b></em>' attribute.
@@ -1585,7 +1783,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_DATA_RESOURCE__IMAGE_DATA = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int IMAGE_DATA_RESOURCE__IMAGE_DATA = DATA_RESOURCE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Image Data Resource</em>' class.
@@ -1594,7 +1792,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_DATA_RESOURCE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int IMAGE_DATA_RESOURCE_FEATURE_COUNT = DATA_RESOURCE_FEATURE_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.data.impl.MetaDataPredicateImpl <em>Meta Data Predicate</em>}' class.
@@ -2752,17 +2950,6 @@ public interface DataPackage extends EPackage {
 	EClass getImageDataResource();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.data.ImageDataResource#getDataResourceId <em>Data Resource Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Data Resource Id</em>'.
-	 * @see org.abchip.mimo.biz.model.content.data.ImageDataResource#getDataResourceId()
-	 * @see #getImageDataResource()
-	 * @generated
-	 */
-	EAttribute getImageDataResource_DataResourceId();
-
-	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.data.ImageDataResource#getImageData <em>Image Data</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3566,14 +3753,6 @@ public interface DataPackage extends EPackage {
 		 * @generated
 		 */
 		EClass IMAGE_DATA_RESOURCE = eINSTANCE.getImageDataResource();
-
-		/**
-		 * The meta object literal for the '<em><b>Data Resource Id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute IMAGE_DATA_RESOURCE__DATA_RESOURCE_ID = eINSTANCE.getImageDataResource_DataResourceId();
 
 		/**
 		 * The meta object literal for the '<em><b>Image Data</b></em>' attribute feature.

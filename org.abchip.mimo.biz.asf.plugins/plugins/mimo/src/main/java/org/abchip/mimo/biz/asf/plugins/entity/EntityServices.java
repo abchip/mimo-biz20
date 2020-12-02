@@ -131,10 +131,12 @@ public class EntityServices {
 		boolean result = false;
 
 		// super class
-		if (!srcEClass.getESuperTypes().get(0).equals(EntityPackage.eINSTANCE.getEntityIdentifiable()) && !srcEClass.getESuperTypes().get(0).equals(EntityPackage.eINSTANCE.getEntityType())
-				&& !srcEClass.getESuperTypes().get(0).equals(EntityPackage.eINSTANCE.getEntityTyped())) {
+		if (!srcEClass.getESuperTypes().get(0).equals(EntityPackage.eINSTANCE.getEntityIdentifiable()) && 
+			!srcEClass.getESuperTypes().get(0).equals(EntityPackage.eINSTANCE.getEntityType()) && 
+			!srcEClass.getESuperTypes().get(0).equals(EntityPackage.eINSTANCE.getEntityTyped())) {
 
 			if (!srcEClass.getESuperTypes().get(0).getName().equals(dstEClass.getESuperTypes().get(0).getName())) {
+
 				LOGGER.info("Class {} override super {}", dstEClassifier.getName(), EcoreUtil.getURI(srcEClass.getESuperTypes().get(0)));
 
 				result = true;
@@ -143,8 +145,23 @@ public class EntityServices {
 				dstEClass.getESuperTypes().clear();
 
 				// copy source
-				for (EClass srcSuperEClass : srcEClass.getESuperTypes())
+				for (EClass srcSuperEClass : srcEClass.getESuperTypes()) {
 					dstEClass.getESuperTypes().add(srcSuperEClass);
+					// remove super class features
+					for(EStructuralFeature eFeature: dstEClass.getEStructuralFeatures()) {
+						if(srcSuperEClass.getEStructuralFeature(eFeature.getName()) != null)
+							dstEClass.getEStructuralFeatures().remove(eFeature);
+					}
+				}
+				
+				// copy annotation
+				for (EAnnotation srcEAnnotation : srcEClass.getEAnnotations()) {
+					EAnnotation dstEAnnotation = dstEClass.getEAnnotation(srcEAnnotation.getSource());
+					if (dstEAnnotation == null) {
+						dstEAnnotation = EcoreUtils.copy(srcEAnnotation);
+						dstEClass.getEAnnotations().add(dstEAnnotation);
+					}
+				}
 			}
 		}
 
@@ -808,16 +825,25 @@ public class EntityServices {
 		try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
 			String line = "";
 			while ((line = reader.readLine()) != null) {
+				if(line.contains("<eSubpackages"))
+					continue;
+				
 				line = line.replaceFirst("ecore:EClass http://www.abchip.org/mimo/biz/model#//", "#//");
 				line = line.replaceFirst("ecore:EClass biz-model.ecore#//", "#//");
 				line = line.replaceFirst("biz-model.ecore#//", "#//");
 				line = line.replaceFirst("http://www.abchip.org/mimo/biz#//", "../../org.abchip.mimo.biz.core/model/biz.ecore#//");
 				line = line.replaceAll("http://www.abchip.org/mimo#//", "../../org.abchip.mimo.core/model/mimo.ecore#//");
 
+//				eSuperTypes="http://www.abchip.org/mimo/biz/model/content/data#//DataResource"
+//				eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//context/UserProfile"
+//				eSuperTypes="#//party/party/Party"
+				
 				// from original model
-				int p = line.indexOf("ecore:EClass http://www.abchip.org/mimo/biz/model/");
+//				int p = line.indexOf("ecore:EClass http://www.abchip.org/mimo/biz/model/");
+				int p = line.indexOf("http://www.abchip.org/mimo/biz/model/");
 				if (p != -1) {
-					line = line.replaceFirst("ecore:EClass http://www.abchip.org/mimo/biz/model/", "#//");
+//					line = line.replaceFirst("ecore:EClass http://www.abchip.org/mimo/biz/model/", "#//");
+					line = line.replaceFirst("http://www.abchip.org/mimo/biz/model/", "#//");
 					line = line.substring(0, p + 3) + line.substring(p + 3).replaceFirst("#//", "/");
 				}
 

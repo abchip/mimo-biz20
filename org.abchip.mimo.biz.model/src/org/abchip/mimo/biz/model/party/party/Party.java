@@ -51,6 +51,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyCarrierAccounts <em>Party Carrier Accounts</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyClassifications <em>Party Classifications</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyContactMechs <em>Party Contact Mechs</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyDataResources <em>Party Data Resources</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyDataSources <em>Party Data Sources</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyGeoPoints <em>Party Geo Points</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyIdentifications <em>Party Identifications</em>}</li>
@@ -337,6 +338,19 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * @generated
 	 */
 	List<PartyContactMech> getPartyContactMechs();
+
+	/**
+	 * Returns the value of the '<em><b>Party Data Resources</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.party.PartyDataResource}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party Data Resources</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyDataResources()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot-constraints fromDate='*NOW'"
+	 * @generated
+	 */
+	List<PartyDataResource> getPartyDataResources();
 
 	/**
 	 * Returns the value of the '<em><b>Party Data Sources</b></em>' reference list.

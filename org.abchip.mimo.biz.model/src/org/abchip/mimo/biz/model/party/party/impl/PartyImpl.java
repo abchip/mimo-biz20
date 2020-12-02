@@ -28,6 +28,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.PartyAttribute;
 import org.abchip.mimo.biz.model.party.party.PartyCarrierAccount;
 import org.abchip.mimo.biz.model.party.party.PartyClassification;
+import org.abchip.mimo.biz.model.party.party.PartyDataResource;
 import org.abchip.mimo.biz.model.party.party.PartyDataSource;
 import org.abchip.mimo.biz.model.party.party.PartyGeoPoint;
 import org.abchip.mimo.biz.model.party.party.PartyIdentification;
@@ -76,6 +77,7 @@ import org.osgi.service.log.Logger;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyCarrierAccounts <em>Party Carrier Accounts</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyClassifications <em>Party Classifications</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyContactMechs <em>Party Contact Mechs</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyDataResources <em>Party Data Resources</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyDataSources <em>Party Data Sources</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyGeoPoints <em>Party Geo Points</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyIdentifications <em>Party Identifications</em>}</li>
@@ -390,6 +392,17 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	@Override
 	public List<PartyContactMech> getPartyContactMechs() {
 		return (List<PartyContactMech>)eGet(PartyPackage.Literals.PARTY__PARTY_CONTACT_MECHS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<PartyDataResource> getPartyDataResources() {
+		return (List<PartyDataResource>)eGet(PartyPackage.Literals.PARTY__PARTY_DATA_RESOURCES, true);
 	}
 
 	/**

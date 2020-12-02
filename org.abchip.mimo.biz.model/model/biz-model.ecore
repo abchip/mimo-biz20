@@ -8771,17 +8771,13 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="mimeType" eType="#//content/data/MimeType"/>
       </eClassifiers>
-      <eClassifiers xsi:type="ecore:EClass" name="ImageDataResource" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityIdentifiable ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo">
+      <eClassifiers xsi:type="ecore:EClass" name="ImageDataResource" eSuperTypes="#//content/data/DataResource">
         <eAnnotations source="mimo-ent-frame">
           <details key="title" value="Image Data Object"/>
         </eAnnotations>
-        <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataResourceId" lowerBound="1"
-            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-            iD="true">
-          <eAnnotations source="mimo-ent-format">
-            <details key="length" value="20"/>
-          </eAnnotations>
-        </eStructuralFeatures>
+        <eAnnotations source="mimo-ent-frame-type">
+          <details key="dataResourceType" value="IMAGE_OBJECT"/>
+        </eAnnotations>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="imageData" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EByteArray"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="MetaDataPredicate" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityIdentifiable ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo">
@@ -19347,13 +19343,13 @@
         <eAnnotations source="mimo-ent-frame">
           <details key="formula" value="description"/>
         </eAnnotations>
-        <eOperations name="getCreditCard" lowerBound="1" eType="#//accounting/payment/CreditCard"/>
-        <eOperations name="getEmail" lowerBound="1" eType="#//party/contact/ContactMech"/>
-        <eOperations name="getPaymentMethod" lowerBound="1" eType="#//accounting/payment/PaymentMethod">
+        <eOperations name="getCreditCard" lowerBound="1" eType="ecore:EClass #//accounting/payment/CreditCard"/>
+        <eOperations name="getEmail" lowerBound="1" eType="ecore:EClass #//party/contact/ContactMech"/>
+        <eOperations name="getPaymentMethod" lowerBound="1" eType="ecore:EClass #//accounting/payment/PaymentMethod">
           <eParameters name="methodType" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
         </eOperations>
-        <eOperations name="getPostalAddress" lowerBound="1" eType="#//party/contact/PostalAddress"/>
-        <eOperations name="getTelecomNumber" lowerBound="1" eType="#//party/contact/TelecomNumber"/>
+        <eOperations name="getPostalAddress" lowerBound="1" eType="ecore:EClass #//party/contact/PostalAddress"/>
+        <eOperations name="getTelecomNumber" lowerBound="1" eType="ecore:EClass #//party/contact/TelecomNumber"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="partyId" lowerBound="1"
             eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
             iD="true">
@@ -19399,6 +19395,13 @@
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyContactMechs"
             upperBound="-1" eType="#//party/contact/PartyContactMech"
+            derived="true">
+          <eAnnotations source="mimo-ent-slot-constraints">
+            <details key="fromDate" value="*NOW"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="partyDataResources"
+            upperBound="-1" eType="#//party/party/PartyDataResource"
             derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
             <details key="fromDate" value="*NOW"/>
@@ -19654,6 +19657,30 @@
           <eTypeArguments eClassifier="#//party/party/PartyContent"/>
         </eGenericSuperTypes>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="PartyDataResource" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityIdentifiable ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo">
+        <eAnnotations source="mimo-ent-frame">
+          <details key="title" value="DataResource Role"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="party" lowerBound="1"
+            eType="#//party/party/Party">
+          <eAnnotations source="mimo-ent-slot">
+            <details key="key" value="true"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="dataResource" lowerBound="1"
+            eType="#//content/data/DataResource">
+          <eAnnotations source="mimo-ent-slot">
+            <details key="key" value="true"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="fromDate" lowerBound="1"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
+          <eAnnotations source="mimo-ent-slot">
+            <details key="key" value="true"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="thruDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="PartyDataSource" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityIdentifiable ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo">
         <eStructuralFeatures xsi:type="ecore:EReference" name="party" lowerBound="1"

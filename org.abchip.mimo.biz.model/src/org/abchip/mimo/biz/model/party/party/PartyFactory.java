@@ -117,6 +117,15 @@ public interface PartyFactory extends EFactory {
 	PartyContentType createPartyContentType();
 
 	/**
+	 * Returns a new object of class '<em>Data Resource</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Data Resource</em>'.
+	 * @generated
+	 */
+	PartyDataResource createPartyDataResource();
+
+	/**
 	 * Returns a new object of class '<em>Data Source</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -1539,18 +1539,8 @@ public class DataPackageImpl extends EPackageImpl implements DataPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getImageDataResource_DataResourceId() {
-		return (EAttribute)imageDataResourceEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EAttribute getImageDataResource_ImageData() {
-		return (EAttribute)imageDataResourceEClass.getEStructuralFeatures().get(1);
+		return (EAttribute)imageDataResourceEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1818,7 +1808,6 @@ public class DataPackageImpl extends EPackageImpl implements DataPackage {
 		createEReference(fileExtensionEClass, FILE_EXTENSION__MIME_TYPE);
 
 		imageDataResourceEClass = createEClass(IMAGE_DATA_RESOURCE);
-		createEAttribute(imageDataResourceEClass, IMAGE_DATA_RESOURCE__DATA_RESOURCE_ID);
 		createEAttribute(imageDataResourceEClass, IMAGE_DATA_RESOURCE__IMAGE_DATA);
 
 		metaDataPredicateEClass = createEClass(META_DATA_PREDICATE);
@@ -1913,8 +1902,7 @@ public class DataPackageImpl extends EPackageImpl implements DataPackage {
 		electronicTextEClass.getESuperTypes().add(this.getDataResource());
 		fileExtensionEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		fileExtensionEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		imageDataResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		imageDataResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		imageDataResourceEClass.getESuperTypes().add(this.getDataResource());
 		metaDataPredicateEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		metaDataPredicateEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		mimeTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
@@ -2013,7 +2001,6 @@ public class DataPackageImpl extends EPackageImpl implements DataPackage {
 		initEReference(getFileExtension_MimeType(), this.getMimeType(), null, "mimeType", null, 0, 1, FileExtension.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(imageDataResourceEClass, ImageDataResource.class, "ImageDataResource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getImageDataResource_DataResourceId(), ecorePackage.getEString(), "dataResourceId", null, 1, 1, ImageDataResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getImageDataResource_ImageData(), ecorePackage.getEByteArray(), "imageData", null, 0, 1, ImageDataResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(metaDataPredicateEClass, MetaDataPredicate.class, "MetaDataPredicate", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -2197,12 +2184,6 @@ public class DataPackageImpl extends EPackageImpl implements DataPackage {
 			   "length", "60"
 		   });
 		addAnnotation
-		  (getImageDataResource_DataResourceId(),
-		   source,
-		   new String[] {
-			   "length", "20"
-		   });
-		addAnnotation
 		  (getMetaDataPredicate_MetaDataPredicateId(),
 		   source,
 		   new String[] {
@@ -2365,6 +2346,12 @@ public class DataPackageImpl extends EPackageImpl implements DataPackage {
 		   source,
 		   new String[] {
 			   "dataResourceType", "ELECTRONIC_TEXT"
+		   });
+		addAnnotation
+		  (imageDataResourceEClass,
+		   source,
+		   new String[] {
+			   "dataResourceType", "IMAGE_OBJECT"
 		   });
 	}
 
