@@ -6423,29 +6423,33 @@
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
             ecoreFeature="ecore:EReference biz-model.ecore#//passport/LinkedInUser/productStore"/>
       </genClasses>
-      <genClasses image="false" ecoreClass="biz-model.ecore#//passport/OAuth2">
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference biz-model.ecore#//passport/OAuth2/productStore"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2/fromDate"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2/iconUrl"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2/localRedirectUri"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2/thruDate"/>
-      </genClasses>
       <genClasses ecoreClass="biz-model.ecore#//passport/OAuth2GitHub">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference biz-model.ecore#//passport/OAuth2GitHub/productStore"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2GitHub/fromDate"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2GitHub/clientId"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2GitHub/clientSecret"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2GitHub/thruDate"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2GitHub/returnUrl"/>
       </genClasses>
       <genClasses ecoreClass="biz-model.ecore#//passport/OAuth2Google">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference biz-model.ecore#//passport/OAuth2Google/productStore"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2Google/fromDate"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2Google/clientId"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2Google/clientSecret"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2Google/returnUrl"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2Google/thruDate"/>
       </genClasses>
       <genClasses ecoreClass="biz-model.ecore#//passport/OAuth2LinkedIn">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference biz-model.ecore#//passport/OAuth2LinkedIn/productStore"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2LinkedIn/fromDate"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2LinkedIn/apiKey"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2LinkedIn/liveReturnUrl"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2LinkedIn/secretKey"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2LinkedIn/testReturnUrl"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//passport/OAuth2LinkedIn/thruDate"/>
       </genClasses>
       <genClasses ecoreClass="biz-model.ecore#//passport/ThirdPartyLogin">
         <genFeatures notify="false" createChild="false" propertySortChoices="true"

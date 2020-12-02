@@ -7,6 +7,10 @@
  */
 package org.abchip.mimo.biz.model.passport;
 
+import java.util.Date;
+import org.abchip.mimo.authentication.OAuth2;
+import org.abchip.mimo.biz.model.product.store.ProductStore;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>OAuth2 Git Hub</b></em>'.
@@ -16,8 +20,11 @@ package org.abchip.mimo.biz.model.passport;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2GitHub#getProductStore <em>Product Store</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2GitHub#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2GitHub#getClientId <em>Client Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2GitHub#getClientSecret <em>Client Secret</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2GitHub#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2GitHub#getReturnUrl <em>Return Url</em>}</li>
  * </ul>
  *
@@ -26,6 +33,52 @@ package org.abchip.mimo.biz.model.passport;
  * @generated
  */
 public interface OAuth2GitHub extends OAuth2 {
+	/**
+	 * Returns the value of the '<em><b>Product Store</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Store</em>' reference.
+	 * @see #setProductStore(ProductStore)
+	 * @see org.abchip.mimo.biz.model.passport.PassportPackage#getOAuth2GitHub_ProductStore()
+	 * @model required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	ProductStore getProductStore();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.passport.OAuth2GitHub#getProductStore <em>Product Store</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Product Store</em>' reference.
+	 * @see #getProductStore()
+	 * @generated
+	 */
+	void setProductStore(ProductStore value);
+
+	/**
+	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>From Date</em>' attribute.
+	 * @see #setFromDate(Date)
+	 * @see org.abchip.mimo.biz.model.passport.PassportPackage#getOAuth2GitHub_FromDate()
+	 * @model required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Date getFromDate();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.passport.OAuth2GitHub#getFromDate <em>From Date</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>From Date</em>' attribute.
+	 * @see #getFromDate()
+	 * @generated
+	 */
+	void setFromDate(Date value);
+
 	/**
 	 * Returns the value of the '<em><b>Client Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -77,6 +130,28 @@ public interface OAuth2GitHub extends OAuth2 {
 	 * @generated
 	 */
 	void setClientSecret(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Thru Date</em>' attribute.
+	 * @see #setThruDate(Date)
+	 * @see org.abchip.mimo.biz.model.passport.PassportPackage#getOAuth2GitHub_ThruDate()
+	 * @model
+	 * @generated
+	 */
+	Date getThruDate();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.passport.OAuth2GitHub#getThruDate <em>Thru Date</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Thru Date</em>' attribute.
+	 * @see #getThruDate()
+	 * @generated
+	 */
+	void setThruDate(Date value);
 
 	/**
 	 * Returns the value of the '<em><b>Return Url</b></em>' attribute.

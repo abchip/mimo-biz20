@@ -148,7 +148,7 @@ public class EntityServices {
 				for (EClass srcSuperEClass : srcEClass.getESuperTypes()) {
 					dstEClass.getESuperTypes().add(srcSuperEClass);
 					// remove super class features
-					for(EStructuralFeature eFeature: dstEClass.getEStructuralFeatures()) {
+					for(EStructuralFeature eFeature: new ArrayList<EStructuralFeature>(dstEClass.getEStructuralFeatures())) {
 						if(srcSuperEClass.getEStructuralFeature(eFeature.getName()) != null)
 							dstEClass.getEStructuralFeatures().remove(eFeature);
 					}

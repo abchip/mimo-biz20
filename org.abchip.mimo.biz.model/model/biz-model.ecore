@@ -20440,7 +20440,7 @@
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference" name="productStore" eType="#//product/store/ProductStore"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="OAuth2" abstract="true" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityIdentifiable ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo">
+    <eClassifiers xsi:type="ecore:EClass" name="OAuth2GitHub" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//authentication/OAuth2">
       <eAnnotations source="mimo-ent-frame">
         <details key="help" value="Data Model Enhancements For Passport"/>
         <details key="title" value="GitHub OAuth Login Config"/>
@@ -20457,44 +20457,40 @@
           <details key="key" value="true"/>
         </eAnnotations>
       </eStructuralFeatures>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="iconUrl" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="clientId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
         <eAnnotations source="mimo-ent-format">
-          <details key="type" value="url"/>
+          <details key="length" value="60"/>
         </eAnnotations>
       </eStructuralFeatures>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="localRedirectUri" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="clientSecret" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
         <eAnnotations source="mimo-ent-format">
           <details key="length" value="60"/>
         </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="thruDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="OAuth2GitHub" eSuperTypes="#//passport/OAuth2">
-      <eAnnotations source="mimo-ent-frame">
-        <details key="help" value="Data Model Enhancements For Passport"/>
-        <details key="title" value="GitHub OAuth Login Config"/>
-      </eAnnotations>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="clientId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
-        <eAnnotations source="mimo-ent-format">
-          <details key="length" value="60"/>
-        </eAnnotations>
-      </eStructuralFeatures>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="clientSecret" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
-        <eAnnotations source="mimo-ent-format">
-          <details key="length" value="60"/>
-        </eAnnotations>
-      </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="returnUrl" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
         <eAnnotations source="mimo-ent-format">
           <details key="length" value="255"/>
         </eAnnotations>
       </eStructuralFeatures>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="OAuth2Google" eSuperTypes="#//passport/OAuth2">
+    <eClassifiers xsi:type="ecore:EClass" name="OAuth2Google" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//authentication/OAuth2">
       <eAnnotations source="mimo-ent-frame">
         <details key="help" value="Data Model Enhancements For Passport"/>
         <details key="title" value="Google OAuth Login Config"/>
       </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="productStore" lowerBound="1"
+          eType="#//product/store/ProductStore">
+        <eAnnotations source="mimo-ent-slot">
+          <details key="key" value="true"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="fromDate" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
+        <eAnnotations source="mimo-ent-slot">
+          <details key="key" value="true"/>
+        </eAnnotations>
+      </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="clientId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
         <eAnnotations source="mimo-ent-format">
           <details key="length" value="255"/>
@@ -20510,12 +20506,25 @@
           <details key="length" value="255"/>
         </eAnnotations>
       </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="thruDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="OAuth2LinkedIn" eSuperTypes="#//passport/OAuth2">
+    <eClassifiers xsi:type="ecore:EClass" name="OAuth2LinkedIn" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//authentication/OAuth2">
       <eAnnotations source="mimo-ent-frame">
         <details key="help" value="Data Model Enhancements For Passport"/>
         <details key="title" value="LinkedIn OAuth Login Config"/>
       </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="productStore" lowerBound="1"
+          eType="#//product/store/ProductStore">
+        <eAnnotations source="mimo-ent-slot">
+          <details key="key" value="true"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="fromDate" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
+        <eAnnotations source="mimo-ent-slot">
+          <details key="key" value="true"/>
+        </eAnnotations>
+      </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="apiKey" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
         <eAnnotations source="mimo-ent-format">
           <details key="length" value="60"/>
@@ -20536,6 +20545,7 @@
           <details key="length" value="255"/>
         </eAnnotations>
       </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="thruDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="ThirdPartyLogin" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityIdentifiable ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo">
       <eAnnotations source="mimo-ent-frame">

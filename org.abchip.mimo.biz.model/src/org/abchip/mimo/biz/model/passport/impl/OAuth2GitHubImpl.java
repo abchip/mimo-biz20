@@ -7,8 +7,11 @@
  */
 package org.abchip.mimo.biz.model.passport.impl;
 
+import java.util.Date;
+import org.abchip.mimo.authentication.impl.OAuth2Impl;
 import org.abchip.mimo.biz.model.passport.OAuth2GitHub;
 import org.abchip.mimo.biz.model.passport.PassportPackage;
+import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -19,8 +22,11 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GitHubImpl#getProductStore <em>Product Store</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GitHubImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GitHubImpl#getClientId <em>Client Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GitHubImpl#getClientSecret <em>Client Secret</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GitHubImpl#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GitHubImpl#getReturnUrl <em>Return Url</em>}</li>
  * </ul>
  *
@@ -45,6 +51,63 @@ public class OAuth2GitHubImpl extends OAuth2Impl implements OAuth2GitHub {
 	@Override
 	protected EClass eStaticClass() {
 		return PassportPackage.Literals.OAUTH2_GIT_HUB;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 6;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return ESTATIC_FEATURE_COUNT;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(PassportPackage.Literals.OAUTH2_GIT_HUB__PRODUCT_STORE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(PassportPackage.Literals.OAUTH2_GIT_HUB__PRODUCT_STORE, newProductStore);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getFromDate() {
+		return (Date)eGet(PassportPackage.Literals.OAUTH2_GIT_HUB__FROM_DATE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFromDate(Date newFromDate) {
+		eSet(PassportPackage.Literals.OAUTH2_GIT_HUB__FROM_DATE, newFromDate);
 	}
 
 	/**
@@ -85,6 +148,26 @@ public class OAuth2GitHubImpl extends OAuth2Impl implements OAuth2GitHub {
 	@Override
 	public void setClientSecret(String newClientSecret) {
 		eSet(PassportPackage.Literals.OAUTH2_GIT_HUB__CLIENT_SECRET, newClientSecret);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getThruDate() {
+		return (Date)eGet(PassportPackage.Literals.OAUTH2_GIT_HUB__THRU_DATE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setThruDate(Date newThruDate) {
+		eSet(PassportPackage.Literals.OAUTH2_GIT_HUB__THRU_DATE, newThruDate);
 	}
 
 	/**

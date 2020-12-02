@@ -7,8 +7,11 @@
  */
 package org.abchip.mimo.biz.model.passport.impl;
 
+import java.util.Date;
+import org.abchip.mimo.authentication.impl.OAuth2Impl;
 import org.abchip.mimo.biz.model.passport.OAuth2LinkedIn;
 import org.abchip.mimo.biz.model.passport.PassportPackage;
+import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -19,10 +22,13 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2LinkedInImpl#getProductStore <em>Product Store</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2LinkedInImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2LinkedInImpl#getApiKey <em>Api Key</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2LinkedInImpl#getLiveReturnUrl <em>Live Return Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2LinkedInImpl#getSecretKey <em>Secret Key</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2LinkedInImpl#getTestReturnUrl <em>Test Return Url</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2LinkedInImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
  * @generated
@@ -46,6 +52,63 @@ public class OAuth2LinkedInImpl extends OAuth2Impl implements OAuth2LinkedIn {
 	@Override
 	protected EClass eStaticClass() {
 		return PassportPackage.Literals.OAUTH2_LINKED_IN;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 6;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return ESTATIC_FEATURE_COUNT;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductStore getProductStore() {
+		return (ProductStore)eGet(PassportPackage.Literals.OAUTH2_LINKED_IN__PRODUCT_STORE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProductStore(ProductStore newProductStore) {
+		eSet(PassportPackage.Literals.OAUTH2_LINKED_IN__PRODUCT_STORE, newProductStore);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getFromDate() {
+		return (Date)eGet(PassportPackage.Literals.OAUTH2_LINKED_IN__FROM_DATE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFromDate(Date newFromDate) {
+		eSet(PassportPackage.Literals.OAUTH2_LINKED_IN__FROM_DATE, newFromDate);
 	}
 
 	/**
@@ -126,6 +189,26 @@ public class OAuth2LinkedInImpl extends OAuth2Impl implements OAuth2LinkedIn {
 	@Override
 	public void setTestReturnUrl(String newTestReturnUrl) {
 		eSet(PassportPackage.Literals.OAUTH2_LINKED_IN__TEST_RETURN_URL, newTestReturnUrl);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getThruDate() {
+		return (Date)eGet(PassportPackage.Literals.OAUTH2_LINKED_IN__THRU_DATE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setThruDate(Date newThruDate) {
+		eSet(PassportPackage.Literals.OAUTH2_LINKED_IN__THRU_DATE, newThruDate);
 	}
 
 } //OAuth2LinkedInImpl
