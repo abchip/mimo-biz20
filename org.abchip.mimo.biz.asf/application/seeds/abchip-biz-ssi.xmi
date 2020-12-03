@@ -8,6 +8,22 @@
     xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/party/party ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//party/party http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
     name="abchip-biz-ssi">
   <contents
+      xsi:type="biz-party:RoleType"
+      roleTypeId="SUPPORTER"
+      description="Supporter"/>
+  <contents
+      xsi:type="biz-party:RoleType"
+      roleTypeId="COORDINATOR"
+      description="Coordinator"/>
+  <contents
+      xsi:type="biz-party:RoleType"
+      roleTypeId="DEPUTY_COORDINATOR"
+      description="Deputy Coordinator"/>
+  <contents
+      xsi:type="biz-party:RoleType"
+      roleTypeId="CREW"
+      description="Crew"/>
+  <contents
       xsi:type="biz-party:PartyIdentificationType"
       partyIdentificationTypeId="SSI_BADGE"
       description="Badge"/>
@@ -18,13 +34,16 @@
   <contents
       xsi:type="biz-party:PartyClassificationType"
       partyClassificationTypeId="SSI_AREA"
-      description="SSI Classification Area" hasContactMech="true"/>
+      description="SSI Classification Area"
+      hasContactMech="true"/>
   <contents
       xsi:type="biz-party:PartyClassificationType"
       partyClassificationTypeId="SSI_DEPARTMENT"
-      description="SSI Classification Department" hasContactMech="true"/>
+      description="SSI Classification Department"
+      hasContactMech="true"/>
   <contents
       xsi:type="biz-party:PartyClassificationType"
       partyClassificationTypeId="SSI_FUNCTION"
-      description="SSI Classification Function" hasContactMech="true"/>
+      description="SSI Classification Function"
+      hasContactMech="true"/>
 </mimo-ent:EntityContainer>
