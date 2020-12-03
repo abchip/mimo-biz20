@@ -934,7 +934,7 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 	 */
 	@Override
 	public EAttribute getOAuth2GitHub_ThruDate() {
-		return (EAttribute)oAuth2GitHubEClass.getEStructuralFeatures().get(4);
+		return (EAttribute)oAuth2GitHubEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -944,7 +944,7 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 	 */
 	@Override
 	public EAttribute getOAuth2GitHub_ReturnUrl() {
-		return (EAttribute)oAuth2GitHubEClass.getEStructuralFeatures().get(5);
+		return (EAttribute)oAuth2GitHubEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -1221,8 +1221,8 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 		createEAttribute(oAuth2GitHubEClass, OAUTH2_GIT_HUB__FROM_DATE);
 		createEAttribute(oAuth2GitHubEClass, OAUTH2_GIT_HUB__CLIENT_ID);
 		createEAttribute(oAuth2GitHubEClass, OAUTH2_GIT_HUB__CLIENT_SECRET);
-		createEAttribute(oAuth2GitHubEClass, OAUTH2_GIT_HUB__THRU_DATE);
 		createEAttribute(oAuth2GitHubEClass, OAUTH2_GIT_HUB__RETURN_URL);
+		createEAttribute(oAuth2GitHubEClass, OAUTH2_GIT_HUB__THRU_DATE);
 
 		oAuth2GoogleEClass = createEClass(OAUTH2_GOOGLE);
 		createEReference(oAuth2GoogleEClass, OAUTH2_GOOGLE__PRODUCT_STORE);
@@ -1321,8 +1321,8 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 		initEAttribute(getOAuth2GitHub_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, OAuth2GitHub.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOAuth2GitHub_ClientId(), ecorePackage.getEString(), "clientId", null, 0, 1, OAuth2GitHub.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOAuth2GitHub_ClientSecret(), ecorePackage.getEString(), "clientSecret", null, 0, 1, OAuth2GitHub.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getOAuth2GitHub_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, OAuth2GitHub.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOAuth2GitHub_ReturnUrl(), ecorePackage.getEString(), "returnUrl", null, 0, 1, OAuth2GitHub.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOAuth2GitHub_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, OAuth2GitHub.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(oAuth2GoogleEClass, OAuth2Google.class, "OAuth2Google", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getOAuth2Google_ProductStore(), theStorePackage.getProductStore(), null, "productStore", null, 1, 1, OAuth2Google.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

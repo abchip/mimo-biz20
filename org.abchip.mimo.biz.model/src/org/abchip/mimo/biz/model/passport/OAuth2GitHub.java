@@ -24,8 +24,8 @@ import org.abchip.mimo.biz.model.product.store.ProductStore;
  *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2GitHub#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2GitHub#getClientId <em>Client Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2GitHub#getClientSecret <em>Client Secret</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2GitHub#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2GitHub#getReturnUrl <em>Return Url</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.passport.OAuth2GitHub#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.passport.PassportPackage#getOAuth2GitHub()

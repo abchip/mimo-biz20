@@ -70,7 +70,6 @@ public class PartyFactoryImpl extends EFactoryImpl implements PartyFactory {
 			case PartyPackage.PARTY_CLASSIFICATION_TYPE: return (EObject)createPartyClassificationType();
 			case PartyPackage.PARTY_CONTENT: return (EObject)createPartyContent();
 			case PartyPackage.PARTY_CONTENT_TYPE: return (EObject)createPartyContentType();
-			case PartyPackage.PARTY_DATA_RESOURCE: return (EObject)createPartyDataResource();
 			case PartyPackage.PARTY_DATA_SOURCE: return (EObject)createPartyDataSource();
 			case PartyPackage.PARTY_GEO_POINT: return (EObject)createPartyGeoPoint();
 			case PartyPackage.PARTY_GROUP: return (EObject)createPartyGroup();
@@ -208,17 +207,6 @@ public class PartyFactoryImpl extends EFactoryImpl implements PartyFactory {
 	public PartyContentType createPartyContentType() {
 		PartyContentTypeImpl partyContentType = new PartyContentTypeImpl();
 		return partyContentType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PartyDataResource createPartyDataResource() {
-		PartyDataResourceImpl partyDataResource = new PartyDataResourceImpl();
-		return partyDataResource;
 	}
 
 	/**

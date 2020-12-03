@@ -8,6 +8,9 @@
  */
 package org.abchip.mimo.biz.test.command;
 
+import java.io.FileOutputStream;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -18,6 +21,7 @@ import javax.inject.Inject;
 
 import org.abchip.mimo.application.Application;
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
+import org.abchip.mimo.biz.model.content.data.ImageDataResource;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.test.command.runner.ApproveOrder;
@@ -36,6 +40,7 @@ import org.abchip.mimo.biz.test.command.runner.HoldOrder;
 import org.abchip.mimo.biz.test.command.runner.RenewalAgreement;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextHandler;
+import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.tester.base.BaseTestCommands;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 
@@ -44,6 +49,24 @@ public class StressTestCommands extends BaseTestCommands {
 	@Inject
 	public StressTestCommands(Application application) {
 		super(application);
+	}
+
+	public void _mm_image(CommandInterpreter interpreter) throws Exception {
+		try (ContextHandler contextHandler = login(interpreter)) {
+
+			try (EntityIterator<ImageDataResource> imageDataResourceIterator = getContext(interpreter).getResourceManager().getResourceReader(ImageDataResource.class).find()) {
+				for (ImageDataResource imageDataResource : imageDataResourceIterator) {
+					String fileName = "/mimo/temp/" + imageDataResource.getDataResourceId();
+					if (Files.exists(Paths.get(fileName)))
+						continue;
+					if (imageDataResource.getImageData() == null)
+						continue;
+					try (FileOutputStream fos = new FileOutputStream(fileName)) {
+						fos.write(imageDataResource.getImageData());
+					}
+				}
+			}
+		}
 	}
 
 	public void _createTestBaseData(CommandInterpreter interpreter) throws Exception {

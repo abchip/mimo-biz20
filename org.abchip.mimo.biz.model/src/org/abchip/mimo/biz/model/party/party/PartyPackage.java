@@ -453,22 +453,13 @@ public interface PartyPackage extends EPackage {
 	int PARTY__PARTY_CONTACT_MECHS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
-	 * The feature id for the '<em><b>Party Data Resources</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARTY__PARTY_DATA_RESOURCES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
-
-	/**
 	 * The feature id for the '<em><b>Party Data Sources</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_DATA_SOURCES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
+	int PARTY__PARTY_DATA_SOURCES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Party Geo Points</b></em>' reference list.
@@ -477,7 +468,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_GEO_POINTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
+	int PARTY__PARTY_GEO_POINTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Party Identifications</b></em>' reference list.
@@ -486,7 +477,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_IDENTIFICATIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
+	int PARTY__PARTY_IDENTIFICATIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Party Name Histories</b></em>' reference list.
@@ -495,7 +486,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_NAME_HISTORIES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
+	int PARTY__PARTY_NAME_HISTORIES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Party Notes</b></em>' reference list.
@@ -504,7 +495,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_NOTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
+	int PARTY__PARTY_NOTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Party Profile Defaults</b></em>' reference list.
@@ -513,7 +504,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_PROFILE_DEFAULTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
+	int PARTY__PARTY_PROFILE_DEFAULTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Party Quals</b></em>' reference list.
@@ -522,7 +513,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_QUALS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
+	int PARTY__PARTY_QUALS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Party Rates</b></em>' reference list.
@@ -531,7 +522,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_RATES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
+	int PARTY__PARTY_RATES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Party Roles</b></em>' reference list.
@@ -540,7 +531,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_ROLES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
+	int PARTY__PARTY_ROLES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Party Skills</b></em>' reference list.
@@ -549,7 +540,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_SKILLS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
+	int PARTY__PARTY_SKILLS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Party Statuses</b></em>' reference list.
@@ -558,7 +549,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_STATUSES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
+	int PARTY__PARTY_STATUSES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Party Type</b></em>' reference.
@@ -567,7 +558,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
+	int PARTY__PARTY_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Performance Notes</b></em>' reference list.
@@ -576,7 +567,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PERFORMANCE_NOTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
+	int PARTY__PERFORMANCE_NOTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Preferred Currency Uom</b></em>' reference.
@@ -585,7 +576,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PREFERRED_CURRENCY_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 32;
+	int PARTY__PREFERRED_CURRENCY_UOM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Status</b></em>' reference.
@@ -594,7 +585,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__STATUS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 33;
+	int PARTY__STATUS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 32;
 
 	/**
 	 * The feature id for the '<em><b>Supplier Product Features</b></em>' reference list.
@@ -603,7 +594,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__SUPPLIER_PRODUCT_FEATURES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 34;
+	int PARTY__SUPPLIER_PRODUCT_FEATURES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 33;
 
 	/**
 	 * The number of structural features of the '<em>Party</em>' class.
@@ -612,7 +603,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 35;
+	int PARTY_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 34;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyAttributeImpl <em>Attribute</em>}' class.
@@ -1297,97 +1288,6 @@ public interface PartyPackage extends EPackage {
 	int PARTY_CONTENT_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataResourceImpl <em>Data Resource</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyDataResourceImpl
-	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyDataResource()
-	 * @generated
-	 */
-	int PARTY_DATA_RESOURCE = 10;
-
-	/**
-	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARTY_DATA_RESOURCE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARTY_DATA_RESOURCE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARTY_DATA_RESOURCE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARTY_DATA_RESOURCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>Party</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARTY_DATA_RESOURCE__PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>Data Resource</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARTY_DATA_RESOURCE__DATA_RESOURCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
-
-	/**
-	 * The feature id for the '<em><b>From Date</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARTY_DATA_RESOURCE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
-
-	/**
-	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARTY_DATA_RESOURCE__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
-
-	/**
-	 * The number of structural features of the '<em>Data Resource</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARTY_DATA_RESOURCE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
-
-	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataSourceImpl <em>Data Source</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1395,7 +1295,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyDataSource()
 	 * @generated
 	 */
-	int PARTY_DATA_SOURCE = 11;
+	int PARTY_DATA_SOURCE = 10;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1504,7 +1404,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyGeoPoint()
 	 * @generated
 	 */
-	int PARTY_GEO_POINT = 12;
+	int PARTY_GEO_POINT = 11;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1595,7 +1495,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyGroup()
 	 * @generated
 	 */
-	int PARTY_GROUP = 13;
+	int PARTY_GROUP = 12;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1758,15 +1658,6 @@ public interface PartyPackage extends EPackage {
 	 * @ordered
 	 */
 	int PARTY_GROUP__PARTY_CONTACT_MECHS = PARTY__PARTY_CONTACT_MECHS;
-
-	/**
-	 * The feature id for the '<em><b>Party Data Resources</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PARTY_GROUP__PARTY_DATA_RESOURCES = PARTY__PARTY_DATA_RESOURCES;
 
 	/**
 	 * The feature id for the '<em><b>Party Data Sources</b></em>' reference list.
@@ -2001,7 +1892,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyIcsAvsOverride()
 	 * @generated
 	 */
-	int PARTY_ICS_AVS_OVERRIDE = 14;
+	int PARTY_ICS_AVS_OVERRIDE = 13;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -2074,7 +1965,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyIdentification()
 	 * @generated
 	 */
-	int PARTY_IDENTIFICATION = 15;
+	int PARTY_IDENTIFICATION = 14;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -2156,7 +2047,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyIdentificationType()
 	 * @generated
 	 */
-	int PARTY_IDENTIFICATION_TYPE = 16;
+	int PARTY_IDENTIFICATION_TYPE = 15;
 
 	/**
 	 * The feature id for the '<em><b>Slots</b></em>' containment reference list.
@@ -2256,7 +2147,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyInvitation()
 	 * @generated
 	 */
-	int PARTY_INVITATION = 17;
+	int PARTY_INVITATION = 16;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -2392,7 +2283,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyInvitationGroupAssoc()
 	 * @generated
 	 */
-	int PARTY_INVITATION_GROUP_ASSOC = 18;
+	int PARTY_INVITATION_GROUP_ASSOC = 17;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -2465,7 +2356,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyInvitationRoleAssoc()
 	 * @generated
 	 */
-	int PARTY_INVITATION_ROLE_ASSOC = 19;
+	int PARTY_INVITATION_ROLE_ASSOC = 18;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -2538,7 +2429,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyNameHistory()
 	 * @generated
 	 */
-	int PARTY_NAME_HISTORY = 20;
+	int PARTY_NAME_HISTORY = 19;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -2665,7 +2556,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyNote()
 	 * @generated
 	 */
-	int PARTY_NOTE = 21;
+	int PARTY_NOTE = 20;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -2738,7 +2629,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyProfileDefault()
 	 * @generated
 	 */
-	int PARTY_PROFILE_DEFAULT = 22;
+	int PARTY_PROFILE_DEFAULT = 21;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -2847,7 +2738,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyRelationship()
 	 * @generated
 	 */
-	int PARTY_RELATIONSHIP = 23;
+	int PARTY_RELATIONSHIP = 22;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -3028,7 +2919,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyRelationshipType()
 	 * @generated
 	 */
-	int PARTY_RELATIONSHIP_TYPE = 24;
+	int PARTY_RELATIONSHIP_TYPE = 23;
 
 	/**
 	 * The feature id for the '<em><b>Slots</b></em>' containment reference list.
@@ -3155,7 +3046,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyRole()
 	 * @generated
 	 */
-	int PARTY_ROLE = 25;
+	int PARTY_ROLE = 24;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -3228,7 +3119,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyStatus()
 	 * @generated
 	 */
-	int PARTY_STATUS = 26;
+	int PARTY_STATUS = 25;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -3319,7 +3210,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyType()
 	 * @generated
 	 */
-	int PARTY_TYPE = 27;
+	int PARTY_TYPE = 26;
 
 	/**
 	 * The feature id for the '<em><b>Slots</b></em>' containment reference list.
@@ -3428,7 +3319,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyTypeAttr()
 	 * @generated
 	 */
-	int PARTY_TYPE_ATTR = 28;
+	int PARTY_TYPE_ATTR = 27;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -3510,7 +3401,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPerson()
 	 * @generated
 	 */
-	int PERSON = 29;
+	int PERSON = 28;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -3673,15 +3564,6 @@ public interface PartyPackage extends EPackage {
 	 * @ordered
 	 */
 	int PERSON__PARTY_CONTACT_MECHS = PARTY__PARTY_CONTACT_MECHS;
-
-	/**
-	 * The feature id for the '<em><b>Party Data Resources</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PERSON__PARTY_DATA_RESOURCES = PARTY__PARTY_DATA_RESOURCES;
 
 	/**
 	 * The feature id for the '<em><b>Party Data Sources</b></em>' reference list.
@@ -4132,7 +4014,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPriorityType()
 	 * @generated
 	 */
-	int PRIORITY_TYPE = 30;
+	int PRIORITY_TYPE = 29;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -4205,7 +4087,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getRoleType()
 	 * @generated
 	 */
-	int ROLE_TYPE = 31;
+	int ROLE_TYPE = 30;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -4314,7 +4196,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getRoleTypeAttr()
 	 * @generated
 	 */
-	int ROLE_TYPE_ATTR = 32;
+	int ROLE_TYPE_ATTR = 31;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -4396,7 +4278,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getVendor()
 	 * @generated
 	 */
-	int VENDOR = 33;
+	int VENDOR = 32;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -4496,7 +4378,7 @@ public interface PartyPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getWebSiteRole()
 	 * @generated
 	 */
-	int WEB_SITE_ROLE = 34;
+	int WEB_SITE_ROLE = 33;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -4913,17 +4795,6 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getParty_PartyContactMechs();
-
-	/**
-	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.party.party.Party#getPartyDataResources <em>Party Data Resources</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Party Data Resources</em>'.
-	 * @see org.abchip.mimo.biz.model.party.party.Party#getPartyDataResources()
-	 * @see #getParty()
-	 * @generated
-	 */
-	EReference getParty_PartyDataResources();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.party.party.Party#getPartyDataSources <em>Party Data Sources</em>}'.
@@ -5511,60 +5382,6 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getPartyContentType_ParentType();
-
-	/**
-	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.party.party.PartyDataResource <em>Data Resource</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Data Resource</em>'.
-	 * @see org.abchip.mimo.biz.model.party.party.PartyDataResource
-	 * @generated
-	 */
-	EClass getPartyDataResource();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.party.PartyDataResource#getParty <em>Party</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Party</em>'.
-	 * @see org.abchip.mimo.biz.model.party.party.PartyDataResource#getParty()
-	 * @see #getPartyDataResource()
-	 * @generated
-	 */
-	EReference getPartyDataResource_Party();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.party.PartyDataResource#getDataResource <em>Data Resource</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Data Resource</em>'.
-	 * @see org.abchip.mimo.biz.model.party.party.PartyDataResource#getDataResource()
-	 * @see #getPartyDataResource()
-	 * @generated
-	 */
-	EReference getPartyDataResource_DataResource();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.PartyDataResource#getFromDate <em>From Date</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>From Date</em>'.
-	 * @see org.abchip.mimo.biz.model.party.party.PartyDataResource#getFromDate()
-	 * @see #getPartyDataResource()
-	 * @generated
-	 */
-	EAttribute getPartyDataResource_FromDate();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.PartyDataResource#getThruDate <em>Thru Date</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Thru Date</em>'.
-	 * @see org.abchip.mimo.biz.model.party.party.PartyDataResource#getThruDate()
-	 * @see #getPartyDataResource()
-	 * @generated
-	 */
-	EAttribute getPartyDataResource_ThruDate();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.party.party.PartyDataSource <em>Data Source</em>}'.
@@ -7651,14 +7468,6 @@ public interface PartyPackage extends EPackage {
 		EReference PARTY__PARTY_CONTACT_MECHS = eINSTANCE.getParty_PartyContactMechs();
 
 		/**
-		 * The meta object literal for the '<em><b>Party Data Resources</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PARTY__PARTY_DATA_RESOURCES = eINSTANCE.getParty_PartyDataResources();
-
-		/**
 		 * The meta object literal for the '<em><b>Party Data Sources</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -8103,48 +7912,6 @@ public interface PartyPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PARTY_CONTENT_TYPE__PARENT_TYPE = eINSTANCE.getPartyContentType_ParentType();
-
-		/**
-		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataResourceImpl <em>Data Resource</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.abchip.mimo.biz.model.party.party.impl.PartyDataResourceImpl
-		 * @see org.abchip.mimo.biz.model.party.party.impl.PartyPackageImpl#getPartyDataResource()
-		 * @generated
-		 */
-		EClass PARTY_DATA_RESOURCE = eINSTANCE.getPartyDataResource();
-
-		/**
-		 * The meta object literal for the '<em><b>Party</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PARTY_DATA_RESOURCE__PARTY = eINSTANCE.getPartyDataResource_Party();
-
-		/**
-		 * The meta object literal for the '<em><b>Data Resource</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference PARTY_DATA_RESOURCE__DATA_RESOURCE = eINSTANCE.getPartyDataResource_DataResource();
-
-		/**
-		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute PARTY_DATA_RESOURCE__FROM_DATE = eINSTANCE.getPartyDataResource_FromDate();
-
-		/**
-		 * The meta object literal for the '<em><b>Thru Date</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute PARTY_DATA_RESOURCE__THRU_DATE = eINSTANCE.getPartyDataResource_ThruDate();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataSourceImpl <em>Data Source</em>}' class.

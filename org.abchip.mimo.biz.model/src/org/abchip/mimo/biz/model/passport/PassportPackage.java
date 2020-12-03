@@ -454,22 +454,22 @@ public interface PassportPackage extends EPackage {
 	int OAUTH2_GIT_HUB__CLIENT_SECRET = AuthenticationPackage.OAUTH2_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OAUTH2_GIT_HUB__THRU_DATE = AuthenticationPackage.OAUTH2_FEATURE_COUNT + 4;
-
-	/**
 	 * The feature id for the '<em><b>Return Url</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GIT_HUB__RETURN_URL = AuthenticationPackage.OAUTH2_FEATURE_COUNT + 5;
+	int OAUTH2_GIT_HUB__RETURN_URL = AuthenticationPackage.OAUTH2_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OAUTH2_GIT_HUB__THRU_DATE = AuthenticationPackage.OAUTH2_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>OAuth2 Git Hub</em>' class.

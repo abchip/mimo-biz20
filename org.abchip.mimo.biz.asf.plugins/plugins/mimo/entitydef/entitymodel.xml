@@ -60,24 +60,6 @@
       </index>      
     </entity>
 
-    <entity entity-name="PartyDataResource"
-            package-name="org.apache.ofbiz.party.party"
-            title="DataResource Role">
-      <field name="partyId" type="id"></field>
-      <field name="dataResourceId" type="id"></field>
-      <field name="fromDate" type="date-time"></field>
-      <field name="thruDate" type="date-time"></field>
-      <prim-key field="partyId"/>      
-      <prim-key field="dataResourceId"/>
-      <prim-key field="fromDate"/>
-      <relation type="one" fk-name="PARTY_DATARES_PTY" rel-entity-name="Party">
-        <key-map field-name="partyId"/>
-      </relation>
-      <relation type="one" fk-name="PARTY_DATARES_DR" rel-entity-name="DataResource">
-        <key-map field-name="dataResourceId"/>
-      </relation>
-    </entity>
-
 	<!-- Test file for write -->
 	<entity entity-name="TestEntity"
 		package-name="org.apache.ofbiz.entity.test"

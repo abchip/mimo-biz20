@@ -19292,12 +19292,6 @@
             <details key="fromDate" value="*NOW"/>
           </eAnnotations>
         </eStructuralFeatures>
-        <eStructuralFeatures xsi:type="ecore:EReference" name="partyDataResources"
-            upperBound="-1" eType="#//party/party/PartyDataResource" derived="true">
-          <eAnnotations source="mimo-ent-slot-constraints">
-            <details key="fromDate" value="*NOW"/>
-          </eAnnotations>
-        </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="partyDataSources" upperBound="-1"
             eType="#//party/party/PartyDataSource" derived="true">
           <eAnnotations source="mimo-ent-slot-constraints">
@@ -19543,30 +19537,6 @@
           <eTypeArguments eClassifier="#//party/party/PartyContent"/>
         </eGenericSuperTypes>
         <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo"/>
-      </eClassifiers>
-      <eClassifiers xsi:type="ecore:EClass" name="PartyDataResource" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityIdentifiable ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo">
-        <eAnnotations source="mimo-ent-frame">
-          <details key="title" value="DataResource Role"/>
-        </eAnnotations>
-        <eStructuralFeatures xsi:type="ecore:EReference" name="party" lowerBound="1"
-            eType="#//party/party/Party">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="key" value="true"/>
-          </eAnnotations>
-        </eStructuralFeatures>
-        <eStructuralFeatures xsi:type="ecore:EReference" name="dataResource" lowerBound="1"
-            eType="#//content/data/DataResource">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="key" value="true"/>
-          </eAnnotations>
-        </eStructuralFeatures>
-        <eStructuralFeatures xsi:type="ecore:EAttribute" name="fromDate" lowerBound="1"
-            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
-          <eAnnotations source="mimo-ent-slot">
-            <details key="key" value="true"/>
-          </eAnnotations>
-        </eStructuralFeatures>
-        <eStructuralFeatures xsi:type="ecore:EAttribute" name="thruDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="PartyDataSource" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityIdentifiable ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo">
         <eStructuralFeatures xsi:type="ecore:EReference" name="party" lowerBound="1"
@@ -20467,12 +20437,12 @@
           <details key="length" value="60"/>
         </eAnnotations>
       </eStructuralFeatures>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="thruDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="returnUrl" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
         <eAnnotations source="mimo-ent-format">
           <details key="length" value="255"/>
         </eAnnotations>
       </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="thruDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="OAuth2Google" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//authentication/OAuth2">
       <eAnnotations source="mimo-ent-frame">

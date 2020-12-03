@@ -149,7 +149,6 @@ import org.abchip.mimo.biz.model.party.party.PartyClassificationGroup;
 import org.abchip.mimo.biz.model.party.party.PartyClassificationType;
 import org.abchip.mimo.biz.model.party.party.PartyContent;
 import org.abchip.mimo.biz.model.party.party.PartyContentType;
-import org.abchip.mimo.biz.model.party.party.PartyDataResource;
 import org.abchip.mimo.biz.model.party.party.PartyDataSource;
 import org.abchip.mimo.biz.model.party.party.PartyFactory;
 import org.abchip.mimo.biz.model.party.party.PartyGeoPoint;
@@ -313,13 +312,6 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	private EClass partyContentTypeEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass partyDataResourceEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1228,7 +1220,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PartyDataResources() {
+	public EReference getParty_PartyDataSources() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(14);
 	}
 
@@ -1238,7 +1230,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PartyDataSources() {
+	public EReference getParty_PartyGeoPoints() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(15);
 	}
 
@@ -1248,7 +1240,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PartyGeoPoints() {
+	public EReference getParty_PartyIdentifications() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(16);
 	}
 
@@ -1258,7 +1250,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PartyIdentifications() {
+	public EReference getParty_PartyNameHistories() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(17);
 	}
 
@@ -1268,7 +1260,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PartyNameHistories() {
+	public EReference getParty_PartyNotes() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(18);
 	}
 
@@ -1278,7 +1270,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PartyNotes() {
+	public EReference getParty_PartyProfileDefaults() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(19);
 	}
 
@@ -1288,7 +1280,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PartyProfileDefaults() {
+	public EReference getParty_PartyQuals() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(20);
 	}
 
@@ -1298,7 +1290,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PartyQuals() {
+	public EReference getParty_PartyRates() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(21);
 	}
 
@@ -1308,7 +1300,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PartyRates() {
+	public EReference getParty_PartyRoles() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(22);
 	}
 
@@ -1318,7 +1310,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PartyRoles() {
+	public EReference getParty_PartySkills() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(23);
 	}
 
@@ -1328,7 +1320,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PartySkills() {
+	public EReference getParty_PartyStatuses() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(24);
 	}
 
@@ -1338,7 +1330,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PartyStatuses() {
+	public EReference getParty_PartyType() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(25);
 	}
 
@@ -1348,7 +1340,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PartyType() {
+	public EReference getParty_PerformanceNotes() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(26);
 	}
 
@@ -1358,7 +1350,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PerformanceNotes() {
+	public EReference getParty_PreferredCurrencyUom() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(27);
 	}
 
@@ -1368,7 +1360,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_PreferredCurrencyUom() {
+	public EReference getParty_Status() {
 		return (EReference)partyEClass.getEStructuralFeatures().get(28);
 	}
 
@@ -1378,18 +1370,8 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getParty_Status() {
-		return (EReference)partyEClass.getEStructuralFeatures().get(29);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EReference getParty_SupplierProductFeatures() {
-		return (EReference)partyEClass.getEStructuralFeatures().get(30);
+		return (EReference)partyEClass.getEStructuralFeatures().get(29);
 	}
 
 	/**
@@ -1770,56 +1752,6 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	@Override
 	public EReference getPartyContentType_ParentType() {
 		return (EReference)partyContentTypeEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getPartyDataResource() {
-		return partyDataResourceEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getPartyDataResource_Party() {
-		return (EReference)partyDataResourceEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getPartyDataResource_DataResource() {
-		return (EReference)partyDataResourceEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getPartyDataResource_FromDate() {
-		return (EAttribute)partyDataResourceEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getPartyDataResource_ThruDate() {
-		return (EAttribute)partyDataResourceEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -3562,7 +3494,6 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		createEReference(partyEClass, PARTY__PARTY_CARRIER_ACCOUNTS);
 		createEReference(partyEClass, PARTY__PARTY_CLASSIFICATIONS);
 		createEReference(partyEClass, PARTY__PARTY_CONTACT_MECHS);
-		createEReference(partyEClass, PARTY__PARTY_DATA_RESOURCES);
 		createEReference(partyEClass, PARTY__PARTY_DATA_SOURCES);
 		createEReference(partyEClass, PARTY__PARTY_GEO_POINTS);
 		createEReference(partyEClass, PARTY__PARTY_IDENTIFICATIONS);
@@ -3624,12 +3555,6 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		createEAttribute(partyContentTypeEClass, PARTY_CONTENT_TYPE__PARTY_CONTENT_TYPE_ID);
 		createEAttribute(partyContentTypeEClass, PARTY_CONTENT_TYPE__DESCRIPTION);
 		createEReference(partyContentTypeEClass, PARTY_CONTENT_TYPE__PARENT_TYPE);
-
-		partyDataResourceEClass = createEClass(PARTY_DATA_RESOURCE);
-		createEReference(partyDataResourceEClass, PARTY_DATA_RESOURCE__PARTY);
-		createEReference(partyDataResourceEClass, PARTY_DATA_RESOURCE__DATA_RESOURCE);
-		createEAttribute(partyDataResourceEClass, PARTY_DATA_RESOURCE__FROM_DATE);
-		createEAttribute(partyDataResourceEClass, PARTY_DATA_RESOURCE__THRU_DATE);
 
 		partyDataSourceEClass = createEClass(PARTY_DATA_SOURCE);
 		createEReference(partyDataSourceEClass, PARTY_DATA_SOURCE__PARTY);
@@ -3860,7 +3785,6 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		SupplierPackage theSupplierPackage = (SupplierPackage)EPackage.Registry.INSTANCE.getEPackage(SupplierPackage.eNS_URI);
 		PaymentPackage thePaymentPackage = (PaymentPackage)EPackage.Registry.INSTANCE.getEPackage(PaymentPackage.eNS_URI);
 		ContentPackage theContentPackage = (ContentPackage)EPackage.Registry.INSTANCE.getEPackage(ContentPackage.eNS_URI);
-		DataPackage theDataPackage = (DataPackage)EPackage.Registry.INSTANCE.getEPackage(DataPackage.eNS_URI);
 		GeoPackage theGeoPackage = (GeoPackage)EPackage.Registry.INSTANCE.getEPackage(GeoPackage.eNS_URI);
 		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
 		StorePackage theStorePackage = (StorePackage)EPackage.Registry.INSTANCE.getEPackage(StorePackage.eNS_URI);
@@ -3915,8 +3839,6 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		partyContentTypeEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
 		partyContentTypeEClass.getEGenericSuperTypes().add(g1);
-		partyDataResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		partyDataResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		partyDataSourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		partyDataSourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		partyGeoPointEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
@@ -4015,7 +3937,6 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		initEReference(getParty_PartyCarrierAccounts(), this.getPartyCarrierAccount(), null, "partyCarrierAccounts", null, 0, -1, Party.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getParty_PartyClassifications(), this.getPartyClassification(), null, "partyClassifications", null, 0, -1, Party.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getParty_PartyContactMechs(), theContactPackage_1.getPartyContactMech(), null, "partyContactMechs", null, 0, -1, Party.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEReference(getParty_PartyDataResources(), this.getPartyDataResource(), null, "partyDataResources", null, 0, -1, Party.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getParty_PartyDataSources(), this.getPartyDataSource(), null, "partyDataSources", null, 0, -1, Party.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getParty_PartyGeoPoints(), this.getPartyGeoPoint(), null, "partyGeoPoints", null, 0, -1, Party.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getParty_PartyIdentifications(), this.getPartyIdentification(), null, "partyIdentifications", null, 0, -1, Party.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
@@ -4088,12 +4009,6 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		initEAttribute(getPartyContentType_PartyContentTypeId(), ecorePackage.getEString(), "partyContentTypeId", null, 1, 1, PartyContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPartyContentType_Description(), ecorePackage.getEString(), "description", null, 0, 1, PartyContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPartyContentType_ParentType(), this.getPartyContentType(), null, "parentType", null, 0, 1, PartyContentType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(partyDataResourceEClass, PartyDataResource.class, "PartyDataResource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getPartyDataResource_Party(), this.getParty(), null, "party", null, 1, 1, PartyDataResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getPartyDataResource_DataResource(), theDataPackage.getDataResource(), null, "dataResource", null, 1, 1, PartyDataResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPartyDataResource_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, PartyDataResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPartyDataResource_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, PartyDataResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(partyDataSourceEClass, PartyDataSource.class, "PartyDataSource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPartyDataSource_Party(), this.getParty(), null, "party", null, 1, 1, PartyDataSource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -4908,12 +4823,6 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 			   "fromDate", "*NOW"
 		   });
 		addAnnotation
-		  (getParty_PartyDataResources(),
-		   source,
-		   new String[] {
-			   "fromDate", "*NOW"
-		   });
-		addAnnotation
 		  (getParty_PartyDataSources(),
 		   source,
 		   new String[] {
@@ -5073,24 +4982,6 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		   });
 		addAnnotation
 		  (getPartyContent_FromDate(),
-		   source,
-		   new String[] {
-			   "key", "true"
-		   });
-		addAnnotation
-		  (getPartyDataResource_Party(),
-		   source,
-		   new String[] {
-			   "key", "true"
-		   });
-		addAnnotation
-		  (getPartyDataResource_DataResource(),
-		   source,
-		   new String[] {
-			   "key", "true"
-		   });
-		addAnnotation
-		  (getPartyDataResource_FromDate(),
 		   source,
 		   new String[] {
 			   "key", "true"
@@ -5394,12 +5285,6 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		   new String[] {
 			   "dictionary", "PartyEntityLabels",
 			   "formula", "description"
-		   });
-		addAnnotation
-		  (partyDataResourceEClass,
-		   source,
-		   new String[] {
-			   "title", "DataResource Role"
 		   });
 		addAnnotation
 		  (partyGeoPointEClass,

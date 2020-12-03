@@ -26,8 +26,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GitHubImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GitHubImpl#getClientId <em>Client Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GitHubImpl#getClientSecret <em>Client Secret</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GitHubImpl#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GitHubImpl#getReturnUrl <em>Return Url</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GitHubImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
  *
  * @generated
