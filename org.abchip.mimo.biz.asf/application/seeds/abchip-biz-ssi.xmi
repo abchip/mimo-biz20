@@ -9,8 +9,8 @@
     name="abchip-biz-ssi">
   <contents
       xsi:type="biz-party:RoleType"
-      roleTypeId="SUPPORTER"
-      description="Supporter"/>
+      roleTypeId="VOLUNTEER"
+      description="Volunteer"/>
   <contents
       xsi:type="biz-party:RoleType"
       roleTypeId="COORDINATOR"
