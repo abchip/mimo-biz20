@@ -8,8 +8,6 @@
  */
 package org.abchip.mimo.biz.asf.plugins;
 
-import javax.annotation.PostConstruct;
-
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.Frame;
@@ -23,9 +21,7 @@ public class OFBizResourceProviderImpl extends ResourceProviderImpl {
 
 	private ResourceConfig resourceConfig;
 
-	@PostConstruct
-	protected void init() {
-
+	public OFBizResourceProviderImpl() {
 		this.resourceConfig = ResourceFactory.eINSTANCE.createResourceConfig();
 		this.resourceConfig.setLockSupport(false);
 		this.resourceConfig.setOrderSupport(false);
