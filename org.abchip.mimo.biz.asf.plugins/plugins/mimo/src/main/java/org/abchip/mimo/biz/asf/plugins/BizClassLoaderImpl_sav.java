@@ -20,13 +20,13 @@ import java.util.List;
 import org.abchip.mimo.util.Logs;
 import org.osgi.service.log.Logger;
 
-public class BizClassLoaderImpl extends ClassLoader {
+public class BizClassLoaderImpl_sav extends ClassLoader {
 
 	private static final Logger LOGGER = Logs.getLogger(BizClassLoaderImpl_sav.class);
 
 	private List<URL> urls = null;
 
-	public BizClassLoaderImpl(ClassLoader parent) {
+	public BizClassLoaderImpl_sav(ClassLoader parent) {
 		super(parent);
 		this.urls = new ArrayList<URL>();
 	}

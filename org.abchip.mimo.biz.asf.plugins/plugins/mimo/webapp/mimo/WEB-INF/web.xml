@@ -47,7 +47,6 @@
 		<param-name>compressHTML</param-name>
 		<param-value>false</param-value>
 	</context-param>
-
 	<servlet>
 		<servlet-name>HttpServiceServlet</servlet-name>
 		<servlet-class>org.abchip.mimo.biz.asf.plugins.TomcatServiceServlet</servlet-class>

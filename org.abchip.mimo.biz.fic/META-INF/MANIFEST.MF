@@ -11,6 +11,8 @@ Require-Bundle: org.abchip.mimo.core.base;bundle-version="0.2.0",
  org.abchip.mimo.biz.core;bundle-version="0.2.0",
  org.abchip.mimo.biz.model;bundle-version="0.2.0",
  org.abchip.mimo.biz.service;bundle-version="0.2.0",
- org.abchip.mimo.biz.base;bundle-version="0.2.0"
+ org.abchip.mimo.biz.base;bundle-version="0.2.0",
+ org.apache.httpcomponents.httpclient;bundle-version="4.5.10",
+ org.apache.httpcomponents.httpcore;bundle-version="4.4.12"
 Import-Package: javax.inject
 Export-Package: org.abchip.mimo.biz.fic

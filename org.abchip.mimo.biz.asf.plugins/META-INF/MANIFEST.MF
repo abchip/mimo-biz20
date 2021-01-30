@@ -10,14 +10,21 @@ Bundle-ClassPath: .
 Require-Bundle: org.abchip.mimo.core,
  org.abchip.mimo.core.e4,
  org.abchip.mimo.core.base,
+ org.abchip.mimo.core.http,
  org.abchip.mimo.parser.sqlite,
  org.abchip.mimo.biz.model,
  org.abchip.mimo.biz.base,
  org.abchip.mimo.edi,
  org.eclipse.osgi,
  org.abchip.mimo.tester.base,
- org.abchip.mimo.biz.service;bundle-version="0.2.0"
+ org.abchip.mimo.biz.service,
+ org.apache.httpcomponents.httpclient;bundle-version="4.5.10",
+ org.apache.httpcomponents.httpcore;bundle-version="4.4.12"
 Import-Package: javax.inject,
+ javax.servlet,
+ javax.servlet.annotation,
+ javax.servlet.descriptor,
+ javax.servlet.http,
  org.osgi.framework,
  org.osgi.framework.launch,
  org.osgi.service.http

@@ -74,9 +74,11 @@ public class BizApplicationHook {
 		}
 
 		ClassLoader parentLoader = Thread.currentThread().getContextClassLoader();
-		ClassLoader bizLoader = new BizClassLoaderImpl(parentLoader);
-		Thread.currentThread().setContextClassLoader(bizLoader);
 
+		ClassLoader bizLoader = new BizClassLoaderImpl(parentLoader);		
+		LOGGER.info("Setting BizClassLoaderImpl as ClassLoader");
+		Thread.currentThread().setContextClassLoader(bizLoader);
+		
 		Start.main(new String[0]);
 	}
 

@@ -9,7 +9,6 @@ Require-Bundle: org.abchip.mimo.core,
  org.abchip.mimo.core.log4j,
  org.abchip.mimo.core.e4,
  org.abchip.mimo.core.base,
- org.abchip.mimo.core.http,
  org.abchip.mimo.language.gf;bundle-version="0.2.0",
  org.abchip.mimo.language.lp;bundle-version="0.2.0",
  org.abchip.mimo.biz.base,
@@ -21,7 +20,12 @@ Require-Bundle: org.abchip.mimo.core,
  org.eclipse.osgi,
  org.apache.commons.logging;bundle-version="1.2.0",
  net.abchip.tenant.ssi;bundle-version="0.2.0"
-Import-Package: org.osgi.framework
+Import-Package: javax.servlet,
+ javax.servlet.annotation,
+ javax.servlet.descriptor,
+ javax.servlet.http,
+ javax.servlet.jsp,
+ org.osgi.framework
 Bundle-ClassPath: .
 Bundle-ActivationPolicy: lazy
 Export-Package: org.apache.ofbiz.base.util

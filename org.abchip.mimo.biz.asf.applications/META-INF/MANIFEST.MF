@@ -132,3 +132,6 @@ Import-Package: org.apache.ofbiz.base,
  org.apache.ofbiz.service.rmi.socket.ssl,
  org.apache.ofbiz.service.semaphore,
  org.apache.ofbiz.service.xmlrpc
+Require-Bundle: org.abchip.mimo.core.http,
+ org.apache.httpcomponents.httpclient;bundle-version="4.5.10",
+ org.apache.httpcomponents.httpcore;bundle-version="4.4.12"

@@ -12,7 +12,9 @@ Require-Bundle: org.abchip.mimo.core,
  org.abchip.mimo.biz.model,
  org.abchip.mimo.biz.service;bundle-version="0.2.0",
  org.abchip.mimo.core.base,
- org.eclipse.osgi
+ org.eclipse.osgi,
+ org.apache.httpcomponents.httpclient;bundle-version="4.5.10",
+ org.apache.httpcomponents.httpcore;bundle-version="4.4.12"
 Bundle-ClassPath: .,
  lib/poi-4.0.1.jar,
  lib/ez-vcard-0.9.10.jar
