@@ -47,6 +47,14 @@
 		<param-name>compressHTML</param-name>
 		<param-value>false</param-value>
 	</context-param>
+	<filter>
+		<filter-name>CorsFilter</filter-name>
+		<filter-class>org.abchip.mimo.biz.asf.plugins.CORSFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>CorsFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 	<servlet>
 		<servlet-name>HttpServiceServlet</servlet-name>
 		<servlet-class>org.abchip.mimo.biz.asf.plugins.TomcatServiceServlet</servlet-class>
