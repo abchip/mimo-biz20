@@ -38,6 +38,7 @@ public class BizApplicationComponentHook {
 
 	private ComponentConfig componentConfig;
 
+	@SuppressWarnings("resource")
 	@ComponentStarting
 	private void starting() {
 		if (!(component instanceof BizComponent))
@@ -65,17 +66,22 @@ public class BizApplicationComponentHook {
 
 				ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
 				if (!(classLoader instanceof BizClassLoaderImpl)) {
+					// if (!(classLoader instanceof URLClassLoader)) {
 					LOGGER.error("Unexpected condition {}", "9xm8ty98rtn743ytb7q94bv");
 					return;
 				}
 
 				BizClassLoaderImpl bizClassLoader = (BizClassLoaderImpl) classLoader;
+				// URLClassLoader bizClassLoader = (URLClassLoader) classLoader;
+
+				// URLClassLoader urlClassLoader =
+				// URLClassLoader.newInstance(classpath.getUrls(), classLoader);
+				// Thread.currentThread().setContextClassLoader(urlClassLoader);
 
 				for (URL url : classpath.getUrls()) {
 					LOGGER.info("Append to classpath {}", url);
 					bizClassLoader.addURL(url);
 				}
-
 			} catch (ComponentException | IOException e) {
 				throw new RuntimeException(e);
 			}

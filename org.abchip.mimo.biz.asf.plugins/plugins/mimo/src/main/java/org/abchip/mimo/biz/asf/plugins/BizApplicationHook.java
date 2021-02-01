@@ -75,10 +75,11 @@ public class BizApplicationHook {
 
 		ClassLoader parentLoader = Thread.currentThread().getContextClassLoader();
 
-		ClassLoader bizLoader = new BizClassLoaderImpl(parentLoader);		
+		@SuppressWarnings("resource")
+		ClassLoader bizLoader = new BizClassLoaderImpl(parentLoader);
 		LOGGER.info("Setting BizClassLoaderImpl as ClassLoader");
 		Thread.currentThread().setContextClassLoader(bizLoader);
-		
+
 		Start.main(new String[0]);
 	}
 
@@ -176,6 +177,7 @@ public class BizApplicationHook {
 	@ApplicationStopped
 	private void stopped() {
 		ClassLoader bizLoader = Thread.currentThread().getContextClassLoader();
+		LOGGER.info("Removing BizClassLoaderImpl as ClassLoader");
 		Thread.currentThread().setContextClassLoader(bizLoader.getParent());
 	}
 

@@ -3,7 +3,7 @@
 	<classpathentry exported="true" kind="lib" path="lib/tomcat-coyote-9.0.31.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/tomcat-annotations-api-9.0.31.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/tomcat-api-9.0.31.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/tomcat-catalina-9.0.31.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/tomcat-catalina-9.0.31.jar" sourcepath="lib/tomcat-catalina-9.0.31-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/tomcat-catalina-ha-9.0.31.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/tomcat-el-api-9.0.31.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/tomcat-jasper-9.0.31.jar"/>

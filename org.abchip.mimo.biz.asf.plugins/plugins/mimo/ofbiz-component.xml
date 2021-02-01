@@ -33,8 +33,8 @@
 	<!-- service resources: model(s), eca(s) and group definitions -->
 	<service-resource type="model" loader="main"
 		location="servicedef/entity-services.xml" />
-	<service-resource type="model" loader="main"
-		location="servicedef/security-services.xml" />
+<!-- 	<service-resource type="model" loader="main"
+		location="servicedef/security-services.xml" /> -->
 	<service-resource type="model" loader="main"
 		location="servicedef/party-services.xml" />
 	<service-resource type="model" loader="main"
