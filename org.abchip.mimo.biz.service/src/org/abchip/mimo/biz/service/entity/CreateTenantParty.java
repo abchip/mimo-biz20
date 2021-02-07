@@ -19,7 +19,6 @@ package org.abchip.mimo.biz.service.entity;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.service.entity.CreateTenantParty#getTenantId <em>Tenant Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.service.entity.CreateTenantParty#getTenantName <em>Tenant Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.service.entity.CreateTenantParty#getPartyId <em>Party Id</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.service.entity.EntityPackage#getCreateTenantParty()
@@ -70,27 +69,5 @@ public interface CreateTenantParty extends CreateTenant {
 	 * @generated
 	 */
 	void setTenantName(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' attribute.
-	 * @see #setPartyId(String)
-	 * @see org.abchip.mimo.biz.service.entity.EntityPackage#getCreateTenantParty_PartyId()
-	 * @model
-	 * @generated
-	 */
-	String getPartyId();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.service.entity.CreateTenantParty#getPartyId <em>Party Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' attribute.
-	 * @see #getPartyId()
-	 * @generated
-	 */
-	void setPartyId(String value);
 
 } // CreateTenantParty

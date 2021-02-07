@@ -14,9 +14,13 @@ import org.abchip.mimo.authentication.AuthenticationAdminKey;
 import org.abchip.mimo.authentication.AuthenticationException;
 import org.abchip.mimo.authentication.AuthenticationFactory;
 import org.abchip.mimo.authentication.AuthenticationManager;
+import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.entity.tenant.Tenant;
 import org.abchip.mimo.biz.model.entity.tenant.TenantDataSource;
 import org.abchip.mimo.biz.model.entity.tenant.TenantDomainName;
+import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.biz.model.party.party.PartyGroup;
+import org.abchip.mimo.biz.model.party.party.PartyType;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.security.securitygroup.SecurityGroup;
 import org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup;
@@ -40,8 +44,12 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
+ * <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl#getDbHost
+ * <em>Db Host</em>}</li>
  * <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl#getDbType
  * <em>Db Type</em>}</li>
+ * <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl#getPartyId
+ * <em>Party Id</em>}</li>
  * <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl#isUpdate
  * <em>Update</em>}</li>
  * </ul>
@@ -92,6 +100,26 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 	 * @generated
 	 */
 	@Override
+	public String getDbHost() {
+		return (String) eGet(EntityPackage.Literals.CREATE_TENANT__DB_HOST, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public void setDbHost(String newDbHost) {
+		eSet(EntityPackage.Literals.CREATE_TENANT__DB_HOST, newDbHost);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
 	public DatabaseType getDbType() {
 		return (DatabaseType) eGet(EntityPackage.Literals.CREATE_TENANT__DB_TYPE, true);
 	}
@@ -104,6 +132,26 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 	@Override
 	public void setDbType(DatabaseType newDbType) {
 		eSet(EntityPackage.Literals.CREATE_TENANT__DB_TYPE, newDbType);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public String getPartyId() {
+		return (String) eGet(EntityPackage.Literals.CREATE_TENANT__PARTY_ID, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public void setPartyId(String newPartyId) {
+		eSet(EntityPackage.Literals.CREATE_TENANT__PARTY_ID, newPartyId);
 	}
 
 	/**
@@ -182,14 +230,14 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 
 		switch (this.getDbType()) {
 		case DERBY:
-			tenantDataSource.setJdbcUsername("ofbiz");
-			tenantDataSource.setJdbcPassword("ofbiz");
+			tenantDataSource.setJdbcUsername("ofbizuser");
+			tenantDataSource.setJdbcPassword("ofbizuser");
 			tenantDataSource.setJdbcUri("jdbc:derby:ofbiz_" + this.getTenantId() + ";create=true");
 			break;
 		case POSTGRE_SQL:
-			tenantDataSource.setJdbcUsername("ofbizuser_tenant");
-			tenantDataSource.setJdbcPassword("ofbiz@user");
-			tenantDataSource.setJdbcUri("jdbc:postgresql://127.0.0.1/ofbiz_" + this.getTenantId());
+			tenantDataSource.setJdbcUsername("ofbizuser");
+			tenantDataSource.setJdbcPassword("ofbizuser");
+			tenantDataSource.setJdbcUri("jdbc:postgresql://" + this.getDbHost() + "/ofbiz_" + this.getTenantId());
 			break;
 		}
 
@@ -207,17 +255,6 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 
 			Context contextTenant = contextHandler.getContext();
 
-			// UserLogin
-			ResourceWriter<UserLogin> userLogintWriter = contextTenant.getResourceManager().getResourceWriter(UserLogin.class);
-			UserLogin userLogin = userLogintWriter.make();
-			userLogin.setUserLoginId(this.getTenantId());
-			userLogin.setCurrentPassword("{SHA}47ca69ebb4bdc9ae0adec130880165d2cc05db1a");
-			userLogin.setIsSystem(true);
-			userLogin.setEnabled(true);
-			userLogin.setHasLoggedOut(false);
-			userLogin.setRequirePasswordChange(false);
-			userLogintWriter.create(userLogin, this.isUpdate(), true);
-
 			// default seeds
 			{
 				LoadSeeds loadSeeds = contextTenant.getServiceManager().prepare(LoadSeeds.class);
@@ -228,6 +265,37 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 
 			// command seeds
 			this.loadSeeds(contextTenant);
+			
+
+			// Party
+			if (this.getPartyId() == null) {
+				try {
+					ResourceWriter<PartyGroup> partyGroupWriter = contextTenant.getResourceManager().getResourceWriter(PartyGroup.class);
+					PartyGroup partyGroup = partyGroupWriter.make();
+					partyGroup.setPartyId(this.getTenantId());
+					partyGroup.setStatus(contextTenant.createProxy(StatusItem.class, "PARTY_ENABLED"));
+					partyGroup.setPartyType(contextTenant.createProxy(PartyType.class, "PARTY_GROUP"));
+					partyGroup.setGroupName(this.getTenantName());
+					partyGroupWriter.create(partyGroup, this.isUpdate());
+				} catch (ResourceException e) {
+					throw new ServiceException(e);
+				}
+			}
+
+			// UserLogin
+			ResourceWriter<UserLogin> userLogintWriter = contextTenant.getResourceManager().getResourceWriter(UserLogin.class);
+			UserLogin userLogin = userLogintWriter.make();
+			userLogin.setUserLoginId(this.getTenantId());
+			userLogin.setCurrentPassword("{SHA}47ca69ebb4bdc9ae0adec130880165d2cc05db1a");
+			userLogin.setIsSystem(true);
+			userLogin.setEnabled(true);
+			userLogin.setHasLoggedOut(false);
+			userLogin.setRequirePasswordChange(false);
+			if (this.getPartyId() == null)
+				userLogin.setParty(contextTenant.createProxy(Party.class, this.getTenantId()));
+			else
+				userLogin.setParty(contextTenant.createProxy(Party.class, this.getPartyId()));
+			userLogintWriter.create(userLogin, this.isUpdate(), this.isUpdate());
 
 			// UserLoginSecurityGroup
 			ResourceWriter<UserLoginSecurityGroup> userLoginSecurityGroupWriter = contextTenant.getResourceManager().getResourceWriter(UserLoginSecurityGroup.class);

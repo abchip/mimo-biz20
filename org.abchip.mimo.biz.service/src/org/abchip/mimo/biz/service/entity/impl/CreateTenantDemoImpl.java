@@ -24,7 +24,6 @@ public class CreateTenantDemoImpl extends CreateTenantImpl implements CreateTena
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected CreateTenantDemoImpl() {
@@ -33,7 +32,6 @@ public class CreateTenantDemoImpl extends CreateTenantImpl implements CreateTena
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override

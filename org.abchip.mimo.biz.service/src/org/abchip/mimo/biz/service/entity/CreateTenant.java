@@ -23,7 +23,9 @@ import org.abchip.mimo.service.ServiceResponse;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.service.entity.CreateTenant#getDbHost <em>Db Host</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.service.entity.CreateTenant#getDbType <em>Db Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.entity.CreateTenant#getPartyId <em>Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.service.entity.CreateTenant#isUpdate <em>Update</em>}</li>
  * </ul>
  *
@@ -32,6 +34,29 @@ import org.abchip.mimo.service.ServiceResponse;
  * @generated
  */
 public interface CreateTenant extends ServiceRequest<ServiceResponse>, Callable<ServiceResponse> {
+	/**
+	 * Returns the value of the '<em><b>Db Host</b></em>' attribute.
+	 * The default value is <code>"localhost"</code>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Db Host</em>' attribute.
+	 * @see #setDbHost(String)
+	 * @see org.abchip.mimo.biz.service.entity.EntityPackage#getCreateTenant_DbHost()
+	 * @model default="localhost"
+	 * @generated
+	 */
+	String getDbHost();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.service.entity.CreateTenant#getDbHost <em>Db Host</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Db Host</em>' attribute.
+	 * @see #getDbHost()
+	 * @generated
+	 */
+	void setDbHost(String value);
+
 	/**
 	 * Returns the value of the '<em><b>Db Type</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.abchip.mimo.biz.service.entity.DatabaseType}.
@@ -56,6 +81,28 @@ public interface CreateTenant extends ServiceRequest<ServiceResponse>, Callable<
 	 * @generated
 	 */
 	void setDbType(DatabaseType value);
+
+	/**
+	 * Returns the value of the '<em><b>Party Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party Id</em>' attribute.
+	 * @see #setPartyId(String)
+	 * @see org.abchip.mimo.biz.service.entity.EntityPackage#getCreateTenant_PartyId()
+	 * @model
+	 * @generated
+	 */
+	String getPartyId();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.service.entity.CreateTenant#getPartyId <em>Party Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Party Id</em>' attribute.
+	 * @see #getPartyId()
+	 * @generated
+	 */
+	void setPartyId(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Update</b></em>' attribute.

@@ -422,7 +422,7 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getCreateTenant_DbType() {
+	public EAttribute getCreateTenant_DbHost() {
 		return (EAttribute)createTenantEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -432,8 +432,28 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getCreateTenant_Update() {
+	public EAttribute getCreateTenant_DbType() {
 		return (EAttribute)createTenantEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreateTenant_PartyId() {
+		return (EAttribute)createTenantEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreateTenant_Update() {
+		return (EAttribute)createTenantEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -492,16 +512,6 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getCreateTenantParty_PartyId() {
-		return (EAttribute)createTenantPartyEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getCreateTenantTest() {
 		return createTenantTestEClass;
 	}
@@ -549,7 +559,9 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		createEAttribute(convertSeedsEClass, CONVERT_SEEDS__READERS);
 
 		createTenantEClass = createEClass(CREATE_TENANT);
+		createEAttribute(createTenantEClass, CREATE_TENANT__DB_HOST);
 		createEAttribute(createTenantEClass, CREATE_TENANT__DB_TYPE);
+		createEAttribute(createTenantEClass, CREATE_TENANT__PARTY_ID);
 		createEAttribute(createTenantEClass, CREATE_TENANT__UPDATE);
 
 		createTenantDemoEClass = createEClass(CREATE_TENANT_DEMO);
@@ -559,7 +571,6 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		createTenantPartyEClass = createEClass(CREATE_TENANT_PARTY);
 		createEAttribute(createTenantPartyEClass, CREATE_TENANT_PARTY__TENANT_ID);
 		createEAttribute(createTenantPartyEClass, CREATE_TENANT_PARTY__TENANT_NAME);
-		createEAttribute(createTenantPartyEClass, CREATE_TENANT_PARTY__PARTY_ID);
 
 		createTenantTestEClass = createEClass(CREATE_TENANT_TEST);
 
@@ -636,7 +647,9 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		initEAttribute(getConvertSeeds_Readers(), ecorePackage.getEString(), "readers", null, 1, 1, ConvertSeeds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(createTenantEClass, CreateTenant.class, "CreateTenant", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCreateTenant_DbHost(), ecorePackage.getEString(), "dbHost", "localhost", 0, 1, CreateTenant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCreateTenant_DbType(), this.getDatabaseType(), "dbType", null, 1, 1, CreateTenant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreateTenant_PartyId(), ecorePackage.getEString(), "partyId", null, 0, 1, CreateTenant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCreateTenant_Update(), ecorePackage.getEBoolean(), "update", null, 0, 1, CreateTenant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		addEOperation(createTenantEClass, ecorePackage.getEString(), "getTenantId", 1, 1, IS_UNIQUE, IS_ORDERED);
@@ -654,7 +667,6 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		initEClass(createTenantPartyEClass, CreateTenantParty.class, "CreateTenantParty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCreateTenantParty_TenantId(), ecorePackage.getEString(), "tenantId", null, 1, 1, CreateTenantParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCreateTenantParty_TenantName(), ecorePackage.getEString(), "tenantName", null, 1, 1, CreateTenantParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCreateTenantParty_PartyId(), ecorePackage.getEString(), "partyId", null, 0, 1, CreateTenantParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(createTenantTestEClass, CreateTenantTest.class, "CreateTenantTest", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

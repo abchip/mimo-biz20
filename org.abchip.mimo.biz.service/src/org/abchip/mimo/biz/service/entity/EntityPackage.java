@@ -129,13 +129,31 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
+	 * The feature id for the '<em><b>Db Host</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT__DB_HOST = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_TENANT__DB_TYPE = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
+	int CREATE_TENANT__DB_TYPE = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT__PARTY_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Update</b></em>' attribute.
@@ -144,7 +162,7 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_TENANT__UPDATE = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
+	int CREATE_TENANT__UPDATE = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Create Tenant</em>' class.
@@ -153,7 +171,7 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_TENANT_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
+	int CREATE_TENANT_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 4;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantDemoImpl <em>Create Tenant Demo</em>}' class.
@@ -175,6 +193,15 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_DEMO__CONTEXT = CREATE_TENANT__CONTEXT;
 
 	/**
+	 * The feature id for the '<em><b>Db Host</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_DEMO__DB_HOST = CREATE_TENANT__DB_HOST;
+
+	/**
 	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -182,6 +209,15 @@ public interface EntityPackage extends EPackage {
 	 * @ordered
 	 */
 	int CREATE_TENANT_DEMO__DB_TYPE = CREATE_TENANT__DB_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_DEMO__PARTY_ID = CREATE_TENANT__PARTY_ID;
 
 	/**
 	 * The feature id for the '<em><b>Update</b></em>' attribute.
@@ -249,6 +285,15 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_PARTY__CONTEXT = CREATE_TENANT__CONTEXT;
 
 	/**
+	 * The feature id for the '<em><b>Db Host</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_PARTY__DB_HOST = CREATE_TENANT__DB_HOST;
+
+	/**
 	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -256,6 +301,15 @@ public interface EntityPackage extends EPackage {
 	 * @ordered
 	 */
 	int CREATE_TENANT_PARTY__DB_TYPE = CREATE_TENANT__DB_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_PARTY__PARTY_ID = CREATE_TENANT__PARTY_ID;
 
 	/**
 	 * The feature id for the '<em><b>Update</b></em>' attribute.
@@ -285,22 +339,13 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_PARTY__TENANT_NAME = CREATE_TENANT_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CREATE_TENANT_PARTY__PARTY_ID = CREATE_TENANT_FEATURE_COUNT + 2;
-
-	/**
 	 * The number of structural features of the '<em>Create Tenant Party</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_TENANT_PARTY_FEATURE_COUNT = CREATE_TENANT_FEATURE_COUNT + 3;
+	int CREATE_TENANT_PARTY_FEATURE_COUNT = CREATE_TENANT_FEATURE_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantTestImpl <em>Create Tenant Test</em>}' class.
@@ -322,6 +367,15 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_TEST__CONTEXT = CREATE_TENANT__CONTEXT;
 
 	/**
+	 * The feature id for the '<em><b>Db Host</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_TEST__DB_HOST = CREATE_TENANT__DB_HOST;
+
+	/**
 	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -329,6 +383,15 @@ public interface EntityPackage extends EPackage {
 	 * @ordered
 	 */
 	int CREATE_TENANT_TEST__DB_TYPE = CREATE_TENANT__DB_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_TEST__PARTY_ID = CREATE_TENANT__PARTY_ID;
 
 	/**
 	 * The feature id for the '<em><b>Update</b></em>' attribute.
@@ -439,6 +502,17 @@ public interface EntityPackage extends EPackage {
 	EClass getCreateTenant();
 
 	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.CreateTenant#getDbHost <em>Db Host</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Db Host</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.CreateTenant#getDbHost()
+	 * @see #getCreateTenant()
+	 * @generated
+	 */
+	EAttribute getCreateTenant_DbHost();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.CreateTenant#getDbType <em>Db Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -448,6 +522,17 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getCreateTenant_DbType();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.CreateTenant#getPartyId <em>Party Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Party Id</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.CreateTenant#getPartyId()
+	 * @see #getCreateTenant()
+	 * @generated
+	 */
+	EAttribute getCreateTenant_PartyId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.CreateTenant#isUpdate <em>Update</em>}'.
@@ -511,17 +596,6 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getCreateTenantParty_TenantName();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.CreateTenantParty#getPartyId <em>Party Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.service.entity.CreateTenantParty#getPartyId()
-	 * @see #getCreateTenantParty()
-	 * @generated
-	 */
-	EAttribute getCreateTenantParty_PartyId();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.entity.CreateTenantTest <em>Create Tenant Test</em>}'.
@@ -607,12 +681,26 @@ public interface EntityPackage extends EPackage {
 		 */
 		EClass CREATE_TENANT = eINSTANCE.getCreateTenant();
 		/**
+		 * The meta object literal for the '<em><b>Db Host</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CREATE_TENANT__DB_HOST = eINSTANCE.getCreateTenant_DbHost();
+		/**
 		 * The meta object literal for the '<em><b>Db Type</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute CREATE_TENANT__DB_TYPE = eINSTANCE.getCreateTenant_DbType();
+		/**
+		 * The meta object literal for the '<em><b>Party Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CREATE_TENANT__PARTY_ID = eINSTANCE.getCreateTenant_PartyId();
 		/**
 		 * The meta object literal for the '<em><b>Update</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
@@ -661,13 +749,6 @@ public interface EntityPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CREATE_TENANT_PARTY__TENANT_NAME = eINSTANCE.getCreateTenantParty_TenantName();
-		/**
-		 * The meta object literal for the '<em><b>Party Id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute CREATE_TENANT_PARTY__PARTY_ID = eINSTANCE.getCreateTenantParty_PartyId();
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantTestImpl <em>Create Tenant Test</em>}' class.
 		 * <!-- begin-user-doc -->
