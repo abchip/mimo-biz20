@@ -8,21 +8,24 @@
  */
 package org.abchip.mimo.biz.asf.plugins.edi;
 
-import org.abchip.mimo.application.ComponentStarted;
+import org.abchip.mimo.application.ApplicationStarted;
+import org.abchip.mimo.biz.asf.plugins.ContextUtils;
 import org.apache.ofbiz.entity.Delegator;
-import org.apache.ofbiz.entity.DelegatorFactory;
 import org.apache.ofbiz.service.GenericServiceException;
 import org.apache.ofbiz.service.LocalDispatcher;
-import org.apache.ofbiz.service.ServiceContainer;
 
 public class EdiHook {
 
-	@ComponentStarted
+	@ApplicationStarted
 	public void start() {
 
 		// start master
-		Delegator delegator = DelegatorFactory.getDelegator(null);
-		LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(null, delegator);
+		// Delegator delegator = DelegatorFactory.getDelegator(null);
+		// LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(null,
+		// delegator);
+
+		Delegator delegator = ContextUtils.getDelegator(null, false);
+		LocalDispatcher dispatcher = ContextUtils.getLocalDispatcher(delegator);
 
 		try {
 			dispatcher.runAsync(EdiServices.Services.startEdiEngine.name(), null);

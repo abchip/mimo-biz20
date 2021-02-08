@@ -172,9 +172,8 @@ public class EdiServices {
 		Delegator delegator = ctx.getDelegator();
 		Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
 
-		@SuppressWarnings("rawtypes")
 		Resource<MessageType> resource = context.getResourceSet().getResource(MessageType.class);
-		MessageType<?> messageType = resource.make();
+		MessageType messageType = resource.make();
 		try {
 			EntityUtils.completeEntity(messageType, entityInstance);
 		} catch (GeneralException e) {
