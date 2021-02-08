@@ -35,6 +35,8 @@ import org.apache.ofbiz.service.DispatchContext;
 import org.apache.ofbiz.service.GenericServiceException;
 import org.apache.ofbiz.service.ServiceUtil;
 import org.apache.ofbiz.service.calendar.RecurrenceRule;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.osgi.service.log.Logger;
 
 public class EdiServices {
@@ -205,8 +207,7 @@ public class EdiServices {
 		Delegator delegator = ctx.getDelegator();
 		Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
 
-		Resource<?> resource = context.getResourceSet().getResource(ofbizEntity.getEntityName());
-		EntityIdentifiable entity = resource.make();
+		EntityIdentifiable entity = (EntityIdentifiable) EcoreUtil.create((EClass) context.getFrame(ofbizEntity.getEntityName()).getEClassifier());
 		try {
 			EntityUtils.completeEntity(entity, ofbizEntity);
 		} catch (GeneralException e) {
