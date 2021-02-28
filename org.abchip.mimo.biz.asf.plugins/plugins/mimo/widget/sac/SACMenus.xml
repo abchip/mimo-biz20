@@ -16,14 +16,14 @@
 	<menu name="SACAppBar" title="${uiLabelMap.MimoApplication}"
 		extends="CommonAppBarMenu"
 		extends-resource="component://common/widget/CommonMenus.xml">
-		<menu-item name="main" title="${uiLabelMap.CommonMain}">
-			<link target="main" />
+		<menu-item name="findparty" title="${uiLabelMap.PartyParties}">
+            <link target="/partymgr/control/findparty" url-mode="inter-app" link-type="hidden-form"/>
 		</menu-item>
-		<menu-item name="find" title="${uiLabelMap.PartyParties}">
-
-			<link target="findparty">
-<!-- 			<parameter param-name="action" value="REPLYALL" /> -->
-			</link>
+		<menu-item name="findproducts" title="${uiLabelMap.ProductProducts}">
+            <link target="/catalog/control/FindProduct" url-mode="inter-app" link-type="hidden-form"/>
 		</menu-item>
+		<menu-item name="findshipments" title="${uiLabelMap.ProductShipments}">
+            <link target="/facility/control/FindShipment" url-mode="inter-app" link-type="hidden-form"/>
+		</menu-item>		
 	</menu>
 </menus>

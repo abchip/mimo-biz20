@@ -189,11 +189,12 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			ModelField pkField = pkFields.get(i);
 			ModelFieldType type = modelHelper.getModelFieldType(pkField.getType());
 			Slot slot = this.getFrame().getSlot(pkField.getName());
-			if (slot == null)
-				"".toString();
+			// TODO
+			if (slot == null && pkField.getName().endsWith("Id"))
+				slot = this.getFrame().getSlot(pkField.getName().substring(0, pkField.getName().length()-2));
 			try {
 				Object value = EntityUtils.toBizValue(type.getJavaType(), slot, key);
-				primaryKey.set(slot.getName(), value);
+				primaryKey.set(pkField.getName(), value);
 			} catch (GeneralException e) {
 				throw new ResourceException(e);
 			}

@@ -52,6 +52,4 @@
 	<!-- web applications; will be mounted when using the embedded container -->
 	<webapp name="mimo" title="Mimo" server="default-server"
 		location="webapp/mimo" base-permission="OFBTOOLS,MIMO" mount-point="/mimo" app-bar-display="false"/>
-	<webapp name="sac" title="SAC" server="default-server"
-		location="webapp/sac" base-permission="OFBTOOLS,SAC" mount-point="/" position="1"/>		
 </ofbiz-component>
