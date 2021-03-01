@@ -6,8 +6,10 @@
  *  http://www.eclipse.org/legal/epl-v10.html
  *
  */
-package org.abchip.mimo.biz.base;
+package org.abchip.mimo.biz.asf.plugins.security;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Map;
 import java.util.WeakHashMap;
 
@@ -15,12 +17,11 @@ import javax.inject.Inject;
 
 import org.abchip.mimo.application.Application;
 import org.abchip.mimo.authentication.AuthenticationAdminKey;
-import org.abchip.mimo.authentication.AuthenticationAnonymous;
 import org.abchip.mimo.authentication.AuthenticationException;
 import org.abchip.mimo.authentication.AuthenticationFactory;
-import org.abchip.mimo.authentication.AuthenticationManager;
 import org.abchip.mimo.authentication.AuthenticationUserPassword;
 import org.abchip.mimo.authentication.AuthenticationUserToken;
+import org.abchip.mimo.authentication.impl.AuthenticationManagerImpl;
 import org.abchip.mimo.biz.model.entity.tenant.Tenant;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.service.security.CheckExternalLoginUser;
@@ -29,22 +30,19 @@ import org.abchip.mimo.biz.service.security.UserCredentialFromExternalId;
 import org.abchip.mimo.biz.service.security.UserCredentialFromExternalIdResponse;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextHandler;
-import org.abchip.mimo.context.ProviderConfig;
-import org.abchip.mimo.context.ProviderUser;
 import org.abchip.mimo.core.http.HttpUtils;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.service.ServiceManager;
 import org.abchip.mimo.util.Logs;
+import org.apache.ofbiz.common.login.LoginServices;
 import org.osgi.service.log.Logger;
 
-public class BizAuthenticationManagerImpl implements AuthenticationManager {
+public class BizAuthenticationManagerImpl extends AuthenticationManagerImpl {
 
 	@Inject
 	private Application application;
-	@Inject
-	private ProviderConfig providerConfig;
 
 	private Map<String, Context> contextTenants = new WeakHashMap<String, Context>();
 
@@ -112,25 +110,6 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 	}
 
 	@Override
-	public ContextHandler login(String contextId, AuthenticationAnonymous authentication) throws AuthenticationException {
-
-		ProviderUser user = this.providerConfig.getPublicUser();
-		if (user == null)
-			return null;
-
-		AuthenticationUserPassword authenticationUserPassword = AuthenticationFactory.eINSTANCE.createAuthenticationUserPassword();
-		authenticationUserPassword.setTenant(authentication.getTenant());
-		authenticationUserPassword.setUser(user.getUser());
-		authenticationUserPassword.setPassword(user.getPassword());
-
-		ContextHandler context = this.login(contextId, authenticationUserPassword);
-		if (context != null)
-			context.getContext().getContextDescription().setAnonymous(true);
-
-		return context;
-	}
-
-	@Override
 	public ContextHandler login(String contextId, AuthenticationUserToken authentication) throws AuthenticationException {
 
 		AuthenticationUserPassword authenticationUserPassword = getExternalCredentials(authentication.getUser());
@@ -157,9 +136,14 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 			throw new AuthenticationException(e);
 		}
 		if (userLogin == null)
-			throw new AuthenticationException("Invalid user");
+			throw new AuthenticationException("Invalid user: " + authentication.getUser());
 
-		// TODO compare password and SHA
+		if (!LoginServices.checkPassword(userLogin.getCurrentPassword(), true, authentication.getPassword()))
+			throw new AuthenticationException("Invalid password: " + authentication.getUser());
+
+		// {SHA}47ca69ebb4bdc9ae0adec130880165d2cc05db1a
+		// {SHA}47b56994cbc2b6d10aa1be30f70165adb305a41a
+
 		// userLogin.getCurrentPassword().equals(SHA)
 
 		ContextHandler contextHandler = application.getContext().createChildContext(contextId);
@@ -251,5 +235,13 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 		}
 
 		return authentication;
+	}
+
+	public static MessageDigest getMessageDigest(String type) {
+		try {
+			return MessageDigest.getInstance(type);
+		} catch (NoSuchAlgorithmException e) {
+			throw new RuntimeException("Could not load digestor(" + type + ")", e);
+		}
 	}
 }
