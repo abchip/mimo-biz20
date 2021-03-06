@@ -14,6 +14,7 @@ import org.abchip.mimo.biz.asf.plugins.entity.ModelUtils;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.parser.sqlite.SQLiteLexer;
 import org.abchip.mimo.util.Logs;
+import org.abchip.mimo.util.Strings;
 import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.tree.TerminalNode;
 import org.apache.ofbiz.entity.Delegator;
@@ -66,11 +67,14 @@ public class OFBizWhereAnalyzer extends OFBizAbstractAnalyzer {
 			}
 			break;
 		case SQLiteLexer.STRING_LITERAL:
-			/*
-			 * if (!result.toString().isEmpty()) { text = Strings.removeFirstChar(text);
-			 * text = Strings.removeLastChar(text); text = text.replaceAll("\\\"", "\"");
-			 * text = "'" + text + "'"; }
-			 */
+
+			if (!result.toString().isEmpty()) {
+				text = Strings.removeFirstChar(text);
+				text = Strings.removeLastChar(text);
+				text = text.replaceAll("\\\"", "\"");
+				text = "'" + text + "'";
+			}
+
 			break;
 		}
 
