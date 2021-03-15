@@ -37,7 +37,7 @@ public class ServiceUtils {
 			params.put("userLogin", EntityUtils.toBizEntity(delegator, userLogin));
 
 		Frame<EntityIdentifiable> frame = entity.isa();
-		for (Slot slot : frame.getSlots()) {
+		for (Slot slot : frame.getAllSlots()) {
 			if (slot.isTransient())
 				continue;
 

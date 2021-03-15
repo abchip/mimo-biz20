@@ -13,6 +13,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
+import org.abchip.mimo.entity.Slot;
 import org.abchip.mimo.util.Logs;
 import org.apache.ofbiz.base.util.UtilValidate;
 import org.apache.ofbiz.entity.Delegator;
@@ -25,6 +26,7 @@ import org.apache.ofbiz.entity.model.ModelReader;
 import org.apache.ofbiz.entity.model.ModelRelation;
 import org.apache.ofbiz.entity.model.ModelUtil;
 import org.apache.ofbiz.entity.model.ModelViewEntity;
+import org.eclipse.emf.ecore.EReference;
 import org.osgi.service.log.Logger;
 
 public class ModelUtils {
@@ -81,7 +83,7 @@ public class ModelUtils {
 	}
 
 	public static String getSuperEntity(Delegator delegator, String entityName) {
-		
+
 		ModelReader modelReader = delegator.getModelReader();
 
 		ModelEntity modelEntity = modelReader.getModelEntityNoCheck(entityName);
@@ -146,11 +148,11 @@ public class ModelUtils {
 				return null;
 			}
 
-/*			if (entityType.isField("hasTable")) {
-				Object hasTable = genericValue.get("hasTable");
-				if (!hasTable.toString().equalsIgnoreCase("Y"))
-					return null;
-			}*/ 
+			/*
+			 * if (entityType.isField("hasTable")) { Object hasTable =
+			 * genericValue.get("hasTable"); if (!hasTable.toString().equalsIgnoreCase("Y"))
+			 * return null; }
+			 */
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
@@ -162,6 +164,33 @@ public class ModelUtils {
 				modelEntity.setDependentOn(superEntity);
 
 		return superEntity;
+	}
+
+	public static String getModelFieldId(Slot slot) {
+
+		String modelFieldId = null;
+		if(slot.getEStructuralFeature() instanceof EReference)
+			modelFieldId = slot.getName() + "Id";
+		else
+			modelFieldId =  slot.getName();
+
+		return modelFieldId;
+	}
+	
+	public static String getModelFieldId(Slot slot, String entityAlias) {
+		
+		String modelFieldId = null;
+		if(slot.getEStructuralFeature() instanceof EReference)
+			modelFieldId = slot.getName() + "Id";
+		else
+			modelFieldId =  slot.getName();
+
+		if (entityAlias != null)
+			modelFieldId = entityAlias + "." + modelFieldId;
+		else
+			modelFieldId = slot.getFrame().getName() + "." + modelFieldId;
+		
+		return modelFieldId;
 	}
 
 	public static ModelField getModelField(Delegator delegator, String entityName, String slot) {
@@ -308,7 +337,7 @@ public class ModelUtils {
 		else if (word.endsWith("ss"))
 			word = word.substring(0, word.length()) + "es";
 		else if (word.endsWith("us"))
-			word = word.substring(0, word.length()) + "es";		
+			word = word.substring(0, word.length()) + "es";
 		else
 			word = word.substring(0, word.length()) + "s";
 
@@ -321,7 +350,7 @@ public class ModelUtils {
 		else if (word.endsWith("sses"))
 			word = word.substring(0, word.length() - 2);
 		else if (word.endsWith("uses"))
-			word = word.substring(0, word.length() - 2);		
+			word = word.substring(0, word.length() - 2);
 		else if (word.endsWith("s"))
 			word = word.substring(0, word.length() - 1);
 

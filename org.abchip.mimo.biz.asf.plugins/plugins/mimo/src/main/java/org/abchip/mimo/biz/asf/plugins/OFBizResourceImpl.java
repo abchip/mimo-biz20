@@ -9,14 +9,10 @@
 package org.abchip.mimo.biz.asf.plugins;
 
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 import org.abchip.mimo.biz.asf.plugins.entity.EntityUtils;
-import org.abchip.mimo.biz.asf.plugins.entity.ModelUtils;
 import org.abchip.mimo.biz.asf.plugins.entity.ServiceUtils;
 import org.abchip.mimo.biz.model.party.contact.EmailAddress;
 import org.abchip.mimo.biz.model.party.contact.PartyContactMech;
@@ -24,28 +20,16 @@ import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
-import org.abchip.mimo.parser.sqlite.SQLiteLexer;
-import org.abchip.mimo.parser.sqlite.SQLiteParser;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.impl.ResourceImpl;
 import org.abchip.mimo.util.Logs;
-import org.antlr.v4.runtime.ANTLRInputStream;
-import org.antlr.v4.runtime.CommonTokenStream;
-import org.antlr.v4.runtime.tree.ParseTree;
-import org.antlr.v4.runtime.tree.ParseTreeWalker;
 import org.apache.ofbiz.base.util.GeneralException;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.GenericEntityException;
-import org.apache.ofbiz.entity.GenericPK;
 import org.apache.ofbiz.entity.GenericValue;
-import org.apache.ofbiz.entity.condition.EntityCondition;
-import org.apache.ofbiz.entity.condition.EntityJoinOperator;
-import org.apache.ofbiz.entity.model.DynamicViewEntity;
 import org.apache.ofbiz.entity.model.ModelEntity;
 import org.apache.ofbiz.entity.model.ModelField;
-import org.apache.ofbiz.entity.model.ModelFieldType;
 import org.apache.ofbiz.entity.model.ModelFieldTypeReader;
-import org.apache.ofbiz.entity.model.ModelKeyMap;
 import org.apache.ofbiz.entity.transaction.GenericTransactionException;
 import org.apache.ofbiz.entity.transaction.TransactionUtil;
 import org.apache.ofbiz.entity.util.EntityQuery;
@@ -62,7 +46,6 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 	private Frame<E> frame = null;
 
-	private ModelEntity modelEntity = null;
 	private ModelFieldTypeReader modelHelper;
 
 	public OFBizResourceImpl(Context context, Frame<E> frame) {
@@ -72,7 +55,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		Delegator delegator = ContextUtils.getDelegator(context.getTenant(), false);
 
-		this.modelEntity = delegator.getModelEntity(frame.getName());
+		ModelEntity modelEntity = delegator.getModelEntity(frame.getName());
 		this.modelHelper = delegator.getModelFieldTypeReader(modelEntity);
 	}
 
@@ -141,7 +124,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	@Override
 	public String nextSequence() throws ResourceException {
 
-		if (this.frame.getKeys().size() != 1)
+		if (this.frame.getAllKeys().size() != 1)
 			return null;
 
 		// first level non abstract
@@ -176,46 +159,31 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		Delegator delegator = ContextUtils.getDelegator(getContext().getTenant(), false);
 
-		DynamicViewEntity dynamicViewEntity = buildDynamicView(delegator);
-
-		EntityQuery eq = EntityQuery.use(delegator);
-		eq = eq.from(dynamicViewEntity);
-
-		GenericPK primaryKey = GenericPK.create(modelEntity);
-		List<ModelField> pkFields = modelEntity.getPkFields();
-		String[] keys = name.split("/");
-		int i = 0;
-		for (String key : keys) {
-			ModelField pkField = pkFields.get(i);
-			ModelFieldType type = modelHelper.getModelFieldType(pkField.getType());
-			Slot slot = this.getFrame().getSlot(pkField.getName());
-			// TODO
-			if (slot == null && pkField.getName().endsWith("Id"))
-				slot = this.getFrame().getSlot(pkField.getName().substring(0, pkField.getName().length()-2));
-			try {
-				Object value = EntityUtils.toBizValue(type.getJavaType(), slot, key);
-				primaryKey.set(pkField.getName(), value);
-			} catch (GeneralException e) {
-				throw new ResourceException(e);
-			}
-			i++;
-		}
-
-		eq = eq.where(EntityCondition.makeCondition(primaryKey, EntityJoinOperator.AND));
-
-		// SELECT
-		if (fields != null)
-			eq = eq.select(fields.split(","));
-		else if (proxy)
-			eq = eq.select(new HashSet<String>(this.modelEntity.getPkFieldNames()));
+		OFBizQueryBuilder<E> queryBuilder = new OFBizQueryBuilder<E>(this.getContext(), frame, delegator, modelHelper);
 
 		E entity = null;
 
 		boolean beganTransaction = false;
 		try {
+			if (proxy)
+				queryBuilder.addFields(this.getFrame().getAllKeySlots());
+			else if (fields != null && !fields.isEmpty()) {
+				queryBuilder.addFields(this.getFrame().getAllKeySlots());
+				queryBuilder.addFieldsExpr(fields);
+			}
+			else {
+				// .*
+			}
+
+			queryBuilder.addPrimaryKeyCondition(name);
+
+			queryBuilder.addOrders(this.getFrame().getAllKeySlots());
+
+			EntityQuery entityQuery = queryBuilder.buildEntityQuery();
+
 			beganTransaction = TransactionUtil.begin();
 
-			GenericValue genericValue = eq.queryOne();
+			GenericValue genericValue = entityQuery.queryOne();
 			if (genericValue != null) {
 				if (proxy) {
 					String id = getPkSlashValueString(genericValue);
@@ -230,7 +198,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		} catch (GeneralException e) {
 			entity = null;
 			try {
-				String errMsg = "Failure in read operation for entity [" + this.getFrame().getName() + "/" + name + "]: " + e.toString() + ". Rolling back transaction.";
+				String errMsg = "Failure in lookup operation for entity [" + this.getFrame().getName() + "/" + name + "]: " + e.toString() + ". Rolling back transaction.";
 				TransactionUtil.rollback(beganTransaction, errMsg, e);
 			} catch (GenericTransactionException e1) {
 				LOGGER.warn(e1.getMessage());
@@ -248,55 +216,38 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		Delegator delegator = ContextUtils.getDelegator(getContext().getTenant(), false);
 
-		EntityQuery eq = EntityQuery.use(delegator);
-
-		DynamicViewEntity dynamicViewEntity = buildDynamicView(delegator);
-
-		// SELECT
-		if (fields != null) {
-			OFBizSelectAnalyzer analyzer = analyzeSelect(delegator, this.getFrame(), fields);
-			appendEntities(delegator, dynamicViewEntity, analyzer.getListEntities());
-
-			fields = analyzer.getStringResult();
-			if (fields != null && !fields.isEmpty()) {
-				Set<String> fieldSet = new HashSet<String>(this.modelEntity.getPkFieldNames());
-				for (String field : fields.split(",")) {
-					fieldSet.add(field);
-				}
-				eq = eq.select(fieldSet);
-			}
-		} else if (proxy)
-			eq = eq.select(new HashSet<String>(this.modelEntity.getPkFieldNames()));
-
-		// WHERE
-		if (filter != null && !filter.isEmpty()) {
-			OFBizWhereAnalyzer analyzer = analyzeFilter(delegator, this.getFrame(), filter);
-			appendEntities(delegator, dynamicViewEntity, analyzer.getListEntities());
-
-			filter = analyzer.getStringResult();
-			if (filter != null && !filter.isEmpty())
-				eq = eq.where(EntityCondition.makeConditionWhere(filter));
-		}
-
-		// FROM
-		eq = eq.from(dynamicViewEntity);
-
-		// ORDER BY
-		if (order != null)
-			eq.orderBy(order);
-		else
-			eq = eq.orderBy(this.modelEntity.getPkFieldNames());
-
-		// LIMIT
-		if (limit > 0)
-			eq.maxRows(limit);
+		OFBizQueryBuilder<E> queryBuilder = new OFBizQueryBuilder<E>(this.getContext(), frame, delegator, modelHelper);
 
 		List<E> entities = new ArrayList<E>();
 
 		boolean beganTransaction = false;
 		try {
+			if (proxy)
+				queryBuilder.addFields(this.getFrame().getAllKeySlots());
+			else if (fields != null && !fields.isEmpty()) {
+				queryBuilder.addFields(this.getFrame().getAllKeySlots());
+				queryBuilder.addFieldsExpr(fields);
+			}
+			else {
+				// .*
+			}
+
+			if (filter != null && !filter.isEmpty())
+				queryBuilder.addConditionsExpr(filter);
+
+			if (order != null && !order.isEmpty()) {
+				queryBuilder.addOrdersExpr(order);
+				queryBuilder.addOrders(this.getFrame().getAllKeySlots());
+			}
+			else 
+				queryBuilder.addOrders(this.getFrame().getAllKeySlots());
+
+			EntityQuery entityQuery = queryBuilder.buildEntityQuery();
+			if (limit > 0)
+				entityQuery.maxRows(limit);
+
 			beganTransaction = TransactionUtil.begin();
-			for (GenericValue genericValue : eq.queryList()) {
+			for (GenericValue genericValue : entityQuery.queryList()) {
 				E entity = null;
 				if (proxy) {
 					String id = getPkSlashValueString(genericValue);
@@ -310,7 +261,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			TransactionUtil.commit(beganTransaction);
 		} catch (GeneralException e) {
 			try {
-				String errMsg = "Failure in read operation for entity [" + this.getFrame().getName() + "]: " + e.toString() + ". Rolling back transaction.";
+				String errMsg = "Failure in find operation for entity [" + this.getFrame().getName() + "]: " + e.toString() + ". Rolling back transaction.";
 				TransactionUtil.rollback(beganTransaction, errMsg, e);
 			} catch (GenericTransactionException e1) {
 				LOGGER.warn(e1.getMessage());
@@ -472,89 +423,6 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		Frame<K> ako = (Frame<K>) frame.getAko();
 		if (ako != null)
 			doDelete(delegator, ako, entity);
-	}
-
-	private DynamicViewEntity buildDynamicView(Delegator delegator) {
-
-		DynamicViewEntity dynamicViewEntity = new DynamicViewEntity();
-		dynamicViewEntity.addMemberEntity(modelEntity.getEntityName(), modelEntity.getEntityName());
-		Iterator<ModelField> fieldIterator = modelEntity.getFieldsIterator();
-		while (fieldIterator.hasNext()) {
-			ModelField field = fieldIterator.next();
-			dynamicViewEntity.addAlias(modelEntity.getEntityName(), field.getName());
-		}
-		addSuperEntity(delegator, dynamicViewEntity, modelEntity);
-
-		return dynamicViewEntity;
-	}
-
-	private void addSuperEntity(Delegator delegator, DynamicViewEntity dynamicViewEntity, ModelEntity modelEntity) {
-
-		String superEntity = ModelUtils.getSuperEntity(delegator, modelEntity.getEntityName());
-		if (superEntity == null)
-			return;
-
-		dynamicViewEntity.addMemberEntity(superEntity, superEntity);
-
-		ModelEntity modelSuperEntity = delegator.getModelEntity(superEntity);
-		Iterator<ModelField> fieldIterator = modelSuperEntity.getFieldsIterator();
-		while (fieldIterator.hasNext()) {
-			ModelField field = fieldIterator.next();
-			dynamicViewEntity.addAlias(superEntity, field.getName());
-		}
-		dynamicViewEntity.addViewLink(modelEntity.getEntityName(), superEntity, Boolean.TRUE,
-				ModelKeyMap.makeKeyMapList(modelEntity.getFirstPkFieldName(), modelSuperEntity.getFirstPkFieldName()));
-
-		addSuperEntity(delegator, dynamicViewEntity, modelSuperEntity);
-	}
-
-	private void appendEntities(Delegator delegator, DynamicViewEntity dynamicViewEntity, List<String> listEntities) {
-		for (String linkedName : listEntities) {
-			ModelEntity linkedEntity = delegator.getModelEntity(linkedName);
-			dynamicViewEntity.addMemberEntity(linkedEntity.getEntityName(), linkedEntity.getEntityName());
-			Iterator<ModelField> fieldIterator = linkedEntity.getFieldsIterator();
-			while (fieldIterator.hasNext()) {
-				ModelField field = fieldIterator.next();
-				dynamicViewEntity.addAlias(linkedEntity.getEntityName(), field.getName());
-			}
-
-			dynamicViewEntity.addViewLink(this.modelEntity.getEntityName(), linkedEntity.getEntityName(), Boolean.TRUE,
-					ModelKeyMap.makeKeyMapList(this.modelEntity.getFirstPkFieldName(), linkedEntity.getFirstPkFieldName()));
-		}
-	}
-
-	private OFBizSelectAnalyzer analyzeSelect(Delegator delegator, Frame<?> frame, String fields) {
-
-		String sql = "SELECT " + fields;
-
-		ANTLRInputStream input = new ANTLRInputStream(sql);
-		SQLiteLexer SQLiteLexer = new SQLiteLexer(input);
-		CommonTokenStream tokens = new CommonTokenStream(SQLiteLexer);
-		SQLiteParser parser = new SQLiteParser(tokens);
-
-		ParseTree tree = parser.select_stmt();
-		ParseTreeWalker walker = new ParseTreeWalker();
-		OFBizSelectAnalyzer analyzer = new OFBizSelectAnalyzer(delegator, frame);
-		walker.walk(analyzer, tree);
-
-		return analyzer;
-	}
-
-	private OFBizWhereAnalyzer analyzeFilter(Delegator delegator, Frame<?> frame, String filter) {
-
-		String sql = filter;
-
-		ANTLRInputStream input = new ANTLRInputStream(sql);
-		SQLiteLexer SQLiteLexer = new SQLiteLexer(input);
-		CommonTokenStream tokens = new CommonTokenStream(SQLiteLexer);
-		SQLiteParser parser = new SQLiteParser(tokens);
-
-		ParseTree tree = parser.expr();
-		ParseTreeWalker walker = new ParseTreeWalker();
-		OFBizWhereAnalyzer analyzer = new OFBizWhereAnalyzer(delegator, frame);
-		walker.walk(analyzer, tree);
-
-		return analyzer;
 	}
 
 	private void completeEntity(ModelService service, E entity, Map<String, Object> context) {

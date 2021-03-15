@@ -34,11 +34,36 @@ public class EntityUtils {
 
 	public static Slot getSlot(Frame<?> frame, String field) {
 
-		Slot slot = frame.getSlot(field);
-		if (slot == null && field.endsWith("Id")) {
-			slot = frame.getSlot(field.substring(0, field.length() - 2));
-			if (slot != null && slot.getDomain() == null)
-				slot = null;
+		Slot slot = null;
+
+		String[] tokens = field.split("\\.");
+		switch (tokens.length) {
+		case 0:
+			break;
+		case 1:
+			slot = frame.getSlot(field);
+			if (slot == null && field.endsWith("Id")) {
+				slot = frame.getSlot(field.substring(0, field.length() - 2));
+				if (slot != null && slot.getDomain() == null)
+					slot = null;
+			}
+			break;
+		default:
+			for (String token : tokens) {
+				if (Character.isUpperCase(token.charAt(0))) {
+					"".toString();
+				} else {
+					slot = frame.getSlot(token);
+					if (slot == null && token.endsWith("Id")) {
+						slot = frame.getSlot(token.substring(0, token.length() - 2));
+						if (slot != null && slot.getDomain() == null)
+							slot = null;
+					}
+					if(slot != null)
+						break;
+				}
+			}
+			break;
 		}
 
 		return slot;

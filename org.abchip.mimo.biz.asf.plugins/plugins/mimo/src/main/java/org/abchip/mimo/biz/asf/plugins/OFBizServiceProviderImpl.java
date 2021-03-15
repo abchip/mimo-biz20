@@ -92,7 +92,7 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 		}
 
 		Frame<V> frame = response.isa();
-		for (Slot slot : frame.getSlots()) {
+		for (Slot slot : frame.getAllSlots()) {
 			Object value = context.get(slot.getName());
 			if (value == null)
 				continue;
