@@ -98,17 +98,19 @@ public class OFBizQueryBuilder<E extends EntityIdentifiable> {
 
 	protected void addFieldsExpr(String expression) {
 
-		String sql = "SELECT " + expression;
+		try (OFBizSelectBuilder<E> analyzer = new OFBizSelectBuilder<E>(this)) {
 
-		ANTLRInputStream input = new ANTLRInputStream(sql);
-		SQLiteLexer SQLiteLexer = new SQLiteLexer(input);
-		CommonTokenStream tokens = new CommonTokenStream(SQLiteLexer);
-		SQLiteParser parser = new SQLiteParser(tokens);
+			String sql = "SELECT " + expression;
+			ANTLRInputStream input = new ANTLRInputStream(sql);
+			SQLiteLexer SQLiteLexer = new SQLiteLexer(input);
+			CommonTokenStream tokens = new CommonTokenStream(SQLiteLexer);
+			SQLiteParser parser = new SQLiteParser(tokens);
 
-		ParseTree tree = parser.select_stmt();
-		ParseTreeWalker walker = new ParseTreeWalker();
-		OFBizSelectBuilder<E> analyzer = new OFBizSelectBuilder<E>(this);
-		walker.walk(analyzer, tree);
+			ParseTree tree = parser.select_stmt();
+			ParseTreeWalker walker = new ParseTreeWalker();
+
+			walker.walk(analyzer, tree);
+		}
 	}
 
 	protected void addPrimaryKeyCondition(String id) throws GeneralException {
@@ -133,19 +135,26 @@ public class OFBizQueryBuilder<E extends EntityIdentifiable> {
 		this.entityConditions.add(condition);
 	}
 
+	protected void addConditions(List<EntityCondition> conditions) {
+		this.entityConditions.addAll(conditions);
+	}
+
 	protected void addConditionsExpr(String expression) {
 
-		String sql = expression;
+		try (OFBizWhereBuilder<E> analyzer = new OFBizWhereBuilder<E>(this)) {
 
-		ANTLRInputStream input = new ANTLRInputStream(sql);
-		SQLiteLexer SQLiteLexer = new SQLiteLexer(input);
-		CommonTokenStream tokens = new CommonTokenStream(SQLiteLexer);
-		SQLiteParser parser = new SQLiteParser(tokens);
+			String sql = expression.trim();
 
-		ParseTree tree = parser.expr();
-		ParseTreeWalker walker = new ParseTreeWalker();
-		OFBizWhereBuilder<E> analyzer = new OFBizWhereBuilder<E>(this);
-		walker.walk(analyzer, tree);
+			ANTLRInputStream input = new ANTLRInputStream(sql);
+			SQLiteLexer SQLiteLexer = new SQLiteLexer(input);
+			CommonTokenStream tokens = new CommonTokenStream(SQLiteLexer);
+			SQLiteParser parser = new SQLiteParser(tokens);
+
+			ParseTree tree = parser.expr();
+			ParseTreeWalker walker = new ParseTreeWalker();
+
+			walker.walk(analyzer, tree);
+		}
 	}
 
 	protected void addOrder(Slot slot, String entityAlias) {
@@ -161,17 +170,18 @@ public class OFBizQueryBuilder<E extends EntityIdentifiable> {
 
 	protected void addOrdersExpr(String expression) {
 
-		String sql = expression;
+		try (OFBizOrderBuilder<E> analyzer = new OFBizOrderBuilder<E>(this)) {
 
-		ANTLRInputStream input = new ANTLRInputStream(sql);
-		SQLiteLexer SQLiteLexer = new SQLiteLexer(input);
-		CommonTokenStream tokens = new CommonTokenStream(SQLiteLexer);
-		SQLiteParser parser = new SQLiteParser(tokens);
+			ANTLRInputStream input = new ANTLRInputStream(expression);
+			SQLiteLexer SQLiteLexer = new SQLiteLexer(input);
+			CommonTokenStream tokens = new CommonTokenStream(SQLiteLexer);
+			SQLiteParser parser = new SQLiteParser(tokens);
 
-		ParseTree tree = parser.ordering_term();
-		ParseTreeWalker walker = new ParseTreeWalker();
-		OFBizOrderBuilder<E> analyzer = new OFBizOrderBuilder<E>(this);
-		walker.walk(analyzer, tree);
+			ParseTree tree = parser.ordering_term();
+			ParseTreeWalker walker = new ParseTreeWalker();
+
+			walker.walk(analyzer, tree);
+		}
 	}
 
 	private DynamicViewEntity buildDynamicView(Delegator delegator) {

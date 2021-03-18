@@ -32,4 +32,8 @@ public class OFBizOrderBuilder<E extends EntityIdentifiable> extends OFBizQueryL
 		String text = ctx.getText();
 		this.joinColumnOrder(text);
 	}
+
+	@Override
+	public void close() {
+	}
 }

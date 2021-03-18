@@ -8,6 +8,8 @@
  */
 package org.abchip.mimo.biz.asf.plugins;
 
+import java.io.Closeable;
+
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.Domain;
 import org.abchip.mimo.entity.EntityIdentifiable;
@@ -20,7 +22,7 @@ import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.tree.TerminalNode;
 import org.osgi.service.log.Logger;
 
-public abstract class OFBizQueryListener<E extends EntityIdentifiable> extends SQLiteBaseListener {
+public abstract class OFBizQueryListener<E extends EntityIdentifiable> extends SQLiteBaseListener implements Closeable {
 
 	private OFBizQueryBuilder<E> queryBuilder;
 	private Slot lastSlot;
@@ -47,13 +49,13 @@ public abstract class OFBizQueryListener<E extends EntityIdentifiable> extends S
 			return;
 		}
 	}
-	
+
 	@Override
 	public void exitColumn_name(Column_nameContext ctx) {
 
 		this.arrow = false;
 	}
-	
+
 	protected void joinColumnSelect(String column) {
 
 		SlotInRole slotInRole = getSlotInRole(column);

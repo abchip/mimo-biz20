@@ -32,4 +32,8 @@ public class OFBizSelectBuilder<E extends EntityIdentifiable> extends OFBizQuery
 		String text = ctx.getText();
 		this.joinColumnSelect(text);
 	}
+
+	@Override
+	public void close() {
+	}
 }
